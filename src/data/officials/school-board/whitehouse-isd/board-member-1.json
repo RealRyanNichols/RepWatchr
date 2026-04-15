@@ -1,0 +1,20 @@
+{
+  "id": "whitehouse-isd-board-1",
+  "name": "James Crawford",
+  "firstName": "James",
+  "lastName": "Crawford",
+  "party": "NP",
+  "level": "school-board",
+  "position": "School Board President",
+  "district": "Place 1",
+  "jurisdiction": "Whitehouse ISD",
+  "county": ["Smith"],
+  "termStart": "2023-05-01",
+  "termEnd": "2027-05-01",
+  "contactInfo": {
+    "office": "106 Wildcat Dr., Whitehouse, TX 75791",
+    "phone": "(903) 839-5500",
+    "website": "https://www.whitehouseisd.org/board"
+  },
+  "bio": "James Crawford serves as President of the Whitehouse ISD Board of Trustees. He is dedicated to providing a safe and enriching learning environment for all Whitehouse students."
+}
