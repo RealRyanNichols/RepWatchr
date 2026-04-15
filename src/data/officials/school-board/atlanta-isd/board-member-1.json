@@ -1,0 +1,20 @@
+{
+  "id": "atlanta-isd-board-1",
+  "name": "Steve Langford",
+  "firstName": "Steve",
+  "lastName": "Langford",
+  "party": "NP",
+  "level": "school-board",
+  "position": "School Board President",
+  "district": "Place 1",
+  "jurisdiction": "Atlanta ISD",
+  "county": ["Cass"],
+  "termStart": "2023-05-01",
+  "termEnd": "2027-05-01",
+  "contactInfo": {
+    "office": "200 W. Hiram St., Atlanta, TX 75551",
+    "phone": "(903) 796-4194",
+    "website": "https://www.atlantaisd.net/board"
+  },
+  "bio": "Steve Langford serves as President of the Atlanta ISD Board of Trustees. A Cass County insurance agent and former Rabbit football booster, he is focused on athletics, fine arts, and academic excellence."
+}
