@@ -1,0 +1,30 @@
+{
+  "id": "palestine-mayor",
+  "name": "Steve Presley",
+  "firstName": "Steve",
+  "lastName": "Presley",
+  "party": "NP",
+  "level": "city",
+  "position": "Mayor",
+  "jurisdiction": "City of Palestine",
+  "county": ["Anderson"],
+  "termStart": "2023-05-01",
+  "termEnd": "2027-05-01",
+  "contactInfo": {
+    "office": "504 N. Queen St., Palestine, TX 75801",
+    "phone": "(903) 731-8400",
+    "email": "mayor@palestinetx.gov",
+    "website": "https://www.palestinetx.gov",
+    "socialMedia": {
+      "facebook": "https://facebook.com/CityOfPalestineTX"
+    }
+  },
+  "bio": "Steve Presley serves as the Mayor of Palestine, the county seat of Anderson County. Palestine is known for its historic Victorian homes, the Texas State Railroad, and nearby Engeling Wildlife Management Area. The mayor leads the city council in promoting tourism, economic development, and community improvement.",
+  "campaignPromises": [
+    "Promote Palestine's historic district and tourism",
+    "Support the Texas State Railroad as an economic driver",
+    "Improve city streets and infrastructure",
+    "Attract new businesses and employers to Palestine",
+    "Enhance public safety and community programs"
+  ]
+}

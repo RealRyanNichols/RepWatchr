@@ -1,0 +1,30 @@
+{
+  "id": "jasper-mayor",
+  "name": "Sandy Adams",
+  "firstName": "Sandy",
+  "lastName": "Adams",
+  "party": "NP",
+  "level": "city",
+  "position": "Mayor",
+  "jurisdiction": "City of Jasper",
+  "county": ["Jasper"],
+  "termStart": "2023-05-01",
+  "termEnd": "2027-05-01",
+  "contactInfo": {
+    "office": "465 S. Main St., Jasper, TX 75951",
+    "phone": "(409) 384-5636",
+    "email": "mayor@jaspertx.org",
+    "website": "https://www.jaspertx.org",
+    "socialMedia": {
+      "facebook": "https://facebook.com/CityOfJasperTX"
+    }
+  },
+  "bio": "Sandy Adams serves as the Mayor of Jasper, the county seat of Jasper County in deep East Texas. Jasper is the gateway to Sam Rayburn Reservoir and the Angelina National Forest. The mayor works with the city council to promote tourism, outdoor recreation, and community development.",
+  "campaignPromises": [
+    "Promote Sam Rayburn Reservoir and outdoor recreation tourism",
+    "Improve city infrastructure and streets",
+    "Support economic development and job growth",
+    "Maintain strong public safety services",
+    "Foster community unity and civic engagement"
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "id": "livingston-mayor",
+  "name": "Judy Cochran",
+  "firstName": "Judy",
+  "lastName": "Cochran",
+  "party": "NP",
+  "level": "city",
+  "position": "Mayor",
+  "jurisdiction": "City of Livingston",
+  "county": ["Polk"],
+  "termStart": "2023-05-01",
+  "termEnd": "2027-05-01",
+  "contactInfo": {
+    "office": "200 W. Church St., Livingston, TX 77351",
+    "phone": "(936) 327-4311",
+    "email": "mayor@livingston.net",
+    "website": "https://www.livingston.net",
+    "socialMedia": {
+      "facebook": "https://facebook.com/CityOfLivingstonTX"
+    }
+  },
+  "bio": "Judy Cochran serves as the Mayor of Livingston, the county seat of Polk County. Livingston is the gateway to Lake Livingston, one of the largest lakes in Texas, and is home to the Alabama-Coushatta Tribe of Texas. The mayor works with the city council to promote tourism and community development.",
+  "campaignPromises": [
+    "Promote Lake Livingston tourism and recreation",
+    "Support the Alabama-Coushatta Tribe partnership",
+    "Improve city streets and infrastructure",
+    "Attract new businesses and economic investment",
+    "Maintain quality public safety services"
+  ]
+}

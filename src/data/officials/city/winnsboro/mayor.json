@@ -1,0 +1,30 @@
+{
+  "id": "winnsboro-mayor",
+  "name": "Myra Nichols",
+  "firstName": "Myra",
+  "lastName": "Nichols",
+  "party": "NP",
+  "level": "city",
+  "position": "Mayor",
+  "jurisdiction": "City of Winnsboro",
+  "county": ["Wood"],
+  "termStart": "2023-05-01",
+  "termEnd": "2027-05-01",
+  "contactInfo": {
+    "office": "501 S. Main St., Winnsboro, TX 75494",
+    "phone": "(903) 342-3654",
+    "email": "mayor@winnsborotx.com",
+    "website": "https://www.winnsborotx.com",
+    "socialMedia": {
+      "facebook": "https://facebook.com/CityOfWinnsboro"
+    }
+  },
+  "bio": "Myra Nichols serves as the Mayor of Winnsboro, a historic city in Wood County known as the 'Autumn Trails Capital of Texas.' Winnsboro's Main Street district features charming shops and hosts seasonal festivals. The mayor works with the city council to promote tourism and maintain the city's small-town appeal.",
+  "campaignPromises": [
+    "Promote the Autumn Trails festival and seasonal tourism",
+    "Support Main Street businesses and downtown revitalization",
+    "Improve city infrastructure and water systems",
+    "Maintain quality public safety services",
+    "Foster community pride and civic engagement"
+  ]
+}

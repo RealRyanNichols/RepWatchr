@@ -1,0 +1,30 @@
+{
+  "id": "san-augustine-mayor",
+  "name": "Leroy Hughes",
+  "firstName": "Leroy",
+  "lastName": "Hughes",
+  "party": "NP",
+  "level": "city",
+  "position": "Mayor",
+  "jurisdiction": "City of San Augustine",
+  "county": ["San Augustine"],
+  "termStart": "2023-05-01",
+  "termEnd": "2027-05-01",
+  "contactInfo": {
+    "office": "301 S. Harrison St., San Augustine, TX 75972",
+    "phone": "(936) 275-3713",
+    "email": "mayor@sanaugustinetx.com",
+    "website": "https://www.sanaugustinetx.com",
+    "socialMedia": {
+      "facebook": "https://facebook.com/CityOfSanAugustine"
+    }
+  },
+  "bio": "Leroy Hughes serves as the Mayor of San Augustine, the county seat of San Augustine County and one of the oldest towns in Texas. San Augustine was a key stop on El Camino Real and is known for its historic homes and churches. The mayor works with the city council to preserve the city's heritage and serve its residents.",
+  "campaignPromises": [
+    "Preserve San Augustine's rich historical heritage",
+    "Improve city infrastructure and water services",
+    "Support economic development and tourism",
+    "Maintain public safety services",
+    "Enhance community programs and quality of life"
+  ]
+}

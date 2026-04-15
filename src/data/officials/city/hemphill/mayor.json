@@ -1,0 +1,30 @@
+{
+  "id": "hemphill-mayor",
+  "name": "Robert Coleman",
+  "firstName": "Robert",
+  "lastName": "Coleman",
+  "party": "NP",
+  "level": "city",
+  "position": "Mayor",
+  "jurisdiction": "City of Hemphill",
+  "county": ["Sabine"],
+  "termStart": "2023-05-01",
+  "termEnd": "2027-05-01",
+  "contactInfo": {
+    "office": "175 N. Main St., Hemphill, TX 75948",
+    "phone": "(409) 787-2241",
+    "email": "mayor@hemphilltx.org",
+    "website": "https://www.hemphilltx.org",
+    "socialMedia": {
+      "facebook": "https://facebook.com/CityOfHemphill"
+    }
+  },
+  "bio": "Robert Coleman serves as the Mayor of Hemphill, the county seat of Sabine County. Hemphill is a small East Texas community near Toledo Bend Reservoir and the Sabine National Forest, making it a popular destination for fishing and outdoor recreation. The mayor works with the city council to support tourism and maintain city services.",
+  "campaignPromises": [
+    "Promote Toledo Bend Reservoir and outdoor recreation",
+    "Improve city infrastructure and water systems",
+    "Support local businesses and tourism industry",
+    "Maintain public safety and emergency services",
+    "Enhance community facilities and programs"
+  ]
+}

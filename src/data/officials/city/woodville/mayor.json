@@ -1,0 +1,30 @@
+{
+  "id": "woodville-mayor",
+  "name": "Amy Bonton",
+  "firstName": "Amy",
+  "lastName": "Bonton",
+  "party": "NP",
+  "level": "city",
+  "position": "Mayor",
+  "jurisdiction": "City of Woodville",
+  "county": ["Tyler"],
+  "termStart": "2023-05-01",
+  "termEnd": "2027-05-01",
+  "contactInfo": {
+    "office": "101 N. Magnolia St., Woodville, TX 75979",
+    "phone": "(409) 283-2534",
+    "email": "mayor@woodvilletx.org",
+    "website": "https://www.woodvilletx.org",
+    "socialMedia": {
+      "facebook": "https://facebook.com/CityOfWoodville"
+    }
+  },
+  "bio": "Amy Bonton serves as the Mayor of Woodville, the county seat of Tyler County. Woodville is home to the Heritage Village Museum, which preserves the history of East Texas pioneer life. The mayor works with the city council to maintain city services and promote the community's cultural heritage.",
+  "campaignPromises": [
+    "Promote Heritage Village Museum and local tourism",
+    "Improve city infrastructure and road maintenance",
+    "Support economic development and small businesses",
+    "Maintain public safety and emergency services",
+    "Enhance community programs and recreational facilities"
+  ]
+}

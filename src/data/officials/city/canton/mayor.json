@@ -1,0 +1,30 @@
+{
+  "id": "canton-mayor",
+  "name": "Lou Ann Everett",
+  "firstName": "Lou Ann",
+  "lastName": "Everett",
+  "party": "NP",
+  "level": "city",
+  "position": "Mayor",
+  "jurisdiction": "City of Canton",
+  "county": ["Van Zandt"],
+  "termStart": "2023-05-01",
+  "termEnd": "2027-05-01",
+  "contactInfo": {
+    "office": "290 E. Tyler St., Canton, TX 75103",
+    "phone": "(903) 567-2556",
+    "email": "mayor@cantontx.gov",
+    "website": "https://www.cantontx.gov",
+    "socialMedia": {
+      "facebook": "https://facebook.com/CityOfCantonTX"
+    }
+  },
+  "bio": "Lou Ann Everett serves as the Mayor of Canton, the county seat of Van Zandt County and home to First Monday Trade Days, the oldest and largest flea market in the United States. The mayor works with the city council to manage the unique demands of hosting this major monthly event while serving the everyday needs of residents.",
+  "campaignPromises": [
+    "Support First Monday Trade Days as Canton's economic engine",
+    "Improve city infrastructure strained by monthly events",
+    "Maintain public safety during high-traffic weekends",
+    "Promote Canton as a year-round destination",
+    "Keep property taxes low for permanent residents"
+  ]
+}

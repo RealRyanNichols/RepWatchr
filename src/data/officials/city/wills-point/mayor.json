@@ -1,0 +1,30 @@
+{
+  "id": "wills-point-mayor",
+  "name": "Pam Croom",
+  "firstName": "Pam",
+  "lastName": "Croom",
+  "party": "NP",
+  "level": "city",
+  "position": "Mayor",
+  "jurisdiction": "City of Wills Point",
+  "county": ["Van Zandt"],
+  "termStart": "2023-05-01",
+  "termEnd": "2027-05-01",
+  "contactInfo": {
+    "office": "100 N. 4th St., Wills Point, TX 75169",
+    "phone": "(903) 873-3081",
+    "email": "mayor@willspointtx.gov",
+    "website": "https://www.willspointtx.gov",
+    "socialMedia": {
+      "facebook": "https://facebook.com/CityOfWillsPoint"
+    }
+  },
+  "bio": "Pam Croom serves as the Mayor of Wills Point, a city in Van Zandt County known as the 'Bluebird Capital of Texas.' Wills Point sits along Interstate 20 and has been growing as a bedroom community for the Dallas-Fort Worth area. The mayor works to balance growth with the city's small-town character.",
+  "campaignPromises": [
+    "Manage growth from the expanding DFW metro area",
+    "Improve city roads and water infrastructure",
+    "Support local businesses along the I-20 corridor",
+    "Maintain Wills Point's small-town atmosphere",
+    "Enhance parks and recreational opportunities"
+  ]
+}

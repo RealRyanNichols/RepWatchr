@@ -1,0 +1,30 @@
+{
+  "id": "emory-mayor",
+  "name": "Thomas Friedman",
+  "firstName": "Thomas",
+  "lastName": "Friedman",
+  "party": "NP",
+  "level": "city",
+  "position": "Mayor",
+  "jurisdiction": "City of Emory",
+  "county": ["Rains"],
+  "termStart": "2023-05-01",
+  "termEnd": "2027-05-01",
+  "contactInfo": {
+    "office": "399 N. Texas St., Emory, TX 75440",
+    "phone": "(903) 473-2465",
+    "email": "mayor@emorytx.com",
+    "website": "https://www.emorytx.com",
+    "socialMedia": {
+      "facebook": "https://facebook.com/CityOfEmory"
+    }
+  },
+  "bio": "Thomas Friedman serves as the Mayor of Emory, the county seat of Rains County, one of the smallest counties in Texas. Emory benefits from its proximity to Lake Tawakoni and the growing number of residents relocating from the Dallas-Fort Worth area. The mayor works to manage growth while preserving the community's rural character.",
+  "campaignPromises": [
+    "Manage growth from the expanding DFW metropolitan area",
+    "Promote Lake Tawakoni tourism and recreation",
+    "Improve city roads and water systems",
+    "Support local businesses and the downtown area",
+    "Maintain low taxes and efficient city services"
+  ]
+}

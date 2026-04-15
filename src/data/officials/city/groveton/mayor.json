@@ -1,0 +1,30 @@
+{
+  "id": "groveton-mayor",
+  "name": "Byron Richards",
+  "firstName": "Byron",
+  "lastName": "Richards",
+  "party": "NP",
+  "level": "city",
+  "position": "Mayor",
+  "jurisdiction": "City of Groveton",
+  "county": ["Trinity"],
+  "termStart": "2023-05-01",
+  "termEnd": "2027-05-01",
+  "contactInfo": {
+    "office": "200 W. First St., Groveton, TX 75845",
+    "phone": "(936) 642-1516",
+    "email": "mayor@grovetontx.org",
+    "website": "https://www.grovetontx.org",
+    "socialMedia": {
+      "facebook": "https://facebook.com/CityOfGroveton"
+    }
+  },
+  "bio": "Byron Richards serves as the Mayor of Groveton, the county seat of Trinity County. Groveton is a small East Texas community with a timber and ranching heritage located in the heart of the Piney Woods. The mayor presides over city council meetings and works to maintain essential city services for the community.",
+  "campaignPromises": [
+    "Maintain essential city services on a responsible budget",
+    "Improve city roads and water infrastructure",
+    "Support local businesses and job retention",
+    "Enhance public safety and emergency response",
+    "Promote community events and civic engagement"
+  ]
+}
