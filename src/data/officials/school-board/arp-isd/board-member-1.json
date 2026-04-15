@@ -1,0 +1,20 @@
+{
+  "id": "arp-isd-board-1",
+  "name": "Danny Cole",
+  "firstName": "Danny",
+  "lastName": "Cole",
+  "party": "NP",
+  "level": "school-board",
+  "position": "School Board President",
+  "district": "Place 1",
+  "jurisdiction": "Arp ISD",
+  "county": ["Smith"],
+  "termStart": "2024-05-01",
+  "termEnd": "2028-05-01",
+  "contactInfo": {
+    "office": "224 N. Bois D'Arc Ave., Arp, TX 75750",
+    "phone": "(903) 859-8482",
+    "website": "https://www.arpisd.org/board"
+  },
+  "bio": "Danny Cole serves as President of the Arp ISD Board of Trustees. He is focused on strengthening academic outcomes and providing Arp students with the resources they need to succeed."
+}

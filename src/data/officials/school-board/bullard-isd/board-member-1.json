@@ -1,0 +1,20 @@
+{
+  "id": "bullard-isd-board-1",
+  "name": "Tommy Weaver",
+  "firstName": "Tommy",
+  "lastName": "Weaver",
+  "party": "NP",
+  "level": "school-board",
+  "position": "School Board President",
+  "district": "Place 1",
+  "jurisdiction": "Bullard ISD",
+  "county": ["Smith"],
+  "termStart": "2023-05-01",
+  "termEnd": "2027-05-01",
+  "contactInfo": {
+    "office": "308 S. Houston St., Bullard, TX 75757",
+    "phone": "(903) 894-6639",
+    "website": "https://www.bullardisd.org/board"
+  },
+  "bio": "Tommy Weaver serves as President of the Bullard ISD Board of Trustees. He is committed to supporting Bullard's growth while preserving the close-knit community atmosphere of the district."
+}
