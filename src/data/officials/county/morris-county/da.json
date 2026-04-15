@@ -1,0 +1,27 @@
+{
+  "id": "morris-county-da",
+  "name": "Steve Holden",
+  "firstName": "Steve",
+  "lastName": "Holden",
+  "party": "R",
+  "level": "county",
+  "position": "County Attorney",
+  "jurisdiction": "Morris County",
+  "county": ["Morris"],
+  "termStart": "2023-01-01",
+  "termEnd": "2027-01-01",
+  "contactInfo": {
+    "office": "500 Broadnax St., Suite 103, Daingerfield, TX 75638",
+    "phone": "(903) 645-2012",
+    "email": "ca@morriscountytx.org",
+    "website": "https://www.morriscountytx.org/county-attorney"
+  },
+  "bio": "Steve Holden serves as the County Attorney for Morris County, handling criminal prosecutions and providing legal guidance to the county. He is dedicated to upholding the law and serving the residents of Daingerfield and the surrounding area.",
+  "campaignPromises": [
+    "Effectively prosecute criminal cases in Morris County",
+    "Protect the legal interests of the county",
+    "Advocate for victims of crime",
+    "Operate a fiscally responsible county attorney's office",
+    "Coordinate with law enforcement on public safety efforts"
+  ]
+}

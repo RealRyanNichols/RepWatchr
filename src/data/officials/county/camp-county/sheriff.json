@@ -1,0 +1,27 @@
+{
+  "id": "camp-county-sheriff",
+  "name": "Matt Hefner",
+  "firstName": "Matt",
+  "lastName": "Hefner",
+  "party": "R",
+  "level": "county",
+  "position": "County Sheriff",
+  "jurisdiction": "Camp County",
+  "county": ["Camp"],
+  "termStart": "2025-01-01",
+  "termEnd": "2029-01-01",
+  "contactInfo": {
+    "office": "143 Quitman St., Pittsburg, TX 75686",
+    "phone": "(903) 856-3636",
+    "email": "sheriff@campcountytx.org",
+    "website": "https://www.campcountytx.org/sheriff"
+  },
+  "bio": "Matt Hefner serves as the Camp County Sheriff, overseeing law enforcement for Camp County from the county seat of Pittsburg. Sheriff Hefner is dedicated to maintaining safety in this close-knit East Texas community through vigilant patrol and responsive service.",
+  "campaignPromises": [
+    "Maintain strong law enforcement presence throughout Camp County",
+    "Keep the county jail operating efficiently and safely",
+    "Support school safety initiatives in local districts",
+    "Strengthen cooperation with Pittsburg Police Department",
+    "Protect rural property owners from theft and trespassing"
+  ]
+}

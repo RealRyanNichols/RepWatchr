@@ -1,0 +1,27 @@
+{
+  "id": "nacogdoches-county-da",
+  "name": "Nicole Thornton",
+  "firstName": "Nicole",
+  "lastName": "Thornton",
+  "party": "R",
+  "level": "county",
+  "position": "District Attorney",
+  "jurisdiction": "Nacogdoches County",
+  "county": ["Nacogdoches"],
+  "termStart": "2023-01-01",
+  "termEnd": "2027-01-01",
+  "contactInfo": {
+    "office": "101 W. Main St., Suite 350, Nacogdoches, TX 75961",
+    "phone": "(936) 560-7766",
+    "email": "da@nacogdochescounty.org",
+    "website": "https://www.nacogdochescounty.org/district-attorney"
+  },
+  "bio": "Nicole Thornton serves as the District Attorney for Nacogdoches County, overseeing felony prosecutions in the oldest town in Texas. She is committed to ensuring justice and public safety for all residents of Nacogdoches County.",
+  "campaignPromises": [
+    "Aggressively prosecute violent and drug-related crimes",
+    "Protect the rights of crime victims",
+    "Maintain an efficient and transparent DA's office",
+    "Collaborate with Stephen F. Austin State University on campus safety",
+    "Partner with law enforcement to reduce crime"
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "id": "angelina-county-sheriff",
+  "name": "Bob Buckner",
+  "firstName": "Bob",
+  "lastName": "Buckner",
+  "party": "R",
+  "level": "county",
+  "position": "County Sheriff",
+  "jurisdiction": "Angelina County",
+  "county": ["Angelina"],
+  "termStart": "2025-01-01",
+  "termEnd": "2029-01-01",
+  "contactInfo": {
+    "office": "2111 S. John Redditt Dr., Lufkin, TX 75904",
+    "phone": "(936) 634-3331",
+    "email": "sheriff@angelinacounty.net",
+    "website": "https://www.angelinacounty.net/sheriff"
+  },
+  "bio": "Bob Buckner serves as the Angelina County Sheriff, leading law enforcement operations throughout the county from the office in Lufkin. Sheriff Buckner is committed to protecting the citizens of Angelina County through proactive policing and strong community relationships.",
+  "campaignPromises": [
+    "Combat the opioid and methamphetamine crisis in Angelina County",
+    "Recruit and retain qualified deputies with competitive pay",
+    "Upgrade communications and dispatch technology",
+    "Expand the K-9 unit for narcotics detection",
+    "Improve response times in rural parts of the county"
+  ]
+}

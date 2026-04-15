@@ -1,0 +1,27 @@
+{
+  "id": "henderson-county-sheriff",
+  "name": "Botie Hillhouse",
+  "firstName": "Botie",
+  "lastName": "Hillhouse",
+  "party": "R",
+  "level": "county",
+  "position": "County Sheriff",
+  "jurisdiction": "Henderson County",
+  "county": ["Henderson"],
+  "termStart": "2025-01-01",
+  "termEnd": "2029-01-01",
+  "contactInfo": {
+    "office": "200 E. Larkin St., Athens, TX 75751",
+    "phone": "(903) 675-5128",
+    "email": "sheriff@hendersoncountytx.org",
+    "website": "https://www.hendersoncountytx.org/sheriff"
+  },
+  "bio": "Botie Hillhouse serves as the Henderson County Sheriff, providing law enforcement services across Henderson County from the county seat of Athens. Sheriff Hillhouse oversees a department committed to keeping the residents and lake communities of Henderson County safe.",
+  "campaignPromises": [
+    "Increase lake patrol operations at Cedar Creek and other reservoirs",
+    "Expand the department's criminal investigation division",
+    "Improve radio communications coverage in remote areas",
+    "Maintain a transparent and accountable sheriff's office",
+    "Support victims of domestic violence with enhanced response protocols"
+  ]
+}

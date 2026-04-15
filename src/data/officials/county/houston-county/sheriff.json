@@ -1,0 +1,27 @@
+{
+  "id": "houston-county-sheriff",
+  "name": "Darrell Bobbitt",
+  "firstName": "Darrell",
+  "lastName": "Bobbitt",
+  "party": "R",
+  "level": "county",
+  "position": "County Sheriff",
+  "jurisdiction": "Houston County",
+  "county": ["Houston"],
+  "termStart": "2025-01-01",
+  "termEnd": "2029-01-01",
+  "contactInfo": {
+    "office": "401 E. Houston Ave., Crockett, TX 75835",
+    "phone": "(936) 544-2862",
+    "email": "sheriff@houstoncountytx.org",
+    "website": "https://www.houstoncountytx.org/sheriff"
+  },
+  "bio": "Darrell Bobbitt serves as the Houston County Sheriff, protecting the citizens of Houston County from the historic county seat of Crockett. Sheriff Bobbitt leads a dedicated team of deputies serving one of the oldest counties in Texas.",
+  "campaignPromises": [
+    "Patrol the vast rural areas of Houston County effectively",
+    "Combat illegal hunting and timber theft on private lands",
+    "Maintain the county jail within state compliance standards",
+    "Coordinate with the Davy Crockett National Forest law enforcement",
+    "Provide quick emergency response across the county"
+  ]
+}

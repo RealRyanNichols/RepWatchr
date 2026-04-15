@@ -1,0 +1,27 @@
+{
+  "id": "franklin-county-sheriff",
+  "name": "Ricky Jones",
+  "firstName": "Ricky",
+  "lastName": "Jones",
+  "party": "R",
+  "level": "county",
+  "position": "County Sheriff",
+  "jurisdiction": "Franklin County",
+  "county": ["Franklin"],
+  "termStart": "2025-01-01",
+  "termEnd": "2029-01-01",
+  "contactInfo": {
+    "office": "200 N. Kaufman St., Mount Vernon, TX 75457",
+    "phone": "(903) 537-4539",
+    "email": "sheriff@franklincountytx.com",
+    "website": "https://www.franklincountytx.com/sheriff"
+  },
+  "bio": "Ricky Jones serves as the Franklin County Sheriff, protecting the citizens of Franklin County from the county seat of Mount Vernon. Sheriff Jones provides dedicated law enforcement services to this rural East Texas community.",
+  "campaignPromises": [
+    "Provide rapid response to calls throughout Franklin County",
+    "Maintain strong relationships with the communities we serve",
+    "Protect Lake Cypress Springs recreational areas",
+    "Keep overhead costs low while maintaining quality service",
+    "Ensure the county jail meets all state standards"
+  ]
+}

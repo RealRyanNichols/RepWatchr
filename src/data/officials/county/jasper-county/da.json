@@ -1,0 +1,27 @@
+{
+  "id": "jasper-county-da",
+  "name": "Brett McGuire",
+  "firstName": "Brett",
+  "lastName": "McGuire",
+  "party": "R",
+  "level": "county",
+  "position": "District Attorney",
+  "jurisdiction": "Jasper County",
+  "county": ["Jasper"],
+  "termStart": "2023-01-01",
+  "termEnd": "2027-01-01",
+  "contactInfo": {
+    "office": "121 N. Austin St., Suite 200, Jasper, TX 75951",
+    "phone": "(409) 384-3721",
+    "email": "da@jaspercountytx.org",
+    "website": "https://www.jaspercountytx.org/district-attorney"
+  },
+  "bio": "Brett McGuire serves as the District Attorney for Jasper County, overseeing felony prosecutions in the Jasper area. He works to deliver justice and protect the safety of all Jasper County residents.",
+  "campaignPromises": [
+    "Aggressively prosecute violent crime",
+    "Address drug trafficking in the Deep East Texas region",
+    "Support victims' rights and advocacy services",
+    "Improve efficiency and transparency in the DA's office",
+    "Collaborate with law enforcement agencies across the region"
+  ]
+}

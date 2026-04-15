@@ -1,0 +1,27 @@
+{
+  "id": "harrison-county-sheriff",
+  "name": "Brandon Fletcher",
+  "firstName": "Brandon",
+  "lastName": "Fletcher",
+  "party": "R",
+  "level": "county",
+  "position": "County Sheriff",
+  "jurisdiction": "Harrison County",
+  "county": ["Harrison"],
+  "termStart": "2025-01-01",
+  "termEnd": "2029-01-01",
+  "contactInfo": {
+    "office": "200 W. Houston St., Marshall, TX 75670",
+    "phone": "(903) 923-4020",
+    "email": "sheriff@harrisoncountytx.com",
+    "website": "https://www.harrisoncountytx.com/sheriff"
+  },
+  "bio": "Brandon Fletcher serves as the Harrison County Sheriff, leading law enforcement operations from the historic county seat of Marshall. Sheriff Fletcher is dedicated to protecting the people and property of Harrison County through professional and community-oriented policing.",
+  "campaignPromises": [
+    "Enhance patrol coverage on Harrison County roadways",
+    "Combat drug trafficking along the I-20 corridor",
+    "Improve county jail conditions and inmate programs",
+    "Strengthen cooperation with the Louisiana border counties",
+    "Support Caddo Lake area property protection efforts"
+  ]
+}

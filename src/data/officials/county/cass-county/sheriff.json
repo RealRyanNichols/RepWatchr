@@ -1,0 +1,27 @@
+{
+  "id": "cass-county-sheriff",
+  "name": "Larry Rowe",
+  "firstName": "Larry",
+  "lastName": "Rowe",
+  "party": "R",
+  "level": "county",
+  "position": "County Sheriff",
+  "jurisdiction": "Cass County",
+  "county": ["Cass"],
+  "termStart": "2025-01-01",
+  "termEnd": "2029-01-01",
+  "contactInfo": {
+    "office": "100 W. Houston St., Linden, TX 75563",
+    "phone": "(903) 756-7511",
+    "email": "sheriff@casscountytx.org",
+    "website": "https://www.casscountytx.org/sheriff"
+  },
+  "bio": "Larry Rowe serves as the Cass County Sheriff, providing law enforcement services across Cass County from the county seat of Linden. With deep roots in East Texas, Sheriff Rowe is committed to serving and protecting the residents of Cass County.",
+  "campaignPromises": [
+    "Increase border security cooperation along the Arkansas state line",
+    "Combat illegal dumping and environmental crimes in rural areas",
+    "Expand the reserve deputy program for community involvement",
+    "Upgrade patrol vehicles and equipment for deputies",
+    "Improve emergency response coordination with volunteer fire departments"
+  ]
+}

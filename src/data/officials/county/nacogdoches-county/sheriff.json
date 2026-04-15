@@ -1,0 +1,27 @@
+{
+  "id": "nacogdoches-county-sheriff",
+  "name": "Jason Bridges",
+  "firstName": "Jason",
+  "lastName": "Bridges",
+  "party": "R",
+  "level": "county",
+  "position": "County Sheriff",
+  "jurisdiction": "Nacogdoches County",
+  "county": ["Nacogdoches"],
+  "termStart": "2025-01-01",
+  "termEnd": "2029-01-01",
+  "contactInfo": {
+    "office": "101 W. Main St., Nacogdoches, TX 75961",
+    "phone": "(936) 560-7794",
+    "email": "sheriff@co.nacogdoches.tx.us",
+    "website": "https://www.co.nacogdoches.tx.us/sheriff"
+  },
+  "bio": "Jason Bridges serves as the Nacogdoches County Sheriff, protecting the oldest town in Texas and the surrounding county. Sheriff Bridges oversees a full-service law enforcement agency providing patrol, investigations, and detention services to Nacogdoches County.",
+  "campaignPromises": [
+    "Enhance campus safety coordination with Stephen F. Austin State University",
+    "Expand narcotics task force operations in Nacogdoches County",
+    "Improve deputy retention through competitive compensation",
+    "Modernize records management and reporting systems",
+    "Increase community policing in underserved areas of the county"
+  ]
+}

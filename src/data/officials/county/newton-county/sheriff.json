@@ -1,0 +1,27 @@
+{
+  "id": "newton-county-sheriff",
+  "name": "Robert Burby",
+  "firstName": "Robert",
+  "lastName": "Burby",
+  "party": "R",
+  "level": "county",
+  "position": "County Sheriff",
+  "jurisdiction": "Newton County",
+  "county": ["Newton"],
+  "termStart": "2025-01-01",
+  "termEnd": "2029-01-01",
+  "contactInfo": {
+    "office": "110 Court St., Newton, TX 75966",
+    "phone": "(409) 379-3636",
+    "email": "sheriff@newtoncountytx.gov",
+    "website": "https://www.newtoncountytx.gov/sheriff"
+  },
+  "bio": "Robert Burby serves as the Newton County Sheriff, providing law enforcement services to one of the most rural counties in East Texas from the county seat of Newton. Sheriff Burby is dedicated to protecting the residents and natural resources of Newton County along the Sabine River corridor.",
+  "campaignPromises": [
+    "Provide effective law enforcement across Newton County's vast rural territory",
+    "Protect Sabine River communities and Toledo Bend Reservoir areas",
+    "Coordinate disaster response for flood-prone areas of the county",
+    "Maintain strong cooperation with Louisiana law enforcement",
+    "Combat illegal activity on remote county roads and timber lands"
+  ]
+}

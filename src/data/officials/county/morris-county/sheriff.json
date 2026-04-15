@@ -1,0 +1,27 @@
+{
+  "id": "morris-county-sheriff",
+  "name": "Jack Martin",
+  "firstName": "Jack",
+  "lastName": "Martin",
+  "party": "R",
+  "level": "county",
+  "position": "County Sheriff",
+  "jurisdiction": "Morris County",
+  "county": ["Morris"],
+  "termStart": "2025-01-01",
+  "termEnd": "2029-01-01",
+  "contactInfo": {
+    "office": "500 Broadnax St., Daingerfield, TX 75638",
+    "phone": "(903) 645-2232",
+    "email": "sheriff@morriscountytx.org",
+    "website": "https://www.morriscountytx.org/sheriff"
+  },
+  "bio": "Jack Martin serves as the Morris County Sheriff, leading a dedicated team of deputies protecting the residents of Morris County from the county seat of Daingerfield. Sheriff Martin is focused on providing dependable law enforcement to this tight-knit East Texas county.",
+  "campaignPromises": [
+    "Ensure timely response to all calls for service in Morris County",
+    "Protect Daingerfield State Park and surrounding recreational areas",
+    "Maintain a drug-free community through enforcement and education",
+    "Keep the county jail safe and compliant with state regulations",
+    "Build trust between law enforcement and the community"
+  ]
+}

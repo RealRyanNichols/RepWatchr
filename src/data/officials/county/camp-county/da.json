@@ -1,0 +1,27 @@
+{
+  "id": "camp-county-da",
+  "name": "Lauren Sutton",
+  "firstName": "Lauren",
+  "lastName": "Sutton",
+  "party": "R",
+  "level": "county",
+  "position": "County Attorney",
+  "jurisdiction": "Camp County",
+  "county": ["Camp"],
+  "termStart": "2023-01-01",
+  "termEnd": "2027-01-01",
+  "contactInfo": {
+    "office": "126 Church St., Suite 200, Pittsburg, TX 75686",
+    "phone": "(903) 856-2731",
+    "email": "ca@campcounty.org",
+    "website": "https://www.campcounty.org/county-attorney"
+  },
+  "bio": "Lauren Sutton serves as the County Attorney for Camp County, handling criminal prosecutions and providing legal counsel to the county. She is dedicated to serving the residents of Pittsburg and the surrounding community.",
+  "campaignPromises": [
+    "Provide effective prosecution of criminal cases",
+    "Protect the legal interests of Camp County",
+    "Support victims of crime and their families",
+    "Maintain fiscal responsibility in the county attorney's office",
+    "Work closely with local law enforcement on public safety"
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "id": "marion-county-da",
+  "name": "Angela Smoak",
+  "firstName": "Angela",
+  "lastName": "Smoak",
+  "party": "R",
+  "level": "county",
+  "position": "County Attorney",
+  "jurisdiction": "Marion County",
+  "county": ["Marion"],
+  "termStart": "2023-01-01",
+  "termEnd": "2027-01-01",
+  "contactInfo": {
+    "office": "102 W. Austin St., Suite 201, Jefferson, TX 75657",
+    "phone": "(903) 665-3361",
+    "email": "ca@marioncountytx.org",
+    "website": "https://www.marioncountytx.org/county-attorney"
+  },
+  "bio": "Angela Smoak serves as the County Attorney for Marion County, handling criminal prosecutions and providing legal counsel to the county. She is committed to ensuring justice and public safety in the Jefferson area.",
+  "campaignPromises": [
+    "Provide effective prosecution of criminal cases in Marion County",
+    "Protect the legal interests of county government",
+    "Support crime victims and their families",
+    "Maintain fiscal responsibility in the county attorney's office",
+    "Work with law enforcement to address community safety concerns"
+  ]
+}

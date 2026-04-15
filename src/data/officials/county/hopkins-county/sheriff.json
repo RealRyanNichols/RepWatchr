@@ -1,0 +1,27 @@
+{
+  "id": "hopkins-county-sheriff",
+  "name": "Lewis Tatum",
+  "firstName": "Lewis",
+  "lastName": "Tatum",
+  "party": "R",
+  "level": "county",
+  "position": "County Sheriff",
+  "jurisdiction": "Hopkins County",
+  "county": ["Hopkins"],
+  "termStart": "2025-01-01",
+  "termEnd": "2029-01-01",
+  "contactInfo": {
+    "office": "298 Rosemont St., Sulphur Springs, TX 75482",
+    "phone": "(903) 438-4040",
+    "email": "sheriff@hopkinscountytx.org",
+    "website": "https://www.hopkinscountytx.org/sheriff"
+  },
+  "bio": "Lewis Tatum serves as the Hopkins County Sheriff, overseeing law enforcement for Hopkins County from the county seat of Sulphur Springs. Sheriff Tatum brings years of service to the department and is focused on protecting the growing Hopkins County community.",
+  "campaignPromises": [
+    "Maintain aggressive drug enforcement operations",
+    "Ensure safe and secure county detention facilities",
+    "Expand school resource officer partnerships",
+    "Increase use of social media for community alerts and crime tips",
+    "Recruit top-quality deputies to serve Hopkins County"
+  ]
+}

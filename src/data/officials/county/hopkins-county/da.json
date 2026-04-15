@@ -1,0 +1,27 @@
+{
+  "id": "hopkins-county-da",
+  "name": "Clay Harrison",
+  "firstName": "Clay",
+  "lastName": "Harrison",
+  "party": "R",
+  "level": "county",
+  "position": "District Attorney",
+  "jurisdiction": "Hopkins County",
+  "county": ["Hopkins"],
+  "termStart": "2023-01-01",
+  "termEnd": "2027-01-01",
+  "contactInfo": {
+    "office": "118 Church St., Suite 400, Sulphur Springs, TX 75482",
+    "phone": "(903) 438-4003",
+    "email": "da@hopkinscountytx.org",
+    "website": "https://www.hopkinscountytx.org/district-attorney"
+  },
+  "bio": "Clay Harrison serves as the District Attorney for Hopkins County, prosecuting felony criminal cases in the Sulphur Springs area. He is committed to protecting public safety and delivering justice for Hopkins County.",
+  "campaignPromises": [
+    "Prosecute violent crime aggressively",
+    "Address the drug crisis in Hopkins County",
+    "Support victims of crime and their families",
+    "Run an efficient and transparent DA's office",
+    "Strengthen law enforcement partnerships to reduce crime"
+  ]
+}

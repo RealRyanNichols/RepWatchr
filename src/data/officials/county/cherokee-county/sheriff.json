@@ -1,0 +1,27 @@
+{
+  "id": "cherokee-county-sheriff",
+  "name": "Brent Dickson",
+  "firstName": "Brent",
+  "lastName": "Dickson",
+  "party": "R",
+  "level": "county",
+  "position": "County Sheriff",
+  "jurisdiction": "Cherokee County",
+  "county": ["Cherokee"],
+  "termStart": "2025-01-01",
+  "termEnd": "2029-01-01",
+  "contactInfo": {
+    "office": "200 N. Main St., Rusk, TX 75785",
+    "phone": "(903) 683-2271",
+    "email": "sheriff@cherokeecountytx.gov",
+    "website": "https://www.cherokeecountytx.gov/sheriff"
+  },
+  "bio": "Brent Dickson serves as the Cherokee County Sheriff, leading law enforcement efforts across one of the larger counties in East Texas. Based in Rusk, Sheriff Dickson oversees patrol, investigations, and the county detention center serving Cherokee County.",
+  "campaignPromises": [
+    "Crack down on property crime and rural theft in Cherokee County",
+    "Enhance narcotics investigation capabilities",
+    "Maintain a well-trained and professional sheriff's department",
+    "Improve 911 response coordination across the county",
+    "Support programs that keep youth engaged and away from crime"
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "id": "henderson-county-da",
+  "name": "Mark Hall",
+  "firstName": "Mark",
+  "lastName": "Hall",
+  "party": "R",
+  "level": "county",
+  "position": "District Attorney",
+  "jurisdiction": "Henderson County",
+  "county": ["Henderson"],
+  "termStart": "2023-01-01",
+  "termEnd": "2027-01-01",
+  "contactInfo": {
+    "office": "100 E. Tyler St., Suite 300, Athens, TX 75751",
+    "phone": "(903) 675-6100",
+    "email": "da@hendersoncountytx.org",
+    "website": "https://www.hendersoncountytx.org/district-attorney"
+  },
+  "bio": "Mark Hall serves as the District Attorney for Henderson County, leading felony prosecutions in the Athens area. He works to uphold the law and protect the residents of Henderson County from crime.",
+  "campaignPromises": [
+    "Aggressively prosecute violent and drug-related crimes",
+    "Advocate for victims' rights in the criminal justice process",
+    "Improve case processing efficiency in the DA's office",
+    "Partner with law enforcement for community safety",
+    "Maintain public trust through transparency and accountability"
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "id": "anderson-county-sheriff",
+  "name": "Rudy Flores",
+  "firstName": "Rudy",
+  "lastName": "Flores",
+  "party": "R",
+  "level": "county",
+  "position": "County Sheriff",
+  "jurisdiction": "Anderson County",
+  "county": ["Anderson"],
+  "termStart": "2025-01-01",
+  "termEnd": "2029-01-01",
+  "contactInfo": {
+    "office": "1200 E. Lacy St., Palestine, TX 75801",
+    "phone": "(903) 729-6068",
+    "email": "sheriff@andersoncountytx.gov",
+    "website": "https://www.andersoncountytx.gov/sheriff"
+  },
+  "bio": "Rudy Flores serves as the Anderson County Sheriff, responsible for law enforcement and public safety across Anderson County. With over 20 years of law enforcement experience, Sheriff Flores oversees patrol operations, criminal investigations, and the county jail in Palestine.",
+  "campaignPromises": [
+    "Increase patrol presence in rural areas of Anderson County",
+    "Enhance drug interdiction efforts along major corridors",
+    "Modernize the county jail and detention facilities",
+    "Strengthen partnerships with local police departments",
+    "Expand community outreach and crime prevention programs"
+  ]
+}

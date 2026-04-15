@@ -1,0 +1,27 @@
+{
+  "id": "gregg-county-sheriff",
+  "name": "Maxey Cerliano",
+  "firstName": "Maxey",
+  "lastName": "Cerliano",
+  "party": "R",
+  "level": "county",
+  "position": "County Sheriff",
+  "jurisdiction": "Gregg County",
+  "county": ["Gregg"],
+  "termStart": "2025-01-01",
+  "termEnd": "2029-01-01",
+  "contactInfo": {
+    "office": "101 E. Methvin St., Suite 588, Longview, TX 75601",
+    "phone": "(903) 236-8400",
+    "email": "sheriff@co.gregg.tx.us",
+    "website": "https://www.co.gregg.tx.us/sheriff"
+  },
+  "bio": "Maxey Cerliano serves as the Gregg County Sheriff, overseeing one of the busier sheriff's offices in East Texas from the county seat of Longview. Sheriff Cerliano leads a department focused on combating crime and ensuring public safety in the growing Gregg County area.",
+  "campaignPromises": [
+    "Aggressively combat gang activity and violent crime",
+    "Expand the use of technology in crime prevention and investigation",
+    "Maintain a fully staffed and well-equipped sheriff's department",
+    "Enhance mental health crisis response capabilities",
+    "Strengthen partnerships with Longview PD and other local agencies"
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "id": "gregg-county-da",
+  "name": "Carl Dorrough",
+  "firstName": "Carl",
+  "lastName": "Dorrough",
+  "party": "R",
+  "level": "county",
+  "position": "District Attorney",
+  "jurisdiction": "Gregg County",
+  "county": ["Gregg"],
+  "termStart": "2023-01-01",
+  "termEnd": "2027-01-01",
+  "contactInfo": {
+    "office": "101 E. Methvin St., Suite 330, Longview, TX 75601",
+    "phone": "(903) 236-8440",
+    "email": "da@co.gregg.tx.us",
+    "website": "https://www.co.gregg.tx.us/page/gregg.DA"
+  },
+  "bio": "Carl Dorrough serves as the District Attorney for Gregg County, overseeing felony prosecutions in the Longview area. He leads efforts to combat crime and ensure justice is served for all Gregg County residents.",
+  "campaignPromises": [
+    "Aggressively prosecute violent crime in the Longview area",
+    "Target drug trafficking and distribution networks",
+    "Advocate for the rights of crime victims",
+    "Run an efficient and transparent DA's office",
+    "Strengthen relationships with local law enforcement agencies"
+  ]
+}

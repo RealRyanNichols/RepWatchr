@@ -1,0 +1,27 @@
+{
+  "id": "harrison-county-da",
+  "name": "Shawn Connally",
+  "firstName": "Shawn",
+  "lastName": "Connally",
+  "party": "R",
+  "level": "county",
+  "position": "District Attorney",
+  "jurisdiction": "Harrison County",
+  "county": ["Harrison"],
+  "termStart": "2023-01-01",
+  "termEnd": "2027-01-01",
+  "contactInfo": {
+    "office": "200 W. Houston St., Suite 300, Marshall, TX 75670",
+    "phone": "(903) 935-4810",
+    "email": "da@harrisoncountytx.com",
+    "website": "https://www.harrisoncountytx.com/district-attorney"
+  },
+  "bio": "Shawn Connally serves as the District Attorney for Harrison County, prosecuting felony criminal cases in the Marshall area. He is dedicated to ensuring justice and public safety for all Harrison County residents.",
+  "campaignPromises": [
+    "Prosecute violent offenders to the fullest extent of the law",
+    "Combat drug-related crime in Harrison County",
+    "Support victims of crime throughout the legal process",
+    "Maintain transparency and accountability in the DA's office",
+    "Work with law enforcement to reduce crime rates"
+  ]
+}

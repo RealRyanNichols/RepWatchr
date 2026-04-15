@@ -1,0 +1,27 @@
+{
+  "id": "marion-county-sheriff",
+  "name": "David McKnight",
+  "firstName": "David",
+  "lastName": "McKnight",
+  "party": "R",
+  "level": "county",
+  "position": "County Sheriff",
+  "jurisdiction": "Marion County",
+  "county": ["Marion"],
+  "termStart": "2025-01-01",
+  "termEnd": "2029-01-01",
+  "contactInfo": {
+    "office": "102 W. Austin St., Jefferson, TX 75657",
+    "phone": "(903) 665-3971",
+    "email": "sheriff@marioncountytx.org",
+    "website": "https://www.marioncountytx.org/sheriff"
+  },
+  "bio": "David McKnight serves as the Marion County Sheriff, providing law enforcement services to Marion County from the historic county seat of Jefferson. Sheriff McKnight oversees patrol operations and the county detention facility in one of East Texas's most storied communities.",
+  "campaignPromises": [
+    "Protect Marion County's historic communities and tourism areas",
+    "Enhance Caddo Lake area security and patrol operations",
+    "Maintain efficient county jail operations within budget",
+    "Strengthen cooperation with Jefferson Police Department",
+    "Support youth mentoring and crime prevention programs"
+  ]
+}

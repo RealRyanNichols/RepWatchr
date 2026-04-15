@@ -1,0 +1,27 @@
+{
+  "id": "houston-county-da",
+  "name": "Donna Gordon",
+  "firstName": "Donna",
+  "lastName": "Gordon",
+  "party": "R",
+  "level": "county",
+  "position": "District Attorney",
+  "jurisdiction": "Houston County",
+  "county": ["Houston"],
+  "termStart": "2023-01-01",
+  "termEnd": "2027-01-01",
+  "contactInfo": {
+    "office": "401 E. Goliad St., Suite 300, Crockett, TX 75835",
+    "phone": "(936) 544-3255",
+    "email": "da@houstoncountytx.org",
+    "website": "https://www.houstoncountytx.org/district-attorney"
+  },
+  "bio": "Donna Gordon serves as the District Attorney for Houston County, leading criminal prosecutions in the Crockett area. She is dedicated to upholding justice and ensuring the safety of Houston County communities.",
+  "campaignPromises": [
+    "Prosecute violent crimes to the fullest extent",
+    "Combat illegal drug activity in Houston County",
+    "Advocate for victims throughout the criminal justice process",
+    "Maintain transparency and integrity in the DA's office",
+    "Partner with law enforcement to improve public safety"
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "id": "anderson-county-da",
+  "name": "Allyson Mitchell",
+  "firstName": "Allyson",
+  "lastName": "Mitchell",
+  "party": "R",
+  "level": "county",
+  "position": "District Attorney",
+  "jurisdiction": "Anderson County",
+  "county": ["Anderson"],
+  "termStart": "2023-01-01",
+  "termEnd": "2027-01-01",
+  "contactInfo": {
+    "office": "500 N. Church St., Suite 300, Palestine, TX 75801",
+    "phone": "(903) 723-7400",
+    "email": "da@andersoncounty.org",
+    "website": "https://www.andersoncounty.org/district-attorney"
+  },
+  "bio": "Allyson Mitchell serves as the District Attorney for Anderson County, prosecuting felony criminal cases in the Palestine area. She is committed to ensuring public safety and justice for all residents of Anderson County.",
+  "campaignPromises": [
+    "Aggressively prosecute violent crime",
+    "Combat the drug epidemic in rural East Texas",
+    "Support victims' rights throughout the legal process",
+    "Maintain transparency and accountability in the DA's office",
+    "Collaborate with local law enforcement to reduce crime"
+  ]
+}

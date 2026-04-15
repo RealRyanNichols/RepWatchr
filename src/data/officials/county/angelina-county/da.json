@@ -1,0 +1,27 @@
+{
+  "id": "angelina-county-da",
+  "name": "Art Bauereiss",
+  "firstName": "Art",
+  "lastName": "Bauereiss",
+  "party": "R",
+  "level": "county",
+  "position": "District Attorney",
+  "jurisdiction": "Angelina County",
+  "county": ["Angelina"],
+  "termStart": "2023-01-01",
+  "termEnd": "2027-01-01",
+  "contactInfo": {
+    "office": "215 E. Lufkin Ave., Suite 300, Lufkin, TX 75901",
+    "phone": "(936) 634-8339",
+    "email": "da@angelinacounty.net",
+    "website": "https://www.angelinacounty.net/district-attorney"
+  },
+  "bio": "Art Bauereiss serves as the District Attorney for Angelina County, overseeing felony prosecutions in the Lufkin area. He works to uphold the law and ensure justice for victims of crime throughout the county.",
+  "campaignPromises": [
+    "Prosecute violent offenders to the fullest extent of the law",
+    "Target drug trafficking networks in the Deep East Texas region",
+    "Advocate for victims throughout the criminal justice process",
+    "Improve efficiency in case processing and court proceedings",
+    "Strengthen partnerships with law enforcement agencies"
+  ]
+}

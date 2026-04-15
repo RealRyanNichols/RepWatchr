@@ -1,0 +1,27 @@
+{
+  "id": "franklin-county-da",
+  "name": "Will Ramsay",
+  "firstName": "Will",
+  "lastName": "Ramsay",
+  "party": "R",
+  "level": "county",
+  "position": "County Attorney",
+  "jurisdiction": "Franklin County",
+  "county": ["Franklin"],
+  "termStart": "2023-01-01",
+  "termEnd": "2027-01-01",
+  "contactInfo": {
+    "office": "200 N. Kaufman St., Suite 103, Mount Vernon, TX 75457",
+    "phone": "(903) 537-2342",
+    "email": "ca@franklincounty.org",
+    "website": "https://www.franklincounty.org/county-attorney"
+  },
+  "bio": "Will Ramsay serves as the County Attorney for Franklin County, handling criminal prosecutions and providing legal counsel to the county government. He is dedicated to serving the residents of Mount Vernon and the surrounding community.",
+  "campaignPromises": [
+    "Provide fair and effective prosecution of criminal cases",
+    "Protect the legal interests of Franklin County",
+    "Support victims and witnesses throughout the legal process",
+    "Maintain a fiscally responsible county attorney's office",
+    "Collaborate with law enforcement on community safety initiatives"
+  ]
+}

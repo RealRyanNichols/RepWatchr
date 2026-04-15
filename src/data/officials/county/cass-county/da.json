@@ -1,0 +1,27 @@
+{
+  "id": "cass-county-da",
+  "name": "Courtney Shelton",
+  "firstName": "Courtney",
+  "lastName": "Shelton",
+  "party": "R",
+  "level": "county",
+  "position": "District Attorney",
+  "jurisdiction": "Cass County",
+  "county": ["Cass"],
+  "termStart": "2023-01-01",
+  "termEnd": "2027-01-01",
+  "contactInfo": {
+    "office": "604 Locust St., Suite 200, Linden, TX 75563",
+    "phone": "(903) 756-7541",
+    "email": "da@casscounty.org",
+    "website": "https://www.casscounty.org/district-attorney"
+  },
+  "bio": "Courtney Shelton serves as the District Attorney for Cass County, prosecuting felony cases in the Linden area. She works to ensure public safety and swift justice for all residents of Cass County.",
+  "campaignPromises": [
+    "Aggressively prosecute violent and property crimes",
+    "Address the methamphetamine crisis in Cass County",
+    "Protect the rights of crime victims",
+    "Run a transparent and efficient DA's office",
+    "Collaborate with law enforcement to deter criminal activity"
+  ]
+}

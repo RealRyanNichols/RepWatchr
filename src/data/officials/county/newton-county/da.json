@@ -1,0 +1,27 @@
+{
+  "id": "newton-county-da",
+  "name": "Randall Coleman",
+  "firstName": "Randall",
+  "lastName": "Coleman",
+  "party": "R",
+  "level": "county",
+  "position": "County Attorney",
+  "jurisdiction": "Newton County",
+  "county": ["Newton"],
+  "termStart": "2023-01-01",
+  "termEnd": "2027-01-01",
+  "contactInfo": {
+    "office": "115 Court St., Suite 100, Newton, TX 75966",
+    "phone": "(409) 379-3621",
+    "email": "ca@newtoncountytx.org",
+    "website": "https://www.newtoncountytx.org/county-attorney"
+  },
+  "bio": "Randall Coleman serves as the County Attorney for Newton County, handling criminal prosecutions and providing legal counsel to the county. He works to ensure justice and public safety in one of the most rural counties in East Texas.",
+  "campaignPromises": [
+    "Provide effective prosecution of criminal cases",
+    "Protect the legal interests of Newton County",
+    "Support victims of crime and their families",
+    "Operate a fiscally responsible county attorney's office",
+    "Work with law enforcement on community safety"
+  ]
+}

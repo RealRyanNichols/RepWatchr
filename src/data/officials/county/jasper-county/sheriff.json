@@ -1,0 +1,27 @@
+{
+  "id": "jasper-county-sheriff",
+  "name": "Mitchell Newman",
+  "firstName": "Mitchell",
+  "lastName": "Newman",
+  "party": "R",
+  "level": "county",
+  "position": "County Sheriff",
+  "jurisdiction": "Jasper County",
+  "county": ["Jasper"],
+  "termStart": "2025-01-01",
+  "termEnd": "2029-01-01",
+  "contactInfo": {
+    "office": "100 W. Lamar St., Jasper, TX 75951",
+    "phone": "(409) 384-2609",
+    "email": "sheriff@jaspercountytx.gov",
+    "website": "https://www.jaspercountytx.gov/sheriff"
+  },
+  "bio": "Mitchell Newman serves as the Jasper County Sheriff, leading law enforcement efforts across Jasper County from the county seat of Jasper. Sheriff Newman is committed to protecting the deep East Texas community and its natural resources including Sam Rayburn Reservoir.",
+  "campaignPromises": [
+    "Enhance lake patrol operations on Sam Rayburn Reservoir",
+    "Crack down on illegal drug manufacturing in rural areas",
+    "Improve emergency response for flooding and severe weather events",
+    "Maintain strong cooperation with federal and state agencies",
+    "Keep Jasper County a safe place to live and visit"
+  ]
+}

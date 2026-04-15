@@ -1,0 +1,27 @@
+{
+  "id": "cherokee-county-da",
+  "name": "Elmer Beckworth",
+  "firstName": "Elmer",
+  "lastName": "Beckworth",
+  "party": "R",
+  "level": "county",
+  "position": "District Attorney",
+  "jurisdiction": "Cherokee County",
+  "county": ["Cherokee"],
+  "termStart": "2023-01-01",
+  "termEnd": "2027-01-01",
+  "contactInfo": {
+    "office": "135 S. Main St., Suite 200, Rusk, TX 75785",
+    "phone": "(903) 683-2573",
+    "email": "da@cherokeecounty.org",
+    "website": "https://www.cherokeecounty.org/district-attorney"
+  },
+  "bio": "Elmer Beckworth serves as the District Attorney for Cherokee County, leading felony prosecutions in the Rusk area. He is committed to upholding justice and ensuring the safety of Cherokee County residents.",
+  "campaignPromises": [
+    "Prosecute violent crimes aggressively",
+    "Combat illegal drug activity in Cherokee County",
+    "Support and advocate for victims of crime",
+    "Ensure transparency in the DA's office operations",
+    "Partner with local agencies to improve community safety"
+  ]
+}
