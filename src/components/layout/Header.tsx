@@ -23,7 +23,7 @@ export default function Header() {
         {/* Logo / Site Name */}
         <Link href="/" className="flex items-center gap-2">
           <span className="text-lg font-bold text-gray-900 dark:text-white sm:text-xl">
-            East Texas Official Tracker
+            RepWatchr
           </span>
         </Link>
 

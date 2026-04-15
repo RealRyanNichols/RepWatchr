@@ -18,18 +18,18 @@ export default function Footer() {
           {/* Brand */}
           <div>
             <h3 className="text-lg font-bold text-gray-900 dark:text-white">
-              East Texas Official Tracker
+              RepWatchr
             </h3>
             <p className="mt-2 text-sm text-gray-600 dark:text-gray-400">
-              Transparency for East Texas
+              Watch your reps. Hold them accountable.
             </p>
             <a
-              href="https://www.RealRyanNichols.com"
+              href="https://www.RepWatchr.com"
               target="_blank"
               rel="noopener noreferrer"
               className="mt-3 inline-block text-sm font-medium text-blue-600 hover:text-blue-500 dark:text-blue-400 dark:hover:text-blue-300"
             >
-              www.RealRyanNichols.com
+              www.RepWatchr.com
             </a>
           </div>
 
@@ -66,8 +66,8 @@ export default function Footer() {
         {/* Copyright */}
         <div className="mt-8 border-t border-gray-200 pt-6 dark:border-gray-700">
           <p className="text-center text-sm text-gray-500 dark:text-gray-400">
-            &copy; {new Date().getFullYear()} East Texas Official Tracker. All
-            rights reserved.
+            &copy; {new Date().getFullYear()} RepWatchr. All rights
+            reserved. A product of RealRyanNichols.
           </p>
         </div>
       </div>

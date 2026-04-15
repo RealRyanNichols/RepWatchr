@@ -4,7 +4,7 @@ import Link from "next/link";
 export const metadata: Metadata = {
   title: "About",
   description:
-    "About the East Texas Official Tracker - bringing transparency to local politics.",
+    "About the RepWatchr - bringing transparency to local politics.",
 };
 
 export default function AboutPage() {
@@ -18,7 +18,7 @@ export default function AboutPage() {
         <section>
           <h2 className="text-xl font-bold text-gray-900 mb-3">Our Mission</h2>
           <p className="leading-relaxed">
-            The East Texas Official Tracker exists because we believe every
+            The RepWatchr exists because we believe every
             voter deserves to know exactly what their elected officials are
             doing -- how they vote, who funds them, and whether they keep their
             promises. Too often, this information is buried in government

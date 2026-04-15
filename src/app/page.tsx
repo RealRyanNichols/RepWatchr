@@ -66,7 +66,7 @@ export default function HomePage() {
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 sm:py-28">
           <div className="text-center max-w-3xl mx-auto">
             <p className="text-blue-400 text-sm font-semibold tracking-widest uppercase mb-4">
-              East Texas Accountability Platform
+              RepWatchr
             </p>
             <h1 className="text-4xl sm:text-6xl font-extrabold tracking-tight text-white mb-6 leading-tight">
               Know Your Reps.

@@ -6,23 +6,21 @@ import AuthProvider from "@/components/auth/AuthProvider";
 
 export const metadata: Metadata = {
   title: {
-    default: "East Texas Official Tracker",
-    template: "%s | East Texas Official Tracker",
+    default: "RepWatchr",
+    template: "%s | RepWatchr",
   },
   description:
-    "Track elected officials in East Texas. Scorecards on water rights, land rights, taxes, and transparency. See who funds your representatives and how they vote.",
+    "RepWatchr - Track your elected officials. Scorecards, voting records, campaign funding, and red flags. Verified Texans can vote and comment publicly.",
   keywords: [
-    "East Texas",
+    "RepWatchr",
     "elected officials",
-    "HD-7",
-    "TX-1",
-    "scorecard",
+    "Texas",
+    "political scorecard",
     "voting record",
     "campaign finance",
-    "Smith County",
-    "Gregg County",
-    "Tyler",
-    "Longview",
+    "representative tracker",
+    "accountability",
+    "transparency",
   ],
 };
 

@@ -103,7 +103,7 @@ export default async function OfficialProfilePage({
               </div>
               <div className="mt-3">
                 <ShareButtons
-                  title={`${official.name} - ${official.position} | East Texas Official Tracker`}
+                  title={`${official.name} - ${official.position} | RepWatchr`}
                   description={`See the scorecard, voting record, and funding data for ${official.name}.`}
                   path={`/officials/${official.id}`}
                 />
