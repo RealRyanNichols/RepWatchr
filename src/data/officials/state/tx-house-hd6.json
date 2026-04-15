@@ -1,0 +1,32 @@
+{
+  "id": "matt-schaefer",
+  "name": "Matt Schaefer",
+  "firstName": "Matt",
+  "lastName": "Schaefer",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-6",
+  "jurisdiction": "Texas House of Representatives",
+  "county": ["Anderson", "Cherokee", "Henderson", "Smith"],
+  "termStart": "2023-01-10",
+  "termEnd": "2027-01-10",
+  "contactInfo": {
+    "office": "Texas Capitol Extension, Room E2.306, Austin, TX 78701",
+    "phone": "(512) 463-0584",
+    "email": "matt.schaefer@house.texas.gov",
+    "website": "https://house.texas.gov/members/member-page/?district=6",
+    "socialMedia": {
+      "twitter": "https://twitter.com/MattSchaeferTX6",
+      "facebook": "https://facebook.com/RepMattSchaefer"
+    }
+  },
+  "bio": "Matt Schaefer represents House District 6 in the Texas House of Representatives, covering Henderson and Anderson counties along with parts of Smith and Cherokee counties in the Tyler area. An attorney and Army veteran, Schaefer has served in the legislature since 2013. He is recognized as one of the most conservative members of the Texas House, championing constitutional carry, pro-life legislation, and fiscal restraint.",
+  "campaignPromises": [
+    "Eliminate property tax and shift to consumption-based taxation",
+    "Defend the right to life from conception",
+    "Oppose all forms of gun control at the state level",
+    "Reduce the size and scope of state government",
+    "Secure the Texas border and enforce immigration laws"
+  ]
+}

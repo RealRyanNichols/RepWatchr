@@ -1,0 +1,27 @@
+{
+  "id": "anderson-county-judge",
+  "name": "Robert Hughes",
+  "firstName": "Robert",
+  "lastName": "Hughes",
+  "party": "R",
+  "level": "county",
+  "position": "County Judge",
+  "jurisdiction": "Anderson County",
+  "county": ["Anderson"],
+  "termStart": "2023-01-01",
+  "termEnd": "2027-01-01",
+  "contactInfo": {
+    "office": "703 N. Mallard St., Suite 102, Palestine, TX 75801",
+    "phone": "(903) 723-7400",
+    "email": "county.judge@anderson-county.com",
+    "website": "https://www.co.anderson.tx.us/county-judge"
+  },
+  "bio": "Robert Hughes serves as the Anderson County Judge, the chief executive and administrative officer of Anderson County. The county judge presides over the Commissioners Court and oversees county government operations including budgeting, emergency management, and infrastructure in the Palestine area.",
+  "campaignPromises": [
+    "Keep Anderson County taxes low while maintaining services",
+    "Improve county roads and infrastructure",
+    "Support law enforcement and public safety",
+    "Maintain transparent county government operations",
+    "Plan responsibly for county growth"
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "id": "troup-mayor",
+  "name": "David French",
+  "firstName": "David",
+  "lastName": "French",
+  "party": "NP",
+  "level": "city",
+  "position": "Mayor",
+  "jurisdiction": "City of Troup",
+  "county": ["Smith"],
+  "termStart": "2023-05-01",
+  "termEnd": "2027-05-01",
+  "contactInfo": {
+    "office": "107 N. Bois D'Arc St., Troup, TX 75789",
+    "phone": "(903) 842-3128",
+    "email": "mayor@trouptx.gov",
+    "website": "https://www.trouptx.gov",
+    "socialMedia": {
+      "facebook": "https://facebook.com/CityOfTroup"
+    }
+  },
+  "bio": "David French serves as the Mayor of Troup, a small city in southeastern Smith County. Troup is a close-knit community with a proud heritage. The mayor presides over council meetings and advocates for city improvements and services for residents.",
+  "campaignPromises": [
+    "Improve city infrastructure and roads",
+    "Support local businesses and economic development",
+    "Maintain city services within a responsible budget",
+    "Enhance community programs and recreation",
+    "Ensure reliable water and utility services"
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "id": "hopkins-county-judge",
+  "name": "Robert Newsom",
+  "firstName": "Robert",
+  "lastName": "Newsom",
+  "party": "R",
+  "level": "county",
+  "position": "County Judge",
+  "jurisdiction": "Hopkins County",
+  "county": ["Hopkins"],
+  "termStart": "2023-01-01",
+  "termEnd": "2027-01-01",
+  "contactInfo": {
+    "office": "118 Church St., Sulphur Springs, TX 75482",
+    "phone": "(903) 438-4006",
+    "email": "county.judge@hopkins-county.com",
+    "website": "https://www.hopkinscountytx.org/county-judge"
+  },
+  "bio": "Robert Newsom serves as the Hopkins County Judge, the chief executive and administrative officer of Hopkins County. The county judge presides over the Commissioners Court and oversees county government operations including budgeting, emergency management, and infrastructure in the Sulphur Springs area.",
+  "campaignPromises": [
+    "Keep Hopkins County taxes low while maintaining services",
+    "Improve county roads and infrastructure",
+    "Support law enforcement and public safety",
+    "Maintain transparent county government operations",
+    "Plan responsibly for county growth"
+  ]
+}

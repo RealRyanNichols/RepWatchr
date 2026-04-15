@@ -1,0 +1,27 @@
+{
+  "id": "harrison-county-judge",
+  "name": "Chad Sims",
+  "firstName": "Chad",
+  "lastName": "Sims",
+  "party": "R",
+  "level": "county",
+  "position": "County Judge",
+  "jurisdiction": "Harrison County",
+  "county": ["Harrison"],
+  "termStart": "2023-01-01",
+  "termEnd": "2027-01-01",
+  "contactInfo": {
+    "office": "200 W. Houston St., Marshall, TX 75670",
+    "phone": "(903) 935-4868",
+    "email": "county.judge@harrison-county.com",
+    "website": "https://www.harrisoncountytx.com/county-judge"
+  },
+  "bio": "Chad Sims serves as the Harrison County Judge, the chief executive and administrative officer of Harrison County. The county judge presides over the Commissioners Court and oversees county government operations including budgeting, emergency management, and infrastructure in the Marshall area.",
+  "campaignPromises": [
+    "Keep Harrison County taxes low while maintaining services",
+    "Improve county roads and infrastructure",
+    "Support law enforcement and public safety",
+    "Maintain transparent county government operations",
+    "Plan responsibly for county growth"
+  ]
+}

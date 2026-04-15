@@ -1,0 +1,27 @@
+{
+  "id": "jasper-county-judge",
+  "name": "Mark Allen",
+  "firstName": "Mark",
+  "lastName": "Allen",
+  "party": "R",
+  "level": "county",
+  "position": "County Judge",
+  "jurisdiction": "Jasper County",
+  "county": ["Jasper"],
+  "termStart": "2023-01-01",
+  "termEnd": "2027-01-01",
+  "contactInfo": {
+    "office": "121 N. Austin St., Jasper, TX 75951",
+    "phone": "(409) 384-2632",
+    "email": "county.judge@jasper-county.com",
+    "website": "https://www.co.jasper.tx.us/county-judge"
+  },
+  "bio": "Mark Allen serves as the Jasper County Judge, the chief executive and administrative officer of Jasper County. The county judge presides over the Commissioners Court and oversees county government operations including budgeting, emergency management, and infrastructure in the Jasper area.",
+  "campaignPromises": [
+    "Keep Jasper County taxes low while maintaining services",
+    "Improve county roads and infrastructure",
+    "Support law enforcement and public safety",
+    "Maintain transparent county government operations",
+    "Plan responsibly for county growth"
+  ]
+}

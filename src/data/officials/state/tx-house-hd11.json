@@ -1,0 +1,32 @@
+{
+  "id": "travis-clardy",
+  "name": "Travis Clardy",
+  "firstName": "Travis",
+  "lastName": "Clardy",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-11",
+  "jurisdiction": "Texas House of Representatives",
+  "county": ["Cherokee", "Gregg", "Harrison", "Nacogdoches", "Rusk", "Smith"],
+  "termStart": "2023-01-10",
+  "termEnd": "2027-01-10",
+  "contactInfo": {
+    "office": "Texas Capitol Extension, Room E2.502, Austin, TX 78701",
+    "phone": "(512) 463-0592",
+    "email": "travis.clardy@house.texas.gov",
+    "website": "https://house.texas.gov/members/member-page/?district=11",
+    "socialMedia": {
+      "twitter": "https://twitter.com/TravisClardy",
+      "facebook": "https://facebook.com/RepTravisClardy"
+    }
+  },
+  "bio": "Travis Clardy represents House District 11 in the Texas House of Representatives, covering Cherokee and parts of Smith, Nacogdoches, Rusk, Harrison, and Gregg counties. An attorney based in Nacogdoches, Clardy has served in the legislature since 2013. He is known for his work on judiciary and civil jurisprudence issues, as well as his support for Stephen F. Austin State University and the broader East Texas education community.",
+  "campaignPromises": [
+    "Reform the civil justice system to reduce frivolous lawsuits",
+    "Support East Texas higher education and workforce development",
+    "Lower property taxes and promote economic growth",
+    "Protect rural communities and their way of life",
+    "Uphold conservative values and constitutional principles"
+  ]
+}

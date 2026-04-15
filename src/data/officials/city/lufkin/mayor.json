@@ -1,0 +1,30 @@
+{
+  "id": "lufkin-mayor",
+  "name": "Mark Hicks",
+  "firstName": "Mark",
+  "lastName": "Hicks",
+  "party": "NP",
+  "level": "city",
+  "position": "Mayor",
+  "jurisdiction": "City of Lufkin",
+  "county": ["Angelina"],
+  "termStart": "2023-05-01",
+  "termEnd": "2027-05-01",
+  "contactInfo": {
+    "office": "300 E. Shepherd Ave., Lufkin, TX 75901",
+    "phone": "(936) 633-0200",
+    "email": "mayor@cityoflufkin.com",
+    "website": "https://www.cityoflufkin.com",
+    "socialMedia": {
+      "facebook": "https://facebook.com/CityOfLufkin"
+    }
+  },
+  "bio": "Mark Hicks serves as the Mayor of Lufkin, the county seat of Angelina County and a major hub for the deep East Texas timber industry. Lufkin is home to the Texas Forestry Museum and Angelina College. The mayor leads the city council in promoting economic diversification and community development.",
+  "campaignPromises": [
+    "Diversify Lufkin's economy beyond timber and manufacturing",
+    "Improve city streets and water infrastructure",
+    "Support Angelina College and workforce development",
+    "Enhance public safety and emergency services",
+    "Revitalize downtown Lufkin"
+  ]
+}

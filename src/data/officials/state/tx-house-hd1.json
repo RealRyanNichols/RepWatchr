@@ -1,0 +1,32 @@
+{
+  "id": "gary-vandeaver",
+  "name": "Gary VanDeaver",
+  "firstName": "Gary",
+  "lastName": "VanDeaver",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-1",
+  "jurisdiction": "Texas House of Representatives",
+  "county": ["Bowie", "Cass", "Delta", "Franklin", "Hopkins", "Lamar", "Marion", "Morris", "Red River", "Titus"],
+  "termStart": "2023-01-10",
+  "termEnd": "2027-01-10",
+  "contactInfo": {
+    "office": "Texas Capitol Extension, Room E2.706, Austin, TX 78701",
+    "phone": "(512) 463-0692",
+    "email": "gary.vandeaver@house.texas.gov",
+    "website": "https://house.texas.gov/members/member-page/?district=1",
+    "socialMedia": {
+      "twitter": "https://twitter.com/GaryVanDeaver",
+      "facebook": "https://facebook.com/RepGaryVanDeaver"
+    }
+  },
+  "bio": "Gary VanDeaver represents House District 1 in the Texas House of Representatives, covering the far northeast corner of Texas including Bowie, Cass, Morris, Marion, Titus, and Franklin counties. A retired educator and school superintendent, VanDeaver has served in the legislature since 2015 and is known for his focus on public education funding, rural infrastructure, and protecting the interests of Northeast Texas communities.",
+  "campaignPromises": [
+    "Increase state funding for rural public schools",
+    "Expand rural broadband and infrastructure investment",
+    "Lower property taxes for East Texas families",
+    "Support Second Amendment rights",
+    "Strengthen border security through state-level legislation"
+  ]
+}

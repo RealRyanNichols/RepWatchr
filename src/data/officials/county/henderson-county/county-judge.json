@@ -1,0 +1,27 @@
+{
+  "id": "henderson-county-judge",
+  "name": "Wade McKinney",
+  "firstName": "Wade",
+  "lastName": "McKinney",
+  "party": "R",
+  "level": "county",
+  "position": "County Judge",
+  "jurisdiction": "Henderson County",
+  "county": ["Henderson"],
+  "termStart": "2023-01-01",
+  "termEnd": "2027-01-01",
+  "contactInfo": {
+    "office": "100 E. Tyler St., Suite 100, Athens, TX 75751",
+    "phone": "(903) 675-6100",
+    "email": "county.judge@henderson-county.com",
+    "website": "https://www.henderson-county.com/county-judge"
+  },
+  "bio": "Wade McKinney serves as the Henderson County Judge, the chief executive and administrative officer of Henderson County. The county judge presides over the Commissioners Court and oversees county government operations including budgeting, emergency management, and infrastructure in the Athens area.",
+  "campaignPromises": [
+    "Keep Henderson County taxes low while maintaining services",
+    "Improve county roads and infrastructure",
+    "Support law enforcement and public safety",
+    "Maintain transparent county government operations",
+    "Plan responsibly for county growth"
+  ]
+}

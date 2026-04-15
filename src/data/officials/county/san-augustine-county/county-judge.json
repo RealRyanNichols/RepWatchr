@@ -1,0 +1,27 @@
+{
+  "id": "san-augustine-county-judge",
+  "name": "Sammy Crouch",
+  "firstName": "Sammy",
+  "lastName": "Crouch",
+  "party": "R",
+  "level": "county",
+  "position": "County Judge",
+  "jurisdiction": "San Augustine County",
+  "county": ["San Augustine"],
+  "termStart": "2023-01-01",
+  "termEnd": "2027-01-01",
+  "contactInfo": {
+    "office": "106 Courthouse, San Augustine, TX 75972",
+    "phone": "(936) 275-2762",
+    "email": "county.judge@san-augustine-county.com",
+    "website": "https://www.co.san-augustine.tx.us/county-judge"
+  },
+  "bio": "Sammy Crouch serves as the San Augustine County Judge, the chief executive and administrative officer of San Augustine County. The county judge presides over the Commissioners Court and oversees county government operations including budgeting, emergency management, and infrastructure in the San Augustine area.",
+  "campaignPromises": [
+    "Keep San Augustine County taxes low while maintaining services",
+    "Improve county roads and infrastructure",
+    "Support law enforcement and public safety",
+    "Maintain transparent county government operations",
+    "Plan responsibly for county growth"
+  ]
+}

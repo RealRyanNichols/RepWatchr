@@ -1,0 +1,30 @@
+{
+  "id": "marshall-mayor",
+  "name": "Terrence Jones",
+  "firstName": "Terrence",
+  "lastName": "Jones",
+  "party": "NP",
+  "level": "city",
+  "position": "Mayor",
+  "jurisdiction": "City of Marshall",
+  "county": ["Harrison"],
+  "termStart": "2023-05-01",
+  "termEnd": "2027-05-01",
+  "contactInfo": {
+    "office": "401 S. Alamo Blvd., Marshall, TX 75670",
+    "phone": "(903) 935-4421",
+    "email": "mayor@marshalltexas.net",
+    "website": "https://www.marshalltexas.net",
+    "socialMedia": {
+      "facebook": "https://facebook.com/CityOfMarshall"
+    }
+  },
+  "bio": "Terrence Jones serves as the Mayor of Marshall, the county seat of Harrison County. Marshall is known for its historic courthouse, the Wonderland of Lights holiday festival, and as a center for patent litigation in the Eastern District of Texas. The mayor guides the city council in promoting economic development and preserving Marshall's cultural heritage.",
+  "campaignPromises": [
+    "Promote economic development and job creation in Marshall",
+    "Preserve and enhance Marshall's historic downtown",
+    "Improve city infrastructure and streets",
+    "Support the Wonderland of Lights and community events",
+    "Strengthen public safety services"
+  ]
+}

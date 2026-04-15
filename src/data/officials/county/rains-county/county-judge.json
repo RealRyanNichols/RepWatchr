@@ -1,0 +1,27 @@
+{
+  "id": "rains-county-judge",
+  "name": "Wayne Wolfe",
+  "firstName": "Wayne",
+  "lastName": "Wolfe",
+  "party": "R",
+  "level": "county",
+  "position": "County Judge",
+  "jurisdiction": "Rains County",
+  "county": ["Rains"],
+  "termStart": "2023-01-01",
+  "termEnd": "2027-01-01",
+  "contactInfo": {
+    "office": "220 W. Quitman St., Suite 101, Emory, TX 75440",
+    "phone": "(903) 473-2461",
+    "email": "county.judge@rains-county.com",
+    "website": "https://www.co.rains.tx.us/county-judge"
+  },
+  "bio": "Wayne Wolfe serves as the Rains County Judge, the chief executive and administrative officer of Rains County. The county judge presides over the Commissioners Court and oversees county government operations including budgeting, emergency management, and infrastructure in the Emory area.",
+  "campaignPromises": [
+    "Keep Rains County taxes low while maintaining services",
+    "Improve county roads and infrastructure",
+    "Support law enforcement and public safety",
+    "Maintain transparent county government operations",
+    "Plan responsibly for county growth"
+  ]
+}

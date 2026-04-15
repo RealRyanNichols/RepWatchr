@@ -1,0 +1,30 @@
+{
+  "id": "white-oak-mayor",
+  "name": "Kyle Kutch",
+  "firstName": "Kyle",
+  "lastName": "Kutch",
+  "party": "NP",
+  "level": "city",
+  "position": "Mayor",
+  "jurisdiction": "City of White Oak",
+  "county": ["Gregg"],
+  "termStart": "2023-05-01",
+  "termEnd": "2027-05-01",
+  "contactInfo": {
+    "office": "906 S. White Oak Rd., White Oak, TX 75693",
+    "phone": "(903) 759-3936",
+    "email": "mayor@cityofwhiteoak.com",
+    "website": "https://www.cityofwhiteoak.com",
+    "socialMedia": {
+      "facebook": "https://facebook.com/CityOfWhiteOak"
+    }
+  },
+  "bio": "Kyle Kutch serves as the Mayor of White Oak, a small city in Gregg County between Longview and Kilgore. White Oak is known for its strong school district and close-knit community. The mayor works with the council to preserve the city's quality of life while managing growth.",
+  "campaignPromises": [
+    "Maintain White Oak's family-friendly community atmosphere",
+    "Support White Oak ISD and local education",
+    "Improve roads and infrastructure",
+    "Keep property taxes competitive",
+    "Enhance parks and recreational facilities"
+  ]
+}

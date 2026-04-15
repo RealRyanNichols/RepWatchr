@@ -1,0 +1,27 @@
+{
+  "id": "morris-county-judge",
+  "name": "Doug Dansby",
+  "firstName": "Doug",
+  "lastName": "Dansby",
+  "party": "R",
+  "level": "county",
+  "position": "County Judge",
+  "jurisdiction": "Morris County",
+  "county": ["Morris"],
+  "termStart": "2023-01-01",
+  "termEnd": "2027-01-01",
+  "contactInfo": {
+    "office": "500 Broadnax St., Daingerfield, TX 75638",
+    "phone": "(903) 645-3911",
+    "email": "county.judge@morris-county.com",
+    "website": "https://www.co.morris.tx.us/county-judge"
+  },
+  "bio": "Doug Dansby serves as the Morris County Judge, the chief executive and administrative officer of Morris County. The county judge presides over the Commissioners Court and oversees county government operations including budgeting, emergency management, and infrastructure in the Daingerfield area.",
+  "campaignPromises": [
+    "Keep Morris County taxes low while maintaining services",
+    "Improve county roads and infrastructure",
+    "Support law enforcement and public safety",
+    "Maintain transparent county government operations",
+    "Plan responsibly for county growth"
+  ]
+}

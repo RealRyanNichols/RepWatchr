@@ -1,0 +1,27 @@
+{
+  "id": "franklin-county-judge",
+  "name": "Scott Lee",
+  "firstName": "Scott",
+  "lastName": "Lee",
+  "party": "R",
+  "level": "county",
+  "position": "County Judge",
+  "jurisdiction": "Franklin County",
+  "county": ["Franklin"],
+  "termStart": "2023-01-01",
+  "termEnd": "2027-01-01",
+  "contactInfo": {
+    "office": "200 N. Kaufman St., Mount Vernon, TX 75457",
+    "phone": "(903) 537-2342",
+    "email": "county.judge@franklin-county.com",
+    "website": "https://www.co.franklin.tx.us/county-judge"
+  },
+  "bio": "Scott Lee serves as the Franklin County Judge, the chief executive and administrative officer of Franklin County. The county judge presides over the Commissioners Court and oversees county government operations including budgeting, emergency management, and infrastructure in the Mount Vernon area.",
+  "campaignPromises": [
+    "Keep Franklin County taxes low while maintaining services",
+    "Improve county roads and infrastructure",
+    "Support law enforcement and public safety",
+    "Maintain transparent county government operations",
+    "Plan responsibly for county growth"
+  ]
+}

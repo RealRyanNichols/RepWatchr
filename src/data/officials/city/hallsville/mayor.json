@@ -1,0 +1,30 @@
+{
+  "id": "hallsville-mayor",
+  "name": "Mike Akins",
+  "firstName": "Mike",
+  "lastName": "Akins",
+  "party": "NP",
+  "level": "city",
+  "position": "Mayor",
+  "jurisdiction": "City of Hallsville",
+  "county": ["Harrison"],
+  "termStart": "2023-05-01",
+  "termEnd": "2027-05-01",
+  "contactInfo": {
+    "office": "112 W. Main St., Hallsville, TX 75650",
+    "phone": "(903) 668-2137",
+    "email": "mayor@hallsville.com",
+    "website": "https://www.hallsville.com",
+    "socialMedia": {
+      "facebook": "https://facebook.com/CityOfHallsville"
+    }
+  },
+  "bio": "Mike Akins serves as the Mayor of Hallsville, a growing community in Harrison County located between Longview and Marshall. Hallsville is known for its excellent school district and small-town values. The mayor works with the city council to manage growth and maintain quality city services.",
+  "campaignPromises": [
+    "Manage growth while preserving Hallsville's character",
+    "Support Hallsville ISD and local education",
+    "Improve city roads and drainage",
+    "Maintain low taxes and efficient city services",
+    "Enhance parks and community gathering spaces"
+  ]
+}

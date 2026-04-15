@@ -1,0 +1,30 @@
+{
+  "id": "henderson-mayor",
+  "name": "Gene Smith",
+  "firstName": "Gene",
+  "lastName": "Smith",
+  "party": "NP",
+  "level": "city",
+  "position": "Mayor",
+  "jurisdiction": "City of Henderson",
+  "county": ["Rusk"],
+  "termStart": "2023-05-01",
+  "termEnd": "2027-05-01",
+  "contactInfo": {
+    "office": "200 N. Main St., Henderson, TX 75652",
+    "phone": "(903) 657-6551",
+    "email": "mayor@hendersontx.us",
+    "website": "https://www.hendersontx.us",
+    "socialMedia": {
+      "facebook": "https://facebook.com/CityOfHendersonTX"
+    }
+  },
+  "bio": "Gene Smith serves as the Mayor of Henderson, the county seat of Rusk County. Henderson is known for its historic downtown square and the Depot Museum. The mayor presides over city council meetings and works to promote economic development in this East Texas community.",
+  "campaignPromises": [
+    "Revitalize Henderson's historic downtown square",
+    "Attract new businesses and investment to the city",
+    "Improve roads and city infrastructure",
+    "Support public safety and emergency services",
+    "Promote Henderson's heritage and community events"
+  ]
+}

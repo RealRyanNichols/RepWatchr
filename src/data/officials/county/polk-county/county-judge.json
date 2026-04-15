@@ -1,0 +1,27 @@
+{
+  "id": "polk-county-judge",
+  "name": "Sydney Murphy",
+  "firstName": "Sydney",
+  "lastName": "Murphy",
+  "party": "R",
+  "level": "county",
+  "position": "County Judge",
+  "jurisdiction": "Polk County",
+  "county": ["Polk"],
+  "termStart": "2023-01-01",
+  "termEnd": "2027-01-01",
+  "contactInfo": {
+    "office": "101 W. Church St., Suite 300, Livingston, TX 77351",
+    "phone": "(936) 327-6813",
+    "email": "county.judge@polk-county.com",
+    "website": "https://www.co.polk.tx.us/county-judge"
+  },
+  "bio": "Sydney Murphy serves as the Polk County Judge, the chief executive and administrative officer of Polk County. The county judge presides over the Commissioners Court and oversees county government operations including budgeting, emergency management, and infrastructure in the Livingston area.",
+  "campaignPromises": [
+    "Keep Polk County taxes low while maintaining services",
+    "Improve county roads and infrastructure",
+    "Support law enforcement and public safety",
+    "Maintain transparent county government operations",
+    "Plan responsibly for county growth"
+  ]
+}

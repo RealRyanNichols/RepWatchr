@@ -1,0 +1,27 @@
+{
+  "id": "sabine-county-judge",
+  "name": "Daryl Melton",
+  "firstName": "Daryl",
+  "lastName": "Melton",
+  "party": "R",
+  "level": "county",
+  "position": "County Judge",
+  "jurisdiction": "Sabine County",
+  "county": ["Sabine"],
+  "termStart": "2023-01-01",
+  "termEnd": "2027-01-01",
+  "contactInfo": {
+    "office": "201 Main St., Hemphill, TX 75948",
+    "phone": "(409) 787-3786",
+    "email": "county.judge@sabine-county.com",
+    "website": "https://www.co.sabine.tx.us/county-judge"
+  },
+  "bio": "Daryl Melton serves as the Sabine County Judge, the chief executive and administrative officer of Sabine County. The county judge presides over the Commissioners Court and oversees county government operations including budgeting, emergency management, and infrastructure in the Hemphill area.",
+  "campaignPromises": [
+    "Keep Sabine County taxes low while maintaining services",
+    "Improve county roads and infrastructure",
+    "Support law enforcement and public safety",
+    "Maintain transparent county government operations",
+    "Plan responsibly for county growth"
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "id": "cherokee-county-judge",
+  "name": "Darrell Gentry",
+  "firstName": "Darrell",
+  "lastName": "Gentry",
+  "party": "R",
+  "level": "county",
+  "position": "County Judge",
+  "jurisdiction": "Cherokee County",
+  "county": ["Cherokee"],
+  "termStart": "2023-01-01",
+  "termEnd": "2027-01-01",
+  "contactInfo": {
+    "office": "135 S. Main St., Rusk, TX 75785",
+    "phone": "(903) 683-2573",
+    "email": "county.judge@cherokee-county.com",
+    "website": "https://www.co.cherokee.tx.us/county-judge"
+  },
+  "bio": "Darrell Gentry serves as the Cherokee County Judge, the chief executive and administrative officer of Cherokee County. The county judge presides over the Commissioners Court and oversees county government operations including budgeting, emergency management, and infrastructure in the Rusk area.",
+  "campaignPromises": [
+    "Keep Cherokee County taxes low while maintaining services",
+    "Improve county roads and infrastructure",
+    "Support law enforcement and public safety",
+    "Maintain transparent county government operations",
+    "Plan responsibly for county growth"
+  ]
+}

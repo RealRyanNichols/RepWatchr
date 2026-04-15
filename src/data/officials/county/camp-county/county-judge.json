@@ -1,0 +1,27 @@
+{
+  "id": "camp-county-judge",
+  "name": "Craig Shelton",
+  "firstName": "Craig",
+  "lastName": "Shelton",
+  "party": "R",
+  "level": "county",
+  "position": "County Judge",
+  "jurisdiction": "Camp County",
+  "county": ["Camp"],
+  "termStart": "2023-01-01",
+  "termEnd": "2027-01-01",
+  "contactInfo": {
+    "office": "126 Church St., Suite 101, Pittsburg, TX 75686",
+    "phone": "(903) 856-2731",
+    "email": "county.judge@camp-county.com",
+    "website": "https://www.co.camp.tx.us/county-judge"
+  },
+  "bio": "Craig Shelton serves as the Camp County Judge, the chief executive and administrative officer of Camp County. The county judge presides over the Commissioners Court and oversees county government operations including budgeting, emergency management, and infrastructure in the Pittsburg area.",
+  "campaignPromises": [
+    "Keep Camp County taxes low while maintaining services",
+    "Improve county roads and infrastructure",
+    "Support law enforcement and public safety",
+    "Maintain transparent county government operations",
+    "Plan responsibly for county growth"
+  ]
+}

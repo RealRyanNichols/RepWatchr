@@ -1,0 +1,32 @@
+{
+  "id": "trent-ashby",
+  "name": "Trent Ashby",
+  "firstName": "Trent",
+  "lastName": "Ashby",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-9",
+  "jurisdiction": "Texas House of Representatives",
+  "county": ["Angelina", "Houston", "Jasper", "Newton", "Polk", "Sabine", "San Augustine", "Trinity", "Tyler"],
+  "termStart": "2023-01-10",
+  "termEnd": "2027-01-10",
+  "contactInfo": {
+    "office": "Texas Capitol Extension, Room E1.422, Austin, TX 78701",
+    "phone": "(512) 463-0508",
+    "email": "trent.ashby@house.texas.gov",
+    "website": "https://house.texas.gov/members/member-page/?district=9",
+    "socialMedia": {
+      "twitter": "https://twitter.com/TrentAshbyTX9",
+      "facebook": "https://facebook.com/RepTrentAshby"
+    }
+  },
+  "bio": "Trent Ashby represents House District 9 in the Texas House of Representatives, covering the Deep East Texas region including Angelina, Houston, Jasper, Newton, Polk, Sabine, San Augustine, Trinity, and Tyler counties. Based in Lufkin, Ashby has served in the legislature since 2013 and is a strong voice for rural East Texas. He focuses on forestry and natural resources, rural healthcare access, and infrastructure improvements for the region.",
+  "campaignPromises": [
+    "Protect East Texas forestry and natural resource industries",
+    "Improve rural healthcare access and support local hospitals",
+    "Invest in rural roads, bridges, and infrastructure",
+    "Expand broadband connectivity in Deep East Texas",
+    "Keep taxes low and government accountable"
+  ]
+}

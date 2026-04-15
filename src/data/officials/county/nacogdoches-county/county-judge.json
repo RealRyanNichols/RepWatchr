@@ -1,0 +1,27 @@
+{
+  "id": "nacogdoches-county-judge",
+  "name": "Greg Sowell",
+  "firstName": "Greg",
+  "lastName": "Sowell",
+  "party": "R",
+  "level": "county",
+  "position": "County Judge",
+  "jurisdiction": "Nacogdoches County",
+  "county": ["Nacogdoches"],
+  "termStart": "2023-01-01",
+  "termEnd": "2027-01-01",
+  "contactInfo": {
+    "office": "101 W. Main St., Suite 230, Nacogdoches, TX 75961",
+    "phone": "(936) 560-7733",
+    "email": "county.judge@nacogdoches-county.com",
+    "website": "https://www.co.nacogdoches.tx.us/county-judge"
+  },
+  "bio": "Greg Sowell serves as the Nacogdoches County Judge, the chief executive and administrative officer of Nacogdoches County. The county judge presides over the Commissioners Court and oversees county government operations including budgeting, emergency management, and infrastructure in the Nacogdoches area.",
+  "campaignPromises": [
+    "Keep Nacogdoches County taxes low while maintaining services",
+    "Improve county roads and infrastructure",
+    "Support law enforcement and public safety",
+    "Maintain transparent county government operations",
+    "Plan responsibly for county growth"
+  ]
+}

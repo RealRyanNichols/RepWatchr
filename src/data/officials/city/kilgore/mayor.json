@@ -1,0 +1,30 @@
+{
+  "id": "kilgore-mayor",
+  "name": "Ronnie Spradlin",
+  "firstName": "Ronnie",
+  "lastName": "Spradlin",
+  "party": "NP",
+  "level": "city",
+  "position": "Mayor",
+  "jurisdiction": "City of Kilgore",
+  "county": ["Gregg"],
+  "termStart": "2023-05-01",
+  "termEnd": "2027-05-01",
+  "contactInfo": {
+    "office": "815 N. Kilgore St., Kilgore, TX 75662",
+    "phone": "(903) 983-1559",
+    "email": "mayor@cityofkilgore.com",
+    "website": "https://www.cityofkilgore.com",
+    "socialMedia": {
+      "facebook": "https://facebook.com/CityOfKilgore"
+    }
+  },
+  "bio": "Ronnie Spradlin serves as the Mayor of Kilgore, a historic oil boom city in Gregg County. Kilgore is home to the world-famous Kilgore College Rangerettes and the East Texas Oil Museum. The mayor works with the city council to promote economic development and community vitality.",
+  "campaignPromises": [
+    "Revitalize downtown Kilgore and attract new businesses",
+    "Improve city streets and infrastructure",
+    "Support Kilgore College and local education",
+    "Maintain strong public safety services",
+    "Promote Kilgore's historical heritage and tourism"
+  ]
+}

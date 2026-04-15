@@ -1,0 +1,30 @@
+{
+  "id": "bullard-mayor",
+  "name": "Steve Betterton",
+  "firstName": "Steve",
+  "lastName": "Betterton",
+  "party": "NP",
+  "level": "city",
+  "position": "Mayor",
+  "jurisdiction": "City of Bullard",
+  "county": ["Smith"],
+  "termStart": "2023-05-01",
+  "termEnd": "2027-05-01",
+  "contactInfo": {
+    "office": "100 N. Houston St., Bullard, TX 75757",
+    "phone": "(903) 894-7573",
+    "email": "mayor@bullardtx.gov",
+    "website": "https://www.bullardtx.gov",
+    "socialMedia": {
+      "facebook": "https://facebook.com/CityOfBullard"
+    }
+  },
+  "bio": "Steve Betterton serves as the Mayor of Bullard, a small but growing community in southern Smith County. Bullard is known for its family-friendly atmosphere and proximity to Tyler. The mayor works with the city council to guide development and maintain the city's rural charm.",
+  "campaignPromises": [
+    "Guide responsible growth in Bullard",
+    "Improve local roads and drainage",
+    "Support Bullard ISD and community programs",
+    "Maintain low tax rates for residents",
+    "Enhance city parks and recreational facilities"
+  ]
+}

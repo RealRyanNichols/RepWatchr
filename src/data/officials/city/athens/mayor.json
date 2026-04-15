@@ -1,0 +1,30 @@
+{
+  "id": "athens-mayor",
+  "name": "Monte Montgomery",
+  "firstName": "Monte",
+  "lastName": "Montgomery",
+  "party": "NP",
+  "level": "city",
+  "position": "Mayor",
+  "jurisdiction": "City of Athens",
+  "county": ["Henderson"],
+  "termStart": "2023-05-01",
+  "termEnd": "2027-05-01",
+  "contactInfo": {
+    "office": "508 E. Tyler St., Athens, TX 75751",
+    "phone": "(903) 677-6639",
+    "email": "mayor@athenstx.gov",
+    "website": "https://www.athenstx.gov",
+    "socialMedia": {
+      "facebook": "https://facebook.com/CityOfAthensTX"
+    }
+  },
+  "bio": "Monte Montgomery serves as the Mayor of Athens, the county seat of Henderson County. Athens claims to be the original home of the hamburger and hosts the annual Uncle Fletch's Hamburger Festival. The mayor leads the city council in promoting economic growth and community development.",
+  "campaignPromises": [
+    "Promote Athens as a destination for visitors and new residents",
+    "Support economic development and business recruitment",
+    "Improve city streets and water infrastructure",
+    "Enhance recreational opportunities at area lakes",
+    "Maintain quality public safety services"
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "id": "newton-county-judge",
+  "name": "Kenneth Days",
+  "firstName": "Kenneth",
+  "lastName": "Days",
+  "party": "R",
+  "level": "county",
+  "position": "County Judge",
+  "jurisdiction": "Newton County",
+  "county": ["Newton"],
+  "termStart": "2023-01-01",
+  "termEnd": "2027-01-01",
+  "contactInfo": {
+    "office": "115 Court St., Newton, TX 75966",
+    "phone": "(409) 379-5691",
+    "email": "county.judge@newton-county.com",
+    "website": "https://www.co.newton.tx.us/county-judge"
+  },
+  "bio": "Kenneth Days serves as the Newton County Judge, the chief executive and administrative officer of Newton County. The county judge presides over the Commissioners Court and oversees county government operations including budgeting, emergency management, and infrastructure in the Newton area.",
+  "campaignPromises": [
+    "Keep Newton County taxes low while maintaining services",
+    "Improve county roads and infrastructure",
+    "Support law enforcement and public safety",
+    "Maintain transparent county government operations",
+    "Plan responsibly for county growth"
+  ]
+}

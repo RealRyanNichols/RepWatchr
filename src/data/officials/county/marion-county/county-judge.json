@@ -1,0 +1,27 @@
+{
+  "id": "marion-county-judge",
+  "name": "Larry Thompson",
+  "firstName": "Larry",
+  "lastName": "Thompson",
+  "party": "R",
+  "level": "county",
+  "position": "County Judge",
+  "jurisdiction": "Marion County",
+  "county": ["Marion"],
+  "termStart": "2023-01-01",
+  "termEnd": "2027-01-01",
+  "contactInfo": {
+    "office": "102 W. Austin St., Room 205, Jefferson, TX 75657",
+    "phone": "(903) 665-3971",
+    "email": "county.judge@marion-county.com",
+    "website": "https://www.co.marion.tx.us/county-judge"
+  },
+  "bio": "Larry Thompson serves as the Marion County Judge, the chief executive and administrative officer of Marion County. The county judge presides over the Commissioners Court and oversees county government operations including budgeting, emergency management, and infrastructure in the Jefferson area.",
+  "campaignPromises": [
+    "Keep Marion County taxes low while maintaining services",
+    "Improve county roads and infrastructure",
+    "Support law enforcement and public safety",
+    "Maintain transparent county government operations",
+    "Plan responsibly for county growth"
+  ]
+}
