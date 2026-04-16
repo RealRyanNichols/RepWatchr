@@ -4,39 +4,38 @@ import Link from "next/link";
 export const metadata: Metadata = {
   title: "About",
   description:
-    "About the RepWatchr - bringing transparency to local politics.",
+    "About RepWatchr - bringing transparency to Texas politics.",
 };
 
 export default function AboutPage() {
   return (
     <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
-      <h1 className="text-3xl font-bold text-gray-900 mb-6">
-        About This Project
+      <h1 className="text-3xl font-extrabold text-gray-900 mb-6">
+        About RepWatchr
       </h1>
 
       <div className="space-y-8 text-gray-700">
         <section>
           <h2 className="text-xl font-bold text-gray-900 mb-3">Our Mission</h2>
           <p className="leading-relaxed">
-            The RepWatchr exists because we believe every
-            voter deserves to know exactly what their elected officials are
-            doing -- how they vote, who funds them, and whether they keep their
-            promises. Too often, this information is buried in government
-            databases or simply not available. We bring it all together in one
-            place, focused specifically on East Texas.
+            RepWatchr exists because every voter deserves to know exactly what
+            their elected officials are doing -- how they vote, who funds them,
+            and whether they keep their promises. Too often, this information is
+            buried in government databases or simply not available. We bring it
+            all together in one place for the people of Texas.
           </p>
         </section>
 
         <section>
           <h2 className="text-xl font-bold text-gray-900 mb-3">
-            Why East Texas?
+            Why Texas?
           </h2>
           <p className="leading-relaxed">
-            National scorecards exist, but they do not focus on the issues that
-            matter most to our communities. Water rights along the Sabine River.
-            Property rights and eminent domain. Local tax burdens. School board
-            transparency. These are East Texas issues, and our officials should
-            be held accountable on them.
+            National scorecards exist, but they don&apos;t focus on the issues
+            that matter most to our communities. Water rights. Property rights
+            and eminent domain. Local tax burdens. School board transparency.
+            These are Texas issues, and our officials should be held accountable
+            on them. We started in East Texas and are expanding statewide.
           </p>
         </section>
 
@@ -45,17 +44,17 @@ export default function AboutPage() {
             What We Track
           </h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-            <div className="bg-white border border-gray-200 rounded-lg p-4">
-              <h3 className="font-semibold text-gray-900 mb-1">
+            <div className="bg-white border border-gray-200 rounded-xl p-5">
+              <h3 className="font-bold text-gray-900 mb-1">
                 Every Level of Government
               </h3>
               <p className="text-sm text-gray-600">
-                From US Congress (TX-1) and Texas Legislature (HD-7) down to
-                county commissioners, city council, and school board members.
+                From US Congress and the Texas Legislature down to county
+                commissioners, city council, and school board members.
               </p>
             </div>
-            <div className="bg-white border border-gray-200 rounded-lg p-4">
-              <h3 className="font-semibold text-gray-900 mb-1">
+            <div className="bg-white border border-gray-200 rounded-xl p-5">
+              <h3 className="font-bold text-gray-900 mb-1">
                 Issue Scorecards
               </h3>
               <p className="text-sm text-gray-600">
@@ -63,8 +62,8 @@ export default function AboutPage() {
                 transparency, and overall voting record alignment.
               </p>
             </div>
-            <div className="bg-white border border-gray-200 rounded-lg p-4">
-              <h3 className="font-semibold text-gray-900 mb-1">
+            <div className="bg-white border border-gray-200 rounded-xl p-5">
+              <h3 className="font-bold text-gray-900 mb-1">
                 Campaign Funding
               </h3>
               <p className="text-sm text-gray-600">
@@ -73,8 +72,8 @@ export default function AboutPage() {
                 district.
               </p>
             </div>
-            <div className="bg-white border border-gray-200 rounded-lg p-4">
-              <h3 className="font-semibold text-gray-900 mb-1">Red Flags</h3>
+            <div className="bg-white border border-gray-200 rounded-xl p-5">
+              <h3 className="font-bold text-gray-900 mb-1">Red Flags</h3>
               <p className="text-sm text-gray-600">
                 Conflicts of interest, broken promises, and issues that voters
                 should know about but may have been hidden or overlooked.
@@ -120,18 +119,18 @@ export default function AboutPage() {
             A Project by Ryan Nichols
           </h2>
           <p className="leading-relaxed">
-            This tracker is built and maintained as a public service for East
-            Texas communities. It is not affiliated with any political party or
+            RepWatchr is built and maintained as a public service for Texas
+            communities. It is not affiliated with any political party or
             campaign.
           </p>
           <p className="mt-3">
             <a
-              href="https://www.RealRyanNichols.com"
+              href="https://www.RepWatchr.com"
               className="text-blue-600 hover:underline font-medium"
               target="_blank"
               rel="noopener noreferrer"
             >
-              www.RealRyanNichols.com
+              www.RepWatchr.com
             </a>
           </p>
         </section>
@@ -139,13 +138,13 @@ export default function AboutPage() {
         <div className="flex flex-wrap gap-4 pt-4">
           <Link
             href="/methodology"
-            className="inline-flex items-center px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 text-sm font-medium"
+            className="inline-flex items-center px-5 py-2.5 bg-blue-600 text-white rounded-xl hover:bg-blue-700 text-sm font-semibold"
           >
             View Our Methodology
           </Link>
           <Link
             href="/officials"
-            className="inline-flex items-center px-4 py-2 border border-gray-300 text-gray-700 rounded-lg hover:bg-gray-50 text-sm font-medium"
+            className="inline-flex items-center px-5 py-2.5 border border-gray-300 text-gray-700 rounded-xl hover:bg-gray-50 text-sm font-semibold"
           >
             Browse Officials
           </Link>

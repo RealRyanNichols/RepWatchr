@@ -65,9 +65,11 @@ export default function HomePage() {
         <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,_var(--tw-gradient-stops))] from-blue-600/20 via-transparent to-red-600/10" />
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 sm:py-28">
           <div className="text-center max-w-3xl mx-auto">
-            <p className="text-blue-400 text-sm font-semibold tracking-widest uppercase mb-4">
-              RepWatchr
-            </p>
+            <img
+              src="/images/icon.png"
+              alt="RepWatchr"
+              className="h-20 w-20 mx-auto mb-6 rounded-full shadow-lg shadow-blue-500/20"
+            />
             <h1 className="text-4xl sm:text-6xl font-extrabold tracking-tight text-white mb-6 leading-tight">
               Know Your Reps.
               <br />
@@ -77,7 +79,7 @@ export default function HomePage() {
             </h1>
             <p className="text-lg text-slate-300 mb-10 max-w-2xl mx-auto leading-relaxed">
               Scorecards, voting records, campaign funding, and red flags for
-              every elected official in HD-7 and TX-1. Verified Texans can
+              every elected official in Texas. Verified Texans can
               vote and comment publicly.
             </p>
             <div className="max-w-xl mx-auto mb-8">

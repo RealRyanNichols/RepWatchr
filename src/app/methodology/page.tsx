@@ -5,7 +5,7 @@ import { getIssueCategories } from "@/lib/data";
 export const metadata: Metadata = {
   title: "Methodology",
   description:
-    "How we calculate scores for East Texas elected officials. Transparent, traceable, and focused on local issues.",
+    "How we calculate scores for Texas elected officials. Transparent, traceable, and focused on local issues.",
 };
 
 export default function MethodologyPage() {
@@ -35,8 +35,8 @@ export default function MethodologyPage() {
               <li className="flex items-start gap-2">
                 <span className="font-bold text-blue-600 mt-0.5">2.</span>
                 <span>
-                  <strong>East Texas-focused:</strong> Scores reflect what
-                  matters to East Texas residents specifically, not national
+                  <strong>Texas-focused:</strong> Scores reflect what
+                  matters to Texas residents specifically, not national
                   partisan scorecards.
                 </span>
               </li>
@@ -44,7 +44,7 @@ export default function MethodologyPage() {
                 <span className="font-bold text-blue-600 mt-0.5">3.</span>
                 <span>
                   <strong>Issue-based:</strong> We score on the issues, not on
-                  party. Any official who votes to protect East Texas interests
+                  party. Any official who votes to protect Texas interests
                   gets credit regardless of party affiliation.
                 </span>
               </li>
@@ -96,9 +96,9 @@ export default function MethodologyPage() {
               </h3>
               <p>
                 We identify bills at the federal and state level that directly
-                impact East Texas on each issue category. Each bill is tagged
-                with the &quot;pro-East Texas&quot; position -- the vote that
-                best serves East Texas residents&apos; interests.
+                impact Texas on each issue category. Each bill is tagged
+                with the &quot;pro-Texas&quot; position -- the vote that
+                best serves Texas residents&apos; interests.
               </p>
             </div>
             <div className="bg-gray-50 rounded-lg p-4">
@@ -155,11 +155,11 @@ export default function MethodologyPage() {
               </thead>
               <tbody className="divide-y divide-gray-200">
                 {[
-                  { grade: "A+ / A / A-", range: "90 - 100", meaning: "Excellent - Strongly aligned with East Texas interests" },
-                  { grade: "B+ / B / B-", range: "80 - 89", meaning: "Good - Generally supportive of East Texas interests" },
-                  { grade: "C+ / C / C-", range: "70 - 79", meaning: "Average - Mixed record on East Texas issues" },
-                  { grade: "D+ / D / D-", range: "60 - 69", meaning: "Below Average - Often votes against East Texas interests" },
-                  { grade: "F", range: "0 - 59", meaning: "Poor - Consistently votes against East Texas interests" },
+                  { grade: "A+ / A / A-", range: "90 - 100", meaning: "Excellent - Strongly aligned with Texas interests" },
+                  { grade: "B+ / B / B-", range: "80 - 89", meaning: "Good - Generally supportive of Texas interests" },
+                  { grade: "C+ / C / C-", range: "70 - 79", meaning: "Average - Mixed record on Texas issues" },
+                  { grade: "D+ / D / D-", range: "60 - 69", meaning: "Below Average - Often votes against Texas interests" },
+                  { grade: "F", range: "0 - 59", meaning: "Poor - Consistently votes against Texas interests" },
                 ].map((row) => (
                   <tr key={row.grade}>
                     <td className="px-4 py-2 font-medium">{row.grade}</td>
