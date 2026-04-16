@@ -9,24 +9,32 @@
   "early_voting": "2026-04-20 through 2026-04-28",
   "priority_notes": "Ryan priority order: Harleton ISD first (home district), then Longview ISD, Pine Tree ISD, Spring Hill ISD, Hallsville ISD, Marshall ISD, then expand outward.",
   "last_updated": "2026-04-16",
-  "schema_version": "1.0.0",
+  "schema_version": "4.0.0",
   "districts": [
     {
-      "district": "Longview ISD",
-      "district_slug": "longview_isd",
-      "county": "Gregg",
+      "district": "Longview ISD", "district_slug": "longview_isd", "county": "Gregg",
       "seats_up_2026": ["Place 2", "Place 4"],
       "elections_coordinator": "Milagros Cordoba, 903-381-2200",
       "candidates": [
-        {"candidate_id": "brett_miller_longview_isd", "full_name": "Brett F. Miller", "seat": "Place 2", "incumbent": true, "status": "needs_review"},
-        {"candidate_id": "crista_black_longview_isd", "full_name": "Crista Black", "seat": "Place 4", "incumbent": true, "status": "needs_review"}
+        {"candidate_id": "brett_miller_longview_isd", "full_name": "Brett F. Miller", "seat": "Place 2", "incumbent": true, "status": "needs_retrofit"},
+        {"candidate_id": "crista_black_longview_isd", "full_name": "Crista Black", "seat": "Place 4", "incumbent": true, "status": "needs_retrofit"}
+      ]
+    },
+    {
+      "district": "Marshall ISD", "district_slug": "marshall_isd", "county": "Harrison",
+      "seats_up_2026": ["District 1", "District 4", "District 5"],
+      "election_cycle_note": "All three unopposed for 2026; trustee election canceled; $41.9M bond on May 2 ballot",
+      "elections_coordinator": "Jessica Scott, scottjl@marshallisd.com, 903-927-8700",
+      "candidates": [
+        {"candidate_id": "bettye_fisher_marshall_isd", "full_name": "Bettye Fisher", "seat": "District 1", "incumbent": true, "status": "deep_osint_complete_needs_records_pull"},
+        {"candidate_id": "ted_huffhines_marshall_isd", "full_name": "Ted Huffhines", "seat": "District 4", "incumbent": true, "status": "deep_osint_complete_needs_records_pull"},
+        {"candidate_id": "chase_palmer_marshall_isd", "full_name": "Ryan Chase Palmer", "seat": "District 5", "incumbent": true, "status": "deep_osint_complete_needs_records_pull"}
       ]
     },
     {"district": "Harleton ISD", "district_slug": "harleton_isd", "county": "Harrison", "priority": "HIGH", "seats_up_2026": ["TBD"], "candidates": [{"candidate_id": "TBD", "status": "queued"}]},
     {"district": "Pine Tree ISD", "district_slug": "pine_tree_isd", "county": "Gregg", "seats_up_2026": ["TBD"], "candidates": [{"candidate_id": "TBD", "status": "queued"}]},
     {"district": "Spring Hill ISD", "district_slug": "spring_hill_isd", "county": "Gregg", "seats_up_2026": ["TBD"], "candidates": [{"candidate_id": "TBD", "status": "queued"}]},
     {"district": "Hallsville ISD", "district_slug": "hallsville_isd", "county": "Harrison", "seats_up_2026": ["TBD"], "candidates": [{"candidate_id": "TBD", "status": "queued"}]},
-    {"district": "Marshall ISD", "district_slug": "marshall_isd", "county": "Harrison", "seats_up_2026": ["TBD"], "candidates": [{"candidate_id": "TBD", "status": "queued"}]},
     {"district": "Sabine ISD", "district_slug": "sabine_isd", "county": "Gregg", "seats_up_2026": ["TBD"], "candidates": [{"candidate_id": "TBD", "status": "queued"}]},
     {"district": "White Oak ISD", "district_slug": "white_oak_isd", "county": "Gregg", "seats_up_2026": ["TBD"], "candidates": [{"candidate_id": "TBD", "status": "queued"}]},
     {"district": "Gladewater ISD", "district_slug": "gladewater_isd", "county": "Gregg/Upshur", "seats_up_2026": ["TBD"], "candidates": [{"candidate_id": "TBD", "status": "queued"}]},
@@ -51,9 +59,10 @@
   ],
   "summary_stats": {
     "total_districts_queued": 27,
-    "total_candidates_identified": 2,
-    "candidates_complete": 0,
-    "candidates_needs_review": 2,
-    "candidates_queued": 25
+    "districts_with_dossiers": 2,
+    "total_candidates_identified": 5,
+    "candidates_deep_osint_complete": 3,
+    "candidates_needs_retrofit": 2,
+    "candidates_queued": 24
   }
 }
