@@ -63,21 +63,16 @@ export default function HomePage() {
       {/* Hero Section */}
       <section className="relative overflow-hidden bg-gradient-to-br from-slate-900 via-blue-900 to-slate-900">
         <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,_var(--tw-gradient-stops))] from-blue-600/20 via-transparent to-red-600/10" />
-        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 sm:py-28">
+        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-14 sm:py-28">
           <div className="text-center max-w-3xl mx-auto">
-            <img
-              src="/images/icon.png"
-              alt="RepWatchr"
-              className="h-20 w-20 mx-auto mb-6 rounded-full shadow-lg shadow-blue-500/20"
-            />
-            <h1 className="text-4xl sm:text-6xl font-extrabold tracking-tight text-white mb-6 leading-tight">
+            <h1 className="text-3xl sm:text-6xl font-extrabold tracking-tight text-white mb-4 sm:mb-6 leading-tight">
               Know Your Reps.
               <br />
               <span className="bg-gradient-to-r from-blue-400 to-red-400 bg-clip-text text-transparent">
                 Hold Them Accountable.
               </span>
             </h1>
-            <p className="text-lg text-slate-300 mb-10 max-w-2xl mx-auto leading-relaxed">
+            <p className="text-base sm:text-lg text-slate-300 mb-8 sm:mb-10 max-w-2xl mx-auto leading-relaxed px-2">
               Scorecards, voting records, campaign funding, and red flags for
               every elected official in Texas. Verified Texans can
               vote and comment publicly.

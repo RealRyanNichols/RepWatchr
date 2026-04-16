@@ -22,15 +22,12 @@ export default function Header() {
     <header className="sticky top-0 z-50 w-full border-b border-gray-200 bg-white dark:border-gray-700 dark:bg-gray-900">
       <div className="mx-auto flex max-w-7xl items-center justify-between px-4 py-3 sm:px-6 lg:px-8">
         {/* Logo / Site Name */}
-        <Link href="/" className="flex items-center gap-2">
+        <Link href="/" className="flex items-center gap-2 shrink-0">
           <img
             src="/images/logo.png"
             alt="RepWatchr"
-            className="h-8 w-auto"
+            className="h-8 sm:h-10 w-auto"
           />
-          <span className="hidden text-lg font-bold text-gray-900 dark:text-white sm:inline sm:text-xl">
-            RepWatchr
-          </span>
         </Link>
 
         {/* Desktop Navigation */}

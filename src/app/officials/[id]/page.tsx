@@ -83,22 +83,23 @@ export default async function OfficialProfilePage({
         className="border-b-4"
         style={{ borderBottomColor: partyColor }}
       >
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
-          <div className="flex flex-col sm:flex-row items-start gap-6">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6 sm:py-8">
+          {/* Mobile: stacked layout, Desktop: side by side */}
+          <div className="flex flex-col sm:flex-row items-start gap-4 sm:gap-6">
             {/* Photo placeholder */}
-            <div className="w-24 h-24 rounded-full bg-gray-200 flex items-center justify-center text-3xl font-bold text-gray-400 shrink-0">
+            <div className="w-16 h-16 sm:w-24 sm:h-24 rounded-full bg-gray-200 flex items-center justify-center text-2xl sm:text-3xl font-bold text-gray-400 shrink-0">
               {official.firstName[0]}
               {official.lastName[0]}
             </div>
-            <div className="flex-1">
-              <div className="flex items-center gap-3 flex-wrap">
-                <h1 className="text-3xl font-bold text-gray-900">
+            <div className="flex-1 min-w-0">
+              <div className="flex items-center gap-2 sm:gap-3 flex-wrap">
+                <h1 className="text-xl sm:text-3xl font-extrabold text-gray-900">
                   {official.name}
                 </h1>
                 <PartyBadge party={official.party} />
               </div>
-              <p className="text-lg text-gray-600 mt-1">{official.position}</p>
-              <div className="flex flex-wrap gap-4 mt-2 text-sm text-gray-500">
+              <p className="text-base sm:text-lg text-gray-600 mt-1">{official.position}</p>
+              <div className="flex flex-wrap gap-2 sm:gap-4 mt-1.5 text-xs sm:text-sm text-gray-500">
                 {official.district && <span>District: {official.district}</span>}
                 <span>{official.jurisdiction}</span>
                 <span>{formatLevelName(official.level)}</span>
@@ -111,10 +112,10 @@ export default async function OfficialProfilePage({
                 />
               </div>
               {official.bio && (
-                <p className="mt-3 text-gray-700 max-w-2xl">{official.bio}</p>
+                <p className="mt-3 text-sm sm:text-base text-gray-700 leading-relaxed max-w-2xl">{official.bio}</p>
               )}
               {official.contactInfo && (
-                <div className="flex flex-wrap gap-4 mt-3 text-sm">
+                <div className="flex flex-wrap gap-3 sm:gap-4 mt-3 text-xs sm:text-sm">
                   {official.contactInfo.phone && (
                     <span className="text-gray-600">
                       Phone: {official.contactInfo.phone}
@@ -141,9 +142,9 @@ export default async function OfficialProfilePage({
                 </div>
               )}
             </div>
-            {/* Score Gauge */}
+            {/* Score Gauge - shown inline on desktop, below name on mobile */}
             {scoreCard && (
-              <div className="shrink-0">
+              <div className="shrink-0 mt-4 sm:mt-0">
                 <ScoreGauge
                   score={scoreCard.overall}
                   letterGrade={scoreCard.letterGrade}
