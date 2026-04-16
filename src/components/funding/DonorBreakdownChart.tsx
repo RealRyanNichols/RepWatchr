@@ -70,7 +70,7 @@ export default function DonorBreakdownChart({
             ))}
           </Pie>
           <Tooltip
-            formatter={(value) => formatCurrency(Number(value))}
+            formatter={(value) => `${Number(value)}%`}
             contentStyle={{
               borderRadius: "0.5rem",
               border: "1px solid #e5e7eb",

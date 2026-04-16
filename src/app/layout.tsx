@@ -3,14 +3,15 @@ import "./globals.css";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 import AuthProvider from "@/components/auth/AuthProvider";
+import GoogleAnalytics from "@/components/shared/GoogleAnalytics";
 
 export const metadata: Metadata = {
   title: {
-    default: "RepWatchr",
+    default: "RepWatchr - Know Your Reps. Hold Them Accountable.",
     template: "%s | RepWatchr",
   },
   description:
-    "RepWatchr - Track your elected officials. Scorecards, voting records, campaign funding, and red flags. Verified Texans can vote and comment publicly.",
+    "Track your elected officials in Texas. Scorecards, voting records, campaign funding, red flags, and citizen voting. The smartest way to watch your reps.",
   keywords: [
     "RepWatchr",
     "elected officials",
@@ -21,7 +22,39 @@ export const metadata: Metadata = {
     "representative tracker",
     "accountability",
     "transparency",
+    "property tax",
+    "water rights",
+    "school board",
   ],
+  metadataBase: new URL("https://www.repwatchr.com"),
+  openGraph: {
+    title: "RepWatchr - Know Your Reps. Hold Them Accountable.",
+    description:
+      "Track your elected officials in Texas. Scorecards, voting records, campaign funding, red flags, and citizen voting.",
+    url: "https://www.repwatchr.com",
+    siteName: "RepWatchr",
+    locale: "en_US",
+    type: "website",
+    images: [
+      {
+        url: "/images/banner.png",
+        width: 1200,
+        height: 630,
+        alt: "RepWatchr - Track. Analyze. Improve.",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "RepWatchr - Know Your Reps. Hold Them Accountable.",
+    description:
+      "Track your elected officials in Texas. Scorecards, voting records, campaign funding, and red flags.",
+    images: ["/images/banner.png"],
+  },
+  robots: {
+    index: true,
+    follow: true,
+  },
 };
 
 export default function RootLayout({
@@ -32,6 +65,7 @@ export default function RootLayout({
   return (
     <html lang="en" className="h-full antialiased">
       <body className="min-h-full flex flex-col bg-gray-50 text-gray-900">
+        <GoogleAnalytics />
         <AuthProvider>
           <Header />
           <main className="flex-1">{children}</main>
