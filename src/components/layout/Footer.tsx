@@ -17,6 +17,11 @@ export default function Footer() {
         <div className="grid grid-cols-1 gap-8 md:grid-cols-3">
           {/* Brand */}
           <div>
+            <img
+              src="/images/logo.png"
+              alt="RepWatchr"
+              className="h-10 w-auto mb-2"
+            />
             <h3 className="text-lg font-bold text-gray-900 dark:text-white">
               RepWatchr
             </h3>
