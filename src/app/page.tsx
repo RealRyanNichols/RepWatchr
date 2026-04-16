@@ -152,7 +152,7 @@ export default function HomePage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
           <div className="text-center mb-10">
             <h2 className="text-3xl font-extrabold text-gray-900">
-              Scored on East Texas Issues
+              Scored on Texas Issues
             </h2>
             <p className="text-gray-500 mt-2">
               Every score links back to a specific vote -- fully transparent
@@ -316,7 +316,7 @@ export default function HomePage() {
               </h3>
               <p className="text-slate-400 text-sm leading-relaxed mb-4">
                 Every score is traceable to specific votes. Transparent
-                methodology focused on East Texas interests.
+                methodology focused on Texas interests.
               </p>
               <span className="text-green-400 text-sm font-bold group-hover:translate-x-1 inline-block transition-transform">
                 View Methodology &rarr;

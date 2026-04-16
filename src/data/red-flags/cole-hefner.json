@@ -1,0 +1,46 @@
+[
+  {
+    "id": "ch-rf-1",
+    "officialId": "cole-hefner",
+    "title": "Property tax reform votes fell short of campaign rhetoric",
+    "description": "Rep. Hefner campaigned on cutting property taxes and limiting local government spending. While he supported the 2023 property tax relief package, constituents in Hopkins, Rains, Van Zandt, Wood, and Camp counties have seen limited real-world tax savings as rising appraisals continue to offset rate reductions.",
+    "severity": "warning",
+    "category": "broken-promise",
+    "date": "2024-01-01",
+    "sourceUrl": "https://capitol.texas.gov",
+    "whyItMatters": "Property tax relief was a central campaign promise. When the reforms passed do not deliver meaningful savings to rural homeowners, voters should evaluate whether their representative fought for strong enough measures or settled for what leadership offered."
+  },
+  {
+    "id": "ch-rf-2",
+    "officialId": "cole-hefner",
+    "title": "Campaign contributions from special interests with legislative business",
+    "description": "Campaign finance filings show Rep. Hefner has received contributions from PACs representing industries including energy, agriculture, and real estate that had active legislation before committees on which he served. These include companies with operations in his East Texas district.",
+    "severity": "warning",
+    "category": "funding",
+    "date": "2024-06-01",
+    "sourceUrl": "https://www.ethics.state.tx.us/search/cf/",
+    "whyItMatters": "When elected officials receive campaign money from industries they regulate through committee work, it raises questions about whose interests drive their votes. East Texas voters deserve transparency about these financial relationships."
+  },
+  {
+    "id": "ch-rf-3",
+    "officialId": "cole-hefner",
+    "title": "Rural broadband promise slow to materialize",
+    "description": "Rep. Hefner has listed rural broadband expansion as a priority since taking office in 2017. Despite years of advocacy, many communities across HD-5 — particularly in Rains and Camp counties — still lack reliable high-speed internet access, raising questions about the effectiveness of his legislative efforts on this issue.",
+    "severity": "warning",
+    "category": "broken-promise",
+    "date": "2024-06-01",
+    "sourceUrl": "https://www.bdc.fcc.gov/data-download/fixed-broadband-deployment-data/",
+    "whyItMatters": "Reliable internet is no longer a luxury — it is essential for education, healthcare, and economic opportunity. Rural East Texans were promised broadband expansion and have a right to ask why progress has been so slow after nearly a decade of promises."
+  },
+  {
+    "id": "ch-rf-4",
+    "officialId": "cole-hefner",
+    "title": "Voted with House leadership on school voucher measures",
+    "description": "Rep. Hefner supported school choice measures that rural education advocates in his district warned could harm small public school districts. Many rural districts in HD-5 depend on full enrollment for funding, and diverting students and dollars to private alternatives could threaten their viability.",
+    "severity": "warning",
+    "category": "voting-record",
+    "date": "2023-11-15",
+    "sourceUrl": "https://capitol.texas.gov",
+    "whyItMatters": "Rural public schools in East Texas serve as community anchors. Votes that could redirect funding away from these schools affect not just education but the economic health of entire small towns across HD-5."
+  }
+]

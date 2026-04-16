@@ -5,7 +5,7 @@ import { getOfficialsByLevel } from "@/lib/data";
 export const metadata: Metadata = {
   title: "School Boards",
   description:
-    "Track school board members in East Texas. Know their political positions, votes on curriculum, budgets, and bonds.",
+    "Track school board members in Texas. Know their political positions, votes on curriculum, budgets, and bonds.",
 };
 
 export default function SchoolBoardsPage() {
@@ -30,7 +30,7 @@ export default function SchoolBoardsPage() {
         <p className="mt-2 text-gray-600 max-w-2xl">
           School board members make decisions that directly affect our children.
           Their political positions should be transparent. Here we track board
-          members across East Texas ISDs -- their positions on curriculum,
+          members across Texas ISDs -- their positions on curriculum,
           budgets, bonds, and key votes.
         </p>
       </div>

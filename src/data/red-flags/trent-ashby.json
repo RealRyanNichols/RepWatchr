@@ -1,0 +1,46 @@
+[
+  {
+    "id": "ta-rf-1",
+    "officialId": "trent-ashby",
+    "title": "Rural hospital closures continued despite healthcare access promises",
+    "description": "Rep. Ashby has campaigned on improving rural healthcare access and supporting local hospitals since 2013. However, multiple rural hospitals in and near HD-9 have closed or significantly reduced services during his tenure. Deep East Texas remains one of the most medically underserved regions in the state.",
+    "severity": "warning",
+    "category": "broken-promise",
+    "date": "2024-01-01",
+    "sourceUrl": "https://www.texastribune.org/series/dangerous-deliveries/",
+    "whyItMatters": "When the nearest hospital is an hour away, healthcare access is a matter of life and death. After more than a decade representing this district, voters should evaluate whether their representative has achieved meaningful progress on this critical issue."
+  },
+  {
+    "id": "ta-rf-2",
+    "officialId": "trent-ashby",
+    "title": "Timber industry contributions raise conflict of interest concerns",
+    "description": "Rep. Ashby represents one of the most timber-dependent districts in Texas and has received significant campaign contributions from forestry and timber companies. He has been a strong legislative advocate for the timber industry, serving on committees that directly affect forestry regulation and timber tax policy.",
+    "severity": "warning",
+    "category": "conflict-of-interest",
+    "date": "2024-06-01",
+    "sourceUrl": "https://www.ethics.state.tx.us/search/cf/",
+    "whyItMatters": "While supporting the timber industry benefits the local economy, voters should be aware that their representative receives significant funding from an industry he helps regulate. This relationship deserves scrutiny to ensure that environmental protections and landowner rights are not being shortchanged."
+  },
+  {
+    "id": "ta-rf-3",
+    "officialId": "trent-ashby",
+    "title": "Infrastructure and road improvement progress slower than promised",
+    "description": "Road and bridge infrastructure has been a cornerstone of Rep. Ashby's platform since his first campaign. While he has supported statewide transportation funding measures, many rural roads in the Deep East Texas counties of HD-9 remain in poor condition, and constituents report that specific infrastructure projects have stalled or been deprioritized.",
+    "severity": "warning",
+    "category": "broken-promise",
+    "date": "2024-06-01",
+    "sourceUrl": "https://www.txdot.gov/projects.html",
+    "whyItMatters": "Poor road conditions in rural East Texas are more than an inconvenience — they affect emergency response times, school bus routes, and timber truck transport that drives the local economy. After over a decade in office, voters should expect visible progress on this core promise."
+  },
+  {
+    "id": "ta-rf-4",
+    "officialId": "trent-ashby",
+    "title": "Long tenure with limited high-impact legislation for the district",
+    "description": "Rep. Ashby has served in the Texas House since 2013, making him one of the longer-tenured members representing East Texas. Despite this seniority, his legislative record has been focused primarily on local and noncontroversial measures rather than transformative legislation addressing the systemic challenges facing Deep East Texas, such as poverty, healthcare deserts, and broadband access.",
+    "severity": "warning",
+    "category": "other",
+    "date": "2024-12-01",
+    "sourceUrl": "https://capitol.texas.gov/MnuSearch.aspx",
+    "whyItMatters": "Seniority in the legislature should translate to increased influence and the ability to pass significant legislation for the district. Voters should evaluate whether their representative is using that seniority to deliver real results on the issues that matter most to Deep East Texas."
+  }
+]

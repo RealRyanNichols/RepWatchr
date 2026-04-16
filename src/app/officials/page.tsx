@@ -6,7 +6,7 @@ import OfficialGrid from "@/components/officials/OfficialGrid";
 export const metadata: Metadata = {
   title: "All Officials",
   description:
-    "Browse all tracked elected officials in East Texas - federal, state, county, city, and school board.",
+    "Browse all tracked elected officials in Texas - federal, state, county, city, and school board.",
 };
 
 export default function OfficialsPage() {

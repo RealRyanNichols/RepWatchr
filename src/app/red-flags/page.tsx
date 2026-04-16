@@ -6,7 +6,7 @@ import RedFlagCard from "@/components/shared/RedFlagCard";
 export const metadata: Metadata = {
   title: "Red Flags",
   description:
-    "Conflicts of interest, broken promises, and accountability issues East Texas voters should know about.",
+    "Conflicts of interest, broken promises, and accountability issues Texas voters should know about.",
 };
 
 export default function RedFlagsPage() {
@@ -30,7 +30,7 @@ export default function RedFlagsPage() {
       <div className="mb-8">
         <h1 className="text-3xl font-bold text-gray-900">Red Flags</h1>
         <p className="mt-2 text-gray-600 max-w-2xl">
-          Issues that East Texas voters should know about -- conflicts of
+          Issues that Texas voters should know about -- conflicts of
           interest, broken campaign promises, ethics complaints, suspicious
           funding connections, and controversial votes that may have flown under
           the radar.

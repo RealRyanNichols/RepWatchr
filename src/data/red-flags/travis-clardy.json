@@ -1,0 +1,46 @@
+[
+  {
+    "id": "tcl-rf-1",
+    "officialId": "travis-clardy",
+    "title": "Law firm connections to industries with legislative business",
+    "description": "Rep. Clardy is a practicing attorney in Nacogdoches whose law firm has represented clients with interests before the Texas Legislature. As a member of the House Judiciary and Civil Jurisprudence Committee, he has direct influence over legal reform legislation that can affect the civil litigation landscape in which his firm operates.",
+    "severity": "warning",
+    "category": "conflict-of-interest",
+    "date": "2024-06-01",
+    "sourceUrl": "https://www.ethics.state.tx.us/search/cf/",
+    "whyItMatters": "When a legislator's private legal practice intersects with their committee work, it raises potential conflict of interest questions. East Texas voters deserve assurance that tort reform and civil justice votes are driven by public interest, not professional advantage."
+  },
+  {
+    "id": "tcl-rf-2",
+    "officialId": "travis-clardy",
+    "title": "Voted for tort reform measures that limit East Texans' legal recourse",
+    "description": "Rep. Clardy has supported multiple tort reform measures that cap damages and restrict the ability of individuals to sue corporations. While framed as reducing frivolous lawsuits, these measures also make it harder for East Texas residents harmed by corporate negligence — including pipeline accidents, environmental contamination, and workplace injuries — to recover full damages.",
+    "severity": "warning",
+    "category": "voting-record",
+    "date": "2023-05-20",
+    "sourceUrl": "https://capitol.texas.gov",
+    "whyItMatters": "In an area with significant oil, gas, and timber operations, the ability to hold corporations accountable through the courts matters to working families. Tort reform can protect businesses but also limit recourse for East Texans injured by corporate negligence."
+  },
+  {
+    "id": "tcl-rf-3",
+    "officialId": "travis-clardy",
+    "title": "Property tax reform promises not matched by legislative outcomes",
+    "description": "Rep. Clardy has campaigned on lowering property taxes and promoting economic growth in East Texas. While he supported the 2023 property tax relief package, property taxes remain a significant burden for homeowners across HD-11, and critics argue the reforms did not go far enough for rural communities.",
+    "severity": "warning",
+    "category": "broken-promise",
+    "date": "2024-01-01",
+    "sourceUrl": "https://capitol.texas.gov",
+    "whyItMatters": "Homeowners across Cherokee, Smith, and Nacogdoches counties continue to feel the squeeze of rising property taxes. When campaign promises of relief do not translate to meaningful savings, voters should ask whether their representative is pushing hard enough."
+  },
+  {
+    "id": "tcl-rf-4",
+    "officialId": "travis-clardy",
+    "title": "SFA university funding advocacy fell short during budget negotiations",
+    "description": "Despite publicly championing Stephen F. Austin State University, Rep. Clardy was unable to secure significant additional state funding for the university during key budget cycles. SFA has faced enrollment challenges and budget pressures, and some in the Nacogdoches community felt their representative did not fight hard enough for the institution during legislative budget negotiations.",
+    "severity": "warning",
+    "category": "other",
+    "date": "2023-06-01",
+    "sourceUrl": "https://capitol.texas.gov",
+    "whyItMatters": "SFA is the economic engine of Nacogdoches and a critical institution for East Texas higher education. When a representative highlights university support as a priority but does not deliver on funding, the community that depends on the university bears the consequences."
+  }
+]

@@ -1,0 +1,46 @@
+[
+  {
+    "id": "gv-rf-1",
+    "officialId": "gary-vandeaver",
+    "title": "Voted for school funding bill that shortchanged rural districts",
+    "description": "Despite being a retired school superintendent, Rep. VanDeaver supported HB 3 (2019), the school finance reform bill that, while increasing overall education funding, directed a disproportionate share of new money to urban and suburban districts. Many small rural districts in HD-1 saw minimal net benefit after accounting for property tax rate compression.",
+    "severity": "warning",
+    "category": "voting-record",
+    "date": "2019-06-11",
+    "sourceUrl": "https://www.texastribune.org/2019/06/11/texas-school-finance-bill-signed/",
+    "whyItMatters": "Rural school districts in Northeast Texas were counting on a former superintendent to fight for their fair share of education funding. If the final bill disproportionately benefited larger districts, voters should know whether their representative pushed hard enough for rural schools."
+  },
+  {
+    "id": "gv-rf-2",
+    "officialId": "gary-vandeaver",
+    "title": "Accepted contributions from education industry PACs while on Public Education Committee",
+    "description": "As a member of the House Public Education Committee, Rep. VanDeaver has received campaign contributions from education-related PACs, testing companies, and curriculum providers that have business interests affected by the committee's decisions.",
+    "severity": "warning",
+    "category": "conflict-of-interest",
+    "date": "2024-06-01",
+    "sourceUrl": "https://www.ethics.state.tx.us/search/cf/",
+    "whyItMatters": "Parents and taxpayers in HD-1 trust their representative to make education policy decisions based on what is best for students, not what benefits campaign donors. Financial ties to education industry vendors can undermine that trust."
+  },
+  {
+    "id": "gv-rf-3",
+    "officialId": "gary-vandeaver",
+    "title": "Property tax relief promises remain largely unfulfilled",
+    "description": "Rep. VanDeaver has consistently campaigned on lowering property taxes for East Texas families. While he supported the 2023 property tax relief package, property tax bills for most homeowners in HD-1 have continued to rise due to increasing appraisal values that offset rate compression.",
+    "severity": "warning",
+    "category": "broken-promise",
+    "date": "2024-01-01",
+    "sourceUrl": "https://capitol.texas.gov",
+    "whyItMatters": "Northeast Texas homeowners continue to see rising property tax bills despite promises of relief. Voters should evaluate whether the reforms their representative supported have delivered the real-world savings they were promised."
+  },
+  {
+    "id": "gv-rf-4",
+    "officialId": "gary-vandeaver",
+    "title": "Supported school voucher legislation opposed by rural educators",
+    "description": "Rep. VanDeaver's stance on school choice legislation has raised concerns among rural education advocates in his district. Rural school districts in HD-1 have warned that voucher programs could divert critical funding from their already-strained public schools, which often serve as the economic anchor of small communities.",
+    "severity": "warning",
+    "category": "voting-record",
+    "date": "2023-11-01",
+    "sourceUrl": "https://www.texastribune.org/series/school-vouchers-texas/",
+    "whyItMatters": "In rural Northeast Texas, public schools are often the largest employer and the center of community life. Policies that redirect public education dollars to private alternatives could have outsized negative effects on small towns in HD-1."
+  }
+]

@@ -3,7 +3,7 @@ import Link from "next/link";
 import { getIssueCategories, getAllBills } from "@/lib/data";
 
 export const metadata: Metadata = {
-  title: "East Texas Issues",
+  title: "Texas Issues",
   description:
     "The issues we track: water rights, land rights, taxes, government transparency, and voting records.",
 };
@@ -16,11 +16,11 @@ export default function IssuesPage() {
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
       <div className="mb-8">
         <h1 className="text-3xl font-bold text-gray-900">
-          East Texas Issues
+          Texas Issues
         </h1>
         <p className="mt-2 text-gray-600 max-w-2xl">
           These are the issues we score officials on. Each one directly affects
-          East Texas residents and communities.
+          Texas residents and communities.
         </p>
       </div>
 

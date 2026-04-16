@@ -90,14 +90,14 @@ export default async function BillDetailPage({
         </div>
       </div>
 
-      {/* East Texas Impact */}
+      {/* Texas Impact */}
       <div className="bg-blue-50 border border-blue-200 rounded-lg p-5 mb-8">
         <h2 className="font-semibold text-blue-900 mb-2">
-          Why This Matters for East Texas
+          Why This Matters for Texas
         </h2>
         <p className="text-blue-800 text-sm">{bill.eastTexasImpact}</p>
         <p className="text-xs text-blue-600 mt-2">
-          Pro-East Texas position:{" "}
+          Pro-Texas position:{" "}
           <span className="font-medium uppercase">
             {bill.proEastTexasPosition}
           </span>

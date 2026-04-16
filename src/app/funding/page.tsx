@@ -7,7 +7,7 @@ import PartyBadge from "@/components/officials/PartyBadge";
 export const metadata: Metadata = {
   title: "Campaign Funding",
   description:
-    "Follow the money. See who funds East Texas elected officials and where their campaign dollars come from.",
+    "Follow the money. See who funds Texas elected officials and where their campaign dollars come from.",
 };
 
 export default function FundingPage() {
@@ -28,7 +28,7 @@ export default function FundingPage() {
           Campaign Funding
         </h1>
         <p className="mt-2 text-gray-600">
-          Follow the money. See who is funding your East Texas elected officials
+          Follow the money. See who is funding your Texas elected officials
           and where their campaign dollars come from.
         </p>
       </div>

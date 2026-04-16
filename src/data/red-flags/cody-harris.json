@@ -1,0 +1,46 @@
+[
+  {
+    "id": "cha-rf-1",
+    "officialId": "cody-harris",
+    "title": "Property rights stance tested by pipeline and eminent domain votes",
+    "description": "Despite campaigning strongly on protecting private property rights and opposing eminent domain abuse, Rep. Harris's voting record on eminent domain reform legislation has not always matched his rhetoric. He has received campaign contributions from energy companies that use eminent domain for pipeline easements through rural East Texas land in his district.",
+    "severity": "warning",
+    "category": "conflict-of-interest",
+    "date": "2023-05-20",
+    "sourceUrl": "https://capitol.texas.gov",
+    "whyItMatters": "Landowners in Nacogdoches, Rusk, Panola, and Shelby counties face real eminent domain threats from pipeline companies. When a representative campaigns on property rights but receives money from companies using eminent domain, constituents should scrutinize whether their interests are truly being protected."
+  },
+  {
+    "id": "cha-rf-2",
+    "officialId": "cody-harris",
+    "title": "Campaign funding from energy and timber industries with local impact",
+    "description": "Campaign finance reports show Rep. Harris has received significant contributions from energy and timber industry PACs and executives. These industries have substantial operations in HD-8 and regularly have business before the legislature, including regulatory, tax, and land use matters.",
+    "severity": "warning",
+    "category": "funding",
+    "date": "2024-06-01",
+    "sourceUrl": "https://www.ethics.state.tx.us/search/cf/",
+    "whyItMatters": "Energy and timber companies are the economic backbone of HD-8, but they also have interests that can conflict with those of individual landowners and communities. Voters should be aware of these financial relationships when evaluating their representative's votes on industry regulation."
+  },
+  {
+    "id": "cha-rf-3",
+    "officialId": "cody-harris",
+    "title": "Rural broadband and healthcare access remain unaddressed",
+    "description": "Rep. Harris has listed rural broadband expansion and healthcare access as campaign priorities since 2019. However, HD-8 remains one of the most underserved districts in Texas for both broadband connectivity and healthcare access, with hospital closures and provider shortages persisting throughout the district.",
+    "severity": "warning",
+    "category": "broken-promise",
+    "date": "2024-06-01",
+    "sourceUrl": "https://www.bdc.fcc.gov/data-download/fixed-broadband-deployment-data/",
+    "whyItMatters": "Rural East Texans in HD-8 face some of the longest drive times to hospitals and worst internet connectivity in the state. These are not new problems, and voters should evaluate whether their representative has made meaningful legislative progress after multiple terms of promises."
+  },
+  {
+    "id": "cha-rf-4",
+    "officialId": "cody-harris",
+    "title": "Voted with House leadership on controversial school voucher push",
+    "description": "Rep. Harris supported the House leadership's school choice legislation despite significant opposition from rural school districts in his district. Superintendents in Nacogdoches, Shelby, and Rusk counties publicly warned that voucher programs could devastate small district budgets that depend on per-pupil funding.",
+    "severity": "warning",
+    "category": "voting-record",
+    "date": "2023-11-15",
+    "sourceUrl": "https://capitol.texas.gov",
+    "whyItMatters": "In HD-8, public schools are often the heart of rural communities and the largest local employer. Directing public education funding toward private alternatives could threaten both educational quality and the economic stability of small East Texas towns."
+  }
+]

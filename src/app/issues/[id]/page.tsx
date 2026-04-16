@@ -5,10 +5,10 @@ import LetterGradeBadge from "@/components/scores/LetterGradeBadge";
 
 const issueDetails: Record<string, { fullDescription: string; whyItMatters: string[]; keyQuestions: string[] }> = {
   "water-rights": {
-    fullDescription: "Water is life in Texas, and who controls it matters. From the Sabine River to the Carrizo-Wilcox Aquifer, East Texas water resources are under constant pressure from growing cities, industry, and drought. How your representatives vote on water policy directly affects your well, your property, and your family's future.",
+    fullDescription: "Water is life in Texas, and who controls it matters. From the Sabine River to the Carrizo-Wilcox Aquifer, Texas water resources are under constant pressure from growing cities, industry, and drought. How your representatives vote on water policy directly affects your well, your property, and your family's future.",
     whyItMatters: [
       "Rural well owners face increasing regulations from groundwater conservation districts",
-      "Cities like Dallas and Houston are eyeing East Texas water supplies for future growth",
+      "Cities like Dallas and Houston are eyeing Texas water supplies for future growth",
       "Lake and reservoir management affects property values, recreation, and agriculture",
       "Water quality violations in small community systems put families at risk",
       "The Sabine River Authority controls billions of gallons -- who watches them?",
@@ -16,7 +16,7 @@ const issueDetails: Record<string, { fullDescription: string; whyItMatters: stri
     keyQuestions: [
       "Does your representative protect rural landowners' groundwater rights?",
       "Have they voted to fund water infrastructure for small communities?",
-      "Do they support interbasin water transfers that could drain East Texas resources?",
+      "Do they support interbasin water transfers that could drain Texas resources?",
       "Are they transparent about their connections to water district boards?",
     ],
   },

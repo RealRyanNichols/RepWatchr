@@ -6,7 +6,7 @@ import { formatShortDate } from "@/lib/formatting";
 export const metadata: Metadata = {
   title: "Tracked Votes",
   description:
-    "Bills and votes tracked for East Texas official scorecards.",
+    "Bills and votes tracked for Texas official scorecards.",
 };
 
 export default function VotesPage() {
@@ -23,7 +23,7 @@ export default function VotesPage() {
       <div className="mb-8">
         <h1 className="text-3xl font-bold text-gray-900">Tracked Votes</h1>
         <p className="mt-2 text-gray-600">
-          Bills and votes that factor into East Texas official scorecards.
+          Bills and votes that factor into Texas official scorecards.
         </p>
       </div>
 

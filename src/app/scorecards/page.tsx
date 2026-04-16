@@ -7,7 +7,7 @@ import PartyBadge from "@/components/officials/PartyBadge";
 export const metadata: Metadata = {
   title: "Scorecards",
   description:
-    "How East Texas officials score on water rights, land rights, taxes, and government transparency.",
+    "How Texas officials score on water rights, land rights, taxes, and government transparency.",
 };
 
 export default function ScorecardsPage() {
@@ -28,7 +28,7 @@ export default function ScorecardsPage() {
       <div className="mb-8">
         <h1 className="text-3xl font-bold text-gray-900">Scorecards</h1>
         <p className="mt-2 text-gray-600">
-          Officials ranked by their overall score on East Texas issues. Every
+          Officials ranked by their overall score on Texas issues. Every
           score is traceable to specific votes.
         </p>
       </div>

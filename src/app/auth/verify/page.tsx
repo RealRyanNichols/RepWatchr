@@ -41,7 +41,7 @@ const EAST_TEXAS_COUNTIES = [
   "Wood County",
 ];
 
-// All Texas counties for non-East Texas residents
+// Other Texas counties
 const OTHER_TX_OPTION = "Other Texas County";
 
 /**

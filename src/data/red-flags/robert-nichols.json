@@ -9,5 +9,38 @@
     "date": "2025-05-05",
     "sourceUrl": "https://capitol.texas.gov/BillLookup/History.aspx?LegSess=89R&Bill=SB1045",
     "whyItMatters": "East Texas residents deserve full transparency from their local and state government. Opposing reforms that would make government more open and accountable undermines public trust and makes it harder for citizens to hold officials responsible for how tax dollars are spent."
+  },
+  {
+    "id": "rf-nichols-002",
+    "officialId": "robert-nichols",
+    "title": "Former transportation commissioner with ongoing industry ties",
+    "description": "Before joining the Senate, Sen. Nichols served on the Texas Transportation Commission. As chair of the Senate Transportation Committee, he continues to oversee an industry in which he has deep professional relationships. Campaign finance records show contributions from engineering firms, construction companies, and transportation-related PACs that have business before his committee.",
+    "severity": "warning",
+    "category": "conflict-of-interest",
+    "date": "2024-06-01",
+    "sourceUrl": "https://www.ethics.state.tx.us/search/cf/",
+    "whyItMatters": "When a committee chair has decades of personal relationships with the industry he regulates and receives campaign contributions from those same companies, voters should scrutinize whether transportation policy decisions truly serve the public interest or benefit well-connected contractors."
+  },
+  {
+    "id": "rf-nichols-003",
+    "officialId": "robert-nichols",
+    "title": "Rural water rights protection efforts have yielded mixed results",
+    "description": "Sen. Nichols has campaigned on protecting rural water rights and groundwater conservation for East Texas landowners. However, water policy legislation during his tenure has produced mixed results, with some East Texas landowners and water conservation advocates arguing that the laws passed have not adequately protected rural groundwater from being sold to distant urban areas.",
+    "severity": "warning",
+    "category": "broken-promise",
+    "date": "2023-06-01",
+    "sourceUrl": "https://capitol.texas.gov",
+    "whyItMatters": "Water rights are an existential issue for East Texas landowners and communities. When urban areas seek to purchase rural groundwater, the legal protections in place determine whether rural communities maintain control of their most vital natural resource."
+  },
+  {
+    "id": "rf-nichols-004",
+    "officialId": "robert-nichols",
+    "title": "Nearly two decades in office with limited property tax reform progress",
+    "description": "Sen. Nichols has served in the Texas Senate since 2007 and has consistently listed property tax reduction as a campaign priority. Despite nearly two decades of seniority and a committee chairmanship, property taxes remain a major burden for East Texas homeowners, and the reforms passed have not delivered the level of relief voters were promised.",
+    "severity": "warning",
+    "category": "broken-promise",
+    "date": "2024-01-01",
+    "sourceUrl": "https://senate.texas.gov/member.php?d=3",
+    "whyItMatters": "Seniority and committee leadership should translate to influence over key issues like property tax reform. After nearly 20 years in office, voters in SD-3 have a right to ask why meaningful property tax relief remains elusive and whether their senator has used his position effectively."
   }
 ]
