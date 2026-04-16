@@ -3,7 +3,7 @@
 import { PieChart, Pie, Cell, Tooltip, ResponsiveContainer, Legend } from "recharts";
 import type { FundingSummary } from "@/types";
 
-const COLORS = ["#3b82f6", "#8b5cf6", "#f59e0b", "#10b981", "#ef4444"];
+const COLORS = ["#3b82f6", "#ef4444", "#8b5cf6", "#f59e0b", "#10b981"];
 
 const LABELS: Record<string, string> = {
   individual: "Individual",
@@ -12,15 +12,6 @@ const LABELS: Record<string, string> = {
   smallDollar: "Small Dollar",
   largeDollar: "Large Dollar",
 };
-
-function formatCurrency(amount: number): string {
-  return new Intl.NumberFormat("en-US", {
-    style: "currency",
-    currency: "USD",
-    minimumFractionDigits: 0,
-    maximumFractionDigits: 0,
-  }).format(amount);
-}
 
 interface DonorBreakdownChartProps {
   breakdown: FundingSummary["donorBreakdown"];

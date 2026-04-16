@@ -7,31 +7,31 @@ const levelCards = [
   {
     level: "federal",
     title: "Federal",
-    description: "US House (TX-1) & Senate",
+    description: "US House & Senate",
     href: "/officials?level=federal",
   },
   {
     level: "state",
     title: "State",
-    description: "TX House (HD-7) & Senate",
+    description: "TX House & Senate",
     href: "/officials?level=state",
   },
   {
     level: "county",
     title: "County",
-    description: "Smith & Gregg Counties",
+    description: "30+ Texas Counties",
     href: "/officials?level=county",
   },
   {
     level: "city",
     title: "City",
-    description: "Tyler & Longview",
+    description: "43+ Texas Cities",
     href: "/officials?level=city",
   },
   {
     level: "school-board",
     title: "School Boards",
-    description: "Tyler ISD & Longview ISD",
+    description: "120+ Texas ISDs",
     href: "/school-boards",
   },
 ];
