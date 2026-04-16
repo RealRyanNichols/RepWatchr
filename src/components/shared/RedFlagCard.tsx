@@ -9,19 +9,14 @@ export default function RedFlagCard({ flag }: RedFlagCardProps) {
 
   return (
     <div
-      className={`rounded-lg border p-4 ${
-        isCritical
-          ? "border-red-300 bg-red-50 dark:border-red-800 dark:bg-red-950/30"
-          : "border-yellow-300 bg-yellow-50 dark:border-yellow-800 dark:bg-yellow-950/30"
+      className={`rounded-xl border-l-4 bg-white p-5 shadow-sm ${
+        isCritical ? "border-l-red-500" : "border-l-amber-500"
       }`}
     >
       <div className="flex items-start gap-3">
-        {/* Warning triangle icon */}
         <svg
           className={`mt-0.5 h-5 w-5 shrink-0 ${
-            isCritical
-              ? "text-red-500 dark:text-red-400"
-              : "text-yellow-500 dark:text-yellow-400"
+            isCritical ? "text-red-500" : "text-amber-500"
           }`}
           fill="none"
           viewBox="0 0 24 24"
@@ -36,57 +31,35 @@ export default function RedFlagCard({ flag }: RedFlagCardProps) {
         </svg>
 
         <div className="min-w-0 flex-1">
-          {/* Severity badge + title */}
           <div className="flex flex-wrap items-center gap-2">
             <span
-              className={`inline-flex items-center rounded-full px-2 py-0.5 text-xs font-bold uppercase ${
+              className={`inline-flex items-center rounded-full px-2.5 py-0.5 text-xs font-bold uppercase tracking-wide ${
                 isCritical
-                  ? "bg-red-200 text-red-800 dark:bg-red-900/60 dark:text-red-300"
-                  : "bg-yellow-200 text-yellow-800 dark:bg-yellow-900/60 dark:text-yellow-300"
+                  ? "bg-red-100 text-red-700"
+                  : "bg-amber-100 text-amber-700"
               }`}
             >
               {flag.severity}
             </span>
-            <h4
-              className={`text-sm font-semibold ${
-                isCritical
-                  ? "text-red-900 dark:text-red-200"
-                  : "text-yellow-900 dark:text-yellow-200"
-              }`}
-            >
+            <h4 className="text-sm font-bold text-gray-900">
               {flag.title}
             </h4>
           </div>
 
-          {/* Description */}
-          <p
-            className={`mt-2 text-sm leading-relaxed ${
-              isCritical
-                ? "text-red-800 dark:text-red-300"
-                : "text-yellow-800 dark:text-yellow-300"
-            }`}
-          >
+          <p className="mt-2 text-sm leading-relaxed text-gray-700">
             {flag.description}
           </p>
 
-          {/* Why It Matters */}
-          <div className="mt-3 rounded-md bg-white/60 p-2.5 dark:bg-black/20">
-            <p className="text-xs font-semibold uppercase tracking-wider text-gray-500 dark:text-gray-400">
+          <div className="mt-3 rounded-lg bg-gray-50 p-3">
+            <p className="text-xs font-bold uppercase tracking-wider text-gray-500 mb-1">
               Why It Matters
             </p>
-            <p
-              className={`mt-1 text-sm ${
-                isCritical
-                  ? "text-red-700 dark:text-red-300"
-                  : "text-yellow-700 dark:text-yellow-300"
-              }`}
-            >
+            <p className="text-sm text-gray-700 leading-relaxed">
               {flag.whyItMatters}
             </p>
           </div>
 
-          {/* Footer: date + source */}
-          <div className="mt-3 flex flex-wrap items-center gap-3 text-xs text-gray-500 dark:text-gray-400">
+          <div className="mt-3 flex flex-wrap items-center gap-3 text-xs text-gray-400">
             <span>
               {new Date(flag.date).toLocaleDateString("en-US", {
                 year: "numeric",
@@ -99,7 +72,7 @@ export default function RedFlagCard({ flag }: RedFlagCardProps) {
                 href={flag.sourceUrl}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="font-medium text-blue-600 hover:underline dark:text-blue-400"
+                className="font-semibold text-blue-600 hover:underline"
               >
                 View Source
               </a>

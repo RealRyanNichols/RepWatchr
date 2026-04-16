@@ -31,10 +31,41 @@
         {"candidate_id": "chase_palmer_marshall_isd", "full_name": "Ryan Chase Palmer", "seat": "District 5", "incumbent": true, "status": "deep_osint_complete_needs_records_pull"}
       ]
     },
-    {"district": "Harleton ISD", "district_slug": "harleton_isd", "county": "Harrison", "priority": "HIGH", "seats_up_2026": ["TBD"], "candidates": [{"candidate_id": "TBD", "status": "queued"}]},
+    {
+      "district": "Harleton ISD", "district_slug": "harleton_isd", "county": "Harrison",
+      "priority": "HIGH",
+      "priority_note": "RYAN'S HOME DISTRICT",
+      "seats_up_2026": ["Place 3", "Place 4", "Place 7"],
+      "election_cycle_note": "November cycle (not May). Four-year staggered terms. Places 3, 4, 7 up Nov 2026; Places 1, 2, 5, 6 up Nov 2028.",
+      "candidates": [
+        {"candidate_id": "harvey_fox_harleton_isd", "full_name": "Harvey Fox", "seat": "Place 3", "incumbent": true, "on_2026_ballot": true, "status": "initial_dossier"},
+        {"candidate_id": "kevin_evers_harleton_isd", "full_name": "Kevin Ree Evers", "seat": "Place 4", "incumbent": true, "on_2026_ballot": true, "status": "initial_dossier"},
+        {"candidate_id": "jacob_muehlstein_harleton_isd", "full_name": "Jacob Muehlstein", "seat": "Place 7", "incumbent": true, "on_2026_ballot": true, "status": "initial_dossier"},
+        {"candidate_id": "ben_wilson_harleton_isd", "full_name": "Ben Wilson", "seat": "Place 1", "incumbent": true, "on_2026_ballot": false, "status": "stub"},
+        {"candidate_id": "tim_skaggs_harleton_isd", "full_name": "Tim Skaggs", "seat": "Place 2", "incumbent": true, "on_2026_ballot": false, "status": "stub"},
+        {"candidate_id": "brian_fitzgerald_harleton_isd", "full_name": "Brian Fitzgerald", "seat": "Place 5", "incumbent": true, "on_2026_ballot": false, "status": "stub"},
+        {"candidate_id": "patrick_mcgill_harleton_isd", "full_name": "Patrick McGill", "seat": "Place 6", "incumbent": true, "on_2026_ballot": false, "status": "initial_dossier"}
+      ]
+    },
     {"district": "Pine Tree ISD", "district_slug": "pine_tree_isd", "county": "Gregg", "seats_up_2026": ["TBD"], "candidates": [{"candidate_id": "TBD", "status": "queued"}]},
     {"district": "Spring Hill ISD", "district_slug": "spring_hill_isd", "county": "Gregg", "seats_up_2026": ["TBD"], "candidates": [{"candidate_id": "TBD", "status": "queued"}]},
-    {"district": "Hallsville ISD", "district_slug": "hallsville_isd", "county": "Harrison", "seats_up_2026": ["TBD"], "candidates": [{"candidate_id": "TBD", "status": "queued"}]},
+    {
+      "district": "Hallsville ISD", "district_slug": "hallsville_isd", "county": "Harrison",
+      "election_cycle_note": "May cycle. Three-year staggered terms. Places 2 and 7 up May 2026 (Place 2 CONTESTED: Miller vs O'Pry; McGarvey not seeking reelection; Haney seeking reelection).",
+      "seats_up_2026": ["Place 2", "Place 7"],
+      "superintendent": "John Martin",
+      "candidates": [
+        {"candidate_id": "shane_goswick_hallsville_isd", "full_name": "Shane Goswick", "seat": "Place 1", "incumbent": true, "on_2026_ballot": false, "status": "stub"},
+        {"candidate_id": "jennifer_opry_hallsville_isd", "full_name": "Jennifer L. O'Pry", "seat": "Place 2", "incumbent": false, "on_2026_ballot": true, "status": "initial_dossier_complete_contested_race_priority"},
+        {"candidate_id": "josh_miller_hallsville_isd", "full_name": "Josh Miller", "seat": "Place 2", "incumbent": false, "on_2026_ballot": true, "status": "stub_priority_identity_disambiguation"},
+        {"candidate_id": "jay_nelson_hallsville_isd", "full_name": "Jay Nelson", "seat": "Place 3", "incumbent": true, "on_2026_ballot": false, "status": "stub"},
+        {"candidate_id": "matt_folmar_hallsville_isd", "full_name": "Matt Folmar", "seat": "Place 4", "incumbent": true, "on_2026_ballot": false, "status": "stub"},
+        {"candidate_id": "jason_ainsworth_hallsville_isd", "full_name": "Jason Ainsworth", "seat": "Place 5", "incumbent": true, "on_2026_ballot": false, "status": "stub"},
+        {"candidate_id": "troy_crafton_hallsville_isd", "full_name": "Troy Crafton", "seat": "Place 6", "incumbent": true, "on_2026_ballot": false, "status": "stub"},
+        {"candidate_id": "dale_haney_hallsville_isd", "full_name": "Dale E. Haney", "seat": "Place 7", "incumbent": true, "on_2026_ballot": true, "status": "initial_dossier_complete_on_2026_ballot"},
+        {"candidate_id": "mcgarvey_hallsville_isd", "full_name": "McGarvey", "seat": "Place 2 (outgoing)", "incumbent": true, "on_2026_ballot": false, "status": "outgoing_not_seeking_reelection"}
+      ]
+    },
     {"district": "Sabine ISD", "district_slug": "sabine_isd", "county": "Gregg", "seats_up_2026": ["TBD"], "candidates": [{"candidate_id": "TBD", "status": "queued"}]},
     {"district": "White Oak ISD", "district_slug": "white_oak_isd", "county": "Gregg", "seats_up_2026": ["TBD"], "candidates": [{"candidate_id": "TBD", "status": "queued"}]},
     {"district": "Gladewater ISD", "district_slug": "gladewater_isd", "county": "Gregg/Upshur", "seats_up_2026": ["TBD"], "candidates": [{"candidate_id": "TBD", "status": "queued"}]},
@@ -59,10 +90,15 @@
   ],
   "summary_stats": {
     "total_districts_queued": 27,
-    "districts_with_dossiers": 2,
-    "total_candidates_identified": 5,
+    "districts_with_dossiers": 4,
+    "total_candidates_identified": 21,
     "candidates_deep_osint_complete": 3,
     "candidates_needs_retrofit": 2,
-    "candidates_queued": 24
+    "candidates_initial_dossier": 6,
+    "candidates_initial_dossier_complete": 2,
+    "candidates_stub": 8,
+    "candidates_stub_priority": 1,
+    "candidates_outgoing": 1,
+    "candidates_queued": 23
   }
 }
