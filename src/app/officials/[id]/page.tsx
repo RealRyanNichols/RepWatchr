@@ -21,6 +21,7 @@ import PartyBadge from "@/components/officials/PartyBadge";
 import OfficialVotingSection from "@/components/voting/OfficialVotingSection";
 import CommentSection from "@/components/comments/CommentSection";
 import ShareButtons from "@/components/shared/ShareButtons";
+import ReportButton from "@/components/shared/ReportButton";
 import { getNewsByOfficialId } from "@/lib/data";
 
 export async function generateStaticParams() {
@@ -104,11 +105,15 @@ export default async function OfficialProfilePage({
                 <span>{official.jurisdiction}</span>
                 <span>{formatLevelName(official.level)}</span>
               </div>
-              <div className="mt-3">
+              <div className="mt-3 flex flex-wrap items-center gap-3">
                 <ShareButtons
                   title={`${official.name} - ${official.position} | RepWatchr`}
                   description={`See the scorecard, voting record, and funding data for ${official.name}.`}
                   path={`/officials/${official.id}`}
+                />
+                <ReportButton
+                  officialId={official.id}
+                  pageUrl={`/officials/${official.id}`}
                 />
               </div>
               {official.bio && (

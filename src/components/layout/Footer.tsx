@@ -2,12 +2,14 @@ import Link from "next/link";
 
 const quickLinks = [
   { href: "/officials", label: "Officials" },
+  { href: "/news", label: "News" },
   { href: "/scorecards", label: "Scorecards" },
   { href: "/votes", label: "Votes" },
   { href: "/funding", label: "Funding" },
   { href: "/school-boards", label: "School Boards" },
   { href: "/red-flags", label: "Red Flags" },
   { href: "/methodology", label: "Methodology" },
+  { href: "/feedback", label: "Report Incorrect Info" },
 ];
 
 export default function Footer() {
