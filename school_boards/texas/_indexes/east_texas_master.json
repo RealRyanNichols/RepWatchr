@@ -1,0 +1,59 @@
+{
+  "region": "East Texas",
+  "state": "TX",
+  "election_date": "2026-05-02",
+  "election_type": "general",
+  "counties": ["Gregg", "Harrison", "Upshur", "Smith"],
+  "filing_deadline": "2026-02-13",
+  "write_in_deadline": "2026-02-17",
+  "early_voting": "2026-04-20 through 2026-04-28",
+  "priority_notes": "Ryan priority order: Harleton ISD first (home district), then Longview ISD, Pine Tree ISD, Spring Hill ISD, Hallsville ISD, Marshall ISD, then expand outward.",
+  "last_updated": "2026-04-16",
+  "schema_version": "1.0.0",
+  "districts": [
+    {
+      "district": "Longview ISD",
+      "district_slug": "longview_isd",
+      "county": "Gregg",
+      "seats_up_2026": ["Place 2", "Place 4"],
+      "elections_coordinator": "Milagros Cordoba, 903-381-2200",
+      "candidates": [
+        {"candidate_id": "brett_miller_longview_isd", "full_name": "Brett F. Miller", "seat": "Place 2", "incumbent": true, "status": "needs_review"},
+        {"candidate_id": "crista_black_longview_isd", "full_name": "Crista Black", "seat": "Place 4", "incumbent": true, "status": "needs_review"}
+      ]
+    },
+    {"district": "Harleton ISD", "district_slug": "harleton_isd", "county": "Harrison", "priority": "HIGH", "seats_up_2026": ["TBD"], "candidates": [{"candidate_id": "TBD", "status": "queued"}]},
+    {"district": "Pine Tree ISD", "district_slug": "pine_tree_isd", "county": "Gregg", "seats_up_2026": ["TBD"], "candidates": [{"candidate_id": "TBD", "status": "queued"}]},
+    {"district": "Spring Hill ISD", "district_slug": "spring_hill_isd", "county": "Gregg", "seats_up_2026": ["TBD"], "candidates": [{"candidate_id": "TBD", "status": "queued"}]},
+    {"district": "Hallsville ISD", "district_slug": "hallsville_isd", "county": "Harrison", "seats_up_2026": ["TBD"], "candidates": [{"candidate_id": "TBD", "status": "queued"}]},
+    {"district": "Marshall ISD", "district_slug": "marshall_isd", "county": "Harrison", "seats_up_2026": ["TBD"], "candidates": [{"candidate_id": "TBD", "status": "queued"}]},
+    {"district": "Sabine ISD", "district_slug": "sabine_isd", "county": "Gregg", "seats_up_2026": ["TBD"], "candidates": [{"candidate_id": "TBD", "status": "queued"}]},
+    {"district": "White Oak ISD", "district_slug": "white_oak_isd", "county": "Gregg", "seats_up_2026": ["TBD"], "candidates": [{"candidate_id": "TBD", "status": "queued"}]},
+    {"district": "Gladewater ISD", "district_slug": "gladewater_isd", "county": "Gregg/Upshur", "seats_up_2026": ["TBD"], "candidates": [{"candidate_id": "TBD", "status": "queued"}]},
+    {"district": "Kilgore ISD", "district_slug": "kilgore_isd", "county": "Gregg/Rusk", "seats_up_2026": ["TBD"], "candidates": [{"candidate_id": "TBD", "status": "queued"}]},
+    {"district": "Waskom ISD", "district_slug": "waskom_isd", "county": "Harrison", "seats_up_2026": ["TBD"], "candidates": [{"candidate_id": "TBD", "status": "queued"}]},
+    {"district": "Elysian Fields ISD", "district_slug": "elysian_fields_isd", "county": "Harrison", "seats_up_2026": ["TBD"], "candidates": [{"candidate_id": "TBD", "status": "queued"}]},
+    {"district": "Karnack ISD", "district_slug": "karnack_isd", "county": "Harrison", "seats_up_2026": ["TBD"], "candidates": [{"candidate_id": "TBD", "status": "queued"}]},
+    {"district": "Gilmer ISD", "district_slug": "gilmer_isd", "county": "Upshur", "seats_up_2026": ["TBD"], "candidates": [{"candidate_id": "TBD", "status": "queued"}]},
+    {"district": "Big Sandy ISD", "district_slug": "big_sandy_isd", "county": "Upshur", "seats_up_2026": ["TBD"], "candidates": [{"candidate_id": "TBD", "status": "queued"}]},
+    {"district": "New Diana ISD", "district_slug": "new_diana_isd", "county": "Upshur", "seats_up_2026": ["TBD"], "candidates": [{"candidate_id": "TBD", "status": "queued"}]},
+    {"district": "Union Grove ISD", "district_slug": "union_grove_isd", "county": "Upshur", "seats_up_2026": ["TBD"], "candidates": [{"candidate_id": "TBD", "status": "queued"}]},
+    {"district": "Ore City ISD", "district_slug": "ore_city_isd", "county": "Upshur", "seats_up_2026": ["TBD"], "candidates": [{"candidate_id": "TBD", "status": "queued"}]},
+    {"district": "Harmony ISD", "district_slug": "harmony_isd", "county": "Upshur", "seats_up_2026": ["TBD"], "candidates": [{"candidate_id": "TBD", "status": "queued"}]},
+    {"district": "Tyler ISD", "district_slug": "tyler_isd", "county": "Smith", "seats_up_2026": ["TBD"], "candidates": [{"candidate_id": "TBD", "status": "queued"}]},
+    {"district": "Lindale ISD", "district_slug": "lindale_isd", "county": "Smith", "seats_up_2026": ["TBD"], "candidates": [{"candidate_id": "TBD", "status": "queued"}]},
+    {"district": "Whitehouse ISD", "district_slug": "whitehouse_isd", "county": "Smith", "seats_up_2026": ["TBD"], "candidates": [{"candidate_id": "TBD", "status": "queued"}]},
+    {"district": "Chapel Hill ISD (Smith)", "district_slug": "chapel_hill_isd_smith", "county": "Smith", "seats_up_2026": ["TBD"], "candidates": [{"candidate_id": "TBD", "status": "queued"}]},
+    {"district": "Bullard ISD", "district_slug": "bullard_isd", "county": "Smith", "seats_up_2026": ["TBD"], "candidates": [{"candidate_id": "TBD", "status": "queued"}]},
+    {"district": "Troup ISD", "district_slug": "troup_isd", "county": "Smith", "seats_up_2026": ["TBD"], "candidates": [{"candidate_id": "TBD", "status": "queued"}]},
+    {"district": "Winona ISD", "district_slug": "winona_isd", "county": "Smith", "seats_up_2026": ["TBD"], "candidates": [{"candidate_id": "TBD", "status": "queued"}]},
+    {"district": "Arp ISD", "district_slug": "arp_isd", "county": "Smith", "seats_up_2026": ["TBD"], "candidates": [{"candidate_id": "TBD", "status": "queued"}]}
+  ],
+  "summary_stats": {
+    "total_districts_queued": 27,
+    "total_candidates_identified": 2,
+    "candidates_complete": 0,
+    "candidates_needs_review": 2,
+    "candidates_queued": 25
+  }
+}

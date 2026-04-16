@@ -1,20 +1,83 @@
 {
-  "id": "longview-isd-member-2",
-  "name": "Ted Beard",
-  "firstName": "Ted",
-  "lastName": "Beard",
+  "id": "brett-f-miller",
+  "name": "Brett F. Miller",
+  "firstName": "Brett",
+  "lastName": "Miller",
   "party": "NP",
   "level": "school-board",
-  "position": "School Board Vice President",
+  "position": "School Board Trustee",
   "district": "Place 2",
   "jurisdiction": "Longview ISD",
-  "county": ["Gregg"],
-  "termStart": "2022-05-01",
+  "county": ["Gregg County"],
+  "termStart": "2023-05-01",
   "termEnd": "2026-05-01",
   "contactInfo": {
     "office": "1301 E. Young St., Longview, TX 75602",
     "phone": "(903) 381-2200",
-    "website": "https://www.lisd.org/board"
+    "website": "https://w3.lisd.org",
+    "socialMedia": {
+      "facebook": "https://www.facebook.com/BrettMillerforLISDSchoolBoard/"
+    }
   },
-  "bio": "Ted Beard serves as Vice President of the Longview ISD Board of Trustees. He works with fellow board members to set policy and ensure quality education for Longview students."
+  "bio": "Brett F. Miller is the incumbent Place 2 trustee on the Longview ISD Board of Trustees. A Longview native and third-generation Longview High School graduate, he practices family law, employment disputes, and business litigation at Miller Fair Henry PLLC. First elected in 2020 after challenging incumbent Ava Welge, he was unopposed for reelection in 2023. He holds a J.D. from SMU Dedman School of Law and an undergraduate degree from Texas Christian University.",
+  "campaignPromises": [],
+  "status": "incumbent",
+  "electionDate": "2026-05-02",
+  "occupation": "Attorney",
+  "employer": "Miller Fair Henry PLLC",
+  "education": [
+    {"institution": "Longview High School", "degree": "Diploma", "graduated": true},
+    {"institution": "Texas Christian University", "degree": "Undergraduate", "graduated": true},
+    {"institution": "SMU Dedman School of Law", "degree": "J.D.", "graduated": true}
+  ],
+  "affiliations": [
+    "Miller Fair Henry PLLC",
+    "T. John Ward American Inn of Court",
+    "State Bar of Texas",
+    "U.S. District Court, Eastern District of Texas"
+  ],
+  "conflictsOfInterest": [
+    {
+      "type": "legal_representation",
+      "description": "Practicing litigator in the same market as the district. Law firm may take matters that intersect LISD or LISD vendors. No specific conflict identified as of research date.",
+      "severity": "low",
+      "label": "DOCUMENTED_INFERENCE",
+      "source": "millerfairhenry.com"
+    }
+  ],
+  "educationPolicyPositions": {
+    "curriculum": "REQUIRES_FURTHER_EVIDENCE",
+    "bookPolicies": "REQUIRES_FURTHER_EVIDENCE",
+    "parentalRights": "REQUIRES_FURTHER_EVIDENCE",
+    "vouchers": "REQUIRES_FURTHER_EVIDENCE",
+    "teacherPay": "REQUIRES_FURTHER_EVIDENCE",
+    "bondsAndBudget": "Part of board majority that reduced M&O+I&S tax rate from $1.3276 (2022) to $1.1422 (2023-24). Generally supportive of bond-funded facility upgrades.",
+    "testing": "REQUIRES_FURTHER_EVIDENCE",
+    "safety": "Board approved $2.77M surveillance overhaul during his term.",
+    "genderPolicy": "REQUIRES_FURTHER_EVIDENCE"
+  },
+  "notableVotes": [
+    {"meeting": "Aug 2023", "item": "Tax rate reduction from $1.3276 to $1.1422", "outcome": "Passed"},
+    {"meeting": "Feb 2025", "item": "$2.77M surveillance infrastructure contract with Digi Security Systems", "outcome": "Approved"},
+    {"meeting": "2024", "item": "Dr. Marla Sheppard superintendent hire", "outcome": "Approved (publicly supportive)"}
+  ],
+  "sources": [
+    {"name": "Miller Fair Henry attorney bio", "url": "https://millerfairhenry.com/attorneys/brett-miller/"},
+    {"name": "Longview News-Journal, 2020 filing", "url": "https://www.news-journal.com/news/local/attorney-files-to-challenge-longview-isd-place-2-trustee-ava-welge/article_d7c8606e-4f55-11ea-8b3b-2399070be9ec.html"},
+    {"name": "Longview News-Journal, 2023 no opponents", "url": "https://www.news-journal.com/news/education/longview-candidates-draw-no-opponents-for-may-elections/article_90618af2-af0b-11ed-844b-c75431d8c6c9.html"},
+    {"name": "LISD Board honored, Jan 2025", "url": "https://w3.lisd.org/district/news/01132025-board-honored"},
+    {"name": "LISD BoardBook Premier", "url": "https://meetings.boardbook.org/public/Organization/2235"}
+  ],
+  "researchGaps": [
+    "Gregg CAD property records pull",
+    "Gregg County voter roll primary-history pull",
+    "PACER + Gregg County District Clerk civil/family/criminal record search",
+    "TEC + FEC donor-by-candidate search (donations given BY Miller)",
+    "SOSDirect entity filings for Miller Fair Henry PLLC",
+    "LISD-posted campaign finance reports for 2020, 2023, and 2026 cycles",
+    "Wayback snapshots of firm bio and campaign Facebook page",
+    "BoardBook attendance and vote-by-vote record 2020-2026",
+    "Confirm 2026 filing status with LISD elections coordinator (903-381-2200)"
+  ],
+  "lastUpdated": "2026-04-16"
 }

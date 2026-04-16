@@ -1,0 +1,95 @@
+{
+  "id": "crista-black",
+  "name": "Crista Black",
+  "firstName": "Crista",
+  "lastName": "Black",
+  "party": "NP",
+  "level": "school-board",
+  "position": "School Board Trustee, Assistant Secretary",
+  "district": "Place 4",
+  "jurisdiction": "Longview ISD",
+  "county": ["Gregg County"],
+  "termStart": "2023-05-01",
+  "termEnd": "2026-05-01",
+  "contactInfo": {
+    "office": "1301 E. Young St., Longview, TX 75602",
+    "phone": "(903) 381-2200",
+    "website": "https://w3.lisd.org"
+  },
+  "bio": "Crista Black is the incumbent Place 4 trustee on the Longview ISD Board of Trustees and serves as board Assistant Secretary. An LISD graduate and career educator since 2001, she taught and later served as an instructional specialist and ELA curriculum coordinator in Pine Tree ISD. She was president of the LISD Education Foundation when she filed unopposed in 2023 to succeed the retiring Ginia Northcutt. She is a recipient of both the Pine Tree Middle School Teacher of the Year and Pine Tree District Elementary Teacher of the Year awards.",
+  "campaignPromises": [],
+  "status": "incumbent",
+  "electionDate": "2026-05-02",
+  "occupation": "Educator / Nonprofit Leader",
+  "employer": "Historical: Pine Tree ISD (current status requires verification)",
+  "education": [
+    {"institution": "Longview ISD", "degree": "High School Diploma", "graduated": true},
+    {"institution": "Undergraduate institution requires verification", "degree": "Bachelor's (likely Education)", "graduated": true}
+  ],
+  "employmentHistory": [
+    {"employer": "Frisco ISD", "title": "Classroom Teacher", "period": "2001-era"},
+    {"employer": "Pine Tree ISD", "title": "Classroom Teacher", "period": "Historical"},
+    {"employer": "Pine Tree ISD", "title": "Instructional Specialist, Pine Tree High School", "period": "Historical"},
+    {"employer": "Pine Tree ISD", "title": "ELA Curriculum Coordinator (district-level)", "period": "Through at least 2023"}
+  ],
+  "affiliations": [
+    "Longview ISD Education Foundation (President at 2023 filing)",
+    "Junior League of Longview (Former President)",
+    "East Texas Literacy Council",
+    "Heartisans Marketplace",
+    "Hudson PEP Elementary PTO (Officer)",
+    "Foster Middle School PTO (Officer)"
+  ],
+  "conflictsOfInterest": [
+    {
+      "type": "nonprofit_tie",
+      "description": "Simultaneously President of Longview ISD Education Foundation (a 501(c)(3) that raises money for district programs) and LISD trustee at time of 2023 filing. Common in smaller districts but creates a fundraising vs governance dual role that voters should understand.",
+      "severity": "medium",
+      "label": "FACT",
+      "source": "Longview News-Journal, 2023 filing article"
+    },
+    {
+      "type": "cross_district_employment",
+      "description": "Historical and possibly current Pine Tree ISD employment while serving as LISD trustee. Pine Tree is a neighboring district in the same county with potential shared vendors and regional cooperative ties.",
+      "severity": "medium",
+      "label": "DOCUMENTED_INFERENCE",
+      "source": "Longview News-Journal, 2023"
+    }
+  ],
+  "educationPolicyPositions": {
+    "curriculum": "Background as ELA curriculum coordinator at Pine Tree ISD. Specific LISD policy stances require verification.",
+    "bookPolicies": "REQUIRES_FURTHER_EVIDENCE (high priority given ELA background)",
+    "parentalRights": "REQUIRES_FURTHER_EVIDENCE",
+    "vouchers": "REQUIRES_FURTHER_EVIDENCE",
+    "teacherPay": "Education Foundation role suggests active teacher-facing fundraising. Formal stance requires verification.",
+    "bondsAndBudget": "Part of board majority that reduced M&O+I&S tax rate 2023-24.",
+    "testing": "REQUIRES_FURTHER_EVIDENCE",
+    "safety": "REQUIRES_FURTHER_EVIDENCE",
+    "genderPolicy": "REQUIRES_FURTHER_EVIDENCE"
+  },
+  "notableVotes": [
+    {"meeting": "Aug 2023", "item": "Tax rate reduction from $1.3276 to $1.1422", "outcome": "Passed (board majority approved)"},
+    {"meeting": "Feb 2025", "item": "$2.77M surveillance contract", "outcome": "Approved"},
+    {"meeting": "2024", "item": "Superintendent Sheppard hire", "outcome": "Approved"}
+  ],
+  "sources": [
+    {"name": "Longview News-Journal, 2023 filing", "url": "https://www.news-journal.com/news/local/longtime-educator-files-for-seat-on-longview-isd-board-of-trustees/article_f2bb1a98-9c31-11ed-8faf-57dc5537521d.html"},
+    {"name": "Longview News-Journal, 2023 no opponents", "url": "https://www.news-journal.com/news/education/longview-candidates-draw-no-opponents-for-may-elections/article_90618af2-af0b-11ed-844b-c75431d8c6c9.html"},
+    {"name": "LISD Trustees honored, Jan 2025", "url": "https://w3.lisd.org/district/news/01132025-board-honored"},
+    {"name": "LISD BoardBook Premier", "url": "https://meetings.boardbook.org/public/Organization/2235"}
+  ],
+  "researchGaps": [
+    "Confirm current employer and title",
+    "Locate personal and campaign social accounts",
+    "Pull LISD-posted campaign finance reports from 2023 cycle",
+    "Confirm primary voting history via Gregg County voter rolls",
+    "Identify positions on book policies, vouchers, gender policy, STAAR",
+    "Verify if spouse or immediate family employed by LISD or district vendors",
+    "Pull LISD Education Foundation 990 filings for officer designations and grant recipients",
+    "Check for maiden/prior names via Gregg County marriage records",
+    "Review Wayback Machine snapshots of bios",
+    "BoardBook attendance record 2023-2026",
+    "Confirm 2026 filing status with LISD elections coordinator (903-381-2200)"
+  ],
+  "lastUpdated": "2026-04-16"
+}
