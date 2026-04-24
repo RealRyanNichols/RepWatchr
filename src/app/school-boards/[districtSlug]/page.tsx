@@ -96,27 +96,34 @@ export default async function DistrictPage({
   const intelligenceNotes = buildIntelligenceNotes(district.district, sourceLinks.length, feed.length);
 
   return (
-    <div className="bg-[#f7f4ee] text-gray-950">
-      <section className="border-b border-gray-200 bg-[#fffaf1]">
+    <div className="bg-[#fbfcff] text-gray-950">
+      <section className="border-b border-blue-100 bg-[linear-gradient(135deg,#ffffff_0%,#f8fbff_42%,#fff7ed_100%)]">
         <div className="mx-auto grid max-w-7xl gap-8 px-4 py-8 sm:px-6 lg:grid-cols-[1.1fr_0.9fr] lg:px-8">
           <div>
-            <Link href="/school-boards" className="inline-flex rounded-full border border-gray-300 bg-white px-4 py-2 text-sm font-black text-gray-700 shadow-sm transition hover:border-red-300 hover:text-red-700">
+            <Link href="/school-boards" className="inline-flex rounded-full border border-blue-200 bg-white px-4 py-2 text-sm font-black text-blue-950 shadow-sm transition hover:border-red-300 hover:text-red-700">
               &larr; School board watch
             </Link>
             <div className="mt-6 flex flex-wrap items-center gap-3">
               <span className="rounded-full bg-red-100 px-3 py-1 text-xs font-black uppercase tracking-wide text-red-700">{district.county} County</span>
-              <span className="rounded-full bg-blue-100 px-3 py-1 text-xs font-black uppercase tracking-wide text-blue-800">District profile</span>
-              <span className="rounded-full bg-amber-100 px-3 py-1 text-xs font-black uppercase tracking-wide text-amber-800">OSINT build</span>
+              <span className="rounded-full bg-blue-100 px-3 py-1 text-xs font-black uppercase tracking-wide text-blue-800">East Texas school board</span>
+              <span className="rounded-full bg-emerald-100 px-3 py-1 text-xs font-black uppercase tracking-wide text-emerald-800">God. Family. Country.</span>
             </div>
             <h1 className="mt-4 max-w-3xl text-4xl font-black leading-tight text-gray-950 sm:text-6xl">
               {district.district}
             </h1>
-            <p className="mt-4 max-w-3xl text-lg font-semibold leading-8 text-gray-700">
-              This is the working profile for {district.district}: board members, district facts, record sources, public-watch lanes, positive items, concern lanes, and the next records that need to be pulled.
+            <p className="mt-4 max-w-3xl text-lg font-semibold leading-8 text-blue-950/80">
+              A Texas-first public profile for {district.district}: board members, district facts, record sources, parent-watch lanes, positive records, concern lanes, and the next records that need to be pulled.
             </p>
+            <div className="mt-5 grid max-w-2xl gap-2 sm:grid-cols-3">
+              {["Truth over rumor", "Parents at the table", "Records before claims"].map((value) => (
+                <div key={value} className="border-l-4 border-red-600 bg-white/80 px-3 py-2 text-sm font-black text-blue-950 shadow-sm">
+                  {value}
+                </div>
+              ))}
+            </div>
             <div className="mt-7 flex flex-wrap gap-3">
               {sourceLinks.slice(0, 2).map((source) => (
-                <a key={source.url} href={source.url} target="_blank" rel="noopener noreferrer" className="rounded-full bg-gray-950 px-4 py-2 text-sm font-black text-white shadow-sm transition hover:bg-red-700">
+                <a key={source.url} href={source.url} target="_blank" rel="noopener noreferrer" className="rounded-full bg-blue-900 px-4 py-2 text-sm font-black text-white shadow-sm transition hover:bg-red-700">
                   Open source: {source.title?.replace(/Harleton ISD |Marshall ISD |Longview ISD /g, "") ?? "Record"}
                 </a>
               ))}
@@ -129,27 +136,34 @@ export default async function DistrictPage({
             </div>
           </div>
 
-          <div className="rounded-2xl border border-gray-200 bg-white p-5 shadow-xl shadow-gray-200/60">
-            <div className="flex items-center justify-between gap-3">
-              <div>
-                <p className="text-xs font-black uppercase tracking-wide text-gray-500">Live profile dashboard</p>
-                <h2 className="mt-1 text-2xl font-black text-gray-950">What is loaded</h2>
-              </div>
-              <div className="grid h-16 w-16 place-items-center rounded-2xl bg-red-700 text-2xl font-black text-white">
-                {district.district.split(" ").map((word) => word[0]).join("").slice(0, 3)}
-              </div>
+          <div className="overflow-hidden rounded-2xl border border-blue-100 bg-white shadow-xl shadow-blue-100/70">
+            <div className="grid h-2 grid-cols-3">
+              <div className="bg-red-700" />
+              <div className="bg-white" />
+              <div className="bg-blue-900" />
             </div>
-            <div className="mt-5 grid grid-cols-2 gap-3">
-              <ProfileStat label="Board files" value={district.candidates.length} tone="neutral" />
-              <ProfileStat label="Praise items" value={issueCounts.good + praiseItems.length} tone="good" />
-              <ProfileStat label="Watch items" value={watchItems.length + issueCounts.gaps} tone="watch" />
-              <ProfileStat label="Red flags" value={issueCounts.flags} tone="bad" />
-            </div>
-            <div className="mt-5 rounded-xl border border-gray-200 bg-gray-50 p-4">
-              <p className="text-sm font-black text-gray-950">Profile status</p>
-              <p className="mt-1 text-sm font-semibold leading-6 text-gray-600">
-                {district.candidates.length} trustee/candidate files, {ballotCandidates.length} tied to 2026 elections, {sourceLinks.length} source links loaded, and {feed.length} district feed items.
-              </p>
+            <div className="p-5">
+              <div className="flex items-center justify-between gap-3">
+                <div>
+                  <p className="text-xs font-black uppercase tracking-wide text-red-700">Live profile dashboard</p>
+                  <h2 className="mt-1 text-2xl font-black text-blue-950">What is loaded</h2>
+                </div>
+                <div className="grid h-16 w-16 place-items-center rounded-2xl bg-blue-900 text-2xl font-black text-white shadow-md shadow-blue-900/20">
+                  {district.district.split(" ").map((word) => word[0]).join("").slice(0, 3)}
+                </div>
+              </div>
+              <div className="mt-5 grid grid-cols-2 gap-3">
+                <ProfileStat label="Board files" value={district.candidates.length} tone="neutral" />
+                <ProfileStat label="Praise items" value={issueCounts.good + praiseItems.length} tone="good" />
+                <ProfileStat label="Watch items" value={watchItems.length + issueCounts.gaps} tone="watch" />
+                <ProfileStat label="Red flags" value={issueCounts.flags} tone="bad" />
+              </div>
+              <div className="mt-5 rounded-xl border border-blue-100 bg-blue-50 p-4">
+                <p className="text-sm font-black text-blue-950">Profile status</p>
+                <p className="mt-1 text-sm font-semibold leading-6 text-blue-950/75">
+                  {district.candidates.length} trustee/candidate files, {ballotCandidates.length} tied to 2026 elections, {sourceLinks.length} source links loaded, and {feed.length} district feed items.
+                </p>
+              </div>
             </div>
           </div>
         </div>
@@ -175,7 +189,7 @@ export default async function DistrictPage({
         </div>
       </section>
 
-      <section className="border-b border-gray-200 bg-[#f8fbff]">
+      <section className="border-b border-blue-100 bg-[#f2f7ff]">
         <div className="mx-auto grid max-w-7xl gap-6 px-4 py-10 sm:px-6 lg:grid-cols-[0.9fr_1.1fr] lg:px-8">
           <div>
             <p className="text-sm font-black uppercase tracking-wide text-blue-700">District quick facts</p>
@@ -270,7 +284,7 @@ export default async function DistrictPage({
         </div>
       </section>
 
-      <section id="district-feed" className="bg-[#fffaf1]">
+      <section id="district-feed" className="bg-[#fff8ed]">
         <div className="mx-auto max-w-7xl px-4 py-12 sm:px-6 lg:px-8">
           <div className="mb-7 grid gap-4 rounded-2xl border border-gray-200 bg-white p-6 shadow-sm lg:grid-cols-[0.9fr_1.1fr]">
             <div className="border-b border-gray-200 pb-4 lg:border-b-0 lg:border-r lg:pb-0 lg:pr-6">
