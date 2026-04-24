@@ -63,38 +63,61 @@ export default function HomePage() {
   return (
     <div>
       {/* Hero Section */}
-      <section className="relative overflow-hidden bg-gradient-to-br from-slate-900 via-blue-900 to-slate-900">
-        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,_var(--tw-gradient-stops))] from-blue-600/20 via-transparent to-red-600/10" />
-        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-14 sm:py-28">
-          <div className="text-center max-w-3xl mx-auto">
-            <h1 className="text-3xl sm:text-6xl font-extrabold tracking-tight text-white mb-4 sm:mb-6 leading-tight">
+      <section className="relative overflow-hidden border-b border-blue-100 bg-[linear-gradient(135deg,#ffffff_0%,#f4f8ff_52%,#fff7ed_100%)]">
+        <div className="grid h-2 grid-cols-3">
+          <div className="bg-red-700" />
+          <div className="bg-white" />
+          <div className="bg-blue-900" />
+        </div>
+        <div className="relative mx-auto grid max-w-7xl gap-10 px-4 py-14 sm:px-6 sm:py-24 lg:grid-cols-[1fr_0.85fr] lg:px-8">
+          <div className="max-w-3xl">
+            <div className="mb-5 flex flex-wrap gap-2">
+              {["East Texas first", "God", "Family", "Country"].map((value) => (
+                <span key={value} className="rounded-full border border-blue-100 bg-white px-3 py-1 text-xs font-black uppercase tracking-wide text-blue-950 shadow-sm">
+                  {value}
+                </span>
+              ))}
+            </div>
+            <h1 className="mb-4 text-3xl font-extrabold leading-tight tracking-tight text-blue-950 sm:mb-6 sm:text-6xl">
               Know Your Reps.
               <br />
-              <span className="bg-gradient-to-r from-blue-400 to-red-400 bg-clip-text text-transparent">
+              <span className="text-red-700">
                 Hold Them Accountable.
               </span>
             </h1>
-            <p className="text-base sm:text-lg text-slate-300 mb-8 sm:mb-10 max-w-2xl mx-auto leading-relaxed px-2">
+            <p className="mb-8 max-w-2xl text-base font-semibold leading-relaxed text-blue-950/75 sm:mb-10 sm:text-lg">
               Scorecards, voting records, campaign funding, and red flags for
               every elected official in Texas. Verified Texans can
               vote and comment publicly.
             </p>
-            <div className="max-w-xl mx-auto mb-8">
+            <div className="mb-8 max-w-xl">
               <SearchBar />
             </div>
-            <div className="flex flex-wrap gap-4 justify-center">
+            <div className="flex flex-wrap gap-4">
               <Link
                 href="/officials"
-                className="rounded-xl bg-white px-6 py-3 text-sm font-bold text-slate-900 shadow-lg hover:shadow-xl transition-all hover:-translate-y-0.5"
+                className="rounded-xl bg-blue-900 px-6 py-3 text-sm font-bold text-white shadow-lg transition-all hover:-translate-y-0.5 hover:bg-red-700 hover:shadow-xl"
               >
                 Browse All Officials
               </Link>
               <Link
                 href="/auth/signup"
-                className="rounded-xl bg-blue-600 px-6 py-3 text-sm font-bold text-white shadow-lg hover:bg-blue-500 hover:shadow-xl transition-all hover:-translate-y-0.5"
+                className="rounded-xl border border-red-200 bg-white px-6 py-3 text-sm font-bold text-red-700 shadow-lg transition-all hover:-translate-y-0.5 hover:border-red-400 hover:shadow-xl"
               >
                 Sign Up to Vote
               </Link>
+            </div>
+          </div>
+          <div className="rounded-2xl border border-blue-100 bg-white p-6 shadow-xl shadow-blue-100/70">
+            <p className="text-sm font-black uppercase tracking-wide text-red-700">Texas accountability map</p>
+            <h2 className="mt-2 text-3xl font-black text-blue-950">Local politics should be clear enough for families to follow.</h2>
+            <div className="mt-6 grid gap-3">
+              {stats.map((stat) => (
+                <div key={stat.label} className="flex items-center justify-between rounded-xl border border-blue-100 bg-blue-50 px-4 py-3">
+                  <span className="text-sm font-black text-blue-950">{stat.label}</span>
+                  <span className="text-2xl font-black text-red-700">{stat.value}</span>
+                </div>
+              ))}
             </div>
           </div>
         </div>
@@ -274,51 +297,51 @@ export default function HomePage() {
       )}
 
       {/* CTA Cards */}
-      <section className="bg-slate-900">
+      <section className="border-y border-blue-100 bg-[#f4f8ff]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">
             <Link
               href="/funding"
-              className="group rounded-2xl bg-slate-800 p-8 transition-all hover:bg-slate-700 hover:-translate-y-1"
+              className="group rounded-2xl border border-blue-100 bg-white p-8 shadow-sm transition-all hover:-translate-y-1 hover:border-blue-300 hover:shadow-lg"
             >
-              <h3 className="font-extrabold text-xl text-white mb-3">
+              <h3 className="font-extrabold text-xl text-blue-950 mb-3">
                 Who Funds Them?
               </h3>
-              <p className="text-slate-400 text-sm leading-relaxed mb-4">
+              <p className="text-blue-950/70 text-sm leading-relaxed mb-4">
                 Follow the money. See who is funding your elected officials and
                 where their campaign dollars come from.
               </p>
-              <span className="text-blue-400 text-sm font-bold group-hover:translate-x-1 inline-block transition-transform">
+              <span className="text-blue-700 text-sm font-bold group-hover:translate-x-1 inline-block transition-transform">
                 View Funding Data &rarr;
               </span>
             </Link>
             <Link
               href="/red-flags"
-              className="group rounded-2xl bg-slate-800 p-8 transition-all hover:bg-slate-700 hover:-translate-y-1"
+              className="group rounded-2xl border border-red-100 bg-white p-8 shadow-sm transition-all hover:-translate-y-1 hover:border-red-300 hover:shadow-lg"
             >
-              <h3 className="font-extrabold text-xl text-white mb-3">
+              <h3 className="font-extrabold text-xl text-red-700 mb-3">
                 Red Flags
               </h3>
-              <p className="text-slate-400 text-sm leading-relaxed mb-4">
+              <p className="text-blue-950/70 text-sm leading-relaxed mb-4">
                 Conflicts of interest, broken promises, and issues voters should
                 know about but may have missed.
               </p>
-              <span className="text-red-400 text-sm font-bold group-hover:translate-x-1 inline-block transition-transform">
+              <span className="text-red-700 text-sm font-bold group-hover:translate-x-1 inline-block transition-transform">
                 View Red Flags &rarr;
               </span>
             </Link>
             <Link
               href="/methodology"
-              className="group rounded-2xl bg-slate-800 p-8 transition-all hover:bg-slate-700 hover:-translate-y-1"
+              className="group rounded-2xl border border-emerald-100 bg-white p-8 shadow-sm transition-all hover:-translate-y-1 hover:border-emerald-300 hover:shadow-lg"
             >
-              <h3 className="font-extrabold text-xl text-white mb-3">
+              <h3 className="font-extrabold text-xl text-emerald-800 mb-3">
                 How We Score
               </h3>
-              <p className="text-slate-400 text-sm leading-relaxed mb-4">
+              <p className="text-blue-950/70 text-sm leading-relaxed mb-4">
                 Every score is traceable to specific votes. Transparent
                 methodology focused on Texas interests.
               </p>
-              <span className="text-green-400 text-sm font-bold group-hover:translate-x-1 inline-block transition-transform">
+              <span className="text-emerald-700 text-sm font-bold group-hover:translate-x-1 inline-block transition-transform">
                 View Methodology &rarr;
               </span>
             </Link>
@@ -327,25 +350,26 @@ export default function HomePage() {
       </section>
 
       {/* Join CTA */}
-      <section className="bg-gradient-to-r from-blue-600 to-blue-800">
+      <section className="bg-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-16 text-center">
-          <h2 className="text-3xl font-extrabold text-white mb-4">
+          <div className="mx-auto mb-6 h-1.5 max-w-xs rounded-full bg-[linear-gradient(90deg,#bf0d3e_0%,#bf0d3e_35%,#ffffff_35%,#ffffff_65%,#002868_65%,#002868_100%)] shadow-sm" />
+          <h2 className="text-3xl font-extrabold text-blue-950 mb-4">
             Your Voice Matters
           </h2>
-          <p className="text-blue-100 text-lg mb-8 max-w-2xl mx-auto">
+          <p className="text-blue-950/70 text-lg mb-8 max-w-2xl mx-auto">
             Sign up, verify your Texas identity, and start voting on officials.
             Share your opinions publicly. Real data from verified residents.
           </p>
           <div className="flex flex-wrap gap-4 justify-center">
             <Link
               href="/auth/signup"
-              className="rounded-xl bg-white px-8 py-3.5 text-sm font-bold text-blue-700 shadow-lg hover:shadow-xl transition-all hover:-translate-y-0.5"
+              className="rounded-xl bg-blue-900 px-8 py-3.5 text-sm font-bold text-white shadow-lg hover:shadow-xl transition-all hover:-translate-y-0.5 hover:bg-red-700"
             >
               Create Free Account
             </Link>
             <Link
               href="/methodology"
-              className="rounded-xl border-2 border-white/30 px-8 py-3.5 text-sm font-bold text-white hover:bg-white/10 transition-all"
+              className="rounded-xl border-2 border-red-200 px-8 py-3.5 text-sm font-bold text-red-700 hover:bg-red-50 transition-all"
             >
               Learn More
             </Link>
