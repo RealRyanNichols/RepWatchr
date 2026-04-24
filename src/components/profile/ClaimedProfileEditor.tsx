@@ -45,7 +45,13 @@ function cleanPathSegment(value: string) {
   return value.replace(/[^a-zA-Z0-9._-]/g, "-").slice(0, 120);
 }
 
-export default function ClaimedProfileEditor({ claimId }: { claimId: string }) {
+export default function ClaimedProfileEditor({
+  claimId,
+  checkoutStatus,
+}: {
+  claimId: string;
+  checkoutStatus?: string;
+}) {
   const { user, loading: authLoading } = useAuth();
   const supabase = useMemo(() => createClient(), []);
   const [claim, setClaim] = useState<Claim | null>(null);
@@ -292,6 +298,18 @@ export default function ClaimedProfileEditor({ claimId }: { claimId: string }) {
   }
 
   const subscriptionActive = subscription?.status === "active" || subscription?.status === "trialing";
+  const checkoutNotice =
+    checkoutStatus === "success"
+      ? {
+          className: "border-emerald-200 bg-emerald-50 text-emerald-800",
+          text: "Stripe checkout finished. If the subscription still shows pending, wait a moment for the webhook to update this claim.",
+        }
+      : checkoutStatus === "cancelled"
+        ? {
+            className: "border-amber-200 bg-amber-50 text-amber-950",
+            text: "Checkout was cancelled. The profile tools stay locked until the subscription is active.",
+          }
+        : null;
   const profilePath = claim.district_slug
     ? `/school-boards/${claim.district_slug}/${claim.profile_id}`
     : `/officials/${claim.profile_id}`;
@@ -325,6 +343,12 @@ export default function ClaimedProfileEditor({ claimId }: { claimId: string }) {
         {claim.reviewer_notes ? (
           <div className="mt-5 rounded-xl border border-amber-200 bg-amber-50 p-4 text-sm font-bold leading-6 text-amber-950">
             Reviewer note: {claim.reviewer_notes}
+          </div>
+        ) : null}
+
+        {checkoutNotice ? (
+          <div className={`mt-5 rounded-xl border p-4 text-sm font-bold leading-6 ${checkoutNotice.className}`}>
+            {checkoutNotice.text}
           </div>
         ) : null}
 
