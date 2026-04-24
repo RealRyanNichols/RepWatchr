@@ -5,9 +5,10 @@ import Link from "next/link";
 import { useAuth } from "./AuthProvider";
 
 export default function UserMenu() {
-  const { user, profile, loading, signOut } = useAuth();
+  const { user, profile, roles, loading, signOut } = useAuth();
   const [open, setOpen] = useState(false);
   const menuRef = useRef<HTMLDivElement>(null);
+  const canReview = roles.includes("admin") || roles.includes("reviewer");
 
   useEffect(() => {
     function handleClickOutside(event: MouseEvent) {
@@ -92,6 +93,25 @@ export default function UserMenu() {
           >
             Claim Profile
           </Link>
+          {canReview ? (
+            <>
+              <div className="my-1 border-t border-gray-100" />
+              <Link
+                href="/admin/claims"
+                className="block px-4 py-2 text-sm font-semibold text-blue-800 hover:bg-blue-50"
+                onClick={() => setOpen(false)}
+              >
+                Claim Queue
+              </Link>
+              <Link
+                href="/admin/content-review"
+                className="block px-4 py-2 text-sm font-semibold text-blue-800 hover:bg-blue-50"
+                onClick={() => setOpen(false)}
+              >
+                Content Review
+              </Link>
+            </>
+          ) : null}
           {!profile?.verified && (
             <Link
               href="/auth/verify"

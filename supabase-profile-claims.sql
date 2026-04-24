@@ -100,6 +100,16 @@ create table if not exists public.profile_claim_audit (
   created_at timestamptz default now() not null
 );
 
+create or replace function public.handle_updated_at()
+returns trigger
+language plpgsql
+as $$
+begin
+  new.updated_at = now();
+  return new;
+end;
+$$;
+
 create index if not exists idx_user_roles_user on public.user_roles(user_id);
 create index if not exists idx_profile_claims_user on public.profile_claims(user_id);
 create index if not exists idx_profile_claims_profile on public.profile_claims(profile_id);
@@ -129,6 +139,22 @@ as $$
       and role in ('admin', 'reviewer')
   );
 $$;
+
+drop policy if exists "Users can read own roles and admins can read all roles" on public.user_roles;
+drop policy if exists "Admins can manage roles" on public.user_roles;
+drop policy if exists "Users can create own profile claims" on public.profile_claims;
+drop policy if exists "Users can read own claims and admins can read all claims" on public.profile_claims;
+drop policy if exists "Admins can update profile claims" on public.profile_claims;
+drop policy if exists "Users can read own subscriptions and admins can read all subscriptions" on public.subscriptions;
+drop policy if exists "Admins and service flows can manage subscriptions" on public.subscriptions;
+drop policy if exists "Public can read approved claimed profile content" on public.claimed_profile_content;
+drop policy if exists "Approved subscribed claimants can submit profile content" on public.claimed_profile_content;
+drop policy if exists "Admins can review claimed profile content" on public.claimed_profile_content;
+drop policy if exists "Public can read approved profile media" on public.profile_media;
+drop policy if exists "Approved subscribed claimants can submit profile media" on public.profile_media;
+drop policy if exists "Admins can review profile media" on public.profile_media;
+drop policy if exists "Users can read own audit and admins can read all audit" on public.profile_claim_audit;
+drop policy if exists "Authenticated users can insert claim audit" on public.profile_claim_audit;
 
 create policy "Users can read own roles and admins can read all roles"
   on public.user_roles for select
@@ -227,18 +253,22 @@ create policy "Authenticated users can insert claim audit"
   to authenticated
   with check (auth.uid() = actor_id or public.is_repw_admin());
 
+drop trigger if exists set_profile_claims_updated_at on public.profile_claims;
 create trigger set_profile_claims_updated_at
   before update on public.profile_claims
   for each row execute function public.handle_updated_at();
 
+drop trigger if exists set_subscriptions_updated_at on public.subscriptions;
 create trigger set_subscriptions_updated_at
   before update on public.subscriptions
   for each row execute function public.handle_updated_at();
 
+drop trigger if exists set_claimed_profile_content_updated_at on public.claimed_profile_content;
 create trigger set_claimed_profile_content_updated_at
   before update on public.claimed_profile_content
   for each row execute function public.handle_updated_at();
 
+drop trigger if exists set_profile_media_updated_at on public.profile_media;
 create trigger set_profile_media_updated_at
   before update on public.profile_media
   for each row execute function public.handle_updated_at();
@@ -248,6 +278,11 @@ values
   ('profile-submissions', 'profile-submissions', false),
   ('profile-media-approved', 'profile-media-approved', true)
 on conflict (id) do nothing;
+
+drop policy if exists "Users can upload own profile submissions" on storage.objects;
+drop policy if exists "Users can read own profile submissions and admins can read all" on storage.objects;
+drop policy if exists "Public can read approved profile media bucket" on storage.objects;
+drop policy if exists "Admins can manage approved profile media bucket" on storage.objects;
 
 create policy "Users can upload own profile submissions"
   on storage.objects for insert

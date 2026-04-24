@@ -10,6 +10,10 @@ type CheckoutResponse = {
   error?: { message?: string };
 };
 
+function isLiveSubscription(status: string | null | undefined) {
+  return status === "active" || status === "trialing";
+}
+
 export async function POST(request: NextRequest) {
   const supabase = await createServerSupabaseClient();
   const {
@@ -59,6 +63,41 @@ export async function POST(request: NextRequest) {
     );
   }
 
+  const adminSupabase = getSupabaseAdminClient();
+  if (!adminSupabase) {
+    return NextResponse.json(
+      { error: "Supabase service role is not configured." },
+      { status: 503 }
+    );
+  }
+
+  const { data: existingSubscriptions, error: subscriptionLookupError } =
+    await adminSupabase
+      .from("subscriptions")
+      .select("id, status")
+      .eq("claim_id", claimId)
+      .eq("user_id", user.id)
+      .order("updated_at", { ascending: false });
+
+  if (subscriptionLookupError) {
+    return NextResponse.json({ error: subscriptionLookupError.message }, { status: 500 });
+  }
+
+  if (existingSubscriptions?.some((subscription) => isLiveSubscription(subscription.status))) {
+    return NextResponse.json(
+      { error: "This profile claim already has an active subscription." },
+      { status: 409 }
+    );
+  }
+
+  await adminSupabase
+    .from("subscriptions")
+    .delete()
+    .eq("claim_id", claimId)
+    .eq("user_id", user.id)
+    .eq("status", "pending")
+    .is("stripe_subscription_id", null);
+
   const siteUrl =
     process.env.NEXT_PUBLIC_SITE_URL ??
     `${request.nextUrl.protocol}//${request.nextUrl.host}`;
@@ -98,15 +137,12 @@ export async function POST(request: NextRequest) {
     );
   }
 
-  const adminSupabase = getSupabaseAdminClient();
-  if (adminSupabase) {
-    await adminSupabase.from("subscriptions").insert({
-      user_id: user.id,
-      claim_id: claimId,
-      stripe_price_id: priceId,
-      status: "pending",
-    });
-  }
+  await adminSupabase.from("subscriptions").insert({
+    user_id: user.id,
+    claim_id: claimId,
+    stripe_price_id: priceId,
+    status: "pending",
+  });
 
   return NextResponse.json({ url: checkout.url });
 }

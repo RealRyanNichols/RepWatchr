@@ -21,17 +21,27 @@ function asNumber(value: unknown) {
 function parseStripeSignature(header: string | null) {
   if (!header) return null;
 
-  return Object.fromEntries(
-    header.split(",").map((part) => {
-      const [key, value] = part.split("=");
-      return [key, value];
-    })
-  ) as { t?: string; v1?: string };
+  const parsed: { t?: string; v1?: string } = {};
+  for (const part of header.split(",")) {
+    const [key, ...valueParts] = part.split("=");
+    const value = valueParts.join("=");
+    if (key === "t") parsed.t = value;
+    if (key === "v1" && !parsed.v1) parsed.v1 = value;
+  }
+
+  return parsed;
 }
 
 function verifyStripeSignature(rawBody: string, signatureHeader: string | null, secret: string) {
   const parsed = parseStripeSignature(signatureHeader);
   if (!parsed?.t || !parsed.v1) return false;
+
+  const timestamp = Number(parsed.t);
+  if (!Number.isFinite(timestamp)) return false;
+
+  const timestampToleranceSeconds = 300;
+  const age = Math.abs(Math.floor(Date.now() / 1000) - timestamp);
+  if (age > timestampToleranceSeconds) return false;
 
   const expected = crypto
     .createHmac("sha256", secret)
@@ -134,13 +144,34 @@ async function recordCheckoutSession(session: StripeObject) {
     return { error: undefined };
   }
 
+  const payload = {
+    user_id: userId,
+    claim_id: claimId,
+    stripe_customer_id: customerId,
+    stripe_subscription_id: subscriptionId,
+    status: "active",
+  };
+
+  const { data: updatedPendingRows, error: updateError } = await supabase
+    .from("subscriptions")
+    .update(payload)
+    .eq("user_id", userId)
+    .eq("claim_id", claimId)
+    .is("stripe_subscription_id", null)
+    .in("status", ["pending", "incomplete"])
+    .select("id");
+
+  if (updateError) {
+    return { error: updateError.message };
+  }
+
+  if (updatedPendingRows?.length) {
+    return { error: undefined };
+  }
+
   const { error } = await supabase.from("subscriptions").upsert(
     {
-      user_id: userId,
-      claim_id: claimId,
-      stripe_customer_id: customerId,
-      stripe_subscription_id: subscriptionId,
-      status: "active",
+      ...payload,
     },
     { onConflict: "stripe_subscription_id" }
   );
