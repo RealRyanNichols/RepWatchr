@@ -142,6 +142,17 @@ export const EAST_TEXAS_PRIORITY_DISTRICTS = [
   { district: "Tatum ISD", district_slug: "tatum_isd", county: "Rusk" },
   { district: "Plano ISD", district_slug: "plano_isd", county: "Collin" },
   { district: "Frisco ISD", district_slug: "frisco_isd", county: "Collin/Denton" },
+  { district: "Houston ISD", district_slug: "houston_isd", county: "Harris" },
+  { district: "Dallas ISD", district_slug: "dallas_isd", county: "Dallas" },
+  { district: "Austin ISD", district_slug: "austin_isd", county: "Travis" },
+  { district: "San Antonio ISD", district_slug: "san_antonio_isd", county: "Bexar" },
+  { district: "Fort Worth ISD", district_slug: "fort_worth_isd", county: "Tarrant" },
+  { district: "Katy ISD", district_slug: "katy_isd", county: "Harris/Fort Bend/Waller" },
+  { district: "Cypress-Fairbanks ISD", district_slug: "cypress_fairbanks_isd", county: "Harris" },
+  { district: "Round Rock ISD", district_slug: "round_rock_isd", county: "Williamson/Travis" },
+  { district: "Killeen ISD", district_slug: "killeen_isd", county: "Bell" },
+  { district: "Conroe ISD", district_slug: "conroe_isd", county: "Montgomery" },
+  { district: "Northside ISD", district_slug: "northside_isd", county: "Bexar" },
 ] as const;
 
 const ACCESSED_DATE = "2026-04-24";
@@ -230,6 +241,50 @@ const DISTRICT_SOURCES: Record<string, SourceLink[]> = {
   frisco_isd: [
     { url: "https://www.friscoisd.org/about/board-of-trustees/meet-the-board", title: "Frisco ISD Meet the Board", accessed_date: ACCESSED_DATE, source_type: "district_official" },
     { url: "https://www.friscoisd.org/news/article/2025/05/04/voters-decide-three-seats-on-frisco-isd-board-of-trustees", title: "Frisco ISD May 2025 board election results", accessed_date: ACCESSED_DATE, source_type: "district_official" },
+  ],
+  houston_isd: [
+    { url: "https://www.houstonisd.org/board-governance/our-board", title: "Houston ISD Our Board", accessed_date: ACCESSED_DATE, source_type: "district_official" },
+    { url: "https://www.houstonpublicmedia.org/articles/education/2025/11/04/534984/houston-isd-board-election-results-2025/", title: "Houston Public Media — HISD November 2025 board election results", accessed_date: ACCESSED_DATE, source_type: "news" },
+  ],
+  dallas_isd: [
+    { url: "https://www.dallasisd.org/board-of-trustees/board-members", title: "Dallas ISD Board Members", accessed_date: ACCESSED_DATE, source_type: "district_official" },
+    { url: "https://www.dallasisd.org/board-of-trustees", title: "Dallas ISD Board of Trustees", accessed_date: ACCESSED_DATE, source_type: "district_official" },
+  ],
+  austin_isd: [
+    { url: "https://www.austinisd.org/board/members", title: "Austin ISD Board Members", accessed_date: ACCESSED_DATE, source_type: "district_official" },
+    { url: "https://www.austinisd.org/announcements/2026/02/16/austin-isd-board-trustees-elects-new-officers", title: "Austin ISD Board elects new officers (Feb 2026)", accessed_date: ACCESSED_DATE, source_type: "district_official" },
+  ],
+  san_antonio_isd: [
+    { url: "https://www.saisd.net/page/board", title: "San Antonio ISD Board", accessed_date: ACCESSED_DATE, source_type: "district_official" },
+    { url: "https://www.saisd.net/page/contact-a-board-member", title: "SAISD Contact a Board Member", accessed_date: ACCESSED_DATE, source_type: "district_official" },
+  ],
+  fort_worth_isd: [
+    { url: "https://www.fwisd.org/board/board-of-education/board-officers-members", title: "Fort Worth ISD Board Officers & Members", accessed_date: ACCESSED_DATE, source_type: "district_official" },
+    { url: "https://www.fwisd.org/about/tea", title: "Fort Worth ISD TEA Intervention", accessed_date: ACCESSED_DATE, source_type: "district_official" },
+  ],
+  katy_isd: [
+    { url: "https://www.katyisd.org/board/board/board-members", title: "Katy ISD Board Members", accessed_date: ACCESSED_DATE, source_type: "district_official" },
+    { url: "https://coveringkaty.com/education/katy-isd-board-welcomes-new-trustee-elects-officers/", title: "Covering Katy News — Katy ISD board elects officers", accessed_date: ACCESSED_DATE, source_type: "news" },
+  ],
+  cypress_fairbanks_isd: [
+    { url: "https://www.cfisd.net/board-of-trustees/board-of-trustees1/meet-our-board", title: "Cy-Fair ISD Meet Our Board", accessed_date: ACCESSED_DATE, source_type: "district_official" },
+    { url: "https://www.click2houston.com/news/local/2025/11/05/3-new-trustees-elected-to-cypress-fairbanks-isd-school-board/", title: "Click2Houston — 3 new Cy-Fair trustees elected (Nov 2025)", accessed_date: ACCESSED_DATE, source_type: "news" },
+  ],
+  round_rock_isd: [
+    { url: "https://www.roundrockisd.org/about-rrisd/board-of-trustees/", title: "Round Rock ISD Board of Trustees", accessed_date: ACCESSED_DATE, source_type: "district_official" },
+    { url: "https://news.roundrockisd.org/2025/01/20/round-rock-isd-trustees-elect-first-black-board-president/", title: "Round Rock ISD elects first Black board president", accessed_date: ACCESSED_DATE, source_type: "district_official" },
+  ],
+  killeen_isd: [
+    { url: "https://www.killeenisd.org/school_board", title: "Killeen ISD School Board", accessed_date: ACCESSED_DATE, source_type: "district_official" },
+    { url: "https://www.killeenisd.org/board_members", title: "Killeen ISD Board Members", accessed_date: ACCESSED_DATE, source_type: "district_official" },
+  ],
+  conroe_isd: [
+    { url: "https://www.conroeisd.net/superintendent-board-of-trustees/", title: "Conroe ISD Board of Trustees", accessed_date: ACCESSED_DATE, source_type: "district_official" },
+    { url: "https://www.conroeisd.net/conroe-isd-honors-outgoing-board-members-swears-in-new-board-members/", title: "Conroe ISD Swears in New Board Members (Nov 2024)", accessed_date: ACCESSED_DATE, source_type: "district_official" },
+  ],
+  northside_isd: [
+    { url: "https://www.nisd.net/board/members", title: "Northside ISD Board Members", accessed_date: ACCESSED_DATE, source_type: "district_official" },
+    { url: "https://sanantonioreport.org/san-antonio-election-2025-northside-isd-board-results-union/", title: "San Antonio Report — May 2025 NISD board election results", accessed_date: ACCESSED_DATE, source_type: "news" },
   ],
 };
 
@@ -388,6 +443,83 @@ const OFFICIAL_ROSTERS: Record<string, OfficialRosterMember[]> = {
     { full_name: "Suresh Manduva", role: "Trustee", summary: "Elected to a three-year term on the Frisco ISD Board in May 2025." },
     { full_name: "Renee Sample", role: "Trustee", summary: "Elected to a three-year term on the Frisco ISD Board in May 2025." },
     { full_name: "Stephanie Elad", role: "Trustee", summary: "Elected to a three-year term on the Frisco ISD Board in May 2025." },
+  ],
+  houston_isd: [
+    { full_name: "Maria Benzon", role: "Trustee", seat: "District V", summary: "Elected to HISD District V on November 4, 2025 with 63.1% of the vote. Voting power suspended under TEA state takeover until at least 2027." },
+    { full_name: "Michael McDonough", role: "Trustee", seat: "District VI", summary: "Elected to HISD District VI on November 4, 2025 with 60.4% of the vote, defeating incumbent Kendall Baker." },
+    { full_name: "Bridget Wade", role: "Trustee", seat: "District VII", summary: "Re-elected to HISD District VII on November 4, 2025 with 54.1% of the vote." },
+    { full_name: "Felicity Pereyra", role: "Trustee", seat: "District I", summary: "Won unopposed in November 2025; term begins January. Voting power suspended under TEA takeover." },
+    { full_name: "Myrna Guidry", role: "Trustee", seat: "District IX", summary: "Re-elected unopposed in November 2025." },
+  ],
+  dallas_isd: [
+    { full_name: "Ed Turner", role: "1st Vice President", seat: "District 9", term: "2024-2027", summary: "Represents South Dallas including Pleasant Grove, Deep Ellum, Uptown, and East Dallas." },
+    { full_name: "Prisma Y. García", role: "2nd Vice President", seat: "District 4", term: "2025-2028", summary: "Represents Northwest Dallas including parts of Carrollton and Farmers Branch." },
+    { full_name: "Sarah Weinberg", role: "Board Secretary", seat: "District 2", term: "2023-2026", summary: "Represents North and Near East Dallas." },
+    { full_name: "Dan Micciche", role: "Trustee", seat: "District 3", term: "2024-2027", summary: "Represents Northeast Dallas." },
+    { full_name: "Byron Sanders", role: "Trustee", seat: "District 5", term: "2025-2028", summary: "Represents Oak Lawn, West Dallas, Wilmer, Hutchins, and East Oak Cliff." },
+    { full_name: "Joyce Foreman", role: "Trustee", seat: "District 6", term: "2023-2026", summary: "Represents Southwest Dallas." },
+    { full_name: "Ben Mackey", role: "Trustee", seat: "District 7", term: "2025-2028", summary: "Listed as a Dallas ISD trustee per the official board directory." },
+  ],
+  austin_isd: [
+    { full_name: "Lynn Boswell", role: "Board President", seat: "District 5", summary: "Continued as Board President per Austin ISD Feb 2026 officer election announcement." },
+    { full_name: "Andrew Gonzales", role: "Vice President", seat: "District 6", summary: "Selected as Vice President in Austin ISD's Feb 2026 board officer election." },
+    { full_name: "Dr. Kevin Foster", role: "Secretary", seat: "District 3", summary: "Selected as Secretary in Austin ISD's Feb 2026 board officer election." },
+    { full_name: "LaRessa Quintana", role: "Trustee", seat: "District 2", term: "Term expires November 2028", summary: "Listed as one of the newest members of the Austin ISD board of trustees." },
+    { full_name: "Kathryn Whitley Chu", role: "Trustee", seat: "District 4", summary: "Listed as the District 4 trustee on Austin ISD's Members page." },
+    { full_name: "Fernando Lucas De Urioste", role: "Trustee", seat: "At-Large", summary: "Sworn in as the at-large trustee, completing the nine-member Austin ISD Board." },
+  ],
+  san_antonio_isd: [
+    { full_name: "Christina Martinez", role: "Board President", summary: "Listed as President of the San Antonio ISD Board of Trustees." },
+    { full_name: "Mike Villarreal", role: "Trustee", summary: "Listed on the San Antonio ISD Board of Trustees." },
+    { full_name: "Alicia Sebastian", role: "Trustee", summary: "Listed on the San Antonio ISD Board of Trustees." },
+    { full_name: "Jacob Ramos", role: "Trustee", summary: "Listed on the San Antonio ISD Board of Trustees." },
+    { full_name: "Arthur V. Valdez Jr.", role: "Trustee", summary: "Listed on the San Antonio ISD Board of Trustees." },
+    { full_name: "Stephanie Torres", role: "Trustee", summary: "Listed on the San Antonio ISD Board of Trustees. Censured by the board and banned from district campuses for 90 days in May 2025 per KSAT reporting." },
+    { full_name: "Ed Garza", role: "Trustee", summary: "Listed on the San Antonio ISD Board of Trustees." },
+  ],
+  fort_worth_isd: [
+    { full_name: "Roxanne Martinez", role: "Board President", summary: "Listed as President of the elected Fort Worth ISD Board of Trustees. Authority of the elected board temporarily suspended by the Texas Education Agency in March 2026 during state takeover." },
+  ],
+  katy_isd: [
+    { full_name: "Lance Redmon", role: "Board President", seat: "Position 2", summary: "Re-elected to Position 2 in May 2025 with more than 75% of the vote, then elected as board president." },
+    { full_name: "Rebecca Fox", role: "Vice President", summary: "Listed as Vice President of the Katy ISD Board." },
+    { full_name: "Dawn Champagne", role: "Secretary", summary: "Listed as Secretary of the Katy ISD Board." },
+    { full_name: "James Cross", role: "Trustee", seat: "Position 1", summary: "Elected to Position 1 in May 2025 with 58% of the vote." },
+  ],
+  cypress_fairbanks_isd: [
+    { full_name: "Tom Jackson", role: "Board President", summary: "Elected as Cy-Fair ISD Board President per the November 2025 swearing-in announcement." },
+    { full_name: "Julie Hinaman", role: "Vice President", summary: "Elected as Cy-Fair ISD Board Vice President in November 2025." },
+    { full_name: "Gilbert Sarabia", role: "Secretary", summary: "Elected as Cy-Fair ISD Board Secretary in November 2025." },
+    { full_name: "Lesley Guilmart", role: "Trustee", seat: "Position 5", term: "December 2025 - 2029", summary: "Newly elected Cy-Fair ISD trustee per November 2025 election results." },
+    { full_name: "Cleveland Lane Jr.", role: "Trustee", seat: "Position 6", term: "December 2025 - 2029", summary: "Newly elected Cy-Fair ISD trustee per November 2025 election results." },
+    { full_name: "Kendra Camarena", role: "Trustee", seat: "Position 7", term: "December 2025 - 2029", summary: "Newly elected Cy-Fair ISD trustee per November 2025 election results." },
+  ],
+  round_rock_isd: [
+    { full_name: "Tiffanie N. Harrison", role: "Former Board President", seat: "Place 6", summary: "Elected the first Black board president in district history (November 2024) and resigned the Place 6 seat on August 21, 2025. Replacement application process opened by trustees." },
+  ],
+  killeen_isd: [
+    { full_name: "Brant Williams", role: "Board President", summary: "Listed as President in the Killeen ISD August 26, 2025 regular board meeting record." },
+    { full_name: "Susan Jones", role: "Vice President", summary: "Listed as Vice President per the Killeen ISD August 26, 2025 board meeting record." },
+    { full_name: "Brenda Adams", role: "Secretary", summary: "Listed as Secretary per the Killeen ISD August 26, 2025 board meeting record." },
+    { full_name: "Marvin Rainwater", role: "Trustee", summary: "Listed as a trustee per the Killeen ISD August 26, 2025 board meeting record." },
+    { full_name: "Oliver Mintz", role: "Trustee", summary: "Listed as a trustee per the Killeen ISD August 26, 2025 board meeting record." },
+    { full_name: "Tina Capito", role: "Trustee", summary: "Listed as a trustee per the Killeen ISD August 26, 2025 board meeting record." },
+    { full_name: "Rodney Gilchrist", role: "Trustee", summary: "Listed as a trustee per the Killeen ISD August 26, 2025 board meeting record." },
+  ],
+  conroe_isd: [
+    { full_name: "Nicole May", role: "Trustee", seat: "Position 4", summary: "Sworn in to Position 4 in November 2024." },
+    { full_name: "Lindsay Dawson", role: "Trustee", seat: "Position 5", summary: "Sworn in to Position 5 in November 2024." },
+    { full_name: "Melissa Semmler", role: "Trustee", seat: "Position 6", summary: "Sworn in to Position 6 in November 2024." },
+    { full_name: "Marianne Horton", role: "Trustee", seat: "Position 7", summary: "Defeated John Robichau on November 5, 2024 to win Conroe ISD Position 7." },
+  ],
+  northside_isd: [
+    { full_name: "Dr. Karla Duran", role: "Board President", summary: "Elected as Northside ISD Board President in May 2025." },
+    { full_name: "Dr. Sonia Jasso", role: "Vice President", seat: "Single Member District 2", summary: "Elected Vice President in May 2025." },
+    { full_name: "David Salcido", role: "Secretary", summary: "Elected Secretary of the Northside ISD Board in May 2025." },
+    { full_name: "Laura Zapata", role: "Trustee", seat: "Single Member District 5", summary: "Listed as Northside ISD Single Member District 5 trustee." },
+    { full_name: "Dr. Carol Harle", role: "Trustee", seat: "District 6", summary: "Listed as Northside ISD District 6 trustee." },
+    { full_name: "Karen Freeman", role: "Trustee", seat: "District 7", summary: "Listed as Northside ISD District 7 trustee." },
+    { full_name: "Robert Blount Jr.", role: "Trustee", summary: "Longtime Northside ISD trustee and President of the Bexar County School Boards Coalition." },
   ],
 };
 
@@ -683,6 +815,17 @@ export function getDistrictInvestigationQueue(slug: string): string[] {
     tatum_isd: ["Roster currently lists only the Tatum ISD Board President (Everigester Adams Jr.). Pull the remaining trustees and seat structure from the official Our School Board page."],
     plano_isd: ["Confirm seat numbers (Place 1-7), term-end dates, and committee assignments for the seven Plano ISD trustees recognized by Region 10."],
     frisco_isd: ["Roster currently lists only the three trustees elected in May 2025 (Suresh Manduva, Renee Sample, Stephanie Elad). Pull the remaining four trustees, seat numbers, and term-end dates."],
+    houston_isd: ["HISD elected trustees do not have voting authority until at least 2027 because of the TEA-appointed Board of Managers. Track both the elected board (Districts I-IX) and the appointed managers separately. Pull the appointed Board of Managers roster from TEA and verify the four remaining elected trustees beyond the five sourced here."],
+    dallas_isd: ["Identify the current Board President for Dallas ISD (Ed Turner is listed as 1st Vice President). Confirm District 1 and District 8 trustees and verify any vacancies or recent appointments."],
+    austin_isd: ["Roster currently has 6 of the 9 trustees. Pull District 1, District 7, and the remaining at-large trustee. Confirm seat numbers and term-end dates for all members."],
+    san_antonio_isd: ["Confirm seat numbers (single-member districts 1-7) and term-end dates for each SAISD trustee. Track follow-up records on the Stephanie Torres censure vote from May 2025."],
+    fort_worth_isd: ["Pull the remaining 8 elected Fort Worth ISD trustees beyond President Roxanne Martinez. Also pull the TEA-appointed Board of Managers roster (March 2026) and track the transition period."],
+    katy_isd: ["Roster currently lists 4 of 7 Katy ISD trustees. Pull the remaining trustees in Positions 3, 4, and 5 (which are on the May 2026 ballot) and track those races for 2026 election outcomes."],
+    cypress_fairbanks_isd: ["Cy-Fair ISD November 2025 election shifted the board majority. Pull the remaining 4 trustees (Positions 1-4) beyond the 6 sourced here. Track follow-up policy votes after the slate flip."],
+    round_rock_isd: ["Round Rock ISD Place 6 is vacant after Tiffanie Harrison's August 2025 resignation. Pull the appointed replacement and the remaining 6 trustees and their term-end dates from the official board page."],
+    killeen_isd: ["Pull seat/place numbers and term-end dates for each Killeen ISD trustee. Track the search for a permanent superintendent following Dr. King Davis's interim appointment."],
+    conroe_isd: ["Roster currently lists 4 of 7 Conroe ISD trustees (Positions 4, 5, 6, 7). Pull Positions 1, 2, and 3 and the current Board President. Track follow-up records on the proposed gender-identity policy debate from 2024."],
+    northside_isd: ["Confirm seat numbers (single-member districts 1-7) and term-end dates for each Northside ISD trustee. Track May 2025 election follow-ups for the two seats incumbents lost."],
   };
 
   return [...(districtSpecific[slug] ?? []), ...base];

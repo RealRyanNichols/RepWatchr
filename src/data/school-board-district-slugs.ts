@@ -27,6 +27,17 @@ export const SCHOOL_BOARD_DISTRICT_SLUGS = [
   "tatum_isd",
   "plano_isd",
   "frisco_isd",
+  "houston_isd",
+  "dallas_isd",
+  "austin_isd",
+  "san_antonio_isd",
+  "fort_worth_isd",
+  "katy_isd",
+  "cypress_fairbanks_isd",
+  "round_rock_isd",
+  "killeen_isd",
+  "conroe_isd",
+  "northside_isd",
 ] as const;
 
 export type SchoolBoardDistrictSlug = (typeof SCHOOL_BOARD_DISTRICT_SLUGS)[number];
