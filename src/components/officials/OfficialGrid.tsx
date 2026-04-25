@@ -36,13 +36,14 @@ export default function OfficialGrid({
   const searchParams = useSearchParams();
   const urlSearch = searchParams.get("search") ?? "";
   const urlLevel = searchParams.get("level") ?? "";
+  const urlCounty = searchParams.get("county") ?? "";
 
   const [searchQuery, setSearchQuery] = useState(urlSearch);
   const [levelFilter, setLevelFilter] = useState<GovernmentLevel | "all">(
     (urlLevel as GovernmentLevel) || "all",
   );
   const [partyFilter, setPartyFilter] = useState<Party | "all">("all");
-  const [countyFilter, setCountyFilter] = useState("all");
+  const [countyFilter, setCountyFilter] = useState(urlCounty || "all");
 
   const counties = useMemo(() => {
     const set = new Set<string>();
