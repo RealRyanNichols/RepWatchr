@@ -147,7 +147,7 @@ export default function OfficialGrid({
 
       {/* Results count */}
       <p className="mb-4 text-sm text-gray-500 dark:text-gray-400">
-        Showing {filtered.length} of {officials.length} officials
+        Showing {filtered.length.toLocaleString()} of {officials.length.toLocaleString()} sourced profiles
       </p>
 
       {/* Grid */}
