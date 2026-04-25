@@ -17,6 +17,7 @@ import {
   getSchoolBoardStats,
   getShareLine,
 } from "@/lib/school-board-research";
+import { getSchoolBoardCandidateUrl, getSchoolBoardDistrictUrl } from "@/lib/school-board-urls";
 
 export const metadata: Metadata = {
   title: "School Board Watch",
@@ -175,7 +176,7 @@ export default function SchoolBoardsPage() {
           </div>
           <div className="grid gap-5 md:grid-cols-2">
             {positiveProfiles.map((candidate) => (
-              <Link key={candidate.candidate_id} href={`/school-boards/${candidate.district_slug}/${candidate.candidate_id}`} className="rounded-2xl border border-emerald-700 bg-white p-5 shadow-sm transition hover:-translate-y-0.5 hover:shadow-xl">
+              <Link key={candidate.candidate_id} href={getSchoolBoardCandidateUrl(candidate)} className="rounded-2xl border border-emerald-700 bg-white p-5 shadow-sm transition hover:-translate-y-0.5 hover:shadow-xl">
                 <p className="text-xs font-black uppercase tracking-wide text-emerald-700">Positive record</p>
                 <h3 className="mt-2 text-xl font-black text-gray-950">{candidate.preferred_name ?? candidate.full_name}</h3>
                 <p className="mt-1 text-sm font-semibold text-gray-500">{candidate.district}</p>
@@ -200,7 +201,7 @@ export default function SchoolBoardsPage() {
           {priorityDistricts.map((district) => {
             const ballotCount = district.candidates.filter((candidate) => candidate.on_2026_ballot || candidate.election_date?.includes("2026")).length;
             return (
-              <Link key={district.district_slug} href={`/school-boards/${district.district_slug}`} className="rounded-2xl border border-gray-200 bg-white p-6 shadow-sm transition hover:-translate-y-0.5 hover:border-red-200 hover:shadow-xl">
+              <Link key={district.district_slug} href={getSchoolBoardDistrictUrl(district)} className="rounded-2xl border border-gray-200 bg-white p-6 shadow-sm transition hover:-translate-y-0.5 hover:border-red-200 hover:shadow-xl">
                 <p className="text-xs font-black uppercase tracking-wide text-gray-500">{district.county} County</p>
                 <h3 className="mt-2 text-2xl font-black text-gray-950">{district.priorityRank}. {district.district}</h3>
                 <p className="mt-2 text-sm leading-6 text-gray-600">
@@ -247,7 +248,7 @@ function CandidateFeatureCard({ candidateId }: { candidateId: string }) {
   const flags = getCandidateFlags(candidate);
   const gaps = getCandidateGaps(candidate);
   return (
-    <Link href={`/school-boards/${candidate.district_slug}/${candidate.candidate_id}`} className="group rounded-2xl border border-gray-200 bg-white p-5 shadow-sm transition hover:-translate-y-0.5 hover:border-red-200 hover:shadow-xl">
+    <Link href={getSchoolBoardCandidateUrl(candidate)} className="group rounded-2xl border border-gray-200 bg-white p-5 shadow-sm transition hover:-translate-y-0.5 hover:border-red-200 hover:shadow-xl">
       <div className="flex flex-wrap gap-2"><span className="rounded-full bg-slate-100 px-3 py-1 text-xs font-black text-slate-700">{candidate.seat ?? "Seat pending"}</span><span className="rounded-full bg-amber-100 px-3 py-1 text-xs font-black text-amber-800">{candidate.status ?? "dossier"}</span></div>
       <h3 className="mt-4 text-xl font-black text-gray-950 group-hover:text-red-700">{candidate.preferred_name ?? candidate.full_name}</h3>
       <p className="mt-1 text-sm font-semibold text-gray-500">{candidate.district}</p>
