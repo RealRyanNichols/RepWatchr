@@ -7,7 +7,20 @@ export type SchoolBoardState = {
   defaultSelected?: boolean;
   districtsLoaded: number;
   profilesLoaded: number;
+  districtsTarget?: number;
+  profilesTarget?: number;
+  targetLabel?: string;
   sourcePlan: string[];
+};
+
+export const TEXAS_SCHOOL_BOARD_TARGET = {
+  districtsLabel: "All Texas school districts",
+  trusteesLabel: "7,000+ Texas trustees",
+  profilesTarget: 7000,
+  sourceTitle: "Texas Association of School Boards",
+  sourceUrl: "https://www.tasb.org/about",
+  sourceNote:
+    "TASB describes Texas school-board trustees as the largest group of publicly elected officials in the state, with more than 7,000 trustees.",
 };
 
 const nationalSourcePlan = [
@@ -69,6 +82,8 @@ export const SCHOOL_BOARD_STATES: SchoolBoardState[] = [
     defaultSelected: true,
     districtsLoaded: 0,
     profilesLoaded: 0,
+    profilesTarget: TEXAS_SCHOOL_BOARD_TARGET.profilesTarget,
+    targetLabel: TEXAS_SCHOOL_BOARD_TARGET.trusteesLabel,
     sourcePlan: [
       "TEA AskTED district directory",
       "NCES Common Core of Data district directory",
@@ -101,6 +116,11 @@ export const SCHOOL_BOARD_EXPANSION_SOURCES = [
     title: "TEA AskTED",
     url: "https://tealprod.tea.state.tx.us/tea.askted.web/Forms/Home.aspx",
     note: "Texas district, school, and personnel directory source; updated daily by TEA.",
+  },
+  {
+    title: TEXAS_SCHOOL_BOARD_TARGET.sourceTitle,
+    url: TEXAS_SCHOOL_BOARD_TARGET.sourceUrl,
+    note: TEXAS_SCHOOL_BOARD_TARGET.sourceNote,
   },
 ];
 
