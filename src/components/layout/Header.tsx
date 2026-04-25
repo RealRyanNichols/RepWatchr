@@ -26,21 +26,13 @@ export default function Header() {
       <div className="h-1 w-full bg-[linear-gradient(90deg,#bf0d3e_0%,#bf0d3e_33%,#ffffff_33%,#ffffff_66%,#002868_66%,#002868_100%)]" />
       <div className="mx-auto flex max-w-7xl items-center justify-between gap-3 px-3 py-1.5 sm:px-5 lg:px-8">
         {/* Logo / Site Name */}
-        <Link href="/" className="flex min-w-0 shrink-0 items-center gap-2 py-1 transition hover:opacity-90 sm:gap-3">
-          <span className="grid h-14 w-24 shrink-0 place-items-center overflow-hidden sm:h-16 sm:w-32 lg:h-20 lg:w-40">
+        <Link href="/" className="flex min-w-0 shrink-0 items-center py-1 transition hover:opacity-90">
+          <span className="grid h-12 w-40 shrink-0 place-items-center overflow-hidden sm:h-14 sm:w-48 lg:h-16 lg:w-56">
             <img
-              src="/images/logo.png"
-              alt="RepWatchr"
+              src="/images/repwatchr-brand-wordmark.jpg"
+              alt="RepWatchr - Know. Track. Score. Hold Accountable."
               className="h-full w-full object-contain"
             />
-          </span>
-          <span className="hidden min-w-0 leading-tight sm:block">
-            <span className="block truncate text-base font-black text-blue-950 sm:text-lg">
-              RepWatchr
-            </span>
-            <span className="block max-w-[10rem] truncate text-[9px] font-black uppercase tracking-wide text-red-700 sm:max-w-none sm:text-[10px]">
-              God. Family. Country.
-            </span>
           </span>
         </Link>
 
