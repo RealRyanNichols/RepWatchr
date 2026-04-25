@@ -3,6 +3,7 @@ import Link from "next/link";
 import CommentSection from "@/components/comments/CommentSection";
 import SchoolBoardStatePicker from "@/components/school-boards/SchoolBoardStatePicker";
 import {
+  NATIONAL_SCHOOL_BOARD_DIRECTORY_TARGET,
   SCHOOL_BOARD_EXPANSION_SOURCES,
   TEXAS_SCHOOL_BOARD_TARGET,
   getSchoolBoardStates,
@@ -30,8 +31,11 @@ export default function SchoolBoardsPage() {
   const priorityDistricts = districts.filter((district) => district.priorityRank).sort((a, b) => (a.priorityRank ?? 999) - (b.priorityRank ?? 999));
   const shareableProfiles = candidates.filter((candidate) => getCandidateFlags(candidate).length > 0 || getCandidateGoodRecords(candidate).length > 1).slice(0, 6);
   const positiveProfiles = candidates.filter((candidate) => getCandidateGoodRecords(candidate).length > 1).slice(0, 4);
+  const districtsWithSources = districts.filter((district) => (district.sourceLinks?.length ?? 0) > 0 || district.candidates.some((candidate) => (candidate.sources?.length ?? 0) > 0)).length;
+  const districtsWithRosters = districts.filter((district) => (district.officialRoster?.length ?? 0) > 0).length;
+  const profilesNeedingReview = candidates.filter((candidate) => candidate.status === "stub" || candidate.status === "needs_review").length;
   const states = getSchoolBoardStates({
-    loadedDistricts: stats.districts,
+    loadedDistricts: districtsWithSources,
     loadedProfiles: stats.candidates,
   });
 
@@ -60,17 +64,23 @@ export default function SchoolBoardsPage() {
           </div>
 
           <aside className="rounded-2xl border border-white/15 bg-white/95 p-5 shadow-2xl">
-            <p className="text-xs font-black uppercase tracking-wide text-red-700">Texas build status</p>
+            <p className="text-xs font-black uppercase tracking-wide text-red-700">Live analytics</p>
             <div className="mt-4 grid grid-cols-2 gap-3">
-              <Stat label="Verified profiles live" value={stats.candidates} />
-              <Stat label="Verified districts live" value={stats.districts} />
-              <Stat label="2026 seats" value={stats.onBallot} />
+              <Stat label="Profiles live" value={stats.candidates} />
+              <Stat label="District files live" value={stats.districts} />
+              <Stat label="Roster-backed districts" value={districtsWithRosters} />
               <Stat label="Texas trustee target" value={TEXAS_SCHOOL_BOARD_TARGET.profilesTarget} suffix="+" />
+            </div>
+            <div className="mt-3 rounded-xl border border-blue-100 bg-blue-50 p-4">
+              <p className="text-sm font-black text-blue-950">{NATIONAL_SCHOOL_BOARD_DIRECTORY_TARGET.directoryLabel}</p>
+              <p className="mt-1 text-sm leading-6 text-blue-900">
+                National district-directory records are queued from NCES. They are not counted as completed board-member profiles until a roster and sources are verified.
+              </p>
             </div>
             <div className="mt-5 rounded-xl border border-amber-200 bg-amber-50 p-4">
               <p className="text-sm font-bold text-amber-950">No fake completion</p>
               <p className="mt-1 text-sm leading-6 text-amber-900">
-                The live number is only the verified file count. The Texas target is every trustee, using TEA/district rosters and TASB's 7,000+ trustee benchmark.
+                The live number is only the sourced RepWatchr file count. Targets come from NCES, TEA/AskTED, district roster pages, and TASB's 7,000+ Texas trustee benchmark.
               </p>
             </div>
           </aside>
@@ -119,6 +129,24 @@ export default function SchoolBoardsPage() {
         </div>
       </section>
 
+      <section className="border-b border-gray-200 bg-white">
+        <div className="mx-auto grid max-w-7xl gap-5 px-4 py-10 sm:px-6 lg:grid-cols-4 lg:px-8">
+          <div className="lg:col-span-1">
+            <p className="text-sm font-black uppercase tracking-wide text-red-700">Buildout queue</p>
+            <h2 className="mt-1 text-3xl font-black text-gray-950">United States school board profiles</h2>
+            <p className="mt-2 text-sm font-semibold leading-6 text-gray-600">
+              The national system starts with directory import targets, then moves through roster verification, source links, profile photos, claim tools, and public questions.
+            </p>
+          </div>
+          <div className="grid gap-3 sm:grid-cols-2 lg:col-span-3 lg:grid-cols-4">
+            <Stat label="NCES LEA records queued" value={NATIONAL_SCHOOL_BOARD_DIRECTORY_TARGET.directoryRecords} />
+            <Stat label="Texas LEA target" value={TEXAS_SCHOOL_BOARD_TARGET.districtsTarget} />
+            <Stat label="Source-backed districts live" value={districtsWithSources} />
+            <Stat label="Profiles needing review" value={profilesNeedingReview} />
+          </div>
+        </div>
+      </section>
+
       <section id="profiles" className="mx-auto max-w-7xl px-4 py-12 sm:px-6 lg:px-8">
         <div className="mb-7 flex flex-col gap-3 sm:flex-row sm:items-end sm:justify-between">
           <div>
@@ -163,7 +191,7 @@ export default function SchoolBoardsPage() {
       <section className="mx-auto max-w-7xl px-4 py-12 sm:px-6 lg:px-8">
         <div className="mb-7">
           <p className="text-sm font-black uppercase tracking-wide text-red-700">Districts</p>
-          <h2 className="text-3xl font-black text-gray-950">Texas board rooms being verified first</h2>
+          <h2 className="text-3xl font-black text-gray-950">Board rooms being verified first</h2>
           <p className="mt-2 max-w-3xl text-sm font-semibold leading-6 text-gray-600">
             Each school needs a complete profile: official roster, terms, contact information, district colors, sources, board votes, parent questions, praise, concerns, social handles, and claim/answer tools. Profiles stay marked incomplete until those fields are sourced.
           </p>
@@ -204,8 +232,9 @@ export default function SchoolBoardsPage() {
   );
 }
 
-function Stat({ label, value, suffix = "" }: { label: string; value: number; suffix?: string }) {
-  return <div className="rounded-xl border border-gray-200 bg-white p-4"><p className="text-3xl font-black text-gray-950">{value.toLocaleString()}{suffix}</p><p className="mt-1 text-xs font-bold uppercase tracking-wide text-gray-500">{label}</p></div>;
+function Stat({ label, value, suffix = "" }: { label: string; value: number | string; suffix?: string }) {
+  const displayValue = typeof value === "number" ? value.toLocaleString() : value;
+  return <div className="rounded-xl border border-gray-200 bg-white p-4"><p className="text-3xl font-black text-gray-950">{displayValue}{suffix}</p><p className="mt-1 text-xs font-bold uppercase tracking-wide text-gray-500">{label}</p></div>;
 }
 
 function ImpactCard({ label, title, body }: { label: string; title: string; body: string }) {
