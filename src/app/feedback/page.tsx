@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import ReportButton from "@/components/shared/ReportButton";
+import { REPWATCHR_PHONE_DISPLAY, REPWATCHR_PHONE_E164 } from "@/lib/repwatchr-contact";
 
 export const metadata: Metadata = {
   title: "Submit Feedback",
@@ -17,6 +18,18 @@ export default function FeedbackPage() {
         us know and we&apos;ll fix it. You don&apos;t need an account to submit
         a report.
       </p>
+      <div className="mb-8 rounded-2xl border border-blue-100 bg-blue-50 p-4">
+        <p className="text-sm font-black uppercase tracking-wide text-blue-900">Call or text RepWatchr</p>
+        <p className="mt-1 text-lg font-black text-slate-950">{REPWATCHR_PHONE_DISPLAY}</p>
+        <div className="mt-3 flex flex-wrap gap-3">
+          <a href={`tel:${REPWATCHR_PHONE_E164}`} className="rounded-xl bg-blue-900 px-4 py-2 text-sm font-black text-white hover:bg-red-700">
+            Call
+          </a>
+          <a href={`sms:${REPWATCHR_PHONE_E164}`} className="rounded-xl border border-blue-200 bg-white px-4 py-2 text-sm font-black text-blue-950 hover:border-red-300 hover:text-red-700">
+            Text
+          </a>
+        </div>
+      </div>
 
       <ReportButton pageUrl="/feedback" />
 
