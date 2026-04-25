@@ -43,7 +43,7 @@ export default function SchoolBoardsPage() {
   return (
     <div>
       <section className="relative overflow-hidden bg-slate-950">
-        <div className="absolute inset-0 bg-[url('/images/repwatchr_cover.png')] bg-cover bg-center opacity-20" />
+        <div className="absolute inset-0 bg-[url('/images/repwatchr-brand-cover.jpg')] bg-cover bg-center opacity-20" />
         <div className="absolute inset-0 bg-gradient-to-br from-slate-950 via-slate-900/95 to-red-950/80" />
         <div className="relative mx-auto grid max-w-7xl gap-10 px-4 py-14 sm:px-6 sm:py-20 lg:grid-cols-[1.15fr_0.85fr] lg:px-8">
           <div>
