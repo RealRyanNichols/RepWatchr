@@ -4,6 +4,7 @@ import CommentSection from "@/components/comments/CommentSection";
 import SchoolBoardStatePicker from "@/components/school-boards/SchoolBoardStatePicker";
 import {
   SCHOOL_BOARD_EXPANSION_SOURCES,
+  TEXAS_SCHOOL_BOARD_TARGET,
   getSchoolBoardStates,
 } from "@/data/school-board-states";
 import {
@@ -59,17 +60,17 @@ export default function SchoolBoardsPage() {
           </div>
 
           <aside className="rounded-2xl border border-white/15 bg-white/95 p-5 shadow-2xl">
-            <p className="text-xs font-black uppercase tracking-wide text-red-700">Current dossier count</p>
+            <p className="text-xs font-black uppercase tracking-wide text-red-700">Texas build status</p>
             <div className="mt-4 grid grid-cols-2 gap-3">
-              <Stat label="Profiles" value={stats.candidates} />
-              <Stat label="Districts" value={stats.districts} />
+              <Stat label="Verified profiles live" value={stats.candidates} />
+              <Stat label="Verified districts live" value={stats.districts} />
               <Stat label="2026 seats" value={stats.onBallot} />
-              <Stat label="State indexes" value={states.length} />
+              <Stat label="Texas trustee target" value={TEXAS_SCHOOL_BOARD_TARGET.profilesTarget} suffix="+" />
             </div>
             <div className="mt-5 rounded-xl border border-amber-200 bg-amber-50 p-4">
-              <p className="text-sm font-bold text-amber-950">Reader promise</p>
+              <p className="text-sm font-bold text-amber-950">No fake completion</p>
               <p className="mt-1 text-sm leading-6 text-amber-900">
-                If the record is good, say it. If the record raises a real question, show it. If the proof is not there yet, label the gap.
+                The live number is only the verified file count. The Texas target is every trustee, using TEA/district rosters and TASB's 7,000+ trustee benchmark.
               </p>
             </div>
           </aside>
@@ -162,7 +163,10 @@ export default function SchoolBoardsPage() {
       <section className="mx-auto max-w-7xl px-4 py-12 sm:px-6 lg:px-8">
         <div className="mb-7">
           <p className="text-sm font-black uppercase tracking-wide text-red-700">Districts</p>
-          <h2 className="text-3xl font-black text-gray-950">Texas board rooms loaded first</h2>
+          <h2 className="text-3xl font-black text-gray-950">Texas board rooms being verified first</h2>
+          <p className="mt-2 max-w-3xl text-sm font-semibold leading-6 text-gray-600">
+            Each school needs a complete profile: official roster, terms, contact information, district colors, sources, board votes, parent questions, praise, concerns, social handles, and claim/answer tools. Profiles stay marked incomplete until those fields are sourced.
+          </p>
         </div>
         <div className="grid gap-5 md:grid-cols-2 lg:grid-cols-3">
           {priorityDistricts.map((district) => {
@@ -200,8 +204,8 @@ export default function SchoolBoardsPage() {
   );
 }
 
-function Stat({ label, value }: { label: string; value: number }) {
-  return <div className="rounded-xl border border-gray-200 bg-white p-4"><p className="text-3xl font-black text-gray-950">{value}</p><p className="mt-1 text-xs font-bold uppercase tracking-wide text-gray-500">{label}</p></div>;
+function Stat({ label, value, suffix = "" }: { label: string; value: number; suffix?: string }) {
+  return <div className="rounded-xl border border-gray-200 bg-white p-4"><p className="text-3xl font-black text-gray-950">{value.toLocaleString()}{suffix}</p><p className="mt-1 text-xs font-bold uppercase tracking-wide text-gray-500">{label}</p></div>;
 }
 
 function ImpactCard({ label, title, body }: { label: string; title: string; body: string }) {
