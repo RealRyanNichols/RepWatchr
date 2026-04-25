@@ -1,7 +1,7 @@
 import type { CandidateDossier, SourceLink } from "@/lib/school-board-research";
 
 export type EvidenceLabel = "FACT" | "DOCUMENTED_INFERENCE" | "REQUIRES_FURTHER_EVIDENCE";
-export type SchoolBoardEvidenceCategory = "child_safety" | "parental_rights" | "student_privacy" | "curriculum_and_books" | "transparency" | "fiscal_stewardship" | "public_service" | "political_lean";
+export type SchoolBoardEvidenceCategory = "child_safety" | "parental_rights" | "student_privacy" | "curriculum_and_books" | "transparency" | "fiscal_stewardship" | "public_service" | "faith_and_family_alignment" | "political_lean";
 export type SchoolBoardEvidenceDirection = "positive" | "negative" | "neutral";
 
 export interface SchoolBoardEvidenceItem {
@@ -38,13 +38,14 @@ export interface SchoolBoardScoreResult {
 }
 
 const CATEGORY_WEIGHTS: Record<Exclude<SchoolBoardEvidenceCategory, "political_lean">, number> = {
-  child_safety: 30,
-  parental_rights: 25,
-  student_privacy: 15,
+  child_safety: 28,
+  parental_rights: 24,
+  student_privacy: 14,
   curriculum_and_books: 10,
-  transparency: 10,
+  transparency: 9,
   fiscal_stewardship: 5,
   public_service: 5,
+  faith_and_family_alignment: 5,
 };
 
 const HARD_OVERRIDE_RULES = [
@@ -147,7 +148,7 @@ export function buildEvidenceFromDossier(candidate: CandidateDossier): SchoolBoa
   flags.forEach((flag, index) => {
     if (!flag.source_url) return;
     const text = `${flag.type ?? ""} ${flag.description}`.toLowerCase();
-    const category: SchoolBoardEvidenceCategory = text.includes("parent") ? "parental_rights" : text.includes("child") || text.includes("student") || text.includes("safety") || text.includes("discipline") ? "child_safety" : text.includes("curriculum") || text.includes("book") ? "curriculum_and_books" : text.includes("privacy") || text.includes("bathroom") || text.includes("locker") ? "student_privacy" : text.includes("tax") || text.includes("bond") || text.includes("budget") ? "fiscal_stewardship" : "transparency";
+    const category: SchoolBoardEvidenceCategory = text.includes("parent") ? "parental_rights" : text.includes("child") || text.includes("student") || text.includes("safety") || text.includes("discipline") ? "child_safety" : text.includes("curriculum") || text.includes("book") ? "curriculum_and_books" : text.includes("privacy") || text.includes("bathroom") || text.includes("locker") ? "student_privacy" : text.includes("faith") || text.includes("family") || text.includes("biblical") || text.includes("church") ? "faith_and_family_alignment" : text.includes("tax") || text.includes("bond") || text.includes("budget") ? "fiscal_stewardship" : "transparency";
     const severity = flag.severity === "critical" || flag.severity === "high" || flag.severity === "medium" || flag.severity === "low" ? flag.severity : "medium";
     const tags = [
       text.includes("hid") || text.includes("withholding") ? "hid_material_information_from_parents" : "",
@@ -172,8 +173,8 @@ export function assessPoliticalLean(candidate: CandidateDossier, evidence: Schoo
 }
 
 export const schoolBoardScoringModel = {
-  version: "2026.04.24-east-texas-v1",
+  version: "2026.04.24-school-board-watch-v2",
   weights: CATEGORY_WEIGHTS,
   hardOverrideRules: HARD_OVERRIDE_RULES,
-  evidenceRequirement: "Every score-moving item must include a public source URL and a fact label. Child-safety and parent-rights overrides require FACT or DOCUMENTED_INFERENCE evidence. A public grade stays pending until the evidence threshold is met.",
+  evidenceRequirement: "Every score-moving item must include a public source URL and a fact label. Child-safety, parent-rights, student privacy, and faith/family alignment overrides require FACT or DOCUMENTED_INFERENCE evidence. A public grade stays pending until the evidence threshold is met.",
 };
