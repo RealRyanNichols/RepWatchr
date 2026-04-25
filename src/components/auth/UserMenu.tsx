@@ -65,7 +65,7 @@ export default function UserMenu() {
       </button>
 
       {open && (
-        <div className="absolute right-0 mt-2 w-48 rounded-md border border-gray-200 bg-white py-1 shadow-lg">
+        <div className="absolute right-0 mt-2 w-56 rounded-md border border-gray-200 bg-white py-1 shadow-lg">
           <div className="border-b border-gray-100 px-4 py-2">
             <p className="truncate text-sm text-gray-900">{user.email}</p>
             {profile?.county && (
@@ -78,6 +78,27 @@ export default function UserMenu() {
             onClick={() => setOpen(false)}
           >
             My Dashboard
+          </Link>
+          <Link
+            href="/search"
+            className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-50"
+            onClick={() => setOpen(false)}
+          >
+            Search RepWatchr
+          </Link>
+          <Link
+            href="/gideon"
+            className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-50"
+            onClick={() => setOpen(false)}
+          >
+            GideonAI
+          </Link>
+          <Link
+            href="/data-reports"
+            className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-50"
+            onClick={() => setOpen(false)}
+          >
+            Data Desk
           </Link>
           <Link
             href="/dashboard/claims"

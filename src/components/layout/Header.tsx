@@ -7,6 +7,9 @@ import UserMenu from "@/components/auth/UserMenu";
 const navLinks = [
   { href: "/", label: "Home" },
   { href: "/officials", label: "Officials" },
+  { href: "/search", label: "Search" },
+  { href: "/gideon", label: "GideonAI" },
+  { href: "/data-reports", label: "Data Desk" },
   { href: "/scorecards", label: "Scorecards" },
   { href: "/votes", label: "Votes" },
   { href: "/funding", label: "Funding" },
@@ -21,17 +24,17 @@ export default function Header() {
   return (
     <header className="sticky top-0 z-50 w-full border-b border-blue-900/10 bg-white/95 shadow-sm backdrop-blur">
       <div className="h-1 w-full bg-[linear-gradient(90deg,#bf0d3e_0%,#bf0d3e_33%,#ffffff_33%,#ffffff_66%,#002868_66%,#002868_100%)]" />
-      <div className="mx-auto flex max-w-7xl items-center justify-between gap-3 px-3 py-2.5 sm:px-5 lg:px-8">
+      <div className="mx-auto flex max-w-7xl items-center justify-between gap-3 px-3 py-1.5 sm:px-5 lg:px-8">
         {/* Logo / Site Name */}
         <Link href="/" className="flex min-w-0 shrink-0 items-center gap-2 py-1 transition hover:opacity-90 sm:gap-3">
-          <span className="grid h-11 w-11 shrink-0 place-items-center overflow-hidden sm:h-14 sm:w-14">
+          <span className="grid h-14 w-24 shrink-0 place-items-center overflow-hidden sm:h-16 sm:w-32 lg:h-20 lg:w-40">
             <img
               src="/images/logo.png"
               alt="RepWatchr"
-              className="h-11 w-11 object-contain sm:h-14 sm:w-14"
+              className="h-full w-full object-contain"
             />
           </span>
-          <span className="min-w-0 leading-tight">
+          <span className="hidden min-w-0 leading-tight sm:block">
             <span className="block truncate text-base font-black text-blue-950 sm:text-lg">
               RepWatchr
             </span>
@@ -42,12 +45,12 @@ export default function Header() {
         </Link>
 
         {/* Desktop Navigation */}
-        <nav className="hidden items-center gap-0.5 rounded-full border border-blue-100 bg-blue-50/80 px-1.5 py-1.5 lg:flex">
+        <nav className="hidden items-center gap-0.5 rounded-full border border-blue-100 bg-blue-50/80 px-1.5 py-1.5 xl:flex">
           {navLinks.map((link) => (
             <Link
               key={link.href}
               href={link.href}
-              className="rounded-full px-2.5 py-1.5 text-[13px] font-black text-blue-950 transition-colors hover:bg-white hover:text-red-700"
+              className="rounded-full px-2.5 py-1.5 text-[12px] font-black text-blue-950 transition-colors hover:bg-white hover:text-red-700"
             >
               {link.label}
             </Link>
@@ -62,7 +65,7 @@ export default function Header() {
           {/* Mobile Hamburger Button */}
           <button
             type="button"
-            className="inline-flex items-center justify-center rounded-xl border border-blue-100 bg-blue-50 p-2.5 text-blue-950 shadow-sm hover:bg-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-red-500 lg:hidden"
+            className="inline-flex items-center justify-center rounded-xl border border-blue-100 bg-blue-50 p-2.5 text-blue-950 shadow-sm hover:bg-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-red-500 xl:hidden"
             onClick={() => setMenuOpen(!menuOpen)}
             aria-expanded={menuOpen}
             aria-label="Toggle navigation menu"
@@ -102,7 +105,7 @@ export default function Header() {
 
       {/* Mobile Menu */}
       {menuOpen && (
-        <nav className="border-t border-blue-100 bg-white px-4 pb-4 pt-2 lg:hidden">
+        <nav className="border-t border-blue-100 bg-white px-4 pb-4 pt-2 xl:hidden">
           <div className="flex flex-col gap-1">
             {navLinks.map((link) => (
               <Link

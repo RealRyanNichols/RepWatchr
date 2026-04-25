@@ -1,76 +1,69 @@
 // ============================================================
-// East Texas Official Tracker - Score Calculation Utilities
+// RepWatchr Score Calculation Utilities
 // ============================================================
+
+export type ScoreBand = "elite" | "strong" | "mixed" | "weak" | "bad" | "terrible";
 
 /**
  * Convert a numeric score (0-100) to a letter grade.
  *
- * Scale:
- *   A+  97-100
- *   A   93-96
- *   A-  90-92
- *   B+  87-89
- *   B   83-86
- *   B-  80-82
- *   C+  77-79
- *   C   73-76
- *   C-  70-72
- *   D+  67-69
- *   D   63-66
- *   D-  60-62
- *   F    0-59
+ * RepWatchr uses a strict accountability scale. A public official should not
+ * get "good" visual treatment for a barely passing record.
  */
 export function calculateLetterGrade(score: number): string {
-  if (score >= 97) return "A+";
-  if (score >= 93) return "A";
+  if (score >= 98) return "A+";
+  if (score >= 95) return "A";
   if (score >= 90) return "A-";
-  if (score >= 87) return "B+";
-  if (score >= 83) return "B";
-  if (score >= 80) return "B-";
-  if (score >= 77) return "C+";
-  if (score >= 73) return "C";
-  if (score >= 70) return "C-";
-  if (score >= 67) return "D+";
-  if (score >= 63) return "D";
-  if (score >= 60) return "D-";
+  if (score >= 85) return "B";
+  if (score >= 80) return "C";
+  if (score >= 70) return "D";
   return "F";
 }
 
 /**
- * Return a Tailwind CSS color class appropriate for the given letter grade.
- *
- *   A range  -> green
- *   B range  -> blue
- *   C range  -> yellow
- *   D range  -> orange
- *   F        -> red
+ * The visible color is tied to the numeric score, not a stored letter grade.
+ * 100 is the best green. 0 is the worst red. The curve is intentionally strict:
+ * scores in the 70s still read as warning colors, not "pretty good."
  */
-export function getGradeColor(letterGrade: string): string {
-  const base = letterGrade.charAt(0).toUpperCase();
+export function getScoreColor(score: number): string {
+  const normalized = clampScore(score) / 100;
+  const hue = Math.round(120 * Math.pow(normalized, 3.5));
+  const lightness = Math.round(42 - normalized * 10);
+  return `hsl(${hue} 84% ${lightness}%)`;
+}
 
-  switch (base) {
-    case "A":
-      return "text-green-600";
-    case "B":
-      return "text-blue-600";
-    case "C":
-      return "text-yellow-600";
-    case "D":
-      return "text-orange-600";
-    case "F":
-      return "text-red-600";
-    default:
-      return "text-gray-600";
-  }
+export function getScoreSurfaceStyle(score: number) {
+  const normalized = clampScore(score) / 100;
+  const hue = Math.round(120 * Math.pow(normalized, 3.5));
+
+  return {
+    backgroundColor: `hsl(${hue} 88% 94%)`,
+    borderColor: `hsl(${hue} 76% 45%)`,
+    color: `hsl(${hue} 82% 22%)`,
+  };
+}
+
+export function getScoreBand(score: number): ScoreBand {
+  if (score >= 95) return "elite";
+  if (score >= 90) return "strong";
+  if (score >= 80) return "mixed";
+  if (score >= 70) return "weak";
+  if (score >= 60) return "bad";
+  return "terrible";
+}
+
+export function clampScore(score: number): number {
+  return Math.max(0, Math.min(100, Math.round(score)));
 }
 
 /**
  * Return a human-readable descriptor for a numeric score.
  */
 export function getScoreDescription(score: number): string {
-  if (score >= 90) return "Excellent";
-  if (score >= 80) return "Good";
-  if (score >= 70) return "Average";
-  if (score >= 60) return "Below Average";
-  return "Poor";
+  if (score >= 95) return "Elite";
+  if (score >= 90) return "Strong";
+  if (score >= 80) return "Mixed";
+  if (score >= 70) return "Weak record";
+  if (score >= 60) return "Bad record";
+  return "Terrible record";
 }

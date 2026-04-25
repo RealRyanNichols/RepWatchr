@@ -3,6 +3,7 @@ import Link from "next/link";
 import { getAllOfficials, getAllScoreCards, getIssueCategories } from "@/lib/data";
 import LetterGradeBadge from "@/components/scores/LetterGradeBadge";
 import PartyBadge from "@/components/officials/PartyBadge";
+import { calculateLetterGrade } from "@/lib/scoring";
 
 const categoryKeyMap: Record<string, string> = {
   "water-rights": "waterRights",
@@ -136,7 +137,7 @@ export default async function CategoryScorecardPage({
                     {official.position}
                   </td>
                   <td className="px-4 py-4 text-center">
-                    <LetterGradeBadge grade={catScore.letterGrade} />
+                    <LetterGradeBadge grade={calculateLetterGrade(catScore.score)} score={catScore.score} />
                   </td>
                   <td className="px-4 py-4 text-center text-sm text-gray-700">
                     {catScore.score}/100

@@ -3,14 +3,7 @@
 import { useState } from "react";
 import type { CategoryScore, IssueCategory } from "@/types";
 import LetterGradeBadge from "@/components/scores/LetterGradeBadge";
-
-const barColorMap: Record<string, string> = {
-  A: "bg-green-500",
-  B: "bg-blue-500",
-  C: "bg-yellow-500",
-  D: "bg-orange-500",
-  F: "bg-red-500",
-};
+import { calculateLetterGrade, getScoreColor } from "@/lib/scoring";
 
 interface CategoryBreakdownProps {
   categories: Record<string, CategoryScore>;
@@ -39,8 +32,8 @@ export default function CategoryBreakdown({
     <div className="space-y-3">
       {categoryEntries.map(([key, cat]) => {
         const isOpen = expanded === key;
-        const gradeKey = cat.letterGrade.charAt(0).toUpperCase();
-        const barColor = barColorMap[gradeKey] ?? "bg-gray-400";
+        const displayGrade = calculateLetterGrade(cat.score);
+        const barColor = getScoreColor(cat.score);
 
         return (
           <div
@@ -63,14 +56,14 @@ export default function CategoryBreakdown({
                     <span className="text-xs text-gray-500 dark:text-gray-400">
                       {cat.score}
                     </span>
-                    <LetterGradeBadge grade={cat.letterGrade} size="sm" />
+                    <LetterGradeBadge grade={displayGrade} score={cat.score} size="sm" />
                   </div>
                 </div>
                 {/* Score bar */}
                 <div className="mt-2 h-2 w-full overflow-hidden rounded-full bg-gray-200 dark:bg-gray-700">
                   <div
-                    className={`h-full rounded-full transition-all ${barColor}`}
-                    style={{ width: `${Math.max(cat.score, 2)}%` }}
+                    className="h-full rounded-full transition-all"
+                    style={{ width: `${Math.max(cat.score, 2)}%`, backgroundColor: barColor }}
                   />
                 </div>
               </div>

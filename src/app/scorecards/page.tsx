@@ -3,6 +3,7 @@ import Link from "next/link";
 import { getAllOfficials, getAllScoreCards, getIssueCategories } from "@/lib/data";
 import LetterGradeBadge from "@/components/scores/LetterGradeBadge";
 import PartyBadge from "@/components/officials/PartyBadge";
+import { calculateLetterGrade, getScoreDescription } from "@/lib/scoring";
 
 export const metadata: Metadata = {
   title: "Scorecards",
@@ -114,9 +115,9 @@ export default function ScorecardsPage() {
                       )}
                     </td>
                     <td className="px-4 py-4 text-center">
-                      <LetterGradeBadge grade={scoreCard.letterGrade} />
+                      <LetterGradeBadge grade={calculateLetterGrade(scoreCard.overall)} score={scoreCard.overall} />
                       <div className="text-xs text-gray-500 mt-1">
-                        {scoreCard.overall}
+                        {scoreCard.overall} - {getScoreDescription(scoreCard.overall)}
                       </div>
                     </td>
                     {categoryKeys.map((key) => (
@@ -125,7 +126,8 @@ export default function ScorecardsPage() {
                         className="px-4 py-4 text-center hidden lg:table-cell"
                       >
                         <LetterGradeBadge
-                          grade={scoreCard.categories[key].letterGrade}
+                          grade={calculateLetterGrade(scoreCard.categories[key].score)}
+                          score={scoreCard.categories[key].score}
                           size="sm"
                         />
                       </td>

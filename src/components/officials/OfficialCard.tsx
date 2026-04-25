@@ -50,7 +50,7 @@ export default function OfficialCard({
           </div>
           {scoreCard && (
             <div className="ml-3 shrink-0">
-              <LetterGradeBadge grade={scoreCard.letterGrade} />
+              <LetterGradeBadge grade={scoreCard.letterGrade} score={scoreCard.overall} />
             </div>
           )}
         </div>

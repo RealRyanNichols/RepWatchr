@@ -2,6 +2,9 @@ import Link from "next/link";
 
 const quickLinks = [
   { href: "/officials", label: "Officials" },
+  { href: "/search", label: "Search" },
+  { href: "/gideon", label: "GideonAI" },
+  { href: "/data-reports", label: "Data Desk" },
   { href: "/news", label: "News" },
   { href: "/scorecards", label: "Scorecards" },
   { href: "/votes", label: "Votes" },
@@ -65,7 +68,9 @@ export default function Footer() {
               Data Sources
             </h4>
             <p className="mt-3 text-sm leading-relaxed text-gray-600 dark:text-gray-400">
-              Data sourced from FEC, Texas Ethics Commission, Open States
+              Data sourced from public records, official government sites,
+              election sources, FEC, Texas Ethics Commission, Open States, and
+              reviewed submissions where labeled.
             </p>
           </div>
         </div>

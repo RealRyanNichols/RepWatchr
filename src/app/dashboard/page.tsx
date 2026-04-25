@@ -1,9 +1,11 @@
 "use client";
 
-import { useState, useEffect } from "react";
+import { useMemo, useState, useEffect } from "react";
 import Link from "next/link";
 import { useAuth } from "@/components/auth/AuthProvider";
 import { createClient } from "@/lib/supabase";
+import MemberCommandCenter from "@/components/dashboard/MemberCommandCenter";
+import MemberProfilePanel from "@/components/dashboard/MemberProfilePanel";
 
 interface VoteRecord {
   official_id: string;
@@ -15,7 +17,7 @@ export default function DashboardPage() {
   const { user, profile, loading: authLoading } = useAuth();
   const [votes, setVotes] = useState<VoteRecord[]>([]);
   const [loadingVotes, setLoadingVotes] = useState(true);
-  const supabase = createClient();
+  const supabase = useMemo(() => createClient(), []);
 
   useEffect(() => {
     if (!user) return;
@@ -70,12 +72,18 @@ export default function DashboardPage() {
   }
 
   return (
-    <div className="mx-auto max-w-4xl px-4 py-8 sm:px-6 lg:px-8">
-      <h1 className="text-2xl font-bold text-gray-900">My Dashboard</h1>
+    <div className="mx-auto max-w-7xl px-4 py-8 sm:px-6 lg:px-8">
+      <div className="rounded-2xl border border-blue-100 bg-[linear-gradient(135deg,#ffffff_0%,#eff6ff_54%,#fff7ed_100%)] p-6 shadow-sm">
+        <p className="text-sm font-black uppercase tracking-wide text-red-700">Member command center</p>
+        <h1 className="mt-2 text-3xl font-black text-blue-950 sm:text-5xl">Track the people who make decisions.</h1>
+        <p className="mt-3 max-w-3xl text-sm font-semibold leading-6 text-blue-950/75">
+          Your RepWatchr workspace is where profile, tracking, map, claims, votes, and GideonAI research tools come together.
+        </p>
+      </div>
 
       {/* Profile Section */}
-      <div className="mt-6 rounded-lg border border-gray-200 bg-white p-6 shadow-sm">
-        <h2 className="text-lg font-semibold text-gray-900">Your Profile</h2>
+      <div className="mt-6 rounded-2xl border border-gray-200 bg-white p-6 shadow-sm">
+        <h2 className="text-lg font-black text-gray-900">Your Profile</h2>
         <div className="mt-3 grid grid-cols-1 gap-4 sm:grid-cols-3">
           <div>
             <p className="text-sm text-gray-500">Email</p>
@@ -157,6 +165,12 @@ export default function DashboardPage() {
           </p>
         </Link>
       </div>
+
+      <div className="mt-8">
+        <MemberProfilePanel />
+      </div>
+
+      <MemberCommandCenter />
 
       {/* Votes Section */}
       <div className="mt-8">
