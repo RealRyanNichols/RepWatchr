@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { getAllOfficials, getScoreCard, getIssueCategories, getAllNews } from "@/lib/data";
+import { getSchoolBoardStats } from "@/lib/school-board-research";
 import OfficialCard from "@/components/officials/OfficialCard";
 import SearchBar from "@/components/shared/SearchBar";
 
@@ -31,7 +32,7 @@ const levelCards = [
   {
     level: "school-board",
     title: "School Boards",
-    description: "120+ Texas ISDs",
+    description: "Sourced profiles live",
     href: "/school-boards",
   },
 ];
@@ -39,19 +40,16 @@ const levelCards = [
 export default function HomePage() {
   const officials = getAllOfficials();
   const issueCategories = getIssueCategories();
+  const schoolBoardStats = getSchoolBoardStats();
 
   // Compute real stats from data
   const counties = new Set(officials.flatMap((o) => o.county));
-  const schoolBoards = officials.filter((o) => o.level === "school-board");
-  const schoolDistricts = new Set(
-    schoolBoards.map((o) => o.jurisdiction)
-  );
 
   const stats = [
     { label: "Officials Tracked", value: String(officials.length) },
     { label: "Issue Categories", value: String(issueCategories.length) },
     { label: "Counties Covered", value: String(counties.size) },
-    { label: "School Districts", value: String(schoolDistricts.size) },
+    { label: "School Board Profiles", value: String(schoolBoardStats.candidates) },
   ];
 
   const featuredOfficials = officials
