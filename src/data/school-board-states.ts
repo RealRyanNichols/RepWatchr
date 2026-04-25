@@ -9,18 +9,36 @@ export type SchoolBoardState = {
   profilesLoaded: number;
   districtsTarget?: number;
   profilesTarget?: number;
+  directoryTarget?: number;
+  directoryTargetLabel?: string;
   targetLabel?: string;
   sourcePlan: string[];
 };
 
 export const TEXAS_SCHOOL_BOARD_TARGET = {
-  districtsLabel: "All Texas school districts",
+  districtsLabel: "1,229 open Texas LEA directory records",
   trusteesLabel: "7,000+ Texas trustees",
+  districtsTarget: 1229,
   profilesTarget: 7000,
   sourceTitle: "Texas Association of School Boards",
   sourceUrl: "https://www.tasb.org/about",
   sourceNote:
     "TASB describes Texas school-board trustees as the largest group of publicly elected officials in the state, with more than 7,000 trustees.",
+  districtSourceTitle: "NCES 2024-25 CCD preliminary LEA directory",
+  districtSourceUrl:
+    "https://nces.ed.gov/use-work/dataset/2024-25-common-core-data-ccd-preliminary-directory-files",
+  districtSourceNote:
+    "NCES preliminary 2024-25 CCD LEA directory lists 1,229 open Texas local education agency records. RepWatchr treats this as the Texas directory import target, not as verified board-member completion.",
+};
+
+export const NATIONAL_SCHOOL_BOARD_DIRECTORY_TARGET = {
+  directoryLabel: "19,155 open public LEA records",
+  directoryRecords: 19155,
+  sourceTitle: "NCES 2024-25 CCD preliminary LEA directory",
+  sourceUrl:
+    "https://nces.ed.gov/use-work/dataset/2024-25-common-core-data-ccd-preliminary-directory-files",
+  sourceNote:
+    "NCES preliminary 2024-25 CCD directory data provides national public local education agency records for import planning. Board-member profiles still require state, district, election, and official roster verification.",
 };
 
 const nationalSourcePlan = [
@@ -82,8 +100,11 @@ export const SCHOOL_BOARD_STATES: SchoolBoardState[] = [
     defaultSelected: true,
     districtsLoaded: 0,
     profilesLoaded: 0,
+    districtsTarget: TEXAS_SCHOOL_BOARD_TARGET.districtsTarget,
     profilesTarget: TEXAS_SCHOOL_BOARD_TARGET.profilesTarget,
     targetLabel: TEXAS_SCHOOL_BOARD_TARGET.trusteesLabel,
+    directoryTarget: TEXAS_SCHOOL_BOARD_TARGET.districtsTarget,
+    directoryTargetLabel: TEXAS_SCHOOL_BOARD_TARGET.districtsLabel,
     sourcePlan: [
       "TEA AskTED district directory",
       "NCES Common Core of Data district directory",
@@ -102,6 +123,16 @@ export const SCHOOL_BOARD_STATES: SchoolBoardState[] = [
 ];
 
 export const SCHOOL_BOARD_EXPANSION_SOURCES = [
+  {
+    title: NATIONAL_SCHOOL_BOARD_DIRECTORY_TARGET.sourceTitle,
+    url: NATIONAL_SCHOOL_BOARD_DIRECTORY_TARGET.sourceUrl,
+    note: NATIONAL_SCHOOL_BOARD_DIRECTORY_TARGET.sourceNote,
+  },
+  {
+    title: TEXAS_SCHOOL_BOARD_TARGET.districtSourceTitle,
+    url: TEXAS_SCHOOL_BOARD_TARGET.districtSourceUrl,
+    note: TEXAS_SCHOOL_BOARD_TARGET.districtSourceNote,
+  },
   {
     title: "NCES 2024-25 Common Core of Data directory files",
     url: "https://nces.ed.gov/use-work/dataset/2024-25-common-core-data-ccd-preliminary-directory-files",
