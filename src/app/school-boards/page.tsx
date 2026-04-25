@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import CommentSection from "@/components/comments/CommentSection";
 import SchoolBoardStatePicker from "@/components/school-boards/SchoolBoardStatePicker";
+import LiveEngagementCounter from "@/components/school-board/LiveEngagementCounter";
 import {
   NATIONAL_SCHOOL_BOARD_DIRECTORY_TARGET,
   SCHOOL_BOARD_EXPANSION_SOURCES,
@@ -33,7 +34,6 @@ export default function SchoolBoardsPage() {
   const shareableProfiles = candidates.filter((candidate) => getCandidateFlags(candidate).length > 0 || getCandidateGoodRecords(candidate).length > 1).slice(0, 6);
   const positiveProfiles = candidates.filter((candidate) => getCandidateGoodRecords(candidate).length > 1).slice(0, 4);
   const districtsWithSources = districts.filter((district) => (district.sourceLinks?.length ?? 0) > 0 || district.candidates.some((candidate) => (candidate.sources?.length ?? 0) > 0)).length;
-  const districtsWithRosters = districts.filter((district) => (district.officialRoster?.length ?? 0) > 0).length;
   const profilesNeedingReview = candidates.filter((candidate) => candidate.status === "stub" || candidate.status === "needs_review").length;
   const states = getSchoolBoardStates({
     loadedDistricts: districtsWithSources,
@@ -64,35 +64,119 @@ export default function SchoolBoardsPage() {
             </div>
           </div>
 
-          <aside className="rounded-2xl border border-white/15 bg-white/95 p-5 shadow-2xl">
-            <p className="text-xs font-black uppercase tracking-wide text-red-700">Live analytics</p>
-            <div className="mt-4 grid grid-cols-2 gap-3">
-              <Stat label="Profiles live" value={stats.candidates} />
-              <Stat label="District files live" value={stats.districts} />
-              <Stat label="Roster-backed districts" value={districtsWithRosters} />
-              <Stat label="Texas trustee target" value={TEXAS_SCHOOL_BOARD_TARGET.profilesTarget} suffix="+" />
-            </div>
-            <div className="mt-3 rounded-xl border border-blue-100 bg-blue-50 p-4">
-              <p className="text-sm font-black text-blue-950">{NATIONAL_SCHOOL_BOARD_DIRECTORY_TARGET.directoryLabel}</p>
-              <p className="mt-1 text-sm leading-6 text-blue-900">
-                National district-directory records are queued from NCES. They are not counted as completed board-member profiles until a roster and sources are verified.
-              </p>
-            </div>
-            <div className="mt-5 rounded-xl border border-amber-200 bg-amber-50 p-4">
-              <p className="text-sm font-bold text-amber-950">No fake completion</p>
-              <p className="mt-1 text-sm leading-6 text-amber-900">
-                The live number is only the sourced RepWatchr file count. Targets come from NCES, TEA/AskTED, district roster pages, and TASB's 7,000+ Texas trustee benchmark.
+          <aside className="space-y-3">
+            <LiveEngagementCounter />
+            <div className="rounded-2xl border border-white/15 bg-white/95 p-5 shadow-xl">
+              <p className="text-xs font-black uppercase tracking-wide text-red-700">Buildout coverage</p>
+              <div className="mt-3 grid grid-cols-2 gap-2">
+                <ClickableStat
+                  href="#districts"
+                  label="Districts live"
+                  value={stats.districts}
+                  caption={`${stats.districtsWithSources} source-backed`}
+                />
+                <ClickableStat
+                  href="#profiles"
+                  label="Member profiles"
+                  value={stats.candidates}
+                  caption={`${stats.completedDossiers} completed · ${stats.stubProfiles} need review`}
+                />
+                <ClickableStat
+                  href="#ballot-2026"
+                  label="On 2026 ballot"
+                  value={stats.onBallot}
+                  caption={`${stats.tracked2026Districts} districts in play`}
+                />
+                <ClickableStat
+                  href="#counties"
+                  label="Counties covered"
+                  value={stats.counties}
+                  caption={`${stats.districtsWithRosters} rostered districts`}
+                />
+              </div>
+              <p className="mt-3 text-xs leading-5 text-gray-500">
+                Texas trustee target {TEXAS_SCHOOL_BOARD_TARGET.profilesTarget.toLocaleString()}+. {NATIONAL_SCHOOL_BOARD_DIRECTORY_TARGET.directoryLabel} reference. Live numbers are sourced files only — directory placeholders are not counted.
               </p>
             </div>
           </aside>
         </div>
       </section>
 
-      <section className="border-b border-gray-200 bg-white">
-        <div className="mx-auto grid max-w-7xl gap-4 px-4 py-6 sm:grid-cols-3 sm:px-6 lg:px-8">
-          <ImpactCard label="Expose" title={`${stats.flagCount} documented voter questions`} body="Conflicts, dual roles, campaign finance concerns, and open-source red flags stay tied to source records." />
-          <ImpactCard label="Reward" title="Good records get surfaced" body="Public service, clean leadership, useful votes, and positive community work are part of the profile too." />
-          <ImpactCard label="Pressure" title={`${stats.gapCount} research gaps visible`} body="Missing filings, unverified employment, vote records, and opponent status are shown instead of hidden." />
+      <section id="analytics" className="border-b border-gray-200 bg-white">
+        <div className="mx-auto max-w-7xl px-4 py-10 sm:px-6 lg:px-8">
+          <div className="mb-6 flex flex-col gap-2 sm:flex-row sm:items-end sm:justify-between">
+            <div>
+              <p className="text-xs font-black uppercase tracking-wide text-red-700">Story so far</p>
+              <h2 className="text-3xl font-black text-gray-950">The numbers behind the watch</h2>
+            </div>
+            <p className="max-w-xl text-sm font-semibold leading-6 text-gray-600">
+              Click any tile. Each number is computed from sourced public records loaded into RepWatchr — not estimates, not stock photos, not rumor.
+            </p>
+          </div>
+          <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
+            <StoryStat
+              href="#profiles"
+              tone="blue"
+              label="Member profiles"
+              value={stats.candidates}
+              story={`${stats.completedDossiers} completed dossiers, ${stats.stubProfiles} stubs flagged for follow-up.`}
+            />
+            <StoryStat
+              href="#ballot-2026"
+              tone="red"
+              label="On 2026 ballot"
+              value={stats.onBallot}
+              story={`Across ${stats.tracked2026Districts} Texas districts that have seats up this cycle.`}
+            />
+            <StoryStat
+              href="#good-records"
+              tone="green"
+              label="Good records documented"
+              value={stats.goodRecordCount}
+              story={`${stats.membersWithGoodRecord} trustees with at least one positive record on file.`}
+            />
+            <StoryStat
+              href="#concerns"
+              tone="amber"
+              label="Voter questions / concerns"
+              value={stats.flagCount}
+              story={`${stats.membersWithFlags} trustees with at least one documented concern or conflict.`}
+            />
+            <StoryStat
+              href="#sources"
+              tone="blue"
+              label="Source links loaded"
+              value={stats.sourceCount}
+              story="Every score-moving claim ties to a public URL. No screenshots, no rumor."
+            />
+            <StoryStat
+              href="#counties"
+              tone="green"
+              label="Counties covered"
+              value={stats.counties}
+              story={`${stats.districtsWithRosters} districts have a sourced board roster loaded.`}
+            />
+            <StoryStat
+              href="#takeover"
+              tone="red"
+              label="Districts under TEA review"
+              value={stats.districtsUnderTEAReview}
+              story="Houston, Fort Worth, and any board where elected trustees lost authority."
+            />
+            <StoryStat
+              href="#gaps"
+              tone="amber"
+              label="Open research gaps"
+              value={stats.gapCount}
+              story="Missing filings, vote records, opponent status — shown publicly, not hidden."
+            />
+          </div>
+
+          <div className="mt-8 grid gap-3 sm:grid-cols-3">
+            <ImpactCard label="Expose" title={`${stats.flagCount} documented voter questions`} body="Conflicts, dual roles, campaign finance concerns, and open-source red flags stay tied to source records." />
+            <ImpactCard label="Reward" title={`${stats.goodRecordCount} good-record items`} body="Public service, clean leadership, useful votes, and positive community work are part of the profile too." />
+            <ImpactCard label="Pressure" title={`${stats.gapCount} research gaps visible`} body="Missing filings, unverified employment, vote records, and opponent status are shown instead of hidden." />
+          </div>
         </div>
       </section>
 
@@ -130,20 +214,31 @@ export default function SchoolBoardsPage() {
         </div>
       </section>
 
-      <section className="border-b border-gray-200 bg-white">
-        <div className="mx-auto grid max-w-7xl gap-5 px-4 py-10 sm:px-6 lg:grid-cols-4 lg:px-8">
-          <div className="lg:col-span-1">
-            <p className="text-sm font-black uppercase tracking-wide text-red-700">Buildout queue</p>
-            <h2 className="mt-1 text-3xl font-black text-gray-950">United States school board profiles</h2>
+      <section id="counties" className="border-b border-gray-200 bg-white">
+        <div className="mx-auto grid max-w-7xl gap-5 px-4 py-10 sm:px-6 lg:grid-cols-[0.95fr_1.05fr] lg:px-8">
+          <div>
+            <p className="text-sm font-black uppercase tracking-wide text-red-700">Coverage map</p>
+            <h2 className="mt-1 text-3xl font-black text-gray-950">{stats.counties} Texas counties · {stats.districts} districts loaded</h2>
             <p className="mt-2 text-sm font-semibold leading-6 text-gray-600">
-              The national system starts with directory import targets, then moves through roster verification, source links, profile photos, claim tools, and public questions.
+              The largest ISDs from Houston, Dallas-Fort Worth, Austin, San Antonio, plus the East Texas core. {NATIONAL_SCHOOL_BOARD_DIRECTORY_TARGET.directoryRecords.toLocaleString()} NCES records queued for the rest of the country. Texas target {TEXAS_SCHOOL_BOARD_TARGET.districtsTarget.toLocaleString()} districts.
             </p>
+            <div className="mt-4 grid grid-cols-2 gap-2 sm:grid-cols-3">
+              {Object.entries(stats.districtsByCounty)
+                .sort(([, a], [, b]) => b - a)
+                .slice(0, 12)
+                .map(([county, count]) => (
+                  <div key={county} className="rounded-lg border border-blue-100 bg-blue-50 px-3 py-2">
+                    <p className="text-xs font-bold uppercase tracking-wide text-blue-700">{county}</p>
+                    <p className="text-lg font-black text-blue-950">{count} district{count === 1 ? "" : "s"}</p>
+                  </div>
+                ))}
+            </div>
           </div>
-          <div className="grid gap-3 sm:grid-cols-2 lg:col-span-3 lg:grid-cols-4">
+          <div className="grid gap-3 sm:grid-cols-2">
             <Stat label="NCES LEA records queued" value={NATIONAL_SCHOOL_BOARD_DIRECTORY_TARGET.directoryRecords} />
             <Stat label="Texas LEA target" value={TEXAS_SCHOOL_BOARD_TARGET.districtsTarget} />
-            <Stat label="Source-backed districts live" value={districtsWithSources} />
-            <Stat label="Profiles needing review" value={profilesNeedingReview} />
+            <Stat label="Source-backed districts" value={districtsWithSources} />
+            <Stat label="Stubs flagged for review" value={profilesNeedingReview} />
           </div>
         </div>
       </section>
@@ -164,6 +259,68 @@ export default function SchoolBoardsPage() {
           ))}
         </div>
       </section>
+
+      <section id="ballot-2026" className="border-y border-red-100 bg-red-50">
+        <div className="mx-auto max-w-7xl px-4 py-10 sm:px-6 lg:px-8">
+          <div className="mb-6 flex flex-col gap-2 sm:flex-row sm:items-end sm:justify-between">
+            <div>
+              <p className="text-xs font-black uppercase tracking-wide text-red-700">2026 ballot</p>
+              <h2 className="text-3xl font-black text-red-950">{stats.onBallot} trustees up this cycle</h2>
+              <p className="mt-2 max-w-3xl text-sm font-semibold leading-6 text-red-900/80">
+                Open seats + contested races across {stats.tracked2026Districts} Texas districts. Verified Texans can vote and grade each one.
+              </p>
+            </div>
+            <Link href="/auth/signup" className="rounded-xl bg-red-700 px-5 py-2.5 text-sm font-black text-white shadow-md transition hover:-translate-y-0.5 hover:bg-red-800">
+              Sign up to vote &rarr;
+            </Link>
+          </div>
+          <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
+            {candidates
+              .filter((candidate) => candidate.on_2026_ballot || candidate.election_date?.includes("2026"))
+              .slice(0, 6)
+              .map((candidate) => (
+                <Link
+                  key={candidate.candidate_id}
+                  href={getSchoolBoardCandidateUrl(candidate)}
+                  className="rounded-2xl border border-red-200 bg-white p-5 shadow-sm transition hover:-translate-y-0.5 hover:shadow-md"
+                >
+                  <div className="flex flex-wrap gap-2">
+                    <span className="rounded-full bg-red-100 px-3 py-1 text-xs font-black text-red-700">2026 ballot</span>
+                    <span className="rounded-full bg-slate-100 px-3 py-1 text-xs font-black text-slate-700">{candidate.seat ?? "Trustee"}</span>
+                  </div>
+                  <h3 className="mt-3 text-lg font-black text-gray-950">{candidate.preferred_name ?? candidate.full_name}</h3>
+                  <p className="mt-1 text-sm font-semibold text-gray-500">{candidate.district}</p>
+                  <p className="mt-3 text-sm leading-6 text-gray-700 line-clamp-3">{getShareLine(candidate)}</p>
+                </Link>
+              ))}
+          </div>
+        </div>
+      </section>
+
+      <section id="sources" className="mx-auto max-w-7xl px-4 py-10 sm:px-6 lg:px-8">
+        <div className="rounded-2xl border border-blue-100 bg-blue-50 p-6 shadow-sm">
+          <p className="text-xs font-black uppercase tracking-wide text-blue-700">Sources</p>
+          <h2 className="mt-1 text-2xl font-black text-blue-950">{stats.sourceCount} public-record sources cited</h2>
+          <p className="mt-2 text-sm font-semibold leading-6 text-blue-900/80">
+            Every fact above traces to an official district page, election filing, board minutes, or named news source. Source URLs are loaded into each member profile so readers can verify any claim.
+          </p>
+        </div>
+      </section>
+
+      <section id="takeover" className="mx-auto max-w-7xl px-4 pb-10 sm:px-6 lg:px-8">
+        <div className="rounded-2xl border border-amber-200 bg-amber-50 p-6 shadow-sm">
+          <p className="text-xs font-black uppercase tracking-wide text-amber-800">Districts under TEA review</p>
+          <h2 className="mt-1 text-2xl font-black text-amber-950">{stats.districtsUnderTEAReview} districts where elected trustees lost authority</h2>
+          <p className="mt-2 text-sm font-semibold leading-6 text-amber-900/80">
+            Houston ISD and Fort Worth ISD elected trustees still appear on RepWatchr, but the Texas Education Agency has appointed a Board of Managers in those districts. Profiles flag the takeover so voters can track both rosters.
+          </p>
+        </div>
+      </section>
+
+      <section id="districts" />
+      <section id="good-records" />
+      <section id="concerns" />
+      <section id="gaps" />
 
       <section className="bg-emerald-950">
         <div className="mx-auto max-w-7xl px-4 py-12 sm:px-6 lg:px-8">
@@ -226,7 +383,7 @@ export default function SchoolBoardsPage() {
         </div>
       </section>
 
-      <section className="mx-auto max-w-7xl px-4 pb-12 sm:px-6 lg:px-8">
+      <section id="discussion" className="mx-auto max-w-7xl px-4 pb-12 sm:px-6 lg:px-8">
         <CommentSection officialId="school-boards-general" officialName="School Boards" />
       </section>
     </div>
@@ -236,6 +393,59 @@ export default function SchoolBoardsPage() {
 function Stat({ label, value, suffix = "" }: { label: string; value: number | string; suffix?: string }) {
   const displayValue = typeof value === "number" ? value.toLocaleString() : value;
   return <div className="rounded-xl border border-gray-200 bg-white p-4"><p className="text-3xl font-black text-gray-950">{displayValue}{suffix}</p><p className="mt-1 text-xs font-bold uppercase tracking-wide text-gray-500">{label}</p></div>;
+}
+
+function ClickableStat({ href, label, value, caption }: { href: string; label: string; value: number | string; caption?: string }) {
+  const displayValue = typeof value === "number" ? value.toLocaleString() : value;
+  return (
+    <Link
+      href={href}
+      className="rounded-xl border border-gray-200 bg-white p-3 transition hover:-translate-y-0.5 hover:border-blue-300 hover:shadow"
+    >
+      <p className="text-2xl font-black text-gray-950">{displayValue}</p>
+      <p className="mt-0.5 text-xs font-bold uppercase tracking-wide text-gray-500">{label}</p>
+      {caption ? <p className="mt-1 text-xs font-semibold text-gray-500">{caption}</p> : null}
+    </Link>
+  );
+}
+
+function StoryStat({
+  href,
+  label,
+  value,
+  story,
+  tone,
+}: {
+  href: string;
+  label: string;
+  value: number | string;
+  story: string;
+  tone: "blue" | "red" | "green" | "amber";
+}) {
+  const toneClass = {
+    blue: "border-blue-200 bg-blue-50 text-blue-950 hover:border-blue-400",
+    red: "border-red-200 bg-red-50 text-red-900 hover:border-red-400",
+    green: "border-emerald-200 bg-emerald-50 text-emerald-900 hover:border-emerald-400",
+    amber: "border-amber-200 bg-amber-50 text-amber-900 hover:border-amber-400",
+  }[tone];
+  const accent = {
+    blue: "text-blue-700",
+    red: "text-red-700",
+    green: "text-emerald-700",
+    amber: "text-amber-800",
+  }[tone];
+  const displayValue = typeof value === "number" ? value.toLocaleString() : value;
+  return (
+    <Link
+      href={href}
+      className={`group block rounded-2xl border p-5 shadow-sm transition hover:-translate-y-0.5 hover:shadow-md ${toneClass}`}
+    >
+      <p className={`text-xs font-black uppercase tracking-wide ${accent}`}>{label}</p>
+      <p className="mt-2 text-4xl font-black">{displayValue}</p>
+      <p className="mt-2 text-sm font-semibold leading-6">{story}</p>
+      <p className={`mt-3 text-xs font-bold uppercase tracking-wide opacity-80 group-hover:opacity-100 ${accent}`}>Drill in &rarr;</p>
+    </Link>
+  );
 }
 
 function ImpactCard({ label, title, body }: { label: string; title: string; body: string }) {

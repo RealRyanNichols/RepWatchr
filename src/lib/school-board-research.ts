@@ -1,5 +1,6 @@
 import fs from "fs";
 import path from "path";
+import { TEXAS_ROSTER_EXTENSIONS } from "@/data/texas-school-board-rosters";
 
 export type ResearchStatus = "initial_dossier" | "stub" | "needs_review" | "complete" | string;
 
@@ -118,7 +119,13 @@ export interface DistrictResearch {
   investigationQueue?: string[];
 }
 
-export const EAST_TEXAS_PRIORITY_DISTRICTS = [
+export interface PriorityDistrictEntry {
+  district: string;
+  district_slug: string;
+  county: string;
+}
+
+export const EAST_TEXAS_PRIORITY_DISTRICTS: PriorityDistrictEntry[] = [
   { district: "Harleton ISD", district_slug: "harleton_isd", county: "Harrison" },
   { district: "Marshall ISD", district_slug: "marshall_isd", county: "Harrison" },
   { district: "Jefferson ISD", district_slug: "jefferson_isd", county: "Marion" },
@@ -153,7 +160,20 @@ export const EAST_TEXAS_PRIORITY_DISTRICTS = [
   { district: "Killeen ISD", district_slug: "killeen_isd", county: "Bell" },
   { district: "Conroe ISD", district_slug: "conroe_isd", county: "Montgomery" },
   { district: "Northside ISD", district_slug: "northside_isd", county: "Bexar" },
-] as const;
+];
+
+// Pull every district added through the extension module into the priority
+// list, the official rosters, and the source links so a contributor can add
+// a new district by editing only `src/data/texas-school-board-rosters.ts`.
+for (const extension of TEXAS_ROSTER_EXTENSIONS) {
+  if (!EAST_TEXAS_PRIORITY_DISTRICTS.some((d) => d.district_slug === extension.district_slug)) {
+    EAST_TEXAS_PRIORITY_DISTRICTS.push({
+      district: extension.district,
+      district_slug: extension.district_slug,
+      county: extension.county,
+    });
+  }
+}
 
 const ACCESSED_DATE = "2026-04-24";
 
@@ -523,6 +543,28 @@ const OFFICIAL_ROSTERS: Record<string, OfficialRosterMember[]> = {
   ],
 };
 
+// Merge any rosters/sources contributed through the extension module.
+for (const extension of TEXAS_ROSTER_EXTENSIONS) {
+  if (!DISTRICT_SOURCES[extension.district_slug]) {
+    DISTRICT_SOURCES[extension.district_slug] = extension.sources.map((source) => ({
+      url: source.url,
+      title: source.title,
+      accessed_date: source.accessed_date ?? ACCESSED_DATE,
+      source_type: source.source_type,
+    }));
+  }
+  if (!OFFICIAL_ROSTERS[extension.district_slug]) {
+    OFFICIAL_ROSTERS[extension.district_slug] = extension.roster.map((member) => ({
+      full_name: member.full_name,
+      role: member.role,
+      seat: member.seat,
+      term: member.term,
+      occupation: member.occupation,
+      summary: member.summary,
+    }));
+  }
+}
+
 const DISTRICT_FEED: SchoolBoardFeedItem[] = [
   {
     id: "longview-police-dept-security-2025",
@@ -828,6 +870,12 @@ export function getDistrictInvestigationQueue(slug: string): string[] {
     northside_isd: ["Confirm seat numbers (single-member districts 1-7) and term-end dates for each Northside ISD trustee. Track May 2025 election follow-ups for the two seats incumbents lost."],
   };
 
+  for (const extension of TEXAS_ROSTER_EXTENSIONS) {
+    if (extension.investigationNotes?.length && !districtSpecific[extension.district_slug]) {
+      districtSpecific[extension.district_slug] = extension.investigationNotes;
+    }
+  }
+
   return [...(districtSpecific[slug] ?? []), ...base];
 }
 
@@ -880,5 +928,53 @@ export function getSchoolBoardStats() {
   const sourceCount = new Set(candidates.flatMap((candidate) => candidate.sources?.map((source) => source.url) ?? [])).size;
   const flagCount = candidates.reduce((total, candidate) => total + getCandidateFlags(candidate).length, 0);
   const gapCount = candidates.reduce((total, candidate) => total + getCandidateGaps(candidate).length, 0);
-  return { candidates: candidates.length, districts: districts.length, onBallot: onBallot.length, sourceCount, flagCount, gapCount, priorityDistricts: priorityDistricts.length, priorityStarted: priorityStarted.length };
+  const goodRecordCount = candidates.reduce((total, candidate) => total + getCandidateGoodRecords(candidate).length, 0);
+  const counties = new Set(districts.flatMap((district) => district.county.split(/[\/,]/).map((c) => c.trim()).filter(Boolean)));
+  const membersWithGoodRecord = candidates.filter((candidate) => getCandidateGoodRecords(candidate).length > 0).length;
+  const membersWithFlags = candidates.filter((candidate) => getCandidateFlags(candidate).length > 0).length;
+  const districtsWithRosters = districts.filter((district) => (district.officialRoster?.length ?? 0) > 0).length;
+  const districtsWithSources = districts.filter((district) =>
+    (district.sourceLinks?.length ?? 0) > 0 ||
+    district.candidates.some((candidate) => (candidate.sources?.length ?? 0) > 0)
+  ).length;
+  const stubProfiles = candidates.filter((candidate) => candidate.status === "stub" || candidate.status === "needs_review").length;
+  const completedDossiers = candidates.filter(
+    (candidate) => candidate.status && candidate.status !== "stub" && candidate.status !== "needs_review"
+  ).length;
+  const districtsUnderTEAReview = districts.filter((district) => {
+    const queueText = (district.investigationQueue ?? []).join(" ").toLowerCase();
+    return queueText.includes("tea") || queueText.includes("board of managers") || queueText.includes("takeover");
+  }).length;
+  const tracked2026Districts = new Set(
+    candidates
+      .filter((candidate) => candidate.on_2026_ballot || candidate.election_date?.includes("2026"))
+      .map((candidate) => candidate.district_slug)
+  ).size;
+  const districtsByCounty = districts.reduce<Record<string, number>>((acc, district) => {
+    district.county.split(/[\/,]/).map((c) => c.trim()).filter(Boolean).forEach((county) => {
+      acc[county] = (acc[county] ?? 0) + 1;
+    });
+    return acc;
+  }, {});
+  return {
+    candidates: candidates.length,
+    districts: districts.length,
+    onBallot: onBallot.length,
+    sourceCount,
+    flagCount,
+    gapCount,
+    goodRecordCount,
+    priorityDistricts: priorityDistricts.length,
+    priorityStarted: priorityStarted.length,
+    counties: counties.size,
+    membersWithGoodRecord,
+    membersWithFlags,
+    districtsWithRosters,
+    districtsWithSources,
+    stubProfiles,
+    completedDossiers,
+    districtsUnderTEAReview,
+    tracked2026Districts,
+    districtsByCounty,
+  };
 }

@@ -49,6 +49,16 @@ const districtBranding: Record<string, SchoolBoardBranding> = {
   northside_isd: { primary: "#003594", secondary: "#facc15", accent: "#eff6ff", label: "Northside ISD blue and gold" },
 };
 
+// Pull any branding contributed by the roster extension module so that
+// adding a new district through TEXAS_ROSTER_EXTENSIONS is sufficient.
+import { TEXAS_ROSTER_EXTENSIONS } from "@/data/texas-school-board-rosters";
+
+for (const extension of TEXAS_ROSTER_EXTENSIONS) {
+  if (extension.branding && !districtBranding[extension.district_slug]) {
+    districtBranding[extension.district_slug] = extension.branding;
+  }
+}
+
 export function getDistrictBranding(districtSlug: string): SchoolBoardBranding {
   return districtBranding[districtSlug] ?? defaultBranding;
 }

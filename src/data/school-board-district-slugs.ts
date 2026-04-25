@@ -38,6 +38,18 @@ export const SCHOOL_BOARD_DISTRICT_SLUGS = [
   "killeen_isd",
   "conroe_isd",
   "northside_isd",
+  "allen_isd",
+  "mckinney_isd",
+  "prosper_isd",
+  "garland_isd",
+  "mesquite_isd",
+  "richardson_isd",
+  "spring_branch_isd",
+  "fort_bend_isd",
+  "pasadena_isd",
+  "aldine_isd",
+  "leander_isd",
+  "hays_cisd",
 ] as const;
 
 export type SchoolBoardDistrictSlug = (typeof SCHOOL_BOARD_DISTRICT_SLUGS)[number];
