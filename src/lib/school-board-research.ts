@@ -59,6 +59,15 @@ export interface CandidateDossier {
   sources?: SourceLink[];
   status?: ResearchStatus;
   last_updated?: string;
+  // Silent background facts that feed scoring and political-lean assessment
+  // but are not rendered on the public profile. Use only sourced public records.
+  silent_signals?: {
+    voter_primary_history?: Array<{ year: number; party: "R" | "D" | "I" | "Other"; source_url: string }>;
+    donations?: Array<{ recipient: string; amount?: number; cycle?: string; alignment?: "right" | "left" | "center" | "nonpartisan"; source_url: string }>;
+    endorsements_received?: Array<{ from: string; alignment?: "right" | "left" | "center" | "nonpartisan"; source_url: string }>;
+    affiliations?: Array<{ organization: string; alignment?: "right" | "left" | "center" | "nonpartisan"; source_url: string }>;
+    notes?: string;
+  };
   about_public_record?: {
     complete_employment_timeline?: Array<{ employer?: string; title?: string; source_url?: string; notes?: string }>;
     affiliations_full_inventory?: Array<{ organization?: string; role?: string; years?: string; source_url?: string }>;
@@ -126,6 +135,13 @@ export const EAST_TEXAS_PRIORITY_DISTRICTS = [
   { district: "Whitehouse ISD", district_slug: "whitehouse_isd", county: "Smith" },
   { district: "Lindale ISD", district_slug: "lindale_isd", county: "Smith" },
   { district: "Tyler ISD", district_slug: "tyler_isd", county: "Smith" },
+  { district: "Athens ISD", district_slug: "athens_isd", county: "Henderson" },
+  { district: "Sulphur Springs ISD", district_slug: "sulphur_springs_isd", county: "Hopkins" },
+  { district: "Texarkana ISD", district_slug: "texarkana_isd", county: "Bowie" },
+  { district: "Henderson ISD", district_slug: "henderson_isd", county: "Rusk" },
+  { district: "Tatum ISD", district_slug: "tatum_isd", county: "Rusk" },
+  { district: "Plano ISD", district_slug: "plano_isd", county: "Collin" },
+  { district: "Frisco ISD", district_slug: "frisco_isd", county: "Collin/Denton" },
 ] as const;
 
 const ACCESSED_DATE = "2026-04-24";
@@ -188,6 +204,32 @@ const DISTRICT_SOURCES: Record<string, SourceLink[]> = {
   tyler_isd: [
     { url: "https://www.tylerisd.org/page/school-board", title: "Tyler ISD School Board", accessed_date: ACCESSED_DATE, source_type: "district_official" },
     { url: "https://www.tylerisd.org/page/school-board-elections", title: "Tyler ISD Board Elections", accessed_date: ACCESSED_DATE, source_type: "district_official" },
+  ],
+  athens_isd: [
+    { url: "https://www.athensisd.net/school_board/board_of_trustees", title: "Athens ISD Board of Trustees", accessed_date: ACCESSED_DATE, source_type: "district_official" },
+    { url: "https://core-docs.s3.us-east-1.amazonaws.com/documents/asset/uploaded_file/4025/AISD/4620750/Employee_Handbook_24-25_July_23_gm2.0.pdf", title: "Athens ISD Employee Handbook (Updated July 2024)", accessed_date: ACCESSED_DATE, source_type: "district_official" },
+  ],
+  sulphur_springs_isd: [
+    { url: "https://www.ssisd.net/about-ssisd/board-of-trustees/meet-the-board", title: "Sulphur Springs ISD Meet the Board", accessed_date: ACCESSED_DATE, source_type: "district_official" },
+    { url: "https://www.ssisd.net/about-ssisd/board-of-trustees", title: "Sulphur Springs ISD Board of Trustees", accessed_date: ACCESSED_DATE, source_type: "district_official" },
+  ],
+  texarkana_isd: [
+    { url: "https://www.txkisd.net/board-of-trustees", title: "Texarkana ISD Board of Trustees", accessed_date: ACCESSED_DATE, source_type: "district_official" },
+    { url: "https://txktoday.com/news/fred-norton-jr-concludes-18-years-of-service-on-tisd-board-of-trustees/", title: "Fred Norton Jr. Concludes 18 Years of Service on TISD Board (Texarkana Today)", accessed_date: ACCESSED_DATE, source_type: "news" },
+  ],
+  henderson_isd: [
+    { url: "https://www.hendersonisd.org/page/board-of-trustees", title: "Henderson ISD Board of Trustees", accessed_date: ACCESSED_DATE, source_type: "district_official" },
+  ],
+  tatum_isd: [
+    { url: "https://www.tatumisd.org/ourschoolboard", title: "Tatum ISD School Board", accessed_date: ACCESSED_DATE, source_type: "district_official" },
+  ],
+  plano_isd: [
+    { url: "https://www.region10.org/article/2263547", title: "Region 10 names Plano ISD Board 2025 Outstanding School Board", accessed_date: ACCESSED_DATE, source_type: "education_agency" },
+    { url: "https://www.pisd.edu", title: "Plano ISD", accessed_date: ACCESSED_DATE, source_type: "district_official" },
+  ],
+  frisco_isd: [
+    { url: "https://www.friscoisd.org/about/board-of-trustees/meet-the-board", title: "Frisco ISD Meet the Board", accessed_date: ACCESSED_DATE, source_type: "district_official" },
+    { url: "https://www.friscoisd.org/news/article/2025/05/04/voters-decide-three-seats-on-frisco-isd-board-of-trustees", title: "Frisco ISD May 2025 board election results", accessed_date: ACCESSED_DATE, source_type: "district_official" },
   ],
 };
 
@@ -299,6 +341,53 @@ const OFFICIAL_ROSTERS: Record<string, OfficialRosterMember[]> = {
   ],
   tyler_isd: [
     { full_name: "Lindsey Harrison", role: "Trustee", seat: "District 6", summary: "Appointed by trustees to fill the District 6 vacancy per Tyler ISD announcement." },
+  ],
+  athens_isd: [
+    { full_name: "Alicea Elliott", role: "President", summary: "Listed as Board President in the Athens ISD Employee Handbook (updated July 2024)." },
+    { full_name: "Eugene Buford", role: "Vice President", summary: "Listed as Vice President in the Athens ISD Employee Handbook." },
+    { full_name: "Freddie Paul", role: "Secretary", summary: "Listed as Secretary in the Athens ISD Employee Handbook." },
+    { full_name: "Margaret Richardson", role: "Trustee", summary: "Listed as a trustee in the Athens ISD Employee Handbook." },
+    { full_name: "Kelley Lee", role: "Trustee", summary: "Listed as a trustee in the Athens ISD Employee Handbook." },
+    { full_name: "Tilo Galvan", role: "Trustee", summary: "Listed as a trustee in the Athens ISD Employee Handbook." },
+    { full_name: "Gina Hunter", role: "Trustee", summary: "Listed as a trustee in the Athens ISD Employee Handbook." },
+  ],
+  sulphur_springs_isd: [
+    { full_name: "Craig Roberts", role: "Board President", summary: "Listed as President on the Sulphur Springs ISD Meet the Board page." },
+    { full_name: "Leesa Toliver", role: "Vice President", summary: "Listed as Vice President on the Sulphur Springs ISD Meet the Board page." },
+    { full_name: "Adam Teer", role: "Secretary", summary: "Listed as Secretary on the Sulphur Springs ISD Meet the Board page." },
+    { full_name: "John Campbell", role: "Trustee", summary: "Listed on the Sulphur Springs ISD Meet the Board page." },
+    { full_name: "Kati Adair", role: "Trustee", summary: "Listed on the Sulphur Springs ISD Meet the Board page." },
+    { full_name: "Brian Kelly", role: "Trustee", summary: "Listed on the Sulphur Springs ISD Meet the Board page." },
+    { full_name: "Darla Reed", role: "Trustee", summary: "Listed on the Sulphur Springs ISD Meet the Board page." },
+  ],
+  texarkana_isd: [
+    { full_name: "Wanda Boyette", role: "President", summary: "Identified as President of the TISD Board of Trustees in October 2025 reporting." },
+    { full_name: "Amy Bowers", role: "Vice President", summary: "Identified as Vice President in TISD Board reporting." },
+    { full_name: "Bryan DePriest", role: "Secretary", summary: "Identified as Secretary in TISD Board reporting." },
+    { full_name: "Paul Miller", role: "Trustee", summary: "Listed as a trustee in TISD Board reporting." },
+  ],
+  henderson_isd: [
+    { full_name: "James Holmes", role: "Board President", summary: "Listed as Board President on the Henderson ISD Board of Trustees page." },
+    { full_name: "Travis Orr", role: "Trustee", seat: "District 2", summary: "Listed as District 2 Trustee on the Henderson ISD Board of Trustees page." },
+    { full_name: "Jean Williams", role: "Secretary", seat: "District 1", summary: "Listed as District 1 Trustee and Secretary." },
+    { full_name: "Jon Johnston", role: "Trustee", seat: "At Large", summary: "Listed as At Large Trustee on the Henderson ISD Board of Trustees page." },
+  ],
+  tatum_isd: [
+    { full_name: "Everigester Adams Jr.", role: "President", summary: "Identified as President of the Tatum ISD Board of Trustees per the district's Our School Board page." },
+  ],
+  plano_isd: [
+    { full_name: "Dr. Lauren Tyra", role: "President", summary: "Listed as Plano ISD Board President per the Region 10 2025 Outstanding School Board announcement." },
+    { full_name: "Nancy Humphrey", role: "Vice President", summary: "Listed as Vice President per the Region 10 announcement." },
+    { full_name: "Tarrah Lantz", role: "Secretary", summary: "Listed as Secretary per the Region 10 announcement." },
+    { full_name: "Sam Johnson", role: "Trustee", summary: "Listed as a trustee per the Region 10 announcement." },
+    { full_name: "Michael Cook", role: "Trustee", summary: "Listed as a trustee per the Region 10 announcement." },
+    { full_name: "Elisa Klein", role: "Trustee", summary: "Listed as a trustee per the Region 10 announcement." },
+    { full_name: "Katherine Goodwin", role: "Trustee", summary: "Listed as a trustee per the Region 10 announcement." },
+  ],
+  frisco_isd: [
+    { full_name: "Suresh Manduva", role: "Trustee", summary: "Elected to a three-year term on the Frisco ISD Board in May 2025." },
+    { full_name: "Renee Sample", role: "Trustee", summary: "Elected to a three-year term on the Frisco ISD Board in May 2025." },
+    { full_name: "Stephanie Elad", role: "Trustee", summary: "Elected to a three-year term on the Frisco ISD Board in May 2025." },
   ],
 };
 
@@ -587,6 +676,13 @@ export function getDistrictInvestigationQueue(slug: string): string[] {
     whitehouse_isd: ["Confirm Dr. Conflitti's full first name and any remaining trustee not yet listed. Pull seat numbers and term dates for all seven Whitehouse ISD trustees."],
     lindale_isd: ["Pull all seven Lindale ISD trustees including seat assignments, terms, and 2026 May ballot opponents (Place 3: James Edwards Sr. vs Andy Ford)."],
     tyler_isd: ["Tyler ISD roster currently has only one confirmed trustee (Lindsey Harrison, District 6 appointment). Pull the remaining six single-member-district trustees with terms from the official school board page."],
+    athens_isd: ["Confirm seat numbers and term expirations for all seven Athens ISD trustees from the official board page; track the May 2025 bond election outcomes."],
+    sulphur_springs_isd: ["Pull seat numbers, term-end dates, and any standing committee assignments for each Sulphur Springs ISD trustee."],
+    texarkana_isd: ["Roster currently lists 4 of 7 Texarkana ISD trustees (President, VP, Secretary, plus Paul Miller). Pull the remaining at-large and geographic-district trustees and confirm Fred Norton Jr.'s successor following his October 2025 resignation."],
+    henderson_isd: ["Roster currently lists 4 of 7 Henderson ISD trustees. Pull the remaining 3 trustees (likely Districts 3, 4, and 5) and any Vice President / At-Large designation for the named trustees."],
+    tatum_isd: ["Roster currently lists only the Tatum ISD Board President (Everigester Adams Jr.). Pull the remaining trustees and seat structure from the official Our School Board page."],
+    plano_isd: ["Confirm seat numbers (Place 1-7), term-end dates, and committee assignments for the seven Plano ISD trustees recognized by Region 10."],
+    frisco_isd: ["Roster currently lists only the three trustees elected in May 2025 (Suresh Manduva, Renee Sample, Stephanie Elad). Pull the remaining four trustees, seat numbers, and term-end dates."],
   };
 
   return [...(districtSpecific[slug] ?? []), ...base];

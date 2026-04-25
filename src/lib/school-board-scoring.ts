@@ -144,6 +144,62 @@ export function buildEvidenceFromDossier(candidate: CandidateDossier): SchoolBoa
     evidence.push({ id: `${candidate.candidate_id}-vote-${index}`, category: "fiscal_stewardship", direction: "neutral", label: vote.board_outcome?.includes("REQUIRES_FURTHER_EVIDENCE") ? "REQUIRES_FURTHER_EVIDENCE" : "FACT", summary: vote.item, source_url: vote.source_url, source_title: vote.meeting_date ?? "Board vote", event_date: vote.meeting_date, severity: "medium", tags: ["board_vote"] });
   });
 
+  // Silent signals: never render publicly, but feed scoring + political lean.
+  const silent = candidate.silent_signals;
+  silent?.voter_primary_history?.forEach((entry, index) => {
+    if (!entry.source_url) return;
+    const tag = entry.party === "R" ? "republican_primary" : entry.party === "D" ? "democratic_primary" : "primary_pulled";
+    evidence.push({
+      id: `${candidate.candidate_id}-silent-primary-${index}`,
+      category: "political_lean",
+      direction: "neutral",
+      label: "FACT",
+      summary: `Pulled ${entry.party} primary ballot (${entry.year}).`,
+      source_url: entry.source_url,
+      source_title: `Primary ${entry.year}`,
+      tags: [tag, entry.party === "R" ? "votes republican" : entry.party === "D" ? "votes democrat" : ""],
+    });
+  });
+  silent?.donations?.forEach((entry, index) => {
+    if (!entry.source_url) return;
+    evidence.push({
+      id: `${candidate.candidate_id}-silent-donation-${index}`,
+      category: "political_lean",
+      direction: "neutral",
+      label: "FACT",
+      summary: `Donation to ${entry.recipient}${entry.amount ? ` ($${entry.amount})` : ""}${entry.cycle ? ` ${entry.cycle}` : ""}.`,
+      source_url: entry.source_url,
+      source_title: entry.recipient,
+      tags: [entry.alignment === "right" ? "votes republican" : entry.alignment === "left" ? "votes democrat" : ""].filter(Boolean),
+    });
+  });
+  silent?.endorsements_received?.forEach((entry, index) => {
+    if (!entry.source_url) return;
+    evidence.push({
+      id: `${candidate.candidate_id}-silent-endorsement-${index}`,
+      category: "political_lean",
+      direction: "neutral",
+      label: "FACT",
+      summary: `Endorsed by ${entry.from}.`,
+      source_url: entry.source_url,
+      source_title: entry.from,
+      tags: [entry.alignment === "right" ? "votes republican" : entry.alignment === "left" ? "votes democrat" : ""].filter(Boolean),
+    });
+  });
+  silent?.affiliations?.forEach((entry, index) => {
+    if (!entry.source_url) return;
+    evidence.push({
+      id: `${candidate.candidate_id}-silent-affiliation-${index}`,
+      category: "political_lean",
+      direction: "neutral",
+      label: "FACT",
+      summary: `Affiliated with ${entry.organization}.`,
+      source_url: entry.source_url,
+      source_title: entry.organization,
+      tags: [entry.alignment === "right" ? "votes republican" : entry.alignment === "left" ? "votes democrat" : ""].filter(Boolean),
+    });
+  });
+
   const flags = [...(candidate.red_flags ?? []), ...(candidate.about_public_record?.conflicts_of_interest_inventory ?? [])];
   flags.forEach((flag, index) => {
     if (!flag.source_url) return;

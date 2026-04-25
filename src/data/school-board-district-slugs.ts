@@ -20,6 +20,13 @@ export const SCHOOL_BOARD_DISTRICT_SLUGS = [
   "whitehouse_isd",
   "lindale_isd",
   "tyler_isd",
+  "athens_isd",
+  "sulphur_springs_isd",
+  "texarkana_isd",
+  "henderson_isd",
+  "tatum_isd",
+  "plano_isd",
+  "frisco_isd",
 ] as const;
 
 export type SchoolBoardDistrictSlug = (typeof SCHOOL_BOARD_DISTRICT_SLUGS)[number];
