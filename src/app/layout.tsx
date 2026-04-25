@@ -12,11 +12,11 @@ export const metadata: Metadata = {
     template: "%s | RepWatchr",
   },
   description:
-    "Track your elected officials in Texas. Scorecards, voting records, campaign funding, red flags, and citizen voting. The smartest way to watch your reps.",
+    "Track elected officials across the United States. Scorecards, voting records, campaign funding, red flags, school boards, and citizen questions.",
   keywords: [
     "RepWatchr",
     "elected officials",
-    "Texas",
+    "United States",
     "political scorecard",
     "voting record",
     "campaign finance",
@@ -31,16 +31,16 @@ export const metadata: Metadata = {
   openGraph: {
     title: "RepWatchr - Know Your Reps. Hold Them Accountable.",
     description:
-      "Track your elected officials in Texas. Scorecards, voting records, campaign funding, red flags, and citizen voting.",
+      "Track elected officials across the United States with scorecards, voting records, campaign funding, red flags, school boards, and citizen questions.",
     url: "https://www.repwatchr.com",
     siteName: "RepWatchr",
     locale: "en_US",
     type: "website",
     images: [
       {
-        url: "/images/icon.png",
+        url: "/images/repwatchr-brand-cover.jpg",
         width: 1200,
-        height: 1200,
+        height: 630,
         alt: "RepWatchr - Know Your Reps. Hold Them Accountable.",
       },
     ],
@@ -49,8 +49,12 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "RepWatchr - Know Your Reps. Hold Them Accountable.",
     description:
-      "Track your elected officials in Texas. Scorecards, voting records, campaign funding, and red flags.",
-    images: ["/images/icon.png"],
+      "Track elected officials across the United States with scorecards, voting records, campaign funding, and red flags.",
+    images: ["/images/repwatchr-brand-cover.jpg"],
+  },
+  icons: {
+    icon: "/images/repwatchr-brand-profile.png",
+    apple: "/images/repwatchr-brand-profile.png",
   },
   robots: {
     index: true,
