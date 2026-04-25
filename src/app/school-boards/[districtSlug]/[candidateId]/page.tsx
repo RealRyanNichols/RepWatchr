@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import ShareButtons from "@/components/shared/ShareButtons";
 import ReportButton from "@/components/shared/ReportButton";
+import ProfileOpenTracker from "@/components/shared/ProfileOpenTracker";
 import CommentSection from "@/components/comments/CommentSection";
 import ClaimProfileCta from "@/components/profile/ClaimProfileCta";
 import ClaimedProfilePanel from "@/components/profile/ClaimedProfilePanel";
@@ -98,6 +99,12 @@ export default async function CandidatePage({ params }: { params: Promise<{ dist
 
   return (
     <div className="bg-slate-50">
+      <ProfileOpenTracker
+        profileId={candidate.candidate_id}
+        profileType="school_board"
+        path={getSchoolBoardCandidateUrl(candidate)}
+        districtSlug={candidate.district_slug}
+      />
       {/* Hero */}
       <section className="border-b-4 bg-white" style={{ borderColor: branding.primary }}>
         <div className="mx-auto max-w-7xl px-4 py-8 sm:px-6 lg:px-8">
@@ -184,7 +191,7 @@ export default async function CandidatePage({ params }: { params: Promise<{ dist
 
       <ClaimedProfilePanel profileId={candidate.candidate_id} />
 
-      {/* Algorithm transparency — collapsible */}
+      {/* Algorithm transparency: collapsible */}
       <section className="mx-auto max-w-7xl px-4 pt-6 sm:px-6 lg:px-8">
         <WhyThisScore score={score} />
       </section>
@@ -208,7 +215,7 @@ export default async function CandidatePage({ params }: { params: Promise<{ dist
         </div>
       </section>
 
-      {/* Narrative — collapsible to keep page tight */}
+      {/* Narrative: collapsible to keep page tight */}
       {narrative ? (
         <section className="mx-auto max-w-4xl px-4 pb-8 sm:px-6 lg:px-8">
           <details className="group rounded-2xl border border-gray-200 bg-white p-6 shadow-sm">
@@ -259,7 +266,7 @@ export default async function CandidatePage({ params }: { params: Promise<{ dist
         <CommentSection officialId={candidate.candidate_id} officialName={candidate.preferred_name ?? candidate.full_name} />
       </section>
 
-      {/* Full file — collapsed by default to keep the surface clean */}
+      {/* Full file: collapsed by default to keep the surface clean */}
       {hasFullFile ? (
         <section className="mx-auto max-w-7xl px-4 pb-12 sm:px-6 lg:px-8">
           <details className="group rounded-2xl border border-gray-200 bg-white p-6 shadow-sm">

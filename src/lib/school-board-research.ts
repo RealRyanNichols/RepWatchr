@@ -264,7 +264,7 @@ const DISTRICT_SOURCES: Record<string, SourceLink[]> = {
   ],
   houston_isd: [
     { url: "https://www.houstonisd.org/board-governance/our-board", title: "Houston ISD Our Board", accessed_date: ACCESSED_DATE, source_type: "district_official" },
-    { url: "https://www.houstonpublicmedia.org/articles/education/2025/11/04/534984/houston-isd-board-election-results-2025/", title: "Houston Public Media — HISD November 2025 board election results", accessed_date: ACCESSED_DATE, source_type: "news" },
+    { url: "https://www.houstonpublicmedia.org/articles/education/2025/11/04/534984/houston-isd-board-election-results-2025/", title: "Houston Public Media: HISD November 2025 board election results", accessed_date: ACCESSED_DATE, source_type: "news" },
   ],
   dallas_isd: [
     { url: "https://www.dallasisd.org/board-of-trustees/board-members", title: "Dallas ISD Board Members", accessed_date: ACCESSED_DATE, source_type: "district_official" },
@@ -284,11 +284,11 @@ const DISTRICT_SOURCES: Record<string, SourceLink[]> = {
   ],
   katy_isd: [
     { url: "https://www.katyisd.org/board/board/board-members", title: "Katy ISD Board Members", accessed_date: ACCESSED_DATE, source_type: "district_official" },
-    { url: "https://coveringkaty.com/education/katy-isd-board-welcomes-new-trustee-elects-officers/", title: "Covering Katy News — Katy ISD board elects officers", accessed_date: ACCESSED_DATE, source_type: "news" },
+    { url: "https://coveringkaty.com/education/katy-isd-board-welcomes-new-trustee-elects-officers/", title: "Covering Katy News: Katy ISD board elects officers", accessed_date: ACCESSED_DATE, source_type: "news" },
   ],
   cypress_fairbanks_isd: [
-    { url: "https://www.cfisd.net/board-of-trustees/board-of-trustees1/meet-our-board", title: "Cy-Fair ISD Meet Our Board", accessed_date: ACCESSED_DATE, source_type: "district_official" },
-    { url: "https://www.click2houston.com/news/local/2025/11/05/3-new-trustees-elected-to-cypress-fairbanks-isd-school-board/", title: "Click2Houston — 3 new Cy-Fair trustees elected (Nov 2025)", accessed_date: ACCESSED_DATE, source_type: "news" },
+    { url: "https://www.cfisd.net/our-district/board-of-trustees/meet-our-board", title: "Cy-Fair ISD Meet Our Board", accessed_date: ACCESSED_DATE, source_type: "district_official" },
+    { url: "https://www.click2houston.com/news/local/2025/11/05/3-new-trustees-elected-to-cypress-fairbanks-isd-school-board/", title: "Click2Houston: 3 new Cy-Fair trustees elected (Nov 2025)", accessed_date: ACCESSED_DATE, source_type: "news" },
   ],
   round_rock_isd: [
     { url: "https://www.roundrockisd.org/about-rrisd/board-of-trustees/", title: "Round Rock ISD Board of Trustees", accessed_date: ACCESSED_DATE, source_type: "district_official" },
@@ -304,7 +304,7 @@ const DISTRICT_SOURCES: Record<string, SourceLink[]> = {
   ],
   northside_isd: [
     { url: "https://www.nisd.net/board/members", title: "Northside ISD Board Members", accessed_date: ACCESSED_DATE, source_type: "district_official" },
-    { url: "https://sanantonioreport.org/san-antonio-election-2025-northside-isd-board-results-union/", title: "San Antonio Report — May 2025 NISD board election results", accessed_date: ACCESSED_DATE, source_type: "news" },
+    { url: "https://sanantonioreport.org/san-antonio-election-2025-northside-isd-board-results-union/", title: "San Antonio Report: May 2025 NISD board election results", accessed_date: ACCESSED_DATE, source_type: "news" },
   ],
 };
 
@@ -519,12 +519,13 @@ const OFFICIAL_ROSTERS: Record<string, OfficialRosterMember[]> = {
     { full_name: "James Cross", role: "Trustee", seat: "Position 1", summary: "Elected to Position 1 in May 2025 with 58% of the vote." },
   ],
   cypress_fairbanks_isd: [
-    { full_name: "Tom Jackson", role: "Board President", summary: "Elected as Cy-Fair ISD Board President per the November 2025 swearing-in announcement." },
-    { full_name: "Julie Hinaman", role: "Vice President", summary: "Elected as Cy-Fair ISD Board Vice President in November 2025." },
-    { full_name: "Gilbert Sarabia", role: "Secretary", summary: "Elected as Cy-Fair ISD Board Secretary in November 2025." },
-    { full_name: "Lesley Guilmart", role: "Trustee", seat: "Position 5", term: "December 2025 - 2029", summary: "Newly elected Cy-Fair ISD trustee per November 2025 election results." },
-    { full_name: "Cleveland Lane Jr.", role: "Trustee", seat: "Position 6", term: "December 2025 - 2029", summary: "Newly elected Cy-Fair ISD trustee per November 2025 election results." },
-    { full_name: "Kendra Camarena", role: "Trustee", seat: "Position 7", term: "December 2025 - 2029", summary: "Newly elected Cy-Fair ISD trustee per November 2025 election results." },
+    { full_name: "Todd LeCompte", role: "Trustee", seat: "Position 1", summary: "Listed as Cypress-Fairbanks ISD Position 1 trustee on the district Meet Our Board page." },
+    { full_name: "Julie Hinaman", role: "Board President", seat: "Position 2", summary: "Listed as Cypress-Fairbanks ISD Board President and Position 2 trustee on the district Meet Our Board page." },
+    { full_name: "Justin Ray", role: "Trustee", seat: "Position 3", summary: "Listed as Cypress-Fairbanks ISD Position 3 trustee on the district Meet Our Board page." },
+    { full_name: "Christine Kalmbach", role: "Trustee", seat: "Position 4", summary: "Listed as Cypress-Fairbanks ISD Position 4 trustee on the district Meet Our Board page." },
+    { full_name: "Lesley Guilmart", role: "Secretary", seat: "Position 5", term: "December 2025 - 2029", summary: "Listed as Cypress-Fairbanks ISD Secretary and Position 5 trustee on the district Meet Our Board page." },
+    { full_name: "Dr. Cleveland Lane Jr.", role: "Vice President", seat: "Position 6", term: "December 2025 - 2029", summary: "Listed as Cypress-Fairbanks ISD Vice President and Position 6 trustee on the district Meet Our Board page." },
+    { full_name: "Kendra Camarena", role: "Trustee", seat: "Position 7", term: "December 2025 - 2029", summary: "Listed as Cypress-Fairbanks ISD Position 7 trustee on the district Meet Our Board page." },
   ],
   round_rock_isd: [
     { full_name: "Chuy Zárate", role: "Trustee", seat: "Place 1", summary: "Listed as Place 1 trustee on the Round Rock ISD Board of Trustees page." },

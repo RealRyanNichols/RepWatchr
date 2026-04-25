@@ -23,6 +23,7 @@ import GradeOfficialSection from "@/components/voting/GradeOfficialSection";
 import CommentSection from "@/components/comments/CommentSection";
 import ShareButtons from "@/components/shared/ShareButtons";
 import ReportButton from "@/components/shared/ReportButton";
+import ProfileOpenTracker from "@/components/shared/ProfileOpenTracker";
 import { getNewsByOfficialId } from "@/lib/data";
 
 export async function generateStaticParams() {
@@ -80,6 +81,12 @@ export default async function OfficialProfilePage({
 
   return (
     <div>
+      <ProfileOpenTracker
+        profileId={official.id}
+        profileType="official"
+        path={`/officials/${official.id}`}
+        level={official.level}
+      />
       {/* Hero */}
       <section
         className="border-b-4"

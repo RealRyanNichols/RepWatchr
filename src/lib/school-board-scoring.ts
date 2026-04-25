@@ -119,9 +119,9 @@ export function calculateSchoolBoardScore(candidate: CandidateDossier, evidence:
 
     let fairnessNote: string | undefined;
     if (item.tags?.includes("family_ecosystem_connection") && severity === "low") {
-      fairnessNote = "Family-ecosystem connection (sibling, cousin, in-law, etc.) — capped at low severity unless evidence shows failure to disclose under TX Local Government Code Ch. 171 or failure to recuse on a relevant vote.";
+      fairnessNote = "Family-ecosystem connection (sibling, cousin, in-law, etc.) - capped at low severity unless evidence shows failure to disclose under TX Local Government Code Ch. 171 or failure to recuse on a relevant vote.";
     } else if (item.tags?.includes("household_conflict")) {
-      fairnessNote = "Household conflict (spouse / partner / dependent) — kept at recorded severity because the financial nexus is direct.";
+      fairnessNote = "Household conflict (spouse / partner / dependent) - kept at recorded severity because the financial nexus is direct.";
     }
 
     contributions.push({

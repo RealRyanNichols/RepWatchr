@@ -28,11 +28,11 @@ export default function SchoolBoardsPage() {
   const pickerStates = buildPickerStates();
   const ballotCandidates = candidates.filter((c) => c.on_2026_ballot || c.election_date?.includes("2026"));
   const featuredDistricts = districts.slice(0, 9);
-  const sharedShareLine = "Find your Texas school board on RepWatchr — sourced trustee profiles + verified citizen votes and grades.";
+  const sharedShareLine = "Find your Texas school board on RepWatchr - sourced trustee profiles + verified citizen votes and grades.";
 
   return (
     <div className="bg-slate-50">
-      {/* HERO — light, action-first, picker dominates the top */}
+      {/* HERO - light, action-first, picker dominates the top */}
       <section className="border-b border-blue-100 bg-[linear-gradient(135deg,#ffffff_0%,#eff6ff_55%,#fff7ed_100%)]">
         <div className="mx-auto max-w-7xl px-4 py-8 sm:px-6 lg:px-8">
           <div className="flex flex-wrap items-center justify-between gap-3">
@@ -54,7 +54,7 @@ export default function SchoolBoardsPage() {
         </div>
       </section>
 
-      {/* FEATURED DISTRICTS GRID — directly below the picker */}
+      {/* FEATURED DISTRICTS GRID - directly below the picker */}
       <section id="districts" className="mx-auto max-w-7xl px-4 py-8 sm:px-6 lg:px-8">
         <div className="mb-5 flex items-end justify-between gap-3">
           <div>
@@ -88,13 +88,13 @@ export default function SchoolBoardsPage() {
         {districts.length > featuredDistricts.length ? (
           <div className="mt-5 text-center">
             <p className="text-xs font-semibold text-gray-500">
-              {districts.length - featuredDistricts.length} more districts available — use the picker above.
+              {districts.length - featuredDistricts.length} more districts available - use the picker above.
             </p>
           </div>
         ) : null}
       </section>
 
-      {/* 2026 BALLOT — election callout, urgent and clickable */}
+      {/* 2026 BALLOT - election callout, urgent and clickable */}
       {ballotCandidates.length > 0 ? (
         <section id="ballot-2026" className="border-y border-red-100 bg-red-50">
           <div className="mx-auto max-w-7xl px-4 py-8 sm:px-6 lg:px-8">
@@ -176,7 +176,7 @@ export default function SchoolBoardsPage() {
         </div>
       </section>
 
-      {/* LIVE ENGAGEMENT — moved below candidates so people see candidates first */}
+      {/* LIVE ENGAGEMENT - moved below candidates so people see candidates first */}
       <section id="sentiment" className="mx-auto max-w-7xl px-4 pb-10 sm:px-6 lg:px-8">
         <div className="mb-5">
           <p className="text-xs font-black uppercase tracking-wide text-red-700">Live activity</p>
@@ -190,7 +190,7 @@ export default function SchoolBoardsPage() {
         <CommentSection officialId="school-boards-general" officialName="School Boards" />
       </section>
 
-      {/* COLLAPSED FILLER — only for people who want it */}
+      {/* COLLAPSED FILLER - only for people who want it */}
       <section className="mx-auto max-w-7xl px-4 pb-12 sm:px-6 lg:px-8">
         <details className="group rounded-2xl border border-gray-200 bg-white p-5 shadow-sm">
           <summary className="flex cursor-pointer list-none items-center justify-between text-left">

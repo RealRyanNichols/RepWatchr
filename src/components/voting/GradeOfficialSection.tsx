@@ -43,7 +43,7 @@ interface GradeOfficialSectionProps {
 }
 
 function gpaToLetter(gpa: number | null | undefined): string {
-  if (gpa === null || gpa === undefined) return "—";
+  if (gpa === null || gpa === undefined) return "-";
   if (gpa >= 3.5) return "A";
   if (gpa >= 2.5) return "B";
   if (gpa >= 1.5) return "C";
@@ -244,7 +244,7 @@ export default function GradeOfficialSection({
           <p className="text-xs font-black uppercase tracking-wide text-gray-500">All Texas</p>
           <p className="mt-1 text-3xl font-black text-blue-950">{gpaToLetter(statewide?.gpa)}</p>
           <p className="text-xs text-gray-500">
-            GPA {statewide?.gpa?.toFixed(2) ?? "—"} · {statewide?.total_grades ?? 0} grades
+            GPA {statewide?.gpa?.toFixed(2) ?? "-"} · {statewide?.total_grades ?? 0} grades
           </p>
           <div className="mt-3"><GradeBars row={statewide} /></div>
         </div>
@@ -252,7 +252,7 @@ export default function GradeOfficialSection({
           <p className="text-xs font-black uppercase tracking-wide text-gray-500">In-district constituents</p>
           <p className="mt-1 text-3xl font-black text-red-700">{gpaToLetter(inDistrict?.gpa)}</p>
           <p className="text-xs text-gray-500">
-            GPA {inDistrict?.gpa?.toFixed(2) ?? "—"} · {inDistrict?.total_grades ?? 0} grades
+            GPA {inDistrict?.gpa?.toFixed(2) ?? "-"} · {inDistrict?.total_grades ?? 0} grades
           </p>
           <div className="mt-3"><GradeBars row={inDistrict} /></div>
         </div>

@@ -1,8 +1,10 @@
 import Link from "next/link";
 import { getAllOfficials, getScoreCard, getIssueCategories, getAllNews } from "@/lib/data";
 import { getSchoolBoardStats } from "@/lib/school-board-research";
+import { buildPickerStates } from "@/lib/picker-data";
 import OfficialCard from "@/components/officials/OfficialCard";
 import SearchBar from "@/components/shared/SearchBar";
+import DrillDownPicker from "@/components/school-board/DrillDownPicker";
 
 const levelCards = [
   {
@@ -41,6 +43,7 @@ export default function HomePage() {
   const officials = getAllOfficials();
   const issueCategories = getIssueCategories();
   const schoolBoardStats = getSchoolBoardStats();
+  const pickerStates = buildPickerStates();
 
   // Compute real stats from data
   const counties = new Set(officials.flatMap((o) => o.county));
@@ -106,16 +109,19 @@ export default function HomePage() {
               </Link>
             </div>
           </div>
-          <div className="rounded-2xl border border-blue-100 bg-white p-6 shadow-xl shadow-blue-100/70">
-            <p className="text-sm font-black uppercase tracking-wide text-red-700">Texas accountability map</p>
-            <h2 className="mt-2 text-3xl font-black text-blue-950">Local politics should be clear enough for families to follow.</h2>
-            <div className="mt-6 grid gap-3">
-              {stats.map((stat) => (
-                <div key={stat.label} className="flex items-center justify-between rounded-xl border border-blue-100 bg-blue-50 px-4 py-3">
-                  <span className="text-sm font-black text-blue-950">{stat.label}</span>
-                  <span className="text-2xl font-black text-red-700">{stat.value}</span>
-                </div>
-              ))}
+          <div className="grid gap-4">
+            <DrillDownPicker states={pickerStates} />
+            <div className="rounded-2xl border border-blue-100 bg-white p-6 shadow-xl shadow-blue-100/70">
+              <p className="text-sm font-black uppercase tracking-wide text-red-700">Texas accountability map</p>
+              <h2 className="mt-2 text-3xl font-black text-blue-950">Local politics should be clear enough for families to follow.</h2>
+              <div className="mt-6 grid gap-3">
+                {stats.map((stat) => (
+                  <div key={stat.label} className="flex items-center justify-between rounded-xl border border-blue-100 bg-blue-50 px-4 py-3">
+                    <span className="text-sm font-black text-blue-950">{stat.label}</span>
+                    <span className="text-2xl font-black text-red-700">{stat.value}</span>
+                  </div>
+                ))}
+              </div>
             </div>
           </div>
         </div>

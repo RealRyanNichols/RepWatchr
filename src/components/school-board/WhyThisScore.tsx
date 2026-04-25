@@ -36,7 +36,7 @@ export default function WhyThisScore({ score }: WhyThisScoreProps) {
         <div>
           <p className="text-xs font-black uppercase tracking-wide text-red-700">Algorithm transparency</p>
           <h3 className="mt-1 text-base font-black text-blue-950">
-            Why this score? ({grade === "Pending" ? "Pending — see below" : `${finalScore}, grade ${grade}`})
+            Why this score? ({grade === "Pending" ? "Pending - see below" : `${finalScore}, grade ${grade}`})
           </h3>
           <p className="mt-1 text-xs font-semibold text-blue-900/70">
             Every score-moving evidence item, with its weight, source, and any fairness adjustment. Click to open.

@@ -39,11 +39,11 @@ export default function BuildoutDashboardPage() {
   const report = getSchoolBoardCompletionReport();
   const stats = getSchoolBoardStats();
 
-  // Sort districts by completion ascending — show what needs work first.
+  // Sort districts by completion ascending - show what needs work first.
   const sortedDistricts = [...report.districtCompletions].sort((a, b) => a.percent - b.percent);
   const sortedMembers = [...report.candidateCompletions].sort((a, b) => a.percent - b.percent);
 
-  // Areas of the site beyond school boards. These are static for now —
+  // Areas of the site beyond school boards. These are static for now -
   // hard-coded to reflect the real state of each major surface so the
   // operator can see what's "done" vs "needs more work" at a glance.
   const siteAreas = [
@@ -249,7 +249,7 @@ export default function BuildoutDashboardPage() {
           <div className="mb-6">
             <p className="text-xs font-black uppercase tracking-wide text-red-700">Investigation queue · {stats.gapCount} open items</p>
             <h2 className="text-2xl font-black text-gray-950">Research gaps to close</h2>
-            <p className="mt-1 text-xs font-semibold text-gray-500">Top items per district — what to pull next.</p>
+            <p className="mt-1 text-xs font-semibold text-gray-500">Top items per district - what to pull next.</p>
           </div>
           <div className="grid gap-3 md:grid-cols-2 lg:grid-cols-3">
             {sortedDistricts

@@ -97,7 +97,7 @@ export const TEXAS_ROSTER_EXTENSIONS: DistrictRosterRecord[] = [
     county: "Collin",
     sources: withAccessedDate([
       { url: "https://www.mckinneyisd.net/page/board-of-trustees", title: "McKinney ISD Board of Trustees", source_type: "district_official" },
-      { url: "https://communityimpact.com/dallas-fort-worth/mckinney/education/2025/09/16/get-to-know-the-newest-mckinney-isd-school-board-trustees-corey-homer-and-kenneth-ussery/", title: "Community Impact — McKinney ISD newest trustees (Sept 2025)", source_type: "news" },
+      { url: "https://communityimpact.com/dallas-fort-worth/mckinney/education/2025/09/16/get-to-know-the-newest-mckinney-isd-school-board-trustees-corey-homer-and-kenneth-ussery/", title: "Community Impact: McKinney ISD newest trustees (Sept 2025)", source_type: "news" },
     ]),
     branding: { primary: "#0f172a", secondary: "#dc2626", accent: "#fff1f2", label: "McKinney red and black" },
     roster: [
@@ -108,7 +108,7 @@ export const TEXAS_ROSTER_EXTENSIONS: DistrictRosterRecord[] = [
       { full_name: "Kenneth Ussery", role: "Trustee", seat: "Place 2", term: "May 2025 - May 2029", summary: "Sworn in to Place 2 in May 2025." },
       { full_name: "Stephanie O'Dell", role: "Trustee", seat: "Place 6", term: "May 2023 - May 2027", summary: "Listed on the McKinney ISD Board of Trustees page." },
     ],
-    investigationNotes: ["Confirm the Place 3 trustee name (term began May 2025, expires May 2029) — name not surfaced in initial reporting."],
+    investigationNotes: ["Confirm the Place 3 trustee name (term began May 2025, expires May 2029): name not surfaced in initial reporting."],
     queueStatus: "dossiers_started",
   },
   {
@@ -117,7 +117,7 @@ export const TEXAS_ROSTER_EXTENSIONS: DistrictRosterRecord[] = [
     county: "Collin/Denton",
     sources: withAccessedDate([
       { url: "https://www.prosper-isd.net/page/prosper-isd-board-of-trustees", title: "Prosper ISD Board of Trustees", source_type: "district_official" },
-      { url: "https://starlocalmedia.com/checkout/prosper/election-2025-incumbents-maintain-seats-for-prosper-isd/article_82d52a3c-cb6a-4f46-81cd-98c4e209ea5c.html", title: "Star Local Media — Prosper ISD May 2025 election", source_type: "news" },
+      { url: "https://starlocalmedia.com/checkout/prosper/election-2025-incumbents-maintain-seats-for-prosper-isd/article_82d52a3c-cb6a-4f46-81cd-98c4e209ea5c.html", title: "Star Local Media: Prosper ISD May 2025 election", source_type: "news" },
     ]),
     branding: { primary: "#1e3a8a", secondary: "#facc15", accent: "#eff6ff", label: "Prosper Eagles blue and gold" },
     roster: [
@@ -177,7 +177,7 @@ export const TEXAS_ROSTER_EXTENSIONS: DistrictRosterRecord[] = [
     county: "Dallas/Collin",
     sources: withAccessedDate([
       { url: "https://web.risd.org/board/", title: "Richardson ISD Board of Trustees", source_type: "district_official" },
-      { url: "https://citizenportal.ai/articles/6545372/Richardson-ISD-board-reorganizes-Poteet-re-elected-president-McGowan-vice-president-Renteria-secretary", title: "RISD board reorganizes — Poteet re-elected President", source_type: "news" },
+      { url: "https://citizenportal.ai/articles/6545372/Richardson-ISD-board-reorganizes-Poteet-re-elected-president-McGowan-vice-president-Renteria-secretary", title: "RISD board reorganizes: Poteet re-elected President", source_type: "news" },
     ]),
     branding: { primary: "#dc2626", secondary: "#0f172a", accent: "#fff1f2", label: "Richardson Eagles red and black" },
     roster: [
@@ -219,7 +219,7 @@ export const TEXAS_ROSTER_EXTENSIONS: DistrictRosterRecord[] = [
     county: "Fort Bend",
     sources: withAccessedDate([
       { url: "https://www.fortbendisd.com/board", title: "Fort Bend ISD Board of Trustees", source_type: "district_official" },
-      { url: "https://communityimpact.com/houston/sugar-land-missouri-city/election/2025/05/03/afshi-charania-angie-wierzbicki-win-fort-bend-isd-trustee-races/", title: "Community Impact — Fort Bend ISD May 2025 election", source_type: "news" },
+      { url: "https://communityimpact.com/houston/sugar-land-missouri-city/election/2025/05/03/afshi-charania-angie-wierzbicki-win-fort-bend-isd-trustee-races/", title: "Community Impact: Fort Bend ISD May 2025 election", source_type: "news" },
     ]),
     branding: { primary: "#0c4a6e", secondary: "#facc15", accent: "#eef6ff", label: "Fort Bend ISD blue and gold" },
     roster: [
@@ -274,7 +274,7 @@ export const TEXAS_ROSTER_EXTENSIONS: DistrictRosterRecord[] = [
       { full_name: "Steve Moore", role: "Trustee", seat: "Position 4", summary: "Newly elected and sworn in November 2025." },
       { full_name: "Angela Williams", role: "Trustee", seat: "Position 3", summary: "Newly elected and sworn in November 2025." },
     ],
-    investigationNotes: ["Reconcile the November 2025 trustee swearing-in (Pérez P5, Moore P4, Williams P3) against the prior board roster — three of the named members may have been replaced."],
+    investigationNotes: ["Reconcile the November 2025 trustee swearing-in (Pérez P5, Moore P4, Williams P3) against the prior board roster: three of the named members may have been replaced."],
     queueStatus: "dossiers_started",
   },
   // ---- Central Texas ISDs ----
@@ -284,7 +284,7 @@ export const TEXAS_ROSTER_EXTENSIONS: DistrictRosterRecord[] = [
     county: "Williamson/Travis",
     sources: withAccessedDate([
       { url: "https://www.leanderisd.org/boardoftrustees/", title: "Leander ISD Board of Trustees", source_type: "district_official" },
-      { url: "https://news.leanderisd.org/a-message-from-lisds-board-of-trustees-executive-officers/", title: "Leander ISD — Message from Board Executive Officers", source_type: "district_official" },
+      { url: "https://news.leanderisd.org/a-message-from-lisds-board-of-trustees-executive-officers/", title: "Leander ISD: Message from Board Executive Officers", source_type: "district_official" },
     ]),
     branding: { primary: "#7c3aed", secondary: "#fbbf24", accent: "#faf5ff", label: "Leander ISD purple and gold" },
     roster: [
@@ -296,7 +296,7 @@ export const TEXAS_ROSTER_EXTENSIONS: DistrictRosterRecord[] = [
       { full_name: "Laura Marques", role: "Trustee", seat: "Place 6", term: "Nov 2025 - Nov 2026", summary: "Listed on the Leander ISD Board of Trustees page." },
       { full_name: "Paul Gauthier", role: "Trustee", seat: "Place 7", term: "Nov 2022 - Nov 2026", summary: "Listed on the Leander ISD Board of Trustees page." },
     ],
-    investigationNotes: ["Confirm Place 6 short-term seat (Nov 2025 - Nov 2026) — likely an appointment to fill a vacancy."],
+    investigationNotes: ["Confirm Place 6 short-term seat (Nov 2025 - Nov 2026): likely an appointment to fill a vacancy."],
     queueStatus: "dossiers_started",
   },
   {
@@ -305,7 +305,7 @@ export const TEXAS_ROSTER_EXTENSIONS: DistrictRosterRecord[] = [
     county: "Hays",
     sources: withAccessedDate([
       { url: "https://www.hayscisd.net/board", title: "Hays CISD Board of Trustees", source_type: "district_official" },
-      { url: "https://www.hayscisd.net/o/hhs/article/2211502", title: "Hays CISD — Board Members Swear-In and Officer Elections", source_type: "district_official" },
+      { url: "https://www.hayscisd.net/o/hhs/article/2211502", title: "Hays CISD: Board Members Swear-In and Officer Elections", source_type: "district_official" },
     ]),
     branding: { primary: "#dc2626", secondary: "#0f172a", accent: "#fff1f2", label: "Hays CISD red and black" },
     roster: [
@@ -396,8 +396,8 @@ export const TEXAS_ROSTER_EXTENSIONS: DistrictRosterRecord[] = [
     county: "Tarrant",
     sources: withAccessedDate([
       { url: "https://www.kellerisd.net/board-of-trustees", title: "Keller ISD Board of Trustees", source_type: "district_official" },
-      { url: "https://communityimpact.com/dallas-fort-worth/keller-roanoke-northeast-fort-worth/education/2025/05/14/new-keller-isd-board-members-sworn-in-birt-elected-president/", title: "Community Impact — Keller ISD board sworn in, Birt elected president (May 2025)", source_type: "news" },
-      { url: "https://fortworthreport.org/2025/12/18/special-prosecutors-appointed-in-case-to-remove-keller-isd-trustees/", title: "Fort Worth Report — Special prosecutors appointed in Keller ISD removal case (Dec 2025)", source_type: "news" },
+      { url: "https://communityimpact.com/dallas-fort-worth/keller-roanoke-northeast-fort-worth/education/2025/05/14/new-keller-isd-board-members-sworn-in-birt-elected-president/", title: "Community Impact: Keller ISD board sworn in, Birt elected president (May 2025)", source_type: "news" },
+      { url: "https://fortworthreport.org/2025/12/18/special-prosecutors-appointed-in-case-to-remove-keller-isd-trustees/", title: "Fort Worth Report: Special prosecutors appointed in Keller ISD removal case (Dec 2025)", source_type: "news" },
     ]),
     branding: { primary: "#dc2626", secondary: "#0f172a", accent: "#fff1f2", label: "Keller Indians red and black" },
     roster: [
@@ -409,6 +409,209 @@ export const TEXAS_ROSTER_EXTENSIONS: DistrictRosterRecord[] = [
       { full_name: "Chris Coker", role: "Trustee", seat: "Place 5", term: "Assumed office May 2023", summary: "Place 5 trustee in third year of first term." },
     ],
     investigationNotes: ["Place 6 is currently vacant. Track removal-petition litigation against three trustees (Dec 2025 special prosecutors appointment) and follow-up on the proposed Keller ISD split and 2025 superintendent resignation."],
+    queueStatus: "dossiers_started",
+  },
+  // ---- DFW and Houston metro expansion added 2026-04-25 ----
+  {
+    district: "Arlington ISD",
+    district_slug: "arlington_isd",
+    county: "Tarrant",
+    sources: withAccessedDate([
+      { url: "https://www.aisd.net/district/board/", title: "Arlington ISD Board of Trustees", source_type: "district_official" },
+    ]),
+    branding: { primary: "#0f172a", secondary: "#dc2626", accent: "#fff1f2", label: "Arlington ISD navy and red" },
+    roster: [
+      { full_name: "Justin Chapa", role: "Board President", seat: "Place 1", term: "May 2025 - May 2028", summary: "Listed as Arlington ISD Board President and Place 1 at-large trustee." },
+      { full_name: "Dr. Matt de Ferranti", role: "Board Vice President", seat: "Place 2", term: "May 2023 - May 2026", summary: "Listed as Arlington ISD Board Vice President and Place 2 at-large trustee." },
+      { full_name: "Aaron Reich", role: "Trustee", seat: "Place 3", term: "May 2023 - May 2026", summary: "Listed as Arlington ISD Place 3 at-large trustee." },
+      { full_name: "Dr. Steven Wurtz", role: "Trustee", seat: "Place 4", term: "May 2025 - May 2028", summary: "Listed as Arlington ISD Place 4 at-large trustee." },
+      { full_name: "Le Keishia Dawkins", role: "Trustee", seat: "Place 5", term: "May 2024 - May 2027", summary: "Listed as Arlington ISD Place 5 at-large trustee." },
+      { full_name: "Bowie Hogg", role: "Trustee", seat: "Place 6", term: "May 2024 - May 2027", summary: "Listed as Arlington ISD Place 6 at-large trustee." },
+      { full_name: "Melody Fowler", role: "Board Secretary", seat: "Place 7", term: "May 2024 - May 2027", summary: "Listed as Arlington ISD Board Secretary and Place 7 at-large trustee." },
+    ],
+    investigationNotes: ["Pull campaign finance filings, attendance records, and major 2025-2026 votes for each Arlington ISD trustee."],
+    queueStatus: "dossiers_started",
+  },
+  {
+    district: "Mansfield ISD",
+    district_slug: "mansfield_isd",
+    county: "Tarrant/Johnson/Ellis",
+    sources: withAccessedDate([
+      { url: "https://www.mansfieldisd.org/about-misd/leadership/board-of-trustees", title: "Mansfield ISD Board of Trustees", source_type: "district_official" },
+    ]),
+    branding: { primary: "#0f172a", secondary: "#facc15", accent: "#fffbe9", label: "Mansfield ISD black and gold" },
+    roster: [
+      { full_name: "Keziah Farrar", role: "Trustee", seat: "Place 1", summary: "Listed on the Mansfield ISD Board of Trustees page." },
+      { full_name: "Desirae Thomas", role: "Board President", seat: "Place 2", summary: "Listed as Mansfield ISD Board President and Place 2 trustee." },
+      { full_name: "Craig Tipping", role: "Trustee", seat: "Place 3", summary: "Listed on the Mansfield ISD Board of Trustees page." },
+      { full_name: "Michelle Newsom", role: "Vice President", seat: "Place 4", summary: "Listed as Mansfield ISD Vice President and Place 4 trustee." },
+      { full_name: "Billie Short", role: "Trustee", seat: "Place 5", summary: "Listed on the Mansfield ISD Board of Trustees page." },
+      { full_name: "Tye Sims", role: "Trustee", seat: "Place 6", summary: "Listed on the Mansfield ISD Board of Trustees page." },
+      { full_name: "Courtney Lackey Wilson", role: "Board Secretary", seat: "Place 7", summary: "Listed as Mansfield ISD Board Secretary and Place 7 trustee." },
+    ],
+    investigationNotes: ["Confirm current term-end dates and committee assignments for all Mansfield ISD trustees."],
+    queueStatus: "dossiers_started",
+  },
+  {
+    district: "Denton ISD",
+    district_slug: "denton_isd",
+    county: "Denton",
+    sources: withAccessedDate([
+      { url: "https://www.dentonisd.org/community/board-of-trustees", title: "Denton ISD Board of Trustees", source_type: "district_official" },
+    ]),
+    branding: { primary: "#1e3a8a", secondary: "#dc2626", accent: "#eff6ff", label: "Denton ISD blue and red" },
+    roster: [
+      { full_name: "Barbara Burns", role: "Board President", seat: "Place 2", summary: "Listed as Denton ISD Board President and Place 2 trustee." },
+      { full_name: "Doug Chadwick", role: "Board Secretary", seat: "Place 3", summary: "Listed as Denton ISD Board Secretary and Place 3 trustee." },
+      { full_name: "Charles Stafford", role: "Trustee", seat: "Place 4", summary: "Listed as Denton ISD Place 4 trustee." },
+      { full_name: "Erin Carter", role: "Vice President", seat: "Place 5", summary: "Listed as Denton ISD Vice President and Place 5 trustee." },
+      { full_name: "Mia Price", role: "Trustee", seat: "Place 6", summary: "Listed as Denton ISD Place 6 trustee." },
+      { full_name: "Robert Coburn", role: "Trustee", seat: "Place 7", summary: "Listed as Denton ISD Place 7 trustee." },
+    ],
+    investigationNotes: ["Place 1 was listed as vacant in the current board directory. Track vacancy appointment or election records before adding a profile."],
+    queueStatus: "dossiers_started",
+  },
+  {
+    district: "Lamar CISD",
+    district_slug: "lamar_cisd",
+    county: "Fort Bend",
+    sources: withAccessedDate([
+      { url: "https://www.lcisd.org/about/board-of-trustees", title: "Lamar CISD Board of Trustees", source_type: "district_official" },
+    ]),
+    branding: { primary: "#7c2d12", secondary: "#facc15", accent: "#fff7ed", label: "Lamar CISD maroon and gold" },
+    roster: [
+      { full_name: "Dr. Richard Barber", role: "Trustee", seat: "District 1", summary: "Listed as Lamar CISD District 1 trustee." },
+      { full_name: "Jon Welch", role: "Board Vice President", seat: "District 2", summary: "Listed as Lamar CISD Board Vice President and District 2 trustee." },
+      { full_name: "Alex Hunt", role: "Trustee", seat: "District 3", summary: "Listed as Lamar CISD District 3 trustee." },
+      { full_name: "Julie Thompson", role: "Board President", seat: "District 4", summary: "Listed as Lamar CISD Board President and District 4 trustee." },
+      { full_name: "Kathryn Kaminski", role: "Board Secretary", seat: "District 5", summary: "Listed as Lamar CISD Board Secretary and District 5 trustee." },
+      { full_name: "Joe Hubenak", role: "Trustee", seat: "District 6", summary: "Listed as Lamar CISD District 6 trustee." },
+      { full_name: "Mandi Bronsell", role: "Trustee", seat: "District 7", summary: "Listed as Lamar CISD District 7 trustee." },
+    ],
+    investigationNotes: ["Pull district map, term-end dates, campaign finance filings, and facility-growth votes for Lamar CISD trustees."],
+    queueStatus: "dossiers_started",
+  },
+  {
+    district: "Pearland ISD",
+    district_slug: "pearland_isd",
+    county: "Brazoria/Harris",
+    sources: withAccessedDate([
+      { url: "https://www.pearlandisd.org/board-of-trustees/board-bios", title: "Pearland ISD Board Bios", source_type: "district_official" },
+    ]),
+    branding: { primary: "#1e3a8a", secondary: "#facc15", accent: "#eff6ff", label: "Pearland ISD blue and gold" },
+    roster: [
+      { full_name: "Sean Murphy", role: "Trustee", seat: "Position 1", summary: "Listed as Pearland ISD Position 1 trustee." },
+      { full_name: "Kari Beth McHale", role: "Trustee", seat: "Position 2", summary: "Listed as Pearland ISD Position 2 trustee." },
+      { full_name: "Jeff Barry", role: "Trustee", seat: "Position 3", summary: "Listed as Pearland ISD Position 3 trustee." },
+      { full_name: "Robert E. \"Sean\" Murphy", role: "Trustee", seat: "Position 4", summary: "Listed as Pearland ISD Position 4 trustee." },
+      { full_name: "Toni Carter", role: "Trustee", seat: "Position 5", summary: "Listed as Pearland ISD Position 5 trustee." },
+      { full_name: "Dr. Kristofer Schoeffler", role: "Trustee", seat: "Position 6", summary: "Listed as Pearland ISD Position 6 trustee." },
+      { full_name: "Dr. Robin C. Lowe", role: "Trustee", seat: "Position 7", summary: "Listed as Pearland ISD Position 7 trustee." },
+    ],
+    investigationNotes: ["Confirm current officer roles and term-end dates for each Pearland ISD trustee."],
+    queueStatus: "dossiers_started",
+  },
+  {
+    district: "Galena Park ISD",
+    district_slug: "galena_park_isd",
+    county: "Harris",
+    sources: withAccessedDate([
+      { url: "https://www.galenaparkisd.com/district-info/board-of-trustees/meet-the-board", title: "Galena Park ISD Meet the Board", source_type: "district_official" },
+    ]),
+    branding: { primary: "#0f172a", secondary: "#dc2626", accent: "#fff1f2", label: "Galena Park ISD black and red" },
+    roster: [
+      { full_name: "Adrian Stephens", role: "Board President", summary: "Listed as Galena Park ISD Board President." },
+      { full_name: "Victor W. Mendoza", role: "Vice President", summary: "Listed as Galena Park ISD Vice President." },
+      { full_name: "Noe Esparza", role: "Secretary", summary: "Listed as Galena Park ISD Secretary." },
+      { full_name: "John Moore", role: "Assistant Secretary", summary: "Listed as Galena Park ISD Assistant Secretary." },
+      { full_name: "Dawn Fisher", role: "Trustee", summary: "Listed on the Galena Park ISD board page." },
+      { full_name: "Norma Hernandez", role: "Trustee", summary: "Listed on the Galena Park ISD board page." },
+      { full_name: "Dr. Joe D. Stephens", role: "Trustee", summary: "Listed on the Galena Park ISD board page." },
+    ],
+    investigationNotes: ["Confirm seat numbers, term-end dates, and current board committee assignments for each Galena Park ISD trustee."],
+    queueStatus: "dossiers_started",
+  },
+  {
+    district: "Deer Park ISD",
+    district_slug: "deer_park_isd",
+    county: "Harris",
+    sources: withAccessedDate([
+      { url: "https://www.dpisd.org/47749_3", title: "Deer Park ISD Board of Trustees", source_type: "district_official" },
+    ]),
+    branding: { primary: "#7c2d12", secondary: "#facc15", accent: "#fff7ed", label: "Deer Park maroon and gold" },
+    roster: [
+      { full_name: "Charles Garrison", role: "Board President", summary: "Listed as Deer Park ISD Board President." },
+      { full_name: "Rhonda Lowe", role: "Vice President", summary: "Listed as Deer Park ISD Vice President." },
+      { full_name: "Derrick Pearson", role: "Secretary", summary: "Listed as Deer Park ISD Secretary." },
+      { full_name: "Sheri Brown", role: "Assistant Secretary", summary: "Listed as Deer Park ISD Assistant Secretary." },
+      { full_name: "Jason Cable", role: "Trustee", summary: "Listed on the Deer Park ISD Board of Trustees page." },
+      { full_name: "Rhonda Roberts", role: "Trustee", summary: "Listed on the Deer Park ISD Board of Trustees page." },
+      { full_name: "Ricky Ramirez", role: "Trustee", summary: "Listed on the Deer Park ISD Board of Trustees page." },
+    ],
+    investigationNotes: ["Confirm position numbers, term-end dates, and campaign finance filing office for Deer Park ISD trustees."],
+    queueStatus: "dossiers_started",
+  },
+  {
+    district: "Clear Creek ISD",
+    district_slug: "clear_creek_isd",
+    county: "Galveston/Harris",
+    sources: withAccessedDate([
+      { url: "https://www.ccisd.net/boardoftrustees", title: "Clear Creek ISD Board of Trustees", source_type: "district_official" },
+    ]),
+    branding: { primary: "#0f172a", secondary: "#2563eb", accent: "#eff6ff", label: "Clear Creek navy and blue" },
+    roster: [
+      { full_name: "Jonathan Cottrell", role: "Board President", seat: "At-Large Position A", summary: "Listed as Clear Creek ISD Board President and At-Large Position A trustee." },
+      { full_name: "Jessica Cejka", role: "Board Vice President", seat: "District 1", summary: "Listed as Clear Creek ISD Board Vice President and District 1 trustee." },
+      { full_name: "Jeff Larson", role: "Board Secretary", seat: "District 4", summary: "Listed as Clear Creek ISD Board Secretary and District 4 trustee." },
+      { full_name: "Jay Cunningham", role: "Trustee", seat: "District 5", summary: "Listed as Clear Creek ISD District 5 trustee." },
+      { full_name: "Rebecca Lilley", role: "Trustee", seat: "At-Large Position B", summary: "Listed as Clear Creek ISD At-Large Position B trustee." },
+      { full_name: "Jamieson Mackay", role: "Trustee", seat: "District 2", summary: "Listed as Clear Creek ISD District 2 trustee." },
+      { full_name: "Arturo Sanchez", role: "Trustee", seat: "District 3", summary: "Listed as Clear Creek ISD District 3 trustee." },
+    ],
+    investigationNotes: ["District 2 and District 3 are on the May 2, 2026 ballot. Pull candidate filings and finance reports before the election window closes."],
+    queueStatus: "dossiers_started",
+  },
+  {
+    district: "Humble ISD",
+    district_slug: "humble_isd",
+    county: "Harris",
+    sources: withAccessedDate([
+      { url: "https://humbleisd.community.diligentoneplatform.com/portal/members.aspx?id=17", title: "Humble ISD Board of Trustees Members", source_type: "district_official" },
+    ]),
+    branding: { primary: "#0f172a", secondary: "#dc2626", accent: "#fff1f2", label: "Humble ISD navy and red" },
+    roster: [
+      { full_name: "Oscar Silva", role: "Board Parliamentarian", seat: "Position 1", term: "2025 - 2029", summary: "Listed as Humble ISD Position 1 trustee and Board Parliamentarian." },
+      { full_name: "Robert Scarfo", role: "Board Secretary", seat: "Position 2", term: "May 2023 - May 2027", summary: "Listed as Humble ISD Position 2 trustee and Board Secretary." },
+      { full_name: "Chris Parker", role: "Trustee", seat: "Position 3", term: "May 2021 - May 2025", summary: "Listed as Humble ISD Position 3 trustee. The directory still shows the term expiring May 2025." },
+      { full_name: "Ken Kirchhofer", role: "Trustee", seat: "Position 4", term: "May 2021 - May 2025", summary: "Listed as Humble ISD Position 4 trustee. The directory notes the incumbent is filling a vacancy until resolved under Texas Election Code Section 11.060." },
+      { full_name: "Elizabeth Shaw", role: "Trustee", seat: "Position 5", term: "2025 - 2029", summary: "Listed as Humble ISD Position 5 trustee." },
+      { full_name: "Marques Holmes", role: "Board President", seat: "Position 6", term: "May 2023 - May 2027", summary: "Listed as Humble ISD Position 6 trustee and Board President." },
+      { full_name: "Mike Grabowski", role: "Board Vice President", seat: "Position 7", term: "May 2023 - May 2027", summary: "Listed as Humble ISD Position 7 trustee and Board Vice President." },
+    ],
+    investigationNotes: ["Resolve the Position 3 and Position 4 term-expiration records, then pull 2025 election canvass documentation and finance reports."],
+    queueStatus: "dossiers_started",
+  },
+  {
+    district: "Houston ISD Board of Managers",
+    district_slug: "houston_isd_board_of_managers",
+    county: "Harris",
+    sources: withAccessedDate([
+      { url: "https://resources.finalsite.net/images/v1760451125/houstonisdorg/pww9mghsakjlq49fm4m0/TAX_CODE_SECTION_2618_amended.pdf", title: "Houston ISD Tax Code Section 26.18 Requirements", source_type: "district_official" },
+      { url: "https://tea.texas.gov/texas-schools/school-boards/school-governance/board-of-managers/houston-isd-board-of-managers", title: "TEA Houston ISD Board of Managers", source_type: "education_agency" },
+    ]),
+    branding: { primary: "#1e3a8a", secondary: "#dc2626", accent: "#eff6ff", label: "Houston ISD blue and red" },
+    roster: [
+      { full_name: "Ric Campo", role: "President", seat: "Appointed Board of Managers", term: "Appointed", summary: "Listed as Houston ISD Board of Managers President in the district's Tax Code Section 26.18 disclosure." },
+      { full_name: "Angela Lemond Flowers", role: "Vice President", seat: "Appointed Board of Managers", term: "Appointed", summary: "Listed as Houston ISD Board of Managers Vice President in the district's Tax Code Section 26.18 disclosure." },
+      { full_name: "Paula Mendoza", role: "Secretary", seat: "Appointed Board of Managers", term: "Appointed", summary: "Listed as Houston ISD Board of Managers Secretary in the district's Tax Code Section 26.18 disclosure." },
+      { full_name: "Michelle Cruz Arnold", role: "Manager", seat: "Appointed Board of Managers", term: "Appointed", summary: "Listed as a Houston ISD Board of Managers member in the district's Tax Code Section 26.18 disclosure." },
+      { full_name: "Edgar Colon", role: "Manager", seat: "Appointed Board of Managers", term: "Appointed", summary: "Listed as a Houston ISD Board of Managers member in the district's Tax Code Section 26.18 disclosure." },
+      { full_name: "Janette Garza Lindner", role: "Manager", seat: "Appointed Board of Managers", term: "Appointed", summary: "Listed as a Houston ISD Board of Managers member in the district's Tax Code Section 26.18 disclosure." },
+      { full_name: "Marty Goossen", role: "Manager", seat: "Appointed Board of Managers", term: "Appointed", summary: "Listed as a Houston ISD Board of Managers member in the district's Tax Code Section 26.18 disclosure." },
+      { full_name: "Lauren Gore", role: "Manager", seat: "Appointed Board of Managers", term: "Appointed", summary: "Listed as a Houston ISD Board of Managers member in the district's Tax Code Section 26.18 disclosure." },
+      { full_name: "Marcos Rosales", role: "Manager", seat: "Appointed Board of Managers", term: "Appointed", summary: "Listed as a Houston ISD Board of Managers member in the district's Tax Code Section 26.18 disclosure." },
+    ],
+    investigationNotes: ["Keep this separate from the elected Houston ISD trustee roster because TEA states the Board of Managers holds the authority previously held by the suspended Board of Trustees."],
     queueStatus: "dossiers_started",
   },
 ];

@@ -55,6 +55,16 @@ export const SCHOOL_BOARD_DISTRICT_SLUGS = [
   "birdville_isd",
   "hurst_euless_bedford_isd",
   "keller_isd",
+  "arlington_isd",
+  "mansfield_isd",
+  "denton_isd",
+  "lamar_cisd",
+  "pearland_isd",
+  "galena_park_isd",
+  "deer_park_isd",
+  "clear_creek_isd",
+  "humble_isd",
+  "houston_isd_board_of_managers",
 ] as const;
 
 export type SchoolBoardDistrictSlug = (typeof SCHOOL_BOARD_DISTRICT_SLUGS)[number];

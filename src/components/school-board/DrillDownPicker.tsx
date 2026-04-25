@@ -3,6 +3,7 @@
 import { useMemo, useState } from "react";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
+import { track } from "@vercel/analytics";
 import type { PickerGroup, PickerLevel, PickerMember, PickerState } from "@/lib/picker-data";
 
 interface DrillDownPickerProps {
@@ -35,14 +36,24 @@ export default function DrillDownPicker({
     setStateCode(code);
     setLevelKey("school-board");
     setGroupSlug("");
+    track("picker_drilldown", { step: "state", state: code });
   }
 
   function changeLevel(key: string) {
     setLevelKey(key);
     setGroupSlug("");
+    track("picker_drilldown", { step: "level", state: stateCode, level: key });
+  }
+
+  function changeGroup(slug: string) {
+    setGroupSlug(slug);
+    if (slug) {
+      track("picker_drilldown", { step: "district", state: stateCode, level: level?.key ?? levelKey, district_slug: slug });
+    }
   }
 
   function openMember(member: PickerMember) {
+    track("profile_open", { source: "picker", profile_id: member.id, href: member.href });
     router.push(member.href);
   }
 
@@ -50,7 +61,7 @@ export default function DrillDownPicker({
     <div className="rounded-2xl border border-blue-100 bg-white p-5 shadow-lg shadow-blue-100/40">
       <div className="flex flex-col gap-2 sm:flex-row sm:items-baseline sm:justify-between">
         <div>
-          <p className="text-xs font-black uppercase tracking-wide text-red-700">Find your rep — fast</p>
+          <p className="text-xs font-black uppercase tracking-wide text-red-700">Find your rep fast</p>
           <h2 className="text-xl font-black text-blue-950 sm:text-2xl">Pick a state, then a level, then your district.</h2>
         </div>
         <p className="text-xs font-semibold text-gray-500">Three taps. No reading required.</p>
@@ -73,9 +84,9 @@ export default function DrillDownPicker({
         <SelectField
           label={level?.key === "school-board" ? "District" : "Jurisdiction"}
           value={groupSlug}
-          onChange={(value) => setGroupSlug(value)}
+          onChange={(value) => changeGroup(value)}
           options={[
-            { value: "", label: level ? `Pick a ${level.key === "school-board" ? "district" : "jurisdiction"}…` : "—" },
+            { value: "", label: level ? `Pick a ${level.key === "school-board" ? "district" : "jurisdiction"}...` : "Unavailable" },
             ...(level?.groups ?? []).map((g) => ({
               value: g.slug,
               label: g.county ? `${g.label} (${g.county}${g.county.toLowerCase().endsWith("county") ? "" : " County"})` : g.label,
