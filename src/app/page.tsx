@@ -72,7 +72,7 @@ export default function HomePage() {
         <div className="relative mx-auto grid max-w-7xl gap-10 px-4 py-14 sm:px-6 sm:py-24 lg:grid-cols-[1fr_0.85fr] lg:px-8">
           <div className="max-w-3xl">
             <div className="mb-5 flex flex-wrap gap-2">
-              {["God", "Family", "Country", "Texas"].map((value) => (
+              {["God", "Family", "Country"].map((value) => (
                 <span key={value} className="rounded-full border border-blue-100 bg-white px-3 py-1 text-xs font-black uppercase tracking-wide text-blue-950 shadow-sm">
                   {value}
                 </span>
