@@ -415,7 +415,11 @@ const OFFICIAL_ROSTERS: Record<string, OfficialRosterMember[]> = {
     { full_name: "Ragan Burgess", role: "Trustee", seat: "Place 3", summary: "Place 3 trustee not seeking reelection in May 2026 per Tyler Morning Telegraph reporting." },
   ],
   tyler_isd: [
-    { full_name: "Lindsey Harrison", role: "Trustee", seat: "District 6", summary: "Appointed by trustees to fill the District 6 vacancy per Tyler ISD announcement." },
+    { full_name: "Yvonne Atkins", role: "Board President", seat: "District 3", summary: "Elected Tyler ISD board president on May 19, 2025 (per KLTV coverage), replacing outgoing president Wade Washmon. Originally elected to District 3." },
+    { full_name: "Wade Washmon", role: "Trustee", seat: "District 1", summary: "Tyler ISD District 1 incumbent who served as board president before being replaced by Atkins in May 2025." },
+    { full_name: "Dr. Trish Nation", role: "Trustee", seat: "District 4", summary: "Tyler ISD District 4 trustee, serving since 2014 per public records." },
+    { full_name: "Rev. Fritz Hager Jr.", role: "Trustee", seat: "District 6", summary: "Tyler ISD District 6 trustee, serving since 2015." },
+    { full_name: "Lindsey Harrison", role: "Trustee", seat: "Appointed seat", summary: "Appointed by Tyler ISD trustees to fill a vacancy per the district's announcement; specific district may have changed after subsequent elections." },
   ],
   athens_isd: [
     { full_name: "Alicea Elliott", role: "President", summary: "Listed as Board President in the Athens ISD Employee Handbook (updated July 2024)." },
@@ -470,6 +474,10 @@ const OFFICIAL_ROSTERS: Record<string, OfficialRosterMember[]> = {
     { full_name: "Bridget Wade", role: "Trustee", seat: "District VII", summary: "Re-elected to HISD District VII on November 4, 2025 with 54.1% of the vote." },
     { full_name: "Felicity Pereyra", role: "Trustee", seat: "District I", summary: "Won unopposed in November 2025; term begins January. Voting power suspended under TEA takeover." },
     { full_name: "Myrna Guidry", role: "Trustee", seat: "District IX", summary: "Re-elected unopposed in November 2025." },
+    { full_name: "H. A. \"Savant\" Moore", role: "Trustee", seat: "District II", summary: "Elected to HISD District II in November 2023 (incoming term)." },
+    { full_name: "Dani Hernandez", role: "Trustee", seat: "District III", summary: "Re-elected to HISD District III in November 2023 as incumbent." },
+    { full_name: "Patricia K. Allen", role: "Trustee", seat: "District IV", summary: "Re-elected to HISD District IV in November 2023 as incumbent." },
+    { full_name: "Placido Gomez", role: "Trustee", seat: "District VIII", summary: "Won District VIII unopposed; sworn in January 2024 succeeding Judith Cruz." },
   ],
   dallas_isd: [
     { full_name: "Ed Turner", role: "1st Vice President", seat: "District 9", term: "2024-2027", summary: "Represents South Dallas including Pleasant Grove, Deep Ellum, Uptown, and East Dallas." },
@@ -498,7 +506,11 @@ const OFFICIAL_ROSTERS: Record<string, OfficialRosterMember[]> = {
     { full_name: "Ed Garza", role: "Trustee", summary: "Listed on the San Antonio ISD Board of Trustees." },
   ],
   fort_worth_isd: [
-    { full_name: "Roxanne Martinez", role: "Board President", summary: "Listed as President of the elected Fort Worth ISD Board of Trustees. Authority of the elected board temporarily suspended by the Texas Education Agency in March 2026 during state takeover." },
+    { full_name: "Roxanne Martinez", role: "Board President", seat: "District 9", summary: "Re-elected to District 9 in May 2025 with 74.2% of the vote. Serves as elected board President. Authority of the elected board temporarily suspended by the Texas Education Agency in March 2026 during state takeover." },
+    { full_name: "Camille Rodriguez", role: "Trustee", seat: "District 1", summary: "Elected to FWISD District 1 in May 2025 with 53.5% of the vote." },
+    { full_name: "Michael Ryan", role: "Trustee", seat: "District 7", summary: "Re-elected to FWISD District 7 in May 2025 with 73.5% of the vote." },
+    { full_name: "Anael Luebanos", role: "Trustee", summary: "Ran unopposed in the May 2025 FWISD election." },
+    { full_name: "Wallace Bridges", role: "Trustee", summary: "Ran unopposed in the May 2025 FWISD election." },
   ],
   katy_isd: [
     { full_name: "Lance Redmon", role: "Board President", seat: "Position 2", summary: "Re-elected to Position 2 in May 2025 with more than 75% of the vote, then elected as board president." },
@@ -515,7 +527,13 @@ const OFFICIAL_ROSTERS: Record<string, OfficialRosterMember[]> = {
     { full_name: "Kendra Camarena", role: "Trustee", seat: "Position 7", term: "December 2025 - 2029", summary: "Newly elected Cy-Fair ISD trustee per November 2025 election results." },
   ],
   round_rock_isd: [
-    { full_name: "Tiffanie N. Harrison", role: "Former Board President", seat: "Place 6", summary: "Elected the first Black board president in district history (November 2024) and resigned the Place 6 seat on August 21, 2025. Replacement application process opened by trustees." },
+    { full_name: "Chuy Zárate", role: "Trustee", seat: "Place 1", summary: "Listed as Place 1 trustee on the Round Rock ISD Board of Trustees page." },
+    { full_name: "Melissa Ross", role: "Trustee", seat: "Place 2", summary: "Listed as Place 2 trustee on the Round Rock ISD Board of Trustees page." },
+    { full_name: "Amber Landrum", role: "Trustee", seat: "Place 3", summary: "Listed as Place 3 trustee on the Round Rock ISD Board of Trustees page." },
+    { full_name: "Alicia Markum", role: "Trustee", seat: "Place 4", summary: "Listed as Place 4 trustee on the Round Rock ISD Board of Trustees page." },
+    { full_name: "Amy Weir", role: "Trustee", seat: "Place 5", summary: "Listed as Place 5 trustee on the Round Rock ISD Board of Trustees page." },
+    { full_name: "Place 6 (Vacant)", role: "Vacancy", seat: "Place 6", summary: "Place 6 is vacant after Tiffanie N. Harrison's August 21, 2025 resignation. Replacement application process opened by trustees." },
+    { full_name: "Dr. Michael Wei", role: "Trustee", seat: "Place 7", summary: "Listed as Place 7 trustee on the Round Rock ISD Board of Trustees page." },
   ],
   killeen_isd: [
     { full_name: "Brant Williams", role: "Board President", summary: "Listed as President in the Killeen ISD August 26, 2025 regular board meeting record." },
@@ -527,6 +545,9 @@ const OFFICIAL_ROSTERS: Record<string, OfficialRosterMember[]> = {
     { full_name: "Rodney Gilchrist", role: "Trustee", summary: "Listed as a trustee per the Killeen ISD August 26, 2025 board meeting record." },
   ],
   conroe_isd: [
+    { full_name: "Misty Odenweller", role: "Board President", seat: "Position 3", summary: "Won Position 3 on November 8, 2022; serves as Board President." },
+    { full_name: "Melissa Dungan", role: "Trustee", seat: "Position 2", summary: "Defeated incumbent Ray Sanders on November 8, 2022 to win Position 2." },
+    { full_name: "Position 1 (Vacant)", role: "Vacancy", seat: "Position 1", summary: "Position 1 is vacant after Tiffany Baumann Nelson's resignation on December 9, 2024. Public application process opened December 16, 2024 to fill the unexpired term until November 2026." },
     { full_name: "Nicole May", role: "Trustee", seat: "Position 4", summary: "Sworn in to Position 4 in November 2024." },
     { full_name: "Lindsay Dawson", role: "Trustee", seat: "Position 5", summary: "Sworn in to Position 5 in November 2024." },
     { full_name: "Melissa Semmler", role: "Trustee", seat: "Position 6", summary: "Sworn in to Position 6 in November 2024." },
