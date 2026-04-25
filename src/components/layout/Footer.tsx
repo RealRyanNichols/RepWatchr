@@ -107,7 +107,7 @@ export default function Footer() {
               href="/feedback"
               className="text-xs text-gray-400 hover:text-gray-600 transition-colors"
             >
-              Report an Issue
+              Flag Record
             </Link>
           </div>
           <p className="text-center text-sm text-gray-500 dark:text-gray-400">

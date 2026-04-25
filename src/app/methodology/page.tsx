@@ -10,7 +10,7 @@ import {
 export const metadata: Metadata = {
   title: "Methodology",
   description:
-    "How we calculate scores for Texas elected officials. Transparent, traceable, and focused on local issues.",
+    "How RepWatchr calculates official scorecards from sourced records, weighted issues, local sentiment, and reviewed evidence.",
 };
 
 export default function MethodologyPage() {
@@ -40,17 +40,18 @@ export default function MethodologyPage() {
               <li className="flex items-start gap-2">
                 <span className="font-bold text-blue-600 mt-0.5">2.</span>
                 <span>
-                  <strong>Texas-focused:</strong> Scores reflect what
-                  matters to Texas residents specifically, not national
-                  partisan scorecards.
+                  <strong>Local-first:</strong> Scores reflect the people,
+                  district, county, state, and voting bloc represented by the
+                  official, not a generic national partisan scorecard.
                 </span>
               </li>
               <li className="flex items-start gap-2">
                 <span className="font-bold text-blue-600 mt-0.5">3.</span>
                 <span>
                   <strong>Issue-based:</strong> We score on the issues, not on
-                  party. Any official who votes to protect Texas interests
-                  gets credit regardless of party affiliation.
+                  party. Any official who votes to protect the represented
+                  voters&apos; interests gets credit regardless of party
+                  affiliation.
                 </span>
               </li>
             </ul>
@@ -101,9 +102,10 @@ export default function MethodologyPage() {
               </h3>
               <p>
                 We identify bills at the federal and state level that directly
-                impact Texas on each issue category. Each bill is tagged
-                with the &quot;pro-Texas&quot; position -- the vote that
-                best serves Texas residents&apos; interests.
+                impact each issue category. Each bill is tagged with the
+                locally aligned position -- the vote that best serves the
+                represented voters&apos; interests based on the verified source
+                record and owner-approved issue rules.
               </p>
             </div>
             <div className="bg-gray-50 rounded-lg p-4">
@@ -111,9 +113,10 @@ export default function MethodologyPage() {
                 Step 2: Score Each Vote
               </h3>
               <p>
-                Each vote is scored: <strong>Aligned</strong> (voted in East
-                Texas interest) = 100 points. <strong>Not Aligned</strong> =
-                0 points. <strong>Absent/Abstain</strong> = 50 points (neutral).
+                Each vote is scored: <strong>Aligned</strong> (voted with the
+                weighted issue position) = 100 points.{" "}
+                <strong>Not Aligned</strong> = 0 points.{" "}
+                <strong>Absent/Abstain</strong> = 50 points (neutral).
               </p>
             </div>
             <div className="bg-gray-50 rounded-lg p-4">
