@@ -99,18 +99,14 @@ export default async function NewsArticlePage({
         {article.sourceName && (
           <>
             <span>&middot;</span>
-            {article.sourceUrl ? (
-              <a
-                href={article.sourceUrl}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-blue-600 hover:underline"
-              >
-                Source: {article.sourceName}
-              </a>
-            ) : (
-              <span>Source: {article.sourceName}</span>
-            )}
+            <a
+              href={article.sourceUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-blue-600 hover:underline"
+            >
+              Source: {article.sourceName}
+            </a>
           </>
         )}
       </div>

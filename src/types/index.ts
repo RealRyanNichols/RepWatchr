@@ -168,6 +168,12 @@ export interface RedFlag {
 
 export type NewsTag = "breaking" | "investigation" | "update" | "opinion" | "watchdog" | "election" | "corruption" | "transparency";
 
+export type NewsReviewStatus =
+  | "draft"
+  | "needs_source_review"
+  | "approved"
+  | "quarantined";
+
 export interface NewsArticle {
   id: string;
   title: string;
@@ -175,6 +181,7 @@ export interface NewsArticle {
   content: string;
   officialIds: string[];
   tags: NewsTag[];
+  reviewStatus?: NewsReviewStatus;
   sourceUrl?: string;
   sourceName?: string;
   imageUrl?: string;

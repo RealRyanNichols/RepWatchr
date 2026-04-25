@@ -95,7 +95,7 @@ export function getAllOfficials(): Official[] {
     }
   }
 
-  officialsCache = officials;
+  officialsCache = officials.sort(compareOfficialsByCountyThenName);
   return officials;
 }
 
@@ -121,6 +121,17 @@ export function getOfficialsByCounty(county: string): Official[] {
   const target = county.toLowerCase();
   return getAllOfficials().filter((o) =>
     o.county.some((c) => c.toLowerCase() === target)
+  );
+}
+
+function compareOfficialsByCountyThenName(a: Official, b: Official) {
+  const countyA = a.county[0] ?? "";
+  const countyB = b.county[0] ?? "";
+  return (
+    countyA.localeCompare(countyB) ||
+    a.lastName.localeCompare(b.lastName) ||
+    a.firstName.localeCompare(b.firstName) ||
+    a.name.localeCompare(b.name)
   );
 }
 
@@ -285,7 +296,7 @@ export function getAllNews(): NewsArticle[] {
 
   for (const file of files) {
     const article = readJsonFile<NewsArticle>(file);
-    if (article) {
+    if (article && isApprovedNewsArticle(article)) {
       articles.push(article);
     }
   }
@@ -297,6 +308,10 @@ export function getAllNews(): NewsArticle[] {
 
   newsCache = articles;
   return articles;
+}
+
+function isApprovedNewsArticle(article: NewsArticle) {
+  return article.reviewStatus === "approved" && Boolean(article.sourceUrl);
 }
 
 /**

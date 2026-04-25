@@ -98,8 +98,24 @@ export default function NewsPage() {
         </section>
       )}
 
+      {articles.length === 0 && (
+        <section className="rounded-2xl border border-amber-200 bg-amber-50 p-6">
+          <p className="text-sm font-black uppercase tracking-[0.2em] text-amber-700">
+            Source review active
+          </p>
+          <h2 className="mt-2 text-2xl font-black text-gray-950">
+            No reports are public until source review is complete.
+          </h2>
+          <p className="mt-3 max-w-3xl text-sm leading-6 text-gray-700">
+            RepWatchr will not publish a bill, vote count, savings estimate,
+            red flag, praise report, or article unless the exact public source
+            supports the exact claim. Drafts stay hidden until reviewed.
+          </p>
+        </section>
+      )}
+
       {/* All Articles */}
-      <section>
+      {articles.length > 0 && <section>
         <h2 className="text-sm font-bold text-gray-500 uppercase tracking-wider mb-4">
           All Articles
         </h2>
@@ -155,7 +171,7 @@ export default function NewsPage() {
             );
           })}
         </div>
-      </section>
+      </section>}
     </div>
   );
 }
