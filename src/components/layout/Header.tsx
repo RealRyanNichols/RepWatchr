@@ -35,8 +35,8 @@ export default function Header() {
             <span className="block truncate text-base font-black text-blue-950 sm:text-lg">
               RepWatchr
             </span>
-            <span className="block max-w-[11rem] truncate text-[9px] font-black uppercase tracking-wide text-red-700 sm:max-w-none sm:text-[10px]">
-              God. Family. Country. Texas.
+            <span className="block max-w-[10rem] truncate text-[9px] font-black uppercase tracking-wide text-red-700 sm:max-w-none sm:text-[10px]">
+              God. Family. Country.
             </span>
           </span>
         </Link>
