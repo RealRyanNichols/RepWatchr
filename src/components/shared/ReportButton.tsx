@@ -14,7 +14,10 @@ const reportTypes = [
   { value: "wrong-position", label: "Wrong position or title" },
   { value: "wrong-contact", label: "Wrong contact info" },
   { value: "wrong-party", label: "Wrong party affiliation" },
+  { value: "wrong-vote", label: "Wrong vote record" },
+  { value: "wrong-source", label: "Wrong or missing source" },
   { value: "wrong-score", label: "Wrong score or grade" },
+  { value: "wrong-weight", label: "Wrong score weight" },
   { value: "wrong-funding", label: "Wrong funding data" },
   { value: "outdated", label: "Info is outdated" },
   { value: "other", label: "Other issue" },
@@ -94,7 +97,7 @@ export default function ReportButton({ officialId, pageUrl }: ReportButtonProps)
         <svg className="h-3.5 w-3.5" viewBox="0 0 20 20" fill="currentColor">
           <path fillRule="evenodd" d="M8.485 2.495c.673-1.167 2.357-1.167 3.03 0l6.28 10.875c.673 1.167-.17 2.625-1.516 2.625H3.72c-1.347 0-2.189-1.458-1.515-2.625L8.485 2.495zM10 5a.75.75 0 01.75.75v3.5a.75.75 0 01-1.5 0v-3.5A.75.75 0 0110 5zm0 9a1 1 0 100-2 1 1 0 000 2z" clipRule="evenodd" />
         </svg>
-        Report incorrect info
+        Flag Record
       </button>
     );
   }
@@ -103,7 +106,7 @@ export default function ReportButton({ officialId, pageUrl }: ReportButtonProps)
     <div className="rounded-xl border border-gray-200 bg-white p-5 shadow-sm">
       <div className="flex items-center justify-between mb-4">
         <h3 className="text-sm font-bold text-gray-900">
-          Report Incorrect Information
+          Flag Record
         </h3>
         <button
           onClick={() => setOpen(false)}
@@ -189,8 +192,8 @@ export default function ReportButton({ officialId, pageUrl }: ReportButtonProps)
         </button>
 
         <p className="text-xs text-gray-400 text-center">
-          Reports are reviewed by the RepWatchr team and corrections are made as
-          quickly as possible.
+          Flagged records are reviewed against source material before any
+          public fact, vote, score, or weight changes.
         </p>
       </form>
     </div>

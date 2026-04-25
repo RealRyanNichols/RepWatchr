@@ -3,6 +3,7 @@ import { REPWATCHR_EMAIL, REPWATCHR_PHONE_DISPLAY, REPWATCHR_PHONE_E164 } from "
 
 const quickLinks = [
   { href: "/officials", label: "Officials" },
+  { href: "/counties", label: "Counties" },
   { href: "/search", label: "Search" },
   { href: "/gideon", label: "GideonAI" },
   { href: "/data-reports", label: "Data Desk" },
@@ -13,7 +14,7 @@ const quickLinks = [
   { href: "/school-boards", label: "School Boards" },
   { href: "/red-flags", label: "Red Flags" },
   { href: "/methodology", label: "Methodology" },
-  { href: "/feedback", label: "Report Incorrect Info" },
+  { href: "/feedback", label: "Flag Record" },
 ];
 
 export default function Footer() {
@@ -24,7 +25,7 @@ export default function Footer() {
           {/* Brand */}
           <div>
             <img
-              src="/images/repwatchr-brand-wordmark.jpg"
+              src="/images/banner.png"
               alt="RepWatchr - Know. Track. Score. Hold Accountable."
               className="mb-2 h-14 w-auto max-w-[260px] object-contain"
             />

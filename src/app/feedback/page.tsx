@@ -3,20 +3,20 @@ import ReportButton from "@/components/shared/ReportButton";
 import { REPWATCHR_PHONE_DISPLAY, REPWATCHR_PHONE_E164 } from "@/lib/repwatchr-contact";
 
 export const metadata: Metadata = {
-  title: "Submit Feedback",
-  description: "Report incorrect information or submit feedback to the RepWatchr team.",
+  title: "Flag Record",
+  description: "Flag incorrect information or submit sourced feedback to the RepWatchr team.",
 };
 
 export default function FeedbackPage() {
   return (
     <div className="max-w-2xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
       <h1 className="text-3xl font-extrabold text-gray-900 mb-2">
-        Report Incorrect Information
+        Flag Record
       </h1>
       <p className="text-gray-500 mb-8">
-        See something wrong? Wrong name, outdated info, incorrect scores? Let
-        us know and we&apos;ll fix it. You don&apos;t need an account to submit
-        a report.
+        See a wrong name, outdated office, missing source, incorrect vote, or
+        score problem? Flag it with the best source you have. You don&apos;t
+        need an account to submit a report.
       </p>
       <div className="mb-8 rounded-2xl border border-blue-100 bg-blue-50 p-4">
         <p className="text-sm font-black uppercase tracking-wide text-blue-900">Call or text RepWatchr</p>

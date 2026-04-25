@@ -1,6 +1,11 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { getIssueCategories } from "@/lib/data";
+import {
+  OWNER_LOCKED_ISSUE_POSITIONS,
+  REPWATCHR_ALIGNMENT_FACTORS,
+  REPWATCHR_SCORE_SCALE,
+} from "@/lib/repwatchr-algorithm";
 
 export const metadata: Metadata = {
   title: "Methodology",
@@ -136,6 +141,60 @@ export default function MethodologyPage() {
 
         <section className="mb-8">
           <h2 className="text-xl font-bold text-gray-900 mb-3">
+            GideonAI Internal Weighting Model
+          </h2>
+          <p className="text-gray-700 text-sm mb-4">
+            RepWatchr separates the source record from the score. The source
+            record must be factual first: bill text, official vote records,
+            board minutes, video, public filings, or verified submissions.
+            GideonAI can then help weigh those verified records through the
+            internal model below.
+          </p>
+          <div className="not-prose grid gap-3">
+            {REPWATCHR_ALIGNMENT_FACTORS.map((factor) => (
+              <div key={factor.id} className="rounded-lg border border-gray-200 bg-white p-4">
+                <div className="flex flex-wrap items-center justify-between gap-2">
+                  <h3 className="font-bold text-gray-900">{factor.label}</h3>
+                  <span className="rounded-full bg-blue-50 px-3 py-1 text-xs font-black text-blue-800">
+                    {factor.weight}% weight
+                  </span>
+                </div>
+                <p className="mt-2 text-sm text-gray-700">{factor.description}</p>
+                <p className="mt-2 text-xs font-semibold text-gray-500">
+                  Source rule: {factor.sourceRule}
+                </p>
+              </div>
+            ))}
+          </div>
+        </section>
+
+        <section className="mb-8">
+          <h2 className="text-xl font-bold text-gray-900 mb-3">
+            Owner-Locked Issue Positions
+          </h2>
+          <p className="text-gray-700 text-sm mb-4">
+            Some moral issue positions are not guessed by code. If the issue
+            needs Ryan&apos;s clarification, it stays marked that way until the
+            position and severity weight are approved.
+          </p>
+          <div className="not-prose space-y-3">
+            {OWNER_LOCKED_ISSUE_POSITIONS.map((issue) => (
+              <div key={issue.id} className="rounded-lg border border-gray-200 bg-gray-50 p-4">
+                <div className="flex flex-wrap items-center gap-2">
+                  <h3 className="font-bold text-gray-900">{issue.label}</h3>
+                  <span className="rounded-full bg-white px-2.5 py-1 text-xs font-black text-gray-700">
+                    {issue.status === "confirmed" ? "Confirmed" : "Needs clarification"}
+                  </span>
+                </div>
+                <p className="mt-2 text-sm text-gray-700">{issue.position}</p>
+                <p className="mt-2 text-xs font-semibold text-gray-500">{issue.note}</p>
+              </div>
+            ))}
+          </div>
+        </section>
+
+        <section className="mb-8">
+          <h2 className="text-xl font-bold text-gray-900 mb-3">
             Letter Grade Scale
           </h2>
           <div className="not-prose overflow-x-auto">
@@ -154,13 +213,7 @@ export default function MethodologyPage() {
                 </tr>
               </thead>
               <tbody className="divide-y divide-gray-200">
-                {[
-                  { grade: "A+ / A / A-", range: "90 - 100", meaning: "Excellent - Strongly aligned with Texas interests" },
-                  { grade: "B+ / B / B-", range: "80 - 89", meaning: "Good - Generally supportive of Texas interests" },
-                  { grade: "C+ / C / C-", range: "70 - 79", meaning: "Average - Mixed record on Texas issues" },
-                  { grade: "D+ / D / D-", range: "60 - 69", meaning: "Below Average - Often votes against Texas interests" },
-                  { grade: "F", range: "0 - 59", meaning: "Poor - Consistently votes against Texas interests" },
-                ].map((row) => (
+                {REPWATCHR_SCORE_SCALE.map((row) => (
                   <tr key={row.grade}>
                     <td className="px-4 py-2 font-medium">{row.grade}</td>
                     <td className="px-4 py-2 text-gray-600">{row.range}</td>
