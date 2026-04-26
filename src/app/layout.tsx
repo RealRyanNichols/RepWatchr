@@ -28,6 +28,13 @@ export const metadata: Metadata = {
     "school board",
   ],
   metadataBase: new URL("https://www.repwatchr.com"),
+  icons: {
+    icon: [
+      { url: "/favicon.ico" },
+      { url: "/images/profile.png", type: "image/png", sizes: "1254x1254" },
+    ],
+    apple: [{ url: "/images/profile.png", type: "image/png", sizes: "1254x1254" }],
+  },
   openGraph: {
     title: "RepWatchr - Know Your Reps. Hold Them Accountable.",
     description:
@@ -38,9 +45,9 @@ export const metadata: Metadata = {
     type: "website",
     images: [
       {
-        url: "/images/icon.png",
-        width: 1200,
-        height: 1200,
+        url: "/images/profile.png",
+        width: 1254,
+        height: 1254,
         alt: "RepWatchr - Know Your Reps. Hold Them Accountable.",
       },
     ],
@@ -50,7 +57,7 @@ export const metadata: Metadata = {
     title: "RepWatchr - Know Your Reps. Hold Them Accountable.",
     description:
       "Track your elected officials in Texas. Scorecards, voting records, campaign funding, and red flags.",
-    images: ["/images/icon.png"],
+    images: ["/images/profile.png"],
   },
   robots: {
     index: true,
