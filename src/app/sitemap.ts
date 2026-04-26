@@ -8,8 +8,11 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const now = new Date();
   const staticRoutes: MetadataRoute.Sitemap = [
     "",
+    "/about",
     "/officials",
     "/school-boards",
+    "/faretta-ai",
+    "/feedback",
     "/funding",
     "/red-flags",
     "/methodology",

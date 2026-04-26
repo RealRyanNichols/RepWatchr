@@ -13,5 +13,5 @@ export default async function SearchPage({
 }) {
   const params = searchParams ? await searchParams : undefined;
   const query = (params?.q ?? "").trim();
-  redirect(query ? `/gideon?q=${encodeURIComponent(query)}` : "/gideon");
+  redirect(query ? `/faretta-ai?q=${encodeURIComponent(query)}` : "/faretta-ai");
 }

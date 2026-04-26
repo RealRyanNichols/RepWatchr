@@ -56,7 +56,7 @@ export default function BuildoutDashboardPage() {
     { label: "Citizen letter grades (A-F)", percent: 100, status: "Live on every profile. Statewide + in-district GPA.", href: "/school-boards" },
     { label: "Public comments / Q&A", percent: 100, status: "Live on every profile. Ranked but not censored.", href: "/feedback" },
     { label: "Profile claim flow (officials)", percent: 90, status: "Stripe wired. Admin review queue active.", href: "/profiles/claim" },
-    { label: "Faretta AI research console", percent: 60, status: "Edge function bridge configured.", href: "/gideon" },
+    { label: "Faretta AI research console", percent: 60, status: "Edge function bridge configured.", href: "/faretta-ai" },
     { label: "Public funding / donor data", percent: 40, status: "Federal + state cycles loaded; locals queued.", href: "/funding" },
     { label: "Issue scorecards", percent: 80, status: "5 weighted issue categories live.", href: "/scorecards" },
     { label: "Red flags index", percent: 65, status: "Curated; verifier review ongoing.", href: "/red-flags" },

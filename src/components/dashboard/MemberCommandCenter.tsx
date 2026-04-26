@@ -3,7 +3,7 @@
 import { useEffect, useMemo, useState } from "react";
 import Link from "next/link";
 import { useAuth } from "@/components/auth/AuthProvider";
-import GideonConsole from "@/components/gideon/GideonConsole";
+import FarettaConsole from "@/components/faretta/FarettaConsole";
 import { createClient } from "@/lib/supabase";
 
 type TrackedItem = {
@@ -97,7 +97,7 @@ export default function MemberCommandCenter() {
   async function addTrackedItem(event: React.FormEvent) {
     event.preventDefault();
     const trimmedLabel = label.trim();
-    const trimmedHref = href.trim() || `/gideon?q=${encodeURIComponent(trimmedLabel)}`;
+    const trimmedHref = href.trim() || `/faretta-ai?q=${encodeURIComponent(trimmedLabel)}`;
     if (!trimmedLabel) return;
 
     const nextItem = { label: trimmedLabel, href: trimmedHref, type };
@@ -229,7 +229,7 @@ export default function MemberCommandCenter() {
         </div>
       </section>
 
-      <GideonConsole />
+      <FarettaConsole />
     </div>
   );
 }

@@ -3,7 +3,7 @@ import { getAllOfficials, getScoreCard, getIssueCategories, getAllNews } from "@
 import { getSchoolBoardStats } from "@/lib/school-board-research";
 import { buildPickerStates } from "@/lib/picker-data";
 import OfficialCard from "@/components/officials/OfficialCard";
-import GideonSearchBox from "@/components/shared/GideonSearchBox";
+import FarettaSearchBox from "@/components/shared/FarettaSearchBox";
 import DrillDownPicker from "@/components/school-board/DrillDownPicker";
 
 const levelCards = [
@@ -92,7 +92,7 @@ export default function HomePage() {
               vote and comment publicly.
             </p>
             <div className="mb-8 max-w-xl">
-              <GideonSearchBox compact placeholder="Ask Faretta AI to find a rep, school board, county, vote, or record..." />
+              <FarettaSearchBox compact placeholder="Ask Faretta AI to find a rep, school board, county, vote, or record..." />
             </div>
             <div className="flex flex-wrap gap-4">
               <Link

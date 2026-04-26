@@ -2,7 +2,7 @@ import Link from "next/link";
 
 const quickLinks = [
   { href: "/officials", label: "Officials" },
-  { href: "/gideon", label: "Faretta AI" },
+  { href: "/faretta-ai", label: "Faretta AI" },
   { href: "/news", label: "News" },
   { href: "/scorecards", label: "Scorecards" },
   { href: "/votes", label: "Votes" },

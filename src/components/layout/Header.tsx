@@ -7,7 +7,7 @@ import UserMenu from "@/components/auth/UserMenu";
 const navLinks = [
   { href: "/", label: "Home" },
   { href: "/officials", label: "Officials" },
-  { href: "/gideon", label: "Faretta AI" },
+  { href: "/faretta-ai", label: "Faretta AI" },
   { href: "/scorecards", label: "Scorecards" },
   { href: "/votes", label: "Votes" },
   { href: "/funding", label: "Funding" },
