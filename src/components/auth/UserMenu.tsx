@@ -80,25 +80,11 @@ export default function UserMenu() {
             My Dashboard
           </Link>
           <Link
-            href="/search"
-            className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-50"
-            onClick={() => setOpen(false)}
-          >
-            Search RepWatchr
-          </Link>
-          <Link
             href="/gideon"
             className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-50"
             onClick={() => setOpen(false)}
           >
-            GideonAI
-          </Link>
-          <Link
-            href="/data-reports"
-            className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-50"
-            onClick={() => setOpen(false)}
-          >
-            Data Desk
+            Faretta AI
           </Link>
           <Link
             href="/dashboard/claims"

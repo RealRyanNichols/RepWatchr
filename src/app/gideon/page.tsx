@@ -2,9 +2,9 @@ import type { Metadata } from "next";
 import GideonConsole from "@/components/gideon/GideonConsole";
 
 export const metadata: Metadata = {
-  title: "GideonAI",
+  title: "Faretta AI | RepWatchr",
   description:
-    "Ask Gideon to search RepWatchr, find officials, collect research facts, and shape the next public-record question.",
+    "Ask Faretta AI to search RepWatchr, find officials, collect research facts, and shape the next public-record question.",
 };
 
 export default async function GideonPage({

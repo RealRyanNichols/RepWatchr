@@ -22,7 +22,7 @@ type SpeechRecognitionConstructor = new () => {
 export default function GideonSearchBox({
   compact = false,
   defaultQuery = "",
-  placeholder = "Ask Gideon to find a rep, county, city, district, race, vote, or school board...",
+  placeholder = "Ask Faretta AI to find a rep, county, city, district, race, vote, or school board...",
 }: GideonSearchBoxProps) {
   const [query, setQuery] = useState(defaultQuery);
   const [listening, setListening] = useState(false);
@@ -32,7 +32,7 @@ export default function GideonSearchBox({
     const trimmed = nextQuery.trim();
     if (!trimmed) return;
     collectGideonInteraction({ kind: "search", content: trimmed, metadata: { source: "gideon_search_box" } });
-    router.push(`/search?q=${encodeURIComponent(trimmed)}`);
+    router.push(`/gideon?q=${encodeURIComponent(trimmed)}`);
   }
 
   function startVoice() {
@@ -41,7 +41,7 @@ export default function GideonSearchBox({
       (window as unknown as { SpeechRecognition?: SpeechRecognitionConstructor; webkitSpeechRecognition?: SpeechRecognitionConstructor }).webkitSpeechRecognition;
 
     if (!SpeechRecognition) {
-      setQuery((current) => current || "Voice search is not supported in this browser. Type what you need Gideon to find.");
+      setQuery((current) => current || "Voice search is not supported in this browser. Type what you need Faretta AI to find.");
       return;
     }
 
@@ -77,7 +77,7 @@ export default function GideonSearchBox({
       >
         <div className="flex gap-2">
           <label htmlFor="gideon-search" className="sr-only">
-            Search RepWatchr with Gideon
+            Ask Faretta AI to search RepWatchr
           </label>
           <input
             id="gideon-search"
@@ -98,7 +98,7 @@ export default function GideonSearchBox({
             type="submit"
             className="rounded-xl bg-blue-900 px-4 py-3 text-sm font-black text-white transition hover:bg-red-700"
           >
-            Search
+            Ask
           </button>
         </div>
       </form>

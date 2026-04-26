@@ -10,12 +10,14 @@ interface DrillDownPickerProps {
   states: PickerState[];
   initialStateCode?: string;
   initialLevelKey?: string;
+  compact?: boolean;
 }
 
 export default function DrillDownPicker({
   states,
   initialStateCode,
   initialLevelKey = "school-board",
+  compact = false,
 }: DrillDownPickerProps) {
   const router = useRouter();
   const [stateCode, setStateCode] = useState(initialStateCode ?? states[0]?.code ?? "TX");
@@ -58,16 +60,18 @@ export default function DrillDownPicker({
   }
 
   return (
-    <div className="rounded-2xl border border-blue-100 bg-white p-5 shadow-lg shadow-blue-100/40">
+    <div className={`${compact ? "rounded-lg p-4 shadow-sm" : "rounded-2xl p-5 shadow-lg shadow-blue-100/40"} border border-[#d8e5f6] bg-white`}>
       <div className="flex flex-col gap-2 sm:flex-row sm:items-baseline sm:justify-between">
         <div>
-          <p className="text-xs font-black uppercase tracking-wide text-red-700">Find your rep fast</p>
-          <h2 className="text-xl font-black text-blue-950 sm:text-2xl">Pick a state, then a level, then your district.</h2>
+          <p className="text-xs font-black uppercase tracking-wide text-[#bf0d3e]">Find your rep fast</p>
+          <h2 className={`${compact ? "text-base" : "text-xl sm:text-2xl"} font-black text-[#00205b]`}>
+            {compact ? "Pick a school, then open a member." : "Pick a state, then a level, then your district."}
+          </h2>
         </div>
-        <p className="text-xs font-semibold text-gray-500">Three taps. No reading required.</p>
+        <p className="text-xs font-semibold text-slate-500">Three taps. No reading required.</p>
       </div>
 
-      <div className="mt-4 grid gap-3 sm:grid-cols-3">
+      <div className={`${compact ? "mt-3" : "mt-4"} grid gap-3 sm:grid-cols-3`}>
         <SelectField
           label="State"
           value={stateCode}
@@ -97,36 +101,36 @@ export default function DrillDownPicker({
       </div>
 
       {level ? (
-        <p className="mt-3 text-xs font-semibold text-gray-500">{level.description}</p>
+        <p className="mt-3 text-xs font-semibold text-slate-500">{level.description}</p>
       ) : null}
 
       {group ? (
-        <div className="mt-5 rounded-xl border border-gray-200 bg-gray-50 p-4">
+        <div className={`${compact ? "mt-3 p-3" : "mt-5 p-4"} rounded-lg border border-[#d8e5f6] bg-[#f8fbff]`}>
           <div className="mb-3 flex items-center justify-between">
             <div>
-              <p className="text-xs font-black uppercase tracking-wide text-red-700">{group.members.length} member{group.members.length === 1 ? "" : "s"} loaded</p>
-              <h3 className="text-lg font-black text-blue-950">{group.label}</h3>
+              <p className="text-xs font-black uppercase tracking-wide text-[#bf0d3e]">{group.members.length} member{group.members.length === 1 ? "" : "s"} loaded</p>
+              <h3 className={`${compact ? "text-base" : "text-lg"} font-black text-[#00205b]`}>{group.label}</h3>
             </div>
             {group.href ? (
-              <Link href={group.href} className="rounded-lg bg-blue-900 px-3 py-1.5 text-xs font-black text-white hover:bg-red-700">
+              <Link href={group.href} className="rounded-lg bg-[#00205b] px-3 py-1.5 text-xs font-black text-white hover:bg-[#bf0d3e]">
                 Open district file &rarr;
               </Link>
             ) : null}
           </div>
           {group.members.length === 0 ? (
-            <p className="text-sm text-gray-600">Roster pending. Open the district file for status.</p>
+            <p className="text-sm text-slate-600">Roster pending. Open the district file for status.</p>
           ) : (
-            <div className="grid gap-2 sm:grid-cols-2 lg:grid-cols-3">
+            <div className={`${compact ? "max-h-56 overflow-y-auto pr-1 sm:grid-cols-1 lg:grid-cols-2" : "sm:grid-cols-2 lg:grid-cols-3"} grid gap-2`}>
               {group.members.map((member) => (
                 <button
                   type="button"
                   key={member.id}
                   onClick={() => openMember(member)}
-                  className="text-left rounded-lg border border-gray-200 bg-white p-3 transition hover:-translate-y-0.5 hover:border-blue-300 hover:shadow"
+                  className="rounded-lg border border-[#d8e5f6] bg-white p-3 text-left transition hover:-translate-y-0.5 hover:border-[#bf0d3e] hover:shadow"
                 >
-                  <p className="text-sm font-black text-gray-950">{member.name}</p>
-                  {member.subline ? <p className="mt-0.5 text-xs font-semibold text-gray-500">{member.subline}</p> : null}
-                  <p className="mt-2 text-xs font-bold text-blue-700">Open profile &rarr;</p>
+                  <p className="text-sm font-black text-slate-950">{member.name}</p>
+                  {member.subline ? <p className="mt-0.5 text-xs font-semibold text-slate-500">{member.subline}</p> : null}
+                  <p className="mt-2 text-xs font-bold text-[#0057b8]">Open profile &rarr;</p>
                 </button>
               ))}
             </div>
@@ -152,12 +156,12 @@ function SelectField({
 }) {
   return (
     <label className="block">
-      <span className="text-xs font-black uppercase tracking-wide text-gray-500">{label}</span>
+      <span className="text-xs font-black uppercase tracking-wide text-slate-500">{label}</span>
       <select
         value={value}
         disabled={disabled}
         onChange={(event) => onChange(event.target.value)}
-        className="mt-1 w-full rounded-lg border border-blue-200 bg-blue-50 px-3 py-2.5 text-sm font-black text-blue-950 outline-none transition focus:border-red-400 focus:bg-white disabled:opacity-50"
+        className="mt-1 w-full rounded-lg border border-[#d8e5f6] bg-[#f8fbff] px-3 py-2.5 text-sm font-black text-[#00205b] outline-none transition focus:border-[#bf0d3e] focus:bg-white disabled:opacity-50"
       >
         {options.map((option) => (
           <option key={option.value || option.label} value={option.value}>

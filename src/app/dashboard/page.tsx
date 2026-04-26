@@ -96,7 +96,7 @@ export default function DashboardPage() {
         <p className="text-sm font-black uppercase tracking-wide text-red-700">Member command center</p>
         <h1 className="mt-2 text-3xl font-black text-blue-950 sm:text-5xl">Track the people who make decisions.</h1>
         <p className="mt-3 max-w-3xl text-sm font-semibold leading-6 text-blue-950/75">
-          Your RepWatchr workspace is where profile, tracking, map, claims, votes, and GideonAI research tools come together.
+          Your RepWatchr workspace is where profile, tracking, map, claims, votes, and Faretta AI research tools come together.
         </p>
       </div>
 
@@ -150,7 +150,7 @@ export default function DashboardPage() {
           </h2>
           <p className="mt-2 text-sm font-semibold leading-6 text-blue-950/75">
             Officials, candidates, and journalists can request manual
-            verification. Paid tools unlock only after approval.
+            verification. Reviewed submissions unlock only after approval.
           </p>
         </Link>
         <Link
@@ -164,8 +164,7 @@ export default function DashboardPage() {
             My claims and submissions
           </h2>
           <p className="mt-2 text-sm font-semibold leading-6 text-gray-600">
-            Track claim status, subscription state, and reviewed bio or media
-            submissions.
+            Track claim status and reviewed bio or media submissions.
           </p>
         </Link>
         <Link
@@ -275,7 +274,7 @@ export default function DashboardPage() {
           {grades.length === 0 ? (
             <div className="mt-4 rounded-lg border border-gray-200 bg-gray-50 p-8 text-center">
               <p className="text-gray-500">
-                You haven&apos;t graded anyone yet. Verified Texans can assign A–F grades on
+                You haven&apos;t graded anyone yet. Verified Texans can assign A-F grades on
                 any official or school-board profile.
               </p>
             </div>

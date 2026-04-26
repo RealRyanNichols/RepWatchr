@@ -70,7 +70,7 @@ export default function ProfileClaimForm({
           </h1>
           <p className="mt-3 text-sm font-semibold leading-6 text-gray-600">
             Profile claims require a RepWatchr account, manual verification, and
-            admin approval before paid publishing tools unlock.
+            admin approval before reviewed submissions unlock.
           </p>
           <div className="mt-6 flex justify-center gap-3">
             <Link
@@ -174,9 +174,8 @@ export default function ProfileClaimForm({
             Manual review is next
           </h1>
           <p className="mt-3 text-sm font-semibold leading-6 text-emerald-900">
-            RepWatchr will review the proof. Paid profile publishing tools only
-            unlock after approval, and submitted content remains hidden until it
-            is reviewed.
+            RepWatchr will review the proof. Submitted content remains hidden
+            until it is reviewed.
           </p>
           <Link
             href="/dashboard/claims"
@@ -199,10 +198,10 @@ export default function ProfileClaimForm({
           Claim a RepWatchr profile
         </h1>
         <p className="mt-3 text-sm font-semibold leading-6 text-gray-600">
-          Verification is strict and manual. Approved claimants can buy member
-          tools for a reviewed public bio, statement, media, and links. They
-          cannot edit RepWatchr facts, evidence, scores, source records, red
-          flags, or research gaps.
+          Verification is strict and manual. Approved claimants can submit a
+          reviewed public bio, statement, media, and links. They cannot edit
+          RepWatchr facts, evidence, scores, source records, red flags, or
+          research gaps.
         </p>
 
         {error ? (
@@ -333,8 +332,8 @@ export default function ProfileClaimForm({
             />
             <span className="text-sm font-bold leading-6 text-amber-950">
               I understand that RepWatchr facts, source records, evidence,
-              scores, research gaps, and red flags cannot be purchased or edited
-              by a claimed profile. Submitted content is separate and must be
+              scores, research gaps, and red flags cannot be edited by a
+              claimed profile. Submitted content is separate and must be
               reviewed before publication.
             </span>
           </label>

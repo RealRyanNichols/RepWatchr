@@ -1,7 +1,6 @@
 "use client";
 
 import { useMemo, useState } from "react";
-import Link from "next/link";
 import GideonSearchBox from "@/components/shared/GideonSearchBox";
 import { collectGideonInteraction } from "@/lib/gideon-client";
 
@@ -45,16 +44,24 @@ function buildAnswer(input: string): string {
 }
 
 export default function GideonConsole({ initialQuery = "" }: GideonConsoleProps) {
-  const [input, setInput] = useState(initialQuery);
+  const initialQuestion = initialQuery.trim();
+  const [input, setInput] = useState("");
   const [isAsking, setIsAsking] = useState(false);
   const [liveError, setLiveError] = useState<string | null>(null);
-  const [messages, setMessages] = useState<Message[]>([
-    {
-      role: "gideon",
-      content:
-        "I am Gideon inside RepWatchr. Ask for a rep, school board, city, county, district, race, vote, donor, red flag, praise report, or research path.",
-    },
-  ]);
+  const [messages, setMessages] = useState<Message[]>(() =>
+    initialQuestion
+      ? [
+          { role: "user", content: initialQuestion },
+          { role: "gideon", content: buildAnswer(initialQuestion) },
+        ]
+      : [
+          {
+            role: "gideon",
+            content:
+              "I am Faretta AI inside RepWatchr. Ask for a rep, school board, city, county, district, race, vote, donor, red flag, praise report, or research path.",
+          },
+        ]
+  );
   const nextAnswer = useMemo(() => buildAnswer(input), [input]);
 
   async function send(nextInput = input, kind: "chat" | "prompt_button" = "chat") {
@@ -104,21 +111,15 @@ export default function GideonConsole({ initialQuery = "" }: GideonConsoleProps)
       <div className="border-b border-white/10 bg-[linear-gradient(135deg,#0A0E1A_0%,#131826_48%,#1E2538_100%)] p-5">
         <div className="flex flex-col gap-4 lg:flex-row lg:items-start lg:justify-between">
           <div>
-            <p className="text-xs font-black uppercase tracking-[0.18em] text-[#D4A855]">GideonAI</p>
-            <h2 className="mt-2 text-3xl font-black tracking-tight text-[#F4EFE4]">Truth, tested.</h2>
+            <p className="text-xs font-black uppercase tracking-[0.18em] text-[#D4A855]">Faretta AI</p>
+            <h2 className="mt-2 text-3xl font-black tracking-tight text-[#F4EFE4]">Ask. Search. Build the record.</h2>
             <p className="mt-2 max-w-2xl text-sm font-semibold leading-6 text-[#9CA3B8]">
-              This first RepWatchr integration searches the public data, collects research direction, and prompts the member for the facts needed to find the right official or school-board record.
+              This RepWatchr search bar is the AI chatbot. Ask in plain English and it will help find the right official, school-board record, source, vote, or research path.
             </p>
           </div>
-          <Link
-            href="/search"
-            className="rounded-xl bg-[#D4A855] px-4 py-3 text-sm font-black text-[#0A0E1A] transition hover:bg-[#FF6B2C]"
-          >
-            Open full search
-          </Link>
         </div>
         <div className="mt-5">
-          <GideonSearchBox compact placeholder="Search RepWatchr, or ask Gideon what to find..." />
+          <GideonSearchBox compact placeholder="Ask Faretta AI what to find..." />
         </div>
       </div>
 
@@ -131,7 +132,7 @@ export default function GideonConsole({ initialQuery = "" }: GideonConsoleProps)
                 className={message.role === "gideon" ? "rounded-2xl bg-white/10 p-4" : "ml-auto max-w-[86%] rounded-2xl bg-[#D4A855] p-4 text-[#0A0E1A]"}
               >
                 <p className="text-xs font-black uppercase tracking-wide opacity-70">
-                  {message.role === "gideon" ? "Gideon" : "You"}
+                  {message.role === "gideon" ? "Faretta AI" : "You"}
                 </p>
                 <p className="mt-1 text-sm font-semibold leading-6">{message.content}</p>
               </div>
@@ -145,14 +146,14 @@ export default function GideonConsole({ initialQuery = "" }: GideonConsoleProps)
             className="mt-5"
           >
             <label htmlFor="gideon-chat-input" className="sr-only">
-              Ask Gideon
+              Ask Faretta AI
             </label>
             <textarea
               id="gideon-chat-input"
               value={input}
               onChange={(event) => setInput(event.target.value)}
               rows={3}
-              placeholder="Tell Gideon what you are trying to find..."
+              placeholder="Tell Faretta AI what you are trying to find..."
               className="w-full resize-none rounded-xl border border-white/10 bg-white/10 px-4 py-3 text-sm font-semibold text-[#F4EFE4] placeholder:text-[#9CA3B8] focus:border-[#D4A855] focus:outline-none focus:ring-1 focus:ring-[#D4A855]"
             />
             <div className="mt-3 flex flex-wrap items-center justify-between gap-3">
@@ -164,7 +165,7 @@ export default function GideonConsole({ initialQuery = "" }: GideonConsoleProps)
                 disabled={isAsking}
                 className="rounded-xl bg-[#D4A855] px-5 py-2.5 text-sm font-black text-[#0A0E1A] transition hover:bg-[#FF6B2C] disabled:cursor-not-allowed disabled:opacity-60"
               >
-                {isAsking ? "Asking..." : "Ask Gideon"}
+                {isAsking ? "Asking..." : "Ask Faretta AI"}
               </button>
             </div>
           </form>
@@ -189,7 +190,7 @@ export default function GideonConsole({ initialQuery = "" }: GideonConsoleProps)
             ))}
           </div>
           <div className="mt-5 rounded-xl border border-[#D4A855]/40 bg-[#D4A855]/10 p-4">
-            <p className="text-sm font-black text-[#F4EFE4]">Data Gideon should collect</p>
+            <p className="text-sm font-black text-[#F4EFE4]">What Faretta AI should collect</p>
             <ul className="mt-3 space-y-2 text-sm font-semibold leading-6 text-[#9CA3B8]">
               <li>Name, school, city, county, district, race, or office.</li>
               <li>What happened, when, and who was involved.</li>
