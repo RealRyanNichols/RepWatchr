@@ -268,6 +268,65 @@ export function getOfficialWithScores(
   };
 }
 
+export function getRepWatchrDataStats() {
+  const officials = getAllOfficials();
+  const scoreCards = getAllScoreCards();
+  const bills = getAllBills();
+  const issueCategories = getIssueCategories();
+  const newsArticles = getAllNews();
+  const fundingSummaries = officials
+    .map((official) => getFundingSummary(official.id))
+    .filter((funding): funding is FundingSummary => Boolean(funding));
+  const redFlagRows = officials.flatMap((official) => getRedFlags(official.id));
+  const levelCounts = officials.reduce<Record<GovernmentLevel, number>>(
+    (acc, official) => {
+      acc[official.level] = (acc[official.level] ?? 0) + 1;
+      return acc;
+    },
+    {
+      federal: 0,
+      state: 0,
+      county: 0,
+      city: 0,
+      "school-board": 0,
+    },
+  );
+  const counties = new Set(officials.flatMap((official) => official.county));
+  const publicSourceUrls = new Set<string>();
+
+  fundingSummaries.forEach((funding) => {
+    funding.sources.forEach((source) => {
+      if (source.url) publicSourceUrls.add(source.url);
+    });
+  });
+  redFlagRows.forEach((flag) => {
+    if (flag.sourceUrl) publicSourceUrls.add(flag.sourceUrl);
+  });
+  bills.forEach((bill) => {
+    if (bill.sourceUrl) publicSourceUrls.add(bill.sourceUrl);
+  });
+  newsArticles.forEach((article) => {
+    if (article.sourceUrl) publicSourceUrls.add(article.sourceUrl);
+  });
+
+  return {
+    officialFiles: officials.length,
+    nonSchoolOfficialFiles: officials.filter((official) => official.level !== "school-board").length,
+    legacySchoolBoardOfficialFiles: levelCounts["school-board"],
+    levelCounts,
+    counties: counties.size,
+    scoreCards: scoreCards.length,
+    fundingSummaries: fundingSummaries.length,
+    redFlagItems: redFlagRows.length,
+    officialsWithRedFlags: new Set(redFlagRows.map((flag) => flag.officialId)).size,
+    bills: bills.length,
+    issueCategories: issueCategories.length,
+    newsArticles: newsArticles.length,
+    featuredNewsArticles: newsArticles.filter((article) => article.featured).length,
+    publicSourceUrls: publicSourceUrls.size,
+  };
+}
+
 // ---------------------------------------------------------------------------
 // News / Articles
 // ---------------------------------------------------------------------------

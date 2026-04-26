@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { Suspense } from "react";
-import { getAllOfficials, getAllScoreCards } from "@/lib/data";
+import { getAllOfficials, getAllScoreCards, getRepWatchrDataStats } from "@/lib/data";
 import { getSchoolBoardStats } from "@/lib/school-board-research";
 import OfficialGrid from "@/components/officials/OfficialGrid";
 import type { GovernmentLevel } from "@/types";
@@ -28,6 +28,7 @@ export default function OfficialsPage() {
   const officials = getAllOfficials();
   const scoreCards = getAllScoreCards();
   const schoolBoardStats = getSchoolBoardStats();
+  const dataStats = getRepWatchrDataStats();
   const levelCounts = officials.reduce<Record<GovernmentLevel, number>>(
     (acc, official) => {
       acc[official.level] = (acc[official.level] ?? 0) + 1;
@@ -43,10 +44,10 @@ export default function OfficialsPage() {
   );
   const trackedCounties = new Set(officials.flatMap((official) => official.county)).size;
   const statCards = [
-    { label: "Official profiles", value: formatNumber(officials.length), detail: "Loaded from local public-record files" },
-    { label: "School-board profiles", value: formatNumber(schoolBoardStats.candidates), detail: `${formatNumber(schoolBoardStats.districts)} Texas districts loaded` },
+    { label: "Official JSON files", value: formatNumber(dataStats.officialFiles), detail: `${formatNumber(dataStats.nonSchoolOfficialFiles)} non-school officials + ${formatNumber(dataStats.legacySchoolBoardOfficialFiles)} legacy school-board files` },
+    { label: "School-board dossiers", value: formatNumber(schoolBoardStats.candidates), detail: `${formatNumber(schoolBoardStats.districts)} Texas roster districts loaded` },
     { label: "Counties touched", value: formatNumber(Math.max(trackedCounties, schoolBoardStats.counties)), detail: "County, city, and school-board coverage" },
-    { label: "Source links", value: formatNumber(schoolBoardStats.sourceCount), detail: "School-board roster and profile sources" },
+    { label: "Source URLs", value: formatNumber(dataStats.publicSourceUrls + schoolBoardStats.sourceCount), detail: "Official data, school boards, votes, funding, red flags, and news" },
   ];
   const actionCards = [
     {

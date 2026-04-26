@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { getAllOfficials, getScoreCard, getIssueCategories, getAllNews } from "@/lib/data";
+import { getAllOfficials, getScoreCard, getIssueCategories, getAllNews, getRepWatchrDataStats } from "@/lib/data";
 import { getSchoolBoardStats } from "@/lib/school-board-research";
 import { buildPickerStates } from "@/lib/picker-data";
 import OfficialCard from "@/components/officials/OfficialCard";
@@ -43,16 +43,14 @@ export default function HomePage() {
   const officials = getAllOfficials();
   const issueCategories = getIssueCategories();
   const schoolBoardStats = getSchoolBoardStats();
+  const dataStats = getRepWatchrDataStats();
   const pickerStates = buildPickerStates();
 
-  // Compute real stats from data
-  const counties = new Set(officials.flatMap((o) => o.county));
-
   const stats = [
-    { label: "Officials Tracked", value: String(officials.length) },
-    { label: "Issue Categories", value: String(issueCategories.length) },
-    { label: "Counties Covered", value: String(counties.size) },
-    { label: "School Board Profiles", value: String(schoolBoardStats.candidates) },
+    { label: "Official Files", value: String(dataStats.officialFiles) },
+    { label: "Non-School Officials", value: String(dataStats.nonSchoolOfficialFiles) },
+    { label: "School Board Dossiers", value: String(schoolBoardStats.candidates) },
+    { label: "Source URLs", value: String(dataStats.publicSourceUrls + schoolBoardStats.sourceCount) },
   ];
 
   const featuredOfficials = officials

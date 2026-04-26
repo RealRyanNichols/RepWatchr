@@ -4,12 +4,13 @@ import {
   getSchoolBoardCompletionReport,
   getSchoolBoardStats,
 } from "@/lib/school-board-research";
+import { getRepWatchrDataStats } from "@/lib/data";
 import { getSchoolBoardCandidateUrl, getSchoolBoardDistrictUrl } from "@/lib/school-board-urls";
 
 export const metadata: Metadata = {
   title: "RepWatchr Buildout Dashboard",
   description:
-    "Live percentage-of-completion dashboard for every district, every member profile, every source URL, and every research gap on RepWatchr.",
+    "Computed buildout dashboard for loaded profile files, roster dossiers, source URLs, public-record gaps, and analytics events on RepWatchr.",
   robots: { index: false, follow: false },
 };
 
@@ -21,6 +22,7 @@ function ProgressBar({ percent, tone = "blue" }: { percent: number; tone?: "blue
     red: "bg-red-600",
   }[tone];
   const safe = Math.max(0, Math.min(100, percent));
+
   return (
     <div className="h-2 w-full overflow-hidden rounded-full bg-gray-100">
       <div className={`h-full ${color} transition-all duration-500`} style={{ width: `${safe}%` }} />
@@ -28,39 +30,94 @@ function ProgressBar({ percent, tone = "blue" }: { percent: number; tone?: "blue
   );
 }
 
-function toneFor(percent: number): "red" | "amber" | "blue" | "green" {
-  if (percent >= 75) return "green";
-  if (percent >= 50) return "blue";
-  if (percent >= 25) return "amber";
-  return "red";
+function formatCount(value: number) {
+  return value.toLocaleString();
 }
 
 export default function BuildoutDashboardPage() {
   const report = getSchoolBoardCompletionReport();
   const stats = getSchoolBoardStats();
+  const dataStats = getRepWatchrDataStats();
 
-  // Sort districts by completion ascending - show what needs work first.
-  const sortedDistricts = [...report.districtCompletions].sort((a, b) => a.percent - b.percent);
-  const sortedMembers = [...report.candidateCompletions].sort((a, b) => a.percent - b.percent);
+  const visibleProfiles = dataStats.nonSchoolOfficialFiles + stats.candidates;
+  const sourceUrls = dataStats.publicSourceUrls + stats.sourceCount;
+  const openWork = stats.gapCount + report.totalBrokenSources;
 
-  // Areas of the site beyond school boards. These are static for now -
-  // hard-coded to reflect the real state of each major surface so the
-  // operator can see what's "done" vs "needs more work" at a glance.
-  const siteAreas = [
-    { label: "School Board Watch (TX)", percent: report.overallPercent, status: `${report.totalDistricts} districts · ${report.totalMembers} members loaded`, href: "/school-boards" },
-    { label: "Federal officials", percent: 70, status: "Sourced. Funding deep-dive in progress.", href: "/officials?level=federal" },
-    { label: "Texas state officials", percent: 75, status: "Texas House & Senate scorecards live.", href: "/officials?level=state" },
-    { label: "Texas county officials", percent: 60, status: `30+ counties loaded (${stats.counties} school-board counties).`, href: "/officials?level=county" },
-    { label: "Texas city officials", percent: 55, status: "43+ cities live; mayors prioritized.", href: "/officials?level=city" },
-    { label: "Citizen voting (approve/disapprove)", percent: 100, status: "Live on every official + every school-board candidate.", href: "/officials" },
-    { label: "Citizen letter grades (A-F)", percent: 100, status: "Live on every profile. Statewide + in-district GPA.", href: "/school-boards" },
-    { label: "Public comments / Q&A", percent: 100, status: "Live on every profile. Ranked but not censored.", href: "/feedback" },
-    { label: "Profile claim flow (officials)", percent: 90, status: "Stripe wired. Admin review queue active.", href: "/profiles/claim" },
-    { label: "Faretta AI research console", percent: 60, status: "Edge function bridge configured.", href: "/faretta-ai" },
-    { label: "Public funding / donor data", percent: 40, status: "Federal + state cycles loaded; locals queued.", href: "/funding" },
-    { label: "Issue scorecards", percent: 80, status: "5 weighted issue categories live.", href: "/scorecards" },
-    { label: "Red flags index", percent: 65, status: "Curated; verifier review ongoing.", href: "/red-flags" },
-    { label: "News / accountability articles", percent: 50, status: "Initial set published. Beat reporters needed.", href: "/news" },
+  const sortedDistricts = [...report.districtCompletions].sort((a, b) => a.percent - b.percent).slice(0, 24);
+  const sortedMembers = [...report.candidateCompletions].sort((a, b) => a.percent - b.percent).slice(0, 30);
+
+  const inventoryRows = [
+    {
+      label: "Non-school official files",
+      value: dataStats.nonSchoolOfficialFiles,
+      detail: `${dataStats.levelCounts.federal} federal, ${dataStats.levelCounts.state} state, ${dataStats.levelCounts.county} county, ${dataStats.levelCounts.city} city records loaded from src/data/officials.`,
+      href: "/officials",
+    },
+    {
+      label: "School-board roster dossiers",
+      value: stats.candidates,
+      detail: `${stats.districts} Texas districts, ${stats.districtsWithRosters} official rosters, ${stats.completedDossiers} non-stub dossiers.`,
+      href: "/school-boards",
+    },
+    {
+      label: "Public source URLs",
+      value: sourceUrls,
+      detail: `${stats.sourceCount} school-board source URLs plus ${dataStats.publicSourceUrls} official, funding, vote, red-flag, or news URLs.`,
+      href: "/methodology",
+    },
+    {
+      label: "Scorecard files",
+      value: dataStats.scoreCards,
+      detail: `${dataStats.issueCategories} issue categories and ${dataStats.bills} bill or vote files are loaded.`,
+      href: "/scorecards",
+    },
+    {
+      label: "Funding summaries",
+      value: dataStats.fundingSummaries,
+      detail: "Funding cards render only when a funding JSON file exists for that official.",
+      href: "/funding",
+    },
+    {
+      label: "Red-flag records",
+      value: dataStats.redFlagItems,
+      detail: `${dataStats.officialsWithRedFlags} officials have one or more sourced red-flag records.`,
+      href: "/red-flags",
+    },
+    {
+      label: "News articles",
+      value: dataStats.newsArticles,
+      detail: `${dataStats.featuredNewsArticles} featured articles are marked for homepage or news emphasis.`,
+      href: "/news",
+    },
+    {
+      label: "Open research work",
+      value: openWork,
+      detail: `${stats.gapCount} candidate research gaps plus ${report.totalBrokenSources} empty source URLs.`,
+      href: "/school-boards",
+    },
+  ];
+
+  const analyticsRows = [
+    {
+      label: "Vercel event analytics",
+      value: "3 events",
+      detail: "share_click, picker_drilldown, and profile_open are emitted from visible user actions.",
+    },
+    {
+      label: "Faretta AI collection",
+      value: "4 kinds",
+      detail: "search, chat, research_note, and prompt_button can be stored through /api/faretta/collect.",
+    },
+    {
+      label: "Live engagement reads",
+      value: "4 reads",
+      detail: "approval_ratings, citizen_grade_summary, comments, and citizen_votes power the live School Board counter.",
+    },
+    {
+      label: "Member workspace tables",
+      value: "3 tables",
+      detail: "member_tracked_items, member_profiles, and profile_claims feed the logged-in dashboard and claim flow.",
+    },
   ];
 
   return (
@@ -68,51 +125,57 @@ export default function BuildoutDashboardPage() {
       <section className="border-b border-blue-100 bg-[linear-gradient(135deg,#ffffff_0%,#eff6ff_50%,#fff7ed_100%)]">
         <div className="mx-auto max-w-7xl px-4 py-10 sm:px-6 lg:px-8">
           <p className="text-xs font-black uppercase tracking-wide text-red-700">Operator dashboard</p>
-          <h1 className="mt-1 text-3xl font-black text-blue-950 sm:text-5xl">RepWatchr buildout completion</h1>
+          <h1 className="mt-1 text-3xl font-black text-blue-950 sm:text-5xl">RepWatchr buildout numbers</h1>
           <p className="mt-3 max-w-3xl text-sm font-semibold leading-6 text-blue-950/75">
-            Every percentage on this page is computed from real data loaded into RepWatchr. Districts, members, and source URLs that need work are listed first. Click any row to jump to that district or profile.
+            These are the counts the app is actually loading or querying today. No sales totals. No inflated claims. The open work rows show what still needs records, sources, or profile depth.
           </p>
 
           <div className="mt-6 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
             <div className="rounded-2xl border border-blue-200 bg-white p-5 shadow-sm">
-              <p className="text-xs font-black uppercase tracking-wide text-blue-700">Site overall</p>
-              <p className="mt-1 text-4xl font-black text-blue-950">{Math.round(siteAreas.reduce((s, a) => s + a.percent, 0) / siteAreas.length)}%</p>
-              <p className="mt-1 text-xs font-semibold text-gray-500">Avg across {siteAreas.length} surfaces</p>
-              <div className="mt-3"><ProgressBar percent={Math.round(siteAreas.reduce((s, a) => s + a.percent, 0) / siteAreas.length)} tone="blue" /></div>
+              <p className="text-xs font-black uppercase tracking-wide text-blue-700">Visible profiles</p>
+              <p className="mt-1 text-4xl font-black text-blue-950">{formatCount(visibleProfiles)}</p>
+              <p className="mt-1 text-xs font-semibold text-gray-500">
+                {dataStats.nonSchoolOfficialFiles} non-school officials plus {stats.candidates} school-board dossiers.
+              </p>
             </div>
             <div className="rounded-2xl border border-emerald-200 bg-white p-5 shadow-sm">
-              <p className="text-xs font-black uppercase tracking-wide text-emerald-700">School-board overall</p>
+              <p className="text-xs font-black uppercase tracking-wide text-emerald-700">School-board completion</p>
               <p className="mt-1 text-4xl font-black text-emerald-700">{report.overallPercent}%</p>
-              <p className="mt-1 text-xs font-semibold text-gray-500">{report.completedDistricts}/{report.totalDistricts} districts ≥75% · {report.completedMembers}/{report.totalMembers} members ≥75%</p>
-              <div className="mt-3"><ProgressBar percent={report.overallPercent} tone="green" /></div>
+              <p className="mt-1 text-xs font-semibold text-gray-500">
+                {report.completedDistricts}/{report.totalDistricts} districts and {report.completedMembers}/{report.totalMembers} members at 75% or better.
+              </p>
+              <div className="mt-3">
+                <ProgressBar percent={report.overallPercent} tone="green" />
+              </div>
             </div>
             <div className="rounded-2xl border border-amber-200 bg-white p-5 shadow-sm">
-              <p className="text-xs font-black uppercase tracking-wide text-amber-700">2026 ballot prepped</p>
-              <p className="mt-1 text-4xl font-black text-amber-700">{stats.onBallot}</p>
-              <p className="mt-1 text-xs font-semibold text-gray-500">{stats.tracked2026Districts} districts in play</p>
-              <div className="mt-3"><ProgressBar percent={Math.min(100, stats.onBallot * 4)} tone="amber" /></div>
+              <p className="text-xs font-black uppercase tracking-wide text-amber-700">Source URLs</p>
+              <p className="mt-1 text-4xl font-black text-amber-700">{formatCount(sourceUrls)}</p>
+              <p className="mt-1 text-xs font-semibold text-gray-500">
+                {stats.sourceCount} school-board plus {dataStats.publicSourceUrls} official data URLs.
+              </p>
             </div>
             <div className="rounded-2xl border border-red-200 bg-white p-5 shadow-sm">
-              <p className="text-xs font-black uppercase tracking-wide text-red-700">Broken / empty sources</p>
-              <p className="mt-1 text-4xl font-black text-red-700">{report.totalBrokenSources}</p>
-              <p className="mt-1 text-xs font-semibold text-gray-500">URLs with empty href across districts + members</p>
-              <div className="mt-3"><ProgressBar percent={Math.max(0, 100 - Math.min(100, report.totalBrokenSources * 2))} tone="red" /></div>
+              <p className="text-xs font-black uppercase tracking-wide text-red-700">Open work</p>
+              <p className="mt-1 text-4xl font-black text-red-700">{formatCount(openWork)}</p>
+              <p className="mt-1 text-xs font-semibold text-gray-500">
+                {stats.gapCount} research gaps plus {report.totalBrokenSources} empty source URLs.
+              </p>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Site surfaces */}
       <section className="mx-auto max-w-7xl px-4 py-10 sm:px-6 lg:px-8">
-        <div className="mb-6 flex items-end justify-between">
+        <div className="mb-6 flex items-end justify-between gap-4">
           <div>
-            <p className="text-xs font-black uppercase tracking-wide text-red-700">By surface</p>
-            <h2 className="text-2xl font-black text-gray-950">Every section of the site</h2>
+            <p className="text-xs font-black uppercase tracking-wide text-red-700">Data inventory</p>
+            <h2 className="text-2xl font-black text-gray-950">What the site is actually pulling</h2>
           </div>
           <p className="text-xs font-semibold text-gray-500">Click a row to open it.</p>
         </div>
         <div className="grid gap-3 lg:grid-cols-2">
-          {siteAreas.map((area) => (
+          {inventoryRows.map((area) => (
             <Link
               key={area.label}
               href={area.href}
@@ -120,31 +183,39 @@ export default function BuildoutDashboardPage() {
             >
               <div className="flex items-baseline justify-between gap-3">
                 <p className="text-sm font-black text-gray-950">{area.label}</p>
-                <p className={`text-2xl font-black ${area.percent >= 75 ? "text-emerald-700" : area.percent >= 50 ? "text-blue-700" : area.percent >= 25 ? "text-amber-700" : "text-red-700"}`}>
-                  {area.percent}%
-                </p>
+                <p className="text-2xl font-black text-blue-950">{formatCount(area.value)}</p>
               </div>
-              <p className="mt-1 text-xs font-semibold text-gray-500">{area.status}</p>
-              <div className="mt-3"><ProgressBar percent={area.percent} tone={toneFor(area.percent)} /></div>
+              <p className="mt-1 text-xs font-semibold text-gray-500">{area.detail}</p>
             </Link>
           ))}
         </div>
       </section>
 
-      {/* District-level completion */}
+      <section className="border-y border-blue-100 bg-blue-50 py-10">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <div className="mb-6">
+            <p className="text-xs font-black uppercase tracking-wide text-red-700">Analytics map</p>
+            <h2 className="text-2xl font-black text-gray-950">What user actions are actually tracked</h2>
+            <p className="mt-1 text-xs font-semibold text-gray-500">These are event and table sources wired into the app today.</p>
+          </div>
+          <div className="grid gap-3 md:grid-cols-2 xl:grid-cols-4">
+            {analyticsRows.map((item) => (
+              <div key={item.label} className="rounded-xl border border-blue-100 bg-white p-4 shadow-sm">
+                <p className="text-2xl font-black text-blue-950">{item.value}</p>
+                <p className="mt-1 text-xs font-black uppercase tracking-wide text-red-700">{item.label}</p>
+                <p className="mt-2 text-xs font-semibold leading-5 text-slate-600">{item.detail}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
       <section className="bg-white py-10">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <div className="mb-6 flex flex-col gap-2 sm:flex-row sm:items-end sm:justify-between">
-            <div>
-              <p className="text-xs font-black uppercase tracking-wide text-red-700">District completion · {report.totalDistricts} districts</p>
-              <h2 className="text-2xl font-black text-gray-950">What every district needs next</h2>
-              <p className="mt-1 text-xs font-semibold text-gray-500">Sorted by completion ascending. Click a row to open the district.</p>
-            </div>
-            <div className="flex gap-3 text-xs font-bold text-gray-500">
-              <span className="rounded-full bg-emerald-100 px-3 py-1 text-emerald-800">{report.districtCompletions.filter((d) => d.percent >= 75).length} ≥75%</span>
-              <span className="rounded-full bg-amber-100 px-3 py-1 text-amber-800">{report.districtCompletions.filter((d) => d.percent >= 25 && d.percent < 75).length} 25-74%</span>
-              <span className="rounded-full bg-red-100 px-3 py-1 text-red-800">{report.districtCompletions.filter((d) => d.percent < 25).length} &lt;25%</span>
-            </div>
+          <div className="mb-6">
+            <p className="text-xs font-black uppercase tracking-wide text-red-700">District completion</p>
+            <h2 className="text-2xl font-black text-gray-950">Districts that need the most work</h2>
+            <p className="mt-1 text-xs font-semibold text-gray-500">Lowest completion districts are listed first.</p>
           </div>
           <div className="overflow-hidden rounded-xl border border-gray-200">
             <table className="w-full divide-y divide-gray-200 text-sm">
@@ -152,36 +223,31 @@ export default function BuildoutDashboardPage() {
                 <tr>
                   <th className="px-4 py-3">District</th>
                   <th className="px-4 py-3">Members</th>
-                  <th className="px-4 py-3">Avg member %</th>
                   <th className="px-4 py-3">Sources</th>
-                  <th className="px-4 py-3">2026 ballot</th>
                   <th className="px-4 py-3">Completion</th>
                   <th className="px-4 py-3">Top gap</th>
                 </tr>
               </thead>
               <tbody className="divide-y divide-gray-100 bg-white text-gray-700">
-                {sortedDistricts.map((d) => (
-                  <tr key={d.district_slug} className="hover:bg-gray-50">
+                {sortedDistricts.map((district) => (
+                  <tr key={district.district_slug} className="hover:bg-gray-50">
                     <td className="px-4 py-3">
-                      <Link href={getSchoolBoardDistrictUrl({ district_slug: d.district_slug })} className="font-bold text-blue-700 hover:text-blue-900">
-                        {d.district}
+                      <Link href={getSchoolBoardDistrictUrl({ district_slug: district.district_slug })} className="font-bold text-blue-700 hover:text-blue-900">
+                        {district.district}
                       </Link>
-                      <p className="text-xs text-gray-400">{d.county} County</p>
+                      <p className="text-xs text-gray-400">{district.county} County</p>
                     </td>
-                    <td className="px-4 py-3 font-semibold">
-                      {d.totalMembers}
-                      {d.stubMembers > 0 ? <span className="ml-1 text-xs text-amber-600">({d.stubMembers} stub)</span> : null}
-                    </td>
-                    <td className="px-4 py-3 font-semibold">{d.averageMemberPercent}%</td>
-                    <td className="px-4 py-3 font-semibold">{d.sourceCount}</td>
-                    <td className="px-4 py-3 font-semibold">{d.on2026BallotCount}</td>
+                    <td className="px-4 py-3 font-semibold">{district.totalMembers}</td>
+                    <td className="px-4 py-3 font-semibold">{district.sourceCount}</td>
                     <td className="px-4 py-3">
                       <div className="flex items-center gap-2">
-                        <span className={`font-black ${d.percent >= 75 ? "text-emerald-700" : d.percent >= 50 ? "text-blue-700" : d.percent >= 25 ? "text-amber-700" : "text-red-700"}`}>{d.percent}%</span>
-                        <div className="w-24"><ProgressBar percent={d.percent} tone={toneFor(d.percent)} /></div>
+                        <span className="font-black text-blue-950">{district.percent}%</span>
+                        <div className="w-24">
+                          <ProgressBar percent={district.percent} />
+                        </div>
                       </div>
                     </td>
-                    <td className="px-4 py-3 text-xs text-gray-500">{d.missing[0] ?? "All checks passing"}</td>
+                    <td className="px-4 py-3 text-xs text-gray-500">{district.missing[0] ?? "All checks passing"}</td>
                   </tr>
                 ))}
               </tbody>
@@ -190,83 +256,35 @@ export default function BuildoutDashboardPage() {
         </div>
       </section>
 
-      {/* Member-level completion */}
       <section className="mx-auto max-w-7xl px-4 py-10 sm:px-6 lg:px-8">
-        <div className="mb-6 flex flex-col gap-2 sm:flex-row sm:items-end sm:justify-between">
-          <div>
-            <p className="text-xs font-black uppercase tracking-wide text-red-700">Member profiles · {report.totalMembers} loaded</p>
-            <h2 className="text-2xl font-black text-gray-950">Stub profiles flagged for follow-up</h2>
-            <p className="mt-1 text-xs font-semibold text-gray-500">Lowest-completion members first. Click any name to open the profile.</p>
-          </div>
-          <div className="flex gap-3 text-xs font-bold text-gray-500">
-            <span className="rounded-full bg-emerald-100 px-3 py-1 text-emerald-800">{report.candidateCompletions.filter((c) => c.percent >= 75).length} ≥75%</span>
-            <span className="rounded-full bg-amber-100 px-3 py-1 text-amber-800">{report.candidateCompletions.filter((c) => c.percent >= 25 && c.percent < 75).length} 25-74%</span>
-            <span className="rounded-full bg-red-100 px-3 py-1 text-red-800">{report.candidateCompletions.filter((c) => c.percent < 25).length} &lt;25%</span>
-          </div>
+        <div className="mb-6">
+          <p className="text-xs font-black uppercase tracking-wide text-red-700">Member completion</p>
+          <h2 className="text-2xl font-black text-gray-950">Profiles that need follow-up</h2>
+          <p className="mt-1 text-xs font-semibold text-gray-500">The first 30 lowest-completion member profiles are shown.</p>
         </div>
-
         <div className="grid gap-3 md:grid-cols-2 lg:grid-cols-3">
-          {sortedMembers.slice(0, 30).map((c) => (
+          {sortedMembers.map((member) => (
             <Link
-              key={c.candidate_id}
-              href={getSchoolBoardCandidateUrl({ candidate_id: c.candidate_id, district_slug: c.district_slug })}
+              key={member.candidate_id}
+              href={getSchoolBoardCandidateUrl({ candidate_id: member.candidate_id, district_slug: member.district_slug })}
               className="block rounded-xl border border-gray-200 bg-white p-4 shadow-sm transition hover:-translate-y-0.5 hover:border-blue-300 hover:shadow"
             >
               <div className="flex items-baseline justify-between gap-2">
-                <p className="text-sm font-black text-gray-950">{c.full_name}</p>
-                <p className={`text-lg font-black ${c.percent >= 75 ? "text-emerald-700" : c.percent >= 50 ? "text-blue-700" : c.percent >= 25 ? "text-amber-700" : "text-red-700"}`}>
-                  {c.percent}%
-                </p>
+                <p className="text-sm font-black text-gray-950">{member.full_name}</p>
+                <p className="text-lg font-black text-blue-950">{member.percent}%</p>
               </div>
-              <p className="text-xs font-semibold text-gray-500">{c.district}</p>
-              <div className="mt-2"><ProgressBar percent={c.percent} tone={toneFor(c.percent)} /></div>
-              {c.missing.length > 0 ? (
+              <p className="text-xs font-semibold text-gray-500">{member.district}</p>
+              <div className="mt-2">
+                <ProgressBar percent={member.percent} />
+              </div>
+              {member.missing.length > 0 ? (
                 <p className="mt-2 text-xs leading-5 text-gray-500">
-                  Needs: <span className="font-semibold text-gray-700">{c.missing.slice(0, 3).join(", ")}</span>
-                  {c.missing.length > 3 ? ` +${c.missing.length - 3} more` : null}
+                  Needs: <span className="font-semibold text-gray-700">{member.missing.slice(0, 3).join(", ")}</span>
+                  {member.missing.length > 3 ? ` plus ${member.missing.length - 3} more` : null}
                 </p>
               ) : null}
-              <div className="mt-2 flex flex-wrap gap-1.5 text-[10px] font-bold uppercase tracking-wide">
-                {c.brokenSources > 0 ? <span className="rounded bg-red-100 px-2 py-0.5 text-red-700">{c.brokenSources} broken src</span> : null}
-                {c.hasGoodRecord ? <span className="rounded bg-emerald-100 px-2 py-0.5 text-emerald-700">good record</span> : null}
-                {c.hasFlag ? <span className="rounded bg-red-100 px-2 py-0.5 text-red-700">flag</span> : null}
-                {c.hasSilentSignals ? <span className="rounded bg-blue-100 px-2 py-0.5 text-blue-700">silent signal</span> : null}
-                {c.hasSocial ? <span className="rounded bg-slate-100 px-2 py-0.5 text-slate-700">social</span> : null}
-              </div>
             </Link>
           ))}
-        </div>
-        {sortedMembers.length > 30 ? (
-          <p className="mt-6 text-center text-xs font-semibold text-gray-500">
-            Showing the 30 lowest-completion members. {sortedMembers.length - 30} more loaded.
-          </p>
-        ) : null}
-      </section>
-
-      {/* Investigation queue rollup */}
-      <section className="bg-white py-10">
-        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <div className="mb-6">
-            <p className="text-xs font-black uppercase tracking-wide text-red-700">Investigation queue · {stats.gapCount} open items</p>
-            <h2 className="text-2xl font-black text-gray-950">Research gaps to close</h2>
-            <p className="mt-1 text-xs font-semibold text-gray-500">Top items per district - what to pull next.</p>
-          </div>
-          <div className="grid gap-3 md:grid-cols-2 lg:grid-cols-3">
-            {sortedDistricts
-              .filter((d) => d.missing.length > 0)
-              .slice(0, 12)
-              .map((d) => (
-                <div key={d.district_slug} className="rounded-xl border border-amber-200 bg-amber-50 p-4">
-                  <p className="text-sm font-black text-amber-950">{d.district}</p>
-                  <p className="mt-1 text-xs font-semibold text-amber-900/80">{d.county} County · {d.percent}% complete</p>
-                  <ul className="mt-2 space-y-1 text-xs leading-5 text-amber-900">
-                    {d.missing.slice(0, 3).map((item) => (
-                      <li key={item}>· {item}</li>
-                    ))}
-                  </ul>
-                </div>
-              ))}
-          </div>
         </div>
       </section>
     </div>

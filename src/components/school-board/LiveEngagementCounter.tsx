@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 import Link from "next/link";
 import { createClient } from "@/lib/supabase";
 
@@ -31,8 +31,9 @@ const initialState: LiveEngagement = {
 export default function LiveEngagementCounter() {
   const [data, setData] = useState<LiveEngagement>(initialState);
   const [loading, setLoading] = useState(true);
+  const [loadError, setLoadError] = useState<string | null>(null);
   const [pulse, setPulse] = useState(false);
-  const supabase = createClient();
+  const supabase = useMemo(() => createClient(), []);
 
   useEffect(() => {
     let cancelled = false;
@@ -47,6 +48,13 @@ export default function LiveEngagementCounter() {
       ]);
 
       if (cancelled) return;
+
+      const error = votesAgg.error ?? gradesAgg.error ?? commentsAgg.error ?? lastVote.error ?? lastComment.error;
+      if (error) {
+        setLoadError(error.message);
+        setLoading(false);
+        return;
+      }
 
       const votes = (votesAgg.data ?? []) as Array<{ total_votes: number; approve_count: number; disapprove_count: number }>;
       const totalVotes = votes.reduce((sum, row) => sum + Number(row.total_votes ?? 0), 0);
@@ -89,6 +97,7 @@ export default function LiveEngagementCounter() {
         lastVoteAt,
         lastCommentAt,
       });
+      setLoadError(null);
       setLoading(false);
       setPulse(true);
       setTimeout(() => setPulse(false), 800);
@@ -108,15 +117,17 @@ export default function LiveEngagementCounter() {
         <div>
           <p className="text-xs font-black uppercase tracking-wide text-red-700">Live citizen engagement</p>
           <p className="mt-1 text-xs font-semibold text-gray-500">
-            Updates every 30 seconds · only verified Texans count
+            Pulls Supabase votes, grades, comments, and latest activity every 30 seconds.
           </p>
         </div>
-        <span className={`inline-flex items-center gap-1.5 rounded-full bg-emerald-50 px-3 py-1 text-xs font-black text-emerald-700 transition ${pulse ? "ring-2 ring-emerald-300" : ""}`}>
+        <span className={`inline-flex items-center gap-1.5 rounded-full px-3 py-1 text-xs font-black transition ${
+          loadError ? "bg-red-50 text-red-700" : `bg-emerald-50 text-emerald-700 ${pulse ? "ring-2 ring-emerald-300" : ""}`
+        }`}>
           <span className="relative flex h-2 w-2">
-            <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-emerald-400 opacity-75" />
-            <span className="relative inline-flex h-2 w-2 rounded-full bg-emerald-500" />
+            {!loadError ? <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-emerald-400 opacity-75" /> : null}
+            <span className={`relative inline-flex h-2 w-2 rounded-full ${loadError ? "bg-red-500" : "bg-emerald-500"}`} />
           </span>
-          {loading ? "Loading" : "Live"}
+          {loading ? "Loading" : loadError ? "Unavailable" : "Live"}
         </span>
       </div>
 
@@ -127,7 +138,7 @@ export default function LiveEngagementCounter() {
         >
           <p className="text-3xl font-black text-blue-950">{data.totalVotes.toLocaleString()}</p>
           <p className="mt-1 text-xs font-bold uppercase tracking-wide text-gray-500">Verified votes cast</p>
-          <p className="mt-2 text-xs font-semibold text-blue-700">View leaderboard &rarr;</p>
+          <p className="mt-2 text-xs font-semibold text-blue-700">approval_ratings</p>
         </Link>
         <Link
           href="#sentiment"
@@ -135,7 +146,7 @@ export default function LiveEngagementCounter() {
         >
           <p className="text-3xl font-black text-emerald-700">{data.approvalPercentage.toFixed(1)}%</p>
           <p className="mt-1 text-xs font-bold uppercase tracking-wide text-gray-500">Approve rate</p>
-          <p className="mt-2 text-xs font-semibold text-emerald-700">{data.approveCount.toLocaleString()} approve · {data.disapproveCount.toLocaleString()} disapprove</p>
+          <p className="mt-2 text-xs font-semibold text-emerald-700">{data.approveCount.toLocaleString()} approve, {data.disapproveCount.toLocaleString()} disapprove</p>
         </Link>
         <Link
           href="#sentiment"
@@ -143,15 +154,15 @@ export default function LiveEngagementCounter() {
         >
           <p className="text-3xl font-black text-red-700">{data.totalGrades.toLocaleString()}</p>
           <p className="mt-1 text-xs font-bold uppercase tracking-wide text-gray-500">Letter grades cast</p>
-          <p className="mt-2 text-xs font-semibold text-red-700">{data.averageGpa !== null ? `Statewide GPA ${data.averageGpa.toFixed(2)}` : "First grade pending"}</p>
+          <p className="mt-2 text-xs font-semibold text-red-700">{data.averageGpa !== null ? `GPA ${data.averageGpa.toFixed(2)}` : "citizen_grade_summary"}</p>
         </Link>
         <Link
           href="#discussion"
           className="rounded-xl border border-gray-200 bg-gray-50 p-4 transition hover:-translate-y-0.5 hover:border-amber-300 hover:shadow"
         >
           <p className="text-3xl font-black text-amber-700">{data.totalComments.toLocaleString()}</p>
-          <p className="mt-1 text-xs font-bold uppercase tracking-wide text-gray-500">Public comments + Q&amp;A</p>
-          <p className="mt-2 text-xs font-semibold text-amber-700">Read the discussion &rarr;</p>
+          <p className="mt-1 text-xs font-bold uppercase tracking-wide text-gray-500">Public comments</p>
+          <p className="mt-2 text-xs font-semibold text-amber-700">comments table</p>
         </Link>
         <Link
           href="/auth/signup"
@@ -178,6 +189,15 @@ export default function LiveEngagementCounter() {
         <div>
           Last public comment: <span className="font-bold text-gray-900">{formatRelative(data.lastCommentAt)}</span>
         </div>
+        {loadError ? (
+          <div className="sm:col-span-2 text-red-700">
+            Live read failed: <span className="font-bold">{loadError}</span>
+          </div>
+        ) : (
+          <div className="sm:col-span-2">
+            Sources: <span className="font-bold text-gray-900">approval_ratings, citizen_grade_summary, comments, citizen_votes</span>
+          </div>
+        )}
       </div>
     </div>
   );

@@ -90,6 +90,33 @@ export default function DashboardPage() {
     );
   }
 
+  const dashboardMetrics = [
+    {
+      label: "Votes pulled",
+      value: votes.length.toLocaleString(),
+      detail: "Your rows from citizen_votes",
+      href: "/officials",
+    },
+    {
+      label: "Grades pulled",
+      value: grades.length.toLocaleString(),
+      detail: "Your rows from citizen_grades",
+      href: "/school-boards",
+    },
+    {
+      label: "Verification",
+      value: profile?.verified ? "Verified" : "Pending",
+      detail: profile?.verified ? "Texas voter status is active" : "Verify before votes count",
+      href: profile?.verified ? "/dashboard/settings" : "/auth/verify",
+    },
+    {
+      label: "County context",
+      value: profile?.county ?? "Unset",
+      detail: "Used for in-district vote and grade context",
+      href: "/dashboard/settings",
+    },
+  ];
+
   return (
     <div className="mx-auto max-w-7xl px-4 py-8 sm:px-6 lg:px-8">
       <div className="rounded-2xl border border-blue-100 bg-[linear-gradient(135deg,#ffffff_0%,#eff6ff_54%,#fff7ed_100%)] p-6 shadow-sm">
@@ -135,6 +162,20 @@ export default function DashboardPage() {
             )}
           </div>
         </div>
+      </div>
+
+      <div className="mt-6 grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
+        {dashboardMetrics.map((metric) => (
+          <Link
+            key={metric.label}
+            href={metric.href}
+            className="rounded-2xl border border-blue-100 bg-white p-5 shadow-sm transition hover:-translate-y-0.5 hover:border-red-200 hover:shadow-md"
+          >
+            <p className="text-2xl font-black text-blue-950">{metric.value}</p>
+            <p className="mt-1 text-xs font-black uppercase tracking-wide text-red-700">{metric.label}</p>
+            <p className="mt-2 text-xs font-semibold leading-5 text-slate-600">{metric.detail}</p>
+          </Link>
+        ))}
       </div>
 
       <div className="mt-6 grid gap-4 md:grid-cols-3">
