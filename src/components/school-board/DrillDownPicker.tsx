@@ -60,15 +60,19 @@ export default function DrillDownPicker({
   }
 
   return (
-    <div className={`${compact ? "rounded-lg p-4 shadow-sm" : "rounded-2xl p-5 shadow-lg shadow-blue-100/40"} border border-[#d8e5f6] bg-white`}>
+    <div className={`${compact ? "rounded-xl border-[#06172f]/20 bg-white p-4 shadow-lg shadow-[#06172f]/10" : "rounded-2xl border-[#d8e5f6] bg-white p-5 shadow-lg shadow-blue-100/40"} border`}>
       <div className="flex flex-col gap-2 sm:flex-row sm:items-baseline sm:justify-between">
         <div>
-          <p className="text-xs font-black uppercase tracking-wide text-[#bf0d3e]">Find your rep fast</p>
+          <p className="text-xs font-black uppercase tracking-wide text-[#bf0d3e]">
+            {compact ? "School board command" : "Find your rep fast"}
+          </p>
           <h2 className={`${compact ? "text-base" : "text-xl sm:text-2xl"} font-black text-[#00205b]`}>
-            {compact ? "Pick a school, then open a member." : "Pick a state, then a level, then your district."}
+            {compact ? "Pick a school. Tap a member. Open the record." : "Pick a state, then a level, then your district."}
           </h2>
         </div>
-        <p className="text-xs font-semibold text-slate-500">Three taps. No reading required.</p>
+        <p className="rounded-full bg-[#fff7e0] px-3 py-1 text-xs font-black uppercase tracking-wide text-[#7a1d1d]">
+          Three taps
+        </p>
       </div>
 
       <div className={`${compact ? "mt-3" : "mt-4"} grid gap-3 sm:grid-cols-3`}>
