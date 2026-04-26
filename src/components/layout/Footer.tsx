@@ -23,7 +23,7 @@ export default function Footer() {
           {/* Brand */}
           <div>
             <img
-              src="/images/logo.png"
+              src="/images/logo.png?v=20260425"
               alt="RepWatchr"
               className="h-10 w-auto mb-2"
             />
