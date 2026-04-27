@@ -16,53 +16,31 @@ type Claim = {
   created_at: string;
 };
 
-type Subscription = {
-  claim_id: string | null;
-  status: string;
-  current_period_end: string | null;
-};
-
 export default function MyClaimsPage() {
   const { user, loading: authLoading } = useAuth();
   const supabase = useMemo(() => createClient(), []);
   const [claims, setClaims] = useState<Claim[]>([]);
-  const [subscriptions, setSubscriptions] = useState<Record<string, Subscription>>({});
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
     if (authLoading) return;
 
     if (!user) {
-      setLoading(false);
       return;
     }
 
     let mounted = true;
 
     async function loadClaims() {
-      const [claimsResult, subscriptionResult] = await Promise.all([
-        supabase
-          .from("profile_claims")
-          .select("id, profile_id, profile_name, profile_type, district_slug, status, reviewer_notes, created_at")
-          .eq("user_id", user!.id)
-          .order("created_at", { ascending: false }),
-        supabase
-          .from("subscriptions")
-          .select("claim_id, status, current_period_end")
-          .eq("user_id", user!.id)
-          .order("updated_at", { ascending: false }),
-      ]);
+      const claimsResult = await supabase
+        .from("profile_claims")
+        .select("id, profile_id, profile_name, profile_type, district_slug, status, reviewer_notes, created_at")
+        .eq("user_id", user!.id)
+        .order("created_at", { ascending: false });
 
       if (!mounted) return;
 
       setClaims((claimsResult.data ?? []) as Claim[]);
-      setSubscriptions(
-        Object.fromEntries(
-          ((subscriptionResult.data ?? []) as Subscription[])
-            .filter((subscription) => subscription.claim_id)
-            .map((subscription) => [subscription.claim_id!, subscription])
-        )
-      );
       setLoading(false);
     }
 
@@ -73,7 +51,9 @@ export default function MyClaimsPage() {
     };
   }, [authLoading, supabase, user]);
 
-  if (authLoading || loading) {
+  const isLoading = authLoading || (!!user && loading);
+
+  if (isLoading) {
     return (
       <div className="mx-auto max-w-5xl px-4 py-16">
         <div className="h-56 animate-pulse rounded-2xl bg-gray-100" />
@@ -136,7 +116,6 @@ export default function MyClaimsPage() {
       ) : (
         <div className="grid gap-4">
           {claims.map((claim) => {
-            const subscription = subscriptions[claim.id];
             const publicHref = claim.district_slug
               ? `/school-boards/${claim.district_slug}/${claim.profile_id}`
               : `/officials/${claim.profile_id}`;
@@ -152,11 +131,6 @@ export default function MyClaimsPage() {
                       <span className="rounded-full bg-gray-100 px-3 py-1 text-xs font-black uppercase tracking-wide text-gray-700">
                         {claim.status.replaceAll("_", " ")}
                       </span>
-                      {subscription ? (
-                        <span className="rounded-full bg-emerald-50 px-3 py-1 text-xs font-black uppercase tracking-wide text-emerald-700">
-                          subscription {subscription.status}
-                        </span>
-                      ) : null}
                     </div>
                     <h2 className="mt-3 text-2xl font-black text-gray-950">
                       {claim.profile_name}

@@ -19,9 +19,12 @@ import VoteTimeline from "@/components/votes/VoteTimeline";
 import RedFlagCard from "@/components/shared/RedFlagCard";
 import PartyBadge from "@/components/officials/PartyBadge";
 import OfficialVotingSection from "@/components/voting/OfficialVotingSection";
+import GradeOfficialSection from "@/components/voting/GradeOfficialSection";
 import CommentSection from "@/components/comments/CommentSection";
 import ShareButtons from "@/components/shared/ShareButtons";
 import ReportButton from "@/components/shared/ReportButton";
+import ProfileOpenTracker from "@/components/shared/ProfileOpenTracker";
+import ProfileQuestionPanel from "@/components/profile/ProfileQuestionPanel";
 import { getNewsByOfficialId } from "@/lib/data";
 
 export async function generateStaticParams() {
@@ -79,6 +82,12 @@ export default async function OfficialProfilePage({
 
   return (
     <div>
+      <ProfileOpenTracker
+        profileId={official.id}
+        profileType="official"
+        path={`/officials/${official.id}`}
+        level={official.level}
+      />
       {/* Hero */}
       <section
         className="border-b-4"
@@ -233,6 +242,18 @@ export default async function OfficialProfilePage({
             <OfficialVotingSection
               officialId={official.id}
               officialCounties={official.county}
+            />
+            <GradeOfficialSection
+              officialId={official.id}
+              officialCounties={official.county.map((c) =>
+                c.toLowerCase().endsWith("county") ? c : `${c} County`
+              )}
+              officialName={official.name}
+            />
+
+            <ProfileQuestionPanel
+              targetId={official.id}
+              targetName={official.name}
             />
 
             {funding && (

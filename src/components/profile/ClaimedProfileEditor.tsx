@@ -47,7 +47,6 @@ function cleanPathSegment(value: string) {
 
 export default function ClaimedProfileEditor({
   claimId,
-  checkoutStatus,
 }: {
   claimId: string;
   checkoutStatus?: string;
@@ -59,7 +58,6 @@ export default function ClaimedProfileEditor({
   const [latestContent, setLatestContent] = useState<ClaimedContent | null>(null);
   const [media, setMedia] = useState<MediaItem[]>([]);
   const [loading, setLoading] = useState(true);
-  const [checkoutLoading, setCheckoutLoading] = useState(false);
   const [submitting, setSubmitting] = useState(false);
   const [message, setMessage] = useState("");
   const [error, setError] = useState("");
@@ -147,26 +145,6 @@ export default function ClaimedProfileEditor({
       mounted = false;
     };
   }, [claimId, supabase, user]);
-
-  async function startCheckout() {
-    setCheckoutLoading(true);
-    setError("");
-
-    const response = await fetch("/api/stripe/create-checkout-session", {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ claimId }),
-    });
-    const payload = (await response.json()) as { url?: string; error?: string };
-
-    if (!response.ok || !payload.url) {
-      setError(payload.error ?? "Unable to start Stripe checkout.");
-      setCheckoutLoading(false);
-      return;
-    }
-
-    window.location.href = payload.url;
-  }
 
   async function uploadPendingMedia(file: File, mediaType: "headshot" | "photo") {
     if (!user || !claim) return;
@@ -298,18 +276,6 @@ export default function ClaimedProfileEditor({
   }
 
   const subscriptionActive = subscription?.status === "active" || subscription?.status === "trialing";
-  const checkoutNotice =
-    checkoutStatus === "success"
-      ? {
-          className: "border-emerald-200 bg-emerald-50 text-emerald-800",
-          text: "Stripe checkout finished. If the subscription still shows pending, wait a moment for the webhook to update this claim.",
-        }
-      : checkoutStatus === "cancelled"
-        ? {
-            className: "border-amber-200 bg-amber-50 text-amber-950",
-            text: "Checkout was cancelled. The profile tools stay locked until the subscription is active.",
-          }
-        : null;
   const profilePath = claim.district_slug
     ? `/school-boards/${claim.district_slug}/${claim.profile_id}`
     : `/officials/${claim.profile_id}`;
@@ -346,31 +312,24 @@ export default function ClaimedProfileEditor({
           </div>
         ) : null}
 
-        {checkoutNotice ? (
-          <div className={`mt-5 rounded-xl border p-4 text-sm font-bold leading-6 ${checkoutNotice.className}`}>
-            {checkoutNotice.text}
-          </div>
-        ) : null}
-
         {claim.status !== "approved" ? (
           <div className="mt-6 rounded-2xl border border-gray-200 bg-gray-50 p-6">
             <h2 className="text-xl font-black text-gray-950">
               Publishing tools are locked
             </h2>
             <p className="mt-2 text-sm font-semibold leading-6 text-gray-600">
-              Claims must be manually approved before subscription checkout and
-              public profile submissions unlock. Rejected or revoked claims
-              cannot publish content.
+              Claims must be manually approved before public profile submissions
+              unlock. Rejected or revoked claims cannot publish content.
             </p>
           </div>
         ) : !subscriptionActive ? (
           <div className="mt-6 rounded-2xl border border-blue-200 bg-blue-50 p-6">
             <h2 className="text-xl font-black text-blue-950">
-              Subscription required after approval
+              Profile submissions are paused
             </h2>
             <p className="mt-2 text-sm font-semibold leading-6 text-blue-950/75">
-              Your claim is approved. Start the Stripe subscription to submit a
-              reviewed bio, statement, photos, videos, and links. This never
+              Your claim is approved. Public submission tools are paused while
+              RepWatchr moves this workflow out of the public app. This never
               unlocks edits to RepWatchr facts or evidence.
             </p>
             {error ? (
@@ -378,14 +337,6 @@ export default function ClaimedProfileEditor({
                 {error}
               </p>
             ) : null}
-            <button
-              type="button"
-              onClick={startCheckout}
-              disabled={checkoutLoading}
-              className="mt-5 rounded-xl bg-blue-900 px-5 py-3 text-sm font-black text-white hover:bg-red-700 disabled:bg-gray-300 disabled:text-gray-500"
-            >
-              {checkoutLoading ? "Opening checkout..." : "Start member subscription"}
-            </button>
           </div>
         ) : (
           <form onSubmit={handleSubmit} className="mt-6 grid gap-6">

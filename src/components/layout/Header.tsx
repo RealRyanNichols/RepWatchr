@@ -7,15 +7,14 @@ import UserMenu from "@/components/auth/UserMenu";
 const navLinks = [
   { href: "/", label: "Home" },
   { href: "/officials", label: "Officials" },
-  { href: "/search", label: "Search" },
-  { href: "/gideon", label: "GideonAI" },
-  { href: "/data-reports", label: "Data Desk" },
+  { href: "/faretta-ai", label: "Faretta AI" },
   { href: "/scorecards", label: "Scorecards" },
   { href: "/votes", label: "Votes" },
   { href: "/funding", label: "Funding" },
   { href: "/school-boards", label: "School Boards" },
   { href: "/red-flags", label: "Red Flags" },
   { href: "/news", label: "News" },
+  { href: "/buildout", label: "Buildout" },
 ];
 
 export default function Header() {

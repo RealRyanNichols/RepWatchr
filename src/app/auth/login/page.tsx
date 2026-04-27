@@ -40,13 +40,13 @@ export default function LoginPage() {
         <section>
           <p className="text-sm font-black uppercase tracking-wide text-red-700">Member access</p>
           <h1 className="mt-2 text-4xl font-black leading-tight text-blue-950 sm:text-5xl">
-            Log in. Track officials. Ask Gideon.
+            Log in. Track officials. Ask Faretta AI.
           </h1>
           <p className="mt-4 max-w-xl text-sm font-semibold leading-6 text-blue-950/75">
             Email and password is the primary path. Facebook and X can be used when those providers are enabled in Supabase.
           </p>
           <div className="mt-6 grid gap-3 sm:grid-cols-3">
-            {["Profile", "Watch list", "GideonAI"].map((item) => (
+            {["Profile", "Watch list", "Faretta AI"].map((item) => (
               <div key={item} className="rounded-xl border border-blue-100 bg-white p-4 text-sm font-black text-blue-950 shadow-sm">
                 {item}
               </div>

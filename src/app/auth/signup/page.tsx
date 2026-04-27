@@ -82,7 +82,7 @@ export default function SignUpPage() {
             Start with email and password. Verification can come later when you want voting weight, claim tools, or official profile access.
           </p>
           <div className="mt-6 grid gap-3">
-            {["Track officials and school boards", "Ask GideonAI to find records", "Claim or manage public profiles"].map((item) => (
+            {["Track officials and school boards", "Ask Faretta AI to find records", "Claim or manage public profiles"].map((item) => (
               <div key={item} className="rounded-xl border border-blue-100 bg-white p-4 text-sm font-black text-blue-950 shadow-sm">
                 {item}
               </div>

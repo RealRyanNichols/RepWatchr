@@ -75,7 +75,7 @@ export default function MemberProfilePanel() {
           <p className="text-xs font-black uppercase tracking-wide text-red-700">Member profile</p>
           <h2 className="mt-1 text-2xl font-black text-gray-950">Who you are and what you watch</h2>
           <p className="mt-2 max-w-2xl text-sm font-semibold leading-6 text-gray-600">
-            This powers your dashboard defaults and gives Gideon better context. The core website stays free.
+            This powers your dashboard defaults and gives Faretta AI better context. The core website stays free.
           </p>
         </div>
         <span className="rounded-full bg-emerald-100 px-3 py-1 text-xs font-black uppercase tracking-wide text-emerald-800">

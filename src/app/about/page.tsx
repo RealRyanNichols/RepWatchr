@@ -4,25 +4,36 @@ import Link from "next/link";
 export const metadata: Metadata = {
   title: "About",
   description:
-    "About RepWatchr - bringing transparency to Texas politics.",
+    "About RepWatchr, the Texas public-record map for officials, school boards, votes, sources, and citizen accountability.",
 };
 
 export default function AboutPage() {
   return (
-    <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
-      <h1 className="text-3xl font-extrabold text-gray-900 mb-6">
-        About RepWatchr
-      </h1>
+    <div className="mx-auto max-w-5xl px-4 py-8 sm:px-6 lg:px-8">
+      <section className="mb-8 overflow-hidden rounded-2xl border border-blue-100 bg-[linear-gradient(135deg,#ffffff_0%,#f8fbff_45%,#fff7ed_100%)] shadow-sm">
+        <div className="h-1.5 w-full bg-[linear-gradient(90deg,#bf0d3e_0%,#bf0d3e_33%,#ffffff_33%,#ffffff_66%,#002868_66%,#002868_100%)]" />
+        <div className="p-6 sm:p-8">
+          <p className="text-xs font-black uppercase tracking-[0.18em] text-red-700">
+            About RepWatchr
+          </p>
+          <h1 className="mt-3 max-w-3xl text-3xl font-black tracking-tight text-blue-950 sm:text-4xl">
+            When public records are scattered, make the record clear.
+          </h1>
+          <p className="mt-4 max-w-3xl text-base font-semibold leading-7 text-slate-700">
+            RepWatchr exists to help Texans find the people who hold public power, the records that support each profile, the scores and flags tied to public sources, and the citizen feedback attached to that record.
+          </p>
+        </div>
+      </section>
 
       <div className="space-y-8 text-gray-700">
         <section>
           <h2 className="text-xl font-bold text-gray-900 mb-3">Our Mission</h2>
           <p className="leading-relaxed">
-            RepWatchr exists because every voter deserves to know exactly what
-            their elected officials are doing -- how they vote, who funds them,
-            and whether they keep their promises. Too often, this information is
-            buried in government databases or simply not available. We bring it
-            all together in one place for the people of Texas.
+            The mission is simple: build a source-backed public record for
+            Texas government. That means federal, state, county, city, school
+            board, and public-board profiles where the officeholder, office,
+            jurisdiction, term, votes, funding, praise, concerns, and open gaps
+            can be checked against records normal citizens can inspect.
           </p>
         </section>
 
@@ -31,17 +42,19 @@ export default function AboutPage() {
             Why Texas?
           </h2>
           <p className="leading-relaxed">
-            National scorecards exist, but they don&apos;t focus on the issues
-            that matter most to our communities. Water rights. Property rights
-            and eminent domain. Local tax burdens. School board transparency.
-            These are Texas issues, and our officials should be held accountable
-            on them. We started in East Texas and are expanding statewide.
+            Texas has thousands of officials and trustees, but the records are
+            split across agency sites, county pages, city pages, school
+            districts, ethics filings, agendas, minutes, election pages, and
+            meeting videos. RepWatchr started in East Texas because local
+            government needs the same scrutiny people expect in Austin and
+            Washington. The goal is statewide coverage, then a model that can
+            be repeated outside Texas.
           </p>
         </section>
 
         <section>
           <h2 className="text-xl font-bold text-gray-900 mb-3">
-            What We Track
+            What We Track Now
           </h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
             <div className="bg-white border border-gray-200 rounded-xl p-5">
@@ -49,8 +62,9 @@ export default function AboutPage() {
                 Every Level of Government
               </h3>
               <p className="text-sm text-gray-600">
-                From US Congress and the Texas Legislature down to county
-                commissioners, city council, and school board members.
+                US Congress, Texas state offices, county officials, city
+                officials, school boards, and public boards where the roster is
+                publicly documented.
               </p>
             </div>
             <div className="bg-white border border-gray-200 rounded-xl p-5">
@@ -58,8 +72,9 @@ export default function AboutPage() {
                 Issue Scorecards
               </h3>
               <p className="text-sm text-gray-600">
-                Grades on water rights, land rights, taxes, government
-                transparency, and overall voting record alignment.
+                Weighted grades on public record categories, with visible
+                reasons and source-backed contributions where a profile has
+                enough record to score.
               </p>
             </div>
             <div className="bg-white border border-gray-200 rounded-xl p-5">
@@ -67,16 +82,16 @@ export default function AboutPage() {
                 Campaign Funding
               </h3>
               <p className="text-sm text-gray-600">
-                Who is funding your officials? Top donors, industry sectors,
-                and whether the money comes from inside or outside the
-                district.
+                Donors, committees, filings, industry patterns, and whether
+                funding appears tied to the office or district being reviewed.
               </p>
             </div>
             <div className="bg-white border border-gray-200 rounded-xl p-5">
               <h3 className="font-bold text-gray-900 mb-1">Red Flags</h3>
               <p className="text-sm text-gray-600">
-                Conflicts of interest, broken promises, and issues that voters
-                should know about but may have been hidden or overlooked.
+                Conflicts, disclosure problems, broken promises, meeting
+                records, public-source concerns, and open gaps that need more
+                evidence before anyone should treat them as established.
               </p>
             </div>
           </div>
@@ -88,30 +103,59 @@ export default function AboutPage() {
           </h2>
           <p className="leading-relaxed">
             School board positions are elected positions, and the politics of
-            the people making decisions about our children&apos;s education
-            should be known. For too long, school board members have operated
-            without the same scrutiny applied to other elected officials. We
-            are changing that by tracking their positions, votes, and public
-            stances on key education issues.
+            the people making decisions about local schools should be visible
+            to parents and taxpayers. RepWatchr tracks trustees, districts,
+            roster sources, votes, agendas, public statements, praise, flags,
+            and missing records. No minor children should be named. No private
+            addresses should be published. Claims need public sources.
           </p>
         </section>
 
         <section>
           <h2 className="text-xl font-bold text-gray-900 mb-3">
-            Data Sources
+            Faretta AI
+          </h2>
+          <p className="leading-relaxed">
+            Faretta AI is the search bar and research assistant inside
+            RepWatchr. It helps a citizen turn a plain-English question into a
+            path: which official to open, which school district to check, which
+            source link matters, what record is missing, and what question
+            should be asked next. It does not replace source review. It points
+            the work toward records that can be checked.
+          </p>
+        </section>
+
+        <section>
+          <h2 className="text-xl font-bold text-gray-900 mb-3">
+            Source Rules
           </h2>
           <p className="leading-relaxed mb-3">
-            All data comes from public records and official sources:
+            Public pages should be record-backed. A strong profile needs:
           </p>
           <ul className="list-disc list-inside space-y-1 text-sm">
-            <li>Federal Election Commission (FEC) - campaign finance</li>
-            <li>Texas Ethics Commission (TEC) - state campaign finance</li>
-            <li>Open States API - state legislative votes</li>
-            <li>Congress.gov - federal legislative votes</li>
-            <li>County and city official websites</li>
-            <li>ISD websites and TEA - school board information</li>
-            <li>Public meeting minutes and records</li>
+            <li>Official roster, election, appointment, or agency source.</li>
+            <li>Public contact page, agenda, minutes, filing, vote, or video.</li>
+            <li>Clear labels for facts, public claims, inferences, and gaps.</li>
+            <li>No private addresses, no minor children, and no unsourced allegations.</li>
           </ul>
+        </section>
+
+        <section>
+          <h2 className="text-xl font-bold text-gray-900 mb-3">
+            What Comes Next
+          </h2>
+          <div className="grid gap-3 sm:grid-cols-2">
+            {[
+              "Finish the Texas school-board roster district by district.",
+              "Expand county and city offices beyond the early East Texas base.",
+              "Add public-source intake for new rosters, filings, agendas, and meeting videos.",
+              "Use Faretta AI to guide searches, missing-record checks, and citizen questions.",
+            ].map((item) => (
+              <div key={item} className="rounded-xl border border-blue-100 bg-blue-50/60 p-4 text-sm font-semibold leading-6 text-blue-950">
+                {item}
+              </div>
+            ))}
+          </div>
         </section>
 
         <section>

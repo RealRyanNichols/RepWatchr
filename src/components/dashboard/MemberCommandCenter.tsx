@@ -3,7 +3,7 @@
 import { useEffect, useMemo, useState } from "react";
 import Link from "next/link";
 import { useAuth } from "@/components/auth/AuthProvider";
-import GideonConsole from "@/components/gideon/GideonConsole";
+import FarettaConsole from "@/components/faretta/FarettaConsole";
 import { createClient } from "@/lib/supabase";
 
 type TrackedItem = {
@@ -79,7 +79,7 @@ export default function MemberCommandCenter() {
       try {
         window.localStorage.setItem("repwatchr.tracked", JSON.stringify(tracked));
       } catch {
-        setBackendStatus("Local save unavailable in this browser");
+        // Local persistence is best effort for anonymous users.
       }
     }
   }, [tracked, user]);
@@ -89,7 +89,7 @@ export default function MemberCommandCenter() {
       "Search for the person, district, county, or race.",
       "Open the public profile and check sources, praise, flags, and gaps.",
       "Save the profile here so it stays in your watch list.",
-      "Ask Gideon what record, meeting, filing, or source should be pulled next.",
+      "Ask Faretta AI what record, meeting, filing, or source should be pulled next.",
     ],
     []
   );
@@ -97,7 +97,7 @@ export default function MemberCommandCenter() {
   async function addTrackedItem(event: React.FormEvent) {
     event.preventDefault();
     const trimmedLabel = label.trim();
-    const trimmedHref = href.trim() || `/search?q=${encodeURIComponent(trimmedLabel)}`;
+    const trimmedHref = href.trim() || `/faretta-ai?q=${encodeURIComponent(trimmedLabel)}`;
     if (!trimmedLabel) return;
 
     const nextItem = { label: trimmedLabel, href: trimmedHref, type };
@@ -229,7 +229,7 @@ export default function MemberCommandCenter() {
         </div>
       </section>
 
-      <GideonConsole />
+      <FarettaConsole />
     </div>
   );
 }

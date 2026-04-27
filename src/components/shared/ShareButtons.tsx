@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import { track } from "@vercel/analytics";
 
 interface ShareButtonsProps {
   title: string;
@@ -21,8 +22,13 @@ export default function ShareButtons({
   const encodedTitle = encodeURIComponent(title);
   const encodedDesc = encodeURIComponent(description || title);
 
+  function trackShare(channel: "x" | "facebook" | "copy") {
+    track("share_click", { channel, path });
+  }
+
   async function copyLink() {
     await navigator.clipboard.writeText(fullUrl);
+    trackShare("copy");
     setCopied(true);
     setTimeout(() => setCopied(false), 2000);
   }
@@ -38,6 +44,7 @@ export default function ShareButtons({
         href={`https://twitter.com/intent/tweet?text=${encodedTitle}&url=${encodedUrl}`}
         target="_blank"
         rel="noopener noreferrer"
+        onClick={() => trackShare("x")}
         className="flex h-9 w-9 items-center justify-center rounded-full bg-gray-100 text-gray-600 transition-all hover:bg-black hover:text-white"
         title="Share on X (Twitter)"
       >
@@ -51,6 +58,7 @@ export default function ShareButtons({
         href={`https://www.facebook.com/sharer/sharer.php?u=${encodedUrl}&quote=${encodedDesc}`}
         target="_blank"
         rel="noopener noreferrer"
+        onClick={() => trackShare("facebook")}
         className="flex h-9 w-9 items-center justify-center rounded-full bg-gray-100 text-gray-600 transition-all hover:bg-blue-600 hover:text-white"
         title="Share on Facebook"
       >

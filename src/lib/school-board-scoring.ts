@@ -24,6 +24,19 @@ export interface PoliticalLeanAssessment {
   sources: SourceLink[];
 }
 
+export interface ScoreContribution {
+  evidenceId: string;
+  category: Exclude<SchoolBoardEvidenceCategory, "political_lean">;
+  direction: "positive" | "negative" | "neutral";
+  delta: number;
+  severity: "low" | "medium" | "high" | "critical";
+  summary: string;
+  source_url: string;
+  source_title?: string;
+  tags: string[];
+  fairnessNote?: string;
+}
+
 export interface SchoolBoardScoreResult {
   score: number;
   grade: "A" | "B" | "C" | "D" | "F" | "Pending";
@@ -35,6 +48,8 @@ export interface SchoolBoardScoreResult {
   evidenceCount: number;
   requiredEvidenceNote: string;
   politicalLean: PoliticalLeanAssessment;
+  contributions: ScoreContribution[];
+  hasNoScoreMovingEvidence: boolean;
 }
 
 const CATEGORY_WEIGHTS: Record<Exclude<SchoolBoardEvidenceCategory, "political_lean">, number> = {
@@ -94,12 +109,33 @@ export function calculateSchoolBoardScore(candidate: CandidateDossier, evidence:
     return acc;
   }, {} as SchoolBoardScoreResult["categoryScores"]);
 
+  const contributions: ScoreContribution[] = [];
   for (const item of usableEvidence) {
     if (item.category === "political_lean") continue;
-    const severity = item.severity ?? "medium";
+    const severity = (item.severity ?? "medium") as "low" | "medium" | "high" | "critical";
     const deltaBase = severity === "critical" ? 45 : severity === "high" ? 30 : severity === "medium" ? 18 : 9;
     const delta = item.direction === "positive" ? deltaBase : item.direction === "negative" ? -deltaBase : 0;
     categoryScores[item.category] = clampScore(categoryScores[item.category] + delta);
+
+    let fairnessNote: string | undefined;
+    if (item.tags?.includes("family_ecosystem_connection") && severity === "low") {
+      fairnessNote = "Family-ecosystem connection (sibling, cousin, in-law, etc.) - capped at low severity unless evidence shows failure to disclose under TX Local Government Code Ch. 171 or failure to recuse on a relevant vote.";
+    } else if (item.tags?.includes("household_conflict")) {
+      fairnessNote = "Household conflict (spouse / partner / dependent) - kept at recorded severity because the financial nexus is direct.";
+    }
+
+    contributions.push({
+      evidenceId: item.id ?? `${item.category}-${item.summary.slice(0, 32)}`,
+      category: item.category,
+      direction: item.direction,
+      delta,
+      severity,
+      summary: item.summary,
+      source_url: item.source_url,
+      source_title: item.source_title,
+      tags: item.tags ?? [],
+      fairnessNote,
+    });
   }
 
   let weightedScore = Object.entries(CATEGORY_WEIGHTS).reduce((total, [category, weight]) => total + categoryScores[category as keyof typeof CATEGORY_WEIGHTS] * (weight / 100), 0);
@@ -130,6 +166,8 @@ export function calculateSchoolBoardScore(candidate: CandidateDossier, evidence:
     evidenceCount: usableEvidence.length,
     requiredEvidenceNote: "A hard override can only be applied from public-source evidence labeled FACT or DOCUMENTED_INFERENCE. Rumor, private claims, and unsourced allegations do not count. A public grade stays pending until a hard override, high-severity negative record, or enough score-moving source records exist.",
     politicalLean: assessPoliticalLean(candidate, evidence),
+    contributions,
+    hasNoScoreMovingEvidence: contributions.filter((c) => c.delta !== 0).length === 0,
   };
 }
 
@@ -144,18 +182,126 @@ export function buildEvidenceFromDossier(candidate: CandidateDossier): SchoolBoa
     evidence.push({ id: `${candidate.candidate_id}-vote-${index}`, category: "fiscal_stewardship", direction: "neutral", label: vote.board_outcome?.includes("REQUIRES_FURTHER_EVIDENCE") ? "REQUIRES_FURTHER_EVIDENCE" : "FACT", summary: vote.item, source_url: vote.source_url, source_title: vote.meeting_date ?? "Board vote", event_date: vote.meeting_date, severity: "medium", tags: ["board_vote"] });
   });
 
+  // Silent signals: never render publicly, but feed scoring + political lean.
+  const silent = candidate.silent_signals;
+  silent?.voter_primary_history?.forEach((entry, index) => {
+    if (!entry.source_url) return;
+    const tag = entry.party === "R" ? "republican_primary" : entry.party === "D" ? "democratic_primary" : "primary_pulled";
+    evidence.push({
+      id: `${candidate.candidate_id}-silent-primary-${index}`,
+      category: "political_lean",
+      direction: "neutral",
+      label: "FACT",
+      summary: `Pulled ${entry.party} primary ballot (${entry.year}).`,
+      source_url: entry.source_url,
+      source_title: `Primary ${entry.year}`,
+      tags: [tag, entry.party === "R" ? "votes republican" : entry.party === "D" ? "votes democrat" : ""],
+    });
+  });
+  silent?.donations?.forEach((entry, index) => {
+    if (!entry.source_url) return;
+    evidence.push({
+      id: `${candidate.candidate_id}-silent-donation-${index}`,
+      category: "political_lean",
+      direction: "neutral",
+      label: "FACT",
+      summary: `Donation to ${entry.recipient}${entry.amount ? ` ($${entry.amount})` : ""}${entry.cycle ? ` ${entry.cycle}` : ""}.`,
+      source_url: entry.source_url,
+      source_title: entry.recipient,
+      tags: [entry.alignment === "right" ? "votes republican" : entry.alignment === "left" ? "votes democrat" : ""].filter(Boolean),
+    });
+  });
+  silent?.endorsements_received?.forEach((entry, index) => {
+    if (!entry.source_url) return;
+    evidence.push({
+      id: `${candidate.candidate_id}-silent-endorsement-${index}`,
+      category: "political_lean",
+      direction: "neutral",
+      label: "FACT",
+      summary: `Endorsed by ${entry.from}.`,
+      source_url: entry.source_url,
+      source_title: entry.from,
+      tags: [entry.alignment === "right" ? "votes republican" : entry.alignment === "left" ? "votes democrat" : ""].filter(Boolean),
+    });
+  });
+  silent?.affiliations?.forEach((entry, index) => {
+    if (!entry.source_url) return;
+    evidence.push({
+      id: `${candidate.candidate_id}-silent-affiliation-${index}`,
+      category: "political_lean",
+      direction: "neutral",
+      label: "FACT",
+      summary: `Affiliated with ${entry.organization}.`,
+      source_url: entry.source_url,
+      source_title: entry.organization,
+      tags: [entry.alignment === "right" ? "votes republican" : entry.alignment === "left" ? "votes democrat" : ""].filter(Boolean),
+    });
+  });
+
   const flags = [...(candidate.red_flags ?? []), ...(candidate.about_public_record?.conflicts_of_interest_inventory ?? [])];
   flags.forEach((flag, index) => {
     if (!flag.source_url) return;
     const text = `${flag.type ?? ""} ${flag.description}`.toLowerCase();
-    const category: SchoolBoardEvidenceCategory = text.includes("parent") ? "parental_rights" : text.includes("child") || text.includes("student") || text.includes("safety") || text.includes("discipline") ? "child_safety" : text.includes("curriculum") || text.includes("book") ? "curriculum_and_books" : text.includes("privacy") || text.includes("bathroom") || text.includes("locker") ? "student_privacy" : text.includes("faith") || text.includes("family") || text.includes("biblical") || text.includes("church") ? "faith_and_family_alignment" : text.includes("tax") || text.includes("bond") || text.includes("budget") ? "fiscal_stewardship" : "transparency";
-    const severity = flag.severity === "critical" || flag.severity === "high" || flag.severity === "medium" || flag.severity === "low" ? flag.severity : "medium";
+    const isFamilyEmployment =
+      text.includes("family_employment") ||
+      text.includes("family employment") ||
+      text.includes("brother") ||
+      text.includes("sister") ||
+      text.includes("sibling") ||
+      text.includes("cousin") ||
+      text.includes("nephew") ||
+      text.includes("niece") ||
+      text.includes("uncle") ||
+      text.includes("aunt") ||
+      text.includes("relative");
+    const isHouseholdConflict =
+      text.includes("spouse") || text.includes("husband") || text.includes("wife") || text.includes("partner") || text.includes("dependent");
+    const category: SchoolBoardEvidenceCategory =
+      // Conflict-of-interest / disclosure flags belong in transparency, not in
+      // faith_and_family_alignment. Detect this BEFORE generic "family" check.
+      isFamilyEmployment || isHouseholdConflict || text.includes("conflict") || text.includes("disclosure") || text.includes("recusal")
+        ? "transparency"
+        : text.includes("parent")
+          ? "parental_rights"
+          : text.includes("child") || text.includes("student") || text.includes("safety") || text.includes("discipline")
+            ? "child_safety"
+            : text.includes("curriculum") || text.includes("book")
+              ? "curriculum_and_books"
+              : text.includes("privacy") || text.includes("bathroom") || text.includes("locker")
+                ? "student_privacy"
+                : text.includes("faith") || text.includes("biblical") || text.includes("church")
+                  ? "faith_and_family_alignment"
+                  : text.includes("tax") || text.includes("bond") || text.includes("budget")
+                    ? "fiscal_stewardship"
+                    : "transparency";
+    let severity: "low" | "medium" | "high" | "critical" =
+      flag.severity === "critical" || flag.severity === "high" || flag.severity === "medium" || flag.severity === "low"
+        ? flag.severity
+        : "medium";
+    // Fairness adjustment: extended-family ecosystem connections (sibling,
+    // cousin, etc.) without evidence of failure-to-disclose or failure-to-
+    // recuse get capped at "low". A household conflict (spouse on payroll)
+    // stays at the recorded severity. Disclosure or recusal evidence in the
+    // text upgrades back to medium/high.
+    if (isFamilyEmployment && !isHouseholdConflict) {
+      const evidenceOfMisconduct =
+        text.includes("failed to disclose") ||
+        text.includes("did not recuse") ||
+        text.includes("voted on") ||
+        text.includes("undisclosed") ||
+        text.includes("hid the");
+      if (!evidenceOfMisconduct) {
+        severity = "low";
+      }
+    }
     const tags = [
       text.includes("hid") || text.includes("withholding") ? "hid_material_information_from_parents" : "",
       text.includes("bathroom") || text.includes("locker") || text.includes("sex-based privacy") ? "sex_based_privacy_violation" : "",
       text.includes("retaliat") ? "retaliated_against_parent_or_child" : "",
       text.includes("cover") && text.includes("child") ? "covered_up_child_safety_issue" : "",
       text.includes("harm") && text.includes("child") ? "documented_child_harm" : "",
+      isFamilyEmployment ? "family_ecosystem_connection" : "",
+      isHouseholdConflict ? "household_conflict" : "",
     ].filter(Boolean);
     evidence.push({ id: `${candidate.candidate_id}-flag-${index}`, category, direction: "negative", label: flag.fact_label === "FACT" || flag.fact_label === "DOCUMENTED_INFERENCE" ? flag.fact_label : "REQUIRES_FURTHER_EVIDENCE", summary: flag.description, source_url: flag.source_url, source_title: flag.type, severity, tags });
   });
