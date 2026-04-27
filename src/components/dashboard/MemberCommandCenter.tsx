@@ -4,6 +4,7 @@ import { useEffect, useMemo, useState } from "react";
 import Link from "next/link";
 import { useAuth } from "@/components/auth/AuthProvider";
 import FarettaConsole from "@/components/faretta/FarettaConsole";
+import { isLocalMemberUserId } from "@/lib/local-member-session";
 import { createClient } from "@/lib/supabase";
 
 type TrackedItem = {
@@ -49,11 +50,33 @@ export default function MemberCommandCenter() {
         return;
       }
 
-      const { data, error } = await supabase
-        .from("member_tracked_items")
-        .select("id, label, href, item_type")
-        .eq("user_id", user.id)
-        .order("created_at", { ascending: false });
+      if (isLocalMemberUserId(user.id)) {
+        const saved = window.localStorage.getItem("repwatchr.tracked");
+        if (saved) {
+          try {
+            setTracked(JSON.parse(saved) as TrackedItem[]);
+          } catch {
+            setTracked(defaultTracked);
+          }
+        }
+        setBackendStatus("Synced locally");
+        return;
+      }
+
+      let result;
+
+      try {
+        result = await supabase
+          .from("member_tracked_items")
+          .select("id, label, href, item_type")
+          .eq("user_id", user.id)
+          .order("created_at", { ascending: false });
+      } catch {
+        setBackendStatus("Local fallback until member tables are installed");
+        return;
+      }
+
+      const { data, error } = result;
 
       if (error) {
         setBackendStatus("Local fallback until member tables are installed");
@@ -75,7 +98,7 @@ export default function MemberCommandCenter() {
   }, [supabase, user]);
 
   useEffect(() => {
-    if (!user) {
+    if (!user || isLocalMemberUserId(user.id)) {
       try {
         window.localStorage.setItem("repwatchr.tracked", JSON.stringify(tracked));
       } catch {
@@ -102,17 +125,30 @@ export default function MemberCommandCenter() {
 
     const nextItem = { label: trimmedLabel, href: trimmedHref, type };
 
-    if (user) {
-      const { data, error } = await supabase
-        .from("member_tracked_items")
-        .insert({
-          user_id: user.id,
-          label: trimmedLabel,
-          href: trimmedHref,
-          item_type: type,
-        })
-        .select("id, label, href, item_type")
-        .single();
+    if (user && !isLocalMemberUserId(user.id)) {
+      let result;
+
+      try {
+        result = await supabase
+          .from("member_tracked_items")
+          .insert({
+            user_id: user.id,
+            label: trimmedLabel,
+            href: trimmedHref,
+            item_type: type,
+          })
+          .select("id, label, href, item_type")
+          .single();
+      } catch {
+        setTracked((current) => [nextItem, ...current]);
+        setBackendStatus("Local fallback until member tables are installed");
+        setLabel("");
+        setHref("");
+        setType("official");
+        return;
+      }
+
+      const { data, error } = result;
 
       if (!error && data) {
         setTracked((current) => [
@@ -135,8 +171,12 @@ export default function MemberCommandCenter() {
 
   async function removeTrackedItem(item: TrackedItem) {
     setTracked((current) => current.filter((trackedItem) => trackedItem !== item));
-    if (user && item.id) {
-      await supabase.from("member_tracked_items").delete().eq("id", item.id).eq("user_id", user.id);
+    if (user && item.id && !isLocalMemberUserId(user.id)) {
+      try {
+        await supabase.from("member_tracked_items").delete().eq("id", item.id).eq("user_id", user.id);
+      } catch {
+        setBackendStatus("Local fallback until member tables are installed");
+      }
     }
   }
 
