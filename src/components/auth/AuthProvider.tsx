@@ -10,15 +10,17 @@ import {
 } from "react";
 import { createClient } from "@/lib/supabase";
 import type { User } from "@supabase/supabase-js";
-import {
-  clearLocalMemberSession,
-  readLocalMemberSession,
-} from "@/lib/local-member-session";
 
 interface UserProfile {
   county: string;
   district?: string;
   verified: boolean;
+  displayName?: string;
+  homeLocation?: string;
+  preferredState?: string;
+  researchFocus?: string;
+  publicProfileEnabled?: boolean;
+  verificationUpdatedAt?: string;
 }
 
 type UserRole =
@@ -59,7 +61,32 @@ export default function AuthProvider({ children }: { children: ReactNode }) {
   useEffect(() => {
     let mounted = true;
 
-    async function loadAccountState(currentUser: User | null, localFallback = false) {
+    async function loadMemberApiState() {
+      try {
+        const response = await fetch("/api/member/session", {
+          cache: "no-store",
+          credentials: "include",
+        });
+        if (!response.ok) return false;
+
+        const data = (await response.json()) as {
+          user: User | null;
+          profile: UserProfile | null;
+          roles: UserRole[];
+        };
+
+        if (!data.user || !mounted) return false;
+
+        setUser(data.user);
+        setProfile(data.profile);
+        setRoles(data.roles?.length ? data.roles : ["voter"]);
+        return true;
+      } catch {
+        return false;
+      }
+    }
+
+    async function loadAccountState(currentUser: User | null) {
       if (!mounted) return;
       setUser(currentUser);
 
@@ -69,19 +96,18 @@ export default function AuthProvider({ children }: { children: ReactNode }) {
         return;
       }
 
-      if (localFallback) {
-        setProfile(null);
-        setRoles(["voter"]);
-        return;
-      }
-
       try {
-        const [profileResult, rolesResult] = await Promise.all([
+        const [profileResult, memberProfileResult, rolesResult] = await Promise.all([
           supabase
             .from("profiles")
             .select("county, district, verified")
             .eq("user_id", currentUser.id)
-            .single(),
+            .maybeSingle(),
+          supabase
+            .from("member_profiles")
+            .select("display_name, home_location, preferred_state, research_focus, public_profile_enabled")
+            .eq("user_id", currentUser.id)
+            .maybeSingle(),
           supabase
             .from("user_roles")
             .select("role")
@@ -89,8 +115,30 @@ export default function AuthProvider({ children }: { children: ReactNode }) {
         ]);
 
         if (!mounted) return;
-        setProfile((profileResult.data as UserProfile | null) ?? null);
-        setRoles(((rolesResult.data ?? []) as Array<{ role: UserRole }>).map((item) => item.role));
+        const residentProfile = profileResult.data as {
+          county: string | null;
+          district?: string | null;
+          verified: boolean | null;
+        } | null;
+        const memberProfile = memberProfileResult.data as {
+          display_name: string | null;
+          home_location: string | null;
+          preferred_state: string | null;
+          research_focus: string | null;
+          public_profile_enabled: boolean | null;
+        } | null;
+        setProfile({
+          county: residentProfile?.county ?? "",
+          district: residentProfile?.district ?? undefined,
+          verified: Boolean(residentProfile?.verified),
+          displayName: memberProfile?.display_name ?? undefined,
+          homeLocation: memberProfile?.home_location ?? undefined,
+          preferredState: memberProfile?.preferred_state ?? "TX",
+          researchFocus: memberProfile?.research_focus ?? undefined,
+          publicProfileEnabled: Boolean(memberProfile?.public_profile_enabled),
+        });
+        const nextRoles = ((rolesResult.data ?? []) as Array<{ role: UserRole }>).map((item) => item.role);
+        setRoles(nextRoles.length ? nextRoles : ["voter"]);
       } catch {
         if (!mounted) return;
         setProfile(null);
@@ -103,11 +151,15 @@ export default function AuthProvider({ children }: { children: ReactNode }) {
         const {
           data: { user: currentUser },
         } = await supabase.auth.getUser();
-        const localUser = currentUser ? null : readLocalMemberSession();
-        await loadAccountState(currentUser ?? localUser, Boolean(!currentUser && localUser));
+        if (currentUser) {
+          await loadAccountState(currentUser);
+        } else {
+          const loadedMemberApi = await loadMemberApiState();
+          if (!loadedMemberApi) await loadAccountState(null);
+        }
       } catch {
-        const localUser = readLocalMemberSession();
-        await loadAccountState(localUser, Boolean(localUser));
+        const loadedMemberApi = await loadMemberApiState();
+        if (!loadedMemberApi) await loadAccountState(null);
       }
       if (!mounted) return;
       setLoading(false);
@@ -119,8 +171,12 @@ export default function AuthProvider({ children }: { children: ReactNode }) {
       data: { subscription },
     } = supabase.auth.onAuthStateChange(async (_event, session) => {
       const currentUser = session?.user ?? null;
-      const localUser = currentUser ? null : readLocalMemberSession();
-      await loadAccountState(currentUser ?? localUser, Boolean(!currentUser && localUser));
+      if (currentUser) {
+        await loadAccountState(currentUser);
+      } else {
+        const loadedMemberApi = await loadMemberApiState();
+        if (!loadedMemberApi) await loadAccountState(null);
+      }
       if (!mounted) return;
       setLoading(false);
     });
@@ -132,8 +188,8 @@ export default function AuthProvider({ children }: { children: ReactNode }) {
   }, [supabase]);
 
   const signOut = async () => {
-    clearLocalMemberSession();
-    await supabase.auth.signOut();
+    await fetch("/api/member/logout", { method: "POST", credentials: "include" }).catch(() => {});
+    await supabase.auth.signOut().catch(() => {});
     setUser(null);
     setProfile(null);
     setRoles([]);

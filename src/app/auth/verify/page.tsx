@@ -1,8 +1,6 @@
 "use client";
 
 import { useState } from "react";
-import { useRouter } from "next/navigation";
-import { createClient } from "@/lib/supabase";
 import { useAuth } from "@/components/auth/AuthProvider";
 import Link from "next/link";
 
@@ -65,15 +63,21 @@ async function hashDL(dl: string): Promise<string> {
 }
 
 export default function VerifyPage() {
-  const { user, profile } = useAuth();
+  const { user, profile, loading: authLoading } = useAuth();
   const [dlNumber, setDlNumber] = useState("");
   const [county, setCounty] = useState("");
   const [otherCounty, setOtherCounty] = useState("");
   const [error, setError] = useState("");
   const [loading, setLoading] = useState(false);
   const [success, setSuccess] = useState(false);
-  const router = useRouter();
-  const supabase = createClient();
+
+  if (authLoading) {
+    return (
+      <div className="mx-auto max-w-lg px-4 py-16">
+        <div className="h-80 animate-pulse rounded-2xl bg-gray-100" />
+      </div>
+    );
+  }
 
   if (!user) {
     return (
@@ -141,31 +145,34 @@ export default function VerifyPage() {
 
     const dlHash = await hashDL(dlNumber);
 
-    const { error: upsertError } = await supabase.from("profiles").upsert(
-      {
-        user_id: user!.id,
-        county: selectedCounty,
-        verified: true,
-        dl_hash: dlHash,
-      },
-      { onConflict: "user_id" }
-    );
+    try {
+      const response = await fetch("/api/member/verify", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        credentials: "include",
+        body: JSON.stringify({
+          county: selectedCounty,
+          dlHash,
+        }),
+      });
+      const data = (await response.json()) as { error?: string };
 
-    if (upsertError) {
-      if (upsertError.message.includes("duplicate") || upsertError.message.includes("unique")) {
-        setError(
-          "This Driver's License number is already associated with another account. Each person can only have one account."
-        );
-      } else {
-        setError(upsertError.message);
+      if (!response.ok) {
+        setError(data.error ?? "Account verification could not be saved.");
+        setLoading(false);
+        return;
       }
+    } catch {
+      setError("Account verification could not reach the member database.");
       setLoading(false);
       return;
     }
 
     setSuccess(true);
     setLoading(false);
-    setTimeout(() => router.push("/dashboard"), 2000);
+    setTimeout(() => window.location.assign("/dashboard"), 1200);
   }
 
   if (success) {
@@ -173,11 +180,11 @@ export default function VerifyPage() {
       <div className="mx-auto max-w-md px-4 py-16 text-center">
         <div className="rounded-lg border border-green-200 bg-green-50 p-8">
           <h1 className="text-2xl font-bold text-green-800">
-            Identity Verified
+            Account Verified
           </h1>
           <p className="mt-2 text-green-700">
-            You are now a verified Texas voter on this platform. You can approve
-            or disapprove elected officials.
+            Your RepWatchr account is now marked verified for this member area.
+            The dashboard will show your verified status when it reloads.
           </p>
         </div>
       </div>
@@ -188,16 +195,15 @@ export default function VerifyPage() {
     <div className="mx-auto max-w-lg px-4 py-16">
       <div className="rounded-lg border border-gray-200 bg-white p-8 shadow-sm">
         <h1 className="text-2xl font-bold text-gray-900">
-          Verify Your Texas Identity
+          Verify Your Account
         </h1>
         <p className="mt-1 text-sm text-gray-600">
-          To ensure one vote per person and that only Texas residents can
-          participate, we need to verify your identity using your Texas
-          Driver&apos;s License or State ID number.
+          This connects your member account to a Texas county so votes,
+          claims, profile ownership, and watch lists can be sorted correctly.
         </p>
 
         <div className="mt-4 rounded-md bg-blue-50 p-3 text-sm text-blue-800">
-          <strong>Privacy:</strong> Your DL number is hashed (encrypted
+          <strong>Privacy:</strong> Your ID number is hashed (encrypted
           one-way) before storage. We never store or display your actual DL
           number. It is only used to prevent duplicate accounts.
         </div>

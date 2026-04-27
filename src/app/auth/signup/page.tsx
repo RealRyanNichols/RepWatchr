@@ -2,15 +2,13 @@
 
 import { useState } from "react";
 import Link from "next/link";
-import { createClient } from "@/lib/supabase";
-import { saveLocalMemberSession } from "@/lib/local-member-session";
 
 export default function SignUpPage() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
+  const [displayName, setDisplayName] = useState("");
   const [error, setError] = useState("");
   const [loading, setLoading] = useState(false);
-  const supabase = createClient();
 
   async function handleSubmit(e: React.FormEvent) {
     e.preventDefault();
@@ -19,15 +17,31 @@ export default function SignUpPage() {
     setLoading(true);
 
     try {
-      await supabase.auth.signUp({
-        email,
-        password,
+      const response = await fetch("/api/member/signup", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        credentials: "include",
+        body: JSON.stringify({
+          email,
+          password,
+          displayName,
+        }),
       });
+      const data = (await response.json()) as { error?: string };
+
+      if (!response.ok) {
+        setError(data.error ?? "Member database account creation failed.");
+        setLoading(false);
+        return;
+      }
     } catch {
-      // Temporary email/password-only member access does not block on Supabase.
+      setError("Member database account creation failed. Check the Supabase connection.");
+      setLoading(false);
+      return;
     }
 
-    saveLocalMemberSession(email);
     window.location.assign("/dashboard");
   }
 
@@ -64,6 +78,23 @@ export default function SignUpPage() {
           )}
 
           <form onSubmit={handleSubmit} className="space-y-4">
+            <div>
+              <label
+                htmlFor="displayName"
+                className="block text-sm font-medium text-gray-700"
+              >
+                Display Name
+              </label>
+              <input
+                id="displayName"
+                type="text"
+                value={displayName}
+                onChange={(e) => setDisplayName(e.target.value)}
+                className="mt-1 block w-full rounded-lg border border-gray-300 px-3 py-2 text-gray-900 shadow-sm focus:border-blue-500 focus:outline-none focus:ring-1 focus:ring-blue-500"
+                placeholder="Name shown inside your member area"
+              />
+            </div>
+
             <div>
               <label
                 htmlFor="email"

@@ -6,7 +6,6 @@ import { useAuth } from "@/components/auth/AuthProvider";
 import { createClient } from "@/lib/supabase";
 import MemberCommandCenter from "@/components/dashboard/MemberCommandCenter";
 import MemberProfilePanel from "@/components/dashboard/MemberProfilePanel";
-import { isLocalMemberUserId } from "@/lib/local-member-session";
 import {
   displayNameFromId,
   urlForOfficialOrCandidate,
@@ -35,13 +34,6 @@ export default function DashboardPage() {
 
   useEffect(() => {
     if (!user) {
-      setLoadingActivity(false);
-      return;
-    }
-
-    if (isLocalMemberUserId(user.id)) {
-      setVotes([]);
-      setGrades([]);
       setLoadingActivity(false);
       return;
     }
@@ -106,6 +98,8 @@ export default function DashboardPage() {
     );
   }
 
+  const displayName = profile?.displayName || user.email?.split("@")[0] || "member";
+
   const dashboardMetrics = [
     {
       label: "Votes pulled",
@@ -127,7 +121,7 @@ export default function DashboardPage() {
     },
     {
       label: "County context",
-      value: profile?.county ?? "Unset",
+      value: profile?.county || "Unset",
       detail: "Used for in-district vote and grade context",
       href: "/dashboard/settings",
     },
@@ -137,16 +131,31 @@ export default function DashboardPage() {
     <div className="mx-auto max-w-7xl px-4 py-8 sm:px-6 lg:px-8">
       <div className="rounded-2xl border border-blue-100 bg-[linear-gradient(135deg,#ffffff_0%,#eff6ff_54%,#fff7ed_100%)] p-6 shadow-sm">
         <p className="text-sm font-black uppercase tracking-wide text-red-700">Member command center</p>
-        <h1 className="mt-2 text-3xl font-black text-blue-950 sm:text-5xl">Track the people who make decisions.</h1>
+        <h1 className="mt-2 text-3xl font-black text-blue-950 sm:text-5xl">Welcome back, {displayName}.</h1>
         <p className="mt-3 max-w-3xl text-sm font-semibold leading-6 text-blue-950/75">
           Your RepWatchr workspace is where profile, tracking, map, claims, votes, and Faretta AI research tools come together.
         </p>
+        <div className="mt-5 flex flex-wrap gap-2">
+          <Link href="/auth/verify" className="rounded-xl bg-blue-900 px-4 py-2 text-sm font-black text-white hover:bg-red-700">
+            {profile?.verified ? "Review verification" : "Verify account"}
+          </Link>
+          <Link href="/dashboard/settings" className="rounded-xl border border-blue-200 bg-white px-4 py-2 text-sm font-black text-blue-950 hover:border-red-300">
+            Account settings
+          </Link>
+          <Link href="/profiles/claim" className="rounded-xl border border-blue-200 bg-white px-4 py-2 text-sm font-black text-blue-950 hover:border-red-300">
+            Claim profile
+          </Link>
+        </div>
       </div>
 
       {/* Profile Section */}
       <div className="mt-6 rounded-2xl border border-gray-200 bg-white p-6 shadow-sm">
         <h2 className="text-lg font-black text-gray-900">Your Profile</h2>
-        <div className="mt-3 grid grid-cols-1 gap-4 sm:grid-cols-3">
+        <div className="mt-3 grid grid-cols-1 gap-4 sm:grid-cols-4">
+          <div>
+            <p className="text-sm text-gray-500">Display name</p>
+            <p className="font-medium text-gray-900">{displayName}</p>
+          </div>
           <div>
             <p className="text-sm text-gray-500">Email</p>
             <p className="font-medium text-gray-900">{user.email}</p>
@@ -154,7 +163,7 @@ export default function DashboardPage() {
           <div>
             <p className="text-sm text-gray-500">County</p>
             <p className="font-medium text-gray-900">
-              {profile?.county ?? "Not set"}
+              {profile?.county || "Not set"}
             </p>
           </div>
           <div>

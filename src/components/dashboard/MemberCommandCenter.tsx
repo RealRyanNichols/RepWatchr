@@ -4,8 +4,6 @@ import { useEffect, useMemo, useState } from "react";
 import Link from "next/link";
 import { useAuth } from "@/components/auth/AuthProvider";
 import FarettaConsole from "@/components/faretta/FarettaConsole";
-import { isLocalMemberUserId } from "@/lib/local-member-session";
-import { createClient } from "@/lib/supabase";
 
 type TrackedItem = {
   id?: string;
@@ -29,12 +27,11 @@ const mapZones = [
 
 export default function MemberCommandCenter() {
   const { user } = useAuth();
-  const supabase = useMemo(() => createClient(), []);
   const [tracked, setTracked] = useState<TrackedItem[]>(defaultTracked);
   const [label, setLabel] = useState("");
   const [href, setHref] = useState("");
   const [type, setType] = useState<TrackedItem["type"]>("official");
-  const [backendStatus, setBackendStatus] = useState("Synced locally");
+  const [backendStatus, setBackendStatus] = useState("Connecting member database");
 
   useEffect(() => {
     async function loadTrackedItems() {
@@ -50,55 +47,29 @@ export default function MemberCommandCenter() {
         return;
       }
 
-      if (isLocalMemberUserId(user.id)) {
-        const saved = window.localStorage.getItem("repwatchr.tracked");
-        if (saved) {
-          try {
-            setTracked(JSON.parse(saved) as TrackedItem[]);
-          } catch {
-            setTracked(defaultTracked);
-          }
-        }
-        setBackendStatus("Synced locally");
-        return;
-      }
-
-      let result;
-
       try {
-        result = await supabase
-          .from("member_tracked_items")
-          .select("id, label, href, item_type")
-          .eq("user_id", user.id)
-          .order("created_at", { ascending: false });
+        const response = await fetch("/api/member/tracked-items", {
+          cache: "no-store",
+          credentials: "include",
+        });
+        const data = (await response.json()) as { items?: TrackedItem[]; error?: string };
+        if (!response.ok) {
+          setBackendStatus(data.error ?? "Member database is not connected");
+          return;
+        }
+        setTracked(data.items?.length ? data.items : defaultTracked);
+        setBackendStatus("Saved to your RepWatchr account");
       } catch {
-        setBackendStatus("Local fallback until member tables are installed");
+        setBackendStatus("Member database is not reachable");
         return;
       }
-
-      const { data, error } = result;
-
-      if (error) {
-        setBackendStatus("Local fallback until member tables are installed");
-        return;
-      }
-
-      const rows = (data ?? []).map((item) => ({
-        id: item.id as string,
-        label: item.label as string,
-        href: item.href as string,
-        type: item.item_type as TrackedItem["type"],
-      }));
-
-      setTracked(rows.length ? rows : defaultTracked);
-      setBackendStatus("Saved to your RepWatchr account");
     }
 
     loadTrackedItems();
-  }, [supabase, user]);
+  }, [user]);
 
   useEffect(() => {
-    if (!user || isLocalMemberUserId(user.id)) {
+    if (!user) {
       try {
         window.localStorage.setItem("repwatchr.tracked", JSON.stringify(tracked));
       } catch {
@@ -125,40 +96,35 @@ export default function MemberCommandCenter() {
 
     const nextItem = { label: trimmedLabel, href: trimmedHref, type };
 
-    if (user && !isLocalMemberUserId(user.id)) {
-      let result;
-
+    if (user) {
       try {
-        result = await supabase
-          .from("member_tracked_items")
-          .insert({
-            user_id: user.id,
-            label: trimmedLabel,
-            href: trimmedHref,
-            item_type: type,
-          })
-          .select("id, label, href, item_type")
-          .single();
+        const response = await fetch("/api/member/tracked-items", {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          credentials: "include",
+          body: JSON.stringify(nextItem),
+        });
+        const data = (await response.json()) as { item?: TrackedItem; error?: string };
+        if (!response.ok || !data.item) {
+          setBackendStatus(data.error ?? "Member database is not connected");
+          setLabel("");
+          setHref("");
+          setType("official");
+          return;
+        }
+        setTracked((current) => [
+          data.item!,
+          ...current.filter((item) => item.label !== trimmedLabel),
+        ]);
+        setBackendStatus("Saved to your RepWatchr account");
       } catch {
-        setTracked((current) => [nextItem, ...current]);
-        setBackendStatus("Local fallback until member tables are installed");
+        setBackendStatus("Member database is not reachable");
         setLabel("");
         setHref("");
         setType("official");
         return;
-      }
-
-      const { data, error } = result;
-
-      if (!error && data) {
-        setTracked((current) => [
-          { id: data.id as string, label: data.label as string, href: data.href as string, type: data.item_type as TrackedItem["type"] },
-          ...current.filter((item) => item.label !== trimmedLabel),
-        ]);
-        setBackendStatus("Saved to your RepWatchr account");
-      } else {
-        setTracked((current) => [nextItem, ...current]);
-        setBackendStatus("Local fallback until member tables are installed");
       }
     } else {
       setTracked((current) => [nextItem, ...current]);
@@ -171,11 +137,18 @@ export default function MemberCommandCenter() {
 
   async function removeTrackedItem(item: TrackedItem) {
     setTracked((current) => current.filter((trackedItem) => trackedItem !== item));
-    if (user && item.id && !isLocalMemberUserId(user.id)) {
+    if (user && item.id) {
       try {
-        await supabase.from("member_tracked_items").delete().eq("id", item.id).eq("user_id", user.id);
+        const response = await fetch(`/api/member/tracked-items/${item.id}`, {
+          method: "DELETE",
+          credentials: "include",
+        });
+        if (!response.ok) {
+          const data = (await response.json()) as { error?: string };
+          setBackendStatus(data.error ?? "Member database delete failed");
+        }
       } catch {
-        setBackendStatus("Local fallback until member tables are installed");
+        setBackendStatus("Member database is not reachable");
       }
     }
   }

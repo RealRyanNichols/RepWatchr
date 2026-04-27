@@ -2,15 +2,12 @@
 
 import { useState } from "react";
 import Link from "next/link";
-import { createClient } from "@/lib/supabase";
-import { saveLocalMemberSession } from "@/lib/local-member-session";
 
 export default function LoginPage() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [error, setError] = useState("");
   const [loading, setLoading] = useState(false);
-  const supabase = createClient();
 
   async function handleSubmit(e: React.FormEvent) {
     e.preventDefault();
@@ -18,16 +15,28 @@ export default function LoginPage() {
     setLoading(true);
 
     try {
-      const { error: signInError } = await supabase.auth.signInWithPassword({
-        email,
-        password,
+      const response = await fetch("/api/member/login", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        credentials: "include",
+        body: JSON.stringify({
+          email,
+          password,
+        }),
       });
+      const data = (await response.json()) as { error?: string };
 
-      if (signInError) {
-        saveLocalMemberSession(email);
+      if (!response.ok) {
+        setError(data.error ?? "Member database login failed.");
+        setLoading(false);
+        return;
       }
     } catch {
-      saveLocalMemberSession(email);
+      setError("Member database login failed. Check the Supabase connection.");
+      setLoading(false);
+      return;
     }
 
     window.location.assign("/dashboard");

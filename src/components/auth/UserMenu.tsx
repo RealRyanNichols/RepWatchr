@@ -9,6 +9,13 @@ export default function UserMenu() {
   const [open, setOpen] = useState(false);
   const menuRef = useRef<HTMLDivElement>(null);
   const canReview = roles.includes("admin") || roles.includes("reviewer");
+  const displayName = profile?.displayName?.trim() || user?.email?.split("@")[0] || "Member";
+  const initials = displayName
+    .split(/\s+/)
+    .map((part) => part[0])
+    .join("")
+    .slice(0, 2)
+    .toUpperCase();
 
   useEffect(() => {
     function handleClickOutside(event: MouseEvent) {
@@ -49,13 +56,13 @@ export default function UserMenu() {
     <div className="relative" ref={menuRef}>
       <button
         onClick={() => setOpen(!open)}
-        className="flex items-center gap-2 rounded-md px-3 py-2 text-sm font-medium text-gray-700 transition-colors hover:bg-gray-100"
+        className="flex items-center gap-2 rounded-xl border border-blue-100 bg-white px-3 py-2 text-sm font-black text-blue-950 shadow-sm transition-colors hover:border-red-200 hover:bg-blue-50"
       >
-        <div className="flex h-7 w-7 items-center justify-center rounded-full bg-blue-600 text-xs font-bold text-white">
-          {user.email?.[0]?.toUpperCase() ?? "U"}
+        <div className="flex h-8 w-8 items-center justify-center rounded-full bg-blue-900 text-xs font-black text-white">
+          {initials || "M"}
         </div>
-        <span className="hidden sm:inline">
-          {user.email?.split("@")[0]}
+        <span className="hidden max-w-32 truncate sm:inline">
+          {displayName}
         </span>
         {profile?.verified && (
           <span className="inline-flex items-center rounded-full bg-green-100 px-1.5 py-0.5 text-xs font-medium text-green-700">
@@ -65,12 +72,18 @@ export default function UserMenu() {
       </button>
 
       {open && (
-        <div className="absolute right-0 mt-2 w-56 rounded-md border border-gray-200 bg-white py-1 shadow-lg">
+        <div className="absolute right-0 mt-2 w-72 rounded-xl border border-gray-200 bg-white py-2 shadow-xl shadow-blue-100/70">
           <div className="border-b border-gray-100 px-4 py-2">
-            <p className="truncate text-sm text-gray-900">{user.email}</p>
+            <p className="truncate text-sm font-black text-gray-950">{displayName}</p>
+            <p className="truncate text-xs font-semibold text-gray-500">{user.email}</p>
             {profile?.county && (
-              <p className="text-xs text-gray-500">{profile.county}</p>
+              <p className="mt-1 text-xs font-semibold text-gray-500">{profile.county}</p>
             )}
+            <span className={`mt-2 inline-flex rounded-full px-2 py-0.5 text-[11px] font-black uppercase tracking-wide ${
+              profile?.verified ? "bg-green-100 text-green-800" : "bg-orange-100 text-orange-800"
+            }`}>
+              {profile?.verified ? "Verified account" : "Verification needed"}
+            </span>
           </div>
           <Link
             href="/dashboard"
@@ -78,6 +91,13 @@ export default function UserMenu() {
             onClick={() => setOpen(false)}
           >
             My Dashboard
+          </Link>
+          <Link
+            href="/auth/verify"
+            className="block px-4 py-2 text-sm font-semibold text-gray-700 hover:bg-gray-50"
+            onClick={() => setOpen(false)}
+          >
+            Account Verification
           </Link>
           <Link
             href="/faretta-ai"
@@ -126,15 +146,6 @@ export default function UserMenu() {
               </Link>
             </>
           ) : null}
-          {!profile?.verified && (
-            <Link
-              href="/auth/verify"
-              className="block px-4 py-2 text-sm text-orange-600 hover:bg-gray-50"
-              onClick={() => setOpen(false)}
-            >
-              Verify Identity
-            </Link>
-          )}
           <button
             onClick={async () => {
               setOpen(false);

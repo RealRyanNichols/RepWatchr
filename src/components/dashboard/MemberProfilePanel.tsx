@@ -1,21 +1,10 @@
 "use client";
 
-import { useEffect, useMemo, useState } from "react";
+import { useEffect, useState } from "react";
 import { useAuth } from "@/components/auth/AuthProvider";
-import { isLocalMemberUserId } from "@/lib/local-member-session";
-import { createClient } from "@/lib/supabase";
-
-type MemberProfile = {
-  display_name: string | null;
-  home_location: string | null;
-  preferred_state: string | null;
-  research_focus: string | null;
-  public_profile_enabled: boolean | null;
-};
 
 export default function MemberProfilePanel() {
   const { user } = useAuth();
-  const supabase = useMemo(() => createClient(), []);
   const [displayName, setDisplayName] = useState("");
   const [homeLocation, setHomeLocation] = useState("");
   const [preferredState, setPreferredState] = useState("TX");
@@ -28,36 +17,41 @@ export default function MemberProfilePanel() {
     if (!user) return;
 
     async function loadProfile() {
-      if (isLocalMemberUserId(user!.id)) {
-        setStatus("Profile settings are local until the member database is connected.");
-        return;
-      }
-
-      let data: MemberProfile | null = null;
-
       try {
-        const result = await supabase
-          .from("member_profiles")
-          .select("display_name, home_location, preferred_state, research_focus, public_profile_enabled")
-          .eq("user_id", user!.id)
-          .maybeSingle();
-        data = result.data as MemberProfile | null;
+        const response = await fetch("/api/member/profile", {
+          cache: "no-store",
+          credentials: "include",
+        });
+        const data = (await response.json()) as {
+          profile?: {
+            displayName?: string;
+            homeLocation?: string;
+            preferredState?: string;
+            researchFocus?: string;
+            publicProfileEnabled?: boolean;
+          };
+          error?: string;
+        };
+
+        if (!response.ok) {
+          setStatus(data.error ?? "Member profile database is not connected.");
+          return;
+        }
+
+        setDisplayName(data.profile?.displayName ?? "");
+        setHomeLocation(data.profile?.homeLocation ?? "");
+        setPreferredState(data.profile?.preferredState ?? "TX");
+        setResearchFocus(data.profile?.researchFocus ?? "");
+        setPublicProfileEnabled(Boolean(data.profile?.publicProfileEnabled));
+        setStatus("Profile loaded from the member database.");
       } catch {
-        setStatus("Profile settings are local until the member database is connected.");
+        setStatus("Member profile database is not reachable.");
         return;
       }
-
-      const profile = data;
-      if (!profile) return;
-      setDisplayName(profile.display_name ?? "");
-      setHomeLocation(profile.home_location ?? "");
-      setPreferredState(profile.preferred_state ?? "TX");
-      setResearchFocus(profile.research_focus ?? "");
-      setPublicProfileEnabled(Boolean(profile.public_profile_enabled));
     }
 
     loadProfile();
-  }, [supabase, user]);
+  }, [user]);
 
   async function saveProfile(event: React.FormEvent) {
     event.preventDefault();
@@ -66,28 +60,25 @@ export default function MemberProfilePanel() {
     setSaving(true);
     setStatus("");
 
-    if (isLocalMemberUserId(user.id)) {
-      setStatus("Profile settings will save once the member database is connected.");
-      setSaving(false);
-      return;
-    }
-
     try {
-      const { error } = await supabase.from("member_profiles").upsert(
-        {
-          user_id: user.id,
-          display_name: displayName.trim() || null,
-          home_location: homeLocation.trim() || null,
-          preferred_state: preferredState.trim() || "TX",
-          research_focus: researchFocus.trim() || null,
-          public_profile_enabled: publicProfileEnabled,
+      const response = await fetch("/api/member/profile", {
+        method: "PATCH",
+        headers: {
+          "Content-Type": "application/json",
         },
-        { onConflict: "user_id" }
-      );
-
-      setStatus(error ? `Profile could not be saved: ${error.message}` : "Profile saved.");
+        credentials: "include",
+        body: JSON.stringify({
+          displayName,
+          homeLocation,
+          preferredState,
+          researchFocus,
+          publicProfileEnabled,
+        }),
+      });
+      const data = (await response.json()) as { error?: string };
+      setStatus(response.ok ? "Profile saved to the member database." : data.error ?? "Profile could not be saved.");
     } catch {
-      setStatus("Profile settings will save once the member database is connected.");
+      setStatus("Profile could not reach the member database.");
     } finally {
       setSaving(false);
     }
