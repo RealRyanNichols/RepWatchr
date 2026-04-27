@@ -10,6 +10,10 @@ import {
 } from "react";
 import { createClient } from "@/lib/supabase";
 import type { User } from "@supabase/supabase-js";
+import {
+  clearLocalMemberSession,
+  readLocalMemberSession,
+} from "@/lib/local-member-session";
 
 interface UserProfile {
   county: string;
@@ -55,7 +59,7 @@ export default function AuthProvider({ children }: { children: ReactNode }) {
   useEffect(() => {
     let mounted = true;
 
-    async function loadAccountState(currentUser: User | null) {
+    async function loadAccountState(currentUser: User | null, localFallback = false) {
       if (!mounted) return;
       setUser(currentUser);
 
@@ -65,28 +69,46 @@ export default function AuthProvider({ children }: { children: ReactNode }) {
         return;
       }
 
-      const [profileResult, rolesResult] = await Promise.all([
-        supabase
-          .from("profiles")
-          .select("county, district, verified")
-          .eq("user_id", currentUser.id)
-          .single(),
-        supabase
-          .from("user_roles")
-          .select("role")
-          .eq("user_id", currentUser.id),
-      ]);
+      if (localFallback) {
+        setProfile(null);
+        setRoles(["voter"]);
+        return;
+      }
 
-      if (!mounted) return;
-      setProfile((profileResult.data as UserProfile | null) ?? null);
-      setRoles(((rolesResult.data ?? []) as Array<{ role: UserRole }>).map((item) => item.role));
+      try {
+        const [profileResult, rolesResult] = await Promise.all([
+          supabase
+            .from("profiles")
+            .select("county, district, verified")
+            .eq("user_id", currentUser.id)
+            .single(),
+          supabase
+            .from("user_roles")
+            .select("role")
+            .eq("user_id", currentUser.id),
+        ]);
+
+        if (!mounted) return;
+        setProfile((profileResult.data as UserProfile | null) ?? null);
+        setRoles(((rolesResult.data ?? []) as Array<{ role: UserRole }>).map((item) => item.role));
+      } catch {
+        if (!mounted) return;
+        setProfile(null);
+        setRoles(["voter"]);
+      }
     }
 
     const getSession = async () => {
-      const {
-        data: { user: currentUser },
-      } = await supabase.auth.getUser();
-      await loadAccountState(currentUser);
+      try {
+        const {
+          data: { user: currentUser },
+        } = await supabase.auth.getUser();
+        const localUser = currentUser ? null : readLocalMemberSession();
+        await loadAccountState(currentUser ?? localUser, Boolean(!currentUser && localUser));
+      } catch {
+        const localUser = readLocalMemberSession();
+        await loadAccountState(localUser, Boolean(localUser));
+      }
       if (!mounted) return;
       setLoading(false);
     };
@@ -97,7 +119,8 @@ export default function AuthProvider({ children }: { children: ReactNode }) {
       data: { subscription },
     } = supabase.auth.onAuthStateChange(async (_event, session) => {
       const currentUser = session?.user ?? null;
-      await loadAccountState(currentUser);
+      const localUser = currentUser ? null : readLocalMemberSession();
+      await loadAccountState(currentUser ?? localUser, Boolean(!currentUser && localUser));
       if (!mounted) return;
       setLoading(false);
     });
@@ -109,6 +132,7 @@ export default function AuthProvider({ children }: { children: ReactNode }) {
   }, [supabase]);
 
   const signOut = async () => {
+    clearLocalMemberSession();
     await supabase.auth.signOut();
     setUser(null);
     setProfile(null);
