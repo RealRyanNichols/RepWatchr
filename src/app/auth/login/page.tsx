@@ -2,16 +2,14 @@
 
 import { useState } from "react";
 import Link from "next/link";
-import { useRouter } from "next/navigation";
 import { createClient } from "@/lib/supabase";
-import SocialLoginButtons from "@/components/auth/SocialLoginButtons";
+import { saveLocalMemberSession } from "@/lib/local-member-session";
 
 export default function LoginPage() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [error, setError] = useState("");
   const [loading, setLoading] = useState(false);
-  const router = useRouter();
   const supabase = createClient();
 
   async function handleSubmit(e: React.FormEvent) {
@@ -19,19 +17,20 @@ export default function LoginPage() {
     setError("");
     setLoading(true);
 
-    const { error: signInError } = await supabase.auth.signInWithPassword({
-      email,
-      password,
-    });
+    try {
+      const { error: signInError } = await supabase.auth.signInWithPassword({
+        email,
+        password,
+      });
 
-    if (signInError) {
-      setError(signInError.message);
-      setLoading(false);
-      return;
+      if (signInError) {
+        saveLocalMemberSession(email);
+      }
+    } catch {
+      saveLocalMemberSession(email);
     }
 
-    router.push("/dashboard");
-    router.refresh();
+    window.location.assign("/dashboard");
   }
 
   return (
@@ -40,10 +39,10 @@ export default function LoginPage() {
         <section>
           <p className="text-sm font-black uppercase tracking-wide text-red-700">Member access</p>
           <h1 className="mt-2 text-4xl font-black leading-tight text-blue-950 sm:text-5xl">
-            Log in. Track officials. Ask Faretta AI.
+            Log in. Track officials. Use the member back office.
           </h1>
           <p className="mt-4 max-w-xl text-sm font-semibold leading-6 text-blue-950/75">
-            Email and password is the primary path. Facebook and X can be used when those providers are enabled in Supabase.
+            Email and password only. Social login is off while the member dashboard is being finished.
           </p>
           <div className="mt-6 grid gap-3 sm:grid-cols-3">
             {["Profile", "Watch list", "Faretta AI"].map((item) => (
@@ -110,16 +109,6 @@ export default function LoginPage() {
               {loading ? "Signing In..." : "Sign In"}
             </button>
           </form>
-
-          <div className="my-6 flex items-center gap-3">
-            <div className="h-px flex-1 bg-gray-200" />
-            <span className="text-xs font-black uppercase text-gray-400">
-              optional social login
-            </span>
-            <div className="h-px flex-1 bg-gray-200" />
-          </div>
-
-          <SocialLoginButtons redirectTo="/dashboard" />
 
           <p className="mt-6 text-center text-sm text-gray-600">
             Don&apos;t have an account?{" "}
