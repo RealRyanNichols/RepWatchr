@@ -88,18 +88,19 @@ export default function OfficialsPage() {
   ];
 
   return (
-    <div className="mx-auto max-w-7xl px-4 py-8 sm:px-6 lg:px-8">
-      <section className="mb-8 overflow-hidden rounded-2xl border border-slate-800 bg-slate-950 text-white shadow-lg">
-        <div className="h-1.5 w-full bg-[linear-gradient(90deg,#bf0d3e_0%,#bf0d3e_33%,#ffffff_33%,#ffffff_66%,#002868_66%,#002868_100%)]" />
-        <div className="grid gap-6 p-5 lg:grid-cols-[1.25fr_0.75fr] lg:p-7">
+    <div className="bg-slate-100">
+      <div className="mx-auto max-w-7xl px-4 py-8 sm:px-6 lg:px-8">
+      <section className="mb-8 overflow-hidden rounded-2xl border border-slate-300 bg-white text-slate-950 shadow-sm">
+        <div className="h-1.5 w-full bg-[linear-gradient(90deg,#b42318_0%,#b42318_48%,#ffffff_48%,#ffffff_52%,#1d4ed8_52%,#1d4ed8_100%)]" />
+        <div className="grid gap-6 p-5 lg:grid-cols-[1.18fr_0.82fr] lg:p-7">
           <div>
-            <p className="text-xs font-black uppercase tracking-[0.18em] text-red-200">
+            <p className="text-xs font-black uppercase tracking-[0.18em] text-red-700">
               United States public-record map
             </p>
-            <h1 className="mt-3 text-3xl font-black tracking-tight text-white sm:text-4xl">
+            <h1 className="mt-3 text-3xl font-black tracking-tight text-slate-950 sm:text-4xl">
               Elected officials, source-backed.
             </h1>
-            <p className="mt-3 max-w-3xl text-sm font-semibold leading-6 text-slate-200 sm:text-base">
+            <p className="mt-3 max-w-3xl text-sm font-semibold leading-6 text-slate-700 sm:text-base">
               RepWatchr is built for nationwide coverage. Texas is the first loaded state: federal representatives, state legislators, county and city officials, and school-board records where a public source confirms the seat. A profile shows who is loaded; scorecards, funding, red flags, votes, and citizen input appear only when those records actually exist.
             </p>
             <div className="mt-5 flex flex-wrap gap-2">
@@ -107,7 +108,7 @@ export default function OfficialsPage() {
                 <Link
                   key={level}
                   href={`/officials?level=${level}`}
-                  className="rounded-full border border-white/15 bg-white px-3 py-1.5 text-xs font-black text-slate-950 transition hover:border-red-200 hover:text-red-700"
+                  className="rounded-full border border-slate-300 bg-slate-50 px-3 py-1.5 text-xs font-black text-slate-800 transition hover:border-blue-400 hover:bg-blue-50 hover:text-blue-800"
                 >
                   {label}: {formatNumber(levelCounts[level as GovernmentLevel])}
                 </Link>
@@ -116,10 +117,10 @@ export default function OfficialsPage() {
           </div>
           <div className="grid grid-cols-2 gap-3">
             {statCards.map((card) => (
-              <div key={card.label} className="rounded-xl border border-white/15 bg-white/10 p-4 shadow-sm">
-                <p className="text-2xl font-black text-white">{card.value}</p>
-                <p className="mt-1 text-xs font-black uppercase tracking-wide text-red-200">{card.label}</p>
-                <p className="mt-2 text-xs font-semibold leading-5 text-slate-200">{card.detail}</p>
+              <div key={card.label} className="rounded-xl border border-slate-300 bg-slate-50 p-4 shadow-sm">
+                <p className="text-2xl font-black text-slate-950">{card.value}</p>
+                <p className="mt-1 text-xs font-black uppercase tracking-wide text-red-700">{card.label}</p>
+                <p className="mt-2 text-xs font-semibold leading-5 text-slate-700">{card.detail}</p>
               </div>
             ))}
           </div>
@@ -131,7 +132,7 @@ export default function OfficialsPage() {
           <Link
             key={card.title}
             href={card.href}
-            className="rounded-xl border border-slate-200 bg-white p-4 shadow-sm transition hover:border-blue-200 hover:shadow-md"
+            className="rounded-xl border border-slate-300 bg-white p-4 shadow-sm transition hover:-translate-y-0.5 hover:border-blue-400 hover:shadow-md"
           >
             <p className="text-sm font-black text-blue-950">{card.title}</p>
             <p className="mt-2 text-sm font-semibold leading-6 text-slate-600">{card.body}</p>
@@ -139,7 +140,7 @@ export default function OfficialsPage() {
         ))}
       </section>
 
-      <section className="mb-8 rounded-2xl border border-slate-200 bg-white p-5 shadow-sm">
+      <section className="mb-8 rounded-2xl border border-slate-300 bg-white p-5 shadow-sm">
         <div className="grid gap-4 lg:grid-cols-[0.8fr_1.2fr]">
           <div>
             <p className="text-xs font-black uppercase tracking-[0.18em] text-red-700">
@@ -161,7 +162,7 @@ export default function OfficialsPage() {
               "What changed or needs review",
               "No private addresses or minor children",
             ].map((item) => (
-              <div key={item} className="rounded-lg border border-slate-200 bg-slate-50 px-3 py-2 text-sm font-black text-slate-700">
+              <div key={item} className="rounded-lg border border-slate-300 bg-slate-50 px-3 py-2 text-sm font-black text-slate-800">
                 {item}
               </div>
             ))}
@@ -183,6 +184,7 @@ export default function OfficialsPage() {
       >
         <OfficialGrid officials={officials} scoreCards={scoreCards} />
       </Suspense>
+      </div>
     </div>
   );
 }

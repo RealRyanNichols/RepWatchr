@@ -28,7 +28,7 @@ export default function OfficialCard({
   return (
     <Link
       href={`/officials/${official.id}`}
-      className="group relative block rounded-2xl border border-gray-200 bg-white overflow-hidden shadow-sm transition-all hover:shadow-lg hover:-translate-y-1"
+      className="group relative block overflow-hidden rounded-xl border border-slate-300 bg-white shadow-sm transition-all hover:-translate-y-1 hover:border-blue-400 hover:shadow-lg"
     >
       {/* Top accent bar */}
       <div
@@ -37,7 +37,7 @@ export default function OfficialCard({
       <div className="p-5">
         <div className="flex items-start justify-between">
           <div className="flex items-center gap-3">
-            <div className="relative flex h-14 w-14 shrink-0 items-center justify-center overflow-hidden rounded-xl border border-gray-200 bg-gray-100 text-base font-bold text-gray-500 transition-colors group-hover:bg-blue-50 group-hover:text-blue-600">
+            <div className="relative flex h-14 w-14 shrink-0 items-center justify-center overflow-hidden rounded-xl border border-slate-300 bg-slate-100 text-base font-bold text-slate-600 transition-colors group-hover:bg-blue-50 group-hover:text-blue-700">
               {official.photo ? (
                 <Image
                   src={official.photo}
@@ -51,10 +51,10 @@ export default function OfficialCard({
               )}
             </div>
             <div className="min-w-0">
-              <h3 className="truncate text-base font-bold text-gray-900 group-hover:text-blue-600 transition-colors">
+              <h3 className="truncate text-base font-black text-slate-950 transition-colors group-hover:text-blue-800">
                 {official.name}
               </h3>
-              <p className="text-sm text-gray-500">
+              <p className="text-sm font-semibold text-slate-600">
                 {official.position}
               </p>
             </div>
@@ -68,11 +68,11 @@ export default function OfficialCard({
         <div className="mt-4 flex items-center justify-between">
           <div className="flex min-w-0 items-center gap-2">
             <PartyBadge party={official.party} />
-            <span className="truncate text-xs text-gray-500">
+            <span className="truncate text-xs font-semibold text-slate-600">
               {official.jurisdiction}
             </span>
           </div>
-          <span className="text-xs font-semibold text-blue-600 opacity-0 group-hover:opacity-100 transition-opacity">
+          <span className="text-xs font-black text-blue-700 opacity-0 transition-opacity group-hover:opacity-100">
             View Profile &rarr;
           </span>
         </div>

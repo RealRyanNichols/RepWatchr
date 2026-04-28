@@ -78,7 +78,7 @@ export default function OfficialGrid({
   }, [officials, levelFilter, partyFilter, countyFilter, searchQuery]);
 
   return (
-    <div>
+    <section className="rounded-2xl border border-slate-300 bg-white p-4 shadow-sm sm:p-5">
       {/* Search */}
       <div className="mb-4">
         <input
@@ -86,7 +86,7 @@ export default function OfficialGrid({
           value={searchQuery}
           onChange={(e) => setSearchQuery(e.target.value)}
           placeholder="Search by name, office, district, state, or county..."
-          className="w-full rounded-xl border border-gray-200 bg-white px-4 py-2.5 text-sm text-gray-900 placeholder-gray-400 focus:border-blue-500 focus:outline-none focus:ring-1 focus:ring-blue-500"
+          className="w-full rounded-xl border border-slate-300 bg-white px-4 py-2.5 text-sm font-semibold text-slate-950 placeholder-slate-500 shadow-sm focus:border-blue-500 focus:outline-none focus:ring-2 focus:ring-blue-100"
         />
       </div>
 
@@ -101,8 +101,8 @@ export default function OfficialGrid({
               onClick={() => setLevelFilter(opt.value)}
               className={`rounded-full px-3 py-1.5 text-xs font-medium transition-colors ${
                 levelFilter === opt.value
-                  ? "bg-blue-600 text-white"
-                  : "bg-gray-100 text-gray-700 hover:bg-gray-200 dark:bg-gray-700 dark:text-gray-300 dark:hover:bg-gray-600"
+                  ? "bg-blue-700 text-white shadow-sm"
+                  : "border border-slate-300 bg-white text-slate-700 hover:border-blue-300 hover:bg-blue-50 hover:text-blue-800"
               }`}
             >
               {opt.label}
@@ -119,8 +119,8 @@ export default function OfficialGrid({
               onClick={() => setPartyFilter(opt.value)}
               className={`rounded-full px-3 py-1.5 text-xs font-medium transition-colors ${
                 partyFilter === opt.value
-                  ? "bg-blue-600 text-white"
-                  : "bg-gray-100 text-gray-700 hover:bg-gray-200 dark:bg-gray-700 dark:text-gray-300 dark:hover:bg-gray-600"
+                  ? "bg-slate-950 text-white shadow-sm"
+                  : "border border-slate-300 bg-white text-slate-700 hover:border-red-300 hover:bg-red-50 hover:text-red-800"
               }`}
             >
               {opt.label}
@@ -133,7 +133,7 @@ export default function OfficialGrid({
           <select
             value={countyFilter}
             onChange={(e) => setCountyFilter(e.target.value)}
-            className="rounded-lg border border-gray-300 bg-white px-3 py-1.5 text-xs font-medium text-gray-700 focus:border-blue-500 focus:outline-none focus:ring-1 focus:ring-blue-500 dark:border-gray-600 dark:bg-gray-800 dark:text-gray-300"
+            className="rounded-lg border border-slate-300 bg-white px-3 py-1.5 text-xs font-semibold text-slate-800 shadow-sm focus:border-blue-500 focus:outline-none focus:ring-2 focus:ring-blue-100"
           >
             <option value="all">All Counties</option>
             {counties.map((c) => (
@@ -146,7 +146,7 @@ export default function OfficialGrid({
       </div>
 
       {/* Results count */}
-      <p className="mb-4 text-sm text-gray-500 dark:text-gray-400">
+      <p className="mb-4 text-sm font-semibold text-slate-600">
         Showing {filtered.length} of {officials.length} officials
       </p>
 
@@ -163,11 +163,11 @@ export default function OfficialGrid({
 
       {filtered.length === 0 && (
         <div className="py-12 text-center">
-          <p className="text-gray-500 dark:text-gray-400">
+          <p className="font-semibold text-slate-600">
             No officials match the selected filters.
           </p>
         </div>
       )}
-    </div>
+    </section>
   );
 }

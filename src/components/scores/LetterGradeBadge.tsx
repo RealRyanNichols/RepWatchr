@@ -18,7 +18,7 @@ export default function LetterGradeBadge({
 }: LetterGradeBadgeProps) {
   const displayGrade = typeof score === "number" ? calculateLetterGrade(score) : grade;
   const scoreStyle = typeof score === "number" ? getScoreSurfaceStyle(score) : undefined;
-  const fallbackClasses = scoreStyle ? "" : "bg-gray-100 text-gray-700 dark:bg-gray-800 dark:text-gray-400";
+  const fallbackClasses = scoreStyle ? "" : "border-slate-300 bg-slate-100 text-slate-700";
 
   return (
     <span
