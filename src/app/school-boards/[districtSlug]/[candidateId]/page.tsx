@@ -13,13 +13,13 @@ import QuickFacts from "@/components/school-board/QuickFacts";
 import CappedList from "@/components/school-board/CappedList";
 import WhyThisScore from "@/components/school-board/WhyThisScore";
 import { getDistrictBranding } from "@/data/school-board-branding";
-import { getCandidateFlags, getCandidateGaps, getCandidateGoodRecords, getSchoolBoardCandidate, getSchoolBoardDossiers, getShareLine } from "@/lib/school-board-research";
+import { getCandidateFlags, getCandidateGaps, getCandidateGoodRecords, getSchoolBoardCandidate, getShareLine } from "@/lib/school-board-research";
 import { getCandidateDataId, getCandidateUrlSlug, getDistrictUrlSlug, getSchoolBoardCandidateUrl, getSchoolBoardDistrictUrl } from "@/lib/school-board-urls";
 import { buildEvidenceFromDossier, calculateSchoolBoardScore, schoolBoardScoringModel } from "@/lib/school-board-scoring";
 
-export function generateStaticParams() {
-  return getSchoolBoardDossiers().map((candidate) => ({ districtSlug: getDistrictUrlSlug(candidate.district_slug), candidateId: getCandidateUrlSlug(candidate) }));
-}
+// Keep every member URL live and in the sitemap, but do not prebuild 8,000+
+// member pages into the Vercel deployment payload.
+export const dynamicParams = true;
 
 export async function generateMetadata({ params }: { params: Promise<{ districtSlug: string; candidateId: string }> }): Promise<Metadata> {
   const { candidateId } = await params;
