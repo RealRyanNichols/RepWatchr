@@ -1,4 +1,5 @@
 import type { MetadataRoute } from "next";
+import { getAttorneyWatchProfiles, getMediaWatchProfiles } from "@/lib/power-watch";
 import { getSchoolBoardDistricts, getSchoolBoardDossiers } from "@/lib/school-board-research";
 import { getSchoolBoardCandidateUrl, getSchoolBoardDistrictUrl } from "@/lib/school-board-urls";
 
@@ -11,6 +12,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/about",
     "/officials",
     "/school-boards",
+    "/attorneys",
+    "/media",
     "/faretta-ai",
     "/feedback",
     "/funding",
@@ -37,5 +40,19 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.7,
   }));
 
-  return [...staticRoutes, ...districtRoutes, ...memberRoutes];
+  const attorneyRoutes = getAttorneyWatchProfiles().map((profile) => ({
+    url: `${siteUrl}/attorneys/${profile.slug}`,
+    lastModified: now,
+    changeFrequency: "weekly" as const,
+    priority: 0.7,
+  }));
+
+  const mediaRoutes = getMediaWatchProfiles().map((profile) => ({
+    url: `${siteUrl}/media/${profile.slug}`,
+    lastModified: now,
+    changeFrequency: "weekly" as const,
+    priority: 0.7,
+  }));
+
+  return [...staticRoutes, ...districtRoutes, ...memberRoutes, ...attorneyRoutes, ...mediaRoutes];
 }

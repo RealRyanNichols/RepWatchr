@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import Image from "next/image";
 import Link from "next/link";
 import UserMenu from "@/components/auth/UserMenu";
 
@@ -12,6 +13,8 @@ const navLinks = [
   { href: "/votes", label: "Votes" },
   { href: "/funding", label: "Funding" },
   { href: "/school-boards", label: "School Boards" },
+  { href: "/attorneys", label: "Attorneys" },
+  { href: "/media", label: "Media" },
   { href: "/red-flags", label: "Red Flags" },
   { href: "/news", label: "News" },
   { href: "/buildout", label: "Buildout" },
@@ -27,9 +30,12 @@ export default function Header() {
         {/* Logo / Site Name */}
         <Link href="/" className="flex min-w-0 shrink-0 items-center gap-2 py-1 transition hover:opacity-90 sm:gap-3">
           <span className="grid h-14 w-24 shrink-0 place-items-center overflow-hidden sm:h-16 sm:w-32 lg:h-20 lg:w-40">
-            <img
+            <Image
               src="/images/logo.png"
               alt="RepWatchr"
+              width={160}
+              height={80}
+              priority
               className="h-full w-full object-contain"
             />
           </span>
@@ -49,7 +55,7 @@ export default function Header() {
             <Link
               key={link.href}
               href={link.href}
-              className="rounded-full px-2.5 py-1.5 text-[12px] font-black text-blue-950 transition-colors hover:bg-white hover:text-red-700"
+              className="rounded-full px-2 py-1.5 text-[11px] font-black text-blue-950 transition-colors hover:bg-white hover:text-red-700 2xl:px-2.5 2xl:text-[12px]"
             >
               {link.label}
             </Link>
