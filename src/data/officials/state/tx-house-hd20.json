@@ -1,0 +1,44 @@
+{
+  "id": "terry-wilson",
+  "name": "Terry Wilson",
+  "firstName": "Terry",
+  "lastName": "Wilson",
+  "photo": "/images/officials/state-house/terry-wilson.jpg",
+  "photoSourceUrl": "https://house.texas.gov/images/members/3525.jpg?v=1",
+  "photoCredit": "Official Texas House of Representatives photo",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-20",
+  "jurisdiction": "Texas House of Representatives",
+  "county": [
+    "Texas"
+  ],
+  "termStart": "2017-01-10",
+  "termEnd": "Current legislative term pending source review",
+  "contactInfo": {
+    "office": "Room E2.722, P.O. Box 12910, Austin, TX 78711",
+    "phone": "512-463-0309",
+    "email": "terry.wilson@house.texas.gov",
+    "website": "https://house.texas.gov/members/3525"
+  },
+  "bio": "Terry Wilson serves as State Representative for Texas House of Representatives District 20. This RepWatchr starter profile is sourced from official Texas Legislature profile data and OpenStates public records.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "TX",
+  "sourceLinks": [
+    {
+      "title": "Official Texas House of Representatives profile",
+      "url": "https://house.texas.gov/members/3525"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/main/data/tx/legislature/Terry-Wilson-ec19bc97-3146-4100-8294-329b88aec0e8.yml"
+    },
+    {
+      "title": "Official profile photo source",
+      "url": "https://house.texas.gov/images/members/3525.jpg?v=1"
+    }
+  ],
+  "lastVerifiedAt": "2026-04-27"
+}

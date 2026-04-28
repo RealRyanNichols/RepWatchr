@@ -1,0 +1,44 @@
+{
+  "id": "gina-hinojosa",
+  "name": "Gina Hinojosa",
+  "firstName": "Gina",
+  "lastName": "Hinojosa",
+  "photo": "/images/officials/state-house/gina-hinojosa.jpg",
+  "photoSourceUrl": "https://house.texas.gov/images/members/3210.jpg?v=1",
+  "photoCredit": "Official Texas House of Representatives photo",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-49",
+  "jurisdiction": "Texas House of Representatives",
+  "county": [
+    "Texas"
+  ],
+  "termStart": "2017-01-10",
+  "termEnd": "Current legislative term pending source review",
+  "contactInfo": {
+    "office": "Room 4S.2, P.O. Box 12910, Austin, TX 78711",
+    "phone": "512-463-0668",
+    "email": "gina.hinojosa@house.texas.gov",
+    "website": "https://house.texas.gov/members/3210"
+  },
+  "bio": "Gina Hinojosa serves as State Representative for Texas House of Representatives District 49. This RepWatchr starter profile is sourced from official Texas Legislature profile data and OpenStates public records.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "TX",
+  "sourceLinks": [
+    {
+      "title": "Official Texas House of Representatives profile",
+      "url": "https://house.texas.gov/members/3210"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/main/data/tx/legislature/Gina-Hinojosa-1f9ed42e-27de-4cd1-b2bf-f890ee33cb49.yml"
+    },
+    {
+      "title": "Official profile photo source",
+      "url": "https://house.texas.gov/images/members/3210.jpg?v=1"
+    }
+  ],
+  "lastVerifiedAt": "2026-04-27"
+}

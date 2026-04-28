@@ -1,15 +1,15 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { Suspense } from "react";
-import { getAllOfficials, getAllScoreCards } from "@/lib/data";
+import { getAllOfficials, getAllScoreCards, getRepWatchrDataStats } from "@/lib/data";
 import { getSchoolBoardStats } from "@/lib/school-board-research";
 import OfficialGrid from "@/components/officials/OfficialGrid";
 import type { GovernmentLevel } from "@/types";
 
 export const metadata: Metadata = {
-  title: "All Government Officials",
+  title: "Elected Officials Directory",
   description:
-    "Browse sourced Texas government profiles across federal, state, county, city, and school-board offices.",
+    "Browse sourced elected-official profiles. Texas is the first loaded state, with federal, state, county, city, and school-board records.",
 };
 
 const levelLabels: Record<GovernmentLevel, string> = {
@@ -28,6 +28,7 @@ export default function OfficialsPage() {
   const officials = getAllOfficials();
   const scoreCards = getAllScoreCards();
   const schoolBoardStats = getSchoolBoardStats();
+  const dataStats = getRepWatchrDataStats();
   const levelCounts = officials.reduce<Record<GovernmentLevel, number>>(
     (acc, official) => {
       acc[official.level] = (acc[official.level] ?? 0) + 1;
@@ -41,12 +42,27 @@ export default function OfficialsPage() {
       "school-board": 0,
     },
   );
-  const trackedCounties = new Set(officials.flatMap((official) => official.county)).size;
   const statCards = [
-    { label: "Official profiles", value: formatNumber(officials.length), detail: "Loaded from local public-record files" },
-    { label: "School-board profiles", value: formatNumber(schoolBoardStats.candidates), detail: `${formatNumber(schoolBoardStats.districts)} Texas districts loaded` },
-    { label: "Counties touched", value: formatNumber(Math.max(trackedCounties, schoolBoardStats.counties)), detail: "County, city, and school-board coverage" },
-    { label: "Source links", value: formatNumber(schoolBoardStats.sourceCount), detail: "School-board roster and profile sources" },
+    {
+      label: "Federal/state seats",
+      value: formatNumber(dataStats.federalAndStateSeatProfilesLoaded),
+      detail: `${dataStats.federalProfilesLoaded}/${dataStats.federalExpectedSeats} Texas federal seats and ${dataStats.stateLegislatorProfilesLoaded}/${dataStats.stateLegislatureExpectedSeats} Texas legislative seats have person profile files.`,
+    },
+    {
+      label: "Source-seeded profiles",
+      value: formatNumber(dataStats.sourceSeededOfficialProfiles),
+      detail: `${formatNumber(dataStats.officialsWithSourceLinks)} source-linked profiles and ${formatNumber(dataStats.officialsWithPhotos)} local photos; ${formatNumber(dataStats.missingReviewStatusOfficialProfiles)} legacy files still need review status.`,
+    },
+    {
+      label: "Tracked record sets",
+      value: formatNumber(dataStats.scoreCards),
+      detail: `${formatNumber(dataStats.fundingSummaries)} funding summaries, ${formatNumber(dataStats.redFlagItems)} red-flag items, and ${formatNumber(dataStats.bills)} vote files are loaded.`,
+    },
+    {
+      label: "School-board dossiers",
+      value: formatNumber(schoolBoardStats.candidates),
+      detail: `${formatNumber(schoolBoardStats.districts)} Texas districts, ${formatNumber(schoolBoardStats.stubProfiles)} queued or in-progress profiles, ${formatNumber(schoolBoardStats.gapCount)} research gaps.`,
+    },
   ];
   const actionCards = [
     {
@@ -73,25 +89,25 @@ export default function OfficialsPage() {
 
   return (
     <div className="mx-auto max-w-7xl px-4 py-8 sm:px-6 lg:px-8">
-      <section className="mb-8 overflow-hidden rounded-2xl border border-blue-100 bg-[linear-gradient(135deg,#ffffff_0%,#f8fbff_47%,#fff7ed_100%)] shadow-sm">
+      <section className="mb-8 overflow-hidden rounded-2xl border border-slate-800 bg-slate-950 text-white shadow-lg">
         <div className="h-1.5 w-full bg-[linear-gradient(90deg,#bf0d3e_0%,#bf0d3e_33%,#ffffff_33%,#ffffff_66%,#002868_66%,#002868_100%)]" />
         <div className="grid gap-6 p-5 lg:grid-cols-[1.25fr_0.75fr] lg:p-7">
           <div>
-            <p className="text-xs font-black uppercase tracking-[0.18em] text-red-700">
-              Texas public-record map
+            <p className="text-xs font-black uppercase tracking-[0.18em] text-red-200">
+              United States public-record map
             </p>
-            <h1 className="mt-3 text-3xl font-black tracking-tight text-blue-950 sm:text-4xl">
-              All government officials, source-backed.
+            <h1 className="mt-3 text-3xl font-black tracking-tight text-white sm:text-4xl">
+              Elected officials, source-backed.
             </h1>
-            <p className="mt-3 max-w-3xl text-sm font-semibold leading-6 text-slate-700 sm:text-base">
-              RepWatchr is being built to cover every Texas office we can verify: federal, state, county, city, school board, and appointed public boards where a public record confirms the seat. A profile should show who holds power, what records support it, what citizens say, and what is still missing.
+            <p className="mt-3 max-w-3xl text-sm font-semibold leading-6 text-slate-200 sm:text-base">
+              RepWatchr is built for nationwide coverage. Texas is the first loaded state: federal representatives, state legislators, county and city officials, and school-board records where a public source confirms the seat. A profile shows who is loaded; scorecards, funding, red flags, votes, and citizen input appear only when those records actually exist.
             </p>
             <div className="mt-5 flex flex-wrap gap-2">
               {Object.entries(levelLabels).map(([level, label]) => (
                 <Link
                   key={level}
                   href={`/officials?level=${level}`}
-                  className="rounded-full border border-blue-100 bg-white px-3 py-1.5 text-xs font-black text-blue-950 transition hover:border-red-200 hover:text-red-700"
+                  className="rounded-full border border-white/15 bg-white px-3 py-1.5 text-xs font-black text-slate-950 transition hover:border-red-200 hover:text-red-700"
                 >
                   {label}: {formatNumber(levelCounts[level as GovernmentLevel])}
                 </Link>
@@ -100,10 +116,10 @@ export default function OfficialsPage() {
           </div>
           <div className="grid grid-cols-2 gap-3">
             {statCards.map((card) => (
-              <div key={card.label} className="rounded-xl border border-blue-100 bg-white p-4 shadow-sm">
-                <p className="text-2xl font-black text-blue-950">{card.value}</p>
-                <p className="mt-1 text-xs font-black uppercase tracking-wide text-red-700">{card.label}</p>
-                <p className="mt-2 text-xs font-semibold leading-5 text-slate-600">{card.detail}</p>
+              <div key={card.label} className="rounded-xl border border-white/15 bg-white/10 p-4 shadow-sm">
+                <p className="text-2xl font-black text-white">{card.value}</p>
+                <p className="mt-1 text-xs font-black uppercase tracking-wide text-red-200">{card.label}</p>
+                <p className="mt-2 text-xs font-semibold leading-5 text-slate-200">{card.detail}</p>
               </div>
             ))}
           </div>
@@ -127,13 +143,13 @@ export default function OfficialsPage() {
         <div className="grid gap-4 lg:grid-cols-[0.8fr_1.2fr]">
           <div>
             <p className="text-xs font-black uppercase tracking-[0.18em] text-red-700">
-              New information path
+              National buildout path
             </p>
             <h2 className="mt-2 text-xl font-black text-slate-950">
               Add it only when the public record supports it.
             </h2>
             <p className="mt-2 text-sm font-semibold leading-6 text-slate-600">
-              Faretta AI can help turn a name, county, district, roster page, agenda, filing, or election source into a research checklist. The public profile still needs a source URL before it changes the record.
+              Faretta AI can help turn a name, county, state, district, roster page, agenda, filing, or election source into a research checklist. The public profile still needs a source URL before it changes the record.
             </p>
           </div>
           <div className="grid gap-3 sm:grid-cols-2">

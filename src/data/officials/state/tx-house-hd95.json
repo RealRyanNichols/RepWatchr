@@ -1,0 +1,44 @@
+{
+  "id": "nicole-collier",
+  "name": "Nicole Collier",
+  "firstName": "Nicole",
+  "lastName": "Collier",
+  "photo": "/images/officials/state-house/nicole-collier.jpg",
+  "photoSourceUrl": "https://house.texas.gov/images/members/2360.jpg?v=1",
+  "photoCredit": "Official Texas House of Representatives photo",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-95",
+  "jurisdiction": "Texas House of Representatives",
+  "county": [
+    "Texas"
+  ],
+  "termStart": "2013-01-08",
+  "termEnd": "Current legislative term pending source review",
+  "contactInfo": {
+    "office": "Room 3S.2, P.O. Box 12910, Austin, TX 78711",
+    "phone": "512-463-0716",
+    "email": "nicole.collier@house.texas.gov",
+    "website": "https://house.texas.gov/members/95"
+  },
+  "bio": "Nicole Collier serves as State Representative for Texas House of Representatives District 95. This RepWatchr starter profile is sourced from official Texas Legislature profile data and OpenStates public records.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "TX",
+  "sourceLinks": [
+    {
+      "title": "Official Texas House of Representatives profile",
+      "url": "https://house.texas.gov/members/95"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/main/data/tx/legislature/Nicole-Collier-ea169f77-0bd8-4ca0-ac59-f894c9a09e71.yml"
+    },
+    {
+      "title": "Official profile photo source",
+      "url": "https://house.texas.gov/images/members/2360.jpg?v=1"
+    }
+  ],
+  "lastVerifiedAt": "2026-04-27"
+}

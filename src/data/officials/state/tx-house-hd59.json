@@ -1,0 +1,44 @@
+{
+  "id": "shelby-slawson",
+  "name": "Shelby Slawson",
+  "firstName": "Shelby",
+  "lastName": "Slawson",
+  "photo": "/images/officials/state-house/shelby-slawson.jpg",
+  "photoSourceUrl": "https://house.texas.gov/images/members/4055.jpg?v=2",
+  "photoCredit": "Official Texas House of Representatives photo",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-59",
+  "jurisdiction": "Texas House of Representatives",
+  "county": [
+    "Texas"
+  ],
+  "termStart": "2021-01-12",
+  "termEnd": "Current legislative term pending source review",
+  "contactInfo": {
+    "office": "Room E2.506, P.O. Box 12910, Austin, TX 78711",
+    "phone": "512-463-0628",
+    "email": "shelby.slawson@house.texas.gov",
+    "website": "https://house.texas.gov/members/4055"
+  },
+  "bio": "Shelby Slawson serves as State Representative for Texas House of Representatives District 59. This RepWatchr starter profile is sourced from official Texas Legislature profile data and OpenStates public records.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "TX",
+  "sourceLinks": [
+    {
+      "title": "Official Texas House of Representatives profile",
+      "url": "https://house.texas.gov/members/4055"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/main/data/tx/legislature/Shelby-Slawson-ddebb940-33f9-4b5c-a8fa-e22c63a594e9.yml"
+    },
+    {
+      "title": "Official profile photo source",
+      "url": "https://house.texas.gov/images/members/4055.jpg?v=2"
+    }
+  ],
+  "lastVerifiedAt": "2026-04-27"
+}

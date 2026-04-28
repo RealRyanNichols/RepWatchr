@@ -1,0 +1,44 @@
+{
+  "id": "will-metcalf",
+  "name": "Will Metcalf",
+  "firstName": "Will",
+  "lastName": "Metcalf",
+  "photo": "/images/officials/state-house/will-metcalf.jpg",
+  "photoSourceUrl": "https://house.texas.gov/images/members/2900.jpg?v=1",
+  "photoCredit": "Official Texas House of Representatives photo",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-16",
+  "jurisdiction": "Texas House of Representatives",
+  "county": [
+    "Texas"
+  ],
+  "termStart": "2015-01-13",
+  "termEnd": "Current legislative term pending source review",
+  "contactInfo": {
+    "office": "Room 1N.12, P.O. Box 12910, Austin, TX 78711",
+    "phone": "512-463-0726",
+    "email": "will.metcalf@house.texas.gov",
+    "website": "https://house.texas.gov/members/2900"
+  },
+  "bio": "Will Metcalf serves as State Representative for Texas House of Representatives District 16. This RepWatchr starter profile is sourced from official Texas Legislature profile data and OpenStates public records.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "TX",
+  "sourceLinks": [
+    {
+      "title": "Official Texas House of Representatives profile",
+      "url": "https://house.texas.gov/members/2900"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/main/data/tx/legislature/Will-Metcalf-e7a379ec-9de2-48a2-918b-5ba58e1fd3f3.yml"
+    },
+    {
+      "title": "Official profile photo source",
+      "url": "https://house.texas.gov/images/members/2900.jpg?v=1"
+    }
+  ],
+  "lastVerifiedAt": "2026-04-27"
+}

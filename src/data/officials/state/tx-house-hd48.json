@@ -1,0 +1,44 @@
+{
+  "id": "donna-howard",
+  "name": "Donna Howard",
+  "firstName": "Donna",
+  "lastName": "Howard",
+  "photo": "/images/officials/state-house/donna-howard.jpg",
+  "photoSourceUrl": "https://house.texas.gov/images/members/3310.jpg?v=1",
+  "photoCredit": "Official Texas House of Representatives photo",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-48",
+  "jurisdiction": "Texas House of Representatives",
+  "county": [
+    "Texas"
+  ],
+  "termStart": "2006-03-02",
+  "termEnd": "Current legislative term pending source review",
+  "contactInfo": {
+    "office": "Room GW.11, P.O. Box 12910, Austin, TX 78711",
+    "phone": "512-463-0631",
+    "email": "donna.howard@house.texas.gov",
+    "website": "https://house.texas.gov/members/3310"
+  },
+  "bio": "Donna Howard serves as State Representative for Texas House of Representatives District 48. This RepWatchr starter profile is sourced from official Texas Legislature profile data and OpenStates public records.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "TX",
+  "sourceLinks": [
+    {
+      "title": "Official Texas House of Representatives profile",
+      "url": "https://house.texas.gov/members/3310"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/main/data/tx/legislature/Donna-Howard-349071fd-3c36-43c6-aaca-6d7f9d04322d.yml"
+    },
+    {
+      "title": "Official profile photo source",
+      "url": "https://house.texas.gov/images/members/3310.jpg?v=1"
+    }
+  ],
+  "lastVerifiedAt": "2026-04-27"
+}

@@ -1,0 +1,44 @@
+{
+  "id": "ana-hernandez",
+  "name": "Ana Hernandez",
+  "firstName": "Ana",
+  "lastName": "Hernandez",
+  "photo": "/images/officials/state-house/ana-hernandez.jpg",
+  "photoSourceUrl": "https://house.texas.gov/images/members/3155.jpg?v=1",
+  "photoCredit": "Official Texas House of Representatives photo",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-143",
+  "jurisdiction": "Texas House of Representatives",
+  "county": [
+    "Texas"
+  ],
+  "termStart": "2005-12-20",
+  "termEnd": "Current legislative term pending source review",
+  "contactInfo": {
+    "office": "Room 1W.11, P.O. Box 12910, Austin, TX 78711",
+    "phone": "512-463-0614",
+    "email": "ana.hernandez@house.texas.gov",
+    "website": "https://house.texas.gov/members/3155"
+  },
+  "bio": "Ana Hernandez serves as State Representative for Texas House of Representatives District 143. This RepWatchr starter profile is sourced from official Texas Legislature profile data and OpenStates public records.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "TX",
+  "sourceLinks": [
+    {
+      "title": "Official Texas House of Representatives profile",
+      "url": "https://house.texas.gov/members/3155"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/main/data/tx/legislature/Ana-Hernandez-4f98520b-d88b-4053-acc5-3cb2fff14660.yml"
+    },
+    {
+      "title": "Official profile photo source",
+      "url": "https://house.texas.gov/images/members/3155.jpg?v=1"
+    }
+  ],
+  "lastVerifiedAt": "2026-04-27"
+}

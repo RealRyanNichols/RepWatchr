@@ -12,10 +12,11 @@ export const metadata: Metadata = {
     template: "%s | RepWatchr",
   },
   description:
-    "Track your elected officials in Texas. Scorecards, voting records, campaign funding, red flags, and citizen voting. The smartest way to watch your reps.",
+    "Track elected officials with source-backed profiles, scorecards, voting records, campaign funding, red flags, and citizen input. Texas is the first loaded state.",
   keywords: [
     "RepWatchr",
     "elected officials",
+    "United States representatives",
     "Texas",
     "political scorecard",
     "voting record",
@@ -38,7 +39,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "RepWatchr - Know Your Reps. Hold Them Accountable.",
     description:
-      "Track your elected officials in Texas. Scorecards, voting records, campaign funding, red flags, and citizen voting.",
+      "Track elected officials with source-backed profiles, scorecards, voting records, campaign funding, red flags, and citizen input.",
     url: "https://www.repwatchr.com",
     siteName: "RepWatchr",
     locale: "en_US",
@@ -56,7 +57,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "RepWatchr - Know Your Reps. Hold Them Accountable.",
     description:
-      "Track your elected officials in Texas. Scorecards, voting records, campaign funding, and red flags.",
+      "Track elected officials with source-backed profiles, voting records, campaign funding, and red flags.",
     images: ["/images/profile.png"],
   },
   robots: {

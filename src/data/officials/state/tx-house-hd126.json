@@ -1,0 +1,44 @@
+{
+  "id": "sam-harless",
+  "name": "Sam Harless",
+  "firstName": "Sam",
+  "lastName": "Harless",
+  "photo": "/images/officials/state-house/sam-harless.jpg",
+  "photoSourceUrl": "https://house.texas.gov/images/members/3775.jpg?v=1",
+  "photoCredit": "Official Texas House of Representatives photo",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-126",
+  "jurisdiction": "Texas House of Representatives",
+  "county": [
+    "Texas"
+  ],
+  "termStart": "2019-01-08",
+  "termEnd": "Current legislative term pending source review",
+  "contactInfo": {
+    "office": "Room GW.6, P.O. Box 12910, Austin, TX 78711",
+    "phone": "512-463-0496",
+    "email": "sam.harless@house.texas.gov",
+    "website": "https://house.texas.gov/members/3775"
+  },
+  "bio": "Sam Harless serves as State Representative for Texas House of Representatives District 126. This RepWatchr starter profile is sourced from official Texas Legislature profile data and OpenStates public records.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "TX",
+  "sourceLinks": [
+    {
+      "title": "Official Texas House of Representatives profile",
+      "url": "https://house.texas.gov/members/3775"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/main/data/tx/legislature/Sam-Harless-2db06a9d-ae17-4881-98b4-5172fdfca19f.yml"
+    },
+    {
+      "title": "Official profile photo source",
+      "url": "https://house.texas.gov/images/members/3775.jpg?v=1"
+    }
+  ],
+  "lastVerifiedAt": "2026-04-27"
+}

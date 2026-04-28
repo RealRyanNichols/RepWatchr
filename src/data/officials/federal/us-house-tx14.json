@@ -1,0 +1,45 @@
+{
+  "id": "randy-k-weber-sr",
+  "name": "Randy K. Weber, Sr.",
+  "firstName": "Randy",
+  "lastName": "Weber",
+  "photo": "/images/officials/federal/randy-k-weber-sr.jpg",
+  "photoSourceUrl": "https://unitedstates.github.io/images/congress/225x275/W000814.jpg",
+  "photoCredit": "UnitedStates project congressional image mirror",
+  "party": "R",
+  "level": "federal",
+  "position": "U.S. Representative",
+  "district": "TX-14",
+  "jurisdiction": "U.S. House of Representatives",
+  "county": [
+    "Texas"
+  ],
+  "termStart": "2025-01-03",
+  "termEnd": "2027-01-03",
+  "contactInfo": {
+    "office": "107 Cannon House Office Building",
+    "phone": "202-225-2831",
+    "email": "https://weber.house.gov",
+    "website": "https://weber.house.gov"
+  },
+  "bio": "Randy K. Weber, Sr. serves as the U.S. Representative for Texas's 14th Congressional District. This RepWatchr starter profile is sourced from the official congressional record data and public profile links.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "TX",
+  "bioguideId": "W000814",
+  "sourceLinks": [
+    {
+      "title": "Official congressional website",
+      "url": "https://weber.house.gov"
+    },
+    {
+      "title": "Congress legislators current roster",
+      "url": "https://raw.githubusercontent.com/unitedstates/congress-legislators/master/legislators-current.yaml"
+    },
+    {
+      "title": "Congressional photo source",
+      "url": "https://unitedstates.github.io/images/congress/225x275/W000814.jpg"
+    }
+  ],
+  "lastVerifiedAt": "2026-04-27"
+}

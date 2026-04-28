@@ -21,7 +21,7 @@ const partyOptions: { value: Party | "all"; label: string }[] = [
   { value: "VR", label: "Votes Republican" },
   { value: "VD", label: "Votes Democrat" },
   { value: "I", label: "Independent" },
-  { value: "NP", label: "Unknown" },
+  { value: "NP", label: "Nonpartisan / Unknown" },
 ];
 
 interface OfficialGridProps {
@@ -85,7 +85,7 @@ export default function OfficialGrid({
           type="text"
           value={searchQuery}
           onChange={(e) => setSearchQuery(e.target.value)}
-          placeholder="Search by name, position, county, or district..."
+          placeholder="Search by name, office, district, state, or county..."
           className="w-full rounded-xl border border-gray-200 bg-white px-4 py-2.5 text-sm text-gray-900 placeholder-gray-400 focus:border-blue-500 focus:outline-none focus:ring-1 focus:ring-blue-500"
         />
       </div>

@@ -1,0 +1,44 @@
+{
+  "id": "jon-rosenthal",
+  "name": "Jon Rosenthal",
+  "firstName": "Jon",
+  "lastName": "Rosenthal",
+  "photo": "/images/officials/state-house/jon-rosenthal.jpg",
+  "photoSourceUrl": "https://house.texas.gov/images/members/3635.jpg?v=1",
+  "photoCredit": "Official Texas House of Representatives photo",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-135",
+  "jurisdiction": "Texas House of Representatives",
+  "county": [
+    "Texas"
+  ],
+  "termStart": "2019-01-08",
+  "termEnd": "Current legislative term pending source review",
+  "contactInfo": {
+    "office": "Room E2.308, P.O. Box 12910, Austin, TX 78711",
+    "phone": "512-463-0722",
+    "email": "jon.rosenthal@house.texas.gov",
+    "website": "https://house.texas.gov/members/135"
+  },
+  "bio": "Jon Rosenthal serves as State Representative for Texas House of Representatives District 135. This RepWatchr starter profile is sourced from official Texas Legislature profile data and OpenStates public records.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "TX",
+  "sourceLinks": [
+    {
+      "title": "Official Texas House of Representatives profile",
+      "url": "https://house.texas.gov/members/135"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/main/data/tx/legislature/Jon-Rosenthal-ab211984-06a9-447c-9ded-564d200bee60.yml"
+    },
+    {
+      "title": "Official profile photo source",
+      "url": "https://house.texas.gov/images/members/3635.jpg?v=1"
+    }
+  ],
+  "lastVerifiedAt": "2026-04-27"
+}

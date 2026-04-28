@@ -1,0 +1,44 @@
+{
+  "id": "ken-king",
+  "name": "Ken King",
+  "firstName": "Ken",
+  "lastName": "King",
+  "photo": "/images/officials/state-house/ken-king.jpg",
+  "photoSourceUrl": "https://house.texas.gov/images/members/2455.jpg?v=1",
+  "photoCredit": "Official Texas House of Representatives photo",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-88",
+  "jurisdiction": "Texas House of Representatives",
+  "county": [
+    "Texas"
+  ],
+  "termStart": "2013-01-08",
+  "termEnd": "Current legislative term pending source review",
+  "contactInfo": {
+    "office": "Room GW.17, P.O. Box 12910, Austin, TX 78711",
+    "phone": "512-463-0736",
+    "email": "ken.king@house.texas.gov",
+    "website": "https://house.texas.gov/members/2455"
+  },
+  "bio": "Ken King serves as State Representative for Texas House of Representatives District 88. This RepWatchr starter profile is sourced from official Texas Legislature profile data and OpenStates public records.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "TX",
+  "sourceLinks": [
+    {
+      "title": "Official Texas House of Representatives profile",
+      "url": "https://house.texas.gov/members/2455"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/main/data/tx/legislature/Ken-King-d9f32e07-7835-4edf-b986-7a2cf16d608b.yml"
+    },
+    {
+      "title": "Official profile photo source",
+      "url": "https://house.texas.gov/images/members/2455.jpg?v=1"
+    }
+  ],
+  "lastVerifiedAt": "2026-04-27"
+}

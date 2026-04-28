@@ -1,0 +1,44 @@
+{
+  "id": "lacey-hull",
+  "name": "Lacey Hull",
+  "firstName": "Lacey",
+  "lastName": "Hull",
+  "photo": "/images/officials/state-house/lacey-hull.jpg",
+  "photoSourceUrl": "https://house.texas.gov/images/members/3975.jpg?v=1",
+  "photoCredit": "Official Texas House of Representatives photo",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-138",
+  "jurisdiction": "Texas House of Representatives",
+  "county": [
+    "Texas"
+  ],
+  "termStart": "2021-01-12",
+  "termEnd": "Current legislative term pending source review",
+  "contactInfo": {
+    "office": "Room E2.212, P.O. Box 12910, Austin, TX 78711",
+    "phone": "512-463-0727",
+    "email": "lacey.hull@house.texas.gov",
+    "website": "https://house.texas.gov/members/3975"
+  },
+  "bio": "Lacey Hull serves as State Representative for Texas House of Representatives District 138. This RepWatchr starter profile is sourced from official Texas Legislature profile data and OpenStates public records.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "TX",
+  "sourceLinks": [
+    {
+      "title": "Official Texas House of Representatives profile",
+      "url": "https://house.texas.gov/members/3975"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/main/data/tx/legislature/Lacey-Hull-2609ba13-abf1-40b5-9f4c-a4c1135e56e2.yml"
+    },
+    {
+      "title": "Official profile photo source",
+      "url": "https://house.texas.gov/images/members/3975.jpg?v=1"
+    }
+  ],
+  "lastVerifiedAt": "2026-04-27"
+}

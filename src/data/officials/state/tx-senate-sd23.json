@@ -1,0 +1,44 @@
+{
+  "id": "royce-west",
+  "name": "Royce West",
+  "firstName": "Royce",
+  "lastName": "West",
+  "photo": "/images/officials/state-senate/royce-west.jpg",
+  "photoSourceUrl": "https://senate.texas.gov/members/d23/img/West_87-0474D-015-web.jpg",
+  "photoCredit": "Official Texas Senate photo",
+  "party": "D",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-23",
+  "jurisdiction": "Texas Senate",
+  "county": [
+    "Texas"
+  ],
+  "termStart": "1993-01-12",
+  "termEnd": "Current legislative term pending source review",
+  "contactInfo": {
+    "office": "Room 1E.5, P.O. Box 12068 Capitol Station, Austin, TX 78711",
+    "phone": "512-463-0123",
+    "email": "royce.west@senate.texas.gov",
+    "website": "https://senate.texas.gov/member.php?d=23"
+  },
+  "bio": "Royce West serves as State Senator for Texas Senate District 23. This RepWatchr starter profile is sourced from official Texas Legislature profile data and OpenStates public records.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "TX",
+  "sourceLinks": [
+    {
+      "title": "Official Texas Senate profile",
+      "url": "https://senate.texas.gov/member.php?d=23"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/main/data/tx/legislature/Royce-West-d6f40682-7b90-4735-980c-7c95ef402a78.yml"
+    },
+    {
+      "title": "Official profile photo source",
+      "url": "https://senate.texas.gov/members/d23/img/West_87-0474D-015-web.jpg"
+    }
+  ],
+  "lastVerifiedAt": "2026-04-27"
+}

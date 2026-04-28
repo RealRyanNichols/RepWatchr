@@ -1,0 +1,44 @@
+{
+  "id": "chuy-hinojosa",
+  "name": "Chuy Hinojosa",
+  "firstName": "Chuy",
+  "lastName": "Hinojosa",
+  "photo": "/images/officials/state-senate/chuy-hinojosa.jpg",
+  "photoSourceUrl": "https://senate.texas.gov/members/d20/img/Hinojosa_84-0784D-006.jpg",
+  "photoCredit": "Official Texas Senate photo",
+  "party": "D",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-20",
+  "jurisdiction": "Texas Senate",
+  "county": [
+    "Texas"
+  ],
+  "termStart": "2003-01-14",
+  "termEnd": "Current legislative term pending source review",
+  "contactInfo": {
+    "office": "Room 3E.6, P.O. Box 12068 Capitol Station, Austin, TX 78711",
+    "phone": "512-463-0120",
+    "email": "juan.hinojosa@senate.texas.gov",
+    "website": "https://senate.texas.gov/member.php?d=20"
+  },
+  "bio": "Chuy Hinojosa serves as State Senator for Texas Senate District 20. This RepWatchr starter profile is sourced from official Texas Legislature profile data and OpenStates public records.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "TX",
+  "sourceLinks": [
+    {
+      "title": "Official Texas Senate profile",
+      "url": "https://senate.texas.gov/member.php?d=20"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/main/data/tx/legislature/Juan-Chuy-Hinojosa-72766791-084c-4a20-a12c-6e809b51e95c.yml"
+    },
+    {
+      "title": "Official profile photo source",
+      "url": "https://senate.texas.gov/members/d20/img/Hinojosa_84-0784D-006.jpg"
+    }
+  ],
+  "lastVerifiedAt": "2026-04-27"
+}

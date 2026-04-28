@@ -1,0 +1,44 @@
+{
+  "id": "linda-garcia",
+  "name": "Linda Garcia",
+  "firstName": "Linda",
+  "lastName": "Garcia",
+  "photo": "/images/officials/state-house/linda-garcia.jpg",
+  "photoSourceUrl": "https://www.house.texas.gov/images/members/4485.jpg?v=3",
+  "photoCredit": "Official Texas House of Representatives photo",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-107",
+  "jurisdiction": "Texas House of Representatives",
+  "county": [
+    "Texas"
+  ],
+  "termStart": "2025-01-14",
+  "termEnd": "Current legislative term pending source review",
+  "contactInfo": {
+    "office": "Room E2.716, P.O. Box 12910, Austin, TX 78711",
+    "phone": "512-463-0244",
+    "email": "linda.garcia@house.texas.gov",
+    "website": "https://www.house.texas.gov/members/107"
+  },
+  "bio": "Linda Garcia serves as State Representative for Texas House of Representatives District 107. This RepWatchr starter profile is sourced from official Texas Legislature profile data and OpenStates public records.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "TX",
+  "sourceLinks": [
+    {
+      "title": "Official Texas House of Representatives profile",
+      "url": "https://www.house.texas.gov/members/107"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/main/data/tx/legislature/Linda-Garcia-5d3626bb-c865-4c92-a717-a72036c6ce5a.yml"
+    },
+    {
+      "title": "Official profile photo source",
+      "url": "https://www.house.texas.gov/images/members/4485.jpg?v=3"
+    }
+  ],
+  "lastVerifiedAt": "2026-04-27"
+}

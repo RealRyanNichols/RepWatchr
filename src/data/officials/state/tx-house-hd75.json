@@ -1,0 +1,44 @@
+{
+  "id": "mary-gonz-lez",
+  "name": "Mary González",
+  "firstName": "Mary",
+  "lastName": "González",
+  "photo": "/images/officials/state-house/mary-gonz-lez.jpg",
+  "photoSourceUrl": "https://house.texas.gov/images/members/2410.jpg?v=1",
+  "photoCredit": "Official Texas House of Representatives photo",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-75",
+  "jurisdiction": "Texas House of Representatives",
+  "county": [
+    "Texas"
+  ],
+  "termStart": "2013-01-08",
+  "termEnd": "Current legislative term pending source review",
+  "contactInfo": {
+    "office": "Room E1.504, P.O. Box 12910, Austin, TX 78711",
+    "phone": "512-463-0613",
+    "email": "mary.gonzalez@house.texas.gov",
+    "website": "https://house.texas.gov/members/2410"
+  },
+  "bio": "Mary González serves as State Representative for Texas House of Representatives District 75. This RepWatchr starter profile is sourced from official Texas Legislature profile data and OpenStates public records.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "TX",
+  "sourceLinks": [
+    {
+      "title": "Official Texas House of Representatives profile",
+      "url": "https://house.texas.gov/members/2410"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/main/data/tx/legislature/Mary-Gonzlez-93379bbe-5fb3-400f-853a-d0b3553e7772.yml"
+    },
+    {
+      "title": "Official profile photo source",
+      "url": "https://house.texas.gov/images/members/2410.jpg?v=1"
+    }
+  ],
+  "lastVerifiedAt": "2026-04-27"
+}

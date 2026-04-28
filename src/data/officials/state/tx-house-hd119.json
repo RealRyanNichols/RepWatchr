@@ -1,0 +1,44 @@
+{
+  "id": "liz-campos",
+  "name": "Liz Campos",
+  "firstName": "Liz",
+  "lastName": "Campos",
+  "photo": "/images/officials/state-house/liz-campos.jpg",
+  "photoSourceUrl": "https://house.texas.gov/images/members/3950.jpg?v=1",
+  "photoCredit": "Official Texas House of Representatives photo",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-119",
+  "jurisdiction": "Texas House of Representatives",
+  "county": [
+    "Texas"
+  ],
+  "termStart": "2021-01-12",
+  "termEnd": "Current legislative term pending source review",
+  "contactInfo": {
+    "office": "Room E2.422, P.O. Box 12910, Austin, TX 78711",
+    "phone": "512-463-0452",
+    "email": "elizabeth.campos@house.texas.gov",
+    "website": "https://house.texas.gov/members/119"
+  },
+  "bio": "Liz Campos serves as State Representative for Texas House of Representatives District 119. This RepWatchr starter profile is sourced from official Texas Legislature profile data and OpenStates public records.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "TX",
+  "sourceLinks": [
+    {
+      "title": "Official Texas House of Representatives profile",
+      "url": "https://house.texas.gov/members/119"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/main/data/tx/legislature/Elizabeth-Liz-Campos-b91e1420-1732-4063-9f3d-edcc5e71d416.yml"
+    },
+    {
+      "title": "Official profile photo source",
+      "url": "https://house.texas.gov/images/members/3950.jpg?v=1"
+    }
+  ],
+  "lastVerifiedAt": "2026-04-27"
+}

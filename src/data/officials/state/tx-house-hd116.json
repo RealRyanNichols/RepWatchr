@@ -1,0 +1,44 @@
+{
+  "id": "trey-martinez-fischer",
+  "name": "Trey Martinez Fischer",
+  "firstName": "Trey",
+  "lastName": "Martinez Fischer",
+  "photo": "/images/officials/state-house/trey-martinez-fischer.jpg",
+  "photoSourceUrl": "https://house.texas.gov/images/members/2835.jpg?v=1",
+  "photoCredit": "Official Texas House of Representatives photo",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-116",
+  "jurisdiction": "Texas House of Representatives",
+  "county": [
+    "Texas"
+  ],
+  "termStart": "2019-01-08",
+  "termEnd": "Current legislative term pending source review",
+  "contactInfo": {
+    "office": "Room 4S.5, P.O. Box 12910, Austin, TX 78711",
+    "phone": "512-463-0616",
+    "email": "trey.martinezfischer@house.texas.gov",
+    "website": "https://house.texas.gov/members/2835"
+  },
+  "bio": "Trey Martinez Fischer serves as State Representative for Texas House of Representatives District 116. This RepWatchr starter profile is sourced from official Texas Legislature profile data and OpenStates public records.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "TX",
+  "sourceLinks": [
+    {
+      "title": "Official Texas House of Representatives profile",
+      "url": "https://house.texas.gov/members/2835"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/main/data/tx/legislature/Trey-Martinez-Fischer-07f5e898-8d5d-435a-bf97-7bfb26fce5ac.yml"
+    },
+    {
+      "title": "Official profile photo source",
+      "url": "https://house.texas.gov/images/members/2835.jpg?v=1"
+    }
+  ],
+  "lastVerifiedAt": "2026-04-27"
+}

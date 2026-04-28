@@ -1,0 +1,44 @@
+{
+  "id": "tony-tinderholt",
+  "name": "Tony Tinderholt",
+  "firstName": "Tony",
+  "lastName": "Tinderholt",
+  "photo": "/images/officials/state-house/tony-tinderholt.jpg",
+  "photoSourceUrl": "https://house.texas.gov/images/members/3065.jpg?v=1",
+  "photoCredit": "Official Texas House of Representatives photo",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-94",
+  "jurisdiction": "Texas House of Representatives",
+  "county": [
+    "Texas"
+  ],
+  "termStart": "2015-01-13",
+  "termEnd": "Current legislative term pending source review",
+  "contactInfo": {
+    "office": "Room E1.420, P.O. Box 12910, Austin, TX 78711",
+    "phone": "512-463-0624",
+    "email": "tony.tinderholt@house.texas.gov",
+    "website": "https://house.texas.gov/members/3065"
+  },
+  "bio": "Tony Tinderholt serves as State Representative for Texas House of Representatives District 94. This RepWatchr starter profile is sourced from official Texas Legislature profile data and OpenStates public records.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "TX",
+  "sourceLinks": [
+    {
+      "title": "Official Texas House of Representatives profile",
+      "url": "https://house.texas.gov/members/3065"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/main/data/tx/legislature/Tony-Tinderholt-1ca78d00-1ede-4486-b14e-16bd81ba73e4.yml"
+    },
+    {
+      "title": "Official profile photo source",
+      "url": "https://house.texas.gov/images/members/3065.jpg?v=1"
+    }
+  ],
+  "lastVerifiedAt": "2026-04-27"
+}

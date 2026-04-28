@@ -1,0 +1,44 @@
+{
+  "id": "hubert-vo",
+  "name": "Hubert Vo",
+  "firstName": "Hubert",
+  "lastName": "Vo",
+  "photo": "/images/officials/state-house/hubert-vo.jpg",
+  "photoSourceUrl": "https://house.texas.gov/images/members/4900.jpg?v=1",
+  "photoCredit": "Official Texas House of Representatives photo",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-149",
+  "jurisdiction": "Texas House of Representatives",
+  "county": [
+    "Texas"
+  ],
+  "termStart": "2005-01-11",
+  "termEnd": "Current legislative term pending source review",
+  "contactInfo": {
+    "office": "Room 4N.8, P.O. Box 12910, Austin, TX 78711",
+    "phone": "512-463-0568",
+    "email": "hubert.vo@house.texas.gov",
+    "website": "https://house.texas.gov/members/4900"
+  },
+  "bio": "Hubert Vo serves as State Representative for Texas House of Representatives District 149. This RepWatchr starter profile is sourced from official Texas Legislature profile data and OpenStates public records.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "TX",
+  "sourceLinks": [
+    {
+      "title": "Official Texas House of Representatives profile",
+      "url": "https://house.texas.gov/members/4900"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/main/data/tx/legislature/Hubert-Vo-5c2743d2-fe0e-41d6-969d-de830d5787f8.yml"
+    },
+    {
+      "title": "Official profile photo source",
+      "url": "https://house.texas.gov/images/members/4900.jpg?v=1"
+    }
+  ],
+  "lastVerifiedAt": "2026-04-27"
+}

@@ -1,0 +1,44 @@
+{
+  "id": "ryan-guillen",
+  "name": "Ryan Guillen",
+  "firstName": "Ryan",
+  "lastName": "Guillen",
+  "photo": "/images/officials/state-house/ryan-guillen.jpg",
+  "photoSourceUrl": "https://house.texas.gov/images/members/3045.jpg?v=1",
+  "photoCredit": "Official Texas House of Representatives photo",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-31",
+  "jurisdiction": "Texas House of Representatives",
+  "county": [
+    "Texas"
+  ],
+  "termStart": "2003-01-14",
+  "termEnd": "Current legislative term pending source review",
+  "contactInfo": {
+    "office": "Room 3N.6, P.O. Box 12910, Austin, TX 78711",
+    "phone": "512-463-0416",
+    "email": "ryan.guillen@house.texas.gov",
+    "website": "https://house.texas.gov/members/3045"
+  },
+  "bio": "Ryan Guillen serves as State Representative for Texas House of Representatives District 31. This RepWatchr starter profile is sourced from official Texas Legislature profile data and OpenStates public records.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "TX",
+  "sourceLinks": [
+    {
+      "title": "Official Texas House of Representatives profile",
+      "url": "https://house.texas.gov/members/3045"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/main/data/tx/legislature/Ryan-Guillen-f0ede995-2253-4f7b-a922-6da34e4de194.yml"
+    },
+    {
+      "title": "Official profile photo source",
+      "url": "https://house.texas.gov/images/members/3045.jpg?v=1"
+    }
+  ],
+  "lastVerifiedAt": "2026-04-27"
+}

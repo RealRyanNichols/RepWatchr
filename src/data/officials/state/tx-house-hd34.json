@@ -1,0 +1,44 @@
+{
+  "id": "denise-villalobos",
+  "name": "Denise Villalobos",
+  "firstName": "Denise",
+  "lastName": "Villalobos",
+  "photo": "/images/officials/state-house/denise-villalobos.jpg",
+  "photoSourceUrl": "https://house.texas.gov/images/members/4770.jpg?v=1",
+  "photoCredit": "Official Texas House of Representatives photo",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-34",
+  "jurisdiction": "Texas House of Representatives",
+  "county": [
+    "Texas"
+  ],
+  "termStart": "2025-01-14",
+  "termEnd": "Current legislative term pending source review",
+  "contactInfo": {
+    "office": "Room E2.812, P.O. Box 12910, Austin, TX 78711",
+    "phone": "512-463-0462",
+    "email": "denise.villalobos@house.texas.gov",
+    "website": "https://house.texas.gov/members/34"
+  },
+  "bio": "Denise Villalobos serves as State Representative for Texas House of Representatives District 34. This RepWatchr starter profile is sourced from official Texas Legislature profile data and OpenStates public records.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "TX",
+  "sourceLinks": [
+    {
+      "title": "Official Texas House of Representatives profile",
+      "url": "https://house.texas.gov/members/34"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/main/data/tx/legislature/Denise-Villalobos-42c40e86-b355-4724-8582-995125377240.yml"
+    },
+    {
+      "title": "Official profile photo source",
+      "url": "https://house.texas.gov/images/members/4770.jpg?v=1"
+    }
+  ],
+  "lastVerifiedAt": "2026-04-27"
+}

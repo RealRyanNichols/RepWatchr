@@ -2,7 +2,7 @@ import fs from "fs";
 import path from "path";
 import { TEXAS_ROSTER_EXTENSIONS } from "@/data/texas-school-board-rosters";
 
-export type ResearchStatus = "initial_dossier" | "stub" | "needs_review" | "complete" | string;
+export type ResearchStatus = "queued" | "initial_dossier" | "stub" | "needs_review" | "complete" | string;
 
 export interface SourceLink {
   url: string;
@@ -31,6 +31,16 @@ export interface CandidateDossier {
   candidate_id: string;
   full_name: string;
   preferred_name?: string;
+  source_name?: string;
+  district_code?: string;
+  source_role_rows?: number;
+  source_snapshot?: {
+    title: string;
+    url: string;
+    index_url?: string;
+    snapshot_date: string;
+    accessed_date: string;
+  };
   age?: number | string | null;
   hometown?: string;
   occupation?: string;
@@ -125,6 +135,31 @@ export interface PriorityDistrictEntry {
   county: string;
 }
 
+interface StatewideTrusteeDistrict {
+  district: string;
+  district_slug: string;
+  district_code: string;
+  county: string;
+  source_url: string;
+  source_index_url: string;
+}
+
+interface StatewideTrusteePayload {
+  meta: {
+    source_title: string;
+    source_url: string;
+    source_index_url: string;
+    snapshot_date: string;
+    accessed_date: string;
+    trustee_count: number;
+    source_role_row_count: number;
+    district_count: number;
+    import_rule: string;
+  };
+  districts: StatewideTrusteeDistrict[];
+  trustees: CandidateDossier[];
+}
+
 export const EAST_TEXAS_PRIORITY_DISTRICTS: PriorityDistrictEntry[] = [
   { district: "Harleton ISD", district_slug: "harleton_isd", county: "Harrison" },
   { district: "Marshall ISD", district_slug: "marshall_isd", county: "Harrison" },
@@ -176,6 +211,19 @@ for (const extension of TEXAS_ROSTER_EXTENSIONS) {
 }
 
 const ACCESSED_DATE = "2026-04-24";
+const STATEWIDE_TRUSTEE_PATH = path.join(
+  process.cwd(),
+  "src",
+  "data",
+  "school-board-members",
+  "texas",
+  "askted-2025-trustees.json"
+);
+const IN_PROGRESS_STATUSES = new Set(["queued", "stub", "needs_review"]);
+
+let statewideTrusteeCache: StatewideTrusteePayload | undefined;
+let schoolBoardDossierCache: CandidateDossier[] | undefined;
+let schoolBoardDistrictCache: DistrictResearch[] | undefined;
 
 const DISTRICT_SOURCES: Record<string, SourceLink[]> = {
   harleton_isd: [
@@ -741,6 +789,122 @@ function readJson<T>(filePath: string): T | undefined {
   }
 }
 
+function emptyStatewidePayload(): StatewideTrusteePayload {
+  return {
+    meta: {
+      source_title: "TEA AskTED statewide trustee import",
+      source_url: "",
+      source_index_url: "",
+      snapshot_date: "",
+      accessed_date: ACCESSED_DATE,
+      trustee_count: 0,
+      source_role_row_count: 0,
+      district_count: 0,
+      import_rule: "Statewide import file not found.",
+    },
+    districts: [],
+    trustees: [],
+  };
+}
+
+function getStatewideTrusteePayload(): StatewideTrusteePayload {
+  if (statewideTrusteeCache) return statewideTrusteeCache;
+  if (!fs.existsSync(STATEWIDE_TRUSTEE_PATH)) {
+    statewideTrusteeCache = emptyStatewidePayload();
+    return statewideTrusteeCache;
+  }
+
+  statewideTrusteeCache = readJson<StatewideTrusteePayload>(STATEWIDE_TRUSTEE_PATH) ?? emptyStatewidePayload();
+  return statewideTrusteeCache;
+}
+
+export function getStatewideSchoolBoardImportMeta() {
+  const { meta } = getStatewideTrusteePayload();
+  return {
+    sourceTitle: meta.source_title,
+    sourceUrl: meta.source_url,
+    sourceIndexUrl: meta.source_index_url,
+    snapshotDate: meta.snapshot_date,
+    accessedDate: meta.accessed_date,
+    trusteeCount: meta.trustee_count,
+    sourceRoleRowCount: meta.source_role_row_count,
+    districtCount: meta.district_count,
+    importRule: meta.import_rule,
+  };
+}
+
+function sourceFromSnapshot(candidate: CandidateDossier): SourceLink | undefined {
+  const snapshot = candidate.source_snapshot;
+  if (!snapshot?.url) return undefined;
+  return {
+    url: snapshot.url,
+    title: snapshot.title,
+    accessed_date: snapshot.accessed_date,
+    source_type: "education_agency",
+  };
+}
+
+function statewideSourceForDistrict(slug: string): SourceLink | undefined {
+  const payload = getStatewideTrusteePayload();
+  const district = payload.districts.find((item) => item.district_slug === slug);
+  if (!district?.source_url) return undefined;
+  return {
+    url: district.source_url,
+    title: `${payload.meta.source_title} - ${district.district}`,
+    accessed_date: payload.meta.accessed_date,
+    source_type: "education_agency",
+  };
+}
+
+function mergeSources(...sourceGroups: Array<SourceLink[] | undefined>): SourceLink[] {
+  const byUrl = new Map<string, SourceLink>();
+  for (const source of sourceGroups.flatMap((group) => group ?? [])) {
+    const key = source.url || source.title || "";
+    if (key && !byUrl.has(key)) byUrl.set(key, source);
+  }
+  return Array.from(byUrl.values());
+}
+
+function mergeResearchGaps(...gapGroups: Array<string[] | undefined>): string[] {
+  return Array.from(new Set(gapGroups.flatMap((group) => group ?? [])));
+}
+
+function normalizeStatewideCandidate(candidate: CandidateDossier): CandidateDossier {
+  const source = sourceFromSnapshot(candidate) ?? statewideSourceForDistrict(candidate.district_slug);
+  const role = candidate.role ?? (candidate.seat?.toLowerCase().startsWith("board") ? candidate.seat : "Trustee");
+  return {
+    ...candidate,
+    preferred_name: candidate.preferred_name ?? candidate.full_name,
+    role,
+    party_registration: candidate.party_registration ?? "Unknown",
+    summary:
+      candidate.summary ??
+      candidate.about_public_record?.about_summary_narrative ??
+      `${candidate.full_name} is listed in the statewide TEA AskTED school-board trustee import for ${candidate.district}.`,
+    sources: mergeSources(candidate.sources, source ? [source] : undefined),
+    status: candidate.status ?? "queued",
+    last_updated: candidate.last_updated ?? candidate.source_snapshot?.accessed_date ?? ACCESSED_DATE,
+  };
+}
+
+function mergeRosterIntoQueuedProfile(existing: CandidateDossier | undefined, rosterCandidate: CandidateDossier): CandidateDossier {
+  if (!existing) return rosterCandidate;
+  if (existing.status !== "queued") return existing;
+
+  return {
+    ...existing,
+    ...rosterCandidate,
+    source_name: existing.source_name,
+    district_code: existing.district_code,
+    source_role_rows: existing.source_role_rows,
+    source_snapshot: existing.source_snapshot,
+    about_public_record: existing.about_public_record,
+    sources: mergeSources(existing.sources, rosterCandidate.sources),
+    research_gaps: mergeResearchGaps(rosterCandidate.research_gaps, existing.research_gaps),
+    last_updated: rosterCandidate.last_updated ?? existing.last_updated,
+  };
+}
+
 function readOverview(dir: string): DistrictResearch["overview"] {
   const filePath = path.join(dir, "_district_overview.md");
   if (!fs.existsSync(filePath)) return undefined;
@@ -755,25 +919,34 @@ function readOverview(dir: string): DistrictResearch["overview"] {
 }
 
 export function getSchoolBoardDossiers(): CandidateDossier[] {
+  if (schoolBoardDossierCache) return schoolBoardDossierCache;
+
   const dossierCandidates = collectFiles(RESEARCH_ROOT, ".json")
     .map((file) => readJson<CandidateDossier>(file))
     .filter((candidate): candidate is CandidateDossier => Boolean(candidate?.candidate_id));
   const byId = new Map<string, CandidateDossier>();
+
+  getStatewideTrusteePayload().trustees.forEach((candidate) => {
+    byId.set(candidate.candidate_id, normalizeStatewideCandidate(candidate));
+  });
 
   dossierCandidates.forEach((candidate) => byId.set(candidate.candidate_id, candidate));
 
   EAST_TEXAS_PRIORITY_DISTRICTS.forEach((district) => {
     OFFICIAL_ROSTERS[district.district_slug]?.forEach((member) => {
       const candidate = candidateFromRoster(district, member);
-      if (!byId.has(candidate.candidate_id)) byId.set(candidate.candidate_id, candidate);
+      byId.set(candidate.candidate_id, mergeRosterIntoQueuedProfile(byId.get(candidate.candidate_id), candidate));
     });
   });
 
-  return Array.from(byId.values())
+  schoolBoardDossierCache = Array.from(byId.values())
     .sort((a, b) => a.district.localeCompare(b.district) || (a.seat ?? a.full_name).localeCompare(b.seat ?? b.full_name));
+  return schoolBoardDossierCache;
 }
 
 export function getSchoolBoardDistricts(): DistrictResearch[] {
+  if (schoolBoardDistrictCache) return schoolBoardDistrictCache;
+
   const bySlug = new Map<string, DistrictResearch>();
   const fileByCandidateId = new Map<string, string>();
 
@@ -791,6 +964,16 @@ export function getSchoolBoardDistricts(): DistrictResearch[] {
   for (const district of bySlug.values()) {
     const candidateFile = fileByCandidateId.get(district.candidates[0]?.candidate_id ?? "");
     if (candidateFile) district.overview = readOverview(path.dirname(candidateFile));
+    district.officialRoster = district.officialRoster ?? district.candidates.map((candidate) => ({
+      full_name: candidate.full_name,
+      seat: candidate.seat,
+      role: candidate.role,
+      occupation: candidate.occupation,
+      summary: candidate.summary,
+    }));
+    district.sourceLinks = district.sourceLinks?.length ? district.sourceLinks : getDistrictSourceLinks(district.district_slug);
+    district.investigationQueue = district.investigationQueue?.length ? district.investigationQueue : getDistrictInvestigationQueue(district.district_slug);
+    district.queueStatus = district.queueStatus ?? "needs_full_records_pull";
   }
 
   EAST_TEXAS_PRIORITY_DISTRICTS.forEach((priority, index) => {
@@ -821,12 +1004,13 @@ export function getSchoolBoardDistricts(): DistrictResearch[] {
     }
   });
 
-  return Array.from(bySlug.values()).sort((a, b) => {
+  schoolBoardDistrictCache = Array.from(bySlug.values()).sort((a, b) => {
     if (a.priorityRank && b.priorityRank) return a.priorityRank - b.priorityRank;
     if (a.priorityRank) return -1;
     if (b.priorityRank) return 1;
     return a.district.localeCompare(b.district);
   });
+  return schoolBoardDistrictCache;
 }
 
 export function getSchoolBoardDistrict(slug: string): DistrictResearch | undefined {
@@ -842,7 +1026,10 @@ export function getDistrictFeed(slug: string): SchoolBoardFeedItem[] {
 }
 
 export function getDistrictSourceLinks(slug: string): SourceLink[] {
-  return DISTRICT_SOURCES[slug] ?? [];
+  const explicitSources = DISTRICT_SOURCES[slug];
+  if (explicitSources?.length) return explicitSources;
+  const statewideSource = statewideSourceForDistrict(slug);
+  return statewideSource ? [statewideSource] : [];
 }
 
 export function getDistrictInvestigationQueue(slug: string): string[] {
@@ -903,7 +1090,9 @@ export function getDistrictInvestigationQueue(slug: string): string[] {
 
 export function getCandidateGoodRecords(candidate: CandidateDossier): string[] {
   const items = new Set<string>();
-  if (candidate.incumbent && candidate.seat) items.add(`Serves ${candidate.seat}${candidate.role ? ` as ${candidate.role}` : ""} on the ${candidate.district} board.`);
+  const roleLabel = candidate.role && candidate.role !== candidate.seat ? candidate.role : undefined;
+  if (candidate.incumbent && candidate.seat) items.add(`Serves ${candidate.seat}${roleLabel ? ` as ${roleLabel}` : ""} on the ${candidate.district} board.`);
+  else if (candidate.incumbent && candidate.role) items.add(`Serves as ${candidate.role} on the ${candidate.district} board.`);
   if (candidate.occupation && !candidate.occupation.includes("REQUIRES_FURTHER_EVIDENCE")) items.add(`Public profile lists occupation as ${candidate.occupation}.`);
   candidate.about_public_record?.affiliations_full_inventory?.slice(0, 3).forEach((item) => {
     if (item.organization && item.role) items.add(`${item.role} with ${item.organization}.`);
@@ -985,7 +1174,7 @@ const CANDIDATE_FIELD_WEIGHTS: Array<{ key: string; label: string; check: (c: Ca
   { key: "political_lean", label: "Political-lean signal", check: (c) => Boolean(c.silent_signals?.voter_primary_history?.length || c.silent_signals?.donations?.length || c.silent_signals?.endorsements_received?.length || c.silent_signals?.affiliations?.length || (c.party_registration && c.party_registration !== "Unknown")), weight: 10 },
   { key: "social", label: "Public social handle", check: (c) => Object.values(c.social_media ?? {}).some(Boolean), weight: 6 },
   { key: "issue_positions", label: "Issue position with evidence", check: (c) => Object.values(c.education_policy_positions ?? {}).some((v) => v && !v.includes("REQUIRES_FURTHER_EVIDENCE")), weight: 8 },
-  { key: "complete_status", label: "Reviewer marked complete", check: (c) => Boolean(c.status && c.status !== "stub" && c.status !== "needs_review"), weight: 15 },
+  { key: "complete_status", label: "Reviewer marked complete", check: (c) => Boolean(c.status && !IN_PROGRESS_STATUSES.has(c.status)), weight: 15 },
 ];
 
 export function getCandidateCompletion(candidate: CandidateDossier): CandidateCompletion {
@@ -1017,7 +1206,7 @@ export function getDistrictCompletion(district: DistrictResearch): DistrictCompl
   const totalMembers = district.candidates.length;
   const memberCompletions = district.candidates.map(getCandidateCompletion);
   const completedMembers = memberCompletions.filter((c) => c.percent >= 75).length;
-  const stubMembers = memberCompletions.filter((c) => c.status === "stub" || c.status === "needs_review").length;
+  const stubMembers = memberCompletions.filter((c) => c.status && IN_PROGRESS_STATUSES.has(c.status)).length;
   const averageMemberPercent = totalMembers > 0
     ? Math.round(memberCompletions.reduce((sum, c) => sum + c.percent, 0) / totalMembers)
     : 0;
@@ -1088,24 +1277,37 @@ export function getSchoolBoardCompletionReport() {
 export function getSchoolBoardStats() {
   const candidates = getSchoolBoardDossiers();
   const districts = getSchoolBoardDistricts();
+  const statewideImport = getStatewideSchoolBoardImportMeta();
   const priorityDistricts = districts.filter((district) => district.priorityRank);
   const priorityStarted = priorityDistricts.filter((district) => district.candidates.length > 0);
   const onBallot = candidates.filter((candidate) => candidate.on_2026_ballot || candidate.election_date?.includes("2026"));
-  const sourceCount = new Set(candidates.flatMap((candidate) => candidate.sources?.map((source) => source.url) ?? [])).size;
+  const candidateSourceUrls = new Set(
+    candidates.flatMap((candidate) => candidate.sources?.map((source) => source.url).filter(Boolean) ?? [])
+  );
+  const districtSourceUrls = new Set(
+    districts.flatMap((district) => district.sourceLinks?.map((source) => source.url).filter(Boolean) ?? [])
+  );
+  const feedSourceUrls = new Set(
+    districts.flatMap((district) => district.feed?.map((item) => item.source_url).filter(Boolean) ?? [])
+  );
+  const sourceCount = new Set([...candidateSourceUrls, ...districtSourceUrls, ...feedSourceUrls]).size;
   const flagCount = candidates.reduce((total, candidate) => total + getCandidateFlags(candidate).length, 0);
-  const gapCount = candidates.reduce((total, candidate) => total + getCandidateGaps(candidate).length, 0);
+  const candidateGapCount = candidates.reduce((total, candidate) => total + getCandidateGaps(candidate).length, 0);
+  const investigationQueueCount = districts.reduce((total, district) => total + (district.investigationQueue?.length ?? 0), 0);
+  const gapCount = candidateGapCount + investigationQueueCount;
   const goodRecordCount = candidates.reduce((total, candidate) => total + getCandidateGoodRecords(candidate).length, 0);
   const counties = new Set(districts.flatMap((district) => district.county.split(/[\/,]/).map((c) => c.trim()).filter(Boolean)));
   const membersWithGoodRecord = candidates.filter((candidate) => getCandidateGoodRecords(candidate).length > 0).length;
   const membersWithFlags = candidates.filter((candidate) => getCandidateFlags(candidate).length > 0).length;
-  const districtsWithRosters = districts.filter((district) => (district.officialRoster?.length ?? 0) > 0).length;
+  const districtsWithRosters = districts.filter((district) => (OFFICIAL_ROSTERS[district.district_slug]?.length ?? 0) > 0).length;
+  const districtsWithMemberFiles = districts.filter((district) => district.candidates.length > 0).length;
   const districtsWithSources = districts.filter((district) =>
     (district.sourceLinks?.length ?? 0) > 0 ||
     district.candidates.some((candidate) => (candidate.sources?.length ?? 0) > 0)
   ).length;
-  const stubProfiles = candidates.filter((candidate) => candidate.status === "stub" || candidate.status === "needs_review").length;
+  const stubProfiles = candidates.filter((candidate) => candidate.status && IN_PROGRESS_STATUSES.has(candidate.status)).length;
   const completedDossiers = candidates.filter(
-    (candidate) => candidate.status && candidate.status !== "stub" && candidate.status !== "needs_review"
+    (candidate) => candidate.status && !IN_PROGRESS_STATUSES.has(candidate.status)
   ).length;
   const districtsUnderTEAReview = districts.filter((district) => {
     const queueText = (district.investigationQueue ?? []).join(" ").toLowerCase();
@@ -1127,8 +1329,13 @@ export function getSchoolBoardStats() {
     districts: districts.length,
     onBallot: onBallot.length,
     sourceCount,
+    candidateSourceCount: candidateSourceUrls.size,
+    districtSourceCount: districtSourceUrls.size,
+    feedSourceCount: feedSourceUrls.size,
     flagCount,
+    candidateGapCount,
     gapCount,
+    investigationQueueCount,
     goodRecordCount,
     priorityDistricts: priorityDistricts.length,
     priorityStarted: priorityStarted.length,
@@ -1136,11 +1343,14 @@ export function getSchoolBoardStats() {
     membersWithGoodRecord,
     membersWithFlags,
     districtsWithRosters,
+    districtsWithMemberFiles,
     districtsWithSources,
     stubProfiles,
     completedDossiers,
     districtsUnderTEAReview,
     tracked2026Districts,
+    districtFeedItems: districts.reduce((total, district) => total + (district.feed?.length ?? 0), 0),
     districtsByCounty,
+    statewideImport,
   };
 }

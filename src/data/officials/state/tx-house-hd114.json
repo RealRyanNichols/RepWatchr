@@ -1,0 +1,44 @@
+{
+  "id": "john-bryant",
+  "name": "John Bryant",
+  "firstName": "John",
+  "lastName": "Bryant",
+  "photo": "/images/officials/state-house/john-bryant.jpg",
+  "photoSourceUrl": "https://house.texas.gov/images/members/4120.jpg?v=1",
+  "photoCredit": "Official Texas House of Representatives photo",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-114",
+  "jurisdiction": "Texas House of Representatives",
+  "county": [
+    "Texas"
+  ],
+  "termStart": "2023-01-10",
+  "termEnd": "Current legislative term pending source review",
+  "contactInfo": {
+    "office": "Room 4S.3, P.O. Box 12910, Austin, TX 78711",
+    "phone": "512-463-0576",
+    "email": "john.bryant@house.texas.gov",
+    "website": "https://house.texas.gov/members/4120"
+  },
+  "bio": "John Bryant serves as State Representative for Texas House of Representatives District 114. This RepWatchr starter profile is sourced from official Texas Legislature profile data and OpenStates public records.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "TX",
+  "sourceLinks": [
+    {
+      "title": "Official Texas House of Representatives profile",
+      "url": "https://house.texas.gov/members/4120"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/main/data/tx/legislature/John-Bryant-4e07d8dc-f5b5-47e7-a1de-83f36d3b734f.yml"
+    },
+    {
+      "title": "Official profile photo source",
+      "url": "https://house.texas.gov/images/members/4120.jpg?v=1"
+    }
+  ],
+  "lastVerifiedAt": "2026-04-27"
+}

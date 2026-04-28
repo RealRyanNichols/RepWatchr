@@ -1,0 +1,44 @@
+{
+  "id": "bobby-guerra",
+  "name": "Bobby Guerra",
+  "firstName": "Bobby",
+  "lastName": "Guerra",
+  "photo": "/images/officials/state-house/bobby-guerra.jpg",
+  "photoSourceUrl": "https://house.texas.gov/images/members/2325.jpg?v=1",
+  "photoCredit": "Official Texas House of Representatives photo",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-41",
+  "jurisdiction": "Texas House of Representatives",
+  "county": [
+    "Texas"
+  ],
+  "termStart": "2012-09-25",
+  "termEnd": "Current legislative term pending source review",
+  "contactInfo": {
+    "office": "Room GN.7, P.O. Box 12910, Austin, TX 78711",
+    "phone": "512-463-0578",
+    "email": "bobby.guerra@house.texas.gov",
+    "website": "https://house.texas.gov/members/2325"
+  },
+  "bio": "Bobby Guerra serves as State Representative for Texas House of Representatives District 41. This RepWatchr starter profile is sourced from official Texas Legislature profile data and OpenStates public records.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "TX",
+  "sourceLinks": [
+    {
+      "title": "Official Texas House of Representatives profile",
+      "url": "https://house.texas.gov/members/2325"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/main/data/tx/legislature/Bobby-Guerra-51591894-e9ff-48d3-81c5-897ec1c5e600.yml"
+    },
+    {
+      "title": "Official profile photo source",
+      "url": "https://house.texas.gov/images/members/2325.jpg?v=1"
+    }
+  ],
+  "lastVerifiedAt": "2026-04-27"
+}

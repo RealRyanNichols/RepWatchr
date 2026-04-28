@@ -1,0 +1,44 @@
+{
+  "id": "erin-zwiener",
+  "name": "Erin Zwiener",
+  "firstName": "Erin",
+  "lastName": "Zwiener",
+  "photo": "/images/officials/state-house/erin-zwiener.jpg",
+  "photoSourceUrl": "https://house.texas.gov/images/members/3710.jpg?v=1",
+  "photoCredit": "Official Texas House of Representatives photo",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-45",
+  "jurisdiction": "Texas House of Representatives",
+  "county": [
+    "Texas"
+  ],
+  "termStart": "2019-01-08",
+  "termEnd": "Current legislative term pending source review",
+  "contactInfo": {
+    "office": "Room E2.306, P.O. Box 12910, Austin, TX 78711",
+    "phone": "512-463-0647",
+    "email": "erin.zwiener@house.texas.gov",
+    "website": "https://house.texas.gov/members/3710"
+  },
+  "bio": "Erin Zwiener serves as State Representative for Texas House of Representatives District 45. This RepWatchr starter profile is sourced from official Texas Legislature profile data and OpenStates public records.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "TX",
+  "sourceLinks": [
+    {
+      "title": "Official Texas House of Representatives profile",
+      "url": "https://house.texas.gov/members/3710"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/main/data/tx/legislature/Erin-Zwiener-b55d57f4-bd06-4487-8860-0b6eeb9a1dea.yml"
+    },
+    {
+      "title": "Official profile photo source",
+      "url": "https://house.texas.gov/images/members/3710.jpg?v=1"
+    }
+  ],
+  "lastVerifiedAt": "2026-04-27"
+}

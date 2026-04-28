@@ -1,0 +1,45 @@
+{
+  "id": "roger-williams",
+  "name": "Roger Williams",
+  "firstName": "Roger",
+  "lastName": "Williams",
+  "photo": "/images/officials/federal/roger-williams.jpg",
+  "photoSourceUrl": "https://unitedstates.github.io/images/congress/225x275/W000816.jpg",
+  "photoCredit": "UnitedStates project congressional image mirror",
+  "party": "R",
+  "level": "federal",
+  "position": "U.S. Representative",
+  "district": "TX-25",
+  "jurisdiction": "U.S. House of Representatives",
+  "county": [
+    "Texas"
+  ],
+  "termStart": "2025-01-03",
+  "termEnd": "2027-01-03",
+  "contactInfo": {
+    "office": "2336 Rayburn House Office Building",
+    "phone": "202-225-9896",
+    "email": "https://williams.house.gov",
+    "website": "https://williams.house.gov"
+  },
+  "bio": "Roger Williams serves as the U.S. Representative for Texas's 25th Congressional District. This RepWatchr starter profile is sourced from the official congressional record data and public profile links.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "TX",
+  "bioguideId": "W000816",
+  "sourceLinks": [
+    {
+      "title": "Official congressional website",
+      "url": "https://williams.house.gov"
+    },
+    {
+      "title": "Congress legislators current roster",
+      "url": "https://raw.githubusercontent.com/unitedstates/congress-legislators/master/legislators-current.yaml"
+    },
+    {
+      "title": "Congressional photo source",
+      "url": "https://unitedstates.github.io/images/congress/225x275/W000816.jpg"
+    }
+  ],
+  "lastVerifiedAt": "2026-04-27"
+}

@@ -1,0 +1,44 @@
+{
+  "id": "wes-virdell",
+  "name": "Wes Virdell",
+  "firstName": "Wes",
+  "lastName": "Virdell",
+  "photo": "/images/officials/state-house/wes-virdell.jpg",
+  "photoSourceUrl": "https://www.house.texas.gov/images/members/4775.jpg?v=1",
+  "photoCredit": "Official Texas House of Representatives photo",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-53",
+  "jurisdiction": "Texas House of Representatives",
+  "county": [
+    "Texas"
+  ],
+  "termStart": "2025-01-14",
+  "termEnd": "Current legislative term pending source review",
+  "contactInfo": {
+    "office": "Room E2.304, P.O. Box 12910, Austin, TX 78711",
+    "phone": "512-463-0536",
+    "email": "wes.virdell@house.texas.gov",
+    "website": "https://www.house.texas.gov/members/53"
+  },
+  "bio": "Wes Virdell serves as State Representative for Texas House of Representatives District 53. This RepWatchr starter profile is sourced from official Texas Legislature profile data and OpenStates public records.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "TX",
+  "sourceLinks": [
+    {
+      "title": "Official Texas House of Representatives profile",
+      "url": "https://www.house.texas.gov/members/53"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/main/data/tx/legislature/Wes-Virdell-436ab2a5-12ca-4a9c-b8ec-73b1bae4ee68.yml"
+    },
+    {
+      "title": "Official profile photo source",
+      "url": "https://www.house.texas.gov/images/members/4775.jpg?v=1"
+    }
+  ],
+  "lastVerifiedAt": "2026-04-27"
+}

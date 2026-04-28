@@ -1,0 +1,44 @@
+{
+  "id": "yvonne-davis",
+  "name": "Yvonne Davis",
+  "firstName": "Yvonne",
+  "lastName": "Davis",
+  "photo": "/images/officials/state-house/yvonne-davis.jpg",
+  "photoSourceUrl": "https://cdn.ballotpedia.org/images/thumb/0/06/Yvonne_Davis.jpg/200px-Yvonne_Davis.jpg",
+  "photoCredit": "Official Texas House of Representatives photo",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-111",
+  "jurisdiction": "Texas House of Representatives",
+  "county": [
+    "Texas"
+  ],
+  "termStart": "1993-01-12",
+  "termEnd": "Current legislative term pending source review",
+  "contactInfo": {
+    "office": "Room 4N.9, P.O. Box 12910, Austin, TX 78711",
+    "phone": "512-463-0598",
+    "email": "yvonne.davis@house.texas.gov",
+    "website": "https://house.texas.gov/members/2625"
+  },
+  "bio": "Yvonne Davis serves as State Representative for Texas House of Representatives District 111. This RepWatchr starter profile is sourced from official Texas Legislature profile data and OpenStates public records.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "TX",
+  "sourceLinks": [
+    {
+      "title": "Official Texas House of Representatives profile",
+      "url": "https://house.texas.gov/members/2625"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/main/data/tx/legislature/Yvonne-Davis-3f38bf62-86ba-4833-9737-2e084ae6255d.yml"
+    },
+    {
+      "title": "Official profile photo source",
+      "url": "https://cdn.ballotpedia.org/images/thumb/0/06/Yvonne_Davis.jpg/200px-Yvonne_Davis.jpg"
+    }
+  ],
+  "lastVerifiedAt": "2026-04-27"
+}

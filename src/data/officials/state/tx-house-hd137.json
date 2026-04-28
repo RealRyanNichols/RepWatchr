@@ -1,0 +1,44 @@
+{
+  "id": "gene-wu",
+  "name": "Gene Wu",
+  "firstName": "Gene",
+  "lastName": "Wu",
+  "photo": "/images/officials/state-house/gene-wu.jpg",
+  "photoSourceUrl": "https://house.texas.gov/images/members/2865.jpg?v=1",
+  "photoCredit": "Official Texas House of Representatives photo",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-137",
+  "jurisdiction": "Texas House of Representatives",
+  "county": [
+    "Texas"
+  ],
+  "termStart": "2013-01-08",
+  "termEnd": "Current legislative term pending source review",
+  "contactInfo": {
+    "office": "Room GW.5, P.O. Box 12910, Austin, TX 78711",
+    "phone": "512-463-0492",
+    "email": "gene.wu@house.texas.gov",
+    "website": "https://house.texas.gov/members/2865"
+  },
+  "bio": "Gene Wu serves as State Representative for Texas House of Representatives District 137. This RepWatchr starter profile is sourced from official Texas Legislature profile data and OpenStates public records.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "TX",
+  "sourceLinks": [
+    {
+      "title": "Official Texas House of Representatives profile",
+      "url": "https://house.texas.gov/members/2865"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/main/data/tx/legislature/Gene-Wu-5556a81a-eca2-451d-bb29-74cfb00d1959.yml"
+    },
+    {
+      "title": "Official profile photo source",
+      "url": "https://house.texas.gov/images/members/2865.jpg?v=1"
+    }
+  ],
+  "lastVerifiedAt": "2026-04-27"
+}

@@ -1,0 +1,44 @@
+{
+  "id": "josey-garcia",
+  "name": "Josey Garcia",
+  "firstName": "Josey",
+  "lastName": "Garcia",
+  "photo": "/images/officials/state-house/josey-garcia.jpg",
+  "photoSourceUrl": "https://house.texas.gov/images/members/4170.jpg?v=1",
+  "photoCredit": "Official Texas House of Representatives photo",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-124",
+  "jurisdiction": "Texas House of Representatives",
+  "county": [
+    "Texas"
+  ],
+  "termStart": "2023-01-10",
+  "termEnd": "Current legislative term pending source review",
+  "contactInfo": {
+    "office": "Room E2.904, P.O. Box 12910, Austin, TX 78711",
+    "phone": "512-463-0634",
+    "email": "josey.garcia@house.texas.gov",
+    "website": "https://house.texas.gov/members/124"
+  },
+  "bio": "Josey Garcia serves as State Representative for Texas House of Representatives District 124. This RepWatchr starter profile is sourced from official Texas Legislature profile data and OpenStates public records.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "TX",
+  "sourceLinks": [
+    {
+      "title": "Official Texas House of Representatives profile",
+      "url": "https://house.texas.gov/members/124"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/main/data/tx/legislature/Josey-Garcia-1ec50565-379f-4a8b-ab18-c54d31df9929.yml"
+    },
+    {
+      "title": "Official profile photo source",
+      "url": "https://house.texas.gov/images/members/4170.jpg?v=1"
+    }
+  ],
+  "lastVerifiedAt": "2026-04-27"
+}

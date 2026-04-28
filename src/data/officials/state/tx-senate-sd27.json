@@ -1,0 +1,44 @@
+{
+  "id": "adam-hinojosa",
+  "name": "Adam Hinojosa",
+  "firstName": "Adam",
+  "lastName": "Hinojosa",
+  "photo": "/images/officials/state-senate/adam-hinojosa.jpg",
+  "photoSourceUrl": "https://senate.texas.gov/members/d27/img/Hinojosa_Adam-88-0913D-005-web.jpg",
+  "photoCredit": "Official Texas Senate photo",
+  "party": "R",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-27",
+  "jurisdiction": "Texas Senate",
+  "county": [
+    "Texas"
+  ],
+  "termStart": "2025-01-14",
+  "termEnd": "Current legislative term pending source review",
+  "contactInfo": {
+    "office": "Room E1.712, P.O. Box 12068 Capitol Station, Austin, TX 78711",
+    "phone": "512-463-0127",
+    "email": "adam.hinojosa@senate.texas.gov",
+    "website": "https://senate.texas.gov/member.php?d=27"
+  },
+  "bio": "Adam Hinojosa serves as State Senator for Texas Senate District 27. This RepWatchr starter profile is sourced from official Texas Legislature profile data and OpenStates public records.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "TX",
+  "sourceLinks": [
+    {
+      "title": "Official Texas Senate profile",
+      "url": "https://senate.texas.gov/member.php?d=27"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/main/data/tx/legislature/Adam-Hinojosa-7f748f58-e6f2-4c86-ad01-52c7ca3435ca.yml"
+    },
+    {
+      "title": "Official profile photo source",
+      "url": "https://senate.texas.gov/members/d27/img/Hinojosa_Adam-88-0913D-005-web.jpg"
+    }
+  ],
+  "lastVerifiedAt": "2026-04-27"
+}

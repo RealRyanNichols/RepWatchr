@@ -1,0 +1,44 @@
+{
+  "id": "erin-g-mez",
+  "name": "Erin Gámez",
+  "firstName": "Erin",
+  "lastName": "Gámez",
+  "photo": "/images/officials/state-house/erin-g-mez.jpg",
+  "photoSourceUrl": "https://house.texas.gov/images/members/4095.jpg?v=1",
+  "photoCredit": "Official Texas House of Representatives photo",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-38",
+  "jurisdiction": "Texas House of Representatives",
+  "county": [
+    "Texas"
+  ],
+  "termStart": "2022-03-15",
+  "termEnd": "Current legislative term pending source review",
+  "contactInfo": {
+    "office": "Room E1.510, P.O. Box 12910, Austin, TX 78711",
+    "phone": "512-463-0606",
+    "email": "erin.gamez@house.texas.gov",
+    "website": "https://house.texas.gov/members/38"
+  },
+  "bio": "Erin Gámez serves as State Representative for Texas House of Representatives District 38. This RepWatchr starter profile is sourced from official Texas Legislature profile data and OpenStates public records.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "TX",
+  "sourceLinks": [
+    {
+      "title": "Official Texas House of Representatives profile",
+      "url": "https://house.texas.gov/members/38"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/main/data/tx/legislature/Erin-Elizabeth-Gmez-2cadcb59-210a-4a71-af9f-7dba9ab06112.yml"
+    },
+    {
+      "title": "Official profile photo source",
+      "url": "https://house.texas.gov/images/members/4095.jpg?v=1"
+    }
+  ],
+  "lastVerifiedAt": "2026-04-27"
+}

@@ -1,0 +1,44 @@
+{
+  "id": "andy-hopper",
+  "name": "Andy Hopper",
+  "firstName": "Andy",
+  "lastName": "Hopper",
+  "photo": "/images/officials/state-house/andy-hopper.jpg",
+  "photoSourceUrl": "https://www.house.texas.gov/images/members/4555.jpg?v=1",
+  "photoCredit": "Official Texas House of Representatives photo",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-64",
+  "jurisdiction": "Texas House of Representatives",
+  "county": [
+    "Texas"
+  ],
+  "termStart": "2025-01-14",
+  "termEnd": "Current legislative term pending source review",
+  "contactInfo": {
+    "office": "Room E2.316, P.O. Box 12910, Austin, TX 78711",
+    "phone": "512-463-0582",
+    "email": "andy.hopper@house.texas.gov",
+    "website": "https://www.house.texas.gov/members/64"
+  },
+  "bio": "Andy Hopper serves as State Representative for Texas House of Representatives District 64. This RepWatchr starter profile is sourced from official Texas Legislature profile data and OpenStates public records.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "TX",
+  "sourceLinks": [
+    {
+      "title": "Official Texas House of Representatives profile",
+      "url": "https://www.house.texas.gov/members/64"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/main/data/tx/legislature/Andy-Hopper-ee8cc382-84b7-47e3-824f-e05cf6455161.yml"
+    },
+    {
+      "title": "Official profile photo source",
+      "url": "https://www.house.texas.gov/images/members/4555.jpg?v=1"
+    }
+  ],
+  "lastVerifiedAt": "2026-04-27"
+}

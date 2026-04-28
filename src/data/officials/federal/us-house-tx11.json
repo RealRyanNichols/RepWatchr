@@ -1,0 +1,45 @@
+{
+  "id": "august-pfluger",
+  "name": "August Pfluger",
+  "firstName": "August",
+  "lastName": "Pfluger",
+  "photo": "/images/officials/federal/august-pfluger.jpg",
+  "photoSourceUrl": "https://unitedstates.github.io/images/congress/225x275/P000048.jpg",
+  "photoCredit": "UnitedStates project congressional image mirror",
+  "party": "R",
+  "level": "federal",
+  "position": "U.S. Representative",
+  "district": "TX-11",
+  "jurisdiction": "U.S. House of Representatives",
+  "county": [
+    "Texas"
+  ],
+  "termStart": "2025-01-03",
+  "termEnd": "2027-01-03",
+  "contactInfo": {
+    "office": "2202 Rayburn House Office Building",
+    "phone": "202-225-3605",
+    "email": "https://pfluger.house.gov",
+    "website": "https://pfluger.house.gov"
+  },
+  "bio": "August Pfluger serves as the U.S. Representative for Texas's 11th Congressional District. This RepWatchr starter profile is sourced from the official congressional record data and public profile links.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "TX",
+  "bioguideId": "P000048",
+  "sourceLinks": [
+    {
+      "title": "Official congressional website",
+      "url": "https://pfluger.house.gov"
+    },
+    {
+      "title": "Congress legislators current roster",
+      "url": "https://raw.githubusercontent.com/unitedstates/congress-legislators/master/legislators-current.yaml"
+    },
+    {
+      "title": "Congressional photo source",
+      "url": "https://unitedstates.github.io/images/congress/225x275/P000048.jpg"
+    }
+  ],
+  "lastVerifiedAt": "2026-04-27"
+}

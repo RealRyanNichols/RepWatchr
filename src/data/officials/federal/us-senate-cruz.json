@@ -3,30 +3,43 @@
   "name": "Ted Cruz",
   "firstName": "Ted",
   "lastName": "Cruz",
+  "photo": "/images/officials/federal/ted-cruz.jpg",
+  "photoSourceUrl": "https://unitedstates.github.io/images/congress/225x275/C001098.jpg",
+  "photoCredit": "UnitedStates project congressional image mirror",
   "party": "R",
   "level": "federal",
   "position": "U.S. Senator",
   "district": "Texas",
   "jurisdiction": "U.S. Senate",
-  "county": ["Smith", "Gregg", "Harrison", "Cherokee", "Nacogdoches", "Angelina", "Rusk", "Upshur", "Panola"],
+  "county": [
+    "Texas"
+  ],
   "termStart": "2025-01-03",
   "termEnd": "2031-01-03",
   "contactInfo": {
-    "office": "127A Russell Senate Office Building, Washington, DC 20510",
-    "phone": "(202) 224-5922",
-    "email": "https://www.cruz.senate.gov/contact",
-    "website": "https://www.cruz.senate.gov",
-    "socialMedia": {
-      "twitter": "https://twitter.com/SenTedCruz",
-      "facebook": "https://facebook.com/SenatorTedCruz"
-    }
+    "office": "167 Russell Senate Office Building",
+    "phone": "202-224-5922",
+    "email": "https://www.cruz.senate.gov/?p=form&id=16",
+    "website": "https://www.cruz.senate.gov"
   },
-  "bio": "Ted Cruz has served as U.S. Senator from Texas since 2013. A graduate of Princeton University and Harvard Law School, Cruz previously served as Solicitor General of Texas. He ran for president in 2016 and is known for his conservative stance on constitutional issues, border security, and limited government.",
-  "campaignPromises": [
-    "Secure the border and end illegal immigration",
-    "Cut taxes and reduce regulations on businesses",
-    "Protect gun rights and religious liberty",
-    "Support American energy independence",
-    "Oppose federal overreach and defend the Constitution"
-  ]
+  "bio": "Ted Cruz serves as a U.S. Senator for Texas. This RepWatchr starter profile is sourced from the official congressional record data and public profile links.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "TX",
+  "bioguideId": "C001098",
+  "sourceLinks": [
+    {
+      "title": "Official congressional website",
+      "url": "https://www.cruz.senate.gov"
+    },
+    {
+      "title": "Congress legislators current roster",
+      "url": "https://raw.githubusercontent.com/unitedstates/congress-legislators/master/legislators-current.yaml"
+    },
+    {
+      "title": "Congressional photo source",
+      "url": "https://unitedstates.github.io/images/congress/225x275/C001098.jpg"
+    }
+  ],
+  "lastVerifiedAt": "2026-04-27"
 }

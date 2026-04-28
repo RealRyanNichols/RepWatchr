@@ -1,0 +1,44 @@
+{
+  "id": "rafael-anch-a",
+  "name": "Rafael Anchía",
+  "firstName": "Rafael",
+  "lastName": "Anchía",
+  "photo": "/images/officials/state-house/rafael-anch-a.jpg",
+  "photoSourceUrl": "https://house.texas.gov/images/members/2150.jpg",
+  "photoCredit": "Official Texas House of Representatives photo",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-103",
+  "jurisdiction": "Texas House of Representatives",
+  "county": [
+    "Texas"
+  ],
+  "termStart": "2005-01-11",
+  "termEnd": "Current legislative term pending source review",
+  "contactInfo": {
+    "office": "Room 1W.5, P.O. Box 12910, Austin, TX 78711",
+    "phone": "512-463-0746",
+    "email": "rafael.anchia@house.texas.gov",
+    "website": "https://house.texas.gov/members/2150"
+  },
+  "bio": "Rafael Anchía serves as State Representative for Texas House of Representatives District 103. This RepWatchr starter profile is sourced from official Texas Legislature profile data and OpenStates public records.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "TX",
+  "sourceLinks": [
+    {
+      "title": "Official Texas House of Representatives profile",
+      "url": "https://house.texas.gov/members/2150"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/main/data/tx/legislature/Rafael-Anchia-f72eb41b-2ff9-434f-96cf-75b9724289ab.yml"
+    },
+    {
+      "title": "Official profile photo source",
+      "url": "https://house.texas.gov/images/members/2150.jpg"
+    }
+  ],
+  "lastVerifiedAt": "2026-04-27"
+}

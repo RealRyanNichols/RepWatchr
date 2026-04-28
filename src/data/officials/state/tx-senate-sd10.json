@@ -1,0 +1,44 @@
+{
+  "id": "phil-king",
+  "name": "Phil King",
+  "firstName": "Phil",
+  "lastName": "King",
+  "photo": "/images/officials/state-senate/phil-king.jpg",
+  "photoSourceUrl": "https://senate.texas.gov/members/d10/img/King_88-0550D-004-WEB.jpg",
+  "photoCredit": "Official Texas Senate photo",
+  "party": "R",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-10",
+  "jurisdiction": "Texas Senate",
+  "county": [
+    "Texas"
+  ],
+  "termStart": "2023-01-10",
+  "termEnd": "Current legislative term pending source review",
+  "contactInfo": {
+    "office": "Room GE.5, P.O. Box 12068 Capitol Station, Austin, TX 78711",
+    "phone": "512-463-0110",
+    "email": "phil.king@senate.texas.gov",
+    "website": "https://house.texas.gov/members/member-page/?district=61"
+  },
+  "bio": "Phil King serves as State Senator for Texas Senate District 10. This RepWatchr starter profile is sourced from official Texas Legislature profile data and OpenStates public records.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "TX",
+  "sourceLinks": [
+    {
+      "title": "Official Texas Senate profile",
+      "url": "https://house.texas.gov/members/member-page/?district=61"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/main/data/tx/legislature/Phil-King-98bef50a-73c7-4139-9b8e-628d0e89d659.yml"
+    },
+    {
+      "title": "Official profile photo source",
+      "url": "https://senate.texas.gov/members/d10/img/King_88-0550D-004-WEB.jpg"
+    }
+  ],
+  "lastVerifiedAt": "2026-04-27"
+}

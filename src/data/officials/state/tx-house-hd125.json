@@ -1,0 +1,44 @@
+{
+  "id": "ray-lopez",
+  "name": "Ray Lopez",
+  "firstName": "Ray",
+  "lastName": "Lopez",
+  "photo": "/images/officials/state-house/ray-lopez.jpg",
+  "photoSourceUrl": "https://house.texas.gov/images/members/3915.jpg?v=1",
+  "photoCredit": "Official Texas House of Representatives photo",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-125",
+  "jurisdiction": "Texas House of Representatives",
+  "county": [
+    "Texas"
+  ],
+  "termStart": "2019-03-21",
+  "termEnd": "Current legislative term pending source review",
+  "contactInfo": {
+    "office": "Room GW.4, P.O. Box 12910, Austin, TX 78711",
+    "phone": "512-463-0669",
+    "email": "ray.lopez@house.texas.gov",
+    "website": "https://house.texas.gov/members/3915"
+  },
+  "bio": "Ray Lopez serves as State Representative for Texas House of Representatives District 125. This RepWatchr starter profile is sourced from official Texas Legislature profile data and OpenStates public records.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "TX",
+  "sourceLinks": [
+    {
+      "title": "Official Texas House of Representatives profile",
+      "url": "https://house.texas.gov/members/3915"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/main/data/tx/legislature/Reynaldo-T-Ray-Lopez-01ce2f6b-0500-4baa-a47f-386f9c6286b0.yml"
+    },
+    {
+      "title": "Official profile photo source",
+      "url": "https://house.texas.gov/images/members/3915.jpg?v=1"
+    }
+  ],
+  "lastVerifiedAt": "2026-04-27"
+}

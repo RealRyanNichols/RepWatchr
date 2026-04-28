@@ -1,0 +1,44 @@
+{
+  "id": "john-bucy",
+  "name": "John Bucy",
+  "firstName": "John",
+  "lastName": "Bucy",
+  "photo": "/images/officials/state-house/john-bucy.jpg",
+  "photoSourceUrl": "https://house.texas.gov/images/members/3595.jpg?v=5",
+  "photoCredit": "Official Texas House of Representatives photo",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-136",
+  "jurisdiction": "Texas House of Representatives",
+  "county": [
+    "Texas"
+  ],
+  "termStart": "2019-01-08",
+  "termEnd": "Current legislative term pending source review",
+  "contactInfo": {
+    "office": "Room GN.9, P.O. Box 12910, Austin, TX 78711",
+    "phone": "512-463-0696",
+    "email": "john.bucy@house.texas.gov",
+    "website": "https://house.texas.gov/members/136"
+  },
+  "bio": "John Bucy serves as State Representative for Texas House of Representatives District 136. This RepWatchr starter profile is sourced from official Texas Legislature profile data and OpenStates public records.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "TX",
+  "sourceLinks": [
+    {
+      "title": "Official Texas House of Representatives profile",
+      "url": "https://house.texas.gov/members/136"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/main/data/tx/legislature/John-Bucy-III-53b19d1e-5b07-4f6e-87a9-27baecddaf70.yml"
+    },
+    {
+      "title": "Official profile photo source",
+      "url": "https://house.texas.gov/images/members/3595.jpg?v=5"
+    }
+  ],
+  "lastVerifiedAt": "2026-04-27"
+}

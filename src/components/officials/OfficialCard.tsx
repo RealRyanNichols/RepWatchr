@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import type { Official, ScoreCard } from "@/types";
 import PartyBadge from "@/components/officials/PartyBadge";
 import LetterGradeBadge from "@/components/scores/LetterGradeBadge";
@@ -22,6 +23,7 @@ export default function OfficialCard({
   scoreCard,
 }: OfficialCardProps) {
   const accent = partyAccent[official.party] ?? "from-gray-400";
+  const initials = `${official.firstName[0] ?? ""}${official.lastName[0] ?? ""}`;
 
   return (
     <Link
@@ -35,9 +37,18 @@ export default function OfficialCard({
       <div className="p-5">
         <div className="flex items-start justify-between">
           <div className="flex items-center gap-3">
-            <div className="flex h-11 w-11 items-center justify-center rounded-full bg-gray-100 text-base font-bold text-gray-500 group-hover:bg-blue-50 group-hover:text-blue-600 transition-colors">
-              {official.firstName[0]}
-              {official.lastName[0]}
+            <div className="relative flex h-14 w-14 shrink-0 items-center justify-center overflow-hidden rounded-xl border border-gray-200 bg-gray-100 text-base font-bold text-gray-500 transition-colors group-hover:bg-blue-50 group-hover:text-blue-600">
+              {official.photo ? (
+                <Image
+                  src={official.photo}
+                  alt={`${official.name} profile photo`}
+                  fill
+                  sizes="56px"
+                  className="object-cover"
+                />
+              ) : (
+                initials
+              )}
             </div>
             <div className="min-w-0">
               <h3 className="truncate text-base font-bold text-gray-900 group-hover:text-blue-600 transition-colors">
@@ -55,9 +66,9 @@ export default function OfficialCard({
           )}
         </div>
         <div className="mt-4 flex items-center justify-between">
-          <div className="flex items-center gap-2">
+          <div className="flex min-w-0 items-center gap-2">
             <PartyBadge party={official.party} />
-            <span className="text-xs text-gray-400">
+            <span className="truncate text-xs text-gray-500">
               {official.jurisdiction}
             </span>
           </div>

@@ -3,30 +3,42 @@
   "name": "Robert Nichols",
   "firstName": "Robert",
   "lastName": "Nichols",
+  "photo": "/images/officials/state-senate/robert-nichols.jpg",
+  "photoSourceUrl": "https://senate.texas.gov/members/d03/img/headshot.jpg",
+  "photoCredit": "Official Texas Senate photo",
   "party": "R",
   "level": "state",
   "position": "State Senator",
   "district": "SD-3",
   "jurisdiction": "Texas Senate",
-  "county": ["Angelina", "Houston", "Jasper", "Jefferson", "Nacogdoches", "Newton", "Orange", "Polk", "Sabine", "San Augustine", "San Jacinto", "Shelby", "Trinity", "Tyler"],
-  "termStart": "2023-01-10",
-  "termEnd": "2027-01-10",
+  "county": [
+    "Texas"
+  ],
+  "termStart": "2007-01-09",
+  "termEnd": "Current legislative term pending source review",
   "contactInfo": {
-    "office": "Texas Capitol Extension, Room E1.708, Austin, TX 78701",
-    "phone": "(512) 463-0103",
+    "office": "Room E1.704, P.O. Box 12068 Capitol Station, Austin, TX 78711",
+    "phone": "512-463-0103",
     "email": "robert.nichols@senate.texas.gov",
-    "website": "https://senate.texas.gov/member.php?d=3",
-    "socialMedia": {
-      "twitter": "https://twitter.com/SenRobertNichols",
-      "facebook": "https://facebook.com/SenatorRobertNichols"
-    }
+    "website": "https://senate.texas.gov/member.php?d=3"
   },
-  "bio": "Robert Nichols represents Senate District 3 in the Texas Senate, covering deep East Texas. A former member of the Texas Transportation Commission, Nichols has served in the Texas Senate since 2007. He is the chair of the Senate Transportation Committee and focuses on infrastructure, rural issues, and conservative fiscal policy.",
-  "campaignPromises": [
-    "Improve East Texas roads and infrastructure",
-    "Protect rural water rights and groundwater conservation",
-    "Lower property taxes and reduce government spending",
-    "Support timber and agriculture industries in East Texas",
-    "Defend private property rights against government overreach"
-  ]
+  "bio": "Robert Nichols serves as State Senator for Texas Senate District 3. This RepWatchr starter profile is sourced from official Texas Legislature profile data and OpenStates public records.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "TX",
+  "sourceLinks": [
+    {
+      "title": "Official Texas Senate profile",
+      "url": "https://senate.texas.gov/member.php?d=3"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/main/data/tx/legislature/Robert-Nichols-26b83cfe-10c0-4ac6-ae02-dac30e2856b1.yml"
+    },
+    {
+      "title": "Official profile photo source",
+      "url": "https://senate.texas.gov/members/d03/img/headshot.jpg"
+    }
+  ],
+  "lastVerifiedAt": "2026-04-27"
 }

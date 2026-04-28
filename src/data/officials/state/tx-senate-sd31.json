@@ -1,0 +1,44 @@
+{
+  "id": "kevin-sparks",
+  "name": "Kevin Sparks",
+  "firstName": "Kevin",
+  "lastName": "Sparks",
+  "photo": "/images/officials/state-senate/kevin-sparks.jpg",
+  "photoSourceUrl": "https://senate.texas.gov/members/d31/img/Sparks_88-0063D-012-web.jpg",
+  "photoCredit": "Official Texas Senate photo",
+  "party": "R",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-31",
+  "jurisdiction": "Texas Senate",
+  "county": [
+    "Texas"
+  ],
+  "termStart": "2023-01-10",
+  "termEnd": "Current legislative term pending source review",
+  "contactInfo": {
+    "office": "Room E1.708, 1100 Congress Ave., Austin, TX 78701",
+    "phone": "512-463-0131",
+    "email": "kevin.sparks@senate.texas.gov",
+    "website": "https://senate.texas.gov/member.php?d=31"
+  },
+  "bio": "Kevin Sparks serves as State Senator for Texas Senate District 31. This RepWatchr starter profile is sourced from official Texas Legislature profile data and OpenStates public records.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "TX",
+  "sourceLinks": [
+    {
+      "title": "Official Texas Senate profile",
+      "url": "https://senate.texas.gov/member.php?d=31"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/main/data/tx/legislature/Kevin-Sparks-aa6deb86-b21b-4ed2-ad67-bd6217238afc.yml"
+    },
+    {
+      "title": "Official profile photo source",
+      "url": "https://senate.texas.gov/members/d31/img/Sparks_88-0063D-012-web.jpg"
+    }
+  ],
+  "lastVerifiedAt": "2026-04-27"
+}

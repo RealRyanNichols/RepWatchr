@@ -1,0 +1,44 @@
+{
+  "id": "brian-harrison",
+  "name": "Brian Harrison",
+  "firstName": "Brian",
+  "lastName": "Harrison",
+  "photo": "/images/officials/state-house/brian-harrison.jpg",
+  "photoSourceUrl": "https://house.texas.gov/images/members/4085.jpg?v=1",
+  "photoCredit": "Official Texas House of Representatives photo",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-10",
+  "jurisdiction": "Texas House of Representatives",
+  "county": [
+    "Texas"
+  ],
+  "termStart": "2021-10-12",
+  "termEnd": "Current legislative term pending source review",
+  "contactInfo": {
+    "office": "Room E1.414, P.O. Box 12910, Austin, TX 78711",
+    "phone": "512-463-0516",
+    "email": "brian.harrison@house.texas.gov",
+    "website": "https://house.texas.gov/members/4085"
+  },
+  "bio": "Brian Harrison serves as State Representative for Texas House of Representatives District 10. This RepWatchr starter profile is sourced from official Texas Legislature profile data and OpenStates public records.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "TX",
+  "sourceLinks": [
+    {
+      "title": "Official Texas House of Representatives profile",
+      "url": "https://house.texas.gov/members/4085"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/main/data/tx/legislature/Brian-Harrison-b1bf46ac-e99e-49f6-8f40-cf07aca12187.yml"
+    },
+    {
+      "title": "Official profile photo source",
+      "url": "https://house.texas.gov/images/members/4085.jpg?v=1"
+    }
+  ],
+  "lastVerifiedAt": "2026-04-27"
+}

@@ -1,0 +1,44 @@
+{
+  "id": "charles-schwertner",
+  "name": "Charles Schwertner",
+  "firstName": "Charles",
+  "lastName": "Schwertner",
+  "photo": "/images/officials/state-senate/charles-schwertner.jpg",
+  "photoSourceUrl": "https://senate.texas.gov/members/d05/img/headshot.jpg",
+  "photoCredit": "Official Texas Senate photo",
+  "party": "R",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-5",
+  "jurisdiction": "Texas Senate",
+  "county": [
+    "Texas"
+  ],
+  "termStart": "2013-01-08",
+  "termEnd": "Current legislative term pending source review",
+  "contactInfo": {
+    "office": "Room 3S.5, P.O. Box 12068 Capitol Station, Austin, TX 78711",
+    "phone": "512-463-0105",
+    "email": "charles.schwertner@senate.texas.gov",
+    "website": "https://senate.texas.gov/member.php?d=5"
+  },
+  "bio": "Charles Schwertner serves as State Senator for Texas Senate District 5. This RepWatchr starter profile is sourced from official Texas Legislature profile data and OpenStates public records.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "TX",
+  "sourceLinks": [
+    {
+      "title": "Official Texas Senate profile",
+      "url": "https://senate.texas.gov/member.php?d=5"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/main/data/tx/legislature/Charles-Schwertner-d7d0bd69-2615-4d0c-84df-4cdb75809343.yml"
+    },
+    {
+      "title": "Official profile photo source",
+      "url": "https://senate.texas.gov/members/d05/img/headshot.jpg"
+    }
+  ],
+  "lastVerifiedAt": "2026-04-27"
+}

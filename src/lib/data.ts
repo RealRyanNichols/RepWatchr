@@ -73,6 +73,26 @@ function collectJsonFiles(dir: string): string[] {
   return results;
 }
 
+const levelOrder: Record<GovernmentLevel, number> = {
+  federal: 0,
+  state: 1,
+  county: 2,
+  city: 3,
+  "school-board": 4,
+};
+
+function districtSortValue(district?: string): number {
+  const match = district?.match(/\d+/);
+  return match ? Number(match[0]) : Number.MAX_SAFE_INTEGER;
+}
+
+const TEXAS_EXPECTED_SEATS = {
+  federalHouse: 38,
+  federalSenate: 2,
+  stateHouse: 150,
+  stateSenate: 31,
+} as const;
+
 // ---------------------------------------------------------------------------
 // Officials
 // ---------------------------------------------------------------------------
@@ -95,6 +115,12 @@ export function getAllOfficials(): Official[] {
     }
   }
 
+  officials.sort(
+    (a, b) =>
+      levelOrder[a.level] - levelOrder[b.level] ||
+      districtSortValue(a.district) - districtSortValue(b.district) ||
+      a.name.localeCompare(b.name),
+  );
   officialsCache = officials;
   return officials;
 }
@@ -265,6 +291,156 @@ export function getOfficialWithScores(
     scoreCard: getScoreCard(id),
     fundingSummary: getFundingSummary(id),
     redFlags: getRedFlags(id),
+  };
+}
+
+export function getRepWatchrDataStats() {
+  const officials = getAllOfficials();
+  const scoreCards = getAllScoreCards();
+  const bills = getAllBills();
+  const issueCategories = getIssueCategories();
+  const newsArticles = getAllNews();
+  const fundingSummaries = officials
+    .map((official) => getFundingSummary(official.id))
+    .filter((funding): funding is FundingSummary => Boolean(funding));
+  const redFlagRows = officials.flatMap((official) => getRedFlags(official.id));
+  const levelCounts = officials.reduce<Record<GovernmentLevel, number>>(
+    (acc, official) => {
+      acc[official.level] = (acc[official.level] ?? 0) + 1;
+      return acc;
+    },
+    {
+      federal: 0,
+      state: 0,
+      county: 0,
+      city: 0,
+      "school-board": 0,
+    },
+  );
+  const counties = new Set(officials.flatMap((official) => official.county));
+  const publicSourceUrls = new Set<string>();
+  const officialSourceUrls = new Set<string>();
+  const fundingSourceUrls = new Set<string>();
+  const redFlagSourceUrls = new Set<string>();
+  const voteSourceUrls = new Set<string>();
+  const newsSourceUrls = new Set<string>();
+  const reviewStatusCounts = officials.reduce<Record<string, number>>((acc, official) => {
+    const status = official.reviewStatus ?? "missing";
+    acc[status] = (acc[status] ?? 0) + 1;
+    return acc;
+  }, {});
+  const federalHouseProfilesLoaded = officials.filter(
+    (official) => official.level === "federal" && official.position === "U.S. Representative",
+  ).length;
+  const federalSenateProfilesLoaded = officials.filter(
+    (official) => official.level === "federal" && official.position === "U.S. Senator",
+  ).length;
+  const texasHouseProfilesLoaded = officials.filter(
+    (official) => official.level === "state" && official.position === "State Representative",
+  ).length;
+  const texasSenateProfilesLoaded = officials.filter(
+    (official) => official.level === "state" && official.position === "State Senator",
+  ).length;
+  const federalExpectedSeats = TEXAS_EXPECTED_SEATS.federalHouse + TEXAS_EXPECTED_SEATS.federalSenate;
+  const stateLegislatureExpectedSeats = TEXAS_EXPECTED_SEATS.stateHouse + TEXAS_EXPECTED_SEATS.stateSenate;
+  const federalProfilesLoaded = federalHouseProfilesLoaded + federalSenateProfilesLoaded;
+  const stateLegislatorProfilesLoaded = texasHouseProfilesLoaded + texasSenateProfilesLoaded;
+  const federalAndStateSeatProfilesLoaded = federalProfilesLoaded + stateLegislatorProfilesLoaded;
+  const federalAndStateExpectedSeats = federalExpectedSeats + stateLegislatureExpectedSeats;
+
+  fundingSummaries.forEach((funding) => {
+    funding.sources.forEach((source) => {
+      if (source.url) {
+        fundingSourceUrls.add(source.url);
+        publicSourceUrls.add(source.url);
+      }
+    });
+  });
+  redFlagRows.forEach((flag) => {
+    if (flag.sourceUrl) {
+      redFlagSourceUrls.add(flag.sourceUrl);
+      publicSourceUrls.add(flag.sourceUrl);
+    }
+  });
+  bills.forEach((bill) => {
+    if (bill.sourceUrl) {
+      voteSourceUrls.add(bill.sourceUrl);
+      publicSourceUrls.add(bill.sourceUrl);
+    }
+  });
+  newsArticles.forEach((article) => {
+    if (article.sourceUrl) {
+      newsSourceUrls.add(article.sourceUrl);
+      publicSourceUrls.add(article.sourceUrl);
+    }
+  });
+  officials.forEach((official) => {
+    official.sourceLinks?.forEach((source) => {
+      if (source.url) {
+        officialSourceUrls.add(source.url);
+        publicSourceUrls.add(source.url);
+      }
+    });
+    if (official.photoSourceUrl) {
+      officialSourceUrls.add(official.photoSourceUrl);
+      publicSourceUrls.add(official.photoSourceUrl);
+    }
+    if (official.contactInfo.website) {
+      officialSourceUrls.add(official.contactInfo.website);
+      publicSourceUrls.add(official.contactInfo.website);
+    }
+  });
+
+  return {
+    officialFiles: officials.length,
+    nonSchoolOfficialFiles: officials.filter((official) => official.level !== "school-board").length,
+    legacySchoolBoardOfficialFiles: levelCounts["school-board"],
+    levelCounts,
+    counties: counties.size,
+    federalProfilesLoaded,
+    federalExpectedSeats,
+    federalHouseProfilesLoaded,
+    federalHouseExpectedSeats: TEXAS_EXPECTED_SEATS.federalHouse,
+    federalSenateProfilesLoaded,
+    federalSenateExpectedSeats: TEXAS_EXPECTED_SEATS.federalSenate,
+    federalProfileGaps: Math.max(0, federalExpectedSeats - federalProfilesLoaded),
+    stateLegislatorProfilesLoaded,
+    stateLegislatureExpectedSeats,
+    texasHouseProfilesLoaded,
+    texasHouseExpectedSeats: TEXAS_EXPECTED_SEATS.stateHouse,
+    texasSenateProfilesLoaded,
+    texasSenateExpectedSeats: TEXAS_EXPECTED_SEATS.stateSenate,
+    stateLegislatureProfileGaps: Math.max(0, stateLegislatureExpectedSeats - stateLegislatorProfilesLoaded),
+    federalAndStateSeatProfilesLoaded,
+    federalAndStateExpectedSeats,
+    federalAndStateProfileGaps: Math.max(0, federalAndStateExpectedSeats - federalAndStateSeatProfilesLoaded),
+    countyCityOfficialFiles: levelCounts.county + levelCounts.city,
+    sourceSeededOfficialProfiles: reviewStatusCounts.source_seeded ?? 0,
+    verifiedOfficialProfiles: reviewStatusCounts.verified ?? 0,
+    completeOfficialProfiles: reviewStatusCounts.complete ?? 0,
+    needsSourceReviewOfficialProfiles: reviewStatusCounts.needs_source_review ?? 0,
+    missingReviewStatusOfficialProfiles: reviewStatusCounts.missing ?? 0,
+    reviewStatusCounts,
+    officialsWithPhotos: officials.filter((official) => Boolean(official.photo)).length,
+    officialsWithSourceLinks: officials.filter((official) => (official.sourceLinks?.length ?? 0) > 0).length,
+    officialsWithWebsites: officials.filter((official) => Boolean(official.contactInfo.website)).length,
+    scoreCards: scoreCards.length,
+    officialsWithScoreCards: new Set(scoreCards.map((scoreCard) => scoreCard.officialId)).size,
+    fundingSummaries: fundingSummaries.length,
+    officialsWithFundingSummaries: new Set(fundingSummaries.map((funding) => funding.officialId)).size,
+    redFlagItems: redFlagRows.length,
+    officialsWithRedFlags: new Set(redFlagRows.map((flag) => flag.officialId)).size,
+    bills: bills.length,
+    scoredVoteRows: bills.reduce((total, bill) => total + bill.votes.length, 0),
+    issueCategories: issueCategories.length,
+    newsArticles: newsArticles.length,
+    featuredNewsArticles: newsArticles.filter((article) => article.featured).length,
+    officialSourceUrls: officialSourceUrls.size,
+    fundingSourceUrls: fundingSourceUrls.size,
+    redFlagSourceUrls: redFlagSourceUrls.size,
+    voteSourceUrls: voteSourceUrls.size,
+    newsSourceUrls: newsSourceUrls.size,
+    publicSourceUrls: publicSourceUrls.size,
   };
 }
 

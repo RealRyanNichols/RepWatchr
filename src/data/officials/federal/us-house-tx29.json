@@ -1,0 +1,45 @@
+{
+  "id": "sylvia-r-garcia",
+  "name": "Sylvia R. Garcia",
+  "firstName": "Sylvia",
+  "lastName": "Garcia",
+  "photo": "/images/officials/federal/sylvia-r-garcia.jpg",
+  "photoSourceUrl": "https://unitedstates.github.io/images/congress/225x275/G000587.jpg",
+  "photoCredit": "UnitedStates project congressional image mirror",
+  "party": "D",
+  "level": "federal",
+  "position": "U.S. Representative",
+  "district": "TX-29",
+  "jurisdiction": "U.S. House of Representatives",
+  "county": [
+    "Texas"
+  ],
+  "termStart": "2025-01-03",
+  "termEnd": "2027-01-03",
+  "contactInfo": {
+    "office": "2419 Rayburn House Office Building",
+    "phone": "202-225-1688",
+    "email": "https://sylviagarcia.house.gov",
+    "website": "https://sylviagarcia.house.gov"
+  },
+  "bio": "Sylvia R. Garcia serves as the U.S. Representative for Texas's 29th Congressional District. This RepWatchr starter profile is sourced from the official congressional record data and public profile links.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "TX",
+  "bioguideId": "G000587",
+  "sourceLinks": [
+    {
+      "title": "Official congressional website",
+      "url": "https://sylviagarcia.house.gov"
+    },
+    {
+      "title": "Congress legislators current roster",
+      "url": "https://raw.githubusercontent.com/unitedstates/congress-legislators/master/legislators-current.yaml"
+    },
+    {
+      "title": "Congressional photo source",
+      "url": "https://unitedstates.github.io/images/congress/225x275/G000587.jpg"
+    }
+  ],
+  "lastVerifiedAt": "2026-04-27"
+}

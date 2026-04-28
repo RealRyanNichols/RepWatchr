@@ -1,0 +1,45 @@
+{
+  "id": "jasmine-crockett",
+  "name": "Jasmine Crockett",
+  "firstName": "Jasmine",
+  "lastName": "Crockett",
+  "photo": "/images/officials/federal/jasmine-crockett.jpg",
+  "photoSourceUrl": "https://unitedstates.github.io/images/congress/225x275/C001130.jpg",
+  "photoCredit": "UnitedStates project congressional image mirror",
+  "party": "D",
+  "level": "federal",
+  "position": "U.S. Representative",
+  "district": "TX-30",
+  "jurisdiction": "U.S. House of Representatives",
+  "county": [
+    "Texas"
+  ],
+  "termStart": "2025-01-03",
+  "termEnd": "2027-01-03",
+  "contactInfo": {
+    "office": "1616 Longworth House Office Building",
+    "phone": "202-225-8885",
+    "email": "https://crockett.house.gov",
+    "website": "https://crockett.house.gov"
+  },
+  "bio": "Jasmine Crockett serves as the U.S. Representative for Texas's 30th Congressional District. This RepWatchr starter profile is sourced from the official congressional record data and public profile links.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "TX",
+  "bioguideId": "C001130",
+  "sourceLinks": [
+    {
+      "title": "Official congressional website",
+      "url": "https://crockett.house.gov"
+    },
+    {
+      "title": "Congress legislators current roster",
+      "url": "https://raw.githubusercontent.com/unitedstates/congress-legislators/master/legislators-current.yaml"
+    },
+    {
+      "title": "Congressional photo source",
+      "url": "https://unitedstates.github.io/images/congress/225x275/C001130.jpg"
+    }
+  ],
+  "lastVerifiedAt": "2026-04-27"
+}

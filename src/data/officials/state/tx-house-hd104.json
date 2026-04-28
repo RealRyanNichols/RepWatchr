@@ -1,0 +1,44 @@
+{
+  "id": "jessica-gonz-lez",
+  "name": "Jessica González",
+  "firstName": "Jessica",
+  "lastName": "González",
+  "photo": "/images/officials/state-house/jessica-gonz-lez.jpg",
+  "photoSourceUrl": "https://house.texas.gov/images/members/3335.jpg?v=1",
+  "photoCredit": "Official Texas House of Representatives photo",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-104",
+  "jurisdiction": "Texas House of Representatives",
+  "county": [
+    "Texas"
+  ],
+  "termStart": "2019-01-08",
+  "termEnd": "Current legislative term pending source review",
+  "contactInfo": {
+    "office": "Room E2.808, P.O. Box 12910, Austin, TX 78711",
+    "phone": "512-463-0408",
+    "email": "jessica.gonzalez@house.texas.gov",
+    "website": "https://house.texas.gov/members/3335"
+  },
+  "bio": "Jessica González serves as State Representative for Texas House of Representatives District 104. This RepWatchr starter profile is sourced from official Texas Legislature profile data and OpenStates public records.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "TX",
+  "sourceLinks": [
+    {
+      "title": "Official Texas House of Representatives profile",
+      "url": "https://house.texas.gov/members/3335"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/main/data/tx/legislature/Jessica-Gonzlez-8eeb1aad-24b6-487b-bbc0-31c2238b1ccd.yml"
+    },
+    {
+      "title": "Official profile photo source",
+      "url": "https://house.texas.gov/images/members/3335.jpg?v=1"
+    }
+  ],
+  "lastVerifiedAt": "2026-04-27"
+}

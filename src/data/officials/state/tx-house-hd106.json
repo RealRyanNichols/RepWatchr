@@ -1,0 +1,44 @@
+{
+  "id": "jared-patterson",
+  "name": "Jared Patterson",
+  "firstName": "Jared",
+  "lastName": "Patterson",
+  "photo": "/images/officials/state-house/jared-patterson.jpg",
+  "photoSourceUrl": "https://house.texas.gov/images/members/3655.jpg?v=1",
+  "photoCredit": "Official Texas House of Representatives photo",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-106",
+  "jurisdiction": "Texas House of Representatives",
+  "county": [
+    "Texas"
+  ],
+  "termStart": "2019-01-08",
+  "termEnd": "Current legislative term pending source review",
+  "contactInfo": {
+    "office": "Room E2.608, P.O. Box 12910, Austin, TX 78711",
+    "phone": "512-463-0694",
+    "email": "jared.patterson@house.texas.gov",
+    "website": "https://house.texas.gov/members/3655"
+  },
+  "bio": "Jared Patterson serves as State Representative for Texas House of Representatives District 106. This RepWatchr starter profile is sourced from official Texas Legislature profile data and OpenStates public records.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "TX",
+  "sourceLinks": [
+    {
+      "title": "Official Texas House of Representatives profile",
+      "url": "https://house.texas.gov/members/3655"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/main/data/tx/legislature/Jared-Patterson-e926ca11-64dd-4e15-97bd-1f7b0915de36.yml"
+    },
+    {
+      "title": "Official profile photo source",
+      "url": "https://house.texas.gov/images/members/3655.jpg?v=1"
+    }
+  ],
+  "lastVerifiedAt": "2026-04-27"
+}

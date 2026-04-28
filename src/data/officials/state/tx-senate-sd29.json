@@ -1,0 +1,44 @@
+{
+  "id": "c-sar-blanco",
+  "name": "César Blanco",
+  "firstName": "César",
+  "lastName": "Blanco",
+  "photo": "/images/officials/state-senate/c-sar-blanco.jpg",
+  "photoSourceUrl": "https://senate.texas.gov/members/d29/img/SCBBio88th-web.jpg",
+  "photoCredit": "Official Texas Senate photo",
+  "party": "D",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-29",
+  "jurisdiction": "Texas Senate",
+  "county": [
+    "Texas"
+  ],
+  "termStart": "2021-01-12",
+  "termEnd": "Current legislative term pending source review",
+  "contactInfo": {
+    "office": "Room 3E.2, 1100 Congress Ave., Austin, TX 78701",
+    "phone": "512-463-0129",
+    "email": "cesar.blanco@senate.texas.gov",
+    "website": "https://house.texas.gov/members/member-page/?district=76"
+  },
+  "bio": "César Blanco serves as State Senator for Texas Senate District 29. This RepWatchr starter profile is sourced from official Texas Legislature profile data and OpenStates public records.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "TX",
+  "sourceLinks": [
+    {
+      "title": "Official Texas Senate profile",
+      "url": "https://house.texas.gov/members/member-page/?district=76"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/main/data/tx/legislature/Csar-Blanco-3e0f0e51-20c0-4da4-82b5-ff81606148d0.yml"
+    },
+    {
+      "title": "Official profile photo source",
+      "url": "https://senate.texas.gov/members/d29/img/SCBBio88th-web.jpg"
+    }
+  ],
+  "lastVerifiedAt": "2026-04-27"
+}

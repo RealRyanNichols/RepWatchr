@@ -1,0 +1,44 @@
+{
+  "id": "nathan-johnson",
+  "name": "Nathan Johnson",
+  "firstName": "Nathan",
+  "lastName": "Johnson",
+  "photo": "/images/officials/state-senate/nathan-johnson.jpg",
+  "photoSourceUrl": "https://senate.texas.gov/members/d16/img/SNJ-Headshot-2023-web.jpg",
+  "photoCredit": "Official Texas Senate photo",
+  "party": "D",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-16",
+  "jurisdiction": "Texas Senate",
+  "county": [
+    "Texas"
+  ],
+  "termStart": "2019-01-08",
+  "termEnd": "Current legislative term pending source review",
+  "contactInfo": {
+    "office": "Room 4E.2, 1100 Congress Ave., Austin, TX 78701",
+    "phone": "512-463-0116",
+    "email": "nathan.johnson@senate.texas.gov",
+    "website": "https://senate.texas.gov/member.php?d=16"
+  },
+  "bio": "Nathan Johnson serves as State Senator for Texas Senate District 16. This RepWatchr starter profile is sourced from official Texas Legislature profile data and OpenStates public records.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "TX",
+  "sourceLinks": [
+    {
+      "title": "Official Texas Senate profile",
+      "url": "https://senate.texas.gov/member.php?d=16"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/main/data/tx/legislature/Nathan-Johnson-dee454b1-6da0-4b1b-a232-033e7de8551f.yml"
+    },
+    {
+      "title": "Official profile photo source",
+      "url": "https://senate.texas.gov/members/d16/img/SNJ-Headshot-2023-web.jpg"
+    }
+  ],
+  "lastVerifiedAt": "2026-04-27"
+}

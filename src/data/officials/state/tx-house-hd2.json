@@ -1,0 +1,44 @@
+{
+  "id": "brent-money",
+  "name": "Brent Money",
+  "firstName": "Brent",
+  "lastName": "Money",
+  "photo": "/images/officials/state-house/brent-money.jpg",
+  "photoSourceUrl": "https://www.house.texas.gov/images/members/4670.jpg?v=1",
+  "photoCredit": "Official Texas House of Representatives photo",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-2",
+  "jurisdiction": "Texas House of Representatives",
+  "county": [
+    "Texas"
+  ],
+  "termStart": "2025-01-14",
+  "termEnd": "Current legislative term pending source review",
+  "contactInfo": {
+    "office": "Room E2.414, P.O. Box 12910, Austin, TX 78711",
+    "phone": "512-463-0880",
+    "email": "brent.money@house.texas.gov",
+    "website": "https://www.house.texas.gov/members/2"
+  },
+  "bio": "Brent Money serves as State Representative for Texas House of Representatives District 2. This RepWatchr starter profile is sourced from official Texas Legislature profile data and OpenStates public records.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "TX",
+  "sourceLinks": [
+    {
+      "title": "Official Texas House of Representatives profile",
+      "url": "https://www.house.texas.gov/members/2"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/main/data/tx/legislature/Brent-Money-469f1932-49dc-4a46-8341-b2cd9bc0f96d.yml"
+    },
+    {
+      "title": "Official profile photo source",
+      "url": "https://www.house.texas.gov/images/members/4670.jpg?v=1"
+    }
+  ],
+  "lastVerifiedAt": "2026-04-27"
+}

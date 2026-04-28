@@ -1,0 +1,44 @@
+{
+  "id": "claudia-ordaz",
+  "name": "Claudia Ordaz",
+  "firstName": "Claudia",
+  "lastName": "Ordaz",
+  "photo": "/images/officials/state-house/claudia-ordaz.jpg",
+  "photoSourceUrl": "https://house.texas.gov/images/members/4015.jpg?v=3",
+  "photoCredit": "Official Texas House of Representatives photo",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-79",
+  "jurisdiction": "Texas House of Representatives",
+  "county": [
+    "Texas"
+  ],
+  "termStart": "2023-01-10",
+  "termEnd": "Current legislative term pending source review",
+  "contactInfo": {
+    "office": "Room E2.706, P.O. Box 12910, Austin, TX 78711",
+    "phone": "512-463-0622",
+    "email": "claudia.ordaz@house.texas.gov",
+    "website": "https://house.texas.gov/members/4015"
+  },
+  "bio": "Claudia Ordaz serves as State Representative for Texas House of Representatives District 79. This RepWatchr starter profile is sourced from official Texas Legislature profile data and OpenStates public records.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "TX",
+  "sourceLinks": [
+    {
+      "title": "Official Texas House of Representatives profile",
+      "url": "https://house.texas.gov/members/4015"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/main/data/tx/legislature/Claudia-Ordaz-Perez-6feda596-fd20-429b-ae4e-bedab7e5a1c5.yml"
+    },
+    {
+      "title": "Official profile photo source",
+      "url": "https://house.texas.gov/images/members/4015.jpg?v=3"
+    }
+  ],
+  "lastVerifiedAt": "2026-04-27"
+}

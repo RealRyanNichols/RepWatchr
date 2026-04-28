@@ -1,0 +1,44 @@
+{
+  "id": "katrina-pierson",
+  "name": "Katrina Pierson",
+  "firstName": "Katrina",
+  "lastName": "Pierson",
+  "photo": "/images/officials/state-house/katrina-pierson.jpg",
+  "photoSourceUrl": "https://www.house.texas.gov/images/members/4715.jpg?v=2",
+  "photoCredit": "Official Texas House of Representatives photo",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-33",
+  "jurisdiction": "Texas House of Representatives",
+  "county": [
+    "Texas"
+  ],
+  "termStart": "2025-01-14",
+  "termEnd": "Current legislative term pending source review",
+  "contactInfo": {
+    "office": "Room E2.714, P.O. Box 12910, Austin, TX 78711",
+    "phone": "512-463-0484",
+    "email": "katrina.pierson@house.texas.gov",
+    "website": "https://www.house.texas.gov/members/33"
+  },
+  "bio": "Katrina Pierson serves as State Representative for Texas House of Representatives District 33. This RepWatchr starter profile is sourced from official Texas Legislature profile data and OpenStates public records.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "TX",
+  "sourceLinks": [
+    {
+      "title": "Official Texas House of Representatives profile",
+      "url": "https://www.house.texas.gov/members/33"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/main/data/tx/legislature/Katrina-Pierson-1205faf4-7ced-4d21-aa8c-aad9239e3157.yml"
+    },
+    {
+      "title": "Official profile photo source",
+      "url": "https://www.house.texas.gov/images/members/4715.jpg?v=2"
+    }
+  ],
+  "lastVerifiedAt": "2026-04-27"
+}

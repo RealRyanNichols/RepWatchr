@@ -1,0 +1,44 @@
+{
+  "id": "brent-hagenbuch",
+  "name": "Brent Hagenbuch",
+  "firstName": "Brent",
+  "lastName": "Hagenbuch",
+  "photo": "/images/officials/state-senate/brent-hagenbuch.jpg",
+  "photoSourceUrl": "https://www.senate.texas.gov/members/d30/img/Hagenbuch_89-0029-009-web.jpg",
+  "photoCredit": "Official Texas Senate photo",
+  "party": "R",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-30",
+  "jurisdiction": "Texas Senate",
+  "county": [
+    "Texas"
+  ],
+  "termStart": "2025-01-14",
+  "termEnd": "Current legislative term pending source review",
+  "contactInfo": {
+    "office": "Room GE.7, P.O. Box 12068 Capitol Station, Austin, TX 78711",
+    "phone": "512-463-0130",
+    "email": "brent.hagenbuch@senate.texas.gov",
+    "website": "https://www.senate.texas.gov/member.php?d=30"
+  },
+  "bio": "Brent Hagenbuch serves as State Senator for Texas Senate District 30. This RepWatchr starter profile is sourced from official Texas Legislature profile data and OpenStates public records.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "TX",
+  "sourceLinks": [
+    {
+      "title": "Official Texas Senate profile",
+      "url": "https://www.senate.texas.gov/member.php?d=30"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/main/data/tx/legislature/Brent-Hagenbuch-c15c9bf3-f28a-4c01-9a10-383bc7a05cb9.yml"
+    },
+    {
+      "title": "Official profile photo source",
+      "url": "https://www.senate.texas.gov/members/d30/img/Hagenbuch_89-0029-009-web.jpg"
+    }
+  ],
+  "lastVerifiedAt": "2026-04-27"
+}

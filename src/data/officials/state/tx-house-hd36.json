@@ -1,0 +1,44 @@
+{
+  "id": "sergio-mu-oz",
+  "name": "Sergio Muñoz",
+  "firstName": "Sergio",
+  "lastName": "Muñoz",
+  "photo": "/images/officials/state-house/sergio-mu-oz.jpg",
+  "photoSourceUrl": "https://house.texas.gov/images/members/2060.jpg?v=1",
+  "photoCredit": "Official Texas House of Representatives photo",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-36",
+  "jurisdiction": "Texas House of Representatives",
+  "county": [
+    "Texas"
+  ],
+  "termStart": "2011-01-11",
+  "termEnd": "Current legislative term pending source review",
+  "contactInfo": {
+    "office": "Room 1N.8, P.O. Box 12910, Austin, TX 78711",
+    "phone": "512-463-0704",
+    "email": "sergio.munoz@house.texas.gov",
+    "website": "https://house.texas.gov/members/2060"
+  },
+  "bio": "Sergio Muñoz serves as State Representative for Texas House of Representatives District 36. This RepWatchr starter profile is sourced from official Texas Legislature profile data and OpenStates public records.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "TX",
+  "sourceLinks": [
+    {
+      "title": "Official Texas House of Representatives profile",
+      "url": "https://house.texas.gov/members/2060"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/main/data/tx/legislature/Sergio-Jr-Muoz-b7c4e0e7-4949-4dff-bc4c-fdaaada3f37d.yml"
+    },
+    {
+      "title": "Official profile photo source",
+      "url": "https://house.texas.gov/images/members/2060.jpg?v=1"
+    }
+  ],
+  "lastVerifiedAt": "2026-04-27"
+}

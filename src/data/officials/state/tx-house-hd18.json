@@ -1,0 +1,44 @@
+{
+  "id": "janis-holt",
+  "name": "Janis Holt",
+  "firstName": "Janis",
+  "lastName": "Holt",
+  "photo": "/images/officials/state-house/janis-holt.jpg",
+  "photoSourceUrl": "https://www.house.texas.gov/images/members/4535.jpg?v=2",
+  "photoCredit": "Official Texas House of Representatives photo",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-18",
+  "jurisdiction": "Texas House of Representatives",
+  "county": [
+    "Texas"
+  ],
+  "termStart": "2025-01-14",
+  "termEnd": "Current legislative term pending source review",
+  "contactInfo": {
+    "office": "Room E1.416, P.O. Box 12910, Austin, TX 78711",
+    "phone": "512-463-0570",
+    "email": "janis.holt@house.texas.gov",
+    "website": "https://www.house.texas.gov/members/18"
+  },
+  "bio": "Janis Holt serves as State Representative for Texas House of Representatives District 18. This RepWatchr starter profile is sourced from official Texas Legislature profile data and OpenStates public records.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "TX",
+  "sourceLinks": [
+    {
+      "title": "Official Texas House of Representatives profile",
+      "url": "https://www.house.texas.gov/members/18"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/main/data/tx/legislature/Janis-Holt-0deb3053-0d5d-46b4-93d2-8eb9de0c4ffd.yml"
+    },
+    {
+      "title": "Official profile photo source",
+      "url": "https://www.house.texas.gov/images/members/4535.jpg?v=2"
+    }
+  ],
+  "lastVerifiedAt": "2026-04-27"
+}

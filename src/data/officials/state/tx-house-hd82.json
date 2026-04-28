@@ -1,0 +1,44 @@
+{
+  "id": "tom-craddick",
+  "name": "Tom Craddick",
+  "firstName": "Tom",
+  "lastName": "Craddick",
+  "photo": "/images/officials/state-house/tom-craddick.jpg",
+  "photoSourceUrl": "https://house.texas.gov/images/members/2610.jpg?v=1",
+  "photoCredit": "Official Texas House of Representatives photo",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-82",
+  "jurisdiction": "Texas House of Representatives",
+  "county": [
+    "Texas"
+  ],
+  "termStart": "1993-01-12",
+  "termEnd": "Current legislative term pending source review",
+  "contactInfo": {
+    "office": "Room 1W.9, P.O. Box 12910, Austin, TX 78711",
+    "phone": "512-463-0500",
+    "email": "tom.craddick@house.texas.gov",
+    "website": "https://house.texas.gov/members/2610"
+  },
+  "bio": "Tom Craddick serves as State Representative for Texas House of Representatives District 82. This RepWatchr starter profile is sourced from official Texas Legislature profile data and OpenStates public records.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "TX",
+  "sourceLinks": [
+    {
+      "title": "Official Texas House of Representatives profile",
+      "url": "https://house.texas.gov/members/2610"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/main/data/tx/legislature/Tom-Craddick-d4d5c127-1ef6-445d-a89b-d9f02c812365.yml"
+    },
+    {
+      "title": "Official profile photo source",
+      "url": "https://house.texas.gov/images/members/2610.jpg?v=1"
+    }
+  ],
+  "lastVerifiedAt": "2026-04-27"
+}

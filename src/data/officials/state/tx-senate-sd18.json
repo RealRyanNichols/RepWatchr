@@ -1,0 +1,44 @@
+{
+  "id": "lois-kolkhorst",
+  "name": "Lois Kolkhorst",
+  "firstName": "Lois",
+  "lastName": "Kolkhorst",
+  "photo": "/images/officials/state-senate/lois-kolkhorst.jpg",
+  "photoSourceUrl": "https://senate.texas.gov/members/d18/img/LWK_2020.jpg",
+  "photoCredit": "Official Texas Senate photo",
+  "party": "R",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-18",
+  "jurisdiction": "Texas Senate",
+  "county": [
+    "Texas"
+  ],
+  "termStart": "2014-12-22",
+  "termEnd": "Current legislative term pending source review",
+  "contactInfo": {
+    "office": "Room GE.4, P.O. Box 12068 Capitol Station, Austin, TX 78711",
+    "phone": "512-463-0118",
+    "email": "lois.kolkhorst@senate.texas.gov",
+    "website": "https://senate.texas.gov/member.php?d=18"
+  },
+  "bio": "Lois Kolkhorst serves as State Senator for Texas Senate District 18. This RepWatchr starter profile is sourced from official Texas Legislature profile data and OpenStates public records.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "TX",
+  "sourceLinks": [
+    {
+      "title": "Official Texas Senate profile",
+      "url": "https://senate.texas.gov/member.php?d=18"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/main/data/tx/legislature/Lois-W-Kolkhorst-28eb71be-bce7-4b32-908d-289ecc265c3c.yml"
+    },
+    {
+      "title": "Official profile photo source",
+      "url": "https://senate.texas.gov/members/d18/img/LWK_2020.jpg"
+    }
+  ],
+  "lastVerifiedAt": "2026-04-27"
+}

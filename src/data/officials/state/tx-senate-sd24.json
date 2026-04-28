@@ -1,0 +1,44 @@
+{
+  "id": "pete-flores",
+  "name": "Pete Flores",
+  "firstName": "Pete",
+  "lastName": "Flores",
+  "photo": "/images/officials/state-senate/pete-flores.jpg",
+  "photoSourceUrl": "https://senate.texas.gov/members/d24/img/Flores_86-0634D-001-web.jpg",
+  "photoCredit": "Official Texas Senate photo",
+  "party": "R",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-24",
+  "jurisdiction": "Texas Senate",
+  "county": [
+    "Texas"
+  ],
+  "termStart": "2023-01-10",
+  "termEnd": "Current legislative term pending source review",
+  "contactInfo": {
+    "office": "Room E1.808, P.O. Box 12068 Capitol Station, Austin, TX 78711",
+    "phone": "512-463-0124",
+    "email": "pete.flores@senate.texas.gov",
+    "website": "https://senate.texas.gov/member.php?d=24"
+  },
+  "bio": "Pete Flores serves as State Senator for Texas Senate District 24. This RepWatchr starter profile is sourced from official Texas Legislature profile data and OpenStates public records.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "TX",
+  "sourceLinks": [
+    {
+      "title": "Official Texas Senate profile",
+      "url": "https://senate.texas.gov/member.php?d=24"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/main/data/tx/legislature/Pete-Flores-682e8ef8-8fc1-4490-a04d-63a7c6d92185.yml"
+    },
+    {
+      "title": "Official profile photo source",
+      "url": "https://senate.texas.gov/members/d24/img/Flores_86-0634D-001-web.jpg"
+    }
+  ],
+  "lastVerifiedAt": "2026-04-27"
+}

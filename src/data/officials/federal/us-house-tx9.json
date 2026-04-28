@@ -1,0 +1,45 @@
+{
+  "id": "al-green",
+  "name": "Al Green",
+  "firstName": "Al",
+  "lastName": "Green",
+  "photo": "/images/officials/federal/al-green.jpg",
+  "photoSourceUrl": "https://unitedstates.github.io/images/congress/225x275/G000553.jpg",
+  "photoCredit": "UnitedStates project congressional image mirror",
+  "party": "D",
+  "level": "federal",
+  "position": "U.S. Representative",
+  "district": "TX-9",
+  "jurisdiction": "U.S. House of Representatives",
+  "county": [
+    "Texas"
+  ],
+  "termStart": "2025-01-03",
+  "termEnd": "2027-01-03",
+  "contactInfo": {
+    "office": "2347 Rayburn House Office Building",
+    "phone": "202-225-7508",
+    "email": "https://algreen.house.gov",
+    "website": "https://algreen.house.gov"
+  },
+  "bio": "Al Green serves as the U.S. Representative for Texas's 9th Congressional District. This RepWatchr starter profile is sourced from the official congressional record data and public profile links.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "TX",
+  "bioguideId": "G000553",
+  "sourceLinks": [
+    {
+      "title": "Official congressional website",
+      "url": "https://algreen.house.gov"
+    },
+    {
+      "title": "Congress legislators current roster",
+      "url": "https://raw.githubusercontent.com/unitedstates/congress-legislators/master/legislators-current.yaml"
+    },
+    {
+      "title": "Congressional photo source",
+      "url": "https://unitedstates.github.io/images/congress/225x275/G000553.jpg"
+    }
+  ],
+  "lastVerifiedAt": "2026-04-27"
+}

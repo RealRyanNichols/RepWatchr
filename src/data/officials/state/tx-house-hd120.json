@@ -1,0 +1,44 @@
+{
+  "id": "barbara-gervin-hawkins",
+  "name": "Barbara Gervin-Hawkins",
+  "firstName": "Barbara",
+  "lastName": "Gervin-Hawkins",
+  "photo": "/images/officials/state-house/barbara-gervin-hawkins.jpg",
+  "photoSourceUrl": "https://house.texas.gov/images/members/3445.jpg?v=1",
+  "photoCredit": "Official Texas House of Representatives photo",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-120",
+  "jurisdiction": "Texas House of Representatives",
+  "county": [
+    "Texas"
+  ],
+  "termStart": "2017-01-10",
+  "termEnd": "Current legislative term pending source review",
+  "contactInfo": {
+    "office": "Room GN.12, P.O. Box 12910, Austin, TX 78711",
+    "phone": "512-463-0708",
+    "email": "barbara.gervin-hawkins@house.texas.gov",
+    "website": "https://house.texas.gov/members/120"
+  },
+  "bio": "Barbara Gervin-Hawkins serves as State Representative for Texas House of Representatives District 120. This RepWatchr starter profile is sourced from official Texas Legislature profile data and OpenStates public records.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "TX",
+  "sourceLinks": [
+    {
+      "title": "Official Texas House of Representatives profile",
+      "url": "https://house.texas.gov/members/120"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/main/data/tx/legislature/Barbara-Gervin-Hawkins-9c37e80d-af10-4433-a78a-408b2b798fb6.yml"
+    },
+    {
+      "title": "Official profile photo source",
+      "url": "https://house.texas.gov/images/members/3445.jpg?v=1"
+    }
+  ],
+  "lastVerifiedAt": "2026-04-27"
+}

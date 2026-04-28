@@ -1,0 +1,44 @@
+{
+  "id": "senfronia-thompson",
+  "name": "Senfronia Thompson",
+  "firstName": "Senfronia",
+  "lastName": "Thompson",
+  "photo": "/images/officials/state-house/senfronia-thompson.jpg",
+  "photoSourceUrl": "https://house.texas.gov/images/members/4630.jpg?v=1",
+  "photoCredit": "Official Texas House of Representatives photo",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-141",
+  "jurisdiction": "Texas House of Representatives",
+  "county": [
+    "Texas"
+  ],
+  "termStart": "1983-01-11",
+  "termEnd": "Current legislative term pending source review",
+  "contactInfo": {
+    "office": "Room 3S.6, P.O. Box 12910, Austin, TX 78711",
+    "phone": "512-463-0720",
+    "email": "senfronia.thompson@house.texas.gov",
+    "website": "https://house.texas.gov/members/4630"
+  },
+  "bio": "Senfronia Thompson serves as State Representative for Texas House of Representatives District 141. This RepWatchr starter profile is sourced from official Texas Legislature profile data and OpenStates public records.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "TX",
+  "sourceLinks": [
+    {
+      "title": "Official Texas House of Representatives profile",
+      "url": "https://house.texas.gov/members/4630"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/main/data/tx/legislature/Senfronia-Thompson-ace50d18-fc98-4460-9d90-928c0e88c79a.yml"
+    },
+    {
+      "title": "Official profile photo source",
+      "url": "https://house.texas.gov/images/members/4630.jpg?v=1"
+    }
+  ],
+  "lastVerifiedAt": "2026-04-27"
+}

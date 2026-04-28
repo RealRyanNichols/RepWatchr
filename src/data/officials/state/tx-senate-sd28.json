@@ -1,0 +1,44 @@
+{
+  "id": "charles-perry",
+  "name": "Charles Perry",
+  "firstName": "Charles",
+  "lastName": "Perry",
+  "photo": "/images/officials/state-senate/charles-perry.jpg",
+  "photoSourceUrl": "https://senate.texas.gov/members/d28/img/Perry-Headshot-2019.jpg",
+  "photoCredit": "Official Texas Senate photo",
+  "party": "R",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-28",
+  "jurisdiction": "Texas Senate",
+  "county": [
+    "Texas"
+  ],
+  "termStart": "2014-09-30",
+  "termEnd": "Current legislative term pending source review",
+  "contactInfo": {
+    "office": "Room E1.806, P.O. Box 12068 Capitol Station, Austin, TX 78711",
+    "phone": "512-463-0128",
+    "email": "charles.perry@senate.texas.gov",
+    "website": "https://senate.texas.gov/member.php?d=28"
+  },
+  "bio": "Charles Perry serves as State Senator for Texas Senate District 28. This RepWatchr starter profile is sourced from official Texas Legislature profile data and OpenStates public records.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "TX",
+  "sourceLinks": [
+    {
+      "title": "Official Texas Senate profile",
+      "url": "https://senate.texas.gov/member.php?d=28"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/main/data/tx/legislature/Charles-Perry-6522ba2d-f263-455a-9470-cec0aa03033b.yml"
+    },
+    {
+      "title": "Official profile photo source",
+      "url": "https://senate.texas.gov/members/d28/img/Perry-Headshot-2019.jpg"
+    }
+  ],
+  "lastVerifiedAt": "2026-04-27"
+}

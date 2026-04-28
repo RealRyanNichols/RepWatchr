@@ -1,0 +1,44 @@
+{
+  "id": "angie-button",
+  "name": "Angie Button",
+  "firstName": "Angie",
+  "lastName": "Button",
+  "photo": "/images/officials/state-house/angie-button.jpg",
+  "photoSourceUrl": "https://house.texas.gov/images/members/2510.jpg?v=1",
+  "photoCredit": "Official Texas House of Representatives photo",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-112",
+  "jurisdiction": "Texas House of Representatives",
+  "county": [
+    "Texas"
+  ],
+  "termStart": "2009-01-13",
+  "termEnd": "Current legislative term pending source review",
+  "contactInfo": {
+    "office": "Room GW.7, P.O. Box 12910, Austin, TX 78711",
+    "phone": "512-463-0486",
+    "email": "angie.button@house.texas.gov",
+    "website": "https://house.texas.gov/members/2510"
+  },
+  "bio": "Angie Button serves as State Representative for Texas House of Representatives District 112. This RepWatchr starter profile is sourced from official Texas Legislature profile data and OpenStates public records.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "TX",
+  "sourceLinks": [
+    {
+      "title": "Official Texas House of Representatives profile",
+      "url": "https://house.texas.gov/members/2510"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/main/data/tx/legislature/Angie-Chen-Button-2a9478ef-b573-4de6-ab96-bb3f6091346f.yml"
+    },
+    {
+      "title": "Official profile photo source",
+      "url": "https://house.texas.gov/images/members/2510.jpg?v=1"
+    }
+  ],
+  "lastVerifiedAt": "2026-04-27"
+}

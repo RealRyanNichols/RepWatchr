@@ -1,0 +1,44 @@
+{
+  "id": "charlene-ward-johnson",
+  "name": "Charlene Ward Johnson",
+  "firstName": "Charlene",
+  "lastName": "Ward Johnson",
+  "photo": "/images/officials/state-house/charlene-ward-johnson.jpg",
+  "photoSourceUrl": "https://www.house.texas.gov/images/members/4785.jpg?v=3",
+  "photoCredit": "Official Texas House of Representatives photo",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-139",
+  "jurisdiction": "Texas House of Representatives",
+  "county": [
+    "Texas"
+  ],
+  "termStart": "2025-01-14",
+  "termEnd": "Current legislative term pending source review",
+  "contactInfo": {
+    "office": "Room E2.320, P.O. Box 12910, Austin, TX 78711",
+    "phone": "512-463-0554",
+    "email": "charlene.wardjohnson@house.texas.gov",
+    "website": "https://www.house.texas.gov/members/139"
+  },
+  "bio": "Charlene Ward Johnson serves as State Representative for Texas House of Representatives District 139. This RepWatchr starter profile is sourced from official Texas Legislature profile data and OpenStates public records.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "TX",
+  "sourceLinks": [
+    {
+      "title": "Official Texas House of Representatives profile",
+      "url": "https://www.house.texas.gov/members/139"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/main/data/tx/legislature/Charlene-Ward-Johnson-e6ccd3a9-8f52-46d4-af8d-d0301a8e3a05.yml"
+    },
+    {
+      "title": "Official profile photo source",
+      "url": "https://www.house.texas.gov/images/members/4785.jpg?v=3"
+    }
+  ],
+  "lastVerifiedAt": "2026-04-27"
+}

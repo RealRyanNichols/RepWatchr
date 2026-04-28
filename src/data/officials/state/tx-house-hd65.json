@@ -1,0 +1,44 @@
+{
+  "id": "mitch-little",
+  "name": "Mitch Little",
+  "firstName": "Mitch",
+  "lastName": "Little",
+  "photo": "/images/officials/state-house/mitch-little.jpg",
+  "photoSourceUrl": "https://house.texas.gov/images/members/4615.jpg?v=1",
+  "photoCredit": "Official Texas House of Representatives photo",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-65",
+  "jurisdiction": "Texas House of Representatives",
+  "county": [
+    "Texas"
+  ],
+  "termStart": "2025-01-14",
+  "termEnd": "Current legislative term pending source review",
+  "contactInfo": {
+    "office": "Room E2.420, P.O. Box 12910, Austin, TX 78711",
+    "phone": "512-463-0478",
+    "email": "mitch.little@house.texas.gov",
+    "website": "https://house.texas.gov/members/4615"
+  },
+  "bio": "Mitch Little serves as State Representative for Texas House of Representatives District 65. This RepWatchr starter profile is sourced from official Texas Legislature profile data and OpenStates public records.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "TX",
+  "sourceLinks": [
+    {
+      "title": "Official Texas House of Representatives profile",
+      "url": "https://house.texas.gov/members/4615"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/main/data/tx/legislature/Mitch-Little-96dfe856-d5b0-4f7a-86f6-06c2175a4d4a.yml"
+    },
+    {
+      "title": "Official profile photo source",
+      "url": "https://house.texas.gov/images/members/4615.jpg?v=1"
+    }
+  ],
+  "lastVerifiedAt": "2026-04-27"
+}

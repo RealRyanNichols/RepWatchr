@@ -1,0 +1,44 @@
+{
+  "id": "brian-birdwell",
+  "name": "Brian Birdwell",
+  "firstName": "Brian",
+  "lastName": "Birdwell",
+  "photo": "/images/officials/state-senate/brian-birdwell.jpg",
+  "photoSourceUrl": "https://senate.texas.gov/members/d22/img/headshot.jpg",
+  "photoCredit": "Official Texas Senate photo",
+  "party": "R",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-22",
+  "jurisdiction": "Texas Senate",
+  "county": [
+    "Texas"
+  ],
+  "termStart": "2010-07-02",
+  "termEnd": "Current legislative term pending source review",
+  "contactInfo": {
+    "office": "Room 1E.3, P.O. Box 12068 Capitol Station, Austin, TX 78711",
+    "phone": "512-463-0122",
+    "email": "brian.birdwell@senate.texas.gov",
+    "website": "https://senate.texas.gov/member.php?d=22"
+  },
+  "bio": "Brian Birdwell serves as State Senator for Texas Senate District 22. This RepWatchr starter profile is sourced from official Texas Legislature profile data and OpenStates public records.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "TX",
+  "sourceLinks": [
+    {
+      "title": "Official Texas Senate profile",
+      "url": "https://senate.texas.gov/member.php?d=22"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/main/data/tx/legislature/Brian-Birdwell-44a23037-5ccd-4781-9e93-c4b950f74355.yml"
+    },
+    {
+      "title": "Official profile photo source",
+      "url": "https://senate.texas.gov/members/d22/img/headshot.jpg"
+    }
+  ],
+  "lastVerifiedAt": "2026-04-27"
+}

@@ -1,0 +1,44 @@
+{
+  "id": "matt-morgan",
+  "name": "Matt Morgan",
+  "firstName": "Matt",
+  "lastName": "Morgan",
+  "photo": "/images/officials/state-house/matt-morgan.jpg",
+  "photoSourceUrl": "https://www.house.texas.gov/images/members/4675.jpg?v=1",
+  "photoCredit": "Official Texas House of Representatives photo",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-26",
+  "jurisdiction": "Texas House of Representatives",
+  "county": [
+    "Texas"
+  ],
+  "termStart": "2025-01-14",
+  "termEnd": "Current legislative term pending source review",
+  "contactInfo": {
+    "office": "Room E2.802, P.O. Box 12910, Austin, TX 78711",
+    "phone": "512-463-0710",
+    "email": "matt.morgan@house.texas.gov",
+    "website": "https://www.house.texas.gov/members/26"
+  },
+  "bio": "Matt Morgan serves as State Representative for Texas House of Representatives District 26. This RepWatchr starter profile is sourced from official Texas Legislature profile data and OpenStates public records.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "TX",
+  "sourceLinks": [
+    {
+      "title": "Official Texas House of Representatives profile",
+      "url": "https://www.house.texas.gov/members/26"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/main/data/tx/legislature/Matt-Morgan-07951419-b5d5-430b-a3e6-678e1d4aec21.yml"
+    },
+    {
+      "title": "Official profile photo source",
+      "url": "https://www.house.texas.gov/images/members/4675.jpg?v=1"
+    }
+  ],
+  "lastVerifiedAt": "2026-04-27"
+}

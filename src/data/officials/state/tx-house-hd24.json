@@ -1,0 +1,44 @@
+{
+  "id": "greg-bonnen",
+  "name": "Greg Bonnen",
+  "firstName": "Greg",
+  "lastName": "Bonnen",
+  "photo": "/images/officials/state-house/greg-bonnen.jpg",
+  "photoSourceUrl": "https://house.texas.gov/images/members/2875.jpg?v=1",
+  "photoCredit": "Official Texas House of Representatives photo",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-24",
+  "jurisdiction": "Texas House of Representatives",
+  "county": [
+    "Texas"
+  ],
+  "termStart": "2013-01-08",
+  "termEnd": "Current legislative term pending source review",
+  "contactInfo": {
+    "office": "Room E2.502, P.O. Box 12910, Austin, TX 78711",
+    "phone": "512-463-0729",
+    "email": "greg.bonnen@house.texas.gov",
+    "website": "https://house.texas.gov/members/24"
+  },
+  "bio": "Greg Bonnen serves as State Representative for Texas House of Representatives District 24. This RepWatchr starter profile is sourced from official Texas Legislature profile data and OpenStates public records.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "TX",
+  "sourceLinks": [
+    {
+      "title": "Official Texas House of Representatives profile",
+      "url": "https://house.texas.gov/members/24"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/main/data/tx/legislature/Greg-Bonnen-d0fbfb15-2f0c-4167-b8b4-d6135bbb6616.yml"
+    },
+    {
+      "title": "Official profile photo source",
+      "url": "https://house.texas.gov/images/members/2875.jpg?v=1"
+    }
+  ],
+  "lastVerifiedAt": "2026-04-27"
+}

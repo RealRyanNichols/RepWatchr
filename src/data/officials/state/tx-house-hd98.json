@@ -1,0 +1,44 @@
+{
+  "id": "giovanni-capriglione",
+  "name": "Giovanni Capriglione",
+  "firstName": "Giovanni",
+  "lastName": "Capriglione",
+  "photo": "/images/officials/state-house/giovanni-capriglione.jpg",
+  "photoSourceUrl": "https://house.texas.gov/images/members/2345.jpg?v=1",
+  "photoCredit": "Official Texas House of Representatives photo",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-98",
+  "jurisdiction": "Texas House of Representatives",
+  "county": [
+    "Texas"
+  ],
+  "termStart": "2013-01-08",
+  "termEnd": "Current legislative term pending source review",
+  "contactInfo": {
+    "office": "Room E1.506, P.O. Box 12910, Austin, TX 78711",
+    "phone": "512-463-0690",
+    "email": "giovanni.capriglione@house.texas.gov",
+    "website": "https://house.texas.gov/members/98"
+  },
+  "bio": "Giovanni Capriglione serves as State Representative for Texas House of Representatives District 98. This RepWatchr starter profile is sourced from official Texas Legislature profile data and OpenStates public records.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "TX",
+  "sourceLinks": [
+    {
+      "title": "Official Texas House of Representatives profile",
+      "url": "https://house.texas.gov/members/98"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/main/data/tx/legislature/Giovanni-Capriglione-40ecf6ee-92a4-4daf-b950-ac70b6cdfeee.yml"
+    },
+    {
+      "title": "Official profile photo source",
+      "url": "https://house.texas.gov/images/members/2345.jpg?v=1"
+    }
+  ],
+  "lastVerifiedAt": "2026-04-27"
+}

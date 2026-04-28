@@ -1,0 +1,44 @@
+{
+  "id": "roland-gutierrez",
+  "name": "Roland Gutierrez",
+  "firstName": "Roland",
+  "lastName": "Gutierrez",
+  "photo": "/images/officials/state-senate/roland-gutierrez.jpg",
+  "photoSourceUrl": "https://senate.texas.gov/members/d19/img/Gutierrez_87-0522D-016-Web.jpg",
+  "photoCredit": "Official Texas Senate photo",
+  "party": "D",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-19",
+  "jurisdiction": "Texas Senate",
+  "county": [
+    "Texas"
+  ],
+  "termStart": "2021-01-12",
+  "termEnd": "Current legislative term pending source review",
+  "contactInfo": {
+    "office": "Room 3S.3, P.O. Box 12068 Capitol Station, Austin, TX 78711",
+    "phone": "512-463-0119",
+    "email": "roland.gutierrez@senate.texas.gov",
+    "website": "https://house.texas.gov/members/member-page/?district=119"
+  },
+  "bio": "Roland Gutierrez serves as State Senator for Texas Senate District 19. This RepWatchr starter profile is sourced from official Texas Legislature profile data and OpenStates public records.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "TX",
+  "sourceLinks": [
+    {
+      "title": "Official Texas Senate profile",
+      "url": "https://house.texas.gov/members/member-page/?district=119"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/main/data/tx/legislature/Roland-Gutierrez-68767ec3-151c-413f-aeb8-f35dd6c5f35c.yml"
+    },
+    {
+      "title": "Official profile photo source",
+      "url": "https://senate.texas.gov/members/d19/img/Gutierrez_87-0522D-016-Web.jpg"
+    }
+  ],
+  "lastVerifiedAt": "2026-04-27"
+}

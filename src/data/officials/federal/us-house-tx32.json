@@ -1,0 +1,45 @@
+{
+  "id": "julie-johnson",
+  "name": "Julie Johnson",
+  "firstName": "Julie",
+  "lastName": "Johnson",
+  "photo": "/images/officials/federal/julie-johnson.webp",
+  "photoSourceUrl": "https://juliejohnson.house.gov/sites/evo-subsites/juliejohnson.house.gov/files/styles/large/public/evo-media-image/juliejohnson.jpeg.webp?itok=-aQBRRwF",
+  "photoCredit": "Official congressional photo source",
+  "party": "D",
+  "level": "federal",
+  "position": "U.S. Representative",
+  "district": "TX-32",
+  "jurisdiction": "U.S. House of Representatives",
+  "county": [
+    "Texas"
+  ],
+  "termStart": "2025-01-03",
+  "termEnd": "2027-01-03",
+  "contactInfo": {
+    "office": "221 Cannon House Office Building",
+    "phone": "202-225-2231",
+    "email": "https://juliejohnson.house.gov",
+    "website": "https://juliejohnson.house.gov"
+  },
+  "bio": "Julie Johnson serves as the U.S. Representative for Texas's 32nd Congressional District. This RepWatchr starter profile is sourced from the official congressional record data and public profile links.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "TX",
+  "bioguideId": "J000310",
+  "sourceLinks": [
+    {
+      "title": "Official congressional website",
+      "url": "https://juliejohnson.house.gov"
+    },
+    {
+      "title": "Congress legislators current roster",
+      "url": "https://raw.githubusercontent.com/unitedstates/congress-legislators/master/legislators-current.yaml"
+    },
+    {
+      "title": "Congressional photo source",
+      "url": "https://juliejohnson.house.gov/sites/evo-subsites/juliejohnson.house.gov/files/styles/large/public/evo-media-image/juliejohnson.jpeg.webp?itok=-aQBRRwF"
+    }
+  ],
+  "lastVerifiedAt": "2026-04-27"
+}

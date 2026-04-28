@@ -1,0 +1,44 @@
+{
+  "id": "hillary-hickland",
+  "name": "Hillary Hickland",
+  "firstName": "Hillary",
+  "lastName": "Hickland",
+  "photo": "/images/officials/state-house/hillary-hickland.jpg",
+  "photoSourceUrl": "https://www.house.texas.gov/images/members/4520.jpg?v=1",
+  "photoCredit": "Official Texas House of Representatives photo",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-55",
+  "jurisdiction": "Texas House of Representatives",
+  "county": [
+    "Texas"
+  ],
+  "termStart": "2025-01-14",
+  "termEnd": "Current legislative term pending source review",
+  "contactInfo": {
+    "office": "Room E1.218, P.O. Box 12910, Austin, TX 78711",
+    "phone": "512-463-0630",
+    "email": "hillary.hickland@house.texas.gov",
+    "website": "https://www.house.texas.gov/members/55"
+  },
+  "bio": "Hillary Hickland serves as State Representative for Texas House of Representatives District 55. This RepWatchr starter profile is sourced from official Texas Legislature profile data and OpenStates public records.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "TX",
+  "sourceLinks": [
+    {
+      "title": "Official Texas House of Representatives profile",
+      "url": "https://www.house.texas.gov/members/55"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/main/data/tx/legislature/Hillary-Hickland-ef5a2ea8-61b0-484c-bbe1-b52c5ad2f075.yml"
+    },
+    {
+      "title": "Official profile photo source",
+      "url": "https://www.house.texas.gov/images/members/4520.jpg?v=1"
+    }
+  ],
+  "lastVerifiedAt": "2026-04-27"
+}

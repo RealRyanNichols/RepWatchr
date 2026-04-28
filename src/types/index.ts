@@ -21,12 +21,19 @@ export interface ContactInfo {
   };
 }
 
+export interface SourceLink {
+  title: string;
+  url: string;
+}
+
 export interface Official {
   id: string;
   name: string;
   firstName: string;
   lastName: string;
   photo?: string;
+  photoSourceUrl?: string;
+  photoCredit?: string;
   party: Party;
   level: GovernmentLevel;
   position: string;
@@ -38,6 +45,11 @@ export interface Official {
   contactInfo: ContactInfo;
   bio?: string;
   campaignPromises?: string[];
+  reviewStatus?: "needs_source_review" | "source_seeded" | "verified" | "complete";
+  state?: string;
+  bioguideId?: string;
+  sourceLinks?: SourceLink[];
+  lastVerifiedAt?: string;
 }
 
 export interface ScoredVote {
@@ -160,6 +172,66 @@ export interface RedFlag {
   date: string;
   sourceUrl: string;
   whyItMatters: string;
+}
+
+// ============================================================
+// Vote-Weighted Left/Right Ideology Profile
+// ============================================================
+
+export type IdeologyConfidence = "none" | "low" | "medium" | "high";
+export type IdeologyVoteDirection = "left" | "center" | "right";
+
+export interface IdeologyVoteEvidence {
+  billId: string;
+  billTitle: string;
+  date: string;
+  category: string;
+  officialVote: VoteChoice;
+  rightPosition: "yea" | "nay";
+  direction: IdeologyVoteDirection;
+  weight: number;
+  impact: number;
+  sourceUrl?: string;
+  rationale: string;
+}
+
+export interface OfficialProfileBuildout {
+  completionPercent: number;
+  hasPhoto: boolean;
+  hasBio: boolean;
+  hasPublicSources: boolean;
+  hasContactWebsite: boolean;
+  hasScorecard: boolean;
+  hasVoteRecord: boolean;
+  hasFundingSummary: boolean;
+  hasRedFlagReview: boolean;
+  hasNewsLinks: boolean;
+  hasIdeologyChart: boolean;
+  isComplete: boolean;
+  missingItems: string[];
+}
+
+export interface OfficialIdeologyProfile {
+  officialId: string;
+  name: string;
+  party: Party;
+  level: GovernmentLevel;
+  position: string;
+  jurisdiction: string;
+  district?: string;
+  ideologyScore: number | null;
+  ideologyLabel: string;
+  confidence: IdeologyConfidence;
+  method: string;
+  basis: string;
+  mappedVoteCount: number;
+  totalScorecardVotes: number;
+  rightVoteCount: number;
+  leftVoteCount: number;
+  centerVoteCount: number;
+  lastUpdated: string;
+  evidence: IdeologyVoteEvidence[];
+  buildout: OfficialProfileBuildout;
 }
 
 // ============================================================

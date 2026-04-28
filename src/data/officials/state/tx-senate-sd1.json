@@ -3,30 +3,42 @@
   "name": "Bryan Hughes",
   "firstName": "Bryan",
   "lastName": "Hughes",
+  "photo": "/images/officials/state-senate/bryan-hughes.jpg",
+  "photoSourceUrl": "https://senate.texas.gov/members/d01/img/Hughes_86-0702D-030-web.jpg",
+  "photoCredit": "Official Texas Senate photo",
   "party": "R",
   "level": "state",
   "position": "State Senator",
   "district": "SD-1",
   "jurisdiction": "Texas Senate",
-  "county": ["Smith", "Gregg", "Harrison", "Cherokee", "Nacogdoches", "Rusk", "Panola", "Upshur", "Wood", "Camp", "Morris", "Cass", "Marion", "Titus", "Franklin", "Hopkins"],
-  "termStart": "2023-01-10",
-  "termEnd": "2027-01-10",
+  "county": [
+    "Texas"
+  ],
+  "termStart": "2017-01-10",
+  "termEnd": "Current legislative term pending source review",
   "contactInfo": {
-    "office": "Texas Capitol Extension, Room E1.706, Austin, TX 78701",
-    "phone": "(512) 463-0101",
+    "office": "Room 3E.8, P.O. Box 12068 Capitol Station, Austin, TX 78711",
+    "phone": "512-463-0101",
     "email": "bryan.hughes@senate.texas.gov",
-    "website": "https://senate.texas.gov/member.php?d=1",
-    "socialMedia": {
-      "twitter": "https://twitter.com/SenBryanHughes",
-      "facebook": "https://facebook.com/SenatorBryanHughes"
-    }
+    "website": "https://senate.texas.gov/member.php?d=1"
   },
-  "bio": "Bryan Hughes represents Senate District 1 in the Texas Senate, covering much of East Texas including Tyler, Longview, and surrounding areas. A practicing attorney from Mineola, Hughes has served in the Texas Legislature since 2003, first in the House and then in the Senate since 2017. He chairs the Senate State Affairs Committee and is known for authoring major election integrity legislation.",
-  "campaignPromises": [
-    "Protect election integrity and secure voting systems",
-    "Eliminate property tax for Texas homeowners",
-    "Defend Second Amendment rights",
-    "Protect water rights for East Texas landowners",
-    "Support law enforcement and public safety"
-  ]
+  "bio": "Bryan Hughes serves as State Senator for Texas Senate District 1. This RepWatchr starter profile is sourced from official Texas Legislature profile data and OpenStates public records.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "TX",
+  "sourceLinks": [
+    {
+      "title": "Official Texas Senate profile",
+      "url": "https://senate.texas.gov/member.php?d=1"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/main/data/tx/legislature/Bryan-Hughes-8326538c-c907-43b2-a6db-76434036afd7.yml"
+    },
+    {
+      "title": "Official profile photo source",
+      "url": "https://senate.texas.gov/members/d01/img/Hughes_86-0702D-030-web.jpg"
+    }
+  ],
+  "lastVerifiedAt": "2026-04-27"
 }

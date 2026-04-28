@@ -1,0 +1,45 @@
+{
+  "id": "vicente-gonzalez",
+  "name": "Vicente Gonzalez",
+  "firstName": "Vicente",
+  "lastName": "Gonzalez",
+  "photo": "/images/officials/federal/vicente-gonzalez.jpg",
+  "photoSourceUrl": "https://unitedstates.github.io/images/congress/225x275/G000581.jpg",
+  "photoCredit": "UnitedStates project congressional image mirror",
+  "party": "D",
+  "level": "federal",
+  "position": "U.S. Representative",
+  "district": "TX-34",
+  "jurisdiction": "U.S. House of Representatives",
+  "county": [
+    "Texas"
+  ],
+  "termStart": "2025-01-03",
+  "termEnd": "2027-01-03",
+  "contactInfo": {
+    "office": "1201 Longworth House Office Building",
+    "phone": "202-225-2531",
+    "email": "https://gonzalez.house.gov",
+    "website": "https://gonzalez.house.gov"
+  },
+  "bio": "Vicente Gonzalez serves as the U.S. Representative for Texas's 34th Congressional District. This RepWatchr starter profile is sourced from the official congressional record data and public profile links.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "TX",
+  "bioguideId": "G000581",
+  "sourceLinks": [
+    {
+      "title": "Official congressional website",
+      "url": "https://gonzalez.house.gov"
+    },
+    {
+      "title": "Congress legislators current roster",
+      "url": "https://raw.githubusercontent.com/unitedstates/congress-legislators/master/legislators-current.yaml"
+    },
+    {
+      "title": "Congressional photo source",
+      "url": "https://unitedstates.github.io/images/congress/225x275/G000581.jpg"
+    }
+  ],
+  "lastVerifiedAt": "2026-04-27"
+}

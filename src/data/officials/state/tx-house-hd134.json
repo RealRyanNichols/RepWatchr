@@ -1,0 +1,44 @@
+{
+  "id": "ann-johnson",
+  "name": "Ann Johnson",
+  "firstName": "Ann",
+  "lastName": "Johnson",
+  "photo": "/images/officials/state-house/ann-johnson.jpg",
+  "photoSourceUrl": "https://house.texas.gov/images/members/3985.jpg?v=1",
+  "photoCredit": "Official Texas House of Representatives photo",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-134",
+  "jurisdiction": "Texas House of Representatives",
+  "county": [
+    "Texas"
+  ],
+  "termStart": "2021-01-12",
+  "termEnd": "Current legislative term pending source review",
+  "contactInfo": {
+    "office": "Room E2.718, P.O. Box 12910, Austin, TX 78711",
+    "phone": "512-463-0389",
+    "email": "ann.johnson@house.texas.gov",
+    "website": "https://house.texas.gov/members/134"
+  },
+  "bio": "Ann Johnson serves as State Representative for Texas House of Representatives District 134. This RepWatchr starter profile is sourced from official Texas Legislature profile data and OpenStates public records.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "TX",
+  "sourceLinks": [
+    {
+      "title": "Official Texas House of Representatives profile",
+      "url": "https://house.texas.gov/members/134"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/main/data/tx/legislature/Ann-Johnson-45f3ddfb-5994-4f05-b2c8-e0e3b2a99c47.yml"
+    },
+    {
+      "title": "Official profile photo source",
+      "url": "https://house.texas.gov/images/members/3985.jpg?v=1"
+    }
+  ],
+  "lastVerifiedAt": "2026-04-27"
+}

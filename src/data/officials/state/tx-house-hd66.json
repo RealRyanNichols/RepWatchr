@@ -1,0 +1,44 @@
+{
+  "id": "matt-shaheen",
+  "name": "Matt Shaheen",
+  "firstName": "Matt",
+  "lastName": "Shaheen",
+  "photo": "/images/officials/state-house/matt-shaheen.jpg",
+  "photoSourceUrl": "https://house.texas.gov/images/members/2995.jpg?v=1",
+  "photoCredit": "Official Texas House of Representatives photo",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-66",
+  "jurisdiction": "Texas House of Representatives",
+  "county": [
+    "Texas"
+  ],
+  "termStart": "2015-01-13",
+  "termEnd": "Current legislative term pending source review",
+  "contactInfo": {
+    "office": "Room GS.6, P.O. Box 12910, Austin, TX 78711",
+    "phone": "512-463-0594",
+    "email": "matt.shaheen@house.texas.gov",
+    "website": "https://house.texas.gov/members/66"
+  },
+  "bio": "Matt Shaheen serves as State Representative for Texas House of Representatives District 66. This RepWatchr starter profile is sourced from official Texas Legislature profile data and OpenStates public records.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "TX",
+  "sourceLinks": [
+    {
+      "title": "Official Texas House of Representatives profile",
+      "url": "https://house.texas.gov/members/66"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/main/data/tx/legislature/Matt-Shaheen-71555c46-28b0-4887-98a1-997dc7482e75.yml"
+    },
+    {
+      "title": "Official profile photo source",
+      "url": "https://house.texas.gov/images/members/2995.jpg?v=1"
+    }
+  ],
+  "lastVerifiedAt": "2026-04-27"
+}

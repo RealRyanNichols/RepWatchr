@@ -1,0 +1,44 @@
+{
+  "id": "borris-miles",
+  "name": "Borris Miles",
+  "firstName": "Borris",
+  "lastName": "Miles",
+  "photo": "/images/officials/state-senate/borris-miles.jpg",
+  "photoSourceUrl": "https://senate.texas.gov/members/d13/img/Sen-Miles-2025-Headshot-web.jpg",
+  "photoCredit": "Official Texas Senate photo",
+  "party": "D",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-13",
+  "jurisdiction": "Texas Senate",
+  "county": [
+    "Texas"
+  ],
+  "termStart": "2017-01-10",
+  "termEnd": "Current legislative term pending source review",
+  "contactInfo": {
+    "office": "Room 3E.12, P.O. Box 12068 Capitol Station, Austin, TX 78711",
+    "phone": "512-463-0113",
+    "email": "borris.miles@senate.texas.gov",
+    "website": "https://senate.texas.gov/member.php?d=13"
+  },
+  "bio": "Borris Miles serves as State Senator for Texas Senate District 13. This RepWatchr starter profile is sourced from official Texas Legislature profile data and OpenStates public records.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "TX",
+  "sourceLinks": [
+    {
+      "title": "Official Texas Senate profile",
+      "url": "https://senate.texas.gov/member.php?d=13"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/main/data/tx/legislature/Borris-L-Miles-3475b324-1c9b-4513-90e6-063aba5ac04e.yml"
+    },
+    {
+      "title": "Official profile photo source",
+      "url": "https://senate.texas.gov/members/d13/img/Sen-Miles-2025-Headshot-web.jpg"
+    }
+  ],
+  "lastVerifiedAt": "2026-04-27"
+}

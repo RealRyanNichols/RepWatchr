@@ -1,0 +1,44 @@
+{
+  "id": "janie-lopez",
+  "name": "Janie Lopez",
+  "firstName": "Janie",
+  "lastName": "Lopez",
+  "photo": "/images/officials/state-house/janie-lopez.jpg",
+  "photoSourceUrl": "https://house.texas.gov/images/members/4295.jpg?v=2",
+  "photoCredit": "Official Texas House of Representatives photo",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-37",
+  "jurisdiction": "Texas House of Representatives",
+  "county": [
+    "Texas"
+  ],
+  "termStart": "2023-01-10",
+  "termEnd": "Current legislative term pending source review",
+  "contactInfo": {
+    "office": "Room E1.422, P.O. Box 12910, Austin, TX 78711",
+    "phone": "512-463-0640",
+    "email": "janie.lopez@house.texas.gov",
+    "website": "https://house.texas.gov/members/37"
+  },
+  "bio": "Janie Lopez serves as State Representative for Texas House of Representatives District 37. This RepWatchr starter profile is sourced from official Texas Legislature profile data and OpenStates public records.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "TX",
+  "sourceLinks": [
+    {
+      "title": "Official Texas House of Representatives profile",
+      "url": "https://house.texas.gov/members/37"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/main/data/tx/legislature/Janie-Lopez-a732704e-9b03-449c-b24f-f4c567b5acdd.yml"
+    },
+    {
+      "title": "Official profile photo source",
+      "url": "https://house.texas.gov/images/members/4295.jpg?v=2"
+    }
+  ],
+  "lastVerifiedAt": "2026-04-27"
+}

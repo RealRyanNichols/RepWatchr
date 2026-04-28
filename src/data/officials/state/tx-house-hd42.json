@@ -1,0 +1,44 @@
+{
+  "id": "richard-raymond",
+  "name": "Richard Raymond",
+  "firstName": "Richard",
+  "lastName": "Raymond",
+  "photo": "/images/officials/state-house/richard-raymond.jpg",
+  "photoSourceUrl": "https://house.texas.gov/images/members/4215.jpg?v=1",
+  "photoCredit": "Official Texas House of Representatives photo",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-42",
+  "jurisdiction": "Texas House of Representatives",
+  "county": [
+    "Texas"
+  ],
+  "termStart": "2021-01-24",
+  "termEnd": "Current legislative term pending source review",
+  "contactInfo": {
+    "office": "Room 1W.2, P.O. Box 12910, Austin, TX 78711",
+    "phone": "512-463-0558",
+    "email": "richard.raymond@house.texas.gov",
+    "website": "https://house.texas.gov/members/4215"
+  },
+  "bio": "Richard Raymond serves as State Representative for Texas House of Representatives District 42. This RepWatchr starter profile is sourced from official Texas Legislature profile data and OpenStates public records.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "TX",
+  "sourceLinks": [
+    {
+      "title": "Official Texas House of Representatives profile",
+      "url": "https://house.texas.gov/members/4215"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/main/data/tx/legislature/Richard-Pea-Raymond-d4a94a68-02a7-44c0-901f-9cd57350229a.yml"
+    },
+    {
+      "title": "Official profile photo source",
+      "url": "https://house.texas.gov/images/members/4215.jpg?v=1"
+    }
+  ],
+  "lastVerifiedAt": "2026-04-27"
+}

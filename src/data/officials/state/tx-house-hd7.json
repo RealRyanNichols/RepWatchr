@@ -3,30 +3,42 @@
   "name": "Jay Dean",
   "firstName": "Jay",
   "lastName": "Dean",
+  "photo": "/images/officials/state-house/jay-dean.jpg",
+  "photoSourceUrl": "https://house.texas.gov/images/members/3515.jpg?v=1",
+  "photoCredit": "Official Texas House of Representatives photo",
   "party": "R",
   "level": "state",
   "position": "State Representative",
   "district": "HD-7",
   "jurisdiction": "Texas House of Representatives",
-  "county": ["Gregg", "Upshur"],
-  "termStart": "2023-01-10",
-  "termEnd": "2027-01-10",
+  "county": [
+    "Texas"
+  ],
+  "termStart": "2017-01-10",
+  "termEnd": "Current legislative term pending source review",
   "contactInfo": {
-    "office": "Texas Capitol Extension, Room E2.412, Austin, TX 78701",
-    "phone": "(512) 463-0750",
+    "office": "Room GN.11, P.O. Box 12910, Austin, TX 78711",
+    "phone": "512-463-0750",
     "email": "jay.dean@house.texas.gov",
-    "website": "https://house.texas.gov/members/member-page/?district=7",
-    "socialMedia": {
-      "twitter": "https://twitter.com/JayDeanTX7",
-      "facebook": "https://facebook.com/RepJayDean"
-    }
+    "website": "https://house.texas.gov/members/3515"
   },
-  "bio": "Jay Dean represents House District 7 in the Texas House of Representatives, covering the Longview area including Gregg and Upshur counties. He has served in the Texas Legislature since 2019 and focuses on property rights, local control, and supporting East Texas industry and energy production.",
-  "campaignPromises": [
-    "Lower property taxes for East Texas homeowners",
-    "Protect private property rights and oppose eminent domain abuse",
-    "Support East Texas oil and gas industry",
-    "Improve rural broadband access in East Texas",
-    "Strengthen border security through state-level action"
-  ]
+  "bio": "Jay Dean serves as State Representative for Texas House of Representatives District 7. This RepWatchr starter profile is sourced from official Texas Legislature profile data and OpenStates public records.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "TX",
+  "sourceLinks": [
+    {
+      "title": "Official Texas House of Representatives profile",
+      "url": "https://house.texas.gov/members/3515"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/main/data/tx/legislature/Jay-Dean-37886d81-901f-43b4-841b-f3ffbfeeb257.yml"
+    },
+    {
+      "title": "Official profile photo source",
+      "url": "https://house.texas.gov/images/members/3515.jpg?v=1"
+    }
+  ],
+  "lastVerifiedAt": "2026-04-27"
 }

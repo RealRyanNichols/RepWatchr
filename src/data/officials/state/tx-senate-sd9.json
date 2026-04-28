@@ -1,0 +1,44 @@
+{
+  "id": "taylor-rehmet",
+  "name": "Taylor Rehmet",
+  "firstName": "Taylor",
+  "lastName": "Rehmet",
+  "photo": "/images/officials/state-senate/taylor-rehmet.jpg",
+  "photoSourceUrl": "https://senate.texas.gov/members/d09/img/Rehmet-89-0739D-017-web.jpg",
+  "photoCredit": "Official Texas Senate photo",
+  "party": "D",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-9",
+  "jurisdiction": "Texas Senate",
+  "county": [
+    "Texas"
+  ],
+  "termStart": "2026-02-19",
+  "termEnd": "Current legislative term pending source review",
+  "contactInfo": {
+    "office": "P.O. Box 12068 Capitol Station, Austin, TX 78711",
+    "phone": "512-463-0109",
+    "email": "taylor.rehmet@senate.texas.gov",
+    "website": "https://senate.texas.gov/member.php?d=9"
+  },
+  "bio": "Taylor Rehmet serves as State Senator for Texas Senate District 9. This RepWatchr starter profile is sourced from official Texas Legislature profile data and OpenStates public records.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "TX",
+  "sourceLinks": [
+    {
+      "title": "Official Texas Senate profile",
+      "url": "https://senate.texas.gov/member.php?d=9"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/main/data/tx/legislature/Taylor-Rehmet-9647d335-a650-4aa7-b11f-973c4e86b5a6.yml"
+    },
+    {
+      "title": "Official profile photo source",
+      "url": "https://senate.texas.gov/members/d09/img/Rehmet-89-0739D-017-web.jpg"
+    }
+  ],
+  "lastVerifiedAt": "2026-04-27"
+}

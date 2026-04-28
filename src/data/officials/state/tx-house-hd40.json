@@ -1,0 +1,44 @@
+{
+  "id": "terry-canales",
+  "name": "Terry Canales",
+  "firstName": "Terry",
+  "lastName": "Canales",
+  "photo": "/images/officials/state-house/terry-canales.jpg",
+  "photoSourceUrl": "https://house.texas.gov/images/members/2340.jpg",
+  "photoCredit": "Official Texas House of Representatives photo",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-40",
+  "jurisdiction": "Texas House of Representatives",
+  "county": [
+    "Texas"
+  ],
+  "termStart": "2013-01-08",
+  "termEnd": "Current legislative term pending source review",
+  "contactInfo": {
+    "office": "Room 4S.4, P.O. Box 12910, Austin, TX 78711",
+    "phone": "512-463-0426",
+    "email": "terry.canales@house.texas.gov",
+    "website": "https://house.texas.gov/members/2340"
+  },
+  "bio": "Terry Canales serves as State Representative for Texas House of Representatives District 40. This RepWatchr starter profile is sourced from official Texas Legislature profile data and OpenStates public records.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "TX",
+  "sourceLinks": [
+    {
+      "title": "Official Texas House of Representatives profile",
+      "url": "https://house.texas.gov/members/2340"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/main/data/tx/legislature/Terry-Canales-3e4ae7d4-dbb2-4991-8b44-8ada6023d7da.yml"
+    },
+    {
+      "title": "Official profile photo source",
+      "url": "https://house.texas.gov/images/members/2340.jpg"
+    }
+  ],
+  "lastVerifiedAt": "2026-04-27"
+}

@@ -1,0 +1,44 @@
+{
+  "id": "candy-noble",
+  "name": "Candy Noble",
+  "firstName": "Candy",
+  "lastName": "Noble",
+  "photo": "/images/officials/state-house/candy-noble.jpg",
+  "photoSourceUrl": "https://house.texas.gov/images/members/3740.jpg?v=1",
+  "photoCredit": "Official Texas House of Representatives photo",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-89",
+  "jurisdiction": "Texas House of Representatives",
+  "county": [
+    "Texas"
+  ],
+  "termStart": "2019-01-08",
+  "termEnd": "Current legislative term pending source review",
+  "contactInfo": {
+    "office": "Room E1.508, P.O. Box 12910, Austin, TX 78711",
+    "phone": "512-463-0186",
+    "email": "candy.noble@house.texas.gov",
+    "website": "https://house.texas.gov/members/3740"
+  },
+  "bio": "Candy Noble serves as State Representative for Texas House of Representatives District 89. This RepWatchr starter profile is sourced from official Texas Legislature profile data and OpenStates public records.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "TX",
+  "sourceLinks": [
+    {
+      "title": "Official Texas House of Representatives profile",
+      "url": "https://house.texas.gov/members/3740"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/main/data/tx/legislature/Candy-Noble-f4976334-0e0e-4474-b5b4-3264e8d73f1d.yml"
+    },
+    {
+      "title": "Official profile photo source",
+      "url": "https://house.texas.gov/images/members/3740.jpg?v=1"
+    }
+  ],
+  "lastVerifiedAt": "2026-04-27"
+}

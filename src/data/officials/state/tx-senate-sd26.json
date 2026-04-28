@@ -1,0 +1,44 @@
+{
+  "id": "jos-men-ndez",
+  "name": "José Menéndez",
+  "firstName": "José",
+  "lastName": "Menéndez",
+  "photo": "/images/officials/state-senate/jos-men-ndez.jpg",
+  "photoSourceUrl": "https://senate.texas.gov/members/d26/img/headshot.jpg",
+  "photoCredit": "Official Texas Senate photo",
+  "party": "D",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-26",
+  "jurisdiction": "Texas Senate",
+  "county": [
+    "Texas"
+  ],
+  "termStart": "2015-03-04",
+  "termEnd": "Current legislative term pending source review",
+  "contactInfo": {
+    "office": "Room E1.610, P.O. Box 12068 Capitol Station, Austin, TX 78711",
+    "phone": "512-463-0126",
+    "email": "jose.menendez@senate.texas.gov",
+    "website": "https://senate.texas.gov/member.php?d=26"
+  },
+  "bio": "José Menéndez serves as State Senator for Texas Senate District 26. This RepWatchr starter profile is sourced from official Texas Legislature profile data and OpenStates public records.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "TX",
+  "sourceLinks": [
+    {
+      "title": "Official Texas Senate profile",
+      "url": "https://senate.texas.gov/member.php?d=26"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/main/data/tx/legislature/Jos-Menndez-8bb90ee9-e764-44da-b27f-b5bc3cdb394e.yml"
+    },
+    {
+      "title": "Official profile photo source",
+      "url": "https://senate.texas.gov/members/d26/img/headshot.jpg"
+    }
+  ],
+  "lastVerifiedAt": "2026-04-27"
+}

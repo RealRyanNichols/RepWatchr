@@ -1,0 +1,44 @@
+{
+  "id": "carl-tepper",
+  "name": "Carl Tepper",
+  "firstName": "Carl",
+  "lastName": "Tepper",
+  "photo": "/images/officials/state-house/carl-tepper.jpg",
+  "photoSourceUrl": "https://house.texas.gov/images/members/4360.jpg?v=1",
+  "photoCredit": "Official Texas House of Representatives photo",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-84",
+  "jurisdiction": "Texas House of Representatives",
+  "county": [
+    "Texas"
+  ],
+  "termStart": "2023-01-10",
+  "termEnd": "Current legislative term pending source review",
+  "contactInfo": {
+    "office": "Room E1.316, P.O. Box 12910, Austin, TX 78711",
+    "phone": "512-463-0676",
+    "email": "carl.tepper@house.texas.gov",
+    "website": "https://house.texas.gov/members/4360"
+  },
+  "bio": "Carl Tepper serves as State Representative for Texas House of Representatives District 84. This RepWatchr starter profile is sourced from official Texas Legislature profile data and OpenStates public records.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "TX",
+  "sourceLinks": [
+    {
+      "title": "Official Texas House of Representatives profile",
+      "url": "https://house.texas.gov/members/4360"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/main/data/tx/legislature/Carl-H-Tepper-8f7f161e-6ef4-4c12-8eea-de88a313b36c.yml"
+    },
+    {
+      "title": "Official profile photo source",
+      "url": "https://house.texas.gov/images/members/4360.jpg?v=1"
+    }
+  ],
+  "lastVerifiedAt": "2026-04-27"
+}

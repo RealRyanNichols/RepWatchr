@@ -1,0 +1,44 @@
+{
+  "id": "toni-rose",
+  "name": "Toni Rose",
+  "firstName": "Toni",
+  "lastName": "Rose",
+  "photo": "/images/officials/state-house/toni-rose.jpg",
+  "photoSourceUrl": "https://house.texas.gov/images/members/2555.jpg?v=3",
+  "photoCredit": "Official Texas House of Representatives photo",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-110",
+  "jurisdiction": "Texas House of Representatives",
+  "county": [
+    "Texas"
+  ],
+  "termStart": "2013-01-08",
+  "termEnd": "Current legislative term pending source review",
+  "contactInfo": {
+    "office": "Room 4N.5, P.O. Box 12910, Austin, TX 78711",
+    "phone": "512-463-0664",
+    "email": "toni.rose@house.texas.gov",
+    "website": "https://house.texas.gov/members/2555"
+  },
+  "bio": "Toni Rose serves as State Representative for Texas House of Representatives District 110. This RepWatchr starter profile is sourced from official Texas Legislature profile data and OpenStates public records.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "TX",
+  "sourceLinks": [
+    {
+      "title": "Official Texas House of Representatives profile",
+      "url": "https://house.texas.gov/members/2555"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/main/data/tx/legislature/Toni-Rose-0acfbb85-b501-45ce-9a9b-90537090a455.yml"
+    },
+    {
+      "title": "Official profile photo source",
+      "url": "https://house.texas.gov/images/members/2555.jpg?v=3"
+    }
+  ],
+  "lastVerifiedAt": "2026-04-27"
+}

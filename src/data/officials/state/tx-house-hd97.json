@@ -1,0 +1,44 @@
+{
+  "id": "john-mcqueeney",
+  "name": "John McQueeney",
+  "firstName": "John",
+  "lastName": "McQueeney",
+  "photo": "/images/officials/state-house/john-mcqueeney.jpg",
+  "photoSourceUrl": "https://www.house.texas.gov/images/members/4665.jpg?v=1",
+  "photoCredit": "Official Texas House of Representatives photo",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-97",
+  "jurisdiction": "Texas House of Representatives",
+  "county": [
+    "Texas"
+  ],
+  "termStart": "2025-01-14",
+  "termEnd": "Current legislative term pending source review",
+  "contactInfo": {
+    "office": "Room E2.720, P.O. Box 12910, Austin, TX 78711",
+    "phone": "512-463-0608",
+    "email": "john.mcqueeney@house.texas.gov",
+    "website": "https://www.house.texas.gov/members/97"
+  },
+  "bio": "John McQueeney serves as State Representative for Texas House of Representatives District 97. This RepWatchr starter profile is sourced from official Texas Legislature profile data and OpenStates public records.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "TX",
+  "sourceLinks": [
+    {
+      "title": "Official Texas House of Representatives profile",
+      "url": "https://www.house.texas.gov/members/97"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/main/data/tx/legislature/John-McQueeney-f926d7a8-7ec7-4020-9e18-5a475565fd41.yml"
+    },
+    {
+      "title": "Official profile photo source",
+      "url": "https://www.house.texas.gov/images/members/4665.jpg?v=1"
+    }
+  ],
+  "lastVerifiedAt": "2026-04-27"
+}

@@ -1,0 +1,44 @@
+{
+  "id": "rhetta-bowers",
+  "name": "Rhetta Bowers",
+  "firstName": "Rhetta",
+  "lastName": "Bowers",
+  "photo": "/images/officials/state-house/rhetta-bowers.jpg",
+  "photoSourceUrl": "https://house.texas.gov/images/members/3565.jpg?v=1",
+  "photoCredit": "Official Texas House of Representatives photo",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-113",
+  "jurisdiction": "Texas House of Representatives",
+  "county": [
+    "Texas"
+  ],
+  "termStart": "2019-01-08",
+  "termEnd": "Current legislative term pending source review",
+  "contactInfo": {
+    "office": "Room E2.214, P.O. Box 12910, Austin, TX 78711",
+    "phone": "512-463-0464",
+    "email": "rhetta.bowers@house.texas.gov",
+    "website": "https://house.texas.gov/members/3565"
+  },
+  "bio": "Rhetta Bowers serves as State Representative for Texas House of Representatives District 113. This RepWatchr starter profile is sourced from official Texas Legislature profile data and OpenStates public records.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "TX",
+  "sourceLinks": [
+    {
+      "title": "Official Texas House of Representatives profile",
+      "url": "https://house.texas.gov/members/3565"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/main/data/tx/legislature/Rhetta-Bowers-69ef7d69-9a5e-42be-b463-8873cb52ad10.yml"
+    },
+    {
+      "title": "Official profile photo source",
+      "url": "https://house.texas.gov/images/members/3565.jpg?v=1"
+    }
+  ],
+  "lastVerifiedAt": "2026-04-27"
+}

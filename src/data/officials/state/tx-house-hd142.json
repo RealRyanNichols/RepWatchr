@@ -1,0 +1,44 @@
+{
+  "id": "harold-dutton",
+  "name": "Harold Dutton",
+  "firstName": "Harold",
+  "lastName": "Dutton",
+  "photo": "/images/officials/state-house/harold-dutton.jpg",
+  "photoSourceUrl": "https://house.texas.gov/images/members/2650.jpg?v=3",
+  "photoCredit": "Official Texas House of Representatives photo",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-142",
+  "jurisdiction": "Texas House of Representatives",
+  "county": [
+    "Texas"
+  ],
+  "termStart": "1985-01-08",
+  "termEnd": "Current legislative term pending source review",
+  "contactInfo": {
+    "office": "Room 3N.5, P.O. Box 12910, Austin, TX 78711",
+    "phone": "512-463-0510",
+    "email": "harold.dutton@house.texas.gov",
+    "website": "https://house.texas.gov/members/2650"
+  },
+  "bio": "Harold Dutton serves as State Representative for Texas House of Representatives District 142. This RepWatchr starter profile is sourced from official Texas Legislature profile data and OpenStates public records.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "TX",
+  "sourceLinks": [
+    {
+      "title": "Official Texas House of Representatives profile",
+      "url": "https://house.texas.gov/members/2650"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/main/data/tx/legislature/Harold-V-Dutton-Jr-85d064ed-6f3d-4a81-93ee-1baf49c7f2c3.yml"
+    },
+    {
+      "title": "Official profile photo source",
+      "url": "https://house.texas.gov/images/members/2650.jpg?v=3"
+    }
+  ],
+  "lastVerifiedAt": "2026-04-27"
+}

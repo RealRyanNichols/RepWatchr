@@ -1,0 +1,45 @@
+{
+  "id": "craig-a-goldman",
+  "name": "Craig A. Goldman",
+  "firstName": "Craig",
+  "lastName": "Goldman",
+  "photo": "/images/officials/federal/craig-a-goldman.png",
+  "photoSourceUrl": "https://craiggoldman.house.gov/sites/evo-subsites/craiggoldman.house.gov/files/evo-media-image/craiggoldman.png",
+  "photoCredit": "Official congressional photo source",
+  "party": "R",
+  "level": "federal",
+  "position": "U.S. Representative",
+  "district": "TX-12",
+  "jurisdiction": "U.S. House of Representatives",
+  "county": [
+    "Texas"
+  ],
+  "termStart": "2025-01-03",
+  "termEnd": "2027-01-03",
+  "contactInfo": {
+    "office": "1716 Longworth House Office Building",
+    "phone": "202-225-5071",
+    "email": "https://craiggoldman.house.gov",
+    "website": "https://craiggoldman.house.gov"
+  },
+  "bio": "Craig A. Goldman serves as the U.S. Representative for Texas's 12th Congressional District. This RepWatchr starter profile is sourced from the official congressional record data and public profile links.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "TX",
+  "bioguideId": "G000601",
+  "sourceLinks": [
+    {
+      "title": "Official congressional website",
+      "url": "https://craiggoldman.house.gov"
+    },
+    {
+      "title": "Congress legislators current roster",
+      "url": "https://raw.githubusercontent.com/unitedstates/congress-legislators/master/legislators-current.yaml"
+    },
+    {
+      "title": "Congressional photo source",
+      "url": "https://craiggoldman.house.gov/sites/evo-subsites/craiggoldman.house.gov/files/evo-media-image/craiggoldman.png"
+    }
+  ],
+  "lastVerifiedAt": "2026-04-27"
+}

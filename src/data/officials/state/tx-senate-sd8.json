@@ -1,0 +1,44 @@
+{
+  "id": "angela-paxton",
+  "name": "Angela Paxton",
+  "firstName": "Angela",
+  "lastName": "Paxton",
+  "photo": "/images/officials/state-senate/angela-paxton.jpg",
+  "photoSourceUrl": "https://senate.texas.gov/members/d08/img/Paxton_2019.jpg",
+  "photoCredit": "Official Texas Senate photo",
+  "party": "R",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-8",
+  "jurisdiction": "Texas Senate",
+  "county": [
+    "Texas"
+  ],
+  "termStart": "2019-01-08",
+  "termEnd": "Current legislative term pending source review",
+  "contactInfo": {
+    "office": "Room 3E.10, P.O. Box 12068 Capitol Station, Austin, TX 78711",
+    "phone": "512-463-0108",
+    "email": "angela.paxton@senate.texas.gov",
+    "website": "https://senate.texas.gov/member.php?d=8"
+  },
+  "bio": "Angela Paxton serves as State Senator for Texas Senate District 8. This RepWatchr starter profile is sourced from official Texas Legislature profile data and OpenStates public records.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "TX",
+  "sourceLinks": [
+    {
+      "title": "Official Texas Senate profile",
+      "url": "https://senate.texas.gov/member.php?d=8"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/main/data/tx/legislature/Angela-Paxton-895887ba-73cd-4321-827d-bb06d4eedfdf.yml"
+    },
+    {
+      "title": "Official profile photo source",
+      "url": "https://senate.texas.gov/members/d08/img/Paxton_2019.jpg"
+    }
+  ],
+  "lastVerifiedAt": "2026-04-27"
+}

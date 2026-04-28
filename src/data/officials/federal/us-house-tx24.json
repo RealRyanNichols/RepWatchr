@@ -1,0 +1,45 @@
+{
+  "id": "beth-van-duyne",
+  "name": "Beth Van Duyne",
+  "firstName": "Beth",
+  "lastName": "Van Duyne",
+  "photo": "/images/officials/federal/beth-van-duyne.jpg",
+  "photoSourceUrl": "https://unitedstates.github.io/images/congress/225x275/V000134.jpg",
+  "photoCredit": "UnitedStates project congressional image mirror",
+  "party": "R",
+  "level": "federal",
+  "position": "U.S. Representative",
+  "district": "TX-24",
+  "jurisdiction": "U.S. House of Representatives",
+  "county": [
+    "Texas"
+  ],
+  "termStart": "2025-01-03",
+  "termEnd": "2027-01-03",
+  "contactInfo": {
+    "office": "1725 Longworth House Office Building",
+    "phone": "202-225-6605",
+    "email": "https://vanduyne.house.gov",
+    "website": "https://vanduyne.house.gov"
+  },
+  "bio": "Beth Van Duyne serves as the U.S. Representative for Texas's 24th Congressional District. This RepWatchr starter profile is sourced from the official congressional record data and public profile links.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "TX",
+  "bioguideId": "V000134",
+  "sourceLinks": [
+    {
+      "title": "Official congressional website",
+      "url": "https://vanduyne.house.gov"
+    },
+    {
+      "title": "Congress legislators current roster",
+      "url": "https://raw.githubusercontent.com/unitedstates/congress-legislators/master/legislators-current.yaml"
+    },
+    {
+      "title": "Congressional photo source",
+      "url": "https://unitedstates.github.io/images/congress/225x275/V000134.jpg"
+    }
+  ],
+  "lastVerifiedAt": "2026-04-27"
+}

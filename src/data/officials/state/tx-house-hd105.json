@@ -1,0 +1,44 @@
+{
+  "id": "terry-meza",
+  "name": "Terry Meza",
+  "firstName": "Terry",
+  "lastName": "Meza",
+  "photo": "/images/officials/state-house/terry-meza.jpg",
+  "photoSourceUrl": "https://house.texas.gov/images/members/3455.jpg?v=1",
+  "photoCredit": "Official Texas House of Representatives photo",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-105",
+  "jurisdiction": "Texas House of Representatives",
+  "county": [
+    "Texas"
+  ],
+  "termStart": "2019-01-08",
+  "termEnd": "Current legislative term pending source review",
+  "contactInfo": {
+    "office": "Room E1.204, P.O. Box 12910, Austin, TX 78711",
+    "phone": "512-463-0641",
+    "email": "terry.meza@house.texas.gov",
+    "website": "https://house.texas.gov/members/3455"
+  },
+  "bio": "Terry Meza serves as State Representative for Texas House of Representatives District 105. This RepWatchr starter profile is sourced from official Texas Legislature profile data and OpenStates public records.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "TX",
+  "sourceLinks": [
+    {
+      "title": "Official Texas House of Representatives profile",
+      "url": "https://house.texas.gov/members/3455"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/main/data/tx/legislature/Thresa-Terry-Meza-bdecc388-4028-48e2-b211-75c59c1c5ec2.yml"
+    },
+    {
+      "title": "Official profile photo source",
+      "url": "https://house.texas.gov/images/members/3455.jpg?v=1"
+    }
+  ],
+  "lastVerifiedAt": "2026-04-27"
+}

@@ -1,0 +1,45 @@
+{
+  "id": "brian-babin",
+  "name": "Brian Babin",
+  "firstName": "Brian",
+  "lastName": "Babin",
+  "photo": "/images/officials/federal/brian-babin.jpg",
+  "photoSourceUrl": "https://unitedstates.github.io/images/congress/225x275/B001291.jpg",
+  "photoCredit": "UnitedStates project congressional image mirror",
+  "party": "R",
+  "level": "federal",
+  "position": "U.S. Representative",
+  "district": "TX-36",
+  "jurisdiction": "U.S. House of Representatives",
+  "county": [
+    "Texas"
+  ],
+  "termStart": "2025-01-03",
+  "termEnd": "2027-01-03",
+  "contactInfo": {
+    "office": "2236 Rayburn House Office Building",
+    "phone": "202-225-1555",
+    "email": "https://babin.house.gov",
+    "website": "https://babin.house.gov"
+  },
+  "bio": "Brian Babin serves as the U.S. Representative for Texas's 36th Congressional District. This RepWatchr starter profile is sourced from the official congressional record data and public profile links.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "TX",
+  "bioguideId": "B001291",
+  "sourceLinks": [
+    {
+      "title": "Official congressional website",
+      "url": "https://babin.house.gov"
+    },
+    {
+      "title": "Congress legislators current roster",
+      "url": "https://raw.githubusercontent.com/unitedstates/congress-legislators/master/legislators-current.yaml"
+    },
+    {
+      "title": "Congressional photo source",
+      "url": "https://unitedstates.github.io/images/congress/225x275/B001291.jpg"
+    }
+  ],
+  "lastVerifiedAt": "2026-04-27"
+}

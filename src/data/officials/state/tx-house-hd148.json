@@ -1,0 +1,44 @@
+{
+  "id": "penny-morales-shaw",
+  "name": "Penny Morales Shaw",
+  "firstName": "Penny",
+  "lastName": "Morales Shaw",
+  "photo": "/images/officials/state-house/penny-morales-shaw.jpg",
+  "photoSourceUrl": "https://house.texas.gov/images/members/4035.jpg?v=1",
+  "photoCredit": "Official Texas House of Representatives photo",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-148",
+  "jurisdiction": "Texas House of Representatives",
+  "county": [
+    "Texas"
+  ],
+  "termStart": "2021-01-12",
+  "termEnd": "Current legislative term pending source review",
+  "contactInfo": {
+    "office": "Room E2.710, P.O. Box 12910, Austin, TX 78711",
+    "phone": "512-463-0620",
+    "email": "penny.moralesshaw@house.texas.gov",
+    "website": "https://house.texas.gov/members/4035"
+  },
+  "bio": "Penny Morales Shaw serves as State Representative for Texas House of Representatives District 148. This RepWatchr starter profile is sourced from official Texas Legislature profile data and OpenStates public records.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "TX",
+  "sourceLinks": [
+    {
+      "title": "Official Texas House of Representatives profile",
+      "url": "https://house.texas.gov/members/4035"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/main/data/tx/legislature/Penny-Morales-Shaw-51a281ff-2983-4b4b-baf4-63ee17812835.yml"
+    },
+    {
+      "title": "Official profile photo source",
+      "url": "https://house.texas.gov/images/members/4035.jpg?v=1"
+    }
+  ],
+  "lastVerifiedAt": "2026-04-27"
+}

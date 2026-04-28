@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import Image from "next/image";
 import {
   getAllOfficials,
   getOfficialWithScores,
@@ -7,7 +8,9 @@ import {
   getFundingSummary,
   getRedFlags,
   getIssueCategories,
+  getNewsByOfficialId,
 } from "@/lib/data";
+import { buildFallbackIdeologyProfile, getOfficialIdeologyProfile } from "@/lib/ideology";
 import { formatLevelName, getPartyColor } from "@/lib/formatting";
 import ScoreGauge from "@/components/scores/ScoreGauge";
 import CategoryBreakdown from "@/components/scores/CategoryBreakdown";
@@ -18,13 +21,13 @@ import GeographicBreakdown from "@/components/funding/GeographicBreakdown";
 import VoteTimeline from "@/components/votes/VoteTimeline";
 import RedFlagCard from "@/components/shared/RedFlagCard";
 import PartyBadge from "@/components/officials/PartyBadge";
+import IdeologyChart from "@/components/officials/IdeologyChart";
 import OfficialVotingSection from "@/components/voting/OfficialVotingSection";
 import GradeOfficialSection from "@/components/voting/GradeOfficialSection";
 import CommentSection from "@/components/comments/CommentSection";
 import ShareButtons from "@/components/shared/ShareButtons";
 import ReportButton from "@/components/shared/ReportButton";
 import ProfileOpenTracker from "@/components/shared/ProfileOpenTracker";
-import { getNewsByOfficialId } from "@/lib/data";
 
 export async function generateStaticParams() {
   const officials = getAllOfficials();
@@ -41,7 +44,7 @@ export async function generateMetadata({
   if (!official) return { title: "Official Not Found" };
   return {
     title: `${official.name} - ${official.position}`,
-    description: `Scorecard, voting record, and campaign finance data for ${official.name}, ${official.position} serving ${official.jurisdiction}.`,
+    description: `Source-backed RepWatchr profile for ${official.name}, ${official.position} serving ${official.jurisdiction}.`,
   };
 }
 
@@ -72,6 +75,10 @@ export default async function OfficialProfilePage({
   const redFlags = getRedFlags(id);
   const issueCategories = getIssueCategories();
   const relatedNews = getNewsByOfficialId(id);
+  const ideologyProfile = getOfficialIdeologyProfile(id) ?? buildFallbackIdeologyProfile(official);
+  const sourceLinks = official.sourceLinks ?? [];
+  const contactEmail = official.contactInfo.email;
+  const contactIsUrl = contactEmail?.startsWith("http://") || contactEmail?.startsWith("https://");
 
   const allScoredVotes = scoreCard
     ? Object.values(scoreCard.categories).flatMap((c) => c.votes)
@@ -95,11 +102,29 @@ export default async function OfficialProfilePage({
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6 sm:py-8">
           {/* Mobile: stacked layout, Desktop: side by side */}
           <div className="flex flex-col sm:flex-row items-start gap-4 sm:gap-6">
-            {/* Photo placeholder */}
-            <div className="w-16 h-16 sm:w-24 sm:h-24 rounded-full bg-gray-200 flex items-center justify-center text-2xl sm:text-3xl font-bold text-gray-400 shrink-0">
-              {official.firstName[0]}
-              {official.lastName[0]}
-            </div>
+            <figure className="shrink-0">
+              <div className="relative flex h-20 w-20 items-center justify-center overflow-hidden rounded-2xl border border-gray-200 bg-gray-200 text-2xl font-bold text-gray-500 shadow-sm sm:h-28 sm:w-28 sm:text-3xl">
+                {official.photo ? (
+                  <Image
+                    src={official.photo}
+                    alt={`${official.name} profile photo`}
+                    fill
+                    sizes="(min-width: 640px) 112px, 80px"
+                    className="object-cover"
+                  />
+                ) : (
+                  <>
+                    {official.firstName[0]}
+                    {official.lastName[0]}
+                  </>
+                )}
+              </div>
+              {official.photoCredit ? (
+                <figcaption className="mt-1 max-w-28 text-[10px] font-semibold leading-4 text-gray-500">
+                  {official.photoCredit}
+                </figcaption>
+              ) : null}
+            </figure>
             <div className="flex-1 min-w-0">
               <div className="flex items-center gap-2 sm:gap-3 flex-wrap">
                 <h1 className="text-xl sm:text-3xl font-extrabold text-gray-900">
@@ -129,17 +154,24 @@ export default async function OfficialProfilePage({
               )}
               {official.contactInfo && (
                 <div className="flex flex-wrap gap-3 sm:gap-4 mt-3 text-xs sm:text-sm">
+                  {official.contactInfo.office && (
+                    <span className="text-gray-600">
+                      Office: {official.contactInfo.office}
+                    </span>
+                  )}
                   {official.contactInfo.phone && (
                     <span className="text-gray-600">
                       Phone: {official.contactInfo.phone}
                     </span>
                   )}
-                  {official.contactInfo.email && (
+                  {contactEmail && (
                     <a
-                      href={`mailto:${official.contactInfo.email}`}
+                      href={contactIsUrl ? contactEmail : `mailto:${contactEmail}`}
                       className="text-blue-600 hover:underline"
+                      target={contactIsUrl ? "_blank" : undefined}
+                      rel={contactIsUrl ? "noopener noreferrer" : undefined}
                     >
-                      {official.contactInfo.email}
+                      {contactIsUrl ? "Contact Form" : contactEmail}
                     </a>
                   )}
                   {official.contactInfo.website && (
@@ -186,6 +218,10 @@ export default async function OfficialProfilePage({
             </div>
           </section>
         )}
+
+        <div className="mb-8">
+          <IdeologyChart profile={ideologyProfile} />
+        </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
           {/* Left Column: Scores + Votes */}
@@ -294,6 +330,29 @@ export default async function OfficialProfilePage({
                   official. Check back soon.
                 </p>
               </div>
+            )}
+
+            {sourceLinks.length > 0 && (
+              <section className="rounded-xl border border-gray-200 bg-white p-5 shadow-sm">
+                <h2 className="text-lg font-bold text-gray-900">Public Sources</h2>
+                <p className="mt-1 text-xs font-semibold text-gray-500">
+                  Last verified: {official.lastVerifiedAt ?? "source review pending"}
+                </p>
+                <div className="mt-4 space-y-2">
+                  {sourceLinks.map((source) => (
+                    <a
+                      key={`${source.title}-${source.url}`}
+                      href={source.url}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="flex items-center justify-between gap-3 rounded-lg border border-gray-200 bg-gray-50 px-3 py-2 text-sm font-semibold text-blue-700 transition hover:border-blue-200 hover:bg-blue-50"
+                    >
+                      <span>{source.title}</span>
+                      <span className="shrink-0 text-xs uppercase tracking-wide">Open</span>
+                    </a>
+                  ))}
+                </div>
+              </section>
             )}
           </div>
         </div>

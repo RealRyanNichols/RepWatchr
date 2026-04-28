@@ -1,0 +1,44 @@
+{
+  "id": "bob-hall",
+  "name": "Bob Hall",
+  "firstName": "Bob",
+  "lastName": "Hall",
+  "photo": "/images/officials/state-senate/bob-hall.jpg",
+  "photoSourceUrl": "https://senate.texas.gov/members/d02/img/headshot.jpg",
+  "photoCredit": "Official Texas Senate photo",
+  "party": "R",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-2",
+  "jurisdiction": "Texas Senate",
+  "county": [
+    "Texas"
+  ],
+  "termStart": "2015-01-13",
+  "termEnd": "Current legislative term pending source review",
+  "contactInfo": {
+    "office": "Room 1E.15, P.O. Box 12068 Capitol Station, Austin, TX 78711",
+    "phone": "512-463-0102",
+    "email": "bob.hall@senate.texas.gov",
+    "website": "https://senate.texas.gov/member.php?d=2"
+  },
+  "bio": "Bob Hall serves as State Senator for Texas Senate District 2. This RepWatchr starter profile is sourced from official Texas Legislature profile data and OpenStates public records.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "TX",
+  "sourceLinks": [
+    {
+      "title": "Official Texas Senate profile",
+      "url": "https://senate.texas.gov/member.php?d=2"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/main/data/tx/legislature/Bob-Hall-013d69b7-a958-490c-a4a2-7224a30efa08.yml"
+    },
+    {
+      "title": "Official profile photo source",
+      "url": "https://senate.texas.gov/members/d02/img/headshot.jpg"
+    }
+  ],
+  "lastVerifiedAt": "2026-04-27"
+}

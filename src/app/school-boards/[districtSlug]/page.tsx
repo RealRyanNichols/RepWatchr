@@ -173,7 +173,7 @@ export default async function DistrictPage({
             <div className="p-5">
               <div className="flex items-center justify-between gap-3">
                 <div>
-                  <p className="text-xs font-black uppercase tracking-wide text-red-700">Live profile dashboard</p>
+                  <p className="text-xs font-black uppercase tracking-wide text-red-700">Loaded profile dashboard</p>
                   <h2 className="mt-1 text-2xl font-black text-blue-950">What is loaded</h2>
                 </div>
                 <div className="grid h-16 w-16 place-items-center rounded-2xl text-2xl font-black text-white shadow-md shadow-blue-900/20" style={{ backgroundColor: branding.primary }}>

@@ -4,12 +4,14 @@ import {
   getSchoolBoardCompletionReport,
   getSchoolBoardStats,
 } from "@/lib/school-board-research";
+import { getRepWatchrDataStats } from "@/lib/data";
+import { getAllOfficialIdeologyProfiles } from "@/lib/ideology";
 import { getSchoolBoardCandidateUrl, getSchoolBoardDistrictUrl } from "@/lib/school-board-urls";
 
 export const metadata: Metadata = {
   title: "RepWatchr Buildout Dashboard",
   description:
-    "Live percentage-of-completion dashboard for every district, every member profile, every source URL, and every research gap on RepWatchr.",
+    "Computed buildout dashboard for loaded profile files, roster dossiers, source URLs, public-record gaps, and analytics events on RepWatchr.",
   robots: { index: false, follow: false },
 };
 
@@ -38,29 +40,173 @@ function toneFor(percent: number): "red" | "amber" | "blue" | "green" {
 export default function BuildoutDashboardPage() {
   const report = getSchoolBoardCompletionReport();
   const stats = getSchoolBoardStats();
+  const dataStats = getRepWatchrDataStats();
+  const ideologyProfiles = getAllOfficialIdeologyProfiles();
+  const voteWeightedIdeologyProfiles = ideologyProfiles.filter((profile) => profile.ideologyScore !== null);
+  const pendingIdeologyProfiles = ideologyProfiles.length - voteWeightedIdeologyProfiles.length;
+  const loadedOfficialProfiles = dataStats.federalAndStateSeatProfilesLoaded + dataStats.countyCityOfficialFiles;
+  const sourceUrlCount = dataStats.publicSourceUrls + stats.sourceCount;
+  const openWorkCount = stats.gapCount + report.totalBrokenSources;
+  const federalAndStateSeatPercent = Math.round(
+    (dataStats.federalAndStateSeatProfilesLoaded / dataStats.federalAndStateExpectedSeats) * 100,
+  );
 
   // Sort districts by completion ascending - show what needs work first.
   const sortedDistricts = [...report.districtCompletions].sort((a, b) => a.percent - b.percent);
   const sortedMembers = [...report.candidateCompletions].sort((a, b) => a.percent - b.percent);
 
-  // Areas of the site beyond school boards. These are static for now -
-  // hard-coded to reflect the real state of each major surface so the
-  // operator can see what's "done" vs "needs more work" at a glance.
-  const siteAreas = [
-    { label: "School Board Watch (TX)", percent: report.overallPercent, status: `${report.totalDistricts} districts · ${report.totalMembers} members loaded`, href: "/school-boards" },
-    { label: "Federal officials", percent: 70, status: "Sourced. Funding deep-dive in progress.", href: "/officials?level=federal" },
-    { label: "Texas state officials", percent: 75, status: "Texas House & Senate scorecards live.", href: "/officials?level=state" },
-    { label: "Texas county officials", percent: 60, status: `30+ counties loaded (${stats.counties} school-board counties).`, href: "/officials?level=county" },
-    { label: "Texas city officials", percent: 55, status: "43+ cities live; mayors prioritized.", href: "/officials?level=city" },
-    { label: "Citizen voting (approve/disapprove)", percent: 100, status: "Live on every official + every school-board candidate.", href: "/officials" },
-    { label: "Citizen letter grades (A-F)", percent: 100, status: "Live on every profile. Statewide + in-district GPA.", href: "/school-boards" },
-    { label: "Public comments / Q&A", percent: 100, status: "Live on every profile. Ranked but not censored.", href: "/feedback" },
-    { label: "Profile claim flow (officials)", percent: 90, status: "Stripe wired. Admin review queue active.", href: "/profiles/claim" },
-    { label: "Faretta AI research console", percent: 60, status: "Edge function bridge configured.", href: "/faretta-ai" },
-    { label: "Public funding / donor data", percent: 40, status: "Federal + state cycles loaded; locals queued.", href: "/funding" },
-    { label: "Issue scorecards", percent: 80, status: "5 weighted issue categories live.", href: "/scorecards" },
-    { label: "Red flags index", percent: 65, status: "Curated; verifier review ongoing.", href: "/red-flags" },
-    { label: "News / accountability articles", percent: 50, status: "Initial set published. Beat reporters needed.", href: "/news" },
+  const dataSurfaces = [
+    {
+      label: "Federal and state seat profiles",
+      value: dataStats.federalAndStateSeatProfilesLoaded,
+      status: `${dataStats.federalProfilesLoaded}/${dataStats.federalExpectedSeats} Texas federal seats and ${dataStats.stateLegislatorProfilesLoaded}/${dataStats.stateLegislatureExpectedSeats} Texas legislative seats are represented by person profile files.`,
+      href: "/officials",
+    },
+    {
+      label: "County and city official files",
+      value: dataStats.countyCityOfficialFiles,
+      status: `${dataStats.levelCounts.county} county and ${dataStats.levelCounts.city} city profile files are loaded. These are legacy local records until source review is finished.`,
+      href: "/officials",
+    },
+    {
+      label: "School-board source-seeded trustees",
+      value: stats.candidates,
+      status: `${stats.districts} Texas districts, ${stats.districtsWithRosters} official rosters, ${stats.completedDossiers} non-stub dossiers, and ${stats.stubProfiles} queued or in-progress trustee profiles.`,
+      href: "/school-boards",
+    },
+    {
+      label: "Legacy school-board official files",
+      value: dataStats.legacySchoolBoardOfficialFiles,
+      status: "Older JSON profile files still exist under the officials data tree. The School Board page uses the roster dossier pipeline.",
+      href: "/officials?level=school-board",
+    },
+    {
+      label: "Source-seeded official profiles",
+      value: dataStats.sourceSeededOfficialProfiles,
+      status: `${dataStats.officialsWithSourceLinks} profiles have explicit source links and ${dataStats.officialsWithPhotos} have local profile photos. ${dataStats.missingReviewStatusOfficialProfiles} legacy official files still lack a review status.`,
+      href: "/officials",
+    },
+    {
+      label: "Official source URLs",
+      value: dataStats.officialSourceUrls,
+      status: "Unique official-site, public profile, photo-source, and office website URLs attached directly to official profile files.",
+      href: "/methodology",
+    },
+    {
+      label: "Ideology master rows",
+      value: ideologyProfiles.length,
+      status: `${voteWeightedIdeologyProfiles.length} rows have a vote-weighted left/right score. ${pendingIdeologyProfiles} rows have centered charts pending mapped vote records.`,
+      href: "/officials",
+    },
+  ];
+  const trackingSurfaces = [
+    {
+      label: "Scored official profiles",
+      value: dataStats.scoreCards,
+      status: `${dataStats.officialsWithScoreCards} officials have scorecards. ${dataStats.issueCategories} issue categories, ${dataStats.bills} vote files, and ${dataStats.scoredVoteRows} scored vote rows are loaded.`,
+      href: "/scorecards",
+    },
+    {
+      label: "Campaign funding summaries",
+      value: dataStats.fundingSummaries,
+      status: `${dataStats.officialsWithFundingSummaries} officials have funding JSON. ${dataStats.fundingSourceUrls} unique funding source URLs are cited.`,
+      href: "/funding",
+    },
+    {
+      label: "Red-flag records",
+      value: dataStats.redFlagItems,
+      status: `${dataStats.officialsWithRedFlags} officials have one or more sourced red-flag records.`,
+      href: "/red-flags",
+    },
+    {
+      label: "Vote and bill records",
+      value: dataStats.bills,
+      status: `${dataStats.scoredVoteRows} official vote rows across ${dataStats.voteSourceUrls} unique public vote source URLs.`,
+      href: "/votes",
+    },
+    {
+      label: "News articles",
+      value: dataStats.newsArticles,
+      status: `${dataStats.featuredNewsArticles} featured articles are currently marked for homepage or news emphasis.`,
+      href: "/news",
+    },
+    {
+      label: "Public source URLs",
+      value: sourceUrlCount,
+      status: `${stats.sourceCount} school-board URLs and ${dataStats.publicSourceUrls} official, funding, vote, red-flag, or news URLs. This is evidence coverage, not pageview analytics.`,
+      href: "/methodology",
+    },
+  ];
+  const notTrackedSurfaces = [
+    {
+      label: "Expected Texas federal/state seat gaps",
+      value: dataStats.federalAndStateProfileGaps,
+      status: `${dataStats.federalProfileGaps} federal and ${dataStats.stateLegislatureProfileGaps} Texas legislative expected seats do not have a person profile file in the current import.`,
+      href: "/officials",
+    },
+    {
+      label: "Non-school officials without scorecards",
+      value: dataStats.nonSchoolOfficialFiles - dataStats.officialsWithScoreCards,
+      status: "No scorecard file exists for these profiles yet. Do not read that as neutral, clean, or reviewed.",
+      href: "/scorecards",
+    },
+    {
+      label: "Official charts pending vote mapping",
+      value: pendingIdeologyProfiles,
+      status: "These officials have a chart row in the master file, but the marker stays centered until vote-direction evidence is loaded.",
+      href: "/officials",
+    },
+    {
+      label: "Non-school officials without funding summaries",
+      value: dataStats.nonSchoolOfficialFiles - dataStats.officialsWithFundingSummaries,
+      status: "Campaign finance is not shown unless a funding JSON file exists for the official.",
+      href: "/funding",
+    },
+    {
+      label: "Non-school officials without red-flag files",
+      value: dataStats.nonSchoolOfficialFiles - dataStats.officialsWithRedFlags,
+      status: "No red-flag file means no sourced red-flag record is loaded here. It does not mean the official was fully cleared.",
+      href: "/red-flags",
+    },
+    {
+      label: "School-board open research gaps",
+      value: stats.gapCount,
+      status: `${stats.candidateGapCount} candidate gaps and ${stats.investigationQueueCount} district investigation queue items remain in the dossier pipeline.`,
+      href: "/school-boards",
+    },
+    {
+      label: "Broken or empty school-board source slots",
+      value: report.totalBrokenSources,
+      status: "Completion scoring still sees these as source gaps. They need working public URLs before being counted as supported records.",
+      href: "/buildout",
+    },
+  ];
+  const analyticsSurfaces = [
+    {
+      label: "Pageview analytics",
+      value: "Mounted",
+      status: "The Vercel Analytics component is mounted in the root layout. Google Analytics loads only when NEXT_PUBLIC_GA_MEASUREMENT_ID is configured.",
+    },
+    {
+      label: "Custom Vercel events",
+      value: "3 events",
+      status: "share_click, picker_drilldown, and profile_open are emitted from visible user actions.",
+    },
+    {
+      label: "Faretta AI interaction collection",
+      value: "4 kinds",
+      status: "search, chat, research_note, and prompt_button are collected through /api/faretta/collect when the Supabase table is present.",
+    },
+    {
+      label: "Live engagement aggregates",
+      value: "4 tables",
+      status: "approval_ratings, citizen_grade_summary, comments, and citizen_votes power the live School Board counter when Supabase is configured.",
+    },
+    {
+      label: "Member workspace storage",
+      value: "3 tables",
+      status: "member_tracked_items, member_profiles, and profile_claims feed the logged-in dashboard and claim flow.",
+    },
   ];
 
   return (
@@ -70,33 +216,30 @@ export default function BuildoutDashboardPage() {
           <p className="text-xs font-black uppercase tracking-wide text-red-700">Operator dashboard</p>
           <h1 className="mt-1 text-3xl font-black text-blue-950 sm:text-5xl">RepWatchr buildout completion</h1>
           <p className="mt-3 max-w-3xl text-sm font-semibold leading-6 text-blue-950/75">
-            Every percentage on this page is computed from real data loaded into RepWatchr. Districts, members, and source URLs that need work are listed first. Click any row to jump to that district or profile.
+            These numbers are computed from the records currently loaded or queried by RepWatchr. Loaded people, scored records, source URLs, live tables, and missing coverage are separated so the dashboard does not imply tracking that is not wired yet.
           </p>
 
           <div className="mt-6 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
             <div className="rounded-2xl border border-blue-200 bg-white p-5 shadow-sm">
-              <p className="text-xs font-black uppercase tracking-wide text-blue-700">Site overall</p>
-              <p className="mt-1 text-4xl font-black text-blue-950">{Math.round(siteAreas.reduce((s, a) => s + a.percent, 0) / siteAreas.length)}%</p>
-              <p className="mt-1 text-xs font-semibold text-gray-500">Avg across {siteAreas.length} surfaces</p>
-              <div className="mt-3"><ProgressBar percent={Math.round(siteAreas.reduce((s, a) => s + a.percent, 0) / siteAreas.length)} tone="blue" /></div>
+              <p className="text-xs font-black uppercase tracking-wide text-blue-700">Loaded officials</p>
+              <p className="mt-1 text-4xl font-black text-blue-950">{loadedOfficialProfiles.toLocaleString()}</p>
+              <p className="mt-1 text-xs font-semibold text-gray-500">{dataStats.federalAndStateSeatProfilesLoaded} federal/state seat profiles + {dataStats.countyCityOfficialFiles} county/city files</p>
             </div>
             <div className="rounded-2xl border border-emerald-200 bg-white p-5 shadow-sm">
-              <p className="text-xs font-black uppercase tracking-wide text-emerald-700">School-board overall</p>
-              <p className="mt-1 text-4xl font-black text-emerald-700">{report.overallPercent}%</p>
-              <p className="mt-1 text-xs font-semibold text-gray-500">{report.completedDistricts}/{report.totalDistricts} districts ≥75% · {report.completedMembers}/{report.totalMembers} members ≥75%</p>
-              <div className="mt-3"><ProgressBar percent={report.overallPercent} tone="green" /></div>
+              <p className="text-xs font-black uppercase tracking-wide text-emerald-700">Federal/state seats</p>
+              <p className="mt-1 text-4xl font-black text-emerald-700">{dataStats.federalAndStateSeatProfilesLoaded}/{dataStats.federalAndStateExpectedSeats}</p>
+              <p className="mt-1 text-xs font-semibold text-gray-500">{dataStats.federalAndStateProfileGaps} expected seat profile gap{dataStats.federalAndStateProfileGaps === 1 ? "" : "s"} in the current import</p>
+              <div className="mt-3"><ProgressBar percent={federalAndStateSeatPercent} tone="green" /></div>
             </div>
             <div className="rounded-2xl border border-amber-200 bg-white p-5 shadow-sm">
-              <p className="text-xs font-black uppercase tracking-wide text-amber-700">2026 ballot prepped</p>
-              <p className="mt-1 text-4xl font-black text-amber-700">{stats.onBallot}</p>
-              <p className="mt-1 text-xs font-semibold text-gray-500">{stats.tracked2026Districts} districts in play</p>
-              <div className="mt-3"><ProgressBar percent={Math.min(100, stats.onBallot * 4)} tone="amber" /></div>
+              <p className="text-xs font-black uppercase tracking-wide text-amber-700">Records scored</p>
+              <p className="mt-1 text-4xl font-black text-amber-700">{dataStats.scoreCards.toLocaleString()}</p>
+              <p className="mt-1 text-xs font-semibold text-gray-500">{dataStats.bills} bill files, {dataStats.scoredVoteRows} vote rows, {dataStats.fundingSummaries} funding summaries</p>
             </div>
             <div className="rounded-2xl border border-red-200 bg-white p-5 shadow-sm">
-              <p className="text-xs font-black uppercase tracking-wide text-red-700">Broken / empty sources</p>
-              <p className="mt-1 text-4xl font-black text-red-700">{report.totalBrokenSources}</p>
-              <p className="mt-1 text-xs font-semibold text-gray-500">URLs with empty href across districts + members</p>
-              <div className="mt-3"><ProgressBar percent={Math.max(0, 100 - Math.min(100, report.totalBrokenSources * 2))} tone="red" /></div>
+              <p className="text-xs font-black uppercase tracking-wide text-red-700">Open work</p>
+              <p className="mt-1 text-4xl font-black text-red-700">{openWorkCount.toLocaleString()}</p>
+              <p className="mt-1 text-xs font-semibold text-gray-500">{stats.gapCount} research gaps + {report.totalBrokenSources} empty source URLs</p>
             </div>
           </div>
         </div>
@@ -106,13 +249,13 @@ export default function BuildoutDashboardPage() {
       <section className="mx-auto max-w-7xl px-4 py-10 sm:px-6 lg:px-8">
         <div className="mb-6 flex items-end justify-between">
           <div>
-            <p className="text-xs font-black uppercase tracking-wide text-red-700">By surface</p>
-            <h2 className="text-2xl font-black text-gray-950">Every section of the site</h2>
+            <p className="text-xs font-black uppercase tracking-wide text-red-700">Who is there</p>
+            <h2 className="text-2xl font-black text-gray-950">Loaded people and profile files</h2>
           </div>
           <p className="text-xs font-semibold text-gray-500">Click a row to open it.</p>
         </div>
         <div className="grid gap-3 lg:grid-cols-2">
-          {siteAreas.map((area) => (
+          {dataSurfaces.map((area) => (
             <Link
               key={area.label}
               href={area.href}
@@ -120,14 +263,80 @@ export default function BuildoutDashboardPage() {
             >
               <div className="flex items-baseline justify-between gap-3">
                 <p className="text-sm font-black text-gray-950">{area.label}</p>
-                <p className={`text-2xl font-black ${area.percent >= 75 ? "text-emerald-700" : area.percent >= 50 ? "text-blue-700" : area.percent >= 25 ? "text-amber-700" : "text-red-700"}`}>
-                  {area.percent}%
-                </p>
+                <p className="text-2xl font-black text-blue-950">{area.value.toLocaleString()}</p>
               </div>
               <p className="mt-1 text-xs font-semibold text-gray-500">{area.status}</p>
-              <div className="mt-3"><ProgressBar percent={area.percent} tone={toneFor(area.percent)} /></div>
             </Link>
           ))}
+        </div>
+      </section>
+
+      <section className="border-y border-amber-100 bg-amber-50 py-10">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <div className="mb-6">
+            <p className="text-xs font-black uppercase tracking-wide text-red-700">What is really tracked</p>
+            <h2 className="text-2xl font-black text-gray-950">Scoring, funding, flags, votes, news, and source coverage</h2>
+            <p className="mt-1 text-xs font-semibold text-gray-600">These counts come from dedicated JSON records or live dossier source links. A loaded profile is not the same as a scored profile.</p>
+          </div>
+          <div className="grid gap-3 lg:grid-cols-2">
+            {trackingSurfaces.map((area) => (
+              <Link
+                key={area.label}
+                href={area.href}
+                className="block rounded-xl border border-amber-200 bg-white p-4 shadow-sm transition hover:-translate-y-0.5 hover:border-red-300 hover:shadow"
+              >
+                <div className="flex items-baseline justify-between gap-3">
+                  <p className="text-sm font-black text-gray-950">{area.label}</p>
+                  <p className="text-2xl font-black text-amber-700">{area.value.toLocaleString()}</p>
+                </div>
+                <p className="mt-1 text-xs font-semibold text-gray-600">{area.status}</p>
+              </Link>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="bg-white py-10">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <div className="mb-6">
+            <p className="text-xs font-black uppercase tracking-wide text-red-700">What is not tracked yet</p>
+            <h2 className="text-2xl font-black text-gray-950">Gaps that should not be hidden by big totals</h2>
+            <p className="mt-1 text-xs font-semibold text-gray-500">These are missing files, missing source slots, or missing analytics surfaces. They are not negative findings by themselves.</p>
+          </div>
+          <div className="grid gap-3 lg:grid-cols-2">
+            {notTrackedSurfaces.map((area) => (
+              <Link
+                key={area.label}
+                href={area.href}
+                className="block rounded-xl border border-red-100 bg-red-50 p-4 shadow-sm transition hover:-translate-y-0.5 hover:border-red-300 hover:shadow"
+              >
+                <div className="flex items-baseline justify-between gap-3">
+                  <p className="text-sm font-black text-gray-950">{area.label}</p>
+                  <p className="text-2xl font-black text-red-700">{area.value.toLocaleString()}</p>
+                </div>
+                <p className="mt-1 text-xs font-semibold text-gray-600">{area.status}</p>
+              </Link>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="border-y border-blue-100 bg-blue-50 py-10">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <div className="mb-6">
+            <p className="text-xs font-black uppercase tracking-wide text-red-700">Analytics map</p>
+            <h2 className="text-2xl font-black text-gray-950">What user actions are actually tracked</h2>
+            <p className="mt-1 text-xs font-semibold text-gray-500">These are event and table sources wired into the app today.</p>
+          </div>
+          <div className="grid gap-3 md:grid-cols-2 xl:grid-cols-4">
+            {analyticsSurfaces.map((item) => (
+              <div key={item.label} className="rounded-xl border border-blue-100 bg-white p-4 shadow-sm">
+                <p className="text-2xl font-black text-blue-950">{item.value}</p>
+                <p className="mt-1 text-xs font-black uppercase tracking-wide text-red-700">{item.label}</p>
+                <p className="mt-2 text-xs font-semibold leading-5 text-slate-600">{item.status}</p>
+              </div>
+            ))}
+          </div>
         </div>
       </section>
 

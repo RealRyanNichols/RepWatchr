@@ -1,0 +1,44 @@
+{
+  "id": "chris-turner",
+  "name": "Chris Turner",
+  "firstName": "Chris",
+  "lastName": "Turner",
+  "photo": "/images/officials/state-house/chris-turner.jpg",
+  "photoSourceUrl": "https://house.texas.gov/images/members/4680.jpg?v=1",
+  "photoCredit": "Official Texas House of Representatives photo",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-101",
+  "jurisdiction": "Texas House of Representatives",
+  "county": [
+    "Texas"
+  ],
+  "termStart": "2013-01-08",
+  "termEnd": "Current legislative term pending source review",
+  "contactInfo": {
+    "office": "Room 1N.5, P.O. Box 12910, Austin, TX 78711",
+    "phone": "512-463-0574",
+    "email": "chris.turner@house.texas.gov",
+    "website": "https://house.texas.gov/members/4680"
+  },
+  "bio": "Chris Turner serves as State Representative for Texas House of Representatives District 101. This RepWatchr starter profile is sourced from official Texas Legislature profile data and OpenStates public records.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "TX",
+  "sourceLinks": [
+    {
+      "title": "Official Texas House of Representatives profile",
+      "url": "https://house.texas.gov/members/4680"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/main/data/tx/legislature/Chris-Turner-a5e2021c-8221-41ba-b45c-cc89d13b2af2.yml"
+    },
+    {
+      "title": "Official profile photo source",
+      "url": "https://house.texas.gov/images/members/4680.jpg?v=1"
+    }
+  ],
+  "lastVerifiedAt": "2026-04-27"
+}

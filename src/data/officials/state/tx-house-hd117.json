@@ -1,0 +1,44 @@
+{
+  "id": "philip-cortez",
+  "name": "Philip Cortez",
+  "firstName": "Philip",
+  "lastName": "Cortez",
+  "photo": "/images/officials/state-house/philip-cortez.jpg",
+  "photoSourceUrl": "https://house.texas.gov/images/members/2365.jpg?v=2",
+  "photoCredit": "Official Texas House of Representatives photo",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-117",
+  "jurisdiction": "Texas House of Representatives",
+  "county": [
+    "Texas"
+  ],
+  "termStart": "2017-01-10",
+  "termEnd": "Current legislative term pending source review",
+  "contactInfo": {
+    "office": "Room 4N.3, P.O. Box 12910, Austin, TX 78711",
+    "phone": "512-463-0269",
+    "email": "philip.cortez@house.texas.gov",
+    "website": "https://house.texas.gov/members/2365"
+  },
+  "bio": "Philip Cortez serves as State Representative for Texas House of Representatives District 117. This RepWatchr starter profile is sourced from official Texas Legislature profile data and OpenStates public records.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "TX",
+  "sourceLinks": [
+    {
+      "title": "Official Texas House of Representatives profile",
+      "url": "https://house.texas.gov/members/2365"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/main/data/tx/legislature/Philip-Cortez-12d67093-ab4c-425d-afa3-e5777db09d1c.yml"
+    },
+    {
+      "title": "Official profile photo source",
+      "url": "https://house.texas.gov/images/members/2365.jpg?v=2"
+    }
+  ],
+  "lastVerifiedAt": "2026-04-27"
+}

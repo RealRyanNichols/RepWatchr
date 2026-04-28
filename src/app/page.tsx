@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { getAllOfficials, getScoreCard, getIssueCategories, getAllNews } from "@/lib/data";
+import { getAllOfficials, getScoreCard, getIssueCategories, getAllNews, getRepWatchrDataStats } from "@/lib/data";
 import { getSchoolBoardStats } from "@/lib/school-board-research";
 import { buildPickerStates } from "@/lib/picker-data";
 import OfficialCard from "@/components/officials/OfficialCard";
@@ -10,25 +10,25 @@ const levelCards = [
   {
     level: "federal",
     title: "Federal",
-    description: "US House & Senate",
+    description: "U.S. House & Senate",
     href: "/officials?level=federal",
   },
   {
     level: "state",
     title: "State",
-    description: "TX House & Senate",
+    description: "Texas House & Senate live",
     href: "/officials?level=state",
   },
   {
     level: "county",
     title: "County",
-    description: "30+ Texas Counties",
+    description: "County offices",
     href: "/officials?level=county",
   },
   {
     level: "city",
     title: "City",
-    description: "43+ Texas Cities",
+    description: "City offices",
     href: "/officials?level=city",
   },
   {
@@ -43,16 +43,14 @@ export default function HomePage() {
   const officials = getAllOfficials();
   const issueCategories = getIssueCategories();
   const schoolBoardStats = getSchoolBoardStats();
+  const dataStats = getRepWatchrDataStats();
   const pickerStates = buildPickerStates();
 
-  // Compute real stats from data
-  const counties = new Set(officials.flatMap((o) => o.county));
-
   const stats = [
-    { label: "Officials Tracked", value: String(officials.length) },
-    { label: "Issue Categories", value: String(issueCategories.length) },
-    { label: "Counties Covered", value: String(counties.size) },
-    { label: "School Board Profiles", value: String(schoolBoardStats.candidates) },
+    { label: "Federal/State Seat Profiles", value: String(dataStats.federalAndStateSeatProfilesLoaded), caption: `${dataStats.federalAndStateProfileGaps} expected gaps` },
+    { label: "County/City Files", value: String(dataStats.countyCityOfficialFiles), caption: "legacy local records" },
+    { label: "School Board Trustees", value: String(schoolBoardStats.candidates), caption: "TEA source seed" },
+    { label: "Scored Profiles", value: String(dataStats.officialsWithScoreCards), caption: `${dataStats.bills} vote files loaded` },
   ];
 
   const featuredOfficials = officials
@@ -87,9 +85,10 @@ export default function HomePage() {
               </span>
             </h1>
             <p className="mb-8 max-w-2xl text-base font-semibold leading-relaxed text-blue-950/75 sm:mb-10 sm:text-lg">
-              Scorecards, voting records, campaign funding, and red flags for
-              every elected official in Texas. Verified Texans can
-              vote and comment publicly.
+              Source-backed elected-official profiles first. Scorecards, voting
+              records, campaign funding, red flags, and citizen input appear
+              only where those records are actually loaded. Texas is live first;
+              national state-by-state coverage is the buildout path.
             </p>
             <div className="mb-8 max-w-xl">
               <FarettaSearchBox compact placeholder="Ask Faretta AI to find a rep, school board, county, vote, or record..." />
@@ -112,12 +111,15 @@ export default function HomePage() {
           <div className="grid gap-4">
             <DrillDownPicker states={pickerStates} />
             <div className="rounded-2xl border border-blue-100 bg-white p-6 shadow-xl shadow-blue-100/70">
-              <p className="text-sm font-black uppercase tracking-wide text-red-700">Texas accountability map</p>
-              <h2 className="mt-2 text-3xl font-black text-blue-950">Local politics should be clear enough for families to follow.</h2>
+              <p className="text-sm font-black uppercase tracking-wide text-red-700">National official watch</p>
+              <h2 className="mt-2 text-3xl font-black text-blue-950">Open the public profiles people actually search for.</h2>
               <div className="mt-6 grid gap-3">
                 {stats.map((stat) => (
                   <div key={stat.label} className="flex items-center justify-between rounded-xl border border-blue-100 bg-blue-50 px-4 py-3">
-                    <span className="text-sm font-black text-blue-950">{stat.label}</span>
+                    <span className="text-sm font-black text-blue-950">
+                      {stat.label}
+                      <span className="mt-0.5 block text-[11px] font-bold text-blue-950/55">{stat.caption}</span>
+                    </span>
                     <span className="text-2xl font-black text-red-700">{stat.value}</span>
                   </div>
                 ))}
@@ -139,6 +141,9 @@ export default function HomePage() {
                 <p className="text-xs sm:text-sm text-gray-500 mt-1">
                   {stat.label}
                 </p>
+                <p className="mt-0.5 text-[11px] font-semibold text-gray-400">
+                  {stat.caption}
+                </p>
               </div>
             ))}
           </div>
@@ -152,7 +157,7 @@ export default function HomePage() {
             Browse by Government Level
           </h2>
           <p className="text-gray-500 mt-2">
-            From Congress to school boards -- every elected official tracked
+            From Congress to school boards, Texas is loaded first and every state follows the same source-backed model.
           </p>
         </div>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-4">
@@ -179,10 +184,10 @@ export default function HomePage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
           <div className="text-center mb-10">
             <h2 className="text-3xl font-extrabold text-gray-900">
-              Scored on Texas Issues
+              Scored on Public Issues
             </h2>
             <p className="text-gray-500 mt-2">
-              Every score links back to a specific vote -- fully transparent
+              Every score links back to a specific vote. Texas issue categories are the first live scoring set.
             </p>
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-4">
@@ -343,7 +348,7 @@ export default function HomePage() {
               </h3>
               <p className="text-blue-950/70 text-sm leading-relaxed mb-4">
                 Every score is traceable to specific votes. Transparent
-                methodology focused on Texas interests.
+                methodology focused on state-specific public interests.
               </p>
               <span className="text-emerald-700 text-sm font-bold group-hover:translate-x-1 inline-block transition-transform">
                 View Methodology &rarr;
@@ -361,8 +366,8 @@ export default function HomePage() {
             Your Voice Matters
           </h2>
           <p className="text-blue-950/70 text-lg mb-8 max-w-2xl mx-auto">
-            Sign up, verify your Texas identity, and start voting on officials.
-            Share your opinions publicly. Real data from verified residents.
+            Sign up, verify where voter verification is live, and start tracking
+            officials. Texas verification is first; the national map builds state by state.
           </p>
           <div className="flex flex-wrap gap-4 justify-center">
             <Link

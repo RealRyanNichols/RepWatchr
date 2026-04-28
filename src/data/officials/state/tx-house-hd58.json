@@ -1,0 +1,44 @@
+{
+  "id": "helen-kerwin",
+  "name": "Helen Kerwin",
+  "firstName": "Helen",
+  "lastName": "Kerwin",
+  "photo": "/images/officials/state-house/helen-kerwin.jpg",
+  "photoSourceUrl": "https://www.house.texas.gov/images/members/4575.jpg?v=1",
+  "photoCredit": "Official Texas House of Representatives photo",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-58",
+  "jurisdiction": "Texas House of Representatives",
+  "county": [
+    "Texas"
+  ],
+  "termStart": "2025-01-14",
+  "termEnd": "Current legislative term pending source review",
+  "contactInfo": {
+    "office": "Room E1.216, P.O. Box 12910, Austin, TX 78711",
+    "phone": "512-463-0538",
+    "email": "helen.kerwin@house.texas.gov",
+    "website": "https://www.house.texas.gov/members/58"
+  },
+  "bio": "Helen Kerwin serves as State Representative for Texas House of Representatives District 58. This RepWatchr starter profile is sourced from official Texas Legislature profile data and OpenStates public records.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "TX",
+  "sourceLinks": [
+    {
+      "title": "Official Texas House of Representatives profile",
+      "url": "https://www.house.texas.gov/members/58"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/main/data/tx/legislature/Helen-Kerwin-92b45572-c15c-4270-8356-6c3db1846c7b.yml"
+    },
+    {
+      "title": "Official profile photo source",
+      "url": "https://www.house.texas.gov/images/members/4575.jpg?v=1"
+    }
+  ],
+  "lastVerifiedAt": "2026-04-27"
+}

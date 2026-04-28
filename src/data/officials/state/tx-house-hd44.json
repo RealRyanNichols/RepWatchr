@@ -1,0 +1,44 @@
+{
+  "id": "alan-schoolcraft",
+  "name": "Alan Schoolcraft",
+  "firstName": "Alan",
+  "lastName": "Schoolcraft",
+  "photo": "/images/officials/state-house/alan-schoolcraft.jpg",
+  "photoSourceUrl": "https://house.texas.gov/images/members/4745.jpg?v=1",
+  "photoCredit": "Official Texas House of Representatives photo",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-44",
+  "jurisdiction": "Texas House of Representatives",
+  "county": [
+    "Texas"
+  ],
+  "termStart": "2025-01-14",
+  "termEnd": "Current legislative term pending source review",
+  "contactInfo": {
+    "office": "Room E1.308, P.O. Box 12910, Austin, TX 78711",
+    "phone": "512-463-0602",
+    "email": "alan.schoolcraft@house.texas.gov",
+    "website": "https://house.texas.gov/members/4745"
+  },
+  "bio": "Alan Schoolcraft serves as State Representative for Texas House of Representatives District 44. This RepWatchr starter profile is sourced from official Texas Legislature profile data and OpenStates public records.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "TX",
+  "sourceLinks": [
+    {
+      "title": "Official Texas House of Representatives profile",
+      "url": "https://house.texas.gov/members/4745"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/main/data/tx/legislature/Alan-Schoolcraft-1493b76f-b77d-48db-9ecd-26d0e2dfc843.yml"
+    },
+    {
+      "title": "Official profile photo source",
+      "url": "https://house.texas.gov/images/members/4745.jpg?v=1"
+    }
+  ],
+  "lastVerifiedAt": "2026-04-27"
+}

@@ -1,0 +1,44 @@
+{
+  "id": "aicha-davis",
+  "name": "Aicha Davis",
+  "firstName": "Aicha",
+  "lastName": "Davis",
+  "photo": "/images/officials/state-house/aicha-davis.jpg",
+  "photoSourceUrl": "https://www.house.texas.gov/images/members/4465.jpg?v=1",
+  "photoCredit": "Official Texas House of Representatives photo",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-109",
+  "jurisdiction": "Texas House of Representatives",
+  "county": [
+    "Texas"
+  ],
+  "termStart": "2025-01-14",
+  "termEnd": "Current legislative term pending source review",
+  "contactInfo": {
+    "office": "Room E2.302, P.O. Box 12910, Austin, TX 78711",
+    "phone": "512-463-0953",
+    "email": "aicha.davis@house.texas.gov",
+    "website": "https://www.house.texas.gov/members/109"
+  },
+  "bio": "Aicha Davis serves as State Representative for Texas House of Representatives District 109. This RepWatchr starter profile is sourced from official Texas Legislature profile data and OpenStates public records.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "TX",
+  "sourceLinks": [
+    {
+      "title": "Official Texas House of Representatives profile",
+      "url": "https://www.house.texas.gov/members/109"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/main/data/tx/legislature/Aicha-Davis-c55d85ff-7172-42d4-9c8f-da2f258dc19b.yml"
+    },
+    {
+      "title": "Official profile photo source",
+      "url": "https://www.house.texas.gov/images/members/4465.jpg?v=1"
+    }
+  ],
+  "lastVerifiedAt": "2026-04-27"
+}

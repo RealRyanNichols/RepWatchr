@@ -1,0 +1,44 @@
+{
+  "id": "donna-campbell",
+  "name": "Donna Campbell",
+  "firstName": "Donna",
+  "lastName": "Campbell",
+  "photo": "/images/officials/state-senate/donna-campbell.jpg",
+  "photoSourceUrl": "https://senate.texas.gov/members/d25/img/headshot.jpg",
+  "photoCredit": "Official Texas Senate photo",
+  "party": "R",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-25",
+  "jurisdiction": "Texas Senate",
+  "county": [
+    "Texas"
+  ],
+  "termStart": "2013-01-08",
+  "termEnd": "Current legislative term pending source review",
+  "contactInfo": {
+    "office": "Room 3E.18, P.O. Box 12068 Capitol Station, Austin, TX 78711",
+    "phone": "512-463-0125",
+    "email": "donna.campbell@senate.texas.gov",
+    "website": "https://senate.texas.gov/member.php?d=25"
+  },
+  "bio": "Donna Campbell serves as State Senator for Texas Senate District 25. This RepWatchr starter profile is sourced from official Texas Legislature profile data and OpenStates public records.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "TX",
+  "sourceLinks": [
+    {
+      "title": "Official Texas Senate profile",
+      "url": "https://senate.texas.gov/member.php?d=25"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/main/data/tx/legislature/Donna-Campbell-9f80cd7f-1067-4322-8777-62bc129cd6f2.yml"
+    },
+    {
+      "title": "Official profile photo source",
+      "url": "https://senate.texas.gov/members/d25/img/headshot.jpg"
+    }
+  ],
+  "lastVerifiedAt": "2026-04-27"
+}

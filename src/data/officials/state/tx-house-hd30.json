@@ -1,0 +1,44 @@
+{
+  "id": "a-j-louderback",
+  "name": "A.J. Louderback",
+  "firstName": "A.J.",
+  "lastName": "Louderback",
+  "photo": "/images/officials/state-house/a-j-louderback.jpg",
+  "photoSourceUrl": "https://house.texas.gov/images/members/4620.jpg?v=1",
+  "photoCredit": "Official Texas House of Representatives photo",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-30",
+  "jurisdiction": "Texas House of Representatives",
+  "county": [
+    "Texas"
+  ],
+  "termStart": "2025-01-14",
+  "termEnd": "Current legislative term pending source review",
+  "contactInfo": {
+    "office": "Room E1.418, P.O. Box 12910, Austin, TX 78711",
+    "phone": "512-463-0456",
+    "email": "aj.louderback@house.texas.gov",
+    "website": "https://house.texas.gov/members/4620"
+  },
+  "bio": "A.J. Louderback serves as State Representative for Texas House of Representatives District 30. This RepWatchr starter profile is sourced from official Texas Legislature profile data and OpenStates public records.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "TX",
+  "sourceLinks": [
+    {
+      "title": "Official Texas House of Representatives profile",
+      "url": "https://house.texas.gov/members/4620"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/main/data/tx/legislature/AJ-Louderback-dd3e49ca-2b2b-4a83-ae63-0ade6ccef73f.yml"
+    },
+    {
+      "title": "Official profile photo source",
+      "url": "https://house.texas.gov/images/members/4620.jpg?v=1"
+    }
+  ],
+  "lastVerifiedAt": "2026-04-27"
+}

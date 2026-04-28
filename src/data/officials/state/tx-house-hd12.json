@@ -1,0 +1,44 @@
+{
+  "id": "trey-wharton",
+  "name": "Trey Wharton",
+  "firstName": "Trey",
+  "lastName": "Wharton",
+  "photo": "/images/officials/state-house/trey-wharton.jpg",
+  "photoSourceUrl": "https://house.texas.gov/images/members/4795.jpg?v=1",
+  "photoCredit": "Official Texas House of Representatives photo",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-12",
+  "jurisdiction": "Texas House of Representatives",
+  "county": [
+    "Texas"
+  ],
+  "termStart": "2025-01-14",
+  "termEnd": "Current legislative term pending source review",
+  "contactInfo": {
+    "office": "Room E1.312, P.O. Box 12910, Austin, TX 78711",
+    "phone": "512-463-0412",
+    "email": "trey.wharton@house.texas.gov",
+    "website": "https://house.texas.gov/members/4795"
+  },
+  "bio": "Trey Wharton serves as State Representative for Texas House of Representatives District 12. This RepWatchr starter profile is sourced from official Texas Legislature profile data and OpenStates public records.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "TX",
+  "sourceLinks": [
+    {
+      "title": "Official Texas House of Representatives profile",
+      "url": "https://house.texas.gov/members/4795"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/main/data/tx/legislature/Trey-Wharton-afd236d4-4266-4777-8d3d-be7616a7e43f.yml"
+    },
+    {
+      "title": "Official profile photo source",
+      "url": "https://house.texas.gov/images/members/4795.jpg?v=1"
+    }
+  ],
+  "lastVerifiedAt": "2026-04-27"
+}

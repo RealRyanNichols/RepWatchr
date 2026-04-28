@@ -1,0 +1,44 @@
+{
+  "id": "mary-ann-perez",
+  "name": "Mary Ann Perez",
+  "firstName": "Mary Ann",
+  "lastName": "Perez",
+  "photo": "/images/officials/state-house/mary-ann-perez.jpg",
+  "photoSourceUrl": "https://house.texas.gov/images/members/2535.jpg?v=1",
+  "photoCredit": "Official Texas House of Representatives photo",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-144",
+  "jurisdiction": "Texas House of Representatives",
+  "county": [
+    "Texas"
+  ],
+  "termStart": "2017-01-10",
+  "termEnd": "Current legislative term pending source review",
+  "contactInfo": {
+    "office": "Room 1N.7, P.O. Box 12910, Austin, TX 78711",
+    "phone": "512-463-0460",
+    "email": "maryann.perez@house.texas.gov",
+    "website": "https://house.texas.gov/members/2535"
+  },
+  "bio": "Mary Ann Perez serves as State Representative for Texas House of Representatives District 144. This RepWatchr starter profile is sourced from official Texas Legislature profile data and OpenStates public records.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "TX",
+  "sourceLinks": [
+    {
+      "title": "Official Texas House of Representatives profile",
+      "url": "https://house.texas.gov/members/2535"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/main/data/tx/legislature/Mary-Ann-Perez-26244d6a-f0d5-4dbe-b9ed-a38df74a7bac.yml"
+    },
+    {
+      "title": "Official profile photo source",
+      "url": "https://house.texas.gov/images/members/2535.jpg?v=1"
+    }
+  ],
+  "lastVerifiedAt": "2026-04-27"
+}

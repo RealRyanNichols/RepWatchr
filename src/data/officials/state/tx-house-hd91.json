@@ -1,0 +1,44 @@
+{
+  "id": "david-lowe",
+  "name": "David Lowe",
+  "firstName": "David",
+  "lastName": "Lowe",
+  "photo": "/images/officials/state-house/david-lowe.jpg",
+  "photoSourceUrl": "https://www.house.texas.gov/images/members/4643.jpg?v=1",
+  "photoCredit": "Official Texas House of Representatives photo",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-91",
+  "jurisdiction": "Texas House of Representatives",
+  "county": [
+    "Texas"
+  ],
+  "termStart": "2025-01-14",
+  "termEnd": "Current legislative term pending source review",
+  "contactInfo": {
+    "office": "Room E1.412, P.O. Box 12910, Austin, TX 78711",
+    "phone": "512-463-0599",
+    "email": "david.lowe@house.texas.gov",
+    "website": "https://www.house.texas.gov/members/91"
+  },
+  "bio": "David Lowe serves as State Representative for Texas House of Representatives District 91. This RepWatchr starter profile is sourced from official Texas Legislature profile data and OpenStates public records.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "TX",
+  "sourceLinks": [
+    {
+      "title": "Official Texas House of Representatives profile",
+      "url": "https://www.house.texas.gov/members/91"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/main/data/tx/legislature/David-Lowe-15ce6502-645c-4031-994d-b228e1c69bb4.yml"
+    },
+    {
+      "title": "Official profile photo source",
+      "url": "https://www.house.texas.gov/images/members/4643.jpg?v=1"
+    }
+  ],
+  "lastVerifiedAt": "2026-04-27"
+}

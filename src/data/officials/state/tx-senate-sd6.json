@@ -1,0 +1,44 @@
+{
+  "id": "carol-alvarado",
+  "name": "Carol Alvarado",
+  "firstName": "Carol",
+  "lastName": "Alvarado",
+  "photo": "/images/officials/state-senate/carol-alvarado.jpg",
+  "photoSourceUrl": "https://senate.texas.gov/members/d06/img/CA-2018_web.jpg",
+  "photoCredit": "Official Texas Senate photo",
+  "party": "D",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-6",
+  "jurisdiction": "Texas Senate",
+  "county": [
+    "Texas"
+  ],
+  "termStart": "2018-12-21",
+  "termEnd": "Current legislative term pending source review",
+  "contactInfo": {
+    "office": "Room 1E.9, P.O. Box 12068 Capitol Station, Austin, TX 78711",
+    "phone": "512-463-0106",
+    "email": "carol.alvarado@senate.texas.gov",
+    "website": "https://senate.texas.gov/member.php?d=6"
+  },
+  "bio": "Carol Alvarado serves as State Senator for Texas Senate District 6. This RepWatchr starter profile is sourced from official Texas Legislature profile data and OpenStates public records.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "TX",
+  "sourceLinks": [
+    {
+      "title": "Official Texas Senate profile",
+      "url": "https://senate.texas.gov/member.php?d=6"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/main/data/tx/legislature/Carol-Alvarado-e78373de-6d96-44db-b552-6da34ed992fc.yml"
+    },
+    {
+      "title": "Official profile photo source",
+      "url": "https://senate.texas.gov/members/d06/img/CA-2018_web.jpg"
+    }
+  ],
+  "lastVerifiedAt": "2026-04-27"
+}

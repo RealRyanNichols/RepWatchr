@@ -1,0 +1,44 @@
+{
+  "id": "david-cook",
+  "name": "David Cook",
+  "firstName": "David",
+  "lastName": "Cook",
+  "photo": "/images/officials/state-house/david-cook.jpg",
+  "photoSourceUrl": "https://house.texas.gov/images/members/3960.jpg?v=1",
+  "photoCredit": "Official Texas House of Representatives photo",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-96",
+  "jurisdiction": "Texas House of Representatives",
+  "county": [
+    "Texas"
+  ],
+  "termStart": "2021-01-12",
+  "termEnd": "Current legislative term pending source review",
+  "contactInfo": {
+    "office": "Room E1.402, P.O. Box 12910, Austin, TX 78711",
+    "phone": "512-463-0374",
+    "email": "david.cook@house.texas.gov",
+    "website": "https://house.texas.gov/members/3960"
+  },
+  "bio": "David Cook serves as State Representative for Texas House of Representatives District 96. This RepWatchr starter profile is sourced from official Texas Legislature profile data and OpenStates public records.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "TX",
+  "sourceLinks": [
+    {
+      "title": "Official Texas House of Representatives profile",
+      "url": "https://house.texas.gov/members/3960"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/main/data/tx/legislature/David-Cook-2d5f629c-76a7-455b-aff7-262d8c1c23f6.yml"
+    },
+    {
+      "title": "Official profile photo source",
+      "url": "https://house.texas.gov/images/members/3960.jpg?v=1"
+    }
+  ],
+  "lastVerifiedAt": "2026-04-27"
+}

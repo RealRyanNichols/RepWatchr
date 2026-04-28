@@ -159,14 +159,21 @@ export async function handleFarettaCollectRequest(request: Request) {
       data: { user },
     } = await supabase.auth.getUser();
 
-    const interactionsTable = process.env.FARETTA_INTERACTIONS_TABLE ?? "gideon_interactions";
-    const { error } = await supabase.from(interactionsTable).insert({
+    const payload = {
       user_id: user?.id ?? null,
       kind,
       content,
       page_path: body.pagePath ?? null,
       metadata: body.metadata ?? {},
-    });
+    };
+    const configuredTable = process.env.FARETTA_INTERACTIONS_TABLE;
+    const interactionsTable = configuredTable ?? "faretta_interactions";
+    let { error } = await supabase.from(interactionsTable).insert(payload);
+
+    if (error && !configuredTable && error.message.toLowerCase().includes("faretta_interactions")) {
+      const fallback = await supabase.from("gideon_interactions").insert(payload);
+      error = fallback.error;
+    }
 
     if (error) {
       return NextResponse.json({ error: error.message }, { status: 500 });

@@ -1,0 +1,44 @@
+{
+  "id": "joan-huffman",
+  "name": "Joan Huffman",
+  "firstName": "Joan",
+  "lastName": "Huffman",
+  "photo": "/images/officials/state-senate/joan-huffman.jpg",
+  "photoSourceUrl": "https://senate.texas.gov/members/d17/img/Huffman_9S5A0096-2021web.jpg",
+  "photoCredit": "Official Texas Senate photo",
+  "party": "R",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-17",
+  "jurisdiction": "Texas Senate",
+  "county": [
+    "Texas"
+  ],
+  "termStart": "2008-12-29",
+  "termEnd": "Current legislative term pending source review",
+  "contactInfo": {
+    "office": "Room 1E.14, P.O. Box 12068 Capitol Station, Austin, TX 78711",
+    "phone": "512-463-0117",
+    "email": "joan.huffman@senate.texas.gov",
+    "website": "https://senate.texas.gov/member.php?d=17"
+  },
+  "bio": "Joan Huffman serves as State Senator for Texas Senate District 17. This RepWatchr starter profile is sourced from official Texas Legislature profile data and OpenStates public records.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "TX",
+  "sourceLinks": [
+    {
+      "title": "Official Texas Senate profile",
+      "url": "https://senate.texas.gov/member.php?d=17"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/main/data/tx/legislature/Joan-Huffman-1997b231-45f7-4f29-a435-9f52e60ebea4.yml"
+    },
+    {
+      "title": "Official profile photo source",
+      "url": "https://senate.texas.gov/members/d17/img/Huffman_9S5A0096-2021web.jpg"
+    }
+  ],
+  "lastVerifiedAt": "2026-04-27"
+}

@@ -1,0 +1,44 @@
+{
+  "id": "jeff-leach",
+  "name": "Jeff Leach",
+  "firstName": "Jeff",
+  "lastName": "Leach",
+  "photo": "/images/officials/state-house/jeff-leach.jpg",
+  "photoSourceUrl": "https://house.texas.gov/images/members/2475.jpg?v=1",
+  "photoCredit": "Official Texas House of Representatives photo",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-67",
+  "jurisdiction": "Texas House of Representatives",
+  "county": [
+    "Texas"
+  ],
+  "termStart": "2013-01-08",
+  "termEnd": "Current legislative term pending source review",
+  "contactInfo": {
+    "office": "Room 1W.3, P.O. Box 12910, Austin, TX 78711",
+    "phone": "512-463-0544",
+    "email": "jeff.leach@house.texas.gov",
+    "website": "https://house.texas.gov/members/2475"
+  },
+  "bio": "Jeff Leach serves as State Representative for Texas House of Representatives District 67. This RepWatchr starter profile is sourced from official Texas Legislature profile data and OpenStates public records.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "TX",
+  "sourceLinks": [
+    {
+      "title": "Official Texas House of Representatives profile",
+      "url": "https://house.texas.gov/members/2475"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/main/data/tx/legislature/Jeff-Leach-40a678a3-7d85-486e-bf38-5d070142aa83.yml"
+    },
+    {
+      "title": "Official profile photo source",
+      "url": "https://house.texas.gov/images/members/2475.jpg?v=1"
+    }
+  ],
+  "lastVerifiedAt": "2026-04-27"
+}

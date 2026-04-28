@@ -1,0 +1,44 @@
+{
+  "id": "vince-perez",
+  "name": "Vince Perez",
+  "firstName": "Vince",
+  "lastName": "Perez",
+  "photo": "/images/officials/state-house/vince-perez.jpg",
+  "photoSourceUrl": "https://www.house.texas.gov/images/members/4710.jpg?v=1",
+  "photoCredit": "Official Texas House of Representatives photo",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-77",
+  "jurisdiction": "Texas House of Representatives",
+  "county": [
+    "Texas"
+  ],
+  "termStart": "2025-01-14",
+  "termEnd": "Current legislative term pending source review",
+  "contactInfo": {
+    "office": "Room E2.312, P.O. Box 12910, Austin, TX 78711",
+    "phone": "512-463-0638",
+    "email": "vincent.perez@house.texas.gov",
+    "website": "https://www.house.texas.gov/members/77"
+  },
+  "bio": "Vince Perez serves as State Representative for Texas House of Representatives District 77. This RepWatchr starter profile is sourced from official Texas Legislature profile data and OpenStates public records.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "TX",
+  "sourceLinks": [
+    {
+      "title": "Official Texas House of Representatives profile",
+      "url": "https://www.house.texas.gov/members/77"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/main/data/tx/legislature/Vince-Perez-5236ee6e-a57c-4d81-90b4-50a9abde8e5e.yml"
+    },
+    {
+      "title": "Official profile photo source",
+      "url": "https://www.house.texas.gov/images/members/4710.jpg?v=1"
+    }
+  ],
+  "lastVerifiedAt": "2026-04-27"
+}

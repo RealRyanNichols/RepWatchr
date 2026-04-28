@@ -1,0 +1,44 @@
+{
+  "id": "tan-parker",
+  "name": "Tan Parker",
+  "firstName": "Tan",
+  "lastName": "Parker",
+  "photo": "/images/officials/state-senate/tan-parker.jpg",
+  "photoSourceUrl": "https://senate.texas.gov/members/d12/img/86_20190619_SAM_0008.jpg",
+  "photoCredit": "Official Texas Senate photo",
+  "party": "R",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-12",
+  "jurisdiction": "Texas Senate",
+  "county": [
+    "Texas"
+  ],
+  "termStart": "2023-01-10",
+  "termEnd": "Current legislative term pending source review",
+  "contactInfo": {
+    "office": "Room E1.608, P.O. Box 12068 Capitol Station, Austin, TX 78711",
+    "phone": "512-463-0112",
+    "email": "tan.parker@senate.texas.gov",
+    "website": "https://house.texas.gov/members/member-page/?district=63"
+  },
+  "bio": "Tan Parker serves as State Senator for Texas Senate District 12. This RepWatchr starter profile is sourced from official Texas Legislature profile data and OpenStates public records.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "TX",
+  "sourceLinks": [
+    {
+      "title": "Official Texas Senate profile",
+      "url": "https://house.texas.gov/members/member-page/?district=63"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/main/data/tx/legislature/Tan-Parker-fa4817bf-6dc6-4deb-9965-cf3f208ec976.yml"
+    },
+    {
+      "title": "Official profile photo source",
+      "url": "https://senate.texas.gov/members/d12/img/86_20190619_SAM_0008.jpg"
+    }
+  ],
+  "lastVerifiedAt": "2026-04-27"
+}

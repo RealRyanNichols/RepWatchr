@@ -88,6 +88,7 @@ export default async function CandidatePage({ params }: { params: Promise<{ dist
     { label: "Years on board", value: candidate.years_on_board ? String(candidate.years_on_board) : null },
     { label: "Election", value: candidate.election_date ?? null },
     { label: "Occupation", value: isMeaningful(candidate.occupation) ? candidate.occupation : null },
+    { label: "Source seed", value: candidate.source_snapshot ? `${candidate.source_snapshot.snapshot_date} TEA AskTED` : null },
   ];
 
   const hasFullFile =
@@ -130,12 +131,12 @@ export default async function CandidatePage({ params }: { params: Promise<{ dist
                     {candidate.on_2026_ballot || candidate.election_date?.includes("2026") ? (
                       <span className="rounded-full bg-red-100 px-3 py-1 text-xs font-black text-red-700">On 2026 ballot</span>
                     ) : null}
-                    {candidate.status === "stub" || candidate.status === "needs_review" ? (
+                    {candidate.status === "queued" || candidate.status === "stub" || candidate.status === "needs_review" ? (
                       <span
                         className="rounded-full bg-amber-100 px-3 py-1 text-xs font-black text-amber-800"
-                        title="Profile is still being researched. Some fields may be missing or pending source confirmation."
+                        title="Profile is still being researched. Some fields may be missing or pending local source confirmation."
                       >
-                        Profile in progress
+                        {candidate.status === "queued" ? "Source-seeded profile" : "Profile in progress"}
                       </span>
                     ) : null}
                   </div>
