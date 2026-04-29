@@ -61,6 +61,14 @@ main {
   animation-play-state: paused;
 }
 
+.repwatchr-filter-scroll {
+  scrollbar-width: none;
+}
+
+.repwatchr-filter-scroll::-webkit-scrollbar {
+  display: none;
+}
+
 @keyframes repwatchr-marquee {
   from {
     transform: translateX(0);

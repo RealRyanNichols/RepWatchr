@@ -78,32 +78,32 @@ export default function OfficialGrid({
   }, [officials, levelFilter, partyFilter, countyFilter, searchQuery]);
 
   return (
-    <section className="rounded-2xl border border-slate-300 bg-white p-4 shadow-sm sm:p-5">
+    <section className="rounded-2xl border border-slate-300 bg-white p-3 shadow-sm sm:p-5">
       {/* Search */}
-      <div className="mb-4 grid gap-3 lg:grid-cols-[1fr_auto] lg:items-center">
+      <div className="mb-3 grid gap-2 lg:grid-cols-[1fr_auto] lg:items-center">
         <input
           type="text"
           value={searchQuery}
           onChange={(e) => setSearchQuery(e.target.value)}
           placeholder="Search by name, office, district, state, or county..."
           aria-label="Search officials by name, office, district, state, or county"
-          className="w-full rounded-xl border border-slate-300 bg-white px-4 py-3 text-base font-bold text-slate-950 placeholder-slate-500 shadow-sm focus:border-blue-500 focus:outline-none focus:ring-2 focus:ring-blue-100"
+          className="w-full rounded-xl border border-slate-300 bg-white px-4 py-3 text-sm font-bold text-slate-950 placeholder-slate-500 shadow-sm focus:border-blue-500 focus:outline-none focus:ring-2 focus:ring-blue-100 sm:text-base"
         />
-        <div className="rounded-xl border border-blue-100 bg-blue-50 px-4 py-2.5 text-sm font-black text-blue-950 shadow-sm">
+        <div className="rounded-xl border border-blue-100 bg-blue-50 px-4 py-2.5 text-sm font-black text-blue-950 shadow-sm lg:text-right">
           Showing {filtered.length} of {officials.length} officials
         </div>
       </div>
 
       {/* Filters */}
-      <div className="mb-6 flex flex-wrap gap-3">
+      <div className="mb-4 grid gap-2 sm:mb-6">
         {/* Level filter */}
-        <div className="flex flex-wrap gap-1">
+        <div className="repwatchr-filter-scroll -mx-1 flex gap-1 overflow-x-auto px-1 pb-1 sm:mx-0 sm:flex-wrap sm:overflow-visible sm:px-0 sm:pb-0">
           {levelOptions.map((opt) => (
             <button
               key={opt.value}
               type="button"
               onClick={() => setLevelFilter(opt.value)}
-              className={`rounded-full px-3 py-1.5 text-xs font-medium transition-colors ${
+              className={`shrink-0 rounded-full px-3 py-1.5 text-xs font-bold transition-colors ${
                 levelFilter === opt.value
                   ? "bg-blue-700 text-white shadow-sm"
                   : "border border-slate-300 bg-white text-slate-700 hover:border-blue-300 hover:bg-blue-50 hover:text-blue-800"
@@ -115,7 +115,7 @@ export default function OfficialGrid({
         </div>
 
         {/* Party filter */}
-        <div className="flex flex-wrap gap-1">
+        <div className="hidden flex-wrap gap-1 md:flex">
           {partyOptions.map((opt) => (
             <button
               key={opt.value}
@@ -132,12 +132,28 @@ export default function OfficialGrid({
           ))}
         </div>
 
+        <div className="grid gap-2 md:hidden">
+          <select
+            value={partyFilter}
+            onChange={(e) => setPartyFilter(e.target.value as Party | "all")}
+            aria-label="Filter officials by party"
+            className="rounded-lg border border-slate-300 bg-white px-3 py-2 text-sm font-bold text-slate-800 shadow-sm focus:border-blue-500 focus:outline-none focus:ring-2 focus:ring-blue-100"
+          >
+            {partyOptions.map((opt) => (
+              <option key={opt.value} value={opt.value}>
+                {opt.label}
+              </option>
+            ))}
+          </select>
+        </div>
+
         {/* County filter */}
         {counties.length > 0 && (
           <select
             value={countyFilter}
             onChange={(e) => setCountyFilter(e.target.value)}
-            className="rounded-lg border border-slate-300 bg-white px-3 py-1.5 text-xs font-semibold text-slate-800 shadow-sm focus:border-blue-500 focus:outline-none focus:ring-2 focus:ring-blue-100"
+            aria-label="Filter officials by county"
+            className="rounded-lg border border-slate-300 bg-white px-3 py-2 text-sm font-bold text-slate-800 shadow-sm focus:border-blue-500 focus:outline-none focus:ring-2 focus:ring-blue-100 md:w-fit md:py-1.5 md:text-xs"
           >
             <option value="all">All Counties</option>
             {counties.map((c) => (

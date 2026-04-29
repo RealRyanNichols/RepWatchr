@@ -58,7 +58,7 @@ export default function SchoolBoardsPage() {
       {/* HERO - obvious visual reset, action first */}
       <section className="relative overflow-hidden border-b border-[#0b1f3a] bg-[#06172f] text-white">
         <div className="h-2 w-full bg-[linear-gradient(90deg,#bf0d3e_0%,#bf0d3e_33%,#ffffff_33%,#ffffff_66%,#002868_66%,#002868_100%)]" />
-        <div className="pointer-events-none absolute inset-y-0 right-0 w-1/2 bg-[radial-gradient(circle_at_top_right,rgba(212,168,85,0.24),transparent_42%),linear-gradient(135deg,transparent,rgba(255,255,255,0.08))]" />
+        <div className="pointer-events-none absolute inset-y-0 right-0 hidden w-1/2 bg-[radial-gradient(circle_at_top_right,rgba(212,168,85,0.24),transparent_42%),linear-gradient(135deg,transparent,rgba(255,255,255,0.08))] lg:block" />
         <div className="relative mx-auto max-w-7xl px-4 py-6 sm:px-6 lg:px-8">
           <div className="grid gap-5 lg:grid-cols-[minmax(0,0.9fr)_minmax(460px,1.1fr)] lg:items-stretch">
             <div className="flex min-h-[420px] flex-col justify-between rounded-2xl border border-white/10 bg-white/[0.04] p-5 shadow-2xl sm:p-6">
