@@ -8,6 +8,7 @@ import { getRepWatchrDataStats } from "@/lib/data";
 import { getAllOfficialIdeologyProfiles } from "@/lib/ideology";
 import { getSchoolBoardCandidateUrl, getSchoolBoardDistrictUrl } from "@/lib/school-board-urls";
 import { getAttorneyWatchProfiles, getMediaWatchProfiles, getPowerWatchStats } from "@/lib/power-watch";
+import { getAttorneyBuildoutDashboard } from "@/data/attorney-buildout";
 import {
   getNationalBuildoutSummary,
   nationalGovernmentScopes,
@@ -124,7 +125,9 @@ export default function BuildoutDashboardPage() {
   const report = getSchoolBoardCompletionReport();
   const stats = getSchoolBoardStats();
   const dataStats = getRepWatchrDataStats();
-  const attorneyStats = getPowerWatchStats(getAttorneyWatchProfiles());
+  const attorneyProfiles = getAttorneyWatchProfiles();
+  const attorneyStats = getPowerWatchStats(attorneyProfiles);
+  const attorneyBuildout = getAttorneyBuildoutDashboard(attorneyProfiles);
   const mediaStats = getPowerWatchStats(getMediaWatchProfiles());
   const nationalSummary = getNationalBuildoutSummary();
   const geographic = getGeographicBuildoutDashboard();
@@ -183,6 +186,12 @@ export default function BuildoutDashboardPage() {
       href: "/methodology",
     },
     {
+      label: "Attorney license-source map",
+      value: attorneyBuildout.sourceMapped,
+      status: `${attorneyBuildout.sourceMapped}/${attorneyBuildout.sources.length} states have a mapped licensing authority. Texas has ${attorneyBuildout.texasProfiles} attorney-watch records loaded.`,
+      href: "/attorneys",
+    },
+    {
       label: "Ideology master rows",
       value: ideologyProfiles.length,
       status: `${voteWeightedIdeologyProfiles.length} rows have a vote-weighted left/right score. ${pendingIdeologyProfiles} rows have centered charts pending mapped vote records.`,
@@ -225,6 +234,12 @@ export default function BuildoutDashboardPage() {
       value: sourceUrlCount,
       status: `${stats.sourceCount} school-board URLs and ${dataStats.publicSourceUrls} official, funding, vote, red-flag, or news URLs. This is evidence coverage, not pageview analytics.`,
       href: "/methodology",
+    },
+    {
+      label: "Attorney cross-links",
+      value: attorneyBuildout.crossLinkedProfiles,
+      status: `${attorneyBuildout.crossLinkedProfiles}/${attorneyBuildout.texasProfiles} Texas attorney-watch records have firm, person, case-file, public-record, or official relationship links.`,
+      href: "/attorneys?state=TX",
     },
   ];
   const notTrackedSurfaces = [
@@ -270,6 +285,12 @@ export default function BuildoutDashboardPage() {
       status: "Completion scoring still sees these as source gaps. They need working public URLs before being counted as supported records.",
       href: "/buildout",
     },
+    {
+      label: "Texas attorney license-link gaps",
+      value: Math.max(0, attorneyBuildout.texasAttorneyPeople - attorneyBuildout.licenseLinkedPeople),
+      status: "Individual attorney pages need official bar profile links before license-status claims should be treated as complete.",
+      href: "/attorneys?state=TX",
+    },
   ];
   const analyticsSurfaces = [
     {
@@ -313,6 +334,11 @@ export default function BuildoutDashboardPage() {
       label: "Attorney/media profiles",
       value: attorneyStats.totalProfiles + mediaStats.totalProfiles,
       detail: `${attorneyStats.totalProfiles} attorney/law-firm profiles and ${mediaStats.totalProfiles} media/newsroom profiles are source-seeded.`,
+    },
+    {
+      label: "Attorney bar sources",
+      value: attorneyBuildout.sourceMapped,
+      detail: `${attorneyBuildout.sourceMapped}/${attorneyBuildout.sources.length} state license-source paths are mapped. Texas is the active attorney pass.`,
     },
     {
       label: "Social connections",

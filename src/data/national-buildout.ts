@@ -76,6 +76,13 @@ export const nationalGovernmentScopes: NationalGovernmentScope[] = [
     sourcePlan: ["court directories", "prosecutor offices", "sheriff offices", "state judicial directories"],
   },
   {
+    id: "attorneys-law-firms",
+    label: "Attorneys and law firms",
+    publicDescription: "Licensed attorneys, law firms, bar-source records, public discipline sources, court footprints, and public-client relationships.",
+    buildoutNeed: "State bar license source, firm roster, practice area, public discipline source, court-record links, public-client context, and correction path.",
+    sourcePlan: ["state bar license lookups", "firm websites", "court dockets", "disciplinary boards", "public contracts and representation records"],
+  },
+  {
     id: "special-districts",
     label: "Special districts and public authorities",
     publicDescription: "Water districts, appraisal districts, hospital districts, transit boards, port authorities, and other public bodies.",

@@ -3,6 +3,8 @@ import Link from "next/link";
 import PowerProfileCard from "@/components/power-watch/PowerProfileCard";
 import PowerProfileRail from "@/components/power-watch/PowerProfileRail";
 import NationalSpotlightSelector from "@/components/shared/NationalSpotlightSelector";
+import AttorneyBuildoutTracker from "@/components/attorneys/AttorneyBuildoutTracker";
+import AttorneyLearningQuestions from "@/components/attorneys/AttorneyLearningQuestions";
 import { attorneyWatchImportPlan } from "@/data/attorney-watch";
 import { getAllNationalJurisdictions } from "@/data/national-buildout";
 import { getAttorneyWatchProfiles, getPowerWatchStats } from "@/lib/power-watch";
@@ -11,7 +13,7 @@ import { countByState, getSelectedStateCode } from "@/lib/state-scope";
 export const metadata: Metadata = {
   title: "National Attorneys and Law Firms | RepWatchr",
   description:
-    "Choose a state to track attorneys and law firms with source-backed public profiles, public bar records, court records, representation context, and correction review.",
+    "Track attorney and law-firm profiles state by state with bar-license sources, completion stages, cross-links, intake questions, and correction review.",
 };
 
 function StatCard({ label, value, detail }: { label: string; value: string | number; detail: string }) {
@@ -75,10 +77,12 @@ export default async function AttorneysPage({
             </h2>
             <p className="mt-2 max-w-3xl text-sm font-semibold leading-6 text-amber-900">
               {!selectedStateCode
-                ? "Texas and New York have starter attorney records. Every other state is turned on for source import, but visitors must choose their state before profile cards appear."
-                : "This state still needs bar-directory pulls, firm rosters, court-record sources, public-client context, review sources, and correction paths before cards appear here."}
+                ? "Texas is the active first pass. Every state now has a bar-license source path mapped, but profile cards only appear after public records are source-seeded."
+                : "This state still needs bar-license pulls, firm rosters, court-record sources, public-client context, review sources, and correction paths before cards appear here."}
             </p>
           </section>
+          <AttorneyBuildoutTracker profiles={profiles} />
+          <AttorneyLearningQuestions />
         </main>
       </div>
     );
@@ -88,6 +92,8 @@ export default async function AttorneysPage({
     <div className="bg-slate-100">
       <main className="mx-auto max-w-7xl px-4 py-8 sm:px-6 lg:px-8">
         {stateSelector}
+
+        <AttorneyBuildoutTracker profiles={profiles} />
 
         <PowerProfileRail
           profiles={topProfiles}
@@ -180,6 +186,8 @@ export default async function AttorneysPage({
             ))}
           </div>
         </section>
+
+        <AttorneyLearningQuestions />
       </main>
     </div>
   );

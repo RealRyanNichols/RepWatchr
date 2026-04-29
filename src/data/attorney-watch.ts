@@ -24,11 +24,11 @@ const rogersWatchMark = {
 } as const;
 
 export const attorneyWatchImportPlan = {
-  title: "Texas attorney and law-firm buildout",
-  region: "Texas, starting with East Texas",
-  masterSource: "State Bar of Texas Find a Lawyer",
+  title: "State-by-state attorney and law-firm buildout",
+  region: "Texas first, then border states and high-volume states",
+  masterSource: "State Bar of Texas Find a Lawyer and ABA lawyer licensing agency list",
   summary:
-    "RepWatchr will treat the State Bar directory as the first license-status source, then connect attorneys and firms to public court records, official representation records, campaign/vendor records, disciplinary records when public, and correction requests.",
+    "RepWatchr will treat official state licensing records as the first license-status source, starting in Texas, then connect attorneys and firms to public court records, official representation records, campaign/vendor records, disciplinary records when public, and correction requests.",
   sourceLinks: [
     {
       title: "State Bar of Texas Find a Lawyer",
@@ -39,6 +39,18 @@ export const attorneyWatchImportPlan = {
     {
       title: "State Bar of Texas public information and grievance-history access",
       url: "https://www.texasbar.com/publicinformation/",
+      sourceType: "official-directory",
+      lastCheckedAt: checkedAt,
+    },
+    {
+      title: "American Bar Association lawyer licensing agency list",
+      url: "https://www.americanbar.org/groups/legal_services/flh-home/flh-lawyer-licensing/",
+      sourceType: "official-directory",
+      lastCheckedAt: checkedAt,
+    },
+    {
+      title: "American Bar Association bar directories and lawyer finders",
+      url: "https://www.americanbar.org/groups/legal_services/flh-home/flh-bar-directories-and-lawyer-finders/",
       sourceType: "official-directory",
       lastCheckedAt: checkedAt,
     },
