@@ -11,6 +11,9 @@ const focusButtons = [
   "court footprint first",
   "government-client ties",
   "client-file and withdrawal issues",
+  "public defender office first",
+  "bar source before person profile",
+  "court appointment context",
   "reviews and public sentiment",
 ];
 
@@ -56,7 +59,7 @@ export default function AttorneyLearningQuestions() {
           <p className="text-xs font-black uppercase tracking-[0.18em] text-red-700">Teach the attorney model</p>
           <h2 className="mt-2 text-2xl font-black text-slate-950">Ask better intake questions as the attorney map grows.</h2>
           <p className="mt-2 text-sm font-semibold leading-6 text-slate-600">
-            These prompts collect structured research preferences through the existing Faretta interaction table. They should guide future attorney intake without publishing private facts or unsupported accusations.
+            These prompts collect structured research preferences through the existing Faretta interaction table. They should guide future attorney and public-defender intake without publishing private facts or unsupported accusations.
           </p>
           <div className="mt-4 rounded-xl border border-amber-200 bg-amber-50 p-4 text-xs font-bold leading-5 text-amber-950">
             Do not paste private client data, sealed records, minor information, or confidential case material here. Keep answers about source priority, public records, and profile standards.

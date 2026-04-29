@@ -11,9 +11,9 @@ import { getAttorneyWatchProfiles, getPowerWatchStats } from "@/lib/power-watch"
 import { countByState, getSelectedStateCode } from "@/lib/state-scope";
 
 export const metadata: Metadata = {
-  title: "National Attorneys and Law Firms | RepWatchr",
+  title: "National Attorneys, Public Defenders, and Law Firms | RepWatchr",
   description:
-    "Track attorney and law-firm profiles state by state with bar-license sources, completion stages, cross-links, intake questions, and correction review.",
+    "Track attorney, public-defender, and law-firm profiles state by state with bar-license sources, completion stages, cross-links, intake questions, and correction review.",
 };
 
 function StatCard({ label, value, detail }: { label: string; value: string | number; detail: string }) {
@@ -53,9 +53,9 @@ export default async function AttorneysPage({
       basePath="/attorneys"
       selectedStateCode={selectedStateCode}
       jurisdictions={jurisdictions}
-      pageLabel="Attorneys and law firms"
-      title="Attorneys and law firms, nationwide."
-      description="RepWatchr opens attorney watch on the national map first. Choose a state, then open source-backed attorney, law-firm, bar-source, ruling, review, and public-record buildout for that state."
+      pageLabel="Attorneys and public defenders"
+      title="Attorneys, public defenders, and law firms, nationwide."
+      description="RepWatchr opens attorney watch on the national map first. Choose a state, then open source-backed attorney, public-defender office, law-firm, bar-source, ruling, review, and public-record buildout for that state."
       profileNoun="attorney profiles"
       profileCountsByState={profileCountsByState}
     />
@@ -77,8 +77,8 @@ export default async function AttorneysPage({
             </h2>
             <p className="mt-2 max-w-3xl text-sm font-semibold leading-6 text-amber-900">
               {!selectedStateCode
-                ? "Texas is the active first pass. Every state now has a bar-license source path mapped, but profile cards only appear after public records are source-seeded."
-                : "This state still needs bar-license pulls, firm rosters, court-record sources, public-client context, review sources, and correction paths before cards appear here."}
+                ? "Texas is the active first pass. Every state now has a bar-license source path mapped, and the public-defender queue starts with official offices and directories before named people."
+                : "This state still needs bar-license pulls, public-defender office sources, firm rosters, court-record sources, public-client context, review sources, and correction paths before cards appear here."}
             </p>
           </section>
           <AttorneyBuildoutTracker profiles={profiles} />
@@ -111,10 +111,10 @@ export default async function AttorneysPage({
                 Legal power map
               </p>
               <h1 className="mt-3 text-3xl font-black tracking-tight text-slate-950 sm:text-4xl">
-                Attorneys and law firms are part of the record.
+                Attorneys, public defenders, and law firms are part of the record.
               </h1>
               <p className="mt-3 max-w-3xl text-sm font-semibold leading-6 text-slate-700 sm:text-base">
-                RepWatchr is adding attorneys, firms, and bar-source records state by state: public source first, profile second, scoring or flags only after the evidence is attached. Reviews, social sentiment, client outcomes, rulings, discipline, and client-rights findings each get their own evidence bucket.
+                RepWatchr is adding attorneys, public defender offices, firms, and bar-source records state by state: public source first, profile second, scoring or flags only after the evidence is attached. Reviews, social sentiment, client outcomes, rulings, discipline, and client-rights findings each get their own evidence bucket.
               </p>
               <div className="mt-5 flex flex-wrap gap-2">
                 <Link href="#profiles" className="rounded-xl bg-blue-700 px-4 py-3 text-sm font-black text-white transition hover:bg-blue-800">
@@ -131,7 +131,7 @@ export default async function AttorneysPage({
               </div>
             </div>
             <div className="grid grid-cols-2 gap-3">
-              <StatCard label="Profiles seeded" value={stats.totalProfiles} detail={`${stats.organizations} organizations and ${stats.people} individual attorney records started.`} />
+              <StatCard label="Profiles seeded" value={stats.totalProfiles} detail={`${stats.organizations} organizations/public-defense sources and ${stats.people} individual attorney records started.`} />
               <StatCard label="Source links" value={stats.sourceLinks} detail="Official bar, firm, court, and public-record links are the required starting point." />
               <StatCard label="Counties touched" value={stats.counties} detail={`${stats.cities} East Texas cities in this first import batch.`} />
               <StatCard label="Need buildout" value={stats.needsBuildout} detail="These need State Bar profile pulls, court records, public clients, and corrections review." />
@@ -155,6 +155,7 @@ export default async function AttorneysPage({
             <div className="grid gap-3 sm:grid-cols-2">
               {[
                 "State Bar license profile",
+                "Public defender office roster and appointment source",
                 "Firm website and public roster",
                 "Court appearances and filed pleadings",
                 "Government clients and contracts",
@@ -173,7 +174,7 @@ export default async function AttorneysPage({
           <div className="mb-4 flex flex-col gap-2 sm:flex-row sm:items-end sm:justify-between">
             <div>
               <p className="text-xs font-black uppercase tracking-[0.18em] text-red-700">{selectedState?.name ?? selectedStateCode} pass</p>
-              <h2 className="text-2xl font-black text-slate-950">Law-firm and attorney profiles</h2>
+              <h2 className="text-2xl font-black text-slate-950">Law-firm, public-defender, and attorney profiles</h2>
             </div>
             <p className="text-xs font-bold text-slate-500">Statewide import path is active.</p>
           </div>

@@ -192,6 +192,12 @@ export default function BuildoutDashboardPage() {
       href: "/attorneys",
     },
     {
+      label: "Public defender source map",
+      value: attorneyBuildout.publicDefenderSourcesMapped,
+      status: `${attorneyBuildout.publicDefenderSourcesMapped}/${attorneyBuildout.publicDefenderSourceTarget} official public-defense source paths mapped; ${attorneyBuildout.publicDefenderProfiles} public-defense records seeded.`,
+      href: "/attorneys",
+    },
+    {
       label: "Ideology master rows",
       value: ideologyProfiles.length,
       status: `${voteWeightedIdeologyProfiles.length} rows have a vote-weighted left/right score. ${pendingIdeologyProfiles} rows have centered charts pending mapped vote records.`,
@@ -240,6 +246,12 @@ export default function BuildoutDashboardPage() {
       value: attorneyBuildout.crossLinkedProfiles,
       status: `${attorneyBuildout.crossLinkedProfiles}/${attorneyBuildout.texasProfiles} Texas attorney-watch records have firm, person, case-file, public-record, or official relationship links.`,
       href: "/attorneys?state=TX",
+    },
+    {
+      label: "Public defender records",
+      value: attorneyBuildout.publicDefenderProfiles,
+      status: `${attorneyBuildout.publicDefenderSeededStates} states have at least one public-defense source record. Person profiles stay blocked until roster and bar-license sources are attached.`,
+      href: "/attorneys",
     },
   ];
   const notTrackedSurfaces = [
@@ -291,6 +303,12 @@ export default function BuildoutDashboardPage() {
       status: "Individual attorney pages need official bar profile links before license-status claims should be treated as complete.",
       href: "/attorneys?state=TX",
     },
+    {
+      label: "Public defender person profiles blocked",
+      value: attorneyBuildout.publicDefenderSourcesMapped,
+      status: "Mapped public defender offices are not treated as named-attorney profiles until an official roster and state/federal licensing source are both attached.",
+      href: "/attorneys",
+    },
   ];
   const analyticsSurfaces = [
     {
@@ -333,7 +351,7 @@ export default function BuildoutDashboardPage() {
     {
       label: "Attorney/media profiles",
       value: attorneyStats.totalProfiles + mediaStats.totalProfiles,
-      detail: `${attorneyStats.totalProfiles} attorney/law-firm profiles and ${mediaStats.totalProfiles} media/newsroom profiles are source-seeded.`,
+      detail: `${attorneyStats.totalProfiles} attorney/law-firm/public-defense profiles and ${mediaStats.totalProfiles} media/newsroom profiles are source-seeded.`,
     },
     {
       label: "Attorney bar sources",

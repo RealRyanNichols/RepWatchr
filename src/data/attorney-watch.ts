@@ -1,3 +1,4 @@
+import { publicDefenderWatchProfiles } from "@/data/public-defender-watch";
 import type { PublicPowerProfile } from "@/types/power-watch";
 
 const checkedAt = "2026-04-29";
@@ -59,6 +60,7 @@ export const attorneyWatchImportPlan = {
 } as const;
 
 export const attorneyWatchProfiles: PublicPowerProfile[] = [
+  ...publicDefenderWatchProfiles,
   {
     slug: "rogers-law-firm-longview",
     name: "Rogers Law Firm",

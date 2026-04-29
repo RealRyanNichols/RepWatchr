@@ -1,3 +1,7 @@
+import {
+  publicDefenderImportPlan,
+  publicDefenderOfficeSources,
+} from "@/data/public-defender-watch";
 import type { PublicPowerProfile } from "@/types/power-watch";
 
 const checkedAt = "2026-04-29";
@@ -71,6 +75,11 @@ export const attorneyBuildoutQuestions = [
     id: "model-feedback",
     question: "What should Faretta AI ask you next when a new attorney name is submitted?",
     options: ["state and bar number", "court/cause number", "firm and public role", "source URL"],
+  },
+  {
+    id: "public-defender-standard",
+    question: "What source rule should apply before a public defender person profile goes live?",
+    options: ["office roster plus bar source", "appointment context plus license", "county defender plan", "all of the above"],
   },
 ] as const;
 
@@ -609,12 +618,21 @@ function hasCrossLink(profile: PublicPowerProfile) {
   );
 }
 
+function isPublicDefenseProfile(profile: PublicPowerProfile) {
+  const joined = `${profile.categoryLabel} ${profile.profileTags?.join(" ") ?? ""} ${profile.summary} ${profile.whyTracked}`.toLowerCase();
+  return joined.includes("public defender") || joined.includes("public defense") || joined.includes("federal defender");
+}
+
 export function getAttorneyBuildoutDashboard(profiles: PublicPowerProfile[]) {
   const stateCount = new Set(profiles.map((profile) => profile.state.toUpperCase())).size;
   const texasProfiles = profiles.filter((profile) => profile.state.toUpperCase() === "TX");
   const texasAttorneyPeople = texasProfiles.filter((profile) => profile.kind === "attorney");
   const licenseLinkedPeople = texasAttorneyPeople.filter(hasLicenseSource);
   const crossLinkedProfiles = texasProfiles.filter(hasCrossLink);
+  const publicDefenderProfiles = profiles.filter(isPublicDefenseProfile);
+  const publicDefenderSeededStates = new Set(publicDefenderProfiles.map((profile) => profile.state.toUpperCase())).size;
+  const publicDefenderSourcesMapped = publicDefenderOfficeSources.length;
+  const publicDefenderSourceTarget = 51;
   const sourceMapped = attorneyBarSources.filter((source) => source.status !== "queued").length;
   const activeSources = attorneyBarSources.filter((source) => source.status === "active").length;
   const averageCompletion =
@@ -654,6 +672,16 @@ export function getAttorneyBuildoutDashboard(profiles: PublicPowerProfile[]) {
       href: "/attorneys?state=TX#profiles",
     },
     {
+      id: "public-defense-source-map",
+      label: "Public defender source map",
+      current: publicDefenderSourcesMapped,
+      target: publicDefenderSourceTarget,
+      percent: percent(publicDefenderSourcesMapped, publicDefenderSourceTarget),
+      stage: launchStage(percent(publicDefenderSourcesMapped, publicDefenderSourceTarget)),
+      detail: "Official defender offices and directories are mapped before named public defenders are imported.",
+      href: publicDefenderImportPlan.sourceLinks[0].url,
+    },
+    {
       id: "license-linked-people",
       label: "Person license links",
       current: licenseLinkedPeople.length,
@@ -677,9 +705,9 @@ export function getAttorneyBuildoutDashboard(profiles: PublicPowerProfile[]) {
       id: "learning-loop",
       label: "Learning loop",
       current: attorneyBuildoutQuestions.length,
-      target: 5,
-      percent: percent(attorneyBuildoutQuestions.length, 5),
-      stage: launchStage(percent(attorneyBuildoutQuestions.length, 5)),
+      target: Math.max(5, attorneyBuildoutQuestions.length),
+      percent: percent(attorneyBuildoutQuestions.length, Math.max(5, attorneyBuildoutQuestions.length)),
+      stage: launchStage(percent(attorneyBuildoutQuestions.length, Math.max(5, attorneyBuildoutQuestions.length))),
       detail: "The page now asks structured questions so submitted answers can teach which attorney signals matter most.",
       href: "/attorneys#teach-model",
     },
@@ -692,6 +720,12 @@ export function getAttorneyBuildoutDashboard(profiles: PublicPowerProfile[]) {
     texasAttorneyPeople: texasAttorneyPeople.length,
     licenseLinkedPeople: licenseLinkedPeople.length,
     crossLinkedProfiles: crossLinkedProfiles.length,
+    publicDefenderProfiles: publicDefenderProfiles.length,
+    publicDefenderSeededStates,
+    publicDefenderSourcesMapped,
+    publicDefenderSourceTarget,
+    publicDefenderSources: publicDefenderOfficeSources,
+    publicDefenderPlan: publicDefenderImportPlan,
     sourceMapped,
     activeSources,
     averageCompletion,
