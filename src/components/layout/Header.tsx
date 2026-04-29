@@ -26,41 +26,30 @@ export default function Header() {
   return (
     <header className="sticky top-0 z-50 w-full border-b border-blue-900/10 bg-white/95 shadow-sm backdrop-blur">
       <div className="h-1 w-full bg-[linear-gradient(90deg,#bf0d3e_0%,#bf0d3e_33%,#ffffff_33%,#ffffff_66%,#002868_66%,#002868_100%)]" />
-      <div className="mx-auto flex max-w-7xl items-center justify-between gap-3 px-3 py-1.5 sm:px-5 lg:px-8">
-        {/* Logo / Site Name */}
-        <Link href="/" className="flex min-w-0 shrink-0 items-center gap-2 py-1 transition hover:opacity-90 sm:gap-3">
-          <span className="grid h-14 w-24 shrink-0 place-items-center overflow-hidden sm:h-16 sm:w-32 lg:h-20 lg:w-40">
+      <div className="mx-auto grid max-w-7xl grid-cols-[auto_minmax(0,1fr)_auto] items-center gap-2 px-3 py-2 sm:gap-4 sm:px-5 lg:px-8">
+        {/* Logo mark */}
+        <Link href="/" className="grid shrink-0 place-items-center transition hover:opacity-90" aria-label="RepWatchr home">
+          <span className="relative h-12 w-12 overflow-hidden rounded-full border border-blue-100 bg-blue-950 shadow-sm sm:h-14 sm:w-14 md:h-16 md:w-16">
             <Image
-              src="/images/logo.png"
-              alt="RepWatchr"
-              width={160}
-              height={80}
+              src="/images/icon.png"
+              alt="RepWatchr logo"
+              fill
+              sizes="64px"
               priority
-              className="h-full w-full object-contain"
+              className="object-cover"
             />
-          </span>
-          <span className="hidden min-w-0 leading-tight sm:block">
-            <span className="block truncate text-base font-black text-blue-950 sm:text-lg">
-              RepWatchr
-            </span>
-            <span className="block max-w-[10rem] truncate text-[9px] font-black uppercase tracking-wide text-red-700 sm:max-w-none sm:text-[10px]">
-              God. Family. Country.
-            </span>
           </span>
         </Link>
 
-        {/* Desktop Navigation */}
-        <nav className="hidden items-center gap-0.5 rounded-full border border-blue-100 bg-blue-50/80 px-1.5 py-1.5 xl:flex">
-          {navLinks.map((link) => (
-            <Link
-              key={link.href}
-              href={link.href}
-              className="rounded-full px-2 py-1.5 text-[11px] font-black text-blue-950 transition-colors hover:bg-white hover:text-red-700 2xl:px-2.5 2xl:text-[12px]"
-            >
-              {link.label}
-            </Link>
-          ))}
-        </nav>
+        {/* Site Name */}
+        <Link href="/" className="min-w-0 text-center leading-none transition hover:opacity-90" aria-label="RepWatchr home">
+          <span className="block text-2xl font-black tracking-normal text-blue-950 sm:text-4xl md:text-5xl">
+            RepWatchr
+          </span>
+          <span className="mt-1 block text-[10px] font-black uppercase leading-tight tracking-wide text-red-700 sm:text-sm md:text-base">
+            God. Family. Country. Justice.
+          </span>
+        </Link>
 
         {/* Auth + Mobile Menu */}
         <div className="flex items-center gap-2">
@@ -107,6 +96,21 @@ export default function Header() {
           </button>
         </div>
       </div>
+
+      {/* Desktop Navigation */}
+      <nav className="hidden border-t border-blue-100 bg-white/95 px-3 py-1.5 xl:block">
+        <div className="mx-auto flex max-w-7xl items-center justify-center gap-0.5 rounded-full bg-blue-50/80 px-1.5 py-1.5">
+          {navLinks.map((link) => (
+            <Link
+              key={link.href}
+              href={link.href}
+              className="rounded-full px-2 py-1.5 text-[11px] font-black text-blue-950 transition-colors hover:bg-white hover:text-red-700 2xl:px-2.5 2xl:text-[12px]"
+            >
+              {link.label}
+            </Link>
+          ))}
+        </div>
+      </nav>
 
       {/* Mobile Menu */}
       {menuOpen && (
