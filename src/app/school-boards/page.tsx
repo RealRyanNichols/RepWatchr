@@ -4,6 +4,7 @@ import CommentSection from "@/components/comments/CommentSection";
 import LiveEngagementCounter from "@/components/school-board/LiveEngagementCounter";
 import DrillDownPicker from "@/components/school-board/DrillDownPicker";
 import ShareButtons from "@/components/shared/ShareButtons";
+import NationalSpotlightSelector from "@/components/shared/NationalSpotlightSelector";
 import { buildPickerStates } from "@/lib/picker-data";
 import {
   getCandidateFlags,
@@ -15,18 +16,29 @@ import {
   getShareLine,
 } from "@/lib/school-board-research";
 import { getSchoolBoardCandidateUrl, getSchoolBoardDistrictUrl } from "@/lib/school-board-urls";
+import { getAllNationalJurisdictions } from "@/data/national-buildout";
+import { getSelectedStateCode } from "@/lib/state-scope";
 
 export const metadata: Metadata = {
-  title: "School Board Watch",
+  title: "National School Board Watch",
   description:
-    "Find Texas school-board trustees in three taps. TEA AskTED source-seeded profiles, live vote/comment tables, A-F citizen grades, and 2026 ballot tracking where loaded.",
+    "Choose a state to find school-board trustees. Texas is source-seeded first, with national state-by-state school-board buildout queued.",
 };
 
-export default function SchoolBoardsPage() {
+export default async function SchoolBoardsPage({
+  searchParams,
+}: {
+  searchParams?: Promise<Record<string, string | string[] | undefined>>;
+}) {
+  const params = searchParams ? await searchParams : {};
+  const selectedStateCode = getSelectedStateCode(params);
   const stats = getSchoolBoardStats();
   const statewideImport = getStatewideSchoolBoardImportMeta();
   const districts = getSchoolBoardDistricts();
   const candidates = getSchoolBoardDossiers();
+  const jurisdictions = getAllNationalJurisdictions();
+  const selectedState = jurisdictions.find((state) => state.code === selectedStateCode);
+  const profileCountsByState = { TX: stats.candidates };
   const pickerStates = buildPickerStates();
   const ballotCandidates = candidates.filter((c) => c.on_2026_ballot || c.election_date?.includes("2026"));
   const quickDistricts = [
@@ -52,9 +64,54 @@ export default function SchoolBoardsPage() {
     })
     .slice(0, 10);
   const sharedShareLine = "Find your Texas school board on RepWatchr - sourced trustee profiles + verified citizen votes and grades.";
+  const stateSelector = (
+    <NationalSpotlightSelector
+      basePath="/school-boards"
+      selectedStateCode={selectedStateCode}
+      jurisdictions={jurisdictions}
+      pageLabel="School board members"
+      title="School board members, nationwide."
+      description="RepWatchr opens school boards on the national map first. Choose a state, then drill into loaded districts, trustees, candidate records, votes, and public-source gaps."
+      profileNoun="school-board members"
+      profileCountsByState={profileCountsByState}
+    />
+  );
+
+  if (selectedStateCode !== "TX") {
+    return (
+      <div className="bg-[#eef3f8] pb-12">
+        <main className="mx-auto max-w-7xl px-4 py-6 sm:px-6 lg:px-8">
+          {stateSelector}
+          {selectedStateCode ? (
+            <section className="mt-6 rounded-2xl border border-amber-200 bg-amber-50 p-5 shadow-sm">
+              <p className="text-xs font-black uppercase tracking-[0.18em] text-amber-800">State buildout queued</p>
+              <h2 className="mt-1 text-2xl font-black text-amber-950">
+                {selectedState?.name ?? selectedStateCode} school-board profiles are not loaded yet.
+              </h2>
+              <p className="mt-2 max-w-3xl text-sm font-semibold leading-6 text-amber-900">
+                The national model is enabled here. This state still needs an official education directory import,
+                district roster source links, trustee pages, election cycles, and correction review before member cards appear.
+              </p>
+            </section>
+          ) : (
+            <section className="mt-6 rounded-2xl border border-slate-300 bg-white p-5 shadow-sm">
+              <p className="text-xs font-black uppercase tracking-[0.18em] text-red-700">Choose a state first</p>
+              <h2 className="mt-1 text-2xl font-black text-slate-950">Texas opens now. Every other state is queued in the same model.</h2>
+              <p className="mt-2 max-w-3xl text-sm font-semibold leading-6 text-slate-600">
+                This page no longer defaults to Texas. Visitors start from the national map, choose their state, then see the loaded school-board records for that state.
+              </p>
+            </section>
+          )}
+        </main>
+      </div>
+    );
+  }
 
   return (
     <div className="bg-[#eef3f8]">
+      <div className="mx-auto max-w-7xl px-4 py-6 sm:px-6 lg:px-8">
+        {stateSelector}
+      </div>
       {/* HERO - obvious visual reset, action first */}
       <section className="relative overflow-hidden border-b border-[#0b1f3a] bg-[#06172f] text-white">
         <div className="h-2 w-full bg-[linear-gradient(90deg,#bf0d3e_0%,#bf0d3e_33%,#ffffff_33%,#ffffff_66%,#002868_66%,#002868_100%)]" />

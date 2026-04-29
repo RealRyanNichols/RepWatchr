@@ -203,3 +203,7 @@ export function getNationalBuildoutSummary() {
     socialConnectionCount: socialMonitoringConnections.length,
   };
 }
+
+export function getAllNationalJurisdictions() {
+  return [...nationalJurisdictionBuildouts, ...nationalTerritoryBuildouts];
+}

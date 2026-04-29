@@ -2,13 +2,16 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import PowerProfileCard from "@/components/power-watch/PowerProfileCard";
 import PowerProfileRail from "@/components/power-watch/PowerProfileRail";
+import NationalSpotlightSelector from "@/components/shared/NationalSpotlightSelector";
 import { mediaWatchImportPlan } from "@/data/media-watch";
+import { getAllNationalJurisdictions } from "@/data/national-buildout";
 import { getMediaWatchProfiles, getPowerWatchStats } from "@/lib/power-watch";
+import { countByState, getSelectedStateCode } from "@/lib/state-scope";
 
 export const metadata: Metadata = {
-  title: "Texas Media Watch | RepWatchr",
+  title: "National Media Watch | RepWatchr",
   description:
-    "Track Texas media companies, editors, reporters, newsroom leadership, bylines, corrections, and official coverage with source-backed public profiles.",
+    "Choose a state to track media companies, editors, reporters, newsroom leadership, bylines, corrections, and official coverage with source-backed public profiles.",
 };
 
 function StatCard({ label, value, detail }: { label: string; value: string | number; detail: string }) {
@@ -21,23 +24,75 @@ function StatCard({ label, value, detail }: { label: string; value: string | num
   );
 }
 
-export default function MediaPage() {
+export default async function MediaPage({
+  searchParams,
+}: {
+  searchParams?: Promise<Record<string, string | string[] | undefined>>;
+}) {
+  const params = searchParams ? await searchParams : {};
+  const selectedStateCode = getSelectedStateCode(params);
+  const jurisdictions = getAllNationalJurisdictions();
+  const selectedState = jurisdictions.find((state) => state.code === selectedStateCode);
   const profiles = getMediaWatchProfiles();
-  const stats = getPowerWatchStats(profiles);
-  const companies = profiles.filter((profile) => profile.kind === "media-company");
-  const people = profiles.filter((profile) => profile.kind !== "media-company");
-  const topProfiles = profiles
+  const profileCountsByState = countByState(profiles, (profile) => profile.state);
+  const selectedProfiles = selectedStateCode
+    ? profiles.filter((profile) => profile.state.toUpperCase() === selectedStateCode)
+    : [];
+  const stats = getPowerWatchStats(selectedProfiles);
+  const companies = selectedProfiles.filter((profile) => profile.kind === "media-company");
+  const people = selectedProfiles.filter((profile) => profile.kind !== "media-company");
+  const topProfiles = selectedProfiles
     .sort((a, b) => b.buildoutPercent - a.buildoutPercent || a.name.localeCompare(b.name))
     .slice(0, 12);
+  const primarySource = selectedProfiles[0]?.sourceLinks[0] ?? mediaWatchImportPlan.sourceLinks[0];
+  const stateSelector = (
+    <NationalSpotlightSelector
+      basePath="/media"
+      selectedStateCode={selectedStateCode}
+      jurisdictions={jurisdictions}
+      pageLabel="Media companies and newsroom people"
+      title="Media watch, nationwide."
+      description="RepWatchr opens media watch on the national map first. Choose a state, then open source-backed newsroom, editor, reporter, ownership, correction, and public-coverage records for that state."
+      profileNoun="media profiles"
+      profileCountsByState={profileCountsByState}
+    />
+  );
+
+  if (!selectedStateCode || selectedProfiles.length === 0) {
+    return (
+      <div className="bg-slate-100">
+        <main className="mx-auto max-w-7xl px-4 py-8 sm:px-6 lg:px-8">
+          {stateSelector}
+          <section className="mt-6 rounded-2xl border border-amber-200 bg-amber-50 p-5 shadow-sm">
+            <p className="text-xs font-black uppercase tracking-[0.18em] text-amber-800">
+              {!selectedStateCode ? "Choose a state first" : "State buildout queued"}
+            </p>
+            <h2 className="mt-1 text-2xl font-black text-amber-950">
+              {!selectedStateCode
+                ? "Media watch now starts from the national map."
+                : `${selectedState?.name ?? selectedStateCode} media profiles are not loaded yet.`}
+            </h2>
+            <p className="mt-2 max-w-3xl text-sm font-semibold leading-6 text-amber-900">
+              {!selectedStateCode
+                ? "Texas has the first media records. Every other state is turned on for source import, but visitors must choose their state before profile cards appear."
+                : "This state still needs newsroom source pages, team rosters, byline indexes, correction logs, public-file records, and review paths before cards appear here."}
+            </p>
+          </section>
+        </main>
+      </div>
+    );
+  }
 
   return (
     <div className="bg-slate-100">
       <main className="mx-auto max-w-7xl px-4 py-8 sm:px-6 lg:px-8">
+        {stateSelector}
+
         <PowerProfileRail
           profiles={topProfiles}
           basePath="/media"
           kicker="Media watch roll"
-          title="Newsrooms, editors, reporters, and public media profiles."
+          title={`${selectedState?.name ?? selectedStateCode} newsrooms, editors, reporters, and public media profiles.`}
           detail="Companies and people first; methodology stays below the roll."
         />
 
@@ -52,19 +107,19 @@ export default function MediaPage() {
                 Newsrooms, editors, and reporters get profiles too.
               </h1>
               <p className="mt-3 max-w-3xl text-sm font-semibold leading-6 text-slate-700 sm:text-base">
-                Local media can decide which public records get seen, which officials get pressure, and which stories disappear. RepWatchr will track companies and public newsroom people with source links, bylines, corrections, and official-coverage records.
+                Local media can decide which public records get seen, which officials get pressure, and which stories disappear. RepWatchr will track companies and public newsroom people state by state with source links, bylines, corrections, and official-coverage records.
               </p>
               <div className="mt-5 flex flex-wrap gap-2">
                 <Link href="#profiles" className="rounded-xl bg-blue-700 px-4 py-3 text-sm font-black text-white transition hover:bg-blue-800">
                   Open profiles
                 </Link>
                 <a
-                  href={mediaWatchImportPlan.sourceLinks[0].url}
+                  href={primarySource.url}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="rounded-xl border border-slate-300 bg-slate-50 px-4 py-3 text-sm font-black text-slate-800 transition hover:border-red-300 hover:bg-red-50"
                 >
-                  Newsroom source
+                  Primary source
                 </a>
               </div>
             </div>
@@ -110,7 +165,7 @@ export default function MediaPage() {
         <section id="profiles" className="mt-8 scroll-mt-28">
           <div className="mb-4 flex flex-col gap-2 sm:flex-row sm:items-end sm:justify-between">
             <div>
-              <p className="text-xs font-black uppercase tracking-[0.18em] text-red-700">East Texas first pass</p>
+              <p className="text-xs font-black uppercase tracking-[0.18em] text-red-700">{selectedState?.name ?? selectedStateCode} pass</p>
               <h2 className="text-2xl font-black text-slate-950">Media company and newsroom profiles</h2>
             </div>
             <p className="text-xs font-bold text-slate-500">Companies first, then every public-facing newsroom person.</p>

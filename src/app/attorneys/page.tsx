@@ -2,13 +2,16 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import PowerProfileCard from "@/components/power-watch/PowerProfileCard";
 import PowerProfileRail from "@/components/power-watch/PowerProfileRail";
+import NationalSpotlightSelector from "@/components/shared/NationalSpotlightSelector";
 import { attorneyWatchImportPlan } from "@/data/attorney-watch";
+import { getAllNationalJurisdictions } from "@/data/national-buildout";
 import { getAttorneyWatchProfiles, getPowerWatchStats } from "@/lib/power-watch";
+import { countByState, getSelectedStateCode } from "@/lib/state-scope";
 
 export const metadata: Metadata = {
-  title: "Texas Attorneys and Law Firms | RepWatchr",
+  title: "National Attorneys and Law Firms | RepWatchr",
   description:
-    "Track Texas attorneys and law firms with source-backed profiles, starting in East Texas and expanding statewide through public bar, court, and representation records.",
+    "Choose a state to track attorneys and law firms with source-backed public profiles, public bar records, court records, representation context, and correction review.",
 };
 
 function StatCard({ label, value, detail }: { label: string; value: string | number; detail: string }) {
@@ -21,24 +24,76 @@ function StatCard({ label, value, detail }: { label: string; value: string | num
   );
 }
 
-export default function AttorneysPage() {
+export default async function AttorneysPage({
+  searchParams,
+}: {
+  searchParams?: Promise<Record<string, string | string[] | undefined>>;
+}) {
+  const params = searchParams ? await searchParams : {};
+  const selectedStateCode = getSelectedStateCode(params);
+  const jurisdictions = getAllNationalJurisdictions();
+  const selectedState = jurisdictions.find((state) => state.code === selectedStateCode);
   const profiles = getAttorneyWatchProfiles();
-  const stats = getPowerWatchStats(profiles);
-  const firms = profiles.filter((profile) => profile.kind === "law-firm" || profile.kind === "bar-source");
-  const people = profiles.filter((profile) => profile.kind === "attorney");
-  const topProfiles = profiles
+  const profileCountsByState = countByState(profiles, (profile) => profile.state);
+  const selectedProfiles = selectedStateCode
+    ? profiles.filter((profile) => profile.state.toUpperCase() === selectedStateCode)
+    : [];
+  const stats = getPowerWatchStats(selectedProfiles);
+  const firms = selectedProfiles.filter((profile) => profile.kind === "law-firm" || profile.kind === "bar-source");
+  const people = selectedProfiles.filter((profile) => profile.kind === "attorney");
+  const topProfiles = selectedProfiles
     .filter((profile) => profile.slug !== "state-bar-of-texas-find-a-lawyer")
     .sort((a, b) => b.buildoutPercent - a.buildoutPercent || a.name.localeCompare(b.name))
     .slice(0, 14);
+  const primarySource = selectedProfiles[0]?.sourceLinks[0] ?? attorneyWatchImportPlan.sourceLinks[0];
+  const stateSelector = (
+    <NationalSpotlightSelector
+      basePath="/attorneys"
+      selectedStateCode={selectedStateCode}
+      jurisdictions={jurisdictions}
+      pageLabel="Attorneys and law firms"
+      title="Attorneys and law firms, nationwide."
+      description="RepWatchr opens attorney watch on the national map first. Choose a state, then open source-backed attorney, law-firm, bar-source, ruling, review, and public-record buildout for that state."
+      profileNoun="attorney profiles"
+      profileCountsByState={profileCountsByState}
+    />
+  );
+
+  if (!selectedStateCode || selectedProfiles.length === 0) {
+    return (
+      <div className="bg-slate-100">
+        <main className="mx-auto max-w-7xl px-4 py-8 sm:px-6 lg:px-8">
+          {stateSelector}
+          <section className="mt-6 rounded-2xl border border-amber-200 bg-amber-50 p-5 shadow-sm">
+            <p className="text-xs font-black uppercase tracking-[0.18em] text-amber-800">
+              {!selectedStateCode ? "Choose a state first" : "State buildout queued"}
+            </p>
+            <h2 className="mt-1 text-2xl font-black text-amber-950">
+              {!selectedStateCode
+                ? "Attorney watch now starts from the national map."
+                : `${selectedState?.name ?? selectedStateCode} attorney profiles are not loaded yet.`}
+            </h2>
+            <p className="mt-2 max-w-3xl text-sm font-semibold leading-6 text-amber-900">
+              {!selectedStateCode
+                ? "Texas and New York have starter attorney records. Every other state is turned on for source import, but visitors must choose their state before profile cards appear."
+                : "This state still needs bar-directory pulls, firm rosters, court-record sources, public-client context, review sources, and correction paths before cards appear here."}
+            </p>
+          </section>
+        </main>
+      </div>
+    );
+  }
 
   return (
     <div className="bg-slate-100">
       <main className="mx-auto max-w-7xl px-4 py-8 sm:px-6 lg:px-8">
+        {stateSelector}
+
         <PowerProfileRail
           profiles={topProfiles}
           basePath="/attorneys"
           kicker="Attorney watch roll"
-          title="Texas attorneys, firms, and red-mark records people will search first."
+          title={`${selectedState?.name ?? selectedStateCode} attorneys, firms, and records people will search first.`}
           detail="Images are official-site media or visible placeholders until source-approved headshots are loaded."
         />
 
@@ -53,19 +108,19 @@ export default function AttorneysPage() {
                 Attorneys and law firms are part of the record.
               </h1>
               <p className="mt-3 max-w-3xl text-sm font-semibold leading-6 text-slate-700 sm:text-base">
-                RepWatchr is adding Texas attorneys, firms, and bar-source records the same way school boards were built: public source first, profile second, scoring or flags only after the evidence is attached. Reviews, social sentiment, client outcomes, rulings, discipline, and client-rights findings each get their own evidence bucket.
+                RepWatchr is adding attorneys, firms, and bar-source records state by state: public source first, profile second, scoring or flags only after the evidence is attached. Reviews, social sentiment, client outcomes, rulings, discipline, and client-rights findings each get their own evidence bucket.
               </p>
               <div className="mt-5 flex flex-wrap gap-2">
                 <Link href="#profiles" className="rounded-xl bg-blue-700 px-4 py-3 text-sm font-black text-white transition hover:bg-blue-800">
                   Open profiles
                 </Link>
                 <a
-                  href={attorneyWatchImportPlan.sourceLinks[0].url}
+                  href={primarySource.url}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="rounded-xl border border-slate-300 bg-slate-50 px-4 py-3 text-sm font-black text-slate-800 transition hover:border-red-300 hover:bg-red-50"
                 >
-                  State Bar source
+                  Primary source
                 </a>
               </div>
             </div>
@@ -111,10 +166,10 @@ export default function AttorneysPage() {
         <section id="profiles" className="mt-8 scroll-mt-28">
           <div className="mb-4 flex flex-col gap-2 sm:flex-row sm:items-end sm:justify-between">
             <div>
-              <p className="text-xs font-black uppercase tracking-[0.18em] text-red-700">East Texas first pass</p>
+              <p className="text-xs font-black uppercase tracking-[0.18em] text-red-700">{selectedState?.name ?? selectedStateCode} pass</p>
               <h2 className="text-2xl font-black text-slate-950">Law-firm and attorney profiles</h2>
             </div>
-            <p className="text-xs font-bold text-slate-500">Statewide Texas import path is active.</p>
+            <p className="text-xs font-bold text-slate-500">Statewide import path is active.</p>
           </div>
           <div className="grid gap-4 md:grid-cols-2 xl:grid-cols-3">
             {firms.map((profile) => (

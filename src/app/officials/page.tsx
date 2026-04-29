@@ -4,13 +4,15 @@ import { Suspense } from "react";
 import { getAllOfficials, getAllScoreCards, getRepWatchrDataStats } from "@/lib/data";
 import { getSchoolBoardStats } from "@/lib/school-board-research";
 import OfficialGrid from "@/components/officials/OfficialGrid";
+import NationalSpotlightSelector from "@/components/shared/NationalSpotlightSelector";
 import type { GovernmentLevel } from "@/types";
-import { getNationalBuildoutSummary, nationalGovernmentScopes } from "@/data/national-buildout";
+import { getAllNationalJurisdictions, getNationalBuildoutSummary, nationalGovernmentScopes } from "@/data/national-buildout";
+import { countByState, getSelectedStateCode } from "@/lib/state-scope";
 
 export const metadata: Metadata = {
-  title: "Elected Officials Directory",
+  title: "National Elected Officials Directory",
   description:
-    "Browse sourced elected-official profiles. Texas is the first loaded state, with federal, state, county, city, and school-board records.",
+    "Choose a state to browse sourced elected-official profiles. RepWatchr starts national and opens loaded federal, state, county, city, and school-board records by state.",
 };
 
 const levelLabels: Record<GovernmentLevel, string> = {
@@ -25,12 +27,24 @@ function formatNumber(value: number) {
   return new Intl.NumberFormat("en-US").format(value);
 }
 
-export default function OfficialsPage() {
+export default async function OfficialsPage({
+  searchParams,
+}: {
+  searchParams?: Promise<Record<string, string | string[] | undefined>>;
+}) {
+  const params = searchParams ? await searchParams : {};
+  const selectedStateCode = getSelectedStateCode(params);
   const officials = getAllOfficials();
   const scoreCards = getAllScoreCards();
   const schoolBoardStats = getSchoolBoardStats();
   const dataStats = getRepWatchrDataStats();
+  const jurisdictions = getAllNationalJurisdictions();
   const nationalSummary = getNationalBuildoutSummary();
+  const profileCountsByState = countByState(officials, (official) => official.state, "TX");
+  const selectedState = jurisdictions.find((state) => state.code === selectedStateCode);
+  const selectedOfficials = selectedStateCode
+    ? officials.filter((official) => (official.state ?? "TX").toUpperCase() === selectedStateCode)
+    : [];
   const levelCounts = officials.reduce<Record<GovernmentLevel, number>>(
     (acc, official) => {
       acc[official.level] = (acc[official.level] ?? 0) + 1;
@@ -69,26 +83,52 @@ export default function OfficialsPage() {
   return (
     <div className="bg-slate-100">
       <div className="mx-auto max-w-7xl px-4 py-4 sm:px-6 lg:px-8">
-        <h1 className="sr-only">Elected officials directory</h1>
-        <Suspense
-          fallback={
-            <div className="animate-pulse space-y-4 rounded-2xl border border-slate-300 bg-white p-5 shadow-sm">
-              <div className="h-12 rounded-xl bg-gray-200" />
-              <div className="flex flex-wrap gap-2">
-                {[1, 2, 3, 4, 5, 6].map((i) => (
-                  <div key={i} className="h-8 w-24 rounded-full bg-gray-100" />
-                ))}
-              </div>
-              <div className="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3">
-                {[1, 2, 3, 4, 5, 6].map((i) => (
-                  <div key={i} className="h-32 rounded-2xl bg-gray-100" />
-                ))}
-              </div>
-            </div>
-          }
-        >
-          <OfficialGrid officials={officials} scoreCards={scoreCards} />
-        </Suspense>
+        <NationalSpotlightSelector
+          basePath="/officials"
+          selectedStateCode={selectedStateCode}
+          jurisdictions={jurisdictions}
+          pageLabel="Elected officials"
+          title="Elected officials, nationwide."
+          description="RepWatchr opens this page on the national map first. Choose a state, then open the loaded federal, state, county, city, and school-board records for that state."
+          profileNoun="official profiles"
+          profileCountsByState={profileCountsByState}
+        />
+
+        {selectedStateCode && selectedOfficials.length > 0 ? (
+          <div className="mt-6">
+            <h1 className="sr-only">{selectedState?.name ?? selectedStateCode} elected officials directory</h1>
+            <Suspense
+              fallback={
+                <div className="animate-pulse space-y-4 rounded-2xl border border-slate-300 bg-white p-5 shadow-sm">
+                  <div className="h-12 rounded-xl bg-gray-200" />
+                  <div className="flex flex-wrap gap-2">
+                    {[1, 2, 3, 4, 5, 6].map((i) => (
+                      <div key={i} className="h-8 w-24 rounded-full bg-gray-100" />
+                    ))}
+                  </div>
+                  <div className="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3">
+                    {[1, 2, 3, 4, 5, 6].map((i) => (
+                      <div key={i} className="h-32 rounded-2xl bg-gray-100" />
+                    ))}
+                  </div>
+                </div>
+              }
+            >
+              <OfficialGrid officials={selectedOfficials} scoreCards={scoreCards} />
+            </Suspense>
+          </div>
+        ) : selectedStateCode ? (
+          <section className="mt-6 rounded-2xl border border-amber-200 bg-amber-50 p-5 shadow-sm">
+            <p className="text-xs font-black uppercase tracking-[0.18em] text-amber-800">Source import queued</p>
+            <h2 className="mt-1 text-2xl font-black text-amber-950">
+              {selectedState?.name ?? selectedStateCode} elected-official profiles are not loaded yet.
+            </h2>
+            <p className="mt-2 max-w-3xl text-sm font-semibold leading-6 text-amber-900">
+              The state is turned on in the national model. RepWatchr still needs official rosters, public photos,
+              vote records, source links, funding records, and correction paths before public profile cards appear here.
+            </p>
+          </section>
+        ) : null}
 
         <section className="mt-8 overflow-hidden rounded-2xl border border-slate-300 bg-white text-slate-950 shadow-sm">
           <div className="h-1.5 w-full bg-[linear-gradient(90deg,#b42318_0%,#b42318_48%,#ffffff_48%,#ffffff_52%,#1d4ed8_52%,#1d4ed8_100%)]" />
