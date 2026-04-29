@@ -1,0 +1,47 @@
+{
+  "id": "andy-kim",
+  "name": "Andy Kim",
+  "firstName": "Andy",
+  "lastName": "Kim",
+  "photo": "/images/officials/federal/andy-kim.jpg",
+  "photoSourceUrl": "https://unitedstates.github.io/images/congress/225x275/K000394.jpg",
+  "photoCredit": "UnitedStates project congressional image mirror",
+  "party": "D",
+  "level": "federal",
+  "position": "U.S. Senator",
+  "district": "New Jersey",
+  "jurisdiction": "U.S. Senate",
+  "county": [],
+  "termStart": "2025-01-03",
+  "termEnd": "2031-01-03",
+  "contactInfo": {
+    "office": "520 Hart Senate Office Building",
+    "phone": "202-224-4744",
+    "email": "https://www.kim.senate.gov",
+    "website": "https://www.kim.senate.gov"
+  },
+  "bio": "Andy Kim serves as a U.S. Senator for New Jersey. This RepWatchr starter profile is source-seeded from current congressional roster data, official public links, and public congressional photo sources.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "NJ",
+  "bioguideId": "K000394",
+  "sourceLinks": [
+    {
+      "title": "Official congressional website",
+      "url": "https://www.kim.senate.gov"
+    },
+    {
+      "title": "Congress legislators current roster",
+      "url": "https://raw.githubusercontent.com/unitedstates/congress-legislators/master/legislators-current.yaml"
+    },
+    {
+      "title": "Biographical Directory of the United States Congress",
+      "url": "https://bioguide.congress.gov/search/bio/K000394"
+    },
+    {
+      "title": "Congressional photo source",
+      "url": "https://unitedstates.github.io/images/congress/225x275/K000394.jpg"
+    }
+  ],
+  "lastVerifiedAt": "2026-04-29"
+}

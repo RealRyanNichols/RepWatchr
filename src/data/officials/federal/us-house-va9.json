@@ -1,0 +1,47 @@
+{
+  "id": "h-morgan-griffith",
+  "name": "H. Morgan Griffith",
+  "firstName": "H.",
+  "lastName": "Griffith",
+  "photo": "/images/officials/federal/h-morgan-griffith.jpg",
+  "photoSourceUrl": "https://unitedstates.github.io/images/congress/225x275/G000568.jpg",
+  "photoCredit": "UnitedStates project congressional image mirror",
+  "party": "R",
+  "level": "federal",
+  "position": "U.S. Representative",
+  "district": "VA-9",
+  "jurisdiction": "U.S. House of Representatives",
+  "county": [],
+  "termStart": "2025-01-03",
+  "termEnd": "2027-01-03",
+  "contactInfo": {
+    "office": "2110 Rayburn House Office Building",
+    "phone": "202-225-3861",
+    "email": "https://morgangriffith.house.gov",
+    "website": "https://morgangriffith.house.gov"
+  },
+  "bio": "H. Morgan Griffith serves as the U.S. Representative for Virginia's 9th Congressional District. This RepWatchr starter profile is source-seeded from current congressional roster data, official public links, and public congressional photo sources.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "VA",
+  "bioguideId": "G000568",
+  "sourceLinks": [
+    {
+      "title": "Official congressional website",
+      "url": "https://morgangriffith.house.gov"
+    },
+    {
+      "title": "Congress legislators current roster",
+      "url": "https://raw.githubusercontent.com/unitedstates/congress-legislators/master/legislators-current.yaml"
+    },
+    {
+      "title": "Biographical Directory of the United States Congress",
+      "url": "https://bioguide.congress.gov/search/bio/G000568"
+    },
+    {
+      "title": "Congressional photo source",
+      "url": "https://unitedstates.github.io/images/congress/225x275/G000568.jpg"
+    }
+  ],
+  "lastVerifiedAt": "2026-04-29"
+}

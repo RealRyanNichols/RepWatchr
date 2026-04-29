@@ -1,0 +1,47 @@
+{
+  "id": "salud-o-carbajal",
+  "name": "Salud O. Carbajal",
+  "firstName": "Salud",
+  "lastName": "Carbajal",
+  "photo": "/images/officials/federal/salud-o-carbajal.jpg",
+  "photoSourceUrl": "https://unitedstates.github.io/images/congress/225x275/C001112.jpg",
+  "photoCredit": "UnitedStates project congressional image mirror",
+  "party": "D",
+  "level": "federal",
+  "position": "U.S. Representative",
+  "district": "CA-24",
+  "jurisdiction": "U.S. House of Representatives",
+  "county": [],
+  "termStart": "2025-01-03",
+  "termEnd": "2027-01-03",
+  "contactInfo": {
+    "office": "2331 Rayburn House Office Building",
+    "phone": "202-225-3601",
+    "email": "https://carbajal.house.gov",
+    "website": "https://carbajal.house.gov"
+  },
+  "bio": "Salud O. Carbajal serves as the U.S. Representative for California's 24th Congressional District. This RepWatchr starter profile is source-seeded from current congressional roster data, official public links, and public congressional photo sources.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "CA",
+  "bioguideId": "C001112",
+  "sourceLinks": [
+    {
+      "title": "Official congressional website",
+      "url": "https://carbajal.house.gov"
+    },
+    {
+      "title": "Congress legislators current roster",
+      "url": "https://raw.githubusercontent.com/unitedstates/congress-legislators/master/legislators-current.yaml"
+    },
+    {
+      "title": "Biographical Directory of the United States Congress",
+      "url": "https://bioguide.congress.gov/search/bio/C001112"
+    },
+    {
+      "title": "Congressional photo source",
+      "url": "https://unitedstates.github.io/images/congress/225x275/C001112.jpg"
+    }
+  ],
+  "lastVerifiedAt": "2026-04-29"
+}

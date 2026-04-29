@@ -1,0 +1,47 @@
+{
+  "id": "scott-desjarlais",
+  "name": "Scott DesJarlais",
+  "firstName": "Scott",
+  "lastName": "DesJarlais",
+  "photo": "/images/officials/federal/scott-desjarlais.jpg",
+  "photoSourceUrl": "https://unitedstates.github.io/images/congress/225x275/D000616.jpg",
+  "photoCredit": "UnitedStates project congressional image mirror",
+  "party": "R",
+  "level": "federal",
+  "position": "U.S. Representative",
+  "district": "TN-4",
+  "jurisdiction": "U.S. House of Representatives",
+  "county": [],
+  "termStart": "2025-01-03",
+  "termEnd": "2027-01-03",
+  "contactInfo": {
+    "office": "2304 Rayburn House Office Building",
+    "phone": "202-225-6831",
+    "email": "https://desjarlais.house.gov",
+    "website": "https://desjarlais.house.gov"
+  },
+  "bio": "Scott DesJarlais serves as the U.S. Representative for Tennessee's 4th Congressional District. This RepWatchr starter profile is source-seeded from current congressional roster data, official public links, and public congressional photo sources.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "TN",
+  "bioguideId": "D000616",
+  "sourceLinks": [
+    {
+      "title": "Official congressional website",
+      "url": "https://desjarlais.house.gov"
+    },
+    {
+      "title": "Congress legislators current roster",
+      "url": "https://raw.githubusercontent.com/unitedstates/congress-legislators/master/legislators-current.yaml"
+    },
+    {
+      "title": "Biographical Directory of the United States Congress",
+      "url": "https://bioguide.congress.gov/search/bio/D000616"
+    },
+    {
+      "title": "Congressional photo source",
+      "url": "https://unitedstates.github.io/images/congress/225x275/D000616.jpg"
+    }
+  ],
+  "lastVerifiedAt": "2026-04-29"
+}

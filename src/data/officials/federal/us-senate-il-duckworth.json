@@ -1,0 +1,47 @@
+{
+  "id": "tammy-duckworth",
+  "name": "Tammy Duckworth",
+  "firstName": "Tammy",
+  "lastName": "Duckworth",
+  "photo": "/images/officials/federal/tammy-duckworth.jpg",
+  "photoSourceUrl": "https://unitedstates.github.io/images/congress/225x275/D000622.jpg",
+  "photoCredit": "UnitedStates project congressional image mirror",
+  "party": "D",
+  "level": "federal",
+  "position": "U.S. Senator",
+  "district": "Illinois",
+  "jurisdiction": "U.S. Senate",
+  "county": [],
+  "termStart": "2023-01-03",
+  "termEnd": "2029-01-03",
+  "contactInfo": {
+    "office": "524 Hart Senate Office Building",
+    "phone": "202-224-2854",
+    "email": "https://www.duckworth.senate.gov/content/contact-senator",
+    "website": "https://www.duckworth.senate.gov"
+  },
+  "bio": "Tammy Duckworth serves as a U.S. Senator for Illinois. This RepWatchr starter profile is source-seeded from current congressional roster data, official public links, and public congressional photo sources.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "IL",
+  "bioguideId": "D000622",
+  "sourceLinks": [
+    {
+      "title": "Official congressional website",
+      "url": "https://www.duckworth.senate.gov"
+    },
+    {
+      "title": "Congress legislators current roster",
+      "url": "https://raw.githubusercontent.com/unitedstates/congress-legislators/master/legislators-current.yaml"
+    },
+    {
+      "title": "Biographical Directory of the United States Congress",
+      "url": "https://bioguide.congress.gov/search/bio/D000622"
+    },
+    {
+      "title": "Congressional photo source",
+      "url": "https://unitedstates.github.io/images/congress/225x275/D000622.jpg"
+    }
+  ],
+  "lastVerifiedAt": "2026-04-29"
+}

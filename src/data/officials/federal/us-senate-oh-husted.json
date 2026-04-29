@@ -1,0 +1,40 @@
+{
+  "id": "jon-husted",
+  "name": "Jon Husted",
+  "firstName": "Jon",
+  "lastName": "Husted",
+  "party": "R",
+  "level": "federal",
+  "position": "U.S. Senator",
+  "district": "Ohio",
+  "jurisdiction": "U.S. Senate",
+  "county": [],
+  "termStart": "2025-01-21",
+  "termEnd": "2026-11-03",
+  "contactInfo": {
+    "office": "304 Russell Senate Office Building",
+    "phone": "202-224-3353",
+    "email": "https://www.husted.senate.gov",
+    "website": "https://www.husted.senate.gov"
+  },
+  "bio": "Jon Husted serves as a U.S. Senator for Ohio. This RepWatchr starter profile is source-seeded from current congressional roster data, official public links, and public congressional photo sources.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "OH",
+  "bioguideId": "H001104",
+  "sourceLinks": [
+    {
+      "title": "Official congressional website",
+      "url": "https://www.husted.senate.gov"
+    },
+    {
+      "title": "Congress legislators current roster",
+      "url": "https://raw.githubusercontent.com/unitedstates/congress-legislators/master/legislators-current.yaml"
+    },
+    {
+      "title": "Biographical Directory of the United States Congress",
+      "url": "https://bioguide.congress.gov/search/bio/H001104"
+    }
+  ],
+  "lastVerifiedAt": "2026-04-29"
+}

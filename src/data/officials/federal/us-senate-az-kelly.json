@@ -1,0 +1,47 @@
+{
+  "id": "mark-kelly",
+  "name": "Mark Kelly",
+  "firstName": "Mark",
+  "lastName": "Kelly",
+  "photo": "/images/officials/federal/mark-kelly.jpg",
+  "photoSourceUrl": "https://unitedstates.github.io/images/congress/225x275/K000377.jpg",
+  "photoCredit": "UnitedStates project congressional image mirror",
+  "party": "D",
+  "level": "federal",
+  "position": "U.S. Senator",
+  "district": "Arizona",
+  "jurisdiction": "U.S. Senate",
+  "county": [],
+  "termStart": "2023-01-03",
+  "termEnd": "2029-01-03",
+  "contactInfo": {
+    "office": "516 Hart Senate Office Building",
+    "phone": "202-224-2235",
+    "email": "https://www.kelly.senate.gov/contact/contact-form/",
+    "website": "https://www.kelly.senate.gov"
+  },
+  "bio": "Mark Kelly serves as a U.S. Senator for Arizona. This RepWatchr starter profile is source-seeded from current congressional roster data, official public links, and public congressional photo sources.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "AZ",
+  "bioguideId": "K000377",
+  "sourceLinks": [
+    {
+      "title": "Official congressional website",
+      "url": "https://www.kelly.senate.gov"
+    },
+    {
+      "title": "Congress legislators current roster",
+      "url": "https://raw.githubusercontent.com/unitedstates/congress-legislators/master/legislators-current.yaml"
+    },
+    {
+      "title": "Biographical Directory of the United States Congress",
+      "url": "https://bioguide.congress.gov/search/bio/K000377"
+    },
+    {
+      "title": "Congressional photo source",
+      "url": "https://unitedstates.github.io/images/congress/225x275/K000377.jpg"
+    }
+  ],
+  "lastVerifiedAt": "2026-04-29"
+}

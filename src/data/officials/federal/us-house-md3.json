@@ -1,0 +1,47 @@
+{
+  "id": "sarah-elfreth",
+  "name": "Sarah Elfreth",
+  "firstName": "Sarah",
+  "lastName": "Elfreth",
+  "photo": "/images/officials/federal/sarah-elfreth.jpg",
+  "photoSourceUrl": "https://elfreth.house.gov/sites/evo-subsites/elfreth.house.gov/files/styles/evo_image_portrait_480/public/evo-media-image/2024-11-19_ike_elfreth_sarah_0007_re_web_0.jpg?itok=Dn_GhcsH",
+  "photoCredit": "Official congressional website image",
+  "party": "D",
+  "level": "federal",
+  "position": "U.S. Representative",
+  "district": "MD-3",
+  "jurisdiction": "U.S. House of Representatives",
+  "county": [],
+  "termStart": "2025-01-03",
+  "termEnd": "2027-01-03",
+  "contactInfo": {
+    "office": "1213 Longworth House Office Building",
+    "phone": "202-225-4016",
+    "email": "https://elfreth.house.gov",
+    "website": "https://elfreth.house.gov"
+  },
+  "bio": "Sarah Elfreth serves as the U.S. Representative for Maryland's 3rd Congressional District. This RepWatchr starter profile is source-seeded from current congressional roster data, official public links, and public congressional photo sources.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "MD",
+  "bioguideId": "E000301",
+  "sourceLinks": [
+    {
+      "title": "Official congressional website",
+      "url": "https://elfreth.house.gov"
+    },
+    {
+      "title": "Congress legislators current roster",
+      "url": "https://raw.githubusercontent.com/unitedstates/congress-legislators/master/legislators-current.yaml"
+    },
+    {
+      "title": "Biographical Directory of the United States Congress",
+      "url": "https://bioguide.congress.gov/search/bio/E000301"
+    },
+    {
+      "title": "Congressional photo source",
+      "url": "https://elfreth.house.gov/sites/evo-subsites/elfreth.house.gov/files/styles/evo_image_portrait_480/public/evo-media-image/2024-11-19_ike_elfreth_sarah_0007_re_web_0.jpg?itok=Dn_GhcsH"
+    }
+  ],
+  "lastVerifiedAt": "2026-04-29"
+}

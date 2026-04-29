@@ -1,0 +1,47 @@
+{
+  "id": "zoe-lofgren",
+  "name": "Zoe Lofgren",
+  "firstName": "Zoe",
+  "lastName": "Lofgren",
+  "photo": "/images/officials/federal/zoe-lofgren.jpg",
+  "photoSourceUrl": "https://unitedstates.github.io/images/congress/225x275/L000397.jpg",
+  "photoCredit": "UnitedStates project congressional image mirror",
+  "party": "D",
+  "level": "federal",
+  "position": "U.S. Representative",
+  "district": "CA-18",
+  "jurisdiction": "U.S. House of Representatives",
+  "county": [],
+  "termStart": "2025-01-03",
+  "termEnd": "2027-01-03",
+  "contactInfo": {
+    "office": "1401 Longworth House Office Building",
+    "phone": "202-225-3072",
+    "email": "https://lofgren.house.gov",
+    "website": "https://lofgren.house.gov"
+  },
+  "bio": "Zoe Lofgren serves as the U.S. Representative for California's 18th Congressional District. This RepWatchr starter profile is source-seeded from current congressional roster data, official public links, and public congressional photo sources.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "CA",
+  "bioguideId": "L000397",
+  "sourceLinks": [
+    {
+      "title": "Official congressional website",
+      "url": "https://lofgren.house.gov"
+    },
+    {
+      "title": "Congress legislators current roster",
+      "url": "https://raw.githubusercontent.com/unitedstates/congress-legislators/master/legislators-current.yaml"
+    },
+    {
+      "title": "Biographical Directory of the United States Congress",
+      "url": "https://bioguide.congress.gov/search/bio/L000397"
+    },
+    {
+      "title": "Congressional photo source",
+      "url": "https://unitedstates.github.io/images/congress/225x275/L000397.jpg"
+    }
+  ],
+  "lastVerifiedAt": "2026-04-29"
+}

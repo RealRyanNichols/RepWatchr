@@ -1,0 +1,47 @@
+{
+  "id": "jeff-merkley",
+  "name": "Jeff Merkley",
+  "firstName": "Jeff",
+  "lastName": "Merkley",
+  "photo": "/images/officials/federal/jeff-merkley.jpg",
+  "photoSourceUrl": "https://unitedstates.github.io/images/congress/225x275/M001176.jpg",
+  "photoCredit": "UnitedStates project congressional image mirror",
+  "party": "D",
+  "level": "federal",
+  "position": "U.S. Senator",
+  "district": "Oregon",
+  "jurisdiction": "U.S. Senate",
+  "county": [],
+  "termStart": "2021-01-03",
+  "termEnd": "2027-01-03",
+  "contactInfo": {
+    "office": "531 Hart Senate Office Building",
+    "phone": "202-224-3753",
+    "email": "https://www.merkley.senate.gov/contact/",
+    "website": "https://www.merkley.senate.gov"
+  },
+  "bio": "Jeff Merkley serves as a U.S. Senator for Oregon. This RepWatchr starter profile is source-seeded from current congressional roster data, official public links, and public congressional photo sources.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "OR",
+  "bioguideId": "M001176",
+  "sourceLinks": [
+    {
+      "title": "Official congressional website",
+      "url": "https://www.merkley.senate.gov"
+    },
+    {
+      "title": "Congress legislators current roster",
+      "url": "https://raw.githubusercontent.com/unitedstates/congress-legislators/master/legislators-current.yaml"
+    },
+    {
+      "title": "Biographical Directory of the United States Congress",
+      "url": "https://bioguide.congress.gov/search/bio/M001176"
+    },
+    {
+      "title": "Congressional photo source",
+      "url": "https://unitedstates.github.io/images/congress/225x275/M001176.jpg"
+    }
+  ],
+  "lastVerifiedAt": "2026-04-29"
+}

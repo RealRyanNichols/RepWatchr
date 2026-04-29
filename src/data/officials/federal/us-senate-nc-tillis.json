@@ -1,0 +1,47 @@
+{
+  "id": "thom-tillis",
+  "name": "Thom Tillis",
+  "firstName": "Thom",
+  "lastName": "Tillis",
+  "photo": "/images/officials/federal/thom-tillis.jpg",
+  "photoSourceUrl": "https://unitedstates.github.io/images/congress/225x275/T000476.jpg",
+  "photoCredit": "UnitedStates project congressional image mirror",
+  "party": "R",
+  "level": "federal",
+  "position": "U.S. Senator",
+  "district": "North Carolina",
+  "jurisdiction": "U.S. Senate",
+  "county": [],
+  "termStart": "2021-01-03",
+  "termEnd": "2027-01-03",
+  "contactInfo": {
+    "office": "113 Dirksen Senate Office Building",
+    "phone": "202-224-6342",
+    "email": "https://www.tillis.senate.gov/public/index.cfm/email-me",
+    "website": "https://www.tillis.senate.gov"
+  },
+  "bio": "Thom Tillis serves as a U.S. Senator for North Carolina. This RepWatchr starter profile is source-seeded from current congressional roster data, official public links, and public congressional photo sources.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "NC",
+  "bioguideId": "T000476",
+  "sourceLinks": [
+    {
+      "title": "Official congressional website",
+      "url": "https://www.tillis.senate.gov"
+    },
+    {
+      "title": "Congress legislators current roster",
+      "url": "https://raw.githubusercontent.com/unitedstates/congress-legislators/master/legislators-current.yaml"
+    },
+    {
+      "title": "Biographical Directory of the United States Congress",
+      "url": "https://bioguide.congress.gov/search/bio/T000476"
+    },
+    {
+      "title": "Congressional photo source",
+      "url": "https://unitedstates.github.io/images/congress/225x275/T000476.jpg"
+    }
+  ],
+  "lastVerifiedAt": "2026-04-29"
+}

@@ -1,0 +1,47 @@
+{
+  "id": "shomari-figures",
+  "name": "Shomari Figures",
+  "firstName": "Shomari",
+  "lastName": "Figures",
+  "photo": "/images/officials/federal/shomari-figures.jpg",
+  "photoSourceUrl": "https://figures.house.gov/sites/evo-subsites/figures.house.gov/files/styles/evo_image_portrait_480/public/evo-media-image/official-headshot-4.jpg?itok=sBnCt7x2",
+  "photoCredit": "Official congressional website image",
+  "party": "D",
+  "level": "federal",
+  "position": "U.S. Representative",
+  "district": "AL-2",
+  "jurisdiction": "U.S. House of Representatives",
+  "county": [],
+  "termStart": "2025-01-03",
+  "termEnd": "2027-01-03",
+  "contactInfo": {
+    "office": "225 Cannon House Office Building",
+    "phone": "202-225-4931",
+    "email": "https://figures.house.gov",
+    "website": "https://figures.house.gov"
+  },
+  "bio": "Shomari Figures serves as the U.S. Representative for Alabama's 2nd Congressional District. This RepWatchr starter profile is source-seeded from current congressional roster data, official public links, and public congressional photo sources.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "AL",
+  "bioguideId": "F000481",
+  "sourceLinks": [
+    {
+      "title": "Official congressional website",
+      "url": "https://figures.house.gov"
+    },
+    {
+      "title": "Congress legislators current roster",
+      "url": "https://raw.githubusercontent.com/unitedstates/congress-legislators/master/legislators-current.yaml"
+    },
+    {
+      "title": "Biographical Directory of the United States Congress",
+      "url": "https://bioguide.congress.gov/search/bio/F000481"
+    },
+    {
+      "title": "Congressional photo source",
+      "url": "https://figures.house.gov/sites/evo-subsites/figures.house.gov/files/styles/evo_image_portrait_480/public/evo-media-image/official-headshot-4.jpg?itok=sBnCt7x2"
+    }
+  ],
+  "lastVerifiedAt": "2026-04-29"
+}

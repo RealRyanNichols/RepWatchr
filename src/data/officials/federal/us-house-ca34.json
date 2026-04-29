@@ -1,0 +1,47 @@
+{
+  "id": "jimmy-gomez",
+  "name": "Jimmy Gomez",
+  "firstName": "Jimmy",
+  "lastName": "Gomez",
+  "photo": "/images/officials/federal/jimmy-gomez.jpg",
+  "photoSourceUrl": "https://unitedstates.github.io/images/congress/225x275/G000585.jpg",
+  "photoCredit": "UnitedStates project congressional image mirror",
+  "party": "D",
+  "level": "federal",
+  "position": "U.S. Representative",
+  "district": "CA-34",
+  "jurisdiction": "U.S. House of Representatives",
+  "county": [],
+  "termStart": "2025-01-03",
+  "termEnd": "2027-01-03",
+  "contactInfo": {
+    "office": "506 Cannon House Office Building",
+    "phone": "202-225-6235",
+    "email": "https://gomez.house.gov",
+    "website": "https://gomez.house.gov"
+  },
+  "bio": "Jimmy Gomez serves as the U.S. Representative for California's 34th Congressional District. This RepWatchr starter profile is source-seeded from current congressional roster data, official public links, and public congressional photo sources.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "CA",
+  "bioguideId": "G000585",
+  "sourceLinks": [
+    {
+      "title": "Official congressional website",
+      "url": "https://gomez.house.gov"
+    },
+    {
+      "title": "Congress legislators current roster",
+      "url": "https://raw.githubusercontent.com/unitedstates/congress-legislators/master/legislators-current.yaml"
+    },
+    {
+      "title": "Biographical Directory of the United States Congress",
+      "url": "https://bioguide.congress.gov/search/bio/G000585"
+    },
+    {
+      "title": "Congressional photo source",
+      "url": "https://unitedstates.github.io/images/congress/225x275/G000585.jpg"
+    }
+  ],
+  "lastVerifiedAt": "2026-04-29"
+}

@@ -11,8 +11,6 @@ import { getAttorneyWatchProfiles, getMediaWatchProfiles, getPowerWatchStats } f
 import {
   getNationalBuildoutSummary,
   nationalGovernmentScopes,
-  nationalJurisdictionBuildouts,
-  nationalTerritoryBuildouts,
   socialMonitoringConnections,
 } from "@/data/national-buildout";
 import { getGeographicBuildoutDashboard, type GeographicBuildoutRow } from "@/lib/geographic-buildout";
@@ -130,6 +128,9 @@ export default function BuildoutDashboardPage() {
   const mediaStats = getPowerWatchStats(getMediaWatchProfiles());
   const nationalSummary = getNationalBuildoutSummary();
   const geographic = getGeographicBuildoutDashboard();
+  const loadedJurisdictionRows = geographic.stateRows.filter((row) => row.status === "loaded").length;
+  const partialJurisdictionRows = geographic.stateRows.filter((row) => row.status === "partial").length;
+  const queuedJurisdictionRows = geographic.stateRows.filter((row) => row.status === "queued").length;
   const ideologyProfiles = getAllOfficialIdeologyProfiles();
   const voteWeightedIdeologyProfiles = ideologyProfiles.filter((profile) => profile.ideologyScore !== null);
   const pendingIdeologyProfiles = ideologyProfiles.length - voteWeightedIdeologyProfiles.length;
@@ -148,7 +149,7 @@ export default function BuildoutDashboardPage() {
     {
       label: "Federal and state seat profiles",
       value: dataStats.federalAndStateSeatProfilesLoaded,
-      status: `${dataStats.federalProfilesLoaded}/${dataStats.federalExpectedSeats} Texas federal seats and ${dataStats.stateLegislatorProfilesLoaded}/${dataStats.stateLegislatureExpectedSeats} Texas legislative seats are represented by person profile files.`,
+      status: `${dataStats.federalProfilesLoaded}/${dataStats.federalExpectedSeats} current federal seats across all 50 states and ${dataStats.stateLegislatorProfilesLoaded}/${dataStats.stateLegislatureExpectedSeats} Texas legislative seats are represented by person profile files.`,
       href: "/officials",
     },
     {
@@ -228,9 +229,9 @@ export default function BuildoutDashboardPage() {
   ];
   const notTrackedSurfaces = [
     {
-      label: "Expected Texas federal/state seat gaps",
+      label: "Expected federal/Texas state seat gaps",
       value: dataStats.federalAndStateProfileGaps,
-      status: `${dataStats.federalProfileGaps} federal and ${dataStats.stateLegislatureProfileGaps} Texas legislative expected seats do not have a person profile file in the current import.`,
+      status: `${dataStats.federalProfileGaps} current U.S. House seat gaps and ${dataStats.stateLegislatureProfileGaps} Texas legislative expected seats do not have a person profile file in the current import.`,
       href: "/officials",
     },
     {
@@ -301,7 +302,7 @@ export default function BuildoutDashboardPage() {
     {
       label: "Jurisdictions enabled",
       value: nationalSummary.enabledJurisdictions,
-      detail: `${nationalSummary.stateCount} states plus ${nationalSummary.territoryAndDistrictCount} district/territory rows are in the national buildout model.`,
+      detail: `${nationalSummary.stateCount} states plus ${nationalSummary.territoryAndDistrictCount} district/territory rows are in the national buildout model. ${loadedJurisdictionRows} are green from loaded records.`,
     },
     {
       label: "Government lanes",
@@ -412,11 +413,11 @@ export default function BuildoutDashboardPage() {
           <div className="mt-6 overflow-hidden rounded-2xl border border-slate-200">
             <div className="border-b border-slate-200 bg-slate-50 px-4 py-3">
               <p className="text-xs font-black uppercase tracking-wide text-slate-500">
-                State model status · {nationalSummary.loadedJurisdictions} loaded · {nationalSummary.partialJurisdictions} partial · {nationalSummary.queuedJurisdictions} queued
+                State model status · {loadedJurisdictionRows} loaded · {partialJurisdictionRows} partial · {queuedJurisdictionRows} queued
               </p>
             </div>
             <div className="grid gap-px bg-slate-200 sm:grid-cols-2 lg:grid-cols-3">
-              {[...nationalJurisdictionBuildouts, ...nationalTerritoryBuildouts].map((state) => (
+              {geographic.stateRows.map((state) => (
                 <div key={state.code} className="bg-white p-3">
                   <div className="flex items-start justify-between gap-3">
                     <div>
@@ -435,7 +436,12 @@ export default function BuildoutDashboardPage() {
                       {state.status}
                     </span>
                   </div>
-                  <p className="mt-2 text-xs font-semibold leading-5 text-slate-600">{state.note}</p>
+                  <div className="mt-2">
+                    <ProgressBar percent={state.completionPercent} tone={toneFor(state.completionPercent)} />
+                  </div>
+                  <p className="mt-2 text-xs font-semibold leading-5 text-slate-600">
+                    {state.officialProfiles.toLocaleString()} profiles loaded, including {state.federalOfficials.toLocaleString()} federal records. {state.topGap}
+                  </p>
                 </div>
               ))}
             </div>

@@ -1,0 +1,47 @@
+{
+  "id": "rick-w-allen",
+  "name": "Rick W. Allen",
+  "firstName": "Rick",
+  "lastName": "Allen",
+  "photo": "/images/officials/federal/rick-w-allen.jpg",
+  "photoSourceUrl": "https://unitedstates.github.io/images/congress/225x275/A000372.jpg",
+  "photoCredit": "UnitedStates project congressional image mirror",
+  "party": "R",
+  "level": "federal",
+  "position": "U.S. Representative",
+  "district": "GA-12",
+  "jurisdiction": "U.S. House of Representatives",
+  "county": [],
+  "termStart": "2025-01-03",
+  "termEnd": "2027-01-03",
+  "contactInfo": {
+    "office": "462 Cannon House Office Building",
+    "phone": "202-225-2823",
+    "email": "https://allen.house.gov",
+    "website": "https://allen.house.gov"
+  },
+  "bio": "Rick W. Allen serves as the U.S. Representative for Georgia's 12th Congressional District. This RepWatchr starter profile is source-seeded from current congressional roster data, official public links, and public congressional photo sources.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "GA",
+  "bioguideId": "A000372",
+  "sourceLinks": [
+    {
+      "title": "Official congressional website",
+      "url": "https://allen.house.gov"
+    },
+    {
+      "title": "Congress legislators current roster",
+      "url": "https://raw.githubusercontent.com/unitedstates/congress-legislators/master/legislators-current.yaml"
+    },
+    {
+      "title": "Biographical Directory of the United States Congress",
+      "url": "https://bioguide.congress.gov/search/bio/A000372"
+    },
+    {
+      "title": "Congressional photo source",
+      "url": "https://unitedstates.github.io/images/congress/225x275/A000372.jpg"
+    }
+  ],
+  "lastVerifiedAt": "2026-04-29"
+}

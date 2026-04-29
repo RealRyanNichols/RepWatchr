@@ -1,0 +1,47 @@
+{
+  "id": "sam-t-liccardo",
+  "name": "Sam T. Liccardo",
+  "firstName": "Sam",
+  "lastName": "Liccardo",
+  "photo": "/images/officials/federal/sam-t-liccardo.webp",
+  "photoSourceUrl": "https://liccardo.house.gov/sites/evo-subsites/liccardo.house.gov/files/styles/large/public/evo-media-image/liccardo.jpeg.webp?itok=cfo0WJfS",
+  "photoCredit": "Official congressional website image",
+  "party": "D",
+  "level": "federal",
+  "position": "U.S. Representative",
+  "district": "CA-16",
+  "jurisdiction": "U.S. House of Representatives",
+  "county": [],
+  "termStart": "2025-01-03",
+  "termEnd": "2027-01-03",
+  "contactInfo": {
+    "office": "1117 Longworth House Office Building",
+    "phone": "202-225-8104",
+    "email": "https://liccardo.house.gov",
+    "website": "https://liccardo.house.gov"
+  },
+  "bio": "Sam T. Liccardo serves as the U.S. Representative for California's 16th Congressional District. This RepWatchr starter profile is source-seeded from current congressional roster data, official public links, and public congressional photo sources.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "CA",
+  "bioguideId": "L000607",
+  "sourceLinks": [
+    {
+      "title": "Official congressional website",
+      "url": "https://liccardo.house.gov"
+    },
+    {
+      "title": "Congress legislators current roster",
+      "url": "https://raw.githubusercontent.com/unitedstates/congress-legislators/master/legislators-current.yaml"
+    },
+    {
+      "title": "Biographical Directory of the United States Congress",
+      "url": "https://bioguide.congress.gov/search/bio/L000607"
+    },
+    {
+      "title": "Congressional photo source",
+      "url": "https://liccardo.house.gov/sites/evo-subsites/liccardo.house.gov/files/styles/large/public/evo-media-image/liccardo.jpeg.webp?itok=cfo0WJfS"
+    }
+  ],
+  "lastVerifiedAt": "2026-04-29"
+}

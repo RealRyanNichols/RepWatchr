@@ -1,0 +1,47 @@
+{
+  "id": "maxine-dexter",
+  "name": "Maxine Dexter",
+  "firstName": "Maxine",
+  "lastName": "Dexter",
+  "photo": "/images/officials/federal/maxine-dexter.jpg",
+  "photoSourceUrl": "https://dexter.house.gov/sites/evo-subsites/dexter.house.gov/files/styles/evo_image_portrait_480/public/evo-media-image/2024-11-18_ike_dexter_maxine_0026_re_web.jpg?itok=VC6EIh3d",
+  "photoCredit": "Official congressional website image",
+  "party": "D",
+  "level": "federal",
+  "position": "U.S. Representative",
+  "district": "OR-3",
+  "jurisdiction": "U.S. House of Representatives",
+  "county": [],
+  "termStart": "2025-01-03",
+  "termEnd": "2027-01-03",
+  "contactInfo": {
+    "office": "1207 Longworth House Office Building",
+    "phone": "202-225-4811",
+    "email": "https://dexter.house.gov",
+    "website": "https://dexter.house.gov"
+  },
+  "bio": "Maxine Dexter serves as the U.S. Representative for Oregon's 3rd Congressional District. This RepWatchr starter profile is source-seeded from current congressional roster data, official public links, and public congressional photo sources.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "OR",
+  "bioguideId": "D000635",
+  "sourceLinks": [
+    {
+      "title": "Official congressional website",
+      "url": "https://dexter.house.gov"
+    },
+    {
+      "title": "Congress legislators current roster",
+      "url": "https://raw.githubusercontent.com/unitedstates/congress-legislators/master/legislators-current.yaml"
+    },
+    {
+      "title": "Biographical Directory of the United States Congress",
+      "url": "https://bioguide.congress.gov/search/bio/D000635"
+    },
+    {
+      "title": "Congressional photo source",
+      "url": "https://dexter.house.gov/sites/evo-subsites/dexter.house.gov/files/styles/evo_image_portrait_480/public/evo-media-image/2024-11-18_ike_dexter_maxine_0026_re_web.jpg?itok=VC6EIh3d"
+    }
+  ],
+  "lastVerifiedAt": "2026-04-29"
+}

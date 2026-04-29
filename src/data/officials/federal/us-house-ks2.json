@@ -1,0 +1,47 @@
+{
+  "id": "derek-schmidt",
+  "name": "Derek Schmidt",
+  "firstName": "Derek",
+  "lastName": "Schmidt",
+  "photo": "/images/officials/federal/derek-schmidt.jpg",
+  "photoSourceUrl": "https://schmidt.house.gov/sites/evo-subsites/schmidt.house.gov/files/styles/evo_image_portrait_480/public/evo-media-image/2024_schmidt_derek_official.jpg?itok=aeVTitwH",
+  "photoCredit": "Official congressional website image",
+  "party": "R",
+  "level": "federal",
+  "position": "U.S. Representative",
+  "district": "KS-2",
+  "jurisdiction": "U.S. House of Representatives",
+  "county": [],
+  "termStart": "2025-01-03",
+  "termEnd": "2027-01-03",
+  "contactInfo": {
+    "office": "1223 Longworth House Office Building",
+    "phone": "202-225-6601",
+    "email": "https://schmidt.house.gov",
+    "website": "https://schmidt.house.gov"
+  },
+  "bio": "Derek Schmidt serves as the U.S. Representative for Kansas's 2nd Congressional District. This RepWatchr starter profile is source-seeded from current congressional roster data, official public links, and public congressional photo sources.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "KS",
+  "bioguideId": "S001228",
+  "sourceLinks": [
+    {
+      "title": "Official congressional website",
+      "url": "https://schmidt.house.gov"
+    },
+    {
+      "title": "Congress legislators current roster",
+      "url": "https://raw.githubusercontent.com/unitedstates/congress-legislators/master/legislators-current.yaml"
+    },
+    {
+      "title": "Biographical Directory of the United States Congress",
+      "url": "https://bioguide.congress.gov/search/bio/S001228"
+    },
+    {
+      "title": "Congressional photo source",
+      "url": "https://schmidt.house.gov/sites/evo-subsites/schmidt.house.gov/files/styles/evo_image_portrait_480/public/evo-media-image/2024_schmidt_derek_official.jpg?itok=aeVTitwH"
+    }
+  ],
+  "lastVerifiedAt": "2026-04-29"
+}

@@ -1,0 +1,47 @@
+{
+  "id": "juan-ciscomani",
+  "name": "Juan Ciscomani",
+  "firstName": "Juan",
+  "lastName": "Ciscomani",
+  "photo": "/images/officials/federal/juan-ciscomani.jpg",
+  "photoSourceUrl": "https://unitedstates.github.io/images/congress/225x275/C001133.jpg",
+  "photoCredit": "UnitedStates project congressional image mirror",
+  "party": "R",
+  "level": "federal",
+  "position": "U.S. Representative",
+  "district": "AZ-6",
+  "jurisdiction": "U.S. House of Representatives",
+  "county": [],
+  "termStart": "2025-01-03",
+  "termEnd": "2027-01-03",
+  "contactInfo": {
+    "office": "461 Cannon House Office Building",
+    "phone": "202-225-2542",
+    "email": "https://ciscomani.house.gov",
+    "website": "https://ciscomani.house.gov"
+  },
+  "bio": "Juan Ciscomani serves as the U.S. Representative for Arizona's 6th Congressional District. This RepWatchr starter profile is source-seeded from current congressional roster data, official public links, and public congressional photo sources.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "AZ",
+  "bioguideId": "C001133",
+  "sourceLinks": [
+    {
+      "title": "Official congressional website",
+      "url": "https://ciscomani.house.gov"
+    },
+    {
+      "title": "Congress legislators current roster",
+      "url": "https://raw.githubusercontent.com/unitedstates/congress-legislators/master/legislators-current.yaml"
+    },
+    {
+      "title": "Biographical Directory of the United States Congress",
+      "url": "https://bioguide.congress.gov/search/bio/C001133"
+    },
+    {
+      "title": "Congressional photo source",
+      "url": "https://unitedstates.github.io/images/congress/225x275/C001133.jpg"
+    }
+  ],
+  "lastVerifiedAt": "2026-04-29"
+}

@@ -1,0 +1,47 @@
+{
+  "id": "william-r-timmons-iv",
+  "name": "William R. Timmons IV",
+  "firstName": "William",
+  "lastName": "Timmons",
+  "photo": "/images/officials/federal/william-r-timmons-iv.jpg",
+  "photoSourceUrl": "https://unitedstates.github.io/images/congress/225x275/T000480.jpg",
+  "photoCredit": "UnitedStates project congressional image mirror",
+  "party": "R",
+  "level": "federal",
+  "position": "U.S. Representative",
+  "district": "SC-4",
+  "jurisdiction": "U.S. House of Representatives",
+  "county": [],
+  "termStart": "2025-01-03",
+  "termEnd": "2027-01-03",
+  "contactInfo": {
+    "office": "267 Cannon House Office Building",
+    "phone": "202-225-6030",
+    "email": "https://timmons.house.gov",
+    "website": "https://timmons.house.gov"
+  },
+  "bio": "William R. Timmons IV serves as the U.S. Representative for South Carolina's 4th Congressional District. This RepWatchr starter profile is source-seeded from current congressional roster data, official public links, and public congressional photo sources.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "SC",
+  "bioguideId": "T000480",
+  "sourceLinks": [
+    {
+      "title": "Official congressional website",
+      "url": "https://timmons.house.gov"
+    },
+    {
+      "title": "Congress legislators current roster",
+      "url": "https://raw.githubusercontent.com/unitedstates/congress-legislators/master/legislators-current.yaml"
+    },
+    {
+      "title": "Biographical Directory of the United States Congress",
+      "url": "https://bioguide.congress.gov/search/bio/T000480"
+    },
+    {
+      "title": "Congressional photo source",
+      "url": "https://unitedstates.github.io/images/congress/225x275/T000480.jpg"
+    }
+  ],
+  "lastVerifiedAt": "2026-04-29"
+}

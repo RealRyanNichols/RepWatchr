@@ -1,0 +1,47 @@
+{
+  "id": "brian-jack",
+  "name": "Brian Jack",
+  "firstName": "Brian",
+  "lastName": "Jack",
+  "photo": "/images/officials/federal/brian-jack.webp",
+  "photoSourceUrl": "https://jack.house.gov/sites/evo-subsites/jack.house.gov/files/styles/large/public/evo-media-image/2024-11-21_ike_jack_brian_0078_re_select_sm.jpg.webp?itok=IOadhnup",
+  "photoCredit": "Official congressional website image",
+  "party": "R",
+  "level": "federal",
+  "position": "U.S. Representative",
+  "district": "GA-3",
+  "jurisdiction": "U.S. House of Representatives",
+  "county": [],
+  "termStart": "2025-01-03",
+  "termEnd": "2027-01-03",
+  "contactInfo": {
+    "office": "1320 Longworth House Office Building",
+    "phone": "202-225-5901",
+    "email": "https://jack.house.gov",
+    "website": "https://jack.house.gov"
+  },
+  "bio": "Brian Jack serves as the U.S. Representative for Georgia's 3rd Congressional District. This RepWatchr starter profile is source-seeded from current congressional roster data, official public links, and public congressional photo sources.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "GA",
+  "bioguideId": "J000311",
+  "sourceLinks": [
+    {
+      "title": "Official congressional website",
+      "url": "https://jack.house.gov"
+    },
+    {
+      "title": "Congress legislators current roster",
+      "url": "https://raw.githubusercontent.com/unitedstates/congress-legislators/master/legislators-current.yaml"
+    },
+    {
+      "title": "Biographical Directory of the United States Congress",
+      "url": "https://bioguide.congress.gov/search/bio/J000311"
+    },
+    {
+      "title": "Congressional photo source",
+      "url": "https://jack.house.gov/sites/evo-subsites/jack.house.gov/files/styles/large/public/evo-media-image/2024-11-21_ike_jack_brian_0078_re_select_sm.jpg.webp?itok=IOadhnup"
+    }
+  ],
+  "lastVerifiedAt": "2026-04-29"
+}

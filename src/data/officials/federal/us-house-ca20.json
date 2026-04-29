@@ -1,0 +1,40 @@
+{
+  "id": "vince-fong",
+  "name": "Vince Fong",
+  "firstName": "Vince",
+  "lastName": "Fong",
+  "party": "R",
+  "level": "federal",
+  "position": "U.S. Representative",
+  "district": "CA-20",
+  "jurisdiction": "U.S. House of Representatives",
+  "county": [],
+  "termStart": "2025-01-03",
+  "termEnd": "2027-01-03",
+  "contactInfo": {
+    "office": "243 Cannon House Office Building",
+    "phone": "202-225-2915",
+    "email": "https://fong.house.gov",
+    "website": "https://fong.house.gov"
+  },
+  "bio": "Vince Fong serves as the U.S. Representative for California's 20th Congressional District. This RepWatchr starter profile is source-seeded from current congressional roster data, official public links, and public congressional photo sources.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "CA",
+  "bioguideId": "F000480",
+  "sourceLinks": [
+    {
+      "title": "Official congressional website",
+      "url": "https://fong.house.gov"
+    },
+    {
+      "title": "Congress legislators current roster",
+      "url": "https://raw.githubusercontent.com/unitedstates/congress-legislators/master/legislators-current.yaml"
+    },
+    {
+      "title": "Biographical Directory of the United States Congress",
+      "url": "https://bioguide.congress.gov/search/bio/F000480"
+    }
+  ],
+  "lastVerifiedAt": "2026-04-29"
+}

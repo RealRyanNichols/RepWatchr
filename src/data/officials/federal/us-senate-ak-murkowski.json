@@ -1,0 +1,47 @@
+{
+  "id": "lisa-murkowski",
+  "name": "Lisa Murkowski",
+  "firstName": "Lisa",
+  "lastName": "Murkowski",
+  "photo": "/images/officials/federal/lisa-murkowski.jpg",
+  "photoSourceUrl": "https://unitedstates.github.io/images/congress/225x275/M001153.jpg",
+  "photoCredit": "UnitedStates project congressional image mirror",
+  "party": "R",
+  "level": "federal",
+  "position": "U.S. Senator",
+  "district": "Alaska",
+  "jurisdiction": "U.S. Senate",
+  "county": [],
+  "termStart": "2023-01-03",
+  "termEnd": "2029-01-03",
+  "contactInfo": {
+    "office": "522 Hart Senate Office Building",
+    "phone": "202-224-6665",
+    "email": "https://www.murkowski.senate.gov/public/index.cfm/contact",
+    "website": "https://www.murkowski.senate.gov"
+  },
+  "bio": "Lisa Murkowski serves as a U.S. Senator for Alaska. This RepWatchr starter profile is source-seeded from current congressional roster data, official public links, and public congressional photo sources.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "AK",
+  "bioguideId": "M001153",
+  "sourceLinks": [
+    {
+      "title": "Official congressional website",
+      "url": "https://www.murkowski.senate.gov"
+    },
+    {
+      "title": "Congress legislators current roster",
+      "url": "https://raw.githubusercontent.com/unitedstates/congress-legislators/master/legislators-current.yaml"
+    },
+    {
+      "title": "Biographical Directory of the United States Congress",
+      "url": "https://bioguide.congress.gov/search/bio/M001153"
+    },
+    {
+      "title": "Congressional photo source",
+      "url": "https://unitedstates.github.io/images/congress/225x275/M001153.jpg"
+    }
+  ],
+  "lastVerifiedAt": "2026-04-29"
+}

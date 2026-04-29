@@ -1,0 +1,47 @@
+{
+  "id": "kim-schrier",
+  "name": "Kim Schrier",
+  "firstName": "Kim",
+  "lastName": "Schrier",
+  "photo": "/images/officials/federal/kim-schrier.jpg",
+  "photoSourceUrl": "https://unitedstates.github.io/images/congress/225x275/S001216.jpg",
+  "photoCredit": "UnitedStates project congressional image mirror",
+  "party": "D",
+  "level": "federal",
+  "position": "U.S. Representative",
+  "district": "WA-8",
+  "jurisdiction": "U.S. House of Representatives",
+  "county": [],
+  "termStart": "2025-01-03",
+  "termEnd": "2027-01-03",
+  "contactInfo": {
+    "office": "1110 Longworth House Office Building",
+    "phone": "202-225-7761",
+    "email": "https://schrier.house.gov",
+    "website": "https://schrier.house.gov"
+  },
+  "bio": "Kim Schrier serves as the U.S. Representative for Washington's 8th Congressional District. This RepWatchr starter profile is source-seeded from current congressional roster data, official public links, and public congressional photo sources.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "WA",
+  "bioguideId": "S001216",
+  "sourceLinks": [
+    {
+      "title": "Official congressional website",
+      "url": "https://schrier.house.gov"
+    },
+    {
+      "title": "Congress legislators current roster",
+      "url": "https://raw.githubusercontent.com/unitedstates/congress-legislators/master/legislators-current.yaml"
+    },
+    {
+      "title": "Biographical Directory of the United States Congress",
+      "url": "https://bioguide.congress.gov/search/bio/S001216"
+    },
+    {
+      "title": "Congressional photo source",
+      "url": "https://unitedstates.github.io/images/congress/225x275/S001216.jpg"
+    }
+  ],
+  "lastVerifiedAt": "2026-04-29"
+}

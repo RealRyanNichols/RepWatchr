@@ -1,0 +1,47 @@
+{
+  "id": "janice-d-schakowsky",
+  "name": "Janice D. Schakowsky",
+  "firstName": "Janice",
+  "lastName": "Schakowsky",
+  "photo": "/images/officials/federal/janice-d-schakowsky.jpg",
+  "photoSourceUrl": "https://unitedstates.github.io/images/congress/225x275/S001145.jpg",
+  "photoCredit": "UnitedStates project congressional image mirror",
+  "party": "D",
+  "level": "federal",
+  "position": "U.S. Representative",
+  "district": "IL-9",
+  "jurisdiction": "U.S. House of Representatives",
+  "county": [],
+  "termStart": "2025-01-03",
+  "termEnd": "2027-01-03",
+  "contactInfo": {
+    "office": "2408 Rayburn House Office Building",
+    "phone": "202-225-2111",
+    "email": "https://schakowsky.house.gov",
+    "website": "https://schakowsky.house.gov"
+  },
+  "bio": "Janice D. Schakowsky serves as the U.S. Representative for Illinois's 9th Congressional District. This RepWatchr starter profile is source-seeded from current congressional roster data, official public links, and public congressional photo sources.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "IL",
+  "bioguideId": "S001145",
+  "sourceLinks": [
+    {
+      "title": "Official congressional website",
+      "url": "https://schakowsky.house.gov"
+    },
+    {
+      "title": "Congress legislators current roster",
+      "url": "https://raw.githubusercontent.com/unitedstates/congress-legislators/master/legislators-current.yaml"
+    },
+    {
+      "title": "Biographical Directory of the United States Congress",
+      "url": "https://bioguide.congress.gov/search/bio/S001145"
+    },
+    {
+      "title": "Congressional photo source",
+      "url": "https://unitedstates.github.io/images/congress/225x275/S001145.jpg"
+    }
+  ],
+  "lastVerifiedAt": "2026-04-29"
+}

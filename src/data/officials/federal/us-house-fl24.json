@@ -1,0 +1,47 @@
+{
+  "id": "frederica-s-wilson",
+  "name": "Frederica S. Wilson",
+  "firstName": "Frederica",
+  "lastName": "Wilson",
+  "photo": "/images/officials/federal/frederica-s-wilson.jpg",
+  "photoSourceUrl": "https://unitedstates.github.io/images/congress/225x275/W000808.jpg",
+  "photoCredit": "UnitedStates project congressional image mirror",
+  "party": "D",
+  "level": "federal",
+  "position": "U.S. Representative",
+  "district": "FL-24",
+  "jurisdiction": "U.S. House of Representatives",
+  "county": [],
+  "termStart": "2025-01-03",
+  "termEnd": "2027-01-03",
+  "contactInfo": {
+    "office": "2080 Rayburn House Office Building",
+    "phone": "202-225-4506",
+    "email": "https://wilson.house.gov",
+    "website": "https://wilson.house.gov"
+  },
+  "bio": "Frederica S. Wilson serves as the U.S. Representative for Florida's 24th Congressional District. This RepWatchr starter profile is source-seeded from current congressional roster data, official public links, and public congressional photo sources.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "FL",
+  "bioguideId": "W000808",
+  "sourceLinks": [
+    {
+      "title": "Official congressional website",
+      "url": "https://wilson.house.gov"
+    },
+    {
+      "title": "Congress legislators current roster",
+      "url": "https://raw.githubusercontent.com/unitedstates/congress-legislators/master/legislators-current.yaml"
+    },
+    {
+      "title": "Biographical Directory of the United States Congress",
+      "url": "https://bioguide.congress.gov/search/bio/W000808"
+    },
+    {
+      "title": "Congressional photo source",
+      "url": "https://unitedstates.github.io/images/congress/225x275/W000808.jpg"
+    }
+  ],
+  "lastVerifiedAt": "2026-04-29"
+}

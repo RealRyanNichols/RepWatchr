@@ -1,0 +1,47 @@
+{
+  "id": "patrick-ryan",
+  "name": "Patrick Ryan",
+  "firstName": "Patrick",
+  "lastName": "Ryan",
+  "photo": "/images/officials/federal/patrick-ryan.jpg",
+  "photoSourceUrl": "https://unitedstates.github.io/images/congress/225x275/R000579.jpg",
+  "photoCredit": "UnitedStates project congressional image mirror",
+  "party": "D",
+  "level": "federal",
+  "position": "U.S. Representative",
+  "district": "NY-18",
+  "jurisdiction": "U.S. House of Representatives",
+  "county": [],
+  "termStart": "2025-01-03",
+  "termEnd": "2027-01-03",
+  "contactInfo": {
+    "office": "1708 Longworth House Office Building",
+    "phone": "202-225-5614",
+    "email": "https://patryan.house.gov",
+    "website": "https://patryan.house.gov"
+  },
+  "bio": "Patrick Ryan serves as the U.S. Representative for New York's 18th Congressional District. This RepWatchr starter profile is source-seeded from current congressional roster data, official public links, and public congressional photo sources.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "NY",
+  "bioguideId": "R000579",
+  "sourceLinks": [
+    {
+      "title": "Official congressional website",
+      "url": "https://patryan.house.gov"
+    },
+    {
+      "title": "Congress legislators current roster",
+      "url": "https://raw.githubusercontent.com/unitedstates/congress-legislators/master/legislators-current.yaml"
+    },
+    {
+      "title": "Biographical Directory of the United States Congress",
+      "url": "https://bioguide.congress.gov/search/bio/R000579"
+    },
+    {
+      "title": "Congressional photo source",
+      "url": "https://unitedstates.github.io/images/congress/225x275/R000579.jpg"
+    }
+  ],
+  "lastVerifiedAt": "2026-04-29"
+}

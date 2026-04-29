@@ -1,0 +1,47 @@
+{
+  "id": "angus-s-king-jr",
+  "name": "Angus S. King, Jr.",
+  "firstName": "Angus",
+  "lastName": "King",
+  "photo": "/images/officials/federal/angus-s-king-jr.jpg",
+  "photoSourceUrl": "https://unitedstates.github.io/images/congress/225x275/K000383.jpg",
+  "photoCredit": "UnitedStates project congressional image mirror",
+  "party": "I",
+  "level": "federal",
+  "position": "U.S. Senator",
+  "district": "Maine",
+  "jurisdiction": "U.S. Senate",
+  "county": [],
+  "termStart": "2025-01-03",
+  "termEnd": "2031-01-03",
+  "contactInfo": {
+    "office": "133 Hart Senate Office Building",
+    "phone": "202-224-5344",
+    "email": "https://www.king.senate.gov/contact",
+    "website": "https://www.king.senate.gov"
+  },
+  "bio": "Angus S. King, Jr. serves as a U.S. Senator for Maine. This RepWatchr starter profile is source-seeded from current congressional roster data, official public links, and public congressional photo sources.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "ME",
+  "bioguideId": "K000383",
+  "sourceLinks": [
+    {
+      "title": "Official congressional website",
+      "url": "https://www.king.senate.gov"
+    },
+    {
+      "title": "Congress legislators current roster",
+      "url": "https://raw.githubusercontent.com/unitedstates/congress-legislators/master/legislators-current.yaml"
+    },
+    {
+      "title": "Biographical Directory of the United States Congress",
+      "url": "https://bioguide.congress.gov/search/bio/K000383"
+    },
+    {
+      "title": "Congressional photo source",
+      "url": "https://unitedstates.github.io/images/congress/225x275/K000383.jpg"
+    }
+  ],
+  "lastVerifiedAt": "2026-04-29"
+}

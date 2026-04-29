@@ -1,0 +1,47 @@
+{
+  "id": "luz-m-rivas",
+  "name": "Luz M. Rivas",
+  "firstName": "Luz",
+  "lastName": "Rivas",
+  "photo": "/images/officials/federal/luz-m-rivas.png",
+  "photoSourceUrl": "https://rivas.house.gov/sites/evo-subsites/rivas.house.gov/files/styles/evo_image_portrait_480/public/evo-media-image/lmr-headshot-purple.png?itok=iGi2W9RP",
+  "photoCredit": "Official congressional website image",
+  "party": "D",
+  "level": "federal",
+  "position": "U.S. Representative",
+  "district": "CA-29",
+  "jurisdiction": "U.S. House of Representatives",
+  "county": [],
+  "termStart": "2025-01-03",
+  "termEnd": "2027-01-03",
+  "contactInfo": {
+    "office": "1319 Longworth House Office Building",
+    "phone": "202-225-6131",
+    "email": "https://rivas.house.gov",
+    "website": "https://rivas.house.gov"
+  },
+  "bio": "Luz M. Rivas serves as the U.S. Representative for California's 29th Congressional District. This RepWatchr starter profile is source-seeded from current congressional roster data, official public links, and public congressional photo sources.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "CA",
+  "bioguideId": "R000620",
+  "sourceLinks": [
+    {
+      "title": "Official congressional website",
+      "url": "https://rivas.house.gov"
+    },
+    {
+      "title": "Congress legislators current roster",
+      "url": "https://raw.githubusercontent.com/unitedstates/congress-legislators/master/legislators-current.yaml"
+    },
+    {
+      "title": "Biographical Directory of the United States Congress",
+      "url": "https://bioguide.congress.gov/search/bio/R000620"
+    },
+    {
+      "title": "Congressional photo source",
+      "url": "https://rivas.house.gov/sites/evo-subsites/rivas.house.gov/files/styles/evo_image_portrait_480/public/evo-media-image/lmr-headshot-purple.png?itok=iGi2W9RP"
+    }
+  ],
+  "lastVerifiedAt": "2026-04-29"
+}

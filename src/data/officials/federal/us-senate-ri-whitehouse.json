@@ -1,0 +1,47 @@
+{
+  "id": "sheldon-whitehouse",
+  "name": "Sheldon Whitehouse",
+  "firstName": "Sheldon",
+  "lastName": "Whitehouse",
+  "photo": "/images/officials/federal/sheldon-whitehouse.jpg",
+  "photoSourceUrl": "https://unitedstates.github.io/images/congress/225x275/W000802.jpg",
+  "photoCredit": "UnitedStates project congressional image mirror",
+  "party": "D",
+  "level": "federal",
+  "position": "U.S. Senator",
+  "district": "Rhode Island",
+  "jurisdiction": "U.S. Senate",
+  "county": [],
+  "termStart": "2025-01-03",
+  "termEnd": "2031-01-03",
+  "contactInfo": {
+    "office": "530 Hart Senate Office Building",
+    "phone": "202-224-2921",
+    "email": "https://www.whitehouse.senate.gov/contact/email-sheldon",
+    "website": "https://www.whitehouse.senate.gov"
+  },
+  "bio": "Sheldon Whitehouse serves as a U.S. Senator for Rhode Island. This RepWatchr starter profile is source-seeded from current congressional roster data, official public links, and public congressional photo sources.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "RI",
+  "bioguideId": "W000802",
+  "sourceLinks": [
+    {
+      "title": "Official congressional website",
+      "url": "https://www.whitehouse.senate.gov"
+    },
+    {
+      "title": "Congress legislators current roster",
+      "url": "https://raw.githubusercontent.com/unitedstates/congress-legislators/master/legislators-current.yaml"
+    },
+    {
+      "title": "Biographical Directory of the United States Congress",
+      "url": "https://bioguide.congress.gov/search/bio/W000802"
+    },
+    {
+      "title": "Congressional photo source",
+      "url": "https://unitedstates.github.io/images/congress/225x275/W000802.jpg"
+    }
+  ],
+  "lastVerifiedAt": "2026-04-29"
+}

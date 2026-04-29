@@ -1,0 +1,47 @@
+{
+  "id": "adam-b-schiff",
+  "name": "Adam B. Schiff",
+  "firstName": "Adam",
+  "lastName": "Schiff",
+  "photo": "/images/officials/federal/adam-b-schiff.jpg",
+  "photoSourceUrl": "https://unitedstates.github.io/images/congress/225x275/S001150.jpg",
+  "photoCredit": "UnitedStates project congressional image mirror",
+  "party": "D",
+  "level": "federal",
+  "position": "U.S. Senator",
+  "district": "California",
+  "jurisdiction": "U.S. Senate",
+  "county": [],
+  "termStart": "2025-01-03",
+  "termEnd": "2031-01-03",
+  "contactInfo": {
+    "office": "112 Hart Senate Office Building",
+    "phone": "202-224-3841",
+    "email": "https://www.schiff.senate.gov",
+    "website": "https://www.schiff.senate.gov"
+  },
+  "bio": "Adam B. Schiff serves as a U.S. Senator for California. This RepWatchr starter profile is source-seeded from current congressional roster data, official public links, and public congressional photo sources.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "CA",
+  "bioguideId": "S001150",
+  "sourceLinks": [
+    {
+      "title": "Official congressional website",
+      "url": "https://www.schiff.senate.gov"
+    },
+    {
+      "title": "Congress legislators current roster",
+      "url": "https://raw.githubusercontent.com/unitedstates/congress-legislators/master/legislators-current.yaml"
+    },
+    {
+      "title": "Biographical Directory of the United States Congress",
+      "url": "https://bioguide.congress.gov/search/bio/S001150"
+    },
+    {
+      "title": "Congressional photo source",
+      "url": "https://unitedstates.github.io/images/congress/225x275/S001150.jpg"
+    }
+  ],
+  "lastVerifiedAt": "2026-04-29"
+}

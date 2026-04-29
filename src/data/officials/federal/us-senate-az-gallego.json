@@ -1,0 +1,47 @@
+{
+  "id": "ruben-gallego",
+  "name": "Ruben Gallego",
+  "firstName": "Ruben",
+  "lastName": "Gallego",
+  "photo": "/images/officials/federal/ruben-gallego.jpg",
+  "photoSourceUrl": "https://unitedstates.github.io/images/congress/225x275/G000574.jpg",
+  "photoCredit": "UnitedStates project congressional image mirror",
+  "party": "D",
+  "level": "federal",
+  "position": "U.S. Senator",
+  "district": "Arizona",
+  "jurisdiction": "U.S. Senate",
+  "county": [],
+  "termStart": "2025-01-03",
+  "termEnd": "2031-01-03",
+  "contactInfo": {
+    "office": "302 Hart Senate Office Building",
+    "phone": "202-224-4521",
+    "email": "https://www.gallego.senate.gov",
+    "website": "https://www.gallego.senate.gov"
+  },
+  "bio": "Ruben Gallego serves as a U.S. Senator for Arizona. This RepWatchr starter profile is source-seeded from current congressional roster data, official public links, and public congressional photo sources.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "AZ",
+  "bioguideId": "G000574",
+  "sourceLinks": [
+    {
+      "title": "Official congressional website",
+      "url": "https://www.gallego.senate.gov"
+    },
+    {
+      "title": "Congress legislators current roster",
+      "url": "https://raw.githubusercontent.com/unitedstates/congress-legislators/master/legislators-current.yaml"
+    },
+    {
+      "title": "Biographical Directory of the United States Congress",
+      "url": "https://bioguide.congress.gov/search/bio/G000574"
+    },
+    {
+      "title": "Congressional photo source",
+      "url": "https://unitedstates.github.io/images/congress/225x275/G000574.jpg"
+    }
+  ],
+  "lastVerifiedAt": "2026-04-29"
+}

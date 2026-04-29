@@ -1,0 +1,47 @@
+{
+  "id": "earl-l-buddy-carter",
+  "name": "Earl L. \"Buddy\" Carter",
+  "firstName": "Earl",
+  "lastName": "Carter",
+  "photo": "/images/officials/federal/earl-l-buddy-carter.jpg",
+  "photoSourceUrl": "https://unitedstates.github.io/images/congress/225x275/C001103.jpg",
+  "photoCredit": "UnitedStates project congressional image mirror",
+  "party": "R",
+  "level": "federal",
+  "position": "U.S. Representative",
+  "district": "GA-1",
+  "jurisdiction": "U.S. House of Representatives",
+  "county": [],
+  "termStart": "2025-01-03",
+  "termEnd": "2027-01-03",
+  "contactInfo": {
+    "office": "2432 Rayburn House Office Building",
+    "phone": "202-225-5831",
+    "email": "https://buddycarter.house.gov",
+    "website": "https://buddycarter.house.gov"
+  },
+  "bio": "Earl L. \"Buddy\" Carter serves as the U.S. Representative for Georgia's 1st Congressional District. This RepWatchr starter profile is source-seeded from current congressional roster data, official public links, and public congressional photo sources.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "GA",
+  "bioguideId": "C001103",
+  "sourceLinks": [
+    {
+      "title": "Official congressional website",
+      "url": "https://buddycarter.house.gov"
+    },
+    {
+      "title": "Congress legislators current roster",
+      "url": "https://raw.githubusercontent.com/unitedstates/congress-legislators/master/legislators-current.yaml"
+    },
+    {
+      "title": "Biographical Directory of the United States Congress",
+      "url": "https://bioguide.congress.gov/search/bio/C001103"
+    },
+    {
+      "title": "Congressional photo source",
+      "url": "https://unitedstates.github.io/images/congress/225x275/C001103.jpg"
+    }
+  ],
+  "lastVerifiedAt": "2026-04-29"
+}

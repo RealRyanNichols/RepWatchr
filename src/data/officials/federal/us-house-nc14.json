@@ -1,0 +1,40 @@
+{
+  "id": "tim-moore",
+  "name": "Tim Moore",
+  "firstName": "Tim",
+  "lastName": "Moore",
+  "party": "R",
+  "level": "federal",
+  "position": "U.S. Representative",
+  "district": "NC-14",
+  "jurisdiction": "U.S. House of Representatives",
+  "county": [],
+  "termStart": "2025-01-03",
+  "termEnd": "2027-01-03",
+  "contactInfo": {
+    "office": "1424 Longworth House Office Building",
+    "phone": "202-225-5634",
+    "email": "https://timmoore.house.gov",
+    "website": "https://timmoore.house.gov"
+  },
+  "bio": "Tim Moore serves as the U.S. Representative for North Carolina's 14th Congressional District. This RepWatchr starter profile is source-seeded from current congressional roster data, official public links, and public congressional photo sources.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "NC",
+  "bioguideId": "M001236",
+  "sourceLinks": [
+    {
+      "title": "Official congressional website",
+      "url": "https://timmoore.house.gov"
+    },
+    {
+      "title": "Congress legislators current roster",
+      "url": "https://raw.githubusercontent.com/unitedstates/congress-legislators/master/legislators-current.yaml"
+    },
+    {
+      "title": "Biographical Directory of the United States Congress",
+      "url": "https://bioguide.congress.gov/search/bio/M001236"
+    }
+  ],
+  "lastVerifiedAt": "2026-04-29"
+}

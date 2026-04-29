@@ -1,0 +1,47 @@
+{
+  "id": "john-r-moolenaar",
+  "name": "John R. Moolenaar",
+  "firstName": "John",
+  "lastName": "Moolenaar",
+  "photo": "/images/officials/federal/john-r-moolenaar.jpg",
+  "photoSourceUrl": "https://unitedstates.github.io/images/congress/225x275/M001194.jpg",
+  "photoCredit": "UnitedStates project congressional image mirror",
+  "party": "R",
+  "level": "federal",
+  "position": "U.S. Representative",
+  "district": "MI-2",
+  "jurisdiction": "U.S. House of Representatives",
+  "county": [],
+  "termStart": "2025-01-03",
+  "termEnd": "2027-01-03",
+  "contactInfo": {
+    "office": "246 Cannon House Office Building",
+    "phone": "202-225-3561",
+    "email": "https://moolenaar.house.gov",
+    "website": "https://moolenaar.house.gov"
+  },
+  "bio": "John R. Moolenaar serves as the U.S. Representative for Michigan's 2nd Congressional District. This RepWatchr starter profile is source-seeded from current congressional roster data, official public links, and public congressional photo sources.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "MI",
+  "bioguideId": "M001194",
+  "sourceLinks": [
+    {
+      "title": "Official congressional website",
+      "url": "https://moolenaar.house.gov"
+    },
+    {
+      "title": "Congress legislators current roster",
+      "url": "https://raw.githubusercontent.com/unitedstates/congress-legislators/master/legislators-current.yaml"
+    },
+    {
+      "title": "Biographical Directory of the United States Congress",
+      "url": "https://bioguide.congress.gov/search/bio/M001194"
+    },
+    {
+      "title": "Congressional photo source",
+      "url": "https://unitedstates.github.io/images/congress/225x275/M001194.jpg"
+    }
+  ],
+  "lastVerifiedAt": "2026-04-29"
+}

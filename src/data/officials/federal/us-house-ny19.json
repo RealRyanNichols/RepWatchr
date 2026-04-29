@@ -1,0 +1,40 @@
+{
+  "id": "josh-riley",
+  "name": "Josh Riley",
+  "firstName": "Josh",
+  "lastName": "Riley",
+  "party": "D",
+  "level": "federal",
+  "position": "U.S. Representative",
+  "district": "NY-19",
+  "jurisdiction": "U.S. House of Representatives",
+  "county": [],
+  "termStart": "2025-01-03",
+  "termEnd": "2027-01-03",
+  "contactInfo": {
+    "office": "128 Cannon House Office Building",
+    "phone": "202-225-5441",
+    "email": "https://riley.house.gov",
+    "website": "https://riley.house.gov"
+  },
+  "bio": "Josh Riley serves as the U.S. Representative for New York's 19th Congressional District. This RepWatchr starter profile is source-seeded from current congressional roster data, official public links, and public congressional photo sources.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "NY",
+  "bioguideId": "R000622",
+  "sourceLinks": [
+    {
+      "title": "Official congressional website",
+      "url": "https://riley.house.gov"
+    },
+    {
+      "title": "Congress legislators current roster",
+      "url": "https://raw.githubusercontent.com/unitedstates/congress-legislators/master/legislators-current.yaml"
+    },
+    {
+      "title": "Biographical Directory of the United States Congress",
+      "url": "https://bioguide.congress.gov/search/bio/R000622"
+    }
+  ],
+  "lastVerifiedAt": "2026-04-29"
+}

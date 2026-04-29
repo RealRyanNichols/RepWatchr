@@ -1,0 +1,47 @@
+{
+  "id": "brian-schatz",
+  "name": "Brian Schatz",
+  "firstName": "Brian",
+  "lastName": "Schatz",
+  "photo": "/images/officials/federal/brian-schatz.jpg",
+  "photoSourceUrl": "https://unitedstates.github.io/images/congress/225x275/S001194.jpg",
+  "photoCredit": "UnitedStates project congressional image mirror",
+  "party": "D",
+  "level": "federal",
+  "position": "U.S. Senator",
+  "district": "Hawaii",
+  "jurisdiction": "U.S. Senate",
+  "county": [],
+  "termStart": "2023-01-03",
+  "termEnd": "2029-01-03",
+  "contactInfo": {
+    "office": "722 Hart Senate Office Building",
+    "phone": "202-224-3934",
+    "email": "https://www.schatz.senate.gov/contact",
+    "website": "https://www.schatz.senate.gov"
+  },
+  "bio": "Brian Schatz serves as a U.S. Senator for Hawaii. This RepWatchr starter profile is source-seeded from current congressional roster data, official public links, and public congressional photo sources.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "HI",
+  "bioguideId": "S001194",
+  "sourceLinks": [
+    {
+      "title": "Official congressional website",
+      "url": "https://www.schatz.senate.gov"
+    },
+    {
+      "title": "Congress legislators current roster",
+      "url": "https://raw.githubusercontent.com/unitedstates/congress-legislators/master/legislators-current.yaml"
+    },
+    {
+      "title": "Biographical Directory of the United States Congress",
+      "url": "https://bioguide.congress.gov/search/bio/S001194"
+    },
+    {
+      "title": "Congressional photo source",
+      "url": "https://unitedstates.github.io/images/congress/225x275/S001194.jpg"
+    }
+  ],
+  "lastVerifiedAt": "2026-04-29"
+}

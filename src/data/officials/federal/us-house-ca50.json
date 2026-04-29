@@ -1,0 +1,47 @@
+{
+  "id": "scott-h-peters",
+  "name": "Scott H. Peters",
+  "firstName": "Scott",
+  "lastName": "Peters",
+  "photo": "/images/officials/federal/scott-h-peters.jpg",
+  "photoSourceUrl": "https://unitedstates.github.io/images/congress/225x275/P000608.jpg",
+  "photoCredit": "UnitedStates project congressional image mirror",
+  "party": "D",
+  "level": "federal",
+  "position": "U.S. Representative",
+  "district": "CA-50",
+  "jurisdiction": "U.S. House of Representatives",
+  "county": [],
+  "termStart": "2025-01-03",
+  "termEnd": "2027-01-03",
+  "contactInfo": {
+    "office": "2369 Rayburn House Office Building",
+    "phone": "202-225-0508",
+    "email": "https://scottpeters.house.gov",
+    "website": "https://scottpeters.house.gov"
+  },
+  "bio": "Scott H. Peters serves as the U.S. Representative for California's 50th Congressional District. This RepWatchr starter profile is source-seeded from current congressional roster data, official public links, and public congressional photo sources.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "CA",
+  "bioguideId": "P000608",
+  "sourceLinks": [
+    {
+      "title": "Official congressional website",
+      "url": "https://scottpeters.house.gov"
+    },
+    {
+      "title": "Congress legislators current roster",
+      "url": "https://raw.githubusercontent.com/unitedstates/congress-legislators/master/legislators-current.yaml"
+    },
+    {
+      "title": "Biographical Directory of the United States Congress",
+      "url": "https://bioguide.congress.gov/search/bio/P000608"
+    },
+    {
+      "title": "Congressional photo source",
+      "url": "https://unitedstates.github.io/images/congress/225x275/P000608.jpg"
+    }
+  ],
+  "lastVerifiedAt": "2026-04-29"
+}

@@ -86,9 +86,12 @@ function districtSortValue(district?: string): number {
   return match ? Number(match[0]) : Number.MAX_SAFE_INTEGER;
 }
 
+const FEDERAL_EXPECTED_SEATS = {
+  house: 435,
+  senate: 100,
+} as const;
+
 const TEXAS_EXPECTED_SEATS = {
-  federalHouse: 38,
-  federalSenate: 2,
   stateHouse: 150,
   stateSenate: 31,
 } as const;
@@ -341,7 +344,7 @@ export function getRepWatchrDataStats() {
   const texasSenateProfilesLoaded = officials.filter(
     (official) => official.level === "state" && official.position === "State Senator",
   ).length;
-  const federalExpectedSeats = TEXAS_EXPECTED_SEATS.federalHouse + TEXAS_EXPECTED_SEATS.federalSenate;
+  const federalExpectedSeats = FEDERAL_EXPECTED_SEATS.house + FEDERAL_EXPECTED_SEATS.senate;
   const stateLegislatureExpectedSeats = TEXAS_EXPECTED_SEATS.stateHouse + TEXAS_EXPECTED_SEATS.stateSenate;
   const federalProfilesLoaded = federalHouseProfilesLoaded + federalSenateProfilesLoaded;
   const stateLegislatorProfilesLoaded = texasHouseProfilesLoaded + texasSenateProfilesLoaded;
@@ -400,9 +403,9 @@ export function getRepWatchrDataStats() {
     federalProfilesLoaded,
     federalExpectedSeats,
     federalHouseProfilesLoaded,
-    federalHouseExpectedSeats: TEXAS_EXPECTED_SEATS.federalHouse,
+    federalHouseExpectedSeats: FEDERAL_EXPECTED_SEATS.house,
     federalSenateProfilesLoaded,
-    federalSenateExpectedSeats: TEXAS_EXPECTED_SEATS.federalSenate,
+    federalSenateExpectedSeats: FEDERAL_EXPECTED_SEATS.senate,
     federalProfileGaps: Math.max(0, federalExpectedSeats - federalProfilesLoaded),
     stateLegislatorProfilesLoaded,
     stateLegislatureExpectedSeats,

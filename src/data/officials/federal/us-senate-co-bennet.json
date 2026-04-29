@@ -1,0 +1,47 @@
+{
+  "id": "michael-f-bennet",
+  "name": "Michael F. Bennet",
+  "firstName": "Michael",
+  "lastName": "Bennet",
+  "photo": "/images/officials/federal/michael-f-bennet.jpg",
+  "photoSourceUrl": "https://unitedstates.github.io/images/congress/225x275/B001267.jpg",
+  "photoCredit": "UnitedStates project congressional image mirror",
+  "party": "D",
+  "level": "federal",
+  "position": "U.S. Senator",
+  "district": "Colorado",
+  "jurisdiction": "U.S. Senate",
+  "county": [],
+  "termStart": "2023-01-03",
+  "termEnd": "2029-01-03",
+  "contactInfo": {
+    "office": "261 Russell Senate Office Building",
+    "phone": "202-224-5852",
+    "email": "https://www.bennet.senate.gov/public/index.cfm/contact",
+    "website": "https://www.bennet.senate.gov"
+  },
+  "bio": "Michael F. Bennet serves as a U.S. Senator for Colorado. This RepWatchr starter profile is source-seeded from current congressional roster data, official public links, and public congressional photo sources.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "CO",
+  "bioguideId": "B001267",
+  "sourceLinks": [
+    {
+      "title": "Official congressional website",
+      "url": "https://www.bennet.senate.gov"
+    },
+    {
+      "title": "Congress legislators current roster",
+      "url": "https://raw.githubusercontent.com/unitedstates/congress-legislators/master/legislators-current.yaml"
+    },
+    {
+      "title": "Biographical Directory of the United States Congress",
+      "url": "https://bioguide.congress.gov/search/bio/B001267"
+    },
+    {
+      "title": "Congressional photo source",
+      "url": "https://unitedstates.github.io/images/congress/225x275/B001267.jpg"
+    }
+  ],
+  "lastVerifiedAt": "2026-04-29"
+}

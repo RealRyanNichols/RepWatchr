@@ -1,0 +1,47 @@
+{
+  "id": "diana-harshbarger",
+  "name": "Diana Harshbarger",
+  "firstName": "Diana",
+  "lastName": "Harshbarger",
+  "photo": "/images/officials/federal/diana-harshbarger.jpg",
+  "photoSourceUrl": "https://unitedstates.github.io/images/congress/225x275/H001086.jpg",
+  "photoCredit": "UnitedStates project congressional image mirror",
+  "party": "R",
+  "level": "federal",
+  "position": "U.S. Representative",
+  "district": "TN-1",
+  "jurisdiction": "U.S. House of Representatives",
+  "county": [],
+  "termStart": "2025-01-03",
+  "termEnd": "2027-01-03",
+  "contactInfo": {
+    "office": "167 Cannon House Office Building",
+    "phone": "202-225-6356",
+    "email": "https://harshbarger.house.gov",
+    "website": "https://harshbarger.house.gov"
+  },
+  "bio": "Diana Harshbarger serves as the U.S. Representative for Tennessee's 1st Congressional District. This RepWatchr starter profile is source-seeded from current congressional roster data, official public links, and public congressional photo sources.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "TN",
+  "bioguideId": "H001086",
+  "sourceLinks": [
+    {
+      "title": "Official congressional website",
+      "url": "https://harshbarger.house.gov"
+    },
+    {
+      "title": "Congress legislators current roster",
+      "url": "https://raw.githubusercontent.com/unitedstates/congress-legislators/master/legislators-current.yaml"
+    },
+    {
+      "title": "Biographical Directory of the United States Congress",
+      "url": "https://bioguide.congress.gov/search/bio/H001086"
+    },
+    {
+      "title": "Congressional photo source",
+      "url": "https://unitedstates.github.io/images/congress/225x275/H001086.jpg"
+    }
+  ],
+  "lastVerifiedAt": "2026-04-29"
+}

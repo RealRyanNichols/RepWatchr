@@ -1,0 +1,47 @@
+{
+  "id": "stephen-f-lynch",
+  "name": "Stephen F. Lynch",
+  "firstName": "Stephen",
+  "lastName": "Lynch",
+  "photo": "/images/officials/federal/stephen-f-lynch.jpg",
+  "photoSourceUrl": "https://unitedstates.github.io/images/congress/225x275/L000562.jpg",
+  "photoCredit": "UnitedStates project congressional image mirror",
+  "party": "D",
+  "level": "federal",
+  "position": "U.S. Representative",
+  "district": "MA-8",
+  "jurisdiction": "U.S. House of Representatives",
+  "county": [],
+  "termStart": "2025-01-03",
+  "termEnd": "2027-01-03",
+  "contactInfo": {
+    "office": "2109 Rayburn House Office Building",
+    "phone": "202-225-8273",
+    "email": "https://lynch.house.gov",
+    "website": "https://lynch.house.gov"
+  },
+  "bio": "Stephen F. Lynch serves as the U.S. Representative for Massachusetts's 8th Congressional District. This RepWatchr starter profile is source-seeded from current congressional roster data, official public links, and public congressional photo sources.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "MA",
+  "bioguideId": "L000562",
+  "sourceLinks": [
+    {
+      "title": "Official congressional website",
+      "url": "https://lynch.house.gov"
+    },
+    {
+      "title": "Congress legislators current roster",
+      "url": "https://raw.githubusercontent.com/unitedstates/congress-legislators/master/legislators-current.yaml"
+    },
+    {
+      "title": "Biographical Directory of the United States Congress",
+      "url": "https://bioguide.congress.gov/search/bio/L000562"
+    },
+    {
+      "title": "Congressional photo source",
+      "url": "https://unitedstates.github.io/images/congress/225x275/L000562.jpg"
+    }
+  ],
+  "lastVerifiedAt": "2026-04-29"
+}

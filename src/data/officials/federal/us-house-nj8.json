@@ -1,0 +1,47 @@
+{
+  "id": "robert-menendez",
+  "name": "Robert Menendez",
+  "firstName": "Robert",
+  "lastName": "Menendez",
+  "photo": "/images/officials/federal/robert-menendez.jpg",
+  "photoSourceUrl": "https://unitedstates.github.io/images/congress/225x275/M001226.jpg",
+  "photoCredit": "UnitedStates project congressional image mirror",
+  "party": "D",
+  "level": "federal",
+  "position": "U.S. Representative",
+  "district": "NJ-8",
+  "jurisdiction": "U.S. House of Representatives",
+  "county": [],
+  "termStart": "2025-01-03",
+  "termEnd": "2027-01-03",
+  "contactInfo": {
+    "office": "2453 Rayburn House Office Building",
+    "phone": "202-225-7919",
+    "email": "https://menendez.house.gov",
+    "website": "https://menendez.house.gov"
+  },
+  "bio": "Robert Menendez serves as the U.S. Representative for New Jersey's 8th Congressional District. This RepWatchr starter profile is source-seeded from current congressional roster data, official public links, and public congressional photo sources.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "NJ",
+  "bioguideId": "M001226",
+  "sourceLinks": [
+    {
+      "title": "Official congressional website",
+      "url": "https://menendez.house.gov"
+    },
+    {
+      "title": "Congress legislators current roster",
+      "url": "https://raw.githubusercontent.com/unitedstates/congress-legislators/master/legislators-current.yaml"
+    },
+    {
+      "title": "Biographical Directory of the United States Congress",
+      "url": "https://bioguide.congress.gov/search/bio/M001226"
+    },
+    {
+      "title": "Congressional photo source",
+      "url": "https://unitedstates.github.io/images/congress/225x275/M001226.jpg"
+    }
+  ],
+  "lastVerifiedAt": "2026-04-29"
+}

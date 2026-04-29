@@ -1,0 +1,47 @@
+{
+  "id": "richard-blumenthal",
+  "name": "Richard Blumenthal",
+  "firstName": "Richard",
+  "lastName": "Blumenthal",
+  "photo": "/images/officials/federal/richard-blumenthal.jpg",
+  "photoSourceUrl": "https://unitedstates.github.io/images/congress/225x275/B001277.jpg",
+  "photoCredit": "UnitedStates project congressional image mirror",
+  "party": "D",
+  "level": "federal",
+  "position": "U.S. Senator",
+  "district": "Connecticut",
+  "jurisdiction": "U.S. Senate",
+  "county": [],
+  "termStart": "2023-01-03",
+  "termEnd": "2029-01-03",
+  "contactInfo": {
+    "office": "503 Hart Senate Office Building",
+    "phone": "202-224-2823",
+    "email": "https://www.blumenthal.senate.gov/contact/",
+    "website": "https://www.blumenthal.senate.gov"
+  },
+  "bio": "Richard Blumenthal serves as a U.S. Senator for Connecticut. This RepWatchr starter profile is source-seeded from current congressional roster data, official public links, and public congressional photo sources.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "CT",
+  "bioguideId": "B001277",
+  "sourceLinks": [
+    {
+      "title": "Official congressional website",
+      "url": "https://www.blumenthal.senate.gov"
+    },
+    {
+      "title": "Congress legislators current roster",
+      "url": "https://raw.githubusercontent.com/unitedstates/congress-legislators/master/legislators-current.yaml"
+    },
+    {
+      "title": "Biographical Directory of the United States Congress",
+      "url": "https://bioguide.congress.gov/search/bio/B001277"
+    },
+    {
+      "title": "Congressional photo source",
+      "url": "https://unitedstates.github.io/images/congress/225x275/B001277.jpg"
+    }
+  ],
+  "lastVerifiedAt": "2026-04-29"
+}

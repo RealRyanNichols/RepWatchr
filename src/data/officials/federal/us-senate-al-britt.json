@@ -1,0 +1,40 @@
+{
+  "id": "katie-boyd-britt",
+  "name": "Katie Boyd Britt",
+  "firstName": "Katie",
+  "lastName": "Britt",
+  "party": "R",
+  "level": "federal",
+  "position": "U.S. Senator",
+  "district": "Alabama",
+  "jurisdiction": "U.S. Senate",
+  "county": [],
+  "termStart": "2023-01-03",
+  "termEnd": "2029-01-03",
+  "contactInfo": {
+    "office": "416 Russell Senate Office Building",
+    "phone": "202-224-5744",
+    "email": "https://www.britt.senate.gov/contact/",
+    "website": "https://www.britt.senate.gov"
+  },
+  "bio": "Katie Boyd Britt serves as a U.S. Senator for Alabama. This RepWatchr starter profile is source-seeded from current congressional roster data, official public links, and public congressional photo sources.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "AL",
+  "bioguideId": "B001319",
+  "sourceLinks": [
+    {
+      "title": "Official congressional website",
+      "url": "https://www.britt.senate.gov"
+    },
+    {
+      "title": "Congress legislators current roster",
+      "url": "https://raw.githubusercontent.com/unitedstates/congress-legislators/master/legislators-current.yaml"
+    },
+    {
+      "title": "Biographical Directory of the United States Congress",
+      "url": "https://bioguide.congress.gov/search/bio/B001319"
+    }
+  ],
+  "lastVerifiedAt": "2026-04-29"
+}

@@ -1,0 +1,47 @@
+{
+  "id": "grace-meng",
+  "name": "Grace Meng",
+  "firstName": "Grace",
+  "lastName": "Meng",
+  "photo": "/images/officials/federal/grace-meng.jpg",
+  "photoSourceUrl": "https://unitedstates.github.io/images/congress/225x275/M001188.jpg",
+  "photoCredit": "UnitedStates project congressional image mirror",
+  "party": "D",
+  "level": "federal",
+  "position": "U.S. Representative",
+  "district": "NY-6",
+  "jurisdiction": "U.S. House of Representatives",
+  "county": [],
+  "termStart": "2025-01-03",
+  "termEnd": "2027-01-03",
+  "contactInfo": {
+    "office": "2468 Rayburn House Office Building",
+    "phone": "202-225-2601",
+    "email": "https://meng.house.gov",
+    "website": "https://meng.house.gov"
+  },
+  "bio": "Grace Meng serves as the U.S. Representative for New York's 6th Congressional District. This RepWatchr starter profile is source-seeded from current congressional roster data, official public links, and public congressional photo sources.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "NY",
+  "bioguideId": "M001188",
+  "sourceLinks": [
+    {
+      "title": "Official congressional website",
+      "url": "https://meng.house.gov"
+    },
+    {
+      "title": "Congress legislators current roster",
+      "url": "https://raw.githubusercontent.com/unitedstates/congress-legislators/master/legislators-current.yaml"
+    },
+    {
+      "title": "Biographical Directory of the United States Congress",
+      "url": "https://bioguide.congress.gov/search/bio/M001188"
+    },
+    {
+      "title": "Congressional photo source",
+      "url": "https://unitedstates.github.io/images/congress/225x275/M001188.jpg"
+    }
+  ],
+  "lastVerifiedAt": "2026-04-29"
+}

@@ -1,0 +1,47 @@
+{
+  "id": "elissa-slotkin",
+  "name": "Elissa Slotkin",
+  "firstName": "Elissa",
+  "lastName": "Slotkin",
+  "photo": "/images/officials/federal/elissa-slotkin.jpg",
+  "photoSourceUrl": "https://unitedstates.github.io/images/congress/225x275/S001208.jpg",
+  "photoCredit": "UnitedStates project congressional image mirror",
+  "party": "D",
+  "level": "federal",
+  "position": "U.S. Senator",
+  "district": "Michigan",
+  "jurisdiction": "U.S. Senate",
+  "county": [],
+  "termStart": "2025-01-03",
+  "termEnd": "2031-01-03",
+  "contactInfo": {
+    "office": "291 Russell Senate Office Building",
+    "phone": "202-224-4822",
+    "email": "https://www.slotkin.senate.gov",
+    "website": "https://www.slotkin.senate.gov"
+  },
+  "bio": "Elissa Slotkin serves as a U.S. Senator for Michigan. This RepWatchr starter profile is source-seeded from current congressional roster data, official public links, and public congressional photo sources.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "MI",
+  "bioguideId": "S001208",
+  "sourceLinks": [
+    {
+      "title": "Official congressional website",
+      "url": "https://www.slotkin.senate.gov"
+    },
+    {
+      "title": "Congress legislators current roster",
+      "url": "https://raw.githubusercontent.com/unitedstates/congress-legislators/master/legislators-current.yaml"
+    },
+    {
+      "title": "Biographical Directory of the United States Congress",
+      "url": "https://bioguide.congress.gov/search/bio/S001208"
+    },
+    {
+      "title": "Congressional photo source",
+      "url": "https://unitedstates.github.io/images/congress/225x275/S001208.jpg"
+    }
+  ],
+  "lastVerifiedAt": "2026-04-29"
+}

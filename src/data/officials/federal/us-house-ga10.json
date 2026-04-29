@@ -1,0 +1,47 @@
+{
+  "id": "mike-collins",
+  "name": "Mike Collins",
+  "firstName": "Mike",
+  "lastName": "Collins",
+  "photo": "/images/officials/federal/mike-collins.jpg",
+  "photoSourceUrl": "https://unitedstates.github.io/images/congress/225x275/C001129.jpg",
+  "photoCredit": "UnitedStates project congressional image mirror",
+  "party": "R",
+  "level": "federal",
+  "position": "U.S. Representative",
+  "district": "GA-10",
+  "jurisdiction": "U.S. House of Representatives",
+  "county": [],
+  "termStart": "2025-01-03",
+  "termEnd": "2027-01-03",
+  "contactInfo": {
+    "office": "2351 Rayburn House Office Building",
+    "phone": "202-225-4101",
+    "email": "https://collins.house.gov",
+    "website": "https://collins.house.gov"
+  },
+  "bio": "Mike Collins serves as the U.S. Representative for Georgia's 10th Congressional District. This RepWatchr starter profile is source-seeded from current congressional roster data, official public links, and public congressional photo sources.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "GA",
+  "bioguideId": "C001129",
+  "sourceLinks": [
+    {
+      "title": "Official congressional website",
+      "url": "https://collins.house.gov"
+    },
+    {
+      "title": "Congress legislators current roster",
+      "url": "https://raw.githubusercontent.com/unitedstates/congress-legislators/master/legislators-current.yaml"
+    },
+    {
+      "title": "Biographical Directory of the United States Congress",
+      "url": "https://bioguide.congress.gov/search/bio/C001129"
+    },
+    {
+      "title": "Congressional photo source",
+      "url": "https://unitedstates.github.io/images/congress/225x275/C001129.jpg"
+    }
+  ],
+  "lastVerifiedAt": "2026-04-29"
+}

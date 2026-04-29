@@ -1,0 +1,47 @@
+{
+  "id": "lauren-underwood",
+  "name": "Lauren Underwood",
+  "firstName": "Lauren",
+  "lastName": "Underwood",
+  "photo": "/images/officials/federal/lauren-underwood.jpg",
+  "photoSourceUrl": "https://unitedstates.github.io/images/congress/225x275/U000040.jpg",
+  "photoCredit": "UnitedStates project congressional image mirror",
+  "party": "D",
+  "level": "federal",
+  "position": "U.S. Representative",
+  "district": "IL-14",
+  "jurisdiction": "U.S. House of Representatives",
+  "county": [],
+  "termStart": "2025-01-03",
+  "termEnd": "2027-01-03",
+  "contactInfo": {
+    "office": "2228 Rayburn House Office Building",
+    "phone": "202-225-2976",
+    "email": "https://underwood.house.gov",
+    "website": "https://underwood.house.gov"
+  },
+  "bio": "Lauren Underwood serves as the U.S. Representative for Illinois's 14th Congressional District. This RepWatchr starter profile is source-seeded from current congressional roster data, official public links, and public congressional photo sources.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "IL",
+  "bioguideId": "U000040",
+  "sourceLinks": [
+    {
+      "title": "Official congressional website",
+      "url": "https://underwood.house.gov"
+    },
+    {
+      "title": "Congress legislators current roster",
+      "url": "https://raw.githubusercontent.com/unitedstates/congress-legislators/master/legislators-current.yaml"
+    },
+    {
+      "title": "Biographical Directory of the United States Congress",
+      "url": "https://bioguide.congress.gov/search/bio/U000040"
+    },
+    {
+      "title": "Congressional photo source",
+      "url": "https://unitedstates.github.io/images/congress/225x275/U000040.jpg"
+    }
+  ],
+  "lastVerifiedAt": "2026-04-29"
+}

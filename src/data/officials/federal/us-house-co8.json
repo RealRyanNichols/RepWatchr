@@ -1,0 +1,47 @@
+{
+  "id": "gabe-evans",
+  "name": "Gabe Evans",
+  "firstName": "Gabe",
+  "lastName": "Evans",
+  "photo": "/images/officials/federal/gabe-evans.jpg",
+  "photoSourceUrl": "https://gabeevans.house.gov/sites/evo-subsites/gabeevans.house.gov/files/styles/evo_image_portrait_480/public/evo-media-image/2024-11-15_ike_evans_gabe_0013_re_web_0.jpg?itok=_2Y0MMQY",
+  "photoCredit": "Official congressional website image",
+  "party": "R",
+  "level": "federal",
+  "position": "U.S. Representative",
+  "district": "CO-8",
+  "jurisdiction": "U.S. House of Representatives",
+  "county": [],
+  "termStart": "2025-01-03",
+  "termEnd": "2027-01-03",
+  "contactInfo": {
+    "office": "1229 Longworth House Office Building",
+    "phone": "202-225-5625",
+    "email": "https://gabeevans.house.gov",
+    "website": "https://gabeevans.house.gov"
+  },
+  "bio": "Gabe Evans serves as the U.S. Representative for Colorado's 8th Congressional District. This RepWatchr starter profile is source-seeded from current congressional roster data, official public links, and public congressional photo sources.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "CO",
+  "bioguideId": "E000300",
+  "sourceLinks": [
+    {
+      "title": "Official congressional website",
+      "url": "https://gabeevans.house.gov"
+    },
+    {
+      "title": "Congress legislators current roster",
+      "url": "https://raw.githubusercontent.com/unitedstates/congress-legislators/master/legislators-current.yaml"
+    },
+    {
+      "title": "Biographical Directory of the United States Congress",
+      "url": "https://bioguide.congress.gov/search/bio/E000300"
+    },
+    {
+      "title": "Congressional photo source",
+      "url": "https://gabeevans.house.gov/sites/evo-subsites/gabeevans.house.gov/files/styles/evo_image_portrait_480/public/evo-media-image/2024-11-15_ike_evans_gabe_0013_re_web_0.jpg?itok=_2Y0MMQY"
+    }
+  ],
+  "lastVerifiedAt": "2026-04-29"
+}

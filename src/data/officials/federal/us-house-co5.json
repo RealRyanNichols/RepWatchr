@@ -1,0 +1,47 @@
+{
+  "id": "jeff-crank",
+  "name": "Jeff Crank",
+  "firstName": "Jeff",
+  "lastName": "Crank",
+  "photo": "/images/officials/federal/jeff-crank.jpg",
+  "photoSourceUrl": "https://crank.house.gov/sites/evo-subsites/crank.house.gov/files/styles/evo_image_portrait_480/public/evo-media-image/2024-11-15_ike_crank_jeff_0011_re_web.jpg?itok=2_WAd2T7",
+  "photoCredit": "Official congressional website image",
+  "party": "R",
+  "level": "federal",
+  "position": "U.S. Representative",
+  "district": "CO-5",
+  "jurisdiction": "U.S. House of Representatives",
+  "county": [],
+  "termStart": "2025-01-03",
+  "termEnd": "2027-01-03",
+  "contactInfo": {
+    "office": "1029 Longworth House Office Building",
+    "phone": "202-225-4422",
+    "email": "https://crank.house.gov",
+    "website": "https://crank.house.gov"
+  },
+  "bio": "Jeff Crank serves as the U.S. Representative for Colorado's 5th Congressional District. This RepWatchr starter profile is source-seeded from current congressional roster data, official public links, and public congressional photo sources.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "CO",
+  "bioguideId": "C001137",
+  "sourceLinks": [
+    {
+      "title": "Official congressional website",
+      "url": "https://crank.house.gov"
+    },
+    {
+      "title": "Congress legislators current roster",
+      "url": "https://raw.githubusercontent.com/unitedstates/congress-legislators/master/legislators-current.yaml"
+    },
+    {
+      "title": "Biographical Directory of the United States Congress",
+      "url": "https://bioguide.congress.gov/search/bio/C001137"
+    },
+    {
+      "title": "Congressional photo source",
+      "url": "https://crank.house.gov/sites/evo-subsites/crank.house.gov/files/styles/evo_image_portrait_480/public/evo-media-image/2024-11-15_ike_crank_jeff_0011_re_web.jpg?itok=2_WAd2T7"
+    }
+  ],
+  "lastVerifiedAt": "2026-04-29"
+}

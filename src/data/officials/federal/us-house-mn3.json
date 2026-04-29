@@ -1,0 +1,47 @@
+{
+  "id": "kelly-morrison",
+  "name": "Kelly Morrison",
+  "firstName": "Kelly",
+  "lastName": "Morrison",
+  "photo": "/images/officials/federal/kelly-morrison.jpg",
+  "photoSourceUrl": "https://morrison.house.gov/sites/evo-subsites/morrison.house.gov/files/styles/evo_image_portrait_480/public/evo-media-image/2024_morrison_kelly.jpg?itok=NN178k3x",
+  "photoCredit": "Official congressional website image",
+  "party": "D",
+  "level": "federal",
+  "position": "U.S. Representative",
+  "district": "MN-3",
+  "jurisdiction": "U.S. House of Representatives",
+  "county": [],
+  "termStart": "2025-01-03",
+  "termEnd": "2027-01-03",
+  "contactInfo": {
+    "office": "1205 Longworth House Office Building",
+    "phone": "202-225-2871",
+    "email": "https://morrison.house.gov",
+    "website": "https://morrison.house.gov"
+  },
+  "bio": "Kelly Morrison serves as the U.S. Representative for Minnesota's 3rd Congressional District. This RepWatchr starter profile is source-seeded from current congressional roster data, official public links, and public congressional photo sources.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "MN",
+  "bioguideId": "M001234",
+  "sourceLinks": [
+    {
+      "title": "Official congressional website",
+      "url": "https://morrison.house.gov"
+    },
+    {
+      "title": "Congress legislators current roster",
+      "url": "https://raw.githubusercontent.com/unitedstates/congress-legislators/master/legislators-current.yaml"
+    },
+    {
+      "title": "Biographical Directory of the United States Congress",
+      "url": "https://bioguide.congress.gov/search/bio/M001234"
+    },
+    {
+      "title": "Congressional photo source",
+      "url": "https://morrison.house.gov/sites/evo-subsites/morrison.house.gov/files/styles/evo_image_portrait_480/public/evo-media-image/2024_morrison_kelly.jpg?itok=NN178k3x"
+    }
+  ],
+  "lastVerifiedAt": "2026-04-29"
+}

@@ -1,0 +1,47 @@
+{
+  "id": "tim-scott",
+  "name": "Tim Scott",
+  "firstName": "Tim",
+  "lastName": "Scott",
+  "photo": "/images/officials/federal/tim-scott.jpg",
+  "photoSourceUrl": "https://unitedstates.github.io/images/congress/225x275/S001184.jpg",
+  "photoCredit": "UnitedStates project congressional image mirror",
+  "party": "R",
+  "level": "federal",
+  "position": "U.S. Senator",
+  "district": "South Carolina",
+  "jurisdiction": "U.S. Senate",
+  "county": [],
+  "termStart": "2023-01-03",
+  "termEnd": "2029-01-03",
+  "contactInfo": {
+    "office": "104 Hart Senate Office Building",
+    "phone": "202-224-6121",
+    "email": "https://www.scott.senate.gov/contact/email-me",
+    "website": "https://www.scott.senate.gov"
+  },
+  "bio": "Tim Scott serves as a U.S. Senator for South Carolina. This RepWatchr starter profile is source-seeded from current congressional roster data, official public links, and public congressional photo sources.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "SC",
+  "bioguideId": "S001184",
+  "sourceLinks": [
+    {
+      "title": "Official congressional website",
+      "url": "https://www.scott.senate.gov"
+    },
+    {
+      "title": "Congress legislators current roster",
+      "url": "https://raw.githubusercontent.com/unitedstates/congress-legislators/master/legislators-current.yaml"
+    },
+    {
+      "title": "Biographical Directory of the United States Congress",
+      "url": "https://bioguide.congress.gov/search/bio/S001184"
+    },
+    {
+      "title": "Congressional photo source",
+      "url": "https://unitedstates.github.io/images/congress/225x275/S001184.jpg"
+    }
+  ],
+  "lastVerifiedAt": "2026-04-29"
+}

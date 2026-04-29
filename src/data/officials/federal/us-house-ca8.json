@@ -1,0 +1,47 @@
+{
+  "id": "john-garamendi",
+  "name": "John Garamendi",
+  "firstName": "John",
+  "lastName": "Garamendi",
+  "photo": "/images/officials/federal/john-garamendi.jpg",
+  "photoSourceUrl": "https://unitedstates.github.io/images/congress/225x275/G000559.jpg",
+  "photoCredit": "UnitedStates project congressional image mirror",
+  "party": "D",
+  "level": "federal",
+  "position": "U.S. Representative",
+  "district": "CA-8",
+  "jurisdiction": "U.S. House of Representatives",
+  "county": [],
+  "termStart": "2025-01-03",
+  "termEnd": "2027-01-03",
+  "contactInfo": {
+    "office": "2428 Rayburn House Office Building",
+    "phone": "202-225-1880",
+    "email": "https://garamendi.house.gov",
+    "website": "https://garamendi.house.gov"
+  },
+  "bio": "John Garamendi serves as the U.S. Representative for California's 8th Congressional District. This RepWatchr starter profile is source-seeded from current congressional roster data, official public links, and public congressional photo sources.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "CA",
+  "bioguideId": "G000559",
+  "sourceLinks": [
+    {
+      "title": "Official congressional website",
+      "url": "https://garamendi.house.gov"
+    },
+    {
+      "title": "Congress legislators current roster",
+      "url": "https://raw.githubusercontent.com/unitedstates/congress-legislators/master/legislators-current.yaml"
+    },
+    {
+      "title": "Biographical Directory of the United States Congress",
+      "url": "https://bioguide.congress.gov/search/bio/G000559"
+    },
+    {
+      "title": "Congressional photo source",
+      "url": "https://unitedstates.github.io/images/congress/225x275/G000559.jpg"
+    }
+  ],
+  "lastVerifiedAt": "2026-04-29"
+}

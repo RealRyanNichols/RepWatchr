@@ -1,0 +1,47 @@
+{
+  "id": "steve-daines",
+  "name": "Steve Daines",
+  "firstName": "Steve",
+  "lastName": "Daines",
+  "photo": "/images/officials/federal/steve-daines.jpg",
+  "photoSourceUrl": "https://unitedstates.github.io/images/congress/225x275/D000618.jpg",
+  "photoCredit": "UnitedStates project congressional image mirror",
+  "party": "R",
+  "level": "federal",
+  "position": "U.S. Senator",
+  "district": "Montana",
+  "jurisdiction": "U.S. Senate",
+  "county": [],
+  "termStart": "2021-01-03",
+  "termEnd": "2027-01-03",
+  "contactInfo": {
+    "office": "320 Hart Senate Office Building",
+    "phone": "202-224-2651",
+    "email": "https://www.daines.senate.gov/connect/email-steve",
+    "website": "https://www.daines.senate.gov"
+  },
+  "bio": "Steve Daines serves as a U.S. Senator for Montana. This RepWatchr starter profile is source-seeded from current congressional roster data, official public links, and public congressional photo sources.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "MT",
+  "bioguideId": "D000618",
+  "sourceLinks": [
+    {
+      "title": "Official congressional website",
+      "url": "https://www.daines.senate.gov"
+    },
+    {
+      "title": "Congress legislators current roster",
+      "url": "https://raw.githubusercontent.com/unitedstates/congress-legislators/master/legislators-current.yaml"
+    },
+    {
+      "title": "Biographical Directory of the United States Congress",
+      "url": "https://bioguide.congress.gov/search/bio/D000618"
+    },
+    {
+      "title": "Congressional photo source",
+      "url": "https://unitedstates.github.io/images/congress/225x275/D000618.jpg"
+    }
+  ],
+  "lastVerifiedAt": "2026-04-29"
+}

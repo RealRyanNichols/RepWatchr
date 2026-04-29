@@ -1,0 +1,47 @@
+{
+  "id": "delia-c-ramirez",
+  "name": "Delia C. Ramirez",
+  "firstName": "Delia",
+  "lastName": "Ramirez",
+  "photo": "/images/officials/federal/delia-c-ramirez.jpg",
+  "photoSourceUrl": "https://unitedstates.github.io/images/congress/225x275/R000617.jpg",
+  "photoCredit": "UnitedStates project congressional image mirror",
+  "party": "D",
+  "level": "federal",
+  "position": "U.S. Representative",
+  "district": "IL-3",
+  "jurisdiction": "U.S. House of Representatives",
+  "county": [],
+  "termStart": "2025-01-03",
+  "termEnd": "2027-01-03",
+  "contactInfo": {
+    "office": "1523 Longworth House Office Building",
+    "phone": "202-225-5701",
+    "email": "https://ramirez.house.gov",
+    "website": "https://ramirez.house.gov"
+  },
+  "bio": "Delia C. Ramirez serves as the U.S. Representative for Illinois's 3rd Congressional District. This RepWatchr starter profile is source-seeded from current congressional roster data, official public links, and public congressional photo sources.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "IL",
+  "bioguideId": "R000617",
+  "sourceLinks": [
+    {
+      "title": "Official congressional website",
+      "url": "https://ramirez.house.gov"
+    },
+    {
+      "title": "Congress legislators current roster",
+      "url": "https://raw.githubusercontent.com/unitedstates/congress-legislators/master/legislators-current.yaml"
+    },
+    {
+      "title": "Biographical Directory of the United States Congress",
+      "url": "https://bioguide.congress.gov/search/bio/R000617"
+    },
+    {
+      "title": "Congressional photo source",
+      "url": "https://unitedstates.github.io/images/congress/225x275/R000617.jpg"
+    }
+  ],
+  "lastVerifiedAt": "2026-04-29"
+}

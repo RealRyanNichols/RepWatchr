@@ -1,0 +1,47 @@
+{
+  "id": "nikema-williams",
+  "name": "Nikema Williams",
+  "firstName": "Nikema",
+  "lastName": "Williams",
+  "photo": "/images/officials/federal/nikema-williams.jpg",
+  "photoSourceUrl": "https://unitedstates.github.io/images/congress/225x275/W000788.jpg",
+  "photoCredit": "UnitedStates project congressional image mirror",
+  "party": "D",
+  "level": "federal",
+  "position": "U.S. Representative",
+  "district": "GA-5",
+  "jurisdiction": "U.S. House of Representatives",
+  "county": [],
+  "termStart": "2025-01-03",
+  "termEnd": "2027-01-03",
+  "contactInfo": {
+    "office": "1406 Longworth House Office Building",
+    "phone": "202-225-3801",
+    "email": "https://nikemawilliams.house.gov",
+    "website": "https://nikemawilliams.house.gov"
+  },
+  "bio": "Nikema Williams serves as the U.S. Representative for Georgia's 5th Congressional District. This RepWatchr starter profile is source-seeded from current congressional roster data, official public links, and public congressional photo sources.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "GA",
+  "bioguideId": "W000788",
+  "sourceLinks": [
+    {
+      "title": "Official congressional website",
+      "url": "https://nikemawilliams.house.gov"
+    },
+    {
+      "title": "Congress legislators current roster",
+      "url": "https://raw.githubusercontent.com/unitedstates/congress-legislators/master/legislators-current.yaml"
+    },
+    {
+      "title": "Biographical Directory of the United States Congress",
+      "url": "https://bioguide.congress.gov/search/bio/W000788"
+    },
+    {
+      "title": "Congressional photo source",
+      "url": "https://unitedstates.github.io/images/congress/225x275/W000788.jpg"
+    }
+  ],
+  "lastVerifiedAt": "2026-04-29"
+}

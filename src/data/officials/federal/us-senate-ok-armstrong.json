@@ -1,0 +1,40 @@
+{
+  "id": "alan-armstrong",
+  "name": "Alan Armstrong",
+  "firstName": "Alan",
+  "lastName": "Armstrong",
+  "party": "R",
+  "level": "federal",
+  "position": "U.S. Senator",
+  "district": "Oklahoma",
+  "jurisdiction": "U.S. Senate",
+  "county": [],
+  "termStart": "2026-03-24",
+  "termEnd": "2027-01-03",
+  "contactInfo": {
+    "office": "G12 Dirksen Senate Office Building",
+    "phone": "202-224-4721",
+    "email": "https://www.armstrong.senate.gov",
+    "website": "https://www.armstrong.senate.gov"
+  },
+  "bio": "Alan Armstrong serves as a U.S. Senator for Oklahoma. This RepWatchr starter profile is source-seeded from current congressional roster data, official public links, and public congressional photo sources.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "OK",
+  "bioguideId": "A000383",
+  "sourceLinks": [
+    {
+      "title": "Official congressional website",
+      "url": "https://www.armstrong.senate.gov"
+    },
+    {
+      "title": "Congress legislators current roster",
+      "url": "https://raw.githubusercontent.com/unitedstates/congress-legislators/master/legislators-current.yaml"
+    },
+    {
+      "title": "Biographical Directory of the United States Congress",
+      "url": "https://bioguide.congress.gov/search/bio/A000383"
+    }
+  ],
+  "lastVerifiedAt": "2026-04-29"
+}

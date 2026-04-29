@@ -5,15 +5,13 @@
   "lastName": "Gill",
   "photo": "/images/officials/federal/brandon-gill.jpg",
   "photoSourceUrl": "https://gill.house.gov/sites/evo-subsites/gill.house.gov/files/styles/evo_image_portrait_480/public/evo-media-image/2024-11-19_np_gill_brandon_0012_re_select.jpg?itok=lnh9pyjk",
-  "photoCredit": "Official congressional photo source",
+  "photoCredit": "Official congressional website image",
   "party": "R",
   "level": "federal",
   "position": "U.S. Representative",
   "district": "TX-26",
   "jurisdiction": "U.S. House of Representatives",
-  "county": [
-    "Texas"
-  ],
+  "county": [],
   "termStart": "2025-01-03",
   "termEnd": "2027-01-03",
   "contactInfo": {
@@ -22,7 +20,7 @@
     "email": "https://gill.house.gov",
     "website": "https://gill.house.gov"
   },
-  "bio": "Brandon Gill serves as the U.S. Representative for Texas's 26th Congressional District. This RepWatchr starter profile is sourced from the official congressional record data and public profile links.",
+  "bio": "Brandon Gill serves as the U.S. Representative for Texas's 26th Congressional District. This RepWatchr starter profile is source-seeded from current congressional roster data, official public links, and public congressional photo sources.",
   "campaignPromises": [],
   "reviewStatus": "source_seeded",
   "state": "TX",
@@ -37,9 +35,13 @@
       "url": "https://raw.githubusercontent.com/unitedstates/congress-legislators/master/legislators-current.yaml"
     },
     {
+      "title": "Biographical Directory of the United States Congress",
+      "url": "https://bioguide.congress.gov/search/bio/G000603"
+    },
+    {
       "title": "Congressional photo source",
       "url": "https://gill.house.gov/sites/evo-subsites/gill.house.gov/files/styles/evo_image_portrait_480/public/evo-media-image/2024-11-19_np_gill_brandon_0012_re_select.jpg?itok=lnh9pyjk"
     }
   ],
-  "lastVerifiedAt": "2026-04-27"
+  "lastVerifiedAt": "2026-04-29"
 }

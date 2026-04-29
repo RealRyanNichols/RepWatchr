@@ -1,0 +1,47 @@
+{
+  "id": "maria-elvira-salazar",
+  "name": "Maria Elvira Salazar",
+  "firstName": "Maria",
+  "lastName": "Salazar",
+  "photo": "/images/officials/federal/maria-elvira-salazar.jpg",
+  "photoSourceUrl": "https://unitedstates.github.io/images/congress/225x275/S000168.jpg",
+  "photoCredit": "UnitedStates project congressional image mirror",
+  "party": "R",
+  "level": "federal",
+  "position": "U.S. Representative",
+  "district": "FL-27",
+  "jurisdiction": "U.S. House of Representatives",
+  "county": [],
+  "termStart": "2025-01-03",
+  "termEnd": "2027-01-03",
+  "contactInfo": {
+    "office": "2162 Rayburn House Office Building",
+    "phone": "202-225-3931",
+    "email": "https://salazar.house.gov",
+    "website": "https://salazar.house.gov"
+  },
+  "bio": "Maria Elvira Salazar serves as the U.S. Representative for Florida's 27th Congressional District. This RepWatchr starter profile is source-seeded from current congressional roster data, official public links, and public congressional photo sources.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "FL",
+  "bioguideId": "S000168",
+  "sourceLinks": [
+    {
+      "title": "Official congressional website",
+      "url": "https://salazar.house.gov"
+    },
+    {
+      "title": "Congress legislators current roster",
+      "url": "https://raw.githubusercontent.com/unitedstates/congress-legislators/master/legislators-current.yaml"
+    },
+    {
+      "title": "Biographical Directory of the United States Congress",
+      "url": "https://bioguide.congress.gov/search/bio/S000168"
+    },
+    {
+      "title": "Congressional photo source",
+      "url": "https://unitedstates.github.io/images/congress/225x275/S000168.jpg"
+    }
+  ],
+  "lastVerifiedAt": "2026-04-29"
+}

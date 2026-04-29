@@ -1,0 +1,47 @@
+{
+  "id": "kevin-mullin",
+  "name": "Kevin Mullin",
+  "firstName": "Kevin",
+  "lastName": "Mullin",
+  "photo": "/images/officials/federal/kevin-mullin.jpg",
+  "photoSourceUrl": "https://unitedstates.github.io/images/congress/225x275/M001225.jpg",
+  "photoCredit": "UnitedStates project congressional image mirror",
+  "party": "D",
+  "level": "federal",
+  "position": "U.S. Representative",
+  "district": "CA-15",
+  "jurisdiction": "U.S. House of Representatives",
+  "county": [],
+  "termStart": "2025-01-03",
+  "termEnd": "2027-01-03",
+  "contactInfo": {
+    "office": "1404 Longworth House Office Building",
+    "phone": "202-225-3531",
+    "email": "https://kevinmullin.house.gov",
+    "website": "https://kevinmullin.house.gov"
+  },
+  "bio": "Kevin Mullin serves as the U.S. Representative for California's 15th Congressional District. This RepWatchr starter profile is source-seeded from current congressional roster data, official public links, and public congressional photo sources.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "CA",
+  "bioguideId": "M001225",
+  "sourceLinks": [
+    {
+      "title": "Official congressional website",
+      "url": "https://kevinmullin.house.gov"
+    },
+    {
+      "title": "Congress legislators current roster",
+      "url": "https://raw.githubusercontent.com/unitedstates/congress-legislators/master/legislators-current.yaml"
+    },
+    {
+      "title": "Biographical Directory of the United States Congress",
+      "url": "https://bioguide.congress.gov/search/bio/M001225"
+    },
+    {
+      "title": "Congressional photo source",
+      "url": "https://unitedstates.github.io/images/congress/225x275/M001225.jpg"
+    }
+  ],
+  "lastVerifiedAt": "2026-04-29"
+}

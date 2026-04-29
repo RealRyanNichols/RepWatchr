@@ -1,0 +1,47 @@
+{
+  "id": "pete-ricketts",
+  "name": "Pete Ricketts",
+  "firstName": "Pete",
+  "lastName": "Ricketts",
+  "photo": "/images/officials/federal/pete-ricketts.jpg",
+  "photoSourceUrl": "https://unitedstates.github.io/images/congress/225x275/R000618.jpg",
+  "photoCredit": "UnitedStates project congressional image mirror",
+  "party": "R",
+  "level": "federal",
+  "position": "U.S. Senator",
+  "district": "Nebraska",
+  "jurisdiction": "U.S. Senate",
+  "county": [],
+  "termStart": "2024-11-05",
+  "termEnd": "2027-01-03",
+  "contactInfo": {
+    "office": "139 Russell Senate Office Building",
+    "phone": "202-224-4224",
+    "email": "https://www.ricketts.senate.gov/contact/",
+    "website": "https://www.ricketts.senate.gov"
+  },
+  "bio": "Pete Ricketts serves as a U.S. Senator for Nebraska. This RepWatchr starter profile is source-seeded from current congressional roster data, official public links, and public congressional photo sources.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "NE",
+  "bioguideId": "R000618",
+  "sourceLinks": [
+    {
+      "title": "Official congressional website",
+      "url": "https://www.ricketts.senate.gov"
+    },
+    {
+      "title": "Congress legislators current roster",
+      "url": "https://raw.githubusercontent.com/unitedstates/congress-legislators/master/legislators-current.yaml"
+    },
+    {
+      "title": "Biographical Directory of the United States Congress",
+      "url": "https://bioguide.congress.gov/search/bio/R000618"
+    },
+    {
+      "title": "Congressional photo source",
+      "url": "https://unitedstates.github.io/images/congress/225x275/R000618.jpg"
+    }
+  ],
+  "lastVerifiedAt": "2026-04-29"
+}

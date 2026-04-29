@@ -1,0 +1,47 @@
+{
+  "id": "kevin-kiley",
+  "name": "Kevin Kiley",
+  "firstName": "Kevin",
+  "lastName": "Kiley",
+  "photo": "/images/officials/federal/kevin-kiley.jpg",
+  "photoSourceUrl": "https://unitedstates.github.io/images/congress/225x275/K000401.jpg",
+  "photoCredit": "UnitedStates project congressional image mirror",
+  "party": "I",
+  "level": "federal",
+  "position": "U.S. Representative",
+  "district": "CA-3",
+  "jurisdiction": "U.S. House of Representatives",
+  "county": [],
+  "termStart": "2025-01-03",
+  "termEnd": "2027-01-03",
+  "contactInfo": {
+    "office": "2445 Rayburn House Office Building",
+    "phone": "202-225-2523",
+    "email": "https://kiley.house.gov",
+    "website": "https://kiley.house.gov"
+  },
+  "bio": "Kevin Kiley serves as the U.S. Representative for California's 3rd Congressional District. This RepWatchr starter profile is source-seeded from current congressional roster data, official public links, and public congressional photo sources.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "CA",
+  "bioguideId": "K000401",
+  "sourceLinks": [
+    {
+      "title": "Official congressional website",
+      "url": "https://kiley.house.gov"
+    },
+    {
+      "title": "Congress legislators current roster",
+      "url": "https://raw.githubusercontent.com/unitedstates/congress-legislators/master/legislators-current.yaml"
+    },
+    {
+      "title": "Biographical Directory of the United States Congress",
+      "url": "https://bioguide.congress.gov/search/bio/K000401"
+    },
+    {
+      "title": "Congressional photo source",
+      "url": "https://unitedstates.github.io/images/congress/225x275/K000401.jpg"
+    }
+  ],
+  "lastVerifiedAt": "2026-04-29"
+}

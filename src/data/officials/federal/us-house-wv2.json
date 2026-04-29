@@ -1,0 +1,47 @@
+{
+  "id": "riley-m-moore",
+  "name": "Riley M. Moore",
+  "firstName": "Riley",
+  "lastName": "Moore",
+  "photo": "/images/officials/federal/riley-m-moore.jpg",
+  "photoSourceUrl": "https://rileymoore.house.gov/sites/evo-subsites/rileymoore.house.gov/files/styles/evo_image_portrait_480/public/evo-media-image/2024_moore_riley_official.jpg?itok=v7qvihkv",
+  "photoCredit": "Official congressional website image",
+  "party": "R",
+  "level": "federal",
+  "position": "U.S. Representative",
+  "district": "WV-2",
+  "jurisdiction": "U.S. House of Representatives",
+  "county": [],
+  "termStart": "2025-01-03",
+  "termEnd": "2027-01-03",
+  "contactInfo": {
+    "office": "1337 Longworth House Office Building",
+    "phone": "202-225-2711",
+    "email": "https://rileymoore.house.gov",
+    "website": "https://rileymoore.house.gov"
+  },
+  "bio": "Riley M. Moore serves as the U.S. Representative for West Virginia's 2nd Congressional District. This RepWatchr starter profile is source-seeded from current congressional roster data, official public links, and public congressional photo sources.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "WV",
+  "bioguideId": "M001235",
+  "sourceLinks": [
+    {
+      "title": "Official congressional website",
+      "url": "https://rileymoore.house.gov"
+    },
+    {
+      "title": "Congress legislators current roster",
+      "url": "https://raw.githubusercontent.com/unitedstates/congress-legislators/master/legislators-current.yaml"
+    },
+    {
+      "title": "Biographical Directory of the United States Congress",
+      "url": "https://bioguide.congress.gov/search/bio/M001235"
+    },
+    {
+      "title": "Congressional photo source",
+      "url": "https://rileymoore.house.gov/sites/evo-subsites/rileymoore.house.gov/files/styles/evo_image_portrait_480/public/evo-media-image/2024_moore_riley_official.jpg?itok=v7qvihkv"
+    }
+  ],
+  "lastVerifiedAt": "2026-04-29"
+}

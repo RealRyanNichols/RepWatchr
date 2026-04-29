@@ -1,0 +1,47 @@
+{
+  "id": "jim-costa",
+  "name": "Jim Costa",
+  "firstName": "Jim",
+  "lastName": "Costa",
+  "photo": "/images/officials/federal/jim-costa.jpg",
+  "photoSourceUrl": "https://unitedstates.github.io/images/congress/225x275/C001059.jpg",
+  "photoCredit": "UnitedStates project congressional image mirror",
+  "party": "D",
+  "level": "federal",
+  "position": "U.S. Representative",
+  "district": "CA-21",
+  "jurisdiction": "U.S. House of Representatives",
+  "county": [],
+  "termStart": "2025-01-03",
+  "termEnd": "2027-01-03",
+  "contactInfo": {
+    "office": "2081 Rayburn House Office Building",
+    "phone": "202-225-3341",
+    "email": "https://costa.house.gov",
+    "website": "https://costa.house.gov"
+  },
+  "bio": "Jim Costa serves as the U.S. Representative for California's 21st Congressional District. This RepWatchr starter profile is source-seeded from current congressional roster data, official public links, and public congressional photo sources.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "CA",
+  "bioguideId": "C001059",
+  "sourceLinks": [
+    {
+      "title": "Official congressional website",
+      "url": "https://costa.house.gov"
+    },
+    {
+      "title": "Congress legislators current roster",
+      "url": "https://raw.githubusercontent.com/unitedstates/congress-legislators/master/legislators-current.yaml"
+    },
+    {
+      "title": "Biographical Directory of the United States Congress",
+      "url": "https://bioguide.congress.gov/search/bio/C001059"
+    },
+    {
+      "title": "Congressional photo source",
+      "url": "https://unitedstates.github.io/images/congress/225x275/C001059.jpg"
+    }
+  ],
+  "lastVerifiedAt": "2026-04-29"
+}

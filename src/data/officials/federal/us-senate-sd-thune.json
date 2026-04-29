@@ -1,0 +1,47 @@
+{
+  "id": "john-thune",
+  "name": "John Thune",
+  "firstName": "John",
+  "lastName": "Thune",
+  "photo": "/images/officials/federal/john-thune.jpg",
+  "photoSourceUrl": "https://unitedstates.github.io/images/congress/225x275/T000250.jpg",
+  "photoCredit": "UnitedStates project congressional image mirror",
+  "party": "R",
+  "level": "federal",
+  "position": "U.S. Senator",
+  "district": "South Dakota",
+  "jurisdiction": "U.S. Senate",
+  "county": [],
+  "termStart": "2023-01-03",
+  "termEnd": "2029-01-03",
+  "contactInfo": {
+    "office": "511 Dirksen Senate Office Building",
+    "phone": "202-224-2321",
+    "email": "https://www.thune.senate.gov/public/index.cfm/contact",
+    "website": "https://www.thune.senate.gov"
+  },
+  "bio": "John Thune serves as a U.S. Senator for South Dakota. This RepWatchr starter profile is source-seeded from current congressional roster data, official public links, and public congressional photo sources.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "SD",
+  "bioguideId": "T000250",
+  "sourceLinks": [
+    {
+      "title": "Official congressional website",
+      "url": "https://www.thune.senate.gov"
+    },
+    {
+      "title": "Congress legislators current roster",
+      "url": "https://raw.githubusercontent.com/unitedstates/congress-legislators/master/legislators-current.yaml"
+    },
+    {
+      "title": "Biographical Directory of the United States Congress",
+      "url": "https://bioguide.congress.gov/search/bio/T000250"
+    },
+    {
+      "title": "Congressional photo source",
+      "url": "https://unitedstates.github.io/images/congress/225x275/T000250.jpg"
+    }
+  ],
+  "lastVerifiedAt": "2026-04-29"
+}

@@ -1,0 +1,47 @@
+{
+  "id": "kevin-cramer",
+  "name": "Kevin Cramer",
+  "firstName": "Kevin",
+  "lastName": "Cramer",
+  "photo": "/images/officials/federal/kevin-cramer.jpg",
+  "photoSourceUrl": "https://unitedstates.github.io/images/congress/225x275/C001096.jpg",
+  "photoCredit": "UnitedStates project congressional image mirror",
+  "party": "R",
+  "level": "federal",
+  "position": "U.S. Senator",
+  "district": "North Dakota",
+  "jurisdiction": "U.S. Senate",
+  "county": [],
+  "termStart": "2025-01-03",
+  "termEnd": "2031-01-03",
+  "contactInfo": {
+    "office": "313 Hart Senate Office Building",
+    "phone": "202-224-2043",
+    "email": "https://www.cramer.senate.gov/contact/contact-kevin",
+    "website": "https://www.cramer.senate.gov"
+  },
+  "bio": "Kevin Cramer serves as a U.S. Senator for North Dakota. This RepWatchr starter profile is source-seeded from current congressional roster data, official public links, and public congressional photo sources.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "ND",
+  "bioguideId": "C001096",
+  "sourceLinks": [
+    {
+      "title": "Official congressional website",
+      "url": "https://www.cramer.senate.gov"
+    },
+    {
+      "title": "Congress legislators current roster",
+      "url": "https://raw.githubusercontent.com/unitedstates/congress-legislators/master/legislators-current.yaml"
+    },
+    {
+      "title": "Biographical Directory of the United States Congress",
+      "url": "https://bioguide.congress.gov/search/bio/C001096"
+    },
+    {
+      "title": "Congressional photo source",
+      "url": "https://unitedstates.github.io/images/congress/225x275/C001096.jpg"
+    }
+  ],
+  "lastVerifiedAt": "2026-04-29"
+}

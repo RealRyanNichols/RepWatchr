@@ -1,0 +1,47 @@
+{
+  "id": "troy-downing",
+  "name": "Troy Downing",
+  "firstName": "Troy",
+  "lastName": "Downing",
+  "photo": "/images/officials/federal/troy-downing.jpg",
+  "photoSourceUrl": "https://downing.house.gov/sites/evo-subsites/downing.house.gov/files/evo-media-image/downing-headshot.jpg",
+  "photoCredit": "Official congressional website image",
+  "party": "R",
+  "level": "federal",
+  "position": "U.S. Representative",
+  "district": "MT-2",
+  "jurisdiction": "U.S. House of Representatives",
+  "county": [],
+  "termStart": "2025-01-03",
+  "termEnd": "2027-01-03",
+  "contactInfo": {
+    "office": "1529 Longworth House Office Building",
+    "phone": "202-225-3211",
+    "email": "https://downing.house.gov",
+    "website": "https://downing.house.gov"
+  },
+  "bio": "Troy Downing serves as the U.S. Representative for Montana's 2nd Congressional District. This RepWatchr starter profile is source-seeded from current congressional roster data, official public links, and public congressional photo sources.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "MT",
+  "bioguideId": "D000634",
+  "sourceLinks": [
+    {
+      "title": "Official congressional website",
+      "url": "https://downing.house.gov"
+    },
+    {
+      "title": "Congress legislators current roster",
+      "url": "https://raw.githubusercontent.com/unitedstates/congress-legislators/master/legislators-current.yaml"
+    },
+    {
+      "title": "Biographical Directory of the United States Congress",
+      "url": "https://bioguide.congress.gov/search/bio/D000634"
+    },
+    {
+      "title": "Congressional photo source",
+      "url": "https://downing.house.gov/sites/evo-subsites/downing.house.gov/files/evo-media-image/downing-headshot.jpg"
+    }
+  ],
+  "lastVerifiedAt": "2026-04-29"
+}

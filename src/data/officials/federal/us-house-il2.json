@@ -1,0 +1,47 @@
+{
+  "id": "robin-l-kelly",
+  "name": "Robin L. Kelly",
+  "firstName": "Robin",
+  "lastName": "Kelly",
+  "photo": "/images/officials/federal/robin-l-kelly.jpg",
+  "photoSourceUrl": "https://unitedstates.github.io/images/congress/225x275/K000385.jpg",
+  "photoCredit": "UnitedStates project congressional image mirror",
+  "party": "D",
+  "level": "federal",
+  "position": "U.S. Representative",
+  "district": "IL-2",
+  "jurisdiction": "U.S. House of Representatives",
+  "county": [],
+  "termStart": "2025-01-03",
+  "termEnd": "2027-01-03",
+  "contactInfo": {
+    "office": "2329 Rayburn House Office Building",
+    "phone": "202-225-0773",
+    "email": "https://robinkelly.house.gov",
+    "website": "https://robinkelly.house.gov"
+  },
+  "bio": "Robin L. Kelly serves as the U.S. Representative for Illinois's 2nd Congressional District. This RepWatchr starter profile is source-seeded from current congressional roster data, official public links, and public congressional photo sources.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "IL",
+  "bioguideId": "K000385",
+  "sourceLinks": [
+    {
+      "title": "Official congressional website",
+      "url": "https://robinkelly.house.gov"
+    },
+    {
+      "title": "Congress legislators current roster",
+      "url": "https://raw.githubusercontent.com/unitedstates/congress-legislators/master/legislators-current.yaml"
+    },
+    {
+      "title": "Biographical Directory of the United States Congress",
+      "url": "https://bioguide.congress.gov/search/bio/K000385"
+    },
+    {
+      "title": "Congressional photo source",
+      "url": "https://unitedstates.github.io/images/congress/225x275/K000385.jpg"
+    }
+  ],
+  "lastVerifiedAt": "2026-04-29"
+}

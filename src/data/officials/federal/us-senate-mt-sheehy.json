@@ -1,0 +1,40 @@
+{
+  "id": "tim-sheehy",
+  "name": "Tim Sheehy",
+  "firstName": "Tim",
+  "lastName": "Sheehy",
+  "party": "R",
+  "level": "federal",
+  "position": "U.S. Senator",
+  "district": "Montana",
+  "jurisdiction": "U.S. Senate",
+  "county": [],
+  "termStart": "2025-01-03",
+  "termEnd": "2031-01-03",
+  "contactInfo": {
+    "office": "124 Russell Senate Office Building",
+    "phone": "202-224-2644",
+    "email": "https://www.sheehy.senate.gov",
+    "website": "https://www.sheehy.senate.gov"
+  },
+  "bio": "Tim Sheehy serves as a U.S. Senator for Montana. This RepWatchr starter profile is source-seeded from current congressional roster data, official public links, and public congressional photo sources.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "MT",
+  "bioguideId": "S001232",
+  "sourceLinks": [
+    {
+      "title": "Official congressional website",
+      "url": "https://www.sheehy.senate.gov"
+    },
+    {
+      "title": "Congress legislators current roster",
+      "url": "https://raw.githubusercontent.com/unitedstates/congress-legislators/master/legislators-current.yaml"
+    },
+    {
+      "title": "Biographical Directory of the United States Congress",
+      "url": "https://bioguide.congress.gov/search/bio/S001232"
+    }
+  ],
+  "lastVerifiedAt": "2026-04-29"
+}

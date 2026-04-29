@@ -3,17 +3,12 @@
   "name": "Christian D. Menefee",
   "firstName": "Christian",
   "lastName": "Menefee",
-  "photo": "/images/officials/federal/christian-d-menefee.jpg",
-  "photoSourceUrl": "https://bioguide.congress.gov/photo/698206b2eb30d3271899373e.jpg",
-  "photoCredit": "Official congressional photo source",
   "party": "D",
   "level": "federal",
   "position": "U.S. Representative",
   "district": "TX-18",
   "jurisdiction": "U.S. House of Representatives",
-  "county": [
-    "Texas"
-  ],
+  "county": [],
   "termStart": "2026-02-02",
   "termEnd": "2027-01-03",
   "contactInfo": {
@@ -22,7 +17,7 @@
     "email": "https://menefee.house.gov",
     "website": "https://menefee.house.gov"
   },
-  "bio": "Christian D. Menefee serves as the U.S. Representative for Texas's 18th Congressional District. This RepWatchr starter profile is sourced from the official congressional record data and public profile links.",
+  "bio": "Christian D. Menefee serves as the U.S. Representative for Texas's 18th Congressional District. This RepWatchr starter profile is source-seeded from current congressional roster data, official public links, and public congressional photo sources.",
   "campaignPromises": [],
   "reviewStatus": "source_seeded",
   "state": "TX",
@@ -37,9 +32,9 @@
       "url": "https://raw.githubusercontent.com/unitedstates/congress-legislators/master/legislators-current.yaml"
     },
     {
-      "title": "Congressional photo source",
-      "url": "https://bioguide.congress.gov/photo/698206b2eb30d3271899373e.jpg"
+      "title": "Biographical Directory of the United States Congress",
+      "url": "https://bioguide.congress.gov/search/bio/M001245"
     }
   ],
-  "lastVerifiedAt": "2026-04-27"
+  "lastVerifiedAt": "2026-04-29"
 }

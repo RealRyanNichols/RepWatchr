@@ -1,0 +1,47 @@
+{
+  "id": "ben-ray-luj-n",
+  "name": "Ben Ray Luján",
+  "firstName": "Ben",
+  "lastName": "Luján",
+  "photo": "/images/officials/federal/ben-ray-luj-n.jpg",
+  "photoSourceUrl": "https://unitedstates.github.io/images/congress/225x275/L000570.jpg",
+  "photoCredit": "UnitedStates project congressional image mirror",
+  "party": "D",
+  "level": "federal",
+  "position": "U.S. Senator",
+  "district": "New Mexico",
+  "jurisdiction": "U.S. Senate",
+  "county": [],
+  "termStart": "2021-01-03",
+  "termEnd": "2027-01-03",
+  "contactInfo": {
+    "office": "498 Russell Senate Office Building",
+    "phone": "202-224-6621",
+    "email": "https://www.lujan.senate.gov/contact/",
+    "website": "https://www.lujan.senate.gov"
+  },
+  "bio": "Ben Ray Luján serves as a U.S. Senator for New Mexico. This RepWatchr starter profile is source-seeded from current congressional roster data, official public links, and public congressional photo sources.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "NM",
+  "bioguideId": "L000570",
+  "sourceLinks": [
+    {
+      "title": "Official congressional website",
+      "url": "https://www.lujan.senate.gov"
+    },
+    {
+      "title": "Congress legislators current roster",
+      "url": "https://raw.githubusercontent.com/unitedstates/congress-legislators/master/legislators-current.yaml"
+    },
+    {
+      "title": "Biographical Directory of the United States Congress",
+      "url": "https://bioguide.congress.gov/search/bio/L000570"
+    },
+    {
+      "title": "Congressional photo source",
+      "url": "https://unitedstates.github.io/images/congress/225x275/L000570.jpg"
+    }
+  ],
+  "lastVerifiedAt": "2026-04-29"
+}

@@ -1,0 +1,47 @@
+{
+  "id": "robert-f-onder-jr",
+  "name": "Robert F. Onder, Jr.",
+  "firstName": "Robert",
+  "lastName": "Onder",
+  "photo": "/images/officials/federal/robert-f-onder-jr.png",
+  "photoSourceUrl": "https://onder.house.gov/sites/evo-subsites/onder.house.gov/files/evo-media-image/onder_profile.png",
+  "photoCredit": "Official congressional website image",
+  "party": "R",
+  "level": "federal",
+  "position": "U.S. Representative",
+  "district": "MO-3",
+  "jurisdiction": "U.S. House of Representatives",
+  "county": [],
+  "termStart": "2025-01-03",
+  "termEnd": "2027-01-03",
+  "contactInfo": {
+    "office": "1113 Longworth House Office Building",
+    "phone": "202-225-2956",
+    "email": "https://onder.house.gov",
+    "website": "https://onder.house.gov"
+  },
+  "bio": "Robert F. Onder, Jr. serves as the U.S. Representative for Missouri's 3rd Congressional District. This RepWatchr starter profile is source-seeded from current congressional roster data, official public links, and public congressional photo sources.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "MO",
+  "bioguideId": "O000177",
+  "sourceLinks": [
+    {
+      "title": "Official congressional website",
+      "url": "https://onder.house.gov"
+    },
+    {
+      "title": "Congress legislators current roster",
+      "url": "https://raw.githubusercontent.com/unitedstates/congress-legislators/master/legislators-current.yaml"
+    },
+    {
+      "title": "Biographical Directory of the United States Congress",
+      "url": "https://bioguide.congress.gov/search/bio/O000177"
+    },
+    {
+      "title": "Congressional photo source",
+      "url": "https://onder.house.gov/sites/evo-subsites/onder.house.gov/files/evo-media-image/onder_profile.png"
+    }
+  ],
+  "lastVerifiedAt": "2026-04-29"
+}

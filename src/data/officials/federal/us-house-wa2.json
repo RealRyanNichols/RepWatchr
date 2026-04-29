@@ -1,0 +1,47 @@
+{
+  "id": "rick-larsen",
+  "name": "Rick Larsen",
+  "firstName": "Rick",
+  "lastName": "Larsen",
+  "photo": "/images/officials/federal/rick-larsen.jpg",
+  "photoSourceUrl": "https://unitedstates.github.io/images/congress/225x275/L000560.jpg",
+  "photoCredit": "UnitedStates project congressional image mirror",
+  "party": "D",
+  "level": "federal",
+  "position": "U.S. Representative",
+  "district": "WA-2",
+  "jurisdiction": "U.S. House of Representatives",
+  "county": [],
+  "termStart": "2025-01-03",
+  "termEnd": "2027-01-03",
+  "contactInfo": {
+    "office": "2163 Rayburn House Office Building",
+    "phone": "202-225-2605",
+    "email": "https://larsen.house.gov",
+    "website": "https://larsen.house.gov"
+  },
+  "bio": "Rick Larsen serves as the U.S. Representative for Washington's 2nd Congressional District. This RepWatchr starter profile is source-seeded from current congressional roster data, official public links, and public congressional photo sources.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "WA",
+  "bioguideId": "L000560",
+  "sourceLinks": [
+    {
+      "title": "Official congressional website",
+      "url": "https://larsen.house.gov"
+    },
+    {
+      "title": "Congress legislators current roster",
+      "url": "https://raw.githubusercontent.com/unitedstates/congress-legislators/master/legislators-current.yaml"
+    },
+    {
+      "title": "Biographical Directory of the United States Congress",
+      "url": "https://bioguide.congress.gov/search/bio/L000560"
+    },
+    {
+      "title": "Congressional photo source",
+      "url": "https://unitedstates.github.io/images/congress/225x275/L000560.jpg"
+    }
+  ],
+  "lastVerifiedAt": "2026-04-29"
+}

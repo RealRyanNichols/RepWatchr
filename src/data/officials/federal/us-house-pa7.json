@@ -1,0 +1,47 @@
+{
+  "id": "ryan-mackenzie",
+  "name": "Ryan Mackenzie",
+  "firstName": "Ryan",
+  "lastName": "Mackenzie",
+  "photo": "/images/officials/federal/ryan-mackenzie.webp",
+  "photoSourceUrl": "https://mackenzie.house.gov/sites/evo-subsites/mackenzie.house.gov/files/styles/large/public/evo-media-image/mackenzie.jpeg.webp?itok=kAk07El1",
+  "photoCredit": "Official congressional website image",
+  "party": "R",
+  "level": "federal",
+  "position": "U.S. Representative",
+  "district": "PA-7",
+  "jurisdiction": "U.S. House of Representatives",
+  "county": [],
+  "termStart": "2025-01-03",
+  "termEnd": "2027-01-03",
+  "contactInfo": {
+    "office": "121 Cannon House Office Building",
+    "phone": "202-225-6411",
+    "email": "https://mackenzie.house.gov",
+    "website": "https://mackenzie.house.gov"
+  },
+  "bio": "Ryan Mackenzie serves as the U.S. Representative for Pennsylvania's 7th Congressional District. This RepWatchr starter profile is source-seeded from current congressional roster data, official public links, and public congressional photo sources.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "PA",
+  "bioguideId": "M001230",
+  "sourceLinks": [
+    {
+      "title": "Official congressional website",
+      "url": "https://mackenzie.house.gov"
+    },
+    {
+      "title": "Congress legislators current roster",
+      "url": "https://raw.githubusercontent.com/unitedstates/congress-legislators/master/legislators-current.yaml"
+    },
+    {
+      "title": "Biographical Directory of the United States Congress",
+      "url": "https://bioguide.congress.gov/search/bio/M001230"
+    },
+    {
+      "title": "Congressional photo source",
+      "url": "https://mackenzie.house.gov/sites/evo-subsites/mackenzie.house.gov/files/styles/large/public/evo-media-image/mackenzie.jpeg.webp?itok=kAk07El1"
+    }
+  ],
+  "lastVerifiedAt": "2026-04-29"
+}

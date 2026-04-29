@@ -1,0 +1,40 @@
+{
+  "id": "mark-b-messmer",
+  "name": "Mark B. Messmer",
+  "firstName": "Mark",
+  "lastName": "Messmer",
+  "party": "R",
+  "level": "federal",
+  "position": "U.S. Representative",
+  "district": "IN-8",
+  "jurisdiction": "U.S. House of Representatives",
+  "county": [],
+  "termStart": "2025-01-03",
+  "termEnd": "2027-01-03",
+  "contactInfo": {
+    "office": "1208 Longworth House Office Building",
+    "phone": "202-225-4636",
+    "email": "https://messmer.house.gov",
+    "website": "https://messmer.house.gov"
+  },
+  "bio": "Mark B. Messmer serves as the U.S. Representative for Indiana's 8th Congressional District. This RepWatchr starter profile is source-seeded from current congressional roster data, official public links, and public congressional photo sources.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "IN",
+  "bioguideId": "M001233",
+  "sourceLinks": [
+    {
+      "title": "Official congressional website",
+      "url": "https://messmer.house.gov"
+    },
+    {
+      "title": "Congress legislators current roster",
+      "url": "https://raw.githubusercontent.com/unitedstates/congress-legislators/master/legislators-current.yaml"
+    },
+    {
+      "title": "Biographical Directory of the United States Congress",
+      "url": "https://bioguide.congress.gov/search/bio/M001233"
+    }
+  ],
+  "lastVerifiedAt": "2026-04-29"
+}

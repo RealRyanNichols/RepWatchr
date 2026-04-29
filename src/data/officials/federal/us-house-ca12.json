@@ -1,0 +1,47 @@
+{
+  "id": "lateefah-simon",
+  "name": "Lateefah Simon",
+  "firstName": "Lateefah",
+  "lastName": "Simon",
+  "photo": "/images/officials/federal/lateefah-simon.jpg",
+  "photoSourceUrl": "https://simon.house.gov/sites/evo-subsites/simon.house.gov/files/styles/evo_image_portrait_480/public/evo-media-image/2024_simon_lateefah_official.jpg?itok=z95zK14U",
+  "photoCredit": "Official congressional website image",
+  "party": "D",
+  "level": "federal",
+  "position": "U.S. Representative",
+  "district": "CA-12",
+  "jurisdiction": "U.S. House of Representatives",
+  "county": [],
+  "termStart": "2025-01-03",
+  "termEnd": "2027-01-03",
+  "contactInfo": {
+    "office": "1023 Longworth House Office Building",
+    "phone": "202-225-2661",
+    "email": "https://simon.house.gov",
+    "website": "https://simon.house.gov"
+  },
+  "bio": "Lateefah Simon serves as the U.S. Representative for California's 12th Congressional District. This RepWatchr starter profile is source-seeded from current congressional roster data, official public links, and public congressional photo sources.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "CA",
+  "bioguideId": "S001231",
+  "sourceLinks": [
+    {
+      "title": "Official congressional website",
+      "url": "https://simon.house.gov"
+    },
+    {
+      "title": "Congress legislators current roster",
+      "url": "https://raw.githubusercontent.com/unitedstates/congress-legislators/master/legislators-current.yaml"
+    },
+    {
+      "title": "Biographical Directory of the United States Congress",
+      "url": "https://bioguide.congress.gov/search/bio/S001231"
+    },
+    {
+      "title": "Congressional photo source",
+      "url": "https://simon.house.gov/sites/evo-subsites/simon.house.gov/files/styles/evo_image_portrait_480/public/evo-media-image/2024_simon_lateefah_official.jpg?itok=z95zK14U"
+    }
+  ],
+  "lastVerifiedAt": "2026-04-29"
+}

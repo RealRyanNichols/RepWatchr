@@ -1,0 +1,47 @@
+{
+  "id": "dave-min",
+  "name": "Dave Min",
+  "firstName": "Dave",
+  "lastName": "Min",
+  "photo": "/images/officials/federal/dave-min.jpg",
+  "photoSourceUrl": "https://min.house.gov/sites/evo-subsites/min.house.gov/files/styles/evo_image_portrait_480/public/evo-media-image/2024min_dave_official.jpg?itok=mRc525H7",
+  "photoCredit": "Official congressional website image",
+  "party": "D",
+  "level": "federal",
+  "position": "U.S. Representative",
+  "district": "CA-47",
+  "jurisdiction": "U.S. House of Representatives",
+  "county": [],
+  "termStart": "2025-01-03",
+  "termEnd": "2027-01-03",
+  "contactInfo": {
+    "office": "1034 Longworth House Office Building",
+    "phone": "202-225-5611",
+    "email": "https://min.house.gov",
+    "website": "https://min.house.gov"
+  },
+  "bio": "Dave Min serves as the U.S. Representative for California's 47th Congressional District. This RepWatchr starter profile is source-seeded from current congressional roster data, official public links, and public congressional photo sources.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "CA",
+  "bioguideId": "M001241",
+  "sourceLinks": [
+    {
+      "title": "Official congressional website",
+      "url": "https://min.house.gov"
+    },
+    {
+      "title": "Congress legislators current roster",
+      "url": "https://raw.githubusercontent.com/unitedstates/congress-legislators/master/legislators-current.yaml"
+    },
+    {
+      "title": "Biographical Directory of the United States Congress",
+      "url": "https://bioguide.congress.gov/search/bio/M001241"
+    },
+    {
+      "title": "Congressional photo source",
+      "url": "https://min.house.gov/sites/evo-subsites/min.house.gov/files/styles/evo_image_portrait_480/public/evo-media-image/2024min_dave_official.jpg?itok=mRc525H7"
+    }
+  ],
+  "lastVerifiedAt": "2026-04-29"
+}

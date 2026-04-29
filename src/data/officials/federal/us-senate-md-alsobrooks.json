@@ -1,0 +1,40 @@
+{
+  "id": "angela-d-alsobrooks",
+  "name": "Angela D. Alsobrooks",
+  "firstName": "Angela",
+  "lastName": "Alsobrooks",
+  "party": "D",
+  "level": "federal",
+  "position": "U.S. Senator",
+  "district": "Maryland",
+  "jurisdiction": "U.S. Senate",
+  "county": [],
+  "termStart": "2025-01-03",
+  "termEnd": "2031-01-03",
+  "contactInfo": {
+    "office": "374 Russell Senate Office Building",
+    "phone": "202-224-4524",
+    "email": "https://alsobrooks.senate.gov/",
+    "website": "https://www.alsobrooks.senate.gov"
+  },
+  "bio": "Angela D. Alsobrooks serves as a U.S. Senator for Maryland. This RepWatchr starter profile is source-seeded from current congressional roster data, official public links, and public congressional photo sources.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "MD",
+  "bioguideId": "A000382",
+  "sourceLinks": [
+    {
+      "title": "Official congressional website",
+      "url": "https://www.alsobrooks.senate.gov"
+    },
+    {
+      "title": "Congress legislators current roster",
+      "url": "https://raw.githubusercontent.com/unitedstates/congress-legislators/master/legislators-current.yaml"
+    },
+    {
+      "title": "Biographical Directory of the United States Congress",
+      "url": "https://bioguide.congress.gov/search/bio/A000382"
+    }
+  ],
+  "lastVerifiedAt": "2026-04-29"
+}

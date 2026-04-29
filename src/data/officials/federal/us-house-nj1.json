@@ -1,0 +1,47 @@
+{
+  "id": "donald-norcross",
+  "name": "Donald Norcross",
+  "firstName": "Donald",
+  "lastName": "Norcross",
+  "photo": "/images/officials/federal/donald-norcross.jpg",
+  "photoSourceUrl": "https://unitedstates.github.io/images/congress/225x275/N000188.jpg",
+  "photoCredit": "UnitedStates project congressional image mirror",
+  "party": "D",
+  "level": "federal",
+  "position": "U.S. Representative",
+  "district": "NJ-1",
+  "jurisdiction": "U.S. House of Representatives",
+  "county": [],
+  "termStart": "2025-01-03",
+  "termEnd": "2027-01-03",
+  "contactInfo": {
+    "office": "2427 Rayburn House Office Building",
+    "phone": "202-225-6501",
+    "email": "https://norcross.house.gov",
+    "website": "https://norcross.house.gov"
+  },
+  "bio": "Donald Norcross serves as the U.S. Representative for New Jersey's 1st Congressional District. This RepWatchr starter profile is source-seeded from current congressional roster data, official public links, and public congressional photo sources.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "NJ",
+  "bioguideId": "N000188",
+  "sourceLinks": [
+    {
+      "title": "Official congressional website",
+      "url": "https://norcross.house.gov"
+    },
+    {
+      "title": "Congress legislators current roster",
+      "url": "https://raw.githubusercontent.com/unitedstates/congress-legislators/master/legislators-current.yaml"
+    },
+    {
+      "title": "Biographical Directory of the United States Congress",
+      "url": "https://bioguide.congress.gov/search/bio/N000188"
+    },
+    {
+      "title": "Congressional photo source",
+      "url": "https://unitedstates.github.io/images/congress/225x275/N000188.jpg"
+    }
+  ],
+  "lastVerifiedAt": "2026-04-29"
+}

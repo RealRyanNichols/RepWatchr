@@ -1,0 +1,47 @@
+{
+  "id": "ted-budd",
+  "name": "Ted Budd",
+  "firstName": "Ted",
+  "lastName": "Budd",
+  "photo": "/images/officials/federal/ted-budd.jpg",
+  "photoSourceUrl": "https://unitedstates.github.io/images/congress/225x275/B001305.jpg",
+  "photoCredit": "UnitedStates project congressional image mirror",
+  "party": "R",
+  "level": "federal",
+  "position": "U.S. Senator",
+  "district": "North Carolina",
+  "jurisdiction": "U.S. Senate",
+  "county": [],
+  "termStart": "2023-01-03",
+  "termEnd": "2029-01-03",
+  "contactInfo": {
+    "office": "354 Russell Senate Office Building",
+    "phone": "202-224-3154",
+    "email": "https://www.budd.senate.gov/contact/",
+    "website": "https://www.budd.senate.gov"
+  },
+  "bio": "Ted Budd serves as a U.S. Senator for North Carolina. This RepWatchr starter profile is source-seeded from current congressional roster data, official public links, and public congressional photo sources.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "NC",
+  "bioguideId": "B001305",
+  "sourceLinks": [
+    {
+      "title": "Official congressional website",
+      "url": "https://www.budd.senate.gov"
+    },
+    {
+      "title": "Congress legislators current roster",
+      "url": "https://raw.githubusercontent.com/unitedstates/congress-legislators/master/legislators-current.yaml"
+    },
+    {
+      "title": "Biographical Directory of the United States Congress",
+      "url": "https://bioguide.congress.gov/search/bio/B001305"
+    },
+    {
+      "title": "Congressional photo source",
+      "url": "https://unitedstates.github.io/images/congress/225x275/B001305.jpg"
+    }
+  ],
+  "lastVerifiedAt": "2026-04-29"
+}

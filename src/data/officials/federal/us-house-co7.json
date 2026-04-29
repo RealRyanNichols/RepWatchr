@@ -1,0 +1,47 @@
+{
+  "id": "brittany-pettersen",
+  "name": "Brittany Pettersen",
+  "firstName": "Brittany",
+  "lastName": "Pettersen",
+  "photo": "/images/officials/federal/brittany-pettersen.jpg",
+  "photoSourceUrl": "https://unitedstates.github.io/images/congress/225x275/P000620.jpg",
+  "photoCredit": "UnitedStates project congressional image mirror",
+  "party": "D",
+  "level": "federal",
+  "position": "U.S. Representative",
+  "district": "CO-7",
+  "jurisdiction": "U.S. House of Representatives",
+  "county": [],
+  "termStart": "2025-01-03",
+  "termEnd": "2027-01-03",
+  "contactInfo": {
+    "office": "348 Cannon House Office Building",
+    "phone": "202-225-2645",
+    "email": "https://pettersen.house.gov",
+    "website": "https://pettersen.house.gov"
+  },
+  "bio": "Brittany Pettersen serves as the U.S. Representative for Colorado's 7th Congressional District. This RepWatchr starter profile is source-seeded from current congressional roster data, official public links, and public congressional photo sources.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "CO",
+  "bioguideId": "P000620",
+  "sourceLinks": [
+    {
+      "title": "Official congressional website",
+      "url": "https://pettersen.house.gov"
+    },
+    {
+      "title": "Congress legislators current roster",
+      "url": "https://raw.githubusercontent.com/unitedstates/congress-legislators/master/legislators-current.yaml"
+    },
+    {
+      "title": "Biographical Directory of the United States Congress",
+      "url": "https://bioguide.congress.gov/search/bio/P000620"
+    },
+    {
+      "title": "Congressional photo source",
+      "url": "https://unitedstates.github.io/images/congress/225x275/P000620.jpg"
+    }
+  ],
+  "lastVerifiedAt": "2026-04-29"
+}

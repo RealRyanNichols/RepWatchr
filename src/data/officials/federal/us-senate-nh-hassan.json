@@ -1,0 +1,47 @@
+{
+  "id": "margaret-wood-hassan",
+  "name": "Margaret Wood Hassan",
+  "firstName": "Margaret",
+  "lastName": "Hassan",
+  "photo": "/images/officials/federal/margaret-wood-hassan.jpg",
+  "photoSourceUrl": "https://unitedstates.github.io/images/congress/225x275/H001076.jpg",
+  "photoCredit": "UnitedStates project congressional image mirror",
+  "party": "D",
+  "level": "federal",
+  "position": "U.S. Senator",
+  "district": "New Hampshire",
+  "jurisdiction": "U.S. Senate",
+  "county": [],
+  "termStart": "2023-01-03",
+  "termEnd": "2029-01-03",
+  "contactInfo": {
+    "office": "324 Hart Senate Office Building",
+    "phone": "202-224-3324",
+    "email": "https://www.hassan.senate.gov/content/contact-senator",
+    "website": "https://www.hassan.senate.gov"
+  },
+  "bio": "Margaret Wood Hassan serves as a U.S. Senator for New Hampshire. This RepWatchr starter profile is source-seeded from current congressional roster data, official public links, and public congressional photo sources.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "NH",
+  "bioguideId": "H001076",
+  "sourceLinks": [
+    {
+      "title": "Official congressional website",
+      "url": "https://www.hassan.senate.gov"
+    },
+    {
+      "title": "Congress legislators current roster",
+      "url": "https://raw.githubusercontent.com/unitedstates/congress-legislators/master/legislators-current.yaml"
+    },
+    {
+      "title": "Biographical Directory of the United States Congress",
+      "url": "https://bioguide.congress.gov/search/bio/H001076"
+    },
+    {
+      "title": "Congressional photo source",
+      "url": "https://unitedstates.github.io/images/congress/225x275/H001076.jpg"
+    }
+  ],
+  "lastVerifiedAt": "2026-04-29"
+}

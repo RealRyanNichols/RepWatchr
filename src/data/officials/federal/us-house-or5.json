@@ -1,0 +1,47 @@
+{
+  "id": "janelle-s-bynum",
+  "name": "Janelle S. Bynum",
+  "firstName": "Janelle",
+  "lastName": "Bynum",
+  "photo": "/images/officials/federal/janelle-s-bynum.webp",
+  "photoSourceUrl": "https://bynum.house.gov/sites/evo-subsites/bynum.house.gov/files/styles/large/public/evo-media-image/offiial-portrait.png.webp?itok=G3EXrJ3f",
+  "photoCredit": "Official congressional website image",
+  "party": "D",
+  "level": "federal",
+  "position": "U.S. Representative",
+  "district": "OR-5",
+  "jurisdiction": "U.S. House of Representatives",
+  "county": [],
+  "termStart": "2025-01-03",
+  "termEnd": "2027-01-03",
+  "contactInfo": {
+    "office": "1508 Longworth House Office Building",
+    "phone": "202-225-5711",
+    "email": "https://bynum.house.gov",
+    "website": "https://bynum.house.gov"
+  },
+  "bio": "Janelle S. Bynum serves as the U.S. Representative for Oregon's 5th Congressional District. This RepWatchr starter profile is source-seeded from current congressional roster data, official public links, and public congressional photo sources.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "OR",
+  "bioguideId": "B001326",
+  "sourceLinks": [
+    {
+      "title": "Official congressional website",
+      "url": "https://bynum.house.gov"
+    },
+    {
+      "title": "Congress legislators current roster",
+      "url": "https://raw.githubusercontent.com/unitedstates/congress-legislators/master/legislators-current.yaml"
+    },
+    {
+      "title": "Biographical Directory of the United States Congress",
+      "url": "https://bioguide.congress.gov/search/bio/B001326"
+    },
+    {
+      "title": "Congressional photo source",
+      "url": "https://bynum.house.gov/sites/evo-subsites/bynum.house.gov/files/styles/large/public/evo-media-image/offiial-portrait.png.webp?itok=G3EXrJ3f"
+    }
+  ],
+  "lastVerifiedAt": "2026-04-29"
+}

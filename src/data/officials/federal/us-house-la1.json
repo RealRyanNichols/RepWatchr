@@ -1,0 +1,47 @@
+{
+  "id": "steve-scalise",
+  "name": "Steve Scalise",
+  "firstName": "Steve",
+  "lastName": "Scalise",
+  "photo": "/images/officials/federal/steve-scalise.jpg",
+  "photoSourceUrl": "https://unitedstates.github.io/images/congress/225x275/S001176.jpg",
+  "photoCredit": "UnitedStates project congressional image mirror",
+  "party": "R",
+  "level": "federal",
+  "position": "U.S. Representative",
+  "district": "LA-1",
+  "jurisdiction": "U.S. House of Representatives",
+  "county": [],
+  "termStart": "2025-01-03",
+  "termEnd": "2027-01-03",
+  "contactInfo": {
+    "office": "266 Cannon House Office Building",
+    "phone": "202-225-3015",
+    "email": "https://scalise.house.gov",
+    "website": "https://scalise.house.gov"
+  },
+  "bio": "Steve Scalise serves as the U.S. Representative for Louisiana's 1st Congressional District. This RepWatchr starter profile is source-seeded from current congressional roster data, official public links, and public congressional photo sources.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "LA",
+  "bioguideId": "S001176",
+  "sourceLinks": [
+    {
+      "title": "Official congressional website",
+      "url": "https://scalise.house.gov"
+    },
+    {
+      "title": "Congress legislators current roster",
+      "url": "https://raw.githubusercontent.com/unitedstates/congress-legislators/master/legislators-current.yaml"
+    },
+    {
+      "title": "Biographical Directory of the United States Congress",
+      "url": "https://bioguide.congress.gov/search/bio/S001176"
+    },
+    {
+      "title": "Congressional photo source",
+      "url": "https://unitedstates.github.io/images/congress/225x275/S001176.jpg"
+    }
+  ],
+  "lastVerifiedAt": "2026-04-29"
+}

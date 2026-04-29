@@ -1,0 +1,47 @@
+{
+  "id": "mazie-k-hirono",
+  "name": "Mazie K. Hirono",
+  "firstName": "Mazie",
+  "lastName": "Hirono",
+  "photo": "/images/officials/federal/mazie-k-hirono.jpg",
+  "photoSourceUrl": "https://unitedstates.github.io/images/congress/225x275/H001042.jpg",
+  "photoCredit": "UnitedStates project congressional image mirror",
+  "party": "D",
+  "level": "federal",
+  "position": "U.S. Senator",
+  "district": "Hawaii",
+  "jurisdiction": "U.S. Senate",
+  "county": [],
+  "termStart": "2025-01-03",
+  "termEnd": "2031-01-03",
+  "contactInfo": {
+    "office": "109 Hart Senate Office Building",
+    "phone": "202-224-6361",
+    "email": "https://www.hirono.senate.gov/contact",
+    "website": "https://www.hirono.senate.gov"
+  },
+  "bio": "Mazie K. Hirono serves as a U.S. Senator for Hawaii. This RepWatchr starter profile is source-seeded from current congressional roster data, official public links, and public congressional photo sources.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "HI",
+  "bioguideId": "H001042",
+  "sourceLinks": [
+    {
+      "title": "Official congressional website",
+      "url": "https://www.hirono.senate.gov"
+    },
+    {
+      "title": "Congress legislators current roster",
+      "url": "https://raw.githubusercontent.com/unitedstates/congress-legislators/master/legislators-current.yaml"
+    },
+    {
+      "title": "Biographical Directory of the United States Congress",
+      "url": "https://bioguide.congress.gov/search/bio/H001042"
+    },
+    {
+      "title": "Congressional photo source",
+      "url": "https://unitedstates.github.io/images/congress/225x275/H001042.jpg"
+    }
+  ],
+  "lastVerifiedAt": "2026-04-29"
+}

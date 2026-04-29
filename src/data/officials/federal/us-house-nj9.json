@@ -1,0 +1,47 @@
+{
+  "id": "nellie-pou",
+  "name": "Nellie Pou",
+  "firstName": "Nellie",
+  "lastName": "Pou",
+  "photo": "/images/officials/federal/nellie-pou.jpg",
+  "photoSourceUrl": "https://pou.house.gov/sites/evo-subsites/pou.house.gov/files/styles/evo_image_portrait_480/public/evo-media-image/2024_pou_nellie_official.jpg?itok=Irtziete",
+  "photoCredit": "Official congressional website image",
+  "party": "D",
+  "level": "federal",
+  "position": "U.S. Representative",
+  "district": "NJ-9",
+  "jurisdiction": "U.S. House of Representatives",
+  "county": [],
+  "termStart": "2025-01-03",
+  "termEnd": "2027-01-03",
+  "contactInfo": {
+    "office": "1007 Longworth House Office Building",
+    "phone": "202-225-5751",
+    "email": "https://pou.house.gov",
+    "website": "https://pou.house.gov"
+  },
+  "bio": "Nellie Pou serves as the U.S. Representative for New Jersey's 9th Congressional District. This RepWatchr starter profile is source-seeded from current congressional roster data, official public links, and public congressional photo sources.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "NJ",
+  "bioguideId": "P000621",
+  "sourceLinks": [
+    {
+      "title": "Official congressional website",
+      "url": "https://pou.house.gov"
+    },
+    {
+      "title": "Congress legislators current roster",
+      "url": "https://raw.githubusercontent.com/unitedstates/congress-legislators/master/legislators-current.yaml"
+    },
+    {
+      "title": "Biographical Directory of the United States Congress",
+      "url": "https://bioguide.congress.gov/search/bio/P000621"
+    },
+    {
+      "title": "Congressional photo source",
+      "url": "https://pou.house.gov/sites/evo-subsites/pou.house.gov/files/styles/evo_image_portrait_480/public/evo-media-image/2024_pou_nellie_official.jpg?itok=Irtziete"
+    }
+  ],
+  "lastVerifiedAt": "2026-04-29"
+}

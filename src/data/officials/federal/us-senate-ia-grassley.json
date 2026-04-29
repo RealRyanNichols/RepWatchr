@@ -1,0 +1,47 @@
+{
+  "id": "chuck-grassley",
+  "name": "Chuck Grassley",
+  "firstName": "Charles",
+  "lastName": "Grassley",
+  "photo": "/images/officials/federal/chuck-grassley.jpg",
+  "photoSourceUrl": "https://unitedstates.github.io/images/congress/225x275/G000386.jpg",
+  "photoCredit": "UnitedStates project congressional image mirror",
+  "party": "R",
+  "level": "federal",
+  "position": "U.S. Senator",
+  "district": "Iowa",
+  "jurisdiction": "U.S. Senate",
+  "county": [],
+  "termStart": "2023-01-03",
+  "termEnd": "2029-01-03",
+  "contactInfo": {
+    "office": "135 Hart Senate Office Building",
+    "phone": "202-224-3744",
+    "email": "https://www.grassley.senate.gov/contact",
+    "website": "https://www.grassley.senate.gov"
+  },
+  "bio": "Chuck Grassley serves as a U.S. Senator for Iowa. This RepWatchr starter profile is source-seeded from current congressional roster data, official public links, and public congressional photo sources.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "IA",
+  "bioguideId": "G000386",
+  "sourceLinks": [
+    {
+      "title": "Official congressional website",
+      "url": "https://www.grassley.senate.gov"
+    },
+    {
+      "title": "Congress legislators current roster",
+      "url": "https://raw.githubusercontent.com/unitedstates/congress-legislators/master/legislators-current.yaml"
+    },
+    {
+      "title": "Biographical Directory of the United States Congress",
+      "url": "https://bioguide.congress.gov/search/bio/G000386"
+    },
+    {
+      "title": "Congressional photo source",
+      "url": "https://unitedstates.github.io/images/congress/225x275/G000386.jpg"
+    }
+  ],
+  "lastVerifiedAt": "2026-04-29"
+}

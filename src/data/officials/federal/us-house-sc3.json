@@ -1,0 +1,47 @@
+{
+  "id": "sheri-biggs",
+  "name": "Sheri Biggs",
+  "firstName": "Sheri",
+  "lastName": "Biggs",
+  "photo": "/images/officials/federal/sheri-biggs.jpg",
+  "photoSourceUrl": "https://sheribiggs.house.gov/sites/evo-subsites/sheribiggs.house.gov/files/styles/evo_image_portrait_480/public/evo-media-image/2024-11-18_ike_biggs_sheri_0024_re_web_0.jpg?itok=zj_68B53",
+  "photoCredit": "Official congressional website image",
+  "party": "R",
+  "level": "federal",
+  "position": "U.S. Representative",
+  "district": "SC-3",
+  "jurisdiction": "U.S. House of Representatives",
+  "county": [],
+  "termStart": "2025-01-03",
+  "termEnd": "2027-01-03",
+  "contactInfo": {
+    "office": "1530 Longworth House Office Building",
+    "phone": "202-225-5301",
+    "email": "https://sheribiggs.house.gov",
+    "website": "https://sheribiggs.house.gov"
+  },
+  "bio": "Sheri Biggs serves as the U.S. Representative for South Carolina's 3rd Congressional District. This RepWatchr starter profile is source-seeded from current congressional roster data, official public links, and public congressional photo sources.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "SC",
+  "bioguideId": "B001325",
+  "sourceLinks": [
+    {
+      "title": "Official congressional website",
+      "url": "https://sheribiggs.house.gov"
+    },
+    {
+      "title": "Congress legislators current roster",
+      "url": "https://raw.githubusercontent.com/unitedstates/congress-legislators/master/legislators-current.yaml"
+    },
+    {
+      "title": "Biographical Directory of the United States Congress",
+      "url": "https://bioguide.congress.gov/search/bio/B001325"
+    },
+    {
+      "title": "Congressional photo source",
+      "url": "https://sheribiggs.house.gov/sites/evo-subsites/sheribiggs.house.gov/files/styles/evo_image_portrait_480/public/evo-media-image/2024-11-18_ike_biggs_sheri_0024_re_web_0.jpg?itok=zj_68B53"
+    }
+  ],
+  "lastVerifiedAt": "2026-04-29"
+}

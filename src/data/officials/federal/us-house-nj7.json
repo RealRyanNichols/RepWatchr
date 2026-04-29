@@ -1,0 +1,47 @@
+{
+  "id": "thomas-h-kean-jr",
+  "name": "Thomas H. Kean, Jr.",
+  "firstName": "Thomas",
+  "lastName": "Kean",
+  "photo": "/images/officials/federal/thomas-h-kean-jr.jpg",
+  "photoSourceUrl": "https://unitedstates.github.io/images/congress/225x275/K000398.jpg",
+  "photoCredit": "UnitedStates project congressional image mirror",
+  "party": "R",
+  "level": "federal",
+  "position": "U.S. Representative",
+  "district": "NJ-7",
+  "jurisdiction": "U.S. House of Representatives",
+  "county": [],
+  "termStart": "2025-01-03",
+  "termEnd": "2027-01-03",
+  "contactInfo": {
+    "office": "251 Cannon House Office Building",
+    "phone": "202-225-5361",
+    "email": "https://kean.house.gov",
+    "website": "https://kean.house.gov"
+  },
+  "bio": "Thomas H. Kean, Jr. serves as the U.S. Representative for New Jersey's 7th Congressional District. This RepWatchr starter profile is source-seeded from current congressional roster data, official public links, and public congressional photo sources.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "NJ",
+  "bioguideId": "K000398",
+  "sourceLinks": [
+    {
+      "title": "Official congressional website",
+      "url": "https://kean.house.gov"
+    },
+    {
+      "title": "Congress legislators current roster",
+      "url": "https://raw.githubusercontent.com/unitedstates/congress-legislators/master/legislators-current.yaml"
+    },
+    {
+      "title": "Biographical Directory of the United States Congress",
+      "url": "https://bioguide.congress.gov/search/bio/K000398"
+    },
+    {
+      "title": "Congressional photo source",
+      "url": "https://unitedstates.github.io/images/congress/225x275/K000398.jpg"
+    }
+  ],
+  "lastVerifiedAt": "2026-04-29"
+}

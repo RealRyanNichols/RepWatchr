@@ -1,0 +1,47 @@
+{
+  "id": "john-hoeven",
+  "name": "John Hoeven",
+  "firstName": "John",
+  "lastName": "Hoeven",
+  "photo": "/images/officials/federal/john-hoeven.jpg",
+  "photoSourceUrl": "https://unitedstates.github.io/images/congress/225x275/H001061.jpg",
+  "photoCredit": "UnitedStates project congressional image mirror",
+  "party": "R",
+  "level": "federal",
+  "position": "U.S. Senator",
+  "district": "North Dakota",
+  "jurisdiction": "U.S. Senate",
+  "county": [],
+  "termStart": "2023-01-03",
+  "termEnd": "2029-01-03",
+  "contactInfo": {
+    "office": "338 Russell Senate Office Building",
+    "phone": "202-224-2551",
+    "email": "https://www.hoeven.senate.gov/contact/contact-the-senator",
+    "website": "https://www.hoeven.senate.gov"
+  },
+  "bio": "John Hoeven serves as a U.S. Senator for North Dakota. This RepWatchr starter profile is source-seeded from current congressional roster data, official public links, and public congressional photo sources.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "ND",
+  "bioguideId": "H001061",
+  "sourceLinks": [
+    {
+      "title": "Official congressional website",
+      "url": "https://www.hoeven.senate.gov"
+    },
+    {
+      "title": "Congress legislators current roster",
+      "url": "https://raw.githubusercontent.com/unitedstates/congress-legislators/master/legislators-current.yaml"
+    },
+    {
+      "title": "Biographical Directory of the United States Congress",
+      "url": "https://bioguide.congress.gov/search/bio/H001061"
+    },
+    {
+      "title": "Congressional photo source",
+      "url": "https://unitedstates.github.io/images/congress/225x275/H001061.jpg"
+    }
+  ],
+  "lastVerifiedAt": "2026-04-29"
+}

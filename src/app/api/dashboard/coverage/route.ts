@@ -71,8 +71,8 @@ export async function GET() {
         value: dataStats.officialFiles,
         loadedStates: nonZeroStateCount(officialCountsByState),
         href: "/officials",
-        detail: `${dataStats.federalAndStateSeatProfilesLoaded.toLocaleString()} federal/state Texas seat files plus county/city legacy files.`,
-        notTracked: `${dataStats.federalAndStateProfileGaps.toLocaleString()} expected Texas federal/state seat gaps remain in the current loaded import.`,
+        detail: `${dataStats.federalProfilesLoaded.toLocaleString()}/${dataStats.federalExpectedSeats.toLocaleString()} current federal seat profiles across 50 states plus ${dataStats.stateLegislatorProfilesLoaded.toLocaleString()} Texas state legislative profiles.`,
+        notTracked: `${dataStats.federalProfileGaps.toLocaleString()} current U.S. House seat gaps and ${dataStats.stateLegislatureProfileGaps.toLocaleString()} Texas state legislative gaps remain in the loaded import.`,
       },
       {
         id: "school-boards",

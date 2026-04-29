@@ -1,0 +1,47 @@
+{
+  "id": "amy-klobuchar",
+  "name": "Amy Klobuchar",
+  "firstName": "Amy",
+  "lastName": "Klobuchar",
+  "photo": "/images/officials/federal/amy-klobuchar.jpg",
+  "photoSourceUrl": "https://unitedstates.github.io/images/congress/225x275/K000367.jpg",
+  "photoCredit": "UnitedStates project congressional image mirror",
+  "party": "D",
+  "level": "federal",
+  "position": "U.S. Senator",
+  "district": "Minnesota",
+  "jurisdiction": "U.S. Senate",
+  "county": [],
+  "termStart": "2025-01-03",
+  "termEnd": "2031-01-03",
+  "contactInfo": {
+    "office": "425 Dirksen Senate Office Building",
+    "phone": "202-224-3244",
+    "email": "https://www.klobuchar.senate.gov/public/index.cfm/contact",
+    "website": "https://www.klobuchar.senate.gov"
+  },
+  "bio": "Amy Klobuchar serves as a U.S. Senator for Minnesota. This RepWatchr starter profile is source-seeded from current congressional roster data, official public links, and public congressional photo sources.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "MN",
+  "bioguideId": "K000367",
+  "sourceLinks": [
+    {
+      "title": "Official congressional website",
+      "url": "https://www.klobuchar.senate.gov"
+    },
+    {
+      "title": "Congress legislators current roster",
+      "url": "https://raw.githubusercontent.com/unitedstates/congress-legislators/master/legislators-current.yaml"
+    },
+    {
+      "title": "Biographical Directory of the United States Congress",
+      "url": "https://bioguide.congress.gov/search/bio/K000367"
+    },
+    {
+      "title": "Congressional photo source",
+      "url": "https://unitedstates.github.io/images/congress/225x275/K000367.jpg"
+    }
+  ],
+  "lastVerifiedAt": "2026-04-29"
+}

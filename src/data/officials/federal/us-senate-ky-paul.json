@@ -1,0 +1,47 @@
+{
+  "id": "rand-paul",
+  "name": "Rand Paul",
+  "firstName": "Rand",
+  "lastName": "Paul",
+  "photo": "/images/officials/federal/rand-paul.jpg",
+  "photoSourceUrl": "https://unitedstates.github.io/images/congress/225x275/P000603.jpg",
+  "photoCredit": "UnitedStates project congressional image mirror",
+  "party": "R",
+  "level": "federal",
+  "position": "U.S. Senator",
+  "district": "Kentucky",
+  "jurisdiction": "U.S. Senate",
+  "county": [],
+  "termStart": "2023-01-03",
+  "termEnd": "2029-01-03",
+  "contactInfo": {
+    "office": "295 Russell Senate Office Building",
+    "phone": "202-224-4343",
+    "email": "https://www.paul.senate.gov/connect/email-rand",
+    "website": "https://www.paul.senate.gov"
+  },
+  "bio": "Rand Paul serves as a U.S. Senator for Kentucky. This RepWatchr starter profile is source-seeded from current congressional roster data, official public links, and public congressional photo sources.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "KY",
+  "bioguideId": "P000603",
+  "sourceLinks": [
+    {
+      "title": "Official congressional website",
+      "url": "https://www.paul.senate.gov"
+    },
+    {
+      "title": "Congress legislators current roster",
+      "url": "https://raw.githubusercontent.com/unitedstates/congress-legislators/master/legislators-current.yaml"
+    },
+    {
+      "title": "Biographical Directory of the United States Congress",
+      "url": "https://bioguide.congress.gov/search/bio/P000603"
+    },
+    {
+      "title": "Congressional photo source",
+      "url": "https://unitedstates.github.io/images/congress/225x275/P000603.jpg"
+    }
+  ],
+  "lastVerifiedAt": "2026-04-29"
+}

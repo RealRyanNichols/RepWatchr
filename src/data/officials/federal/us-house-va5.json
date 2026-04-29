@@ -1,0 +1,47 @@
+{
+  "id": "john-j-mcguire-iii",
+  "name": "John J. McGuire III",
+  "firstName": "John",
+  "lastName": "McGuire",
+  "photo": "/images/officials/federal/john-j-mcguire-iii.jpg",
+  "photoSourceUrl": "https://mcguire.house.gov/sites/evo-subsites/mcguire.house.gov/files/styles/evo_image_portrait_480/public/evo-media-image/2024_mcguire_iii_john_official.jpg?itok=RV1J7QRj",
+  "photoCredit": "Official congressional website image",
+  "party": "R",
+  "level": "federal",
+  "position": "U.S. Representative",
+  "district": "VA-5",
+  "jurisdiction": "U.S. House of Representatives",
+  "county": [],
+  "termStart": "2025-01-03",
+  "termEnd": "2027-01-03",
+  "contactInfo": {
+    "office": "1013 Longworth House Office Building",
+    "phone": "202-225-4711",
+    "email": "https://mcguire.house.gov",
+    "website": "https://mcguire.house.gov"
+  },
+  "bio": "John J. McGuire III serves as the U.S. Representative for Virginia's 5th Congressional District. This RepWatchr starter profile is source-seeded from current congressional roster data, official public links, and public congressional photo sources.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "VA",
+  "bioguideId": "M001239",
+  "sourceLinks": [
+    {
+      "title": "Official congressional website",
+      "url": "https://mcguire.house.gov"
+    },
+    {
+      "title": "Congress legislators current roster",
+      "url": "https://raw.githubusercontent.com/unitedstates/congress-legislators/master/legislators-current.yaml"
+    },
+    {
+      "title": "Biographical Directory of the United States Congress",
+      "url": "https://bioguide.congress.gov/search/bio/M001239"
+    },
+    {
+      "title": "Congressional photo source",
+      "url": "https://mcguire.house.gov/sites/evo-subsites/mcguire.house.gov/files/styles/evo_image_portrait_480/public/evo-media-image/2024_mcguire_iii_john_official.jpg?itok=RV1J7QRj"
+    }
+  ],
+  "lastVerifiedAt": "2026-04-29"
+}

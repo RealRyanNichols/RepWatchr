@@ -1,0 +1,47 @@
+{
+  "id": "henry-c-hank-johnson-jr",
+  "name": "Henry C. \"Hank\" Johnson, Jr.",
+  "firstName": "Henry",
+  "lastName": "Johnson",
+  "photo": "/images/officials/federal/henry-c-hank-johnson-jr.jpg",
+  "photoSourceUrl": "https://unitedstates.github.io/images/congress/225x275/J000288.jpg",
+  "photoCredit": "UnitedStates project congressional image mirror",
+  "party": "D",
+  "level": "federal",
+  "position": "U.S. Representative",
+  "district": "GA-4",
+  "jurisdiction": "U.S. House of Representatives",
+  "county": [],
+  "termStart": "2025-01-03",
+  "termEnd": "2027-01-03",
+  "contactInfo": {
+    "office": "2240 Rayburn House Office Building",
+    "phone": "202-225-1605",
+    "email": "https://hankjohnson.house.gov",
+    "website": "https://hankjohnson.house.gov"
+  },
+  "bio": "Henry C. \"Hank\" Johnson, Jr. serves as the U.S. Representative for Georgia's 4th Congressional District. This RepWatchr starter profile is source-seeded from current congressional roster data, official public links, and public congressional photo sources.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "GA",
+  "bioguideId": "J000288",
+  "sourceLinks": [
+    {
+      "title": "Official congressional website",
+      "url": "https://hankjohnson.house.gov"
+    },
+    {
+      "title": "Congress legislators current roster",
+      "url": "https://raw.githubusercontent.com/unitedstates/congress-legislators/master/legislators-current.yaml"
+    },
+    {
+      "title": "Biographical Directory of the United States Congress",
+      "url": "https://bioguide.congress.gov/search/bio/J000288"
+    },
+    {
+      "title": "Congressional photo source",
+      "url": "https://unitedstates.github.io/images/congress/225x275/J000288.jpg"
+    }
+  ],
+  "lastVerifiedAt": "2026-04-29"
+}

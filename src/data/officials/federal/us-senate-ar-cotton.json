@@ -1,0 +1,47 @@
+{
+  "id": "tom-cotton",
+  "name": "Tom Cotton",
+  "firstName": "Tom",
+  "lastName": "Cotton",
+  "photo": "/images/officials/federal/tom-cotton.jpg",
+  "photoSourceUrl": "https://unitedstates.github.io/images/congress/225x275/C001095.jpg",
+  "photoCredit": "UnitedStates project congressional image mirror",
+  "party": "R",
+  "level": "federal",
+  "position": "U.S. Senator",
+  "district": "Arkansas",
+  "jurisdiction": "U.S. Senate",
+  "county": [],
+  "termStart": "2021-01-03",
+  "termEnd": "2027-01-03",
+  "contactInfo": {
+    "office": "326 Russell Senate Office Building",
+    "phone": "202-224-2353",
+    "email": "https://www.cotton.senate.gov/contact/contact-tom",
+    "website": "https://www.cotton.senate.gov"
+  },
+  "bio": "Tom Cotton serves as a U.S. Senator for Arkansas. This RepWatchr starter profile is source-seeded from current congressional roster data, official public links, and public congressional photo sources.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "AR",
+  "bioguideId": "C001095",
+  "sourceLinks": [
+    {
+      "title": "Official congressional website",
+      "url": "https://www.cotton.senate.gov"
+    },
+    {
+      "title": "Congress legislators current roster",
+      "url": "https://raw.githubusercontent.com/unitedstates/congress-legislators/master/legislators-current.yaml"
+    },
+    {
+      "title": "Biographical Directory of the United States Congress",
+      "url": "https://bioguide.congress.gov/search/bio/C001095"
+    },
+    {
+      "title": "Congressional photo source",
+      "url": "https://unitedstates.github.io/images/congress/225x275/C001095.jpg"
+    }
+  ],
+  "lastVerifiedAt": "2026-04-29"
+}

@@ -1,0 +1,47 @@
+{
+  "id": "mike-carey",
+  "name": "Mike Carey",
+  "firstName": "Mike",
+  "lastName": "Carey",
+  "photo": "/images/officials/federal/mike-carey.jpg",
+  "photoSourceUrl": "https://unitedstates.github.io/images/congress/225x275/C001126.jpg",
+  "photoCredit": "UnitedStates project congressional image mirror",
+  "party": "R",
+  "level": "federal",
+  "position": "U.S. Representative",
+  "district": "OH-15",
+  "jurisdiction": "U.S. House of Representatives",
+  "county": [],
+  "termStart": "2025-01-03",
+  "termEnd": "2027-01-03",
+  "contactInfo": {
+    "office": "1433 Longworth House Office Building",
+    "phone": "202-225-2015",
+    "email": "https://carey.house.gov",
+    "website": "https://carey.house.gov"
+  },
+  "bio": "Mike Carey serves as the U.S. Representative for Ohio's 15th Congressional District. This RepWatchr starter profile is source-seeded from current congressional roster data, official public links, and public congressional photo sources.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "OH",
+  "bioguideId": "C001126",
+  "sourceLinks": [
+    {
+      "title": "Official congressional website",
+      "url": "https://carey.house.gov"
+    },
+    {
+      "title": "Congress legislators current roster",
+      "url": "https://raw.githubusercontent.com/unitedstates/congress-legislators/master/legislators-current.yaml"
+    },
+    {
+      "title": "Biographical Directory of the United States Congress",
+      "url": "https://bioguide.congress.gov/search/bio/C001126"
+    },
+    {
+      "title": "Congressional photo source",
+      "url": "https://unitedstates.github.io/images/congress/225x275/C001126.jpg"
+    }
+  ],
+  "lastVerifiedAt": "2026-04-29"
+}

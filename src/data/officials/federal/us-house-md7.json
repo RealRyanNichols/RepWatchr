@@ -1,0 +1,47 @@
+{
+  "id": "kweisi-mfume",
+  "name": "Kweisi Mfume",
+  "firstName": "Kweisi",
+  "lastName": "Mfume",
+  "photo": "/images/officials/federal/kweisi-mfume.jpg",
+  "photoSourceUrl": "https://unitedstates.github.io/images/congress/225x275/M000687.jpg",
+  "photoCredit": "UnitedStates project congressional image mirror",
+  "party": "D",
+  "level": "federal",
+  "position": "U.S. Representative",
+  "district": "MD-7",
+  "jurisdiction": "U.S. House of Representatives",
+  "county": [],
+  "termStart": "2025-01-03",
+  "termEnd": "2027-01-03",
+  "contactInfo": {
+    "office": "2263 Rayburn House Office Building",
+    "phone": "202-225-4741",
+    "email": "https://mfume.house.gov",
+    "website": "https://mfume.house.gov"
+  },
+  "bio": "Kweisi Mfume serves as the U.S. Representative for Maryland's 7th Congressional District. This RepWatchr starter profile is source-seeded from current congressional roster data, official public links, and public congressional photo sources.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "MD",
+  "bioguideId": "M000687",
+  "sourceLinks": [
+    {
+      "title": "Official congressional website",
+      "url": "https://mfume.house.gov"
+    },
+    {
+      "title": "Congress legislators current roster",
+      "url": "https://raw.githubusercontent.com/unitedstates/congress-legislators/master/legislators-current.yaml"
+    },
+    {
+      "title": "Biographical Directory of the United States Congress",
+      "url": "https://bioguide.congress.gov/search/bio/M000687"
+    },
+    {
+      "title": "Congressional photo source",
+      "url": "https://unitedstates.github.io/images/congress/225x275/M000687.jpg"
+    }
+  ],
+  "lastVerifiedAt": "2026-04-29"
+}

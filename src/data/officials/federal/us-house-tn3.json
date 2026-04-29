@@ -1,0 +1,47 @@
+{
+  "id": "charles-j-chuck-fleischmann",
+  "name": "Charles J. \"Chuck\" Fleischmann",
+  "firstName": "Charles",
+  "lastName": "Fleischmann",
+  "photo": "/images/officials/federal/charles-j-chuck-fleischmann.jpg",
+  "photoSourceUrl": "https://unitedstates.github.io/images/congress/225x275/F000459.jpg",
+  "photoCredit": "UnitedStates project congressional image mirror",
+  "party": "R",
+  "level": "federal",
+  "position": "U.S. Representative",
+  "district": "TN-3",
+  "jurisdiction": "U.S. House of Representatives",
+  "county": [],
+  "termStart": "2025-01-03",
+  "termEnd": "2027-01-03",
+  "contactInfo": {
+    "office": "2187 Rayburn House Office Building",
+    "phone": "202-225-3271",
+    "email": "https://fleischmann.house.gov",
+    "website": "https://fleischmann.house.gov"
+  },
+  "bio": "Charles J. \"Chuck\" Fleischmann serves as the U.S. Representative for Tennessee's 3rd Congressional District. This RepWatchr starter profile is source-seeded from current congressional roster data, official public links, and public congressional photo sources.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "TN",
+  "bioguideId": "F000459",
+  "sourceLinks": [
+    {
+      "title": "Official congressional website",
+      "url": "https://fleischmann.house.gov"
+    },
+    {
+      "title": "Congress legislators current roster",
+      "url": "https://raw.githubusercontent.com/unitedstates/congress-legislators/master/legislators-current.yaml"
+    },
+    {
+      "title": "Biographical Directory of the United States Congress",
+      "url": "https://bioguide.congress.gov/search/bio/F000459"
+    },
+    {
+      "title": "Congressional photo source",
+      "url": "https://unitedstates.github.io/images/congress/225x275/F000459.jpg"
+    }
+  ],
+  "lastVerifiedAt": "2026-04-29"
+}

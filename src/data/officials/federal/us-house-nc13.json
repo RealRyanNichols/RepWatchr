@@ -1,0 +1,47 @@
+{
+  "id": "brad-knott",
+  "name": "Brad Knott",
+  "firstName": "Brad",
+  "lastName": "Knott",
+  "photo": "/images/officials/federal/brad-knott.webp",
+  "photoSourceUrl": "https://knott.house.gov/sites/evo-subsites/knott.house.gov/files/styles/large/public/evo-media-image/knott.jpeg.webp?itok=y2DzVQDB",
+  "photoCredit": "Official congressional website image",
+  "party": "R",
+  "level": "federal",
+  "position": "U.S. Representative",
+  "district": "NC-13",
+  "jurisdiction": "U.S. House of Representatives",
+  "county": [],
+  "termStart": "2025-01-03",
+  "termEnd": "2027-01-03",
+  "contactInfo": {
+    "office": "1239 Longworth House Office Building",
+    "phone": "202-225-4531",
+    "email": "https://knott.house.gov",
+    "website": "https://knott.house.gov"
+  },
+  "bio": "Brad Knott serves as the U.S. Representative for North Carolina's 13th Congressional District. This RepWatchr starter profile is source-seeded from current congressional roster data, official public links, and public congressional photo sources.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "NC",
+  "bioguideId": "K000405",
+  "sourceLinks": [
+    {
+      "title": "Official congressional website",
+      "url": "https://knott.house.gov"
+    },
+    {
+      "title": "Congress legislators current roster",
+      "url": "https://raw.githubusercontent.com/unitedstates/congress-legislators/master/legislators-current.yaml"
+    },
+    {
+      "title": "Biographical Directory of the United States Congress",
+      "url": "https://bioguide.congress.gov/search/bio/K000405"
+    },
+    {
+      "title": "Congressional photo source",
+      "url": "https://knott.house.gov/sites/evo-subsites/knott.house.gov/files/styles/large/public/evo-media-image/knott.jpeg.webp?itok=y2DzVQDB"
+    }
+  ],
+  "lastVerifiedAt": "2026-04-29"
+}

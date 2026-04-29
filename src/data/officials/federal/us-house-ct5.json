@@ -1,0 +1,47 @@
+{
+  "id": "jahana-hayes",
+  "name": "Jahana Hayes",
+  "firstName": "Jahana",
+  "lastName": "Hayes",
+  "photo": "/images/officials/federal/jahana-hayes.jpg",
+  "photoSourceUrl": "https://unitedstates.github.io/images/congress/225x275/H001081.jpg",
+  "photoCredit": "UnitedStates project congressional image mirror",
+  "party": "D",
+  "level": "federal",
+  "position": "U.S. Representative",
+  "district": "CT-5",
+  "jurisdiction": "U.S. House of Representatives",
+  "county": [],
+  "termStart": "2025-01-03",
+  "termEnd": "2027-01-03",
+  "contactInfo": {
+    "office": "2049 Rayburn House Office Building",
+    "phone": "202-225-4476",
+    "email": "https://hayes.house.gov",
+    "website": "https://hayes.house.gov"
+  },
+  "bio": "Jahana Hayes serves as the U.S. Representative for Connecticut's 5th Congressional District. This RepWatchr starter profile is source-seeded from current congressional roster data, official public links, and public congressional photo sources.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "CT",
+  "bioguideId": "H001081",
+  "sourceLinks": [
+    {
+      "title": "Official congressional website",
+      "url": "https://hayes.house.gov"
+    },
+    {
+      "title": "Congress legislators current roster",
+      "url": "https://raw.githubusercontent.com/unitedstates/congress-legislators/master/legislators-current.yaml"
+    },
+    {
+      "title": "Biographical Directory of the United States Congress",
+      "url": "https://bioguide.congress.gov/search/bio/H001081"
+    },
+    {
+      "title": "Congressional photo source",
+      "url": "https://unitedstates.github.io/images/congress/225x275/H001081.jpg"
+    }
+  ],
+  "lastVerifiedAt": "2026-04-29"
+}

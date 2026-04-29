@@ -1,0 +1,47 @@
+{
+  "id": "linda-t-s-nchez",
+  "name": "Linda T. Sánchez",
+  "firstName": "Linda",
+  "lastName": "Sánchez",
+  "photo": "/images/officials/federal/linda-t-s-nchez.jpg",
+  "photoSourceUrl": "https://unitedstates.github.io/images/congress/225x275/S001156.jpg",
+  "photoCredit": "UnitedStates project congressional image mirror",
+  "party": "D",
+  "level": "federal",
+  "position": "U.S. Representative",
+  "district": "CA-38",
+  "jurisdiction": "U.S. House of Representatives",
+  "county": [],
+  "termStart": "2025-01-03",
+  "termEnd": "2027-01-03",
+  "contactInfo": {
+    "office": "2309 Rayburn House Office Building",
+    "phone": "202-225-6676",
+    "email": "https://lindasanchez.house.gov",
+    "website": "https://lindasanchez.house.gov"
+  },
+  "bio": "Linda T. Sánchez serves as the U.S. Representative for California's 38th Congressional District. This RepWatchr starter profile is source-seeded from current congressional roster data, official public links, and public congressional photo sources.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "CA",
+  "bioguideId": "S001156",
+  "sourceLinks": [
+    {
+      "title": "Official congressional website",
+      "url": "https://lindasanchez.house.gov"
+    },
+    {
+      "title": "Congress legislators current roster",
+      "url": "https://raw.githubusercontent.com/unitedstates/congress-legislators/master/legislators-current.yaml"
+    },
+    {
+      "title": "Biographical Directory of the United States Congress",
+      "url": "https://bioguide.congress.gov/search/bio/S001156"
+    },
+    {
+      "title": "Congressional photo source",
+      "url": "https://unitedstates.github.io/images/congress/225x275/S001156.jpg"
+    }
+  ],
+  "lastVerifiedAt": "2026-04-29"
+}

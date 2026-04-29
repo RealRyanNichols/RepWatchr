@@ -1,0 +1,47 @@
+{
+  "id": "richard-e-neal",
+  "name": "Richard E. Neal",
+  "firstName": "Richard",
+  "lastName": "Neal",
+  "photo": "/images/officials/federal/richard-e-neal.jpg",
+  "photoSourceUrl": "https://unitedstates.github.io/images/congress/225x275/N000015.jpg",
+  "photoCredit": "UnitedStates project congressional image mirror",
+  "party": "D",
+  "level": "federal",
+  "position": "U.S. Representative",
+  "district": "MA-1",
+  "jurisdiction": "U.S. House of Representatives",
+  "county": [],
+  "termStart": "2025-01-03",
+  "termEnd": "2027-01-03",
+  "contactInfo": {
+    "office": "372 Cannon House Office Building",
+    "phone": "202-225-5601",
+    "email": "https://neal.house.gov",
+    "website": "https://neal.house.gov"
+  },
+  "bio": "Richard E. Neal serves as the U.S. Representative for Massachusetts's 1st Congressional District. This RepWatchr starter profile is source-seeded from current congressional roster data, official public links, and public congressional photo sources.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "MA",
+  "bioguideId": "N000015",
+  "sourceLinks": [
+    {
+      "title": "Official congressional website",
+      "url": "https://neal.house.gov"
+    },
+    {
+      "title": "Congress legislators current roster",
+      "url": "https://raw.githubusercontent.com/unitedstates/congress-legislators/master/legislators-current.yaml"
+    },
+    {
+      "title": "Biographical Directory of the United States Congress",
+      "url": "https://bioguide.congress.gov/search/bio/N000015"
+    },
+    {
+      "title": "Congressional photo source",
+      "url": "https://unitedstates.github.io/images/congress/225x275/N000015.jpg"
+    }
+  ],
+  "lastVerifiedAt": "2026-04-29"
+}

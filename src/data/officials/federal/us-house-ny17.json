@@ -1,0 +1,40 @@
+{
+  "id": "michael-lawler",
+  "name": "Michael Lawler",
+  "firstName": "Michael",
+  "lastName": "Lawler",
+  "party": "R",
+  "level": "federal",
+  "position": "U.S. Representative",
+  "district": "NY-17",
+  "jurisdiction": "U.S. House of Representatives",
+  "county": [],
+  "termStart": "2025-01-03",
+  "termEnd": "2027-01-03",
+  "contactInfo": {
+    "office": "324 Cannon House Office Building",
+    "phone": "202-225-6506",
+    "email": "https://lawler.house.gov",
+    "website": "https://lawler.house.gov"
+  },
+  "bio": "Michael Lawler serves as the U.S. Representative for New York's 17th Congressional District. This RepWatchr starter profile is source-seeded from current congressional roster data, official public links, and public congressional photo sources.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "NY",
+  "bioguideId": "L000599",
+  "sourceLinks": [
+    {
+      "title": "Official congressional website",
+      "url": "https://lawler.house.gov"
+    },
+    {
+      "title": "Congress legislators current roster",
+      "url": "https://raw.githubusercontent.com/unitedstates/congress-legislators/master/legislators-current.yaml"
+    },
+    {
+      "title": "Biographical Directory of the United States Congress",
+      "url": "https://bioguide.congress.gov/search/bio/L000599"
+    }
+  ],
+  "lastVerifiedAt": "2026-04-29"
+}

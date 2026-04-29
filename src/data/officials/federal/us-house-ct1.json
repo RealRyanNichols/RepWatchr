@@ -1,0 +1,47 @@
+{
+  "id": "john-b-larson",
+  "name": "John B. Larson",
+  "firstName": "John",
+  "lastName": "Larson",
+  "photo": "/images/officials/federal/john-b-larson.jpg",
+  "photoSourceUrl": "https://unitedstates.github.io/images/congress/225x275/L000557.jpg",
+  "photoCredit": "UnitedStates project congressional image mirror",
+  "party": "D",
+  "level": "federal",
+  "position": "U.S. Representative",
+  "district": "CT-1",
+  "jurisdiction": "U.S. House of Representatives",
+  "county": [],
+  "termStart": "2025-01-03",
+  "termEnd": "2027-01-03",
+  "contactInfo": {
+    "office": "1501 Longworth House Office Building",
+    "phone": "202-225-2265",
+    "email": "https://larson.house.gov",
+    "website": "https://larson.house.gov"
+  },
+  "bio": "John B. Larson serves as the U.S. Representative for Connecticut's 1st Congressional District. This RepWatchr starter profile is source-seeded from current congressional roster data, official public links, and public congressional photo sources.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "CT",
+  "bioguideId": "L000557",
+  "sourceLinks": [
+    {
+      "title": "Official congressional website",
+      "url": "https://larson.house.gov"
+    },
+    {
+      "title": "Congress legislators current roster",
+      "url": "https://raw.githubusercontent.com/unitedstates/congress-legislators/master/legislators-current.yaml"
+    },
+    {
+      "title": "Biographical Directory of the United States Congress",
+      "url": "https://bioguide.congress.gov/search/bio/L000557"
+    },
+    {
+      "title": "Congressional photo source",
+      "url": "https://unitedstates.github.io/images/congress/225x275/L000557.jpg"
+    }
+  ],
+  "lastVerifiedAt": "2026-04-29"
+}

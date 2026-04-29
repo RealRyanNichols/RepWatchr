@@ -1,0 +1,47 @@
+{
+  "id": "roger-f-wicker",
+  "name": "Roger F. Wicker",
+  "firstName": "Roger",
+  "lastName": "Wicker",
+  "photo": "/images/officials/federal/roger-f-wicker.jpg",
+  "photoSourceUrl": "https://unitedstates.github.io/images/congress/225x275/W000437.jpg",
+  "photoCredit": "UnitedStates project congressional image mirror",
+  "party": "R",
+  "level": "federal",
+  "position": "U.S. Senator",
+  "district": "Mississippi",
+  "jurisdiction": "U.S. Senate",
+  "county": [],
+  "termStart": "2025-01-03",
+  "termEnd": "2031-01-03",
+  "contactInfo": {
+    "office": "425 Russell Senate Office Building",
+    "phone": "202-224-6253",
+    "email": "https://www.wicker.senate.gov/public/index.cfm/contact",
+    "website": "https://www.wicker.senate.gov"
+  },
+  "bio": "Roger F. Wicker serves as a U.S. Senator for Mississippi. This RepWatchr starter profile is source-seeded from current congressional roster data, official public links, and public congressional photo sources.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "MS",
+  "bioguideId": "W000437",
+  "sourceLinks": [
+    {
+      "title": "Official congressional website",
+      "url": "https://www.wicker.senate.gov"
+    },
+    {
+      "title": "Congress legislators current roster",
+      "url": "https://raw.githubusercontent.com/unitedstates/congress-legislators/master/legislators-current.yaml"
+    },
+    {
+      "title": "Biographical Directory of the United States Congress",
+      "url": "https://bioguide.congress.gov/search/bio/W000437"
+    },
+    {
+      "title": "Congressional photo source",
+      "url": "https://unitedstates.github.io/images/congress/225x275/W000437.jpg"
+    }
+  ],
+  "lastVerifiedAt": "2026-04-29"
+}

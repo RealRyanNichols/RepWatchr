@@ -1,0 +1,47 @@
+{
+  "id": "tammy-baldwin",
+  "name": "Tammy Baldwin",
+  "firstName": "Tammy",
+  "lastName": "Baldwin",
+  "photo": "/images/officials/federal/tammy-baldwin.jpg",
+  "photoSourceUrl": "https://unitedstates.github.io/images/congress/225x275/B001230.jpg",
+  "photoCredit": "UnitedStates project congressional image mirror",
+  "party": "D",
+  "level": "federal",
+  "position": "U.S. Senator",
+  "district": "Wisconsin",
+  "jurisdiction": "U.S. Senate",
+  "county": [],
+  "termStart": "2025-01-03",
+  "termEnd": "2031-01-03",
+  "contactInfo": {
+    "office": "141 Hart Senate Office Building",
+    "phone": "202-224-5653",
+    "email": "https://www.baldwin.senate.gov/feedback",
+    "website": "https://www.baldwin.senate.gov"
+  },
+  "bio": "Tammy Baldwin serves as a U.S. Senator for Wisconsin. This RepWatchr starter profile is source-seeded from current congressional roster data, official public links, and public congressional photo sources.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "WI",
+  "bioguideId": "B001230",
+  "sourceLinks": [
+    {
+      "title": "Official congressional website",
+      "url": "https://www.baldwin.senate.gov"
+    },
+    {
+      "title": "Congress legislators current roster",
+      "url": "https://raw.githubusercontent.com/unitedstates/congress-legislators/master/legislators-current.yaml"
+    },
+    {
+      "title": "Biographical Directory of the United States Congress",
+      "url": "https://bioguide.congress.gov/search/bio/B001230"
+    },
+    {
+      "title": "Congressional photo source",
+      "url": "https://unitedstates.github.io/images/congress/225x275/B001230.jpg"
+    }
+  ],
+  "lastVerifiedAt": "2026-04-29"
+}

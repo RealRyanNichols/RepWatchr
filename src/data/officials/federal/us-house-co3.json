@@ -1,0 +1,47 @@
+{
+  "id": "jeff-hurd",
+  "name": "Jeff Hurd",
+  "firstName": "Jeff",
+  "lastName": "Hurd",
+  "photo": "/images/officials/federal/jeff-hurd.webp",
+  "photoSourceUrl": "https://hurd.house.gov/sites/evo-subsites/hurd.house.gov/files/styles/large/public/evo-media-image/hurd.jpeg.webp?itok=JDA0LUlr",
+  "photoCredit": "Official congressional website image",
+  "party": "R",
+  "level": "federal",
+  "position": "U.S. Representative",
+  "district": "CO-3",
+  "jurisdiction": "U.S. House of Representatives",
+  "county": [],
+  "termStart": "2025-01-03",
+  "termEnd": "2027-01-03",
+  "contactInfo": {
+    "office": "1641 Longworth House Office Building",
+    "phone": "202-225-4676",
+    "email": "https://hurd.house.gov",
+    "website": "https://hurd.house.gov"
+  },
+  "bio": "Jeff Hurd serves as the U.S. Representative for Colorado's 3rd Congressional District. This RepWatchr starter profile is source-seeded from current congressional roster data, official public links, and public congressional photo sources.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "CO",
+  "bioguideId": "H001100",
+  "sourceLinks": [
+    {
+      "title": "Official congressional website",
+      "url": "https://hurd.house.gov"
+    },
+    {
+      "title": "Congress legislators current roster",
+      "url": "https://raw.githubusercontent.com/unitedstates/congress-legislators/master/legislators-current.yaml"
+    },
+    {
+      "title": "Biographical Directory of the United States Congress",
+      "url": "https://bioguide.congress.gov/search/bio/H001100"
+    },
+    {
+      "title": "Congressional photo source",
+      "url": "https://hurd.house.gov/sites/evo-subsites/hurd.house.gov/files/styles/large/public/evo-media-image/hurd.jpeg.webp?itok=JDA0LUlr"
+    }
+  ],
+  "lastVerifiedAt": "2026-04-29"
+}

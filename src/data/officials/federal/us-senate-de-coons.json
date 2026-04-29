@@ -1,0 +1,47 @@
+{
+  "id": "christopher-a-coons",
+  "name": "Christopher A. Coons",
+  "firstName": "Christopher",
+  "lastName": "Coons",
+  "photo": "/images/officials/federal/christopher-a-coons.jpg",
+  "photoSourceUrl": "https://unitedstates.github.io/images/congress/225x275/C001088.jpg",
+  "photoCredit": "UnitedStates project congressional image mirror",
+  "party": "D",
+  "level": "federal",
+  "position": "U.S. Senator",
+  "district": "Delaware",
+  "jurisdiction": "U.S. Senate",
+  "county": [],
+  "termStart": "2021-01-03",
+  "termEnd": "2027-01-03",
+  "contactInfo": {
+    "office": "218 Russell Senate Office Building",
+    "phone": "202-224-5042",
+    "email": "https://www.coons.senate.gov/contact",
+    "website": "https://www.coons.senate.gov"
+  },
+  "bio": "Christopher A. Coons serves as a U.S. Senator for Delaware. This RepWatchr starter profile is source-seeded from current congressional roster data, official public links, and public congressional photo sources.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "DE",
+  "bioguideId": "C001088",
+  "sourceLinks": [
+    {
+      "title": "Official congressional website",
+      "url": "https://www.coons.senate.gov"
+    },
+    {
+      "title": "Congress legislators current roster",
+      "url": "https://raw.githubusercontent.com/unitedstates/congress-legislators/master/legislators-current.yaml"
+    },
+    {
+      "title": "Biographical Directory of the United States Congress",
+      "url": "https://bioguide.congress.gov/search/bio/C001088"
+    },
+    {
+      "title": "Congressional photo source",
+      "url": "https://unitedstates.github.io/images/congress/225x275/C001088.jpg"
+    }
+  ],
+  "lastVerifiedAt": "2026-04-29"
+}

@@ -1,0 +1,47 @@
+{
+  "id": "john-r-curtis",
+  "name": "John R. Curtis",
+  "firstName": "John",
+  "lastName": "Curtis",
+  "photo": "/images/officials/federal/john-r-curtis.jpg",
+  "photoSourceUrl": "https://unitedstates.github.io/images/congress/225x275/C001114.jpg",
+  "photoCredit": "UnitedStates project congressional image mirror",
+  "party": "R",
+  "level": "federal",
+  "position": "U.S. Senator",
+  "district": "Utah",
+  "jurisdiction": "U.S. Senate",
+  "county": [],
+  "termStart": "2025-01-03",
+  "termEnd": "2031-01-03",
+  "contactInfo": {
+    "office": "502 Hart Senate Office Building",
+    "phone": "202-224-5251",
+    "email": "https://www.curtis.senate.gov",
+    "website": "https://www.curtis.senate.gov"
+  },
+  "bio": "John R. Curtis serves as a U.S. Senator for Utah. This RepWatchr starter profile is source-seeded from current congressional roster data, official public links, and public congressional photo sources.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "UT",
+  "bioguideId": "C001114",
+  "sourceLinks": [
+    {
+      "title": "Official congressional website",
+      "url": "https://www.curtis.senate.gov"
+    },
+    {
+      "title": "Congress legislators current roster",
+      "url": "https://raw.githubusercontent.com/unitedstates/congress-legislators/master/legislators-current.yaml"
+    },
+    {
+      "title": "Biographical Directory of the United States Congress",
+      "url": "https://bioguide.congress.gov/search/bio/C001114"
+    },
+    {
+      "title": "Congressional photo source",
+      "url": "https://unitedstates.github.io/images/congress/225x275/C001114.jpg"
+    }
+  ],
+  "lastVerifiedAt": "2026-04-29"
+}

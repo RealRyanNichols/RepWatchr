@@ -1,0 +1,47 @@
+{
+  "id": "lisa-blunt-rochester",
+  "name": "Lisa Blunt Rochester",
+  "firstName": "Lisa",
+  "lastName": "Blunt Rochester",
+  "photo": "/images/officials/federal/lisa-blunt-rochester.jpg",
+  "photoSourceUrl": "https://unitedstates.github.io/images/congress/225x275/B001303.jpg",
+  "photoCredit": "UnitedStates project congressional image mirror",
+  "party": "D",
+  "level": "federal",
+  "position": "U.S. Senator",
+  "district": "Delaware",
+  "jurisdiction": "U.S. Senate",
+  "county": [],
+  "termStart": "2025-01-03",
+  "termEnd": "2031-01-03",
+  "contactInfo": {
+    "office": "513 Hart Senate Office Building",
+    "phone": "202-224-2441",
+    "email": "https://www.bluntrochester.senate.gov",
+    "website": "https://www.bluntrochester.senate.gov"
+  },
+  "bio": "Lisa Blunt Rochester serves as a U.S. Senator for Delaware. This RepWatchr starter profile is source-seeded from current congressional roster data, official public links, and public congressional photo sources.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "DE",
+  "bioguideId": "B001303",
+  "sourceLinks": [
+    {
+      "title": "Official congressional website",
+      "url": "https://www.bluntrochester.senate.gov"
+    },
+    {
+      "title": "Congress legislators current roster",
+      "url": "https://raw.githubusercontent.com/unitedstates/congress-legislators/master/legislators-current.yaml"
+    },
+    {
+      "title": "Biographical Directory of the United States Congress",
+      "url": "https://bioguide.congress.gov/search/bio/B001303"
+    },
+    {
+      "title": "Congressional photo source",
+      "url": "https://unitedstates.github.io/images/congress/225x275/B001303.jpg"
+    }
+  ],
+  "lastVerifiedAt": "2026-04-29"
+}

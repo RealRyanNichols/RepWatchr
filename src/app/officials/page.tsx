@@ -62,7 +62,7 @@ export default async function OfficialsPage({
     {
       label: "Federal/state seats",
       value: formatNumber(dataStats.federalAndStateSeatProfilesLoaded),
-      detail: `${dataStats.federalProfilesLoaded}/${dataStats.federalExpectedSeats} Texas federal seats and ${dataStats.stateLegislatorProfilesLoaded}/${dataStats.stateLegislatureExpectedSeats} Texas legislative seats have person profile files.`,
+      detail: `${dataStats.federalProfilesLoaded}/${dataStats.federalExpectedSeats} current federal seats across all 50 states and ${dataStats.stateLegislatorProfilesLoaded}/${dataStats.stateLegislatureExpectedSeats} Texas legislative seats have person profile files.`,
     },
     {
       label: "Source-seeded profiles",
@@ -141,7 +141,7 @@ export default async function OfficialsPage({
                 Elected officials, source-backed.
               </h2>
               <p className="mt-3 max-w-3xl text-sm font-semibold leading-6 text-slate-700 sm:text-base">
-                RepWatchr is built for nationwide coverage. The national model is enabled for every state, D.C., territories, tribal governments, school boards, special districts, courts, and other public offices. Texas is the first loaded state; every other row stays marked queued or partial until public sources are attached.
+                RepWatchr is built for nationwide coverage. Federal senators and representatives are loaded for every state. Texas remains the first deeper state/local buildout while D.C., territories, tribal governments, school boards, special districts, courts, and other public offices stay marked queued or partial until public sources are attached.
               </p>
               <div className="mt-5 flex flex-wrap gap-2">
                 {Object.entries(levelLabels).map(([level, label]) => (

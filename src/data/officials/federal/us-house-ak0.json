@@ -1,0 +1,47 @@
+{
+  "id": "nicholas-j-begich-iii",
+  "name": "Nicholas J. Begich III",
+  "firstName": "Nicholas",
+  "lastName": "Begich",
+  "photo": "/images/officials/federal/nicholas-j-begich-iii.jpg",
+  "photoSourceUrl": "https://begich.house.gov/sites/evo-subsites/begich.house.gov/files/styles/evo_image_portrait_480/public/evo-media-image/2024-11-15_ike_-begich_nick_0003_re_web_0.jpg?itok=suQIfWuT",
+  "photoCredit": "Official congressional website image",
+  "party": "R",
+  "level": "federal",
+  "position": "U.S. Representative",
+  "district": "AK-0",
+  "jurisdiction": "U.S. House of Representatives",
+  "county": [],
+  "termStart": "2025-01-03",
+  "termEnd": "2027-01-03",
+  "contactInfo": {
+    "office": "153 Cannon House Office Building",
+    "phone": "202-225-5765",
+    "email": "https://begich.house.gov",
+    "website": "https://begich.house.gov"
+  },
+  "bio": "Nicholas J. Begich III serves as the U.S. Representative for Alaska's 0th Congressional District. This RepWatchr starter profile is source-seeded from current congressional roster data, official public links, and public congressional photo sources.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "AK",
+  "bioguideId": "B001323",
+  "sourceLinks": [
+    {
+      "title": "Official congressional website",
+      "url": "https://begich.house.gov"
+    },
+    {
+      "title": "Congress legislators current roster",
+      "url": "https://raw.githubusercontent.com/unitedstates/congress-legislators/master/legislators-current.yaml"
+    },
+    {
+      "title": "Biographical Directory of the United States Congress",
+      "url": "https://bioguide.congress.gov/search/bio/B001323"
+    },
+    {
+      "title": "Congressional photo source",
+      "url": "https://begich.house.gov/sites/evo-subsites/begich.house.gov/files/styles/evo_image_portrait_480/public/evo-media-image/2024-11-15_ike_-begich_nick_0003_re_web_0.jpg?itok=suQIfWuT"
+    }
+  ],
+  "lastVerifiedAt": "2026-04-29"
+}

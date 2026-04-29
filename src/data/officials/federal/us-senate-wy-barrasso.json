@@ -1,0 +1,47 @@
+{
+  "id": "john-barrasso",
+  "name": "John Barrasso",
+  "firstName": "John",
+  "lastName": "Barrasso",
+  "photo": "/images/officials/federal/john-barrasso.jpg",
+  "photoSourceUrl": "https://unitedstates.github.io/images/congress/225x275/B001261.jpg",
+  "photoCredit": "UnitedStates project congressional image mirror",
+  "party": "R",
+  "level": "federal",
+  "position": "U.S. Senator",
+  "district": "Wyoming",
+  "jurisdiction": "U.S. Senate",
+  "county": [],
+  "termStart": "2025-01-03",
+  "termEnd": "2031-01-03",
+  "contactInfo": {
+    "office": "307 Dirksen Senate Office Building",
+    "phone": "202-224-6441",
+    "email": "https://www.barrasso.senate.gov/public/index.cfm/contact-form",
+    "website": "https://www.barrasso.senate.gov"
+  },
+  "bio": "John Barrasso serves as a U.S. Senator for Wyoming. This RepWatchr starter profile is source-seeded from current congressional roster data, official public links, and public congressional photo sources.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "WY",
+  "bioguideId": "B001261",
+  "sourceLinks": [
+    {
+      "title": "Official congressional website",
+      "url": "https://www.barrasso.senate.gov"
+    },
+    {
+      "title": "Congress legislators current roster",
+      "url": "https://raw.githubusercontent.com/unitedstates/congress-legislators/master/legislators-current.yaml"
+    },
+    {
+      "title": "Biographical Directory of the United States Congress",
+      "url": "https://bioguide.congress.gov/search/bio/B001261"
+    },
+    {
+      "title": "Congressional photo source",
+      "url": "https://unitedstates.github.io/images/congress/225x275/B001261.jpg"
+    }
+  ],
+  "lastVerifiedAt": "2026-04-29"
+}

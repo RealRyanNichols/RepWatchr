@@ -1,0 +1,40 @@
+{
+  "id": "anna-paulina-luna",
+  "name": "Anna Paulina Luna",
+  "firstName": "Anna",
+  "lastName": "Luna",
+  "party": "R",
+  "level": "federal",
+  "position": "U.S. Representative",
+  "district": "FL-13",
+  "jurisdiction": "U.S. House of Representatives",
+  "county": [],
+  "termStart": "2025-01-03",
+  "termEnd": "2027-01-03",
+  "contactInfo": {
+    "office": "226 Cannon House Office Building",
+    "phone": "202-225-5961",
+    "email": "https://luna.house.gov",
+    "website": "https://luna.house.gov"
+  },
+  "bio": "Anna Paulina Luna serves as the U.S. Representative for Florida's 13th Congressional District. This RepWatchr starter profile is source-seeded from current congressional roster data, official public links, and public congressional photo sources.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "FL",
+  "bioguideId": "L000596",
+  "sourceLinks": [
+    {
+      "title": "Official congressional website",
+      "url": "https://luna.house.gov"
+    },
+    {
+      "title": "Congress legislators current roster",
+      "url": "https://raw.githubusercontent.com/unitedstates/congress-legislators/master/legislators-current.yaml"
+    },
+    {
+      "title": "Biographical Directory of the United States Congress",
+      "url": "https://bioguide.congress.gov/search/bio/L000596"
+    }
+  ],
+  "lastVerifiedAt": "2026-04-29"
+}

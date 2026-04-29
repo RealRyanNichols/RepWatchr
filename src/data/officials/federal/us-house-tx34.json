@@ -11,9 +11,7 @@
   "position": "U.S. Representative",
   "district": "TX-34",
   "jurisdiction": "U.S. House of Representatives",
-  "county": [
-    "Texas"
-  ],
+  "county": [],
   "termStart": "2025-01-03",
   "termEnd": "2027-01-03",
   "contactInfo": {
@@ -22,7 +20,7 @@
     "email": "https://gonzalez.house.gov",
     "website": "https://gonzalez.house.gov"
   },
-  "bio": "Vicente Gonzalez serves as the U.S. Representative for Texas's 34th Congressional District. This RepWatchr starter profile is sourced from the official congressional record data and public profile links.",
+  "bio": "Vicente Gonzalez serves as the U.S. Representative for Texas's 34th Congressional District. This RepWatchr starter profile is source-seeded from current congressional roster data, official public links, and public congressional photo sources.",
   "campaignPromises": [],
   "reviewStatus": "source_seeded",
   "state": "TX",
@@ -37,9 +35,13 @@
       "url": "https://raw.githubusercontent.com/unitedstates/congress-legislators/master/legislators-current.yaml"
     },
     {
+      "title": "Biographical Directory of the United States Congress",
+      "url": "https://bioguide.congress.gov/search/bio/G000581"
+    },
+    {
       "title": "Congressional photo source",
       "url": "https://unitedstates.github.io/images/congress/225x275/G000581.jpg"
     }
   ],
-  "lastVerifiedAt": "2026-04-27"
+  "lastVerifiedAt": "2026-04-29"
 }

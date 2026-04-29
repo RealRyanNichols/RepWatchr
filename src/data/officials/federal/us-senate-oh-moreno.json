@@ -1,0 +1,40 @@
+{
+  "id": "bernie-moreno",
+  "name": "Bernie Moreno",
+  "firstName": "Bernie",
+  "lastName": "Moreno",
+  "party": "R",
+  "level": "federal",
+  "position": "U.S. Senator",
+  "district": "Ohio",
+  "jurisdiction": "U.S. Senate",
+  "county": [],
+  "termStart": "2025-01-03",
+  "termEnd": "2031-01-03",
+  "contactInfo": {
+    "office": "284 Russell Senate Office Building",
+    "phone": "202-224-2315",
+    "email": "https://www.moreno.senate.gov",
+    "website": "https://www.moreno.senate.gov"
+  },
+  "bio": "Bernie Moreno serves as a U.S. Senator for Ohio. This RepWatchr starter profile is source-seeded from current congressional roster data, official public links, and public congressional photo sources.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "OH",
+  "bioguideId": "M001242",
+  "sourceLinks": [
+    {
+      "title": "Official congressional website",
+      "url": "https://www.moreno.senate.gov"
+    },
+    {
+      "title": "Congress legislators current roster",
+      "url": "https://raw.githubusercontent.com/unitedstates/congress-legislators/master/legislators-current.yaml"
+    },
+    {
+      "title": "Biographical Directory of the United States Congress",
+      "url": "https://bioguide.congress.gov/search/bio/M001242"
+    }
+  ],
+  "lastVerifiedAt": "2026-04-29"
+}

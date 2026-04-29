@@ -1,0 +1,47 @@
+{
+  "id": "ron-johnson",
+  "name": "Ron Johnson",
+  "firstName": "Ron",
+  "lastName": "Johnson",
+  "photo": "/images/officials/federal/ron-johnson.jpg",
+  "photoSourceUrl": "https://unitedstates.github.io/images/congress/225x275/J000293.jpg",
+  "photoCredit": "UnitedStates project congressional image mirror",
+  "party": "R",
+  "level": "federal",
+  "position": "U.S. Senator",
+  "district": "Wisconsin",
+  "jurisdiction": "U.S. Senate",
+  "county": [],
+  "termStart": "2023-01-03",
+  "termEnd": "2029-01-03",
+  "contactInfo": {
+    "office": "328 Hart Senate Office Building",
+    "phone": "202-224-5323",
+    "email": "https://www.ronjohnson.senate.gov/public/index.cfm/email-the-senator",
+    "website": "https://www.ronjohnson.senate.gov"
+  },
+  "bio": "Ron Johnson serves as a U.S. Senator for Wisconsin. This RepWatchr starter profile is source-seeded from current congressional roster data, official public links, and public congressional photo sources.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "WI",
+  "bioguideId": "J000293",
+  "sourceLinks": [
+    {
+      "title": "Official congressional website",
+      "url": "https://www.ronjohnson.senate.gov"
+    },
+    {
+      "title": "Congress legislators current roster",
+      "url": "https://raw.githubusercontent.com/unitedstates/congress-legislators/master/legislators-current.yaml"
+    },
+    {
+      "title": "Biographical Directory of the United States Congress",
+      "url": "https://bioguide.congress.gov/search/bio/J000293"
+    },
+    {
+      "title": "Congressional photo source",
+      "url": "https://unitedstates.github.io/images/congress/225x275/J000293.jpg"
+    }
+  ],
+  "lastVerifiedAt": "2026-04-29"
+}

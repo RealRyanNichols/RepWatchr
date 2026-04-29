@@ -1,0 +1,47 @@
+{
+  "id": "laura-gillen",
+  "name": "Laura Gillen",
+  "firstName": "Laura",
+  "lastName": "Gillen",
+  "photo": "/images/officials/federal/laura-gillen.webp",
+  "photoSourceUrl": "https://gillen.house.gov/sites/evo-subsites/gillen.house.gov/files/styles/large/public/evo-media-image/2024-11-19_ike_gillen_laura_0017_re_select.jpg.webp?itok=eP07W-Dy",
+  "photoCredit": "Official congressional website image",
+  "party": "D",
+  "level": "federal",
+  "position": "U.S. Representative",
+  "district": "NY-4",
+  "jurisdiction": "U.S. House of Representatives",
+  "county": [],
+  "termStart": "2025-01-03",
+  "termEnd": "2027-01-03",
+  "contactInfo": {
+    "office": "428 Cannon House Office Building",
+    "phone": "202-225-5516",
+    "email": "https://gillen.house.gov",
+    "website": "https://gillen.house.gov"
+  },
+  "bio": "Laura Gillen serves as the U.S. Representative for New York's 4th Congressional District. This RepWatchr starter profile is source-seeded from current congressional roster data, official public links, and public congressional photo sources.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "NY",
+  "bioguideId": "G000602",
+  "sourceLinks": [
+    {
+      "title": "Official congressional website",
+      "url": "https://gillen.house.gov"
+    },
+    {
+      "title": "Congress legislators current roster",
+      "url": "https://raw.githubusercontent.com/unitedstates/congress-legislators/master/legislators-current.yaml"
+    },
+    {
+      "title": "Biographical Directory of the United States Congress",
+      "url": "https://bioguide.congress.gov/search/bio/G000602"
+    },
+    {
+      "title": "Congressional photo source",
+      "url": "https://gillen.house.gov/sites/evo-subsites/gillen.house.gov/files/styles/large/public/evo-media-image/2024-11-19_ike_gillen_laura_0017_re_select.jpg.webp?itok=eP07W-Dy"
+    }
+  ],
+  "lastVerifiedAt": "2026-04-29"
+}

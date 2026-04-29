@@ -1,0 +1,47 @@
+{
+  "id": "maria-cantwell",
+  "name": "Maria Cantwell",
+  "firstName": "Maria",
+  "lastName": "Cantwell",
+  "photo": "/images/officials/federal/maria-cantwell.jpg",
+  "photoSourceUrl": "https://unitedstates.github.io/images/congress/225x275/C000127.jpg",
+  "photoCredit": "UnitedStates project congressional image mirror",
+  "party": "D",
+  "level": "federal",
+  "position": "U.S. Senator",
+  "district": "Washington",
+  "jurisdiction": "U.S. Senate",
+  "county": [],
+  "termStart": "2025-01-03",
+  "termEnd": "2031-01-03",
+  "contactInfo": {
+    "office": "511 Hart Senate Office Building",
+    "phone": "202-224-3441",
+    "email": "https://www.cantwell.senate.gov/public/index.cfm/email-maria",
+    "website": "https://www.cantwell.senate.gov"
+  },
+  "bio": "Maria Cantwell serves as a U.S. Senator for Washington. This RepWatchr starter profile is source-seeded from current congressional roster data, official public links, and public congressional photo sources.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "WA",
+  "bioguideId": "C000127",
+  "sourceLinks": [
+    {
+      "title": "Official congressional website",
+      "url": "https://www.cantwell.senate.gov"
+    },
+    {
+      "title": "Congress legislators current roster",
+      "url": "https://raw.githubusercontent.com/unitedstates/congress-legislators/master/legislators-current.yaml"
+    },
+    {
+      "title": "Biographical Directory of the United States Congress",
+      "url": "https://bioguide.congress.gov/search/bio/C000127"
+    },
+    {
+      "title": "Congressional photo source",
+      "url": "https://unitedstates.github.io/images/congress/225x275/C000127.jpg"
+    }
+  ],
+  "lastVerifiedAt": "2026-04-29"
+}

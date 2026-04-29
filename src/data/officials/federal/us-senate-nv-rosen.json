@@ -1,0 +1,47 @@
+{
+  "id": "jacky-rosen",
+  "name": "Jacky Rosen",
+  "firstName": "Jacky",
+  "lastName": "Rosen",
+  "photo": "/images/officials/federal/jacky-rosen.jpg",
+  "photoSourceUrl": "https://unitedstates.github.io/images/congress/225x275/R000608.jpg",
+  "photoCredit": "UnitedStates project congressional image mirror",
+  "party": "D",
+  "level": "federal",
+  "position": "U.S. Senator",
+  "district": "Nevada",
+  "jurisdiction": "U.S. Senate",
+  "county": [],
+  "termStart": "2025-01-03",
+  "termEnd": "2031-01-03",
+  "contactInfo": {
+    "office": "713 Hart Senate Office Building",
+    "phone": "202-224-6244",
+    "email": "https://www.rosen.senate.gov/contact_jacky",
+    "website": "https://www.rosen.senate.gov"
+  },
+  "bio": "Jacky Rosen serves as a U.S. Senator for Nevada. This RepWatchr starter profile is source-seeded from current congressional roster data, official public links, and public congressional photo sources.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "NV",
+  "bioguideId": "R000608",
+  "sourceLinks": [
+    {
+      "title": "Official congressional website",
+      "url": "https://www.rosen.senate.gov"
+    },
+    {
+      "title": "Congress legislators current roster",
+      "url": "https://raw.githubusercontent.com/unitedstates/congress-legislators/master/legislators-current.yaml"
+    },
+    {
+      "title": "Biographical Directory of the United States Congress",
+      "url": "https://bioguide.congress.gov/search/bio/R000608"
+    },
+    {
+      "title": "Congressional photo source",
+      "url": "https://unitedstates.github.io/images/congress/225x275/R000608.jpg"
+    }
+  ],
+  "lastVerifiedAt": "2026-04-29"
+}

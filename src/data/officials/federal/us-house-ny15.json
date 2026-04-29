@@ -1,0 +1,47 @@
+{
+  "id": "ritchie-torres",
+  "name": "Ritchie Torres",
+  "firstName": "Ritchie",
+  "lastName": "Torres",
+  "photo": "/images/officials/federal/ritchie-torres.jpg",
+  "photoSourceUrl": "https://unitedstates.github.io/images/congress/225x275/T000486.jpg",
+  "photoCredit": "UnitedStates project congressional image mirror",
+  "party": "D",
+  "level": "federal",
+  "position": "U.S. Representative",
+  "district": "NY-15",
+  "jurisdiction": "U.S. House of Representatives",
+  "county": [],
+  "termStart": "2025-01-03",
+  "termEnd": "2027-01-03",
+  "contactInfo": {
+    "office": "1414 Longworth House Office Building",
+    "phone": "202-225-4361",
+    "email": "https://ritchietorres.house.gov",
+    "website": "https://ritchietorres.house.gov"
+  },
+  "bio": "Ritchie Torres serves as the U.S. Representative for New York's 15th Congressional District. This RepWatchr starter profile is source-seeded from current congressional roster data, official public links, and public congressional photo sources.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "NY",
+  "bioguideId": "T000486",
+  "sourceLinks": [
+    {
+      "title": "Official congressional website",
+      "url": "https://ritchietorres.house.gov"
+    },
+    {
+      "title": "Congress legislators current roster",
+      "url": "https://raw.githubusercontent.com/unitedstates/congress-legislators/master/legislators-current.yaml"
+    },
+    {
+      "title": "Biographical Directory of the United States Congress",
+      "url": "https://bioguide.congress.gov/search/bio/T000486"
+    },
+    {
+      "title": "Congressional photo source",
+      "url": "https://unitedstates.github.io/images/congress/225x275/T000486.jpg"
+    }
+  ],
+  "lastVerifiedAt": "2026-04-29"
+}

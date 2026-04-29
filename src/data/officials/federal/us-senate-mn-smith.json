@@ -1,0 +1,47 @@
+{
+  "id": "tina-smith",
+  "name": "Tina Smith",
+  "firstName": "Tina",
+  "lastName": "Smith",
+  "photo": "/images/officials/federal/tina-smith.jpg",
+  "photoSourceUrl": "https://unitedstates.github.io/images/congress/225x275/S001203.jpg",
+  "photoCredit": "UnitedStates project congressional image mirror",
+  "party": "D",
+  "level": "federal",
+  "position": "U.S. Senator",
+  "district": "Minnesota",
+  "jurisdiction": "U.S. Senate",
+  "county": [],
+  "termStart": "2021-01-03",
+  "termEnd": "2027-01-03",
+  "contactInfo": {
+    "office": "720 Hart Senate Office Building",
+    "phone": "202-224-5641",
+    "email": "https://www.smith.senate.gov/share-your-opinion/",
+    "website": "https://www.smith.senate.gov"
+  },
+  "bio": "Tina Smith serves as a U.S. Senator for Minnesota. This RepWatchr starter profile is source-seeded from current congressional roster data, official public links, and public congressional photo sources.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "MN",
+  "bioguideId": "S001203",
+  "sourceLinks": [
+    {
+      "title": "Official congressional website",
+      "url": "https://www.smith.senate.gov"
+    },
+    {
+      "title": "Congress legislators current roster",
+      "url": "https://raw.githubusercontent.com/unitedstates/congress-legislators/master/legislators-current.yaml"
+    },
+    {
+      "title": "Biographical Directory of the United States Congress",
+      "url": "https://bioguide.congress.gov/search/bio/S001203"
+    },
+    {
+      "title": "Congressional photo source",
+      "url": "https://unitedstates.github.io/images/congress/225x275/S001203.jpg"
+    }
+  ],
+  "lastVerifiedAt": "2026-04-29"
+}

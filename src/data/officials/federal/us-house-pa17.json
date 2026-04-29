@@ -1,0 +1,47 @@
+{
+  "id": "christopher-r-deluzio",
+  "name": "Christopher R. Deluzio",
+  "firstName": "Chris",
+  "lastName": "Deluzio",
+  "photo": "/images/officials/federal/christopher-r-deluzio.jpg",
+  "photoSourceUrl": "https://unitedstates.github.io/images/congress/225x275/D000530.jpg",
+  "photoCredit": "UnitedStates project congressional image mirror",
+  "party": "D",
+  "level": "federal",
+  "position": "U.S. Representative",
+  "district": "PA-17",
+  "jurisdiction": "U.S. House of Representatives",
+  "county": [],
+  "termStart": "2025-01-03",
+  "termEnd": "2027-01-03",
+  "contactInfo": {
+    "office": "1222 Longworth House Office Building",
+    "phone": "202-225-2301",
+    "email": "https://deluzio.house.gov",
+    "website": "https://deluzio.house.gov"
+  },
+  "bio": "Christopher R. Deluzio serves as the U.S. Representative for Pennsylvania's 17th Congressional District. This RepWatchr starter profile is source-seeded from current congressional roster data, official public links, and public congressional photo sources.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "PA",
+  "bioguideId": "D000530",
+  "sourceLinks": [
+    {
+      "title": "Official congressional website",
+      "url": "https://deluzio.house.gov"
+    },
+    {
+      "title": "Congress legislators current roster",
+      "url": "https://raw.githubusercontent.com/unitedstates/congress-legislators/master/legislators-current.yaml"
+    },
+    {
+      "title": "Biographical Directory of the United States Congress",
+      "url": "https://bioguide.congress.gov/search/bio/D000530"
+    },
+    {
+      "title": "Congressional photo source",
+      "url": "https://unitedstates.github.io/images/congress/225x275/D000530.jpg"
+    }
+  ],
+  "lastVerifiedAt": "2026-04-29"
+}

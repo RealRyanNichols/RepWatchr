@@ -1,0 +1,47 @@
+{
+  "id": "ann-wagner",
+  "name": "Ann Wagner",
+  "firstName": "Ann",
+  "lastName": "Wagner",
+  "photo": "/images/officials/federal/ann-wagner.jpg",
+  "photoSourceUrl": "https://unitedstates.github.io/images/congress/225x275/W000812.jpg",
+  "photoCredit": "UnitedStates project congressional image mirror",
+  "party": "R",
+  "level": "federal",
+  "position": "U.S. Representative",
+  "district": "MO-2",
+  "jurisdiction": "U.S. House of Representatives",
+  "county": [],
+  "termStart": "2025-01-03",
+  "termEnd": "2027-01-03",
+  "contactInfo": {
+    "office": "2350 Rayburn House Office Building",
+    "phone": "202-225-1621",
+    "email": "https://wagner.house.gov",
+    "website": "https://wagner.house.gov"
+  },
+  "bio": "Ann Wagner serves as the U.S. Representative for Missouri's 2nd Congressional District. This RepWatchr starter profile is source-seeded from current congressional roster data, official public links, and public congressional photo sources.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "MO",
+  "bioguideId": "W000812",
+  "sourceLinks": [
+    {
+      "title": "Official congressional website",
+      "url": "https://wagner.house.gov"
+    },
+    {
+      "title": "Congress legislators current roster",
+      "url": "https://raw.githubusercontent.com/unitedstates/congress-legislators/master/legislators-current.yaml"
+    },
+    {
+      "title": "Biographical Directory of the United States Congress",
+      "url": "https://bioguide.congress.gov/search/bio/W000812"
+    },
+    {
+      "title": "Congressional photo source",
+      "url": "https://unitedstates.github.io/images/congress/225x275/W000812.jpg"
+    }
+  ],
+  "lastVerifiedAt": "2026-04-29"
+}

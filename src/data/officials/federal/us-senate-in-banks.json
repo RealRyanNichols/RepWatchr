@@ -1,0 +1,47 @@
+{
+  "id": "jim-banks",
+  "name": "Jim Banks",
+  "firstName": "Jim",
+  "lastName": "Banks",
+  "photo": "/images/officials/federal/jim-banks.jpg",
+  "photoSourceUrl": "https://unitedstates.github.io/images/congress/225x275/B001299.jpg",
+  "photoCredit": "UnitedStates project congressional image mirror",
+  "party": "R",
+  "level": "federal",
+  "position": "U.S. Senator",
+  "district": "Indiana",
+  "jurisdiction": "U.S. Senate",
+  "county": [],
+  "termStart": "2025-01-03",
+  "termEnd": "2031-01-03",
+  "contactInfo": {
+    "office": "303 Hart Senate Office Building",
+    "phone": "202-224-4814",
+    "email": "https://www.banks.senate.gov",
+    "website": "https://www.banks.senate.gov"
+  },
+  "bio": "Jim Banks serves as a U.S. Senator for Indiana. This RepWatchr starter profile is source-seeded from current congressional roster data, official public links, and public congressional photo sources.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "IN",
+  "bioguideId": "B001299",
+  "sourceLinks": [
+    {
+      "title": "Official congressional website",
+      "url": "https://www.banks.senate.gov"
+    },
+    {
+      "title": "Congress legislators current roster",
+      "url": "https://raw.githubusercontent.com/unitedstates/congress-legislators/master/legislators-current.yaml"
+    },
+    {
+      "title": "Biographical Directory of the United States Congress",
+      "url": "https://bioguide.congress.gov/search/bio/B001299"
+    },
+    {
+      "title": "Congressional photo source",
+      "url": "https://unitedstates.github.io/images/congress/225x275/B001299.jpg"
+    }
+  ],
+  "lastVerifiedAt": "2026-04-29"
+}

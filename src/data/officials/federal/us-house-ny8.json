@@ -1,0 +1,47 @@
+{
+  "id": "hakeem-s-jeffries",
+  "name": "Hakeem S. Jeffries",
+  "firstName": "Hakeem",
+  "lastName": "Jeffries",
+  "photo": "/images/officials/federal/hakeem-s-jeffries.jpg",
+  "photoSourceUrl": "https://unitedstates.github.io/images/congress/225x275/J000294.jpg",
+  "photoCredit": "UnitedStates project congressional image mirror",
+  "party": "D",
+  "level": "federal",
+  "position": "U.S. Representative",
+  "district": "NY-8",
+  "jurisdiction": "U.S. House of Representatives",
+  "county": [],
+  "termStart": "2025-01-03",
+  "termEnd": "2027-01-03",
+  "contactInfo": {
+    "office": "2267 Rayburn House Office Building",
+    "phone": "202-225-5936",
+    "email": "https://jeffries.house.gov",
+    "website": "https://jeffries.house.gov"
+  },
+  "bio": "Hakeem S. Jeffries serves as the U.S. Representative for New York's 8th Congressional District. This RepWatchr starter profile is source-seeded from current congressional roster data, official public links, and public congressional photo sources.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "NY",
+  "bioguideId": "J000294",
+  "sourceLinks": [
+    {
+      "title": "Official congressional website",
+      "url": "https://jeffries.house.gov"
+    },
+    {
+      "title": "Congress legislators current roster",
+      "url": "https://raw.githubusercontent.com/unitedstates/congress-legislators/master/legislators-current.yaml"
+    },
+    {
+      "title": "Biographical Directory of the United States Congress",
+      "url": "https://bioguide.congress.gov/search/bio/J000294"
+    },
+    {
+      "title": "Congressional photo source",
+      "url": "https://unitedstates.github.io/images/congress/225x275/J000294.jpg"
+    }
+  ],
+  "lastVerifiedAt": "2026-04-29"
+}

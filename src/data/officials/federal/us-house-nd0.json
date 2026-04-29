@@ -1,0 +1,47 @@
+{
+  "id": "julie-fedorchak",
+  "name": "Julie Fedorchak",
+  "firstName": "Julie",
+  "lastName": "Fedorchak",
+  "photo": "/images/officials/federal/julie-fedorchak.jpg",
+  "photoSourceUrl": "https://fedorchak.house.gov/sites/evo-subsites/fedorchak.house.gov/files/styles/evo_image_portrait_480/public/evo-media-image/2024-11-18_ike_fedorchak_julie_0040_re_web_0.jpg?itok=vwRZ3qWB",
+  "photoCredit": "Official congressional website image",
+  "party": "R",
+  "level": "federal",
+  "position": "U.S. Representative",
+  "district": "ND-0",
+  "jurisdiction": "U.S. House of Representatives",
+  "county": [],
+  "termStart": "2025-01-03",
+  "termEnd": "2027-01-03",
+  "contactInfo": {
+    "office": "1607 Longworth House Office Building",
+    "phone": "202-225-2611",
+    "email": "https://fedorchak.house.gov",
+    "website": "https://fedorchak.house.gov"
+  },
+  "bio": "Julie Fedorchak serves as the U.S. Representative for North Dakota's 0th Congressional District. This RepWatchr starter profile is source-seeded from current congressional roster data, official public links, and public congressional photo sources.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "ND",
+  "bioguideId": "F000482",
+  "sourceLinks": [
+    {
+      "title": "Official congressional website",
+      "url": "https://fedorchak.house.gov"
+    },
+    {
+      "title": "Congress legislators current roster",
+      "url": "https://raw.githubusercontent.com/unitedstates/congress-legislators/master/legislators-current.yaml"
+    },
+    {
+      "title": "Biographical Directory of the United States Congress",
+      "url": "https://bioguide.congress.gov/search/bio/F000482"
+    },
+    {
+      "title": "Congressional photo source",
+      "url": "https://fedorchak.house.gov/sites/evo-subsites/fedorchak.house.gov/files/styles/evo_image_portrait_480/public/evo-media-image/2024-11-18_ike_fedorchak_julie_0040_re_web_0.jpg?itok=vwRZ3qWB"
+    }
+  ],
+  "lastVerifiedAt": "2026-04-29"
+}

@@ -1,0 +1,47 @@
+{
+  "id": "elizabeth-warren",
+  "name": "Elizabeth Warren",
+  "firstName": "Elizabeth",
+  "lastName": "Warren",
+  "photo": "/images/officials/federal/elizabeth-warren.jpg",
+  "photoSourceUrl": "https://unitedstates.github.io/images/congress/225x275/W000817.jpg",
+  "photoCredit": "UnitedStates project congressional image mirror",
+  "party": "D",
+  "level": "federal",
+  "position": "U.S. Senator",
+  "district": "Massachusetts",
+  "jurisdiction": "U.S. Senate",
+  "county": [],
+  "termStart": "2025-01-03",
+  "termEnd": "2031-01-03",
+  "contactInfo": {
+    "office": "311 Hart Senate Office Building",
+    "phone": "202-224-4543",
+    "email": "https://www.warren.senate.gov/?p=email_senator",
+    "website": "https://www.warren.senate.gov"
+  },
+  "bio": "Elizabeth Warren serves as a U.S. Senator for Massachusetts. This RepWatchr starter profile is source-seeded from current congressional roster data, official public links, and public congressional photo sources.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "MA",
+  "bioguideId": "W000817",
+  "sourceLinks": [
+    {
+      "title": "Official congressional website",
+      "url": "https://www.warren.senate.gov"
+    },
+    {
+      "title": "Congress legislators current roster",
+      "url": "https://raw.githubusercontent.com/unitedstates/congress-legislators/master/legislators-current.yaml"
+    },
+    {
+      "title": "Biographical Directory of the United States Congress",
+      "url": "https://bioguide.congress.gov/search/bio/W000817"
+    },
+    {
+      "title": "Congressional photo source",
+      "url": "https://unitedstates.github.io/images/congress/225x275/W000817.jpg"
+    }
+  ],
+  "lastVerifiedAt": "2026-04-29"
+}

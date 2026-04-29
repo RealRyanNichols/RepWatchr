@@ -1,0 +1,47 @@
+{
+  "id": "jennifer-l-mcclellan",
+  "name": "Jennifer L. McClellan",
+  "firstName": "Jennifer",
+  "lastName": "McClellan",
+  "photo": "/images/officials/federal/jennifer-l-mcclellan.jpg",
+  "photoSourceUrl": "https://unitedstates.github.io/images/congress/225x275/M001227.jpg",
+  "photoCredit": "UnitedStates project congressional image mirror",
+  "party": "D",
+  "level": "federal",
+  "position": "U.S. Representative",
+  "district": "VA-4",
+  "jurisdiction": "U.S. House of Representatives",
+  "county": [],
+  "termStart": "2025-01-03",
+  "termEnd": "2027-01-03",
+  "contactInfo": {
+    "office": "1628 Longworth House Office Building",
+    "phone": "202-225-6365",
+    "email": "https://mcclellan.house.gov",
+    "website": "https://mcclellan.house.gov"
+  },
+  "bio": "Jennifer L. McClellan serves as the U.S. Representative for Virginia's 4th Congressional District. This RepWatchr starter profile is source-seeded from current congressional roster data, official public links, and public congressional photo sources.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "VA",
+  "bioguideId": "M001227",
+  "sourceLinks": [
+    {
+      "title": "Official congressional website",
+      "url": "https://mcclellan.house.gov"
+    },
+    {
+      "title": "Congress legislators current roster",
+      "url": "https://raw.githubusercontent.com/unitedstates/congress-legislators/master/legislators-current.yaml"
+    },
+    {
+      "title": "Biographical Directory of the United States Congress",
+      "url": "https://bioguide.congress.gov/search/bio/M001227"
+    },
+    {
+      "title": "Congressional photo source",
+      "url": "https://unitedstates.github.io/images/congress/225x275/M001227.jpg"
+    }
+  ],
+  "lastVerifiedAt": "2026-04-29"
+}

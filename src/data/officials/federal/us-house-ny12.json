@@ -1,0 +1,47 @@
+{
+  "id": "jerrold-nadler",
+  "name": "Jerrold Nadler",
+  "firstName": "Jerrold",
+  "lastName": "Nadler",
+  "photo": "/images/officials/federal/jerrold-nadler.jpg",
+  "photoSourceUrl": "https://unitedstates.github.io/images/congress/225x275/N000002.jpg",
+  "photoCredit": "UnitedStates project congressional image mirror",
+  "party": "D",
+  "level": "federal",
+  "position": "U.S. Representative",
+  "district": "NY-12",
+  "jurisdiction": "U.S. House of Representatives",
+  "county": [],
+  "termStart": "2025-01-03",
+  "termEnd": "2027-01-03",
+  "contactInfo": {
+    "office": "2132 Rayburn House Office Building",
+    "phone": "202-225-5635",
+    "email": "https://nadler.house.gov",
+    "website": "https://nadler.house.gov"
+  },
+  "bio": "Jerrold Nadler serves as the U.S. Representative for New York's 12th Congressional District. This RepWatchr starter profile is source-seeded from current congressional roster data, official public links, and public congressional photo sources.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "NY",
+  "bioguideId": "N000002",
+  "sourceLinks": [
+    {
+      "title": "Official congressional website",
+      "url": "https://nadler.house.gov"
+    },
+    {
+      "title": "Congress legislators current roster",
+      "url": "https://raw.githubusercontent.com/unitedstates/congress-legislators/master/legislators-current.yaml"
+    },
+    {
+      "title": "Biographical Directory of the United States Congress",
+      "url": "https://bioguide.congress.gov/search/bio/N000002"
+    },
+    {
+      "title": "Congressional photo source",
+      "url": "https://unitedstates.github.io/images/congress/225x275/N000002.jpg"
+    }
+  ],
+  "lastVerifiedAt": "2026-04-29"
+}

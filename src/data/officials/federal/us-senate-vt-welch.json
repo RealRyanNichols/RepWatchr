@@ -1,0 +1,47 @@
+{
+  "id": "peter-welch",
+  "name": "Peter Welch",
+  "firstName": "Peter",
+  "lastName": "Welch",
+  "photo": "/images/officials/federal/peter-welch.jpg",
+  "photoSourceUrl": "https://unitedstates.github.io/images/congress/225x275/W000800.jpg",
+  "photoCredit": "UnitedStates project congressional image mirror",
+  "party": "D",
+  "level": "federal",
+  "position": "U.S. Senator",
+  "district": "Vermont",
+  "jurisdiction": "U.S. Senate",
+  "county": [],
+  "termStart": "2023-01-03",
+  "termEnd": "2029-01-03",
+  "contactInfo": {
+    "office": "115 Russell Senate Office Building",
+    "phone": "202-224-4242",
+    "email": "https://www.welch.senate.gov/email-peter/",
+    "website": "https://www.welch.senate.gov"
+  },
+  "bio": "Peter Welch serves as a U.S. Senator for Vermont. This RepWatchr starter profile is source-seeded from current congressional roster data, official public links, and public congressional photo sources.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "VT",
+  "bioguideId": "W000800",
+  "sourceLinks": [
+    {
+      "title": "Official congressional website",
+      "url": "https://www.welch.senate.gov"
+    },
+    {
+      "title": "Congress legislators current roster",
+      "url": "https://raw.githubusercontent.com/unitedstates/congress-legislators/master/legislators-current.yaml"
+    },
+    {
+      "title": "Biographical Directory of the United States Congress",
+      "url": "https://bioguide.congress.gov/search/bio/W000800"
+    },
+    {
+      "title": "Congressional photo source",
+      "url": "https://unitedstates.github.io/images/congress/225x275/W000800.jpg"
+    }
+  ],
+  "lastVerifiedAt": "2026-04-29"
+}

@@ -1,0 +1,47 @@
+{
+  "id": "troy-a-carter",
+  "name": "Troy A. Carter",
+  "firstName": "Troy",
+  "lastName": "Carter",
+  "photo": "/images/officials/federal/troy-a-carter.jpg",
+  "photoSourceUrl": "https://unitedstates.github.io/images/congress/225x275/C001125.jpg",
+  "photoCredit": "UnitedStates project congressional image mirror",
+  "party": "D",
+  "level": "federal",
+  "position": "U.S. Representative",
+  "district": "LA-2",
+  "jurisdiction": "U.S. House of Representatives",
+  "county": [],
+  "termStart": "2025-01-03",
+  "termEnd": "2027-01-03",
+  "contactInfo": {
+    "office": "442 Cannon House Office Building",
+    "phone": "202-225-6636",
+    "email": "https://troycarter.house.gov",
+    "website": "https://troycarter.house.gov"
+  },
+  "bio": "Troy A. Carter serves as the U.S. Representative for Louisiana's 2nd Congressional District. This RepWatchr starter profile is source-seeded from current congressional roster data, official public links, and public congressional photo sources.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "LA",
+  "bioguideId": "C001125",
+  "sourceLinks": [
+    {
+      "title": "Official congressional website",
+      "url": "https://troycarter.house.gov"
+    },
+    {
+      "title": "Congress legislators current roster",
+      "url": "https://raw.githubusercontent.com/unitedstates/congress-legislators/master/legislators-current.yaml"
+    },
+    {
+      "title": "Biographical Directory of the United States Congress",
+      "url": "https://bioguide.congress.gov/search/bio/C001125"
+    },
+    {
+      "title": "Congressional photo source",
+      "url": "https://unitedstates.github.io/images/congress/225x275/C001125.jpg"
+    }
+  ],
+  "lastVerifiedAt": "2026-04-29"
+}

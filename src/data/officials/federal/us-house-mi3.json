@@ -1,0 +1,47 @@
+{
+  "id": "hillary-j-scholten",
+  "name": "Hillary J. Scholten",
+  "firstName": "Hillary",
+  "lastName": "Scholten",
+  "photo": "/images/officials/federal/hillary-j-scholten.jpg",
+  "photoSourceUrl": "https://unitedstates.github.io/images/congress/225x275/S001221.jpg",
+  "photoCredit": "UnitedStates project congressional image mirror",
+  "party": "D",
+  "level": "federal",
+  "position": "U.S. Representative",
+  "district": "MI-3",
+  "jurisdiction": "U.S. House of Representatives",
+  "county": [],
+  "termStart": "2025-01-03",
+  "termEnd": "2027-01-03",
+  "contactInfo": {
+    "office": "1317 Longworth House Office Building",
+    "phone": "202-225-3831",
+    "email": "https://scholten.house.gov",
+    "website": "https://scholten.house.gov"
+  },
+  "bio": "Hillary J. Scholten serves as the U.S. Representative for Michigan's 3rd Congressional District. This RepWatchr starter profile is source-seeded from current congressional roster data, official public links, and public congressional photo sources.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "MI",
+  "bioguideId": "S001221",
+  "sourceLinks": [
+    {
+      "title": "Official congressional website",
+      "url": "https://scholten.house.gov"
+    },
+    {
+      "title": "Congress legislators current roster",
+      "url": "https://raw.githubusercontent.com/unitedstates/congress-legislators/master/legislators-current.yaml"
+    },
+    {
+      "title": "Biographical Directory of the United States Congress",
+      "url": "https://bioguide.congress.gov/search/bio/S001221"
+    },
+    {
+      "title": "Congressional photo source",
+      "url": "https://unitedstates.github.io/images/congress/225x275/S001221.jpg"
+    }
+  ],
+  "lastVerifiedAt": "2026-04-29"
+}

@@ -1,0 +1,47 @@
+{
+  "id": "alma-s-adams",
+  "name": "Alma S. Adams",
+  "firstName": "Alma",
+  "lastName": "Adams",
+  "photo": "/images/officials/federal/alma-s-adams.jpg",
+  "photoSourceUrl": "https://unitedstates.github.io/images/congress/225x275/A000370.jpg",
+  "photoCredit": "UnitedStates project congressional image mirror",
+  "party": "D",
+  "level": "federal",
+  "position": "U.S. Representative",
+  "district": "NC-12",
+  "jurisdiction": "U.S. House of Representatives",
+  "county": [],
+  "termStart": "2025-01-03",
+  "termEnd": "2027-01-03",
+  "contactInfo": {
+    "office": "2436 Rayburn House Office Building",
+    "phone": "202-225-1510",
+    "email": "https://adams.house.gov",
+    "website": "https://adams.house.gov"
+  },
+  "bio": "Alma S. Adams serves as the U.S. Representative for North Carolina's 12th Congressional District. This RepWatchr starter profile is source-seeded from current congressional roster data, official public links, and public congressional photo sources.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "NC",
+  "bioguideId": "A000370",
+  "sourceLinks": [
+    {
+      "title": "Official congressional website",
+      "url": "https://adams.house.gov"
+    },
+    {
+      "title": "Congress legislators current roster",
+      "url": "https://raw.githubusercontent.com/unitedstates/congress-legislators/master/legislators-current.yaml"
+    },
+    {
+      "title": "Biographical Directory of the United States Congress",
+      "url": "https://bioguide.congress.gov/search/bio/A000370"
+    },
+    {
+      "title": "Congressional photo source",
+      "url": "https://unitedstates.github.io/images/congress/225x275/A000370.jpg"
+    }
+  ],
+  "lastVerifiedAt": "2026-04-29"
+}

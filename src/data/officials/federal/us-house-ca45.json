@@ -1,0 +1,40 @@
+{
+  "id": "derek-tran",
+  "name": "Derek Tran",
+  "firstName": "Derek",
+  "lastName": "Tran",
+  "party": "D",
+  "level": "federal",
+  "position": "U.S. Representative",
+  "district": "CA-45",
+  "jurisdiction": "U.S. House of Representatives",
+  "county": [],
+  "termStart": "2025-01-03",
+  "termEnd": "2027-01-03",
+  "contactInfo": {
+    "office": "1127 Longworth House Office Building",
+    "phone": "202-225-2415",
+    "email": "https://tran.house.gov",
+    "website": "https://tran.house.gov"
+  },
+  "bio": "Derek Tran serves as the U.S. Representative for California's 45th Congressional District. This RepWatchr starter profile is source-seeded from current congressional roster data, official public links, and public congressional photo sources.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "CA",
+  "bioguideId": "T000491",
+  "sourceLinks": [
+    {
+      "title": "Official congressional website",
+      "url": "https://tran.house.gov"
+    },
+    {
+      "title": "Congress legislators current roster",
+      "url": "https://raw.githubusercontent.com/unitedstates/congress-legislators/master/legislators-current.yaml"
+    },
+    {
+      "title": "Biographical Directory of the United States Congress",
+      "url": "https://bioguide.congress.gov/search/bio/T000491"
+    }
+  ],
+  "lastVerifiedAt": "2026-04-29"
+}
