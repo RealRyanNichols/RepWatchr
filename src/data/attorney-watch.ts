@@ -26,6 +26,241 @@ export const attorneyWatchImportPlan = {
 
 export const attorneyWatchProfiles: PublicPowerProfile[] = [
   {
+    slug: "rogers-law-firm-longview",
+    name: "Rogers Law Firm",
+    kind: "law-firm",
+    categoryLabel: "Featured law firm",
+    city: "Longview",
+    county: "Gregg",
+    state: "TX",
+    region: "East Texas",
+    summary:
+      "Longview law firm at 1504 Colony Circle tied to attorney Raymond E. \"Bo Rogers\" Rogers Jr. Public sources list family law, probate, estate planning, real estate, business law, litigation, and turnover receivership practice areas.",
+    whyTracked:
+      "This firm is the first RepWatchr attorney spotlight because Ryan Nichols has a public case-file entry concerning Bo Rogers' March 2026 motion to withdraw in Cause No. 25-0847. RepWatchr is treating the dispute as a source-backed client complaint and records-review file, not as a final finding.",
+    authorityAreas: ["family law", "probate", "estate planning", "business law", "commercial litigation", "turnover receivership"],
+    scrutinyAreas: [
+      "client withdrawal dispute",
+      "file transition and deadline protection",
+      "billing and trust-accounting requests",
+      "public disciplinary history",
+      "online review footprint",
+      "court record footprint",
+    ],
+    profileStatus: "needs_source_review",
+    buildoutPercent: 58,
+    profileTags: ["Spotlight", "Client complaint", "Family law", "Needs court-record review"],
+    featuredSpotlight: {
+      label: "RepWatchr spotlight",
+      title: "Bo Rogers withdrawal dispute in Ryan Nichols case",
+      status: "client_allegation",
+      caseNumber: "Harrison County Cause No. 25-0847",
+      callout: "Public case-file entry loaded. Court transcript, docket sheet, billing records, and client-file production still need review.",
+      summary:
+        "Ryan Nichols' public case file states that Bo Rogers moved to withdraw on March 6, 2026, and that Ryan responded with a verified objection, pro se appearance, request for continuance, and request for transition orders including release of the client file, billing and trust accounting, and a written deadline list.",
+    },
+    sentimentSummary: {
+      label: "Records-review watch",
+      score: 42,
+      basis:
+        "State Bar profile reports eligibility and no public disciplinary history, while the Ryan Nichols withdrawal dispute is pending source review. Public review directories checked here show no visible client-review record.",
+      lastUpdated: checkedAt,
+    },
+    accountabilitySignals: [
+      {
+        label: "License status",
+        status: "verified",
+        tone: "neutral",
+        detail:
+          "The State Bar of Texas profile for Raymond E. 'Bo Rogers' Rogers Jr. lists him as eligible to practice in Texas.",
+        sourceTitle: "State Bar of Texas Find a Lawyer",
+      },
+      {
+        label: "Public disciplinary history",
+        status: "verified",
+        tone: "good",
+        detail: "The State Bar profile lists no public disciplinary history as of this source check.",
+        sourceTitle: "State Bar of Texas Find a Lawyer",
+      },
+      {
+        label: "Client complaint spotlight",
+        status: "client_allegation",
+        tone: "warning",
+        detail:
+          "Ryan Nichols' public case file says the withdrawal dispute involved ongoing discovery activity, continuing communications, recent evidence transmission, and requested transition orders.",
+        sourceTitle: "Real Ryan Nichols LLC case file",
+      },
+      {
+        label: "Online review footprint",
+        status: "not_found",
+        tone: "neutral",
+        detail:
+          "Lawyers.com and Martindale pages reviewed here show no visible client reviews for the firm/attorney on those directories.",
+        sourceTitle: "Lawyers.com / Martindale",
+      },
+      {
+        label: "Court/client outcome data",
+        status: "needs_records_review",
+        tone: "neutral",
+        detail:
+          "RepWatchr has not loaded a court-outcome win/loss dataset, rulings-against dataset, social-media sentiment sample, or malpractice/civil-claim docket review for this profile yet.",
+      },
+    ],
+    affiliatedPeople: [{ name: "Raymond E. \"Bo Rogers\" Rogers Jr.", role: "Attorney", slug: "raymond-bo-rogers-jr" }],
+    sourceLinks: [
+      {
+        title: "Rogers Law Firm public website",
+        url: "https://borogerslaw.com/",
+        sourceType: "official-website",
+        lastCheckedAt: "2026-04-29",
+      },
+      {
+        title: "State Bar of Texas profile: Raymond E. 'Bo Rogers' Rogers Jr.",
+        url: "https://www.texasbar.com/attorneys/member.cfm?id=200797",
+        sourceType: "official-directory",
+        lastCheckedAt: "2026-04-29",
+      },
+      {
+        title: "Bo Rogers Motion to Withdraw and Ryan Nichols Response",
+        url: "https://www.realryannichols.com/case-files/bo-rogers-motion-to-withdraw-and-ryan-nichols-response",
+        sourceType: "case-file",
+        lastCheckedAt: "2026-04-29",
+      },
+      {
+        title: "Lawyers.com firm page",
+        url: "https://www.lawyers.com/longview/texas/law-office-of-raymond-e-bo-rogers-jr-p-c-46512596-f/",
+        sourceType: "review-directory",
+        lastCheckedAt: "2026-04-29",
+      },
+      {
+        title: "Martindale firm page",
+        url: "https://www.martindale.com/organization/law-office-of-raymond-e-bo-32080330/longview-texas-46512596-f/",
+        sourceType: "review-directory",
+        lastCheckedAt: "2026-04-29",
+      },
+      {
+        title: "Longview Chamber listing",
+        url: "https://members.longviewchamber.com/directory/Details/rogers-law-firm-1382667",
+        sourceType: "official-directory",
+        lastCheckedAt: "2026-04-29",
+      },
+    ],
+  },
+  {
+    slug: "raymond-bo-rogers-jr",
+    name: "Raymond E. \"Bo Rogers\" Rogers Jr.",
+    kind: "attorney",
+    categoryLabel: "Spotlight attorney",
+    city: "Longview",
+    county: "Gregg",
+    state: "TX",
+    region: "East Texas",
+    summary:
+      "Longview attorney listed by the State Bar of Texas as eligible to practice, with practice areas including business, creditor-debtor, family, commercial litigation, and wills-trusts-probate.",
+    whyTracked:
+      "Ryan Nichols has placed a public complaint record online concerning Bo Rogers' attempted withdrawal from representation in a Harrison County family-law case. RepWatchr is tracking the license profile, firm profile, withdrawal record, client-file transition issues, public discipline status, and any later court or bar records.",
+    authorityAreas: ["family law", "business", "creditor-debtor", "commercial litigation", "wills-trusts-probate"],
+    scrutinyAreas: [
+      "withdrawal procedure",
+      "client file and trust accounting",
+      "deadline protection",
+      "public disciplinary history",
+      "online reviews",
+      "court rulings and client outcomes",
+    ],
+    profileStatus: "needs_source_review",
+    buildoutPercent: 56,
+    affiliatedOrganizationSlug: "rogers-law-firm-longview",
+    profileTags: ["Spotlight", "Attorney", "Eligible in Texas", "Client complaint"],
+    featuredSpotlight: {
+      label: "Client-rights spotlight",
+      title: "Ryan Nichols withdrawal objection and transition-order request",
+      status: "client_allegation",
+      caseNumber: "Harrison County Cause No. 25-0847",
+      callout: "This is a complaint/evidence issue, not a final disciplinary finding.",
+      summary:
+        "The public case file says Ryan Nichols objected to withdrawal and requested a continuance plus transition orders requiring the full client file, billing and trust accounting, and a written list of deadlines and obligations.",
+    },
+    sentimentSummary: {
+      label: "Mixed / records pending",
+      score: 45,
+      basis:
+        "The State Bar profile reports no public disciplinary history; review-directory pages checked here show no visible client reviews; Ryan Nichols' case-file complaint is loaded for scrutiny and needs court-record follow-up.",
+      lastUpdated: checkedAt,
+    },
+    accountabilitySignals: [
+      {
+        label: "State Bar eligibility",
+        status: "verified",
+        tone: "neutral",
+        detail:
+          "State Bar of Texas lists Raymond E. 'Bo Rogers' Rogers Jr. as eligible to practice in Texas with license date 05/03/1999.",
+        sourceTitle: "State Bar of Texas Find a Lawyer",
+      },
+      {
+        label: "Public discipline",
+        status: "verified",
+        tone: "good",
+        detail: "The State Bar page lists no public disciplinary history.",
+        sourceTitle: "State Bar of Texas Find a Lawyer",
+      },
+      {
+        label: "Ryan Nichols complaint record",
+        status: "client_allegation",
+        tone: "warning",
+        detail:
+          "The public case file describes a motion to withdraw, Ryan's verified objection, and Ryan's request for client-file, billing, trust-accounting, and deadline-transition orders.",
+        sourceTitle: "Real Ryan Nichols LLC case file",
+      },
+      {
+        label: "Reviews and social sentiment",
+        status: "needs_records_review",
+        tone: "neutral",
+        detail:
+          "RepWatchr has not loaded Google, Facebook, Avvo, social comments, or client-review samples for this attorney yet. Third-party pages checked here show no visible Lawyers.com/Martindale reviews.",
+      },
+      {
+        label: "Rulings against attorney or firm",
+        status: "needs_records_review",
+        tone: "neutral",
+        detail:
+          "No civil, criminal, malpractice, sanctions, or rights-violation finding has been loaded into this profile yet. Docket and court-order review is still required.",
+      },
+    ],
+    sourceLinks: [
+      {
+        title: "State Bar of Texas profile: Raymond E. 'Bo Rogers' Rogers Jr.",
+        url: "https://www.texasbar.com/attorneys/member.cfm?id=200797",
+        sourceType: "official-directory",
+        lastCheckedAt: "2026-04-29",
+      },
+      {
+        title: "Rogers Law Firm public website",
+        url: "https://borogerslaw.com/",
+        sourceType: "official-website",
+        lastCheckedAt: "2026-04-29",
+      },
+      {
+        title: "Bo Rogers Motion to Withdraw and Ryan Nichols Response",
+        url: "https://www.realryannichols.com/case-files/bo-rogers-motion-to-withdraw-and-ryan-nichols-response",
+        sourceType: "case-file",
+        lastCheckedAt: "2026-04-29",
+      },
+      {
+        title: "Lawyers.com firm page",
+        url: "https://www.lawyers.com/longview/texas/law-office-of-raymond-e-bo-rogers-jr-p-c-46512596-f/",
+        sourceType: "review-directory",
+        lastCheckedAt: "2026-04-29",
+      },
+      {
+        title: "Martindale firm page",
+        url: "https://www.martindale.com/organization/law-office-of-raymond-e-bo-32080330/longview-texas-46512596-f/",
+        sourceType: "review-directory",
+        lastCheckedAt: "2026-04-29",
+      },
+    ],
+  },
+  {
     slug: "state-bar-of-texas-find-a-lawyer",
     name: "State Bar of Texas Find a Lawyer",
     kind: "bar-source",

@@ -31,6 +31,50 @@ function statusLabel(status: string) {
   return status.replaceAll("_", " ");
 }
 
+function signalClasses(tone: "good" | "warning" | "bad" | "neutral") {
+  switch (tone) {
+    case "good":
+      return "border-emerald-200 bg-emerald-50 text-emerald-950";
+    case "warning":
+      return "border-amber-200 bg-amber-50 text-amber-950";
+    case "bad":
+      return "border-red-200 bg-red-50 text-red-950";
+    case "neutral":
+      return "border-slate-200 bg-slate-50 text-slate-950";
+  }
+}
+
+const defaultSignals = [
+  {
+    label: "Client wins and losses",
+    status: "needs_records_review" as const,
+    tone: "neutral" as const,
+    detail: "No client-outcome dataset has been loaded for this profile yet.",
+    sourceTitle: undefined,
+  },
+  {
+    label: "Online reviews",
+    status: "needs_records_review" as const,
+    tone: "neutral" as const,
+    detail: "No review sample has been scored yet. Add Google, Avvo, Martindale, Facebook, or submitted review evidence with source links.",
+    sourceTitle: undefined,
+  },
+  {
+    label: "Social media sentiment",
+    status: "needs_records_review" as const,
+    tone: "neutral" as const,
+    detail: "No social-media comment sample has been loaded yet.",
+    sourceTitle: undefined,
+  },
+  {
+    label: "Rulings and discipline",
+    status: "needs_records_review" as const,
+    tone: "neutral" as const,
+    detail: "No sanctions, disciplinary findings, malpractice rulings, civil rulings, or criminal rulings have been loaded for this profile yet.",
+    sourceTitle: undefined,
+  },
+];
+
 export default async function AttorneyProfilePage({ params }: AttorneyProfilePageProps) {
   const { slug } = await params;
   const profile = getAttorneyWatchProfileBySlug(slug);
@@ -78,9 +122,52 @@ export default async function AttorneyProfilePage({ params }: AttorneyProfilePag
                     {item}
                   </span>
                 ))}
+              {profile.profileTags?.map((tag) => (
+                <span key={tag} className="rounded-full bg-red-50 px-3 py-1.5 text-xs font-black text-red-800">
+                  {tag}
+                </span>
+              ))}
             </div>
           </div>
         </section>
+
+        {profile.featuredSpotlight ? (
+          <section className="mt-6 overflow-hidden rounded-2xl border border-red-200 bg-slate-950 text-white shadow-sm">
+            <div className="h-1.5 w-full bg-[linear-gradient(90deg,#b42318_0%,#b42318_50%,#d6b35a_50%,#d6b35a_66%,#1d4ed8_66%,#1d4ed8_100%)]" />
+            <div className="p-5 sm:p-6">
+              <p className="text-xs font-black uppercase tracking-[0.18em] text-red-300">
+                {profile.featuredSpotlight.label}
+              </p>
+              <h2 className="mt-2 text-2xl font-black text-white">{profile.featuredSpotlight.title}</h2>
+              <p className="mt-3 text-sm font-semibold leading-6 text-slate-200">
+                {profile.featuredSpotlight.summary}
+              </p>
+              <div className="mt-4 grid gap-3 sm:grid-cols-3">
+                <div className="rounded-xl border border-white/10 bg-white/10 p-4">
+                  <p className="text-xs font-black uppercase tracking-wide text-slate-300">Status</p>
+                  <p className="mt-1 text-sm font-black capitalize text-white">
+                    {profile.featuredSpotlight.status.replaceAll("_", " ")}
+                  </p>
+                </div>
+                <div className="rounded-xl border border-white/10 bg-white/10 p-4">
+                  <p className="text-xs font-black uppercase tracking-wide text-slate-300">Case</p>
+                  <p className="mt-1 text-sm font-black text-white">{profile.featuredSpotlight.caseNumber ?? "Not loaded"}</p>
+                </div>
+                <div className="rounded-xl border border-white/10 bg-white/10 p-4">
+                  <p className="text-xs font-black uppercase tracking-wide text-slate-300">Sentiment</p>
+                  <p className="mt-1 text-sm font-black text-[#d6b35a]">
+                    {profile.sentimentSummary?.score ?? "Review"} / {profile.sentimentSummary?.label ?? "Pending"}
+                  </p>
+                </div>
+              </div>
+              {profile.featuredSpotlight.callout ? (
+                <p className="mt-4 rounded-xl border border-white/10 bg-white/10 p-4 text-sm font-semibold leading-6 text-slate-200">
+                  {profile.featuredSpotlight.callout}
+                </p>
+              ) : null}
+            </div>
+          </section>
+        ) : null}
 
         <section className="mt-6">
           <ProfileScorecardVote
@@ -89,6 +176,41 @@ export default async function AttorneyProfilePage({ params }: AttorneyProfilePag
             targetName={profile.name}
             targetPath={`/attorneys/${profile.slug}`}
           />
+        </section>
+
+        <section className="mt-6 rounded-2xl border border-slate-300 bg-white p-5 shadow-sm">
+          <div className="flex flex-col gap-2 sm:flex-row sm:items-end sm:justify-between">
+            <div>
+              <p className="text-xs font-black uppercase tracking-[0.18em] text-red-700">Attorney sentiment file</p>
+              <h2 className="mt-1 text-2xl font-black text-slate-950">Reviews, outcomes, rulings, and client-rights signals</h2>
+            </div>
+            {profile.sentimentSummary ? (
+              <div className="rounded-xl border border-slate-200 bg-slate-50 px-4 py-3 text-right">
+                <p className="text-xs font-black uppercase tracking-wide text-slate-500">Current score</p>
+                <p className="text-3xl font-black text-blue-950">{profile.sentimentSummary.score ?? "Review"}</p>
+              </div>
+            ) : null}
+          </div>
+          <p className="mt-3 text-sm font-semibold leading-6 text-slate-600">
+            {profile.sentimentSummary?.basis ??
+              "RepWatchr will score attorneys from sourced client outcomes, public reviews, social comments, court rulings, disciplinary records, malpractice/civil rulings, criminal rulings, and findings that a client right was violated."}
+          </p>
+          <div className="mt-4 grid gap-3 md:grid-cols-2">
+            {(profile.accountabilitySignals ?? defaultSignals).map((signal) => (
+              <div key={signal.label} className={`rounded-xl border p-4 ${signalClasses(signal.tone)}`}>
+                <div className="flex items-start justify-between gap-3">
+                  <p className="text-sm font-black">{signal.label}</p>
+                  <span className="rounded-full bg-white/70 px-2 py-1 text-[10px] font-black uppercase tracking-wide">
+                    {signal.status.replaceAll("_", " ")}
+                  </span>
+                </div>
+                <p className="mt-2 text-sm font-semibold leading-6">{signal.detail}</p>
+                {signal.sourceTitle ? (
+                  <p className="mt-2 text-xs font-black uppercase tracking-wide opacity-70">Source: {signal.sourceTitle}</p>
+                ) : null}
+              </div>
+            ))}
+          </div>
         </section>
 
         <section className="mt-6 grid gap-4 lg:grid-cols-[0.95fr_1.05fr]">

@@ -23,6 +23,8 @@ export interface PublicPowerSource {
     | "team-page"
     | "court-record"
     | "public-record"
+    | "case-file"
+    | "review-directory"
     | "article";
   lastCheckedAt: string;
 }
@@ -48,6 +50,28 @@ export interface PublicPowerProfile {
   scrutinyAreas: string[];
   profileStatus: PublicPowerStatus;
   buildoutPercent: number;
+  profileTags?: string[];
+  featuredSpotlight?: {
+    label: string;
+    title: string;
+    summary: string;
+    status: "verified_public_record" | "client_allegation" | "needs_records_review";
+    caseNumber?: string;
+    callout?: string;
+  };
+  sentimentSummary?: {
+    label: string;
+    score?: number;
+    basis: string;
+    lastUpdated: string;
+  };
+  accountabilitySignals?: Array<{
+    label: string;
+    status: "verified" | "client_allegation" | "not_found" | "needs_records_review";
+    tone: "good" | "warning" | "bad" | "neutral";
+    detail: string;
+    sourceTitle?: string;
+  }>;
   connectedOfficialIds?: string[];
   affiliatedOrganizationSlug?: string;
   affiliatedPeople?: PublicPowerAffiliatedPerson[];
