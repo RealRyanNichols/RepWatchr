@@ -287,6 +287,12 @@ export default async function OfficialProfilePage({
               contactInfo={official.contactInfo}
             />
 
+            <ProfileBuildoutPanel
+              percent={ideologyProfile.buildout.completionPercent}
+              isComplete={ideologyProfile.buildout.isComplete}
+              missingItems={ideologyProfile.buildout.missingItems}
+            />
+
             {/* Citizen Approval Rating & Vote Button */}
             <OfficialVotingSection
               officialId={official.id}
@@ -428,5 +434,64 @@ export default async function OfficialProfilePage({
         />
       </div>
     </div>
+  );
+}
+
+function ProfileBuildoutPanel({
+  percent,
+  isComplete,
+  missingItems,
+}: {
+  percent: number;
+  isComplete: boolean;
+  missingItems: string[];
+}) {
+  const tone = isComplete ? "emerald" : percent >= 60 ? "blue" : percent >= 35 ? "amber" : "red";
+  const toneClasses = {
+    emerald: "border-emerald-200 bg-emerald-50 text-emerald-800",
+    blue: "border-blue-200 bg-blue-50 text-blue-800",
+    amber: "border-amber-200 bg-amber-50 text-amber-800",
+    red: "border-red-200 bg-red-50 text-red-800",
+  }[tone];
+  const barClass = {
+    emerald: "bg-emerald-600",
+    blue: "bg-blue-600",
+    amber: "bg-amber-500",
+    red: "bg-red-600",
+  }[tone];
+
+  return (
+    <section className={`rounded-xl border p-5 shadow-sm ${toneClasses}`}>
+      <div className="flex items-start justify-between gap-4">
+        <div>
+          <p className="text-xs font-black uppercase tracking-wide">Profile buildout</p>
+          <h2 className="mt-1 text-lg font-black">
+            {isComplete ? "Full profile" : "Profile still being built"}
+          </h2>
+        </div>
+        <p className="text-3xl font-black">{percent}%</p>
+      </div>
+      <div className="mt-3 h-2 overflow-hidden rounded-full bg-white/80">
+        <div className={`h-full ${barClass}`} style={{ width: `${Math.max(0, Math.min(100, percent))}%` }} />
+      </div>
+      {isComplete ? (
+        <p className="mt-3 text-sm font-semibold leading-6">
+          This profile currently has every required public-record section loaded.
+        </p>
+      ) : (
+        <>
+          <p className="mt-3 text-sm font-semibold leading-6">
+            This is not being treated as complete until the missing public-record sections are filled.
+          </p>
+          <div className="mt-3 flex flex-wrap gap-2">
+            {missingItems.slice(0, 8).map((item) => (
+              <span key={item} className="rounded-full bg-white px-2.5 py-1 text-[11px] font-black capitalize shadow-sm">
+                {item}
+              </span>
+            ))}
+          </div>
+        </>
+      )}
+    </section>
   );
 }

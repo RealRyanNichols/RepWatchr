@@ -6,6 +6,24 @@ const IDEOLOGY_MASTER_PATH = path.join(process.cwd(), "src", "data", "official-i
 
 let ideologyProfilesCache: OfficialIdeologyProfile[] | null = null;
 
+export interface OfficialBuildoutStats {
+  totalProfiles: number;
+  completeProfiles: number;
+  incompleteProfiles: number;
+  averageCompletionPercent: number;
+  voteWeightedProfiles: number;
+  pendingIdeologyProfiles: number;
+  missingItemCounts: Array<{ label: string; count: number }>;
+  lowestCompletionProfiles: Array<{
+    officialId: string;
+    name: string;
+    position: string;
+    jurisdiction: string;
+    completionPercent: number;
+    missingItems: string[];
+  }>;
+}
+
 function readIdeologyProfiles(): OfficialIdeologyProfile[] {
   if (ideologyProfilesCache) return ideologyProfilesCache;
 
@@ -25,6 +43,50 @@ export function getAllOfficialIdeologyProfiles(): OfficialIdeologyProfile[] {
 
 export function getOfficialIdeologyProfile(officialId: string): OfficialIdeologyProfile | undefined {
   return readIdeologyProfiles().find((profile) => profile.officialId === officialId);
+}
+
+export function getOfficialProfileBuildoutStats(): OfficialBuildoutStats {
+  const profiles = readIdeologyProfiles();
+  const totalProfiles = profiles.length;
+  const completeProfiles = profiles.filter((profile) => profile.buildout.isComplete).length;
+  const voteWeightedProfiles = profiles.filter((profile) => profile.ideologyScore !== null).length;
+  const missingCounts = new Map<string, number>();
+
+  for (const profile of profiles) {
+    for (const item of profile.buildout.missingItems) {
+      missingCounts.set(item, (missingCounts.get(item) ?? 0) + 1);
+    }
+  }
+
+  const completionTotal = profiles.reduce((total, profile) => total + profile.buildout.completionPercent, 0);
+  const lowestCompletionProfiles = [...profiles]
+    .filter((profile) => !profile.buildout.isComplete)
+    .sort((a, b) => {
+      const percentDiff = a.buildout.completionPercent - b.buildout.completionPercent;
+      if (percentDiff !== 0) return percentDiff;
+      return a.name.localeCompare(b.name);
+    })
+    .slice(0, 12)
+    .map((profile) => ({
+      officialId: profile.officialId,
+      name: profile.name,
+      position: profile.position,
+      jurisdiction: profile.jurisdiction,
+      completionPercent: profile.buildout.completionPercent,
+      missingItems: profile.buildout.missingItems,
+    }));
+
+  return {
+    totalProfiles,
+    completeProfiles,
+    incompleteProfiles: Math.max(0, totalProfiles - completeProfiles),
+    averageCompletionPercent: totalProfiles > 0 ? Math.round(completionTotal / totalProfiles) : 0,
+    voteWeightedProfiles,
+    pendingIdeologyProfiles: Math.max(0, totalProfiles - voteWeightedProfiles),
+    missingItemCounts: Array.from(missingCounts, ([label, count]) => ({ label, count }))
+      .sort((a, b) => b.count - a.count || a.label.localeCompare(b.label)),
+    lowestCompletionProfiles,
+  };
 }
 
 export function buildFallbackIdeologyProfile(official: Official): OfficialIdeologyProfile {

@@ -10,6 +10,7 @@ exists.
 from __future__ import annotations
 
 import json
+from datetime import date
 from pathlib import Path
 from typing import Any
 
@@ -21,6 +22,7 @@ FUNDING = DATA / "funding"
 RED_FLAGS = DATA / "red-flags"
 NEWS = DATA / "news"
 OUTPUT = DATA / "official-ideology-master.json"
+GENERATED_DATE = date.today().isoformat()
 
 RIGHT_POLICY_CATEGORIES = {"taxes", "land-and-property-rights"}
 RIGHT_POLICY_KEYWORDS = {
@@ -321,7 +323,7 @@ def main() -> int:
                 "jurisdiction": official.get("jurisdiction", ""),
                 "district": official.get("district"),
                 **ideology,
-                "lastUpdated": "2026-04-28",
+                "lastUpdated": GENERATED_DATE,
                 "buildout": buildout(official, scorecard, news_map.get(official_id, 0)),
             }
         )

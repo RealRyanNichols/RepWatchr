@@ -9,6 +9,7 @@ import NationalSpotlightSelector from "@/components/shared/NationalSpotlightSele
 import type { GovernmentLevel, Official } from "@/types";
 import { getAllNationalJurisdictions, getNationalBuildoutSummary, nationalGovernmentScopes } from "@/data/national-buildout";
 import { countByState, getSelectedStateCode } from "@/lib/state-scope";
+import { getOfficialProfileBuildoutStats } from "@/lib/ideology";
 
 export const metadata: Metadata = {
   title: "National Elected Officials Directory",
@@ -74,6 +75,7 @@ export default async function OfficialsPage({
   const scoreCards = getAllScoreCards();
   const schoolBoardStats = getSchoolBoardStats();
   const dataStats = getRepWatchrDataStats();
+  const buildoutStats = getOfficialProfileBuildoutStats();
   const jurisdictions = getAllNationalJurisdictions();
   const nationalSummary = getNationalBuildoutSummary();
   const profileCountsByState = countByState(officials, (official) => official.state, "TX");
@@ -144,6 +146,9 @@ export default async function OfficialsPage({
           loadedFederalStates={loadedFederalStates}
           federalExpectedSeats={dataStats.federalExpectedSeats}
           federalProfilesLoaded={dataStats.federalProfilesLoaded}
+          completeProfiles={buildoutStats.completeProfiles}
+          incompleteProfiles={buildoutStats.incompleteProfiles}
+          averageCompletionPercent={buildoutStats.averageCompletionPercent}
         />
 
         {directoryOfficials.length > 0 ? (
@@ -276,6 +281,9 @@ function OfficialsCommandDeck({
   loadedFederalStates,
   federalExpectedSeats,
   federalProfilesLoaded,
+  completeProfiles,
+  incompleteProfiles,
+  averageCompletionPercent,
 }: {
   selectedStateCode?: string;
   selectedStateName?: string;
@@ -291,6 +299,9 @@ function OfficialsCommandDeck({
   loadedFederalStates: number;
   federalExpectedSeats: number;
   federalProfilesLoaded: number;
+  completeProfiles: number;
+  incompleteProfiles: number;
+  averageCompletionPercent: number;
 }) {
   const activeScope = selectedStateCode ? selectedStateName ?? selectedStateCode : "United States";
   const quickStates = jurisdictions
@@ -299,9 +310,14 @@ function OfficialsCommandDeck({
 
   const metrics = [
     {
-      label: selectedStateCode ? "Loaded here" : "Officials live",
+      label: "Profiles live",
       value: formatNumber(totalOfficials),
       detail: selectedStateCode ? `${activeScope} profile files` : "People visible before choosing a state",
+    },
+    {
+      label: "Full profiles",
+      value: formatNumber(completeProfiles),
+      detail: `${formatNumber(incompleteProfiles)} still need buildout; average is ${averageCompletionPercent}%`,
     },
     {
       label: "Federal selected",

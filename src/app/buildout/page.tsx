@@ -5,7 +5,7 @@ import {
   getSchoolBoardStats,
 } from "@/lib/school-board-research";
 import { getRepWatchrDataStats } from "@/lib/data";
-import { getAllOfficialIdeologyProfiles } from "@/lib/ideology";
+import { getAllOfficialIdeologyProfiles, getOfficialProfileBuildoutStats } from "@/lib/ideology";
 import { getSchoolBoardCandidateUrl, getSchoolBoardDistrictUrl } from "@/lib/school-board-urls";
 import { getAttorneyWatchProfiles, getMediaWatchProfiles, getPowerWatchStats } from "@/lib/power-watch";
 import { getAttorneyBuildoutDashboard } from "@/data/attorney-buildout";
@@ -131,6 +131,7 @@ export default function BuildoutDashboardPage() {
   const mediaStats = getPowerWatchStats(getMediaWatchProfiles());
   const nationalSummary = getNationalBuildoutSummary();
   const geographic = getGeographicBuildoutDashboard();
+  const officialBuildoutStats = getOfficialProfileBuildoutStats();
   const loadedJurisdictionRows = geographic.stateRows.filter((row) => row.status === "loaded").length;
   const partialJurisdictionRows = geographic.stateRows.filter((row) => row.status === "partial").length;
   const queuedJurisdictionRows = geographic.stateRows.filter((row) => row.status === "queued").length;
@@ -139,7 +140,7 @@ export default function BuildoutDashboardPage() {
   const pendingIdeologyProfiles = ideologyProfiles.length - voteWeightedIdeologyProfiles.length;
   const loadedOfficialProfiles = dataStats.federalAndStateSeatProfilesLoaded + dataStats.countyCityOfficialFiles;
   const sourceUrlCount = dataStats.publicSourceUrls + stats.sourceCount;
-  const openWorkCount = stats.gapCount + report.totalBrokenSources;
+  const openWorkCount = officialBuildoutStats.incompleteProfiles + stats.gapCount + report.totalBrokenSources;
   const federalAndStateSeatPercent = Math.round(
     (dataStats.federalAndStateSeatProfilesLoaded / dataStats.federalAndStateExpectedSeats) * 100,
   );
@@ -149,6 +150,12 @@ export default function BuildoutDashboardPage() {
   const sortedMembers = [...report.candidateCompletions].sort((a, b) => a.percent - b.percent);
 
   const dataSurfaces = [
+    {
+      label: "Full official profiles",
+      value: officialBuildoutStats.completeProfiles,
+      status: `${officialBuildoutStats.completeProfiles}/${officialBuildoutStats.totalProfiles} official profile pages meet the full checklist. ${officialBuildoutStats.incompleteProfiles} still need source-backed buildout work.`,
+      href: "/officials",
+    },
     {
       label: "Federal and state seat profiles",
       value: dataStats.federalAndStateSeatProfilesLoaded,
@@ -274,6 +281,12 @@ export default function BuildoutDashboardPage() {
       href: "/officials",
     },
     {
+      label: "Official profiles missing full buildout",
+      value: officialBuildoutStats.incompleteProfiles,
+      status: "A loaded profile is not counted complete until photo, bio, source links, website, scorecard, vote record, funding, red-flag review, news links, and ideology chart are present.",
+      href: "/officials",
+    },
+    {
       label: "Non-school officials without funding summaries",
       value: dataStats.nonSchoolOfficialFiles - dataStats.officialsWithFundingSummaries,
       status: "Campaign finance is not shown unless a funding JSON file exists for the official.",
@@ -382,20 +395,83 @@ export default function BuildoutDashboardPage() {
               <p className="mt-1 text-xs font-semibold text-gray-500">{dataStats.federalAndStateSeatProfilesLoaded} federal/state seat profiles + {dataStats.countyCityOfficialFiles} county/city files</p>
             </div>
             <div className="rounded-2xl border border-emerald-200 bg-white p-5 shadow-sm">
+              <p className="text-xs font-black uppercase tracking-wide text-emerald-700">Full official profiles</p>
+              <p className="mt-1 text-4xl font-black text-emerald-700">{officialBuildoutStats.completeProfiles}/{officialBuildoutStats.totalProfiles}</p>
+              <p className="mt-1 text-xs font-semibold text-gray-500">{officialBuildoutStats.incompleteProfiles} official profiles still need source-backed buildout</p>
+              <div className="mt-3"><ProgressBar percent={officialBuildoutStats.averageCompletionPercent} tone={toneFor(officialBuildoutStats.averageCompletionPercent)} /></div>
+            </div>
+            <div className="rounded-2xl border border-blue-200 bg-white p-5 shadow-sm">
               <p className="text-xs font-black uppercase tracking-wide text-emerald-700">Federal/state seats</p>
               <p className="mt-1 text-4xl font-black text-emerald-700">{dataStats.federalAndStateSeatProfilesLoaded}/{dataStats.federalAndStateExpectedSeats}</p>
               <p className="mt-1 text-xs font-semibold text-gray-500">{dataStats.federalAndStateProfileGaps} expected seat profile gap{dataStats.federalAndStateProfileGaps === 1 ? "" : "s"} in the current import</p>
               <div className="mt-3"><ProgressBar percent={federalAndStateSeatPercent} tone="green" /></div>
             </div>
-            <div className="rounded-2xl border border-amber-200 bg-white p-5 shadow-sm">
-              <p className="text-xs font-black uppercase tracking-wide text-amber-700">Records scored</p>
-              <p className="mt-1 text-4xl font-black text-amber-700">{dataStats.scoreCards.toLocaleString()}</p>
-              <p className="mt-1 text-xs font-semibold text-gray-500">{dataStats.bills} bill files, {dataStats.scoredVoteRows} vote rows, {dataStats.fundingSummaries} funding summaries</p>
-            </div>
             <div className="rounded-2xl border border-red-200 bg-white p-5 shadow-sm">
               <p className="text-xs font-black uppercase tracking-wide text-red-700">Open work</p>
               <p className="mt-1 text-4xl font-black text-red-700">{openWorkCount.toLocaleString()}</p>
-              <p className="mt-1 text-xs font-semibold text-gray-500">{stats.gapCount} research gaps + {report.totalBrokenSources} empty source URLs</p>
+              <p className="mt-1 text-xs font-semibold text-gray-500">{officialBuildoutStats.incompleteProfiles} incomplete officials + {stats.gapCount} research gaps + {report.totalBrokenSources} empty source URLs</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="border-b border-red-100 bg-white py-10">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <div className="mb-6 flex flex-col gap-2 lg:flex-row lg:items-end lg:justify-between">
+            <div>
+              <p className="text-xs font-black uppercase tracking-wide text-red-700">Official profile completion</p>
+              <h2 className="text-2xl font-black text-gray-950">Loaded does not mean complete</h2>
+              <p className="mt-1 max-w-4xl text-sm font-semibold leading-6 text-slate-600">
+                This is the working queue for the elected-official profile buildout. It shows what is missing before a profile should be treated as fully built.
+              </p>
+            </div>
+            <Link href="/officials" className="rounded-full border border-blue-200 bg-blue-50 px-4 py-2 text-xs font-black text-blue-950 transition hover:bg-white">
+              Open officials
+            </Link>
+          </div>
+
+          <div className="grid gap-4 lg:grid-cols-[0.8fr_1.2fr]">
+            <div className="rounded-2xl border border-slate-200 bg-slate-50 p-5">
+              <p className="text-xs font-black uppercase tracking-wide text-red-700">Missing checklist items</p>
+              <div className="mt-4 space-y-3">
+                {officialBuildoutStats.missingItemCounts.slice(0, 10).map((item) => (
+                  <div key={item.label}>
+                    <div className="mb-1 flex items-center justify-between gap-3">
+                      <p className="text-sm font-black capitalize text-slate-950">{item.label}</p>
+                      <p className="text-sm font-black text-red-700">{item.count.toLocaleString()}</p>
+                    </div>
+                    <ProgressBar percent={(item.count / Math.max(1, officialBuildoutStats.totalProfiles)) * 100} tone="red" />
+                  </div>
+                ))}
+              </div>
+            </div>
+
+            <div className="rounded-2xl border border-slate-200 bg-slate-50 p-5">
+              <p className="text-xs font-black uppercase tracking-wide text-red-700">Lowest-completion officials</p>
+              <div className="mt-4 grid gap-2">
+                {officialBuildoutStats.lowestCompletionProfiles.map((profile) => (
+                  <Link
+                    key={profile.officialId}
+                    href={`/officials/${profile.officialId}`}
+                    className="rounded-xl border border-white bg-white p-3 shadow-sm transition hover:-translate-y-0.5 hover:border-blue-300"
+                  >
+                    <div className="flex items-start justify-between gap-3">
+                      <div className="min-w-0">
+                        <p className="truncate text-sm font-black text-slate-950">{profile.name}</p>
+                        <p className="truncate text-xs font-semibold text-slate-500">{profile.position} · {profile.jurisdiction}</p>
+                        <p className="mt-1 line-clamp-2 text-xs font-semibold leading-5 text-slate-600">
+                          Missing: {profile.missingItems.slice(0, 4).join(", ")}
+                          {profile.missingItems.length > 4 ? "..." : ""}
+                        </p>
+                      </div>
+                      <div className="w-24 shrink-0">
+                        <p className="mb-1 text-right text-xs font-black text-red-700">{profile.completionPercent}%</p>
+                        <ProgressBar percent={profile.completionPercent} tone={toneFor(profile.completionPercent)} />
+                      </div>
+                    </div>
+                  </Link>
+                ))}
+              </div>
             </div>
           </div>
         </div>

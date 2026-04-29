@@ -5,6 +5,7 @@ import { getAttorneyWatchProfiles, getMediaWatchProfiles, getPowerWatchStats } f
 import { getAllNationalJurisdictions, getNationalBuildoutSummary } from "@/data/national-buildout";
 import { countByState } from "@/lib/state-scope";
 import { getGeographicBuildoutDashboard } from "@/lib/geographic-buildout";
+import { getOfficialProfileBuildoutStats } from "@/lib/ideology";
 
 export const dynamic = "force-dynamic";
 
@@ -23,6 +24,7 @@ export async function GET() {
   const nationalSummary = getNationalBuildoutSummary();
   const jurisdictions = getAllNationalJurisdictions();
   const geographic = getGeographicBuildoutDashboard();
+  const officialBuildout = getOfficialProfileBuildoutStats();
 
   const officialCountsByState = countByState(officials, (official) => official.state, "TX");
   const schoolBoardCountsByState = { TX: schoolStats.candidates };
@@ -71,8 +73,8 @@ export async function GET() {
         value: dataStats.officialFiles,
         loadedStates: nonZeroStateCount(officialCountsByState),
         href: "/officials",
-        detail: `${dataStats.federalProfilesLoaded.toLocaleString()}/${dataStats.federalExpectedSeats.toLocaleString()} current federal seat profiles across 50 states plus ${dataStats.stateLegislatorProfilesLoaded.toLocaleString()} Texas state legislative profiles.`,
-        notTracked: `${dataStats.federalProfileGaps.toLocaleString()} current U.S. House seat gaps and ${dataStats.stateLegislatureProfileGaps.toLocaleString()} Texas state legislative gaps remain in the loaded import.`,
+        detail: `${dataStats.federalProfilesLoaded.toLocaleString()}/${dataStats.federalExpectedSeats.toLocaleString()} current federal seat profiles across 50 states plus ${dataStats.stateLegislatorProfilesLoaded.toLocaleString()} Texas state legislative profiles. ${officialBuildout.completeProfiles.toLocaleString()}/${officialBuildout.totalProfiles.toLocaleString()} official pages are full profiles.`,
+        notTracked: `${officialBuildout.incompleteProfiles.toLocaleString()} official profiles still need buildout. ${dataStats.federalProfileGaps.toLocaleString()} current U.S. House seat gaps and ${dataStats.stateLegislatureProfileGaps.toLocaleString()} Texas state legislative gaps remain in the loaded import.`,
       },
       {
         id: "school-boards",
@@ -114,6 +116,11 @@ export async function GET() {
         detail: "Official, school-board, attorney, media, vote, funding, red-flag, and news source URLs counted across loaded data.",
       },
       {
+        label: "Full official profiles",
+        value: officialBuildout.completeProfiles,
+        detail: `${officialBuildout.incompleteProfiles.toLocaleString()} official profiles are still missing required source-backed sections. Average completion is ${officialBuildout.averageCompletionPercent}%.`,
+      },
+      {
         label: "Vote-record scorecards",
         value: dataStats.scoreCards,
         detail: `${dataStats.scoredVoteRows.toLocaleString()} scored vote rows. Universal profile votes are a separate member layer.`,
@@ -121,11 +128,12 @@ export async function GET() {
       {
         label: "Open buildout work",
         value:
+          officialBuildout.incompleteProfiles +
           dataStats.federalAndStateProfileGaps +
           schoolStats.gapCount +
           attorneyStats.needsBuildout +
           mediaStats.needsBuildout,
-        detail: "Known missing profile imports, school-board gaps, and attorney/media records needing buildout.",
+        detail: "Known incomplete official profiles, missing profile imports, school-board gaps, and attorney/media records needing buildout.",
       },
     ],
     geographicSummary: geographic.summary,
