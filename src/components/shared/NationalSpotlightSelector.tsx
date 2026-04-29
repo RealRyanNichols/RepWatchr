@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import { useRouter } from "next/navigation";
+import { track } from "@vercel/analytics";
 import type { NationalJurisdictionBuildout } from "@/data/national-buildout";
 
 interface NationalSpotlightSelectorProps {
@@ -30,6 +31,22 @@ function statusLabel(status: NationalJurisdictionBuildout["status"], count: numb
   if (status === "partial") return "partial";
   if (status === "loaded") return "loaded";
   return "queued";
+}
+
+function trackStateChoice(
+  pageLabel: string,
+  basePath: string,
+  code: string,
+  count: number,
+  source: string,
+) {
+  track("national_state_choice", {
+    page: pageLabel,
+    path: basePath,
+    state: code || "national",
+    loaded_profiles: String(count),
+    source,
+  });
 }
 
 export default function NationalSpotlightSelector({
@@ -64,7 +81,11 @@ export default function NationalSpotlightSelector({
               <span className="text-xs font-black uppercase tracking-wide text-slate-500">Choose state</span>
               <select
                 value={selectedStateCode ?? ""}
-                onChange={(event) => router.push(hrefFor(basePath, event.target.value || undefined))}
+                onChange={(event) => {
+                  const code = event.target.value;
+                  trackStateChoice(pageLabel, basePath, code, profileCountsByState[code] ?? 0, "dropdown");
+                  router.push(hrefFor(basePath, code || undefined));
+                }}
                 className="mt-1 w-full rounded-xl border border-slate-300 bg-slate-50 px-3 py-3 text-sm font-black text-blue-950 outline-none transition focus:border-blue-500 focus:bg-white focus:ring-2 focus:ring-blue-100"
               >
                 <option value="">National map - pick a state</option>
@@ -81,6 +102,7 @@ export default function NationalSpotlightSelector({
             {selectedStateCode ? (
               <Link
                 href={basePath}
+                onClick={() => trackStateChoice(pageLabel, basePath, "", 0, "national_button")}
                 className="rounded-xl border border-slate-300 bg-white px-4 py-3 text-center text-sm font-black text-slate-800 transition hover:border-red-300 hover:bg-red-50 hover:text-red-800"
               >
                 National map
@@ -123,6 +145,9 @@ export default function NationalSpotlightSelector({
               <Link
                 key={state.code}
                 href={hrefFor(basePath, state.code)}
+                onClick={() =>
+                  trackStateChoice(pageLabel, basePath, state.code, profileCountsByState[state.code] ?? 0, "loaded_chip")
+                }
                 className={`shrink-0 rounded-full border px-3 py-1.5 text-xs font-black transition ${
                   selectedStateCode === state.code
                     ? "border-blue-700 bg-blue-700 text-white"
@@ -145,6 +170,9 @@ export default function NationalSpotlightSelector({
                 <Link
                   key={state.code}
                   href={hrefFor(basePath, state.code)}
+                  onClick={() =>
+                    trackStateChoice(pageLabel, basePath, state.code, profileCountsByState[state.code] ?? 0, "state_card")
+                  }
                   className="rounded-xl border border-slate-200 bg-white p-3 transition hover:-translate-y-0.5 hover:border-blue-300 hover:shadow-sm"
                 >
                   <div className="flex items-start justify-between gap-3">
