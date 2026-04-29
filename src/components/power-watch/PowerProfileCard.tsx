@@ -26,7 +26,7 @@ export default function PowerProfileCard({ profile, basePath }: PowerProfileCard
   return (
     <Link
       href={`${basePath}/${profile.slug}`}
-      className="group flex h-full min-w-0 flex-col overflow-hidden rounded-xl border border-slate-300 bg-white p-4 shadow-sm transition hover:-translate-y-0.5 hover:border-blue-400 hover:shadow-md"
+      className="rw-card group flex h-full min-w-0 flex-col overflow-hidden rounded-xl p-4 transition hover:-translate-y-1 hover:shadow-2xl"
     >
       <div className="flex items-start gap-3">
         <PowerProfileAvatar profile={profile} />
@@ -35,7 +35,7 @@ export default function PowerProfileCard({ profile, basePath }: PowerProfileCard
             <p className="text-[11px] font-black uppercase tracking-[0.16em] text-red-700">
               {profile.categoryLabel}
             </p>
-            <span className="rounded-full border border-slate-300 bg-slate-50 px-2.5 py-1 text-[11px] font-black text-slate-700">
+            <span className="rounded-full border border-blue-200 bg-blue-50 px-2.5 py-1 text-[11px] font-black text-blue-950">
               {statusLabel(profile.profileStatus)}
             </span>
           </div>
@@ -72,7 +72,7 @@ export default function PowerProfileCard({ profile, basePath }: PowerProfileCard
         {profile.summary}
       </p>
 
-      <div className="mt-3 rounded-xl border border-slate-200 bg-slate-50 p-3">
+      <div className="rw-card-blue mt-3 rounded-xl p-3">
         <p className="text-[11px] font-black uppercase tracking-wide text-slate-500">Why it is here</p>
         <p className="mt-1 line-clamp-3 text-xs font-semibold leading-5 text-slate-700">{profile.whyTracked}</p>
       </div>
@@ -90,7 +90,7 @@ export default function PowerProfileCard({ profile, basePath }: PowerProfileCard
       {topChecks.length > 0 ? (
         <div className="mt-3 flex flex-wrap gap-1.5">
           {topChecks.map((item) => (
-            <span key={item} className="rounded-full border border-slate-200 bg-white px-2.5 py-1 text-[11px] font-black capitalize text-slate-700">
+            <span key={item} className="rounded-full border border-slate-300 bg-[#f8fbff] px-2.5 py-1 text-[11px] font-black capitalize text-slate-700">
               {item}
             </span>
           ))}

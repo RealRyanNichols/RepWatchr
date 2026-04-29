@@ -21,7 +21,7 @@ export const metadata: Metadata = {
 
 function StatCard({ label, value, detail }: { label: string; value: string | number; detail: string }) {
   return (
-    <div className="min-w-0 rounded-xl border border-slate-300 bg-white p-4 shadow-sm">
+    <div className="rw-card min-w-0 rounded-xl p-4">
       <p className="text-2xl font-black text-slate-950">{value}</p>
       <p className="mt-1 text-xs font-black uppercase tracking-wide text-red-700">{label}</p>
       <p className="mt-2 break-words text-xs font-semibold leading-5 text-slate-600">{detail}</p>
@@ -49,7 +49,7 @@ function stateSourceFor(code: string) {
 function ActionCard({ label, title, detail, href }: { label: string; title: string; detail: string; href: string }) {
   const external = href.startsWith("http");
   const classes =
-    "block rounded-xl border border-slate-300 bg-slate-50 p-4 transition hover:-translate-y-0.5 hover:border-blue-300 hover:bg-blue-50";
+    "rw-card rw-card-blue block rounded-xl p-4 transition hover:-translate-y-0.5";
   const content = (
     <>
       <p className="text-[11px] font-black uppercase tracking-wide text-red-700">{label}</p>
@@ -94,8 +94,8 @@ function LoadedStateChips({
             href={`/attorneys?state=${state.code}`}
             className={`shrink-0 rounded-full border px-3 py-2 text-xs font-black transition ${
               selected
-                ? "border-blue-800 bg-blue-800 text-white"
-                : "border-slate-300 bg-white text-slate-800 hover:border-blue-400 hover:bg-blue-50 hover:text-blue-900"
+                ? "border-[#d6b35a] bg-[#0b2a55] text-white shadow-lg shadow-blue-950/25"
+                : "border-slate-300 bg-[#f8fbff] text-slate-950 hover:border-[#d6b35a] hover:bg-[#fff7df] hover:text-blue-950"
             }`}
           >
             {state.name}: {(profileCountsByState[state.code] ?? 0).toLocaleString()}
@@ -116,7 +116,7 @@ function QueuedStatePanel({
   const source = stateSourceFor(stateCode);
 
   return (
-    <section className="mt-8 rounded-2xl border border-amber-200 bg-amber-50 p-5 shadow-sm">
+    <section className="rw-card rw-card-gold mt-8 rounded-2xl p-5">
       <p className="text-xs font-black uppercase tracking-[0.18em] text-amber-800">State import queued</p>
       <h2 className="mt-2 text-2xl font-black text-amber-950">{stateName} has a source path, not profile cards yet.</h2>
       <p className="mt-2 max-w-3xl text-sm font-semibold leading-6 text-amber-950">
@@ -170,10 +170,9 @@ export default async function AttorneysPage({
   const primarySource = selectedProfiles[0]?.sourceLinks[0] ?? attorneyWatchImportPlan.sourceLinks[0];
 
   return (
-    <div className="bg-slate-100">
+    <div className="rw-page">
       <main className="mx-auto max-w-7xl px-4 py-8 sm:px-6 lg:px-8">
-        <section className="overflow-hidden rounded-2xl border border-slate-300 bg-white text-slate-950 shadow-sm">
-          <div className="h-1.5 w-full bg-[linear-gradient(90deg,#b42318_0%,#b42318_48%,#ffffff_48%,#ffffff_52%,#1d4ed8_52%,#1d4ed8_100%)]" />
+        <section className="rw-hero-panel overflow-hidden rounded-2xl text-slate-950">
           <div className="grid gap-6 p-5 lg:grid-cols-[1.08fr_0.92fr] lg:p-7">
             <div className="min-w-0">
               <p className="text-xs font-black uppercase tracking-[0.18em] text-red-700">
@@ -186,26 +185,26 @@ export default async function AttorneysPage({
                 Public defenders, court-appointed counsel, private attorneys, firms, and bar sources belong in the same legal-power map. The rule is simple: public source first, profile second, and no named public defender page until an official roster and license source are attached.
               </p>
               <div className="mt-5 flex flex-col gap-2 sm:flex-row sm:flex-wrap">
-                <Link href="#profiles" className="rounded-xl bg-blue-700 px-4 py-3 text-center text-sm font-black text-white transition hover:bg-blue-800">
+                <Link href="#profiles" className="rw-action-button rounded-xl px-4 py-3 text-center text-sm font-black transition">
                   Open loaded records
                 </Link>
                 <a
                   href={primarySource.url}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="rounded-xl border border-slate-300 bg-slate-50 px-4 py-3 text-center text-sm font-black text-slate-800 transition hover:border-red-300 hover:bg-red-50"
+                  className="rw-secondary-button rounded-xl px-4 py-3 text-center text-sm font-black transition"
                 >
                   Primary source
                 </a>
                 <Link
                   href="/buildout"
-                  className="rounded-xl border border-slate-300 bg-slate-50 px-4 py-3 text-center text-sm font-black text-slate-800 transition hover:border-blue-300 hover:bg-blue-50"
+                  className="rw-secondary-button rounded-xl px-4 py-3 text-center text-sm font-black transition"
                 >
                   Buildout dashboard
                 </Link>
               </div>
               <div className="mt-5">
-                <p className="mb-2 text-xs font-black uppercase tracking-wide text-slate-500">Loaded states</p>
+                <p className="mb-2 text-xs font-black uppercase tracking-wide text-slate-600">Loaded states</p>
                 <LoadedStateChips
                   selectedStateCode={activeStateCode}
                   jurisdictions={jurisdictions}
@@ -253,10 +252,10 @@ export default async function AttorneysPage({
           <section id="profiles" className="mt-8 scroll-mt-28">
             <div className="mb-4 flex flex-col gap-2 sm:flex-row sm:items-end sm:justify-between">
               <div>
-                <p className="text-xs font-black uppercase tracking-[0.18em] text-red-700">{selectedState?.name ?? activeStateCode} pass</p>
-                <h2 className="text-2xl font-black text-slate-950">Bar-source, firm, and attorney profiles</h2>
+                <p className="text-xs font-black uppercase tracking-[0.18em] text-[#d6b35a]">{selectedState?.name ?? activeStateCode} pass</p>
+                <h2 className="text-2xl font-black text-white">Bar-source, firm, and attorney profiles</h2>
               </div>
-              <p className="text-xs font-bold text-slate-500">{selectedProfiles.length} source-seeded records loaded.</p>
+              <p className="text-xs font-bold text-slate-300">{selectedProfiles.length} source-seeded records loaded.</p>
             </div>
             <div className="grid gap-4 md:grid-cols-2 xl:grid-cols-3">
               {nonPublicDefenseFirms.map((profile) => (
@@ -270,13 +269,13 @@ export default async function AttorneysPage({
         ) : null}
 
         {publicDefenseProfiles.length > 0 ? (
-          <section id="public-defense" className="mt-8 scroll-mt-28 rounded-2xl border border-red-100 bg-red-50 p-5 shadow-sm">
+          <section id="public-defense" className="rw-dark-panel mt-8 scroll-mt-28 rounded-2xl p-5">
             <div className="flex flex-col gap-1 sm:flex-row sm:items-end sm:justify-between">
               <div>
-                <p className="text-xs font-black uppercase tracking-[0.18em] text-red-800">Public defender pass</p>
-                <h2 className="text-2xl font-black text-slate-950">Loaded offices and defender sources</h2>
+                <p className="text-xs font-black uppercase tracking-[0.18em] text-[#d6b35a]">Public defender pass</p>
+                <h2 className="text-2xl font-black text-white">Loaded offices and defender sources</h2>
               </div>
-              <p className="text-xs font-bold text-slate-600">{publicDefenseProfiles.length} records in {selectedState?.name ?? activeStateCode}</p>
+              <p className="text-xs font-bold text-slate-300">{publicDefenseProfiles.length} records in {selectedState?.name ?? activeStateCode}</p>
             </div>
             <div className="mt-4 grid gap-3 md:grid-cols-2 xl:grid-cols-3">
               {publicDefenseProfiles.map((profile) => (
@@ -286,7 +285,7 @@ export default async function AttorneysPage({
           </section>
         ) : null}
 
-        <section className="mt-8 rounded-2xl border border-slate-300 bg-white p-5 shadow-sm">
+        <section className="rw-panel mt-8 overflow-hidden rounded-2xl p-5">
           <div className="grid gap-5 lg:grid-cols-[0.82fr_1.18fr]">
             <div>
               <p className="text-xs font-black uppercase tracking-[0.18em] text-red-700">
@@ -309,7 +308,7 @@ export default async function AttorneysPage({
                 "Public grievance or discipline records",
                 "Correction and source-review log",
               ].map((item) => (
-                <div key={item} className="rounded-lg border border-slate-300 bg-slate-50 px-3 py-2 text-sm font-black text-slate-800">
+                <div key={item} className="rw-card rounded-lg px-3 py-2 text-sm font-black text-slate-800">
                   {item}
                 </div>
               ))}

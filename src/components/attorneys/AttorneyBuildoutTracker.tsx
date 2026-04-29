@@ -34,14 +34,13 @@ export default function AttorneyBuildoutTracker({ profiles }: AttorneyBuildoutTr
   const queuedSources = dashboard.sources.filter((source) => source.region === "National queue");
 
   return (
-    <section className="mt-8 overflow-hidden rounded-2xl border border-slate-300 bg-white shadow-sm">
-      <div className="h-1.5 w-full bg-[linear-gradient(90deg,#b42318_0%,#b42318_32%,#d6b35a_32%,#d6b35a_58%,#1d4ed8_58%,#1d4ed8_100%)]" />
+    <section className="rw-dark-panel mt-8 overflow-hidden rounded-2xl">
       <div className="p-5 lg:p-7">
         <div className="grid gap-5 lg:grid-cols-[0.9fr_1.1fr]">
           <div>
-            <p className="text-xs font-black uppercase tracking-[0.18em] text-red-700">Attorney launch tracker</p>
-            <h2 className="mt-2 text-2xl font-black text-slate-950">Texas first, then the surrounding states.</h2>
-            <p className="mt-2 text-sm font-semibold leading-6 text-slate-600">
+            <p className="text-xs font-black uppercase tracking-[0.18em] text-[#d6b35a]">Attorney launch tracker</p>
+            <h2 className="mt-2 text-2xl font-black text-white">Texas first, then the surrounding states.</h2>
+            <p className="mt-2 text-sm font-semibold leading-6 text-slate-300">
               The attorney buildout now separates source discovery, profile seeding, public-defender office mapping, license verification, cross-linking, and model feedback. A state can be mapped without pretending the attorney records are complete.
             </p>
             <div className="mt-4 grid gap-3 sm:grid-cols-2 xl:grid-cols-5">
@@ -60,7 +59,7 @@ export default function AttorneyBuildoutTracker({ profiles }: AttorneyBuildoutTr
                 href={attorneyNationalSourcePlan.primaryNationalSource.url}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="rounded-xl border border-slate-300 bg-slate-50 px-4 py-3 text-sm font-black text-slate-800 transition hover:border-blue-300 hover:bg-blue-50"
+                className="rw-secondary-button rounded-xl px-4 py-3 text-sm font-black transition"
               >
                 ABA licensing map
               </a>
@@ -68,13 +67,13 @@ export default function AttorneyBuildoutTracker({ profiles }: AttorneyBuildoutTr
                 href={attorneyNationalSourcePlan.texasPublicInfoSource.url}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="rounded-xl border border-slate-300 bg-slate-50 px-4 py-3 text-sm font-black text-slate-800 transition hover:border-red-300 hover:bg-red-50"
+                className="rw-secondary-button rounded-xl px-4 py-3 text-sm font-black transition"
               >
                 Texas grievance history
               </a>
               <Link
                 href="/buildout"
-                className="rounded-xl bg-blue-900 px-4 py-3 text-sm font-black text-white transition hover:bg-red-700"
+                className="rw-action-button rounded-xl px-4 py-3 text-sm font-black transition"
               >
                 Buildout dashboard
               </Link>
@@ -88,7 +87,7 @@ export default function AttorneyBuildoutTracker({ profiles }: AttorneyBuildoutTr
                 href={stage.href}
                 target={stage.href.startsWith("http") ? "_blank" : undefined}
                 rel={stage.href.startsWith("http") ? "noopener noreferrer" : undefined}
-                className="rounded-2xl border border-slate-200 bg-slate-50 p-4 transition hover:-translate-y-0.5 hover:border-blue-300 hover:bg-blue-50"
+                className="rw-card rw-card-blue rounded-2xl p-4 transition hover:-translate-y-0.5"
               >
                 <div className="flex flex-col gap-2 sm:flex-row sm:items-start sm:justify-between">
                   <div>
@@ -100,7 +99,7 @@ export default function AttorneyBuildoutTracker({ profiles }: AttorneyBuildoutTr
                     <p className="text-[10px] font-black uppercase tracking-wide text-red-700">Rocket stage: {stage.stage}</p>
                   </div>
                 </div>
-                <div className="mt-3 h-2 overflow-hidden rounded-full bg-white">
+                <div className="mt-3 h-2 overflow-hidden rounded-full bg-slate-200">
                   <div className={`h-full rounded-full ${toneFor(stage.percent)}`} style={{ width: `${stage.percent}%` }} />
                 </div>
                 <p className="mt-2 text-[11px] font-bold uppercase tracking-wide text-slate-500">
@@ -112,7 +111,7 @@ export default function AttorneyBuildoutTracker({ profiles }: AttorneyBuildoutTr
         </div>
 
         <div className="mt-6 grid gap-4 xl:grid-cols-[0.8fr_0.95fr_1.25fr]">
-          <div className="rounded-2xl border border-blue-100 bg-blue-50 p-4">
+          <div className="rw-card rw-card-blue rounded-2xl p-4">
             <p className="text-xs font-black uppercase tracking-wide text-blue-800">Priority source ring</p>
             <div className="mt-3 grid gap-2">
               {prioritySources.map((source) => (
@@ -121,7 +120,7 @@ export default function AttorneyBuildoutTracker({ profiles }: AttorneyBuildoutTr
                   href={source.licenseLookupUrl}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="rounded-xl border border-blue-100 bg-white p-3 transition hover:border-blue-300"
+                  className="rw-card rounded-xl p-3 transition hover:-translate-y-0.5"
                 >
                   <div className="flex items-start justify-between gap-3">
                     <div>
@@ -138,7 +137,7 @@ export default function AttorneyBuildoutTracker({ profiles }: AttorneyBuildoutTr
             </div>
           </div>
 
-          <div className="rounded-2xl border border-red-100 bg-red-50 p-4">
+          <div className="rw-card rw-card-red rounded-2xl p-4">
             <div className="flex flex-col gap-1 sm:flex-row sm:items-end sm:justify-between">
               <div>
                 <p className="text-xs font-black uppercase tracking-wide text-red-800">Public defender source queue</p>
@@ -153,7 +152,7 @@ export default function AttorneyBuildoutTracker({ profiles }: AttorneyBuildoutTr
                   href={source.sourceUrl}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="rounded-xl border border-red-100 bg-white p-3 transition hover:border-red-300 hover:bg-red-50"
+                  className="rw-card rounded-xl p-3 transition hover:-translate-y-0.5"
                 >
                   <div className="flex items-start justify-between gap-3">
                     <div>
@@ -172,7 +171,7 @@ export default function AttorneyBuildoutTracker({ profiles }: AttorneyBuildoutTr
             </div>
           </div>
 
-          <div className="rounded-2xl border border-slate-200 bg-slate-50 p-4">
+          <div className="rw-card rw-card-gold rounded-2xl p-4">
             <div className="flex flex-col gap-1 sm:flex-row sm:items-end sm:justify-between">
               <div>
                 <p className="text-xs font-black uppercase tracking-wide text-red-700">National source queue</p>
@@ -187,7 +186,7 @@ export default function AttorneyBuildoutTracker({ profiles }: AttorneyBuildoutTr
                   href={source.licenseLookupUrl}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="rounded-xl border border-white bg-white p-3 transition hover:border-blue-300 hover:bg-blue-50"
+                  className="rw-card rounded-xl p-3 transition hover:-translate-y-0.5"
                 >
                   <div className="flex items-center justify-between gap-2">
                     <p className="text-sm font-black text-slate-950">{source.state}</p>
@@ -208,7 +207,7 @@ export default function AttorneyBuildoutTracker({ profiles }: AttorneyBuildoutTr
 
 function Metric({ label, value, detail }: { label: string; value: string | number; detail: string }) {
   return (
-    <div className="rounded-xl border border-slate-200 bg-slate-50 p-4">
+    <div className="rw-card rounded-xl p-4">
       <p className="text-2xl font-black text-blue-950">{value}</p>
       <p className="mt-1 text-xs font-black uppercase tracking-wide text-red-700">{label}</p>
       <p className="mt-2 text-xs font-semibold leading-5 text-slate-600">{detail}</p>

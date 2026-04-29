@@ -25,21 +25,28 @@ function initialsFor(name: string) {
 
 export default function PowerProfileAvatar({ profile, size = "md" }: PowerProfileAvatarProps) {
   const imageLabel = profile.profileImageAlt ?? `${profile.name} profile image`;
+  const initials = initialsFor(profile.name);
 
   return (
     <div
-      className={`relative shrink-0 overflow-hidden rounded-full border border-white bg-slate-200 shadow-sm ${sizeClasses[size]}`}
+      className={`relative shrink-0 overflow-hidden rounded-full border-2 border-[#d6b35a] bg-[conic-gradient(from_220deg,#06172f,#1d4ed8,#f8fbff,#bf0d3e,#06172f)] p-[3px] shadow-lg shadow-blue-950/25 ${sizeClasses[size]}`}
     >
       {profile.profileImageUrl ? (
         <span
           aria-label={imageLabel}
           role="img"
-          className="block h-full w-full bg-cover bg-center"
+          className="block h-full w-full rounded-full bg-cover bg-center"
           style={{ backgroundImage: `url("${profile.profileImageUrl}")` }}
         />
       ) : (
-        <span className="grid h-full w-full place-items-center font-black text-slate-700">
-          {initialsFor(profile.name)}
+        <span
+          aria-label={imageLabel}
+          role="img"
+          className="grid h-full w-full place-items-center rounded-full bg-[linear-gradient(135deg,#06172f_0%,#0b2a55_42%,#b42318_100%)] font-black text-white ring-1 ring-white/20"
+        >
+          <span className="grid h-[74%] w-[74%] place-items-center rounded-full border border-white/35 bg-white/10 text-center shadow-inner">
+            {initials}
+          </span>
         </span>
       )}
       {profile.watchMark ? (

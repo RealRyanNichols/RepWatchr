@@ -74,12 +74,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className="h-full antialiased">
-      <body className="min-h-full flex flex-col bg-gray-50 text-gray-900">
+      <body className="min-h-full flex flex-col bg-[#06172f] text-slate-100">
         <GoogleAnalytics />
         <PageViewTracker />
         <AuthProvider>
           <Header />
-          <main className="flex-1">{children}</main>
+          <main className="rw-patriot-shell flex-1">{children}</main>
           <Footer />
         </AuthProvider>
         <Analytics />

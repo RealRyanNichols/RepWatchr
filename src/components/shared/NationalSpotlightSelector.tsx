@@ -68,8 +68,7 @@ export default function NationalSpotlightSelector({
   const highlightedStates = jurisdictions.filter((state) => (profileCountsByState[state.code] ?? 0) > 0);
 
   return (
-    <section className="overflow-hidden rounded-2xl border border-slate-300 bg-white text-slate-950 shadow-sm">
-      <div className="h-1.5 w-full bg-[linear-gradient(90deg,#b42318_0%,#b42318_33%,#ffffff_33%,#ffffff_66%,#1d4ed8_66%,#1d4ed8_100%)]" />
+    <section className="rw-hero-panel overflow-hidden rounded-2xl text-slate-950">
       <div className="grid gap-5 p-5 lg:grid-cols-[1.05fr_0.95fr] lg:p-7">
         <div>
           <p className="text-xs font-black uppercase tracking-[0.18em] text-red-700">{pageLabel}</p>
@@ -86,7 +85,7 @@ export default function NationalSpotlightSelector({
                   trackStateChoice(pageLabel, basePath, code, profileCountsByState[code] ?? 0, "dropdown");
                   router.push(hrefFor(basePath, code || undefined));
                 }}
-                className="mt-1 w-full rounded-xl border border-slate-300 bg-slate-50 px-3 py-3 text-sm font-black text-blue-950 outline-none transition focus:border-blue-500 focus:bg-white focus:ring-2 focus:ring-blue-100"
+                className="mt-1 w-full rounded-xl border border-slate-300 bg-[#f8fbff] px-3 py-3 text-sm font-black text-blue-950 outline-none transition focus:border-blue-500 focus:bg-white focus:ring-2 focus:ring-blue-100"
               >
                 <option value="">National map - pick a state</option>
                 {jurisdictions.map((state) => {
@@ -103,7 +102,7 @@ export default function NationalSpotlightSelector({
               <Link
                 href={basePath}
                 onClick={() => trackStateChoice(pageLabel, basePath, "", 0, "national_button")}
-                className="rounded-xl border border-slate-300 bg-white px-4 py-3 text-center text-sm font-black text-slate-800 transition hover:border-red-300 hover:bg-red-50 hover:text-red-800"
+                className="rw-secondary-button rounded-xl px-4 py-3 text-center text-sm font-black transition"
               >
                 National map
               </Link>
@@ -111,7 +110,7 @@ export default function NationalSpotlightSelector({
           </div>
 
           {selected ? (
-            <div className="mt-4 rounded-xl border border-blue-100 bg-blue-50 p-4">
+            <div className="rw-card rw-card-blue mt-4 rounded-xl p-4">
               <p className="text-xs font-black uppercase tracking-wide text-blue-800">Selected state</p>
               <p className="mt-1 text-xl font-black text-blue-950">{selected.name}</p>
               <p className="mt-1 text-sm font-semibold leading-6 text-slate-700">
@@ -121,7 +120,7 @@ export default function NationalSpotlightSelector({
               </p>
             </div>
           ) : (
-            <div className="mt-4 rounded-xl border border-amber-200 bg-amber-50 p-4">
+            <div className="rw-card rw-card-gold mt-4 rounded-xl p-4">
               <p className="text-xs font-black uppercase tracking-wide text-amber-800">National default</p>
               <p className="mt-1 text-sm font-semibold leading-6 text-amber-950">
                 Pick a state before opening the profile list. Loaded states open records now; queued states show what still needs source import.
@@ -139,7 +138,7 @@ export default function NationalSpotlightSelector({
       </div>
 
       {highlightedStates.length > 0 ? (
-        <div className="border-t border-slate-200 bg-slate-50 px-5 py-3 lg:px-7">
+        <div className="border-t border-slate-200 bg-[#eef6ff]/90 px-5 py-3 lg:px-7">
           <div className="flex gap-2 overflow-x-auto pb-1">
             {highlightedStates.map((state) => (
               <Link
@@ -150,8 +149,8 @@ export default function NationalSpotlightSelector({
                 }
                 className={`shrink-0 rounded-full border px-3 py-1.5 text-xs font-black transition ${
                   selectedStateCode === state.code
-                    ? "border-blue-700 bg-blue-700 text-white"
-                    : "border-slate-300 bg-white text-slate-800 hover:border-blue-400 hover:bg-blue-50 hover:text-blue-800"
+                    ? "border-[#d6b35a] bg-[#0b2a55] text-white"
+                    : "border-slate-300 bg-[#f8fbff] text-slate-800 hover:border-[#d6b35a] hover:bg-[#fff7df] hover:text-blue-950"
                 }`}
               >
                 {state.name}: {(profileCountsByState[state.code] ?? 0).toLocaleString()}
@@ -162,7 +161,7 @@ export default function NationalSpotlightSelector({
       ) : null}
 
       {showFullGrid ? (
-        <div className="border-t border-slate-200 bg-slate-50 p-4 lg:p-5">
+        <div className="border-t border-slate-200 bg-[#eef6ff]/90 p-4 lg:p-5">
           <div className="grid gap-2 sm:grid-cols-2 lg:grid-cols-4">
             {jurisdictions.map((state) => {
               const count = profileCountsByState[state.code] ?? 0;
@@ -173,7 +172,7 @@ export default function NationalSpotlightSelector({
                   onClick={() =>
                     trackStateChoice(pageLabel, basePath, state.code, profileCountsByState[state.code] ?? 0, "state_card")
                   }
-                  className="rounded-xl border border-slate-200 bg-white p-3 transition hover:-translate-y-0.5 hover:border-blue-300 hover:shadow-sm"
+                  className="rw-card rounded-xl p-3 transition hover:-translate-y-0.5"
                 >
                   <div className="flex items-start justify-between gap-3">
                     <div>
@@ -199,7 +198,7 @@ export default function NationalSpotlightSelector({
 
 function Metric({ label, value, detail }: { label: string; value: number; detail: string }) {
   return (
-    <div className="rounded-xl border border-slate-200 bg-slate-50 p-4">
+    <div className="rw-card rounded-xl p-4">
       <p className="text-2xl font-black text-blue-950">{value.toLocaleString()}</p>
       <p className="mt-1 text-xs font-black uppercase tracking-wide text-red-700">{label}</p>
       <p className="mt-2 text-xs font-semibold leading-5 text-slate-600">{detail}</p>
