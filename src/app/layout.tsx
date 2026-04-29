@@ -4,6 +4,7 @@ import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 import AuthProvider from "@/components/auth/AuthProvider";
 import GoogleAnalytics from "@/components/shared/GoogleAnalytics";
+import PageViewTracker from "@/components/shared/PageViewTracker";
 import { Analytics } from "@vercel/analytics/next";
 
 export const metadata: Metadata = {
@@ -75,6 +76,7 @@ export default function RootLayout({
     <html lang="en" className="h-full antialiased">
       <body className="min-h-full flex flex-col bg-gray-50 text-gray-900">
         <GoogleAnalytics />
+        <PageViewTracker />
         <AuthProvider>
           <Header />
           <main className="flex-1">{children}</main>

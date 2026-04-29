@@ -12,7 +12,7 @@ export default function PrivacyPage() {
         Privacy Policy
       </h1>
       <p className="text-sm text-gray-500 mb-8">
-        Last updated: April 16, 2026
+        Last updated: April 29, 2026
       </p>
 
       <div className="prose prose-gray max-w-none space-y-6 text-sm text-gray-700">
@@ -45,9 +45,11 @@ export default function PrivacyPage() {
           </p>
           <p className="mt-2">
             <strong>Usage Data:</strong> We may collect anonymized analytics data
-            about how visitors use the site (pages visited, time spent) using
-            privacy-respecting analytics tools. We do not use tracking cookies for
-            advertising purposes.
+            about how visitors use the site, including public pages visited,
+            referral domain, country-level request information, device category,
+            and aggregate view counts. We do not store raw IP addresses or raw
+            user-agent strings in our owned page-view table, and we do not use
+            tracking cookies for advertising purposes.
           </p>
         </section>
 

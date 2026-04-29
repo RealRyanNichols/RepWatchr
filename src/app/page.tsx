@@ -39,6 +39,25 @@ const levelCards = [
   },
 ];
 
+const memberFunnelTools = [
+  {
+    label: "Build a records request",
+    detail: "Turn a concern into a clean request for agendas, minutes, filings, videos, contracts, or vote records.",
+  },
+  {
+    label: "Start a timeline",
+    detail: "Drop facts into a timeline starter that separates dates, claims, records, and missing proof.",
+  },
+  {
+    label: "Track a target",
+    detail: "Follow officials, boards, counties, races, attorneys, media, issues, and source gaps from one member office.",
+  },
+  {
+    label: "Copy a safer post",
+    detail: "Share what is known without overstating what still needs records.",
+  },
+];
+
 function initialsFor(official: Official) {
   return `${official.firstName[0] ?? ""}${official.lastName[0] ?? ""}`;
 }
@@ -221,10 +240,10 @@ export default function HomePage() {
                 Open Officials
               </Link>
               <Link
-                href="/feedback"
+                href="/create-account"
                 className="rounded-xl border border-red-200 bg-white px-4 py-3 text-center text-sm font-black text-red-700 shadow-sm transition hover:-translate-y-0.5 hover:border-red-400 hover:bg-red-50"
               >
-                Submit A Source
+                Create Free Account
               </Link>
               <Link
                 href="/school-boards"
@@ -301,6 +320,53 @@ export default function HomePage() {
                 <p className="mt-0.5 text-[11px] font-semibold text-gray-400">
                   {stat.caption}
                 </p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Member Funnel */}
+      <section className="border-b border-blue-100 bg-slate-950 text-white">
+        <div className="mx-auto grid max-w-7xl gap-6 px-4 py-12 sm:px-6 lg:grid-cols-[0.9fr_1.1fr] lg:px-8">
+          <div>
+            <p className="text-xs font-black uppercase tracking-wide text-red-300">Free founder access</p>
+            <h2 className="mt-2 text-3xl font-black leading-tight sm:text-5xl">
+              Give people useful political tools before asking them for money.
+            </h2>
+            <p className="mt-4 max-w-2xl text-sm font-semibold leading-6 text-slate-300">
+              Create an account and get the member office: watch lists, accountability packets,
+              public-records request drafts, timeline starters, source tracking, signal map, and Faretta AI.
+              The goal is simple: make RepWatchr useful enough that people come back.
+            </p>
+            <div className="mt-5 flex flex-wrap gap-3">
+              <Link
+                href="/create-account"
+                className="rounded-xl bg-white px-5 py-3 text-sm font-black text-blue-950 shadow-sm transition hover:-translate-y-0.5 hover:bg-blue-50"
+              >
+                Start Free
+              </Link>
+              <Link
+                href="/dashboard"
+                className="rounded-xl border border-white/20 px-5 py-3 text-sm font-black text-white transition hover:-translate-y-0.5 hover:bg-white/10"
+              >
+                Open Member Office
+              </Link>
+            </div>
+          </div>
+
+          <div className="grid gap-3 sm:grid-cols-2">
+            <div className="rounded-2xl border border-amber-300/30 bg-amber-300 p-5 text-slate-950">
+              <p className="text-xs font-black uppercase tracking-wide">Founder window</p>
+              <p className="mt-2 text-4xl font-black">90 days</p>
+              <p className="mt-2 text-sm font-bold leading-6">
+                Free buildout period. No price wall until the tools become part of people&apos;s regular research habit.
+              </p>
+            </div>
+            {memberFunnelTools.map((tool) => (
+              <div key={tool.label} className="rounded-2xl border border-white/10 bg-white/10 p-5">
+                <p className="text-sm font-black text-white">{tool.label}</p>
+                <p className="mt-2 text-xs font-semibold leading-5 text-slate-300">{tool.detail}</p>
               </div>
             ))}
           </div>

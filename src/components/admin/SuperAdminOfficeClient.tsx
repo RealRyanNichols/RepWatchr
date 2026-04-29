@@ -54,6 +54,13 @@ type OperatorAsk = {
   created_at: string;
 };
 
+type PageViewSummary = {
+  period: string;
+  page_views: number;
+  unique_daily_visitors: number;
+  last_view_at: string | null;
+};
+
 type CaseForm = {
   title: string;
   summary: string;
@@ -127,6 +134,122 @@ const emptyQuestionForm: QuestionForm = {
   dueDate: "",
 };
 
+const previewLiveCounts: LiveCount[] = [
+  { label: "Citizen votes", table: "citizen_votes", count: 1284, status: "green", detail: "Approve and disapprove votes from public profiles." },
+  { label: "Citizen grades", table: "citizen_grades", count: 412, status: "green", detail: "A-F accountability grades attached to officials and candidates." },
+  { label: "Comments", table: "comments", count: 96, status: "yellow", detail: "Public discussion rows waiting on moderation rules." },
+  { label: "Faretta interactions", table: "faretta_interactions", count: 238, status: "green", detail: "Search, chat, note, and prompt-button interactions." },
+  { label: "Profile activation requests", table: "profile_claims", count: 7, status: "yellow", detail: "24 total profile_claims rows, pending shown here." },
+  { label: "Accountability cases", table: "accountability_cases", count: 18, status: "yellow", detail: "Case-builder and Faretta.Legal intake rows." },
+  { label: "Faretta form submissions", table: "faretta_case_submissions", count: 6, status: "yellow", detail: "Cases received from Faretta.Legal intake." },
+  { label: "Profile questions", table: "profile_questions", count: 31, status: "yellow", detail: "Questions attached to target profiles." },
+  { label: "Open office tasks", table: "operator_tasks", count: 14, status: "yellow", detail: "Ryan-facing to-dos tracked inside the office." },
+  { label: "Open asks for Ryan", table: "operator_asks", count: 5, status: "yellow", detail: "Clickable choices that replace numbered chat replies." },
+  { label: "RepWatchr page views", table: "site_page_views", count: 3487, status: "green", detail: "Owned public-page views collected without storing raw IPs or raw user agents." },
+  { label: "Unique daily visitors", table: "site_unique_daily_visitors", count: 1194, status: "green", detail: "Distinct daily anonymous visitor hashes from the owned tracker." },
+];
+
+const previewCases: RecentCase[] = [
+  {
+    id: "preview-case-1",
+    title: "Tyler ISD vendor conflict review",
+    status: "intake_review",
+    priority: "red",
+    visibility_status: "private_review",
+    source_site: "faretta_legal",
+    created_at: "2026-04-29T14:10:00.000Z",
+  },
+  {
+    id: "preview-case-2",
+    title: "Public-records delay tracker",
+    status: "question_sent",
+    priority: "yellow",
+    visibility_status: "sent_to_target",
+    source_site: "repwatchr_admin",
+    created_at: "2026-04-29T12:30:00.000Z",
+  },
+  {
+    id: "preview-case-3",
+    title: "School-board source gap bundle",
+    status: "held_private",
+    priority: "green",
+    visibility_status: "held",
+    source_site: "repwatchr_admin",
+    created_at: "2026-04-28T20:15:00.000Z",
+  },
+];
+
+const previewQuestions: RecentQuestion[] = [
+  {
+    id: "preview-question-1",
+    target_name: "Tyler ISD Board Member",
+    status: "needs_review",
+    visibility_status: "private_review",
+    question: "Please identify any public vote, agenda item, contract, or disclosure tied to the vendor relationship flagged in the submission.",
+    created_at: "2026-04-29T14:12:00.000Z",
+  },
+  {
+    id: "preview-question-2",
+    target_name: "County records office",
+    status: "sent",
+    visibility_status: "sent_to_target",
+    question: "What is the documented reason for the delayed public-records response, and what date was the request first received?",
+    created_at: "2026-04-29T11:02:00.000Z",
+  },
+];
+
+const previewTasks: OfficeTask[] = [
+  {
+    id: "preview-task-1",
+    title: "Finish Dallas-area school-board source review",
+    severity: "red",
+    status: "open",
+    category: "Texas buildout",
+    created_at: "2026-04-29T13:45:00.000Z",
+  },
+  {
+    id: "preview-task-2",
+    title: "Connect Vercel Analytics export to office counts",
+    severity: "yellow",
+    status: "open",
+    category: "Analytics",
+    created_at: "2026-04-29T10:20:00.000Z",
+  },
+  {
+    id: "preview-task-3",
+    title: "Review pending profile activation requests",
+    severity: "yellow",
+    status: "open",
+    category: "Claims",
+    created_at: "2026-04-28T21:05:00.000Z",
+  },
+];
+
+const previewAsks: OperatorAsk[] = [
+  {
+    id: "preview-ask-1",
+    question: "Should public case files require two source-backed records before publication?",
+    status: "open",
+    options: ["Two-source minimum", "Admin decides case by case", "Public record only"],
+    selected_option: null,
+    response_notes: null,
+    created_at: "2026-04-29T09:35:00.000Z",
+  },
+  {
+    id: "preview-ask-2",
+    question: "Where should profile activation requests land first?",
+    status: "open",
+    options: ["Claims queue", "SuperAdmin overview", "Email digest"],
+    selected_option: null,
+    response_notes: null,
+    created_at: "2026-04-28T18:00:00.000Z",
+  },
+];
+
+function previewId(prefix: string) {
+  return `${prefix}-${Date.now().toString(36)}`;
+}
+
 function formatCount(value: number | null) {
   if (value === null) return "Needs migration";
   return value.toLocaleString();
@@ -196,18 +319,20 @@ function officeReply(input: string, snapshot: SuperAdminSnapshot, counts: LiveCo
 export default function SuperAdminOfficeClient({
   initialSnapshot,
   initialWatchItems,
+  previewMode = false,
 }: {
   initialSnapshot: SuperAdminSnapshot;
   initialWatchItems: SuperAdminWatchItem[];
+  previewMode?: boolean;
 }) {
   const { user, roles, loading } = useAuth();
   const supabase = useMemo(() => createClient(), []);
   const [activeTab, setActiveTab] = useState<TabId>("overview");
-  const [liveCounts, setLiveCounts] = useState<LiveCount[]>([]);
-  const [recentCases, setRecentCases] = useState<RecentCase[]>([]);
-  const [recentQuestions, setRecentQuestions] = useState<RecentQuestion[]>([]);
-  const [tasks, setTasks] = useState<OfficeTask[]>([]);
-  const [asks, setAsks] = useState<OperatorAsk[]>([]);
+  const [liveCounts, setLiveCounts] = useState<LiveCount[]>(previewMode ? previewLiveCounts : []);
+  const [recentCases, setRecentCases] = useState<RecentCase[]>(previewMode ? previewCases : []);
+  const [recentQuestions, setRecentQuestions] = useState<RecentQuestion[]>(previewMode ? previewQuestions : []);
+  const [tasks, setTasks] = useState<OfficeTask[]>(previewMode ? previewTasks : []);
+  const [asks, setAsks] = useState<OperatorAsk[]>(previewMode ? previewAsks : []);
   const [message, setMessage] = useState("");
   const [error, setError] = useState("");
   const [command, setCommand] = useState("");
@@ -219,9 +344,10 @@ export default function SuperAdminOfficeClient({
   const [questionForm, setQuestionForm] = useState<QuestionForm>(emptyQuestionForm);
   const [pickedDefaults, setPickedDefaults] = useState<Record<string, string>>({});
 
-  const isOperator = roles.some((role) => ["admin", "reviewer", "researcher"].includes(role));
+  const isOperator = previewMode || roles.some((role) => ["admin", "reviewer", "researcher"].includes(role));
 
   useEffect(() => {
+    if (previewMode) return;
     if (loading || !user || !isOperator) return;
     let mounted = true;
 
@@ -238,6 +364,7 @@ export default function SuperAdminOfficeClient({
         questions,
         openTasks,
         openAsks,
+        pageViews,
         caseRows,
         questionRows,
         taskRows,
@@ -254,6 +381,7 @@ export default function SuperAdminOfficeClient({
         countRows(supabase, "profile_questions"),
         countRows(supabase, "operator_tasks", { column: "status", value: "open" }),
         countRows(supabase, "operator_asks", { column: "status", value: "open" }),
+        supabase.from("site_page_view_summary").select("period, page_views, unique_daily_visitors, last_view_at").eq("period", "all_time").maybeSingle(),
         supabase.from("accountability_cases").select("id, title, status, priority, visibility_status, source_site, created_at").order("created_at", { ascending: false }).limit(8),
         supabase.from("profile_questions").select("id, target_name, status, visibility_status, question, created_at").order("created_at", { ascending: false }).limit(8),
         supabase.from("operator_tasks").select("id, title, severity, status, category, created_at").order("created_at", { ascending: false }).limit(8),
@@ -262,6 +390,8 @@ export default function SuperAdminOfficeClient({
 
       if (!mounted) return;
 
+      const pageViewSummary = pageViews.error ? null : pageViews.data as PageViewSummary | null;
+      const pageViewsError = pageViews.error?.message;
       setLiveCounts([
         { label: "Citizen votes", table: "citizen_votes", count: votes.count, status: votes.count && votes.count > 0 ? "green" : "yellow", detail: votes.error || "Rows from approve and disapprove voting." },
         { label: "Citizen grades", table: "citizen_grades", count: grades.count, status: grades.count && grades.count > 0 ? "green" : "yellow", detail: grades.error || "Rows from A-F grading." },
@@ -273,6 +403,20 @@ export default function SuperAdminOfficeClient({
         { label: "Profile questions", table: "profile_questions", count: questions.count, status: questions.count === null ? "red" : questions.count > 0 ? "yellow" : "green", detail: questions.error || "Questions attached to target profiles." },
         { label: "Open office tasks", table: "operator_tasks", count: openTasks.count, status: openTasks.count === null ? "red" : openTasks.count > 0 ? "yellow" : "green", detail: openTasks.error || "Ryan-facing to-dos tracked inside the office." },
         { label: "Open asks for Ryan", table: "operator_asks", count: openAsks.count, status: openAsks.count === null ? "red" : openAsks.count > 0 ? "yellow" : "green", detail: openAsks.error || "Clickable choices that replace numbered chat replies." },
+        {
+          label: "RepWatchr page views",
+          table: "site_page_views",
+          count: pageViewSummary?.page_views ?? null,
+          status: pageViews.error ? "red" : pageViewSummary?.page_views ? "green" : "yellow",
+          detail: pageViewsError || "Owned public-page views. Raw IP addresses and raw user agents are not stored.",
+        },
+        {
+          label: "Unique daily visitors",
+          table: "site_unique_daily_visitors",
+          count: pageViewSummary?.unique_daily_visitors ?? null,
+          status: pageViews.error ? "red" : pageViewSummary?.unique_daily_visitors ? "green" : "yellow",
+          detail: pageViewsError || "Distinct daily anonymous visitor hashes from public-page traffic.",
+        },
       ]);
       if (!caseRows.error) setRecentCases((caseRows.data ?? []) as RecentCase[]);
       if (!questionRows.error) setRecentQuestions((questionRows.data ?? []) as RecentQuestion[]);
@@ -292,12 +436,26 @@ export default function SuperAdminOfficeClient({
       mounted = false;
       window.clearInterval(interval);
     };
-  }, [isOperator, loading, supabase, user]);
+  }, [isOperator, loading, previewMode, supabase, user]);
 
   async function addTask(event: FormEvent<HTMLFormElement>) {
     event.preventDefault();
-    if (!user || !taskTitle.trim()) return;
+    if (!taskTitle.trim()) return;
     setError("");
+    if (previewMode) {
+      setTasks((current) => [{
+        id: previewId("preview-task"),
+        title: taskTitle.trim(),
+        category: taskCategory.trim() || "General",
+        severity: taskSeverity,
+        status: "open",
+        created_at: new Date().toISOString(),
+      }, ...current]);
+      setTaskTitle("");
+      setMessage("Preview task added. Real saves still require SuperAdmin access.");
+      return;
+    }
+    if (!user) return;
     const { data, error: insertError } = await supabase.from("operator_tasks").insert({
       title: taskTitle.trim(),
       category: taskCategory.trim() || "General",
@@ -313,8 +471,35 @@ export default function SuperAdminOfficeClient({
 
   async function addCase(event: FormEvent<HTMLFormElement>) {
     event.preventDefault();
-    if (!user || !caseForm.title.trim() || !caseForm.summary.trim()) return;
+    if (!caseForm.title.trim() || !caseForm.summary.trim()) return;
     setError("");
+    if (previewMode) {
+      const newCase: RecentCase = {
+        id: previewId("preview-case"),
+        title: caseForm.title.trim(),
+        status: "intake_review",
+        priority: caseForm.priority,
+        visibility_status: "private_review",
+        source_site: "repwatchr_preview",
+        created_at: new Date().toISOString(),
+      };
+      setRecentCases((current) => [newCase, ...current]);
+      if (caseForm.question.trim() && caseForm.targetName.trim()) {
+        setRecentQuestions((current) => [{
+          id: previewId("preview-question"),
+          target_name: caseForm.targetName.trim(),
+          status: "needs_review",
+          visibility_status: "private_review",
+          question: caseForm.question.trim(),
+          created_at: new Date().toISOString(),
+        }, ...current]);
+      }
+      setCaseForm(emptyCaseForm);
+      setMessage("Preview case created. Real cases stay private until an operator reviews them.");
+      setReply("Preview case created. Next move: verify sources, attach the target profile, then decide whether to send a question for response or hold it private.");
+      return;
+    }
+    if (!user) return;
     const { data: newCase, error: caseError } = await supabase.from("accountability_cases").insert({
       title: caseForm.title.trim(),
       summary: caseForm.summary.trim(),
@@ -358,8 +543,22 @@ export default function SuperAdminOfficeClient({
 
   async function addQuestion(event: FormEvent<HTMLFormElement>) {
     event.preventDefault();
-    if (!user || !questionForm.targetName.trim() || !questionForm.question.trim()) return;
+    if (!questionForm.targetName.trim() || !questionForm.question.trim()) return;
     setError("");
+    if (previewMode) {
+      setRecentQuestions((current) => [{
+        id: previewId("preview-question"),
+        target_name: questionForm.targetName.trim(),
+        status: "needs_review",
+        visibility_status: "private_review",
+        question: questionForm.question.trim(),
+        created_at: new Date().toISOString(),
+      }, ...current]);
+      setQuestionForm(emptyQuestionForm);
+      setMessage("Preview profile question created.");
+      return;
+    }
+    if (!user) return;
     const { data, error: insertError } = await supabase.from("profile_questions").insert({
       target_type: questionForm.targetType,
       target_id: questionForm.targetId.trim() || null,
@@ -378,8 +577,13 @@ export default function SuperAdminOfficeClient({
   }
 
   async function updateCase(caseId: string, status: string, visibilityStatus: string) {
-    if (!user) return;
     setError("");
+    if (previewMode) {
+      setRecentCases((current) => current.map((item) => item.id === caseId ? { ...item, status, visibility_status: visibilityStatus } : item));
+      setMessage("Preview case decision updated.");
+      return;
+    }
+    if (!user) return;
     const { error: updateError } = await supabase.from("accountability_cases").update({
       status,
       visibility_status: visibilityStatus,
@@ -405,9 +609,21 @@ export default function SuperAdminOfficeClient({
   }
 
   async function saveDecision(question: string, context: string, options: string[], option: string) {
-    if (!user) return;
     setPickedDefaults((current) => ({ ...current, [question]: option }));
     setReply(`Saved decision: ${option}.`);
+    if (previewMode) {
+      setAsks((current) => [{
+        id: previewId("preview-ask"),
+        question,
+        status: "answered",
+        options,
+        selected_option: option,
+        response_notes: context,
+        created_at: new Date().toISOString(),
+      }, ...current]);
+      return;
+    }
+    if (!user) return;
     const { data, error: insertError } = await supabase.from("operator_asks").insert({
       question,
       context,
@@ -424,6 +640,11 @@ export default function SuperAdminOfficeClient({
   }
 
   async function answerAsk(askId: string, option: string) {
+    if (previewMode) {
+      setAsks((current) => current.map((ask) => ask.id === askId ? { ...ask, selected_option: option, status: "answered" } : ask));
+      setMessage("Preview decision saved.");
+      return;
+    }
     if (!user) return;
     const { error: updateError } = await supabase.from("operator_asks").update({
       selected_option: option,
@@ -436,7 +657,21 @@ export default function SuperAdminOfficeClient({
   }
 
   async function addAsk(question: string, options: string[]) {
-    if (!user || !question.trim()) return;
+    if (!question.trim()) return;
+    if (previewMode) {
+      setAsks((current) => [{
+        id: previewId("preview-ask"),
+        question: question.trim(),
+        status: "open",
+        options,
+        selected_option: null,
+        response_notes: null,
+        created_at: new Date().toISOString(),
+      }, ...current]);
+      setMessage("Preview decision card added.");
+      return;
+    }
+    if (!user) return;
     const { data, error: insertError } = await supabase.from("operator_asks").insert({
       question: question.trim(),
       options,
@@ -449,9 +684,9 @@ export default function SuperAdminOfficeClient({
     setMessage("Decision card added.");
   }
 
-  if (loading) return <div className="mx-auto max-w-7xl px-4 py-16"><div className="h-96 animate-pulse rounded-3xl bg-gray-100" /></div>;
+  if (!previewMode && loading) return <div className="mx-auto max-w-7xl px-4 py-16"><div className="h-96 animate-pulse rounded-3xl bg-gray-100" /></div>;
 
-  if (!user || !isOperator) {
+  if (!previewMode && (!user || !isOperator)) {
     return (
       <div className="mx-auto max-w-xl px-4 py-16 text-center">
         <Glyph value="A" className="mx-auto h-10 w-10 text-base text-blue-900" />
@@ -467,6 +702,11 @@ export default function SuperAdminOfficeClient({
 
   return (
     <div className="bg-slate-950 text-white">
+      {previewMode ? (
+        <div className="border-b border-amber-300/30 bg-amber-300 px-4 py-3 text-center text-sm font-black text-slate-950">
+          Preview mode: mock office data only. The real SuperAdmin office still requires an admin, reviewer, or researcher role.
+        </div>
+      ) : null}
       <section className="border-b border-white/10 bg-[linear-gradient(135deg,#06142f_0%,#0f2f57_55%,#7f1d1d_100%)]">
         <div className="mx-auto max-w-7xl px-4 py-8 sm:px-6 lg:px-8">
           <div className="flex flex-col gap-5 lg:flex-row lg:items-end lg:justify-between">
@@ -706,8 +946,8 @@ function Decisions({ asks, pickedDefaults, saveDecision, answerAsk, addAsk }: { 
 function Analytics({ liveCounts, snapshot }: { liveCounts: LiveCount[]; snapshot: SuperAdminSnapshot }) {
   const rows: LiveCount[] = [
     ...liveCounts,
-    { label: "Page views", table: "vercel_page_views", count: null, status: "yellow", detail: "Tracked by Vercel Analytics, not yet imported into Supabase." },
-    { label: "Unique views", table: "vercel_unique_views", count: null, status: "yellow", detail: "Needs a Vercel Analytics export or API bridge before this can be live inside RepWatchr." },
+    { label: "Vercel page views", table: "vercel_page_views", count: null, status: "yellow", detail: "Vercel Analytics is mounted. Importing its official totals requires a Web Analytics drain or export." },
+    { label: "Vercel unique views", table: "vercel_unique_views", count: null, status: "yellow", detail: "Use the Vercel dashboard now, or connect a drain when the project plan supports it." },
   ];
   return <Panel eyebrow="Analytics" title="What is tracked, pulled, or waiting on a bridge"><div className="grid gap-3 md:grid-cols-2 xl:grid-cols-3">{rows.map((item) => <div key={item.table} className={`rounded-xl border p-4 ${toneClasses(item.status)}`}><p className="text-xs font-black uppercase tracking-wide">{item.label}</p><p className="mt-1 text-3xl font-black">{formatCount(item.count)}</p><p className="mt-2 text-xs font-semibold leading-5 opacity-80">{item.detail}</p></div>)}</div><div className="mt-6 rounded-xl border border-slate-200 bg-slate-50 p-4"><p className="font-black">Static inventory snapshot</p><p className="mt-2 text-sm font-semibold leading-6 text-slate-600">{snapshot.visibleProfiles.toLocaleString()} profiles, {snapshot.sourceUrls.toLocaleString()} source URLs, {snapshot.scorecards} scorecards, {snapshot.fundingSummaries} funding summaries, {snapshot.newsArticles} articles.</p></div></Panel>;
 }

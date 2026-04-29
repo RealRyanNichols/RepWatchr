@@ -9,6 +9,8 @@ import MemberProfilePanel from "@/components/dashboard/MemberProfilePanel";
 import MemberBuildoutPanel from "@/components/dashboard/MemberBuildoutPanel";
 import DashboardCoveragePanel from "@/components/dashboard/DashboardCoveragePanel";
 import MemberTheoryLab from "@/components/dashboard/MemberTheoryLab";
+import MemberFreeToolsOffice from "@/components/dashboard/MemberFreeToolsOffice";
+import MemberSignalMap from "@/components/dashboard/MemberSignalMap";
 import {
   displayNameFromId,
   urlForOfficialOrCandidate,
@@ -131,6 +133,10 @@ export default function DashboardPage() {
       </div>
 
       <DashboardCoveragePanel />
+
+      <MemberFreeToolsOffice />
+
+      <MemberSignalMap />
 
       <MemberTheoryLab />
 

@@ -21,6 +21,7 @@ const countTables = [
   "faretta_interactions",
   "gideon_interactions",
   "member_tracked_items",
+  "site_page_views",
   "profile_social_accounts",
   "public_statement_snapshots",
   "social_monitoring_jobs",
