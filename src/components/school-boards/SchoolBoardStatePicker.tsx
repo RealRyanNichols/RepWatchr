@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useMemo, useState } from "react";
+import { useMemo, useState } from "react";
 import type { SchoolBoardState } from "@/data/school-board-states";
 
 type SchoolBoardStatePickerProps = {
@@ -16,14 +16,11 @@ export default function SchoolBoardStatePicker({
     () => states.find((state) => state.defaultSelected)?.code ?? "TX",
     [states]
   );
-  const [selectedCode, setSelectedCode] = useState(defaultState);
-
-  useEffect(() => {
+  const [selectedCode, setSelectedCode] = useState(() => {
+    if (typeof window === "undefined") return defaultState;
     const stored = window.localStorage.getItem("repwatchr-school-board-state");
-    if (stored && states.some((state) => state.code === stored)) {
-      setSelectedCode(stored);
-    }
-  }, [states]);
+    return stored && states.some((state) => state.code === stored) ? stored : defaultState;
+  });
 
   const selectedState = states.find((state) => state.code === selectedCode) ?? states[0];
 

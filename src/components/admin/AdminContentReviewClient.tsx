@@ -52,14 +52,18 @@ export default function AdminContentReviewClient() {
   const [error, setError] = useState("");
 
   useEffect(() => {
+    let mounted = true;
+
     if (authLoading) return;
 
     if (!user) {
-      setStatus("denied");
-      return;
+      window.setTimeout(() => {
+        if (mounted) setStatus("denied");
+      }, 0);
+      return () => {
+        mounted = false;
+      };
     }
-
-    let mounted = true;
 
     async function loadReviewQueues() {
       const { data: roles } = await supabase

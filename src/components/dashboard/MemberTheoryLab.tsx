@@ -1,7 +1,6 @@
 "use client";
 
 import { useEffect, useMemo, useState } from "react";
-import { ClipboardCheck, Database, Link2, Network, Plus, Share2 } from "lucide-react";
 import { useAuth } from "@/components/auth/AuthProvider";
 import { createClient } from "@/lib/supabase";
 
@@ -254,13 +253,17 @@ export default function MemberTheoryLab() {
 
   async function shareTheory(theory: MemberTheory) {
     const text = theoryBrief(theory);
-    if (navigator.share) {
-      await navigator.share({ title: theory.title, text });
-    } else {
+    try {
+      if (navigator.share) {
+        await navigator.share({ title: theory.title, text });
+        return;
+      }
       await navigator.clipboard.writeText(text);
-      setCopiedId(theory.id);
-      window.setTimeout(() => setCopiedId(""), 1800);
+    } catch {
+      await navigator.clipboard.writeText(text);
     }
+    setCopiedId(theory.id);
+    window.setTimeout(() => setCopiedId(""), 1800);
   }
 
   return (
@@ -280,7 +283,7 @@ export default function MemberTheoryLab() {
           </div>
           <div className="rounded-2xl border border-white/10 bg-white/10 p-4">
             <div className="flex items-center gap-2 text-sm font-black text-blue-100">
-              <Database size={18} />
+              <span className="rounded-md bg-white/10 px-2 py-1 text-[10px] uppercase tracking-wide">DB</span>
               {backendStatus}
             </div>
             <div className="mt-4 grid grid-cols-2 gap-2">
@@ -299,7 +302,7 @@ export default function MemberTheoryLab() {
                 <p className="text-xs font-black uppercase tracking-wide text-red-700">New cross-check</p>
                 <h3 className="mt-1 text-2xl font-black">Build a theory file</h3>
               </div>
-              <Network className="text-blue-800" />
+              <span className="rounded-lg bg-blue-50 px-3 py-2 text-xs font-black text-blue-800">LINK</span>
             </div>
             <div className="mt-4 grid gap-3">
               <label className="grid gap-1 text-sm font-black text-slate-700">
@@ -331,7 +334,7 @@ export default function MemberTheoryLab() {
                 </select>
               </label>
               <button type="submit" className="inline-flex items-center justify-center gap-2 rounded-xl bg-blue-900 px-5 py-3 text-sm font-black text-white hover:bg-red-700">
-                <Plus size={18} />
+                <span aria-hidden="true">+</span>
                 Add theory
               </button>
             </div>
@@ -361,7 +364,7 @@ export default function MemberTheoryLab() {
                     onClick={() => shareTheory(theory)}
                     className="inline-flex shrink-0 items-center justify-center gap-2 rounded-xl border border-blue-200 bg-blue-50 px-3 py-2 text-xs font-black text-blue-800 hover:bg-blue-100"
                   >
-                    <Share2 size={15} />
+                    <span aria-hidden="true">SH</span>
                     {copiedId === theory.id ? "Copied" : "Share brief"}
                   </button>
                 </div>
@@ -369,7 +372,7 @@ export default function MemberTheoryLab() {
                 <div className="mt-4 grid gap-3 md:grid-cols-2">
                   <div className="rounded-xl border border-slate-200 bg-slate-50 p-3">
                     <p className="flex items-center gap-2 text-xs font-black uppercase tracking-wide text-red-700">
-                      <Link2 size={14} />
+                      <span aria-hidden="true">SRC</span>
                       Source links
                     </p>
                     <div className="mt-2 grid gap-1 text-xs font-bold text-slate-600">
@@ -382,7 +385,7 @@ export default function MemberTheoryLab() {
                   </div>
                   <div className="rounded-xl border border-slate-200 bg-slate-50 p-3">
                     <p className="flex items-center gap-2 text-xs font-black uppercase tracking-wide text-red-700">
-                      <ClipboardCheck size={14} />
+                      <span aria-hidden="true">NEXT</span>
                       Next check
                     </p>
                     <p className="mt-2 text-xs font-bold leading-5 text-slate-600">{theory.nextCheck}</p>
