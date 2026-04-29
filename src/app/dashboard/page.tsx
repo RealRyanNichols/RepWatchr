@@ -7,6 +7,7 @@ import { createClient } from "@/lib/supabase";
 import MemberCommandCenter from "@/components/dashboard/MemberCommandCenter";
 import MemberProfilePanel from "@/components/dashboard/MemberProfilePanel";
 import MemberBuildoutPanel from "@/components/dashboard/MemberBuildoutPanel";
+import DashboardCoveragePanel from "@/components/dashboard/DashboardCoveragePanel";
 import {
   displayNameFromId,
   urlForOfficialOrCandidate,
@@ -107,13 +108,13 @@ export default function DashboardPage() {
     {
       label: "Verification",
       value: profile?.verified ? "Verified" : "Pending",
-      detail: profile?.verified ? "Texas voter status is active" : "Verify before votes count",
+      detail: profile?.verified ? "Verified member status is active" : "Verify before scorecard votes count",
       href: profile?.verified ? "/dashboard/settings" : "/auth/verify",
     },
     {
       label: "County context",
       value: profile?.county ?? "Unset",
-      detail: "Used for in-district vote and grade context",
+      detail: "Used for local vote, grade, and research context",
       href: "/dashboard/settings",
     },
   ];
@@ -127,6 +128,8 @@ export default function DashboardPage() {
           Your RepWatchr workspace is where profile, tracking, map, claims, votes, and Faretta AI research tools come together.
         </p>
       </div>
+
+      <DashboardCoveragePanel />
 
       {/* Profile Section */}
       <div className="mt-6 rounded-2xl border border-gray-200 bg-white p-6 shadow-sm">
@@ -146,7 +149,7 @@ export default function DashboardPage() {
             <p className="text-sm text-gray-500">Verification Status</p>
             {profile?.verified ? (
               <span className="inline-flex items-center rounded-full bg-green-100 px-2.5 py-0.5 text-sm font-medium text-green-800">
-                Verified Texas Voter
+                Verified Member
               </span>
             ) : (
               <div>
@@ -220,8 +223,8 @@ export default function DashboardPage() {
             Settings
           </h2>
           <p className="mt-2 text-sm font-semibold leading-6 text-gray-600">
-            Set the School Board Watch state that opens first. Texas is the
-            default unless you change it.
+            Set the state you want to watch first. Public pages still open on
+            the national selector before a state is chosen.
           </p>
         </Link>
       </div>
@@ -245,7 +248,7 @@ export default function DashboardPage() {
             <div className="mt-3 rounded-md bg-orange-50 p-4 text-sm text-orange-700">
               You need to{" "}
               <Link href="/auth/verify" className="font-medium underline">
-                verify your Texas identity
+                verify your account
               </Link>{" "}
               before you can vote on officials.
             </div>

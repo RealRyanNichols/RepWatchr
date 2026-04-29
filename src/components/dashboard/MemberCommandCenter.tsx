@@ -14,16 +14,18 @@ type TrackedItem = {
 };
 
 const defaultTracked: TrackedItem[] = [
-  { label: "School Board Watch", href: "/school-boards", type: "school_board" },
-  { label: "East Texas Officials", href: "/officials", type: "official" },
+  { label: "National School Board Watch", href: "/school-boards", type: "school_board" },
+  { label: "National Officials", href: "/officials", type: "official" },
+  { label: "Attorney Watch", href: "/attorneys", type: "research" },
+  { label: "Media Watch", href: "/media", type: "research" },
 ];
 
 const mapZones = [
-  { label: "Federal", href: "/officials?level=federal", tone: "bg-blue-900 text-white" },
-  { label: "Texas State", href: "/officials?level=state", tone: "bg-red-700 text-white" },
-  { label: "Counties", href: "/officials?level=county", tone: "bg-amber-100 text-amber-950" },
-  { label: "Cities", href: "/officials?level=city", tone: "bg-blue-100 text-blue-950" },
-  { label: "School Boards", href: "/school-boards", tone: "bg-emerald-100 text-emerald-950" },
+  { label: "Officials", href: "/officials", tone: "bg-blue-900 text-white" },
+  { label: "School Boards", href: "/school-boards", tone: "bg-red-700 text-white" },
+  { label: "Attorneys", href: "/attorneys", tone: "bg-amber-100 text-amber-950" },
+  { label: "Media", href: "/media", tone: "bg-blue-100 text-blue-950" },
+  { label: "Buildout", href: "/buildout", tone: "bg-emerald-100 text-emerald-950" },
 ];
 
 export default function MemberCommandCenter() {
@@ -87,6 +89,7 @@ export default function MemberCommandCenter() {
   const researchPath = useMemo(
     () => [
       "Search for the person, district, county, or race.",
+      "Choose the state on the national selector before opening loaded records.",
       "Open the public profile and check sources, praise, flags, and gaps.",
       "Save the profile here so it stays in your watch list.",
       "Ask Faretta AI what record, meeting, filing, or source should be pulled next.",
