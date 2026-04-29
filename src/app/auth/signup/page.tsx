@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useMemo, useState } from "react";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { createClient } from "@/lib/supabase";
@@ -13,7 +13,7 @@ export default function SignUpPage() {
   const [loading, setLoading] = useState(false);
   const [success, setSuccess] = useState(false);
   const router = useRouter();
-  const supabase = createClient();
+  const supabase = useMemo(() => createClient(), []);
 
   async function handleSubmit(e: React.FormEvent) {
     e.preventDefault();
@@ -31,20 +31,43 @@ export default function SignUpPage() {
 
     setLoading(true);
 
-    const { error: signUpError } = await supabase.auth.signUp({
-      email,
-      password,
-    });
+    try {
+      const normalizedEmail = email.trim().toLowerCase();
+      const { data, error: signUpError } = await supabase.auth.signUp({
+        email: normalizedEmail,
+        password,
+        options: {
+          emailRedirectTo: `${window.location.origin}/auth/callback?next=/dashboard`,
+        },
+      });
 
-    if (signUpError) {
-      setError(signUpError.message);
+      if (signUpError) {
+        setError(signUpError.message);
+        setLoading(false);
+        return;
+      }
+
+      if (data.session?.user) {
+        await supabase.from("member_profiles").upsert(
+          {
+            user_id: data.session.user.id,
+            display_name: normalizedEmail.split("@")[0],
+            preferred_state: "TX",
+            research_focus: "Politics, accountability, public records, and watched officials",
+          },
+          { onConflict: "user_id" }
+        );
+        router.replace("/dashboard");
+        router.refresh();
+        return;
+      }
+
+      setSuccess(true);
       setLoading(false);
-      return;
+    } catch (signupError) {
+      setError(signupError instanceof Error ? signupError.message : "Account creation failed. Check the member database configuration.");
+      setLoading(false);
     }
-
-    setSuccess(true);
-    setLoading(false);
-    setTimeout(() => router.push("/auth/verify"), 2000);
   }
 
   if (success) {
@@ -55,14 +78,19 @@ export default function SignUpPage() {
             Account Created
           </h1>
           <p className="mt-2 text-green-700">
-            Check your email to confirm your account, then verify your Texas
-            identity to start voting.
+            Check your email if confirmation is required. Then sign in and you will land in the member dashboard.
           </p>
           <Link
-            href="/auth/verify"
+            href="/login"
             className="mt-4 inline-block rounded-lg bg-blue-600 px-5 py-2.5 text-sm font-semibold text-white hover:bg-blue-700"
           >
-            Verify Your Identity
+            Go to Login
+          </Link>
+          <Link
+            href="/dashboard"
+            className="ml-3 mt-4 inline-block rounded-lg border border-green-300 bg-white px-5 py-2.5 text-sm font-semibold text-green-800 hover:bg-green-100"
+          >
+            Open Dashboard
           </Link>
         </div>
       </div>
@@ -112,6 +140,7 @@ export default function SignUpPage() {
               <input
                 id="email"
                 type="email"
+                autoComplete="email"
                 required
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
@@ -130,6 +159,7 @@ export default function SignUpPage() {
               <input
                 id="password"
                 type="password"
+                autoComplete="new-password"
                 required
                 value={password}
                 onChange={(e) => setPassword(e.target.value)}
@@ -148,6 +178,7 @@ export default function SignUpPage() {
               <input
                 id="confirmPassword"
                 type="password"
+                autoComplete="new-password"
                 required
                 value={confirmPassword}
                 onChange={(e) => setConfirmPassword(e.target.value)}

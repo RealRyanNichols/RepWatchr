@@ -7,6 +7,7 @@ import CommentSection from "@/components/comments/CommentSection";
 import ClaimProfileCta from "@/components/profile/ClaimProfileCta";
 import ClaimedProfilePanel from "@/components/profile/ClaimedProfilePanel";
 import ProfilePhoto from "@/components/profile/ProfilePhoto";
+import ProfileQuestionPanel from "@/components/profile/ProfileQuestionPanel";
 import OfficialVotingSection from "@/components/voting/OfficialVotingSection";
 import GradeOfficialSection from "@/components/voting/GradeOfficialSection";
 import ProfileScorecardVote from "@/components/scorecards/ProfileScorecardVote";
@@ -268,6 +269,12 @@ export default async function CandidatePage({ params }: { params: Promise<{ dist
           </div>
         </div>
       </section>
+
+      <ProfileQuestionPanel
+        targetId={candidate.candidate_id}
+        targetName={candidate.preferred_name ?? candidate.full_name}
+        className="mx-auto max-w-7xl px-4 pb-8 sm:px-6 lg:px-8"
+      />
 
       {/* Public discussion */}
       <section className="mx-auto max-w-7xl px-4 pb-10 sm:px-6 lg:px-8">

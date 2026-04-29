@@ -38,19 +38,38 @@ create table if not exists public.member_profiles (
   updated_at timestamptz default now() not null
 );
 
+create table if not exists public.member_research_theories (
+  id uuid primary key default gen_random_uuid(),
+  user_id uuid references auth.users(id) on delete cascade not null,
+  title text not null check (char_length(title) between 1 and 240),
+  target text not null check (char_length(target) between 1 and 240),
+  summary text not null check (char_length(summary) between 1 and 3000),
+  source_links text[] not null default '{}'::text[],
+  next_check text check (char_length(coalesce(next_check, '')) <= 2000),
+  status text not null default 'Needs source'
+    check (status in ('Needs source', 'Testing', 'Record-backed', 'Ready to share')),
+  confidence text not null default 'Lead'
+    check (confidence in ('Lead', 'Medium', 'Strong')),
+  created_at timestamptz default now() not null,
+  updated_at timestamptz default now() not null
+);
+
 create index if not exists idx_gideon_interactions_user on public.gideon_interactions(user_id, created_at desc);
 create index if not exists idx_gideon_interactions_kind on public.gideon_interactions(kind, created_at desc);
 create index if not exists idx_member_tracked_items_user on public.member_tracked_items(user_id, created_at desc);
 create index if not exists idx_member_profiles_user on public.member_profiles(user_id);
+create index if not exists idx_member_research_theories_user on public.member_research_theories(user_id, updated_at desc);
 
 alter table public.gideon_interactions enable row level security;
 alter table public.member_tracked_items enable row level security;
 alter table public.member_profiles enable row level security;
+alter table public.member_research_theories enable row level security;
 
 drop policy if exists "Submitted Gideon interactions can be collected" on public.gideon_interactions;
 drop policy if exists "Users can read own Gideon interactions and admins can read all" on public.gideon_interactions;
 drop policy if exists "Users can manage own tracked items" on public.member_tracked_items;
 drop policy if exists "Users can manage own member profile" on public.member_profiles;
+drop policy if exists "Users can manage own research theories" on public.member_research_theories;
 
 create policy "Submitted Gideon interactions can be collected"
   on public.gideon_interactions for insert
@@ -73,6 +92,12 @@ create policy "Users can manage own member profile"
   using (auth.uid() = user_id)
   with check (auth.uid() = user_id);
 
+create policy "Users can manage own research theories"
+  on public.member_research_theories for all
+  to authenticated
+  using (auth.uid() = user_id)
+  with check (auth.uid() = user_id);
+
 drop trigger if exists set_member_tracked_items_updated_at on public.member_tracked_items;
 create trigger set_member_tracked_items_updated_at
   before update on public.member_tracked_items
@@ -81,4 +106,9 @@ create trigger set_member_tracked_items_updated_at
 drop trigger if exists set_member_profiles_updated_at on public.member_profiles;
 create trigger set_member_profiles_updated_at
   before update on public.member_profiles
+  for each row execute function public.handle_updated_at();
+
+drop trigger if exists set_member_research_theories_updated_at on public.member_research_theories;
+create trigger set_member_research_theories_updated_at
+  before update on public.member_research_theories
   for each row execute function public.handle_updated_at();

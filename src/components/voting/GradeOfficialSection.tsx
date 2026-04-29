@@ -175,6 +175,12 @@ export default function GradeOfficialSection({
       if (mineResult.data) {
         setCurrentGrade((mineResult.data as { grade: Grade }).grade);
         setRationale((mineResult.data as { rationale: string | null }).rationale ?? "");
+      } else {
+        // Reset stale state when navigating to a profile the user has not graded.
+        // Without this, the previously viewed profile's grade and rationale would
+        // bleed into this profile and could be re-submitted against the wrong id.
+        setCurrentGrade(null);
+        setRationale("");
       }
 
       setLoading(false);
@@ -193,14 +199,21 @@ export default function GradeOfficialSection({
 
     const trimmedRationale = rationale.trim();
 
-    if (currentGrade === grade && !trimmedRationale) {
+    // Clicking the currently active grade removes it. The UI tells users this
+    // works regardless of rationale text, so don't gate deletion on the
+    // rationale being empty. Clear the rationale alongside the grade.
+    if (currentGrade === grade) {
       const { error: deleteError } = await supabase
         .from("citizen_grades")
         .delete()
         .eq("user_id", user.id)
         .eq("official_id", officialId);
-      if (deleteError) setError(deleteError.message);
-      else setCurrentGrade(null);
+      if (deleteError) {
+        setError(deleteError.message);
+      } else {
+        setCurrentGrade(null);
+        setRationale("");
+      }
     } else {
       const { error: upsertError } = await supabase.from("citizen_grades").upsert(
         {

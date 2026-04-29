@@ -25,9 +25,7 @@
       "known_aliases_or_nicknames": ["Kevin Evers"],
       "year_of_birth": null,
       "place_of_birth": "",
-      "family_name_connections_in_district": [
-        "Brother Craig Evers is confirmed Harleton HS faculty (email: everscraig@harletonisd.net)"
-      ],
+      "family_name_connections_in_district": [],
       "spouse_publicly_named": ""
     },
     "residency_and_property": {
@@ -88,15 +86,7 @@
         "source_url": "https://www.harletonisd.net/page/board-of-trustees"
       }
     ],
-    "conflicts_of_interest_inventory": [
-      {
-        "type": "family_employment_in_district",
-        "description": "Brother Craig Evers is confirmed Harleton HS faculty (email: everscraig@harletonisd.net, listed in district faculty directory). Board trustee has a direct family member employed by the district he governs. This creates a conflict of interest on any vote affecting faculty compensation, staffing, discipline, or working conditions. Texas Local Government Code Ch. 171 (conflicts disclosure) may apply.",
-        "severity": "high",
-        "fact_label": "FACT",
-        "source_url": "https://www.harletonisd.net/page/faculty-directory"
-      }
-    ],
+    "conflicts_of_interest_inventory": [],
     "digital_footprint_archive": {
       "wayback_snapshots": [],
       "deleted_or_archived_posts": [],
@@ -118,9 +108,9 @@
       "source_urls": [
         "https://www.downsfuneralhome.com/obituaries/rebecca-evers"
       ],
-      "notes": "Multi-generational Harleton family. Brother Craig Evers is confirmed Harleton HS faculty."
+      "notes": "Multi-generational Harleton family. Prior conflict language tied to Bro. Craig Evers has been removed."
     },
-    "about_summary_narrative": "Kevin Ree Evers is the Vice President of the Harleton ISD Board of Trustees, serving Place 4. He was appointed (not elected) in February 2024 to fill a vacancy and will face voters for the first time in November 2026.\n\nEvers comes from a multi-generational Harleton family. His mother, Rebecca Chambers Evers, died in December 2024; his father, Billy Ray Evers, died in 2010. His siblings include Nan Evers, Renate Jeffcoat, and Craig Evers.\n\nThe most significant finding in the public record is a family-employment conflict: his brother Craig Evers is confirmed faculty at Harleton High School (verified via the district faculty directory, email everscraig@harletonisd.net). This creates a direct conflict of interest on any board vote affecting faculty compensation, staffing, discipline, or working conditions. Texas Local Government Code Ch. 171 (conflicts disclosure) may require recusal or disclosure.\n\nA TX Secretary of State filing (0067687301) is registered to PO Box 595, Harleton, TX, in connection with Evers. The entity details require further research.\n\nNo negative criminal record items have surfaced in open-source review as of this research date."
+    "about_summary_narrative": "Kevin Ree Evers is the Vice President of the Harleton ISD Board of Trustees, serving Place 4. He was appointed (not elected) in February 2024 to fill a vacancy and will face voters for the first time in November 2026.\n\nEvers comes from a multi-generational Harleton family. His mother, Rebecca Chambers Evers, died in December 2024; his father, Billy Ray Evers, died in 2010. His siblings include Nan Evers, Renate Jeffcoat, and Craig Evers.\n\nCorrection entered April 27, 2026: a prior version of this profile treated information about Bro. Craig Evers, the Oak Grove Baptist Church preacher, as a Kevin Evers conflict item. Kevin Evers is not Bro. Craig Evers. That negative conflict item has been removed, and RepWatchr does not currently publish any conflict-of-interest finding from that situation.\n\nA TX Secretary of State filing (0067687301) is registered to PO Box 595, Harleton, TX, in connection with Evers. The entity details require further research.\n\nNo negative criminal record items have surfaced in open-source review as of this research date."
   },
   "party_registration": "Unknown",
   "social_media": {
@@ -153,20 +143,10 @@
     "transgender_and_gender_policy": "REQUIRES_FURTHER_EVIDENCE",
     "other": ""
   },
-  "red_flags": [
-    {
-      "description": "Brother Craig Evers is confirmed Harleton HS faculty (email: everscraig@harletonisd.net). Board trustee has a direct family member employed by the district he governs. Creates a conflict of interest on any vote affecting faculty compensation, staffing, discipline, or working conditions.",
-      "severity": "high",
-      "fact_label": "FACT",
-      "source_url": "https://www.harletonisd.net/page/faculty-directory"
-    }
-  ],
-  "summary": "Kevin Ree Evers is the Vice President of Harleton ISD (Place 4). APPOINTED February 2024, not elected. Has never faced voters. Multi-generational Harleton family. HIGH RED FLAG: brother Craig Evers is confirmed Harleton HS faculty (everscraig@harletonisd.net), creating a family-employment conflict. TX SOS filing 0067687301 registered to PO Box 595, Harleton. Clean criminal record in open-source review. On the November 2026 ballot.",
-  "analyst_notes": "The family-employment conflict is the headline finding. In a district of ~705 students, a board VP whose brother teaches at the high school has direct governance authority over his sibling's employer. Every vote on teacher pay, staffing levels, benefits, and discipline policy is potentially conflicted. Track whether Evers has filed Ch. 171 conflicts disclosures or recused on relevant votes. The appointment (not election) path to the board is also notable: voters have never had a say on this trustee. November 2026 will be his first electoral test. Priority next moves: pull Ch. 171 disclosures, pull meeting minutes for recusal patterns, identify Craig Evers's specific role and tenure at Harleton HS, pull Harrison CAD property records, identify the TX SOS entity, locate social media.",
+  "red_flags": [],
+  "summary": "Kevin Ree Evers is the Vice President of Harleton ISD (Place 4). APPOINTED February 2024, not elected. Has never faced voters. Multi-generational Harleton family. Corrected April 27, 2026: a prior conflict note tied to Bro. Craig Evers has been removed. TX SOS filing 0067687301 registered to PO Box 595, Harleton. Clean criminal record in open-source review. On the November 2026 ballot.",
+  "analyst_notes": "Correction entered April 27, 2026: Kevin Evers is not Bro. Craig Evers, the Oak Grove Baptist Church preacher. The prior family-employment conflict note has been removed from Kevin Evers's red flags, conflict inventory, and score inputs. Keep future scoring tied only to source-backed records directly connected to Kevin Evers. The appointment (not election) path to the board remains notable: voters have never had a say on this trustee. November 2026 will be his first electoral test. Priority next moves: identify the TX SOS entity, locate social media, pull Harrison CAD property records, and confirm current occupation and employer.",
   "research_gaps": [
-    "Pull Texas Local Government Code Ch. 171 conflicts disclosures filed by Evers",
-    "Identify Craig Evers's specific role, subject, and tenure at Harleton HS",
-    "Pull Harleton ISD board meeting minutes for recusal patterns by Evers",
     "Identify the TX SOS entity associated with filing 0067687301",
     "Locate social media accounts",
     "Harrison CAD property records pull",
@@ -178,11 +158,10 @@
   ],
   "sources": [
     {"url": "https://www.harletonisd.net/page/board-of-trustees", "title": "Harleton ISD Board of Trustees page", "accessed_date": "2026-04-16", "source_type": "district_official"},
-    {"url": "https://www.harletonisd.net/page/faculty-directory", "title": "Harleton ISD faculty directory (Craig Evers listed)", "accessed_date": "2026-04-16", "source_type": "district_official"},
     {"url": "https://www.downsfuneralhome.com/obituaries/rebecca-evers", "title": "Rebecca Chambers Evers obituary, Downs Funeral Home", "accessed_date": "2026-04-16", "source_type": "obituary"},
     {"url": "https://www.sos.state.tx.us/corp/sosda/index.shtml", "title": "TX Secretary of State business entity search", "accessed_date": "2026-04-16", "source_type": "public_records"}
   ],
   "status": "initial_dossier",
-  "last_updated": "2026-04-16T00:00:00Z",
+  "last_updated": "2026-04-27T00:00:00Z",
   "researcher": "RepWatchr initial build (Claude Code)"
 }

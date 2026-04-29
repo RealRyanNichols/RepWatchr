@@ -8,6 +8,7 @@ import MemberCommandCenter from "@/components/dashboard/MemberCommandCenter";
 import MemberProfilePanel from "@/components/dashboard/MemberProfilePanel";
 import MemberBuildoutPanel from "@/components/dashboard/MemberBuildoutPanel";
 import DashboardCoveragePanel from "@/components/dashboard/DashboardCoveragePanel";
+import MemberTheoryLab from "@/components/dashboard/MemberTheoryLab";
 import {
   displayNameFromId,
   urlForOfficialOrCandidate,
@@ -130,6 +131,8 @@ export default function DashboardPage() {
       </div>
 
       <DashboardCoveragePanel />
+
+      <MemberTheoryLab />
 
       {/* Profile Section */}
       <div className="mt-6 rounded-2xl border border-gray-200 bg-white p-6 shadow-sm">
