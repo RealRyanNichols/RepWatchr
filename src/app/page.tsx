@@ -1,10 +1,10 @@
 import Link from "next/link";
-import { getAllOfficials, getScoreCard, getIssueCategories, getAllNews, getRepWatchrDataStats } from "@/lib/data";
+import Image from "next/image";
+import { getAllOfficials, getScoreCard, getIssueCategories, getAllNews, getRedFlags, getRepWatchrDataStats } from "@/lib/data";
 import { getSchoolBoardStats } from "@/lib/school-board-research";
-import { buildPickerStates } from "@/lib/picker-data";
 import OfficialCard from "@/components/officials/OfficialCard";
 import FarettaSearchBox from "@/components/shared/FarettaSearchBox";
-import DrillDownPicker from "@/components/school-board/DrillDownPicker";
+import type { Official } from "@/types";
 
 const levelCards = [
   {
@@ -39,19 +39,140 @@ const levelCards = [
   },
 ];
 
+function initialsFor(official: Official) {
+  return `${official.firstName[0] ?? ""}${official.lastName[0] ?? ""}`;
+}
+
+function formatNumber(value: number) {
+  return new Intl.NumberFormat("en-US").format(value);
+}
+
+function ProfileTicker({ officials }: { officials: Official[] }) {
+  const rows = [...officials, ...officials];
+
+  return (
+    <div className="overflow-hidden border-y border-slate-200 bg-white">
+      <div className="repwatchr-profile-marquee flex w-max gap-3 py-3">
+        {rows.map((official, index) => (
+          <Link
+            key={`${official.id}-${index}`}
+            href={`/officials/${official.id}`}
+            className="group flex min-w-[210px] items-center gap-3 rounded-full border border-slate-200 bg-slate-50 py-2 pl-2 pr-4 shadow-sm transition hover:border-blue-300 hover:bg-blue-50"
+          >
+            <div className="relative h-12 w-12 shrink-0 overflow-hidden rounded-full border border-white bg-slate-200 shadow-sm">
+              {official.photo ? (
+                <Image
+                  src={official.photo}
+                  alt={`${official.name} profile photo`}
+                  fill
+                  sizes="48px"
+                  className="object-cover"
+                />
+              ) : (
+                <div className="grid h-full w-full place-items-center text-xs font-black text-slate-700">
+                  {initialsFor(official)}
+                </div>
+              )}
+            </div>
+            <div className="min-w-0">
+              <p className="truncate text-sm font-black text-slate-950 group-hover:text-blue-800">
+                {official.name}
+              </p>
+              <p className="truncate text-[11px] font-bold text-slate-500">
+                {official.position} / {official.district ?? official.jurisdiction}
+              </p>
+            </div>
+          </Link>
+        ))}
+      </div>
+    </div>
+  );
+}
+
+function WatchBoardCard({
+  official,
+  score,
+  redFlags,
+}: {
+  official: Official;
+  score?: number;
+  redFlags: number;
+}) {
+  return (
+    <Link
+      href={`/officials/${official.id}`}
+      className="group grid grid-cols-[56px_1fr_auto] items-center gap-3 rounded-xl border border-slate-300 bg-white p-2.5 shadow-sm transition hover:-translate-y-0.5 hover:border-red-300 hover:shadow-md"
+    >
+      <div className="relative h-14 w-14 overflow-hidden rounded-xl border border-slate-200 bg-slate-100">
+        {official.photo ? (
+          <Image
+            src={official.photo}
+            alt={`${official.name} profile photo`}
+            fill
+            sizes="56px"
+            className="object-cover"
+          />
+        ) : (
+          <div className="grid h-full w-full place-items-center text-sm font-black text-slate-700">
+            {initialsFor(official)}
+          </div>
+        )}
+      </div>
+      <div className="min-w-0">
+        <p className="truncate text-sm font-black text-slate-950 group-hover:text-red-700">
+          {official.name}
+        </p>
+        <p className="truncate text-[11px] font-bold text-slate-500">
+          {official.position} / {official.district ?? official.jurisdiction}
+        </p>
+        <p className="mt-1 text-[11px] font-black uppercase tracking-wide text-blue-800">
+          {redFlags} flag{redFlags === 1 ? "" : "s"} loaded
+        </p>
+      </div>
+      <div className="text-right">
+        <p className="text-[10px] font-black uppercase tracking-wide text-slate-500">
+          Score
+        </p>
+        <p className="text-xl font-black text-red-700">
+          {typeof score === "number" ? score : "Open"}
+        </p>
+      </div>
+    </Link>
+  );
+}
+
 export default function HomePage() {
   const officials = getAllOfficials();
   const issueCategories = getIssueCategories();
   const schoolBoardStats = getSchoolBoardStats();
   const dataStats = getRepWatchrDataStats();
-  const pickerStates = buildPickerStates();
 
   const stats = [
-    { label: "Federal/State Seat Profiles", value: String(dataStats.federalAndStateSeatProfilesLoaded), caption: `${dataStats.federalAndStateProfileGaps} expected gaps` },
-    { label: "County/City Files", value: String(dataStats.countyCityOfficialFiles), caption: "legacy local records" },
-    { label: "School Board Trustees", value: String(schoolBoardStats.candidates), caption: "TEA source seed" },
-    { label: "Scored Profiles", value: String(dataStats.officialsWithScoreCards), caption: `${dataStats.bills} vote files loaded` },
+    { label: "Federal/State Seat Profiles", value: formatNumber(dataStats.federalAndStateSeatProfilesLoaded), caption: `${dataStats.federalAndStateProfileGaps} expected gaps` },
+    { label: "Official Photos", value: formatNumber(dataStats.officialsWithPhotos), caption: "local headshots loaded" },
+    { label: "School Board Trustees", value: formatNumber(schoolBoardStats.candidates), caption: "TEA source seed" },
+    { label: "Scored Profiles", value: formatNumber(dataStats.officialsWithScoreCards), caption: `${dataStats.bills} vote files loaded` },
   ];
+
+  const photoOfficials = officials
+    .filter((official) => official.photo && (official.level === "federal" || official.level === "state"))
+    .slice(0, 42);
+
+  const watchBoardOfficials = officials
+    .filter((official) => official.photo && (official.level === "federal" || official.level === "state"))
+    .map((official) => {
+      const scoreCard = getScoreCard(official.id);
+      const redFlagCount = getRedFlags(official.id).length;
+      return {
+        official,
+        score: scoreCard?.overall,
+        redFlagCount,
+        heat: redFlagCount * 18 + (scoreCard ? 100 - scoreCard.overall : 0),
+      };
+    })
+    .filter(({ score, redFlagCount }) => typeof score === "number" || redFlagCount > 0)
+    .sort((a, b) => b.heat - a.heat)
+    .slice(0, 4);
 
   const featuredOfficials = officials
     .filter((o) => o.level === "federal" || o.level === "state")
@@ -62,68 +183,104 @@ export default function HomePage() {
   return (
     <div>
       {/* Hero Section */}
-      <section className="relative overflow-hidden border-b border-blue-100 bg-[linear-gradient(135deg,#ffffff_0%,#f4f8ff_52%,#fff7ed_100%)]">
+      <section className="relative overflow-hidden border-b border-blue-100 bg-[linear-gradient(135deg,#ffffff_0%,#eef4ff_48%,#fff7ed_100%)]">
         <div className="grid h-2 grid-cols-3">
           <div className="bg-red-700" />
           <div className="bg-white" />
           <div className="bg-blue-900" />
         </div>
-        <div className="relative mx-auto grid max-w-7xl gap-10 px-4 py-14 sm:px-6 sm:py-24 lg:grid-cols-[1fr_0.85fr] lg:px-8">
-          <div className="max-w-3xl">
-            <div className="mb-5 flex flex-wrap gap-2">
-              {["God", "Family", "Country"].map((value) => (
-                <span key={value} className="rounded-full border border-blue-100 bg-white px-3 py-1 text-xs font-black uppercase tracking-wide text-blue-950 shadow-sm">
-                  {value}
-                </span>
-              ))}
-            </div>
-            <h1 className="mb-4 text-3xl font-extrabold leading-tight tracking-tight text-blue-950 sm:mb-6 sm:text-6xl">
-              Know Your Reps.
-              <br />
-              <span className="text-red-700">
-                Hold Them Accountable.
+        <ProfileTicker officials={photoOfficials} />
+        <div className="relative mx-auto grid max-w-7xl gap-5 px-4 py-5 sm:px-6 sm:py-7 lg:grid-cols-[minmax(0,1.05fr)_minmax(380px,0.95fr)] lg:px-8">
+          <div>
+            <div className="flex flex-wrap items-center gap-2">
+              <span className="rounded-full bg-red-700 px-3 py-1 text-xs font-black uppercase tracking-wide text-white shadow-sm">
+                Watch Board Live
               </span>
-            </h1>
-            <p className="mb-8 max-w-2xl text-base font-semibold leading-relaxed text-blue-950/75 sm:mb-10 sm:text-lg">
-              Source-backed elected-official profiles first. Scorecards, voting
-              records, campaign funding, red flags, and citizen input appear
-              only where those records are actually loaded. Texas is live first;
-              national state-by-state coverage is the buildout path.
-            </p>
-            <div className="mb-8 max-w-xl">
-              <FarettaSearchBox compact placeholder="Ask Faretta AI to find a rep, school board, county, vote, or record..." />
+              <span className="rounded-full border border-blue-200 bg-white px-3 py-1 text-xs font-black uppercase tracking-wide text-blue-950 shadow-sm">
+                {formatNumber(dataStats.officialsWithPhotos)} faces loaded
+              </span>
+              <span className="rounded-full border border-amber-200 bg-amber-50 px-3 py-1 text-xs font-black uppercase tracking-wide text-amber-900 shadow-sm">
+                Source-backed only
+              </span>
             </div>
-            <div className="flex flex-wrap gap-4">
+            <h1 className="mt-4 text-4xl font-black leading-[0.96] tracking-tight text-blue-950 sm:text-6xl lg:text-7xl">
+              Know Your Reps.
+              <span className="block text-red-700">Put Them On The Record.</span>
+            </h1>
+            <p className="mt-4 max-w-3xl text-base font-semibold leading-7 text-blue-950/75 sm:text-lg">
+              Open a profile, check the score, follow the money, send a missing source, or flag the record that voters need to see. Texas is live first; the national map builds from public records.
+            </p>
+            <div className="mt-5 max-w-2xl">
+              <FarettaSearchBox compact placeholder="Ask Faretta AI who represents you, who funded them, or what record to pull..." />
+            </div>
+            <div className="mt-5 grid gap-2 sm:grid-cols-3">
               <Link
                 href="/officials"
-                className="rounded-xl bg-blue-900 px-6 py-3 text-sm font-bold text-white shadow-lg transition-all hover:-translate-y-0.5 hover:bg-red-700 hover:shadow-xl"
+                className="rounded-xl bg-blue-900 px-4 py-3 text-center text-sm font-black text-white shadow-lg transition hover:-translate-y-0.5 hover:bg-red-700"
               >
-                Browse All Officials
+                Open Officials
               </Link>
               <Link
-                href="/auth/signup"
-                className="rounded-xl border border-red-200 bg-white px-6 py-3 text-sm font-bold text-red-700 shadow-lg transition-all hover:-translate-y-0.5 hover:border-red-400 hover:shadow-xl"
+                href="/feedback"
+                className="rounded-xl border border-red-200 bg-white px-4 py-3 text-center text-sm font-black text-red-700 shadow-sm transition hover:-translate-y-0.5 hover:border-red-400 hover:bg-red-50"
               >
-                Sign Up to Vote
+                Submit A Source
+              </Link>
+              <Link
+                href="/school-boards"
+                className="rounded-xl border border-blue-200 bg-white px-4 py-3 text-center text-sm font-black text-blue-950 shadow-sm transition hover:-translate-y-0.5 hover:border-blue-400 hover:bg-blue-50"
+              >
+                School Boards
               </Link>
             </div>
+            <div className="mt-5 grid grid-cols-2 gap-2 sm:grid-cols-4">
+              {stats.map((stat) => (
+                <div key={stat.label} className="rounded-xl border border-slate-200 bg-white/85 p-3 shadow-sm">
+                  <p className="text-2xl font-black text-blue-950">{stat.value}</p>
+                  <p className="mt-1 text-[11px] font-black uppercase leading-4 text-red-700">{stat.label}</p>
+                  <p className="mt-1 text-[11px] font-bold leading-4 text-slate-500">{stat.caption}</p>
+                </div>
+              ))}
+            </div>
           </div>
-          <div className="grid gap-4">
-            <DrillDownPicker states={pickerStates} />
-            <div className="rounded-2xl border border-blue-100 bg-white p-6 shadow-xl shadow-blue-100/70">
-              <p className="text-sm font-black uppercase tracking-wide text-red-700">National official watch</p>
-              <h2 className="mt-2 text-3xl font-black text-blue-950">Open the public profiles people actually search for.</h2>
-              <div className="mt-6 grid gap-3">
-                {stats.map((stat) => (
-                  <div key={stat.label} className="flex items-center justify-between rounded-xl border border-blue-100 bg-blue-50 px-4 py-3">
-                    <span className="text-sm font-black text-blue-950">
-                      {stat.label}
-                      <span className="mt-0.5 block text-[11px] font-bold text-blue-950/55">{stat.caption}</span>
-                    </span>
-                    <span className="text-2xl font-black text-red-700">{stat.value}</span>
-                  </div>
+
+          <div className="grid gap-3">
+            <div className="rounded-2xl border border-slate-300 bg-slate-950 p-4 text-white shadow-xl shadow-blue-950/20">
+              <div className="flex items-center justify-between gap-3">
+                <div>
+                  <p className="text-xs font-black uppercase tracking-[0.18em] text-amber-300">The Watch Board</p>
+                  <h2 className="mt-1 text-2xl font-black">Records voters should open first.</h2>
+                </div>
+                <Link href="/red-flags" className="shrink-0 rounded-full bg-red-700 px-3 py-1.5 text-xs font-black text-white transition hover:bg-red-600">
+                  Red flags
+                </Link>
+              </div>
+              <div className="mt-4 grid gap-2">
+                {watchBoardOfficials.map(({ official, score, redFlagCount }) => (
+                  <WatchBoardCard
+                    key={official.id}
+                    official={official}
+                    score={score}
+                    redFlags={redFlagCount}
+                  />
                 ))}
               </div>
+              <p className="mt-3 text-xs font-semibold leading-5 text-slate-300">
+                This board is driven by loaded scores and red-flag records. It changes when the source file changes.
+              </p>
+            </div>
+
+            <div className="grid gap-3 sm:grid-cols-2">
+              <Link href="/attorneys" className="rounded-xl border border-slate-300 bg-white p-4 shadow-sm transition hover:-translate-y-0.5 hover:border-blue-400 hover:shadow-md">
+                <p className="text-xs font-black uppercase tracking-wide text-red-700">New lane</p>
+                <h3 className="mt-1 text-lg font-black text-blue-950">Attorney Watch</h3>
+                <p className="mt-1 text-sm font-semibold leading-5 text-slate-600">Law firms and attorneys tied to public power.</p>
+              </Link>
+              <Link href="/media" className="rounded-xl border border-slate-300 bg-white p-4 shadow-sm transition hover:-translate-y-0.5 hover:border-blue-400 hover:shadow-md">
+                <p className="text-xs font-black uppercase tracking-wide text-red-700">New lane</p>
+                <h3 className="mt-1 text-lg font-black text-blue-950">Media Watch</h3>
+                <p className="mt-1 text-sm font-semibold leading-5 text-slate-600">Newsrooms, editors, reporters, corrections.</p>
+              </Link>
             </div>
           </div>
         </div>
