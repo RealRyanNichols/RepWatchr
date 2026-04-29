@@ -4,7 +4,6 @@ import { useState } from "react";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { createClient } from "@/lib/supabase";
-import SocialLoginButtons from "@/components/auth/SocialLoginButtons";
 
 export default function SignUpPage() {
   const [email, setEmail] = useState("");
@@ -165,16 +164,6 @@ export default function SignUpPage() {
               {loading ? "Creating Account..." : "Create Account"}
             </button>
           </form>
-
-          <div className="my-6 flex items-center gap-3">
-            <div className="h-px flex-1 bg-gray-200" />
-            <span className="text-xs font-black uppercase text-gray-400">
-              optional social login
-            </span>
-            <div className="h-px flex-1 bg-gray-200" />
-          </div>
-
-          <SocialLoginButtons redirectTo="/auth/verify" />
 
           <p className="mt-6 text-center text-sm text-gray-600">
             Already have an account?{" "}

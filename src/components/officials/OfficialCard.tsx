@@ -1,5 +1,8 @@
+"use client";
+
 import Link from "next/link";
 import Image from "next/image";
+import { track } from "@vercel/analytics";
 import type { Official, ScoreCard } from "@/types";
 import PartyBadge from "@/components/officials/PartyBadge";
 import LetterGradeBadge from "@/components/scores/LetterGradeBadge";
@@ -28,6 +31,15 @@ export default function OfficialCard({
   return (
     <Link
       href={`/officials/${official.id}`}
+      onClick={() =>
+        track("official_profile_click", {
+          profile_id: official.id,
+          profile_name: official.name,
+          level: official.level,
+          party: official.party,
+          path: `/officials/${official.id}`,
+        })
+      }
       className="group relative block overflow-hidden rounded-xl border border-slate-300 bg-white shadow-sm transition-all hover:-translate-y-1 hover:border-blue-400 hover:shadow-lg"
     >
       {/* Top accent bar */}

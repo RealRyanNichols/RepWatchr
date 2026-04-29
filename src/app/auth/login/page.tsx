@@ -4,7 +4,6 @@ import { useState } from "react";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { createClient } from "@/lib/supabase";
-import SocialLoginButtons from "@/components/auth/SocialLoginButtons";
 
 export default function LoginPage() {
   const [email, setEmail] = useState("");
@@ -43,7 +42,7 @@ export default function LoginPage() {
             Log in. Track officials. Ask Faretta AI.
           </h1>
           <p className="mt-4 max-w-xl text-sm font-semibold leading-6 text-blue-950/75">
-            Email and password is the primary path. Facebook and X can be used when those providers are enabled in Supabase.
+            Email and password is the only login path right now. Social login will be added later after those providers are fully configured.
           </p>
           <div className="mt-6 grid gap-3 sm:grid-cols-3">
             {["Profile", "Watch list", "Faretta AI"].map((item) => (
@@ -110,16 +109,6 @@ export default function LoginPage() {
               {loading ? "Signing In..." : "Sign In"}
             </button>
           </form>
-
-          <div className="my-6 flex items-center gap-3">
-            <div className="h-px flex-1 bg-gray-200" />
-            <span className="text-xs font-black uppercase text-gray-400">
-              optional social login
-            </span>
-            <div className="h-px flex-1 bg-gray-200" />
-          </div>
-
-          <SocialLoginButtons redirectTo="/dashboard" />
 
           <p className="mt-6 text-center text-sm text-gray-600">
             Don&apos;t have an account?{" "}

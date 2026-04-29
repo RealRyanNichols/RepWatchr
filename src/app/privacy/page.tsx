@@ -22,7 +22,7 @@ export default function PrivacyPage() {
           </h2>
           <p>
             <strong>Account Information:</strong> When you create an account, we
-            collect your email address and password (or social login token). If
+            collect your email address and password. If
             you verify your identity, we collect your county of residence.
           </p>
           <p className="mt-2">
@@ -115,7 +115,6 @@ export default function PrivacyPage() {
           <ul className="list-disc list-inside space-y-1.5 mt-2">
             <li><strong>Supabase:</strong> Authentication and database hosting</li>
             <li><strong>Vercel:</strong> Website hosting and deployment</li>
-            <li><strong>Google OAuth:</strong> Optional social login (if you choose to sign in with Google)</li>
           </ul>
           <p className="mt-2">
             Each of these services has their own privacy policies. We encourage
