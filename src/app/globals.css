@@ -54,7 +54,7 @@ main {
 }
 
 .repwatchr-profile-marquee {
-  animation: repwatchr-marquee 42s linear infinite;
+  animation: repwatchr-marquee 110s linear infinite;
 }
 
 .repwatchr-profile-marquee:hover {
