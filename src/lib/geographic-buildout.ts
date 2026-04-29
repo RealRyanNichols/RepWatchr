@@ -1,0 +1,436 @@
+import { getAllNationalJurisdictions } from "@/data/national-buildout";
+import { getAllOfficials, getAllScoreCards } from "@/lib/data";
+import {
+  getSchoolBoardCompletionReport,
+  getSchoolBoardDistricts,
+  getSchoolBoardStats,
+} from "@/lib/school-board-research";
+import { getAttorneyWatchProfiles, getMediaWatchProfiles } from "@/lib/power-watch";
+import type { GovernmentLevel, Official } from "@/types";
+import type { PublicPowerProfile } from "@/types/power-watch";
+
+type GeographyKind = "state" | "county" | "city" | "district";
+
+export interface GeographicBuildoutRow {
+  id: string;
+  kind: GeographyKind;
+  code?: string;
+  name: string;
+  state: string;
+  status: "loaded" | "partial" | "queued";
+  completionPercent: number;
+  loadedLanes: number;
+  totalLanes: number;
+  officialProfiles: number;
+  federalOfficials: number;
+  stateOfficials: number;
+  countyOfficials: number;
+  cityOfficials: number;
+  schoolBoardMembers: number;
+  schoolDistricts: number;
+  attorneyProfiles: number;
+  mediaProfiles: number;
+  sourceLinks: number;
+  topGap: string;
+  href?: string;
+}
+
+interface OfficialRollup {
+  total: number;
+  byLevel: Record<GovernmentLevel, number>;
+  withPhotos: number;
+  withSources: number;
+  withWebsites: number;
+  reviewed: number;
+  scored: number;
+  sourceUrls: Set<string>;
+}
+
+interface PowerRollup {
+  total: number;
+  buildoutTotal: number;
+  sourceUrls: Set<string>;
+}
+
+interface SchoolRollup {
+  members: number;
+  districts: number;
+  completionTotal: number;
+  sourceUrls: Set<string>;
+}
+
+const emptyLevelCounts: Record<GovernmentLevel, number> = {
+  federal: 0,
+  state: 0,
+  county: 0,
+  city: 0,
+  "school-board": 0,
+};
+
+function makeOfficialRollup(): OfficialRollup {
+  return {
+    total: 0,
+    byLevel: { ...emptyLevelCounts },
+    withPhotos: 0,
+    withSources: 0,
+    withWebsites: 0,
+    reviewed: 0,
+    scored: 0,
+    sourceUrls: new Set<string>(),
+  };
+}
+
+function makePowerRollup(): PowerRollup {
+  return { total: 0, buildoutTotal: 0, sourceUrls: new Set<string>() };
+}
+
+function makeSchoolRollup(): SchoolRollup {
+  return { members: 0, districts: 0, completionTotal: 0, sourceUrls: new Set<string>() };
+}
+
+function splitCountyNames(value?: string) {
+  return (value ?? "")
+    .split(/[\/,]/)
+    .map((county) => county.trim())
+    .filter(Boolean);
+}
+
+function addSource(sourceUrls: Set<string>, url?: string) {
+  if (url) sourceUrls.add(url);
+}
+
+function officialCompletion(rollup: OfficialRollup) {
+  if (rollup.total === 0) return 0;
+  const photo = rollup.withPhotos / rollup.total;
+  const sources = rollup.withSources / rollup.total;
+  const contact = rollup.withWebsites / rollup.total;
+  const review = rollup.reviewed / rollup.total;
+  const scoringBase = Math.max(1, rollup.total - rollup.byLevel["school-board"]);
+  const scoring = rollup.scored / scoringBase;
+
+  return Math.round(
+    Math.min(1, photo) * 20 +
+      Math.min(1, sources) * 30 +
+      Math.min(1, contact) * 15 +
+      Math.min(1, review) * 20 +
+      Math.min(1, scoring) * 15,
+  );
+}
+
+function powerCompletion(rollup: PowerRollup) {
+  if (rollup.total === 0) return 0;
+  return Math.round(rollup.buildoutTotal / rollup.total);
+}
+
+function schoolCompletion(rollup: SchoolRollup) {
+  if (rollup.districts === 0) return 0;
+  return Math.round(rollup.completionTotal / rollup.districts);
+}
+
+function statusFrom(completionPercent: number, totalProfiles: number): GeographicBuildoutRow["status"] {
+  if (completionPercent >= 75) return "loaded";
+  if (totalProfiles > 0 || completionPercent > 0) return "partial";
+  return "queued";
+}
+
+function loadedLaneCount(officials: OfficialRollup, schools: SchoolRollup, attorneys: PowerRollup, media: PowerRollup) {
+  return [officials.total, schools.members + schools.districts, attorneys.total, media.total].filter((value) => value > 0).length;
+}
+
+function topGap(
+  kind: GeographyKind,
+  officials: OfficialRollup,
+  schools: SchoolRollup,
+  attorneys: PowerRollup,
+  media: PowerRollup,
+) {
+  if (officials.total + schools.members + attorneys.total + media.total === 0) {
+    return kind === "state" ? "Source import queued for this state." : "No source-backed profiles loaded yet.";
+  }
+  if (officialCompletion(officials) < 50 && officials.total > 0) return "Officials need photos, sources, scorecards, or review status.";
+  if (schools.districts > 0 && schoolCompletion(schools) < 60) return "School districts need more roster, source, and member profile work.";
+  if (attorneys.total > 0 && powerCompletion(attorneys) < 60) return "Attorney records need deeper profile buildout and review.";
+  if (media.total > 0 && powerCompletion(media) < 60) return "Media records need deeper profile buildout and review.";
+  return "Keep adding current source links, public statements, and profile photos.";
+}
+
+function combinePercent(values: number[]) {
+  const loaded = values.filter((value) => value > 0);
+  if (loaded.length === 0) return 0;
+  return Math.round(loaded.reduce((sum, value) => sum + value, 0) / loaded.length);
+}
+
+function rollupOfficial(rollup: OfficialRollup, official: Official, scoredOfficialIds: Set<string>) {
+  rollup.total += 1;
+  rollup.byLevel[official.level] = (rollup.byLevel[official.level] ?? 0) + 1;
+  if (official.photo) rollup.withPhotos += 1;
+  if ((official.sourceLinks?.length ?? 0) > 0 || official.photoSourceUrl || official.contactInfo.website) {
+    rollup.withSources += 1;
+  }
+  if (official.contactInfo.website) rollup.withWebsites += 1;
+  if (official.reviewStatus && official.reviewStatus !== "needs_source_review") rollup.reviewed += 1;
+  if (scoredOfficialIds.has(official.id)) rollup.scored += 1;
+  official.sourceLinks?.forEach((source) => addSource(rollup.sourceUrls, source.url));
+  addSource(rollup.sourceUrls, official.photoSourceUrl);
+  addSource(rollup.sourceUrls, official.contactInfo.website);
+}
+
+function rollupPower(rollup: PowerRollup, profile: PublicPowerProfile) {
+  rollup.total += 1;
+  rollup.buildoutTotal += profile.buildoutPercent;
+  profile.sourceLinks.forEach((source) => addSource(rollup.sourceUrls, source.url));
+}
+
+function getOrCreate<K, V>(map: Map<K, V>, key: K, makeValue: () => V) {
+  const existing = map.get(key);
+  if (existing) return existing;
+  const value = makeValue();
+  map.set(key, value);
+  return value;
+}
+
+function stateLabel(code: string) {
+  return getAllNationalJurisdictions().find((state) => state.code === code)?.name ?? code;
+}
+
+function makeRow(
+  kind: GeographyKind,
+  id: string,
+  name: string,
+  state: string,
+  officials: OfficialRollup,
+  schools: SchoolRollup,
+  attorneys: PowerRollup,
+  media: PowerRollup,
+  href?: string,
+  code?: string,
+): GeographicBuildoutRow {
+  const completionPercent = combinePercent([
+    officialCompletion(officials),
+    schoolCompletion(schools),
+    powerCompletion(attorneys),
+    powerCompletion(media),
+  ]);
+  const totalProfiles = officials.total + schools.members + attorneys.total + media.total;
+  const sourceLinks = new Set<string>([
+    ...officials.sourceUrls,
+    ...schools.sourceUrls,
+    ...attorneys.sourceUrls,
+    ...media.sourceUrls,
+  ]).size;
+
+  return {
+    id,
+    kind,
+    code,
+    name,
+    state,
+    status: statusFrom(completionPercent, totalProfiles),
+    completionPercent,
+    loadedLanes: loadedLaneCount(officials, schools, attorneys, media),
+    totalLanes: 4,
+    officialProfiles: officials.total,
+    federalOfficials: officials.byLevel.federal,
+    stateOfficials: officials.byLevel.state,
+    countyOfficials: officials.byLevel.county,
+    cityOfficials: officials.byLevel.city,
+    schoolBoardMembers: schools.members,
+    schoolDistricts: schools.districts,
+    attorneyProfiles: attorneys.total,
+    mediaProfiles: media.total,
+    sourceLinks,
+    topGap: topGap(kind, officials, schools, attorneys, media),
+    href,
+  };
+}
+
+export function getGeographicBuildoutDashboard() {
+  const jurisdictions = getAllNationalJurisdictions();
+  const officials = getAllOfficials();
+  const scoredOfficialIds = new Set(getAllScoreCards().map((scoreCard) => scoreCard.officialId));
+  const schoolDistricts = getSchoolBoardDistricts();
+  const schoolReport = getSchoolBoardCompletionReport();
+  const schoolStats = getSchoolBoardStats();
+  const attorneyProfiles = getAttorneyWatchProfiles();
+  const mediaProfiles = getMediaWatchProfiles();
+
+  const stateOfficials = new Map<string, OfficialRollup>();
+  const stateSchools = new Map<string, SchoolRollup>();
+  const stateAttorneys = new Map<string, PowerRollup>();
+  const stateMedia = new Map<string, PowerRollup>();
+  const countyOfficials = new Map<string, OfficialRollup>();
+  const countySchools = new Map<string, SchoolRollup>();
+  const countyAttorneys = new Map<string, PowerRollup>();
+  const countyMedia = new Map<string, PowerRollup>();
+  const cityOfficials = new Map<string, OfficialRollup>();
+  const cityAttorneys = new Map<string, PowerRollup>();
+  const cityMedia = new Map<string, PowerRollup>();
+
+  officials.forEach((official) => {
+    const state = (official.state ?? "TX").toUpperCase();
+    rollupOfficial(getOrCreate(stateOfficials, state, makeOfficialRollup), official, scoredOfficialIds);
+    official.county.forEach((county) => {
+      rollupOfficial(getOrCreate(countyOfficials, `${state}:${county}`, makeOfficialRollup), official, scoredOfficialIds);
+    });
+    if (official.level === "city") {
+      rollupOfficial(getOrCreate(cityOfficials, `${state}:${official.jurisdiction}`, makeOfficialRollup), official, scoredOfficialIds);
+    }
+  });
+
+  const districtCompletionBySlug = new Map(schoolReport.districtCompletions.map((district) => [district.district_slug, district]));
+  schoolDistricts.forEach((district) => {
+    const state = "TX";
+    const completion = districtCompletionBySlug.get(district.district_slug)?.percent ?? 0;
+    const sourceUrls = new Set<string>();
+    district.sourceLinks?.forEach((source) => addSource(sourceUrls, source.url));
+    district.candidates.forEach((candidate) => {
+      candidate.sources?.forEach((source) => addSource(sourceUrls, source.url));
+    });
+
+    const stateRollup = getOrCreate(stateSchools, state, makeSchoolRollup);
+    stateRollup.members += district.candidates.length;
+    stateRollup.districts += 1;
+    stateRollup.completionTotal += completion;
+    sourceUrls.forEach((url) => stateRollup.sourceUrls.add(url));
+
+    splitCountyNames(district.county).forEach((county) => {
+      const countyRollup = getOrCreate(countySchools, `${state}:${county}`, makeSchoolRollup);
+      countyRollup.members += district.candidates.length;
+      countyRollup.districts += 1;
+      countyRollup.completionTotal += completion;
+      sourceUrls.forEach((url) => countyRollup.sourceUrls.add(url));
+    });
+  });
+
+  attorneyProfiles.forEach((profile) => {
+    const state = profile.state.toUpperCase();
+    rollupPower(getOrCreate(stateAttorneys, state, makePowerRollup), profile);
+    splitCountyNames(profile.county).forEach((county) => {
+      rollupPower(getOrCreate(countyAttorneys, `${state}:${county}`, makePowerRollup), profile);
+    });
+    if (profile.city) rollupPower(getOrCreate(cityAttorneys, `${state}:${profile.city}`, makePowerRollup), profile);
+  });
+
+  mediaProfiles.forEach((profile) => {
+    const state = profile.state.toUpperCase();
+    rollupPower(getOrCreate(stateMedia, state, makePowerRollup), profile);
+    splitCountyNames(profile.county).forEach((county) => {
+      rollupPower(getOrCreate(countyMedia, `${state}:${county}`, makePowerRollup), profile);
+    });
+    if (profile.city) rollupPower(getOrCreate(cityMedia, `${state}:${profile.city}`, makePowerRollup), profile);
+  });
+
+  const stateRows = jurisdictions.map((jurisdiction) =>
+    makeRow(
+      "state",
+      jurisdiction.code,
+      jurisdiction.name,
+      jurisdiction.code,
+      stateOfficials.get(jurisdiction.code) ?? makeOfficialRollup(),
+      stateSchools.get(jurisdiction.code) ?? makeSchoolRollup(),
+      stateAttorneys.get(jurisdiction.code) ?? makePowerRollup(),
+      stateMedia.get(jurisdiction.code) ?? makePowerRollup(),
+      `/officials?state=${jurisdiction.code}`,
+      jurisdiction.code,
+    ),
+  );
+
+  const countyKeys = new Set([
+    ...countyOfficials.keys(),
+    ...countySchools.keys(),
+    ...countyAttorneys.keys(),
+    ...countyMedia.keys(),
+  ]);
+  const countyRows = Array.from(countyKeys)
+    .map((key) => {
+      const [state, county] = key.split(":");
+      return makeRow(
+        "county",
+        key,
+        `${county} County`,
+        state,
+        countyOfficials.get(key) ?? makeOfficialRollup(),
+        countySchools.get(key) ?? makeSchoolRollup(),
+        countyAttorneys.get(key) ?? makePowerRollup(),
+        countyMedia.get(key) ?? makePowerRollup(),
+        `/officials?state=${state}`,
+      );
+    })
+    .sort((a, b) => b.completionPercent - a.completionPercent || a.name.localeCompare(b.name));
+
+  const cityKeys = new Set([...cityOfficials.keys(), ...cityAttorneys.keys(), ...cityMedia.keys()]);
+  const cityRows = Array.from(cityKeys)
+    .map((key) => {
+      const [state, city] = key.split(":");
+      return makeRow(
+        "city",
+        key,
+        city,
+        state,
+        cityOfficials.get(key) ?? makeOfficialRollup(),
+        makeSchoolRollup(),
+        cityAttorneys.get(key) ?? makePowerRollup(),
+        cityMedia.get(key) ?? makePowerRollup(),
+        `/officials?state=${state}`,
+      );
+    })
+    .sort((a, b) => b.completionPercent - a.completionPercent || a.name.localeCompare(b.name));
+
+  const districtRows = schoolReport.districtCompletions
+    .map((district) => ({
+      id: district.district_slug,
+      kind: "district" as const,
+      name: district.district,
+      state: "TX",
+      status: statusFrom(district.percent, district.totalMembers),
+      completionPercent: district.percent,
+      loadedLanes: district.totalMembers > 0 ? 1 : 0,
+      totalLanes: 1,
+      officialProfiles: 0,
+      federalOfficials: 0,
+      stateOfficials: 0,
+      countyOfficials: 0,
+      cityOfficials: 0,
+      schoolBoardMembers: district.totalMembers,
+      schoolDistricts: 1,
+      attorneyProfiles: 0,
+      mediaProfiles: 0,
+      sourceLinks: district.sourceCount,
+      topGap: district.missing[0] ?? "Keep adding current source links and public records.",
+      href: `/school-boards/${district.district_slug.replaceAll("_", "-")}`,
+    }))
+    .sort((a, b) => a.completionPercent - b.completionPercent || a.name.localeCompare(b.name));
+
+  const stateRowsWithLoadedData = stateRows.filter(
+    (row) =>
+      row.officialProfiles +
+        row.schoolBoardMembers +
+        row.attorneyProfiles +
+        row.mediaProfiles >
+      0,
+  ).length;
+
+  return {
+    generatedAt: new Date().toISOString(),
+    summary: {
+      enabledStatesAndTerritories: jurisdictions.length,
+      statesWithLoadedData: stateRowsWithLoadedData,
+      queuedStatesAndTerritories: jurisdictions.length - stateRowsWithLoadedData,
+      countyRows: countyRows.length,
+      cityRows: cityRows.length,
+      districtRows: districtRows.length,
+      loadedOfficialProfiles: officials.length,
+      loadedSchoolBoardMembers: schoolStats.candidates,
+      loadedAttorneyProfiles: attorneyProfiles.length,
+      loadedMediaProfiles: mediaProfiles.length,
+    },
+    stateRows,
+    countyRows,
+    cityRows,
+    districtRows,
+    topCountyRows: countyRows.slice(0, 20),
+    topCityRows: cityRows.slice(0, 20),
+    lowestDistrictRows: districtRows.slice(0, 30),
+    stateLabel,
+  };
+}

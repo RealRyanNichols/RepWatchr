@@ -15,6 +15,7 @@ import {
   nationalTerritoryBuildouts,
   socialMonitoringConnections,
 } from "@/data/national-buildout";
+import { getGeographicBuildoutDashboard, type GeographicBuildoutRow } from "@/lib/geographic-buildout";
 
 export const metadata: Metadata = {
   title: "RepWatchr Buildout Dashboard",
@@ -45,6 +46,82 @@ function toneFor(percent: number): "red" | "amber" | "blue" | "green" {
   return "red";
 }
 
+function statusBadgeClasses(status: GeographicBuildoutRow["status"]) {
+  if (status === "loaded") return "bg-emerald-100 text-emerald-800";
+  if (status === "partial") return "bg-amber-100 text-amber-800";
+  return "bg-slate-100 text-slate-700";
+}
+
+function CompactGeoTable({
+  rows,
+  showState = false,
+}: {
+  rows: GeographicBuildoutRow[];
+  showState?: boolean;
+}) {
+  return (
+    <div className="overflow-x-auto rounded-xl border border-slate-200 bg-white">
+      <table className="min-w-[760px] w-full divide-y divide-slate-100 text-left text-sm">
+        <thead className="bg-slate-50 text-[11px] font-black uppercase tracking-wide text-slate-500">
+          <tr>
+            <th className="px-3 py-2">Area</th>
+            {showState ? <th className="px-3 py-2">State</th> : null}
+            <th className="px-3 py-2">People</th>
+            <th className="px-3 py-2">Schools</th>
+            <th className="px-3 py-2">Power</th>
+            <th className="px-3 py-2">Sources</th>
+            <th className="px-3 py-2">Done</th>
+          </tr>
+        </thead>
+        <tbody className="divide-y divide-slate-100">
+          {rows.map((row) => {
+            const profileCount = row.officialProfiles + row.schoolBoardMembers + row.attorneyProfiles + row.mediaProfiles;
+            const powerCount = row.attorneyProfiles + row.mediaProfiles;
+            const content = (
+              <>
+                <td className="px-3 py-2">
+                  <div className="flex items-start justify-between gap-2">
+                    <div>
+                      <p className="font-black text-slate-950">{row.name}</p>
+                      <p className="text-xs font-semibold text-slate-500">{row.topGap}</p>
+                    </div>
+                    <span className={`shrink-0 rounded-full px-2 py-1 text-[10px] font-black uppercase tracking-wide ${statusBadgeClasses(row.status)}`}>
+                      {row.status}
+                    </span>
+                  </div>
+                </td>
+                {showState ? <td className="px-3 py-2 text-xs font-black text-slate-600">{row.state}</td> : null}
+                <td className="px-3 py-2 font-black text-blue-950">{profileCount.toLocaleString()}</td>
+                <td className="px-3 py-2 font-semibold text-slate-700">{row.schoolDistricts.toLocaleString()}</td>
+                <td className="px-3 py-2 font-semibold text-slate-700">{powerCount.toLocaleString()}</td>
+                <td className="px-3 py-2 font-semibold text-slate-700">{row.sourceLinks.toLocaleString()}</td>
+                <td className="px-3 py-2">
+                  <div className="min-w-28">
+                    <p className={`mb-1 text-xs font-black ${row.completionPercent >= 75 ? "text-emerald-700" : row.completionPercent >= 50 ? "text-blue-700" : row.completionPercent >= 25 ? "text-amber-700" : "text-red-700"}`}>
+                      {row.completionPercent}%
+                    </p>
+                    <ProgressBar percent={row.completionPercent} tone={toneFor(row.completionPercent)} />
+                  </div>
+                </td>
+              </>
+            );
+
+            return row.href ? (
+              <tr key={row.id} className="align-top transition hover:bg-blue-50/40">
+                {content}
+              </tr>
+            ) : (
+              <tr key={row.id} className="align-top">
+                {content}
+              </tr>
+            );
+          })}
+        </tbody>
+      </table>
+    </div>
+  );
+}
+
 export default function BuildoutDashboardPage() {
   const report = getSchoolBoardCompletionReport();
   const stats = getSchoolBoardStats();
@@ -52,6 +129,7 @@ export default function BuildoutDashboardPage() {
   const attorneyStats = getPowerWatchStats(getAttorneyWatchProfiles());
   const mediaStats = getPowerWatchStats(getMediaWatchProfiles());
   const nationalSummary = getNationalBuildoutSummary();
+  const geographic = getGeographicBuildoutDashboard();
   const ideologyProfiles = getAllOfficialIdeologyProfiles();
   const voteWeightedIdeologyProfiles = ideologyProfiles.filter((profile) => profile.ideologyScore !== null);
   const pendingIdeologyProfiles = ideologyProfiles.length - voteWeightedIdeologyProfiles.length;
@@ -361,6 +439,85 @@ export default function BuildoutDashboardPage() {
                 </div>
               ))}
             </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="border-b border-slate-200 bg-slate-50 py-10">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <div className="mb-6 flex flex-col gap-2 lg:flex-row lg:items-end lg:justify-between">
+            <div>
+              <p className="text-xs font-black uppercase tracking-wide text-red-700">Geographic completion control center</p>
+              <h2 className="text-2xl font-black text-gray-950">Every state, then counties, cities, and districts.</h2>
+              <p className="mt-1 max-w-4xl text-xs font-semibold leading-5 text-gray-600">
+                State rows include every enabled jurisdiction. County, city, and district rows show source-known areas already loaded into RepWatchr. Empty states stay queued until a source import creates real records.
+              </p>
+            </div>
+            <p className="rounded-full border border-blue-200 bg-white px-3 py-1.5 text-xs font-black text-blue-950">
+              Generated from loaded data, not guesses
+            </p>
+          </div>
+
+          <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
+            <div className="rounded-2xl border border-slate-200 bg-white p-5 shadow-sm">
+              <p className="text-3xl font-black text-blue-950">{geographic.summary.enabledStatesAndTerritories.toLocaleString()}</p>
+              <p className="mt-1 text-xs font-black uppercase tracking-wide text-red-700">States/territories enabled</p>
+              <p className="mt-2 text-xs font-semibold leading-5 text-slate-600">{geographic.summary.statesWithLoadedData} have at least one loaded spotlight record.</p>
+            </div>
+            <div className="rounded-2xl border border-slate-200 bg-white p-5 shadow-sm">
+              <p className="text-3xl font-black text-blue-950">{geographic.summary.countyRows.toLocaleString()}</p>
+              <p className="mt-1 text-xs font-black uppercase tracking-wide text-red-700">County rows</p>
+              <p className="mt-2 text-xs font-semibold leading-5 text-slate-600">Counties with officials, school boards, attorneys, or media records loaded.</p>
+            </div>
+            <div className="rounded-2xl border border-slate-200 bg-white p-5 shadow-sm">
+              <p className="text-3xl font-black text-blue-950">{geographic.summary.cityRows.toLocaleString()}</p>
+              <p className="mt-1 text-xs font-black uppercase tracking-wide text-red-700">City rows</p>
+              <p className="mt-2 text-xs font-semibold leading-5 text-slate-600">Cities with local officials, legal-power, or media-power profiles loaded.</p>
+            </div>
+            <div className="rounded-2xl border border-slate-200 bg-white p-5 shadow-sm">
+              <p className="text-3xl font-black text-blue-950">{geographic.summary.districtRows.toLocaleString()}</p>
+              <p className="mt-1 text-xs font-black uppercase tracking-wide text-red-700">District rows</p>
+              <p className="mt-2 text-xs font-semibold leading-5 text-slate-600">School-board district completion rows already computed from roster dossiers.</p>
+            </div>
+          </div>
+
+          <div className="mt-6 rounded-2xl border border-slate-200 bg-white p-4 shadow-sm">
+            <div className="mb-3 flex flex-col gap-1 sm:flex-row sm:items-end sm:justify-between">
+              <div>
+                <p className="text-xs font-black uppercase tracking-wide text-red-700">State dashboard</p>
+                <h3 className="text-xl font-black text-slate-950">National queue and loaded profile count</h3>
+              </div>
+              <p className="text-xs font-semibold text-slate-500">Officials + school boards + attorneys + media</p>
+            </div>
+            <CompactGeoTable rows={geographic.stateRows} />
+          </div>
+
+          <div className="mt-6 grid gap-4 xl:grid-cols-2">
+            <div className="rounded-2xl border border-slate-200 bg-white p-4 shadow-sm">
+              <div className="mb-3">
+                <p className="text-xs font-black uppercase tracking-wide text-red-700">County dashboard</p>
+                <h3 className="text-xl font-black text-slate-950">Top loaded counties</h3>
+              </div>
+              <CompactGeoTable rows={geographic.topCountyRows} showState />
+            </div>
+            <div className="rounded-2xl border border-slate-200 bg-white p-4 shadow-sm">
+              <div className="mb-3">
+                <p className="text-xs font-black uppercase tracking-wide text-red-700">City dashboard</p>
+                <h3 className="text-xl font-black text-slate-950">Top loaded cities</h3>
+              </div>
+              <CompactGeoTable rows={geographic.topCityRows} showState />
+            </div>
+          </div>
+
+          <div className="mt-6 rounded-2xl border border-slate-200 bg-white p-4 shadow-sm">
+            <div className="mb-3 flex flex-col gap-1 sm:flex-row sm:items-end sm:justify-between">
+              <div>
+                <p className="text-xs font-black uppercase tracking-wide text-red-700">District dashboard</p>
+                <h3 className="text-xl font-black text-slate-950">Lowest-completion districts first</h3>
+              </div>
+              <p className="text-xs font-semibold text-slate-500">Full district table remains below for every loaded district.</p>
+            </div>
+            <CompactGeoTable rows={geographic.lowestDistrictRows} showState />
           </div>
         </div>
       </section>

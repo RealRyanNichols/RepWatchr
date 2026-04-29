@@ -4,6 +4,7 @@ import { getSchoolBoardStats } from "@/lib/school-board-research";
 import { getAttorneyWatchProfiles, getMediaWatchProfiles, getPowerWatchStats } from "@/lib/power-watch";
 import { getAllNationalJurisdictions, getNationalBuildoutSummary } from "@/data/national-buildout";
 import { countByState } from "@/lib/state-scope";
+import { getGeographicBuildoutDashboard } from "@/lib/geographic-buildout";
 
 export const dynamic = "force-dynamic";
 
@@ -21,6 +22,7 @@ export async function GET() {
   const mediaStats = getPowerWatchStats(mediaProfiles);
   const nationalSummary = getNationalBuildoutSummary();
   const jurisdictions = getAllNationalJurisdictions();
+  const geographic = getGeographicBuildoutDashboard();
 
   const officialCountsByState = countByState(officials, (official) => official.state, "TX");
   const schoolBoardCountsByState = { TX: schoolStats.candidates };
@@ -126,6 +128,10 @@ export async function GET() {
         detail: "Known missing profile imports, school-board gaps, and attorney/media records needing buildout.",
       },
     ],
-    stateRows,
+    geographicSummary: geographic.summary,
+    stateRows: geographic.stateRows,
+    countyRows: geographic.topCountyRows,
+    cityRows: geographic.topCityRows,
+    districtRows: geographic.lowestDistrictRows,
   });
 }
