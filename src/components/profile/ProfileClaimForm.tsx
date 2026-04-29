@@ -5,7 +5,15 @@ import Link from "next/link";
 import { useAuth } from "@/components/auth/AuthProvider";
 import { createClient } from "@/lib/supabase";
 
-type ProfileType = "school_board" | "official" | "journalist";
+type ProfileType =
+  | "school_board"
+  | "official"
+  | "attorney"
+  | "law_firm"
+  | "media_company"
+  | "journalist"
+  | "editor"
+  | "newsroom_leadership";
 
 type ProfileClaimFormProps = {
   initialProfileType?: string;
@@ -15,11 +23,20 @@ type ProfileClaimFormProps = {
 };
 
 function normalizeProfileType(value?: string): ProfileType {
-  if (value === "official" || value === "journalist" || value === "school_board") {
+  if (
+    value === "official" ||
+    value === "attorney" ||
+    value === "law_firm" ||
+    value === "media_company" ||
+    value === "journalist" ||
+    value === "editor" ||
+    value === "newsroom_leadership" ||
+    value === "school_board"
+  ) {
     return value;
   }
 
-  return "school_board";
+  return "official";
 }
 
 function cleanPathSegment(value: string) {
@@ -70,7 +87,8 @@ export default function ProfileClaimForm({
           </h1>
           <p className="mt-3 text-sm font-semibold leading-6 text-gray-600">
             Profile claims require a RepWatchr account, manual verification, and
-            admin approval before reviewed submissions unlock.
+            admin approval before reviewed submissions unlock. People,
+            companies, firms, and organizations can request access.
           </p>
           <div className="mt-6 flex justify-center gap-3">
             <Link
@@ -199,9 +217,9 @@ export default function ProfileClaimForm({
         </h1>
         <p className="mt-3 text-sm font-semibold leading-6 text-gray-600">
           Verification is strict and manual. Approved claimants can submit a
-          reviewed public bio, statement, media, and links. They cannot edit
-          RepWatchr facts, evidence, scores, source records, red flags, or
-          research gaps.
+          reviewed public bio, company profile, statement, media, and links.
+          They cannot edit RepWatchr facts, evidence, scores, source records,
+          red flags, or research gaps.
         </p>
 
         {error ? (
@@ -221,7 +239,12 @@ export default function ProfileClaimForm({
               >
                 <option value="school_board">School board</option>
                 <option value="official">Public official</option>
+                <option value="attorney">Attorney</option>
+                <option value="law_firm">Law firm</option>
+                <option value="media_company">Media company</option>
                 <option value="journalist">Journalist / reporter</option>
+                <option value="editor">Editor</option>
+                <option value="newsroom_leadership">Newsroom leadership</option>
               </select>
             </label>
             <label className="block">

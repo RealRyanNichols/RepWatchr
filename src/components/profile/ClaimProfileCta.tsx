@@ -4,7 +4,15 @@ type ClaimProfileCtaProps = {
   profileId: string;
   profileName: string;
   districtSlug?: string;
-  profileType?: "school_board" | "official" | "journalist";
+  profileType?:
+    | "school_board"
+    | "official"
+    | "attorney"
+    | "law_firm"
+    | "media_company"
+    | "journalist"
+    | "editor"
+    | "newsroom_leadership";
 };
 
 export default function ClaimProfileCta({
@@ -29,7 +37,7 @@ export default function ClaimProfileCta({
         Claimed profile tools
       </p>
       <h2 className="mt-2 text-xl font-black text-blue-950">
-        Are you {profileName}?
+        Do you represent {profileName}?
       </h2>
       <p className="mt-2 text-sm font-semibold leading-6 text-blue-950/75">
         Claim this profile to request a reviewed public bio, statement, approved

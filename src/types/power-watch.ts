@@ -51,6 +51,16 @@ export interface PublicPowerProfile {
   profileStatus: PublicPowerStatus;
   buildoutPercent: number;
   profileTags?: string[];
+  profileImageUrl?: string;
+  profileImageAlt?: string;
+  profileImageSource?: string;
+  profileImageKind?: "headshot" | "firm-logo" | "company-logo" | "building" | "placeholder";
+  watchMark?: {
+    label: string;
+    tone: "red" | "amber";
+    reason: string;
+    status: "needs_records_review" | "client_allegation" | "source_backed";
+  };
   featuredSpotlight?: {
     label: string;
     title: string;

@@ -4,6 +4,9 @@ import { notFound } from "next/navigation";
 import { getMediaWatchProfileBySlug, getMediaWatchProfiles } from "@/lib/power-watch";
 import { getProfileScorecardTargetType } from "@/lib/universal-scorecards";
 import ProfileScorecardVote from "@/components/scorecards/ProfileScorecardVote";
+import ClaimProfileCta from "@/components/profile/ClaimProfileCta";
+import PowerProfileAvatar from "@/components/power-watch/PowerProfileAvatar";
+import type { PublicPowerKind } from "@/types/power-watch";
 
 interface MediaProfilePageProps {
   params: Promise<{ slug: string }>;
@@ -31,6 +34,13 @@ function statusLabel(status: string) {
   return status.replaceAll("_", " ");
 }
 
+function claimTypeForKind(kind: PublicPowerKind) {
+  if (kind === "media-company") return "media_company";
+  if (kind === "editor") return "editor";
+  if (kind === "newsroom-leadership") return "newsroom_leadership";
+  return "journalist";
+}
+
 export default async function MediaProfilePage({ params }: MediaProfilePageProps) {
   const { slug } = await params;
   const profile = getMediaWatchProfileBySlug(slug);
@@ -48,7 +58,9 @@ export default async function MediaProfilePage({ params }: MediaProfilePageProps
           <div className="h-1.5 w-full bg-[linear-gradient(90deg,#b42318_0%,#b42318_48%,#ffffff_48%,#ffffff_52%,#1d4ed8_52%,#1d4ed8_100%)]" />
           <div className="p-5 sm:p-7">
             <div className="flex flex-col gap-4 md:flex-row md:items-start md:justify-between">
-              <div>
+              <div className="flex flex-col gap-4 sm:flex-row sm:items-start">
+                <PowerProfileAvatar profile={profile} size="lg" />
+                <div>
                 <p className="text-xs font-black uppercase tracking-[0.18em] text-red-700">
                   {profile.categoryLabel}
                 </p>
@@ -56,6 +68,12 @@ export default async function MediaProfilePage({ params }: MediaProfilePageProps
                 <p className="mt-3 max-w-3xl text-sm font-semibold leading-6 text-slate-700 sm:text-base">
                   {profile.summary}
                 </p>
+                {profile.profileImageSource ? (
+                  <p className="mt-2 text-xs font-bold uppercase tracking-wide text-slate-500">
+                    Profile image source: {profile.profileImageSource}
+                  </p>
+                ) : null}
+                </div>
               </div>
               <div className="rounded-xl border border-slate-300 bg-slate-50 p-4 md:w-64">
                 <p className="text-xs font-black uppercase tracking-wide text-slate-500">Buildout</p>
@@ -80,6 +98,14 @@ export default async function MediaProfilePage({ params }: MediaProfilePageProps
                 ))}
             </div>
           </div>
+        </section>
+
+        <section className="mt-6">
+          <ClaimProfileCta
+            profileId={profile.slug}
+            profileName={profile.name}
+            profileType={claimTypeForKind(profile.kind)}
+          />
         </section>
 
         <section className="mt-6">

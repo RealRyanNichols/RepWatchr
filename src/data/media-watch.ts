@@ -1,6 +1,6 @@
 import type { PublicPowerProfile } from "@/types/power-watch";
 
-const checkedAt = "2026-04-28";
+const checkedAt = "2026-04-29";
 
 const longviewNewsJournalSource = {
   title: "Longview News-Journal contact page",
@@ -56,6 +56,10 @@ export const mediaWatchProfiles: PublicPowerProfile[] = [
     scrutinyAreas: ["source use", "corrections", "ownership", "official relationships", "story selection", "public-record follow-through"],
     profileStatus: "source_seeded",
     buildoutPercent: 32,
+    profileImageUrl: "https://news-journal.com/favicon.ico",
+    profileImageAlt: "Longview News-Journal public site icon",
+    profileImageSource: "Longview News-Journal public website",
+    profileImageKind: "company-logo",
     affiliatedPeople: [
       { name: "Justin Wilcox", role: "Regional publisher/HR" },
       { name: "Randy Ferguson", role: "Managing editor", slug: "randy-ferguson" },
@@ -143,6 +147,10 @@ export const mediaWatchProfiles: PublicPowerProfile[] = [
     scrutinyAreas: ["source use", "corrections", "ownership", "official relationships", "story selection", "public-record follow-through"],
     profileStatus: "source_seeded",
     buildoutPercent: 34,
+    profileImageUrl: "https://tylerpaper.com/favicon.ico",
+    profileImageAlt: "Tyler Morning Telegraph public site icon",
+    profileImageSource: "Tyler Morning Telegraph public website",
+    profileImageKind: "company-logo",
     affiliatedPeople: [
       { name: "Justin Wilcox", role: "Regional Publisher - CMG Texas" },
       { name: "Santana Wood", role: "Managing Editor", slug: "santana-wood" },
@@ -210,6 +218,10 @@ export const mediaWatchProfiles: PublicPowerProfile[] = [
     scrutinyAreas: ["source use", "corrections", "ownership", "official relationships", "story selection", "public-record follow-through"],
     profileStatus: "source_seeded",
     buildoutPercent: 36,
+    profileImageUrl: "https://www.kltv.com/favicon.ico",
+    profileImageAlt: "KLTV public site icon",
+    profileImageSource: "KLTV public website",
+    profileImageKind: "company-logo",
     affiliatedPeople: [
       { name: "Pat Stacey", role: "VP/General Manager" },
       { name: "Joe Terrell", role: "News Director/Anchor", slug: "joe-terrell" },

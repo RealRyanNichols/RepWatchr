@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import PowerProfileCard from "@/components/power-watch/PowerProfileCard";
+import PowerProfileRail from "@/components/power-watch/PowerProfileRail";
 import { mediaWatchImportPlan } from "@/data/media-watch";
 import { getMediaWatchProfiles, getPowerWatchStats } from "@/lib/power-watch";
 
@@ -25,10 +26,21 @@ export default function MediaPage() {
   const stats = getPowerWatchStats(profiles);
   const companies = profiles.filter((profile) => profile.kind === "media-company");
   const people = profiles.filter((profile) => profile.kind !== "media-company");
+  const topProfiles = profiles
+    .sort((a, b) => b.buildoutPercent - a.buildoutPercent || a.name.localeCompare(b.name))
+    .slice(0, 12);
 
   return (
     <div className="bg-slate-100">
       <main className="mx-auto max-w-7xl px-4 py-8 sm:px-6 lg:px-8">
+        <PowerProfileRail
+          profiles={topProfiles}
+          basePath="/media"
+          kicker="Media watch roll"
+          title="Newsrooms, editors, reporters, and public media profiles."
+          detail="Companies and people first; methodology stays below the roll."
+        />
+
         <section className="overflow-hidden rounded-2xl border border-slate-300 bg-white text-slate-950 shadow-sm">
           <div className="h-1.5 w-full bg-[linear-gradient(90deg,#b42318_0%,#b42318_48%,#ffffff_48%,#ffffff_52%,#1d4ed8_52%,#1d4ed8_100%)]" />
           <div className="grid gap-6 p-5 lg:grid-cols-[1.08fr_0.92fr] lg:p-7">

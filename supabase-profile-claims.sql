@@ -17,7 +17,18 @@ create table if not exists public.user_roles (
 create table if not exists public.profile_claims (
   id uuid primary key default gen_random_uuid(),
   user_id uuid references auth.users(id) on delete cascade not null,
-  profile_type text not null check (profile_type in ('school_board', 'official', 'journalist')),
+  profile_type text not null check (
+    profile_type in (
+      'school_board',
+      'official',
+      'attorney',
+      'law_firm',
+      'media_company',
+      'journalist',
+      'editor',
+      'newsroom_leadership'
+    )
+  ),
   profile_id text not null,
   profile_name text not null,
   district_slug text,

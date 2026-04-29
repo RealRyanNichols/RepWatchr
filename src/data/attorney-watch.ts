@@ -1,6 +1,34 @@
 import type { PublicPowerProfile } from "@/types/power-watch";
 
-const checkedAt = "2026-04-28";
+const checkedAt = "2026-04-29";
+
+const rogersLawLogo =
+  "https://img1.wsimg.com/isteam/ip/6319e6fb-c594-4971-913b-50ba15e12af5/logo/6b23c216-d205-44e3-a356-56282dbb2366.png/:/rs=h:80,cg:true,m/qt=q:95";
+const kutchLawLogo = "https://kutchlaw.com/images/kyle-kutch-logo.png";
+const potterMintonLogo = "https://potterminton.com/wp-content/uploads/2014/11/PotterMintonLogo.jpg";
+const borenMimsImage = "https://lirp.cdn-website.com/42f68c73/dms3rep/multi/opt/Boren---Mims--281-29-1920w.png";
+const coghlanCrowsonLogo = "https://ccfww.com/wp-content/uploads/2022/08/Logo-cc-llp-1.png";
+const brandtThorsonHeadshot = "https://jbtfirm.com/wp-content/uploads/j-brandt-thorson-criminal-defense-attorney.png";
+const smithLegalImage = "https://smithlegaltx.com/wp-content/uploads/2017/05/facebook-cover.jpg";
+const cmhnLogo = "https://cmhnlaw.com/images/cmhn-LOGO.png";
+const mcbrideLawLogo =
+  "https://static.wixstatic.com/media/26a2e1_d2df62cf430d495493ccbab386950002~mv2.png/v1/fill/w_885,h_200,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/McBride_jpg.png";
+const mcbrideProfileImage =
+  "https://static.wixstatic.com/media/26a2e1_46e6a7b0624a4108974960b82cf91692~mv2.jpg/v1/fill/w_662,h_592,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/IMG_20250402_104039.jpg";
+
+const rogersWatchMark = {
+  label: "Red mark",
+  tone: "red",
+  reason: "Ryan requested this profile stay marked while the client-file, billing, docket, and source packet are built out.",
+  status: "client_allegation",
+} as const;
+
+const mcbrideWatchMark = {
+  label: "Red mark",
+  tone: "red",
+  reason: "Ryan requested this New York attorney be marked for deeper records review before any final findings are published.",
+  status: "needs_records_review",
+} as const;
 
 export const attorneyWatchImportPlan = {
   title: "Texas attorney and law-firm buildout",
@@ -29,7 +57,7 @@ export const attorneyWatchProfiles: PublicPowerProfile[] = [
     slug: "rogers-law-firm-longview",
     name: "Rogers Law Firm",
     kind: "law-firm",
-    categoryLabel: "Featured law firm",
+    categoryLabel: "Law firm",
     city: "Longview",
     county: "Gregg",
     state: "TX",
@@ -49,16 +77,12 @@ export const attorneyWatchProfiles: PublicPowerProfile[] = [
     ],
     profileStatus: "needs_source_review",
     buildoutPercent: 58,
-    profileTags: ["Spotlight", "Client complaint", "Family law", "Needs court-record review"],
-    featuredSpotlight: {
-      label: "RepWatchr spotlight",
-      title: "Bo Rogers withdrawal dispute in Ryan Nichols case",
-      status: "client_allegation",
-      caseNumber: "Harrison County Cause No. 25-0847",
-      callout: "Public case-file entry loaded. Court transcript, docket sheet, billing records, and client-file production still need review.",
-      summary:
-        "Ryan Nichols' public case file states that Bo Rogers moved to withdraw on March 6, 2026, and that Ryan responded with a verified objection, pro se appearance, request for continuance, and request for transition orders including release of the client file, billing and trust accounting, and a written deadline list.",
-    },
+    profileTags: ["Red mark", "Client complaint", "Family law", "Needs court-record review"],
+    profileImageUrl: rogersLawLogo,
+    profileImageAlt: "Rogers Law Firm logo",
+    profileImageSource: "Rogers Law Firm public website",
+    profileImageKind: "firm-logo",
+    watchMark: rogersWatchMark,
     sentimentSummary: {
       label: "Records-review watch",
       score: 42,
@@ -150,7 +174,7 @@ export const attorneyWatchProfiles: PublicPowerProfile[] = [
     slug: "raymond-bo-rogers-jr",
     name: "Raymond E. \"Bo Rogers\" Rogers Jr.",
     kind: "attorney",
-    categoryLabel: "Spotlight attorney",
+    categoryLabel: "Attorney",
     city: "Longview",
     county: "Gregg",
     state: "TX",
@@ -171,16 +195,12 @@ export const attorneyWatchProfiles: PublicPowerProfile[] = [
     profileStatus: "needs_source_review",
     buildoutPercent: 56,
     affiliatedOrganizationSlug: "rogers-law-firm-longview",
-    profileTags: ["Spotlight", "Attorney", "Eligible in Texas", "Client complaint"],
-    featuredSpotlight: {
-      label: "Client-rights spotlight",
-      title: "Ryan Nichols withdrawal objection and transition-order request",
-      status: "client_allegation",
-      caseNumber: "Harrison County Cause No. 25-0847",
-      callout: "This is a complaint/evidence issue, not a final disciplinary finding.",
-      summary:
-        "The public case file says Ryan Nichols objected to withdrawal and requested a continuance plus transition orders requiring the full client file, billing and trust accounting, and a written list of deadlines and obligations.",
-    },
+    profileTags: ["Red mark", "Attorney", "Eligible in Texas", "Client complaint"],
+    profileImageUrl: rogersLawLogo,
+    profileImageAlt: "Rogers Law Firm logo for Raymond E. Bo Rogers Jr.",
+    profileImageSource: "Rogers Law Firm public website",
+    profileImageKind: "firm-logo",
+    watchMark: rogersWatchMark,
     sentimentSummary: {
       label: "Mixed / records pending",
       score: 45,
@@ -261,6 +281,115 @@ export const attorneyWatchProfiles: PublicPowerProfile[] = [
     ],
   },
   {
+    slug: "mcbride-law-firm-pllc",
+    name: "The McBride Law Firm, PLLC",
+    kind: "law-firm",
+    categoryLabel: "Law firm",
+    city: "New York",
+    county: "New York",
+    state: "NY",
+    region: "New York / national cases",
+    summary:
+      "New York City criminal-defense law firm with a public website stating that it handles state and federal criminal-defense matters and works nationally.",
+    whyTracked:
+      "This firm profile is included because Joseph D. McBride was requested for RepWatchr records review. The firm page gives the public source bucket for attorney, practice-area, court-record, and client-rights research before any conclusions are published.",
+    authorityAreas: ["criminal defense", "federal criminal defense", "civil rights", "appeals", "post-conviction matters"],
+    scrutinyAreas: [
+      "court record footprint",
+      "client outcome records",
+      "online reviews",
+      "social-media sentiment",
+      "disciplinary records if any",
+      "source-backed correction requests",
+    ],
+    profileStatus: "needs_source_review",
+    buildoutPercent: 30,
+    profileTags: ["New York", "Criminal defense", "Needs records review"],
+    profileImageUrl: mcbrideLawLogo,
+    profileImageAlt: "The McBride Law Firm logo",
+    profileImageSource: "The McBride Law Firm public website",
+    profileImageKind: "firm-logo",
+    affiliatedPeople: [{ name: "Joseph D. McBride", role: "Founder / attorney", slug: "joseph-d-mcbride" }],
+    sourceLinks: [
+      {
+        title: "The McBride Law Firm public website",
+        url: "https://www.mcbridelawnyc.com/",
+        sourceType: "official-website",
+        lastCheckedAt: checkedAt,
+      },
+    ],
+  },
+  {
+    slug: "joseph-d-mcbride",
+    name: "Joseph D. McBride",
+    kind: "attorney",
+    categoryLabel: "Attorney",
+    city: "New York",
+    county: "New York",
+    state: "NY",
+    region: "New York / national cases",
+    summary:
+      "Attorney profile seeded from The McBride Law Firm public website, which identifies Joseph D. McBride as the founder and describes prior Bronx County prosecutor experience.",
+    whyTracked:
+      "Ryan requested a red mark and deeper source review for Joseph D. McBride. RepWatchr has not loaded a final evidence packet, rulings dataset, client-outcome dataset, or disciplinary review into this profile yet.",
+    authorityAreas: ["criminal defense", "federal criminal defense", "civil rights", "appeals", "post-conviction matters"],
+    scrutinyAreas: [
+      "court record footprint",
+      "client outcomes",
+      "public disciplinary records if any",
+      "reviews and social sentiment",
+      "source-backed correction requests",
+    ],
+    profileStatus: "needs_source_review",
+    buildoutPercent: 28,
+    affiliatedOrganizationSlug: "mcbride-law-firm-pllc",
+    profileTags: ["Red mark", "New York", "Criminal defense", "Needs records review"],
+    profileImageUrl: mcbrideProfileImage,
+    profileImageAlt: "Joseph D. McBride public website image",
+    profileImageSource: "The McBride Law Firm public website",
+    profileImageKind: "headshot",
+    watchMark: mcbrideWatchMark,
+    sentimentSummary: {
+      label: "Records pending",
+      basis:
+        "The official firm website is loaded as a starter source. RepWatchr has not loaded court outcome data, discipline history, review samples, or social sentiment for this profile yet.",
+      lastUpdated: checkedAt,
+    },
+    accountabilitySignals: [
+      {
+        label: "Profile status",
+        status: "needs_records_review",
+        tone: "warning",
+        detail:
+          "Ryan requested a red mark while court records, client outcomes, public discipline, reviews, and social sentiment are gathered.",
+        sourceTitle: "RepWatchr research queue",
+      },
+      {
+        label: "Official website source",
+        status: "verified",
+        tone: "neutral",
+        detail:
+          "The McBride Law Firm public website identifies Joseph D. McBride and describes the firm's New York City criminal-defense practice.",
+        sourceTitle: "The McBride Law Firm public website",
+      },
+      {
+        label: "Final findings",
+        status: "needs_records_review",
+        tone: "neutral",
+        detail:
+          "No final misconduct, sanctions, civil, criminal, disciplinary, or client-rights finding has been loaded into this profile.",
+      },
+    ],
+    sourceLinks: [
+      {
+        title: "The McBride Law Firm public website",
+        url: "https://www.mcbridelawnyc.com/",
+        sourceType: "official-website",
+        lastCheckedAt: checkedAt,
+      },
+    ],
+  },
+  {
     slug: "state-bar-of-texas-find-a-lawyer",
     name: "State Bar of Texas Find a Lawyer",
     kind: "bar-source",
@@ -277,6 +406,10 @@ export const attorneyWatchProfiles: PublicPowerProfile[] = [
     scrutinyAreas: ["license status", "public grievance history", "court appearances", "government-client representation"],
     profileStatus: "source_seeded",
     buildoutPercent: 35,
+    profileImageUrl: "https://www.texasbar.com/AM/Images/logo.svg",
+    profileImageAlt: "State Bar of Texas logo",
+    profileImageSource: "State Bar of Texas public website",
+    profileImageKind: "company-logo",
     sourceLinks: [...attorneyWatchImportPlan.sourceLinks],
   },
   {
@@ -296,6 +429,10 @@ export const attorneyWatchProfiles: PublicPowerProfile[] = [
     scrutinyAreas: ["court record footprint", "government or official clients", "campaign or vendor relationships", "public disciplinary records if any"],
     profileStatus: "source_seeded",
     buildoutPercent: 30,
+    profileImageUrl: kutchLawLogo,
+    profileImageAlt: "Kutch Law Firm logo",
+    profileImageSource: "Kutch Law Firm public website",
+    profileImageKind: "firm-logo",
     affiliatedPeople: [{ name: "Kyle Kutch", role: "Attorney", slug: "kyle-kutch" }],
     sourceLinks: [
       {
@@ -324,6 +461,10 @@ export const attorneyWatchProfiles: PublicPowerProfile[] = [
     profileStatus: "needs_profile_buildout",
     buildoutPercent: 18,
     affiliatedOrganizationSlug: "kutch-law-firm-longview",
+    profileImageUrl: kutchLawLogo,
+    profileImageAlt: "Kutch Law Firm logo for Kyle Kutch",
+    profileImageSource: "Kutch Law Firm public website",
+    profileImageKind: "firm-logo",
     sourceLinks: [
       {
         title: "Kutch Law Firm public website",
@@ -350,6 +491,10 @@ export const attorneyWatchProfiles: PublicPowerProfile[] = [
     scrutinyAreas: ["court record footprint", "public-sector clients", "official relationships", "disciplinary records if any"],
     profileStatus: "source_seeded",
     buildoutPercent: 25,
+    profileImageUrl: potterMintonLogo,
+    profileImageAlt: "Potter Minton logo",
+    profileImageSource: "Potter Minton public website",
+    profileImageKind: "firm-logo",
     sourceLinks: [
       {
         title: "Potter Minton public website",
@@ -376,6 +521,10 @@ export const attorneyWatchProfiles: PublicPowerProfile[] = [
     scrutinyAreas: ["court record footprint", "former prosecutor relationships", "public disciplinary records if any", "case-source accuracy"],
     profileStatus: "source_seeded",
     buildoutPercent: 24,
+    profileImageUrl: borenMimsImage,
+    profileImageAlt: "Boren and Mims public website image",
+    profileImageSource: "Boren & Mims public website",
+    profileImageKind: "firm-logo",
     sourceLinks: [
       {
         title: "Boren & Mims public website",
@@ -402,6 +551,10 @@ export const attorneyWatchProfiles: PublicPowerProfile[] = [
     scrutinyAreas: ["public-sector clients", "court record footprint", "official relationships", "vendor or campaign ties"],
     profileStatus: "source_seeded",
     buildoutPercent: 24,
+    profileImageUrl: coghlanCrowsonLogo,
+    profileImageAlt: "Coghlan Crowson LLP logo",
+    profileImageSource: "Coghlan Crowson public website",
+    profileImageKind: "firm-logo",
     sourceLinks: [
       {
         title: "Coghlan Crowson public website",
@@ -428,6 +581,10 @@ export const attorneyWatchProfiles: PublicPowerProfile[] = [
     scrutinyAreas: ["State Bar profile", "former prosecutor role", "court record footprint", "public disciplinary records if any"],
     profileStatus: "source_seeded",
     buildoutPercent: 28,
+    profileImageUrl: brandtThorsonHeadshot,
+    profileImageAlt: "J. Brandt Thorson public website image",
+    profileImageSource: "J. Brandt Thorson public website",
+    profileImageKind: "headshot",
     affiliatedPeople: [{ name: "J. Brandt Thorson", role: "Attorney", slug: "j-brandt-thorson" }],
     sourceLinks: [
       {
@@ -456,6 +613,10 @@ export const attorneyWatchProfiles: PublicPowerProfile[] = [
     profileStatus: "needs_profile_buildout",
     buildoutPercent: 18,
     affiliatedOrganizationSlug: "j-brandt-thorson-pllc",
+    profileImageUrl: brandtThorsonHeadshot,
+    profileImageAlt: "J. Brandt Thorson public website image",
+    profileImageSource: "J. Brandt Thorson public website",
+    profileImageKind: "headshot",
     sourceLinks: [
       {
         title: "J. Brandt Thorson public website",
@@ -482,6 +643,10 @@ export const attorneyWatchProfiles: PublicPowerProfile[] = [
     scrutinyAreas: ["court record footprint", "public-sector clients", "official relationships", "case-source accuracy"],
     profileStatus: "source_seeded",
     buildoutPercent: 24,
+    profileImageUrl: "https://www.boonlaw.com/favicon.ico",
+    profileImageAlt: "Boon Calk Echols Coleman and Goolsby public website icon",
+    profileImageSource: "Boon Calk Echols Coleman & Goolsby public website",
+    profileImageKind: "firm-logo",
     sourceLinks: [
       {
         title: "Boon Calk Echols Coleman & Goolsby public website",
@@ -508,6 +673,10 @@ export const attorneyWatchProfiles: PublicPowerProfile[] = [
     scrutinyAreas: ["appellate docket footprint", "public-sector clients", "published opinions", "conflicts and corrections"],
     profileStatus: "source_seeded",
     buildoutPercent: 25,
+    profileImageUrl: smithLegalImage,
+    profileImageAlt: "Smith Legal public website image",
+    profileImageSource: "Smith Legal public website",
+    profileImageKind: "firm-logo",
     sourceLinks: [
       {
         title: "Smith Legal public website",
@@ -534,6 +703,10 @@ export const attorneyWatchProfiles: PublicPowerProfile[] = [
     scrutinyAreas: ["court record footprint", "public-sector clients", "official relationships", "public disciplinary records if any"],
     profileStatus: "source_seeded",
     buildoutPercent: 24,
+    profileImageUrl: cmhnLogo,
+    profileImageAlt: "Carroll Maloney Henry and Nelson logo",
+    profileImageSource: "Carroll, Maloney, Henry and Nelson public website",
+    profileImageKind: "firm-logo",
     sourceLinks: [
       {
         title: "Carroll, Maloney, Henry and Nelson public website",

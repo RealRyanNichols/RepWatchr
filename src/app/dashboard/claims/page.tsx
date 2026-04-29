@@ -16,6 +16,27 @@ type Claim = {
   created_at: string;
 };
 
+function publicHrefForClaim(claim: Claim) {
+  if (claim.district_slug) {
+    return `/school-boards/${claim.district_slug}/${claim.profile_id}`;
+  }
+
+  if (claim.profile_type === "attorney" || claim.profile_type === "law_firm") {
+    return `/attorneys/${claim.profile_id}`;
+  }
+
+  if (
+    claim.profile_type === "media_company" ||
+    claim.profile_type === "journalist" ||
+    claim.profile_type === "editor" ||
+    claim.profile_type === "newsroom_leadership"
+  ) {
+    return `/media/${claim.profile_id}`;
+  }
+
+  return `/officials/${claim.profile_id}`;
+}
+
 export default function MyClaimsPage() {
   const { user, loading: authLoading } = useAuth();
   const supabase = useMemo(() => createClient(), []);
@@ -104,7 +125,8 @@ export default function MyClaimsPage() {
           </h2>
           <p className="mt-2 text-sm font-semibold leading-6 text-gray-600">
             Submit a claim to request verified ownership of a public official,
-            school board, candidate, or journalist profile.
+            school board, candidate, attorney, law firm, media, or journalist
+            profile.
           </p>
           <Link
             href="/profiles/claim"
@@ -116,9 +138,7 @@ export default function MyClaimsPage() {
       ) : (
         <div className="grid gap-4">
           {claims.map((claim) => {
-            const publicHref = claim.district_slug
-              ? `/school-boards/${claim.district_slug}/${claim.profile_id}`
-              : `/officials/${claim.profile_id}`;
+            const publicHref = publicHrefForClaim(claim);
 
             return (
               <article key={claim.id} className="rounded-2xl border border-gray-200 bg-white p-6 shadow-sm">

@@ -4,6 +4,9 @@ import { notFound } from "next/navigation";
 import { getAttorneyWatchProfileBySlug, getAttorneyWatchProfiles } from "@/lib/power-watch";
 import { getProfileScorecardTargetType } from "@/lib/universal-scorecards";
 import ProfileScorecardVote from "@/components/scorecards/ProfileScorecardVote";
+import ClaimProfileCta from "@/components/profile/ClaimProfileCta";
+import PowerProfileAvatar from "@/components/power-watch/PowerProfileAvatar";
+import type { PublicPowerKind } from "@/types/power-watch";
 
 interface AttorneyProfilePageProps {
   params: Promise<{ slug: string }>;
@@ -42,6 +45,11 @@ function signalClasses(tone: "good" | "warning" | "bad" | "neutral") {
     case "neutral":
       return "border-slate-200 bg-slate-50 text-slate-950";
   }
+}
+
+function claimTypeForKind(kind: PublicPowerKind) {
+  if (kind === "law-firm" || kind === "bar-source") return "law_firm";
+  return "attorney";
 }
 
 const defaultSignals = [
@@ -92,14 +100,32 @@ export default async function AttorneyProfilePage({ params }: AttorneyProfilePag
           <div className="h-1.5 w-full bg-[linear-gradient(90deg,#b42318_0%,#b42318_48%,#ffffff_48%,#ffffff_52%,#1d4ed8_52%,#1d4ed8_100%)]" />
           <div className="p-5 sm:p-7">
             <div className="flex flex-col gap-4 md:flex-row md:items-start md:justify-between">
-              <div>
+              <div className="flex flex-col gap-4 sm:flex-row sm:items-start">
+                <PowerProfileAvatar profile={profile} size="lg" />
+                <div>
                 <p className="text-xs font-black uppercase tracking-[0.18em] text-red-700">
                   {profile.categoryLabel}
                 </p>
                 <h1 className="mt-2 text-3xl font-black text-slate-950 sm:text-4xl">{profile.name}</h1>
+                {profile.watchMark ? (
+                  <div className="mt-3 inline-flex max-w-2xl items-start gap-2 rounded-xl border border-red-200 bg-red-50 px-3 py-2 text-red-950">
+                    <span className="grid h-7 w-7 shrink-0 place-items-center rounded-full bg-red-700 text-lg font-black leading-none text-white">
+                      *
+                    </span>
+                    <span className="text-xs font-black uppercase tracking-wide">
+                      {profile.watchMark.label}: {profile.watchMark.reason}
+                    </span>
+                  </div>
+                ) : null}
                 <p className="mt-3 max-w-3xl text-sm font-semibold leading-6 text-slate-700 sm:text-base">
                   {profile.summary}
                 </p>
+                {profile.profileImageSource ? (
+                  <p className="mt-2 text-xs font-bold uppercase tracking-wide text-slate-500">
+                    Profile image source: {profile.profileImageSource}
+                  </p>
+                ) : null}
+                </div>
               </div>
               <div className="rounded-xl border border-slate-300 bg-slate-50 p-4 md:w-64">
                 <p className="text-xs font-black uppercase tracking-wide text-slate-500">Buildout</p>
@@ -129,6 +155,14 @@ export default async function AttorneyProfilePage({ params }: AttorneyProfilePag
               ))}
             </div>
           </div>
+        </section>
+
+        <section className="mt-6">
+          <ClaimProfileCta
+            profileId={profile.slug}
+            profileName={profile.name}
+            profileType={claimTypeForKind(profile.kind)}
+          />
         </section>
 
         {profile.featuredSpotlight ? (

@@ -25,6 +25,40 @@ type Claim = {
 
 type AdminStatus = "checking" | "allowed" | "denied";
 
+function publicHrefForClaim(claim: Claim) {
+  if (claim.district_slug) {
+    return `/school-boards/${claim.district_slug}/${claim.profile_id}`;
+  }
+
+  if (claim.profile_type === "attorney" || claim.profile_type === "law_firm") {
+    return `/attorneys/${claim.profile_id}`;
+  }
+
+  if (
+    claim.profile_type === "media_company" ||
+    claim.profile_type === "journalist" ||
+    claim.profile_type === "editor" ||
+    claim.profile_type === "newsroom_leadership"
+  ) {
+    return `/media/${claim.profile_id}`;
+  }
+
+  return `/officials/${claim.profile_id}`;
+}
+
+function roleForClaim(claim: Claim) {
+  if (
+    claim.profile_type === "journalist" ||
+    claim.profile_type === "editor" ||
+    claim.profile_type === "newsroom_leadership" ||
+    claim.profile_type === "media_company"
+  ) {
+    return "journalist";
+  }
+
+  return "claimed_official";
+}
+
 export default function AdminClaimsClient() {
   const { user, loading: authLoading } = useAuth();
   const supabase = useMemo(() => createClient(), []);
@@ -38,7 +72,6 @@ export default function AdminClaimsClient() {
     if (authLoading) return;
 
     if (!user) {
-      setAdminStatus("denied");
       return;
     }
 
@@ -118,7 +151,7 @@ export default function AdminClaimsClient() {
       const { error: roleError } = await supabase.from("user_roles").upsert(
         {
           user_id: claim.user_id,
-          role: "claimed_official",
+          role: roleForClaim(claim),
           created_by: user.id,
         },
         { onConflict: "user_id,role" }
@@ -152,7 +185,7 @@ export default function AdminClaimsClient() {
     setMessage(`Claim ${status.replaceAll("_", " ")}.`);
   }
 
-  if (authLoading || adminStatus === "checking") {
+  if (authLoading || (user && adminStatus === "checking")) {
     return (
       <div className="mx-auto max-w-6xl px-4 py-16">
         <div className="h-64 animate-pulse rounded-2xl bg-gray-100" />
@@ -160,7 +193,7 @@ export default function AdminClaimsClient() {
     );
   }
 
-  if (adminStatus === "denied") {
+  if (!user || adminStatus === "denied") {
     return (
       <div className="mx-auto max-w-xl px-4 py-16 text-center">
         <h1 className="text-2xl font-black text-gray-950">Admin access required</h1>
@@ -230,14 +263,12 @@ export default function AdminClaimsClient() {
                   </p>
                 </div>
                 <div className="flex flex-wrap gap-2">
-                  {claim.district_slug ? (
-                    <Link
-                      href={`/school-boards/${claim.district_slug}/${claim.profile_id}`}
-                      className="rounded-xl border border-blue-200 bg-blue-50 px-3 py-2 text-xs font-black text-blue-900 hover:text-red-700"
-                    >
-                      Public profile
-                    </Link>
-                  ) : null}
+                  <Link
+                    href={publicHrefForClaim(claim)}
+                    className="rounded-xl border border-blue-200 bg-blue-50 px-3 py-2 text-xs font-black text-blue-900 hover:text-red-700"
+                  >
+                    Public profile
+                  </Link>
                   {claim.proof_url ? (
                     <a
                       href={claim.proof_url}
