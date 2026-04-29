@@ -8,15 +8,15 @@ import UserMenu from "@/components/auth/UserMenu";
 const navLinks = [
   { href: "/", label: "Home" },
   { href: "/officials", label: "Officials" },
-  { href: "/faretta-ai", label: "Faretta AI" },
-  { href: "/scorecards", label: "Scorecards" },
-  { href: "/votes", label: "Votes" },
-  { href: "/funding", label: "Funding" },
   { href: "/school-boards", label: "School Boards" },
   { href: "/attorneys", label: "Attorneys" },
   { href: "/media", label: "Media" },
+  { href: "/scorecards", label: "Scorecards" },
+  { href: "/votes", label: "Votes" },
+  { href: "/funding", label: "Funding" },
   { href: "/red-flags", label: "Red Flags" },
   { href: "/news", label: "News" },
+  { href: "/faretta-ai", label: "AI Search" },
   { href: "/buildout", label: "Buildout" },
 ];
 

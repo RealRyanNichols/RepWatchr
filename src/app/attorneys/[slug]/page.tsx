@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { getAttorneyWatchProfileBySlug, getAttorneyWatchProfiles } from "@/lib/power-watch";
+import { getProfileScorecardTargetType } from "@/lib/universal-scorecards";
+import ProfileScorecardVote from "@/components/scorecards/ProfileScorecardVote";
 
 interface AttorneyProfilePageProps {
   params: Promise<{ slug: string }>;
@@ -78,6 +80,15 @@ export default async function AttorneyProfilePage({ params }: AttorneyProfilePag
                 ))}
             </div>
           </div>
+        </section>
+
+        <section className="mt-6">
+          <ProfileScorecardVote
+            targetType={getProfileScorecardTargetType(profile.kind)}
+            targetId={profile.slug}
+            targetName={profile.name}
+            targetPath={`/attorneys/${profile.slug}`}
+          />
         </section>
 
         <section className="mt-6 grid gap-4 lg:grid-cols-[0.95fr_1.05fr]">

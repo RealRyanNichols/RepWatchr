@@ -28,6 +28,7 @@ import CommentSection from "@/components/comments/CommentSection";
 import ShareButtons from "@/components/shared/ShareButtons";
 import ReportButton from "@/components/shared/ReportButton";
 import ProfileOpenTracker from "@/components/shared/ProfileOpenTracker";
+import ProfileScorecardVote from "@/components/scorecards/ProfileScorecardVote";
 
 export async function generateStaticParams() {
   const officials = getAllOfficials();
@@ -273,6 +274,13 @@ export default async function OfficialProfilePage({
 
           {/* Right Column: Citizen Vote + Funding */}
           <div className="space-y-6">
+            <ProfileScorecardVote
+              targetType="official"
+              targetId={official.id}
+              targetName={official.name}
+              targetPath={`/officials/${official.id}`}
+            />
+
             {/* Citizen Approval Rating & Vote Button */}
             <OfficialVotingSection
               officialId={official.id}

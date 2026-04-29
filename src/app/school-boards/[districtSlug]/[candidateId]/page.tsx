@@ -9,6 +9,7 @@ import ClaimedProfilePanel from "@/components/profile/ClaimedProfilePanel";
 import ProfilePhoto from "@/components/profile/ProfilePhoto";
 import OfficialVotingSection from "@/components/voting/OfficialVotingSection";
 import GradeOfficialSection from "@/components/voting/GradeOfficialSection";
+import ProfileScorecardVote from "@/components/scorecards/ProfileScorecardVote";
 import QuickFacts from "@/components/school-board/QuickFacts";
 import CappedList from "@/components/school-board/CappedList";
 import WhyThisScore from "@/components/school-board/WhyThisScore";
@@ -252,6 +253,12 @@ export default async function CandidatePage({ params }: { params: Promise<{ dist
             </div>
           </div>
           <div className="mt-6 grid gap-6 lg:grid-cols-2">
+            <ProfileScorecardVote
+              targetType="school_board"
+              targetId={candidate.candidate_id}
+              targetName={candidate.preferred_name ?? candidate.full_name}
+              targetPath={getSchoolBoardCandidateUrl(candidate)}
+            />
             <OfficialVotingSection officialId={candidate.candidate_id} officialCounties={candidateCountyNames} />
             <GradeOfficialSection
               officialId={candidate.candidate_id}
