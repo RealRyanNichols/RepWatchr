@@ -11,6 +11,7 @@ const coghlanCrowsonLogo = "https://ccfww.com/wp-content/uploads/2022/08/Logo-cc
 const brandtThorsonHeadshot = "https://jbtfirm.com/wp-content/uploads/j-brandt-thorson-criminal-defense-attorney.png";
 const smithLegalImage = "https://smithlegaltx.com/wp-content/uploads/2017/05/facebook-cover.jpg";
 const cmhnLogo = "https://cmhnlaw.com/images/cmhn-LOGO.png";
+const millerFairHenryLogo = "https://millerfairhenry.com/wp-content/uploads/2024/01/Miller-Fair-Henry-White.svg";
 const mcbrideLawLogo =
   "https://static.wixstatic.com/media/26a2e1_d2df62cf430d495493ccbab386950002~mv2.png/v1/fill/w_885,h_200,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/McBride_jpg.png";
 const mcbrideProfileImage =
@@ -417,6 +418,145 @@ export const attorneyWatchProfiles: PublicPowerProfile[] = [
     sourceLinks: [...attorneyWatchImportPlan.sourceLinks],
   },
   {
+    slug: "miller-fair-henry-longview",
+    name: "Miller Fair Henry PLLC",
+    kind: "law-firm",
+    categoryLabel: "Law firm",
+    city: "Longview",
+    county: "Gregg",
+    state: "TX",
+    region: "East Texas",
+    summary:
+      "Longview trial law firm describing itself as rooted in litigation experience, with public practice-area pages for intellectual-property and patent litigation, commercial litigation, personal legal services, and alternative dispute resolution.",
+    whyTracked:
+      "This firm is now cross-linked because Brett F. Miller is both a State Bar-listed Texas attorney at the firm and a Longview ISD school-board trustee already tracked in RepWatchr.",
+    authorityAreas: ["commercial litigation", "intellectual property", "patent litigation", "personal legal services", "alternative dispute resolution"],
+    scrutinyAreas: ["public-sector relationships", "school-board conflict checks", "court record footprint", "public disciplinary records if any"],
+    profileStatus: "source_seeded",
+    buildoutPercent: 42,
+    profileTags: ["Longview", "Trial firm", "School-board cross-link"],
+    profileImageUrl: millerFairHenryLogo,
+    profileImageAlt: "Miller Fair Henry logo",
+    profileImageSource: "Miller Fair Henry public website",
+    profileImageKind: "firm-logo",
+    affiliatedPeople: [{ name: "Brett F. Miller", role: "Partner / attorney", slug: "brett-f-miller-attorney" }],
+    connectedOfficialIds: ["brett-f-miller"],
+    sourceLinks: [
+      {
+        title: "Miller Fair Henry public website",
+        url: "https://millerfairhenry.com/",
+        sourceType: "official-website",
+        lastCheckedAt: checkedAt,
+      },
+      {
+        title: "Miller Fair Henry attorney bio: Brett F. Miller",
+        url: "https://millerfairhenry.com/attorneys/brett-miller/",
+        sourceType: "official-website",
+        lastCheckedAt: checkedAt,
+      },
+      {
+        title: "State Bar of Texas profile: Brett Fisher Miller",
+        url: "https://www.texasbar.com/AM/Template.cfm?Section=Find_A_Lawyer&template=/Customsource/MemberDirectory/MemberDirectoryDetail.cfm&ContactID=305535",
+        sourceType: "official-directory",
+        lastCheckedAt: checkedAt,
+      },
+      {
+        title: "Longview ISD BoardBook public organization page",
+        url: "https://meetings.boardbook.org/public/Organization/2235",
+        sourceType: "public-record",
+        lastCheckedAt: checkedAt,
+      },
+    ],
+  },
+  {
+    slug: "brett-f-miller-attorney",
+    name: "Brett F. Miller",
+    kind: "attorney",
+    categoryLabel: "Attorney / school-board trustee",
+    city: "Longview",
+    county: "Gregg",
+    state: "TX",
+    region: "East Texas",
+    summary:
+      "Longview attorney and Miller Fair Henry partner. The State Bar of Texas lists Brett Fisher Miller as eligible to practice in Texas, and the firm bio states he serves on the Longview ISD school board.",
+    whyTracked:
+      "This profile connects an attorney license record to an already tracked public official profile. RepWatchr should separate verified bar status, firm role, school-board role, and any future conflict or court-record findings.",
+    authorityAreas: ["family law", "labor-employment", "commercial litigation", "personal injury litigation", "real estate"],
+    scrutinyAreas: ["school-board role", "public-sector relationships", "court record footprint", "public disciplinary records if any", "correction requests"],
+    profileStatus: "source_seeded",
+    buildoutPercent: 48,
+    profileTags: ["Eligible in Texas", "Longview ISD trustee", "School-board cross-link", "Needs court-record review"],
+    affiliatedOrganizationSlug: "miller-fair-henry-longview",
+    connectedOfficialIds: ["brett-f-miller"],
+    profileImageUrl: millerFairHenryLogo,
+    profileImageAlt: "Miller Fair Henry logo for Brett F. Miller",
+    profileImageSource: "Miller Fair Henry public website",
+    profileImageKind: "firm-logo",
+    sentimentSummary: {
+      label: "License verified / public role linked",
+      score: 55,
+      basis:
+        "The State Bar profile lists eligibility and no public disciplinary history. The firm bio and RepWatchr school-board record connect this attorney profile to Longview ISD trustee service.",
+      lastUpdated: checkedAt,
+    },
+    accountabilitySignals: [
+      {
+        label: "State Bar eligibility",
+        status: "verified",
+        tone: "neutral",
+        detail: "State Bar of Texas lists Brett Fisher Miller as eligible to practice in Texas with bar card number 24065750 and Texas license date 11/07/2008.",
+        sourceTitle: "State Bar of Texas Find a Lawyer",
+      },
+      {
+        label: "Public discipline",
+        status: "verified",
+        tone: "good",
+        detail: "The State Bar profile lists no public disciplinary history.",
+        sourceTitle: "State Bar of Texas Find a Lawyer",
+      },
+      {
+        label: "Public official cross-link",
+        status: "verified",
+        tone: "neutral",
+        detail: "The Miller Fair Henry bio states Miller serves on the Longview ISD school board, matching the RepWatchr official profile id brett-f-miller.",
+        sourceTitle: "Miller Fair Henry attorney bio",
+      },
+      {
+        label: "Court and conflict review",
+        status: "needs_records_review",
+        tone: "neutral",
+        detail:
+          "RepWatchr has not loaded matter-level court records, public-client records, school-district vendor conflict checks, or campaign-finance review into this attorney profile yet.",
+      },
+    ],
+    sourceLinks: [
+      {
+        title: "State Bar of Texas profile: Brett Fisher Miller",
+        url: "https://www.texasbar.com/AM/Template.cfm?Section=Find_A_Lawyer&template=/Customsource/MemberDirectory/MemberDirectoryDetail.cfm&ContactID=305535",
+        sourceType: "official-directory",
+        lastCheckedAt: checkedAt,
+      },
+      {
+        title: "Miller Fair Henry attorney bio: Brett F. Miller",
+        url: "https://millerfairhenry.com/attorneys/brett-miller/",
+        sourceType: "official-website",
+        lastCheckedAt: checkedAt,
+      },
+      {
+        title: "Longview News-Journal 2020 candidate filing report",
+        url: "https://www.news-journal.com/news/local/attorney-files-to-challenge-longview-isd-place-2-trustee-ava-welge/article_d7c8606e-4f55-11ea-8b3b-2399070be9ec.html",
+        sourceType: "article",
+        lastCheckedAt: checkedAt,
+      },
+      {
+        title: "Longview ISD BoardBook public organization page",
+        url: "https://meetings.boardbook.org/public/Organization/2235",
+        sourceType: "public-record",
+        lastCheckedAt: checkedAt,
+      },
+    ],
+  },
+  {
     slug: "kutch-law-firm-longview",
     name: "Kutch Law Firm",
     kind: "law-firm",
@@ -445,6 +585,12 @@ export const attorneyWatchProfiles: PublicPowerProfile[] = [
         sourceType: "official-website",
         lastCheckedAt: checkedAt,
       },
+      {
+        title: "State Bar of Texas profile: Kyle Kutch",
+        url: "https://www.texasbar.com/AM/Template.cfm?ContactID=228061&template=%2FCustomsource%2FMemberDirectory%2FMemberDirectoryDetail.cfm",
+        sourceType: "official-directory",
+        lastCheckedAt: checkedAt,
+      },
     ],
   },
   {
@@ -457,19 +603,56 @@ export const attorneyWatchProfiles: PublicPowerProfile[] = [
     state: "TX",
     region: "East Texas",
     summary:
-      "Attorney profile seeded from the public Kutch Law Firm website. State Bar license-status and court-record attachments still need to be pulled before this becomes a complete attorney page.",
+      "Longview attorney. The State Bar of Texas lists Kyle Kutch as eligible to practice in Texas, with practice areas including business, commercial litigation, personal-injury litigation, oil and gas, and wills-trusts-probate.",
     whyTracked:
       "Individual attorney pages will connect the lawyer, firm, public court footprint, official relationships, and public disciplinary records when those records exist.",
     authorityAreas: ["civil litigation", "personal injury", "probate", "business disputes"],
     scrutinyAreas: ["State Bar profile", "court appearances", "official or agency representation", "correction requests"],
-    profileStatus: "needs_profile_buildout",
-    buildoutPercent: 18,
+    profileStatus: "source_seeded",
+    buildoutPercent: 42,
+    profileTags: ["Eligible in Texas", "State Bar linked", "Needs court-record review"],
     affiliatedOrganizationSlug: "kutch-law-firm-longview",
     profileImageUrl: kutchLawLogo,
     profileImageAlt: "Kutch Law Firm logo for Kyle Kutch",
     profileImageSource: "Kutch Law Firm public website",
     profileImageKind: "firm-logo",
+    sentimentSummary: {
+      label: "License verified / records pending",
+      score: 52,
+      basis:
+        "The State Bar profile lists eligibility and no public disciplinary history. RepWatchr still needs court-record, public-client, and review-source coverage.",
+      lastUpdated: checkedAt,
+    },
+    accountabilitySignals: [
+      {
+        label: "State Bar eligibility",
+        status: "verified",
+        tone: "neutral",
+        detail: "State Bar of Texas lists Kyle Kutch as eligible to practice in Texas with bar card number 11770543 and Texas license date 11/07/1986.",
+        sourceTitle: "State Bar of Texas Find a Lawyer",
+      },
+      {
+        label: "Public discipline",
+        status: "verified",
+        tone: "good",
+        detail: "The State Bar profile lists no public disciplinary history.",
+        sourceTitle: "State Bar of Texas Find a Lawyer",
+      },
+      {
+        label: "Court and public-client review",
+        status: "needs_records_review",
+        tone: "neutral",
+        detail:
+          "RepWatchr has not loaded matter-level court records, public-client relationships, campaign/vendor relationships, or client-review samples into this profile yet.",
+      },
+    ],
     sourceLinks: [
+      {
+        title: "State Bar of Texas profile: Kyle Kutch",
+        url: "https://www.texasbar.com/AM/Template.cfm?ContactID=228061&template=%2FCustomsource%2FMemberDirectory%2FMemberDirectoryDetail.cfm",
+        sourceType: "official-directory",
+        lastCheckedAt: checkedAt,
+      },
       {
         title: "Kutch Law Firm public website",
         url: "https://kutchlaw.com/",
@@ -597,6 +780,12 @@ export const attorneyWatchProfiles: PublicPowerProfile[] = [
         sourceType: "official-website",
         lastCheckedAt: checkedAt,
       },
+      {
+        title: "State Bar of Texas profile: John Brandt Thorson",
+        url: "https://www.texasbar.com/attorneys/member.cfm?id=278022",
+        sourceType: "official-directory",
+        lastCheckedAt: checkedAt,
+      },
     ],
   },
   {
@@ -609,19 +798,64 @@ export const attorneyWatchProfiles: PublicPowerProfile[] = [
     state: "TX",
     region: "East Texas",
     summary:
-      "Attorney profile seeded from the firm website, which states he is a former Gregg County felony prosecutor. Bar and court records still need to be attached.",
+      "Longview attorney. The State Bar of Texas lists John Brandt 'Brandt' Thorson as eligible to practice in Texas, board certified in criminal law, and admitted in the Eastern and Northern Districts of Texas.",
     whyTracked:
       "Former prosecutor and current defense/civil-practice roles can matter when tracking local legal power, case outcomes, government relationships, and public accountability.",
     authorityAreas: ["criminal defense", "family law", "personal injury"],
     scrutinyAreas: ["State Bar profile", "former public role", "court appearances", "official relationships"],
-    profileStatus: "needs_profile_buildout",
-    buildoutPercent: 18,
+    profileStatus: "source_seeded",
+    buildoutPercent: 44,
+    profileTags: ["Eligible in Texas", "Criminal law board certification", "State Bar linked", "Needs court-record review"],
     affiliatedOrganizationSlug: "j-brandt-thorson-pllc",
     profileImageUrl: brandtThorsonHeadshot,
     profileImageAlt: "J. Brandt Thorson public website image",
     profileImageSource: "J. Brandt Thorson public website",
     profileImageKind: "headshot",
+    sentimentSummary: {
+      label: "License verified / records pending",
+      score: 53,
+      basis:
+        "The State Bar profile lists eligibility, criminal-law board certification, and no public disciplinary history. RepWatchr still needs matter-level court and public-client review.",
+      lastUpdated: checkedAt,
+    },
+    accountabilitySignals: [
+      {
+        label: "State Bar eligibility",
+        status: "verified",
+        tone: "neutral",
+        detail:
+          "State Bar of Texas lists John Brandt 'Brandt' Thorson as eligible to practice in Texas with bar card number 24043958 and Texas license date 05/04/2004.",
+        sourceTitle: "State Bar of Texas Find a Lawyer",
+      },
+      {
+        label: "Board certification",
+        status: "verified",
+        tone: "neutral",
+        detail: "The State Bar profile displays board certification in criminal law.",
+        sourceTitle: "State Bar of Texas Find a Lawyer",
+      },
+      {
+        label: "Public discipline",
+        status: "verified",
+        tone: "good",
+        detail: "The State Bar profile lists no public disciplinary history.",
+        sourceTitle: "State Bar of Texas Find a Lawyer",
+      },
+      {
+        label: "Court and public-role review",
+        status: "needs_records_review",
+        tone: "neutral",
+        detail:
+          "RepWatchr has not loaded former-prosecutor source records, matter-level court records, public-client relationships, or review-source coverage into this profile yet.",
+      },
+    ],
     sourceLinks: [
+      {
+        title: "State Bar of Texas profile: John Brandt Thorson",
+        url: "https://www.texasbar.com/attorneys/member.cfm?id=278022",
+        sourceType: "official-directory",
+        lastCheckedAt: checkedAt,
+      },
       {
         title: "J. Brandt Thorson public website",
         url: "https://www.jbtfirm.com/",
