@@ -157,6 +157,44 @@ export interface Bill {
   sourceUrl: string;
 }
 
+export interface PublicVoteRecordVote {
+  sourceId: string;
+  sourceName: string;
+  sourceUrl: string;
+  sourceXmlUrl?: string;
+  chamber: "house" | "senate";
+  congress: number;
+  session: number;
+  rollCall: number;
+  date: string;
+  issue: string;
+  question: string;
+  voteType: string;
+  result: string;
+  title: string;
+  vote: string;
+  voteCast: string;
+}
+
+export interface PublicVoteRecord {
+  officialId: string;
+  name: string;
+  level: "federal" | "state" | "county" | "city" | "school-board";
+  chamber: "house" | "senate";
+  session: string;
+  lastUpdated: string;
+  sourceLinks: SourceLink[];
+  summary: {
+    totalVotesLoaded: number;
+    yea: number;
+    nay: number;
+    present: number;
+    notVoting: number;
+    other: number;
+  };
+  votes: PublicVoteRecordVote[];
+}
+
 export interface IssueCategory {
   id: string;
   name: string;

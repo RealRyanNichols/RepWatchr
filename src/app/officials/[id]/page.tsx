@@ -9,6 +9,7 @@ import {
   getRedFlags,
   getIssueCategories,
   getNewsByOfficialId,
+  getPublicVoteRecord,
 } from "@/lib/data";
 import { buildFallbackIdeologyProfile, getOfficialIdeologyProfile } from "@/lib/ideology";
 import { formatLevelName, getPartyColor } from "@/lib/formatting";
@@ -77,6 +78,7 @@ export default async function OfficialProfilePage({
   const redFlags = getRedFlags(id);
   const issueCategories = getIssueCategories();
   const relatedNews = getNewsByOfficialId(id);
+  const publicVoteRecord = getPublicVoteRecord(id);
   const ideologyProfile = getOfficialIdeologyProfile(id) ?? buildFallbackIdeologyProfile(official);
   const sourceLinks = official.sourceLinks ?? [];
   const contactEmail = official.contactInfo.email;
@@ -249,6 +251,10 @@ export default async function OfficialProfilePage({
                 </h2>
                 <VoteTimeline votes={allScoredVotes} />
               </section>
+            )}
+
+            {publicVoteRecord && publicVoteRecord.votes.length > 0 && (
+              <FederalVoteRecordPanel record={publicVoteRecord} />
             )}
 
             {/* Campaign Promises */}
@@ -493,5 +499,94 @@ function ProfileBuildoutPanel({
         </>
       )}
     </section>
+  );
+}
+
+function FederalVoteRecordPanel({
+  record,
+}: {
+  record: NonNullable<ReturnType<typeof getPublicVoteRecord>>;
+}) {
+  return (
+    <section className="rounded-2xl border border-blue-100 bg-white p-5 shadow-sm">
+      <div className="flex flex-col gap-3 sm:flex-row sm:items-start sm:justify-between">
+        <div>
+          <p className="text-xs font-black uppercase tracking-wide text-blue-700">
+            Public vote record snapshot
+          </p>
+          <h2 className="mt-1 text-xl font-black text-gray-950">
+            Recent federal roll calls
+          </h2>
+          <p className="mt-1 text-sm font-semibold leading-6 text-gray-600">
+            Source-backed roll-call votes loaded from official House and Senate records. These are not automatically scored left or right until issue mapping is reviewed.
+          </p>
+        </div>
+        <div className="rounded-xl border border-blue-100 bg-blue-50 px-4 py-3 text-right">
+          <p className="text-3xl font-black text-blue-950">{record.summary.totalVotesLoaded}</p>
+          <p className="text-xs font-black uppercase tracking-wide text-blue-700">Votes loaded</p>
+        </div>
+      </div>
+
+      <div className="mt-4 grid grid-cols-2 gap-2 sm:grid-cols-4">
+        <VoteMetric label="Yea" value={record.summary.yea} />
+        <VoteMetric label="Nay" value={record.summary.nay} />
+        <VoteMetric label="Present" value={record.summary.present} />
+        <VoteMetric label="Not voting" value={record.summary.notVoting} />
+      </div>
+
+      <div className="mt-5 overflow-hidden rounded-xl border border-gray-200">
+        <div className="divide-y divide-gray-200">
+          {record.votes.slice(0, 8).map((vote) => (
+            <a
+              key={vote.sourceId}
+              href={vote.sourceUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="block bg-white px-4 py-3 transition hover:bg-blue-50"
+            >
+              <div className="flex flex-col gap-2 sm:flex-row sm:items-start sm:justify-between">
+                <div className="min-w-0">
+                  <p className="text-xs font-black uppercase tracking-wide text-gray-500">
+                    {vote.chamber} roll {vote.rollCall} | {vote.date}
+                  </p>
+                  <h3 className="mt-1 line-clamp-2 text-sm font-black text-gray-950">
+                    {vote.title || vote.question || vote.issue}
+                  </h3>
+                  <p className="mt-1 line-clamp-1 text-xs font-semibold text-gray-500">
+                    {vote.question} | {vote.result}
+                  </p>
+                </div>
+                <span className="shrink-0 rounded-full border border-gray-200 bg-gray-50 px-3 py-1 text-xs font-black uppercase tracking-wide text-gray-700">
+                  {vote.voteCast}
+                </span>
+              </div>
+            </a>
+          ))}
+        </div>
+      </div>
+
+      <div className="mt-4 flex flex-wrap gap-2">
+        {record.sourceLinks.map((source) => (
+          <a
+            key={source.url}
+            href={source.url}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="rounded-full border border-blue-200 bg-blue-50 px-3 py-1 text-xs font-black text-blue-800 hover:bg-blue-100"
+          >
+            {source.title}
+          </a>
+        ))}
+      </div>
+    </section>
+  );
+}
+
+function VoteMetric({ label, value }: { label: string; value: number }) {
+  return (
+    <div className="rounded-xl border border-gray-200 bg-gray-50 px-3 py-2">
+      <p className="text-lg font-black text-gray-950">{value}</p>
+      <p className="text-[11px] font-black uppercase tracking-wide text-gray-500">{label}</p>
+    </div>
   );
 }

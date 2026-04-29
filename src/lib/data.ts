@@ -16,6 +16,7 @@ import type {
   IssueCategory,
   OfficialWithScores,
   NewsArticle,
+  PublicVoteRecord,
 } from "@/types";
 
 // Base path to the data directory
@@ -31,6 +32,7 @@ let newsCache: NewsArticle[] | null = null;
 const scoreCardCache = new Map<string, ScoreCard>();
 const fundingCache = new Map<string, FundingSummary>();
 const redFlagCache = new Map<string, RedFlag[]>();
+const voteRecordCache = new Map<string, PublicVoteRecord | undefined>();
 
 // ---------------------------------------------------------------------------
 // Helpers
@@ -257,6 +259,20 @@ export function getBillById(id: string): Bill | undefined {
   return getAllBills().find((b) => b.id === id);
 }
 
+/**
+ * Load a source-backed public vote-record snapshot for a profile.
+ */
+export function getPublicVoteRecord(
+  officialId: string
+): PublicVoteRecord | undefined {
+  if (voteRecordCache.has(officialId)) return voteRecordCache.get(officialId);
+
+  const filePath = path.join(DATA_DIR, "vote-records", `${officialId}.json`);
+  const voteRecord = readJsonFile<PublicVoteRecord>(filePath);
+  voteRecordCache.set(officialId, voteRecord);
+  return voteRecord;
+}
+
 // ---------------------------------------------------------------------------
 // Issue Categories
 // ---------------------------------------------------------------------------
@@ -303,6 +319,9 @@ export function getRepWatchrDataStats() {
   const bills = getAllBills();
   const issueCategories = getIssueCategories();
   const newsArticles = getAllNews();
+  const voteRecords = officials
+    .map((official) => getPublicVoteRecord(official.id))
+    .filter((record): record is PublicVoteRecord => Boolean(record));
   const fundingSummaries = officials
     .map((official) => getFundingSummary(official.id))
     .filter((funding): funding is FundingSummary => Boolean(funding));
@@ -371,6 +390,24 @@ export function getRepWatchrDataStats() {
       publicSourceUrls.add(bill.sourceUrl);
     }
   });
+  voteRecords.forEach((record) => {
+    record.sourceLinks.forEach((source) => {
+      if (source.url) {
+        voteSourceUrls.add(source.url);
+        publicSourceUrls.add(source.url);
+      }
+    });
+    record.votes.forEach((vote) => {
+      if (vote.sourceUrl) {
+        voteSourceUrls.add(vote.sourceUrl);
+        publicSourceUrls.add(vote.sourceUrl);
+      }
+      if (vote.sourceXmlUrl) {
+        voteSourceUrls.add(vote.sourceXmlUrl);
+        publicSourceUrls.add(vote.sourceXmlUrl);
+      }
+    });
+  });
   newsArticles.forEach((article) => {
     if (article.sourceUrl) {
       newsSourceUrls.add(article.sourceUrl);
@@ -435,6 +472,8 @@ export function getRepWatchrDataStats() {
     officialsWithRedFlags: new Set(redFlagRows.map((flag) => flag.officialId)).size,
     bills: bills.length,
     scoredVoteRows: bills.reduce((total, bill) => total + bill.votes.length, 0),
+    publicVoteRecords: voteRecords.length,
+    publicVoteRecordRows: voteRecords.reduce((total, record) => total + record.votes.length, 0),
     issueCategories: issueCategories.length,
     newsArticles: newsArticles.length,
     featuredNewsArticles: newsArticles.filter((article) => article.featured).length,

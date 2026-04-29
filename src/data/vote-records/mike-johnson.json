@@ -1,0 +1,64 @@
+{
+  "officialId": "mike-johnson",
+  "name": "Mike Johnson",
+  "level": "federal",
+  "chamber": "house",
+  "session": "119th Congress, 2nd Session (2026)",
+  "lastUpdated": "2026-04-29",
+  "sourceLinks": [
+    {
+      "title": "House Clerk roll-call votes",
+      "url": "https://clerk.house.gov/evs/2026/index.asp"
+    },
+    {
+      "title": "Senate roll-call votes",
+      "url": "https://www.senate.gov/legislative/LIS/roll_call_lists/vote_menu_119_2.xml"
+    }
+  ],
+  "summary": {
+    "totalVotesLoaded": 2,
+    "yea": 2,
+    "nay": 0,
+    "present": 0,
+    "notVoting": 0,
+    "other": 0
+  },
+  "votes": [
+    {
+      "sourceId": "house-2026-141",
+      "sourceName": "Office of the Clerk, U.S. House of Representatives",
+      "sourceUrl": "https://clerk.house.gov/cgi-bin/vote.asp?year=2026&rollnumber=141",
+      "sourceXmlUrl": "https://clerk.house.gov/evs/2026/roll141.xml",
+      "chamber": "house",
+      "congress": 119,
+      "session": 2,
+      "rollCall": 141,
+      "date": "2026-04-29",
+      "issue": "H RES 1224",
+      "question": "On Agreeing to the Resolution",
+      "voteType": "RECORDED VOTE",
+      "result": "Passed",
+      "title": "Providing for consideration of the bills H.R. 7567, H.R. 2616, S. 1318, and H.R. 1346; and providing for consideration of the concurrent resolution S. Con. Res. 33",
+      "vote": "yea",
+      "voteCast": "Aye"
+    },
+    {
+      "sourceId": "house-2026-140",
+      "sourceName": "Office of the Clerk, U.S. House of Representatives",
+      "sourceUrl": "https://clerk.house.gov/cgi-bin/vote.asp?year=2026&rollnumber=140",
+      "sourceXmlUrl": "https://clerk.house.gov/evs/2026/roll140.xml",
+      "chamber": "house",
+      "congress": 119,
+      "session": 2,
+      "rollCall": 140,
+      "date": "2026-04-29",
+      "issue": "H RES 1224",
+      "question": "On Ordering the Previous Question",
+      "voteType": "YEA-AND-NAY",
+      "result": "Passed",
+      "title": "Providing for consideration of the bills H.R. 7567, H.R. 2616, S. 1318, and H.R. 1346; and providing for consideration of the concurrent resolution S. Con. Res. 33",
+      "vote": "yea",
+      "voteCast": "Yea"
+    }
+  ]
+}

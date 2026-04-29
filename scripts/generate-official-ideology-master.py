@@ -18,6 +18,7 @@ ROOT = Path(__file__).resolve().parents[1]
 DATA = ROOT / "src" / "data"
 OFFICIALS = DATA / "officials"
 SCORES = DATA / "scores"
+VOTE_RECORDS = DATA / "vote-records"
 FUNDING = DATA / "funding"
 RED_FLAGS = DATA / "red-flags"
 NEWS = DATA / "news"
@@ -266,7 +267,7 @@ def buildout(official: dict[str, Any], scorecard: dict[str, Any] | None, news_co
     has_public_sources = bool(official.get("sourceLinks"))
     has_contact_website = bool(official.get("contactInfo", {}).get("website"))
     has_scorecard = bool(scorecard)
-    has_vote_record = bool(scorecard and flatten_scorecard_votes(scorecard))
+    has_vote_record = bool(scorecard and flatten_scorecard_votes(scorecard)) or (VOTE_RECORDS / f"{official_id}.json").exists()
     has_funding = (FUNDING / f"{official_id}.json").exists()
     has_red_flag_review = (RED_FLAGS / f"{official_id}.json").exists()
     has_news = news_count > 0
