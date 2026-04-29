@@ -6,6 +6,7 @@ const quickLinks = [
   { href: "/school-boards", label: "School Boards" },
   { href: "/attorneys", label: "Attorneys" },
   { href: "/media", label: "Media" },
+  { href: "/uap", label: "UAP Records" },
   { href: "/scorecards", label: "Scorecards" },
   { href: "/votes", label: "Votes" },
   { href: "/funding", label: "Funding" },

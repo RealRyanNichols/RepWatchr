@@ -5,23 +5,34 @@ import Image from "next/image";
 import Link from "next/link";
 import UserMenu from "@/components/auth/UserMenu";
 
-const navLinks = [
+const primaryLinks = [
   { href: "/", label: "Home" },
   { href: "/officials", label: "Officials" },
-  { href: "/school-boards", label: "School Boards" },
+  { href: "/school-boards", label: "Schools" },
   { href: "/attorneys", label: "Attorneys" },
   { href: "/media", label: "Media" },
+  { href: "/uap", label: "UAP" },
+  { href: "/faretta-ai", label: "AI" },
+];
+
+const moreLinks = [
   { href: "/scorecards", label: "Scorecards" },
   { href: "/votes", label: "Votes" },
   { href: "/funding", label: "Funding" },
   { href: "/red-flags", label: "Red Flags" },
   { href: "/news", label: "News" },
-  { href: "/faretta-ai", label: "AI Search" },
   { href: "/buildout", label: "Buildout" },
+  { href: "/methodology", label: "Methodology" },
 ];
 
 export default function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
+  const [moreOpen, setMoreOpen] = useState(false);
+
+  function closeMenus() {
+    setMenuOpen(false);
+    setMoreOpen(false);
+  }
 
   return (
     <header className="sticky top-0 z-50 w-full border-b border-white/10 bg-[#06172f]/95 shadow-2xl shadow-black/25 backdrop-blur">
@@ -59,8 +70,11 @@ export default function Header() {
           {/* Mobile Hamburger Button */}
           <button
             type="button"
-            className="inline-flex items-center justify-center rounded-xl border border-white/15 bg-white/10 p-2.5 text-white shadow-sm hover:bg-white/20 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-[#d6b35a] xl:hidden"
-            onClick={() => setMenuOpen(!menuOpen)}
+            className="inline-flex items-center justify-center rounded-xl border border-white/15 bg-white/10 p-2.5 text-white shadow-sm hover:bg-white/20 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-[#d6b35a] lg:hidden"
+            onClick={() => {
+              setMenuOpen(!menuOpen);
+              setMoreOpen(false);
+            }}
             aria-expanded={menuOpen}
             aria-label="Toggle navigation menu"
           >
@@ -98,41 +112,73 @@ export default function Header() {
       </div>
 
       {/* Desktop Navigation */}
-      <nav className="hidden border-t border-white/10 bg-[#0b2a55]/90 px-3 py-1.5 xl:block">
-        <div className="mx-auto flex max-w-7xl items-center justify-center gap-0.5 rounded-full border border-white/10 bg-white/8 px-1.5 py-1.5">
-          {navLinks.map((link) => (
+      <nav className="hidden border-t border-white/10 bg-[#0b2a55]/90 px-3 py-1.5 lg:block">
+        <div className="mx-auto flex max-w-7xl items-center justify-center gap-1 rounded-full border border-white/10 bg-white/10 px-2 py-1.5">
+          {primaryLinks.map((link) => (
             <Link
               key={link.href}
               href={link.href}
-              className="rounded-full px-2 py-1.5 text-[11px] font-black text-slate-100 transition-colors hover:bg-white hover:text-red-700 2xl:px-2.5 2xl:text-[12px]"
+              className="rounded-full px-3 py-1.5 text-xs font-black text-slate-100 transition-colors hover:bg-white hover:text-red-700 xl:px-4"
             >
               {link.label}
             </Link>
           ))}
+          <div className="relative">
+            <button
+              type="button"
+              className="rounded-full px-3 py-1.5 text-xs font-black text-slate-100 transition-colors hover:bg-white hover:text-red-700 xl:px-4"
+              onClick={() => setMoreOpen(!moreOpen)}
+              aria-expanded={moreOpen}
+              aria-haspopup="menu"
+            >
+              More
+            </button>
+            {moreOpen ? (
+              <div className="absolute right-0 top-full mt-2 w-56 overflow-hidden rounded-2xl border border-white/15 bg-[#06172f] p-2 shadow-2xl shadow-black/30" role="menu">
+                {moreLinks.map((link) => (
+                  <Link
+                    key={link.href}
+                    href={link.href}
+                    className="block rounded-xl px-3 py-2 text-sm font-black text-slate-100 transition-colors hover:bg-white/10 hover:text-[#d6b35a]"
+                    onClick={() => setMoreOpen(false)}
+                    role="menuitem"
+                  >
+                    {link.label}
+                  </Link>
+                ))}
+              </div>
+            ) : null}
+          </div>
         </div>
       </nav>
 
       {/* Mobile Menu */}
       {menuOpen && (
-        <nav className="border-t border-white/10 bg-[#06172f] px-4 pb-4 pt-2 xl:hidden">
+        <nav className="border-t border-white/10 bg-[#06172f] px-4 pb-4 pt-2 lg:hidden">
           <div className="flex flex-col gap-1">
-            {navLinks.map((link) => (
+            {primaryLinks.map((link) => (
               <Link
                 key={link.href}
                 href={link.href}
                 className="rounded-xl px-3 py-3 text-base font-black text-slate-100 transition-colors hover:bg-white/10 hover:text-[#d6b35a]"
-                onClick={() => setMenuOpen(false)}
+                onClick={closeMenus}
               >
                 {link.label}
               </Link>
             ))}
-            <Link
-              href="/methodology"
-              className="rounded-xl px-3 py-3 text-base font-black text-slate-300 transition-colors hover:bg-white/10 hover:text-[#d6b35a]"
-              onClick={() => setMenuOpen(false)}
-            >
-              Methodology
-            </Link>
+            <p className="mt-2 border-t border-white/10 px-3 pt-3 text-[11px] font-black uppercase tracking-[0.18em] text-[#d6b35a]">
+              More records
+            </p>
+            {moreLinks.map((link) => (
+              <Link
+                key={link.href}
+                href={link.href}
+                className="rounded-xl px-3 py-3 text-base font-black text-slate-300 transition-colors hover:bg-white/10 hover:text-[#d6b35a]"
+                onClick={closeMenus}
+              >
+                {link.label}
+              </Link>
+            ))}
             <div className="mt-2 border-t border-white/10 pt-2 md:hidden">
               <UserMenu />
             </div>

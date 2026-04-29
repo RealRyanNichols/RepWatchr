@@ -14,6 +14,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/school-boards",
     "/attorneys",
     "/media",
+    "/uap",
     "/faretta-ai",
     "/feedback",
     "/funding",
