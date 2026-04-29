@@ -64,126 +64,66 @@ export default function OfficialsPage() {
       detail: `${formatNumber(schoolBoardStats.districts)} Texas districts, ${formatNumber(schoolBoardStats.stubProfiles)} queued or in-progress profiles, ${formatNumber(schoolBoardStats.gapCount)} research gaps.`,
     },
   ];
-  const actionCards = [
-    {
-      title: "Ask Faretta AI",
-      href: "/faretta-ai?q=Find every official for my county",
-      body: "Use plain English to find a county, city, school board, race, official, vote, donor, or public-record path.",
-    },
-    {
-      title: "Open School Boards",
-      href: "/school-boards",
-      body: "Jump into the Texas school-board picker and open districts or members quickly.",
-    },
-    {
-      title: "Report Missing Official",
-      href: "/feedback",
-      body: "Send the public source URL, office, jurisdiction, term date, and what needs to be corrected or added.",
-    },
-    {
-      title: "Read Methodology",
-      href: "/methodology",
-      body: "Check how RepWatchr separates records, public claims, scores, flags, and citizen input.",
-    },
-  ];
-
   return (
     <div className="bg-slate-100">
-      <div className="mx-auto max-w-7xl px-4 py-8 sm:px-6 lg:px-8">
-      <section className="mb-8 overflow-hidden rounded-2xl border border-slate-300 bg-white text-slate-950 shadow-sm">
-        <div className="h-1.5 w-full bg-[linear-gradient(90deg,#b42318_0%,#b42318_48%,#ffffff_48%,#ffffff_52%,#1d4ed8_52%,#1d4ed8_100%)]" />
-        <div className="grid gap-6 p-5 lg:grid-cols-[1.18fr_0.82fr] lg:p-7">
-          <div>
-            <p className="text-xs font-black uppercase tracking-[0.18em] text-red-700">
-              United States public-record map
-            </p>
-            <h1 className="mt-3 text-3xl font-black tracking-tight text-slate-950 sm:text-4xl">
-              Elected officials, source-backed.
-            </h1>
-            <p className="mt-3 max-w-3xl text-sm font-semibold leading-6 text-slate-700 sm:text-base">
-              RepWatchr is built for nationwide coverage. Texas is the first loaded state: federal representatives, state legislators, county and city officials, and school-board records where a public source confirms the seat. A profile shows who is loaded; scorecards, funding, red flags, votes, and citizen input appear only when those records actually exist.
-            </p>
-            <div className="mt-5 flex flex-wrap gap-2">
-              {Object.entries(levelLabels).map(([level, label]) => (
-                <Link
-                  key={level}
-                  href={`/officials?level=${level}`}
-                  className="rounded-full border border-slate-300 bg-slate-50 px-3 py-1.5 text-xs font-black text-slate-800 transition hover:border-blue-400 hover:bg-blue-50 hover:text-blue-800"
-                >
-                  {label}: {formatNumber(levelCounts[level as GovernmentLevel])}
-                </Link>
+      <div className="mx-auto max-w-7xl px-4 py-4 sm:px-6 lg:px-8">
+        <h1 className="sr-only">Elected officials directory</h1>
+        <Suspense
+          fallback={
+            <div className="animate-pulse space-y-4 rounded-2xl border border-slate-300 bg-white p-5 shadow-sm">
+              <div className="h-12 rounded-xl bg-gray-200" />
+              <div className="flex flex-wrap gap-2">
+                {[1, 2, 3, 4, 5, 6].map((i) => (
+                  <div key={i} className="h-8 w-24 rounded-full bg-gray-100" />
+                ))}
+              </div>
+              <div className="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3">
+                {[1, 2, 3, 4, 5, 6].map((i) => (
+                  <div key={i} className="h-32 rounded-2xl bg-gray-100" />
+                ))}
+              </div>
+            </div>
+          }
+        >
+          <OfficialGrid officials={officials} scoreCards={scoreCards} />
+        </Suspense>
+
+        <section className="mt-8 overflow-hidden rounded-2xl border border-slate-300 bg-white text-slate-950 shadow-sm">
+          <div className="h-1.5 w-full bg-[linear-gradient(90deg,#b42318_0%,#b42318_48%,#ffffff_48%,#ffffff_52%,#1d4ed8_52%,#1d4ed8_100%)]" />
+          <div className="grid gap-6 p-5 lg:grid-cols-[1.18fr_0.82fr] lg:p-7">
+            <div>
+              <p className="text-xs font-black uppercase tracking-[0.18em] text-red-700">
+                United States public-record map
+              </p>
+              <h2 className="mt-3 text-3xl font-black tracking-tight text-slate-950 sm:text-4xl">
+                Elected officials, source-backed.
+              </h2>
+              <p className="mt-3 max-w-3xl text-sm font-semibold leading-6 text-slate-700 sm:text-base">
+                RepWatchr is built for nationwide coverage. Texas is the first loaded state: federal representatives, state legislators, county and city officials, and school-board records where a public source confirms the seat. A profile shows who is loaded; scorecards, funding, red flags, votes, and citizen input appear only when those records actually exist.
+              </p>
+              <div className="mt-5 flex flex-wrap gap-2">
+                {Object.entries(levelLabels).map(([level, label]) => (
+                  <Link
+                    key={level}
+                    href={`/officials?level=${level}`}
+                    className="rounded-full border border-slate-300 bg-slate-50 px-3 py-1.5 text-xs font-black text-slate-800 transition hover:border-blue-400 hover:bg-blue-50 hover:text-blue-800"
+                  >
+                    {label}: {formatNumber(levelCounts[level as GovernmentLevel])}
+                  </Link>
+                ))}
+              </div>
+            </div>
+            <div className="grid grid-cols-2 gap-3">
+              {statCards.map((card) => (
+                <div key={card.label} className="rounded-xl border border-slate-300 bg-slate-50 p-4 shadow-sm">
+                  <p className="text-2xl font-black text-slate-950">{card.value}</p>
+                  <p className="mt-1 text-xs font-black uppercase tracking-wide text-red-700">{card.label}</p>
+                  <p className="mt-2 text-xs font-semibold leading-5 text-slate-700">{card.detail}</p>
+                </div>
               ))}
             </div>
           </div>
-          <div className="grid grid-cols-2 gap-3">
-            {statCards.map((card) => (
-              <div key={card.label} className="rounded-xl border border-slate-300 bg-slate-50 p-4 shadow-sm">
-                <p className="text-2xl font-black text-slate-950">{card.value}</p>
-                <p className="mt-1 text-xs font-black uppercase tracking-wide text-red-700">{card.label}</p>
-                <p className="mt-2 text-xs font-semibold leading-5 text-slate-700">{card.detail}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      <section className="mb-8 grid gap-3 md:grid-cols-2 xl:grid-cols-4">
-        {actionCards.map((card) => (
-          <Link
-            key={card.title}
-            href={card.href}
-            className="rounded-xl border border-slate-300 bg-white p-4 shadow-sm transition hover:-translate-y-0.5 hover:border-blue-400 hover:shadow-md"
-          >
-            <p className="text-sm font-black text-blue-950">{card.title}</p>
-            <p className="mt-2 text-sm font-semibold leading-6 text-slate-600">{card.body}</p>
-          </Link>
-        ))}
-      </section>
-
-      <section className="mb-8 rounded-2xl border border-slate-300 bg-white p-5 shadow-sm">
-        <div className="grid gap-4 lg:grid-cols-[0.8fr_1.2fr]">
-          <div>
-            <p className="text-xs font-black uppercase tracking-[0.18em] text-red-700">
-              National buildout path
-            </p>
-            <h2 className="mt-2 text-xl font-black text-slate-950">
-              Add it only when the public record supports it.
-            </h2>
-            <p className="mt-2 text-sm font-semibold leading-6 text-slate-600">
-              Faretta AI can help turn a name, county, state, district, roster page, agenda, filing, or election source into a research checklist. The public profile still needs a source URL before it changes the record.
-            </p>
-          </div>
-          <div className="grid gap-3 sm:grid-cols-2">
-            {[
-              "Official name and office",
-              "Jurisdiction, county, district, or seat",
-              "Public source URL",
-              "Term, election date, or appointment date",
-              "What changed or needs review",
-              "No private addresses or minor children",
-            ].map((item) => (
-              <div key={item} className="rounded-lg border border-slate-300 bg-slate-50 px-3 py-2 text-sm font-black text-slate-800">
-                {item}
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      <Suspense
-        fallback={
-          <div className="animate-pulse space-y-4">
-            <div className="h-10 rounded-xl bg-gray-200" />
-            <div className="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3">
-              {[1, 2, 3, 4, 5, 6].map((i) => (
-                <div key={i} className="h-32 rounded-2xl bg-gray-100" />
-              ))}
-            </div>
-          </div>
-        }
-      >
-        <OfficialGrid officials={officials} scoreCards={scoreCards} />
-      </Suspense>
+        </section>
       </div>
     </div>
   );

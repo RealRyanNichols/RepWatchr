@@ -80,14 +80,18 @@ export default function OfficialGrid({
   return (
     <section className="rounded-2xl border border-slate-300 bg-white p-4 shadow-sm sm:p-5">
       {/* Search */}
-      <div className="mb-4">
+      <div className="mb-4 grid gap-3 lg:grid-cols-[1fr_auto] lg:items-center">
         <input
           type="text"
           value={searchQuery}
           onChange={(e) => setSearchQuery(e.target.value)}
           placeholder="Search by name, office, district, state, or county..."
-          className="w-full rounded-xl border border-slate-300 bg-white px-4 py-2.5 text-sm font-semibold text-slate-950 placeholder-slate-500 shadow-sm focus:border-blue-500 focus:outline-none focus:ring-2 focus:ring-blue-100"
+          aria-label="Search officials by name, office, district, state, or county"
+          className="w-full rounded-xl border border-slate-300 bg-white px-4 py-3 text-base font-bold text-slate-950 placeholder-slate-500 shadow-sm focus:border-blue-500 focus:outline-none focus:ring-2 focus:ring-blue-100"
         />
+        <div className="rounded-xl border border-blue-100 bg-blue-50 px-4 py-2.5 text-sm font-black text-blue-950 shadow-sm">
+          Showing {filtered.length} of {officials.length} officials
+        </div>
       </div>
 
       {/* Filters */}
@@ -144,11 +148,6 @@ export default function OfficialGrid({
           </select>
         )}
       </div>
-
-      {/* Results count */}
-      <p className="mb-4 text-sm font-semibold text-slate-600">
-        Showing {filtered.length} of {officials.length} officials
-      </p>
 
       {/* Grid */}
       <div className="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3">
