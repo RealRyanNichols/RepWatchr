@@ -16,8 +16,12 @@ export interface ContactInfo {
   email?: string;
   website?: string;
   socialMedia?: {
+    x?: string;
     twitter?: string;
     facebook?: string;
+    instagram?: string;
+    youtube?: string;
+    tiktok?: string;
   };
 }
 

@@ -12,7 +12,7 @@ export const metadata: Metadata = {
     template: "%s | RepWatchr",
   },
   description:
-    "Track elected officials with source-backed profiles, scorecards, voting records, campaign funding, red flags, and citizen input. Texas is the first loaded state.",
+    "Track public officials nationwide with source-backed profiles, scorecards, voting records, campaign funding, public statements, and citizen input.",
   keywords: [
     "RepWatchr",
     "elected officials",

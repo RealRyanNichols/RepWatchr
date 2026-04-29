@@ -6,6 +6,7 @@ import { useAuth } from "@/components/auth/AuthProvider";
 import { createClient } from "@/lib/supabase";
 import MemberCommandCenter from "@/components/dashboard/MemberCommandCenter";
 import MemberProfilePanel from "@/components/dashboard/MemberProfilePanel";
+import MemberBuildoutPanel from "@/components/dashboard/MemberBuildoutPanel";
 import {
   displayNameFromId,
   urlForOfficialOrCandidate,
@@ -230,6 +231,8 @@ export default function DashboardPage() {
       </div>
 
       <MemberCommandCenter />
+
+      <MemberBuildoutPanel />
 
       {/* Votes Section */}
       <div className="mt-8 grid gap-6 lg:grid-cols-2">

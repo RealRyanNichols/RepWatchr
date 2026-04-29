@@ -5,6 +5,7 @@ import { getAllOfficials, getAllScoreCards, getRepWatchrDataStats } from "@/lib/
 import { getSchoolBoardStats } from "@/lib/school-board-research";
 import OfficialGrid from "@/components/officials/OfficialGrid";
 import type { GovernmentLevel } from "@/types";
+import { getNationalBuildoutSummary, nationalGovernmentScopes } from "@/data/national-buildout";
 
 export const metadata: Metadata = {
   title: "Elected Officials Directory",
@@ -29,6 +30,7 @@ export default function OfficialsPage() {
   const scoreCards = getAllScoreCards();
   const schoolBoardStats = getSchoolBoardStats();
   const dataStats = getRepWatchrDataStats();
+  const nationalSummary = getNationalBuildoutSummary();
   const levelCounts = officials.reduce<Record<GovernmentLevel, number>>(
     (acc, official) => {
       acc[official.level] = (acc[official.level] ?? 0) + 1;
@@ -99,7 +101,7 @@ export default function OfficialsPage() {
                 Elected officials, source-backed.
               </h2>
               <p className="mt-3 max-w-3xl text-sm font-semibold leading-6 text-slate-700 sm:text-base">
-                RepWatchr is built for nationwide coverage. Texas is the first loaded state: federal representatives, state legislators, county and city officials, and school-board records where a public source confirms the seat. A profile shows who is loaded; scorecards, funding, red flags, votes, and citizen input appear only when those records actually exist.
+                RepWatchr is built for nationwide coverage. The national model is enabled for every state, D.C., territories, tribal governments, school boards, special districts, courts, and other public offices. Texas is the first loaded state; every other row stays marked queued or partial until public sources are attached.
               </p>
               <div className="mt-5 flex flex-wrap gap-2">
                 {Object.entries(levelLabels).map(([level, label]) => (
@@ -111,6 +113,12 @@ export default function OfficialsPage() {
                     {label}: {formatNumber(levelCounts[level as GovernmentLevel])}
                   </Link>
                 ))}
+                <Link
+                  href="/buildout"
+                  className="rounded-full border border-red-200 bg-red-50 px-3 py-1.5 text-xs font-black text-red-800 transition hover:border-red-300 hover:bg-white"
+                >
+                  National model: {formatNumber(nationalSummary.enabledJurisdictions)} jurisdictions
+                </Link>
               </div>
             </div>
             <div className="grid grid-cols-2 gap-3">
@@ -122,6 +130,23 @@ export default function OfficialsPage() {
                 </div>
               ))}
             </div>
+          </div>
+        </section>
+
+        <section className="mt-8 rounded-2xl border border-slate-300 bg-white p-5 shadow-sm">
+          <p className="text-xs font-black uppercase tracking-[0.18em] text-red-700">
+            Nationwide source lanes
+          </p>
+          <h2 className="mt-1 text-2xl font-black text-slate-950">
+            Federal, state, local, tribal, and public-organization profiles use the same model.
+          </h2>
+          <div className="mt-4 grid gap-3 md:grid-cols-2 xl:grid-cols-3">
+            {nationalGovernmentScopes.slice(0, 6).map((scope) => (
+              <div key={scope.id} className="rounded-xl border border-slate-200 bg-slate-50 p-4">
+                <p className="text-sm font-black text-slate-950">{scope.label}</p>
+                <p className="mt-1 text-xs font-semibold leading-5 text-slate-600">{scope.buildoutNeed}</p>
+              </div>
+            ))}
           </div>
         </section>
       </div>

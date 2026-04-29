@@ -23,13 +23,6 @@ const rogersWatchMark = {
   status: "client_allegation",
 } as const;
 
-const mcbrideWatchMark = {
-  label: "Red mark",
-  tone: "red",
-  reason: "Ryan requested this New York attorney be marked for deeper records review before any final findings are published.",
-  status: "needs_records_review",
-} as const;
-
 export const attorneyWatchImportPlan = {
   title: "Texas attorney and law-firm buildout",
   region: "Texas, starting with East Texas",
@@ -292,7 +285,7 @@ export const attorneyWatchProfiles: PublicPowerProfile[] = [
     summary:
       "New York City criminal-defense law firm with a public website stating that it handles state and federal criminal-defense matters and works nationally.",
     whyTracked:
-      "This firm profile is included because Joseph D. McBride was requested for RepWatchr records review. The firm page gives the public source bucket for attorney, practice-area, court-record, and client-rights research before any conclusions are published.",
+      "This firm profile gives RepWatchr a public source bucket for attorney, practice-area, court-record, and client-rights research before any conclusions are published.",
     authorityAreas: ["criminal defense", "federal criminal defense", "civil rights", "appeals", "post-conviction matters"],
     scrutinyAreas: [
       "court record footprint",
@@ -331,7 +324,7 @@ export const attorneyWatchProfiles: PublicPowerProfile[] = [
     summary:
       "Attorney profile seeded from The McBride Law Firm public website, which identifies Joseph D. McBride as the founder and describes prior Bronx County prosecutor experience.",
     whyTracked:
-      "Ryan requested a red mark and deeper source review for Joseph D. McBride. RepWatchr has not loaded a final evidence packet, rulings dataset, client-outcome dataset, or disciplinary review into this profile yet.",
+      "This is a starter attorney profile. RepWatchr has not loaded a final evidence packet, rulings dataset, client-outcome dataset, or disciplinary review into this profile yet.",
     authorityAreas: ["criminal defense", "federal criminal defense", "civil rights", "appeals", "post-conviction matters"],
     scrutinyAreas: [
       "court record footprint",
@@ -343,12 +336,11 @@ export const attorneyWatchProfiles: PublicPowerProfile[] = [
     profileStatus: "needs_source_review",
     buildoutPercent: 28,
     affiliatedOrganizationSlug: "mcbride-law-firm-pllc",
-    profileTags: ["Red mark", "New York", "Criminal defense", "Needs records review"],
+    profileTags: ["New York", "Criminal defense", "Needs records review"],
     profileImageUrl: mcbrideProfileImage,
     profileImageAlt: "Joseph D. McBride public website image",
     profileImageSource: "The McBride Law Firm public website",
     profileImageKind: "headshot",
-    watchMark: mcbrideWatchMark,
     sentimentSummary: {
       label: "Records pending",
       basis:
@@ -359,10 +351,10 @@ export const attorneyWatchProfiles: PublicPowerProfile[] = [
       {
         label: "Profile status",
         status: "needs_records_review",
-        tone: "warning",
+        tone: "neutral",
         detail:
-          "Ryan requested a red mark while court records, client outcomes, public discipline, reviews, and social sentiment are gathered.",
-        sourceTitle: "RepWatchr research queue",
+          "Court records, client outcomes, public discipline, reviews, and social sentiment have not been gathered into this profile yet.",
+        sourceTitle: "RepWatchr source-review queue",
       },
       {
         label: "Official website source",

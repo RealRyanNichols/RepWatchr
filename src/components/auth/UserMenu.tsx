@@ -8,6 +8,7 @@ export default function UserMenu() {
   const { user, profile, roles, loading, signOut } = useAuth();
   const [open, setOpen] = useState(false);
   const menuRef = useRef<HTMLDivElement>(null);
+  const isAdmin = roles.includes("admin");
   const canReview = roles.includes("admin") || roles.includes("reviewer");
 
   useEffect(() => {
@@ -110,6 +111,15 @@ export default function UserMenu() {
           {canReview ? (
             <>
               <div className="my-1 border-t border-gray-100" />
+              {isAdmin ? (
+                <Link
+                  href="/admin/control-center"
+                  className="block px-4 py-2 text-sm font-semibold text-red-700 hover:bg-red-50"
+                  onClick={() => setOpen(false)}
+                >
+                  Data Control Center
+                </Link>
+              ) : null}
               <Link
                 href="/admin/claims"
                 className="block px-4 py-2 text-sm font-semibold text-blue-800 hover:bg-blue-50"

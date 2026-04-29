@@ -7,6 +7,14 @@ import {
 import { getRepWatchrDataStats } from "@/lib/data";
 import { getAllOfficialIdeologyProfiles } from "@/lib/ideology";
 import { getSchoolBoardCandidateUrl, getSchoolBoardDistrictUrl } from "@/lib/school-board-urls";
+import { getAttorneyWatchProfiles, getMediaWatchProfiles, getPowerWatchStats } from "@/lib/power-watch";
+import {
+  getNationalBuildoutSummary,
+  nationalGovernmentScopes,
+  nationalJurisdictionBuildouts,
+  nationalTerritoryBuildouts,
+  socialMonitoringConnections,
+} from "@/data/national-buildout";
 
 export const metadata: Metadata = {
   title: "RepWatchr Buildout Dashboard",
@@ -41,6 +49,9 @@ export default function BuildoutDashboardPage() {
   const report = getSchoolBoardCompletionReport();
   const stats = getSchoolBoardStats();
   const dataStats = getRepWatchrDataStats();
+  const attorneyStats = getPowerWatchStats(getAttorneyWatchProfiles());
+  const mediaStats = getPowerWatchStats(getMediaWatchProfiles());
+  const nationalSummary = getNationalBuildoutSummary();
   const ideologyProfiles = getAllOfficialIdeologyProfiles();
   const voteWeightedIdeologyProfiles = ideologyProfiles.filter((profile) => profile.ideologyScore !== null);
   const pendingIdeologyProfiles = ideologyProfiles.length - voteWeightedIdeologyProfiles.length;
@@ -208,6 +219,28 @@ export default function BuildoutDashboardPage() {
       status: "member_tracked_items, member_profiles, and profile_claims feed the logged-in dashboard and claim flow.",
     },
   ];
+  const nationalCards = [
+    {
+      label: "Jurisdictions enabled",
+      value: nationalSummary.enabledJurisdictions,
+      detail: `${nationalSummary.stateCount} states plus ${nationalSummary.territoryAndDistrictCount} district/territory rows are in the national buildout model.`,
+    },
+    {
+      label: "Government lanes",
+      value: nationalSummary.governmentScopeCount,
+      detail: "Federal, state, local, school-board, tribal, courts, special districts, and public-power roles have source plans.",
+    },
+    {
+      label: "Attorney/media profiles",
+      value: attorneyStats.totalProfiles + mediaStats.totalProfiles,
+      detail: `${attorneyStats.totalProfiles} attorney/law-firm profiles and ${mediaStats.totalProfiles} media/newsroom profiles are source-seeded.`,
+    },
+    {
+      label: "Social connections",
+      value: nationalSummary.socialConnectionCount,
+      detail: "Profile links are live-ready; real-time X scanning remains credential-gated and admin-reviewed.",
+    },
+  ];
 
   return (
     <div className="bg-slate-50 pb-16">
@@ -240,6 +273,93 @@ export default function BuildoutDashboardPage() {
               <p className="text-xs font-black uppercase tracking-wide text-red-700">Open work</p>
               <p className="mt-1 text-4xl font-black text-red-700">{openWorkCount.toLocaleString()}</p>
               <p className="mt-1 text-xs font-semibold text-gray-500">{stats.gapCount} research gaps + {report.totalBrokenSources} empty source URLs</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="border-b border-slate-200 bg-white py-10">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <div className="mb-6">
+            <p className="text-xs font-black uppercase tracking-wide text-red-700">Nationwide model</p>
+            <h2 className="text-2xl font-black text-gray-950">All-state civic-accountability buildout is turned on</h2>
+            <p className="mt-2 max-w-4xl text-sm font-semibold leading-6 text-slate-600">
+              The public buildout page now separates the model from the loaded data. Every state has an enabled
+              federal/state source plan, while incomplete states stay clearly marked queued until source-backed profiles,
+              photos, statements, votes, and public links are loaded.
+            </p>
+          </div>
+
+          <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
+            {nationalCards.map((card) => (
+              <div key={card.label} className="rounded-2xl border border-slate-200 bg-slate-50 p-5 shadow-sm">
+                <p className="text-3xl font-black text-blue-950">{card.value.toLocaleString()}</p>
+                <p className="mt-1 text-xs font-black uppercase tracking-wide text-red-700">{card.label}</p>
+                <p className="mt-2 text-xs font-semibold leading-5 text-slate-600">{card.detail}</p>
+              </div>
+            ))}
+          </div>
+
+          <div className="mt-6 grid gap-4 lg:grid-cols-[0.95fr_1.05fr]">
+            <div className="rounded-2xl border border-slate-200 bg-slate-50 p-5">
+              <p className="text-xs font-black uppercase tracking-wide text-red-700">Public-power lanes</p>
+              <div className="mt-3 grid gap-2">
+                {nationalGovernmentScopes.map((scope) => (
+                  <div key={scope.id} className="rounded-xl border border-white bg-white p-3 shadow-sm">
+                    <p className="text-sm font-black text-slate-950">{scope.label}</p>
+                    <p className="mt-1 text-xs font-semibold leading-5 text-slate-600">{scope.publicDescription}</p>
+                  </div>
+                ))}
+              </div>
+            </div>
+
+            <div className="rounded-2xl border border-slate-200 bg-slate-50 p-5">
+              <p className="text-xs font-black uppercase tracking-wide text-red-700">Social statement connections</p>
+              <div className="mt-3 grid gap-2">
+                {socialMonitoringConnections.map((connection) => (
+                  <div key={connection.label} className="rounded-xl border border-white bg-white p-3 shadow-sm">
+                    <div className="flex items-start justify-between gap-3">
+                      <p className="text-sm font-black text-slate-950">{connection.label}</p>
+                      <span className="rounded-full bg-blue-50 px-2 py-1 text-[10px] font-black uppercase tracking-wide text-blue-800">
+                        {connection.status}
+                      </span>
+                    </div>
+                    <p className="mt-1 text-xs font-semibold leading-5 text-slate-600">{connection.detail}</p>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
+
+          <div className="mt-6 overflow-hidden rounded-2xl border border-slate-200">
+            <div className="border-b border-slate-200 bg-slate-50 px-4 py-3">
+              <p className="text-xs font-black uppercase tracking-wide text-slate-500">
+                State model status · {nationalSummary.loadedJurisdictions} loaded · {nationalSummary.partialJurisdictions} partial · {nationalSummary.queuedJurisdictions} queued
+              </p>
+            </div>
+            <div className="grid gap-px bg-slate-200 sm:grid-cols-2 lg:grid-cols-3">
+              {[...nationalJurisdictionBuildouts, ...nationalTerritoryBuildouts].map((state) => (
+                <div key={state.code} className="bg-white p-3">
+                  <div className="flex items-start justify-between gap-3">
+                    <div>
+                      <p className="text-sm font-black text-slate-950">{state.name}</p>
+                      <p className="text-xs font-semibold text-slate-500">{state.code}</p>
+                    </div>
+                    <span
+                      className={`rounded-full px-2 py-1 text-[10px] font-black uppercase tracking-wide ${
+                        state.status === "loaded"
+                          ? "bg-emerald-100 text-emerald-800"
+                          : state.status === "partial"
+                            ? "bg-amber-100 text-amber-800"
+                            : "bg-slate-100 text-slate-700"
+                      }`}
+                    >
+                      {state.status}
+                    </span>
+                  </div>
+                  <p className="mt-2 text-xs font-semibold leading-5 text-slate-600">{state.note}</p>
+                </div>
+              ))}
             </div>
           </div>
         </div>
