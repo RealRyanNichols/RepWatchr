@@ -61,12 +61,12 @@ export default async function OfficialProfilePage({
 
   if (!official) {
     return (
-      <div className="max-w-7xl mx-auto px-4 py-16 text-center">
-        <h1 className="text-2xl font-bold text-gray-900">Official Not Found</h1>
-        <p className="mt-2 text-gray-600">
+      <div className="min-h-screen bg-[#f8fbff] px-4 py-16 text-center text-slate-950">
+        <h1 className="text-2xl font-bold text-slate-950">Official Not Found</h1>
+        <p className="mt-2 text-slate-600">
           The official you are looking for does not exist.
         </p>
-        <Link href="/officials" className="mt-4 text-blue-600 hover:underline">
+        <Link href="/officials" className="mt-4 text-blue-700 hover:underline">
           Browse all officials
         </Link>
       </div>
@@ -91,7 +91,7 @@ export default async function OfficialProfilePage({
   const partyColor = getPartyColor(official.party);
 
   return (
-    <div>
+    <div className="min-h-screen bg-[#f8fbff] text-slate-950">
       <ProfileOpenTracker
         profileId={official.id}
         profileType="official"
@@ -100,7 +100,7 @@ export default async function OfficialProfilePage({
       />
       {/* Hero */}
       <section
-        className="border-b-4"
+        className="border-b-4 bg-white text-slate-950"
         style={{ borderBottomColor: partyColor }}
       >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6 sm:py-8">
