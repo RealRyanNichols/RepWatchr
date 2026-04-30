@@ -1,4 +1,5 @@
 import { getAllNationalJurisdictions } from "@/data/national-buildout";
+import texasVoterRegistrationSnapshot from "@/data/texas-voter-registration-march-2026.json";
 import { getAllOfficials, getAllScoreCards } from "@/lib/data";
 import {
   getSchoolBoardCompletionReport,
@@ -35,6 +36,28 @@ export interface GeographicBuildoutRow {
   href?: string;
 }
 
+export interface CountyCivicRollSignal {
+  sourceTitle: string;
+  sourceUrl: string;
+  snapshotLabel: string;
+  precincts: number;
+  voterRegistration: number;
+  suspenseVoters: number;
+  nonSuspenseVoters: number;
+  suspensePercent: number;
+  nonSuspensePercent: number;
+  statewideSuspensePercent: number;
+  attentionLabel: string;
+}
+
+export interface CountyCompletionRaceRow extends GeographicBuildoutRow {
+  rank: number;
+  totalProfiles: number;
+  neededToGreen: number;
+  raceScore: number;
+  civicRollSignal?: CountyCivicRollSignal;
+}
+
 interface OfficialRollup {
   total: number;
   byLevel: Record<GovernmentLevel, number>;
@@ -58,6 +81,22 @@ interface SchoolRollup {
   completionTotal: number;
   sourceUrls: Set<string>;
 }
+
+type TexasVoterCountyRow = (typeof texasVoterRegistrationSnapshot.counties)[number];
+
+function normalizeCountyLookupName(value: string) {
+  return value
+    .replace(/\s+County$/i, "")
+    .replace(/[^a-z0-9]/gi, "")
+    .toUpperCase();
+}
+
+const texasVoterCountyLookup = new Map(
+  texasVoterRegistrationSnapshot.counties.map((county: TexasVoterCountyRow) => [
+    normalizeCountyLookupName(county.countyName),
+    county,
+  ]),
+);
 
 const emptyLevelCounts: Record<GovernmentLevel, number> = {
   federal: 0,
@@ -244,6 +283,82 @@ function makeRow(
   };
 }
 
+function roundTenth(value: number) {
+  return Math.round(value * 10) / 10;
+}
+
+function getTotalProfiles(row: GeographicBuildoutRow) {
+  return row.officialProfiles + row.schoolBoardMembers + row.attorneyProfiles + row.mediaProfiles;
+}
+
+function civicAttentionLabel(signal: Pick<CountyCivicRollSignal, "suspensePercent" | "voterRegistration">) {
+  if (signal.suspensePercent >= 10) return "High suspense share";
+  if (signal.suspensePercent >= 6.5) return "Above-state suspense share";
+  if (signal.voterRegistration >= 500000) return "Large county voter pool";
+  return "County voter-roll signal loaded";
+}
+
+function getCivicRollSignal(row: GeographicBuildoutRow): CountyCivicRollSignal | undefined {
+  if (row.kind !== "county" || row.state !== "TX") return undefined;
+  const county = texasVoterCountyLookup.get(normalizeCountyLookupName(row.name));
+  if (!county) return undefined;
+
+  const statewide = texasVoterRegistrationSnapshot.statewideTotal;
+  const suspensePercent = roundTenth((county.suspenseVoters / Math.max(1, county.voterRegistration)) * 100);
+  const nonSuspensePercent = roundTenth((county.nonSuspenseVoters / Math.max(1, county.voterRegistration)) * 100);
+  const statewideSuspensePercent = roundTenth((statewide.suspenseVoters / Math.max(1, statewide.voterRegistration)) * 100);
+
+  return {
+    sourceTitle: texasVoterRegistrationSnapshot.meta.sourceTitle,
+    sourceUrl: texasVoterRegistrationSnapshot.meta.sourceUrl,
+    snapshotLabel: texasVoterRegistrationSnapshot.meta.snapshotLabel,
+    precincts: county.precincts,
+    voterRegistration: county.voterRegistration,
+    suspenseVoters: county.suspenseVoters,
+    nonSuspenseVoters: county.nonSuspenseVoters,
+    suspensePercent,
+    nonSuspensePercent,
+    statewideSuspensePercent,
+    attentionLabel: civicAttentionLabel({ suspensePercent, voterRegistration: county.voterRegistration }),
+  };
+}
+
+function makeCountyRaceRows(countyRows: GeographicBuildoutRow[]): CountyCompletionRaceRow[] {
+  return countyRows
+    .map((row) => {
+      const civicRollSignal = getCivicRollSignal(row);
+      const totalProfiles = getTotalProfiles(row);
+      const civicBoost = civicRollSignal
+        ? Math.min(50, civicRollSignal.voterRegistration / 25000) + civicRollSignal.suspensePercent * 2
+        : 0;
+      const raceScore =
+        row.completionPercent * 4 +
+        row.loadedLanes * 20 +
+        row.sourceLinks * 0.15 +
+        totalProfiles * 0.03 +
+        civicBoost;
+
+      return {
+        ...row,
+        rank: 0,
+        totalProfiles,
+        neededToGreen: Math.max(0, 75 - row.completionPercent),
+        raceScore: Math.round(raceScore),
+        civicRollSignal,
+      };
+    })
+    .sort(
+      (a, b) =>
+        b.completionPercent - a.completionPercent ||
+        b.loadedLanes - a.loadedLanes ||
+        b.sourceLinks - a.sourceLinks ||
+        b.totalProfiles - a.totalProfiles ||
+        (b.civicRollSignal?.voterRegistration ?? 0) - (a.civicRollSignal?.voterRegistration ?? 0) ||
+        a.name.localeCompare(b.name),
+    )
+    .map((row, index) => ({ ...row, rank: index + 1 }));
+}
+
 export function getGeographicBuildoutDashboard() {
   const jurisdictions = getAllNationalJurisdictions();
   const officials = getAllOfficials();
@@ -409,6 +524,20 @@ export function getGeographicBuildoutDashboard() {
         row.mediaProfiles >
       0,
   ).length;
+  const countyRaceRows = makeCountyRaceRows(countyRows);
+  const nextGreenCountyRows = [...countyRaceRows]
+    .filter((row) => row.completionPercent < 75)
+    .sort(
+      (a, b) =>
+        a.neededToGreen - b.neededToGreen ||
+        b.loadedLanes - a.loadedLanes ||
+        b.sourceLinks - a.sourceLinks ||
+        b.totalProfiles - a.totalProfiles ||
+        a.name.localeCompare(b.name),
+    )
+    .slice(0, 12);
+  const statewideVoterRegistration = texasVoterRegistrationSnapshot.statewideTotal.voterRegistration;
+  const statewideSuspenseVoters = texasVoterRegistrationSnapshot.statewideTotal.suspenseVoters;
 
   return {
     generatedAt: new Date().toISOString(),
@@ -423,14 +552,22 @@ export function getGeographicBuildoutDashboard() {
       loadedSchoolBoardMembers: schoolStats.candidates,
       loadedAttorneyProfiles: attorneyProfiles.length,
       loadedMediaProfiles: mediaProfiles.length,
+      civicRollCountyRows: texasVoterRegistrationSnapshot.counties.length,
+      civicRollRegisteredVoters: statewideVoterRegistration,
+      civicRollSuspenseVoters: statewideSuspenseVoters,
+      civicRollStatewideSuspensePercent: roundTenth((statewideSuspenseVoters / Math.max(1, statewideVoterRegistration)) * 100),
     },
     stateRows,
     countyRows,
     cityRows,
     districtRows,
+    countyRaceRows,
+    countyRaceLeaders: countyRaceRows.slice(0, 12),
+    nextGreenCountyRows,
     topCountyRows: countyRows.slice(0, 20),
     topCityRows: cityRows.slice(0, 20),
     lowestDistrictRows: districtRows.slice(0, 30),
+    civicRollSource: texasVoterRegistrationSnapshot.meta,
     stateLabel,
   };
 }

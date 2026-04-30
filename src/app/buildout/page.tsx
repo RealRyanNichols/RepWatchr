@@ -14,7 +14,11 @@ import {
   nationalGovernmentScopes,
   socialMonitoringConnections,
 } from "@/data/national-buildout";
-import { getGeographicBuildoutDashboard, type GeographicBuildoutRow } from "@/lib/geographic-buildout";
+import {
+  getGeographicBuildoutDashboard,
+  type CountyCompletionRaceRow,
+  type GeographicBuildoutRow,
+} from "@/lib/geographic-buildout";
 
 export const metadata: Metadata = {
   title: "RepWatchr Buildout Dashboard",
@@ -118,6 +122,157 @@ function CompactGeoTable({
         </tbody>
       </table>
     </div>
+  );
+}
+
+function CountyCompletionRace({
+  leaders,
+  nextGreenRows,
+  sourceTitle,
+  sourceUrl,
+  snapshotLabel,
+  countyCount,
+  registeredVoters,
+  suspenseVoters,
+  statewideSuspensePercent,
+}: {
+  leaders: CountyCompletionRaceRow[];
+  nextGreenRows: CountyCompletionRaceRow[];
+  sourceTitle: string;
+  sourceUrl: string;
+  snapshotLabel: string;
+  countyCount: number;
+  registeredVoters: number;
+  suspenseVoters: number;
+  statewideSuspensePercent: number;
+}) {
+  const spotlightRows = leaders.slice(0, 4);
+  const signalRows = leaders.filter((row) => row.civicRollSignal).slice(0, 8);
+
+  return (
+    <section className="mt-6 overflow-hidden rounded-2xl border border-blue-200 bg-white shadow-sm">
+      <div className="bg-slate-950 px-5 py-5 text-white">
+        <div className="flex flex-col gap-4 lg:flex-row lg:items-end lg:justify-between">
+          <div>
+            <p className="text-xs font-black uppercase tracking-[0.18em] text-red-300">County completion race</p>
+            <h3 className="mt-1 text-2xl font-black">First county to green gets the board.</h3>
+            <p className="mt-2 max-w-4xl text-sm font-semibold leading-6 text-slate-200">
+              County rank is computed from profile completion, loaded lanes, source links, and public aggregate voter-roll signal. The voter data here is county-level Texas SOS data only.
+            </p>
+          </div>
+          <a
+            href={sourceUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="rounded-full border border-white/20 bg-white/10 px-4 py-2 text-xs font-black text-white transition hover:bg-white hover:text-slate-950"
+          >
+            {snapshotLabel} SOS source
+          </a>
+        </div>
+
+        <div className="mt-5 grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
+          <div className="rounded-xl border border-white/10 bg-white/10 p-4">
+            <p className="text-3xl font-black">{countyCount.toLocaleString()}</p>
+            <p className="mt-1 text-[11px] font-black uppercase tracking-wide text-slate-300">Texas counties loaded</p>
+          </div>
+          <div className="rounded-xl border border-white/10 bg-white/10 p-4">
+            <p className="text-3xl font-black">{registeredVoters.toLocaleString()}</p>
+            <p className="mt-1 text-[11px] font-black uppercase tracking-wide text-slate-300">Registered voters</p>
+          </div>
+          <div className="rounded-xl border border-white/10 bg-white/10 p-4">
+            <p className="text-3xl font-black">{suspenseVoters.toLocaleString()}</p>
+            <p className="mt-1 text-[11px] font-black uppercase tracking-wide text-slate-300">Suspense voters</p>
+          </div>
+          <div className="rounded-xl border border-white/10 bg-white/10 p-4">
+            <p className="text-3xl font-black">{statewideSuspensePercent}%</p>
+            <p className="mt-1 text-[11px] font-black uppercase tracking-wide text-slate-300">Statewide suspense share</p>
+          </div>
+        </div>
+      </div>
+
+      <div className="grid gap-px bg-blue-100 lg:grid-cols-4">
+        {spotlightRows.map((row) => (
+          <Link key={row.id} href={row.href ?? "/buildout"} className="block bg-white p-4 transition hover:bg-blue-50">
+            <div className="flex items-start justify-between gap-3">
+              <div>
+                <p className="text-xs font-black uppercase tracking-wide text-red-700">Rank #{row.rank}</p>
+                <h4 className="mt-1 text-lg font-black text-slate-950">{row.name}</h4>
+                <p className="text-xs font-semibold text-slate-500">{row.state} · race score {row.raceScore}</p>
+              </div>
+              <span className={`rounded-full px-2 py-1 text-[10px] font-black uppercase tracking-wide ${statusBadgeClasses(row.status)}`}>
+                {row.status}
+              </span>
+            </div>
+            <div className="mt-4">
+              <div className="mb-1 flex items-center justify-between text-xs font-black">
+                <span className="text-slate-500">Completion</span>
+                <span className={row.completionPercent >= 75 ? "text-emerald-700" : "text-blue-700"}>{row.completionPercent}%</span>
+              </div>
+              <ProgressBar percent={row.completionPercent} tone={toneFor(row.completionPercent)} />
+            </div>
+            <p className="mt-3 text-xs font-semibold leading-5 text-slate-600">
+              {row.totalProfiles.toLocaleString()} profiles · {row.loadedLanes}/{row.totalLanes} lanes · {row.sourceLinks.toLocaleString()} sources
+            </p>
+            {row.civicRollSignal ? (
+              <p className="mt-2 rounded-lg bg-amber-50 px-3 py-2 text-xs font-bold leading-5 text-amber-800">
+                {row.civicRollSignal.attentionLabel}: {row.civicRollSignal.voterRegistration.toLocaleString()} registered, {row.civicRollSignal.suspensePercent}% suspense.
+              </p>
+            ) : null}
+          </Link>
+        ))}
+      </div>
+
+      <div className="grid gap-4 p-5 lg:grid-cols-[1fr_1fr]">
+        <div>
+          <div className="mb-3">
+            <p className="text-xs font-black uppercase tracking-wide text-red-700">Closest to green</p>
+            <h4 className="text-lg font-black text-slate-950">Counties that can flip next</h4>
+          </div>
+          <div className="space-y-2">
+            {nextGreenRows.slice(0, 6).map((row) => (
+              <Link key={row.id} href={row.href ?? "/buildout"} className="block rounded-xl border border-slate-200 bg-slate-50 p-3 transition hover:border-blue-300 hover:bg-white">
+                <div className="flex items-center justify-between gap-3">
+                  <div className="min-w-0">
+                    <p className="truncate text-sm font-black text-slate-950">{row.name}</p>
+                    <p className="text-xs font-semibold text-slate-500">{row.neededToGreen} points to green · {row.topGap}</p>
+                  </div>
+                  <span className="text-sm font-black text-blue-800">{row.completionPercent}%</span>
+                </div>
+                <div className="mt-2">
+                  <ProgressBar percent={row.completionPercent} tone={toneFor(row.completionPercent)} />
+                </div>
+              </Link>
+            ))}
+          </div>
+        </div>
+
+        <div>
+          <div className="mb-3">
+            <p className="text-xs font-black uppercase tracking-wide text-red-700">Civic roll signals</p>
+            <h4 className="text-lg font-black text-slate-950">Public aggregate voter data that can draw attention</h4>
+          </div>
+          <div className="space-y-2">
+            {signalRows.map((row) => (
+              <div key={row.id} className="rounded-xl border border-amber-200 bg-amber-50 p-3">
+                <div className="flex items-start justify-between gap-3">
+                  <div>
+                    <p className="text-sm font-black text-slate-950">{row.name}</p>
+                    <p className="text-xs font-semibold text-amber-800">{row.civicRollSignal?.attentionLabel}</p>
+                  </div>
+                  <p className="text-sm font-black text-amber-900">{row.civicRollSignal?.suspensePercent}%</p>
+                </div>
+                <p className="mt-1 text-xs font-semibold leading-5 text-slate-700">
+                  {row.civicRollSignal?.voterRegistration.toLocaleString()} registered voters, {row.civicRollSignal?.suspenseVoters.toLocaleString()} suspense, {row.civicRollSignal?.precincts.toLocaleString()} precincts.
+                </p>
+              </div>
+            ))}
+          </div>
+          <p className="mt-3 text-[11px] font-semibold leading-5 text-slate-500">
+            Source: {sourceTitle}. Individual voter records are not imported, displayed, or targeted by this dashboard.
+          </p>
+        </div>
+      </div>
+    </section>
   );
 }
 
@@ -332,13 +487,13 @@ export default function BuildoutDashboardPage() {
   const analyticsSurfaces = [
     {
       label: "Pageview analytics",
-      value: "Mounted",
-      status: "The Vercel Analytics component is mounted in the root layout. Google Analytics loads only when NEXT_PUBLIC_GA_MEASUREMENT_ID is configured.",
+      value: "Mounted + API",
+      status: "Vercel Analytics is mounted, Google Analytics loads when NEXT_PUBLIC_GA_MEASUREMENT_ID is configured, and /api/analytics/page-view can store owned page-view rows when Supabase is configured.",
     },
     {
       label: "Custom Vercel events",
-      value: "3 events",
-      status: "share_click, picker_drilldown, and profile_open are emitted from visible user actions.",
+      value: "9 events",
+      status: "Official search/filter/profile clicks, national state choices, share clicks, picker drilldowns, profile opens, and attorney feedback are emitted from visible user actions.",
     },
     {
       label: "Faretta AI interaction collection",
@@ -612,6 +767,18 @@ export default function BuildoutDashboardPage() {
               <p className="mt-2 text-xs font-semibold leading-5 text-slate-600">School-board district completion rows already computed from roster dossiers.</p>
             </div>
           </div>
+
+          <CountyCompletionRace
+            leaders={geographic.countyRaceLeaders}
+            nextGreenRows={geographic.nextGreenCountyRows}
+            sourceTitle={geographic.civicRollSource.sourceTitle}
+            sourceUrl={geographic.civicRollSource.sourceUrl}
+            snapshotLabel={geographic.civicRollSource.snapshotLabel}
+            countyCount={geographic.summary.civicRollCountyRows}
+            registeredVoters={geographic.summary.civicRollRegisteredVoters}
+            suspenseVoters={geographic.summary.civicRollSuspenseVoters}
+            statewideSuspensePercent={geographic.summary.civicRollStatewideSuspensePercent}
+          />
 
           <div className="mt-6 rounded-2xl border border-slate-200 bg-white p-4 shadow-sm">
             <div className="mb-3 flex flex-col gap-1 sm:flex-row sm:items-end sm:justify-between">

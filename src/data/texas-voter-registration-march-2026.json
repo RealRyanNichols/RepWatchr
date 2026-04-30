@@ -1,0 +1,1796 @@
+{
+  "meta": {
+    "sourceTitle": "Texas Secretary of State March 2026 Voter Registration Figures",
+    "sourceUrl": "https://www.sos.texas.gov/elections/historical/mar2026.shtml",
+    "snapshotLabel": "March 2026",
+    "accessedDate": "2026-04-29",
+    "scope": "Aggregate county-level voter-registration figures only. No individual voter records are imported."
+  },
+  "statewideTotal": {
+    "countyName": "Statewide Total",
+    "precincts": 9929,
+    "voterRegistration": 18657918,
+    "suspenseVoters": 1228918,
+    "nonSuspenseVoters": 17429000
+  },
+  "counties": [
+    {
+      "countyName": "Anderson",
+      "precincts": 23,
+      "voterRegistration": 30678,
+      "suspenseVoters": 1512,
+      "nonSuspenseVoters": 29166
+    },
+    {
+      "countyName": "Andrews",
+      "precincts": 5,
+      "voterRegistration": 10637,
+      "suspenseVoters": 524,
+      "nonSuspenseVoters": 10113
+    },
+    {
+      "countyName": "Angelina",
+      "precincts": 43,
+      "voterRegistration": 55445,
+      "suspenseVoters": 2247,
+      "nonSuspenseVoters": 53198
+    },
+    {
+      "countyName": "Aransas",
+      "precincts": 8,
+      "voterRegistration": 19411,
+      "suspenseVoters": 1441,
+      "nonSuspenseVoters": 17970
+    },
+    {
+      "countyName": "Archer",
+      "precincts": 14,
+      "voterRegistration": 7005,
+      "suspenseVoters": 197,
+      "nonSuspenseVoters": 6808
+    },
+    {
+      "countyName": "Armstrong",
+      "precincts": 9,
+      "voterRegistration": 1441,
+      "suspenseVoters": 42,
+      "nonSuspenseVoters": 1399
+    },
+    {
+      "countyName": "Atascosa",
+      "precincts": 25,
+      "voterRegistration": 32209,
+      "suspenseVoters": 1435,
+      "nonSuspenseVoters": 30774
+    },
+    {
+      "countyName": "Austin",
+      "precincts": 11,
+      "voterRegistration": 22371,
+      "suspenseVoters": 1455,
+      "nonSuspenseVoters": 20916
+    },
+    {
+      "countyName": "Bailey",
+      "precincts": 5,
+      "voterRegistration": 3102,
+      "suspenseVoters": 181,
+      "nonSuspenseVoters": 2921
+    },
+    {
+      "countyName": "Bandera",
+      "precincts": 11,
+      "voterRegistration": 19234,
+      "suspenseVoters": 873,
+      "nonSuspenseVoters": 18361
+    },
+    {
+      "countyName": "Bastrop",
+      "precincts": 27,
+      "voterRegistration": 62653,
+      "suspenseVoters": 2930,
+      "nonSuspenseVoters": 59723
+    },
+    {
+      "countyName": "Baylor",
+      "precincts": 5,
+      "voterRegistration": 2410,
+      "suspenseVoters": 74,
+      "nonSuspenseVoters": 2336
+    },
+    {
+      "countyName": "Bee",
+      "precincts": 14,
+      "voterRegistration": 15491,
+      "suspenseVoters": 1178,
+      "nonSuspenseVoters": 14313
+    },
+    {
+      "countyName": "Bell",
+      "precincts": 73,
+      "voterRegistration": 234576,
+      "suspenseVoters": 21103,
+      "nonSuspenseVoters": 213473
+    },
+    {
+      "countyName": "Bexar",
+      "precincts": 807,
+      "voterRegistration": 1293128,
+      "suspenseVoters": 64001,
+      "nonSuspenseVoters": 1229127
+    },
+    {
+      "countyName": "Blanco",
+      "precincts": 6,
+      "voterRegistration": 11110,
+      "suspenseVoters": 317,
+      "nonSuspenseVoters": 10793
+    },
+    {
+      "countyName": "Borden",
+      "precincts": 6,
+      "voterRegistration": 468,
+      "suspenseVoters": 9,
+      "nonSuspenseVoters": 459
+    },
+    {
+      "countyName": "Bosque",
+      "precincts": 12,
+      "voterRegistration": 13504,
+      "suspenseVoters": 512,
+      "nonSuspenseVoters": 12992
+    },
+    {
+      "countyName": "Bowie",
+      "precincts": 53,
+      "voterRegistration": 60472,
+      "suspenseVoters": 4194,
+      "nonSuspenseVoters": 56278
+    },
+    {
+      "countyName": "Brazoria",
+      "precincts": 85,
+      "voterRegistration": 254533,
+      "suspenseVoters": 11561,
+      "nonSuspenseVoters": 242972
+    },
+    {
+      "countyName": "Brazos",
+      "precincts": 78,
+      "voterRegistration": 138990,
+      "suspenseVoters": 11709,
+      "nonSuspenseVoters": 127281
+    },
+    {
+      "countyName": "Brewster",
+      "precincts": 8,
+      "voterRegistration": 7018,
+      "suspenseVoters": 454,
+      "nonSuspenseVoters": 6564
+    },
+    {
+      "countyName": "Briscoe",
+      "precincts": 7,
+      "voterRegistration": 1000,
+      "suspenseVoters": 28,
+      "nonSuspenseVoters": 972
+    },
+    {
+      "countyName": "Brooks",
+      "precincts": 6,
+      "voterRegistration": 4730,
+      "suspenseVoters": 286,
+      "nonSuspenseVoters": 4444
+    },
+    {
+      "countyName": "Brown",
+      "precincts": 19,
+      "voterRegistration": 25461,
+      "suspenseVoters": 1265,
+      "nonSuspenseVoters": 24196
+    },
+    {
+      "countyName": "Burleson",
+      "precincts": 14,
+      "voterRegistration": 13967,
+      "suspenseVoters": 502,
+      "nonSuspenseVoters": 13465
+    },
+    {
+      "countyName": "Burnet",
+      "precincts": 22,
+      "voterRegistration": 39586,
+      "suspenseVoters": 1885,
+      "nonSuspenseVoters": 37701
+    },
+    {
+      "countyName": "Caldwell",
+      "precincts": 25,
+      "voterRegistration": 27268,
+      "suspenseVoters": 1219,
+      "nonSuspenseVoters": 26049
+    },
+    {
+      "countyName": "Calhoun",
+      "precincts": 12,
+      "voterRegistration": 12841,
+      "suspenseVoters": 426,
+      "nonSuspenseVoters": 12415
+    },
+    {
+      "countyName": "Callahan",
+      "precincts": 9,
+      "voterRegistration": 10371,
+      "suspenseVoters": 404,
+      "nonSuspenseVoters": 9967
+    },
+    {
+      "countyName": "Cameron",
+      "precincts": 103,
+      "voterRegistration": 238192,
+      "suspenseVoters": 10553,
+      "nonSuspenseVoters": 227639
+    },
+    {
+      "countyName": "Camp",
+      "precincts": 5,
+      "voterRegistration": 8424,
+      "suspenseVoters": 288,
+      "nonSuspenseVoters": 8136
+    },
+    {
+      "countyName": "Carson",
+      "precincts": 9,
+      "voterRegistration": 4214,
+      "suspenseVoters": 165,
+      "nonSuspenseVoters": 4049
+    },
+    {
+      "countyName": "Cass",
+      "precincts": 19,
+      "voterRegistration": 21620,
+      "suspenseVoters": 1275,
+      "nonSuspenseVoters": 20345
+    },
+    {
+      "countyName": "Castro",
+      "precincts": 9,
+      "voterRegistration": 3488,
+      "suspenseVoters": 0,
+      "nonSuspenseVoters": 3488
+    },
+    {
+      "countyName": "Chambers",
+      "precincts": 19,
+      "voterRegistration": 38164,
+      "suspenseVoters": 1513,
+      "nonSuspenseVoters": 36651
+    },
+    {
+      "countyName": "Cherokee",
+      "precincts": 26,
+      "voterRegistration": 32215,
+      "suspenseVoters": 1737,
+      "nonSuspenseVoters": 30478
+    },
+    {
+      "countyName": "Childress",
+      "precincts": 5,
+      "voterRegistration": 3668,
+      "suspenseVoters": 202,
+      "nonSuspenseVoters": 3466
+    },
+    {
+      "countyName": "Clay",
+      "precincts": 17,
+      "voterRegistration": 8220,
+      "suspenseVoters": 235,
+      "nonSuspenseVoters": 7985
+    },
+    {
+      "countyName": "Cochran",
+      "precincts": 6,
+      "voterRegistration": 1477,
+      "suspenseVoters": 69,
+      "nonSuspenseVoters": 1408
+    },
+    {
+      "countyName": "Coke",
+      "precincts": 5,
+      "voterRegistration": 2508,
+      "suspenseVoters": 17,
+      "nonSuspenseVoters": 2491
+    },
+    {
+      "countyName": "Coleman",
+      "precincts": 6,
+      "voterRegistration": 6105,
+      "suspenseVoters": 209,
+      "nonSuspenseVoters": 5896
+    },
+    {
+      "countyName": "Collin",
+      "precincts": 274,
+      "voterRegistration": 752502,
+      "suspenseVoters": 55975,
+      "nonSuspenseVoters": 696527
+    },
+    {
+      "countyName": "Collingsworth",
+      "precincts": 9,
+      "voterRegistration": 1936,
+      "suspenseVoters": 0,
+      "nonSuspenseVoters": 1936
+    },
+    {
+      "countyName": "Colorado",
+      "precincts": 12,
+      "voterRegistration": 14523,
+      "suspenseVoters": 778,
+      "nonSuspenseVoters": 13745
+    },
+    {
+      "countyName": "Comal",
+      "precincts": 42,
+      "voterRegistration": 147503,
+      "suspenseVoters": 6563,
+      "nonSuspenseVoters": 140940
+    },
+    {
+      "countyName": "Comanche",
+      "precincts": 15,
+      "voterRegistration": 10226,
+      "suspenseVoters": 616,
+      "nonSuspenseVoters": 9610
+    },
+    {
+      "countyName": "Concho",
+      "precincts": 9,
+      "voterRegistration": 1748,
+      "suspenseVoters": 107,
+      "nonSuspenseVoters": 1641
+    },
+    {
+      "countyName": "Cooke",
+      "precincts": 18,
+      "voterRegistration": 30493,
+      "suspenseVoters": 1124,
+      "nonSuspenseVoters": 29369
+    },
+    {
+      "countyName": "Coryell",
+      "precincts": 17,
+      "voterRegistration": 45909,
+      "suspenseVoters": 4880,
+      "nonSuspenseVoters": 41029
+    },
+    {
+      "countyName": "Cottle",
+      "precincts": 5,
+      "voterRegistration": 965,
+      "suspenseVoters": 72,
+      "nonSuspenseVoters": 893
+    },
+    {
+      "countyName": "Crane",
+      "precincts": 5,
+      "voterRegistration": 2732,
+      "suspenseVoters": 77,
+      "nonSuspenseVoters": 2655
+    },
+    {
+      "countyName": "Crockett",
+      "precincts": 5,
+      "voterRegistration": 2236,
+      "suspenseVoters": 74,
+      "nonSuspenseVoters": 2162
+    },
+    {
+      "countyName": "Crosby",
+      "precincts": 5,
+      "voterRegistration": 3586,
+      "suspenseVoters": 288,
+      "nonSuspenseVoters": 3298
+    },
+    {
+      "countyName": "Culberson",
+      "precincts": 6,
+      "voterRegistration": 1703,
+      "suspenseVoters": 15,
+      "nonSuspenseVoters": 1688
+    },
+    {
+      "countyName": "Dallam",
+      "precincts": 10,
+      "voterRegistration": 2774,
+      "suspenseVoters": 241,
+      "nonSuspenseVoters": 2533
+    },
+    {
+      "countyName": "Dallas",
+      "precincts": 792,
+      "voterRegistration": 1463708,
+      "suspenseVoters": 129015,
+      "nonSuspenseVoters": 1334693
+    },
+    {
+      "countyName": "Dawson",
+      "precincts": 5,
+      "voterRegistration": 6432,
+      "suspenseVoters": 320,
+      "nonSuspenseVoters": 6112
+    },
+    {
+      "countyName": "Deaf Smith",
+      "precincts": 5,
+      "voterRegistration": 8722,
+      "suspenseVoters": 618,
+      "nonSuspenseVoters": 8104
+    },
+    {
+      "countyName": "Delta",
+      "precincts": 8,
+      "voterRegistration": 4080,
+      "suspenseVoters": 118,
+      "nonSuspenseVoters": 3962
+    },
+    {
+      "countyName": "Denton",
+      "precincts": 155,
+      "voterRegistration": 644341,
+      "suspenseVoters": 55744,
+      "nonSuspenseVoters": 588597
+    },
+    {
+      "countyName": "Dewitt",
+      "precincts": 11,
+      "voterRegistration": 11480,
+      "suspenseVoters": 496,
+      "nonSuspenseVoters": 10984
+    },
+    {
+      "countyName": "Dickens",
+      "precincts": 7,
+      "voterRegistration": 1363,
+      "suspenseVoters": 70,
+      "nonSuspenseVoters": 1293
+    },
+    {
+      "countyName": "Dimmit",
+      "precincts": 8,
+      "voterRegistration": 6550,
+      "suspenseVoters": 329,
+      "nonSuspenseVoters": 6221
+    },
+    {
+      "countyName": "Donley",
+      "precincts": 7,
+      "voterRegistration": 2453,
+      "suspenseVoters": 115,
+      "nonSuspenseVoters": 2338
+    },
+    {
+      "countyName": "Duval",
+      "precincts": 10,
+      "voterRegistration": 7839,
+      "suspenseVoters": 303,
+      "nonSuspenseVoters": 7536
+    },
+    {
+      "countyName": "Eastland",
+      "precincts": 10,
+      "voterRegistration": 12510,
+      "suspenseVoters": 582,
+      "nonSuspenseVoters": 11928
+    },
+    {
+      "countyName": "Ector",
+      "precincts": 42,
+      "voterRegistration": 85664,
+      "suspenseVoters": 4292,
+      "nonSuspenseVoters": 81372
+    },
+    {
+      "countyName": "Edwards",
+      "precincts": 5,
+      "voterRegistration": 1467,
+      "suspenseVoters": 59,
+      "nonSuspenseVoters": 1408
+    },
+    {
+      "countyName": "El Paso",
+      "precincts": 228,
+      "voterRegistration": 152671,
+      "suspenseVoters": 13289,
+      "nonSuspenseVoters": 139382
+    },
+    {
+      "countyName": "Ellis",
+      "precincts": 61,
+      "voterRegistration": 518817,
+      "suspenseVoters": 47036,
+      "nonSuspenseVoters": 471781
+    },
+    {
+      "countyName": "Erath",
+      "precincts": 22,
+      "voterRegistration": 26306,
+      "suspenseVoters": 975,
+      "nonSuspenseVoters": 25331
+    },
+    {
+      "countyName": "Falls",
+      "precincts": 13,
+      "voterRegistration": 10665,
+      "suspenseVoters": 480,
+      "nonSuspenseVoters": 10185
+    },
+    {
+      "countyName": "Fannin",
+      "precincts": 18,
+      "voterRegistration": 24815,
+      "suspenseVoters": 1338,
+      "nonSuspenseVoters": 23477
+    },
+    {
+      "countyName": "Fayette",
+      "precincts": 16,
+      "voterRegistration": 18167,
+      "suspenseVoters": 409,
+      "nonSuspenseVoters": 17758
+    },
+    {
+      "countyName": "Fisher",
+      "precincts": 5,
+      "voterRegistration": 2741,
+      "suspenseVoters": 53,
+      "nonSuspenseVoters": 2688
+    },
+    {
+      "countyName": "Floyd",
+      "precincts": 5,
+      "voterRegistration": 3578,
+      "suspenseVoters": 104,
+      "nonSuspenseVoters": 3474
+    },
+    {
+      "countyName": "Foard",
+      "precincts": 5,
+      "voterRegistration": 788,
+      "suspenseVoters": 24,
+      "nonSuspenseVoters": 764
+    },
+    {
+      "countyName": "Fort Bend",
+      "precincts": 295,
+      "voterRegistration": 567664,
+      "suspenseVoters": 43375,
+      "nonSuspenseVoters": 524289
+    },
+    {
+      "countyName": "Franklin",
+      "precincts": 9,
+      "voterRegistration": 7697,
+      "suspenseVoters": 167,
+      "nonSuspenseVoters": 7530
+    },
+    {
+      "countyName": "Freestone",
+      "precincts": 14,
+      "voterRegistration": 13398,
+      "suspenseVoters": 324,
+      "nonSuspenseVoters": 13074
+    },
+    {
+      "countyName": "Frio",
+      "precincts": 10,
+      "voterRegistration": 9584,
+      "suspenseVoters": 471,
+      "nonSuspenseVoters": 9113
+    },
+    {
+      "countyName": "Gaines",
+      "precincts": 8,
+      "voterRegistration": 10574,
+      "suspenseVoters": 516,
+      "nonSuspenseVoters": 10058
+    },
+    {
+      "countyName": "Galveston",
+      "precincts": 97,
+      "voterRegistration": 246657,
+      "suspenseVoters": 11545,
+      "nonSuspenseVoters": 235112
+    },
+    {
+      "countyName": "Garza",
+      "precincts": 7,
+      "voterRegistration": 2493,
+      "suspenseVoters": 181,
+      "nonSuspenseVoters": 2312
+    },
+    {
+      "countyName": "Gillespie",
+      "precincts": 14,
+      "voterRegistration": 21928,
+      "suspenseVoters": 688,
+      "nonSuspenseVoters": 21240
+    },
+    {
+      "countyName": "Glasscock",
+      "precincts": 5,
+      "voterRegistration": 842,
+      "suspenseVoters": 40,
+      "nonSuspenseVoters": 802
+    },
+    {
+      "countyName": "Goliad",
+      "precincts": 10,
+      "voterRegistration": 5684,
+      "suspenseVoters": 249,
+      "nonSuspenseVoters": 5435
+    },
+    {
+      "countyName": "Gonzales",
+      "precincts": 16,
+      "voterRegistration": 13160,
+      "suspenseVoters": 151,
+      "nonSuspenseVoters": 13009
+    },
+    {
+      "countyName": "Gray",
+      "precincts": 8,
+      "voterRegistration": 12112,
+      "suspenseVoters": 706,
+      "nonSuspenseVoters": 11406
+    },
+    {
+      "countyName": "Grayson",
+      "precincts": 42,
+      "voterRegistration": 100887,
+      "suspenseVoters": 8238,
+      "nonSuspenseVoters": 92649
+    },
+    {
+      "countyName": "Gregg",
+      "precincts": 22,
+      "voterRegistration": 73217,
+      "suspenseVoters": 3092,
+      "nonSuspenseVoters": 70125
+    },
+    {
+      "countyName": "Grimes",
+      "precincts": 14,
+      "voterRegistration": 21519,
+      "suspenseVoters": 1036,
+      "nonSuspenseVoters": 20483
+    },
+    {
+      "countyName": "Guadalupe",
+      "precincts": 90,
+      "voterRegistration": 128124,
+      "suspenseVoters": 9493,
+      "nonSuspenseVoters": 118631
+    },
+    {
+      "countyName": "Hale",
+      "precincts": 31,
+      "voterRegistration": 18103,
+      "suspenseVoters": 219,
+      "nonSuspenseVoters": 17884
+    },
+    {
+      "countyName": "Hall",
+      "precincts": 8,
+      "voterRegistration": 1835,
+      "suspenseVoters": 78,
+      "nonSuspenseVoters": 1757
+    },
+    {
+      "countyName": "Hamilton",
+      "precincts": 12,
+      "voterRegistration": 6181,
+      "suspenseVoters": 256,
+      "nonSuspenseVoters": 5925
+    },
+    {
+      "countyName": "Hansford",
+      "precincts": 9,
+      "voterRegistration": 2952,
+      "suspenseVoters": 110,
+      "nonSuspenseVoters": 2842
+    },
+    {
+      "countyName": "Hardeman",
+      "precincts": 5,
+      "voterRegistration": 2269,
+      "suspenseVoters": 111,
+      "nonSuspenseVoters": 2158
+    },
+    {
+      "countyName": "Hardin",
+      "precincts": 20,
+      "voterRegistration": 43555,
+      "suspenseVoters": 2550,
+      "nonSuspenseVoters": 41005
+    },
+    {
+      "countyName": "Harris",
+      "precincts": 1166,
+      "voterRegistration": 2702952,
+      "suspenseVoters": 198369,
+      "nonSuspenseVoters": 2504583
+    },
+    {
+      "countyName": "Harrison",
+      "precincts": 27,
+      "voterRegistration": 47042,
+      "suspenseVoters": 2176,
+      "nonSuspenseVoters": 44866
+    },
+    {
+      "countyName": "Hartley",
+      "precincts": 7,
+      "voterRegistration": 2768,
+      "suspenseVoters": 165,
+      "nonSuspenseVoters": 2603
+    },
+    {
+      "countyName": "Haskell",
+      "precincts": 11,
+      "voterRegistration": 3405,
+      "suspenseVoters": 183,
+      "nonSuspenseVoters": 3222
+    },
+    {
+      "countyName": "Hays",
+      "precincts": 94,
+      "voterRegistration": 193013,
+      "suspenseVoters": 12078,
+      "nonSuspenseVoters": 180935
+    },
+    {
+      "countyName": "Hemphill",
+      "precincts": 9,
+      "voterRegistration": 2272,
+      "suspenseVoters": 121,
+      "nonSuspenseVoters": 2151
+    },
+    {
+      "countyName": "Henderson",
+      "precincts": 31,
+      "voterRegistration": 60148,
+      "suspenseVoters": 2326,
+      "nonSuspenseVoters": 57822
+    },
+    {
+      "countyName": "Hidalgo",
+      "precincts": 260,
+      "voterRegistration": 451612,
+      "suspenseVoters": 18752,
+      "nonSuspenseVoters": 432860
+    },
+    {
+      "countyName": "Hill",
+      "precincts": 14,
+      "voterRegistration": 27498,
+      "suspenseVoters": 167,
+      "nonSuspenseVoters": 27331
+    },
+    {
+      "countyName": "Hockley",
+      "precincts": 11,
+      "voterRegistration": 14077,
+      "suspenseVoters": 631,
+      "nonSuspenseVoters": 13446
+    },
+    {
+      "countyName": "Hood",
+      "precincts": 17,
+      "voterRegistration": 52728,
+      "suspenseVoters": 2131,
+      "nonSuspenseVoters": 50597
+    },
+    {
+      "countyName": "Hopkins",
+      "precincts": 22,
+      "voterRegistration": 25317,
+      "suspenseVoters": 697,
+      "nonSuspenseVoters": 24620
+    },
+    {
+      "countyName": "Houston",
+      "precincts": 22,
+      "voterRegistration": 13691,
+      "suspenseVoters": 703,
+      "nonSuspenseVoters": 12988
+    },
+    {
+      "countyName": "Howard",
+      "precincts": 32,
+      "voterRegistration": 16618,
+      "suspenseVoters": 778,
+      "nonSuspenseVoters": 15840
+    },
+    {
+      "countyName": "Hudspeth",
+      "precincts": 9,
+      "voterRegistration": 2121,
+      "suspenseVoters": 96,
+      "nonSuspenseVoters": 2025
+    },
+    {
+      "countyName": "Hunt",
+      "precincts": 41,
+      "voterRegistration": 74838,
+      "suspenseVoters": 4543,
+      "nonSuspenseVoters": 70295
+    },
+    {
+      "countyName": "Hutchinson",
+      "precincts": 9,
+      "voterRegistration": 13169,
+      "suspenseVoters": 655,
+      "nonSuspenseVoters": 12514
+    },
+    {
+      "countyName": "Irion",
+      "precincts": 7,
+      "voterRegistration": 1205,
+      "suspenseVoters": 46,
+      "nonSuspenseVoters": 1159
+    },
+    {
+      "countyName": "Jack",
+      "precincts": 7,
+      "voterRegistration": 5811,
+      "suspenseVoters": 199,
+      "nonSuspenseVoters": 5612
+    },
+    {
+      "countyName": "Jackson",
+      "precincts": 10,
+      "voterRegistration": 9914,
+      "suspenseVoters": 406,
+      "nonSuspenseVoters": 9508
+    },
+    {
+      "countyName": "Jasper",
+      "precincts": 21,
+      "voterRegistration": 24411,
+      "suspenseVoters": 970,
+      "nonSuspenseVoters": 23441
+    },
+    {
+      "countyName": "Jeff Davis",
+      "precincts": 6,
+      "voterRegistration": 1546,
+      "suspenseVoters": 69,
+      "nonSuspenseVoters": 1477
+    },
+    {
+      "countyName": "Jefferson",
+      "precincts": 105,
+      "voterRegistration": 146331,
+      "suspenseVoters": 7470,
+      "nonSuspenseVoters": 138861
+    },
+    {
+      "countyName": "Jim Hogg",
+      "precincts": 6,
+      "voterRegistration": 3410,
+      "suspenseVoters": 156,
+      "nonSuspenseVoters": 3254
+    },
+    {
+      "countyName": "Jim Wells",
+      "precincts": 22,
+      "voterRegistration": 25864,
+      "suspenseVoters": 1029,
+      "nonSuspenseVoters": 24835
+    },
+    {
+      "countyName": "Johnson",
+      "precincts": 51,
+      "voterRegistration": 132109,
+      "suspenseVoters": 4950,
+      "nonSuspenseVoters": 127159
+    },
+    {
+      "countyName": "Jones",
+      "precincts": 5,
+      "voterRegistration": 10967,
+      "suspenseVoters": 389,
+      "nonSuspenseVoters": 10578
+    },
+    {
+      "countyName": "Karnes",
+      "precincts": 16,
+      "voterRegistration": 8210,
+      "suspenseVoters": 515,
+      "nonSuspenseVoters": 7695
+    },
+    {
+      "countyName": "Kaufman",
+      "precincts": 38,
+      "voterRegistration": 113504,
+      "suspenseVoters": 4421,
+      "nonSuspenseVoters": 109083
+    },
+    {
+      "countyName": "Kendall",
+      "precincts": 18,
+      "voterRegistration": 39850,
+      "suspenseVoters": 1276,
+      "nonSuspenseVoters": 38574
+    },
+    {
+      "countyName": "Kenedy",
+      "precincts": 7,
+      "voterRegistration": 268,
+      "suspenseVoters": 27,
+      "nonSuspenseVoters": 241
+    },
+    {
+      "countyName": "Kent",
+      "precincts": 7,
+      "voterRegistration": 601,
+      "suspenseVoters": 10,
+      "nonSuspenseVoters": 591
+    },
+    {
+      "countyName": "Kerr",
+      "precincts": 21,
+      "voterRegistration": 39293,
+      "suspenseVoters": 1611,
+      "nonSuspenseVoters": 37682
+    },
+    {
+      "countyName": "Kimble",
+      "precincts": 8,
+      "voterRegistration": 3312,
+      "suspenseVoters": 141,
+      "nonSuspenseVoters": 3171
+    },
+    {
+      "countyName": "King",
+      "precincts": 5,
+      "voterRegistration": 180,
+      "suspenseVoters": 7,
+      "nonSuspenseVoters": 173
+    },
+    {
+      "countyName": "Kinney",
+      "precincts": 5,
+      "voterRegistration": 2197,
+      "suspenseVoters": 121,
+      "nonSuspenseVoters": 2076
+    },
+    {
+      "countyName": "Kleberg",
+      "precincts": 20,
+      "voterRegistration": 17784,
+      "suspenseVoters": 1012,
+      "nonSuspenseVoters": 16772
+    },
+    {
+      "countyName": "Knox",
+      "precincts": 7,
+      "voterRegistration": 2244,
+      "suspenseVoters": 45,
+      "nonSuspenseVoters": 2199
+    },
+    {
+      "countyName": "Lamar",
+      "precincts": 27,
+      "voterRegistration": 33012,
+      "suspenseVoters": 1336,
+      "nonSuspenseVoters": 31676
+    },
+    {
+      "countyName": "Lamb",
+      "precincts": 11,
+      "voterRegistration": 7676,
+      "suspenseVoters": 333,
+      "nonSuspenseVoters": 7343
+    },
+    {
+      "countyName": "Lampasas",
+      "precincts": 11,
+      "voterRegistration": 17188,
+      "suspenseVoters": 51,
+      "nonSuspenseVoters": 17137
+    },
+    {
+      "countyName": "Lasalle",
+      "precincts": 7,
+      "voterRegistration": 4044,
+      "suspenseVoters": 219,
+      "nonSuspenseVoters": 3825
+    },
+    {
+      "countyName": "Lavaca",
+      "precincts": 12,
+      "voterRegistration": 14399,
+      "suspenseVoters": 406,
+      "nonSuspenseVoters": 13993
+    },
+    {
+      "countyName": "Lee",
+      "precincts": 16,
+      "voterRegistration": 12068,
+      "suspenseVoters": 815,
+      "nonSuspenseVoters": 11253
+    },
+    {
+      "countyName": "Leon",
+      "precincts": 15,
+      "voterRegistration": 12551,
+      "suspenseVoters": 314,
+      "nonSuspenseVoters": 12237
+    },
+    {
+      "countyName": "Liberty",
+      "precincts": 23,
+      "voterRegistration": 57715,
+      "suspenseVoters": 2902,
+      "nonSuspenseVoters": 54813
+    },
+    {
+      "countyName": "Limestone",
+      "precincts": 22,
+      "voterRegistration": 14376,
+      "suspenseVoters": 491,
+      "nonSuspenseVoters": 13885
+    },
+    {
+      "countyName": "Lipscomb",
+      "precincts": 10,
+      "voterRegistration": 1871,
+      "suspenseVoters": 62,
+      "nonSuspenseVoters": 1809
+    },
+    {
+      "countyName": "Live Oak",
+      "precincts": 15,
+      "voterRegistration": 7663,
+      "suspenseVoters": 899,
+      "nonSuspenseVoters": 6764
+    },
+    {
+      "countyName": "Llano",
+      "precincts": 10,
+      "voterRegistration": 18267,
+      "suspenseVoters": 721,
+      "nonSuspenseVoters": 17546
+    },
+    {
+      "countyName": "Loving",
+      "precincts": 5,
+      "voterRegistration": 149,
+      "suspenseVoters": 11,
+      "nonSuspenseVoters": 138
+    },
+    {
+      "countyName": "Lubbock",
+      "precincts": 100,
+      "voterRegistration": 199184,
+      "suspenseVoters": 11086,
+      "nonSuspenseVoters": 188098
+    },
+    {
+      "countyName": "Lynn",
+      "precincts": 10,
+      "voterRegistration": 4444,
+      "suspenseVoters": 243,
+      "nonSuspenseVoters": 4201
+    },
+    {
+      "countyName": "Madison",
+      "precincts": 5,
+      "voterRegistration": 8436,
+      "suspenseVoters": 436,
+      "nonSuspenseVoters": 8000
+    },
+    {
+      "countyName": "Marion",
+      "precincts": 11,
+      "voterRegistration": 7759,
+      "suspenseVoters": 441,
+      "nonSuspenseVoters": 7318
+    },
+    {
+      "countyName": "Martin",
+      "precincts": 7,
+      "voterRegistration": 3572,
+      "suspenseVoters": 147,
+      "nonSuspenseVoters": 3425
+    },
+    {
+      "countyName": "Mason",
+      "precincts": 5,
+      "voterRegistration": 3266,
+      "suspenseVoters": 90,
+      "nonSuspenseVoters": 3176
+    },
+    {
+      "countyName": "Matagorda",
+      "precincts": 19,
+      "voterRegistration": 22085,
+      "suspenseVoters": 1164,
+      "nonSuspenseVoters": 20921
+    },
+    {
+      "countyName": "Maverick",
+      "precincts": 17,
+      "voterRegistration": 36539,
+      "suspenseVoters": 1505,
+      "nonSuspenseVoters": 35034
+    },
+    {
+      "countyName": "Mcculloch",
+      "precincts": 10,
+      "voterRegistration": 5346,
+      "suspenseVoters": 317,
+      "nonSuspenseVoters": 5029
+    },
+    {
+      "countyName": "Mclennan",
+      "precincts": 96,
+      "voterRegistration": 158055,
+      "suspenseVoters": 29331,
+      "nonSuspenseVoters": 128724
+    },
+    {
+      "countyName": "Mcmullen",
+      "precincts": 5,
+      "voterRegistration": 657,
+      "suspenseVoters": 0,
+      "nonSuspenseVoters": 657
+    },
+    {
+      "countyName": "Medina",
+      "precincts": 16,
+      "voterRegistration": 39520,
+      "suspenseVoters": 1395,
+      "nonSuspenseVoters": 38125
+    },
+    {
+      "countyName": "Menard",
+      "precincts": 7,
+      "voterRegistration": 1473,
+      "suspenseVoters": 60,
+      "nonSuspenseVoters": 1413
+    },
+    {
+      "countyName": "Midland",
+      "precincts": 49,
+      "voterRegistration": 97651,
+      "suspenseVoters": 5246,
+      "nonSuspenseVoters": 92405
+    },
+    {
+      "countyName": "Milam",
+      "precincts": 12,
+      "voterRegistration": 17179,
+      "suspenseVoters": 704,
+      "nonSuspenseVoters": 16475
+    },
+    {
+      "countyName": "Mills",
+      "precincts": 8,
+      "voterRegistration": 3596,
+      "suspenseVoters": 173,
+      "nonSuspenseVoters": 3423
+    },
+    {
+      "countyName": "Mitchell",
+      "precincts": 5,
+      "voterRegistration": 4457,
+      "suspenseVoters": 200,
+      "nonSuspenseVoters": 4257
+    },
+    {
+      "countyName": "Montague",
+      "precincts": 16,
+      "voterRegistration": 15522,
+      "suspenseVoters": 223,
+      "nonSuspenseVoters": 15299
+    },
+    {
+      "countyName": "Montgomery",
+      "precincts": 122,
+      "voterRegistration": 469174,
+      "suspenseVoters": 47637,
+      "nonSuspenseVoters": 421537
+    },
+    {
+      "countyName": "Moore",
+      "precincts": 8,
+      "voterRegistration": 10080,
+      "suspenseVoters": 480,
+      "nonSuspenseVoters": 9600
+    },
+    {
+      "countyName": "Morris",
+      "precincts": 9,
+      "voterRegistration": 8731,
+      "suspenseVoters": 564,
+      "nonSuspenseVoters": 8167
+    },
+    {
+      "countyName": "Motley",
+      "precincts": 7,
+      "voterRegistration": 838,
+      "suspenseVoters": 24,
+      "nonSuspenseVoters": 814
+    },
+    {
+      "countyName": "Nacogdoches",
+      "precincts": 20,
+      "voterRegistration": 39731,
+      "suspenseVoters": 2706,
+      "nonSuspenseVoters": 37025
+    },
+    {
+      "countyName": "Navarro",
+      "precincts": 34,
+      "voterRegistration": 33638,
+      "suspenseVoters": 1436,
+      "nonSuspenseVoters": 32202
+    },
+    {
+      "countyName": "Newton",
+      "precincts": 24,
+      "voterRegistration": 9447,
+      "suspenseVoters": 392,
+      "nonSuspenseVoters": 9055
+    },
+    {
+      "countyName": "Nolan",
+      "precincts": 10,
+      "voterRegistration": 8746,
+      "suspenseVoters": 315,
+      "nonSuspenseVoters": 8431
+    },
+    {
+      "countyName": "Nueces",
+      "precincts": 130,
+      "voterRegistration": 216123,
+      "suspenseVoters": 14160,
+      "nonSuspenseVoters": 201963
+    },
+    {
+      "countyName": "Ochiltree",
+      "precincts": 5,
+      "voterRegistration": 5129,
+      "suspenseVoters": 253,
+      "nonSuspenseVoters": 4876
+    },
+    {
+      "countyName": "Oldham",
+      "precincts": 8,
+      "voterRegistration": 1370,
+      "suspenseVoters": 113,
+      "nonSuspenseVoters": 1257
+    },
+    {
+      "countyName": "Orange",
+      "precincts": 35,
+      "voterRegistration": 56206,
+      "suspenseVoters": 1752,
+      "nonSuspenseVoters": 54454
+    },
+    {
+      "countyName": "Palo Pinto",
+      "precincts": 30,
+      "voterRegistration": 20521,
+      "suspenseVoters": 758,
+      "nonSuspenseVoters": 19763
+    },
+    {
+      "countyName": "Panola",
+      "precincts": 20,
+      "voterRegistration": 17755,
+      "suspenseVoters": 679,
+      "nonSuspenseVoters": 17076
+    },
+    {
+      "countyName": "Parker",
+      "precincts": 47,
+      "voterRegistration": 129537,
+      "suspenseVoters": 6888,
+      "nonSuspenseVoters": 122649
+    },
+    {
+      "countyName": "Parmer",
+      "precincts": 8,
+      "voterRegistration": 4523,
+      "suspenseVoters": 201,
+      "nonSuspenseVoters": 4322
+    },
+    {
+      "countyName": "Pecos",
+      "precincts": 10,
+      "voterRegistration": 8319,
+      "suspenseVoters": 716,
+      "nonSuspenseVoters": 7603
+    },
+    {
+      "countyName": "Polk",
+      "precincts": 23,
+      "voterRegistration": 43352,
+      "suspenseVoters": 4150,
+      "nonSuspenseVoters": 39202
+    },
+    {
+      "countyName": "Potter",
+      "precincts": 25,
+      "voterRegistration": 57952,
+      "suspenseVoters": 4747,
+      "nonSuspenseVoters": 53205
+    },
+    {
+      "countyName": "Presidio",
+      "precincts": 8,
+      "voterRegistration": 4395,
+      "suspenseVoters": 238,
+      "nonSuspenseVoters": 4157
+    },
+    {
+      "countyName": "Rains",
+      "precincts": 9,
+      "voterRegistration": 9549,
+      "suspenseVoters": 434,
+      "nonSuspenseVoters": 9115
+    },
+    {
+      "countyName": "Randall",
+      "precincts": 32,
+      "voterRegistration": 100698,
+      "suspenseVoters": 5215,
+      "nonSuspenseVoters": 95483
+    },
+    {
+      "countyName": "Reagan",
+      "precincts": 5,
+      "voterRegistration": 1792,
+      "suspenseVoters": 116,
+      "nonSuspenseVoters": 1676
+    },
+    {
+      "countyName": "Real",
+      "precincts": 6,
+      "voterRegistration": 2670,
+      "suspenseVoters": 267,
+      "nonSuspenseVoters": 2403
+    },
+    {
+      "countyName": "Red River",
+      "precincts": 30,
+      "voterRegistration": 8547,
+      "suspenseVoters": 308,
+      "nonSuspenseVoters": 8239
+    },
+    {
+      "countyName": "Reeves",
+      "precincts": 10,
+      "voterRegistration": 7880,
+      "suspenseVoters": 488,
+      "nonSuspenseVoters": 7392
+    },
+    {
+      "countyName": "Refugio",
+      "precincts": 11,
+      "voterRegistration": 4895,
+      "suspenseVoters": 256,
+      "nonSuspenseVoters": 4639
+    },
+    {
+      "countyName": "Roberts",
+      "precincts": 6,
+      "voterRegistration": 718,
+      "suspenseVoters": 52,
+      "nonSuspenseVoters": 666
+    },
+    {
+      "countyName": "Robertson",
+      "precincts": 14,
+      "voterRegistration": 12589,
+      "suspenseVoters": 492,
+      "nonSuspenseVoters": 12097
+    },
+    {
+      "countyName": "Rockwall",
+      "precincts": 28,
+      "voterRegistration": 90726,
+      "suspenseVoters": 3333,
+      "nonSuspenseVoters": 87393
+    },
+    {
+      "countyName": "Runnels",
+      "precincts": 10,
+      "voterRegistration": 6748,
+      "suspenseVoters": 426,
+      "nonSuspenseVoters": 6322
+    },
+    {
+      "countyName": "Rusk",
+      "precincts": 23,
+      "voterRegistration": 34313,
+      "suspenseVoters": 1518,
+      "nonSuspenseVoters": 32795
+    },
+    {
+      "countyName": "Sabine",
+      "precincts": 9,
+      "voterRegistration": 8332,
+      "suspenseVoters": 332,
+      "nonSuspenseVoters": 8000
+    },
+    {
+      "countyName": "San Augustine",
+      "precincts": 12,
+      "voterRegistration": 5988,
+      "suspenseVoters": 289,
+      "nonSuspenseVoters": 5699
+    },
+    {
+      "countyName": "San Jacinto",
+      "precincts": 12,
+      "voterRegistration": 20745,
+      "suspenseVoters": 627,
+      "nonSuspenseVoters": 20118
+    },
+    {
+      "countyName": "San Patricio",
+      "precincts": 28,
+      "voterRegistration": 45066,
+      "suspenseVoters": 2030,
+      "nonSuspenseVoters": 43036
+    },
+    {
+      "countyName": "San Saba",
+      "precincts": 7,
+      "voterRegistration": 3758,
+      "suspenseVoters": 75,
+      "nonSuspenseVoters": 3683
+    },
+    {
+      "countyName": "Schleicher",
+      "precincts": 5,
+      "voterRegistration": 1749,
+      "suspenseVoters": 36,
+      "nonSuspenseVoters": 1713
+    },
+    {
+      "countyName": "Scurry",
+      "precincts": 12,
+      "voterRegistration": 9226,
+      "suspenseVoters": 340,
+      "nonSuspenseVoters": 8886
+    },
+    {
+      "countyName": "Shackelford",
+      "precincts": 8,
+      "voterRegistration": 2459,
+      "suspenseVoters": 168,
+      "nonSuspenseVoters": 2291
+    },
+    {
+      "countyName": "Shelby",
+      "precincts": 15,
+      "voterRegistration": 16329,
+      "suspenseVoters": 483,
+      "nonSuspenseVoters": 15846
+    },
+    {
+      "countyName": "Sherman",
+      "precincts": 8,
+      "voterRegistration": 1333,
+      "suspenseVoters": 25,
+      "nonSuspenseVoters": 1308
+    },
+    {
+      "countyName": "Smith",
+      "precincts": 142,
+      "voterRegistration": 160066,
+      "suspenseVoters": 2500,
+      "nonSuspenseVoters": 157566
+    },
+    {
+      "countyName": "Somervell",
+      "precincts": 5,
+      "voterRegistration": 7561,
+      "suspenseVoters": 319,
+      "nonSuspenseVoters": 7242
+    },
+    {
+      "countyName": "Starr",
+      "precincts": 15,
+      "voterRegistration": 36051,
+      "suspenseVoters": 1006,
+      "nonSuspenseVoters": 35045
+    },
+    {
+      "countyName": "Stephens",
+      "precincts": 6,
+      "voterRegistration": 5834,
+      "suspenseVoters": 274,
+      "nonSuspenseVoters": 5560
+    },
+    {
+      "countyName": "Sterling",
+      "precincts": 5,
+      "voterRegistration": 903,
+      "suspenseVoters": 24,
+      "nonSuspenseVoters": 879
+    },
+    {
+      "countyName": "Stonewall",
+      "precincts": 10,
+      "voterRegistration": 978,
+      "suspenseVoters": 0,
+      "nonSuspenseVoters": 978
+    },
+    {
+      "countyName": "Sutton",
+      "precincts": 5,
+      "voterRegistration": 2282,
+      "suspenseVoters": 90,
+      "nonSuspenseVoters": 2192
+    },
+    {
+      "countyName": "Swisher",
+      "precincts": 9,
+      "voterRegistration": 3834,
+      "suspenseVoters": 219,
+      "nonSuspenseVoters": 3615
+    },
+    {
+      "countyName": "Tarrant",
+      "precincts": 708,
+      "voterRegistration": 1306427,
+      "suspenseVoters": 73067,
+      "nonSuspenseVoters": 1233360
+    },
+    {
+      "countyName": "Taylor",
+      "precincts": 35,
+      "voterRegistration": 85075,
+      "suspenseVoters": 6549,
+      "nonSuspenseVoters": 78526
+    },
+    {
+      "countyName": "Terrell",
+      "precincts": 5,
+      "voterRegistration": 614,
+      "suspenseVoters": 22,
+      "nonSuspenseVoters": 592
+    },
+    {
+      "countyName": "Terry",
+      "precincts": 9,
+      "voterRegistration": 6420,
+      "suspenseVoters": 157,
+      "nonSuspenseVoters": 6263
+    },
+    {
+      "countyName": "Throckmorton",
+      "precincts": 6,
+      "voterRegistration": 1181,
+      "suspenseVoters": 37,
+      "nonSuspenseVoters": 1144
+    },
+    {
+      "countyName": "Titus",
+      "precincts": 21,
+      "voterRegistration": 17979,
+      "suspenseVoters": 550,
+      "nonSuspenseVoters": 17429
+    },
+    {
+      "countyName": "Tom Green",
+      "precincts": 36,
+      "voterRegistration": 72329,
+      "suspenseVoters": 3330,
+      "nonSuspenseVoters": 68999
+    },
+    {
+      "countyName": "Travis",
+      "precincts": 309,
+      "voterRegistration": 920645,
+      "suspenseVoters": 71004,
+      "nonSuspenseVoters": 849641
+    },
+    {
+      "countyName": "Trinity",
+      "precincts": 21,
+      "voterRegistration": 12255,
+      "suspenseVoters": 570,
+      "nonSuspenseVoters": 11685
+    },
+    {
+      "countyName": "Tyler",
+      "precincts": 18,
+      "voterRegistration": 14814,
+      "suspenseVoters": 556,
+      "nonSuspenseVoters": 14258
+    },
+    {
+      "countyName": "Upshur",
+      "precincts": 20,
+      "voterRegistration": 30686,
+      "suspenseVoters": 806,
+      "nonSuspenseVoters": 29880
+    },
+    {
+      "countyName": "Upton",
+      "precincts": 7,
+      "voterRegistration": 2079,
+      "suspenseVoters": 93,
+      "nonSuspenseVoters": 1986
+    },
+    {
+      "countyName": "Uvalde",
+      "precincts": 15,
+      "voterRegistration": 17599,
+      "suspenseVoters": 841,
+      "nonSuspenseVoters": 16758
+    },
+    {
+      "countyName": "Val Verde",
+      "precincts": 18,
+      "voterRegistration": 30490,
+      "suspenseVoters": 913,
+      "nonSuspenseVoters": 29577
+    },
+    {
+      "countyName": "Van Zandt",
+      "precincts": 19,
+      "voterRegistration": 42052,
+      "suspenseVoters": 1248,
+      "nonSuspenseVoters": 40804
+    },
+    {
+      "countyName": "Victoria",
+      "precincts": 36,
+      "voterRegistration": 57085,
+      "suspenseVoters": 2155,
+      "nonSuspenseVoters": 54930
+    },
+    {
+      "countyName": "Walker",
+      "precincts": 19,
+      "voterRegistration": 38969,
+      "suspenseVoters": 2001,
+      "nonSuspenseVoters": 36968
+    },
+    {
+      "countyName": "Waller",
+      "precincts": 27,
+      "voterRegistration": 44615,
+      "suspenseVoters": 2309,
+      "nonSuspenseVoters": 42306
+    },
+    {
+      "countyName": "Ward",
+      "precincts": 9,
+      "voterRegistration": 6946,
+      "suspenseVoters": 333,
+      "nonSuspenseVoters": 6613
+    },
+    {
+      "countyName": "Washington",
+      "precincts": 20,
+      "voterRegistration": 25667,
+      "suspenseVoters": 940,
+      "nonSuspenseVoters": 24727
+    },
+    {
+      "countyName": "Webb",
+      "precincts": 94,
+      "voterRegistration": 146897,
+      "suspenseVoters": 8979,
+      "nonSuspenseVoters": 137918
+    },
+    {
+      "countyName": "Wharton",
+      "precincts": 13,
+      "voterRegistration": 26568,
+      "suspenseVoters": 1039,
+      "nonSuspenseVoters": 25529
+    },
+    {
+      "countyName": "Wheeler",
+      "precincts": 5,
+      "voterRegistration": 3348,
+      "suspenseVoters": 163,
+      "nonSuspenseVoters": 3185
+    },
+    {
+      "countyName": "Wichita",
+      "precincts": 41,
+      "voterRegistration": 77505,
+      "suspenseVoters": 5316,
+      "nonSuspenseVoters": 72189
+    },
+    {
+      "countyName": "Wilbarger",
+      "precincts": 5,
+      "voterRegistration": 8192,
+      "suspenseVoters": 506,
+      "nonSuspenseVoters": 7686
+    },
+    {
+      "countyName": "Willacy",
+      "precincts": 18,
+      "voterRegistration": 11567,
+      "suspenseVoters": 192,
+      "nonSuspenseVoters": 11375
+    },
+    {
+      "countyName": "Williamson",
+      "precincts": 177,
+      "voterRegistration": 455181,
+      "suspenseVoters": 36050,
+      "nonSuspenseVoters": 419131
+    },
+    {
+      "countyName": "Wilson",
+      "precincts": 14,
+      "voterRegistration": 39755,
+      "suspenseVoters": 1114,
+      "nonSuspenseVoters": 38641
+    },
+    {
+      "countyName": "Winkler",
+      "precincts": 6,
+      "voterRegistration": 4130,
+      "suspenseVoters": 195,
+      "nonSuspenseVoters": 3935
+    },
+    {
+      "countyName": "Wise",
+      "precincts": 29,
+      "voterRegistration": 57826,
+      "suspenseVoters": 2324,
+      "nonSuspenseVoters": 55502
+    },
+    {
+      "countyName": "Wood",
+      "precincts": 15,
+      "voterRegistration": 35376,
+      "suspenseVoters": 3374,
+      "nonSuspenseVoters": 32002
+    },
+    {
+      "countyName": "Yoakum",
+      "precincts": 7,
+      "voterRegistration": 4323,
+      "suspenseVoters": 269,
+      "nonSuspenseVoters": 4054
+    },
+    {
+      "countyName": "Young",
+      "precincts": 9,
+      "voterRegistration": 12672,
+      "suspenseVoters": 240,
+      "nonSuspenseVoters": 12432
+    },
+    {
+      "countyName": "Zapata",
+      "precincts": 8,
+      "voterRegistration": 8119,
+      "suspenseVoters": 274,
+      "nonSuspenseVoters": 7845
+    },
+    {
+      "countyName": "Zavala",
+      "precincts": 7,
+      "voterRegistration": 7513,
+      "suspenseVoters": 287,
+      "nonSuspenseVoters": 7226
+    }
+  ]
+}
