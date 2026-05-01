@@ -7,7 +7,9 @@
   "level": "county",
   "position": "County Sheriff",
   "jurisdiction": "Marion County",
-  "county": ["Marion"],
+  "county": [
+    "Marion"
+  ],
   "termStart": "2025-01-01",
   "termEnd": "2029-01-01",
   "contactInfo": {
@@ -23,5 +25,13 @@
     "Maintain efficient county jail operations within budget",
     "Strengthen cooperation with Jefferson Police Department",
     "Support youth mentoring and crime prevention programs"
-  ]
+  ],
+  "sourceLinks": [
+    {
+      "title": "Public office website",
+      "url": "https://www.marioncountytx.org/sheriff"
+    }
+  ],
+  "reviewStatus": "needs_source_review",
+  "lastVerifiedAt": "2026-05-01"
 }

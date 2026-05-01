@@ -8,7 +8,9 @@
   "position": "School Board President",
   "district": "Place 1",
   "jurisdiction": "Chapel Hill ISD",
-  "county": ["Smith"],
+  "county": [
+    "Smith"
+  ],
   "termStart": "2024-05-01",
   "termEnd": "2028-05-01",
   "contactInfo": {
@@ -16,5 +18,13 @@
     "phone": "(903) 566-2441",
     "website": "https://www.chapelhillisd.org/board"
   },
-  "bio": "Steven Hargrove serves as President of the Chapel Hill ISD Board of Trustees. He works to ensure that Chapel Hill students receive a well-rounded education with strong academic and athletic programs."
+  "bio": "Steven Hargrove serves as President of the Chapel Hill ISD Board of Trustees. He works to ensure that Chapel Hill students receive a well-rounded education with strong academic and athletic programs.",
+  "sourceLinks": [
+    {
+      "title": "Public office website",
+      "url": "https://www.chapelhillisd.org/board"
+    }
+  ],
+  "reviewStatus": "needs_source_review",
+  "lastVerifiedAt": "2026-05-01"
 }

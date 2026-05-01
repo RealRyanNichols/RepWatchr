@@ -8,7 +8,9 @@
   "position": "School Board President",
   "district": "Place 1",
   "jurisdiction": "Tyler ISD",
-  "county": ["Smith"],
+  "county": [
+    "Smith"
+  ],
   "termStart": "2023-05-01",
   "termEnd": "2027-05-01",
   "contactInfo": {
@@ -16,5 +18,13 @@
     "phone": "(903) 262-1000",
     "website": "https://www.tylerisd.org/board"
   },
-  "bio": "Fritz Hager serves as the President of the Tyler ISD Board of Trustees. The board sets district policy, approves the budget and tax rate, and provides oversight of district operations and student achievement."
+  "bio": "Fritz Hager serves as the President of the Tyler ISD Board of Trustees. The board sets district policy, approves the budget and tax rate, and provides oversight of district operations and student achievement.",
+  "sourceLinks": [
+    {
+      "title": "Public office website",
+      "url": "https://www.tylerisd.org/board"
+    }
+  ],
+  "reviewStatus": "needs_source_review",
+  "lastVerifiedAt": "2026-05-01"
 }

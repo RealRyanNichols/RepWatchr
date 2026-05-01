@@ -8,7 +8,9 @@
   "position": "Vice President",
   "district": "Place 2",
   "jurisdiction": "Mineola ISD",
-  "county": ["Wood"],
+  "county": [
+    "Wood"
+  ],
   "termStart": "2024-05-01",
   "termEnd": "2028-05-01",
   "contactInfo": {
@@ -16,5 +18,13 @@
     "phone": "(903) 569-2448",
     "website": "https://www.mineolaisd.net/board"
   },
-  "bio": "Holly Vandergriff is Vice President of the Mineola ISD Board of Trustees. A bank officer and Mineola Foundation volunteer, she advocates for scholarship programs and strengthening ties between schools and local businesses."
+  "bio": "Holly Vandergriff is Vice President of the Mineola ISD Board of Trustees. A bank officer and Mineola Foundation volunteer, she advocates for scholarship programs and strengthening ties between schools and local businesses.",
+  "sourceLinks": [
+    {
+      "title": "Public office website",
+      "url": "https://www.mineolaisd.net/board"
+    }
+  ],
+  "reviewStatus": "needs_source_review",
+  "lastVerifiedAt": "2026-05-01"
 }

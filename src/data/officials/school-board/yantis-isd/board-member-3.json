@@ -8,7 +8,9 @@
   "position": "Secretary",
   "district": "Place 3",
   "jurisdiction": "Yantis ISD",
-  "county": ["Wood"],
+  "county": [
+    "Wood"
+  ],
   "termStart": "2024-05-01",
   "termEnd": "2028-05-01",
   "contactInfo": {
@@ -16,5 +18,13 @@
     "phone": "(903) 383-2462",
     "website": "https://www.yantisisd.net/board"
   },
-  "bio": "Dean Woolley serves as Secretary of the Yantis ISD Board of Trustees. A plumber and volunteer firefighter, he focuses on facility maintenance and keeping the district's budget balanced for taxpayers."
+  "bio": "Dean Woolley serves as Secretary of the Yantis ISD Board of Trustees. A plumber and volunteer firefighter, he focuses on facility maintenance and keeping the district's budget balanced for taxpayers.",
+  "sourceLinks": [
+    {
+      "title": "Public office website",
+      "url": "https://www.yantisisd.net/board"
+    }
+  ],
+  "reviewStatus": "needs_source_review",
+  "lastVerifiedAt": "2026-05-01"
 }

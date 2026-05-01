@@ -7,7 +7,9 @@
   "level": "county",
   "position": "District Attorney",
   "jurisdiction": "Smith County",
-  "county": ["Smith"],
+  "county": [
+    "Smith"
+  ],
   "termStart": "2023-01-01",
   "termEnd": "2027-01-01",
   "contactInfo": {
@@ -23,5 +25,13 @@
     "Support victims' rights throughout the legal process",
     "Run an efficient and transparent DA's office",
     "Collaborate with law enforcement to improve public safety"
-  ]
+  ],
+  "sourceLinks": [
+    {
+      "title": "Public office website",
+      "url": "https://www.smith-county.com/government/elected-officials/district-attorney"
+    }
+  ],
+  "reviewStatus": "needs_source_review",
+  "lastVerifiedAt": "2026-05-01"
 }

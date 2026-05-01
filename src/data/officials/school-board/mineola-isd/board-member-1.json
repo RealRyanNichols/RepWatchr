@@ -8,7 +8,9 @@
   "position": "School Board President",
   "district": "Place 1",
   "jurisdiction": "Mineola ISD",
-  "county": ["Wood"],
+  "county": [
+    "Wood"
+  ],
   "termStart": "2023-05-01",
   "termEnd": "2027-05-01",
   "contactInfo": {
@@ -16,5 +18,13 @@
     "phone": "(903) 569-2448",
     "website": "https://www.mineolaisd.net/board"
   },
-  "bio": "John Wheeler serves as President of the Mineola ISD Board of Trustees. A Wood County veterinarian and longtime Yellowjacket supporter, he is focused on expanding career-and-technology programs and maintaining strong district finances."
+  "bio": "John Wheeler serves as President of the Mineola ISD Board of Trustees. A Wood County veterinarian and longtime Yellowjacket supporter, he is focused on expanding career-and-technology programs and maintaining strong district finances.",
+  "sourceLinks": [
+    {
+      "title": "Public office website",
+      "url": "https://www.mineolaisd.net/board"
+    }
+  ],
+  "reviewStatus": "needs_source_review",
+  "lastVerifiedAt": "2026-05-01"
 }

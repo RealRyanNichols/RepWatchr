@@ -7,7 +7,9 @@
   "level": "city",
   "position": "Mayor",
   "jurisdiction": "City of Daingerfield",
-  "county": ["Morris"],
+  "county": [
+    "Morris"
+  ],
   "termStart": "2023-05-01",
   "termEnd": "2027-05-01",
   "contactInfo": {
@@ -26,5 +28,13 @@
     "Promote Daingerfield State Park and local tourism",
     "Maintain public safety services",
     "Enhance community programs and quality of life"
-  ]
+  ],
+  "sourceLinks": [
+    {
+      "title": "Public office website",
+      "url": "https://www.daingerfield.net"
+    }
+  ],
+  "reviewStatus": "needs_source_review",
+  "lastVerifiedAt": "2026-05-01"
 }

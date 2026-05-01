@@ -8,7 +8,9 @@
   "position": "City Council Member, District 1",
   "district": "District 1",
   "jurisdiction": "City of Longview",
-  "county": ["Gregg"],
+  "county": [
+    "Gregg"
+  ],
   "termStart": "2022-05-01",
   "termEnd": "2026-05-01",
   "contactInfo": {
@@ -16,5 +18,13 @@
     "phone": "(903) 237-1000",
     "website": "https://www.longviewtexas.gov/government/mayor-city-council"
   },
-  "bio": "Placeholder entry for the Longview City Council Member representing District 1. Longview operates under a council-manager form of government where council members set city policy."
+  "bio": "Placeholder entry for the Longview City Council Member representing District 1. Longview operates under a council-manager form of government where council members set city policy.",
+  "sourceLinks": [
+    {
+      "title": "Public office website",
+      "url": "https://www.longviewtexas.gov/government/mayor-city-council"
+    }
+  ],
+  "reviewStatus": "needs_source_review",
+  "lastVerifiedAt": "2026-05-01"
 }

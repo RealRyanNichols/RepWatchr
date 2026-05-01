@@ -8,7 +8,9 @@
   "position": "School Board Secretary",
   "district": "Place 3",
   "jurisdiction": "Winona ISD",
-  "county": ["Smith"],
+  "county": [
+    "Smith"
+  ],
   "termStart": "2024-05-01",
   "termEnd": "2028-05-01",
   "contactInfo": {
@@ -16,5 +18,13 @@
     "phone": "(903) 939-1200",
     "website": "https://www.winonaisd.org/board"
   },
-  "bio": "Billy Henderson serves as Secretary of the Winona ISD Board of Trustees. He supports responsible budgeting and community involvement in shaping the future of Winona schools."
+  "bio": "Billy Henderson serves as Secretary of the Winona ISD Board of Trustees. He supports responsible budgeting and community involvement in shaping the future of Winona schools.",
+  "sourceLinks": [
+    {
+      "title": "Public office website",
+      "url": "https://www.winonaisd.org/board"
+    }
+  ],
+  "reviewStatus": "needs_source_review",
+  "lastVerifiedAt": "2026-05-01"
 }

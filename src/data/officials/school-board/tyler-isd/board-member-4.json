@@ -8,7 +8,9 @@
   "position": "School Board Trustee",
   "district": "Place 4",
   "jurisdiction": "Tyler ISD",
-  "county": ["Smith"],
+  "county": [
+    "Smith"
+  ],
   "termStart": "2023-05-01",
   "termEnd": "2027-05-01",
   "contactInfo": {
@@ -16,5 +18,13 @@
     "phone": "(903) 262-1000",
     "website": "https://www.tylerisd.org/board"
   },
-  "bio": "Rev. Ralph Caraway serves as a Trustee on the Tyler ISD Board of Trustees. He is active in the Tyler community and serves on the board to support strong academic outcomes and responsible stewardship of district resources."
+  "bio": "Rev. Ralph Caraway serves as a Trustee on the Tyler ISD Board of Trustees. He is active in the Tyler community and serves on the board to support strong academic outcomes and responsible stewardship of district resources.",
+  "sourceLinks": [
+    {
+      "title": "Public office website",
+      "url": "https://www.tylerisd.org/board"
+    }
+  ],
+  "reviewStatus": "needs_source_review",
+  "lastVerifiedAt": "2026-05-01"
 }

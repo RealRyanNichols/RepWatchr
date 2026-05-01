@@ -8,7 +8,9 @@
   "position": "School Board Vice President",
   "district": "Place 2",
   "jurisdiction": "Alto ISD",
-  "county": ["Cherokee"],
+  "county": [
+    "Cherokee"
+  ],
   "termStart": "2024-05-01",
   "termEnd": "2028-05-01",
   "contactInfo": {
@@ -16,5 +18,13 @@
     "phone": "(936) 858-7111",
     "website": "https://www.altoisd.org/board"
   },
-  "bio": "Teresa Moseley serves as the Vice President of the Alto ISD Board of Trustees. She is passionate about supporting rural students and expanding access to technology in the classroom."
+  "bio": "Teresa Moseley serves as the Vice President of the Alto ISD Board of Trustees. She is passionate about supporting rural students and expanding access to technology in the classroom.",
+  "sourceLinks": [
+    {
+      "title": "Public office website",
+      "url": "https://www.altoisd.org/board"
+    }
+  ],
+  "reviewStatus": "needs_source_review",
+  "lastVerifiedAt": "2026-05-01"
 }

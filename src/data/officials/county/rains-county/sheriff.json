@@ -7,7 +7,9 @@
   "level": "county",
   "position": "County Sheriff",
   "jurisdiction": "Rains County",
-  "county": ["Rains"],
+  "county": [
+    "Rains"
+  ],
   "termStart": "2025-01-01",
   "termEnd": "2029-01-01",
   "contactInfo": {
@@ -23,5 +25,13 @@
     "Protect fishing tournament visitors and seasonal residents",
     "Keep Rains County drug free through proactive enforcement",
     "Run an efficient and fiscally responsible sheriff's office"
-  ]
+  ],
+  "sourceLinks": [
+    {
+      "title": "Public office website",
+      "url": "https://www.rainscountytx.com/sheriff"
+    }
+  ],
+  "reviewStatus": "needs_source_review",
+  "lastVerifiedAt": "2026-05-01"
 }

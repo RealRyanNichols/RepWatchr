@@ -8,7 +8,9 @@
   "position": "Commissioner, Precinct 4",
   "district": "Precinct 4",
   "jurisdiction": "Gregg County",
-  "county": ["Gregg"],
+  "county": [
+    "Gregg"
+  ],
   "termStart": "2023-01-01",
   "termEnd": "2027-01-01",
   "contactInfo": {
@@ -23,5 +25,13 @@
     "Ensure fair representation for all Precinct 4 residents",
     "Support community programs and services",
     "Promote accountability in county spending"
-  ]
+  ],
+  "sourceLinks": [
+    {
+      "title": "Public office website",
+      "url": "https://www.co.gregg.tx.us/page/gregg.Commissioners"
+    }
+  ],
+  "reviewStatus": "needs_source_review",
+  "lastVerifiedAt": "2026-05-01"
 }

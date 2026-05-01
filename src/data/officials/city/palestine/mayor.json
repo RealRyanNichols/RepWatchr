@@ -7,7 +7,9 @@
   "level": "city",
   "position": "Mayor",
   "jurisdiction": "City of Palestine",
-  "county": ["Anderson"],
+  "county": [
+    "Anderson"
+  ],
   "termStart": "2023-05-01",
   "termEnd": "2027-05-01",
   "contactInfo": {
@@ -26,5 +28,13 @@
     "Improve city streets and infrastructure",
     "Attract new businesses and employers to Palestine",
     "Enhance public safety and community programs"
-  ]
+  ],
+  "sourceLinks": [
+    {
+      "title": "Public office website",
+      "url": "https://www.palestinetx.gov"
+    }
+  ],
+  "reviewStatus": "needs_source_review",
+  "lastVerifiedAt": "2026-05-01"
 }

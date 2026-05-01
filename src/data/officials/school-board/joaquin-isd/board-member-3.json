@@ -8,7 +8,9 @@
   "position": "Secretary",
   "district": "Place 3",
   "jurisdiction": "Joaquin ISD",
-  "county": ["Shelby"],
+  "county": [
+    "Shelby"
+  ],
   "termStart": "2024-05-01",
   "termEnd": "2028-05-01",
   "contactInfo": {
@@ -16,5 +18,13 @@
     "phone": "(936) 269-3128",
     "website": "https://www.joaquinisd.net/board"
   },
-  "bio": "Michael Ainsworth serves as Secretary of the Joaquin ISD Board of Trustees. A retired law-enforcement officer, he emphasizes campus security, discipline policies, and mentorship programs for at-risk students."
+  "bio": "Michael Ainsworth serves as Secretary of the Joaquin ISD Board of Trustees. A retired law-enforcement officer, he emphasizes campus security, discipline policies, and mentorship programs for at-risk students.",
+  "sourceLinks": [
+    {
+      "title": "Public office website",
+      "url": "https://www.joaquinisd.net/board"
+    }
+  ],
+  "reviewStatus": "needs_source_review",
+  "lastVerifiedAt": "2026-05-01"
 }

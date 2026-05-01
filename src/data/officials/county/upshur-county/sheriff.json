@@ -7,7 +7,9 @@
   "level": "county",
   "position": "County Sheriff",
   "jurisdiction": "Upshur County",
-  "county": ["Upshur"],
+  "county": [
+    "Upshur"
+  ],
   "termStart": "2025-01-01",
   "termEnd": "2029-01-01",
   "contactInfo": {
@@ -23,5 +25,13 @@
     "Enhance property crime investigation capabilities",
     "Ensure efficient and humane county jail operations",
     "Foster positive community relations through outreach events"
-  ]
+  ],
+  "sourceLinks": [
+    {
+      "title": "Public office website",
+      "url": "https://www.upshurcountytx.org/sheriff"
+    }
+  ],
+  "reviewStatus": "needs_source_review",
+  "lastVerifiedAt": "2026-05-01"
 }

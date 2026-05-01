@@ -7,7 +7,9 @@
   "level": "city",
   "position": "Mayor",
   "jurisdiction": "City of Nacogdoches",
-  "county": ["Nacogdoches"],
+  "county": [
+    "Nacogdoches"
+  ],
   "termStart": "2023-05-01",
   "termEnd": "2027-05-01",
   "contactInfo": {
@@ -26,5 +28,13 @@
     "Improve city streets and infrastructure",
     "Support downtown revitalization efforts",
     "Maintain strong public safety services"
-  ]
+  ],
+  "sourceLinks": [
+    {
+      "title": "Public office website",
+      "url": "https://www.nactx.us"
+    }
+  ],
+  "reviewStatus": "needs_source_review",
+  "lastVerifiedAt": "2026-05-01"
 }

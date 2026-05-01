@@ -8,7 +8,9 @@
   "position": "Vice President",
   "district": "Place 2",
   "jurisdiction": "Pittsburg ISD",
-  "county": ["Camp"],
+  "county": [
+    "Camp"
+  ],
   "termStart": "2024-05-01",
   "termEnd": "2028-05-01",
   "contactInfo": {
@@ -16,5 +18,13 @@
     "phone": "(903) 856-3628",
     "website": "https://www.pittsburgisd.net/board"
   },
-  "bio": "Anita Caldwell is Vice President of the Pittsburg ISD Board of Trustees. A pediatric nurse and community volunteer, she focuses on student health services and special-education support."
+  "bio": "Anita Caldwell is Vice President of the Pittsburg ISD Board of Trustees. A pediatric nurse and community volunteer, she focuses on student health services and special-education support.",
+  "sourceLinks": [
+    {
+      "title": "Public office website",
+      "url": "https://www.pittsburgisd.net/board"
+    }
+  ],
+  "reviewStatus": "needs_source_review",
+  "lastVerifiedAt": "2026-05-01"
 }

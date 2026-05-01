@@ -7,7 +7,9 @@
   "level": "county",
   "position": "County Sheriff",
   "jurisdiction": "Newton County",
-  "county": ["Newton"],
+  "county": [
+    "Newton"
+  ],
   "termStart": "2025-01-01",
   "termEnd": "2029-01-01",
   "contactInfo": {
@@ -23,5 +25,13 @@
     "Coordinate disaster response for flood-prone areas of the county",
     "Maintain strong cooperation with Louisiana law enforcement",
     "Combat illegal activity on remote county roads and timber lands"
-  ]
+  ],
+  "sourceLinks": [
+    {
+      "title": "Public office website",
+      "url": "https://www.newtoncountytx.gov/sheriff"
+    }
+  ],
+  "reviewStatus": "needs_source_review",
+  "lastVerifiedAt": "2026-05-01"
 }

@@ -7,7 +7,9 @@
   "level": "county",
   "position": "County Sheriff",
   "jurisdiction": "Houston County",
-  "county": ["Houston"],
+  "county": [
+    "Houston"
+  ],
   "termStart": "2025-01-01",
   "termEnd": "2029-01-01",
   "contactInfo": {
@@ -23,5 +25,13 @@
     "Maintain the county jail within state compliance standards",
     "Coordinate with the Davy Crockett National Forest law enforcement",
     "Provide quick emergency response across the county"
-  ]
+  ],
+  "sourceLinks": [
+    {
+      "title": "Public office website",
+      "url": "https://www.houstoncountytx.org/sheriff"
+    }
+  ],
+  "reviewStatus": "needs_source_review",
+  "lastVerifiedAt": "2026-05-01"
 }

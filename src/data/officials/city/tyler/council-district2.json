@@ -8,7 +8,9 @@
   "position": "City Council Member, District 2",
   "district": "District 2",
   "jurisdiction": "City of Tyler",
-  "county": ["Smith"],
+  "county": [
+    "Smith"
+  ],
   "termStart": "2023-05-01",
   "termEnd": "2027-05-01",
   "contactInfo": {
@@ -16,5 +18,13 @@
     "phone": "(903) 531-1100",
     "website": "https://www.tylertexas.com/government/mayor-city-council"
   },
-  "bio": "Placeholder entry for the Tyler City Council Member representing District 2. Tyler operates under a council-manager form of government where council members set policy and the city manager handles day-to-day operations."
+  "bio": "Placeholder entry for the Tyler City Council Member representing District 2. Tyler operates under a council-manager form of government where council members set policy and the city manager handles day-to-day operations.",
+  "sourceLinks": [
+    {
+      "title": "Public office website",
+      "url": "https://www.tylertexas.com/government/mayor-city-council"
+    }
+  ],
+  "reviewStatus": "needs_source_review",
+  "lastVerifiedAt": "2026-05-01"
 }

@@ -8,7 +8,9 @@
   "position": "School Board President",
   "district": "Place 1",
   "jurisdiction": "Huntington ISD",
-  "county": ["Angelina"],
+  "county": [
+    "Angelina"
+  ],
   "termStart": "2024-05-01",
   "termEnd": "2028-05-01",
   "contactInfo": {
@@ -16,5 +18,13 @@
     "phone": "(936) 876-4284",
     "website": "https://www.huntingtonisd.org/board"
   },
-  "bio": "Travis Barnett serves as the President of the Huntington ISD Board of Trustees. He is focused on supporting the district's growth while preserving the strong sense of community that defines Huntington schools."
+  "bio": "Travis Barnett serves as the President of the Huntington ISD Board of Trustees. He is focused on supporting the district's growth while preserving the strong sense of community that defines Huntington schools.",
+  "sourceLinks": [
+    {
+      "title": "Public office website",
+      "url": "https://www.huntingtonisd.org/board"
+    }
+  ],
+  "reviewStatus": "needs_source_review",
+  "lastVerifiedAt": "2026-05-01"
 }

@@ -8,7 +8,9 @@
   "position": "Commissioner, Precinct 3",
   "district": "Precinct 3",
   "jurisdiction": "Gregg County",
-  "county": ["Gregg"],
+  "county": [
+    "Gregg"
+  ],
   "termStart": "2023-01-01",
   "termEnd": "2027-01-01",
   "contactInfo": {
@@ -23,5 +25,13 @@
     "Keep county government fiscally responsible",
     "Support public safety funding",
     "Promote economic growth in Gregg County"
-  ]
+  ],
+  "sourceLinks": [
+    {
+      "title": "Public office website",
+      "url": "https://www.co.gregg.tx.us/page/gregg.Commissioners"
+    }
+  ],
+  "reviewStatus": "needs_source_review",
+  "lastVerifiedAt": "2026-05-01"
 }

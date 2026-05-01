@@ -8,7 +8,9 @@
   "position": "Secretary",
   "district": "Place 3",
   "jurisdiction": "Rains ISD",
-  "county": ["Rains"],
+  "county": [
+    "Rains"
+  ],
   "termStart": "2024-05-01",
   "termEnd": "2028-05-01",
   "contactInfo": {
@@ -16,5 +18,13 @@
     "phone": "(903) 473-2222",
     "website": "https://www.rainsisd.org/board"
   },
-  "bio": "Walter Dean serves as Secretary of the Rains ISD Board of Trustees. A retired game warden and outdoor-education enthusiast, he supports environmental-science programs and responsible budget stewardship for the district."
+  "bio": "Walter Dean serves as Secretary of the Rains ISD Board of Trustees. A retired game warden and outdoor-education enthusiast, he supports environmental-science programs and responsible budget stewardship for the district.",
+  "sourceLinks": [
+    {
+      "title": "Public office website",
+      "url": "https://www.rainsisd.org/board"
+    }
+  ],
+  "reviewStatus": "needs_source_review",
+  "lastVerifiedAt": "2026-05-01"
 }

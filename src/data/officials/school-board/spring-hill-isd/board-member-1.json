@@ -8,7 +8,9 @@
   "position": "School Board President",
   "district": "Place 1",
   "jurisdiction": "Spring Hill ISD",
-  "county": ["Gregg"],
+  "county": [
+    "Gregg"
+  ],
   "termStart": "2024-05-01",
   "termEnd": "2028-05-01",
   "contactInfo": {
@@ -16,5 +18,13 @@
     "phone": "(903) 663-0007",
     "website": "https://www.springhillisd.net/board"
   },
-  "bio": "Michael Garrett serves as President of the Spring Hill ISD Board of Trustees. He is focused on strategic growth planning as the district continues to attract new families to the Longview area."
+  "bio": "Michael Garrett serves as President of the Spring Hill ISD Board of Trustees. He is focused on strategic growth planning as the district continues to attract new families to the Longview area.",
+  "sourceLinks": [
+    {
+      "title": "Public office website",
+      "url": "https://www.springhillisd.net/board"
+    }
+  ],
+  "reviewStatus": "needs_source_review",
+  "lastVerifiedAt": "2026-05-01"
 }

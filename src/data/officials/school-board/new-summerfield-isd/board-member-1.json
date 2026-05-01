@@ -8,7 +8,9 @@
   "position": "School Board President",
   "district": "Place 1",
   "jurisdiction": "New Summerfield ISD",
-  "county": ["Cherokee"],
+  "county": [
+    "Cherokee"
+  ],
   "termStart": "2023-05-01",
   "termEnd": "2027-05-01",
   "contactInfo": {
@@ -16,5 +18,13 @@
     "phone": "(903) 726-3306",
     "website": "https://www.newsummerfieldisd.net/board"
   },
-  "bio": "Curtis Langley serves as the President of the New Summerfield ISD Board of Trustees. He is dedicated to ensuring the district provides strong foundational education and a safe learning environment for every student."
+  "bio": "Curtis Langley serves as the President of the New Summerfield ISD Board of Trustees. He is dedicated to ensuring the district provides strong foundational education and a safe learning environment for every student.",
+  "sourceLinks": [
+    {
+      "title": "Public office website",
+      "url": "https://www.newsummerfieldisd.net/board"
+    }
+  ],
+  "reviewStatus": "needs_source_review",
+  "lastVerifiedAt": "2026-05-01"
 }

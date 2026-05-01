@@ -8,7 +8,9 @@
   "position": "School Board President",
   "district": "Place 1",
   "jurisdiction": "Ore City ISD",
-  "county": ["Upshur"],
+  "county": [
+    "Upshur"
+  ],
   "termStart": "2023-05-01",
   "termEnd": "2027-05-01",
   "contactInfo": {
@@ -16,5 +18,13 @@
     "phone": "(903) 968-2525",
     "website": "https://www.orecityisd.org/board"
   },
-  "bio": "Danny Wilbanks serves as President of the Ore City ISD Board of Trustees. A welder and small-business owner, he is dedicated to vocational education and ensuring Ore City students have pathways to good-paying careers."
+  "bio": "Danny Wilbanks serves as President of the Ore City ISD Board of Trustees. A welder and small-business owner, he is dedicated to vocational education and ensuring Ore City students have pathways to good-paying careers.",
+  "sourceLinks": [
+    {
+      "title": "Public office website",
+      "url": "https://www.orecityisd.org/board"
+    }
+  ],
+  "reviewStatus": "needs_source_review",
+  "lastVerifiedAt": "2026-05-01"
 }

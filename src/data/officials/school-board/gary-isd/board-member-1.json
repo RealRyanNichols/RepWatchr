@@ -8,7 +8,9 @@
   "position": "School Board President",
   "district": "Place 1",
   "jurisdiction": "Gary ISD",
-  "county": ["Panola"],
+  "county": [
+    "Panola"
+  ],
   "termStart": "2024-05-01",
   "termEnd": "2028-05-01",
   "contactInfo": {
@@ -16,5 +18,13 @@
     "phone": "(903) 685-2291",
     "website": "https://www.garyisd.net/board"
   },
-  "bio": "Ronnie Massey serves as President of the Gary ISD Board of Trustees. A third-generation Panola County farmer, he works to ensure the small rural district maintains competitive academics and strong community ties."
+  "bio": "Ronnie Massey serves as President of the Gary ISD Board of Trustees. A third-generation Panola County farmer, he works to ensure the small rural district maintains competitive academics and strong community ties.",
+  "sourceLinks": [
+    {
+      "title": "Public office website",
+      "url": "https://www.garyisd.net/board"
+    }
+  ],
+  "reviewStatus": "needs_source_review",
+  "lastVerifiedAt": "2026-05-01"
 }

@@ -7,7 +7,9 @@
   "level": "county",
   "position": "County Sheriff",
   "jurisdiction": "Wood County",
-  "county": ["Wood"],
+  "county": [
+    "Wood"
+  ],
   "termStart": "2025-01-01",
   "termEnd": "2029-01-01",
   "contactInfo": {
@@ -23,5 +25,13 @@
     "Maintain aggressive drug enforcement on county highways",
     "Keep the Wood County Jail safe, secure, and within budget",
     "Expand use of technology for crime prevention and solving"
-  ]
+  ],
+  "sourceLinks": [
+    {
+      "title": "Public office website",
+      "url": "https://www.mywoodcounty.com/sheriff"
+    }
+  ],
+  "reviewStatus": "needs_source_review",
+  "lastVerifiedAt": "2026-05-01"
 }

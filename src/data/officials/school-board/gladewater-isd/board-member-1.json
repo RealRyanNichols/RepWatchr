@@ -8,7 +8,9 @@
   "position": "School Board President",
   "district": "Place 1",
   "jurisdiction": "Gladewater ISD",
-  "county": ["Gregg"],
+  "county": [
+    "Gregg"
+  ],
   "termStart": "2023-05-01",
   "termEnd": "2027-05-01",
   "contactInfo": {
@@ -16,5 +18,13 @@
     "phone": "(903) 845-6991",
     "website": "https://www.gladewaterisd.com/board"
   },
-  "bio": "Ronnie Harper serves as President of the Gladewater ISD Board of Trustees. He is dedicated to strengthening Gladewater schools and ensuring students have access to quality instruction and facilities."
+  "bio": "Ronnie Harper serves as President of the Gladewater ISD Board of Trustees. He is dedicated to strengthening Gladewater schools and ensuring students have access to quality instruction and facilities.",
+  "sourceLinks": [
+    {
+      "title": "Public office website",
+      "url": "https://www.gladewaterisd.com/board"
+    }
+  ],
+  "reviewStatus": "needs_source_review",
+  "lastVerifiedAt": "2026-05-01"
 }

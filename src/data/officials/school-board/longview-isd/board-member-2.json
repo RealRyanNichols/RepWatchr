@@ -8,7 +8,9 @@
   "position": "School Board Trustee",
   "district": "Place 2",
   "jurisdiction": "Longview ISD",
-  "county": ["Gregg County"],
+  "county": [
+    "Gregg County"
+  ],
   "termStart": "2023-05-01",
   "termEnd": "2026-05-01",
   "contactInfo": {
@@ -26,9 +28,21 @@
   "occupation": "Attorney",
   "employer": "Miller Fair Henry PLLC",
   "education": [
-    {"institution": "Longview High School", "degree": "Diploma", "graduated": true},
-    {"institution": "Texas Christian University", "degree": "Undergraduate", "graduated": true},
-    {"institution": "SMU Dedman School of Law", "degree": "J.D.", "graduated": true}
+    {
+      "institution": "Longview High School",
+      "degree": "Diploma",
+      "graduated": true
+    },
+    {
+      "institution": "Texas Christian University",
+      "degree": "Undergraduate",
+      "graduated": true
+    },
+    {
+      "institution": "SMU Dedman School of Law",
+      "degree": "J.D.",
+      "graduated": true
+    }
   ],
   "affiliations": [
     "Miller Fair Henry PLLC",
@@ -57,16 +71,43 @@
     "genderPolicy": "REQUIRES_FURTHER_EVIDENCE"
   },
   "notableVotes": [
-    {"meeting": "Aug 2023", "item": "Tax rate reduction from $1.3276 to $1.1422", "outcome": "Passed"},
-    {"meeting": "Feb 2025", "item": "$2.77M surveillance infrastructure contract with Digi Security Systems", "outcome": "Approved"},
-    {"meeting": "2024", "item": "Dr. Marla Sheppard superintendent hire", "outcome": "Approved (publicly supportive)"}
+    {
+      "meeting": "Aug 2023",
+      "item": "Tax rate reduction from $1.3276 to $1.1422",
+      "outcome": "Passed"
+    },
+    {
+      "meeting": "Feb 2025",
+      "item": "$2.77M surveillance infrastructure contract with Digi Security Systems",
+      "outcome": "Approved"
+    },
+    {
+      "meeting": "2024",
+      "item": "Dr. Marla Sheppard superintendent hire",
+      "outcome": "Approved (publicly supportive)"
+    }
   ],
   "sources": [
-    {"name": "Miller Fair Henry attorney bio", "url": "https://millerfairhenry.com/attorneys/brett-miller/"},
-    {"name": "Longview News-Journal, 2020 filing", "url": "https://www.news-journal.com/news/local/attorney-files-to-challenge-longview-isd-place-2-trustee-ava-welge/article_d7c8606e-4f55-11ea-8b3b-2399070be9ec.html"},
-    {"name": "Longview News-Journal, 2023 no opponents", "url": "https://www.news-journal.com/news/education/longview-candidates-draw-no-opponents-for-may-elections/article_90618af2-af0b-11ed-844b-c75431d8c6c9.html"},
-    {"name": "LISD Board honored, Jan 2025", "url": "https://w3.lisd.org/district/news/01132025-board-honored"},
-    {"name": "LISD BoardBook Premier", "url": "https://meetings.boardbook.org/public/Organization/2235"}
+    {
+      "name": "Miller Fair Henry attorney bio",
+      "url": "https://millerfairhenry.com/attorneys/brett-miller/"
+    },
+    {
+      "name": "Longview News-Journal, 2020 filing",
+      "url": "https://www.news-journal.com/news/local/attorney-files-to-challenge-longview-isd-place-2-trustee-ava-welge/article_d7c8606e-4f55-11ea-8b3b-2399070be9ec.html"
+    },
+    {
+      "name": "Longview News-Journal, 2023 no opponents",
+      "url": "https://www.news-journal.com/news/education/longview-candidates-draw-no-opponents-for-may-elections/article_90618af2-af0b-11ed-844b-c75431d8c6c9.html"
+    },
+    {
+      "name": "LISD Board honored, Jan 2025",
+      "url": "https://w3.lisd.org/district/news/01132025-board-honored"
+    },
+    {
+      "name": "LISD BoardBook Premier",
+      "url": "https://meetings.boardbook.org/public/Organization/2235"
+    }
   ],
   "researchGaps": [
     "Gregg CAD property records pull",
@@ -79,5 +120,33 @@
     "BoardBook attendance and vote-by-vote record 2020-2026",
     "Confirm 2026 filing status with LISD elections coordinator (903-381-2200)"
   ],
-  "lastUpdated": "2026-04-16"
+  "lastUpdated": "2026-04-16",
+  "sourceLinks": [
+    {
+      "title": "Public office website",
+      "url": "https://w3.lisd.org"
+    },
+    {
+      "title": "Miller Fair Henry attorney bio",
+      "url": "https://millerfairhenry.com/attorneys/brett-miller/"
+    },
+    {
+      "title": "Longview News-Journal, 2020 filing",
+      "url": "https://www.news-journal.com/news/local/attorney-files-to-challenge-longview-isd-place-2-trustee-ava-welge/article_d7c8606e-4f55-11ea-8b3b-2399070be9ec.html"
+    },
+    {
+      "title": "Longview News-Journal, 2023 no opponents",
+      "url": "https://www.news-journal.com/news/education/longview-candidates-draw-no-opponents-for-may-elections/article_90618af2-af0b-11ed-844b-c75431d8c6c9.html"
+    },
+    {
+      "title": "LISD Board honored, Jan 2025",
+      "url": "https://w3.lisd.org/district/news/01132025-board-honored"
+    },
+    {
+      "title": "LISD BoardBook Premier",
+      "url": "https://meetings.boardbook.org/public/Organization/2235"
+    }
+  ],
+  "reviewStatus": "needs_source_review",
+  "lastVerifiedAt": "2026-05-01"
 }

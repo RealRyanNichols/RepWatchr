@@ -8,7 +8,9 @@
   "position": "Secretary",
   "district": "Place 3",
   "jurisdiction": "Gilmer ISD",
-  "county": ["Upshur"],
+  "county": [
+    "Upshur"
+  ],
   "termStart": "2023-05-01",
   "termEnd": "2027-05-01",
   "contactInfo": {
@@ -16,5 +18,13 @@
     "phone": "(903) 841-7400",
     "website": "https://www.gilmerisd.org/board"
   },
-  "bio": "Reginald Moss serves as Secretary of the Gilmer ISD Board of Trustees. A mechanical engineer at a local plant, he promotes STEM initiatives and technology integration across Gilmer campuses."
+  "bio": "Reginald Moss serves as Secretary of the Gilmer ISD Board of Trustees. A mechanical engineer at a local plant, he promotes STEM initiatives and technology integration across Gilmer campuses.",
+  "sourceLinks": [
+    {
+      "title": "Public office website",
+      "url": "https://www.gilmerisd.org/board"
+    }
+  ],
+  "reviewStatus": "needs_source_review",
+  "lastVerifiedAt": "2026-05-01"
 }

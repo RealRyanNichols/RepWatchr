@@ -8,7 +8,9 @@
   "position": "School Board President",
   "district": "Place 1",
   "jurisdiction": "Arp ISD",
-  "county": ["Smith"],
+  "county": [
+    "Smith"
+  ],
   "termStart": "2024-05-01",
   "termEnd": "2028-05-01",
   "contactInfo": {
@@ -16,5 +18,13 @@
     "phone": "(903) 859-8482",
     "website": "https://www.arpisd.org/board"
   },
-  "bio": "Danny Cole serves as President of the Arp ISD Board of Trustees. He is focused on strengthening academic outcomes and providing Arp students with the resources they need to succeed."
+  "bio": "Danny Cole serves as President of the Arp ISD Board of Trustees. He is focused on strengthening academic outcomes and providing Arp students with the resources they need to succeed.",
+  "sourceLinks": [
+    {
+      "title": "Public office website",
+      "url": "https://www.arpisd.org/board"
+    }
+  ],
+  "reviewStatus": "needs_source_review",
+  "lastVerifiedAt": "2026-05-01"
 }

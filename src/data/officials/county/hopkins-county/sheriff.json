@@ -7,7 +7,9 @@
   "level": "county",
   "position": "County Sheriff",
   "jurisdiction": "Hopkins County",
-  "county": ["Hopkins"],
+  "county": [
+    "Hopkins"
+  ],
   "termStart": "2025-01-01",
   "termEnd": "2029-01-01",
   "contactInfo": {
@@ -23,5 +25,13 @@
     "Expand school resource officer partnerships",
     "Increase use of social media for community alerts and crime tips",
     "Recruit top-quality deputies to serve Hopkins County"
-  ]
+  ],
+  "sourceLinks": [
+    {
+      "title": "Public office website",
+      "url": "https://www.hopkinscountytx.org/sheriff"
+    }
+  ],
+  "reviewStatus": "needs_source_review",
+  "lastVerifiedAt": "2026-05-01"
 }

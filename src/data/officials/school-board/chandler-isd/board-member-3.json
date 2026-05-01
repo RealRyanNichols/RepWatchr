@@ -8,7 +8,9 @@
   "position": "School Board Secretary",
   "district": "Place 3",
   "jurisdiction": "Chandler ISD",
-  "county": ["Henderson"],
+  "county": [
+    "Henderson"
+  ],
   "termStart": "2023-05-01",
   "termEnd": "2027-05-01",
   "contactInfo": {
@@ -16,5 +18,13 @@
     "phone": "(903) 849-2461",
     "website": "https://www.chandlerisd.org/board"
   },
-  "bio": "Donna Pinkston serves as the Secretary of the Chandler ISD Board of Trustees. She ensures meeting minutes and official records are accurate and available to district stakeholders."
+  "bio": "Donna Pinkston serves as the Secretary of the Chandler ISD Board of Trustees. She ensures meeting minutes and official records are accurate and available to district stakeholders.",
+  "sourceLinks": [
+    {
+      "title": "Public office website",
+      "url": "https://www.chandlerisd.org/board"
+    }
+  ],
+  "reviewStatus": "needs_source_review",
+  "lastVerifiedAt": "2026-05-01"
 }

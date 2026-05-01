@@ -8,7 +8,9 @@
   "position": "School Board President",
   "district": "Place 1",
   "jurisdiction": "Shelbyville ISD",
-  "county": ["Shelby"],
+  "county": [
+    "Shelby"
+  ],
   "termStart": "2024-05-01",
   "termEnd": "2028-05-01",
   "contactInfo": {
@@ -16,5 +18,13 @@
     "phone": "(936) 598-2561",
     "website": "https://www.shelbyvilleisd.org/board"
   },
-  "bio": "Glenn Norris serves as President of the Shelbyville ISD Board of Trustees. A cattle rancher and Shelby County native, he is dedicated to ensuring the rural district provides quality education while maintaining responsible spending."
+  "bio": "Glenn Norris serves as President of the Shelbyville ISD Board of Trustees. A cattle rancher and Shelby County native, he is dedicated to ensuring the rural district provides quality education while maintaining responsible spending.",
+  "sourceLinks": [
+    {
+      "title": "Public office website",
+      "url": "https://www.shelbyvilleisd.org/board"
+    }
+  ],
+  "reviewStatus": "needs_source_review",
+  "lastVerifiedAt": "2026-05-01"
 }

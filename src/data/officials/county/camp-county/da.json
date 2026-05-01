@@ -7,7 +7,9 @@
   "level": "county",
   "position": "County Attorney",
   "jurisdiction": "Camp County",
-  "county": ["Camp"],
+  "county": [
+    "Camp"
+  ],
   "termStart": "2023-01-01",
   "termEnd": "2027-01-01",
   "contactInfo": {
@@ -23,5 +25,13 @@
     "Support victims of crime and their families",
     "Maintain fiscal responsibility in the county attorney's office",
     "Work closely with local law enforcement on public safety"
-  ]
+  ],
+  "sourceLinks": [
+    {
+      "title": "Public office website",
+      "url": "https://www.campcounty.org/county-attorney"
+    }
+  ],
+  "reviewStatus": "needs_source_review",
+  "lastVerifiedAt": "2026-05-01"
 }

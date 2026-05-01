@@ -7,7 +7,9 @@
   "level": "county",
   "position": "County Attorney",
   "jurisdiction": "Morris County",
-  "county": ["Morris"],
+  "county": [
+    "Morris"
+  ],
   "termStart": "2023-01-01",
   "termEnd": "2027-01-01",
   "contactInfo": {
@@ -23,5 +25,13 @@
     "Advocate for victims of crime",
     "Operate a fiscally responsible county attorney's office",
     "Coordinate with law enforcement on public safety efforts"
-  ]
+  ],
+  "sourceLinks": [
+    {
+      "title": "Public office website",
+      "url": "https://www.morriscountytx.org/county-attorney"
+    }
+  ],
+  "reviewStatus": "needs_source_review",
+  "lastVerifiedAt": "2026-05-01"
 }

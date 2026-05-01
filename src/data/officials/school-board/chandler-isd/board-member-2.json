@@ -8,7 +8,9 @@
   "position": "School Board Vice President",
   "district": "Place 2",
   "jurisdiction": "Chandler ISD",
-  "county": ["Henderson"],
+  "county": [
+    "Henderson"
+  ],
   "termStart": "2024-05-01",
   "termEnd": "2028-05-01",
   "contactInfo": {
@@ -16,5 +18,13 @@
     "phone": "(903) 849-2461",
     "website": "https://www.chandlerisd.org/board"
   },
-  "bio": "Rebecca Leach serves as the Vice President of the Chandler ISD Board of Trustees. She is focused on building strong early literacy programs and supporting teachers with professional development opportunities."
+  "bio": "Rebecca Leach serves as the Vice President of the Chandler ISD Board of Trustees. She is focused on building strong early literacy programs and supporting teachers with professional development opportunities.",
+  "sourceLinks": [
+    {
+      "title": "Public office website",
+      "url": "https://www.chandlerisd.org/board"
+    }
+  ],
+  "reviewStatus": "needs_source_review",
+  "lastVerifiedAt": "2026-05-01"
 }

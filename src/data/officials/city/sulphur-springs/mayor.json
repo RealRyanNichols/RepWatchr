@@ -7,7 +7,9 @@
   "level": "city",
   "position": "Mayor",
   "jurisdiction": "City of Sulphur Springs",
-  "county": ["Hopkins"],
+  "county": [
+    "Hopkins"
+  ],
   "termStart": "2023-05-01",
   "termEnd": "2027-05-01",
   "contactInfo": {
@@ -26,5 +28,13 @@
     "Improve city roads and infrastructure",
     "Enhance quality of life through parks and recreation",
     "Maintain excellent public safety services"
-  ]
+  ],
+  "sourceLinks": [
+    {
+      "title": "Public office website",
+      "url": "https://www.sulphurspringstx.org"
+    }
+  ],
+  "reviewStatus": "needs_source_review",
+  "lastVerifiedAt": "2026-05-01"
 }

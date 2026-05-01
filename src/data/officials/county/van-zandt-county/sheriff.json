@@ -7,7 +7,9 @@
   "level": "county",
   "position": "County Sheriff",
   "jurisdiction": "Van Zandt County",
-  "county": ["Van Zandt"],
+  "county": [
+    "Van Zandt"
+  ],
   "termStart": "2025-01-01",
   "termEnd": "2029-01-01",
   "contactInfo": {
@@ -23,5 +25,13 @@
     "Improve radio communications for better county-wide coverage",
     "Maintain a well-trained and professional deputy force",
     "Support anti-drug education programs in county schools"
-  ]
+  ],
+  "sourceLinks": [
+    {
+      "title": "Public office website",
+      "url": "https://www.vanzandtcounty.org/sheriff"
+    }
+  ],
+  "reviewStatus": "needs_source_review",
+  "lastVerifiedAt": "2026-05-01"
 }

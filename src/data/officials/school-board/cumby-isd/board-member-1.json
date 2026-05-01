@@ -8,7 +8,9 @@
   "position": "School Board President",
   "district": "Place 1",
   "jurisdiction": "Cumby ISD",
-  "county": ["Hopkins"],
+  "county": [
+    "Hopkins"
+  ],
   "termStart": "2023-05-01",
   "termEnd": "2027-05-01",
   "contactInfo": {
@@ -16,5 +18,13 @@
     "phone": "(903) 994-2205",
     "website": "https://www.cumbyisd.net/board"
   },
-  "bio": "Dennis Blankenship serves as the President of the Cumby ISD Board of Trustees. He works to maintain the district's strong sense of community while pursuing opportunities to enhance student learning."
+  "bio": "Dennis Blankenship serves as the President of the Cumby ISD Board of Trustees. He works to maintain the district's strong sense of community while pursuing opportunities to enhance student learning.",
+  "sourceLinks": [
+    {
+      "title": "Public office website",
+      "url": "https://www.cumbyisd.net/board"
+    }
+  ],
+  "reviewStatus": "needs_source_review",
+  "lastVerifiedAt": "2026-05-01"
 }

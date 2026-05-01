@@ -8,7 +8,9 @@
   "position": "School Board Vice President",
   "district": "Place 2",
   "jurisdiction": "Athens ISD",
-  "county": ["Henderson"],
+  "county": [
+    "Henderson"
+  ],
   "termStart": "2024-05-01",
   "termEnd": "2028-05-01",
   "contactInfo": {
@@ -16,5 +18,13 @@
     "phone": "(903) 677-6900",
     "website": "https://www.athensisd.net/board"
   },
-  "bio": "Carolyn McBride serves as the Vice President of the Athens ISD Board of Trustees. She works to strengthen partnerships between the district and the Athens business community to benefit student learning."
+  "bio": "Carolyn McBride serves as the Vice President of the Athens ISD Board of Trustees. She works to strengthen partnerships between the district and the Athens business community to benefit student learning.",
+  "sourceLinks": [
+    {
+      "title": "Public office website",
+      "url": "https://www.athensisd.net/board"
+    }
+  ],
+  "reviewStatus": "needs_source_review",
+  "lastVerifiedAt": "2026-05-01"
 }

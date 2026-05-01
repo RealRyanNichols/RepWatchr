@@ -8,7 +8,9 @@
   "position": "School Board President",
   "district": "Place 1",
   "jurisdiction": "Quitman ISD",
-  "county": ["Wood"],
+  "county": [
+    "Wood"
+  ],
   "termStart": "2024-05-01",
   "termEnd": "2028-05-01",
   "contactInfo": {
@@ -16,5 +18,13 @@
     "phone": "(903) 763-5000",
     "website": "https://www.quitmanisd.net/board"
   },
-  "bio": "Ray Barnett serves as President of the Quitman ISD Board of Trustees. A Wood County real-estate developer and Lake Fork-area business owner, he supports growth planning and technology upgrades across district campuses."
+  "bio": "Ray Barnett serves as President of the Quitman ISD Board of Trustees. A Wood County real-estate developer and Lake Fork-area business owner, he supports growth planning and technology upgrades across district campuses.",
+  "sourceLinks": [
+    {
+      "title": "Public office website",
+      "url": "https://www.quitmanisd.net/board"
+    }
+  ],
+  "reviewStatus": "needs_source_review",
+  "lastVerifiedAt": "2026-05-01"
 }

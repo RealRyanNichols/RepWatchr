@@ -8,7 +8,9 @@
   "position": "School Board Vice President",
   "district": "Place 2",
   "jurisdiction": "Elysian Fields ISD",
-  "county": ["Harrison"],
+  "county": [
+    "Harrison"
+  ],
   "termStart": "2024-05-01",
   "termEnd": "2028-05-01",
   "contactInfo": {
@@ -16,5 +18,13 @@
     "phone": "(903) 633-2482",
     "website": "https://www.efisd.net/board"
   },
-  "bio": "Connie Vickers serves as Vice President of the Elysian Fields ISD Board of Trustees. She supports early literacy programs and ensuring that every student in the district has the tools to succeed academically."
+  "bio": "Connie Vickers serves as Vice President of the Elysian Fields ISD Board of Trustees. She supports early literacy programs and ensuring that every student in the district has the tools to succeed academically.",
+  "sourceLinks": [
+    {
+      "title": "Public office website",
+      "url": "https://www.efisd.net/board"
+    }
+  ],
+  "reviewStatus": "needs_source_review",
+  "lastVerifiedAt": "2026-05-01"
 }

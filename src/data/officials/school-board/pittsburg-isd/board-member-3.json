@@ -8,7 +8,9 @@
   "position": "Secretary",
   "district": "Place 3",
   "jurisdiction": "Pittsburg ISD",
-  "county": ["Camp"],
+  "county": [
+    "Camp"
+  ],
   "termStart": "2023-05-01",
   "termEnd": "2027-05-01",
   "contactInfo": {
@@ -16,5 +18,13 @@
     "phone": "(903) 856-3628",
     "website": "https://www.pittsburgisd.net/board"
   },
-  "bio": "Jerome Patterson serves as Secretary of the Pittsburg ISD Board of Trustees. An engineer at a local manufacturing plant, he champions STEM education and vocational-training partnerships."
+  "bio": "Jerome Patterson serves as Secretary of the Pittsburg ISD Board of Trustees. An engineer at a local manufacturing plant, he champions STEM education and vocational-training partnerships.",
+  "sourceLinks": [
+    {
+      "title": "Public office website",
+      "url": "https://www.pittsburgisd.net/board"
+    }
+  ],
+  "reviewStatus": "needs_source_review",
+  "lastVerifiedAt": "2026-05-01"
 }

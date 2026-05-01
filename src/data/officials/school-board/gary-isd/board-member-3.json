@@ -8,7 +8,9 @@
   "position": "Secretary",
   "district": "Place 3",
   "jurisdiction": "Gary ISD",
-  "county": ["Panola"],
+  "county": [
+    "Panola"
+  ],
   "termStart": "2024-05-01",
   "termEnd": "2028-05-01",
   "contactInfo": {
@@ -16,5 +18,13 @@
     "phone": "(903) 685-2291",
     "website": "https://www.garyisd.net/board"
   },
-  "bio": "Earl Dixon serves as Secretary of the Gary ISD Board of Trustees. A local timber-industry professional, he focuses on long-range facility planning and fiscal stewardship for the district."
+  "bio": "Earl Dixon serves as Secretary of the Gary ISD Board of Trustees. A local timber-industry professional, he focuses on long-range facility planning and fiscal stewardship for the district.",
+  "sourceLinks": [
+    {
+      "title": "Public office website",
+      "url": "https://www.garyisd.net/board"
+    }
+  ],
+  "reviewStatus": "needs_source_review",
+  "lastVerifiedAt": "2026-05-01"
 }

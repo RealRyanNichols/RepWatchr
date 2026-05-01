@@ -7,7 +7,9 @@
   "level": "city",
   "position": "Mayor",
   "jurisdiction": "City of Woodville",
-  "county": ["Tyler"],
+  "county": [
+    "Tyler"
+  ],
   "termStart": "2023-05-01",
   "termEnd": "2027-05-01",
   "contactInfo": {
@@ -26,5 +28,13 @@
     "Support economic development and small businesses",
     "Maintain public safety and emergency services",
     "Enhance community programs and recreational facilities"
-  ]
+  ],
+  "sourceLinks": [
+    {
+      "title": "Public office website",
+      "url": "https://www.woodvilletx.org"
+    }
+  ],
+  "reviewStatus": "needs_source_review",
+  "lastVerifiedAt": "2026-05-01"
 }

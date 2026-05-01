@@ -8,7 +8,9 @@
   "position": "Secretary",
   "district": "Place 3",
   "jurisdiction": "Jefferson ISD",
-  "county": ["Marion"],
+  "county": [
+    "Marion"
+  ],
   "termStart": "2023-05-01",
   "termEnd": "2027-05-01",
   "contactInfo": {
@@ -16,5 +18,13 @@
     "phone": "(903) 665-2461",
     "website": "https://www.jeffersonisd.org/board"
   },
-  "bio": "Samuel Odell serves as Secretary of the Jefferson ISD Board of Trustees. A retired postal worker and church deacon, he focuses on transportation improvements and student attendance initiatives."
+  "bio": "Samuel Odell serves as Secretary of the Jefferson ISD Board of Trustees. A retired postal worker and church deacon, he focuses on transportation improvements and student attendance initiatives.",
+  "sourceLinks": [
+    {
+      "title": "Public office website",
+      "url": "https://www.jeffersonisd.org/board"
+    }
+  ],
+  "reviewStatus": "needs_source_review",
+  "lastVerifiedAt": "2026-05-01"
 }

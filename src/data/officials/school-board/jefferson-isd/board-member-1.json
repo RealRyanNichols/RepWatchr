@@ -8,7 +8,9 @@
   "position": "School Board President",
   "district": "Place 1",
   "jurisdiction": "Jefferson ISD",
-  "county": ["Marion"],
+  "county": [
+    "Marion"
+  ],
   "termStart": "2023-05-01",
   "termEnd": "2027-05-01",
   "contactInfo": {
@@ -16,5 +18,13 @@
     "phone": "(903) 665-2461",
     "website": "https://www.jeffersonisd.org/board"
   },
-  "bio": "Howard Preston serves as President of the Jefferson ISD Board of Trustees. A Marion County attorney and historic-preservation advocate, he supports maintaining strong academics in one of East Texas's most storied communities."
+  "bio": "Howard Preston serves as President of the Jefferson ISD Board of Trustees. A Marion County attorney and historic-preservation advocate, he supports maintaining strong academics in one of East Texas's most storied communities.",
+  "sourceLinks": [
+    {
+      "title": "Public office website",
+      "url": "https://www.jeffersonisd.org/board"
+    }
+  ],
+  "reviewStatus": "needs_source_review",
+  "lastVerifiedAt": "2026-05-01"
 }

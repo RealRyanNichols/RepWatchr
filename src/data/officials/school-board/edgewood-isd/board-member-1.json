@@ -8,7 +8,9 @@
   "position": "School Board President",
   "district": "Place 1",
   "jurisdiction": "Edgewood ISD",
-  "county": ["Van Zandt"],
+  "county": [
+    "Van Zandt"
+  ],
   "termStart": "2024-05-01",
   "termEnd": "2028-05-01",
   "contactInfo": {
@@ -16,5 +18,13 @@
     "phone": "(903) 896-4316",
     "website": "https://www.edgewoodisd.net/board"
   },
-  "bio": "Russell York serves as President of the Edgewood ISD Board of Trustees. A Van Zandt County rancher and Heritage Festival volunteer, he is dedicated to preserving the district's small-town identity while improving classroom resources."
+  "bio": "Russell York serves as President of the Edgewood ISD Board of Trustees. A Van Zandt County rancher and Heritage Festival volunteer, he is dedicated to preserving the district's small-town identity while improving classroom resources.",
+  "sourceLinks": [
+    {
+      "title": "Public office website",
+      "url": "https://www.edgewoodisd.net/board"
+    }
+  ],
+  "reviewStatus": "needs_source_review",
+  "lastVerifiedAt": "2026-05-01"
 }

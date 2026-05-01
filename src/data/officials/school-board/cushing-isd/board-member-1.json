@@ -8,7 +8,9 @@
   "position": "School Board President",
   "district": "Place 1",
   "jurisdiction": "Cushing ISD",
-  "county": ["Nacogdoches"],
+  "county": [
+    "Nacogdoches"
+  ],
   "termStart": "2024-05-01",
   "termEnd": "2028-05-01",
   "contactInfo": {
@@ -16,5 +18,13 @@
     "phone": "(936) 326-4233",
     "website": "https://www.cushingisd.org/board"
   },
-  "bio": "Harold Reeves serves as President of the Cushing ISD Board of Trustees. He works to ensure the small district provides a quality education that prepares students for life after graduation."
+  "bio": "Harold Reeves serves as President of the Cushing ISD Board of Trustees. He works to ensure the small district provides a quality education that prepares students for life after graduation.",
+  "sourceLinks": [
+    {
+      "title": "Public office website",
+      "url": "https://www.cushingisd.org/board"
+    }
+  ],
+  "reviewStatus": "needs_source_review",
+  "lastVerifiedAt": "2026-05-01"
 }

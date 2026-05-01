@@ -8,7 +8,9 @@
   "position": "School Board Secretary",
   "district": "Place 3",
   "jurisdiction": "Bullard ISD",
-  "county": ["Smith"],
+  "county": [
+    "Smith"
+  ],
   "termStart": "2023-05-01",
   "termEnd": "2027-05-01",
   "contactInfo": {
@@ -16,5 +18,13 @@
     "phone": "(903) 894-6639",
     "website": "https://www.bullardisd.org/board"
   },
-  "bio": "Gary Hutchins serves as Secretary of the Bullard ISD Board of Trustees. He prioritizes responsible financial planning and ensuring the district meets the educational needs of all Bullard families."
+  "bio": "Gary Hutchins serves as Secretary of the Bullard ISD Board of Trustees. He prioritizes responsible financial planning and ensuring the district meets the educational needs of all Bullard families.",
+  "sourceLinks": [
+    {
+      "title": "Public office website",
+      "url": "https://www.bullardisd.org/board"
+    }
+  ],
+  "reviewStatus": "needs_source_review",
+  "lastVerifiedAt": "2026-05-01"
 }

@@ -8,7 +8,9 @@
   "position": "School Board Vice President",
   "district": "Place 2",
   "jurisdiction": "Nacogdoches ISD",
-  "county": ["Nacogdoches"],
+  "county": [
+    "Nacogdoches"
+  ],
   "termStart": "2024-05-01",
   "termEnd": "2028-05-01",
   "contactInfo": {
@@ -16,5 +18,13 @@
     "phone": "(936) 569-5000",
     "website": "https://www.nacisd.org/board"
   },
-  "bio": "Victoria Payne serves as Vice President of the Nacogdoches ISD Board of Trustees. She advocates for equitable resources and expanded dual-credit programs for Nacogdoches high school students."
+  "bio": "Victoria Payne serves as Vice President of the Nacogdoches ISD Board of Trustees. She advocates for equitable resources and expanded dual-credit programs for Nacogdoches high school students.",
+  "sourceLinks": [
+    {
+      "title": "Public office website",
+      "url": "https://www.nacisd.org/board"
+    }
+  ],
+  "reviewStatus": "needs_source_review",
+  "lastVerifiedAt": "2026-05-01"
 }

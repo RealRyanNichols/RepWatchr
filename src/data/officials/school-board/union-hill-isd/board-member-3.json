@@ -8,7 +8,9 @@
   "position": "Secretary",
   "district": "Place 3",
   "jurisdiction": "Union Hill ISD",
-  "county": ["Upshur"],
+  "county": [
+    "Upshur"
+  ],
   "termStart": "2024-05-01",
   "termEnd": "2028-05-01",
   "contactInfo": {
@@ -16,5 +18,13 @@
     "phone": "(903) 797-4360",
     "website": "https://www.unionhillisd.net/board"
   },
-  "bio": "Brent Owens serves as Secretary of the Union Hill ISD Board of Trustees. A truck driver and volunteer coach, he prioritizes transportation safety and competitive athletics for the district."
+  "bio": "Brent Owens serves as Secretary of the Union Hill ISD Board of Trustees. A truck driver and volunteer coach, he prioritizes transportation safety and competitive athletics for the district.",
+  "sourceLinks": [
+    {
+      "title": "Public office website",
+      "url": "https://www.unionhillisd.net/board"
+    }
+  ],
+  "reviewStatus": "needs_source_review",
+  "lastVerifiedAt": "2026-05-01"
 }

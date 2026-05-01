@@ -8,7 +8,9 @@
   "position": "School Board Vice President",
   "district": "Place 2",
   "jurisdiction": "Cumby ISD",
-  "county": ["Hopkins"],
+  "county": [
+    "Hopkins"
+  ],
   "termStart": "2024-05-01",
   "termEnd": "2028-05-01",
   "contactInfo": {
@@ -16,5 +18,13 @@
     "phone": "(903) 994-2205",
     "website": "https://www.cumbyisd.net/board"
   },
-  "bio": "Annette Shipman serves as the Vice President of the Cumby ISD Board of Trustees. She is focused on teacher retention and ensuring the district attracts and keeps quality educators for its students."
+  "bio": "Annette Shipman serves as the Vice President of the Cumby ISD Board of Trustees. She is focused on teacher retention and ensuring the district attracts and keeps quality educators for its students.",
+  "sourceLinks": [
+    {
+      "title": "Public office website",
+      "url": "https://www.cumbyisd.net/board"
+    }
+  ],
+  "reviewStatus": "needs_source_review",
+  "lastVerifiedAt": "2026-05-01"
 }

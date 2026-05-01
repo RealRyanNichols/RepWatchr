@@ -8,7 +8,9 @@
   "position": "School Board Vice President",
   "district": "Place 2",
   "jurisdiction": "Lufkin ISD",
-  "county": ["Angelina"],
+  "county": [
+    "Angelina"
+  ],
   "termStart": "2024-05-01",
   "termEnd": "2028-05-01",
   "contactInfo": {
@@ -16,5 +18,13 @@
     "phone": "(936) 630-4600",
     "website": "https://www.lufkinisd.org/board"
   },
-  "bio": "Sandra Gibbs serves as the Vice President of the Lufkin ISD Board of Trustees. She advocates for expanding dual-credit and career readiness programs to prepare Lufkin students for success after graduation."
+  "bio": "Sandra Gibbs serves as the Vice President of the Lufkin ISD Board of Trustees. She advocates for expanding dual-credit and career readiness programs to prepare Lufkin students for success after graduation.",
+  "sourceLinks": [
+    {
+      "title": "Public office website",
+      "url": "https://www.lufkinisd.org/board"
+    }
+  ],
+  "reviewStatus": "needs_source_review",
+  "lastVerifiedAt": "2026-05-01"
 }

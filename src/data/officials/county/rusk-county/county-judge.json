@@ -7,7 +7,9 @@
   "level": "county",
   "position": "County Judge",
   "jurisdiction": "Rusk County",
-  "county": ["Rusk"],
+  "county": [
+    "Rusk"
+  ],
   "termStart": "2023-01-01",
   "termEnd": "2027-01-01",
   "contactInfo": {
@@ -23,5 +25,13 @@
     "Support law enforcement and public safety",
     "Maintain transparent county government operations",
     "Plan responsibly for county growth"
-  ]
+  ],
+  "sourceLinks": [
+    {
+      "title": "Public office website",
+      "url": "https://www.ruskcounty.org/county-judge"
+    }
+  ],
+  "reviewStatus": "needs_source_review",
+  "lastVerifiedAt": "2026-05-01"
 }

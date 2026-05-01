@@ -7,7 +7,9 @@
   "level": "county",
   "position": "County Sheriff",
   "jurisdiction": "Jasper County",
-  "county": ["Jasper"],
+  "county": [
+    "Jasper"
+  ],
   "termStart": "2025-01-01",
   "termEnd": "2029-01-01",
   "contactInfo": {
@@ -23,5 +25,13 @@
     "Improve emergency response for flooding and severe weather events",
     "Maintain strong cooperation with federal and state agencies",
     "Keep Jasper County a safe place to live and visit"
-  ]
+  ],
+  "sourceLinks": [
+    {
+      "title": "Public office website",
+      "url": "https://www.jaspercountytx.gov/sheriff"
+    }
+  ],
+  "reviewStatus": "needs_source_review",
+  "lastVerifiedAt": "2026-05-01"
 }

@@ -7,7 +7,9 @@
   "level": "county",
   "position": "District Attorney",
   "jurisdiction": "Houston County",
-  "county": ["Houston"],
+  "county": [
+    "Houston"
+  ],
   "termStart": "2023-01-01",
   "termEnd": "2027-01-01",
   "contactInfo": {
@@ -23,5 +25,13 @@
     "Advocate for victims throughout the criminal justice process",
     "Maintain transparency and integrity in the DA's office",
     "Partner with law enforcement to improve public safety"
-  ]
+  ],
+  "sourceLinks": [
+    {
+      "title": "Public office website",
+      "url": "https://www.houstoncountytx.org/district-attorney"
+    }
+  ],
+  "reviewStatus": "needs_source_review",
+  "lastVerifiedAt": "2026-05-01"
 }

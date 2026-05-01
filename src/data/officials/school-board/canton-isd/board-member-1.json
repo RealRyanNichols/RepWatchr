@@ -8,7 +8,9 @@
   "position": "School Board President",
   "district": "Place 1",
   "jurisdiction": "Canton ISD",
-  "county": ["Van Zandt"],
+  "county": [
+    "Van Zandt"
+  ],
   "termStart": "2023-05-01",
   "termEnd": "2027-05-01",
   "contactInfo": {
@@ -16,5 +18,13 @@
     "phone": "(903) 567-4179",
     "website": "https://www.cantonisd.net/board"
   },
-  "bio": "Mark Stringer serves as President of the Canton ISD Board of Trustees. A Van Zandt County attorney and First Monday trade-days supporter, he focuses on managing rapid enrollment growth and maintaining the district's academic reputation."
+  "bio": "Mark Stringer serves as President of the Canton ISD Board of Trustees. A Van Zandt County attorney and First Monday trade-days supporter, he focuses on managing rapid enrollment growth and maintaining the district's academic reputation.",
+  "sourceLinks": [
+    {
+      "title": "Public office website",
+      "url": "https://www.cantonisd.net/board"
+    }
+  ],
+  "reviewStatus": "needs_source_review",
+  "lastVerifiedAt": "2026-05-01"
 }

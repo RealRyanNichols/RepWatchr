@@ -8,7 +8,9 @@
   "position": "School Board Secretary",
   "district": "Place 3",
   "jurisdiction": "Hallsville ISD",
-  "county": ["Harrison"],
+  "county": [
+    "Harrison"
+  ],
   "termStart": "2024-05-01",
   "termEnd": "2028-05-01",
   "contactInfo": {
@@ -16,5 +18,13 @@
     "phone": "(903) 668-5990",
     "website": "https://www.hallsvilleisd.org/board"
   },
-  "bio": "Dale Singleton serves as Secretary of the Hallsville ISD Board of Trustees. He is dedicated to maintaining fiscal accountability and supporting facility improvements across the growing district."
+  "bio": "Dale Singleton serves as Secretary of the Hallsville ISD Board of Trustees. He is dedicated to maintaining fiscal accountability and supporting facility improvements across the growing district.",
+  "sourceLinks": [
+    {
+      "title": "Public office website",
+      "url": "https://www.hallsvilleisd.org/board"
+    }
+  ],
+  "reviewStatus": "needs_source_review",
+  "lastVerifiedAt": "2026-05-01"
 }

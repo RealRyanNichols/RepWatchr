@@ -8,7 +8,9 @@
   "position": "School Board Vice President",
   "district": "Place 2",
   "jurisdiction": "Sulphur Bluff ISD",
-  "county": ["Hopkins"],
+  "county": [
+    "Hopkins"
+  ],
   "termStart": "2024-05-01",
   "termEnd": "2028-05-01",
   "contactInfo": {
@@ -16,5 +18,13 @@
     "phone": "(903) 945-2491",
     "website": "https://www.sulphurbluffisd.net/board"
   },
-  "bio": "Wanda Bain serves as the Vice President of the Sulphur Bluff ISD Board of Trustees. She supports efforts to recruit dedicated teachers and ensure students have access to quality learning materials."
+  "bio": "Wanda Bain serves as the Vice President of the Sulphur Bluff ISD Board of Trustees. She supports efforts to recruit dedicated teachers and ensure students have access to quality learning materials.",
+  "sourceLinks": [
+    {
+      "title": "Public office website",
+      "url": "https://www.sulphurbluffisd.net/board"
+    }
+  ],
+  "reviewStatus": "needs_source_review",
+  "lastVerifiedAt": "2026-05-01"
 }

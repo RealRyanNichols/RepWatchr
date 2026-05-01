@@ -7,7 +7,9 @@
   "level": "county",
   "position": "County Sheriff",
   "jurisdiction": "Shelby County",
-  "county": ["Shelby"],
+  "county": [
+    "Shelby"
+  ],
   "termStart": "2025-01-01",
   "termEnd": "2029-01-01",
   "contactInfo": {
@@ -23,5 +25,13 @@
     "Improve detention facility programs for inmate rehabilitation",
     "Recruit and retain quality deputies with competitive pay",
     "Strengthen relationships with all communities in Shelby County"
-  ]
+  ],
+  "sourceLinks": [
+    {
+      "title": "Public office website",
+      "url": "https://www.shelbycountytx.gov/sheriff"
+    }
+  ],
+  "reviewStatus": "needs_source_review",
+  "lastVerifiedAt": "2026-05-01"
 }

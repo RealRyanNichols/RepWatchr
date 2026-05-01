@@ -8,7 +8,9 @@
   "position": "School Board Secretary",
   "district": "Place 3",
   "jurisdiction": "Whitehouse ISD",
-  "county": ["Smith"],
+  "county": [
+    "Smith"
+  ],
   "termStart": "2023-05-01",
   "termEnd": "2027-05-01",
   "contactInfo": {
@@ -16,5 +18,13 @@
     "phone": "(903) 839-5500",
     "website": "https://www.whitehouseisd.org/board"
   },
-  "bio": "Mark Benson serves as Secretary of the Whitehouse ISD Board of Trustees. He supports strong community partnerships and investment in school facilities to meet the needs of a growing district."
+  "bio": "Mark Benson serves as Secretary of the Whitehouse ISD Board of Trustees. He supports strong community partnerships and investment in school facilities to meet the needs of a growing district.",
+  "sourceLinks": [
+    {
+      "title": "Public office website",
+      "url": "https://www.whitehouseisd.org/board"
+    }
+  ],
+  "reviewStatus": "needs_source_review",
+  "lastVerifiedAt": "2026-05-01"
 }

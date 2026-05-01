@@ -7,7 +7,9 @@
   "level": "county",
   "position": "County Sheriff",
   "jurisdiction": "Franklin County",
-  "county": ["Franklin"],
+  "county": [
+    "Franklin"
+  ],
   "termStart": "2025-01-01",
   "termEnd": "2029-01-01",
   "contactInfo": {
@@ -23,5 +25,13 @@
     "Protect Lake Cypress Springs recreational areas",
     "Keep overhead costs low while maintaining quality service",
     "Ensure the county jail meets all state standards"
-  ]
+  ],
+  "sourceLinks": [
+    {
+      "title": "Public office website",
+      "url": "https://www.franklincountytx.com/sheriff"
+    }
+  ],
+  "reviewStatus": "needs_source_review",
+  "lastVerifiedAt": "2026-05-01"
 }

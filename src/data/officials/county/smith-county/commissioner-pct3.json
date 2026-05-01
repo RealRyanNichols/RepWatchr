@@ -8,7 +8,9 @@
   "position": "Commissioner, Precinct 3",
   "district": "Precinct 3",
   "jurisdiction": "Smith County",
-  "county": ["Smith"],
+  "county": [
+    "Smith"
+  ],
   "termStart": "2023-01-01",
   "termEnd": "2027-01-01",
   "contactInfo": {
@@ -23,5 +25,13 @@
     "Hold the line on county spending",
     "Support first responders and emergency services",
     "Keep government accountable to taxpayers"
-  ]
+  ],
+  "sourceLinks": [
+    {
+      "title": "Public office website",
+      "url": "https://www.smith-county.com/government/elected-officials/commissioners-court"
+    }
+  ],
+  "reviewStatus": "needs_source_review",
+  "lastVerifiedAt": "2026-05-01"
 }

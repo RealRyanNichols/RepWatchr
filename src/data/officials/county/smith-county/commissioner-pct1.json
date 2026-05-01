@@ -8,7 +8,9 @@
   "position": "Commissioner, Precinct 1",
   "district": "Precinct 1",
   "jurisdiction": "Smith County",
-  "county": ["Smith"],
+  "county": [
+    "Smith"
+  ],
   "termStart": "2023-01-01",
   "termEnd": "2027-01-01",
   "contactInfo": {
@@ -23,5 +25,13 @@
     "Keep county property tax rates low",
     "Support county law enforcement",
     "Ensure responsible county budgeting"
-  ]
+  ],
+  "sourceLinks": [
+    {
+      "title": "Public office website",
+      "url": "https://www.smith-county.com/government/elected-officials/commissioners-court"
+    }
+  ],
+  "reviewStatus": "needs_source_review",
+  "lastVerifiedAt": "2026-05-01"
 }

@@ -7,7 +7,9 @@
   "level": "city",
   "position": "Mayor",
   "jurisdiction": "City of Longview",
-  "county": ["Gregg"],
+  "county": [
+    "Gregg"
+  ],
   "termStart": "2022-05-01",
   "termEnd": "2026-05-01",
   "contactInfo": {
@@ -26,5 +28,13 @@
     "Support Longview police and fire departments",
     "Enhance quality of life and parks in Longview",
     "Foster a business-friendly environment"
-  ]
+  ],
+  "sourceLinks": [
+    {
+      "title": "Public office website",
+      "url": "https://www.longviewtexas.gov/government/mayor-city-council"
+    }
+  ],
+  "reviewStatus": "needs_source_review",
+  "lastVerifiedAt": "2026-05-01"
 }

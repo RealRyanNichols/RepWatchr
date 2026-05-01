@@ -8,7 +8,9 @@
   "position": "Commissioner, Precinct 2",
   "district": "Precinct 2",
   "jurisdiction": "Smith County",
-  "county": ["Smith"],
+  "county": [
+    "Smith"
+  ],
   "termStart": "2023-01-01",
   "termEnd": "2027-01-01",
   "contactInfo": {
@@ -23,5 +25,13 @@
     "Promote fiscal responsibility in county government",
     "Enhance emergency services",
     "Support transparent government operations"
-  ]
+  ],
+  "sourceLinks": [
+    {
+      "title": "Public office website",
+      "url": "https://www.smith-county.com/government/elected-officials/commissioners-court"
+    }
+  ],
+  "reviewStatus": "needs_source_review",
+  "lastVerifiedAt": "2026-05-01"
 }

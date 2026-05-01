@@ -8,7 +8,9 @@
   "position": "School Board Vice President",
   "district": "Place 2",
   "jurisdiction": "Zavalla ISD",
-  "county": ["Angelina"],
+  "county": [
+    "Angelina"
+  ],
   "termStart": "2024-05-01",
   "termEnd": "2028-05-01",
   "contactInfo": {
@@ -16,5 +18,13 @@
     "phone": "(936) 897-1244",
     "website": "https://www.zavallaisd.net/board"
   },
-  "bio": "Loretta Mize serves as the Vice President of the Zavalla ISD Board of Trustees. She works to strengthen partnerships between the school and local community organizations to benefit student learning."
+  "bio": "Loretta Mize serves as the Vice President of the Zavalla ISD Board of Trustees. She works to strengthen partnerships between the school and local community organizations to benefit student learning.",
+  "sourceLinks": [
+    {
+      "title": "Public office website",
+      "url": "https://www.zavallaisd.net/board"
+    }
+  ],
+  "reviewStatus": "needs_source_review",
+  "lastVerifiedAt": "2026-05-01"
 }

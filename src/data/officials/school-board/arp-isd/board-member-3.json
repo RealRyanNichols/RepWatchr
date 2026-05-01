@@ -8,7 +8,9 @@
   "position": "School Board Secretary",
   "district": "Place 3",
   "jurisdiction": "Arp ISD",
-  "county": ["Smith"],
+  "county": [
+    "Smith"
+  ],
   "termStart": "2024-05-01",
   "termEnd": "2028-05-01",
   "contactInfo": {
@@ -16,5 +18,13 @@
     "phone": "(903) 859-8482",
     "website": "https://www.arpisd.org/board"
   },
-  "bio": "Russell Tatum serves as Secretary of the Arp ISD Board of Trustees. He is dedicated to fiscal transparency and supporting programs that help Arp students reach their full potential."
+  "bio": "Russell Tatum serves as Secretary of the Arp ISD Board of Trustees. He is dedicated to fiscal transparency and supporting programs that help Arp students reach their full potential.",
+  "sourceLinks": [
+    {
+      "title": "Public office website",
+      "url": "https://www.arpisd.org/board"
+    }
+  ],
+  "reviewStatus": "needs_source_review",
+  "lastVerifiedAt": "2026-05-01"
 }

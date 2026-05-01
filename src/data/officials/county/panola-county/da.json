@@ -7,7 +7,9 @@
   "level": "county",
   "position": "District Attorney",
   "jurisdiction": "Panola County",
-  "county": ["Panola"],
+  "county": [
+    "Panola"
+  ],
   "termStart": "2023-01-01",
   "termEnd": "2027-01-01",
   "contactInfo": {
@@ -23,5 +25,13 @@
     "Advocate for the rights of crime victims",
     "Maintain transparency and accountability in the DA's office",
     "Strengthen relationships with local law enforcement"
-  ]
+  ],
+  "sourceLinks": [
+    {
+      "title": "Public office website",
+      "url": "https://www.panolacounty.org/district-attorney"
+    }
+  ],
+  "reviewStatus": "needs_source_review",
+  "lastVerifiedAt": "2026-05-01"
 }

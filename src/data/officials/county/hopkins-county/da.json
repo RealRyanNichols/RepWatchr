@@ -7,7 +7,9 @@
   "level": "county",
   "position": "District Attorney",
   "jurisdiction": "Hopkins County",
-  "county": ["Hopkins"],
+  "county": [
+    "Hopkins"
+  ],
   "termStart": "2023-01-01",
   "termEnd": "2027-01-01",
   "contactInfo": {
@@ -23,5 +25,13 @@
     "Support victims of crime and their families",
     "Run an efficient and transparent DA's office",
     "Strengthen law enforcement partnerships to reduce crime"
-  ]
+  ],
+  "sourceLinks": [
+    {
+      "title": "Public office website",
+      "url": "https://www.hopkinscountytx.org/district-attorney"
+    }
+  ],
+  "reviewStatus": "needs_source_review",
+  "lastVerifiedAt": "2026-05-01"
 }

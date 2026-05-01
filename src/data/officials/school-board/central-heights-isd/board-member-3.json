@@ -8,7 +8,9 @@
   "position": "School Board Secretary",
   "district": "Place 3",
   "jurisdiction": "Central Heights ISD",
-  "county": ["Nacogdoches"],
+  "county": [
+    "Nacogdoches"
+  ],
   "termStart": "2024-05-01",
   "termEnd": "2028-05-01",
   "contactInfo": {
@@ -16,5 +18,13 @@
     "phone": "(936) 564-2747",
     "website": "https://www.chisd.net/board"
   },
-  "bio": "Curtis Hanks serves as Secretary of the Central Heights ISD Board of Trustees. He prioritizes transparent budgeting and ensuring the district's facilities meet the needs of students and staff."
+  "bio": "Curtis Hanks serves as Secretary of the Central Heights ISD Board of Trustees. He prioritizes transparent budgeting and ensuring the district's facilities meet the needs of students and staff.",
+  "sourceLinks": [
+    {
+      "title": "Public office website",
+      "url": "https://www.chisd.net/board"
+    }
+  ],
+  "reviewStatus": "needs_source_review",
+  "lastVerifiedAt": "2026-05-01"
 }

@@ -8,7 +8,9 @@
   "position": "School Board President",
   "district": "Place 1",
   "jurisdiction": "Henderson ISD",
-  "county": ["Rusk"],
+  "county": [
+    "Rusk"
+  ],
   "termStart": "2023-05-01",
   "termEnd": "2027-05-01",
   "contactInfo": {
@@ -16,5 +18,13 @@
     "phone": "(903) 655-5000",
     "website": "https://www.hendersonisd.org/board"
   },
-  "bio": "James Phelps serves as the President of the Henderson ISD Board of Trustees. He is focused on ensuring strong academic performance and providing students with the resources they need to compete at the state level."
+  "bio": "James Phelps serves as the President of the Henderson ISD Board of Trustees. He is focused on ensuring strong academic performance and providing students with the resources they need to compete at the state level.",
+  "sourceLinks": [
+    {
+      "title": "Public office website",
+      "url": "https://www.hendersonisd.org/board"
+    }
+  ],
+  "reviewStatus": "needs_source_review",
+  "lastVerifiedAt": "2026-05-01"
 }

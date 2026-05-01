@@ -8,7 +8,9 @@
   "position": "Secretary",
   "district": "Place 3",
   "jurisdiction": "Van ISD",
-  "county": ["Van Zandt"],
+  "county": [
+    "Van Zandt"
+  ],
   "termStart": "2023-05-01",
   "termEnd": "2027-05-01",
   "contactInfo": {
@@ -16,5 +18,13 @@
     "phone": "(903) 963-8602",
     "website": "https://www.vanisd.org/board"
   },
-  "bio": "Mitchell Odom serves as Secretary of the Van ISD Board of Trustees. A local feed-mill operator, he promotes agricultural-science education and responsible fiscal management for the district."
+  "bio": "Mitchell Odom serves as Secretary of the Van ISD Board of Trustees. A local feed-mill operator, he promotes agricultural-science education and responsible fiscal management for the district.",
+  "sourceLinks": [
+    {
+      "title": "Public office website",
+      "url": "https://www.vanisd.org/board"
+    }
+  ],
+  "reviewStatus": "needs_source_review",
+  "lastVerifiedAt": "2026-05-01"
 }

@@ -7,7 +7,9 @@
   "level": "county",
   "position": "County Sheriff",
   "jurisdiction": "Smith County",
-  "county": ["Smith"],
+  "county": [
+    "Smith"
+  ],
   "termStart": "2025-01-01",
   "termEnd": "2029-01-01",
   "contactInfo": {
@@ -23,5 +25,13 @@
     "Combat drug trafficking and organized crime in the Tyler metro area",
     "Invest in mental health crisis intervention training for deputies",
     "Modernize the county jail and improve inmate services"
-  ]
+  ],
+  "sourceLinks": [
+    {
+      "title": "Public office website",
+      "url": "https://www.smith-county.com/government/elected-officials/sheriff"
+    }
+  ],
+  "reviewStatus": "needs_source_review",
+  "lastVerifiedAt": "2026-05-01"
 }

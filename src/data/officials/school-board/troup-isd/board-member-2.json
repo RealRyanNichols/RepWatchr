@@ -8,7 +8,9 @@
   "position": "School Board Vice President",
   "district": "Place 2",
   "jurisdiction": "Troup ISD",
-  "county": ["Smith"],
+  "county": [
+    "Smith"
+  ],
   "termStart": "2024-05-01",
   "termEnd": "2028-05-01",
   "contactInfo": {
@@ -16,5 +18,13 @@
     "phone": "(903) 842-3046",
     "website": "https://www.troupisd.org/board"
   },
-  "bio": "Donna Shipley serves as Vice President of the Troup ISD Board of Trustees. She is passionate about rural education and ensuring that Troup students have access to modern learning opportunities."
+  "bio": "Donna Shipley serves as Vice President of the Troup ISD Board of Trustees. She is passionate about rural education and ensuring that Troup students have access to modern learning opportunities.",
+  "sourceLinks": [
+    {
+      "title": "Public office website",
+      "url": "https://www.troupisd.org/board"
+    }
+  ],
+  "reviewStatus": "needs_source_review",
+  "lastVerifiedAt": "2026-05-01"
 }

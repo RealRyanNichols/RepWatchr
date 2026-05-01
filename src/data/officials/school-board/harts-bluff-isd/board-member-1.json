@@ -8,7 +8,9 @@
   "position": "School Board President",
   "district": "Place 1",
   "jurisdiction": "Harts Bluff ISD",
-  "county": ["Titus"],
+  "county": [
+    "Titus"
+  ],
   "termStart": "2024-05-01",
   "termEnd": "2028-05-01",
   "contactInfo": {
@@ -16,5 +18,13 @@
     "phone": "(903) 577-1442",
     "website": "https://www.hartsbluffisd.net/board"
   },
-  "bio": "Virgil Nash serves as President of the Harts Bluff ISD Board of Trustees. A Titus County cattle rancher, he is dedicated to preserving the small-district atmosphere while expanding academic resources for students."
+  "bio": "Virgil Nash serves as President of the Harts Bluff ISD Board of Trustees. A Titus County cattle rancher, he is dedicated to preserving the small-district atmosphere while expanding academic resources for students.",
+  "sourceLinks": [
+    {
+      "title": "Public office website",
+      "url": "https://www.hartsbluffisd.net/board"
+    }
+  ],
+  "reviewStatus": "needs_source_review",
+  "lastVerifiedAt": "2026-05-01"
 }

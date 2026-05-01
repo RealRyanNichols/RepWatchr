@@ -8,7 +8,9 @@
   "position": "School Board Vice President",
   "district": "Place 2",
   "jurisdiction": "Huntington ISD",
-  "county": ["Angelina"],
+  "county": [
+    "Angelina"
+  ],
   "termStart": "2023-05-01",
   "termEnd": "2027-05-01",
   "contactInfo": {
@@ -16,5 +18,13 @@
     "phone": "(936) 876-4284",
     "website": "https://www.huntingtonisd.org/board"
   },
-  "bio": "Brenda Oglesby serves as the Vice President of the Huntington ISD Board of Trustees. She champions student athletics and fine arts programs as essential components of a complete education."
+  "bio": "Brenda Oglesby serves as the Vice President of the Huntington ISD Board of Trustees. She champions student athletics and fine arts programs as essential components of a complete education.",
+  "sourceLinks": [
+    {
+      "title": "Public office website",
+      "url": "https://www.huntingtonisd.org/board"
+    }
+  ],
+  "reviewStatus": "needs_source_review",
+  "lastVerifiedAt": "2026-05-01"
 }

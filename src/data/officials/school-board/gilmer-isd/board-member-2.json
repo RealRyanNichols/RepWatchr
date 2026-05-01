@@ -8,7 +8,9 @@
   "position": "Vice President",
   "district": "Place 2",
   "jurisdiction": "Gilmer ISD",
-  "county": ["Upshur"],
+  "county": [
+    "Upshur"
+  ],
   "termStart": "2024-05-01",
   "termEnd": "2028-05-01",
   "contactInfo": {
@@ -16,5 +18,13 @@
     "phone": "(903) 841-7400",
     "website": "https://www.gilmerisd.org/board"
   },
-  "bio": "Sherry Waggoner is Vice President of the Gilmer ISD Board of Trustees. A real-estate agent and former Yamboree committee chair, she supports community engagement and fine-arts programming."
+  "bio": "Sherry Waggoner is Vice President of the Gilmer ISD Board of Trustees. A real-estate agent and former Yamboree committee chair, she supports community engagement and fine-arts programming.",
+  "sourceLinks": [
+    {
+      "title": "Public office website",
+      "url": "https://www.gilmerisd.org/board"
+    }
+  ],
+  "reviewStatus": "needs_source_review",
+  "lastVerifiedAt": "2026-05-01"
 }

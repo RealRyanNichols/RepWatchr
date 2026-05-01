@@ -7,7 +7,9 @@
   "level": "county",
   "position": "County Sheriff",
   "jurisdiction": "Tyler County",
-  "county": ["Tyler"],
+  "county": [
+    "Tyler"
+  ],
   "termStart": "2025-01-01",
   "termEnd": "2029-01-01",
   "contactInfo": {
@@ -23,5 +25,13 @@
     "Combat drug trafficking on Highway 69 and rural roads",
     "Maintain professional and courteous law enforcement services",
     "Support local volunteer emergency services with coordination"
-  ]
+  ],
+  "sourceLinks": [
+    {
+      "title": "Public office website",
+      "url": "https://www.tylercountytx.gov/sheriff"
+    }
+  ],
+  "reviewStatus": "needs_source_review",
+  "lastVerifiedAt": "2026-05-01"
 }

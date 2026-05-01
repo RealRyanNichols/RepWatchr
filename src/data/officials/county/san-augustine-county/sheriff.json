@@ -7,7 +7,9 @@
   "level": "county",
   "position": "County Sheriff",
   "jurisdiction": "San Augustine County",
-  "county": ["San Augustine"],
+  "county": [
+    "San Augustine"
+  ],
   "termStart": "2025-01-01",
   "termEnd": "2029-01-01",
   "contactInfo": {
@@ -23,5 +25,13 @@
     "Maintain professional standards in all department operations",
     "Enhance emergency preparedness for severe weather events",
     "Support local volunteer fire departments with coordination resources"
-  ]
+  ],
+  "sourceLinks": [
+    {
+      "title": "Public office website",
+      "url": "https://www.sanaugustinecountytx.org/sheriff"
+    }
+  ],
+  "reviewStatus": "needs_source_review",
+  "lastVerifiedAt": "2026-05-01"
 }

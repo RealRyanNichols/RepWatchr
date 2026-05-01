@@ -8,7 +8,9 @@
   "position": "School Board Secretary",
   "district": "Place 3",
   "jurisdiction": "Henderson ISD",
-  "county": ["Rusk"],
+  "county": [
+    "Rusk"
+  ],
   "termStart": "2023-05-01",
   "termEnd": "2027-05-01",
   "contactInfo": {
@@ -16,5 +18,13 @@
     "phone": "(903) 655-5000",
     "website": "https://www.hendersonisd.org/board"
   },
-  "bio": "Martha Boren serves as the Secretary of the Henderson ISD Board of Trustees. She brings meticulous attention to board proceedings and is dedicated to keeping the Henderson community well-informed about district matters."
+  "bio": "Martha Boren serves as the Secretary of the Henderson ISD Board of Trustees. She brings meticulous attention to board proceedings and is dedicated to keeping the Henderson community well-informed about district matters.",
+  "sourceLinks": [
+    {
+      "title": "Public office website",
+      "url": "https://www.hendersonisd.org/board"
+    }
+  ],
+  "reviewStatus": "needs_source_review",
+  "lastVerifiedAt": "2026-05-01"
 }

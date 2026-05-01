@@ -8,7 +8,9 @@
   "position": "School Board President",
   "district": "Place 1",
   "jurisdiction": "Chandler ISD",
-  "county": ["Henderson"],
+  "county": [
+    "Henderson"
+  ],
   "termStart": "2023-05-01",
   "termEnd": "2027-05-01",
   "contactInfo": {
@@ -16,5 +18,13 @@
     "phone": "(903) 849-2461",
     "website": "https://www.chandlerisd.org/board"
   },
-  "bio": "Steven Burks serves as the President of the Chandler ISD Board of Trustees. He is dedicated to responsible budget management and supporting academic programs that meet the needs of a growing student population."
+  "bio": "Steven Burks serves as the President of the Chandler ISD Board of Trustees. He is dedicated to responsible budget management and supporting academic programs that meet the needs of a growing student population.",
+  "sourceLinks": [
+    {
+      "title": "Public office website",
+      "url": "https://www.chandlerisd.org/board"
+    }
+  ],
+  "reviewStatus": "needs_source_review",
+  "lastVerifiedAt": "2026-05-01"
 }

@@ -8,7 +8,9 @@
   "position": "Vice President",
   "district": "Place 2",
   "jurisdiction": "Canton ISD",
-  "county": ["Van Zandt"],
+  "county": [
+    "Van Zandt"
+  ],
   "termStart": "2024-05-01",
   "termEnd": "2028-05-01",
   "contactInfo": {
@@ -16,5 +18,13 @@
     "phone": "(903) 567-4179",
     "website": "https://www.cantonisd.net/board"
   },
-  "bio": "Rebecca Harrell is Vice President of the Canton ISD Board of Trustees. A pediatrician and Canton resident, she champions student wellness initiatives and evidence-based academic programs."
+  "bio": "Rebecca Harrell is Vice President of the Canton ISD Board of Trustees. A pediatrician and Canton resident, she champions student wellness initiatives and evidence-based academic programs.",
+  "sourceLinks": [
+    {
+      "title": "Public office website",
+      "url": "https://www.cantonisd.net/board"
+    }
+  ],
+  "reviewStatus": "needs_source_review",
+  "lastVerifiedAt": "2026-05-01"
 }

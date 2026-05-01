@@ -8,7 +8,9 @@
   "position": "School Board President",
   "district": "Place 1",
   "jurisdiction": "Wills Point ISD",
-  "county": ["Van Zandt"],
+  "county": [
+    "Van Zandt"
+  ],
   "termStart": "2024-05-01",
   "termEnd": "2028-05-01",
   "contactInfo": {
@@ -16,5 +18,13 @@
     "phone": "(903) 873-2811",
     "website": "https://www.willspointisd.org/board"
   },
-  "bio": "Danny Estrada serves as President of the Wills Point ISD Board of Trustees. A Van Zandt County contractor and Tiger football supporter, he is dedicated to campus expansion and career-readiness programs."
+  "bio": "Danny Estrada serves as President of the Wills Point ISD Board of Trustees. A Van Zandt County contractor and Tiger football supporter, he is dedicated to campus expansion and career-readiness programs.",
+  "sourceLinks": [
+    {
+      "title": "Public office website",
+      "url": "https://www.willspointisd.org/board"
+    }
+  ],
+  "reviewStatus": "needs_source_review",
+  "lastVerifiedAt": "2026-05-01"
 }

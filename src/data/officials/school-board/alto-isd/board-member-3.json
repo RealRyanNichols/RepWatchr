@@ -8,7 +8,9 @@
   "position": "School Board Secretary",
   "district": "Place 3",
   "jurisdiction": "Alto ISD",
-  "county": ["Cherokee"],
+  "county": [
+    "Cherokee"
+  ],
   "termStart": "2023-05-01",
   "termEnd": "2027-05-01",
   "contactInfo": {
@@ -16,5 +18,13 @@
     "phone": "(936) 858-7111",
     "website": "https://www.altoisd.org/board"
   },
-  "bio": "Beverly Hancock serves as the Secretary of the Alto ISD Board of Trustees. She brings a strong commitment to student welfare and works to ensure the board operates with transparency and accountability."
+  "bio": "Beverly Hancock serves as the Secretary of the Alto ISD Board of Trustees. She brings a strong commitment to student welfare and works to ensure the board operates with transparency and accountability.",
+  "sourceLinks": [
+    {
+      "title": "Public office website",
+      "url": "https://www.altoisd.org/board"
+    }
+  ],
+  "reviewStatus": "needs_source_review",
+  "lastVerifiedAt": "2026-05-01"
 }

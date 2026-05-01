@@ -7,7 +7,9 @@
   "level": "county",
   "position": "District Attorney",
   "jurisdiction": "Titus County",
-  "county": ["Titus"],
+  "county": [
+    "Titus"
+  ],
   "termStart": "2023-01-01",
   "termEnd": "2027-01-01",
   "contactInfo": {
@@ -23,5 +25,13 @@
     "Advocate for the rights of crime victims",
     "Run an efficient and transparent DA's office",
     "Partner with law enforcement to reduce crime rates"
-  ]
+  ],
+  "sourceLinks": [
+    {
+      "title": "Public office website",
+      "url": "https://www.tituscountytx.org/district-attorney"
+    }
+  ],
+  "reviewStatus": "needs_source_review",
+  "lastVerifiedAt": "2026-05-01"
 }

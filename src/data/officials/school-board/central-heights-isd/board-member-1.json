@@ -8,7 +8,9 @@
   "position": "School Board President",
   "district": "Place 1",
   "jurisdiction": "Central Heights ISD",
-  "county": ["Nacogdoches"],
+  "county": [
+    "Nacogdoches"
+  ],
   "termStart": "2024-05-01",
   "termEnd": "2028-05-01",
   "contactInfo": {
@@ -16,5 +18,13 @@
     "phone": "(936) 564-2747",
     "website": "https://www.chisd.net/board"
   },
-  "bio": "Darrell Massey serves as President of the Central Heights ISD Board of Trustees. He is dedicated to maintaining the small-district advantage of personalized attention while investing in modern educational tools."
+  "bio": "Darrell Massey serves as President of the Central Heights ISD Board of Trustees. He is dedicated to maintaining the small-district advantage of personalized attention while investing in modern educational tools.",
+  "sourceLinks": [
+    {
+      "title": "Public office website",
+      "url": "https://www.chisd.net/board"
+    }
+  ],
+  "reviewStatus": "needs_source_review",
+  "lastVerifiedAt": "2026-05-01"
 }

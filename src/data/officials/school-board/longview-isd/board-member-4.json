@@ -8,7 +8,9 @@
   "position": "School Board Trustee, Assistant Secretary",
   "district": "Place 4",
   "jurisdiction": "Longview ISD",
-  "county": ["Gregg County"],
+  "county": [
+    "Gregg County"
+  ],
   "termStart": "2023-05-01",
   "termEnd": "2026-05-01",
   "contactInfo": {
@@ -23,14 +25,38 @@
   "occupation": "Educator / Nonprofit Leader",
   "employer": "Historical: Pine Tree ISD (current status requires verification)",
   "education": [
-    {"institution": "Longview ISD", "degree": "High School Diploma", "graduated": true},
-    {"institution": "Undergraduate institution requires verification", "degree": "Bachelor's (likely Education)", "graduated": true}
+    {
+      "institution": "Longview ISD",
+      "degree": "High School Diploma",
+      "graduated": true
+    },
+    {
+      "institution": "Undergraduate institution requires verification",
+      "degree": "Bachelor's (likely Education)",
+      "graduated": true
+    }
   ],
   "employmentHistory": [
-    {"employer": "Frisco ISD", "title": "Classroom Teacher", "period": "2001-era"},
-    {"employer": "Pine Tree ISD", "title": "Classroom Teacher", "period": "Historical"},
-    {"employer": "Pine Tree ISD", "title": "Instructional Specialist, Pine Tree High School", "period": "Historical"},
-    {"employer": "Pine Tree ISD", "title": "ELA Curriculum Coordinator (district-level)", "period": "Through at least 2023"}
+    {
+      "employer": "Frisco ISD",
+      "title": "Classroom Teacher",
+      "period": "2001-era"
+    },
+    {
+      "employer": "Pine Tree ISD",
+      "title": "Classroom Teacher",
+      "period": "Historical"
+    },
+    {
+      "employer": "Pine Tree ISD",
+      "title": "Instructional Specialist, Pine Tree High School",
+      "period": "Historical"
+    },
+    {
+      "employer": "Pine Tree ISD",
+      "title": "ELA Curriculum Coordinator (district-level)",
+      "period": "Through at least 2023"
+    }
   ],
   "affiliations": [
     "Longview ISD Education Foundation (President at 2023 filing)",
@@ -68,15 +94,39 @@
     "genderPolicy": "REQUIRES_FURTHER_EVIDENCE"
   },
   "notableVotes": [
-    {"meeting": "Aug 2023", "item": "Tax rate reduction from $1.3276 to $1.1422", "outcome": "Passed (board majority approved)"},
-    {"meeting": "Feb 2025", "item": "$2.77M surveillance contract", "outcome": "Approved"},
-    {"meeting": "2024", "item": "Superintendent Sheppard hire", "outcome": "Approved"}
+    {
+      "meeting": "Aug 2023",
+      "item": "Tax rate reduction from $1.3276 to $1.1422",
+      "outcome": "Passed (board majority approved)"
+    },
+    {
+      "meeting": "Feb 2025",
+      "item": "$2.77M surveillance contract",
+      "outcome": "Approved"
+    },
+    {
+      "meeting": "2024",
+      "item": "Superintendent Sheppard hire",
+      "outcome": "Approved"
+    }
   ],
   "sources": [
-    {"name": "Longview News-Journal, 2023 filing", "url": "https://www.news-journal.com/news/local/longtime-educator-files-for-seat-on-longview-isd-board-of-trustees/article_f2bb1a98-9c31-11ed-8faf-57dc5537521d.html"},
-    {"name": "Longview News-Journal, 2023 no opponents", "url": "https://www.news-journal.com/news/education/longview-candidates-draw-no-opponents-for-may-elections/article_90618af2-af0b-11ed-844b-c75431d8c6c9.html"},
-    {"name": "LISD Trustees honored, Jan 2025", "url": "https://w3.lisd.org/district/news/01132025-board-honored"},
-    {"name": "LISD BoardBook Premier", "url": "https://meetings.boardbook.org/public/Organization/2235"}
+    {
+      "name": "Longview News-Journal, 2023 filing",
+      "url": "https://www.news-journal.com/news/local/longtime-educator-files-for-seat-on-longview-isd-board-of-trustees/article_f2bb1a98-9c31-11ed-8faf-57dc5537521d.html"
+    },
+    {
+      "name": "Longview News-Journal, 2023 no opponents",
+      "url": "https://www.news-journal.com/news/education/longview-candidates-draw-no-opponents-for-may-elections/article_90618af2-af0b-11ed-844b-c75431d8c6c9.html"
+    },
+    {
+      "name": "LISD Trustees honored, Jan 2025",
+      "url": "https://w3.lisd.org/district/news/01132025-board-honored"
+    },
+    {
+      "name": "LISD BoardBook Premier",
+      "url": "https://meetings.boardbook.org/public/Organization/2235"
+    }
   ],
   "researchGaps": [
     "Confirm current employer and title",
@@ -91,5 +141,29 @@
     "BoardBook attendance record 2023-2026",
     "Confirm 2026 filing status with LISD elections coordinator (903-381-2200)"
   ],
-  "lastUpdated": "2026-04-16"
+  "lastUpdated": "2026-04-16",
+  "sourceLinks": [
+    {
+      "title": "Public office website",
+      "url": "https://w3.lisd.org"
+    },
+    {
+      "title": "Longview News-Journal, 2023 filing",
+      "url": "https://www.news-journal.com/news/local/longtime-educator-files-for-seat-on-longview-isd-board-of-trustees/article_f2bb1a98-9c31-11ed-8faf-57dc5537521d.html"
+    },
+    {
+      "title": "Longview News-Journal, 2023 no opponents",
+      "url": "https://www.news-journal.com/news/education/longview-candidates-draw-no-opponents-for-may-elections/article_90618af2-af0b-11ed-844b-c75431d8c6c9.html"
+    },
+    {
+      "title": "LISD Trustees honored, Jan 2025",
+      "url": "https://w3.lisd.org/district/news/01132025-board-honored"
+    },
+    {
+      "title": "LISD BoardBook Premier",
+      "url": "https://meetings.boardbook.org/public/Organization/2235"
+    }
+  ],
+  "reviewStatus": "needs_source_review",
+  "lastVerifiedAt": "2026-05-01"
 }

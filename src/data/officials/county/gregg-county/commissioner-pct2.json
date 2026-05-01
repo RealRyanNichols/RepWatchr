@@ -8,7 +8,9 @@
   "position": "Commissioner, Precinct 2",
   "district": "Precinct 2",
   "jurisdiction": "Gregg County",
-  "county": ["Gregg"],
+  "county": [
+    "Gregg"
+  ],
   "termStart": "2023-01-01",
   "termEnd": "2027-01-01",
   "contactInfo": {
@@ -23,5 +25,13 @@
     "Advocate for equitable county services",
     "Support community development programs",
     "Ensure transparent use of county funds"
-  ]
+  ],
+  "sourceLinks": [
+    {
+      "title": "Public office website",
+      "url": "https://www.co.gregg.tx.us/page/gregg.Commissioners"
+    }
+  ],
+  "reviewStatus": "needs_source_review",
+  "lastVerifiedAt": "2026-05-01"
 }

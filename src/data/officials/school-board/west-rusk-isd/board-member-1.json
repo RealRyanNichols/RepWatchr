@@ -8,7 +8,9 @@
   "position": "School Board President",
   "district": "Place 1",
   "jurisdiction": "West Rusk ISD",
-  "county": ["Rusk"],
+  "county": [
+    "Rusk"
+  ],
   "termStart": "2024-05-01",
   "termEnd": "2028-05-01",
   "contactInfo": {
@@ -16,5 +18,13 @@
     "phone": "(903) 895-4628",
     "website": "https://www.westruskisd.org/board"
   },
-  "bio": "Howard Storey serves as the President of the West Rusk ISD Board of Trustees. He is committed to honoring the district's heritage while building modern programs that prepare students for college and careers."
+  "bio": "Howard Storey serves as the President of the West Rusk ISD Board of Trustees. He is committed to honoring the district's heritage while building modern programs that prepare students for college and careers.",
+  "sourceLinks": [
+    {
+      "title": "Public office website",
+      "url": "https://www.westruskisd.org/board"
+    }
+  ],
+  "reviewStatus": "needs_source_review",
+  "lastVerifiedAt": "2026-05-01"
 }

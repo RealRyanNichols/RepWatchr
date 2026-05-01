@@ -7,7 +7,9 @@
   "level": "county",
   "position": "County Sheriff",
   "jurisdiction": "Harrison County",
-  "county": ["Harrison"],
+  "county": [
+    "Harrison"
+  ],
   "termStart": "2025-01-01",
   "termEnd": "2029-01-01",
   "contactInfo": {
@@ -23,5 +25,13 @@
     "Improve county jail conditions and inmate programs",
     "Strengthen cooperation with the Louisiana border counties",
     "Support Caddo Lake area property protection efforts"
-  ]
+  ],
+  "sourceLinks": [
+    {
+      "title": "Public office website",
+      "url": "https://www.harrisoncountytx.com/sheriff"
+    }
+  ],
+  "reviewStatus": "needs_source_review",
+  "lastVerifiedAt": "2026-05-01"
 }

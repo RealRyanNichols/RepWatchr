@@ -8,7 +8,9 @@
   "position": "Secretary",
   "district": "Place 3",
   "jurisdiction": "Mount Vernon ISD",
-  "county": ["Franklin"],
+  "county": [
+    "Franklin"
+  ],
   "termStart": "2023-05-01",
   "termEnd": "2027-05-01",
   "contactInfo": {
@@ -16,5 +18,13 @@
     "phone": "(903) 537-2518",
     "website": "https://www.mvisd.net/board"
   },
-  "bio": "Grant Haskell serves as Secretary of the Mount Vernon ISD Board of Trustees. A dairy farmer and Franklin County native, he supports agricultural-science education and responsible tax-rate management for the district."
+  "bio": "Grant Haskell serves as Secretary of the Mount Vernon ISD Board of Trustees. A dairy farmer and Franklin County native, he supports agricultural-science education and responsible tax-rate management for the district.",
+  "sourceLinks": [
+    {
+      "title": "Public office website",
+      "url": "https://www.mvisd.net/board"
+    }
+  ],
+  "reviewStatus": "needs_source_review",
+  "lastVerifiedAt": "2026-05-01"
 }

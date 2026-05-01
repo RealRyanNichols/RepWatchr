@@ -8,7 +8,9 @@
   "position": "Secretary",
   "district": "Place 3",
   "jurisdiction": "Daingerfield-Lone Star ISD",
-  "county": ["Morris"],
+  "county": [
+    "Morris"
+  ],
   "termStart": "2024-05-01",
   "termEnd": "2028-05-01",
   "contactInfo": {
@@ -16,5 +18,13 @@
     "phone": "(903) 645-2238",
     "website": "https://www.dlsisd.net/board"
   },
-  "bio": "Leon Griffith serves as Secretary of the Daingerfield-Lone Star ISD Board of Trustees. A retired steelworker and union leader, he advocates for equitable funding and strong vocational programs in the district."
+  "bio": "Leon Griffith serves as Secretary of the Daingerfield-Lone Star ISD Board of Trustees. A retired steelworker and union leader, he advocates for equitable funding and strong vocational programs in the district.",
+  "sourceLinks": [
+    {
+      "title": "Public office website",
+      "url": "https://www.dlsisd.net/board"
+    }
+  ],
+  "reviewStatus": "needs_source_review",
+  "lastVerifiedAt": "2026-05-01"
 }

@@ -8,7 +8,9 @@
   "position": "School Board Vice President",
   "district": "Place 2",
   "jurisdiction": "Pine Tree ISD",
-  "county": ["Gregg"],
+  "county": [
+    "Gregg"
+  ],
   "termStart": "2024-05-01",
   "termEnd": "2028-05-01",
   "contactInfo": {
@@ -16,5 +18,13 @@
     "phone": "(903) 295-5000",
     "website": "https://www.pinetreeisd.net/board"
   },
-  "bio": "Carolyn Phelps serves as Vice President of the Pine Tree ISD Board of Trustees. She supports expanding career and technical education pathways to prepare students for the modern workforce."
+  "bio": "Carolyn Phelps serves as Vice President of the Pine Tree ISD Board of Trustees. She supports expanding career and technical education pathways to prepare students for the modern workforce.",
+  "sourceLinks": [
+    {
+      "title": "Public office website",
+      "url": "https://www.pinetreeisd.net/board"
+    }
+  ],
+  "reviewStatus": "needs_source_review",
+  "lastVerifiedAt": "2026-05-01"
 }
