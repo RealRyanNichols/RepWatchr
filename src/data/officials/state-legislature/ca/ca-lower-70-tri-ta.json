@@ -55,7 +55,18 @@
     {
       "title": "Public source",
       "url": "https://www.ci.westminster.ca.us/"
+    },
+    {
+      "title": "Wikidata sourced profile image record",
+      "url": "https://www.wikidata.org/entity/Q10831502"
+    },
+    {
+      "title": "Wikimedia Commons profile image",
+      "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Tri%20Ta%2C%202022%20%28cropped%29.jpg"
     }
   ],
-  "lastVerifiedAt": "2026-05-01"
+  "lastVerifiedAt": "2026-05-01",
+  "photo": "/images/officials/state-legislature/ca/tri-ta.jpg",
+  "photoSourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Tri%20Ta%2C%202022%20%28cropped%29.jpg",
+  "photoCredit": "Wikimedia Commons image referenced by sourced Wikipedia/Wikidata record"
 }

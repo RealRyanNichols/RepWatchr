@@ -63,7 +63,18 @@
     {
       "title": "Initial list page (requires authorization token)",
       "url": "https://www.legis.ga.gov/members/house/5010?session=1029"
+    },
+    {
+      "title": "Wikidata sourced profile image record",
+      "url": "https://www.wikidata.org/entity/Q108108234"
+    },
+    {
+      "title": "Wikimedia Commons profile image",
+      "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Hagan-leesa-5010.jpg"
     }
   ],
-  "lastVerifiedAt": "2026-05-01"
+  "lastVerifiedAt": "2026-05-01",
+  "photo": "/images/officials/state-legislature/ga/leesa-hagan.jpg",
+  "photoSourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Hagan-leesa-5010.jpg",
+  "photoCredit": "Wikimedia Commons image referenced by sourced Wikipedia/Wikidata record"
 }

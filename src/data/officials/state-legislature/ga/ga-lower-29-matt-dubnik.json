@@ -63,7 +63,18 @@
     {
       "title": "API members list (requires authorization token)",
       "url": "https://www.legis.ga.gov/api/members/list/1031"
+    },
+    {
+      "title": "Wikidata sourced profile image record",
+      "url": "https://www.wikidata.org/entity/Q64853279"
+    },
+    {
+      "title": "Wikimedia Commons profile image",
+      "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Official%20headshot%20of%20Matt%20Dubnik.jpg"
     }
   ],
-  "lastVerifiedAt": "2026-05-01"
+  "lastVerifiedAt": "2026-05-01",
+  "photo": "/images/officials/state-legislature/ga/matt-dubnik.jpg",
+  "photoSourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Official%20headshot%20of%20Matt%20Dubnik.jpg",
+  "photoCredit": "Wikimedia Commons image referenced by sourced Wikipedia/Wikidata record"
 }

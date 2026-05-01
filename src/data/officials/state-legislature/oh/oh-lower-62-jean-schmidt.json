@@ -51,7 +51,18 @@
     {
       "title": "member list page",
       "url": "https://www.legislature.ohio.gov/legislators/house-directory"
+    },
+    {
+      "title": "Wikidata sourced profile image record",
+      "url": "https://www.wikidata.org/entity/Q465887"
+    },
+    {
+      "title": "Wikimedia Commons profile image",
+      "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Jean%20Schmidt%2C%20Government%20Printing%20Office.jpg"
     }
   ],
-  "lastVerifiedAt": "2026-05-01"
+  "lastVerifiedAt": "2026-05-01",
+  "photo": "/images/officials/state-legislature/oh/jean-schmidt.jpg",
+  "photoSourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Jean%20Schmidt%2C%20Government%20Printing%20Office.jpg",
+  "photoCredit": "Wikimedia Commons image referenced by sourced Wikipedia/Wikidata record"
 }
