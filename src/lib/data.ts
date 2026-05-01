@@ -98,6 +98,21 @@ const TEXAS_EXPECTED_SEATS = {
   stateSenate: 31,
 } as const;
 
+const NATIONAL_COMPLETION_TARGETS = {
+  federalAndStateOfficials: 19_284,
+  allElectedOfficials: 519_682,
+  localGovernmentUnits: 90_837,
+  countyGovernments: 3_031,
+  municipalAndTownshipGovernments: 35_705,
+  independentSchoolDistrictGovernments: 12_546,
+  specialDistrictGovernments: 39_555,
+} as const;
+
+function completionPercent(loaded: number, target: number): number {
+  if (target <= 0) return 0;
+  return Math.round((loaded / target) * 1000) / 10;
+}
+
 // ---------------------------------------------------------------------------
 // Officials
 // ---------------------------------------------------------------------------
@@ -392,7 +407,18 @@ export function getRepWatchrDataStats() {
     (official) => official.level === "state" && !stateLegislativePositions.has(official.position),
   ).length;
   const federalAndStateSeatProfilesLoaded = federalProfilesLoaded + stateLegislatorProfilesLoaded;
+  const federalAndStateOfficeProfilesLoaded =
+    federalProfilesLoaded + stateLegislatorProfilesLoaded + stateExecutiveProfilesLoaded;
   const federalAndStateExpectedSeats = federalExpectedSeats + stateLegislatureExpectedSeats;
+  const nonSchoolOfficialFiles = officials.filter((official) => official.level !== "school-board").length;
+  const nationalFederalStateOfficialGaps = Math.max(
+    0,
+    NATIONAL_COMPLETION_TARGETS.federalAndStateOfficials - federalAndStateOfficeProfilesLoaded,
+  );
+  const nationalAllElectedOfficialGapsFromOfficialTree = Math.max(
+    0,
+    NATIONAL_COMPLETION_TARGETS.allElectedOfficials - officials.length,
+  );
 
   fundingSummaries.forEach((funding) => {
     funding.sources.forEach((source) => {
@@ -457,7 +483,7 @@ export function getRepWatchrDataStats() {
 
   return {
     officialFiles: officials.length,
-    nonSchoolOfficialFiles: officials.filter((official) => official.level !== "school-board").length,
+    nonSchoolOfficialFiles,
     legacySchoolBoardOfficialFiles: levelCounts["school-board"],
     levelCounts,
     counties: counties.size,
@@ -472,6 +498,7 @@ export function getRepWatchrDataStats() {
     stateLegislatureExpectedSeats,
     stateLegislatureJurisdictionsLoaded,
     stateExecutiveProfilesLoaded,
+    federalAndStateOfficeProfilesLoaded,
     texasHouseProfilesLoaded,
     texasHouseExpectedSeats: TEXAS_EXPECTED_SEATS.stateHouse,
     texasSenateProfilesLoaded,
@@ -480,6 +507,24 @@ export function getRepWatchrDataStats() {
     federalAndStateSeatProfilesLoaded,
     federalAndStateExpectedSeats,
     federalAndStateProfileGaps: Math.max(0, federalAndStateExpectedSeats - federalAndStateSeatProfilesLoaded),
+    nationalFederalStateOfficialEstimate: NATIONAL_COMPLETION_TARGETS.federalAndStateOfficials,
+    nationalFederalStateOfficialGaps,
+    nationalFederalStateCompletionPercent: completionPercent(
+      federalAndStateOfficeProfilesLoaded,
+      NATIONAL_COMPLETION_TARGETS.federalAndStateOfficials,
+    ),
+    nationalAllElectedOfficialEstimate: NATIONAL_COMPLETION_TARGETS.allElectedOfficials,
+    nationalAllElectedOfficialGapsFromOfficialTree,
+    nationalAllElectedOfficialCompletionPercentFromOfficialTree: completionPercent(
+      officials.length,
+      NATIONAL_COMPLETION_TARGETS.allElectedOfficials,
+    ),
+    nationalLocalGovernmentUnits: NATIONAL_COMPLETION_TARGETS.localGovernmentUnits,
+    nationalCountyGovernmentUnits: NATIONAL_COMPLETION_TARGETS.countyGovernments,
+    nationalMunicipalAndTownshipGovernmentUnits: NATIONAL_COMPLETION_TARGETS.municipalAndTownshipGovernments,
+    nationalIndependentSchoolDistrictGovernmentUnits:
+      NATIONAL_COMPLETION_TARGETS.independentSchoolDistrictGovernments,
+    nationalSpecialDistrictGovernmentUnits: NATIONAL_COMPLETION_TARGETS.specialDistrictGovernments,
     countyCityOfficialFiles: levelCounts.county + levelCounts.city,
     sourceSeededOfficialProfiles: reviewStatusCounts.source_seeded ?? 0,
     verifiedOfficialProfiles: reviewStatusCounts.verified ?? 0,

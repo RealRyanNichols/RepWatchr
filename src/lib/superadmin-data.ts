@@ -12,6 +12,10 @@ export type SuperAdminSnapshot = {
   schoolBoardCompletion: number;
   sourceUrls: number;
   openResearchItems: number;
+  federalStateOfficialCompletion: number;
+  federalStateOfficialGaps: number;
+  allElectedOfficialCompletion: number;
+  allElectedOfficialGaps: number;
   scorecards: number;
   redFlagItems: number;
   newsArticles: number;
@@ -31,15 +35,27 @@ export function buildSuperAdminSnapshot(): SuperAdminSnapshot {
   const dataStats = getRepWatchrDataStats();
   const schoolStats = getSchoolBoardStats();
   const completion = getSchoolBoardCompletionReport();
+  const visibleElectedProfiles = dataStats.nonSchoolOfficialFiles + schoolStats.candidates;
+  const allElectedOfficialGaps = Math.max(
+    0,
+    dataStats.nationalAllElectedOfficialEstimate - visibleElectedProfiles,
+  );
+  const allElectedOfficialCompletion = Math.round(
+    (visibleElectedProfiles / dataStats.nationalAllElectedOfficialEstimate) * 1000,
+  ) / 10;
 
   return {
-    visibleProfiles: dataStats.nonSchoolOfficialFiles + schoolStats.candidates,
+    visibleProfiles: visibleElectedProfiles,
     nonSchoolOfficials: dataStats.nonSchoolOfficialFiles,
     schoolBoardProfiles: schoolStats.candidates,
     schoolBoardDistricts: schoolStats.districts,
     schoolBoardCompletion: completion.overallPercent,
     sourceUrls: dataStats.publicSourceUrls + schoolStats.sourceCount,
     openResearchItems: schoolStats.gapCount + completion.totalBrokenSources,
+    federalStateOfficialCompletion: dataStats.nationalFederalStateCompletionPercent,
+    federalStateOfficialGaps: dataStats.nationalFederalStateOfficialGaps,
+    allElectedOfficialCompletion,
+    allElectedOfficialGaps,
     scorecards: dataStats.scoreCards,
     redFlagItems: dataStats.redFlagItems,
     newsArticles: dataStats.newsArticles,
@@ -53,8 +69,32 @@ export function buildSuperAdminWatchItems(): SuperAdminWatchItem[] {
   const completion = getSchoolBoardCompletionReport();
   const sourceUrls = dataStats.publicSourceUrls + schoolStats.sourceCount;
   const openResearchItems = schoolStats.gapCount + completion.totalBrokenSources;
+  const visibleElectedProfiles = dataStats.nonSchoolOfficialFiles + schoolStats.candidates;
+  const allElectedOfficialGaps = Math.max(
+    0,
+    dataStats.nationalAllElectedOfficialEstimate - visibleElectedProfiles,
+  );
+  const allElectedOfficialCompletion = Math.round(
+    (visibleElectedProfiles / dataStats.nationalAllElectedOfficialEstimate) * 1000,
+  ) / 10;
 
   return [
+    {
+      id: "national-official-completion",
+      label: "National elected-official completion",
+      status: allElectedOfficialCompletion >= 25 ? "yellow" : "red",
+      value: `${allElectedOfficialCompletion}%`,
+      detail: `${visibleElectedProfiles.toLocaleString()} elected profiles are surfaced across officials and school boards. Rough all-elected national gap: ${allElectedOfficialGaps.toLocaleString()} profiles.`,
+      href: "/buildout",
+    },
+    {
+      id: "federal-state-official-completion",
+      label: "Federal/state official completion",
+      status: dataStats.nationalFederalStateCompletionPercent >= 75 ? "green" : "yellow",
+      value: `${dataStats.nationalFederalStateCompletionPercent}%`,
+      detail: `${dataStats.federalAndStateOfficeProfilesLoaded.toLocaleString()}/${dataStats.nationalFederalStateOfficialEstimate.toLocaleString()} broad federal/state official benchmark profiles are loaded.`,
+      href: "/officials",
+    },
     {
       id: "texas-school-board-completion",
       label: "Texas school-board completion",

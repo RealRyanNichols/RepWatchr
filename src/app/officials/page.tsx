@@ -108,9 +108,9 @@ export default async function OfficialsPage({
   );
   const statCards = [
     {
-      label: "Federal/state seats",
-      value: formatNumber(dataStats.federalAndStateSeatProfilesLoaded),
-      detail: `${dataStats.federalProfilesLoaded}/${dataStats.federalExpectedSeats} current federal seats plus ${formatNumber(dataStats.stateLegislatorProfilesLoaded)} state-legislative profiles across ${dataStats.stateLegislatureJurisdictionsLoaded} jurisdictions. ${formatNumber(dataStats.stateExecutiveProfilesLoaded)} statewide executive/public-office profiles are loaded.`,
+      label: "Federal/state officials",
+      value: formatNumber(dataStats.federalAndStateOfficeProfilesLoaded),
+      detail: `${dataStats.federalProfilesLoaded}/${dataStats.federalExpectedSeats} current federal seats plus ${formatNumber(dataStats.stateLegislatorProfilesLoaded)} state-legislative profiles and ${formatNumber(dataStats.stateExecutiveProfilesLoaded)} statewide executive/public-office profiles. ${dataStats.nationalFederalStateCompletionPercent}% of the broad federal/state benchmark is live.`,
     },
     {
       label: "Source-seeded profiles",

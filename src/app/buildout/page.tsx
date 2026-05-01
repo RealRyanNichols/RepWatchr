@@ -294,11 +294,22 @@ export default function BuildoutDashboardPage() {
   const voteWeightedIdeologyProfiles = ideologyProfiles.filter((profile) => profile.ideologyScore !== null);
   const pendingIdeologyProfiles = ideologyProfiles.length - voteWeightedIdeologyProfiles.length;
   const loadedOfficialProfiles = dataStats.nonSchoolOfficialFiles;
-  const sourceUrlCount = dataStats.publicSourceUrls + stats.sourceCount;
-  const openWorkCount = officialBuildoutStats.incompleteProfiles + stats.gapCount + report.totalBrokenSources;
-  const federalAndStateSeatPercent = Math.round(
-    (dataStats.federalAndStateSeatProfilesLoaded / dataStats.federalAndStateExpectedSeats) * 100,
+  const electedProfilesLoaded = dataStats.nonSchoolOfficialFiles + stats.candidates;
+  const allElectedOfficialGaps = Math.max(
+    0,
+    dataStats.nationalAllElectedOfficialEstimate - electedProfilesLoaded,
   );
+  const allElectedCompletionPercent = Math.round(
+    (electedProfilesLoaded / dataStats.nationalAllElectedOfficialEstimate) * 1000,
+  ) / 10;
+  const sourceUrlCount = dataStats.publicSourceUrls + stats.sourceCount;
+  const openWorkCount =
+    officialBuildoutStats.incompleteProfiles +
+    dataStats.nationalFederalStateOfficialGaps +
+    allElectedOfficialGaps +
+    stats.gapCount +
+    report.totalBrokenSources;
+  const federalAndStateSeatPercent = dataStats.nationalFederalStateCompletionPercent;
 
   // Sort districts by completion ascending - show what needs work first.
   const sortedDistricts = [...report.districtCompletions].sort((a, b) => a.percent - b.percent);
@@ -313,9 +324,15 @@ export default function BuildoutDashboardPage() {
     },
     {
       label: "Federal and state seat profiles",
-      value: dataStats.federalAndStateSeatProfilesLoaded,
-      status: `${dataStats.federalProfilesLoaded}/${dataStats.federalExpectedSeats} current federal seats are loaded. ${dataStats.stateLegislatorProfilesLoaded.toLocaleString()} state-legislative profiles across ${dataStats.stateLegislatureJurisdictionsLoaded} jurisdictions are represented by person profile files, plus ${dataStats.stateExecutiveProfilesLoaded.toLocaleString()} statewide executive/public-office profiles.`,
+      value: dataStats.federalAndStateOfficeProfilesLoaded,
+      status: `${dataStats.federalProfilesLoaded}/${dataStats.federalExpectedSeats} current federal seats are loaded. ${dataStats.stateLegislatorProfilesLoaded.toLocaleString()} state-legislative profiles and ${dataStats.stateExecutiveProfilesLoaded.toLocaleString()} state executive/public-office profiles are loaded. That is ${dataStats.nationalFederalStateCompletionPercent}% of the broad ${dataStats.nationalFederalStateOfficialEstimate.toLocaleString()} federal/state benchmark.`,
       href: "/officials",
+    },
+    {
+      label: "All elected-office profile surface",
+      value: electedProfilesLoaded,
+      status: `${allElectedCompletionPercent}% of the rough ${dataStats.nationalAllElectedOfficialEstimate.toLocaleString()} all-elected-official benchmark is loaded when officials plus school-board dossiers are counted. ${allElectedOfficialGaps.toLocaleString()} elected profiles remain for true national completion.`,
+      href: "/buildout",
     },
     {
       label: "County and city official files",
@@ -424,10 +441,16 @@ export default function BuildoutDashboardPage() {
   ];
   const notTrackedSurfaces = [
     {
-      label: "Expected federal and state seat gaps",
-      value: dataStats.federalAndStateProfileGaps,
-      status: `${dataStats.federalProfileGaps} current federal seat gaps remain in the current import. State-legislative profiles are loaded from the current OpenStates public roster; missing photos, vote records, funding, and scorecards remain separate buildout gaps.`,
+      label: "Estimated federal/state officials left",
+      value: dataStats.nationalFederalStateOfficialGaps,
+      status: `${dataStats.federalAndStateOfficeProfilesLoaded.toLocaleString()}/${dataStats.nationalFederalStateOfficialEstimate.toLocaleString()} estimated federal/state official profiles are loaded. This is a benchmark gap, not a negative finding.`,
       href: "/officials",
+    },
+    {
+      label: "Estimated all elected officials left",
+      value: allElectedOfficialGaps,
+      status: `${electedProfilesLoaded.toLocaleString()} elected profiles are surfaced across officials and school-board dossiers. The rough all-elected-official benchmark is ${dataStats.nationalAllElectedOfficialEstimate.toLocaleString()}, so this is the long national buildout queue.`,
+      href: "/buildout",
     },
     {
       label: "Non-school officials without scorecards",
@@ -518,6 +541,16 @@ export default function BuildoutDashboardPage() {
       detail: `${nationalSummary.stateCount} states plus ${nationalSummary.territoryAndDistrictCount} district/territory rows are in the national buildout model. ${loadedJurisdictionRows} are green from loaded records.`,
     },
     {
+      label: "Federal/state loaded",
+      value: dataStats.federalAndStateOfficeProfilesLoaded,
+      detail: `${dataStats.nationalFederalStateCompletionPercent}% of the ${dataStats.nationalFederalStateOfficialEstimate.toLocaleString()} broad federal/state official benchmark is surfaced.`,
+    },
+    {
+      label: "All elected loaded",
+      value: electedProfilesLoaded,
+      detail: `${allElectedCompletionPercent}% of the rough ${dataStats.nationalAllElectedOfficialEstimate.toLocaleString()} all-elected-official benchmark is surfaced across officials and school-board dossiers.`,
+    },
+    {
       label: "Government lanes",
       value: nationalSummary.governmentScopeCount,
       detail: "Federal, state, local, school-board, tribal, courts, special districts, and public-power roles have source plans.",
@@ -553,7 +586,7 @@ export default function BuildoutDashboardPage() {
             <div className="rounded-2xl border border-blue-200 bg-white p-5 shadow-sm">
               <p className="text-xs font-black uppercase tracking-wide text-blue-700">Loaded officials</p>
               <p className="mt-1 text-4xl font-black text-blue-950">{loadedOfficialProfiles.toLocaleString()}</p>
-              <p className="mt-1 text-xs font-semibold text-gray-500">{dataStats.federalAndStateSeatProfilesLoaded.toLocaleString()} federal/state legislative seat profiles + {dataStats.stateExecutiveProfilesLoaded.toLocaleString()} state executive/public-office files + {dataStats.countyCityOfficialFiles} county/city files</p>
+              <p className="mt-1 text-xs font-semibold text-gray-500">{dataStats.federalAndStateOfficeProfilesLoaded.toLocaleString()} federal/state official profiles + {dataStats.countyCityOfficialFiles} county/city files. School-board dossiers are tracked separately.</p>
             </div>
             <div className="rounded-2xl border border-emerald-200 bg-white p-5 shadow-sm">
               <p className="text-xs font-black uppercase tracking-wide text-emerald-700">Full official profiles</p>
@@ -562,15 +595,15 @@ export default function BuildoutDashboardPage() {
               <div className="mt-3"><ProgressBar percent={officialBuildoutStats.averageCompletionPercent} tone={toneFor(officialBuildoutStats.averageCompletionPercent)} /></div>
             </div>
             <div className="rounded-2xl border border-blue-200 bg-white p-5 shadow-sm">
-              <p className="text-xs font-black uppercase tracking-wide text-emerald-700">Federal/state seats</p>
-              <p className="mt-1 text-4xl font-black text-emerald-700">{dataStats.federalAndStateSeatProfilesLoaded}/{dataStats.federalAndStateExpectedSeats}</p>
-              <p className="mt-1 text-xs font-semibold text-gray-500">{dataStats.federalAndStateProfileGaps} current federal seat/profile gap{dataStats.federalAndStateProfileGaps === 1 ? "" : "s"} in the current import</p>
+              <p className="text-xs font-black uppercase tracking-wide text-emerald-700">Federal/state benchmark</p>
+              <p className="mt-1 text-4xl font-black text-emerald-700">{dataStats.nationalFederalStateCompletionPercent}%</p>
+              <p className="mt-1 text-xs font-semibold text-gray-500">{dataStats.federalAndStateOfficeProfilesLoaded.toLocaleString()}/{dataStats.nationalFederalStateOfficialEstimate.toLocaleString()} estimated federal/state officials loaded</p>
               <div className="mt-3"><ProgressBar percent={federalAndStateSeatPercent} tone="green" /></div>
             </div>
             <div className="rounded-2xl border border-red-200 bg-white p-5 shadow-sm">
               <p className="text-xs font-black uppercase tracking-wide text-red-700">Open work</p>
               <p className="mt-1 text-4xl font-black text-red-700">{openWorkCount.toLocaleString()}</p>
-              <p className="mt-1 text-xs font-semibold text-gray-500">{officialBuildoutStats.incompleteProfiles} incomplete officials + {stats.gapCount} research gaps + {report.totalBrokenSources} empty source URLs</p>
+              <p className="mt-1 text-xs font-semibold text-gray-500">{officialBuildoutStats.incompleteProfiles} incomplete official profiles + {dataStats.nationalFederalStateOfficialGaps.toLocaleString()} federal/state benchmark gaps + {allElectedOfficialGaps.toLocaleString()} all-elected benchmark gaps</p>
             </div>
           </div>
         </div>

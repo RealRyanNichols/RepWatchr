@@ -13,6 +13,11 @@ function nonZeroStateCount(counts: Record<string, number>) {
   return Object.values(counts).filter((value) => value > 0).length;
 }
 
+function completionPercent(loaded: number, target: number) {
+  if (target <= 0) return 0;
+  return Math.round((loaded / target) * 1000) / 10;
+}
+
 export async function GET() {
   const officials = getAllOfficials();
   const dataStats = getRepWatchrDataStats();
@@ -55,6 +60,15 @@ export async function GET() {
   );
   const totalPublicProfiles =
     dataStats.officialFiles + schoolStats.candidates + attorneyStats.totalProfiles + mediaStats.totalProfiles;
+  const electedProfilesLoaded = dataStats.nonSchoolOfficialFiles + schoolStats.candidates;
+  const allElectedOfficialGaps = Math.max(
+    0,
+    dataStats.nationalAllElectedOfficialEstimate - electedProfilesLoaded,
+  );
+  const allElectedOfficialCompletionPercent = completionPercent(
+    electedProfilesLoaded,
+    dataStats.nationalAllElectedOfficialEstimate,
+  );
   const sourceLinksSurfaced =
     dataStats.publicSourceUrls + schoolStats.sourceCount + attorneyStats.sourceLinks + mediaStats.sourceLinks;
 
@@ -65,6 +79,15 @@ export async function GET() {
       loadedSpotlightStates: loadedSpotlightStates.size,
       queuedJurisdictions: Math.max(0, nationalSummary.enabledJurisdictions - loadedSpotlightStates.size),
       governmentScopeCount: nationalSummary.governmentScopeCount,
+      federalStateOfficialProfilesLoaded: dataStats.federalAndStateOfficeProfilesLoaded,
+      federalStateOfficialEstimate: dataStats.nationalFederalStateOfficialEstimate,
+      federalStateOfficialCompletionPercent: dataStats.nationalFederalStateCompletionPercent,
+      federalStateOfficialGaps: dataStats.nationalFederalStateOfficialGaps,
+      electedProfilesLoaded,
+      allElectedOfficialEstimate: dataStats.nationalAllElectedOfficialEstimate,
+      allElectedOfficialCompletionPercent,
+      allElectedOfficialGaps,
+      localGovernmentUnits: dataStats.nationalLocalGovernmentUnits,
     },
     spotlights: [
       {
@@ -73,8 +96,8 @@ export async function GET() {
         value: dataStats.officialFiles,
         loadedStates: nonZeroStateCount(officialCountsByState),
         href: "/officials",
-        detail: `${dataStats.federalProfilesLoaded.toLocaleString()}/${dataStats.federalExpectedSeats.toLocaleString()} current federal seat profiles plus ${dataStats.stateLegislatorProfilesLoaded.toLocaleString()} state-legislative profiles across ${dataStats.stateLegislatureJurisdictionsLoaded} jurisdictions. ${officialBuildout.completeProfiles.toLocaleString()}/${officialBuildout.totalProfiles.toLocaleString()} official pages are full profiles.`,
-        notTracked: `${officialBuildout.incompleteProfiles.toLocaleString()} official profiles still need buildout. ${dataStats.federalProfileGaps.toLocaleString()} current federal seat gaps remain; state profile gaps now mostly mean missing photos, vote records, funding, scorecards, or source review.`,
+        detail: `${dataStats.officialFiles.toLocaleString()} profiles are live on the officials page. ${dataStats.federalAndStateOfficeProfilesLoaded.toLocaleString()}/${dataStats.nationalFederalStateOfficialEstimate.toLocaleString()} estimated federal/state official profiles are loaded (${dataStats.nationalFederalStateCompletionPercent}%). ${officialBuildout.completeProfiles.toLocaleString()}/${officialBuildout.totalProfiles.toLocaleString()} official pages are full profiles.`,
+        notTracked: `${officialBuildout.incompleteProfiles.toLocaleString()} official profiles still need deeper buildout. Rough federal/state gap: ${dataStats.nationalFederalStateOfficialGaps.toLocaleString()} profiles. True all-elected national gap after loaded school-board dossiers: ${allElectedOfficialGaps.toLocaleString()} profiles.`,
       },
       {
         id: "school-boards",
@@ -109,6 +132,16 @@ export async function GET() {
         label: "Public profiles surfaced",
         value: totalPublicProfiles,
         detail: "Officials, school-board members, attorneys/law firms, and media profiles currently loaded.",
+      },
+      {
+        label: "Federal/state official completion",
+        value: dataStats.federalAndStateOfficeProfilesLoaded,
+        detail: `${dataStats.nationalFederalStateCompletionPercent}% of the broad federal/state benchmark is loaded (${dataStats.federalAndStateOfficeProfilesLoaded.toLocaleString()}/${dataStats.nationalFederalStateOfficialEstimate.toLocaleString()}).`,
+      },
+      {
+        label: "All elected-office completion",
+        value: electedProfilesLoaded,
+        detail: `${allElectedOfficialCompletionPercent}% of the rough all-elected-official benchmark is loaded when officials plus school-board dossiers are counted (${electedProfilesLoaded.toLocaleString()}/${dataStats.nationalAllElectedOfficialEstimate.toLocaleString()}).`,
       },
       {
         label: "Source links surfaced",
