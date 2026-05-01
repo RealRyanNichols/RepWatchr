@@ -2,7 +2,6 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import Image from "next/image";
 import {
-  getAllOfficials,
   getOfficialWithScores,
   getScoreCard,
   getFundingSummary,
@@ -32,9 +31,11 @@ import ProfileOpenTracker from "@/components/shared/ProfileOpenTracker";
 import ProfileScorecardVote from "@/components/scorecards/ProfileScorecardVote";
 import OfficialSocialPanel from "@/components/officials/OfficialSocialPanel";
 
+export const revalidate = 86400;
+export const dynamicParams = true;
+
 export async function generateStaticParams() {
-  const officials = getAllOfficials();
-  return officials.map((o) => ({ id: o.id }));
+  return [];
 }
 
 export async function generateMetadata({

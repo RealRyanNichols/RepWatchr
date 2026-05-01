@@ -1,4 +1,5 @@
 import type { MetadataRoute } from "next";
+import { getAllOfficials } from "@/lib/data";
 import { getAttorneyWatchProfiles, getMediaWatchProfiles } from "@/lib/power-watch";
 import { getSchoolBoardDistricts, getSchoolBoardDossiers } from "@/lib/school-board-research";
 import { getSchoolBoardCandidateUrl, getSchoolBoardDistrictUrl } from "@/lib/school-board-urls";
@@ -55,5 +56,19 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.7,
   }));
 
-  return [...staticRoutes, ...districtRoutes, ...memberRoutes, ...attorneyRoutes, ...mediaRoutes];
+  const officialRoutes = getAllOfficials().map((official) => ({
+    url: `${siteUrl}/officials/${official.id}`,
+    lastModified: now,
+    changeFrequency: "weekly" as const,
+    priority: 0.72,
+  }));
+
+  return [
+    ...staticRoutes,
+    ...officialRoutes,
+    ...districtRoutes,
+    ...memberRoutes,
+    ...attorneyRoutes,
+    ...mediaRoutes,
+  ];
 }

@@ -12,9 +12,14 @@ import TopDonorsList from "@/components/funding/TopDonorsList";
 import DonorBreakdownChart from "@/components/funding/DonorBreakdownChart";
 import GeographicBreakdown from "@/components/funding/GeographicBreakdown";
 
+export const revalidate = 86400;
+export const dynamicParams = true;
+
 export async function generateStaticParams() {
   const officials = getAllOfficials();
-  return officials.map((o) => ({ officialId: o.id }));
+  return officials
+    .filter((official) => Boolean(getFundingSummary(official.id)))
+    .map((o) => ({ officialId: o.id }));
 }
 
 export async function generateMetadata({
