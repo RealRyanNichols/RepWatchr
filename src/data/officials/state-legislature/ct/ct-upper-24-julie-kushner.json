@@ -1,0 +1,65 @@
+{
+  "id": "julie-kushner",
+  "name": "Julie Kushner",
+  "firstName": "Julie",
+  "lastName": "Kushner",
+  "party": "D",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-24",
+  "jurisdiction": "Connecticut Senate",
+  "county": [
+    "Connecticut"
+  ],
+  "termStart": "2019-01-09",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 3800, Legislative Office Building 300 Capitol Ave., Hartford, CT 06106",
+    "phone": "860-240-0509",
+    "email": "julie.kushner@cga.ct.gov",
+    "website": "https://cga.ct.gov/asp/CGABillStatus/CGAMemberBills.asp?dist_code=%27S24%27&dist_name=Kushner,%20Julie"
+  },
+  "bio": "Julie Kushner serves as State Senator for Connecticut Senate District 24. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "CT",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://cga.ct.gov/asp/CGABillStatus/CGAMemberBills.asp?dist_code=%27S24%27&dist_name=Kushner,%20Julie"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ct/legislature/Julie-Kushner-34ca88f1-c2bc-430e-9f7c-93e8f3563e33.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "ftp://ftp.cga.ct.gov/pub/data/LegislatorDatabase.csv"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Julie_Kushner"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Julie_Kushner"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/julie-kushner-1a80a637"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.senatedems.ct.gov/kushner"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.senatedems.ct.gov/senator/julie-kushner"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.senatedems.ct.gov/senator/julie-kushner/bio"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

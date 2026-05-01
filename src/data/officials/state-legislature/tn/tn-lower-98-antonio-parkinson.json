@@ -1,0 +1,72 @@
+{
+  "id": "antonio-parkinson",
+  "name": "Antonio Parkinson",
+  "firstName": "Antonio",
+  "lastName": "Parkinson",
+  "photo": "/images/officials/state-legislature/tn/antonio-parkinson.jpg",
+  "photoSourceUrl": "https://s3.amazonaws.com/ballotpedia-api4/files/thumbs/200/300/Antonio_Parkinson.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-98",
+  "jurisdiction": "Tennessee House of Representatives",
+  "county": [
+    "Tennessee"
+  ],
+  "termStart": "2011-03-08",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 419, Cordell Hull Building 425 Rep. John Lewis Way North, Nashville, TN 37243",
+    "phone": "615-741-4575",
+    "email": "rep.antonio.parkinson@capitol.tn.gov",
+    "website": "https://wapp.capitol.tn.gov/apps/legislatorinfo/member.aspx?district=H98"
+  },
+  "bio": "Antonio Parkinson serves as State Representative for Tennessee House of Representatives District 98. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "TN",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://wapp.capitol.tn.gov/apps/legislatorinfo/member.aspx?district=H98"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/tn/legislature/Rep-Antonio-Parkinson-785aed65-3e87-42fe-8e71-307ce08f44ae.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://s3.amazonaws.com/ballotpedia-api4/files/thumbs/200/300/Antonio_Parkinson.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Antonio_Parkinson"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Antonio_Parkinson"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/128741/antonio-parkinson"
+    },
+    {
+      "title": "Public source",
+      "url": "https://wapp.capitol.tn.gov/apps/LegislatorInfo/directory.aspx?chamber=H"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.capitol.tn.gov/house/members"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.capitol.tn.gov/house/members/"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.capitol.tn.gov/house/members/h98.html"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

@@ -1,0 +1,72 @@
+{
+  "id": "j-r-henson",
+  "name": "J.R. Henson",
+  "firstName": "J.R.",
+  "lastName": "Henson",
+  "photo": "/images/officials/state-legislature/va/j-r-henson.jpg",
+  "photoSourceUrl": "https://memdata.virginiageneralassembly.gov/images/display_image/H0365",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "Delegate",
+  "district": "HD-19",
+  "jurisdiction": "Virginia House of Delegates",
+  "county": [
+    "Virginia"
+  ],
+  "termStart": "2024-01-10",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 919, General Assembly Building 201 N. 9th St., Richmond, VA 23219",
+    "phone": "804-698-1019",
+    "email": "delrhenson@house.virginia.gov",
+    "website": "https://house.vga.virginia.gov/members/H0365"
+  },
+  "bio": "J.R. Henson serves as Delegate for Virginia House of Delegates District 19. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "VA",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://house.vga.virginia.gov/members/H0365"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/va/legislature/Rozia-A-Henson-Jr-892b7901-d71e-4d8b-b8d0-9034a3d4a066.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://memdata.virginiageneralassembly.gov/images/display_image/H0365"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Rozia_Henson"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Rozia_Henson"
+    },
+    {
+      "title": "Public source",
+      "url": "https://henson4va.com/about-rozia"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/212050/rozia-henson"
+    },
+    {
+      "title": "Public source",
+      "url": "https://lis.virginia.gov/cgi-bin/legp604.exe?241+mbr+H365"
+    },
+    {
+      "title": "Public source",
+      "url": "https://virginiageneralassembly.gov/house/members/members.php?id=H0365"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/rozia-a-henson-jr-mba-pmp-itilv4-59139649"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

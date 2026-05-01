@@ -1,0 +1,64 @@
+{
+  "id": "stefani-zinerman",
+  "name": "Stefani Zinerman",
+  "firstName": "Stefani",
+  "lastName": "Zinerman",
+  "photo": "/images/officials/state-legislature/ny/stefani-zinerman.jpg",
+  "photoSourceUrl": "https://assembly.state.ny.us/write/upload/member_files/056/headshot/056.jpg?hst=1660073661",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "Assemblymember",
+  "district": "HD-56",
+  "jurisdiction": "New York State Assembly",
+  "county": [
+    "New York"
+  ],
+  "termStart": "2021-01-06",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 553, Legislative Office Building, Albany, NY 12248",
+    "phone": "518-455-5474",
+    "email": "zinermans@nyassembly.gov",
+    "website": "https://assembly.state.ny.us/mem/Stefani-Zinerman"
+  },
+  "bio": "Stefani Zinerman serves as Assemblymember for New York State Assembly District 56. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "NY",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://assembly.state.ny.us/mem/Stefani-Zinerman"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ny/legislature/Stefani-Zinerman-d4d53fcb-59b0-4869-bad8-42963b716e59.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://assembly.state.ny.us/write/upload/member_files/056/headshot/056.jpg?hst=1660073661"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Stefani_Zinerman"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Stefani_Zinerman"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/192218/stefani-zinerman"
+    },
+    {
+      "title": "Public source",
+      "url": "https://nyassembly.gov/mem/Stefani-Zinerman"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/stefani-zinerman-038042100"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

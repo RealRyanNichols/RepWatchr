@@ -1,0 +1,72 @@
+{
+  "id": "david-kull",
+  "name": "David Kull",
+  "firstName": "David",
+  "lastName": "Kull",
+  "photo": "/images/officials/state-legislature/sd/david-kull.jpg",
+  "photoSourceUrl": "https://s3.amazonaws.com/ballotpedia-api4/files/thumbs/200/300/DavidKull.png",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-2",
+  "jurisdiction": "South Dakota House of Representatives",
+  "county": [
+    "South Dakota"
+  ],
+  "termStart": "2023-01-10",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Capitol Building 500 E. Capitol Ave., Pierre, SD 57501",
+    "phone": "605-773-3851",
+    "email": "david.kull@sdlegislature.gov",
+    "website": "https://sdlegislature.gov/Legislators/Profile/4438/Detail"
+  },
+  "bio": "David Kull serves as State Representative for South Dakota House of Representatives District 2. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "SD",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://sdlegislature.gov/Legislators/Profile/4438/Detail"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/sd/legislature/David-Kull-4d2f522f-336a-4794-8b89-48d65d250f6e.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://s3.amazonaws.com/ballotpedia-api4/files/thumbs/200/300/DavidKull.png"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/David_Kull"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/David_Kull"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/205093/david-kull"
+    },
+    {
+      "title": "Public source",
+      "url": "https://sdlegislature.gov/Legislators/Profile/4521/Detail"
+    },
+    {
+      "title": "Public source",
+      "url": "https://sdlegislature.gov/Legislators/Profile/4628/Detail"
+    },
+    {
+      "title": "Public source",
+      "url": "https://sdlegislature.gov/Legislators/Profile/4778/Detail"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/david-kull-8ab183b4"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

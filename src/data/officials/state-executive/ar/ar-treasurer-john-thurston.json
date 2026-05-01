@@ -1,0 +1,53 @@
+{
+  "id": "john-thurston",
+  "name": "John Thurston",
+  "firstName": "John",
+  "lastName": "Thurston",
+  "party": "R",
+  "level": "state",
+  "position": "Treasurer",
+  "district": "Arkansas",
+  "jurisdiction": "Arkansas statewide public office",
+  "county": [
+    "Arkansas"
+  ],
+  "termStart": "2025-01-01",
+  "termEnd": "2027-01-12",
+  "contactInfo": {
+    "office": "State Capitol; 500 Woodlane; Suite 220; Little Rock, AR 72201",
+    "phone": "501-682-5888",
+    "email": "info@artreasury.gov",
+    "website": "https://artreasury.gov/",
+    "socialMedia": {
+      "x": "https://x.com/JohnThurstonAR",
+      "twitter": "https://x.com/JohnThurstonAR"
+    }
+  },
+  "bio": "John Thurston is listed as Treasurer for Arkansas. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "AR",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://artreasury.gov/"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ar/executive/John-Thurston-20b42b64-6dd3-4b52-97f2-def9b8207a7d.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://artreasury.gov/for-arkansans/about-us/contact-us/"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.sos.arkansas.gov/news/detail/cole-jester-sworn-in-as-arkansas-35th-secretary-of-state"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.sos.arkansas.gov/state-capitol/arkansas-constitutional-offices/"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

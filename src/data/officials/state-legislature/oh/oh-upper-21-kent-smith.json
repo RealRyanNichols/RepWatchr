@@ -1,0 +1,65 @@
+{
+  "id": "kent-smith",
+  "name": "Kent Smith",
+  "firstName": "Kent",
+  "lastName": "Smith",
+  "party": "D",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-21",
+  "jurisdiction": "Ohio Senate",
+  "county": [
+    "Ohio"
+  ],
+  "termStart": "2023-01-01",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 223, Statehouse, 1 Capitol Square Second Floor, Columbus, OH 43215",
+    "phone": "614-466-4857",
+    "email": "sd21@ohiosenate.gov",
+    "website": "https://ohiohouse.gov/kent-smith"
+  },
+  "bio": "Kent Smith serves as State Senator for Ohio Senate District 21. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "OH",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://ohiohouse.gov/kent-smith"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/oh/legislature/Kent-Smith-d9c3dfce-8b7f-402f-9dec-5179e38b528f.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Kent_Smith"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Kent_Smith_(politician)"
+    },
+    {
+      "title": "member details page",
+      "url": "https://ohiosenate.gov/members/kent-smith"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.kentsmith.org/about"
+    },
+    {
+      "title": "member list page",
+      "url": "https://www.legislature.ohio.gov/legislators/senate-directory"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/kentksmith"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.ohiohouse.gov/members/member-directory"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

@@ -1,0 +1,69 @@
+{
+  "id": "dan-daley",
+  "name": "Dan Daley",
+  "firstName": "Dan",
+  "lastName": "Daley",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-96",
+  "jurisdiction": "Florida House of Representatives",
+  "county": [
+    "Florida"
+  ],
+  "termStart": "2022-11-08",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 403, House Office Building 402 S. Monroe St., Tallahassee, FL 32399",
+    "phone": "850-717-5096",
+    "email": "dan.daley@flhouse.gov",
+    "website": "https://myfloridahouse.gov/Sections/Representatives/details.aspx?MemberId=4757&LegislativeTermId=90"
+  },
+  "bio": "Dan Daley serves as State Representative for Florida House of Representatives District 96. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "FL",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://myfloridahouse.gov/Sections/Representatives/details.aspx?MemberId=4757&LegislativeTermId=90"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/fl/legislature/Dan-Daily-66308162-9b64-4d34-a8bc-fac71407f7d5.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Dan_Daley"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Dan_Daley"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/149318/dan-daley"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.flhouse.gov/Sections/Representatives/custom/details.aspx?MemberId=4757"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.flhouse.gov/Sections/Representatives/custom/details.aspx?MemberId=4757&LegislativeTermId=91"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.flhouse.gov/Sections/Representatives/details.aspx?MemberId=4757"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/dan-daley-36914029"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.myfloridahouse.gov/Representatives"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

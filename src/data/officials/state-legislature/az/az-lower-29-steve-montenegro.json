@@ -1,0 +1,72 @@
+{
+  "id": "steve-montenegro",
+  "name": "Steve Montenegro",
+  "firstName": "Steve",
+  "lastName": "Montenegro",
+  "photo": "/images/officials/state-legislature/az/steve-montenegro.jpg",
+  "photoSourceUrl": "http://www.azleg.gov/alisImages/MemberPhotos/49leg/House/MONTENEGRO.gif",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-29",
+  "jurisdiction": "Arizona House of Representatives",
+  "county": [
+    "Arizona"
+  ],
+  "termStart": "2023-01-09",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 223, 1700 W. Washington St., Phoenix, AZ 85007",
+    "phone": "602-926-3635",
+    "email": "smontenegro@azleg.gov",
+    "website": "https://www.azleg.gov/house-member/?legislature=56&session=127&legislator=2183"
+  },
+  "bio": "Steve Montenegro serves as State Representative for Arizona House of Representatives District 29. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "AZ",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.azleg.gov/house-member/?legislature=56&session=127&legislator=2183"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/az/legislature/Steve-Montenegro-37f8815d-1672-42dd-9e9b-305449d7bb8b.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "http://www.azleg.gov/alisImages/MemberPhotos/49leg/House/MONTENEGRO.gif"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Steve_B._Montenegro"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Steve_Montenegro"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.azleg.gov/house-member/?legislature=57&session=129&legislator=2325"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.azleg.gov/MemberRoster.asp?Session_ID=115&body=H"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.azleg.gov/memberroster/?body=H"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.azleg.gov/MemberRoster/?body=S"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/steve-montenegro-25576222"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

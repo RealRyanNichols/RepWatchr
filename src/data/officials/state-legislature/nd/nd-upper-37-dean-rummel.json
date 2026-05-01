@@ -1,0 +1,66 @@
+{
+  "id": "dean-rummel",
+  "name": "Dean Rummel",
+  "firstName": "Dean",
+  "lastName": "Rummel",
+  "photo": "/images/officials/state-legislature/nd/dean-rummel.jpg",
+  "photoSourceUrl": "https://www.ndlegis.gov/sites/default/files/styles/member_list_photo/public/person/photo/drummel2023.jpg?itok=8NfcLHzU",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-37",
+  "jurisdiction": "North Dakota Senate",
+  "county": [
+    "North Dakota"
+  ],
+  "termStart": "2022-12-01",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "email": "drummel@ndlegis.gov",
+    "website": "https://ndlegis.gov/biography/dean-rummel"
+  },
+  "bio": "Dean Rummel serves as State Senator for North Dakota Senate District 37. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "ND",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://ndlegis.gov/biography/dean-rummel"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/nd/legislature/Dean-Rummel-cc65fd55-6d87-4ef9-95ff-b98592bebc8f.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://www.ndlegis.gov/sites/default/files/styles/member_list_photo/public/person/photo/drummel2023.jpg?itok=8NfcLHzU"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Dean_Rummel"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Dean_Rummel"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/dean-rummel-7b0681a"
+    },
+    {
+      "title": "members list page",
+      "url": "https://www.ndlegis.gov/assembly/68-2023/regular/members?combine=&field_legis_chamber_target_id=All&field_legis_district_target_id=All&field_legislator_party_target_id=All&page=6"
+    },
+    {
+      "title": "members list page",
+      "url": "https://www.ndlegis.gov/assembly/68-2023/regular/members?page=6"
+    },
+    {
+      "title": "member details page",
+      "url": "https://www.ndlegis.gov/biography/dean-rummel"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

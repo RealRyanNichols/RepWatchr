@@ -1,0 +1,49 @@
+{
+  "id": "victor-rountree",
+  "name": "Victor Rountree",
+  "firstName": "Victor",
+  "lastName": "Rountree",
+  "party": "NP",
+  "level": "state",
+  "position": "State Senator",
+  "district": "LD-3",
+  "jurisdiction": "Nebraska Legislature",
+  "county": [
+    "Nebraska"
+  ],
+  "termStart": "2025-01-08",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "State Capitol Room 1000, P.O. Box 94604, Lincoln, NE 68509",
+    "phone": "402-471-2627",
+    "email": "vrountree@leg.ne.gov",
+    "website": "https://nebraskalegislature.gov/senators/landing-pages/index.php?District=3"
+  },
+  "bio": "Victor Rountree serves as State Senator for Nebraska Legislature District 3. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "NE",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://nebraskalegislature.gov/senators/landing-pages/index.php?District=3"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ne/legislature/Victor-Rountree-1e43a5b4-e63c-434a-977c-592174c2c635.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Victor_Rountree"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Victor_Rountree"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/215014/victor-rountree"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

@@ -1,0 +1,72 @@
+{
+  "id": "dan-rayfield",
+  "name": "Dan Rayfield",
+  "firstName": "Dan",
+  "lastName": "Rayfield",
+  "photo": "/images/officials/state-executive/or/dan-rayfield.jpg",
+  "photoSourceUrl": "https://www.naag.org/wp-content/uploads/2025/01/ag-OR-Rayfield-Dan.png",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "Attorney General",
+  "district": "Oregon",
+  "jurisdiction": "Oregon statewide public office",
+  "county": [
+    "Oregon"
+  ],
+  "termStart": "2024-12-31",
+  "termEnd": "2029-01-01",
+  "contactInfo": {
+    "office": "Justice Bldg., 1162 Court St., NE; Salem, OR 97301",
+    "phone": "503-378-6002",
+    "email": "rep.danrayfield@oregonlegislature.gov",
+    "website": "https://www.oregonlegislature.gov/rayfield"
+  },
+  "bio": "Dan Rayfield is listed as Attorney General for Oregon. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "OR",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.oregonlegislature.gov/rayfield"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/or/executive/Dan-Rayfield-201cf42b-d036-4582-a6ff-f23b3ab3f442.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://www.naag.org/wp-content/uploads/2025/01/ag-OR-Rayfield-Dan.png"
+    },
+    {
+      "title": "Public source",
+      "url": "https://api.oregonlegislature.gov/odata/odataservice.svc/LegislativeSessions('2022R1')/Legislators"
+    },
+    {
+      "title": "Public source",
+      "url": "https://api.oregonlegislature.gov/odata/odataservice.svc/LegislativeSessions('2023R1')/Legislators"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Dan_Rayfield"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Dan_Rayfield"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/daniel-a-rayfield-a4710455"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.doj.state.or.us/oregon-department-of-justice/office-of-the-attorney-general/attorney-general-dan-rayfield/"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.naag.org/attorney-general/dan-rayfield/"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

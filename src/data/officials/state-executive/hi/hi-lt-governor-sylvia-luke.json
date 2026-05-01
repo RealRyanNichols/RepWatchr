@@ -1,0 +1,64 @@
+{
+  "id": "sylvia-luke",
+  "name": "Sylvia Luke",
+  "firstName": "Sylvia",
+  "lastName": "Luke",
+  "photo": "/images/officials/state-executive/hi/sylvia-luke.jpg",
+  "photoSourceUrl": "https://ltgov.hawaii.gov/wp-content/uploads/2025/06/LG-Sylvia-Luke-2025-by-Russell-Tanoue-2-cropped-683x1024.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "Lieutenant Governor",
+  "district": "Hawaii",
+  "jurisdiction": "Hawaii statewide public office",
+  "county": [
+    "Hawaii"
+  ],
+  "termStart": "2022-12-05",
+  "termEnd": "2026-12-07",
+  "contactInfo": {
+    "office": "State Capitol; Honolulu, HI 96813",
+    "phone": "808-586-0255",
+    "email": "repluke@Capitol.hawaii.gov",
+    "website": "http://capitol.hawaii.gov/memberpage.aspx?member=luke&year=2019"
+  },
+  "bio": "Sylvia Luke is listed as Lieutenant Governor for Hawaii. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "HI",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "http://capitol.hawaii.gov/memberpage.aspx?member=luke&year=2019"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/hi/executive/Sylvia-Luke-f3a50da6-6c22-4c5a-ba48-d10ee2188333.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://ltgov.hawaii.gov/wp-content/uploads/2025/06/LG-Sylvia-Luke-2025-by-Russell-Tanoue-2-cropped-683x1024.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "http://capitol.hawaii.gov/members/legislators.aspx?chamber=H"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.capitol.hawaii.gov/memberpage.aspx?member=luke&year=2021"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.capitol.hawaii.gov/memberpage.aspx?member=luke&year=2022"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ltgov.hawaii.gov/"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Sylvia_Luke"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

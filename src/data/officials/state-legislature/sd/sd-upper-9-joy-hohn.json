@@ -1,0 +1,60 @@
+{
+  "id": "joy-hohn",
+  "name": "Joy Hohn",
+  "firstName": "Joy",
+  "lastName": "Hohn",
+  "photo": "/images/officials/state-legislature/sd/joy-hohn.jpg",
+  "photoSourceUrl": "https://s3.amazonaws.com/ballotpedia-api4/files/thumbs/200/300/jhohn.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-9",
+  "jurisdiction": "South Dakota Senate",
+  "county": [
+    "South Dakota"
+  ],
+  "termStart": "2025-01-14",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Capitol Building 500 E. Capitol Ave., Pierre, SD 57501",
+    "phone": "605-773-3821",
+    "email": "joy.hohn@sdlegislature.gov",
+    "website": "https://sdlegislature.gov/Legislators/Profile/4723/Detail"
+  },
+  "bio": "Joy Hohn serves as State Senator for South Dakota Senate District 9. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "SD",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://sdlegislature.gov/Legislators/Profile/4723/Detail"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/sd/legislature/Joy-Hohn-3a454e94-ca27-4e34-b603-c2768c047bc3.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://s3.amazonaws.com/ballotpedia-api4/files/thumbs/200/300/jhohn.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Joy_Hohn"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Joy_Hohn"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/216109/joy-hohn"
+    },
+    {
+      "title": "Public source",
+      "url": "https://sdlegislature.gov/Legislators/Profile/4762/Detail"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

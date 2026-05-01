@@ -1,0 +1,61 @@
+{
+  "id": "chip-campsen",
+  "name": "Chip Campsen",
+  "firstName": "Chip",
+  "lastName": "Campsen",
+  "party": "R",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-43",
+  "jurisdiction": "South Carolina Senate",
+  "county": [
+    "South Carolina"
+  ],
+  "termStart": "",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 305, Gressette Building P.O. Box 142, Columbia, SC 29201",
+    "phone": "803-212-6340",
+    "email": "chipcampsen@scsenate.gov",
+    "website": "https://scstatehouse.gov/member.php?code=0302272691"
+  },
+  "bio": "Chip Campsen serves as State Senator for South Carolina Senate District 43. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "SC",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://scstatehouse.gov/member.php?code=0302272691"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/sc/legislature/George-E-Chip-Campsen-III-2ff21c9e-e03e-4f5c-ac4e-7b1e5633969d.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/George_Campsen"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/George_E._Campsen_III"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/11920/chip-campsen-iii"
+    },
+    {
+      "title": "Public source",
+      "url": "https://scstatehouse.gov/member.php?chamber=S"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.scstatehouse.gov/member.php?chamber=S"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.scstatehouse.gov/member.php?code=0302272691"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

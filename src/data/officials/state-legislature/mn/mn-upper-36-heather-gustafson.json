@@ -1,0 +1,60 @@
+{
+  "id": "heather-gustafson",
+  "name": "Heather Gustafson",
+  "firstName": "Heather",
+  "lastName": "Gustafson",
+  "photo": "/images/officials/state-legislature/mn/heather-gustafson.jpg",
+  "photoSourceUrl": "https://www.senate.mn/graphics/36Gustafson.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-36",
+  "jurisdiction": "Minnesota Senate",
+  "county": [
+    "Minnesota"
+  ],
+  "termStart": "2023-01-03",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 3103, Minnesota Senate Building 95 University Ave. West, St. Paul, MN 55155",
+    "phone": "651-296-1253",
+    "email": "sen.heather.gustafson@senate.mn",
+    "website": "https://www.senate.mn/members/member_bio.html?mem_id=1263"
+  },
+  "bio": "Heather Gustafson serves as State Senator for Minnesota Senate District 36. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "MN",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.senate.mn/members/member_bio.html?mem_id=1263"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/mn/legislature/Heather-Gustafson-9411a121-c47d-431a-b407-88ff5c891c5f.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://www.senate.mn/graphics/36Gustafson.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Heather_Gustafson"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Heather_Gustafson"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/207838/heather-gustafson"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.senate.mn/api/members"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

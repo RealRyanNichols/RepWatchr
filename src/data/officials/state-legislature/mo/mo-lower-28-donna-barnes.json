@@ -1,0 +1,57 @@
+{
+  "id": "donna-barnes",
+  "name": "Donna Barnes",
+  "firstName": "Donna",
+  "lastName": "Barnes",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-28",
+  "jurisdiction": "Missouri House of Representatives",
+  "county": [
+    "Missouri"
+  ],
+  "termStart": "2025-01-08",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 130-DB, 201 W. Capitol Ave., Jefferson City, MO 65101",
+    "phone": "573-751-9851",
+    "email": "donna.barnes@house.mo.gov",
+    "website": "https://house.mo.gov/MemberDetails.aspx?district=028"
+  },
+  "bio": "Donna Barnes serves as State Representative for Missouri House of Representatives District 28. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "MO",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://house.mo.gov/MemberDetails.aspx?district=028"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/mo/legislature/Donna-Barnes-fb57ce9b-bd82-4f93-8774-2cfef191289a.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Donna_Barnes_(Missouri)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Donna_Barnes"
+    },
+    {
+      "title": "Public source",
+      "url": "https://house.mo.gov/MemberDetails.aspx?year=2025&code=R&district=028"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/216993/donna-barnes"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/donna-sims-barnes-146b5874"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

@@ -1,0 +1,72 @@
+{
+  "id": "chris-pringle",
+  "name": "Chris Pringle",
+  "firstName": "Chris",
+  "lastName": "Pringle",
+  "photo": "/images/officials/state-legislature/al/chris-pringle.jpg",
+  "photoSourceUrl": "https://www.legislature.state.al.us/pdf/house/members/Pringle_101.png",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-101",
+  "jurisdiction": "Alabama House of Representatives",
+  "county": [
+    "Alabama"
+  ],
+  "termStart": "2014-11-05",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 519-G, 11 S. Union St., Montgomery, AL 36130",
+    "phone": "334-261-0489",
+    "email": "chris.pringle@alhouse.gov",
+    "website": "https://alison.legislature.state.al.us/house-leaders-members"
+  },
+  "bio": "Chris Pringle serves as State Representative for Alabama House of Representatives District 101. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "AL",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://alison.legislature.state.al.us/house-leaders-members"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/al/legislature/Chris-Pringle-f4133b43-f822-4d95-b1e0-a0a524de56f6.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://www.legislature.state.al.us/pdf/house/members/Pringle_101.png"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Chris_Pringle"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Chris_Pringle_(politician)"
+    },
+    {
+      "title": "graphql endpoint for member information",
+      "url": "https://gql.api.alison.legislature.state.al.us/graphql"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/5701/chris-pringle"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.legislature.state.al.us/aliswww/ISD/ALRepresentative.aspx?NAME=Pringle&OID_SPONSOR=100583&OID_PERSON=1109&SESSNAME="
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.legislature.state.al.us/aliswww/ISD/ALRepresentative.aspx?OID_SPONSOR=100583&OID_PERSON=1109"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.legislature.state.al.us/aliswww/ISD/House/ALRepresentatives.aspx"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

@@ -1,0 +1,68 @@
+{
+  "id": "shelly-davis",
+  "name": "Shelly Davis",
+  "firstName": "Shelly",
+  "lastName": "Davis",
+  "photo": "/images/officials/state-legislature/or/shelly-davis.jpg",
+  "photoSourceUrl": "https://www.oregonlegislature.gov/boshartdavis/PublishingImages/member_photo.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-15",
+  "jurisdiction": "Oregon House of Representatives",
+  "county": [
+    "Oregon"
+  ],
+  "termStart": "2019-01-14",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room H-389, 900 Court St. NE, Salem, OR 97301",
+    "phone": "503-986-1415",
+    "email": "rep.shellyboshartdavis@oregonlegislature.gov",
+    "website": "https://www.oregonlegislature.gov/boshartdavis"
+  },
+  "bio": "Shelly Davis serves as State Representative for Oregon House of Representatives District 15. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "OR",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.oregonlegislature.gov/boshartdavis"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/or/legislature/Shelly-Boshart-Davis-52af68c5-c141-4e35-912b-11d71b83af33.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://www.oregonlegislature.gov/boshartdavis/PublishingImages/member_photo.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://api.oregonlegislature.gov/odata/odataservice.svc/LegislativeSessions('2022R1')/Legislators"
+    },
+    {
+      "title": "Public source",
+      "url": "https://api.oregonlegislature.gov/odata/odataservice.svc/LegislativeSessions('2023R1')/Legislators"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Shelly_Boshart_Davis"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Shelly_Boshart_Davis"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/179882/shelly-boshart-davis"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/shelly-boshart-davis-769b2294"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

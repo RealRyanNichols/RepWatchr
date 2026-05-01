@@ -1,0 +1,60 @@
+{
+  "id": "kent-roberson",
+  "name": "Kent Roberson",
+  "firstName": "Kent",
+  "lastName": "Roberson",
+  "photo": "/images/officials/state-legislature/md/kent-roberson.jpg",
+  "photoSourceUrl": "https://mgaleg.maryland.gov/2024RS/images/roberson01.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "Delegate",
+  "district": "HD-25",
+  "jurisdiction": "Maryland House of Delegates",
+  "county": [
+    "Maryland"
+  ],
+  "termStart": "2023-05-30",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 219, Lowe House Office Building 6 Bladen St., Annapolis, MD 21401",
+    "phone": "410-841-3557",
+    "email": "kent.roberson@house.maryland.gov",
+    "website": "https://mgaleg.maryland.gov/mgawebsite/Members/Details/roberson01"
+  },
+  "bio": "Kent Roberson serves as Delegate for Maryland House of Delegates District 25. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "MD",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://mgaleg.maryland.gov/mgawebsite/Members/Details/roberson01"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/md/legislature/Kent-Roberson-a6771d68-fa3d-4ced-a613-3543f54fe153.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://mgaleg.maryland.gov/2024RS/images/roberson01.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Kent_Roberson"
+    },
+    {
+      "title": "Public source",
+      "url": "https://corn.org/about-cra/staff/kent-roberson"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Kent_Roberson"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/kent-roberson-86214726"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

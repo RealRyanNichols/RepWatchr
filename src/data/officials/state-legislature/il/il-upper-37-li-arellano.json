@@ -1,0 +1,64 @@
+{
+  "id": "li-arellano",
+  "name": "Li Arellano",
+  "firstName": "Li",
+  "lastName": "Arellano",
+  "photo": "/images/officials/state-legislature/il/li-arellano.jpg",
+  "photoSourceUrl": "https://cdn.ilga.gov/assets/img/members/{90648554-4D16-4FEE-AC7E-4A8A7872B885}.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-37",
+  "jurisdiction": "Illinois Senate",
+  "county": [
+    "Illinois"
+  ],
+  "termStart": "2025-01-08",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Stratton Office Building Section A, Office E, Springfield, IL 62706",
+    "phone": "217-782-1942",
+    "email": "liandroarellano@gmail.com",
+    "website": "https://www.ilga.gov/Senate/Members/Details/3383"
+  },
+  "bio": "Li Arellano serves as State Senator for Illinois Senate District 37. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "IL",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.ilga.gov/Senate/Members/Details/3383"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/il/legislature/Li-Arellano-8f61ddbc-3976-49b0-8c80-1d24cca80dc0.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://cdn.ilga.gov/assets/img/members/{90648554-4D16-4FEE-AC7E-4A8A7872B885}.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Li_Arellano_Jr."
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/135100/liandro-arellano-jr"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.ilga.gov/senate/Senator.asp?GA=104&MemberID=3383"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/liandro-arellano-234aab37"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.senatorli.com"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

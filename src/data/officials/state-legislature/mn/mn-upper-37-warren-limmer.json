@@ -1,0 +1,72 @@
+{
+  "id": "warren-limmer",
+  "name": "Warren Limmer",
+  "firstName": "Warren",
+  "lastName": "Limmer",
+  "photo": "/images/officials/state-legislature/mn/warren-limmer.jpg",
+  "photoSourceUrl": "https://www.senate.mn/graphics/37Limmer.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-37",
+  "jurisdiction": "Minnesota Senate",
+  "county": [
+    "Minnesota"
+  ],
+  "termStart": "2023-01-03",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 2221, Minnesota Senate Building 95 University Ave. West, St. Paul, MN 55155",
+    "phone": "651-296-2159",
+    "email": "sen.warren.limmer@senate.mn",
+    "website": "https://www.senate.mn/members/member_bio.html?mem_id=1032"
+  },
+  "bio": "Warren Limmer serves as State Senator for Minnesota Senate District 37. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "MN",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.senate.mn/members/member_bio.html?mem_id=1032"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/mn/legislature/Warren-Limmer-dc676c57-0779-4d0e-9ba4-a07d7034dfa1.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://www.senate.mn/graphics/37Limmer.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Warren_Limmer"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Warren_Limmer"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/3908/warren-limmer"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/warren-limmer-a64b877"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.senate.mn/api/members"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.senate.mn/members/index.php"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.senate.mn/members/list.csv"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

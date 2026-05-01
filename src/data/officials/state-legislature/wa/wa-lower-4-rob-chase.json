@@ -1,0 +1,72 @@
+{
+  "id": "rob-chase",
+  "name": "Rob Chase",
+  "firstName": "Rob",
+  "lastName": "Chase",
+  "photo": "/images/officials/state-legislature/wa/rob-chase.jpg",
+  "photoSourceUrl": "https://robchase.houserepublicans.wa.gov/wp-content/uploads/2025/01/Rep-Chase_Rob-2025_900x1200.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-4",
+  "jurisdiction": "Washington House of Representatives",
+  "county": [
+    "Washington"
+  ],
+  "termStart": "2025-01-13",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 434, John L. O'Brien Building P.O. Box 40600, Olympia, WA 98504",
+    "phone": "360-786-7984",
+    "email": "rob.chase@leg.wa.gov",
+    "website": "https://leg.wa.gov/legislators/member/rob-chase"
+  },
+  "bio": "Rob Chase serves as State Representative for Washington House of Representatives District 4. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "WA",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://leg.wa.gov/legislators/member/rob-chase"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/wa/legislature/Rob-Chase-359ededd-b78a-4d25-98f7-6bc5b01876bc.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://robchase.houserepublicans.wa.gov/wp-content/uploads/2025/01/Rep-Chase_Rob-2025_900x1200.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://app.leg.wa.gov/ContentParts/MemberDirectory/?a=House"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Rob_Chase"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Rob_Chase"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/217529/rob-chase"
+    },
+    {
+      "title": "Public source",
+      "url": "https://robchase.houserepublicans.wa.gov"
+    },
+    {
+      "title": "Public source",
+      "url": "https://robchase.houserepublicans.wa.gov/about"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.leg.wa.gov/house/representatives/Pages/default.aspx"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

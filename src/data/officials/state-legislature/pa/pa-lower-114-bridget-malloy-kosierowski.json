@@ -1,0 +1,66 @@
+{
+  "id": "bridget-malloy-kosierowski",
+  "name": "Bridget Malloy Kosierowski",
+  "firstName": "Bridget",
+  "lastName": "Kosierowski",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-114",
+  "jurisdiction": "Pennsylvania House of Representatives",
+  "county": [
+    "Pennsylvania"
+  ],
+  "termStart": "2019-04-08",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 527E, Main Capitol Building P.O. Box 202114, Harrisburg, PA 17120",
+    "phone": "717-783-4874",
+    "email": "repkosierowski@pahouse.net",
+    "website": "https://www.legis.state.pa.us/cfdocs/legis/home/member_information/House_bio.cfm?id=1866",
+    "socialMedia": {
+      "x": "https://x.com/RepBridget",
+      "twitter": "https://x.com/RepBridget",
+      "facebook": "https://facebook.com/RepBridget"
+    }
+  },
+  "bio": "Bridget Malloy Kosierowski serves as State Representative for Pennsylvania House of Representatives District 114. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "PA",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.legis.state.pa.us/cfdocs/legis/home/member_information/House_bio.cfm?id=1866"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/pa/legislature/Bridget-M-Kosierowski-e5149ed2-f2bb-4054-8064-e2331ffaf1c0.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Bridget_Malloy_Kosierowski"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Bridget_Malloy_Kosierowski"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.legis.state.pa.us/cfdocs/legis/home/member_information/mbrList.cfm?body=H&sort=alpha"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.legis.state.pa.us/cfdocs/legis/home/member_information/representatives_alpha.cfm"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.pahouse.com/Kosierowski"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.palegis.us/house/members/bio/1866/rep-kosierowski"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

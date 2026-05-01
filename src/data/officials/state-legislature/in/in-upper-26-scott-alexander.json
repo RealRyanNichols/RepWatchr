@@ -1,0 +1,64 @@
+{
+  "id": "scott-alexander",
+  "name": "Scott Alexander",
+  "firstName": "Scott",
+  "lastName": "Alexander",
+  "photo": "/images/officials/state-legislature/in/scott-alexander.jpg",
+  "photoSourceUrl": "https://cdn.zephyrcms.com/db6aec75-3f20-4efc-89cb-f7272ded9267/-/progressive/yes/-/format/jpeg/-/scale_crop/200x300/center/-/stretch/off/alexander-website.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-26",
+  "jurisdiction": "Indiana Senate",
+  "county": [
+    "Indiana"
+  ],
+  "termStart": "2022-11-09",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "200 W. Washington St., Indianapolis, IN 46204",
+    "phone": "800-382-9467",
+    "email": "s26@iga.in.gov",
+    "website": "https://www.indianasenaterepublicans.com/alexander"
+  },
+  "bio": "Scott Alexander serves as State Senator for Indiana Senate District 26. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "IN",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.indianasenaterepublicans.com/alexander"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/in/legislature/Scott-Alexander-75d45200-93a5-45b7-90c2-9b3014d7f827.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://cdn.zephyrcms.com/db6aec75-3f20-4efc-89cb-f7272ded9267/-/progressive/yes/-/format/jpeg/-/scale_crop/200x300/center/-/stretch/off/alexander-website.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Scott_Alexander_(Indiana)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Scott_Alexander_(Indiana_politician)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/148256/scott-alexander"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.indianasenaterepublicans.com/senators"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/scott-alexander-9287a25a"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

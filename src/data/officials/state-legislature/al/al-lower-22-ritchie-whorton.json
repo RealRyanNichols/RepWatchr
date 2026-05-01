@@ -1,0 +1,72 @@
+{
+  "id": "ritchie-whorton",
+  "name": "Ritchie Whorton",
+  "firstName": "Ritchie",
+  "lastName": "Whorton",
+  "photo": "/images/officials/state-legislature/al/ritchie-whorton.jpg",
+  "photoSourceUrl": "https://www.legislature.state.al.us/pdf/house/members/Whorton_22.png",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-22",
+  "jurisdiction": "Alabama House of Representatives",
+  "county": [
+    "Alabama"
+  ],
+  "termStart": "2014-11-05",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 427-J, 11 S. Union St., Montgomery, AL 36130",
+    "phone": "334-261-0553",
+    "email": "ritchie.whorton@alhouse.gov",
+    "website": "https://alison.legislature.state.al.us/house-leaders-members"
+  },
+  "bio": "Ritchie Whorton serves as State Representative for Alabama House of Representatives District 22. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "AL",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://alison.legislature.state.al.us/house-leaders-members"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/al/legislature/Ritchie-Whorton-7e00e45e-24bf-4939-83b8-a56a90e3ea61.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://www.legislature.state.al.us/pdf/house/members/Whorton_22.png"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Ritchie_Whorton"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Ritchie_Whorton"
+    },
+    {
+      "title": "graphql endpoint for member information",
+      "url": "https://gql.api.alison.legislature.state.al.us/graphql"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/150005/ritchie-whorton"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.legislature.state.al.us/aliswww/ISD/ALRepresentative.aspx?NAME=Whorton&OID_SPONSOR=100502&OID_PERSON=7705&SESSNAME="
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.legislature.state.al.us/aliswww/ISD/ALRepresentative.aspx?OID_SPONSOR=100502&OID_PERSON=7705"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.legislature.state.al.us/aliswww/ISD/House/ALRepresentatives.aspx"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

@@ -1,0 +1,59 @@
+{
+  "id": "roger-maki",
+  "name": "Roger Maki",
+  "firstName": "Roger",
+  "lastName": "Maki",
+  "photo": "/images/officials/state-legislature/nd/roger-maki.jpg",
+  "photoSourceUrl": "https://vote-usa.org/Image.aspx?Id=NDMakiRoger&Col=Profile300&Def=Profile300",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-26",
+  "jurisdiction": "North Dakota House of Representatives",
+  "county": [
+    "North Dakota"
+  ],
+  "termStart": "2024-12-01",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "State Capitol 600 E. Boulevard Ave., Bismarck, ND 58505",
+    "email": "rmaki@ndlegis.gov",
+    "website": "https://ndlegis.gov/biography/roger-a-maki"
+  },
+  "bio": "Roger Maki serves as State Representative for North Dakota House of Representatives District 26. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "ND",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://ndlegis.gov/biography/roger-a-maki"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/nd/legislature/Roger-Maki-3bf442fa-fe42-48c3-b10a-6e94bc20e23d.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://vote-usa.org/Image.aspx?Id=NDMakiRoger&Col=Profile300&Def=Profile300"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Roger_Maki_(North_Dakota)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Roger_Maki"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/216701/roger-maki"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/roger-maki-5b523832"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

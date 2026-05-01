@@ -1,0 +1,72 @@
+{
+  "id": "joe-bellino",
+  "name": "Joe Bellino",
+  "firstName": "Joe",
+  "lastName": "Bellino",
+  "photo": "/images/officials/state-legislature/mi/joe-bellino.jpg",
+  "photoSourceUrl": "https://www.misenategop.com/wp-content/uploads/2023/01/Bellino-580x770.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-16",
+  "jurisdiction": "Michigan Senate",
+  "county": [
+    "Michigan"
+  ],
+  "termStart": "2023-01-01",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 5300, Binsfeld Building P.O. Box 30036, Lansing, MI 48909",
+    "phone": "517-373-5932",
+    "email": "senjbellino@senate.michigan.gov",
+    "website": "https://gophouse.org/representatives/southeast/bellino/"
+  },
+  "bio": "Joe Bellino serves as State Senator for Michigan Senate District 16. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "MI",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://gophouse.org/representatives/southeast/bellino/"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/mi/legislature/Joseph-Bellino-e394293d-abd7-46a9-a60f-6c75e369468e.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://www.misenategop.com/wp-content/uploads/2023/01/Bellino-580x770.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Joseph_Bellino"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Joe_Bellino_(politician)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://gophouse.org/representatives/southeast/bellino"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/170286/joe-bellino-jr"
+    },
+    {
+      "title": "Members List JSON Data Page",
+      "url": "https://senate.michigan.gov/senators/SenatorData.json"
+    },
+    {
+      "title": "Members List HTML page",
+      "url": "https://senate.michigan.gov/senators/senatorinfo_list.html"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.senatorjosephbellino.com"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

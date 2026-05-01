@@ -1,0 +1,72 @@
+{
+  "id": "mike-derby",
+  "name": "Mike Derby",
+  "firstName": "Mike",
+  "lastName": "Derby",
+  "photo": "/images/officials/state-legislature/sd/mike-derby.jpg",
+  "photoSourceUrl": "https://lloydcompanies.com/wp/wp-content/uploads/2020/07/Mike-Derby-816x1024.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-34",
+  "jurisdiction": "South Dakota House of Representatives",
+  "county": [
+    "South Dakota"
+  ],
+  "termStart": "2021-01-12",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Capitol Building 500 E. Capitol Ave., Pierre, SD 57501",
+    "phone": "605-773-3851",
+    "email": "mike.derby@sdlegislature.gov",
+    "website": "https://sdlegislature.gov/Legislators/Profile/3791/Detail"
+  },
+  "bio": "Mike Derby serves as State Representative for South Dakota House of Representatives District 34. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "SD",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://sdlegislature.gov/Legislators/Profile/3791/Detail"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/sd/legislature/Mike-Derby-082e4c6e-c16a-4bfa-8c17-9c46952da446.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://lloydcompanies.com/wp/wp-content/uploads/2020/07/Mike-Derby-816x1024.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Mike_Derby"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Mike_Derby"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/11354/michael-derby"
+    },
+    {
+      "title": "Public source",
+      "url": "https://sdlegislature.gov/Legislators/Profile/4350/Detail"
+    },
+    {
+      "title": "Public source",
+      "url": "https://sdlegislature.gov/Legislators/Profile/4598/Detail"
+    },
+    {
+      "title": "Public source",
+      "url": "https://sdlegislature.gov/Legislators/Profile/4746/Detail"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/mike-derby-44a52260"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

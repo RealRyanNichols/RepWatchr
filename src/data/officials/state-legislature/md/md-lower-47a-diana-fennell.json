@@ -1,0 +1,64 @@
+{
+  "id": "diana-fennell",
+  "name": "Diana Fennell",
+  "firstName": "Diana",
+  "lastName": "Fennell",
+  "photo": "/images/officials/state-legislature/md/diana-fennell.jpg",
+  "photoSourceUrl": "http://mgaleg.maryland.gov/2016RS/images/fennell01.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "Delegate",
+  "district": "HD-47A",
+  "jurisdiction": "Maryland House of Delegates",
+  "county": [
+    "Maryland"
+  ],
+  "termStart": "2015-01-14",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 410, Lowe House Office Building 6 Bladen St., Annapolis, MD 21401",
+    "phone": "410-841-3478",
+    "email": "diana.fennell@house.maryland.gov",
+    "website": "https://mgaleg.maryland.gov/mgawebsite/Members/Details/fennell01"
+  },
+  "bio": "Diana Fennell serves as Delegate for Maryland House of Delegates District 47A. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "MD",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://mgaleg.maryland.gov/mgawebsite/Members/Details/fennell01"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/md/legislature/Diana-M-Fennell-3235313d-d279-4aaf-97fd-476d4c79c11a.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "http://mgaleg.maryland.gov/2016RS/images/fennell01.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Diana_Fennell"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Diana_M._Fennell"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/36299/diana-fennell"
+    },
+    {
+      "title": "Public source",
+      "url": "https://mgaleg.maryland.gov/webmga/frmMain.aspx?pid=sponpage&tab=subject6&id=fennell01&stab=01"
+    },
+    {
+      "title": "Public source",
+      "url": "https://msa.maryland.gov/msa/mdmanual/06hse/html/msa17085.html"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

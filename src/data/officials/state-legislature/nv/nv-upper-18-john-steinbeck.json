@@ -1,0 +1,60 @@
+{
+  "id": "john-steinbeck",
+  "name": "John Steinbeck",
+  "firstName": "John",
+  "lastName": "Steinbeck",
+  "photo": "/images/officials/state-legislature/nv/john-steinbeck.jpg",
+  "photoSourceUrl": "http://www.leg.state.nv.us/Session/83rd2025/legislators/Senators/Images/Steinbeck.John.418.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-18",
+  "jurisdiction": "Nevada Senate",
+  "county": [
+    "Nevada"
+  ],
+  "termStart": "2024-11-06",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 2101, Nevada Senate 401 S. Carson St., Carson City, NV 89701",
+    "phone": "775-684-1442",
+    "email": "john.steinbeck@sen.state.nv.us",
+    "website": "https://www.leg.state.nv.us/App/Legislator/A/Senate/Current/18"
+  },
+  "bio": "John Steinbeck serves as State Senator for Nevada Senate District 18. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "NV",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.leg.state.nv.us/App/Legislator/A/Senate/Current/18"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/nv/legislature/John-Steinbeck-deb46b96-7bab-40be-a145-8d397b436d87.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "http://www.leg.state.nv.us/Session/83rd2025/legislators/Senators/Images/Steinbeck.John.418.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/John_Steinbeck"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/John_Steinbeck_(politician)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/215917/john-steinbeck"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/john-steinbeck-aa6b97ab"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

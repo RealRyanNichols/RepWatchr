@@ -1,0 +1,72 @@
+{
+  "id": "aaron-bernstine",
+  "name": "Aaron Bernstine",
+  "firstName": "Aaron",
+  "lastName": "Bernstine",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-8",
+  "jurisdiction": "Pennsylvania House of Representatives",
+  "county": [
+    "Pennsylvania"
+  ],
+  "termStart": "2022-12-01",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 211, Ryan Office Building P.O. Box 202008, Harrisburg, PA 17120",
+    "phone": "717-783-8322",
+    "email": "abernstine@pahousegop.com",
+    "website": "https://www.legis.state.pa.us/cfdocs/legis/home/member_information/House_bio.cfm?id=1742",
+    "socialMedia": {
+      "facebook": "https://facebook.com/repbernstine"
+    }
+  },
+  "bio": "Aaron Bernstine serves as State Representative for Pennsylvania House of Representatives District 8. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "PA",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.legis.state.pa.us/cfdocs/legis/home/member_information/House_bio.cfm?id=1742"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/pa/legislature/Aaron-Bernstine-844f3ed7-03df-420f-81bd-3f547c12e61e.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Aaron_Bernstine"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Aaron_Bernstine"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/167743/aaron-bernstine"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.legis.state.pa.us/cfdocs/legis/home/member_information/mbrList.cfm?body=H&sort=alpha"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.legis.state.pa.us/cfdocs/legis/home/member_information/representatives_alpha.cfm"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/aaronbernstine"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.palegis.us/house/members/bio/1742/rep-bernstine"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.repbernstine.com"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

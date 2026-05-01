@@ -1,0 +1,65 @@
+{
+  "id": "nickie-antonio",
+  "name": "Nickie Antonio",
+  "firstName": "Nickie",
+  "lastName": "Antonio",
+  "party": "D",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-23",
+  "jurisdiction": "Ohio Senate",
+  "county": [
+    "Ohio"
+  ],
+  "termStart": "2019-01-01",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room SH-303, Statehouse, 1 Capitol Square Third Floor, Columbus, OH 43215",
+    "phone": "614-466-5123",
+    "email": "sd23@ohiosenate.gov",
+    "website": "https://www.ohiosenate.gov/members/nickie-j-antonio"
+  },
+  "bio": "Nickie Antonio serves as State Senator for Ohio Senate District 23. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "OH",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.ohiosenate.gov/members/nickie-j-antonio"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/oh/legislature/Nickie-J-Antonio-df5c391c-65e8-4d61-a9b9-0249ff6eddb7.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Nickie_Antonio"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Nickie_Antonio"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/76941/nickie-antonio"
+    },
+    {
+      "title": "member details page",
+      "url": "https://ohiosenate.gov/members/nickie-j-antonio"
+    },
+    {
+      "title": "member list page",
+      "url": "https://www.legislature.ohio.gov/legislators/senate-directory"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/nickieantonio"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.ohiosenate.gov/senators"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

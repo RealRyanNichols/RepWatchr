@@ -1,0 +1,61 @@
+{
+  "id": "case-brittain",
+  "name": "Case Brittain",
+  "firstName": "Case",
+  "lastName": "Brittain",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-107",
+  "jurisdiction": "South Carolina House of Representatives",
+  "county": [
+    "South Carolina"
+  ],
+  "termStart": "2020-11-09",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 522D, Blatt Building P.O. Box 11867, Columbia, SC 29201",
+    "phone": "803-212-6727",
+    "email": "casebrittain@schouse.gov",
+    "website": "https://scstatehouse.gov/member.php?code=0202272703"
+  },
+  "bio": "Case Brittain serves as State Representative for South Carolina House of Representatives District 107. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "SC",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://scstatehouse.gov/member.php?code=0202272703"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/sc/legislature/Thomas-C-Case-Brittain-Jr-30329193-5519-45c5-a7de-f841e62b91ac.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Case_Brittain"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Case_Brittain"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/191572/case-brittain"
+    },
+    {
+      "title": "Public source",
+      "url": "https://scstatehouse.gov/member.php?chamber=H"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.scstatehouse.gov/member.php?chamber=H"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.scstatehouse.gov/member.php?code=0202272703"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

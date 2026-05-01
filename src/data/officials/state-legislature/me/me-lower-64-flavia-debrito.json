@@ -1,0 +1,56 @@
+{
+  "id": "flavia-debrito",
+  "name": "Flavia DeBrito",
+  "firstName": "Flavia",
+  "lastName": "DeBrito",
+  "photo": "/images/officials/state-legislature/me/flavia-debrito.jpg",
+  "photoSourceUrl": "https://s3.amazonaws.com/ballotpedia-api4/files/thumbs/200/300/FlaviaDeBrito20245.jpeg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-64",
+  "jurisdiction": "Maine House of Representatives",
+  "county": [
+    "Maine"
+  ],
+  "termStart": "2024-12-03",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 333, House Democratic Office 2 State House Station, Augusta, ME 04333",
+    "phone": "800-423-2900",
+    "email": "flavia.debrito@legislature.maine.gov",
+    "website": "https://legislature.maine.gov/house/house/MemberProfiles/Details/3121"
+  },
+  "bio": "Flavia DeBrito serves as State Representative for Maine House of Representatives District 64. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "ME",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://legislature.maine.gov/house/house/MemberProfiles/Details/3121"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/me/legislature/Flavia-DeBrito-1e34b996-ad95-4a32-866c-dd65ee82e3f4.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://s3.amazonaws.com/ballotpedia-api4/files/thumbs/200/300/FlaviaDeBrito20245.jpeg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Flavia_DeBrito"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/flavia-debrito-91634454"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.maine.gov/housedems/node/4099"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

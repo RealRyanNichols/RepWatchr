@@ -1,0 +1,61 @@
+{
+  "id": "jackie-hayes",
+  "name": "Jackie Hayes",
+  "firstName": "Jackie",
+  "lastName": "Hayes",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-55",
+  "jurisdiction": "South Carolina House of Representatives",
+  "county": [
+    "South Carolina"
+  ],
+  "termStart": "",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 333C, Blatt Building P.O. Box 11867, Columbia, SC 29201",
+    "phone": "803-734-3099",
+    "email": "jackiehayes@schouse.gov",
+    "website": "https://scstatehouse.gov/member.php?code=0802272631"
+  },
+  "bio": "Jackie Hayes serves as State Representative for South Carolina House of Representatives District 55. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "SC",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://scstatehouse.gov/member.php?code=0802272631"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/sc/legislature/Jackie-E-Coach-Hayes-0193ab02-383a-4b92-a810-00fd0bf0fb98.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Jackie_Hayes"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Jackie_E._Hayes"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/24996/jackie-hayes"
+    },
+    {
+      "title": "Public source",
+      "url": "https://scstatehouse.gov/member.php?chamber=H"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.scstatehouse.gov/member.php?chamber=H"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.scstatehouse.gov/member.php?code=0802272631"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

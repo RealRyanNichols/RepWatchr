@@ -1,0 +1,60 @@
+{
+  "id": "ellen-rockmore",
+  "name": "Ellen Rockmore",
+  "firstName": "Ellen",
+  "lastName": "Rockmore",
+  "photo": "/images/officials/state-legislature/nh/ellen-rockmore.jpg",
+  "photoSourceUrl": "https://d34zq6icsxu12y.cloudfront.net/assets/uploads/136FB17E-F543-45AA-9674-FE85B497B3A6_1_201_a.jpeg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-Grafton 12",
+  "jurisdiction": "New Hampshire House of Representatives",
+  "county": [
+    "New Hampshire"
+  ],
+  "termStart": "2024-12-04",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "State House 107 N. Main St., Concord, NH 03301",
+    "phone": "603-271-3661",
+    "email": "ellen.rockmore@gc.nh.gov",
+    "website": "https://gc.nh.gov/house/members/member.aspx?pid=11183"
+  },
+  "bio": "Ellen Rockmore serves as State Representative for New Hampshire House of Representatives District Grafton 12. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "NH",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://gc.nh.gov/house/members/member.aspx?pid=11183"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/nh/legislature/Ellen-Rockmore-194a44fa-ae6e-4f8a-80fa-1ba652df02ba.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://d34zq6icsxu12y.cloudfront.net/assets/uploads/136FB17E-F543-45AA-9674-FE85B497B3A6_1_201_a.jpeg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Ellen_Rockmore"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Ellen_Rockmore"
+    },
+    {
+      "title": "Public source",
+      "url": "https://gencourt.state.nh.us/house/members/member.aspx?pid=11183"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/218911/ellen-rockmore"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

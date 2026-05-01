@@ -1,0 +1,65 @@
+{
+  "id": "jeann-kapela",
+  "name": "Jeann\u00e9 Kapela",
+  "firstName": "Jeann\u00e9",
+  "lastName": "Kapela",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-5",
+  "jurisdiction": "Hawaii House of Representatives",
+  "county": [
+    "Hawaii"
+  ],
+  "termStart": "2020-11-03",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "State Capitol Room 418, 415 S. Beretania St., Honolulu, HI 96813",
+    "phone": "808-586-9605",
+    "email": "repkapela@capitol.hawaii.gov",
+    "website": "https://www.capitol.hawaii.gov/legislature/memberpage.aspx?member=71"
+  },
+  "bio": "Jeann\u00e9 Kapela serves as State Representative for Hawaii House of Representatives District 5. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "HI",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.capitol.hawaii.gov/legislature/memberpage.aspx?member=71"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/hi/legislature/Jeanne-Kapela-47a7e8c6-361d-4854-9253-e311b58d9e1c.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Jeanne_Kapela"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Jeann%C3%A9_Kapela"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.capitol.hawaii.gov/legislature/memberpage.aspx?member=71&year=2023"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.capitol.hawaii.gov/legislature/memberpage.aspx?member=71&year=2024"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.capitol.hawaii.gov/memberpage.aspx?member=Kapela&year=2021"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.capitol.hawaii.gov/memberpage.aspx?member=Kapela&year=2022"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.capitol.hawaii.gov/members/legislators.aspx"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

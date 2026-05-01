@@ -1,0 +1,68 @@
+{
+  "id": "william-wivell",
+  "name": "William Wivell",
+  "firstName": "William",
+  "lastName": "Wivell",
+  "photo": "/images/officials/state-legislature/md/william-wivell.jpg",
+  "photoSourceUrl": "https://mgaleg.maryland.gov/2025RS/images/wivell01.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "Delegate",
+  "district": "HD-2A",
+  "jurisdiction": "Maryland House of Delegates",
+  "county": [
+    "Maryland"
+  ],
+  "termStart": "2015-03-16",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 324, Lowe House Office Building 6 Bladen St., Annapolis, MD 21401",
+    "phone": "410-841-3447",
+    "email": "william.wivell@house.maryland.gov",
+    "website": "https://mgaleg.maryland.gov/mgawebsite/Members/Details/wivell01"
+  },
+  "bio": "William Wivell serves as Delegate for Maryland House of Delegates District 2A. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "MD",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://mgaleg.maryland.gov/mgawebsite/Members/Details/wivell01"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/md/legislature/William-J-Wivell-7616b0d4-487f-4667-b92c-b09f628235d1.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://mgaleg.maryland.gov/2025RS/images/wivell01.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/William_Wivell"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/William_J._Wivell"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/36506/william-wivell"
+    },
+    {
+      "title": "Public source",
+      "url": "https://mgaleg.maryland.gov/webmga/frmMain.aspx?pid=sponpage&tab=subject6&id=wivell01&stab=01"
+    },
+    {
+      "title": "Public source",
+      "url": "https://msa.maryland.gov/msa/mdmanual/06hse/html/msa14893.html"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/william-wivell-268a7426"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

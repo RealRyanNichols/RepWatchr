@@ -1,0 +1,72 @@
+{
+  "id": "cassandra-levesque",
+  "name": "Cassandra Levesque",
+  "firstName": "Cassandra",
+  "lastName": "Levesque",
+  "photo": "/images/officials/state-legislature/nh/cassandra-levesque.jpg",
+  "photoSourceUrl": "https://storage.googleapis.com/enview-dev-public-general/legislative-people-photos/73228.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-Strafford 4",
+  "jurisdiction": "New Hampshire House of Representatives",
+  "county": [
+    "New Hampshire"
+  ],
+  "termStart": "2018-12-05",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "State House 107 N. Main St., Concord, NH 03301",
+    "phone": "603-271-3661",
+    "email": "cassandra.levesque@gc.nh.gov",
+    "website": "https://cassandralevesque4nh.wordpress.com/"
+  },
+  "bio": "Cassandra Levesque serves as State Representative for New Hampshire House of Representatives District Strafford 4. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "NH",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://cassandralevesque4nh.wordpress.com/"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/nh/legislature/Cassandra-N-Levesque-711423e3-ff28-4150-8a89-ec568a4f2c5d.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://storage.googleapis.com/enview-dev-public-general/legislative-people-photos/73228.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Cassandra_Levesque"
+    },
+    {
+      "title": "Public source",
+      "url": "https://cassandralevesque4nh.wordpress.com"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Cassandra_Levesque"
+    },
+    {
+      "title": "Public source",
+      "url": "https://gc.nh.gov/house/members/member.aspx?pid=9425"
+    },
+    {
+      "title": "Public source",
+      "url": "https://gencourt.state.nh.us/downloads/Members.txt"
+    },
+    {
+      "title": "Public source",
+      "url": "https://gencourt.state.nh.us/downloads/members.txt"
+    },
+    {
+      "title": "Public source",
+      "url": "https://gencourt.state.nh.us/house/members/member.aspx?pid=9425"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

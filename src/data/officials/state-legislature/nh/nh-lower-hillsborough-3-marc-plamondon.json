@@ -1,0 +1,57 @@
+{
+  "id": "marc-plamondon",
+  "name": "Marc Plamondon",
+  "firstName": "Marc",
+  "lastName": "Plamondon",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-Hillsborough 3",
+  "jurisdiction": "New Hampshire House of Representatives",
+  "county": [
+    "New Hampshire"
+  ],
+  "termStart": "2023-05-28",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "State House 107 N. Main St., Concord, NH 03301",
+    "phone": "603-271-3661",
+    "email": "marc.plamondon@gc.nh.gov",
+    "website": "https://gc.nh.gov/house/members/member.aspx?pid=10998"
+  },
+  "bio": "Marc Plamondon serves as State Representative for New Hampshire House of Representatives District Hillsborough 3. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "NH",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://gc.nh.gov/house/members/member.aspx?pid=10998"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/nh/legislature/Marc-W-Plamondon-a5b1edc7-c0a1-49fe-824c-a9177a8e1218.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Marc_Plamondon"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Marc_Plamondon"
+    },
+    {
+      "title": "Public source",
+      "url": "https://gencourt.state.nh.us/house/members/member.aspx?pid=10998"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/75104/marc-plamondon"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.gencourt.state.nh.us/house/members/member.aspx?pid=10998"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

@@ -1,0 +1,56 @@
+{
+  "id": "selena-la-rue-hatch",
+  "name": "Selena La Rue Hatch",
+  "firstName": "Selena",
+  "lastName": "La Rue Hatch",
+  "photo": "/images/officials/state-legislature/nv/selena-la-rue-hatch.jpg",
+  "photoSourceUrl": "http://leg.state.nv.us/Session/82nd2023/legislators/Assembly/Images/LaRueHatch.Selena.398.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "Assemblymember",
+  "district": "HD-25",
+  "jurisdiction": "Nevada Assembly",
+  "county": [
+    "Nevada"
+  ],
+  "termStart": "2022-11-09",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 3159, Nevada Assembly 401 S. Carson St., Carson City, NV 89701",
+    "phone": "775-684-8837",
+    "email": "selena.la.rue.hatch@asm.state.nv.us",
+    "website": "https://www.leg.state.nv.us/App/Legislator/A/Assembly/Current/25"
+  },
+  "bio": "Selena La Rue Hatch serves as Assemblymember for Nevada Assembly District 25. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "NV",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.leg.state.nv.us/App/Legislator/A/Assembly/Current/25"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/nv/legislature/Selena-La-Rue-Hatch-99f4f903-1c4f-49f0-835f-c0b9b1aa0317.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "http://leg.state.nv.us/Session/82nd2023/legislators/Assembly/Images/LaRueHatch.Selena.398.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Selena_La_Rue_Hatch"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Selena_La_Rue_Hatch"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.leg.state.nv.us/App/Legislator/A/Assembly/Current"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

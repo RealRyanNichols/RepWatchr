@@ -1,0 +1,64 @@
+{
+  "id": "jack-bailey",
+  "name": "Jack Bailey",
+  "firstName": "Jack",
+  "lastName": "Bailey",
+  "photo": "/images/officials/state-legislature/md/jack-bailey.jpg",
+  "photoSourceUrl": "http://mgaleg.maryland.gov/2019RS/images/bailey01.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-29",
+  "jurisdiction": "Maryland Senate",
+  "county": [
+    "Maryland"
+  ],
+  "termStart": "2019-01-09",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 401, James Senate Office Building 11 Bladen St., Annapolis, MD 21401",
+    "phone": "410-841-3673",
+    "email": "jack.bailey@senate.maryland.gov",
+    "website": "https://mgaleg.maryland.gov/mgawebsite/Members/Details/bailey01"
+  },
+  "bio": "Jack Bailey serves as State Senator for Maryland Senate District 29. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "MD",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://mgaleg.maryland.gov/mgawebsite/Members/Details/bailey01"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/md/legislature/Jack-Bailey-d6ad9dff-6f4f-48c9-8806-d651a0d86f58.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "http://mgaleg.maryland.gov/2019RS/images/bailey01.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Jack_Bailey_(Maryland)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/John_D._(Jack)_Bailey"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/178461/jack-bailey"
+    },
+    {
+      "title": "Public source",
+      "url": "https://mgaleg.maryland.gov/webmga/frmMain.aspx?pid=sponpage&tab=subject6&id=bailey01&stab=01"
+    },
+    {
+      "title": "Public source",
+      "url": "https://msa.maryland.gov/msa/mdmanual/05sen/html/msa18046.html"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

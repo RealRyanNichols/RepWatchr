@@ -1,0 +1,61 @@
+{
+  "id": "jos-dalmau-santiago",
+  "name": "Jos\u00e9 Dalmau Santiago",
+  "firstName": "Jos\u00e9",
+  "lastName": "Dalmau Santiago",
+  "party": "NP",
+  "level": "state",
+  "position": "Territorial Senator",
+  "district": "At-Large",
+  "jurisdiction": "Puerto Rico Senate",
+  "county": [
+    "Puerto Rico"
+  ],
+  "termStart": "2021-01-02",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Senado, El Capitolio P.O. Box 9023431, San Juan, PR 00902",
+    "phone": "787-724-2030",
+    "email": "jldalmau@senado.pr.gov",
+    "website": "https://senado.pr.gov/Pages/Senators/HON--JOSE-L--DALMAU-SANTIAGO.aspx"
+  },
+  "bio": "Jos\u00e9 Dalmau Santiago serves as Territorial Senator for Puerto Rico Senate District At-Large. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "PR",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://senado.pr.gov/Pages/Senators/HON--JOSE-L--DALMAU-SANTIAGO.aspx"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/pr/legislature/Jos-L-Dalmau-Santiago-6f8348ec-b184-4c8d-b0dc-d82ef8dcb566.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Jos%C3%A9_Dalmau_Santiago"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Jos%C3%A9_Luis_Dalmau"
+    },
+    {
+      "title": "Public source",
+      "url": "https://senado.pr.gov/index.cfm?module=senadores"
+    },
+    {
+      "title": "Public source",
+      "url": "https://senado.pr.gov/senators/hon-jos%C3%A9-l-dalmau-santiago"
+    },
+    {
+      "title": "Public source",
+      "url": "https://senado.pr.gov/senators/hon-jos\u00e9-l-dalmau-santiago"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.senado.pr.gov/hon-jos%C3%A9-l-dalmau-santiago"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

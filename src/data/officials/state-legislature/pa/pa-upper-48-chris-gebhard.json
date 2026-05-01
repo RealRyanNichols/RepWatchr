@@ -1,0 +1,66 @@
+{
+  "id": "chris-gebhard",
+  "name": "Chris Gebhard",
+  "firstName": "Chris",
+  "lastName": "Gebhard",
+  "party": "R",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-48",
+  "jurisdiction": "Pennsylvania Senate",
+  "county": [
+    "Pennsylvania"
+  ],
+  "termStart": "2021-06-09",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 15, East Wing Senate Box 203048, Harrisburg, PA 17120",
+    "phone": "717-787-5708",
+    "email": "cgebhard@pasen.gov",
+    "website": "https://senatorgebhard.com/",
+    "socialMedia": {
+      "x": "https://x.com/SenatorGebhard",
+      "twitter": "https://x.com/SenatorGebhard",
+      "facebook": "https://facebook.com/SenatorGebhard48"
+    }
+  },
+  "bio": "Chris Gebhard serves as State Senator for Pennsylvania Senate District 48. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "PA",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://senatorgebhard.com/"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/pa/legislature/Christopher-Gebhard-965b26f8-5a4a-4458-a327-a25d89605e65.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Chris_Gebhard"
+    },
+    {
+      "title": "Public source",
+      "url": "https://senatorgebhard.com"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.legis.state.pa.us/cfdocs/legis/home/member_information/mbrList.cfm?body=S&sort=alpha"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.legis.state.pa.us/cfdocs/legis/home/member_information/Senate_bio.cfm?id=1928"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/christopher-gebhard-11397817"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.palegis.us/senate/members/bio/1928/sen-gebhard"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

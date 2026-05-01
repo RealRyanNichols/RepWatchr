@@ -1,0 +1,64 @@
+{
+  "id": "reece-pyrtle",
+  "name": "Reece Pyrtle",
+  "firstName": "Reece",
+  "lastName": "Pyrtle",
+  "photo": "/images/officials/state-legislature/nc/reece-pyrtle.jpg",
+  "photoSourceUrl": "https://www.ncleg.gov/Members/MemberImage/H/787/Low",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-65",
+  "jurisdiction": "North Carolina House of Representatives",
+  "county": [
+    "North Carolina"
+  ],
+  "termStart": "2021-08-11",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 417A, Legislative Office Building 300 N. Salisbury St., Raleigh, NC 27603",
+    "phone": "919-733-5779",
+    "email": "reece.pyrtle@ncleg.gov",
+    "website": "https://www.ncleg.gov/Members/Biography/H/787"
+  },
+  "bio": "Reece Pyrtle serves as State Representative for North Carolina House of Representatives District 65. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "NC",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.ncleg.gov/Members/Biography/H/787"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/nc/legislature/A-Reece-Pyrtle-Jr-837ec59b-a7db-41dc-9e9f-a7a83b462213.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://www.ncleg.gov/Members/MemberImage/H/787/Low"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/A._Reece_Pyrtle,_Jr."
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Reece_Pyrtle"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/198983/reece-pyrtle-jr"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/reece-pyrtle-b6902514"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.ncleg.gov/Members/MemberTable/H"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

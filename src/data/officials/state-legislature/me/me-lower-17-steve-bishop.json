@@ -1,0 +1,52 @@
+{
+  "id": "steve-bishop",
+  "name": "Steve Bishop",
+  "firstName": "Steve",
+  "lastName": "Bishop",
+  "photo": "/images/officials/state-legislature/me/steve-bishop.jpg",
+  "photoSourceUrl": "https://bishopforus.com/wp-content/uploads/2024/03/Steve-Bishop-e1711465002356.jpeg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-17",
+  "jurisdiction": "Maine House of Representatives",
+  "county": [
+    "Maine"
+  ],
+  "termStart": "2024-12-03",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 332, House Republican Office 2 State House Station, Augusta, ME 04330",
+    "phone": "800-423-2900",
+    "email": "steven.bishop@legislature.maine.gov",
+    "website": "https://legislature.maine.gov/house/house/memberprofiles/Details/3110"
+  },
+  "bio": "Steve Bishop serves as State Representative for Maine House of Representatives District 17. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "ME",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://legislature.maine.gov/house/house/memberprofiles/Details/3110"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/me/legislature/Steve-Bishop-4cd1a303-929b-43fe-b92c-1cca8a89d302.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://bishopforus.com/wp-content/uploads/2024/03/Steve-Bishop-e1711465002356.jpeg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Steven_Bishop"
+    },
+    {
+      "title": "Public source",
+      "url": "https://mainehousegop.org/members/bishop-steve"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

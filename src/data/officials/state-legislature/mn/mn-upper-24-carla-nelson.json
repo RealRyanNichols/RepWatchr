@@ -1,0 +1,72 @@
+{
+  "id": "carla-nelson",
+  "name": "Carla Nelson",
+  "firstName": "Carla",
+  "lastName": "Nelson",
+  "photo": "/images/officials/state-legislature/mn/carla-nelson.jpg",
+  "photoSourceUrl": "https://www.senate.mn/graphics/24Nelson.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-24",
+  "jurisdiction": "Minnesota Senate",
+  "county": [
+    "Minnesota"
+  ],
+  "termStart": "2023-01-03",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 2301, Minnesota Senate Building 95 University Ave. West, St. Paul, MN 55155",
+    "phone": "651-296-4848",
+    "email": "sen.carla.nelson@senate.mn",
+    "website": "https://www.senate.mn/members/member_bio.html?mem_id=1178"
+  },
+  "bio": "Carla Nelson serves as State Senator for Minnesota Senate District 24. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "MN",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.senate.mn/members/member_bio.html?mem_id=1178"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/mn/legislature/Carla-J-Nelson-69ac712d-4de2-448a-8b84-ef07b4c4e423.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://www.senate.mn/graphics/24Nelson.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Carla_Nelson"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Carla_Nelson"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/38565/carla-nelson"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/carla-nelson-1b182311"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.senate.mn/api/members"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.senate.mn/members/index.php"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.senate.mn/members/list.csv"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

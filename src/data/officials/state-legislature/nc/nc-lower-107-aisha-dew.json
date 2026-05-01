@@ -1,0 +1,48 @@
+{
+  "id": "aisha-dew",
+  "name": "Aisha Dew",
+  "firstName": "Aisha",
+  "lastName": "Dew",
+  "photo": "/images/officials/state-legislature/nc/aisha-dew.jpg",
+  "photoSourceUrl": "https://static.wixstatic.com/media/382708_03a01c002bae45c2a4dd4b665892e242~mv2.png/v1/fill/w_369,h_369,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/aisha%20dew%20updated%20headshot.png",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-107",
+  "jurisdiction": "North Carolina House of Representatives",
+  "county": [
+    "North Carolina"
+  ],
+  "termStart": "2025-01-01",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 1021, North Carolina Legislative Building 16 W. Jones St., Raleigh, NC 27601",
+    "phone": "919-733-5778",
+    "email": "aisha.dew@ncleg.gov",
+    "website": "https://www.ncleg.gov/Members/Biography/H/836"
+  },
+  "bio": "Aisha Dew serves as State Representative for North Carolina House of Representatives District 107. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "NC",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.ncleg.gov/Members/Biography/H/836"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/nc/legislature/Aisha-Dew-9f9d7fb9-9981-412d-b3e2-45c7f67d189a.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://static.wixstatic.com/media/382708_03a01c002bae45c2a4dd4b665892e242~mv2.png/v1/fill/w_369,h_369,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/aisha%20dew%20updated%20headshot.png"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Aisha_Dew"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

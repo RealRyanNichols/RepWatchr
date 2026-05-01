@@ -1,0 +1,60 @@
+{
+  "id": "larry-byrd",
+  "name": "Larry Byrd",
+  "firstName": "Larry",
+  "lastName": "Byrd",
+  "photo": "/images/officials/state-legislature/ms/larry-byrd.jpg",
+  "photoSourceUrl": "http://billstatus.ls.state.ms.us/members/house/byrd.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-104",
+  "jurisdiction": "Mississippi House of Representatives",
+  "county": [
+    "Mississippi"
+  ],
+  "termStart": "2008-01-08",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "State Capitol Room 400-B, 400 High St., Jackson, MS 39201",
+    "phone": "601-359-3337",
+    "email": "lbyrd@house.ms.gov",
+    "website": "https://billstatus.ls.state.ms.us/members/house/byrd.xml"
+  },
+  "bio": "Larry Byrd serves as State Representative for Mississippi House of Representatives District 104. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "MS",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://billstatus.ls.state.ms.us/members/house/byrd.xml"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ms/legislature/Larry-Byrd-57419404-003c-4a1d-93c0-dce987b11c00.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "http://billstatus.ls.state.ms.us/members/house/byrd.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Larry_Byrd"
+    },
+    {
+      "title": "Public source",
+      "url": "https://billstatus.ls.state.ms.us/members/hr_membs.xml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Larry_Byrd"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/larry-byrd-20619180"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

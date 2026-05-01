@@ -1,0 +1,53 @@
+{
+  "id": "jerry-govan",
+  "name": "Jerry Govan",
+  "firstName": "Jerry",
+  "lastName": "Govan",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-93",
+  "jurisdiction": "South Carolina House of Representatives",
+  "county": [
+    "South Carolina"
+  ],
+  "termStart": "2024-11-11",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 304D, Blatt Building P.O. Box 11867, Columbia, SC 29201",
+    "phone": "803-212-6945",
+    "email": "jerrygovan@schouse.gov",
+    "website": "https://www.scstatehouse.gov/member.php?code=0702272643"
+  },
+  "bio": "Jerry Govan serves as State Representative for South Carolina House of Representatives District 93. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "SC",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.scstatehouse.gov/member.php?code=0702272643"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/sc/legislature/Jerry-N-Govan-Jr-56f713aa-3887-4e45-996d-ca60006edd99.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Jerry_Govan_Jr."
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Jerry_Govan_Jr."
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/8501/jerry-govan-jr"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.scstatehouse.gov/member.php?chamber=H"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

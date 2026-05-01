@@ -1,0 +1,64 @@
+{
+  "id": "izaah-knox",
+  "name": "Izaah Knox",
+  "firstName": "Izaah",
+  "lastName": "Knox",
+  "photo": "/images/officials/state-legislature/ia/izaah-knox.jpg",
+  "photoSourceUrl": "https://www.legis.iowa.gov/photo?action=getPhoto&ga=91&pid=34010",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-17",
+  "jurisdiction": "Iowa Senate",
+  "county": [
+    "Iowa"
+  ],
+  "termStart": "2023-01-03",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "1007 E. Grand Ave., Des Moines, IA 50319",
+    "phone": "515-281-3371",
+    "email": "izaah.knox@legis.iowa.gov",
+    "website": "https://www.legis.iowa.gov/legislators/legislator?ga=90&personID=34010"
+  },
+  "bio": "Izaah Knox serves as State Senator for Iowa Senate District 17. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "IA",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.legis.iowa.gov/legislators/legislator?ga=90&personID=34010"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ia/legislature/Izaah-Knox-0af01ef4-f982-4239-9ffc-56d33cee3b7b.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://www.legis.iowa.gov/photo?action=getPhoto&ga=91&pid=34010"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Izaah_Knox"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Izaah_Knox"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.legis.iowa.gov/legislators/legislator?personID=34010"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.legis.iowa.gov/legislators/senate"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/izaahknox"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

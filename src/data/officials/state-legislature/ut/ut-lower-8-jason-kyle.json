@@ -1,0 +1,69 @@
+{
+  "id": "jason-kyle",
+  "name": "Jason Kyle",
+  "firstName": "Jason",
+  "lastName": "Kyle",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-8",
+  "jurisdiction": "Utah House of Representatives",
+  "county": [
+    "Utah"
+  ],
+  "termStart": "2023-01-01",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "P.O. Box 145030 350 N. State St., Suite 350, Salt Lake City, UT 84114",
+    "phone": "801-538-1029",
+    "email": "jkyle@le.utah.gov",
+    "website": "https://house.utah.gov/rep/KYLEJB/"
+  },
+  "bio": "Jason Kyle serves as State Representative for Utah House of Representatives District 8. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "UT",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://house.utah.gov/rep/KYLEJB/"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ut/legislature/Jason-B-Kyle-cb6f79ec-b7b4-418e-950e-f5f066489929.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Jason_Kyle"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Jason_Kyle_(politician)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://house.utah.gov/rep/KYLEJB"
+    },
+    {
+      "title": "Public source",
+      "url": "https://house.utleg.gov/rep/KYLEJB"
+    },
+    {
+      "title": "Public source",
+      "url": "https://house.utleg.gov/rep/KYLEJB/"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/182137/jason-kyle"
+    },
+    {
+      "title": "Public source",
+      "url": "https://le.utah.gov/data/legislators.json"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/jason-kyle-42011437"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

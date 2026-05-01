@@ -1,0 +1,60 @@
+{
+  "id": "nikki-rivera",
+  "name": "Nikki Rivera",
+  "firstName": "Nikki",
+  "lastName": "Rivera",
+  "photo": "/images/officials/state-legislature/pa/nikki-rivera.jpg",
+  "photoSourceUrl": "https://static.wixstatic.com/media/ac23d4_f90c7e4f91684d28939b38f61d2cd0ae~mv2.jpg/v1/fill/w_640,h_554,al_t,q_80,usm_0.66_1.00_0.01,enc_auto/ac23d4_f90c7e4f91684d28939b38f61d2cd0ae~mv2.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-96",
+  "jurisdiction": "Pennsylvania House of Representatives",
+  "county": [
+    "Pennsylvania"
+  ],
+  "termStart": "2024-12-01",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 109A, East Wing P.O. Box 202096, Harrisburg, PA 17120",
+    "phone": "717-787-3555",
+    "email": "reprivera@pahouse.net",
+    "website": "https://www.pahouse.com/Rivera/"
+  },
+  "bio": "Nikki Rivera serves as State Representative for Pennsylvania House of Representatives District 96. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "PA",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.pahouse.com/Rivera/"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/pa/legislature/Nikki-Rivera-5df981dc-0f0f-498e-8e0e-72cfa5410b2a.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://static.wixstatic.com/media/ac23d4_f90c7e4f91684d28939b38f61d2cd0ae~mv2.jpg/v1/fill/w_640,h_554,al_t,q_80,usm_0.66_1.00_0.01,enc_auto/ac23d4_f90c7e4f91684d28939b38f61d2cd0ae~mv2.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Nikki_Rivera"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/nikki-rivera-211a7a70"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.pahouse.com/Rivera"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.palegis.us/house/members/bio/2030/rep-rivera"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

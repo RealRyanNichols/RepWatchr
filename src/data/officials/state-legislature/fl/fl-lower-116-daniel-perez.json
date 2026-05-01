@@ -1,0 +1,68 @@
+{
+  "id": "daniel-perez",
+  "name": "Daniel Perez",
+  "firstName": "Daniel",
+  "lastName": "Perez",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-116",
+  "jurisdiction": "Florida House of Representatives",
+  "county": [
+    "Florida"
+  ],
+  "termStart": "2017-09-26",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 420, The Capitol 402 S. Monroe St., Tallahassee, FL 32399",
+    "email": "daniel.perez@flhouse.gov",
+    "website": "https://myfloridahouse.gov/Sections/Representatives/details.aspx?MemberId=4690&LegislativeTermId=90"
+  },
+  "bio": "Daniel Perez serves as State Representative for Florida House of Representatives District 116. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "FL",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://myfloridahouse.gov/Sections/Representatives/details.aspx?MemberId=4690&LegislativeTermId=90"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/fl/legislature/Daniel-Perez-ed30b061-bbdc-44f3-8a40-e574646d6cf8.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Daniel_Anthony_Perez"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Daniel_Perez_(politician)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.flhouse.gov/Sections/Representatives/custom/details.aspx?MemberId=4690"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.flhouse.gov/Sections/Representatives/details.aspx?MemberId=4690"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/daniel-perez-2b747253"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.myfloridahouse.gov/Representatives"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.myfloridahouse.gov/Sections/Representatives/details.aspx?MemberId=4690"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.myfloridahouse.gov/Sections/Representatives/details.aspx?MemberId=4690&LegislativeTermId=88"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

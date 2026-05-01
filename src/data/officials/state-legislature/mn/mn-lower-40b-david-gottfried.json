@@ -1,0 +1,60 @@
+{
+  "id": "david-gottfried",
+  "name": "David Gottfried",
+  "firstName": "David",
+  "lastName": "Gottfried",
+  "photo": "/images/officials/state-legislature/mn/david-gottfried.jpg",
+  "photoSourceUrl": "https://www.house.mn.gov/hinfo/memberimgls94/40B.gif?v=112221",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-40B",
+  "jurisdiction": "Minnesota House of Representatives",
+  "county": [
+    "Minnesota"
+  ],
+  "termStart": "2025-03-17",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Centennial Office Building 658 Cedar St., Second Floor, St. Paul, MN 55155",
+    "phone": "651-296-7153",
+    "email": "rep.david.gottfried@house.mn.gov",
+    "website": "https://www.house.mn.gov/members/profile/15650"
+  },
+  "bio": "David Gottfried serves as State Representative for Minnesota House of Representatives District 40B. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "MN",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.house.mn.gov/members/profile/15650"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/mn/legislature/David-Gottfried-0d187b4d-c15c-487e-9602-541bd7dd948a.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://www.house.mn.gov/hinfo/memberimgls94/40B.gif?v=112221"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/David_Gottfried"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/David_Gottfried_(politician)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/220705/david-gottfried"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/davidegottfried"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

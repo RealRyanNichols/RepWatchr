@@ -1,0 +1,47 @@
+{
+  "id": "josh-shapiro",
+  "name": "Josh Shapiro",
+  "firstName": "Josh",
+  "lastName": "Shapiro",
+  "photo": "/images/officials/state-executive/pa/josh-shapiro.jpg",
+  "photoSourceUrl": "https://s7d9.scene7.com/is/image/statepa/headshot?ts=1706910357175&dpr=off",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "Governor",
+  "district": "Pennsylvania",
+  "jurisdiction": "Pennsylvania statewide public office",
+  "county": [
+    "Pennsylvania"
+  ],
+  "termStart": "2023-01-17",
+  "termEnd": "2027-01-19",
+  "contactInfo": {
+    "office": "Office of Governor; 501 North 3rd Street; 508 Main Capitol Building; Harrisburg, PA 17120",
+    "phone": "717-787-2500",
+    "website": "https://www.pa.gov/en/governor.html",
+    "socialMedia": {
+      "x": "https://x.com/JoshShapiroPA",
+      "twitter": "https://x.com/JoshShapiroPA"
+    }
+  },
+  "bio": "Josh Shapiro is listed as Governor for Pennsylvania. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "PA",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.pa.gov/en/governor.html"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/pa/executive/Josh-Shapiro-ac7497c7-0a0d-495f-98ce-75dedbfeb0c7.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://s7d9.scene7.com/is/image/statepa/headshot?ts=1706910357175&dpr=off"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

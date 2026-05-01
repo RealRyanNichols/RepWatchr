@@ -1,0 +1,48 @@
+{
+  "id": "tony-evers",
+  "name": "Tony Evers",
+  "firstName": "Tony",
+  "lastName": "Evers",
+  "photo": "/images/officials/state-executive/wi/tony-evers.jpg",
+  "photoSourceUrl": "https://evers.wi.gov/PublishingImages/Pages/About_Tony/Governor.png",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "Governor",
+  "district": "Wisconsin",
+  "jurisdiction": "Wisconsin statewide public office",
+  "county": [
+    "Wisconsin"
+  ],
+  "termStart": "2019-01-07",
+  "termEnd": "2027-01-04",
+  "contactInfo": {
+    "office": "115 East, State Capitol, Madison WI 53702",
+    "phone": "608-266-1212",
+    "email": "EversInfo@wisconsin.gov",
+    "website": "https://evers.wi.gov/Pages/Home.aspx",
+    "socialMedia": {
+      "x": "https://x.com/GovEvers",
+      "twitter": "https://x.com/GovEvers"
+    }
+  },
+  "bio": "Tony Evers is listed as Governor for Wisconsin. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "WI",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://evers.wi.gov/Pages/Home.aspx"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/wi/executive/Tony-Evers-44ad52d1-4ba8-4ca2-b1e1-cda1621a0bc7.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://evers.wi.gov/PublishingImages/Pages/About_Tony/Governor.png"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

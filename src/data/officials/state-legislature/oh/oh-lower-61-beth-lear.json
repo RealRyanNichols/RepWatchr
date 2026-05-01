@@ -1,0 +1,60 @@
+{
+  "id": "beth-lear",
+  "name": "Beth Lear",
+  "firstName": "Beth",
+  "lastName": "Lear",
+  "photo": "/images/officials/state-legislature/oh/beth-lear.jpg",
+  "photoSourceUrl": "https://www.legislature.ohio.gov/assets/people/beth-lear/headshots/thumbnails/medium/beth-lear-january-2023-headshot_medium.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-61",
+  "jurisdiction": "Ohio House of Representatives",
+  "county": [
+    "Ohio"
+  ],
+  "termStart": "2023-01-01",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "77 S. High St. 12th Floor, Columbus, OH 43215",
+    "phone": "614-466-1431",
+    "email": "rep61@ohiohouse.gov",
+    "website": "https://www.ohiohouse.gov/members/beth-lear"
+  },
+  "bio": "Beth Lear serves as State Representative for Ohio House of Representatives District 61. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "OH",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.ohiohouse.gov/members/beth-lear"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/oh/legislature/Beth-Lear-de0a6483-7c16-43e1-a76b-c0cc98a9d7ed.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://www.legislature.ohio.gov/assets/people/beth-lear/headshots/thumbnails/medium/beth-lear-january-2023-headshot_medium.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Beth_Lear"
+    },
+    {
+      "title": "member details page",
+      "url": "https://ohiohouse.gov/members/beth-lear"
+    },
+    {
+      "title": "member list page",
+      "url": "https://www.legislature.ohio.gov/legislators/house-directory"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/beth-lear-1010ba19"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

@@ -1,0 +1,64 @@
+{
+  "id": "allen-reavis",
+  "name": "Allen Reavis",
+  "firstName": "Allen",
+  "lastName": "Reavis",
+  "photo": "/images/officials/state-legislature/ks/allen-reavis.jpg",
+  "photoSourceUrl": "https://www.atchisoncountyks.org/ImageRepository/Document?documentID=2708",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-63",
+  "jurisdiction": "Kansas House of Representatives",
+  "county": [
+    "Kansas"
+  ],
+  "termStart": "2025-01-13",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "State Capitol Room 512-N, Kansas  Building 300 SW 10th St., Topeka, KS 66612",
+    "phone": "785-296-8621",
+    "email": "allen.reavis@house.ks.gov",
+    "website": "https://www.kslegislature.gov/li/b2025_26/members/rep_reavis_allen_1/"
+  },
+  "bio": "Allen Reavis serves as State Representative for Kansas House of Representatives District 63. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "KS",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.kslegislature.gov/li/b2025_26/members/rep_reavis_allen_1/"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ks/legislature/Allen-Reavis-47445ee6-4c28-496c-b5a2-2f666fc62d46.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://www.atchisoncountyks.org/ImageRepository/Document?documentID=2708"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Allen_Reavis"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Allen_Reavis"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/219378/allen-reavis"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.kslegislature.gov/li/b2025_26/members/rep_reavis_allen_1"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/allen-reavis-4a261b227"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

@@ -1,0 +1,72 @@
+{
+  "id": "corley-ellis",
+  "name": "Corley Ellis",
+  "firstName": "Corley",
+  "lastName": "Ellis",
+  "photo": "/images/officials/state-legislature/al/corley-ellis.jpg",
+  "photoSourceUrl": "https://www.legislature.state.al.us/pdf/house/members/Ellis_41.png",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-41",
+  "jurisdiction": "Alabama House of Representatives",
+  "county": [
+    "Alabama"
+  ],
+  "termStart": "2017-02-07",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 404, 11 S. Union St., Montgomery, AL 36130",
+    "phone": "334-261-0560",
+    "email": "corley.ellis@alhouse.gov",
+    "website": "https://alison.legislature.state.al.us/house-leaders-members"
+  },
+  "bio": "Corley Ellis serves as State Representative for Alabama House of Representatives District 41. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "AL",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://alison.legislature.state.al.us/house-leaders-members"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/al/legislature/Corley-Ellis-3b1a631d-35d4-47bd-a37c-a98fed7a5bd4.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://www.legislature.state.al.us/pdf/house/members/Ellis_41.png"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Corley_Ellis"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Corley_Ellis"
+    },
+    {
+      "title": "graphql endpoint for member information",
+      "url": "https://gql.api.alison.legislature.state.al.us/graphql"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/82053/corley-ellis"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.legislature.state.al.us/aliswww/ISD/ALRepresentative.aspx?NAME=Ellis&OID_SPONSOR=100522&OID_PERSON=8129&SESSNAME="
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.legislature.state.al.us/aliswww/ISD/ALRepresentative.aspx?OID_SPONSOR=100522&OID_PERSON=8129"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.legislature.state.al.us/aliswww/ISD/House/ALRepresentatives.aspx"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

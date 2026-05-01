@@ -1,0 +1,65 @@
+{
+  "id": "matt-ritter",
+  "name": "Matt Ritter",
+  "firstName": "Matt",
+  "lastName": "Ritter",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-1",
+  "jurisdiction": "Connecticut House of Representatives",
+  "county": [
+    "Connecticut"
+  ],
+  "termStart": "2011-01-05",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 4105, Legislative Office Building 300 Capitol Ave., Hartford, CT 06106",
+    "phone": "860-240-8585",
+    "email": "matthew.ritter@cga.ct.gov",
+    "website": "https://www.cga.ct.gov/asp/CGABillStatus/CGAMemberBills.asp?dist_code=%27001%27&dist_name=001%20-%Ritter,%Matt"
+  },
+  "bio": "Matt Ritter serves as State Representative for Connecticut House of Representatives District 1. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "CT",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.cga.ct.gov/asp/CGABillStatus/CGAMemberBills.asp?dist_code=%27001%27&dist_name=001%20-%Ritter,%Matt"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ct/legislature/Matthew-Ritter-2a91c3d6-433a-4e8f-b5a5-38fc80b8ea57.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "ftp://ftp.cga.ct.gov/pub/data/LegislatorDatabase.csv"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Matthew_Ritter"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Matthew_Ritter"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/105698/matt-ritter"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.housedems.ct.gov/Ritter"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/matthew-ritter-4a96389"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.shipmangoodwin.com/people/matthew-d-ritter.html"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

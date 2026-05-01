@@ -1,0 +1,55 @@
+{
+  "id": "liz-murrill",
+  "name": "Liz Murrill",
+  "firstName": "Liz",
+  "lastName": "Murrill",
+  "photo": "/images/officials/state-executive/la/liz-murrill.jpg",
+  "photoSourceUrl": "https://www.naag.org/wp-content/uploads/2024/02/ag-LA-Murrill-Liz.png",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "Attorney General",
+  "district": "Louisiana",
+  "jurisdiction": "Louisiana statewide public office",
+  "county": [
+    "Louisiana"
+  ],
+  "termStart": "2024-01-08",
+  "termEnd": "2028-01-10",
+  "contactInfo": {
+    "office": "1885 North Third Street; Baton Rouge, LA 70802",
+    "phone": "225-326-6000",
+    "website": "https://www.aglizmurrill.com/"
+  },
+  "bio": "Liz Murrill is listed as Attorney General for Louisiana. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "LA",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.aglizmurrill.com/"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/la/executive/Liz-Murrill-6beaac02-1e0d-4aee-96d3-9033f9f918e8.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://www.naag.org/wp-content/uploads/2024/02/ag-LA-Murrill-Liz.png"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.aglizmurrill.com/About"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Liz_Murrill"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.naag.org/attorney-general/liz-murrill/"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

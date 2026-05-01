@@ -1,0 +1,60 @@
+{
+  "id": "kevin-corbin",
+  "name": "Kevin Corbin",
+  "firstName": "Kevin",
+  "lastName": "Corbin",
+  "photo": "/images/officials/state-legislature/nc/kevin-corbin.jpg",
+  "photoSourceUrl": "https://www.ncleg.gov/Members/MemberImage/S/433/Low",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-50",
+  "jurisdiction": "North Carolina Senate",
+  "county": [
+    "North Carolina"
+  ],
+  "termStart": "2021-01-01",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 623, Legislative Office Building 300 N. Salisbury St., Raleigh, NC 27603",
+    "phone": "919-733-5875",
+    "email": "kevin.corbin@ncleg.gov",
+    "website": "https://www.ncleg.gov/Members/Biography/S/433"
+  },
+  "bio": "Kevin Corbin serves as State Senator for North Carolina Senate District 50. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "NC",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.ncleg.gov/Members/Biography/S/433"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/nc/legislature/Kevin-Corbin-410836ee-4f48-4934-8f95-fca6b2d2f051.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://www.ncleg.gov/Members/MemberImage/S/433/Low"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Kevin_Corbin"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/166642/kevin-corbin"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/ncmymedquote"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.ncleg.gov/Members/MemberTable/S"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

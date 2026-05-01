@@ -1,0 +1,72 @@
+{
+  "id": "debra-altschiller",
+  "name": "Debra Altschiller",
+  "firstName": "Debra",
+  "lastName": "Altschiller",
+  "photo": "/images/officials/state-legislature/nh/debra-altschiller.jpg",
+  "photoSourceUrl": "https://storage.googleapis.com/enview-dev-public-general/legislative-people-photos/59250.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-24",
+  "jurisdiction": "New Hampshire Senate",
+  "county": [
+    "New Hampshire"
+  ],
+  "termStart": "2022-12-07",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 5, Legislative Office Building 33 N. State St., Concord, NH 03301",
+    "phone": "603-271-7875",
+    "email": "debra.altschiller@gc.nh.gov",
+    "website": "https://gc.nh.gov/senate/members/webpages/district24.aspx"
+  },
+  "bio": "Debra Altschiller serves as State Senator for New Hampshire Senate District 24. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "NH",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://gc.nh.gov/senate/members/webpages/district24.aspx"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/nh/legislature/Debra-Altschiller-925608b2-8d23-4186-85f6-4c50f334374d.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://storage.googleapis.com/enview-dev-public-general/legislative-people-photos/59250.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Debra_Altschiller"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Debra_Altschiller"
+    },
+    {
+      "title": "Public source",
+      "url": "https://gencourt.state.nh.us/downloads/Members.txt"
+    },
+    {
+      "title": "Public source",
+      "url": "https://gencourt.state.nh.us/downloads/members.txt"
+    },
+    {
+      "title": "Public source",
+      "url": "https://gencourt.state.nh.us/senate/members/webpages/district24.aspx"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/173138/debra-altschiller"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.gencourt.state.nh.us/downloads/Members.txt"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

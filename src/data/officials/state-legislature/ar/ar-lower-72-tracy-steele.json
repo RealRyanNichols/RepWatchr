@@ -1,0 +1,69 @@
+{
+  "id": "tracy-steele",
+  "name": "Tracy Steele",
+  "firstName": "Tracy",
+  "lastName": "Steele",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-72",
+  "jurisdiction": "Arkansas House of Representatives",
+  "county": [
+    "Arkansas"
+  ],
+  "termStart": "2025-01-13",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "State Capitol Arkansas  500 Woodlane St., Suite 350, Little Rock, AR 72201",
+    "phone": "501-682-6211",
+    "email": "sensteele@yahoo.com",
+    "website": "https://arkansashouse.org/district/72"
+  },
+  "bio": "Tracy Steele serves as State Representative for Arkansas House of Representatives District 72. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "AR",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://arkansashouse.org/district/72"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ar/legislature/Tracy-Steele-be626067-db01-4481-b096-d2792ff189c8.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://arkleg.state.ar.us/Legislators/Detail?member=Steele"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Tracy_Steele"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Tracy_Steele_(Arkansas)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Tracy_Steele"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/16119/tracy-steele"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.arkleg.state.ar.us/assembly/2011/2011R/Pages/MemberProfile.aspx?member=T.+Steele"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/tracy-steele-52506141"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/tracy-steele-7b331145"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

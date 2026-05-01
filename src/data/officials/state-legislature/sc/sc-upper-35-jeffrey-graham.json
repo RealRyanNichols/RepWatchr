@@ -1,0 +1,60 @@
+{
+  "id": "jeffrey-graham",
+  "name": "Jeffrey Graham",
+  "firstName": "Jeffrey",
+  "lastName": "Graham",
+  "photo": "/images/officials/state-legislature/sc/jeffrey-graham.jpg",
+  "photoSourceUrl": "https://www.grahamrealtyinc.com/files/images/agents/g/4d80bc35-8f04-43ab-84f1-1858ae7a8b42/1.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-35",
+  "jurisdiction": "South Carolina Senate",
+  "county": [
+    "South Carolina"
+  ],
+  "termStart": "2024-11-11",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 602, Gressette Building P.O. Box 142, Columbia, SC 29201",
+    "phone": "803-212-6008",
+    "email": "jeffreygraham@scsenate.gov",
+    "website": "https://www.scstatehouse.gov/member.php?code=0703124916"
+  },
+  "bio": "Jeffrey Graham serves as State Senator for South Carolina Senate District 35. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "SC",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.scstatehouse.gov/member.php?code=0703124916"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/sc/legislature/Jeffrey-Graham-2a153d17-d828-4285-a361-fb9f736dd388.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://www.grahamrealtyinc.com/files/images/agents/g/4d80bc35-8f04-43ab-84f1-1858ae7a8b42/1.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Jeffrey_Graham_(South_Carolina)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Jeffrey_R._Graham"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/216225/jeffrey-graham"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/jeffrey-graham-40912160"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

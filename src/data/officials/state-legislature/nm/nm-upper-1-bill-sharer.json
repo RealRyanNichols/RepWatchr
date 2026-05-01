@@ -1,0 +1,73 @@
+{
+  "id": "bill-sharer",
+  "name": "Bill Sharer",
+  "firstName": "Bill",
+  "lastName": "Sharer",
+  "photo": "/images/officials/state-legislature/nm/bill-sharer.jpg",
+  "photoSourceUrl": "https://www.nmlegis.gov/Images/Legislators/Senate/SSHAR.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-1",
+  "jurisdiction": "New Mexico Senate",
+  "county": [
+    "New Mexico"
+  ],
+  "termStart": "2001-01-16",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "State Capitol Room 109A, New Mexico  490 Old Santa Fe Trail, Santa Fe, NM 87501",
+    "phone": "505-986-4877",
+    "email": "bill@williamsharer.com",
+    "website": "https://www.linkedin.com/in/william-sharer-71248033/",
+    "socialMedia": {
+      "x": "https://x.com/billsharer",
+      "twitter": "https://x.com/billsharer",
+      "facebook": "https://facebook.com/bill.sharer.9"
+    }
+  },
+  "bio": "Bill Sharer serves as State Senator for New Mexico Senate District 1. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "NM",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.linkedin.com/in/william-sharer-71248033/"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/nm/legislature/William-E-Sharer-7a7be318-78b1-49c6-bd98-f2b9b7476372.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://www.nmlegis.gov/Images/Legislators/Senate/SSHAR.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/William_Sharer"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/William_Sharer"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/43442/bill-sharer"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/william-sharer-71248033"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.nmlegis.gov/Members/Legislator?SponCode=SSHAR"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.nmlegis.gov/Members/Legislator_List?T=S"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

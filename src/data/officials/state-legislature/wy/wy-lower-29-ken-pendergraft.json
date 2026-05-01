@@ -1,0 +1,71 @@
+{
+  "id": "ken-pendergraft",
+  "name": "Ken Pendergraft",
+  "firstName": "Ken",
+  "lastName": "Pendergraft",
+  "photo": "/images/officials/state-legislature/wy/ken-pendergraft.jpg",
+  "photoSourceUrl": "https://wyoleg.gov/LegislatorSummary/Photos/68th-PendergraftKen.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-29",
+  "jurisdiction": "Wyoming House of Representatives",
+  "county": [
+    "Wyoming"
+  ],
+  "termStart": "2023-01-02",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "State Capitol 200 W. 24th St., Cheyenne, WY 82002",
+    "email": "ken.pendergraft@wyoleg.gov",
+    "website": "https://www.wyoleg.gov/Legislators/2023/H/2103"
+  },
+  "bio": "Ken Pendergraft serves as State Representative for Wyoming House of Representatives District 29. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "WY",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.wyoleg.gov/Legislators/2023/H/2103"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/wy/legislature/Ken-Pendergraft-b7a5cb78-6473-4b7b-9c27-90c8ab2130a5.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://wyoleg.gov/LegislatorSummary/Photos/68th-PendergraftKen.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Ken_Pendergraft"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Ken_Pendergraft"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/194538/ken-pendergraft"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/ken-pendergraft-544a8210"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.wyoleg.gov/Legislators/2025/H/2103"
+    },
+    {
+      "title": "Public source",
+      "url": "https://wyoleg.gov/LsoService/api/legislator/2023/H"
+    },
+    {
+      "title": "Public source",
+      "url": "https://wyoleg.gov/LsoService/api/legislator/2103"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

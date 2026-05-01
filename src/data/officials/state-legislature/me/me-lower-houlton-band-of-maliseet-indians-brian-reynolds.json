@@ -1,0 +1,36 @@
+{
+  "id": "brian-reynolds",
+  "name": "Brian Reynolds",
+  "firstName": "Brian",
+  "lastName": "Reynolds",
+  "party": "I",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-Houlton Band of Maliseet Indians",
+  "jurisdiction": "Maine House of Representatives",
+  "county": [
+    "Maine"
+  ],
+  "termStart": "2025-05-14",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Office of the Clerk of the House 2 State House Station, Augusta, ME 04333",
+    "email": "brian.reynolds@legislature.maine.gov",
+    "website": "https://legislature.maine.gov/house/house/MemberProfiles/Details/3140"
+  },
+  "bio": "Brian Reynolds serves as State Representative for Maine House of Representatives District Houlton Band of Maliseet Indians. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "ME",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://legislature.maine.gov/house/house/MemberProfiles/Details/3140"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/me/legislature/Brian-Reynolds-81ab0331-83cd-4551-bf74-b732623c86b8.yml"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

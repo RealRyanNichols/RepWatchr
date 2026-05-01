@@ -1,0 +1,72 @@
+{
+  "id": "tim-moffitt",
+  "name": "Tim Moffitt",
+  "firstName": "Tim",
+  "lastName": "Moffitt",
+  "photo": "/images/officials/state-legislature/nc/tim-moffitt.jpg",
+  "photoSourceUrl": "https://www.ncleg.gov/Members/MemberImage/S/438/Low",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-48",
+  "jurisdiction": "North Carolina Senate",
+  "county": [
+    "North Carolina"
+  ],
+  "termStart": "2023-01-01",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 520, Legislative Office Building 300 N. Salisbury St., Raleigh, NC 27603",
+    "phone": "919-733-5745",
+    "email": "tim.moffitt@ncleg.gov",
+    "website": "https://www.ncleg.gov/Members/Biography/H/623"
+  },
+  "bio": "Tim Moffitt serves as State Senator for North Carolina Senate District 48. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "NC",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.ncleg.gov/Members/Biography/H/623"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/nc/legislature/Tim-D-Moffitt-20f45197-ec0c-4031-a889-2825bffb008a.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://www.ncleg.gov/Members/MemberImage/S/438/Low"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Timothy_Moffitt"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Tim_Moffitt"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/103082/tim-moffitt"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/tim-moffitt-92399244"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.ncleg.gov/Members/Biography/S/438"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.ncleg.gov/Members/MemberTable/H"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.ncleg.gov/Members/MemberTable/S"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

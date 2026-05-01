@@ -1,0 +1,56 @@
+{
+  "id": "steve-bunker",
+  "name": "Steve Bunker",
+  "firstName": "Steve",
+  "lastName": "Bunker",
+  "photo": "/images/officials/state-legislature/me/steve-bunker.jpg",
+  "photoSourceUrl": "https://dailybulldog.com/wp-content/uploads/2024/01/SteveB2-300x300.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-75",
+  "jurisdiction": "Maine House of Representatives",
+  "county": [
+    "Maine"
+  ],
+  "termStart": "2024-12-03",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 333, House Democratic Office 2 State House Station, Augusta, ME 04333",
+    "phone": "800-423-2900",
+    "email": "stephan.bunker@legislature.maine.gov",
+    "website": "https://legislature.maine.gov/house/house/MemberProfiles/Details/3124"
+  },
+  "bio": "Steve Bunker serves as State Representative for Maine House of Representatives District 75. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "ME",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://legislature.maine.gov/house/house/MemberProfiles/Details/3124"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/me/legislature/Steve-Bunker-fb8f35c6-65a4-42d0-9009-3def6dcc62cb.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://dailybulldog.com/wp-content/uploads/2024/01/SteveB2-300x300.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Stephan_Bunker"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/stephan-bunker-19023a6b"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.maine.gov/housedems/node/4081"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

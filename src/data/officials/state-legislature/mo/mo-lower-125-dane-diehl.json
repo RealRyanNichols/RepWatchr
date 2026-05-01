@@ -1,0 +1,60 @@
+{
+  "id": "dane-diehl",
+  "name": "Dane Diehl",
+  "firstName": "Dane",
+  "lastName": "Diehl",
+  "photo": "/images/officials/state-legislature/mo/dane-diehl.jpg",
+  "photoSourceUrl": "https://house.mo.gov/MemberPhoto.aspx?id=2370",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-125",
+  "jurisdiction": "Missouri House of Representatives",
+  "county": [
+    "Missouri"
+  ],
+  "termStart": "2023-01-04",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 114-B, 201 W. Capitol Ave., Jefferson City, MO 65101",
+    "phone": "573-751-4065",
+    "email": "dane.diehl@house.mo.gov",
+    "website": "https://house.mo.gov/MemberDetails.aspx?district=125"
+  },
+  "bio": "Dane Diehl serves as State Representative for Missouri House of Representatives District 125. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "MO",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://house.mo.gov/MemberDetails.aspx?district=125"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/mo/legislature/Dane-Diehl-0f4f5a2e-bc86-4c2a-9ab1-041d1c844283.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://house.mo.gov/MemberPhoto.aspx?id=2370"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Dane_Diehl"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Dane_Diehl"
+    },
+    {
+      "title": "Public source",
+      "url": "https://house.mo.gov/MemberDetails.aspx?year=2023&code=R&district=125"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/205796/dane-diehl"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

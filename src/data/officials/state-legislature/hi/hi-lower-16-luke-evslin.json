@@ -1,0 +1,69 @@
+{
+  "id": "luke-evslin",
+  "name": "Luke Evslin",
+  "firstName": "Luke",
+  "lastName": "Evslin",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-16",
+  "jurisdiction": "Hawaii House of Representatives",
+  "county": [
+    "Hawaii"
+  ],
+  "termStart": "2023-02-15",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "State Capitol Room 427, 415 S. Beretania St., Honolulu, HI 96813",
+    "phone": "808-586-6270",
+    "email": "repevslin@capitol.hawaii.gov",
+    "website": "https://www.capitol.hawaii.gov/legislature/memberpage.aspx?member=291"
+  },
+  "bio": "Luke Evslin serves as State Representative for Hawaii House of Representatives District 16. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "HI",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.capitol.hawaii.gov/legislature/memberpage.aspx?member=291"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/hi/legislature/Luke-A-Evslin-128214ae-53bd-4dfe-88e6-ad3a70c6a83d.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Luke_A._Evslin_(Kauai_County_Council,_Hawaii,_candidate_2022)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Luke_Evslin"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Luke_Evslin"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.capitol.hawaii.gov/legislature/memberpage.aspx?member=291&year=2023"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.capitol.hawaii.gov/legislature/memberpage.aspx?member=291&year=2024"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.capitol.hawaii.gov/members/legislators.aspx"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/luke-evslin-812b0681"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.lukeevslin.com/about"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

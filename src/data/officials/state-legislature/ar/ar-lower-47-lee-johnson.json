@@ -1,0 +1,72 @@
+{
+  "id": "lee-johnson",
+  "name": "Lee Johnson",
+  "firstName": "Lee",
+  "lastName": "Johnson",
+  "photo": "/images/officials/state-legislature/ar/lee-johnson.jpg",
+  "photoSourceUrl": "https://www.arkleg.state.ar.us/Content/photos/2023/House/556_sm.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-47",
+  "jurisdiction": "Arkansas House of Representatives",
+  "county": [
+    "Arkansas"
+  ],
+  "termStart": "2023-01-09",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "State Capitol Arkansas  500 Woodlane St., Suite 350, Little Rock, AR 72201",
+    "phone": "501-682-6211",
+    "email": "lee.johnson@arkansashouse.org",
+    "website": "https://arkleg.state.ar.us/Legislators/Detail?member=L.+Johnson"
+  },
+  "bio": "Lee Johnson serves as State Representative for Arkansas House of Representatives District 47. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "AR",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://arkleg.state.ar.us/Legislators/Detail?member=L.+Johnson"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ar/legislature/Lee-Johnson-4a794d08-4a71-424a-a17d-d35af3c979ae.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://www.arkleg.state.ar.us/Content/photos/2023/House/556_sm.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Lee_Johnson_(Arkansas)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Lee_Johnson_(politician)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/178576/lee-johnson"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.arkansashouse.org/district/47"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.arkleg.state.ar.us/Legislators/Detail?member=L.+Johnson"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.arkleg.state.ar.us/Legislators/Detail?member=L.+Johnson&ddBienniumSession=2023%2F2023R"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.arkleg.state.ar.us/Legislators/List?sort=Type&by=desc&ddBienniumSession=2023%2F2023R#SearchResults"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

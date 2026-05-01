@@ -1,0 +1,64 @@
+{
+  "id": "emma-greenman",
+  "name": "Emma Greenman",
+  "firstName": "Emma",
+  "lastName": "Greenman",
+  "photo": "/images/officials/state-legislature/mn/emma-greenman.jpg",
+  "photoSourceUrl": "https://www.house.mn.gov/hinfo/memberimgls94/63B.gif?v=112221",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-63B",
+  "jurisdiction": "Minnesota House of Representatives",
+  "county": [
+    "Minnesota"
+  ],
+  "termStart": "2021-01-05",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Centennial Office Building 658 Cedar St., Fifth Floor, St. Paul, MN 55155",
+    "phone": "651-296-4200",
+    "email": "rep.emma.greenman@house.mn.gov",
+    "website": "https://www.house.mn.gov/members/profile/15552"
+  },
+  "bio": "Emma Greenman serves as State Representative for Minnesota House of Representatives District 63B. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "MN",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.house.mn.gov/members/profile/15552"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/mn/legislature/Emma-Greenman-f38e8115-610c-4e22-b9cb-80bd96311410.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://www.house.mn.gov/hinfo/memberimgls94/63B.gif?v=112221"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Emma_Greenman"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Emma_Greenman"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/194130/emma-greenman"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.house.leg.state.mn.us/members/hmem.asp"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/emmagreenman"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

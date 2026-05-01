@@ -1,0 +1,69 @@
+{
+  "id": "jay-steagall",
+  "name": "Jay Steagall",
+  "firstName": "Jay",
+  "lastName": "Steagall",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-43",
+  "jurisdiction": "Oklahoma House of Representatives",
+  "county": [
+    "Oklahoma"
+  ],
+  "termStart": "2018-11-16",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 204, 2300 N. Lincoln Blvd., Oklahoma City, OK 73105",
+    "phone": "405-557-7352",
+    "email": "jay.steagall@okhouse.gov",
+    "website": "https://www.okhouse.gov/Members/Contact.aspx?District=43"
+  },
+  "bio": "Jay Steagall serves as State Representative for Oklahoma House of Representatives District 43. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "OK",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.okhouse.gov/Members/Contact.aspx?District=43"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ok/legislature/Jay-Steagall-0389a5f1-0777-4a48-8faf-98779dc16849.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Jay_Steagall"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Jay_Steagall"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/181957/jay-steagall"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.jaysteagall.com/about"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/jay-steagall-90a151375"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.okhouse.gov/Members/Default.aspx"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.okhouse.gov/Members/District.aspx?District=43"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.okhouse.gov/representatives/jay-steagall"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

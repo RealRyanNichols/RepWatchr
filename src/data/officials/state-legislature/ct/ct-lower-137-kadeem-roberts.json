@@ -1,0 +1,57 @@
+{
+  "id": "kadeem-roberts",
+  "name": "Kadeem Roberts",
+  "firstName": "Kadeem",
+  "lastName": "Roberts",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-137",
+  "jurisdiction": "Connecticut House of Representatives",
+  "county": [
+    "Connecticut"
+  ],
+  "termStart": "2023-01-04",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 4005, Legislative Office Building 300 Capitol Ave., Hartford, CT 06106",
+    "phone": "860-240-8585",
+    "email": "kadeem.roberts@cga.ct.gov",
+    "website": "https://www.housedems.ct.gov/Roberts"
+  },
+  "bio": "Kadeem Roberts serves as State Representative for Connecticut House of Representatives District 137. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "CT",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.housedems.ct.gov/Roberts"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ct/legislature/Kadeem-Roberts-86852522-4c4d-46ae-8a59-d81a16ad179a.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "ftp://ftp.cga.ct.gov/pub/data/LegislatorDatabase.csv"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Kadeem_Roberts"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Kadeem_Roberts"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/199776/kadeem-roberts"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.housedems.ct.gov/Roberts/Biography"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

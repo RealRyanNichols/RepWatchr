@@ -1,0 +1,69 @@
+{
+  "id": "ken-ivory",
+  "name": "Ken Ivory",
+  "firstName": "Ken",
+  "lastName": "Ivory",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-39",
+  "jurisdiction": "Utah House of Representatives",
+  "county": [
+    "Utah"
+  ],
+  "termStart": "2023-01-01",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "P.O. Box 145030 350 N. State St., Suite 350, Salt Lake City, UT 84114",
+    "phone": "801-538-1029",
+    "email": "kivory@le.utah.gov",
+    "website": "https://disclosures.utah.gov/Search/PublicSearch/FolderDetails/1409302"
+  },
+  "bio": "Ken Ivory serves as State Representative for Utah House of Representatives District 39. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "UT",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://disclosures.utah.gov/Search/PublicSearch/FolderDetails/1409302"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ut/legislature/Ken-Ivory-c76bd4cf-9149-46e8-a001-e2c81c5942d5.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Ken_Ivory"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Ken_Ivory"
+    },
+    {
+      "title": "Public source",
+      "url": "https://house.utah.gov/rep/IVORYK"
+    },
+    {
+      "title": "Public source",
+      "url": "https://house.utah.gov/rep/IVORYK/"
+    },
+    {
+      "title": "Public source",
+      "url": "https://house.utleg.gov/rep/IVORYK"
+    },
+    {
+      "title": "Public source",
+      "url": "https://house.utleg.gov/rep/IVORYK/"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/121360/ken-ivory"
+    },
+    {
+      "title": "Public source",
+      "url": "https://le.utah.gov/data/legislators.json"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

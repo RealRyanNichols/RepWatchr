@@ -1,0 +1,56 @@
+{
+  "id": "steve-bogert",
+  "name": "Steve Bogert",
+  "firstName": "Steve",
+  "lastName": "Bogert",
+  "photo": "/images/officials/state-legislature/nh/steve-bogert.jpg",
+  "photoSourceUrl": "https://storage.googleapis.com/enview-dev-public-general/legislative-people-photos/123172.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-Belknap 5",
+  "jurisdiction": "New Hampshire House of Representatives",
+  "county": [
+    "New Hampshire"
+  ],
+  "termStart": "2022-12-07",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "State House 107 N. Main St., Concord, NH 03301",
+    "phone": "603-271-3661",
+    "email": "steven.bogert@gc.nh.gov",
+    "website": "https://gc.nh.gov/house/members/member.aspx?pid=10573"
+  },
+  "bio": "Steve Bogert serves as State Representative for New Hampshire House of Representatives District Belknap 5. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "NH",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://gc.nh.gov/house/members/member.aspx?pid=10573"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/nh/legislature/Steven-T-Bogert-a82b5491-46a0-4062-aec5-362724f8f729.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://storage.googleapis.com/enview-dev-public-general/legislative-people-photos/123172.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Steven_Bogert"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.gencourt.state.nh.us/house/members/member.aspx?pid=10573"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/steve-b-b71339a7"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

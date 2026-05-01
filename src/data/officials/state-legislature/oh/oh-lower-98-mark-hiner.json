@@ -1,0 +1,49 @@
+{
+  "id": "mark-hiner",
+  "name": "Mark Hiner",
+  "firstName": "Mark",
+  "lastName": "Hiner",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-98",
+  "jurisdiction": "Ohio House of Representatives",
+  "county": [
+    "Ohio"
+  ],
+  "termStart": "2025-01-01",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "77 S. High St. 13th Floor, Columbus, OH 43215",
+    "phone": "614-466-2994",
+    "email": "rep98@ohiohouse.gov",
+    "website": "https://ohiohouse.gov/members/mark-hiner"
+  },
+  "bio": "Mark Hiner serves as State Representative for Ohio House of Representatives District 98. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "OH",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://ohiohouse.gov/members/mark-hiner"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/oh/legislature/Mark-Hiner-292d1329-8a45-402b-8d6e-8f3b4726187a.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Mark_Hiner"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ohiohouse.gov/members/mark-hiner/biography"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/mark-hiner-36204712"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

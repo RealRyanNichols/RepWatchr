@@ -1,0 +1,57 @@
+{
+  "id": "kim-daniels",
+  "name": "Kim Daniels",
+  "firstName": "Kim",
+  "lastName": "Daniels",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-14",
+  "jurisdiction": "Florida House of Representatives",
+  "county": [
+    "Florida"
+  ],
+  "termStart": "2022-11-08",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 400, House Office Building 402 S. Monroe St., Tallahassee, FL 32399",
+    "phone": "850-717-5014",
+    "email": "kimberly.daniels@flhouse.gov",
+    "website": "https://myfloridahouse.gov/Sections/Representatives/details.aspx?MemberId=4652&LegislativeTermId=90"
+  },
+  "bio": "Kim Daniels serves as State Representative for Florida House of Representatives District 14. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "FL",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://myfloridahouse.gov/Sections/Representatives/details.aspx?MemberId=4652&LegislativeTermId=90"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/fl/legislature/Kimberly-Daniels-469b8c3d-5133-43c1-8598-b63ea936f135.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Kimberly_Daniels"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Kimberly_Daniels"
+    },
+    {
+      "title": "Public source",
+      "url": "https://kimberlydaniels.com"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.flhouse.gov/Sections/Representatives/details.aspx?MemberId=4652"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.myfloridahouse.gov/Sections/Representatives/details.aspx?MemberId=4652"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

@@ -1,0 +1,72 @@
+{
+  "id": "colleen-garry",
+  "name": "Colleen Garry",
+  "firstName": "Colleen",
+  "lastName": "Garry",
+  "photo": "/images/officials/state-legislature/ma/colleen-garry.jpg",
+  "photoSourceUrl": "https://malegislature.gov/Legislators/Profile/170/CMG1.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-36th Middlesex",
+  "jurisdiction": "Massachusetts House of Representatives",
+  "county": [
+    "Massachusetts"
+  ],
+  "termStart": "2011-01-01",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 238, State House 24 Beacon St., Boston, MA 02133",
+    "phone": "617-722-2380",
+    "email": "colleen.garry@mahouse.gov",
+    "website": "https://malegislature.gov/Legislators/Profile/CMG1"
+  },
+  "bio": "Colleen Garry serves as State Representative for Massachusetts House of Representatives District 36th Middlesex. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "MA",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://malegislature.gov/Legislators/Profile/CMG1"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ma/legislature/Colleen-M-Garry-0e38852a-52b0-4aac-8a65-fa3fc964c88e.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://malegislature.gov/Legislators/Profile/170/CMG1.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Colleen_Garry"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Colleen_Garry"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/4761/colleen-garry"
+    },
+    {
+      "title": "Public source",
+      "url": "https://malegislature.gov/api/GeneralCourts/192/LegislativeMembers"
+    },
+    {
+      "title": "Public source",
+      "url": "https://malegislature.gov/api/GeneralCourts/192/LegislativeMembers/"
+    },
+    {
+      "title": "Public source",
+      "url": "https://malegislature.gov/api/GeneralCourts/192/LegislativeMembers/CMG1"
+    },
+    {
+      "title": "Public source",
+      "url": "https://malegislature.gov/api/GeneralCourts/193/LegislativeMembers"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

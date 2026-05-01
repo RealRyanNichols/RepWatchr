@@ -1,0 +1,64 @@
+{
+  "id": "alissandra-murray",
+  "name": "Alissandra Murray",
+  "firstName": "Alissandra",
+  "lastName": "Murray",
+  "photo": "/images/officials/state-legislature/nh/alissandra-murray.jpg",
+  "photoSourceUrl": "https://www.citizenscount.org/sites/default/files/styles/profile_140x176/public/2022-08/alissandra-murray.jpg?itok=4aFp3Ai9",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-Hillsborough 20",
+  "jurisdiction": "New Hampshire House of Representatives",
+  "county": [
+    "New Hampshire"
+  ],
+  "termStart": "2022-12-07",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "State House 107 N. Main St., Concord, NH 03301",
+    "phone": "603-271-3661",
+    "email": "alissandra.murray@gc.nh.gov",
+    "website": "https://gc.nh.gov/house/members/member.aspx?pid=10799"
+  },
+  "bio": "Alissandra Murray serves as State Representative for New Hampshire House of Representatives District Hillsborough 20. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "NH",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://gc.nh.gov/house/members/member.aspx?pid=10799"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/nh/legislature/Alissandra-Murray-f809a410-5a03-4ebc-a0ab-32507705c479.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://www.citizenscount.org/sites/default/files/styles/profile_140x176/public/2022-08/alissandra-murray.jpg?itok=4aFp3Ai9"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Alissandra_Murray"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Alissandra_Murray"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/208825/alissandra-murray"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.gencourt.state.nh.us/house/members/member.aspx?pid=10799"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/alissandra-rodr%C3%ADguez-murray-aa46b1231"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

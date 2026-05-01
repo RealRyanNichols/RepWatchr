@@ -1,0 +1,72 @@
+{
+  "id": "andy-vargas",
+  "name": "Andy Vargas",
+  "firstName": "Andy",
+  "lastName": "Vargas",
+  "photo": "/images/officials/state-legislature/ma/andy-vargas.jpg",
+  "photoSourceUrl": "https://malegislature.gov/Legislators/Profile/170/AXV1.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-3rd Essex",
+  "jurisdiction": "Massachusetts House of Representatives",
+  "county": [
+    "Massachusetts"
+  ],
+  "termStart": "2017-11-15",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 26, State House 24 Beacon St., Boston, MA 02133",
+    "phone": "617-722-2080",
+    "email": "andy.vargas@mahouse.gov",
+    "website": "https://malegislature.gov/Legislators/Profile/AXV1"
+  },
+  "bio": "Andy Vargas serves as State Representative for Massachusetts House of Representatives District 3rd Essex. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "MA",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://malegislature.gov/Legislators/Profile/AXV1"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ma/legislature/Andres-X-Vargas-c1f81bec-d032-4f41-940c-ca32f2b5af12.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://malegislature.gov/Legislators/Profile/170/AXV1.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Andy_Vargas"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Andy_Vargas"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/173806/andres-vargas"
+    },
+    {
+      "title": "Public source",
+      "url": "https://malegislature.gov/api/GeneralCourts/192/LegislativeMembers"
+    },
+    {
+      "title": "Public source",
+      "url": "https://malegislature.gov/api/GeneralCourts/192/LegislativeMembers/"
+    },
+    {
+      "title": "Public source",
+      "url": "https://malegislature.gov/api/GeneralCourts/192/LegislativeMembers/AXV1"
+    },
+    {
+      "title": "Public source",
+      "url": "https://malegislature.gov/api/GeneralCourts/193/LegislativeMembers"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

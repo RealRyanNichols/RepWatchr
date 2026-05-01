@@ -1,0 +1,60 @@
+{
+  "id": "steven-mcneel",
+  "name": "Steven McNeel",
+  "firstName": "Steven",
+  "lastName": "McNeel",
+  "photo": "/images/officials/state-legislature/ga/steven-mcneel.jpg",
+  "photoSourceUrl": "https://static.wixstatic.com/media/717e3f_742258cc71f249009c9f26b868c3c467~mv2.jpg/v1/fill/w_953,h_602,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/717e3f_742258cc71f249009c9f26b868c3c467~mv2.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-18",
+  "jurisdiction": "Georgia Senate",
+  "county": [
+    "Georgia"
+  ],
+  "termStart": "2026-02-24",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 322-B, Coverdell Legislative Office Building 18 Capitol Square SW, Atlanta, GA 30334",
+    "phone": "404-463-2593",
+    "email": "steven.mcneel@senate.ga.gov",
+    "website": "https://www.legis.ga.gov/members/senate/5093"
+  },
+  "bio": "Steven McNeel serves as State Senator for Georgia Senate District 18. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "GA",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.legis.ga.gov/members/senate/5093"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ga/legislature/Steven-McNeel-516cb969-9467-490f-9a05-02c3e7decae3.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://static.wixstatic.com/media/717e3f_742258cc71f249009c9f26b868c3c467~mv2.jpg/v1/fill/w_953,h_602,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/717e3f_742258cc71f249009c9f26b868c3c467~mv2.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Steven_McNeel"
+    },
+    {
+      "title": "Public source",
+      "url": "https://bwhlegal.com/steven-r-mcneel"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Steven_McNeel"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/steven-r-mcneel-36b41ba"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

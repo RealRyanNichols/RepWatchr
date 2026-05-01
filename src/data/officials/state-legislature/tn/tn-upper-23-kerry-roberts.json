@@ -1,0 +1,69 @@
+{
+  "id": "kerry-roberts",
+  "name": "Kerry Roberts",
+  "firstName": "Kerry",
+  "lastName": "Roberts",
+  "party": "R",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-23",
+  "jurisdiction": "Tennessee Senate",
+  "county": [
+    "Tennessee"
+  ],
+  "termStart": "2022-11-08",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 746, Cordell Hull Building 425 Rep. John Lewis Way North, Nashville, TN 37243",
+    "phone": "615-741-4499",
+    "email": "sen.kerry.roberts@capitol.tn.gov",
+    "website": "https://wapp.capitol.tn.gov/apps/legislatorinfo/member.aspx?district=S23"
+  },
+  "bio": "Kerry Roberts serves as State Senator for Tennessee Senate District 23. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "TN",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://wapp.capitol.tn.gov/apps/legislatorinfo/member.aspx?district=S23"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/tn/legislature/Kerry-Roberts-872517bf-9780-44e2-9532-87dfd816ec4c.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Kerry_Roberts"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Kerry_Roberts"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/124647/kerry-roberts"
+    },
+    {
+      "title": "Public source",
+      "url": "https://wapp.capitol.tn.gov/apps/LegislatorInfo/directory.aspx?chamber=S"
+    },
+    {
+      "title": "Public source",
+      "url": "https://wapp.capitol.tn.gov/apps/legislatorinfo/member?district=S23"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.capitol.tn.gov/senate/members"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.capitol.tn.gov/senate/members/"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.capitol.tn.gov/senate/members/s25.html"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

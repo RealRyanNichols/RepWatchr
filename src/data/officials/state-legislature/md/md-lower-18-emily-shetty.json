@@ -1,0 +1,64 @@
+{
+  "id": "emily-shetty",
+  "name": "Emily Shetty",
+  "firstName": "Emily",
+  "lastName": "Shetty",
+  "photo": "/images/officials/state-legislature/md/emily-shetty.jpg",
+  "photoSourceUrl": "https://mgaleg.maryland.gov/2024RS/images/shetty01.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "Delegate",
+  "district": "HD-18",
+  "jurisdiction": "Maryland House of Delegates",
+  "county": [
+    "Maryland"
+  ],
+  "termStart": "2019-01-09",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 350, Taylor House Office Building 6 Baden St., Annapolis, MD 21401",
+    "phone": "410-841-3181",
+    "email": "emily.shetty@house.maryland.gov",
+    "website": "https://mgaleg.maryland.gov/mgawebsite/Members/Details/shetty01"
+  },
+  "bio": "Emily Shetty serves as Delegate for Maryland House of Delegates District 18. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "MD",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://mgaleg.maryland.gov/mgawebsite/Members/Details/shetty01"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/md/legislature/Emily-Shetty-ea24b6b8-ecff-4a51-badf-001c8889c5df.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://mgaleg.maryland.gov/2024RS/images/shetty01.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Emily_Shetty"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Emily_Shetty"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/149134/emily-shetty"
+    },
+    {
+      "title": "Public source",
+      "url": "https://mgaleg.maryland.gov/webmga/frmMain.aspx?pid=sponpage&tab=subject6&id=shetty01&stab=01"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/emily-shetty-0042104"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

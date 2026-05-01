@@ -1,0 +1,58 @@
+{
+  "id": "chris-mcdaniel",
+  "name": "Chris McDaniel",
+  "firstName": "Chris",
+  "lastName": "McDaniel",
+  "photo": "/images/officials/state-legislature/ky/chris-mcdaniel.jpg",
+  "photoSourceUrl": "https://legislature.ky.gov/Legislators%20Thumbnail%20Images/senate123.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-23",
+  "jurisdiction": "Kentucky Senate",
+  "county": [
+    "Kentucky"
+  ],
+  "termStart": "2013-01-01",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "email": "chris.mcdaniel@kylegislature.gov",
+    "website": "https://legislature.ky.gov/Legislators/Pages/Legislator-Profile.aspx?DistrictNumber=123",
+    "socialMedia": {
+      "x": "https://x.com/kychrismcdaniel",
+      "twitter": "https://x.com/kychrismcdaniel"
+    }
+  },
+  "bio": "Chris McDaniel serves as State Senator for Kentucky Senate District 23. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "KY",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://legislature.ky.gov/Legislators/Pages/Legislator-Profile.aspx?DistrictNumber=123"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ky/legislature/Christian-McDaniel-b32a95c9-42ba-449b-8581-97b9cef73c6a.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://legislature.ky.gov/Legislators%20Thumbnail%20Images/senate123.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Chris_McDaniel_(Kentucky)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Christian_McDaniel"
+    },
+    {
+      "title": "Public source",
+      "url": "https://legislature.ky.gov/Legislators/senate"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

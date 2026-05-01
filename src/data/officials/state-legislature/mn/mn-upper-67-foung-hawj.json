@@ -1,0 +1,72 @@
+{
+  "id": "foung-hawj",
+  "name": "Foung Hawj",
+  "firstName": "Foung",
+  "lastName": "Hawj",
+  "photo": "/images/officials/state-legislature/mn/foung-hawj.jpg",
+  "photoSourceUrl": "https://www.senate.mn/graphics/67Hawj.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-67",
+  "jurisdiction": "Minnesota Senate",
+  "county": [
+    "Minnesota"
+  ],
+  "termStart": "2013-01-08",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 3231, Minnesota Senate Building 95 University Ave. West, St. Paul, MN 55155",
+    "phone": "651-296-5285",
+    "email": "sen.foung.hawj@senate.mn",
+    "website": "https://www.senate.mn/members/member_bio.html?mem_id=1213"
+  },
+  "bio": "Foung Hawj serves as State Senator for Minnesota Senate District 67. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "MN",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.senate.mn/members/member_bio.html?mem_id=1213"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/mn/legislature/Foung-Hawj-5644f3f8-6394-4ab6-9619-7ab6702b37ea.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://www.senate.mn/graphics/67Hawj.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Foung_Hawj"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Foung_Hawj"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/123032/foung-hawj"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/foung-hawj-97985846"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.senate.mn/api/members"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.senate.mn/members/index.php"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.senate.mn/members/list.csv"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

@@ -1,0 +1,72 @@
+{
+  "id": "melissa-wiklund",
+  "name": "Melissa Wiklund",
+  "firstName": "Melissa",
+  "lastName": "Wiklund",
+  "photo": "/images/officials/state-legislature/mn/melissa-wiklund.jpg",
+  "photoSourceUrl": "https://www.senate.mn/graphics/50Wiklund.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-51",
+  "jurisdiction": "Minnesota Senate",
+  "county": [
+    "Minnesota"
+  ],
+  "termStart": "2023-01-03",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 2107, Minnesota Senate Building 95 University Ave. West, St. Paul, MN 55155",
+    "phone": "651-297-8061",
+    "email": "sen.melissa.wiklund@senate.mn",
+    "website": "https://www.senate.mn/members/member_bio.html?mem_id=1209"
+  },
+  "bio": "Melissa Wiklund serves as State Senator for Minnesota Senate District 51. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "MN",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.senate.mn/members/member_bio.html?mem_id=1209"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/mn/legislature/Melissa-H-Wiklund-d2fb6801-379e-481c-9313-2ac099d3a775.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://www.senate.mn/graphics/50Wiklund.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Melissa_Halvorson_Wiklund"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Melissa_Halvorson_Wiklund"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/140913/melissa-wiklund"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/melissa-halvorson-wiklund-5a812610"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.senate.mn/api/members"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.senate.mn/members/index.php"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.senate.mn/members/list.csv"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

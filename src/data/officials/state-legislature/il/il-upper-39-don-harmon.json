@@ -1,0 +1,72 @@
+{
+  "id": "don-harmon",
+  "name": "Don Harmon",
+  "firstName": "Don",
+  "lastName": "Harmon",
+  "photo": "/images/officials/state-legislature/il/don-harmon.jpg",
+  "photoSourceUrl": "https://cdn.ilga.gov/assets/img/members/{CF3F6473-4E6D-4E84-A0A4-4FF7335132E2}.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-39",
+  "jurisdiction": "Illinois Senate",
+  "county": [
+    "Illinois"
+  ],
+  "termStart": "2003-01-03",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 323, Capitol Building, Springfield, IL 62706",
+    "phone": "217-782-8176",
+    "email": "dharmon@senatedem.ilga.gov",
+    "website": "https://ilga.gov/senate/Senator.asp?GA=101&MemberID=2551"
+  },
+  "bio": "Don Harmon serves as State Senator for Illinois Senate District 39. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "IL",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://ilga.gov/senate/Senator.asp?GA=101&MemberID=2551"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/il/legislature/Don-Harmon-15c56180-21e1-492d-874f-25d511f804ee.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://cdn.ilga.gov/assets/img/members/{CF3F6473-4E6D-4E84-A0A4-4FF7335132E2}.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Don_Harmon_(Illinois)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Don_Harmon"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ilga.gov/senate/default.asp?GA=101"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ilga.gov/senate/default.asp?GA=102"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ilga.gov/senate/default.asp?GA=103"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ilga.gov/senate/Senator.asp?GA=102&MemberID=2806"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ilga.gov/senate/Senator.asp?GA=103&MemberID=3029"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

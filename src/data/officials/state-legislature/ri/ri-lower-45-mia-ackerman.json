@@ -1,0 +1,72 @@
+{
+  "id": "mia-ackerman",
+  "name": "Mia Ackerman",
+  "firstName": "Mia",
+  "lastName": "Ackerman",
+  "photo": "/images/officials/state-legislature/ri/mia-ackerman.jpg",
+  "photoSourceUrl": "http://www.rilegislature.gov/representatives/pictures/ackerman.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-45",
+  "jurisdiction": "Rhode Island House of Representatives",
+  "county": [
+    "Rhode Island"
+  ],
+  "termStart": "2013-01-01",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "82 Smith St., Providence, RI 02903",
+    "phone": "401-222-3580",
+    "email": "rep-ackerman@rilegislature.gov",
+    "website": "https://www.rilegislature.gov/representatives/ackerman/default.aspx"
+  },
+  "bio": "Mia Ackerman serves as State Representative for Rhode Island House of Representatives District 45. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "RI",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.rilegislature.gov/representatives/ackerman/default.aspx"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ri/legislature/Mia-A-Ackerman-7c4d8cad-55e5-474d-ac05-8db9a59da7fd.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "http://www.rilegislature.gov/representatives/pictures/ackerman.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Mia_Ackerman"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Mia_Ackerman"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/78667/mia-ackerman"
+    },
+    {
+      "title": "Public source",
+      "url": "https://webserver.rilin.state.ri.us/Email/RepEmailListDistrict.asp"
+    },
+    {
+      "title": "Image Source",
+      "url": "https://www.rilegislature.gov/representatives/ackerman/Pages/Biography.aspx"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.rilegislature.gov/SiteAssets/MailingLists/Representatives.xls"
+    },
+    {
+      "title": "Detail Excel Source",
+      "url": "https://www.rilegislature.gov/SiteAssets/Representatives.xls"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

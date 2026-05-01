@@ -1,0 +1,70 @@
+{
+  "id": "will-penterman",
+  "name": "Will Penterman",
+  "firstName": "Will",
+  "lastName": "Penterman",
+  "photo": "/images/officials/state-legislature/wi/will-penterman.jpg",
+  "photoSourceUrl": "https://docs.legis.wisconsin.gov/2023/legislators/assembly/2497.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "Assemblymember",
+  "district": "HD-38",
+  "jurisdiction": "Wisconsin State Assembly",
+  "county": [
+    "Wisconsin"
+  ],
+  "termStart": "2025-01-06",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "email": "rep.penterman@legis.wisconsin.gov",
+    "website": "https://docs.legis.wisconsin.gov/2021/legislators/assembly/2398"
+  },
+  "bio": "Will Penterman serves as Assemblymember for Wisconsin State Assembly District 38. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "WI",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://docs.legis.wisconsin.gov/2021/legislators/assembly/2398"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/wi/legislature/William-Penterman-790447a2-d03d-4bc7-b15c-a72b25689eb3.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://docs.legis.wisconsin.gov/2023/legislators/assembly/2497.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/William_Penterman"
+    },
+    {
+      "title": "Public source",
+      "url": "https://docs.legis.wisconsin.gov/2021/legislators/assembly"
+    },
+    {
+      "title": "Public source",
+      "url": "https://docs.legis.wisconsin.gov/2021/legislators/assembly/"
+    },
+    {
+      "title": "Public source",
+      "url": "https://docs.legis.wisconsin.gov/2023/legislators/assembly"
+    },
+    {
+      "title": "members list page",
+      "url": "https://docs.legis.wisconsin.gov/2023/legislators/assembly/"
+    },
+    {
+      "title": "member detail page",
+      "url": "https://docs.legis.wisconsin.gov/2023/legislators/assembly/2497"
+    },
+    {
+      "title": "Public source",
+      "url": "https://docs.legis.wisconsin.gov/2025/legislators/assembly/2856"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

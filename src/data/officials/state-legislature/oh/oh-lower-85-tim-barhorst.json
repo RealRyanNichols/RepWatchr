@@ -1,0 +1,56 @@
+{
+  "id": "tim-barhorst",
+  "name": "Tim Barhorst",
+  "firstName": "Tim",
+  "lastName": "Barhorst",
+  "photo": "/images/officials/state-legislature/oh/tim-barhorst.jpg",
+  "photoSourceUrl": "https://www.legislature.ohio.gov/assets/people/tim-barhorst/headshots/thumbnails/medium/tim-barhorst-january-2023-headshot_medium.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-85",
+  "jurisdiction": "Ohio House of Representatives",
+  "county": [
+    "Ohio"
+  ],
+  "termStart": "2023-01-01",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "77 S. High St. 11th Floor, Columbus, OH 43215",
+    "phone": "614-466-1507",
+    "email": "rep85@ohiohouse.gov",
+    "website": "https://www.ohiohouse.gov/members/tim-barhorst"
+  },
+  "bio": "Tim Barhorst serves as State Representative for Ohio House of Representatives District 85. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "OH",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.ohiohouse.gov/members/tim-barhorst"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/oh/legislature/Tim-Barhorst-fa5ff978-34ff-49d1-958e-4e356a8ef9d4.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://www.legislature.ohio.gov/assets/people/tim-barhorst/headshots/thumbnails/medium/tim-barhorst-january-2023-headshot_medium.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Tim_Barhorst"
+    },
+    {
+      "title": "member details page",
+      "url": "https://ohiohouse.gov/members/tim-barhorst"
+    },
+    {
+      "title": "member list page",
+      "url": "https://www.legislature.ohio.gov/legislators/house-directory"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

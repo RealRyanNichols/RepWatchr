@@ -1,0 +1,68 @@
+{
+  "id": "trene-mcgee",
+  "name": "Trene\u00e9 McGee",
+  "firstName": "Trene\u00e9",
+  "lastName": "McGee",
+  "photo": "/images/officials/state-legislature/ct/trene-mcgee.jpg",
+  "photoSourceUrl": "http://www2.housedems.ct.gov/McGeeT/images/McGeeT_HS.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-116",
+  "jurisdiction": "Connecticut House of Representatives",
+  "county": [
+    "Connecticut"
+  ],
+  "termStart": "2021-12-22",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 4003, Legislative Office Building 300 Capitol Ave., Hartford, CT 06106",
+    "phone": "800-842-8267",
+    "email": "trenee.mcgee@cga.ct.gov",
+    "website": "https://cga.ct.gov/asp/CGABillStatus/CGAMemberBills.asp?dist_code=%27116%27&dist_name=McGee,%20Trenee"
+  },
+  "bio": "Trene\u00e9 McGee serves as State Representative for Connecticut House of Representatives District 116. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "CT",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://cga.ct.gov/asp/CGABillStatus/CGAMemberBills.asp?dist_code=%27116%27&dist_name=McGee,%20Trenee"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ct/legislature/Trenee-McGee-5a41c633-8d04-43c6-b3c2-64cbbbbefcc4.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "http://www2.housedems.ct.gov/McGeeT/images/McGeeT_HS.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "ftp://ftp.cga.ct.gov/pub/data/LegislatorDatabase.csv"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Trenee_McGee"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Trene%C3%A9_McGee"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/199728/trenee-mcgee"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.housedems.ct.gov/McGeeT"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/trene%C3%A9-mcgee-4a6ba5b4"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

@@ -1,0 +1,49 @@
+{
+  "id": "meghan-lukens",
+  "name": "Meghan Lukens",
+  "firstName": "Meghan",
+  "lastName": "Lukens",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-26",
+  "jurisdiction": "Colorado House of Representatives",
+  "county": [
+    "Colorado"
+  ],
+  "termStart": "2023-01-09",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "State Capitol Room 307, Colorado  Building 200 E. Colfax Ave., Denver, CO 80203",
+    "phone": "303-866-2923",
+    "email": "meghan.lukens.house@coleg.gov",
+    "website": "https://leg.colorado.gov/legislators/meghan-lukens"
+  },
+  "bio": "Meghan Lukens serves as State Representative for Colorado House of Representatives District 26. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "CO",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://leg.colorado.gov/legislators/meghan-lukens"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/co/legislature/Meghan-Lukens-c1a18202-08ad-487f-99bb-b1a606c15a22.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Meghan_Lukens"
+    },
+    {
+      "title": "Public source",
+      "url": "https://leg.colorado.gov/legislators"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/meghan-lukens-000a1513a"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

@@ -1,0 +1,70 @@
+{
+  "id": "bob-paulson",
+  "name": "Bob Paulson",
+  "firstName": "Bob",
+  "lastName": "Paulson",
+  "photo": "/images/officials/state-legislature/nd/bob-paulson.jpg",
+  "photoSourceUrl": "https://www.ndlegis.gov/sites/default/files/styles/member_list_photo/public/person/photo/bpaulson2023.jpg?itok=SDpdNURV",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-3",
+  "jurisdiction": "North Dakota Senate",
+  "county": [
+    "North Dakota"
+  ],
+  "termStart": "2022-12-01",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "email": "bpaulson@ndlegis.gov",
+    "website": "https://ndlegis.gov/biography/bob-paulson"
+  },
+  "bio": "Bob Paulson serves as State Senator for North Dakota Senate District 3. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "ND",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://ndlegis.gov/biography/bob-paulson"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/nd/legislature/Bob-Paulson-983f512c-6f3f-4243-b6c8-b83d9d4f3696.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://www.ndlegis.gov/sites/default/files/styles/member_list_photo/public/person/photo/bpaulson2023.jpg?itok=SDpdNURV"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Bob_Paulson"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Bob_Paulson_(politician)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/181351/bob-paulson"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.legis.nd.gov/assembly/66-2019/members/house/representative-bob-paulson"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.legis.nd.gov/assembly/67-2021/members/house/representative-bob-paulson"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.legis.nd.gov/assembly/67-2021/members/members-by-district"
+    },
+    {
+      "title": "members list page",
+      "url": "https://www.ndlegis.gov/assembly/68-2023/regular/members?combine=&field_legis_chamber_target_id=All&field_legis_district_target_id=All&field_legislator_party_target_id=All&page=6"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

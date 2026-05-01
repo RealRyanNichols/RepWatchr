@@ -1,0 +1,60 @@
+{
+  "id": "tara-peters",
+  "name": "Tara Peters",
+  "firstName": "Tara",
+  "lastName": "Peters",
+  "photo": "/images/officials/state-legislature/mo/tara-peters.jpg",
+  "photoSourceUrl": "https://house.mo.gov/MemberPhoto.aspx?id=2394",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-122",
+  "jurisdiction": "Missouri House of Representatives",
+  "county": [
+    "Missouri"
+  ],
+  "termStart": "2023-01-04",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 315, 201 W. Capitol Ave., Jefferson City, MO 65101",
+    "phone": "573-751-1446",
+    "email": "tara.peters@house.mo.gov",
+    "website": "https://house.mo.gov/MemberDetails.aspx?district=122"
+  },
+  "bio": "Tara Peters serves as State Representative for Missouri House of Representatives District 122. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "MO",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://house.mo.gov/MemberDetails.aspx?district=122"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/mo/legislature/Tara-Peters-ae8a2d25-fbb2-4254-976a-f9dcf0c92c6f.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://house.mo.gov/MemberPhoto.aspx?id=2394"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Tara_Peters"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Tara_Peters"
+    },
+    {
+      "title": "Public source",
+      "url": "https://house.mo.gov/MemberDetails.aspx?year=2023&code=R&district=122"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/205791/tara-peters"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

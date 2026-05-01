@@ -1,0 +1,72 @@
+{
+  "id": "katie-stuart",
+  "name": "Katie Stuart",
+  "firstName": "Katie",
+  "lastName": "Stuart",
+  "photo": "/images/officials/state-legislature/il/katie-stuart.jpg",
+  "photoSourceUrl": "https://cdn.ilga.gov/assets/img/members/{D6DC8152-9760-4BEA-ACF5-C41785E6F6C4}.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-112",
+  "jurisdiction": "Illinois House of Representatives",
+  "county": [
+    "Illinois"
+  ],
+  "termStart": "2017-01-11",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 278-S, Stratton Office Building, Springfield, IL 62706",
+    "phone": "217-782-8018",
+    "email": "repkatiestuart@gmail.com",
+    "website": "https://ilga.gov/house/Rep.asp?GA=101&MemberID=2695"
+  },
+  "bio": "Katie Stuart serves as State Representative for Illinois House of Representatives District 112. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "IL",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://ilga.gov/house/Rep.asp?GA=101&MemberID=2695"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/il/legislature/Katie-Stuart-ceb7f558-3a2c-4041-bf3b-f5a9a511e8b3.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://cdn.ilga.gov/assets/img/members/{D6DC8152-9760-4BEA-ACF5-C41785E6F6C4}.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Katie_Stuart"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Katie_Stuart_(politician)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ilga.gov/house/default.asp?GA=101"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ilga.gov/house/default.asp?GA=102"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ilga.gov/house/default.asp?GA=103"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ilga.gov/house/Rep.asp?GA=102&MemberID=2911"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ilga.gov/house/Rep.asp?GA=103&MemberID=3112"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

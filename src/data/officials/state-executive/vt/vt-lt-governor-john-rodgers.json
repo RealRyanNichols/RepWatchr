@@ -1,0 +1,49 @@
+{
+  "id": "john-rodgers",
+  "name": "John Rodgers",
+  "firstName": "John",
+  "lastName": "Rodgers",
+  "party": "D",
+  "level": "state",
+  "position": "Lieutenant Governor",
+  "district": "Vermont",
+  "jurisdiction": "Vermont statewide public office",
+  "county": [
+    "Vermont"
+  ],
+  "termStart": "2025-01-09",
+  "termEnd": "2027-01-07",
+  "contactInfo": {
+    "office": "115 State Street; Montpelier, VT 05633",
+    "phone": "802-828-2226",
+    "email": "jrodgers@leg.state.vt.us",
+    "website": "http://legislature.vermont.gov/people/single/2020/20398"
+  },
+  "bio": "John Rodgers is listed as Lieutenant Governor for Vermont. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "VT",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "http://legislature.vermont.gov/people/single/2020/20398"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/vt/executive/John-Rodgers-2cb218ea-52a4-4d1f-9732-217940ba260e.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "http://legislature.vermont.gov/people/loadAll/2020"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ltgov.vermont.gov/about/john-rodgers"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/John_Rodgers_(Vermont)"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

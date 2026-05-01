@@ -1,0 +1,64 @@
+{
+  "id": "brenda-shields",
+  "name": "Brenda Shields",
+  "firstName": "Brenda",
+  "lastName": "Shields",
+  "photo": "/images/officials/state-legislature/mo/brenda-shields.jpg",
+  "photoSourceUrl": "https://house.mo.gov/MemberPhoto.aspx?id=2093",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-11",
+  "jurisdiction": "Missouri House of Representatives",
+  "county": [
+    "Missouri"
+  ],
+  "termStart": "2019-01-09",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 407-A, 201 W. Capitol Ave., Jefferson City, MO 65101",
+    "phone": "573-751-3643",
+    "email": "brenda.shields@house.mo.gov",
+    "website": "https://house.mo.gov/MemberDetails.aspx?district=011"
+  },
+  "bio": "Brenda Shields serves as State Representative for Missouri House of Representatives District 11. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "MO",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://house.mo.gov/MemberDetails.aspx?district=011"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/mo/legislature/Brenda-Shields-b7d28fcb-9563-420c-91bb-01d3202124fd.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://house.mo.gov/MemberPhoto.aspx?id=2093"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Brenda_Shields"
+    },
+    {
+      "title": "Public source",
+      "url": "https://house.mo.gov/MemberDetails.aspx?year=2021&code=R&district=011"
+    },
+    {
+      "title": "Public source",
+      "url": "https://house.mo.gov/MemberDetails.aspx?year=2023&code=R&district=011"
+    },
+    {
+      "title": "Public source",
+      "url": "https://house.mo.gov/MemberGridCluster.aspx"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.house.mo.gov/MemberDetails.aspx?district=11"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

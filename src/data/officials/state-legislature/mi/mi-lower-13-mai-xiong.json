@@ -1,0 +1,57 @@
+{
+  "id": "mai-xiong",
+  "name": "Mai Xiong",
+  "firstName": "Mai",
+  "lastName": "Xiong",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-13",
+  "jurisdiction": "Michigan House of Representatives",
+  "county": [
+    "Michigan"
+  ],
+  "termStart": "2024-04-30",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room N-692, Anderson House Office Building 124 N. Capitol Ave., Lansing, MI 48933",
+    "phone": "517-373-0845",
+    "email": "maixiong@house.mi.gov",
+    "website": "https://housedems.com/mai-xiong/"
+  },
+  "bio": "Mai Xiong serves as State Representative for Michigan House of Representatives District 13. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "MI",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://housedems.com/mai-xiong/"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/mi/legislature/Mai-Xiong-cd44a574-079b-4fd8-82cd-0daea8d7ff96.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Mai_Xiong"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Mai_Xiong"
+    },
+    {
+      "title": "Public source",
+      "url": "https://housedems.com/mai-xiong"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/maixiongmi"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.voteformai.com/mai-xiongs-story-from-refugee-to-public-servant"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

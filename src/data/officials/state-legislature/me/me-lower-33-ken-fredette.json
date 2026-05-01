@@ -1,0 +1,53 @@
+{
+  "id": "ken-fredette",
+  "name": "Ken Fredette",
+  "firstName": "Ken",
+  "lastName": "Fredette",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-33",
+  "jurisdiction": "Maine House of Representatives",
+  "county": [
+    "Maine"
+  ],
+  "termStart": "2024-12-03",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 332, House Republican Office 2 State House Station, Augusta, ME 04333",
+    "phone": "800-423-2900",
+    "email": "kenneth.fredette@legislature.maine.gov",
+    "website": "https://legislature.maine.gov/house/house/MemberProfiles/Details/65"
+  },
+  "bio": "Ken Fredette serves as State Representative for Maine House of Representatives District 33. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "ME",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://legislature.maine.gov/house/house/MemberProfiles/Details/65"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/me/legislature/Ken-Fredette-1c52b583-18c3-4e12-ae7a-2b07d589f753.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Kenneth_Fredette"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Kenneth_Fredette"
+    },
+    {
+      "title": "Public source",
+      "url": "https://mainehousegop.org/members/fredette-kenneth"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/kenneth-fredette-999b0b209"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

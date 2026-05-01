@@ -1,0 +1,72 @@
+{
+  "id": "spencer-gosch",
+  "name": "Spencer Gosch",
+  "firstName": "Spencer",
+  "lastName": "Gosch",
+  "photo": "/images/officials/state-legislature/sd/spencer-gosch.jpg",
+  "photoSourceUrl": "https://sdlegislature.gov/inc/img/Legislators/Gosch_2017.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-23",
+  "jurisdiction": "South Dakota House of Representatives",
+  "county": [
+    "South Dakota"
+  ],
+  "termStart": "2025-01-14",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Capitol Building 500 E. Capitol Ave., Pierre, SD 57501",
+    "phone": "605-773-3851",
+    "email": "spencer.gosch@sdlegislature.gov",
+    "website": "https://sdlegislature.gov/Legislators/Legislators/MemberDetail.aspx?Member=1434&Session=2019"
+  },
+  "bio": "Spencer Gosch serves as State Representative for South Dakota House of Representatives District 23. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "SD",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://sdlegislature.gov/Legislators/Legislators/MemberDetail.aspx?Member=1434&Session=2019"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/sd/legislature/Spencer-Gosch-138b5508-01b0-43ed-b8b6-ce9b9d07806f.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://sdlegislature.gov/inc/img/Legislators/Gosch_2017.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Spencer_Gosch"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Spencer_Gosch"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/169847/spencer-gosch"
+    },
+    {
+      "title": "Public source",
+      "url": "https://sdlegislature.gov/Legislators/Legislators/MemberDetail.aspx?Member=1525&Session=2018s"
+    },
+    {
+      "title": "Public source",
+      "url": "https://sdlegislature.gov/Legislators/Profile/1793/Detail"
+    },
+    {
+      "title": "Public source",
+      "url": "https://sdlegislature.gov/Legislators/Profile/4708/Detail"
+    },
+    {
+      "title": "Public source",
+      "url": "https://sdlegislature.gov/Legislators/Profile/4754/Detail"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

@@ -1,0 +1,68 @@
+{
+  "id": "beau-ballard",
+  "name": "Beau Ballard",
+  "firstName": "Beau",
+  "lastName": "Ballard",
+  "photo": "/images/officials/state-legislature/ne/beau-ballard.jpg",
+  "photoSourceUrl": "https://www.nebraskalegislature.gov/media/images/senators/dist21/highres/dist21.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "NP",
+  "level": "state",
+  "position": "State Senator",
+  "district": "LD-21",
+  "jurisdiction": "Nebraska Legislature",
+  "county": [
+    "Nebraska"
+  ],
+  "termStart": "2023-01-04",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "State Capitol Room 1101, P.O. Box 94604, Lincoln, NE 68509",
+    "phone": "402-471-2673",
+    "email": "bballard@leg.ne.gov",
+    "website": "https://nebraskalegislature.gov/senators/landing-pages/index.php?District=21"
+  },
+  "bio": "Beau Ballard serves as State Senator for Nebraska Legislature District 21. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "NE",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://nebraskalegislature.gov/senators/landing-pages/index.php?District=21"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ne/legislature/Beau-Ballard-3da787e9-f6ed-4069-bd74-58ec7c015efb.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://www.nebraskalegislature.gov/media/images/senators/dist21/highres/dist21.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Beau_Ballard"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Beau_Ballard"
+    },
+    {
+      "title": "Public source",
+      "url": "https://nebraskalegislature.gov/senators/senator_list.php"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.beauballard.com"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.beauballard.com/about"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/beau-ballard-47612087"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

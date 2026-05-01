@@ -1,0 +1,72 @@
+{
+  "id": "ron-taylor",
+  "name": "Ron Taylor",
+  "firstName": "Ron",
+  "lastName": "Taylor",
+  "photo": "/images/officials/state-legislature/id/ron-taylor.jpg",
+  "photoSourceUrl": "https://legislature.idaho.gov/wp-content/uploads/sessioninfo/2023/directory/Taylor7836.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-26",
+  "jurisdiction": "Idaho Senate",
+  "county": [
+    "Idaho"
+  ],
+  "termStart": "2022-12-01",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "P.O. Box 83720 700 W. Jefferson St., Boise, ID 83720",
+    "phone": "208-332-1353",
+    "email": "rtaylor@senate.idaho.gov",
+    "website": "https://legislature.idaho.gov/legislators/membership/2023/id7836/"
+  },
+  "bio": "Ron Taylor serves as State Senator for Idaho Senate District 26. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "ID",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://legislature.idaho.gov/legislators/membership/2023/id7836/"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/id/legislature/Ron-C-Taylor-1024a2b6-d36f-4c1f-86a0-826ec9120fe0.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://legislature.idaho.gov/wp-content/uploads/sessioninfo/2023/directory/Taylor7836.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Ron_Taylor"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Ron_Taylor_(Idaho_politician)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://legislature.idaho.gov/legislators/membership/2023/id7836"
+    },
+    {
+      "title": "Public source",
+      "url": "https://legislature.idaho.gov/legislators/membership/2024/id7836"
+    },
+    {
+      "title": "Public source",
+      "url": "https://legislature.idaho.gov/legislators/membership/2026/id7836"
+    },
+    {
+      "title": "Public source",
+      "url": "https://legislature.idaho.gov/senate/membership"
+    },
+    {
+      "title": "Public source",
+      "url": "https://legislature.idaho.gov/senate/membership/"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

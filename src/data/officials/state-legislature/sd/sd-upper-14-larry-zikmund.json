@@ -1,0 +1,72 @@
+{
+  "id": "larry-zikmund",
+  "name": "Larry Zikmund",
+  "firstName": "Larry",
+  "lastName": "Zikmund",
+  "photo": "/images/officials/state-legislature/sd/larry-zikmund.jpg",
+  "photoSourceUrl": "https://sdlegislature.gov/inc/img/Legislators/ZIKMUND_2017.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-14",
+  "jurisdiction": "South Dakota Senate",
+  "county": [
+    "South Dakota"
+  ],
+  "termStart": "2021-01-12",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Capitol Building 500 E. Capitol Ave., Pierre, SD 57501",
+    "phone": "605-773-3821",
+    "email": "larry.zikmund@sdlegislature.gov",
+    "website": "https://sdlegislature.gov/Legislators/Profile/1870/Detail"
+  },
+  "bio": "Larry Zikmund serves as State Senator for South Dakota Senate District 14. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "SD",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://sdlegislature.gov/Legislators/Profile/1870/Detail"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/sd/legislature/Larry-P-Zikmund-5e23171d-49a3-471f-a6f8-24b057f2d836.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://sdlegislature.gov/inc/img/Legislators/ZIKMUND_2017.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Larry_P._Zikmund"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Larry_Zikmund"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/137866/larry-zikmund"
+    },
+    {
+      "title": "Public source",
+      "url": "https://sdlegislature.gov/Legislators/Profile/4436/Detail"
+    },
+    {
+      "title": "Public source",
+      "url": "https://sdlegislature.gov/Legislators/Profile/4576/Detail"
+    },
+    {
+      "title": "Public source",
+      "url": "https://sdlegislature.gov/Legislators/Profile/4683/Detail"
+    },
+    {
+      "title": "Public source",
+      "url": "https://sdlegislature.gov/Legislators/Profile/4835/Detail"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

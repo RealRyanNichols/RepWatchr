@@ -1,0 +1,60 @@
+{
+  "id": "brandon-wipf",
+  "name": "Brandon Wipf",
+  "firstName": "Brandon",
+  "lastName": "Wipf",
+  "photo": "/images/officials/state-legislature/sd/brandon-wipf.jpg",
+  "photoSourceUrl": "https://governor.sd.gov/doc/IMG_4416-scaled.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-22",
+  "jurisdiction": "South Dakota Senate",
+  "county": [
+    "South Dakota"
+  ],
+  "termStart": "2025-07-10",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Capitol Building 500 E. Capitol Ave., Pierre, SD 57501",
+    "phone": "605-773-3821",
+    "email": "brandon.wipf@sdlegislature.gov",
+    "website": "https://sdlegislature.gov/Legislators/Profile/4837/Detail"
+  },
+  "bio": "Brandon Wipf serves as State Senator for South Dakota Senate District 22. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "SD",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://sdlegislature.gov/Legislators/Profile/4837/Detail"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/sd/legislature/Brandon-Wipf-a5c12215-2e38-4d1f-a8b0-cc6ce0e859ca.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://governor.sd.gov/doc/IMG_4416-scaled.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Brandon_Wipf"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Brandon_Wipf"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/225330/brandon-wipf"
+    },
+    {
+      "title": "Public source",
+      "url": "https://soygrowers.com/board/brandon-wipf"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

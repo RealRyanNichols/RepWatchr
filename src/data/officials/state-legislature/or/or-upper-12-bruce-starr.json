@@ -1,0 +1,60 @@
+{
+  "id": "bruce-starr",
+  "name": "Bruce Starr",
+  "firstName": "Bruce",
+  "lastName": "Starr",
+  "photo": "/images/officials/state-legislature/or/bruce-starr.jpg",
+  "photoSourceUrl": "https://www.oregonlegislature.gov/starr/PublishingImages/member_photo.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-12",
+  "jurisdiction": "Oregon Senate",
+  "county": [
+    "Oregon"
+  ],
+  "termStart": "2025-01-13",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room S-303, 900 Court St. NE, Salem, OR 97301",
+    "phone": "503-986-1712",
+    "email": "sen.brucestarr@oregonlegislature.gov",
+    "website": "https://www.oregonlegislature.gov/starr"
+  },
+  "bio": "Bruce Starr serves as State Senator for Oregon Senate District 12. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "OR",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.oregonlegislature.gov/starr"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/or/legislature/Bruce-Starr-e420fffb-7b56-42db-8cc4-531526ad6802.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://www.oregonlegislature.gov/starr/PublishingImages/member_photo.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Bruce_Starr"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Bruce_Starr"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/brucewstarr"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.oregonlegislature.gov/senate/Pages/SenatorsAll.aspx"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

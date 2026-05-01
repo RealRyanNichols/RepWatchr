@@ -1,0 +1,72 @@
+{
+  "id": "janice-zahn",
+  "name": "Janice Zahn",
+  "firstName": "Janice",
+  "lastName": "Zahn",
+  "photo": "/images/officials/state-legislature/wa/janice-zahn.jpg",
+  "photoSourceUrl": "https://leg.wa.gov/memberphoto/35736.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-41",
+  "jurisdiction": "Washington House of Representatives",
+  "county": [
+    "Washington"
+  ],
+  "termStart": "2025-01-22",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 419, John L. O'Brien Building P.O. Box 40600, Olympia, WA 98504",
+    "phone": "360-786-7894",
+    "email": "janice.zahn@leg.wa.gov",
+    "website": "https://housedemocrats.wa.gov/zahn/"
+  },
+  "bio": "Janice Zahn serves as State Representative for Washington House of Representatives District 41. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "WA",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://housedemocrats.wa.gov/zahn/"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/wa/legislature/Janice-Zahn-25b3a4f1-c767-49db-9d8a-217592e5b3a0.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://leg.wa.gov/memberphoto/35736.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Janice_Zahn"
+    },
+    {
+      "title": "Public source",
+      "url": "https://bellevuewa.gov/city-government/city-council/councilmembers/janice-zahn"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Janice_Zahn"
+    },
+    {
+      "title": "Public source",
+      "url": "https://housedemocrats.wa.gov/zahn"
+    },
+    {
+      "title": "Public source",
+      "url": "https://housedemocrats.wa.gov/zahn/biography"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/187940/janice-zahn"
+    },
+    {
+      "title": "Public source",
+      "url": "https://leg.wa.gov/legislators/member/janice-zahn"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

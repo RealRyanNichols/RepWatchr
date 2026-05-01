@@ -1,0 +1,70 @@
+{
+  "id": "chris-chandler",
+  "name": "Chris Chandler",
+  "firstName": "Chris",
+  "lastName": "Chandler",
+  "photo": "/images/officials/state-legislature/nm/chris-chandler.jpg",
+  "photoSourceUrl": "https://www.nmlegis.gov/Images/Legislators/House/HCHAN.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-43",
+  "jurisdiction": "New Mexico House of Representatives",
+  "county": [
+    "New Mexico"
+  ],
+  "termStart": "2019-01-15",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "State Capitol Room 308A, New Mexico  490 Old Santa Fe Trail, Santa Fe, NM 87501",
+    "phone": "505-986-4411",
+    "email": "christine.chandler@nmlegis.gov",
+    "website": "https://www.linkedin.com/in/christine-chandler-b567865a/",
+    "socialMedia": {
+      "x": "https://x.com/Christine4nm",
+      "twitter": "https://x.com/Christine4nm",
+      "facebook": "https://facebook.com/Christine4NM",
+      "instagram": "https://instagram.com/christine4nm"
+    }
+  },
+  "bio": "Chris Chandler serves as State Representative for New Mexico House of Representatives District 43. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "NM",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.linkedin.com/in/christine-chandler-b567865a/"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/nm/legislature/Christine-Chandler-6ecab682-9ccf-4777-940d-afa418b601b8.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://www.nmlegis.gov/Images/Legislators/House/HCHAN.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Christine_Chandler"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Christine_Chandler"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/christine-chandler-b567865a"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.nmlegis.gov/Members/Legislator?SponCode=HCHAN"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.nmlegis.gov/Members/Legislator_List?T=R"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

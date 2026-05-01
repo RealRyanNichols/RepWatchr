@@ -1,0 +1,72 @@
+{
+  "id": "dick-bradstreet",
+  "name": "Dick Bradstreet",
+  "firstName": "Dick",
+  "lastName": "Bradstreet",
+  "photo": "/images/officials/state-legislature/me/dick-bradstreet.jpg",
+  "photoSourceUrl": "https://legislature.maine.gov/house/house/Repository/MemberProfiles/25f23c49-eaab-420a-8fdd-b4d2afb931bc_bradrt.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-15",
+  "jurisdiction": "Maine Senate",
+  "county": [
+    "Maine"
+  ],
+  "termStart": "2024-12-03",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "3 State House Station, Augusta, ME 04333",
+    "phone": "207-287-1505",
+    "email": "dick.bradstreet@legislature.maine.gov",
+    "website": "https://legislature.maine.gov/District15"
+  },
+  "bio": "Dick Bradstreet serves as State Senator for Maine Senate District 15. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "ME",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://legislature.maine.gov/District15"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/me/legislature/Richard-T-Bradstreet-ec504278-9872-4842-a99c-80b31e563707.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://legislature.maine.gov/house/house/Repository/MemberProfiles/25f23c49-eaab-420a-8fdd-b4d2afb931bc_bradrt.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Richard_Bradstreet"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Richard_Bradstreet"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/170234/dick-bradstreet"
+    },
+    {
+      "title": "Public source",
+      "url": "https://legislature.maine.gov/house/house/MemberProfiles/Details/18"
+    },
+    {
+      "title": "Public source",
+      "url": "https://legislature.maine.gov/house/house/MemberProfiles/ListAlpha"
+    },
+    {
+      "title": "Public source",
+      "url": "https://mesenategop.com/your-senators/senator-richard-bradstreet"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/dick-bradstreet-a184b056"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

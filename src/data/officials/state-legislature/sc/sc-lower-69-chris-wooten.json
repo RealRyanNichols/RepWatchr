@@ -1,0 +1,65 @@
+{
+  "id": "chris-wooten",
+  "name": "Chris Wooten",
+  "firstName": "Chris",
+  "lastName": "Wooten",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-69",
+  "jurisdiction": "South Carolina House of Representatives",
+  "county": [
+    "South Carolina"
+  ],
+  "termStart": "2018-05-08",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 323B, Blatt Building P.O. Box 11867, Columbia, SC 29201",
+    "phone": "803-212-6897",
+    "email": "chriswooten@schouse.gov",
+    "website": "https://scstatehouse.gov/member.php?code=1978408854"
+  },
+  "bio": "Chris Wooten serves as State Representative for South Carolina House of Representatives District 69. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "SC",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://scstatehouse.gov/member.php?code=1978408854"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/sc/legislature/Chris-Wooten-728e5331-d2ec-4c21-a271-be37ae8843ff.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Chris_Wooten"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Chris_Wooten"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/177641/chris-wooten"
+    },
+    {
+      "title": "Public source",
+      "url": "https://scstatehouse.gov/member.php?chamber=H"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/chris-wooten-58060816"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.scstatehouse.gov/member.php?chamber=H"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.scstatehouse.gov/member.php?code=1978408854"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

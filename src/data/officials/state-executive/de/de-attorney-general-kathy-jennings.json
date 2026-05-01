@@ -1,0 +1,60 @@
+{
+  "id": "kathy-jennings",
+  "name": "Kathy Jennings",
+  "firstName": "Kathy",
+  "lastName": "Jennings",
+  "photo": "/images/officials/state-executive/de/kathy-jennings.jpg",
+  "photoSourceUrl": "https://attorneygeneral.delaware.gov/wp-content/themes/dosgic_AG_theme/img/ag-jennings-bio-photo.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "Attorney General",
+  "district": "Delaware",
+  "jurisdiction": "Delaware statewide public office",
+  "county": [
+    "Delaware"
+  ],
+  "termStart": "2019-01-01",
+  "termEnd": "2027-01-05",
+  "contactInfo": {
+    "office": "Carvel State Building, 820 N. French St.; Wilmington, DE 19801",
+    "phone": "302-577-8400",
+    "email": "attorney.general@delaware.gov",
+    "website": "https://attorneygeneral.delaware.gov/"
+  },
+  "bio": "Kathy Jennings is listed as Attorney General for Delaware. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "DE",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://attorneygeneral.delaware.gov/"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/de/executive/Kathy-Jennings-d1ed8b9a-53e1-4cd6-b1b2-ef6632fbde5d.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://attorneygeneral.delaware.gov/wp-content/themes/dosgic_AG_theme/img/ag-jennings-bio-photo.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://attorneygeneral.delaware.gov/about/"
+    },
+    {
+      "title": "Public source",
+      "url": "https://attorneygeneral.delaware.gov/contact/"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Kathy_Jennings"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.naag.org/attorney-general/kathy-jennings/"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

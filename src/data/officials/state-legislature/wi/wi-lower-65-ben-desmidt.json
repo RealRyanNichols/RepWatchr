@@ -1,0 +1,64 @@
+{
+  "id": "ben-desmidt",
+  "name": "Ben DeSmidt",
+  "firstName": "Ben",
+  "lastName": "DeSmidt",
+  "photo": "/images/officials/state-legislature/wi/ben-desmidt.jpg",
+  "photoSourceUrl": "https://s3.amazonaws.com/ballotpedia-api4/files/thumbs/200/300/Ben_DeSmidt_20240808_100327.jpeg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "Assemblymember",
+  "district": "HD-65",
+  "jurisdiction": "Wisconsin State Assembly",
+  "county": [
+    "Wisconsin"
+  ],
+  "termStart": "2025-01-06",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "State Capitol Room 18 North, P.O. Box 8952 , 2 E. Main St., Madison, WI 53708",
+    "phone": "608-237-9165",
+    "email": "rep.desmidt@legis.wisconsin.gov",
+    "website": "https://docs.legis.wisconsin.gov/2025/legislators/assembly/2894"
+  },
+  "bio": "Ben DeSmidt serves as Assemblymember for Wisconsin State Assembly District 65. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "WI",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://docs.legis.wisconsin.gov/2025/legislators/assembly/2894"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/wi/legislature/Ben-DeSmidt-d4c9b78d-bb0b-40e8-b717-f606299c9737.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://s3.amazonaws.com/ballotpedia-api4/files/thumbs/200/300/Ben_DeSmidt_20240808_100327.jpeg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Ben_DeSmidt"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Ben_DeSmidt"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/218647/ben-desmidt"
+    },
+    {
+      "title": "Public source",
+      "url": "https://legis.wisconsin.gov/assembly/65/desmidt"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/ben-desmidt-875b5443"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

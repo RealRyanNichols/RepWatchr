@@ -1,0 +1,72 @@
+{
+  "id": "mark-warden",
+  "name": "Mark Warden",
+  "firstName": "Mark",
+  "lastName": "Warden",
+  "photo": "/images/officials/state-legislature/nh/mark-warden.jpg",
+  "photoSourceUrl": "https://s3.amazonaws.com/ballotpedia-api4/files/thumbs/200/300/Mark_Warden_candidate_photo__Medium__fixed.JPG",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-Hillsborough 39",
+  "jurisdiction": "New Hampshire House of Representatives",
+  "county": [
+    "New Hampshire"
+  ],
+  "termStart": "2024-12-04",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "State House 107 N. Main St., Concord, NH 03301",
+    "phone": "603-271-3661",
+    "email": "mark.warden@gc.nh.gov",
+    "website": "https://gc.nh.gov/house/members/member.aspx?pid=662"
+  },
+  "bio": "Mark Warden serves as State Representative for New Hampshire House of Representatives District Hillsborough 39. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "NH",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://gc.nh.gov/house/members/member.aspx?pid=662"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/nh/legislature/Mark-Warden-01358592-fa6d-49bf-a933-ea2f223572d7.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://s3.amazonaws.com/ballotpedia-api4/files/thumbs/200/300/Mark_Warden_candidate_photo__Medium__fixed.JPG"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Mark_Warden"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Mark_Warden"
+    },
+    {
+      "title": "Public source",
+      "url": "https://gencourt.state.nh.us/downloads/Members.txt"
+    },
+    {
+      "title": "Public source",
+      "url": "https://gencourt.state.nh.us/downloads/members.txt"
+    },
+    {
+      "title": "Public source",
+      "url": "https://gencourt.state.nh.us/house/members/member.aspx?pid=662"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/122391/mark-warden"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.gencourt.state.nh.us/downloads/Members.txt"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

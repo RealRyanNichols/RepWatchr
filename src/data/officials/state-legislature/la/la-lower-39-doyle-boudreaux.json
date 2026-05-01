@@ -1,0 +1,52 @@
+{
+  "id": "doyle-boudreaux",
+  "name": "Doyle Boudreaux",
+  "firstName": "Doyle",
+  "lastName": "Boudreaux",
+  "photo": "/images/officials/state-legislature/la/doyle-boudreaux.jpg",
+  "photoSourceUrl": "https://static.wixstatic.com/media/66f8d9_8ae2cf856c374eee86e43d32c995830b~mv2.jpg/v1/fill/w_150,h_210,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/Doyle%20Boudreaux_JPG.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-39",
+  "jurisdiction": "Louisiana House of Representatives",
+  "county": [
+    "Louisiana"
+  ],
+  "termStart": "2026-03-09",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "P.O. Box 94062 900 N. 3rd St., Baton Rouge, LA 70804",
+    "phone": "225-342-6945",
+    "email": "hse039@legis.la.gov",
+    "website": "https://house.louisiana.gov/h_reps/members?ID=39"
+  },
+  "bio": "Doyle Boudreaux serves as State Representative for Louisiana House of Representatives District 39. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "LA",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://house.louisiana.gov/h_reps/members?ID=39"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/la/legislature/Doyle-Boudreaux-c725a955-93ff-415e-91df-a7398f823474.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://static.wixstatic.com/media/66f8d9_8ae2cf856c374eee86e43d32c995830b~mv2.jpg/v1/fill/w_150,h_210,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/Doyle%20Boudreaux_JPG.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Doyle_Boudreaux"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/doyle-boudreaux-50926162"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

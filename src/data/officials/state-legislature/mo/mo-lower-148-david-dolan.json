@@ -1,0 +1,52 @@
+{
+  "id": "david-dolan",
+  "name": "David Dolan",
+  "firstName": "David",
+  "lastName": "Dolan",
+  "photo": "/images/officials/state-legislature/mo/david-dolan.jpg",
+  "photoSourceUrl": "https://storage.googleapis.com/enview-dev-public-general/legislative-people-photos/167282.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-148",
+  "jurisdiction": "Missouri House of Representatives",
+  "county": [
+    "Missouri"
+  ],
+  "termStart": "2025-01-08",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 116-2, 201 W. Capitol Ave., Jefferson City, MO 65101",
+    "phone": "573-751-5471",
+    "email": "david.dolan@house.mo.gov",
+    "website": "https://house.mo.gov/MemberDetails.aspx?district=148"
+  },
+  "bio": "David Dolan serves as State Representative for Missouri House of Representatives District 148. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "MO",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://house.mo.gov/MemberDetails.aspx?district=148"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/mo/legislature/David-Dolan-3055e426-4c34-404c-b286-820e978cb05c.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://storage.googleapis.com/enview-dev-public-general/legislative-people-photos/167282.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/David_A._Dolan"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/217772/david-dolan"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

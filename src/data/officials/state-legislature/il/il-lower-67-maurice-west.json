@@ -1,0 +1,72 @@
+{
+  "id": "maurice-west",
+  "name": "Maurice West",
+  "firstName": "Maurice",
+  "lastName": "West",
+  "photo": "/images/officials/state-legislature/il/maurice-west.jpg",
+  "photoSourceUrl": "https://cdn.ilga.gov/assets/img/members/{AFB160BE-629B-4C70-8541-877D6FCDE529}.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-67",
+  "jurisdiction": "Illinois House of Representatives",
+  "county": [
+    "Illinois"
+  ],
+  "termStart": "2019-01-09",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 277-S, Stratton Office Building, Springfield, IL 62706",
+    "phone": "217-782-3167",
+    "email": "assistance@staterepwest.com",
+    "website": "https://ilga.gov/house/Rep.asp?GA=101&MemberID=2736"
+  },
+  "bio": "Maurice West serves as State Representative for Illinois House of Representatives District 67. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "IL",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://ilga.gov/house/Rep.asp?GA=101&MemberID=2736"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/il/legislature/Maurice-A-West-77906cdf-58a8-4329-bb24-c65e6e38342f.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://cdn.ilga.gov/assets/img/members/{AFB160BE-629B-4C70-8541-877D6FCDE529}.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Maurice_West_II"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Maurice_West"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ilga.gov/house/default.asp?GA=101"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ilga.gov/house/default.asp?GA=102"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ilga.gov/house/default.asp?GA=103"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ilga.gov/house/Rep.asp?GA=102&MemberID=2937"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ilga.gov/house/Rep.asp?GA=103&MemberID=3135"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

@@ -1,0 +1,53 @@
+{
+  "id": "s-j-howell",
+  "name": "S.J. Howell",
+  "firstName": "S.J.",
+  "lastName": "Howell",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-100",
+  "jurisdiction": "Montana House of Representatives",
+  "county": [
+    "Montana"
+  ],
+  "termStart": "2025-01-06",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Capitol Building, 1301 E. 6th Ave. P.O. Box 200400, Helena, MT 59620",
+    "phone": "406-444-4800",
+    "email": "sj.howell@legmt.gov",
+    "website": "https://leg.mt.gov/legislator-information/roster/individual/7630"
+  },
+  "bio": "S.J. Howell serves as State Representative for Montana House of Representatives District 100. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "MT",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://leg.mt.gov/legislator-information/roster/individual/7630"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/mt/legislature/Sj-Howell-9f2826d8-7d78-45bd-b5a8-2bbc9f7eff2d.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/SJ_Howell"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/SJ_Howell"
+    },
+    {
+      "title": "Public source",
+      "url": "https://legislators.legmt.gov/#/legislator/117"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.legmt.gov/legislators/1368"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

@@ -1,0 +1,53 @@
+{
+  "id": "mark-hollo",
+  "name": "Mark Hollo",
+  "firstName": "Mark",
+  "lastName": "Hollo",
+  "party": "R",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-45",
+  "jurisdiction": "North Carolina Senate",
+  "county": [
+    "North Carolina"
+  ],
+  "termStart": "2025-01-01",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 2119, North Carolina Legislative Building 16 W. Jones St., Raleigh, NC 27601",
+    "phone": "919-733-5876",
+    "email": "mark.hollo@ncleg.gov",
+    "website": "https://www.ncga.state.nc.us/gascripts/members/viewMember.pl?sChamber=House&nUserID=619"
+  },
+  "bio": "Mark Hollo serves as State Senator for North Carolina Senate District 45. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "NC",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.ncga.state.nc.us/gascripts/members/viewMember.pl?sChamber=House&nUserID=619"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/nc/legislature/Mark-W-Hollo-1afc84ab-30e5-413a-8975-2a552e050aee.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Mark_Hollo"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Mark_Hollo"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/41112/mark-hollo"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.ncleg.gov/Members/Biography/S/450"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

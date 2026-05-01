@@ -1,0 +1,52 @@
+{
+  "id": "billy-nungesser",
+  "name": "Billy Nungesser",
+  "firstName": "Billy",
+  "lastName": "Nungesser",
+  "photo": "/images/officials/state-executive/la/billy-nungesser.jpg",
+  "photoSourceUrl": "https://www.crt.state.la.us/Assets/LTG/nungesser.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "Lieutenant Governor",
+  "district": "Louisiana",
+  "jurisdiction": "Louisiana statewide public office",
+  "county": [
+    "Louisiana"
+  ],
+  "termStart": "2016-01-11",
+  "termEnd": "2028-01-10",
+  "contactInfo": {
+    "office": "Capitol Annex Building, 1051 North Third Street; Baton Rouge, LA 70802",
+    "phone": "225-342-7009",
+    "email": "ltgov@crt.la.gov",
+    "website": "https://www.crt.state.la.us/lt-governor/"
+  },
+  "bio": "Billy Nungesser is listed as Lieutenant Governor for Louisiana. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "LA",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.crt.state.la.us/lt-governor/"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/la/executive/Billy-Nungesser-003d1e83-14f4-4bda-8484-c552e036f421.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://www.crt.state.la.us/Assets/LTG/nungesser.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.crt.state.la.us/lt-governor/contact/"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Billy_Nungesser"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

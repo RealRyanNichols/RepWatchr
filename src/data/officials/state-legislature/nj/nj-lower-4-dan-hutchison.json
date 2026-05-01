@@ -1,0 +1,61 @@
+{
+  "id": "dan-hutchison",
+  "name": "Dan Hutchison",
+  "firstName": "Dan",
+  "lastName": "Hutchison",
+  "party": "D",
+  "level": "state",
+  "position": "Assemblymember",
+  "district": "HD-4",
+  "jurisdiction": "New Jersey General Assembly",
+  "county": [
+    "New Jersey"
+  ],
+  "termStart": "2024-01-09",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "P.O. Box 068 State House, 145 W. State St., Trenton, NJ 08625",
+    "phone": "609-847-3905",
+    "email": "asmhutchison@njleg.org",
+    "website": "https://www.assemblydems.com/160/Dan-Hutchison---District-4"
+  },
+  "bio": "Dan Hutchison serves as Assemblymember for New Jersey General Assembly District 4. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "NJ",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.assemblydems.com/160/Dan-Hutchison---District-4"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/nj/legislature/Dan-Hutchison-fa6aa5c6-0479-4d12-88c0-75480bfbe3a5.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Dan_Hutchison"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Dan_Hutchinson"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/43317/dan-hutchison"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.assemblydems.com/dan-hutchison"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/dan-hutchison-b7360511"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.njleg.state.nj.us/legislative-roster/462/assemblyman-hutchison"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

@@ -1,0 +1,60 @@
+{
+  "id": "eva-diaz",
+  "name": "Eva Diaz",
+  "firstName": "Eva",
+  "lastName": "Diaz",
+  "photo": "/images/officials/state-legislature/az/eva-diaz.jpg",
+  "photoSourceUrl": "https://www.azleg.gov/alisImages/MemberPhotos/57leg/Senate/DIAZ.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-22",
+  "jurisdiction": "Arizona Senate",
+  "county": [
+    "Arizona"
+  ],
+  "termStart": "2023-01-09",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 313, 1700 W. Washington St., Phoenix, AZ 85007",
+    "phone": "602-926-3473",
+    "email": "eva.diaz@azleg.gov",
+    "website": "https://www.azleg.gov/senate-member/?legislature=56&legislator=2121"
+  },
+  "bio": "Eva Diaz serves as State Senator for Arizona Senate District 22. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "AZ",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.azleg.gov/senate-member/?legislature=56&legislator=2121"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/az/legislature/Eva-Diaz-e1cd66fa-a0de-45fd-ae53-a4db7d178d21.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://www.azleg.gov/alisImages/MemberPhotos/57leg/Senate/DIAZ.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Eva_Diaz"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Eva_Diaz_(Arizona_politician)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.azleg.gov/memberroster/?body=S"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.azleg.gov/senate-member/?legislature=57&legislator=2376"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

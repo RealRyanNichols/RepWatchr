@@ -1,0 +1,65 @@
+{
+  "id": "scott-sandall",
+  "name": "Scott Sandall",
+  "firstName": "Scott",
+  "lastName": "Sandall",
+  "party": "R",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-1",
+  "jurisdiction": "Utah Senate",
+  "county": [
+    "Utah"
+  ],
+  "termStart": "2023-01-01",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "P.O. Box 145115 350 N. State St., Suite 320, Salt Lake City, UT 84114",
+    "phone": "801-538-1035",
+    "email": "ssandall@le.utah.gov",
+    "website": "https://disclosures.utah.gov/Search/PublicSearch/FolderDetails/1412644"
+  },
+  "bio": "Scott Sandall serves as State Senator for Utah Senate District 1. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "UT",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://disclosures.utah.gov/Search/PublicSearch/FolderDetails/1412644"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ut/legislature/Scott-D-Sandall-d1a1c031-9dce-4727-a298-ec92cb34fe40.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Scott_Sandall"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Scott_Sandall"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/151629/scott-sandall"
+    },
+    {
+      "title": "Public source",
+      "url": "https://le.utah.gov/data/legislators.json"
+    },
+    {
+      "title": "Public source",
+      "url": "https://senate.utah.gov/sen/SANDASD"
+    },
+    {
+      "title": "Public source",
+      "url": "https://senate.utah.gov/sen/SANDASD/"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/scott-sandall-582b19aa"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

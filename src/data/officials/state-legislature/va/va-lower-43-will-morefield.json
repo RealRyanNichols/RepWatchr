@@ -1,0 +1,75 @@
+{
+  "id": "will-morefield",
+  "name": "Will Morefield",
+  "firstName": "Will",
+  "lastName": "Morefield",
+  "photo": "/images/officials/state-legislature/va/will-morefield.jpg",
+  "photoSourceUrl": "https://memdata.virginiageneralassembly.gov/images/display_image/H0224",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "Delegate",
+  "district": "HD-43",
+  "jurisdiction": "Virginia House of Delegates",
+  "county": [
+    "Virginia"
+  ],
+  "termStart": "2024-01-10",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 808, General Assembly Building 201 N. 9th St., Richmond, VA 23219",
+    "phone": "804-698-1043",
+    "email": "deljmorefield@house.virginia.gov",
+    "website": "https://house.vga.virginia.gov/members/H0224",
+    "socialMedia": {
+      "facebook": "https://facebook.com/DelegateMorefield"
+    }
+  },
+  "bio": "Will Morefield serves as Delegate for Virginia House of Delegates District 43. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "VA",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://house.vga.virginia.gov/members/H0224"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/va/legislature/James-W-Morefield-0f77b7d1-a89e-41cd-ae83-28d267dab0e2.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://memdata.virginiageneralassembly.gov/images/display_image/H0224"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/James_Morefield"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Will_Morefield"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/112135/will-morefield"
+    },
+    {
+      "title": "Public source",
+      "url": "https://lis.virginia.gov/191/mbr/MBR.HTM"
+    },
+    {
+      "title": "Public source",
+      "url": "https://lis.virginia.gov/201/mbr/MBR.HTM"
+    },
+    {
+      "title": "Public source",
+      "url": "https://lis.virginia.gov/cgi-bin/legp604.exe?191+mbr+H224"
+    },
+    {
+      "title": "Public source",
+      "url": "https://lis.virginia.gov/cgi-bin/legp604.exe?201+mbr+H224"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

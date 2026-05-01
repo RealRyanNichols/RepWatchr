@@ -1,0 +1,53 @@
+{
+  "id": "andrew-dimitri",
+  "name": "Andrew Dimitri",
+  "firstName": "Andrew",
+  "lastName": "Dimitri",
+  "party": "D",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-25",
+  "jurisdiction": "Rhode Island Senate",
+  "county": [
+    "Rhode Island"
+  ],
+  "termStart": "2025-01-07",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "82 Smith St., Providence, RI 02903",
+    "phone": "401-222-3580",
+    "email": "sen-dimitri@rilegislature.gov",
+    "website": "https://rilegislature.gov/senators/Dimitri/Pages/Biography.aspx"
+  },
+  "bio": "Andrew Dimitri serves as State Senator for Rhode Island Senate District 25. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "RI",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://rilegislature.gov/senators/Dimitri/Pages/Biography.aspx"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ri/legislature/Andrew-Dimitri-89fadd1c-b02c-45aa-b008-bf31d3fea4a1.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Andrew_Dimitri"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Andrew_Dimitri"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/219288/andrew-dimitri"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/andrew-dimitri-64119b125"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

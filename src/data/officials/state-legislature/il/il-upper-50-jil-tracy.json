@@ -1,0 +1,72 @@
+{
+  "id": "jil-tracy",
+  "name": "Jil Tracy",
+  "firstName": "Jil",
+  "lastName": "Tracy",
+  "photo": "/images/officials/state-legislature/il/jil-tracy.jpg",
+  "photoSourceUrl": "https://cdn.ilga.gov/assets/img/members/{21C0F860-E9DD-4215-A3AA-703E275C8526}.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-50",
+  "jurisdiction": "Illinois Senate",
+  "county": [
+    "Illinois"
+  ],
+  "termStart": "2023-01-11",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 208 B, Capitol Building, Springfield, IL 62706",
+    "phone": "217-782-2479",
+    "email": "tracy@ilsenategop.org",
+    "website": "https://ilga.gov/senate/Senator.asp?GA=101&MemberID=2680"
+  },
+  "bio": "Jil Tracy serves as State Senator for Illinois Senate District 50. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "IL",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://ilga.gov/senate/Senator.asp?GA=101&MemberID=2680"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/il/legislature/Jil-Tracy-be85f354-7f46-48aa-afc7-850502fda3cb.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://cdn.ilga.gov/assets/img/members/{21C0F860-E9DD-4215-A3AA-703E275C8526}.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Jil_Tracy"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Jil_Tracy"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ilga.gov/senate/default.asp?GA=101"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ilga.gov/senate/default.asp?GA=102"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ilga.gov/senate/default.asp?GA=103"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ilga.gov/senate/Senator.asp?GA=102&MemberID=2899"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ilga.gov/senate/Senator.asp?GA=103&MemberID=3103"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

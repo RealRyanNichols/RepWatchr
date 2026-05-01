@@ -1,0 +1,60 @@
+{
+  "id": "monica-church",
+  "name": "Monica Church",
+  "firstName": "Monica",
+  "lastName": "Church",
+  "photo": "/images/officials/state-legislature/id/monica-church.jpg",
+  "photoSourceUrl": "https://legislature.idaho.gov/wp-content/uploads/sessioninfo/2025/directory/Church9422.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-19A",
+  "jurisdiction": "Idaho House of Representatives",
+  "county": [
+    "Idaho"
+  ],
+  "termStart": "2024-12-01",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "P.O. Box 83720 700 W. Jefferson St., Boise, ID 83720",
+    "phone": "208-332-1078",
+    "email": "mchurch@house.idaho.gov",
+    "website": "https://legislature.idaho.gov/legislators/membership/2025/id9422/"
+  },
+  "bio": "Monica Church serves as State Representative for Idaho House of Representatives District 19A. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "ID",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://legislature.idaho.gov/legislators/membership/2025/id9422/"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/id/legislature/Monica-Church-b3878069-33ec-4ecc-8236-f9d0de68f5da.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://legislature.idaho.gov/wp-content/uploads/sessioninfo/2025/directory/Church9422.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Monica_Church"
+    },
+    {
+      "title": "Public source",
+      "url": "https://legislature.idaho.gov/legislators/membership/2025/id9422"
+    },
+    {
+      "title": "Public source",
+      "url": "https://legislature.idaho.gov/legislators/membership/2026/id9422"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/monica-c-church-964963249"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

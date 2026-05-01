@@ -1,0 +1,60 @@
+{
+  "id": "john-inglis",
+  "name": "John Inglis",
+  "firstName": "John",
+  "lastName": "Inglis",
+  "photo": "/images/officials/state-legislature/pa/john-inglis.jpg",
+  "photoSourceUrl": "https://s3.amazonaws.com/ballotpedia-api4/files/thumbs/200/300/JohnInglis2024.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-38",
+  "jurisdiction": "Pennsylvania House of Representatives",
+  "county": [
+    "Pennsylvania"
+  ],
+  "termStart": "2024-12-01",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 125A, East Wing P.O. Box 202038, Harrisburg, PA 17120",
+    "phone": "717-787-8175",
+    "email": "repinglis@pahouse.net",
+    "website": "https://www.pahouse.com/inglis/"
+  },
+  "bio": "John Inglis serves as State Representative for Pennsylvania House of Representatives District 38. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "PA",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.pahouse.com/inglis/"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/pa/legislature/John-Inglis-0b0beeaf-a1b0-4049-95cb-4ad5a3952336.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://s3.amazonaws.com/ballotpedia-api4/files/thumbs/200/300/JohnInglis2024.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/John_Inglis"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/john-inglis-b47b829b"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.pahouse.com/inglis"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.palegis.us/house/members/bio/2024/rep-inglis"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

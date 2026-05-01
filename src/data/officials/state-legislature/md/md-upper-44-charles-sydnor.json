@@ -1,0 +1,64 @@
+{
+  "id": "charles-sydnor",
+  "name": "Charles Sydnor",
+  "firstName": "Charles",
+  "lastName": "Sydnor",
+  "photo": "/images/officials/state-legislature/md/charles-sydnor.jpg",
+  "photoSourceUrl": "http://mgaleg.maryland.gov/2021RS/images/sydnor02.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-44",
+  "jurisdiction": "Maryland Senate",
+  "county": [
+    "Maryland"
+  ],
+  "termStart": "2020-01-08",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 216, James Senate Office Building 11 Bladen St., Annapolis, MD 21401",
+    "phone": "410-841-3612",
+    "email": "charles.sydnor@senate.maryland.gov",
+    "website": "https://mgaleg.maryland.gov/mgawebsite/Members/Details/sydnor02"
+  },
+  "bio": "Charles Sydnor serves as State Senator for Maryland Senate District 44. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "MD",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://mgaleg.maryland.gov/mgawebsite/Members/Details/sydnor02"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/md/legislature/III-Charles-E-Sydnor-a111b899-ab75-4934-a6e9-a9c8be9bc70d.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "http://mgaleg.maryland.gov/2021RS/images/sydnor02.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Charles_E._Sydnor_III"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Charles_E._Sydnor_III"
+    },
+    {
+      "title": "Public source",
+      "url": "https://mgaleg.maryland.gov/webmga/frmMain.aspx?pid=sponpage&tab=subject6&id=sydnor01&stab=01"
+    },
+    {
+      "title": "Public source",
+      "url": "https://msa.maryland.gov/msa/mdmanual/05sen/html/msa17081.html"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/charles-e-sydnor-iii-ba07591"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

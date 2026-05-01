@@ -1,0 +1,72 @@
+{
+  "id": "abdelnasser-rashid",
+  "name": "Abdelnasser Rashid",
+  "firstName": "Abdelnasser",
+  "lastName": "Rashid",
+  "photo": "/images/officials/state-legislature/il/abdelnasser-rashid.jpg",
+  "photoSourceUrl": "https://cdn.ilga.gov/assets/img/members/{48E00B1D-C5BE-4210-A9A8-F68739D935D6}.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-21",
+  "jurisdiction": "Illinois House of Representatives",
+  "county": [
+    "Illinois"
+  ],
+  "termStart": "2023-01-11",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 266-S, Stratton Office Building, Springfield, IL 62706",
+    "phone": "217-782-5280",
+    "email": "office@reprashid.com",
+    "website": "https://ilga.gov/house/Rep.asp?GA=103&MemberID=3229"
+  },
+  "bio": "Abdelnasser Rashid serves as State Representative for Illinois House of Representatives District 21. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "IL",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://ilga.gov/house/Rep.asp?GA=103&MemberID=3229"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/il/legislature/Abdelnasser-Rashid-4101db1f-a913-4d16-88fb-001f120bb092.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://cdn.ilga.gov/assets/img/members/{48E00B1D-C5BE-4210-A9A8-F68739D935D6}.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Abdelnasser_Rashid"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Abdelnasser_Rashid"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ilga.gov/house/default.asp?GA=103"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/204427/abdelnasser-rashid"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.ilga.gov/House/Members/Details/3420"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.ilga.gov/house/Rep.asp?GA=103&MemberID=3229"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.ilga.gov/house/Rep.asp?MemberID=3420"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

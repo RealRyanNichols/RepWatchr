@@ -1,0 +1,72 @@
+{
+  "id": "linda-rogers",
+  "name": "Linda Rogers",
+  "firstName": "Linda",
+  "lastName": "Rogers",
+  "photo": "/images/officials/state-legislature/in/linda-rogers.jpg",
+  "photoSourceUrl": "https://cdn.zephyrcms.com/754a99ca-bab6-488b-88e1-a9e1a9d29d7c/-/progressive/yes/-/format/jpeg/-/scale_crop/200x300/center/-/stretch/off/rogers-website.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-11",
+  "jurisdiction": "Indiana Senate",
+  "county": [
+    "Indiana"
+  ],
+  "termStart": "2018-11-07",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "200 W. Washington St., Indianapolis, IN 46204",
+    "phone": "317-232-9400",
+    "email": "s11@iga.in.gov",
+    "website": "https://iga.in.gov/legislative/2021/legislators/legislator_linda_rogers_1"
+  },
+  "bio": "Linda Rogers serves as State Senator for Indiana Senate District 11. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "IN",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://iga.in.gov/legislative/2021/legislators/legislator_linda_rogers_1"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/in/legislature/Linda-Rogers-b5f001ff-6e60-49b9-b074-bb83139410b4.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://cdn.zephyrcms.com/754a99ca-bab6-488b-88e1-a9e1a9d29d7c/-/progressive/yes/-/format/jpeg/-/scale_crop/200x300/center/-/stretch/off/rogers-website.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://api.iga.in.gov/2021/legislators/linda_rogers_1"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Linda_Rogers"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Linda_Rogers_(politician)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://iga.in.gov/legislative/2022/legislators/legislator_linda_rogers_1"
+    },
+    {
+      "title": "Public source",
+      "url": "https://iga.in.gov/legislative/2022/legislators/legislator_linda_rogers_1/"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/178159/linda-rogers"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.indianasenaterepublicans.com/rogers"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

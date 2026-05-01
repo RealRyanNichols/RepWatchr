@@ -1,0 +1,72 @@
+{
+  "id": "norma-hernandez",
+  "name": "Norma Hernandez",
+  "firstName": "Norma",
+  "lastName": "Hernandez",
+  "photo": "/images/officials/state-legislature/il/norma-hernandez.jpg",
+  "photoSourceUrl": "https://cdn.ilga.gov/assets/img/members/{3E520E2E-5D7A-491B-9744-0F0137816162}.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-77",
+  "jurisdiction": "Illinois House of Representatives",
+  "county": [
+    "Illinois"
+  ],
+  "termStart": "2023-01-11",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 251-E, Stratton Office Building, Springfield, IL 62706",
+    "phone": "217-782-3374",
+    "email": "district@repnormahernandez.com",
+    "website": "https://ilga.gov/house/Rep.asp?GA=103&MemberID=3224"
+  },
+  "bio": "Norma Hernandez serves as State Representative for Illinois House of Representatives District 77. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "IL",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://ilga.gov/house/Rep.asp?GA=103&MemberID=3224"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/il/legislature/Norma-Hernandez-c0d6eed8-422f-4e17-a4df-5e546b704e91.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://cdn.ilga.gov/assets/img/members/{3E520E2E-5D7A-491B-9744-0F0137816162}.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Norma_Hernandez_(Illinois)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Norma_Hernandez"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ilga.gov/house/default.asp?GA=103"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/204480/norma-hernandez"
+    },
+    {
+      "title": "Public source",
+      "url": "https://repnormahernandez.com"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.ilga.gov/House/Members/Details/3415"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.ilga.gov/house/Rep.asp?GA=103&MemberID=3224"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

@@ -1,0 +1,61 @@
+{
+  "id": "ryan-fazio",
+  "name": "Ryan Fazio",
+  "firstName": "Ryan",
+  "lastName": "Fazio",
+  "party": "R",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-36",
+  "jurisdiction": "Connecticut Senate",
+  "county": [
+    "Connecticut"
+  ],
+  "termStart": "2021-08-26",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 2803, Legislative Office Building 300 Capitol Ave., Hartford, CT 06106",
+    "phone": "860-240-8800",
+    "email": "ryan.fazio@cga.ct.gov",
+    "website": "https://cga.ct.gov/asp/CGABillStatus/CGAMemberBills.asp?dist_code=%27S36%27&dist_name=Fazio,%20Ryan"
+  },
+  "bio": "Ryan Fazio serves as State Senator for Connecticut Senate District 36. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "CT",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://cga.ct.gov/asp/CGABillStatus/CGAMemberBills.asp?dist_code=%27S36%27&dist_name=Fazio,%20Ryan"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ct/legislature/Ryan-Fazio-c5800b0c-c84a-4e63-83fa-8aaad9b6535f.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "ftp://ftp.cga.ct.gov/pub/data/LegislatorDatabase.csv"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Ryan_Fazio"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ctsenaterepublicans.com/home-fazio"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ctsenaterepublicans.com/home-fazio/"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Ryan_Fazio"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/ryan-fazio-4209251ab"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

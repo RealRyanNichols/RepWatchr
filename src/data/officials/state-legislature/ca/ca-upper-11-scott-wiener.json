@@ -1,0 +1,72 @@
+{
+  "id": "scott-wiener",
+  "name": "Scott Wiener",
+  "firstName": "Scott",
+  "lastName": "Wiener",
+  "photo": "/images/officials/state-legislature/ca/scott-wiener.jpg",
+  "photoSourceUrl": "https://www.senate.ca.gov/sites/senate.ca.gov/files/senator_photos/wiener.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-11",
+  "jurisdiction": "California Senate",
+  "county": [
+    "California"
+  ],
+  "termStart": "2016-12-05",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "1021 O St. Suite 8620, Sacramento, CA 95814",
+    "phone": "916-651-4011",
+    "email": "senator.wiener@senate.ca.gov",
+    "website": "https://sd11.senate.ca.gov/"
+  },
+  "bio": "Scott Wiener serves as State Senator for California Senate District 11. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "CA",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://sd11.senate.ca.gov/"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ca/legislature/Scott-D-Wiener-de84277e-1c23-4036-bd64-b27c310a1c0e.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://www.senate.ca.gov/sites/senate.ca.gov/files/senator_photos/wiener.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Scott_Wiener"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Scott_Wiener"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/129655/scott-wiener"
+    },
+    {
+      "title": "Public source",
+      "url": "https://sd11.senate.ca.gov"
+    },
+    {
+      "title": "Public source",
+      "url": "https://senate.ca.gov/senators"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/scott-wiener-936760"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.senate.ca.gov/senators"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

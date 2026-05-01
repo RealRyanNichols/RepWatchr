@@ -1,0 +1,40 @@
+{
+  "id": "andy-beshear",
+  "name": "Andy Beshear",
+  "firstName": "Andy",
+  "lastName": "Beshear",
+  "party": "D",
+  "level": "state",
+  "position": "Governor",
+  "district": "Kentucky",
+  "jurisdiction": "Kentucky statewide public office",
+  "county": [
+    "Kentucky"
+  ],
+  "termStart": "2019-12-10",
+  "termEnd": "2027-12-14",
+  "contactInfo": {
+    "office": "700 Capitol Avenue, Suite 100; Frankfort, Kentucky 40601",
+    "phone": "502-564-2611",
+    "website": "https://governor.ky.gov/",
+    "socialMedia": {
+      "x": "https://x.com/govandybeshear",
+      "twitter": "https://x.com/govandybeshear"
+    }
+  },
+  "bio": "Andy Beshear is listed as Governor for Kentucky. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "KY",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://governor.ky.gov/"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ky/executive/Andy-Beshear-c7dbc1b4-67fb-4bb2-b1c5-cc5ef9356a5a.yml"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

@@ -1,0 +1,72 @@
+{
+  "id": "marjorie-smith",
+  "name": "Marjorie Smith",
+  "firstName": "Marjorie",
+  "lastName": "Smith",
+  "photo": "/images/officials/state-legislature/nh/marjorie-smith.jpg",
+  "photoSourceUrl": "https://storage.googleapis.com/enview-dev-public-general/legislative-people-photos/45370.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-Strafford 10",
+  "jurisdiction": "New Hampshire House of Representatives",
+  "county": [
+    "New Hampshire"
+  ],
+  "termStart": "2022-12-07",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "State House 107 N. Main St., Concord, NH 03301",
+    "phone": "603-271-3661",
+    "email": "msmithpen@aol.com",
+    "website": "https://gc.nh.gov/house/members/member.aspx?member=376166"
+  },
+  "bio": "Marjorie Smith serves as State Representative for New Hampshire House of Representatives District Strafford 10. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "NH",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://gc.nh.gov/house/members/member.aspx?member=376166"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/nh/legislature/Marjorie-K-Smith-86b31d04-3a4b-4199-b10e-27bd337f0a34.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://storage.googleapis.com/enview-dev-public-general/legislative-people-photos/45370.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Marjorie_Smith"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Marjorie_Smith"
+    },
+    {
+      "title": "Public source",
+      "url": "https://gencourt.state.nh.us/downloads/Members.txt"
+    },
+    {
+      "title": "Public source",
+      "url": "https://gencourt.state.nh.us/downloads/members.txt"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/14725/marjorie-smith"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.gencourt.state.nh.us/downloads/Members.txt"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.gencourt.state.nh.us/house/members/member.aspx?member=376166"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

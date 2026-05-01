@@ -1,0 +1,72 @@
+{
+  "id": "tom-stanley",
+  "name": "Tom Stanley",
+  "firstName": "Tom",
+  "lastName": "Stanley",
+  "photo": "/images/officials/state-legislature/ma/tom-stanley.jpg",
+  "photoSourceUrl": "https://malegislature.gov/Legislators/Profile/170/TMS1.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-9th Middlesex",
+  "jurisdiction": "Massachusetts House of Representatives",
+  "county": [
+    "Massachusetts"
+  ],
+  "termStart": "2011-01-01",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 167, State House 24 Beacon St., Boston, MA 02133",
+    "phone": "617-722-2810",
+    "email": "thomas.stanley@mahouse.gov",
+    "website": "https://malegislature.gov/Legislators/Profile/TMS1"
+  },
+  "bio": "Tom Stanley serves as State Representative for Massachusetts House of Representatives District 9th Middlesex. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "MA",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://malegislature.gov/Legislators/Profile/TMS1"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ma/legislature/Thomas-M-Stanley-2becbe4e-5b5e-4b42-be87-b4abf57550c7.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://malegislature.gov/Legislators/Profile/170/TMS1.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Thomas_Stanley"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Thomas_M._Stanley"
+    },
+    {
+      "title": "Public source",
+      "url": "https://malegislature.gov/api/GeneralCourts/192/LegislativeMembers"
+    },
+    {
+      "title": "Public source",
+      "url": "https://malegislature.gov/api/GeneralCourts/192/LegislativeMembers/"
+    },
+    {
+      "title": "Public source",
+      "url": "https://malegislature.gov/api/GeneralCourts/192/LegislativeMembers/TMS1"
+    },
+    {
+      "title": "Public source",
+      "url": "https://malegislature.gov/api/GeneralCourts/193/LegislativeMembers"
+    },
+    {
+      "title": "Public source",
+      "url": "https://malegislature.gov/api/GeneralCourts/193/LegislativeMembers/"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

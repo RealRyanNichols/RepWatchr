@@ -1,0 +1,64 @@
+{
+  "id": "anne-healey",
+  "name": "Anne Healey",
+  "firstName": "Anne",
+  "lastName": "Healey",
+  "photo": "/images/officials/state-legislature/md/anne-healey.jpg",
+  "photoSourceUrl": "https://mgaleg.maryland.gov/2025RS/images/healey.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "Delegate",
+  "district": "HD-22",
+  "jurisdiction": "Maryland House of Delegates",
+  "county": [
+    "Maryland"
+  ],
+  "termStart": "1991-01-09",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 361, Taylor House Office Building 6 Bladen St., Annapolis, MD 21401",
+    "phone": "410-841-3961",
+    "email": "anne.healey@house.maryland.gov",
+    "website": "https://mgaleg.maryland.gov/mgawebsite/Members/Details/healey"
+  },
+  "bio": "Anne Healey serves as Delegate for Maryland House of Delegates District 22. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "MD",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://mgaleg.maryland.gov/mgawebsite/Members/Details/healey"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/md/legislature/Anne-Healey-7bcb723d-68c2-4826-acab-0437aa27471f.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://mgaleg.maryland.gov/2025RS/images/healey.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Anne_Healey"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Anne_Healey"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/6158/anne-healey"
+    },
+    {
+      "title": "Public source",
+      "url": "https://mgaleg.maryland.gov/webmga/frmMain.aspx?pid=sponpage&tab=subject6&id=healey&stab=01"
+    },
+    {
+      "title": "Public source",
+      "url": "https://msa.maryland.gov/msa/mdmanual/06hse/html/msa12238.html"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

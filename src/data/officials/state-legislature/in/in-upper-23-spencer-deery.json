@@ -1,0 +1,64 @@
+{
+  "id": "spencer-deery",
+  "name": "Spencer Deery",
+  "firstName": "Spencer",
+  "lastName": "Deery",
+  "photo": "/images/officials/state-legislature/in/spencer-deery.jpg",
+  "photoSourceUrl": "https://cdn.zephyrcms.com/d1a172a6-548d-4c74-9d9d-ea2f1bab1443/-/progressive/yes/-/format/jpeg/-/scale_crop/200x300/center/-/stretch/off/derry-website.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-23",
+  "jurisdiction": "Indiana Senate",
+  "county": [
+    "Indiana"
+  ],
+  "termStart": "2022-11-09",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "200 W. Washington St., Indianapolis, IN 46204",
+    "phone": "800-382-9467",
+    "email": "s23@iga.in.gov",
+    "website": "https://www.indianasenaterepublicans.com/deery"
+  },
+  "bio": "Spencer Deery serves as State Senator for Indiana Senate District 23. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "IN",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.indianasenaterepublicans.com/deery"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/in/legislature/Spencer-Deery-5f8f629e-daed-4a92-ab9b-98c4127d8a0e.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://cdn.zephyrcms.com/d1a172a6-548d-4c74-9d9d-ea2f1bab1443/-/progressive/yes/-/format/jpeg/-/scale_crop/200x300/center/-/stretch/off/derry-website.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Spencer_Deery"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Spencer_Deery"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/201932/spencer-deery"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.indianasenaterepublicans.com/senators"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/spencerdeery"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

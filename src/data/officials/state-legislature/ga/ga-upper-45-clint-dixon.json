@@ -1,0 +1,69 @@
+{
+  "id": "clint-dixon",
+  "name": "Clint Dixon",
+  "firstName": "Clint",
+  "lastName": "Dixon",
+  "party": "R",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-45",
+  "jurisdiction": "Georgia Senate",
+  "county": [
+    "Georgia"
+  ],
+  "termStart": "2021-01-11",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "State Capitol Room 421-A, 206 Washington St. SW, Atlanta, GA 30334",
+    "phone": "404-463-2518",
+    "email": "clint.dixon@senate.ga.gov",
+    "website": "https://www.legis.ga.gov/members/senate"
+  },
+  "bio": "Clint Dixon serves as State Senator for Georgia Senate District 45. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "GA",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.legis.ga.gov/members/senate"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ga/legislature/Clint-Dixon-17a7e011-73f2-4ac5-8470-3436b47a6744.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Clint_Dixon"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Clint_Dixon"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/190326/clint-dixon"
+    },
+    {
+      "title": "Detail page (requires authorization token)",
+      "url": "https://www.legis.ga.gov/api/members/detail/4982?session=1029&chamber=2"
+    },
+    {
+      "title": "API member detail (requires authorization token)",
+      "url": "https://www.legis.ga.gov/api/members/detail/4982?session=1031&chamber=2"
+    },
+    {
+      "title": "API members list (requires authorization token)",
+      "url": "https://www.legis.ga.gov/api/members/list/1031"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.legis.ga.gov/members/senate/4982"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.legis.ga.gov/members/senate/4982?session=1029"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

@@ -1,0 +1,64 @@
+{
+  "id": "alex-burton",
+  "name": "Alex Burton",
+  "firstName": "Alex",
+  "lastName": "Burton",
+  "photo": "/images/officials/state-legislature/in/alex-burton.jpg",
+  "photoSourceUrl": "https://s3.amazonaws.com/ballotpedia-api4/files/thumbs/200/300/AlexBurton2024.jpeg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-77",
+  "jurisdiction": "Indiana House of Representatives",
+  "county": [
+    "Indiana"
+  ],
+  "termStart": "2024-11-06",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "200 W. Washington St., Indianapolis, IN 46204",
+    "phone": "800-382-9842",
+    "email": "h77@iga.in.gov",
+    "website": "https://iga.in.gov/legislative/2026/legislators/legislator_alex_burton_1"
+  },
+  "bio": "Alex Burton serves as State Representative for Indiana House of Representatives District 77. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "IN",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://iga.in.gov/legislative/2026/legislators/legislator_alex_burton_1"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/in/legislature/Alex-Burton-ea9905ae-ca94-4184-853c-d7d622dd46ee.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://s3.amazonaws.com/ballotpedia-api4/files/thumbs/200/300/AlexBurton2024.jpeg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Alex_Burton"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Alex_Burton_(politician)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://indianahousedemocrats.org/members/alex-burton"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/198634/alex-burton"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/alexander-burton-63550661"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

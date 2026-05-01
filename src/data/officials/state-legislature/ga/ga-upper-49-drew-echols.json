@@ -1,0 +1,60 @@
+{
+  "id": "drew-echols",
+  "name": "Drew Echols",
+  "firstName": "Drew",
+  "lastName": "Echols",
+  "photo": "/images/officials/state-legislature/ga/drew-echols.jpg",
+  "photoSourceUrl": "https://www.gfpe.org/library/imglib/Drew-Echols-1.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-49",
+  "jurisdiction": "Georgia Senate",
+  "county": [
+    "Georgia"
+  ],
+  "termStart": "2025-01-13",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 305-B, Coverdell Legislative Office Building 18 Capitol Square SW, Atlanta, GA 30334",
+    "phone": "404-463-3931",
+    "email": "drew.echols@senate.ga.gov",
+    "website": "https://www.legis.ga.gov/members/senate/5067"
+  },
+  "bio": "Drew Echols serves as State Senator for Georgia Senate District 49. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "GA",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.legis.ga.gov/members/senate/5067"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ga/legislature/Drew-Echols-6be704ef-6250-4e08-86d3-f5fa2e1eebf3.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://www.gfpe.org/library/imglib/Drew-Echols-1.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Drew_Echols"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Drew_Echols"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/215152/drew-echols"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/drew-echols-8214476a"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

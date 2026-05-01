@@ -1,0 +1,64 @@
+{
+  "id": "loren-selig",
+  "name": "Loren Selig",
+  "firstName": "Loren",
+  "lastName": "Selig",
+  "photo": "/images/officials/state-legislature/nh/loren-selig.jpg",
+  "photoSourceUrl": "https://s3.amazonaws.com/ballotpedia-api4/files/thumbs/200/300/Loren_Selig.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-Strafford 10",
+  "jurisdiction": "New Hampshire House of Representatives",
+  "county": [
+    "New Hampshire"
+  ],
+  "termStart": "2022-12-07",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "State House 107 N. Main St., Concord, NH 03301",
+    "phone": "603-271-3661",
+    "email": "loren.selig@gc.nh.gov",
+    "website": "https://gc.nh.gov/house/members/member.aspx?pid=10896"
+  },
+  "bio": "Loren Selig serves as State Representative for New Hampshire House of Representatives District Strafford 10. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "NH",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://gc.nh.gov/house/members/member.aspx?pid=10896"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/nh/legislature/Loren-Selig-a35a4483-879d-4dd2-889e-57a576e56acc.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://s3.amazonaws.com/ballotpedia-api4/files/thumbs/200/300/Loren_Selig.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Loren_Selig"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Loren_Selig"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/208950/loren-selig"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.gencourt.state.nh.us/house/members/member.aspx?pid=10896"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/lorenselig"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

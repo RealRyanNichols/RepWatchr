@@ -1,0 +1,64 @@
+{
+  "id": "tom-woods",
+  "name": "Tom Woods",
+  "firstName": "Tom",
+  "lastName": "Woods",
+  "photo": "/images/officials/state-legislature/ok/tom-woods.jpg",
+  "photoSourceUrl": "https://oksenate.gov/sites/default/files/Woods%2C%20Tom%20Flags%202022.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-4",
+  "jurisdiction": "Oklahoma Senate",
+  "county": [
+    "Oklahoma"
+  ],
+  "termStart": "2022-11-23",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 526, 2300 N. Lincoln Blvd., Oklahoma City, OK 73105",
+    "phone": "405-521-5576",
+    "email": "tom.woods@oksenate.gov",
+    "website": "https://oksenate.gov/contact-senator?sid=1523280"
+  },
+  "bio": "Tom Woods serves as State Senator for Oklahoma Senate District 4. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "OK",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://oksenate.gov/contact-senator?sid=1523280"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ok/legislature/Tom-Woods-9b993707-70c1-4e3f-96ee-4257c0cf04e6.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://oksenate.gov/sites/default/files/Woods%2C%20Tom%20Flags%202022.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Tom_Woods_(Oklahoma)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Tom_Woods_(Oklahoma_politician)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/206329/tom-woods"
+    },
+    {
+      "title": "Public source",
+      "url": "https://oksenate.gov/senators/tom-woods"
+    },
+    {
+      "title": "Public source",
+      "url": "https://tomwoodsok.com/about"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

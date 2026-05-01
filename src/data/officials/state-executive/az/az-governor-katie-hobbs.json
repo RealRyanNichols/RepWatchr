@@ -1,0 +1,43 @@
+{
+  "id": "katie-hobbs",
+  "name": "Katie Hobbs",
+  "firstName": "Katie",
+  "lastName": "Hobbs",
+  "photo": "/images/officials/state-executive/az/katie-hobbs.jpg",
+  "photoSourceUrl": "https://azgovernor.gov/sites/default/files/styles/panopoly_image_original/public/governor-katie-hobbs_0_0_0.jpeg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "Governor",
+  "district": "Arizona",
+  "jurisdiction": "Arizona statewide public office",
+  "county": [
+    "Arizona"
+  ],
+  "termStart": "2023-01-02",
+  "termEnd": "2027-01-04",
+  "contactInfo": {
+    "office": "Office of the Governor; 1700 W. Washington St., Phoenix, AZ 85007",
+    "phone": "602-542-4331",
+    "website": "https://azgovernor.gov/"
+  },
+  "bio": "Katie Hobbs is listed as Governor for Arizona. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "AZ",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://azgovernor.gov/"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/az/executive/Katie-Hobbs-6e522a2a-e7b7-4713-a40f-c897e4341a87.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://azgovernor.gov/sites/default/files/styles/panopoly_image_original/public/governor-katie-hobbs_0_0_0.jpeg"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

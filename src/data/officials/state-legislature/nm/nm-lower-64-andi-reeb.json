@@ -1,0 +1,60 @@
+{
+  "id": "andi-reeb",
+  "name": "Andi Reeb",
+  "firstName": "Andi",
+  "lastName": "Reeb",
+  "photo": "/images/officials/state-legislature/nm/andi-reeb.jpg",
+  "photoSourceUrl": "https://www.nmlegis.gov/Images/Legislators/House/HREEB.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-64",
+  "jurisdiction": "New Mexico House of Representatives",
+  "county": [
+    "New Mexico"
+  ],
+  "termStart": "2023-01-01",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "State Capitol Room 201A, New Mexico  490 Old Santa Fe Trail, Santa Fe, NM 87501",
+    "phone": "505-986-4215",
+    "email": "andrea.reeb@nmlegis.gov",
+    "website": "https://www.nmlegis.gov/Members/Legislator?SponCode=HREEB"
+  },
+  "bio": "Andi Reeb serves as State Representative for New Mexico House of Representatives District 64. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "NM",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.nmlegis.gov/Members/Legislator?SponCode=HREEB"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/nm/legislature/Andrea-Reeb-c4caca3c-faa3-445f-91e0-cce9edd53a5a.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://www.nmlegis.gov/Images/Legislators/House/HREEB.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://andreareeb.com/meet-andrea"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Andrea_Reeb"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Andrea_Reeb"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.nmlegis.gov/Members/Legislator_List?T=R"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

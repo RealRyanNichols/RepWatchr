@@ -1,0 +1,61 @@
+{
+  "id": "bill-hager",
+  "name": "Bill Hager",
+  "firstName": "Bill",
+  "lastName": "Hager",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-122",
+  "jurisdiction": "South Carolina House of Representatives",
+  "county": [
+    "South Carolina"
+  ],
+  "termStart": "2022-11-14",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 432D, Blatt Building P.O. Box 11867, Columbia, SC 29201",
+    "phone": "803-212-6974",
+    "email": "billhager@schouse.gov",
+    "website": "https://scstatehouse.gov/member.php?code=0733948776"
+  },
+  "bio": "Bill Hager serves as State Representative for South Carolina House of Representatives District 122. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "SC",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://scstatehouse.gov/member.php?code=0733948776"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/sc/legislature/William-Winston-Bill-Hager-066a2879-ab95-4082-803d-9c4dd582f04e.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Bill_Hager_(South_Carolina)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Bill_Hager_(South_Carolina_politician)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/205508/bill-hager"
+    },
+    {
+      "title": "Public source",
+      "url": "https://scstatehouse.gov/member.php?chamber=H"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/bill-hager-5a42467"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.scstatehouse.gov/member.php?code=0733948776"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

@@ -1,0 +1,72 @@
+{
+  "id": "tandy-darby",
+  "name": "Tandy Darby",
+  "firstName": "Tandy",
+  "lastName": "Darby",
+  "photo": "/images/officials/state-legislature/tn/tandy-darby.jpg",
+  "photoSourceUrl": "http://www.capitol.tn.gov/house/members/images/h76.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-76",
+  "jurisdiction": "Tennessee House of Representatives",
+  "county": [
+    "Tennessee"
+  ],
+  "termStart": "2020-11-03",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 676, Cordell Hull Building 425 Rep. John Lewis Way North, Nashville, TN 37243",
+    "phone": "615-741-7847",
+    "email": "rep.tandy.darby@capitol.tn.gov",
+    "website": "https://tnhousegop.org/members/representative-tandy-darby/"
+  },
+  "bio": "Tandy Darby serves as State Representative for Tennessee House of Representatives District 76. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "TN",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://tnhousegop.org/members/representative-tandy-darby/"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/tn/legislature/Tandy-Darby-5cec9957-0b24-47d0-94b6-6f41e8f259bc.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "http://www.capitol.tn.gov/house/members/images/h76.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Tandy_Darby"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Tandy_Darby"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/193487/tandy-darby"
+    },
+    {
+      "title": "Public source",
+      "url": "https://tnhousegop.org/members/representative-tandy-darby"
+    },
+    {
+      "title": "Public source",
+      "url": "https://wapp.capitol.tn.gov/apps/LegislatorInfo/directory.aspx?chamber=H"
+    },
+    {
+      "title": "Public source",
+      "url": "https://wapp.capitol.tn.gov/apps/legislatorinfo/member.aspx?district=H76"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.capitol.tn.gov/house/members"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

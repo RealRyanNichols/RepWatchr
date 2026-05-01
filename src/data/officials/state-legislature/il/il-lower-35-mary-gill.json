@@ -1,0 +1,72 @@
+{
+  "id": "mary-gill",
+  "name": "Mary Gill",
+  "firstName": "Mary",
+  "lastName": "Gill",
+  "photo": "/images/officials/state-legislature/il/mary-gill.jpg",
+  "photoSourceUrl": "https://cdn.ilga.gov/assets/img/members/{28C54907-9CC9-428D-BD6B-361B91A10441}.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-35",
+  "jurisdiction": "Illinois House of Representatives",
+  "county": [
+    "Illinois"
+  ],
+  "termStart": "2023-03-28",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 258-W, Stratton Office Building, Springfield, IL 62706",
+    "phone": "217-782-8200",
+    "email": "repmarygill@gmail.com",
+    "website": "https://ilga.gov/house/Rep.asp?GA=103&MemberID=3251"
+  },
+  "bio": "Mary Gill serves as State Representative for Illinois House of Representatives District 35. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "IL",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://ilga.gov/house/Rep.asp?GA=103&MemberID=3251"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/il/legislature/Mary-Gill-f2231f6c-1ed7-4106-8909-1d87557b2f04.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://cdn.ilga.gov/assets/img/members/{28C54907-9CC9-428D-BD6B-361B91A10441}.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Mary_Gill_(Illinois_House_of_Representatives)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Mary_Gill_(Illinois_politician)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ilga.gov/house/default.asp?GA=103"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/212029/mary-gill"
+    },
+    {
+      "title": "Public source",
+      "url": "https://repmarygill.com"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.ilga.gov/House/Members/Details/3440"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.ilga.gov/house/Rep.asp?GA=103&MemberID=3251"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

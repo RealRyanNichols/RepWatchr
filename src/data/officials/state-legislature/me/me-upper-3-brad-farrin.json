@@ -1,0 +1,72 @@
+{
+  "id": "brad-farrin",
+  "name": "Brad Farrin",
+  "firstName": "Brad",
+  "lastName": "Farrin",
+  "photo": "/images/officials/state-legislature/me/brad-farrin.jpg",
+  "photoSourceUrl": "https://legislature.maine.gov/uploads/visual_edit/farrin-bradlee-1.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-3",
+  "jurisdiction": "Maine Senate",
+  "county": [
+    "Maine"
+  ],
+  "termStart": "2018-12-05",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "3 State House Station, Augusta, ME 04333",
+    "phone": "207-287-1505",
+    "email": "brad.farrin@legislature.maine.gov",
+    "website": "https://legislature.maine.gov/District-3"
+  },
+  "bio": "Brad Farrin serves as State Senator for Maine Senate District 3. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "ME",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://legislature.maine.gov/District-3"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/me/legislature/Bradlee-Farrin-72193c8f-2b94-4e56-bff4-482bde6037eb.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://legislature.maine.gov/uploads/visual_edit/farrin-bradlee-1.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Bradlee_Farrin"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Bradlee_Farrin"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/151396/bradlee-farrin"
+    },
+    {
+      "title": "Public source",
+      "url": "https://legislature.maine.gov/district3"
+    },
+    {
+      "title": "Public source",
+      "url": "https://legislature.maine.gov/District3"
+    },
+    {
+      "title": "Public source",
+      "url": "https://legislature.maine.gov/uploads/visual_edit/130th-senate-contact-information-as-of-31221.xlsx"
+    },
+    {
+      "title": "Public source",
+      "url": "https://legislature.maine.gov/uploads/visual_edit/131-senator-contact-information-2.xlsx"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

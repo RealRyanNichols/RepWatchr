@@ -1,0 +1,77 @@
+{
+  "id": "greg-taylor",
+  "name": "Greg Taylor",
+  "firstName": "Greg",
+  "lastName": "Taylor",
+  "photo": "/images/officials/state-legislature/in/greg-taylor.jpg",
+  "photoSourceUrl": "https://indianasenatedemocrats.org/wp-content/uploads/2020/12/Senator-Taylor.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-33",
+  "jurisdiction": "Indiana Senate",
+  "county": [
+    "Indiana"
+  ],
+  "termStart": "2008-11-05",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "200 W. Washington St., Indianapolis, IN 46204",
+    "phone": "317-232-9432",
+    "email": "s33@iga.in.gov",
+    "website": "https://iga.in.gov/legislative/2021/legislators/legislator_greg_taylor_976",
+    "socialMedia": {
+      "x": "https://x.com/sen_gregtaylor",
+      "twitter": "https://x.com/sen_gregtaylor",
+      "facebook": "https://facebook.com/SenGregTaylor"
+    }
+  },
+  "bio": "Greg Taylor serves as State Senator for Indiana Senate District 33. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "IN",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://iga.in.gov/legislative/2021/legislators/legislator_greg_taylor_976"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/in/legislature/Greg-Taylor-39798614-3cb2-40b7-adad-4f5c53ff59e5.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://indianasenatedemocrats.org/wp-content/uploads/2020/12/Senator-Taylor.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://api.iga.in.gov/2021/legislators/greg_taylor_976"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Greg_Taylor_(Indiana)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Greg_Taylor_(politician)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://iga.in.gov/legislative/2022/legislators/legislator_greg_taylor_976"
+    },
+    {
+      "title": "Public source",
+      "url": "https://iga.in.gov/legislative/2022/legislators/legislator_greg_taylor_976/"
+    },
+    {
+      "title": "Public source",
+      "url": "https://indianasenatedemocrats.org/senators/s33"
+    },
+    {
+      "title": "Public source",
+      "url": "https://mwhlawgroup.com/attorneys/gregory-g-taylor"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

@@ -1,0 +1,69 @@
+{
+  "id": "yasmin-trudeau",
+  "name": "Yasmin Trudeau",
+  "firstName": "Yasmin",
+  "lastName": "Trudeau",
+  "party": "D",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-27",
+  "jurisdiction": "Washington Senate",
+  "county": [
+    "Washington"
+  ],
+  "termStart": "2021-11-02",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 227, John A. Cherberg Building P.O. Box 40427, Olympia, WA 98504",
+    "phone": "360-786-7652",
+    "email": "yasmin.trudeau@leg.wa.gov",
+    "website": "https://leg.wa.gov/legislators/member/yasmin-trudeau"
+  },
+  "bio": "Yasmin Trudeau serves as State Senator for Washington Senate District 27. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "WA",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://leg.wa.gov/legislators/member/yasmin-trudeau"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/wa/legislature/Yasmin-Trudeau-28de7c48-9b66-4597-a15f-ce7b132fba5a.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://app.leg.wa.gov/ContentParts/MemberDirectory/?a=Senate"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Yasmin_Trudeau"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Yasmin_Trudeau"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/200579/yasmin-trudeau"
+    },
+    {
+      "title": "Public source",
+      "url": "https://senatedemocrats.wa.gov/trudeau"
+    },
+    {
+      "title": "Public source",
+      "url": "https://senatedemocrats.wa.gov/trudeau/"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/yasmin-christopher-trudeau-08a66437"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/yasmin-trudeau-08a66437"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

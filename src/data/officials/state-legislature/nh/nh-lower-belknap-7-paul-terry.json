@@ -1,0 +1,72 @@
+{
+  "id": "paul-terry",
+  "name": "Paul Terry",
+  "firstName": "Paul",
+  "lastName": "Terry",
+  "photo": "/images/officials/state-legislature/nh/paul-terry.jpg",
+  "photoSourceUrl": "https://paulterryfornh.com/wp-content/uploads/2020/06/Paul8.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-Belknap 7",
+  "jurisdiction": "New Hampshire House of Representatives",
+  "county": [
+    "New Hampshire"
+  ],
+  "termStart": "2022-12-07",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "State House 107 N. Main St., Concord, NH 03301",
+    "phone": "603-271-3661",
+    "email": "paul.terry@gc.nh.gov",
+    "website": "https://gc.nh.gov/house/members/member.aspx?pid=9866"
+  },
+  "bio": "Paul Terry serves as State Representative for New Hampshire House of Representatives District Belknap 7. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "NH",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://gc.nh.gov/house/members/member.aspx?pid=9866"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/nh/legislature/Paul-A-Terry-8488ba3a-e608-4f0d-9d7b-7e6e13244917.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://paulterryfornh.com/wp-content/uploads/2020/06/Paul8.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Paul_Terry"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Paul_Terry_(politician)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://gencourt.state.nh.us/downloads/Members.txt"
+    },
+    {
+      "title": "Public source",
+      "url": "https://gencourt.state.nh.us/downloads/members.txt"
+    },
+    {
+      "title": "Public source",
+      "url": "https://gencourt.state.nh.us/house/members/member.aspx?pid=9866"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/194687/paul-terry"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.gencourt.state.nh.us/house/members/member.aspx?pid=9866"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

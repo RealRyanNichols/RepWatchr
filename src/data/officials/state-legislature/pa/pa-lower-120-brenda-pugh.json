@@ -1,0 +1,56 @@
+{
+  "id": "brenda-pugh",
+  "name": "Brenda Pugh",
+  "firstName": "Brenda",
+  "lastName": "Pugh",
+  "photo": "/images/officials/state-legislature/pa/brenda-pugh.jpg",
+  "photoSourceUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSqVdrj2w84kNrKi7RN0poR6kywKVZcSV7m-g&s",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-120",
+  "jurisdiction": "Pennsylvania House of Representatives",
+  "county": [
+    "Pennsylvania"
+  ],
+  "termStart": "2024-12-01",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 423, Irvis Office Building P.O. Box 202120, Harrisburg, PA 17120",
+    "phone": "717-787-3798",
+    "email": "bpugh@pahousegop.com",
+    "website": "https://www.palegis.us/house/members/bio/2033/rep-pugh"
+  },
+  "bio": "Brenda Pugh serves as State Representative for Pennsylvania House of Representatives District 120. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "PA",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.palegis.us/house/members/bio/2033/rep-pugh"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/pa/legislature/Brenda-Pugh-e12dc574-f19b-4c9c-9a30-42b68371ea4a.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSqVdrj2w84kNrKi7RN0poR6kywKVZcSV7m-g&s"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Brenda_Pugh"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/214909/brenda-pugh"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/brenda-pugh-b9856230"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

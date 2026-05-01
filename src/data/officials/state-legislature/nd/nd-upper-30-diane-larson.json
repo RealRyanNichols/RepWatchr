@@ -1,0 +1,70 @@
+{
+  "id": "diane-larson",
+  "name": "Diane Larson",
+  "firstName": "Diane",
+  "lastName": "Larson",
+  "photo": "/images/officials/state-legislature/nd/diane-larson.jpg",
+  "photoSourceUrl": "https://www.ndlegis.gov/sites/default/files/styles/member_list_photo/public/person/photo/dlarson2023.jpg?itok=Yi-S-Uyp",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-30",
+  "jurisdiction": "North Dakota Senate",
+  "county": [
+    "North Dakota"
+  ],
+  "termStart": "2016-12-01",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "email": "dlarson@ndlegis.gov",
+    "website": "https://ndlegis.gov/biography/diane-larson"
+  },
+  "bio": "Diane Larson serves as State Senator for North Dakota Senate District 30. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "ND",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://ndlegis.gov/biography/diane-larson"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/nd/legislature/Diane-Larson-9844a188-809c-4711-8147-2c30206721ee.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://www.ndlegis.gov/sites/default/files/styles/member_list_photo/public/person/photo/dlarson2023.jpg?itok=Yi-S-Uyp"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Diane_Larson"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Diane_Larson"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.legis.nd.gov/assembly/65-2017/members/senate/senator-diane-larson"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.legis.nd.gov/assembly/66-2019/members/senate/senator-diane-larson"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.legis.nd.gov/assembly/67-2021/members/members-by-district"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.legis.nd.gov/assembly/67-2021/members/senate/senator-diane-larson"
+    },
+    {
+      "title": "members list page",
+      "url": "https://www.ndlegis.gov/assembly/68-2023/regular/members?combine=&field_legis_chamber_target_id=All&field_legis_district_target_id=All&field_legislator_party_target_id=All&page=4"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

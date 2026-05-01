@@ -1,0 +1,72 @@
+{
+  "id": "mark-mckenney",
+  "name": "Mark McKenney",
+  "firstName": "Mark",
+  "lastName": "McKenney",
+  "photo": "/images/officials/state-legislature/ri/mark-mckenney.jpg",
+  "photoSourceUrl": "https://www.rilegislature.gov/senators/Pictures/McKenney%202023.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-30",
+  "jurisdiction": "Rhode Island Senate",
+  "county": [
+    "Rhode Island"
+  ],
+  "termStart": "2023-01-03",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "82 Smith St., Providence, RI 02903",
+    "phone": "401-222-3580",
+    "email": "sen-mckenney@rilegislature.gov",
+    "website": "https://www.rilegislature.gov/senators/mckenney/Pages/Biography.aspx"
+  },
+  "bio": "Mark McKenney serves as State Senator for Rhode Island Senate District 30. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "RI",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.rilegislature.gov/senators/mckenney/Pages/Biography.aspx"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ri/legislature/Mark-P-McKenney-580b2e15-faff-4b83-bbea-fb6110a9f975.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://www.rilegislature.gov/senators/Pictures/McKenney%202023.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Mark_McKenney"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Mark_McKenney"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/173723/mark-mckenney"
+    },
+    {
+      "title": "Public source",
+      "url": "https://mce-law.com/attorneys/mark-p-mckenney"
+    },
+    {
+      "title": "Public source",
+      "url": "https://webserver.rilegislature.gov/Email/SenEmailListDistrict.asp"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/mark-mckenney-5aa4835"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.rilegislature.gov/SiteAssets/MailingLists/Representatives.xls"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

@@ -1,0 +1,65 @@
+{
+  "id": "meloyde-blancett",
+  "name": "Meloyde Blancett",
+  "firstName": "Meloyde",
+  "lastName": "Blancett",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-78",
+  "jurisdiction": "Oklahoma House of Representatives",
+  "county": [
+    "Oklahoma"
+  ],
+  "termStart": "2016-11-23",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 545, 2300 N. Lincoln Blvd., Oklahoma City, OK 73105",
+    "phone": "405-557-7334",
+    "email": "meloyde.blancett@okhouse.gov",
+    "website": "https://www.okhouse.gov/Members/Contact.aspx?District=78"
+  },
+  "bio": "Meloyde Blancett serves as State Representative for Oklahoma House of Representatives District 78. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "OK",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.okhouse.gov/Members/Contact.aspx?District=78"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ok/legislature/Meloyde-Blancett-e9c3844d-e861-4848-8737-539fdb553eb9.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Meloyde_Blancett"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Meloyde_Blancett"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/170914/meloyde-blancett"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/meloydeblancett"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.okhouse.gov/Members/Default.aspx"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.okhouse.gov/Members/District.aspx?District=78"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.okhouse.gov/representatives/meloyde-blancett"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

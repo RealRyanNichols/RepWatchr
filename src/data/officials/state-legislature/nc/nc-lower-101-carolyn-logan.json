@@ -1,0 +1,60 @@
+{
+  "id": "carolyn-logan",
+  "name": "Carolyn Logan",
+  "firstName": "Carolyn",
+  "lastName": "Logan",
+  "photo": "/images/officials/state-legislature/nc/carolyn-logan.jpg",
+  "photoSourceUrl": "https://www.ncleg.gov/Members/MemberImage/H/750/Low",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-101",
+  "jurisdiction": "North Carolina House of Representatives",
+  "county": [
+    "North Carolina"
+  ],
+  "termStart": "2019-01-01",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 503, Legislative Office Building 300 N. Salisbury St., Raleigh, NC 27603",
+    "phone": "919-715-2530",
+    "email": "carolyn.logan@ncleg.gov",
+    "website": "https://www.ncleg.gov/Members/Biography/H/750"
+  },
+  "bio": "Carolyn Logan serves as State Representative for North Carolina House of Representatives District 101. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "NC",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.ncleg.gov/Members/Biography/H/750"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/nc/legislature/Carolyn-G-Logan-80495071-4aea-43ff-9548-09860c77cc90.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://www.ncleg.gov/Members/MemberImage/H/750/Low"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Carolyn_Logan"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/178419/carolyn-logan"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/carolyn-logan-312a6768"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.ncleg.gov/Members/MemberTable/H"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

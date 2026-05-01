@@ -1,0 +1,60 @@
+{
+  "id": "tiffany-alston",
+  "name": "Tiffany Alston",
+  "firstName": "Tiffany",
+  "lastName": "Alston",
+  "photo": "/images/officials/state-legislature/md/tiffany-alston.jpg",
+  "photoSourceUrl": "https://mgaleg.maryland.gov/2023RS/images/alston01.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "Delegate",
+  "district": "HD-24",
+  "jurisdiction": "Maryland House of Delegates",
+  "county": [
+    "Maryland"
+  ],
+  "termStart": "2023-01-11",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 219, Lowe House Office Building 6 Bladen St., Annapolis, MD 21401",
+    "phone": "410-841-3139",
+    "email": "tiffany.alston@house.maryland.gov",
+    "website": "https://mgaleg.maryland.gov/mgawebsite/Members/Details/alston01"
+  },
+  "bio": "Tiffany Alston serves as Delegate for Maryland House of Delegates District 24. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "MD",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://mgaleg.maryland.gov/mgawebsite/Members/Details/alston01"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/md/legislature/Tiffany-T-Alston-bede8bef-3c7b-469d-809d-98ee3be92630.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://mgaleg.maryland.gov/2023RS/images/alston01.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Tiffany_Alston"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Tiffany_Alston"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/tiffany-alston-1572a23b"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.msa.md.gov/msa/mdmanual/06hse/html/msa15348.html"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

@@ -1,0 +1,56 @@
+{
+  "id": "paul-wickensimer",
+  "name": "Paul Wickensimer",
+  "firstName": "Paul",
+  "lastName": "Wickensimer",
+  "photo": "/images/officials/state-legislature/sc/paul-wickensimer.jpg",
+  "photoSourceUrl": "https://static.wixstatic.com/media/669915_0fcf6e9fdd9e484b959c5ec5b9c80ce2~mv2.jpg/v1/fill/w_489,h_982,al_l,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/669915_0fcf6e9fdd9e484b959c5ec5b9c80ce2~mv2.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-22",
+  "jurisdiction": "South Carolina House of Representatives",
+  "county": [
+    "South Carolina"
+  ],
+  "termStart": "2024-11-11",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 312B, Blatt Building P.O. Box 11867, Columbia, SC 29211",
+    "phone": "803-212-6877",
+    "email": "paulwickensimer@schouse.gov",
+    "website": "https://www.scstatehouse.gov/member.php?code=1914630453"
+  },
+  "bio": "Paul Wickensimer serves as State Representative for South Carolina House of Representatives District 22. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "SC",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.scstatehouse.gov/member.php?code=1914630453"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/sc/legislature/Paul-Wickensimer-4774fe34-b398-48bb-98b8-4ce344781e6c.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://static.wixstatic.com/media/669915_0fcf6e9fdd9e484b959c5ec5b9c80ce2~mv2.jpg/v1/fill/w_489,h_982,al_l,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/669915_0fcf6e9fdd9e484b959c5ec5b9c80ce2~mv2.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Paul_Wickensimer"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Paul_Wickensimer"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/216305/paul-wickensimer"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

@@ -1,0 +1,70 @@
+{
+  "id": "shae-sortwell",
+  "name": "Shae Sortwell",
+  "firstName": "Shae",
+  "lastName": "Sortwell",
+  "photo": "/images/officials/state-legislature/wi/shae-sortwell.jpg",
+  "photoSourceUrl": "https://docs.legis.wisconsin.gov/2023/legislators/assembly/2516.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "Assemblymember",
+  "district": "HD-2",
+  "jurisdiction": "Wisconsin State Assembly",
+  "county": [
+    "Wisconsin"
+  ],
+  "termStart": "2019-01-07",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "email": "rep.sortwell@legis.wisconsin.gov",
+    "website": "https://docs.legis.wisconsin.gov/2019/legislators/assembly/1932"
+  },
+  "bio": "Shae Sortwell serves as Assemblymember for Wisconsin State Assembly District 2. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "WI",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://docs.legis.wisconsin.gov/2019/legislators/assembly/1932"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/wi/legislature/Shae-A-Sortwell-82745ad9-d4b8-48e7-bbb9-3c5d73535c30.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://docs.legis.wisconsin.gov/2023/legislators/assembly/2516.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Shae_Sortwell"
+    },
+    {
+      "title": "Public source",
+      "url": "https://docs.legis.wisconsin.gov/2021/legislators/assembly"
+    },
+    {
+      "title": "Public source",
+      "url": "https://docs.legis.wisconsin.gov/2021/legislators/assembly/"
+    },
+    {
+      "title": "Public source",
+      "url": "https://docs.legis.wisconsin.gov/2021/legislators/assembly/2192"
+    },
+    {
+      "title": "Public source",
+      "url": "https://docs.legis.wisconsin.gov/2023/legislators/assembly"
+    },
+    {
+      "title": "members list page",
+      "url": "https://docs.legis.wisconsin.gov/2023/legislators/assembly/"
+    },
+    {
+      "title": "member detail page",
+      "url": "https://docs.legis.wisconsin.gov/2023/legislators/assembly/2516"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

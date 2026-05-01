@@ -1,0 +1,45 @@
+{
+  "id": "paul-flynn",
+  "name": "Paul Flynn",
+  "firstName": "Paul",
+  "lastName": "Flynn",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-63",
+  "jurisdiction": "Maine House of Representatives",
+  "county": [
+    "Maine"
+  ],
+  "termStart": "2024-12-03",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 332, House Republican Office 2 State House Station, Augusta, ME 04330",
+    "phone": "800-423-2900",
+    "email": "paul.flynn@legislature.maine.gov",
+    "website": "https://legislature.maine.gov/house/house/MemberProfiles/Details/3120"
+  },
+  "bio": "Paul Flynn serves as State Representative for Maine House of Representatives District 63. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "ME",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://legislature.maine.gov/house/house/MemberProfiles/Details/3120"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/me/legislature/Paul-Flynn-ff5fbabd-df54-46a9-a36c-e78dad524105.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Paul_Flynn"
+    },
+    {
+      "title": "Public source",
+      "url": "https://mainehousegop.org/members/flynn-paul"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

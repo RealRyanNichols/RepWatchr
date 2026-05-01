@@ -1,0 +1,72 @@
+{
+  "id": "randy-smith",
+  "name": "Randy Smith",
+  "firstName": "Randy",
+  "lastName": "Smith",
+  "photo": "/images/officials/state-legislature/wv/randy-smith.jpg",
+  "photoSourceUrl": "https://www.wvlegislature.gov/images/members/2025/senate/smith_randy.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-14",
+  "jurisdiction": "West Virginia Senate",
+  "county": [
+    "West Virginia"
+  ],
+  "termStart": "2016-12-01",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "State Capitol Room 229M, Complex, Building 1 1900 Kanawha Blvd. East, Charleston, WV 25305",
+    "phone": "304-357-7995",
+    "email": "randy.smith@wvsenate.gov",
+    "website": "https://www.legis.state.wv.us/Senate1/lawmaker.cfm?member=Senator+Smith"
+  },
+  "bio": "Randy Smith serves as State Senator for West Virginia Senate District 14. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "WV",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.legis.state.wv.us/Senate1/lawmaker.cfm?member=Senator+Smith"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/wv/legislature/Randy-Smith-28321ca7-5b8c-4b1a-9a85-2ae30e52045b.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://www.wvlegislature.gov/images/members/2025/senate/smith_randy.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Randy_Smith_(West_Virginia)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Randy_Smith_%28politician%29"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/135450/randy-smith"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/randy-smith-27817473"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.wvlegislature.gov/Senate1/lawmaker.cfm?member=President%20Smith"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.wvlegislature.gov/Senate1/lawmaker.cfm?member=Senator%20Smith"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.wvlegislature.gov/Senate1/roster.cfm"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

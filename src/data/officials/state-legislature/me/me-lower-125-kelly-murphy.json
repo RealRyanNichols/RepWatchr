@@ -1,0 +1,60 @@
+{
+  "id": "kelly-murphy",
+  "name": "Kelly Murphy",
+  "firstName": "Kelly",
+  "lastName": "Murphy",
+  "photo": "/images/officials/state-legislature/me/kelly-murphy.jpg",
+  "photoSourceUrl": "https://legislature.maine.gov/house/house/Repository/MemberProfiles/17a7b5d3-e413-418b-bad4-831e543f1099_MURPHY.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-125",
+  "jurisdiction": "Maine House of Representatives",
+  "county": [
+    "Maine"
+  ],
+  "termStart": "2022-12-07",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 333, House Democratic Office 2 State House Station, Augusta, ME 04333",
+    "phone": "800-423-2900",
+    "email": "kelly.murphy@legislature.maine.gov",
+    "website": "https://legislature.maine.gov/house/house/MemberProfiles/Details/1477"
+  },
+  "bio": "Kelly Murphy serves as State Representative for Maine House of Representatives District 125. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "ME",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://legislature.maine.gov/house/house/MemberProfiles/Details/1477"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/me/legislature/Kelly-Noonan-Murphy-8abb4c0b-ed96-442e-8483-93a05845dcc5.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://legislature.maine.gov/house/house/Repository/MemberProfiles/17a7b5d3-e413-418b-bad4-831e543f1099_MURPHY.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Kelly_Noonan_Murphy"
+    },
+    {
+      "title": "Public source",
+      "url": "https://legislature.maine.gov/house/house/MemberProfiles/ListAlpha"
+    },
+    {
+      "title": "Public source",
+      "url": "https://legislature.maine.gov/housedems/murphy/index.html"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.maine.gov/housedems/murphy"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

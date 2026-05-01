@@ -1,0 +1,64 @@
+{
+  "id": "tracy-arnold",
+  "name": "Tracy Arnold",
+  "firstName": "Tracy",
+  "lastName": "Arnold",
+  "photo": "/images/officials/state-legislature/ms/tracy-arnold.jpg",
+  "photoSourceUrl": "http://da.mdah.ms.gov/series-files/legislature/composites/2016/500/house-of-representatives/2016_2020HousePhotos/Tracy.Arnold.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-3",
+  "jurisdiction": "Mississippi House of Representatives",
+  "county": [
+    "Mississippi"
+  ],
+  "termStart": "2012-01-03",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "State Capitol Room 400-E, 400 High St., Jackson, MS 39201",
+    "phone": "601-359-2420",
+    "email": "warnold@house.ms.gov",
+    "website": "https://billstatus.ls.state.ms.us/members/house/arnold.xml"
+  },
+  "bio": "Tracy Arnold serves as State Representative for Mississippi House of Representatives District 3. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "MS",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://billstatus.ls.state.ms.us/members/house/arnold.xml"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ms/legislature/William-Tracy-Arnold-2601640f-867f-480f-83a1-c59c332c0b82.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "http://da.mdah.ms.gov/series-files/legislature/composites/2016/500/house-of-representatives/2016_2020HousePhotos/Tracy.Arnold.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/William_Arnold"
+    },
+    {
+      "title": "Public source",
+      "url": "https://billstatus.ls.state.ms.us/members/hr_membs.xml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/William_Tracy_Arnold"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/69854/tracy-arnold"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/tracy-arnold-932a277a"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

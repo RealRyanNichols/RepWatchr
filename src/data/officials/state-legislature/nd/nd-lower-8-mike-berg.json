@@ -1,0 +1,55 @@
+{
+  "id": "mike-berg",
+  "name": "Mike Berg",
+  "firstName": "Mike",
+  "lastName": "Berg",
+  "photo": "/images/officials/state-legislature/nd/mike-berg.jpg",
+  "photoSourceUrl": "https://bloximages.chicago2.vip.townnews.com/bismarcktribune.com/content/tncms/assets/v3/editorial/d/64/d64e7aa8-db23-11ee-a467-5f686ecc3434/65e76dd2156d5.image.jpg?resize=409%2C500",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-8",
+  "jurisdiction": "North Dakota House of Representatives",
+  "county": [
+    "North Dakota"
+  ],
+  "termStart": "2024-12-01",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "State Capitol 600 E. Boulevard Ave., Bismarck, ND 58505",
+    "email": "mberg@ndlegis.gov",
+    "website": "https://ndlegis.gov/biography/mike-berg"
+  },
+  "bio": "Mike Berg serves as State Representative for North Dakota House of Representatives District 8. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "ND",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://ndlegis.gov/biography/mike-berg"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/nd/legislature/Mike-Berg-00959142-f06a-4e5d-aab2-21abfd9aa261.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://bloximages.chicago2.vip.townnews.com/bismarcktribune.com/content/tncms/assets/v3/editorial/d/64/d64e7aa8-db23-11ee-a467-5f686ecc3434/65e76dd2156d5.image.jpg?resize=409%2C500"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Mike_Berg_(North_Dakota)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Mike_Berg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/mike-berg-33bbb24"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

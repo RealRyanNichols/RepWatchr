@@ -1,0 +1,69 @@
+{
+  "id": "kevin-hardee",
+  "name": "Kevin Hardee",
+  "firstName": "Kevin",
+  "lastName": "Hardee",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-105",
+  "jurisdiction": "South Carolina House of Representatives",
+  "county": [
+    "South Carolina"
+  ],
+  "termStart": "",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 404C, Blatt Building P.O. Box 11867, Columbia, SC 29201",
+    "phone": "803-212-6796",
+    "email": "kevinhardee@schouse.gov",
+    "website": "https://kevinhardee.com/"
+  },
+  "bio": "Kevin Hardee serves as State Representative for South Carolina House of Representatives District 105. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "SC",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://kevinhardee.com/"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/sc/legislature/Kevin-Hardee-ad6c27e9-3571-477c-9d94-92127d0020e7.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Kevin_J._Hardee"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Kevin_Hardee"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/94982/kevin-hardee"
+    },
+    {
+      "title": "Public source",
+      "url": "https://kevinhardee.com"
+    },
+    {
+      "title": "Public source",
+      "url": "https://kevinhardee.com/about-kevin.html"
+    },
+    {
+      "title": "Public source",
+      "url": "https://scstatehouse.gov/member.php?chamber=H"
+    },
+    {
+      "title": "Public source",
+      "url": "https://scstatehouse.gov/member.php?code=0743749911"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/kevin-hardee-31316446"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

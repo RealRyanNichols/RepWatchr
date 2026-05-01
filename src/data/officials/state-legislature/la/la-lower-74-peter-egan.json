@@ -1,0 +1,56 @@
+{
+  "id": "peter-egan",
+  "name": "Peter Egan",
+  "firstName": "Peter",
+  "lastName": "Egan",
+  "photo": "/images/officials/state-legislature/la/peter-egan.jpg",
+  "photoSourceUrl": "https://house.louisiana.gov/H_Reps/RepPics/rep74.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-74",
+  "jurisdiction": "Louisiana House of Representatives",
+  "county": [
+    "Louisiana"
+  ],
+  "termStart": "2024-01-08",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "P.O. Box 94062 900 N. 3rd St., Baton Rouge, LA 70804",
+    "phone": "225-342-6945",
+    "email": "hse074@legis.la.gov",
+    "website": "https://house.louisiana.gov/H_Reps/members?ID=74"
+  },
+  "bio": "Peter Egan serves as State Representative for Louisiana House of Representatives District 74. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "LA",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://house.louisiana.gov/H_Reps/members?ID=74"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/la/legislature/Peter-Egan-52df3631-4ef7-4b52-ab11-8a8eeb7bf499.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://house.louisiana.gov/H_Reps/RepPics/rep74.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Peter_Egan"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Peter_F._Egan,_Sr."
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/212588/peter-egan"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

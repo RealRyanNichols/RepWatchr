@@ -1,0 +1,65 @@
+{
+  "id": "travis-moore",
+  "name": "Travis Moore",
+  "firstName": "Travis",
+  "lastName": "Moore",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-33",
+  "jurisdiction": "South Carolina House of Representatives",
+  "county": [
+    "South Carolina"
+  ],
+  "termStart": "2020-11-09",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 402C, Blatt Building P.O. Box 11867, Columbia, SC 29201",
+    "phone": "803-212-6893",
+    "email": "travismoore@schouse.gov",
+    "website": "https://scstatehouse.gov/member.php?code=1365908927"
+  },
+  "bio": "Travis Moore serves as State Representative for South Carolina House of Representatives District 33. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "SC",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://scstatehouse.gov/member.php?code=1365908927"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/sc/legislature/Travis-A-Moore-3b778652-2293-4f1d-ae0c-7d2308cbe9af.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Travis_Moore_(State_legislative_candidate)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Travis_Moore_(politician)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/191604/travis-moore"
+    },
+    {
+      "title": "Public source",
+      "url": "https://scstatehouse.gov/member.php?chamber=H"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/travis-moore-2a5b1050"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.scstatehouse.gov/member.php?chamber=H"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.scstatehouse.gov/member.php?code=1365908927"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

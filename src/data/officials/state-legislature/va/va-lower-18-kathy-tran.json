@@ -1,0 +1,77 @@
+{
+  "id": "kathy-tran",
+  "name": "Kathy Tran",
+  "firstName": "Kathy",
+  "lastName": "Tran",
+  "photo": "/images/officials/state-legislature/va/kathy-tran.jpg",
+  "photoSourceUrl": "https://memdata.virginiageneralassembly.gov/images/display_image/H0305",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "Delegate",
+  "district": "HD-18",
+  "jurisdiction": "Virginia House of Delegates",
+  "county": [
+    "Virginia"
+  ],
+  "termStart": "2024-01-10",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 1113, General Assembly Building 201 N. 9th St., Richmond, VA 23219",
+    "phone": "804-698-1018",
+    "email": "delktran@house.virginia.gov",
+    "website": "https://house.vga.virginia.gov/members/H0305",
+    "socialMedia": {
+      "x": "https://x.com/kathykltran",
+      "twitter": "https://x.com/kathykltran",
+      "facebook": "https://facebook.com/KathyForDelegate"
+    }
+  },
+  "bio": "Kathy Tran serves as Delegate for Virginia House of Delegates District 18. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "VA",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://house.vga.virginia.gov/members/H0305"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/va/legislature/Kathy-KL-Tran-ddba8b1b-8a1d-42c2-aba5-adc1331ee6f1.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://memdata.virginiageneralassembly.gov/images/display_image/H0305"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Kathy_Tran"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Kathy_Tran"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/176359/kathy-tran"
+    },
+    {
+      "title": "Public source",
+      "url": "https://lis.virginia.gov/191/mbr/MBR.HTM"
+    },
+    {
+      "title": "Public source",
+      "url": "https://lis.virginia.gov/201/mbr/MBR.HTM"
+    },
+    {
+      "title": "Public source",
+      "url": "https://lis.virginia.gov/cgi-bin/legp604.exe?191+mbr+H305"
+    },
+    {
+      "title": "Public source",
+      "url": "https://lis.virginia.gov/cgi-bin/legp604.exe?201+mbr+H305"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

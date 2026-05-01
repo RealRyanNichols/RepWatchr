@@ -1,0 +1,52 @@
+{
+  "id": "bill-wheat",
+  "name": "Bill Wheat",
+  "firstName": "Bill",
+  "lastName": "Wheat",
+  "photo": "/images/officials/state-legislature/la/bill-wheat.jpg",
+  "photoSourceUrl": "https://senate.la.gov/SenPics/Sen37.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-37",
+  "jurisdiction": "Louisiana Senate",
+  "county": [
+    "Louisiana"
+  ],
+  "termStart": "2024-01-08",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "P.O. Box 94183 900 N. 3rd St., Baton Rouge, LA 70804",
+    "phone": "225-342-2024",
+    "email": "sen37@legis.la.gov",
+    "website": "https://senate.la.gov/smembers?ID=37"
+  },
+  "bio": "Bill Wheat serves as State Senator for Louisiana Senate District 37. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "LA",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://senate.la.gov/smembers?ID=37"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/la/legislature/Bill-Wheat-20547e38-711f-4012-9217-b739f4450b91.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://senate.la.gov/SenPics/Sen37.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/William_Wheat_Jr."
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/william-wheat-21506737"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

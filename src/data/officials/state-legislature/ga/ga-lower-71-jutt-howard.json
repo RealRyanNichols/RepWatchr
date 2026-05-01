@@ -1,0 +1,64 @@
+{
+  "id": "jutt-howard",
+  "name": "Jutt Howard",
+  "firstName": "Jutt",
+  "lastName": "Howard",
+  "photo": "/images/officials/state-legislature/ga/jutt-howard.jpg",
+  "photoSourceUrl": "https://ngturf.com/wp-content/uploads/2017/11/jutt.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-71",
+  "jurisdiction": "Georgia House of Representatives",
+  "county": [
+    "Georgia"
+  ],
+  "termStart": "2025-01-13",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 501-D, Coverdell Legislative Office Building 18 Capitol Square SW, Atlanta, GA 30334",
+    "phone": "404-656-0177",
+    "email": "justin.howard@house.ga.gov",
+    "website": "https://www.legis.ga.gov/members/house/5073"
+  },
+  "bio": "Jutt Howard serves as State Representative for Georgia House of Representatives District 71. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "GA",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.legis.ga.gov/members/house/5073"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ga/legislature/Jutt-Howard-8b62e64b-bf80-4967-832b-8fb92cd6c4b3.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://ngturf.com/wp-content/uploads/2017/11/jutt.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Justin_Howard"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Justin_Howard_(politician)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/215249/justin-howard"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.legis.ga.gov/members/house/5073?session=1033"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/jutt-howard-b126a3a"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

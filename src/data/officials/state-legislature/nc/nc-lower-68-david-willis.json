@@ -1,0 +1,56 @@
+{
+  "id": "david-willis",
+  "name": "David Willis",
+  "firstName": "David",
+  "lastName": "Willis",
+  "photo": "/images/officials/state-legislature/nc/david-willis.jpg",
+  "photoSourceUrl": "https://www.ncleg.gov/Members/MemberImage/H/779/Low",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-68",
+  "jurisdiction": "North Carolina House of Representatives",
+  "county": [
+    "North Carolina"
+  ],
+  "termStart": "2021-01-01",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 420, Legislative Office Building 300 N. Salisbury St., Raleigh, NC 27603",
+    "phone": "919-733-2406",
+    "email": "david.willis@ncleg.gov",
+    "website": "https://www.ncleg.gov/Members/Biography/H/779"
+  },
+  "bio": "David Willis serves as State Representative for North Carolina House of Representatives District 68. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "NC",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.ncleg.gov/Members/Biography/H/779"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/nc/legislature/David-Willis-6b06a564-763d-421d-bc9b-4779f4dbc1a4.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://www.ncleg.gov/Members/MemberImage/H/779/Low"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/David_Willis"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/david-willis-06b932129"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.ncleg.gov/Members/MemberTable/H"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

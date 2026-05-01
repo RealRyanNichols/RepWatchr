@@ -1,0 +1,49 @@
+{
+  "id": "may-nivar",
+  "name": "May Nivar",
+  "firstName": "May",
+  "lastName": "Nivar",
+  "party": "D",
+  "level": "state",
+  "position": "Delegate",
+  "district": "HD-57",
+  "jurisdiction": "Virginia House of Delegates",
+  "county": [
+    "Virginia"
+  ],
+  "termStart": "2026-01-14",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 918, General Assembly Building 201 N. 9th St., Richmond, VA 23219",
+    "phone": "804-698-1057",
+    "email": "delmnivar@house.virginia.gov",
+    "website": "https://house.vga.virginia.gov/members/H0397"
+  },
+  "bio": "May Nivar serves as Delegate for Virginia House of Delegates District 57. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "VA",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://house.vga.virginia.gov/members/H0397"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/va/legislature/May-Nivar-50a18b88-f257-4234-920f-cfa531a28be4.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/May_Nivar"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/May_Nivar"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/maynivar"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

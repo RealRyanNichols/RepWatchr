@@ -1,0 +1,58 @@
+{
+  "id": "chris-freeland",
+  "name": "Chris Freeland",
+  "firstName": "Chris",
+  "lastName": "Freeland",
+  "photo": "/images/officials/state-legislature/ky/chris-freeland.jpg",
+  "photoSourceUrl": "https://legislature.ky.gov/Legislators%20Thumbnail%20Images/house6.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-6",
+  "jurisdiction": "Kentucky House of Representatives",
+  "county": [
+    "Kentucky"
+  ],
+  "termStart": "2019-01-01",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "email": "chris.freeland@kylegislature.gov",
+    "website": "https://legislature.ky.gov/Legislators/Pages/Legislator-Profile.aspx?DistrictNumber=6"
+  },
+  "bio": "Chris Freeland serves as State Representative for Kentucky House of Representatives District 6. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "KY",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://legislature.ky.gov/Legislators/Pages/Legislator-Profile.aspx?DistrictNumber=6"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ky/legislature/Chris-Freeland-db36edd8-6c2f-4441-aa30-5b4dc48b3357.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://legislature.ky.gov/Legislators%20Thumbnail%20Images/house6.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Chris_Freeland"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Chris_Freeland"
+    },
+    {
+      "title": "Public source",
+      "url": "https://legislature.ky.gov/Legislators/house-of-representatives"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/chris-freeland-9b231aa4"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

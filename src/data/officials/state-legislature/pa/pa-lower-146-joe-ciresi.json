@@ -1,0 +1,76 @@
+{
+  "id": "joe-ciresi",
+  "name": "Joe Ciresi",
+  "firstName": "Joe",
+  "lastName": "Ciresi",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-146",
+  "jurisdiction": "Pennsylvania House of Representatives",
+  "county": [
+    "Pennsylvania"
+  ],
+  "termStart": "2018-12-01",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 325, Main Capitol Building P.O. Box 202146, Harrisburg, PA 17120",
+    "phone": "717-783-4086",
+    "email": "jciresi@pahouse.net",
+    "website": "https://www.legis.state.pa.us/cfdocs/legis/home/member_information/House_bio.cfm?id=1847",
+    "socialMedia": {
+      "x": "https://x.com/RepCiresi",
+      "twitter": "https://x.com/RepCiresi",
+      "facebook": "https://facebook.com/RepCiresi",
+      "youtube": "https://youtube.com/playlist?list=PLjtqNtfs0bgVIhyB4HWbJiOz-5wKB7QG-",
+      "instagram": "https://instagram.com/repciresi"
+    }
+  },
+  "bio": "Joe Ciresi serves as State Representative for Pennsylvania House of Representatives District 146. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "PA",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.legis.state.pa.us/cfdocs/legis/home/member_information/House_bio.cfm?id=1847"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/pa/legislature/Joe-Ciresi-c9521d0e-56ca-40d2-b9bc-7a1f1be639bc.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Joseph_Ciresi"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Joe_Ciresi"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.legis.state.pa.us/cfdocs/legis/home/member_information/mbrList.cfm?body=H&sort=alpha"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.legis.state.pa.us/cfdocs/legis/home/member_information/representatives_alpha.cfm"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/joe-ciresi-0513296"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/joeciresi"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.pahouse.com/ciresi"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.palegis.us/house/members/bio/1847/rep-ciresi"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

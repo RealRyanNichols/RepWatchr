@@ -1,0 +1,70 @@
+{
+  "id": "bill-soules",
+  "name": "Bill Soules",
+  "firstName": "Bill",
+  "lastName": "Soules",
+  "photo": "/images/officials/state-legislature/nm/bill-soules.jpg",
+  "photoSourceUrl": "https://www.nmlegis.gov/Images/Legislators/Senate/SSOUL.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-37",
+  "jurisdiction": "New Mexico Senate",
+  "county": [
+    "New Mexico"
+  ],
+  "termStart": "2013-01-15",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "State Capitol Room 328C, New Mexico  490 Old Santa Fe Trail, Santa Fe, NM 87501",
+    "phone": "505-986-4834",
+    "email": "bill.soules@nmlegis.gov",
+    "website": "https://www.nmlegis.gov/Members/Legislator?SponCode=SSOUL",
+    "socialMedia": {
+      "x": "https://x.com/senatorsoules",
+      "twitter": "https://x.com/senatorsoules",
+      "facebook": "https://facebook.com/Soules4Senate37",
+      "instagram": "https://instagram.com/soules_bill"
+    }
+  },
+  "bio": "Bill Soules serves as State Senator for New Mexico Senate District 37. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "NM",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.nmlegis.gov/Members/Legislator?SponCode=SSOUL"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/nm/legislature/William-P-Soules-33aa9a6b-b106-4216-8ea5-82d85cd2250a.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://www.nmlegis.gov/Images/Legislators/Senate/SSOUL.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/William_P._Soules"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/William_Soules"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/139118/bill-soules"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/bill-soules-76792b7a"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.nmlegis.gov/Members/Legislator_List?T=S"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

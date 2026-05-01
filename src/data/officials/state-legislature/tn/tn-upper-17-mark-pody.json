@@ -1,0 +1,72 @@
+{
+  "id": "mark-pody",
+  "name": "Mark Pody",
+  "firstName": "Mark",
+  "lastName": "Pody",
+  "photo": "/images/officials/state-legislature/tn/mark-pody.jpg",
+  "photoSourceUrl": "http://www.capitol.tn.gov/senate/members/images/s17.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-17",
+  "jurisdiction": "Tennessee Senate",
+  "county": [
+    "Tennessee"
+  ],
+  "termStart": "2017-12-20",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 754, Cordell Hull Building 425 Rep. John Lewis Way North, Nashville, TN 37243",
+    "phone": "615-741-2421",
+    "email": "sen.mark.pody@capitol.tn.gov",
+    "website": "https://wapp.capitol.tn.gov/apps/legislatorinfo/member.aspx?district=S17"
+  },
+  "bio": "Mark Pody serves as State Senator for Tennessee Senate District 17. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "TN",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://wapp.capitol.tn.gov/apps/legislatorinfo/member.aspx?district=S17"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/tn/legislature/Mark-Pody-47dee87e-231d-4c39-b0a2-6905a85ddbf8.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "http://www.capitol.tn.gov/senate/members/images/s17.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Mark_Pody"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Mark_Pody"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/125439/mark-pody"
+    },
+    {
+      "title": "Public source",
+      "url": "https://wapp.capitol.tn.gov/apps/LegislatorInfo/directory.aspx?chamber=S"
+    },
+    {
+      "title": "Public source",
+      "url": "https://wapp.capitol.tn.gov/apps/LegislatorInfo/Member?district=S17&ga=114"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.capitol.tn.gov/senate/members"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.capitol.tn.gov/senate/members/"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

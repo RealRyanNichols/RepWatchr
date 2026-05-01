@@ -1,0 +1,65 @@
+{
+  "id": "jim-rigby",
+  "name": "Jim Rigby",
+  "firstName": "Jim",
+  "lastName": "Rigby",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-71",
+  "jurisdiction": "Pennsylvania House of Representatives",
+  "county": [
+    "Pennsylvania"
+  ],
+  "termStart": "2018-12-01",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 403, Irvis Office Building P.O. Box 202071, Harrisburg, PA 17120",
+    "phone": "717-772-9924",
+    "email": "jrigby@pahousegop.com",
+    "website": "https://www.legis.state.pa.us/cfdocs/legis/home/member_information/House_bio.cfm?id=1836",
+    "socialMedia": {
+      "facebook": "https://facebook.com/RepJimRigby",
+      "youtube": "https://youtube.com/UCrrnV9bz8JpObHlPccnjmMQ"
+    }
+  },
+  "bio": "Jim Rigby serves as State Representative for Pennsylvania House of Representatives District 71. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "PA",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.legis.state.pa.us/cfdocs/legis/home/member_information/House_bio.cfm?id=1836"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/pa/legislature/Jim-Rigby-343e541b-fbd3-4622-bf42-7843494b1714.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Jim_Rigby"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Jim_Rigby"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.legis.state.pa.us/cfdocs/legis/home/member_information/mbrList.cfm?body=H&sort=alpha"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.legis.state.pa.us/cfdocs/legis/home/member_information/representatives_alpha.cfm"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.palegis.us/house/members/bio/1836/rep-rigby"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.repjimrigby.com"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

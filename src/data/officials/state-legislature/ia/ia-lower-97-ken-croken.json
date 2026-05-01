@@ -1,0 +1,64 @@
+{
+  "id": "ken-croken",
+  "name": "Ken Croken",
+  "firstName": "Ken",
+  "lastName": "Croken",
+  "photo": "/images/officials/state-legislature/ia/ken-croken.jpg",
+  "photoSourceUrl": "https://www.legis.iowa.gov/photo?action=getPhoto&ga=91&pid=33997",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-97",
+  "jurisdiction": "Iowa House of Representatives",
+  "county": [
+    "Iowa"
+  ],
+  "termStart": "2023-01-01",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "State Capitol Building 1007 E. Grand Ave., Des Moines, IA 50319",
+    "phone": "515-281-3221",
+    "email": "ken.croken@legis.iowa.gov",
+    "website": "https://eepurl.com/ihfkwb"
+  },
+  "bio": "Ken Croken serves as State Representative for Iowa House of Representatives District 97. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "IA",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://eepurl.com/ihfkwb"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ia/legislature/Ken-Croken-3dd459aa-4a08-4a98-bce4-37536a9414fa.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://www.legis.iowa.gov/photo?action=getPhoto&ga=91&pid=33997"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Ken_Croken"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Ken_Croken"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.legis.iowa.gov/legislators/house"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.legis.iowa.gov/legislators/legislator?ga=90&personID=33997"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.legis.iowa.gov/legislators/legislator?personID=33997"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

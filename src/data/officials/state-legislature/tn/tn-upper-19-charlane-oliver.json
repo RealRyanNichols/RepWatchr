@@ -1,0 +1,72 @@
+{
+  "id": "charlane-oliver",
+  "name": "Charlane Oliver",
+  "firstName": "Charlane",
+  "lastName": "Oliver",
+  "photo": "/images/officials/state-legislature/tn/charlane-oliver.jpg",
+  "photoSourceUrl": "https://s3.amazonaws.com/ballotpedia-api4/files/thumbs/200/300/CharlaneOliver.png",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-19",
+  "jurisdiction": "Tennessee Senate",
+  "county": [
+    "Tennessee"
+  ],
+  "termStart": "2022-11-08",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 766, Cordell Hull Building 425 Rep. John Lewis Way North, Nashville, TN 37243",
+    "phone": "615-741-2453",
+    "email": "sen.charlane.oliver@capitol.tn.gov",
+    "website": "https://wapp.capitol.tn.gov/apps/legislatorinfo/member.aspx?district=S19"
+  },
+  "bio": "Charlane Oliver serves as State Senator for Tennessee Senate District 19. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "TN",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://wapp.capitol.tn.gov/apps/legislatorinfo/member.aspx?district=S19"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/tn/legislature/Charlane-Oliver-0ce3dbf9-c880-480b-a623-7d9da870bb01.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://s3.amazonaws.com/ballotpedia-api4/files/thumbs/200/300/CharlaneOliver.png"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Charlane_Oliver"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Charlane_Oliver"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/206796/charlane-oliver"
+    },
+    {
+      "title": "Public source",
+      "url": "https://wapp.capitol.tn.gov/apps/LegislatorInfo/directory.aspx?chamber=S"
+    },
+    {
+      "title": "Public source",
+      "url": "https://wapp.capitol.tn.gov/apps/LegislatorInfo/Member?district=S19&ga=114"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/charlaneoliver"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.oliverfortnsenate.com"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

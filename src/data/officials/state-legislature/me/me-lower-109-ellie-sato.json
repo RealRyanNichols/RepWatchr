@@ -1,0 +1,52 @@
+{
+  "id": "ellie-sato",
+  "name": "Ellie Sato",
+  "firstName": "Ellie",
+  "lastName": "Sato",
+  "photo": "/images/officials/state-legislature/me/ellie-sato.jpg",
+  "photoSourceUrl": "https://images.squarespace-cdn.com/content/v1/65cccc6e88ea086805c14520/d05b9ffc-92b9-4cd2-af99-e26fe90c96c6/Ellie+Sato+2024+Profile.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-109",
+  "jurisdiction": "Maine House of Representatives",
+  "county": [
+    "Maine"
+  ],
+  "termStart": "2024-12-03",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 333, House Democratic Office 2 State House Station, Augusta, ME 04333",
+    "phone": "800-423-2900",
+    "email": "eleanor.sato@legislature.maine.gov",
+    "website": "https://legislature.maine.gov/house/house/MemberProfiles/Details/3134"
+  },
+  "bio": "Ellie Sato serves as State Representative for Maine House of Representatives District 109. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "ME",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://legislature.maine.gov/house/house/MemberProfiles/Details/3134"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/me/legislature/Ellie-Sato-65c05666-3d38-4098-b2fc-6a519f21f71f.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://images.squarespace-cdn.com/content/v1/65cccc6e88ea086805c14520/d05b9ffc-92b9-4cd2-af99-e26fe90c96c6/Ellie+Sato+2024+Profile.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Eleanor_Sato"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.maine.gov/housedems/node/4097"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

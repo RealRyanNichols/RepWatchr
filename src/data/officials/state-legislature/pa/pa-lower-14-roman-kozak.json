@@ -1,0 +1,56 @@
+{
+  "id": "roman-kozak",
+  "name": "Roman Kozak",
+  "firstName": "Roman",
+  "lastName": "Kozak",
+  "photo": "/images/officials/state-legislature/pa/roman-kozak.jpg",
+  "photoSourceUrl": "https://www.beavercountygop.com/wp-content/uploads/RK.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-14",
+  "jurisdiction": "Pennsylvania House of Representatives",
+  "county": [
+    "Pennsylvania"
+  ],
+  "termStart": "2024-12-01",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 52B, East Wing P.O. Box 202014, Harrisburg, PA 17120",
+    "phone": "717-260-6432",
+    "email": "rkozak@pahousegop.com",
+    "website": "https://www.palegis.us/house/members/bio/2022/rep-kozak"
+  },
+  "bio": "Roman Kozak serves as State Representative for Pennsylvania House of Representatives District 14. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "PA",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.palegis.us/house/members/bio/2022/rep-kozak"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/pa/legislature/Roman-Kozak-69faf85a-c63c-4d75-9801-047fffddf228.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://www.beavercountygop.com/wp-content/uploads/RK.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Roman_Kozak"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/214791/roman-kozak"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/roman-kozak-jr"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

@@ -1,0 +1,69 @@
+{
+  "id": "brandy-donaghy",
+  "name": "Brandy Donaghy",
+  "firstName": "Brandy",
+  "lastName": "Donaghy",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-44",
+  "jurisdiction": "Washington House of Representatives",
+  "county": [
+    "Washington"
+  ],
+  "termStart": "2021-12-15",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 417, John L. O'Brien Building P.O. Box 40600, Olympia, WA 98504",
+    "phone": "360-786-7804",
+    "email": "brandy.donaghy@leg.wa.gov",
+    "website": "https://housedemocrats.wa.gov/Donaghy/"
+  },
+  "bio": "Brandy Donaghy serves as State Representative for Washington House of Representatives District 44. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "WA",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://housedemocrats.wa.gov/Donaghy/"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/wa/legislature/Brandy-Donaghy-0f60580f-c121-4661-ae02-5acdfb3923d8.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://app.leg.wa.gov/ContentParts/MemberDirectory/?a=House"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Brandy_Donaghy"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Brandy_Donaghy"
+    },
+    {
+      "title": "Public source",
+      "url": "https://housedemocrats.wa.gov/donaghy"
+    },
+    {
+      "title": "Public source",
+      "url": "https://housedemocrats.wa.gov/donaghy/"
+    },
+    {
+      "title": "Public source",
+      "url": "https://housedemocrats.wa.gov/donaghy/biography"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/201407/brandy-donaghy"
+    },
+    {
+      "title": "Public source",
+      "url": "https://leg.wa.gov/legislators/member/brandy-donaghy"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

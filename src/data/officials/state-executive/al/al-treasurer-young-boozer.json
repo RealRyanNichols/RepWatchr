@@ -1,0 +1,44 @@
+{
+  "id": "young-boozer",
+  "name": "Young Boozer",
+  "firstName": "Young",
+  "lastName": "Boozer",
+  "party": "R",
+  "level": "state",
+  "position": "Treasurer",
+  "district": "Alabama",
+  "jurisdiction": "Alabama statewide public office",
+  "county": [
+    "Alabama"
+  ],
+  "termStart": "2021-10-01",
+  "termEnd": "2027-01-18",
+  "contactInfo": {
+    "office": "600 Dexter Avenue, Room S-106; Montgomery, AL 36104",
+    "phone": "334-242-7500",
+    "website": "https://treasury.alabama.gov/"
+  },
+  "bio": "Young Boozer is listed as Treasurer for Alabama. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "AL",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://treasury.alabama.gov/"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/al/executive/Young-Boozer-7a749447-b86f-4788-ab1f-235b8f7a0097.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://treasury.alabama.gov/about-young-boozer/"
+    },
+    {
+      "title": "Public source",
+      "url": "https://treasury.alabama.gov/contact-us/"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

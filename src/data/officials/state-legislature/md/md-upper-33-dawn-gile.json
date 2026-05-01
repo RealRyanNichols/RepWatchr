@@ -1,0 +1,60 @@
+{
+  "id": "dawn-gile",
+  "name": "Dawn Gile",
+  "firstName": "Dawn",
+  "lastName": "Gile",
+  "photo": "/images/officials/state-legislature/md/dawn-gile.jpg",
+  "photoSourceUrl": "https://mgaleg.maryland.gov/2023RS/images/gile01.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-33",
+  "jurisdiction": "Maryland Senate",
+  "county": [
+    "Maryland"
+  ],
+  "termStart": "2023-01-11",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 3 East, Miller Senate Office Building 11 Bladen St., Annapolis, MD 21401",
+    "phone": "410-841-3568",
+    "email": "dawn.gile@senate.maryland.gov",
+    "website": "https://mgaleg.maryland.gov/mgawebsite/Members/Details/gile01"
+  },
+  "bio": "Dawn Gile serves as State Senator for Maryland Senate District 33. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "MD",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://mgaleg.maryland.gov/mgawebsite/Members/Details/gile01"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/md/legislature/Dawn-Gile-4f379062-a8ba-49af-850a-a1a358797d48.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://mgaleg.maryland.gov/2023RS/images/gile01.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Dawn_Gile"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Dawn_Gile"
+    },
+    {
+      "title": "Public source",
+      "url": "https://msa.maryland.gov/msa/mdmanual/05sen/html/msa18497.html"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/dawn-gile"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

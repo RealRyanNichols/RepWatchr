@@ -1,0 +1,69 @@
+{
+  "id": "dan-noyes",
+  "name": "Dan Noyes",
+  "firstName": "Dan",
+  "lastName": "Noyes",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-Lamoille-2",
+  "jurisdiction": "Vermont House of Representatives",
+  "county": [
+    "Vermont"
+  ],
+  "termStart": "2017-01-04",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Vermont State House 115 State St., Montpelier, VT 05633",
+    "phone": "802-828-2228",
+    "email": "dnoyes@leg.state.vt.us",
+    "website": "https://legislature.vermont.gov/Documents/SmallMaps/LAM-2.pdf"
+  },
+  "bio": "Dan Noyes serves as State Representative for Vermont House of Representatives District Lamoille-2. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "VT",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://legislature.vermont.gov/Documents/SmallMaps/LAM-2.pdf"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/vt/legislature/Daniel-Noyes-95cd4184-c07f-48a5-993a-e924ad71184f.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Daniel_Noyes"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Daniel_Noyes"
+    },
+    {
+      "title": "Public source",
+      "url": "https://legislature.vermont.gov/people/loadAll/2020"
+    },
+    {
+      "title": "Public source",
+      "url": "https://legislature.vermont.gov/people/loadAll/2022"
+    },
+    {
+      "title": "Public source",
+      "url": "https://legislature.vermont.gov/people/single/2020/27171"
+    },
+    {
+      "title": "Public source",
+      "url": "https://legislature.vermont.gov/people/single/2022/27171"
+    },
+    {
+      "title": "Public source",
+      "url": "https://legislature.vermont.gov/people/single/2024/27171"
+    },
+    {
+      "title": "Public source",
+      "url": "https://legislature.vermont.gov/people/single/2026/27171"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

@@ -1,0 +1,37 @@
+{
+  "id": "howard-knapp",
+  "name": "Howard Knapp",
+  "firstName": "Howard",
+  "lastName": "Knapp",
+  "party": "I",
+  "level": "state",
+  "position": "Chief Election Officer",
+  "district": "South Carolina",
+  "jurisdiction": "South Carolina statewide public office",
+  "county": [
+    "South Carolina"
+  ],
+  "termStart": "2023-03-02",
+  "termEnd": "2026-12-31",
+  "contactInfo": {
+    "office": "Post Office Box 5987; ; Columbia, SC 29250-5987",
+    "phone": "803-734-9060",
+    "email": "hknapp@elections.sc.gov",
+    "website": "https://scvotes.gov/about-the-sec/"
+  },
+  "bio": "Howard Knapp is listed as Chief Election Officer for South Carolina. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "SC",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://scvotes.gov/about-the-sec/"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/sc/executive/Howard-Knapp-fd462977-6631-4203-820c-a91b0b4ebcd2.yml"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

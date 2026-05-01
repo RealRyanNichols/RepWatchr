@@ -1,0 +1,60 @@
+{
+  "id": "christian-phelps",
+  "name": "Christian Phelps",
+  "firstName": "Christian",
+  "lastName": "Phelps",
+  "photo": "/images/officials/state-legislature/wi/christian-phelps.jpg",
+  "photoSourceUrl": "https://s3.amazonaws.com/ballotpedia-api4/files/thumbs/200/300/ChristianPhelps24.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "Assemblymember",
+  "district": "HD-93",
+  "jurisdiction": "Wisconsin State Assembly",
+  "county": [
+    "Wisconsin"
+  ],
+  "termStart": "2025-01-06",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "State Capitol Room 126 North, P.O. Box 8953 , 2 E. Main St., Madison, WI 53708",
+    "phone": "608-237-9193",
+    "email": "rep.phelps@legis.wisconsin.gov",
+    "website": "https://docs.legis.wisconsin.gov/2025/legislators/assembly/2903"
+  },
+  "bio": "Christian Phelps serves as Assemblymember for Wisconsin State Assembly District 93. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "WI",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://docs.legis.wisconsin.gov/2025/legislators/assembly/2903"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/wi/legislature/Christian-Phelps-ad79773d-d349-4adf-9e3c-00d2b38a90b2.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://s3.amazonaws.com/ballotpedia-api4/files/thumbs/200/300/ChristianPhelps24.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Christian_Phelps"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Christian_Phelps"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/218684/christian-phelps"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/christian-phelps-16a626bb"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

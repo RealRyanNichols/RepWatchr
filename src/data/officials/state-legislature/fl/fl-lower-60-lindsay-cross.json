@@ -1,0 +1,57 @@
+{
+  "id": "lindsay-cross",
+  "name": "Lindsay Cross",
+  "firstName": "Lindsay",
+  "lastName": "Cross",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-60",
+  "jurisdiction": "Florida House of Representatives",
+  "county": [
+    "Florida"
+  ],
+  "termStart": "2022-11-08",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 1101, The Capitol 402 S. Monroe St., Tallahassee, FL 32399",
+    "phone": "850-717-5060",
+    "email": "lindsay.cross@flhouse.gov",
+    "website": "https://myfloridahouse.gov/Sections/Representatives/details.aspx?MemberId=4887&LegislativeTermId=90"
+  },
+  "bio": "Lindsay Cross serves as State Representative for Florida House of Representatives District 60. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "FL",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://myfloridahouse.gov/Sections/Representatives/details.aspx?MemberId=4887&LegislativeTermId=90"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/fl/legislature/Lindsay-Michelle-Cross-8bcd1df3-2697-42a9-842a-f3cced1fcb0f.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Lindsay_Cross"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.flhouse.gov/Sections/Representatives/custom/details.aspx?MemberId=4887"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.flhouse.gov/Sections/Representatives/details.aspx?MemberId=4887"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/lindsay-cross-96677820"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.myfloridahouse.gov/Sections/Representatives/details.aspx?MemberId=4887&LegislativeTermId=90"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

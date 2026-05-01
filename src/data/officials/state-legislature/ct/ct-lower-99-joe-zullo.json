@@ -1,0 +1,68 @@
+{
+  "id": "joe-zullo",
+  "name": "Joe Zullo",
+  "firstName": "Joe",
+  "lastName": "Zullo",
+  "photo": "/images/officials/state-legislature/ct/joe-zullo.jpg",
+  "photoSourceUrl": "https://www.cga.ct.gov/legpics/099.png?ver=",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-99",
+  "jurisdiction": "Connecticut House of Representatives",
+  "county": [
+    "Connecticut"
+  ],
+  "termStart": "2019-03-01",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 4200, Legislative Office Building 300 Capitol Ave., Hartford, CT 06106",
+    "phone": "800-842-1423",
+    "email": "joe.zullo@housegop.ct.gov",
+    "website": "https://cga.ct.gov/asp/CGABillStatus/CGAMemberBills.asp?dist_code=%27099%27&dist_name=Zullo,%20Joseph%20H."
+  },
+  "bio": "Joe Zullo serves as State Representative for Connecticut House of Representatives District 99. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "CT",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://cga.ct.gov/asp/CGABillStatus/CGAMemberBills.asp?dist_code=%27099%27&dist_name=Zullo,%20Joseph%20H."
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ct/legislature/Joseph-H-Zullo-391a83ee-0e23-4669-b3ae-b29bd9c77294.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://www.cga.ct.gov/legpics/099.png?ver="
+    },
+    {
+      "title": "Public source",
+      "url": "ftp://ftp.cga.ct.gov/pub/data/LegislatorDatabase.csv"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Joseph_Zullo"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Joseph_Zullo"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/186049/joe-zullo"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.cthousegop.com/zullo"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.cthousegop.com/zullo/"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

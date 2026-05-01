@@ -1,0 +1,69 @@
+{
+  "id": "kellie-warren",
+  "name": "Kellie Warren",
+  "firstName": "Kellie",
+  "lastName": "Warren",
+  "party": "R",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-11",
+  "jurisdiction": "Kansas Senate",
+  "county": [
+    "Kansas"
+  ],
+  "termStart": "2021-01-11",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "State Capitol Room 419-E, Kansas  Building 300 SW 10th St., Topeka, KS 66612",
+    "phone": "785-296-7646",
+    "email": "kellie.warren@senate.ks.gov",
+    "website": "https://www.kslegislature.gov/li/b2025_26/members/sen_warren_kellie_1/"
+  },
+  "bio": "Kellie Warren serves as State Senator for Kansas Senate District 11. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "KS",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.kslegislature.gov/li/b2025_26/members/sen_warren_kellie_1/"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ks/legislature/Kellie-Warren-85a66c0d-6f9e-4a55-947e-4d3dc28af0d8.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Kellie_Warren"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Kellie_Warren"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.kslegislature.gov/li/b2025_26/members/sen_warren_kellie_1"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.kslegislature.org/li/api/v11/rev-1/members/rep_warren_kellie_1"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.kslegislature.org/li/api/v11/rev-1/members/sen_warren_kellie_1"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.kslegislature.org/li/api/v11/rev-1/members/sen_warren_kellie_1/"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.kslegislature.org/li/b2023_24/members/sen_warren_kellie_1"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.kslegislature.org/li/b2023_24/members/sen_warren_kellie_1/"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

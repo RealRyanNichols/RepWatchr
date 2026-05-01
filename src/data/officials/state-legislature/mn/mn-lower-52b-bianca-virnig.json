@@ -1,0 +1,64 @@
+{
+  "id": "bianca-virnig",
+  "name": "Bianca Virnig",
+  "firstName": "Bianca",
+  "lastName": "Virnig",
+  "photo": "/images/officials/state-legislature/mn/bianca-virnig.jpg",
+  "photoSourceUrl": "https://www.house.mn.gov/hinfo/memberimgls94/52B.gif?v=112221",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-52B",
+  "jurisdiction": "Minnesota House of Representatives",
+  "county": [
+    "Minnesota"
+  ],
+  "termStart": "2024-01-12",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Centennial Office Building 658 Cedar St., Fifth Floor, St. Paul, MN 55155",
+    "phone": "651-296-4192",
+    "email": "rep.bianca.virnig@house.mn.gov",
+    "website": "https://www.house.mn.gov/members/profile/15625"
+  },
+  "bio": "Bianca Virnig serves as State Representative for Minnesota House of Representatives District 52B. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "MN",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.house.mn.gov/members/profile/15625"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/mn/legislature/Bianca-Virnig-971431ad-1fdb-49e5-9cf0-57cfff1645a8.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://www.house.mn.gov/hinfo/memberimgls94/52B.gif?v=112221"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Bianca_Ward_Virnig"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Bianca_Virnig"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/212785/bianca-virnig"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.biancavirnig.com/about-5"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/bianca-w-1ba9773"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

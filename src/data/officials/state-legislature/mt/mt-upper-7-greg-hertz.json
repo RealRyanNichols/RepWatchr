@@ -1,0 +1,69 @@
+{
+  "id": "greg-hertz",
+  "name": "Greg Hertz",
+  "firstName": "Greg",
+  "lastName": "Hertz",
+  "party": "R",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-7",
+  "jurisdiction": "Montana Senate",
+  "county": [
+    "Montana"
+  ],
+  "termStart": "2025-01-06",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Capitol Building, 1301 E. 6th Ave. P.O. Box 200500, Helena, MT 59620",
+    "phone": "406-444-4800",
+    "email": "greg.hertz@legmt.gov",
+    "website": "https://leg.mt.gov/legislator-information/roster/individual/4755"
+  },
+  "bio": "Greg Hertz serves as State Senator for Montana Senate District 7. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "MT",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://leg.mt.gov/legislator-information/roster/individual/4755"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/mt/legislature/Greg-Hertz-e085c6ea-bb53-4daf-8a02-5268818158bd.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Greg_Hertz"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Greg_Hertz"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/136849/greg-hertz"
+    },
+    {
+      "title": "legislator list page",
+      "url": "https://leg.mt.gov/legislator-information/?session_select=111"
+    },
+    {
+      "title": "Public source",
+      "url": "https://leg.mt.gov/legislator-information/?session_select=113"
+    },
+    {
+      "title": "Public source",
+      "url": "https://leg.mt.gov/legislator-information/roster/individual/5070"
+    },
+    {
+      "title": "Public source",
+      "url": "https://leg.mt.gov/legislator-information/roster/individual/6818"
+    },
+    {
+      "title": "Public source",
+      "url": "https://leg.mt.gov/legislator-information/roster/individual/7528"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

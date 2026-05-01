@@ -1,0 +1,52 @@
+{
+  "id": "jeff-tate",
+  "name": "Jeff Tate",
+  "firstName": "Jeff",
+  "lastName": "Tate",
+  "photo": "/images/officials/state-legislature/ms/jeff-tate.jpg",
+  "photoSourceUrl": "http://billstatus.ls.state.ms.us/members/senate/tate.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-33",
+  "jurisdiction": "Mississippi Senate",
+  "county": [
+    "Mississippi"
+  ],
+  "termStart": "2020-01-07",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "State Capitol Room 405, 400 High St., Jackson, MS 39201",
+    "phone": "601-359-2224",
+    "email": "jtate@senate.ms.gov",
+    "website": "https://billstatus.ls.state.ms.us/members/senate/tate.xml"
+  },
+  "bio": "Jeff Tate serves as State Senator for Mississippi Senate District 33. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "MS",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://billstatus.ls.state.ms.us/members/senate/tate.xml"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ms/legislature/Jeff-Tate-9839c663-7ae3-4437-82d8-c985975309d8.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "http://billstatus.ls.state.ms.us/members/senate/tate.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Jeff_Tate"
+    },
+    {
+      "title": "Public source",
+      "url": "https://billstatus.ls.state.ms.us/members/ss_membs.xml"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

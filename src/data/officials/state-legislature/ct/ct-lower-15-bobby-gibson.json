@@ -1,0 +1,68 @@
+{
+  "id": "bobby-gibson",
+  "name": "Bobby Gibson",
+  "firstName": "Bobby",
+  "lastName": "Gibson",
+  "photo": "/images/officials/state-legislature/ct/bobby-gibson.jpg",
+  "photoSourceUrl": "http://www2.housedems.ct.gov/Gibson/images/Gibson_HS.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-15",
+  "jurisdiction": "Connecticut House of Representatives",
+  "county": [
+    "Connecticut"
+  ],
+  "termStart": "2018-01-12",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 4038, Legislative Office Building 300 Capitol Ave., Hartford, CT 06107",
+    "phone": "860-240-8585",
+    "email": "bobby.gibson@cga.ct.gov",
+    "website": "https://cga.ct.gov/asp/CGABillStatus/CGAMemberBills.asp?dist_code=%27015%27&dist_name=Gibson,%20Bobby%20G."
+  },
+  "bio": "Bobby Gibson serves as State Representative for Connecticut House of Representatives District 15. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "CT",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://cga.ct.gov/asp/CGABillStatus/CGAMemberBills.asp?dist_code=%27015%27&dist_name=Gibson,%20Bobby%20G."
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ct/legislature/Bobby-G-Gibson-Jr-6e4977fe-2ed9-4e1c-93ce-c837766d2896.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "http://www2.housedems.ct.gov/Gibson/images/Gibson_HS.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "ftp://ftp.cga.ct.gov/pub/data/LegislatorDatabase.csv"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Bobby_Gibson"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Bobby_Gibson"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/177595/bobby-gibson"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.housedems.ct.gov/Gibson"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/bobby-gibson-80334959"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

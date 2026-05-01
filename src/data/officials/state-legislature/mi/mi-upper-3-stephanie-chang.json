@@ -1,0 +1,72 @@
+{
+  "id": "stephanie-chang",
+  "name": "Stephanie Chang",
+  "firstName": "Stephanie",
+  "lastName": "Chang",
+  "photo": "/images/officials/state-legislature/mi/stephanie-chang.jpg",
+  "photoSourceUrl": "https://senatedems.com/chang/wp-content/uploads/sites/9/2022/12/MDS_Chang_DSC5412.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-3",
+  "jurisdiction": "Michigan Senate",
+  "county": [
+    "Michigan"
+  ],
+  "termStart": "2023-01-01",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 4100, Binsfeld Building P.O. Box 30036, Lansing, MI 48909",
+    "phone": "517-373-7346",
+    "email": "senschang@senate.michigan.gov",
+    "website": "https://senatedems.com/chang"
+  },
+  "bio": "Stephanie Chang serves as State Senator for Michigan Senate District 3. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "MI",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://senatedems.com/chang"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/mi/legislature/Stephanie-Chang-1d297b7e-2e51-4e1a-a208-2f5505e9f1f7.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://senatedems.com/chang/wp-content/uploads/sites/9/2022/12/MDS_Chang_DSC5412.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Stephanie_Chang"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Stephanie_Chang"
+    },
+    {
+      "title": "Public source",
+      "url": "https://senate.michigan.gov/senatorinfo_list.html"
+    },
+    {
+      "title": "Members List JSON Data Page",
+      "url": "https://senate.michigan.gov/senators/SenatorData.json"
+    },
+    {
+      "title": "Members List HTML page",
+      "url": "https://senate.michigan.gov/senators/senatorinfo_list.html"
+    },
+    {
+      "title": "Public source",
+      "url": "https://senatedems.com/chang/"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/stephanie-chang-a2286019"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

@@ -1,0 +1,72 @@
+{
+  "id": "dee-avelar",
+  "name": "Dee Avelar",
+  "firstName": "Dee",
+  "lastName": "Avelar",
+  "photo": "/images/officials/state-legislature/il/dee-avelar.jpg",
+  "photoSourceUrl": "https://cdn.ilga.gov/assets/img/members/{EFDA6EE7-57E6-4ACA-BE60-02A042FF5D5D}.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-85",
+  "jurisdiction": "Illinois House of Representatives",
+  "county": [
+    "Illinois"
+  ],
+  "termStart": "2021-01-13",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 265-S, Stratton Office Building, Springfield, IL 62706",
+    "phone": "217-782-4179",
+    "email": "info@repdagmara.org",
+    "website": "https://ilga.gov/house/Rep.asp?GA=102&MemberID=2999"
+  },
+  "bio": "Dee Avelar serves as State Representative for Illinois House of Representatives District 85. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "IL",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://ilga.gov/house/Rep.asp?GA=102&MemberID=2999"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/il/legislature/Dagmara-Avelar-4c05af2c-7756-4002-a45d-cc9f2f5acbfd.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://cdn.ilga.gov/assets/img/members/{EFDA6EE7-57E6-4ACA-BE60-02A042FF5D5D}.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Dagmara_Avelar"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Dagmara_Avelar"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ilga.gov/house/default.asp?GA=102"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ilga.gov/house/default.asp?GA=103"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ilga.gov/house/Rep.asp?GA=103&MemberID=3187"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/188037/dagmara-avelar"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.ilga.gov/House/Members/Details/3391"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

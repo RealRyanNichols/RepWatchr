@@ -1,0 +1,64 @@
+{
+  "id": "zaynab-mohamed",
+  "name": "Zaynab Mohamed",
+  "firstName": "Zaynab",
+  "lastName": "Mohamed",
+  "photo": "/images/officials/state-legislature/mn/zaynab-mohamed.jpg",
+  "photoSourceUrl": "https://www.senate.mn/graphics/63Mohamed.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-63",
+  "jurisdiction": "Minnesota Senate",
+  "county": [
+    "Minnesota"
+  ],
+  "termStart": "2023-01-03",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 2103, Minnesota Senate Building 95 University Ave. West, St. Paul, MN 55155",
+    "phone": "651-296-4274",
+    "email": "sen.zaynab.mohamed@senate.mn",
+    "website": "https://www.senate.mn/members/member_bio.html?mem_id=1273"
+  },
+  "bio": "Zaynab Mohamed serves as State Senator for Minnesota Senate District 63. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "MN",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.senate.mn/members/member_bio.html?mem_id=1273"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/mn/legislature/Zaynab-Mohamed-332e30b5-dc8d-4074-9c16-6e2a6255d135.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://www.senate.mn/graphics/63Mohamed.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Zaynab_Mohamed"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Zaynab_Mohamed"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/207883/zaynab-mohamed"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/zaynab-mohamed-161323157"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.senate.mn/api/members"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

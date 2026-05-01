@@ -1,0 +1,70 @@
+{
+  "id": "ryan-clancy",
+  "name": "Ryan Clancy",
+  "firstName": "Ryan",
+  "lastName": "Clancy",
+  "photo": "/images/officials/state-legislature/wi/ryan-clancy.jpg",
+  "photoSourceUrl": "https://docs.legis.wisconsin.gov/2023/legislators/assembly/2538.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "Assemblymember",
+  "district": "HD-19",
+  "jurisdiction": "Wisconsin State Assembly",
+  "county": [
+    "Wisconsin"
+  ],
+  "termStart": "2023-01-03",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "email": "rep.clancy@legis.wisconsin.gov",
+    "website": "https://docs.legis.wisconsin.gov/2023/legislators/assembly/2538"
+  },
+  "bio": "Ryan Clancy serves as Assemblymember for Wisconsin State Assembly District 19. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "WI",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://docs.legis.wisconsin.gov/2023/legislators/assembly/2538"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/wi/legislature/Ryan-Clancy-91423371-a92c-4006-ad7d-e21f2f7e666b.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://docs.legis.wisconsin.gov/2023/legislators/assembly/2538.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Ryan_Clancy"
+    },
+    {
+      "title": "Public source",
+      "url": "https://docs.legis.wisconsin.gov/2023/legislators/assembly"
+    },
+    {
+      "title": "members list page",
+      "url": "https://docs.legis.wisconsin.gov/2023/legislators/assembly/"
+    },
+    {
+      "title": "Public source",
+      "url": "https://docs.legis.wisconsin.gov/2025/legislators/assembly/2721"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Ryan_Clancy"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/196602/ryan-clancy"
+    },
+    {
+      "title": "Public source",
+      "url": "https://legis.wisconsin.gov/assembly/19/clancy"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

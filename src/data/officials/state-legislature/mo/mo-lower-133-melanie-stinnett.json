@@ -1,0 +1,64 @@
+{
+  "id": "melanie-stinnett",
+  "name": "Melanie Stinnett",
+  "firstName": "Melanie",
+  "lastName": "Stinnett",
+  "photo": "/images/officials/state-legislature/mo/melanie-stinnett.jpg",
+  "photoSourceUrl": "https://house.mo.gov/MemberPhoto.aspx?id=2399",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-133",
+  "jurisdiction": "Missouri House of Representatives",
+  "county": [
+    "Missouri"
+  ],
+  "termStart": "2023-01-04",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 203-C, 201 W. Capitol Ave., Jefferson City, MO 65101",
+    "phone": "573-751-0136",
+    "email": "melanie.stinnett@house.mo.gov",
+    "website": "https://house.mo.gov/MemberDetails.aspx?district=133"
+  },
+  "bio": "Melanie Stinnett serves as State Representative for Missouri House of Representatives District 133. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "MO",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://house.mo.gov/MemberDetails.aspx?district=133"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/mo/legislature/Melanie-Stinnett-1df6dc2e-0d12-40d6-b368-4d0b3a19ef95.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://house.mo.gov/MemberPhoto.aspx?id=2399"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Melanie_Stinnett"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Melanie_Stinnett"
+    },
+    {
+      "title": "Public source",
+      "url": "https://house.mo.gov/MemberDetails.aspx?year=2023&code=R&district=133"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/205801/melanie-stinnett"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/melanie-stinnett-07264673"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

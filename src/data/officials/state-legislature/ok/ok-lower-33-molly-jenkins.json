@@ -1,0 +1,56 @@
+{
+  "id": "molly-jenkins",
+  "name": "Molly Jenkins",
+  "firstName": "Molly",
+  "lastName": "Jenkins",
+  "photo": "/images/officials/state-legislature/ok/molly-jenkins.jpg",
+  "photoSourceUrl": "https://www.cushingcitizen.com/sites/cushingcitizen.com/files/styles/article_420/public/3d8c9a84be_Ar00503010.jpg?itok=QUjuCFyZ",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-33",
+  "jurisdiction": "Oklahoma House of Representatives",
+  "county": [
+    "Oklahoma"
+  ],
+  "termStart": "2024-11-20",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 340, 2300 N. Lincoln Blvd., Oklahoma City, OK 73105",
+    "phone": "405-557-7304",
+    "email": "molly.jenkins@okhouse.gov",
+    "website": "https://www.okhouse.gov/representatives/molly-jenkins"
+  },
+  "bio": "Molly Jenkins serves as State Representative for Oklahoma House of Representatives District 33. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "OK",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.okhouse.gov/representatives/molly-jenkins"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ok/legislature/Molly-Jenkins-82b98199-7b85-488b-b5e8-7f135aad668f.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://www.cushingcitizen.com/sites/cushingcitizen.com/files/styles/article_420/public/3d8c9a84be_Ar00503010.jpg?itok=QUjuCFyZ"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Molly_Jenkins"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Molly_Jenkins"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.okhouse.gov/representatives/molly.jenkins"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

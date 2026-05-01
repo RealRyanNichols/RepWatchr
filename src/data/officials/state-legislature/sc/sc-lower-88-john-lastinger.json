@@ -1,0 +1,53 @@
+{
+  "id": "john-lastinger",
+  "name": "John Lastinger",
+  "firstName": "John",
+  "lastName": "Lastinger",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-88",
+  "jurisdiction": "South Carolina House of Representatives",
+  "county": [
+    "South Carolina"
+  ],
+  "termStart": "2026-01-06",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 323A, Blatt Building P.O. Box 11867, Columbia, SC 29201",
+    "phone": "803-212-6726",
+    "email": "johnlastinger@schouse.gov",
+    "website": "https://www.scstatehouse.gov/member.php?code=1066761236"
+  },
+  "bio": "John Lastinger serves as State Representative for South Carolina House of Representatives District 88. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "SC",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.scstatehouse.gov/member.php?code=1066761236"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/sc/legislature/John-Lastinger-708261ba-00bd-4cef-bd7e-bd80de59b101.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/John_Lastinger"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/John_Thomas_Lastinger"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/191624/john-lastinger"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/john-lastinger-jr-4a068691"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

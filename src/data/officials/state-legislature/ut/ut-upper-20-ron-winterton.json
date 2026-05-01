@@ -1,0 +1,65 @@
+{
+  "id": "ron-winterton",
+  "name": "Ron Winterton",
+  "firstName": "Ron",
+  "lastName": "Winterton",
+  "party": "R",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-20",
+  "jurisdiction": "Utah Senate",
+  "county": [
+    "Utah"
+  ],
+  "termStart": "2023-01-01",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "P.O. Box 145115 350 N. State St., Suite 320, Salt Lake City, UT 84114",
+    "phone": "435-823-2727",
+    "email": "rwinterton@le.utah.gov",
+    "website": "https://disclosures.utah.gov/Search/PublicSearch/FolderDetails/1414932"
+  },
+  "bio": "Ron Winterton serves as State Senator for Utah Senate District 20. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "UT",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://disclosures.utah.gov/Search/PublicSearch/FolderDetails/1414932"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ut/legislature/Ronald-Winterton-5079192a-3d15-4a00-b0c7-2cf29d320035.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Ronald_Winterton"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Ronald_Winterton"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/114224/ronald-winterton"
+    },
+    {
+      "title": "Public source",
+      "url": "https://le.utah.gov/data/legislators.json"
+    },
+    {
+      "title": "Public source",
+      "url": "https://senate.utah.gov/sen/WINTER"
+    },
+    {
+      "title": "Public source",
+      "url": "https://senate.utah.gov/sen/WINTER/"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/ronald-winterton-83144945"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

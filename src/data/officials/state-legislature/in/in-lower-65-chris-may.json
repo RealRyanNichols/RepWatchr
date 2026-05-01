@@ -1,0 +1,72 @@
+{
+  "id": "chris-may",
+  "name": "Chris May",
+  "firstName": "Chris",
+  "lastName": "May",
+  "photo": "/images/officials/state-legislature/in/chris-may.jpg",
+  "photoSourceUrl": "https://www.indianahouserepublicans.com/clientuploads/directory/members/Main_List/May_mainlist2.png",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-65",
+  "jurisdiction": "Indiana House of Representatives",
+  "county": [
+    "Indiana"
+  ],
+  "termStart": "2016-11-09",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "200 W. Washington St., Indianapolis, IN 46204",
+    "phone": "317-232-9600",
+    "email": "h65@iga.in.gov",
+    "website": "https://iga.in.gov/legislative/2019/legislators/legislator_chris_may_1/"
+  },
+  "bio": "Chris May serves as State Representative for Indiana House of Representatives District 65. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "IN",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://iga.in.gov/legislative/2019/legislators/legislator_chris_may_1/"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/in/legislature/Chris-May-f1571a79-9c64-42b2-82d2-ec9f512722eb.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://www.indianahouserepublicans.com/clientuploads/directory/members/Main_List/May_mainlist2.png"
+    },
+    {
+      "title": "Public source",
+      "url": "https://api.iga.in.gov/2021/legislators/chris_may_1"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Christopher_May"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Christopher_May"
+    },
+    {
+      "title": "Public source",
+      "url": "https://iga.in.gov/legislative/2019/legislators/legislator_chris_may_1"
+    },
+    {
+      "title": "Public source",
+      "url": "https://iga.in.gov/legislative/2021/legislators/legislator_chris_may_1"
+    },
+    {
+      "title": "Public source",
+      "url": "https://iga.in.gov/legislative/2024/legislators/legislator_chris_may_1"
+    },
+    {
+      "title": "Public source",
+      "url": "https://iga.in.gov/legislative/2026/legislators/legislator_chris_may_1"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

@@ -1,0 +1,60 @@
+{
+  "id": "chris-ryan",
+  "name": "Chris Ryan",
+  "firstName": "Chris",
+  "lastName": "Ryan",
+  "photo": "/images/officials/state-legislature/ny/chris-ryan.jpg",
+  "photoSourceUrl": "https://images.squarespace-cdn.com/content/v1/66bb81005c9c9e5a6b4e499f/e85a6952-dc93-4557-a1b4-bd4e8471565b/chris+stand+serious.jpg?format=2500w",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-50",
+  "jurisdiction": "New York Senate",
+  "county": [
+    "New York"
+  ],
+  "termStart": "2025-01-01",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 946, Legislative Office Building 188 State St., Albany, NY 12247",
+    "phone": "518-455-3511",
+    "email": "chrisryan@nysenate.gov",
+    "website": "https://www.nysenate.gov/senators/christopher-j-ryan"
+  },
+  "bio": "Chris Ryan serves as State Senator for New York Senate District 50. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "NY",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.nysenate.gov/senators/christopher-j-ryan"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ny/legislature/Chris-Ryan-58b03f1c-af64-4079-8c24-e76dd0028166.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://images.squarespace-cdn.com/content/v1/66bb81005c9c9e5a6b4e499f/e85a6952-dc93-4557-a1b4-bd4e8471565b/chris+stand+serious.jpg?format=2500w"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Christopher_Ryan_(New_York)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Chris_Ryan_(politician)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/145217/christopher-ryan"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.ongov.net/legislature/ChrisRyanBio.html"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

@@ -1,0 +1,69 @@
+{
+  "id": "cory-tomczyk",
+  "name": "Cory Tomczyk",
+  "firstName": "Cory",
+  "lastName": "Tomczyk",
+  "party": "R",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-29",
+  "jurisdiction": "Wisconsin Senate",
+  "county": [
+    "Wisconsin"
+  ],
+  "termStart": "2023-01-03",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "State Capitol Room 310 South, P.O. Box 7882 , 2 E. Main St., Madison, WI 53707",
+    "phone": "608-266-2502",
+    "email": "sen.tomczyk@legis.wisconsin.gov",
+    "website": "https://docs.legis.wisconsin.gov/2023/legislators/senate/2567"
+  },
+  "bio": "Cory Tomczyk serves as State Senator for Wisconsin Senate District 29. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "WI",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://docs.legis.wisconsin.gov/2023/legislators/senate/2567"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/wi/legislature/Cory-Tomczyk-365aa5a9-3584-4baa-86b5-51f096764f69.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Cory_Tomczyk"
+    },
+    {
+      "title": "Public source",
+      "url": "https://docs.legis.wisconsin.gov/2023/legislators/senate"
+    },
+    {
+      "title": "members list page",
+      "url": "https://docs.legis.wisconsin.gov/2023/legislators/senate/"
+    },
+    {
+      "title": "Public source",
+      "url": "https://docs.legis.wisconsin.gov/2025/legislators/senate/2831"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Cory_Tomczyk"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/208136/cory-tomczyk"
+    },
+    {
+      "title": "Public source",
+      "url": "https://legis.wisconsin.gov/senate/29/tomczyk"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/cory-tomczyk-65335125"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

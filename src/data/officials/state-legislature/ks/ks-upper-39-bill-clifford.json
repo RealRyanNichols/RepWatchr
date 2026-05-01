@@ -1,0 +1,69 @@
+{
+  "id": "bill-clifford",
+  "name": "Bill Clifford",
+  "firstName": "Bill",
+  "lastName": "Clifford",
+  "party": "R",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-39",
+  "jurisdiction": "Kansas Senate",
+  "county": [
+    "Kansas"
+  ],
+  "termStart": "2025-01-13",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "State Capitol Room 236-E, Kansas  Building 300 SW 10th St., Topeka, KS 66612",
+    "phone": "785-296-7694",
+    "email": "william.clifford@senate.ks.gov",
+    "website": "https://www.kslegislature.gov/li/b2025_26/members/sen_clifford_william_1/"
+  },
+  "bio": "Bill Clifford serves as State Senator for Kansas Senate District 39. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "KS",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.kslegislature.gov/li/b2025_26/members/sen_clifford_william_1/"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ks/legislature/Bill-Clifford-463dcd61-1bf6-4182-ae6f-a840e43ea7fe.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Bill_Clifford"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/192418/bill-clifford"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.kslegislature.gov/li/b2025_26/members/sen_clifford_william_1"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.kslegislature.org/li/api/v11/rev-1/members/rep_clifford_bill_1"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.kslegislature.org/li/api/v11/rev-1/members/rep_clifford_bill_1/"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.kslegislature.org/li/b2023_24/members/rep_clifford_bill_1"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.kslegislature.org/li/b2023_24/members/rep_clifford_bill_1/"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/bill-clifford-902627110"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

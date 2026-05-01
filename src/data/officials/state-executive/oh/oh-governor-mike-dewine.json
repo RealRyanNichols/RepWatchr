@@ -1,0 +1,39 @@
+{
+  "id": "mike-dewine",
+  "name": "Mike DeWine",
+  "firstName": "Mike",
+  "lastName": "DeWine",
+  "party": "R",
+  "level": "state",
+  "position": "Governor",
+  "district": "Ohio",
+  "jurisdiction": "Ohio statewide public office",
+  "county": [
+    "Ohio"
+  ],
+  "termStart": "2019-01-14",
+  "termEnd": "2027-01-11",
+  "contactInfo": {
+    "office": "Riffe Center, 30th Floor, 77 South High Street, Columbus, OH 43215-6117",
+    "website": "https://governor.ohio.gov/wps/portal/gov/governor/",
+    "socialMedia": {
+      "x": "https://x.com/govmikedewine",
+      "twitter": "https://x.com/govmikedewine"
+    }
+  },
+  "bio": "Mike DeWine is listed as Governor for Ohio. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "OH",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://governor.ohio.gov/wps/portal/gov/governor/"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/oh/executive/Mike-DeWine-37478cd9-ed21-43f7-b2cc-578df43ad32d.yml"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

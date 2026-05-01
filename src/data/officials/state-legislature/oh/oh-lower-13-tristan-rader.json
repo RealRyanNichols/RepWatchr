@@ -1,0 +1,56 @@
+{
+  "id": "tristan-rader",
+  "name": "Tristan Rader",
+  "firstName": "Tristan",
+  "lastName": "Rader",
+  "photo": "/images/officials/state-legislature/oh/tristan-rader.jpg",
+  "photoSourceUrl": "https://s3.amazonaws.com/ballotpedia-api4/files/thumbs/200/300/TristanRader2.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-13",
+  "jurisdiction": "Ohio House of Representatives",
+  "county": [
+    "Ohio"
+  ],
+  "termStart": "2025-01-01",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "77 S. High St. 10th Floor, Columbus, OH 43215",
+    "phone": "614-466-5921",
+    "email": "rep13@ohiohouse.gov",
+    "website": "https://ohiohouse.gov/members/tristan-rader"
+  },
+  "bio": "Tristan Rader serves as State Representative for Ohio House of Representatives District 13. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "OH",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://ohiohouse.gov/members/tristan-rader"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/oh/legislature/Tristan-Rader-18864718-3e48-4236-9afb-b1a61e4c52e2.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://s3.amazonaws.com/ballotpedia-api4/files/thumbs/200/300/TristanRader2.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Tristan_Rader"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ohiohouse.gov/members/tristan-rader/biography"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/twrader"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

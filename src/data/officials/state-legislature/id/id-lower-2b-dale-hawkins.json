@@ -1,0 +1,68 @@
+{
+  "id": "dale-hawkins",
+  "name": "Dale Hawkins",
+  "firstName": "Dale",
+  "lastName": "Hawkins",
+  "photo": "/images/officials/state-legislature/id/dale-hawkins.jpg",
+  "photoSourceUrl": "https://legislature.idaho.gov/wp-content/uploads/sessioninfo/2023/directory/Hawkins7855.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-2B",
+  "jurisdiction": "Idaho House of Representatives",
+  "county": [
+    "Idaho"
+  ],
+  "termStart": "2022-12-01",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "P.O. Box 83720 700 W. Jefferson St., Boise, ID 83720",
+    "phone": "208-332-1070",
+    "email": "dhawkins@house.idaho.gov",
+    "website": "https://legislature.idaho.gov/legislators/membership/2023/id7855/"
+  },
+  "bio": "Dale Hawkins serves as State Representative for Idaho House of Representatives District 2B. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "ID",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://legislature.idaho.gov/legislators/membership/2023/id7855/"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/id/legislature/Dale-R-Hawkins-d9426884-2195-45ee-8130-4a8cf0d61adf.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://legislature.idaho.gov/wp-content/uploads/sessioninfo/2023/directory/Hawkins7855.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Dale_Hawkins"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Dale_Hawkins_(politician)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://legislature.idaho.gov/house/membership"
+    },
+    {
+      "title": "Public source",
+      "url": "https://legislature.idaho.gov/house/membership/"
+    },
+    {
+      "title": "Public source",
+      "url": "https://legislature.idaho.gov/legislators/membership/2023/id7855"
+    },
+    {
+      "title": "Public source",
+      "url": "https://legislature.idaho.gov/legislators/membership/2026/id7855"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

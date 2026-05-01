@@ -1,0 +1,72 @@
+{
+  "id": "penni-mcclammy",
+  "name": "Penni McClammy",
+  "firstName": "Penni",
+  "lastName": "McClammy",
+  "photo": "/images/officials/state-legislature/al/penni-mcclammy.jpg",
+  "photoSourceUrl": "https://www.legislature.state.al.us/pdf/house/members/mcclammy.png",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-76",
+  "jurisdiction": "Alabama House of Representatives",
+  "county": [
+    "Alabama"
+  ],
+  "termStart": "2021-11-17",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 528-D, 11 S. Union St., Montgomery, AL 36130",
+    "phone": "334-261-0580",
+    "email": "patrice.mcclammy@alhouse.gov",
+    "website": "https://alison.legislature.state.al.us/house-leaders-members"
+  },
+  "bio": "Penni McClammy serves as State Representative for Alabama House of Representatives District 76. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "AL",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://alison.legislature.state.al.us/house-leaders-members"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/al/legislature/Patrice-Mcclammy-c4b563a3-2b20-4c2d-8f54-2b7ed6a3af3f.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://www.legislature.state.al.us/pdf/house/members/mcclammy.png"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Patrice_McClammy"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Patrice_McClammy"
+    },
+    {
+      "title": "graphql endpoint for member information",
+      "url": "https://gql.api.alison.legislature.state.al.us/graphql"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/188318/patrice-mcclammy"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.legislature.state.al.us/aliswww/ISD/ALRepresentative.aspx?NAME=McClammy&OID_SPONSOR=111050&OID_PERSON=1101&SESSNAME="
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.legislature.state.al.us/aliswww/ISD/House/ALRepresentatives.aspx"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/penni-mcclammy-30a5818"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

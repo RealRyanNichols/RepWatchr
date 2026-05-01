@@ -1,0 +1,71 @@
+{
+  "id": "bo-biteman",
+  "name": "Bo Biteman",
+  "firstName": "Bo",
+  "lastName": "Biteman",
+  "photo": "/images/officials/state-legislature/wy/bo-biteman.jpg",
+  "photoSourceUrl": "https://wyoleg.gov/LegislatorSummary/Photos/68th-BitemanBo.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-21",
+  "jurisdiction": "Wyoming Senate",
+  "county": [
+    "Wyoming"
+  ],
+  "termStart": "2019-01-07",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "State Capitol 200 W. 24th St., Cheyenne, WY 82002",
+    "email": "bo.biteman@wyoleg.gov",
+    "website": "https://www.wyoleg.gov/Legislators/2018/H/2044"
+  },
+  "bio": "Bo Biteman serves as State Senator for Wyoming Senate District 21. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "WY",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.wyoleg.gov/Legislators/2018/H/2044"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/wy/legislature/Bo-Biteman-016465da-4d49-4ffc-8bb0-cf9528bc6d0e.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://wyoleg.gov/LegislatorSummary/Photos/68th-BitemanBo.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Bo_Biteman"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Bo_Biteman"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/171297/bo-biteman"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/bobiteman"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.wyoleg.gov/Legislators/2023/S/2044"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.wyoleg.gov/Legislators/2025/S/2044"
+    },
+    {
+      "title": "Public source",
+      "url": "https://wyoleg.gov/Legislators/2019/R/2044"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

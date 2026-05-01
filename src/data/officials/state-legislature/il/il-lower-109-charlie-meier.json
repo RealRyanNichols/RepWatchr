@@ -1,0 +1,72 @@
+{
+  "id": "charlie-meier",
+  "name": "Charlie Meier",
+  "firstName": "Charlie",
+  "lastName": "Meier",
+  "photo": "/images/officials/state-legislature/il/charlie-meier.jpg",
+  "photoSourceUrl": "https://cdn.ilga.gov/assets/img/members/{9D43D019-A58A-47EC-B769-A7050C4B49DB}.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-109",
+  "jurisdiction": "Illinois House of Representatives",
+  "county": [
+    "Illinois"
+  ],
+  "termStart": "2023-01-11",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 200-5N, Stratton Office Building, Springfield, IL 62706",
+    "phone": "217-782-6401",
+    "email": "repcmeier@gmail.com",
+    "website": "https://charliemeier.net/"
+  },
+  "bio": "Charlie Meier serves as State Representative for Illinois House of Representatives District 109. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "IL",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://charliemeier.net/"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/il/legislature/Charles-E-Meier-c425f2ef-cad0-4dad-93c4-be11b80af613.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://cdn.ilga.gov/assets/img/members/{9D43D019-A58A-47EC-B769-A7050C4B49DB}.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Charles_E._Meier"
+    },
+    {
+      "title": "Public source",
+      "url": "https://charliemeier.net"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Charles_Meier"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ilga.gov/house/default.asp?GA=101"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ilga.gov/house/default.asp?GA=102"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ilga.gov/house/default.asp?GA=103"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ilga.gov/house/Rep.asp?GA=101&MemberID=2642"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

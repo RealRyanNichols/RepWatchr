@@ -1,0 +1,49 @@
+{
+  "id": "michelle-boyer",
+  "name": "Michelle Boyer",
+  "firstName": "Michelle",
+  "lastName": "Boyer",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-123",
+  "jurisdiction": "Maine House of Representatives",
+  "county": [
+    "Maine"
+  ],
+  "termStart": "2024-12-03",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 333, House Democratic Office 2 State House Station, Augusta, ME 04333",
+    "phone": "800-423-2900",
+    "email": "michelle.boyer@legislature.maine.gov",
+    "website": "https://legislature.maine.gov/house/house/MemberProfiles/Details/3138"
+  },
+  "bio": "Michelle Boyer serves as State Representative for Maine House of Representatives District 123. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "ME",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://legislature.maine.gov/house/house/MemberProfiles/Details/3138"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/me/legislature/Michelle-Boyer-0b6557f4-ce52-460b-99af-ec88b847d81a.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Michelle_Boyer"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/michelle-boyer-62033614"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.maine.gov/housedems/node/4079"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

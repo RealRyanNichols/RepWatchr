@@ -1,0 +1,69 @@
+{
+  "id": "joe-emrick",
+  "name": "Joe Emrick",
+  "firstName": "Joe",
+  "lastName": "Emrick",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-137",
+  "jurisdiction": "Pennsylvania House of Representatives",
+  "county": [
+    "Pennsylvania"
+  ],
+  "termStart": "2011-01-04",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 401, Irvis Office Building P.O. Box 202137, Harrisburg, PA 17120",
+    "phone": "717-260-6159",
+    "email": "jemrick@pahousegop.com",
+    "website": "https://www.legis.state.pa.us/cfdocs/legis/home/member_information/House_bio.cfm?id=1207",
+    "socialMedia": {
+      "facebook": "https://facebook.com/RepEmrick",
+      "youtube": "https://youtube.com/RepEmrick"
+    }
+  },
+  "bio": "Joe Emrick serves as State Representative for Pennsylvania House of Representatives District 137. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "PA",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.legis.state.pa.us/cfdocs/legis/home/member_information/House_bio.cfm?id=1207"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/pa/legislature/Joe-Emrick-0e873ea0-c8a2-4fbb-a408-de0c5bd36de9.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Joe_Emrick"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Joe_Emrick"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/47029/joe-emrick"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.legis.state.pa.us/cfdocs/legis/home/member_information/mbrList.cfm?body=H&sort=alpha"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.legis.state.pa.us/cfdocs/legis/home/member_information/representatives_alpha.cfm"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.palegis.us/house/members/bio/1207/rep-emrick"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.repemrick.com"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

@@ -1,0 +1,65 @@
+{
+  "id": "jeff-bradley",
+  "name": "Jeff Bradley",
+  "firstName": "Jeff",
+  "lastName": "Bradley",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-123",
+  "jurisdiction": "South Carolina House of Representatives",
+  "county": [
+    "South Carolina"
+  ],
+  "termStart": "2014-11-10",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 202, Blatt Building P.O. Box 11867, Columbia, SC 29201",
+    "phone": "803-212-6815",
+    "email": "jeffbradley@schouse.gov",
+    "website": "https://scstatehouse.gov/member.php?code=0171590889"
+  },
+  "bio": "Jeff Bradley serves as State Representative for South Carolina House of Representatives District 123. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "SC",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://scstatehouse.gov/member.php?code=0171590889"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/sc/legislature/Jeffrey-A-Jeff-Bradley-99dd735b-3ab4-4362-a2c5-f1b5c9257e52.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Jeff_Bradley"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Jeff_Bradley_(politician)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/152611/jeff-bradley"
+    },
+    {
+      "title": "Public source",
+      "url": "https://scstatehouse.gov/member.php?chamber=H"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/jeff-bradley-4a85a378"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.scstatehouse.gov/member.php?chamber=H"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.scstatehouse.gov/member.php?code=0171590889"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

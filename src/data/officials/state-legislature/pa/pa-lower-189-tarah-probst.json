@@ -1,0 +1,66 @@
+{
+  "id": "tarah-probst",
+  "name": "Tarah Probst",
+  "firstName": "Tarah",
+  "lastName": "Probst",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-189",
+  "jurisdiction": "Pennsylvania House of Representatives",
+  "county": [
+    "Pennsylvania"
+  ],
+  "termStart": "2022-12-01",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 5A, East Wing P.O. Box 202189, Harrisburg, PA 17120",
+    "phone": "717-772-1421",
+    "email": "repprobst@pahouse.net",
+    "website": "https://www.legis.state.pa.us/cfdocs/legis/home/member_information/House_bio.cfm?id=1982",
+    "socialMedia": {
+      "x": "https://x.com/RepProbst",
+      "twitter": "https://x.com/RepProbst",
+      "facebook": "https://facebook.com/RepProbst"
+    }
+  },
+  "bio": "Tarah Probst serves as State Representative for Pennsylvania House of Representatives District 189. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "PA",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.legis.state.pa.us/cfdocs/legis/home/member_information/House_bio.cfm?id=1982"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/pa/legislature/Tarah-Probst-8caab7df-f601-45f0-9be5-35d94175e766.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Tarah_Probst"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Tarah_Probst"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/179199/tarah-probst"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.legis.state.pa.us/cfdocs/legis/home/member_information/mbrList.cfm?body=H&sort=alpha"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.pahouse.com/Probst"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.palegis.us/house/members/bio/1982/rep-probst"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

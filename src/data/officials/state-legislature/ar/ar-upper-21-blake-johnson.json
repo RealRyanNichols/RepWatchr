@@ -1,0 +1,77 @@
+{
+  "id": "blake-johnson",
+  "name": "Blake Johnson",
+  "firstName": "Blake",
+  "lastName": "Johnson",
+  "photo": "/images/officials/state-legislature/ar/blake-johnson.jpg",
+  "photoSourceUrl": "https://www.arkleg.state.ar.us/Content/photos/2023/Senate/509_sm.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-21",
+  "jurisdiction": "Arkansas Senate",
+  "county": [
+    "Arkansas"
+  ],
+  "termStart": "2023-01-09",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "State Capitol Building 500 Woodlane St., Suite 320, Little Rock, AR 72201",
+    "phone": "501-682-2902",
+    "email": "blake.johnson@senate.ar.gov",
+    "website": "https://arkleg.state.ar.us/Legislators/Detail?member=B.+Johnson",
+    "socialMedia": {
+      "x": "https://x.com/farmerblake20",
+      "twitter": "https://x.com/farmerblake20",
+      "facebook": "https://facebook.com/BlakeJohnsonForStateSenate"
+    }
+  },
+  "bio": "Blake Johnson serves as State Senator for Arkansas Senate District 21. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "AR",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://arkleg.state.ar.us/Legislators/Detail?member=B.+Johnson"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ar/legislature/Blake-Johnson-6bbe436a-67bc-4003-80eb-1ce79c52413f.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://www.arkleg.state.ar.us/Content/photos/2023/Senate/509_sm.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Blake_Johnson"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Blake_Johnson_(Arkansas_politician)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/136741/blake-johnson"
+    },
+    {
+      "title": "Public source",
+      "url": "https://senate.arkansas.gov/senators/509"
+    },
+    {
+      "title": "Public source",
+      "url": "https://senate.arkansas.gov/senators/blake-johnson"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.arkleg.state.ar.us/Legislators/Detail?member=B.+Johnson"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.arkleg.state.ar.us/Legislators/Detail?member=B.+Johnson&ddBienniumSession=2019%2F2020F"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

@@ -1,0 +1,57 @@
+{
+  "id": "celeste-rodriguez",
+  "name": "Celeste Rodriguez",
+  "firstName": "Celeste",
+  "lastName": "Rodriguez",
+  "party": "D",
+  "level": "state",
+  "position": "Assemblymember",
+  "district": "HD-43",
+  "jurisdiction": "California State Assembly",
+  "county": [
+    "California"
+  ],
+  "termStart": "2024-12-02",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 4320, 1021 O St. P.O. Box 942849, Sacramento, CA 94249",
+    "phone": "916-319-2043",
+    "email": "assemblymember.celesterodriguez@assembly.ca.gov",
+    "website": "https://a43.asmdc.org/"
+  },
+  "bio": "Celeste Rodriguez serves as Assemblymember for California State Assembly District 43. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "CA",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://a43.asmdc.org/"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ca/legislature/Celeste-Rodriguez-1dbf574d-4c03-40ce-8c30-a6727c4bd5ab.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://a43.asmdc.org"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Celeste_Rodriguez"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Celeste_Rodriguez"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.assembly.ca.gov/assemblymembers/43"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/celeste-t-rodriguez"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

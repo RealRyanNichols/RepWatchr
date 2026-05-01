@@ -1,0 +1,53 @@
+{
+  "id": "dylan-wegela",
+  "name": "Dylan Wegela",
+  "firstName": "Dylan",
+  "lastName": "Wegela",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-26",
+  "jurisdiction": "Michigan House of Representatives",
+  "county": [
+    "Michigan"
+  ],
+  "termStart": "2023-01-01",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room N-790, Anderson House Office Building 124 N. Capitol Ave., Lansing, MI 48933",
+    "phone": "517-373-3818",
+    "email": "dylanwegela@house.mi.gov",
+    "website": "https://housedems.com/Dylan-Wegela/"
+  },
+  "bio": "Dylan Wegela serves as State Representative for Michigan House of Representatives District 26. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "MI",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://housedems.com/Dylan-Wegela/"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/mi/legislature/Dylan-Wegela-07ff51f1-6cd0-4004-b618-bc70e5a2e551.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Dylan_Wegela"
+    },
+    {
+      "title": "Public source",
+      "url": "https://housedems.com/Dylan-Wegela"
+    },
+    {
+      "title": "Public source",
+      "url": "https://housedems.com/dylan-wegela/about"
+    },
+    {
+      "title": "Members List Page",
+      "url": "https://www.house.mi.gov/AllRepresentatives"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

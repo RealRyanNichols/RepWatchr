@@ -1,0 +1,74 @@
+{
+  "id": "david-livingston",
+  "name": "David Livingston",
+  "firstName": "David",
+  "lastName": "Livingston",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-28",
+  "jurisdiction": "Arizona House of Representatives",
+  "county": [
+    "Arizona"
+  ],
+  "termStart": "2023-01-09",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 222, 1700 W. Washington St., Phoenix, AZ 85007",
+    "phone": "602-926-4178",
+    "email": "dlivingston@azleg.gov",
+    "website": "https://www.azleg.gov/house-member/?legislature=56&legislator=2175&session=128",
+    "socialMedia": {
+      "x": "https://x.com/livingstonld22",
+      "twitter": "https://x.com/livingstonld22",
+      "facebook": "https://facebook.com/votelivingston"
+    }
+  },
+  "bio": "David Livingston serves as State Representative for Arizona House of Representatives District 28. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "AZ",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.azleg.gov/house-member/?legislature=56&legislator=2175&session=128"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/az/legislature/David-Livingston-6e8f2c0d-c9d3-4cb5-ae59-5264cb6d61a7.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/David_Livingston"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/David_Livingston_(politician)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/141496/david-livingston"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.azleg.gov/house-member/?legislature=57&session=129&legislator=2319"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.azleg.gov/memberroster/?body=H"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.azleg.gov/MemberRoster/?body=S"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.azleg.gov/memberroster/?body=S"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.azleg.gov/senate-member/?legislature=55&legislator=1976"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

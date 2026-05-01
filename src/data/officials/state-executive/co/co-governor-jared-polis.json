@@ -1,0 +1,41 @@
+{
+  "id": "jared-polis",
+  "name": "Jared Polis",
+  "firstName": "Jared",
+  "lastName": "Polis",
+  "party": "D",
+  "level": "state",
+  "position": "Governor",
+  "district": "Colorado",
+  "jurisdiction": "Colorado statewide public office",
+  "county": [
+    "Colorado"
+  ],
+  "termStart": "2019-01-08",
+  "termEnd": "2027-01-12",
+  "contactInfo": {
+    "office": "State Capitol Building; 200 E. Colfax Ave., Rm. 136; Denver, CO 80203",
+    "phone": "303-866-2471",
+    "email": "Governorpolis@state.co.us",
+    "website": "https://www.colorado.gov/governor",
+    "socialMedia": {
+      "x": "https://x.com/govofco",
+      "twitter": "https://x.com/govofco"
+    }
+  },
+  "bio": "Jared Polis is listed as Governor for Colorado. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "CO",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.colorado.gov/governor"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/co/executive/Jared-Polis-be56ceea-ca7e-46b1-acdd-d4266e9d2893.yml"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

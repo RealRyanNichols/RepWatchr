@@ -1,0 +1,68 @@
+{
+  "id": "mark-fisher",
+  "name": "Mark Fisher",
+  "firstName": "Mark",
+  "lastName": "Fisher",
+  "photo": "/images/officials/state-legislature/md/mark-fisher.jpg",
+  "photoSourceUrl": "http://mgaleg.maryland.gov/2016RS/images/fisher.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "Delegate",
+  "district": "HD-27C",
+  "jurisdiction": "Maryland House of Delegates",
+  "county": [
+    "Maryland"
+  ],
+  "termStart": "2015-01-14",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 422, Lowe House Office Building 6 Bladen St., Annapolis, MD 21401",
+    "phone": "410-841-3231",
+    "email": "mark.fisher@house.maryland.gov",
+    "website": "https://mgaleg.maryland.gov/mgawebsite/Members/Details/fisher"
+  },
+  "bio": "Mark Fisher serves as Delegate for Maryland House of Delegates District 27C. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "MD",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://mgaleg.maryland.gov/mgawebsite/Members/Details/fisher"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/md/legislature/Mark-N-Fisher-77d4130a-be8c-46a7-adc4-08ecd11ea6ee.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "http://mgaleg.maryland.gov/2016RS/images/fisher.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Mark_Fisher_(Maryland)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Mark_N._Fisher"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/125911/mark-fisher"
+    },
+    {
+      "title": "Public source",
+      "url": "https://mgaleg.maryland.gov/webmga/frmMain.aspx?pid=sponpage&tab=subject6&id=fisher&stab=01"
+    },
+    {
+      "title": "Public source",
+      "url": "https://msa.maryland.gov/msa/mdmanual/06hse/html/msa15454.html"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/mark-fisher-28375537"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

@@ -1,0 +1,56 @@
+{
+  "id": "holly-jones",
+  "name": "Holly Jones",
+  "firstName": "Holly",
+  "lastName": "Jones",
+  "photo": "/images/officials/state-legislature/mo/holly-jones.jpg",
+  "photoSourceUrl": "https://house.mo.gov/MemberPhoto.aspx?id=2388",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-88",
+  "jurisdiction": "Missouri House of Representatives",
+  "county": [
+    "Missouri"
+  ],
+  "termStart": "2023-01-04",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 203-B, 201 W. Capitol Ave., Jefferson City, MO 65101",
+    "phone": "573-751-7535",
+    "email": "holly.jones@house.mo.gov",
+    "website": "https://house.mo.gov/MemberDetails.aspx?district=088"
+  },
+  "bio": "Holly Jones serves as State Representative for Missouri House of Representatives District 88. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "MO",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://house.mo.gov/MemberDetails.aspx?district=088"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/mo/legislature/Holly-Jones-c47d84db-02de-4687-bd5b-c6dbc71cc8c4.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://house.mo.gov/MemberPhoto.aspx?id=2388"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Holly_Jones_(Missouri)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://house.mo.gov/MemberDetails.aspx?year=2023&code=R&district=088"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/holly-m-jones-61658018"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

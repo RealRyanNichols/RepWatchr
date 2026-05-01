@@ -1,0 +1,71 @@
+{
+  "id": "mary-schneider",
+  "name": "Mary Schneider",
+  "firstName": "Mary",
+  "lastName": "Schneider",
+  "photo": "/images/officials/state-legislature/nd/mary-schneider.jpg",
+  "photoSourceUrl": "https://www.ndlegis.gov/sites/default/files/styles/member_list_photo/public/person/photo/mschneider2023.jpg?itok=2DAOpzXC",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-21",
+  "jurisdiction": "North Dakota House of Representatives",
+  "county": [
+    "North Dakota"
+  ],
+  "termStart": "2014-12-01",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "State Capitol 600 E. Boulevard Ave., Bismarck, ND 58505",
+    "email": "mschneider@ndlegis.gov",
+    "website": "https://ndlegis.gov/biography/mary-schneider"
+  },
+  "bio": "Mary Schneider serves as State Representative for North Dakota House of Representatives District 21. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "ND",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://ndlegis.gov/biography/mary-schneider"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/nd/legislature/Mary-Schneider-891c379b-f866-4029-9f52-a416b5005272.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://www.ndlegis.gov/sites/default/files/styles/member_list_photo/public/person/photo/mschneider2023.jpg?itok=2DAOpzXC"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Mary_Schneider"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Mary_Schneider_(politician)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.legis.nd.gov/assembly/65-2017/members/house/representative-mary-schneider"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.legis.nd.gov/assembly/66-2019/members/house/representative-mary-schneider"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.legis.nd.gov/assembly/67-2021/members/house/representative-mary-schneider"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.legis.nd.gov/assembly/67-2021/members/members-by-district"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/mary-schneider-90220a13b"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

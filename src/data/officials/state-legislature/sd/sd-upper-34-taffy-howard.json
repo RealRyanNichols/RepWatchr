@@ -1,0 +1,72 @@
+{
+  "id": "taffy-howard",
+  "name": "Taffy Howard",
+  "firstName": "Taffy",
+  "lastName": "Howard",
+  "photo": "/images/officials/state-legislature/sd/taffy-howard.jpg",
+  "photoSourceUrl": "https://sdlegislature.gov/inc/img/Legislators/Howard_2017.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-34",
+  "jurisdiction": "South Dakota Senate",
+  "county": [
+    "South Dakota"
+  ],
+  "termStart": "2025-01-14",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Capitol Building 500 E. Capitol Ave., Pierre, SD 57501",
+    "phone": "605-773-3821",
+    "email": "taffy.howard@sdlegislature.gov",
+    "website": "https://sdlegislature.gov/Legislators/Legislators/MemberDetail.aspx?Member=1547&Session=2018s"
+  },
+  "bio": "Taffy Howard serves as State Senator for South Dakota Senate District 34. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "SD",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://sdlegislature.gov/Legislators/Legislators/MemberDetail.aspx?Member=1547&Session=2018s"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/sd/legislature/Taffy-Howard-f06bd3c9-8cac-4cc6-be62-f949e51f28eb.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://sdlegislature.gov/inc/img/Legislators/Howard_2017.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Taffy_Howard"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Taffy_Howard"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/169890/taffy-howard"
+    },
+    {
+      "title": "Public source",
+      "url": "https://sdlegislature.gov/Legislators/Legislators/MemberDetail.aspx?Member=1557&Session=2019"
+    },
+    {
+      "title": "Public source",
+      "url": "https://sdlegislature.gov/Legislators/Profile/1802/Detail"
+    },
+    {
+      "title": "Public source",
+      "url": "https://sdlegislature.gov/Legislators/Profile/4720/Detail"
+    },
+    {
+      "title": "Public source",
+      "url": "https://sdlegislature.gov/Legislators/Profile/4763/Detail"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

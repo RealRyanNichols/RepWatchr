@@ -1,0 +1,64 @@
+{
+  "id": "mary-beth-carozza",
+  "name": "Mary Beth Carozza",
+  "firstName": "Mary Beth",
+  "lastName": "Carozza",
+  "photo": "/images/officials/state-legislature/md/mary-beth-carozza.jpg",
+  "photoSourceUrl": "http://mgaleg.maryland.gov/2016RS/images/carozza01.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-38",
+  "jurisdiction": "Maryland Senate",
+  "county": [
+    "Maryland"
+  ],
+  "termStart": "2019-01-09",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 316, James Senate Office Building 11 Bladen St., Annapolis, MD 21401",
+    "phone": "410-841-3645",
+    "email": "marybeth.carozza@senate.maryland.gov",
+    "website": "https://mgaleg.maryland.gov/mgawebsite/Members/Details/carozza02"
+  },
+  "bio": "Mary Beth Carozza serves as State Senator for Maryland Senate District 38. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "MD",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://mgaleg.maryland.gov/mgawebsite/Members/Details/carozza02"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/md/legislature/Mary-Beth-Carozza-6e819331-2ab7-4a58-be19-1585dc2872ff.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "http://mgaleg.maryland.gov/2016RS/images/carozza01.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Mary_Beth_Carozza"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Mary_Beth_Carozza"
+    },
+    {
+      "title": "Public source",
+      "url": "https://mgaleg.maryland.gov/webmga/frmMain.aspx?pid=sponpage&tab=subject6&id=carozza02&stab=01"
+    },
+    {
+      "title": "Public source",
+      "url": "https://msa.maryland.gov/msa/mdmanual/05sen/html/msa14149.html"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/marybethcarozzafordelegate"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

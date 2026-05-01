@@ -1,0 +1,72 @@
+{
+  "id": "brad-hudson",
+  "name": "Brad Hudson",
+  "firstName": "Brad",
+  "lastName": "Hudson",
+  "photo": "/images/officials/state-legislature/mo/brad-hudson.jpg",
+  "photoSourceUrl": "https://house.mo.gov/MemberPhoto.aspx?id=2081",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-33",
+  "jurisdiction": "Missouri Senate",
+  "county": [
+    "Missouri"
+  ],
+  "termStart": "2025-01-08",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 426, 201 W. Capitol Ave., Jefferson City, MO 65101",
+    "phone": "573-751-1882",
+    "email": "brad.hudson@senate.mo.gov",
+    "website": "https://house.mo.gov/memberdetails.aspx?district=138"
+  },
+  "bio": "Brad Hudson serves as State Senator for Missouri Senate District 33. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "MO",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://house.mo.gov/memberdetails.aspx?district=138"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/mo/legislature/Brad-Hudson-9f6b3ff8-f439-44d0-bdf7-315451e52cb7.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://house.mo.gov/MemberPhoto.aspx?id=2081"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Brad_Hudson"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Brad_Hudson"
+    },
+    {
+      "title": "Public source",
+      "url": "https://house.mo.gov/MemberDetails.aspx?year=2021&code=R&district=138"
+    },
+    {
+      "title": "Public source",
+      "url": "https://house.mo.gov/MemberDetails.aspx?year=2023&code=R&district=138"
+    },
+    {
+      "title": "Public source",
+      "url": "https://house.mo.gov/MemberGridCluster.aspx"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/183395/brad-hudson"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.brad4mo.com/meet-brad"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

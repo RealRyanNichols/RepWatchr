@@ -1,0 +1,64 @@
+{
+  "id": "heather-baldwin",
+  "name": "Heather Baldwin",
+  "firstName": "Heather",
+  "lastName": "Baldwin",
+  "photo": "/images/officials/state-legislature/nh/heather-baldwin.jpg",
+  "photoSourceUrl": "https://s3.amazonaws.com/ballotpedia-api4/files/thumbs/200/300/Heather_Baldwin.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-Grafton 4",
+  "jurisdiction": "New Hampshire House of Representatives",
+  "county": [
+    "New Hampshire"
+  ],
+  "termStart": "2022-12-07",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "State House 107 N. Main St., Concord, NH 03301",
+    "phone": "603-271-3661",
+    "email": "heather.baldwin@gc.nh.gov",
+    "website": "https://gc.nh.gov/house/members/member.aspx?pid=10762"
+  },
+  "bio": "Heather Baldwin serves as State Representative for New Hampshire House of Representatives District Grafton 4. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "NH",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://gc.nh.gov/house/members/member.aspx?pid=10762"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/nh/legislature/Heather-P-Baldwin-b14568dd-d9f5-4557-8ccd-0d000c231650.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://s3.amazonaws.com/ballotpedia-api4/files/thumbs/200/300/Heather_Baldwin.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Heather_Baldwin"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Heather_Baldwin"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/208681/heather-baldwin"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.gencourt.state.nh.us/house/members/member.aspx?pid=10762"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.heatherpbaldwin.com/meet-heather"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

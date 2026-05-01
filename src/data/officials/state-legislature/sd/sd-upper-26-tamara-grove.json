@@ -1,0 +1,72 @@
+{
+  "id": "tamara-grove",
+  "name": "Tamara Grove",
+  "firstName": "Tamara",
+  "lastName": "Grove",
+  "photo": "/images/officials/state-legislature/sd/tamara-grove.jpg",
+  "photoSourceUrl": "https://s3.amazonaws.com/ballotpedia-api4/files/thumbs/200/300/TamaraGrove2024.jpeg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-26",
+  "jurisdiction": "South Dakota Senate",
+  "county": [
+    "South Dakota"
+  ],
+  "termStart": "2025-01-14",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Capitol Building 500 E. Capitol Ave., Pierre, SD 57501",
+    "phone": "605-773-3821",
+    "email": "tamara.grove@sdlegislature.gov",
+    "website": "https://sdlegislature.gov/Legislators/Profile/4716/Detail"
+  },
+  "bio": "Tamara Grove serves as State Senator for South Dakota Senate District 26. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "SD",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://sdlegislature.gov/Legislators/Profile/4716/Detail"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/sd/legislature/Tamara-Grove-e195011d-04f8-4e39-a9f9-b804495b3f2c.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://s3.amazonaws.com/ballotpedia-api4/files/thumbs/200/300/TamaraGrove2024.jpeg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Tamara_Grove"
+    },
+    {
+      "title": "Public source",
+      "url": "https://doctamaragrove.com"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Tamara_Grove"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/216129/tamara-grove"
+    },
+    {
+      "title": "Public source",
+      "url": "https://sdlegislature.gov/Legislators/Profile/4756/Detail"
+    },
+    {
+      "title": "Public source",
+      "url": "https://thegroveprojects.org"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/dr-tamara-grove-45728a21"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

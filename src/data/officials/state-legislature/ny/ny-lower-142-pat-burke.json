@@ -1,0 +1,76 @@
+{
+  "id": "pat-burke",
+  "name": "Pat Burke",
+  "firstName": "Pat",
+  "lastName": "Burke",
+  "photo": "/images/officials/state-legislature/ny/pat-burke.jpg",
+  "photoSourceUrl": "https://assembly.state.ny.us/write/upload/member_files/142/headshot/142.jpg?hst=1660074954",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "Assemblymember",
+  "district": "HD-142",
+  "jurisdiction": "New York State Assembly",
+  "county": [
+    "New York"
+  ],
+  "termStart": "2019-01-02",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 842, Legislative Office Building, Albany, NY 12248",
+    "phone": "518-455-4691",
+    "email": "burkep@nyassembly.gov",
+    "website": "https://assembly.state.ny.us/mem/?sh=email",
+    "socialMedia": {
+      "x": "https://x.com/PatBurkeNY",
+      "twitter": "https://x.com/PatBurkeNY"
+    }
+  },
+  "bio": "Pat Burke serves as Assemblymember for New York State Assembly District 142. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "NY",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://assembly.state.ny.us/mem/?sh=email"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ny/legislature/Patrick-Burke-85c8422b-5132-4147-bdfc-f1cdec6d4731.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://assembly.state.ny.us/write/upload/member_files/142/headshot/142.jpg?hst=1660074954"
+    },
+    {
+      "title": "Public source",
+      "url": "https://assembly.state.ny.us/mem/Pat-Burke"
+    },
+    {
+      "title": "Public source",
+      "url": "https://assembly.state.ny.us/mem/Patrick-Burke"
+    },
+    {
+      "title": "Public source",
+      "url": "https://assembly.state.ny.us/mem/Patrick-T-Burke"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Patrick_Burke_(New_York)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Patrick_B._Burke"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/163719/pat-burke"
+    },
+    {
+      "title": "Public source",
+      "url": "https://nyassembly.gov/mem/Patrick-Burke"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

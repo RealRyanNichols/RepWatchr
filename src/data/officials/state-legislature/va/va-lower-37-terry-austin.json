@@ -1,0 +1,77 @@
+{
+  "id": "terry-austin",
+  "name": "Terry Austin",
+  "firstName": "Terry",
+  "lastName": "Austin",
+  "photo": "/images/officials/state-legislature/va/terry-austin.jpg",
+  "photoSourceUrl": "https://memdata.virginiageneralassembly.gov/images/display_image/H0253",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "Delegate",
+  "district": "HD-37",
+  "jurisdiction": "Virginia House of Delegates",
+  "county": [
+    "Virginia"
+  ],
+  "termStart": "2024-01-10",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 807, General Assembly Building 201 N. 9th St., Richmond, VA 23219",
+    "phone": "804-698-1037",
+    "email": "deltaustin@house.virginia.gov",
+    "website": "https://house.vga.virginia.gov/members/H0253",
+    "socialMedia": {
+      "x": "https://x.com/TerryAustin4HOD",
+      "twitter": "https://x.com/TerryAustin4HOD",
+      "facebook": "https://facebook.com/TerryAustin4delegate"
+    }
+  },
+  "bio": "Terry Austin serves as Delegate for Virginia House of Delegates District 37. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "VA",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://house.vga.virginia.gov/members/H0253"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/va/legislature/Terry-L-Austin-cb9573ab-1bf6-45d5-a8d7-476d7bed94a8.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://memdata.virginiageneralassembly.gov/images/display_image/H0253"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Terry_Austin"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Terry_Austin_(politician)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/94907/terry-austin"
+    },
+    {
+      "title": "Public source",
+      "url": "https://lis.virginia.gov/191/mbr/MBR.HTM"
+    },
+    {
+      "title": "Public source",
+      "url": "https://lis.virginia.gov/201/mbr/MBR.HTM"
+    },
+    {
+      "title": "Public source",
+      "url": "https://lis.virginia.gov/cgi-bin/legp604.exe?191+mbr+H253"
+    },
+    {
+      "title": "Public source",
+      "url": "https://lis.virginia.gov/cgi-bin/legp604.exe?201+mbr+H253"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

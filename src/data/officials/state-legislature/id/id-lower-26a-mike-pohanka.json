@@ -1,0 +1,64 @@
+{
+  "id": "mike-pohanka",
+  "name": "Mike Pohanka",
+  "firstName": "Mike",
+  "lastName": "Pohanka",
+  "photo": "/images/officials/state-legislature/id/mike-pohanka.jpg",
+  "photoSourceUrl": "https://legislature.idaho.gov/wp-content/uploads/sessioninfo/2025/directory/Pohanka9427.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-26A",
+  "jurisdiction": "Idaho House of Representatives",
+  "county": [
+    "Idaho"
+  ],
+  "termStart": "2024-12-01",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "P.O. Box 83720 700 W. Jefferson St., Boise, ID 83720",
+    "phone": "208-332-1174",
+    "email": "mpohanka@house.idaho.gov",
+    "website": "https://legislature.idaho.gov/legislators/membership/2025/id9427/"
+  },
+  "bio": "Mike Pohanka serves as State Representative for Idaho House of Representatives District 26A. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "ID",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://legislature.idaho.gov/legislators/membership/2025/id9427/"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/id/legislature/Mike-Pohanka-d8c564c8-3499-4e44-b4b9-df1c0bb52ab4.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://legislature.idaho.gov/wp-content/uploads/sessioninfo/2025/directory/Pohanka9427.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Mike_Pohanka"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Mike_Pohanka"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/203193/mike-pohanka"
+    },
+    {
+      "title": "Public source",
+      "url": "https://legislature.idaho.gov/legislators/membership/2025/id9427"
+    },
+    {
+      "title": "Public source",
+      "url": "https://legislature.idaho.gov/legislators/membership/2026/id9427"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

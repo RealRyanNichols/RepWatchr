@@ -1,0 +1,53 @@
+{
+  "id": "nate-wadsworth",
+  "name": "Nate Wadsworth",
+  "firstName": "Nate",
+  "lastName": "Wadsworth",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-82",
+  "jurisdiction": "Maine House of Representatives",
+  "county": [
+    "Maine"
+  ],
+  "termStart": "2024-12-03",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 332, House Republican Office 2 State House Station, Augusta, ME 04333",
+    "phone": "800-423-2900",
+    "email": "nathan.wadsworth@legislature.maine.gov",
+    "website": "https://legislature.maine.gov/house/house/MemberProfiles/Details/46"
+  },
+  "bio": "Nate Wadsworth serves as State Representative for Maine House of Representatives District 82. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "ME",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://legislature.maine.gov/house/house/MemberProfiles/Details/46"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/me/legislature/Nate-Wadsworth-bed16528-b0ae-40e0-89a0-7303b946fb71.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Nathan_Wadsworth"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/151518/nathan-wadsworth"
+    },
+    {
+      "title": "Public source",
+      "url": "https://mainehousegop.org/members/wadsworth-nathan"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/nate-wadsworth-088ab112"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

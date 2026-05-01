@@ -293,7 +293,7 @@ export default function BuildoutDashboardPage() {
   const ideologyProfiles = getAllOfficialIdeologyProfiles();
   const voteWeightedIdeologyProfiles = ideologyProfiles.filter((profile) => profile.ideologyScore !== null);
   const pendingIdeologyProfiles = ideologyProfiles.length - voteWeightedIdeologyProfiles.length;
-  const loadedOfficialProfiles = dataStats.federalAndStateSeatProfilesLoaded + dataStats.countyCityOfficialFiles;
+  const loadedOfficialProfiles = dataStats.nonSchoolOfficialFiles;
   const sourceUrlCount = dataStats.publicSourceUrls + stats.sourceCount;
   const openWorkCount = officialBuildoutStats.incompleteProfiles + stats.gapCount + report.totalBrokenSources;
   const federalAndStateSeatPercent = Math.round(
@@ -314,7 +314,7 @@ export default function BuildoutDashboardPage() {
     {
       label: "Federal and state seat profiles",
       value: dataStats.federalAndStateSeatProfilesLoaded,
-      status: `${dataStats.federalProfilesLoaded}/${dataStats.federalExpectedSeats} current federal seats across all 50 states and ${dataStats.stateLegislatorProfilesLoaded}/${dataStats.stateLegislatureExpectedSeats} Texas legislative seats are represented by person profile files.`,
+      status: `${dataStats.federalProfilesLoaded}/${dataStats.federalExpectedSeats} current federal seats are loaded. ${dataStats.stateLegislatorProfilesLoaded.toLocaleString()} state-legislative profiles across ${dataStats.stateLegislatureJurisdictionsLoaded} jurisdictions are represented by person profile files, plus ${dataStats.stateExecutiveProfilesLoaded.toLocaleString()} statewide executive/public-office profiles.`,
       href: "/officials",
     },
     {
@@ -424,9 +424,9 @@ export default function BuildoutDashboardPage() {
   ];
   const notTrackedSurfaces = [
     {
-      label: "Expected federal/Texas state seat gaps",
+      label: "Expected federal and state seat gaps",
       value: dataStats.federalAndStateProfileGaps,
-      status: `${dataStats.federalProfileGaps} current U.S. House seat gaps and ${dataStats.stateLegislatureProfileGaps} Texas legislative expected seats do not have a person profile file in the current import.`,
+      status: `${dataStats.federalProfileGaps} current federal seat gaps remain in the current import. State-legislative profiles are loaded from the current OpenStates public roster; missing photos, vote records, funding, and scorecards remain separate buildout gaps.`,
       href: "/officials",
     },
     {
@@ -553,7 +553,7 @@ export default function BuildoutDashboardPage() {
             <div className="rounded-2xl border border-blue-200 bg-white p-5 shadow-sm">
               <p className="text-xs font-black uppercase tracking-wide text-blue-700">Loaded officials</p>
               <p className="mt-1 text-4xl font-black text-blue-950">{loadedOfficialProfiles.toLocaleString()}</p>
-              <p className="mt-1 text-xs font-semibold text-gray-500">{dataStats.federalAndStateSeatProfilesLoaded} federal/state seat profiles + {dataStats.countyCityOfficialFiles} county/city files</p>
+              <p className="mt-1 text-xs font-semibold text-gray-500">{dataStats.federalAndStateSeatProfilesLoaded.toLocaleString()} federal/state legislative seat profiles + {dataStats.stateExecutiveProfilesLoaded.toLocaleString()} state executive/public-office files + {dataStats.countyCityOfficialFiles} county/city files</p>
             </div>
             <div className="rounded-2xl border border-emerald-200 bg-white p-5 shadow-sm">
               <p className="text-xs font-black uppercase tracking-wide text-emerald-700">Full official profiles</p>
@@ -564,7 +564,7 @@ export default function BuildoutDashboardPage() {
             <div className="rounded-2xl border border-blue-200 bg-white p-5 shadow-sm">
               <p className="text-xs font-black uppercase tracking-wide text-emerald-700">Federal/state seats</p>
               <p className="mt-1 text-4xl font-black text-emerald-700">{dataStats.federalAndStateSeatProfilesLoaded}/{dataStats.federalAndStateExpectedSeats}</p>
-              <p className="mt-1 text-xs font-semibold text-gray-500">{dataStats.federalAndStateProfileGaps} expected seat profile gap{dataStats.federalAndStateProfileGaps === 1 ? "" : "s"} in the current import</p>
+              <p className="mt-1 text-xs font-semibold text-gray-500">{dataStats.federalAndStateProfileGaps} current federal seat/profile gap{dataStats.federalAndStateProfileGaps === 1 ? "" : "s"} in the current import</p>
               <div className="mt-3"><ProgressBar percent={federalAndStateSeatPercent} tone="green" /></div>
             </div>
             <div className="rounded-2xl border border-red-200 bg-white p-5 shadow-sm">

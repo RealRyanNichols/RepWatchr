@@ -1,0 +1,65 @@
+{
+  "id": "gil-gatch",
+  "name": "Gil Gatch",
+  "firstName": "Gil",
+  "lastName": "Gatch",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-94",
+  "jurisdiction": "South Carolina House of Representatives",
+  "county": [
+    "South Carolina"
+  ],
+  "termStart": "2020-11-09",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 310C, Blatt Building P.O. Box 11867, Columbia, SC 29201",
+    "phone": "803-212-6871",
+    "email": "gilgatch@schouse.gov",
+    "website": "https://scstatehouse.gov/member.php?code=0658522648"
+  },
+  "bio": "Gil Gatch serves as State Representative for South Carolina House of Representatives District 94. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "SC",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://scstatehouse.gov/member.php?code=0658522648"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/sc/legislature/Gil-Gatch-21d2b4a4-f5fa-415b-8394-02e9b63c4ba0.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Gil_Gatch"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Gil_Gatch"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/191625/gil-gatch"
+    },
+    {
+      "title": "Public source",
+      "url": "https://scstatehouse.gov/member.php?chamber=H"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/gilgatch"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.scstatehouse.gov/member.php?chamber=H"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.scstatehouse.gov/member.php?code=0658522648"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

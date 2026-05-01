@@ -1,0 +1,68 @@
+{
+  "id": "valli-geiger",
+  "name": "Valli Geiger",
+  "firstName": "Valli",
+  "lastName": "Geiger",
+  "photo": "/images/officials/state-legislature/me/valli-geiger.jpg",
+  "photoSourceUrl": "https://legislature.maine.gov/house/house/Repository/MemberProfiles/b7429307-4ee4-4919-b291-30007ac4f3d6_GeigerNEW.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-42",
+  "jurisdiction": "Maine House of Representatives",
+  "county": [
+    "Maine"
+  ],
+  "termStart": "2022-12-07",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 333, House Democratic Office 2 State House Station, Augusta, ME 04333",
+    "phone": "800-423-2900",
+    "email": "valli.geiger@legislature.maine.gov",
+    "website": "https://legislature.maine.gov/house/house/MemberProfiles/Details/1430"
+  },
+  "bio": "Valli Geiger serves as State Representative for Maine House of Representatives District 42. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "ME",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://legislature.maine.gov/house/house/MemberProfiles/Details/1430"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/me/legislature/Valli-D-Geiger-0842c8ba-66a3-4896-aede-def84a65605b.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://legislature.maine.gov/house/house/Repository/MemberProfiles/b7429307-4ee4-4919-b291-30007ac4f3d6_GeigerNEW.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Valli_Geiger"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/192619/valli-geiger"
+    },
+    {
+      "title": "Public source",
+      "url": "https://legislature.maine.gov/house/house/MemberProfiles/ListAlpha"
+    },
+    {
+      "title": "Public source",
+      "url": "https://legislature.maine.gov/housedems/geigerv/index.html"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/valli-geiger-10a76a46"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.maine.gov/housedems/geigerv"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

@@ -1,0 +1,72 @@
+{
+  "id": "mike-smith",
+  "name": "Mike Smith",
+  "firstName": "Mike",
+  "lastName": "Smith",
+  "photo": "/images/officials/state-legislature/de/mike-smith.jpg",
+  "photoSourceUrl": "https://www.ilikemikesmith.com/wp-content/uploads/2022/07/Screen-Shot-2022-07-19-at-7.22.01-AM.png",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-22",
+  "jurisdiction": "Delaware House of Representatives",
+  "county": [
+    "Delaware"
+  ],
+  "termStart": "2018-11-07",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "P.O. Box 1401 411 Legislative Ave., Dover, DE 19901",
+    "phone": "302-744-4171",
+    "email": "michael.f.smith@delaware.gov",
+    "website": "https://housegop.delaware.gov/members/house-district-22/"
+  },
+  "bio": "Mike Smith serves as State Representative for Delaware House of Representatives District 22. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "DE",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://housegop.delaware.gov/members/house-district-22/"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/de/legislature/Michael-F-Smith-c9f1393e-01c8-4597-a6e5-6d43330264dc.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://www.ilikemikesmith.com/wp-content/uploads/2022/07/Screen-Shot-2022-07-19-at-7.22.01-AM.png"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Michael_Smith_(Delaware)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Michael_F._Smith"
+    },
+    {
+      "title": "Public source",
+      "url": "https://housegop.delaware.gov/members/house-district-22"
+    },
+    {
+      "title": "Public source",
+      "url": "https://legis.delaware.gov/AssemblyMember/150/MichaelSmith"
+    },
+    {
+      "title": "legislator list page",
+      "url": "https://legis.delaware.gov/House"
+    },
+    {
+      "title": "Public source",
+      "url": "https://legis.delaware.gov/json/House/GetRepresentatives"
+    },
+    {
+      "title": "Public source",
+      "url": "https://legis.delaware.gov/LegislatorDetail?personId=13596"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

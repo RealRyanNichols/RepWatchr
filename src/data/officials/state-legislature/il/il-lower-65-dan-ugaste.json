@@ -1,0 +1,72 @@
+{
+  "id": "dan-ugaste",
+  "name": "Dan Ugaste",
+  "firstName": "Dan",
+  "lastName": "Ugaste",
+  "photo": "/images/officials/state-legislature/il/dan-ugaste.jpg",
+  "photoSourceUrl": "https://cdn.ilga.gov/assets/img/members/{2552FBE4-D977-4283-B00C-78FC085BD955}.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-65",
+  "jurisdiction": "Illinois House of Representatives",
+  "county": [
+    "Illinois"
+  ],
+  "termStart": "2019-01-09",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 218-N, Stratton Office Building, Springfield, IL 62706",
+    "phone": "217-782-5457",
+    "email": "ugaste@ilhousegop.org",
+    "website": "https://ilga.gov/house/Rep.asp?GA=101&MemberID=2753"
+  },
+  "bio": "Dan Ugaste serves as State Representative for Illinois House of Representatives District 65. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "IL",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://ilga.gov/house/Rep.asp?GA=101&MemberID=2753"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/il/legislature/Dan-Ugaste-ab6db17a-e7dc-43c8-9770-32c1da1d7f40.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://cdn.ilga.gov/assets/img/members/{2552FBE4-D977-4283-B00C-78FC085BD955}.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Dan_Ugaste"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Dan_Ugaste"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ilga.gov/house/default.asp?GA=101"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ilga.gov/house/default.asp?GA=102"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ilga.gov/house/default.asp?GA=103"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ilga.gov/house/Rep.asp?GA=102&MemberID=2954"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ilga.gov/house/Rep.asp?GA=103&MemberID=3149"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

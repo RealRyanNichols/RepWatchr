@@ -1,0 +1,58 @@
+{
+  "id": "chuck-walen",
+  "name": "Chuck Walen",
+  "firstName": "Chuck",
+  "lastName": "Walen",
+  "photo": "/images/officials/state-legislature/nd/chuck-walen.jpg",
+  "photoSourceUrl": "https://static.votesmart.org/static/canphoto/216618.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-4",
+  "jurisdiction": "North Dakota Senate",
+  "county": [
+    "North Dakota"
+  ],
+  "termStart": "2024-12-01",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "email": "cwalen@ndlegis.gov",
+    "website": "https://ndlegis.gov/biography/chuck-walen"
+  },
+  "bio": "Chuck Walen serves as State Senator for North Dakota Senate District 4. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "ND",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://ndlegis.gov/biography/chuck-walen"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/nd/legislature/Chuck-Walen-43e25c66-8935-4938-8634-b8666bfdb876.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://static.votesmart.org/static/canphoto/216618.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Chuck_Walen"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Chuck_Walen"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/216618/chuck-walen"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/chuck-walen-85b571a6"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

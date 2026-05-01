@@ -1,0 +1,52 @@
+{
+  "id": "amy-galey",
+  "name": "Amy Galey",
+  "firstName": "Amy",
+  "lastName": "Galey",
+  "photo": "/images/officials/state-legislature/nc/amy-galey.jpg",
+  "photoSourceUrl": "https://www.ncleg.gov/Members/MemberImage/S/429/Low",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-25",
+  "jurisdiction": "North Carolina Senate",
+  "county": [
+    "North Carolina"
+  ],
+  "termStart": "2023-01-01",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 311, Legislative Office Building 300 N. Salisbury St., Raleigh, NC 27603",
+    "phone": "919-301-1446",
+    "email": "amy.galey@ncleg.gov",
+    "website": "https://www.ncleg.gov/Members/Biography/S/429"
+  },
+  "bio": "Amy Galey serves as State Senator for North Carolina Senate District 25. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "NC",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.ncleg.gov/Members/Biography/S/429"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/nc/legislature/Amy-S-Galey-8be9deca-bbd6-404f-8726-0aecaeb19ca7.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://www.ncleg.gov/Members/MemberImage/S/429/Low"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Amy_Galey"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.ncleg.gov/Members/MemberTable/S"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

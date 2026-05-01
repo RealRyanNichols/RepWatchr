@@ -1,0 +1,60 @@
+{
+  "id": "dylan-pugh",
+  "name": "Dylan Pugh",
+  "firstName": "Dylan",
+  "lastName": "Pugh",
+  "photo": "/images/officials/state-legislature/me/dylan-pugh.jpg",
+  "photoSourceUrl": "https://s3.amazonaws.com/ballotpedia-api4/files/thumbs/200/300/Dylan_Pugh_20240820_054928.png",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-114",
+  "jurisdiction": "Maine House of Representatives",
+  "county": [
+    "Maine"
+  ],
+  "termStart": "2024-12-03",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 333, House Democratic Office 2 State House Station, Augusta, ME 04333",
+    "phone": "207-287-1430",
+    "email": "dylan.pugh@legislature.maine.gov",
+    "website": "https://legislature.maine.gov/house/house/MemberProfiles/Details/3136"
+  },
+  "bio": "Dylan Pugh serves as State Representative for Maine House of Representatives District 114. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "ME",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://legislature.maine.gov/house/house/MemberProfiles/Details/3136"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/me/legislature/Dylan-Pugh-03370150-e682-4bce-9989-4a8b73f10042.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://s3.amazonaws.com/ballotpedia-api4/files/thumbs/200/300/Dylan_Pugh_20240820_054928.png"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Dylan_Pugh"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/dylan-p-36930698"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/dylan-pugh-me"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.maine.gov/housedems/node/4117"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

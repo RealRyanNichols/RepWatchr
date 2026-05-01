@@ -1,0 +1,72 @@
+{
+  "id": "casey-crabtree",
+  "name": "Casey Crabtree",
+  "firstName": "Casey",
+  "lastName": "Crabtree",
+  "photo": "/images/officials/state-legislature/sd/casey-crabtree.jpg",
+  "photoSourceUrl": "https://sdlegislature.gov/inc/img/Legislators/crabtree_2020.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-8",
+  "jurisdiction": "South Dakota Senate",
+  "county": [
+    "South Dakota"
+  ],
+  "termStart": "2020-07-02",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Capitol Building 500 E. Capitol Ave., Pierre, SD 57501",
+    "phone": "605-773-3821",
+    "email": "casey.crabtree@sdlegislature.gov",
+    "website": "https://sdlegislature.gov/Legislators/Profile/1881/Detail"
+  },
+  "bio": "Casey Crabtree serves as State Senator for South Dakota Senate District 8. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "SD",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://sdlegislature.gov/Legislators/Profile/1881/Detail"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/sd/legislature/Casey-J-Crabtree-6dabb48d-f267-4fb3-9e8c-0a3c182d44d3.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://sdlegislature.gov/inc/img/Legislators/crabtree_2020.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Casey_Crabtree"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Casey_Crabtree"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/191454/casey-crabtree"
+    },
+    {
+      "title": "Public source",
+      "url": "https://sdlegislature.gov/Legislators/Profile/4345/Detail"
+    },
+    {
+      "title": "Public source",
+      "url": "https://sdlegislature.gov/Legislators/Profile/4594/Detail"
+    },
+    {
+      "title": "Public source",
+      "url": "https://sdlegislature.gov/Legislators/Profile/4741/Detail"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/caseycrabtree"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

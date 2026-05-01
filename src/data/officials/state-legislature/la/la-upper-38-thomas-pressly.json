@@ -1,0 +1,60 @@
+{
+  "id": "thomas-pressly",
+  "name": "Thomas Pressly",
+  "firstName": "Thomas",
+  "lastName": "Pressly",
+  "photo": "/images/officials/state-legislature/la/thomas-pressly.jpg",
+  "photoSourceUrl": "https://senate.la.gov/SenPics/Sen38.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-38",
+  "jurisdiction": "Louisiana Senate",
+  "county": [
+    "Louisiana"
+  ],
+  "termStart": "2024-01-08",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "P.O. Box 94183 900 N. 3rd St., Baton Rouge, LA 70804",
+    "phone": "225-342-2024",
+    "email": "sen38@legis.la.gov",
+    "website": "https://senate.la.gov/smembers?ID=38"
+  },
+  "bio": "Thomas Pressly serves as State Senator for Louisiana Senate District 38. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "LA",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://senate.la.gov/smembers?ID=38"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/la/legislature/Thomas-Pressly-577fe2a3-275b-4b82-b508-c0ce29deb2fa.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://senate.la.gov/SenPics/Sen38.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Thomas_Pressly"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Thomas_Pressly"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/186933/thomas-pressly"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/thomas-pressly-3134b39"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

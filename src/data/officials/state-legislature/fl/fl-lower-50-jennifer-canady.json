@@ -1,0 +1,53 @@
+{
+  "id": "jennifer-canady",
+  "name": "Jennifer Canady",
+  "firstName": "Jennifer",
+  "lastName": "Canady",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-50",
+  "jurisdiction": "Florida House of Representatives",
+  "county": [
+    "Florida"
+  ],
+  "termStart": "2022-11-08",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 418, The Capitol 402 S. Monroe St., Tallahassee, FL 32399",
+    "phone": "850-717-5050",
+    "email": "jennifer.canady@flhouse.gov",
+    "website": "https://myfloridahouse.gov/Sections/Representatives/details.aspx?MemberId=4879&LegislativeTermId=90"
+  },
+  "bio": "Jennifer Canady serves as State Representative for Florida House of Representatives District 50. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "FL",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://myfloridahouse.gov/Sections/Representatives/details.aspx?MemberId=4879&LegislativeTermId=90"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/fl/legislature/Jennifer-Canady-7fb5a540-2c3c-4661-8495-2e0e02ab8644.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Jennifer_Canady"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.flhouse.gov/Sections/Representatives/details.aspx?MemberId=4879"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/jennifer-canady-29551a60"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.myfloridahouse.gov/Sections/Representatives/details.aspx?MemberId=4879&LegislativeTermId=90"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

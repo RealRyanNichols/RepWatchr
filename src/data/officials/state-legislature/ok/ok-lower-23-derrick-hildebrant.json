@@ -1,0 +1,60 @@
+{
+  "id": "derrick-hildebrant",
+  "name": "Derrick Hildebrant",
+  "firstName": "Derrick",
+  "lastName": "Hildebrant",
+  "photo": "/images/officials/state-legislature/ok/derrick-hildebrant.jpg",
+  "photoSourceUrl": "https://s3.amazonaws.com/ballotpedia-api4/files/thumbs/200/300/DerrickHildebrant2024.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-23",
+  "jurisdiction": "Oklahoma House of Representatives",
+  "county": [
+    "Oklahoma"
+  ],
+  "termStart": "2024-11-20",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 330, 2300 N. Lincoln Blvd., Oklahoma City, OK 73105",
+    "phone": "405-557-7379",
+    "email": "derrick.hildebrant@okhouse.gov",
+    "website": "https://www.okhouse.gov/representatives/derrick.hildebrant"
+  },
+  "bio": "Derrick Hildebrant serves as State Representative for Oklahoma House of Representatives District 23. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "OK",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.okhouse.gov/representatives/derrick.hildebrant"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ok/legislature/Derrick-Hildebrant-a7eb5f03-0a2a-4235-b2f8-b4983e1a8cf2.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://s3.amazonaws.com/ballotpedia-api4/files/thumbs/200/300/DerrickHildebrant2024.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Derrick_Hildebrant"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Derrick_Hildebrant"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/216477/derrick-hildebrant"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/derrick-hildebrant-241913b1"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

@@ -1,0 +1,69 @@
+{
+  "id": "jeff-gallahan",
+  "name": "Jeff Gallahan",
+  "firstName": "Jeff",
+  "lastName": "Gallahan",
+  "photo": "/images/officials/state-legislature/ny/jeff-gallahan.jpg",
+  "photoSourceUrl": "https://assembly.state.ny.us/write/upload/member_files/131/headshot/131.jpg?hst=1660074826",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "Assemblymember",
+  "district": "HD-131",
+  "jurisdiction": "New York State Assembly",
+  "county": [
+    "New York"
+  ],
+  "termStart": "2021-01-06",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 725, Legislative Office Building, Albany, NY 12248",
+    "phone": "518-455-3979",
+    "email": "gallahanj@nyassembly.gov",
+    "website": "https://assembly.state.ny.us/mem/Jeff-Gallahan",
+    "socialMedia": {
+      "x": "https://x.com/JeffGallahan",
+      "twitter": "https://x.com/JeffGallahan",
+      "facebook": "https://facebook.com/Assemblyman-Jeff-Gallahan-100849288636894"
+    }
+  },
+  "bio": "Jeff Gallahan serves as Assemblymember for New York State Assembly District 131. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "NY",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://assembly.state.ny.us/mem/Jeff-Gallahan"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ny/legislature/Jeff-Gallahan-4910460d-6cb9-4f35-8459-19e5a4de579e.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://assembly.state.ny.us/write/upload/member_files/131/headshot/131.jpg?hst=1660074826"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Jeff_Gallahan"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Jeff_Gallahan"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/134368/jeff-gallahan"
+    },
+    {
+      "title": "Public source",
+      "url": "https://nyassembly.gov/mem/Jeff-Gallahan"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.jeffgallahan.me"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

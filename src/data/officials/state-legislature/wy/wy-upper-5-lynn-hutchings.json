@@ -1,0 +1,72 @@
+{
+  "id": "lynn-hutchings",
+  "name": "Lynn Hutchings",
+  "firstName": "Lynn",
+  "lastName": "Hutchings",
+  "photo": "/images/officials/state-legislature/wy/lynn-hutchings.jpg",
+  "photoSourceUrl": "https://wyoleg.gov/LegislatorSummary/Photos/68th-HutchingsLynn.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-5",
+  "jurisdiction": "Wyoming Senate",
+  "county": [
+    "Wyoming"
+  ],
+  "termStart": "2019-01-07",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "State Capitol 200 W. 24th St., Cheyenne, WY 82002",
+    "phone": "307-777-7881",
+    "email": "lynn.hutchings@wyoleg.gov",
+    "website": "https://www.hutchingsforsenate.com/"
+  },
+  "bio": "Lynn Hutchings serves as State Senator for Wyoming Senate District 5. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "WY",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.hutchingsforsenate.com/"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/wy/legislature/Lynn-Hutchings-b91459e7-2049-4cf9-8b0b-f769ce373613.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://wyoleg.gov/LegislatorSummary/Photos/68th-HutchingsLynn.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Lynn_Hutchings"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Lynn_Hutchings"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/127281/lynn-hutchings"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.hutchingsforsenate.com"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.hutchingsforsenate.com/message-about-lynn"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.wyoleg.gov/Legislators/2023/S/1997"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.wyoleg.gov/Legislators/2025/S/1997"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

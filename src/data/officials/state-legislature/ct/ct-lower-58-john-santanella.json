@@ -1,0 +1,64 @@
+{
+  "id": "john-santanella",
+  "name": "John Santanella",
+  "firstName": "John",
+  "lastName": "Santanella",
+  "photo": "/images/officials/state-legislature/ct/john-santanella.jpg",
+  "photoSourceUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRjHNdAfDeer4lV9FlS7FhYtd94TpkBobQJEt9SozaHufMHitlm2Ev9ZX9ggGORR42zRUE&usqp=CAU",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-58",
+  "jurisdiction": "Connecticut House of Representatives",
+  "county": [
+    "Connecticut"
+  ],
+  "termStart": "2025-01-08",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 4032, Legislative Office Building 300 Capitol Ave., Hartford, CT 06106",
+    "phone": "860-240-8585",
+    "email": "john.santanella@cga.ct.gov",
+    "website": "https://www.housedems.ct.gov/Santanella"
+  },
+  "bio": "John Santanella serves as State Representative for Connecticut House of Representatives District 58. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "CT",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.housedems.ct.gov/Santanella"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ct/legislature/John-Santanella-3939d7ca-20d7-4587-9c34-c6ee9bb2014e.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRjHNdAfDeer4lV9FlS7FhYtd94TpkBobQJEt9SozaHufMHitlm2Ev9ZX9ggGORR42zRUE&usqp=CAU"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/John_Santanella"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/John_Santanella"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/219064/john-santanella"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.housedems.ct.gov/Santanella/Biography"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/john-santanella-8bb0882"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

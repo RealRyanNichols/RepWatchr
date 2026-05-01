@@ -1,0 +1,69 @@
+{
+  "id": "mike-petersen-ut-legislature-lower-2",
+  "name": "Mike Petersen",
+  "firstName": "Mike",
+  "lastName": "Petersen",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-2",
+  "jurisdiction": "Utah House of Representatives",
+  "county": [
+    "Utah"
+  ],
+  "termStart": "2023-01-01",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "P.O. Box 145030 350 N. State St., Suite 350, Salt Lake City, UT 84114",
+    "phone": "801-538-1029",
+    "email": "mpetersen@le.utah.gov",
+    "website": "https://disclosures.utah.gov/Search/PublicSearch/FolderDetails/1415376"
+  },
+  "bio": "Mike Petersen serves as State Representative for Utah House of Representatives District 2. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "UT",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://disclosures.utah.gov/Search/PublicSearch/FolderDetails/1415376"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ut/legislature/Mike-Petersen-e9792114-e077-4663-96c4-94d679c66ace.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Mike_Petersen_(Utah)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Mike_Petersen_(Utah_politician)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://house.utah.gov/rep/PETERM"
+    },
+    {
+      "title": "Public source",
+      "url": "https://house.utah.gov/rep/PETERM/"
+    },
+    {
+      "title": "Public source",
+      "url": "https://house.utleg.gov/rep/PETERM"
+    },
+    {
+      "title": "Public source",
+      "url": "https://house.utleg.gov/rep/PETERM/"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/192260/michael-petersen"
+    },
+    {
+      "title": "Public source",
+      "url": "https://le.utah.gov/data/legislators.json"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

@@ -1,0 +1,55 @@
+{
+  "id": "todd-rokita",
+  "name": "Todd Rokita",
+  "firstName": "Todd",
+  "lastName": "Rokita",
+  "photo": "/images/officials/state-executive/in/todd-rokita.jpg",
+  "photoSourceUrl": "https://www.naag.org/wp-content/uploads/2021/02/ag-IN-Rokita.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "Attorney General",
+  "district": "Indiana",
+  "jurisdiction": "Indiana statewide public office",
+  "county": [
+    "Indiana"
+  ],
+  "termStart": "2021-01-11",
+  "termEnd": "2029-01-08",
+  "contactInfo": {
+    "office": "302 W. Washington St., 5th Floor; Indianapolis, IN 46204",
+    "phone": "317-232-6201",
+    "website": "https://www.in.gov/attorneygeneral/"
+  },
+  "bio": "Todd Rokita is listed as Attorney General for Indiana. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "IN",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.in.gov/attorneygeneral/"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/in/executive/Todd-Rokita-b2cb0fa8-b426-4c50-94d8-dedd948175cd.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://www.naag.org/wp-content/uploads/2021/02/ag-IN-Rokita.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.in.gov/attorneygeneral/contact-us/"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Todd_Rokita"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.naag.org/attorney-general/todd-rokita/"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

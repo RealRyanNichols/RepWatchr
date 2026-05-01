@@ -1,0 +1,64 @@
+{
+  "id": "alice-wade",
+  "name": "Alice Wade",
+  "firstName": "Alice",
+  "lastName": "Wade",
+  "photo": "/images/officials/state-legislature/nh/alice-wade.jpg",
+  "photoSourceUrl": "https://s3.amazonaws.com/ballotpedia-api4/files/thumbs/200/300/Alice_Wade_20240830_102929.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-Strafford 15",
+  "jurisdiction": "New Hampshire House of Representatives",
+  "county": [
+    "New Hampshire"
+  ],
+  "termStart": "2024-12-04",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "State House 107 N. Main St., Concord, NH 03301",
+    "phone": "603-271-3661",
+    "email": "alice.wade@gc.nh.gov",
+    "website": "https://gc.nh.gov/house/members/member.aspx?pid=11286"
+  },
+  "bio": "Alice Wade serves as State Representative for New Hampshire House of Representatives District Strafford 15. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "NH",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://gc.nh.gov/house/members/member.aspx?pid=11286"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/nh/legislature/Alice-Wade-ef4b9cee-5a72-452c-8720-a59d5d5ca9ef.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://s3.amazonaws.com/ballotpedia-api4/files/thumbs/200/300/Alice_Wade_20240830_102929.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Alice_Wade"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Alice_Wade"
+    },
+    {
+      "title": "Public source",
+      "url": "https://gencourt.state.nh.us/house/members/member.aspx?pid=11286"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/219229/alice-wade"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/alice-wade-nh"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

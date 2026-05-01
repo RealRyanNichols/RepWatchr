@@ -1,0 +1,52 @@
+{
+  "id": "barry-beauchamp",
+  "name": "Barry Beauchamp",
+  "firstName": "Barry",
+  "lastName": "Beauchamp",
+  "photo": "/images/officials/state-legislature/md/barry-beauchamp.jpg",
+  "photoSourceUrl": "https://mgaleg.maryland.gov/2025RS/images/beauchamp01.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "Delegate",
+  "district": "HD-38B",
+  "jurisdiction": "Maryland House of Delegates",
+  "county": [
+    "Maryland"
+  ],
+  "termStart": "2024-09-10",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 310, Lowe House Office Building 6 Bladen St., Annapolis, MD 21401",
+    "phone": "410-841-3431",
+    "email": "barry.beauchamp@house.maryland.gov",
+    "website": "https://mgaleg.maryland.gov/mgawebsite/Members/Details/beauchamp01"
+  },
+  "bio": "Barry Beauchamp serves as Delegate for Maryland House of Delegates District 38B. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "MD",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://mgaleg.maryland.gov/mgawebsite/Members/Details/beauchamp01"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/md/legislature/Barry-Beauchamp-c1495953-153b-4316-ad04-58a12b2b7fd9.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://mgaleg.maryland.gov/2025RS/images/beauchamp01.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Barry_Beauchamp"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Barry_Beauchamp"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

@@ -1,0 +1,57 @@
+{
+  "id": "cheikh-taylor",
+  "name": "Cheikh Taylor",
+  "firstName": "Cheikh",
+  "lastName": "Taylor",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-38",
+  "jurisdiction": "Mississippi House of Representatives",
+  "county": [
+    "Mississippi"
+  ],
+  "termStart": "2017-12-11",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "State Capitol 400 High St., Jackson, MS 39201",
+    "phone": "601-359-3770",
+    "email": "ctaylor@house.ms.gov",
+    "website": "https://billstatus.ls.state.ms.us/members/house/taylor.xml"
+  },
+  "bio": "Cheikh Taylor serves as State Representative for Mississippi House of Representatives District 38. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "MS",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://billstatus.ls.state.ms.us/members/house/taylor.xml"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ms/legislature/Cheikh-Taylor-74ef0a3e-35c9-4729-b6fd-2c07c165864d.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Cheikh_Taylor"
+    },
+    {
+      "title": "Public source",
+      "url": "https://billstatus.ls.state.ms.us/members/hr_membs.xml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Cheikh_Taylor"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/176766/cheikh-taylor"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/cheikh-taylor-76a84b40"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

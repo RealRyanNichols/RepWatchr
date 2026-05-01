@@ -1,0 +1,64 @@
+{
+  "id": "jill-cooper",
+  "name": "Jill Cooper",
+  "firstName": "Jill",
+  "lastName": "Cooper",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-55",
+  "jurisdiction": "Pennsylvania House of Representatives",
+  "county": [
+    "Pennsylvania"
+  ],
+  "termStart": "2022-12-01",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 150, East Wing P.O. Box 202055, Harrisburg, PA 17120",
+    "phone": "717-787-8939",
+    "email": "jcooper@pahousegop.com",
+    "website": "https://www.legis.state.pa.us/cfdocs/legis/home/member_information/House_bio.cfm?id=1951",
+    "socialMedia": {
+      "facebook": "https://facebook.com/RepJillCooper"
+    }
+  },
+  "bio": "Jill Cooper serves as State Representative for Pennsylvania House of Representatives District 55. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "PA",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.legis.state.pa.us/cfdocs/legis/home/member_information/House_bio.cfm?id=1951"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/pa/legislature/Jill-N-Cooper-6ae972c8-aff3-4886-a7d7-bd2cc5e40a38.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Jill_Cooper"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Jill_Cooper_(politician)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.legis.state.pa.us/cfdocs/legis/home/member_information/mbrList.cfm?body=H&sort=alpha"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/jill-cooper-8195b829"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.palegis.us/house/members/bio/1951/rep-cooper"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.repjillcooper.com"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

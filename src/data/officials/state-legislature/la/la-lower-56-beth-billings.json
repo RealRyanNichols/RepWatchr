@@ -1,0 +1,52 @@
+{
+  "id": "beth-billings",
+  "name": "Beth Billings",
+  "firstName": "Beth",
+  "lastName": "Billings",
+  "photo": "/images/officials/state-legislature/la/beth-billings.jpg",
+  "photoSourceUrl": "https://house.louisiana.gov/H_Reps/RepPics/rep56.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-56",
+  "jurisdiction": "Louisiana House of Representatives",
+  "county": [
+    "Louisiana"
+  ],
+  "termStart": "2024-01-08",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "P.O. Box 94062 900 N. 3rd St., Baton Rouge, LA 70804",
+    "phone": "225-342-6945",
+    "email": "hse056@legis.la.gov",
+    "website": "https://house.louisiana.gov/H_Reps/members?ID=56"
+  },
+  "bio": "Beth Billings serves as State Representative for Louisiana House of Representatives District 56. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "LA",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://house.louisiana.gov/H_Reps/members?ID=56"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/la/legislature/Beth-Billings-5d15439d-4139-448a-8f61-25ab54e68b19.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://house.louisiana.gov/H_Reps/RepPics/rep56.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Beth_Billings"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/beth-billings-70047"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

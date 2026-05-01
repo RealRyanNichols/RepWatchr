@@ -1,0 +1,68 @@
+{
+  "id": "anthony-nolan",
+  "name": "Anthony Nolan",
+  "firstName": "Anthony",
+  "lastName": "Nolan",
+  "photo": "/images/officials/state-legislature/ct/anthony-nolan.jpg",
+  "photoSourceUrl": "http://www2.housedems.ct.gov/Nolan/images/Nolan_HS.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-39",
+  "jurisdiction": "Connecticut House of Representatives",
+  "county": [
+    "Connecticut"
+  ],
+  "termStart": "2019-03-01",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 5004, Legislative Office Building 300 Capitol Ave., Hartford, CT 06106",
+    "phone": "800-842-8267",
+    "email": "anthony.nolan@cga.ct.gov",
+    "website": "https://cga.ct.gov/asp/CGABillStatus/CGAMemberBills.asp?dist_code=%27039%27&dist_name=Nolan,%20Anthony%20L."
+  },
+  "bio": "Anthony Nolan serves as State Representative for Connecticut House of Representatives District 39. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "CT",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://cga.ct.gov/asp/CGABillStatus/CGAMemberBills.asp?dist_code=%27039%27&dist_name=Nolan,%20Anthony%20L."
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ct/legislature/Anthony-L-Nolan-c7160abf-d376-484d-b87e-600a398ab503.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "http://www2.housedems.ct.gov/Nolan/images/Nolan_HS.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "ftp://ftp.cga.ct.gov/pub/data/LegislatorDatabase.csv"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Anthony_Nolan"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Anthony_Nolan_(politician)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/186048/anthony-nolan"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.housedems.ct.gov/Nolan"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/anthony-l-nolan-%E2%98%86-a95136b6"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

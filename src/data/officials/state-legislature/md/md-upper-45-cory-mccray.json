@@ -1,0 +1,64 @@
+{
+  "id": "cory-mccray",
+  "name": "Cory McCray",
+  "firstName": "Cory",
+  "lastName": "McCray",
+  "photo": "/images/officials/state-legislature/md/cory-mccray.jpg",
+  "photoSourceUrl": "http://mgaleg.maryland.gov/2016RS/images/mccray01.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-45",
+  "jurisdiction": "Maryland Senate",
+  "county": [
+    "Maryland"
+  ],
+  "termStart": "2019-01-09",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 221, James Senate Office Building 11 Bladen St., Annapolis, MD 21401",
+    "phone": "410-841-3165",
+    "email": "cory.mccray@senate.maryland.gov",
+    "website": "https://mgaleg.maryland.gov/mgawebsite/Members/Details/mccray02"
+  },
+  "bio": "Cory McCray serves as State Senator for Maryland Senate District 45. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "MD",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://mgaleg.maryland.gov/mgawebsite/Members/Details/mccray02"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/md/legislature/Cory-V-McCray-be00c352-4825-4b80-97cd-954097e3a482.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "http://mgaleg.maryland.gov/2016RS/images/mccray01.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Cory_V._McCray"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Cory_V._McCray"
+    },
+    {
+      "title": "Public source",
+      "url": "https://mgaleg.maryland.gov/webmga/frmMain.aspx?pid=sponpage&tab=subject6&id=mccray02&stab=01"
+    },
+    {
+      "title": "Public source",
+      "url": "https://msa.maryland.gov/msa/mdmanual/05sen/html/msa17083.html"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/cory-mccray-b06a052a"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

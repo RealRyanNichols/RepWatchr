@@ -1,0 +1,73 @@
+{
+  "id": "maritza-davila",
+  "name": "Maritza Davila",
+  "firstName": "Maritza",
+  "lastName": "Davila",
+  "photo": "/images/officials/state-legislature/ny/maritza-davila.jpg",
+  "photoSourceUrl": "https://assembly.state.ny.us/write/upload/member_files/053/headshot/053.jpg?hst=1660073605",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "Assemblymember",
+  "district": "HD-53",
+  "jurisdiction": "New York State Assembly",
+  "county": [
+    "New York"
+  ],
+  "termStart": "2013-11-06",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 844, Legislative Office Building, Albany, NY 12248",
+    "phone": "518-455-5537",
+    "email": "davilam@nyassembly.gov",
+    "website": "https://assembly.state.ny.us/mem/?sh=email",
+    "socialMedia": {
+      "x": "https://x.com/DavilaAssembly",
+      "twitter": "https://x.com/DavilaAssembly",
+      "facebook": "https://facebook.com/MaritzaDavilaAssembly"
+    }
+  },
+  "bio": "Maritza Davila serves as Assemblymember for New York State Assembly District 53. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "NY",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://assembly.state.ny.us/mem/?sh=email"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ny/legislature/Maritza-Davila-6dfd759c-edcb-45d9-ac9a-9064a69d5f4a.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://assembly.state.ny.us/write/upload/member_files/053/headshot/053.jpg?hst=1660073605"
+    },
+    {
+      "title": "Public source",
+      "url": "https://assembly.state.ny.us/mem/Maritza-Davila"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Maritza_Davila_(New_York)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Maritza_Davila"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/145250/maritza-davila"
+    },
+    {
+      "title": "Public source",
+      "url": "https://nyassembly.gov/mem/Maritza-Davila"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/maritza-davila-8a182852"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

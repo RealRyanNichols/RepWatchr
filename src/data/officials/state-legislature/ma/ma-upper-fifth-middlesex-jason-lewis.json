@@ -1,0 +1,72 @@
+{
+  "id": "jason-lewis",
+  "name": "Jason Lewis",
+  "firstName": "Jason",
+  "lastName": "Lewis",
+  "photo": "/images/officials/state-legislature/ma/jason-lewis.jpg",
+  "photoSourceUrl": "https://malegislature.gov/Legislators/Profile/170/jml0.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-Fifth Middlesex",
+  "jurisdiction": "Massachusetts Senate",
+  "county": [
+    "Massachusetts"
+  ],
+  "termStart": "2014-04-16",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 511-B, State House 24 Beacon St., Boston, MA 02133",
+    "phone": "617-722-1206",
+    "email": "jason.lewis@masenate.gov",
+    "website": "https://malegislature.gov/Legislators/Profile/jml0"
+  },
+  "bio": "Jason Lewis serves as State Senator for Massachusetts Senate District Fifth Middlesex. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "MA",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://malegislature.gov/Legislators/Profile/jml0"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ma/legislature/Jason-M-Lewis-92a770ae-a348-4f86-92ad-c4a8ebc568f6.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://malegislature.gov/Legislators/Profile/170/jml0.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Jason_Lewis_(Massachusetts)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Jason_Lewis_(Massachusetts_politician)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://malegislature.gov/api/GeneralCourts/192/LegislativeMembers"
+    },
+    {
+      "title": "Public source",
+      "url": "https://malegislature.gov/api/GeneralCourts/192/LegislativeMembers/"
+    },
+    {
+      "title": "Public source",
+      "url": "https://malegislature.gov/api/GeneralCourts/192/LegislativeMembers/jml0"
+    },
+    {
+      "title": "Public source",
+      "url": "https://malegislature.gov/api/GeneralCourts/193/LegislativeMembers"
+    },
+    {
+      "title": "Public source",
+      "url": "https://malegislature.gov/api/GeneralCourts/193/LegislativeMembers/"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

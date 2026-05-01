@@ -1,0 +1,56 @@
+{
+  "id": "yolonda-fountain-henderson",
+  "name": "Yolonda Fountain-Henderson",
+  "firstName": "Yolonda",
+  "lastName": "Fountain-Henderson",
+  "photo": "/images/officials/state-legislature/mo/yolonda-fountain-henderson.jpg",
+  "photoSourceUrl": "https://house.mo.gov/MemberPhoto.aspx?id=2385",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-85",
+  "jurisdiction": "Missouri House of Representatives",
+  "county": [
+    "Missouri"
+  ],
+  "termStart": "2023-01-04",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 105-G, 201 W. Capitol Ave., Jefferson City, MO 65101",
+    "phone": "573-751-4468",
+    "email": "yolonda.fountainhend@house.mo.gov",
+    "website": "https://house.mo.gov/MemberDetails.aspx?district=085"
+  },
+  "bio": "Yolonda Fountain-Henderson serves as State Representative for Missouri House of Representatives District 85. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "MO",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://house.mo.gov/MemberDetails.aspx?district=085"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/mo/legislature/Yolonda-Fountain-Henderson-6f65a218-7bef-4fa3-b86c-907ed92296d8.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://house.mo.gov/MemberPhoto.aspx?id=2385"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Yolonda_Fountain_Henderson"
+    },
+    {
+      "title": "Public source",
+      "url": "https://house.mo.gov/MemberDetails.aspx?year=2023&code=R&district=085"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/yolonda-henderson-3abb2115"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

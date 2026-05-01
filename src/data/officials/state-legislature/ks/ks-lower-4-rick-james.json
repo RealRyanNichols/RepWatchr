@@ -1,0 +1,64 @@
+{
+  "id": "rick-james",
+  "name": "Rick James",
+  "firstName": "Rick",
+  "lastName": "James",
+  "photo": "/images/officials/state-legislature/ks/rick-james.jpg",
+  "photoSourceUrl": "https://fortscott.biz/wp-content/uploads/2024/06/rick-james-submitted-.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-4",
+  "jurisdiction": "Kansas House of Representatives",
+  "county": [
+    "Kansas"
+  ],
+  "termStart": "2025-01-13",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "State Capitol Room 149-S, Kansas  Building 300 SW 10th St., Topeka, KS 66612",
+    "phone": "785-296-7616",
+    "email": "rick.james@house.ks.gov",
+    "website": "https://www.kslegislature.gov/li/b2025_26/members/rep_james_ricky_1/"
+  },
+  "bio": "Rick James serves as State Representative for Kansas House of Representatives District 4. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "KS",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.kslegislature.gov/li/b2025_26/members/rep_james_ricky_1/"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ks/legislature/Rick-James-241d0891-9169-443e-be77-d3d00a57f401.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://fortscott.biz/wp-content/uploads/2024/06/rick-james-submitted-.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Rick_James_(Kansas)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Rick_James_(politician)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/159354/rick-james"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.kslegislature.gov/li/b2025_26/members/rep_james_ricky_1"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/rick-james-0082a359"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

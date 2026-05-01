@@ -1,0 +1,52 @@
+{
+  "id": "ken-jamison",
+  "name": "Ken Jamison",
+  "firstName": "Ken",
+  "lastName": "Jamison",
+  "photo": "/images/officials/state-legislature/mo/ken-jamison.jpg",
+  "photoSourceUrl": "https://storage.googleapis.com/enview-dev-public-general/legislative-people-photos/167307.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-15",
+  "jurisdiction": "Missouri House of Representatives",
+  "county": [
+    "Missouri"
+  ],
+  "termStart": "2025-01-08",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 101-G, 201 W. Capitol Ave., Jefferson City, MO 65101",
+    "phone": "573-751-4787",
+    "email": "ken.jamison@house.mo.gov",
+    "website": "https://house.mo.gov/MemberDetails.aspx?&district=015"
+  },
+  "bio": "Ken Jamison serves as State Representative for Missouri House of Representatives District 15. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "MO",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://house.mo.gov/MemberDetails.aspx?&district=015"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/mo/legislature/Ken-Jamison-34a05fb9-bb36-416e-ada9-6be70b48b6b2.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://storage.googleapis.com/enview-dev-public-general/legislative-people-photos/167307.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Kenneth_Jamison"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/kenneth-jamison-08132142"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

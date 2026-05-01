@@ -1,0 +1,53 @@
+{
+  "id": "carlos-barron",
+  "name": "Carlos Barron",
+  "firstName": "Carlos",
+  "lastName": "Barron",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-48",
+  "jurisdiction": "Colorado House of Representatives",
+  "county": [
+    "Colorado"
+  ],
+  "termStart": "2025-01-08",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "State Capitol Room 307, Colorado  Building 200 E. Colfax Ave., Denver, CO 80203",
+    "phone": "303-866-2943",
+    "email": "carlos.barron.house@coleg.gov",
+    "website": "https://leg.colorado.gov/legislators/carlos-barron"
+  },
+  "bio": "Carlos Barron serves as State Representative for Colorado House of Representatives District 48. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "CO",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://leg.colorado.gov/legislators/carlos-barron"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/co/legislature/Carlos-Barron-5f8d1bd0-329b-4a87-8d2f-cb62b8f2e921.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Carlos_Barron"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Carlos_Barron_(politician)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/217172/carlos-barron"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/representative-elect-carlos-barron-1664695a"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

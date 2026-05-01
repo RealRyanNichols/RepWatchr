@@ -1,0 +1,56 @@
+{
+  "id": "tanya-moya",
+  "name": "Tanya Moya",
+  "firstName": "Tanya",
+  "lastName": "Moya",
+  "photo": "/images/officials/state-legislature/nm/tanya-moya.jpg",
+  "photoSourceUrl": "https://www.nmlegis.gov/Images/Legislators/House/HMIRA.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-7",
+  "jurisdiction": "New Mexico House of Representatives",
+  "county": [
+    "New Mexico"
+  ],
+  "termStart": "2023-01-01",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "State Capitol Room 201B, New Mexico  490 Old Santa Fe Trail, Santa Fe, NM 87501",
+    "phone": "505-986-4214",
+    "email": "tanya.mirabalmoya@nmlegis.gov",
+    "website": "https://www.nmlegis.gov/Members/Legislator?SponCode=HMIRA"
+  },
+  "bio": "Tanya Moya serves as State Representative for New Mexico House of Representatives District 7. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "NM",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.nmlegis.gov/Members/Legislator?SponCode=HMIRA"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/nm/legislature/Tanya-Mirabal-Moya-f2394325-2797-4403-8f77-7f4dd3db0bb9.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://www.nmlegis.gov/Images/Legislators/House/HMIRA.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Tanya_Mirabal_Moya"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Tanya_Mirabal_Moya"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.nmlegis.gov/Members/Legislator_List?T=R"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

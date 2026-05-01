@@ -1,0 +1,64 @@
+{
+  "id": "nikki-lucas",
+  "name": "Nikki Lucas",
+  "firstName": "Nikki",
+  "lastName": "Lucas",
+  "photo": "/images/officials/state-legislature/ny/nikki-lucas.jpg",
+  "photoSourceUrl": "https://assembly.state.ny.us/write/upload/member_files/060/headshot/060.jpg?hst=1660073727",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "Assemblymember",
+  "district": "HD-60",
+  "jurisdiction": "New York State Assembly",
+  "county": [
+    "New York"
+  ],
+  "termStart": "2022-02-17",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 702, Legislative Office Building, Albany, NY 12248",
+    "phone": "518-455-5912",
+    "email": "lucasn@nyassembly.gov",
+    "website": "https://assembly.state.ny.us/mem/Nikki-Lucas"
+  },
+  "bio": "Nikki Lucas serves as Assemblymember for New York State Assembly District 60. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "NY",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://assembly.state.ny.us/mem/Nikki-Lucas"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ny/legislature/Nikki-Lucas-075a2bdd-9f2f-4160-bec6-dfa293da4c4e.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://assembly.state.ny.us/write/upload/member_files/060/headshot/060.jpg?hst=1660073727"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Nikki_Lucas"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Nikki_Lucas"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/201904/nikki-lucas"
+    },
+    {
+      "title": "Public source",
+      "url": "https://nyassembly.gov/mem/Nikki-Lucas"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/nikki-lucas-11606350"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

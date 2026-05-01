@@ -1,0 +1,72 @@
+{
+  "id": "jon-weber",
+  "name": "Jon Weber",
+  "firstName": "Jon",
+  "lastName": "Weber",
+  "photo": "/images/officials/state-legislature/id/jon-weber.jpg",
+  "photoSourceUrl": "https://legislature.idaho.gov/wp-content/uploads/sessioninfo/2021/directory/Weber6709.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-34A",
+  "jurisdiction": "Idaho House of Representatives",
+  "county": [
+    "Idaho"
+  ],
+  "termStart": "2020-12-01",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "P.O. Box 83720 700 W. Jefferson St., Boise, ID 83720",
+    "phone": "208-332-1053",
+    "email": "jweber@house.idaho.gov",
+    "website": "https://legislature.idaho.gov/legislators/membership/2023/id6709/"
+  },
+  "bio": "Jon Weber serves as State Representative for Idaho House of Representatives District 34A. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "ID",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://legislature.idaho.gov/legislators/membership/2023/id6709/"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/id/legislature/Jon-O-Weber-4501fe8d-11d8-43ee-a9bd-5ba3a82eb5d4.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://legislature.idaho.gov/wp-content/uploads/sessioninfo/2021/directory/Weber6709.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Jon_Weber"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Jon_Weber_(politician)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/113860/jon-weber"
+    },
+    {
+      "title": "Public source",
+      "url": "https://legislature.idaho.gov/house/membership"
+    },
+    {
+      "title": "Public source",
+      "url": "https://legislature.idaho.gov/house/membership/"
+    },
+    {
+      "title": "Public source",
+      "url": "https://legislature.idaho.gov/legislators/membership/2023/id6709"
+    },
+    {
+      "title": "Public source",
+      "url": "https://legislature.idaho.gov/legislators/membership/2026/id6709"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

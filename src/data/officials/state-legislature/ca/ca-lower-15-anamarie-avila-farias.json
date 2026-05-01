@@ -1,0 +1,64 @@
+{
+  "id": "anamarie-avila-farias",
+  "name": "Anamarie Avila Farias",
+  "firstName": "Anamarie",
+  "lastName": "Avila Farias",
+  "photo": "/images/officials/state-legislature/ca/anamarie-avila-farias.jpg",
+  "photoSourceUrl": "https://s3.amazonaws.com/ballotpedia-api4/files/thumbs/200/300/Anamarie_Avila_Farias_20240905_034457.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "Assemblymember",
+  "district": "HD-15",
+  "jurisdiction": "California State Assembly",
+  "county": [
+    "California"
+  ],
+  "termStart": "2024-12-02",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 6140, 1021 O St. P.O. Box 942849, Sacramento, CA 94249",
+    "phone": "916-319-2015",
+    "email": "assemblymember.avilafarias@assembly.ca.gov",
+    "website": "https://a15.asmdc.org/"
+  },
+  "bio": "Anamarie Avila Farias serves as Assemblymember for California State Assembly District 15. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "CA",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://a15.asmdc.org/"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ca/legislature/Anamarie-Avila-Farias-c3921173-9680-4387-a70e-ebba5c599846.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://s3.amazonaws.com/ballotpedia-api4/files/thumbs/200/300/Anamarie_Avila_Farias_20240905_034457.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://a15.asmdc.org"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Anamarie_Avila_Farias"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Anamarie_Avila_Farias"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/146377/anamarie-avila-farias"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.assembly.ca.gov/assemblymembers/15"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

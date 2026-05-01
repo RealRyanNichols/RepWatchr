@@ -1,0 +1,72 @@
+{
+  "id": "jesse-chism",
+  "name": "Jesse Chism",
+  "firstName": "Jesse",
+  "lastName": "Chism",
+  "photo": "/images/officials/state-legislature/tn/jesse-chism.jpg",
+  "photoSourceUrl": "https://www.capitol.tn.gov/house/members/images/H85.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-85",
+  "jurisdiction": "Tennessee House of Representatives",
+  "county": [
+    "Tennessee"
+  ],
+  "termStart": "2018-11-06",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 504, Cordell Hull Building 425 Rep. John Lewis Way North, Nashville, TN 37243",
+    "phone": "615-741-6954",
+    "email": "rep.jesse.chism@capitol.tn.gov",
+    "website": "https://wapp.capitol.tn.gov/apps/legislatorinfo/member.aspx?district=H85"
+  },
+  "bio": "Jesse Chism serves as State Representative for Tennessee House of Representatives District 85. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "TN",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://wapp.capitol.tn.gov/apps/legislatorinfo/member.aspx?district=H85"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/tn/legislature/Jesse-Chism-108691a2-9f24-41c5-b4c8-606c7cdf036b.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://www.capitol.tn.gov/house/members/images/H85.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Jesse_Chism"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Jesse_Chism"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/182512/jesse-chism"
+    },
+    {
+      "title": "Public source",
+      "url": "https://wapp.capitol.tn.gov/apps/LegislatorInfo/directory.aspx?chamber=H"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.capitol.tn.gov/house/members"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.capitol.tn.gov/house/members/"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.capitol.tn.gov/house/members/h85.html"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

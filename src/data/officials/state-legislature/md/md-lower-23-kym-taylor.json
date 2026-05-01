@@ -1,0 +1,60 @@
+{
+  "id": "kym-taylor",
+  "name": "Kym Taylor",
+  "firstName": "Kym",
+  "lastName": "Taylor",
+  "photo": "/images/officials/state-legislature/md/kym-taylor.jpg",
+  "photoSourceUrl": "https://s3.amazonaws.com/ballotpedia-api4/files/thumbs/200/300/Kym_Taylor.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "Delegate",
+  "district": "HD-23",
+  "jurisdiction": "Maryland House of Delegates",
+  "county": [
+    "Maryland"
+  ],
+  "termStart": "2023-01-11",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 203, Lowe House Office Building 6 Bladen St., Annapolis, MD 21401",
+    "phone": "410-841-3331",
+    "email": "kym.taylor@house.maryland.gov",
+    "website": "https://mgaleg.maryland.gov/mgawebsite/Members/Details/taylor03"
+  },
+  "bio": "Kym Taylor serves as Delegate for Maryland House of Delegates District 23. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "MD",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://mgaleg.maryland.gov/mgawebsite/Members/Details/taylor03"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/md/legislature/Kym-Taylor-f14ad8e7-adc9-44f2-95eb-8b29c34aa4dc.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://s3.amazonaws.com/ballotpedia-api4/files/thumbs/200/300/Kym_Taylor.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Kym_Taylor"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Kym_Taylor"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/202248/kym-taylor"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/kym-taylor-87619610"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

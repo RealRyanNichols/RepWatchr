@@ -1,0 +1,61 @@
+{
+  "id": "pat-miller",
+  "name": "Pat Miller",
+  "firstName": "Pat",
+  "lastName": "Miller",
+  "party": "D",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-27",
+  "jurisdiction": "Connecticut Senate",
+  "county": [
+    "Connecticut"
+  ],
+  "termStart": "2021-03-08",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 2402, Legislative Office Building 300 Capitol Ave., Hartford, CT 06106",
+    "phone": "860-240-0589",
+    "email": "patricia.miller@cga.ct.gov",
+    "website": "https://cga.ct.gov/asp/CGABillStatus/CGAMemberBills.asp?dist_code=%27S27%27&dist_name=Miller,%20Patricia%20Billie"
+  },
+  "bio": "Pat Miller serves as State Senator for Connecticut Senate District 27. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "CT",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://cga.ct.gov/asp/CGABillStatus/CGAMemberBills.asp?dist_code=%27S27%27&dist_name=Miller,%20Patricia%20Billie"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ct/legislature/Patricia-Billie-Miller-fcf63a22-3979-4cbf-a719-0d414d13e1ac.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "ftp://ftp.cga.ct.gov/pub/data/LegislatorDatabase.csv"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Patricia_Miller_(Connecticut)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Patricia_Billie_Miller"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.senatedems.ct.gov/Miller"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.senatedems.ct.gov/senator/patricia-billie-miller"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.senatedems.ct.gov/senator/patricia-billie-miller/bio"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

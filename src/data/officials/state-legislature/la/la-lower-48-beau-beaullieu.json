@@ -1,0 +1,53 @@
+{
+  "id": "beau-beaullieu",
+  "name": "Beau Beaullieu",
+  "firstName": "Beau",
+  "lastName": "Beaullieu",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-48",
+  "jurisdiction": "Louisiana House of Representatives",
+  "county": [
+    "Louisiana"
+  ],
+  "termStart": "2020-01-13",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "P.O. Box 94062 900 N. 3rd St., Baton Rouge, LA 70804",
+    "phone": "225-342-6945",
+    "email": "hse048@legis.la.gov",
+    "website": "https://house.louisiana.gov/H_Reps/members.aspx?ID=48"
+  },
+  "bio": "Beau Beaullieu serves as State Representative for Louisiana House of Representatives District 48. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "LA",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://house.louisiana.gov/H_Reps/members.aspx?ID=48"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/la/legislature/Gerald-Beau-Alphonse-Beaullieu-IV-c5ea395a-7594-4585-b193-000e05f08005.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Beau_Beaullieu"
+    },
+    {
+      "title": "Public source",
+      "url": "https://house.louisiana.gov/H_Reps/H_Reps_FullInfo"
+    },
+    {
+      "title": "Public source",
+      "url": "https://house.louisiana.gov/H_Reps/members?ID=48"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/beau-beaullieu-mba-aif-c-k-p-1b59681"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

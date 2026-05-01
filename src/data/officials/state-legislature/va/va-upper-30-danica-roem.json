@@ -1,0 +1,77 @@
+{
+  "id": "danica-roem",
+  "name": "Danica Roem",
+  "firstName": "Danica",
+  "lastName": "Roem",
+  "photo": "/images/officials/state-legislature/va/danica-roem.jpg",
+  "photoSourceUrl": "https://apps.senate.virginia.gov/Senator/images/member_photos/Roem30",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-30",
+  "jurisdiction": "Virginia Senate",
+  "county": [
+    "Virginia"
+  ],
+  "termStart": "2024-01-10",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 520, General Assembly Building P.O. Box 396, Richmond, VA 23218",
+    "phone": "804-698-7530",
+    "email": "senatorroem@senate.virginia.gov",
+    "website": "https://apps.senate.virginia.gov/Senator/memberpage.php?id=S126",
+    "socialMedia": {
+      "x": "https://x.com/pwcdanica",
+      "twitter": "https://x.com/pwcdanica",
+      "facebook": "https://facebook.com/danicafordelegate"
+    }
+  },
+  "bio": "Danica Roem serves as State Senator for Virginia Senate District 30. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "VA",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://apps.senate.virginia.gov/Senator/memberpage.php?id=S126"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/va/legislature/Danica-A-Roem-3a2855f7-5ff7-4c5e-9d28-803d99f19d3f.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://apps.senate.virginia.gov/Senator/images/member_photos/Roem30"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Danica_Roem"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Danica_Roem"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/176351/danica-roem"
+    },
+    {
+      "title": "Public source",
+      "url": "https://lis.virginia.gov/191/mbr/MBR.HTM"
+    },
+    {
+      "title": "Public source",
+      "url": "https://lis.virginia.gov/201/mbr/MBR.HTM"
+    },
+    {
+      "title": "Public source",
+      "url": "https://lis.virginia.gov/cgi-bin/legp604.exe?191+mbr+H303"
+    },
+    {
+      "title": "Public source",
+      "url": "https://lis.virginia.gov/cgi-bin/legp604.exe?201+mbr+H303"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

@@ -1,0 +1,72 @@
+{
+  "id": "stacy-brenner",
+  "name": "Stacy Brenner",
+  "firstName": "Stacy",
+  "lastName": "Brenner",
+  "photo": "/images/officials/state-legislature/me/stacy-brenner.jpg",
+  "photoSourceUrl": "https://legislature.maine.gov/uploads/visual_edit/brenner-1022x1024.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-30",
+  "jurisdiction": "Maine Senate",
+  "county": [
+    "Maine"
+  ],
+  "termStart": "2020-12-02",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "3 State House Station, Augusta, ME 04333",
+    "phone": "207-287-1515",
+    "email": "stacy.brenner@legislature.maine.gov",
+    "website": "https://legislature.maine.gov/District-30"
+  },
+  "bio": "Stacy Brenner serves as State Senator for Maine Senate District 30. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "ME",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://legislature.maine.gov/District-30"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/me/legislature/Stacy-Brenner-b060c143-2734-491d-b28f-f6e4e2c77cb8.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://legislature.maine.gov/uploads/visual_edit/brenner-1022x1024.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Stacy_Brenner"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Stacy_Brenner"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/192722/stacy-brenner"
+    },
+    {
+      "title": "Public source",
+      "url": "https://legislature.maine.gov/district30"
+    },
+    {
+      "title": "Public source",
+      "url": "https://legislature.maine.gov/District30"
+    },
+    {
+      "title": "Public source",
+      "url": "https://legislature.maine.gov/uploads/visual_edit/130th-senate-contact-information-as-of-31221.xlsx"
+    },
+    {
+      "title": "Public source",
+      "url": "https://legislature.maine.gov/uploads/visual_edit/131-senator-contact-information-2.xlsx"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

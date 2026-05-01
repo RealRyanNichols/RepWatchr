@@ -1,0 +1,69 @@
+{
+  "id": "alex-finkelman",
+  "name": "Alex Finkelman",
+  "firstName": "Alex",
+  "lastName": "Finkelman",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-74",
+  "jurisdiction": "Rhode Island House of Representatives",
+  "county": [
+    "Rhode Island"
+  ],
+  "termStart": "2023-01-03",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "82 Smith St., Providence, RI 02903",
+    "phone": "401-222-3580",
+    "email": "rep-finkelman@rilegislature.gov",
+    "website": "https://www.rilegislature.gov/representatives/finkelman/Pages/biography.aspx"
+  },
+  "bio": "Alex Finkelman serves as State Representative for Rhode Island House of Representatives District 74. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "RI",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.rilegislature.gov/representatives/finkelman/Pages/biography.aspx"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ri/legislature/Alex-S-Finkelman-202a1def-abb3-4f77-8ef1-5c453d2d5423.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Alex_Finkelman"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Alex_Finkelman"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/210014/alex-finkelman"
+    },
+    {
+      "title": "Public source",
+      "url": "https://webserver.rilin.state.ri.us/Email/RepEmailListDistrict.asp"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/alexfinkelman"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.rilegislature.gov/representatives/finkelman/Pages/Biography.aspx"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.rilegislature.gov/representatives/finkelmana/Pages/biography.aspx"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.rilegislature.gov/SiteAssets/MailingLists/Representatives.xls"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

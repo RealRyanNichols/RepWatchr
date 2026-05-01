@@ -1,0 +1,45 @@
+{
+  "id": "diana-dizoglio",
+  "name": "Diana DiZoglio",
+  "firstName": "Diana",
+  "lastName": "DiZoglio",
+  "party": "D",
+  "level": "state",
+  "position": "Auditor",
+  "district": "Massachusetts",
+  "jurisdiction": "Massachusetts statewide public office",
+  "county": [
+    "Massachusetts"
+  ],
+  "termStart": "",
+  "termEnd": "2027-01-06",
+  "contactInfo": {
+    "office": "State House, Room 230; Boston, MA 02133",
+    "phone": "617-727-2075",
+    "email": "Auditor@sao.state.ma.us",
+    "website": "https://www.mass.gov/orgs/office-of-the-state-auditor"
+  },
+  "bio": "Diana DiZoglio is listed as Auditor for Massachusetts. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "MA",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.mass.gov/orgs/office-of-the-state-auditor"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ma/executive/Diana-DiZoglio-ec37a070-639f-4c27-9228-33c9d38f9639.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.sec.state.ma.us/divisions/cis/government/constitutional-officers.htm"
+    },
+    {
+      "title": "Public source",
+      "url": "https://malegislature.gov/Legislators/Profile/D_D0"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

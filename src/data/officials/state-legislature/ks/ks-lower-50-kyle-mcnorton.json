@@ -1,0 +1,69 @@
+{
+  "id": "kyle-mcnorton",
+  "name": "Kyle McNorton",
+  "firstName": "Kyle",
+  "lastName": "McNorton",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-50",
+  "jurisdiction": "Kansas House of Representatives",
+  "county": [
+    "Kansas"
+  ],
+  "termStart": "2023-10-24",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "State Capitol Room 561-W, Kansas  Building 300 SW 10th St., Topeka, KS 66612",
+    "phone": "785-296-7460",
+    "email": "kyle.mcnorton@house.ks.gov",
+    "website": "https://www.kslegislature.gov/li/b2025_26/members/rep_mcnorton_kyle_1/"
+  },
+  "bio": "Kyle McNorton serves as State Representative for Kansas House of Representatives District 50. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "KS",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.kslegislature.gov/li/b2025_26/members/rep_mcnorton_kyle_1/"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ks/legislature/Kyle-McNorton-2abcd1bf-54b0-4abe-a716-065895d88d6b.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Kyle_McNorton"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Kyle_McNorton"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.kslegislature.gov/li/b2025_26/members/rep_mcnorton_kyle_1"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.kslegislature.org/li/api/v11/rev-1/members/rep_mcnorton_kyle_1"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.kslegislature.org/li/api/v11/rev-1/members/rep_mcnorton_kyle_1/"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.kslegislature.org/li/b2023_24/members/rep_mcnorton_kyle_1"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.kslegislature.org/li/b2023_24/members/rep_mcnorton_kyle_1/"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/kyle-mcnorton-b1219136"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

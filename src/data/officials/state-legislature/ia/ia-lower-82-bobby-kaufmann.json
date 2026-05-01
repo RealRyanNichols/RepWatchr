@@ -1,0 +1,64 @@
+{
+  "id": "bobby-kaufmann",
+  "name": "Bobby Kaufmann",
+  "firstName": "Bobby",
+  "lastName": "Kaufmann",
+  "photo": "/images/officials/state-legislature/ia/bobby-kaufmann.jpg",
+  "photoSourceUrl": "https://www.legis.iowa.gov/photo?action=getPhoto&ga=91&pid=10756",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-82",
+  "jurisdiction": "Iowa House of Representatives",
+  "county": [
+    "Iowa"
+  ],
+  "termStart": "2023-01-01",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "State Capitol Building 1007 E. Grand Ave., Des Moines, IA 50319",
+    "phone": "515-281-3221",
+    "email": "bobby.kaufmann@legis.iowa.gov",
+    "website": "https://iowahouserepublicans.nationbuilder.com/reps"
+  },
+  "bio": "Bobby Kaufmann serves as State Representative for Iowa House of Representatives District 82. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "IA",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://iowahouserepublicans.nationbuilder.com/reps"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ia/legislature/Bobby-Kaufmann-657c7d2d-2444-4809-93fb-d1701d77f528.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://www.legis.iowa.gov/photo?action=getPhoto&ga=91&pid=10756"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Bobby_Kaufmann"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Bobby_Kaufmann"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.legis.iowa.gov/legislators/house"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.legis.iowa.gov/legislators/legislator?ga=90&personID=10756"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.legis.iowa.gov/legislators/legislator?personID=10756"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

@@ -1,0 +1,72 @@
+{
+  "id": "kam-buckner",
+  "name": "Kam Buckner",
+  "firstName": "Kam",
+  "lastName": "Buckner",
+  "photo": "/images/officials/state-legislature/il/kam-buckner.jpg",
+  "photoSourceUrl": "https://cdn.ilga.gov/assets/img/members/{37E72FD2-6318-45FD-9FF1-C750EB26137D}.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-26",
+  "jurisdiction": "Illinois House of Representatives",
+  "county": [
+    "Illinois"
+  ],
+  "termStart": "2019-01-18",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 300, Capitol Building, Springfield, IL 62706",
+    "phone": "217-782-2023",
+    "email": "buckner@illinois26.com",
+    "website": "https://ilga.gov/house/Rep.asp?GA=101&MemberID=2765"
+  },
+  "bio": "Kam Buckner serves as State Representative for Illinois House of Representatives District 26. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "IL",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://ilga.gov/house/Rep.asp?GA=101&MemberID=2765"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/il/legislature/Kambium-Buckner-8b7174cd-4081-4717-8ba9-184518f7b31e.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://cdn.ilga.gov/assets/img/members/{37E72FD2-6318-45FD-9FF1-C750EB26137D}.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Kambium_Buckner"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Kam_Buckner"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ilga.gov/house/default.asp?GA=101"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ilga.gov/house/default.asp?GA=102"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ilga.gov/house/default.asp?GA=103"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ilga.gov/house/Rep.asp?GA=102&MemberID=2966"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ilga.gov/house/Rep.asp?GA=103&MemberID=3158"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

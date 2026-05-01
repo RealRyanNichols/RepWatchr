@@ -1,0 +1,44 @@
+{
+  "id": "kristin-nelson",
+  "name": "Kristin Nelson",
+  "firstName": "Kristin",
+  "lastName": "Nelson",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-38",
+  "jurisdiction": "Alabama House of Representatives",
+  "county": [
+    "Alabama"
+  ],
+  "termStart": "2026-02-05",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "11 S. Union St., Montgomery, AL 36130",
+    "phone": "334-261-0532",
+    "email": "kristin.nelson@alhouse.gov"
+  },
+  "bio": "Kristin Nelson serves as State Representative for Alabama House of Representatives District 38. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "AL",
+  "sourceLinks": [
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/al/legislature/Kristin-Nelson-730c7d27-9f0a-4a8b-839b-8de86f6b012e.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Kristin_Nelson_(Alabama)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Kristin_Nelson_(politician)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/228105/kristin-nelson"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

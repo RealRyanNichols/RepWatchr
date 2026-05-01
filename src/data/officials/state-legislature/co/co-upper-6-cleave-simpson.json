@@ -1,0 +1,53 @@
+{
+  "id": "cleave-simpson",
+  "name": "Cleave Simpson",
+  "firstName": "Cleave",
+  "lastName": "Simpson",
+  "party": "R",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-6",
+  "jurisdiction": "Colorado Senate",
+  "county": [
+    "Colorado"
+  ],
+  "termStart": "2023-01-09",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "State Capitol Room 346, Colorado  Building 200 E. Colfax Ave., Denver, CO 80203",
+    "phone": "303-866-4875",
+    "email": "cleave.simpson.senate@coleg.gov",
+    "website": "https://leg.colorado.gov/legislators/cleave-simpson"
+  },
+  "bio": "Cleave Simpson serves as State Senator for Colorado Senate District 6. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "CO",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://leg.colorado.gov/legislators/cleave-simpson"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/co/legislature/Cleave-Simpson-715df6f2-cef6-4b88-b745-0207c8ffb4ff.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Cleave_Simpson_Jr."
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Cleave_Simpson"
+    },
+    {
+      "title": "Public source",
+      "url": "https://leg.colorado.gov/legislators"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/cleave-simpson-48055038"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

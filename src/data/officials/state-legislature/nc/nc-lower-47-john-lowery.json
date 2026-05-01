@@ -1,0 +1,45 @@
+{
+  "id": "john-lowery",
+  "name": "John Lowery",
+  "firstName": "John",
+  "lastName": "Lowery",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-47",
+  "jurisdiction": "North Carolina House of Representatives",
+  "county": [
+    "North Carolina"
+  ],
+  "termStart": "2025-10-17",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 306B2, 300 N. Salisbury St., Raleigh, NC 27603",
+    "phone": "919-715-0875",
+    "email": "john.lowery@ncleg.gov",
+    "website": "https://www.ncleg.gov/Members/Biography/H/1001"
+  },
+  "bio": "John Lowery serves as State Representative for North Carolina House of Representatives District 47. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "NC",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.ncleg.gov/Members/Biography/H/1001"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/nc/legislature/John-Lowery-7d07a14d-a5dc-46a9-8277-85fee42921a1.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/John_Lowery_(North_Carolina)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/john-lowery1"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

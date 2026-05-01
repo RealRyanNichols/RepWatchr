@@ -1,0 +1,60 @@
+{
+  "id": "eilish-collins-main",
+  "name": "Eilish Collins Main",
+  "firstName": "Eilish",
+  "lastName": "Collins Main",
+  "photo": "/images/officials/state-legislature/ct/eilish-collins-main.jpg",
+  "photoSourceUrl": "https://res.cloudinary.com/hn09nqgcy/image/upload/v1726316951/hnprgb5gvvaksj375bmc.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-146",
+  "jurisdiction": "Connecticut House of Representatives",
+  "county": [
+    "Connecticut"
+  ],
+  "termStart": "2025-01-08",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 4002, Legislative Office Building 300 Capitol Ave., Hartford, CT 06106",
+    "phone": "860-240-8585",
+    "email": "eilish.collinsmain@cga.ct.gov",
+    "website": "https://www.housedems.ct.gov/CollinsMain"
+  },
+  "bio": "Eilish Collins Main serves as State Representative for Connecticut House of Representatives District 146. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "CT",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.housedems.ct.gov/CollinsMain"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ct/legislature/Eilish-Collins-Main-46ffabcf-724a-453e-89c4-797662a75e40.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://res.cloudinary.com/hn09nqgcy/image/upload/v1726316951/hnprgb5gvvaksj375bmc.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Eilish_Collins_Main"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Eilish_Collins_Main"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/219136/eilish-collins-main"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/eilishmain"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

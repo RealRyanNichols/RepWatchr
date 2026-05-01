@@ -1,0 +1,69 @@
+{
+  "id": "houston-gaines",
+  "name": "Houston Gaines",
+  "firstName": "Houston",
+  "lastName": "Gaines",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-120",
+  "jurisdiction": "Georgia House of Representatives",
+  "county": [
+    "Georgia"
+  ],
+  "termStart": "2023-01-09",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 401-A, Coverdell Legislative Office Building 18 Capitol Square SW, Atlanta, GA 30334",
+    "phone": "404-656-0152",
+    "email": "houston.gaines@house.ga.gov",
+    "website": "https://www.house.ga.gov/Representatives/en-US/member.aspx?Member=4955&Session=27"
+  },
+  "bio": "Houston Gaines serves as State Representative for Georgia House of Representatives District 120. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "GA",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.house.ga.gov/Representatives/en-US/member.aspx?Member=4955&Session=27"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ga/legislature/Houston-Gaines-e73cb2a6-bf3e-4211-a386-142c18a4f607.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Houston_Gaines"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Houston_Gaines"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/176757/houston-gaines"
+    },
+    {
+      "title": "Public source",
+      "url": "https://webservices.legis.ga.gov/GGAServices/Members/Service.svc?wsdl"
+    },
+    {
+      "title": "Detail page (requires authorization token)",
+      "url": "https://www.legis.ga.gov/api/members/detail/4955?session=1029&chamber=1"
+    },
+    {
+      "title": "API member detail (requires authorization token)",
+      "url": "https://www.legis.ga.gov/api/members/detail/4955?session=1031&chamber=1"
+    },
+    {
+      "title": "API members list (requires authorization token)",
+      "url": "https://www.legis.ga.gov/api/members/list/1031"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.legis.ga.gov/members/house/4955"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

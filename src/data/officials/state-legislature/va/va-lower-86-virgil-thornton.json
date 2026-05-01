@@ -1,0 +1,52 @@
+{
+  "id": "virgil-thornton",
+  "name": "Virgil Thornton",
+  "firstName": "Virgil",
+  "lastName": "Thornton",
+  "photo": "/images/officials/state-legislature/va/virgil-thornton.jpg",
+  "photoSourceUrl": "https://house.vga.virginia.gov/delegate_photos/H0400.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "Delegate",
+  "district": "HD-86",
+  "jurisdiction": "Virginia House of Delegates",
+  "county": [
+    "Virginia"
+  ],
+  "termStart": "2026-01-14",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 802, General Assembly Building 201 N. 9th St., Richmond, VA 23219",
+    "phone": "804-698-1086",
+    "email": "delvthornton@house.virginia.gov",
+    "website": "https://house.vga.virginia.gov/members/H0400"
+  },
+  "bio": "Virgil Thornton serves as Delegate for Virginia House of Delegates District 86. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "VA",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://house.vga.virginia.gov/members/H0400"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/va/legislature/Virgil-Thornton-63c0c8ef-ded6-406e-9d5d-a114fa35e26a.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://house.vga.virginia.gov/delegate_photos/H0400.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Virgil_Thornton_Sr."
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Virgil_Thornton_Sr."
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

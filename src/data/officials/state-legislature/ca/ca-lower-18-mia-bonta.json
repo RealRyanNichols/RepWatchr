@@ -1,0 +1,53 @@
+{
+  "id": "mia-bonta",
+  "name": "Mia Bonta",
+  "firstName": "Mia",
+  "lastName": "Bonta",
+  "party": "D",
+  "level": "state",
+  "position": "Assemblymember",
+  "district": "HD-18",
+  "jurisdiction": "California State Assembly",
+  "county": [
+    "California"
+  ],
+  "termStart": "2021-09-07",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 390, 1020 N St., Sacramento, CA 95814",
+    "phone": "916-319-2018",
+    "email": "assemblymember.mbonta@assembly.ca.gov",
+    "website": "https://a18.asmdc.org"
+  },
+  "bio": "Mia Bonta serves as Assemblymember for California State Assembly District 18. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "CA",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://a18.asmdc.org"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ca/legislature/Mia-Bonta-a467d09d-289d-4e5a-a2af-a0ce20af14e1.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Mia_Bonta"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Mia_Bonta"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.assembly.ca.gov/assemblymembers"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/mialisabonta"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

@@ -1,0 +1,69 @@
+{
+  "id": "joan-hartley",
+  "name": "Joan Hartley",
+  "firstName": "Joan",
+  "lastName": "Hartley",
+  "party": "D",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-15",
+  "jurisdiction": "Connecticut Senate",
+  "county": [
+    "Connecticut"
+  ],
+  "termStart": "2001-01-03",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 2100, Legislative Office Building 300 Capitol Ave., Hartford, CT 06106",
+    "phone": "860-240-0006",
+    "email": "hartley@senatedems.ct.gov",
+    "website": "https://www.senatedems.ct.gov/Hartley"
+  },
+  "bio": "Joan Hartley serves as State Senator for Connecticut Senate District 15. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "CT",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.senatedems.ct.gov/Hartley"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ct/legislature/Joan-V-Hartley-2c22d680-9e92-423b-a943-20571186c91a.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "ftp://ftp.cga.ct.gov/pub/data/LegislatorDatabase.csv"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Joan_Hartley"
+    },
+    {
+      "title": "Public source",
+      "url": "https://cga.ct.gov/asp/CGABillStatus/CGAMemberBills.asp?dist_code=%27S15%27&dist_name=Hartley,%20Joan%20V."
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Joan_Hartley"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/7199/joan-hartley"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.senatedems.ct.gov/Hartley.php"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.senatedems.ct.gov/senator/joan-hartley"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.senatedems.ct.gov/senator/joan-hartley/bio"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

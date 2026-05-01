@@ -1,0 +1,60 @@
+{
+  "id": "sheila-lyman",
+  "name": "Sheila Lyman",
+  "firstName": "Sheila",
+  "lastName": "Lyman",
+  "photo": "/images/officials/state-legislature/me/sheila-lyman.jpg",
+  "photoSourceUrl": "https://legislature.maine.gov/house/house/Repository/MemberProfiles/07bd7878-b32c-4a23-b44a-9f56e3353fdf_LymanNEW.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-76",
+  "jurisdiction": "Maine House of Representatives",
+  "county": [
+    "Maine"
+  ],
+  "termStart": "2022-12-07",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 332, House Republican Office 2 State House Station, Augusta, ME 04333",
+    "phone": "800-423-2900",
+    "email": "sheila.lyman@legislature.maine.gov",
+    "website": "https://legislature.maine.gov/house/house/MemberProfiles/Details/1424"
+  },
+  "bio": "Sheila Lyman serves as State Representative for Maine House of Representatives District 76. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "ME",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://legislature.maine.gov/house/house/MemberProfiles/Details/1424"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/me/legislature/Sheila-A-Lyman-7498179f-e3de-47b7-9aee-9abee716522a.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://legislature.maine.gov/house/house/Repository/MemberProfiles/07bd7878-b32c-4a23-b44a-9f56e3353fdf_LymanNEW.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Sheila_Lyman"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Sheila_Lyman"
+    },
+    {
+      "title": "Public source",
+      "url": "https://legislature.maine.gov/house/house/MemberProfiles/ListAlpha"
+    },
+    {
+      "title": "Public source",
+      "url": "https://mainehousegop.org/members/lyman-sheila"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

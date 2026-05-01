@@ -1,0 +1,60 @@
+{
+  "id": "bryce-berry",
+  "name": "Bryce Berry",
+  "firstName": "Bryce",
+  "lastName": "Berry",
+  "photo": "/images/officials/state-legislature/ga/bryce-berry.jpg",
+  "photoSourceUrl": "https://s3.amazonaws.com/ballotpedia-api4/files/thumbs/200/300/Bryce_Berry.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-56",
+  "jurisdiction": "Georgia House of Representatives",
+  "county": [
+    "Georgia"
+  ],
+  "termStart": "2025-01-13",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 509-B, Coverdell Legislative Office Building 18 Capitol Square SW, Atlanta, GA 30334",
+    "phone": "404-656-0220",
+    "email": "bryce.berry@house.ga.gov",
+    "website": "https://www.legis.ga.gov/members/house/5069"
+  },
+  "bio": "Bryce Berry serves as State Representative for Georgia House of Representatives District 56. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "GA",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.legis.ga.gov/members/house/5069"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ga/legislature/Bryce-Berry-b1187e7a-8cea-4e91-9c9f-7c7c61df3c85.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://s3.amazonaws.com/ballotpedia-api4/files/thumbs/200/300/Bryce_Berry.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Bryce_Berry"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Bryce_Berry"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/215226/bryce-berry"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/bryce-berry-he-him-his-307014193"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

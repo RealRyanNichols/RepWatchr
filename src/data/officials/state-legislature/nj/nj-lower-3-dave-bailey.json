@@ -1,0 +1,65 @@
+{
+  "id": "dave-bailey",
+  "name": "Dave Bailey",
+  "firstName": "Dave",
+  "lastName": "Bailey",
+  "party": "D",
+  "level": "state",
+  "position": "Assemblymember",
+  "district": "HD-3",
+  "jurisdiction": "New Jersey General Assembly",
+  "county": [
+    "New Jersey"
+  ],
+  "termStart": "2024-01-09",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "P.O. Box 068 State House, 145 W. State St., Trenton, NJ 08625",
+    "phone": "609-847-3905",
+    "email": "asmbailey@njleg.org",
+    "website": "https://www.assemblydems.com/157/Dave-Bailey-Jr---District-3"
+  },
+  "bio": "Dave Bailey serves as Assemblymember for New Jersey General Assembly District 3. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "NJ",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.assemblydems.com/157/Dave-Bailey-Jr---District-3"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/nj/legislature/Dave-Bailey-64a8c09d-24a2-4d4c-a071-d09f0a30c79f.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Dave_Bailey_Jr."
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/David_Bailey_(New_Jersey_politician)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/212234/dave-bailey"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.assemblydems.com/dave-bailey"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.assemblydems.com/dave-bailey/"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/dave-bailey-382969b"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.njleg.state.nj.us/legislative-roster/459/assemblyman-bailey"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

@@ -1,0 +1,52 @@
+{
+  "id": "randy-udell",
+  "name": "Randy Udell",
+  "firstName": "Randy",
+  "lastName": "Udell",
+  "photo": "/images/officials/state-legislature/wi/randy-udell.jpg",
+  "photoSourceUrl": "https://bloximages.chicago2.vip.townnews.com/captimes.com/content/tncms/assets/v3/editorial/c/7b/c7b832ac-dbcf-11ee-ab35-771e1438be52/65e88e3c05aed.image.jpg?crop=1163%2C871%2C26%2C52&resize=668%2C500&order=crop%2Cresize",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "Assemblymember",
+  "district": "HD-47",
+  "jurisdiction": "Wisconsin State Assembly",
+  "county": [
+    "Wisconsin"
+  ],
+  "termStart": "2025-01-06",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "State Capitol Room 19 North, P.O. Box 8953 , 2 E. Main St., Madison, WI 53708",
+    "phone": "608-237-9147",
+    "email": "rep.udell@legis.wisconsin.gov",
+    "website": "https://docs.legis.wisconsin.gov/2025/legislators/assembly/2891"
+  },
+  "bio": "Randy Udell serves as Assemblymember for Wisconsin State Assembly District 47. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "WI",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://docs.legis.wisconsin.gov/2025/legislators/assembly/2891"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/wi/legislature/Randy-Udell-7743646d-bb5a-4771-9c2b-df3a8271609c.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://bloximages.chicago2.vip.townnews.com/captimes.com/content/tncms/assets/v3/editorial/c/7b/c7b832ac-dbcf-11ee-ab35-771e1438be52/65e88e3c05aed.image.jpg?crop=1163%2C871%2C26%2C52&resize=668%2C500&order=crop%2Cresize"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Randy_Udell"
+    },
+    {
+      "title": "Public source",
+      "url": "https://legis.wisconsin.gov/assembly/47/udell"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

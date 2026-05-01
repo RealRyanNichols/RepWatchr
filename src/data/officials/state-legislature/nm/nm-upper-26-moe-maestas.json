@@ -1,0 +1,77 @@
+{
+  "id": "moe-maestas",
+  "name": "Moe Maestas",
+  "firstName": "Moe",
+  "lastName": "Maestas",
+  "photo": "/images/officials/state-legislature/nm/moe-maestas.jpg",
+  "photoSourceUrl": "https://www.nmlegis.gov/Images/Legislators/Senate/SMAEM.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-26",
+  "jurisdiction": "New Mexico Senate",
+  "county": [
+    "New Mexico"
+  ],
+  "termStart": "2022-11-16",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "State Capitol Room 300C, New Mexico  490 Old Santa Fe Trail, Santa Fe, NM 87501",
+    "phone": "505-986-4373",
+    "email": "antonio.maestas@nmlegis.gov",
+    "website": "https://nmlegis.gov/Members/Legislator?SponCode=smaem",
+    "socialMedia": {
+      "x": "https://x.com/RepMoe",
+      "twitter": "https://x.com/RepMoe",
+      "facebook": "https://facebook.com/repmoe"
+    }
+  },
+  "bio": "Moe Maestas serves as State Senator for New Mexico Senate District 26. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "NM",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://nmlegis.gov/Members/Legislator?SponCode=smaem"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/nm/legislature/Antonio-Maestas-2913173a-2bfe-4474-8bdc-d145f868c4de.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://www.nmlegis.gov/Images/Legislators/Senate/SMAEM.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Antonio_Maestas"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Moe_Maestas"
+    },
+    {
+      "title": "Public source",
+      "url": "https://moejustice.com"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/antonio-moe\u200b-maestas-1262466"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.nmlegis.gov/Members/Legislator?SponCode=HMAES"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.nmlegis.gov/Members/Legislator?SponCode=SMAEM"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.nmlegis.gov/Members/Legislator_List?T=R"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

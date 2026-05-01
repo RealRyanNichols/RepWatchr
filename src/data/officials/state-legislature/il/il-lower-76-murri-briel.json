@@ -1,0 +1,64 @@
+{
+  "id": "murri-briel",
+  "name": "Murri Briel",
+  "firstName": "Murri",
+  "lastName": "Briel",
+  "photo": "/images/officials/state-legislature/il/murri-briel.jpg",
+  "photoSourceUrl": "https://cdn.ilga.gov/assets/img/members/{E820664D-DF76-4A22-88DC-736A218A001E}.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-76",
+  "jurisdiction": "Illinois House of Representatives",
+  "county": [
+    "Illinois"
+  ],
+  "termStart": "2025-01-08",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 244-W, Stratton Office Building, Springfield, IL 62706",
+    "phone": "217-782-0140",
+    "email": "contact@staterepbriel.com",
+    "website": "https://staterepbriel.com/"
+  },
+  "bio": "Murri Briel serves as State Representative for Illinois House of Representatives District 76. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "IL",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://staterepbriel.com/"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/il/legislature/Murri-Briel-d717abc0-a4ec-4ce9-bd24-cbda0a48c361.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://cdn.ilga.gov/assets/img/members/{E820664D-DF76-4A22-88DC-736A218A001E}.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Amy_Murri_Briel"
+    },
+    {
+      "title": "Public source",
+      "url": "https://staterepbriel.com"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.ilga.gov/House/Members/Details/3451"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.ilga.gov/house/Rep.asp?GA=104&MemberID=3451"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/amy-murri-briel-00a320149"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

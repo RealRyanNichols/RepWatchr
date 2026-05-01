@@ -1,0 +1,62 @@
+{
+  "id": "jos-giral",
+  "name": "Jos\u00e9 Giral",
+  "firstName": "Jos\u00e9",
+  "lastName": "Giral",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-180",
+  "jurisdiction": "Pennsylvania House of Representatives",
+  "county": [
+    "Pennsylvania"
+  ],
+  "termStart": "2022-12-01",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 224, Irvis Office Building P.O. Box 202180, Harrisburg, PA 17120",
+    "phone": "717-787-1407",
+    "email": "repgiral@pahouse.net",
+    "website": "https://www.legis.state.pa.us/cfdocs/legis/home/member_information/House_bio.cfm?id=1980",
+    "socialMedia": {
+      "x": "https://x.com/repgiral",
+      "twitter": "https://x.com/repgiral",
+      "facebook": "https://facebook.com/RepGiral"
+    }
+  },
+  "bio": "Jos\u00e9 Giral serves as State Representative for Pennsylvania House of Representatives District 180. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "PA",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.legis.state.pa.us/cfdocs/legis/home/member_information/House_bio.cfm?id=1980"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/pa/legislature/Jose-Giral-d390f1ac-1f16-478a-9e0d-462c9ed79818.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Jose_Giral"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Jose_Giral_(Pennsylvania_politician)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.legis.state.pa.us/cfdocs/legis/home/member_information/mbrList.cfm?body=H&sort=alpha"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.pahouse.com/Giral"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.palegis.us/house/members/bio/1980/rep-giral"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

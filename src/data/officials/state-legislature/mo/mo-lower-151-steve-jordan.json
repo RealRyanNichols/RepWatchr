@@ -1,0 +1,48 @@
+{
+  "id": "steve-jordan",
+  "name": "Steve Jordan",
+  "firstName": "Steve",
+  "lastName": "Jordan",
+  "photo": "/images/officials/state-legislature/mo/steve-jordan.jpg",
+  "photoSourceUrl": "https://public-assets-prod.pubgen.ai/brand_a7b06a8b-02b9-4920-9426-9b9be1d4e410/asset_912fbf35-14cf-4899-857f-bfa1a8508a2d.jpg?w=1240",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-151",
+  "jurisdiction": "Missouri House of Representatives",
+  "county": [
+    "Missouri"
+  ],
+  "termStart": "2025-01-08",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 115-G, 201 W. Capitol Ave., Jefferson City, MO 65101",
+    "phone": "573-751-1494",
+    "email": "steve.jordan@house.mo.gov",
+    "website": "https://house.mo.gov/MemberDetails.aspx?&district=151"
+  },
+  "bio": "Steve Jordan serves as State Representative for Missouri House of Representatives District 151. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "MO",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://house.mo.gov/MemberDetails.aspx?&district=151"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/mo/legislature/Steve-Jordan-7ff101ee-474f-410d-9644-88bb17ae7519.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://public-assets-prod.pubgen.ai/brand_a7b06a8b-02b9-4920-9426-9b9be1d4e410/asset_912fbf35-14cf-4899-857f-bfa1a8508a2d.jpg?w=1240"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Steven_Jordan"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

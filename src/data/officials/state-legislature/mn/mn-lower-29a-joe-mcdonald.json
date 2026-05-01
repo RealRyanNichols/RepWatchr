@@ -1,0 +1,64 @@
+{
+  "id": "joe-mcdonald",
+  "name": "Joe McDonald",
+  "firstName": "Joe",
+  "lastName": "McDonald",
+  "photo": "/images/officials/state-legislature/mn/joe-mcdonald.jpg",
+  "photoSourceUrl": "https://www.house.mn.gov/hinfo/memberimgls94/29A.gif?v=112221",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-29A",
+  "jurisdiction": "Minnesota House of Representatives",
+  "county": [
+    "Minnesota"
+  ],
+  "termStart": "2013-01-08",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Centennial Office Building 658 Cedar St., Second Floor, St. Paul, MN 55155",
+    "phone": "651-296-4336",
+    "email": "rep.joe.mcdonald@house.mn.gov",
+    "website": "https://www.house.mn.gov/members/profile/15360"
+  },
+  "bio": "Joe McDonald serves as State Representative for Minnesota House of Representatives District 29A. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "MN",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.house.mn.gov/members/profile/15360"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/mn/legislature/Joe-McDonald-6292245e-1db4-4a8e-ba2a-a036e7b68044.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://www.house.mn.gov/hinfo/memberimgls94/29A.gif?v=112221"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Joe_McDonald"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Joe_McDonald_(politician)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/125675/joe-mcdonald"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.house.leg.state.mn.us/members/hmem.asp"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/joe-mcdonald-924ab854"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

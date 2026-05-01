@@ -1,0 +1,72 @@
+{
+  "id": "rhett-marques",
+  "name": "Rhett Marques",
+  "firstName": "Rhett",
+  "lastName": "Marques",
+  "photo": "/images/officials/state-legislature/al/rhett-marques.jpg",
+  "photoSourceUrl": "https://www.legislature.state.al.us/pdf/house/members/Marques_91.png",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-91",
+  "jurisdiction": "Alabama House of Representatives",
+  "county": [
+    "Alabama"
+  ],
+  "termStart": "2018-11-07",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 431, 11 S. Union St., Montgomery, AL 36130",
+    "phone": "334-261-0473",
+    "email": "rhett.marques@alhouse.gov",
+    "website": "https://alison.legislature.state.al.us/house-leaders-members"
+  },
+  "bio": "Rhett Marques serves as State Representative for Alabama House of Representatives District 91. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "AL",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://alison.legislature.state.al.us/house-leaders-members"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/al/legislature/Rhett-Marques-d9d5a3a8-71f6-4c2e-8805-3fa715b315f4.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://www.legislature.state.al.us/pdf/house/members/Marques_91.png"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Rhett_Marques"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Rhett_Marques"
+    },
+    {
+      "title": "graphql endpoint for member information",
+      "url": "https://gql.api.alison.legislature.state.al.us/graphql"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/180607/rhett-marques"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.legislature.state.al.us/aliswww/ISD/ALRepresentative.aspx?NAME=Marques&OID_SPONSOR=100573&OID_PERSON=8513&SESSNAME="
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.legislature.state.al.us/aliswww/ISD/ALRepresentative.aspx?OID_SPONSOR=100573&OID_PERSON=8513"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.legislature.state.al.us/aliswww/ISD/House/ALRepresentatives.aspx"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

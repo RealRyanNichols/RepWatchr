@@ -1,0 +1,60 @@
+{
+  "id": "carmen-rice",
+  "name": "Carmen Rice",
+  "firstName": "Carmen",
+  "lastName": "Rice",
+  "photo": "/images/officials/state-legislature/ga/carmen-rice.jpg",
+  "photoSourceUrl": "https://s3.amazonaws.com/ballotpedia-api4/files/thumbs/200/300/CarmenRice2024.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-139",
+  "jurisdiction": "Georgia House of Representatives",
+  "county": [
+    "Georgia"
+  ],
+  "termStart": "2024-05-15",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 504-C, Coverdell Legislative Office Building 18 Capitol Square SW, Atlanta, GA 30334",
+    "phone": "404-656-0188",
+    "email": "carmen.rice@house.ga.gov",
+    "website": "https://www.legis.ga.gov/members/house/5064"
+  },
+  "bio": "Carmen Rice serves as State Representative for Georgia House of Representatives District 139. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "GA",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.legis.ga.gov/members/house/5064"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ga/legislature/Carmen-Rice-3646e872-85a6-4383-97c5-36ff96ca7113.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://s3.amazonaws.com/ballotpedia-api4/files/thumbs/200/300/CarmenRice2024.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Carmen_Rice"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Carmen_Rice"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/215274/carmen-rice"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.legis.ga.gov/members/house/5064?session=1031"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

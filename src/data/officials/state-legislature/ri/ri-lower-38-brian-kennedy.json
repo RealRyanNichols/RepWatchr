@@ -1,0 +1,72 @@
+{
+  "id": "brian-kennedy",
+  "name": "Brian Kennedy",
+  "firstName": "Brian",
+  "lastName": "Kennedy",
+  "photo": "/images/officials/state-legislature/ri/brian-kennedy.jpg",
+  "photoSourceUrl": "http://www.rilegislature.gov/representatives/pictures/kennedy.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-38",
+  "jurisdiction": "Rhode Island House of Representatives",
+  "county": [
+    "Rhode Island"
+  ],
+  "termStart": "",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "82 Smith St., Providence, RI 02903",
+    "phone": "401-222-3580",
+    "email": "rep-kennedy@rilegislature.gov",
+    "website": "https://www.rilegislature.gov/representatives/carson/default.aspx"
+  },
+  "bio": "Brian Kennedy serves as State Representative for Rhode Island House of Representatives District 38. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "RI",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.rilegislature.gov/representatives/carson/default.aspx"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ri/legislature/Brian-Patrick-Kennedy-632b3bf0-a3f8-4c0d-9818-d03c861318dc.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "http://www.rilegislature.gov/representatives/pictures/kennedy.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Brian_Kennedy_(Rhode_Island)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Brian_Patrick_Kennedy"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/7373/brian-kennedy"
+    },
+    {
+      "title": "Public source",
+      "url": "https://webserver.rilin.state.ri.us/Email/RepEmailListDistrict.asp"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.rilegislature.gov/representatives/kennedy/default.aspx"
+    },
+    {
+      "title": "Image Source",
+      "url": "https://www.rilegislature.gov/representatives/kennedy/Pages/Biography.aspx"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.rilegislature.gov/SiteAssets/MailingLists/Representatives.xls"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

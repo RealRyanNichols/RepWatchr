@@ -1,0 +1,59 @@
+{
+  "id": "tom-kelly",
+  "name": "Tom Kelly",
+  "firstName": "Tom",
+  "lastName": "Kelly",
+  "photo": "/images/officials/state-legislature/wy/tom-kelly.jpg",
+  "photoSourceUrl": "https://wyoleg.gov/LegislatorSummary/Photos/68th-KellyTom.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-30",
+  "jurisdiction": "Wyoming House of Representatives",
+  "county": [
+    "Wyoming"
+  ],
+  "termStart": "2025-01-06",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "State Capitol 200 W. 24th St., Cheyenne, WY 82002",
+    "email": "tom.kelly@wyoleg.gov",
+    "website": "https://wyoleg.gov/Legislators/2025/H/2125"
+  },
+  "bio": "Tom Kelly serves as State Representative for Wyoming House of Representatives District 30. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "WY",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://wyoleg.gov/Legislators/2025/H/2125"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/wy/legislature/Tom-Kelly-312edf5d-1dad-475a-b3bd-4b58f5f98ad4.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://wyoleg.gov/LegislatorSummary/Photos/68th-KellyTom.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Thomas_Kelly_(Wyoming)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Tom_Kelly_(Wyoming_politician)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/207650/thomas-kelly"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/thomas-kelly-9052b6238"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

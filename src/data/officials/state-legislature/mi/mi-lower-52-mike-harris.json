@@ -1,0 +1,68 @@
+{
+  "id": "mike-harris",
+  "name": "Mike Harris",
+  "firstName": "Mike",
+  "lastName": "Harris",
+  "photo": "/images/officials/state-legislature/mi/mike-harris.jpg",
+  "photoSourceUrl": "https://dtj5wlj7ond0z.cloudfront.net/uploads/2022/05/HS_HARRIS_0522_web-scaled.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-52",
+  "jurisdiction": "Michigan House of Representatives",
+  "county": [
+    "Michigan"
+  ],
+  "termStart": "2023-01-01",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room H-374, Capitol Building 100 N. Capitol Ave., Lansing, MI 48909",
+    "phone": "517-373-0828",
+    "email": "mikeharris@house.mi.gov",
+    "website": "https://gophouse.org/member/repmikeharris/posts"
+  },
+  "bio": "Mike Harris serves as State Representative for Michigan House of Representatives District 52. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "MI",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://gophouse.org/member/repmikeharris/posts"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/mi/legislature/Mike-Harris-a93eaebe-bdac-4292-a28f-6a3b04efd191.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://dtj5wlj7ond0z.cloudfront.net/uploads/2022/05/HS_HARRIS_0522_web-scaled.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Mike_R._Harris_(Michigan_House_of_Representatives_candidate)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://gophouse.org/member/repmikeharris"
+    },
+    {
+      "title": "Member Details Page",
+      "url": "https://gophouse.org/member/repmikeharris/"
+    },
+    {
+      "title": "Member Details Page",
+      "url": "https://RepHarris.com"
+    },
+    {
+      "title": "Members List Page",
+      "url": "https://www.house.mi.gov/AllRepresentatives"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/mike-harris-71a492203"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

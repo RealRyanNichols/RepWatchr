@@ -1,0 +1,70 @@
+{
+  "id": "janne-myrdal",
+  "name": "Janne Myrdal",
+  "firstName": "Janne",
+  "lastName": "Myrdal",
+  "photo": "/images/officials/state-legislature/nd/janne-myrdal.jpg",
+  "photoSourceUrl": "https://www.ndlegis.gov/sites/default/files/styles/member_list_photo/public/person/photo/jmyrdal.jpg?itok=w1QxJMzq",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-19",
+  "jurisdiction": "North Dakota Senate",
+  "county": [
+    "North Dakota"
+  ],
+  "termStart": "2022-12-01",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "email": "jmyrdal@ndlegis.gov",
+    "website": "https://ndlegis.gov/biography/janne-myrdal"
+  },
+  "bio": "Janne Myrdal serves as State Senator for North Dakota Senate District 19. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "ND",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://ndlegis.gov/biography/janne-myrdal"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/nd/legislature/Janne-Myrdal-4a64529e-c299-4979-a564-909dc9f2edd2.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://www.ndlegis.gov/sites/default/files/styles/member_list_photo/public/person/photo/jmyrdal.jpg?itok=w1QxJMzq"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Janne_Myrdal"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Janne_Myrdal"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.legis.nd.gov/assembly/65-2017/members/senate/senator-janne-myrdal"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.legis.nd.gov/assembly/66-2019/members/senate/senator-janne-myrdal"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.legis.nd.gov/assembly/67-2021/members/members-by-district"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.legis.nd.gov/assembly/67-2021/members/senate/senator-janne-myrdal"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/janne-myrdal-3a946233"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

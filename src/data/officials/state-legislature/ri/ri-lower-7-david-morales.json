@@ -1,0 +1,72 @@
+{
+  "id": "david-morales",
+  "name": "David Morales",
+  "firstName": "David",
+  "lastName": "Morales",
+  "photo": "/images/officials/state-legislature/ri/david-morales.jpg",
+  "photoSourceUrl": "http://www.rilegislature.gov/representatives/Pictures/Morales.JPG",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-7",
+  "jurisdiction": "Rhode Island House of Representatives",
+  "county": [
+    "Rhode Island"
+  ],
+  "termStart": "2021-01-05",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "82 Smith St., Providence, RI 02903",
+    "phone": "401-222-3580",
+    "email": "rep-morales@rilegislature.gov",
+    "website": "https://www.rilegislature.gov/representatives/carson/default.aspx"
+  },
+  "bio": "David Morales serves as State Representative for Rhode Island House of Representatives District 7. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "RI",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.rilegislature.gov/representatives/carson/default.aspx"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ri/legislature/David-P-Morales-75bd1298-3fc9-42cc-87c6-23bdc20a7b56.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "http://www.rilegislature.gov/representatives/Pictures/Morales.JPG"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/David_Morales_(Rhode_Island)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://webserver.rilin.state.ri.us/Email/RepEmailListDistrict.asp"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/davidcazaresmorales"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.rilegislature.gov/representatives/morales/default.aspx"
+    },
+    {
+      "title": "Image Source",
+      "url": "https://www.rilegislature.gov/representatives/morales/Pages/Biography.aspx"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.rilegislature.gov/SiteAssets/MailingLists/Representatives.xls"
+    },
+    {
+      "title": "Detail Excel Source",
+      "url": "https://www.rilegislature.gov/SiteAssets/Representatives.xls"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

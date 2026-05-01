@@ -1,0 +1,65 @@
+{
+  "id": "angela-witwer",
+  "name": "Angela Witwer",
+  "firstName": "Angela",
+  "lastName": "Witwer",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-76",
+  "jurisdiction": "Michigan House of Representatives",
+  "county": [
+    "Michigan"
+  ],
+  "termStart": "2023-01-01",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room N-1095, Anderson House Office Building 124 N. Capitol Ave., Lansing, MI 48933",
+    "phone": "517-373-0822",
+    "email": "angelawitwer@house.mi.gov",
+    "website": "https://housedems.com/angela-witwer/"
+  },
+  "bio": "Angela Witwer serves as State Representative for Michigan House of Representatives District 76. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "MI",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://housedems.com/angela-witwer/"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/mi/legislature/Angela-Witwer-0db39d07-a543-4e52-82b0-457f406855e8.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Angela_Witwer"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Angela_Witwer"
+    },
+    {
+      "title": "Public source",
+      "url": "https://housedems.com/angela-witwer"
+    },
+    {
+      "title": "Public source",
+      "url": "https://housedems.com/witwer"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.house.mi.gov/AllRepresentatives"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.house.mi.gov/MHRPublic/frmRepListMilenia.aspx?all=true"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/angelawitwer"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

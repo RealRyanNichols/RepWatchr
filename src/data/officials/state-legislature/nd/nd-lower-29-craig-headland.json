@@ -1,0 +1,72 @@
+{
+  "id": "craig-headland",
+  "name": "Craig Headland",
+  "firstName": "Craig",
+  "lastName": "Headland",
+  "photo": "/images/officials/state-legislature/nd/craig-headland.jpg",
+  "photoSourceUrl": "https://www.ndlegis.gov/sites/default/files/styles/member_list_photo/public/person/photo/cheadland2023.jpg?itok=_qgWKQP8",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-29",
+  "jurisdiction": "North Dakota House of Representatives",
+  "county": [
+    "North Dakota"
+  ],
+  "termStart": "2002-12-01",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "State Capitol 600 E. Boulevard Ave., Bismarck, ND 58505",
+    "phone": "701-328-3373",
+    "email": "cheadland@ndlegis.gov",
+    "website": "https://ndlegis.gov/biography/craig-headland"
+  },
+  "bio": "Craig Headland serves as State Representative for North Dakota House of Representatives District 29. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "ND",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://ndlegis.gov/biography/craig-headland"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/nd/legislature/Craig-Headland-74e50305-a021-46bd-9d0d-dcd872645cfd.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://www.ndlegis.gov/sites/default/files/styles/member_list_photo/public/person/photo/cheadland2023.jpg?itok=_qgWKQP8"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Craig_Headland"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Craig_Headland"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/41708/craig-headland"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.legis.nd.gov/assembly/65-2017/members/house/representative-craig-headland"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.legis.nd.gov/assembly/66-2019/members/house/representative-craig-headland"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.legis.nd.gov/assembly/67-2021/members/house/representative-craig-headland"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.legis.nd.gov/assembly/67-2021/members/members-by-district"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

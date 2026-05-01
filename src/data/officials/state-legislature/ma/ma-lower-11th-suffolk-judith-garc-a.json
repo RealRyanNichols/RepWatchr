@@ -1,0 +1,68 @@
+{
+  "id": "judith-garc-a",
+  "name": "Judith Garc\u00eda",
+  "firstName": "Judith",
+  "lastName": "Garc\u00eda",
+  "photo": "/images/officials/state-legislature/ma/judith-garc-a.jpg",
+  "photoSourceUrl": "https://malegislature.gov/Legislators/Profile/170/JAG2.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-11th Suffolk",
+  "jurisdiction": "Massachusetts House of Representatives",
+  "county": [
+    "Massachusetts"
+  ],
+  "termStart": "2023-01-04",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 146, State House 24 Beacon St., Boston, MA 02133",
+    "phone": "617-722-2011",
+    "email": "judith.garcia@mahouse.gov",
+    "website": "https://malegislature.gov/Legislators/Profile/JAG2"
+  },
+  "bio": "Judith Garc\u00eda serves as State Representative for Massachusetts House of Representatives District 11th Suffolk. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "MA",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://malegislature.gov/Legislators/Profile/JAG2"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ma/legislature/Judith-A-Garcia-6f15f647-07f5-4739-a340-497798a474e7.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://malegislature.gov/Legislators/Profile/170/JAG2.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Judith_Garcia"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Judith_Garc%C3%ADa"
+    },
+    {
+      "title": "Public source",
+      "url": "https://malegislature.gov/api/GeneralCourts/193/LegislativeMembers"
+    },
+    {
+      "title": "Public source",
+      "url": "https://malegislature.gov/api/GeneralCourts/193/LegislativeMembers/"
+    },
+    {
+      "title": "Public source",
+      "url": "https://malegislature.gov/api/GeneralCourts/193/LegislativeMembers/JAG2"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/judithgarc%C3%ADa"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

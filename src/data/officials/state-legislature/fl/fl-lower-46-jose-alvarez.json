@@ -1,0 +1,60 @@
+{
+  "id": "jose-alvarez",
+  "name": "Jose Alvarez",
+  "firstName": "Jose",
+  "lastName": "Alvarez",
+  "photo": "/images/officials/state-legislature/fl/jose-alvarez.jpg",
+  "photoSourceUrl": "https://www.voterfocus.com/CampaignFinance/photo_osceola/cand_345.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-46",
+  "jurisdiction": "Florida House of Representatives",
+  "county": [
+    "Florida"
+  ],
+  "termStart": "2024-11-05",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 1402, The Capitol 402 S. Monroe St., Tallahassee, FL 32399",
+    "phone": "850-717-5046",
+    "email": "jose.alvarez@flhouse.gov",
+    "website": "https://myfloridahouse.gov/Sections/Representatives/details.aspx?MemberId=4916&LegislativeTermId=91"
+  },
+  "bio": "Jose Alvarez serves as State Representative for Florida House of Representatives District 46. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "FL",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://myfloridahouse.gov/Sections/Representatives/details.aspx?MemberId=4916&LegislativeTermId=91"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/fl/legislature/Jose-Alvarez-c3e8a214-183a-4b9c-970c-5332e83eb8e6.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://www.voterfocus.com/CampaignFinance/photo_osceola/cand_345.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Jose_A._Alvarez"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Jose_Alvarez_(Florida_politician)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.flhouse.gov/Sections/Representatives/details.aspx?MemberId=4916"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/jose-alvarez11"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

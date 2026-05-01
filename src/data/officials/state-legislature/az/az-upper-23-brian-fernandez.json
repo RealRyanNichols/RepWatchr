@@ -1,0 +1,68 @@
+{
+  "id": "brian-fernandez",
+  "name": "Brian Fernandez",
+  "firstName": "Brian",
+  "lastName": "Fernandez",
+  "photo": "/images/officials/state-legislature/az/brian-fernandez.jpg",
+  "photoSourceUrl": "https://www.azleg.gov/alisImages/MemberPhotos/57leg/Senate/FERNANDEZ.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-23",
+  "jurisdiction": "Arizona Senate",
+  "county": [
+    "Arizona"
+  ],
+  "termStart": "2023-01-09",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 312, 1700 W. Washington St., Phoenix, AZ 85007",
+    "phone": "602-926-3098",
+    "email": "bfernandez@azleg.gov",
+    "website": "https://www.azleg.gov/house-member/?legislature=55&session=123&legislator=2101"
+  },
+  "bio": "Brian Fernandez serves as State Senator for Arizona Senate District 23. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "AZ",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.azleg.gov/house-member/?legislature=55&session=123&legislator=2101"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/az/legislature/Brian-Fernandez-5425612b-fb2c-4857-8f75-31523345eb2b.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://www.azleg.gov/alisImages/MemberPhotos/57leg/Senate/FERNANDEZ.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Brian_Fernandez"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Brian_Fernandez_(politician)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.azleg.gov/memberroster/?body=H"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.azleg.gov/memberroster/?body=S"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.azleg.gov/senate-member/?legislature=57&legislator=2379"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/briansfernandez"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

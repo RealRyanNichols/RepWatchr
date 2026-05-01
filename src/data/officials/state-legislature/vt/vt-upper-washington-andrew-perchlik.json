@@ -1,0 +1,69 @@
+{
+  "id": "andrew-perchlik",
+  "name": "Andrew Perchlik",
+  "firstName": "Andrew",
+  "lastName": "Perchlik",
+  "party": "D",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-Washington",
+  "jurisdiction": "Vermont Senate",
+  "county": [
+    "Vermont"
+  ],
+  "termStart": "2019-01-09",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Vermont State House 115 State St., Montpelier, VT 05633",
+    "phone": "802-828-2228",
+    "email": "aperchlik@leg.state.vt.us",
+    "website": "https://legislature.vermont.gov/Documents/SmallMaps/WASDIST.pdf"
+  },
+  "bio": "Andrew Perchlik serves as State Senator for Vermont Senate District Washington. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "VT",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://legislature.vermont.gov/Documents/SmallMaps/WASDIST.pdf"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/vt/legislature/Andrew-Perchlik-1463485e-f279-44f6-a368-f75f213dc7cd.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Andrew_Perchlik"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Andrew_Perchlik"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/183725/andrew-perchlik"
+    },
+    {
+      "title": "Public source",
+      "url": "https://legislature.vermont.gov/people/loadAll/2020"
+    },
+    {
+      "title": "Public source",
+      "url": "https://legislature.vermont.gov/people/loadAll/2022"
+    },
+    {
+      "title": "Public source",
+      "url": "https://legislature.vermont.gov/people/single/2020/30982"
+    },
+    {
+      "title": "Public source",
+      "url": "https://legislature.vermont.gov/people/single/2022/30982"
+    },
+    {
+      "title": "Public source",
+      "url": "https://legislature.vermont.gov/people/single/2024/30982"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

@@ -1,0 +1,68 @@
+{
+  "id": "roy-cooper",
+  "name": "Roy Cooper",
+  "firstName": "Roy",
+  "lastName": "Cooper",
+  "photo": "/images/officials/state-legislature/wv/roy-cooper.jpg",
+  "photoSourceUrl": "https://www.wvlegislature.gov/images/members/2024/house/cooper_roy.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "Delegate",
+  "district": "HD-40",
+  "jurisdiction": "West Virginia House of Delegates",
+  "county": [
+    "West Virginia"
+  ],
+  "termStart": "2022-12-01",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "State Capitol Room 203E, Complex, Building 1 1900 Kanawha Blvd. East, Charleston, WV 25305",
+    "phone": "304-340-3119",
+    "email": "roy.cooper@wvhouse.gov",
+    "website": "https://www.legis.state.wv.us/House/lawmaker.cfm?member=Delegate+Cooper"
+  },
+  "bio": "Roy Cooper serves as Delegate for West Virginia House of Delegates District 40. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "WV",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.legis.state.wv.us/House/lawmaker.cfm?member=Delegate+Cooper"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/wv/legislature/Roy-Cooper-f7a82cd3-d2c6-4f57-b0d0-d38322d1ad54.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://www.wvlegislature.gov/images/members/2024/house/cooper_roy.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Roy_G._Cooper"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Roy_Cooper_(West_Virginia_politician)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/117639/roy-cooper"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.wvlegislature.gov/House/lawmaker.cfm?member=Delegate%20Cooper"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.wvlegislature.gov/House/lawmaker.cfm?member=Delegate+Cooper"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.wvlegislature.gov/House/roster.cfm"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

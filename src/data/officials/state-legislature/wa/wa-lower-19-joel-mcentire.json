@@ -1,0 +1,72 @@
+{
+  "id": "joel-mcentire",
+  "name": "Joel McEntire",
+  "firstName": "Joel",
+  "lastName": "McEntire",
+  "photo": "/images/officials/state-legislature/wa/joel-mcentire.jpg",
+  "photoSourceUrl": "https://leg.wa.gov/memberphoto/31525.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-19",
+  "jurisdiction": "Washington House of Representatives",
+  "county": [
+    "Washington"
+  ],
+  "termStart": "2021-01-11",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 409, John L. O'Brien Building P.O. Box 40600, Olympia, WA 98504",
+    "phone": "360-786-7870",
+    "email": "joel.mcentire@leg.wa.gov",
+    "website": "https://JoelMcEntire.houserepublicans.wa.gov/"
+  },
+  "bio": "Joel McEntire serves as State Representative for Washington House of Representatives District 19. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "WA",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://JoelMcEntire.houserepublicans.wa.gov/"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/wa/legislature/Joel-McEntire-dcc383e0-945d-4580-b8fd-e0914e1af1f0.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://leg.wa.gov/memberphoto/31525.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://app.leg.wa.gov/ContentParts/MemberDirectory/?a=House"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Joel_McEntire"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Joel_McEntire"
+    },
+    {
+      "title": "Public source",
+      "url": "https://joelmcentire.houserepublicans.wa.gov"
+    },
+    {
+      "title": "Public source",
+      "url": "https://joelmcentire.houserepublicans.wa.gov/"
+    },
+    {
+      "title": "Public source",
+      "url": "https://joelmcentire.houserepublicans.wa.gov/news-media"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/183013/joel-mcentire"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

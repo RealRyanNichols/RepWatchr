@@ -1,0 +1,72 @@
+{
+  "id": "craig-johnson",
+  "name": "Craig Johnson",
+  "firstName": "Craig",
+  "lastName": "Johnson",
+  "photo": "/images/officials/state-legislature/ia/craig-johnson.jpg",
+  "photoSourceUrl": "https://www.legis.iowa.gov/photo?action=getPhoto&ga=91&pid=18075",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-67",
+  "jurisdiction": "Iowa House of Representatives",
+  "county": [
+    "Iowa"
+  ],
+  "termStart": "2023-01-01",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "State Capitol Building 1007 E. Grand Ave., Des Moines, IA 50319",
+    "phone": "515-281-3221",
+    "email": "craig.johnson@legis.iowa.gov",
+    "website": "https://eepurl.com/gSVn0f"
+  },
+  "bio": "Craig Johnson serves as State Representative for Iowa House of Representatives District 67. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "IA",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://eepurl.com/gSVn0f"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ia/legislature/Craig-Johnson-63ec798f-401b-4512-9f56-b162eb96bfe9.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://www.legis.iowa.gov/photo?action=getPhoto&ga=91&pid=18075"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Craig_Johnson_(Iowa)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Craig_Johnson_(Iowa_politician)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://iowasenaterepublicans.com/senators/craig-johnson"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.legis.iowa.gov/legislators/house"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.legis.iowa.gov/legislators/legislator?ga=88&personID=18075"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.legis.iowa.gov/legislators/legislator?ga=89&personID=18075"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.legis.iowa.gov/legislators/legislator?ga=90&personID=18075"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

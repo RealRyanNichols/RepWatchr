@@ -1,0 +1,56 @@
+{
+  "id": "carolyn-hall",
+  "name": "Carolyn Hall",
+  "firstName": "Carolyn",
+  "lastName": "Hall",
+  "photo": "/images/officials/state-legislature/ak/carolyn-hall.jpg",
+  "photoSourceUrl": "https://s3.amazonaws.com/ballotpedia-api4/files/thumbs/200/300/CarolynHall2024.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-16",
+  "jurisdiction": "Alaska House of Representatives",
+  "county": [
+    "Alaska"
+  ],
+  "termStart": "2025-01-21",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "State Capitol Room 434, 120 4th St., Juneau, AK 99801",
+    "phone": "907-465-4968",
+    "email": "representative.carolyn.hall@akleg.gov",
+    "website": "https://www.akleg.gov/basis/Member/Detail/34?code=hll"
+  },
+  "bio": "Carolyn Hall serves as State Representative for Alaska House of Representatives District 16. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "AK",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.akleg.gov/basis/Member/Detail/34?code=hll"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ak/legislature/Carolyn-Hall-c9bf1b47-3ed8-49e8-9535-2a7094c52d1a.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://s3.amazonaws.com/ballotpedia-api4/files/thumbs/200/300/CarolynHall2024.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Carolyn_Hall"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.jensenhall.com"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/carolyn-hall"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

@@ -1,0 +1,64 @@
+{
+  "id": "marcus-paramore",
+  "name": "Marcus Paramore",
+  "firstName": "Marcus",
+  "lastName": "Paramore",
+  "photo": "/images/officials/state-legislature/al/marcus-paramore.jpg",
+  "photoSourceUrl": "https://www.legislature.state.al.us/pdf/house/members/Paramore_89.png",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-89",
+  "jurisdiction": "Alabama House of Representatives",
+  "county": [
+    "Alabama"
+  ],
+  "termStart": "2022-11-09",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 433, 11 S. Union St., Montgomery, AL 36130",
+    "phone": "334-261-0593",
+    "email": "marcusforhouse@gmail.com",
+    "website": "https://alison.legislature.state.al.us/house-leaders-members"
+  },
+  "bio": "Marcus Paramore serves as State Representative for Alabama House of Representatives District 89. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "AL",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://alison.legislature.state.al.us/house-leaders-members"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/al/legislature/Marcus-Paramore-723a971e-91d9-4717-8f19-45f16e18690f.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://www.legislature.state.al.us/pdf/house/members/Paramore_89.png"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Marcus_Paramore"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Marcus_Paramore"
+    },
+    {
+      "title": "graphql endpoint for member information",
+      "url": "https://gql.api.alison.legislature.state.al.us/graphql"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/180606/marcus-paramore"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/marcus-paramore-4970ab14"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

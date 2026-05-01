@@ -1,0 +1,72 @@
+{
+  "id": "matt-harrington",
+  "name": "Matt Harrington",
+  "firstName": "Matt",
+  "lastName": "Harrington",
+  "photo": "/images/officials/state-legislature/me/matt-harrington.jpg",
+  "photoSourceUrl": "https://legislature.maine.gov/uploads/visual_edit/harrington-matt.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-33",
+  "jurisdiction": "Maine Senate",
+  "county": [
+    "Maine"
+  ],
+  "termStart": "2022-12-07",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "3 State House Station, Augusta, ME 04333",
+    "phone": "207-287-1505",
+    "email": "matthew.harrington@legislature.maine.gov",
+    "website": "https://legislature.maine.gov/District33"
+  },
+  "bio": "Matt Harrington serves as State Senator for Maine Senate District 33. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "ME",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://legislature.maine.gov/District33"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/me/legislature/Matthew-A-Harrington-f4b39a4f-3a31-4e15-9b0a-459cb260f535.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://legislature.maine.gov/uploads/visual_edit/harrington-matt.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Matthew_Harrington_(Maine)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Matthew_Harrington_(politician)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/155022/matt-harrington"
+    },
+    {
+      "title": "Public source",
+      "url": "https://legislature.maine.gov/district33"
+    },
+    {
+      "title": "Public source",
+      "url": "https://legislature.maine.gov/house/house/MemberProfiles/Details/83"
+    },
+    {
+      "title": "Public source",
+      "url": "https://legislature.maine.gov/house/house/MemberProfiles/ListAlpha"
+    },
+    {
+      "title": "Public source",
+      "url": "https://legislature.maine.gov/uploads/visual_edit/131-senator-contact-information-2.xlsx"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

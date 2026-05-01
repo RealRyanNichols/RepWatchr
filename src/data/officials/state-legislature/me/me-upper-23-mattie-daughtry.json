@@ -1,0 +1,72 @@
+{
+  "id": "mattie-daughtry",
+  "name": "Mattie Daughtry",
+  "firstName": "Mattie",
+  "lastName": "Daughtry",
+  "photo": "/images/officials/state-legislature/me/mattie-daughtry.jpg",
+  "photoSourceUrl": "https://legislature.maine.gov/uploads/visual_edit/daughtry-matthea-2.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-23",
+  "jurisdiction": "Maine Senate",
+  "county": [
+    "Maine"
+  ],
+  "termStart": "2022-12-07",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "3 State House Station, Augusta, ME 04333",
+    "phone": "207-287-1515",
+    "email": "mattie.daughtry@legislature.maine.gov",
+    "website": "https://legislature.maine.gov/District-24"
+  },
+  "bio": "Mattie Daughtry serves as State Senator for Maine Senate District 23. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "ME",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://legislature.maine.gov/District-24"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/me/legislature/Matthea-Elisabeth-Larsen-Daughtry-863a9ef0-5916-40d6-9929-7a7b498af0ec.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://legislature.maine.gov/uploads/visual_edit/daughtry-matthea-2.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Matthea_Daughtry"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Mattie_Daughtry"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/142892/mattie-daughtry"
+    },
+    {
+      "title": "Public source",
+      "url": "https://legislature.maine.gov/district23"
+    },
+    {
+      "title": "Public source",
+      "url": "https://legislature.maine.gov/District23"
+    },
+    {
+      "title": "Public source",
+      "url": "https://legislature.maine.gov/uploads/visual_edit/130th-senate-contact-information-as-of-31221.xlsx"
+    },
+    {
+      "title": "Public source",
+      "url": "https://legislature.maine.gov/uploads/visual_edit/131-senator-contact-information-2.xlsx"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

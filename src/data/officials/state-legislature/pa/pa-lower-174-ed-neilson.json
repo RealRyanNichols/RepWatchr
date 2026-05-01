@@ -1,0 +1,71 @@
+{
+  "id": "ed-neilson",
+  "name": "Ed Neilson",
+  "firstName": "Ed",
+  "lastName": "Neilson",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-174",
+  "jurisdiction": "Pennsylvania House of Representatives",
+  "county": [
+    "Pennsylvania"
+  ],
+  "termStart": "2015-08-25",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 127, Irvis Office Building P.O. Box 202174, Harrisburg, PA 17120",
+    "phone": "717-772-4032",
+    "email": "repneilson@pahouse.net",
+    "website": "https://www.legis.state.pa.us/cfdocs/legis/home/member_information/House_bio.cfm?id=1615",
+    "socialMedia": {
+      "x": "https://x.com/RepNeilson",
+      "twitter": "https://x.com/RepNeilson",
+      "facebook": "https://facebook.com/RepNeilson",
+      "youtube": "https://youtube.com/playlist?list=PLjtqNtfs0bgVZ7r6AcAd8hdSCnGWOcJHA"
+    }
+  },
+  "bio": "Ed Neilson serves as State Representative for Pennsylvania House of Representatives District 174. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "PA",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.legis.state.pa.us/cfdocs/legis/home/member_information/House_bio.cfm?id=1615"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/pa/legislature/Ed-Neilson-3d3d4070-dadd-4382-9d40-be2892745773.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Edward_Neilson"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Ed_Neilson"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.legis.state.pa.us/cfdocs/legis/home/member_information/mbrList.cfm?body=H&sort=alpha"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.legis.state.pa.us/cfdocs/legis/home/member_information/representatives_alpha.cfm"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/edward-neilson-26a6842"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.pahouse.com/Neilson"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.palegis.us/house/members/bio/1615/rep-neilson"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

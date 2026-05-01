@@ -1,0 +1,68 @@
+{
+  "id": "robert-reives",
+  "name": "Robert Reives",
+  "firstName": "Robert",
+  "lastName": "Reives",
+  "photo": "/images/officials/state-legislature/nc/robert-reives.jpg",
+  "photoSourceUrl": "https://www.ncleg.gov/Members/MemberImage/H/684/Low",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-54",
+  "jurisdiction": "North Carolina House of Representatives",
+  "county": [
+    "North Carolina"
+  ],
+  "termStart": "2014-01-29",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 506, Legislative Office Building 300 N. Salisbury St., Raleigh, NC 27602",
+    "phone": "919-733-0057",
+    "email": "robert.reives@ncleg.gov",
+    "website": "https://www.ncleg.gov/Members/Biography/H/684"
+  },
+  "bio": "Robert Reives serves as State Representative for North Carolina House of Representatives District 54. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "NC",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.ncleg.gov/Members/Biography/H/684"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/nc/legislature/Robert-T-Reives-II-3aa6f3c5-cd15-42e1-907e-92e6f5362c8f.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://www.ncleg.gov/Members/MemberImage/H/684/Low"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Robert_Reives"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Robert_T._Reives_II"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/92629/robert-reives-ii"
+    },
+    {
+      "title": "Public source",
+      "url": "https://wrslawfirm.com/robert-reives-criminal-defense-lawyer"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/wilsonreiveslawrobert"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.ncleg.gov/Members/MemberTable/H"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

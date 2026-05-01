@@ -1,0 +1,56 @@
+{
+  "id": "john-gillette",
+  "name": "John Gillette",
+  "firstName": "John",
+  "lastName": "Gillette",
+  "photo": "/images/officials/state-legislature/az/john-gillette.jpg",
+  "photoSourceUrl": "https://bloximages.chicago2.vip.townnews.com/havasunews.com/content/tncms/assets/v3/editorial/6/1b/61ba5bf8-e969-11e5-953b-3ba1ad504638/56e5e78dbc277.image.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-30",
+  "jurisdiction": "Arizona House of Representatives",
+  "county": [
+    "Arizona"
+  ],
+  "termStart": "2023-01-09",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 130, 1700 W. Washington St., Phoenix, AZ 85007",
+    "phone": "602-926-4100",
+    "email": "jgillette@azleg.gov",
+    "website": "https://www.azleg.gov/house-member/?legislature=56&session=127&legislator=2161"
+  },
+  "bio": "John Gillette serves as State Representative for Arizona House of Representatives District 30. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "AZ",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.azleg.gov/house-member/?legislature=56&session=127&legislator=2161"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/az/legislature/John-Gillette-fd68e4c2-0463-477c-81ea-e2e36273e12b.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://bloximages.chicago2.vip.townnews.com/havasunews.com/content/tncms/assets/v3/editorial/6/1b/61ba5bf8-e969-11e5-953b-3ba1ad504638/56e5e78dbc277.image.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/John_Gillette"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.azleg.gov/house-member/?legislature=57&session=129&legislator=2306"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.azleg.gov/memberroster/?body=H"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

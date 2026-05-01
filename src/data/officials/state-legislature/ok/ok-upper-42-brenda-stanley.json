@@ -1,0 +1,68 @@
+{
+  "id": "brenda-stanley",
+  "name": "Brenda Stanley",
+  "firstName": "Brenda",
+  "lastName": "Stanley",
+  "photo": "/images/officials/state-legislature/ok/brenda-stanley.jpg",
+  "photoSourceUrl": "https://oksenate.gov/sites/default/files/Brenda-Stanley_1.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-42",
+  "jurisdiction": "Oklahoma Senate",
+  "county": [
+    "Oklahoma"
+  ],
+  "termStart": "2018-11-16",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 420, 2300 N. Lincoln Blvd., Oklahoma City, OK 73105",
+    "phone": "405-521-5584",
+    "email": "brenda.stanley@oksenate.gov",
+    "website": "https://oksenate.gov/contact-senator?sid=1900"
+  },
+  "bio": "Brenda Stanley serves as State Senator for Oklahoma Senate District 42. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "OK",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://oksenate.gov/contact-senator?sid=1900"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ok/legislature/Brenda-Stanley-55b572a7-2951-4597-b70c-e37b51163b03.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://oksenate.gov/sites/default/files/Brenda-Stanley_1.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Brenda_Stanley"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Brenda_Stanley"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/181848/brenda-stanley"
+    },
+    {
+      "title": "Public source",
+      "url": "https://oksenate.gov/Senators/biographies/stanley_bio.aspx"
+    },
+    {
+      "title": "Public source",
+      "url": "https://oksenate.gov/Senators/biographies/stanley_bio.html"
+    },
+    {
+      "title": "Public source",
+      "url": "https://oksenate.gov/senators/brenda-stanley"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

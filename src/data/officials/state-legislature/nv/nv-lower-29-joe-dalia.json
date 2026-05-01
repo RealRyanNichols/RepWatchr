@@ -1,0 +1,60 @@
+{
+  "id": "joe-dalia",
+  "name": "Joe Dalia",
+  "firstName": "Joe",
+  "lastName": "Dalia",
+  "photo": "/images/officials/state-legislature/nv/joe-dalia.jpg",
+  "photoSourceUrl": "http://leg.state.nv.us/Session/83rd2025/legislators/Assembly/Images/Dalia.Joe.414.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "Assemblymember",
+  "district": "HD-29",
+  "jurisdiction": "Nevada Assembly",
+  "county": [
+    "Nevada"
+  ],
+  "termStart": "2024-11-06",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 4103, Nevada Assembly 401 S. Carson St., Carson City, NV 89701",
+    "phone": "775-684-8855",
+    "email": "joe.dalia@asm.state.nv.us",
+    "website": "https://www.leg.state.nv.us/App/Legislator/A/Assembly/Current/29"
+  },
+  "bio": "Joe Dalia serves as Assemblymember for Nevada Assembly District 29. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "NV",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.leg.state.nv.us/App/Legislator/A/Assembly/Current/29"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/nv/legislature/Joe-Dalia-282757f9-1693-4ac5-bd98-4315543cd61a.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "http://leg.state.nv.us/Session/83rd2025/legislators/Assembly/Images/Dalia.Joe.414.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Joe_Dalia"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Joe_Dalia"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/204215/joe-dalia"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/joe-dalia-3b89a8166"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

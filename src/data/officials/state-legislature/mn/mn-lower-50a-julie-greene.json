@@ -1,0 +1,60 @@
+{
+  "id": "julie-greene",
+  "name": "Julie Greene",
+  "firstName": "Julie",
+  "lastName": "Greene",
+  "photo": "/images/officials/state-legislature/mn/julie-greene.jpg",
+  "photoSourceUrl": "https://www.house.mn.gov/hinfo/memberimgls94/50A.gif?v=112221",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-50A",
+  "jurisdiction": "Minnesota House of Representatives",
+  "county": [
+    "Minnesota"
+  ],
+  "termStart": "2025-01-14",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Centennial Office Building 658 Cedar St., Fifth Floor, St. Paul, MN 55155",
+    "phone": "651-296-4363",
+    "email": "rep.julie.greene@house.mn.gov",
+    "website": "https://www.house.mn.gov/members/profile/15633"
+  },
+  "bio": "Julie Greene serves as State Representative for Minnesota House of Representatives District 50A. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "MN",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.house.mn.gov/members/profile/15633"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/mn/legislature/Julie-Greene-15f0a29b-674a-4146-8a93-019c9a3f305e.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://www.house.mn.gov/hinfo/memberimgls94/50A.gif?v=112221"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Julie_Greene"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Julie_Greene_(politician)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/218823/julie-greene"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.lrl.mn.gov/legdb/fulldetail?ID=15633"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

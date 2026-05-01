@@ -1,0 +1,64 @@
+{
+  "id": "randy-maxwell",
+  "name": "Randy Maxwell",
+  "firstName": "Randy",
+  "lastName": "Maxwell",
+  "photo": "/images/officials/state-legislature/in/randy-maxwell.jpg",
+  "photoSourceUrl": "https://cdn.zephyrcms.com/78226b9f-d4ad-4d02-8f18-d1bc45ce3c44/-/progressive/yes/-/format/jpeg/-/scale_crop/200x300/center/-/stretch/off/maxwell-website.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-43",
+  "jurisdiction": "Indiana Senate",
+  "county": [
+    "Indiana"
+  ],
+  "termStart": "2023-09-28",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "200 W. Washington St., Indianapolis, IN 46204",
+    "phone": "800-382-9467",
+    "email": "s43@iga.in.gov",
+    "website": "https://www.indianasenaterepublicans.com/maxwell"
+  },
+  "bio": "Randy Maxwell serves as State Senator for Indiana Senate District 43. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "IN",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.indianasenaterepublicans.com/maxwell"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/in/legislature/Randy-Maxwell-acd45b79-7930-459f-8118-70b9574ba481.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://cdn.zephyrcms.com/78226b9f-d4ad-4d02-8f18-d1bc45ce3c44/-/progressive/yes/-/format/jpeg/-/scale_crop/200x300/center/-/stretch/off/maxwell-website.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Randy_Maxwell"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Randy_Maxwell"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/212840/randy-maxwell"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.indianasenaterepublicans.com/senators"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/randy-maxwell-b3482116"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

@@ -1,0 +1,72 @@
+{
+  "id": "tim-ackert",
+  "name": "Tim Ackert",
+  "firstName": "Tim",
+  "lastName": "Ackert",
+  "photo": "/images/officials/state-legislature/ct/tim-ackert.jpg",
+  "photoSourceUrl": "https://cga.ct.gov/legpics/008.png?ver=",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-8",
+  "jurisdiction": "Connecticut House of Representatives",
+  "county": [
+    "Connecticut"
+  ],
+  "termStart": "2011-01-05",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 4200, Legislative Office Building 300 Capitol Ave., Hartford, CT 06106",
+    "phone": "860-240-8700",
+    "email": "tim.ackert@housegop.ct.gov",
+    "website": "https://cga.ct.gov/asp/CGABillStatus/CGAMemberBills.asp?dist_code=%27008%27&dist_name=Ackert,%20Tim"
+  },
+  "bio": "Tim Ackert serves as State Representative for Connecticut House of Representatives District 8. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "CT",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://cga.ct.gov/asp/CGABillStatus/CGAMemberBills.asp?dist_code=%27008%27&dist_name=Ackert,%20Tim"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ct/legislature/Tim-Ackert-d458d504-9053-4709-bf43-d955083a18ab.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://cga.ct.gov/legpics/008.png?ver="
+    },
+    {
+      "title": "Public source",
+      "url": "ftp://ftp.cga.ct.gov/pub/data/LegislatorDatabase.csv"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Tim_Ackert"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Tim_Ackert"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/65445/tim-ackert"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.cthousegop.com/Ackert"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.cthousegop.com/Ackert/"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/timackert"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

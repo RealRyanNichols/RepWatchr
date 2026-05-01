@@ -1,0 +1,75 @@
+{
+  "id": "mike-schlossberg",
+  "name": "Mike Schlossberg",
+  "firstName": "Mike",
+  "lastName": "Schlossberg",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-132",
+  "jurisdiction": "Pennsylvania House of Representatives",
+  "county": [
+    "Pennsylvania"
+  ],
+  "termStart": "2013-01-01",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 121, Main Capitol Building P.O. Box 202132, Harrisburg, PA 17120",
+    "phone": "717-705-1869",
+    "email": "repschlossberg@pahouse.net",
+    "website": "https://www.legis.state.pa.us/cfdocs/legis/home/member_information/House_bio.cfm?id=1649",
+    "socialMedia": {
+      "x": "https://x.com/RepSchlossberg",
+      "twitter": "https://x.com/RepSchlossberg",
+      "facebook": "https://facebook.com/RepSchlossberg",
+      "youtube": "https://youtube.com/playlist?list=PLjtqNtfs0bgUKhrdudwl7UauY7EO1330Z"
+    }
+  },
+  "bio": "Mike Schlossberg serves as State Representative for Pennsylvania House of Representatives District 132. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "PA",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.legis.state.pa.us/cfdocs/legis/home/member_information/House_bio.cfm?id=1649"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/pa/legislature/Michael-H-Schlossberg-fc1f0752-9166-4d7f-987a-ec15b8bf4048.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Michael_Schlossberg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Michael_Schlossberg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.legis.state.pa.us/cfdocs/legis/home/member_information/mbrList.cfm?body=H&sort=alpha"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.legis.state.pa.us/cfdocs/legis/home/member_information/representatives_alpha.cfm"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/mikeschlossberg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.pahouse.com/Schlossberg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.pahouse.com/Schlossberg/About/Biography"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.palegis.us/house/members/bio/1649/rep-schlossberg"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

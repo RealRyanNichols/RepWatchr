@@ -1,0 +1,65 @@
+{
+  "id": "william-bailey",
+  "name": "William Bailey",
+  "firstName": "William",
+  "lastName": "Bailey",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-104",
+  "jurisdiction": "South Carolina House of Representatives",
+  "county": [
+    "South Carolina"
+  ],
+  "termStart": "2018-11-12",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 530D, Blatt Building P.O. Box 11867, Columbia, SC 29201",
+    "phone": "803-212-6918",
+    "email": "williambailey@schouse.gov",
+    "website": "https://scstatehouse.gov/member.php?code=0088636353"
+  },
+  "bio": "William Bailey serves as State Representative for South Carolina House of Representatives District 104. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "SC",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://scstatehouse.gov/member.php?code=0088636353"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/sc/legislature/William-H-Bailey-40032da4-e72a-445f-b2df-7975724e64bb.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/William_Bailey"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/William_Bailey_(South_Carolina_politician)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/181058/william-bailey"
+    },
+    {
+      "title": "Public source",
+      "url": "https://scstatehouse.gov/member.php?chamber=H"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/william-bailey-a302086a"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.scstatehouse.gov/member.php?chamber=H"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.scstatehouse.gov/member.php?code=0088636353"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

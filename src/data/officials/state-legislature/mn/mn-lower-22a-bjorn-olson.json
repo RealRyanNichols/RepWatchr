@@ -1,0 +1,60 @@
+{
+  "id": "bjorn-olson",
+  "name": "Bjorn Olson",
+  "firstName": "Bjorn",
+  "lastName": "Olson",
+  "photo": "/images/officials/state-legislature/mn/bjorn-olson.jpg",
+  "photoSourceUrl": "https://www.house.mn.gov/hinfo/memberimgls94/22A.gif?v=112221",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-22A",
+  "jurisdiction": "Minnesota House of Representatives",
+  "county": [
+    "Minnesota"
+  ],
+  "termStart": "2023-01-03",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Centennial Office Building 658 Cedar St., Second Floor, St. Paul, MN 55155",
+    "phone": "651-296-3240",
+    "email": "rep.bjorn.olson@house.mn.gov",
+    "website": "https://www.house.mn.gov/members/profile/15544"
+  },
+  "bio": "Bjorn Olson serves as State Representative for Minnesota House of Representatives District 22A. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "MN",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.house.mn.gov/members/profile/15544"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/mn/legislature/Bjorn-Olson-ad3245d1-b310-4d50-8290-e642d078f661.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://www.house.mn.gov/hinfo/memberimgls94/22A.gif?v=112221"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Bjorn_Olson"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Bjorn_Olson"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/194224/bjorn-olson"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.house.leg.state.mn.us/members/hmem.asp"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

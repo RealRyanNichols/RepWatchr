@@ -1,0 +1,73 @@
+{
+  "id": "doyle-heffley",
+  "name": "Doyle Heffley",
+  "firstName": "Doyle",
+  "lastName": "Heffley",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-122",
+  "jurisdiction": "Pennsylvania House of Representatives",
+  "county": [
+    "Pennsylvania"
+  ],
+  "termStart": "2011-01-04",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 214, Ryan Office Building P.O. Box 202122, Harrisburg, PA 17120",
+    "phone": "717-260-6139",
+    "email": "dheffley@pahousegop.com",
+    "website": "https://www.legis.state.pa.us/cfdocs/legis/home/member_information/House_bio.cfm?id=1211",
+    "socialMedia": {
+      "facebook": "https://facebook.com/RepHeffley",
+      "youtube": "https://youtube.com/RepHeffley"
+    }
+  },
+  "bio": "Doyle Heffley serves as State Representative for Pennsylvania House of Representatives District 122. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "PA",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.legis.state.pa.us/cfdocs/legis/home/member_information/House_bio.cfm?id=1211"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/pa/legislature/Doyle-Heffley-885e9a2a-c18b-4f68-b5d0-0b867ec3268d.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Doyle_Heffley"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Doyle_Heffley"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/102580/doyle-heffley"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.legis.state.pa.us/cfdocs/legis/home/member_information/mbrList.cfm?body=H&sort=alpha"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.legis.state.pa.us/cfdocs/legis/home/member_information/representatives_alpha.cfm"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/doyle-heffley-03489a32"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.palegis.us/house/members/bio/1211/rep-heffley"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.repheffley.com"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

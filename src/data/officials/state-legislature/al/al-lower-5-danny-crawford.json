@@ -1,0 +1,72 @@
+{
+  "id": "danny-crawford",
+  "name": "Danny Crawford",
+  "firstName": "Danny",
+  "lastName": "Crawford",
+  "photo": "/images/officials/state-legislature/al/danny-crawford.jpg",
+  "photoSourceUrl": "https://www.legislature.state.al.us/pdf/house/members/Crawford_5.png",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-5",
+  "jurisdiction": "Alabama House of Representatives",
+  "county": [
+    "Alabama"
+  ],
+  "termStart": "2016-02-17",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 403-C, 11 S. Union St., Montgomery, AL 36130",
+    "phone": "334-261-0516",
+    "email": "danny.crawford@alhouse.gov",
+    "website": "https://alison.legislature.state.al.us/house-leaders-members"
+  },
+  "bio": "Danny Crawford serves as State Representative for Alabama House of Representatives District 5. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "AL",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://alison.legislature.state.al.us/house-leaders-members"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/al/legislature/Danny-Crawford-749e2cb2-e087-4920-aea3-b40d28f56db5.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://www.legislature.state.al.us/pdf/house/members/Crawford_5.png"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Danny_Crawford"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Danny_Crawford_(politician)"
+    },
+    {
+      "title": "graphql endpoint for member information",
+      "url": "https://gql.api.alison.legislature.state.al.us/graphql"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/165903/danny-crawford"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.legislature.state.al.us/aliswww/ISD/ALRepresentative.aspx?NAME=Crawford&OID_SPONSOR=100485&OID_PERSON=8000&SESSNAME="
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.legislature.state.al.us/aliswww/ISD/ALRepresentative.aspx?OID_SPONSOR=100485&OID_PERSON=8000"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.legislature.state.al.us/aliswww/ISD/House/ALRepresentatives.aspx"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

@@ -1,0 +1,72 @@
+{
+  "id": "eric-berthel",
+  "name": "Eric Berthel",
+  "firstName": "Eric",
+  "lastName": "Berthel",
+  "photo": "/images/officials/state-legislature/ct/eric-berthel.jpg",
+  "photoSourceUrl": "https://ctsenaterepublicans.com/wp-content/uploads/2019/01/Berthel2019forWeb.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-32",
+  "jurisdiction": "Connecticut Senate",
+  "county": [
+    "Connecticut"
+  ],
+  "termStart": "2017-03-03",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 3901, Legislative Office Building 300 Capitol Ave., Hartford, CT 06106",
+    "phone": "860-240-8800",
+    "email": "eric.berthel@cga.ct.gov",
+    "website": "https://cga.ct.gov/asp/CGABillStatus/CGAMemberBills.asp?dist_code=%27S32%27&dist_name=Berthel,%20Eric%20C."
+  },
+  "bio": "Eric Berthel serves as State Senator for Connecticut Senate District 32. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "CT",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://cga.ct.gov/asp/CGABillStatus/CGAMemberBills.asp?dist_code=%27S32%27&dist_name=Berthel,%20Eric%20C."
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ct/legislature/Eric-C-Berthel-58a9b2fa-cd93-420c-a9bc-6326a75a218a.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://ctsenaterepublicans.com/wp-content/uploads/2019/01/Berthel2019forWeb.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "ftp://ftp.cga.ct.gov/pub/data/LegislatorDatabase.csv"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Eric_C._Berthel"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ctsenaterepublicans.com/home-berthel"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ctsenaterepublicans.com/home-berthel/"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Eric_Berthel"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/154862/eric-berthel"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/ericberthel"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

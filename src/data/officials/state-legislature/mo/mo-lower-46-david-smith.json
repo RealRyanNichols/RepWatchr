@@ -1,0 +1,52 @@
+{
+  "id": "david-smith",
+  "name": "David Smith",
+  "firstName": "David",
+  "lastName": "Smith",
+  "photo": "/images/officials/state-legislature/mo/david-smith.jpg",
+  "photoSourceUrl": "https://house.mo.gov/MemberPhoto.aspx?id=2290",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-46",
+  "jurisdiction": "Missouri House of Representatives",
+  "county": [
+    "Missouri"
+  ],
+  "termStart": "2023-01-04",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 105-H, 201 W. Capitol Ave., Jefferson City, MO 65101",
+    "phone": "573-751-9753",
+    "email": "david.smith@house.mo.gov",
+    "website": "https://house.mo.gov/MemberDetails.aspx?district=046"
+  },
+  "bio": "David Smith serves as State Representative for Missouri House of Representatives District 46. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "MO",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://house.mo.gov/MemberDetails.aspx?district=046"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/mo/legislature/David-Tyson-Smith-c509449e-070c-462c-810e-f14315c9df42.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://house.mo.gov/MemberPhoto.aspx?id=2290"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/David_T._Smith_(Missouri)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://house.mo.gov/MemberDetails.aspx?year=2023&code=R&district=046"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

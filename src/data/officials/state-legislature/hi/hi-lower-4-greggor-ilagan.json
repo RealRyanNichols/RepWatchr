@@ -1,0 +1,73 @@
+{
+  "id": "greggor-ilagan",
+  "name": "Greggor Ilagan",
+  "firstName": "Greggor",
+  "lastName": "Ilagan",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-4",
+  "jurisdiction": "Hawaii House of Representatives",
+  "county": [
+    "Hawaii"
+  ],
+  "termStart": "2020-11-03",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "State Capitol Room 419, 415 S. Beretania St., Honolulu, HI 96813",
+    "phone": "808-586-6530",
+    "email": "repilagan@capitol.hawaii.gov",
+    "website": "https://repilagan.com/",
+    "socialMedia": {
+      "facebook": "https://facebook.com/repilagan",
+      "instagram": "https://instagram.com/repilagan"
+    }
+  },
+  "bio": "Greggor Ilagan serves as State Representative for Hawaii House of Representatives District 4. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "HI",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://repilagan.com/"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/hi/legislature/Greggor-Ilagan-d56e9f60-c26e-4437-90d7-4414957e737d.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Greggor_Ilagan"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Greggor_Ilagan"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/157776/greggor-ilagan"
+    },
+    {
+      "title": "Public source",
+      "url": "https://repilagan.com"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.capitol.hawaii.gov/legislature/memberpage.aspx?member=61"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.capitol.hawaii.gov/legislature/memberpage.aspx?member=61&year=2023"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.capitol.hawaii.gov/legislature/memberpage.aspx?member=61&year=2024"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.capitol.hawaii.gov/memberpage.aspx?member=Ilagan&year=2021"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

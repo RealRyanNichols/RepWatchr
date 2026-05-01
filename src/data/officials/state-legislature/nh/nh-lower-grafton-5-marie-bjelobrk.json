@@ -1,0 +1,53 @@
+{
+  "id": "marie-bjelobrk",
+  "name": "Marie Bjelobrk",
+  "firstName": "Marie",
+  "lastName": "Bjelobrk",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-Grafton 5",
+  "jurisdiction": "New Hampshire House of Representatives",
+  "county": [
+    "New Hampshire"
+  ],
+  "termStart": "2024-12-04",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "State House 107 N. Main St., Concord, NH 03301",
+    "phone": "603-271-3661",
+    "email": "marie.bjelobrk@gc.nh.gov",
+    "website": "https://gc.nh.gov/house/members/member.aspx?pid=11326"
+  },
+  "bio": "Marie Bjelobrk serves as State Representative for New Hampshire House of Representatives District Grafton 5. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "NH",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://gc.nh.gov/house/members/member.aspx?pid=11326"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/nh/legislature/Marie-Bjelobrk-f3ab13ac-5040-4533-b5f3-ce49dec5020f.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Marie_Louise_Bjelobrk"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Marie_Louise_Bjelobrk"
+    },
+    {
+      "title": "Public source",
+      "url": "https://gencourt.state.nh.us/house/members/member.aspx?pid=11326"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/218901/marie-louise-bjelobrk"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

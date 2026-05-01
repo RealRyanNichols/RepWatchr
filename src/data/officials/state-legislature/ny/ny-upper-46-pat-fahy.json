@@ -1,0 +1,77 @@
+{
+  "id": "pat-fahy",
+  "name": "Pat Fahy",
+  "firstName": "Pat",
+  "lastName": "Fahy",
+  "photo": "/images/officials/state-legislature/ny/pat-fahy.jpg",
+  "photoSourceUrl": "https://assembly.state.ny.us/write/upload/member_files/109/headshot/109.jpg?hst=1660074584",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-46",
+  "jurisdiction": "New York Senate",
+  "county": [
+    "New York"
+  ],
+  "termStart": "2025-01-01",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 708, Legislative Office Building 198 State St., Albany, NY 12247",
+    "phone": "518-455-2225",
+    "email": "fahy@nysenate.gov",
+    "website": "https://assembly.state.ny.us/mem/?sh=email",
+    "socialMedia": {
+      "x": "https://x.com/PatriciaFahy109",
+      "twitter": "https://x.com/PatriciaFahy109",
+      "facebook": "https://facebook.com/AssemblymemberPatriciaFahy"
+    }
+  },
+  "bio": "Pat Fahy serves as State Senator for New York Senate District 46. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "NY",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://assembly.state.ny.us/mem/?sh=email"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ny/legislature/Patricia-Fahy-a3e0c7bc-45f6-4a6b-a092-1c124c149a6d.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://assembly.state.ny.us/write/upload/member_files/109/headshot/109.jpg?hst=1660074584"
+    },
+    {
+      "title": "Public source",
+      "url": "https://assembly.state.ny.us/mem/Patricia-Fahy"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Patricia_Fahy"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Patricia_Fahy"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/143189/patricia-fahy"
+    },
+    {
+      "title": "Public source",
+      "url": "https://nyassembly.gov/mem/Patricia-Fahy"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/patricia-fahy-83950727"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.nysenate.gov/senators/patricia-fahy"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

@@ -1,0 +1,64 @@
+{
+  "id": "hubert-delany",
+  "name": "Hubert Delany",
+  "firstName": "Hubert",
+  "lastName": "Delany",
+  "photo": "/images/officials/state-legislature/ct/hubert-delany.jpg",
+  "photoSourceUrl": "http://www2.housedems.ct.gov/Delany/images/Delany_HS.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-144",
+  "jurisdiction": "Connecticut House of Representatives",
+  "county": [
+    "Connecticut"
+  ],
+  "termStart": "2022-02-01",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 5007, Legislative Office Building 300 Capitol Ave., Hartford, CT 06106",
+    "phone": "800-842-8267",
+    "email": "hubert.delany@cga.ct.gov",
+    "website": "https://www.cga.ct.gov/asp/CGABillStatus/CGAMemberBills.asp?dist_code=%27144%27&dist_name=144%20-%Delany,%Hubert"
+  },
+  "bio": "Hubert Delany serves as State Representative for Connecticut House of Representatives District 144. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "CT",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.cga.ct.gov/asp/CGABillStatus/CGAMemberBills.asp?dist_code=%27144%27&dist_name=144%20-%Delany,%Hubert"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ct/legislature/Hubert-Delany-b666accd-c7f7-41e9-ade0-f64f6e438669.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "http://www2.housedems.ct.gov/Delany/images/Delany_HS.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "ftp://ftp.cga.ct.gov/pub/data/LegislatorDatabase.csv"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Hubert_Delany"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Hubert_Douglas_Delany"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.housedems.ct.gov/Delany"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/hubert-delany-9467b1206"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

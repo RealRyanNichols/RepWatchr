@@ -1,0 +1,72 @@
+{
+  "id": "sonia-barker",
+  "name": "Sonia Barker",
+  "firstName": "Sonia",
+  "lastName": "Barker",
+  "photo": "/images/officials/state-legislature/ar/sonia-barker.jpg",
+  "photoSourceUrl": "https://www.arkleg.state.ar.us/Content/photos/2023/House/520_sm.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-96",
+  "jurisdiction": "Arkansas House of Representatives",
+  "county": [
+    "Arkansas"
+  ],
+  "termStart": "2023-01-09",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "State Capitol Arkansas  500 Woodlane St., Suite 350, Little Rock, AR 72201",
+    "phone": "501-682-6211",
+    "email": "sonia.barker@arkansashouse.org",
+    "website": "https://arkleg.state.ar.us/Legislators/Detail?member=Barker"
+  },
+  "bio": "Sonia Barker serves as State Representative for Arkansas House of Representatives District 96. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "AR",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://arkleg.state.ar.us/Legislators/Detail?member=Barker"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ar/legislature/Sonia-Eubanks-Barker-bd3c22f6-b1b5-4089-b03b-f8198ca843a2.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://www.arkleg.state.ar.us/Content/photos/2023/House/520_sm.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Sonia_Eubanks_Barker"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Sonia_Eubanks_Barker"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/166163/sonia-barker"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.arkansashouse.org/district/96"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.arkleg.state.ar.us/Legislators/Detail?member=Barker"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.arkleg.state.ar.us/Legislators/Detail?member=Barker&ddBienniumSession=2023%2F2023R"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.arkleg.state.ar.us/Legislators/List?sort=Type&by=desc&ddBienniumSession=2023%2F2023R#SearchResults"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

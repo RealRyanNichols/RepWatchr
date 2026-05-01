@@ -1,0 +1,53 @@
+{
+  "id": "thad-claggett",
+  "name": "Thad Claggett",
+  "firstName": "Thad",
+  "lastName": "Claggett",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-68",
+  "jurisdiction": "Ohio House of Representatives",
+  "county": [
+    "Ohio"
+  ],
+  "termStart": "2023-01-01",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "77 S. High St. 13th Floor, Columbus, OH 43215",
+    "phone": "614-466-1482",
+    "email": "rep68@ohiohouse.gov",
+    "website": "https://www.ohiohouse.gov/members/thaddeus-j-claggett"
+  },
+  "bio": "Thad Claggett serves as State Representative for Ohio House of Representatives District 68. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "OH",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.ohiohouse.gov/members/thaddeus-j-claggett"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/oh/legislature/Thaddeus-J-Claggett-081534e7-8952-47f0-a722-ed627fb32069.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Thaddeus_Claggett"
+    },
+    {
+      "title": "member details page",
+      "url": "https://ohiohouse.gov/members/thaddeus-j-claggett"
+    },
+    {
+      "title": "member list page",
+      "url": "https://www.legislature.ohio.gov/legislators/house-directory"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/thaddeus-claggett-27386310"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

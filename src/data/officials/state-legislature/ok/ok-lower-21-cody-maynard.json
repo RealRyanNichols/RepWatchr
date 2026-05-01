@@ -1,0 +1,61 @@
+{
+  "id": "cody-maynard",
+  "name": "Cody Maynard",
+  "firstName": "Cody",
+  "lastName": "Maynard",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-21",
+  "jurisdiction": "Oklahoma House of Representatives",
+  "county": [
+    "Oklahoma"
+  ],
+  "termStart": "2022-11-23",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 341, 2300 N. Lincoln Blvd., Oklahoma City, OK 73105",
+    "phone": "405-557-7366",
+    "email": "cody.maynard@okhouse.gov",
+    "website": "https://www.okhouse.gov/Members/Contact.aspx?District=21"
+  },
+  "bio": "Cody Maynard serves as State Representative for Oklahoma House of Representatives District 21. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "OK",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.okhouse.gov/Members/Contact.aspx?District=21"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ok/legislature/Cody-Maynard-17d5c3a4-a468-4aca-b58c-314605214857.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Cody_Maynard"
+    },
+    {
+      "title": "Public source",
+      "url": "https://codymaynard.com/home/about"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Cody_Maynard"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/206362/cody-maynard"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/cody-maynard-698b3a99"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.okhouse.gov/representatives/cody-maynard"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

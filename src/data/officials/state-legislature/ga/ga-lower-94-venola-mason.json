@@ -1,0 +1,51 @@
+{
+  "id": "venola-mason",
+  "name": "Venola Mason",
+  "firstName": "Venola",
+  "lastName": "Mason",
+  "photo": "/images/officials/state-legislature/ga/venola-mason.jpg",
+  "photoSourceUrl": "https://venolaforthefuture.com/wp-content/uploads/2026/02/Venola-Campaign-photo-Oval_s.png",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-94",
+  "jurisdiction": "Georgia House of Representatives",
+  "county": [
+    "Georgia"
+  ],
+  "termStart": "2026-04-18",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {},
+  "bio": "Venola Mason serves as State Representative for Georgia House of Representatives District 94. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "GA",
+  "sourceLinks": [
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ga/legislature/Venola-Mason-b9050158-4a6d-4332-8ad2-769472f52e3e.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://venolaforthefuture.com/wp-content/uploads/2026/02/Venola-Campaign-photo-Oval_s.png"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Venola_Mason"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Venola_Mason"
+    },
+    {
+      "title": "Public source",
+      "url": "https://venolamason.com"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/masonvenola"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

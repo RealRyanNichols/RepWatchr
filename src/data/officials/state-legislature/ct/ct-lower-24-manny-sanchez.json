@@ -1,0 +1,68 @@
+{
+  "id": "manny-sanchez",
+  "name": "Manny Sanchez",
+  "firstName": "Manny",
+  "lastName": "Sanchez",
+  "photo": "/images/officials/state-legislature/ct/manny-sanchez.jpg",
+  "photoSourceUrl": "http://www2.housedems.ct.gov/SanchezM/images/SanchezM_HS.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-24",
+  "jurisdiction": "Connecticut House of Representatives",
+  "county": [
+    "Connecticut"
+  ],
+  "termStart": "2021-01-06",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 3804, Legislative Office Building 300 Capitol Ave., Hartford, CT 06106",
+    "phone": "800-842-8267",
+    "email": "emmanuel.sanchez@cga.ct.gov",
+    "website": "https://cga.ct.gov/asp/CGABillStatus/CGAMemberBills.asp?dist_code=%27024%27&dist_name=Sanchez,%20Emmanuel"
+  },
+  "bio": "Manny Sanchez serves as State Representative for Connecticut House of Representatives District 24. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "CT",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://cga.ct.gov/asp/CGABillStatus/CGAMemberBills.asp?dist_code=%27024%27&dist_name=Sanchez,%20Emmanuel"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ct/legislature/Emmanuel-Sanchez-140d2d97-aae9-433a-b012-ce3775aa81a8.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "http://www2.housedems.ct.gov/SanchezM/images/SanchezM_HS.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "ftp://ftp.cga.ct.gov/pub/data/LegislatorDatabase.csv"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Manny_Sanchez"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Emmanuel_Sanchez_(politician)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/193858/manny-sanchez"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.housedems.ct.gov/SanchezM"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/esanchez729"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

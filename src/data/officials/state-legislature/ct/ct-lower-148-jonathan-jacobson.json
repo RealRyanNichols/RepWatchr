@@ -1,0 +1,60 @@
+{
+  "id": "jonathan-jacobson",
+  "name": "Jonathan Jacobson",
+  "firstName": "Jonathan",
+  "lastName": "Jacobson",
+  "photo": "/images/officials/state-legislature/ct/jonathan-jacobson.jpg",
+  "photoSourceUrl": "https://s3.amazonaws.com/ballotpedia-api4/files/thumbs/200/300/Jonathan_Jacobson_20240808_093641.jpeg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-148",
+  "jurisdiction": "Connecticut House of Representatives",
+  "county": [
+    "Connecticut"
+  ],
+  "termStart": "2025-01-08",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 4018, Legislative Office Building 300 Capitol Ave., Hartford, CT 06016",
+    "phone": "860-240-8585",
+    "email": "jonathan.jacobson@cga.ct.gov",
+    "website": "https://www.housedems.ct.gov/Jacobson"
+  },
+  "bio": "Jonathan Jacobson serves as State Representative for Connecticut House of Representatives District 148. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "CT",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.housedems.ct.gov/Jacobson"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ct/legislature/Jonathan-Jacobson-c567ea19-728c-43ba-ba57-20e1499418f8.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://s3.amazonaws.com/ballotpedia-api4/files/thumbs/200/300/Jonathan_Jacobson_20240808_093641.jpeg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Jonathan_Jacobson_(Connecticut)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Jonathan_Jacobson_(Connecticut_politician)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/199754/jonathan-jacobson"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/jonathan-jacobson-8614b274"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

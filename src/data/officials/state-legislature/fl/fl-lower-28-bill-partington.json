@@ -1,0 +1,64 @@
+{
+  "id": "bill-partington",
+  "name": "Bill Partington",
+  "firstName": "Bill",
+  "lastName": "Partington",
+  "photo": "/images/officials/state-legislature/fl/bill-partington.jpg",
+  "photoSourceUrl": "https://www.billpartington.com/images/Partington,-Bill-WEB-FILE.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-28",
+  "jurisdiction": "Florida House of Representatives",
+  "county": [
+    "Florida"
+  ],
+  "termStart": "2024-11-05",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 1301, The Capitol 402 S. Monroe St., Tallahassee, FL 32399",
+    "phone": "850-717-5028",
+    "email": "bill.partington@flhouse.gov",
+    "website": "https://myfloridahouse.gov/Sections/Representatives/details.aspx?MemberId=4912&LegislativeTermId=91"
+  },
+  "bio": "Bill Partington serves as State Representative for Florida House of Representatives District 28. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "FL",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://myfloridahouse.gov/Sections/Representatives/details.aspx?MemberId=4912&LegislativeTermId=91"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/fl/legislature/Bill-Partington-92e88cfe-0a68-45e1-b84c-9f181a46554e.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://www.billpartington.com/images/Partington,-Bill-WEB-FILE.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Bill_Partington"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Bill_Partington"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.flhouse.gov/Sections/Representatives/details.aspx?MemberId=4912"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.flhouse.gov/Sections/Representatives/details.aspx?MemberId=4912&LegislativeTermId=91"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/bill-partington-680553108"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

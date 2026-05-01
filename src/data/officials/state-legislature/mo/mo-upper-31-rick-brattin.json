@@ -1,0 +1,69 @@
+{
+  "id": "rick-brattin",
+  "name": "Rick Brattin",
+  "firstName": "Rick",
+  "lastName": "Brattin",
+  "party": "R",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-31",
+  "jurisdiction": "Missouri Senate",
+  "county": [
+    "Missouri"
+  ],
+  "termStart": "2021-01-06",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 221, 201 W. Capitol Ave., Jefferson City, MO 65101",
+    "phone": "573-751-2108",
+    "email": "rick.brattin@senate.mo.gov",
+    "website": "https://www.house.mo.gov/MemberDetails.aspx?district=55"
+  },
+  "bio": "Rick Brattin serves as State Senator for Missouri Senate District 31. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "MO",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.house.mo.gov/MemberDetails.aspx?district=55"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/mo/legislature/Rick-Brattin-e4811e7a-7df7-4275-917d-8bdcc2778fb1.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Rick_Brattin"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Rick_Brattin"
+    },
+    {
+      "title": "Public source",
+      "url": "https://house.mo.gov/MemberGridCluster.aspx"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/124815/rick-brattin-jr"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.senate.mo.gov/mem31"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.senate.mo.gov/senators-listing"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.senate.mo.gov/senators-listing/"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.senate.mo.gov/Senators/Member/31"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

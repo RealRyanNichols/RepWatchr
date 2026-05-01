@@ -1,0 +1,61 @@
+{
+  "id": "lindsay-powell",
+  "name": "Lindsay Powell",
+  "firstName": "Lindsay",
+  "lastName": "Powell",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-21",
+  "jurisdiction": "Pennsylvania House of Representatives",
+  "county": [
+    "Pennsylvania"
+  ],
+  "termStart": "2023-10-02",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 106B, East Wing P.O. Box 202021, Harrisburg, PA 17120",
+    "phone": "717-783-9114",
+    "email": "reppowell@pahouse.net",
+    "website": "https://www.legis.state.pa.us/cfdocs/legis/home/member_information/House_bio.cfm?id=2016"
+  },
+  "bio": "Lindsay Powell serves as State Representative for Pennsylvania House of Representatives District 21. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "PA",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.legis.state.pa.us/cfdocs/legis/home/member_information/House_bio.cfm?id=2016"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/pa/legislature/Lindsay-Powell-b7c8d063-8db4-4cdf-a159-a0b064b7cae5.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Lindsay_Powell"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Lindsay_Powell"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.legis.state.pa.us/cfdocs/legis/home/member_information/mbrList.cfm?body=H&sort=alpha"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/lindsayapowell"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.pahouse.com/Powell"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.palegis.us/house/members/bio/2016/rep-powell"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

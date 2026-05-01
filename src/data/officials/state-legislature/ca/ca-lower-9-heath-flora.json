@@ -1,0 +1,72 @@
+{
+  "id": "heath-flora",
+  "name": "Heath Flora",
+  "firstName": "Heath",
+  "lastName": "Flora",
+  "photo": "/images/officials/state-legislature/ca/heath-flora.jpg",
+  "photoSourceUrl": "https://www.assembly.ca.gov/sites/assembly.ca.gov/files/memberphotos/flora.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "Assemblymember",
+  "district": "HD-9",
+  "jurisdiction": "California State Assembly",
+  "county": [
+    "California"
+  ],
+  "termStart": "2022-12-05",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 4730, 1021 O St. P.O. Box 942849, Sacramento, CA 94249",
+    "phone": "916-319-2009",
+    "email": "assemblymember.flora@assembly.ca.gov",
+    "website": "https://ad09.asmrc.org/"
+  },
+  "bio": "Heath Flora serves as Assemblymember for California State Assembly District 9. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "CA",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://ad09.asmrc.org/"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ca/legislature/Heath-Flora-c830a90c-8964-4c0f-b31b-729cab1144fd.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://www.assembly.ca.gov/sites/assembly.ca.gov/files/memberphotos/flora.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ad09.asmrc.org"
+    },
+    {
+      "title": "Public source",
+      "url": "https://assembly.ca.gov/assemblymembers"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Heath_Flora"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Heath_Flora"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/169309/heath-flora"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.assembly.ca.gov/assemblymembers"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/heath-flora-24060a47"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

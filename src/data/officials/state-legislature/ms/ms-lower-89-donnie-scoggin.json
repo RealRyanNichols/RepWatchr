@@ -1,0 +1,60 @@
+{
+  "id": "donnie-scoggin",
+  "name": "Donnie Scoggin",
+  "firstName": "Donnie",
+  "lastName": "Scoggin",
+  "photo": "/images/officials/state-legislature/ms/donnie-scoggin.jpg",
+  "photoSourceUrl": "http://files.ctctcdn.com/ee25b30f001/08bd0580-a7b2-481a-a9d2-198a61aec56d.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-89",
+  "jurisdiction": "Mississippi House of Representatives",
+  "county": [
+    "Mississippi"
+  ],
+  "termStart": "2016-12-09",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "State Capitol 400 High St., Jackson, MS 39201",
+    "phone": "601-359-3770",
+    "email": "dscoggin@house.ms.gov",
+    "website": "https://billstatus.ls.state.ms.us/members/house/scoggin.xml"
+  },
+  "bio": "Donnie Scoggin serves as State Representative for Mississippi House of Representatives District 89. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "MS",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://billstatus.ls.state.ms.us/members/house/scoggin.xml"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ms/legislature/Donnie-Scoggin-2118023c-ed1d-455f-b3a6-faeefd0e87b5.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "http://files.ctctcdn.com/ee25b30f001/08bd0580-a7b2-481a-a9d2-198a61aec56d.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Donnie_Scoggin"
+    },
+    {
+      "title": "Public source",
+      "url": "https://billstatus.ls.state.ms.us/members/hr_membs.xml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Donnie_Scoggin"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/176171/donnie-scoggin"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

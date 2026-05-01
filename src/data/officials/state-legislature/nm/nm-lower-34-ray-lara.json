@@ -1,0 +1,63 @@
+{
+  "id": "ray-lara",
+  "name": "Ray Lara",
+  "firstName": "Ray",
+  "lastName": "Lara",
+  "photo": "/images/officials/state-legislature/nm/ray-lara.jpg",
+  "photoSourceUrl": "https://www.nmlegis.gov/Images/Legislators/House/HLARA.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-34",
+  "jurisdiction": "New Mexico House of Representatives",
+  "county": [
+    "New Mexico"
+  ],
+  "termStart": "2019-01-15",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "State Capitol Room 134A, New Mexico  490 Old Santa Fe Trail, Santa Fe, NM 87501",
+    "phone": "505-986-4777",
+    "email": "raymundo.lara@nmlegis.gov",
+    "website": "https://www.nmlegis.gov/Members/Legislator?SponCode=HLARA",
+    "socialMedia": {
+      "facebook": "https://facebook.com/RayLaraforStateRepresentative"
+    }
+  },
+  "bio": "Ray Lara serves as State Representative for New Mexico House of Representatives District 34. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "NM",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.nmlegis.gov/Members/Legislator?SponCode=HLARA"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/nm/legislature/Raymundo-Lara-e8d69d4c-dfd4-4e22-939a-cc356ba7ac05.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://www.nmlegis.gov/Images/Legislators/House/HLARA.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Raymundo_Lara"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Raymundo_Lara"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/raymundo-lara-1217b989"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.nmlegis.gov/Members/Legislator_List?T=R"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

@@ -1,0 +1,67 @@
+{
+  "id": "lee-filer",
+  "name": "Lee Filer",
+  "firstName": "Lee",
+  "lastName": "Filer",
+  "photo": "/images/officials/state-legislature/wy/lee-filer.jpg",
+  "photoSourceUrl": "https://wyoleg.gov/LegislatorSummary/Photos/68th-FilerLee.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-44",
+  "jurisdiction": "Wyoming House of Representatives",
+  "county": [
+    "Wyoming"
+  ],
+  "termStart": "2025-01-06",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "State Capitol 200 W. 24th St., Cheyenne, WY 82002",
+    "email": "lee.filer@wyoleg.gov",
+    "website": "https://legisweb.state.wy.us/LegislatorSummary/LegDetail.aspx?LegID=1990"
+  },
+  "bio": "Lee Filer serves as State Representative for Wyoming House of Representatives District 44. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "WY",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://legisweb.state.wy.us/LegislatorSummary/LegDetail.aspx?LegID=1990"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/wy/legislature/Lee-Filer-be3b0a04-4e00-42e4-9202-5c8f68aacedd.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://wyoleg.gov/LegislatorSummary/Photos/68th-FilerLee.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Lee_Filer"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Lee_Filer"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/140049/lee-filer"
+    },
+    {
+      "title": "Public source",
+      "url": "https://legisweb.state.wy.us/LegislatorSummary/LegislatorList.aspx?strHouse=H&strStatus=N"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/lee-filer-4320806a"
+    },
+    {
+      "title": "Public source",
+      "url": "https://wyoleg.gov/Legislators/2025/H/1990"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

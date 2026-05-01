@@ -1,0 +1,64 @@
+{
+  "id": "amy-grady",
+  "name": "Amy Grady",
+  "firstName": "Amy",
+  "lastName": "Grady",
+  "photo": "/images/officials/state-legislature/wv/amy-grady.jpg",
+  "photoSourceUrl": "https://www.wvlegislature.gov/images/members/2024/senate/grady_amy.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-4",
+  "jurisdiction": "West Virginia Senate",
+  "county": [
+    "West Virginia"
+  ],
+  "termStart": "2020-12-01",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "State Capitol Room 417M, Complex, Building 1 1900 Kanawha Blvd. East, Charleston, WV 25305",
+    "phone": "304-357-7855",
+    "email": "amy.grady@wvsenate.gov",
+    "website": "https://www.legis.state.wv.us/Senate1/lawmaker.cfm?member=Senator+Grady"
+  },
+  "bio": "Amy Grady serves as State Senator for West Virginia Senate District 4. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "WV",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.legis.state.wv.us/Senate1/lawmaker.cfm?member=Senator+Grady"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/wv/legislature/Amy-Grady-57c08164-a673-4269-84d9-6017e740eaac.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://www.wvlegislature.gov/images/members/2024/senate/grady_amy.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Amy_Nichole_Grady"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Amy_Grady"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/184289/amy-nichole-grady"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.wvlegislature.gov/Senate1/lawmaker.cfm?member=Senator%20Grady"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.wvlegislature.gov/Senate1/roster.cfm"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

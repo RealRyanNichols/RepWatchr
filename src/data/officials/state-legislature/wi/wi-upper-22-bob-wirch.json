@@ -1,0 +1,72 @@
+{
+  "id": "bob-wirch",
+  "name": "Bob Wirch",
+  "firstName": "Bob",
+  "lastName": "Wirch",
+  "photo": "/images/officials/state-legislature/wi/bob-wirch.jpg",
+  "photoSourceUrl": "https://docs.legis.wisconsin.gov/2023/legislators/senate/2440.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-22",
+  "jurisdiction": "Wisconsin Senate",
+  "county": [
+    "Wisconsin"
+  ],
+  "termStart": "1997-01-06",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "State Capitol Room 127 South, P.O. Box 7882 , 2 E. Main St., Madison, WI 53707",
+    "phone": "608-267-8979",
+    "email": "sen.wirch@legis.wisconsin.gov",
+    "website": "https://docs.legis.wisconsin.gov/2017/legislators/senate/1532"
+  },
+  "bio": "Bob Wirch serves as State Senator for Wisconsin Senate District 22. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "WI",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://docs.legis.wisconsin.gov/2017/legislators/senate/1532"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/wi/legislature/Robert-W-Wirch-dc69e926-a090-4561-bb0f-2f81ec0dc977.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://docs.legis.wisconsin.gov/2023/legislators/senate/2440.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Robert_Wirch"
+    },
+    {
+      "title": "Public source",
+      "url": "https://docs.legis.wisconsin.gov/2019/legislators/senate/1926"
+    },
+    {
+      "title": "Public source",
+      "url": "https://docs.legis.wisconsin.gov/2021/legislators/senate"
+    },
+    {
+      "title": "Public source",
+      "url": "https://docs.legis.wisconsin.gov/2021/legislators/senate/"
+    },
+    {
+      "title": "Public source",
+      "url": "https://docs.legis.wisconsin.gov/2021/legislators/senate/2119"
+    },
+    {
+      "title": "Public source",
+      "url": "https://docs.legis.wisconsin.gov/2023/legislators/senate"
+    },
+    {
+      "title": "members list page",
+      "url": "https://docs.legis.wisconsin.gov/2023/legislators/senate/"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

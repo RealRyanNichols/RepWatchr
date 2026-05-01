@@ -1,0 +1,65 @@
+{
+  "id": "holt-persinger",
+  "name": "Holt Persinger",
+  "firstName": "Holt",
+  "lastName": "Persinger",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-119",
+  "jurisdiction": "Georgia House of Representatives",
+  "county": [
+    "Georgia"
+  ],
+  "termStart": "2023-03-06",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 508-C, Coverdell Legislative Office Building 18 Capitol Square SW, Atlanta, GA 30334",
+    "phone": "404-656-6731",
+    "email": "holt.persinger@house.ga.gov",
+    "website": "https://www.legis.ga.gov/members/house"
+  },
+  "bio": "Holt Persinger serves as State Representative for Georgia House of Representatives District 119. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "GA",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.legis.ga.gov/members/house"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ga/legislature/Holt-Persinger-b39e2164-d570-45f2-b271-5e2fbe99c8d6.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Holt_Persinger"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Holt_Persinger"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/211306/holt-persinger"
+    },
+    {
+      "title": "API member detail (requires authorization token)",
+      "url": "https://www.legis.ga.gov/api/members/detail/5060?session=1031&chamber=1"
+    },
+    {
+      "title": "API members list (requires authorization token)",
+      "url": "https://www.legis.ga.gov/api/members/list/1031"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.legis.ga.gov/members/house/5060"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/holt-persinger-952b976"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

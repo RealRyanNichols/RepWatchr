@@ -1,0 +1,61 @@
+{
+  "id": "kirstin-kahaloa",
+  "name": "Kirstin Kahaloa",
+  "firstName": "Kirstin",
+  "lastName": "Kahaloa",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-6",
+  "jurisdiction": "Hawaii House of Representatives",
+  "county": [
+    "Hawaii"
+  ],
+  "termStart": "2022-11-08",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "State Capitol Room 403, 415 S. Beretania St., Honolulu, HI 96813",
+    "phone": "808-586-8530",
+    "email": "repkahaloa@capitol.hawaii.gov",
+    "website": "https://www.capitol.hawaii.gov/legislature/memberpage.aspx?member=264"
+  },
+  "bio": "Kirstin Kahaloa serves as State Representative for Hawaii House of Representatives District 6. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "HI",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.capitol.hawaii.gov/legislature/memberpage.aspx?member=264"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/hi/legislature/Kirstin-Kahaloa-b6d9dda7-d2e1-443e-a19b-ee44ed891cad.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Kirstin_Kahaloa"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Kirstin_Kahaloa"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.capitol.hawaii.gov/legislature/memberpage.aspx?member=264&year=2023"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.capitol.hawaii.gov/legislature/memberpage.aspx?member=264&year=2024"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.capitol.hawaii.gov/members/legislators.aspx"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/kkahaloa"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

@@ -1,0 +1,65 @@
+{
+  "id": "carl-anderson",
+  "name": "Carl Anderson",
+  "firstName": "Carl",
+  "lastName": "Anderson",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-103",
+  "jurisdiction": "South Carolina House of Representatives",
+  "county": [
+    "South Carolina"
+  ],
+  "termStart": "",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 304C, Blatt Building P.O. Box 11867, Columbia, SC 29201",
+    "phone": "803-734-2933",
+    "email": "carlanderson@schouse.gov",
+    "website": "https://scstatehouse.gov/member.php?code=0021590907"
+  },
+  "bio": "Carl Anderson serves as State Representative for South Carolina House of Representatives District 103. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "SC",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://scstatehouse.gov/member.php?code=0021590907"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/sc/legislature/Carl-L-Anderson-c3b55867-85d7-4bf2-b1a0-30dd924ae734.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Carl_Anderson_(South_Carolina)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Carl_Anderson_(South_Carolina_politician)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/48270/carl-anderson"
+    },
+    {
+      "title": "Public source",
+      "url": "https://scstatehouse.gov/member.php?chamber=H"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/carl-anderson-2339bb46"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.scstatehouse.gov/member.php?chamber=H"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.scstatehouse.gov/member.php?code=0021590907"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

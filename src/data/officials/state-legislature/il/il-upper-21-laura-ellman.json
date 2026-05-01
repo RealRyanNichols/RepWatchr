@@ -1,0 +1,72 @@
+{
+  "id": "laura-ellman",
+  "name": "Laura Ellman",
+  "firstName": "Laura",
+  "lastName": "Ellman",
+  "photo": "/images/officials/state-legislature/il/laura-ellman.jpg",
+  "photoSourceUrl": "https://cdn.ilga.gov/assets/img/members/{423E6DDE-1AFB-4F10-A767-C869B0E51483}.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-21",
+  "jurisdiction": "Illinois Senate",
+  "county": [
+    "Illinois"
+  ],
+  "termStart": "2019-01-09",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 627, Capitol Building, Springfield, IL 62706",
+    "phone": "217-782-8192",
+    "email": "info@senatorlauraellman.com",
+    "website": "https://ilga.gov/senate/Senator.asp?GA=101&MemberID=2725"
+  },
+  "bio": "Laura Ellman serves as State Senator for Illinois Senate District 21. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "IL",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://ilga.gov/senate/Senator.asp?GA=101&MemberID=2725"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/il/legislature/Laura-Ellman-9bc8c9e8-ed36-42a1-ae80-4b2dfe591839.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://cdn.ilga.gov/assets/img/members/{423E6DDE-1AFB-4F10-A767-C869B0E51483}.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Laura_Ellman"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Laura_Ellman"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ilga.gov/senate/default.asp?GA=101"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ilga.gov/senate/default.asp?GA=102"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ilga.gov/senate/default.asp?GA=103"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ilga.gov/senate/Senator.asp?GA=102&MemberID=2930"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ilga.gov/senate/Senator.asp?GA=103&MemberID=3128"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

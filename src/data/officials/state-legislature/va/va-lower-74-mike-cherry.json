@@ -1,0 +1,72 @@
+{
+  "id": "mike-cherry",
+  "name": "Mike Cherry",
+  "firstName": "Mike",
+  "lastName": "Cherry",
+  "photo": "/images/officials/state-legislature/va/mike-cherry.jpg",
+  "photoSourceUrl": "https://memdata.virginiageneralassembly.gov/images/display_image/H0335",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "Delegate",
+  "district": "HD-74",
+  "jurisdiction": "Virginia House of Delegates",
+  "county": [
+    "Virginia"
+  ],
+  "termStart": "2024-01-10",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 706, General Assembly Building 201 N. 9th St., Richmond, VA 23219",
+    "phone": "804-698-1074",
+    "email": "delmcherry@house.virginia.gov",
+    "website": "https://house.vga.virginia.gov/members/H0335"
+  },
+  "bio": "Mike Cherry serves as Delegate for Virginia House of Delegates District 74. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "VA",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://house.vga.virginia.gov/members/H0335"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/va/legislature/Mike-A-Cherry-32b96a0d-662a-4c8f-9b2b-f86365640624.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://memdata.virginiageneralassembly.gov/images/display_image/H0335"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Mike_Cherry"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Mike_Cherry_(Virginia_politician)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/195992/mike-cherry"
+    },
+    {
+      "title": "Public source",
+      "url": "https://lis.virginia.gov/cgi-bin/legp604.exe?221+mbr+H335"
+    },
+    {
+      "title": "Public source",
+      "url": "https://lis.virginia.gov/cgi-bin/legp604.exe?241+mbr+H335"
+    },
+    {
+      "title": "Public source",
+      "url": "https://mikecherryforva.com/meet-mike"
+    },
+    {
+      "title": "Public source",
+      "url": "https://virginiageneralassembly.gov/house/members/members.php?id=H0335"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

@@ -1,0 +1,64 @@
+{
+  "id": "anitra-hamilton",
+  "name": "Anitra Hamilton",
+  "firstName": "Anitra",
+  "lastName": "Hamilton",
+  "photo": "/images/officials/state-legislature/wv/anitra-hamilton.jpg",
+  "photoSourceUrl": "http://www.wvlegislature.gov/images/members/2023/house/hamilton_anitra.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "Delegate",
+  "district": "HD-81",
+  "jurisdiction": "West Virginia House of Delegates",
+  "county": [
+    "West Virginia"
+  ],
+  "termStart": "2023-05-05",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "State Capitol Room 2R, Complex, Building 1 1900 Kanawha Blvd. East, Charleston, WV 25305",
+    "phone": "304-340-3900",
+    "email": "anitra.hamilton@wvhouse.gov",
+    "website": "https://www.wvlegislature.gov/House/lawmaker.cfm?member=Delegate%20Hamilton"
+  },
+  "bio": "Anitra Hamilton serves as Delegate for West Virginia House of Delegates District 81. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "WV",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.wvlegislature.gov/House/lawmaker.cfm?member=Delegate%20Hamilton"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/wv/legislature/Anitra-Hamilton-86a1fdf7-e6af-41b4-8d69-0d0815fc9512.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "http://www.wvlegislature.gov/images/members/2023/house/hamilton_anitra.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Anitra_Hamilton"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Anitra_Hamilton"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/212180/anitra-hamilton"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/anitra-hamilton-65054b335"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.wvlegislature.gov/House/roster.cfm"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

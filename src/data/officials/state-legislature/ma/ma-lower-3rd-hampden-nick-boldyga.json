@@ -1,0 +1,72 @@
+{
+  "id": "nick-boldyga",
+  "name": "Nick Boldyga",
+  "firstName": "Nick",
+  "lastName": "Boldyga",
+  "photo": "/images/officials/state-legislature/ma/nick-boldyga.jpg",
+  "photoSourceUrl": "https://malegislature.gov/Legislators/Profile/170/NAG1.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-3rd Hampden",
+  "jurisdiction": "Massachusetts House of Representatives",
+  "county": [
+    "Massachusetts"
+  ],
+  "termStart": "2011-01-01",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 167, State House 24 Beacon St., Boston, MA 02133",
+    "phone": "413-274-8084",
+    "email": "nicholas.boldyga@mahouse.gov",
+    "website": "https://malegislature.gov/Legislators/Profile/NAG1"
+  },
+  "bio": "Nick Boldyga serves as State Representative for Massachusetts House of Representatives District 3rd Hampden. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "MA",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://malegislature.gov/Legislators/Profile/NAG1"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ma/legislature/Nicholas-A-Boldyga-0e72fc19-89be-49b9-8baf-5f35f938ec87.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://malegislature.gov/Legislators/Profile/170/NAG1.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Nicholas_Boldyga"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Nicholas_Boldyga"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/110813/nicholas-boldyga"
+    },
+    {
+      "title": "Public source",
+      "url": "https://malegislature.gov/api/GeneralCourts/192/LegislativeMembers"
+    },
+    {
+      "title": "Public source",
+      "url": "https://malegislature.gov/api/GeneralCourts/192/LegislativeMembers/"
+    },
+    {
+      "title": "Public source",
+      "url": "https://malegislature.gov/api/GeneralCourts/192/LegislativeMembers/NAG1"
+    },
+    {
+      "title": "Public source",
+      "url": "https://malegislature.gov/api/GeneralCourts/193/LegislativeMembers"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

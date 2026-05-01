@@ -1,0 +1,69 @@
+{
+  "id": "mari-cordes",
+  "name": "Mari Cordes",
+  "firstName": "Mari",
+  "lastName": "Cordes",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-Addison-4",
+  "jurisdiction": "Vermont House of Representatives",
+  "county": [
+    "Vermont"
+  ],
+  "termStart": "2019-01-09",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Vermont State House 115 State St., Montpelier, VT 05633",
+    "phone": "802-828-2228",
+    "email": "mcordes@leg.state.vt.us",
+    "website": "https://legislature.vermont.gov/Documents/SmallMaps/ADD-4.pdf"
+  },
+  "bio": "Mari Cordes serves as State Representative for Vermont House of Representatives District Addison-4. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "VT",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://legislature.vermont.gov/Documents/SmallMaps/ADD-4.pdf"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/vt/legislature/Mari-Cordes-1f501dde-37ba-49b3-ac83-0c77102ed8c3.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Mari_Cordes"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Mari_Cordes"
+    },
+    {
+      "title": "Public source",
+      "url": "https://legislature.vermont.gov/people/loadAll/2020"
+    },
+    {
+      "title": "Public source",
+      "url": "https://legislature.vermont.gov/people/loadAll/2022"
+    },
+    {
+      "title": "Public source",
+      "url": "https://legislature.vermont.gov/people/single/2020/30939"
+    },
+    {
+      "title": "Public source",
+      "url": "https://legislature.vermont.gov/people/single/2022/30939"
+    },
+    {
+      "title": "Public source",
+      "url": "https://legislature.vermont.gov/people/single/2024/30939"
+    },
+    {
+      "title": "Public source",
+      "url": "https://legislature.vermont.gov/people/single/2026/30939"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

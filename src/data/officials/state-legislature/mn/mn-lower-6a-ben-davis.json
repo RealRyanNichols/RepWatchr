@@ -1,0 +1,60 @@
+{
+  "id": "ben-davis",
+  "name": "Ben Davis",
+  "firstName": "Ben",
+  "lastName": "Davis",
+  "photo": "/images/officials/state-legislature/mn/ben-davis.jpg",
+  "photoSourceUrl": "https://www.house.mn.gov/hinfo/memberimgls94/06A.gif?v=112221",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-6A",
+  "jurisdiction": "Minnesota House of Representatives",
+  "county": [
+    "Minnesota"
+  ],
+  "termStart": "2023-01-03",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Centennial Office Building 658 Cedar St., Second Floor, St. Paul, MN 55155",
+    "phone": "651-296-0172",
+    "email": "rep.ben.davis@house.mn.gov",
+    "website": "https://www.house.mn.gov/members/profile/15594"
+  },
+  "bio": "Ben Davis serves as State Representative for Minnesota House of Representatives District 6A. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "MN",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.house.mn.gov/members/profile/15594"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/mn/legislature/Ben-Davis-f5597924-50c0-4bfc-bd63-3d3b814274f8.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://www.house.mn.gov/hinfo/memberimgls94/06A.gif?v=112221"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Ben_Davis"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Ben_Davis_(Minnesota_politician)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/207769/ben-davis"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.house.leg.state.mn.us/members/hmem.asp"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

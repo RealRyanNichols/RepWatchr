@@ -1,0 +1,69 @@
+{
+  "id": "henri-martin",
+  "name": "Henri Martin",
+  "firstName": "Henri",
+  "lastName": "Martin",
+  "party": "R",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-31",
+  "jurisdiction": "Connecticut Senate",
+  "county": [
+    "Connecticut"
+  ],
+  "termStart": "2015-01-07",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 2403, Legislative Office Building 300 Capitol Ave., Hartford, CT 06106",
+    "phone": "860-240-8800",
+    "email": "henri.martin@cga.ct.gov",
+    "website": "https://cga.ct.gov/asp/CGABillStatus/CGAMemberBills.asp?dist_code=%27S31%27&dist_name=Martin,%20Henri"
+  },
+  "bio": "Henri Martin serves as State Senator for Connecticut Senate District 31. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "CT",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://cga.ct.gov/asp/CGABillStatus/CGAMemberBills.asp?dist_code=%27S31%27&dist_name=Martin,%20Henri"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ct/legislature/Henri-Martin-ca8be710-988a-4415-bc37-6d3a92d1afcd.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "ftp://ftp.cga.ct.gov/pub/data/LegislatorDatabase.csv"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Henri_Martin"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ctsenaterepublicans.com/home-Martin"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ctsenaterepublicans.com/home-Martin/"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Henri_Martin_(American_politician)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://henrimartinrealestate.com"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/142336/henri-martin"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/henri-martin-9274b461"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

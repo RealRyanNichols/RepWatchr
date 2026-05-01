@@ -1,0 +1,49 @@
+{
+  "id": "brian-hodgers",
+  "name": "Brian Hodgers",
+  "firstName": "Brian",
+  "lastName": "Hodgers",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-32",
+  "jurisdiction": "Florida House of Representatives",
+  "county": [
+    "Florida"
+  ],
+  "termStart": "2025-06-10",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 1401, The Capitol 402 S. Monroe St., Tallahassee, FL 32399",
+    "phone": "850-717-5032",
+    "email": "brian.hodgers@flhouse.gov",
+    "website": "https://www.flhouse.gov/Sections/Representatives/custom/details.aspx?MemberId=5064&LegislativeTermId=91"
+  },
+  "bio": "Brian Hodgers serves as State Representative for Florida House of Representatives District 32. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "FL",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.flhouse.gov/Sections/Representatives/custom/details.aspx?MemberId=5064&LegislativeTermId=91"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/fl/legislature/Brian-Hodgers-4737f2dc-8241-4329-85fc-59a9c405d7b6.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Brian_Hodgers"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.flhouse.gov/Sections/Representatives/details.aspx?MemberId=5064"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/brianhodgers"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

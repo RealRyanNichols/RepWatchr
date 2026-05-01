@@ -1,0 +1,60 @@
+{
+  "id": "dave-mccormick",
+  "name": "Dave McCormick",
+  "firstName": "Dave",
+  "lastName": "McCormick",
+  "photo": "/images/officials/state-legislature/wv/dave-mccormick.jpg",
+  "photoSourceUrl": "https://www.wvlegislature.gov/images/members/2025/house/mccormick_david.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "Delegate",
+  "district": "HD-82",
+  "jurisdiction": "West Virginia House of Delegates",
+  "county": [
+    "West Virginia"
+  ],
+  "termStart": "2024-12-01",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "State Capitol Room 231E, Complex, Building 1 1900 Kanawha Blvd. East, Charleston, WV 25305",
+    "phone": "304-340-3127",
+    "email": "david.mccormick@wvhouse.gov",
+    "website": "https://www.wvlegislature.gov/House/lawmaker.cfm?member=Delegate%20McCormick"
+  },
+  "bio": "Dave McCormick serves as Delegate for West Virginia House of Delegates District 82. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "WV",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.wvlegislature.gov/House/lawmaker.cfm?member=Delegate%20McCormick"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/wv/legislature/Dave-McCormick-297732cd-3e12-4ce1-b6ca-7e046d8b3e46.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://www.wvlegislature.gov/images/members/2025/house/mccormick_david.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/David_McCormick_(West_Virginia)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/David_McCormick_(West_Virginia_politician)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/214522/david-mccormick"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/david-mccormick-a0ba92172"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

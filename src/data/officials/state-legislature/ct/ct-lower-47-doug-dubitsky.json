@@ -1,0 +1,65 @@
+{
+  "id": "doug-dubitsky",
+  "name": "Doug Dubitsky",
+  "firstName": "Doug",
+  "lastName": "Dubitsky",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-47",
+  "jurisdiction": "Connecticut House of Representatives",
+  "county": [
+    "Connecticut"
+  ],
+  "termStart": "2015-01-07",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 4200, Legislative Office Building 300 Capitol Ave., Hartford, CT 06106",
+    "phone": "860-240-8700",
+    "email": "doug.dubitsky@housegop.ct.gov",
+    "website": "https://cga.ct.gov/asp/CGABillStatus/CGAMemberBills.asp?dist_code=%27047%27&dist_name=Dubitsky,%20Doug"
+  },
+  "bio": "Doug Dubitsky serves as State Representative for Connecticut House of Representatives District 47. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "CT",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://cga.ct.gov/asp/CGABillStatus/CGAMemberBills.asp?dist_code=%27047%27&dist_name=Dubitsky,%20Doug"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ct/legislature/Doug-Dubitsky-2342cde8-078f-4dd8-8879-f9fdaa036a94.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "ftp://ftp.cga.ct.gov/pub/data/LegislatorDatabase.csv"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Doug_Dubitsky"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Doug_Dubitsky"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/126628/doug-dubitsky"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.cthousegop.com/Dubitsky/main"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.cthousegop.com/Dubitsky/main/"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/doug-dubitsky-esq-26188811"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

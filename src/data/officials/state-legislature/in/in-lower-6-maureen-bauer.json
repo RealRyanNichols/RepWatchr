@@ -1,0 +1,69 @@
+{
+  "id": "maureen-bauer",
+  "name": "Maureen Bauer",
+  "firstName": "Maureen",
+  "lastName": "Bauer",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-6",
+  "jurisdiction": "Indiana House of Representatives",
+  "county": [
+    "Indiana"
+  ],
+  "termStart": "2020-11-04",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "200 W. Washington St., Indianapolis, IN 46204",
+    "phone": "800-382-9842",
+    "email": "h06@iga.in.gov",
+    "website": "https://iga.in.gov/legislative/2021/legislators/legislator_maureen_bauer_1"
+  },
+  "bio": "Maureen Bauer serves as State Representative for Indiana House of Representatives District 6. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "IN",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://iga.in.gov/legislative/2021/legislators/legislator_maureen_bauer_1"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/in/legislature/Maureen-Bauer-7e493895-2f49-4a56-a4a3-f888373769b5.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://api.iga.in.gov/2021/legislators/maureen_bauer_1"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Maureen_Bauer"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Maureen_Bauer"
+    },
+    {
+      "title": "Public source",
+      "url": "https://iga.in.gov/legislative/2021/legislators/legislator_maureen_bauer_1/"
+    },
+    {
+      "title": "Public source",
+      "url": "https://iga.in.gov/legislative/2024/legislators/legislator_maureen_bauer_1"
+    },
+    {
+      "title": "Public source",
+      "url": "https://iga.in.gov/legislative/2026/legislators/legislator_maureen_bauer_1"
+    },
+    {
+      "title": "Public source",
+      "url": "https://indianahousedemocrats.org/members"
+    },
+    {
+      "title": "Public source",
+      "url": "https://indianahousedemocrats.org/members/maureen-bauer"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

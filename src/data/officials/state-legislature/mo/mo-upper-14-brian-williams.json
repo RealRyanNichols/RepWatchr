@@ -1,0 +1,61 @@
+{
+  "id": "brian-williams",
+  "name": "Brian Williams",
+  "firstName": "Brian",
+  "lastName": "Williams",
+  "party": "D",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-14",
+  "jurisdiction": "Missouri Senate",
+  "county": [
+    "Missouri"
+  ],
+  "termStart": "2019-01-09",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 428A, 201 W. Capitol Ave., Jefferson City, MO 65101",
+    "phone": "573-751-4106",
+    "email": "brian.williams@senate.mo.gov",
+    "website": "https://www.senate.mo.gov/mem14"
+  },
+  "bio": "Brian Williams serves as State Senator for Missouri Senate District 14. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "MO",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.senate.mo.gov/mem14"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/mo/legislature/Brian-Williams-4f5340d3-7637-4eb2-be68-890073af50af.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Brian_Williams_(Missouri)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Brian_Williams_(Missouri_politician)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.senate.mo.gov/senators-listing"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.senate.mo.gov/senators-listing/"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.senate.mo.gov/Senators/Member/14"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.senate.mo.gov/Senators/Member?id=34"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

@@ -1,0 +1,45 @@
+{
+  "id": "cody-huneycutt",
+  "name": "Cody Huneycutt",
+  "firstName": "Cody",
+  "lastName": "Huneycutt",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-67",
+  "jurisdiction": "North Carolina House of Representatives",
+  "county": [
+    "North Carolina"
+  ],
+  "termStart": "2025-01-01",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 537, Legislative Office Building 300 N. Salisbury St., Raleigh, NC 27603",
+    "phone": "919-733-5908",
+    "email": "cody.huneycutt@ncleg.gov",
+    "website": "https://www.ncleg.gov/Members/Biography/H/833"
+  },
+  "bio": "Cody Huneycutt serves as State Representative for North Carolina House of Representatives District 67. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "NC",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.ncleg.gov/Members/Biography/H/833"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/nc/legislature/Cody-Huneycutt-702adc2f-f401-4ab4-ac8e-8fcf1a14376b.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Cody_Huneycutt"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/cody-huneycutt-538495a9"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

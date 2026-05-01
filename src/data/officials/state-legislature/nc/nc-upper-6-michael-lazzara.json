@@ -1,0 +1,60 @@
+{
+  "id": "michael-lazzara",
+  "name": "Michael Lazzara",
+  "firstName": "Michael",
+  "lastName": "Lazzara",
+  "photo": "/images/officials/state-legislature/nc/michael-lazzara.jpg",
+  "photoSourceUrl": "https://www.ncleg.gov/Members/MemberImage/S/426/Low",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-6",
+  "jurisdiction": "North Carolina Senate",
+  "county": [
+    "North Carolina"
+  ],
+  "termStart": "2021-01-01",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 300-C, Legislative Office Building 300 N. Salisbury St., Raleigh, NC 27603",
+    "phone": "919-715-3034",
+    "email": "michael.lazzara@ncleg.gov",
+    "website": "https://www.ncleg.gov/Members/Biography/S/426"
+  },
+  "bio": "Michael Lazzara serves as State Senator for North Carolina Senate District 6. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "NC",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.ncleg.gov/Members/Biography/S/426"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/nc/legislature/Michael-A-Lazzara-f0121b49-81cc-45f5-98e1-1fbeee882c81.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://www.ncleg.gov/Members/MemberImage/S/426/Low"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Michael_Lazzara"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/73981/michael-lazzara"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/michael-lazzara-92052555"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.ncleg.gov/Members/MemberTable/S"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

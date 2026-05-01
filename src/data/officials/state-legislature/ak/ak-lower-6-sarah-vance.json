@@ -1,0 +1,72 @@
+{
+  "id": "sarah-vance",
+  "name": "Sarah Vance",
+  "firstName": "Sarah",
+  "lastName": "Vance",
+  "photo": "/images/officials/state-legislature/ak/sarah-vance.jpg",
+  "photoSourceUrl": "http://akleg.gov/images/legislators/450x600/VAN.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-6",
+  "jurisdiction": "Alaska House of Representatives",
+  "county": [
+    "Alaska"
+  ],
+  "termStart": "2023-01-17",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "State Capitol Room 114, 120 4th St., Juneau, AK 99801",
+    "phone": "907-465-2689",
+    "email": "representative.sarah.vance@akleg.gov",
+    "website": "https://akhousemajority.com/rep-vance/"
+  },
+  "bio": "Sarah Vance serves as State Representative for Alaska House of Representatives District 6. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "AK",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://akhousemajority.com/rep-vance/"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ak/legislature/Sarah-Vance-e8756722-e9e9-4246-95e3-13019cb3bd50.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "http://akleg.gov/images/legislators/450x600/VAN.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://akhousemajority.com/rep-vance"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Sarah_Vance_(Alaska)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Sarah_Vance_(politician)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://w3.akleg.gov"
+    },
+    {
+      "title": "Public source",
+      "url": "https://w3.akleg.gov/"
+    },
+    {
+      "title": "member list page",
+      "url": "https://www.akleg.gov/basis/mbr_info.asp?session=33"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.akleg.gov/basis/Member/Detail/33?code=VAN"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

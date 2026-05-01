@@ -1,0 +1,57 @@
+{
+  "id": "wandy-soto",
+  "name": "Wandy Soto",
+  "firstName": "Wandy",
+  "lastName": "Soto",
+  "party": "NP",
+  "level": "state",
+  "position": "Territorial Senator",
+  "district": "7",
+  "jurisdiction": "Puerto Rico Senate",
+  "county": [
+    "Puerto Rico"
+  ],
+  "termStart": "2021-01-02",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Senado, El Capitolio P.O. Box 9023431, San Juan, PR 00902",
+    "phone": "787-724-2030",
+    "email": "wsoto@senado.pr.gov",
+    "website": "https://senado.pr.gov/senators/hon-wanda-m-soto-tolentino"
+  },
+  "bio": "Wandy Soto serves as Territorial Senator for Puerto Rico Senate District 7. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "PR",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://senado.pr.gov/senators/hon-wanda-m-soto-tolentino"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/pr/legislature/Wanda-Soto-7b837260-0288-4b92-823e-1c07dc2f49d3.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Wanda_Soto"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Wanda_Soto_Tolentino"
+    },
+    {
+      "title": "Public source",
+      "url": "https://senado.pr.gov/index.cfm?module=senadores"
+    },
+    {
+      "title": "Public source",
+      "url": "https://sutra.oslpr.org/osl/esutra/AdmLegisladorReg.aspx?rid=697"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.senado.pr.gov/hon-wanda-m-soto-tolentino"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

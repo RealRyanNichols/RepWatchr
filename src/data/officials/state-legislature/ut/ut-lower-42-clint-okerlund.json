@@ -1,0 +1,57 @@
+{
+  "id": "clint-okerlund",
+  "name": "Clint Okerlund",
+  "firstName": "Clint",
+  "lastName": "Okerlund",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-42",
+  "jurisdiction": "Utah House of Representatives",
+  "county": [
+    "Utah"
+  ],
+  "termStart": "2025-01-01",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "P.O. Box 145030 350 N. State St., Suite 350, Salt Lake City, UT 84114",
+    "phone": "801-538-1029",
+    "email": "cokerlund@le.utah.gov",
+    "website": "https://house.utleg.gov/rep/OKERLC/"
+  },
+  "bio": "Clint Okerlund serves as State Representative for Utah House of Representatives District 42. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "UT",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://house.utleg.gov/rep/OKERLC/"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ut/legislature/Clint-Okerlund-12581dac-c07b-40a8-b309-3c9ea167f913.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Clint_Okerlund"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Clinton_Okerlund"
+    },
+    {
+      "title": "Public source",
+      "url": "https://house.utleg.gov/rep/OKERLC"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/214324/clint-okerlund"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/clint-okerlund-6a6b1130"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

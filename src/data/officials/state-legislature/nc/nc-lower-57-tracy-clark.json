@@ -1,0 +1,60 @@
+{
+  "id": "tracy-clark",
+  "name": "Tracy Clark",
+  "firstName": "Tracy",
+  "lastName": "Clark",
+  "photo": "/images/officials/state-legislature/nc/tracy-clark.jpg",
+  "photoSourceUrl": "https://storage.googleapis.com/enview-public-general/legislative-people-photos/148017.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-57",
+  "jurisdiction": "North Carolina House of Representatives",
+  "county": [
+    "North Carolina"
+  ],
+  "termStart": "2024-08-06",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 1213, North Carolina Legislative Building 16 W. Jones St., Raleigh, NC 27601",
+    "phone": "919-733-5781",
+    "email": "tracy.clark@ncleg.gov",
+    "website": "https://www.ncleg.gov/Members/Biography/H/822"
+  },
+  "bio": "Tracy Clark serves as State Representative for North Carolina House of Representatives District 57. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "NC",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.ncleg.gov/Members/Biography/H/822"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/nc/legislature/Tracy-Clark-47d80aae-1c7b-4330-96bd-76db7fe8b060.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://storage.googleapis.com/enview-public-general/legislative-people-photos/148017.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Tracy_Clark"
+    },
+    {
+      "title": "Public source",
+      "url": "https://tracyclarkfornc.com/about"
+    },
+    {
+      "title": "Public source",
+      "url": "https://tracyclarkfornc.com/about-me"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/tracyboyerclark"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

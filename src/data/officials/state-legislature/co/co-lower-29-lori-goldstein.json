@@ -1,0 +1,49 @@
+{
+  "id": "lori-goldstein",
+  "name": "Lori Goldstein",
+  "firstName": "Lori",
+  "lastName": "Goldstein",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-29",
+  "jurisdiction": "Colorado House of Representatives",
+  "county": [
+    "Colorado"
+  ],
+  "termStart": "2026-01-14",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "State Capitol Room 307, Colorado  Building 200 E. Colfax Ave., Denver, CO 80203",
+    "phone": "303-866-2843",
+    "email": "lori.goldstein.house@coleg.gov",
+    "website": "https://leg.colorado.gov/legislators/lori-goldstein"
+  },
+  "bio": "Lori Goldstein serves as State Representative for Colorado House of Representatives District 29. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "CO",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://leg.colorado.gov/legislators/lori-goldstein"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/co/legislature/Lori-Goldstein-8de5b6ec-a488-4f1f-b96d-d78b90cb7fe7.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Lori_Goldstein"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Lori_Goldstein_(politician)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/lori-bryner-goldstein-50420765"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

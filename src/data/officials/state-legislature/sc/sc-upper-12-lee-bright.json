@@ -1,0 +1,57 @@
+{
+  "id": "lee-bright",
+  "name": "Lee Bright",
+  "firstName": "Lee",
+  "lastName": "Bright",
+  "party": "R",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-12",
+  "jurisdiction": "South Carolina Senate",
+  "county": [
+    "South Carolina"
+  ],
+  "termStart": "2026-01-05",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 608, Gressette Building, Columbia, SC 29201",
+    "phone": "803-212-6000",
+    "email": "leebright@scsenate.gov",
+    "website": "https://www.scstatehouse.gov/member.php?code=0193181795"
+  },
+  "bio": "Lee Bright serves as State Senator for South Carolina Senate District 12. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "SC",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.scstatehouse.gov/member.php?code=0193181795"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/sc/legislature/Lee-Bright-3ebbdeb2-9bbf-41d3-8175-2d4e901cb9d1.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Lee_Bright"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Lee_Bright"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/47863/lee-bright-iii"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/lee-bright-03a25646"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.scstatehouse.gov/member.php?chamber=S"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

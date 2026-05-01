@@ -1,0 +1,72 @@
+{
+  "id": "linda-gould",
+  "name": "Linda Gould",
+  "firstName": "Linda",
+  "lastName": "Gould",
+  "photo": "/images/officials/state-legislature/nh/linda-gould.jpg",
+  "photoSourceUrl": "https://storage.googleapis.com/enview-dev-public-general/legislative-people-photos/50192.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-Hillsborough 2",
+  "jurisdiction": "New Hampshire House of Representatives",
+  "county": [
+    "New Hampshire"
+  ],
+  "termStart": "2022-12-07",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "State House 107 N. Main St., Concord, NH 03301",
+    "phone": "603-271-3661",
+    "email": "linda.gould@gc.nh.gov",
+    "website": "https://gc.nh.gov/house/members/member.aspx?member=377299"
+  },
+  "bio": "Linda Gould serves as State Representative for New Hampshire House of Representatives District Hillsborough 2. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "NH",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://gc.nh.gov/house/members/member.aspx?member=377299"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/nh/legislature/Linda-Gould-40ae4adb-2124-47ca-82b5-9eee794af4a2.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://storage.googleapis.com/enview-dev-public-general/legislative-people-photos/50192.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Linda_Gould"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Linda_Gould"
+    },
+    {
+      "title": "Public source",
+      "url": "https://gencourt.state.nh.us/downloads/Members.txt"
+    },
+    {
+      "title": "Public source",
+      "url": "https://gencourt.state.nh.us/downloads/members.txt"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/154475/linda-gould"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.gencourt.state.nh.us/downloads/Members.txt"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.gencourt.state.nh.us/house/members/member.aspx?member=377299"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

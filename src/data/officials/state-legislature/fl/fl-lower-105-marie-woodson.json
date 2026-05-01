@@ -1,0 +1,65 @@
+{
+  "id": "marie-woodson",
+  "name": "Marie Woodson",
+  "firstName": "Marie",
+  "lastName": "Woodson",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-105",
+  "jurisdiction": "Florida House of Representatives",
+  "county": [
+    "Florida"
+  ],
+  "termStart": "2022-11-08",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 223, The Capitol 402 S. Monroe St., Tallahassee, FL 32399",
+    "phone": "850-717-5105",
+    "email": "marie.woodson@flhouse.gov",
+    "website": "https://myfloridahouse.gov/Sections/Representatives/details.aspx?MemberId=4789&LegislativeTermId=90"
+  },
+  "bio": "Marie Woodson serves as State Representative for Florida House of Representatives District 105. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "FL",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://myfloridahouse.gov/Sections/Representatives/details.aspx?MemberId=4789&LegislativeTermId=90"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/fl/legislature/Marie-Paule-Woodson-5eb39c7e-3582-4269-a012-7a88c54623c9.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Marie_Woodson"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Marie_Woodson"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/194484/marie-woodson"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.flhouse.gov/Sections/Representatives/details.aspx?MemberId=4789"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/marie-woodson-582b9827"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.myfloridahouse.gov/Sections/Representatives/details.aspx?MemberId=4789"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.myfloridahouse.gov/Sections/Representatives/details.aspx?MemberId=4789&LegislativeTermId=89"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

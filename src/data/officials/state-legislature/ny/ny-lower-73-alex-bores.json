@@ -1,0 +1,68 @@
+{
+  "id": "alex-bores",
+  "name": "Alex Bores",
+  "firstName": "Alex",
+  "lastName": "Bores",
+  "photo": "/images/officials/state-legislature/ny/alex-bores.jpg",
+  "photoSourceUrl": "https://assembly.state.ny.us/write/upload/member_files/073/headshot/073.jpg?hst=1672573990",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "Assemblymember",
+  "district": "HD-73",
+  "jurisdiction": "New York State Assembly",
+  "county": [
+    "New York"
+  ],
+  "termStart": "2023-01-01",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 431, Legislative Office Building, Albany, NY 12248",
+    "phone": "518-455-4794",
+    "email": "boresa@nyassembly.gov",
+    "website": "https://assembly.state.ny.us/mem/Alex-Bores"
+  },
+  "bio": "Alex Bores serves as Assemblymember for New York State Assembly District 73. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "NY",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://assembly.state.ny.us/mem/Alex-Bores"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ny/legislature/Alex-Bores-9c986c4c-5371-4b77-b095-5a7283a93729.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://assembly.state.ny.us/write/upload/member_files/073/headshot/073.jpg?hst=1672573990"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Alex_Bores"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Alex_Bores"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/207522/alex-bores"
+    },
+    {
+      "title": "Public source",
+      "url": "https://nyassembly.gov/mem/Alex-Bores"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.alexbores.nyc"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/alexbores"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

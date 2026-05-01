@@ -1,0 +1,57 @@
+{
+  "id": "jennifer-conlin",
+  "name": "Jennifer Conlin",
+  "firstName": "Jennifer",
+  "lastName": "Conlin",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-48",
+  "jurisdiction": "Michigan House of Representatives",
+  "county": [
+    "Michigan"
+  ],
+  "termStart": "2023-01-01",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room N-897, Anderson House Office Building 124 N. Capitol Ave., Lansing, MI 48933",
+    "phone": "517-373-7557",
+    "email": "jenniferconlin@house.mi.gov",
+    "website": "https://housedems.com/Jennifer-Conlin/"
+  },
+  "bio": "Jennifer Conlin serves as State Representative for Michigan House of Representatives District 48. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "MI",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://housedems.com/Jennifer-Conlin/"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/mi/legislature/Jennifer-Conlin-99ac6698-e0f9-4ddf-9df6-2d82aa70468f.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Jennifer_Conlin"
+    },
+    {
+      "title": "Public source",
+      "url": "https://housedems.com/Jennifer-Conlin"
+    },
+    {
+      "title": "Public source",
+      "url": "https://housedems.com/jennifer-conlin/about"
+    },
+    {
+      "title": "Members List Page",
+      "url": "https://www.house.mi.gov/AllRepresentatives"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/jennifer-conlin-543756"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

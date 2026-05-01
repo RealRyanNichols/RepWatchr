@@ -1,0 +1,46 @@
+{
+  "id": "dale-caldwell",
+  "name": "Dale Caldwell",
+  "firstName": "Dale",
+  "lastName": "Caldwell",
+  "photo": "/images/officials/state-executive/nj/dale-caldwell.jpg",
+  "photoSourceUrl": "https://www.nj.gov/governor/library/secondary/ltgov_LGDaleCaldwell_new.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "Lieutenant Governor",
+  "district": "New Jersey",
+  "jurisdiction": "New Jersey statewide public office",
+  "county": [
+    "New Jersey"
+  ],
+  "termStart": "2026-01-20",
+  "termEnd": "2030-01-15",
+  "contactInfo": {
+    "office": "P.O. Box 001; Trenton, NJ 08625",
+    "website": "https://www.nj.gov/governor/admin/ltgovernor/"
+  },
+  "bio": "Dale Caldwell is listed as Lieutenant Governor for New Jersey. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "NJ",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.nj.gov/governor/admin/ltgovernor/"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/nj/executive/Dale-Caldwell-45caac41-0f71-4243-99cc-bb18b7b82386.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://www.nj.gov/governor/library/secondary/ltgov_LGDaleCaldwell_new.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Dale_Caldwell"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

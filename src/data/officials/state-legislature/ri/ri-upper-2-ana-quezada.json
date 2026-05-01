@@ -1,0 +1,72 @@
+{
+  "id": "ana-quezada",
+  "name": "Ana Quezada",
+  "firstName": "Ana",
+  "lastName": "Quezada",
+  "photo": "/images/officials/state-legislature/ri/ana-quezada.jpg",
+  "photoSourceUrl": "http://www.rilegislature.gov/senators/pictures/quezada.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-2",
+  "jurisdiction": "Rhode Island Senate",
+  "county": [
+    "Rhode Island"
+  ],
+  "termStart": "2017-01-03",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "82 Smith St., Providence, RI 02903",
+    "phone": "401-222-3580",
+    "email": "sen-quezada@rilegislature.gov",
+    "website": "https://www.rilegislature.gov/senators/algiere/default.aspx"
+  },
+  "bio": "Ana Quezada serves as State Senator for Rhode Island Senate District 2. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "RI",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.rilegislature.gov/senators/algiere/default.aspx"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ri/legislature/Ana-B-Quezada-a857e27b-7ced-43ad-bd08-a954e5f781ac.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "http://www.rilegislature.gov/senators/pictures/quezada.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Ana_Quezada"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Ana_Quezada"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/125897/ana-quezada"
+    },
+    {
+      "title": "Public source",
+      "url": "https://webserver.rilegislature.gov/Email/SenEmailListDistrict.asp"
+    },
+    {
+      "title": "Public source",
+      "url": "https://webserver.rilin.state.ri.us/Email/SenEmailListDistrict.asp"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/ana-quezada-0a649325"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.rilegislature.gov/senators/Quezada/default.aspx"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

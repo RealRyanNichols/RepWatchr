@@ -1,0 +1,60 @@
+{
+  "id": "fred-girod",
+  "name": "Fred Girod",
+  "firstName": "Fred",
+  "lastName": "Girod",
+  "photo": "/images/officials/state-legislature/or/fred-girod.jpg",
+  "photoSourceUrl": "http://www.oregonlegislature.gov/senate/MemberPhotos/girod.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-9",
+  "jurisdiction": "Oregon Senate",
+  "county": [
+    "Oregon"
+  ],
+  "termStart": "",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room S-323, 900 Court St. NE, Salem, OR 97301",
+    "phone": "503-986-1709",
+    "email": "sen.fredgirod@oregonlegislature.gov",
+    "website": "https://www.oregonlegislature.gov/girod"
+  },
+  "bio": "Fred Girod serves as State Senator for Oregon Senate District 9. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "OR",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.oregonlegislature.gov/girod"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/or/legislature/Fred-Girod-aba97bd3-cdf6-4860-9b2c-cbd62e825e79.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "http://www.oregonlegislature.gov/senate/MemberPhotos/girod.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://api.oregonlegislature.gov/odata/odataservice.svc/LegislativeSessions('2022R1')/Legislators"
+    },
+    {
+      "title": "Public source",
+      "url": "https://api.oregonlegislature.gov/odata/odataservice.svc/LegislativeSessions('2023R1')/Legislators"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Fred_Girod"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Fred_Girod"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

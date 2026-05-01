@@ -1,0 +1,57 @@
+{
+  "id": "m-d-rahman",
+  "name": "M.D. Rahman",
+  "firstName": "M.D.",
+  "lastName": "Rahman",
+  "party": "D",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-4",
+  "jurisdiction": "Connecticut Senate",
+  "county": [
+    "Connecticut"
+  ],
+  "termStart": "2023-01-04",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 2100, Legislative Office Building 300 Capitol Ave., Hartford, CT 06106",
+    "phone": "860-240-5302",
+    "email": "md.rahman@cga.ct.gov",
+    "website": "https://www.senatedems.ct.gov/Rahman"
+  },
+  "bio": "M.D. Rahman serves as State Senator for Connecticut Senate District 4. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "CT",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.senatedems.ct.gov/Rahman"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ct/legislature/MD-Rahman-277414ca-35b8-41dd-ae2e-e99fe9ecdb9b.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "ftp://ftp.cga.ct.gov/pub/data/LegislatorDatabase.csv"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/MD_Rahman"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/md-rahman-a10923196"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.senatedems.ct.gov/rahman"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.senatedems.ct.gov/senator/md-rahman"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

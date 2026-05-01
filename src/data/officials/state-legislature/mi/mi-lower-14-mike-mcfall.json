@@ -1,0 +1,65 @@
+{
+  "id": "mike-mcfall",
+  "name": "Mike McFall",
+  "firstName": "Mike",
+  "lastName": "McFall",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-14",
+  "jurisdiction": "Michigan House of Representatives",
+  "county": [
+    "Michigan"
+  ],
+  "termStart": "2025-01-01",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room S-693, Anderson House Office Building 124 N. Capitol Ave., Lansing, MI 48933",
+    "phone": "517-373-0140",
+    "email": "mikemcfall@house.mi.gov",
+    "website": "https://housedems.com/Mike-McFall/"
+  },
+  "bio": "Mike McFall serves as State Representative for Michigan House of Representatives District 14. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "MI",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://housedems.com/Mike-McFall/"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/mi/legislature/Mike-McFall-b34263be-1f2e-49db-a261-b30e76ba790a.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Mike_McFall"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Mike_McFall"
+    },
+    {
+      "title": "Public source",
+      "url": "https://housedems.com/Mike-McFall"
+    },
+    {
+      "title": "Public source",
+      "url": "https://housedems.com/mike-mcfall/about"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/206541/mike-mcfall"
+    },
+    {
+      "title": "Members List Page",
+      "url": "https://www.house.mi.gov/AllRepresentatives"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/mcmcfall"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

@@ -1,0 +1,72 @@
+{
+  "id": "don-mayhew",
+  "name": "Don Mayhew",
+  "firstName": "Don",
+  "lastName": "Mayhew",
+  "photo": "/images/officials/state-legislature/mo/don-mayhew.jpg",
+  "photoSourceUrl": "https://house.mo.gov/MemberPhoto.aspx?id=2082",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-124",
+  "jurisdiction": "Missouri House of Representatives",
+  "county": [
+    "Missouri"
+  ],
+  "termStart": "2023-01-04",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 412-B, 201 W. Capitol Ave., Jefferson City, MO 65101",
+    "phone": "573-751-3604",
+    "email": "don.mayhew@house.mo.gov",
+    "website": "https://house.mo.gov/MemberDetails.aspx?district=124"
+  },
+  "bio": "Don Mayhew serves as State Representative for Missouri House of Representatives District 124. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "MO",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://house.mo.gov/MemberDetails.aspx?district=124"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/mo/legislature/Don-Mayhew-af64f0a2-f3ff-4c6d-b24f-62c3941d1da4.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://house.mo.gov/MemberPhoto.aspx?id=2082"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Don_Mayhew_(Missouri)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://house.mo.gov/MemberDetails.aspx?year=2021&code=R&district=121"
+    },
+    {
+      "title": "Public source",
+      "url": "https://house.mo.gov/MemberDetails.aspx?year=2023&code=R&district=124"
+    },
+    {
+      "title": "Public source",
+      "url": "https://house.mo.gov/MemberGridCluster.aspx"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/183326/don-mayhew"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.house.mo.gov/MemberDetails.aspx?district=121"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/donald-mayhew-ab383a2b"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

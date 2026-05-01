@@ -1,0 +1,72 @@
+{
+  "id": "lindsey-lapointe",
+  "name": "Lindsey LaPointe",
+  "firstName": "Lindsey",
+  "lastName": "LaPointe",
+  "photo": "/images/officials/state-legislature/il/lindsey-lapointe.jpg",
+  "photoSourceUrl": "https://cdn.ilga.gov/assets/img/members/{7447C9D9-48D0-457E-BDC9-847FB8D35DB5}.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-19",
+  "jurisdiction": "Illinois House of Representatives",
+  "county": [
+    "Illinois"
+  ],
+  "termStart": "2019-07-24",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 275-S, Stratton Office Building, Springfield, IL 62706",
+    "phone": "217-782-8400",
+    "email": "info@replapointe.com",
+    "website": "https://ilga.gov/house/Rep.asp?GA=101&MemberID=2771"
+  },
+  "bio": "Lindsey LaPointe serves as State Representative for Illinois House of Representatives District 19. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "IL",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://ilga.gov/house/Rep.asp?GA=101&MemberID=2771"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/il/legislature/Lindsey-LaPointe-ea4595af-64f9-4d91-9c12-48accdc04ff8.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://cdn.ilga.gov/assets/img/members/{7447C9D9-48D0-457E-BDC9-847FB8D35DB5}.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Lindsey_LaPointe"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Lindsey_LaPointe"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ilga.gov/house/default.asp?GA=101"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ilga.gov/house/default.asp?GA=102"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ilga.gov/house/default.asp?GA=103"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ilga.gov/house/Rep.asp?GA=102&MemberID=2972"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ilga.gov/house/Rep.asp?GA=103&MemberID=3163"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

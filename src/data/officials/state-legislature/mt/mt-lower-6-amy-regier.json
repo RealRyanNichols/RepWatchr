@@ -1,0 +1,57 @@
+{
+  "id": "amy-regier",
+  "name": "Amy Regier",
+  "firstName": "Amy",
+  "lastName": "Regier",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-6",
+  "jurisdiction": "Montana House of Representatives",
+  "county": [
+    "Montana"
+  ],
+  "termStart": "2021-01-04",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Capitol Building, 1301 E. 6th Ave. P.O. Box 200400, Helena, MT 59620",
+    "phone": "406-444-4800",
+    "email": "amy.regier@legmt.gov",
+    "website": "https://leg.mt.gov/legislator-information/roster/individual/6891"
+  },
+  "bio": "Amy Regier serves as State Representative for Montana House of Representatives District 6. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "MT",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://leg.mt.gov/legislator-information/roster/individual/6891"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/mt/legislature/Amy-Regier-817877aa-a3ac-40a7-9f32-f40204840abf.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Amy_Regier"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Amy_Regier"
+    },
+    {
+      "title": "Public source",
+      "url": "https://leg.mt.gov/legislator-information/roster/individual/7578"
+    },
+    {
+      "title": "Public source",
+      "url": "https://legislators.legmt.gov/#/legislator/59"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.legmt.gov/legislators/1426"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

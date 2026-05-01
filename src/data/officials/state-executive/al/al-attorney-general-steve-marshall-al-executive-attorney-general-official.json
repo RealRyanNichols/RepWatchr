@@ -1,0 +1,40 @@
+{
+  "id": "steve-marshall-al-executive-attorney-general-official",
+  "name": "Steve Marshall",
+  "firstName": "Steve",
+  "lastName": "Marshall",
+  "party": "R",
+  "level": "state",
+  "position": "Attorney General",
+  "district": "Alabama",
+  "jurisdiction": "Alabama statewide public office",
+  "county": [
+    "Alabama"
+  ],
+  "termStart": "2017-02-10",
+  "termEnd": "2027-01-18",
+  "contactInfo": {
+    "office": "501 Washington Avenue; Montgomery, AL 36104",
+    "phone": "334-242-7300",
+    "website": "https://www.alabamaag.gov/"
+  },
+  "bio": "Steve Marshall is listed as Attorney General for Alabama. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "AL",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.alabamaag.gov/"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/al/executive/Steve-Marshall-e6931735-4601-485b-b62d-c88b01a5c93a.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.alabamaag.gov/general-contact/"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

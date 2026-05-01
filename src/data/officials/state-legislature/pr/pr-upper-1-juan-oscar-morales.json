@@ -1,0 +1,45 @@
+{
+  "id": "juan-oscar-morales",
+  "name": "Juan Oscar Morales",
+  "firstName": "Juan Oscar",
+  "lastName": "Morales",
+  "party": "NP",
+  "level": "state",
+  "position": "Territorial Senator",
+  "district": "1",
+  "jurisdiction": "Puerto Rico Senate",
+  "county": [
+    "Puerto Rico"
+  ],
+  "termStart": "2022-09-28",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Senado, El Capitolio P.O. Box 9023431, San Juan, PR 00902",
+    "phone": "787-724-2030",
+    "email": "jumorales@senado.pr.gov",
+    "website": "https://senado.pr.gov/senators/hon-juan-oscar-morales"
+  },
+  "bio": "Juan Oscar Morales serves as Territorial Senator for Puerto Rico Senate District 1. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "PR",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://senado.pr.gov/senators/hon-juan-oscar-morales"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/pr/legislature/Juan-Oscar-Morales-99800ecf-b7d7-43f5-ace4-53a770ee77eb.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Juan_Morales_Rodr%C3%ADguez"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.senado.pr.gov/hon-juan-oscar-morales"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

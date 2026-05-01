@@ -1,0 +1,68 @@
+{
+  "id": "lonnie-paxton",
+  "name": "Lonnie Paxton",
+  "firstName": "Lonnie",
+  "lastName": "Paxton",
+  "photo": "/images/officials/state-legislature/ok/lonnie-paxton.jpg",
+  "photoSourceUrl": "https://oksenate.gov/sites/default/files/paxton.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-23",
+  "jurisdiction": "Oklahoma Senate",
+  "county": [
+    "Oklahoma"
+  ],
+  "termStart": "2016-11-23",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 422, 2300 N. Lincoln Blvd., Oklahoma City, OK 73105",
+    "phone": "405-521-5537",
+    "email": "paxton@oksenate.gov",
+    "website": "https://oksenate.gov/contact-senator?sid=1893"
+  },
+  "bio": "Lonnie Paxton serves as State Senator for Oklahoma Senate District 23. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "OK",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://oksenate.gov/contact-senator?sid=1893"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ok/legislature/Lonnie-Paxton-fe64cfd8-d85e-472e-8761-27b6a3774971.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://oksenate.gov/sites/default/files/paxton.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Lonnie_Paxton"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Lonnie_Paxton"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/12383/lonnie-paxton"
+    },
+    {
+      "title": "Public source",
+      "url": "https://oksenate.gov/Senators/biographies/paxton_bio.aspx"
+    },
+    {
+      "title": "Public source",
+      "url": "https://oksenate.gov/Senators/biographies/paxton_bio.html"
+    },
+    {
+      "title": "Public source",
+      "url": "https://oksenate.gov/senators/lonnie-paxton"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

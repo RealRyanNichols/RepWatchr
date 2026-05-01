@@ -1,0 +1,70 @@
+{
+  "id": "scott-meyer",
+  "name": "Scott Meyer",
+  "firstName": "Scott",
+  "lastName": "Meyer",
+  "photo": "/images/officials/state-legislature/nd/scott-meyer.jpg",
+  "photoSourceUrl": "https://www.ndlegis.gov/sites/default/files/styles/member_list_photo/public/person/photo/scottmeyer2023.jpg?itok=1CtjZ6FW",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-18",
+  "jurisdiction": "North Dakota Senate",
+  "county": [
+    "North Dakota"
+  ],
+  "termStart": "2016-12-01",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "email": "scottmeyer@ndlegis.gov",
+    "website": "https://ndlegis.gov/biography/scott-meyer"
+  },
+  "bio": "Scott Meyer serves as State Senator for North Dakota Senate District 18. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "ND",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://ndlegis.gov/biography/scott-meyer"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/nd/legislature/Scott-Meyer-5bcd9ecd-d547-4336-aa69-b4b258085802.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://www.ndlegis.gov/sites/default/files/styles/member_list_photo/public/person/photo/scottmeyer2023.jpg?itok=1CtjZ6FW"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Scott_Meyer"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Scott_Meyer_(politician)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.legis.nd.gov/assembly/65-2017/members/senate/senator-scott-meyer"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.legis.nd.gov/assembly/66-2019/members/senate/senator-scott-meyer"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.legis.nd.gov/assembly/67-2021/members/members-by-district"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.legis.nd.gov/assembly/67-2021/members/senate/senator-scott-meyer"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/scott-meyer-52a55a33"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

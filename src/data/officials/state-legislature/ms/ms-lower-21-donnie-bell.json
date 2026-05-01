@@ -1,0 +1,64 @@
+{
+  "id": "donnie-bell",
+  "name": "Donnie Bell",
+  "firstName": "Donnie",
+  "lastName": "Bell",
+  "photo": "/images/officials/state-legislature/ms/donnie-bell.jpg",
+  "photoSourceUrl": "https://billstatus.ls.state.ms.us/members/house/bell_(21st).jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-21",
+  "jurisdiction": "Mississippi House of Representatives",
+  "county": [
+    "Mississippi"
+  ],
+  "termStart": "2011-11-11",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "State Capitol Room 400-A, 400 High St., Jackson, MS 39201",
+    "phone": "601-359-3396",
+    "email": "dbell@house.ms.gov",
+    "website": "https://billstatus.ls.state.ms.us/members/house/bell_(21st).xml"
+  },
+  "bio": "Donnie Bell serves as State Representative for Mississippi House of Representatives District 21. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "MS",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://billstatus.ls.state.ms.us/members/house/bell_(21st).xml"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ms/legislature/Donnie-Bell-fd1a4542-8537-4af3-90c8-4052be561c66.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://billstatus.ls.state.ms.us/members/house/bell_(21st).jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Donnie_Bell"
+    },
+    {
+      "title": "Public source",
+      "url": "https://billstatus.ls.state.ms.us/members/hr_membs.xml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Donnie_Bell"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/69899/donnie-bell"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/donnie-bell-7b961a113"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

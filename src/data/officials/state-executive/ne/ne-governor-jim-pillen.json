@@ -1,0 +1,40 @@
+{
+  "id": "jim-pillen",
+  "name": "Jim Pillen",
+  "firstName": "Jim",
+  "lastName": "Pillen",
+  "party": "R",
+  "level": "state",
+  "position": "Governor",
+  "district": "Nebraska",
+  "jurisdiction": "Nebraska statewide public office",
+  "county": [
+    "Nebraska"
+  ],
+  "termStart": "2023-01-05",
+  "termEnd": "2027-01-07",
+  "contactInfo": {
+    "office": "P.O. Box 94848; Lincoln, NE 68509-4848",
+    "phone": "402-471-2244",
+    "website": "https://governor.nebraska.gov/",
+    "socialMedia": {
+      "x": "https://x.com/TeamPillen",
+      "twitter": "https://x.com/TeamPillen"
+    }
+  },
+  "bio": "Jim Pillen is listed as Governor for Nebraska. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "NE",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://governor.nebraska.gov/"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ne/executive/Jim-Pillen-c67c3ac8-3260-44d7-b419-3d8210c4f0bd.yml"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

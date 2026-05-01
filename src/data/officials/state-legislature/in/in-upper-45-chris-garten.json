@@ -1,0 +1,72 @@
+{
+  "id": "chris-garten",
+  "name": "Chris Garten",
+  "firstName": "Chris",
+  "lastName": "Garten",
+  "photo": "/images/officials/state-legislature/in/chris-garten.jpg",
+  "photoSourceUrl": "https://cdn.zephyrcms.com/a2dbf141-af13-4ad7-9e37-78104d7da727/-/progressive/yes/-/format/jpeg/-/scale_crop/200x300/center/-/stretch/off/image.jpeg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-45",
+  "jurisdiction": "Indiana Senate",
+  "county": [
+    "Indiana"
+  ],
+  "termStart": "2018-11-07",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "200 W. Washington St., Indianapolis, IN 46204",
+    "phone": "317-232-9400",
+    "email": "s45@iga.in.gov",
+    "website": "https://iga.in.gov/legislative/2021/legislators/legislator_chris_garten_1"
+  },
+  "bio": "Chris Garten serves as State Senator for Indiana Senate District 45. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "IN",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://iga.in.gov/legislative/2021/legislators/legislator_chris_garten_1"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/in/legislature/Chris-Garten-dc07e0d2-7372-46c2-967c-878ec522879d.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://cdn.zephyrcms.com/a2dbf141-af13-4ad7-9e37-78104d7da727/-/progressive/yes/-/format/jpeg/-/scale_crop/200x300/center/-/stretch/off/image.jpeg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://api.iga.in.gov/2021/legislators/chris_garten_1"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Chris_Garten"
+    },
+    {
+      "title": "Public source",
+      "url": "https://iga.in.gov/legislative/2022/legislators/legislator_chris_garten_1"
+    },
+    {
+      "title": "Public source",
+      "url": "https://iga.in.gov/legislative/2022/legislators/legislator_chris_garten_1/"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/178163/chris-garten"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.indianasenaterepublicans.com/garten"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.indianasenaterepublicans.com/senators"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

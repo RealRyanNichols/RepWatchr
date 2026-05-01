@@ -1,0 +1,69 @@
+{
+  "id": "britnee-timberlake",
+  "name": "Britnee Timberlake",
+  "firstName": "Britnee",
+  "lastName": "Timberlake",
+  "party": "D",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-34",
+  "jurisdiction": "New Jersey Senate",
+  "county": [
+    "New Jersey"
+  ],
+  "termStart": "2024-01-09",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "P.O. Box 068 State House, 145 W. State St., Trenton, NJ 08625",
+    "phone": "609-847-3905",
+    "email": "sentimberlake@njleg.org",
+    "website": "https://www.assemblydems.com/britnee-timberlake/"
+  },
+  "bio": "Britnee Timberlake serves as State Senator for New Jersey Senate District 34. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "NJ",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.assemblydems.com/britnee-timberlake/"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/nj/legislature/Britnee-N-Timberlake-707e3027-d06f-4346-8c11-3ff1becbe725.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Britnee_Timberlake"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Britnee_Timberlake"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/britnee-timberlake-655a2231"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.njleg.state.nj.us/api/legislatorData/legislatorBio/407"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.njleg.state.nj.us/downloads.asp"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.njleg.state.nj.us/legislative-roster"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.njleg.state.nj.us/legislative-roster/407/assemblywoman-timberlake"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.njleg.state.nj.us/legislative-roster/490/senator-timberlake"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

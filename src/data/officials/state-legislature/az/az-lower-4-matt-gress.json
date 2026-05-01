@@ -1,0 +1,64 @@
+{
+  "id": "matt-gress",
+  "name": "Matt Gress",
+  "firstName": "Matt",
+  "lastName": "Gress",
+  "photo": "/images/officials/state-legislature/az/matt-gress.jpg",
+  "photoSourceUrl": "https://s3.amazonaws.com/ballotpedia-api4/files/thumbs/200/300/MattGress.png",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-4",
+  "jurisdiction": "Arizona House of Representatives",
+  "county": [
+    "Arizona"
+  ],
+  "termStart": "2023-01-09",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 205, 1700 W. Washington St., Phoenix, AZ 85007",
+    "phone": "602-926-4105",
+    "email": "mgress@azleg.gov",
+    "website": "https://www.azleg.gov/house-member/?legislature=56&session=127&legislator=2163"
+  },
+  "bio": "Matt Gress serves as State Representative for Arizona House of Representatives District 4. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "AZ",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.azleg.gov/house-member/?legislature=56&session=127&legislator=2163"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/az/legislature/Matt-Gress-bfb503ce-dcb1-444b-9484-8a90e73c6a6f.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://s3.amazonaws.com/ballotpedia-api4/files/thumbs/200/300/MattGress.png"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Matt_Gress"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Matt_Gress"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.azleg.gov/house-member/?legislature=57&session=129&legislator=2308"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.azleg.gov/memberroster/?body=H"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/mattgress"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

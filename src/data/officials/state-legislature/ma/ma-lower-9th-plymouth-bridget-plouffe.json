@@ -1,0 +1,48 @@
+{
+  "id": "bridget-plouffe",
+  "name": "Bridget Plouffe",
+  "firstName": "Bridget",
+  "lastName": "Plouffe",
+  "photo": "/images/officials/state-legislature/ma/bridget-plouffe.jpg",
+  "photoSourceUrl": "https://malegislature.gov/Legislators/Profile/170/BMP1.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-9th Plymouth",
+  "jurisdiction": "Massachusetts House of Representatives",
+  "county": [
+    "Massachusetts"
+  ],
+  "termStart": "2025-01-01",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 443, State House 24 Beacon St., Boston, MA 02133",
+    "phone": "617-722-2460",
+    "email": "bridget.plouffe@mahouse.gov",
+    "website": "https://malegislature.gov/Legislators/Profile/BMP1"
+  },
+  "bio": "Bridget Plouffe serves as State Representative for Massachusetts House of Representatives District 9th Plymouth. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "MA",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://malegislature.gov/Legislators/Profile/BMP1"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ma/legislature/Bridget-Plouffe-2b6d0884-6638-410e-87b7-243c7ca18a16.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://malegislature.gov/Legislators/Profile/170/BMP1.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/bridget-plouffe-8587b863"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

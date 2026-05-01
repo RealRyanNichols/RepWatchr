@@ -1,0 +1,64 @@
+{
+  "id": "shelly-fyant",
+  "name": "Shelly Fyant",
+  "firstName": "Shelly",
+  "lastName": "Fyant",
+  "photo": "/images/officials/state-legislature/mt/shelly-fyant.jpg",
+  "photoSourceUrl": "https://shellyformontana.com/wp-content/uploads/sites/17/2024/03/headshot-1-scaled-e1709849197916.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-91",
+  "jurisdiction": "Montana House of Representatives",
+  "county": [
+    "Montana"
+  ],
+  "termStart": "2025-01-06",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Capitol Building, 1301 E. 6th Ave. P.O. Box 200400, Helena, MT 59620",
+    "phone": "406-444-4800",
+    "email": "shelly.fyant@legmt.gov",
+    "website": "https://legislators.legmt.gov/#/legislator/228"
+  },
+  "bio": "Shelly Fyant serves as State Representative for Montana House of Representatives District 91. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "MT",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://legislators.legmt.gov/#/legislator/228"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/mt/legislature/Shelly-Fyant-20bdbec3-719d-4b1c-b0ec-63ebb7a48dae.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://shellyformontana.com/wp-content/uploads/sites/17/2024/03/headshot-1-scaled-e1709849197916.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Shelly_Fyant"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Shelly_Fyant"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/215318/shelly-fyant"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.legmt.gov/legislators/1347"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/shelly-fyant-188087102"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

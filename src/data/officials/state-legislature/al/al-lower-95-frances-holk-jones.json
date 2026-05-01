@@ -1,0 +1,56 @@
+{
+  "id": "frances-holk-jones",
+  "name": "Frances Holk-Jones",
+  "firstName": "Frances",
+  "lastName": "Holk-Jones",
+  "photo": "/images/officials/state-legislature/al/frances-holk-jones.jpg",
+  "photoSourceUrl": "https://www.legislature.state.al.us/pdf/house/members/Holk-Jones_95.png",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-95",
+  "jurisdiction": "Alabama House of Representatives",
+  "county": [
+    "Alabama"
+  ],
+  "termStart": "2022-11-09",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 526-D, 11 S. Union St., Montgomery, AL 36130",
+    "phone": "334-261-0523",
+    "email": "frances.holk-jones@alhouse.gov",
+    "website": "https://alison.legislature.state.al.us/house-leaders-members"
+  },
+  "bio": "Frances Holk-Jones serves as State Representative for Alabama House of Representatives District 95. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "AL",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://alison.legislature.state.al.us/house-leaders-members"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/al/legislature/Frances-Holk-Jones-3bc2e263-71cf-41e2-80c5-3f97cad999ff.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://www.legislature.state.al.us/pdf/house/members/Holk-Jones_95.png"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Frances_Holk-Jones"
+    },
+    {
+      "title": "graphql endpoint for member information",
+      "url": "https://gql.api.alison.legislature.state.al.us/graphql"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/frances-holk-jones-b04038101"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

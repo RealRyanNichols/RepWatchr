@@ -1,0 +1,47 @@
+{
+  "id": "jeff-landry",
+  "name": "Jeff Landry",
+  "firstName": "Jeff",
+  "lastName": "Landry",
+  "photo": "/images/officials/state-executive/la/jeff-landry.jpg",
+  "photoSourceUrl": "https://gov.louisiana.gov/assets/images/2024/JL-Headshot/Jeff-Landry-Headshot.jpeg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "Governor",
+  "district": "Louisiana",
+  "jurisdiction": "Louisiana statewide public office",
+  "county": [
+    "Louisiana"
+  ],
+  "termStart": "2024-01-08",
+  "termEnd": "2028-01-03",
+  "contactInfo": {
+    "office": "Office of the Governor; PO Box 94004; Baton Rouge, LA 70804",
+    "phone": "225-342-7015",
+    "website": "https://gov.louisiana.gov/",
+    "socialMedia": {
+      "x": "https://x.com/JeffLandry",
+      "twitter": "https://x.com/JeffLandry"
+    }
+  },
+  "bio": "Jeff Landry is listed as Governor for Louisiana. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "LA",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://gov.louisiana.gov/"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/la/executive/Jeff-Landry-90d9e851-bec3-4bde-b883-bfa43d63194f.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://gov.louisiana.gov/assets/images/2024/JL-Headshot/Jeff-Landry-Headshot.jpeg"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

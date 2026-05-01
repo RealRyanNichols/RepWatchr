@@ -1,0 +1,56 @@
+{
+  "id": "holly-stover",
+  "name": "Holly Stover",
+  "firstName": "Holly",
+  "lastName": "Stover",
+  "photo": "/images/officials/state-legislature/me/holly-stover.jpg",
+  "photoSourceUrl": "https://legislature.maine.gov/house/house/Repository/MemberProfiles/fc29e232-5948-4268-8919-22a92f6ab7ab_stover.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-48",
+  "jurisdiction": "Maine House of Representatives",
+  "county": [
+    "Maine"
+  ],
+  "termStart": "2022-12-07",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 333, House Democratic Office 2 State House Station, Augusta, ME 04333",
+    "phone": "800-423-2900",
+    "email": "holly.stover@legislature.maine.gov",
+    "website": "https://legislature.maine.gov/house/house/MemberProfiles/Details/1363"
+  },
+  "bio": "Holly Stover serves as State Representative for Maine House of Representatives District 48. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "ME",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://legislature.maine.gov/house/house/MemberProfiles/Details/1363"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/me/legislature/Holly-B-Stover-468ba602-86c5-4293-85b2-45e87313c1c3.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://legislature.maine.gov/house/house/Repository/MemberProfiles/fc29e232-5948-4268-8919-22a92f6ab7ab_stover.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Holly_Stover"
+    },
+    {
+      "title": "Public source",
+      "url": "https://legislature.maine.gov/house/house/MemberProfiles/ListAlpha"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/stover-holly-2714854b"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

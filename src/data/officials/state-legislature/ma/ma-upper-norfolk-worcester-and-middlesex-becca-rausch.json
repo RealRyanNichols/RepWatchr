@@ -1,0 +1,72 @@
+{
+  "id": "becca-rausch",
+  "name": "Becca Rausch",
+  "firstName": "Becca",
+  "lastName": "Rausch",
+  "photo": "/images/officials/state-legislature/ma/becca-rausch.jpg",
+  "photoSourceUrl": "https://www.brandeis.edu/now/2019/january/images/rausch620.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-Norfolk, Worcester and Middlesex",
+  "jurisdiction": "Massachusetts Senate",
+  "county": [
+    "Massachusetts"
+  ],
+  "termStart": "2023-01-04",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 215, State House 24 Beacon St., Boston, MA 02133",
+    "phone": "617-722-1555",
+    "email": "becca.rausch@masenate.gov",
+    "website": "https://malegislature.gov/Legislators/Profile/RLR0"
+  },
+  "bio": "Becca Rausch serves as State Senator for Massachusetts Senate District Norfolk, Worcester and Middlesex. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "MA",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://malegislature.gov/Legislators/Profile/RLR0"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ma/legislature/Rebecca-Rausch-fb97b139-c0dd-41b5-ae52-159528f47b11.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://www.brandeis.edu/now/2019/january/images/rausch620.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Becca_Rausch"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Becca_Rausch"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/184660/becca-rausch"
+    },
+    {
+      "title": "Public source",
+      "url": "https://malegislature.gov/api/GeneralCourts/192/LegislativeMembers"
+    },
+    {
+      "title": "Public source",
+      "url": "https://malegislature.gov/api/GeneralCourts/192/LegislativeMembers/"
+    },
+    {
+      "title": "Public source",
+      "url": "https://malegislature.gov/api/GeneralCourts/192/LegislativeMembers/RLR0"
+    },
+    {
+      "title": "Public source",
+      "url": "https://malegislature.gov/api/GeneralCourts/193/LegislativeMembers"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

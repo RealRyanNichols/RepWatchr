@@ -1,0 +1,72 @@
+{
+  "id": "bob-archuleta",
+  "name": "Bob Archuleta",
+  "firstName": "Bob",
+  "lastName": "Archuleta",
+  "photo": "/images/officials/state-legislature/ca/bob-archuleta.jpg",
+  "photoSourceUrl": "https://www.senate.ca.gov/sites/senate.ca.gov/files/senator_photos/archuleta_bob.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-30",
+  "jurisdiction": "California Senate",
+  "county": [
+    "California"
+  ],
+  "termStart": "2022-12-05",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "1021 O St. Suite 6620, Sacramento, CA 95814",
+    "phone": "916-651-4030",
+    "email": "senator.archuleta@senate.ca.gov",
+    "website": "https://sd30.senate.ca.gov/"
+  },
+  "bio": "Bob Archuleta serves as State Senator for California Senate District 30. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "CA",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://sd30.senate.ca.gov/"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ca/legislature/Bob-Archuleta-a76028df-5730-47b0-b617-1565621def41.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://www.senate.ca.gov/sites/senate.ca.gov/files/senator_photos/archuleta_bob.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Bob_Archuleta"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Bob_Archuleta"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/71279/bob-archuleta"
+    },
+    {
+      "title": "Public source",
+      "url": "https://sd30.senate.ca.gov"
+    },
+    {
+      "title": "Public source",
+      "url": "https://sd30.senate.ca.gov/biography"
+    },
+    {
+      "title": "Public source",
+      "url": "https://senate.ca.gov/senators"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.senate.ca.gov/senators"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

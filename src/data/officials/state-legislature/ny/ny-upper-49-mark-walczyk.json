@@ -1,0 +1,65 @@
+{
+  "id": "mark-walczyk",
+  "name": "Mark Walczyk",
+  "firstName": "Mark",
+  "lastName": "Walczyk",
+  "party": "R",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-49",
+  "jurisdiction": "New York Senate",
+  "county": [
+    "New York"
+  ],
+  "termStart": "2023-01-01",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 302, Legislative Office Building, Albany, NY 12247",
+    "phone": "518-455-3438",
+    "email": "walczyk@nysenate.gov",
+    "website": "https://assembly.state.ny.us/mem/?sh=email",
+    "socialMedia": {
+      "x": "https://x.com/MarkWalczyk",
+      "twitter": "https://x.com/MarkWalczyk"
+    }
+  },
+  "bio": "Mark Walczyk serves as State Senator for New York Senate District 49. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "NY",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://assembly.state.ny.us/mem/?sh=email"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ny/legislature/Mark-Walczyk-615c8d33-9652-4163-87b9-0fc82fc09b8c.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://assembly.state.ny.us/mem/Mark-Walczyk"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Mark_Walczyk"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Mark_Walczyk"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/185315/mark-walczyk"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/mark-walczyk-937990a"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.nysenate.gov/senators/mark-walczyk"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

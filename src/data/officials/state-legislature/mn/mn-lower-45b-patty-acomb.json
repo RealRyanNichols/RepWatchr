@@ -1,0 +1,64 @@
+{
+  "id": "patty-acomb",
+  "name": "Patty Acomb",
+  "firstName": "Patty",
+  "lastName": "Acomb",
+  "photo": "/images/officials/state-legislature/mn/patty-acomb.jpg",
+  "photoSourceUrl": "https://www.house.mn.gov/hinfo/memberimgls94/45B.gif",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-45B",
+  "jurisdiction": "Minnesota House of Representatives",
+  "county": [
+    "Minnesota"
+  ],
+  "termStart": "2023-01-03",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Centennial Office Building 658 Cedar St., Fifth Floor, St. Paul, MN 55155",
+    "phone": "651-296-9934",
+    "email": "rep.patty.acomb@house.mn.gov",
+    "website": "https://www.house.mn.gov/members/profile/15513"
+  },
+  "bio": "Patty Acomb serves as State Representative for Minnesota House of Representatives District 45B. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "MN",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.house.mn.gov/members/profile/15513"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/mn/legislature/Patty-Acomb-b393cb61-cb71-4cd0-8132-6e21c2a7202d.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://www.house.mn.gov/hinfo/memberimgls94/45B.gif"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Patty_Acomb"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Patty_Acomb"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/143648/patty-acomb"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.house.leg.state.mn.us/members/hmem.asp"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/patty-acomb-a2140167"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

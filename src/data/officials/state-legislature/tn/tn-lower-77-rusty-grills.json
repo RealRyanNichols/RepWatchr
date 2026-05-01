@@ -1,0 +1,72 @@
+{
+  "id": "rusty-grills",
+  "name": "Rusty Grills",
+  "firstName": "Rusty",
+  "lastName": "Grills",
+  "photo": "/images/officials/state-legislature/tn/rusty-grills.jpg",
+  "photoSourceUrl": "http://www.capitol.tn.gov/house/members/images/h77.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-77",
+  "jurisdiction": "Tennessee House of Representatives",
+  "county": [
+    "Tennessee"
+  ],
+  "termStart": "2020-01-14",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 644, Cordell Hull Building 425 Rep. John Lewis Way North, Nashville, TN 37243",
+    "phone": "615-741-0718",
+    "email": "rep.rusty.grills@capitol.tn.gov",
+    "website": "https://wapp.capitol.tn.gov/apps/legislatorinfo/member.aspx?district=H77"
+  },
+  "bio": "Rusty Grills serves as State Representative for Tennessee House of Representatives District 77. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "TN",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://wapp.capitol.tn.gov/apps/legislatorinfo/member.aspx?district=H77"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/tn/legislature/Rusty-Grills-d00c0511-6872-4f2a-9d48-cf8d2a60e199.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "http://www.capitol.tn.gov/house/members/images/h77.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Rusty_Grills"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Rusty_Grills"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/133675/rusty-grills"
+    },
+    {
+      "title": "Public source",
+      "url": "https://tnhousegop.org/members/representative-rusty-grills"
+    },
+    {
+      "title": "Public source",
+      "url": "https://wapp.capitol.tn.gov/apps/LegislatorInfo/directory.aspx?chamber=H"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.capitol.tn.gov/house/members"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.capitol.tn.gov/house/members/"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

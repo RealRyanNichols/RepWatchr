@@ -1,0 +1,68 @@
+{
+  "id": "tim-bearden",
+  "name": "Tim Bearden",
+  "firstName": "Tim",
+  "lastName": "Bearden",
+  "photo": "/images/officials/state-legislature/ga/tim-bearden.jpg",
+  "photoSourceUrl": "https://s3.amazonaws.com/ballotpedia-api4/files/thumbs/200/300/Timothy_Bearden.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-30",
+  "jurisdiction": "Georgia Senate",
+  "county": [
+    "Georgia"
+  ],
+  "termStart": "2024-02-21",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 304-B, Coverdell Legislative Office Building 18 Capitol Square SW, Atlanta, GA 30334",
+    "phone": "404-656-7872",
+    "email": "timothy.bearden@senate.ga.gov",
+    "website": "https://www.legis.ga.gov/members/senate/62"
+  },
+  "bio": "Tim Bearden serves as State Senator for Georgia Senate District 30. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "GA",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.legis.ga.gov/members/senate/62"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ga/legislature/Tim-Bearden-93f45299-bfa2-4458-844a-5c6b9bdd8c1d.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://s3.amazonaws.com/ballotpedia-api4/files/thumbs/200/300/Timothy_Bearden.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Tim_Bearden"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Timothy_Bearden"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Tim_Bearden"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/31980/timothy-bearden"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.legis.ga.gov/members/senate/62?session=1031"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/tim-bearden-7a05731a9"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

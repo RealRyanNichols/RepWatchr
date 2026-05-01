@@ -1,0 +1,70 @@
+{
+  "id": "william-shorma",
+  "name": "William Shorma",
+  "firstName": "William",
+  "lastName": "Shorma",
+  "photo": "/images/officials/state-legislature/sd/william-shorma.jpg",
+  "photoSourceUrl": "https://lawmakerdocuments.blob.core.usgovcloudapi.net/photos/shorma,%20william%20rep-1194%20rt.webp",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-17",
+  "jurisdiction": "South Dakota House of Representatives",
+  "county": [
+    "South Dakota"
+  ],
+  "termStart": "2023-01-10",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "email": "william.shorma@sdlegislature.gov",
+    "website": "https://legis.sd.gov/Legislators/Legislators/MemberDetail.aspx?Member=1066&Session=2016"
+  },
+  "bio": "William Shorma serves as State Representative for South Dakota House of Representatives District 17. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "SD",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://legis.sd.gov/Legislators/Legislators/MemberDetail.aspx?Member=1066&Session=2016"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/sd/legislature/William-Shorma-705bda08-a613-4be4-9c90-ac7e30eef6bf.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://lawmakerdocuments.blob.core.usgovcloudapi.net/photos/shorma,%20william%20rep-1194%20rt.webp"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/William_Shorma"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/William_Shorma"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/156686/bill-shorma"
+    },
+    {
+      "title": "Public source",
+      "url": "https://legis.sd.gov/Legislators/Legislators/MemberCommittees.aspx?Member=1066&Session=2016"
+    },
+    {
+      "title": "Public source",
+      "url": "https://sdlegislature.gov/Legislators/Profile/4463/Detail"
+    },
+    {
+      "title": "Public source",
+      "url": "https://sdlegislature.gov/Legislators/Profile/4560/Detail"
+    },
+    {
+      "title": "Public source",
+      "url": "https://sdlegislature.gov/Legislators/Profile/4666/Detail"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

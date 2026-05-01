@@ -1,0 +1,65 @@
+{
+  "id": "dave-yaccarino",
+  "name": "Dave Yaccarino",
+  "firstName": "Dave",
+  "lastName": "Yaccarino",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-87",
+  "jurisdiction": "Connecticut House of Representatives",
+  "county": [
+    "Connecticut"
+  ],
+  "termStart": "2011-01-07",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 4200, Legislative Office Building 300 Capitol Ave., Hartford, CT 06106",
+    "phone": "860-240-8700",
+    "email": "dave.yaccarino@housegop.ct.gov",
+    "website": "https://cga.ct.gov/asp/CGABillStatus/CGAMemberBills.asp?dist_code=%27087%27&dist_name=Yaccarino,%20Dave%20W."
+  },
+  "bio": "Dave Yaccarino serves as State Representative for Connecticut House of Representatives District 87. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "CT",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://cga.ct.gov/asp/CGABillStatus/CGAMemberBills.asp?dist_code=%27087%27&dist_name=Yaccarino,%20Dave%20W."
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ct/legislature/Dave-W-Yaccarino-12835342-bb95-428a-ace3-78c51c3e8443.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "ftp://ftp.cga.ct.gov/pub/data/LegislatorDatabase.csv"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Dave_Yaccarino_Sr."
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Dave_Yaccarino"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/126766/david-yaccarino"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.cthousegop.com/Yaccarino/main"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.cthousegop.com/Yaccarino/main/"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/dave-yaccarino-3a603082"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

@@ -1,0 +1,72 @@
+{
+  "id": "rick-eldridge",
+  "name": "Rick Eldridge",
+  "firstName": "Rick",
+  "lastName": "Eldridge",
+  "photo": "/images/officials/state-legislature/tn/rick-eldridge.jpg",
+  "photoSourceUrl": "http://www.capitol.tn.gov/house/members/images/H10.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-10",
+  "jurisdiction": "Tennessee House of Representatives",
+  "county": [
+    "Tennessee"
+  ],
+  "termStart": "2018-11-06",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 542, Cordell Hull Building 425 Rep. John Lewis Way North, Nashville, TN 37243",
+    "phone": "615-741-6877",
+    "email": "rep.rick.eldridge@capitol.tn.gov",
+    "website": "https://wapp.capitol.tn.gov/apps/legislatorinfo/member.aspx?district=H10"
+  },
+  "bio": "Rick Eldridge serves as State Representative for Tennessee House of Representatives District 10. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "TN",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://wapp.capitol.tn.gov/apps/legislatorinfo/member.aspx?district=H10"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/tn/legislature/Rick-Eldridge-c79fb980-4ee3-40ce-9737-62e369c61fe0.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "http://www.capitol.tn.gov/house/members/images/H10.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Rick_Eldridge"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Rick_Eldridge"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/133773/rick-eldridge"
+    },
+    {
+      "title": "Public source",
+      "url": "https://wapp.capitol.tn.gov/apps/LegislatorInfo/directory.aspx?chamber=H"
+    },
+    {
+      "title": "Public source",
+      "url": "https://wapp.capitol.tn.gov/apps/legislatorinfo/member?district=H10"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.capitol.tn.gov/house/members"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.capitol.tn.gov/house/members/"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

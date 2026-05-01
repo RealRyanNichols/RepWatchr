@@ -1,0 +1,70 @@
+{
+  "id": "lana-greenfield",
+  "name": "Lana Greenfield",
+  "firstName": "Lana",
+  "lastName": "Greenfield",
+  "photo": "/images/officials/state-legislature/sd/lana-greenfield.jpg",
+  "photoSourceUrl": "https://sdlegislature.gov/inc/img/Legislators/GreenfieldLana_2017.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-22",
+  "jurisdiction": "South Dakota House of Representatives",
+  "county": [
+    "South Dakota"
+  ],
+  "termStart": "2025-01-14",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "email": "lana.greenfield@sdlegislature.gov",
+    "website": "https://sdlegislature.gov/Legislators/Legislators/MemberDetail.aspx?Member=1509&Session=2018s"
+  },
+  "bio": "Lana Greenfield serves as State Representative for South Dakota House of Representatives District 22. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "SD",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://sdlegislature.gov/Legislators/Legislators/MemberDetail.aspx?Member=1509&Session=2018s"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/sd/legislature/Lana-Greenfield-7eefd193-a618-4a9b-b416-cd495239ead6.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://sdlegislature.gov/inc/img/Legislators/GreenfieldLana_2017.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Lana_Greenfield"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Lana_Greenfield"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/121288/lana-greenfield"
+    },
+    {
+      "title": "Public source",
+      "url": "https://sdlegislature.gov/Legislators/Legislators/MemberDetail.aspx?Member=1573&Session=2019"
+    },
+    {
+      "title": "Public source",
+      "url": "https://sdlegislature.gov/Legislators/Profile/1795/Detail"
+    },
+    {
+      "title": "Public source",
+      "url": "https://sdlegislature.gov/Legislators/Profile/4700/Detail"
+    },
+    {
+      "title": "Public source",
+      "url": "https://sdlegislature.gov/Legislators/Profile/4755/Detail"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

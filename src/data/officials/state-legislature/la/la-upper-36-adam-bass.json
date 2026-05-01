@@ -1,0 +1,56 @@
+{
+  "id": "adam-bass",
+  "name": "Adam Bass",
+  "firstName": "Adam",
+  "lastName": "Bass",
+  "photo": "/images/officials/state-legislature/la/adam-bass.jpg",
+  "photoSourceUrl": "https://senate.la.gov/SenPics/Sen36.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-36",
+  "jurisdiction": "Louisiana Senate",
+  "county": [
+    "Louisiana"
+  ],
+  "termStart": "2024-01-08",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "P.O. Box 94183 900 N. 3rd St., Baton Rouge, LA 70804",
+    "phone": "225-342-2024",
+    "email": "sen36@legis.la.gov",
+    "website": "https://senate.la.gov/smembers?ID=36"
+  },
+  "bio": "Adam Bass serves as State Senator for Louisiana Senate District 36. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "LA",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://senate.la.gov/smembers?ID=36"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/la/legislature/Adam-Bass-0d1a7b74-9ed8-4d8c-a1fc-f2caafc3d364.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://senate.la.gov/SenPics/Sen36.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Adam_Bass"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Adam_Bass_(politician)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/adam-bass-6b633b23"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

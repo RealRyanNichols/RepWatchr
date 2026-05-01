@@ -1,0 +1,56 @@
+{
+  "id": "patrick-morrisey",
+  "name": "Patrick Morrisey",
+  "firstName": "Patrick",
+  "lastName": "Morrisey",
+  "photo": "/images/officials/state-executive/wv/patrick-morrisey.jpg",
+  "photoSourceUrl": "https://governor.wv.gov/sites/default/files/2024-12/morrissey.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "Governor",
+  "district": "West Virginia",
+  "jurisdiction": "West Virginia statewide public office",
+  "county": [
+    "West Virginia"
+  ],
+  "termStart": "2025-01-13",
+  "termEnd": "2029-01-15",
+  "contactInfo": {
+    "office": "State Capitol, 1900 Kanawha Blvd. E; Charleston, WV 25305",
+    "phone": "304-558-2000",
+    "website": "https://governor.wv.gov/",
+    "socialMedia": {
+      "x": "https://x.com/wvgovernor",
+      "twitter": "https://x.com/wvgovernor",
+      "facebook": "https://facebook.com/WVGovernor"
+    }
+  },
+  "bio": "Patrick Morrisey is listed as Governor for West Virginia. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "WV",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://governor.wv.gov/"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/wv/executive/Patrick-Morrisey-cf5ab5dc-33c4-4d93-a810-f42cd6f98f5d.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://governor.wv.gov/sites/default/files/2024-12/morrissey.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Patrick_Morrisey"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.legistorm.com/person/bio/41452/Patrick_James_Morrisey.html"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

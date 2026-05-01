@@ -1,0 +1,58 @@
+{
+  "id": "michelle-powers",
+  "name": "Michelle Powers",
+  "firstName": "Michelle",
+  "lastName": "Powers",
+  "photo": "/images/officials/state-legislature/nd/michelle-powers.jpg",
+  "photoSourceUrl": "https://images.squarespace-cdn.com/content/v1/620c3de64a803d6ee0289ebc/77db1b9d-8c96-49d6-9730-72bf488d1b28/Michelle+Powers+Headshot.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-46",
+  "jurisdiction": "North Dakota Senate",
+  "county": [
+    "North Dakota"
+  ],
+  "termStart": "2024-12-01",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "email": "mpowers@ndlegis.gov",
+    "website": "https://ndlegis.gov/biography/michelle-powers"
+  },
+  "bio": "Michelle Powers serves as State Senator for North Dakota Senate District 46. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "ND",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://ndlegis.gov/biography/michelle-powers"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/nd/legislature/Michelle-Powers-3f38bb4c-1371-4b8c-851f-cc441b5c853b.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://images.squarespace-cdn.com/content/v1/620c3de64a803d6ee0289ebc/77db1b9d-8c96-49d6-9730-72bf488d1b28/Michelle+Powers+Headshot.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Michelle_Powers"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Michelle_Powers"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/216654/michelle-powers"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/michelle-powers-30b85932"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

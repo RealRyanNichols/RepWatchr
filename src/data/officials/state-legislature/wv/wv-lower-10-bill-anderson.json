@@ -1,0 +1,68 @@
+{
+  "id": "bill-anderson",
+  "name": "Bill Anderson",
+  "firstName": "Bill",
+  "lastName": "Anderson",
+  "photo": "/images/officials/state-legislature/wv/bill-anderson.jpg",
+  "photoSourceUrl": "http://www.wvlegislature.gov/images/members/2022/house/anderson_bill.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "Delegate",
+  "district": "HD-10",
+  "jurisdiction": "West Virginia House of Delegates",
+  "county": [
+    "West Virginia"
+  ],
+  "termStart": "2022-12-01",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "State Capitol Room 200E-C, Complex, Building 1 1900 Kanawha Blvd. East, Charleston, WV 25305",
+    "phone": "304-340-3101",
+    "email": "bill.anderson@wvhouse.gov",
+    "website": "https://www.legis.state.wv.us/House/lawmaker.cfm?member=Delegate+Anderson"
+  },
+  "bio": "Bill Anderson serves as Delegate for West Virginia House of Delegates District 10. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "WV",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.legis.state.wv.us/House/lawmaker.cfm?member=Delegate+Anderson"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/wv/legislature/William-Anderson-b5b3734c-fa9f-422b-b0d4-ce8b2b2624c5.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "http://www.wvlegislature.gov/images/members/2022/house/anderson_bill.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Everette_Anderson"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Bill_Anderson_(West_Virginia_politician)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/7564/bill-anderson-jr"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.wvlegislature.gov/House/lawmaker.cfm?member=Delegate%20Anderson"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.wvlegislature.gov/House/lawmaker.cfm?member=Delegate%20Anderson,%20B."
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.wvlegislature.gov/House/roster.cfm"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

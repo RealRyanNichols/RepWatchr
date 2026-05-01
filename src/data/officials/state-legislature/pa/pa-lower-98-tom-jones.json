@@ -1,0 +1,60 @@
+{
+  "id": "tom-jones",
+  "name": "Tom Jones",
+  "firstName": "Tom",
+  "lastName": "Jones",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-98",
+  "jurisdiction": "Pennsylvania House of Representatives",
+  "county": [
+    "Pennsylvania"
+  ],
+  "termStart": "2022-12-01",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 411, Irvis Office Building P.O. Box 202098, Harrisburg, PA 17120",
+    "phone": "717-783-2076",
+    "email": "tjones@pahousegop.com",
+    "website": "https://www.legis.state.pa.us/cfdocs/legis/home/member_information/House_bio.cfm?id=1957",
+    "socialMedia": {
+      "facebook": "https://facebook.com/RepTomJones"
+    }
+  },
+  "bio": "Tom Jones serves as State Representative for Pennsylvania House of Representatives District 98. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "PA",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.legis.state.pa.us/cfdocs/legis/home/member_information/House_bio.cfm?id=1957"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/pa/legislature/Tom-Jones-7f6b3c0e-4446-4243-ae49-d2d33ab30273.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Tom_Jones_(Pennsylvania)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Tom_Jones_(Pennsylvania_politician)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.legis.state.pa.us/cfdocs/legis/home/member_information/mbrList.cfm?body=H&sort=alpha"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.palegis.us/house/members/bio/1957/rep-t-jones"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.reptomjones.com"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

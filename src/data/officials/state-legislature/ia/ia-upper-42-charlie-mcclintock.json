@@ -1,0 +1,68 @@
+{
+  "id": "charlie-mcclintock",
+  "name": "Charlie McClintock",
+  "firstName": "Charlie",
+  "lastName": "McClintock",
+  "photo": "/images/officials/state-legislature/ia/charlie-mcclintock.jpg",
+  "photoSourceUrl": "https://www.legis.iowa.gov/photo?action=getPhoto&ga=91&pid=30657",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-42",
+  "jurisdiction": "Iowa Senate",
+  "county": [
+    "Iowa"
+  ],
+  "termStart": "2023-01-03",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "1007 E. Grand Ave., Des Moines, IA 50319",
+    "phone": "515-281-3371",
+    "email": "charlie.mcclintock@legis.iowa.gov",
+    "website": "https://iowasenaterepublicans.com/senators/charlie-mcclintock/"
+  },
+  "bio": "Charlie McClintock serves as State Senator for Iowa Senate District 42. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "IA",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://iowasenaterepublicans.com/senators/charlie-mcclintock/"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ia/legislature/Charlie-McClintock-006bcadf-1173-4661-a28e-25fbf1a5c423.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://www.legis.iowa.gov/photo?action=getPhoto&ga=91&pid=30657"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Charlie_McClintock"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Charlie_McClintock"
+    },
+    {
+      "title": "Public source",
+      "url": "https://iowasenaterepublicans.com/senators/charlie-mcclintock"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.legis.iowa.gov/legislators/legislator?ga=90&personID=30657"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.legis.iowa.gov/legislators/legislator?personID=30657"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.legis.iowa.gov/legislators/senate"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

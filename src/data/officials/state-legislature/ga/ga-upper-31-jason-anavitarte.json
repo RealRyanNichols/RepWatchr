@@ -1,0 +1,69 @@
+{
+  "id": "jason-anavitarte",
+  "name": "Jason Anavitarte",
+  "firstName": "Jason",
+  "lastName": "Anavitarte",
+  "party": "R",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-31",
+  "jurisdiction": "Georgia Senate",
+  "county": [
+    "Georgia"
+  ],
+  "termStart": "2021-01-11",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "State Capitol Room 236, 206 Washington St. SW, Atlanta, GA 30334",
+    "phone": "404-656-0085",
+    "email": "jason.anavitarte@senate.ga.gov",
+    "website": "https://www.legis.ga.gov/members/senate"
+  },
+  "bio": "Jason Anavitarte serves as State Senator for Georgia Senate District 31. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "GA",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.legis.ga.gov/members/senate"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ga/legislature/Jason-Anavitarte-cb7d8c1d-3c26-4f35-8d37-d1cf8a7ce207.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Jason_Anavitarte"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Jason_Anavitarte"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/190320/jason-anavitarte"
+    },
+    {
+      "title": "Detail page (requires authorization token)",
+      "url": "https://www.legis.ga.gov/api/members/detail/4980?session=1029&chamber=2"
+    },
+    {
+      "title": "API member detail (requires authorization token)",
+      "url": "https://www.legis.ga.gov/api/members/detail/4980?session=1031&chamber=2"
+    },
+    {
+      "title": "API members list (requires authorization token)",
+      "url": "https://www.legis.ga.gov/api/members/list/1031"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.legis.ga.gov/members/senate/4980"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.legis.ga.gov/members/senate/4980?session=1029"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

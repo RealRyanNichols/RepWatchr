@@ -1,0 +1,49 @@
+{
+  "id": "diana-moreno",
+  "name": "Diana Moreno",
+  "firstName": "Diana",
+  "lastName": "Moreno",
+  "party": "D",
+  "level": "state",
+  "position": "Assemblymember",
+  "district": "HD-36",
+  "jurisdiction": "New York State Assembly",
+  "county": [
+    "New York"
+  ],
+  "termStart": "2026-02-04",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 827, Legislative Office Building, Albany, NY 12248",
+    "phone": "518-455-5014",
+    "email": "morenod@nyassembly.gov",
+    "website": "https://nyassembly.gov/mem/Diana-C-Moreno"
+  },
+  "bio": "Diana Moreno serves as Assemblymember for New York State Assembly District 36. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "NY",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://nyassembly.gov/mem/Diana-C-Moreno"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ny/legislature/Diana-Moreno-6c065b35-fb5f-42fe-95e8-663c823d5386.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Diana_Moreno"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Diana_Moreno"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/dianaforqueens"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

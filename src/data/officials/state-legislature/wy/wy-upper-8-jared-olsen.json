@@ -1,0 +1,71 @@
+{
+  "id": "jared-olsen",
+  "name": "Jared Olsen",
+  "firstName": "Jared",
+  "lastName": "Olsen",
+  "photo": "/images/officials/state-legislature/wy/jared-olsen.jpg",
+  "photoSourceUrl": "https://wyoleg.gov/LegislatorSummary/Photos/68th-OlsenJared.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-8",
+  "jurisdiction": "Wyoming Senate",
+  "county": [
+    "Wyoming"
+  ],
+  "termStart": "2025-01-06",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "State Capitol 200 W. 24th St., Cheyenne, WY 82002",
+    "email": "jared.olsen@wyoleg.gov",
+    "website": "https://www.olsenforwyoming.com/"
+  },
+  "bio": "Jared Olsen serves as State Senator for Wyoming Senate District 8. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "WY",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.olsenforwyoming.com/"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/wy/legislature/Jared-Olsen-63e25ff3-1832-45c8-a9af-669bb74a3aa4.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://wyoleg.gov/LegislatorSummary/Photos/68th-OlsenJared.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Jared_Olsen"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Jared_Olsen"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/jaredsolsen"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.olsenforwyoming.com"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.olsenforwyoming.com/about-jared"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.wyoleg.gov/Legislators/2023/H/2035"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.wyoleg.gov/Legislators/2025/S/2035"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

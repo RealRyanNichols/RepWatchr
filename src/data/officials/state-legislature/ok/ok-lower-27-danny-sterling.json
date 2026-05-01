@@ -1,0 +1,65 @@
+{
+  "id": "danny-sterling",
+  "name": "Danny Sterling",
+  "firstName": "Danny",
+  "lastName": "Sterling",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-27",
+  "jurisdiction": "Oklahoma House of Representatives",
+  "county": [
+    "Oklahoma"
+  ],
+  "termStart": "2018-11-16",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 247, 2300 N. Lincoln Blvd., Oklahoma City, OK 73105",
+    "phone": "405-557-7349",
+    "email": "danny.sterling@okhouse.gov",
+    "website": "https://www.okhouse.gov/Members/Contact.aspx?District=27"
+  },
+  "bio": "Danny Sterling serves as State Representative for Oklahoma House of Representatives District 27. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "OK",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.okhouse.gov/Members/Contact.aspx?District=27"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ok/legislature/Danny-Sterling-61966500-f9d7-4f45-ad6b-761d6d839036.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Danny_Sterling"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Danny_Sterling"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/181911/danny-sterling"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/danny-sterling-625b2698"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.okhouse.gov/Members/Default.aspx"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.okhouse.gov/Members/District.aspx?District=27"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.okhouse.gov/representatives/danny-sterling"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

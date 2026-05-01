@@ -1,0 +1,53 @@
+{
+  "id": "regina-barrow",
+  "name": "Regina Barrow",
+  "firstName": "Regina",
+  "lastName": "Barrow",
+  "party": "D",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-15",
+  "jurisdiction": "Louisiana Senate",
+  "county": [
+    "Louisiana"
+  ],
+  "termStart": "2016-01-11",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "P.O. Box 94183 900 N. 3rd St., Baton Rouge, LA 70804",
+    "phone": "225-342-2024",
+    "email": "barrowr@legis.la.gov",
+    "website": "https://senate.la.gov/smembers.aspx?ID=15"
+  },
+  "bio": "Regina Barrow serves as State Senator for Louisiana Senate District 15. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "LA",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://senate.la.gov/smembers.aspx?ID=15"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/la/legislature/Regina-Ashford-Barrow-8710f3da-9aea-41a9-acd2-181377cc6ae7.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Regina_Barrow"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/56506/regina-barrow"
+    },
+    {
+      "title": "Public source",
+      "url": "https://senate.la.gov/Senators_FullInfo"
+    },
+    {
+      "title": "Public source",
+      "url": "https://senate.la.gov/smembers?ID=15"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

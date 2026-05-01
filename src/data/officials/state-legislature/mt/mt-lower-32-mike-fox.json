@@ -1,0 +1,61 @@
+{
+  "id": "mike-fox",
+  "name": "Mike Fox",
+  "firstName": "Mike",
+  "lastName": "Fox",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-32",
+  "jurisdiction": "Montana House of Representatives",
+  "county": [
+    "Montana"
+  ],
+  "termStart": "2025-01-06",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Capitol Building, 1301 E. 6th Ave. P.O. Box 200400, Helena, MT 59620",
+    "phone": "406-444-4800",
+    "email": "michael.fox@legmt.gov",
+    "website": "https://leg.mt.gov/legislator-information/roster/individual/6817"
+  },
+  "bio": "Mike Fox serves as State Representative for Montana House of Representatives District 32. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "MT",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://leg.mt.gov/legislator-information/roster/individual/6817"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/mt/legislature/Mike-Fox-ef77e3ee-eec4-4274-ae22-7b1074227740.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Mike_Fox"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Mike_Fox_(politician)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://leg.mt.gov/legislator-information/roster/individual/7509"
+    },
+    {
+      "title": "Public source",
+      "url": "https://legislators.legmt.gov/#/legislator/136"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.legmt.gov/legislators/1344"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/mike-fox-28b98b28"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

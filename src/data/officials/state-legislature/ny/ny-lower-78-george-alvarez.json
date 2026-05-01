@@ -1,0 +1,64 @@
+{
+  "id": "george-alvarez",
+  "name": "George Alvarez",
+  "firstName": "George",
+  "lastName": "Alvarez",
+  "photo": "/images/officials/state-legislature/ny/george-alvarez.jpg",
+  "photoSourceUrl": "https://assembly.state.ny.us/write/upload/member_files/078/headshot/078.jpg?hst=1672564700",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "Assemblymember",
+  "district": "HD-78",
+  "jurisdiction": "New York State Assembly",
+  "county": [
+    "New York"
+  ],
+  "termStart": "2023-01-01",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 456, Legislative Office Building, Albany, NY 12248",
+    "phone": "518-455-5414",
+    "email": "alvarezg@nyassembly.gov",
+    "website": "https://assembly.state.ny.us/mem/George-Alvarez"
+  },
+  "bio": "George Alvarez serves as Assemblymember for New York State Assembly District 78. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "NY",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://assembly.state.ny.us/mem/George-Alvarez"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ny/legislature/George-Alvarez-722e778a-7824-49fb-bb44-ba1da8bab675.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://assembly.state.ny.us/write/upload/member_files/078/headshot/078.jpg?hst=1672564700"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/George_Alvarez"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/George_Alvarez_(politician)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/155433/george-alvarez"
+    },
+    {
+      "title": "Public source",
+      "url": "https://nyassembly.gov/mem/George-Alvarez"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/galvarez74"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

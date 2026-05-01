@@ -1,0 +1,57 @@
+{
+  "id": "nick-schroer",
+  "name": "Nick Schroer",
+  "firstName": "Nick",
+  "lastName": "Schroer",
+  "party": "R",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-2",
+  "jurisdiction": "Missouri Senate",
+  "county": [
+    "Missouri"
+  ],
+  "termStart": "2023-01-04",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 227, 201 W. Capitol Ave., Jefferson City, MO 65101",
+    "phone": "573-751-1282",
+    "email": "nick.schroer@senate.mo.gov",
+    "website": "https://www.senate.mo.gov/Senators/Member/02"
+  },
+  "bio": "Nick Schroer serves as State Senator for Missouri Senate District 2. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "MO",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.senate.mo.gov/Senators/Member/02"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/mo/legislature/Nick-Schroer-ecbee637-2b07-4028-acb3-b82df2edb42a.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Nick_Schroer"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Nick_Schroer"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/169831/nick-schroer"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/nicholas-schroer-1946ba60"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.senate.mo.gov/Senators/Member?id=276"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

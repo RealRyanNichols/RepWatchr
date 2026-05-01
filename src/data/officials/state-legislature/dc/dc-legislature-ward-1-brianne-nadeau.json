@@ -1,0 +1,77 @@
+{
+  "id": "brianne-nadeau",
+  "name": "Brianne Nadeau",
+  "firstName": "Brianne",
+  "lastName": "Nadeau",
+  "photo": "/images/officials/state-legislature/dc/brianne-nadeau.jpg",
+  "photoSourceUrl": "https://dccouncil.gov/wp-content/uploads/2017/03/Copy-of-IMG_0900_Fotor-scaled-75x75-c-default.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "Councilmember",
+  "district": "Ward 1",
+  "jurisdiction": "Council of the District of Columbia",
+  "county": [
+    "District of Columbia"
+  ],
+  "termStart": "2015-01-02",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "1350 Pennsylvania Ave. NW Suite 108, Washington, DC 20004",
+    "phone": "202-724-8181",
+    "email": "bnadeau@dccouncil.gov",
+    "website": "https://brianneknadeau.com/",
+    "socialMedia": {
+      "x": "https://x.com/BrianneKNadeau",
+      "twitter": "https://x.com/BrianneKNadeau",
+      "facebook": "https://facebook.com/brianneknadeau."
+    }
+  },
+  "bio": "Brianne Nadeau serves as Councilmember for Council of the District of Columbia District Ward 1. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "DC",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://brianneknadeau.com/"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/dc/legislature/Brianne-K-Nadeau-4e806a33-bba3-4484-95f8-d723769b99f1.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://dccouncil.gov/wp-content/uploads/2017/03/Copy-of-IMG_0900_Fotor-scaled-75x75-c-default.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Brianne_Nadeau"
+    },
+    {
+      "title": "Public source",
+      "url": "https://brianneknadeau.com"
+    },
+    {
+      "title": "Public source",
+      "url": "https://dccouncil.gov/council/brianne-nadeau"
+    },
+    {
+      "title": "Public source",
+      "url": "https://dccouncil.gov/council/brianne-nadeau/"
+    },
+    {
+      "title": "Public source",
+      "url": "https://dccouncil.us/council/brianne-nadeau"
+    },
+    {
+      "title": "Public source",
+      "url": "https://dccouncil.us/council/brianne-nadeau/"
+    },
+    {
+      "title": "Public source",
+      "url": "https://dccouncil.us/councilmembers"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

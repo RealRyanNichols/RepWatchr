@@ -1,0 +1,41 @@
+{
+  "id": "alicia-collins",
+  "name": "Alicia Collins",
+  "firstName": "Alicia",
+  "lastName": "Collins",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-61",
+  "jurisdiction": "Maine House of Representatives",
+  "county": [
+    "Maine"
+  ],
+  "termStart": "2024-12-03",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 332, House Republican Office 2 State House Station, Augusta, ME 04333",
+    "phone": "800-423-2900",
+    "email": "alicia.collins@legislature.maine.gov",
+    "website": "https://legislature.maine.gov/house/house/MemberProfiles/Details/3119"
+  },
+  "bio": "Alicia Collins serves as State Representative for Maine House of Representatives District 61. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "ME",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://legislature.maine.gov/house/house/MemberProfiles/Details/3119"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/me/legislature/Alicia-Collins-4bc2b129-52c1-4dfd-99af-dd38f620183a.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Alicia_Collins_(Maine)"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

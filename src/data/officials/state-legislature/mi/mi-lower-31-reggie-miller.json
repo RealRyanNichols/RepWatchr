@@ -1,0 +1,57 @@
+{
+  "id": "reggie-miller",
+  "name": "Reggie Miller",
+  "firstName": "Reggie",
+  "lastName": "Miller",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-31",
+  "jurisdiction": "Michigan House of Representatives",
+  "county": [
+    "Michigan"
+  ],
+  "termStart": "2023-01-01",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room N-795, Anderson House Office Building 124 N. Capitol Ave., Lansing, MI 48933",
+    "phone": "517-373-0159",
+    "email": "reggiemiller@house.mi.gov",
+    "website": "https://housedems.com/Reggie-Miller/"
+  },
+  "bio": "Reggie Miller serves as State Representative for Michigan House of Representatives District 31. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "MI",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://housedems.com/Reggie-Miller/"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/mi/legislature/Reggie-Miller-50d75ced-0a70-4f88-aada-57015d799fd0.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Reggie_Miller"
+    },
+    {
+      "title": "Public source",
+      "url": "https://housedems.com/Reggie-Miller"
+    },
+    {
+      "title": "Public source",
+      "url": "https://housedems.com/reggie-miller/about"
+    },
+    {
+      "title": "Members List Page",
+      "url": "https://www.house.mi.gov/AllRepresentatives"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/reggie-miller-87a0745b"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

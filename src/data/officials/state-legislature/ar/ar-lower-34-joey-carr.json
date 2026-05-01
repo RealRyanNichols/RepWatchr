@@ -1,0 +1,64 @@
+{
+  "id": "joey-carr",
+  "name": "Joey Carr",
+  "firstName": "Joey",
+  "lastName": "Carr",
+  "photo": "/images/officials/state-legislature/ar/joey-carr.jpg",
+  "photoSourceUrl": "https://www.arkleg.state.ar.us/Content/photos/2023/House/615_sm.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-34",
+  "jurisdiction": "Arkansas House of Representatives",
+  "county": [
+    "Arkansas"
+  ],
+  "termStart": "2023-01-09",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "State Capitol Arkansas  500 Woodlane St., Suite 350, Little Rock, AR 72201",
+    "phone": "501-682-6211",
+    "email": "joey.carr@arkansashouse.org",
+    "website": "https://arkleg.state.ar.us/Legislators/Detail?member=Joey+Carr"
+  },
+  "bio": "Joey Carr serves as State Representative for Arkansas House of Representatives District 34. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "AR",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://arkleg.state.ar.us/Legislators/Detail?member=Joey+Carr"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ar/legislature/Joey-Carr-99d5591e-13f9-40af-90f4-97c5f958031a.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://www.arkleg.state.ar.us/Content/photos/2023/House/615_sm.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Joey_Carr"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.arkansashouse.org/district/34"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.arkleg.state.ar.us/Legislators/Detail?member=Joey+Carr&ddBienniumSession=2023%2F2023R"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.arkleg.state.ar.us/Legislators/List?sort=Type&by=desc&ddBienniumSession=2023%2F2023R#SearchResults"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/joey-carr-0b194b89"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

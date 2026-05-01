@@ -1,0 +1,64 @@
+{
+  "id": "leigh-finke",
+  "name": "Leigh Finke",
+  "firstName": "Leigh",
+  "lastName": "Finke",
+  "photo": "/images/officials/state-legislature/mn/leigh-finke.jpg",
+  "photoSourceUrl": "https://www.house.mn.gov/hinfo/memberimgls94/66A.gif?v=112221",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-66A",
+  "jurisdiction": "Minnesota House of Representatives",
+  "county": [
+    "Minnesota"
+  ],
+  "termStart": "2023-01-03",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Centennial Office Building 658 Cedar St., Fifth Floor, St. Paul, MN 55155",
+    "phone": "651-296-3824",
+    "email": "rep.leigh.finke@house.mn.gov",
+    "website": "https://www.house.mn.gov/members/profile/15575"
+  },
+  "bio": "Leigh Finke serves as State Representative for Minnesota House of Representatives District 66A. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "MN",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.house.mn.gov/members/profile/15575"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/mn/legislature/Leigh-Finke-afff2a0a-1b2d-480e-a90d-8609842f0927.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://www.house.mn.gov/hinfo/memberimgls94/66A.gif?v=112221"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Leigh_Finke"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Leigh_Finke"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/208084/leigh-finke"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.house.leg.state.mn.us/members/hmem.asp"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/leigh-finke-87966124"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

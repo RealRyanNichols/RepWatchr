@@ -1,0 +1,68 @@
+{
+  "id": "dick-fascia",
+  "name": "Dick Fascia",
+  "firstName": "Dick",
+  "lastName": "Fascia",
+  "photo": "/images/officials/state-legislature/ri/dick-fascia.jpg",
+  "photoSourceUrl": "https://s3.amazonaws.com/ballotpedia-api4/files/thumbs/200/300/Richard_Fascia_20240808_092707.png",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-42",
+  "jurisdiction": "Rhode Island House of Representatives",
+  "county": [
+    "Rhode Island"
+  ],
+  "termStart": "2025-01-07",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "82 Smith St., Providence, RI 02903",
+    "phone": "401-222-3580",
+    "email": "rep-fascia@rilegislature.gov",
+    "website": "https://fasciarep42.com/"
+  },
+  "bio": "Dick Fascia serves as State Representative for Rhode Island House of Representatives District 42. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "RI",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://fasciarep42.com/"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ri/legislature/Dick-Fascia-0065fe7b-08cf-4d17-b358-c0c04ab45616.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://s3.amazonaws.com/ballotpedia-api4/files/thumbs/200/300/Richard_Fascia_20240808_092707.png"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Richard_Fascia"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Richard_Fascia"
+    },
+    {
+      "title": "Public source",
+      "url": "https://fasciarep42.com"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/126105/richard-fascia"
+    },
+    {
+      "title": "Public source",
+      "url": "https://rilegislature.gov/representatives/Fascia/Pages/Biography.aspx"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/richard-fascia-a0436422"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

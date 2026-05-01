@@ -1,0 +1,72 @@
+{
+  "id": "ed-osienski",
+  "name": "Ed Osienski",
+  "firstName": "Ed",
+  "lastName": "Osienski",
+  "photo": "/images/officials/state-legislature/de/ed-osienski.jpg",
+  "photoSourceUrl": "https://housedems.delaware.gov/wp-content/blogs.dir/210/files/sites/210/2023/02/Osienski.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-24",
+  "jurisdiction": "Delaware House of Representatives",
+  "county": [
+    "Delaware"
+  ],
+  "termStart": "2011-01-11",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "P.O. Box 1401 411 Legislative Ave., Dover, DE 19901",
+    "phone": "302-744-4351",
+    "email": "edward.osienski@delaware.gov",
+    "website": "https://housedems.delaware.gov/members/house-district-24/"
+  },
+  "bio": "Ed Osienski serves as State Representative for Delaware House of Representatives District 24. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "DE",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://housedems.delaware.gov/members/house-district-24/"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/de/legislature/Edward-S-Osienski-07cb3c97-de4e-4210-8c83-b7276c001024.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://housedems.delaware.gov/wp-content/blogs.dir/210/files/sites/210/2023/02/Osienski.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Edward_Osienski"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Edward_Osienski"
+    },
+    {
+      "title": "Public source",
+      "url": "https://housedems.delaware.gov/members/house-district-24"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/126460/ed-osienski"
+    },
+    {
+      "title": "Public source",
+      "url": "https://legis.delaware.gov/AssemblyMember/150/Osienski"
+    },
+    {
+      "title": "legislator list page",
+      "url": "https://legis.delaware.gov/House"
+    },
+    {
+      "title": "Public source",
+      "url": "https://legis.delaware.gov/json/House/GetRepresentatives"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

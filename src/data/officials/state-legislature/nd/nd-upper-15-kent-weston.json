@@ -1,0 +1,66 @@
+{
+  "id": "kent-weston",
+  "name": "Kent Weston",
+  "firstName": "Kent",
+  "lastName": "Weston",
+  "photo": "/images/officials/state-legislature/nd/kent-weston.jpg",
+  "photoSourceUrl": "https://www.ndlegis.gov/sites/default/files/styles/member_list_photo/public/person/photo/kweston2023.jpg?itok=uNPsAGmo",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-15",
+  "jurisdiction": "North Dakota Senate",
+  "county": [
+    "North Dakota"
+  ],
+  "termStart": "2024-12-01",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "email": "kweston@ndlegis.gov",
+    "website": "https://ndlegis.gov/biography/kent-weston"
+  },
+  "bio": "Kent Weston serves as State Senator for North Dakota Senate District 15. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "ND",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://ndlegis.gov/biography/kent-weston"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/nd/legislature/Kent-Weston-f1041f2b-2e6e-41b0-9313-9767f7c03dbe.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://www.ndlegis.gov/sites/default/files/styles/member_list_photo/public/person/photo/kweston2023.jpg?itok=uNPsAGmo"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Kent_Weston"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Kent_Weston"
+    },
+    {
+      "title": "Public source",
+      "url": "https://kentwestonforsenate.com/about"
+    },
+    {
+      "title": "members list page",
+      "url": "https://www.ndlegis.gov/assembly/68-2023/regular/members?combine=&field_legis_chamber_target_id=All&field_legis_district_target_id=All&field_legislator_party_target_id=All&page=8"
+    },
+    {
+      "title": "members list page",
+      "url": "https://www.ndlegis.gov/assembly/68-2023/regular/members?page=8"
+    },
+    {
+      "title": "member details page",
+      "url": "https://www.ndlegis.gov/biography/kent-weston"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

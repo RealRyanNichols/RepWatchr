@@ -1,0 +1,64 @@
+{
+  "id": "terry-johnson",
+  "name": "Terry Johnson",
+  "firstName": "Terry",
+  "lastName": "Johnson",
+  "photo": "/images/officials/state-legislature/oh/terry-johnson.jpg",
+  "photoSourceUrl": "https://www.legislature.ohio.gov/assets/people/terry-johnson/headshots/thumbnails/medium/terry-johnson-may-2023-headshot_medium.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-14",
+  "jurisdiction": "Ohio Senate",
+  "county": [
+    "Ohio"
+  ],
+  "termStart": "2019-09-18",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 226, Statehouse, 1 Capitol Square Second Floor, Columbus, OH 43215",
+    "phone": "614-466-8082",
+    "email": "sd14@ohiosenate.gov",
+    "website": "https://www.ohiosenate.gov/members/terry-johnson"
+  },
+  "bio": "Terry Johnson serves as State Senator for Ohio Senate District 14. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "OH",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.ohiosenate.gov/members/terry-johnson"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/oh/legislature/Terry-Johnson-57300c34-0e2d-4e85-bdce-c4fb8c781541.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://www.legislature.ohio.gov/assets/people/terry-johnson/headshots/thumbnails/medium/terry-johnson-may-2023-headshot_medium.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Terry_Johnson,_Ohio_Politician"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Terry_Johnson_(Ohio_politician)"
+    },
+    {
+      "title": "member details page",
+      "url": "https://ohiosenate.gov/members/terry-johnson"
+    },
+    {
+      "title": "member list page",
+      "url": "https://www.legislature.ohio.gov/legislators/senate-directory"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.ohiosenate.gov/senators"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

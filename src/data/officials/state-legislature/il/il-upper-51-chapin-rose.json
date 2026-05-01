@@ -1,0 +1,72 @@
+{
+  "id": "chapin-rose",
+  "name": "Chapin Rose",
+  "firstName": "Chapin",
+  "lastName": "Rose",
+  "photo": "/images/officials/state-legislature/il/chapin-rose.jpg",
+  "photoSourceUrl": "https://cdn.ilga.gov/assets/img/members/{BA95E1D1-0570-4492-B739-D1F593F183FD}.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-51",
+  "jurisdiction": "Illinois Senate",
+  "county": [
+    "Illinois"
+  ],
+  "termStart": "2013-01-09",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 108, Capitol Building, Springfield, IL 62706",
+    "phone": "217-558-1006",
+    "email": "senatorchapinrose@gmail.com",
+    "website": "https://ilga.gov/senate/Senator.asp?GA=101&MemberID=2621"
+  },
+  "bio": "Chapin Rose serves as State Senator for Illinois Senate District 51. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "IL",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://ilga.gov/senate/Senator.asp?GA=101&MemberID=2621"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/il/legislature/Chapin-Rose-b748f1e8-6cfd-47d6-9398-5817aa879f39.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://cdn.ilga.gov/assets/img/members/{BA95E1D1-0570-4492-B739-D1F593F183FD}.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Chapin_Rose"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Chapin_Rose"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ilga.gov/senate/default.asp?GA=101"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ilga.gov/senate/default.asp?GA=102"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ilga.gov/senate/default.asp?GA=103"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ilga.gov/senate/Senator.asp?GA=102&MemberID=2856"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ilga.gov/senate/Senator.asp?GA=103&MemberID=3068"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

@@ -1,0 +1,61 @@
+{
+  "id": "rachel-may",
+  "name": "Rachel May",
+  "firstName": "Rachel",
+  "lastName": "May",
+  "party": "D",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-48",
+  "jurisdiction": "New York Senate",
+  "county": [
+    "New York"
+  ],
+  "termStart": "2023-01-01",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 803, Legislative Office Building 198 State Street, Albany, NY 12247",
+    "phone": "518-455-2838",
+    "email": "may@nysenate.gov",
+    "website": "https://www.nysenate.gov/senators-committees",
+    "socialMedia": {
+      "x": "https://x.com/RachelMayNY",
+      "twitter": "https://x.com/RachelMayNY"
+    }
+  },
+  "bio": "Rachel May serves as State Senator for New York Senate District 48. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "NY",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.nysenate.gov/senators-committees"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ny/legislature/Rachel-May-92f3f397-dd30-4d35-95dc-6381a8d9dcd5.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Rachel_May"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Rachel_May"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/rachel-may-4832198"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.nysenate.gov/senators/rachel-may"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.nysenate.gov/senators/rachel-may/contact"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

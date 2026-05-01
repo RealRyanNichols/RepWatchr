@@ -1,0 +1,65 @@
+{
+  "id": "ashley-gantt",
+  "name": "Ashley Gantt",
+  "firstName": "Ashley",
+  "lastName": "Gantt",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-109",
+  "jurisdiction": "Florida House of Representatives",
+  "county": [
+    "Florida"
+  ],
+  "termStart": "2022-11-08",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 1101, The Capitol 402 S. Monroe St., Tallahassee, FL 32399",
+    "phone": "850-717-5109",
+    "email": "ashley.gantt@flhouse.gov",
+    "website": "https://myfloridahouse.gov/Sections/Representatives/details.aspx?MemberId=4897&LegislativeTermId=90"
+  },
+  "bio": "Ashley Gantt serves as State Representative for Florida House of Representatives District 109. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "FL",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://myfloridahouse.gov/Sections/Representatives/details.aspx?MemberId=4897&LegislativeTermId=90"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/fl/legislature/Ashley-Viola-Gantt-2c62c9ae-8d1d-4dc3-a86a-fcc5dd7ba286.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Ashley_Gantt"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Ashley_Gantt"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.flhouse.gov/Sections/Representatives/custom/details.aspx?MemberId=4897"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.flhouse.gov/Sections/Representatives/details.aspx?MemberId=4897"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/ashley-v-gantt-esq"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.myfloridahouse.gov/Sections/Representatives/details.aspx?MemberId=4897&LegislativeTermId=90"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.myfloridahouse.gov/Sections/Representatives/details.aspx?MemberId=4897&LegislativeTermId=91"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

@@ -1,0 +1,57 @@
+{
+  "id": "leslie-rossi",
+  "name": "Leslie Rossi",
+  "firstName": "Leslie",
+  "lastName": "Rossi",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-59",
+  "jurisdiction": "Pennsylvania House of Representatives",
+  "county": [
+    "Pennsylvania"
+  ],
+  "termStart": "2021-06-07",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 51B, East Wing P.O. Box 202059, Harrisburg, PA 17120",
+    "phone": "717-783-9311",
+    "email": "lrossi@pahousegop.com",
+    "website": "https://www.legis.state.pa.us/cfdocs/legis/home/member_information/House_bio.cfm?id=1927"
+  },
+  "bio": "Leslie Rossi serves as State Representative for Pennsylvania House of Representatives District 59. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "PA",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.legis.state.pa.us/cfdocs/legis/home/member_information/House_bio.cfm?id=1927"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/pa/legislature/Leslie-Rossi-71bb086e-11d9-496d-b274-91d7a8b85eaf.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Leslie_Baum_Rossi"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Leslie_Rossi"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.legis.state.pa.us/cfdocs/legis/home/member_information/mbrList.cfm?body=H&sort=alpha"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.palegis.us/house/members/bio/1927/rep-rossi"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.reprossi.com"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

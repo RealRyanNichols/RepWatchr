@@ -1,0 +1,60 @@
+{
+  "id": "brian-garcia",
+  "name": "Brian Garcia",
+  "firstName": "Brian",
+  "lastName": "Garcia",
+  "photo": "/images/officials/state-legislature/az/brian-garcia.jpg",
+  "photoSourceUrl": "https://azleg.gov/alisImages/MemberPhotos/57leg/House/GARCIA.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-8",
+  "jurisdiction": "Arizona House of Representatives",
+  "county": [
+    "Arizona"
+  ],
+  "termStart": "2025-01-13",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 335, 1700 W. Washington St., Phoenix, AZ 85007",
+    "phone": "602-926-3329",
+    "email": "bgarcia@azleg.gov",
+    "website": "https://www.azleg.gov/house-member/?legislature=57&session=129&legislator=2358"
+  },
+  "bio": "Brian Garcia serves as State Representative for Arizona House of Representatives District 8. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "AZ",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.azleg.gov/house-member/?legislature=57&session=129&legislator=2358"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/az/legislature/Brian-Garcia-c13f449f-0423-4ad5-836b-69913aad6600.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://azleg.gov/alisImages/MemberPhotos/57leg/House/GARCIA.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Brian_Garcia"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/216876/brian-garcia"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.legistorm.com/bo.php/core_person/edit/core_person_id/211707"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/briangarciaaz"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

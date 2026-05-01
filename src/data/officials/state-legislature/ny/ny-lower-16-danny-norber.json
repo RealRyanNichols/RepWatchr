@@ -1,0 +1,56 @@
+{
+  "id": "danny-norber",
+  "name": "Danny Norber",
+  "firstName": "Danny",
+  "lastName": "Norber",
+  "photo": "/images/officials/state-legislature/ny/danny-norber.jpg",
+  "photoSourceUrl": "https://s3.amazonaws.com/ballotpedia-api4/files/thumbs/200/300/dnorber2.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "Assemblymember",
+  "district": "HD-16",
+  "jurisdiction": "New York State Assembly",
+  "county": [
+    "New York"
+  ],
+  "termStart": "2025-01-01",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 545, Legislative Office Building, Albany, NY 12248",
+    "phone": "518-455-5192",
+    "email": "norberd@nyassembly.gov",
+    "website": "https://nyassembly.gov/mem/Daniel-J-Norber"
+  },
+  "bio": "Danny Norber serves as Assemblymember for New York State Assembly District 16. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "NY",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://nyassembly.gov/mem/Daniel-J-Norber"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ny/legislature/Danny-Norber-2e502adc-4b0e-46fa-b5d4-0d2f7696db49.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://s3.amazonaws.com/ballotpedia-api4/files/thumbs/200/300/dnorber2.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Daniel_Norber"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Daniel_Norber"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/daniel-norber-9716168"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

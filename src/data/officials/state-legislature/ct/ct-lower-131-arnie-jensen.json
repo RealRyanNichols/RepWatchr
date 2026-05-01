@@ -1,0 +1,57 @@
+{
+  "id": "arnie-jensen",
+  "name": "Arnie Jensen",
+  "firstName": "Arnie",
+  "lastName": "Jensen",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-131",
+  "jurisdiction": "Connecticut House of Representatives",
+  "county": [
+    "Connecticut"
+  ],
+  "termStart": "2025-01-08",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 4000, Legislative Office Building 300 Capitol Ave., Hartford, CT 06106",
+    "phone": "860-240-8700",
+    "email": "arnold.jensen@housegop.ct.gov",
+    "website": "https://www.cthousegop.com/jensen/"
+  },
+  "bio": "Arnie Jensen serves as State Representative for Connecticut House of Representatives District 131. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "CT",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.cthousegop.com/jensen/"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ct/legislature/Arnie-Jensen-5e12bcd3-8cc0-4a0f-9c7c-4ecec6442948.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Arnold_Jensen"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Arnold_Jensen"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/219115/arnold-jensen"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.cthousegop.com/jensen"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/arnie-jensen-2b1bb110"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

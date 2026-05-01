@@ -1,0 +1,56 @@
+{
+  "id": "ken-sweezey",
+  "name": "Ken Sweezey",
+  "firstName": "Ken",
+  "lastName": "Sweezey",
+  "photo": "/images/officials/state-legislature/ma/ken-sweezey.jpg",
+  "photoSourceUrl": "https://malegislature.gov/Legislators/Profile/170/KPS1.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-6th Plymouth",
+  "jurisdiction": "Massachusetts House of Representatives",
+  "county": [
+    "Massachusetts"
+  ],
+  "termStart": "2025-01-01",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 237, State House 24 Beacon St., Boston, MA 02133",
+    "phone": "617-722-2305",
+    "email": "ken.sweezey@mahouse.gov",
+    "website": "https://malegislature.gov/Legislators/Profile/KPS1"
+  },
+  "bio": "Ken Sweezey serves as State Representative for Massachusetts House of Representatives District 6th Plymouth. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "MA",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://malegislature.gov/Legislators/Profile/KPS1"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ma/legislature/Ken-Sweezey-1eece00d-5b31-4be0-9263-b594863b295c.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://malegislature.gov/Legislators/Profile/170/KPS1.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Kenneth_Sweezey"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/209621/kenneth-sweezey"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/kenneth-sweezey-257b1891"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

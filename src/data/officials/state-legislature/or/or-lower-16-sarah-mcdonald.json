@@ -1,0 +1,56 @@
+{
+  "id": "sarah-mcdonald",
+  "name": "Sarah McDonald",
+  "firstName": "Sarah",
+  "lastName": "McDonald",
+  "photo": "/images/officials/state-legislature/or/sarah-mcdonald.jpg",
+  "photoSourceUrl": "https://s3.amazonaws.com/ballotpedia-api4/files/thumbs/200/300/Sarah_McDonald.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-16",
+  "jurisdiction": "Oregon House of Representatives",
+  "county": [
+    "Oregon"
+  ],
+  "termStart": "2025-01-13",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room H-477, 900 Court St. NE, Salem, OR 97301",
+    "phone": "503-986-1416",
+    "email": "rep.sarahfingermcdonald@oregonlegislature.gov",
+    "website": "https://www.oregonlegislature.gov/mcdonald"
+  },
+  "bio": "Sarah McDonald serves as State Representative for Oregon House of Representatives District 16. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "OR",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.oregonlegislature.gov/mcdonald"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/or/legislature/Sarah-McDonald-77cbf3a1-387e-424d-87fc-51a46d770921.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://s3.amazonaws.com/ballotpedia-api4/files/thumbs/200/300/Sarah_McDonald.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Sarah_McDonald"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/sarah-finger-mcdonald-209aaa2b5"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.oregonlegislature.gov/mcdonald/Pages/biography.aspx"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

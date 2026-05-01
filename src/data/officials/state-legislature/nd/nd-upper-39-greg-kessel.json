@@ -1,0 +1,62 @@
+{
+  "id": "greg-kessel",
+  "name": "Greg Kessel",
+  "firstName": "Greg",
+  "lastName": "Kessel",
+  "photo": "/images/officials/state-legislature/nd/greg-kessel.jpg",
+  "photoSourceUrl": "https://www.ndlegis.gov/sites/default/files/styles/member_list_photo/public/person/photo/gkessel2023.jpg?itok=VVvSgZzs",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-39",
+  "jurisdiction": "North Dakota Senate",
+  "county": [
+    "North Dakota"
+  ],
+  "termStart": "2022-12-01",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "email": "gkessel@ndlegis.gov",
+    "website": "https://ndlegis.gov/biography/greg-kessel"
+  },
+  "bio": "Greg Kessel serves as State Senator for North Dakota Senate District 39. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "ND",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://ndlegis.gov/biography/greg-kessel"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/nd/legislature/Greg-Kessel-6c9671e4-274f-41cd-b1ba-d6b2dd55ba5e.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://www.ndlegis.gov/sites/default/files/styles/member_list_photo/public/person/photo/gkessel2023.jpg?itok=VVvSgZzs"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Greg_Kessel"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Greg_Kessel"
+    },
+    {
+      "title": "members list page",
+      "url": "https://www.ndlegis.gov/assembly/68-2023/regular/members?combine=&field_legis_chamber_target_id=All&field_legis_district_target_id=All&field_legislator_party_target_id=All&page=3"
+    },
+    {
+      "title": "members list page",
+      "url": "https://www.ndlegis.gov/assembly/68-2023/regular/members?page=3"
+    },
+    {
+      "title": "member details page",
+      "url": "https://www.ndlegis.gov/biography/greg-kessel"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

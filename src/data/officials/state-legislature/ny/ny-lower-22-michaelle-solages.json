@@ -1,0 +1,76 @@
+{
+  "id": "michaelle-solages",
+  "name": "Michaelle Solages",
+  "firstName": "Michaelle",
+  "lastName": "Solages",
+  "photo": "/images/officials/state-legislature/ny/michaelle-solages.jpg",
+  "photoSourceUrl": "https://assembly.state.ny.us/write/upload/member_files/022/headshot/022.jpg?hst=1660073080",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "Assemblymember",
+  "district": "HD-22",
+  "jurisdiction": "New York State Assembly",
+  "county": [
+    "New York"
+  ],
+  "termStart": "2013-01-01",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 837, Legislative Office Building, Albany, NY 12248",
+    "phone": "518-455-4465",
+    "email": "solagesm@nyassembly.gov",
+    "website": "https://assembly.state.ny.us/mem/?sh=email",
+    "socialMedia": {
+      "x": "https://x.com/solagesNY",
+      "twitter": "https://x.com/solagesNY"
+    }
+  },
+  "bio": "Michaelle Solages serves as Assemblymember for New York State Assembly District 22. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "NY",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://assembly.state.ny.us/mem/?sh=email"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ny/legislature/Michaelle-Solages-2cb280b3-0aa9-4a76-abfd-3118e0d96a08.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://assembly.state.ny.us/write/upload/member_files/022/headshot/022.jpg?hst=1660073080"
+    },
+    {
+      "title": "Public source",
+      "url": "https://assembly.state.ny.us/mem/Michaelle-C-Solages"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Michaelle_C._Solages"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Michaelle_C._Solages"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/143116/michaelle-solages"
+    },
+    {
+      "title": "Public source",
+      "url": "https://nyassembly.gov/mem/Michaelle-C-Solages"
+    },
+    {
+      "title": "Public source",
+      "url": "https://solagesny.com"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/michaelle-solages-13a94716"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

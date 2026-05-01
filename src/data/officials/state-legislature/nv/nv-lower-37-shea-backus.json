@@ -1,0 +1,60 @@
+{
+  "id": "shea-backus",
+  "name": "Shea Backus",
+  "firstName": "Shea",
+  "lastName": "Backus",
+  "photo": "/images/officials/state-legislature/nv/shea-backus.jpg",
+  "photoSourceUrl": "http://www.leg.state.nv.us/Session/36th2025Special/legislators/Assembly/Images/Backus.Shea.368.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "Assemblymember",
+  "district": "HD-37",
+  "jurisdiction": "Nevada Assembly",
+  "county": [
+    "Nevada"
+  ],
+  "termStart": "2022-11-09",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 4109, Nevada Assembly 401 S. Carson St., Carson City, NV 89701",
+    "phone": "775-684-8505",
+    "email": "shea.backus@asm.state.nv.us",
+    "website": "https://www.leg.state.nv.us/App/Legislator/A/Assembly/Current/37"
+  },
+  "bio": "Shea Backus serves as Assemblymember for Nevada Assembly District 37. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "NV",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.leg.state.nv.us/App/Legislator/A/Assembly/Current/37"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/nv/legislature/Shea-Backus-1fa69460-c910-4cf1-acfb-1d44c342e658.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "http://www.leg.state.nv.us/Session/36th2025Special/legislators/Assembly/Images/Backus.Shea.368.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Shea_Backus"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Shea_Backus"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.leg.state.nv.us/App/Legislator/A/Assembly/Current"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/shea-backus-7369231b"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

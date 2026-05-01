@@ -1,0 +1,64 @@
+{
+  "id": "pete-johnson",
+  "name": "Pete Johnson",
+  "firstName": "Pete",
+  "lastName": "Johnson",
+  "photo": "/images/officials/state-legislature/mn/pete-johnson.jpg",
+  "photoSourceUrl": "https://www.house.mn.gov/hinfo/memberimgls94/08A.gif?v=112221",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-8A",
+  "jurisdiction": "Minnesota House of Representatives",
+  "county": [
+    "Minnesota"
+  ],
+  "termStart": "2025-01-14",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Centennial Office Building 658 Cedar St., Fifth Floor, St. Paul, MN 55155",
+    "phone": "651-296-4246",
+    "email": "rep.pete.johnson@house.mn.gov",
+    "website": "https://www.house.mn.gov/members/profile/15636"
+  },
+  "bio": "Pete Johnson serves as State Representative for Minnesota House of Representatives District 8A. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "MN",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.house.mn.gov/members/profile/15636"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/mn/legislature/Pete-Johnson-fb643600-2577-4561-a902-6f158a5c40e4.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://www.house.mn.gov/hinfo/memberimgls94/08A.gif?v=112221"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Pete_Johnson_(Minnesota)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Peter_Johnson_(Minnesota_politician)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/218717/pete-johnson"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/pete-johnson-10017b88"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.lrl.mn.gov/legdb/fulldetail?ID=15636"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

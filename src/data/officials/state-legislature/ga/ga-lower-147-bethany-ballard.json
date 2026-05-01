@@ -1,0 +1,65 @@
+{
+  "id": "bethany-ballard",
+  "name": "Bethany Ballard",
+  "firstName": "Bethany",
+  "lastName": "Ballard",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-147",
+  "jurisdiction": "Georgia House of Representatives",
+  "county": [
+    "Georgia"
+  ],
+  "termStart": "2023-01-09",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 612-C, Coverdell Legislative Office Building 18 Capitol Square SW, Atlanta, GA 30334",
+    "phone": "404-656-0325",
+    "email": "bethany.ballard@house.ga.gov",
+    "website": "https://www.legis.ga.gov/members/house"
+  },
+  "bio": "Bethany Ballard serves as State Representative for Georgia House of Representatives District 147. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "GA",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.legis.ga.gov/members/house"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ga/legislature/Bethany-Ballard-8b4b00cb-6f78-4b69-b788-796b19d94752.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Bethany_Ballard"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Bethany_Ballard"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/203507/bethany-ballard"
+    },
+    {
+      "title": "API member detail (requires authorization token)",
+      "url": "https://www.legis.ga.gov/api/members/detail/5051?session=1031&chamber=1"
+    },
+    {
+      "title": "API members list (requires authorization token)",
+      "url": "https://www.legis.ga.gov/api/members/list/1031"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.legis.ga.gov/members/house/5051"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/bethany-ballard-21a21313a"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

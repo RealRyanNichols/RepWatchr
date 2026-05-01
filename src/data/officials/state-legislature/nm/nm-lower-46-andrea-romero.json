@@ -1,0 +1,74 @@
+{
+  "id": "andrea-romero",
+  "name": "Andrea Romero",
+  "firstName": "Andrea",
+  "lastName": "Romero",
+  "photo": "/images/officials/state-legislature/nm/andrea-romero.jpg",
+  "photoSourceUrl": "https://www.nmlegis.gov/Images/Legislators/House/HROAN.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-46",
+  "jurisdiction": "New Mexico House of Representatives",
+  "county": [
+    "New Mexico"
+  ],
+  "termStart": "2019-01-15",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "State Capitol Room 312A, New Mexico  490 Old Santa Fe Trail, Santa Fe, NM 87501",
+    "phone": "505-986-4344",
+    "email": "andrea@andrearomero.com",
+    "website": "https://www.linkedin.com/in/andreadromero/",
+    "socialMedia": {
+      "x": "https://x.com/aromero_nm",
+      "twitter": "https://x.com/aromero_nm",
+      "facebook": "https://facebook.com/andrearomeronm46",
+      "instagram": "https://instagram.com/andrearomero_nm46"
+    }
+  },
+  "bio": "Andrea Romero serves as State Representative for New Mexico House of Representatives District 46. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "NM",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.linkedin.com/in/andreadromero/"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/nm/legislature/Andrea-Romero-ed0ba54a-4fc3-4c50-aa0d-f74b1f0e86f6.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://www.nmlegis.gov/Images/Legislators/House/HROAN.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Andrea_Romero"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Andrea_Romero"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/180803/andrea-romero"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/andreadromero"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.nmlegis.gov/Members/Legislator?SponCode=HROAN"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.nmlegis.gov/Members/Legislator_List?T=R"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

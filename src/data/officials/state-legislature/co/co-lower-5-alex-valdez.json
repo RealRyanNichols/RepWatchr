@@ -1,0 +1,53 @@
+{
+  "id": "alex-valdez",
+  "name": "Alex Valdez",
+  "firstName": "Alex",
+  "lastName": "Valdez",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-5",
+  "jurisdiction": "Colorado House of Representatives",
+  "county": [
+    "Colorado"
+  ],
+  "termStart": "2019-01-09",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "State Capitol Room 307, Colorado  Building 200 E. Colfax Ave., Denver, CO 80203",
+    "phone": "303-866-2925",
+    "email": "alex.valdez.house@coleg.gov",
+    "website": "https://leg.colorado.gov/legislators/alex-valdez"
+  },
+  "bio": "Alex Valdez serves as State Representative for Colorado House of Representatives District 5. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "CO",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://leg.colorado.gov/legislators/alex-valdez"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/co/legislature/Alex-Valdez-45c957a4-0017-4c0c-8650-393d656fc5a0.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Alex_Valdez_(Colorado)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Alex_Valdez"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/181727/alex-valdez"
+    },
+    {
+      "title": "Public source",
+      "url": "https://leg.colorado.gov/legislators"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

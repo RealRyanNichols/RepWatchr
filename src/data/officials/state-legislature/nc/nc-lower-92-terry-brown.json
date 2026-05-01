@@ -1,0 +1,60 @@
+{
+  "id": "terry-brown",
+  "name": "Terry Brown",
+  "firstName": "Terry",
+  "lastName": "Brown",
+  "photo": "/images/officials/state-legislature/nc/terry-brown.jpg",
+  "photoSourceUrl": "https://www.ncleg.gov/Members/MemberImage/H/783/Low",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-92",
+  "jurisdiction": "North Carolina House of Representatives",
+  "county": [
+    "North Carolina"
+  ],
+  "termStart": "2021-01-01",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 509, Legislative Office Building 300 N. Salisbury St., Raleigh, NC 27603",
+    "phone": "919-733-5654",
+    "email": "terry.brown@ncleg.gov",
+    "website": "https://www.ncleg.gov/Members/Biography/H/783"
+  },
+  "bio": "Terry Brown serves as State Representative for North Carolina House of Representatives District 92. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "NC",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.ncleg.gov/Members/Biography/H/783"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/nc/legislature/Terry-M-Brown-Jr-1ac38d5f-d089-4589-bcc4-bef1f1675956.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://www.ncleg.gov/Members/MemberImage/H/783/Low"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Terry_Brown_Jr._(North_Carolina)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.bipc.com/terry-m.-brown-jr"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/terry-brown-jr"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.ncleg.gov/Members/MemberTable/H"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

@@ -1,0 +1,56 @@
+{
+  "id": "mark-sylvia",
+  "name": "Mark Sylvia",
+  "firstName": "Mark",
+  "lastName": "Sylvia",
+  "photo": "/images/officials/state-legislature/ma/mark-sylvia.jpg",
+  "photoSourceUrl": "https://malegislature.gov/Legislators/Profile/170/MDS1.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-10th Bristol",
+  "jurisdiction": "Massachusetts House of Representatives",
+  "county": [
+    "Massachusetts"
+  ],
+  "termStart": "2025-01-01",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 134, State House 24 Beacon St., Boston, MA 02133",
+    "phone": "617-722-2400",
+    "email": "mark.sylvia@mahouse.gov",
+    "website": "https://malegislature.gov/Legislators/Profile/MDS1"
+  },
+  "bio": "Mark Sylvia serves as State Representative for Massachusetts House of Representatives District 10th Bristol. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "MA",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://malegislature.gov/Legislators/Profile/MDS1"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ma/legislature/Mark-Sylvia-7446bdd1-f6b4-40cb-a039-41f4be68833e.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://malegislature.gov/Legislators/Profile/170/MDS1.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Mark_Sylvia"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/218902/mark-sylvia"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/mark-sylvia-73457a1"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

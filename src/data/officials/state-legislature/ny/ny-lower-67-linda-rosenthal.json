@@ -1,0 +1,72 @@
+{
+  "id": "linda-rosenthal",
+  "name": "Linda Rosenthal",
+  "firstName": "Linda",
+  "lastName": "Rosenthal",
+  "photo": "/images/officials/state-legislature/ny/linda-rosenthal.jpg",
+  "photoSourceUrl": "https://assembly.state.ny.us/write/upload/member_files/067/headshot/067.jpg?hst=1660073851",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "Assemblymember",
+  "district": "HD-67",
+  "jurisdiction": "New York State Assembly",
+  "county": [
+    "New York"
+  ],
+  "termStart": "2006-02-28",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 943, Legislative Office Building, Albany, NY 12248",
+    "phone": "518-455-5802",
+    "email": "rosentl@nyassembly.gov",
+    "website": "https://assembly.state.ny.us/mem/?sh=email",
+    "socialMedia": {
+      "x": "https://x.com/LindaBRosenthal",
+      "twitter": "https://x.com/LindaBRosenthal"
+    }
+  },
+  "bio": "Linda Rosenthal serves as Assemblymember for New York State Assembly District 67. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "NY",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://assembly.state.ny.us/mem/?sh=email"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ny/legislature/Linda-Rosenthal-2c20fb3d-4c95-4494-ac3b-a1ab93f72439.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://assembly.state.ny.us/write/upload/member_files/067/headshot/067.jpg?hst=1660073851"
+    },
+    {
+      "title": "Public source",
+      "url": "https://assembly.state.ny.us/mem/Linda-B-Rosenthal"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Linda_Rosenthal"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Linda_Rosenthal"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/58067/linda-rosenthal"
+    },
+    {
+      "title": "Public source",
+      "url": "https://nyassembly.gov/mem/linda-b-rosenthal"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/linda-b-rosenthal-5311ab198"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

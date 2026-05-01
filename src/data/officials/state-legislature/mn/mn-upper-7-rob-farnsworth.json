@@ -1,0 +1,60 @@
+{
+  "id": "rob-farnsworth",
+  "name": "Rob Farnsworth",
+  "firstName": "Rob",
+  "lastName": "Farnsworth",
+  "photo": "/images/officials/state-legislature/mn/rob-farnsworth.jpg",
+  "photoSourceUrl": "https://www.senate.mn/graphics/07Farnsworth.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-7",
+  "jurisdiction": "Minnesota Senate",
+  "county": [
+    "Minnesota"
+  ],
+  "termStart": "2023-01-03",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 2323, Minnesota Senate Building 95 University Ave. West, St. Paul, MN 55155",
+    "phone": "651-296-8436",
+    "email": "sen.robert.farnsworth@senate.mn",
+    "website": "https://www.senate.mn/members/member_bio.html?mem_id=1254"
+  },
+  "bio": "Rob Farnsworth serves as State Senator for Minnesota Senate District 7. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "MN",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.senate.mn/members/member_bio.html?mem_id=1254"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/mn/legislature/Robert-D-Farnsworth-9cdb9977-9923-4124-ae93-c45e28f1f51c.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://www.senate.mn/graphics/07Farnsworth.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Robert_Farnsworth"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Robert_Farnsworth_(politician)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/171450/robert-farnsworth"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.senate.mn/api/members"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

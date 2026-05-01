@@ -1,0 +1,70 @@
+{
+  "id": "silas-miller",
+  "name": "Silas Miller",
+  "firstName": "Silas",
+  "lastName": "Miller",
+  "photo": "/images/officials/state-legislature/ks/silas-miller.jpg",
+  "photoSourceUrl": "https://media.sharethetrail.net/prod_d_1/images/silas-miller_5_sq.height-800.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-25",
+  "jurisdiction": "Kansas Senate",
+  "county": [
+    "Kansas"
+  ],
+  "termStart": "2025-12-22",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "email": "silas.miller@senate.ks.gov",
+    "website": "https://www.kslegislature.gov/li/b2025_26/members/rep_miller_silas_1/"
+  },
+  "bio": "Silas Miller serves as State Senator for Kansas Senate District 25. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "KS",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.kslegislature.gov/li/b2025_26/members/rep_miller_silas_1/"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ks/legislature/Silas-Miller-38e5e1b5-72d2-4968-be98-032e8320d475.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://media.sharethetrail.net/prod_d_1/images/silas-miller_5_sq.height-800.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Silas_Miller"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Silas_Miller"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.kslegislature.gov/li/b2025_26/members/rep_miller_silas_1"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.kslegislature.gov/li/b2025_26/members/sen_miller_silas_1"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.kslegislature.org/li/api/v11/rev-1/members/rep_miller_silas_1"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.kslegislature.org/li/api/v11/rev-1/members/rep_miller_silas_1/"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.kslegislature.org/li/b2023_24/members/rep_miller_silas_1"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

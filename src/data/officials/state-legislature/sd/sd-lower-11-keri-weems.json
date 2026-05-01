@@ -1,0 +1,64 @@
+{
+  "id": "keri-weems",
+  "name": "Keri Weems",
+  "firstName": "Keri",
+  "lastName": "Weems",
+  "photo": "/images/officials/state-legislature/sd/keri-weems.jpg",
+  "photoSourceUrl": "https://images.squarespace-cdn.com/content/v1/6633129388483f6e2a0ea63e/4fa432f3-e858-4d44-a401-ddc328a1f893/29d976e1-b6bb-4539-807c-c4e93f10ee4f+%281%29.jpg?format=2500w",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-11",
+  "jurisdiction": "South Dakota House of Representatives",
+  "county": [
+    "South Dakota"
+  ],
+  "termStart": "2025-01-14",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Capitol Building 500 E. Capitol Ave., Pierre, SD 57501",
+    "phone": "605-773-3851",
+    "email": "keri.weems@sdlegislature.gov",
+    "website": "https://sdlegislature.gov/Legislators/Profile/4691/Detail"
+  },
+  "bio": "Keri Weems serves as State Representative for South Dakota House of Representatives District 11. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "SD",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://sdlegislature.gov/Legislators/Profile/4691/Detail"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/sd/legislature/Keri-Weems-708ee344-687f-499a-9f52-48cb79686167.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://images.squarespace-cdn.com/content/v1/6633129388483f6e2a0ea63e/4fa432f3-e858-4d44-a401-ddc328a1f893/29d976e1-b6bb-4539-807c-c4e93f10ee4f+%281%29.jpg?format=2500w"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Keri_Weems"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Keri_Weems"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/48583/keri-weems"
+    },
+    {
+      "title": "Public source",
+      "url": "https://sdlegislature.gov/Legislators/Profile/4831/Detail"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/keri-weems-08808491"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

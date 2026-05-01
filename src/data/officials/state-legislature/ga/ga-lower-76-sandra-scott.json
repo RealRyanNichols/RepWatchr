@@ -1,0 +1,69 @@
+{
+  "id": "sandra-scott",
+  "name": "Sandra Scott",
+  "firstName": "Sandra",
+  "lastName": "Scott",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-76",
+  "jurisdiction": "Georgia House of Representatives",
+  "county": [
+    "Georgia"
+  ],
+  "termStart": "2011-01-10",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 611-A, Coverdell Legislative Office Building 18 Capitol Square SW, Atlanta, GA 30334",
+    "phone": "404-656-0314",
+    "email": "sandra.scott@house.ga.gov",
+    "website": "https://www.house.ga.gov/Representatives/en-US/member.aspx?Member=766&Session=27"
+  },
+  "bio": "Sandra Scott serves as State Representative for Georgia House of Representatives District 76. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "GA",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.house.ga.gov/Representatives/en-US/member.aspx?Member=766&Session=27"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ga/legislature/Sandra-Scott-21c6cae1-bcd2-4403-ad39-af04b64ce55c.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Sandra_Scott"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Sandra_Scott_(politician)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/122826/sandra-scott"
+    },
+    {
+      "title": "Public source",
+      "url": "https://webservices.legis.ga.gov/GGAServices/Members/Service.svc?wsdl"
+    },
+    {
+      "title": "Detail page (requires authorization token)",
+      "url": "https://www.legis.ga.gov/api/members/detail/766?session=1029&chamber=1"
+    },
+    {
+      "title": "API member detail (requires authorization token)",
+      "url": "https://www.legis.ga.gov/api/members/detail/766?session=1031&chamber=1"
+    },
+    {
+      "title": "API members list (requires authorization token)",
+      "url": "https://www.legis.ga.gov/api/members/list/1031"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.legis.ga.gov/members/house/766"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

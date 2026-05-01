@@ -1,0 +1,61 @@
+{
+  "id": "bill-clyburn",
+  "name": "Bill Clyburn",
+  "firstName": "Bill",
+  "lastName": "Clyburn",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-82",
+  "jurisdiction": "South Carolina House of Representatives",
+  "county": [
+    "South Carolina"
+  ],
+  "termStart": "",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 416C, Blatt Building P.O. Box 11867, Columbia, SC 29201",
+    "phone": "803-734-3033",
+    "email": "billclyburn@schouse.gov",
+    "website": "https://scstatehouse.gov/member.php?code=0363636320"
+  },
+  "bio": "Bill Clyburn serves as State Representative for South Carolina House of Representatives District 82. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "SC",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://scstatehouse.gov/member.php?code=0363636320"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/sc/legislature/William-Bill-Clyburn-58d2072a-c96a-49b2-8591-a4e186dc28eb.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/William_Clyburn_Sr."
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Bill_Clyburn"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/4006/bill-clyburn-sr"
+    },
+    {
+      "title": "Public source",
+      "url": "https://scstatehouse.gov/member.php?chamber=H"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.scstatehouse.gov/member.php?chamber=H"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.scstatehouse.gov/member.php?code=0363636320"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

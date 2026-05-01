@@ -1,0 +1,69 @@
+{
+  "id": "virgil-peck",
+  "name": "Virgil Peck",
+  "firstName": "Virgil",
+  "lastName": "Peck",
+  "party": "R",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-15",
+  "jurisdiction": "Kansas Senate",
+  "county": [
+    "Kansas"
+  ],
+  "termStart": "2021-01-11",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "State Capitol Room 234-E, Kansas  Building 300 SW 10th St., Topeka, KS 66612",
+    "phone": "785-296-7742",
+    "email": "virgil.peck@senate.ks.gov",
+    "website": "https://www.kslegislature.gov/li/b2025_26/members/sen_peck_virgil_1/"
+  },
+  "bio": "Virgil Peck serves as State Senator for Kansas Senate District 15. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "KS",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.kslegislature.gov/li/b2025_26/members/sen_peck_virgil_1/"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ks/legislature/Virgil-Peck-90f4cf61-cce8-4f87-8495-c0dc298c8d27.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Virgil_Peck,_Jr."
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Virgil_Peck_Jr."
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.kslegislature.gov/li/b2025_26/members/sen_peck_virgil_1"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.kslegislature.org/li/api/v11/rev-1/members/sen_peck_virgil_1"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.kslegislature.org/li/api/v11/rev-1/members/sen_peck_virgil_1/"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.kslegislature.org/li/api/v7/rev-1/members/rep_peck_virgil_1"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.kslegislature.org/li/b2023_24/members/sen_peck_virgil_1"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.kslegislature.org/li/b2023_24/members/sen_peck_virgil_1/"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

@@ -1,0 +1,45 @@
+{
+  "id": "kiana-sears",
+  "name": "Kiana Sears",
+  "firstName": "Kiana",
+  "lastName": "Sears",
+  "party": "D",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-9",
+  "jurisdiction": "Arizona Senate",
+  "county": [
+    "Arizona"
+  ],
+  "termStart": "2025-03-31",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 314, 1700 W. Washington St., Phoenix, AZ 85007",
+    "phone": "602-926-3374",
+    "email": "ksears@azleg.gov",
+    "website": "https://www.azleg.gov/senate-member/?legislature=57&legislator=2415"
+  },
+  "bio": "Kiana Sears serves as State Senator for Arizona Senate District 9. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "AZ",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.azleg.gov/senate-member/?legislature=57&legislator=2415"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/az/legislature/Kiana-Sears-78fce9ac-3aa4-484f-b345-f55bbbf9db9b.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Kiana_Sears"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/kiana-maria-sears"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

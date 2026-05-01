@@ -1,0 +1,51 @@
+{
+  "id": "eleni-kounalakis",
+  "name": "Eleni Kounalakis",
+  "firstName": "Eleni",
+  "lastName": "Kounalakis",
+  "photo": "/images/officials/state-executive/ca/eleni-kounalakis.jpg",
+  "photoSourceUrl": "https://upload.wikimedia.org/wikipedia/commons/4/41/Ambassador_Eleni_Kounalakis.jpeg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "Lieutenant Governor",
+  "district": "California",
+  "jurisdiction": "California statewide public office",
+  "county": [
+    "California"
+  ],
+  "termStart": "2019-01-07",
+  "termEnd": "2027-01-04",
+  "contactInfo": {
+    "office": "1021 O Street, Suite 8730; Sacramento, CA 95814",
+    "phone": "916-445-8994",
+    "website": "https://ltg.ca.gov/"
+  },
+  "bio": "Eleni Kounalakis is listed as Lieutenant Governor for California. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "CA",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://ltg.ca.gov/"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ca/executive/Eleni-Kounalakis-113aeeca-7bac-4407-8ec3-bceab97680e5.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/4/41/Ambassador_Eleni_Kounalakis.jpeg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Eleni_Kounalakis"
+    },
+    {
+      "title": "Public source",
+      "url": "https://commons.wikimedia.org/wiki/File:Ambassador_Eleni_Kounalakis.jpeg"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

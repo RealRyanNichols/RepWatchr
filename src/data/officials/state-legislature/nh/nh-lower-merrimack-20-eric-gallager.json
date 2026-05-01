@@ -1,0 +1,72 @@
+{
+  "id": "eric-gallager",
+  "name": "Eric Gallager",
+  "firstName": "Eric",
+  "lastName": "Gallager",
+  "photo": "/images/officials/state-legislature/nh/eric-gallager.jpg",
+  "photoSourceUrl": "https://storage.googleapis.com/enview-dev-public-general/legislative-people-photos/93767.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-Merrimack 20",
+  "jurisdiction": "New Hampshire House of Representatives",
+  "county": [
+    "New Hampshire"
+  ],
+  "termStart": "2022-12-07",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "State House 107 N. Main St., Concord, NH 03301",
+    "phone": "603-271-3661",
+    "email": "eric.gallager@gc.nh.gov",
+    "website": "https://gc.nh.gov/house/members/member.aspx?pid=9926"
+  },
+  "bio": "Eric Gallager serves as State Representative for New Hampshire House of Representatives District Merrimack 20. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "NH",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://gc.nh.gov/house/members/member.aspx?pid=9926"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/nh/legislature/Eric-B-Gallager-a8e2dc1d-b828-475a-92d4-373129360dcb.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://storage.googleapis.com/enview-dev-public-general/legislative-people-photos/93767.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Eric_Gallager"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Eric_Gallager"
+    },
+    {
+      "title": "Public source",
+      "url": "https://gencourt.state.nh.us/downloads/Members.txt"
+    },
+    {
+      "title": "Public source",
+      "url": "https://gencourt.state.nh.us/downloads/members.txt"
+    },
+    {
+      "title": "Public source",
+      "url": "https://gencourt.state.nh.us/house/members/member.aspx?pid=9926"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/185382/eric-gallager"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.gencourt.state.nh.us/house/members/member.aspx?pid=9926"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

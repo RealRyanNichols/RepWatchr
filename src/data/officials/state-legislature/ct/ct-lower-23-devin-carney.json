@@ -1,0 +1,65 @@
+{
+  "id": "devin-carney",
+  "name": "Devin Carney",
+  "firstName": "Devin",
+  "lastName": "Carney",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-23",
+  "jurisdiction": "Connecticut House of Representatives",
+  "county": [
+    "Connecticut"
+  ],
+  "termStart": "2015-01-07",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 4200, Legislative Office Building 300 Capitol Ave., Hartford, CT 06106",
+    "phone": "860-240-8700",
+    "email": "devin.carney@housegop.ct.gov",
+    "website": "https://cga.ct.gov/asp/CGABillStatus/CGAMemberBills.asp?dist_code=%27023%27&dist_name=Carney,%20Devin%20R."
+  },
+  "bio": "Devin Carney serves as State Representative for Connecticut House of Representatives District 23. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "CT",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://cga.ct.gov/asp/CGABillStatus/CGAMemberBills.asp?dist_code=%27023%27&dist_name=Carney,%20Devin%20R."
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ct/legislature/Devin-R-Carney-79d4059c-5faa-443f-a842-7b494ea2d57e.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "ftp://ftp.cga.ct.gov/pub/data/LegislatorDatabase.csv"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Devin_R._Carney"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Devin_Carney"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/154824/devin-carney"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.cthousegop.com/Carney/main"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.cthousegop.com/Carney/main/"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/devin-carney-b1953886"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

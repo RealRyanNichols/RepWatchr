@@ -1,0 +1,75 @@
+{
+  "id": "joy-san-buenaventura",
+  "name": "Joy San Buenaventura",
+  "firstName": "Joy",
+  "lastName": "San Buenaventura",
+  "party": "D",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-2",
+  "jurisdiction": "Hawaii Senate",
+  "county": [
+    "Hawaii"
+  ],
+  "termStart": "2020-11-03",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "State Capitol Room 213, 415 S. Beretania St., Honolulu, HI 96813",
+    "phone": "808-586-6890",
+    "email": "sensanbuenaventura@capitol.hawaii.gov",
+    "website": "https://capitol.hawaii.gov/memberpage.aspx?member=Sanbuenaventura&year=2019",
+    "socialMedia": {
+      "x": "https://x.com/senjoydistrict2",
+      "twitter": "https://x.com/senjoydistrict2",
+      "facebook": "https://facebook.com/senjoydistrict2",
+      "instagram": "https://instagram.com/senjoysanbuenaventura"
+    }
+  },
+  "bio": "Joy San Buenaventura serves as State Senator for Hawaii Senate District 2. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "HI",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://capitol.hawaii.gov/memberpage.aspx?member=Sanbuenaventura&year=2019"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/hi/legislature/Joy-A-San-Buenaventura-cac74229-bacc-4358-8208-23cdac57d57c.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Joy_A._San_Buenaventura"
+    },
+    {
+      "title": "Public source",
+      "url": "https://capitol.hawaii.gov/members/legislators.aspx?chamber=H"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Joy_San_Buenaventura"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.capitol.hawaii.gov/legislature/memberpage.aspx?member=206&year=2023"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.capitol.hawaii.gov/legislature/memberpage.aspx?member=206&year=2024"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.capitol.hawaii.gov/memberpage.aspx?member=sanbuenaventura&year=2021"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.capitol.hawaii.gov/memberpage.aspx?member=sanbuenaventura&year=2022"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.capitol.hawaii.gov/members/legislators.aspx"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

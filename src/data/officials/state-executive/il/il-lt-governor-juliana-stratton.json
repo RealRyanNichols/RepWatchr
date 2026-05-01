@@ -1,0 +1,56 @@
+{
+  "id": "juliana-stratton",
+  "name": "Juliana Stratton",
+  "firstName": "Juliana",
+  "lastName": "Stratton",
+  "photo": "/images/officials/state-executive/il/juliana-stratton.jpg",
+  "photoSourceUrl": "https://s7d1.scene7.com/is/image/isp/lg-web-about-portrait-smaller",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "Lieutenant Governor",
+  "district": "Illinois",
+  "jurisdiction": "Illinois statewide public office",
+  "county": [
+    "Illinois"
+  ],
+  "termStart": "2019-01-14",
+  "termEnd": "2027-01-11",
+  "contactInfo": {
+    "office": "214 State House; Springfield, IL 62706",
+    "phone": "217-558-3085",
+    "email": "LtGovStratton@illinois.gov",
+    "website": "http://ilga.gov/house/Rep.asp?GA=100&MemberID=2499"
+  },
+  "bio": "Juliana Stratton is listed as Lieutenant Governor for Illinois. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "IL",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "http://ilga.gov/house/Rep.asp?GA=100&MemberID=2499"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/il/executive/Juliana-Stratton-c8b35f07-1a0b-4019-b476-9fa032494c5e.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://s7d1.scene7.com/is/image/isp/lg-web-about-portrait-smaller"
+    },
+    {
+      "title": "Public source",
+      "url": "http://ilga.gov/house/default.asp?GA=100"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ltgov.illinois.gov/contact-us.html"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Juliana_Stratton"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

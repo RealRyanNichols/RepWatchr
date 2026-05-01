@@ -1,0 +1,65 @@
+{
+  "id": "john-mccravy",
+  "name": "John McCravy",
+  "firstName": "John",
+  "lastName": "McCravy",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-13",
+  "jurisdiction": "South Carolina House of Representatives",
+  "county": [
+    "South Carolina"
+  ],
+  "termStart": "2016-11-14",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 420B, Blatt Building P.O. Box 11867, Columbia, SC 29201",
+    "phone": "803-212-6939",
+    "email": "johnmccravy@schouse.gov",
+    "website": "https://scstatehouse.gov/member.php?code=1217045309"
+  },
+  "bio": "John McCravy serves as State Representative for South Carolina House of Representatives District 13. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "SC",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://scstatehouse.gov/member.php?code=1217045309"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/sc/legislature/John-R-McCravy-III-f946b369-cfbd-4cc5-84f2-4cc343beb03a.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/John_McCravy"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/John_R._McCravy_III"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/139452/john-mccravy-iii"
+    },
+    {
+      "title": "Public source",
+      "url": "https://scstatehouse.gov/member.php?chamber=H"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/john-r-mccravy-iii-ba01335"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.scstatehouse.gov/member.php?chamber=H"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.scstatehouse.gov/member.php?code=1217045309"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

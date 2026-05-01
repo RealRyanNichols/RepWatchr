@@ -1,0 +1,77 @@
+{
+  "id": "chris-head",
+  "name": "Chris Head",
+  "firstName": "Chris",
+  "lastName": "Head",
+  "photo": "/images/officials/state-legislature/va/chris-head.jpg",
+  "photoSourceUrl": "https://apps.senate.virginia.gov/Senator/images/member_photos/Head3",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-3",
+  "jurisdiction": "Virginia Senate",
+  "county": [
+    "Virginia"
+  ],
+  "termStart": "2024-01-10",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 619, General Assembly Building P.O. Box 396, Richmond, VA 23218",
+    "phone": "804-698-7503",
+    "email": "senatorhead@senate.virginia.gov",
+    "website": "https://apps.senate.virginia.gov/Senator/memberpage.php?id=S122",
+    "socialMedia": {
+      "x": "https://x.com/DelChrisHead",
+      "twitter": "https://x.com/DelChrisHead",
+      "facebook": "https://facebook.com/DelChrisHead"
+    }
+  },
+  "bio": "Chris Head serves as State Senator for Virginia Senate District 3. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "VA",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://apps.senate.virginia.gov/Senator/memberpage.php?id=S122"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/va/legislature/Christopher-T-Head-3a8cbf64-e1b7-43b6-ade9-57808519405a.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://apps.senate.virginia.gov/Senator/images/member_photos/Head3"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Chris_Head"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Chris_Head_%28politician%29"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/111190/chris-head"
+    },
+    {
+      "title": "Public source",
+      "url": "https://lis.virginia.gov/191/mbr/MBR.HTM"
+    },
+    {
+      "title": "Public source",
+      "url": "https://lis.virginia.gov/201/mbr/MBR.HTM"
+    },
+    {
+      "title": "Public source",
+      "url": "https://lis.virginia.gov/cgi-bin/legp604.exe?191+mbr+H237"
+    },
+    {
+      "title": "Public source",
+      "url": "https://lis.virginia.gov/cgi-bin/legp604.exe?201+mbr+H237"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

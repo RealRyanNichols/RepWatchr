@@ -1,0 +1,57 @@
+{
+  "id": "joe-stagni",
+  "name": "Joe Stagni",
+  "firstName": "Joe",
+  "lastName": "Stagni",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-92",
+  "jurisdiction": "Louisiana House of Representatives",
+  "county": [
+    "Louisiana"
+  ],
+  "termStart": "2017-04-10",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "P.O. Box 94062 900 N. 3rd St., Baton Rouge, LA 70804",
+    "phone": "225-342-6945",
+    "email": "stagnij@legis.la.gov",
+    "website": "https://house.louisiana.gov/H_Reps/members.aspx?ID=92"
+  },
+  "bio": "Joe Stagni serves as State Representative for Louisiana House of Representatives District 92. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "LA",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://house.louisiana.gov/H_Reps/members.aspx?ID=92"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/la/legislature/Joseph-A-Stagni-958015ce-4a91-4830-a11f-e73997823d4b.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Joe_Stagni"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Joseph_A._Stagni"
+    },
+    {
+      "title": "Public source",
+      "url": "https://house.louisiana.gov/H_Reps/H_Reps_FullInfo"
+    },
+    {
+      "title": "Public source",
+      "url": "https://house.louisiana.gov/H_Reps/members?ID=92"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/joseph-stagni-6a0331142"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

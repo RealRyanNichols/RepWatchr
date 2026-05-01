@@ -1,0 +1,55 @@
+{
+  "id": "johnny-dupree",
+  "name": "Johnny DuPree",
+  "firstName": "Johnny",
+  "lastName": "DuPree",
+  "photo": "/images/officials/state-legislature/ms/johnny-dupree.jpg",
+  "photoSourceUrl": "https://www.nationalcivicleague.org/wp-content/uploads/2021/11/DuPree.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-45",
+  "jurisdiction": "Mississippi Senate",
+  "county": [
+    "Mississippi"
+  ],
+  "termStart": "2026-01-06",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "State Capitol 400 High St., Jackson, MS 39201",
+    "email": "jdupree@senate.ms.gov",
+    "website": "https://billstatus.ls.state.ms.us/members/senate/dupree.xml"
+  },
+  "bio": "Johnny DuPree serves as State Senator for Mississippi Senate District 45. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "MS",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://billstatus.ls.state.ms.us/members/senate/dupree.xml"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ms/legislature/Johnny-DuPree-b05ddbc1-7d61-4f78-bbd3-e0f9ea4de84a.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://www.nationalcivicleague.org/wp-content/uploads/2021/11/DuPree.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Johnny_DuPree"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Johnny_DuPree"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/johnnyldupree"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

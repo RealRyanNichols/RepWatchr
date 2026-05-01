@@ -1,0 +1,68 @@
+{
+  "id": "anna-kelles",
+  "name": "Anna Kelles",
+  "firstName": "Anna",
+  "lastName": "Kelles",
+  "photo": "/images/officials/state-legislature/ny/anna-kelles.jpg",
+  "photoSourceUrl": "https://assembly.state.ny.us/write/upload/member_files/125/headshot/125.jpg?hst=1660074752",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "Assemblymember",
+  "district": "HD-125",
+  "jurisdiction": "New York State Assembly",
+  "county": [
+    "New York"
+  ],
+  "termStart": "2021-01-06",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 538, Legislative Office Building, Albany, NY 12248",
+    "phone": "518-455-5444",
+    "email": "kellesa@nyassembly.gov",
+    "website": "https://assembly.state.ny.us/mem/Anna-Kelles"
+  },
+  "bio": "Anna Kelles serves as Assemblymember for New York State Assembly District 125. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "NY",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://assembly.state.ny.us/mem/Anna-Kelles"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ny/legislature/Anna-Kelles-edde17c2-c810-4ec8-97c3-4cc0ea2e32d0.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://assembly.state.ny.us/write/upload/member_files/125/headshot/125.jpg?hst=1660074752"
+    },
+    {
+      "title": "Public source",
+      "url": "https://assembly.state.ny.us/mem/Anna-R-Kelles"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Anna_Kelles"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Anna_Kelles"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/175947/anna-kelles"
+    },
+    {
+      "title": "Public source",
+      "url": "https://nyassembly.gov/mem/Anna-R-Kelles"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/anna-kelles-phd-28b71225"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

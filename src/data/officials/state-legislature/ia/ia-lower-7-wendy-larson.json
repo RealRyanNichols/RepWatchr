@@ -1,0 +1,56 @@
+{
+  "id": "wendy-larson",
+  "name": "Wendy Larson",
+  "firstName": "Wendy",
+  "lastName": "Larson",
+  "photo": "/images/officials/state-legislature/ia/wendy-larson.jpg",
+  "photoSourceUrl": "https://www.legis.iowa.gov/photo?action=getPhoto&ga=91&pid=39538",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-7",
+  "jurisdiction": "Iowa House of Representatives",
+  "county": [
+    "Iowa"
+  ],
+  "termStart": "2026-01-12",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "State Capitol Building 1007 E. Grand Ave., Des Moines, IA 50319",
+    "phone": "515-281-3221",
+    "email": "wendy.larson@legis.iowa.gov",
+    "website": "https://www.legis.iowa.gov/legislators/legislator?personID=39538"
+  },
+  "bio": "Wendy Larson serves as State Representative for Iowa House of Representatives District 7. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "IA",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.legis.iowa.gov/legislators/legislator?personID=39538"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ia/legislature/Wendy-Larson-b385cd86-67bc-4cff-94cb-6e822f719ca7.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://www.legis.iowa.gov/photo?action=getPhoto&ga=91&pid=39538"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Wendy_Larson_(Iowa)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Wendy_Larson"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/wendy-larson-38b8bb71"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

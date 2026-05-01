@@ -1,0 +1,72 @@
+{
+  "id": "mike-sparks",
+  "name": "Mike Sparks",
+  "firstName": "Mike",
+  "lastName": "Sparks",
+  "photo": "/images/officials/state-legislature/tn/mike-sparks.jpg",
+  "photoSourceUrl": "http://www.capitol.tn.gov/house/members/images/h49.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-49",
+  "jurisdiction": "Tennessee House of Representatives",
+  "county": [
+    "Tennessee"
+  ],
+  "termStart": "2010-11-02",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 532, Cordell Hull Building 425 Rep. John Lewis Way North, Nashville, TN 37243",
+    "phone": "615-741-6829",
+    "email": "rep.mike.sparks@capitol.tn.gov",
+    "website": "https://wapp.capitol.tn.gov/apps/legislatorinfo/member.aspx?district=H49"
+  },
+  "bio": "Mike Sparks serves as State Representative for Tennessee House of Representatives District 49. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "TN",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://wapp.capitol.tn.gov/apps/legislatorinfo/member.aspx?district=H49"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/tn/legislature/Mike-Sparks-092dd5d6-fb25-494c-ad16-78f0034df92f.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "http://www.capitol.tn.gov/house/members/images/h49.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Mike_Sparks_(Tennessee)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Mike_Sparks"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/99698/mike-sparks"
+    },
+    {
+      "title": "Public source",
+      "url": "https://wapp.capitol.tn.gov/apps/LegislatorInfo/directory.aspx?chamber=H"
+    },
+    {
+      "title": "Public source",
+      "url": "https://wapp.capitol.tn.gov/apps/legislatorinfo/member?district=H49"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.capitol.tn.gov/house/members"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.capitol.tn.gov/house/members/"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

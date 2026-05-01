@@ -1,0 +1,53 @@
+{
+  "id": "brian-close",
+  "name": "Brian Close",
+  "firstName": "Brian",
+  "lastName": "Close",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-65",
+  "jurisdiction": "Montana House of Representatives",
+  "county": [
+    "Montana"
+  ],
+  "termStart": "2025-01-06",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Capitol Building, 1301 E. 6th Ave. P.O. Box 200400, Helena, MT 59620",
+    "phone": "406-444-4800",
+    "email": "brian.close@legmt.gov",
+    "website": "https://legislators.legmt.gov/#/legislator/201"
+  },
+  "bio": "Brian Close serves as State Representative for Montana House of Representatives District 65. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "MT",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://legislators.legmt.gov/#/legislator/201"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/mt/legislature/Brian-Close-733ea07d-29e9-4259-b489-6ae30bc76bce.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Brian_Close"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/190685/brian-close"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.legmt.gov/legislators/1319"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/brian-close-081223135"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

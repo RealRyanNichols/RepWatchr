@@ -1,0 +1,56 @@
+{
+  "id": "ian-goodnow",
+  "name": "Ian Goodnow",
+  "firstName": "Ian",
+  "lastName": "Goodnow",
+  "photo": "/images/officials/state-legislature/vt/ian-goodnow.jpg",
+  "photoSourceUrl": "https://iangoodnow.com/wp-content/uploads/2024/05/iangoodnowforstaterep-1-882x1024.jpeg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-Windham-9",
+  "jurisdiction": "Vermont House of Representatives",
+  "county": [
+    "Vermont"
+  ],
+  "termStart": "2025-01-08",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Vermont State House 115 State St., Montpelier, VT 05633",
+    "phone": "802-828-2228",
+    "email": "igoodnow@leg.state.vt.us",
+    "website": "https://legislature.vermont.gov/people/single/2026/40436"
+  },
+  "bio": "Ian Goodnow serves as State Representative for Vermont House of Representatives District Windham-9. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "VT",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://legislature.vermont.gov/people/single/2026/40436"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/vt/legislature/Ian-Goodnow-658fc95f-5d9f-4b9d-afa6-1f759f531e09.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://iangoodnow.com/wp-content/uploads/2024/05/iangoodnowforstaterep-1-882x1024.jpeg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Ian_Goodnow"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Ian_Goodnow"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.cvglawoffice.com/staff/ian-goodnow"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

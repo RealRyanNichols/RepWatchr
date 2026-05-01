@@ -1,0 +1,72 @@
+{
+  "id": "carter-nordman",
+  "name": "Carter Nordman",
+  "firstName": "Carter",
+  "lastName": "Nordman",
+  "photo": "/images/officials/state-legislature/ia/carter-nordman.jpg",
+  "photoSourceUrl": "https://www.legis.iowa.gov/photo?action=getPhoto&ga=91&pid=30647",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-47",
+  "jurisdiction": "Iowa House of Representatives",
+  "county": [
+    "Iowa"
+  ],
+  "termStart": "2023-01-01",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "State Capitol Building 1007 E. Grand Ave., Des Moines, IA 50319",
+    "phone": "515-281-3221",
+    "email": "carter.nordman@legis.iowa.gov",
+    "website": "https://iowahouserepublicans.nationbuilder.com/reps"
+  },
+  "bio": "Carter Nordman serves as State Representative for Iowa House of Representatives District 47. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "IA",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://iowahouserepublicans.nationbuilder.com/reps"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ia/legislature/Carter-Nordman-e7b268b8-c922-4e66-8327-cc4c49854d5e.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://www.legis.iowa.gov/photo?action=getPhoto&ga=91&pid=30647"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Carter_Nordman"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Carter_Nordman"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.legis.iowa.gov/legislators/house"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.legis.iowa.gov/legislators/legislator?ga=89&personID=30647"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.legis.iowa.gov/legislators/legislator?ga=90&personID=30647"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.legis.iowa.gov/legislators/legislator?personID=30647"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/carternordman"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

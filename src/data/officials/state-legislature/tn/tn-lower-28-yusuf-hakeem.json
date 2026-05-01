@@ -1,0 +1,72 @@
+{
+  "id": "yusuf-hakeem",
+  "name": "Yusuf Hakeem",
+  "firstName": "Yusuf",
+  "lastName": "Hakeem",
+  "photo": "/images/officials/state-legislature/tn/yusuf-hakeem.jpg",
+  "photoSourceUrl": "https://data.openstates.org/images/small/ocd-person/73d17744-fdda-495d-b5a8-c44342fc5b38",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-28",
+  "jurisdiction": "Tennessee House of Representatives",
+  "county": [
+    "Tennessee"
+  ],
+  "termStart": "2018-11-06",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 524, Cordell Hull Building 425 Rep. John Lewis Way North, Nashville, TN 37243",
+    "phone": "615-741-2702",
+    "email": "rep.yusuf.hakeem@capitol.tn.gov",
+    "website": "https://wapp.capitol.tn.gov/apps/legislatorinfo/member.aspx?district=H28"
+  },
+  "bio": "Yusuf Hakeem serves as State Representative for Tennessee House of Representatives District 28. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "TN",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://wapp.capitol.tn.gov/apps/legislatorinfo/member.aspx?district=H28"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/tn/legislature/Yusuf-Hakeem-73d17744-fdda-495d-b5a8-c44342fc5b38.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://data.openstates.org/images/small/ocd-person/73d17744-fdda-495d-b5a8-c44342fc5b38"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Yusuf_Hakeem"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Yusuf_Hakeem"
+    },
+    {
+      "title": "Public source",
+      "url": "https://wapp.capitol.tn.gov/apps/LegislatorInfo/directory.aspx?chamber=H"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.capitol.tn.gov/house/members"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.capitol.tn.gov/house/members/"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.capitol.tn.gov/house/members/h28.html"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/yusuf-hakeem-541818107"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

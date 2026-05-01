@@ -1,0 +1,68 @@
+{
+  "id": "carl-demaio",
+  "name": "Carl DeMaio",
+  "firstName": "Carl",
+  "lastName": "DeMaio",
+  "photo": "/images/officials/state-legislature/ca/carl-demaio.jpg",
+  "photoSourceUrl": "https://storage.googleapis.com/enview-dev-public-general/legislative-people-photos/159263.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "Assemblymember",
+  "district": "HD-75",
+  "jurisdiction": "California State Assembly",
+  "county": [
+    "California"
+  ],
+  "termStart": "2024-12-02",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 4630, 1021 O St. P.O. Box 942849, Sacramento, CA 94249",
+    "phone": "916-319-2075",
+    "email": "assemblymember.demaio@assembly.ca.gov",
+    "website": "https://ad75.asmrc.org/"
+  },
+  "bio": "Carl DeMaio serves as Assemblymember for California State Assembly District 75. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "CA",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://ad75.asmrc.org/"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ca/legislature/Carl-DeMaio-053d119b-847e-43bf-9a22-18b5f309067f.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://storage.googleapis.com/enview-dev-public-general/legislative-people-photos/159263.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ad75.asmrc.org"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Carl_DeMaio"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Carl_DeMaio"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.assembly.ca.gov/assemblymembers/75"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/carl-demaio-66361553"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/carldemaio"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

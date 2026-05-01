@@ -1,0 +1,60 @@
+{
+  "id": "zack-hawkins",
+  "name": "Zack Hawkins",
+  "firstName": "Zack",
+  "lastName": "Hawkins",
+  "photo": "/images/officials/state-legislature/nc/zack-hawkins.jpg",
+  "photoSourceUrl": "https://www.ncleg.gov/Members/MemberImage/H/742/Low",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-31",
+  "jurisdiction": "North Carolina House of Representatives",
+  "county": [
+    "North Carolina"
+  ],
+  "termStart": "2019-01-01",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 1307, North Carolina Legislative Building 16 W. Jones St., Raleigh, NC 27601",
+    "phone": "919-715-2528",
+    "email": "zack.hawkins@ncleg.gov",
+    "website": "https://www.ncleg.gov/Members/Biography/H/742"
+  },
+  "bio": "Zack Hawkins serves as State Representative for North Carolina House of Representatives District 31. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "NC",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.ncleg.gov/Members/Biography/H/742"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/nc/legislature/Zack-Hawkins-6dea5a89-20c8-4370-94c2-0dac7fe29d77.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://www.ncleg.gov/Members/MemberImage/H/742/Low"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Zack_Forde-Hawkins"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Zack_Hawkins"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/zack-hawkins-945b474"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.ncleg.gov/Members/MemberTable/H"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

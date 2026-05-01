@@ -1,0 +1,72 @@
+{
+  "id": "mary-edly-allen",
+  "name": "Mary Edly-Allen",
+  "firstName": "Mary",
+  "lastName": "Edly-Allen",
+  "photo": "/images/officials/state-legislature/il/mary-edly-allen.jpg",
+  "photoSourceUrl": "https://cdn.ilga.gov/assets/img/members/{5E1DAFA0-4C11-43FF-9231-8D4EB3A1CFFE}.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-31",
+  "jurisdiction": "Illinois Senate",
+  "county": [
+    "Illinois"
+  ],
+  "termStart": "2023-01-11",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Stratton Office Building Section F, Office D, Springfield, IL 62706",
+    "phone": "217-782-7353",
+    "email": "info@senatoredlyallen.com",
+    "website": "https://ilga.gov/senate/Senator.asp?GA=103&MemberID=3212"
+  },
+  "bio": "Mary Edly-Allen serves as State Senator for Illinois Senate District 31. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "IL",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://ilga.gov/senate/Senator.asp?GA=103&MemberID=3212"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/il/legislature/Mary-Edly-Allen-1a1cd310-b42c-4da3-b9ac-6278b1e95a02.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://cdn.ilga.gov/assets/img/members/{5E1DAFA0-4C11-43FF-9231-8D4EB3A1CFFE}.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Mary_Edly-Allen"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Mary_Edly-Allen"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ilga.gov/senate/default.asp?GA=103"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.ilga.gov/Senate/Members/Details/3407"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.ilga.gov/senate/Senator.asp?GA=103&MemberID=3212"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.ilga.gov/senate/Senator.asp?GA=104&MemberID=3407"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/mary-edly-allen"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

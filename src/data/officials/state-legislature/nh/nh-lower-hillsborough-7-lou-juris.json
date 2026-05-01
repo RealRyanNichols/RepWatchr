@@ -1,0 +1,64 @@
+{
+  "id": "lou-juris",
+  "name": "Lou Juris",
+  "firstName": "Lou",
+  "lastName": "Juris",
+  "photo": "/images/officials/state-legislature/nh/lou-juris.jpg",
+  "photoSourceUrl": "https://storage.googleapis.com/enview-dev-public-general/legislative-people-photos/123326.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-Hillsborough 7",
+  "jurisdiction": "New Hampshire House of Representatives",
+  "county": [
+    "New Hampshire"
+  ],
+  "termStart": "2022-12-07",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "State House 107 N. Main St., Concord, NH 03301",
+    "phone": "617-293-2083",
+    "email": "louis.juris@gc.nh.gov",
+    "website": "https://gc.nh.gov/house/members/member.aspx?pid=10782"
+  },
+  "bio": "Lou Juris serves as State Representative for New Hampshire House of Representatives District Hillsborough 7. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "NH",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://gc.nh.gov/house/members/member.aspx?pid=10782"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/nh/legislature/Louis-C-Juris-9e0a9394-7bcc-451a-9ae1-439248598eae.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://storage.googleapis.com/enview-dev-public-general/legislative-people-photos/123326.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Louis_Juris"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Louis_Juris"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/208809/louis-juris"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.gencourt.state.nh.us/house/members/member.aspx?pid=10782"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/louis-juris-40870b4"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

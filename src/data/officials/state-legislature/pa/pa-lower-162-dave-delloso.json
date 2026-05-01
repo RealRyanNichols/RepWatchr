@@ -1,0 +1,75 @@
+{
+  "id": "dave-delloso",
+  "name": "Dave Delloso",
+  "firstName": "Dave",
+  "lastName": "Delloso",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-162",
+  "jurisdiction": "Pennsylvania House of Representatives",
+  "county": [
+    "Pennsylvania"
+  ],
+  "termStart": "2018-12-01",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 301, Irvis Office Building P.O. Box 202162, Harrisburg, PA 17120",
+    "phone": "717-783-6437",
+    "email": "repdelloso@pahouse.net",
+    "website": "https://www.legis.state.pa.us/cfdocs/legis/home/member_information/House_bio.cfm?id=1853",
+    "socialMedia": {
+      "x": "https://x.com/RepDelloso",
+      "twitter": "https://x.com/RepDelloso",
+      "facebook": "https://facebook.com/RepDelloso",
+      "youtube": "https://youtube.com/playlist?list=PLjtqNtfs0bgVG_fUOnUUk1MHAO05yPmoU"
+    }
+  },
+  "bio": "Dave Delloso serves as State Representative for Pennsylvania House of Representatives District 162. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "PA",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.legis.state.pa.us/cfdocs/legis/home/member_information/House_bio.cfm?id=1853"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/pa/legislature/Dave-Delloso-c05046a6-87dd-4956-a172-cad035960391.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/David_Delloso"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/David_Delloso"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/179552/david-delloso"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.legis.state.pa.us/cfdocs/legis/home/member_information/mbrList.cfm?body=H&sort=alpha"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.legis.state.pa.us/cfdocs/legis/home/member_information/representatives_alpha.cfm"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/dave-delloso-20579311"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.pahouse.com/delloso"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.palegis.us/house/members/bio/1853/rep-delloso"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

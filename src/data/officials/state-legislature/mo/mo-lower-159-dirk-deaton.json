@@ -1,0 +1,72 @@
+{
+  "id": "dirk-deaton",
+  "name": "Dirk Deaton",
+  "firstName": "Dirk",
+  "lastName": "Deaton",
+  "photo": "/images/officials/state-legislature/mo/dirk-deaton.jpg",
+  "photoSourceUrl": "https://house.mo.gov/MemberPhoto.aspx?id=2090",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-159",
+  "jurisdiction": "Missouri House of Representatives",
+  "county": [
+    "Missouri"
+  ],
+  "termStart": "2019-01-09",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 309, 201 W. Capitol Ave., Jefferson City, MO 65101",
+    "phone": "573-751-9801",
+    "email": "dirk.deaton@house.mo.gov",
+    "website": "https://house.mo.gov/MemberDetails.aspx?district=159"
+  },
+  "bio": "Dirk Deaton serves as State Representative for Missouri House of Representatives District 159. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "MO",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://house.mo.gov/MemberDetails.aspx?district=159"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/mo/legislature/Dirk-Deaton-914b9a95-6dd2-4d1d-8dc4-eed597b02e53.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://house.mo.gov/MemberPhoto.aspx?id=2090"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Dirk_Deaton"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Dirk_Deaton"
+    },
+    {
+      "title": "Public source",
+      "url": "https://house.mo.gov/MemberDetails.aspx?year=2021&code=R&district=159"
+    },
+    {
+      "title": "Public source",
+      "url": "https://house.mo.gov/MemberDetails.aspx?year=2023&code=R&district=159"
+    },
+    {
+      "title": "Public source",
+      "url": "https://house.mo.gov/MemberGridCluster.aspx"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/183481/dirk-deaton"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.house.mo.gov/MemberDetails.aspx?district=159"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

@@ -1,0 +1,45 @@
+{
+  "id": "chris-glassburn",
+  "name": "Chris Glassburn",
+  "firstName": "Chris",
+  "lastName": "Glassburn",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-15",
+  "jurisdiction": "Ohio House of Representatives",
+  "county": [
+    "Ohio"
+  ],
+  "termStart": "2025-01-01",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "77 S. High St. 10th Floor, Columbus, OH 43215",
+    "phone": "614-466-3100",
+    "email": "rep15@ohiohouse.gov",
+    "website": "https://ohiohouse.gov/members/chris-glassburn"
+  },
+  "bio": "Chris Glassburn serves as State Representative for Ohio House of Representatives District 15. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "OH",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://ohiohouse.gov/members/chris-glassburn"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/oh/legislature/Chris-Glassburn-80daf159-0742-4a3f-9575-e6492155c911.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Chris_Glassburn"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ohiohouse.gov/members/chris-glassburn/biography"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

@@ -1,0 +1,64 @@
+{
+  "id": "greg-smith",
+  "name": "Greg Smith",
+  "firstName": "Greg",
+  "lastName": "Smith",
+  "photo": "/images/officials/state-legislature/or/greg-smith.jpg",
+  "photoSourceUrl": "http://www.oregonlegislature.gov/house/MemberPhotos/smithg.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-57",
+  "jurisdiction": "Oregon House of Representatives",
+  "county": [
+    "Oregon"
+  ],
+  "termStart": "",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room H-482, 900 Court St. NE, Salem, OR 97301",
+    "phone": "503-986-1457",
+    "email": "rep.gregsmith@oregonlegislature.gov",
+    "website": "https://www.oregonlegislature.gov/smithg"
+  },
+  "bio": "Greg Smith serves as State Representative for Oregon House of Representatives District 57. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "OR",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.oregonlegislature.gov/smithg"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/or/legislature/Greg-Smith-72dc94e8-e5d5-4376-aab5-06f6b3a771c7.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "http://www.oregonlegislature.gov/house/MemberPhotos/smithg.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://api.oregonlegislature.gov/odata/odataservice.svc/LegislativeSessions('2022R1')/Legislators"
+    },
+    {
+      "title": "Public source",
+      "url": "https://api.oregonlegislature.gov/odata/odataservice.svc/LegislativeSessions('2023R1')/Legislators"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Greg_Smith_(Oregon)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Greg_Smith_(Oregon_politician)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/46752/greg-smith"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

@@ -1,0 +1,72 @@
+{
+  "id": "maura-hirschauer",
+  "name": "Maura Hirschauer",
+  "firstName": "Maura",
+  "lastName": "Hirschauer",
+  "photo": "/images/officials/state-legislature/il/maura-hirschauer.jpg",
+  "photoSourceUrl": "https://cdn.ilga.gov/assets/img/members/{F62525B8-2C23-49B7-AAB8-EFA6AE575F68}.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-49",
+  "jurisdiction": "Illinois House of Representatives",
+  "county": [
+    "Illinois"
+  ],
+  "termStart": "2021-01-13",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 270-S, Stratton Office Building, Springfield, IL 62706",
+    "phone": "217-782-1653",
+    "email": "office@repmaura49.com",
+    "website": "https://ilga.gov/house/Rep.asp?GA=102&MemberID=2995"
+  },
+  "bio": "Maura Hirschauer serves as State Representative for Illinois House of Representatives District 49. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "IL",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://ilga.gov/house/Rep.asp?GA=102&MemberID=2995"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/il/legislature/Maura-Hirschauer-ef519ea9-e143-44e0-95b2-49d37c4ea3c8.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://cdn.ilga.gov/assets/img/members/{F62525B8-2C23-49B7-AAB8-EFA6AE575F68}.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Maura_Hirschauer"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Maura_Hirschauer"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ilga.gov/house/default.asp?GA=102"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ilga.gov/house/default.asp?GA=103"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ilga.gov/house/Rep.asp?GA=103&MemberID=3184"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/188065/maura-hirschauer"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.ilga.gov/House/Members/Details/3388"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

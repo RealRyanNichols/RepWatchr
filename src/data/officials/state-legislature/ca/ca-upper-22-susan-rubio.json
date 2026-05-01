@@ -1,0 +1,68 @@
+{
+  "id": "susan-rubio",
+  "name": "Susan Rubio",
+  "firstName": "Susan",
+  "lastName": "Rubio",
+  "photo": "/images/officials/state-legislature/ca/susan-rubio.jpg",
+  "photoSourceUrl": "https://www.senate.ca.gov/sites/senate.ca.gov/files/senator_photos/senator_rubio.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-22",
+  "jurisdiction": "California Senate",
+  "county": [
+    "California"
+  ],
+  "termStart": "2018-12-03",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "1021 O St. Suite 8710, Sacramento, CA 95814",
+    "phone": "916-651-4022",
+    "email": "senator.rubio@senate.ca.gov",
+    "website": "https://sd22.senate.ca.gov/"
+  },
+  "bio": "Susan Rubio serves as State Senator for California Senate District 22. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "CA",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://sd22.senate.ca.gov/"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ca/legislature/Susan-Rubio-cb0f6477-568f-49db-aba3-f88e7bccbefc.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://www.senate.ca.gov/sites/senate.ca.gov/files/senator_photos/senator_rubio.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Susan_Rubio"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Susan_Rubio"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/129493/susan-rubio"
+    },
+    {
+      "title": "Public source",
+      "url": "https://sd22.senate.ca.gov"
+    },
+    {
+      "title": "Public source",
+      "url": "https://senate.ca.gov/senators"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.senate.ca.gov/senators"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

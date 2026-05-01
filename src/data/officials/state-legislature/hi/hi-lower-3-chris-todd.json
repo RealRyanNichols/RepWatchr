@@ -1,0 +1,72 @@
+{
+  "id": "chris-todd",
+  "name": "Chris Todd",
+  "firstName": "Chris",
+  "lastName": "Todd",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-3",
+  "jurisdiction": "Hawaii House of Representatives",
+  "county": [
+    "Hawaii"
+  ],
+  "termStart": "2022-11-08",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "State Capitol Room 306, 415 S. Beretania St., Honolulu, HI 96813",
+    "phone": "808-586-6200",
+    "email": "reptodd@capitol.hawaii.gov",
+    "website": "https://capitol.hawaii.gov/memberpage.aspx?member=todd&year=2019",
+    "socialMedia": {
+      "facebook": "https://facebook.com/staterepchristodd"
+    }
+  },
+  "bio": "Chris Todd serves as State Representative for Hawaii House of Representatives District 3. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "HI",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://capitol.hawaii.gov/memberpage.aspx?member=todd&year=2019"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/hi/legislature/Chris-Todd-6f62978c-5c1e-4a93-b182-caa7b97d45e0.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Chris_Todd_(Hawaii)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://capitol.hawaii.gov/members/legislators.aspx?chamber=H"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Chris_Toshiro_Todd"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.capitol.hawaii.gov/legislature/memberpage.aspx?member=137"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.capitol.hawaii.gov/legislature/memberpage.aspx?member=137&year=2023"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.capitol.hawaii.gov/legislature/memberpage.aspx?member=137&year=2024"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.capitol.hawaii.gov/memberpage.aspx?member=todd&year=2021"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.capitol.hawaii.gov/memberpage.aspx?member=todd&year=2022"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

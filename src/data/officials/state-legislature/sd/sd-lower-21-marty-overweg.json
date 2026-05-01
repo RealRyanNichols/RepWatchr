@@ -1,0 +1,70 @@
+{
+  "id": "marty-overweg",
+  "name": "Marty Overweg",
+  "firstName": "Marty",
+  "lastName": "Overweg",
+  "photo": "/images/officials/state-legislature/sd/marty-overweg.jpg",
+  "photoSourceUrl": "http://sdlegislature.gov/inc/img/Legislators/overweg_2020.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-21",
+  "jurisdiction": "South Dakota House of Representatives",
+  "county": [
+    "South Dakota"
+  ],
+  "termStart": "2023-01-10",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "email": "marty.overweg@sdlegislature.gov",
+    "website": "https://sdlegislature.gov/Legislators/Profile/1832/Detail"
+  },
+  "bio": "Marty Overweg serves as State Representative for South Dakota House of Representatives District 21. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "SD",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://sdlegislature.gov/Legislators/Profile/1832/Detail"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/sd/legislature/Marty-Overweg-7dc4b8d9-148b-4622-a6de-b27dc27030be.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "http://sdlegislature.gov/inc/img/Legislators/overweg_2020.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Marty_Overweg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Marty_Overweg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/188905/marty-overweg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://sdlegislature.gov/Legislators/Profile/4400/Detail"
+    },
+    {
+      "title": "Public source",
+      "url": "https://sdlegislature.gov/Legislators/Profile/4542/Detail"
+    },
+    {
+      "title": "Public source",
+      "url": "https://sdlegislature.gov/Legislators/Profile/4648/Detail"
+    },
+    {
+      "title": "Public source",
+      "url": "https://sdlegislature.gov/Legislators/Profile/4799/Detail"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

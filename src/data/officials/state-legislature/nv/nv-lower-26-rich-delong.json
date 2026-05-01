@@ -1,0 +1,60 @@
+{
+  "id": "rich-delong",
+  "name": "Rich DeLong",
+  "firstName": "Rich",
+  "lastName": "DeLong",
+  "photo": "/images/officials/state-legislature/nv/rich-delong.jpg",
+  "photoSourceUrl": "http://leg.state.nv.us/Session/82nd2023/legislators/Assembly/Images/DeLong.Rich.399.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "Assemblymember",
+  "district": "HD-26",
+  "jurisdiction": "Nevada Assembly",
+  "county": [
+    "Nevada"
+  ],
+  "termStart": "2022-11-09",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 4107, Nevada Assembly 401 S. Carson St., Carson City, NV 89701",
+    "phone": "775-684-8848",
+    "email": "rich.delong@asm.state.nv.us",
+    "website": "https://www.leg.state.nv.us/App/Legislator/A/Assembly/Current/26"
+  },
+  "bio": "Rich DeLong serves as Assemblymember for Nevada Assembly District 26. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "NV",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.leg.state.nv.us/App/Legislator/A/Assembly/Current/26"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/nv/legislature/Rich-DeLong-204b492e-4b29-4e8e-9c3e-d2d0f0a8ceea.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "http://leg.state.nv.us/Session/82nd2023/legislators/Assembly/Images/DeLong.Rich.399.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Rich_DeLong"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Rich_DeLong"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.leg.state.nv.us/App/Legislator/A/Assembly/Current"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/richard-delong-b5771319"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

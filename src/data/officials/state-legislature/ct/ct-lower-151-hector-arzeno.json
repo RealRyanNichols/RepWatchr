@@ -1,0 +1,61 @@
+{
+  "id": "hector-arzeno",
+  "name": "Hector Arzeno",
+  "firstName": "Hector",
+  "lastName": "Arzeno",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-151",
+  "jurisdiction": "Connecticut House of Representatives",
+  "county": [
+    "Connecticut"
+  ],
+  "termStart": "2023-01-04",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 4028, Legislative Office Building 300 Capitol Ave., Hartford, CT 06106",
+    "phone": "860-240-8585",
+    "email": "hector.arzeno@cga.ct.gov",
+    "website": "https://www.housedems.ct.gov/arzeno"
+  },
+  "bio": "Hector Arzeno serves as State Representative for Connecticut House of Representatives District 151. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "CT",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.housedems.ct.gov/arzeno"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ct/legislature/Hector-Arzeno-f0ce3c59-536e-4e79-9fe6-20eb59d66c06.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "ftp://ftp.cga.ct.gov/pub/data/LegislatorDatabase.csv"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Hector_Arzeno"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Hector_Arzeno"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/193755/hector-arzeno"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.housedems.ct.gov/Arzeno"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/hector-arzeno-40b8b65a"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

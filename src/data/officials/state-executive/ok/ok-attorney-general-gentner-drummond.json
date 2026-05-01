@@ -1,0 +1,51 @@
+{
+  "id": "gentner-drummond",
+  "name": "Gentner Drummond",
+  "firstName": "Gentner",
+  "lastName": "Drummond",
+  "photo": "/images/officials/state-executive/ok/gentner-drummond.jpg",
+  "photoSourceUrl": "https://www.naag.org/wp-content/uploads/2022/11/ag-OK-Drummond.png",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "Attorney General",
+  "district": "Oklahoma",
+  "jurisdiction": "Oklahoma statewide public office",
+  "county": [
+    "Oklahoma"
+  ],
+  "termStart": "2023-01-09",
+  "termEnd": "2027-01-11",
+  "contactInfo": {
+    "office": "313 NE 21st Street; Oklahoma City, OK 73105",
+    "phone": "405-521-3921",
+    "website": "https://oklahoma.gov/oag.html"
+  },
+  "bio": "Gentner Drummond is listed as Attorney General for Oklahoma. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "OK",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://oklahoma.gov/oag.html"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ok/executive/Gentner-Drummond-e55fbb4f-73e3-4ee7-a4c6-6e5ae860d360.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://www.naag.org/wp-content/uploads/2022/11/ag-OK-Drummond.png"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Gentner_Drummond"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.naag.org/attorney-general/gentner-drummond/"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

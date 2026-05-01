@@ -1,0 +1,73 @@
+{
+  "id": "jackson-sayama",
+  "name": "Jackson Sayama",
+  "firstName": "Jackson",
+  "lastName": "Sayama",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-21",
+  "jurisdiction": "Hawaii House of Representatives",
+  "county": [
+    "Hawaii"
+  ],
+  "termStart": "2022-11-08",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "State Capitol Room 443, 415 S. Beretania St., Honolulu, HI 96813",
+    "phone": "808-586-6900",
+    "email": "repsayama@capitol.hawaii.gov",
+    "website": "https://www.capitol.hawaii.gov/legislature/memberpage.aspx?member=120",
+    "socialMedia": {
+      "facebook": "https://facebook.com/repsayama",
+      "instagram": "https://instagram.com/repsayama"
+    }
+  },
+  "bio": "Jackson Sayama serves as State Representative for Hawaii House of Representatives District 21. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "HI",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.capitol.hawaii.gov/legislature/memberpage.aspx?member=120"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/hi/legislature/Jackson-D-Sayama-451d1a20-20d4-4c75-95b9-ca4ba6dd3d1d.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Jackson_Sayama"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Jackson_Sayama"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.capitol.hawaii.gov/memberpage.aspx?member=Sayama&year=2021"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.capitol.hawaii.gov/memberpage.aspx?member=Sayama&year=2022"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.capitol.hawaii.gov/members/legislators.aspx"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/jackson-sayama-0b7456128"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.repjacksonsayama.com"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.repjacksonsayama.com/"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

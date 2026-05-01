@@ -1,0 +1,72 @@
+{
+  "id": "francisco-paulino",
+  "name": "Francisco Paulino",
+  "firstName": "Francisco",
+  "lastName": "Paulino",
+  "photo": "/images/officials/state-legislature/ma/francisco-paulino.jpg",
+  "photoSourceUrl": "https://malegislature.gov/Legislators/Profile/170/FEP1.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-16th Essex",
+  "jurisdiction": "Massachusetts House of Representatives",
+  "county": [
+    "Massachusetts"
+  ],
+  "termStart": "2023-01-04",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 33, State House 24 Beacon St., Boston, MA 02133",
+    "phone": "617-722-2060",
+    "email": "francisco.paulino@mahouse.gov",
+    "website": "https://malegislature.gov/Legislators/Profile/FEP1"
+  },
+  "bio": "Francisco Paulino serves as State Representative for Massachusetts House of Representatives District 16th Essex. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "MA",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://malegislature.gov/Legislators/Profile/FEP1"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ma/legislature/Francisco-E-Paulino-99109961-27e8-4e58-8269-3a1deb29f228.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://malegislature.gov/Legislators/Profile/170/FEP1.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Francisco_Paulino"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Francisco_E._Paulino"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/209568/francisco-paulino"
+    },
+    {
+      "title": "Public source",
+      "url": "https://malegislature.gov/api/GeneralCourts/193/LegislativeMembers"
+    },
+    {
+      "title": "Public source",
+      "url": "https://malegislature.gov/api/GeneralCourts/193/LegislativeMembers/"
+    },
+    {
+      "title": "Public source",
+      "url": "https://malegislature.gov/api/GeneralCourts/193/LegislativeMembers/FEP1"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/franciscopaulino9"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

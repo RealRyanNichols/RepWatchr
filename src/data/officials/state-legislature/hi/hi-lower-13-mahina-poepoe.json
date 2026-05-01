@@ -1,0 +1,65 @@
+{
+  "id": "mahina-poepoe",
+  "name": "Mahina Poepoe",
+  "firstName": "Mahina",
+  "lastName": "Poepoe",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-13",
+  "jurisdiction": "Hawaii House of Representatives",
+  "county": [
+    "Hawaii"
+  ],
+  "termStart": "2022-11-08",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "State Capitol Room 331, 415 S. Beretania St., Honolulu, HI 96813",
+    "phone": "808-586-6790",
+    "email": "reppoepoe@capitol.hawaii.gov",
+    "website": "https://www.capitol.hawaii.gov/legislature/memberpage.aspx?member=284",
+    "socialMedia": {
+      "facebook": "https://facebook.com/reppoepoe",
+      "instagram": "https://instagram.com/reppoepoe"
+    }
+  },
+  "bio": "Mahina Poepoe serves as State Representative for Hawaii House of Representatives District 13. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "HI",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.capitol.hawaii.gov/legislature/memberpage.aspx?member=284"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/hi/legislature/Mahina-Poepoe-c6f087db-713b-43c2-b557-7306f62ee15c.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Mahina_Poepoe"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Mahina_Poepoe"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.capitol.hawaii.gov/legislature/memberpage.aspx?member=284&year=2023"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.capitol.hawaii.gov/legislature/memberpage.aspx?member=284&year=2024"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.capitol.hawaii.gov/members/legislators.aspx"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/mahina-poepoe-7b1b6115a"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

@@ -1,0 +1,60 @@
+{
+  "id": "lee-ann-kluger",
+  "name": "Lee Ann Kluger",
+  "firstName": "Lee Ann",
+  "lastName": "Kluger",
+  "photo": "/images/officials/state-legislature/nh/lee-ann-kluger.jpg",
+  "photoSourceUrl": "https://nhhousedems.org/wp-content/uploads/2024/10/Lee-Ann-Kluger-1-693x1024.jpeg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-Hillsborough 6",
+  "jurisdiction": "New Hampshire House of Representatives",
+  "county": [
+    "New Hampshire"
+  ],
+  "termStart": "2024-12-04",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "State House 107 N. Main St., Concord, NH 03301",
+    "phone": "603-271-3661",
+    "email": "leeann.kluger@gc.nh.gov",
+    "website": "https://gc.nh.gov/house/members/member.aspx?pid=11191"
+  },
+  "bio": "Lee Ann Kluger serves as State Representative for New Hampshire House of Representatives District Hillsborough 6. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "NH",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://gc.nh.gov/house/members/member.aspx?pid=11191"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/nh/legislature/Lee-Ann-Kluger-b80b4918-c952-4015-82e5-585229f9c2eb.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://nhhousedems.org/wp-content/uploads/2024/10/Lee-Ann-Kluger-1-693x1024.jpeg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Lee_Ann_Kluger"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Lee_Ann_Kluger"
+    },
+    {
+      "title": "Public source",
+      "url": "https://gencourt.state.nh.us/house/members/member.aspx?pid=11191"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/218930/lee-ann-kluger"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

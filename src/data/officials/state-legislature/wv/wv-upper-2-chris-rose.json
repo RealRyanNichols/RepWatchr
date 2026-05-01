@@ -1,0 +1,60 @@
+{
+  "id": "chris-rose",
+  "name": "Chris Rose",
+  "firstName": "Chris",
+  "lastName": "Rose",
+  "photo": "/images/officials/state-legislature/wv/chris-rose.jpg",
+  "photoSourceUrl": "https://www.wvlegislature.gov/images/members/2025/senate/rose_chris.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-2",
+  "jurisdiction": "West Virginia Senate",
+  "county": [
+    "West Virginia"
+  ],
+  "termStart": "2024-12-01",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "State Capitol Room 209W, Complex, Building 1 1900 Kanawha Blvd. East, Charleston, WV 25305",
+    "phone": "304-357-7902",
+    "email": "chris.rose@wvsenate.gov",
+    "website": "https://www.wvlegislature.gov/Senate1/lawmaker.cfm?member=Senator%20Rose"
+  },
+  "bio": "Chris Rose serves as State Senator for West Virginia Senate District 2. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "WV",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.wvlegislature.gov/Senate1/lawmaker.cfm?member=Senator%20Rose"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/wv/legislature/Chris-Rose-9c82f11d-28f2-4167-b10c-26815533f73a.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://www.wvlegislature.gov/images/members/2025/senate/rose_chris.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Christopher_Rose"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Chris_Rose_(politician)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/214456/chris-rose"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/chrisrosewv"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

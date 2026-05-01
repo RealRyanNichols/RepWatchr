@@ -1,0 +1,71 @@
+{
+  "id": "tim-salazar",
+  "name": "Tim Salazar",
+  "firstName": "Tim",
+  "lastName": "Salazar",
+  "photo": "/images/officials/state-legislature/wy/tim-salazar.jpg",
+  "photoSourceUrl": "https://wyoleg.gov/LegislatorSummary/Photos/68th-SalazarTim.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-26",
+  "jurisdiction": "Wyoming Senate",
+  "county": [
+    "Wyoming"
+  ],
+  "termStart": "2021-01-04",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "State Capitol 200 W. 24th St., Cheyenne, WY 82002",
+    "email": "tim.salazar@wyoleg.gov",
+    "website": "https://www.wyoleg.gov/Legislators/2023/S/2028"
+  },
+  "bio": "Tim Salazar serves as State Senator for Wyoming Senate District 26. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "WY",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.wyoleg.gov/Legislators/2023/S/2028"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/wy/legislature/Tim-Salazar-4f702d02-54ad-4143-837a-09be9a03ee6e.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://wyoleg.gov/LegislatorSummary/Photos/68th-SalazarTim.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Tim_Salazar"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Tim_Salazar"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/153981/tim-salazar"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.wyoleg.gov/Legislators/2025/S/2028"
+    },
+    {
+      "title": "Public source",
+      "url": "https://wyoleg.gov/Legislators/2019/R/2028"
+    },
+    {
+      "title": "Public source",
+      "url": "https://wyoleg.gov/Legislators/2021/R/2028"
+    },
+    {
+      "title": "Public source",
+      "url": "https://wyoleg.gov/LsoService/api/legislator/2021/S"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

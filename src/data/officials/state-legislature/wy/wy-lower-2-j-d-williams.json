@@ -1,0 +1,71 @@
+{
+  "id": "j-d-williams",
+  "name": "J.D. Williams",
+  "firstName": "J.D.",
+  "lastName": "Williams",
+  "photo": "/images/officials/state-legislature/wy/j-d-williams.jpg",
+  "photoSourceUrl": "https://wyoleg.gov/LegislatorSummary/Photos/68th-WilliamsJD.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-2",
+  "jurisdiction": "Wyoming House of Representatives",
+  "county": [
+    "Wyoming"
+  ],
+  "termStart": "2025-01-06",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "State Capitol 200 W. 24th St., Cheyenne, WY 82002",
+    "email": "jd.williams@wyoleg.gov",
+    "website": "https://www.jdforstatehouse.com/"
+  },
+  "bio": "J.D. Williams serves as State Representative for Wyoming House of Representatives District 2. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "WY",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.jdforstatehouse.com/"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/wy/legislature/JD-Williams-fc63a597-e32a-4c94-a2f2-7420f7836aeb.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://wyoleg.gov/LegislatorSummary/Photos/68th-WilliamsJD.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/J.D._Williams"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/J._D._Williams_(Wyoming_politician)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/200405/jd-williams"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.jdforstatehouse.com"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.jdforstatehouse.com/meet-jd"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.wyoleg.gov/Legislators/2025/H/2087"
+    },
+    {
+      "title": "Public source",
+      "url": "https://wyoleg.gov/LsoService/api/legislator/2021/H"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

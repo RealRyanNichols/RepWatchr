@@ -1,0 +1,52 @@
+{
+  "id": "david-blom",
+  "name": "David Blom",
+  "firstName": "David",
+  "lastName": "Blom",
+  "photo": "/images/officials/state-legislature/ia/david-blom.jpg",
+  "photoSourceUrl": "https://www.legis.iowa.gov/photo?action=getPhoto&ga=91&pid=25125",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-52",
+  "jurisdiction": "Iowa House of Representatives",
+  "county": [
+    "Iowa"
+  ],
+  "termStart": "2025-01-01",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "State Capitol Building 1007 E. Grand Ave., Des Moines, IA 50319",
+    "phone": "515-281-3221",
+    "email": "david.blom@legis.iowa.gov",
+    "website": "https://www.legis.iowa.gov/legislators/legislator?ga=91&personID=25125"
+  },
+  "bio": "David Blom serves as State Representative for Iowa House of Representatives District 52. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "IA",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.legis.iowa.gov/legislators/legislator?ga=91&personID=25125"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ia/legislature/David-Blom-6c2b2d09-de80-47ca-af67-e646f20ba5fa.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://www.legis.iowa.gov/photo?action=getPhoto&ga=91&pid=25125"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/David_Blom"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.legis.iowa.gov/legislators/legislator?personID=25125"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

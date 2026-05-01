@@ -1,0 +1,69 @@
+{
+  "id": "wendy-mckamey",
+  "name": "Wendy McKamey",
+  "firstName": "Wendy",
+  "lastName": "McKamey",
+  "party": "R",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-12",
+  "jurisdiction": "Montana Senate",
+  "county": [
+    "Montana"
+  ],
+  "termStart": "2023-01-02",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Capitol Building, 1301 E. 6th Ave. P.O. Box 200500, Helena, MT 59620",
+    "phone": "406-444-4800",
+    "email": "wendy.mckamey@legmt.gov",
+    "website": "https://leg.mt.gov/legislator-information/roster/individual/4762"
+  },
+  "bio": "Wendy McKamey serves as State Senator for Montana Senate District 12. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "MT",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://leg.mt.gov/legislator-information/roster/individual/4762"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/mt/legislature/Wendy-Mckamey-8f827a3b-16fe-4e09-bad0-c3e29c73d9c8.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Wendy_McKamey"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Wendy_McKamey"
+    },
+    {
+      "title": "legislator list page",
+      "url": "https://leg.mt.gov/legislator-information/?session_select=111"
+    },
+    {
+      "title": "Public source",
+      "url": "https://leg.mt.gov/legislator-information/?session_select=113"
+    },
+    {
+      "title": "Public source",
+      "url": "https://leg.mt.gov/legislator-information/roster/individual/5077"
+    },
+    {
+      "title": "Public source",
+      "url": "https://leg.mt.gov/legislator-information/roster/individual/6897"
+    },
+    {
+      "title": "Public source",
+      "url": "https://leg.mt.gov/legislator-information/roster/individual/7560"
+    },
+    {
+      "title": "Public source",
+      "url": "https://legislators.legmt.gov/#/legislator/125"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

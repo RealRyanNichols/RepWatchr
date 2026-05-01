@@ -1,0 +1,64 @@
+{
+  "id": "john-marsi",
+  "name": "John Marsi",
+  "firstName": "John",
+  "lastName": "Marsi",
+  "photo": "/images/officials/state-legislature/ma/john-marsi.jpg",
+  "photoSourceUrl": "https://malegislature.gov/Legislators/Profile/170/JJM1.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-6th Worcester",
+  "jurisdiction": "Massachusetts House of Representatives",
+  "county": [
+    "Massachusetts"
+  ],
+  "termStart": "2024-03-27",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 156, State House 24 Beacon St., Boston, MA 02133",
+    "phone": "617-722-2240",
+    "email": "john.marsi@mahouse.gov",
+    "website": "https://malegislature.gov/Legislators/Profile/JJM1"
+  },
+  "bio": "John Marsi serves as State Representative for Massachusetts House of Representatives District 6th Worcester. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "MA",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://malegislature.gov/Legislators/Profile/JJM1"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ma/legislature/John-Marsi-0e8c6c71-bca0-46fd-86d1-223d41ed5517.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://malegislature.gov/Legislators/Profile/170/JJM1.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/John_Marsi_Jr."
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/John_Marsi"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/johnmarsi"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.marsiforstaterep.com/about"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.repmarsi.com/about"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

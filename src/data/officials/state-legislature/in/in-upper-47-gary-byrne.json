@@ -1,0 +1,64 @@
+{
+  "id": "gary-byrne",
+  "name": "Gary Byrne",
+  "firstName": "Gary",
+  "lastName": "Byrne",
+  "photo": "/images/officials/state-legislature/in/gary-byrne.jpg",
+  "photoSourceUrl": "https://cdn.zephyrcms.com/2277168c-48ae-434a-8380-04e4690e5e9c/-/progressive/yes/-/format/jpeg/-/scale_crop/200x300/center/-/stretch/off/byrne-website.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-47",
+  "jurisdiction": "Indiana Senate",
+  "county": [
+    "Indiana"
+  ],
+  "termStart": "2022-02-14",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "200 W. Washington St., Indianapolis, IN 46204",
+    "phone": "800-382-9467",
+    "email": "s47@iga.in.gov",
+    "website": "https://iga.in.gov/legislative/2022/legislators/legislator_gary_byrne_1/"
+  },
+  "bio": "Gary Byrne serves as State Senator for Indiana Senate District 47. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "IN",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://iga.in.gov/legislative/2022/legislators/legislator_gary_byrne_1/"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/in/legislature/Gary-Byrne-aa12c3a4-7207-4474-af92-7a1f9dcf62a3.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://cdn.zephyrcms.com/2277168c-48ae-434a-8380-04e4690e5e9c/-/progressive/yes/-/format/jpeg/-/scale_crop/200x300/center/-/stretch/off/byrne-website.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Gary_Byrne"
+    },
+    {
+      "title": "Public source",
+      "url": "https://iga.in.gov/legislative/2022/legislators/legislator_gary_byrne_1"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.indianasenaterepublicans.com/byrne"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.indianasenaterepublicans.com/senators"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/gary-byrne-9ab29575"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

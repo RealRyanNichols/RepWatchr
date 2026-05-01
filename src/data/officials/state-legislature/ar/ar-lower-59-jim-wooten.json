@@ -1,0 +1,72 @@
+{
+  "id": "jim-wooten",
+  "name": "Jim Wooten",
+  "firstName": "Jim",
+  "lastName": "Wooten",
+  "photo": "/images/officials/state-legislature/ar/jim-wooten.jpg",
+  "photoSourceUrl": "https://www.arkleg.state.ar.us/Content/photos/2023/House/547_sm.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-59",
+  "jurisdiction": "Arkansas House of Representatives",
+  "county": [
+    "Arkansas"
+  ],
+  "termStart": "2023-01-09",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "State Capitol Arkansas  500 Woodlane St., Suite 350, Little Rock, AR 72201",
+    "phone": "501-682-6211",
+    "email": "wjewooten@aol.com",
+    "website": "https://arkleg.state.ar.us/Legislators/Detail?member=Wooten"
+  },
+  "bio": "Jim Wooten serves as State Representative for Arkansas House of Representatives District 59. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "AR",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://arkleg.state.ar.us/Legislators/Detail?member=Wooten"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ar/legislature/Jim-Wooten-3016494b-fa9f-4f79-8530-7bd26120a31e.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://www.arkleg.state.ar.us/Content/photos/2023/House/547_sm.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Jim_Wooten"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Jim_Wooten_(politician)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/178515/jim-wooten"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.arkansashouse.org/district/59"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.arkleg.state.ar.us/Legislators/Detail?member=Wooten"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.arkleg.state.ar.us/Legislators/Detail?member=Wooten&ddBienniumSession=2019%2F2020F"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.arkleg.state.ar.us/Legislators/Detail?member=Wooten&ddBienniumSession=2021%2F2021R"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

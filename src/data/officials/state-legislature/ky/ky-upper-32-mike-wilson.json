@@ -1,0 +1,66 @@
+{
+  "id": "mike-wilson",
+  "name": "Mike Wilson",
+  "firstName": "Mike",
+  "lastName": "Wilson",
+  "photo": "/images/officials/state-legislature/ky/mike-wilson.jpg",
+  "photoSourceUrl": "https://legislature.ky.gov/Legislators%20Thumbnail%20Images/senate132.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-32",
+  "jurisdiction": "Kentucky Senate",
+  "county": [
+    "Kentucky"
+  ],
+  "termStart": "2011-01-01",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "email": "mike.wilson@kylegislature.gov",
+    "website": "https://legislature.ky.gov/Legislators/Pages/Legislator-Profile.aspx?DistrictNumber=132",
+    "socialMedia": {
+      "x": "https://x.com/mikewilson2018",
+      "twitter": "https://x.com/mikewilson2018"
+    }
+  },
+  "bio": "Mike Wilson serves as State Senator for Kentucky Senate District 32. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "KY",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://legislature.ky.gov/Legislators/Pages/Legislator-Profile.aspx?DistrictNumber=132"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ky/legislature/Mike-Wilson-64af8584-1675-47fd-acfb-1cec59dfdda5.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://legislature.ky.gov/Legislators%20Thumbnail%20Images/senate132.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Mike_Wilson_(Kentucky)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Mike_Wilson_(Kentucky_politician)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/117300/mike-wilson"
+    },
+    {
+      "title": "Public source",
+      "url": "https://legislature.ky.gov/Legislators/senate"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/mike-wilson-75091714"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

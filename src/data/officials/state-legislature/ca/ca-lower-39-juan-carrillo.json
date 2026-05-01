@@ -1,0 +1,61 @@
+{
+  "id": "juan-carrillo",
+  "name": "Juan Carrillo",
+  "firstName": "Juan",
+  "lastName": "Carrillo",
+  "party": "D",
+  "level": "state",
+  "position": "Assemblymember",
+  "district": "HD-39",
+  "jurisdiction": "California State Assembly",
+  "county": [
+    "California"
+  ],
+  "termStart": "2022-12-05",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 5610, 1021 O St. P.O. Box 942849, Sacramento, CA 94249",
+    "phone": "916-319-2039",
+    "email": "assemblymember.juancarrillo@assembly.ca.gov",
+    "website": "https://a39.asmdc.org/"
+  },
+  "bio": "Juan Carrillo serves as Assemblymember for California State Assembly District 39. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "CA",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://a39.asmdc.org/"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ca/legislature/Juan-Carrillo-092bda0e-23a9-4d25-92a9-5808e996702b.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://a39.asmdc.org"
+    },
+    {
+      "title": "Public source",
+      "url": "https://a39.asmdc.org/biography"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Juan_Carrillo"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Juan_Carrillo"
+    },
+    {
+      "title": "Public source",
+      "url": "https://votejuancarrillo.com/meet-the-candidate"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.assembly.ca.gov/assemblymembers"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

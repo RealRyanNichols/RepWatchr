@@ -1,0 +1,72 @@
+{
+  "id": "joe-timmons",
+  "name": "Joe Timmons",
+  "firstName": "Joe",
+  "lastName": "Timmons",
+  "photo": "/images/officials/state-legislature/wa/joe-timmons.jpg",
+  "photoSourceUrl": "https://leg.wa.gov/memberphoto/34037.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-42",
+  "jurisdiction": "Washington House of Representatives",
+  "county": [
+    "Washington"
+  ],
+  "termStart": "2023-01-09",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 425, John L. O'Brien Building P.O. Box 40600, Olympia, WA 98504",
+    "phone": "360-786-7854",
+    "email": "joe.timmons@leg.wa.gov",
+    "website": "https://housedemocrats.wa.gov/Timmons/"
+  },
+  "bio": "Joe Timmons serves as State Representative for Washington House of Representatives District 42. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "WA",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://housedemocrats.wa.gov/Timmons/"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/wa/legislature/Joe-Timmons-ea2c1a95-5b70-4068-8135-8166147bafa9.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://leg.wa.gov/memberphoto/34037.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://app.leg.wa.gov/ContentParts/MemberDirectory/?a=House"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Joe_Timmons"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Joe_Timmons_(politician)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://housedemocrats.wa.gov/timmons"
+    },
+    {
+      "title": "Public source",
+      "url": "https://housedemocrats.wa.gov/timmons/"
+    },
+    {
+      "title": "Public source",
+      "url": "https://housedemocrats.wa.gov/timmons/biography"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/207460/joe-timmons"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

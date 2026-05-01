@@ -1,0 +1,72 @@
+{
+  "id": "kyle-yamashita",
+  "name": "Kyle Yamashita",
+  "firstName": "Kyle",
+  "lastName": "Yamashita",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-12",
+  "jurisdiction": "Hawaii House of Representatives",
+  "county": [
+    "Hawaii"
+  ],
+  "termStart": "2004-11-02",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "State Capitol Room 422, 415 S. Beretania St., Honolulu, HI 96813",
+    "phone": "808-586-6330",
+    "email": "repyamashita@capitol.hawaii.gov",
+    "website": "https://capitol.hawaii.gov/memberpage.aspx?member=yamashita&year=2019",
+    "socialMedia": {
+      "facebook": "https://facebook.com/kyle.yamashita.77"
+    }
+  },
+  "bio": "Kyle Yamashita serves as State Representative for Hawaii House of Representatives District 12. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "HI",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://capitol.hawaii.gov/memberpage.aspx?member=yamashita&year=2019"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/hi/legislature/Kyle-T-Yamashita-51f31e1a-2fe4-4029-b49c-c3affa0b848d.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Kyle_Yamashita"
+    },
+    {
+      "title": "Public source",
+      "url": "https://capitol.hawaii.gov/members/legislators.aspx?chamber=H"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Kyle_Yamashita"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/32333/kyle-yamashita"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.capitol.hawaii.gov/legislature/memberpage.aspx?member=149"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.capitol.hawaii.gov/legislature/memberpage.aspx?member=149&year=2023"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.capitol.hawaii.gov/legislature/memberpage.aspx?member=149&year=2024"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.capitol.hawaii.gov/memberpage.aspx?member=yamashita&year=2021"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

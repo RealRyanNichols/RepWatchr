@@ -1,0 +1,59 @@
+{
+  "id": "gene-newman",
+  "name": "Gene Newman",
+  "firstName": "Gene",
+  "lastName": "Newman",
+  "photo": "/images/officials/state-legislature/ms/gene-newman.jpg",
+  "photoSourceUrl": "http://billstatus.ls.state.ms.us/members/house/newman.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-61",
+  "jurisdiction": "Mississippi House of Representatives",
+  "county": [
+    "Mississippi"
+  ],
+  "termStart": "2020-01-07",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "State Capitol 400 High St., Jackson, MS 39201",
+    "email": "gnewman@house.ms.gov",
+    "website": "https://billstatus.ls.state.ms.us/members/house/newman.xml"
+  },
+  "bio": "Gene Newman serves as State Representative for Mississippi House of Representatives District 61. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "MS",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://billstatus.ls.state.ms.us/members/house/newman.xml"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ms/legislature/Gene-Newman-2fe9c09d-6213-4576-b0e4-6e89330f41bc.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "http://billstatus.ls.state.ms.us/members/house/newman.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Gene_Newman"
+    },
+    {
+      "title": "Public source",
+      "url": "https://billstatus.ls.state.ms.us/members/hr_membs.xml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/186604/gene-newman"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/gene-newman-07a45620"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

@@ -1,0 +1,72 @@
+{
+  "id": "jim-lucas",
+  "name": "Jim Lucas",
+  "firstName": "Jim",
+  "lastName": "Lucas",
+  "photo": "/images/officials/state-legislature/in/jim-lucas.jpg",
+  "photoSourceUrl": "https://www.indianahouserepublicans.com/clientuploads/directory/members/Main_List/Lucas_Main_List.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-69",
+  "jurisdiction": "Indiana House of Representatives",
+  "county": [
+    "Indiana"
+  ],
+  "termStart": "2012-11-07",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "200 W. Washington St., Indianapolis, IN 46204",
+    "phone": "317-234-9499",
+    "email": "h69@iga.in.gov",
+    "website": "https://iga.in.gov/legislative/2021/legislators/legislator_jim_lucas_1123"
+  },
+  "bio": "Jim Lucas serves as State Representative for Indiana House of Representatives District 69. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "IN",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://iga.in.gov/legislative/2021/legislators/legislator_jim_lucas_1123"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/in/legislature/Jim-Lucas-70f005b9-1417-4132-9956-ad93942ca87d.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://www.indianahouserepublicans.com/clientuploads/directory/members/Main_List/Lucas_Main_List.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://api.iga.in.gov/2021/legislators/jim_lucas_1123"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Jim_Lucas"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Jim_Lucas_(politician)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://iga.in.gov/legislative/2024/legislators/legislator_jim_lucas_1123"
+    },
+    {
+      "title": "Public source",
+      "url": "https://iga.in.gov/legislative/2026/legislators/legislator_jim_lucas_1123"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/120405/jim-lucas"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.indianahouserepublicans.com/members"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

@@ -1,0 +1,57 @@
+{
+  "id": "beth-mizell",
+  "name": "Beth Mizell",
+  "firstName": "Beth",
+  "lastName": "Mizell",
+  "party": "R",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-12",
+  "jurisdiction": "Louisiana Senate",
+  "county": [
+    "Louisiana"
+  ],
+  "termStart": "2016-01-11",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "P.O. Box 94183 900 N. 3rd St., Baton Rouge, LA 70804",
+    "phone": "225-342-2024",
+    "email": "mizellb@legis.la.gov",
+    "website": "https://senate.la.gov/smembers.aspx?ID=12"
+  },
+  "bio": "Beth Mizell serves as State Senator for Louisiana Senate District 12. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "LA",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://senate.la.gov/smembers.aspx?ID=12"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/la/legislature/Beth-Mizell-b6e8a5cf-ec5c-494b-b9ff-efa0fb92e1c1.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Beth_Mizell"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Beth_Mizell"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/134643/beth-mizell"
+    },
+    {
+      "title": "Public source",
+      "url": "https://senate.la.gov/Senators_FullInfo"
+    },
+    {
+      "title": "Public source",
+      "url": "https://senate.la.gov/smembers?ID=12"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

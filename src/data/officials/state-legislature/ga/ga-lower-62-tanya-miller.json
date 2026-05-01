@@ -1,0 +1,65 @@
+{
+  "id": "tanya-miller",
+  "name": "Tanya Miller",
+  "firstName": "Tanya",
+  "lastName": "Miller",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-62",
+  "jurisdiction": "Georgia House of Representatives",
+  "county": [
+    "Georgia"
+  ],
+  "termStart": "2023-01-09",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 608-A, Coverdell Legislative Office Building 18 Capitol Square SW, Atlanta, GA 30334",
+    "phone": "404-656-0298",
+    "email": "tanya.miller@house.ga.gov",
+    "website": "https://www.legis.ga.gov/members/house"
+  },
+  "bio": "Tanya Miller serves as State Representative for Georgia House of Representatives District 62. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "GA",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.legis.ga.gov/members/house"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ga/legislature/Tanya-F-Miller-6e5432a3-09ed-4813-b11d-e97222bb7e4d.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Tanya_Miller"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Tanya_F._Miller"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/203417/tanya-miller"
+    },
+    {
+      "title": "API member detail (requires authorization token)",
+      "url": "https://www.legis.ga.gov/api/members/detail/5029?session=1031&chamber=1"
+    },
+    {
+      "title": "API members list (requires authorization token)",
+      "url": "https://www.legis.ga.gov/api/members/list/1031"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.legis.ga.gov/members/house/5029"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/tanya-miller-ba132418"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

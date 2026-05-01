@@ -1,0 +1,41 @@
+{
+  "id": "bill-hall",
+  "name": "Bill Hall",
+  "firstName": "Bill",
+  "lastName": "Hall",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-3",
+  "jurisdiction": "New Mexico House of Representatives",
+  "county": [
+    "New Mexico"
+  ],
+  "termStart": "2024-04-04",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 203DN, New Mexico Capitol Annex 325 Don Gaspar Ave., Santa Fe, NM 87501",
+    "phone": "505-986-4336",
+    "email": "bill.hall@nmlegis.gov",
+    "website": "https://www.nmlegis.gov/Members/Legislator?SponCode=HHABI"
+  },
+  "bio": "Bill Hall serves as State Representative for New Mexico House of Representatives District 3. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "NM",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.nmlegis.gov/Members/Legislator?SponCode=HHABI"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/nm/legislature/Bill-Hall-e0e4fcc9-1e0c-49f8-894d-223c863d61f8.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Bill_Hall_(New_Mexico)"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

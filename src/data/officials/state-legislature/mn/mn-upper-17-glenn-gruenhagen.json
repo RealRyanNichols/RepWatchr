@@ -1,0 +1,72 @@
+{
+  "id": "glenn-gruenhagen",
+  "name": "Glenn Gruenhagen",
+  "firstName": "Glenn",
+  "lastName": "Gruenhagen",
+  "photo": "/images/officials/state-legislature/mn/glenn-gruenhagen.jpg",
+  "photoSourceUrl": "https://www.senate.mn/graphics/17Gruenhagen.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-17",
+  "jurisdiction": "Minnesota Senate",
+  "county": [
+    "Minnesota"
+  ],
+  "termStart": "2023-01-03",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 2417, Minnesota Senate Building 95 University Ave. West, St. Paul, MN 55155",
+    "phone": "651-296-4131",
+    "email": "sen.glenn.gruenhagen@senate.mn",
+    "website": "https://www.senate.mn/members/member_bio.html?mem_id=1257"
+  },
+  "bio": "Glenn Gruenhagen serves as State Senator for Minnesota Senate District 17. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "MN",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.senate.mn/members/member_bio.html?mem_id=1257"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/mn/legislature/Glenn-Gruenhagen-7a52595e-fa21-4e21-88d6-b03e4d9f1f77.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://www.senate.mn/graphics/17Gruenhagen.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Glenn_Gruenhagen"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Glenn_Gruenhagen"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/123208/glenn-gruenhagen"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.glenngruenhagen.com"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.house.leg.state.mn.us/members/hmem.asp"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/glenn-gruenhagen-58110034"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.senate.mn/api/members"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

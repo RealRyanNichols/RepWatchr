@@ -1,0 +1,72 @@
+{
+  "id": "doug-clemens",
+  "name": "Doug Clemens",
+  "firstName": "Doug",
+  "lastName": "Clemens",
+  "photo": "/images/officials/state-legislature/mo/doug-clemens.jpg",
+  "photoSourceUrl": "https://house.mo.gov/MemberPhoto.aspx?id=2060",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-72",
+  "jurisdiction": "Missouri House of Representatives",
+  "county": [
+    "Missouri"
+  ],
+  "termStart": "2019-01-09",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "201 W. Capitol Ave., Jefferson City, MO 65101",
+    "phone": "573-751-1832",
+    "email": "doug.clemens@house.mo.gov",
+    "website": "https://house.mo.gov/MemberDetails.aspx?district=072"
+  },
+  "bio": "Doug Clemens serves as State Representative for Missouri House of Representatives District 72. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "MO",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://house.mo.gov/MemberDetails.aspx?district=072"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/mo/legislature/Doug-Clemens-c2ccbec5-9ad2-4210-9029-3c9968b72d2f.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://house.mo.gov/MemberPhoto.aspx?id=2060"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Doug_Clemens"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Doug_Clemens_(politician)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://house.mo.gov/MemberDetails.aspx?year=2021&code=R&district=072"
+    },
+    {
+      "title": "Public source",
+      "url": "https://house.mo.gov/MemberDetails.aspx?year=2023&code=R&district=072"
+    },
+    {
+      "title": "Public source",
+      "url": "https://house.mo.gov/MemberGridCluster.aspx"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/124096/doug-clemens"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.house.mo.gov/MemberDetails.aspx?district=72"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

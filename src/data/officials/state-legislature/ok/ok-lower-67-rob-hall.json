@@ -1,0 +1,60 @@
+{
+  "id": "rob-hall",
+  "name": "Rob Hall",
+  "firstName": "Rob",
+  "lastName": "Hall",
+  "photo": "/images/officials/state-legislature/ok/rob-hall.jpg",
+  "photoSourceUrl": "https://s3.amazonaws.com/ballotpedia-api4/files/thumbs/200/300/rhall.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-67",
+  "jurisdiction": "Oklahoma House of Representatives",
+  "county": [
+    "Oklahoma"
+  ],
+  "termStart": "2024-11-20",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 260, 2300 N. Lincoln Blvd., Oklahoma City, OK 73105",
+    "phone": "405-557-7341",
+    "email": "rob.hall@okhouse.gov",
+    "website": "https://www.okhouse.gov/representatives/rob-hall"
+  },
+  "bio": "Rob Hall serves as State Representative for Oklahoma House of Representatives District 67. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "OK",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.okhouse.gov/representatives/rob-hall"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ok/legislature/Rob-Hall-a73e2372-a002-448b-afbb-31398aed55b1.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://s3.amazonaws.com/ballotpedia-api4/files/thumbs/200/300/rhall.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Rob_Hall"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Rob_Hall_(politician)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/216520/rob-hall"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/rob-hall-39517396"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

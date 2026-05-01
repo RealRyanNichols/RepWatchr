@@ -1,0 +1,72 @@
+{
+  "id": "ron-gant",
+  "name": "Ron Gant",
+  "firstName": "Ron",
+  "lastName": "Gant",
+  "photo": "/images/officials/state-legislature/tn/ron-gant.jpg",
+  "photoSourceUrl": "http://www.capitol.tn.gov/house/members/images/h94.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-94",
+  "jurisdiction": "Tennessee House of Representatives",
+  "county": [
+    "Tennessee"
+  ],
+  "termStart": "2016-11-09",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 618, Cordell Hull Building 425 Rep. John Lewis Way North, Nashville, TN 37243",
+    "phone": "615-741-6890",
+    "email": "rep.ron.gant@capitol.tn.gov",
+    "website": "https://wapp.capitol.tn.gov/apps/legislatorinfo/member.aspx?district=H94"
+  },
+  "bio": "Ron Gant serves as State Representative for Tennessee House of Representatives District 94. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "TN",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://wapp.capitol.tn.gov/apps/legislatorinfo/member.aspx?district=H94"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/tn/legislature/Ron-M-Gant-e7a2a416-0d33-4d78-8ee5-cf79628df4bd.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "http://www.capitol.tn.gov/house/members/images/h94.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Ron_Gant"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Ron_M._Gant"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Ron_Gant_(politician)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/98086/ron-gant"
+    },
+    {
+      "title": "Public source",
+      "url": "https://wapp.capitol.tn.gov/apps/LegislatorInfo/directory.aspx?chamber=H"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.capitol.tn.gov/house/members"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.capitol.tn.gov/house/members/"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

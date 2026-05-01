@@ -1,0 +1,69 @@
+{
+  "id": "sean-quinlan",
+  "name": "Sean Quinlan",
+  "firstName": "Sean",
+  "lastName": "Quinlan",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-47",
+  "jurisdiction": "Hawaii House of Representatives",
+  "county": [
+    "Hawaii"
+  ],
+  "termStart": "2016-11-09",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "State Capitol Room 439, 415 S. Beretania St, Honolulu, HI 96813",
+    "phone": "808-586-6380",
+    "email": "repquinlan@capitol.hawaii.gov",
+    "website": "https://capitol.hawaii.gov/memberpage.aspx?member=quinlan&year=2019"
+  },
+  "bio": "Sean Quinlan serves as State Representative for Hawaii House of Representatives District 47. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "HI",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://capitol.hawaii.gov/memberpage.aspx?member=quinlan&year=2019"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/hi/legislature/Sean-Quinlan-078931f6-9caa-4ba0-9f53-2b27e13ed400.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Sean_Quinlan_(Hawaii)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://capitol.hawaii.gov/members/legislators.aspx?chamber=H"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Sean_Quinlan"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.capitol.hawaii.gov/legislature/memberpage.aspx?member=112"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.capitol.hawaii.gov/legislature/memberpage.aspx?member=112&year=2023"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.capitol.hawaii.gov/legislature/memberpage.aspx?member=112&year=2024"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.capitol.hawaii.gov/memberpage.aspx?member=quinlan&year=2021"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.capitol.hawaii.gov/memberpage.aspx?member=quinlan&year=2022"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

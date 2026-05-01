@@ -1,0 +1,61 @@
+{
+  "id": "wendy-harrison",
+  "name": "Wendy Harrison",
+  "firstName": "Wendy",
+  "lastName": "Harrison",
+  "party": "D",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-Windham",
+  "jurisdiction": "Vermont Senate",
+  "county": [
+    "Vermont"
+  ],
+  "termStart": "2023-01-04",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Vermont State House 115 State St., Montpelier, VT 05633",
+    "phone": "802-828-2228",
+    "email": "wharrison@leg.state.vt.us",
+    "website": "https://legislature.vermont.gov/Documents/SmallMaps/2022/Senate/Windham.pdf"
+  },
+  "bio": "Wendy Harrison serves as State Senator for Vermont Senate District Windham. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "VT",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://legislature.vermont.gov/Documents/SmallMaps/2022/Senate/Windham.pdf"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/vt/legislature/Wendy-K-Harrison-5d4b135e-4bed-4f7f-960a-250691fca6a8.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Wendy_Harrison"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Wendy_Harrison"
+    },
+    {
+      "title": "Public source",
+      "url": "https://legislature.vermont.gov/people/loadAll/2024"
+    },
+    {
+      "title": "Public source",
+      "url": "https://legislature.vermont.gov/people/single/2024/37406"
+    },
+    {
+      "title": "Public source",
+      "url": "https://legislature.vermont.gov/people/single/2026/37406"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/wendy-h-543bb413"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

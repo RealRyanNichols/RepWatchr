@@ -1,0 +1,68 @@
+{
+  "id": "nancy-king",
+  "name": "Nancy King",
+  "firstName": "Nancy",
+  "lastName": "King",
+  "photo": "/images/officials/state-legislature/md/nancy-king.jpg",
+  "photoSourceUrl": "http://mgaleg.maryland.gov/2016RS/images/king.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-39",
+  "jurisdiction": "Maryland Senate",
+  "county": [
+    "Maryland"
+  ],
+  "termStart": "2007-09-05",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 123, James Senate Office Building 11 Bladen St., Annapolis, MD 21401",
+    "phone": "410-841-3686",
+    "email": "nancy.king@senate.maryland.gov",
+    "website": "https://mgaleg.maryland.gov/mgawebsite/Members/Details/king"
+  },
+  "bio": "Nancy King serves as State Senator for Maryland Senate District 39. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "MD",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://mgaleg.maryland.gov/mgawebsite/Members/Details/king"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/md/legislature/Nancy-J-King-92f41e40-4782-4c52-81a1-de8f78e05ab1.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "http://mgaleg.maryland.gov/2016RS/images/king.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Nancy_King"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Nancy_J._King"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/36382/nancy-king"
+    },
+    {
+      "title": "Public source",
+      "url": "https://mgaleg.maryland.gov/webmga/frmMain.aspx?pid=sponpage&tab=subject6&id=king&stab=01"
+    },
+    {
+      "title": "Public source",
+      "url": "https://msa.maryland.gov/msa/mdmanual/05sen/html/msa14005.html"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/nancy-king-21236013"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

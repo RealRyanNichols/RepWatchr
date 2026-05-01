@@ -1,0 +1,56 @@
+{
+  "id": "mike-thompson-ms-legislature-upper-48",
+  "name": "Mike Thompson",
+  "firstName": "Mike",
+  "lastName": "Thompson",
+  "photo": "/images/officials/state-legislature/ms/mike-thompson-ms-legislature-upper-48.jpg",
+  "photoSourceUrl": "http://billstatus.ls.state.ms.us/members/senate/thompson.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-48",
+  "jurisdiction": "Mississippi Senate",
+  "county": [
+    "Mississippi"
+  ],
+  "termStart": "2020-01-07",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "State Capitol Room 213, 400 High St., Jackson, MS 39201",
+    "phone": "601-359-4088",
+    "email": "mthompson@senate.ms.gov",
+    "website": "https://billstatus.ls.state.ms.us/members/senate/thompson.xml"
+  },
+  "bio": "Mike Thompson serves as State Senator for Mississippi Senate District 48. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "MS",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://billstatus.ls.state.ms.us/members/senate/thompson.xml"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ms/legislature/Mike-Thompson-eaa39996-c8a7-4568-b01e-d7685667227b.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "http://billstatus.ls.state.ms.us/members/senate/thompson.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Mike_Thompson_(Mississippi)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://billstatus.ls.state.ms.us/members/ss_membs.xml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/186558/mike-thompson"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

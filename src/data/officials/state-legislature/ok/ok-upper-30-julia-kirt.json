@@ -1,0 +1,65 @@
+{
+  "id": "julia-kirt",
+  "name": "Julia Kirt",
+  "firstName": "Julia",
+  "lastName": "Kirt",
+  "party": "D",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-30",
+  "jurisdiction": "Oklahoma Senate",
+  "county": [
+    "Oklahoma"
+  ],
+  "termStart": "2018-11-16",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 517, 2300 N. Lincoln Blvd., Oklahoma City, OK 73105",
+    "phone": "405-521-5636",
+    "email": "julia.kirt@oksenate.gov",
+    "website": "https://oksenate.gov/contact-senator?sid=1857"
+  },
+  "bio": "Julia Kirt serves as State Senator for Oklahoma Senate District 30. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "OK",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://oksenate.gov/contact-senator?sid=1857"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ok/legislature/Julia-Kirt-986cbe76-2b10-4fc8-92b0-39432b761e1a.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Julia_Kirt"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Julia_Kirt"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/181826/julia-kirt"
+    },
+    {
+      "title": "Public source",
+      "url": "https://oksenate.gov/Senators/biographies/kirt_bio.aspx"
+    },
+    {
+      "title": "Public source",
+      "url": "https://oksenate.gov/Senators/biographies/kirt_bio.html"
+    },
+    {
+      "title": "Public source",
+      "url": "https://oksenate.gov/senators/julia-kirt"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/juliakirt"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

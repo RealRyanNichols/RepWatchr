@@ -1,0 +1,72 @@
+{
+  "id": "cathy-tilton",
+  "name": "Cathy Tilton",
+  "firstName": "Cathy",
+  "lastName": "Tilton",
+  "photo": "/images/officials/state-legislature/ak/cathy-tilton.jpg",
+  "photoSourceUrl": "http://akleg.gov/images/legislators/450x600/TLT.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-M",
+  "jurisdiction": "Alaska Senate",
+  "county": [
+    "Alaska"
+  ],
+  "termStart": "2025-11-29",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "State Capitol Room 9, 120 4th St., Juneau, AK 99801",
+    "phone": "907-465-2199",
+    "email": "senator.cathy.tilton@akleg.gov",
+    "website": "https://akhousemajority.com/rep-tilton/"
+  },
+  "bio": "Cathy Tilton serves as State Senator for Alaska Senate District M. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "AK",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://akhousemajority.com/rep-tilton/"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ak/legislature/Cathy-Tilton-f1816065-31d1-4757-b8b9-714e15daeccf.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "http://akleg.gov/images/legislators/450x600/TLT.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://akhousemajority.com/rep-tilton"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Cathy_L._Tilton"
+    },
+    {
+      "title": "Public source",
+      "url": "https://cathytilton.com"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Cathy_Tilton"
+    },
+    {
+      "title": "Public source",
+      "url": "https://w3.akleg.gov"
+    },
+    {
+      "title": "Public source",
+      "url": "https://w3.akleg.gov/"
+    },
+    {
+      "title": "member list page",
+      "url": "https://www.akleg.gov/basis/mbr_info.asp?session=33"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

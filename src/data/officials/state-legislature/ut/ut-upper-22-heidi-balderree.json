@@ -1,0 +1,72 @@
+{
+  "id": "heidi-balderree",
+  "name": "Heidi Balderree",
+  "firstName": "Heidi",
+  "lastName": "Balderree",
+  "photo": "/images/officials/state-legislature/ut/heidi-balderree.jpg",
+  "photoSourceUrl": "https://le.utah.gov/images/legislator/BALDEH.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-22",
+  "jurisdiction": "Utah Senate",
+  "county": [
+    "Utah"
+  ],
+  "termStart": "2023-10-17",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "P.O. Box 145115 350 N. State St., Suite 320, Salt Lake City, UT 84114",
+    "phone": "801-538-1035",
+    "email": "hbalderree@le.utah.gov",
+    "website": "https://le.utah.gov/asp/billsintro/SenResults.asp?Listbox2=BALDEH"
+  },
+  "bio": "Heidi Balderree serves as State Senator for Utah Senate District 22. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "UT",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://le.utah.gov/asp/billsintro/SenResults.asp?Listbox2=BALDEH"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ut/legislature/Heidi-Balderree-650616ca-3c57-4995-a514-37644fe1fa8f.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://le.utah.gov/images/legislator/BALDEH.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Heidi_Balderree"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Heidi_Balderree"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/212860/heidi-balderree"
+    },
+    {
+      "title": "Public source",
+      "url": "https://le.utah.gov/data/legislators.json"
+    },
+    {
+      "title": "Public source",
+      "url": "https://senate.utah.gov/sen/BALDEH"
+    },
+    {
+      "title": "Public source",
+      "url": "https://senate.utah.gov/sen/BALDEH/"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/heidi-balderree-194650123"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

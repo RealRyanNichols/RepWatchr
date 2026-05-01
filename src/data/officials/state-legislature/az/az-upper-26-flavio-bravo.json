@@ -1,0 +1,72 @@
+{
+  "id": "flavio-bravo",
+  "name": "Flavio Bravo",
+  "firstName": "Flavio",
+  "lastName": "Bravo",
+  "photo": "/images/officials/state-legislature/az/flavio-bravo.jpg",
+  "photoSourceUrl": "https://chci.org/wp-content/uploads/2019/09/Bravo-Flavio.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-26",
+  "jurisdiction": "Arizona Senate",
+  "county": [
+    "Arizona"
+  ],
+  "termStart": "2023-05-08",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 213, 1700 W. Washington St., Phoenix, AZ 85007",
+    "phone": "602-926-4033",
+    "email": "fbravo@azleg.gov",
+    "website": "https://www.azleg.gov/House/House-member/?legislature=56&session=127&legislator=2150"
+  },
+  "bio": "Flavio Bravo serves as State Senator for Arizona Senate District 26. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "AZ",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.azleg.gov/House/House-member/?legislature=56&session=127&legislator=2150"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/az/legislature/Flavio-Bravo-36cc8d88-e944-4889-b8ab-cf5610f3f03e.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://chci.org/wp-content/uploads/2019/09/Bravo-Flavio.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Flavio_Bravo"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Flavio_Bravo"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.azleg.gov/memberroster/?body=H"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.azleg.gov/memberroster/?body=S"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.azleg.gov/senate-member/?legislature=56&legislator=2271"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.azleg.gov/senate-member/?legislature=57&legislator=2399"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/flaviogbravo"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

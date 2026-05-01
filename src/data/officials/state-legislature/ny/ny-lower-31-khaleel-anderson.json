@@ -1,0 +1,64 @@
+{
+  "id": "khaleel-anderson",
+  "name": "Khaleel Anderson",
+  "firstName": "Khaleel",
+  "lastName": "Anderson",
+  "photo": "/images/officials/state-legislature/ny/khaleel-anderson.jpg",
+  "photoSourceUrl": "https://assembly.state.ny.us/write/upload/member_files/031/headshot/031.jpg?hst=1668023367",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "Assemblymember",
+  "district": "HD-31",
+  "jurisdiction": "New York State Assembly",
+  "county": [
+    "New York"
+  ],
+  "termStart": "2021-01-06",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 742, Legislative Office Building, Albany, NY 12248",
+    "phone": "518-455-5668",
+    "email": "andersonk@nyassembly.gov",
+    "website": "https://assembly.state.ny.us/mem/Khaleel-M-Anderson"
+  },
+  "bio": "Khaleel Anderson serves as Assemblymember for New York State Assembly District 31. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "NY",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://assembly.state.ny.us/mem/Khaleel-M-Anderson"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ny/legislature/Khaleel-M-Anderson-cf330444-ddcb-44aa-882d-f1488c42533e.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://assembly.state.ny.us/write/upload/member_files/031/headshot/031.jpg?hst=1668023367"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Khaleel_Anderson"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Khaleel_Anderson"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/192131/khaleel-anderson"
+    },
+    {
+      "title": "Public source",
+      "url": "https://nyassembly.gov/mem/Khaleel-M-Anderson"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/khaleel-anderson1106"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

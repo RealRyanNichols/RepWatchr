@@ -1,0 +1,60 @@
+{
+  "id": "nathan-sosa",
+  "name": "Nathan Sosa",
+  "firstName": "Nathan",
+  "lastName": "Sosa",
+  "photo": "/images/officials/state-legislature/or/nathan-sosa.jpg",
+  "photoSourceUrl": "https://www.oregonlegislature.gov/sosa/PublishingImages/member_photo.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-30",
+  "jurisdiction": "Oregon House of Representatives",
+  "county": [
+    "Oregon"
+  ],
+  "termStart": "2022-02-01",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room H-280, 900 Court St. NE, Salem, OR 97301",
+    "phone": "503-986-1430",
+    "email": "rep.nathansosa@oregonlegislature.gov",
+    "website": "https://www.oregonlegislature.gov/sosa"
+  },
+  "bio": "Nathan Sosa serves as State Representative for Oregon House of Representatives District 30. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "OR",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.oregonlegislature.gov/sosa"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/or/legislature/Nathan-Sosa-5615af6a-5232-45e0-b85b-bcb41e08391e.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://www.oregonlegislature.gov/sosa/PublishingImages/member_photo.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://api.oregonlegislature.gov/odata/odataservice.svc/LegislativeSessions('2022R1')/Legislators"
+    },
+    {
+      "title": "Public source",
+      "url": "https://api.oregonlegislature.gov/odata/odataservice.svc/LegislativeSessions('2023R1')/Legislators"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Nathan_Sosa_(Oregon)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/nathan-sosa-2104221a8"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

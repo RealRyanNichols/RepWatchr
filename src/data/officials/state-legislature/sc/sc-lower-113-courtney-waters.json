@@ -1,0 +1,59 @@
+{
+  "id": "courtney-waters",
+  "name": "Courtney Waters",
+  "firstName": "Courtney",
+  "lastName": "Waters",
+  "photo": "/images/officials/state-legislature/sc/courtney-waters.jpg",
+  "photoSourceUrl": "https://courtneywaters.com/wp-content/uploads/2024/11/courtney-waters.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-113",
+  "jurisdiction": "South Carolina House of Representatives",
+  "county": [
+    "South Carolina"
+  ],
+  "termStart": "2025-04-01",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 328A, Blatt Building P.O. Box 11867, Columbia, SC 29201",
+    "phone": "803-212-6716",
+    "website": "https://www.scstatehouse.gov/member.php?code=1896590682"
+  },
+  "bio": "Courtney Waters serves as State Representative for South Carolina House of Representatives District 113. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "SC",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.scstatehouse.gov/member.php?code=1896590682"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/sc/legislature/Courtney-Waters-0a87faa3-3d88-4fd6-a29f-583102f8c89f.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://courtneywaters.com/wp-content/uploads/2024/11/courtney-waters.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Courtney_Waters"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Courtney_Waters"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/220682/courtney-waters"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/courtney-waters-47077335"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

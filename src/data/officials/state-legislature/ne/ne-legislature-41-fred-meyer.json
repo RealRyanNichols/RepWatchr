@@ -1,0 +1,60 @@
+{
+  "id": "fred-meyer",
+  "name": "Fred Meyer",
+  "firstName": "Fred",
+  "lastName": "Meyer",
+  "photo": "/images/officials/state-legislature/ne/fred-meyer.jpg",
+  "photoSourceUrl": "https://www.nebraskalegislature.gov/media/images/senators/dist41/highres/dist41.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "NP",
+  "level": "state",
+  "position": "State Senator",
+  "district": "LD-41",
+  "jurisdiction": "Nebraska Legislature",
+  "county": [
+    "Nebraska"
+  ],
+  "termStart": "2026-01-14",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "State Capitol Room 1529, P.O. Box 94604, Lincoln, NE 68509",
+    "phone": "402-471-2631",
+    "email": "fmeyer@leg.ne.gov",
+    "website": "https://nebraskalegislature.gov/senators/landing-pages/index.php?District=41"
+  },
+  "bio": "Fred Meyer serves as State Senator for Nebraska Legislature District 41. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "NE",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://nebraskalegislature.gov/senators/landing-pages/index.php?District=41"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ne/legislature/Fred-Meyer-5868ed3b-2931-4080-a7c2-9b4eb0e3d487.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://www.nebraskalegislature.gov/media/images/senators/dist41/highres/dist41.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Fred_Meyer"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Fred_Meyer_(politician)"
+    },
+    {
+      "title": "members list page",
+      "url": "https://nebraskalegislature.gov/senators/senator_list.php"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/fred-meyer-05733b48"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

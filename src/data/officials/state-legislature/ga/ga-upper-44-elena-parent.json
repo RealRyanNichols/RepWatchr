@@ -1,0 +1,69 @@
+{
+  "id": "elena-parent",
+  "name": "Elena Parent",
+  "firstName": "Elena",
+  "lastName": "Parent",
+  "party": "D",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-44",
+  "jurisdiction": "Georgia Senate",
+  "county": [
+    "Georgia"
+  ],
+  "termStart": "2025-01-13",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "State Capitol Room 121-A, 206 Washington St. SW, Atlanta, GA 30334",
+    "phone": "404-656-5109",
+    "email": "elena.parent@senate.ga.gov",
+    "website": "https://www.legis.ga.gov/members/senate"
+  },
+  "bio": "Elena Parent serves as State Senator for Georgia Senate District 44. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "GA",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.legis.ga.gov/members/senate"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ga/legislature/Elena-Parent-3f15ad5e-877d-44aa-b5b3-b24587c42685.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Elena_Parent"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Elena_Parent"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/122835/elena-parent"
+    },
+    {
+      "title": "Public source",
+      "url": "https://webservices.legis.ga.gov/GGAServices/Members/Service.svc?wsdl"
+    },
+    {
+      "title": "Detail page (requires authorization token)",
+      "url": "https://www.legis.ga.gov/api/members/detail/768?session=1029&chamber=2"
+    },
+    {
+      "title": "API member detail (requires authorization token)",
+      "url": "https://www.legis.ga.gov/api/members/detail/768?session=1031&chamber=2"
+    },
+    {
+      "title": "API members list (requires authorization token)",
+      "url": "https://www.legis.ga.gov/api/members/list/1031"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.legis.ga.gov/members/senate/768"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

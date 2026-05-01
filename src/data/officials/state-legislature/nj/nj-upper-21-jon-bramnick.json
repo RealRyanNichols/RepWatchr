@@ -1,0 +1,69 @@
+{
+  "id": "jon-bramnick",
+  "name": "Jon Bramnick",
+  "firstName": "Jon",
+  "lastName": "Bramnick",
+  "party": "R",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-21",
+  "jurisdiction": "New Jersey Senate",
+  "county": [
+    "New Jersey"
+  ],
+  "termStart": "2022-01-11",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "P.O. Box 068 State House, 145 W. State St., Trenton, NJ 08625",
+    "phone": "609-847-3905",
+    "email": "senbramnick@njleg.org",
+    "website": "https://bramnick.senatenj.com/"
+  },
+  "bio": "Jon Bramnick serves as State Senator for New Jersey Senate District 21. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "NJ",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://bramnick.senatenj.com/"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/nj/legislature/Jon-M-Bramnick-08a758f9-92fb-4e59-ac8f-edc75aaf3390.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Jon_Bramnick"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Jon_Bramnick"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/43406/jon-bramnick"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.jonbramnick.com/attorney-profiles/jon-m-bramnick"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/jon-bramnick-6a78a053"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.njleg.state.nj.us/api/legislatorData/legislatorBio/433"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.njleg.state.nj.us/legislative-roster"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.njleg.state.nj.us/legislative-roster/433/senator-bramnick"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

@@ -1,0 +1,40 @@
+{
+  "id": "tim-walz",
+  "name": "Tim Walz",
+  "firstName": "Tim",
+  "lastName": "Walz",
+  "party": "D",
+  "level": "state",
+  "position": "Governor",
+  "district": "Minnesota",
+  "jurisdiction": "Minnesota statewide public office",
+  "county": [
+    "Minnesota"
+  ],
+  "termStart": "2019-01-07",
+  "termEnd": "2027-01-04",
+  "contactInfo": {
+    "office": "130 State Capitol; 75 Rev Dr. Martin Luther King Jr. Blvd.; St. Paul, MN 55155",
+    "phone": "651-201-3400",
+    "website": "https://mn.gov/governor/about/",
+    "socialMedia": {
+      "x": "https://x.com/GovTimWalz",
+      "twitter": "https://x.com/GovTimWalz"
+    }
+  },
+  "bio": "Tim Walz is listed as Governor for Minnesota. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "MN",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://mn.gov/governor/about/"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/mn/executive/Tim-Walz-aba9f63e-b8ee-4515-acac-af7a63a4d1ec.yml"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

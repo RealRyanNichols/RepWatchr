@@ -1,0 +1,72 @@
+{
+  "id": "darya-farivar",
+  "name": "Darya Farivar",
+  "firstName": "Darya",
+  "lastName": "Farivar",
+  "photo": "/images/officials/state-legislature/wa/darya-farivar.jpg",
+  "photoSourceUrl": "https://leg.wa.gov/memberphoto/34030.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-46",
+  "jurisdiction": "Washington House of Representatives",
+  "county": [
+    "Washington"
+  ],
+  "termStart": "2023-01-09",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 369, John L. O'Brien Building P.O. Box 40600, Olympia, WA 98504",
+    "phone": "360-786-7818",
+    "email": "darya.farivar@leg.wa.gov",
+    "website": "https://housedemocrats.wa.gov/Farivar/"
+  },
+  "bio": "Darya Farivar serves as State Representative for Washington House of Representatives District 46. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "WA",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://housedemocrats.wa.gov/Farivar/"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/wa/legislature/Darya-Farivar-1effdaf6-73b9-413e-8161-8d2e7080d8df.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://leg.wa.gov/memberphoto/34030.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://app.leg.wa.gov/ContentParts/MemberDirectory/?a=House"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Darya_Farivar"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Darya_Farivar"
+    },
+    {
+      "title": "Public source",
+      "url": "https://housedemocrats.wa.gov/farivar"
+    },
+    {
+      "title": "Public source",
+      "url": "https://housedemocrats.wa.gov/farivar/"
+    },
+    {
+      "title": "Public source",
+      "url": "https://housedemocrats.wa.gov/farivar/biography"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/207469/darya-farivar"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

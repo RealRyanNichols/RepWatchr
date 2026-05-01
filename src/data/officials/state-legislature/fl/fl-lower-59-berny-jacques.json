@@ -1,0 +1,57 @@
+{
+  "id": "berny-jacques",
+  "name": "Berny Jacques",
+  "firstName": "Berny",
+  "lastName": "Jacques",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-59",
+  "jurisdiction": "Florida House of Representatives",
+  "county": [
+    "Florida"
+  ],
+  "termStart": "2022-11-08",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 303, House Office Building 402 S. Monroe St., Tallahassee, FL 32399",
+    "phone": "850-717-5059",
+    "email": "berny.jacques@flhouse.gov",
+    "website": "https://myfloridahouse.gov/Sections/Representatives/details.aspx?MemberId=4886&LegislativeTermId=90"
+  },
+  "bio": "Berny Jacques serves as State Representative for Florida House of Representatives District 59. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "FL",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://myfloridahouse.gov/Sections/Representatives/details.aspx?MemberId=4886&LegislativeTermId=90"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/fl/legislature/Berny-Jacques-8e396afa-17d2-404c-9024-7aa8d7e00e0d.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Berny_Jacques"
+    },
+    {
+      "title": "Public source",
+      "url": "https://bernyforflorida.com/meet-berny"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.flhouse.gov/Sections/Representatives/details.aspx?MemberId=4886"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/berny-jacques-09219311"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.myfloridahouse.gov/Sections/Representatives/details.aspx?MemberId=4886&LegislativeTermId=90"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

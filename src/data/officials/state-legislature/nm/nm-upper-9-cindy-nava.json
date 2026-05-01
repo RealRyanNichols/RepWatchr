@@ -1,0 +1,49 @@
+{
+  "id": "cindy-nava",
+  "name": "Cindy Nava",
+  "firstName": "Cindy",
+  "lastName": "Nava",
+  "party": "D",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-9",
+  "jurisdiction": "New Mexico Senate",
+  "county": [
+    "New Mexico"
+  ],
+  "termStart": "2025-01-01",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "State Capitol Room 416E, New Mexico  490 Old Santa Fe Trail, Santa Fe, NM 87501",
+    "phone": "505-986-4365",
+    "email": "cindy.nava@nmlegis.gov",
+    "website": "https://www.nmlegis.gov/Members/Legislator?SponCode=SNACI"
+  },
+  "bio": "Cindy Nava serves as State Senator for New Mexico Senate District 9. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "NM",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.nmlegis.gov/Members/Legislator?SponCode=SNACI"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/nm/legislature/Cindy-Nava-631f715e-754c-4410-a967-1e5a928ae971.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Cindy_Nava"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Cindy_Nava"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/cindy-nava-77245b32"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

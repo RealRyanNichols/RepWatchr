@@ -1,0 +1,72 @@
+{
+  "id": "maggie-nurrenbern",
+  "name": "Maggie Nurrenbern",
+  "firstName": "Maggie",
+  "lastName": "Nurrenbern",
+  "photo": "/images/officials/state-legislature/mo/maggie-nurrenbern.jpg",
+  "photoSourceUrl": "https://house.mo.gov/MemberPhoto.aspx?id=2211",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-17",
+  "jurisdiction": "Missouri Senate",
+  "county": [
+    "Missouri"
+  ],
+  "termStart": "2025-01-08",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 330, 201 W. Capitol Ave., Jefferson City, MO 65101",
+    "phone": "573-751-5282",
+    "email": "maggie.nurrenbern@senate.mo.gov",
+    "website": "https://house.mo.gov/MemberDetails.aspx?district=015"
+  },
+  "bio": "Maggie Nurrenbern serves as State Senator for Missouri Senate District 17. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "MO",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://house.mo.gov/MemberDetails.aspx?district=015"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/mo/legislature/Maggie-Nurrenbern-d8594030-4826-48c5-af43-674470f1dd44.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://house.mo.gov/MemberPhoto.aspx?id=2211"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Maggie_Nurrenbern"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Maggie_Nurrenbern"
+    },
+    {
+      "title": "Public source",
+      "url": "https://house.mo.gov/MemberDetails.aspx?year=2021&code=R&district=015"
+    },
+    {
+      "title": "Public source",
+      "url": "https://house.mo.gov/MemberDetails.aspx?year=2023&code=R&district=015"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/193270/maggie-nurrenbern"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/maggie-nurrenbern-2730ab2bb"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.senate.mo.gov/Senators/Member/17"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

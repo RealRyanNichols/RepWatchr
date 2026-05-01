@@ -1,0 +1,70 @@
+{
+  "id": "art-haywood",
+  "name": "Art Haywood",
+  "firstName": "Art",
+  "lastName": "Haywood",
+  "party": "D",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-4",
+  "jurisdiction": "Pennsylvania Senate",
+  "county": [
+    "Pennsylvania"
+  ],
+  "termStart": "2015-01-06",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 10, East Wing Senate Box 203004, Harrisburg, PA 17120",
+    "phone": "717-787-1427",
+    "email": "senatorhaywood@pasenate.com",
+    "website": "https://www.legis.state.pa.us/cfdocs/legis/home/member_information/Senate_bio.cfm?id=1689",
+    "socialMedia": {
+      "x": "https://x.com/SenatorHaywood",
+      "twitter": "https://x.com/SenatorHaywood",
+      "facebook": "https://facebook.com/SenatorArtHaywood"
+    }
+  },
+  "bio": "Art Haywood serves as State Senator for Pennsylvania Senate District 4. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "PA",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.legis.state.pa.us/cfdocs/legis/home/member_information/Senate_bio.cfm?id=1689"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/pa/legislature/Art-Haywood-ea712eba-1da5-45e2-8d9f-022e8307a614.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Art_Haywood"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Arthur_L._Haywood_III"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.legis.state.pa.us/cfdocs/legis/home/member_information/mbrList.cfm?body=S&sort=alpha"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.legis.state.pa.us/cfdocs/legis/home/member_information/senators_alpha.cfm"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/art-haywood-b458b9a"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.palegis.us/senate/members/bio/1689/sen-haywood"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.senatorhaywood.com"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

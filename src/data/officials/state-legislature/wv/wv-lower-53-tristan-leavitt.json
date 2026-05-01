@@ -1,0 +1,60 @@
+{
+  "id": "tristan-leavitt",
+  "name": "Tristan Leavitt",
+  "firstName": "Tristan",
+  "lastName": "Leavitt",
+  "photo": "/images/officials/state-legislature/wv/tristan-leavitt.jpg",
+  "photoSourceUrl": "https://www.wvlegislature.gov/images/members/2025/house/leavitt_tristan.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "Delegate",
+  "district": "HD-53",
+  "jurisdiction": "West Virginia House of Delegates",
+  "county": [
+    "West Virginia"
+  ],
+  "termStart": "2024-12-01",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "State Capitol Room 150R-A, Complex, Building 1 1900 Kanawha Blvd. East, Charleston, WV 25305",
+    "phone": "304-340-3156",
+    "email": "tristan.leavitt@wvhouse.gov",
+    "website": "https://www.wvlegislature.gov/House/lawmaker.cfm?member=Delegate%20Leavitt"
+  },
+  "bio": "Tristan Leavitt serves as Delegate for West Virginia House of Delegates District 53. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "WV",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.wvlegislature.gov/House/lawmaker.cfm?member=Delegate%20Leavitt"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/wv/legislature/Tristan-Leavitt-8b2ff1b1-618d-47c4-8b20-8388c53eb412.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://www.wvlegislature.gov/images/members/2025/house/leavitt_tristan.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Tristan_Leavitt"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Tristan_Leavitt"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/214507/tristan-leavitt"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/tristanleavitt"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

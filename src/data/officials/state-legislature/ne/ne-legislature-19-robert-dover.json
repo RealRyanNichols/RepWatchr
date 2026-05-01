@@ -1,0 +1,64 @@
+{
+  "id": "robert-dover",
+  "name": "Robert Dover",
+  "firstName": "Robert",
+  "lastName": "Dover",
+  "photo": "/images/officials/state-legislature/ne/robert-dover.jpg",
+  "photoSourceUrl": "https://www.nebraskalegislature.gov/media/images/senators/dist19/highres/dist19.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "NP",
+  "level": "state",
+  "position": "State Senator",
+  "district": "LD-19",
+  "jurisdiction": "Nebraska Legislature",
+  "county": [
+    "Nebraska"
+  ],
+  "termStart": "2022-07-22",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "State Capitol Room 2011, P.O. Box 94604, Lincoln, NE 68509",
+    "phone": "402-471-2929",
+    "email": "rdover@leg.ne.gov",
+    "website": "https://nebraskalegislature.gov/senators/landing-pages/index.php?District=19"
+  },
+  "bio": "Robert Dover serves as State Senator for Nebraska Legislature District 19. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "NE",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://nebraskalegislature.gov/senators/landing-pages/index.php?District=19"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ne/legislature/Robert-Dover-a9cc86ff-602c-453f-9d6c-fd1567c7fbd7.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://www.nebraskalegislature.gov/media/images/senators/dist19/highres/dist19.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Rob_Dover"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Robert_Dover_(Nebraska_politician)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/210288/robert-dover"
+    },
+    {
+      "title": "Public source",
+      "url": "https://nebraskalegislature.gov/senators/senator_list.php"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/robertdover"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

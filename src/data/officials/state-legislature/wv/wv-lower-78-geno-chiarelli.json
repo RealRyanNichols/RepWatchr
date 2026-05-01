@@ -1,0 +1,56 @@
+{
+  "id": "geno-chiarelli",
+  "name": "Geno Chiarelli",
+  "firstName": "Geno",
+  "lastName": "Chiarelli",
+  "photo": "/images/officials/state-legislature/wv/geno-chiarelli.jpg",
+  "photoSourceUrl": "https://www.wvlegislature.gov/images/members/2025/house/chiarelli_geno.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "Delegate",
+  "district": "HD-78",
+  "jurisdiction": "West Virginia House of Delegates",
+  "county": [
+    "West Virginia"
+  ],
+  "termStart": "2022-12-01",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "State Capitol Room 223E, Complex, Building 1 1900 Kanawha Blvd. East, Charleston, WV 25305",
+    "phone": "304-340-3158",
+    "email": "geno.chiarelli@wvhouse.gov",
+    "website": "https://www.wvlegislature.gov/House/lawmaker.cfm?member=Delegate%20Chiarelli"
+  },
+  "bio": "Geno Chiarelli serves as Delegate for West Virginia House of Delegates District 78. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "WV",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.wvlegislature.gov/House/lawmaker.cfm?member=Delegate%20Chiarelli"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/wv/legislature/Geno-Chiarelli-409397ae-ceea-4b1b-bce5-b042af057232.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://www.wvlegislature.gov/images/members/2025/house/chiarelli_geno.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Eugene_Chiarelli"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Geno_Chiarelli"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.wvlegislature.gov/House/roster.cfm"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

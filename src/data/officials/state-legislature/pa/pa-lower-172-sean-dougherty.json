@@ -1,0 +1,61 @@
+{
+  "id": "sean-dougherty",
+  "name": "Sean Dougherty",
+  "firstName": "Sean",
+  "lastName": "Dougherty",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-172",
+  "jurisdiction": "Pennsylvania House of Representatives",
+  "county": [
+    "Pennsylvania"
+  ],
+  "termStart": "2024-12-01",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room G05, Irvis Office Building P.O. Box 202172, Harrisburg, PA 17120",
+    "phone": "717-783-4944",
+    "email": "repdougherty@pahouse.net",
+    "website": "https://www.pahouse.com/dougherty/"
+  },
+  "bio": "Sean Dougherty serves as State Representative for Pennsylvania House of Representatives District 172. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "PA",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.pahouse.com/dougherty/"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/pa/legislature/Sean-Dougherty-d8624d56-a38e-4918-98ac-d7795569ad06.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Sean_Dougherty_(Pennsylvania)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Sean_Dougherty_(politician)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/214941/sean-dougherty"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/sean-dougherty-0b5875121"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.pahouse.com/dougherty"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.palegis.us/house/members/bio/2035/rep-dougherty"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

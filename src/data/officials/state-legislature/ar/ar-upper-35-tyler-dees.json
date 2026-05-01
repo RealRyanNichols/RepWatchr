@@ -1,0 +1,72 @@
+{
+  "id": "tyler-dees",
+  "name": "Tyler Dees",
+  "firstName": "Tyler",
+  "lastName": "Dees",
+  "photo": "/images/officials/state-legislature/ar/tyler-dees.jpg",
+  "photoSourceUrl": "https://www.arkleg.state.ar.us/Content/photos/2023/Senate/628_sm.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-35",
+  "jurisdiction": "Arkansas Senate",
+  "county": [
+    "Arkansas"
+  ],
+  "termStart": "2023-01-09",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "State Capitol Building 500 Woodlane St., Suite 320, Little Rock, AR 72201",
+    "phone": "501-682-2902",
+    "email": "tyler.dees@senate.ar.gov",
+    "website": "https://arkleg.state.ar.us/Legislators/Detail?member=Dees"
+  },
+  "bio": "Tyler Dees serves as State Senator for Arkansas Senate District 35. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "AR",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://arkleg.state.ar.us/Legislators/Detail?member=Dees"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ar/legislature/Tyler-Dees-11d34a89-689c-4b2f-b953-670ce11ae3bb.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://www.arkleg.state.ar.us/Content/photos/2023/Senate/628_sm.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Tyler_Dees"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Tyler_Dees"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/202510/tyler-dees"
+    },
+    {
+      "title": "Public source",
+      "url": "https://senate.arkansas.gov/media/5502/senator-dees-senator-bio.pdf"
+    },
+    {
+      "title": "Public source",
+      "url": "https://senate.arkansas.gov/senators/628"
+    },
+    {
+      "title": "Public source",
+      "url": "https://senate.arkansas.gov/senators/tyler-dees"
+    },
+    {
+      "title": "Public source",
+      "url": "https://senate.arkansas.gov/senators/tyler-dees/"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

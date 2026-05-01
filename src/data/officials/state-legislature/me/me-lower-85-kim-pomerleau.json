@@ -1,0 +1,56 @@
+{
+  "id": "kim-pomerleau",
+  "name": "Kim Pomerleau",
+  "firstName": "Kim",
+  "lastName": "Pomerleau",
+  "photo": "/images/officials/state-legislature/me/kim-pomerleau.jpg",
+  "photoSourceUrl": "https://legislature.maine.gov/house/house/Repository/MemberProfiles/be0d0db4-52a9-40c7-8300-6cbb2e7e652d_POMERLEAU.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-85",
+  "jurisdiction": "Maine House of Representatives",
+  "county": [
+    "Maine"
+  ],
+  "termStart": "2022-12-07",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 332, House Republican Office 2 State House Station, Augusta, ME 04333",
+    "phone": "800-423-2900",
+    "email": "kimberly.pomerleau@legislature.maine.gov",
+    "website": "https://legislature.maine.gov/house/house/MemberProfiles/Details/1488"
+  },
+  "bio": "Kim Pomerleau serves as State Representative for Maine House of Representatives District 85. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "ME",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://legislature.maine.gov/house/house/MemberProfiles/Details/1488"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/me/legislature/Kimberly-J-Pomerleau-410a9d92-cdb2-4927-b589-72e32d525883.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://legislature.maine.gov/house/house/Repository/MemberProfiles/be0d0db4-52a9-40c7-8300-6cbb2e7e652d_POMERLEAU.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Kimberly_Pomerleau"
+    },
+    {
+      "title": "Public source",
+      "url": "https://legislature.maine.gov/house/house/MemberProfiles/ListAlpha"
+    },
+    {
+      "title": "Public source",
+      "url": "https://mainehousegop.org/members/pomerleau-kimberly"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

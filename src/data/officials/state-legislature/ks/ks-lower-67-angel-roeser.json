@@ -1,0 +1,53 @@
+{
+  "id": "angel-roeser",
+  "name": "Angel Roeser",
+  "firstName": "Angel",
+  "lastName": "Roeser",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-67",
+  "jurisdiction": "Kansas House of Representatives",
+  "county": [
+    "Kansas"
+  ],
+  "termStart": "2025-01-13",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "State Capitol Room 167-W, Kansas  Building 300 SW 10th St., Topeka, KS 66612",
+    "phone": "785-296-7402",
+    "email": "angel.roeser@house.ks.gov",
+    "website": "https://www.kslegislature.gov/li/b2025_26/members/rep_roeser_angelina_1/"
+  },
+  "bio": "Angel Roeser serves as State Representative for Kansas House of Representatives District 67. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "KS",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.kslegislature.gov/li/b2025_26/members/rep_roeser_angelina_1/"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ks/legislature/Angel-Roeser-372f4e97-d36e-41c3-aae3-fd69da828ee5.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Angel_Roeser"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Angelina_Roeser"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.kslegislature.gov/li/b2025_26/members/rep_roeser_angelina_1"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/angel-roeser-manhattanks"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

@@ -1,0 +1,45 @@
+{
+  "id": "diane-mullins",
+  "name": "Diane Mullins",
+  "firstName": "Diane",
+  "lastName": "Mullins",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-47",
+  "jurisdiction": "Ohio House of Representatives",
+  "county": [
+    "Ohio"
+  ],
+  "termStart": "2025-01-01",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "77 S. High St. 11th Floor, Columbus, OH 43215",
+    "phone": "614-644-6721",
+    "email": "rep47@ohiohouse.gov",
+    "website": "https://ohiohouse.gov/members/diane-mullins"
+  },
+  "bio": "Diane Mullins serves as State Representative for Ohio House of Representatives District 47. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "OH",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://ohiohouse.gov/members/diane-mullins"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/oh/legislature/Diane-Mullins-deed175e-5c44-48f0-b2c0-baa342b2baf1.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Diane_Mullins"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ohiohouse.gov/members/diane-mullins/biography"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

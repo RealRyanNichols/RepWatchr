@@ -1,0 +1,68 @@
+{
+  "id": "hunter-smith",
+  "name": "Hunter Smith",
+  "firstName": "Hunter",
+  "lastName": "Smith",
+  "photo": "/images/officials/state-legislature/in/hunter-smith.jpg",
+  "photoSourceUrl": "https://storage.googleapis.com/enview-dev-public-general/legislative-people-photos/157783.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-24",
+  "jurisdiction": "Indiana House of Representatives",
+  "county": [
+    "Indiana"
+  ],
+  "termStart": "2024-11-06",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "200 W. Washington St., Indianapolis, IN 46204",
+    "phone": "317-232-9600",
+    "email": "h24@iga.in.gov",
+    "website": "https://iga.in.gov/legislative/2026/legislators/legislator_hunter_smith_1"
+  },
+  "bio": "Hunter Smith serves as State Representative for Indiana House of Representatives District 24. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "IN",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://iga.in.gov/legislative/2026/legislators/legislator_hunter_smith_1"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/in/legislature/Hunter-Smith-0950736c-1a85-4534-91dd-3538759e75cf.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://storage.googleapis.com/enview-dev-public-general/legislative-people-photos/157783.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Hunter_Smith_(Indiana)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Hunter_Smith"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/214713/hunter-smith"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.indianahouserepublicans.com/members/general/hunter-smith"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.indianahouserepublicans.com/members/general/hunter-smith/?back=members"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/hunter-smith-9a1b5089"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

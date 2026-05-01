@@ -1,0 +1,72 @@
+{
+  "id": "mike-moore",
+  "name": "Mike Moore",
+  "firstName": "Mike",
+  "lastName": "Moore",
+  "photo": "/images/officials/state-legislature/ma/mike-moore.jpg",
+  "photoSourceUrl": "https://malegislature.gov/Legislators/Profile/170/MOM0.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-Second Worcester",
+  "jurisdiction": "Massachusetts Senate",
+  "county": [
+    "Massachusetts"
+  ],
+  "termStart": "2009-01-07",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 109-B, State House 24 Beacon St., Boston, MA 02133",
+    "phone": "617-722-1485",
+    "email": "michael.moore@masenate.gov",
+    "website": "https://malegislature.gov/Legislators/Profile/MOM0"
+  },
+  "bio": "Mike Moore serves as State Senator for Massachusetts Senate District Second Worcester. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "MA",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://malegislature.gov/Legislators/Profile/MOM0"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ma/legislature/Michael-O-Moore-7b48bd48-8d27-4dd8-958d-703571efe150.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://malegislature.gov/Legislators/Profile/170/MOM0.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Michael_O._Moore"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Michael_O._Moore"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/109518/mike-moore"
+    },
+    {
+      "title": "Public source",
+      "url": "https://malegislature.gov/api/GeneralCourts/192/LegislativeMembers"
+    },
+    {
+      "title": "Public source",
+      "url": "https://malegislature.gov/api/GeneralCourts/192/LegislativeMembers/"
+    },
+    {
+      "title": "Public source",
+      "url": "https://malegislature.gov/api/GeneralCourts/192/LegislativeMembers/MOM0"
+    },
+    {
+      "title": "Public source",
+      "url": "https://malegislature.gov/api/GeneralCourts/193/LegislativeMembers"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

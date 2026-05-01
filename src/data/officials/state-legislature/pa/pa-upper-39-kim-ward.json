@@ -1,0 +1,73 @@
+{
+  "id": "kim-ward",
+  "name": "Kim Ward",
+  "firstName": "Kim",
+  "lastName": "Ward",
+  "party": "R",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-39",
+  "jurisdiction": "Pennsylvania Senate",
+  "county": [
+    "Pennsylvania"
+  ],
+  "termStart": "2009-01-06",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 292, Main Capitol Senate Box 203039, Harrisburg, PA 17120",
+    "phone": "717-787-6063",
+    "email": "kward@pasen.gov",
+    "website": "https://senatorward.com/",
+    "socialMedia": {
+      "x": "https://x.com/SenatorKimWard",
+      "twitter": "https://x.com/SenatorKimWard"
+    }
+  },
+  "bio": "Kim Ward serves as State Senator for Pennsylvania Senate District 39. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "PA",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://senatorward.com/"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/pa/legislature/Kim-L-Ward-c48a0179-5770-410d-ba97-bdbc05d20786.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Kim_Ward"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Kim_Ward"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/108241/kim-ward"
+    },
+    {
+      "title": "Public source",
+      "url": "https://senatorward.com"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.legis.state.pa.us/cfdocs/legis/home/member_information/mbrList.cfm?body=S&sort=alpha"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.legis.state.pa.us/cfdocs/legis/home/member_information/Senate_bio.cfm?id=1188"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.legis.state.pa.us/cfdocs/legis/home/member_information/senators_alpha.cfm"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/kim-ward-1a348618"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

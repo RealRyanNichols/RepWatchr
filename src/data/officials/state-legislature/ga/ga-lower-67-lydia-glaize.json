@@ -1,0 +1,65 @@
+{
+  "id": "lydia-glaize",
+  "name": "Lydia Glaize",
+  "firstName": "Lydia",
+  "lastName": "Glaize",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-67",
+  "jurisdiction": "Georgia House of Representatives",
+  "county": [
+    "Georgia"
+  ],
+  "termStart": "2023-01-09",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 409-C, Coverdell Legislative Office Building 18 Capitol Square SW, Atlanta, GA 30334",
+    "phone": "404-656-0116",
+    "email": "lydia.glaize@house.ga.gov",
+    "website": "https://www.legis.ga.gov/members/house"
+  },
+  "bio": "Lydia Glaize serves as State Representative for Georgia House of Representatives District 67. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "GA",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.legis.ga.gov/members/house"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ga/legislature/Lydia-Glaize-ee575d7a-b5a1-419c-949d-4aa9290a67a1.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Lydia_Glaize"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Lydia_Glaize"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/203425/lydia-glaize"
+    },
+    {
+      "title": "API member detail (requires authorization token)",
+      "url": "https://www.legis.ga.gov/api/members/detail/5031?session=1031&chamber=1"
+    },
+    {
+      "title": "API members list (requires authorization token)",
+      "url": "https://www.legis.ga.gov/api/members/list/1031"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.legis.ga.gov/members/house/5031"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/lydia-glaize-214a9212b"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

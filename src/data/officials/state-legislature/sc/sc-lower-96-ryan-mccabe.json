@@ -1,0 +1,61 @@
+{
+  "id": "ryan-mccabe",
+  "name": "Ryan McCabe",
+  "firstName": "Ryan",
+  "lastName": "McCabe",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-96",
+  "jurisdiction": "South Carolina House of Representatives",
+  "county": [
+    "South Carolina"
+  ],
+  "termStart": "2020-11-09",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 320C, Blatt Building P.O. Box 11867, Columbia, SC 29201",
+    "phone": "803-212-6728",
+    "email": "ryanmccabe@schouse.gov",
+    "website": "https://scstatehouse.gov/member.php?code=1206818037"
+  },
+  "bio": "Ryan McCabe serves as State Representative for South Carolina House of Representatives District 96. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "SC",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://scstatehouse.gov/member.php?code=1206818037"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/sc/legislature/Donald-R-Ryan-McCabe-Jr-68934441-84b3-48c7-b8a5-a694744f9e3b.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/D._Ryan_McCabe"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Ryan_McCabe"
+    },
+    {
+      "title": "Public source",
+      "url": "https://scstatehouse.gov/member.php?chamber=H"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/d-ryan-mccabe-aa2b823"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.scstatehouse.gov/member.php?chamber=H"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.scstatehouse.gov/member.php?code=1206818037"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

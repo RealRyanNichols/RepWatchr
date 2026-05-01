@@ -1,0 +1,60 @@
+{
+  "id": "brad-simon",
+  "name": "Brad Simon",
+  "firstName": "Brad",
+  "lastName": "Simon",
+  "photo": "/images/officials/state-legislature/ar/brad-simon.jpg",
+  "photoSourceUrl": "https://static.wixstatic.com/media/e50aa4_23cec1e445944f57b026e5e2b1b397b1~mv2.png/v1/fill/w_953,h_1415,al_c,q_90,usm_0.66_1.00_0.01,enc_avif,quality_auto/e50aa4_23cec1e445944f57b026e5e2b1b397b1~mv2.png",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-26",
+  "jurisdiction": "Arkansas Senate",
+  "county": [
+    "Arkansas"
+  ],
+  "termStart": "2026-03-18",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "State Capitol Building 500 Woodlane St., Suite 320, Little Rock, AR 72201",
+    "phone": "501-682-2902",
+    "email": "brad.simon@senate.ar.gov",
+    "website": "https://arkleg.state.ar.us/Legislators/Detail?member=Simon"
+  },
+  "bio": "Brad Simon serves as State Senator for Arkansas Senate District 26. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "AR",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://arkleg.state.ar.us/Legislators/Detail?member=Simon"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ar/legislature/Brad-Simon-24a8e487-fca2-4d84-999c-4877ab721136.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://static.wixstatic.com/media/e50aa4_23cec1e445944f57b026e5e2b1b397b1~mv2.png/v1/fill/w_953,h_1415,al_c,q_90,usm_0.66_1.00_0.01,enc_avif,quality_auto/e50aa4_23cec1e445944f57b026e5e2b1b397b1~mv2.png"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Brad_Simon"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Brad_Simon_(politician)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://senate.arkansas.gov/senators/656"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/brad-simon-55b6809"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

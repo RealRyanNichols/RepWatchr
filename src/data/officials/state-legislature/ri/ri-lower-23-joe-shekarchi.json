@@ -1,0 +1,72 @@
+{
+  "id": "joe-shekarchi",
+  "name": "Joe Shekarchi",
+  "firstName": "Joe",
+  "lastName": "Shekarchi",
+  "photo": "/images/officials/state-legislature/ri/joe-shekarchi.jpg",
+  "photoSourceUrl": "http://www.rilegislature.gov/representatives/pictures/shekarchi.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-23",
+  "jurisdiction": "Rhode Island House of Representatives",
+  "county": [
+    "Rhode Island"
+  ],
+  "termStart": "",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 323, 82 Smith St., Providence, RI 02903",
+    "phone": "401-222-2447",
+    "email": "rep-shekarchi@rilegislature.gov",
+    "website": "https://joeshekarchi.com/"
+  },
+  "bio": "Joe Shekarchi serves as State Representative for Rhode Island House of Representatives District 23. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "RI",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://joeshekarchi.com/"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ri/legislature/K-Joseph-Shekarchi-00644fec-e128-4e7f-9af0-8e79d0903da3.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "http://www.rilegislature.gov/representatives/pictures/shekarchi.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/K._Joseph_Shekarchi"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/K._Joseph_Shekarchi"
+    },
+    {
+      "title": "Public source",
+      "url": "https://joeshekarchi.com"
+    },
+    {
+      "title": "Public source",
+      "url": "https://joeshekarchi.com/meet-joe"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/142089/k-joseph-shekarchi"
+    },
+    {
+      "title": "Public source",
+      "url": "https://webserver.rilin.state.ri.us/Email/RepEmailListDistrict.asp"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/joe-shekarchi-874b2aa"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

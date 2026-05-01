@@ -1,0 +1,69 @@
+{
+  "id": "lisa-marten",
+  "name": "Lisa Marten",
+  "firstName": "Lisa",
+  "lastName": "Marten",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-51",
+  "jurisdiction": "Hawaii House of Representatives",
+  "county": [
+    "Hawaii"
+  ],
+  "termStart": "2020-11-03",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "State Capitol Room 426, 415 S. Beretania St., Honolulu, HI 96813",
+    "phone": "808-586-9450",
+    "email": "repmarten@capitol.hawaii.gov",
+    "website": "https://www.capitol.hawaii.gov/legislature/memberpage.aspx?member=87"
+  },
+  "bio": "Lisa Marten serves as State Representative for Hawaii House of Representatives District 51. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "HI",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.capitol.hawaii.gov/legislature/memberpage.aspx?member=87"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/hi/legislature/Lisa-Marten-c4ea2b48-612d-42f4-b396-6f13c86bfe5b.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Lisa_Marten"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Lisa_Marten"
+    },
+    {
+      "title": "Public source",
+      "url": "https://lisamarten.com/lisa-marten"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.capitol.hawaii.gov/legislature/memberpage.aspx?member=87&year=2023"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.capitol.hawaii.gov/legislature/memberpage.aspx?member=87&year=2024"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.capitol.hawaii.gov/memberpage.aspx?member=Marten&year=2021"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.capitol.hawaii.gov/memberpage.aspx?member=Marten&year=2022"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.capitol.hawaii.gov/members/legislators.aspx"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

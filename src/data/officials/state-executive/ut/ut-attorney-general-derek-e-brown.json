@@ -1,0 +1,59 @@
+{
+  "id": "derek-e-brown",
+  "name": "Derek E Brown",
+  "firstName": "Derek",
+  "lastName": "Brown",
+  "photo": "/images/officials/state-executive/ut/derek-e-brown.jpg",
+  "photoSourceUrl": "https://www.naag.org/wp-content/uploads/2025/01/ag-UT-Brown-Derek.png",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "Attorney General",
+  "district": "Utah",
+  "jurisdiction": "Utah statewide public office",
+  "county": [
+    "Utah"
+  ],
+  "termStart": "2025-01-07",
+  "termEnd": "2029-01-01",
+  "contactInfo": {
+    "office": "State Capitol, Rm. 236; Salt Lake City, UT 84114-0810",
+    "phone": "801-538-9600",
+    "website": "http://le.utah.gov/house2/detail.jsp?i=BROWNDE"
+  },
+  "bio": "Derek E Brown is listed as Attorney General for Utah. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "UT",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "http://le.utah.gov/house2/detail.jsp?i=BROWNDE"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ut/executive/Derek-E-Brown-34430fff-d52e-4218-a99b-3d2764578bc9.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://www.naag.org/wp-content/uploads/2025/01/ag-UT-Brown-Derek.png"
+    },
+    {
+      "title": "Public source",
+      "url": "http://le.utah.gov/house2/representatives.jsp"
+    },
+    {
+      "title": "Public source",
+      "url": "https://attorneygeneral.utah.gov/"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Derek_Brown_(Utah)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.naag.org/attorney-general/derek-brown/"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

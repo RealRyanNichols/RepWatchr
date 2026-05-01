@@ -1,0 +1,72 @@
+{
+  "id": "jeff-raatz",
+  "name": "Jeff Raatz",
+  "firstName": "Jeff",
+  "lastName": "Raatz",
+  "photo": "/images/officials/state-legislature/in/jeff-raatz.jpg",
+  "photoSourceUrl": "https://cdn.zephyrcms.com/248dafe4-9869-419e-8b36-190d40ffd50b/-/progressive/yes/-/format/jpeg/-/scale_crop/200x300/center/-/stretch/off/raatz-2022.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-27",
+  "jurisdiction": "Indiana Senate",
+  "county": [
+    "Indiana"
+  ],
+  "termStart": "2014-11-05",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "200 W. Washington St., Indianapolis, IN 46204",
+    "phone": "317-232-9400",
+    "email": "s27@iga.in.gov",
+    "website": "https://iga.in.gov/legislative/2021/legislators/legislator_jeff_raatz_1"
+  },
+  "bio": "Jeff Raatz serves as State Senator for Indiana Senate District 27. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "IN",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://iga.in.gov/legislative/2021/legislators/legislator_jeff_raatz_1"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/in/legislature/Jeff-Raatz-4267823b-aec1-452a-a040-25b337f04c54.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://cdn.zephyrcms.com/248dafe4-9869-419e-8b36-190d40ffd50b/-/progressive/yes/-/format/jpeg/-/scale_crop/200x300/center/-/stretch/off/raatz-2022.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://api.iga.in.gov/2021/legislators/jeff_raatz_1"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Jeff_Raatz"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Jeff_Raatz"
+    },
+    {
+      "title": "Public source",
+      "url": "https://iga.in.gov/legislative/2022/legislators/legislator_jeff_raatz_1"
+    },
+    {
+      "title": "Public source",
+      "url": "https://iga.in.gov/legislative/2022/legislators/legislator_jeff_raatz_1/"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/148529/jeff-raatz"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.indianasenaterepublicans.com/raatz"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

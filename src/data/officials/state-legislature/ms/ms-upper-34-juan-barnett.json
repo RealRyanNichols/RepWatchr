@@ -1,0 +1,64 @@
+{
+  "id": "juan-barnett",
+  "name": "Juan Barnett",
+  "firstName": "Juan",
+  "lastName": "Barnett",
+  "photo": "/images/officials/state-legislature/ms/juan-barnett.jpg",
+  "photoSourceUrl": "https://static.votesmart.org/static/canphoto/156222.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-34",
+  "jurisdiction": "Mississippi Senate",
+  "county": [
+    "Mississippi"
+  ],
+  "termStart": "2016-01-05",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "State Capitol Room 405, 400 High St., Jackson, MS 39201",
+    "phone": "601-359-2224",
+    "email": "jbarnett@senate.ms.gov",
+    "website": "https://billstatus.ls.state.ms.us/members/senate/barnett.xml"
+  },
+  "bio": "Juan Barnett serves as State Senator for Mississippi Senate District 34. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "MS",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://billstatus.ls.state.ms.us/members/senate/barnett.xml"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ms/legislature/Juan-Barnett-fcb35ef2-7463-4f8a-9a8a-3bc45b235ecb.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://static.votesmart.org/static/canphoto/156222.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Juan_Barnett"
+    },
+    {
+      "title": "Public source",
+      "url": "https://billstatus.ls.state.ms.us/members/ss_membs.xml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Juan_Barnett"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/156222/juan-barnett"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/juan-barnett-24843461"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

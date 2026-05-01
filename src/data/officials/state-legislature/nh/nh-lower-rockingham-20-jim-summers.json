@@ -1,0 +1,68 @@
+{
+  "id": "jim-summers",
+  "name": "Jim Summers",
+  "firstName": "Jim",
+  "lastName": "Summers",
+  "photo": "/images/officials/state-legislature/nh/jim-summers.jpg",
+  "photoSourceUrl": "https://www.citizenscount.org/sites/default/files/styles/profile_140x176/public/candidate-images/jimsummers.jpg?itok=7IqtSp2Z",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-Rockingham 20",
+  "jurisdiction": "New Hampshire House of Representatives",
+  "county": [
+    "New Hampshire"
+  ],
+  "termStart": "2022-12-07",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "State House 107 N. Main St., Concord, NH 03301",
+    "phone": "603-271-3661",
+    "email": "james.summers@gc.nh.gov",
+    "website": "https://gc.nh.gov/house/members/member.aspx?pid=9294"
+  },
+  "bio": "Jim Summers serves as State Representative for New Hampshire House of Representatives District Rockingham 20. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "NH",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://gc.nh.gov/house/members/member.aspx?pid=9294"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/nh/legislature/James-Summers-14936ed1-5203-4f3e-be18-4243f1fff521.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://www.citizenscount.org/sites/default/files/styles/profile_140x176/public/candidate-images/jimsummers.jpg?itok=7IqtSp2Z"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/James_Summers"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/James_Summers_(American_politician)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/122827/james-summers"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.gencourt.state.nh.us/house/members/member.aspx?pid=9294"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/dr-james-jim-summers-5221392"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/jim-summers-d-b-a-c-5221392"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

@@ -1,0 +1,68 @@
+{
+  "id": "mark-johnson-mn-legislature-upper-1",
+  "name": "Mark Johnson",
+  "firstName": "Mark",
+  "lastName": "Johnson",
+  "photo": "/images/officials/state-legislature/mn/mark-johnson-mn-legislature-upper-1.jpg",
+  "photoSourceUrl": "https://www.senate.mn/graphics/01Johnson.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-1",
+  "jurisdiction": "Minnesota Senate",
+  "county": [
+    "Minnesota"
+  ],
+  "termStart": "2017-01-03",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 2401, Minnesota Senate Building 95 University Ave. West, St. Paul, MN 55155",
+    "phone": "651-296-5782",
+    "email": "sen.mark.johnson@senate.mn",
+    "website": "https://www.senate.mn/members/member_bio.html?mem_id=1217"
+  },
+  "bio": "Mark Johnson serves as State Senator for Minnesota Senate District 1. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "MN",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.senate.mn/members/member_bio.html?mem_id=1217"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/mn/legislature/Mark-Johnson-de9b28f6-a2a8-4edd-98cb-2b3ff2e6382c.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://www.senate.mn/graphics/01Johnson.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Mark_Johnson_(Minnesota)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Mark_Johnson_(Minnesota_politician)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/171332/mark-johnson"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.senate.mn/api/members"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.senate.mn/members/index.php"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.senate.mn/members/list.csv"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

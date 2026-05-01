@@ -1,0 +1,64 @@
+{
+  "id": "ricki-ruiz",
+  "name": "Ricki Ruiz",
+  "firstName": "Ricki",
+  "lastName": "Ruiz",
+  "photo": "/images/officials/state-legislature/or/ricki-ruiz.jpg",
+  "photoSourceUrl": "https://www.oregonlegislature.gov/ruiz/PublishingImages/member_photo.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-50",
+  "jurisdiction": "Oregon House of Representatives",
+  "county": [
+    "Oregon"
+  ],
+  "termStart": "2021-01-11",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room H-272, 900 Court St. NE, Salem, OR 97301",
+    "phone": "503-986-1450",
+    "email": "rep.rickiruiz@oregonlegislature.gov",
+    "website": "https://www.oregonlegislature.gov/ruiz"
+  },
+  "bio": "Ricki Ruiz serves as State Representative for Oregon House of Representatives District 50. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "OR",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.oregonlegislature.gov/ruiz"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/or/legislature/Ricki-Ruiz-fce6eed7-4438-4f31-b47a-ee054c28d4f7.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://www.oregonlegislature.gov/ruiz/PublishingImages/member_photo.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://api.oregonlegislature.gov/odata/odataservice.svc/LegislativeSessions('2022R1')/Legislators"
+    },
+    {
+      "title": "Public source",
+      "url": "https://api.oregonlegislature.gov/odata/odataservice.svc/LegislativeSessions('2023R1')/Legislators"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Ricki_Ruiz"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Ricki_Ruiz"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/ricki-ruiz-27374879"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

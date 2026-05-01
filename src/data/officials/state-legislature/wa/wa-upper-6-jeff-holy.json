@@ -1,0 +1,69 @@
+{
+  "id": "jeff-holy",
+  "name": "Jeff Holy",
+  "firstName": "Jeff",
+  "lastName": "Holy",
+  "party": "R",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-6",
+  "jurisdiction": "Washington Senate",
+  "county": [
+    "Washington"
+  ],
+  "termStart": "2019-01-14",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 312A, Irv Newhouse Building P.O. Box 40406, Olympia, WA 98504",
+    "phone": "360-786-7610",
+    "email": "jeff.holy@leg.wa.gov",
+    "website": "https://JeffHoly.src.wastateleg.org/"
+  },
+  "bio": "Jeff Holy serves as State Senator for Washington Senate District 6. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "WA",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://JeffHoly.src.wastateleg.org/"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/wa/legislature/Jeff-Holy-0396b4de-01b1-4784-a604-aafc516f5e39.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://app.leg.wa.gov/ContentParts/MemberDirectory/?a=Senate"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Jeff_Holy"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Jeff_Holy"
+    },
+    {
+      "title": "Public source",
+      "url": "https://jeffholy.src.wastateleg.org"
+    },
+    {
+      "title": "Public source",
+      "url": "https://jeffholy.src.wastateleg.org/"
+    },
+    {
+      "title": "Public source",
+      "url": "https://leg.wa.gov/legislators/member/jeff-holy"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.leg.wa.gov/senate/senators/Pages/default.aspx"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/jeff-holy-0620015"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

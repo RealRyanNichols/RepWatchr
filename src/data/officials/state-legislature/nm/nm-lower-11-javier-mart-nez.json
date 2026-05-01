@@ -1,0 +1,70 @@
+{
+  "id": "javier-mart-nez",
+  "name": "Javier Mart\u00ednez",
+  "firstName": "Javier",
+  "lastName": "Mart\u00ednez",
+  "photo": "/images/officials/state-legislature/nm/javier-mart-nez.jpg",
+  "photoSourceUrl": "https://www.nmlegis.gov/Images/Legislators/House/HMARJ.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-11",
+  "jurisdiction": "New Mexico House of Representatives",
+  "county": [
+    "New Mexico"
+  ],
+  "termStart": "2015-01-20",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "State Capitol Room 104, New Mexico  490 Old Santa Fe Trail, Santa Fe, NM 87501",
+    "phone": "505-986-4782",
+    "email": "javier.martinez@nmlegis.gov",
+    "website": "https://www.nmlegis.gov/Members/Legislator?SponCode=HMARJ",
+    "socialMedia": {
+      "x": "https://x.com/javierfornm",
+      "twitter": "https://x.com/javierfornm",
+      "facebook": "https://facebook.com/javiermartinezfornewmexico",
+      "instagram": "https://instagram.com/javierfornm"
+    }
+  },
+  "bio": "Javier Mart\u00ednez serves as State Representative for New Mexico House of Representatives District 11. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "NM",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.nmlegis.gov/Members/Legislator?SponCode=HMARJ"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/nm/legislature/Javier-Martnez-221a42af-f54f-4e66-b648-9b0028165595.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://www.nmlegis.gov/Images/Legislators/House/HMARJ.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Javier_I._Martinez"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Javier_Mart%C3%ADnez_(politician)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/150977/javier-martinez"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/javier-mart%C3%ADnez-719283145"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.nmlegis.gov/Members/Legislator_List?T=R"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

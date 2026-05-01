@@ -1,0 +1,68 @@
+{
+  "id": "heather-matson",
+  "name": "Heather Matson",
+  "firstName": "Heather",
+  "lastName": "Matson",
+  "photo": "/images/officials/state-legislature/ia/heather-matson.jpg",
+  "photoSourceUrl": "https://www.legis.iowa.gov/photo?action=getPhoto&ga=91&pid=27023",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-42",
+  "jurisdiction": "Iowa House of Representatives",
+  "county": [
+    "Iowa"
+  ],
+  "termStart": "2023-01-01",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "State Capitol Building 1007 E. Grand Ave., Des Moines, IA 50319",
+    "phone": "515-281-3221",
+    "email": "heather.matson@legis.iowa.gov",
+    "website": "https://eepurl.com/ihfkwz"
+  },
+  "bio": "Heather Matson serves as State Representative for Iowa House of Representatives District 42. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "IA",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://eepurl.com/ihfkwz"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ia/legislature/Heather-Matson-ba713234-dc5e-4646-9f74-c25d84f648cc.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://www.legis.iowa.gov/photo?action=getPhoto&ga=91&pid=27023"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Heather_Matson"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Heather_Matson"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.legis.iowa.gov/legislators/house"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.legis.iowa.gov/legislators/legislator?ga=90&personID=27023"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.legis.iowa.gov/legislators/legislator?personID=27023"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/heather-matson-1698565"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

@@ -1,0 +1,72 @@
+{
+  "id": "dave-dipietro",
+  "name": "Dave DiPietro",
+  "firstName": "Dave",
+  "lastName": "DiPietro",
+  "photo": "/images/officials/state-legislature/ny/dave-dipietro.jpg",
+  "photoSourceUrl": "https://assembly.state.ny.us/write/upload/member_files/147/headshot/147.jpg?hst=1660075005",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "Assemblymember",
+  "district": "HD-147",
+  "jurisdiction": "New York State Assembly",
+  "county": [
+    "New York"
+  ],
+  "termStart": "2013-01-01",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 546, Legislative Office Building, Albany, NY 12248",
+    "phone": "518-455-5314",
+    "email": "dipietrod@nyassembly.gov",
+    "website": "https://assembly.state.ny.us/mem/?sh=email",
+    "socialMedia": {
+      "x": "https://x.com/DiPietro4NY",
+      "twitter": "https://x.com/DiPietro4NY"
+    }
+  },
+  "bio": "Dave DiPietro serves as Assemblymember for New York State Assembly District 147. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "NY",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://assembly.state.ny.us/mem/?sh=email"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ny/legislature/David-DiPietro-67c280c8-c9a5-4eff-93de-480570d6a414.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://assembly.state.ny.us/write/upload/member_files/147/headshot/147.jpg?hst=1660075005"
+    },
+    {
+      "title": "Public source",
+      "url": "https://assembly.state.ny.us/mem/David-DiPietro"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/David_DiPietro"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/David_DiPietro"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/110411/dave-dipietro"
+    },
+    {
+      "title": "Public source",
+      "url": "https://nyassembly.gov/mem/David-DiPietro"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/david-dipietro-a395889"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

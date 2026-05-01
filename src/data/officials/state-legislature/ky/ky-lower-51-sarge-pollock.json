@@ -1,0 +1,58 @@
+{
+  "id": "sarge-pollock",
+  "name": "Sarge Pollock",
+  "firstName": "Sarge",
+  "lastName": "Pollock",
+  "photo": "/images/officials/state-legislature/ky/sarge-pollock.jpg",
+  "photoSourceUrl": "https://legislature.ky.gov/Legislators%20Thumbnail%20Images/house51.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-51",
+  "jurisdiction": "Kentucky House of Representatives",
+  "county": [
+    "Kentucky"
+  ],
+  "termStart": "2021-11-29",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "email": "sarge.pollock@kylegislature.gov",
+    "website": "https://legislature.ky.gov/Legislators/Pages/Legislator-Profile.aspx?DistrictNumber=51"
+  },
+  "bio": "Sarge Pollock serves as State Representative for Kentucky House of Representatives District 51. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "KY",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://legislature.ky.gov/Legislators/Pages/Legislator-Profile.aspx?DistrictNumber=51"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ky/legislature/Michael-Sarge-Pollock-3e417407-423f-45d3-b18a-c2845cd1ec57.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://legislature.ky.gov/Legislators%20Thumbnail%20Images/house51.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Michael_Pollock"
+    },
+    {
+      "title": "Public source",
+      "url": "https://legislature.ky.gov/Legislators/house-of-representatives"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/michael-%E2%80%9Csarge%E2%80%9D-pollock-45b5741a3"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/sarge-pollock-05593216"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

@@ -1,0 +1,65 @@
+{
+  "id": "andr-s-romero",
+  "name": "Andr\u00e9s Romero",
+  "firstName": "Andr\u00e9s",
+  "lastName": "Romero",
+  "photo": "/images/officials/state-legislature/nm/andr-s-romero.jpg",
+  "photoSourceUrl": "https://www.nmlegis.gov/Images/Legislators/House/HROMA.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-10",
+  "jurisdiction": "New Mexico House of Representatives",
+  "county": [
+    "New Mexico"
+  ],
+  "termStart": "2015-01-20",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "State Capitol Room 313B, New Mexico  490 Old Santa Fe Trail, Santa Fe, NM 87501",
+    "phone": "505-986-4842",
+    "email": "andres.romero@nmlegis.gov",
+    "website": "https://www.nmlegis.gov/Members/Legislator?SponCode=HROMA",
+    "socialMedia": {
+      "x": "https://x.com/andresromeronm",
+      "twitter": "https://x.com/andresromeronm",
+      "facebook": "https://facebook.com/RomeroForDistrict10"
+    }
+  },
+  "bio": "Andr\u00e9s Romero serves as State Representative for New Mexico House of Representatives District 10. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "NM",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.nmlegis.gov/Members/Legislator?SponCode=HROMA"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/nm/legislature/G-Andrs-Romero-5cf6976d-e616-4579-a194-ec3c37260ebd.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://www.nmlegis.gov/Images/Legislators/House/HROMA.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/G._Andres_Romero"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/G._Andr%C3%A9s_Romero"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/150987/andres-romero"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.nmlegis.gov/Members/Legislator_List?T=R"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

@@ -1,0 +1,60 @@
+{
+  "id": "barbara-sharief",
+  "name": "Barbara Sharief",
+  "firstName": "Barbara",
+  "lastName": "Sharief",
+  "photo": "/images/officials/state-legislature/fl/barbara-sharief.jpg",
+  "photoSourceUrl": "https://s3.amazonaws.com/ballotpedia-api4/files/thumbs/200/300/_oMaIez3_400x400.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-35",
+  "jurisdiction": "Florida Senate",
+  "county": [
+    "Florida"
+  ],
+  "termStart": "2024-11-05",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 205, Senate Building 404 S. Monroe St., Tallahassee, FL 32399",
+    "phone": "850-487-5035",
+    "email": "sharief.barbara.web@flsenate.gov",
+    "website": "https://www.flsenate.gov/Senators/S35"
+  },
+  "bio": "Barbara Sharief serves as State Senator for Florida Senate District 35. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "FL",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.flsenate.gov/Senators/S35"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/fl/legislature/Barbara-Sharief-2af7bd80-7f71-4530-8d69-ee448bc32255.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://s3.amazonaws.com/ballotpedia-api4/files/thumbs/200/300/_oMaIez3_400x400.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Barbara_Sharief"
+    },
+    {
+      "title": "Public source",
+      "url": "https://barbarasharief.com"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Barbara_Sharief"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/dr-barbara-sharief"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

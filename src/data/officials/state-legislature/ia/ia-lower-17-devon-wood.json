@@ -1,0 +1,68 @@
+{
+  "id": "devon-wood",
+  "name": "Devon Wood",
+  "firstName": "Devon",
+  "lastName": "Wood",
+  "photo": "/images/officials/state-legislature/ia/devon-wood.jpg",
+  "photoSourceUrl": "https://www.legis.iowa.gov/photo?action=getPhoto&ga=91&pid=33968",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-17",
+  "jurisdiction": "Iowa House of Representatives",
+  "county": [
+    "Iowa"
+  ],
+  "termStart": "2023-01-01",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "State Capitol Building 1007 E. Grand Ave., Des Moines, IA 50319",
+    "phone": "515-281-3221",
+    "email": "devon.wood@legis.iowa.gov",
+    "website": "https://www.legis.iowa.gov/legislators/legislator/newsletter?id=33968&ga=90"
+  },
+  "bio": "Devon Wood serves as State Representative for Iowa House of Representatives District 17. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "IA",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.legis.iowa.gov/legislators/legislator/newsletter?id=33968&ga=90"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ia/legislature/Devon-Wood-60f3c355-fa56-48db-8379-14234d427148.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://www.legis.iowa.gov/photo?action=getPhoto&ga=91&pid=33968"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Devon_Wood"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Devon_Wood"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.legis.iowa.gov/legislators/house"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.legis.iowa.gov/legislators/legislator?ga=90&personID=33968"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.legis.iowa.gov/legislators/legislator?personID=33968"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/devon-wood-7657a9162"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

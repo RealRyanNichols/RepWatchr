@@ -1,0 +1,72 @@
+{
+  "id": "jim-petty",
+  "name": "Jim Petty",
+  "firstName": "Jim",
+  "lastName": "Petty",
+  "photo": "/images/officials/state-legislature/ar/jim-petty.jpg",
+  "photoSourceUrl": "https://www.arkleg.state.ar.us/Content/photos/2023/Senate/631_sm.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-29",
+  "jurisdiction": "Arkansas Senate",
+  "county": [
+    "Arkansas"
+  ],
+  "termStart": "2023-01-09",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "State Capitol Building 500 Woodlane St., Suite 320, Little Rock, AR 72201",
+    "phone": "501-682-2902",
+    "email": "jim.petty@senate.ar.gov",
+    "website": "https://arkleg.state.ar.us/Legislators/Detail?member=J.+Petty"
+  },
+  "bio": "Jim Petty serves as State Senator for Arkansas Senate District 29. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "AR",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://arkleg.state.ar.us/Legislators/Detail?member=J.+Petty"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ar/legislature/Jim-Petty-6b90e69a-b1af-402f-a219-daacb99f3926.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://www.arkleg.state.ar.us/Content/photos/2023/Senate/631_sm.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Jim_Petty"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Jim_Petty"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/202500/jim-petty"
+    },
+    {
+      "title": "Public source",
+      "url": "https://senate.arkansas.gov/senators/631"
+    },
+    {
+      "title": "Public source",
+      "url": "https://senate.arkansas.gov/senators/jim-petty"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.arkleg.state.ar.us/Legislators/Detail?member=J.+Petty&ddBienniumSession=2023%2F2023R"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.arkleg.state.ar.us/Legislators/List?sort=Type&by=desc&ddBienniumSession=2023%2F2023R#SearchResults"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

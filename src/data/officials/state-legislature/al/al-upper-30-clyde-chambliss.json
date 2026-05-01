@@ -1,0 +1,72 @@
+{
+  "id": "clyde-chambliss",
+  "name": "Clyde Chambliss",
+  "firstName": "Clyde",
+  "lastName": "Chambliss",
+  "photo": "/images/officials/state-legislature/al/clyde-chambliss.jpg",
+  "photoSourceUrl": "https://www.legislature.state.al.us/pdf/senate/members/Chambliss_30.png",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-30",
+  "jurisdiction": "Alabama Senate",
+  "county": [
+    "Alabama"
+  ],
+  "termStart": "2014-11-05",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 721, 11 S. Union St., Montgomery, AL 36130",
+    "phone": "334-261-0872",
+    "email": "clyde.chambliss@alsenate.gov",
+    "website": "https://alison.legislature.state.al.us/senate-leaders-members"
+  },
+  "bio": "Clyde Chambliss serves as State Senator for Alabama Senate District 30. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "AL",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://alison.legislature.state.al.us/senate-leaders-members"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/al/legislature/Clyde-Chambliss-d1307771-6d50-4d56-9995-b5d799917d7b.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://www.legislature.state.al.us/pdf/senate/members/Chambliss_30.png"
+    },
+    {
+      "title": "Public source",
+      "url": "https://alsenaterepublicans.org/representatives/0030-clyde-chambliss"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Clyde_Chambliss_Jr."
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Clyde_Chambliss"
+    },
+    {
+      "title": "graphql endpoint for member information",
+      "url": "https://gql.api.alison.legislature.state.al.us/graphql"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/79831/clyde-chambliss-jr"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.legislature.state.al.us/aliswww/ISD/ALSenator.aspx?NAME=Chambliss&OID_SPONSOR=100473&OID_PERSON=7692&SESSNAME=Regular%20Session%202022"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.legislature.state.al.us/aliswww/ISD/ALSenator.aspx?OID_SPONSOR=100473&OID_PERSON=7692"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

@@ -1,0 +1,65 @@
+{
+  "id": "mitch-bolinsky",
+  "name": "Mitch Bolinsky",
+  "firstName": "Mitch",
+  "lastName": "Bolinsky",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-106",
+  "jurisdiction": "Connecticut House of Representatives",
+  "county": [
+    "Connecticut"
+  ],
+  "termStart": "2013-01-09",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 4200, Legislative Office Building 300 Capitol Ave., Hartford, CT 06106",
+    "phone": "860-240-8700",
+    "email": "mitch.bolinsky@housegop.ct.gov",
+    "website": "https://cga.ct.gov/asp/CGABillStatus/CGAMemberBills.asp?dist_code=%27106%27&dist_name=Bolinsky,%20Mitch"
+  },
+  "bio": "Mitch Bolinsky serves as State Representative for Connecticut House of Representatives District 106. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "CT",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://cga.ct.gov/asp/CGABillStatus/CGAMemberBills.asp?dist_code=%27106%27&dist_name=Bolinsky,%20Mitch"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ct/legislature/Mitch-Bolinsky-5af50689-4e90-49b1-8544-7a00048dad99.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "ftp://ftp.cga.ct.gov/pub/data/LegislatorDatabase.csv"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Mitch_Bolinsky"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Mitch_Bolinsky"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/141185/mitch-bolinsky"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.cthousegop.com/Bolinsky/main"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.cthousegop.com/Bolinsky/main/"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/mbolinsky"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

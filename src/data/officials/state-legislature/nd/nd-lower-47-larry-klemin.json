@@ -1,0 +1,71 @@
+{
+  "id": "larry-klemin",
+  "name": "Larry Klemin",
+  "firstName": "Larry",
+  "lastName": "Klemin",
+  "photo": "/images/officials/state-legislature/nd/larry-klemin.jpg",
+  "photoSourceUrl": "https://www.ndlegis.gov/sites/default/files/styles/member_list_photo/public/person/photo/lklemin2023.jpg?itok=TpyVKyyr",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-47",
+  "jurisdiction": "North Dakota House of Representatives",
+  "county": [
+    "North Dakota"
+  ],
+  "termStart": "1998-12-01",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "State Capitol 600 E. Boulevard Ave., Bismarck, ND 58505",
+    "email": "lklemin@ndlegis.gov",
+    "website": "https://ndlegis.gov/biography/lawrence-r-klemin"
+  },
+  "bio": "Larry Klemin serves as State Representative for North Dakota House of Representatives District 47. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "ND",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://ndlegis.gov/biography/lawrence-r-klemin"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/nd/legislature/Lawrence-R-Klemin-3de00ea0-0ad8-4875-8f7f-445b7e67a6d6.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://www.ndlegis.gov/sites/default/files/styles/member_list_photo/public/person/photo/lklemin2023.jpg?itok=TpyVKyyr"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Lawrence_Klemin"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Lawrence_Klemin"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/21155/lawrence-klemin"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.legis.nd.gov/assembly/65-2017/members/house/representative-lawrence-r-klemin"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.legis.nd.gov/assembly/66-2019/members/house/representative-lawrence-r-klemin"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.legis.nd.gov/assembly/67-2021/members/house/representative-lawrence-r-klemin"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.legis.nd.gov/assembly/67-2021/members/members-by-district"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

@@ -1,0 +1,72 @@
+{
+  "id": "julio-cortes",
+  "name": "Julio Cortes",
+  "firstName": "Julio",
+  "lastName": "Cortes",
+  "photo": "/images/officials/state-legislature/wa/julio-cortes.jpg",
+  "photoSourceUrl": "https://leg.wa.gov/memberphoto/34028.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-38",
+  "jurisdiction": "Washington House of Representatives",
+  "county": [
+    "Washington"
+  ],
+  "termStart": "2023-01-09",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 327, John L. O'Brien Building P.O. Box 40600, Olympia, WA 98504",
+    "phone": "360-786-7840",
+    "email": "julio.cortes@leg.wa.gov",
+    "website": "https://housedemocrats.wa.gov/Cortes/"
+  },
+  "bio": "Julio Cortes serves as State Representative for Washington House of Representatives District 38. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "WA",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://housedemocrats.wa.gov/Cortes/"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/wa/legislature/Julio-Cortes-0805e7bc-f274-4f20-81b4-e8e86951eaba.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://leg.wa.gov/memberphoto/34028.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://app.leg.wa.gov/ContentParts/MemberDirectory/?a=House"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Julio_Cortes"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Julio_Cortes_(politician)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://housedemocrats.wa.gov/cortes"
+    },
+    {
+      "title": "Public source",
+      "url": "https://housedemocrats.wa.gov/cortes/"
+    },
+    {
+      "title": "Public source",
+      "url": "https://housedemocrats.wa.gov/cortes/biography"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/evaluations/207447/julio-cortes"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

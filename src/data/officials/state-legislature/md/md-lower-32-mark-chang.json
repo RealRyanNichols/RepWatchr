@@ -1,0 +1,68 @@
+{
+  "id": "mark-chang",
+  "name": "Mark Chang",
+  "firstName": "Mark",
+  "lastName": "Chang",
+  "photo": "/images/officials/state-legislature/md/mark-chang.jpg",
+  "photoSourceUrl": "http://mgaleg.maryland.gov/2016RS/images/chang01.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "Delegate",
+  "district": "HD-32",
+  "jurisdiction": "Maryland House of Delegates",
+  "county": [
+    "Maryland"
+  ],
+  "termStart": "2015-01-14",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 160, Lowe House Office Building 6 Bladen St., Annapolis, MD 21401",
+    "phone": "410-841-3511",
+    "email": "mark.chang@house.maryland.gov",
+    "website": "https://mgaleg.maryland.gov/mgawebsite/Members/Details/chang01"
+  },
+  "bio": "Mark Chang serves as Delegate for Maryland House of Delegates District 32. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "MD",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://mgaleg.maryland.gov/mgawebsite/Members/Details/chang01"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/md/legislature/Mark-S-Chang-5393ab25-fbd9-455b-8da2-76c53e955823.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "http://mgaleg.maryland.gov/2016RS/images/chang01.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Mark_Chang"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Mark_S._Chang"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/66409/mark-chang"
+    },
+    {
+      "title": "Public source",
+      "url": "https://mgaleg.maryland.gov/webmga/frmMain.aspx?pid=sponpage&tab=subject6&id=chang01&stab=01"
+    },
+    {
+      "title": "Public source",
+      "url": "https://msa.maryland.gov/msa/mdmanual/06hse/html/msa17071.html"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/mark-chang-7b645a10"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

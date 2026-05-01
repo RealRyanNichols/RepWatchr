@@ -1,0 +1,60 @@
+{
+  "id": "kara-warme",
+  "name": "Kara Warme",
+  "firstName": "Kara",
+  "lastName": "Warme",
+  "photo": "/images/officials/state-legislature/ia/kara-warme.jpg",
+  "photoSourceUrl": "https://www.legis.iowa.gov/photo?action=getPhoto&ga=91&pid=37462",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-26",
+  "jurisdiction": "Iowa Senate",
+  "county": [
+    "Iowa"
+  ],
+  "termStart": "2025-01-02",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "1007 E. Grand Ave., Des Moines, IA 50319",
+    "phone": "515-281-3371",
+    "email": "kara.warme@legis.iowa.gov",
+    "website": "https://www.legis.iowa.gov/legislators/legislator?ga=91&personID=37462"
+  },
+  "bio": "Kara Warme serves as State Senator for Iowa Senate District 26. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "IA",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.legis.iowa.gov/legislators/legislator?ga=91&personID=37462"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ia/legislature/Kara-Warme-ef7b8c3c-3cd0-4f95-8b4f-9e4daa061479.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://www.legis.iowa.gov/photo?action=getPhoto&ga=91&pid=37462"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Kara_Warme"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/215553/kara-warme"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.legis.iowa.gov/legislators/legislator?personID=37462"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/kara-warme-a82b512b"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

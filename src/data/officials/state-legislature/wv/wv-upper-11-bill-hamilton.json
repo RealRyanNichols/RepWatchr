@@ -1,0 +1,64 @@
+{
+  "id": "bill-hamilton",
+  "name": "Bill Hamilton",
+  "firstName": "Bill",
+  "lastName": "Hamilton",
+  "photo": "/images/officials/state-legislature/wv/bill-hamilton.jpg",
+  "photoSourceUrl": "https://www.wvlegislature.gov/images/members/2024/senate/hamilton_bill.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-11",
+  "jurisdiction": "West Virginia Senate",
+  "county": [
+    "West Virginia"
+  ],
+  "termStart": "2018-12-01",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "State Capitol Room 223W, Complex, Building 1 1900 Kanawha Blvd. East, Charleston, WV 25305",
+    "phone": "304-357-7906",
+    "email": "bill.hamilton@wvsenate.gov",
+    "website": "https://www.legis.state.wv.us/Senate1/lawmaker.cfm?member=Senator+Hamilton"
+  },
+  "bio": "Bill Hamilton serves as State Senator for West Virginia Senate District 11. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "WV",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.legis.state.wv.us/Senate1/lawmaker.cfm?member=Senator+Hamilton"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/wv/legislature/Bill-Hamilton-8bd21671-34c1-4ba3-aced-0dcaa110029c.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://www.wvlegislature.gov/images/members/2024/senate/hamilton_bill.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/William_Hamilton"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Bill_Hamilton_(West_Virginia_politician)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/52422/bill-hamilton"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.wvlegislature.gov/Senate1/lawmaker.cfm?member=Senator%20Hamilton"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.wvlegislature.gov/Senate1/roster.cfm"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

@@ -1,0 +1,49 @@
+{
+  "id": "jerry-nieves",
+  "name": "Jerry Nieves",
+  "firstName": "Jerry",
+  "lastName": "Nieves",
+  "party": "NP",
+  "level": "state",
+  "position": "Territorial Representative",
+  "district": "13",
+  "jurisdiction": "Puerto Rico House of Representatives",
+  "county": [
+    "Puerto Rico"
+  ],
+  "termStart": "2025-01-02",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "El Capitolio, Avenida Constituci\u00f3n P.O. Box 9022228, San Juan, PR 00902",
+    "phone": "787-723-6136",
+    "email": "jnieves@camara.pr.gov",
+    "website": "https://camara.registrok12.com/team/jerry-nieves-rosario/"
+  },
+  "bio": "Jerry Nieves serves as Territorial Representative for Puerto Rico House of Representatives District 13. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "PR",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://camara.registrok12.com/team/jerry-nieves-rosario/"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/pr/legislature/Jerry-Nieves-452f8ea2-8d7e-453f-abb7-4a978e81c480.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Jerry_Zahamir_Nieves_Rosario"
+    },
+    {
+      "title": "Public source",
+      "url": "https://camara.registrok12.com/team/jerry-nieves-rosario"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.camara.pr.gov/team/jerry-nieves-rosario"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

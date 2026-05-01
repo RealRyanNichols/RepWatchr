@@ -1,0 +1,60 @@
+{
+  "id": "mike-mclane",
+  "name": "Mike McLane",
+  "firstName": "Mike",
+  "lastName": "McLane",
+  "photo": "/images/officials/state-legislature/or/mike-mclane.jpg",
+  "photoSourceUrl": "http://www.oregonlegislature.gov/house/MemberPhotos/mclane.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-30",
+  "jurisdiction": "Oregon Senate",
+  "county": [
+    "Oregon"
+  ],
+  "termStart": "2025-01-13",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room S-301, 900 Court St. NE, Salem, OR 97301",
+    "phone": "503-986-1730",
+    "email": "sen.mikemclane@oregonlegislature.gov",
+    "website": "https://www.oregonlegislature.gov/mclane"
+  },
+  "bio": "Mike McLane serves as State Senator for Oregon Senate District 30. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "OR",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.oregonlegislature.gov/mclane"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/or/legislature/Mike-McLane-f0091fb4-4207-4663-be23-7c9e77994048.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "http://www.oregonlegislature.gov/house/MemberPhotos/mclane.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Mike_McLane"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Mike_McLane"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/117352/mike-mclane"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/mikemclane"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

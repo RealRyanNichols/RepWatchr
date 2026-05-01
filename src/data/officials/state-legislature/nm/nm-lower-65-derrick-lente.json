@@ -1,0 +1,60 @@
+{
+  "id": "derrick-lente",
+  "name": "Derrick Lente",
+  "firstName": "Derrick",
+  "lastName": "Lente",
+  "photo": "/images/officials/state-legislature/nm/derrick-lente.jpg",
+  "photoSourceUrl": "https://www.nmlegis.gov/Images/Legislators/House/HLENT.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-65",
+  "jurisdiction": "New Mexico House of Representatives",
+  "county": [
+    "New Mexico"
+  ],
+  "termStart": "2017-01-17",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "State Capitol Room 316B, New Mexico  490 Old Santa Fe Trail, Santa Fe, NM 87501",
+    "phone": "505-986-4420",
+    "email": "derrick.lente@nmlegis.gov",
+    "website": "https://www.nmlegis.gov/Members/Legislator?SponCode=HLENT",
+    "socialMedia": {
+      "facebook": "https://facebook.com/derrickjlentefornmhousedistrict65",
+      "instagram": "https://instagram.com/djlente"
+    }
+  },
+  "bio": "Derrick Lente serves as State Representative for New Mexico House of Representatives District 65. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "NM",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.nmlegis.gov/Members/Legislator?SponCode=HLENT"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/nm/legislature/Derrick-J-Lente-0421351b-6a8c-4731-bf93-5029d6b4feab.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://www.nmlegis.gov/Images/Legislators/House/HLENT.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Derrick_J._Lente"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Derrick_Lente"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.nmlegis.gov/Members/Legislator_List?T=R"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

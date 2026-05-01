@@ -1,0 +1,72 @@
+{
+  "id": "mari-leavitt",
+  "name": "Mari Leavitt",
+  "firstName": "Mari",
+  "lastName": "Leavitt",
+  "photo": "/images/officials/state-legislature/wa/mari-leavitt.jpg",
+  "photoSourceUrl": "https://leg.wa.gov/memberphoto/29102.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-28",
+  "jurisdiction": "Washington House of Representatives",
+  "county": [
+    "Washington"
+  ],
+  "termStart": "2019-01-14",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 332, John L. O'Brien Building P.O. Box 40600, Olympia, WA 98504",
+    "phone": "360-786-7890",
+    "email": "mari.leavitt@leg.wa.gov",
+    "website": "https://housedemocrats.wa.gov/Leavitt/"
+  },
+  "bio": "Mari Leavitt serves as State Representative for Washington House of Representatives District 28. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "WA",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://housedemocrats.wa.gov/Leavitt/"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/wa/legislature/Mari-Leavitt-a203698b-5fe6-4a54-b939-5341937c57ec.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://leg.wa.gov/memberphoto/29102.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://app.leg.wa.gov/ContentParts/MemberDirectory/?a=House"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Mari_Leavitt"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Mari_Leavitt"
+    },
+    {
+      "title": "Public source",
+      "url": "https://housedemocrats.wa.gov/leavitt"
+    },
+    {
+      "title": "Public source",
+      "url": "https://housedemocrats.wa.gov/leavitt/"
+    },
+    {
+      "title": "Public source",
+      "url": "https://housedemocrats.wa.gov/leavitt/biography"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/171109/mari-leavitt"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

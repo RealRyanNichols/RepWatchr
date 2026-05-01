@@ -1,0 +1,72 @@
+{
+  "id": "mike-amyx",
+  "name": "Mike Amyx",
+  "firstName": "Mike",
+  "lastName": "Amyx",
+  "photo": "/images/officials/state-legislature/ks/mike-amyx.jpg",
+  "photoSourceUrl": "https://assets.lawrenceks.org/images/commission/mike-amyx.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-45",
+  "jurisdiction": "Kansas House of Representatives",
+  "county": [
+    "Kansas"
+  ],
+  "termStart": "2019-01-14",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "State Capitol Room 359-W, Kansas  Building 300 SW 10th St., Topeka, KS 66612",
+    "phone": "785-296-7630",
+    "email": "mike.amyx@house.ks.gov",
+    "website": "https://www.kslegislature.gov/li/b2025_26/members/rep_amyx_mike_1/"
+  },
+  "bio": "Mike Amyx serves as State Representative for Kansas House of Representatives District 45. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "KS",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.kslegislature.gov/li/b2025_26/members/rep_amyx_mike_1/"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ks/legislature/Mike-Amyx-05204bb3-1917-4f12-848e-b83f68f5fddf.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://assets.lawrenceks.org/images/commission/mike-amyx.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Mike_Amyx"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Mike_Amyx"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/73996/mike-amyx"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.kslegislature.gov/li/b2025_26/members/rep_amyx_mike_1"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.kslegislature.org/li/api/v11/rev-1/members/rep_amyx_mike_1"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.kslegislature.org/li/api/v11/rev-1/members/rep_amyx_mike_1/"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.kslegislature.org/li/b2023_24/members/rep_amyx_mike_1"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

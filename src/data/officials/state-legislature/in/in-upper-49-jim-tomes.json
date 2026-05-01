@@ -1,0 +1,72 @@
+{
+  "id": "jim-tomes",
+  "name": "Jim Tomes",
+  "firstName": "Jim",
+  "lastName": "Tomes",
+  "photo": "/images/officials/state-legislature/in/jim-tomes.jpg",
+  "photoSourceUrl": "https://cdn.zephyrcms.com/a18fe9f0-b8a3-411e-bcc2-6d9fb9423a19/-/progressive/yes/-/format/jpeg/-/scale_crop/200x300/center/-/stretch/off/2021-tomes-2.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-49",
+  "jurisdiction": "Indiana Senate",
+  "county": [
+    "Indiana"
+  ],
+  "termStart": "2010-11-03",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "200 W. Washington St., Indianapolis, IN 46204",
+    "phone": "317-232-9400",
+    "email": "s49@iga.in.gov",
+    "website": "https://iga.in.gov/legislative/2021/legislators/legislator_james_tomes_1041"
+  },
+  "bio": "Jim Tomes serves as State Senator for Indiana Senate District 49. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "IN",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://iga.in.gov/legislative/2021/legislators/legislator_james_tomes_1041"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/in/legislature/James-Tomes-c2c98fe8-fef2-4d38-93f6-9eff4d591bed.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://cdn.zephyrcms.com/a18fe9f0-b8a3-411e-bcc2-6d9fb9423a19/-/progressive/yes/-/format/jpeg/-/scale_crop/200x300/center/-/stretch/off/2021-tomes-2.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://api.iga.in.gov/2021/legislators/james_tomes_1041"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Jim_Tomes"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Jim_Tomes"
+    },
+    {
+      "title": "Public source",
+      "url": "https://iga.in.gov/legislative/2022/legislators/legislator_james_tomes_1041"
+    },
+    {
+      "title": "Public source",
+      "url": "https://iga.in.gov/legislative/2022/legislators/legislator_james_tomes_1041/"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/34052/jim-tomes"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.indianasenaterepublicans.com/senators"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

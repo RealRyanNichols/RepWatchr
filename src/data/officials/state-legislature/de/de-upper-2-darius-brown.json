@@ -1,0 +1,68 @@
+{
+  "id": "darius-brown",
+  "name": "Darius Brown",
+  "firstName": "Darius",
+  "lastName": "Brown",
+  "photo": "/images/officials/state-legislature/de/darius-brown.jpg",
+  "photoSourceUrl": "https://senatedems.delaware.gov/wp-content/blogs.dir/219/files/sites/219/2023/03/Senator-Brown.png",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-2",
+  "jurisdiction": "Delaware Senate",
+  "county": [
+    "Delaware"
+  ],
+  "termStart": "2018-11-07",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "P.O. Box 1401 411 Legislative Ave., Dover, DE 19901",
+    "phone": "302-744-4286",
+    "email": "darius.brown@delaware.gov",
+    "website": "https://legis.delaware.gov/AssemblyMember/150/Brown"
+  },
+  "bio": "Darius Brown serves as State Senator for Delaware Senate District 2. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "DE",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://legis.delaware.gov/AssemblyMember/150/Brown"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/de/legislature/Darius-J-Brown-8c5ff346-9896-489e-be96-db9d46d846da.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://senatedems.delaware.gov/wp-content/blogs.dir/219/files/sites/219/2023/03/Senator-Brown.png"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Darius_Brown"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Darius_J._Brown"
+    },
+    {
+      "title": "Public source",
+      "url": "https://legis.delaware.gov/json/Senate/GetSenators"
+    },
+    {
+      "title": "Public source",
+      "url": "https://legis.delaware.gov/LegislatorDetail?personId=13600"
+    },
+    {
+      "title": "legislator list page",
+      "url": "https://legis.delaware.gov/Senate"
+    },
+    {
+      "title": "Public source",
+      "url": "https://senatedems.delaware.gov/members/senate-district-2"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

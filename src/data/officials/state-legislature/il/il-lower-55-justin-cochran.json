@@ -1,0 +1,60 @@
+{
+  "id": "justin-cochran",
+  "name": "Justin Cochran",
+  "firstName": "Justin",
+  "lastName": "Cochran",
+  "photo": "/images/officials/state-legislature/il/justin-cochran.jpg",
+  "photoSourceUrl": "https://cdn.ilga.gov/assets/img/members/{54FFB767-E6F6-4F20-951A-2CBCD1B06211}.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-55",
+  "jurisdiction": "Illinois House of Representatives",
+  "county": [
+    "Illinois"
+  ],
+  "termStart": "2025-12-30",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "24 S. River Road Suite 400, Des Plaines, IL 60016",
+    "phone": "847-635-6821",
+    "email": "contact@repjustincochran.com",
+    "website": "https://www.ilga.gov/House/Members/Details/3462"
+  },
+  "bio": "Justin Cochran serves as State Representative for Illinois House of Representatives District 55. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "IL",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.ilga.gov/House/Members/Details/3462"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/il/legislature/Justin-Cochran-afff2974-37d0-428c-be7a-0240395544f6.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://cdn.ilga.gov/assets/img/members/{54FFB767-E6F6-4F20-951A-2CBCD1B06211}.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Justin_Cochran"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Justin_Cochran"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/justin-cochran-b8b87454"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.repjustincochran.com"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

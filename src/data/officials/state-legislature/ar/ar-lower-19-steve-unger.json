@@ -1,0 +1,68 @@
+{
+  "id": "steve-unger",
+  "name": "Steve Unger",
+  "firstName": "Steve",
+  "lastName": "Unger",
+  "photo": "/images/officials/state-legislature/ar/steve-unger.jpg",
+  "photoSourceUrl": "https://www.arkleg.state.ar.us/Content/photos/2023/House/610_sm.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-19",
+  "jurisdiction": "Arkansas House of Representatives",
+  "county": [
+    "Arkansas"
+  ],
+  "termStart": "2023-01-09",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "State Capitol Arkansas  500 Woodlane St., Suite 350, Little Rock, AR 72201",
+    "phone": "501-682-6211",
+    "email": "steve.unger@arkansashouse.org",
+    "website": "https://arkleg.state.ar.us/Legislators/Detail?member=Unger"
+  },
+  "bio": "Steve Unger serves as State Representative for Arkansas House of Representatives District 19. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "AR",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://arkleg.state.ar.us/Legislators/Detail?member=Unger"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ar/legislature/Steve-Unger-1d522f48-2a04-40ed-860f-3c580d9c87fa.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://www.arkleg.state.ar.us/Content/photos/2023/House/610_sm.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Steven_Unger_(Arkansas)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/200658/steve-unger"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.arkansashouse.org/district/19"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.arkleg.state.ar.us/Legislators/Detail?member=Unger&ddBienniumSession=2023%2F2023R"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.arkleg.state.ar.us/Legislators/List?sort=Type&by=desc&ddBienniumSession=2023%2F2023R#SearchResults"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/steven-unger-09859492"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

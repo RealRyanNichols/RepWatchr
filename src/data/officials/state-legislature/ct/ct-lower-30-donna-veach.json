@@ -1,0 +1,61 @@
+{
+  "id": "donna-veach",
+  "name": "Donna Veach",
+  "firstName": "Donna",
+  "lastName": "Veach",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-30",
+  "jurisdiction": "Connecticut House of Representatives",
+  "county": [
+    "Connecticut"
+  ],
+  "termStart": "2021-01-06",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 4200, Legislative Office Building 300 Capitol Ave., Hartford, CT 06106",
+    "phone": "860-240-8700",
+    "email": "donna.veach@housegop.ct.gov",
+    "website": "https://cga.ct.gov/asp/CGABillStatus/CGAMemberBills.asp?dist_code=%27030%27&dist_name=Veach,%20Donna"
+  },
+  "bio": "Donna Veach serves as State Representative for Connecticut House of Representatives District 30. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "CT",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://cga.ct.gov/asp/CGABillStatus/CGAMemberBills.asp?dist_code=%27030%27&dist_name=Veach,%20Donna"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ct/legislature/Donna-Veach-63461ed0-da6d-4423-82bc-5b83c2a811cf.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "ftp://ftp.cga.ct.gov/pub/data/LegislatorDatabase.csv"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Donna_Veach"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Donna_Veach"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/193876/donna-veach"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.cthousegop.com/veach"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.cthousegop.com/veach/"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

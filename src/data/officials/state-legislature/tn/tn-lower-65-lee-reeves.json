@@ -1,0 +1,68 @@
+{
+  "id": "lee-reeves",
+  "name": "Lee Reeves",
+  "firstName": "Lee",
+  "lastName": "Reeves",
+  "photo": "/images/officials/state-legislature/tn/lee-reeves.jpg",
+  "photoSourceUrl": "https://bloximages.newyork1.vip.townnews.com/williamsonherald.com/content/tncms/assets/v3/editorial/7/43/743d158c-3f0e-11ef-855e-4b97c0d5f896/668f0f9e62e96.image.jpg?resize=394%2C500",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-65",
+  "jurisdiction": "Tennessee House of Representatives",
+  "county": [
+    "Tennessee"
+  ],
+  "termStart": "2024-11-05",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 552, Cordell Hull Building 425 Rep. John Lewis Way North, Nashville, TN 37243",
+    "phone": "615-741-1864",
+    "email": "rep.lee.reeves@capitol.tn.gov",
+    "website": "https://tnhousegop.org/members/representative-lee-reeves/"
+  },
+  "bio": "Lee Reeves serves as State Representative for Tennessee House of Representatives District 65. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "TN",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://tnhousegop.org/members/representative-lee-reeves/"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/tn/legislature/Lee-Reeves-f7006293-9fb3-4053-bd79-d77f84c6e59a.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://bloximages.newyork1.vip.townnews.com/williamsonherald.com/content/tncms/assets/v3/editorial/7/43/743d158c-3f0e-11ef-855e-4b97c0d5f896/668f0f9e62e96.image.jpg?resize=394%2C500"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Lee_Reeves"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Lee_Reeves_(politician)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/216629/lee-reeves"
+    },
+    {
+      "title": "Public source",
+      "url": "https://tnhousegop.org/members/representative-lee-reeves"
+    },
+    {
+      "title": "Public source",
+      "url": "https://wapp.capitol.tn.gov/apps/legislatorinfo/member.aspx?district=H65&ga=114"
+    },
+    {
+      "title": "Public source",
+      "url": "https://wapp.capitol.tn.gov/apps/legislatorinfo/member?district=H65&ga=114"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

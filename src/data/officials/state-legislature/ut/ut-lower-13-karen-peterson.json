@@ -1,0 +1,69 @@
+{
+  "id": "karen-peterson",
+  "name": "Karen Peterson",
+  "firstName": "Karen",
+  "lastName": "Peterson",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-13",
+  "jurisdiction": "Utah House of Representatives",
+  "county": [
+    "Utah"
+  ],
+  "termStart": "2022-01-06",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "P.O. Box 145030 350 N. State St., Suite 350, Salt Lake City, UT 84114",
+    "phone": "801-538-1029",
+    "email": "kpeterson@le.utah.gov",
+    "website": "https://disclosures.utah.gov/Search/PublicSearch/FolderDetails/1415760"
+  },
+  "bio": "Karen Peterson serves as State Representative for Utah House of Representatives District 13. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "UT",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://disclosures.utah.gov/Search/PublicSearch/FolderDetails/1415760"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ut/legislature/Karen-M-Peterson-3c2d4efe-dd4e-48cf-a83b-2a15791706a3.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Karen_Peterson_(Utah)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Karen_M._Peterson"
+    },
+    {
+      "title": "Public source",
+      "url": "https://house.utah.gov/rep/PETERK"
+    },
+    {
+      "title": "Public source",
+      "url": "https://house.utah.gov/rep/PETERK/"
+    },
+    {
+      "title": "Public source",
+      "url": "https://house.utleg.gov/rep/PETERK"
+    },
+    {
+      "title": "Public source",
+      "url": "https://house.utleg.gov/rep/PETERK/"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/201421/karen-peterson"
+    },
+    {
+      "title": "Public source",
+      "url": "https://le.utah.gov/data/legislators.json"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

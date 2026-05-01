@@ -1,0 +1,69 @@
+{
+  "id": "michelle-valdez",
+  "name": "Michelle Valdez",
+  "firstName": "Michelle",
+  "lastName": "Valdez",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-26",
+  "jurisdiction": "Washington House of Representatives",
+  "county": [
+    "Washington"
+  ],
+  "termStart": "2015-01-12",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 427B, Legislative Building P.O. Box 40600, Olympia, WA 98504",
+    "phone": "360-786-7802",
+    "email": "michelle.valdez@leg.wa.gov",
+    "website": "https://houserepublicans.wa.gov/Michelle-Caldier/"
+  },
+  "bio": "Michelle Valdez serves as State Representative for Washington House of Representatives District 26. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "WA",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://houserepublicans.wa.gov/Michelle-Caldier/"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/wa/legislature/Michelle-Caldier-fdd79a57-f6f9-4435-84f6-92708c65b716.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://app.leg.wa.gov/ContentParts/MemberDirectory/?a=House"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Michelle_Caldier"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Michelle_Caldier"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/153100/michelle-caldier"
+    },
+    {
+      "title": "Public source",
+      "url": "https://leg.wa.gov/legislators/member/michelle-caldier"
+    },
+    {
+      "title": "Public source",
+      "url": "https://leg.wa.gov/legislators/member/michelle-valdez"
+    },
+    {
+      "title": "Public source",
+      "url": "https://michellecaldier.houserepublicans.wa.gov"
+    },
+    {
+      "title": "Public source",
+      "url": "https://michellecaldier.houserepublicans.wa.gov/"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

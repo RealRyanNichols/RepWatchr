@@ -1,0 +1,60 @@
+{
+  "id": "johnny-salling",
+  "name": "Johnny Salling",
+  "firstName": "Johnny",
+  "lastName": "Salling",
+  "photo": "/images/officials/state-legislature/md/johnny-salling.jpg",
+  "photoSourceUrl": "http://mgaleg.maryland.gov/2020RS/images/salling01.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-6",
+  "jurisdiction": "Maryland Senate",
+  "county": [
+    "Maryland"
+  ],
+  "termStart": "2015-01-14",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 321, James Senate Office Building 11 Bladen St., Annapolis, MD 21401",
+    "phone": "410-841-3587",
+    "email": "johnnyray.salling@senate.maryland.gov",
+    "website": "https://mgaleg.maryland.gov/mgawebsite/Members/Details/salling01"
+  },
+  "bio": "Johnny Salling serves as State Senator for Maryland Senate District 6. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "MD",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://mgaleg.maryland.gov/mgawebsite/Members/Details/salling01"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/md/legislature/Johnny-Ray-Salling-6a5dec66-3631-424f-aceb-6aa9f107cea1.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "http://mgaleg.maryland.gov/2020RS/images/salling01.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Johnny_Ray_Salling"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Johnny_Ray_Salling"
+    },
+    {
+      "title": "Public source",
+      "url": "https://mgaleg.maryland.gov/webmga/frmMain.aspx?pid=sponpage&tab=subject6&id=salling01&stab=01"
+    },
+    {
+      "title": "Public source",
+      "url": "https://msa.maryland.gov/msa/mdmanual/05sen/html/msa17039.html"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

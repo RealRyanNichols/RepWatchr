@@ -1,0 +1,72 @@
+{
+  "id": "wendy-deboer",
+  "name": "Wendy DeBoer",
+  "firstName": "Wendy",
+  "lastName": "DeBoer",
+  "photo": "/images/officials/state-legislature/ne/wendy-deboer.jpg",
+  "photoSourceUrl": "https://www.nebraskalegislature.gov/media/images/senators/dist10/highres/dist10.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "NP",
+  "level": "state",
+  "position": "State Senator",
+  "district": "LD-10",
+  "jurisdiction": "Nebraska Legislature",
+  "county": [
+    "Nebraska"
+  ],
+  "termStart": "2019-01-09",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "State Capitol Room 1114, P.O. Box 94604, Lincoln, NE 68509",
+    "phone": "402-471-2718",
+    "email": "wdeboer@leg.ne.gov",
+    "website": "https://nebraskalegislature.gov/senators/landing-pages/index.php?District=10"
+  },
+  "bio": "Wendy DeBoer serves as State Senator for Nebraska Legislature District 10. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "NE",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://nebraskalegislature.gov/senators/landing-pages/index.php?District=10"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ne/legislature/Wendy-DeBoer-bc906a77-5932-4042-9ede-a13b24924236.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://www.nebraskalegislature.gov/media/images/senators/dist10/highres/dist10.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Wendy_DeBoer"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Wendy_DeBoer"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/179837/wendy-deboer"
+    },
+    {
+      "title": "Public source",
+      "url": "https://nebraskalegislature.gov/senators/senator_list.php"
+    },
+    {
+      "title": "Public source",
+      "url": "https://news.legislature.ne.gov/dist10"
+    },
+    {
+      "title": "Public source",
+      "url": "https://news.legislature.ne.gov/dist10/"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/wendy-deboer-b908954"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

@@ -1,0 +1,53 @@
+{
+  "id": "garret-nelson",
+  "name": "Garret Nelson",
+  "firstName": "Garret",
+  "lastName": "Nelson",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-29",
+  "jurisdiction": "Alaska House of Representatives",
+  "county": [
+    "Alaska"
+  ],
+  "termStart": "2025-12-30",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "State Capitol Room 430, 120 4th St., Juneau, AK 99801",
+    "phone": "907-465-6600",
+    "email": "representative.garret.nelson@akleg.gov",
+    "website": "https://www.akleg.gov/basis/Member/Detail/34?code=neg"
+  },
+  "bio": "Garret Nelson serves as State Representative for Alaska House of Representatives District 29. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "AK",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.akleg.gov/basis/Member/Detail/34?code=neg"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ak/legislature/Garret-Nelson-abb33c56-f4ba-4c95-938e-658677368ca4.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Garret_Nelson"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Garret_Nelson"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/232030/garret-nelson"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/garret-nelson-b487a846"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

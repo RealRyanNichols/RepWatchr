@@ -1,0 +1,56 @@
+{
+  "id": "julia-howard",
+  "name": "Julia Howard",
+  "firstName": "Julia",
+  "lastName": "Howard",
+  "photo": "/images/officials/state-legislature/nc/julia-howard.jpg",
+  "photoSourceUrl": "https://www.ncleg.gov/Members/MemberImage/H/53/Low",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-77",
+  "jurisdiction": "North Carolina House of Representatives",
+  "county": [
+    "North Carolina"
+  ],
+  "termStart": "2019-01-01",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 302, Legislative Office Building 300 N. Salisbury St., Raleigh, NC 27603",
+    "phone": "919-733-5904",
+    "email": "julia.howard@ncleg.gov",
+    "website": "https://www.ncleg.gov/Members/Biography/H/53"
+  },
+  "bio": "Julia Howard serves as State Representative for North Carolina House of Representatives District 77. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "NC",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.ncleg.gov/Members/Biography/H/53"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/nc/legislature/Julia-C-Howard-5318144e-d466-40ea-8e35-f0f09bf57760.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://www.ncleg.gov/Members/MemberImage/H/53/Low"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Julia_Howard"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Julia_C._Howard"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.ncleg.gov/Members/MemberTable/H"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

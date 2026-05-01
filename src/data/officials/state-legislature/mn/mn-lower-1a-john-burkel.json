@@ -1,0 +1,64 @@
+{
+  "id": "john-burkel",
+  "name": "John Burkel",
+  "firstName": "John",
+  "lastName": "Burkel",
+  "photo": "/images/officials/state-legislature/mn/john-burkel.jpg",
+  "photoSourceUrl": "https://www.house.mn.gov/hinfo/memberimgls94/01A.gif",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-1A",
+  "jurisdiction": "Minnesota House of Representatives",
+  "county": [
+    "Minnesota"
+  ],
+  "termStart": "2021-01-05",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Centennial Office Building 658 Cedar St., Second Floor, St. Paul, MN 55155",
+    "phone": "651-296-9635",
+    "email": "rep.john.burkel@house.mn.gov",
+    "website": "https://www.house.mn.gov/members/profile/15538"
+  },
+  "bio": "John Burkel serves as State Representative for Minnesota House of Representatives District 1A. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "MN",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.house.mn.gov/members/profile/15538"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/mn/legislature/John-Burkel-c86f501e-0b47-4e57-8f5a-d7d0be2392af.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://www.house.mn.gov/hinfo/memberimgls94/01A.gif"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/John_Burkel"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/John_Burkel"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/194044/john-burkel"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.house.leg.state.mn.us/members/hmem.asp"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/john-burkel-4938b810"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

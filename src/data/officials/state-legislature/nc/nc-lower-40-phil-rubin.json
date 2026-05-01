@@ -1,0 +1,53 @@
+{
+  "id": "phil-rubin",
+  "name": "Phil Rubin",
+  "firstName": "Phil",
+  "lastName": "Rubin",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-40",
+  "jurisdiction": "North Carolina House of Representatives",
+  "county": [
+    "North Carolina"
+  ],
+  "termStart": "2025-01-29",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 1013, North Carolina Legislative Building 16 W. Jones St., Raleigh, NC 27601",
+    "phone": "919-733-5530",
+    "email": "phillip.rubin@ncleg.gov",
+    "website": "https://www.ncleg.gov/Members/Biography/H/844"
+  },
+  "bio": "Phil Rubin serves as State Representative for North Carolina House of Representatives District 40. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "NC",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.ncleg.gov/Members/Biography/H/844"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/nc/legislature/Phil-Rubin-efae51b3-e547-46c0-87df-4ac35c0c60de.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Phil_Rubin"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Phil_Rubin"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/220821/phil-rubin"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/phil-rubin"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

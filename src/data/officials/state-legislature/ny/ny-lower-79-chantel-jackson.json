@@ -1,0 +1,60 @@
+{
+  "id": "chantel-jackson",
+  "name": "Chantel Jackson",
+  "firstName": "Chantel",
+  "lastName": "Jackson",
+  "photo": "/images/officials/state-legislature/ny/chantel-jackson.jpg",
+  "photoSourceUrl": "https://assembly.state.ny.us/write/upload/member_files/079/headshot/079.jpg?hst=1660074007",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "Assemblymember",
+  "district": "HD-79",
+  "jurisdiction": "New York State Assembly",
+  "county": [
+    "New York"
+  ],
+  "termStart": "2021-01-06",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 547, Legislative Office Building, Albany, NY 12248",
+    "phone": "518-455-5272",
+    "email": "jacksonc@nyassembly.gov",
+    "website": "https://assembly.state.ny.us/mem/Chantel-Jackson"
+  },
+  "bio": "Chantel Jackson serves as Assemblymember for New York State Assembly District 79. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "NY",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://assembly.state.ny.us/mem/Chantel-Jackson"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ny/legislature/Chantel-Jackson-2a9ffeeb-e46e-4d98-8376-b07310112672.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://assembly.state.ny.us/write/upload/member_files/079/headshot/079.jpg?hst=1660074007"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Chantel_Jackson"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Chantel_Jackson"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/192233/chantel-jackson"
+    },
+    {
+      "title": "Public source",
+      "url": "https://nyassembly.gov/mem/Chantel-Jackson"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

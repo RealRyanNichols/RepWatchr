@@ -1,0 +1,60 @@
+{
+  "id": "joe-sempolinski",
+  "name": "Joe Sempolinski",
+  "firstName": "Joe",
+  "lastName": "Sempolinski",
+  "photo": "/images/officials/state-legislature/ny/joe-sempolinski.jpg",
+  "photoSourceUrl": "https://storage.googleapis.com/enview-dev-public-general/legislative-people-photos/29175.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "Assemblymember",
+  "district": "HD-148",
+  "jurisdiction": "New York State Assembly",
+  "county": [
+    "New York"
+  ],
+  "termStart": "2025-01-01",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 548, Legislative Office Building, Albany, NY 12248",
+    "phone": "518-455-5241",
+    "email": "sempolinskij@nyassembly.gov",
+    "website": "https://nyassembly.gov/mem/Joe-Sempolinski"
+  },
+  "bio": "Joe Sempolinski serves as Assemblymember for New York State Assembly District 148. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "NY",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://nyassembly.gov/mem/Joe-Sempolinski"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ny/legislature/Joe-Sempolinski-45837ecf-38a2-41cb-9de1-eae175a32dfe.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://storage.googleapis.com/enview-dev-public-general/legislative-people-photos/29175.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Joe_Sempolinski"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Joe_Sempolinski"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/208849/joe-sempolinski"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/joseph-sempolinski-7a2532158"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

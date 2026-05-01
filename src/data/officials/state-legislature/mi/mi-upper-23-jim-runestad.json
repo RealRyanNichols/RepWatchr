@@ -1,0 +1,68 @@
+{
+  "id": "jim-runestad",
+  "name": "Jim Runestad",
+  "firstName": "Jim",
+  "lastName": "Runestad",
+  "photo": "/images/officials/state-legislature/mi/jim-runestad.jpg",
+  "photoSourceUrl": "https://www.misenategop.com/wp-content/uploads/2019/01/Runestad-580x770.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-23",
+  "jurisdiction": "Michigan Senate",
+  "county": [
+    "Michigan"
+  ],
+  "termStart": "2023-01-01",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 7500, Binsfeld Building P.O. Box 30036, Lansing, MI 48909",
+    "phone": "517-373-1758",
+    "email": "senjrunestad@senate.michigan.gov",
+    "website": "https://www.senatorjimrunestad.com"
+  },
+  "bio": "Jim Runestad serves as State Senator for Michigan Senate District 23. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "MI",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.senatorjimrunestad.com"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/mi/legislature/Jim-Runestad-e0a8928d-8ccc-4e1e-9ca5-d7f50642ff91.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://www.misenategop.com/wp-content/uploads/2019/01/Runestad-580x770.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Jim_Runestad"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Jim_Runestad"
+    },
+    {
+      "title": "Members List JSON Data Page",
+      "url": "https://senate.michigan.gov/senators/SenatorData.json"
+    },
+    {
+      "title": "Members List HTML page",
+      "url": "https://senate.michigan.gov/senators/senatorinfo_list.html"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/jimrunestad"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.senatorjimrunestad.com/"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

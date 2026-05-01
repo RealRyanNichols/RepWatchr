@@ -1,0 +1,45 @@
+{
+  "id": "brenda-p-rez-soto",
+  "name": "Brenda P\u00e9rez Soto",
+  "firstName": "Brenda",
+  "lastName": "P\u00e9rez Soto",
+  "party": "NP",
+  "level": "state",
+  "position": "Territorial Senator",
+  "district": "3",
+  "jurisdiction": "Puerto Rico Senate",
+  "county": [
+    "Puerto Rico"
+  ],
+  "termStart": "2025-01-01",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Senado, El Capitolio P.O. Box 9023431, San Juan, PR 00902",
+    "phone": "787-724-2030",
+    "email": "bperez@senado.pr.gov",
+    "website": "https://www.senado.pr.gov/brenda-p%C3%A9rez-soto"
+  },
+  "bio": "Brenda P\u00e9rez Soto serves as Territorial Senator for Puerto Rico Senate District 3. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "PR",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.senado.pr.gov/brenda-p%C3%A9rez-soto"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/pr/legislature/Brenda-Prez-Soto-eae57c88-a659-4dab-86bb-874c4d5ec8b7.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Brenda_P%C3%A9rez_Soto"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.senado.pr.gov/senators/brenda-p%C3%A9rez-soto"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

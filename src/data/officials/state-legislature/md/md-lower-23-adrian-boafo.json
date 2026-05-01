@@ -1,0 +1,64 @@
+{
+  "id": "adrian-boafo",
+  "name": "Adrian Boafo",
+  "firstName": "Adrian",
+  "lastName": "Boafo",
+  "photo": "/images/officials/state-legislature/md/adrian-boafo.jpg",
+  "photoSourceUrl": "https://mgaleg.maryland.gov/2026RS/images/boafo01.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "Delegate",
+  "district": "HD-23",
+  "jurisdiction": "Maryland House of Delegates",
+  "county": [
+    "Maryland"
+  ],
+  "termStart": "2023-01-11",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 225, Lowe House Office Building 6 Bladen St., Annapolis, MD 21401",
+    "phone": "410-841-3047",
+    "email": "adrian.boafo@house.maryland.gov",
+    "website": "https://mgaleg.maryland.gov/mgawebsite/Members/Details/boafo01"
+  },
+  "bio": "Adrian Boafo serves as Delegate for Maryland House of Delegates District 23. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "MD",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://mgaleg.maryland.gov/mgawebsite/Members/Details/boafo01"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/md/legislature/Adrian-Boafo-a1a2b050-266e-4d44-9463-be3a02e16e41.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://mgaleg.maryland.gov/2026RS/images/boafo01.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Adrian_Boafo"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Adrian_Boafo"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/198705/adrian-boafo"
+    },
+    {
+      "title": "Public source",
+      "url": "https://msa.maryland.gov/msa/mdmanual/06hse/html/msa18393.html"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/adrian-boafo"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

@@ -1,0 +1,68 @@
+{
+  "id": "austin-harris",
+  "name": "Austin Harris",
+  "firstName": "Austin",
+  "lastName": "Harris",
+  "photo": "/images/officials/state-legislature/ia/austin-harris.jpg",
+  "photoSourceUrl": "https://www.legis.iowa.gov/photo?action=getPhoto&ga=91&pid=33971",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-26",
+  "jurisdiction": "Iowa House of Representatives",
+  "county": [
+    "Iowa"
+  ],
+  "termStart": "2023-01-01",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "State Capitol Building 1007 E. Grand Ave., Des Moines, IA 50319",
+    "phone": "515-281-3221",
+    "email": "austin.harris@legis.iowa.gov",
+    "website": "https://www.legis.iowa.gov/legislators/legislator/newsletter?id=33971&ga=90"
+  },
+  "bio": "Austin Harris serves as State Representative for Iowa House of Representatives District 26. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "IA",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.legis.iowa.gov/legislators/legislator/newsletter?id=33971&ga=90"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ia/legislature/Austin-Harris-3dea807e-b6b5-4531-a5d6-d51ae8811aca.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://www.legis.iowa.gov/photo?action=getPhoto&ga=91&pid=33971"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Austin_Harris_(Iowa)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Austin_Harris"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.legis.iowa.gov/legislators/house"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.legis.iowa.gov/legislators/legislator?ga=90&personID=33971"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.legis.iowa.gov/legislators/legislator?personID=33971"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/austin-harris-650363108"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

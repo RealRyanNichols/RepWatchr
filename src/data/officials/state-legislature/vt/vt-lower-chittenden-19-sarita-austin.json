@@ -1,0 +1,72 @@
+{
+  "id": "sarita-austin",
+  "name": "Sarita Austin",
+  "firstName": "Sarita",
+  "lastName": "Austin",
+  "photo": "/images/officials/state-legislature/vt/sarita-austin.jpg",
+  "photoSourceUrl": "https://legislature.vermont.gov/Documents/Legislators/Austin,Sarita.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-Chittenden-19",
+  "jurisdiction": "Vermont House of Representatives",
+  "county": [
+    "Vermont"
+  ],
+  "termStart": "2023-01-04",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Vermont State House 115 State St., Montpelier, VT 05633",
+    "phone": "802-828-2228",
+    "email": "saustin@leg.state.vt.us",
+    "website": "https://legislature.vermont.gov/Documents/SmallMaps/2022/House/Chittenden-19.pdf"
+  },
+  "bio": "Sarita Austin serves as State Representative for Vermont House of Representatives District Chittenden-19. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "VT",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://legislature.vermont.gov/Documents/SmallMaps/2022/House/Chittenden-19.pdf"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/vt/legislature/Sarah-Austin-c028faa3-479d-440c-b2a5-e4320933c10f.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://legislature.vermont.gov/Documents/Legislators/Austin,Sarita.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Sarita_Austin"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Sarita_Austin"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/183956/sarita-austin"
+    },
+    {
+      "title": "Public source",
+      "url": "https://legislature.vermont.gov/people/loadAll/2020"
+    },
+    {
+      "title": "Public source",
+      "url": "https://legislature.vermont.gov/people/loadAll/2022"
+    },
+    {
+      "title": "Public source",
+      "url": "https://legislature.vermont.gov/people/loadAll/2024"
+    },
+    {
+      "title": "Public source",
+      "url": "https://legislature.vermont.gov/people/single/2020/30952"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

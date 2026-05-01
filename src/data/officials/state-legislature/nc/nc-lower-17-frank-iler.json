@@ -1,0 +1,56 @@
+{
+  "id": "frank-iler",
+  "name": "Frank Iler",
+  "firstName": "Frank",
+  "lastName": "Iler",
+  "photo": "/images/officials/state-legislature/nc/frank-iler.jpg",
+  "photoSourceUrl": "https://www.ncleg.gov/Members/MemberImage/H/598/Low",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-17",
+  "jurisdiction": "North Carolina House of Representatives",
+  "county": [
+    "North Carolina"
+  ],
+  "termStart": "2009-06-18",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 639, Legislative Office Building 300 N. Salisbury St., Raleigh, NC 27603",
+    "phone": "919-301-1450",
+    "email": "frank.iler@ncleg.gov",
+    "website": "https://www.ncleg.gov/Members/Biography/H/598"
+  },
+  "bio": "Frank Iler serves as State Representative for North Carolina House of Representatives District 17. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "NC",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.ncleg.gov/Members/Biography/H/598"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/nc/legislature/Frank-Iler-f75593f8-b178-47f1-8e72-e403f04dfb5d.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://www.ncleg.gov/Members/MemberImage/H/598/Low"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Frank_Iler"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Frank_Iler"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.ncleg.gov/Members/MemberTable/H"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

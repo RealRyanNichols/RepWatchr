@@ -1,0 +1,53 @@
+{
+  "id": "margaret-delarosa",
+  "name": "Margaret DeLaRosa",
+  "firstName": "Margaret",
+  "lastName": "DeLaRosa",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-42",
+  "jurisdiction": "Illinois House of Representatives",
+  "county": [
+    "Illinois"
+  ],
+  "termStart": "2025-10-13",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "913 S. Main St., Lombard, IL 60148",
+    "phone": "630-812-9292",
+    "email": "ilhouse42@gmail.com",
+    "website": "https://www.ilga.gov/House/Members/Details/3461"
+  },
+  "bio": "Margaret DeLaRosa serves as State Representative for Illinois House of Representatives District 42. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "IL",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.ilga.gov/House/Members/Details/3461"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/il/legislature/Margaret-DeLaRosa-9e3e61af-e205-47a0-8d7c-d50475941ba8.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Margaret_A._DeLaRosa_(Glenbard_Township_High_School_District_87,_At-large,_Illinois,_candidate_2025)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Margaret_DeLaRosa"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Margaret_DeLaRosa"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/margaret-delarosa-8271b513"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

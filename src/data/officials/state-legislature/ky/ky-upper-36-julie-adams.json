@@ -1,0 +1,66 @@
+{
+  "id": "julie-adams",
+  "name": "Julie Adams",
+  "firstName": "Julie",
+  "lastName": "Adams",
+  "photo": "/images/officials/state-legislature/ky/julie-adams.jpg",
+  "photoSourceUrl": "https://legislature.ky.gov/Legislators%20Thumbnail%20Images/senate136.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-36",
+  "jurisdiction": "Kentucky Senate",
+  "county": [
+    "Kentucky"
+  ],
+  "termStart": "2015-01-01",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "email": "julie.adams@kylegislature.gov",
+    "website": "https://legislature.ky.gov/Legislators/Pages/Legislator-Profile.aspx?DistrictNumber=136",
+    "socialMedia": {
+      "x": "https://x.com/jrajra",
+      "twitter": "https://x.com/jrajra"
+    }
+  },
+  "bio": "Julie Adams serves as State Senator for Kentucky Senate District 36. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "KY",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://legislature.ky.gov/Legislators/Pages/Legislator-Profile.aspx?DistrictNumber=136"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ky/legislature/Julie-Raque-Adams-38ae421f-f4fa-40f6-b025-a75bc6b42f35.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://legislature.ky.gov/Legislators%20Thumbnail%20Images/senate136.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Julie_Adams"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Julie_Adams_(politician)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/73611/julie-raque-adams"
+    },
+    {
+      "title": "Public source",
+      "url": "https://legislature.ky.gov/Legislators/senate"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/julie-raque-adams-9249a611"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

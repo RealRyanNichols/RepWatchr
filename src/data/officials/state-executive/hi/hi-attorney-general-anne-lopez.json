@@ -1,0 +1,55 @@
+{
+  "id": "anne-lopez",
+  "name": "Anne Lopez",
+  "firstName": "Anne",
+  "lastName": "Lopez",
+  "photo": "/images/officials/state-executive/hi/anne-lopez.jpg",
+  "photoSourceUrl": "https://www.naag.org/wp-content/uploads/2023/01/ag-HI-Lopez-2024.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "NP",
+  "level": "state",
+  "position": "Attorney General",
+  "district": "Hawaii",
+  "jurisdiction": "Hawaii statewide public office",
+  "county": [
+    "Hawaii"
+  ],
+  "termStart": "2022-12-05",
+  "termEnd": "2026-12-07",
+  "contactInfo": {
+    "office": "425 Queen Street; Honolulu, HI 96813",
+    "phone": "808-586-1500",
+    "website": "https://ag.hawaii.gov/"
+  },
+  "bio": "Anne Lopez is listed as Attorney General for Hawaii. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "HI",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://ag.hawaii.gov/"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/hi/executive/Anne-Lopez-8145b3ac-aaee-43d1-a534-d51d5e80f178.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://www.naag.org/wp-content/uploads/2023/01/ag-HI-Lopez-2024.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ag.hawaii.gov/contact-us/"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Anne_Lopez"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.naag.org/attorney-general/anne-lopez/"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

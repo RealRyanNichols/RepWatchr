@@ -1,0 +1,64 @@
+{
+  "id": "dolly-henley",
+  "name": "Dolly Henley",
+  "firstName": "Dolly",
+  "lastName": "Henley",
+  "photo": "/images/officials/state-legislature/ar/dolly-henley.jpg",
+  "photoSourceUrl": "https://images.squarespace-cdn.com/content/v1/6570ab4ce162d11cdfa700b2/e700f6b2-1aba-4474-a367-e54965e30b67/DSC_9617.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-88",
+  "jurisdiction": "Arkansas House of Representatives",
+  "county": [
+    "Arkansas"
+  ],
+  "termStart": "2025-01-13",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "State Capitol Arkansas  500 Woodlane St., Suite 350, Little Rock, AR 72201",
+    "phone": "501-682-6211",
+    "email": "dolly.henley@arkansashouse.org",
+    "website": "https://arkansashouse.org/district/88"
+  },
+  "bio": "Dolly Henley serves as State Representative for Arkansas House of Representatives District 88. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "AR",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://arkansashouse.org/district/88"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ar/legislature/Dolly-Henley-50cdb325-0c04-483e-87cb-d6a9037d9bc9.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://images.squarespace-cdn.com/content/v1/6570ab4ce162d11cdfa700b2/e700f6b2-1aba-4474-a367-e54965e30b67/DSC_9617.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://arkleg.state.ar.us/Legislators/Detail?member=Henley"
+    },
+    {
+      "title": "Public source",
+      "url": "https://arkleg.state.ar.us/Legislators/Detail?member=Henley&ddBienniumSession=2025%2F2025R"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Dolly_Henley"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/212975/dolly-henley"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/dolly-henley-81288038"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

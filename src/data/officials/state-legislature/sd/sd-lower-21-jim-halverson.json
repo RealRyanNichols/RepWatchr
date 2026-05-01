@@ -1,0 +1,54 @@
+{
+  "id": "jim-halverson",
+  "name": "Jim Halverson",
+  "firstName": "Jim",
+  "lastName": "Halverson",
+  "photo": "/images/officials/state-legislature/sd/jim-halverson.jpg",
+  "photoSourceUrl": "https://halversonforhouse.com/wp-content/uploads/2024/04/Jim-Halverson-for-House.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-21",
+  "jurisdiction": "South Dakota House of Representatives",
+  "county": [
+    "South Dakota"
+  ],
+  "termStart": "2025-01-14",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "email": "jim.halverson@sdlegislature.gov",
+    "website": "https://sdlegislature.gov/Legislators/Profile/4712/Detail"
+  },
+  "bio": "Jim Halverson serves as State Representative for South Dakota House of Representatives District 21. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "SD",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://sdlegislature.gov/Legislators/Profile/4712/Detail"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/sd/legislature/Jim-Halverson-98281de1-c8bc-4c3a-9a5b-6a45c96c6087.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://halversonforhouse.com/wp-content/uploads/2024/04/Jim-Halverson-for-House.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Jim_Halverson_(South_Dakota)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://sdlegislature.gov/Legislators/Profile/4757/Detail"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/jim-halverson-31383bba"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

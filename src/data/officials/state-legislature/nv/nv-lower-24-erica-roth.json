@@ -1,0 +1,56 @@
+{
+  "id": "erica-roth",
+  "name": "Erica Roth",
+  "firstName": "Erica",
+  "lastName": "Roth",
+  "photo": "/images/officials/state-legislature/nv/erica-roth.jpg",
+  "photoSourceUrl": "http://leg.state.nv.us/Session/83rd2025/legislators/Assembly/Images/Roth.Erica.413.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "Assemblymember",
+  "district": "HD-24",
+  "jurisdiction": "Nevada Assembly",
+  "county": [
+    "Nevada"
+  ],
+  "termStart": "2024-11-06",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 3125, Nevada Assembly 401 S. Carson St., Carson City, NV 89701",
+    "phone": "775-684-8559",
+    "email": "erica.roth@asm.state.nv.us",
+    "website": "https://www.leg.state.nv.us/App/Legislator/A/Assembly/Current/24"
+  },
+  "bio": "Erica Roth serves as Assemblymember for Nevada Assembly District 24. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "NV",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.leg.state.nv.us/App/Legislator/A/Assembly/Current/24"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/nv/legislature/Erica-Roth-1555ff9d-7b4a-46d9-be19-6a4be444f574.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "http://leg.state.nv.us/Session/83rd2025/legislators/Assembly/Images/Roth.Erica.413.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Erica_Roth"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/215856/erica-roth"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/ericarothesq"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

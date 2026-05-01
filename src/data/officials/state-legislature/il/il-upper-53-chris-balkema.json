@@ -1,0 +1,68 @@
+{
+  "id": "chris-balkema",
+  "name": "Chris Balkema",
+  "firstName": "Chris",
+  "lastName": "Balkema",
+  "photo": "/images/officials/state-legislature/il/chris-balkema.jpg",
+  "photoSourceUrl": "https://cdn.ilga.gov/assets/img/members/{29C38AB6-DBAB-4E53-A4B1-9DA8D64AD699}.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-53",
+  "jurisdiction": "Illinois Senate",
+  "county": [
+    "Illinois"
+  ],
+  "termStart": "2025-01-08",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Stratton Office Building Section A, Office C, Springfield, IL 62706",
+    "phone": "217-782-6597",
+    "email": "chris@chrisbalkema.com",
+    "website": "https://www.ilga.gov/Senate/Members/Details/3413"
+  },
+  "bio": "Chris Balkema serves as State Senator for Illinois Senate District 53. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "IL",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.ilga.gov/Senate/Members/Details/3413"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/il/legislature/Chris-Balkema-fe9dc27f-4e47-4cb0-a008-df80642f6be0.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://cdn.ilga.gov/assets/img/members/{29C38AB6-DBAB-4E53-A4B1-9DA8D64AD699}.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Chris_Balkema"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/131351/chris-balkema"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.ilga.gov/senate/Senator.asp?GA=104&MemberID=3413"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/chris-balkema-45589a62"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/state-senator-chris-balkema-45589a62"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.senatorchrisbalkema.com"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

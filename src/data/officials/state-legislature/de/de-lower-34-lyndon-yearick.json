@@ -1,0 +1,72 @@
+{
+  "id": "lyndon-yearick",
+  "name": "Lyndon Yearick",
+  "firstName": "Lyndon",
+  "lastName": "Yearick",
+  "photo": "/images/officials/state-legislature/de/lyndon-yearick.jpg",
+  "photoSourceUrl": "https://housegop.delaware.gov/wp-content/blogs.dir/207/files/sites/207/2022/08/Lyndon_D_Yearick_710x710-710x710.png",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-34",
+  "jurisdiction": "Delaware House of Representatives",
+  "county": [
+    "Delaware"
+  ],
+  "termStart": "2014-11-05",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "P.O. Box 1401 411 Legislative Ave., Dover, DE 19901",
+    "phone": "302-744-4171",
+    "email": "lyndon.yearick@delaware.gov",
+    "website": "https://housegop.delaware.gov/members/house-district-34/"
+  },
+  "bio": "Lyndon Yearick serves as State Representative for Delaware House of Representatives District 34. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "DE",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://housegop.delaware.gov/members/house-district-34/"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/de/legislature/Lyndon-D-Yearick-85f716aa-751a-4258-a68b-f6ed94b2daa0.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://housegop.delaware.gov/wp-content/blogs.dir/207/files/sites/207/2022/08/Lyndon_D_Yearick_710x710-710x710.png"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Lyndon_Dean_Yearick"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Lyndon_Yearick"
+    },
+    {
+      "title": "Public source",
+      "url": "https://housegop.delaware.gov/members/house-district-34"
+    },
+    {
+      "title": "Public source",
+      "url": "https://legis.delaware.gov/AssemblyMember/150/Yearick"
+    },
+    {
+      "title": "legislator list page",
+      "url": "https://legis.delaware.gov/House"
+    },
+    {
+      "title": "Public source",
+      "url": "https://legis.delaware.gov/json/House/GetRepresentatives"
+    },
+    {
+      "title": "Public source",
+      "url": "https://legis.delaware.gov/LegislatorDetail?personId=223"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

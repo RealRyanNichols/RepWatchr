@@ -1,0 +1,65 @@
+{
+  "id": "tim-reisch",
+  "name": "Tim Reisch",
+  "firstName": "Tim",
+  "lastName": "Reisch",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-8",
+  "jurisdiction": "South Dakota House of Representatives",
+  "county": [
+    "South Dakota"
+  ],
+  "termStart": "2023-01-10",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Capitol Building 500 E. Capitol Ave., Pierre, SD 57501",
+    "phone": "605-773-3851",
+    "email": "tim.reisch@sdlegislature.gov",
+    "website": "https://sdlegislature.gov/Legislators/Profile/4458/Detail"
+  },
+  "bio": "Tim Reisch serves as State Representative for South Dakota House of Representatives District 8. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "SD",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://sdlegislature.gov/Legislators/Profile/4458/Detail"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/sd/legislature/Tim-Reisch-3c82e6e9-348f-40cd-818e-76d4901d9ec5.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Tim_Reisch"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Tim_Reisch"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/129240/timothy-reisch"
+    },
+    {
+      "title": "Public source",
+      "url": "https://sdlegislature.gov/Legislators/Profile/4659/Detail"
+    },
+    {
+      "title": "Public source",
+      "url": "https://sdlegislature.gov/Legislators/Profile/4810/Detail"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/tim-reisch-3a4b263b"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.nationalguard.mil/portals/31/Features/ngbgomo/bio/1/1951.html"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

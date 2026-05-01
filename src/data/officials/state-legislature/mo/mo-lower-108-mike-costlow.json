@@ -1,0 +1,56 @@
+{
+  "id": "mike-costlow",
+  "name": "Mike Costlow",
+  "firstName": "Mike",
+  "lastName": "Costlow",
+  "photo": "/images/officials/state-legislature/mo/mike-costlow.jpg",
+  "photoSourceUrl": "https://costlowformissouri.com/wp-content/uploads/2024/05/Headshot-No-Background-2.png",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-108",
+  "jurisdiction": "Missouri House of Representatives",
+  "county": [
+    "Missouri"
+  ],
+  "termStart": "2025-01-08",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 115-J, 201 W. Capitol Ave., Jefferson City, MO 65101",
+    "phone": "573-751-3572",
+    "email": "mike.costlow@house.mo.gov",
+    "website": "https://house.mo.gov/MemberDetails.aspx?district=108"
+  },
+  "bio": "Mike Costlow serves as State Representative for Missouri House of Representatives District 108. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "MO",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://house.mo.gov/MemberDetails.aspx?district=108"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/mo/legislature/Mike-Costlow-c08a9151-fdfe-4da9-97c2-5536ed96f255.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://costlowformissouri.com/wp-content/uploads/2024/05/Headshot-No-Background-2.png"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Mike_Costlow"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/217724/mike-costlow"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/mikecostlow2"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

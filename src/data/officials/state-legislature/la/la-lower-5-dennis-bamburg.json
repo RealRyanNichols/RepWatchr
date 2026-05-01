@@ -1,0 +1,52 @@
+{
+  "id": "dennis-bamburg",
+  "name": "Dennis Bamburg",
+  "firstName": "Dennis",
+  "lastName": "Bamburg",
+  "photo": "/images/officials/state-legislature/la/dennis-bamburg.jpg",
+  "photoSourceUrl": "https://house.louisiana.gov/H_Reps/RepPics/rep5.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-5",
+  "jurisdiction": "Louisiana House of Representatives",
+  "county": [
+    "Louisiana"
+  ],
+  "termStart": "2024-01-08",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "P.O. Box 94062 900 N. 3rd St., Baton Rouge, LA 70804",
+    "phone": "225-342-6945",
+    "email": "hse005@legis.la.gov",
+    "website": "https://house.louisiana.gov/H_Reps/members?ID=5"
+  },
+  "bio": "Dennis Bamburg serves as State Representative for Louisiana House of Representatives District 5. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "LA",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://house.louisiana.gov/H_Reps/members?ID=5"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/la/legislature/Dennis-Bamburg-a900feca-75c7-434e-8d00-dd67170f2b01.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://house.louisiana.gov/H_Reps/RepPics/rep5.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Dennis_Bamburg_Jr."
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/dennis-bamburg-93ab8895"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

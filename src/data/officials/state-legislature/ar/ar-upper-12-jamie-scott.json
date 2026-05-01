@@ -1,0 +1,78 @@
+{
+  "id": "jamie-scott",
+  "name": "Jamie Scott",
+  "firstName": "Jamie",
+  "lastName": "Scott",
+  "photo": "/images/officials/state-legislature/ar/jamie-scott.jpg",
+  "photoSourceUrl": "https://www.arkleg.state.ar.us/Content/photos/2023/House/552_sm.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-12",
+  "jurisdiction": "Arkansas Senate",
+  "county": [
+    "Arkansas"
+  ],
+  "termStart": "2025-01-13",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "State Capitol Building 500 Woodlane St., Suite 320, Little Rock, AR 72201",
+    "phone": "501-682-2902",
+    "email": "jamie.scott@senate.ar.gov",
+    "website": "https://arkleg.state.ar.us/Legislators/Detail?member=J.+Scott&dd",
+    "socialMedia": {
+      "x": "https://x.com/Anointed08",
+      "twitter": "https://x.com/Anointed08",
+      "facebook": "https://facebook.com/Jamie Scott",
+      "instagram": "https://instagram.com/jamiescott4arkansas"
+    }
+  },
+  "bio": "Jamie Scott serves as State Senator for Arkansas Senate District 12. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "AR",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://arkleg.state.ar.us/Legislators/Detail?member=J.+Scott&dd"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ar/legislature/Jamie-Scott-71affd8a-77ef-45b1-96ab-c5724f34dfa5.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://www.arkleg.state.ar.us/Content/photos/2023/House/552_sm.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Jamie_Scott"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Jamie_Aleshia_Scott"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/178508/jamie-scott"
+    },
+    {
+      "title": "Public source",
+      "url": "https://senate.arkansas.gov/senators/655"
+    },
+    {
+      "title": "Public source",
+      "url": "https://senate.arkansas.gov/senators/jamie-scott"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.arkansashouse.org/district/72"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.arkleg.state.ar.us/Legislators/Detail?member=Scott"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

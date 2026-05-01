@@ -1,0 +1,72 @@
+{
+  "id": "kenneth-paschal",
+  "name": "Kenneth Paschal",
+  "firstName": "Kenneth",
+  "lastName": "Paschal",
+  "photo": "/images/officials/state-legislature/al/kenneth-paschal.jpg",
+  "photoSourceUrl": "https://www.legislature.state.al.us/pdf/house/members/Paschal_73.png",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-73",
+  "jurisdiction": "Alabama House of Representatives",
+  "county": [
+    "Alabama"
+  ],
+  "termStart": "2021-07-14",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 427-F, 11 S. Union St., Montgomery, AL 36130",
+    "phone": "334-261-0469",
+    "email": "kenneth.paschal@alhouse.gov",
+    "website": "https://alison.legislature.state.al.us/house-leaders-members"
+  },
+  "bio": "Kenneth Paschal serves as State Representative for Alabama House of Representatives District 73. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "AL",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://alison.legislature.state.al.us/house-leaders-members"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/al/legislature/Kenneth-Paschal-ab6d4114-8d0a-4439-934b-10197234473c.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://www.legislature.state.al.us/pdf/house/members/Paschal_73.png"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Kenneth_Paschal"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Kenneth_Paschal"
+    },
+    {
+      "title": "graphql endpoint for member information",
+      "url": "https://gql.api.alison.legislature.state.al.us/graphql"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/195795/kenneth-paschal"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.legislature.state.al.us/aliswww/ISD/ALRepresentative.aspx?NAME=Paschal&OID_SPONSOR=110579&OID_PERSON=9302&SESSNAME="
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.legislature.state.al.us/aliswww/ISD/ALRepresentative.aspx?OID_SPONSOR=9100555&OID_PERSON=97694"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.legislature.state.al.us/aliswww/ISD/House/ALRepresentatives.aspx"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

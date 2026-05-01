@@ -1,0 +1,52 @@
+{
+  "id": "andrea-verobish",
+  "name": "Andrea Verobish",
+  "firstName": "Andrea",
+  "lastName": "Verobish",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-79",
+  "jurisdiction": "Pennsylvania House of Representatives",
+  "county": [
+    "Pennsylvania"
+  ],
+  "termStart": "2026-04-13",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 160A, East Wing P.O. Box 202079, Harrisburg, PA 17120",
+    "phone": "717-787-6419",
+    "website": "https://www.palegis.us/house/members/bio/2065/rep-verobish"
+  },
+  "bio": "Andrea Verobish serves as State Representative for Pennsylvania House of Representatives District 79. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "PA",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.palegis.us/house/members/bio/2065/rep-verobish"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/pa/legislature/Andrea-Verobish-23f12d9a-928a-445e-abbe-4976cb082809.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Andrea_Verobish"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Andrea_Verobish"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/andrea-verobish-42441a19"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.repverobish.com"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

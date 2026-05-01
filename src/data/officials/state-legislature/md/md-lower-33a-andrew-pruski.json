@@ -1,0 +1,56 @@
+{
+  "id": "andrew-pruski",
+  "name": "Andrew Pruski",
+  "firstName": "Andrew",
+  "lastName": "Pruski",
+  "photo": "/images/officials/state-legislature/md/andrew-pruski.jpg",
+  "photoSourceUrl": "https://mgaleg.maryland.gov/2023RS/images/pruski01.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "Delegate",
+  "district": "HD-33A",
+  "jurisdiction": "Maryland House of Delegates",
+  "county": [
+    "Maryland"
+  ],
+  "termStart": "2023-01-11",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 164, Lowe House Office Bldg. 6 Bladen St., Annapolis, MD 21401",
+    "phone": "410-841-3340",
+    "email": "andrew.pruski@house.maryland.gov",
+    "website": "https://mgaleg.maryland.gov/mgawebsite/Members/Details/pruski01"
+  },
+  "bio": "Andrew Pruski serves as Delegate for Maryland House of Delegates District 33A. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "MD",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://mgaleg.maryland.gov/mgawebsite/Members/Details/pruski01"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/md/legislature/Andrew-C-Pruski-7c57193f-f7af-4f7b-9b5f-cf17a7f51f25.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://mgaleg.maryland.gov/2023RS/images/pruski01.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Andrew_Pruski"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Andrew_Pruski"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/andrew-pruski-3521a56"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

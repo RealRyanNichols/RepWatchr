@@ -1,0 +1,53 @@
+{
+  "id": "eric-weaknecht",
+  "name": "Eric Weaknecht",
+  "firstName": "Eric",
+  "lastName": "Weaknecht",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-5",
+  "jurisdiction": "Pennsylvania House of Representatives",
+  "county": [
+    "Pennsylvania"
+  ],
+  "termStart": "2024-12-01",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 432, Irvis Office Building P.O. Box 202005, Harrisburg, PA 17120",
+    "phone": "717-772-9940",
+    "email": "eweaknecht@pahousegop.com",
+    "website": "https://repweaknecht.com/"
+  },
+  "bio": "Eric Weaknecht serves as State Representative for Pennsylvania House of Representatives District 5. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "PA",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://repweaknecht.com/"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/pa/legislature/Eric-Weaknecht-b7373c43-580b-4044-a405-054073ac687b.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Eric_Weaknecht"
+    },
+    {
+      "title": "Public source",
+      "url": "https://repweaknecht.com"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/eric-weaknecht-10385647"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.palegis.us/house/members/bio/2021/rep-weaknecht"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

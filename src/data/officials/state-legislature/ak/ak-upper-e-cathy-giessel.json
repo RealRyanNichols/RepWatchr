@@ -1,0 +1,72 @@
+{
+  "id": "cathy-giessel",
+  "name": "Cathy Giessel",
+  "firstName": "Cathy",
+  "lastName": "Giessel",
+  "photo": "/images/officials/state-legislature/ak/cathy-giessel.jpg",
+  "photoSourceUrl": "http://akleg.gov/images/legislators/450x600/GIE.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-E",
+  "jurisdiction": "Alaska Senate",
+  "county": [
+    "Alaska"
+  ],
+  "termStart": "2023-01-17",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "State Capitol Room 121, 120 4th St., Juneau, AK 99801",
+    "phone": "907-465-4843",
+    "email": "senator.cathy.giessel@akleg.gov",
+    "website": "https://alaskasenate.org/giessel/"
+  },
+  "bio": "Cathy Giessel serves as State Senator for Alaska Senate District E. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "AK",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://alaskasenate.org/giessel/"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ak/legislature/Cathy-Giessel-4ac9a4bf-e2d9-4257-a360-9e91dc234deb.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "http://akleg.gov/images/legislators/450x600/GIE.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://alaskasenate.org/giessel"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Catherine_A._Giessel"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Cathy_Giessel"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/117402/cathy-giessel"
+    },
+    {
+      "title": "Public source",
+      "url": "https://w3.akleg.gov"
+    },
+    {
+      "title": "Public source",
+      "url": "https://w3.akleg.gov/"
+    },
+    {
+      "title": "member list page",
+      "url": "https://www.akleg.gov/basis/mbr_info.asp?session=33"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

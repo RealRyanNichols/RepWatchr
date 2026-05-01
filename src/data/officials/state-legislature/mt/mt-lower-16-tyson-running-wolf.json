@@ -1,0 +1,69 @@
+{
+  "id": "tyson-running-wolf",
+  "name": "Tyson Running Wolf",
+  "firstName": "Tyson",
+  "lastName": "Running Wolf",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-16",
+  "jurisdiction": "Montana House of Representatives",
+  "county": [
+    "Montana"
+  ],
+  "termStart": "2019-01-07",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Capitol Building, 1301 E. 6th Ave. P.O. Box 200400, Helena, MT 59620",
+    "phone": "406-444-4800",
+    "email": "tyson.runningwolf@legmt.gov",
+    "website": "https://archive.legmt.gov/legislator-information/roster/individual/7583"
+  },
+  "bio": "Tyson Running Wolf serves as State Representative for Montana House of Representatives District 16. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "MT",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://archive.legmt.gov/legislator-information/roster/individual/7583"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/mt/legislature/Tyson-Runningwolf-637f0db7-9c93-478e-904b-a36d0a2a67b1.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Tyson_Runningwolf"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Tyson_Running_Wolf"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/180674/tyson-running-wolf"
+    },
+    {
+      "title": "Public source",
+      "url": "https://leg.mt.gov/legislator-information/?session_select=113"
+    },
+    {
+      "title": "Public source",
+      "url": "https://leg.mt.gov/legislator-information/roster/individual/5074"
+    },
+    {
+      "title": "Public source",
+      "url": "https://leg.mt.gov/legislator-information/roster/individual/6826"
+    },
+    {
+      "title": "Public source",
+      "url": "https://leg.mt.gov/legislator-information/roster/individual/7583"
+    },
+    {
+      "title": "Public source",
+      "url": "https://legislators.legmt.gov/#/legislator/134"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

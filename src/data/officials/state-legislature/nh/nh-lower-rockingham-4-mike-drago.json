@@ -1,0 +1,60 @@
+{
+  "id": "mike-drago",
+  "name": "Mike Drago",
+  "firstName": "Mike",
+  "lastName": "Drago",
+  "photo": "/images/officials/state-legislature/nh/mike-drago.jpg",
+  "photoSourceUrl": "https://www.citizenscount.org/sites/default/files/styles/profile_140x176/public/2022-08/mike-drago.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-Rockingham 4",
+  "jurisdiction": "New Hampshire House of Representatives",
+  "county": [
+    "New Hampshire"
+  ],
+  "termStart": "2022-12-07",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "State House 107 N. Main St., Concord, NH 03301",
+    "phone": "603-271-3661",
+    "email": "mike.drago@gc.nh.gov",
+    "website": "https://gc.nh.gov/house/members/member.aspx?pid=10686"
+  },
+  "bio": "Mike Drago serves as State Representative for New Hampshire House of Representatives District Rockingham 4. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "NH",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://gc.nh.gov/house/members/member.aspx?pid=10686"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/nh/legislature/Mike-Drago-07c09a56-23ba-4c8b-90bd-5668f22c5103.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://www.citizenscount.org/sites/default/files/styles/profile_140x176/public/2022-08/mike-drago.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Mike_Drago"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Mike_Drago"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/209193/mike-drago"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.gencourt.state.nh.us/house/members/member.aspx?pid=10686"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

@@ -1,0 +1,64 @@
+{
+  "id": "rick-hillenbrand",
+  "name": "Rick Hillenbrand",
+  "firstName": "Rick",
+  "lastName": "Hillenbrand",
+  "photo": "/images/officials/state-legislature/wv/rick-hillenbrand.jpg",
+  "photoSourceUrl": "https://www.wvlegislature.gov/images/members/2024/house/hillenbrand_rick.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "Delegate",
+  "district": "HD-88",
+  "jurisdiction": "West Virginia House of Delegates",
+  "county": [
+    "West Virginia"
+  ],
+  "termStart": "2022-12-01",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "State Capitol Room 218E, Complex, Building 1 1900 Kanawha Blvd. East, Charleston, WV 25305",
+    "phone": "304-340-3176",
+    "email": "rick.hillenbrand@wvhouse.gov",
+    "website": "https://www.wvlegislature.gov/House/lawmaker.cfm?member=Delegate%20Hillenbrand"
+  },
+  "bio": "Rick Hillenbrand serves as Delegate for West Virginia House of Delegates District 88. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "WV",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.wvlegislature.gov/House/lawmaker.cfm?member=Delegate%20Hillenbrand"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/wv/legislature/Rick-Hillenbrand-5e9dad08-2267-4354-b695-814e1014a0ec.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://www.wvlegislature.gov/images/members/2024/house/hillenbrand_rick.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Rick_Hillenbrand"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Rick_Hillenbrand"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/201692/rick-hillenbrand"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/rickhillenbrand"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.wvlegislature.gov/House/roster.cfm"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

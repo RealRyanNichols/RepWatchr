@@ -1,0 +1,69 @@
+{
+  "id": "don-parsons",
+  "name": "Don Parsons",
+  "firstName": "Don",
+  "lastName": "Parsons",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-44",
+  "jurisdiction": "Georgia House of Representatives",
+  "county": [
+    "Georgia"
+  ],
+  "termStart": "2013-01-07",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "State Capitol Room 402, 206 Washington St. SW, Atlanta, GA 30334",
+    "phone": "404-656-5143",
+    "email": "don.parsons@house.ga.gov",
+    "website": "https://www.house.ga.gov/Representatives/en-US/member.aspx?Member=184&Session=27"
+  },
+  "bio": "Don Parsons serves as State Representative for Georgia House of Representatives District 44. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "GA",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.house.ga.gov/Representatives/en-US/member.aspx?Member=184&Session=27"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ga/legislature/Don-Parsons-81dde544-49e9-4fb0-9313-32eacaf6194b.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Don_Parsons"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Don_Parsons_(politician)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/7943/don-parsons"
+    },
+    {
+      "title": "Public source",
+      "url": "https://webservices.legis.ga.gov/GGAServices/Members/Service.svc?wsdl"
+    },
+    {
+      "title": "Detail page (requires authorization token)",
+      "url": "https://www.legis.ga.gov/api/members/detail/184?session=1029&chamber=1"
+    },
+    {
+      "title": "API member detail (requires authorization token)",
+      "url": "https://www.legis.ga.gov/api/members/detail/184?session=1031&chamber=1"
+    },
+    {
+      "title": "API members list (requires authorization token)",
+      "url": "https://www.legis.ga.gov/api/members/list/1031"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.legis.ga.gov/members/house/184"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

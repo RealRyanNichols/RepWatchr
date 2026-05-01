@@ -1,0 +1,60 @@
+{
+  "id": "tina-polsky",
+  "name": "Tina Polsky",
+  "firstName": "Tina",
+  "lastName": "Polsky",
+  "photo": "/images/officials/state-legislature/fl/tina-polsky.jpg",
+  "photoSourceUrl": "https://flsenate.gov/PublishedContent/Senators/2022-2024/Photos/s30_5371.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-30",
+  "jurisdiction": "Florida Senate",
+  "county": [
+    "Florida"
+  ],
+  "termStart": "2022-11-08",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 220, Senate Building 404 S. Monroe St., Tallahassee, FL 32399",
+    "phone": "850-487-5030",
+    "email": "polsky.tina.web@flsenate.gov",
+    "website": "https://flsenate.gov/Senators/2022-2024/S30"
+  },
+  "bio": "Tina Polsky serves as State Senator for Florida Senate District 30. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "FL",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://flsenate.gov/Senators/2022-2024/S30"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/fl/legislature/Tina-Scott-Polsky-8c728fd0-2a3b-48ea-88a9-c7d675eb05d0.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://flsenate.gov/PublishedContent/Senators/2022-2024/Photos/s30_5371.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Tina_Polsky"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Tina_Polsky"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.flsenate.gov/Senators/S30"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/tina-scott-polsky-esq-0126a211"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

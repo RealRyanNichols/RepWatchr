@@ -1,0 +1,64 @@
+{
+  "id": "tracy-bricchi",
+  "name": "Tracy Bricchi",
+  "firstName": "Tracy",
+  "lastName": "Bricchi",
+  "photo": "/images/officials/state-legislature/nh/tracy-bricchi.jpg",
+  "photoSourceUrl": "https://nhhousedems.org/wp-content/uploads/2024/10/Tracy-Bricchi-1-1024x683.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-Merrimack 15",
+  "jurisdiction": "New Hampshire House of Representatives",
+  "county": [
+    "New Hampshire"
+  ],
+  "termStart": "2024-12-04",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "State House 107 N. Main St., Concord, NH 03301",
+    "phone": "603-271-3661",
+    "email": "tracy.bricchi@gc.nh.gov",
+    "website": "https://gc.nh.gov/house/members/member.aspx?pid=11235"
+  },
+  "bio": "Tracy Bricchi serves as State Representative for New Hampshire House of Representatives District Merrimack 15. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "NH",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://gc.nh.gov/house/members/member.aspx?pid=11235"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/nh/legislature/Tracy-Bricchi-31497c82-3d45-49e4-9232-1c435a5c72e3.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://nhhousedems.org/wp-content/uploads/2024/10/Tracy-Bricchi-1-1024x683.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Tracy_Bricchi"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Tracy_Bricchi"
+    },
+    {
+      "title": "Public source",
+      "url": "https://gencourt.state.nh.us/house/members/member.aspx?pid=11235"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/219148/tracy-bricchi"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/tracy-bricchi-9246532b"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

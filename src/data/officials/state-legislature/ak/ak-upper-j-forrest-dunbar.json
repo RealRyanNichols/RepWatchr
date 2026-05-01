@@ -1,0 +1,72 @@
+{
+  "id": "forrest-dunbar",
+  "name": "Forrest Dunbar",
+  "firstName": "Forrest",
+  "lastName": "Dunbar",
+  "photo": "/images/officials/state-legislature/ak/forrest-dunbar.jpg",
+  "photoSourceUrl": "http://akleg.gov/images/legislators/450x600/DNB.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-J",
+  "jurisdiction": "Alaska Senate",
+  "county": [
+    "Alaska"
+  ],
+  "termStart": "2023-01-17",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "State Capitol Room 125, 120 4th St., Juneau, AK 99801",
+    "phone": "907-465-6944",
+    "email": "senator.forrest.dunbar@akleg.gov",
+    "website": "https://alaskasenate.org/dunbar/"
+  },
+  "bio": "Forrest Dunbar serves as State Senator for Alaska Senate District J. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "AK",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://alaskasenate.org/dunbar/"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ak/legislature/Forrest-Dunbar-4511370e-1ac8-4135-a622-d5b533faeb43.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "http://akleg.gov/images/legislators/450x600/DNB.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://alaskasenate.org/dunbar"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Forrest_Dunbar"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Forrest_Dunbar"
+    },
+    {
+      "title": "member list page",
+      "url": "https://www.akleg.gov/basis/mbr_info.asp?session=33"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.akleg.gov/basis/Member/Detail/33?code=DNB"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.akleg.gov/basis/Member/Detail/33?code=dnb"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.akleg.gov/basis/Member/Detail/34?code=dnb"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

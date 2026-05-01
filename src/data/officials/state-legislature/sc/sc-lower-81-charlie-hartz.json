@@ -1,0 +1,56 @@
+{
+  "id": "charlie-hartz",
+  "name": "Charlie Hartz",
+  "firstName": "Charlie",
+  "lastName": "Hartz",
+  "photo": "/images/officials/state-legislature/sc/charlie-hartz.jpg",
+  "photoSourceUrl": "https://bloximages.newyork1.vip.townnews.com/postandcourier.com/content/tncms/assets/v3/editorial/6/dd/6ddc9b30-8988-11ef-9d6e-abf6ce2aa967/62e03fbeba019.image.jpg?crop=724%2C987%2C710%2C3&resize=367%2C500&order=crop%2Cresize",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-81",
+  "jurisdiction": "South Carolina House of Representatives",
+  "county": [
+    "South Carolina"
+  ],
+  "termStart": "2024-11-11",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 416D, Blatt Building P.O. Box 11867, Columbia, SC 29211",
+    "phone": "803-212-6884",
+    "email": "charleshartz@schouse.gov",
+    "website": "https://www.scstatehouse.gov/member.php?code=0776136271"
+  },
+  "bio": "Charlie Hartz serves as State Representative for South Carolina House of Representatives District 81. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "SC",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.scstatehouse.gov/member.php?code=0776136271"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/sc/legislature/Charlie-Hartz-08342d93-85d9-498e-a602-85ef9715ebf6.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://bloximages.newyork1.vip.townnews.com/postandcourier.com/content/tncms/assets/v3/editorial/6/dd/6ddc9b30-8988-11ef-9d6e-abf6ce2aa967/62e03fbeba019.image.jpg?crop=724%2C987%2C710%2C3&resize=367%2C500&order=crop%2Cresize"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Charles_Hartz"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Charles_Hartz"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/216357/charles-hartz"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

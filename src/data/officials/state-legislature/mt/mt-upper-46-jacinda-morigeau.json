@@ -1,0 +1,57 @@
+{
+  "id": "jacinda-morigeau",
+  "name": "Jacinda Morigeau",
+  "firstName": "Jacinda",
+  "lastName": "Morigeau",
+  "party": "D",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-46",
+  "jurisdiction": "Montana Senate",
+  "county": [
+    "Montana"
+  ],
+  "termStart": "2025-01-06",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Capitol Building, 1301 E. 6th Ave. P.O. Box 200500, Helena, MT 59620",
+    "phone": "406-444-4800",
+    "email": "jacinda.morigeau@legmt.gov",
+    "website": "https://legislators.legmt.gov/#/legislator/239"
+  },
+  "bio": "Jacinda Morigeau serves as State Senator for Montana Senate District 46. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "MT",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://legislators.legmt.gov/#/legislator/239"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/mt/legislature/Jacinda-Morigeau-06134a1a-df5e-43c6-9622-ca7f946faa88.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Jacinda_Morigeau"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Jacinda_Morigeau"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/215711/jacinda-morigeau"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.legmt.gov/legislators/1505"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/jacinda-morigeau-0b402a198"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

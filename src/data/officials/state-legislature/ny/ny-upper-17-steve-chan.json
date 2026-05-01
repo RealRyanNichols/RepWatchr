@@ -1,0 +1,60 @@
+{
+  "id": "steve-chan",
+  "name": "Steve Chan",
+  "firstName": "Steve",
+  "lastName": "Chan",
+  "photo": "/images/officials/state-legislature/ny/steve-chan.jpg",
+  "photoSourceUrl": "https://s3.amazonaws.com/ballotpedia-api4/files/thumbs/200/300/Steve_Chan.png",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-17",
+  "jurisdiction": "New York Senate",
+  "county": [
+    "New York"
+  ],
+  "termStart": "2025-01-01",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 615, Legislative Office Building, Albany, NY 12247",
+    "phone": "518-455-3401",
+    "email": "chan@nysenate.gov",
+    "website": "https://www.nysenate.gov/senators/stephen-t-chan"
+  },
+  "bio": "Steve Chan serves as State Senator for New York Senate District 17. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "NY",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.nysenate.gov/senators/stephen-t-chan"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ny/legislature/Steve-Chan-8a923d97-c689-4fb5-ac61-7b5e4ee950dd.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://s3.amazonaws.com/ballotpedia-api4/files/thumbs/200/300/Steve_Chan.png"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Steve_Chan"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Steve_Chan_(American_politician)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/218015/stephen-chan"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/steven-chan-17748216"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

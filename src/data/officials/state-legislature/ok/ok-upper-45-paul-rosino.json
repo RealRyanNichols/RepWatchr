@@ -1,0 +1,65 @@
+{
+  "id": "paul-rosino",
+  "name": "Paul Rosino",
+  "firstName": "Paul",
+  "lastName": "Rosino",
+  "party": "R",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-45",
+  "jurisdiction": "Oklahoma Senate",
+  "county": [
+    "Oklahoma"
+  ],
+  "termStart": "2017-11-22",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 232, 2300 N. Lincoln Blvd., Oklahoma City, OK 73105",
+    "phone": "405-521-5618",
+    "email": "rosino@oksenate.gov",
+    "website": "https://oksenate.gov/contact-senator?sid=1902"
+  },
+  "bio": "Paul Rosino serves as State Senator for Oklahoma Senate District 45. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "OK",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://oksenate.gov/contact-senator?sid=1902"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ok/legislature/Paul-Rosino-0388a9a8-8de3-4620-8c44-e887e0f1cecd.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Paul_Rosino"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Paul_Rosino"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/176478/paul-rosino"
+    },
+    {
+      "title": "Public source",
+      "url": "https://oksenate.gov/Senators/biographies/rosino_bio.aspx"
+    },
+    {
+      "title": "Public source",
+      "url": "https://oksenate.gov/Senators/biographies/rosino_bio.html"
+    },
+    {
+      "title": "Public source",
+      "url": "https://oksenate.gov/senators/paul-rosino"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/paul-rosino-4339846"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

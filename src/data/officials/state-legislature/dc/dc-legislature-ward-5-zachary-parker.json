@@ -1,0 +1,72 @@
+{
+  "id": "zachary-parker",
+  "name": "Zachary Parker",
+  "firstName": "Zachary",
+  "lastName": "Parker",
+  "photo": "/images/officials/state-legislature/dc/zachary-parker.jpg",
+  "photoSourceUrl": "https://dccouncil.gov/wp-content/uploads/2023/01/Zachary-Parker-Headshot-75x75-c-default.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "Councilmember",
+  "district": "Ward 5",
+  "jurisdiction": "Council of the District of Columbia",
+  "county": [
+    "District of Columbia"
+  ],
+  "termStart": "2023-01-02",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "1350 Pennsylvania Ave. NW Suite 102, Washington, DC 20004",
+    "phone": "202-724-8028",
+    "email": "zparker@dccouncil.gov",
+    "website": "https://dccouncil.gov/council/ward-5-councilmember-zachary-parker/"
+  },
+  "bio": "Zachary Parker serves as Councilmember for Council of the District of Columbia District Ward 5. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "DC",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://dccouncil.gov/council/ward-5-councilmember-zachary-parker/"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/dc/legislature/Zachary-Parker-30cb555a-f684-418e-8b63-8101e7a34552.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://dccouncil.gov/wp-content/uploads/2023/01/Zachary-Parker-Headshot-75x75-c-default.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Zachary_Parker_(District_of_Columbia)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://dccouncil.gov/council/ward-5-councilmember-zachary-parker"
+    },
+    {
+      "title": "Public source",
+      "url": "https://dccouncil.us/councilmembers"
+    },
+    {
+      "title": "Public source",
+      "url": "https://dccouncil.us/councilmembers/"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/zachary-parker-673a93b"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.zacharyforward5.com/about"
+    },
+    {
+      "title": "Public source",
+      "url": "https://zacharyparkerward5.com"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

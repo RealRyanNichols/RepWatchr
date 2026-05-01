@@ -1,0 +1,77 @@
+{
+  "id": "justin-boyd",
+  "name": "Justin Boyd",
+  "firstName": "Justin",
+  "lastName": "Boyd",
+  "photo": "/images/officials/state-legislature/ar/justin-boyd.jpg",
+  "photoSourceUrl": "https://www.arkleg.state.ar.us/Content/photos/2023/Senate/634_sm.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-27",
+  "jurisdiction": "Arkansas Senate",
+  "county": [
+    "Arkansas"
+  ],
+  "termStart": "2023-01-09",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "State Capitol Building 500 Woodlane St., Suite 320, Little Rock, AR 72201",
+    "phone": "501-682-2902",
+    "email": "justin.boyd@senate.ar.gov",
+    "website": "https://arkleg.state.ar.us/Legislators/Detail?member=J.+Boyd",
+    "socialMedia": {
+      "x": "https://x.com/JustinBoydAR",
+      "twitter": "https://x.com/JustinBoydAR",
+      "facebook": "https://facebook.com/boyd4AR"
+    }
+  },
+  "bio": "Justin Boyd serves as State Senator for Arkansas Senate District 27. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "AR",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://arkleg.state.ar.us/Legislators/Detail?member=J.+Boyd"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ar/legislature/Justin-Boyd-fb2fcf8c-ed42-46f0-b473-4940692f8e40.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://www.arkleg.state.ar.us/Content/photos/2023/Senate/634_sm.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Justin_Boyd"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Justin_Boyd_(politician)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://senate.arkansas.gov/senators/634"
+    },
+    {
+      "title": "Public source",
+      "url": "https://senate.arkansas.gov/senators/justin-boyd"
+    },
+    {
+      "title": "Public source",
+      "url": "https://senate.arkansas.gov/senators/justin-boyd/"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.arkleg.state.ar.us/Legislators/Detail?member=Boyd&ddBienniumSession=2019%2F2020F"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.arkleg.state.ar.us/Legislators/Detail?member=Boyd&ddBienniumSession=2021%2F2021R"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

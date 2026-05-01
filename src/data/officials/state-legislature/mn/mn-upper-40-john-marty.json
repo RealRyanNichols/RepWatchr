@@ -1,0 +1,72 @@
+{
+  "id": "john-marty",
+  "name": "John Marty",
+  "firstName": "John",
+  "lastName": "Marty",
+  "photo": "/images/officials/state-legislature/mn/john-marty.jpg",
+  "photoSourceUrl": "https://www.senate.mn/graphics/40Marty.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-40",
+  "jurisdiction": "Minnesota Senate",
+  "county": [
+    "Minnesota"
+  ],
+  "termStart": "2023-01-03",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 3235, Minnesota Senate Building 95 University Ave. West, St. Paul, MN 55155",
+    "phone": "651-296-5645",
+    "email": "sen.john.mcguire@senate.mn",
+    "website": "https://www.johnmarty.org/"
+  },
+  "bio": "John Marty serves as State Senator for Minnesota Senate District 40. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "MN",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.johnmarty.org/"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/mn/legislature/John-Marty-4acf27d9-edd4-4f04-97c7-164390a5664b.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://www.senate.mn/graphics/40Marty.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/John_Marty"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/John_Marty"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/3909/john-marty"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.johnmarty.org"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.johnmarty.org/meet-john"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/senatormarty"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.senate.mn/api/members"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

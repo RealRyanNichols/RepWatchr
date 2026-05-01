@@ -1,0 +1,52 @@
+{
+  "id": "david-wasinger",
+  "name": "David Wasinger",
+  "firstName": "David",
+  "lastName": "Wasinger",
+  "photo": "/images/officials/state-executive/mo/david-wasinger.jpg",
+  "photoSourceUrl": "https://ltgov.mo.gov/wp-content/uploads/2025/06/cropped-Lt-Gov-photo-scaled-1.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "Lieutenant Governor",
+  "district": "Missouri",
+  "jurisdiction": "Missouri statewide public office",
+  "county": [
+    "Missouri"
+  ],
+  "termStart": "2025-01-13",
+  "termEnd": "2029-01-08",
+  "contactInfo": {
+    "office": "State Capitol Building, Room 224; Jefferson City, MO 65101",
+    "phone": "573-751-4727",
+    "email": "ltgovinfo@ltgov.mo.gov",
+    "website": "https://ltgov.mo.gov/"
+  },
+  "bio": "David Wasinger is listed as Lieutenant Governor for Missouri. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "MO",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://ltgov.mo.gov/"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/mo/executive/David-Wasinger-43d8764b-a3b7-432a-8750-ae0e9165ecf9.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://ltgov.mo.gov/wp-content/uploads/2025/06/cropped-Lt-Gov-photo-scaled-1.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ltgov.mo.gov/biography/"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/David_Wasinger"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

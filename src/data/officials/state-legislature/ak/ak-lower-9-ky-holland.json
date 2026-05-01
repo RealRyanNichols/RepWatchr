@@ -1,0 +1,64 @@
+{
+  "id": "ky-holland",
+  "name": "Ky Holland",
+  "firstName": "Ky",
+  "lastName": "Holland",
+  "photo": "/images/officials/state-legislature/ak/ky-holland.jpg",
+  "photoSourceUrl": "https://kyholland.com/wp-content/uploads/2024/04/Ky-headshot-new.jpeg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "NP",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-9",
+  "jurisdiction": "Alaska House of Representatives",
+  "county": [
+    "Alaska"
+  ],
+  "termStart": "2025-01-21",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "State Capitol Room 418, 120 4th St., Juneau, AK 99801",
+    "phone": "907-465-4945",
+    "email": "representative.ky.holland@akleg.gov",
+    "website": "https://www.akleg.gov/basis/Member/Detail/34?code=hla"
+  },
+  "bio": "Ky Holland serves as State Representative for Alaska House of Representatives District 9. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "AK",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.akleg.gov/basis/Member/Detail/34?code=hla"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ak/legislature/Ky-Holland-a669e6fd-ba4c-42db-b2e8-079600a60f58.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://kyholland.com/wp-content/uploads/2024/04/Ky-headshot-new.jpeg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Ky_Holland"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Ky_Holland"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/219598/ky-holland"
+    },
+    {
+      "title": "Public source",
+      "url": "https://kyholland.com"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/kyholland"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

@@ -1,0 +1,49 @@
+{
+  "id": "ed-rodriguez",
+  "name": "Ed Rodriguez",
+  "firstName": "Ed",
+  "lastName": "Rodriguez",
+  "party": "D",
+  "level": "state",
+  "position": "Assemblymember",
+  "district": "HD-20",
+  "jurisdiction": "New Jersey General Assembly",
+  "county": [
+    "New Jersey"
+  ],
+  "termStart": "2026-01-13",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "P.O. Box 068 State House, 145 W. State St., Trenton, NJ 08625",
+    "phone": "609-847-3905",
+    "email": "asmrodriguez@njleg.org",
+    "website": "https://njleg.state.nj.us/legislative-roster/503/assemblyman-rodriguez"
+  },
+  "bio": "Ed Rodriguez serves as Assemblymember for New Jersey General Assembly District 20. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "NJ",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://njleg.state.nj.us/legislative-roster/503/assemblyman-rodriguez"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/nj/legislature/Ed-Rodriguez-c17427d2-58a7-45f5-aa6c-a70ca914f8de.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Ed_Rodriguez_(New_Jersey)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.assemblydems.com/399/Ed-Rodriguez---District-20"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/eduardo-rodriguez-69885a3"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

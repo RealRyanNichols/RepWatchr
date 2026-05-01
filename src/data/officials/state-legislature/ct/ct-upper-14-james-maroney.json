@@ -1,0 +1,69 @@
+{
+  "id": "james-maroney",
+  "name": "James Maroney",
+  "firstName": "James",
+  "lastName": "Maroney",
+  "party": "D",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-14",
+  "jurisdiction": "Connecticut Senate",
+  "county": [
+    "Connecticut"
+  ],
+  "termStart": "2019-01-09",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 3500, Legislative Office Building 300 Capitol Ave., Hartford, CT 06106",
+    "phone": "860-240-0381",
+    "email": "maroney@senatedems.ct.gov",
+    "website": "https://cga.ct.gov/asp/CGABillStatus/CGAMemberBills.asp?dist_code=%27S14%27&dist_name=Maroney,%20James%20J."
+  },
+  "bio": "James Maroney serves as State Senator for Connecticut Senate District 14. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "CT",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://cga.ct.gov/asp/CGABillStatus/CGAMemberBills.asp?dist_code=%27S14%27&dist_name=Maroney,%20James%20J."
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ct/legislature/James-J-Maroney-f37ce303-e106-4972-b453-4287b7915762.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "ftp://ftp.cga.ct.gov/pub/data/LegislatorDatabase.csv"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/James_Maroney"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/James_Maroney"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/141199/james-maroney"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/jamesmaroneyct"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.senatedems.ct.gov/maroney"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.senatedems.ct.gov/senator/james-maroney"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.senatedems.ct.gov/senator/james-maroney/bio"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

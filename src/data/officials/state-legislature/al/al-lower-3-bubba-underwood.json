@@ -1,0 +1,64 @@
+{
+  "id": "bubba-underwood",
+  "name": "Bubba Underwood",
+  "firstName": "Bubba",
+  "lastName": "Underwood",
+  "photo": "/images/officials/state-legislature/al/bubba-underwood.jpg",
+  "photoSourceUrl": "https://www.legislature.state.al.us/pdf/house/members/Underwood_3.png",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-3",
+  "jurisdiction": "Alabama House of Representatives",
+  "county": [
+    "Alabama"
+  ],
+  "termStart": "2022-11-09",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 525-B, 11 S. Union St., Montgomery, AL 36130",
+    "phone": "334-261-0435",
+    "email": "kerryucpa@me.com",
+    "website": "https://alison.legislature.state.al.us/house-leaders-members"
+  },
+  "bio": "Bubba Underwood serves as State Representative for Alabama House of Representatives District 3. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "AL",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://alison.legislature.state.al.us/house-leaders-members"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/al/legislature/Kerry-Bubba-Underwood-3828d8e6-1f22-4cb1-be51-b3d3a0c36b98.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://www.legislature.state.al.us/pdf/house/members/Underwood_3.png"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Kerry_Underwood"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Kerry_Underwood"
+    },
+    {
+      "title": "graphql endpoint for member information",
+      "url": "https://gql.api.alison.legislature.state.al.us/graphql"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/201817/kerry-underwood"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/kerry-underwood-79689563"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

@@ -1,0 +1,57 @@
+{
+  "id": "curtis-trent",
+  "name": "Curtis Trent",
+  "firstName": "Curtis",
+  "lastName": "Trent",
+  "party": "R",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-20",
+  "jurisdiction": "Missouri Senate",
+  "county": [
+    "Missouri"
+  ],
+  "termStart": "2023-01-04",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 323, 201 W. Capitol Ave., Jefferson City, MO 65101",
+    "phone": "573-751-1503",
+    "email": "curtis.trent@senate.mo.gov",
+    "website": "https://www.senate.mo.gov/Senators/Member/20"
+  },
+  "bio": "Curtis Trent serves as State Senator for Missouri Senate District 20. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "MO",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.senate.mo.gov/Senators/Member/20"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/mo/legislature/Curtis-Trent-c5e38dee-7f82-4795-a134-b984b6878458.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Curtis_Trent"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Curtis_Trent"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/169927/curtis-trent"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/curtis-trent-a75a6629"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.senate.mo.gov/Senators/Member?id=275"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

@@ -1,0 +1,64 @@
+{
+  "id": "tom-hatcher",
+  "name": "Tom Hatcher",
+  "firstName": "Tom",
+  "lastName": "Hatcher",
+  "photo": "/images/officials/state-legislature/tn/tom-hatcher.jpg",
+  "photoSourceUrl": "https://images.squarespace-cdn.com/content/v1/6570c60e478ebd26777cfd83/7e2e888c-6da6-4b8f-a79f-279c8e5cd2c2/365772199_7298985810116788_8248702436261909523_n.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-2",
+  "jurisdiction": "Tennessee Senate",
+  "county": [
+    "Tennessee"
+  ],
+  "termStart": "2024-11-05",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 752, Cordell Hull Building 425 Rep. John Lewis Way North, Nashville, TN 37243",
+    "phone": "615-741-0981",
+    "email": "sen.tom.hatcher@capitol.tn.gov",
+    "website": "https://wapp.capitol.tn.gov/apps/legislatorinfo/member.aspx?district=S2&ga=114"
+  },
+  "bio": "Tom Hatcher serves as State Senator for Tennessee Senate District 2. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "TN",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://wapp.capitol.tn.gov/apps/legislatorinfo/member.aspx?district=S2&ga=114"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/tn/legislature/Tom-Hatcher-6567e0e2-9ecf-4129-b838-e3618b4cf786.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://images.squarespace-cdn.com/content/v1/6570c60e478ebd26777cfd83/7e2e888c-6da6-4b8f-a79f-279c8e5cd2c2/365772199_7298985810116788_8248702436261909523_n.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Tom_Hatcher"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Tom_Hatcher_(politician)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/216363/tom-hatcher"
+    },
+    {
+      "title": "Public source",
+      "url": "https://wapp.capitol.tn.gov/apps/LegislatorInfo/Member?district=S2&ga=114"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/tom-hatcher-599864b"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

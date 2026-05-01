@@ -1,0 +1,64 @@
+{
+  "id": "gladys-robinson",
+  "name": "Gladys Robinson",
+  "firstName": "Gladys",
+  "lastName": "Robinson",
+  "photo": "/images/officials/state-legislature/nc/gladys-robinson.jpg",
+  "photoSourceUrl": "https://www.ncleg.gov/Members/MemberImage/S/364/Low",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-28",
+  "jurisdiction": "North Carolina Senate",
+  "county": [
+    "North Carolina"
+  ],
+  "termStart": "2011-01-01",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 1028, North Carolina Legislative Building 16 W. Jones St., Raleigh, NC 27601",
+    "phone": "919-715-3042",
+    "email": "gladys.robinson@ncleg.gov",
+    "website": "https://www.ncleg.gov/Members/Biography/S/364"
+  },
+  "bio": "Gladys Robinson serves as State Senator for North Carolina Senate District 28. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "NC",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.ncleg.gov/Members/Biography/S/364"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/nc/legislature/Gladys-A-Robinson-af3f63da-d39a-4542-b0f2-41f118d96f55.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://www.ncleg.gov/Members/MemberImage/S/364/Low"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Gladys_Robinson"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Gladys_A._Robinson"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/119361/gladys-robinson"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/gladys-robinson-5290921b"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.ncleg.gov/Members/MemberTable/S"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

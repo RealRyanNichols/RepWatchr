@@ -1,0 +1,69 @@
+{
+  "id": "mark-paige",
+  "name": "Mark Paige",
+  "firstName": "Mark",
+  "lastName": "Paige",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-Rockingham 11",
+  "jurisdiction": "New Hampshire House of Representatives",
+  "county": [
+    "New Hampshire"
+  ],
+  "termStart": "2022-12-07",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "State House 107 N. Main St., Concord, NH 03301",
+    "phone": "603-271-3661",
+    "email": "mark.paige@gc.nh.gov",
+    "website": "https://gc.nh.gov/house/members/member.aspx?pid=9942"
+  },
+  "bio": "Mark Paige serves as State Representative for New Hampshire House of Representatives District Rockingham 11. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "NH",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://gc.nh.gov/house/members/member.aspx?pid=9942"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/nh/legislature/Mark-Paige-8c6eeb07-d048-47fd-9f0e-718460e2edc9.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Mark_Paige"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Mark_Paige"
+    },
+    {
+      "title": "Public source",
+      "url": "https://gencourt.state.nh.us/downloads/Members.txt"
+    },
+    {
+      "title": "Public source",
+      "url": "https://gencourt.state.nh.us/downloads/members.txt"
+    },
+    {
+      "title": "Public source",
+      "url": "https://gencourt.state.nh.us/house/members/member.aspx?pid=9942"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/194880/mark-paige"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.gencourt.state.nh.us/house/members/member.aspx?pid=9942"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/mark-paige-81a34111"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

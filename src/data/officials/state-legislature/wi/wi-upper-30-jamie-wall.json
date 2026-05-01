@@ -1,0 +1,64 @@
+{
+  "id": "jamie-wall",
+  "name": "Jamie Wall",
+  "firstName": "Jamie",
+  "lastName": "Wall",
+  "photo": "/images/officials/state-legislature/wi/jamie-wall.jpg",
+  "photoSourceUrl": "https://s3.amazonaws.com/ballotpedia-api4/files/thumbs/200/300/JamieWall2024.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-30",
+  "jurisdiction": "Wisconsin Senate",
+  "county": [
+    "Wisconsin"
+  ],
+  "termStart": "2025-01-06",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "State Capitol Room 3 South, P.O. Box 7882 , 2 E. Main St., Madison, WI 53707",
+    "phone": "608-266-0484",
+    "email": "sen.wall@legis.wisconsin.gov",
+    "website": "https://docs.legis.wisconsin.gov/2025/legislators/senate/2842"
+  },
+  "bio": "Jamie Wall serves as State Senator for Wisconsin Senate District 30. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "WI",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://docs.legis.wisconsin.gov/2025/legislators/senate/2842"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/wi/legislature/Jamie-Wall-5d4675a4-34f3-47ea-8821-69669a2a8d05.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://s3.amazonaws.com/ballotpedia-api4/files/thumbs/200/300/JamieWall2024.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Jamie_Wall"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Jamie_Wall_(politician)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/68637/jamie-wall"
+    },
+    {
+      "title": "Public source",
+      "url": "https://legis.wisconsin.gov/senate/30/wall"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/jamiewall1"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

@@ -1,0 +1,72 @@
+{
+  "id": "george-rauscher",
+  "name": "George Rauscher",
+  "firstName": "George",
+  "lastName": "Rauscher",
+  "photo": "/images/officials/state-legislature/ak/george-rauscher.jpg",
+  "photoSourceUrl": "http://akleg.gov/images/legislators/450x600/RAU.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-O",
+  "jurisdiction": "Alaska Senate",
+  "county": [
+    "Alaska"
+  ],
+  "termStart": "2025-11-29",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "State Capitol Room 419, 120 4th St., Juneau, AK 99801",
+    "phone": "907-465-4859",
+    "email": "senator.george.rauscher@akleg.gov",
+    "website": "https://akhousemajority.com/rep-rauscher/"
+  },
+  "bio": "George Rauscher serves as State Senator for Alaska Senate District O. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "AK",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://akhousemajority.com/rep-rauscher/"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ak/legislature/George-Rauscher-627922d3-e631-4c32-841f-148f061b0c75.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "http://akleg.gov/images/legislators/450x600/RAU.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://akhousemajority.com/rep-rauscher"
+    },
+    {
+      "title": "Public source",
+      "url": "https://alaskasenateminority.com/senator-george-rauscher"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/George_Rauscher"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/George_Rauscher"
+    },
+    {
+      "title": "Public source",
+      "url": "https://w3.akleg.gov"
+    },
+    {
+      "title": "Public source",
+      "url": "https://w3.akleg.gov/"
+    },
+    {
+      "title": "member list page",
+      "url": "https://www.akleg.gov/basis/mbr_info.asp?session=33"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

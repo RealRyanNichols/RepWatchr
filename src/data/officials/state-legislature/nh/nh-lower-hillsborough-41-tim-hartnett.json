@@ -1,0 +1,60 @@
+{
+  "id": "tim-hartnett",
+  "name": "Tim Hartnett",
+  "firstName": "Tim",
+  "lastName": "Hartnett",
+  "photo": "/images/officials/state-legislature/nh/tim-hartnett.jpg",
+  "photoSourceUrl": "https://www.citizenscount.org/sites/default/files/2024-09/tim-hartnett.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-Hillsborough 41",
+  "jurisdiction": "New Hampshire House of Representatives",
+  "county": [
+    "New Hampshire"
+  ],
+  "termStart": "2024-12-04",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "State House 107 N. Main St., Concord, NH 03301",
+    "phone": "603-271-3661",
+    "email": "tim.hartnett@gc.nh.gov",
+    "website": "https://gc.nh.gov/house/members/member.aspx?pid=11220"
+  },
+  "bio": "Tim Hartnett serves as State Representative for New Hampshire House of Representatives District Hillsborough 41. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "NH",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://gc.nh.gov/house/members/member.aspx?pid=11220"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/nh/legislature/Tim-Hartnett-5b26425f-330d-458b-b8f6-b6a2b1997b41.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://www.citizenscount.org/sites/default/files/2024-09/tim-hartnett.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Tim_Hartnett"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Tim_Hartnett"
+    },
+    {
+      "title": "Public source",
+      "url": "https://gencourt.state.nh.us/house/members/member.aspx?pid=11220"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/219017/tim-hartnett"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

@@ -1,0 +1,72 @@
+{
+  "id": "adline-clarke",
+  "name": "Adline Clarke",
+  "firstName": "Adline",
+  "lastName": "Clarke",
+  "photo": "/images/officials/state-legislature/al/adline-clarke.jpg",
+  "photoSourceUrl": "https://www.legislature.state.al.us/pdf/house/members/Clarke_97.png",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-97",
+  "jurisdiction": "Alabama House of Representatives",
+  "county": [
+    "Alabama"
+  ],
+  "termStart": "2013-05-21",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 537-A, 11 S. Union St., Montgomery, AL 36130",
+    "phone": "334-261-0549",
+    "email": "adline.clarke@alhouse.gov",
+    "website": "https://alison.legislature.state.al.us/house-leaders-members"
+  },
+  "bio": "Adline Clarke serves as State Representative for Alabama House of Representatives District 97. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "AL",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://alison.legislature.state.al.us/house-leaders-members"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/al/legislature/Adline-Clarke-4cb1aeb5-d822-4f2c-a7e6-ae2a132acf17.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://www.legislature.state.al.us/pdf/house/members/Clarke_97.png"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Adline_C._Clarke"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Adline_Clarke"
+    },
+    {
+      "title": "graphql endpoint for member information",
+      "url": "https://gql.api.alison.legislature.state.al.us/graphql"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/144285/adline-clarke"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.legislature.state.al.us/aliswww/ISD/ALRepresentative.aspx?NAME=Clarke&OID_SPONSOR=100579&OID_PERSON=7425&SESSNAME="
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.legislature.state.al.us/aliswww/ISD/ALRepresentative.aspx?OID_SPONSOR=100579&OID_PERSON=7425"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.legislature.state.al.us/aliswww/ISD/House/ALRepresentatives.aspx"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

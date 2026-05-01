@@ -1,0 +1,72 @@
+{
+  "id": "arthur-orr",
+  "name": "Arthur Orr",
+  "firstName": "Arthur",
+  "lastName": "Orr",
+  "photo": "/images/officials/state-legislature/al/arthur-orr.jpg",
+  "photoSourceUrl": "https://www.legislature.state.al.us/pdf/senate/members/Orr_3.png",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-3",
+  "jurisdiction": "Alabama Senate",
+  "county": [
+    "Alabama"
+  ],
+  "termStart": "2006-11-07",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 727, 11 S. Union St., Montgomery, AL 36130",
+    "phone": "334-261-0758",
+    "email": "arthur.orr@alsenate.gov",
+    "website": "https://alison.legislature.state.al.us/senate-leaders-members"
+  },
+  "bio": "Arthur Orr serves as State Senator for Alabama Senate District 3. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "AL",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://alison.legislature.state.al.us/senate-leaders-members"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/al/legislature/Arthur-Orr-b38546ec-f8fb-4e99-8e0c-46715b2e8578.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://www.legislature.state.al.us/pdf/senate/members/Orr_3.png"
+    },
+    {
+      "title": "Public source",
+      "url": "https://alsenaterepublicans.org/representatives/003-arthur-orr"
+    },
+    {
+      "title": "Public source",
+      "url": "https://arthurorr.com"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Arthur_Orr"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Arthur_Orr"
+    },
+    {
+      "title": "graphql endpoint for member information",
+      "url": "https://gql.api.alison.legislature.state.al.us/graphql"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/57118/arthur-orr"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.legislature.state.al.us/aliswww/ISD/ALSenator.aspx?NAME=Orr&OID_SPONSOR=100446&OID_PERSON=5527&SESSNAME=Regular%20Session%202022"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

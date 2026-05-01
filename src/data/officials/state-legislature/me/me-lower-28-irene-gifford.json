@@ -1,0 +1,56 @@
+{
+  "id": "irene-gifford",
+  "name": "Irene Gifford",
+  "firstName": "Irene",
+  "lastName": "Gifford",
+  "photo": "/images/officials/state-legislature/me/irene-gifford.jpg",
+  "photoSourceUrl": "https://legislature.maine.gov/house/house/Repository/MemberProfiles/af5019e3-ac57-47c4-bc0e-b9eb39973a6f_GIFFORD.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-28",
+  "jurisdiction": "Maine House of Representatives",
+  "county": [
+    "Maine"
+  ],
+  "termStart": "2022-12-07",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 332, House Republican Office 2 State House Station, Augusta, ME 04333",
+    "phone": "207-287-1440",
+    "email": "irene.gifford@legislature.maine.gov",
+    "website": "https://legislature.maine.gov/house/house/MemberProfiles/Details/1465"
+  },
+  "bio": "Irene Gifford serves as State Representative for Maine House of Representatives District 28. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "ME",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://legislature.maine.gov/house/house/MemberProfiles/Details/1465"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/me/legislature/Irene-A-Gifford-e603c478-27c7-4f68-ba31-4ef3732ab916.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://legislature.maine.gov/house/house/Repository/MemberProfiles/af5019e3-ac57-47c4-bc0e-b9eb39973a6f_GIFFORD.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Irene_Gifford"
+    },
+    {
+      "title": "Public source",
+      "url": "https://legislature.maine.gov/house/house/MemberProfiles/ListAlpha"
+    },
+    {
+      "title": "Public source",
+      "url": "https://mainehousegop.org/members/gifford-irene"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

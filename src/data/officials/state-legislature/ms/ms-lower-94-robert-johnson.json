@@ -1,0 +1,64 @@
+{
+  "id": "robert-johnson",
+  "name": "Robert Johnson",
+  "firstName": "Robert",
+  "lastName": "Johnson",
+  "photo": "/images/officials/state-legislature/ms/robert-johnson.jpg",
+  "photoSourceUrl": "http://billstatus.ls.state.ms.us/members/house/johnson.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-94",
+  "jurisdiction": "Mississippi House of Representatives",
+  "county": [
+    "Mississippi"
+  ],
+  "termStart": "2004-01-06",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "State Capitol Room 102-C, 400 High St., Jackson, MS 39201",
+    "phone": "601-359-3252",
+    "email": "rjohnson@house.ms.gov",
+    "website": "https://billstatus.ls.state.ms.us/members/house/johnson.xml"
+  },
+  "bio": "Robert Johnson serves as State Representative for Mississippi House of Representatives District 94. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "MS",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://billstatus.ls.state.ms.us/members/house/johnson.xml"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ms/legislature/Robert-L-Johnson-III-0de22359-9403-4bec-917a-985b26fd45ff.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "http://billstatus.ls.state.ms.us/members/house/johnson.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Robert_Johnson,_III"
+    },
+    {
+      "title": "Public source",
+      "url": "https://billstatus.ls.state.ms.us/members/house/johnson_(94th).xml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://billstatus.ls.state.ms.us/members/hr_membs.xml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Robert_Johnson_III"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/3630/robert-johnson-iii"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

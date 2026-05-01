@@ -1,0 +1,72 @@
+{
+  "id": "kyle-gay",
+  "name": "Kyle Gay",
+  "firstName": "Kyle",
+  "lastName": "Gay",
+  "photo": "/images/officials/state-executive/de/kyle-gay.jpg",
+  "photoSourceUrl": "https://ltgov.delaware.gov/wp-content/uploads/sites/222/2024/12/kyle-evans-gay-hero-landscape.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "Lieutenant Governor",
+  "district": "Delaware",
+  "jurisdiction": "Delaware statewide public office",
+  "county": [
+    "Delaware"
+  ],
+  "termStart": "2025-01-21",
+  "termEnd": "2029-01-16",
+  "contactInfo": {
+    "office": "150 Martin Luther King Jr Blvd South, 3rd Floor; Dover, DE 19901",
+    "phone": "302-744-4333",
+    "email": "kyle.gay@delaware.gov",
+    "website": "https://legis.delaware.gov/LegislatorDetail?personId=13474"
+  },
+  "bio": "Kyle Gay is listed as Lieutenant Governor for Delaware. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "DE",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://legis.delaware.gov/LegislatorDetail?personId=13474"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/de/executive/Kyle-Evans-Gay-96f29b7f-bd5a-4a83-8ed0-7a5c6d3c6036.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://ltgov.delaware.gov/wp-content/uploads/sites/222/2024/12/kyle-evans-gay-hero-landscape.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Kyle_Evans_Gay"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Kyle_Evans_Gay"
+    },
+    {
+      "title": "Public source",
+      "url": "https://legis.delaware.gov/AssemblyMember/151/Gay"
+    },
+    {
+      "title": "Public source",
+      "url": "https://legis.delaware.gov/json/Senate/GetSenators"
+    },
+    {
+      "title": "legislator list page",
+      "url": "https://legis.delaware.gov/Senate"
+    },
+    {
+      "title": "Public source",
+      "url": "https://senatedems.delaware.gov/members/senate-district-5"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.connollygallagher.com/attorneys/kyle-gay"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

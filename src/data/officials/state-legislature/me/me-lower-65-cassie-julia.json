@@ -1,0 +1,52 @@
+{
+  "id": "cassie-julia",
+  "name": "Cassie Julia",
+  "firstName": "Cassie",
+  "lastName": "Julia",
+  "photo": "/images/officials/state-legislature/me/cassie-julia.jpg",
+  "photoSourceUrl": "https://i0.wp.com/bdn-data.s3.amazonaws.com/uploads/2024/06/julia-1.jpg?w=1199&ssl=1",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-65",
+  "jurisdiction": "Maine House of Representatives",
+  "county": [
+    "Maine"
+  ],
+  "termStart": "2024-12-03",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 333, House Democratic Office 2 State House Station, Augusta, ME 04333",
+    "phone": "800-423-2900",
+    "email": "cassie.julia@legislature.maine.gov",
+    "website": "https://legislature.maine.gov/house/house/MemberProfiles/Details/3122"
+  },
+  "bio": "Cassie Julia serves as State Representative for Maine House of Representatives District 65. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "ME",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://legislature.maine.gov/house/house/MemberProfiles/Details/3122"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/me/legislature/Cassie-Julia-e1e7623e-aee4-4631-942c-e65c56d514c3.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://i0.wp.com/bdn-data.s3.amazonaws.com/uploads/2024/06/julia-1.jpg?w=1199&ssl=1"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Cassie_Julia"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.maine.gov/housedems/node/4101"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

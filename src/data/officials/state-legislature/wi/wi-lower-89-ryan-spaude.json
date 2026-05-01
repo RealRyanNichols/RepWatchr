@@ -1,0 +1,58 @@
+{
+  "id": "ryan-spaude",
+  "name": "Ryan Spaude",
+  "firstName": "Ryan",
+  "lastName": "Spaude",
+  "photo": "/images/officials/state-legislature/wi/ryan-spaude.jpg",
+  "photoSourceUrl": "https://s3.amazonaws.com/ballotpedia-api4/files/thumbs/200/300/Ryan_Spaude_20240808_093050.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "Assemblymember",
+  "district": "HD-89",
+  "jurisdiction": "Wisconsin State Assembly",
+  "county": [
+    "Wisconsin"
+  ],
+  "termStart": "2025-01-06",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "email": "rep.spaude@legis.wisconsin.gov",
+    "website": "https://docs.legis.wisconsin.gov/2025/legislators/assembly/2901"
+  },
+  "bio": "Ryan Spaude serves as Assemblymember for Wisconsin State Assembly District 89. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "WI",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://docs.legis.wisconsin.gov/2025/legislators/assembly/2901"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/wi/legislature/Ryan-Spaude-3d4582f2-ed69-468c-ad02-33cbd612199d.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://s3.amazonaws.com/ballotpedia-api4/files/thumbs/200/300/Ryan_Spaude_20240808_093050.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Ryan_Spaude"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Ryan_Spaude"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/218678/ryan-spaude"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/ryan-spaude-6b29904a"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

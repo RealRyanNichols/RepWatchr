@@ -1,0 +1,69 @@
+{
+  "id": "robert-peters",
+  "name": "Robert Peters",
+  "firstName": "Robert",
+  "lastName": "Peters",
+  "party": "D",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-13",
+  "jurisdiction": "Illinois Senate",
+  "county": [
+    "Illinois"
+  ],
+  "termStart": "2019-01-06",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 635, Capitol Building, Springfield, IL 62706",
+    "phone": "217-782-5338",
+    "email": "info@senatorrobertpeters.com",
+    "website": "https://ilga.gov/senate/Senator.asp?GA=101&MemberID=2729"
+  },
+  "bio": "Robert Peters serves as State Senator for Illinois Senate District 13. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "IL",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://ilga.gov/senate/Senator.asp?GA=101&MemberID=2729"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/il/legislature/Robert-Peters-86ee52dd-dc32-4895-bf16-746eb76df012.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Robert_Peters_(Illinois)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Robert_Peters_(politician)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ilga.gov/senate/default.asp?GA=101"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ilga.gov/senate/default.asp?GA=102"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ilga.gov/senate/default.asp?GA=103"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ilga.gov/senate/Senator.asp?GA=102&MemberID=2934"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ilga.gov/senate/Senator.asp?GA=103&MemberID=3132"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.ilga.gov/Senate/Members/Details/3343"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

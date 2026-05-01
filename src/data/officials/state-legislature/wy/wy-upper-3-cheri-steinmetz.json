@@ -1,0 +1,71 @@
+{
+  "id": "cheri-steinmetz",
+  "name": "Cheri Steinmetz",
+  "firstName": "Cheri",
+  "lastName": "Steinmetz",
+  "photo": "/images/officials/state-legislature/wy/cheri-steinmetz.jpg",
+  "photoSourceUrl": "https://wyoleg.gov/LegislatorSummary/Photos/68th-SteinmetzCheri.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-3",
+  "jurisdiction": "Wyoming Senate",
+  "county": [
+    "Wyoming"
+  ],
+  "termStart": "2019-01-07",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "State Capitol 200 W. 24th St., Cheyenne, WY 82002",
+    "email": "cheri.steinmetz@wyoleg.gov",
+    "website": "https://www.wyoleg.gov/Legislators/2023/S/2011"
+  },
+  "bio": "Cheri Steinmetz serves as State Senator for Wyoming Senate District 3. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "WY",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.wyoleg.gov/Legislators/2023/S/2011"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/wy/legislature/Cheri-Steinmetz-9fe08ab5-b31c-4f7b-bb23-c7aff3cd3e4d.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://wyoleg.gov/LegislatorSummary/Photos/68th-SteinmetzCheri.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Cheri_Steinmetz"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Cheri_Steinmetz"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/127266/cheri-steinmetz"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.wyoleg.gov/Legislators/2025/S/2011"
+    },
+    {
+      "title": "Public source",
+      "url": "https://wyoleg.gov/Legislators/2019/R/2011"
+    },
+    {
+      "title": "Public source",
+      "url": "https://wyoleg.gov/Legislators/2021/R/2011"
+    },
+    {
+      "title": "Public source",
+      "url": "https://wyoleg.gov/LsoService/api/legislator/2011"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

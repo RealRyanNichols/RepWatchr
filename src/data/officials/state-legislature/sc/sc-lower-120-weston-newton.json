@@ -1,0 +1,65 @@
+{
+  "id": "weston-newton",
+  "name": "Weston Newton",
+  "firstName": "Weston",
+  "lastName": "Newton",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-120",
+  "jurisdiction": "South Carolina House of Representatives",
+  "county": [
+    "South Carolina"
+  ],
+  "termStart": "",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 512, Blatt Building P.O. Box 11867, Columbia, SC 29201",
+    "phone": "803-734-3120",
+    "email": "westonnewton@schouse.gov",
+    "website": "https://scstatehouse.gov/member.php?code=1418749830"
+  },
+  "bio": "Weston Newton serves as State Representative for South Carolina House of Representatives District 120. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "SC",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://scstatehouse.gov/member.php?code=1418749830"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/sc/legislature/Wm-Weston-J-Newton-eba4b1a4-14ca-44dd-93ab-25cdd3cbd5fd.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Weston_Newton"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Weston_J._Newton"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/95106/weston-newton"
+    },
+    {
+      "title": "Public source",
+      "url": "https://scstatehouse.gov/member.php?chamber=H"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/weston-newton-18431247"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.scstatehouse.gov/member.php?chamber=H"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.scstatehouse.gov/member.php?code=1418749830"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

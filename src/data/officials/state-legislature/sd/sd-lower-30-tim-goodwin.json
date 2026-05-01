@@ -1,0 +1,67 @@
+{
+  "id": "tim-goodwin",
+  "name": "Tim Goodwin",
+  "firstName": "Tim",
+  "lastName": "Goodwin",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-30",
+  "jurisdiction": "South Dakota House of Representatives",
+  "county": [
+    "South Dakota"
+  ],
+  "termStart": "2025-01-14",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "email": "tim.goodwin@sdlegislature.gov",
+    "website": "https://sdlegislature.gov/Legislators/Legislators/MemberDetail.aspx?Member=1444&Session=2019"
+  },
+  "bio": "Tim Goodwin serves as State Representative for South Dakota House of Representatives District 30. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "SD",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://sdlegislature.gov/Legislators/Legislators/MemberDetail.aspx?Member=1444&Session=2019"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/sd/legislature/Tim-Goodwin-e12868fa-61b7-4ad5-9f68-bcfca817057d.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Tim_Goodwin_(South_Dakota)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Tim_Goodwin_(South_Dakota_politician)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/169870/timothy-goodwin"
+    },
+    {
+      "title": "Public source",
+      "url": "https://sdlegislature.gov/Legislators/Legislators/MemberDetail.aspx?Member=1546&Session=2018s"
+    },
+    {
+      "title": "Public source",
+      "url": "https://sdlegislature.gov/Legislators/Profile/1792/Detail"
+    },
+    {
+      "title": "Public source",
+      "url": "https://sdlegislature.gov/Legislators/Profile/4703/Detail"
+    },
+    {
+      "title": "Public source",
+      "url": "https://sdlegislature.gov/Legislators/Profile/4753/Detail"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.timrgoodwin.com/who-we-are"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

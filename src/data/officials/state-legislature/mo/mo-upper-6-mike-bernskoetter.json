@@ -1,0 +1,65 @@
+{
+  "id": "mike-bernskoetter",
+  "name": "Mike Bernskoetter",
+  "firstName": "Mike",
+  "lastName": "Bernskoetter",
+  "party": "R",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-6",
+  "jurisdiction": "Missouri Senate",
+  "county": [
+    "Missouri"
+  ],
+  "termStart": "2019-01-09",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 416, 201 W. Capitol Ave., Jefferson City, MO 65101",
+    "phone": "573-751-2076",
+    "email": "mike.bernskoetter@senate.mo.gov",
+    "website": "https://www.senate.mo.gov/mem06"
+  },
+  "bio": "Mike Bernskoetter serves as State Senator for Missouri Senate District 6. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "MO",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.senate.mo.gov/mem06"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/mo/legislature/Mike-Bernskoetter-8df40920-38e1-4892-aa6b-764467bf79b7.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Mike_Bernskoetter"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Mike_Bernskoetter"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/124589/mike-bernskoetter"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.senate.mo.gov/senators-listing"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.senate.mo.gov/senators-listing/"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.senate.mo.gov/Senators/Member/06"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.senate.mo.gov/Senators/Member?id=4"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

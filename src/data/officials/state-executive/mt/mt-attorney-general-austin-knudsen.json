@@ -1,0 +1,59 @@
+{
+  "id": "austin-knudsen",
+  "name": "Austin Knudsen",
+  "firstName": "Austin",
+  "lastName": "Knudsen",
+  "photo": "/images/officials/state-executive/mt/austin-knudsen.jpg",
+  "photoSourceUrl": "https://www.naag.org/wp-content/uploads/2021/02/ag-MT-Knudsen.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "Attorney General",
+  "district": "Montana",
+  "jurisdiction": "Montana statewide public office",
+  "county": [
+    "Montana"
+  ],
+  "termStart": "2021-01-04",
+  "termEnd": "2029-01-01",
+  "contactInfo": {
+    "office": "Justice Bldg., 215 N. Sanders; Helena, MT 59620-1401",
+    "phone": "406-444-2026",
+    "website": "https://leg.mt.gov/legislator-information/roster/individual/4776"
+  },
+  "bio": "Austin Knudsen is listed as Attorney General for Montana. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "MT",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://leg.mt.gov/legislator-information/roster/individual/4776"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/mt/executive/Austin-Knudsen-6932f017-6867-409a-8321-6cf9dce312ef.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://www.naag.org/wp-content/uploads/2021/02/ag-MT-Knudsen.jpg"
+    },
+    {
+      "title": "legislator list page",
+      "url": "https://leg.mt.gov/legislator-information/?session_select=111"
+    },
+    {
+      "title": "Public source",
+      "url": "https://dojmt.gov/attorney-generals-office/about-austin-knudsen/"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Austin_Knudsen"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.naag.org/attorney-general/austin-knudsen/"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

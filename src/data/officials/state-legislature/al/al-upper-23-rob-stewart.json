@@ -1,0 +1,64 @@
+{
+  "id": "rob-stewart",
+  "name": "Rob Stewart",
+  "firstName": "Rob",
+  "lastName": "Stewart",
+  "photo": "/images/officials/state-legislature/al/rob-stewart.jpg",
+  "photoSourceUrl": "https://www.legislature.state.al.us/pdf/senate/members/Stewart_23.png",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-23",
+  "jurisdiction": "Alabama Senate",
+  "county": [
+    "Alabama"
+  ],
+  "termStart": "2022-11-09",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 738, 11 S. Union St., Montgomery, AL 36130",
+    "phone": "334-261-0860",
+    "email": "robert.stewart@alsenate.gov",
+    "website": "https://alison.legislature.state.al.us/senate-leaders-members"
+  },
+  "bio": "Rob Stewart serves as State Senator for Alabama Senate District 23. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "AL",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://alison.legislature.state.al.us/senate-leaders-members"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/al/legislature/Robert-Stewart-cd2d1a70-0bb3-49b3-871c-9e227392653d.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://www.legislature.state.al.us/pdf/senate/members/Stewart_23.png"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Robert_Stewart_(Alabama)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Robert_Stewart_(Alabama_politician)"
+    },
+    {
+      "title": "graphql endpoint for member information",
+      "url": "https://gql.api.alison.legislature.state.al.us/graphql"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/201677/robert-stewart"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/robert-stewart-03711129"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

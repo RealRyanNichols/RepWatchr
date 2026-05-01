@@ -1,0 +1,64 @@
+{
+  "id": "chris-stewart",
+  "name": "Chris Stewart",
+  "firstName": "Chris",
+  "lastName": "Stewart",
+  "photo": "/images/officials/state-legislature/ct/chris-stewart.jpg",
+  "photoSourceUrl": "https://www2.cbia.com/govaff/images/legpics/H051_Stewart.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-51",
+  "jurisdiction": "Connecticut House of Representatives",
+  "county": [
+    "Connecticut"
+  ],
+  "termStart": "2025-01-08",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 4200, Legislative Office Building 300 Capitol Ave., Hartford, CT 06106",
+    "phone": "860-240-8700",
+    "email": "chris.stewart@housegop.ct.gov",
+    "website": "https://www.cthousegop.com/stewart/"
+  },
+  "bio": "Chris Stewart serves as State Representative for Connecticut House of Representatives District 51. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "CT",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.cthousegop.com/stewart/"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ct/legislature/Chris-Stewart-fdce734b-2080-4a62-bf9c-baec09572938.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://www2.cbia.com/govaff/images/legpics/H051_Stewart.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Chris_Stewart_(Connecticut)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Chris_Stewart_(Connecticut_politician)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/219057/chris-stewart"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.cthousegop.com/stewart"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/chris-stewart-8a8326150"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

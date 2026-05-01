@@ -1,0 +1,55 @@
+{
+  "id": "marty-jackley",
+  "name": "Marty Jackley",
+  "firstName": "Marty",
+  "lastName": "Jackley",
+  "photo": "/images/officials/state-executive/sd/marty-jackley.jpg",
+  "photoSourceUrl": "https://www.naag.org/wp-content/uploads/2022/11/ag-SD-Jackley-Marty.png",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "Attorney General",
+  "district": "South Dakota",
+  "jurisdiction": "South Dakota statewide public office",
+  "county": [
+    "South Dakota"
+  ],
+  "termStart": "2023-01-02",
+  "termEnd": "2027-01-04",
+  "contactInfo": {
+    "office": "1302 East Highway 14, Suite 1; Pierre, SD 57501-8501",
+    "phone": "605-773-3215",
+    "website": "https://atg.sd.gov/"
+  },
+  "bio": "Marty Jackley is listed as Attorney General for South Dakota. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "SD",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://atg.sd.gov/"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/sd/executive/Marty-Jackley-b305d3f4-6e90-44ab-a228-3ed2933e2989.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://www.naag.org/wp-content/uploads/2022/11/ag-SD-Jackley-Marty.png"
+    },
+    {
+      "title": "Public source",
+      "url": "https://atg.sd.gov/OurOffice/bio.aspx"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Marty_J._Jackley"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.naag.org/attorney-general/marty-jackley/"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

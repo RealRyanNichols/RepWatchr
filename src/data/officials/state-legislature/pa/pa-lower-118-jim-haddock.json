@@ -1,0 +1,62 @@
+{
+  "id": "jim-haddock",
+  "name": "Jim Haddock",
+  "firstName": "Jim",
+  "lastName": "Haddock",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-118",
+  "jurisdiction": "Pennsylvania House of Representatives",
+  "county": [
+    "Pennsylvania"
+  ],
+  "termStart": "2022-12-01",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 101A, East Wing P.O. Box 202118, Harrisburg, PA 17120",
+    "phone": "717-787-3589",
+    "email": "rephaddock@pahouse.net",
+    "website": "https://www.legis.state.pa.us/cfdocs/legis/home/member_information/House_bio.cfm?id=1966",
+    "socialMedia": {
+      "x": "https://x.com/RepHaddock",
+      "twitter": "https://x.com/RepHaddock",
+      "facebook": "https://facebook.com/RepHaddock"
+    }
+  },
+  "bio": "Jim Haddock serves as State Representative for Pennsylvania House of Representatives District 118. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "PA",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.legis.state.pa.us/cfdocs/legis/home/member_information/House_bio.cfm?id=1966"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/pa/legislature/Jim-Haddock-3b91abb8-4b49-4fa2-85ed-beea4919bccc.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/James_Haddock"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Jim_Haddock"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.legis.state.pa.us/cfdocs/legis/home/member_information/mbrList.cfm?body=H&sort=alpha"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.pahouse.com/Haddock"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.palegis.us/house/members/bio/1966/rep-haddock"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

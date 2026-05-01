@@ -1,0 +1,69 @@
+{
+  "id": "cory-maloy",
+  "name": "Cory Maloy",
+  "firstName": "Cory",
+  "lastName": "Maloy",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-52",
+  "jurisdiction": "Utah House of Representatives",
+  "county": [
+    "Utah"
+  ],
+  "termStart": "2023-01-01",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "P.O. Box 145030 350 N. State St., Suite 350, Salt Lake City, UT 84114",
+    "phone": "801-538-1029",
+    "email": "corymaloy@le.utah.gov",
+    "website": "https://disclosures.utah.gov/Search/PublicSearch/FolderDetails/1414486"
+  },
+  "bio": "Cory Maloy serves as State Representative for Utah House of Representatives District 52. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "UT",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://disclosures.utah.gov/Search/PublicSearch/FolderDetails/1414486"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ut/legislature/A-Cory-Maloy-8487aadf-5bd8-46b1-97a3-2db855c534a0.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Cory_Maloy"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Cory_Maloy"
+    },
+    {
+      "title": "Public source",
+      "url": "https://house.utah.gov/rep/MALOYC"
+    },
+    {
+      "title": "Public source",
+      "url": "https://house.utah.gov/rep/MALOYC/"
+    },
+    {
+      "title": "Public source",
+      "url": "https://house.utleg.gov/rep/MALOYC"
+    },
+    {
+      "title": "Public source",
+      "url": "https://house.utleg.gov/rep/MALOYC/"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/168612/cory-maloy"
+    },
+    {
+      "title": "Public source",
+      "url": "https://le.utah.gov/data/legislators.json"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

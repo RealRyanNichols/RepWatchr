@@ -1,0 +1,60 @@
+{
+  "id": "poppy-arford",
+  "name": "Poppy Arford",
+  "firstName": "Poppy",
+  "lastName": "Arford",
+  "photo": "/images/officials/state-legislature/me/poppy-arford.jpg",
+  "photoSourceUrl": "https://legislature.maine.gov/house/house/Repository/MemberProfiles/e67bda1d-1bd9-46a4-8dca-4c3616a20dfa_ArfordNEW.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-101",
+  "jurisdiction": "Maine House of Representatives",
+  "county": [
+    "Maine"
+  ],
+  "termStart": "2022-12-07",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 333, House Democratic Office 2 State House Station, Augusta, ME 04333",
+    "phone": "800-423-2900",
+    "email": "poppy.arford@legislature.maine.gov",
+    "website": "https://legislature.maine.gov/house/house/MemberProfiles/Details/1421"
+  },
+  "bio": "Poppy Arford serves as State Representative for Maine House of Representatives District 101. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "ME",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://legislature.maine.gov/house/house/MemberProfiles/Details/1421"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/me/legislature/Poppy-Arford-522f7557-1c06-451b-9c81-78080fc5c21c.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://legislature.maine.gov/house/house/Repository/MemberProfiles/e67bda1d-1bd9-46a4-8dca-4c3616a20dfa_ArfordNEW.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Poppy_Arford"
+    },
+    {
+      "title": "Public source",
+      "url": "https://legislature.maine.gov/house/house/MemberProfiles/ListAlpha"
+    },
+    {
+      "title": "Public source",
+      "url": "https://legislature.maine.gov/housedems/arfordp/index.html"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.maine.gov/housedems/arfordp"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

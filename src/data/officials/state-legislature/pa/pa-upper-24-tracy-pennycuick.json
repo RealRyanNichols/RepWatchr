@@ -1,0 +1,72 @@
+{
+  "id": "tracy-pennycuick",
+  "name": "Tracy Pennycuick",
+  "firstName": "Tracy",
+  "lastName": "Pennycuick",
+  "party": "R",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-24",
+  "jurisdiction": "Pennsylvania Senate",
+  "county": [
+    "Pennsylvania"
+  ],
+  "termStart": "2022-12-01",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 16, East Wing Senate Box 203024, Harrisburg, PA 17120",
+    "phone": "717-787-3110",
+    "email": "tpennycuick@pasen.gov",
+    "website": "https://senatorpennycuick.com/",
+    "socialMedia": {
+      "facebook": "https://facebook.com/PA-State-Rep-Tracy-Pennycuick-106417357971506"
+    }
+  },
+  "bio": "Tracy Pennycuick serves as State Senator for Pennsylvania Senate District 24. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "PA",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://senatorpennycuick.com/"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/pa/legislature/Tracy-Pennycuick-d9ad47a6-7e74-45f2-93a5-1b7e40ad36db.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Tracy_Pennycuick"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Tracy_Pennycuick"
+    },
+    {
+      "title": "Public source",
+      "url": "https://senatorpennycuick.com"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.legis.state.pa.us/cfdocs/legis/home/member_information/House_bio.cfm?id=1912"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.legis.state.pa.us/cfdocs/legis/home/member_information/mbrList.cfm?body=H&sort=alpha"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.legis.state.pa.us/cfdocs/legis/home/member_information/mbrList.cfm?body=S&sort=alpha"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.legis.state.pa.us/cfdocs/legis/home/member_information/representatives_alpha.cfm"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.legis.state.pa.us/cfdocs/legis/home/member_information/senate_bio.cfm?id=1912"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

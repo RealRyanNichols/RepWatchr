@@ -1,0 +1,72 @@
+{
+  "id": "mike-finn",
+  "name": "Mike Finn",
+  "firstName": "Mike",
+  "lastName": "Finn",
+  "photo": "/images/officials/state-legislature/ma/mike-finn.jpg",
+  "photoSourceUrl": "https://s3.amazonaws.com/ballotpedia-api4/files/thumbs/200/300/Michael_Finn.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-6th Hampden",
+  "jurisdiction": "Massachusetts House of Representatives",
+  "county": [
+    "Massachusetts"
+  ],
+  "termStart": "2011-01-05",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 39, State House 24 Beacon St., Boston, MA 02133",
+    "phone": "617-722-2014",
+    "email": "michael.finn@mahouse.gov",
+    "website": "https://malegislature.gov/Legislators/Profile/MJF1"
+  },
+  "bio": "Mike Finn serves as State Representative for Massachusetts House of Representatives District 6th Hampden. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "MA",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://malegislature.gov/Legislators/Profile/MJF1"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ma/legislature/Michael-J-Finn-b61922e8-c775-4c74-8ecb-557d79162195.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://s3.amazonaws.com/ballotpedia-api4/files/thumbs/200/300/Michael_Finn.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Michael_Finn"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Michael_Finn"
+    },
+    {
+      "title": "Public source",
+      "url": "https://malegislature.gov/api/GeneralCourts/192/LegislativeMembers"
+    },
+    {
+      "title": "Public source",
+      "url": "https://malegislature.gov/api/GeneralCourts/192/LegislativeMembers/"
+    },
+    {
+      "title": "Public source",
+      "url": "https://malegislature.gov/api/GeneralCourts/192/LegislativeMembers/MJF1"
+    },
+    {
+      "title": "Public source",
+      "url": "https://malegislature.gov/api/GeneralCourts/193/LegislativeMembers"
+    },
+    {
+      "title": "Public source",
+      "url": "https://malegislature.gov/api/GeneralCourts/193/LegislativeMembers/"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

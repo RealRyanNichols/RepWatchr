@@ -1,0 +1,56 @@
+{
+  "id": "ben-moss",
+  "name": "Ben Moss",
+  "firstName": "Ben",
+  "lastName": "Moss",
+  "photo": "/images/officials/state-legislature/nc/ben-moss.jpg",
+  "photoSourceUrl": "https://www.ncleg.gov/Members/MemberImage/H/784/Low",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-52",
+  "jurisdiction": "North Carolina House of Representatives",
+  "county": [
+    "North Carolina"
+  ],
+  "termStart": "2023-01-01",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 306A3, Legislative Office Building 300 N. Salisbury St., Raleigh, NC 27603",
+    "phone": "919-733-5903",
+    "email": "ben.moss@ncleg.gov",
+    "website": "https://www.ncleg.gov/Members/Biography/H/784"
+  },
+  "bio": "Ben Moss serves as State Representative for North Carolina House of Representatives District 52. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "NC",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.ncleg.gov/Members/Biography/H/784"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/nc/legislature/Ben-T-Moss-Jr-fdc7d25a-085c-4100-b5f4-a8ae51979292.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://www.ncleg.gov/Members/MemberImage/H/784/Low"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Ben_Moss"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/133884/ben-moss-jr"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.ncleg.gov/Members/MemberTable/H"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

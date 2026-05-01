@@ -1,0 +1,61 @@
+{
+  "id": "travis-simms",
+  "name": "Travis Simms",
+  "firstName": "Travis",
+  "lastName": "Simms",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-140",
+  "jurisdiction": "Connecticut House of Representatives",
+  "county": [
+    "Connecticut"
+  ],
+  "termStart": "2019-01-09",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 4049, Legislative Office Building 300 Capitol Ave., Hartford, CT 06106",
+    "phone": "800-842-8267",
+    "email": "travis.simms@cga.ct.gov",
+    "website": "https://cga.ct.gov/asp/CGABillStatus/CGAMemberBills.asp?dist_code=%27140%27&dist_name=Simms,%20Travis"
+  },
+  "bio": "Travis Simms serves as State Representative for Connecticut House of Representatives District 140. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "CT",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://cga.ct.gov/asp/CGABillStatus/CGAMemberBills.asp?dist_code=%27140%27&dist_name=Simms,%20Travis"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ct/legislature/Travis-Simms-9e9d6f02-ee29-4ff3-a6fe-1b8a0cec0612.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "ftp://ftp.cga.ct.gov/pub/data/LegislatorDatabase.csv"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Travis_Simms_(Connecticut)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Travis_Simms"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/130164/travis-simms"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.housedems.ct.gov/simms"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/tremendous"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

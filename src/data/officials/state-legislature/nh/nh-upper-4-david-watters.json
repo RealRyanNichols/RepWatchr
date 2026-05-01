@@ -1,0 +1,72 @@
+{
+  "id": "david-watters",
+  "name": "David Watters",
+  "firstName": "David",
+  "lastName": "Watters",
+  "photo": "/images/officials/state-legislature/nh/david-watters.jpg",
+  "photoSourceUrl": "https://storage.googleapis.com/enview-dev-public-general/legislative-people-photos/50342.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-4",
+  "jurisdiction": "New Hampshire Senate",
+  "county": [
+    "New Hampshire"
+  ],
+  "termStart": "2012-12-05",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 101-A, Legislative Office Building 33 N. State St., Concord, NH 03301",
+    "phone": "603-271-2104",
+    "email": "david.watters@gc.nh.gov",
+    "website": "https://gc.nh.gov/Senate/members/webpages/district04.aspx"
+  },
+  "bio": "David Watters serves as State Senator for New Hampshire Senate District 4. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "NH",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://gc.nh.gov/Senate/members/webpages/district04.aspx"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/nh/legislature/David-H-Watters-cf24defe-6df3-49f3-88ca-c6774b144f19.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://storage.googleapis.com/enview-dev-public-general/legislative-people-photos/50342.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/David_Watters"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/David_H._Watters"
+    },
+    {
+      "title": "Public source",
+      "url": "https://gencourt.state.nh.us/downloads/Members.txt"
+    },
+    {
+      "title": "Public source",
+      "url": "https://gencourt.state.nh.us/downloads/members.txt"
+    },
+    {
+      "title": "Public source",
+      "url": "https://gencourt.state.nh.us/Senate/members/webpages/district04.aspx"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.gencourt.state.nh.us/downloads/Members.txt"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.gencourt.state.nh.us/Senate/members/webpages/district04.aspx"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

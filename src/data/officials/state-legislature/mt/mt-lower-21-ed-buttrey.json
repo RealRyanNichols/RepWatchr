@@ -1,0 +1,69 @@
+{
+  "id": "ed-buttrey",
+  "name": "Ed Buttrey",
+  "firstName": "Ed",
+  "lastName": "Buttrey",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-21",
+  "jurisdiction": "Montana House of Representatives",
+  "county": [
+    "Montana"
+  ],
+  "termStart": "2019-01-07",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Capitol Building, 1301 E. 6th Ave. P.O. Box 200400, Helena, MT 59620",
+    "phone": "406-444-4800",
+    "email": "ed.buttrey@legmt.gov",
+    "website": "https://leg.mt.gov/legislator-information/roster/individual/5079"
+  },
+  "bio": "Ed Buttrey serves as State Representative for Montana House of Representatives District 21. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "MT",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://leg.mt.gov/legislator-information/roster/individual/5079"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/mt/legislature/Edward-Buttrey-29b81d32-dc72-49d8-8bef-ca4b60fe9c87.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Edward_Buttrey"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Edward_Buttrey"
+    },
+    {
+      "title": "Public source",
+      "url": "https://leg.mt.gov/legislator-information/?session_select=113"
+    },
+    {
+      "title": "Public source",
+      "url": "https://leg.mt.gov/legislator-information/roster/individual/6899"
+    },
+    {
+      "title": "Public source",
+      "url": "https://leg.mt.gov/legislator-information/roster/individual/7484"
+    },
+    {
+      "title": "Public source",
+      "url": "https://legislators.legmt.gov/#/legislator/121"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.legmt.gov/legislators/1313"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/ed-buttrey-44492730"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

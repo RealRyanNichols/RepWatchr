@@ -1,0 +1,53 @@
+{
+  "id": "patrick-schmidt",
+  "name": "Patrick Schmidt",
+  "firstName": "Patrick",
+  "lastName": "Schmidt",
+  "party": "D",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-19",
+  "jurisdiction": "Kansas Senate",
+  "county": [
+    "Kansas"
+  ],
+  "termStart": "2025-01-13",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "State Capitol Room 135-E, Kansas  Building 300 SW 10th St., Topeka, KS 66612",
+    "phone": "785-296-7372",
+    "email": "patrick.schmidt@senate.ks.gov",
+    "website": "https://www.kslegislature.gov/li/b2025_26/members/sen_schmidt_patrick_1/"
+  },
+  "bio": "Patrick Schmidt serves as State Senator for Kansas Senate District 19. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "KS",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.kslegislature.gov/li/b2025_26/members/sen_schmidt_patrick_1/"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ks/legislature/Patrick-Schmidt-8a08b0a9-eeff-495c-8fc8-7bbfe3e4dc26.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Patrick_Schmidt"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/207974/patrick-schmidt"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.kslegislature.gov/li/b2025_26/members/sen_schmidt_patrick_1"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/patrick-schmidt-79a24411"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

@@ -1,0 +1,72 @@
+{
+  "id": "deb-andraca",
+  "name": "Deb Andraca",
+  "firstName": "Deb",
+  "lastName": "Andraca",
+  "photo": "/images/officials/state-legislature/wi/deb-andraca.jpg",
+  "photoSourceUrl": "https://docs.legis.wisconsin.gov/2023/legislators/assembly/2443.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "Assemblymember",
+  "district": "HD-23",
+  "jurisdiction": "Wisconsin State Assembly",
+  "county": [
+    "Wisconsin"
+  ],
+  "termStart": "2021-01-04",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "State Capitol Room 109 North, P.O. Box 8952 , 2 E. Main St., Madison, WI 53708",
+    "phone": "608-237-9123",
+    "email": "rep.andraca@legis.wisconsin.gov",
+    "website": "https://docs.legis.wisconsin.gov/2021/legislators/assembly/2266"
+  },
+  "bio": "Deb Andraca serves as Assemblymember for Wisconsin State Assembly District 23. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "WI",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://docs.legis.wisconsin.gov/2021/legislators/assembly/2266"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/wi/legislature/Deb-A-Andraca-bcca1ebf-1a4c-4624-97a6-dbfd3e255191.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://docs.legis.wisconsin.gov/2023/legislators/assembly/2443.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Deb_Andraca"
+    },
+    {
+      "title": "Public source",
+      "url": "https://docs.legis.wisconsin.gov/2021/legislators/assembly"
+    },
+    {
+      "title": "Public source",
+      "url": "https://docs.legis.wisconsin.gov/2021/legislators/assembly/"
+    },
+    {
+      "title": "Public source",
+      "url": "https://docs.legis.wisconsin.gov/2023/legislators/assembly"
+    },
+    {
+      "title": "members list page",
+      "url": "https://docs.legis.wisconsin.gov/2023/legislators/assembly/"
+    },
+    {
+      "title": "member detail page",
+      "url": "https://docs.legis.wisconsin.gov/2023/legislators/assembly/2443"
+    },
+    {
+      "title": "Public source",
+      "url": "https://docs.legis.wisconsin.gov/2025/legislators/assembly/2708"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

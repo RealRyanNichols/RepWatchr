@@ -1,0 +1,64 @@
+{
+  "id": "phil-amato",
+  "name": "Phil Amato",
+  "firstName": "Phil",
+  "lastName": "Amato",
+  "photo": "/images/officials/state-legislature/mo/phil-amato.jpg",
+  "photoSourceUrl": "https://house.mo.gov/MemberPhoto.aspx?id=2378",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-113",
+  "jurisdiction": "Missouri House of Representatives",
+  "county": [
+    "Missouri"
+  ],
+  "termStart": "2023-01-04",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 201-B, 201 W. Capitol Ave., Jefferson City, MO 65101",
+    "phone": "573-751-2504",
+    "email": "phil.amato@house.mo.gov",
+    "website": "https://house.mo.gov/MemberDetails.aspx?district=113"
+  },
+  "bio": "Phil Amato serves as State Representative for Missouri House of Representatives District 113. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "MO",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://house.mo.gov/MemberDetails.aspx?district=113"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/mo/legislature/Phil-Amato-1d96c354-2527-4449-9b40-36bb78fe2cb7.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://house.mo.gov/MemberPhoto.aspx?id=2378"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Phil_Amato"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Phil_Amato"
+    },
+    {
+      "title": "Public source",
+      "url": "https://house.mo.gov/MemberDetails.aspx?year=2023&code=R&district=113"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/183291/phil-amato"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/phil-amato-b48917137"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

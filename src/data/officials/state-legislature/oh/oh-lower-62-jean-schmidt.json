@@ -1,0 +1,57 @@
+{
+  "id": "jean-schmidt",
+  "name": "Jean Schmidt",
+  "firstName": "Jean",
+  "lastName": "Schmidt",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-62",
+  "jurisdiction": "Ohio House of Representatives",
+  "county": [
+    "Ohio"
+  ],
+  "termStart": "2023-01-01",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "77 S. High St. 12th Floor, Columbus, OH 43215",
+    "phone": "614-466-8134",
+    "email": "rep62@ohiohouse.gov",
+    "website": "https://ohiohouse.gov/jean-schmidt"
+  },
+  "bio": "Jean Schmidt serves as State Representative for Ohio House of Representatives District 62. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "OH",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://ohiohouse.gov/jean-schmidt"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/oh/legislature/Jean-Schmidt-392629a2-7bb2-47df-8128-d4cd7d858324.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Jean_Schmidt_(Ohio)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Jean_Schmidt"
+    },
+    {
+      "title": "member details page",
+      "url": "https://ohiohouse.gov/members/jean-schmidt"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.govtrack.us/congress/members/jean_schmidt/412010"
+    },
+    {
+      "title": "member list page",
+      "url": "https://www.legislature.ohio.gov/legislators/house-directory"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

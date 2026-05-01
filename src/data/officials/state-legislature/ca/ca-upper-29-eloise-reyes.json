@@ -1,0 +1,69 @@
+{
+  "id": "eloise-reyes",
+  "name": "Eloise Reyes",
+  "firstName": "Eloise",
+  "lastName": "Reyes",
+  "party": "D",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-29",
+  "jurisdiction": "California Senate",
+  "county": [
+    "California"
+  ],
+  "termStart": "2024-12-02",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "1021 O St. Suite 7210, Sacramento, CA 95814",
+    "phone": "916-651-4029",
+    "email": "senator.reyes@senate.ca.gov",
+    "website": "https://a47.asmdc.org"
+  },
+  "bio": "Eloise Reyes serves as State Senator for California Senate District 29. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "CA",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://a47.asmdc.org"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ca/legislature/Eloise-Gmez-Reyes-19f694d8-b409-40e5-9f87-d8e3e84afc7f.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://a50.asmdc.org"
+    },
+    {
+      "title": "Public source",
+      "url": "https://a50.asmdc.org/biography"
+    },
+    {
+      "title": "Public source",
+      "url": "https://assembly.ca.gov/assemblymembers"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Eloise_Reyes"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Eloise_Reyes"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/169395/eloise-reyes"
+    },
+    {
+      "title": "Public source",
+      "url": "https://sd29.senate.ca.gov"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.assembly.ca.gov/assemblymembers"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

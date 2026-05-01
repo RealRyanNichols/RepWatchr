@@ -1,0 +1,52 @@
+{
+  "id": "karen-hamilton",
+  "name": "Karen Hamilton",
+  "firstName": "Karen",
+  "lastName": "Hamilton",
+  "photo": "/images/officials/state-legislature/va/karen-hamilton.jpg",
+  "photoSourceUrl": "https://house.vga.virginia.gov/delegate_photos/H0394.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "Delegate",
+  "district": "HD-62",
+  "jurisdiction": "Virginia House of Delegates",
+  "county": [
+    "Virginia"
+  ],
+  "termStart": "2026-01-14",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 716, General Assembly Building 201 N. 9th St., Richmond, VA 23219",
+    "phone": "804-698-1062",
+    "email": "delkhamilton@house.virginia.gov",
+    "website": "https://house.vga.virginia.gov/members/H0394"
+  },
+  "bio": "Karen Hamilton serves as Delegate for Virginia House of Delegates District 62. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "VA",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://house.vga.virginia.gov/members/H0394"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/va/legislature/Karen-Hamilton-b209f24e-0f1f-4f80-b2d9-1c05ee94ba4e.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://house.vga.virginia.gov/delegate_photos/H0394.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Karen_Hamilton"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Karen_Hamilton"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

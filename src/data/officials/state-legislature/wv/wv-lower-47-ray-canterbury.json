@@ -1,0 +1,60 @@
+{
+  "id": "ray-canterbury",
+  "name": "Ray Canterbury",
+  "firstName": "Ray",
+  "lastName": "Canterbury",
+  "photo": "/images/officials/state-legislature/wv/ray-canterbury.jpg",
+  "photoSourceUrl": "https://www.wvlegislature.gov/images/members/2025/house/canterbury_ray.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "Delegate",
+  "district": "HD-47",
+  "jurisdiction": "West Virginia House of Delegates",
+  "county": [
+    "West Virginia"
+  ],
+  "termStart": "2024-12-01",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "State Capitol Room 229E, Complex, Building 1 1900 Kanawha Blvd. East, Charleston, WV 25305",
+    "phone": "304-340-3129",
+    "email": "ray.canterbury@wvhouse.gov",
+    "website": "https://www.legis.state.wv.us/House/lawmaker.cfm?member=Delegate+Canterbury"
+  },
+  "bio": "Ray Canterbury serves as Delegate for West Virginia House of Delegates District 47. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "WV",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.legis.state.wv.us/House/lawmaker.cfm?member=Delegate+Canterbury"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/wv/legislature/Ray-Canterbury-639eb22f-b161-4be3-9abc-9cccf4dfdd05.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://www.wvlegislature.gov/images/members/2025/house/canterbury_ray.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Denny_Canterbury_Jr."
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Ray_Canterbury"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/26493/ray-canterbury-jr"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.wvlegislature.gov/House/lawmaker.cfm?member=Delegate%20Canterbury"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

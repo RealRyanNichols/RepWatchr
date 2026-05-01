@@ -1,0 +1,68 @@
+{
+  "id": "mark-meek",
+  "name": "Mark Meek",
+  "firstName": "Mark",
+  "lastName": "Meek",
+  "photo": "/images/officials/state-legislature/or/mark-meek.jpg",
+  "photoSourceUrl": "https://www.oregonlegislature.gov/meek/PublishingImages/member_photo.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-20",
+  "jurisdiction": "Oregon Senate",
+  "county": [
+    "Oregon"
+  ],
+  "termStart": "2023-01-09",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room S-417, 900 Court St. NE, Salem, OR 97301",
+    "phone": "503-986-1720",
+    "email": "sen.markmeek@oregonlegislature.gov",
+    "website": "https://www.oregonlegislature.gov/meek"
+  },
+  "bio": "Mark Meek serves as State Senator for Oregon Senate District 20. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "OR",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.oregonlegislature.gov/meek"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/or/legislature/Mark-Meek-d6379fd3-d283-4c6e-864b-7dca170b593d.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://www.oregonlegislature.gov/meek/PublishingImages/member_photo.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://api.oregonlegislature.gov/odata/odataservice.svc/LegislativeSessions('2022R1')/Legislators"
+    },
+    {
+      "title": "Public source",
+      "url": "https://api.oregonlegislature.gov/odata/odataservice.svc/LegislativeSessions('2023R1')/Legislators"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Mark_Meek"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Mark_Meek"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/168081/mark-meek"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/markmeekrealtorsinger"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

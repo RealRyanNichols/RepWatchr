@@ -1,0 +1,49 @@
+{
+  "id": "marcus-brown",
+  "name": "Marcus Brown",
+  "firstName": "Marcus",
+  "lastName": "Brown",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-127",
+  "jurisdiction": "Connecticut House of Representatives",
+  "county": [
+    "Connecticut"
+  ],
+  "termStart": "2023-01-04",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 4000, Legislative Office Building 300 Capitol Ave., Hartford, CT 06106",
+    "phone": "860-240-8585",
+    "email": "marcus.brown@cga.ct.gov",
+    "website": "https://www.housedems.ct.gov/BrownM"
+  },
+  "bio": "Marcus Brown serves as State Representative for Connecticut House of Representatives District 127. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "CT",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.housedems.ct.gov/BrownM"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ct/legislature/Marcus-Brown-4e77c536-5645-4e15-99b2-00a781896717.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "ftp://ftp.cga.ct.gov/pub/data/LegislatorDatabase.csv"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Marcus_Brown"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/marcus-a-brown-047604204"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

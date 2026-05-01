@@ -1,0 +1,73 @@
+{
+  "id": "scot-matayoshi",
+  "name": "Scot Matayoshi",
+  "firstName": "Scot",
+  "lastName": "Matayoshi",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-49",
+  "jurisdiction": "Hawaii House of Representatives",
+  "county": [
+    "Hawaii"
+  ],
+  "termStart": "2018-11-06",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "State Capitol Room 433, 415 S. Beretania St., Honolulu, HI 96813",
+    "phone": "808-586-8470",
+    "email": "repmatayoshi@capitol.hawaii.gov",
+    "website": "https://capitol.hawaii.gov/memberpage.aspx?member=Matayoshi&year=2019",
+    "socialMedia": {
+      "facebook": "https://facebook.com/repscotmatayoshi",
+      "instagram": "https://instagram.com/repscotmatayoshi"
+    }
+  },
+  "bio": "Scot Matayoshi serves as State Representative for Hawaii House of Representatives District 49. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "HI",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://capitol.hawaii.gov/memberpage.aspx?member=Matayoshi&year=2019"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/hi/legislature/Scot-Z-Matayoshi-78cc3d2c-31b6-421f-a666-5a96ca3fe65a.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Scot_Matayoshi"
+    },
+    {
+      "title": "Public source",
+      "url": "https://capitol.hawaii.gov/members/legislators.aspx?chamber=H"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Scot_Matayoshi"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.capitol.hawaii.gov/legislature/memberpage.aspx?member=89"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.capitol.hawaii.gov/legislature/memberpage.aspx?member=89&year=2023"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.capitol.hawaii.gov/legislature/memberpage.aspx?member=89&year=2024"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.capitol.hawaii.gov/memberpage.aspx?member=Matayoshi&year=2021"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.capitol.hawaii.gov/memberpage.aspx?member=Matayoshi&year=2022"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

@@ -1,0 +1,72 @@
+{
+  "id": "arthur-handy",
+  "name": "Arthur Handy",
+  "firstName": "Arthur",
+  "lastName": "Handy",
+  "photo": "/images/officials/state-legislature/ri/arthur-handy.jpg",
+  "photoSourceUrl": "http://www.rilegislature.gov/representatives/pictures/handy.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-18",
+  "jurisdiction": "Rhode Island House of Representatives",
+  "county": [
+    "Rhode Island"
+  ],
+  "termStart": "2003-01-07",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "82 Smith St., Providence, RI 02903",
+    "phone": "401-222-3580",
+    "email": "rep-handy@rilegislature.gov",
+    "website": "https://www.rilegislature.gov/representatives/carson/default.aspx"
+  },
+  "bio": "Arthur Handy serves as State Representative for Rhode Island House of Representatives District 18. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "RI",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.rilegislature.gov/representatives/carson/default.aspx"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ri/legislature/Arthur-Handy-6d4c7be7-4e68-4aa1-9262-81995fcc231e.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "http://www.rilegislature.gov/representatives/pictures/handy.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Arthur_Handy"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Arthur_Handy"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/47711/art-handy"
+    },
+    {
+      "title": "Public source",
+      "url": "https://webserver.rilin.state.ri.us/Email/RepEmailListDistrict.asp"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/arthur-handy-331a816"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.rilegislature.gov/representatives/handy/default.aspx"
+    },
+    {
+      "title": "Image Source",
+      "url": "https://www.rilegislature.gov/representatives/handy/Pages/Biography.aspx"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

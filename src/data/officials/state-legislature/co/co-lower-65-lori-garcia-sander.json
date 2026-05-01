@@ -1,0 +1,60 @@
+{
+  "id": "lori-garcia-sander",
+  "name": "Lori Garcia Sander",
+  "firstName": "Lori",
+  "lastName": "Garcia Sander",
+  "photo": "/images/officials/state-legislature/co/lori-garcia-sander.jpg",
+  "photoSourceUrl": "https://s3.amazonaws.com/ballotpedia-api4/files/thumbs/200/300/LoriSander2024.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-65",
+  "jurisdiction": "Colorado House of Representatives",
+  "county": [
+    "Colorado"
+  ],
+  "termStart": "2025-01-08",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "State Capitol Room 307, Colorado  Building 200 E. Colfax Ave., Denver, CO 80203",
+    "phone": "303-866-2907",
+    "email": "lori.garciasander.house@coleg.gov",
+    "website": "https://leg.colorado.gov/legislators/lori-garcia-sander"
+  },
+  "bio": "Lori Garcia Sander serves as State Representative for Colorado House of Representatives District 65. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "CO",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://leg.colorado.gov/legislators/lori-garcia-sander"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/co/legislature/Lori-Sander-d450c0d3-b829-4855-ad0d-1228c5284a4f.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://s3.amazonaws.com/ballotpedia-api4/files/thumbs/200/300/LoriSander2024.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Lori_Sander"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Lori_Garcia_Sander"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/217188/lori-garcia-sander"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/lori-garcia-sander-bb2552325"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

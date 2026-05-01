@@ -1,0 +1,64 @@
+{
+  "id": "matt-norris",
+  "name": "Matt Norris",
+  "firstName": "Matt",
+  "lastName": "Norris",
+  "photo": "/images/officials/state-legislature/mn/matt-norris.jpg",
+  "photoSourceUrl": "https://www.house.mn.gov/hinfo/memberimgls94/32B.gif?v=112221",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-32B",
+  "jurisdiction": "Minnesota House of Representatives",
+  "county": [
+    "Minnesota"
+  ],
+  "termStart": "2023-01-03",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Centennial Office Building 658 Cedar St., Fifth Floor, St. Paul, MN 55155",
+    "phone": "651-296-2907",
+    "email": "rep.matt.norris@house.mn.gov",
+    "website": "https://www.house.mn.gov/members/profile/15609"
+  },
+  "bio": "Matt Norris serves as State Representative for Minnesota House of Representatives District 32B. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "MN",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.house.mn.gov/members/profile/15609"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/mn/legislature/Matt-Norris-662f07d4-7dd5-4549-bded-c8b5a200e054.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://www.house.mn.gov/hinfo/memberimgls94/32B.gif?v=112221"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Matt_Norris"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Matt_Norris_(Minnesota_politician)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/208027/matt-norris"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.house.leg.state.mn.us/members/hmem.asp"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/matt-norris-83514644"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

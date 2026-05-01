@@ -1,0 +1,71 @@
+{
+  "id": "bob-wharff",
+  "name": "Bob Wharff",
+  "firstName": "Bob",
+  "lastName": "Wharff",
+  "photo": "/images/officials/state-legislature/wy/bob-wharff.jpg",
+  "photoSourceUrl": "https://wyoleg.gov/LegislatorSummary/Photos/68th-WharffRobert.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-49",
+  "jurisdiction": "Wyoming House of Representatives",
+  "county": [
+    "Wyoming"
+  ],
+  "termStart": "2025-01-06",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "State Capitol 200 W. 24th St., Cheyenne, WY 82002",
+    "email": "robert.wharff@wyoleg.gov",
+    "website": "https://wyoleg.gov/Legislators/2021/R/2082"
+  },
+  "bio": "Bob Wharff serves as State Representative for Wyoming House of Representatives District 49. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "WY",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://wyoleg.gov/Legislators/2021/R/2082"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/wy/legislature/Robert-Wharff-bc53e98d-bd3c-4a67-9822-68e609f45251.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://wyoleg.gov/LegislatorSummary/Photos/68th-WharffRobert.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Robert_Wharff"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Robert_Wharff"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/194594/robert-wharff"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/robert-wharff-1143ba1a5"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/robert-wharff-23584927"
+    },
+    {
+      "title": "Public source",
+      "url": "https://wyoleg.gov/Legislators/2025/H/2082"
+    },
+    {
+      "title": "Public source",
+      "url": "https://wyoleg.gov/LsoService/api/legislator/2021/H"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

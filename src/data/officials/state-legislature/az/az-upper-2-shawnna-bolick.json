@@ -1,0 +1,64 @@
+{
+  "id": "shawnna-bolick",
+  "name": "Shawnna Bolick",
+  "firstName": "Shawnna",
+  "lastName": "Bolick",
+  "photo": "/images/officials/state-legislature/az/shawnna-bolick.jpg",
+  "photoSourceUrl": "https://www.azleg.gov/alisImages/MemberPhotos/55leg/House/BOLICK.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-2",
+  "jurisdiction": "Arizona Senate",
+  "county": [
+    "Arizona"
+  ],
+  "termStart": "2023-07-23",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 307, 1700 W. Washington St., Phoenix, AZ 85007",
+    "phone": "602-926-3314",
+    "email": "sbolick@azleg.gov",
+    "website": "https://www.azleg.gov/senate-member/?legislature=56&legislator=2273"
+  },
+  "bio": "Shawnna Bolick serves as State Senator for Arizona Senate District 2. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "AZ",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.azleg.gov/senate-member/?legislature=56&legislator=2273"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/az/legislature/Shawnna-Bolick-355be281-2f88-4108-b894-62c54b67fba3.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://www.azleg.gov/alisImages/MemberPhotos/55leg/House/BOLICK.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Shawnna_Bolick"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Shawnna_Bolick"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/123699/shawnna-bolick"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.azleg.gov/memberroster/?body=S"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.azleg.gov/senate-member/?legislature=57&legislator=2400"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

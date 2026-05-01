@@ -1,0 +1,72 @@
+{
+  "id": "justin-busch",
+  "name": "Justin Busch",
+  "firstName": "Justin",
+  "lastName": "Busch",
+  "photo": "/images/officials/state-legislature/in/justin-busch.jpg",
+  "photoSourceUrl": "https://cdn.zephyrcms.com/9ac33a70-83a0-408c-91d2-3489a04d866d/-/progressive/yes/-/format/jpeg/-/scale_crop/200x300/center/-/stretch/off/busch-website.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-16",
+  "jurisdiction": "Indiana Senate",
+  "county": [
+    "Indiana"
+  ],
+  "termStart": "2018-11-06",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "200 W. Washington St., Indianapolis, IN 46204",
+    "phone": "800-382-9467",
+    "email": "s16@iga.in.gov",
+    "website": "https://iga.in.gov/legislative/2021/legislators/legislator_justin_busch_1"
+  },
+  "bio": "Justin Busch serves as State Senator for Indiana Senate District 16. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "IN",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://iga.in.gov/legislative/2021/legislators/legislator_justin_busch_1"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/in/legislature/Justin-Busch-fc270bf0-2220-476a-ad9c-15db82d62192.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://cdn.zephyrcms.com/9ac33a70-83a0-408c-91d2-3489a04d866d/-/progressive/yes/-/format/jpeg/-/scale_crop/200x300/center/-/stretch/off/busch-website.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://api.iga.in.gov/2021/legislators/justin_busch_1"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Justin_Busch"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Justin_Busch"
+    },
+    {
+      "title": "Public source",
+      "url": "https://iga.in.gov/legislative/2022/legislators/legislator_justin_busch_1"
+    },
+    {
+      "title": "Public source",
+      "url": "https://iga.in.gov/legislative/2022/legislators/legislator_justin_busch_1/"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/185917/justin-busch"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.indianasenaterepublicans.com/busch"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

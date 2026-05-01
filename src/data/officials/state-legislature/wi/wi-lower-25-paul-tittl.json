@@ -1,0 +1,70 @@
+{
+  "id": "paul-tittl",
+  "name": "Paul Tittl",
+  "firstName": "Paul",
+  "lastName": "Tittl",
+  "photo": "/images/officials/state-legislature/wi/paul-tittl.jpg",
+  "photoSourceUrl": "https://docs.legis.wisconsin.gov/2023/legislators/assembly/2526.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "Assemblymember",
+  "district": "HD-25",
+  "jurisdiction": "Wisconsin State Assembly",
+  "county": [
+    "Wisconsin"
+  ],
+  "termStart": "2013-01-07",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "email": "rep.tittl@legis.wisconsin.gov",
+    "website": "https://docs.legis.wisconsin.gov/2017/legislators/assembly/1622"
+  },
+  "bio": "Paul Tittl serves as Assemblymember for Wisconsin State Assembly District 25. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "WI",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://docs.legis.wisconsin.gov/2017/legislators/assembly/1622"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/wi/legislature/Paul-Tittl-2e759534-4cf1-43f5-85d0-bf48fea3a048.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://docs.legis.wisconsin.gov/2023/legislators/assembly/2526.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Paul_Tittl"
+    },
+    {
+      "title": "Public source",
+      "url": "https://docs.legis.wisconsin.gov/2019/legislators/assembly/1819"
+    },
+    {
+      "title": "Public source",
+      "url": "https://docs.legis.wisconsin.gov/2021/legislators/assembly"
+    },
+    {
+      "title": "Public source",
+      "url": "https://docs.legis.wisconsin.gov/2021/legislators/assembly/"
+    },
+    {
+      "title": "Public source",
+      "url": "https://docs.legis.wisconsin.gov/2021/legislators/assembly/2205"
+    },
+    {
+      "title": "Public source",
+      "url": "https://docs.legis.wisconsin.gov/2023/legislators/assembly"
+    },
+    {
+      "title": "members list page",
+      "url": "https://docs.legis.wisconsin.gov/2023/legislators/assembly/"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

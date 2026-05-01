@@ -1,0 +1,60 @@
+{
+  "id": "john-blust",
+  "name": "John Blust",
+  "firstName": "John",
+  "lastName": "Blust",
+  "photo": "/images/officials/state-legislature/nc/john-blust.jpg",
+  "photoSourceUrl": "https://storage.googleapis.com/enview-public-general/legislative-people-photos/21657.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-62",
+  "jurisdiction": "North Carolina House of Representatives",
+  "county": [
+    "North Carolina"
+  ],
+  "termStart": "2024-09-18",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 613, Legislative Office Building 300 N. Salisbury St., Raleigh, NC 27603",
+    "phone": "919-733-5877",
+    "email": "john.blust@ncleg.gov",
+    "website": "https://www.ncleg.gov/Members/Biography/H/234"
+  },
+  "bio": "John Blust serves as State Representative for North Carolina House of Representatives District 62. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "NC",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.ncleg.gov/Members/Biography/H/234"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/nc/legislature/John-Blust-3a96a66b-58e9-4ce5-bc6c-803b19c2746d.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://storage.googleapis.com/enview-public-general/legislative-people-photos/21657.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/John_Blust"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/John_Blust"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.iveymcclellan.com/north-carolina-attorneys/john-blust"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.ncleg.gov/Members/Biography/H/824"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

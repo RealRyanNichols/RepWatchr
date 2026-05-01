@@ -1,0 +1,60 @@
+{
+  "id": "josh-hernandez",
+  "name": "Josh Hernandez",
+  "firstName": "Josh",
+  "lastName": "Hernandez",
+  "photo": "/images/officials/state-legislature/nm/josh-hernandez.jpg",
+  "photoSourceUrl": "https://www.nmlegis.gov/Images/Legislators/House/HHERN.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-60",
+  "jurisdiction": "New Mexico House of Representatives",
+  "county": [
+    "New Mexico"
+  ],
+  "termStart": "2021-01-19",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "State Capitol Room 201A, New Mexico  490 Old Santa Fe Trail, Santa Fe, NM 87501",
+    "phone": "505-986-4215",
+    "email": "joshua.hernandez@nmlegis.gov",
+    "website": "https://www.nmlegis.gov/Members/Legislator?SponCode=HHERN"
+  },
+  "bio": "Josh Hernandez serves as State Representative for New Mexico House of Representatives District 60. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "NM",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.nmlegis.gov/Members/Legislator?SponCode=HHERN"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/nm/legislature/Joshua-Hernandez-71b8feb5-0bbd-45bd-9b25-c6dc7642962b.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://www.nmlegis.gov/Images/Legislators/House/HHERN.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Joshua_Hernandez_(New_Mexico)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Joshua_Hernandez"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/dapengi"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.nmlegis.gov/Members/Legislator_List?T=R"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

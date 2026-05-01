@@ -1,0 +1,60 @@
+{
+  "id": "lisa-demuth",
+  "name": "Lisa Demuth",
+  "firstName": "Lisa",
+  "lastName": "Demuth",
+  "photo": "/images/officials/state-legislature/mn/lisa-demuth.jpg",
+  "photoSourceUrl": "https://www.house.mn.gov/hinfo/memberimgls93/13A.gif?v=032323",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-13A",
+  "jurisdiction": "Minnesota House of Representatives",
+  "county": [
+    "Minnesota"
+  ],
+  "termStart": "2019-01-08",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Centennial Office Building 658 Cedar St., Second Floor, St. Paul, MN 55155",
+    "phone": "651-296-4373",
+    "email": "rep.lisa.demuth@house.mn.gov",
+    "website": "https://www.house.mn.gov/members/profile/15498"
+  },
+  "bio": "Lisa Demuth serves as State Representative for Minnesota House of Representatives District 13A. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "MN",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.house.mn.gov/members/profile/15498"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/mn/legislature/Lisa-Demuth-7b7b8d46-05d4-4285-b728-abcad1a430d5.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://www.house.mn.gov/hinfo/memberimgls93/13A.gif?v=032323"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Lisa_Demuth"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Lisa_Demuth"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/183728/lisa-demuth"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.house.leg.state.mn.us/members/hmem.asp"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

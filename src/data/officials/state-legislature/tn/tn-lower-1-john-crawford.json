@@ -1,0 +1,72 @@
+{
+  "id": "john-crawford",
+  "name": "John Crawford",
+  "firstName": "John",
+  "lastName": "Crawford",
+  "photo": "/images/officials/state-legislature/tn/john-crawford.jpg",
+  "photoSourceUrl": "http://www.capitol.tn.gov/house/members/images/h1.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-1",
+  "jurisdiction": "Tennessee House of Representatives",
+  "county": [
+    "Tennessee"
+  ],
+  "termStart": "2016-11-09",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 540, Cordell Hull Building 425 Rep. John Lewis Way North, Nashville, TN 37243",
+    "phone": "615-741-7623",
+    "email": "rep.john.crawford@capitol.tn.gov",
+    "website": "https://tnhousegop.org/members/representative-john-crawford/"
+  },
+  "bio": "John Crawford serves as State Representative for Tennessee House of Representatives District 1. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "TN",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://tnhousegop.org/members/representative-john-crawford/"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/tn/legislature/John-Crawford-d1ead0ef-cc7a-48b3-9fec-0afc8b9d013d.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "http://www.capitol.tn.gov/house/members/images/h1.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/John_Crawford_(Tennessee)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/John_Crawford_(Tennessee_politician)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/66050/john-crawford"
+    },
+    {
+      "title": "Public source",
+      "url": "https://tnhousegop.org/members/representative-john-crawford"
+    },
+    {
+      "title": "Public source",
+      "url": "https://wapp.capitol.tn.gov/apps/LegislatorInfo/directory.aspx?chamber=H"
+    },
+    {
+      "title": "Public source",
+      "url": "https://wapp.capitol.tn.gov/apps/legislatorinfo/member.aspx?district=H1"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.capitol.tn.gov/house/members"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

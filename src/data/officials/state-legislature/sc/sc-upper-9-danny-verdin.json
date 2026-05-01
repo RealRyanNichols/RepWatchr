@@ -1,0 +1,61 @@
+{
+  "id": "danny-verdin",
+  "name": "Danny Verdin",
+  "firstName": "Danny",
+  "lastName": "Verdin",
+  "party": "R",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-9",
+  "jurisdiction": "South Carolina Senate",
+  "county": [
+    "South Carolina"
+  ],
+  "termStart": "",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 412, Gressette Building P.O. Box 142, Columbia, SC 29201",
+    "phone": "803-212-6250",
+    "email": "dannyverdin@scsenate.gov",
+    "website": "https://scstatehouse.gov/member.php?code=1874999775"
+  },
+  "bio": "Danny Verdin serves as State Senator for South Carolina Senate District 9. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "SC",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://scstatehouse.gov/member.php?code=1874999775"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/sc/legislature/Daniel-B-Danny-Verdin-III-0ed8d824-c5b2-47c6-9970-2c475cbfd9ac.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Daniel_Verdin"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Danny_Verdin"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/48080/danny-verdin-iii"
+    },
+    {
+      "title": "Public source",
+      "url": "https://scstatehouse.gov/member.php?chamber=S"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.scstatehouse.gov/member.php?chamber=S"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.scstatehouse.gov/member.php?code=1874999775"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

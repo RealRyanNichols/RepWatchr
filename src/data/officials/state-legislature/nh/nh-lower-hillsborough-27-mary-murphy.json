@@ -1,0 +1,68 @@
+{
+  "id": "mary-murphy",
+  "name": "Mary Murphy",
+  "firstName": "Mary",
+  "lastName": "Murphy",
+  "photo": "/images/officials/state-legislature/nh/mary-murphy.jpg",
+  "photoSourceUrl": "https://www.marymurphynh.com/__static/f58f47d1-c80b-4bd0-84ac-d2baddf9754f/image_desktop",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-Hillsborough 27",
+  "jurisdiction": "New Hampshire House of Representatives",
+  "county": [
+    "New Hampshire"
+  ],
+  "termStart": "2024-12-04",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "State House 107 N. Main St., Concord, NH 03301",
+    "phone": "603-271-3661",
+    "email": "mary.murphy@gc.nh.gov",
+    "website": "https://gc.nh.gov/house/members/member.aspx?pid=11360"
+  },
+  "bio": "Mary Murphy serves as State Representative for New Hampshire House of Representatives District Hillsborough 27. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "NH",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://gc.nh.gov/house/members/member.aspx?pid=11360"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/nh/legislature/Mary-Murphy-bdc7b519-4849-4992-b21b-f5563d642285.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://www.marymurphynh.com/__static/f58f47d1-c80b-4bd0-84ac-d2baddf9754f/image_desktop"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Mary_Murphy_(New_Hampshire)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Mary_Murphy_(New_Hampshire_politician)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://gencourt.state.nh.us/house/members/member.aspx?pid=11360"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/218997/mary-murphy"
+    },
+    {
+      "title": "Public source",
+      "url": "https://marycarrollmurphynh.com"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/marycarrollmurphy"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

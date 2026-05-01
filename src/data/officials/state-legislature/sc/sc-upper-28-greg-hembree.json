@@ -1,0 +1,69 @@
+{
+  "id": "greg-hembree",
+  "name": "Greg Hembree",
+  "firstName": "Greg",
+  "lastName": "Hembree",
+  "party": "R",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-28",
+  "jurisdiction": "South Carolina Senate",
+  "county": [
+    "South Carolina"
+  ],
+  "termStart": "",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 402, Gressette Building P.O. Box 142, Columbia, SC 29201",
+    "phone": "803-212-6350",
+    "email": "greghembree@scsenate.gov",
+    "website": "https://scstatehouse.gov/member.php?code=0819318084"
+  },
+  "bio": "Greg Hembree serves as State Senator for South Carolina Senate District 28. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "SC",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://scstatehouse.gov/member.php?code=0819318084"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/sc/legislature/Greg-Hembree-d09cb270-bb44-44e7-86d6-a880ce40d93d.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Greg_Hembree"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Greg_Hembree"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/139435/greg-hembree"
+    },
+    {
+      "title": "Public source",
+      "url": "https://scstatehouse.gov/member.php?chamber=S"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/greg-hembree-64b31632"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.myrtlebeachlawfirm.net/greg-hembree.php"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.scstatehouse.gov/member.php?chamber=S"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.scstatehouse.gov/member.php?code=0819318084"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

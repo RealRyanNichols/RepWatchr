@@ -1,0 +1,64 @@
+{
+  "id": "minnie-gonzalez",
+  "name": "Minnie Gonzalez",
+  "firstName": "Minnie",
+  "lastName": "Gonzalez",
+  "photo": "/images/officials/state-legislature/ct/minnie-gonzalez.jpg",
+  "photoSourceUrl": "http://www2.housedems.ct.gov/Gonzalez/images/Gonzalez_HS.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-3",
+  "jurisdiction": "Connecticut House of Representatives",
+  "county": [
+    "Connecticut"
+  ],
+  "termStart": "1997-01-08",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 4031, Legislative Office Building 300 Capitol Ave., Hartford, CT 06106",
+    "phone": "860-240-8585",
+    "email": "minnie.gonzalez@cga.ct.gov",
+    "website": "https://cga.ct.gov/asp/CGABillStatus/CGAMemberBills.asp?dist_code=%27003%27&dist_name=Gonzalez,%20Minnie"
+  },
+  "bio": "Minnie Gonzalez serves as State Representative for Connecticut House of Representatives District 3. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "CT",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://cga.ct.gov/asp/CGABillStatus/CGAMemberBills.asp?dist_code=%27003%27&dist_name=Gonzalez,%20Minnie"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ct/legislature/Minnie-Gonzalez-57900db1-ade5-4107-8025-a0c664f41a32.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "http://www2.housedems.ct.gov/Gonzalez/images/Gonzalez_HS.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "ftp://ftp.cga.ct.gov/pub/data/LegislatorDatabase.csv"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Minnie_Gonzalez"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Minnie_Gonzalez"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/14045/minnie-gonzalez"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.housedems.ct.gov/Gonzalez"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

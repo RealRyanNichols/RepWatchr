@@ -1,0 +1,64 @@
+{
+  "id": "geoff-smith",
+  "name": "Geoff Smith",
+  "firstName": "Geoff",
+  "lastName": "Smith",
+  "photo": "/images/officials/state-legislature/nh/geoff-smith.jpg",
+  "photoSourceUrl": "https://www.gannett-cdn.com/presto/2022/09/08/NFDD/05d04a1f-87b2-4f2f-be88-18c7eefc1bc2-Gsmith_Headshot.jpg?width=300&height=355&fit=crop&format=pjpg&auto=webp",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-Strafford 21",
+  "jurisdiction": "New Hampshire House of Representatives",
+  "county": [
+    "New Hampshire"
+  ],
+  "termStart": "2022-12-07",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "State House 107 N. Main St., Concord, NH 03301",
+    "phone": "603-271-3661",
+    "email": "geoff.smith@gc.nh.gov",
+    "website": "https://gc.nh.gov/house/members/member.aspx?pid=10905"
+  },
+  "bio": "Geoff Smith serves as State Representative for New Hampshire House of Representatives District Strafford 21. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "NH",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://gc.nh.gov/house/members/member.aspx?pid=10905"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/nh/legislature/Geoffrey-Smith-1d25683b-5c85-41cb-8585-6e18ddd0f648.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://www.gannett-cdn.com/presto/2022/09/08/NFDD/05d04a1f-87b2-4f2f-be88-18c7eefc1bc2-Gsmith_Headshot.jpg?width=300&height=355&fit=crop&format=pjpg&auto=webp"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Geoff_Smith"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Geoffrey_Smith_(New_Hampshire_politician)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/210744/geoff-smith"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.gencourt.state.nh.us/house/members/member.aspx?pid=10905"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/geoffrey-smith-3b646a101"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

@@ -1,0 +1,57 @@
+{
+  "id": "judy-amabile",
+  "name": "Judy Amabile",
+  "firstName": "Judy",
+  "lastName": "Amabile",
+  "party": "D",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-18",
+  "jurisdiction": "Colorado Senate",
+  "county": [
+    "Colorado"
+  ],
+  "termStart": "2025-01-08",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "State Capitol Room 346, Colorado  Building 200 E. Colfax Ave., Denver, CO 80203",
+    "phone": "303-866-4872",
+    "email": "judy.amabile.senate@coleg.gov",
+    "website": "https://leg.colorado.gov/legislators/judy-amabile"
+  },
+  "bio": "Judy Amabile serves as State Senator for Colorado Senate District 18. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "CO",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://leg.colorado.gov/legislators/judy-amabile"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/co/legislature/Judy-Amabile-829879ea-a9a3-42b6-8f5f-d209b1cc961d.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Judith_Amabile"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Judy_Amabile"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Judy_Amabile"
+    },
+    {
+      "title": "Public source",
+      "url": "https://leg.colorado.gov/legislators"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/judyamabilehd13"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

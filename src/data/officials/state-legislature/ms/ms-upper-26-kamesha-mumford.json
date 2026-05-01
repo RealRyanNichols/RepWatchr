@@ -1,0 +1,51 @@
+{
+  "id": "kamesha-mumford",
+  "name": "Kamesha Mumford",
+  "firstName": "Kamesha",
+  "lastName": "Mumford",
+  "photo": "/images/officials/state-legislature/ms/kamesha-mumford.jpg",
+  "photoSourceUrl": "https://i0.wp.com/www.mississippifreepress.org/wp-content/uploads/2025/11/Kamesha-Mumford_courtesy.jpg?w=1200&quality=89&ssl=1",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-26",
+  "jurisdiction": "Mississippi Senate",
+  "county": [
+    "Mississippi"
+  ],
+  "termStart": "2026-01-06",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "State Capitol 400 High St., Jackson, MS 39201",
+    "email": "kmumford@senate.ms.gov",
+    "website": "https://billstatus.ls.state.ms.us/members/senate/mumford.xml"
+  },
+  "bio": "Kamesha Mumford serves as State Senator for Mississippi Senate District 26. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "MS",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://billstatus.ls.state.ms.us/members/senate/mumford.xml"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ms/legislature/Kamesha-Mumford-d0269daa-032c-482b-9faf-1d569a4645a9.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://i0.wp.com/www.mississippifreepress.org/wp-content/uploads/2025/11/Kamesha-Mumford_courtesy.jpg?w=1200&quality=89&ssl=1"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Kamesha_Mumford"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/kamesha-mumford-03695b25"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

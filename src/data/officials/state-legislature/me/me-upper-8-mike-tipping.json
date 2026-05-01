@@ -1,0 +1,60 @@
+{
+  "id": "mike-tipping",
+  "name": "Mike Tipping",
+  "firstName": "Mike",
+  "lastName": "Tipping",
+  "photo": "/images/officials/state-legislature/me/mike-tipping.jpg",
+  "photoSourceUrl": "https://legislature.maine.gov/uploads/visual_edit/tipping-1.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-8",
+  "jurisdiction": "Maine Senate",
+  "county": [
+    "Maine"
+  ],
+  "termStart": "2022-12-07",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "3 State House Station, Augusta, ME 04333",
+    "phone": "207-287-1515",
+    "email": "mike.tipping@legislature.maine.gov",
+    "website": "https://legislature.maine.gov/District8"
+  },
+  "bio": "Mike Tipping serves as State Senator for Maine Senate District 8. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "ME",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://legislature.maine.gov/District8"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/me/legislature/Michael-Tipping-a18c5356-5572-4a99-8a7c-e86105afb821.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://legislature.maine.gov/uploads/visual_edit/tipping-1.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Mike_Tipping"
+    },
+    {
+      "title": "Public source",
+      "url": "https://legislature.maine.gov/district8"
+    },
+    {
+      "title": "Public source",
+      "url": "https://legislature.maine.gov/uploads/visual_edit/131-senator-contact-information-2.xlsx"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/mike-tipping-467b8a1a"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

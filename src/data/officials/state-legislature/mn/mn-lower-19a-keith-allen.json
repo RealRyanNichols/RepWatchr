@@ -1,0 +1,64 @@
+{
+  "id": "keith-allen",
+  "name": "Keith Allen",
+  "firstName": "Keith",
+  "lastName": "Allen",
+  "photo": "/images/officials/state-legislature/mn/keith-allen.jpg",
+  "photoSourceUrl": "https://www.house.mn.gov/hinfo/memberimgls94/19A.gif",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-19A",
+  "jurisdiction": "Minnesota House of Representatives",
+  "county": [
+    "Minnesota"
+  ],
+  "termStart": "2025-01-14",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Centennial Office Building 658 Cedar St., Second Floor, St. Paul, MN 55155",
+    "phone": "651-296-8237",
+    "email": "rep.keith.allen@house.mn.gov",
+    "website": "https://www.house.mn.gov/members/profile/15627"
+  },
+  "bio": "Keith Allen serves as State Representative for Minnesota House of Representatives District 19A. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "MN",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.house.mn.gov/members/profile/15627"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/mn/legislature/Keith-Allen-939c0bab-e76d-443f-b46b-7f98d05036e2.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://www.house.mn.gov/hinfo/memberimgls94/19A.gif"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Keith_Allen"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Keith_Allen_(Minnesota)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Keith_Allen_(Minnesota_politician)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/218769/keith-allen"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/keith-allen-a3560711"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

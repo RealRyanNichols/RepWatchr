@@ -1,0 +1,60 @@
+{
+  "id": "erick-harris",
+  "name": "Erick Harris",
+  "firstName": "Erick",
+  "lastName": "Harris",
+  "photo": "/images/officials/state-legislature/ok/erick-harris.jpg",
+  "photoSourceUrl": "https://s3.amazonaws.com/ballotpedia-api4/files/thumbs/200/300/ErickHarris.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-39",
+  "jurisdiction": "Oklahoma House of Representatives",
+  "county": [
+    "Oklahoma"
+  ],
+  "termStart": "2024-02-21",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 336, 2300 N. Lincoln Blvd., Oklahoma City, OK 73105",
+    "phone": "405-557-7342",
+    "email": "erick.harris@okhouse.gov",
+    "website": "https://www.okhouse.gov/representatives/erick-harris"
+  },
+  "bio": "Erick Harris serves as State Representative for Oklahoma House of Representatives District 39. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "OK",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.okhouse.gov/representatives/erick-harris"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ok/legislature/Erick-Harris-57fd0b98-5608-470a-a70b-971165572afb.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://s3.amazonaws.com/ballotpedia-api4/files/thumbs/200/300/ErickHarris.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Erick_Harris"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Erick_Harris_(politician)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/181834/erick-harris"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/erickwharris"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

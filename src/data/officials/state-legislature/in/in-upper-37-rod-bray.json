@@ -1,0 +1,72 @@
+{
+  "id": "rod-bray",
+  "name": "Rod Bray",
+  "firstName": "Rod",
+  "lastName": "Bray",
+  "photo": "/images/officials/state-legislature/in/rod-bray.jpg",
+  "photoSourceUrl": "https://cdn.zephyrcms.com/300cdb3a-5a3e-4686-9576-da26eb5ed28f/-/progressive/yes/-/format/jpeg/-/scale_crop/200x300/center/-/stretch/off/bray-website.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-37",
+  "jurisdiction": "Indiana Senate",
+  "county": [
+    "Indiana"
+  ],
+  "termStart": "2012-11-07",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "200 W. Washington St., Indianapolis, IN 46204",
+    "phone": "317-232-9400",
+    "email": "s37@iga.in.gov",
+    "website": "https://iga.in.gov/legislative/2021/legislators/legislator_rodric_bray_1106"
+  },
+  "bio": "Rod Bray serves as State Senator for Indiana Senate District 37. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "IN",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://iga.in.gov/legislative/2021/legislators/legislator_rodric_bray_1106"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/in/legislature/Rodric-Bray-766cf9c2-a001-49a1-8fba-075a0510767d.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://cdn.zephyrcms.com/300cdb3a-5a3e-4686-9576-da26eb5ed28f/-/progressive/yes/-/format/jpeg/-/scale_crop/200x300/center/-/stretch/off/bray-website.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://api.iga.in.gov/2021/legislators/rodric_bray_1106"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Rodric_D._Bray"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Rodric_Bray"
+    },
+    {
+      "title": "Public source",
+      "url": "https://iga.in.gov/legislative/2022/legislators/legislator_rodric_bray_1106"
+    },
+    {
+      "title": "Public source",
+      "url": "https://iga.in.gov/legislative/2022/legislators/legislator_rodric_bray_1106/"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/136001/rodric-bray"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.indianasenaterepublicans.com/bray"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

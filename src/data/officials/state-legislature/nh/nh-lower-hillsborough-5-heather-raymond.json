@@ -1,0 +1,61 @@
+{
+  "id": "heather-raymond",
+  "name": "Heather Raymond",
+  "firstName": "Heather",
+  "lastName": "Raymond",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-Hillsborough 5",
+  "jurisdiction": "New Hampshire House of Representatives",
+  "county": [
+    "New Hampshire"
+  ],
+  "termStart": "2022-12-07",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "State House 107 N. Main St., Concord, NH 03301",
+    "phone": "603-271-3661",
+    "email": "heather.raymond@gc.nh.gov",
+    "website": "https://gc.nh.gov/house/members/member.aspx?pid=10779"
+  },
+  "bio": "Heather Raymond serves as State Representative for New Hampshire House of Representatives District Hillsborough 5. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "NH",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://gc.nh.gov/house/members/member.aspx?pid=10779"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/nh/legislature/Heather-Raymond-e1e26c8f-3b7f-42bf-89e2-33331ff83bb3.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Heather_Raymond"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Heather_Raymond"
+    },
+    {
+      "title": "Public source",
+      "url": "https://gencourt.state.nh.us/house/members/member.aspx?pid=10779"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/208806/heather-raymond"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.gencourt.state.nh.us/house/members/member.aspx?pid=10779"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/heather-raymond-59482985"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

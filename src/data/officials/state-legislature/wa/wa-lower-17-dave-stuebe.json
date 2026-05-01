@@ -1,0 +1,65 @@
+{
+  "id": "dave-stuebe",
+  "name": "Dave Stuebe",
+  "firstName": "Dave",
+  "lastName": "Stuebe",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-17",
+  "jurisdiction": "Washington House of Representatives",
+  "county": [
+    "Washington"
+  ],
+  "termStart": "2025-01-13",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 427, John L. O'Brien Building P.O. Box 40600, Olympia, WA 98504",
+    "phone": "360-786-7976",
+    "email": "david.stuebe@leg.wa.gov",
+    "website": "https://davidstuebe.houserepublicans.wa.gov/"
+  },
+  "bio": "Dave Stuebe serves as State Representative for Washington House of Representatives District 17. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "WA",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://davidstuebe.houserepublicans.wa.gov/"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/wa/legislature/Dave-Stuebe-962ff818-cdb3-4874-9918-9bd4c6da84a9.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/David_Stuebe"
+    },
+    {
+      "title": "Public source",
+      "url": "https://davidstuebe.houserepublicans.wa.gov"
+    },
+    {
+      "title": "Public source",
+      "url": "https://davidstuebe.houserepublicans.wa.gov/about"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/David_Stuebe"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/217585/david-stuebe"
+    },
+    {
+      "title": "Public source",
+      "url": "https://leg.wa.gov/legislators/member/david-stuebe"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/colonel-david-stuebe-usmc-ret-490833105"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

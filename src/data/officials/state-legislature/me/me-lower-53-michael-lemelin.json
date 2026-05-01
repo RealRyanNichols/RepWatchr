@@ -1,0 +1,64 @@
+{
+  "id": "michael-lemelin",
+  "name": "Michael Lemelin",
+  "firstName": "Michael",
+  "lastName": "Lemelin",
+  "photo": "/images/officials/state-legislature/me/michael-lemelin.jpg",
+  "photoSourceUrl": "https://legislature.maine.gov/house/house/Repository/MemberProfiles/2f05ff55-e46c-41ce-b4b9-5d144bc7b7ee_LemelinNEW.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-53",
+  "jurisdiction": "Maine House of Representatives",
+  "county": [
+    "Maine"
+  ],
+  "termStart": "2022-12-07",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 332, House Republican Office 2 State House Station, Augusta, ME 04333",
+    "phone": "800-423-2900",
+    "email": "michael.lemelin@legislature.maine.gov",
+    "website": "https://legislature.maine.gov/house/house/MemberProfiles/Details/1428"
+  },
+  "bio": "Michael Lemelin serves as State Representative for Maine House of Representatives District 53. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "ME",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://legislature.maine.gov/house/house/MemberProfiles/Details/1428"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/me/legislature/Michael-H-Lemelin-feb330d7-8122-4547-b38a-38279732a9ce.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://legislature.maine.gov/house/house/Repository/MemberProfiles/2f05ff55-e46c-41ce-b4b9-5d144bc7b7ee_LemelinNEW.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Michael_Lemelin"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/181242/michael-lemelin"
+    },
+    {
+      "title": "Public source",
+      "url": "https://legislature.maine.gov/house/house/MemberProfiles/ListAlpha"
+    },
+    {
+      "title": "Public source",
+      "url": "https://mainehousegop.org/members/lemelin-michael"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/michael-lemelin-6a151a12"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

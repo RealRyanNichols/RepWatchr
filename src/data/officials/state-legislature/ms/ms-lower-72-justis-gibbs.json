@@ -1,0 +1,53 @@
+{
+  "id": "justis-gibbs",
+  "name": "Justis Gibbs",
+  "firstName": "Justis",
+  "lastName": "Gibbs",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-72",
+  "jurisdiction": "Mississippi House of Representatives",
+  "county": [
+    "Mississippi"
+  ],
+  "termStart": "2024-01-02",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "State Capitol 400 High St., Jackson, MS 39201",
+    "phone": "601-359-3728",
+    "email": "gibbs@house.ms.gov",
+    "website": "https://billstatus.ls.state.ms.us/members/house/gibbs_(72nd).xml"
+  },
+  "bio": "Justis Gibbs serves as State Representative for Mississippi House of Representatives District 72. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "MS",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://billstatus.ls.state.ms.us/members/house/gibbs_(72nd).xml"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ms/legislature/Justis-Gibbs-48af55d6-95ef-4e57-9ec3-a566af0ce517.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Justis_Gibbs"
+    },
+    {
+      "title": "Public source",
+      "url": "https://gibbstravis.com/our-team/justis-r.-gibbs-ii"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.gibbstravis.com/our-team/justis-r.-gibbs-ii"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/justis-robert-gibbs-ii-b9a61815b"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

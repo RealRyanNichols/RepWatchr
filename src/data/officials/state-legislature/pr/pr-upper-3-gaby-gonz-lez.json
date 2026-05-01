@@ -1,0 +1,45 @@
+{
+  "id": "gaby-gonz-lez",
+  "name": "Gaby Gonz\u00e1lez",
+  "firstName": "Gaby",
+  "lastName": "Gonz\u00e1lez",
+  "party": "NP",
+  "level": "state",
+  "position": "Territorial Senator",
+  "district": "3",
+  "jurisdiction": "Puerto Rico Senate",
+  "county": [
+    "Puerto Rico"
+  ],
+  "termStart": "2025-01-02",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Senado, El Capitolio P.O. Box 9023431, San Juan, PR 00902",
+    "phone": "787-724-2030",
+    "email": "hgonzalez@senado.pr.gov",
+    "website": "https://www.senado.pr.gov/h%C3%A9ctor-gabriel-gonz%C3%A1lez-l%C3%B3pez"
+  },
+  "bio": "Gaby Gonz\u00e1lez serves as Territorial Senator for Puerto Rico Senate District 3. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "PR",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.senado.pr.gov/h%C3%A9ctor-gabriel-gonz%C3%A1lez-l%C3%B3pez"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/pr/legislature/Gaby-Gonzlez-0a3a6a9f-8f7d-4a19-8abb-098ca272de6d.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Gabriel_Gaby_Gonz%C3%A1les"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.senado.pr.gov/senators/h%C3%A9ctor-gabriel-gonz%C3%A1lez-l%C3%B3pez"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

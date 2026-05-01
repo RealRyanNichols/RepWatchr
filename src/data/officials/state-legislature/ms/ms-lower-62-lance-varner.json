@@ -1,0 +1,49 @@
+{
+  "id": "lance-varner",
+  "name": "Lance Varner",
+  "firstName": "Lance",
+  "lastName": "Varner",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-62",
+  "jurisdiction": "Mississippi House of Representatives",
+  "county": [
+    "Mississippi"
+  ],
+  "termStart": "2024-01-02",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "State Capitol 400 High St., Jackson, MS 39201",
+    "phone": "601-359-3728",
+    "email": "varner@house.ms.gov",
+    "website": "https://billstatus.ls.state.ms.us/members/house/varner.xml"
+  },
+  "bio": "Lance Varner serves as State Representative for Mississippi House of Representatives District 62. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "MS",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://billstatus.ls.state.ms.us/members/house/varner.xml"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ms/legislature/Lance-Varner-f9eedb57-45af-4743-b869-ece1ccb643e2.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Lance_Varner"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Lance_Varner"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/211438/lance-varner"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

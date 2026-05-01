@@ -1,0 +1,59 @@
+{
+  "id": "joe-webb",
+  "name": "Joe Webb",
+  "firstName": "Joe",
+  "lastName": "Webb",
+  "photo": "/images/officials/state-legislature/wy/joe-webb.jpg",
+  "photoSourceUrl": "https://wyoleg.gov/LegislatorSummary/Photos/68th-WebbJoe.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-19",
+  "jurisdiction": "Wyoming House of Representatives",
+  "county": [
+    "Wyoming"
+  ],
+  "termStart": "2025-01-06",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "State Capitol 200 W. 24th St., Cheyenne, WY 82002",
+    "email": "joe.webb@wyoleg.gov",
+    "website": "https://wyoleg.gov/Legislators/2025/H/2120"
+  },
+  "bio": "Joe Webb serves as State Representative for Wyoming House of Representatives District 19. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "WY",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://wyoleg.gov/Legislators/2025/H/2120"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/wy/legislature/Joe-Webb-19e421d2-03a4-4a0a-86e8-b18b63d13822.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://wyoleg.gov/LegislatorSummary/Photos/68th-WebbJoe.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Joseph_Webb_(Wyoming)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Joe_Webb_(politician)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/218322/joe-webb"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/joewebb82937"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

@@ -1,0 +1,75 @@
+{
+  "id": "dru-kanuha",
+  "name": "Dru Kanuha",
+  "firstName": "Dru",
+  "lastName": "Kanuha",
+  "party": "D",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-3",
+  "jurisdiction": "Hawaii Senate",
+  "county": [
+    "Hawaii"
+  ],
+  "termStart": "2018-11-06",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "State Capitol Room 206, 415 S. Beretania St., Honolulu, HI 96813",
+    "phone": "808-586-9385",
+    "email": "senkanuha@capitol.hawaii.gov",
+    "website": "https://capitol.hawaii.gov/memberpage.aspx?member=kanuha&year=2019",
+    "socialMedia": {
+      "x": "https://x.com/senatorkanuha",
+      "twitter": "https://x.com/senatorkanuha",
+      "facebook": "https://facebook.com/senatorkanuha",
+      "instagram": "https://instagram.com/senatorkanuha"
+    }
+  },
+  "bio": "Dru Kanuha serves as State Senator for Hawaii Senate District 3. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "HI",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://capitol.hawaii.gov/memberpage.aspx?member=kanuha&year=2019"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/hi/legislature/Dru-Mamo-Kanuha-e75469cc-851a-4e63-9908-9e63b5215448.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Dru_Kanuha"
+    },
+    {
+      "title": "Public source",
+      "url": "https://capitol.hawaii.gov/members/legislators.aspx?chamber=S"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Dru_Kanuha"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.capitol.hawaii.gov/legislature/memberpage.aspx?member=184&year=2023"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.capitol.hawaii.gov/legislature/memberpage.aspx?member=184&year=2024"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.capitol.hawaii.gov/memberpage.aspx?member=kanuha&year=2021"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.capitol.hawaii.gov/memberpage.aspx?member=kanuha&year=2022"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.capitol.hawaii.gov/members/legislators.aspx"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

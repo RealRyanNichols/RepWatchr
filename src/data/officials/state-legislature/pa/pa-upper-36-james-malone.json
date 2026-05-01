@@ -1,0 +1,53 @@
+{
+  "id": "james-malone",
+  "name": "James Malone",
+  "firstName": "James",
+  "lastName": "Malone",
+  "party": "D",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-36",
+  "jurisdiction": "Pennsylvania Senate",
+  "county": [
+    "Pennsylvania"
+  ],
+  "termStart": "2025-05-05",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 184, Main Capitol Senate Box 203036, Harrisburg, PA 17120",
+    "phone": "717-787-4420",
+    "email": "malone@pasenate.com",
+    "website": "https://www.palegis.us/senate/members/bio/2061/sen-malone"
+  },
+  "bio": "James Malone serves as State Senator for Pennsylvania Senate District 36. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "PA",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.palegis.us/senate/members/bio/2061/sen-malone"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/pa/legislature/James-Malone-fea0b7c4-d51a-463f-964a-75722678083b.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/James_Malone_(Pennsylvania)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/James_Malone_(American_politician)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/220801/james-malone"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/jamesandrewmalone"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

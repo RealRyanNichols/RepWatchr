@@ -1,0 +1,57 @@
+{
+  "id": "kai-belton",
+  "name": "Kai Belton",
+  "firstName": "Kai",
+  "lastName": "Belton",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-100",
+  "jurisdiction": "Connecticut House of Representatives",
+  "county": [
+    "Connecticut"
+  ],
+  "termStart": "2023-03-07",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 3001, Legislative Office Building 300 Capitol Ave., Hartford, CT 06016",
+    "phone": "860-240-8585",
+    "email": "kai.belton@cga.ct.gov",
+    "website": "https://housedems.ct.gov/belton"
+  },
+  "bio": "Kai Belton serves as State Representative for Connecticut House of Representatives District 100. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "CT",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://housedems.ct.gov/belton"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ct/legislature/Kai-J-Belton-75ee19d6-dea2-4ef3-9682-0bfa9f53fb38.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "ftp://ftp.cga.ct.gov/pub/data/LegislatorDatabase.csv"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Kai_Juanna_Belton"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Kai_Belton"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/211498/kai-belton"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/kai-belton-97218962"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

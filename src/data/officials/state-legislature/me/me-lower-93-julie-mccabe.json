@@ -1,0 +1,45 @@
+{
+  "id": "julie-mccabe",
+  "name": "Julie McCabe",
+  "firstName": "Julie",
+  "lastName": "McCabe",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-93",
+  "jurisdiction": "Maine House of Representatives",
+  "county": [
+    "Maine"
+  ],
+  "termStart": "2024-12-03",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 333, House Democratic Office 2 State House Station, Augusta, ME 04333",
+    "phone": "800-423-2900",
+    "email": "julia.mccabe@legislature.maine.gov",
+    "website": "https://legislature.maine.gov/house/house/MemberProfiles/Details/3130"
+  },
+  "bio": "Julie McCabe serves as State Representative for Maine House of Representatives District 93. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "ME",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://legislature.maine.gov/house/house/MemberProfiles/Details/3130"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/me/legislature/Julie-McCabe-ec1a81b6-7c7f-4bac-99d4-ab0677e865d1.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Julia_McCabe"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.maine.gov/housedems/node/4109"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

@@ -1,0 +1,61 @@
+{
+  "id": "veronica-paiz",
+  "name": "Veronica Paiz",
+  "firstName": "Veronica",
+  "lastName": "Paiz",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-10",
+  "jurisdiction": "Michigan House of Representatives",
+  "county": [
+    "Michigan"
+  ],
+  "termStart": "2025-01-01",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room N-689, Anderson House Office Building 124 N. Capitol Ave., Lansing, MI 48933",
+    "phone": "517-373-0857",
+    "email": "veronicapaiz@house.mi.gov",
+    "website": "https://housedems.com/Veronica-Paiz/"
+  },
+  "bio": "Veronica Paiz serves as State Representative for Michigan House of Representatives District 10. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "MI",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://housedems.com/Veronica-Paiz/"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/mi/legislature/Veronica-Paiz-8c335851-e7f6-40d6-b83c-fe413f21934e.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Veronica_Paiz"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Veronica_Paiz"
+    },
+    {
+      "title": "Public source",
+      "url": "https://housedems.com/Veronica-Paiz"
+    },
+    {
+      "title": "Public source",
+      "url": "https://housedems.com/veronica-paiz/about"
+    },
+    {
+      "title": "Members List Page",
+      "url": "https://www.house.mi.gov/AllRepresentatives"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/vpaiz"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

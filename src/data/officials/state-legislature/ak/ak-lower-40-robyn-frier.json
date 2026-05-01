@@ -1,0 +1,68 @@
+{
+  "id": "robyn-frier",
+  "name": "Robyn Frier",
+  "firstName": "Robyn",
+  "lastName": "Frier",
+  "photo": "/images/officials/state-legislature/ak/robyn-frier.jpg",
+  "photoSourceUrl": "https://s3.amazonaws.com/ballotpedia-api4/files/thumbs/200/300/RobynBurke2024.jpeg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-40",
+  "jurisdiction": "Alaska House of Representatives",
+  "county": [
+    "Alaska"
+  ],
+  "termStart": "2025-01-21",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "State Capitol Room 108, 120 4th St., Juneau, AK 99801",
+    "phone": "907-465-3473",
+    "email": "representative.robyn.frier@akleg.gov",
+    "website": "https://www.akleg.gov/basis/Member/Detail/34?code=bur"
+  },
+  "bio": "Robyn Frier serves as State Representative for Alaska House of Representatives District 40. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "AK",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.akleg.gov/basis/Member/Detail/34?code=bur"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ak/legislature/Robyn-Burke-c3b004d2-d62a-45de-a212-382396a20b59.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://s3.amazonaws.com/ballotpedia-api4/files/thumbs/200/300/RobynBurke2024.jpeg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Robyn_Burke"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Robyn_Frier"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Robyn_Burke"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/218219/robyn-burke"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.akleg.gov/basis/Member/Detail/34?code=frb"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/robyn-niayuq-burke-20a378161"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

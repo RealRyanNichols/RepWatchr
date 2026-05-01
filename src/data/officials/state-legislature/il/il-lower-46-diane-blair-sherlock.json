@@ -1,0 +1,69 @@
+{
+  "id": "diane-blair-sherlock",
+  "name": "Diane Blair-Sherlock",
+  "firstName": "Diane",
+  "lastName": "Blair-Sherlock",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-46",
+  "jurisdiction": "Illinois House of Representatives",
+  "county": [
+    "Illinois"
+  ],
+  "termStart": "2023-01-11",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 246-W, Stratton Office Building, Springfield, IL 62706",
+    "phone": "217-782-8158",
+    "email": "staterep46@gmail.com",
+    "website": "https://ilga.gov/house/Rep.asp?GA=103&MemberID=3234"
+  },
+  "bio": "Diane Blair-Sherlock serves as State Representative for Illinois House of Representatives District 46. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "IL",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://ilga.gov/house/Rep.asp?GA=103&MemberID=3234"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/il/legislature/Diane-Blair-Sherlock-d5c22b1c-8057-40bf-aea6-0298070ad67b.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Diane_Blair-Sherlock"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Diane_Blair-Sherlock"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ilga.gov/house/default.asp?GA=103"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/204453/diane-blair-sherlock"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.ilga.gov/House/Members/Details/3425"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.ilga.gov/house/Rep.asp?GA=103&MemberID=3234"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.ilga.gov/house/Rep.asp?GA=104&MemberID=3425"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.ilga.gov/house/Rep.asp?MemberID=3425"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

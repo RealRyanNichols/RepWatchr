@@ -1,0 +1,61 @@
+{
+  "id": "marissa-jim-nez",
+  "name": "Marissa Jim\u00e9nez",
+  "firstName": "Marissa",
+  "lastName": "Jim\u00e9nez",
+  "party": "NP",
+  "level": "state",
+  "position": "Territorial Senator",
+  "district": "8",
+  "jurisdiction": "Puerto Rico Senate",
+  "county": [
+    "Puerto Rico"
+  ],
+  "termStart": "2021-01-02",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Senado, El Capitolio P.O. Box 9023431, San Juan, PR 00902",
+    "phone": "787-724-2030",
+    "email": "majimenez@senado.pr.gov",
+    "website": "https://senado.pr.gov/senators/hon-marissa-jim%C3%A9nez-santoni"
+  },
+  "bio": "Marissa Jim\u00e9nez serves as Territorial Senator for Puerto Rico Senate District 8. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "PR",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://senado.pr.gov/senators/hon-marissa-jim%C3%A9nez-santoni"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/pr/legislature/Marissa-Jimenez-9a9ebf96-43e3-41b9-976c-ffed31f5c0ec.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Marissa_Jim%C3%A9nez"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Marissa_Jim%C3%A9nez"
+    },
+    {
+      "title": "Public source",
+      "url": "https://senado.pr.gov/index.cfm?module=senadores"
+    },
+    {
+      "title": "Public source",
+      "url": "https://senado.pr.gov/senators/hon-marissa-jim\u00e9nez-santoni"
+    },
+    {
+      "title": "Public source",
+      "url": "https://sutra.oslpr.org/osl/esutra/AdmLegisladorReg.aspx?rid=699"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.senado.pr.gov/hon-marissa-jim-nez-santoni"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

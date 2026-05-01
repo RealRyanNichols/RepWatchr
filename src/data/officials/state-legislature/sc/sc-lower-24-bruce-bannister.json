@@ -1,0 +1,65 @@
+{
+  "id": "bruce-bannister",
+  "name": "Bruce Bannister",
+  "firstName": "Bruce",
+  "lastName": "Bannister",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-24",
+  "jurisdiction": "South Carolina House of Representatives",
+  "county": [
+    "South Carolina"
+  ],
+  "termStart": "2005-10-04",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 525, Blatt Building P.O. Box 11867, Columbia, SC 29201",
+    "phone": "803-734-3144",
+    "email": "brucebannister@schouse.gov",
+    "website": "https://scstatehouse.gov/member.php?code=0103409079"
+  },
+  "bio": "Bruce Bannister serves as State Representative for South Carolina House of Representatives District 24. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "SC",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://scstatehouse.gov/member.php?code=0103409079"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/sc/legislature/Bruce-W-Bannister-d4974849-0939-472c-9862-4d760889125e.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Bruce_Bannister"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Bruce_W._Bannister"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/59275/bruce-bannister"
+    },
+    {
+      "title": "Public source",
+      "url": "https://scstatehouse.gov/member.php?chamber=H"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/bruce-bannister-8b2a9b14"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.scstatehouse.gov/member.php?chamber=H"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.scstatehouse.gov/member.php?code=0103409079"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

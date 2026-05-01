@@ -1,0 +1,51 @@
+{
+  "id": "john-b-mccuskey",
+  "name": "John B. McCuskey",
+  "firstName": "John B.",
+  "lastName": "McCuskey",
+  "photo": "/images/officials/state-executive/wv/john-b-mccuskey.jpg",
+  "photoSourceUrl": "https://www.naag.org/wp-content/uploads/2025/01/ag-WA-McCusker.png",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "Attorney General",
+  "district": "West Virginia",
+  "jurisdiction": "West Virginia statewide public office",
+  "county": [
+    "West Virginia"
+  ],
+  "termStart": "2025-01-13",
+  "termEnd": "2029-01-15",
+  "contactInfo": {
+    "office": "State Capitol, 1900 Kanawha Blvd., E.; Charleston, WV 25305",
+    "phone": "304-558-2021",
+    "website": "http://www.legis.state.wv.us/House/lawmaker.cfm?member=Delegate+McCuskey"
+  },
+  "bio": "John B. McCuskey is listed as Attorney General for West Virginia. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "WV",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "http://www.legis.state.wv.us/House/lawmaker.cfm?member=Delegate+McCuskey"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/wv/executive/John-B-McCuskey-0788d53c-8461-4f0f-ba32-07f626cb45e1.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://www.naag.org/wp-content/uploads/2025/01/ag-WA-McCusker.png"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/John_B._McCuskey"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.naag.org/attorney-general/j-b-mccuskey/"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

@@ -1,0 +1,60 @@
+{
+  "id": "philip-oehlerking",
+  "name": "Philip Oehlerking",
+  "firstName": "Philip",
+  "lastName": "Oehlerking",
+  "photo": "/images/officials/state-legislature/mo/philip-oehlerking.jpg",
+  "photoSourceUrl": "https://house.mo.gov/MemberPhoto.aspx?id=2371",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-100",
+  "jurisdiction": "Missouri House of Representatives",
+  "county": [
+    "Missouri"
+  ],
+  "termStart": "2023-01-04",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 314, 201 W. Capitol Ave., Jefferson City, MO 65101",
+    "phone": "573-751-9765",
+    "email": "philip.oehlerking@house.mo.gov",
+    "website": "https://house.mo.gov/MemberDetails.aspx?district=100"
+  },
+  "bio": "Philip Oehlerking serves as State Representative for Missouri House of Representatives District 100. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "MO",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://house.mo.gov/MemberDetails.aspx?district=100"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/mo/legislature/Philip-Oehlerking-4d403f59-65f6-484f-9aeb-fe05380d4bcf.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://house.mo.gov/MemberPhoto.aspx?id=2371"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Philip_Oehlerking"
+    },
+    {
+      "title": "Public source",
+      "url": "https://house.mo.gov/MemberDetails.aspx?year=2023&code=R&district=100"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/169814/philip-oehlerking"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/philip-oehlerking-bb6423126"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

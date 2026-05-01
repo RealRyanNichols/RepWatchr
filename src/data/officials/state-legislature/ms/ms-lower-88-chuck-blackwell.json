@@ -1,0 +1,56 @@
+{
+  "id": "chuck-blackwell",
+  "name": "Chuck Blackwell",
+  "firstName": "Chuck",
+  "lastName": "Blackwell",
+  "photo": "/images/officials/state-legislature/ms/chuck-blackwell.jpg",
+  "photoSourceUrl": "https://billstatus.ls.state.ms.us/members/house/blackwell.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-88",
+  "jurisdiction": "Mississippi House of Representatives",
+  "county": [
+    "Mississippi"
+  ],
+  "termStart": "2024-01-02",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "State Capitol 400 High St., Jackson, MS 39201",
+    "phone": "601-359-3770",
+    "email": "cblackwell@house.ms.gov",
+    "website": "https://billstatus.ls.state.ms.us/members/house/blackwell.xml"
+  },
+  "bio": "Chuck Blackwell serves as State Representative for Mississippi House of Representatives District 88. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "MS",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://billstatus.ls.state.ms.us/members/house/blackwell.xml"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ms/legislature/Chuck-Blackwell-4a046f0b-1286-4bb3-aea0-7284adab76fd.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://billstatus.ls.state.ms.us/members/house/blackwell.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Charles_Blackwell"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.asbestoslawoptions.com/blackwell"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/charles-chuck-blackwell-994a5319"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

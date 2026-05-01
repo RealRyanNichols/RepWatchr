@@ -1,0 +1,69 @@
+{
+  "id": "chipalo-street",
+  "name": "Chipalo Street",
+  "firstName": "Chipalo",
+  "lastName": "Street",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-37",
+  "jurisdiction": "Washington House of Representatives",
+  "county": [
+    "Washington"
+  ],
+  "termStart": "2023-01-09",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 310, John L. O'Brien Building P.O. Box 40600, Olympia, WA 98504",
+    "phone": "360-786-7838",
+    "email": "chipalo.street@leg.wa.gov",
+    "website": "https://housedemocrats.wa.gov/Street/"
+  },
+  "bio": "Chipalo Street serves as State Representative for Washington House of Representatives District 37. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "WA",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://housedemocrats.wa.gov/Street/"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/wa/legislature/Chipalo-Street-84aaed1c-e50a-4bbc-8f63-afd22e825ec2.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://app.leg.wa.gov/ContentParts/MemberDirectory/?a=House"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Chipalo_Street"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Chipalo_Street"
+    },
+    {
+      "title": "Public source",
+      "url": "https://housedemocrats.wa.gov/street"
+    },
+    {
+      "title": "Public source",
+      "url": "https://housedemocrats.wa.gov/street/"
+    },
+    {
+      "title": "Public source",
+      "url": "https://housedemocrats.wa.gov/street/biography"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/207444/chipalo-street"
+    },
+    {
+      "title": "Public source",
+      "url": "https://leg.wa.gov/legislators/member/chipalo-street"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

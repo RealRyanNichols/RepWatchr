@@ -1,0 +1,64 @@
+{
+  "id": "brandon-elefante",
+  "name": "Brandon Elefante",
+  "firstName": "Brandon",
+  "lastName": "Elefante",
+  "party": "D",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-16",
+  "jurisdiction": "Hawaii Senate",
+  "county": [
+    "Hawaii"
+  ],
+  "termStart": "2022-11-08",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "State Capitol Room 217, 415 S. Beretania St., Honolulu, HI 96813",
+    "phone": "808-586-6230",
+    "email": "senelefante@capitol.hawaii.gov",
+    "website": "https://www.capitol.hawaii.gov/legislature/memberpage.aspx?member=229",
+    "socialMedia": {
+      "instagram": "https://instagram.com/senelefante"
+    }
+  },
+  "bio": "Brandon Elefante serves as State Senator for Hawaii Senate District 16. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "HI",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.capitol.hawaii.gov/legislature/memberpage.aspx?member=229"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/hi/legislature/Brandon-JC-Elefante-22139704-8a26-4f4a-8a03-989990c21f37.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Brandon_Elefante"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Brandon_Elefante"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.capitol.hawaii.gov/legislature/memberpage.aspx?member=229&year=2023"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.capitol.hawaii.gov/legislature/memberpage.aspx?member=229&year=2024"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.capitol.hawaii.gov/members/legislators.aspx"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/brandonelefante"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

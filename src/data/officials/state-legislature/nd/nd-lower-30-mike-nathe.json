@@ -1,0 +1,71 @@
+{
+  "id": "mike-nathe",
+  "name": "Mike Nathe",
+  "firstName": "Mike",
+  "lastName": "Nathe",
+  "photo": "/images/officials/state-legislature/nd/mike-nathe.jpg",
+  "photoSourceUrl": "https://www.ndlegis.gov/sites/default/files/styles/member_list_photo/public/person/photo/mrnathe2023.jpg?itok=1k0AbKZs",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-30",
+  "jurisdiction": "North Dakota House of Representatives",
+  "county": [
+    "North Dakota"
+  ],
+  "termStart": "2008-12-01",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "State Capitol 600 E. Boulevard Ave., Bismarck, ND 58505",
+    "email": "mrnathe@ndlegis.gov",
+    "website": "https://ndlegis.gov/biography/mike-nathe"
+  },
+  "bio": "Mike Nathe serves as State Representative for North Dakota House of Representatives District 30. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "ND",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://ndlegis.gov/biography/mike-nathe"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/nd/legislature/Mike-Nathe-981c4da0-4ab9-46cb-aa42-397253399cba.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://www.ndlegis.gov/sites/default/files/styles/member_list_photo/public/person/photo/mrnathe2023.jpg?itok=1k0AbKZs"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Mike_Nathe"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Mike_Nathe"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/104865/mike-nathe"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.legis.nd.gov/assembly/65-2017/members/house/representative-mike-nathe"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.legis.nd.gov/assembly/66-2019/members/house/representative-mike-nathe"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.legis.nd.gov/assembly/67-2021/members/house/representative-mike-nathe"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.legis.nd.gov/assembly/67-2021/members/members-by-district"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

@@ -1,0 +1,72 @@
+{
+  "id": "lauren-davis",
+  "name": "Lauren Davis",
+  "firstName": "Lauren",
+  "lastName": "Davis",
+  "photo": "/images/officials/state-legislature/wa/lauren-davis.jpg",
+  "photoSourceUrl": "https://leg.wa.gov/memberphoto/29104.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-32",
+  "jurisdiction": "Washington House of Representatives",
+  "county": [
+    "Washington"
+  ],
+  "termStart": "2019-01-14",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 331, John L. O'Brien Building P.O. Box 40600, Olympia, WA 98504",
+    "phone": "360-786-7910",
+    "email": "lauren.davis@leg.wa.gov",
+    "website": "https://housedemocrats.wa.gov/davis/"
+  },
+  "bio": "Lauren Davis serves as State Representative for Washington House of Representatives District 32. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "WA",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://housedemocrats.wa.gov/davis/"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/wa/legislature/Lauren-Davis-f972f883-deca-43fb-9367-52d8878d6234.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://leg.wa.gov/memberphoto/29104.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://app.leg.wa.gov/ContentParts/MemberDirectory/?a=House"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Lauren_Davis"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Lauren_Davis_(Washington)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Lauren_Davis_(politician)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://housedemocrats.wa.gov/Davis"
+    },
+    {
+      "title": "Public source",
+      "url": "https://housedemocrats.wa.gov/davis"
+    },
+    {
+      "title": "Public source",
+      "url": "https://housedemocrats.wa.gov/davis/biography"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

@@ -1,0 +1,72 @@
+{
+  "id": "paul-bailey",
+  "name": "Paul Bailey",
+  "firstName": "Paul",
+  "lastName": "Bailey",
+  "photo": "/images/officials/state-legislature/tn/paul-bailey.jpg",
+  "photoSourceUrl": "http://www.capitol.tn.gov/senate/members/images/s15.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-15",
+  "jurisdiction": "Tennessee Senate",
+  "county": [
+    "Tennessee"
+  ],
+  "termStart": "2014-11-04",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 736, Cordell Hull Building 425 Rep. John Lewis Way North, Nashville, TN 37243",
+    "phone": "615-741-3978",
+    "email": "sen.paul.bailey@capitol.tn.gov",
+    "website": "https://paulbaileyfortn.com/"
+  },
+  "bio": "Paul Bailey serves as State Senator for Tennessee Senate District 15. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "TN",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://paulbaileyfortn.com/"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/tn/legislature/Paul-Bailey-8e49fca4-e0d8-4273-adab-265632163d86.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "http://www.capitol.tn.gov/senate/members/images/s15.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Paul_Bailey_(Tennessee)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Paul_Bailey_(politician)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://paulbaileyfortn.com"
+    },
+    {
+      "title": "Public source",
+      "url": "https://wapp.capitol.tn.gov/apps/LegislatorInfo/directory.aspx?chamber=S"
+    },
+    {
+      "title": "Public source",
+      "url": "https://wapp.capitol.tn.gov/apps/legislatorinfo/member.aspx?district=S15"
+    },
+    {
+      "title": "Public source",
+      "url": "https://wapp.capitol.tn.gov/apps/LegislatorInfo/Member?district=S15&ga=114"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.capitol.tn.gov/senate/members"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

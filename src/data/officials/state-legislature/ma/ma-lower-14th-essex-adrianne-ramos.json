@@ -1,0 +1,72 @@
+{
+  "id": "adrianne-ramos",
+  "name": "Adrianne Ramos",
+  "firstName": "Adrianne",
+  "lastName": "Ramos",
+  "photo": "/images/officials/state-legislature/ma/adrianne-ramos.jpg",
+  "photoSourceUrl": "https://malegislature.gov/Legislators/Profile/170/APR1.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-14th Essex",
+  "jurisdiction": "Massachusetts House of Representatives",
+  "county": [
+    "Massachusetts"
+  ],
+  "termStart": "2023-01-04",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 21, State House 24 Beacon St., Boston, MA 02133",
+    "phone": "617-722-2140",
+    "email": "adrianne.ramos@mahouse.gov",
+    "website": "https://malegislature.gov/Legislators/Profile/APR1"
+  },
+  "bio": "Adrianne Ramos serves as State Representative for Massachusetts House of Representatives District 14th Essex. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "MA",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://malegislature.gov/Legislators/Profile/APR1"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ma/legislature/Adrianne-Pasateri-Ramos-300d40b3-9479-43c0-99d3-18f94e1110cc.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://malegislature.gov/Legislators/Profile/170/APR1.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Adrianne_Ramos"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Adrianne_Ramos"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/209566/adrianne-ramos"
+    },
+    {
+      "title": "Public source",
+      "url": "https://malegislature.gov/api/GeneralCourts/193/LegislativeMembers"
+    },
+    {
+      "title": "Public source",
+      "url": "https://malegislature.gov/api/GeneralCourts/193/LegislativeMembers/"
+    },
+    {
+      "title": "Public source",
+      "url": "https://malegislature.gov/api/GeneralCourts/193/LegislativeMembers/APR1"
+    },
+    {
+      "title": "Public source",
+      "url": "https://princelobel.com/professional/adrianne-ramos"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

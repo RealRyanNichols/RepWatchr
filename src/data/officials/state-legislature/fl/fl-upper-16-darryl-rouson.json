@@ -1,0 +1,72 @@
+{
+  "id": "darryl-rouson",
+  "name": "Darryl Rouson",
+  "firstName": "Darryl",
+  "lastName": "Rouson",
+  "photo": "/images/officials/state-legislature/fl/darryl-rouson.jpg",
+  "photoSourceUrl": "https://flsenate.gov/PublishedContent/Senators/2022-2024/Photos/s16_5203.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-16",
+  "jurisdiction": "Florida Senate",
+  "county": [
+    "Florida"
+  ],
+  "termStart": "2022-11-08",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 212, Senate Building 404 S. Monroe St., Tallahassee, FL 32399",
+    "phone": "850-487-5016",
+    "email": "rouson.darryl.web@flsenate.gov",
+    "website": "https://flsenate.gov/Senators/2022-2024/S16"
+  },
+  "bio": "Darryl Rouson serves as State Senator for Florida Senate District 16. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "FL",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://flsenate.gov/Senators/2022-2024/S16"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/fl/legislature/Darryl-Ervin-Rouson-3de11937-c291-4561-bee5-4f747665cb37.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://flsenate.gov/PublishedContent/Senators/2022-2024/Photos/s16_5203.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Darryl_Rouson"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Darryl_Rouson"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.flsenate.gov/Senators"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.flsenate.gov/Senators/"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.flsenate.gov/Senators/2018-2020/S19"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.flsenate.gov/Senators/s16"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.flsenate.gov/Senators/s19"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

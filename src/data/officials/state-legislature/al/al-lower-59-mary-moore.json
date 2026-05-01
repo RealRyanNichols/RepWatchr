@@ -1,0 +1,68 @@
+{
+  "id": "mary-moore",
+  "name": "Mary Moore",
+  "firstName": "Mary",
+  "lastName": "Moore",
+  "photo": "/images/officials/state-legislature/al/mary-moore.jpg",
+  "photoSourceUrl": "https://www.legislature.state.al.us/pdf/house/members/Moore_59.png",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-59",
+  "jurisdiction": "Alabama House of Representatives",
+  "county": [
+    "Alabama"
+  ],
+  "termStart": "",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 539-D, 11 S. Union St., Montgomery, AL 36130",
+    "phone": "334-261-0508",
+    "email": "mamoor48@bellsouth.net",
+    "website": "https://alison.legislature.state.al.us/house-leaders-members"
+  },
+  "bio": "Mary Moore serves as State Representative for Alabama House of Representatives District 59. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "AL",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://alison.legislature.state.al.us/house-leaders-members"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/al/legislature/Mary-Moore-63c58557-7c03-41f5-934a-866daed33ec8.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://www.legislature.state.al.us/pdf/house/members/Moore_59.png"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Mary_Moore"
+    },
+    {
+      "title": "graphql endpoint for member information",
+      "url": "https://gql.api.alison.legislature.state.al.us/graphql"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/27576/mary-moore"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.legislature.state.al.us/aliswww/ISD/ALRepresentative.aspx?NAME=Moore&OID_SPONSOR=100540&OID_PERSON=4462&SESSNAME="
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.legislature.state.al.us/aliswww/ISD/ALRepresentative.aspx?OID_SPONSOR=100540&OID_PERSON=4462"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.legislature.state.al.us/aliswww/ISD/House/ALRepresentatives.aspx"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

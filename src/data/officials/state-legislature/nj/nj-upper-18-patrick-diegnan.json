@@ -1,0 +1,69 @@
+{
+  "id": "patrick-diegnan",
+  "name": "Patrick Diegnan",
+  "firstName": "Patrick",
+  "lastName": "Diegnan",
+  "party": "D",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-18",
+  "jurisdiction": "New Jersey Senate",
+  "county": [
+    "New Jersey"
+  ],
+  "termStart": "2016-05-09",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "P.O. Box 068 State House, 145 W. State St., Trenton, NJ 08625",
+    "phone": "609-847-3905",
+    "email": "sendiegnan@njleg.org",
+    "website": "https://www.njleg.state.nj.us/legislative-roster/387/senator-diegnan"
+  },
+  "bio": "Patrick Diegnan serves as State Senator for New Jersey Senate District 18. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "NJ",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.njleg.state.nj.us/legislative-roster/387/senator-diegnan"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/nj/legislature/Patrick-J-Diegnan-Jr-16048732-130c-4102-b6e7-2d8faa0c3f52.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Patrick_Diegnan,_Jr."
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Patrick_J._Diegnan"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/55104/patrick-diegnan-jr"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/patrick-diegnan-46969938"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.njleg.state.nj.us/api/legislatorData/legislatorBio/387"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.njleg.state.nj.us/downloads.asp"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.njleg.state.nj.us/legislative-roster"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.njleg.state.nj.us/members/abcroster.asp"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

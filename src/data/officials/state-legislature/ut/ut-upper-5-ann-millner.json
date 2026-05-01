@@ -1,0 +1,72 @@
+{
+  "id": "ann-millner",
+  "name": "Ann Millner",
+  "firstName": "Ann",
+  "lastName": "Millner",
+  "photo": "/images/officials/state-legislature/ut/ann-millner.jpg",
+  "photoSourceUrl": "https://le.utah.gov/images/legislator/MILLNA.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-5",
+  "jurisdiction": "Utah Senate",
+  "county": [
+    "Utah"
+  ],
+  "termStart": "2023-01-01",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "P.O. Box 145115 350 N. State St., Suite 320, Salt Lake City, UT 84114",
+    "phone": "801-538-1035",
+    "email": "amillner@le.utah.gov",
+    "website": "https://disclosures.utah.gov/Search/PublicSearch/FolderDetails/1412594"
+  },
+  "bio": "Ann Millner serves as State Senator for Utah Senate District 5. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "UT",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://disclosures.utah.gov/Search/PublicSearch/FolderDetails/1412594"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ut/legislature/Ann-Millner-6b86542a-9b8a-418f-a275-6c261cdd86d2.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://le.utah.gov/images/legislator/MILLNA.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Ann_Millner"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Ann_Millner"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/151613/ann-millner"
+    },
+    {
+      "title": "Public source",
+      "url": "https://le.utah.gov/data/legislators.json"
+    },
+    {
+      "title": "Public source",
+      "url": "https://senate.utah.gov/sen/MILLNA"
+    },
+    {
+      "title": "Public source",
+      "url": "https://senate.utah.gov/sen/MILLNA/"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/annmillner"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

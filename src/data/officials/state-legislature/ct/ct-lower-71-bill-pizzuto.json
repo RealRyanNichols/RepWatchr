@@ -1,0 +1,65 @@
+{
+  "id": "bill-pizzuto",
+  "name": "Bill Pizzuto",
+  "firstName": "Bill",
+  "lastName": "Pizzuto",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-71",
+  "jurisdiction": "Connecticut House of Representatives",
+  "county": [
+    "Connecticut"
+  ],
+  "termStart": "2022-02-28",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 4200, Legislative Office Building 300 Capitol Ave., Hartford, CT 06106",
+    "phone": "800-842-1423",
+    "email": "william.pizzuto@housegop.ct.gov",
+    "website": "https://cga.ct.gov/asp/CGABillStatus/CGAMemberBills.asp?dist_code=%27071%27&dist_name=Pizzuto,%20William"
+  },
+  "bio": "Bill Pizzuto serves as State Representative for Connecticut House of Representatives District 71. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "CT",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://cga.ct.gov/asp/CGABillStatus/CGAMemberBills.asp?dist_code=%27071%27&dist_name=Pizzuto,%20William"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ct/legislature/William-Pizzuto-f7127b57-a72f-4b84-abf6-77b021cddf3f.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "ftp://ftp.cga.ct.gov/pub/data/LegislatorDatabase.csv"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/William_Pizzuto"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/William_Pizzuto"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/201908/bill-pizzuto"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.cthousegop.com/Pizzuto"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.cthousegop.com/Pizzuto/"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/william-pizzuto-aab7073"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

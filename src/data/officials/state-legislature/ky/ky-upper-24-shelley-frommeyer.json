@@ -1,0 +1,62 @@
+{
+  "id": "shelley-frommeyer",
+  "name": "Shelley Frommeyer",
+  "firstName": "Shelley",
+  "lastName": "Frommeyer",
+  "photo": "/images/officials/state-legislature/ky/shelley-frommeyer.jpg",
+  "photoSourceUrl": "https://legislature.ky.gov/Legislators%20Thumbnail%20Images/senate124.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-24",
+  "jurisdiction": "Kentucky Senate",
+  "county": [
+    "Kentucky"
+  ],
+  "termStart": "2023-01-01",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "email": "shelley.funkefrommeyer@kylegislature.gov",
+    "website": "https://legislature.ky.gov/Legislators/Pages/Legislator-Profile.aspx?DistrictNumber=124",
+    "socialMedia": {
+      "x": "https://x.com/FunkeShelley",
+      "twitter": "https://x.com/FunkeShelley"
+    }
+  },
+  "bio": "Shelley Frommeyer serves as State Senator for Kentucky Senate District 24. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "KY",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://legislature.ky.gov/Legislators/Pages/Legislator-Profile.aspx?DistrictNumber=124"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ky/legislature/Shelley-Funke-Frommeyer-b7112818-3357-413d-acae-a46bf3442b1d.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://legislature.ky.gov/Legislators%20Thumbnail%20Images/senate124.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Shelley_Funke_Frommeyer"
+    },
+    {
+      "title": "Public source",
+      "url": "https://legislature.ky.gov/Legislators/senate"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.ffrwealthteam.com/team-members/shelley-funke-frommeyer"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/shelley-funke-frommeyer"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

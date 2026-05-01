@@ -1,0 +1,68 @@
+{
+  "id": "joe-hoxha",
+  "name": "Joe Hoxha",
+  "firstName": "Joe",
+  "lastName": "Hoxha",
+  "photo": "/images/officials/state-legislature/ct/joe-hoxha.jpg",
+  "photoSourceUrl": "http://t2.gstatic.com/licensed-image?q=tbn:ANd9GcTiG4g-g9POWTgtx8A4J0Lqexxlv1P-9szsikgdxOyyK0B5OwuIx6ZRFBR-S-A3Js6L",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-78",
+  "jurisdiction": "Connecticut House of Representatives",
+  "county": [
+    "Connecticut"
+  ],
+  "termStart": "2023-01-04",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 4200, Legislative Office Building 300 Capitol Ave., Hartford, CT 06106",
+    "phone": "860-240-8700",
+    "email": "joe.hoxha@housegop.ct.gov",
+    "website": "https://www.cthousegop.com/hoxha/"
+  },
+  "bio": "Joe Hoxha serves as State Representative for Connecticut House of Representatives District 78. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "CT",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.cthousegop.com/hoxha/"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ct/legislature/Joe-Hoxha-ab33209c-a8c8-4a6e-a480-ef298eeaa74a.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "http://t2.gstatic.com/licensed-image?q=tbn:ANd9GcTiG4g-g9POWTgtx8A4J0Lqexxlv1P-9szsikgdxOyyK0B5OwuIx6ZRFBR-S-A3Js6L"
+    },
+    {
+      "title": "Public source",
+      "url": "ftp://ftp.cga.ct.gov/pub/data/LegislatorDatabase.csv"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Joe_Hoxha"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Joe_Hoxha"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/208611/joe-hoxha"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.cthousegop.com/Hoxha"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.cthousegop.com/Hoxha/"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

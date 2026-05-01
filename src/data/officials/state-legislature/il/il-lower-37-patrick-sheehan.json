@@ -1,0 +1,68 @@
+{
+  "id": "patrick-sheehan",
+  "name": "Patrick Sheehan",
+  "firstName": "Patrick",
+  "lastName": "Sheehan",
+  "photo": "/images/officials/state-legislature/il/patrick-sheehan.jpg",
+  "photoSourceUrl": "https://cdn.ilga.gov/assets/img/members/{4F33CDD4-F7DD-40AC-B11E-DA5066173803}.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-37",
+  "jurisdiction": "Illinois House of Representatives",
+  "county": [
+    "Illinois"
+  ],
+  "termStart": "2024-04-12",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 200-8N, Stratton Office Building, Springfield, IL 62706",
+    "phone": "217-782-0424",
+    "email": "sheehan@ilhousegop.org",
+    "website": "https://repsheehan.com/"
+  },
+  "bio": "Patrick Sheehan serves as State Representative for Illinois House of Representatives District 37. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "IL",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://repsheehan.com/"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/il/legislature/Patrick-Sheehan-075c5ab4-12bf-4573-8091-1539a081256e.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://cdn.ilga.gov/assets/img/members/{4F33CDD4-F7DD-40AC-B11E-DA5066173803}.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Patrick_Sheehan_(Illinois)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Patrick_Sheehan_(Illinois_politician)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://repsheehan.com"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.ilga.gov/House/Members/Details/3448"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.ilga.gov/house/Rep.asp?MemberID=3260"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.ilga.gov/house/Rep.asp?MemberID=3448"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

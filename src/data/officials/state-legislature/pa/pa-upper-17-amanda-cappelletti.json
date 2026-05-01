@@ -1,0 +1,69 @@
+{
+  "id": "amanda-cappelletti",
+  "name": "Amanda Cappelletti",
+  "firstName": "Amanda",
+  "lastName": "Cappelletti",
+  "party": "D",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-17",
+  "jurisdiction": "Pennsylvania Senate",
+  "county": [
+    "Pennsylvania"
+  ],
+  "termStart": "2020-12-01",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 183, Main Capitol Senate Box 203017, Harrisburg, PA 17120",
+    "phone": "717-787-5544",
+    "email": "cappelletti@pasenate.com",
+    "website": "https://pasenatorcappelletti.com/"
+  },
+  "bio": "Amanda Cappelletti serves as State Senator for Pennsylvania Senate District 17. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "PA",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://pasenatorcappelletti.com/"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/pa/legislature/Amanda-M-Cappelletti-77755456-0f2a-4bbd-ac96-03d83398d6fc.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Amanda_Cappelletti"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Amanda_Cappelletti"
+    },
+    {
+      "title": "Public source",
+      "url": "https://pasenatorcappelletti.com"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.legis.state.pa.us/cfdocs/legis/home/member_information/mbrList.cfm?body=S&sort=alpha"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.legis.state.pa.us/cfdocs/legis/home/member_information/Senate_bio.cfm?id=1923"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.legis.state.pa.us/cfdocs/legis/home/member_information/senators_alpha.cfm"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/amandacappelletti"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.palegis.us/senate/members/bio/1923/sen-cappelletti"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

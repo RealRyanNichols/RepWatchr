@@ -1,0 +1,60 @@
+{
+  "id": "vince-deeds",
+  "name": "Vince Deeds",
+  "firstName": "Vince",
+  "lastName": "Deeds",
+  "photo": "/images/officials/state-legislature/wv/vince-deeds.jpg",
+  "photoSourceUrl": "http://www.wvlegislature.gov/images/members/2023/senate/deeds_vince.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-10",
+  "jurisdiction": "West Virginia Senate",
+  "county": [
+    "West Virginia"
+  ],
+  "termStart": "2022-12-01",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "State Capitol Room 200W, Complex, Building 1 1900 Kanawha Blvd. East, Charleston, WV 25305",
+    "phone": "304-357-7959",
+    "email": "vince.deeds@wvsenate.gov",
+    "website": "https://www.wvlegislature.gov/Senate1/lawmaker.cfm?member=Senator%20Deeds"
+  },
+  "bio": "Vince Deeds serves as State Senator for West Virginia Senate District 10. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "WV",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.wvlegislature.gov/Senate1/lawmaker.cfm?member=Senator%20Deeds"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/wv/legislature/Vince-Deeds-147a2b54-846b-4fec-b394-be4b50827f5f.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "http://www.wvlegislature.gov/images/members/2023/senate/deeds_vince.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Vince_Deeds"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Vince_Deeds"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/201622/vince-deeds"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.wvlegislature.gov/Senate1/roster.cfm"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

@@ -1,0 +1,72 @@
+{
+  "id": "jim-buck",
+  "name": "Jim Buck",
+  "firstName": "Jim",
+  "lastName": "Buck",
+  "photo": "/images/officials/state-legislature/in/jim-buck.jpg",
+  "photoSourceUrl": "https://cdn.zephyrcms.com/5d45f119-5f23-4095-bfd8-cd7a96cab132/-/progressive/yes/-/format/jpeg/-/scale_crop/200x300/center/-/stretch/off/buck-flag-2011-cmyk.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-21",
+  "jurisdiction": "Indiana Senate",
+  "county": [
+    "Indiana"
+  ],
+  "termStart": "2008-04-26",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "200 W. Washington St., Indianapolis, IN 46204",
+    "phone": "317-232-9400",
+    "email": "s21@iga.in.gov",
+    "website": "https://iga.in.gov/legislative/2021/legislators/legislator_james_buck_124"
+  },
+  "bio": "Jim Buck serves as State Senator for Indiana Senate District 21. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "IN",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://iga.in.gov/legislative/2021/legislators/legislator_james_buck_124"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/in/legislature/James-Buck-8c8f7869-329e-4063-ab55-30e4eca00529.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://cdn.zephyrcms.com/5d45f119-5f23-4095-bfd8-cd7a96cab132/-/progressive/yes/-/format/jpeg/-/scale_crop/200x300/center/-/stretch/off/buck-flag-2011-cmyk.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://api.iga.in.gov/2021/legislators/james_buck_124"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/James_Buck"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/James_R._Buck"
+    },
+    {
+      "title": "Public source",
+      "url": "https://iga.in.gov/legislative/2022/legislators/legislator_james_buck_124"
+    },
+    {
+      "title": "Public source",
+      "url": "https://iga.in.gov/legislative/2022/legislators/legislator_james_buck_124/"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/4631/james-buck"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.indianasenaterepublicans.com/buck"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

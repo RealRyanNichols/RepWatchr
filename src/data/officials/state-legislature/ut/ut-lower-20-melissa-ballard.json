@@ -1,0 +1,72 @@
+{
+  "id": "melissa-ballard",
+  "name": "Melissa Ballard",
+  "firstName": "Melissa",
+  "lastName": "Ballard",
+  "photo": "/images/officials/state-legislature/ut/melissa-ballard.jpg",
+  "photoSourceUrl": "https://le.utah.gov/images/legislator/BALLAMG.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-20",
+  "jurisdiction": "Utah House of Representatives",
+  "county": [
+    "Utah"
+  ],
+  "termStart": "2019-01-01",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "P.O. Box 145030 350 N. State St., Suite 350, Salt Lake City, UT 84114",
+    "phone": "801-538-1029",
+    "email": "mballard@le.utah.gov",
+    "website": "https://disclosures.utah.gov/Search/PublicSearch/FolderDetails/1415006"
+  },
+  "bio": "Melissa Ballard serves as State Representative for Utah House of Representatives District 20. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "UT",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://disclosures.utah.gov/Search/PublicSearch/FolderDetails/1415006"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ut/legislature/Melissa-Garff-Ballard-861428f5-6456-4c94-b1ed-838b01a7d845.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://le.utah.gov/images/legislator/BALLAMG.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Melissa_Garff_Ballard"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Melissa_Garff_Ballard"
+    },
+    {
+      "title": "Public source",
+      "url": "https://house.utah.gov/rep/BALLAMG"
+    },
+    {
+      "title": "Public source",
+      "url": "https://house.utah.gov/rep/BALLAMG/"
+    },
+    {
+      "title": "Public source",
+      "url": "https://house.utleg.gov/rep/BALLAMG"
+    },
+    {
+      "title": "Public source",
+      "url": "https://house.utleg.gov/rep/BALLAMG/"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/182150/melissa-ballard"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

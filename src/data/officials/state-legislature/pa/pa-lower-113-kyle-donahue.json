@@ -1,0 +1,62 @@
+{
+  "id": "kyle-donahue",
+  "name": "Kyle Donahue",
+  "firstName": "Kyle",
+  "lastName": "Donahue",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-113",
+  "jurisdiction": "Pennsylvania House of Representatives",
+  "county": [
+    "Pennsylvania"
+  ],
+  "termStart": "2022-12-01",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 104, Irvis Office Building P.O. Box 202113, Harrisburg, PA 17120",
+    "phone": "717-787-8981",
+    "email": "repdonahue@pahouse.net",
+    "website": "https://www.legis.state.pa.us/cfdocs/legis/home/member_information/House_bio.cfm?id=1963",
+    "socialMedia": {
+      "x": "https://x.com/RepDonahue",
+      "twitter": "https://x.com/RepDonahue",
+      "facebook": "https://facebook.com/RepDonahue"
+    }
+  },
+  "bio": "Kyle Donahue serves as State Representative for Pennsylvania House of Representatives District 113. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "PA",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.legis.state.pa.us/cfdocs/legis/home/member_information/House_bio.cfm?id=1963"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/pa/legislature/Kyle-Donahue-009be4f2-d613-4353-8126-6b5642d868bc.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Kyle_Donahue"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Kyle_Donahue_(politician)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.legis.state.pa.us/cfdocs/legis/home/member_information/mbrList.cfm?body=H&sort=alpha"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.pahouse.com/Donahue"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.palegis.us/house/members/bio/1963/rep-donahue"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

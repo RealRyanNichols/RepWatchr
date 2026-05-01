@@ -1,0 +1,72 @@
+{
+  "id": "mark-huizenga",
+  "name": "Mark Huizenga",
+  "firstName": "Mark",
+  "lastName": "Huizenga",
+  "photo": "/images/officials/state-legislature/mi/mark-huizenga.jpg",
+  "photoSourceUrl": "https://www.misenategop.com/wp-content/uploads/2021/11/Huizenga-580x770.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-30",
+  "jurisdiction": "Michigan Senate",
+  "county": [
+    "Michigan"
+  ],
+  "termStart": "2023-01-01",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 7200, Binsfeld Office Building, 201 Townsend St. P.O. Box 30036, Lansing, MI 48909",
+    "phone": "517-373-0797",
+    "email": "senmhuizenga@senate.michigan.gov",
+    "website": "https://SenatorMarkHuizenga.com"
+  },
+  "bio": "Mark Huizenga serves as State Senator for Michigan Senate District 30. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "MI",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://SenatorMarkHuizenga.com"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/mi/legislature/Mark-Huizenga-8564d477-bb39-47a4-87e1-3ceacd7d3abe.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://www.misenategop.com/wp-content/uploads/2021/11/Huizenga-580x770.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Mark_Huizenga"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Mark_Huizenga"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/182877/mark-huizenga"
+    },
+    {
+      "title": "Public source",
+      "url": "https://senate.michigan.gov/senatorinfo_list.html"
+    },
+    {
+      "title": "Members List JSON Data Page",
+      "url": "https://senate.michigan.gov/senators/SenatorData.json"
+    },
+    {
+      "title": "Members List HTML page",
+      "url": "https://senate.michigan.gov/senators/senatorinfo_list.html"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/markhuizenga"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

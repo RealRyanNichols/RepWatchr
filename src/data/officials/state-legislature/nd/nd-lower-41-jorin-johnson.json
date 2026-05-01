@@ -1,0 +1,68 @@
+{
+  "id": "jorin-johnson",
+  "name": "Jorin Johnson",
+  "firstName": "Jorin",
+  "lastName": "Johnson",
+  "photo": "/images/officials/state-legislature/nd/jorin-johnson.jpg",
+  "photoSourceUrl": "https://www.ndlegis.gov/sites/default/files/styles/member_list_photo/public/person/photo/jjohnson2023.jpg?itok=jpJuUDcr",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-41",
+  "jurisdiction": "North Dakota House of Representatives",
+  "county": [
+    "North Dakota"
+  ],
+  "termStart": "2022-12-01",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "State Capitol 600 E. Boulevard Ave., Bismarck, ND 58505",
+    "phone": "701-328-3373",
+    "email": "jjohnson@ndlegis.gov",
+    "website": "https://ndlegis.gov/biography/jorin-johnson"
+  },
+  "bio": "Jorin Johnson serves as State Representative for North Dakota House of Representatives District 41. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "ND",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://ndlegis.gov/biography/jorin-johnson"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/nd/legislature/Jorin-Johnson-230e88ef-7b8d-4229-b121-c1df2328c78a.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://www.ndlegis.gov/sites/default/files/styles/member_list_photo/public/person/photo/jjohnson2023.jpg?itok=jpJuUDcr"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Jorin_Johnson"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Jorin_Johnson"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/jorinj"
+    },
+    {
+      "title": "members list page",
+      "url": "https://www.ndlegis.gov/assembly/68-2023/regular/members?combine=&field_legis_chamber_target_id=All&field_legis_district_target_id=All&field_legislator_party_target_id=All&page=3"
+    },
+    {
+      "title": "members list page",
+      "url": "https://www.ndlegis.gov/assembly/68-2023/regular/members?page=3"
+    },
+    {
+      "title": "member details page",
+      "url": "https://www.ndlegis.gov/biography/jorin-johnson"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

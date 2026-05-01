@@ -1,0 +1,64 @@
+{
+  "id": "jonathan-smith",
+  "name": "Jonathan Smith",
+  "firstName": "Jonathan",
+  "lastName": "Smith",
+  "photo": "/images/officials/state-legislature/nh/jonathan-smith.jpg",
+  "photoSourceUrl": "https://bloximages.newyork1.vip.townnews.com/conwaydailysun.com/content/tncms/assets/v3/editorial/d/32/d32c40ee-0fb6-11eb-8b8e-a7afe05f98e4/5f8a1bf422620.image.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-Carroll 5",
+  "jurisdiction": "New Hampshire House of Representatives",
+  "county": [
+    "New Hampshire"
+  ],
+  "termStart": "2020-12-02",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "State House 107 N. Main St., Concord, NH 03304",
+    "phone": "603-651-1137",
+    "email": "jonathan.smith@gc.nh.gov",
+    "website": "https://gc.nh.gov/house/members/member.aspx?pid=9869"
+  },
+  "bio": "Jonathan Smith serves as State Representative for New Hampshire House of Representatives District Carroll 5. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "NH",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://gc.nh.gov/house/members/member.aspx?pid=9869"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/nh/legislature/Jonathan-H-Smith-214b10b8-1ed6-4964-8aab-32c6609965f6.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://bloximages.newyork1.vip.townnews.com/conwaydailysun.com/content/tncms/assets/v3/editorial/d/32/d32c40ee-0fb6-11eb-8b8e-a7afe05f98e4/5f8a1bf422620.image.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Jonathan_Smith_(New_Hampshire)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://gencourt.state.nh.us/downloads/Members.txt"
+    },
+    {
+      "title": "Public source",
+      "url": "https://gencourt.state.nh.us/downloads/members.txt"
+    },
+    {
+      "title": "Public source",
+      "url": "https://gencourt.state.nh.us/house/members/member.aspx?pid=9869"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.gencourt.state.nh.us/house/members/member.aspx?pid=9869"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

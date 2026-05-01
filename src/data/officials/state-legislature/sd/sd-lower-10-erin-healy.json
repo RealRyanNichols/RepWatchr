@@ -1,0 +1,72 @@
+{
+  "id": "erin-healy",
+  "name": "Erin Healy",
+  "firstName": "Erin",
+  "lastName": "Healy",
+  "photo": "/images/officials/state-legislature/sd/erin-healy.jpg",
+  "photoSourceUrl": "https://sdlegislature.gov/inc/img/Legislators/Healy_2019.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-10",
+  "jurisdiction": "South Dakota House of Representatives",
+  "county": [
+    "South Dakota"
+  ],
+  "termStart": "2023-01-10",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Capitol Building 500 E. Capitol Ave., Pierre, SD 57501",
+    "phone": "605-773-3851",
+    "email": "erin.healy@sdlegislature.gov",
+    "website": "https://sdlegislature.gov/Legislators/Legislators/MemberDetail.aspx?Member=1624&Session=2019"
+  },
+  "bio": "Erin Healy serves as State Representative for South Dakota House of Representatives District 10. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "SD",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://sdlegislature.gov/Legislators/Legislators/MemberDetail.aspx?Member=1624&Session=2019"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/sd/legislature/Erin-Healy-85bda678-d416-4caa-b439-8a579288f2ec.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://sdlegislature.gov/inc/img/Legislators/Healy_2019.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Erin_Healy"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Erin_Healy"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/180844/erin-healy"
+    },
+    {
+      "title": "Public source",
+      "url": "https://sdlegislature.gov/Legislators/Profile/1800/Detail"
+    },
+    {
+      "title": "Public source",
+      "url": "https://sdlegislature.gov/Legislators/Profile/4368/Detail"
+    },
+    {
+      "title": "Public source",
+      "url": "https://sdlegislature.gov/Legislators/Profile/4612/Detail"
+    },
+    {
+      "title": "Public source",
+      "url": "https://sdlegislature.gov/Legislators/Profile/4759/Detail"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

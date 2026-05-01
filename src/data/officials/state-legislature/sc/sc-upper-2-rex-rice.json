@@ -1,0 +1,65 @@
+{
+  "id": "rex-rice",
+  "name": "Rex Rice",
+  "firstName": "Rex",
+  "lastName": "Rice",
+  "party": "R",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-2",
+  "jurisdiction": "South Carolina Senate",
+  "county": [
+    "South Carolina"
+  ],
+  "termStart": "2016-11-14",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 601, Gressette Building P.O. Box 142, Columbia, SC 29201",
+    "phone": "803-212-6116",
+    "email": "rexrice@scsenate.gov",
+    "website": "https://scstatehouse.gov/member.php?code=1547727087"
+  },
+  "bio": "Rex Rice serves as State Senator for South Carolina Senate District 2. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "SC",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://scstatehouse.gov/member.php?code=1547727087"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/sc/legislature/Rex-F-Rice-bfea6436-5d17-4d26-bc37-15f1a975575e.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Rex_Rice"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/8939/rex-rice"
+    },
+    {
+      "title": "Public source",
+      "url": "https://scstatehouse.gov/member.php?chamber=S"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/rex-rice-39b84570"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.rexrice.com/bio"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.scstatehouse.gov/member.php?chamber=S"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.scstatehouse.gov/member.php?code=1547727087"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

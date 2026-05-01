@@ -1,0 +1,77 @@
+{
+  "id": "leo-biasiucci",
+  "name": "Leo Biasiucci",
+  "firstName": "Leo",
+  "lastName": "Biasiucci",
+  "photo": "/images/officials/state-legislature/az/leo-biasiucci.jpg",
+  "photoSourceUrl": "https://www.azleg.gov/alisImages/MemberPhotos/55leg/House/BIASIUCCI.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-30",
+  "jurisdiction": "Arizona House of Representatives",
+  "county": [
+    "Arizona"
+  ],
+  "termStart": "2023-01-09",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 110, 1700 W. Washington St., Phoenix, AZ 85007",
+    "phone": "602-926-3018",
+    "email": "lbiasiucci@azleg.gov",
+    "website": "https://www.azleg.gov/house-member/?legislature=55&legislator=2034",
+    "socialMedia": {
+      "x": "https://x.com/Leo4AzHouse",
+      "twitter": "https://x.com/Leo4AzHouse",
+      "facebook": "https://facebook.com/Leo4AzHouse"
+    }
+  },
+  "bio": "Leo Biasiucci serves as State Representative for Arizona House of Representatives District 30. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "AZ",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.azleg.gov/house-member/?legislature=55&legislator=2034"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/az/legislature/Leo-Biasiucci-433aab5d-35be-48cc-80a9-f468d5279022.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://www.azleg.gov/alisImages/MemberPhotos/55leg/House/BIASIUCCI.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Leo_Biasiucci"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Leo_Biasiucci"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/171694/leo-biasiucci"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.azleg.gov/house-member/?legislature=57&session=129&legislator=2294"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.azleg.gov/MemberRoster/?body=H"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.azleg.gov/memberroster/?body=H"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/leo4azhouse"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

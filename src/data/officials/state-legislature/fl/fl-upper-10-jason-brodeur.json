@@ -1,0 +1,60 @@
+{
+  "id": "jason-brodeur",
+  "name": "Jason Brodeur",
+  "firstName": "Jason",
+  "lastName": "Brodeur",
+  "photo": "/images/officials/state-legislature/fl/jason-brodeur.jpg",
+  "photoSourceUrl": "https://flsenate.gov/PublishedContent/Senators/2022-2024/Photos/s10_5077.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-10",
+  "jurisdiction": "Florida Senate",
+  "county": [
+    "Florida"
+  ],
+  "termStart": "2022-11-08",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 416, Senate Building 404 S. Monroe St., Tallahassee, FL 32399",
+    "phone": "850-487-5010",
+    "email": "brodeur.jason.web@flsenate.gov",
+    "website": "https://flsenate.gov/Senators/2022-2024/S10"
+  },
+  "bio": "Jason Brodeur serves as State Senator for Florida Senate District 10. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "FL",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://flsenate.gov/Senators/2022-2024/S10"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/fl/legislature/Jason-Brodeur-b1525f57-c2db-407e-bca9-66675cc4d3ff.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://flsenate.gov/PublishedContent/Senators/2022-2024/Photos/s10_5077.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Jason_Brodeur"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Jason_Brodeur"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.flsenate.gov/Senators/S10"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/jason-brodeur-mph-mba-0057b67"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

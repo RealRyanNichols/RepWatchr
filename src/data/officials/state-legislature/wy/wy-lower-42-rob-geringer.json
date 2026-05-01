@@ -1,0 +1,56 @@
+{
+  "id": "rob-geringer",
+  "name": "Rob Geringer",
+  "firstName": "Rob",
+  "lastName": "Geringer",
+  "photo": "/images/officials/state-legislature/wy/rob-geringer.jpg",
+  "photoSourceUrl": "https://wyoleg.gov/LegislatorSummary/Photos/68th-GeringerRob.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-42",
+  "jurisdiction": "Wyoming House of Representatives",
+  "county": [
+    "Wyoming"
+  ],
+  "termStart": "2025-01-06",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "State Capitol 200 W. 24th St., Cheyenne, WY 82002",
+    "phone": "307-777-7881",
+    "email": "rob.geringer@wyoleg.gov",
+    "website": "https://wyoleg.gov/Legislators/2025/H/2142"
+  },
+  "bio": "Rob Geringer serves as State Representative for Wyoming House of Representatives District 42. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "WY",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://wyoleg.gov/Legislators/2025/H/2142"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/wy/legislature/Rob-Geringer-219dcec3-8f83-401b-91df-1a79ac725889.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://wyoleg.gov/LegislatorSummary/Photos/68th-GeringerRob.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Rob_Geringer"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/218339/rob-geringer"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/robgeringer"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

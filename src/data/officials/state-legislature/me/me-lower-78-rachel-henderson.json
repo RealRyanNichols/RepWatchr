@@ -1,0 +1,56 @@
+{
+  "id": "rachel-henderson",
+  "name": "Rachel Henderson",
+  "firstName": "Rachel",
+  "lastName": "Henderson",
+  "photo": "/images/officials/state-legislature/me/rachel-henderson.jpg",
+  "photoSourceUrl": "https://legislature.maine.gov/house/house/Repository/MemberProfiles/7c8fd3af-5878-4aea-91fe-0faa167ad005_HENDERSON.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-78",
+  "jurisdiction": "Maine House of Representatives",
+  "county": [
+    "Maine"
+  ],
+  "termStart": "2022-12-07",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 332, House Republican Office 2 State House Station, Augusta, ME 04333",
+    "phone": "800-423-2900",
+    "email": "rachel.henderson@legislature.maine.gov",
+    "website": "https://legislature.maine.gov/house/house/MemberProfiles/Details/1484"
+  },
+  "bio": "Rachel Henderson serves as State Representative for Maine House of Representatives District 78. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "ME",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://legislature.maine.gov/house/house/MemberProfiles/Details/1484"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/me/legislature/Rachel-Ann-Henderson-b61923e6-c463-4df4-95b2-117d74c030bd.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://legislature.maine.gov/house/house/Repository/MemberProfiles/7c8fd3af-5878-4aea-91fe-0faa167ad005_HENDERSON.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Rachel_Ann_Henderson"
+    },
+    {
+      "title": "Public source",
+      "url": "https://legislature.maine.gov/house/house/MemberProfiles/ListAlpha"
+    },
+    {
+      "title": "Public source",
+      "url": "https://mainehousegop.org/members/henderson-rachel"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

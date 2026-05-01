@@ -1,0 +1,73 @@
+{
+  "id": "ryan-warner",
+  "name": "Ryan Warner",
+  "firstName": "Ryan",
+  "lastName": "Warner",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-52",
+  "jurisdiction": "Pennsylvania House of Representatives",
+  "county": [
+    "Pennsylvania"
+  ],
+  "termStart": "2015-01-06",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room B12, Main Capitol Building P.O. Box 202052, Harrisburg, PA 17120",
+    "phone": "717-787-1540",
+    "email": "rwarner@pahousegop.com",
+    "website": "https://www.legis.state.pa.us/cfdocs/legis/home/member_information/House_bio.cfm?id=1708",
+    "socialMedia": {
+      "facebook": "https://facebook.com/RepWarner",
+      "youtube": "https://youtube.com/RepWarner"
+    }
+  },
+  "bio": "Ryan Warner serves as State Representative for Pennsylvania House of Representatives District 52. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "PA",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.legis.state.pa.us/cfdocs/legis/home/member_information/House_bio.cfm?id=1708"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/pa/legislature/Ryan-Warner-0d747b7a-0a5a-42cf-8bb6-1eb0fa69090f.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Ryan_Warner"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Ryan_Warner"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/150889/ryan-warner"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.legis.state.pa.us/cfdocs/legis/home/member_information/mbrList.cfm?body=H&sort=alpha"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.legis.state.pa.us/cfdocs/legis/home/member_information/representatives_alpha.cfm"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/ryan-warner-20519140"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.palegis.us/house/members/bio/1708/rep-warner"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.repwarner.com"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

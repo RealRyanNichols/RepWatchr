@@ -1,0 +1,61 @@
+{
+  "id": "rick-lewis",
+  "name": "Rick Lewis",
+  "firstName": "Rick",
+  "lastName": "Lewis",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-18",
+  "jurisdiction": "Oregon House of Representatives",
+  "county": [
+    "Oregon"
+  ],
+  "termStart": "2017-02-22",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room H-382, 900 Court St. NE, Salem, OR 97301",
+    "phone": "503-986-1418",
+    "email": "rep.ricklewis@oregonlegislature.gov",
+    "website": "https://www.oregonlegislature.gov/lewis"
+  },
+  "bio": "Rick Lewis serves as State Representative for Oregon House of Representatives District 18. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "OR",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.oregonlegislature.gov/lewis"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/or/legislature/Rick-Lewis-dc371425-a173-439f-903c-6e2e3fd145cd.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://api.oregonlegislature.gov/odata/odataservice.svc/LegislativeSessions('2022R1')/Legislators"
+    },
+    {
+      "title": "Public source",
+      "url": "https://api.oregonlegislature.gov/odata/odataservice.svc/LegislativeSessions('2023R1')/Legislators"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Rick_Lewis_(Oregon)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Rick_Lewis_(politician)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/176436/rick-lewis"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/rick-lewis-14695956"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

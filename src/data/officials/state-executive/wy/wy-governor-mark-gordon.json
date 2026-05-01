@@ -1,0 +1,47 @@
+{
+  "id": "mark-gordon",
+  "name": "Mark Gordon",
+  "firstName": "Mark",
+  "lastName": "Gordon",
+  "photo": "/images/officials/state-executive/wy/mark-gordon.jpg",
+  "photoSourceUrl": "https://governor.wyo.gov/assets/markgordon-B8-zFG2R.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "Governor",
+  "district": "Wyoming",
+  "jurisdiction": "Wyoming statewide public office",
+  "county": [
+    "Wyoming"
+  ],
+  "termStart": "2019-01-07",
+  "termEnd": "2027-01-04",
+  "contactInfo": {
+    "office": "La Fortaleza; P.O. Box 9020082; San Juan, PR 00902-0082",
+    "phone": "787-721-2400",
+    "website": "https://governor.wyo.gov/",
+    "socialMedia": {
+      "x": "https://x.com/governorgordon",
+      "twitter": "https://x.com/governorgordon"
+    }
+  },
+  "bio": "Mark Gordon is listed as Governor for Wyoming. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "WY",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://governor.wyo.gov/"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/wy/executive/Mark-Gordon-d832b435-0a83-49ba-abd8-6ce265eb52ef.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://governor.wyo.gov/assets/markgordon-B8-zFG2R.jpg"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

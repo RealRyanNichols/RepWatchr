@@ -1,0 +1,49 @@
+{
+  "id": "everett-stubbs",
+  "name": "Everett Stubbs",
+  "firstName": "Everett",
+  "lastName": "Stubbs",
+  "party": "R",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-17",
+  "jurisdiction": "South Carolina Senate",
+  "county": [
+    "South Carolina"
+  ],
+  "termStart": "2024-11-11",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 506, Gressette Building P.O. Box 142, Columbia, SC 29201",
+    "phone": "803-212-6124",
+    "email": "everettstubbs@scsenate.gov",
+    "website": "https://www.scstatehouse.gov/member.php?code=1780681605"
+  },
+  "bio": "Everett Stubbs serves as State Senator for South Carolina Senate District 17. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "SC",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.scstatehouse.gov/member.php?code=1780681605"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/sc/legislature/Everett-Stubbs-c699e1e2-e3f4-4b78-8aeb-7bef9374518f.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Everett_Stubbs"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Everett_Stubbs"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/216208/everett-stubbs"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

@@ -1,0 +1,71 @@
+{
+  "id": "brandy-pyle",
+  "name": "Brandy Pyle",
+  "firstName": "Brandy",
+  "lastName": "Pyle",
+  "photo": "/images/officials/state-legislature/nd/brandy-pyle.jpg",
+  "photoSourceUrl": "https://www.ndlegis.gov/sites/default/files/styles/member_list_photo/public/person/photo/bpyle2023.jpg?itok=nzFe9KY1",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-22",
+  "jurisdiction": "North Dakota House of Representatives",
+  "county": [
+    "North Dakota"
+  ],
+  "termStart": "2016-12-01",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "State Capitol 600 E. Boulevard Ave., Bismarck, ND 58505",
+    "email": "bpyle@ndlegis.gov",
+    "website": "https://ndlegis.gov/biography/brandy-pyle"
+  },
+  "bio": "Brandy Pyle serves as State Representative for North Dakota House of Representatives District 22. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "ND",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://ndlegis.gov/biography/brandy-pyle"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/nd/legislature/Brandy-Pyle-0bae2d8b-4e48-4f31-9e23-9f438ccac477.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://www.ndlegis.gov/sites/default/files/styles/member_list_photo/public/person/photo/bpyle2023.jpg?itok=nzFe9KY1"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Brandy_Pyle"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Brandy_Pyle"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/170697/brandy-pyle"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.legis.nd.gov/assembly/65-2017/members/house/representative-brandy-pyle"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.legis.nd.gov/assembly/66-2019/members/house/representative-brandy-pyle"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.legis.nd.gov/assembly/67-2021/members/house/representative-brandy-pyle"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.legis.nd.gov/assembly/67-2021/members/members-by-district"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

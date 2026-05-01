@@ -1,0 +1,72 @@
+{
+  "id": "joseph-solomon",
+  "name": "Joseph Solomon",
+  "firstName": "Joseph",
+  "lastName": "Solomon",
+  "photo": "/images/officials/state-legislature/ri/joseph-solomon.jpg",
+  "photoSourceUrl": "http://www.rilegislature.gov/representatives/pictures/solomon.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-22",
+  "jurisdiction": "Rhode Island House of Representatives",
+  "county": [
+    "Rhode Island"
+  ],
+  "termStart": "2015-01-06",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "82 Smith St., Providence, RI 02903",
+    "phone": "401-222-3580",
+    "email": "rep-solomon@rilegislature.gov",
+    "website": "https://www.rilegislature.gov/representatives/carson/default.aspx"
+  },
+  "bio": "Joseph Solomon serves as State Representative for Rhode Island House of Representatives District 22. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "RI",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.rilegislature.gov/representatives/carson/default.aspx"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ri/legislature/Joseph-J-Solomon-Jr-0b700db6-fe30-4fb4-a988-05ae0d618720.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "http://www.rilegislature.gov/representatives/pictures/solomon.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Joseph_Solomon_(Rhode_Island)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Joseph_J._Solomon_Jr."
+    },
+    {
+      "title": "Public source",
+      "url": "https://solomonlawgroup.com"
+    },
+    {
+      "title": "Public source",
+      "url": "https://webserver.rilin.state.ri.us/Email/RepEmailListDistrict.asp"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/joseph-solomon-jr-4320256"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.rilegislature.gov/representatives/solomon/default.aspx"
+    },
+    {
+      "title": "Image Source",
+      "url": "https://www.rilegislature.gov/representatives/solomon/Pages/Biography.aspx"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

@@ -1,0 +1,72 @@
+{
+  "id": "danielle-gregoire",
+  "name": "Danielle Gregoire",
+  "firstName": "Danielle",
+  "lastName": "Gregoire",
+  "photo": "/images/officials/state-legislature/ma/danielle-gregoire.jpg",
+  "photoSourceUrl": "https://malegislature.gov/Legislators/Profile/170/DWG1.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-4th Middlesex",
+  "jurisdiction": "Massachusetts House of Representatives",
+  "county": [
+    "Massachusetts"
+  ],
+  "termStart": "2013-01-02",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 21, State House 24 Beacon St., Boston, MA 02133",
+    "phone": "617-722-2140",
+    "email": "danielle.gregoire@mahouse.gov",
+    "website": "https://malegislature.gov/Legislators/Profile/DWG1"
+  },
+  "bio": "Danielle Gregoire serves as State Representative for Massachusetts House of Representatives District 4th Middlesex. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "MA",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://malegislature.gov/Legislators/Profile/DWG1"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ma/legislature/Danielle-W-Gregoire-5696763c-5fd6-44dd-9dce-7be56632cedd.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://malegislature.gov/Legislators/Profile/170/DWG1.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Danielle_Gregoire"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Danielle_Gregoire"
+    },
+    {
+      "title": "Public source",
+      "url": "https://malegislature.gov/api/GeneralCourts/192/LegislativeMembers"
+    },
+    {
+      "title": "Public source",
+      "url": "https://malegislature.gov/api/GeneralCourts/192/LegislativeMembers/"
+    },
+    {
+      "title": "Public source",
+      "url": "https://malegislature.gov/api/GeneralCourts/192/LegislativeMembers/DWG1"
+    },
+    {
+      "title": "Public source",
+      "url": "https://malegislature.gov/api/GeneralCourts/193/LegislativeMembers"
+    },
+    {
+      "title": "Public source",
+      "url": "https://malegislature.gov/api/GeneralCourts/193/LegislativeMembers/"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

@@ -1,0 +1,44 @@
+{
+  "id": "kimberly-driscoll",
+  "name": "Kimberly Driscoll",
+  "firstName": "Kimberly",
+  "lastName": "Driscoll",
+  "party": "D",
+  "level": "state",
+  "position": "Lieutenant Governor",
+  "district": "Massachusetts",
+  "jurisdiction": "Massachusetts statewide public office",
+  "county": [
+    "Massachusetts"
+  ],
+  "termStart": "2023-01-05",
+  "termEnd": "2027-01-07",
+  "contactInfo": {
+    "phone": "617-725-4005",
+    "email": "mayor@salem.com",
+    "website": "http://www.salem.com/"
+  },
+  "bio": "Kimberly Driscoll is listed as Lieutenant Governor for Massachusetts. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "MA",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "http://www.salem.com/"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ma/executive/Kimberly-Driscoll-0587c400-b81a-4ced-b560-a4009519076a.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.mass.gov/person/kim-driscoll-lieutenant-governor"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Kim_Driscoll"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

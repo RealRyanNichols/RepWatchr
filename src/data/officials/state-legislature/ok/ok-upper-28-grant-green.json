@@ -1,0 +1,53 @@
+{
+  "id": "grant-green",
+  "name": "Grant Green",
+  "firstName": "Grant",
+  "lastName": "Green",
+  "party": "R",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-28",
+  "jurisdiction": "Oklahoma Senate",
+  "county": [
+    "Oklahoma"
+  ],
+  "termStart": "2022-11-23",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 428, 2300 N. Lincoln Blvd., Oklahoma City, OK 73105",
+    "phone": "405-521-5547",
+    "email": "grant.green@oksenate.gov",
+    "website": "https://oksenate.gov/contact-senator?sid=1523286"
+  },
+  "bio": "Grant Green serves as State Senator for Oklahoma Senate District 28. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "OK",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://oksenate.gov/contact-senator?sid=1523286"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ok/legislature/Grant-Green-9f0cacea-112a-425a-b212-4fa3cfd3b3a0.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Grant_Green"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Grant_Green_(Oklahoma_politician)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/206339/grant-green"
+    },
+    {
+      "title": "Public source",
+      "url": "https://oksenate.gov/senators/grant-green"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

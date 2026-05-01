@@ -1,0 +1,65 @@
+{
+  "id": "kristen-arrington",
+  "name": "Kristen Arrington",
+  "firstName": "Kristen",
+  "lastName": "Arrington",
+  "party": "D",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-25",
+  "jurisdiction": "Florida Senate",
+  "county": [
+    "Florida"
+  ],
+  "termStart": "2024-11-05",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 210, Senate Building 404 S. Monroe St., Tallahassee, FL 32399",
+    "phone": "850-487-5025",
+    "email": "arrington.kristen.web@flsenate.gov",
+    "website": "https://myfloridahouse.gov/Sections/Representatives/details.aspx?MemberId=4774&LegislativeTermId=90"
+  },
+  "bio": "Kristen Arrington serves as State Senator for Florida Senate District 25. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "FL",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://myfloridahouse.gov/Sections/Representatives/details.aspx?MemberId=4774&LegislativeTermId=90"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/fl/legislature/Kristen-Aston-Arrington-e4a84025-e4fd-4d36-8e12-64bd9f61ed6d.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Kristen_Arrington"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Kristen_Arrington"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.flsenate.gov/Senators/s25"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.flsenate.gov/Senators/S25"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/arrington4fl"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/kristen-arrington"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.myfloridahouse.gov/Sections/Representatives/details.aspx?MemberId=4774"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

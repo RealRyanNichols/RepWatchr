@@ -1,0 +1,51 @@
+{
+  "id": "james-uthmeier",
+  "name": "James Uthmeier",
+  "firstName": "James",
+  "lastName": "Uthmeier",
+  "photo": "/images/officials/state-executive/fl/james-uthmeier.jpg",
+  "photoSourceUrl": "https://www.naag.org/wp-content/uploads/2025/01/ag-FL-Uthmeier-James.png",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "Attorney General",
+  "district": "Florida",
+  "jurisdiction": "Florida statewide public office",
+  "county": [
+    "Florida"
+  ],
+  "termStart": "2025-02-17",
+  "termEnd": "2029-01-02",
+  "contactInfo": {
+    "office": "The Capitol, PL 01; Tallahassee, FL 32399-1050",
+    "phone": "850-414-3300",
+    "website": "https://myfloridalegal.com/"
+  },
+  "bio": "James Uthmeier is listed as Attorney General for Florida. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "FL",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://myfloridalegal.com/"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/fl/executive/James-Uthmeier-669df589-03af-4b3a-9588-d95ab977e171.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://www.naag.org/wp-content/uploads/2025/01/ag-FL-Uthmeier-James.png"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/James_Uthmeier"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.naag.org/attorney-general/james-uthmeier/"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

@@ -1,0 +1,72 @@
+{
+  "id": "ricky-hill",
+  "name": "Ricky Hill",
+  "firstName": "Ricky",
+  "lastName": "Hill",
+  "photo": "/images/officials/state-legislature/ar/ricky-hill.jpg",
+  "photoSourceUrl": "https://www.arkleg.state.ar.us/Content/photos/2023/Senate/545_sm.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-11",
+  "jurisdiction": "Arkansas Senate",
+  "county": [
+    "Arkansas"
+  ],
+  "termStart": "2023-01-09",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "State Capitol Building 500 Woodlane St., Suite 320, Little Rock, AR 72201",
+    "phone": "501-682-2902",
+    "email": "ricky.hill@senate.ar.gov",
+    "website": "https://arkleg.state.ar.us/Legislators/Detail?member=Hill"
+  },
+  "bio": "Ricky Hill serves as State Senator for Arkansas Senate District 11. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "AR",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://arkleg.state.ar.us/Legislators/Detail?member=Hill"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ar/legislature/Ricky-Hill-faf89935-181a-4d19-9e4b-dce4657d4d3a.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://www.arkleg.state.ar.us/Content/photos/2023/Senate/545_sm.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Ricky_Hill"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Ricky_Hill_(politician)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/177602/ricky-hill"
+    },
+    {
+      "title": "Public source",
+      "url": "https://senate.arkansas.gov/senators/545"
+    },
+    {
+      "title": "Public source",
+      "url": "https://senate.arkansas.gov/senators/ricky-hill"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.arkleg.state.ar.us/Legislators/Detail?member=Hill"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.arkleg.state.ar.us/Legislators/Detail?member=Hill&ddBienniumSession=2023%2F2023R"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

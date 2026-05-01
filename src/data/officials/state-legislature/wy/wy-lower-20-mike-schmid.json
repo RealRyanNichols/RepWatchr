@@ -1,0 +1,59 @@
+{
+  "id": "mike-schmid",
+  "name": "Mike Schmid",
+  "firstName": "Mike",
+  "lastName": "Schmid",
+  "photo": "/images/officials/state-legislature/wy/mike-schmid.jpg",
+  "photoSourceUrl": "https://wyoleg.gov/LegislatorSummary/Photos/68th-SchmidMike.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-20",
+  "jurisdiction": "Wyoming House of Representatives",
+  "county": [
+    "Wyoming"
+  ],
+  "termStart": "2025-01-06",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "State Capitol 200 W. 24th St., Cheyenne, WY 82002",
+    "email": "mike.schmid@wyoleg.gov",
+    "website": "https://wyoleg.gov/Legislators/2025/H/2121"
+  },
+  "bio": "Mike Schmid serves as State Representative for Wyoming House of Representatives District 20. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "WY",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://wyoleg.gov/Legislators/2025/H/2121"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/wy/legislature/Mike-Schmid-4c9350f0-084c-4ba2-be0d-9ee0b5f6c629.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://wyoleg.gov/LegislatorSummary/Photos/68th-SchmidMike.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Michael_Schmid"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Mike_Schmid_(politician)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/207683/michael-schmid"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/mike-schmid-5335a91a"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

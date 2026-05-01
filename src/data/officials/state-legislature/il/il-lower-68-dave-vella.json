@@ -1,0 +1,72 @@
+{
+  "id": "dave-vella",
+  "name": "Dave Vella",
+  "firstName": "Dave",
+  "lastName": "Vella",
+  "photo": "/images/officials/state-legislature/il/dave-vella.jpg",
+  "photoSourceUrl": "https://cdn.ilga.gov/assets/img/members/{E0F72B4C-2737-483E-84FE-E596DB8F2DCF}.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-68",
+  "jurisdiction": "Illinois House of Representatives",
+  "county": [
+    "Illinois"
+  ],
+  "termStart": "2021-01-13",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 200-8S, Stratton Office Building, Springfield, IL 62706",
+    "phone": "217-782-0455",
+    "email": "repdavevella@gmail.com",
+    "website": "https://ilga.gov/house/Rep.asp?GA=102&MemberID=2998"
+  },
+  "bio": "Dave Vella serves as State Representative for Illinois House of Representatives District 68. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "IL",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://ilga.gov/house/Rep.asp?GA=102&MemberID=2998"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/il/legislature/Dave-Vella-5da7b2ff-c086-49cd-80bc-9802e426cc00.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://cdn.ilga.gov/assets/img/members/{E0F72B4C-2737-483E-84FE-E596DB8F2DCF}.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Dave_Vella"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Dave_Vella"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ilga.gov/house/default.asp?GA=102"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ilga.gov/house/default.asp?GA=103"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ilga.gov/house/Rep.asp?GA=103&MemberID=3186"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/188046/dave-vella"
+    },
+    {
+      "title": "Public source",
+      "url": "https://vellalundlaw.com/attorney/17/david-vella"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

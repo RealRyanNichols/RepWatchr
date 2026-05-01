@@ -1,0 +1,68 @@
+{
+  "id": "laura-supica",
+  "name": "Laura Supica",
+  "firstName": "Laura",
+  "lastName": "Supica",
+  "photo": "/images/officials/state-legislature/me/laura-supica.jpg",
+  "photoSourceUrl": "https://legislature.maine.gov/house/house/Repository/MemberProfiles/1a8dbf21-c24a-4e1c-89e3-53030c1ecfe5_Supica.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-22",
+  "jurisdiction": "Maine House of Representatives",
+  "county": [
+    "Maine"
+  ],
+  "termStart": "2022-12-07",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 333, House Democratic Office 2 State House Station, Augusta, ME 04333",
+    "phone": "800-423-2900",
+    "email": "laura.supica@legislature.maine.gov",
+    "website": "https://legislature.maine.gov/house/house/MemberProfiles/Details/1438"
+  },
+  "bio": "Laura Supica serves as State Representative for Maine House of Representatives District 22. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "ME",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://legislature.maine.gov/house/house/MemberProfiles/Details/1438"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/me/legislature/Laura-D-Supica-a65cc42d-ae91-4f47-8269-4673f106682f.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://legislature.maine.gov/house/house/Repository/MemberProfiles/1a8dbf21-c24a-4e1c-89e3-53030c1ecfe5_Supica.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Laura_Supica"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/187634/laura-supica"
+    },
+    {
+      "title": "Public source",
+      "url": "https://legislature.maine.gov/house/house/MemberProfiles/ListAlpha"
+    },
+    {
+      "title": "Public source",
+      "url": "https://legislature.maine.gov/housedems/supical/index.html"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/laura-supica-b64201197"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.maine.gov/housedems/supical"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

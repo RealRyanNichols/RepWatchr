@@ -1,0 +1,56 @@
+{
+  "id": "jay-gall",
+  "name": "Jay Gall\u00e9",
+  "firstName": "Jay",
+  "lastName": "Gall\u00e9",
+  "photo": "/images/officials/state-legislature/la/jay-gall.jpg",
+  "photoSourceUrl": "https://house.louisiana.gov/H_Reps/RepPics/rep104.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-104",
+  "jurisdiction": "Louisiana House of Representatives",
+  "county": [
+    "Louisiana"
+  ],
+  "termStart": "2024-01-08",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "P.O. Box 94062 900 N. 3rd St., Baton Rouge, LA 70804",
+    "phone": "225-342-6945",
+    "email": "hse104@legis.la.gov",
+    "website": "https://house.louisiana.gov/H_Reps/members?ID=104"
+  },
+  "bio": "Jay Gall\u00e9 serves as State Representative for Louisiana House of Representatives District 104. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "LA",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://house.louisiana.gov/H_Reps/members?ID=104"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/la/legislature/Jay-Gall-ef1c54d6-d162-48d3-b3b5-b02da086c1ee.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://house.louisiana.gov/H_Reps/RepPics/rep104.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Jay_Gall%C3%A9"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.jaygalle.com"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/jay-galle-98aa544"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

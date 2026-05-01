@@ -1,0 +1,70 @@
+{
+  "id": "dave-murphy",
+  "name": "Dave Murphy",
+  "firstName": "Dave",
+  "lastName": "Murphy",
+  "photo": "/images/officials/state-legislature/wi/dave-murphy.jpg",
+  "photoSourceUrl": "https://docs.legis.wisconsin.gov/2023/legislators/assembly/2488.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "Assemblymember",
+  "district": "HD-56",
+  "jurisdiction": "Wisconsin State Assembly",
+  "county": [
+    "Wisconsin"
+  ],
+  "termStart": "2013-01-07",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "email": "rep.murphy@legis.wisconsin.gov",
+    "website": "https://docs.legis.wisconsin.gov/2017/legislators/assembly/1588"
+  },
+  "bio": "Dave Murphy serves as Assemblymember for Wisconsin State Assembly District 56. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "WI",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://docs.legis.wisconsin.gov/2017/legislators/assembly/1588"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/wi/legislature/David-Murphy-1e2717f2-3426-47b6-8e86-a63f0a507c81.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://docs.legis.wisconsin.gov/2023/legislators/assembly/2488.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Dave_Murphy"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Dave_Murphy_(Wisconsin)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://docs.legis.wisconsin.gov/2019/legislators/assembly/1850"
+    },
+    {
+      "title": "Public source",
+      "url": "https://docs.legis.wisconsin.gov/2021/legislators/assembly"
+    },
+    {
+      "title": "Public source",
+      "url": "https://docs.legis.wisconsin.gov/2021/legislators/assembly/"
+    },
+    {
+      "title": "Public source",
+      "url": "https://docs.legis.wisconsin.gov/2021/legislators/assembly/2165"
+    },
+    {
+      "title": "Public source",
+      "url": "https://docs.legis.wisconsin.gov/2023/legislators/assembly"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

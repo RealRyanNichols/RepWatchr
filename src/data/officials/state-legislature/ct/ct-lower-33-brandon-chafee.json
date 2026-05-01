@@ -1,0 +1,68 @@
+{
+  "id": "brandon-chafee",
+  "name": "Brandon Chafee",
+  "firstName": "Brandon",
+  "lastName": "Chafee",
+  "photo": "/images/officials/state-legislature/ct/brandon-chafee.jpg",
+  "photoSourceUrl": "http://www2.housedems.ct.gov/Chafee/images/Chafee_HS.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-33",
+  "jurisdiction": "Connecticut House of Representatives",
+  "county": [
+    "Connecticut"
+  ],
+  "termStart": "2021-01-06",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 2104, Legislative Office Building 300 Capitol Ave., Hartford, CT 06106",
+    "phone": "800-842-8267",
+    "email": "brandon.chafee@cga.ct.gov",
+    "website": "https://cga.ct.gov/asp/CGABillStatus/CGAMemberBills.asp?dist_code=%27033%27&dist_name=Chafee,%20Brandon"
+  },
+  "bio": "Brandon Chafee serves as State Representative for Connecticut House of Representatives District 33. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "CT",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://cga.ct.gov/asp/CGABillStatus/CGAMemberBills.asp?dist_code=%27033%27&dist_name=Chafee,%20Brandon"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ct/legislature/Brandon-Chafee-e8ce793e-671a-41fa-818a-42b534fa9c6b.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "http://www2.housedems.ct.gov/Chafee/images/Chafee_HS.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "ftp://ftp.cga.ct.gov/pub/data/LegislatorDatabase.csv"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Brandon_Chafee"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Brandon_Chafee"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/193907/brandon-chafee"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.housedems.ct.gov/Chafee"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/brandon-chafee-pe-79737154"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

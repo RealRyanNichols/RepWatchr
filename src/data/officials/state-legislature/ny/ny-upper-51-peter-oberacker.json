@@ -1,0 +1,65 @@
+{
+  "id": "peter-oberacker",
+  "name": "Peter Oberacker",
+  "firstName": "Peter",
+  "lastName": "Oberacker",
+  "party": "R",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-51",
+  "jurisdiction": "New York Senate",
+  "county": [
+    "New York"
+  ],
+  "termStart": "2021-01-06",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 506, Legislative Office Building 198 State Street, Albany, NY 12210",
+    "phone": "518-455-3131",
+    "email": "oberacker@nysenate.gov",
+    "website": "https://www.nysenate.gov/senators-committees",
+    "socialMedia": {
+      "x": "https://x.com/peter4senate51",
+      "twitter": "https://x.com/peter4senate51"
+    }
+  },
+  "bio": "Peter Oberacker serves as State Senator for New York Senate District 51. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "NY",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.nysenate.gov/senators-committees"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ny/legislature/Peter-Oberacker-fe80b36a-56ba-49d6-a14c-05f35ba6f610.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Peter_Oberacker"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Peter_Oberacker"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/175984/peter-oberacker"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/peter-oberacker-jr-3336a278"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.nysenate.gov/senators/peter-oberacker"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.nysenate.gov/senators/peter-oberacker/contact"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

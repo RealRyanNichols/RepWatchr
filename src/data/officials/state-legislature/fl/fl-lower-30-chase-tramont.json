@@ -1,0 +1,57 @@
+{
+  "id": "chase-tramont",
+  "name": "Chase Tramont",
+  "firstName": "Chase",
+  "lastName": "Tramont",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-30",
+  "jurisdiction": "Florida House of Representatives",
+  "county": [
+    "Florida"
+  ],
+  "termStart": "2022-11-08",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 214, House Office Building 402 S. Monroe St., Tallahassee, FL 32399",
+    "phone": "850-717-5030",
+    "email": "chase.tramont@flhouse.gov",
+    "website": "https://myfloridahouse.gov/Sections/Representatives/details.aspx?MemberId=4867&LegislativeTermId=90"
+  },
+  "bio": "Chase Tramont serves as State Representative for Florida House of Representatives District 30. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "FL",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://myfloridahouse.gov/Sections/Representatives/details.aspx?MemberId=4867&LegislativeTermId=90"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/fl/legislature/Chase-Tramont-47cd160b-1e9e-469c-a939-002be336302f.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Chase_Tramont"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.chasetramont.com/meet-chase"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.flhouse.gov/Sections/Representatives/details.aspx?MemberId=4867"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/chase-tramont-3a181a185"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.myfloridahouse.gov/Sections/Representatives/details.aspx?MemberId=4867"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

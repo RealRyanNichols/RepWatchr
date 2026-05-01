@@ -1,0 +1,40 @@
+{
+  "id": "laura-kelly",
+  "name": "Laura Kelly",
+  "firstName": "Laura",
+  "lastName": "Kelly",
+  "party": "D",
+  "level": "state",
+  "position": "Governor",
+  "district": "Kansas",
+  "jurisdiction": "Kansas statewide public office",
+  "county": [
+    "Kansas"
+  ],
+  "termStart": "2019-01-14",
+  "termEnd": "2027-01-11",
+  "contactInfo": {
+    "office": "Capitol, 300 SW 10th Ave., Ste. 241S; Topeka, KS 66612-1590",
+    "phone": "785-368-8500",
+    "website": "https://governor.kansas.gov/",
+    "socialMedia": {
+      "x": "https://x.com/GovLauraKelly",
+      "twitter": "https://x.com/GovLauraKelly"
+    }
+  },
+  "bio": "Laura Kelly is listed as Governor for Kansas. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "KS",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://governor.kansas.gov/"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ks/executive/Laura-Kelly-2654d836-700f-464d-a0dd-81cb0bd77b9e.yml"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

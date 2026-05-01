@@ -1,0 +1,64 @@
+{
+  "id": "kenya-wicks",
+  "name": "Kenya Wicks",
+  "firstName": "Kenya",
+  "lastName": "Wicks",
+  "photo": "/images/officials/state-legislature/ga/kenya-wicks.jpg",
+  "photoSourceUrl": "https://s3.amazonaws.com/ballotpedia-api4/files/thumbs/200/300/Kenya_Wicks.JPG",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-34",
+  "jurisdiction": "Georgia Senate",
+  "county": [
+    "Georgia"
+  ],
+  "termStart": "2025-01-13",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 319-A, Coverdell Legislative Office Building 18 Capitol Square SW, Atlanta, GA 30334",
+    "phone": "404-463-1562",
+    "email": "kenya.wicks@senate.ga.gov",
+    "website": "https://www.legis.ga.gov/members/senate/5065"
+  },
+  "bio": "Kenya Wicks serves as State Senator for Georgia Senate District 34. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "GA",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.legis.ga.gov/members/senate/5065"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ga/legislature/Kenya-Wicks-0a816fbf-e5ec-4056-8b3e-08184400e71b.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://s3.amazonaws.com/ballotpedia-api4/files/thumbs/200/300/Kenya_Wicks.JPG"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Kenya_Wicks"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Kenya_Wicks"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/215134/kenya-wicks"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.legis.ga.gov/members/senate/5065?session=1033"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/kenya-w-4a432419"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

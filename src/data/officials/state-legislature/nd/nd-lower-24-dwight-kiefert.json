@@ -1,0 +1,71 @@
+{
+  "id": "dwight-kiefert",
+  "name": "Dwight Kiefert",
+  "firstName": "Dwight",
+  "lastName": "Kiefert",
+  "photo": "/images/officials/state-legislature/nd/dwight-kiefert.jpg",
+  "photoSourceUrl": "https://www.ndlegis.gov/sites/default/files/styles/member_list_photo/public/person/photo/dhkiefert2023.jpg?itok=zmoi5VTK",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-24",
+  "jurisdiction": "North Dakota House of Representatives",
+  "county": [
+    "North Dakota"
+  ],
+  "termStart": "2012-12-01",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "State Capitol 600 E. Boulevard Ave., Bismarck, ND 58505",
+    "email": "dhkiefert@ndlegis.gov",
+    "website": "https://ndlegis.gov/biography/dwight-kiefert"
+  },
+  "bio": "Dwight Kiefert serves as State Representative for North Dakota House of Representatives District 24. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "ND",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://ndlegis.gov/biography/dwight-kiefert"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/nd/legislature/Dwight-Kiefert-7c89a861-f0cf-402f-97e1-70953440ee36.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://www.ndlegis.gov/sites/default/files/styles/member_list_photo/public/person/photo/dhkiefert2023.jpg?itok=zmoi5VTK"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Dwight_Kiefert"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Dwight_Kiefert"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/104856/dwight-kiefert"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.legis.nd.gov/assembly/65-2017/members/house/representative-dwight-kiefert"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.legis.nd.gov/assembly/66-2019/members/house/representative-dwight-kiefert"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.legis.nd.gov/assembly/67-2021/members/house/representative-dwight-kiefert"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.legis.nd.gov/assembly/67-2021/members/members-by-district"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

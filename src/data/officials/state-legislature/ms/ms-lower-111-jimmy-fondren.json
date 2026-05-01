@@ -1,0 +1,60 @@
+{
+  "id": "jimmy-fondren",
+  "name": "Jimmy Fondren",
+  "firstName": "Jimmy",
+  "lastName": "Fondren",
+  "photo": "/images/officials/state-legislature/ms/jimmy-fondren.jpg",
+  "photoSourceUrl": "https://s3.amazonaws.com/ballotpedia-api4/files/thumbs/200/300/Jimmy_Fondren.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-111",
+  "jurisdiction": "Mississippi House of Representatives",
+  "county": [
+    "Mississippi"
+  ],
+  "termStart": "2024-01-02",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "State Capitol 400 High St., Jackson, MS 39201",
+    "phone": "601-359-3728",
+    "email": "fondren@house.ms.gov",
+    "website": "https://billstatus.ls.state.ms.us/members/house/fondren.xml"
+  },
+  "bio": "Jimmy Fondren serves as State Representative for Mississippi House of Representatives District 111. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "MS",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://billstatus.ls.state.ms.us/members/house/fondren.xml"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ms/legislature/Jimmy-Fondren-af90acc6-0f51-4638-9b7a-51afc5acb0a3.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://s3.amazonaws.com/ballotpedia-api4/files/thumbs/200/300/Jimmy_Fondren.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Jimmy_Fondren"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Jimmy_Fondren"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/211485/jimmy-fondren"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/james-jimmy-fondren-975a47203"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

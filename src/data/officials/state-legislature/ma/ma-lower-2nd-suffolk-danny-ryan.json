@@ -1,0 +1,72 @@
+{
+  "id": "danny-ryan",
+  "name": "Danny Ryan",
+  "firstName": "Danny",
+  "lastName": "Ryan",
+  "photo": "/images/officials/state-legislature/ma/danny-ryan.jpg",
+  "photoSourceUrl": "https://malegislature.gov/Legislators/Profile/170/djr1.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-2nd Suffolk",
+  "jurisdiction": "Massachusetts House of Representatives",
+  "county": [
+    "Massachusetts"
+  ],
+  "termStart": "2014-04-16",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 156, State House 24 Beacon St., Boston, MA 02133",
+    "phone": "617-722-2240",
+    "email": "dan.ryan@mahouse.gov",
+    "website": "https://malegislature.gov/Legislators/Profile/djr1"
+  },
+  "bio": "Danny Ryan serves as State Representative for Massachusetts House of Representatives District 2nd Suffolk. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "MA",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://malegislature.gov/Legislators/Profile/djr1"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ma/legislature/Daniel-J-Ryan-c0519476-08fc-44af-9114-c77d197f883d.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://malegislature.gov/Legislators/Profile/170/djr1.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Daniel_Joseph_Ryan"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Daniel_Joseph_Ryan"
+    },
+    {
+      "title": "Public source",
+      "url": "https://malegislature.gov/api/GeneralCourts/192/LegislativeMembers"
+    },
+    {
+      "title": "Public source",
+      "url": "https://malegislature.gov/api/GeneralCourts/192/LegislativeMembers/"
+    },
+    {
+      "title": "Public source",
+      "url": "https://malegislature.gov/api/GeneralCourts/192/LegislativeMembers/djr1"
+    },
+    {
+      "title": "Public source",
+      "url": "https://malegislature.gov/api/GeneralCourts/193/LegislativeMembers"
+    },
+    {
+      "title": "Public source",
+      "url": "https://malegislature.gov/api/GeneralCourts/193/LegislativeMembers/"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

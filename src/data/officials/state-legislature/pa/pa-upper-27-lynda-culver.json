@@ -1,0 +1,73 @@
+{
+  "id": "lynda-culver",
+  "name": "Lynda Culver",
+  "firstName": "Lynda",
+  "lastName": "Culver",
+  "party": "R",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-27",
+  "jurisdiction": "Pennsylvania Senate",
+  "county": [
+    "Pennsylvania"
+  ],
+  "termStart": "2023-02-28",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 168, Main Capitol Senate Box 203027, Harrisburg, PA 17120",
+    "phone": "717-787-8928",
+    "email": "lculver@pasen.gov",
+    "website": "https://senatorculver.com/",
+    "socialMedia": {
+      "facebook": "https://facebook.com/SenatorCulver",
+      "youtube": "https://youtube.com/RepCulver"
+    }
+  },
+  "bio": "Lynda Culver serves as State Senator for Pennsylvania Senate District 27. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "PA",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://senatorculver.com/"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/pa/legislature/Lynda-Schlegel-Culver-02117eb4-a7b3-4095-831b-1857910660fb.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Lynda_Schlegel-Culver"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Lynda_Schlegel-Culver"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/119572/lynda-culver"
+    },
+    {
+      "title": "Public source",
+      "url": "https://senatorculver.com"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.legis.state.pa.us/cfdocs/legis/home/member_information/House_bio.cfm?id=1202"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.legis.state.pa.us/cfdocs/legis/home/member_information/mbrList.cfm?body=H&sort=alpha"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.legis.state.pa.us/cfdocs/legis/home/member_information/mbrList.cfm?body=S&sort=alpha"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.legis.state.pa.us/cfdocs/legis/home/member_information/representatives_alpha.cfm"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

@@ -1,0 +1,60 @@
+{
+  "id": "wayne-farrin",
+  "name": "Wayne Farrin",
+  "firstName": "Wayne",
+  "lastName": "Farrin",
+  "photo": "/images/officials/state-legislature/me/wayne-farrin.jpg",
+  "photoSourceUrl": "https://i0.wp.com/lincolncountydemocrats.com/wp-content/uploads/Farrin-headshot.jpg?fit=400%2C400&ssl=1",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-47",
+  "jurisdiction": "Maine House of Representatives",
+  "county": [
+    "Maine"
+  ],
+  "termStart": "2024-12-03",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 333, House Democratic Office 2 State House Station, Augusta, ME 04333",
+    "phone": "800-423-2900",
+    "email": "wayne.farrin@legislature.maine.gov",
+    "website": "https://legislature.maine.gov/house/house/MemberProfiles/Details/3115"
+  },
+  "bio": "Wayne Farrin serves as State Representative for Maine House of Representatives District 47. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "ME",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://legislature.maine.gov/house/house/MemberProfiles/Details/3115"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/me/legislature/Wayne-Farrin-674df0e4-1997-4d43-b377-274485c0cd42.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://i0.wp.com/lincolncountydemocrats.com/wp-content/uploads/Farrin-headshot.jpg?fit=400%2C400&ssl=1"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Wayne_Farrin"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/192626/wayne-farrin"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/wayne-farrin-64a77133"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.maine.gov/housedems/node/4083"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

@@ -1,0 +1,70 @@
+{
+  "id": "tina-tartaglione",
+  "name": "Tina Tartaglione",
+  "firstName": "Tina",
+  "lastName": "Tartaglione",
+  "party": "D",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-2",
+  "jurisdiction": "Pennsylvania Senate",
+  "county": [
+    "Pennsylvania"
+  ],
+  "termStart": "1995-01-03",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 458, Main Capitol Senate Box 203002, Harrisburg, PA 17120",
+    "phone": "717-787-1141",
+    "email": "tartaglione@pasenate.com",
+    "website": "https://www.legis.state.pa.us/cfdocs/legis/home/member_information/Senate_bio.cfm?id=277",
+    "socialMedia": {
+      "x": "https://x.com/sentartaglione",
+      "twitter": "https://x.com/sentartaglione",
+      "facebook": "https://facebook.com/SenatorTinaTartaglione"
+    }
+  },
+  "bio": "Tina Tartaglione serves as State Senator for Pennsylvania Senate District 2. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "PA",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.legis.state.pa.us/cfdocs/legis/home/member_information/Senate_bio.cfm?id=277"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/pa/legislature/Christine-M-Tartaglione-f3b4fe8c-05f9-4610-81ef-354c0fcb0cdd.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Christine_Tartaglione"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Christine_Tartaglione"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/5244/tina-tartaglione"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.legis.state.pa.us/cfdocs/legis/home/member_information/mbrList.cfm?body=S&sort=alpha"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.legis.state.pa.us/cfdocs/legis/home/member_information/senators_alpha.cfm"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.palegis.us/senate/members/bio/277/sen-tartaglione"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.senatortartaglione.com"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

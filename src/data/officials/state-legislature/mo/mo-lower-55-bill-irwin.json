@@ -1,0 +1,52 @@
+{
+  "id": "bill-irwin",
+  "name": "Bill Irwin",
+  "firstName": "Bill",
+  "lastName": "Irwin",
+  "photo": "/images/officials/state-legislature/mo/bill-irwin.jpg",
+  "photoSourceUrl": "https://images.squarespace-cdn.com/content/v1/64e208458934da6e60e3a002/211532ff-154d-44d5-84d6-5cd347f4aaba/Irwin+4+Congress+office.jpg?format=2500w",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-55",
+  "jurisdiction": "Missouri House of Representatives",
+  "county": [
+    "Missouri"
+  ],
+  "termStart": "2025-01-08",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 118-CB, 201 W. Capitol Ave., Jefferson City, MO 65101",
+    "phone": "573-751-3783",
+    "email": "bill.irwin@house.mo.gov",
+    "website": "https://house.mo.gov/MemberDetails.aspx?district=055"
+  },
+  "bio": "Bill Irwin serves as State Representative for Missouri House of Representatives District 55. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "MO",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://house.mo.gov/MemberDetails.aspx?district=055"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/mo/legislature/Bill-Irwin-21a85544-7b2f-4d34-9654-a1ebfaa34881.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://images.squarespace-cdn.com/content/v1/64e208458934da6e60e3a002/211532ff-154d-44d5-84d6-5cd347f4aaba/Irwin+4+Congress+office.jpg?format=2500w"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/William_Irwin_(Missouri)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/205857/william-irwin"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

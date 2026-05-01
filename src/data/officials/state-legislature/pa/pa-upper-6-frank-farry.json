@@ -1,0 +1,75 @@
+{
+  "id": "frank-farry",
+  "name": "Frank Farry",
+  "firstName": "Frank",
+  "lastName": "Farry",
+  "party": "R",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-6",
+  "jurisdiction": "Pennsylvania Senate",
+  "county": [
+    "Pennsylvania"
+  ],
+  "termStart": "2022-12-01",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 351, Main Capitol Senate Box 203006, Harrisburg, PA 17120",
+    "phone": "717-787-5072",
+    "email": "ffarry@pasen.gov",
+    "website": "https://senatorfarry.com/",
+    "socialMedia": {
+      "x": "https://x.com/SenFrankFarry",
+      "twitter": "https://x.com/SenFrankFarry",
+      "facebook": "https://facebook.com/SenatorFarry",
+      "youtube": "https://youtube.com/RepFarry"
+    }
+  },
+  "bio": "Frank Farry serves as State Senator for Pennsylvania Senate District 6. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "PA",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://senatorfarry.com/"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/pa/legislature/Frank-A-Farry-611d3c65-f30f-4dde-8f80-7db4ec405a36.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Frank_Farry"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Frank_Farry"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/102588/frank-farry-iii"
+    },
+    {
+      "title": "Public source",
+      "url": "https://senatorfarry.com"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.legis.state.pa.us/cfdocs/legis/home/member_information/House_bio.cfm?id=1169"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.legis.state.pa.us/cfdocs/legis/home/member_information/mbrList.cfm?body=H&sort=alpha"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.legis.state.pa.us/cfdocs/legis/home/member_information/mbrList.cfm?body=S&sort=alpha"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.legis.state.pa.us/cfdocs/legis/home/member_information/representatives_alpha.cfm"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

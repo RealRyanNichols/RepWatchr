@@ -1,0 +1,72 @@
+{
+  "id": "casey-snider",
+  "name": "Casey Snider",
+  "firstName": "Casey",
+  "lastName": "Snider",
+  "photo": "/images/officials/state-legislature/ut/casey-snider.jpg",
+  "photoSourceUrl": "https://le.utah.gov/images/legislator/SNIDEC.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-5",
+  "jurisdiction": "Utah House of Representatives",
+  "county": [
+    "Utah"
+  ],
+  "termStart": "2018-10-15",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "P.O. Box 145030 350 N. State St., Suite 350, Salt Lake City, UT 84114",
+    "phone": "801-538-1029",
+    "email": "csnider@le.utah.gov",
+    "website": "https://disclosures.utah.gov/Search/PublicSearch/FolderDetails/1414881"
+  },
+  "bio": "Casey Snider serves as State Representative for Utah House of Representatives District 5. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "UT",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://disclosures.utah.gov/Search/PublicSearch/FolderDetails/1414881"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ut/legislature/Casey-Snider-5d8ada2a-75c6-4aa6-b359-29720794fb7e.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://le.utah.gov/images/legislator/SNIDEC.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Casey_Snider"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Casey_Snider"
+    },
+    {
+      "title": "Public source",
+      "url": "https://house.utah.gov/rep/SNIDEC"
+    },
+    {
+      "title": "Public source",
+      "url": "https://house.utah.gov/rep/SNIDEC/"
+    },
+    {
+      "title": "Public source",
+      "url": "https://house.utleg.gov/rep/SNIDEC"
+    },
+    {
+      "title": "Public source",
+      "url": "https://house.utleg.gov/rep/SNIDEC/"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/182132/casey-snider"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

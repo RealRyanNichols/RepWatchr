@@ -1,0 +1,51 @@
+{
+  "id": "jonathan-skrmetti",
+  "name": "Jonathan Skrmetti",
+  "firstName": "Jonathan",
+  "lastName": "Skrmetti",
+  "photo": "/images/officials/state-executive/tn/jonathan-skrmetti.jpg",
+  "photoSourceUrl": "https://www.naag.org/wp-content/uploads/2022/09/ag-TN-Skrmetti-2025.png",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "Attorney General",
+  "district": "Tennessee",
+  "jurisdiction": "Tennessee statewide public office",
+  "county": [
+    "Tennessee"
+  ],
+  "termStart": "2022-09-01",
+  "termEnd": "2030-09-01",
+  "contactInfo": {
+    "office": "P.O. Box 20207; Nashville, TN 37202",
+    "phone": "615-741-3491",
+    "website": "https://www.tn.gov/attorneygeneral.html"
+  },
+  "bio": "Jonathan Skrmetti is listed as Attorney General for Tennessee. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "TN",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.tn.gov/attorneygeneral.html"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/tn/executive/Jonathan-Skrmetti-8a5fa491-f871-4b57-962e-8db9adf2c8c3.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://www.naag.org/wp-content/uploads/2022/09/ag-TN-Skrmetti-2025.png"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Jonathan_Skrmetti"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.naag.org/attorney-general/jonathan-skrmetti/"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

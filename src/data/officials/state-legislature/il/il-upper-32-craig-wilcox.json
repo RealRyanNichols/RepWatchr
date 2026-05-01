@@ -1,0 +1,69 @@
+{
+  "id": "craig-wilcox",
+  "name": "Craig Wilcox",
+  "firstName": "Craig",
+  "lastName": "Wilcox",
+  "party": "R",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-32",
+  "jurisdiction": "Illinois Senate",
+  "county": [
+    "Illinois"
+  ],
+  "termStart": "2018-09-30",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 108, Capitol Building, Springfield, IL 62706",
+    "phone": "217-782-8000",
+    "email": "senatorwilcox@gmail.com",
+    "website": "https://ilga.gov/senate/Senator.asp?GA=101&MemberID=2711"
+  },
+  "bio": "Craig Wilcox serves as State Senator for Illinois Senate District 32. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "IL",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://ilga.gov/senate/Senator.asp?GA=101&MemberID=2711"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/il/legislature/Craig-Wilcox-07e2527a-ae7d-4c58-b20b-ea2266a03a9e.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Craig_Wilcox"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Craig_Wilcox"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ilga.gov/senate/default.asp?GA=101"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ilga.gov/senate/default.asp?GA=102"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ilga.gov/senate/default.asp?GA=103"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ilga.gov/senate/Senator.asp?GA=102&MemberID=2925"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ilga.gov/senate/Senator.asp?GA=103&MemberID=3123"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/177111/craig-wilcox"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

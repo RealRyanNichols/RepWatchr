@@ -1,0 +1,64 @@
+{
+  "id": "gina-johnsen",
+  "name": "Gina Johnsen",
+  "firstName": "Gina",
+  "lastName": "Johnsen",
+  "photo": "/images/officials/state-legislature/mi/gina-johnsen.jpg",
+  "photoSourceUrl": "https://www.house.mi.gov/media/Representatives/Johnsen-078.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-78",
+  "jurisdiction": "Michigan House of Representatives",
+  "county": [
+    "Michigan"
+  ],
+  "termStart": "2023-01-01",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room N-1097, Anderson House Office Building 124 N. Capitol Ave., Lansing, MI 48933",
+    "phone": "517-373-1796",
+    "email": "ginajohnsen@house.mi.gov",
+    "website": "https://gophouse.org/member/RepGinaJohnsen/posts"
+  },
+  "bio": "Gina Johnsen serves as State Representative for Michigan House of Representatives District 78. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "MI",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://gophouse.org/member/RepGinaJohnsen/posts"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/mi/legislature/Gina-Johnsen-37cbe31c-4d9d-4f77-847f-ce463e1bec58.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://www.house.mi.gov/media/Representatives/Johnsen-078.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Gina_Johnsen"
+    },
+    {
+      "title": "Member Details Page",
+      "url": "https://RepJohnsen.com"
+    },
+    {
+      "title": "Members List Page",
+      "url": "https://www.house.mi.gov/AllRepresentatives"
+    },
+    {
+      "title": "Member Details Page",
+      "url": "https://www.house.mi.gov/repdetail/repGinaJohnsen"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/gina-johnsen-a6b08030"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

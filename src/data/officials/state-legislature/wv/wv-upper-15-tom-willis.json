@@ -1,0 +1,60 @@
+{
+  "id": "tom-willis",
+  "name": "Tom Willis",
+  "firstName": "Tom",
+  "lastName": "Willis",
+  "photo": "/images/officials/state-legislature/wv/tom-willis.jpg",
+  "photoSourceUrl": "https://www.wvlegislature.gov/images/members/2025/senate/willis_tom.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-15",
+  "jurisdiction": "West Virginia Senate",
+  "county": [
+    "West Virginia"
+  ],
+  "termStart": "2024-12-01",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "State Capitol Room 210W, Complex, Building 1 1900 Kanawha Blvd. East, Charleston, WV 25305",
+    "phone": "304-357-7867",
+    "email": "tom.willis@wvsenate.gov",
+    "website": "https://www.wvlegislature.gov/Senate1/lawmaker.cfm?member=Senator%20Willis"
+  },
+  "bio": "Tom Willis serves as State Senator for West Virginia Senate District 15. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "WV",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.wvlegislature.gov/Senate1/lawmaker.cfm?member=Senator%20Willis"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/wv/legislature/Tom-Willis-da86ac6a-5d19-472e-80a0-8b8595cb3054.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://www.wvlegislature.gov/images/members/2025/senate/willis_tom.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Tom_Willis_(West_Virginia)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Tom_Willis_(politician)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/177667/tom-willis"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/willisforwv"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

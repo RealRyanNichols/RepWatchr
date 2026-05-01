@@ -1,0 +1,56 @@
+{
+  "id": "dwayne-yunker",
+  "name": "Dwayne Yunker",
+  "firstName": "Dwayne",
+  "lastName": "Yunker",
+  "photo": "/images/officials/state-legislature/or/dwayne-yunker.jpg",
+  "photoSourceUrl": "https://www.oregonlegislature.gov/yunker/PublishingImages/member_photo.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-3",
+  "jurisdiction": "Oregon House of Representatives",
+  "county": [
+    "Oregon"
+  ],
+  "termStart": "2023-12-27",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room H-377, 900 Court St. NE, Salem, OR 97301",
+    "phone": "503-986-1403",
+    "email": "rep.dwayneyunker@oregonlegislature.gov",
+    "website": "https://www.oregonlegislature.gov/yunker"
+  },
+  "bio": "Dwayne Yunker serves as State Representative for Oregon House of Representatives District 3. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "OR",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.oregonlegislature.gov/yunker"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/or/legislature/Dwayne-Yunker-497f7e2e-b1d8-4803-8fb8-22dc045bc0b0.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://www.oregonlegislature.gov/yunker/PublishingImages/member_photo.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Dwayne_Yunker"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/214543/dwayne-yunker"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/dwayne-yunker-2b044b71"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

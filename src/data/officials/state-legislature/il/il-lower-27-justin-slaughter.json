@@ -1,0 +1,72 @@
+{
+  "id": "justin-slaughter",
+  "name": "Justin Slaughter",
+  "firstName": "Justin",
+  "lastName": "Slaughter",
+  "photo": "/images/officials/state-legislature/il/justin-slaughter.jpg",
+  "photoSourceUrl": "https://cdn.ilga.gov/assets/img/members/{170C17F3-38A1-42E5-B222-020B43077D53}.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-27",
+  "jurisdiction": "Illinois House of Representatives",
+  "county": [
+    "Illinois"
+  ],
+  "termStart": "2017-01-05",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 249-E, Stratton Office Building, Springfield, IL 62706",
+    "phone": "217-782-0010",
+    "email": "justin@repslaughter.com",
+    "website": "https://ilga.gov/house/Rep.asp?GA=101&MemberID=2682"
+  },
+  "bio": "Justin Slaughter serves as State Representative for Illinois House of Representatives District 27. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "IL",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://ilga.gov/house/Rep.asp?GA=101&MemberID=2682"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/il/legislature/Justin-Slaughter-c296134a-f9b3-4c65-9ed5-3ecccde59386.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://cdn.ilga.gov/assets/img/members/{170C17F3-38A1-42E5-B222-020B43077D53}.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Justin_Slaughter"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Justin_Slaughter"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ilga.gov/house/default.asp?GA=101"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ilga.gov/house/default.asp?GA=102"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ilga.gov/house/default.asp?GA=103"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ilga.gov/house/Rep.asp?GA=102&MemberID=2900"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ilga.gov/house/Rep.asp?GA=103&MemberID=3104"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

@@ -1,0 +1,56 @@
+{
+  "id": "christian-hermanson",
+  "name": "Christian Hermanson",
+  "firstName": "Christian",
+  "lastName": "Hermanson",
+  "photo": "/images/officials/state-legislature/ia/christian-hermanson.jpg",
+  "photoSourceUrl": "https://www.legis.iowa.gov/photo?action=getPhoto&ga=91&pid=37387",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-59",
+  "jurisdiction": "Iowa House of Representatives",
+  "county": [
+    "Iowa"
+  ],
+  "termStart": "2025-01-01",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "State Capitol Building 1007 E. Grand Ave., Des Moines, IA 50319",
+    "phone": "515-281-3221",
+    "email": "christian.hermanson@legis.iowa.gov",
+    "website": "https://www.legis.iowa.gov/legislators/legislator?ga=91&personID=37387"
+  },
+  "bio": "Christian Hermanson serves as State Representative for Iowa House of Representatives District 59. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "IA",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.legis.iowa.gov/legislators/legislator?ga=91&personID=37387"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ia/legislature/Christian-Hermanson-08e97c3c-42e2-47f7-b186-0b5099161d4e.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://www.legis.iowa.gov/photo?action=getPhoto&ga=91&pid=37387"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Christian_Hermanson"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Christian_Hermanson"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.legis.iowa.gov/legislators/legislator?personID=37387"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

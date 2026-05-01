@@ -1,0 +1,60 @@
+{
+  "id": "jonah-garson",
+  "name": "Jonah Garson",
+  "firstName": "Jonah",
+  "lastName": "Garson",
+  "photo": "/images/officials/state-legislature/nc/jonah-garson.jpg",
+  "photoSourceUrl": "https://images.squarespace-cdn.com/content/v1/5ce70c57184229000120643d/1635110523522-15B7H44X3PRPJSL2DYJH/ParryLaw_PLLC_20211020_1501-2.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-23",
+  "jurisdiction": "North Carolina Senate",
+  "county": [
+    "North Carolina"
+  ],
+  "termStart": "2026-04-10",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 1121, 16 W. Jones St., Raleigh, NC 27601",
+    "phone": "919-733-5804",
+    "email": "jonah.garson@ncleg.gov",
+    "website": "https://www.ncleg.gov/Members/Biography/S/1001"
+  },
+  "bio": "Jonah Garson serves as State Senator for North Carolina Senate District 23. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "NC",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.ncleg.gov/Members/Biography/S/1001"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/nc/legislature/Jonah-Garson-3622ded7-77d3-46f8-a62b-dad1c8f3e589.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://images.squarespace-cdn.com/content/v1/5ce70c57184229000120643d/1635110523522-15B7H44X3PRPJSL2DYJH/ParryLaw_PLLC_20211020_1501-2.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Jonah_Garson"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Jonah_Garson"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/jonah-garson-855886132"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.parryfirm.com/jonah-garson"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

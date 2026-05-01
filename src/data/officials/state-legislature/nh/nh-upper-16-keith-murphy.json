@@ -1,0 +1,68 @@
+{
+  "id": "keith-murphy",
+  "name": "Keith Murphy",
+  "firstName": "Keith",
+  "lastName": "Murphy",
+  "photo": "/images/officials/state-legislature/nh/keith-murphy.jpg",
+  "photoSourceUrl": "https://storage.googleapis.com/enview-dev-public-general/legislative-people-photos/50378.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-16",
+  "jurisdiction": "New Hampshire Senate",
+  "county": [
+    "New Hampshire"
+  ],
+  "termStart": "2022-12-07",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 103-A, Legislative Office Building 33 N. State St., Concord, NH 03301",
+    "phone": "603-271-4063",
+    "email": "keith.murphy@gc.nh.gov",
+    "website": "https://gc.nh.gov/senate/members/webpages/district16.aspx"
+  },
+  "bio": "Keith Murphy serves as State Senator for New Hampshire Senate District 16. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "NH",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://gc.nh.gov/senate/members/webpages/district16.aspx"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/nh/legislature/Keith-R-Murphy-7ec573c3-d961-4d08-a71c-d239490b5c1a.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://storage.googleapis.com/enview-dev-public-general/legislative-people-photos/50378.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Keith_Murphy"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Keith_Murphy"
+    },
+    {
+      "title": "Public source",
+      "url": "https://gencourt.state.nh.us/senate/members/webpages/district16.aspx"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/69051/keith-murphy"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.gencourt.state.nh.us/Senate/members/webpages/district16.aspx"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/keith-murphy-1507a11a"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

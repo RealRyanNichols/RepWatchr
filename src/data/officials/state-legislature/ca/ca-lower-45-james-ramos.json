@@ -1,0 +1,68 @@
+{
+  "id": "james-ramos",
+  "name": "James Ramos",
+  "firstName": "James",
+  "lastName": "Ramos",
+  "photo": "/images/officials/state-legislature/ca/james-ramos.jpg",
+  "photoSourceUrl": "https://www.assembly.ca.gov/sites/assembly.ca.gov/files/memberphotos/a40_jc_ramos.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "Assemblymember",
+  "district": "HD-45",
+  "jurisdiction": "California State Assembly",
+  "county": [
+    "California"
+  ],
+  "termStart": "2022-12-05",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 8310, 1021 O St. P.O. Box 942849, Sacramento, CA 94249",
+    "phone": "916-319-2045",
+    "email": "assemblymember.ramos@assembly.ca.gov",
+    "website": "https://a40.asmdc.org/"
+  },
+  "bio": "James Ramos serves as Assemblymember for California State Assembly District 45. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "CA",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://a40.asmdc.org/"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ca/legislature/James-C-Ramos-156660b1-4c3f-45e3-8384-53cda60d7ea5.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://www.assembly.ca.gov/sites/assembly.ca.gov/files/memberphotos/a40_jc_ramos.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://a45.asmdc.org"
+    },
+    {
+      "title": "Public source",
+      "url": "https://assembly.ca.gov/assemblymembers"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/James_Ramos"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/James_Ramos"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/144120/james-ramos"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.assembly.ca.gov/assemblymembers"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

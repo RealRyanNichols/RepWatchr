@@ -1,0 +1,75 @@
+{
+  "id": "kyle-mullins",
+  "name": "Kyle Mullins",
+  "firstName": "Kyle",
+  "lastName": "Mullins",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-112",
+  "jurisdiction": "Pennsylvania House of Representatives",
+  "county": [
+    "Pennsylvania"
+  ],
+  "termStart": "2018-12-01",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 103, Irvis Office Building PO. Box 202112, Harrisburg, PA 17120",
+    "phone": "717-783-5043",
+    "email": "repmullins@pahouse.net",
+    "website": "https://www.legis.state.pa.us/cfdocs/legis/home/member_information/House_bio.cfm?id=1844",
+    "socialMedia": {
+      "x": "https://x.com/RepKyleMullins",
+      "twitter": "https://x.com/RepKyleMullins",
+      "facebook": "https://facebook.com/RepKyleMullins",
+      "youtube": "https://youtube.com/playlist?list=PLjtqNtfs0bgVkHvgNtVPLCpQ6a-Sqde6E"
+    }
+  },
+  "bio": "Kyle Mullins serves as State Representative for Pennsylvania House of Representatives District 112. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "PA",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.legis.state.pa.us/cfdocs/legis/home/member_information/House_bio.cfm?id=1844"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/pa/legislature/Kyle-J-Mullins-625784c9-4cd0-417c-9c44-1acd53b34307.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Kyle_Mullins"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Kyle_Mullins"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/179516/kyle-mullins"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.legis.state.pa.us/cfdocs/legis/home/member_information/mbrList.cfm?body=H&sort=alpha"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.legis.state.pa.us/cfdocs/legis/home/member_information/representatives_alpha.cfm"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/kyle-mullins-26146a5"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.pahouse.com/mullins"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.palegis.us/house/members/bio/1844/rep-mullins"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

@@ -1,0 +1,72 @@
+{
+  "id": "terri-collins",
+  "name": "Terri Collins",
+  "firstName": "Terri",
+  "lastName": "Collins",
+  "photo": "/images/officials/state-legislature/al/terri-collins.jpg",
+  "photoSourceUrl": "https://www.legislature.state.al.us/pdf/house/members/Collins_8.png",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-8",
+  "jurisdiction": "Alabama House of Representatives",
+  "county": [
+    "Alabama"
+  ],
+  "termStart": "2010-11-02",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 427-A, 11 S. Union St., Montgomery, AL 36130",
+    "phone": "334-261-0472",
+    "email": "terri@terricollins.org",
+    "website": "https://alison.legislature.state.al.us/house-leaders-members"
+  },
+  "bio": "Terri Collins serves as State Representative for Alabama House of Representatives District 8. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "AL",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://alison.legislature.state.al.us/house-leaders-members"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/al/legislature/Terri-Collins-902f0f81-a34c-4714-a3eb-bf563abbea96.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://www.legislature.state.al.us/pdf/house/members/Collins_8.png"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Terri_Collins"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Terri_Collins"
+    },
+    {
+      "title": "graphql endpoint for member information",
+      "url": "https://gql.api.alison.legislature.state.al.us/graphql"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/121502/terri-collins"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.legislature.state.al.us/aliswww/ISD/ALRepresentative.aspx?NAME=Collins&OID_SPONSOR=100488&OID_PERSON=6661&SESSNAME="
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.legislature.state.al.us/aliswww/ISD/ALRepresentative.aspx?OID_SPONSOR=100488&OID_PERSON=6661"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.legislature.state.al.us/aliswww/ISD/House/ALRepresentatives.aspx"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

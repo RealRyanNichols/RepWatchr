@@ -1,0 +1,68 @@
+{
+  "id": "kristin-marcell",
+  "name": "Kristin Marcell",
+  "firstName": "Kristin",
+  "lastName": "Marcell",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-178",
+  "jurisdiction": "Pennsylvania House of Representatives",
+  "county": [
+    "Pennsylvania"
+  ],
+  "termStart": "2022-12-01",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 153A, East Wing P.O. Box 202178, Harrisburg, PA 17120",
+    "phone": "717-772-9926",
+    "email": "kmarcell@pahousegop.com",
+    "website": "https://www.legis.state.pa.us/cfdocs/legis/home/member_information/House_bio.cfm?id=1979",
+    "socialMedia": {
+      "facebook": "https://facebook.com/RepMarcell"
+    }
+  },
+  "bio": "Kristin Marcell serves as State Representative for Pennsylvania House of Representatives District 178. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "PA",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.legis.state.pa.us/cfdocs/legis/home/member_information/House_bio.cfm?id=1979"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/pa/legislature/Kristin-Marcell-f1c8d8ab-0220-4b1e-96d0-6e0ae0b6df87.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Kristin_Marcell"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Kristin_Marcell"
+    },
+    {
+      "title": "Public source",
+      "url": "https://votekristinpa.com/about"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.legis.state.pa.us/cfdocs/legis/home/member_information/mbrList.cfm?body=H&sort=alpha"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/kristinsmarcell"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.palegis.us/house/members/bio/1979/rep-marcell"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.repmarcell.com"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

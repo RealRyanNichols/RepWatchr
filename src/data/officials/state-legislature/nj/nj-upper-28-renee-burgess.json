@@ -1,0 +1,65 @@
+{
+  "id": "renee-burgess",
+  "name": "Renee Burgess",
+  "firstName": "Renee",
+  "lastName": "Burgess",
+  "party": "D",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-28",
+  "jurisdiction": "New Jersey Senate",
+  "county": [
+    "New Jersey"
+  ],
+  "termStart": "2022-09-29",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "P.O. Box 068 State House, 145 W. State St., Trenton, NJ 08625",
+    "phone": "609-847-3905",
+    "email": "senburgess@njleg.org",
+    "website": "https://www.njleg.state.nj.us/legislative-roster/455/senator-burgess"
+  },
+  "bio": "Renee Burgess serves as State Senator for New Jersey Senate District 28. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "NJ",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.njleg.state.nj.us/legislative-roster/455/senator-burgess"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/nj/legislature/Renee-C-Burgess-b8495630-20f7-4f9e-bf84-2a13a6da3794.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Renee_Burgess"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Renee_Burgess"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/161903/renee-burgess"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/renee-burgess-9a310540"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.njleg.state.nj.us/api/legislatorData/legislatorBio/455"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.njleg.state.nj.us/legislative-roster"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.njsendems.org/senators/renee-c-burgess"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

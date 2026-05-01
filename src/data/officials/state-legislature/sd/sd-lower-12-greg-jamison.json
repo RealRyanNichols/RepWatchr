@@ -1,0 +1,68 @@
+{
+  "id": "greg-jamison",
+  "name": "Greg Jamison",
+  "firstName": "Greg",
+  "lastName": "Jamison",
+  "photo": "/images/officials/state-legislature/sd/greg-jamison.jpg",
+  "photoSourceUrl": "https://sdlegislature.gov/inc/img/Legislators/Jamison_2017.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-12",
+  "jurisdiction": "South Dakota House of Representatives",
+  "county": [
+    "South Dakota"
+  ],
+  "termStart": "2021-01-12",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Capitol Building 500 E. Capitol Ave., Pierre, SD 57501",
+    "phone": "605-773-3851",
+    "email": "greg.jamison@sdlegislature.gov",
+    "website": "https://sdlegislature.gov/Legislators/Legislators/MemberDetail.aspx?Member=1536&Session=2018s"
+  },
+  "bio": "Greg Jamison serves as State Representative for South Dakota House of Representatives District 12. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "SD",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://sdlegislature.gov/Legislators/Legislators/MemberDetail.aspx?Member=1536&Session=2018s"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/sd/legislature/Greg-Jamison-fe9a44c7-7241-4395-98e3-8445b1bc2d54.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://sdlegislature.gov/inc/img/Legislators/Jamison_2017.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Greg_Jamison"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Greg_Jamison"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/77866/greg-jamison"
+    },
+    {
+      "title": "Public source",
+      "url": "https://sdlegislature.gov/Legislators/Profile/4373/Detail"
+    },
+    {
+      "title": "Public source",
+      "url": "https://sdlegislature.gov/Legislators/Profile/4616/Detail"
+    },
+    {
+      "title": "Public source",
+      "url": "https://sdlegislature.gov/Legislators/Profile/4768/Detail"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

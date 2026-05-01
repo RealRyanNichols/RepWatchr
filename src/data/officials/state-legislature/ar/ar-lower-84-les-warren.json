@@ -1,0 +1,75 @@
+{
+  "id": "les-warren",
+  "name": "Les Warren",
+  "firstName": "Les",
+  "lastName": "Warren",
+  "photo": "/images/officials/state-legislature/ar/les-warren.jpg",
+  "photoSourceUrl": "https://www.arkleg.state.ar.us/Content/photos/2023/House/535_sm.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-84",
+  "jurisdiction": "Arkansas House of Representatives",
+  "county": [
+    "Arkansas"
+  ],
+  "termStart": "2023-01-09",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "State Capitol Arkansas  500 Woodlane St., Suite 350, Little Rock, AR 72201",
+    "phone": "501-682-6211",
+    "email": "les.warren@arkansashouse.org",
+    "website": "https://arkleg.state.ar.us/Legislators/Detail?member=Warren",
+    "socialMedia": {
+      "facebook": "https://facebook.com/les.warren.902"
+    }
+  },
+  "bio": "Les Warren serves as State Representative for Arkansas House of Representatives District 84. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "AR",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://arkleg.state.ar.us/Legislators/Detail?member=Warren"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ar/legislature/Les-Warren-5e063acb-6720-4bb0-8f6e-1df169c856e7.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://www.arkleg.state.ar.us/Content/photos/2023/House/535_sm.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Les_Warren"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Les_Warren_(politician)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.arkansashouse.org/district/84"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.arkleg.state.ar.us/Legislators/Detail?member=Warren"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.arkleg.state.ar.us/Legislators/Detail?member=Warren&ddBienniumSession=2019%2F2020F"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.arkleg.state.ar.us/Legislators/Detail?member=Warren&ddBienniumSession=2021%2F2021R"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.arkleg.state.ar.us/Legislators/Detail?member=Warren&ddBienniumSession=2021%2F2021S1"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

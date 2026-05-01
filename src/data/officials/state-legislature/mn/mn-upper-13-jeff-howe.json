@@ -1,0 +1,72 @@
+{
+  "id": "jeff-howe",
+  "name": "Jeff Howe",
+  "firstName": "Jeff",
+  "lastName": "Howe",
+  "photo": "/images/officials/state-legislature/mn/jeff-howe.jpg",
+  "photoSourceUrl": "https://www.senate.mn/graphics/13Howe.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-13",
+  "jurisdiction": "Minnesota Senate",
+  "county": [
+    "Minnesota"
+  ],
+  "termStart": "2018-12-11",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 2231, Minnesota Senate Building 95 University Ave. West, St. Paul, MN 55155",
+    "phone": "651-296-2084",
+    "email": "sen.jeff.howe@senate.mn",
+    "website": "https://www.senate.mn/members/member_bio.html?mem_id=1239"
+  },
+  "bio": "Jeff Howe serves as State Senator for Minnesota Senate District 13. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "MN",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.senate.mn/members/member_bio.html?mem_id=1239"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/mn/legislature/Jeff-Howe-971dbd16-363f-4151-a75c-306746aec18e.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://www.senate.mn/graphics/13Howe.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Jeff_Howe"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Jeff_Howe"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/140969/jeff-howe"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/jeff-howe-60987281"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.senate.mn/api/members"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.senate.mn/members/index.php"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.senate.mn/members/list.csv"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

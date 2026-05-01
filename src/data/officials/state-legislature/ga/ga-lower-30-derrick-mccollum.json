@@ -1,0 +1,61 @@
+{
+  "id": "derrick-mccollum",
+  "name": "Derrick McCollum",
+  "firstName": "Derrick",
+  "lastName": "McCollum",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-30",
+  "jurisdiction": "Georgia House of Representatives",
+  "county": [
+    "Georgia"
+  ],
+  "termStart": "2023-01-09",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 401-D, Coverdell Legislative Office Building 18 Capitol Square SW, Atlanta, GA 30334",
+    "phone": "404-656-0152",
+    "email": "derrick.mccollum@house.ga.gov",
+    "website": "https://www.legis.ga.gov/members/house"
+  },
+  "bio": "Derrick McCollum serves as State Representative for Georgia House of Representatives District 30. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "GA",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.legis.ga.gov/members/house"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ga/legislature/Derrick-McCollum-3a323603-753e-4380-993c-9bb2a7fc55f3.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Derrick_McCollum"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Derrick_McCollum"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/190384/derrick-mccollum"
+    },
+    {
+      "title": "API member detail (requires authorization token)",
+      "url": "https://www.legis.ga.gov/api/members/detail/5022?session=1031&chamber=1"
+    },
+    {
+      "title": "API members list (requires authorization token)",
+      "url": "https://www.legis.ga.gov/api/members/list/1031"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.legis.ga.gov/members/house/5022"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

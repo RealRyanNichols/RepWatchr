@@ -1,0 +1,56 @@
+{
+  "id": "brad-mattox",
+  "name": "Brad Mattox",
+  "firstName": "Brad",
+  "lastName": "Mattox",
+  "photo": "/images/officials/state-legislature/ms/brad-mattox.jpg",
+  "photoSourceUrl": "https://www.supertalk.fm/wp-content/uploads/2023/08/Brad-Mattox-960x540.png.webp",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-2",
+  "jurisdiction": "Mississippi House of Representatives",
+  "county": [
+    "Mississippi"
+  ],
+  "termStart": "2024-01-02",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "State Capitol 400 High St., Jackson, MS 39201",
+    "phone": "601-359-3728",
+    "email": "mattox@house.ms.gov",
+    "website": "https://billstatus.ls.state.ms.us/members/house/mattox.xml"
+  },
+  "bio": "Brad Mattox serves as State Representative for Mississippi House of Representatives District 2. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "MS",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://billstatus.ls.state.ms.us/members/house/mattox.xml"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ms/legislature/Brad-Mattox-487214e9-b0e2-4741-8bd4-a043a1dd19a5.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://www.supertalk.fm/wp-content/uploads/2023/08/Brad-Mattox-960x540.png.webp"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Brad_Mattox"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Brad_Mattox"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/211392/brad-mattox"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

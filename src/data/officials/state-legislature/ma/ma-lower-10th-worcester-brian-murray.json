@@ -1,0 +1,72 @@
+{
+  "id": "brian-murray",
+  "name": "Brian Murray",
+  "firstName": "Brian",
+  "lastName": "Murray",
+  "photo": "/images/officials/state-legislature/ma/brian-murray.jpg",
+  "photoSourceUrl": "https://malegislature.gov/Legislators/Profile/170/BWM1.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-10th Worcester",
+  "jurisdiction": "Massachusetts House of Representatives",
+  "county": [
+    "Massachusetts"
+  ],
+  "termStart": "2017-01-04",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 238, State House 24 Beacon St., Boston, MA 02133",
+    "phone": "617-722-2380",
+    "email": "brian.murray@mahouse.gov",
+    "website": "https://malegislature.gov/Legislators/Profile/BWM1"
+  },
+  "bio": "Brian Murray serves as State Representative for Massachusetts House of Representatives District 10th Worcester. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "MA",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://malegislature.gov/Legislators/Profile/BWM1"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ma/legislature/Brian-Murray-66e7c819-cd52-4034-bace-bfec476c106d.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://malegislature.gov/Legislators/Profile/170/BWM1.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Brian_W._Murray"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Brian_Murray_(politician)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://malegislature.gov/api/GeneralCourts/192/LegislativeMembers"
+    },
+    {
+      "title": "Public source",
+      "url": "https://malegislature.gov/api/GeneralCourts/192/LegislativeMembers/"
+    },
+    {
+      "title": "Public source",
+      "url": "https://malegislature.gov/api/GeneralCourts/192/LegislativeMembers/BWM1"
+    },
+    {
+      "title": "Public source",
+      "url": "https://malegislature.gov/api/GeneralCourts/193/LegislativeMembers"
+    },
+    {
+      "title": "Public source",
+      "url": "https://malegislature.gov/api/GeneralCourts/193/LegislativeMembers/"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

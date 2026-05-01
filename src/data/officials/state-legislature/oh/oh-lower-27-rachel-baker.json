@@ -1,0 +1,60 @@
+{
+  "id": "rachel-baker",
+  "name": "Rachel Baker",
+  "firstName": "Rachel",
+  "lastName": "Baker",
+  "photo": "/images/officials/state-legislature/oh/rachel-baker.jpg",
+  "photoSourceUrl": "https://www.legislature.ohio.gov/assets/people/rachel-b-baker/headshots/thumbnails/medium/rachel-b-baker-january-2023-headshot_medium.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-27",
+  "jurisdiction": "Ohio House of Representatives",
+  "county": [
+    "Ohio"
+  ],
+  "termStart": "2023-01-01",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "77 S. High St. 10th Floor, Columbus, OH 43215",
+    "phone": "614-644-6886",
+    "email": "rep27@ohiohouse.gov",
+    "website": "https://www.ohiohouse.gov/members/rachel-b-baker"
+  },
+  "bio": "Rachel Baker serves as State Representative for Ohio House of Representatives District 27. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "OH",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.ohiohouse.gov/members/rachel-b-baker"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/oh/legislature/Rachel-B-Baker-36f320a8-be34-43c2-ac73-ee87fbce6b0c.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://www.legislature.ohio.gov/assets/people/rachel-b-baker/headshots/thumbnails/medium/rachel-b-baker-january-2023-headshot_medium.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Rachel_Baker"
+    },
+    {
+      "title": "member details page",
+      "url": "https://ohiohouse.gov/members/rachel-b-baker"
+    },
+    {
+      "title": "member list page",
+      "url": "https://www.legislature.ohio.gov/legislators/house-directory"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/rachelbbaker"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

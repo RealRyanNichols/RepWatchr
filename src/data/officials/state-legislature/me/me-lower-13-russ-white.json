@@ -1,0 +1,60 @@
+{
+  "id": "russ-white",
+  "name": "Russ White",
+  "firstName": "Russ",
+  "lastName": "White",
+  "photo": "/images/officials/state-legislature/me/russ-white.jpg",
+  "photoSourceUrl": "https://i0.wp.com/mainehousegop.org/wp-content/uploads/2024/11/White_p.jpg?fit=600%2C800&ssl=1",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-13",
+  "jurisdiction": "Maine House of Representatives",
+  "county": [
+    "Maine"
+  ],
+  "termStart": "2024-12-03",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 332, House Republican Office 2 State House Station, Augusta, ME 04333",
+    "phone": "800-423-2900",
+    "email": "russell.white@legislature.maine.gov",
+    "website": "https://legislature.maine.gov/house/house/MemberProfiles/Details/3108"
+  },
+  "bio": "Russ White serves as State Representative for Maine House of Representatives District 13. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "ME",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://legislature.maine.gov/house/house/MemberProfiles/Details/3108"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/me/legislature/Russ-White-6e471a24-9252-4c4d-aff6-a00c0c84604d.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://i0.wp.com/mainehousegop.org/wp-content/uploads/2024/11/White_p.jpg?fit=600%2C800&ssl=1"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Russell_White"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/215808/russ-white"
+    },
+    {
+      "title": "Public source",
+      "url": "https://mainehousegop.org/members/white-russell"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/russell-white-35aba564"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

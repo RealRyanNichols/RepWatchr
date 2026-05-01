@@ -1,0 +1,68 @@
+{
+  "id": "seth-howard",
+  "name": "Seth Howard",
+  "firstName": "Seth",
+  "lastName": "Howard",
+  "photo": "/images/officials/state-legislature/md/seth-howard.jpg",
+  "photoSourceUrl": "http://mgaleg.maryland.gov/2016RS/images/howard01.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "Delegate",
+  "district": "HD-30B",
+  "jurisdiction": "Maryland House of Delegates",
+  "county": [
+    "Maryland"
+  ],
+  "termStart": "2015-01-14",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 159, Lowe House Office Building 6 Bladen St., Annapolis, MD 21401",
+    "phone": "410-841-3439",
+    "email": "seth.howard@house.maryland.gov",
+    "website": "https://mgaleg.maryland.gov/mgawebsite/Members/Details/howard01"
+  },
+  "bio": "Seth Howard serves as Delegate for Maryland House of Delegates District 30B. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "MD",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://mgaleg.maryland.gov/mgawebsite/Members/Details/howard01"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/md/legislature/Seth-A-Howard-32a0f09e-394f-446c-93c7-9cff2ea28b83.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "http://mgaleg.maryland.gov/2016RS/images/howard01.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Seth_Howard"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Seth_A._Howard"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/127513/seth-howard"
+    },
+    {
+      "title": "Public source",
+      "url": "https://mgaleg.maryland.gov/webmga/frmMain.aspx?pid=sponpage&tab=subject6&id=howard01&stab=01"
+    },
+    {
+      "title": "Public source",
+      "url": "https://msa.maryland.gov/msa/mdmanual/06hse/html/msa17069.html"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/seth-howard-90a9a591"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

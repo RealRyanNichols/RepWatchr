@@ -73,8 +73,8 @@ export async function GET() {
         value: dataStats.officialFiles,
         loadedStates: nonZeroStateCount(officialCountsByState),
         href: "/officials",
-        detail: `${dataStats.federalProfilesLoaded.toLocaleString()}/${dataStats.federalExpectedSeats.toLocaleString()} current federal seat profiles across 50 states plus ${dataStats.stateLegislatorProfilesLoaded.toLocaleString()} Texas state legislative profiles. ${officialBuildout.completeProfiles.toLocaleString()}/${officialBuildout.totalProfiles.toLocaleString()} official pages are full profiles.`,
-        notTracked: `${officialBuildout.incompleteProfiles.toLocaleString()} official profiles still need buildout. ${dataStats.federalProfileGaps.toLocaleString()} current U.S. House seat gaps and ${dataStats.stateLegislatureProfileGaps.toLocaleString()} Texas state legislative gaps remain in the loaded import.`,
+        detail: `${dataStats.federalProfilesLoaded.toLocaleString()}/${dataStats.federalExpectedSeats.toLocaleString()} current federal seat profiles plus ${dataStats.stateLegislatorProfilesLoaded.toLocaleString()} state-legislative profiles across ${dataStats.stateLegislatureJurisdictionsLoaded} jurisdictions. ${officialBuildout.completeProfiles.toLocaleString()}/${officialBuildout.totalProfiles.toLocaleString()} official pages are full profiles.`,
+        notTracked: `${officialBuildout.incompleteProfiles.toLocaleString()} official profiles still need buildout. ${dataStats.federalProfileGaps.toLocaleString()} current federal seat gaps remain; state profile gaps now mostly mean missing photos, vote records, funding, scorecards, or source review.`,
       },
       {
         id: "school-boards",

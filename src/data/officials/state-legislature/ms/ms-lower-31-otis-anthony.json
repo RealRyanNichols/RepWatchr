@@ -1,0 +1,64 @@
+{
+  "id": "otis-anthony",
+  "name": "Otis Anthony",
+  "firstName": "Otis",
+  "lastName": "Anthony",
+  "photo": "/images/officials/state-legislature/ms/otis-anthony.jpg",
+  "photoSourceUrl": "https://s3.amazonaws.com/ballotpedia-api4/files/thumbs/200/300/anthony.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-31",
+  "jurisdiction": "Mississippi House of Representatives",
+  "county": [
+    "Mississippi"
+  ],
+  "termStart": "2018-12-13",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "State Capitol 400 High St., Jackson, MS 39201",
+    "phone": "601-359-3755",
+    "email": "oanthony@house.ms.gov",
+    "website": "https://billstatus.ls.state.ms.us/members/house/anthony.xml"
+  },
+  "bio": "Otis Anthony serves as State Representative for Mississippi House of Representatives District 31. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "MS",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://billstatus.ls.state.ms.us/members/house/anthony.xml"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ms/legislature/Otis-Anthony-d4007757-e112-43b0-8261-1dd806f658c8.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://s3.amazonaws.com/ballotpedia-api4/files/thumbs/200/300/anthony.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Otis_Anthony"
+    },
+    {
+      "title": "Public source",
+      "url": "https://billstatus.ls.state.ms.us/members/hr_membs.xml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Otis_Anthony"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/130546/otis-anthony-ii"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/otis-l-anthony-ii-9379937a"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

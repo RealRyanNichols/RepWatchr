@@ -1,0 +1,53 @@
+{
+  "id": "jason-blair",
+  "name": "Jason Blair",
+  "firstName": "Jason",
+  "lastName": "Blair",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-53",
+  "jurisdiction": "Oklahoma House of Representatives",
+  "county": [
+    "Oklahoma"
+  ],
+  "termStart": "2024-11-20",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 546, 2300 N. Lincoln Blvd., Oklahoma City, OK 73105",
+    "phone": "405-557-7346",
+    "email": "jason.blair@okhouse.gov",
+    "website": "https://www.okhouse.gov/representatives/jason-blair"
+  },
+  "bio": "Jason Blair serves as State Representative for Oklahoma House of Representatives District 53. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "OK",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.okhouse.gov/representatives/jason-blair"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ok/legislature/Jason-Blair-a791f43c-0ca9-42aa-b90a-98968718a7e1.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Jason_Blair"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Jason_Blair_(politician)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/112523/jason-blair"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/jason-blair"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

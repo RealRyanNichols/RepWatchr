@@ -1,0 +1,72 @@
+{
+  "id": "michael-bergan",
+  "name": "Michael Bergan",
+  "firstName": "Michael",
+  "lastName": "Bergan",
+  "photo": "/images/officials/state-legislature/ia/michael-bergan.jpg",
+  "photoSourceUrl": "https://www.legis.iowa.gov/photo?action=getPhoto&ga=91&pid=18044",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-63",
+  "jurisdiction": "Iowa House of Representatives",
+  "county": [
+    "Iowa"
+  ],
+  "termStart": "2023-01-01",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "State Capitol Building 1007 E. Grand Ave., Des Moines, IA 50319",
+    "phone": "515-281-3221",
+    "email": "michael.bergan@legis.iowa.gov",
+    "website": "https://iowa.us4.list-manage.com/subscribe?u=cda8d4cec739450efbb093a0a&id=09e9bff453"
+  },
+  "bio": "Michael Bergan serves as State Representative for Iowa House of Representatives District 63. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "IA",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://iowa.us4.list-manage.com/subscribe?u=cda8d4cec739450efbb093a0a&id=09e9bff453"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ia/legislature/Michael-Bergan-bf9a43c8-3e2a-489f-94f6-b26035f7f9b9.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://www.legis.iowa.gov/photo?action=getPhoto&ga=91&pid=18044"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Michael_Bergan"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Michael_Bergan"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.legis.iowa.gov/legislators/house"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.legis.iowa.gov/legislators/legislator?ga=88&personID=18044"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.legis.iowa.gov/legislators/legislator?ga=89&personID=18044"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.legis.iowa.gov/legislators/legislator?ga=90&personID=18044"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.legis.iowa.gov/legislators/legislator?personID=18044"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

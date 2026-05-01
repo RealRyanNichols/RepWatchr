@@ -1,0 +1,69 @@
+{
+  "id": "doug-beck",
+  "name": "Doug Beck",
+  "firstName": "Doug",
+  "lastName": "Beck",
+  "party": "D",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-1",
+  "jurisdiction": "Missouri Senate",
+  "county": [
+    "Missouri"
+  ],
+  "termStart": "2021-01-06",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 333, 201 W. Capitol Ave., Jefferson City, MO 65101",
+    "phone": "573-751-0220",
+    "email": "doug.beck@senate.mo.gov",
+    "website": "https://www.house.mo.gov/MemberDetails.aspx?district=92"
+  },
+  "bio": "Doug Beck serves as State Senator for Missouri Senate District 1. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "MO",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.house.mo.gov/MemberDetails.aspx?district=92"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/mo/legislature/Doug-Beck-f6f3c354-c65e-4d9a-a713-5fce1ad2c403.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Doug_Beck"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Doug_Beck"
+    },
+    {
+      "title": "Public source",
+      "url": "https://house.mo.gov/MemberGridCluster.aspx"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/175849/doug-beck"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/doug-beck-ab3993153"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.senate.mo.gov/mem01"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.senate.mo.gov/mem01/"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.senate.mo.gov/senators-listing"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

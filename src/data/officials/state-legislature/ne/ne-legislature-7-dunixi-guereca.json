@@ -1,0 +1,60 @@
+{
+  "id": "dunixi-guereca",
+  "name": "Dunixi Guereca",
+  "firstName": "Dunixi",
+  "lastName": "Guereca",
+  "photo": "/images/officials/state-legislature/ne/dunixi-guereca.jpg",
+  "photoSourceUrl": "https://storage.googleapis.com/enview-dev-public-general/legislative-people-photos/161473.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "NP",
+  "level": "state",
+  "position": "State Senator",
+  "district": "LD-7",
+  "jurisdiction": "Nebraska Legislature",
+  "county": [
+    "Nebraska"
+  ],
+  "termStart": "2025-01-08",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "State Capitol Room 1523, P.O. Box 94604, Lincoln, NE 68509",
+    "phone": "402-471-2721",
+    "email": "dguereca@leg.ne.gov",
+    "website": "https://nebraskalegislature.gov/senators/landing-pages/index.php?District=7"
+  },
+  "bio": "Dunixi Guereca serves as State Senator for Nebraska Legislature District 7. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "NE",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://nebraskalegislature.gov/senators/landing-pages/index.php?District=7"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ne/legislature/Dunixi-Guereca-54fe68ba-6857-483f-b2ae-ba3233a548c4.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://storage.googleapis.com/enview-dev-public-general/legislative-people-photos/161473.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Dunixi_Guereca"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Dunixi_Guereca"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/215017/dunixi-guereca"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/dunixiguereca"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

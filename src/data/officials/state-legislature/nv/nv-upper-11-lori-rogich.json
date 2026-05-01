@@ -1,0 +1,60 @@
+{
+  "id": "lori-rogich",
+  "name": "Lori Rogich",
+  "firstName": "Lori",
+  "lastName": "Rogich",
+  "photo": "/images/officials/state-legislature/nv/lori-rogich.jpg",
+  "photoSourceUrl": "http://www.leg.state.nv.us/Session/83rd2025/legislators/Senators/Images/Rogich.Lori.425.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-11",
+  "jurisdiction": "Nevada Senate",
+  "county": [
+    "Nevada"
+  ],
+  "termStart": "2024-11-06",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 2104, Nevada Senate 401 S. Carson St., Carson City, NV 89701",
+    "phone": "775-684-6502",
+    "email": "lori.rogich@sen.state.nv.us",
+    "website": "https://www.leg.state.nv.us/App/Legislator/A/Senate/Current/11"
+  },
+  "bio": "Lori Rogich serves as State Senator for Nevada Senate District 11. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "NV",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.leg.state.nv.us/App/Legislator/A/Senate/Current/11"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/nv/legislature/Lori-Rogich-f3c4b2a7-2a24-4ba2-9894-421daed2d117.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "http://www.leg.state.nv.us/Session/83rd2025/legislators/Senators/Images/Rogich.Lori.425.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Lori_Rogich"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Lori_Rogich"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/215911/lori-rogich"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/lori-rogich-249029174"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

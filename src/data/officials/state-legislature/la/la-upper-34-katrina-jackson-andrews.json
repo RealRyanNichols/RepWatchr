@@ -1,0 +1,57 @@
+{
+  "id": "katrina-jackson-andrews",
+  "name": "Katrina Jackson-Andrews",
+  "firstName": "Katrina",
+  "lastName": "Jackson-Andrews",
+  "party": "D",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-34",
+  "jurisdiction": "Louisiana Senate",
+  "county": [
+    "Louisiana"
+  ],
+  "termStart": "2020-01-13",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "P.O. Box 94183 900 N. 3rd St., Baton Rouge, LA 70804",
+    "phone": "225-342-2024",
+    "email": "jacksonk@legis.la.gov",
+    "website": "https://senate.la.gov/smembers.aspx?ID=34"
+  },
+  "bio": "Katrina Jackson-Andrews serves as State Senator for Louisiana Senate District 34. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "LA",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://senate.la.gov/smembers.aspx?ID=34"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/la/legislature/Katrina-R-Jackson-acdaa5e6-3b22-44b9-8b47-480b801483dd.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Katrina_Jackson"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Katrina_Jackson"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/134647/katrina-jackson"
+    },
+    {
+      "title": "Public source",
+      "url": "https://senate.la.gov/Senators_FullInfo"
+    },
+    {
+      "title": "Public source",
+      "url": "https://senate.la.gov/smembers?ID=34"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

@@ -1,0 +1,61 @@
+{
+  "id": "joe-bustos",
+  "name": "Joe Bustos",
+  "firstName": "Joe",
+  "lastName": "Bustos",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-112",
+  "jurisdiction": "South Carolina House of Representatives",
+  "county": [
+    "South Carolina"
+  ],
+  "termStart": "2020-11-09",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 308D, Blatt Building P.O. Box 11867, Columbia, SC 29201",
+    "phone": "803-212-6880",
+    "email": "joebustos@schouse.gov",
+    "website": "https://scstatehouse.gov/member.php?code=0278409057"
+  },
+  "bio": "Joe Bustos serves as State Representative for South Carolina House of Representatives District 112. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "SC",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://scstatehouse.gov/member.php?code=0278409057"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/sc/legislature/Joseph-M-Joe-Bustos-35125937-cf55-4408-883f-6f81e45b0063.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Joe_Bustos"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Joe_Bustos"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/77624/joe-bustos"
+    },
+    {
+      "title": "Public source",
+      "url": "https://scstatehouse.gov/member.php?chamber=H"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.scstatehouse.gov/member.php?chamber=H"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.scstatehouse.gov/member.php?code=0278409057"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

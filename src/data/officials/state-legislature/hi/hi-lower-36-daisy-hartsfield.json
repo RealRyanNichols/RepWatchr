@@ -1,0 +1,41 @@
+{
+  "id": "daisy-hartsfield",
+  "name": "Daisy Hartsfield",
+  "firstName": "Daisy",
+  "lastName": "Hartsfield",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-36",
+  "jurisdiction": "Hawaii House of Representatives",
+  "county": [
+    "Hawaii"
+  ],
+  "termStart": "2026-01-21",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "State Capitol Room 326, 415 S. Beretania St., Honolulu, HI 96813",
+    "phone": "808-586-6520",
+    "email": "rephartsfield@capitol.hawaii.gov",
+    "website": "https://www.capitol.hawaii.gov/legislature/memberpage.aspx?member=310"
+  },
+  "bio": "Daisy Hartsfield serves as State Representative for Hawaii House of Representatives District 36. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "HI",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.capitol.hawaii.gov/legislature/memberpage.aspx?member=310"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/hi/legislature/Daisy-Hartsfield-801d5517-e486-41e4-8c3d-53528a3a8bef.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/daisy-hartsfield-b88170b5"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

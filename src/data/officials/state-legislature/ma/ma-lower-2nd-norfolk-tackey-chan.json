@@ -1,0 +1,72 @@
+{
+  "id": "tackey-chan",
+  "name": "Tackey Chan",
+  "firstName": "Tackey",
+  "lastName": "Chan",
+  "photo": "/images/officials/state-legislature/ma/tackey-chan.jpg",
+  "photoSourceUrl": "https://malegislature.gov/Legislators/Profile/170/T_C1.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-2nd Norfolk",
+  "jurisdiction": "Massachusetts House of Representatives",
+  "county": [
+    "Massachusetts"
+  ],
+  "termStart": "2011-01-05",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 42, State House 24 Beacon St., Boston, MA 02133",
+    "phone": "617-722-2370",
+    "email": "tackey.chan@mahouse.gov",
+    "website": "https://malegislature.gov/Legislators/Profile/T_C1"
+  },
+  "bio": "Tackey Chan serves as State Representative for Massachusetts House of Representatives District 2nd Norfolk. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "MA",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://malegislature.gov/Legislators/Profile/T_C1"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ma/legislature/Tackey-Chan-6b420d2a-f12d-40ca-a13f-04cf9061a66b.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://malegislature.gov/Legislators/Profile/170/T_C1.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Tackey_Chan"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Tackey_Chan"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/125254/tackey-chan"
+    },
+    {
+      "title": "Public source",
+      "url": "https://malegislature.gov/api/GeneralCourts/192/LegislativeMembers"
+    },
+    {
+      "title": "Public source",
+      "url": "https://malegislature.gov/api/GeneralCourts/192/LegislativeMembers/"
+    },
+    {
+      "title": "Public source",
+      "url": "https://malegislature.gov/api/GeneralCourts/192/LegislativeMembers/T_C1"
+    },
+    {
+      "title": "Public source",
+      "url": "https://malegislature.gov/api/GeneralCourts/193/LegislativeMembers"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

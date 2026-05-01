@@ -1,0 +1,72 @@
+{
+  "id": "jaime-andrade",
+  "name": "Jaime Andrade",
+  "firstName": "Jaime",
+  "lastName": "Andrade",
+  "photo": "/images/officials/state-legislature/il/jaime-andrade.jpg",
+  "photoSourceUrl": "https://cdn.ilga.gov/assets/img/members/{34A19039-7BF5-44A7-9A06-4EC121E52514}.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-40",
+  "jurisdiction": "Illinois House of Representatives",
+  "county": [
+    "Illinois"
+  ],
+  "termStart": "2013-08-12",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 238-W, Stratton Office Building, Springfield, IL 62706",
+    "phone": "217-782-8117",
+    "email": "info@staterep40.com",
+    "website": "https://ilga.gov/house/Rep.asp?GA=101&MemberID=2645"
+  },
+  "bio": "Jaime Andrade serves as State Representative for Illinois House of Representatives District 40. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "IL",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://ilga.gov/house/Rep.asp?GA=101&MemberID=2645"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/il/legislature/Jaime-M-Andrade-Jr-c0d481c5-9d31-4780-b2b0-bc5327291d6b.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://cdn.ilga.gov/assets/img/members/{34A19039-7BF5-44A7-9A06-4EC121E52514}.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Jaime_Andrade"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Jaime_Andrade_Jr."
+    },
+    {
+      "title": "Public source",
+      "url": "https://ilga.gov/house/default.asp?GA=101"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ilga.gov/house/default.asp?GA=102"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ilga.gov/house/default.asp?GA=103"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ilga.gov/house/Rep.asp?GA=102&MemberID=2875"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ilga.gov/house/Rep.asp?GA=103&MemberID=3084"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

@@ -1,0 +1,64 @@
+{
+  "id": "kathleen-taylor",
+  "name": "Kathleen Taylor",
+  "firstName": "Kathleen",
+  "lastName": "Taylor",
+  "photo": "/images/officials/state-legislature/or/kathleen-taylor.jpg",
+  "photoSourceUrl": "https://www.oregonlegislature.gov/taylor/PublishingImages/member_photo.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-21",
+  "jurisdiction": "Oregon Senate",
+  "county": [
+    "Oregon"
+  ],
+  "termStart": "2017-01-09",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room S-209, 900 Court St. NE, Salem, OR 97301",
+    "phone": "503-986-1721",
+    "email": "sen.kathleentaylor@oregonlegislature.gov",
+    "website": "https://www.oregonlegislature.gov/taylor"
+  },
+  "bio": "Kathleen Taylor serves as State Senator for Oregon Senate District 21. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "OR",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.oregonlegislature.gov/taylor"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/or/legislature/Kathleen-Taylor-97c2b8fd-9e87-43b7-b202-6541af36bab7.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://www.oregonlegislature.gov/taylor/PublishingImages/member_photo.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://api.oregonlegislature.gov/odata/odataservice.svc/LegislativeSessions('2022R1')/Legislators"
+    },
+    {
+      "title": "Public source",
+      "url": "https://api.oregonlegislature.gov/odata/odataservice.svc/LegislativeSessions('2023R1')/Legislators"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Kathleen_Taylor_(Oregon)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Kathleen_Taylor_(politician)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/kathleen-taylor-b029b846"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

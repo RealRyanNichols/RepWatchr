@@ -1,0 +1,64 @@
+{
+  "id": "kwani-o-pharrow",
+  "name": "Kwani O'Pharrow",
+  "firstName": "Kwani",
+  "lastName": "O'Pharrow",
+  "photo": "/images/officials/state-legislature/ny/kwani-o-pharrow.jpg",
+  "photoSourceUrl": "https://s3.amazonaws.com/ballotpedia-api4/files/thumbs/200/300/Byron__McCray__20240808_092347.jpeg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "Assemblymember",
+  "district": "HD-11",
+  "jurisdiction": "New York State Assembly",
+  "county": [
+    "New York"
+  ],
+  "termStart": "2025-01-01",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 919, Legislative Office Building, Albany, NY 12248",
+    "phone": "518-455-5787",
+    "email": "opharrk@nyassembly.gov",
+    "website": "https://nyassembly.gov/mem/Kwani-B-O'Pharrow"
+  },
+  "bio": "Kwani O'Pharrow serves as Assemblymember for New York State Assembly District 11. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "NY",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://nyassembly.gov/mem/Kwani-B-O'Pharrow"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ny/legislature/Kwani-OPharrow-3240ab03-fbf2-4614-ae92-309f1abf415a.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://s3.amazonaws.com/ballotpedia-api4/files/thumbs/200/300/Byron__McCray__20240808_092347.jpeg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Kwani_O%27Pharrow"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Kwani_O%27Pharrow"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/217831/kwani-opharrow"
+    },
+    {
+      "title": "Public source",
+      "url": "https://nyassembly.gov/mem/Kwani-O'Pharrow"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/kwani-b-o-pharrow-sr-"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

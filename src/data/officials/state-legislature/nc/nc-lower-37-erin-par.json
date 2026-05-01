@@ -1,0 +1,68 @@
+{
+  "id": "erin-par",
+  "name": "Erin Par\u00e9",
+  "firstName": "Erin",
+  "lastName": "Par\u00e9",
+  "photo": "/images/officials/state-legislature/nc/erin-par.jpg",
+  "photoSourceUrl": "https://www.ncleg.gov/Members/MemberImage/H/770/Low",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-37",
+  "jurisdiction": "North Carolina House of Representatives",
+  "county": [
+    "North Carolina"
+  ],
+  "termStart": "2021-01-01",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 637, Legislative Office Building 300 N. Salisbury St., Raleigh, NC 27603",
+    "phone": "919-733-2962",
+    "email": "erin.pare@ncleg.gov",
+    "website": "https://reperinpare.com/home"
+  },
+  "bio": "Erin Par\u00e9 serves as State Representative for North Carolina House of Representatives District 37. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "NC",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://reperinpare.com/home"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/nc/legislature/Erin-Pare-ea801bb0-b3bd-4dbc-9164-25e7f4e63f84.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://www.ncleg.gov/Members/MemberImage/H/770/Low"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Erin_Pare"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Erin_Par%C3%A9"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/189275/erin-pare"
+    },
+    {
+      "title": "Public source",
+      "url": "https://reperinpare.com/erin-par%C3%A9"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.ncleg.gov/Members/Biography/H/770"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.ncleg.gov/Members/MemberTable/H"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

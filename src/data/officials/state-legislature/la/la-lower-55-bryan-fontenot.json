@@ -1,0 +1,57 @@
+{
+  "id": "bryan-fontenot",
+  "name": "Bryan Fontenot",
+  "firstName": "Bryan",
+  "lastName": "Fontenot",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-55",
+  "jurisdiction": "Louisiana House of Representatives",
+  "county": [
+    "Louisiana"
+  ],
+  "termStart": "2020-01-13",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "P.O. Box 94062 900 N. 3rd St., Baton Rouge, LA 70804",
+    "phone": "225-342-6945",
+    "email": "hse055@legis.la.gov",
+    "website": "https://house.louisiana.gov/H_Reps/members.aspx?ID=55"
+  },
+  "bio": "Bryan Fontenot serves as State Representative for Louisiana House of Representatives District 55. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "LA",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://house.louisiana.gov/H_Reps/members.aspx?ID=55"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/la/legislature/Bryan-Fontenot-90b6f6c3-9620-4fbb-8c23-f8ab7b163de7.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Bryan_Fontenot"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Bryan_Fontenot"
+    },
+    {
+      "title": "Public source",
+      "url": "https://house.louisiana.gov/H_Reps/H_Reps_FullInfo"
+    },
+    {
+      "title": "Public source",
+      "url": "https://house.louisiana.gov/H_Reps/members?ID=55"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/186988/bryan-fontenot"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

@@ -1,0 +1,60 @@
+{
+  "id": "nancy-dahlstrom",
+  "name": "Nancy Dahlstrom",
+  "firstName": "Nancy",
+  "lastName": "Dahlstrom",
+  "photo": "/images/officials/state-executive/ak/nancy-dahlstrom.jpg",
+  "photoSourceUrl": "https://ltgov.alaska.gov/wp-content/uploads/Screenshot-2022-12-14-150552-e1682445198168.png",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "Lieutenant Governor",
+  "district": "Alaska",
+  "jurisdiction": "Alaska statewide public office",
+  "county": [
+    "Alaska"
+  ],
+  "termStart": "2022-12-05",
+  "termEnd": "2026-12-07",
+  "contactInfo": {
+    "office": "P.O. Box 110015; ; Juneau, AK 99811-0001",
+    "phone": "907-465-3520",
+    "email": "lt.governor@alaska.gov",
+    "website": "https://ltgov.alaska.gov/email-the-lt-governor/",
+    "socialMedia": {
+      "x": "https://x.com/ltgovdahlstrom",
+      "twitter": "https://x.com/ltgovdahlstrom"
+    }
+  },
+  "bio": "Nancy Dahlstrom is listed as Lieutenant Governor for Alaska. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "AK",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://ltgov.alaska.gov/email-the-lt-governor/"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ak/executive/Nancy-Dahlstrom-6b940121-937e-47ba-916a-626b67fe54f4.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://ltgov.alaska.gov/wp-content/uploads/Screenshot-2022-12-14-150552-e1682445198168.png"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ltgov.alaska.gov/"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.nass.org/memberships/secretaries-statelieutenant-governors"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Nancy_Dahlstrom"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

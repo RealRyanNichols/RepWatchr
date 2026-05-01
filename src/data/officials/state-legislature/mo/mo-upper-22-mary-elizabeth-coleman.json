@@ -1,0 +1,53 @@
+{
+  "id": "mary-elizabeth-coleman",
+  "name": "Mary Elizabeth Coleman",
+  "firstName": "Mary Elizabeth",
+  "lastName": "Coleman",
+  "party": "R",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-22",
+  "jurisdiction": "Missouri Senate",
+  "county": [
+    "Missouri"
+  ],
+  "termStart": "2023-01-04",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 331A, 201 W. Capitol Ave., Jefferson City, MO 65101",
+    "phone": "573-751-1492",
+    "email": "maryelizabeth.coleman@senate.mo.gov",
+    "website": "https://www.senate.mo.gov/Senators/Member/22"
+  },
+  "bio": "Mary Elizabeth Coleman serves as State Senator for Missouri Senate District 22. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "MO",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.senate.mo.gov/Senators/Member/22"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/mo/legislature/Mary-Elizabeth-Coleman-f1d83642-4aa6-4fea-80f1-4c3f422c63ed.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Mary_Coleman_(Missouri)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Mary_Elizabeth_Coleman"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/183290/mary-coleman"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.senate.mo.gov/Senators/Member?id=272"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

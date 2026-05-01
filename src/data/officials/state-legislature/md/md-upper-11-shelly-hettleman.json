@@ -1,0 +1,64 @@
+{
+  "id": "shelly-hettleman",
+  "name": "Shelly Hettleman",
+  "firstName": "Shelly",
+  "lastName": "Hettleman",
+  "photo": "/images/officials/state-legislature/md/shelly-hettleman.jpg",
+  "photoSourceUrl": "https://mgaleg.maryland.gov/2025RS/images/hettleman02.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-11",
+  "jurisdiction": "Maryland Senate",
+  "county": [
+    "Maryland"
+  ],
+  "termStart": "2020-02-03",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 220, James Senate Office Building 11 Bladen St., Annapolis, MD 21401",
+    "phone": "410-841-3131",
+    "email": "shelly.hettleman@senate.maryland.gov",
+    "website": "https://mgaleg.maryland.gov/mgawebsite/Members/Details/hettleman02"
+  },
+  "bio": "Shelly Hettleman serves as State Senator for Maryland Senate District 11. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "MD",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://mgaleg.maryland.gov/mgawebsite/Members/Details/hettleman02"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/md/legislature/Shelly-Hettleman-77cad368-7e81-4ff2-91d8-62ecacd38fe7.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://mgaleg.maryland.gov/2025RS/images/hettleman02.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Shelly_Hettleman"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Shelly_L._Hettleman"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/149592/shelly-hettleman"
+    },
+    {
+      "title": "Public source",
+      "url": "https://mgaleg.maryland.gov/webmga/frmMain.aspx?pid=sponpage&tab=subject6&id=hettleman01&stab=01"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/shelly-hettleman-3065229"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

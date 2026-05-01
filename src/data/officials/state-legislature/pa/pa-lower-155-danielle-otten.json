@@ -1,0 +1,75 @@
+{
+  "id": "danielle-otten",
+  "name": "Danielle Otten",
+  "firstName": "Danielle",
+  "lastName": "Otten",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-155",
+  "jurisdiction": "Pennsylvania House of Representatives",
+  "county": [
+    "Pennsylvania"
+  ],
+  "termStart": "2018-12-01",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 34, East Wing P.O. Box 202155, Harrisburg, PA 17120",
+    "phone": "717-783-5009",
+    "email": "repotten@pahouse.net",
+    "website": "https://www.legis.state.pa.us/cfdocs/legis/home/member_information/House_bio.cfm?id=1850",
+    "socialMedia": {
+      "x": "https://x.com/RepDanielle",
+      "twitter": "https://x.com/RepDanielle",
+      "facebook": "https://facebook.com/RepDanielle",
+      "youtube": "https://youtube.com/playlist?list=PLjtqNtfs0bgVr-fZ-diFi9mzN-IRKsx2e"
+    }
+  },
+  "bio": "Danielle Otten serves as State Representative for Pennsylvania House of Representatives District 155. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "PA",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.legis.state.pa.us/cfdocs/legis/home/member_information/House_bio.cfm?id=1850"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/pa/legislature/Danielle-Friel-Otten-6678bcaf-292f-408a-aa36-90ed8bc8fd08.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Danielle_Otten"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Danielle_Friel_Otten"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/179544/danielle-otten"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.legis.state.pa.us/cfdocs/legis/home/member_information/mbrList.cfm?body=H&sort=alpha"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.legis.state.pa.us/cfdocs/legis/home/member_information/representatives_alpha.cfm"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/danielle-friel-otten"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.pahouse.com/frielotten"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.palegis.us/house/members/bio/1850/rep-otten"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

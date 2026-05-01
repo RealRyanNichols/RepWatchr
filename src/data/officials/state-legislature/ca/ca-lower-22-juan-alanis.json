@@ -1,0 +1,65 @@
+{
+  "id": "juan-alanis",
+  "name": "Juan Alanis",
+  "firstName": "Juan",
+  "lastName": "Alanis",
+  "party": "R",
+  "level": "state",
+  "position": "Assemblymember",
+  "district": "HD-22",
+  "jurisdiction": "California State Assembly",
+  "county": [
+    "California"
+  ],
+  "termStart": "2022-12-05",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 4640, 1021 O St. P.O. Box 942849, Sacramento, CA 94249",
+    "phone": "916-319-2022",
+    "email": "assemblymember.alanis@assembly.ca.gov",
+    "website": "https://ad22.asmrc.org/"
+  },
+  "bio": "Juan Alanis serves as Assemblymember for California State Assembly District 22. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "CA",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://ad22.asmrc.org/"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ca/legislature/Juan-Alanis-dfb00d6c-1d0d-410f-8a06-d54841495a62.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ad22.asmrc.org"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ad22.asmrc.org/biography"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Juan_Alanis_(California)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Juan_Alanis_(politician)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/205277/juan-alanis"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.assembly.ca.gov/assemblymembers"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/juan-alanis-8a450b15a"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

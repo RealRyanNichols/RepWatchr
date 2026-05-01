@@ -1,0 +1,64 @@
+{
+  "id": "rosalind-osgood",
+  "name": "Rosalind Osgood",
+  "firstName": "Rosalind",
+  "lastName": "Osgood",
+  "photo": "/images/officials/state-legislature/fl/rosalind-osgood.jpg",
+  "photoSourceUrl": "https://flsenate.gov/PublishedContent/Senators/2022-2024/Photos/s32_5520.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-32",
+  "jurisdiction": "Florida Senate",
+  "county": [
+    "Florida"
+  ],
+  "termStart": "2022-11-08",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 213, Senate Building 404 S. Monroe St., Tallahassee, FL 32399",
+    "phone": "850-487-5032",
+    "email": "osgood.rosalind.web@flsenate.gov",
+    "website": "https://flsenate.gov/Senators/2022-2024/S32"
+  },
+  "bio": "Rosalind Osgood serves as State Senator for Florida Senate District 32. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "FL",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://flsenate.gov/Senators/2022-2024/S32"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/fl/legislature/Rosalind-Osgood-3194701f-dfa8-40e9-9081-56aa20c63f6e.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://flsenate.gov/PublishedContent/Senators/2022-2024/Photos/s32_5520.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Rosalind_Osgood"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Rosalind_Osgood"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.flsenate.gov/Senators/S32"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/dr-rosalind-osgood-7739b834"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.senatorosgood.com"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

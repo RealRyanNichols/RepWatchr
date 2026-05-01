@@ -1,0 +1,60 @@
+{
+  "id": "wayne-hemingway",
+  "name": "Wayne Hemingway",
+  "firstName": "Wayne",
+  "lastName": "Hemingway",
+  "photo": "/images/officials/state-legislature/nh/wayne-hemingway.jpg",
+  "photoSourceUrl": "http://img1.wsimg.com/isteam/ip/dd261d25-a088-4d57-bcaf-6c1d15a130ab/IMG_1581.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-Sullivan 6",
+  "jurisdiction": "New Hampshire House of Representatives",
+  "county": [
+    "New Hampshire"
+  ],
+  "termStart": "2024-12-04",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "State House 107 N. Main St., Concord, NH 03301",
+    "phone": "603-271-3661",
+    "email": "wayne.hemingway@gc.nh.gov",
+    "website": "https://gc.nh.gov/house/members/member.aspx?pid=11439"
+  },
+  "bio": "Wayne Hemingway serves as State Representative for New Hampshire House of Representatives District Sullivan 6. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "NH",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://gc.nh.gov/house/members/member.aspx?pid=11439"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/nh/legislature/Wayne-Hemingway-891b5235-2e56-4bbf-820a-ca7c928324e1.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "http://img1.wsimg.com/isteam/ip/dd261d25-a088-4d57-bcaf-6c1d15a130ab/IMG_1581.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Wayne_Hemingway"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Wayne_Hemingway_(politician)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://gencourt.state.nh.us/house/members/member.aspx?pid=11439"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/219263/wayne-hemingway"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

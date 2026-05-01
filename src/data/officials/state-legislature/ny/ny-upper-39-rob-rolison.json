@@ -1,0 +1,53 @@
+{
+  "id": "rob-rolison",
+  "name": "Rob Rolison",
+  "firstName": "Rob",
+  "lastName": "Rolison",
+  "party": "R",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-39",
+  "jurisdiction": "New York Senate",
+  "county": [
+    "New York"
+  ],
+  "termStart": "2023-01-01",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 613, Legislative Office Building, Albany, NY 12247",
+    "phone": "518-455-2945",
+    "email": "rolison@nysenate.gov",
+    "website": "https://www.nysenate.gov/senators/rob-rolison"
+  },
+  "bio": "Rob Rolison serves as State Senator for New York Senate District 39. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "NY",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.nysenate.gov/senators/rob-rolison"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ny/legislature/Robert-Rolison-68cdb041-2986-42dc-a2fd-2b9d6c668665.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Robert_Rolison"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Robert_Rolison"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/91651/rob-rolison"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/robert-rolison-8b361825"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

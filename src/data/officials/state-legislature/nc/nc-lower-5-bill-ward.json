@@ -1,0 +1,56 @@
+{
+  "id": "bill-ward",
+  "name": "Bill Ward",
+  "firstName": "Bill",
+  "lastName": "Ward",
+  "photo": "/images/officials/state-legislature/nc/bill-ward.jpg",
+  "photoSourceUrl": "https://www.ncleg.gov/Members/MemberImage/H/816/Low",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-5",
+  "jurisdiction": "North Carolina House of Representatives",
+  "county": [
+    "North Carolina"
+  ],
+  "termStart": "2023-01-01",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 306A2, Legislative Office Building 300 N. Salisbury St., Raleigh, NC 27603",
+    "phone": "919-733-5780",
+    "email": "bill.ward@ncleg.gov",
+    "website": "https://www.ncleg.gov/Members/Biography/H/816"
+  },
+  "bio": "Bill Ward serves as State Representative for North Carolina House of Representatives District 5. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "NC",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.ncleg.gov/Members/Biography/H/816"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/nc/legislature/Bill-Ward-f1d726fb-535d-456b-9712-b689afcb7763.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://www.ncleg.gov/Members/MemberImage/H/816/Low"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Bill_Ward_(North_Carolina)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Bill_Ward_(North_Carolina_politician)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.ncleg.gov/Members/MemberTable/H"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

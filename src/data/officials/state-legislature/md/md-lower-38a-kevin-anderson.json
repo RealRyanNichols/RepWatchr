@@ -1,0 +1,56 @@
+{
+  "id": "kevin-anderson",
+  "name": "Kevin Anderson",
+  "firstName": "Kevin",
+  "lastName": "Anderson",
+  "photo": "/images/officials/state-legislature/md/kevin-anderson.jpg",
+  "photoSourceUrl": "https://mgaleg.maryland.gov/2025S1/images/anderson01.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "Delegate",
+  "district": "HD-38A",
+  "jurisdiction": "Maryland House of Delegates",
+  "county": [
+    "Maryland"
+  ],
+  "termStart": "2025-12-09",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 309, Lowe House Office Building 6 Bladen St., Annapolis, MD 21401",
+    "phone": "410-841-3433",
+    "email": "h.kevin.anderson@house.maryland.gov",
+    "website": "https://mgaleg.maryland.gov/mgawebsite/Members/Details/anderson01"
+  },
+  "bio": "Kevin Anderson serves as Delegate for Maryland House of Delegates District 38A. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "MD",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://mgaleg.maryland.gov/mgawebsite/Members/Details/anderson01"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/md/legislature/Kevin-Anderson-0eeebd2a-0708-458e-85f4-74c8d2ebd0f8.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://mgaleg.maryland.gov/2025S1/images/anderson01.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Kevin_Anderson_(Maryland)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Kevin_Anderson_(American_politician)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://msa.maryland.gov/msa/mdmanual/06hse/html/msa18652.html"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

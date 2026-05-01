@@ -1,0 +1,52 @@
+{
+  "id": "pamela-carter",
+  "name": "Pamela Carter",
+  "firstName": "Pamela",
+  "lastName": "Carter",
+  "photo": "/images/officials/state-legislature/az/pamela-carter.jpg",
+  "photoSourceUrl": "https://s3.amazonaws.com/ballotpedia-api4/files/thumbs/200/300/PamelaCarter2024.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-4",
+  "jurisdiction": "Arizona House of Representatives",
+  "county": [
+    "Arizona"
+  ],
+  "termStart": "2025-01-13",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 304, 1700 W. Washington St., Phoenix, AZ 85007",
+    "phone": "602-926-3153",
+    "email": "pcarter@azleg.gov",
+    "website": "https://www.azleg.gov/house-member/?legislature=57&session=129&legislator=2354"
+  },
+  "bio": "Pamela Carter serves as State Representative for Arizona House of Representatives District 4. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "AZ",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.azleg.gov/house-member/?legislature=57&session=129&legislator=2354"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/az/legislature/Pamela-Carter-d78cb0f9-fd3c-472e-aeb8-716abd42f26e.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://s3.amazonaws.com/ballotpedia-api4/files/thumbs/200/300/PamelaCarter2024.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Pamela_Carter"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/pamela-carter-0713944b"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

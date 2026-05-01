@@ -1,0 +1,72 @@
+{
+  "id": "luke-meerman",
+  "name": "Luke Meerman",
+  "firstName": "Luke",
+  "lastName": "Meerman",
+  "photo": "/images/officials/state-legislature/mi/luke-meerman.jpg",
+  "photoSourceUrl": "https://dtj5wlj7ond0z.cloudfront.net/uploads/2020/07/HS_MEERMAN_0119.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-89",
+  "jurisdiction": "Michigan House of Representatives",
+  "county": [
+    "Michigan"
+  ],
+  "termStart": "2023-01-01",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room N-1193, Anderson House Office Building 124 N. Capitol Ave., Lansing, MI 48933",
+    "phone": "517-373-0838",
+    "email": "lukemeerman@house.mi.gov",
+    "website": "https://gophouse.org/representatives/southwest/meerman/"
+  },
+  "bio": "Luke Meerman serves as State Representative for Michigan House of Representatives District 89. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "MI",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://gophouse.org/representatives/southwest/meerman/"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/mi/legislature/Luke-Meerman-187a5c10-ccc0-4c94-a4c9-4c208ace4776.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://dtj5wlj7ond0z.cloudfront.net/uploads/2020/07/HS_MEERMAN_0119.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Luke_Meerman"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Luke_Meerman"
+    },
+    {
+      "title": "Public source",
+      "url": "https://gophouse.org/representatives/southwest/meerman"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/182913/luke-meerman"
+    },
+    {
+      "title": "Member Details Page",
+      "url": "https://RepMeerman.com"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.house.mi.gov/AllRepresentatives"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.house.mi.gov/MHRPublic/frmRepListMilenia.aspx?all=true"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

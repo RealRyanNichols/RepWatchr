@@ -1,0 +1,72 @@
+{
+  "id": "russ-muirhead",
+  "name": "Russ Muirhead",
+  "firstName": "Russ",
+  "lastName": "Muirhead",
+  "photo": "/images/officials/state-legislature/nh/russ-muirhead.jpg",
+  "photoSourceUrl": "https://snworksceo.imgix.net/drt/1ca40038-9f0d-422c-b469-afddf7607f69.sized-1000x1000.jpg?dpr=2",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-Grafton 12",
+  "jurisdiction": "New Hampshire House of Representatives",
+  "county": [
+    "New Hampshire"
+  ],
+  "termStart": "2020-12-02",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "State House 107 N. Main St., Concord, NH 03301",
+    "phone": "603-271-3661",
+    "email": "russell.muirhead@gc.nh.gov",
+    "website": "https://gc.nh.gov/house/members/member.aspx?pid=9890"
+  },
+  "bio": "Russ Muirhead serves as State Representative for New Hampshire House of Representatives District Grafton 12. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "NH",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://gc.nh.gov/house/members/member.aspx?pid=9890"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/nh/legislature/Russell-Muirhead-33c30ffc-2203-48fc-9161-e14946abce23.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://snworksceo.imgix.net/drt/1ca40038-9f0d-422c-b469-afddf7607f69.sized-1000x1000.jpg?dpr=2"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Russell_Muirhead"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Russell_Muirhead"
+    },
+    {
+      "title": "Public source",
+      "url": "https://gencourt.state.nh.us/downloads/Members.txt"
+    },
+    {
+      "title": "Public source",
+      "url": "https://gencourt.state.nh.us/downloads/members.txt"
+    },
+    {
+      "title": "Public source",
+      "url": "https://gencourt.state.nh.us/house/members/member.aspx?pid=9890"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/194877/russell-muirhead"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.gencourt.state.nh.us/house/members/member.aspx?pid=9890"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

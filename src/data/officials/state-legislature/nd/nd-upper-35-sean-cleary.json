@@ -1,0 +1,70 @@
+{
+  "id": "sean-cleary",
+  "name": "Sean Cleary",
+  "firstName": "Sean",
+  "lastName": "Cleary",
+  "photo": "/images/officials/state-legislature/nd/sean-cleary.jpg",
+  "photoSourceUrl": "https://www.ndlegis.gov/sites/default/files/styles/member_list_photo/public/person/photo/scleary2023.jpg?itok=iooji8l4",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-35",
+  "jurisdiction": "North Dakota Senate",
+  "county": [
+    "North Dakota"
+  ],
+  "termStart": "2022-12-01",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "email": "scleary@ndlegis.gov",
+    "website": "https://ndlegis.gov/biography/sean-cleary"
+  },
+  "bio": "Sean Cleary serves as State Senator for North Dakota Senate District 35. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "ND",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://ndlegis.gov/biography/sean-cleary"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/nd/legislature/Sean-Cleary-ee32295a-16ef-45df-b47e-f74ac5f1765b.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://www.ndlegis.gov/sites/default/files/styles/member_list_photo/public/person/photo/scleary2023.jpg?itok=iooji8l4"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Sean_Cleary_(North_Dakota)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Sean_D._Cleary"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.clearyfornd.com/about-sean"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/sean-cleary-59456553"
+    },
+    {
+      "title": "members list page",
+      "url": "https://www.ndlegis.gov/assembly/68-2023/regular/members?combine=&field_legis_chamber_target_id=All&field_legis_district_target_id=All&field_legislator_party_target_id=All&page=1"
+    },
+    {
+      "title": "members list page",
+      "url": "https://www.ndlegis.gov/assembly/68-2023/regular/members?page=1"
+    },
+    {
+      "title": "member details page",
+      "url": "https://www.ndlegis.gov/biography/sean-cleary"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

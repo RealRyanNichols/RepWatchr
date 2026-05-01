@@ -1,0 +1,71 @@
+{
+  "id": "jim-anderson",
+  "name": "Jim Anderson",
+  "firstName": "Jim",
+  "lastName": "Anderson",
+  "photo": "/images/officials/state-legislature/wy/jim-anderson.jpg",
+  "photoSourceUrl": "https://wyoleg.gov/LegislatorSummary/Photos/68th-AndersonJim.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-28",
+  "jurisdiction": "Wyoming Senate",
+  "county": [
+    "Wyoming"
+  ],
+  "termStart": "2013-01-07",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "State Capitol 200 W. 24th St., Cheyenne, WY 82002",
+    "email": "jim.anderson@wyoleg.gov",
+    "website": "https://www.wyoleg.gov/Legislators/2023/S/1985"
+  },
+  "bio": "Jim Anderson serves as State Senator for Wyoming Senate District 28. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "WY",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.wyoleg.gov/Legislators/2023/S/1985"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/wy/legislature/Jim-Anderson-f40c41d5-b371-49c5-a597-db8435e613a0.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://wyoleg.gov/LegislatorSummary/Photos/68th-AndersonJim.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/James_Anderson_(Wyoming_State_Senate_District_28)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/James_Lee_Anderson"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/141984/jim-anderson"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/jim-anderson-10882361"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.wyoleg.gov/Legislators/2025/S/1985"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.wyoleg.gov/Legislators/2026/S/1985"
+    },
+    {
+      "title": "Public source",
+      "url": "https://wyoleg.gov/Legislators/2019/R/1985"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

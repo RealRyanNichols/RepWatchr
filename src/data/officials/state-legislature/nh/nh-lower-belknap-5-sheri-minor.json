@@ -1,0 +1,60 @@
+{
+  "id": "sheri-minor",
+  "name": "Sheri Minor",
+  "firstName": "Sheri",
+  "lastName": "Minor",
+  "photo": "/images/officials/state-legislature/nh/sheri-minor.jpg",
+  "photoSourceUrl": "https://bloximages.newyork1.vip.townnews.com/laconiadailysun.com/content/tncms/assets/v3/editorial/1/f4/1f434246-8fee-11ef-b4d0-934cb1784f3f/6716bec6842b5.image.jpg?resize=309%2C500",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-Belknap 5",
+  "jurisdiction": "New Hampshire House of Representatives",
+  "county": [
+    "New Hampshire"
+  ],
+  "termStart": "2024-12-04",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "State House 107 N. Main St., Concord, NH 03301",
+    "phone": "603-271-3661",
+    "email": "sheri.minor@gc.nh.gov",
+    "website": "https://gc.nh.gov/house/members/member.aspx?pid=11310"
+  },
+  "bio": "Sheri Minor serves as State Representative for New Hampshire House of Representatives District Belknap 5. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "NH",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://gc.nh.gov/house/members/member.aspx?pid=11310"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/nh/legislature/Sheri-Minor-d4473432-7416-4a64-9a3f-24b7ce96c446.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://bloximages.newyork1.vip.townnews.com/laconiadailysun.com/content/tncms/assets/v3/editorial/1/f4/1f434246-8fee-11ef-b4d0-934cb1784f3f/6716bec6842b5.image.jpg?resize=309%2C500"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Sheri_Minor"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Sheri_Minor"
+    },
+    {
+      "title": "Public source",
+      "url": "https://gencourt.state.nh.us/house/members/member.aspx?pid=11310"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/218740/sheri-minor"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

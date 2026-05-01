@@ -1,0 +1,61 @@
+{
+  "id": "juan-candelaria",
+  "name": "Juan Candelaria",
+  "firstName": "Juan",
+  "lastName": "Candelaria",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-95",
+  "jurisdiction": "Connecticut House of Representatives",
+  "county": [
+    "Connecticut"
+  ],
+  "termStart": "2003-01-07",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 4015, Legislative Office Building 300 Capitol Ave., Hartford, CT 06106",
+    "phone": "860-240-8585",
+    "email": "juan.candelaria@cga.ct.gov",
+    "website": "https://www.cga.ct.gov/asp/CGABillStatus/CGAMemberBills.asp?dist_code=%27095%27&dist_name=095%20-%Candelaria,%Juan%20R."
+  },
+  "bio": "Juan Candelaria serves as State Representative for Connecticut House of Representatives District 95. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "CT",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.cga.ct.gov/asp/CGABillStatus/CGAMemberBills.asp?dist_code=%27095%27&dist_name=095%20-%Candelaria,%Juan%20R."
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ct/legislature/Juan-R-Candelaria-6af561a7-e6d7-4a29-8f65-9a22a5734639.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "ftp://ftp.cga.ct.gov/pub/data/LegislatorDatabase.csv"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Juan_Candelaria"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Juan_Candelaria"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/30401/juan-candelaria"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.housedems.ct.gov/Candelaria"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/juan-candelaria-9a6a478"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

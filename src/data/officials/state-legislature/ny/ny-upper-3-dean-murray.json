@@ -1,0 +1,53 @@
+{
+  "id": "dean-murray",
+  "name": "Dean Murray",
+  "firstName": "Dean",
+  "lastName": "Murray",
+  "party": "R",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-3",
+  "jurisdiction": "New York Senate",
+  "county": [
+    "New York"
+  ],
+  "termStart": "2023-01-01",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 406, Legislative Office Building, Albany, NY 12247",
+    "phone": "518-455-3411",
+    "email": "murray@nysenate.gov",
+    "website": "https://www.nysenate.gov/senators/dean-murray"
+  },
+  "bio": "Dean Murray serves as State Senator for New York Senate District 3. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "NY",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.nysenate.gov/senators/dean-murray"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ny/legislature/Dean-Murray-8ff653e0-5aa6-4692-ac54-25ed36e32f97.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Dean_Murray"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/L._Dean_Murray"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/119994/dean-murray"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/dean-murray-a75b15a"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

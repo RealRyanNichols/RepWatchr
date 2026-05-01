@@ -1,0 +1,63 @@
+{
+  "id": "jack-chatfield",
+  "name": "Jack Chatfield",
+  "firstName": "Jack",
+  "lastName": "Chatfield",
+  "photo": "/images/officials/state-legislature/nm/jack-chatfield.jpg",
+  "photoSourceUrl": "https://www.nmlegis.gov/Images/Legislators/House/HCHAT.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-67",
+  "jurisdiction": "New Mexico House of Representatives",
+  "county": [
+    "New Mexico"
+  ],
+  "termStart": "2019-01-15",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 203FN, New Mexico Capitol Annex 325 Don Gaspar Ave., Santa Fe, NM 87501",
+    "phone": "505-986-4467",
+    "email": "jack.chatfield@nmlegis.gov",
+    "website": "https://www.nmlegis.gov/Members/Legislator?SponCode=HCHAT",
+    "socialMedia": {
+      "facebook": "https://facebook.com/jackchatfieldhd67"
+    }
+  },
+  "bio": "Jack Chatfield serves as State Representative for New Mexico House of Representatives District 67. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "NM",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.nmlegis.gov/Members/Legislator?SponCode=HCHAT"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/nm/legislature/Jack-Chatfield-c41b373a-7376-4084-b0de-3648cfce9b05.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://www.nmlegis.gov/Images/Legislators/House/HCHAT.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Jackey_Chatfield"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Jack_Chatfield"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/180816/jack-chatfield"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.nmlegis.gov/Members/Legislator_List?T=R"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

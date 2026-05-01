@@ -1,0 +1,72 @@
+{
+  "id": "curtis-tarver",
+  "name": "Curtis Tarver",
+  "firstName": "Curtis",
+  "lastName": "Tarver",
+  "photo": "/images/officials/state-legislature/il/curtis-tarver.jpg",
+  "photoSourceUrl": "https://cdn.ilga.gov/assets/img/members/{E9404756-F108-41DB-A7A8-87C36BBF763D}.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-25",
+  "jurisdiction": "Illinois House of Representatives",
+  "county": [
+    "Illinois"
+  ],
+  "termStart": "2019-01-09",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 521-B, Stratton Office Building, Springfield, IL 62706",
+    "phone": "217-782-8121",
+    "email": "office@repcurtisjtarverii.com",
+    "website": "https://ilga.gov/house/Rep.asp?GA=101&MemberID=2748"
+  },
+  "bio": "Curtis Tarver serves as State Representative for Illinois House of Representatives District 25. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "IL",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://ilga.gov/house/Rep.asp?GA=101&MemberID=2748"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/il/legislature/Curtis-J-Tarver-II-7a4c9172-6836-453c-94a8-1254b76fa08f.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://cdn.ilga.gov/assets/img/members/{E9404756-F108-41DB-A7A8-87C36BBF763D}.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Curtis_Tarver_II"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Curtis_Tarver"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ilga.gov/house/default.asp?GA=101"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ilga.gov/house/default.asp?GA=102"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ilga.gov/house/default.asp?GA=103"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ilga.gov/house/Rep.asp?GA=102&MemberID=2949"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ilga.gov/house/Rep.asp?GA=103&MemberID=3145"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

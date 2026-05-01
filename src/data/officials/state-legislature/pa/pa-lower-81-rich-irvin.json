@@ -1,0 +1,73 @@
+{
+  "id": "rich-irvin",
+  "name": "Rich Irvin",
+  "firstName": "Rich",
+  "lastName": "Irvin",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-81",
+  "jurisdiction": "Pennsylvania House of Representatives",
+  "county": [
+    "Pennsylvania"
+  ],
+  "termStart": "2015-01-06",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 209, Ryan Office Building P.O. Box 202081, Harrisburg, PA 17120",
+    "phone": "717-787-3335",
+    "email": "rirvin@pahousegop.com",
+    "website": "https://www.legis.state.pa.us/cfdocs/legis/home/member_information/House_bio.cfm?id=1691",
+    "socialMedia": {
+      "facebook": "https://facebook.com/PA-State-Rep-Rich-Irvin",
+      "youtube": "https://youtube.com/RepIrvin"
+    }
+  },
+  "bio": "Rich Irvin serves as State Representative for Pennsylvania House of Representatives District 81. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "PA",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.legis.state.pa.us/cfdocs/legis/home/member_information/House_bio.cfm?id=1691"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/pa/legislature/Rich-Irvin-ff2471f3-f3ff-4a46-8ca7-be5094f0dfdc.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Richard_Irvin_(Pennsylvania)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Rich_Irvin_(Pennsylvania_politician)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Richard_Irvin"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/150768/rich-irvin"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.legis.state.pa.us/cfdocs/legis/home/member_information/mbrList.cfm?body=H&sort=alpha"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.legis.state.pa.us/cfdocs/legis/home/member_information/representatives_alpha.cfm"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.palegis.us/house/members/bio/1691/rep-irvin"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.repirvin.com"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

@@ -1,0 +1,60 @@
+{
+  "id": "mike-griffith",
+  "name": "Mike Griffith",
+  "firstName": "Mike",
+  "lastName": "Griffith",
+  "photo": "/images/officials/state-legislature/md/mike-griffith.jpg",
+  "photoSourceUrl": "http://mgaleg.maryland.gov/2020RS/images/griffith02.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "Delegate",
+  "district": "HD-35A",
+  "jurisdiction": "Maryland House of Delegates",
+  "county": [
+    "Maryland"
+  ],
+  "termStart": "2023-01-11",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 423, Lowe House Office Building 6 Bladen St., Annapolis, MD 21401",
+    "phone": "410-841-3444",
+    "email": "mike.griffith@house.maryland.gov",
+    "website": "https://mgaleg.maryland.gov/mgawebsite/Members/Details/griffith02"
+  },
+  "bio": "Mike Griffith serves as Delegate for Maryland House of Delegates District 35A. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "MD",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://mgaleg.maryland.gov/mgawebsite/Members/Details/griffith02"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/md/legislature/Mike-Griffith-79a4ffd2-8ca9-4fb2-beb2-bcbfd1d49897.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "http://mgaleg.maryland.gov/2020RS/images/griffith02.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Mike_Griffith_(Maryland)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Mike_Griffith_(politician)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://msa.maryland.gov/msa/mdmanual/06hse/html/msa18252.html"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/mike-griffith-21838850"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

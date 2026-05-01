@@ -1,0 +1,56 @@
+{
+  "id": "hannah-bowen",
+  "name": "Hannah Bowen",
+  "firstName": "Hannah",
+  "lastName": "Bowen",
+  "photo": "/images/officials/state-legislature/ma/hannah-bowen.jpg",
+  "photoSourceUrl": "https://www.resolutionnorthshore.org/images/staff/AG22-Hannah_Bowen-228832.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-6th Essex",
+  "jurisdiction": "Massachusetts House of Representatives",
+  "county": [
+    "Massachusetts"
+  ],
+  "termStart": "2025-05-21",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 443, State House 24 Beacon St., Boston, MA 02133",
+    "phone": "617-722-2460",
+    "email": "hannah.bowen@mahouse.gov",
+    "website": "https://malegislature.gov/Legislators/Profile/HLB1"
+  },
+  "bio": "Hannah Bowen serves as State Representative for Massachusetts House of Representatives District 6th Essex. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "MA",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://malegislature.gov/Legislators/Profile/HLB1"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ma/legislature/Hannah-Bowen-f9a6f401-206b-43df-a1b9-0fc1cd8a3417.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://www.resolutionnorthshore.org/images/staff/AG22-Hannah_Bowen-228832.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Hannah_Bowen"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Hannah_Bowen"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/bowenhannah"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

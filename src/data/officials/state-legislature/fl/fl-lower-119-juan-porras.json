@@ -1,0 +1,53 @@
+{
+  "id": "juan-porras",
+  "name": "Juan Porras",
+  "firstName": "Juan",
+  "lastName": "Porras",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-119",
+  "jurisdiction": "Florida House of Representatives",
+  "county": [
+    "Florida"
+  ],
+  "termStart": "2022-11-08",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 334, The Capitol 402 S. Monroe St., Tallahassee, FL 32399",
+    "phone": "850-717-5119",
+    "email": "juancarlos.porras@flhouse.gov",
+    "website": "https://myfloridahouse.gov/Sections/Representatives/details.aspx?MemberId=4898&LegislativeTermId=90"
+  },
+  "bio": "Juan Porras serves as State Representative for Florida House of Representatives District 119. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "FL",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://myfloridahouse.gov/Sections/Representatives/details.aspx?MemberId=4898&LegislativeTermId=90"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/fl/legislature/Juan-Carlos-Porras-6c673f21-8f64-44b7-831f-d3d2e9c78eb3.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Juan_Carlos_Porras"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.flhouse.gov/Sections/Representatives/details.aspx?MemberId=4898"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/juan-porras-9a1268134"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.myfloridahouse.gov/Sections/Representatives/details.aspx?MemberId=4898"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

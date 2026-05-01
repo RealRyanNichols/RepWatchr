@@ -1,0 +1,78 @@
+{
+  "id": "jim-dotson",
+  "name": "Jim Dotson",
+  "firstName": "Jim",
+  "lastName": "Dotson",
+  "photo": "/images/officials/state-legislature/ar/jim-dotson.jpg",
+  "photoSourceUrl": "https://www.arkleg.state.ar.us/Content/photos/2023/Senate/636_sm.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-34",
+  "jurisdiction": "Arkansas Senate",
+  "county": [
+    "Arkansas"
+  ],
+  "termStart": "2023-01-09",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "State Capitol Building 500 Woodlane St., Suite 320, Little Rock, AR 72201",
+    "phone": "501-682-2902",
+    "email": "jim.dotson@senate.ar.gov",
+    "website": "https://arkleg.state.ar.us/Legislators/Detail?member=Dotson",
+    "socialMedia": {
+      "x": "https://x.com/JimDotson_",
+      "twitter": "https://x.com/JimDotson_",
+      "facebook": "https://facebook.com/dotsonsenate",
+      "instagram": "https://instagram.com/repjimdotson"
+    }
+  },
+  "bio": "Jim Dotson serves as State Senator for Arkansas Senate District 34. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "AR",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://arkleg.state.ar.us/Legislators/Detail?member=Dotson"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ar/legislature/Jim-Dotson-f2259c7e-4c43-41c3-ae29-3aedd5b88eef.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://www.arkleg.state.ar.us/Content/photos/2023/Senate/636_sm.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://arkleg.state.ar.us/Legislators/Detail?member=J.+Dotson"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Jim_Dotson"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/111482/jim-dotson"
+    },
+    {
+      "title": "Public source",
+      "url": "https://senate.arkansas.gov/senators/636"
+    },
+    {
+      "title": "Public source",
+      "url": "https://senate.arkansas.gov/senators/jim-dotson"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.arkleg.state.ar.us/Legislators/Detail?member=Dotson"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.arkleg.state.ar.us/Legislators/Detail?member=Dotson&ddBienniumSession=2019%2F2020F"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

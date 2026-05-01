@@ -1,0 +1,69 @@
+{
+  "id": "rhonda-taylor",
+  "name": "Rhonda Taylor",
+  "firstName": "Rhonda",
+  "lastName": "Taylor",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-92",
+  "jurisdiction": "Georgia House of Representatives",
+  "county": [
+    "Georgia"
+  ],
+  "termStart": "2023-01-09",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 604-E, Coverdell Legislative Office Building 18 Capitol Square SW, Atlanta, GA 30334",
+    "phone": "404-656-0265",
+    "email": "rhonda.taylor@house.ga.gov",
+    "website": "https://www.legis.ga.gov/members/house"
+  },
+  "bio": "Rhonda Taylor serves as State Representative for Georgia House of Representatives District 92. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "GA",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.legis.ga.gov/members/house"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ga/legislature/Rhonda-Taylor-bc40f904-9c20-41d0-80d5-e5645d3e6935.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Rhonda_Taylor_(Georgia)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Rhonda_Taylor"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/168348/rhonda-taylor"
+    },
+    {
+      "title": "Detail page (requires authorization token)",
+      "url": "https://www.legis.ga.gov/api/members/detail/4998?session=1029&chamber=1"
+    },
+    {
+      "title": "API member detail (requires authorization token)",
+      "url": "https://www.legis.ga.gov/api/members/detail/4998?session=1031&chamber=1"
+    },
+    {
+      "title": "API members list (requires authorization token)",
+      "url": "https://www.legis.ga.gov/api/members/list/1031"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.legis.ga.gov/members/house/4998"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.legis.ga.gov/members/house/4998?session=1029"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

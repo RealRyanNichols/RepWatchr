@@ -1,0 +1,72 @@
+{
+  "id": "nicole-la-ha",
+  "name": "Nicole La Ha",
+  "firstName": "Nicole",
+  "lastName": "La Ha",
+  "photo": "/images/officials/state-legislature/il/nicole-la-ha.jpg",
+  "photoSourceUrl": "https://cdn.ilga.gov/assets/img/members/{08891F3D-4342-4F2E-A5E5-6CCBCD415423}.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-82",
+  "jurisdiction": "Illinois House of Representatives",
+  "county": [
+    "Illinois"
+  ],
+  "termStart": "2023-12-20",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 200-1N, Stratton Office Building, Springfield, IL 62706",
+    "phone": "217-782-0494",
+    "email": "repnicolelaha@gmail.com",
+    "website": "https://ilga.gov/house/Rep.asp?GA=103&MemberID=3256"
+  },
+  "bio": "Nicole La Ha serves as State Representative for Illinois House of Representatives District 82. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "IL",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://ilga.gov/house/Rep.asp?GA=103&MemberID=3256"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/il/legislature/Nicole-La-Ha-3846d812-409f-4726-8e46-3624bfe92812.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://cdn.ilga.gov/assets/img/members/{08891F3D-4342-4F2E-A5E5-6CCBCD415423}.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Nicole_La_Ha"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Nicole_La_Ha"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ilga.gov/house/default.asp?GA=103"
+    },
+    {
+      "title": "Public source",
+      "url": "https://itssimplebekind.com"
+    },
+    {
+      "title": "Public source",
+      "url": "https://nicoleforillinois.org/about-nicole"
+    },
+    {
+      "title": "Public source",
+      "url": "https://nicoleforillinois.org/learn-about-nicole"
+    },
+    {
+      "title": "Public source",
+      "url": "https://replaha.com"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

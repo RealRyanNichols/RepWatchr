@@ -1,0 +1,68 @@
+{
+  "id": "bert-gurr",
+  "name": "Bert Gurr",
+  "firstName": "Bert",
+  "lastName": "Gurr",
+  "photo": "/images/officials/state-legislature/nv/bert-gurr.jpg",
+  "photoSourceUrl": "http://leg.state.nv.us/Session/82nd2023/legislators/Assembly/Images/Gurr.Bert.402.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "Assemblymember",
+  "district": "HD-33",
+  "jurisdiction": "Nevada Assembly",
+  "county": [
+    "Nevada"
+  ],
+  "termStart": "2022-11-09",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 4123, Nevada Assembly 401 S. Carson St., Carson City, NV 89701",
+    "phone": "775-684-8831",
+    "email": "bert.gurr@asm.state.nv.us",
+    "website": "https://www.leg.state.nv.us/App/Legislator/A/Assembly/Current/33"
+  },
+  "bio": "Bert Gurr serves as Assemblymember for Nevada Assembly District 33. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "NV",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.leg.state.nv.us/App/Legislator/A/Assembly/Current/33"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/nv/legislature/Bert-Gurr-11f44d71-88c1-4022-a2f5-f8ca9b8795f2.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "http://leg.state.nv.us/Session/82nd2023/legislators/Assembly/Images/Gurr.Bert.402.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Bert_Gurr"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Bert_Gurr"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/204095/bert-gurr"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.gurr4nevada.com/about"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.leg.state.nv.us/App/Legislator/A/Assembly/Current"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.leg.state.nv.us/App/Legislator/A/Assembly/Current/33 \""
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

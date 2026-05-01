@@ -1,0 +1,61 @@
+{
+  "id": "scott-fetgatter",
+  "name": "Scott Fetgatter",
+  "firstName": "Scott",
+  "lastName": "Fetgatter",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-16",
+  "jurisdiction": "Oklahoma House of Representatives",
+  "county": [
+    "Oklahoma"
+  ],
+  "termStart": "2016-11-23",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 455, 2300 N. Lincoln Blvd., Oklahoma City, OK 73105",
+    "phone": "405-557-7373",
+    "email": "scott.fetgatter@okhouse.gov",
+    "website": "https://www.okhouse.gov/Members/Contact.aspx?District=16"
+  },
+  "bio": "Scott Fetgatter serves as State Representative for Oklahoma House of Representatives District 16. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "OK",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.okhouse.gov/Members/Contact.aspx?District=16"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ok/legislature/Scott-Fetgatter-a2be8726-7870-43b3-bbac-381824466f9c.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Scott_Fetgatter"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Scott_Fetgatter"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/170762/scott-fetgatter"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.okhouse.gov/Members/Default.aspx"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.okhouse.gov/Members/District.aspx?District=16"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.okhouse.gov/representatives/scott-fetgatter"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

@@ -1,0 +1,51 @@
+{
+  "id": "delbert-hosemann",
+  "name": "Delbert Hosemann",
+  "firstName": "Delbert",
+  "lastName": "Hosemann",
+  "photo": "/images/officials/state-executive/ms/delbert-hosemann.jpg",
+  "photoSourceUrl": "https://ltgovhosemann.ms.gov/wp-content/uploads/2024/10/CDH-Headshot-6.20.22-400x560.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "Lieutenant Governor",
+  "district": "Mississippi",
+  "jurisdiction": "Mississippi statewide public office",
+  "county": [
+    "Mississippi"
+  ],
+  "termStart": "2020-01-09",
+  "termEnd": "2028-01-11",
+  "contactInfo": {
+    "phone": "601-359-3200",
+    "email": "ltgov@senate.ms.gov",
+    "website": "https://ltgovhosemann.ms.gov/"
+  },
+  "bio": "Delbert Hosemann is listed as Lieutenant Governor for Mississippi. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "MS",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://ltgovhosemann.ms.gov/"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ms/executive/Delbert-Hosemann-c735ee81-f40f-4c16-aa57-e7068d7df10e.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://ltgovhosemann.ms.gov/wp-content/uploads/2024/10/CDH-Headshot-6.20.22-400x560.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ltgovhosemann.ms.gov/about-delbert/"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Delbert_Hosemann"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

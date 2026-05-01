@@ -1,0 +1,69 @@
+{
+  "id": "natasha-hill",
+  "name": "Natasha Hill",
+  "firstName": "Natasha",
+  "lastName": "Hill",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-3",
+  "jurisdiction": "Washington House of Representatives",
+  "county": [
+    "Washington"
+  ],
+  "termStart": "2025-01-13",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 306, John L. O'Brien Building P.O. Box 40600, Olympia, WA 98504",
+    "phone": "360-786-7888",
+    "email": "natasha.hill@leg.wa.gov",
+    "website": "https://housedemocrats.wa.gov/hill/"
+  },
+  "bio": "Natasha Hill serves as State Representative for Washington House of Representatives District 3. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "WA",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://housedemocrats.wa.gov/hill/"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/wa/legislature/Natasha-Hill-80b680f5-3fef-4c62-9064-4a8b516deb0f.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Natasha_Hill"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Natasha_Hill"
+    },
+    {
+      "title": "Public source",
+      "url": "https://housedemocrats.wa.gov/hill"
+    },
+    {
+      "title": "Public source",
+      "url": "https://housedemocrats.wa.gov/hill/biography"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/207317/natasha-hill"
+    },
+    {
+      "title": "Public source",
+      "url": "https://leg.wa.gov/legislators/member/natasha-hill"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/natashalelanihill"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.nlhlawoffices.com/about"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

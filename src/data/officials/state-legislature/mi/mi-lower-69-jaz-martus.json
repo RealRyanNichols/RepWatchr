@@ -1,0 +1,57 @@
+{
+  "id": "jaz-martus",
+  "name": "Jaz Martus",
+  "firstName": "Jaz",
+  "lastName": "Martus",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-69",
+  "jurisdiction": "Michigan House of Representatives",
+  "county": [
+    "Michigan"
+  ],
+  "termStart": "2023-01-01",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room S-1088, Anderson House Office Building 124 N. Capitol Ave., Lansing, MI 48933",
+    "phone": "517-373-1786",
+    "email": "jaspermartus@house.mi.gov",
+    "website": "https://housedems.com/Jasper-Martus/"
+  },
+  "bio": "Jaz Martus serves as State Representative for Michigan House of Representatives District 69. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "MI",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://housedems.com/Jasper-Martus/"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/mi/legislature/Jasper-Martus-124196c5-fa79-4958-97c1-364026ae5f36.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Jasper_Martus"
+    },
+    {
+      "title": "Public source",
+      "url": "https://housedems.com/Jasper-Martus"
+    },
+    {
+      "title": "Public source",
+      "url": "https://housedems.com/jasper-martus/about"
+    },
+    {
+      "title": "Members List Page",
+      "url": "https://www.house.mi.gov/AllRepresentatives"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/jasperryanmartus00"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

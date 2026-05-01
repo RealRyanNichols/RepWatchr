@@ -1,0 +1,59 @@
+{
+  "id": "rob-bonta",
+  "name": "Rob Bonta",
+  "firstName": "Rob",
+  "lastName": "Bonta",
+  "photo": "/images/officials/state-executive/ca/rob-bonta.jpg",
+  "photoSourceUrl": "https://www.naag.org/wp-content/uploads/2021/04/ag-CA-Bonta.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "Attorney General",
+  "district": "California",
+  "jurisdiction": "California statewide public office",
+  "county": [
+    "California"
+  ],
+  "termStart": "2021-04-23",
+  "termEnd": "2027-01-04",
+  "contactInfo": {
+    "office": "P.O. Box 944255; Sacramento, CA 94244-2550",
+    "phone": "916-210-6276",
+    "website": "https://a18.asmdc.org"
+  },
+  "bio": "Rob Bonta is listed as Attorney General for California. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "CA",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://a18.asmdc.org"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ca/executive/Rob-Bonta-1529b892-b3da-4958-bb3a-5bf04d7b5e0c.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://www.naag.org/wp-content/uploads/2021/04/ag-CA-Bonta.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "http://assembly.ca.gov/assemblymembers"
+    },
+    {
+      "title": "Public source",
+      "url": "https://oag.ca.gov/contact"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Rob_Bonta"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.naag.org/attorney-general/rob-bonta/"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

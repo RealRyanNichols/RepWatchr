@@ -1,0 +1,56 @@
+{
+  "id": "abi-boatman",
+  "name": "Abi Boatman",
+  "firstName": "Abi",
+  "lastName": "Boatman",
+  "photo": "/images/officials/state-legislature/ks/abi-boatman.jpg",
+  "photoSourceUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRLyf1OqbY53kdN7weK9WEc-d2TY_Hwkdzpng&s",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-86",
+  "jurisdiction": "Kansas House of Representatives",
+  "county": [
+    "Kansas"
+  ],
+  "termStart": "2026-01-12",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "State Capitol Room 174-W, Kansas  Building 300 SW 10th St., Topeka, KS 66612",
+    "phone": "785-296-7631",
+    "email": "abi.boatman@house.ks.gov",
+    "website": "https://www.kslegislature.gov/li/b2025_26/members/rep_boatman_abi_1/"
+  },
+  "bio": "Abi Boatman serves as State Representative for Kansas House of Representatives District 86. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "KS",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.kslegislature.gov/li/b2025_26/members/rep_boatman_abi_1/"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ks/legislature/Abi-Boatman-052c229e-ad06-4b61-abec-4e64858b3a3b.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRLyf1OqbY53kdN7weK9WEc-d2TY_Hwkdzpng&s"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Elle_Abigail_Boatman"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.kslegislature.gov/li/b2025_26/members/rep_boatman_abi_1"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/elle-boatman-a8737589"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

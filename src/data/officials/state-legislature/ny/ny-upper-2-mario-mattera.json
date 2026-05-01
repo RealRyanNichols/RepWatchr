@@ -1,0 +1,57 @@
+{
+  "id": "mario-mattera",
+  "name": "Mario Mattera",
+  "firstName": "Mario",
+  "lastName": "Mattera",
+  "party": "R",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-2",
+  "jurisdiction": "New York Senate",
+  "county": [
+    "New York"
+  ],
+  "termStart": "2021-01-06",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 508, Legislative Office Building, Albany, NY 12247",
+    "phone": "518-455-2071",
+    "email": "mattera@nysenate.gov",
+    "website": "https://www.nysenate.gov/senators-committees"
+  },
+  "bio": "Mario Mattera serves as State Senator for New York Senate District 2. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "NY",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.nysenate.gov/senators-committees"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ny/legislature/Mario-R-Mattera-04f9beb9-b562-4f2f-9f23-4856fe0fd0dc.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Mario_Mattera"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Mario_Mattera"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/192039/mario-mattera"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.nysenate.gov/senators/mario-r-mattera"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.nysenate.gov/senators/mario-r-mattera/contact"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

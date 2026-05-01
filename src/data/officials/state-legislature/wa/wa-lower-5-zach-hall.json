@@ -1,0 +1,70 @@
+{
+  "id": "zach-hall",
+  "name": "Zach Hall",
+  "firstName": "Zach",
+  "lastName": "Hall",
+  "photo": "/images/officials/state-legislature/wa/zach-hall.jpg",
+  "photoSourceUrl": "https://leg.wa.gov/memberphoto/27391.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-5",
+  "jurisdiction": "Washington House of Representatives",
+  "county": [
+    "Washington"
+  ],
+  "termStart": "2025-06-03",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "email": "zach.hall@leg.wa.gov",
+    "website": "https://housedemocrats.wa.gov/Hall/"
+  },
+  "bio": "Zach Hall serves as State Representative for Washington House of Representatives District 5. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "WA",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://housedemocrats.wa.gov/Hall/"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/wa/legislature/Zach-Hall-f3102335-786a-43e1-a941-af86138a9fd1.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://leg.wa.gov/memberphoto/27391.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Zach_Hall_(Washington)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Zach_Hall"
+    },
+    {
+      "title": "Public source",
+      "url": "https://housedemocrats.wa.gov/Hall"
+    },
+    {
+      "title": "Public source",
+      "url": "https://housedemocrats.wa.gov/hall/biography"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/223834/zach-hall"
+    },
+    {
+      "title": "Public source",
+      "url": "https://leg.wa.gov/legislators/member/zach-hall"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.issaquahwa.gov/3183/Zach-Hall-Councilmember"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

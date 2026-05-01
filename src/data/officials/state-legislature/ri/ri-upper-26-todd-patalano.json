@@ -1,0 +1,60 @@
+{
+  "id": "todd-patalano",
+  "name": "Todd Patalano",
+  "firstName": "Todd",
+  "lastName": "Patalano",
+  "photo": "/images/officials/state-legislature/ri/todd-patalano.jpg",
+  "photoSourceUrl": "https://rilegislature.gov/LegislationPictures/todd_patalano.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-26",
+  "jurisdiction": "Rhode Island Senate",
+  "county": [
+    "Rhode Island"
+  ],
+  "termStart": "2025-01-07",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 312, 82 Smith St., Providence, RI 02903",
+    "phone": "401-276-5592",
+    "email": "sen-patalano@rilegislature.gov",
+    "website": "https://rilegislature.gov/senators/Patalano/Pages/Biography.aspx"
+  },
+  "bio": "Todd Patalano serves as State Senator for Rhode Island Senate District 26. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "RI",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://rilegislature.gov/senators/Patalano/Pages/Biography.aspx"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ri/legislature/Todd-Patalano-9f4a0209-d8b0-42e5-9217-d4fd2f0d67e6.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://rilegislature.gov/LegislationPictures/todd_patalano.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Todd_Patalano"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Todd_Patalano"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/219292/todd-patalano"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/todd-patalano-5a701b202"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

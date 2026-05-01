@@ -1,0 +1,56 @@
+{
+  "id": "sara-rodriguez",
+  "name": "Sara Rodriguez",
+  "firstName": "Sara",
+  "lastName": "Rodriguez",
+  "photo": "/images/officials/state-executive/wi/sara-rodriguez.jpg",
+  "photoSourceUrl": "https://evers.wi.gov/ltgov/PublishingImages/Pages/default/230207%20LG%20Sara%20Rodriguez%20Portrait%20Second%2002.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "Lieutenant Governor",
+  "district": "Wisconsin",
+  "jurisdiction": "Wisconsin statewide public office",
+  "county": [
+    "Wisconsin"
+  ],
+  "termStart": "2023-01-02",
+  "termEnd": "2027-01-04",
+  "contactInfo": {
+    "office": "19 East Capitol; Madison, WI 53702",
+    "phone": "608-266-3516",
+    "email": "Rep.SRodriguez@legis.wisconsin.gov",
+    "website": "https://docs.legis.wisconsin.gov/2021/legislators/assembly/2264"
+  },
+  "bio": "Sara Rodriguez is listed as Lieutenant Governor for Wisconsin. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "WI",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://docs.legis.wisconsin.gov/2021/legislators/assembly/2264"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/wi/executive/Sara-J-Rodriguez-827a69f2-8b85-4a72-ac01-14be2c08aa6c.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://evers.wi.gov/ltgov/PublishingImages/Pages/default/230207%20LG%20Sara%20Rodriguez%20Portrait%20Second%2002.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://docs.legis.wisconsin.gov/2021/legislators/assembly/"
+    },
+    {
+      "title": "Public source",
+      "url": "https://evers.wi.gov/ltgov/Pages/default.aspx"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Sara_Rodriguez"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

@@ -1,0 +1,64 @@
+{
+  "id": "carrie-buck",
+  "name": "Carrie Buck",
+  "firstName": "Carrie",
+  "lastName": "Buck",
+  "photo": "/images/officials/state-legislature/nv/carrie-buck.jpg",
+  "photoSourceUrl": "http://leg.state.nv.us/Session/83rd2025/legislators/Senators/Images/Buck.Carrie.387.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-5",
+  "jurisdiction": "Nevada Senate",
+  "county": [
+    "Nevada"
+  ],
+  "termStart": "2020-11-04",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 2103, Nevada Senate 401 S. Carson St., Carson City, NV 89701",
+    "phone": "775-684-1457",
+    "email": "carrie.buck@sen.state.nv.us",
+    "website": "https://www.leg.state.nv.us/App/Legislator/A/api/81st2021/Legislator?id=387"
+  },
+  "bio": "Carrie Buck serves as State Senator for Nevada Senate District 5. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "NV",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.leg.state.nv.us/App/Legislator/A/api/81st2021/Legislator?id=387"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/nv/legislature/Carrie-A-Buck-189d270a-96e5-45af-a2b8-bbcc2ad225c1.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "http://leg.state.nv.us/Session/83rd2025/legislators/Senators/Images/Buck.Carrie.387.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Carrie_Buck_(Nevada)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Carrie_A._Buck"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.leg.state.nv.us/App/Legislator/A/Senate/Current"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.leg.state.nv.us/App/Legislator/A/Senate/Current/5"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/dr-carrie-a-buck-1111b488"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

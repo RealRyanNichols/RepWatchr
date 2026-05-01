@@ -1,0 +1,64 @@
+{
+  "id": "tara-durant",
+  "name": "Tara Durant",
+  "firstName": "Tara",
+  "lastName": "Durant",
+  "photo": "/images/officials/state-legislature/va/tara-durant.jpg",
+  "photoSourceUrl": "https://apps.senate.virginia.gov/Senator/images/member_photos/Durant27",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-27",
+  "jurisdiction": "Virginia Senate",
+  "county": [
+    "Virginia"
+  ],
+  "termStart": "2024-01-10",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 505, General Assembly Building P.O. Box 396, Richmond, VA 23218",
+    "phone": "804-698-7527",
+    "email": "senatordurant@senate.virginia.gov",
+    "website": "https://apps.senate.virginia.gov/Senator/memberpage.php?id=S120"
+  },
+  "bio": "Tara Durant serves as State Senator for Virginia Senate District 27. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "VA",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://apps.senate.virginia.gov/Senator/memberpage.php?id=S120"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/va/legislature/Tara-A-Durant-e142c869-a7a9-411a-8d73-563403f6ddd4.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://apps.senate.virginia.gov/Senator/images/member_photos/Durant27"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Tara_Durant"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Tara_Durant"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/195962/tara-durant"
+    },
+    {
+      "title": "Public source",
+      "url": "https://lis.virginia.gov/cgi-bin/legp604.exe?221+mbr+H338"
+    },
+    {
+      "title": "Public source",
+      "url": "https://lis.virginia.gov/cgi-bin/legp604.exe?241+mbr+S120"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

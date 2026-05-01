@@ -1,0 +1,71 @@
+{
+  "id": "greg-vitali",
+  "name": "Greg Vitali",
+  "firstName": "Greg",
+  "lastName": "Vitali",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-166",
+  "jurisdiction": "Pennsylvania House of Representatives",
+  "county": [
+    "Pennsylvania"
+  ],
+  "termStart": "1993-01-05",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 30, East Wing P.O. Box 202166, Harrisburg, PA 17120",
+    "phone": "717-787-7647",
+    "email": "gvitali@pahouse.net",
+    "website": "https://www.legis.state.pa.us/cfdocs/legis/home/member_information/House_bio.cfm?id=210",
+    "socialMedia": {
+      "x": "https://x.com/GregVitali",
+      "twitter": "https://x.com/GregVitali",
+      "facebook": "https://facebook.com/RepVitali",
+      "youtube": "https://youtube.com/playlist?list=PL77EFAB7F8763B560"
+    }
+  },
+  "bio": "Greg Vitali serves as State Representative for Pennsylvania House of Representatives District 166. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "PA",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.legis.state.pa.us/cfdocs/legis/home/member_information/House_bio.cfm?id=210"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/pa/legislature/Greg-Vitali-7a1f510f-12e0-4018-b6da-556b404399be.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Gregory_Vitali"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Greg_Vitali"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.legis.state.pa.us/cfdocs/legis/home/member_information/mbrList.cfm?body=H&sort=alpha"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.legis.state.pa.us/cfdocs/legis/home/member_information/representatives_alpha.cfm"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/greg-vitali-6ba94a20"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.pahouse.com/vitali"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.palegis.us/house/members/bio/210/rep-vitali"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

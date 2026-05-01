@@ -1,0 +1,75 @@
+{
+  "id": "ben-sanchez",
+  "name": "Ben Sanchez",
+  "firstName": "Ben",
+  "lastName": "Sanchez",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-153",
+  "jurisdiction": "Pennsylvania House of Representatives",
+  "county": [
+    "Pennsylvania"
+  ],
+  "termStart": "2018-12-01",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 311, Irvis Office Building P.O. Box 202153, Harrisburg, PA 17120",
+    "phone": "717-783-7619",
+    "email": "repsanchez@pahouse.net",
+    "website": "https://www.legis.state.pa.us/cfdocs/legis/home/member_information/House_bio.cfm?id=1849",
+    "socialMedia": {
+      "x": "https://x.com/RepBenSanchez",
+      "twitter": "https://x.com/RepBenSanchez",
+      "facebook": "https://facebook.com/RepBenSanchez",
+      "youtube": "https://youtube.com/playlist?list=PLjtqNtfs0bgUooLKfgdclJXjFq2HnB_CL"
+    }
+  },
+  "bio": "Ben Sanchez serves as State Representative for Pennsylvania House of Representatives District 153. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "PA",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.legis.state.pa.us/cfdocs/legis/home/member_information/House_bio.cfm?id=1849"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/pa/legislature/Benjamin-V-Sanchez-b64463e2-41f6-4d58-a725-03db71798c1c.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Ben_Sanchez"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Ben_Sanchez_(politician)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/161504/ben-sanchez"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.legis.state.pa.us/cfdocs/legis/home/member_information/mbrList.cfm?body=H&sort=alpha"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.legis.state.pa.us/cfdocs/legis/home/member_information/representatives_alpha.cfm"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/ben-sanchez-34aa7368"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.pahouse.com/sanchez"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.palegis.us/house/members/bio/1849/rep-sanchez"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

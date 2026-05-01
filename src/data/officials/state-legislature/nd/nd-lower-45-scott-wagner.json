@@ -1,0 +1,67 @@
+{
+  "id": "scott-wagner",
+  "name": "Scott Wagner",
+  "firstName": "Scott",
+  "lastName": "Wagner",
+  "photo": "/images/officials/state-legislature/nd/scott-wagner.jpg",
+  "photoSourceUrl": "https://www.ndlegis.gov/sites/default/files/styles/member_list_photo/public/person/photo/swagner2023.jpg?itok=qmmuUQ1o",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-45",
+  "jurisdiction": "North Dakota House of Representatives",
+  "county": [
+    "North Dakota"
+  ],
+  "termStart": "2022-12-01",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "State Capitol 600 E. Boulevard Ave., Bismarck, ND 58505",
+    "email": "swagner@ndlegis.gov",
+    "website": "https://ndlegis.gov/biography/scott-wagner"
+  },
+  "bio": "Scott Wagner serves as State Representative for North Dakota House of Representatives District 45. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "ND",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://ndlegis.gov/biography/scott-wagner"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/nd/legislature/Scott-Wagner-29d5158e-c93e-4d69-9da5-70972c26c896.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://www.ndlegis.gov/sites/default/files/styles/member_list_photo/public/person/photo/swagner2023.jpg?itok=qmmuUQ1o"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Scott_Wagner_(North_Dakota)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Scott_Wagner_(North_Dakota_politician)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/scott-wagner-a4a99485"
+    },
+    {
+      "title": "members list page",
+      "url": "https://www.ndlegis.gov/assembly/68-2023/regular/members?combine=&field_legis_chamber_target_id=All&field_legis_district_target_id=All&field_legislator_party_target_id=All&page=8"
+    },
+    {
+      "title": "members list page",
+      "url": "https://www.ndlegis.gov/assembly/68-2023/regular/members?page=8"
+    },
+    {
+      "title": "member details page",
+      "url": "https://www.ndlegis.gov/biography/scott-wagner"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

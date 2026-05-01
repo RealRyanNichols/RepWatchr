@@ -1,0 +1,77 @@
+{
+  "id": "lamont-bagby",
+  "name": "Lamont Bagby",
+  "firstName": "Lamont",
+  "lastName": "Bagby",
+  "photo": "/images/officials/state-legislature/va/lamont-bagby.jpg",
+  "photoSourceUrl": "https://apps.senate.virginia.gov/Senator/images/member_photos/Bagby14",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-14",
+  "jurisdiction": "Virginia Senate",
+  "county": [
+    "Virginia"
+  ],
+  "termStart": "2024-01-10",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 601, General Assembly Building P.O. Box 396, Richmond, VA 23218",
+    "phone": "804-698-7514",
+    "email": "lbagby@senate.virginia.gov",
+    "website": "https://apps.senate.virginia.gov/Senator/memberpage.php?id=S114",
+    "socialMedia": {
+      "x": "https://x.com/delegatebagby",
+      "twitter": "https://x.com/delegatebagby",
+      "facebook": "https://facebook.com/lamont.bagby"
+    }
+  },
+  "bio": "Lamont Bagby serves as State Senator for Virginia Senate District 14. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "VA",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://apps.senate.virginia.gov/Senator/memberpage.php?id=S114"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/va/legislature/Lamont-Bagby-fa49c701-d235-4f56-b9af-b772dec36d02.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://apps.senate.virginia.gov/Senator/images/member_photos/Bagby14"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Lamont_Bagby"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Lamont_Bagby"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/156441/lamont-bagby"
+    },
+    {
+      "title": "Public source",
+      "url": "https://lis.virginia.gov/191/mbr/MBR.HTM"
+    },
+    {
+      "title": "Public source",
+      "url": "https://lis.virginia.gov/201/mbr/MBR.HTM"
+    },
+    {
+      "title": "Public source",
+      "url": "https://lis.virginia.gov/cgi-bin/legp604.exe?191+mbr+H273"
+    },
+    {
+      "title": "Public source",
+      "url": "https://lis.virginia.gov/cgi-bin/legp604.exe?201+mbr+H273"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

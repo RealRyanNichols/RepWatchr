@@ -1,0 +1,61 @@
+{
+  "id": "heath-sessions",
+  "name": "Heath Sessions",
+  "firstName": "Heath",
+  "lastName": "Sessions",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-46",
+  "jurisdiction": "South Carolina House of Representatives",
+  "county": [
+    "South Carolina"
+  ],
+  "termStart": "2022-11-14",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 306B, Blatt Building P.O. Box 11867, Columbia, SC 29201",
+    "phone": "803-212-6780",
+    "email": "heathsessions@schouse.gov",
+    "website": "https://scstatehouse.gov/member.php?code=1649715712"
+  },
+  "bio": "Heath Sessions serves as State Representative for South Carolina House of Representatives District 46. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "SC",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://scstatehouse.gov/member.php?code=1649715712"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/sc/legislature/Heath-Sessions-dbc0a5ad-b105-4cd9-8849-e2a7c77d23f0.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Heath_Sessions"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Heath_Sessions"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/205435/heath-sessions"
+    },
+    {
+      "title": "Public source",
+      "url": "https://scstatehouse.gov/member.php?chamber=H"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/heath-sessions-71b86b66"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.scstatehouse.gov/member.php?code=1649715712"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

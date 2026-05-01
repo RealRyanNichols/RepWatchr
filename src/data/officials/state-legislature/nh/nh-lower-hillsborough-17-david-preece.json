@@ -1,0 +1,64 @@
+{
+  "id": "david-preece",
+  "name": "David Preece",
+  "firstName": "David",
+  "lastName": "Preece",
+  "photo": "/images/officials/state-legislature/nh/david-preece.jpg",
+  "photoSourceUrl": "https://storage.googleapis.com/enview-dev-public-general/legislative-people-photos/123142.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-Hillsborough 17",
+  "jurisdiction": "New Hampshire House of Representatives",
+  "county": [
+    "New Hampshire"
+  ],
+  "termStart": "2022-12-07",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "State House 107 N. Main St., Concord, NH 03301",
+    "phone": "603-682-0123",
+    "email": "david.preece@gc.nh.gov",
+    "website": "https://gc.nh.gov/house/members/member.aspx?pid=2458"
+  },
+  "bio": "David Preece serves as State Representative for New Hampshire House of Representatives District Hillsborough 17. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "NH",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://gc.nh.gov/house/members/member.aspx?pid=2458"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/nh/legislature/David-John-Preece-d347f91a-d60c-48a2-b78b-8e387e7b38a1.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://storage.googleapis.com/enview-dev-public-general/legislative-people-photos/123142.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/David_Preece"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/David_Preece_(politician)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/208823/david-preece"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.gencourt.state.nh.us/house/members/member.aspx?pid=2458"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/david-preece-11420216"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

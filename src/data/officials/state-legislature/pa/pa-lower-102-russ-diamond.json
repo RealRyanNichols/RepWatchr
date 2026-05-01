@@ -1,0 +1,73 @@
+{
+  "id": "russ-diamond",
+  "name": "Russ Diamond",
+  "firstName": "Russ",
+  "lastName": "Diamond",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-102",
+  "jurisdiction": "Pennsylvania House of Representatives",
+  "county": [
+    "Pennsylvania"
+  ],
+  "termStart": "2015-01-06",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 155, East Wing P.O. Box 202102, Harrisburg, PA 17120",
+    "phone": "717-787-2686",
+    "email": "rdiamond@pahousegop.com",
+    "website": "https://www.legis.state.pa.us/cfdocs/legis/home/member_information/House_bio.cfm?id=1686",
+    "socialMedia": {
+      "facebook": "https://facebook.com/repdiamond",
+      "youtube": "https://youtube.com/RepRussDiamond"
+    }
+  },
+  "bio": "Russ Diamond serves as State Representative for Pennsylvania House of Representatives District 102. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "PA",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.legis.state.pa.us/cfdocs/legis/home/member_information/House_bio.cfm?id=1686"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/pa/legislature/Russ-Diamond-5348e28d-bbbe-493f-8f77-a509cb315abe.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Russell_Diamond"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Russ_Diamond"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/47021/russ-diamond"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.legis.state.pa.us/cfdocs/legis/home/member_information/mbrList.cfm?body=H&sort=alpha"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.legis.state.pa.us/cfdocs/legis/home/member_information/representatives_alpha.cfm"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/russ-diamond-5980754b"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.palegis.us/house/members/bio/1686/rep-diamond"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.repdiamond.com"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

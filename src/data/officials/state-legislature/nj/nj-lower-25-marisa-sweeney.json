@@ -1,0 +1,53 @@
+{
+  "id": "marisa-sweeney",
+  "name": "Marisa Sweeney",
+  "firstName": "Marisa",
+  "lastName": "Sweeney",
+  "party": "D",
+  "level": "state",
+  "position": "Assemblymember",
+  "district": "HD-25",
+  "jurisdiction": "New Jersey General Assembly",
+  "county": [
+    "New Jersey"
+  ],
+  "termStart": "2026-01-13",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "P.O. Box 068 State House, 145 W. State St., Trenton, NJ 08625",
+    "phone": "609-847-3905",
+    "email": "aswsweeney@njleg.org",
+    "website": "https://njleg.state.nj.us/legislative-roster/506/assemblywoman-sweeney"
+  },
+  "bio": "Marisa Sweeney serves as Assemblymember for New Jersey General Assembly District 25. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "NJ",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://njleg.state.nj.us/legislative-roster/506/assemblywoman-sweeney"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/nj/legislature/Marisa-Sweeney-028a440f-10cb-49cc-9417-1dfd0cff83e2.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Marisa_Sweeney"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Marisa_Sweeney"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.assemblydems.com/402/Marisa-Sweeney---District-25"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/marisasweeney"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

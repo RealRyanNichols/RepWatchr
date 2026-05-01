@@ -1,0 +1,52 @@
+{
+  "id": "candice-white",
+  "name": "Candice White",
+  "firstName": "Candice",
+  "lastName": "White",
+  "photo": "/images/officials/state-legislature/vt/candice-white.jpg",
+  "photoSourceUrl": "https://s3.amazonaws.com/ballotpedia-api4/files/thumbs/200/300/Candice_White_20240808_101349.jpeg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-Washington-2",
+  "jurisdiction": "Vermont House of Representatives",
+  "county": [
+    "Vermont"
+  ],
+  "termStart": "2025-01-08",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Vermont State House 115 State St., Montpelier, VT 05633",
+    "phone": "802-828-2228",
+    "email": "cwhite@leg.state.vt.us",
+    "website": "https://legislature.vermont.gov/people/single/2026/40431"
+  },
+  "bio": "Candice White serves as State Representative for Vermont House of Representatives District Washington-2. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "VT",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://legislature.vermont.gov/people/single/2026/40431"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/vt/legislature/Candice-White-ec71009f-b56e-4ac5-bc77-4ba172ea59d1.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://s3.amazonaws.com/ballotpedia-api4/files/thumbs/200/300/Candice_White_20240808_101349.jpeg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Candice_White"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/candice-white-7347307"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

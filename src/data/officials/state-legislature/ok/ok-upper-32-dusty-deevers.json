@@ -1,0 +1,68 @@
+{
+  "id": "dusty-deevers",
+  "name": "Dusty Deevers",
+  "firstName": "Dusty",
+  "lastName": "Deevers",
+  "photo": "/images/officials/state-legislature/ok/dusty-deevers.jpg",
+  "photoSourceUrl": "https://oksenate.gov/sites/default/files/Deevers%2C%20Dusty%202023%20Flags%20S_0.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-32",
+  "jurisdiction": "Oklahoma Senate",
+  "county": [
+    "Oklahoma"
+  ],
+  "termStart": "2023-12-20",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 534, 2300 N. Lincoln Blvd., Oklahoma City, OK 73105",
+    "phone": "405-521-5567",
+    "email": "dusty.deevers@oksenate.gov",
+    "website": "https://oksenate.gov/contact-senator?sid=1861"
+  },
+  "bio": "Dusty Deevers serves as State Senator for Oklahoma Senate District 32. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "OK",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://oksenate.gov/contact-senator?sid=1861"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ok/legislature/Dusty-Deevers-56666b37-2788-433a-9c32-19af826613e4.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://oksenate.gov/sites/default/files/Deevers%2C%20Dusty%202023%20Flags%20S_0.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Dusty_Deevers"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Dusty_Deevers"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/212788/dusty-deevers"
+    },
+    {
+      "title": "Public source",
+      "url": "https://oksenate.gov/senators/dustydeevers"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.deevers2023.com/meet-dusty"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/ddeevers"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

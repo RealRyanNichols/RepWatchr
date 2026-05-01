@@ -1,0 +1,57 @@
+{
+  "id": "tim-richards",
+  "name": "Tim Richards",
+  "firstName": "Tim",
+  "lastName": "Richards",
+  "party": "D",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-4",
+  "jurisdiction": "Hawaii Senate",
+  "county": [
+    "Hawaii"
+  ],
+  "termStart": "2022-11-08",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "State Capitol Room 202, 415 S. Beretania St., Honolulu, HI 96813",
+    "phone": "808-586-6760",
+    "email": "senrichards@capitol.hawaii.gov",
+    "website": "https://www.capitol.hawaii.gov/legislature/memberpage.aspx?member=244"
+  },
+  "bio": "Tim Richards serves as State Senator for Hawaii Senate District 4. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "HI",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.capitol.hawaii.gov/legislature/memberpage.aspx?member=244"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/hi/legislature/Herbert-M-Tim-Richards-III-ff0ea974-b3aa-4261-aa1b-fa9cf74b3728.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Tim_Richards"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Tim_Richards_III"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.capitol.hawaii.gov/legislature/memberpage.aspx?member=244&year=2023"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.capitol.hawaii.gov/legislature/memberpage.aspx?member=244&year=2024"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.capitol.hawaii.gov/members/legislators.aspx"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

@@ -1,0 +1,64 @@
+{
+  "id": "susan-elberger",
+  "name": "Susan Elberger",
+  "firstName": "Susan",
+  "lastName": "Elberger",
+  "photo": "/images/officials/state-legislature/nh/susan-elberger.jpg",
+  "photoSourceUrl": "https://storage.googleapis.com/enview-dev-public-general/legislative-people-photos/123219.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-Hillsborough 5",
+  "jurisdiction": "New Hampshire House of Representatives",
+  "county": [
+    "New Hampshire"
+  ],
+  "termStart": "2022-12-07",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "State House 107 N. Main St., Concord, NH 03301",
+    "phone": "603-271-3661",
+    "email": "susan.elberger@gc.nh.gov",
+    "website": "https://gc.nh.gov/house/members/member.aspx?pid=10778"
+  },
+  "bio": "Susan Elberger serves as State Representative for New Hampshire House of Representatives District Hillsborough 5. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "NH",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://gc.nh.gov/house/members/member.aspx?pid=10778"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/nh/legislature/Susan-A-Elberger-c9b60101-8e1e-4ca2-b5c1-3ffa019fcb3e.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://storage.googleapis.com/enview-dev-public-general/legislative-people-photos/123219.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Susan_Elberger"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Susan_Elberger"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/208805/susan-elberger"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.gencourt.state.nh.us/house/members/member.aspx?pid=10778"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/susan-elberger-b991339a"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

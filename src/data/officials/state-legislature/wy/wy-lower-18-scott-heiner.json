@@ -1,0 +1,71 @@
+{
+  "id": "scott-heiner",
+  "name": "Scott Heiner",
+  "firstName": "Scott",
+  "lastName": "Heiner",
+  "photo": "/images/officials/state-legislature/wy/scott-heiner.jpg",
+  "photoSourceUrl": "https://wyoleg.gov/LegislatorSummary/Photos/68th-HeinerScott.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-18",
+  "jurisdiction": "Wyoming House of Representatives",
+  "county": [
+    "Wyoming"
+  ],
+  "termStart": "2021-01-04",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "State Capitol 200 W. 24th St., Cheyenne, WY 82002",
+    "email": "scott.heiner@wyoleg.gov",
+    "website": "https://www.wyoleg.gov/Legislators/2023/H/2074"
+  },
+  "bio": "Scott Heiner serves as State Representative for Wyoming House of Representatives District 18. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "WY",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.wyoleg.gov/Legislators/2023/H/2074"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/wy/legislature/Scott-Heiner-232d6600-4cfd-40a1-abb9-8a1eecd84768.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://wyoleg.gov/LegislatorSummary/Photos/68th-HeinerScott.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Scott_Heiner"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Scott_Heiner"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/171225/scott-heiner"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/scott-heiner-9a1a8420"
+    },
+    {
+      "title": "Public source",
+      "url": "https://wyoleg.gov/Legislators/2021/R/2074"
+    },
+    {
+      "title": "Public source",
+      "url": "https://wyoleg.gov/LsoService/api/legislator/2021/H"
+    },
+    {
+      "title": "Public source",
+      "url": "https://wyoleg.gov/LsoService/api/legislator/2023/H"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

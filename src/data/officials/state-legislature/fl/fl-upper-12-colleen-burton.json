@@ -1,0 +1,72 @@
+{
+  "id": "colleen-burton",
+  "name": "Colleen Burton",
+  "firstName": "Colleen",
+  "lastName": "Burton",
+  "photo": "/images/officials/state-legislature/fl/colleen-burton.jpg",
+  "photoSourceUrl": "https://flsenate.gov/PublishedContent/Senators/2022-2024/Photos/s12_5414.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-12",
+  "jurisdiction": "Florida Senate",
+  "county": [
+    "Florida"
+  ],
+  "termStart": "2022-11-08",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 408, Senate Building 404 S. Monroe St., Tallahassee, FL 32399",
+    "phone": "850-487-5012",
+    "email": "burton.colleen.web@flsenate.gov",
+    "website": "https://flsenate.gov/Senators/2022-2024/S12"
+  },
+  "bio": "Colleen Burton serves as State Senator for Florida Senate District 12. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "FL",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://flsenate.gov/Senators/2022-2024/S12"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/fl/legislature/Colleen-Burton-50d5881b-ceac-49a2-98db-87ef6e09438c.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://flsenate.gov/PublishedContent/Senators/2022-2024/Photos/s12_5414.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Colleen_Burton_(Florida)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Colleen_Burton"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/149396/colleen-burton"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.flsenate.gov/Senators/S12"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/colleenburton"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.myfloridahouse.gov/Representatives"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.myfloridahouse.gov/Sections/Representatives/details.aspx?MemberId=4616&LegislativeTermId=88"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

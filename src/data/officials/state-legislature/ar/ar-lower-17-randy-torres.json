@@ -1,0 +1,53 @@
+{
+  "id": "randy-torres",
+  "name": "Randy Torres",
+  "firstName": "Randy",
+  "lastName": "Torres",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-17",
+  "jurisdiction": "Arkansas House of Representatives",
+  "county": [
+    "Arkansas"
+  ],
+  "termStart": "2025-01-13",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "State Capitol Arkansas  500 Woodlane St., Suite 350, Little Rock, AR 72201",
+    "phone": "501-682-6211",
+    "email": "randy.torres@arkansashouse.org",
+    "website": "https://arkansashouse.org/district/17"
+  },
+  "bio": "Randy Torres serves as State Representative for Arkansas House of Representatives District 17. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "AR",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://arkansashouse.org/district/17"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ar/legislature/Randy-Torres-aaa584ee-c86a-4631-a37d-8d006ecb8a7b.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://arkleg.state.ar.us/Legislators/Detail?member=Torres"
+    },
+    {
+      "title": "Public source",
+      "url": "https://arkleg.state.ar.us/Legislators/Detail?member=Torres&ddBiennium"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Randy_Torres"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/randy-torres-938aaa73"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

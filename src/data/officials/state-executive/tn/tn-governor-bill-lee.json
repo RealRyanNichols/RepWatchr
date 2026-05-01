@@ -1,0 +1,40 @@
+{
+  "id": "bill-lee",
+  "name": "Bill Lee",
+  "firstName": "Bill",
+  "lastName": "Lee",
+  "party": "R",
+  "level": "state",
+  "position": "Governor",
+  "district": "Tennessee",
+  "jurisdiction": "Tennessee statewide public office",
+  "county": [
+    "Tennessee"
+  ],
+  "termStart": "2019-01-19",
+  "termEnd": "2027-01-16",
+  "contactInfo": {
+    "office": "Office of Governor Bill Lee; Tennessee State Capitol; 600 Dr. Martin L. King, Jr. Blvd.; Nashville, TN 37243-0001",
+    "phone": "615-741-2001",
+    "website": "https://www.tn.gov/governor.html",
+    "socialMedia": {
+      "x": "https://x.com/GovBillLee",
+      "twitter": "https://x.com/GovBillLee"
+    }
+  },
+  "bio": "Bill Lee is listed as Governor for Tennessee. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "TN",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.tn.gov/governor.html"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/tn/executive/Bill-Lee-d94cf7a2-1ba6-46f2-bdbf-54ace20b8dfc.yml"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

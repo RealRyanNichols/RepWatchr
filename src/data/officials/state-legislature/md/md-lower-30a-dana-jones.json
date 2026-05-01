@@ -1,0 +1,60 @@
+{
+  "id": "dana-jones",
+  "name": "Dana Jones",
+  "firstName": "Dana",
+  "lastName": "Jones",
+  "photo": "/images/officials/state-legislature/md/dana-jones.jpg",
+  "photoSourceUrl": "https://mgaleg.maryland.gov/2023RS/images/jones01.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "Delegate",
+  "district": "HD-30A",
+  "jurisdiction": "Maryland House of Delegates",
+  "county": [
+    "Maryland"
+  ],
+  "termStart": "2020-05-01",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 161, Lowe House Office Building 6 Bladen St., Annapolis, MD 21401",
+    "phone": "410-841-3211",
+    "email": "dana.jones@house.maryland.gov",
+    "website": "https://mgaleg.maryland.gov/mgawebsite/Members/Details/jones01"
+  },
+  "bio": "Dana Jones serves as Delegate for Maryland House of Delegates District 30A. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "MD",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://mgaleg.maryland.gov/mgawebsite/Members/Details/jones01"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/md/legislature/Dana-Jones-73faf103-715f-425d-8642-0ecd0cf1d4c9.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://mgaleg.maryland.gov/2023RS/images/jones01.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Dana_Jones"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Dana_Jones_(politician)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://msa.maryland.gov/msa/mdmanual/06hse/html/msa18264.html"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/dana-c-jones-1a22972"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

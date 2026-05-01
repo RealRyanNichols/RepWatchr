@@ -1,0 +1,60 @@
+{
+  "id": "michael-davis",
+  "name": "Michael Davis",
+  "firstName": "Michael",
+  "lastName": "Davis",
+  "photo": "/images/officials/state-legislature/mo/michael-davis.jpg",
+  "photoSourceUrl": "https://house.mo.gov/MemberPhoto.aspx?id=2220",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-56",
+  "jurisdiction": "Missouri House of Representatives",
+  "county": [
+    "Missouri"
+  ],
+  "termStart": "2021-01-06",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 110-B, 201 W. Capitol Ave., Jefferson City, MO 65101",
+    "phone": "573-751-2175",
+    "email": "michael.davis@house.mo.gov",
+    "website": "https://house.mo.gov/MemberDetails.aspx?district=056"
+  },
+  "bio": "Michael Davis serves as State Representative for Missouri House of Representatives District 56. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "MO",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://house.mo.gov/MemberDetails.aspx?district=056"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/mo/legislature/Michael-Davis-dc271660-9483-4b46-8c96-4794078b130f.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://house.mo.gov/MemberPhoto.aspx?id=2220"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Michael_Davis_(Missouri)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://house.mo.gov/MemberDetails.aspx?year=2021&code=R&district=056"
+    },
+    {
+      "title": "Public source",
+      "url": "https://house.mo.gov/MemberDetails.aspx?year=2023&code=R&district=056"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/michael-davis-69271582"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

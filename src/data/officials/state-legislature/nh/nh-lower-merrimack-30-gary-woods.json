@@ -1,0 +1,72 @@
+{
+  "id": "gary-woods",
+  "name": "Gary Woods",
+  "firstName": "Gary",
+  "lastName": "Woods",
+  "photo": "/images/officials/state-legislature/nh/gary-woods.jpg",
+  "photoSourceUrl": "https://static.votesmart.org/static/canphoto/185380.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-Merrimack 30",
+  "jurisdiction": "New Hampshire House of Representatives",
+  "county": [
+    "New Hampshire"
+  ],
+  "termStart": "2024-12-04",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "State House 107 N. Main St., Concord, NH 03301",
+    "phone": "603-271-3661",
+    "email": "gary.woods@gc.nh.gov",
+    "website": "https://gc.nh.gov/house/members/member.aspx?pid=9167"
+  },
+  "bio": "Gary Woods serves as State Representative for New Hampshire House of Representatives District Merrimack 30. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "NH",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://gc.nh.gov/house/members/member.aspx?pid=9167"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/nh/legislature/Gary-L-Woods-5d98b66b-f4d1-4776-953f-67dc348fdd12.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://static.votesmart.org/static/canphoto/185380.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Gary_Woods_(New_Hampshire)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Gary_Woods_(politician)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://gencourt.state.nh.us/downloads/Members.txt"
+    },
+    {
+      "title": "Public source",
+      "url": "https://gencourt.state.nh.us/downloads/members.txt"
+    },
+    {
+      "title": "Public source",
+      "url": "https://gencourt.state.nh.us/house/members/member.aspx?pid=9167"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/185380/gary-woods"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.gencourt.state.nh.us/downloads/Members.txt"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

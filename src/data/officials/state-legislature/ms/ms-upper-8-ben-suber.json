@@ -1,0 +1,56 @@
+{
+  "id": "ben-suber",
+  "name": "Ben Suber",
+  "firstName": "Ben",
+  "lastName": "Suber",
+  "photo": "/images/officials/state-legislature/ms/ben-suber.jpg",
+  "photoSourceUrl": "http://billstatus.ls.state.ms.us/members/senate/suber.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-8",
+  "jurisdiction": "Mississippi Senate",
+  "county": [
+    "Mississippi"
+  ],
+  "termStart": "2020-01-07",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "State Capitol Room 213, 400 High St., Jackson, MS 39201",
+    "phone": "601-359-4088",
+    "email": "bsuber@senate.ms.gov",
+    "website": "https://billstatus.ls.state.ms.us/members/senate/suber.xml"
+  },
+  "bio": "Ben Suber serves as State Senator for Mississippi Senate District 8. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "MS",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://billstatus.ls.state.ms.us/members/senate/suber.xml"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ms/legislature/Benjamin-Suber-ba13036f-790b-4745-b008-eeb74f1c86a1.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "http://billstatus.ls.state.ms.us/members/senate/suber.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Benjamin_Suber"
+    },
+    {
+      "title": "Public source",
+      "url": "https://billstatus.ls.state.ms.us/members/ss_membs.xml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/186540/benjamin-suber"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

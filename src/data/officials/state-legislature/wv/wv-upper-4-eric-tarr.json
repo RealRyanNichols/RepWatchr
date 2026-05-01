@@ -1,0 +1,68 @@
+{
+  "id": "eric-tarr",
+  "name": "Eric Tarr",
+  "firstName": "Eric",
+  "lastName": "Tarr",
+  "photo": "/images/officials/state-legislature/wv/eric-tarr.jpg",
+  "photoSourceUrl": "http://www.wvlegislature.gov/images/members/2023/senate/tarr_eric.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-4",
+  "jurisdiction": "West Virginia Senate",
+  "county": [
+    "West Virginia"
+  ],
+  "termStart": "2018-12-01",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "State Capitol Room 213W, Complex, Building 1 1900 Kanawha Blvd. East, Charleston, WV 25305",
+    "phone": "304-357-7901",
+    "email": "eric.tarr@wvsenate.gov",
+    "website": "https://www.legis.state.wv.us/Senate1/lawmaker.cfm?member=Senator+Tarr"
+  },
+  "bio": "Eric Tarr serves as State Senator for West Virginia Senate District 4. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "WV",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.legis.state.wv.us/Senate1/lawmaker.cfm?member=Senator+Tarr"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/wv/legislature/Eric-Tarr-18d03332-9bd9-4070-9101-6cf93ab2105e.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "http://www.wvlegislature.gov/images/members/2023/senate/tarr_eric.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Eric_Tarr"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Eric_Tarr"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/177679/eric-tarr"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/eric-tarr-pt-dpt-mba-ocs-49b06b36"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.wvlegislature.gov/Senate1/lawmaker.cfm?member=Senator%20Tarr"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.wvlegislature.gov/Senate1/roster.cfm"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

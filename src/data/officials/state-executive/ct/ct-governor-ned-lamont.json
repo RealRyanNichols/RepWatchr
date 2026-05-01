@@ -1,0 +1,47 @@
+{
+  "id": "ned-lamont",
+  "name": "Ned Lamont",
+  "firstName": "Ned",
+  "lastName": "Lamont",
+  "photo": "/images/officials/state-executive/ct/ned-lamont.jpg",
+  "photoSourceUrl": "https://portal.ct.gov/-/media/Office-of-the-Governor/About/govlamont.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "Governor",
+  "district": "Connecticut",
+  "jurisdiction": "Connecticut statewide public office",
+  "county": [
+    "Connecticut"
+  ],
+  "termStart": "2019-01-09",
+  "termEnd": "2027-01-06",
+  "contactInfo": {
+    "office": "Office of Governor Ned Lamont; State Capitol; 210 Capitol Avenue; Hartford, CT 06106",
+    "phone": "860-566-4840",
+    "website": "https://portal.ct.gov/Office-of-the-Governor/",
+    "socialMedia": {
+      "x": "https://x.com/GovNedLamont",
+      "twitter": "https://x.com/GovNedLamont"
+    }
+  },
+  "bio": "Ned Lamont is listed as Governor for Connecticut. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "CT",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://portal.ct.gov/Office-of-the-Governor/"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ct/executive/Ned-Lamont-4cd3e60f-3830-4121-965f-f29d9b5ec6e7.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://portal.ct.gov/-/media/Office-of-the-Governor/About/govlamont.jpg"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

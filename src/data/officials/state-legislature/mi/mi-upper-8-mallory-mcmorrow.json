@@ -1,0 +1,72 @@
+{
+  "id": "mallory-mcmorrow",
+  "name": "Mallory McMorrow",
+  "firstName": "Mallory",
+  "lastName": "McMorrow",
+  "photo": "/images/officials/state-legislature/mi/mallory-mcmorrow.jpg",
+  "photoSourceUrl": "https://senatedems.com/mcmorrow/wp-content/uploads/sites/14/2023/02/MDS_McMorrow_DSC5342_dec20.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-8",
+  "jurisdiction": "Michigan Senate",
+  "county": [
+    "Michigan"
+  ],
+  "termStart": "2023-01-01",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 6100, Binsfeld Building P.O. Box 30036, Lansing, MI 48909",
+    "phone": "517-373-2523",
+    "email": "senmmcmorrow@senate.michigan.gov",
+    "website": "https://senatedems.com/mcmorrow"
+  },
+  "bio": "Mallory McMorrow serves as State Senator for Michigan Senate District 8. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "MI",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://senatedems.com/mcmorrow"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/mi/legislature/Mallory-McMorrow-dc6ff9c0-f2b1-433d-a96b-292cf05bcb50.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://senatedems.com/mcmorrow/wp-content/uploads/sites/14/2023/02/MDS_McMorrow_DSC5342_dec20.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Mallory_McMorrow"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Mallory_McMorrow"
+    },
+    {
+      "title": "Public source",
+      "url": "https://senate.michigan.gov/senatorinfo_list.html"
+    },
+    {
+      "title": "Members List JSON Data Page",
+      "url": "https://senate.michigan.gov/senators/SenatorData.json"
+    },
+    {
+      "title": "Members List HTML page",
+      "url": "https://senate.michigan.gov/senators/senatorinfo_list.html"
+    },
+    {
+      "title": "Public source",
+      "url": "https://senatedems.com/mcmorrow/"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/mallorymcmorrow"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

@@ -1,0 +1,72 @@
+{
+  "id": "henry-stern",
+  "name": "Henry Stern",
+  "firstName": "Henry",
+  "lastName": "Stern",
+  "photo": "/images/officials/state-legislature/ca/henry-stern.jpg",
+  "photoSourceUrl": "https://www.senate.ca.gov/sites/senate.ca.gov/files/senator_photos/stern.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-27",
+  "jurisdiction": "California Senate",
+  "county": [
+    "California"
+  ],
+  "termStart": "2016-12-05",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "1021 O St. Suite 7710, Sacramento, CA 95814",
+    "phone": "916-651-4027",
+    "email": "senator.stern@senate.ca.gov",
+    "website": "https://sd27.senate.ca.gov/"
+  },
+  "bio": "Henry Stern serves as State Senator for California Senate District 27. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "CA",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://sd27.senate.ca.gov/"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ca/legislature/Henry-I-Stern-66bd4b32-5536-4bae-ab55-08c0b70ca5fd.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://www.senate.ca.gov/sites/senate.ca.gov/files/senator_photos/stern.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Henry_Stern"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Henry_Stern_(California_politician)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/169182/henry-stern"
+    },
+    {
+      "title": "Public source",
+      "url": "https://sd27.senate.ca.gov"
+    },
+    {
+      "title": "Public source",
+      "url": "https://senate.ca.gov/senators"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ww2.arb.ca.gov/about/leadership/henry-stern"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/henry-stern-3805713"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

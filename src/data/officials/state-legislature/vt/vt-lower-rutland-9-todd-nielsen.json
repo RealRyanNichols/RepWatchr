@@ -1,0 +1,41 @@
+{
+  "id": "todd-nielsen",
+  "name": "Todd Nielsen",
+  "firstName": "Todd",
+  "lastName": "Nielsen",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-Rutland-9",
+  "jurisdiction": "Vermont House of Representatives",
+  "county": [
+    "Vermont"
+  ],
+  "termStart": "2025-01-08",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Vermont State House 115 State St., Montpelier, VT 05633",
+    "phone": "802-828-2228",
+    "email": "tnielsen@leg.state.vt.us",
+    "website": "https://legislature.vermont.gov/people/single/2026/40428"
+  },
+  "bio": "Todd Nielsen serves as State Representative for Vermont House of Representatives District Rutland-9. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "VT",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://legislature.vermont.gov/people/single/2026/40428"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/vt/legislature/Todd-Nielsen-81ee4925-031e-4d85-b35b-6561eefa9d24.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Todd_Nielsen"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

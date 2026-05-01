@@ -1,0 +1,52 @@
+{
+  "id": "michelle-badger",
+  "name": "Michelle Badger",
+  "firstName": "Michelle",
+  "lastName": "Badger",
+  "photo": "/images/officials/state-legislature/ma/michelle-badger.jpg",
+  "photoSourceUrl": "https://s3.amazonaws.com/ballotpedia-api4/files/thumbs/200/300/MichelleBadger24.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-1st Plymouth",
+  "jurisdiction": "Massachusetts House of Representatives",
+  "county": [
+    "Massachusetts"
+  ],
+  "termStart": "2025-01-01",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 33, State House 24 Beacon St., Boston, MA 02133",
+    "phone": "617-722-2060",
+    "email": "michelle.badger@mahouse.gov",
+    "website": "https://malegislature.gov/Legislators/Profile/MLB1"
+  },
+  "bio": "Michelle Badger serves as State Representative for Massachusetts House of Representatives District 1st Plymouth. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "MA",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://malegislature.gov/Legislators/Profile/MLB1"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ma/legislature/Michelle-Badger-a0c80d02-beb0-42c3-b7ff-31fc0d5351f5.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://s3.amazonaws.com/ballotpedia-api4/files/thumbs/200/300/MichelleBadger24.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Michelle_Badger"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/michellelbadger"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

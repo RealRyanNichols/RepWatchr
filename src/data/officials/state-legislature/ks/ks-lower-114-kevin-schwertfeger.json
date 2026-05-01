@@ -1,0 +1,53 @@
+{
+  "id": "kevin-schwertfeger",
+  "name": "Kevin Schwertfeger",
+  "firstName": "Kevin",
+  "lastName": "Schwertfeger",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-114",
+  "jurisdiction": "Kansas House of Representatives",
+  "county": [
+    "Kansas"
+  ],
+  "termStart": "2025-01-13",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "State Capitol Room 176-W, Kansas  Building 300 SW 10th St., Topeka, KS 66612",
+    "phone": "785-296-7105",
+    "email": "kevin.schwertfeger@house.ks.gov",
+    "website": "https://www.kslegislature.gov/li/b2025_26/members/rep_schwertfeger_kevin_1/"
+  },
+  "bio": "Kevin Schwertfeger serves as State Representative for Kansas House of Representatives District 114. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "KS",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.kslegislature.gov/li/b2025_26/members/rep_schwertfeger_kevin_1/"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ks/legislature/Kevin-Schwertfeger-d0ddb22e-8135-4ca0-856a-4c00c29f1d47.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Kevin_Schwertfeger"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Kevin_Schwertfeger"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/218286/kevin-schwertfeger"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.kslegislature.gov/li/b2025_26/members/rep_schwertfeger_kevin_1"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

@@ -1,0 +1,68 @@
+{
+  "id": "robert-garcia-ca-legislature-lower-50",
+  "name": "Robert Garcia",
+  "firstName": "Robert",
+  "lastName": "Garcia",
+  "photo": "/images/officials/state-legislature/ca/robert-garcia-ca-legislature-lower-50.jpg",
+  "photoSourceUrl": "https://www.joincalifornia.com/candidate_pic.php?id=15124",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "Assemblymember",
+  "district": "HD-50",
+  "jurisdiction": "California State Assembly",
+  "county": [
+    "California"
+  ],
+  "termStart": "2024-12-02",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 6240, 1021 O St. P.O. Box 942849, Sacramento, CA 94249",
+    "phone": "916-319-2050",
+    "email": "assemblymember.garcia@assembly.ca.gov",
+    "website": "https://a50.asmdc.org/"
+  },
+  "bio": "Robert Garcia serves as Assemblymember for California State Assembly District 50. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "CA",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://a50.asmdc.org/"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ca/legislature/Robert-Garcia-8b2f37bc-65b7-40ed-af14-5d93cb765a5d.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://www.joincalifornia.com/candidate_pic.php?id=15124"
+    },
+    {
+      "title": "Public source",
+      "url": "https://a50.asmdc.org"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Robert_Garcia_(Etiwanda_School_District)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/213364/robert-garcia"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.assembly.ca.gov/assemblymembers/50"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.longbeach.gov/mayor/contact"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.longbeach.gov/mayor/contact/"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

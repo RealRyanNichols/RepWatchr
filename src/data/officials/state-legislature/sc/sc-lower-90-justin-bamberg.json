@@ -1,0 +1,65 @@
+{
+  "id": "justin-bamberg",
+  "name": "Justin Bamberg",
+  "firstName": "Justin",
+  "lastName": "Bamberg",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-90",
+  "jurisdiction": "South Carolina House of Representatives",
+  "county": [
+    "South Carolina"
+  ],
+  "termStart": "2014-11-10",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 335C, Blatt Building P.O. Box 11867, Columbia, SC 29201",
+    "phone": "803-212-6907",
+    "email": "justinbamberg@schouse.gov",
+    "website": "https://scstatehouse.gov/member.php?code=0102840897"
+  },
+  "bio": "Justin Bamberg serves as State Representative for South Carolina House of Representatives District 90. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "SC",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://scstatehouse.gov/member.php?code=0102840897"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/sc/legislature/Justin-T-Bamberg-88861a7f-ca46-4ed7-a053-0d463cca48e0.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Justin_Bamberg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Justin_Bamberg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/152607/justin-bamberg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://scstatehouse.gov/member.php?chamber=H"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/justinbamberg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.scstatehouse.gov/member.php?chamber=H"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.scstatehouse.gov/member.php?code=0102840897"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

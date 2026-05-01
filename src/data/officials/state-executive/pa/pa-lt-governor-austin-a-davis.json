@@ -1,0 +1,63 @@
+{
+  "id": "austin-a-davis",
+  "name": "Austin A. Davis",
+  "firstName": "Austin",
+  "lastName": "Davis",
+  "photo": "/images/officials/state-executive/pa/austin-a-davis.jpg",
+  "photoSourceUrl": "https://s7d9.scene7.com/is/image/statepa/LG%20Portrait",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "Lieutenant Governor",
+  "district": "Pennsylvania",
+  "jurisdiction": "Pennsylvania statewide public office",
+  "county": [
+    "Pennsylvania"
+  ],
+  "termStart": "2023-01-17",
+  "termEnd": "2027-01-19",
+  "contactInfo": {
+    "office": "200 Main Capitol Building; Harrisburg, PA 17120",
+    "phone": "717-787-3300",
+    "website": "http://www.legis.state.pa.us/cfdocs/legis/home/member_information/House_bio.cfm?id=1794"
+  },
+  "bio": "Austin A. Davis is listed as Lieutenant Governor for Pennsylvania. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "PA",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "http://www.legis.state.pa.us/cfdocs/legis/home/member_information/House_bio.cfm?id=1794"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/pa/executive/Austin-A-Davis-e5de67f9-3e82-4e65-89ce-47aa0772d1f8.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://s7d9.scene7.com/is/image/statepa/LG%20Portrait"
+    },
+    {
+      "title": "Public source",
+      "url": "http://www.legis.state.pa.us/cfdocs/legis/home/member_information/representatives_alpha.cfm"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.legis.state.pa.us/cfdocs/legis/home/member_information/mbrList.cfm?body=H&sort=alpha"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.legis.state.pa.us/cfdocs/legis/home/member_information/House_bio.cfm?id=1794"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.pa.gov/ltgovernor"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Austin_Davis_(Pennsylvania)"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

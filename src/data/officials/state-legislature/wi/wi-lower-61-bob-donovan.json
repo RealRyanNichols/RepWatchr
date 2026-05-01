@@ -1,0 +1,63 @@
+{
+  "id": "bob-donovan",
+  "name": "Bob Donovan",
+  "firstName": "Bob",
+  "lastName": "Donovan",
+  "party": "R",
+  "level": "state",
+  "position": "Assemblymember",
+  "district": "HD-61",
+  "jurisdiction": "Wisconsin State Assembly",
+  "county": [
+    "Wisconsin"
+  ],
+  "termStart": "2025-01-06",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "email": "rep.donovan@legis.wisconsin.gov",
+    "website": "https://docs.legis.wisconsin.gov/2023/legislators/assembly/2555"
+  },
+  "bio": "Bob Donovan serves as Assemblymember for Wisconsin State Assembly District 61. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "WI",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://docs.legis.wisconsin.gov/2023/legislators/assembly/2555"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/wi/legislature/Bob-Donovan-54522ac6-81ad-4b83-929f-b94e94b8acb4.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Robert_G._Donovan_(Wisconsin)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://docs.legis.wisconsin.gov/2023/legislators/assembly"
+    },
+    {
+      "title": "members list page",
+      "url": "https://docs.legis.wisconsin.gov/2023/legislators/assembly/"
+    },
+    {
+      "title": "Public source",
+      "url": "https://docs.legis.wisconsin.gov/2025/legislators/assembly/2864"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Bob_Donovan"
+    },
+    {
+      "title": "Public source",
+      "url": "https://legis.wisconsin.gov/assembly/61/donovan"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/bob-donovan-27a4046b"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

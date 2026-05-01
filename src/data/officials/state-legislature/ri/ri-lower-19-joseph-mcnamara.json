@@ -1,0 +1,72 @@
+{
+  "id": "joseph-mcnamara",
+  "name": "Joseph McNamara",
+  "firstName": "Joseph",
+  "lastName": "McNamara",
+  "photo": "/images/officials/state-legislature/ri/joseph-mcnamara.jpg",
+  "photoSourceUrl": "http://www.rilegislature.gov/representatives/pictures/mcnamara.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-19",
+  "jurisdiction": "Rhode Island House of Representatives",
+  "county": [
+    "Rhode Island"
+  ],
+  "termStart": "2003-01-07",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "82 Smith St., Providence, RI 02903",
+    "phone": "401-222-3580",
+    "email": "rep-mcnamara@rilegislature.gov",
+    "website": "https://www.rilegislature.gov/representatives/carson/default.aspx"
+  },
+  "bio": "Joseph McNamara serves as State Representative for Rhode Island House of Representatives District 19. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "RI",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.rilegislature.gov/representatives/carson/default.aspx"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ri/legislature/Joseph-M-McNamara-ce92c860-ad04-4cc5-91eb-52add74c98e5.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "http://www.rilegislature.gov/representatives/pictures/mcnamara.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Joseph_McNamara_(Rhode_Island)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Joseph_McNamara_(Rhode_Island_politician)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://webserver.rilin.state.ri.us/Email/RepEmailListDistrict.asp"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/joseph-mcnamara-720b9064"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.rilegislature.gov/representatives/mcnamara/default.aspx"
+    },
+    {
+      "title": "Image Source",
+      "url": "https://www.rilegislature.gov/representatives/mcnamara/Pages/Biography.aspx"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.rilegislature.gov/SiteAssets/MailingLists/Representatives.xls"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

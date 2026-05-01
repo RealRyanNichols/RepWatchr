@@ -1,0 +1,64 @@
+{
+  "id": "deandrea-salvador",
+  "name": "DeAndrea Salvador",
+  "firstName": "DeAndrea",
+  "lastName": "Salvador",
+  "photo": "/images/officials/state-legislature/nc/deandrea-salvador.jpg",
+  "photoSourceUrl": "https://www.ncleg.gov/Members/MemberImage/S/431/Low",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-39",
+  "jurisdiction": "North Carolina Senate",
+  "county": [
+    "North Carolina"
+  ],
+  "termStart": "2021-01-01",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 1120, North Carolina Legislative Building 16 W. Jones St., Raleigh, NC 27601",
+    "phone": "919-733-5655",
+    "email": "deandrea.salvador@ncleg.gov",
+    "website": "https://www.ncleg.gov/Members/Biography/S/431"
+  },
+  "bio": "DeAndrea Salvador serves as State Senator for North Carolina Senate District 39. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "NC",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.ncleg.gov/Members/Biography/S/431"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/nc/legislature/DeAndrea-Salvador-1c0d5d12-7bc0-4296-a148-423e4faa7dae.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://www.ncleg.gov/Members/MemberImage/S/431/Low"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/DeAndrea_Salvador"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/DeAndrea_Salvador"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.deandrea.io"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/deandreas"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.ncleg.gov/Members/MemberTable/S"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

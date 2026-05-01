@@ -1,0 +1,68 @@
+{
+  "id": "tony-isa",
+  "name": "Tony Isa",
+  "firstName": "Tony",
+  "lastName": "Isa",
+  "photo": "/images/officials/state-legislature/in/tony-isa.jpg",
+  "photoSourceUrl": "https://friendsoftonyisa.com/wp-content/uploads/2023/12/Tony_Cutout.png",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-51",
+  "jurisdiction": "Indiana House of Representatives",
+  "county": [
+    "Indiana"
+  ],
+  "termStart": "2024-11-06",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "200 W. Washington St., Indianapolis, IN 46204",
+    "phone": "317-232-9600",
+    "email": "h51@iga.in.gov",
+    "website": "https://iga.in.gov/legislative/2026/legislators/legislator_tony_isa_1"
+  },
+  "bio": "Tony Isa serves as State Representative for Indiana House of Representatives District 51. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "IN",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://iga.in.gov/legislative/2026/legislators/legislator_tony_isa_1"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/in/legislature/Tony-Isa-e75ceaff-b623-4887-90a3-2b5328d184c5.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://friendsoftonyisa.com/wp-content/uploads/2023/12/Tony_Cutout.png"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Tony_Isa"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Tony_Isa"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/214731/tony-isa"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.indianahouserepublicans.com/members/general/tony-isa"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.indianahouserepublicans.com/members/general/tony-isa/?back=members"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/tony-isa-59866015b"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

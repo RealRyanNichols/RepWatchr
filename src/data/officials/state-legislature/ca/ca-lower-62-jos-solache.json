@@ -1,0 +1,64 @@
+{
+  "id": "jos-solache",
+  "name": "Jos\u00e9 Solache",
+  "firstName": "Jos\u00e9",
+  "lastName": "Solache",
+  "photo": "/images/officials/state-legislature/ca/jos-solache.jpg",
+  "photoSourceUrl": "https://www.lynwoodca.gov/ImageRepository/Document?documentID=302",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "Assemblymember",
+  "district": "HD-62",
+  "jurisdiction": "California State Assembly",
+  "county": [
+    "California"
+  ],
+  "termStart": "2024-12-02",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 5110, 1021 O St. P.O. Box 942849, Sacramento, CA 94249",
+    "phone": "916-319-2062",
+    "email": "assemblymember.solache@assembly.ca.gov",
+    "website": "https://a62.asmdc.org/"
+  },
+  "bio": "Jos\u00e9 Solache serves as Assemblymember for California State Assembly District 62. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "CA",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://a62.asmdc.org/"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ca/legislature/Jos-Solache-b9c75c1e-6ea8-4fae-9efa-a7bf0a0cb2cc.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://www.lynwoodca.gov/ImageRepository/Document?documentID=302"
+    },
+    {
+      "title": "Public source",
+      "url": "https://a62.asmdc.org"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Jose_Solache"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/146371/jose-solache"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.assembly.ca.gov/assemblymembers/62"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/jose-l-solache-40393b6"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

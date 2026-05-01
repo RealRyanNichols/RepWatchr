@@ -1,0 +1,72 @@
+{
+  "id": "shev-jones",
+  "name": "Shev Jones",
+  "firstName": "Shev",
+  "lastName": "Jones",
+  "photo": "/images/officials/state-legislature/fl/shev-jones.jpg",
+  "photoSourceUrl": "https://flsenate.gov/PublishedContent/Senators/2022-2024/Photos/s34_5453.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-34",
+  "jurisdiction": "Florida Senate",
+  "county": [
+    "Florida"
+  ],
+  "termStart": "2022-11-08",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 214, Senate Building 404 S. Monroe St., Tallahassee, FL 32399",
+    "phone": "850-487-5034",
+    "email": "jones.shevrin.web@flsenate.gov",
+    "website": "https://flsenate.gov/Senators/2022-2024/S34"
+  },
+  "bio": "Shev Jones serves as State Senator for Florida Senate District 34. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "FL",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://flsenate.gov/Senators/2022-2024/S34"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/fl/legislature/Shevrin-D-Shev-Jones-a8a2eaa4-449b-441f-96bb-d8a3e8191479.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://flsenate.gov/PublishedContent/Senators/2022-2024/Photos/s34_5453.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Shevrin_Jones"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Shevrin_D._Jones"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/142186/shevrin-jones"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.flsenate.gov/Senators/S34"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.flsenate.gov/Senators/S35"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/shevrin-jones-916b776"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.myfloridahouse.gov/Representatives"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

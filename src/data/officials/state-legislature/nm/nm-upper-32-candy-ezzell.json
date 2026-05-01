@@ -1,0 +1,62 @@
+{
+  "id": "candy-ezzell",
+  "name": "Candy Ezzell",
+  "firstName": "Candy",
+  "lastName": "Ezzell",
+  "party": "R",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-32",
+  "jurisdiction": "New Mexico Senate",
+  "county": [
+    "New Mexico"
+  ],
+  "termStart": "2025-01-01",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "State Capitol Room 415H, New Mexico  490 Old Santa Fe Trail, Santa Fe, NM 87501",
+    "phone": "505-986-4381",
+    "email": "csecows@aol.com",
+    "website": "https://www.nmlegis.gov/Members/Legislator?SponCode=HEZZE",
+    "socialMedia": {
+      "x": "https://x.com/candyezzell",
+      "twitter": "https://x.com/candyezzell",
+      "facebook": "https://facebook.com/candy.ezzell"
+    }
+  },
+  "bio": "Candy Ezzell serves as State Senator for New Mexico Senate District 32. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "NM",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.nmlegis.gov/Members/Legislator?SponCode=HEZZE"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/nm/legislature/Candy-Spence-Ezzell-46464f19-1bda-489f-93cf-3772d0445407.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Candy_Spence_Ezzell"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Candy_Ezzell"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/43577/candy-ezzell"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.nmlegis.gov/Members/Legislator?SponCode=SEZZE"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.nmlegis.gov/Members/Legislator_List?T=R"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

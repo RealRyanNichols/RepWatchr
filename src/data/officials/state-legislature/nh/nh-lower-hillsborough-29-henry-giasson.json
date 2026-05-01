@@ -1,0 +1,64 @@
+{
+  "id": "henry-giasson",
+  "name": "Henry Giasson",
+  "firstName": "Henry",
+  "lastName": "Giasson",
+  "photo": "/images/officials/state-legislature/nh/henry-giasson.jpg",
+  "photoSourceUrl": "https://www.citizenscount.org/sites/default/files/styles/profile_140x176/public/2024-08/henry-giasson.jpg?itok=BzgSzzpz",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-Hillsborough 29",
+  "jurisdiction": "New Hampshire House of Representatives",
+  "county": [
+    "New Hampshire"
+  ],
+  "termStart": "2024-12-04",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "State House 107 N. Main St., Concord, NH 03301",
+    "phone": "603-271-3661",
+    "email": "henry.giasson@gc.nh.gov",
+    "website": "https://gc.nh.gov/house/members/member.aspx?pid=11363"
+  },
+  "bio": "Henry Giasson serves as State Representative for New Hampshire House of Representatives District Hillsborough 29. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "NH",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://gc.nh.gov/house/members/member.aspx?pid=11363"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/nh/legislature/Henry-Giasson-1a1bb56f-cf92-4af0-b65e-3831e8a07b64.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://www.citizenscount.org/sites/default/files/styles/profile_140x176/public/2024-08/henry-giasson.jpg?itok=BzgSzzpz"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Henry_Giasson"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Henry_Giasson"
+    },
+    {
+      "title": "Public source",
+      "url": "https://gencourt.state.nh.us/house/members/member.aspx?pid=11363"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/209040/henry-giasson-iii"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/henry-giasson-64451289"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

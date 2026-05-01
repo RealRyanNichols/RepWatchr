@@ -1,0 +1,69 @@
+{
+  "id": "virgil-weigel",
+  "name": "Virgil Weigel",
+  "firstName": "Virgil",
+  "lastName": "Weigel",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-56",
+  "jurisdiction": "Kansas House of Representatives",
+  "county": [
+    "Kansas"
+  ],
+  "termStart": "2017-01-09",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "State Capitol Room 451-S, Kansas  Building 300 SW 10th St., Topeka, KS 66612",
+    "phone": "785-296-7104",
+    "email": "virgil.weigel@house.ks.gov",
+    "website": "https://www.kslegislature.gov/li/b2025_26/members/rep_weigel_virgil_1/"
+  },
+  "bio": "Virgil Weigel serves as State Representative for Kansas House of Representatives District 56. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "KS",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.kslegislature.gov/li/b2025_26/members/rep_weigel_virgil_1/"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ks/legislature/Virgil-Weigel-acb8f24a-aecd-43a5-887c-be8bbf963e3d.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Virgil_Weigel"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Virgil_Weigel"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/140799/virgil-weigel"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.kslegislature.gov/li/b2025_26/members/rep_weigel_virgil_1"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.kslegislature.org/li/api/v11/rev-1/members/rep_weigel_virgil_1"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.kslegislature.org/li/api/v11/rev-1/members/rep_weigel_virgil_1/"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.kslegislature.org/li/b2023_24/members/rep_weigel_virgil_1"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.kslegislature.org/li/b2023_24/members/rep_weigel_virgil_1/"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

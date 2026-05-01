@@ -1,0 +1,53 @@
+{
+  "id": "robert-rodriguez",
+  "name": "Robert Rodriguez",
+  "firstName": "Robert",
+  "lastName": "Rodriguez",
+  "party": "D",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-32",
+  "jurisdiction": "Colorado Senate",
+  "county": [
+    "Colorado"
+  ],
+  "termStart": "2019-01-09",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "State Capitol Room 346, Colorado  Building 200 E. Colfax Ave., Denver, CO 80203",
+    "phone": "303-866-4852",
+    "email": "robert.rodriguez.senate@coleg.gov",
+    "website": "https://leg.colorado.gov/legislators/robert-rodriguez"
+  },
+  "bio": "Robert Rodriguez serves as State Senator for Colorado Senate District 32. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "CO",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://leg.colorado.gov/legislators/robert-rodriguez"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/co/legislature/Robert-Rodriguez-ab377224-ab70-4c20-a535-baa429520e7c.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Robert_Rodriguez_(Colorado)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Robert_Rodriguez_(politician)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/181713/robert-rodriguez"
+    },
+    {
+      "title": "Public source",
+      "url": "https://leg.colorado.gov/legislators"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

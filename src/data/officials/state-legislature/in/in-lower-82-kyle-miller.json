@@ -1,0 +1,65 @@
+{
+  "id": "kyle-miller",
+  "name": "Kyle Miller",
+  "firstName": "Kyle",
+  "lastName": "Miller",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-82",
+  "jurisdiction": "Indiana House of Representatives",
+  "county": [
+    "Indiana"
+  ],
+  "termStart": "2022-11-09",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "200 W. Washington St., Indianapolis, IN 46204",
+    "phone": "317-232-9628",
+    "email": "h82@iga.in.gov",
+    "website": "https://iga.in.gov/legislative/2024/legislators/legislator_kyle_miller_1"
+  },
+  "bio": "Kyle Miller serves as State Representative for Indiana House of Representatives District 82. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "IN",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://iga.in.gov/legislative/2024/legislators/legislator_kyle_miller_1"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/in/legislature/Kyle-Miller-a67ee82c-450c-49ed-8862-f58e34a3dfbb.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Kyle_Miller_(Indiana)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Kyle_Miller_(politician)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://iga.in.gov/legislative/2026/legislators/legislator_kyle_miller_1"
+    },
+    {
+      "title": "Public source",
+      "url": "https://indianahousedemocrats.org/members"
+    },
+    {
+      "title": "Public source",
+      "url": "https://indianahousedemocrats.org/members/kyle-miller"
+    },
+    {
+      "title": "Public source",
+      "url": "https://indianahousedemocrats.org/members/kyle-miller/full"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/201997/kyle-miller"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

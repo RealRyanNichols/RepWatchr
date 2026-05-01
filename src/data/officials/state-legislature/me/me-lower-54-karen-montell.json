@@ -1,0 +1,56 @@
+{
+  "id": "karen-montell",
+  "name": "Karen Montell",
+  "firstName": "Karen",
+  "lastName": "Montell",
+  "photo": "/images/officials/state-legislature/me/karen-montell.jpg",
+  "photoSourceUrl": "https://legislature.maine.gov/house/house/Repository/MemberProfiles/509661e8-e573-4bef-b8ed-47c5c0a586a4_MONTELL.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-54",
+  "jurisdiction": "Maine House of Representatives",
+  "county": [
+    "Maine"
+  ],
+  "termStart": "2022-12-07",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 333, House Democratic Office 2 State House Station, Augusta, ME 04333",
+    "phone": "800-423-2900",
+    "email": "karen.montell@legislature.maine.gov",
+    "website": "https://legislature.maine.gov/house/house/MemberProfiles/Details/1502"
+  },
+  "bio": "Karen Montell serves as State Representative for Maine House of Representatives District 54. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "ME",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://legislature.maine.gov/house/house/MemberProfiles/Details/1502"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/me/legislature/Karen-L-Montell-80900bc0-7e26-4195-a0af-ec56b9f34fe0.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://legislature.maine.gov/house/house/Repository/MemberProfiles/509661e8-e573-4bef-b8ed-47c5c0a586a4_MONTELL.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Karen_Montell"
+    },
+    {
+      "title": "Public source",
+      "url": "https://legislature.maine.gov/house/house/MemberProfiles/ListAlpha"
+    },
+    {
+      "title": "Public source",
+      "url": "https://legislature.maine.gov/housedems/montell/index.html"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

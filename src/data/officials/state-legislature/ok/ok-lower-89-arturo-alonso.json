@@ -1,0 +1,53 @@
+{
+  "id": "arturo-alonso",
+  "name": "Arturo Alonso",
+  "firstName": "Arturo",
+  "lastName": "Alonso",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-89",
+  "jurisdiction": "Oklahoma House of Representatives",
+  "county": [
+    "Oklahoma"
+  ],
+  "termStart": "2022-11-23",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 604, 2300 N. Lincoln Blvd., Oklahoma City, OK 73105",
+    "phone": "405-557-7397",
+    "email": "arturo.alonso@okhouse.gov",
+    "website": "https://www.okhouse.gov/Members/Contact.aspx?District=89"
+  },
+  "bio": "Arturo Alonso serves as State Representative for Oklahoma House of Representatives District 89. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "OK",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.okhouse.gov/Members/Contact.aspx?District=89"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ok/legislature/Arturo-Alonso-Sandoval-4d0b52d3-ad1f-45c9-b46e-3676194ef82c.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Arturo_Alonso-Sandoval"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Arturo_Alonso"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/alonsoarturo"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.okhouse.gov/representatives/arturo-alonsosandoval"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

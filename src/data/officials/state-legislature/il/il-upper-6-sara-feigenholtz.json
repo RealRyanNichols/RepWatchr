@@ -1,0 +1,69 @@
+{
+  "id": "sara-feigenholtz",
+  "name": "Sara Feigenholtz",
+  "firstName": "Sara",
+  "lastName": "Feigenholtz",
+  "party": "D",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-6",
+  "jurisdiction": "Illinois Senate",
+  "county": [
+    "Illinois"
+  ],
+  "termStart": "2020-01-21",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 121-D, Capitol Building, Springfield, IL 62706",
+    "phone": "217-557-0523",
+    "email": "sara@senatorsara.com",
+    "website": "https://ilga.gov/senate/Senator.asp?GA=101&MemberID=2778"
+  },
+  "bio": "Sara Feigenholtz serves as State Senator for Illinois Senate District 6. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "IL",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://ilga.gov/senate/Senator.asp?GA=101&MemberID=2778"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/il/legislature/Sara-Feigenholtz-6c0069de-c064-412e-ae45-9e87d6ee3dae.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Sara_Feigenholtz"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Sara_Feigenholtz"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ilga.gov/senate/default.asp?GA=101"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ilga.gov/senate/default.asp?GA=102"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ilga.gov/senate/default.asp?GA=103"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ilga.gov/senate/Senator.asp?GA=102&MemberID=2977"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ilga.gov/senate/Senator.asp?GA=103&MemberID=3168"
+    },
+    {
+      "title": "Public source",
+      "url": "https://staterepsara.com"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

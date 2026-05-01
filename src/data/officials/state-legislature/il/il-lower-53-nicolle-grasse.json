@@ -1,0 +1,72 @@
+{
+  "id": "nicolle-grasse",
+  "name": "Nicolle Grasse",
+  "firstName": "Nicolle",
+  "lastName": "Grasse",
+  "photo": "/images/officials/state-legislature/il/nicolle-grasse.jpg",
+  "photoSourceUrl": "https://cdn.ilga.gov/assets/img/members/{D2D7C6E1-5147-4488-90CD-D4FC0982A738}.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-53",
+  "jurisdiction": "Illinois House of Representatives",
+  "county": [
+    "Illinois"
+  ],
+  "termStart": "2024-06-05",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 242A-W, Stratton Office Building, Springfield, IL 62706",
+    "phone": "217-782-3739",
+    "email": "contact@staterepgrasse.com",
+    "website": "https://www.ilga.gov/House/Members/Details/3450"
+  },
+  "bio": "Nicolle Grasse serves as State Representative for Illinois House of Representatives District 53. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "IL",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.ilga.gov/House/Members/Details/3450"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/il/legislature/Nicolle-Grasse-0394df12-4d09-4844-80aa-269ccc9c1d54.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://cdn.ilga.gov/assets/img/members/{D2D7C6E1-5147-4488-90CD-D4FC0982A738}.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Nicolle_Grasse"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Nicolle_Grasse"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/197272/nicolle-grasse"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.ilga.gov/house/Rep.asp?GA=103&MemberID=3262"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.ilga.gov/house/Rep.asp?GA=104&MemberID=3450"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.ilga.gov/house/Rep.asp?MemberID=3450"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/rev-nicolle-see-grasse-61013423"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

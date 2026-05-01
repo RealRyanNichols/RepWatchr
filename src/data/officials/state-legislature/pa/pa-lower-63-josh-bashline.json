@@ -1,0 +1,56 @@
+{
+  "id": "josh-bashline",
+  "name": "Josh Bashline",
+  "firstName": "Josh",
+  "lastName": "Bashline",
+  "photo": "/images/officials/state-legislature/pa/josh-bashline.jpg",
+  "photoSourceUrl": "https://www.exploreclarion.com/wp-content/uploads/sites/2/2024/02/Josh-Bashline-Enters-Race-for-63rd-State-House-District.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-63",
+  "jurisdiction": "Pennsylvania House of Representatives",
+  "county": [
+    "Pennsylvania"
+  ],
+  "termStart": "2024-12-01",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 412, Irvis Office Building P.O. Box 202063, Harrisburg, PA 17120",
+    "phone": "717-772-9908",
+    "email": "jbashline@pahousegop.com",
+    "website": "https://repbashline.com/"
+  },
+  "bio": "Josh Bashline serves as State Representative for Pennsylvania House of Representatives District 63. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "PA",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://repbashline.com/"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/pa/legislature/Josh-Bashline-2062ecc5-049f-44c4-83bf-850a34b75531.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://www.exploreclarion.com/wp-content/uploads/sites/2/2024/02/Josh-Bashline-Enters-Race-for-63rd-State-House-District.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Josh_Bashline"
+    },
+    {
+      "title": "Public source",
+      "url": "https://repbashline.com"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.palegis.us/house/members/bio/2026/rep-bashline"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

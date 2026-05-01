@@ -1,0 +1,65 @@
+{
+  "id": "terry-alexander",
+  "name": "Terry Alexander",
+  "firstName": "Terry",
+  "lastName": "Alexander",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-59",
+  "jurisdiction": "South Carolina House of Representatives",
+  "county": [
+    "South Carolina"
+  ],
+  "termStart": "",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 314C, Blatt Building P.O. Box 11867, Columbia, SC 29201",
+    "phone": "803-734-3004",
+    "email": "terryalexander@schouse.gov",
+    "website": "https://scstatehouse.gov/member.php?code=0011363635"
+  },
+  "bio": "Terry Alexander serves as State Representative for South Carolina House of Representatives District 59. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "SC",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://scstatehouse.gov/member.php?code=0011363635"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/sc/legislature/Terry-Alexander-ae65876e-c27c-49ff-a49f-d58bcbbd4bd5.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Terry_Alexander"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Terry_Alexander_(politician)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/56704/terry-alexander"
+    },
+    {
+      "title": "Public source",
+      "url": "https://scstatehouse.gov/member.php?chamber=H"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/terry-alexander-6182325"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.scstatehouse.gov/member.php?chamber=H"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.scstatehouse.gov/member.php?code=0011363635"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

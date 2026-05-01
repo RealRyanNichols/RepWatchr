@@ -1,0 +1,60 @@
+{
+  "id": "michael-carbone",
+  "name": "Michael Carbone",
+  "firstName": "Michael",
+  "lastName": "Carbone",
+  "photo": "/images/officials/state-legislature/az/michael-carbone.jpg",
+  "photoSourceUrl": "https://azleg.gov/alisImages/MemberPhotos/57leg/House/CARBONE.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-25",
+  "jurisdiction": "Arizona House of Representatives",
+  "county": [
+    "Arizona"
+  ],
+  "termStart": "2023-01-09",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 208, 1700 W. Washington St., Phoenix, AZ 85007",
+    "phone": "602-926-4038",
+    "email": "mcarbone@azleg.gov",
+    "website": "https://www.azleg.gov/house-member/?legislature=56&session=127&legislator=2153"
+  },
+  "bio": "Michael Carbone serves as State Representative for Arizona House of Representatives District 25. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "AZ",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.azleg.gov/house-member/?legislature=56&session=127&legislator=2153"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/az/legislature/Michael-Carbone-8db06598-a7e1-4b25-9e76-6a2be0d9eae3.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://azleg.gov/alisImages/MemberPhotos/57leg/House/CARBONE.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Michael_Carbone"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Michael_Carbone"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.azleg.gov/house-member/?legislature=57&session=129&legislator=2298"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.azleg.gov/memberroster/?body=H"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

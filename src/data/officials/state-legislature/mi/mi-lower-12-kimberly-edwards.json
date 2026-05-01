@@ -1,0 +1,53 @@
+{
+  "id": "kimberly-edwards",
+  "name": "Kimberly Edwards",
+  "firstName": "Kimberly",
+  "lastName": "Edwards",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-12",
+  "jurisdiction": "Michigan House of Representatives",
+  "county": [
+    "Michigan"
+  ],
+  "termStart": "2023-01-01",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room N-691, Anderson House Office Building 124 N. Capitol Ave., Lansing, MI 48933",
+    "phone": "517-373-0852",
+    "email": "kimberlyedwards@house.mi.gov",
+    "website": "https://housedems.com/Kimberly-Edwards/"
+  },
+  "bio": "Kimberly Edwards serves as State Representative for Michigan House of Representatives District 12. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "MI",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://housedems.com/Kimberly-Edwards/"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/mi/legislature/Kimberly-Edwards-e1d87954-4ee4-4668-9075-c6240dbe8c9b.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Kimberly_Edwards"
+    },
+    {
+      "title": "Public source",
+      "url": "https://housedems.com/Kimberly-Edwards"
+    },
+    {
+      "title": "Public source",
+      "url": "https://housedems.com/kimberly-edwards/about"
+    },
+    {
+      "title": "Members List Page",
+      "url": "https://www.house.mi.gov/AllRepresentatives"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

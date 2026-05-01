@@ -1,0 +1,52 @@
+{
+  "id": "angelita-mejia",
+  "name": "Angelita Mejia",
+  "firstName": "Angelita",
+  "lastName": "Mejia",
+  "photo": "/images/officials/state-legislature/nm/angelita-mejia.jpg",
+  "photoSourceUrl": "https://bloximages.newyork1.vip.townnews.com/rdrnews.com/content/tncms/assets/v3/editorial/5/0f/50f20b06-de3c-11ee-8fb3-1b97c5eaf40c/65ec9fd35dc59.image.jpg?resize=457%2C500",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-58",
+  "jurisdiction": "New Mexico House of Representatives",
+  "county": [
+    "New Mexico"
+  ],
+  "termStart": "2025-01-01",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 203F, New Mexico Capitol Annex 325 Don Gaspar Ave., Santa Fe, NM 87501",
+    "phone": "505-986-4467",
+    "email": "angelita.mejia@nmlegis.gov",
+    "website": "https://www.nmlegis.gov/Members/Legislator?SponCode=HMEAN"
+  },
+  "bio": "Angelita Mejia serves as State Representative for New Mexico House of Representatives District 58. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "NM",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.nmlegis.gov/Members/Legislator?SponCode=HMEAN"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/nm/legislature/Angelita-Mejia-75986bbd-3629-4520-a770-f86c46f423ab.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://bloximages.newyork1.vip.townnews.com/rdrnews.com/content/tncms/assets/v3/editorial/5/0f/50f20b06-de3c-11ee-8fb3-1b97c5eaf40c/65ec9fd35dc59.image.jpg?resize=457%2C500"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Angelita_Mejia"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Angelita_Mejia"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

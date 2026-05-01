@@ -1,0 +1,56 @@
+{
+  "id": "chris-swedzinski",
+  "name": "Chris Swedzinski",
+  "firstName": "Chris",
+  "lastName": "Swedzinski",
+  "photo": "/images/officials/state-legislature/mn/chris-swedzinski.jpg",
+  "photoSourceUrl": "https://www.house.mn.gov/hinfo/memberimgls94/15A.gif?v=112221",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-15A",
+  "jurisdiction": "Minnesota House of Representatives",
+  "county": [
+    "Minnesota"
+  ],
+  "termStart": "2023-01-03",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Centennial Office Building 658 Cedar St., Second Floor, St. Paul, MN 55155",
+    "phone": "651-296-5374",
+    "email": "rep.chris.swedzinski@house.mn.gov",
+    "website": "https://www.house.mn.gov/members/profile/15369"
+  },
+  "bio": "Chris Swedzinski serves as State Representative for Minnesota House of Representatives District 15A. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "MN",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.house.mn.gov/members/profile/15369"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/mn/legislature/Chris-Swedzinski-d9abe93e-6eba-4658-a0cd-68610585606b.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://www.house.mn.gov/hinfo/memberimgls94/15A.gif?v=112221"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Chris_Swedzinski"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Chris_Swedzinski"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.house.leg.state.mn.us/members/hmem.asp"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

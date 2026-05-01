@@ -1,0 +1,69 @@
+{
+  "id": "annette-cleveland",
+  "name": "Annette Cleveland",
+  "firstName": "Annette",
+  "lastName": "Cleveland",
+  "party": "D",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-49",
+  "jurisdiction": "Washington Senate",
+  "county": [
+    "Washington"
+  ],
+  "termStart": "2013-01-14",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 223, John A. Cherberg Building P.O. Box 40449, Olympia, WA 98504",
+    "phone": "360-786-7696",
+    "email": "annette.cleveland@leg.wa.gov",
+    "website": "https://leg.wa.gov/legislators/member/annette-cleveland"
+  },
+  "bio": "Annette Cleveland serves as State Senator for Washington Senate District 49. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "WA",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://leg.wa.gov/legislators/member/annette-cleveland"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/wa/legislature/Annette-Cleveland-50c73eec-2f66-450b-b8b4-b8bce995e221.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://app.leg.wa.gov/ContentParts/MemberDirectory/?a=Senate"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Annette_Cleveland"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Annette_Cleveland"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/140199/annette-cleveland"
+    },
+    {
+      "title": "Public source",
+      "url": "https://senatedemocrats.wa.gov/cleveland"
+    },
+    {
+      "title": "Public source",
+      "url": "https://senatedemocrats.wa.gov/cleveland/"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.leg.wa.gov/senate/senators/Pages/default.aspx"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/annette-cleveland-383b3511"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

@@ -1,0 +1,68 @@
+{
+  "id": "melissa-hardy",
+  "name": "Melissa Hardy",
+  "firstName": "Melissa",
+  "lastName": "Hardy",
+  "photo": "/images/officials/state-legislature/nv/melissa-hardy.jpg",
+  "photoSourceUrl": "http://leg.state.nv.us/Session/83rd2025/legislators/Assembly/Images/Hardy.Melissa.364.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "Assemblymember",
+  "district": "HD-22",
+  "jurisdiction": "Nevada Assembly",
+  "county": [
+    "Nevada"
+  ],
+  "termStart": "2018-11-07",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 3105D, Nevada Assembly 401 S. Carson St., Carson City, NV 89701",
+    "phone": "775-684-8823",
+    "email": "melissa.hardy@asm.state.nv.us",
+    "website": "https://www.leg.state.nv.us/App/Legislator/A/api/81st2021/Legislator?id=364"
+  },
+  "bio": "Melissa Hardy serves as Assemblymember for Nevada Assembly District 22. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "NV",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.leg.state.nv.us/App/Legislator/A/api/81st2021/Legislator?id=364"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/nv/legislature/Melissa-Hardy-5cafbfaf-3066-4080-9754-b53f337ba4ba.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "http://leg.state.nv.us/Session/83rd2025/legislators/Assembly/Images/Hardy.Melissa.364.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Melissa_Hardy"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Melissa_Hardy"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/180981/melissa-hardy"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.leg.state.nv.us/App/Legislator/A/Assembly/Current"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.leg.state.nv.us/App/Legislator/A/Assembly/Current/22"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/melissa-hardy-59505a26"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

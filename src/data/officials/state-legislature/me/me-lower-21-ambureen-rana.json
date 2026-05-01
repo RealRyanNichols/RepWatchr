@@ -1,0 +1,60 @@
+{
+  "id": "ambureen-rana",
+  "name": "Ambureen Rana",
+  "firstName": "Ambureen",
+  "lastName": "Rana",
+  "photo": "/images/officials/state-legislature/me/ambureen-rana.jpg",
+  "photoSourceUrl": "https://legislature.maine.gov/house/house/Repository/MemberProfiles/1f89f046-4256-4341-9236-68c67e6efd77_ARANA.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-21",
+  "jurisdiction": "Maine House of Representatives",
+  "county": [
+    "Maine"
+  ],
+  "termStart": "2022-12-07",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 333, House Democratic Office 2 State House Station, Augusta, ME 04333",
+    "phone": "800-423-2900",
+    "email": "ambureen.rana@legislature.maine.gov",
+    "website": "https://legislature.maine.gov/house/house/MemberProfiles/Details/1464"
+  },
+  "bio": "Ambureen Rana serves as State Representative for Maine House of Representatives District 21. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "ME",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://legislature.maine.gov/house/house/MemberProfiles/Details/1464"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/me/legislature/Ambureen-Rana-8f61f208-cf99-489a-aa36-847438b0ed60.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://legislature.maine.gov/house/house/Repository/MemberProfiles/1f89f046-4256-4341-9236-68c67e6efd77_ARANA.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Ambureen_Rana"
+    },
+    {
+      "title": "Public source",
+      "url": "https://legislature.maine.gov/house/house/MemberProfiles/ListAlpha"
+    },
+    {
+      "title": "Public source",
+      "url": "https://rana.mainecandidate.com"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/ambureen-rana-93586a64"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

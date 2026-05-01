@@ -1,0 +1,45 @@
+{
+  "id": "luis-daniel-col-n-la-santa",
+  "name": "Luis Daniel Col\u00f3n La Santa",
+  "firstName": "Luis Daniel",
+  "lastName": "Col\u00f3n La Santa",
+  "party": "NP",
+  "level": "state",
+  "position": "Territorial Senator",
+  "district": "7",
+  "jurisdiction": "Puerto Rico Senate",
+  "county": [
+    "Puerto Rico"
+  ],
+  "termStart": "2025-01-02",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Senado, El Capitolio P.O. Box 9023431, San Juan, PR 00902",
+    "phone": "787-724-2030",
+    "email": "ldcolon@senado.pr.gov",
+    "website": "https://www.senado.pr.gov/luis-daniel-col%C3%B3n-la-santa"
+  },
+  "bio": "Luis Daniel Col\u00f3n La Santa serves as Territorial Senator for Puerto Rico Senate District 7. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "PR",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.senado.pr.gov/luis-daniel-col%C3%B3n-la-santa"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/pr/legislature/Luis-Daniel-Coln-La-Santa-1e6e8976-02d1-40e4-a3f7-d3eab8222e81.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Luis_Daniel_Col%C3%B3n_La_Santa"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.senado.pr.gov/senators/luis-daniel-col%C3%B3n-la-santa"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

@@ -1,0 +1,64 @@
+{
+  "id": "robert-stivers",
+  "name": "Robert Stivers",
+  "firstName": "Robert",
+  "lastName": "Stivers",
+  "photo": "/images/officials/state-legislature/ky/robert-stivers.jpg",
+  "photoSourceUrl": "https://legislature.ky.gov/Legislators%20Thumbnail%20Images/senate125.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-25",
+  "jurisdiction": "Kentucky Senate",
+  "county": [
+    "Kentucky"
+  ],
+  "termStart": "",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "207 Main St., Manchester, KY 40962",
+    "phone": "606-598-2322",
+    "email": "robert.stivers@kylegislature.gov",
+    "website": "https://legislature.ky.gov/Legislators/Pages/Legislator-Profile.aspx?DistrictNumber=125",
+    "socialMedia": {
+      "x": "https://x.com/kysenatepres",
+      "twitter": "https://x.com/kysenatepres"
+    }
+  },
+  "bio": "Robert Stivers serves as State Senator for Kentucky Senate District 25. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "KY",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://legislature.ky.gov/Legislators/Pages/Legislator-Profile.aspx?DistrictNumber=125"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ky/legislature/Robert-Stivers-II-8659c7e3-ec01-4c40-b7ee-d21f37facff5.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://legislature.ky.gov/Legislators%20Thumbnail%20Images/senate125.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Robert_Stivers"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Robert_Stivers"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/9609/robert-stivers-ii"
+    },
+    {
+      "title": "Public source",
+      "url": "https://legislature.ky.gov/Legislators/senate"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

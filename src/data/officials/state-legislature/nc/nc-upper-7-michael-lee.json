@@ -1,0 +1,68 @@
+{
+  "id": "michael-lee",
+  "name": "Michael Lee",
+  "firstName": "Michael",
+  "lastName": "Lee",
+  "photo": "/images/officials/state-legislature/nc/michael-lee.jpg",
+  "photoSourceUrl": "https://www.ncleg.gov/Members/MemberImage/S/387/Low",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-7",
+  "jurisdiction": "North Carolina Senate",
+  "county": [
+    "North Carolina"
+  ],
+  "termStart": "2023-01-01",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 300-B, Legislative Office Building 300 N. Salisbury St., Raleigh, NC 27603",
+    "phone": "919-715-2525",
+    "email": "michael.lee@ncleg.gov",
+    "website": "https://www.ncleg.gov/Members/Biography/S/387"
+  },
+  "bio": "Michael Lee serves as State Senator for North Carolina Senate District 7. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "NC",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.ncleg.gov/Members/Biography/S/387"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/nc/legislature/Michael-V-Lee-082079ab-53d2-43e5-be5f-cb7c6054edd3.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://www.ncleg.gov/Members/MemberImage/S/387/Low"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Michael_V._Lee"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Michael_V._Lee_(North_Carolina_State_Senate)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Michael_V._Lee"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/102957/michael-lee"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/michael-lee-5669b59"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.ncleg.gov/Members/MemberTable/S"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

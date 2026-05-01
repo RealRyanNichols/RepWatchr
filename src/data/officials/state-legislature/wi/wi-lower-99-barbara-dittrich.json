@@ -1,0 +1,70 @@
+{
+  "id": "barbara-dittrich",
+  "name": "Barbara Dittrich",
+  "firstName": "Barbara",
+  "lastName": "Dittrich",
+  "photo": "/images/officials/state-legislature/wi/barbara-dittrich.jpg",
+  "photoSourceUrl": "https://docs.legis.wisconsin.gov/2023/legislators/assembly/2460.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "Assemblymember",
+  "district": "HD-99",
+  "jurisdiction": "Wisconsin State Assembly",
+  "county": [
+    "Wisconsin"
+  ],
+  "termStart": "2025-01-06",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "email": "rep.dittrich@legis.wisconsin.gov",
+    "website": "https://docs.legis.wisconsin.gov/2019/legislators/assembly/1934"
+  },
+  "bio": "Barbara Dittrich serves as Assemblymember for Wisconsin State Assembly District 99. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "WI",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://docs.legis.wisconsin.gov/2019/legislators/assembly/1934"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/wi/legislature/Barbara-Dittrich-0580ebef-0cfa-40ae-a4ea-d960e0ea30ee.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://docs.legis.wisconsin.gov/2023/legislators/assembly/2460.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Barbara_Dittrich"
+    },
+    {
+      "title": "Public source",
+      "url": "https://docs.legis.wisconsin.gov/2021/legislators/assembly"
+    },
+    {
+      "title": "Public source",
+      "url": "https://docs.legis.wisconsin.gov/2021/legislators/assembly/"
+    },
+    {
+      "title": "Public source",
+      "url": "https://docs.legis.wisconsin.gov/2021/legislators/assembly/2132"
+    },
+    {
+      "title": "Public source",
+      "url": "https://docs.legis.wisconsin.gov/2023/legislators/assembly"
+    },
+    {
+      "title": "members list page",
+      "url": "https://docs.legis.wisconsin.gov/2023/legislators/assembly/"
+    },
+    {
+      "title": "member detail page",
+      "url": "https://docs.legis.wisconsin.gov/2023/legislators/assembly/2460"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

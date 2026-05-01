@@ -1,0 +1,65 @@
+{
+  "id": "pam-helming",
+  "name": "Pam Helming",
+  "firstName": "Pam",
+  "lastName": "Helming",
+  "party": "R",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-54",
+  "jurisdiction": "New York Senate",
+  "county": [
+    "New York"
+  ],
+  "termStart": "2017-01-04",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 711B, Legislative Office Building, Albany, NY 12247",
+    "phone": "518-455-2366",
+    "email": "helming@nysenate.gov",
+    "website": "https://www.nysenate.gov/senators-committees",
+    "socialMedia": {
+      "x": "https://x.com/SenatorHelming",
+      "twitter": "https://x.com/SenatorHelming"
+    }
+  },
+  "bio": "Pam Helming serves as State Senator for New York Senate District 54. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "NY",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.nysenate.gov/senators-committees"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ny/legislature/Pamela-Helming-fb2db4c8-a730-4fe7-b5e3-4d0156e46a1d.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Pamela_Helming"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Pam_Helming"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/164544/pam-helming"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/pam-helming-8159a019"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.nysenate.gov/senators/pamela-helming"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.nysenate.gov/senators/pamela-helming/contact"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

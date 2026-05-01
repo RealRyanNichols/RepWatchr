@@ -1,0 +1,53 @@
+{
+  "id": "shane-abbott",
+  "name": "Shane Abbott",
+  "firstName": "Shane",
+  "lastName": "Abbott",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-5",
+  "jurisdiction": "Florida House of Representatives",
+  "county": [
+    "Florida"
+  ],
+  "termStart": "2022-11-08",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 200, House Office Building 402 S. Monroe St., Tallahassee, FL 32399",
+    "phone": "850-717-5005",
+    "email": "shane.abbott@flhouse.gov",
+    "website": "https://myfloridahouse.gov/Sections/Representatives/details.aspx?MemberId=4864&LegislativeTermId=90"
+  },
+  "bio": "Shane Abbott serves as State Representative for Florida House of Representatives District 5. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "FL",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://myfloridahouse.gov/Sections/Representatives/details.aspx?MemberId=4864&LegislativeTermId=90"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/fl/legislature/Shane-G-Abbott-c844e345-f2a8-42fa-9ef9-d278bcb8fa4c.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Shane_Abbott"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.flhouse.gov/Sections/Representatives/details.aspx?MemberId=4864"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/shane-abbott-b4a93655"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.myfloridahouse.gov/Sections/Representatives/details.aspx?MemberId=4864&LegislativeTermId=90"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

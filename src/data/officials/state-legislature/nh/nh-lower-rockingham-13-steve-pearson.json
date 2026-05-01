@@ -1,0 +1,72 @@
+{
+  "id": "steve-pearson",
+  "name": "Steve Pearson",
+  "firstName": "Steve",
+  "lastName": "Pearson",
+  "photo": "/images/officials/state-legislature/nh/steve-pearson.jpg",
+  "photoSourceUrl": "https://www.citizenscount.org/sites/default/files/styles/profile_140x176/public/candidate-images/StephenPearson.jpg?itok=bRU8nrZr",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-Rockingham 13",
+  "jurisdiction": "New Hampshire House of Representatives",
+  "county": [
+    "New Hampshire"
+  ],
+  "termStart": "2022-12-07",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "State House 107 N. Main St., Concord, NH 03301",
+    "phone": "603-271-3661",
+    "email": "steve.pearson@gc.nh.gov",
+    "website": "https://gc.nh.gov/house/members/member.aspx?pid=9269"
+  },
+  "bio": "Steve Pearson serves as State Representative for New Hampshire House of Representatives District Rockingham 13. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "NH",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://gc.nh.gov/house/members/member.aspx?pid=9269"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/nh/legislature/Stephen-C-Pearson-2a085551-6f62-4320-a1eb-bc9a177b9a6d.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://www.citizenscount.org/sites/default/files/styles/profile_140x176/public/candidate-images/StephenPearson.jpg?itok=bRU8nrZr"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Stephen_Pearson"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Stephen_Pearson_(politician)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://gencourt.state.nh.us/downloads/Members.txt"
+    },
+    {
+      "title": "Public source",
+      "url": "https://gencourt.state.nh.us/downloads/members.txt"
+    },
+    {
+      "title": "Public source",
+      "url": "https://gencourt.state.nh.us/house/members/member.aspx?pid=9269"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/173061/stephen-pearson"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.gencourt.state.nh.us/downloads/Members.txt"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

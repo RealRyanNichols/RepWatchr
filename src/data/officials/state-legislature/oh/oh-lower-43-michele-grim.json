@@ -1,0 +1,64 @@
+{
+  "id": "michele-grim",
+  "name": "Michele Grim",
+  "firstName": "Michele",
+  "lastName": "Grim",
+  "photo": "/images/officials/state-legislature/oh/michele-grim.jpg",
+  "photoSourceUrl": "https://www.legislature.ohio.gov/assets/people/michele-grim/headshots/thumbnails/medium/michele-grim-november-2023-headshot_medium.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-43",
+  "jurisdiction": "Ohio House of Representatives",
+  "county": [
+    "Ohio"
+  ],
+  "termStart": "2023-01-01",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "77 S. High St. 14th Floor, Columbus, OH 43215",
+    "phone": "614-644-6017",
+    "email": "rep43@ohiohouse.gov",
+    "website": "https://www.ohiohouse.gov/members/michele-grim"
+  },
+  "bio": "Michele Grim serves as State Representative for Ohio House of Representatives District 43. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "OH",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.ohiohouse.gov/members/michele-grim"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/oh/legislature/Michele-Grim-100ae6b0-0c5d-4b97-9ac5-8ccb42b9168b.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://www.legislature.ohio.gov/assets/people/michele-grim/headshots/thumbnails/medium/michele-grim-november-2023-headshot_medium.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Michele_Grim"
+    },
+    {
+      "title": "member details page",
+      "url": "https://ohiohouse.gov/members/michele-grim"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ohiohouse.gov/members/michele-grim/biography"
+    },
+    {
+      "title": "member list page",
+      "url": "https://www.legislature.ohio.gov/legislators/house-directory"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/michelegrim"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

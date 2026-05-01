@@ -1,0 +1,70 @@
+{
+  "id": "alex-dallman",
+  "name": "Alex Dallman",
+  "firstName": "Alex",
+  "lastName": "Dallman",
+  "photo": "/images/officials/state-legislature/wi/alex-dallman.jpg",
+  "photoSourceUrl": "https://docs.legis.wisconsin.gov/2023/legislators/assembly/2459.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "Assemblymember",
+  "district": "HD-39",
+  "jurisdiction": "Wisconsin State Assembly",
+  "county": [
+    "Wisconsin"
+  ],
+  "termStart": "2025-01-06",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "email": "rep.dallman@legis.wisconsin.gov",
+    "website": "https://alexdallman.com/"
+  },
+  "bio": "Alex Dallman serves as Assemblymember for Wisconsin State Assembly District 39. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "WI",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://alexdallman.com/"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/wi/legislature/Alex-A-Dallman-c4afc94c-3bad-4e77-9f81-de613c406860.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://docs.legis.wisconsin.gov/2023/legislators/assembly/2459.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://alexdallman.com"
+    },
+    {
+      "title": "Public source",
+      "url": "https://alexdallman.com/meet-alex"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Alex_Dallman"
+    },
+    {
+      "title": "Public source",
+      "url": "https://docs.legis.wisconsin.gov/2021/legislators/assembly"
+    },
+    {
+      "title": "Public source",
+      "url": "https://docs.legis.wisconsin.gov/2021/legislators/assembly/"
+    },
+    {
+      "title": "Public source",
+      "url": "https://docs.legis.wisconsin.gov/2021/legislators/assembly/2256"
+    },
+    {
+      "title": "Public source",
+      "url": "https://docs.legis.wisconsin.gov/2023/legislators/assembly"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

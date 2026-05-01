@@ -1,0 +1,71 @@
+{
+  "id": "clayton-fegley",
+  "name": "Clayton Fegley",
+  "firstName": "Clayton",
+  "lastName": "Fegley",
+  "photo": "/images/officials/state-legislature/nd/clayton-fegley.jpg",
+  "photoSourceUrl": "https://www.ndlegis.gov/sites/default/files/styles/member_list_photo/public/person/photo/cfegley2023.jpg?itok=e3uEeF1h",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-4B",
+  "jurisdiction": "North Dakota House of Representatives",
+  "county": [
+    "North Dakota"
+  ],
+  "termStart": "2022-12-01",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "State Capitol 600 E. Boulevard Ave., Bismarck, ND 58505",
+    "email": "cfegley@ndlegis.gov",
+    "website": "https://ndlegis.gov/biography/clayton-fegley"
+  },
+  "bio": "Clayton Fegley serves as State Representative for North Dakota House of Representatives District 4B. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "ND",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://ndlegis.gov/biography/clayton-fegley"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/nd/legislature/Clayton-Fegley-0e57f5ef-a6aa-4019-bce7-da50c23b3a7a.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://www.ndlegis.gov/sites/default/files/styles/member_list_photo/public/person/photo/cfegley2023.jpg?itok=e3uEeF1h"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Clayton_Fegley"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Clayton_Fegley"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/185922/clayton-fegley"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.legis.nd.gov/assembly/66-2019/members/house/representative-clayton-fegley"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.legis.nd.gov/assembly/67-2021/members/house/representative-clayton-fegley"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.legis.nd.gov/assembly/67-2021/members/members-by-district"
+    },
+    {
+      "title": "members list page",
+      "url": "https://www.ndlegis.gov/assembly/68-2023/regular/members?combine=&field_legis_chamber_target_id=All&field_legis_district_target_id=All&field_legislator_party_target_id=All&page=2"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

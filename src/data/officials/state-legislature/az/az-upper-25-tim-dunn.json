@@ -1,0 +1,69 @@
+{
+  "id": "tim-dunn",
+  "name": "Tim Dunn",
+  "firstName": "Tim",
+  "lastName": "Dunn",
+  "photo": "/images/officials/state-legislature/az/tim-dunn.jpg",
+  "photoSourceUrl": "https://www.azleg.gov/alisImages/MemberPhotos/55leg/House/DUNN.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-25",
+  "jurisdiction": "Arizona Senate",
+  "county": [
+    "Arizona"
+  ],
+  "termStart": "2025-01-13",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 310, 1700 W. Washington St., Phoenix, AZ 85007",
+    "phone": "602-926-4139",
+    "email": "tdunn@azleg.gov",
+    "website": "https://www.azleg.gov/house-member/?legislature=55&legislator=2031",
+    "socialMedia": {
+      "x": "https://x.com/ElectDunn",
+      "twitter": "https://x.com/ElectDunn",
+      "facebook": "https://facebook.com/TimDunnForAZHouse"
+    }
+  },
+  "bio": "Tim Dunn serves as State Senator for Arizona Senate District 25. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "AZ",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.azleg.gov/house-member/?legislature=55&legislator=2031"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/az/legislature/Timothy-Dunn-0b8c9973-1ae5-4af3-8a73-713c8365eccd.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://www.azleg.gov/alisImages/MemberPhotos/55leg/House/DUNN.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Tim_Dunn_(Arizona)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Tim_Dunn_(politician)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.azleg.gov/MemberRoster/?body=H"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.azleg.gov/memberroster/?body=H"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.azleg.gov/senate-member/?legislature=57&legislator=2388"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

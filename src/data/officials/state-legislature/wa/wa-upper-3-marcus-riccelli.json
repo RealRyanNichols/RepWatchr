@@ -1,0 +1,69 @@
+{
+  "id": "marcus-riccelli",
+  "name": "Marcus Riccelli",
+  "firstName": "Marcus",
+  "lastName": "Riccelli",
+  "party": "D",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-3",
+  "jurisdiction": "Washington Senate",
+  "county": [
+    "Washington"
+  ],
+  "termStart": "2025-01-13",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 309, Legislative Building P.O. Box 40403, Olympia, WA 98504",
+    "phone": "360-786-7604",
+    "email": "marcus.riccelli@leg.wa.gov",
+    "website": "https://housedemocrats.wa.gov/legislators/Marcus-Riccelli/"
+  },
+  "bio": "Marcus Riccelli serves as State Senator for Washington Senate District 3. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "WA",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://housedemocrats.wa.gov/legislators/Marcus-Riccelli/"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/wa/legislature/Marcus-Riccelli-1ecc75cc-95c9-4ae6-a8a4-1a0f87a10d0e.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://app.leg.wa.gov/ContentParts/MemberDirectory/?a=House"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Marcus_Riccelli"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Marcus_Riccelli"
+    },
+    {
+      "title": "Public source",
+      "url": "https://housedemocrats.wa.gov/riccelli"
+    },
+    {
+      "title": "Public source",
+      "url": "https://housedemocrats.wa.gov/riccelli/"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/140089/marcus-riccelli"
+    },
+    {
+      "title": "Public source",
+      "url": "https://leg.wa.gov/legislators/member/marcus-riccelli"
+    },
+    {
+      "title": "Public source",
+      "url": "https://senatedemocrats.wa.gov/riccelli"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

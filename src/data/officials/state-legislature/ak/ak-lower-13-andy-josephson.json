@@ -1,0 +1,72 @@
+{
+  "id": "andy-josephson",
+  "name": "Andy Josephson",
+  "firstName": "Andy",
+  "lastName": "Josephson",
+  "photo": "/images/officials/state-legislature/ak/andy-josephson.jpg",
+  "photoSourceUrl": "http://akleg.gov/images/legislators/450x600/JOS.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-13",
+  "jurisdiction": "Alaska House of Representatives",
+  "county": [
+    "Alaska"
+  ],
+  "termStart": "2023-01-17",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "State Capitol Room 505, 120 4th St., Juneau, AK 99801",
+    "phone": "907-465-4939",
+    "email": "representative.andy.josephson@akleg.gov",
+    "website": "https://akhouse.org/rep_josephson/"
+  },
+  "bio": "Andy Josephson serves as State Representative for Alaska House of Representatives District 13. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "AK",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://akhouse.org/rep_josephson/"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ak/legislature/Andy-Josephson-e1989648-fdd3-4e88-a0f0-9e27e75c0f03.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "http://akleg.gov/images/legislators/450x600/JOS.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://akhouse.org/rep_josephson"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Andrew_L._Josephson"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Andy_Josephson"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/140434/andy-josephson"
+    },
+    {
+      "title": "Public source",
+      "url": "https://w3.akleg.gov"
+    },
+    {
+      "title": "Public source",
+      "url": "https://w3.akleg.gov/"
+    },
+    {
+      "title": "member list page",
+      "url": "https://www.akleg.gov/basis/mbr_info.asp?session=33"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

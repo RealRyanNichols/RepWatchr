@@ -1,0 +1,55 @@
+{
+  "id": "dan-patrick",
+  "name": "Dan Patrick",
+  "firstName": "Dan",
+  "lastName": "Patrick",
+  "photo": "/images/officials/state-executive/tx/dan-patrick.jpg",
+  "photoSourceUrl": "https://www.ltgov.state.tx.us/wp-content/uploads/2021/01/dan_patrick_new_2021.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "Lieutenant Governor",
+  "district": "Texas",
+  "jurisdiction": "Texas statewide public office",
+  "county": [
+    "Texas"
+  ],
+  "termStart": "2015-01-20",
+  "termEnd": "2027-01-19",
+  "contactInfo": {
+    "office": "P.O. Box 12068; Austin, TX 78711",
+    "phone": "512-463-0001",
+    "website": "http://www.legdir.legis.state.tx.us/MemberInfo.aspx?Chamber=S&Code=A1430"
+  },
+  "bio": "Dan Patrick is listed as Lieutenant Governor for Texas. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "TX",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "http://www.legdir.legis.state.tx.us/MemberInfo.aspx?Chamber=S&Code=A1430"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/tx/executive/Dan-Patrick-22c1bff3-e936-4398-8d7c-95233e85b5c5.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://www.ltgov.state.tx.us/wp-content/uploads/2021/01/dan_patrick_new_2021.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "http://www.senate.state.tx.us/75r/LtGov/Ltgov.htm"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.ltgov.texas.gov/about/"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Dan_Patrick"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

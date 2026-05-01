@@ -1,0 +1,72 @@
+{
+  "id": "adam-lee",
+  "name": "Adam Lee",
+  "firstName": "Adam",
+  "lastName": "Lee",
+  "photo": "/images/officials/state-legislature/me/adam-lee.jpg",
+  "photoSourceUrl": "https://legislature.maine.gov/house/house/Repository/MemberProfiles/cc770c67-4f1f-4e24-a168-4a359d33b108_ALEE.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-89",
+  "jurisdiction": "Maine House of Representatives",
+  "county": [
+    "Maine"
+  ],
+  "termStart": "2022-12-07",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 333, House Democratic Office 2 State House Station, Augusta, ME 04333",
+    "phone": "800-423-2900",
+    "email": "adam.lee@legislature.maine.gov",
+    "website": "https://legislature.maine.gov/house/house/MemberProfiles/Details/1491"
+  },
+  "bio": "Adam Lee serves as State Representative for Maine House of Representatives District 89. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "ME",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://legislature.maine.gov/house/house/MemberProfiles/Details/1491"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/me/legislature/Adam-R-Lee-dff0e200-fd8c-4ada-ac3d-e014a529dd59.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://legislature.maine.gov/house/house/Repository/MemberProfiles/cc770c67-4f1f-4e24-a168-4a359d33b108_ALEE.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Adam_Lee"
+    },
+    {
+      "title": "Public source",
+      "url": "https://legislature.maine.gov/house/house/MemberProfiles/ListAlpha"
+    },
+    {
+      "title": "Public source",
+      "url": "https://legislature.maine.gov/housedems/lee"
+    },
+    {
+      "title": "Public source",
+      "url": "https://legislature.maine.gov/housedems/lee/index.html"
+    },
+    {
+      "title": "Public source",
+      "url": "https://tmbf-law.com/adam-r-lee"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/adam-r-lee-57901216"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.maine.gov/housedems/lee"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

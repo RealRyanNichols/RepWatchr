@@ -1,0 +1,53 @@
+{
+  "id": "mark-spencer",
+  "name": "Mark Spencer",
+  "firstName": "Mark",
+  "lastName": "Spencer",
+  "party": "D",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-3",
+  "jurisdiction": "Indiana Senate",
+  "county": [
+    "Indiana"
+  ],
+  "termStart": "2024-11-06",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "200 W. Washington St., Indianapolis, IN 46204",
+    "phone": "800-382-9467",
+    "email": "s3@iga.in.gov",
+    "website": "https://iga.in.gov/legislative/2025/legislators/legislator_mark_spencer_1"
+  },
+  "bio": "Mark Spencer serves as State Senator for Indiana Senate District 3. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "IN",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://iga.in.gov/legislative/2025/legislators/legislator_mark_spencer_1"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/in/legislature/Mark-Spencer-c553dcc6-1c2c-49d8-be04-e89e4d123d8b.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Mark_Spencer_(Indiana)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Mark_Spencer_(Indiana_politician)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://indianasenatedemocrats.org/senator/s3"
+    },
+    {
+      "title": "Public source",
+      "url": "https://spencerforsenator.com/biography"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

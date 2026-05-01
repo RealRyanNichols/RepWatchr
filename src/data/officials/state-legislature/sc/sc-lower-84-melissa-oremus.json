@@ -1,0 +1,61 @@
+{
+  "id": "melissa-oremus",
+  "name": "Melissa Oremus",
+  "firstName": "Melissa",
+  "lastName": "Oremus",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-84",
+  "jurisdiction": "South Carolina House of Representatives",
+  "county": [
+    "South Carolina"
+  ],
+  "termStart": "2019-01-14",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 418B, Blatt Building P.O. Box 11867, Columbia, SC 29201",
+    "phone": "803-212-6917",
+    "email": "melissaoremus@schouse.gov",
+    "website": "https://scstatehouse.gov/member.php?code=1432386192"
+  },
+  "bio": "Melissa Oremus serves as State Representative for South Carolina House of Representatives District 84. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "SC",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://scstatehouse.gov/member.php?code=1432386192"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/sc/legislature/Melissa-Lackey-Oremus-b3dcafed-7f7a-4b8b-8a5e-a517d768ed42.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Melissa_Oremus"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Melissa_Lackey_Oremus"
+    },
+    {
+      "title": "Public source",
+      "url": "https://scstatehouse.gov/member.php?chamber=H"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/melissa-lackey-oremus-3156517"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.scstatehouse.gov/member.php?chamber=H"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.scstatehouse.gov/member.php?code=1432386192"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

@@ -1,0 +1,49 @@
+{
+  "id": "brandon-phelps",
+  "name": "Brandon Phelps",
+  "firstName": "Brandon",
+  "lastName": "Phelps",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-54",
+  "jurisdiction": "Missouri House of Representatives",
+  "county": [
+    "Missouri"
+  ],
+  "termStart": "2025-01-08",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 116-3, 201 W. Capitol Ave., Jefferson City, MO 65101",
+    "phone": "573-751-3850",
+    "email": "brandon.phelps@house.mo.gov",
+    "website": "https://house.mo.gov/MemberDetails.aspx?district=054"
+  },
+  "bio": "Brandon Phelps serves as State Representative for Missouri House of Representatives District 54. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "MO",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://house.mo.gov/MemberDetails.aspx?district=054"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/mo/legislature/Brandon-Phelps-18f02633-c607-4c80-9088-742b28a49122.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Brandon_Phelps_(Missouri)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://house.mo.gov/MemberDetails.aspx?district=054&year=2024"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/217673/brandon-phelps"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

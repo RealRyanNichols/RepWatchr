@@ -1,0 +1,47 @@
+{
+  "id": "greg-abbott",
+  "name": "Greg Abbott",
+  "firstName": "Greg",
+  "lastName": "Abbott",
+  "photo": "/images/officials/state-executive/tx/greg-abbott.jpg",
+  "photoSourceUrl": "https://gov.texas.gov/uploads/images/general/2015-GovernorAbbott-Portrait.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "Governor",
+  "district": "Texas",
+  "jurisdiction": "Texas statewide public office",
+  "county": [
+    "Texas"
+  ],
+  "termStart": "2015-01-20",
+  "termEnd": "2027-01-10",
+  "contactInfo": {
+    "office": "P.O. Box 12428; Austin, TX 78711",
+    "phone": "512-463-2000",
+    "website": "https://gov.texas.gov/",
+    "socialMedia": {
+      "x": "https://x.com/GovAbbott",
+      "twitter": "https://x.com/GovAbbott"
+    }
+  },
+  "bio": "Greg Abbott is listed as Governor for Texas. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "TX",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://gov.texas.gov/"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/tx/executive/Greg-Abbott-d73f10ee-69f2-4ca8-ac00-405c453a62d7.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://gov.texas.gov/uploads/images/general/2015-GovernorAbbott-Portrait.jpg"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

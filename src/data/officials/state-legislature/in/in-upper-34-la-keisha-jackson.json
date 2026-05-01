@@ -1,0 +1,64 @@
+{
+  "id": "la-keisha-jackson",
+  "name": "La Keisha Jackson",
+  "firstName": "La Keisha",
+  "lastName": "Jackson",
+  "photo": "/images/officials/state-legislature/in/la-keisha-jackson.jpg",
+  "photoSourceUrl": "https://s3.amazonaws.com/ballotpedia-api4/files/thumbs/200/300/LaKeishaJackson.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-34",
+  "jurisdiction": "Indiana Senate",
+  "county": [
+    "Indiana"
+  ],
+  "termStart": "2024-04-24",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "200 W. Washington St., Indianapolis, IN 46204",
+    "phone": "317-232-9847",
+    "email": "s34@iga.in.gov",
+    "website": "https://iga.in.gov/legislative/2024/legislators/legislator_la_keisha_jackson_1"
+  },
+  "bio": "La Keisha Jackson serves as State Senator for Indiana Senate District 34. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "IN",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://iga.in.gov/legislative/2024/legislators/legislator_la_keisha_jackson_1"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/in/legislature/La-Keisha-Jackson-6c8d86c3-4157-4673-a7d9-524c9d49f859.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://s3.amazonaws.com/ballotpedia-api4/files/thumbs/200/300/LaKeishaJackson.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/La_Keisha_Jackson"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/La_Keisha_Jackson"
+    },
+    {
+      "title": "Public source",
+      "url": "https://indianasenatedemocrats.org/senators/s34"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/158327/la-keisha-jackson"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/la-keisha-jackson-mba-b95b9135"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

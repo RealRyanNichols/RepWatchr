@@ -1,0 +1,72 @@
+{
+  "id": "rebecca-burkes",
+  "name": "Rebecca Burkes",
+  "firstName": "Rebecca",
+  "lastName": "Burkes",
+  "photo": "/images/officials/state-legislature/ar/rebecca-burkes.jpg",
+  "photoSourceUrl": "https://www.arkleg.state.ar.us/Content/photos/2023/House/606_sm.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-11",
+  "jurisdiction": "Arkansas House of Representatives",
+  "county": [
+    "Arkansas"
+  ],
+  "termStart": "2023-01-09",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "State Capitol Arkansas  500 Woodlane St., Suite 350, Little Rock, AR 72201",
+    "phone": "501-682-6211",
+    "email": "rebecca.burkes@arkansashouse.org",
+    "website": "https://arkleg.state.ar.us/Legislators/Detail?member=Burkes"
+  },
+  "bio": "Rebecca Burkes serves as State Representative for Arkansas House of Representatives District 11. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "AR",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://arkleg.state.ar.us/Legislators/Detail?member=Burkes"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ar/legislature/Rebecca-Burkes-8f012092-5f3f-4047-8047-f2520efe0fad.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://www.arkleg.state.ar.us/Content/photos/2023/House/606_sm.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://arkleg.state.ar.us/Legislators/Detail?member=R.+Burkes"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Rebecca_Burkes"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Rebecca_Burkes"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/202329/rebecca-burkes"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.arkansashouse.org/district/11"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.arkleg.state.ar.us/Legislators/Detail?member=Burkes&ddBienniumSession=2023%2F2023R"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.arkleg.state.ar.us/Legislators/List?sort=Type&by=desc&ddBienniumSession=2023%2F2023R#SearchResults"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

@@ -1,0 +1,68 @@
+{
+  "id": "steve-hawley",
+  "name": "Steve Hawley",
+  "firstName": "Steve",
+  "lastName": "Hawley",
+  "photo": "/images/officials/state-legislature/ny/steve-hawley.jpg",
+  "photoSourceUrl": "https://assembly.state.ny.us/write/upload/member_files/139/headshot/139.jpg?hst=1660074922",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "Assemblymember",
+  "district": "HD-139",
+  "jurisdiction": "New York State Assembly",
+  "county": [
+    "New York"
+  ],
+  "termStart": "2006-03-01",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 521, Legislative Office Building, Albany, NY 12248",
+    "phone": "518-455-5811",
+    "email": "hawleys@nyassembly.gov",
+    "website": "https://assembly.state.ny.us/mem/?sh=email"
+  },
+  "bio": "Steve Hawley serves as Assemblymember for New York State Assembly District 139. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "NY",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://assembly.state.ny.us/mem/?sh=email"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ny/legislature/Stephen-Hawley-fa5dc497-02d8-4810-bae4-4651b76f1597.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://assembly.state.ny.us/write/upload/member_files/139/headshot/139.jpg?hst=1660074922"
+    },
+    {
+      "title": "Public source",
+      "url": "https://assembly.state.ny.us/mem/Stephen-Hawley"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Stephen_Hawley"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Stephen_Hawley"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/59388/steve-hawley"
+    },
+    {
+      "title": "Public source",
+      "url": "https://nyassembly.gov/mem/stephen-hawley"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/steve-hawley-14142714"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

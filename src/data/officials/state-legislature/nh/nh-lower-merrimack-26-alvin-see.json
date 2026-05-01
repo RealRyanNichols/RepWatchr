@@ -1,0 +1,60 @@
+{
+  "id": "alvin-see",
+  "name": "Alvin See",
+  "firstName": "Alvin",
+  "lastName": "See",
+  "photo": "/images/officials/state-legislature/nh/alvin-see.jpg",
+  "photoSourceUrl": "https://andoverbeacon.com/wp-content/uploads/2022/10/010-Town-News-News-Candidate-State-Rep-Merr-26-Rep-See-Photo-1-e1666301578915-577x1024.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-Merrimack 26",
+  "jurisdiction": "New Hampshire House of Representatives",
+  "county": [
+    "New Hampshire"
+  ],
+  "termStart": "2022-12-07",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "State House 107 N. Main St., Concord, NH 03301",
+    "phone": "603-798-3427",
+    "email": "alvin.see@gc.nh.gov",
+    "website": "https://gc.nh.gov/house/members/member.aspx?pid=10682"
+  },
+  "bio": "Alvin See serves as State Representative for New Hampshire House of Representatives District Merrimack 26. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "NH",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://gc.nh.gov/house/members/member.aspx?pid=10682"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/nh/legislature/Alvin-B-See-e3a1815a-a84c-4bd1-9e20-b73b07d2576f.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://andoverbeacon.com/wp-content/uploads/2022/10/010-Town-News-News-Candidate-State-Rep-Merr-26-Rep-See-Photo-1-e1666301578915-577x1024.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Alvin_See"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Alvin_See"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/209188/alvin-see"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.gencourt.state.nh.us/house/members/member.aspx?pid=10682"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

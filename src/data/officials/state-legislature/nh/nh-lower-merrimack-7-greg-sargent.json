@@ -1,0 +1,64 @@
+{
+  "id": "greg-sargent",
+  "name": "Greg Sargent",
+  "firstName": "Greg",
+  "lastName": "Sargent",
+  "photo": "/images/officials/state-legislature/nh/greg-sargent.jpg",
+  "photoSourceUrl": "https://victoryfund.org/wp-content/uploads/2024/09/IMG_0539-500x500-250x250.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-Merrimack 7",
+  "jurisdiction": "New Hampshire House of Representatives",
+  "county": [
+    "New Hampshire"
+  ],
+  "termStart": "2024-12-04",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "State House 107 N. Main St., Concord, NH 03301",
+    "phone": "603-271-3661",
+    "email": "gregory.sargent@gc.nh.gov",
+    "website": "https://gc.nh.gov/house/members/member.aspx?pid=10832"
+  },
+  "bio": "Greg Sargent serves as State Representative for New Hampshire House of Representatives District Merrimack 7. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "NH",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://gc.nh.gov/house/members/member.aspx?pid=10832"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/nh/legislature/Greg-Sargent-f1292af8-a209-4ff7-87b5-086acddcc10e.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://victoryfund.org/wp-content/uploads/2024/09/IMG_0539-500x500-250x250.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Gregory_Sargent"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Gregory_Sargent"
+    },
+    {
+      "title": "Public source",
+      "url": "https://gencourt.state.nh.us/house/members/member.aspx?pid=10832"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/208876/gregory-sargent"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/greg-sargent-59971860"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

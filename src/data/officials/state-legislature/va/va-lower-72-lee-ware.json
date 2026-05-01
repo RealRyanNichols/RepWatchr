@@ -1,0 +1,72 @@
+{
+  "id": "lee-ware",
+  "name": "Lee Ware",
+  "firstName": "Lee",
+  "lastName": "Ware",
+  "photo": "/images/officials/state-legislature/va/lee-ware.jpg",
+  "photoSourceUrl": "https://memdata.virginiageneralassembly.gov/images/display_image/H0124",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "Delegate",
+  "district": "HD-72",
+  "jurisdiction": "Virginia House of Delegates",
+  "county": [
+    "Virginia"
+  ],
+  "termStart": "2024-01-10",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 707, General Assembly Building 201 N. 9th St., Richmond, VA 23219",
+    "phone": "804-698-1072",
+    "email": "dellware@house.virginia.gov",
+    "website": "https://house.vga.virginia.gov/members/H0124"
+  },
+  "bio": "Lee Ware serves as Delegate for Virginia House of Delegates District 72. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "VA",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://house.vga.virginia.gov/members/H0124"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/va/legislature/R-Lee-Ware-865dace5-518d-4f4f-b393-c197064affe6.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://memdata.virginiageneralassembly.gov/images/display_image/H0124"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Lee_Ware"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Lee_Ware"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/15440/lee-ware-jr"
+    },
+    {
+      "title": "Public source",
+      "url": "https://lis.virginia.gov/191/mbr/MBR.HTM"
+    },
+    {
+      "title": "Public source",
+      "url": "https://lis.virginia.gov/201/mbr/MBR.HTM"
+    },
+    {
+      "title": "Public source",
+      "url": "https://lis.virginia.gov/cgi-bin/legp604.exe?191+mbr+H124"
+    },
+    {
+      "title": "Public source",
+      "url": "https://lis.virginia.gov/cgi-bin/legp604.exe?201+mbr+H124"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

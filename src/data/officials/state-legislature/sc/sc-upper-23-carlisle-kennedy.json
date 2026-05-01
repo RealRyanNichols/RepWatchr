@@ -1,0 +1,60 @@
+{
+  "id": "carlisle-kennedy",
+  "name": "Carlisle Kennedy",
+  "firstName": "Carlisle",
+  "lastName": "Kennedy",
+  "photo": "/images/officials/state-legislature/sc/carlisle-kennedy.jpg",
+  "photoSourceUrl": "https://votecarlislekennedy.com/wp-content/uploads/2024/04/MG_3387-scaled.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-23",
+  "jurisdiction": "South Carolina Senate",
+  "county": [
+    "South Carolina"
+  ],
+  "termStart": "2024-11-11",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 601, Gressette Building P.O. Box 142, Columbia, SC 29201",
+    "phone": "803-212-6116",
+    "email": "carlislekennedy@scsenate.gov",
+    "website": "https://www.scstatehouse.gov/member.php?code=0984090791"
+  },
+  "bio": "Carlisle Kennedy serves as State Senator for South Carolina Senate District 23. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "SC",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.scstatehouse.gov/member.php?code=0984090791"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/sc/legislature/Carlisle-Kennedy-31de54c6-a271-4c9e-a109-35de035197ce.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://votecarlislekennedy.com/wp-content/uploads/2024/04/MG_3387-scaled.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Carlisle_Kennedy"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Carlisle_Kennedy"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/216210/carlisle-kennedy"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/carlislekennedy"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

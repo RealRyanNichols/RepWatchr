@@ -1,0 +1,61 @@
+{
+  "id": "bob-foley",
+  "name": "Bob Foley",
+  "firstName": "Bob",
+  "lastName": "Foley",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-145",
+  "jurisdiction": "Maine House of Representatives",
+  "county": [
+    "Maine"
+  ],
+  "termStart": "2024-12-03",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 332, House Republican Office 2 State House Station, Augusta, ME 04333",
+    "phone": "800-423-2900",
+    "email": "robert.foley@legislature.maine.gov",
+    "website": "https://legislature.maine.gov/house/house/MemberProfiles/Details/64"
+  },
+  "bio": "Bob Foley serves as State Representative for Maine House of Representatives District 145. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "ME",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://legislature.maine.gov/house/house/MemberProfiles/Details/64"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/me/legislature/Robert-A-Foley-8292a538-3cda-492f-8686-da248f432df3.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Robert_Foley"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Robert_Foley_(American_politician)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/151401/robert-foley"
+    },
+    {
+      "title": "Public source",
+      "url": "https://mainehousegop.org/members/foley-robert"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/robert-foley-64326732"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.maine.gov/legis/house/hsebios/folera.htm"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

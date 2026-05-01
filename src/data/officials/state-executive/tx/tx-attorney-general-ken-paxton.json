@@ -1,0 +1,55 @@
+{
+  "id": "ken-paxton",
+  "name": "Ken Paxton",
+  "firstName": "Ken",
+  "lastName": "Paxton",
+  "photo": "/images/officials/state-executive/tx/ken-paxton.jpg",
+  "photoSourceUrl": "https://www.naag.org/wp-content/uploads/2020/09/ag-TX-Paxton.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "Attorney General",
+  "district": "Texas",
+  "jurisdiction": "Texas statewide public office",
+  "county": [
+    "Texas"
+  ],
+  "termStart": "2015-01-05",
+  "termEnd": "2027-01-01",
+  "contactInfo": {
+    "office": "Capitol Station, P.O. Box 12548; Austin, TX 78711-2548",
+    "phone": "512-463-2100",
+    "website": "http://www.legdir.legis.state.tx.us/MemberInfo.aspx?Chamber=S&Code=A1020"
+  },
+  "bio": "Ken Paxton is listed as Attorney General for Texas. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "TX",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "http://www.legdir.legis.state.tx.us/MemberInfo.aspx?Chamber=S&Code=A1020"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/tx/executive/Ken-Paxton-1c1b6320-5ed6-4739-9f53-389b724b0305.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://www.naag.org/wp-content/uploads/2020/09/ag-TX-Paxton.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.texasattorneygeneral.gov/"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Ken_Paxton"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.naag.org/attorney-general/ken-paxton/"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

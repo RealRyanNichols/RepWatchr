@@ -1,0 +1,61 @@
+{
+  "id": "jan-hochadel",
+  "name": "Jan Hochadel",
+  "firstName": "Jan",
+  "lastName": "Hochadel",
+  "party": "D",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-13",
+  "jurisdiction": "Connecticut Senate",
+  "county": [
+    "Connecticut"
+  ],
+  "termStart": "2023-01-04",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 2400, Legislative Office Building 300 Capitol Ave., Hartford, CT 06106",
+    "phone": "860-240-0584",
+    "email": "jan.hochadel@cga.ct.gov",
+    "website": "https://www.senatedems.ct.gov/hochadel"
+  },
+  "bio": "Jan Hochadel serves as State Senator for Connecticut Senate District 13. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "CT",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.senatedems.ct.gov/hochadel"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ct/legislature/Jan-Hochadel-e823b348-fd0f-410b-b3c1-62fe7a2982f6.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "ftp://ftp.cga.ct.gov/pub/data/LegislatorDatabase.csv"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Jan_Hochadel"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Jan_Hochadel"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/208751/jan-hochadel"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.senatedems.ct.gov/senator/jan-hochadel"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.senatedems.ct.gov/senator/jan-hochadel/bio"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

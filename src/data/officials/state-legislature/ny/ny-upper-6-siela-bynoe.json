@@ -1,0 +1,56 @@
+{
+  "id": "siela-bynoe",
+  "name": "Siela Bynoe",
+  "firstName": "Siela",
+  "lastName": "Bynoe",
+  "photo": "/images/officials/state-legislature/ny/siela-bynoe.jpg",
+  "photoSourceUrl": "https://www.nassaucountyny.gov/ImageRepository/Document?documentID=9396",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-6",
+  "jurisdiction": "New York Senate",
+  "county": [
+    "New York"
+  ],
+  "termStart": "2025-01-01",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 947, Legislative Office Building, Albany, NY 12247",
+    "phone": "518-455-3260",
+    "email": "bynoe@nysenate.gov",
+    "website": "https://www.nysenate.gov/senators/siela-bynoe"
+  },
+  "bio": "Siela Bynoe serves as State Senator for New York Senate District 6. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "NY",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.nysenate.gov/senators/siela-bynoe"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ny/legislature/Siela-A-Bynoe-ee6af720-d32a-4744-a62c-deba9747d733.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://www.nassaucountyny.gov/ImageRepository/Document?documentID=9396"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Siela_Bynoe"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Siela_Bynoe"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/164107/siela-bynoe"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

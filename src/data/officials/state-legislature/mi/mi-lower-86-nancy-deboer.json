@@ -1,0 +1,65 @@
+{
+  "id": "nancy-deboer",
+  "name": "Nancy DeBoer",
+  "firstName": "Nancy",
+  "lastName": "DeBoer",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-86",
+  "jurisdiction": "Michigan House of Representatives",
+  "county": [
+    "Michigan"
+  ],
+  "termStart": "2023-01-01",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room N-1190, Anderson House Office Building 124 N. Capitol Ave., Lansing, MI 48933",
+    "phone": "517-373-0846",
+    "email": "nancydeboer@house.mi.gov",
+    "website": "https://gophouse.org/member/RepNancyDeBoer/posts"
+  },
+  "bio": "Nancy DeBoer serves as State Representative for Michigan House of Representatives District 86. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "MI",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://gophouse.org/member/RepNancyDeBoer/posts"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/mi/legislature/Nancy-De-Boer-ffae0dee-fb80-4434-bc8c-8e510d3bc495.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Nancy_De_Boer"
+    },
+    {
+      "title": "Public source",
+      "url": "https://nancydeboer.com/meet-nancy"
+    },
+    {
+      "title": "Member Details Page",
+      "url": "https://RepDeBoer.com"
+    },
+    {
+      "title": "Members List Page",
+      "url": "https://www.house.mi.gov/AllRepresentatives"
+    },
+    {
+      "title": "Member Details Page",
+      "url": "https://www.house.mi.gov/repdetail/repNancyDe Boer"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.house.mi.gov/repdetail/repNancyDeBoer"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/nancy-de-boer-65b64411"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

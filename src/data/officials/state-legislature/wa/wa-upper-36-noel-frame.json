@@ -1,0 +1,69 @@
+{
+  "id": "noel-frame",
+  "name": "Noel Frame",
+  "firstName": "Noel",
+  "lastName": "Frame",
+  "party": "D",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-36",
+  "jurisdiction": "Washington Senate",
+  "county": [
+    "Washington"
+  ],
+  "termStart": "2023-01-09",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 220, John A. Cherberg Building P.O. Box 40436, Olympia, WA 98504",
+    "phone": "360-786-7670",
+    "email": "noel.frame@leg.wa.gov",
+    "website": "https://housedemocrats.wa.gov/Frame/"
+  },
+  "bio": "Noel Frame serves as State Senator for Washington Senate District 36. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "WA",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://housedemocrats.wa.gov/Frame/"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/wa/legislature/Noel-Frame-e9b85600-e33e-4a0a-af9f-bbcb98c0153f.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://app.leg.wa.gov/ContentParts/MemberDirectory/?a=House"
+    },
+    {
+      "title": "Public source",
+      "url": "https://app.leg.wa.gov/ContentParts/MemberDirectory/?a=Senate"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Noel_Frame"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Noel_Frame"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/140153/noel-frame"
+    },
+    {
+      "title": "Public source",
+      "url": "https://leg.wa.gov/legislators/member/noel-frame"
+    },
+    {
+      "title": "Public source",
+      "url": "https://senatedemocrats.wa.gov/frame"
+    },
+    {
+      "title": "Public source",
+      "url": "https://senatedemocrats.wa.gov/frame/"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

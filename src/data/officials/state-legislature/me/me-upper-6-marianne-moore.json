@@ -1,0 +1,72 @@
+{
+  "id": "marianne-moore",
+  "name": "Marianne Moore",
+  "firstName": "Marianne",
+  "lastName": "Moore",
+  "photo": "/images/officials/state-legislature/me/marianne-moore.jpg",
+  "photoSourceUrl": "https://legislature.maine.gov/uploads/visual_edit/moore-5x7.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-6",
+  "jurisdiction": "Maine Senate",
+  "county": [
+    "Maine"
+  ],
+  "termStart": "2018-12-05",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "3 State House Station, Augusta, ME 04333",
+    "phone": "207-287-1505",
+    "email": "marianne.moore@legislature.maine.gov",
+    "website": "https://legislature.maine.gov/District-6"
+  },
+  "bio": "Marianne Moore serves as State Senator for Maine Senate District 6. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "ME",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://legislature.maine.gov/District-6"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/me/legislature/Marianne-Moore-24bd9e6e-f10d-4e0d-a4b1-72bbe45f4e0d.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://legislature.maine.gov/uploads/visual_edit/moore-5x7.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Marianne_Moore"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Marianne_Moore_(politician)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/170470/marianne-moore"
+    },
+    {
+      "title": "Public source",
+      "url": "https://legislature.maine.gov/District6"
+    },
+    {
+      "title": "Public source",
+      "url": "https://legislature.maine.gov/uploads/visual_edit/130th-senate-contact-information-as-of-31221.xlsx"
+    },
+    {
+      "title": "Public source",
+      "url": "https://legislature.maine.gov/uploads/visual_edit/131-senator-contact-information-2.xlsx"
+    },
+    {
+      "title": "Public source",
+      "url": "https://mesenategop.com/your-senators/senator-marianne-moore"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

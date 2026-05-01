@@ -1,0 +1,55 @@
+{
+  "id": "keith-ellison",
+  "name": "Keith Ellison",
+  "firstName": "Keith",
+  "lastName": "Ellison",
+  "photo": "/images/officials/state-executive/mn/keith-ellison.jpg",
+  "photoSourceUrl": "https://www.ag.state.mn.us/Photos/Keith-Ellison.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "Attorney General",
+  "district": "Minnesota",
+  "jurisdiction": "Minnesota statewide public office",
+  "county": [
+    "Minnesota"
+  ],
+  "termStart": "2019-01-07",
+  "termEnd": "2027-01-04",
+  "contactInfo": {
+    "office": "Suite 102, State Capital, 75 Dr. Martin Luther King, Jr. Blvd.; Saint Paul, MN 55155",
+    "phone": "651-296-3353",
+    "website": "https://www.ag.state.mn.us/"
+  },
+  "bio": "Keith Ellison is listed as Attorney General for Minnesota. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "MN",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.ag.state.mn.us/"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/mn/executive/Keith-Ellison-46deef0f-6af0-4cb8-b4ac-385aa505df50.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://www.ag.state.mn.us/Photos/Keith-Ellison.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.ag.state.mn.us/Office/AGBio.asp"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Keith_Ellison_(Minnesota)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.naag.org/attorney-general/keith-ellison/"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

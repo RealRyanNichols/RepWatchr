@@ -1,0 +1,72 @@
+{
+  "id": "doc-kumar",
+  "name": "Doc Kumar",
+  "firstName": "Doc",
+  "lastName": "Kumar",
+  "photo": "/images/officials/state-legislature/tn/doc-kumar.jpg",
+  "photoSourceUrl": "http://www.capitol.tn.gov/house/members/images/h66.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-66",
+  "jurisdiction": "Tennessee House of Representatives",
+  "county": [
+    "Tennessee"
+  ],
+  "termStart": "2014-11-04",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 654, Cordell Hull Building 425 Rep. John Lewis Way North, Nashville, TN 37243",
+    "phone": "615-741-2860",
+    "email": "rep.sabi.kumar@capitol.tn.gov",
+    "website": "https://wapp.capitol.tn.gov/apps/legislatorinfo/member.aspx?district=H66"
+  },
+  "bio": "Doc Kumar serves as State Representative for Tennessee House of Representatives District 66. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "TN",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://wapp.capitol.tn.gov/apps/legislatorinfo/member.aspx?district=H66"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/tn/legislature/Sabi-Doc-Kumar-57b51b23-1a38-47dd-bd4f-49954df01971.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "http://www.capitol.tn.gov/house/members/images/h66.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Sabi_Kumar"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Sabi_%22Doc%22_Kumar"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/153308/sabi-kumar"
+    },
+    {
+      "title": "Public source",
+      "url": "https://wapp.capitol.tn.gov/apps/LegislatorInfo/directory.aspx?chamber=H"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.capitol.tn.gov/house/members"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.capitol.tn.gov/house/members/"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.capitol.tn.gov/house/members/h66.html"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

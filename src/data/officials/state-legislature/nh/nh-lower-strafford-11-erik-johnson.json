@@ -1,0 +1,61 @@
+{
+  "id": "erik-johnson",
+  "name": "Erik Johnson",
+  "firstName": "Erik",
+  "lastName": "Johnson",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-Strafford 11",
+  "jurisdiction": "New Hampshire House of Representatives",
+  "county": [
+    "New Hampshire"
+  ],
+  "termStart": "2024-03-27",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "State House 107 N. Main St., Concord, NH 03301",
+    "phone": "603-271-3661",
+    "email": "erik.johnson@gc.nh.gov",
+    "website": "https://gc.nh.gov/house/members/member.aspx?pid=11134"
+  },
+  "bio": "Erik Johnson serves as State Representative for New Hampshire House of Representatives District Strafford 11. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "NH",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://gc.nh.gov/house/members/member.aspx?pid=11134"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/nh/legislature/Erik-Johnson-5a468f0d-8baf-47e9-92da-2db62373030f.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Erik_Johnson_(New_Hampshire)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Erik_Johnson_(politician)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/128196/erik-johnson"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.erjcpa.com/erjcpa"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.gencourt.state.nh.us/house/members/member.aspx?pid=11134"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/erikrjohnsoncpa"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

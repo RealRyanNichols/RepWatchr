@@ -1,0 +1,64 @@
+{
+  "id": "erik-bottcher",
+  "name": "Erik Bottcher",
+  "firstName": "Erik",
+  "lastName": "Bottcher",
+  "photo": "/images/officials/state-legislature/ny/erik-bottcher.jpg",
+  "photoSourceUrl": "https://s3.amazonaws.com/ballotpedia-api4/files/thumbs/200/300/Erik_Bottcher_20251113_123909.jpeg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-47",
+  "jurisdiction": "New York Senate",
+  "county": [
+    "New York"
+  ],
+  "termStart": "2026-02-04",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 902, Legislative Office Building, Albany, NY 12247",
+    "phone": "518-455-2451",
+    "email": "bottcher@nysenate.gov",
+    "website": "https://www.nysenate.gov/senators/erik-bottcher"
+  },
+  "bio": "Erik Bottcher serves as State Senator for New York Senate District 47. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "NY",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.nysenate.gov/senators/erik-bottcher"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ny/legislature/Erik-Bottcher-d55adf3d-ba23-47c8-a844-ee28227983c0.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://s3.amazonaws.com/ballotpedia-api4/files/thumbs/200/300/Erik_Bottcher_20251113_123909.jpeg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Erik_Bottcher"
+    },
+    {
+      "title": "Public source",
+      "url": "https://council.nyc.gov/erik-bottcher"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Erik_Bottcher"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/201433/erik-bottcher"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/ebottcher"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

@@ -1,0 +1,57 @@
+{
+  "id": "steve-rhoads",
+  "name": "Steve Rhoads",
+  "firstName": "Steve",
+  "lastName": "Rhoads",
+  "party": "R",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-5",
+  "jurisdiction": "New York Senate",
+  "county": [
+    "New York"
+  ],
+  "termStart": "2023-01-01",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 513, Legislative Office Building, Albany, NY 12247",
+    "phone": "518-455-3161",
+    "email": "rhoads@nysenate.gov",
+    "website": "https://www.nysenate.gov/senators/steven-d-rhoads"
+  },
+  "bio": "Steve Rhoads serves as State Senator for New York Senate District 5. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "NY",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.nysenate.gov/senators/steven-d-rhoads"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ny/legislature/Steven-D-Rhoads-f7d38428-2656-4fb3-ac28-2455d5533a0b.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Steven_Rhoads"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Steven_Rhoads"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/164089/steve-rhoads"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/steve-rhoads-04a6688"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.nysenate.gov/senators/steven-d-rhoads/contact"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

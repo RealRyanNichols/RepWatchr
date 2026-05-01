@@ -1,0 +1,72 @@
+{
+  "id": "todd-smola",
+  "name": "Todd Smola",
+  "firstName": "Todd",
+  "lastName": "Smola",
+  "photo": "/images/officials/state-legislature/ma/todd-smola.jpg",
+  "photoSourceUrl": "https://malegislature.gov/Legislators/Profile/170/TMS2.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-1st Hampden",
+  "jurisdiction": "Massachusetts House of Representatives",
+  "county": [
+    "Massachusetts"
+  ],
+  "termStart": "2005-01-05",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 124, State House 24 Beacon St., Boston, MA 02133",
+    "phone": "617-722-2100",
+    "email": "todd.smola@mahouse.gov",
+    "website": "https://malegislature.gov/Legislators/Profile/TMS2"
+  },
+  "bio": "Todd Smola serves as State Representative for Massachusetts House of Representatives District 1st Hampden. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "MA",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://malegislature.gov/Legislators/Profile/TMS2"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ma/legislature/Todd-M-Smola-d8895862-a95b-4982-bb2e-31c8ffa4bf57.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://malegislature.gov/Legislators/Profile/170/TMS2.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Todd_Smola"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Todd_Smola"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/35966/todd-smola"
+    },
+    {
+      "title": "Public source",
+      "url": "https://malegislature.gov/api/GeneralCourts/192/LegislativeMembers"
+    },
+    {
+      "title": "Public source",
+      "url": "https://malegislature.gov/api/GeneralCourts/192/LegislativeMembers/"
+    },
+    {
+      "title": "Public source",
+      "url": "https://malegislature.gov/api/GeneralCourts/192/LegislativeMembers/TMS2"
+    },
+    {
+      "title": "Public source",
+      "url": "https://malegislature.gov/api/GeneralCourts/193/LegislativeMembers"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

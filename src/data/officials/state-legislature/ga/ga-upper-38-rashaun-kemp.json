@@ -1,0 +1,56 @@
+{
+  "id": "rashaun-kemp",
+  "name": "RaShaun Kemp",
+  "firstName": "RaShaun",
+  "lastName": "Kemp",
+  "photo": "/images/officials/state-legislature/ga/rashaun-kemp.jpg",
+  "photoSourceUrl": "https://s3.amazonaws.com/ballotpedia-api4/files/thumbs/200/300/RashaunKemp2024.png",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-38",
+  "jurisdiction": "Georgia Senate",
+  "county": [
+    "Georgia"
+  ],
+  "termStart": "2025-01-13",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "State Capitol Room 121-E, 206 Washington St. SW, Atlanta, GA 30334",
+    "phone": "404-656-0105",
+    "email": "rashaun.kemp@senate.ga.gov",
+    "website": "https://www.legis.ga.gov/members/senate/5066"
+  },
+  "bio": "RaShaun Kemp serves as State Senator for Georgia Senate District 38. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "GA",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.legis.ga.gov/members/senate/5066"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ga/legislature/Rashaun-Kemp-069fb4fa-766b-40e4-90b7-ce96b4fa2ace.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://s3.amazonaws.com/ballotpedia-api4/files/thumbs/200/300/RashaunKemp2024.png"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Rashaun_Kemp"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/203415/rashaun-kemp"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/rashaun-kemp-177b3b3b"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

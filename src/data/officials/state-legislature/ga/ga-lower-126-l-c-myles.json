@@ -1,0 +1,53 @@
+{
+  "id": "l-c-myles",
+  "name": "L.C. Myles",
+  "firstName": "L.C.",
+  "lastName": "Myles",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-126",
+  "jurisdiction": "Georgia House of Representatives",
+  "county": [
+    "Georgia"
+  ],
+  "termStart": "2025-01-13",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 604-B, Coverdell Legislative Office Building 18 Capitol Square SW, Atlanta, GA 30334",
+    "phone": "404-656-0265",
+    "email": "lc.myles@house.ga.gov",
+    "website": "https://www.legis.ga.gov/members/house/5079"
+  },
+  "bio": "L.C. Myles serves as State Representative for Georgia House of Representatives District 126. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "GA",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.legis.ga.gov/members/house/5079"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ga/legislature/LC-Myles-1d9bb111-bf4f-4e4f-aa63-a2f6a94b566c.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/L_C_Myles_Jr."
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/L.C._Myles"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/215286/l-myles"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/l-c-myles-96578524"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

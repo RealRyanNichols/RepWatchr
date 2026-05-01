@@ -1,0 +1,64 @@
+{
+  "id": "mary-lou-marzian",
+  "name": "Mary Lou Marzian",
+  "firstName": "Mary Lou",
+  "lastName": "Marzian",
+  "photo": "/images/officials/state-legislature/ky/mary-lou-marzian.jpg",
+  "photoSourceUrl": "https://legislature.ky.gov/Legislators%20Thumbnail%20Images/house41.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-41",
+  "jurisdiction": "Kentucky House of Representatives",
+  "county": [
+    "Kentucky"
+  ],
+  "termStart": "2025-01-01",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "KY",
+    "phone": "502-541-1376",
+    "email": "marylou.marzian@kylegislature.gov",
+    "website": "https://legislature.ky.gov/Legislators/Pages/Legislator-Profile.aspx?DistrictNumber=34"
+  },
+  "bio": "Mary Lou Marzian serves as State Representative for Kentucky House of Representatives District 41. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "KY",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://legislature.ky.gov/Legislators/Pages/Legislator-Profile.aspx?DistrictNumber=34"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ky/legislature/Mary-Lou-Marzian-86342422-7a28-4631-b3d7-3912eb444ffd.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://legislature.ky.gov/Legislators%20Thumbnail%20Images/house41.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Mary_Marzian"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Mary_Lou_Marzian"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/4109/mary-marzian"
+    },
+    {
+      "title": "Public source",
+      "url": "https://legislature.ky.gov/Legislators/house-of-representatives"
+    },
+    {
+      "title": "Public source",
+      "url": "https://legislature.ky.gov/Legislators/Pages/Legislator-Profile.aspx?DistrictNumber=41"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

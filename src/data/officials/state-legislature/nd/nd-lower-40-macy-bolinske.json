@@ -1,0 +1,55 @@
+{
+  "id": "macy-bolinske",
+  "name": "Macy Bolinske",
+  "firstName": "Macy",
+  "lastName": "Bolinske",
+  "photo": "/images/officials/state-legislature/nd/macy-bolinske.jpg",
+  "photoSourceUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRozO487RdH1VF6tytGgra4INZIQ_QGs9v_7w&s",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-40",
+  "jurisdiction": "North Dakota House of Representatives",
+  "county": [
+    "North Dakota"
+  ],
+  "termStart": "2024-12-01",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "State Capitol 600 E. Boulevard Ave., Bismarck, ND 58505",
+    "email": "mbolinske@ndlegis.gov",
+    "website": "https://ndlegis.gov/biography/macy-bolinske"
+  },
+  "bio": "Macy Bolinske serves as State Representative for North Dakota House of Representatives District 40. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "ND",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://ndlegis.gov/biography/macy-bolinske"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/nd/legislature/Macy-Bolinske-be77ffd0-b287-4585-8409-5189885d180a.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRozO487RdH1VF6tytGgra4INZIQ_QGs9v_7w&s"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Macy_Bolinske"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Macy_Bolinske"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/macy-christianson-bb8a19115"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

@@ -1,0 +1,67 @@
+{
+  "id": "elaine-bowers",
+  "name": "Elaine Bowers",
+  "firstName": "Elaine",
+  "lastName": "Bowers",
+  "party": "R",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-36",
+  "jurisdiction": "Kansas Senate",
+  "county": [
+    "Kansas"
+  ],
+  "termStart": "2013-01-14",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "email": "elaine.bowers@senate.ks.gov",
+    "website": "https://www.kslegislature.gov/li/b2025_26/members/sen_bowers_elaine_1/"
+  },
+  "bio": "Elaine Bowers serves as State Senator for Kansas Senate District 36. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "KS",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.kslegislature.gov/li/b2025_26/members/sen_bowers_elaine_1/"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ks/legislature/Elaine-Bowers-416dbc91-431f-4dc6-8c8a-ca2db2cd3300.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Elaine_Bowers"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Elaine_Bowers"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/68331/elaine-bowers"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.kslegislature.gov/li/b2025_26/members/sen_bowers_elaine_1"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.kslegislature.org/li/api/v11/rev-1/members/sen_bowers_elaine_1"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.kslegislature.org/li/api/v11/rev-1/members/sen_bowers_elaine_1/"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.kslegislature.org/li/b2023_24/members/sen_bowers_elaine_1"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.kslegislature.org/li/b2023_24/members/sen_bowers_elaine_1/"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

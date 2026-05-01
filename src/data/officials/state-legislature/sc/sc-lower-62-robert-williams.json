@@ -1,0 +1,61 @@
+{
+  "id": "robert-williams",
+  "name": "Robert Williams",
+  "firstName": "Robert",
+  "lastName": "Williams",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-62",
+  "jurisdiction": "South Carolina House of Representatives",
+  "county": [
+    "South Carolina"
+  ],
+  "termStart": "",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 328C, Blatt Building P.O. Box 11867, Columbia, SC 29201",
+    "phone": "803-734-3142",
+    "email": "robertwilliams@schouse.gov",
+    "website": "https://scstatehouse.gov/member.php?code=1942045222"
+  },
+  "bio": "Robert Williams serves as State Representative for South Carolina House of Representatives District 62. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "SC",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://scstatehouse.gov/member.php?code=1942045222"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/sc/legislature/Robert-Q-Williams-1b83cb36-84ea-44b1-b234-14ca1151c7a4.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Robert_Williams_(South_Carolina_Representative)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Robert_Q._Williams"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/56499/robert-williams"
+    },
+    {
+      "title": "Public source",
+      "url": "https://scstatehouse.gov/member.php?chamber=H"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.scstatehouse.gov/member.php?chamber=H"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.scstatehouse.gov/member.php?code=1942045222"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

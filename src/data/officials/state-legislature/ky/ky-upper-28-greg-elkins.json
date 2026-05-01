@@ -1,0 +1,58 @@
+{
+  "id": "greg-elkins",
+  "name": "Greg Elkins",
+  "firstName": "Greg",
+  "lastName": "Elkins",
+  "photo": "/images/officials/state-legislature/ky/greg-elkins.jpg",
+  "photoSourceUrl": "https://legislature.ky.gov/Legislators%20Thumbnail%20Images/senate128.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-28",
+  "jurisdiction": "Kentucky Senate",
+  "county": [
+    "Kentucky"
+  ],
+  "termStart": "2023-06-08",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "email": "greg.elkins@kylegislature.gov",
+    "website": "https://legislature.ky.gov/Legislators/Pages/Legislator-Profile.aspx?DistrictNumber=128"
+  },
+  "bio": "Greg Elkins serves as State Senator for Kentucky Senate District 28. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "KY",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://legislature.ky.gov/Legislators/Pages/Legislator-Profile.aspx?DistrictNumber=128"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ky/legislature/Greg-Elkins-139d004c-7a19-4153-a58b-919a1b70180e.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://legislature.ky.gov/Legislators%20Thumbnail%20Images/senate128.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Greg_Elkins"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Greg_Elkins"
+    },
+    {
+      "title": "Public source",
+      "url": "https://legislature.ky.gov/Legislators/senate"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/greg-elkins-8177252b"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

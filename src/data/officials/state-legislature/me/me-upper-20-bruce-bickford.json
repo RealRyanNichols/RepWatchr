@@ -1,0 +1,72 @@
+{
+  "id": "bruce-bickford",
+  "name": "Bruce Bickford",
+  "firstName": "Bruce",
+  "lastName": "Bickford",
+  "photo": "/images/officials/state-legislature/me/bruce-bickford.jpg",
+  "photoSourceUrl": "https://legislature.maine.gov/house/house/Repository/MemberProfiles/6512eb18-497f-48cf-8e14-5c46c8827181_bickba.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-20",
+  "jurisdiction": "Maine Senate",
+  "county": [
+    "Maine"
+  ],
+  "termStart": "2024-12-03",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "3 State House Station, Augusta, ME 04333",
+    "phone": "207-287-1505",
+    "email": "bruce.bickford@legislature.maine.gov",
+    "website": "https://legislature.maine.gov/District20"
+  },
+  "bio": "Bruce Bickford serves as State Senator for Maine Senate District 20. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "ME",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://legislature.maine.gov/District20"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/me/legislature/Bruce-A-Bickford-0b3965de-8fe2-42b4-bc21-115d6b2b470f.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://legislature.maine.gov/house/house/Repository/MemberProfiles/6512eb18-497f-48cf-8e14-5c46c8827181_bickba.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Bruce_Bickford"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Bruce_Bickford_(politician)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/103524/bruce-bickford"
+    },
+    {
+      "title": "Public source",
+      "url": "https://legislature.maine.gov/house/house/MemberProfiles/Details/16"
+    },
+    {
+      "title": "Public source",
+      "url": "https://legislature.maine.gov/house/house/MemberProfiles/ListAlpha"
+    },
+    {
+      "title": "Public source",
+      "url": "https://mesenategop.com/your-senators/senator-bruce-bickford"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/bruce-bickford-6b373160"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

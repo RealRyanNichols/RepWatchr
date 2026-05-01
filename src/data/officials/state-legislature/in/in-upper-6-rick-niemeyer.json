@@ -1,0 +1,72 @@
+{
+  "id": "rick-niemeyer",
+  "name": "Rick Niemeyer",
+  "firstName": "Rick",
+  "lastName": "Niemeyer",
+  "photo": "/images/officials/state-legislature/in/rick-niemeyer.jpg",
+  "photoSourceUrl": "https://cdn.zephyrcms.com/c19965ba-e156-4348-bf41-366a289532e4/-/progressive/yes/-/format/jpeg/-/scale_crop/200x300/center/-/stretch/off/niemeyer-website.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-6",
+  "jurisdiction": "Indiana Senate",
+  "county": [
+    "Indiana"
+  ],
+  "termStart": "2014-11-05",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "200 W. Washington St., Indianapolis, IN 46204",
+    "phone": "317-232-9400",
+    "email": "s6@iga.in.gov",
+    "website": "https://iga.in.gov/legislative/2021/legislators/legislator_rick_niemeyer_1109"
+  },
+  "bio": "Rick Niemeyer serves as State Senator for Indiana Senate District 6. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "IN",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://iga.in.gov/legislative/2021/legislators/legislator_rick_niemeyer_1109"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/in/legislature/Rick-Niemeyer-0b243d61-c607-4711-bc54-aecc21281540.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://cdn.zephyrcms.com/c19965ba-e156-4348-bf41-366a289532e4/-/progressive/yes/-/format/jpeg/-/scale_crop/200x300/center/-/stretch/off/niemeyer-website.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://api.iga.in.gov/2021/legislators/rick_niemeyer_1109"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Rick_Niemeyer"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Rick_Niemeyer"
+    },
+    {
+      "title": "Public source",
+      "url": "https://iga.in.gov/legislative/2022/legislators/legislator_rick_niemeyer_1109"
+    },
+    {
+      "title": "Public source",
+      "url": "https://iga.in.gov/legislative/2022/legislators/legislator_rick_niemeyer_1109/"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/131192/rick-niemeyer"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.indianasenaterepublicans.com/niemeyer"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

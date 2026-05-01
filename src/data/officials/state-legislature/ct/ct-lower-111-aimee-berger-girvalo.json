@@ -1,0 +1,64 @@
+{
+  "id": "aimee-berger-girvalo",
+  "name": "Aimee Berger-Girvalo",
+  "firstName": "Aimee",
+  "lastName": "Berger-Girvalo",
+  "photo": "/images/officials/state-legislature/ct/aimee-berger-girvalo.jpg",
+  "photoSourceUrl": "http://www2.housedems.ct.gov/Berger-Girvalo/images/Berger-Girvalo_HS.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-111",
+  "jurisdiction": "Connecticut House of Representatives",
+  "county": [
+    "Connecticut"
+  ],
+  "termStart": "2021-01-06",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 2303, Legislative Office Building 300 Capitol Ave., Hartford, CT 06106",
+    "phone": "800-842-8267",
+    "email": "aimee.berger-girvalo@cga.ct.gov",
+    "website": "https://cga.ct.gov/asp/CGABillStatus/CGAMemberBills.asp?dist_code=%27111%27&dist_name=Berger-Girvalo,%20Aimee"
+  },
+  "bio": "Aimee Berger-Girvalo serves as State Representative for Connecticut House of Representatives District 111. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "CT",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://cga.ct.gov/asp/CGABillStatus/CGAMemberBills.asp?dist_code=%27111%27&dist_name=Berger-Girvalo,%20Aimee"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ct/legislature/Aimee-Berger-Girvalo-b43c741a-89b2-4e46-abfc-1d75f26189fe.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "http://www2.housedems.ct.gov/Berger-Girvalo/images/Berger-Girvalo_HS.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "ftp://ftp.cga.ct.gov/pub/data/LegislatorDatabase.csv"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Aimee_Berger-Girvalo"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Aimee_Berger-Girvalo"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/185749/aimee-berger-girvalo"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.housedems.ct.gov/Berger-Girvalo"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

@@ -1,0 +1,72 @@
+{
+  "id": "john-barrett",
+  "name": "John Barrett",
+  "firstName": "John",
+  "lastName": "Barrett",
+  "photo": "/images/officials/state-legislature/ma/john-barrett.jpg",
+  "photoSourceUrl": "https://malegislature.gov/Legislators/Profile/170/J_B1.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-1st Berkshire",
+  "jurisdiction": "Massachusetts House of Representatives",
+  "county": [
+    "Massachusetts"
+  ],
+  "termStart": "2017-11-15",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 277, State House 24 Beacon St., Boston, MA 02133",
+    "phone": "617-722-2012",
+    "email": "john.barrett@mahouse.gov",
+    "website": "https://malegislature.gov/Legislators/Profile/J_B1"
+  },
+  "bio": "John Barrett serves as State Representative for Massachusetts House of Representatives District 1st Berkshire. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "MA",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://malegislature.gov/Legislators/Profile/J_B1"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ma/legislature/John-Barrett-da8051b7-de05-4c30-9d37-5d7223906356.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://malegislature.gov/Legislators/Profile/170/J_B1.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/John_Barrett_III"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/John_Barrett_(Massachusetts_politician)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://malegislature.gov/api/GeneralCourts/192/LegislativeMembers"
+    },
+    {
+      "title": "Public source",
+      "url": "https://malegislature.gov/api/GeneralCourts/192/LegislativeMembers/"
+    },
+    {
+      "title": "Public source",
+      "url": "https://malegislature.gov/api/GeneralCourts/192/LegislativeMembers/J_B1"
+    },
+    {
+      "title": "Public source",
+      "url": "https://malegislature.gov/api/GeneralCourts/193/LegislativeMembers"
+    },
+    {
+      "title": "Public source",
+      "url": "https://malegislature.gov/api/GeneralCourts/193/LegislativeMembers/"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

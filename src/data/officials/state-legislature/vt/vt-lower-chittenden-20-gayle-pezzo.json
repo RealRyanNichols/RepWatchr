@@ -1,0 +1,48 @@
+{
+  "id": "gayle-pezzo",
+  "name": "Gayle Pezzo",
+  "firstName": "Gayle",
+  "lastName": "Pezzo",
+  "photo": "/images/officials/state-legislature/vt/gayle-pezzo.jpg",
+  "photoSourceUrl": "https://lccvermont.org/wp-content/uploads/2024/07/IMG_0519-gayle-pezzo-225x300.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-Chittenden-20",
+  "jurisdiction": "Vermont House of Representatives",
+  "county": [
+    "Vermont"
+  ],
+  "termStart": "2025-01-08",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Vermont State House 115 State St., Montpelier, VT 05633",
+    "phone": "802-828-2228",
+    "email": "gpezzo@leg.state.vt.us",
+    "website": "https://legislature.vermont.gov/people/single/2026/40412"
+  },
+  "bio": "Gayle Pezzo serves as State Representative for Vermont House of Representatives District Chittenden-20. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "VT",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://legislature.vermont.gov/people/single/2026/40412"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/vt/legislature/Gayle-Pezzo-0aa1e822-d69d-4417-a26e-0ca6935b6b8b.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://lccvermont.org/wp-content/uploads/2024/07/IMG_0519-gayle-pezzo-225x300.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Gayle_Pezzo"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

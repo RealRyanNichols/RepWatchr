@@ -1,0 +1,56 @@
+{
+  "id": "frances-jackson",
+  "name": "Frances Jackson",
+  "firstName": "Frances",
+  "lastName": "Jackson",
+  "photo": "/images/officials/state-legislature/nc/frances-jackson.jpg",
+  "photoSourceUrl": "https://www.ncleg.gov/Members/MemberImage/H/803/Low",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-45",
+  "jurisdiction": "North Carolina House of Representatives",
+  "county": [
+    "North Carolina"
+  ],
+  "termStart": "2023-01-01",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 1017, North Carolina Legislative Building 16 W. Jones St., Raleigh, NC 27601",
+    "phone": "919-733-9892",
+    "email": "frances.jackson@ncleg.gov",
+    "website": "https://www.ncleg.gov/Members/Biography/H/803"
+  },
+  "bio": "Frances Jackson serves as State Representative for North Carolina House of Representatives District 45. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "NC",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.ncleg.gov/Members/Biography/H/803"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/nc/legislature/Frances-Jackson-PhD-1a32e77b-9880-467c-88c8-6aeb738f6525.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://www.ncleg.gov/Members/MemberImage/H/803/Low"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Frances_Jackson_(North_Carolina)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/frances-jackson-phd-31484871"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.ncleg.gov/Members/MemberTable/H"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

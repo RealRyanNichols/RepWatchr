@@ -1,0 +1,72 @@
+{
+  "id": "sue-prentiss",
+  "name": "Sue Prentiss",
+  "firstName": "Sue",
+  "lastName": "Prentiss",
+  "photo": "/images/officials/state-legislature/nh/sue-prentiss.jpg",
+  "photoSourceUrl": "https://storage.googleapis.com/enview-dev-public-general/legislative-people-photos/93792.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-5",
+  "jurisdiction": "New Hampshire Senate",
+  "county": [
+    "New Hampshire"
+  ],
+  "termStart": "2020-12-02",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 102-A, Legislative Office Building 33 N. State St., Concord, NH 03301",
+    "phone": "603-271-3091",
+    "email": "suzanne.prentiss@gc.nh.gov",
+    "website": "https://gc.nh.gov/Senate/members/webpages/district05.aspx"
+  },
+  "bio": "Sue Prentiss serves as State Senator for New Hampshire Senate District 5. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "NH",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://gc.nh.gov/Senate/members/webpages/district05.aspx"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/nh/legislature/Suzanne-M-Prentiss-de206392-deba-4ecf-96a3-33494c415417.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://storage.googleapis.com/enview-dev-public-general/legislative-people-photos/93792.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Suzanne_Prentiss"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Suzanne_Prentiss"
+    },
+    {
+      "title": "Public source",
+      "url": "https://gencourt.state.nh.us/downloads/Members.txt"
+    },
+    {
+      "title": "Public source",
+      "url": "https://gencourt.state.nh.us/downloads/members.txt"
+    },
+    {
+      "title": "Public source",
+      "url": "https://gencourt.state.nh.us/Senate/members/webpages/district05.aspx"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.gencourt.state.nh.us/Senate/members/webpages/district05.aspx"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/suzanne-prentiss-961414a4"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

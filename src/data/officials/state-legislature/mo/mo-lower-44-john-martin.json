@@ -1,0 +1,48 @@
+{
+  "id": "john-martin",
+  "name": "John Martin",
+  "firstName": "John",
+  "lastName": "Martin",
+  "photo": "/images/officials/state-legislature/mo/john-martin.jpg",
+  "photoSourceUrl": "https://static.wixstatic.com/media/5e062e_e41671d0d6714f5cb9bbb25925e34d15~mv2.jpg/v1/crop/x_172,y_24,w_1449,h_1427/fill/w_397,h_391,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/DSC_6591%20copy%20(1)_edited.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-44",
+  "jurisdiction": "Missouri House of Representatives",
+  "county": [
+    "Missouri"
+  ],
+  "termStart": "2025-01-08",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 201-D, 201 W. Capitol Ave., Jefferson City, MO 65101",
+    "phone": "573-751-1169",
+    "email": "john.martin@house.mo.gov",
+    "website": "https://house.mo.gov/MemberDetails.aspx?&district=044"
+  },
+  "bio": "John Martin serves as State Representative for Missouri House of Representatives District 44. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "MO",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://house.mo.gov/MemberDetails.aspx?&district=044"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/mo/legislature/John-Martin-6e5b11bc-fc9c-4822-9a82-1a5a59771c00.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://static.wixstatic.com/media/5e062e_e41671d0d6714f5cb9bbb25925e34d15~mv2.jpg/v1/crop/x_172,y_24,w_1449,h_1427/fill/w_397,h_391,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/DSC_6591%20copy%20(1)_edited.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/John_Martin_(Missouri)"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

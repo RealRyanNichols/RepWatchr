@@ -1,0 +1,75 @@
+{
+  "id": "malcolm-kenyatta",
+  "name": "Malcolm Kenyatta",
+  "firstName": "Malcolm",
+  "lastName": "Kenyatta",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-181",
+  "jurisdiction": "Pennsylvania House of Representatives",
+  "county": [
+    "Pennsylvania"
+  ],
+  "termStart": "2018-12-01",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 300, Irvis Office Building P.O. Box 202181, Harrisburg, PA 17120",
+    "phone": "717-787-9471",
+    "email": "mkenyatta@pahouse.net",
+    "website": "https://www.legis.state.pa.us/cfdocs/legis/home/member_information/House_bio.cfm?id=1860",
+    "socialMedia": {
+      "x": "https://x.com/RepKenyatta",
+      "twitter": "https://x.com/RepKenyatta",
+      "facebook": "https://facebook.com/RepKenyatta",
+      "youtube": "https://youtube.com/playlist?list=PLjtqNtfs0bgWV5sfi05EqUSILVtdNkaLc"
+    }
+  },
+  "bio": "Malcolm Kenyatta serves as State Representative for Pennsylvania House of Representatives District 181. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "PA",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.legis.state.pa.us/cfdocs/legis/home/member_information/House_bio.cfm?id=1860"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/pa/legislature/Malcolm-Kenyatta-96711736-a47d-4bd6-bcc3-92297ec01516.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Malcolm_Kenyatta"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Malcolm_Kenyatta"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/179573/malcolm-kenyatta"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.legis.state.pa.us/cfdocs/legis/home/member_information/mbrList.cfm?body=H&sort=alpha"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.legis.state.pa.us/cfdocs/legis/home/member_information/representatives_alpha.cfm"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/malcolm-kenyatta-b5384156"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.pahouse.com/kenyatta"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.palegis.us/house/members/bio/1860/rep-kenyatta"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

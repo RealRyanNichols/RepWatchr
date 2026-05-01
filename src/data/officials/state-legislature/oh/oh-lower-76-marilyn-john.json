@@ -1,0 +1,61 @@
+{
+  "id": "marilyn-john",
+  "name": "Marilyn John",
+  "firstName": "Marilyn",
+  "lastName": "John",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-76",
+  "jurisdiction": "Ohio House of Representatives",
+  "county": [
+    "Ohio"
+  ],
+  "termStart": "2023-01-01",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "77 S. High St. 14th Floor, Columbus, OH 43215",
+    "phone": "614-466-5802",
+    "email": "rep76@ohiohouse.gov",
+    "website": "https://ohiohouse.gov/marilyn-s-john"
+  },
+  "bio": "Marilyn John serves as State Representative for Ohio House of Representatives District 76. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "OH",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://ohiohouse.gov/marilyn-s-john"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/oh/legislature/Marilyn-S-John-e4f9416c-1043-4737-899e-31410e94af1d.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Marilyn_John"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/161969/marilyn-john"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ohiohouse.gov/members/marilyn-john"
+    },
+    {
+      "title": "member details page",
+      "url": "https://ohiohouse.gov/members/marilyn-s-john"
+    },
+    {
+      "title": "member list page",
+      "url": "https://www.legislature.ohio.gov/legislators/house-directory"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/marilyn-john-78679a14a"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

@@ -1,0 +1,49 @@
+{
+  "id": "amanda-cook",
+  "name": "Amanda Cook",
+  "firstName": "Amanda",
+  "lastName": "Cook",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-60",
+  "jurisdiction": "North Carolina House of Representatives",
+  "county": [
+    "North Carolina"
+  ],
+  "termStart": "2025-11-18",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 2223, 16 W. Jones St., Raleigh, NC 27601",
+    "phone": "919-733-5825",
+    "email": "amanda.cook@ncleg.gov",
+    "website": "https://www.ncleg.gov/Members/Biography/H/1002"
+  },
+  "bio": "Amanda Cook serves as State Representative for North Carolina House of Representatives District 60. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "NC",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.ncleg.gov/Members/Biography/H/1002"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/nc/legislature/Amanda-Cook-5f309927-de7a-4fd4-930b-a369dd10fec8.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Amanda_Cook_(North_Carolina)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Amanda_Cook_(politician)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/amanda-cook-8159725"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

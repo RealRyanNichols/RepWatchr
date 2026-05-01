@@ -1,0 +1,70 @@
+{
+  "id": "angelia-graves",
+  "name": "Angelia Graves",
+  "firstName": "Angelia",
+  "lastName": "Graves",
+  "party": "D",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-21",
+  "jurisdiction": "Virginia Senate",
+  "county": [
+    "Virginia"
+  ],
+  "termStart": "2024-01-10",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 507, General Assembly Building P.O. Box 396, Richmond, VA 23218",
+    "phone": "804-698-7521",
+    "email": "senatorwilliamsgraves@senate.virginia.gov",
+    "website": "https://apps.senate.virginia.gov/Senator/memberpage.php?id=S130",
+    "socialMedia": {
+      "x": "https://x.com/AWGNorfolk",
+      "twitter": "https://x.com/AWGNorfolk",
+      "facebook": "https://facebook.com/awgnorfolk"
+    }
+  },
+  "bio": "Angelia Graves serves as State Senator for Virginia Senate District 21. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "VA",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://apps.senate.virginia.gov/Senator/memberpage.php?id=S130"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/va/legislature/Angelia-W-Graves-f747c790-f609-4da1-b125-73f1807e1430.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Angelia_Williams_Graves"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Angelia_Williams_Graves"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/132686/angelia-williams-graves"
+    },
+    {
+      "title": "Public source",
+      "url": "https://lis.virginia.gov/cgi-bin/legp604.exe?221+mbr+H331"
+    },
+    {
+      "title": "Public source",
+      "url": "https://lis.virginia.gov/cgi-bin/legp604.exe?241+mbr+S130"
+    },
+    {
+      "title": "Public source",
+      "url": "https://virginiageneralassembly.gov/house/members/members.php?id=H0331"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/homesbyangelia"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

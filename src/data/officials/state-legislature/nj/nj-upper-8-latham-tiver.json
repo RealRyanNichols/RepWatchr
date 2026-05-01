@@ -1,0 +1,53 @@
+{
+  "id": "latham-tiver",
+  "name": "Latham Tiver",
+  "firstName": "Latham",
+  "lastName": "Tiver",
+  "party": "R",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-8",
+  "jurisdiction": "New Jersey Senate",
+  "county": [
+    "New Jersey"
+  ],
+  "termStart": "2024-01-09",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "P.O. Box 068 State House, 145 W. State St., Trenton, NJ 08625",
+    "phone": "609-847-3905",
+    "email": "sentiver@njleg.org",
+    "website": "https://www.njleg.state.nj.us/legislative-roster/464/senator-tiver"
+  },
+  "bio": "Latham Tiver serves as State Senator for New Jersey Senate District 8. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "NJ",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.njleg.state.nj.us/legislative-roster/464/senator-tiver"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/nj/legislature/Latham-Tiver-0e989cd5-91f8-4595-8346-bbac4f3d2c9e.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Latham_Tiver"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Latham_Tiver"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/175222/latham-tiver"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.senatenj.com/201/Latham-Tiver---District-8"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

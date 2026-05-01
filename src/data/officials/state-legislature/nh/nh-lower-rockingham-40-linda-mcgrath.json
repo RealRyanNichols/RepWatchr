@@ -1,0 +1,60 @@
+{
+  "id": "linda-mcgrath",
+  "name": "Linda McGrath",
+  "firstName": "Linda",
+  "lastName": "McGrath",
+  "photo": "/images/officials/state-legislature/nh/linda-mcgrath.jpg",
+  "photoSourceUrl": "https://www.citizenscount.org/sites/default/files/styles/profile_140x176/public/2024-06/Linda-McGrath.jpg?itok=ntCU6dCr",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-Rockingham 40",
+  "jurisdiction": "New Hampshire House of Representatives",
+  "county": [
+    "New Hampshire"
+  ],
+  "termStart": "2024-12-04",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "State House 107 N. Main St., Concord, NH 03301",
+    "phone": "603-498-9984",
+    "email": "linda.mcgrath@gc.nh.gov",
+    "website": "https://gc.nh.gov/house/members/member.aspx?pid=11421"
+  },
+  "bio": "Linda McGrath serves as State Representative for New Hampshire House of Representatives District Rockingham 40. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "NH",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://gc.nh.gov/house/members/member.aspx?pid=11421"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/nh/legislature/Linda-McGrath-4b68fc91-27b5-4065-af3d-b541877116f5.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://www.citizenscount.org/sites/default/files/styles/profile_140x176/public/2024-06/Linda-McGrath.jpg?itok=ntCU6dCr"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Linda_McGrath"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Linda_McGrath"
+    },
+    {
+      "title": "Public source",
+      "url": "https://gencourt.state.nh.us/house/members/member.aspx?pid=11421"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/219251/linda-mcgrath"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

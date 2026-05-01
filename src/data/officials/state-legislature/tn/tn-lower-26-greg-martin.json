@@ -1,0 +1,72 @@
+{
+  "id": "greg-martin",
+  "name": "Greg Martin",
+  "firstName": "Greg",
+  "lastName": "Martin",
+  "photo": "/images/officials/state-legislature/tn/greg-martin.jpg",
+  "photoSourceUrl": "https://www.capitol.tn.gov/house/members/images/h26.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-26",
+  "jurisdiction": "Tennessee House of Representatives",
+  "county": [
+    "Tennessee"
+  ],
+  "termStart": "2022-04-04",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 586, Cordell Hull Building 425 Rep. John Lewis Way North, Nashville, TN 37243",
+    "phone": "615-741-2548",
+    "email": "rep.greg.martin@capitol.tn.gov",
+    "website": "https://wapp.capitol.tn.gov/apps/legislatorinfo/member.aspx?district=H26"
+  },
+  "bio": "Greg Martin serves as State Representative for Tennessee House of Representatives District 26. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "TN",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://wapp.capitol.tn.gov/apps/legislatorinfo/member.aspx?district=H26"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/tn/legislature/Greg-Martin-3fb15ce3-c606-4e25-bc6f-1c374bb52cf6.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://www.capitol.tn.gov/house/members/images/h26.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Greg_Martin_(Tennessee)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Greg_Martin_(politician)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/187538/greg-martin"
+    },
+    {
+      "title": "Public source",
+      "url": "https://wapp.capitol.tn.gov/apps/LegislatorInfo/directory.aspx?chamber=H"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.capitol.tn.gov/house/members"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.capitol.tn.gov/house/members/"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.capitol.tn.gov/house/members/h26.html"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

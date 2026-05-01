@@ -1,0 +1,61 @@
+{
+  "id": "steve-brunk",
+  "name": "Steve Brunk",
+  "firstName": "Steve",
+  "lastName": "Brunk",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-85",
+  "jurisdiction": "Kansas House of Representatives",
+  "county": [
+    "Kansas"
+  ],
+  "termStart": "2025-06-24",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "State Capitol Room 352-S, Kansas  Building 300 SW 10th St., Topeka, KS 66612",
+    "phone": "785-296-7473",
+    "email": "steve.brunk@house.ks.gov",
+    "website": "https://www.kslegislature.gov/li/b2025_26/members/rep_brunk_steve_1/"
+  },
+  "bio": "Steve Brunk serves as State Representative for Kansas House of Representatives District 85. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "KS",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.kslegislature.gov/li/b2025_26/members/rep_brunk_steve_1/"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ks/legislature/Steve-Brunk-434a4028-6a95-4e5c-8f5e-98c8762f6570.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Steven_Brunk"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Steven_Brunk"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/34567/steve-brunk"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.kslegislature.gov/li/b2025_26/members/rep_brunk_steve_1"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.kslegislature.org/li/api/v7/rev-1/members/rep_brunk_steve_1"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/steve-brunk-66464312b"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

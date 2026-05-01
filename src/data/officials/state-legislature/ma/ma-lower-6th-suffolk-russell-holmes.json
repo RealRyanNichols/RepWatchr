@@ -1,0 +1,72 @@
+{
+  "id": "russell-holmes",
+  "name": "Russell Holmes",
+  "firstName": "Russell",
+  "lastName": "Holmes",
+  "photo": "/images/officials/state-legislature/ma/russell-holmes.jpg",
+  "photoSourceUrl": "https://malegislature.gov/Legislators/Profile/170/REH1.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-6th Suffolk",
+  "jurisdiction": "Massachusetts House of Representatives",
+  "county": [
+    "Massachusetts"
+  ],
+  "termStart": "2011-01-05",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 254, State House 24 Beacon St., Boston, MA 02133",
+    "phone": "617-722-2220",
+    "email": "russell.holmes@mahouse.gov",
+    "website": "https://malegislature.gov/Legislators/Profile/REH1"
+  },
+  "bio": "Russell Holmes serves as State Representative for Massachusetts House of Representatives District 6th Suffolk. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "MA",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://malegislature.gov/Legislators/Profile/REH1"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ma/legislature/Russell-E-Holmes-078692f2-2afe-4aa1-a320-d4747edacbbb.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://malegislature.gov/Legislators/Profile/170/REH1.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Russell_Holmes"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Russell_Holmes"
+    },
+    {
+      "title": "Public source",
+      "url": "https://malegislature.gov/api/GeneralCourts/192/LegislativeMembers"
+    },
+    {
+      "title": "Public source",
+      "url": "https://malegislature.gov/api/GeneralCourts/192/LegislativeMembers/"
+    },
+    {
+      "title": "Public source",
+      "url": "https://malegislature.gov/api/GeneralCourts/192/LegislativeMembers/REH1"
+    },
+    {
+      "title": "Public source",
+      "url": "https://malegislature.gov/api/GeneralCourts/193/LegislativeMembers"
+    },
+    {
+      "title": "Public source",
+      "url": "https://malegislature.gov/api/GeneralCourts/193/LegislativeMembers/"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

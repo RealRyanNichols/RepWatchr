@@ -1,0 +1,69 @@
+{
+  "id": "craig-fishbein",
+  "name": "Craig Fishbein",
+  "firstName": "Craig",
+  "lastName": "Fishbein",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-90",
+  "jurisdiction": "Connecticut House of Representatives",
+  "county": [
+    "Connecticut"
+  ],
+  "termStart": "2016-11-18",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 4200, Legislative Office Building 300 Capitol Ave., Hartford, CT 06106",
+    "phone": "860-240-8700",
+    "email": "craig.fishbein@housegop.ct.gov",
+    "website": "https://cga.ct.gov/asp/CGABillStatus/CGAMemberBills.asp?dist_code=%27090%27&dist_name=Fishbein,%20Craig%20C."
+  },
+  "bio": "Craig Fishbein serves as State Representative for Connecticut House of Representatives District 90. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "CT",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://cga.ct.gov/asp/CGABillStatus/CGAMemberBills.asp?dist_code=%27090%27&dist_name=Fishbein,%20Craig%20C."
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ct/legislature/Craig-C-Fishbein-02ce0fa3-ac25-42dd-9f5e-ee44b7e9d542.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "ftp://ftp.cga.ct.gov/pub/data/LegislatorDatabase.csv"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Craig_Fishbein"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Craig_C._Fishbein"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/130445/craig-fishbein"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.cthousegop.com/Fishbein/main"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.cthousegop.com/Fishbein/main/"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.fishbeinlaw.com/attorneys/craig-c-fishbein"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/cfishbein"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

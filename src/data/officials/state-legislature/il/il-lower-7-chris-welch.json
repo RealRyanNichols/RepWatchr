@@ -1,0 +1,72 @@
+{
+  "id": "chris-welch",
+  "name": "Chris Welch",
+  "firstName": "Chris",
+  "lastName": "Welch",
+  "photo": "/images/officials/state-legislature/il/chris-welch.jpg",
+  "photoSourceUrl": "https://cdn.ilga.gov/assets/img/members/{5D419B94-66B4-4F3B-86F1-BFF37B3FA55C}.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-7",
+  "jurisdiction": "Illinois House of Representatives",
+  "county": [
+    "Illinois"
+  ],
+  "termStart": "2013-01-11",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 300, Capitol Building, Springfield, IL 62706",
+    "phone": "217-782-5350",
+    "email": "repwelch@emanuelchriswelch.com",
+    "website": "https://ilga.gov/house/Rep.asp?GA=103&MemberID=3071"
+  },
+  "bio": "Chris Welch serves as State Representative for Illinois House of Representatives District 7. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "IL",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://ilga.gov/house/Rep.asp?GA=103&MemberID=3071"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/il/legislature/Emanuel-Chris-Welch-00cc6415-b2a7-45ab-8f69-be5c3ca6752a.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://cdn.ilga.gov/assets/img/members/{5D419B94-66B4-4F3B-86F1-BFF37B3FA55C}.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ancelglink.com/Attorney/Emanuel-C-Welch"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Chris_Welch"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Emanuel_Chris_Welch"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ilga.gov/house/default.asp?GA=103"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/58207/chris-welch"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.emanuelchriswelch.com"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.ilga.gov/House/Members/Details/3298"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

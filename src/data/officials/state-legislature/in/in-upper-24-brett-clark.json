@@ -1,0 +1,60 @@
+{
+  "id": "brett-clark",
+  "name": "Brett Clark",
+  "firstName": "Brett",
+  "lastName": "Clark",
+  "photo": "/images/officials/state-legislature/in/brett-clark.jpg",
+  "photoSourceUrl": "https://cdn.myocv.com/ocvapps/a106646122/files/654a84bda94ee-6526d35518084-ProfilewithLogo2x.png",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-24",
+  "jurisdiction": "Indiana Senate",
+  "county": [
+    "Indiana"
+  ],
+  "termStart": "2024-11-06",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "200 W. Washington St., Indianapolis, IN 46204",
+    "phone": "800-382-9467",
+    "email": "s24@iga.in.gov",
+    "website": "https://www.indianasenaterepublicans.com/clark"
+  },
+  "bio": "Brett Clark serves as State Senator for Indiana Senate District 24. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "IN",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.indianasenaterepublicans.com/clark"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/in/legislature/Brett-Clark-08d4ca65-7f96-4df8-80cf-33b1cb156a47.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://cdn.myocv.com/ocvapps/a106646122/files/654a84bda94ee-6526d35518084-ProfilewithLogo2x.png"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Brett_A._Clark_(Indiana)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Brett_Clark_(politician)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/214702/brett-clark"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/brett-clark-5a9990265"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

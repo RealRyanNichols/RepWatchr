@@ -1,0 +1,71 @@
+{
+  "id": "joe-pittman",
+  "name": "Joe Pittman",
+  "firstName": "Joe",
+  "lastName": "Pittman",
+  "party": "R",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-41",
+  "jurisdiction": "Pennsylvania Senate",
+  "county": [
+    "Pennsylvania"
+  ],
+  "termStart": "2019-06-10",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 350, Main Capitol Senate Box 203041, Harrisburg, PA 17120",
+    "phone": "717-787-8724",
+    "website": "https://senatorpittman.com/",
+    "socialMedia": {
+      "facebook": "https://facebook.com/SenatorPittman"
+    }
+  },
+  "bio": "Joe Pittman serves as State Senator for Pennsylvania Senate District 41. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "PA",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://senatorpittman.com/"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/pa/legislature/Joe-Pittman-722f324f-db47-4ce2-9cbc-93f29ae38158.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Joe_Pittman"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Joe_Pittman_(politician)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/186375/joe-pittman"
+    },
+    {
+      "title": "Public source",
+      "url": "https://senatorpittman.com"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.legis.state.pa.us/cfdocs/legis/home/member_information/mbrList.cfm?body=S&sort=alpha"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.legis.state.pa.us/cfdocs/legis/home/member_information/Senate_bio.cfm?id=1870"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.legis.state.pa.us/cfdocs/legis/home/member_information/senators_alpha.cfm"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.palegis.us/senate/members/bio/1870/sen-pittman"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

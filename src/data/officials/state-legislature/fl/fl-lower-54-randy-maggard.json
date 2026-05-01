@@ -1,0 +1,61 @@
+{
+  "id": "randy-maggard",
+  "name": "Randy Maggard",
+  "firstName": "Randy",
+  "lastName": "Maggard",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-54",
+  "jurisdiction": "Florida House of Representatives",
+  "county": [
+    "Florida"
+  ],
+  "termStart": "2022-11-08",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 322, The Capitol 402 S. Monroe St., Tallahassee, FL 32399",
+    "phone": "850-717-5054",
+    "email": "randy.maggard@flhouse.gov",
+    "website": "https://myfloridahouse.gov/Sections/Representatives/details.aspx?MemberId=4758&LegislativeTermId=90"
+  },
+  "bio": "Randy Maggard serves as State Representative for Florida House of Representatives District 54. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "FL",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://myfloridahouse.gov/Sections/Representatives/details.aspx?MemberId=4758&LegislativeTermId=90"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/fl/legislature/Randall-Scott-Maggard-2a415c08-da66-402b-ada6-93390a5df820.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Randy_Maggard"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.flhouse.gov/Sections/Representatives/details.aspx?MemberId=4758"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/randy-maggard-32b19125"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.myfloridahouse.gov/Representatives"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.myfloridahouse.gov/Sections/Representatives/details.aspx?MemberId=4758"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.myfloridahouse.gov/Sections/Representatives/details.aspx?MemberId=4758&LegislativeTermId=88"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

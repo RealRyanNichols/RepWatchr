@@ -1,0 +1,68 @@
+{
+  "id": "kayse-jama",
+  "name": "Kayse Jama",
+  "firstName": "Kayse",
+  "lastName": "Jama",
+  "photo": "/images/officials/state-legislature/or/kayse-jama.jpg",
+  "photoSourceUrl": "https://www.oregonlegislature.gov/Jama/PublishingImages/member_photo.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-24",
+  "jurisdiction": "Oregon Senate",
+  "county": [
+    "Oregon"
+  ],
+  "termStart": "2021-01-11",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room S-223, 900 Court St. NE, Salem, OR 97301",
+    "phone": "503-986-1724",
+    "email": "sen.jamakayse@oregonlegislature.gov",
+    "website": "https://www.oregonlegislature.gov/jama"
+  },
+  "bio": "Kayse Jama serves as State Senator for Oregon Senate District 24. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "OR",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.oregonlegislature.gov/jama"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/or/legislature/Kayse-Jama-7532bf1f-c85e-4683-a401-ca87af088e5e.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://www.oregonlegislature.gov/Jama/PublishingImages/member_photo.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://api.oregonlegislature.gov/odata/odataservice.svc/LegislativeSessions('2022R1')/Legislators"
+    },
+    {
+      "title": "Public source",
+      "url": "https://api.oregonlegislature.gov/odata/odataservice.svc/LegislativeSessions('2023R1')/Legislators"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Kayse_Jama"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Kayse_Jama"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/kayse-jama-5aa17652"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.oregonlegislature.gov/Jama"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

@@ -1,0 +1,55 @@
+{
+  "id": "dave-yost",
+  "name": "Dave Yost",
+  "firstName": "Dave",
+  "lastName": "Yost",
+  "photo": "/images/officials/state-executive/oh/dave-yost.jpg",
+  "photoSourceUrl": "https://www.naag.org/wp-content/uploads/2020/09/ag-OH-yost.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "Attorney General",
+  "district": "Ohio",
+  "jurisdiction": "Ohio statewide public office",
+  "county": [
+    "Ohio"
+  ],
+  "termStart": "2019-01-14",
+  "termEnd": "2027-01-11",
+  "contactInfo": {
+    "office": "State Office Tower, 30 E. Broad St.; Columbus, OH 43266-0410",
+    "phone": "614-466-4320",
+    "website": "https://www.ohioattorneygeneral.gov/"
+  },
+  "bio": "Dave Yost is listed as Attorney General for Ohio. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "OH",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.ohioattorneygeneral.gov/"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/oh/executive/Dave-Yost-b8ac5c3b-66e6-47f4-b8c2-1fd148a1f041.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://www.naag.org/wp-content/uploads/2020/09/ag-OH-yost.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.ohioattorneygeneral.gov/About-AG/Dave-Yost"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Dave_Yost"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.naag.org/attorney-general/dave-yost/"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

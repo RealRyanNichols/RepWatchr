@@ -1,0 +1,72 @@
+{
+  "id": "brad-barrett",
+  "name": "Brad Barrett",
+  "firstName": "Brad",
+  "lastName": "Barrett",
+  "photo": "/images/officials/state-legislature/in/brad-barrett.jpg",
+  "photoSourceUrl": "https://www.indianahouserepublicans.com/clientuploads/directory/members/Main_List/Barrett_mainlist3.png",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-56",
+  "jurisdiction": "Indiana House of Representatives",
+  "county": [
+    "Indiana"
+  ],
+  "termStart": "2018-11-07",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "200 W. Washington St., Indianapolis, IN 46204",
+    "phone": "317-232-9600",
+    "email": "h56@iga.in.gov",
+    "website": "https://iga.in.gov/legislative/2019/legislators/legislator_bradford_barrett_1/"
+  },
+  "bio": "Brad Barrett serves as State Representative for Indiana House of Representatives District 56. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "IN",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://iga.in.gov/legislative/2019/legislators/legislator_bradford_barrett_1/"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/in/legislature/Brad-Barrett-6629fcea-f482-4e63-872d-d2f8734502ca.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://www.indianahouserepublicans.com/clientuploads/directory/members/Main_List/Barrett_mainlist3.png"
+    },
+    {
+      "title": "Public source",
+      "url": "https://api.iga.in.gov/2021/legislators/bradford_barrett_1"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Bradford_Barrett"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Bradford_Barrett"
+    },
+    {
+      "title": "Public source",
+      "url": "https://iga.in.gov/legislative/2021/legislators/legislator_bradford_barrett_1"
+    },
+    {
+      "title": "Public source",
+      "url": "https://iga.in.gov/legislative/2024/legislators/legislator_bradford_barrett_1"
+    },
+    {
+      "title": "Public source",
+      "url": "https://iga.in.gov/legislative/2026/legislators/legislator_bradford_barrett_1"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/178180/bradford-barrett"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

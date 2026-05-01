@@ -1,0 +1,61 @@
+{
+  "id": "gilda-cobb-hunter",
+  "name": "Gilda Cobb-Hunter",
+  "firstName": "Gilda",
+  "lastName": "Cobb-Hunter",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-95",
+  "jurisdiction": "South Carolina House of Representatives",
+  "county": [
+    "South Carolina"
+  ],
+  "termStart": "2022-11-14",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 309C, Blatt Building P.O. Box 11867, Columbia, SC 29201",
+    "phone": "803-734-2809",
+    "email": "gildacobbhunter@schouse.gov",
+    "website": "https://scstatehouse.gov/member.php?code=0372727228"
+  },
+  "bio": "Gilda Cobb-Hunter serves as State Representative for South Carolina House of Representatives District 95. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "SC",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://scstatehouse.gov/member.php?code=0372727228"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/sc/legislature/Gilda-Cobb-Hunter-b494d1f6-d98e-4a8c-895c-6cb73ec892b8.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Gilda_Cobb-Hunter"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Gilda_Cobb-Hunter"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/4005/gilda-cobb-hunter"
+    },
+    {
+      "title": "Public source",
+      "url": "https://scstatehouse.gov/member.php?chamber=H"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.scstatehouse.gov/member.php?chamber=H"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.scstatehouse.gov/member.php?code=0372727228"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

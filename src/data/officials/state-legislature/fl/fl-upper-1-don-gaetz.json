@@ -1,0 +1,60 @@
+{
+  "id": "don-gaetz",
+  "name": "Don Gaetz",
+  "firstName": "Don",
+  "lastName": "Gaetz",
+  "photo": "/images/officials/state-legislature/fl/don-gaetz.jpg",
+  "photoSourceUrl": "http://www.flsenate.gov/PublishedContent/Senators/2014-2016/Photos/s01_4804.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-1",
+  "jurisdiction": "Florida Senate",
+  "county": [
+    "Florida"
+  ],
+  "termStart": "2024-11-05",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 405, Senate Building 404 S. Monroe St., Tallahassee, FL 32399",
+    "phone": "850-487-5001",
+    "email": "gaetz.don.web@flsenate.gov",
+    "website": "https://www.flsenate.gov/Senators/s1"
+  },
+  "bio": "Don Gaetz serves as State Senator for Florida Senate District 1. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "FL",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.flsenate.gov/Senators/s1"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/fl/legislature/Don-Gaetz-c45cbed2-9b2e-4507-a6d1-3f960d330c34.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "http://www.flsenate.gov/PublishedContent/Senators/2014-2016/Photos/s01_4804.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Don_Gaetz"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Don_Gaetz"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.flsenate.gov/Senators"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.flsenate.gov/Senators/"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

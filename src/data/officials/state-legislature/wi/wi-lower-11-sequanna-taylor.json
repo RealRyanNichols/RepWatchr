@@ -1,0 +1,62 @@
+{
+  "id": "sequanna-taylor",
+  "name": "Sequanna Taylor",
+  "firstName": "Sequanna",
+  "lastName": "Taylor",
+  "photo": "/images/officials/state-legislature/wi/sequanna-taylor.jpg",
+  "photoSourceUrl": "https://s3.amazonaws.com/ballotpedia-api4/files/thumbs/200/300/IMG_5830-min.JPG",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "Assemblymember",
+  "district": "HD-11",
+  "jurisdiction": "Wisconsin State Assembly",
+  "county": [
+    "Wisconsin"
+  ],
+  "termStart": "2025-01-06",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "email": "rep.taylor@legis.wisconsin.gov",
+    "website": "https://docs.legis.wisconsin.gov/2025/legislators/assembly/2880"
+  },
+  "bio": "Sequanna Taylor serves as Assemblymember for Wisconsin State Assembly District 11. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "WI",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://docs.legis.wisconsin.gov/2025/legislators/assembly/2880"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/wi/legislature/Sequanna-Taylor-a3db3b70-1e27-44a4-a5ae-025450ae4d3d.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://s3.amazonaws.com/ballotpedia-api4/files/thumbs/200/300/IMG_5830-min.JPG"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Sequanna_Taylor"
+    },
+    {
+      "title": "Public source",
+      "url": "https://county.milwaukee.gov/EN/Board-of-Supervisors/Members/Sequanna-Taylor-5th-District"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Sequanna_Taylor"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/174654/sequanna-taylor"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/sequanna-taylor-9547a486"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

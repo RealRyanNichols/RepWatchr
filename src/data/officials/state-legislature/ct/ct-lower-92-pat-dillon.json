@@ -1,0 +1,68 @@
+{
+  "id": "pat-dillon",
+  "name": "Pat Dillon",
+  "firstName": "Pat",
+  "lastName": "Dillon",
+  "photo": "/images/officials/state-legislature/ct/pat-dillon.jpg",
+  "photoSourceUrl": "http://www2.housedems.ct.gov/Dillon/images/Dillon_HS.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-92",
+  "jurisdiction": "Connecticut House of Representatives",
+  "county": [
+    "Connecticut"
+  ],
+  "termStart": "1985-01-09",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 4019, Legislative Office Building 300 Capitol Ave., Hartford, CT 06106",
+    "phone": "800-842-8267",
+    "email": "patricia.dillon@cga.ct.gov",
+    "website": "https://cga.ct.gov/asp/CGABillStatus/CGAMemberBills.asp?dist_code=%27092%27&dist_name=Dillon,%20Patricia%20A."
+  },
+  "bio": "Pat Dillon serves as State Representative for Connecticut House of Representatives District 92. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "CT",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://cga.ct.gov/asp/CGABillStatus/CGAMemberBills.asp?dist_code=%27092%27&dist_name=Dillon,%20Patricia%20A."
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ct/legislature/Patricia-A-Dillon-23d08488-597c-4c35-b41a-f8aef1c264c4.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "http://www2.housedems.ct.gov/Dillon/images/Dillon_HS.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "ftp://ftp.cga.ct.gov/pub/data/LegislatorDatabase.csv"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Patricia_Dillon"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Patricia_Dillon"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/7169/patricia-dillon"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.housedems.ct.gov/Dillon"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/patricia-dillon-8b7ab914"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

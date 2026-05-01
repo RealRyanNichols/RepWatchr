@@ -1,0 +1,72 @@
+{
+  "id": "kevin-christie",
+  "name": "Kevin Christie",
+  "firstName": "Kevin",
+  "lastName": "Christie",
+  "photo": "/images/officials/state-legislature/vt/kevin-christie.jpg",
+  "photoSourceUrl": "https://legislature.vermont.gov/Documents/Legislators/KChristie.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-Windsor-6",
+  "jurisdiction": "Vermont House of Representatives",
+  "county": [
+    "Vermont"
+  ],
+  "termStart": "2023-01-04",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Vermont State House 115 State St., Montpelier, VT 05633",
+    "phone": "802-828-2228",
+    "email": "kchristie@leg.state.vt.us",
+    "website": "https://legislature.vermont.gov/Documents/SmallMaps/WDR-4-2.pdf"
+  },
+  "bio": "Kevin Christie serves as State Representative for Vermont House of Representatives District Windsor-6. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "VT",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://legislature.vermont.gov/Documents/SmallMaps/WDR-4-2.pdf"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/vt/legislature/Kevin-Coach-Christie-dfe297f7-6d88-48d5-8b81-f2605f791de0.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://legislature.vermont.gov/Documents/Legislators/KChristie.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Kevin_Christie"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Kevin_Christie_(politician)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/69304/kevin-christie"
+    },
+    {
+      "title": "Public source",
+      "url": "https://legislature.vermont.gov/people/loadAll/2020"
+    },
+    {
+      "title": "Public source",
+      "url": "https://legislature.vermont.gov/people/loadAll/2022"
+    },
+    {
+      "title": "Public source",
+      "url": "https://legislature.vermont.gov/people/single/2020/15774"
+    },
+    {
+      "title": "Public source",
+      "url": "https://legislature.vermont.gov/people/single/2022/15774"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

@@ -1,0 +1,68 @@
+{
+  "id": "eric-phillips",
+  "name": "Eric Phillips",
+  "firstName": "Eric",
+  "lastName": "Phillips",
+  "photo": "/images/officials/state-legislature/va/eric-phillips.jpg",
+  "photoSourceUrl": "https://memdata.virginiageneralassembly.gov/images/display_image/H0384",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "Delegate",
+  "district": "HD-48",
+  "jurisdiction": "Virginia House of Delegates",
+  "county": [
+    "Virginia"
+  ],
+  "termStart": "2024-01-10",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 702, General Assembly Building 201 N. 9th St., Richmond, VA 23219",
+    "phone": "804-698-1048",
+    "email": "delephillips@house.virginia.gov",
+    "website": "https://house.vga.virginia.gov/members/H0384"
+  },
+  "bio": "Eric Phillips serves as Delegate for Virginia House of Delegates District 48. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "VA",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://house.vga.virginia.gov/members/H0384"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/va/legislature/Eric-Phillips-704cecad-ef53-44e4-ad55-6c7a7e385e5c.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://memdata.virginiageneralassembly.gov/images/display_image/H0384"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Eric_Phillips"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Eric_Phillips_(politician)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/214181/eric-phillips"
+    },
+    {
+      "title": "Public source",
+      "url": "https://lis.virginia.gov/cgi-bin/legp604.exe?241+mbr+H384"
+    },
+    {
+      "title": "Public source",
+      "url": "https://virginiageneralassembly.gov/house/members/members.php?id=H0384"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/nuagainfurnitureservices"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

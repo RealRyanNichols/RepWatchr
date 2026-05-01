@@ -1,0 +1,53 @@
+{
+  "id": "emilio-carlo",
+  "name": "Emilio Carlo",
+  "firstName": "Emilio",
+  "lastName": "Carlo",
+  "party": "NP",
+  "level": "state",
+  "position": "Territorial Representative",
+  "district": "20",
+  "jurisdiction": "Puerto Rico House of Representatives",
+  "county": [
+    "Puerto Rico"
+  ],
+  "termStart": "2025-01-02",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "El Capitolio, Avenida Constituci\u00f3n P.O. Box 9022228, San Juan, PR 00902",
+    "phone": "787-724-0313",
+    "email": "ecarlo@camara.pr.gov",
+    "website": "https://camara.registrok12.com/team/emilio-carlo-acosta/"
+  },
+  "bio": "Emilio Carlo serves as Territorial Representative for Puerto Rico House of Representatives District 20. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "PR",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://camara.registrok12.com/team/emilio-carlo-acosta/"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/pr/legislature/Emilio-Carlo-Acosta-f65881be-58b6-45b2-b513-f2ccdb8831b4.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Emilio_Carlo"
+    },
+    {
+      "title": "Public source",
+      "url": "https://camara.registrok12.com/team/emilio-carlo-acosta"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.camara.pr.gov/team/emilio-carlo"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.camara.pr.gov/team/emilio-carlo-acosta"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

@@ -1,0 +1,41 @@
+{
+  "id": "william-galvin",
+  "name": "William Galvin",
+  "firstName": "William",
+  "lastName": "Galvin",
+  "party": "D",
+  "level": "state",
+  "position": "Chief Election Officer",
+  "district": "Massachusetts",
+  "jurisdiction": "Massachusetts statewide public office",
+  "county": [
+    "Massachusetts"
+  ],
+  "termStart": "",
+  "termEnd": "2027-01-06",
+  "contactInfo": {
+    "office": "State House Rm 337; 24 Beacon St.; Boston, MA 02133-1099",
+    "phone": "617-727-9180",
+    "email": "cis@sec.state.ma.us",
+    "website": "https://www.sec.state.ma.us",
+    "socialMedia": {
+      "x": "https://x.com/SecretaryOfMass",
+      "twitter": "https://x.com/SecretaryOfMass"
+    }
+  },
+  "bio": "William Galvin is listed as Chief Election Officer for Massachusetts. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "MA",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.sec.state.ma.us"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ma/executive/William-Galvin-ead7f955-7ff0-4ac0-bc29-35688074b79f.yml"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

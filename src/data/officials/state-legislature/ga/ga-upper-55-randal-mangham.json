@@ -1,0 +1,60 @@
+{
+  "id": "randal-mangham",
+  "name": "Randal Mangham",
+  "firstName": "Randal",
+  "lastName": "Mangham",
+  "photo": "/images/officials/state-legislature/ga/randal-mangham.jpg",
+  "photoSourceUrl": "https://s3.amazonaws.com/ballotpedia-api4/files/thumbs/200/300/Randal_Mangham.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-55",
+  "jurisdiction": "Georgia Senate",
+  "county": [
+    "Georgia"
+  ],
+  "termStart": "2025-01-13",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 320-A, Coverdell Legislative Office Building 18 Capitol Square SW, Atlanta, GA 30334",
+    "phone": "404-657-4640",
+    "email": "randal.mangham@senate.ga.gov",
+    "website": "https://www.legis.ga.gov/members/senate/161"
+  },
+  "bio": "Randal Mangham serves as State Senator for Georgia Senate District 55. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "GA",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.legis.ga.gov/members/senate/161"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ga/legislature/Randal-Mangham-8798a822-fee8-4546-bcdd-455f788bef44.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://s3.amazonaws.com/ballotpedia-api4/files/thumbs/200/300/Randal_Mangham.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Randal_Mangham"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Randal_Mangham"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/31488/randal-mangham"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/randal-mangham-90488111"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

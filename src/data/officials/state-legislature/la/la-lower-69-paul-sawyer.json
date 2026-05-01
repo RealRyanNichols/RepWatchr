@@ -1,0 +1,52 @@
+{
+  "id": "paul-sawyer",
+  "name": "Paul Sawyer",
+  "firstName": "Paul",
+  "lastName": "Sawyer",
+  "photo": "/images/officials/state-legislature/la/paul-sawyer.jpg",
+  "photoSourceUrl": "https://static.wixstatic.com/media/9361fe_da91e496f1294126bbe3a43b182b5045~mv2.jpg/v1/fill/w_1159,h_772,fp_0.44_0.28,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/623291664_122110353027206892_603986649064719459_n.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-69",
+  "jurisdiction": "Louisiana House of Representatives",
+  "county": [
+    "Louisiana"
+  ],
+  "termStart": "2026-03-23",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "P.O. Box 94062 900 N. 3rd St., Baton Rouge, LA 70804",
+    "phone": "225-342-6945",
+    "email": "hse069@legis.la.gov",
+    "website": "https://house.louisiana.gov/H_Reps/members?ID=69"
+  },
+  "bio": "Paul Sawyer serves as State Representative for Louisiana House of Representatives District 69. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "LA",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://house.louisiana.gov/H_Reps/members?ID=69"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/la/legislature/Paul-Sawyer-a05f602f-6eb8-4668-9f25-f438adb5faea.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://static.wixstatic.com/media/9361fe_da91e496f1294126bbe3a43b182b5045~mv2.jpg/v1/fill/w_1159,h_772,fp_0.44_0.28,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/623291664_122110353027206892_603986649064719459_n.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Paul_Sawyer"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/paulsawyer"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

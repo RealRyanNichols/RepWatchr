@@ -1,0 +1,72 @@
+{
+  "id": "john-hoffman",
+  "name": "John Hoffman",
+  "firstName": "John",
+  "lastName": "Hoffman",
+  "photo": "/images/officials/state-legislature/mn/john-hoffman.jpg",
+  "photoSourceUrl": "https://www.senate.mn/graphics/36Hoffman.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-34",
+  "jurisdiction": "Minnesota Senate",
+  "county": [
+    "Minnesota"
+  ],
+  "termStart": "2023-01-03",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 2111, Minnesota Senate Building 95 University Ave. West, St. Paul, MN 55155",
+    "phone": "651-296-4154",
+    "email": "sen.john.hoffman@senate.mn",
+    "website": "https://www.senate.mn/members/member_bio.html?mem_id=1205"
+  },
+  "bio": "John Hoffman serves as State Senator for Minnesota Senate District 34. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "MN",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.senate.mn/members/member_bio.html?mem_id=1205"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/mn/legislature/John-A-Hoffman-b31cb55a-94ea-4f44-a4b9-8003b32c749a.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://www.senate.mn/graphics/36Hoffman.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/John_Hoffman_(Minnesota)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/John_Hoffman_(Minnesota_politician)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/John_Hoffman_(politician)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/140901/john-hoffman"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.johnhoffmanmn.com"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.johnhoffmanmn.com/about-john/biography"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/jhoffman1"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

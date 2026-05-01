@@ -1,0 +1,72 @@
+{
+  "id": "kirk-cullimore",
+  "name": "Kirk Cullimore",
+  "firstName": "Kirk",
+  "lastName": "Cullimore",
+  "photo": "/images/officials/state-legislature/ut/kirk-cullimore.jpg",
+  "photoSourceUrl": "https://le.utah.gov/images/legislator/CULLIKA.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-19",
+  "jurisdiction": "Utah Senate",
+  "county": [
+    "Utah"
+  ],
+  "termStart": "2023-01-01",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "P.O. Box 145115 350 N. State St., Suite 320, Salt Lake City, UT 84114",
+    "phone": "801-538-1035",
+    "email": "kcullimore@le.utah.gov",
+    "website": "https://disclosures.utah.gov/Search/PublicSearch/FolderDetails/1415051"
+  },
+  "bio": "Kirk Cullimore serves as State Senator for Utah Senate District 19. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "UT",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://disclosures.utah.gov/Search/PublicSearch/FolderDetails/1415051"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ut/legislature/Kirk-A-Cullimore-c421a26f-c1c1-4398-be94-d77d312ea3fe.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://le.utah.gov/images/legislator/CULLIKA.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Kirk_Cullimore"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Kirk_Cullimore_Jr."
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/182112/kirk-cullimore-jr"
+    },
+    {
+      "title": "Public source",
+      "url": "https://le.utah.gov/data/legislators.json"
+    },
+    {
+      "title": "Public source",
+      "url": "https://senate.utah.gov/sen/CULLIKA"
+    },
+    {
+      "title": "Public source",
+      "url": "https://senate.utah.gov/sen/CULLIKA/"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/kirk-cullimore-b4309714"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

@@ -1,0 +1,65 @@
+{
+  "id": "kanani-souza",
+  "name": "Kanani Souza",
+  "firstName": "Kanani",
+  "lastName": "Souza",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-43",
+  "jurisdiction": "Hawaii House of Representatives",
+  "county": [
+    "Hawaii"
+  ],
+  "termStart": "2022-11-08",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "State Capitol Room 330, 415 S. Beretania St., Honolulu, HI 96813",
+    "phone": "808-586-8465",
+    "email": "repsouza@capitol.hawaii.gov",
+    "website": "https://www.capitol.hawaii.gov/legislature/memberpage.aspx?member=288"
+  },
+  "bio": "Kanani Souza serves as State Representative for Hawaii House of Representatives District 43. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "HI",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.capitol.hawaii.gov/legislature/memberpage.aspx?member=288"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/hi/legislature/Kanani-Souza-207b309f-9e03-4834-85cb-083725f7a7ab.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Kanani_Souza"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Kanani_Souza"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/193736/kanani-souza"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.capitol.hawaii.gov/legislature/memberpage.aspx?member=288&year=2023"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.capitol.hawaii.gov/legislature/memberpage.aspx?member=288&year=2024"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.capitol.hawaii.gov/members/legislators.aspx"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/kanani-souza-30a66567"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

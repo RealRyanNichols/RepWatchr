@@ -1,0 +1,61 @@
+{
+  "id": "ryan-fecteau",
+  "name": "Ryan Fecteau",
+  "firstName": "Ryan",
+  "lastName": "Fecteau",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-132",
+  "jurisdiction": "Maine House of Representatives",
+  "county": [
+    "Maine"
+  ],
+  "termStart": "2024-12-03",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 333, House Democratic Office 2 State House Station, Augusta, ME 04333",
+    "phone": "800-423-2900",
+    "email": "ryan.fecteau@legislature.maine.gov",
+    "website": "https://legislature.maine.gov/house/house/MemberProfiles/Details/63"
+  },
+  "bio": "Ryan Fecteau serves as State Representative for Maine House of Representatives District 132. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "ME",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://legislature.maine.gov/house/house/MemberProfiles/Details/63"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/me/legislature/Ryan-M-Fecteau-b890f601-0023-4d87-acf7-a4db5cbf2b62.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Ryan_Fecteau"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Ryan_Fecteau"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/151397/ryan-fecteau"
+    },
+    {
+      "title": "Public source",
+      "url": "https://legislature.maine.gov/house/house/MemberProfiles/ListAlpha"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/ryanfecteau"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.maine.gov/housedems/node/4087"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

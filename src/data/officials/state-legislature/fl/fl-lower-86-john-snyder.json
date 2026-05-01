@@ -1,0 +1,57 @@
+{
+  "id": "john-snyder",
+  "name": "John Snyder",
+  "firstName": "John",
+  "lastName": "Snyder",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-86",
+  "jurisdiction": "Florida House of Representatives",
+  "county": [
+    "Florida"
+  ],
+  "termStart": "2022-11-08",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 222, The Capitol 402 S. Monroe St., Tallahassee, FL 32399",
+    "phone": "850-717-5086",
+    "email": "john.snyder@flhouse.gov",
+    "website": "https://myfloridahouse.gov/Sections/Representatives/details.aspx?MemberId=4787&LegislativeTermId=90"
+  },
+  "bio": "John Snyder serves as State Representative for Florida House of Representatives District 86. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "FL",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://myfloridahouse.gov/Sections/Representatives/details.aspx?MemberId=4787&LegislativeTermId=90"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/fl/legislature/John-Snyder-5055fc3a-3cdd-4f4d-addb-23634fd1df92.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/John_Snyder"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.flhouse.gov/Sections/Representatives/details.aspx?MemberId=4787"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/john-snyder-9838494a"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.myfloridahouse.gov/Sections/Representatives/details.aspx?MemberId=4787"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.myfloridahouse.gov/Sections/Representatives/details.aspx?MemberId=4787&LegislativeTermId=89"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

@@ -1,0 +1,57 @@
+{
+  "id": "bob-culver",
+  "name": "Bob Culver",
+  "firstName": "Bob",
+  "lastName": "Culver",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-4",
+  "jurisdiction": "Oklahoma House of Representatives",
+  "county": [
+    "Oklahoma"
+  ],
+  "termStart": "2020-11-16",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 504, 2300 N. Lincoln Blvd., Oklahoma City, OK 73105",
+    "phone": "405-557-7408",
+    "email": "bob.culver@okhouse.gov",
+    "website": "https://www.okhouse.gov/Members/Contact.aspx?District=4"
+  },
+  "bio": "Bob Culver serves as State Representative for Oklahoma House of Representatives District 4. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "OK",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.okhouse.gov/Members/Contact.aspx?District=4"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ok/legislature/Bob-Culver-246cfe54-edbd-4844-9bdc-0213c4b501e9.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Bob_Ed_Culver"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Bob_Ed_Culver_Jr."
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/24481/bob-ed-culver"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/bobedculver"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.okhouse.gov/representatives/bob-culver"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

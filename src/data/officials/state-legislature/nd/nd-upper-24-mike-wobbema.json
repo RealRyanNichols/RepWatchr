@@ -1,0 +1,70 @@
+{
+  "id": "mike-wobbema",
+  "name": "Mike Wobbema",
+  "firstName": "Mike",
+  "lastName": "Wobbema",
+  "photo": "/images/officials/state-legislature/nd/mike-wobbema.jpg",
+  "photoSourceUrl": "https://www.ndlegis.gov/sites/default/files/styles/member_list_photo/public/person/photo/mwobbema2023.jpg?itok=-RzV9t-2",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-24",
+  "jurisdiction": "North Dakota Senate",
+  "county": [
+    "North Dakota"
+  ],
+  "termStart": "2020-12-01",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "email": "mwobbema@ndlegis.gov",
+    "website": "https://ndlegis.gov/biography/michael-a-wobbema"
+  },
+  "bio": "Mike Wobbema serves as State Senator for North Dakota Senate District 24. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "ND",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://ndlegis.gov/biography/michael-a-wobbema"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/nd/legislature/Michael-A-Wobbema-a5665c05-d239-4297-a3dc-08557280d5f8.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://www.ndlegis.gov/sites/default/files/styles/member_list_photo/public/person/photo/mwobbema2023.jpg?itok=-RzV9t-2"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Mike_Wobbema"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Michael_Wobbema"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.legis.nd.gov/assembly/67-2021/members/members-by-district"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.legis.nd.gov/assembly/67-2021/members/senate/senator-michael-a-wobbema"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/michael-wobbema-67929010"
+    },
+    {
+      "title": "members list page",
+      "url": "https://www.ndlegis.gov/assembly/68-2023/regular/members?combine=&field_legis_chamber_target_id=All&field_legis_district_target_id=All&field_legislator_party_target_id=All&page=8"
+    },
+    {
+      "title": "members list page",
+      "url": "https://www.ndlegis.gov/assembly/68-2023/regular/members?page=8"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

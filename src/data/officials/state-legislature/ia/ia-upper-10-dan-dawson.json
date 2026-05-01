@@ -1,0 +1,72 @@
+{
+  "id": "dan-dawson",
+  "name": "Dan Dawson",
+  "firstName": "Dan",
+  "lastName": "Dawson",
+  "photo": "/images/officials/state-legislature/ia/dan-dawson.jpg",
+  "photoSourceUrl": "https://www.legis.iowa.gov/photo?action=getPhoto&ga=91&pid=18072",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-10",
+  "jurisdiction": "Iowa Senate",
+  "county": [
+    "Iowa"
+  ],
+  "termStart": "2023-01-03",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "1007 E. Grand Ave., Des Moines, IA 50319",
+    "phone": "515-281-3371",
+    "email": "dan.dawson@legis.iowa.gov",
+    "website": "https://www.iowasenaterepublicans.com/senators/dan-dawson/"
+  },
+  "bio": "Dan Dawson serves as State Senator for Iowa Senate District 10. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "IA",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.iowasenaterepublicans.com/senators/dan-dawson/"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ia/legislature/Dan-Dawson-79384252-69ca-43c7-bda1-46b6abe5873e.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://www.legis.iowa.gov/photo?action=getPhoto&ga=91&pid=18072"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Dan_Dawson"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Dan_Dawson_(politician)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://iowasenaterepublicans.com/senators/dan-dawson"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/168617/dan-dawson"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.legis.iowa.gov/legislators/legislator?ga=88&personID=18072"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.legis.iowa.gov/legislators/legislator?ga=89&personID=18072"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.legis.iowa.gov/legislators/legislator?ga=90&personID=18072"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

@@ -1,0 +1,56 @@
+{
+  "id": "elaine-sena-cortez",
+  "name": "Elaine Sena Cortez",
+  "firstName": "Elaine",
+  "lastName": "Sena Cortez",
+  "photo": "/images/officials/state-legislature/nm/elaine-sena-cortez.jpg",
+  "photoSourceUrl": "https://images.squarespace-cdn.com/content/v1/6101dbe38853cb26aaf1d169/482eeab7-b7c0-4dfc-bc83-1b4ecc0e66b4/945A8275-Edit.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-62",
+  "jurisdiction": "New Mexico House of Representatives",
+  "county": [
+    "New Mexico"
+  ],
+  "termStart": "2025-01-01",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 203G, New Mexico Capitol Annex 325 Don Gaspar Ave., Santa Fe, NM 87501",
+    "phone": "505-986-4450",
+    "email": "elaine.senacortez@nmlegis.gov",
+    "website": "https://www.nmlegis.gov/Members/Legislator?SponCode=HSEEL"
+  },
+  "bio": "Elaine Sena Cortez serves as State Representative for New Mexico House of Representatives District 62. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "NM",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.nmlegis.gov/Members/Legislator?SponCode=HSEEL"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/nm/legislature/Elaine-Sena-Cortez-810e1619-ebae-4139-be1e-778e252a09b0.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://images.squarespace-cdn.com/content/v1/6101dbe38853cb26aaf1d169/482eeab7-b7c0-4dfc-bc83-1b4ecc0e66b4/945A8275-Edit.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Elaine_Sena_Cortez"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/dr-elaine-sena-cortez-117b37211"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.senacortez.com"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

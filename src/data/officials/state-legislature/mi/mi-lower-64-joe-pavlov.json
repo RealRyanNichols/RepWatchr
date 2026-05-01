@@ -1,0 +1,45 @@
+{
+  "id": "joe-pavlov",
+  "name": "Joe Pavlov",
+  "firstName": "Joe",
+  "lastName": "Pavlov",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-64",
+  "jurisdiction": "Michigan House of Representatives",
+  "county": [
+    "Michigan"
+  ],
+  "termStart": "2025-01-01",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room N-998, Anderson House Office Building 124 N. Capitol Ave., Lansing, MI 48933",
+    "phone": "517-373-1795",
+    "email": "josephpavlov@house.mi.gov",
+    "website": "https://gophouse.org/member/RepJosephGPavlov"
+  },
+  "bio": "Joe Pavlov serves as State Representative for Michigan House of Representatives District 64. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "MI",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://gophouse.org/member/RepJosephGPavlov"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/mi/legislature/Joe-Pavlov-65bb5257-9a90-4b14-a7bd-aee9efd0ab55.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Joseph_Pavlov"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Joseph_G._Pavlov"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

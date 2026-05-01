@@ -1,0 +1,69 @@
+{
+  "id": "andrew-chesney",
+  "name": "Andrew Chesney",
+  "firstName": "Andrew",
+  "lastName": "Chesney",
+  "party": "R",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-45",
+  "jurisdiction": "Illinois Senate",
+  "county": [
+    "Illinois"
+  ],
+  "termStart": "2023-01-11",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Stratton Office Building Section A, Office J, Springfield, IL 62706",
+    "phone": "217-782-0180",
+    "email": "chesney@ilsenategop.org",
+    "website": "https://ilga.gov/house/Rep.asp?GA=103&MemberID=3157"
+  },
+  "bio": "Andrew Chesney serves as State Senator for Illinois Senate District 45. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "IL",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://ilga.gov/house/Rep.asp?GA=103&MemberID=3157"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/il/legislature/Andrew-S-Chesney-9def23d3-81e9-4baf-b0c8-eeb4e5587778.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Andrew_Chesney"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Andrew_Chesney"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ilga.gov/house/default.asp?GA=103"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ilga.gov/senate/default.asp?GA=103"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ilga.gov/senate/Senator.asp?GA=103&MemberID=3215"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/177213/andrew-chesney"
+    },
+    {
+      "title": "Public source",
+      "url": "https://senatorchesney.com"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.ilga.gov/Senate/Members/Details/3410"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

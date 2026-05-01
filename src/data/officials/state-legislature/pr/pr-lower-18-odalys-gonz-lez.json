@@ -1,0 +1,49 @@
+{
+  "id": "odalys-gonz-lez",
+  "name": "Odalys Gonz\u00e1lez",
+  "firstName": "Odalys",
+  "lastName": "Gonz\u00e1lez",
+  "party": "NP",
+  "level": "state",
+  "position": "Territorial Representative",
+  "district": "18",
+  "jurisdiction": "Puerto Rico House of Representatives",
+  "county": [
+    "Puerto Rico"
+  ],
+  "termStart": "2025-01-02",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "El Capitolio, Avenida Constituci\u00f3n P.O. Box 9022228, San Juan, PR 00902",
+    "phone": "787-725-9925",
+    "email": "ogonzlaez@camara.pr.gov",
+    "website": "https://camara.registrok12.com/team/odalys-gonzalez-gonzalez/"
+  },
+  "bio": "Odalys Gonz\u00e1lez serves as Territorial Representative for Puerto Rico House of Representatives District 18. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "PR",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://camara.registrok12.com/team/odalys-gonzalez-gonzalez/"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/pr/legislature/Odalys-Gonzlez-26bc7931-4a5f-4f37-b79d-c050a4e2545a.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Odalys_Gonz%C3%A1lez_Gonz%C3%A1lez"
+    },
+    {
+      "title": "Public source",
+      "url": "https://camara.registrok12.com/team/odalys-gonzalez-gonzalez"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.camara.pr.gov/team/odalys-gonzalez-gonzalez"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

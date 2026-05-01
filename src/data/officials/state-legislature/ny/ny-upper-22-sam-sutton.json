@@ -1,0 +1,56 @@
+{
+  "id": "sam-sutton",
+  "name": "Sam Sutton",
+  "firstName": "Sam",
+  "lastName": "Sutton",
+  "photo": "/images/officials/state-legislature/ny/sam-sutton.jpg",
+  "photoSourceUrl": "https://cdn.cityandstateny.com/media/img/cd/2025/05/20/Sam_Sutton-1/860x394.jpg?1747765149",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-22",
+  "jurisdiction": "New York Senate",
+  "county": [
+    "New York"
+  ],
+  "termStart": "2025-05-27",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 809, Legislative Office Building, Albany, NY 12247",
+    "phone": "518-455-2754",
+    "email": "sutton@nysenate.gov",
+    "website": "https://www.nysenate.gov/senators/sam-sutton"
+  },
+  "bio": "Sam Sutton serves as State Senator for New York Senate District 22. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "NY",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.nysenate.gov/senators/sam-sutton"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ny/legislature/Sam-Sutton-f56ef763-1f12-493d-a4e6-30e5572417e0.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://cdn.cityandstateny.com/media/img/cd/2025/05/20/Sam_Sutton-1/860x394.jpg?1747765149"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Sam_Sutton"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Sam_Sutton_(politician)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/223234/sam-sutton"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

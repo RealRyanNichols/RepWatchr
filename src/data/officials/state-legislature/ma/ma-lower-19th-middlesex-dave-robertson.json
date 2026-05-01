@@ -1,0 +1,72 @@
+{
+  "id": "dave-robertson",
+  "name": "Dave Robertson",
+  "firstName": "Dave",
+  "lastName": "Robertson",
+  "photo": "/images/officials/state-legislature/ma/dave-robertson.jpg",
+  "photoSourceUrl": "https://malegislature.gov/Legislators/Profile/170/D_R1.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-19th Middlesex",
+  "jurisdiction": "Massachusetts House of Representatives",
+  "county": [
+    "Massachusetts"
+  ],
+  "termStart": "2019-01-02",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 473F, State House 24 Beacon St., Boston, MA 02133",
+    "phone": "617-722-2210",
+    "email": "david.robertson@mahouse.gov",
+    "website": "https://malegislature.gov/Legislators/Profile/D_R1"
+  },
+  "bio": "Dave Robertson serves as State Representative for Massachusetts House of Representatives District 19th Middlesex. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "MA",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://malegislature.gov/Legislators/Profile/D_R1"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ma/legislature/David-A-Robertson-f3dd7fd8-5d7f-4fa3-b2fe-910e375f2edd.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://malegislature.gov/Legislators/Profile/170/D_R1.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/David_Allen_Robertson"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Dave_Robertson_(Massachusetts_politician)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/184707/dave-robertson"
+    },
+    {
+      "title": "Public source",
+      "url": "https://malegislature.gov/api/GeneralCourts/192/LegislativeMembers"
+    },
+    {
+      "title": "Public source",
+      "url": "https://malegislature.gov/api/GeneralCourts/192/LegislativeMembers/"
+    },
+    {
+      "title": "Public source",
+      "url": "https://malegislature.gov/api/GeneralCourts/192/LegislativeMembers/D_R1"
+    },
+    {
+      "title": "Public source",
+      "url": "https://malegislature.gov/api/GeneralCourts/193/LegislativeMembers"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

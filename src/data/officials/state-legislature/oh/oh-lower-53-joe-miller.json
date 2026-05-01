@@ -1,0 +1,69 @@
+{
+  "id": "joe-miller",
+  "name": "Joe Miller",
+  "firstName": "Joe",
+  "lastName": "Miller",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-53",
+  "jurisdiction": "Ohio House of Representatives",
+  "county": [
+    "Ohio"
+  ],
+  "termStart": "2023-01-01",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "77 S. High St. 10th Floor, Columbus, OH 43215",
+    "phone": "614-466-5141",
+    "email": "rep53@ohiohouse.gov",
+    "website": "https://ohiohouse.gov/joseph-a-miller-iii"
+  },
+  "bio": "Joe Miller serves as State Representative for Ohio House of Representatives District 53. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "OH",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://ohiohouse.gov/joseph-a-miller-iii"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/oh/legislature/Joseph-A-Miller-III-9b5a9ff9-b35a-49aa-aa64-5d2bab574843.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Joe_Miller_(Ohio_House_District_53)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Joe_Miller_(Ohio_House_District_56)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Joe_Miller_(Ohio_politician)"
+    },
+    {
+      "title": "member details page",
+      "url": "https://ohiohouse.gov/members/joseph-a-miller-iii"
+    },
+    {
+      "title": "member list page",
+      "url": "https://www.legislature.ohio.gov/legislators/house-directory"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/joe-miller-b7970618"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.ohiohouse.gov/members/joseph-a-miller-iii"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.ohiohouse.gov/members/member-directory"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

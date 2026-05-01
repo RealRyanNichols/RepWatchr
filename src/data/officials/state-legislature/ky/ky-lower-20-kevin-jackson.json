@@ -1,0 +1,54 @@
+{
+  "id": "kevin-jackson",
+  "name": "Kevin Jackson",
+  "firstName": "Kevin",
+  "lastName": "Jackson",
+  "photo": "/images/officials/state-legislature/ky/kevin-jackson.jpg",
+  "photoSourceUrl": "https://legislature.ky.gov/Legislators%20Thumbnail%20Images/house20.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-20",
+  "jurisdiction": "Kentucky House of Representatives",
+  "county": [
+    "Kentucky"
+  ],
+  "termStart": "2023-01-01",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "email": "kevin.jackson@kylegislature.gov",
+    "website": "https://legislature.ky.gov/Legislators/Pages/Legislator-Profile.aspx?DistrictNumber=20"
+  },
+  "bio": "Kevin Jackson serves as State Representative for Kentucky House of Representatives District 20. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "KY",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://legislature.ky.gov/Legislators/Pages/Legislator-Profile.aspx?DistrictNumber=20"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ky/legislature/Kevin-Jackson-0e905c68-fbcc-4392-865e-a4dbc5d2ea42.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://legislature.ky.gov/Legislators%20Thumbnail%20Images/house20.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Kevin_Jackson"
+    },
+    {
+      "title": "Public source",
+      "url": "https://legislature.ky.gov/Legislators/house-of-representatives"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/kevinjackson1121"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

@@ -1,0 +1,53 @@
+{
+  "id": "junie-joseph",
+  "name": "Junie Joseph",
+  "firstName": "Junie",
+  "lastName": "Joseph",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-10",
+  "jurisdiction": "Colorado House of Representatives",
+  "county": [
+    "Colorado"
+  ],
+  "termStart": "2023-01-09",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "State Capitol Room 307, Colorado  Building 200 E. Colfax Ave., Denver, CO 80203",
+    "phone": "303-866-2915",
+    "email": "junie.joseph.house@coleg.gov",
+    "website": "https://leg.colorado.gov/legislators/junie-joseph"
+  },
+  "bio": "Junie Joseph serves as State Representative for Colorado House of Representatives District 10. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "CO",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://leg.colorado.gov/legislators/junie-joseph"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/co/legislature/Junie-Joseph-0c2271df-5808-42ff-9550-700f454b8b3a.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Junie_Joseph"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Junie_Joseph"
+    },
+    {
+      "title": "Public source",
+      "url": "https://leg.colorado.gov/legislators"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/junie-j-27a44a75"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

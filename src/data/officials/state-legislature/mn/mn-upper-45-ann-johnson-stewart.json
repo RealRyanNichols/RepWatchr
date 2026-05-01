@@ -1,0 +1,72 @@
+{
+  "id": "ann-johnson-stewart",
+  "name": "Ann Johnson Stewart",
+  "firstName": "Ann",
+  "lastName": "Johnson Stewart",
+  "photo": "/images/officials/state-legislature/mn/ann-johnson-stewart.jpg",
+  "photoSourceUrl": "https://www.senate.mn/graphics/45Johnson_Stewart.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-45",
+  "jurisdiction": "Minnesota Senate",
+  "county": [
+    "Minnesota"
+  ],
+  "termStart": "2024-11-25",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 3211, Minnesota Senate Building 95 University Ave. West, St. Paul, MN 55155",
+    "phone": "651-296-9261",
+    "email": "sen.ann.johnson.stewart@senate.mn",
+    "website": "https://www.senate.mn/members/member_bio.html?mem_id=1243"
+  },
+  "bio": "Ann Johnson Stewart serves as State Senator for Minnesota Senate District 45. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "MN",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.senate.mn/members/member_bio.html?mem_id=1243"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/mn/legislature/Ann-M-Johnson-Stewart-4749e0fb-4f41-46e3-a8b4-19fdbbbde113.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://www.senate.mn/graphics/45Johnson_Stewart.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Ann_Johnson_Stewart"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Ann_Johnson_Stewart"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/194078/ann-johnson-stewart"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/ann-johnson-stewart-1973a67"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.senate.mn/api/members"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.senate.mn/members/index.php"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.senate.mn/members/list.csv"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

@@ -1,0 +1,68 @@
+{
+  "id": "rich-colcombe",
+  "name": "Rich\u00e9 Colcombe",
+  "firstName": "Rich\u00e9",
+  "lastName": "Colcombe",
+  "photo": "/images/officials/state-legislature/nh/rich-colcombe.jpg",
+  "photoSourceUrl": "https://s3.amazonaws.com/ballotpedia-api4/files/thumbs/200/300/richecolcombe2.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-Hillsborough 30",
+  "jurisdiction": "New Hampshire House of Representatives",
+  "county": [
+    "New Hampshire"
+  ],
+  "termStart": "2022-12-07",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "State House 107 N. Main St., Concord, NH 03301",
+    "phone": "603-271-3661",
+    "email": "riche.colcombe@gc.nh.gov",
+    "website": "https://gc.nh.gov/house/members/member.aspx?pid=10099"
+  },
+  "bio": "Rich\u00e9 Colcombe serves as State Representative for New Hampshire House of Representatives District Hillsborough 30. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "NH",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://gc.nh.gov/house/members/member.aspx?pid=10099"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/nh/legislature/Rich-Colcombe-f34606de-25d3-4e18-991e-b21727563eb6.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://s3.amazonaws.com/ballotpedia-api4/files/thumbs/200/300/richecolcombe2.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Riche_Colcombe"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Rich%C3%A9_Colcombe"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/194734/riche-colcombe"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.gencourt.state.nh.us/house/members/member.aspx?pid=10099"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/rich%C3%A9-colcombe-24993b51"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/riche-colcombe-a1aa64368"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

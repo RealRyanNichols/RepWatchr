@@ -1,0 +1,53 @@
+{
+  "id": "mike-dovilla",
+  "name": "Mike Dovilla",
+  "firstName": "Mike",
+  "lastName": "Dovilla",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-17",
+  "jurisdiction": "Ohio House of Representatives",
+  "county": [
+    "Ohio"
+  ],
+  "termStart": "2025-01-01",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "77 S. High St. 13th Floor, Columbus, OH 43215",
+    "phone": "614-466-4895",
+    "email": "rep17@ohiohouse.gov",
+    "website": "https://www.ohiohouse.gov/members/michael-d-dovilla"
+  },
+  "bio": "Mike Dovilla serves as State Representative for Ohio House of Representatives District 17. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "OH",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.ohiohouse.gov/members/michael-d-dovilla"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/oh/legislature/Mike-Dovilla-cc85c295-299f-4de7-bb56-1de3a451951e.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Mike_Dovilla"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Mike_Dovilla"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/michaeldovilla"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.ohiohouse.gov/members/member-directory"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

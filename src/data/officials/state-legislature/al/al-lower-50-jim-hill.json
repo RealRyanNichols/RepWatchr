@@ -1,0 +1,72 @@
+{
+  "id": "jim-hill",
+  "name": "Jim Hill",
+  "firstName": "Jim",
+  "lastName": "Hill",
+  "photo": "/images/officials/state-legislature/al/jim-hill.jpg",
+  "photoSourceUrl": "https://www.legislature.state.al.us/pdf/house/members/Hill_50.png",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-50",
+  "jurisdiction": "Alabama House of Representatives",
+  "county": [
+    "Alabama"
+  ],
+  "termStart": "2014-11-05",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 419, 11 S. Union St., Montgomery, AL 36130",
+    "phone": "334-261-0494",
+    "email": "jim.hill@alhouse.gov",
+    "website": "https://alison.legislature.state.al.us/house-leaders-members"
+  },
+  "bio": "Jim Hill serves as State Representative for Alabama House of Representatives District 50. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "AL",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://alison.legislature.state.al.us/house-leaders-members"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/al/legislature/Jim-Hill-1fda4118-bfb1-4ffa-b71a-a9d131feec6b.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://www.legislature.state.al.us/pdf/house/members/Hill_50.png"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Jim_Hill_(Alabama)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Jim_Hill_(Alabama_politician)"
+    },
+    {
+      "title": "graphql endpoint for member information",
+      "url": "https://gql.api.alison.legislature.state.al.us/graphql"
+    },
+    {
+      "title": "Public source",
+      "url": "https://hwhlawgroup.com/attorneys/judge-james-e-hill-jr"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/149953/jim-hill"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.legislature.state.al.us/aliswww/ISD/ALRepresentative.aspx?NAME=Hill&OID_SPONSOR=100531&OID_PERSON=7696&SESSNAME="
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.legislature.state.al.us/aliswww/ISD/ALRepresentative.aspx?OID_SPONSOR=100531&OID_PERSON=7696"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

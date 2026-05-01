@@ -1,0 +1,45 @@
+{
+  "id": "h-ctor-s-nchez-lvarez",
+  "name": "H\u00e9ctor S\u00e1nchez \u00c1lvarez",
+  "firstName": "H\u00e9ctor",
+  "lastName": "S\u00e1nchez \u00c1lvarez",
+  "party": "NP",
+  "level": "state",
+  "position": "Territorial Senator",
+  "district": "8",
+  "jurisdiction": "Puerto Rico Senate",
+  "county": [
+    "Puerto Rico"
+  ],
+  "termStart": "2025-01-02",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Senado, El Capitolio P.O. Box 9023431, San Juan, PR 00902",
+    "phone": "787-724-2030",
+    "email": "hsanchez@senado.pr.gov",
+    "website": "https://www.senado.pr.gov/h%C3%A9ctor-joaqu%C3%ADn-s%C3%A1nchez-%C3%A1lvarez"
+  },
+  "bio": "H\u00e9ctor S\u00e1nchez \u00c1lvarez serves as Territorial Senator for Puerto Rico Senate District 8. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "PR",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.senado.pr.gov/h%C3%A9ctor-joaqu%C3%ADn-s%C3%A1nchez-%C3%A1lvarez"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/pr/legislature/Hctor-Snchez-lvarez-38f02868-abca-42a6-8974-141a820343ee.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Hector_Joaquin_Sanchez_Alvarez"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.senado.pr.gov/senators/h%C3%A9ctor-joaqu%C3%ADn-s%C3%A1nchez-%C3%A1lvarez"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

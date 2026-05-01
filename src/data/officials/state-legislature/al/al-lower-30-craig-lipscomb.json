@@ -1,0 +1,72 @@
+{
+  "id": "craig-lipscomb",
+  "name": "Craig Lipscomb",
+  "firstName": "Craig",
+  "lastName": "Lipscomb",
+  "photo": "/images/officials/state-legislature/al/craig-lipscomb.jpg",
+  "photoSourceUrl": "https://www.legislature.state.al.us/pdf/house/members/Lipscomb_30.png",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-30",
+  "jurisdiction": "Alabama House of Representatives",
+  "county": [
+    "Alabama"
+  ],
+  "termStart": "2018-11-07",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 401-A, 11 S. Union St., Montgomery, AL 36130",
+    "phone": "334-261-0546",
+    "email": "craig.lipscomb@alhouse.gov",
+    "website": "https://alison.legislature.state.al.us/house-leaders-members"
+  },
+  "bio": "Craig Lipscomb serves as State Representative for Alabama House of Representatives District 30. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "AL",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://alison.legislature.state.al.us/house-leaders-members"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/al/legislature/Craig-Lipscomb-63e7d9b8-136c-4ebc-bb87-19660eb7b624.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://www.legislature.state.al.us/pdf/house/members/Lipscomb_30.png"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/B._Craig_Lipscomb"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Craig_Lipscomb"
+    },
+    {
+      "title": "graphql endpoint for member information",
+      "url": "https://gql.api.alison.legislature.state.al.us/graphql"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.legislature.state.al.us/aliswww/ISD/ALRepresentative.aspx?NAME=Lipscomb&OID_SPONSOR=100511&OID_PERSON=8499&SESSNAME="
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.legislature.state.al.us/aliswww/ISD/ALRepresentative.aspx?OID_SPONSOR=100511&OID_PERSON=8499"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.legislature.state.al.us/aliswww/ISD/House/ALRepresentatives.aspx"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/bcraiglipscomb"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

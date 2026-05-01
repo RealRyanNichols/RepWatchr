@@ -1,0 +1,69 @@
+{
+  "id": "joe-tate",
+  "name": "Joe Tate",
+  "firstName": "Joe",
+  "lastName": "Tate",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-9",
+  "jurisdiction": "Michigan House of Representatives",
+  "county": [
+    "Michigan"
+  ],
+  "termStart": "2025-01-01",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room S-688, Anderson House Office Building 124 N. Capitol Ave., Lansing, MI 48933",
+    "phone": "517-373-6990",
+    "email": "joetate@house.mi.gov",
+    "website": "https://housedems.com/joe-tate/"
+  },
+  "bio": "Joe Tate serves as State Representative for Michigan House of Representatives District 9. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "MI",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://housedems.com/joe-tate/"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/mi/legislature/Joe-Tate-19b8cf37-0b98-4194-9d2c-db6da3fae35c.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Joseph_Tate"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Joe_Tate_(politician)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://housedems.com/joe-tate"
+    },
+    {
+      "title": "Public source",
+      "url": "https://housedems.com/tate"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/170153/joe-tate"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.house.mi.gov/AllRepresentatives"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.house.mi.gov/MHRPublic/frmRepListMilenia.aspx?all=true"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/joetate1"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

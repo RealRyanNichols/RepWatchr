@@ -1,0 +1,64 @@
+{
+  "id": "zoe-manos",
+  "name": "Zoe Manos",
+  "firstName": "Zoe",
+  "lastName": "Manos",
+  "photo": "/images/officials/state-legislature/nh/zoe-manos.jpg",
+  "photoSourceUrl": "https://www.gannett-cdn.com/presto/2022/10/20/NPOH/d99fd355-15a2-43ba-b2ac-6f0353ba64e3-Manos.jpeg?width=300&height=317&fit=crop&format=pjpg&auto=webp",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-Rockingham 12",
+  "jurisdiction": "New Hampshire House of Representatives",
+  "county": [
+    "New Hampshire"
+  ],
+  "termStart": "2022-12-07",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "State House 107 N. Main St., Concord, NH 03301",
+    "phone": "603-271-3661",
+    "email": "zoe.manos@gc.nh.gov",
+    "website": "https://gc.nh.gov/house/members/member.aspx?pid=10857"
+  },
+  "bio": "Zoe Manos serves as State Representative for New Hampshire House of Representatives District Rockingham 12. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "NH",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://gc.nh.gov/house/members/member.aspx?pid=10857"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/nh/legislature/Zoe-R-Manos-82019391-800c-469e-b17b-fbbf700b6555.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://www.gannett-cdn.com/presto/2022/10/20/NPOH/d99fd355-15a2-43ba-b2ac-6f0353ba64e3-Manos.jpeg?width=300&height=317&fit=crop&format=pjpg&auto=webp"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Zoe_Manos"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Zoe_Manos"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/208916/zoe-manos"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.gencourt.state.nh.us/house/members/member.aspx?pid=10857"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/zoe-r-manos-65057757"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

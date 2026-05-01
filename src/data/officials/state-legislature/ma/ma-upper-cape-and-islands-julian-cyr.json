@@ -1,0 +1,72 @@
+{
+  "id": "julian-cyr",
+  "name": "Julian Cyr",
+  "firstName": "Julian",
+  "lastName": "Cyr",
+  "photo": "/images/officials/state-legislature/ma/julian-cyr.jpg",
+  "photoSourceUrl": "https://malegislature.gov/Legislators/Profile/170/JAC0.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-Cape and Islands",
+  "jurisdiction": "Massachusetts Senate",
+  "county": [
+    "Massachusetts"
+  ],
+  "termStart": "2017-01-04",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 111, State House 24 Beacon St., Boston, MA 02133",
+    "phone": "617-722-1570",
+    "email": "julian.cyr@masenate.gov",
+    "website": "https://malegislature.gov/Legislators/Profile/JAC0"
+  },
+  "bio": "Julian Cyr serves as State Senator for Massachusetts Senate District Cape and Islands. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "MA",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://malegislature.gov/Legislators/Profile/JAC0"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ma/legislature/Julian-Cyr-5a0688ef-c0cd-469d-bd3c-fe9848724387.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://malegislature.gov/Legislators/Profile/170/JAC0.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Julian_Andre_Cyr"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Julian_Cyr"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/171999/julian-cyr"
+    },
+    {
+      "title": "Public source",
+      "url": "https://malegislature.gov/api/GeneralCourts/192/LegislativeMembers"
+    },
+    {
+      "title": "Public source",
+      "url": "https://malegislature.gov/api/GeneralCourts/192/LegislativeMembers/"
+    },
+    {
+      "title": "Public source",
+      "url": "https://malegislature.gov/api/GeneralCourts/192/LegislativeMembers/JAC0"
+    },
+    {
+      "title": "Public source",
+      "url": "https://malegislature.gov/api/GeneralCourts/193/LegislativeMembers"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

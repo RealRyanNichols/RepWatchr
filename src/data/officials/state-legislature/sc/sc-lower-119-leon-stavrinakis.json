@@ -1,0 +1,65 @@
+{
+  "id": "leon-stavrinakis",
+  "name": "Leon Stavrinakis",
+  "firstName": "Leon",
+  "lastName": "Stavrinakis",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-119",
+  "jurisdiction": "South Carolina House of Representatives",
+  "county": [
+    "South Carolina"
+  ],
+  "termStart": "",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 532A, Blatt Building P.O. Box 11867, Columbia, SC 29201",
+    "phone": "803-734-3039",
+    "email": "leonstavrinakis@schouse.gov",
+    "website": "https://scstatehouse.gov/member.php?code=1747727063"
+  },
+  "bio": "Leon Stavrinakis serves as State Representative for South Carolina House of Representatives District 119. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "SC",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://scstatehouse.gov/member.php?code=1747727063"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/sc/legislature/Leonidas-E-Leon-Stavrinakis-3faa0b04-4277-4a07-ae78-bc9cb0d20e07.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Leonidas_Stavrinakis"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Leon_Stavrinakis"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/59396/leon-stavrinakis"
+    },
+    {
+      "title": "Public source",
+      "url": "https://scstatehouse.gov/member.php?chamber=H"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.scstatehouse.gov/member.php?chamber=H"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.scstatehouse.gov/member.php?code=1747727063"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.stavlaw.net/about-leon"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

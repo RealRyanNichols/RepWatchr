@@ -110,7 +110,7 @@ export default async function OfficialsPage({
     {
       label: "Federal/state seats",
       value: formatNumber(dataStats.federalAndStateSeatProfilesLoaded),
-      detail: `${dataStats.federalProfilesLoaded}/${dataStats.federalExpectedSeats} current federal seats across all 50 states and ${dataStats.stateLegislatorProfilesLoaded}/${dataStats.stateLegislatureExpectedSeats} Texas legislative seats have person profile files.`,
+      detail: `${dataStats.federalProfilesLoaded}/${dataStats.federalExpectedSeats} current federal seats plus ${formatNumber(dataStats.stateLegislatorProfilesLoaded)} state-legislative profiles across ${dataStats.stateLegislatureJurisdictionsLoaded} jurisdictions. ${formatNumber(dataStats.stateExecutiveProfilesLoaded)} statewide executive/public-office profiles are loaded.`,
     },
     {
       label: "Source-seeded profiles",

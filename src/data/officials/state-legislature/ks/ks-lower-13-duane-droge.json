@@ -1,0 +1,69 @@
+{
+  "id": "duane-droge",
+  "name": "Duane Droge",
+  "firstName": "Duane",
+  "lastName": "Droge",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-13",
+  "jurisdiction": "Kansas House of Representatives",
+  "county": [
+    "Kansas"
+  ],
+  "termStart": "2023-01-09",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "State Capitol Room 519-N, Kansas  Building 300 SW 10th St., Topeka, KS 66612",
+    "phone": "785-296-7380",
+    "email": "duane.droge@house.ks.gov",
+    "website": "https://www.kslegislature.gov/li/b2025_26/members/rep_droge_duane_1/"
+  },
+  "bio": "Duane Droge serves as State Representative for Kansas House of Representatives District 13. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "KS",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.kslegislature.gov/li/b2025_26/members/rep_droge_duane_1/"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ks/legislature/Duane-Droge-75db09fb-b9dd-4c6f-ae73-bfde55d7dd62.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Duane_Droge"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Duane_Droge"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/211346/duane-droge"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.kslegislature.gov/li/b2025_26/members/rep_droge_duane_1"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.kslegislature.org/li/api/v11/rev-1/members/rep_droge_duane_1"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.kslegislature.org/li/api/v11/rev-1/members/rep_droge_duane_1/"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.kslegislature.org/li/b2023_24/members/rep_droge_duane_1"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.kslegislature.org/li/b2023_24/members/rep_droge_duane_1/"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

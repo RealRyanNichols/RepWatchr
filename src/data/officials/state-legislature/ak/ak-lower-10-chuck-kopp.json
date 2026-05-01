@@ -1,0 +1,72 @@
+{
+  "id": "chuck-kopp",
+  "name": "Chuck Kopp",
+  "firstName": "Chuck",
+  "lastName": "Kopp",
+  "photo": "/images/officials/state-legislature/ak/chuck-kopp.jpg",
+  "photoSourceUrl": "http://akleg.gov/images/legislators/kop.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-10",
+  "jurisdiction": "Alaska House of Representatives",
+  "county": [
+    "Alaska"
+  ],
+  "termStart": "2025-01-21",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "State Capitol Room 204, 120 4th St., Juneau, AK 99801",
+    "phone": "907-465-3892",
+    "email": "representative.chuck.kopp@akleg.gov",
+    "website": "https://www.akleg.gov/basis/Member/Detail/30?code=kop"
+  },
+  "bio": "Chuck Kopp serves as State Representative for Alaska House of Representatives District 10. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "AK",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.akleg.gov/basis/Member/Detail/30?code=kop"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ak/legislature/Chuck-Kopp-7474d172-6c90-47f9-aae1-9f66c9518be2.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "http://akleg.gov/images/legislators/kop.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Charles_M._Kopp"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Chuck_Kopp"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/171542/charles-kopp"
+    },
+    {
+      "title": "Public source",
+      "url": "https://w3.akleg.gov"
+    },
+    {
+      "title": "Public source",
+      "url": "https://w3.akleg.gov/"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.akleg.gov/basis/Member/Detail/34?code=kop"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/chuck-kopp-b026097b"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

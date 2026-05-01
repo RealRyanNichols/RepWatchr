@@ -1,0 +1,57 @@
+{
+  "id": "bruce-antone",
+  "name": "Bruce Antone",
+  "firstName": "Bruce",
+  "lastName": "Antone",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-41",
+  "jurisdiction": "Florida House of Representatives",
+  "county": [
+    "Florida"
+  ],
+  "termStart": "2022-11-08",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 1101, The Capitol 402 S. Monroe St., Tallahassee, FL 32399",
+    "phone": "850-717-5041",
+    "email": "bruce.antone@flhouse.gov",
+    "website": "https://myfloridahouse.gov/Sections/Representatives/details.aspx?MemberId=4269&LegislativeTermId=90"
+  },
+  "bio": "Bruce Antone serves as State Representative for Florida House of Representatives District 41. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "FL",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://myfloridahouse.gov/Sections/Representatives/details.aspx?MemberId=4269&LegislativeTermId=90"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/fl/legislature/Bruce-Hadley-Antone-617888c1-3369-49cd-a264-18ab663d2e8a.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Bruce_Antone"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Bruce_Antone"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.flhouse.gov/Sections/Representatives/details.aspx?MemberId=4269"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/bruce-antone-4a4a466"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.myfloridahouse.gov//Sections/Representatives/details.aspx?MemberId=4269"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

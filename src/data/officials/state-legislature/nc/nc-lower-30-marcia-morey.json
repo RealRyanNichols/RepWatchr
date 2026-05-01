@@ -1,0 +1,56 @@
+{
+  "id": "marcia-morey",
+  "name": "Marcia Morey",
+  "firstName": "Marcia",
+  "lastName": "Morey",
+  "photo": "/images/officials/state-legislature/nc/marcia-morey.jpg",
+  "photoSourceUrl": "https://www.ncleg.gov/Members/MemberImage/H/732/Low",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-30",
+  "jurisdiction": "North Carolina House of Representatives",
+  "county": [
+    "North Carolina"
+  ],
+  "termStart": "2017-04-05",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 1220, North Carolina Legislative Building 16 W. Jones St., Raleigh, NC 27601",
+    "phone": "919-733-7663",
+    "email": "marcia.morey@ncleg.gov",
+    "website": "https://www.ncleg.gov/Members/Biography/H/732"
+  },
+  "bio": "Marcia Morey serves as State Representative for North Carolina House of Representatives District 30. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "NC",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.ncleg.gov/Members/Biography/H/732"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/nc/legislature/Marcia-Morey-be5acee4-3874-4414-9aff-77043943c1c1.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://www.ncleg.gov/Members/MemberImage/H/732/Low"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Marcia_Morey"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Marcia_Morey"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.ncleg.gov/Members/MemberTable/H"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

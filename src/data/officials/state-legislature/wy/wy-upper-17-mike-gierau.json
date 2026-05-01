@@ -1,0 +1,71 @@
+{
+  "id": "mike-gierau",
+  "name": "Mike Gierau",
+  "firstName": "Mike",
+  "lastName": "Gierau",
+  "photo": "/images/officials/state-legislature/wy/mike-gierau.jpg",
+  "photoSourceUrl": "https://wyoleg.gov/LegislatorSummary/Photos/68th-GierauMike.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-17",
+  "jurisdiction": "Wyoming Senate",
+  "county": [
+    "Wyoming"
+  ],
+  "termStart": "2019-01-07",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "State Capitol 200 W. 24th St., Cheyenne, WY 82002",
+    "email": "mike.gierau@wyoleg.gov",
+    "website": "https://www.wyoleg.gov/Legislators/2023/S/2027"
+  },
+  "bio": "Mike Gierau serves as State Senator for Wyoming Senate District 17. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "WY",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.wyoleg.gov/Legislators/2023/S/2027"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/wy/legislature/Mike-Gierau-587874e4-f0c9-4679-aa08-a2442b7d33b1.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://wyoleg.gov/LegislatorSummary/Photos/68th-GierauMike.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Mike_Gierau"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Mike_Gierau"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/52778/mike-gierau"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/mike-gierau-0851ba2a"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.wyoleg.gov/Legislators/2025/S/2027"
+    },
+    {
+      "title": "Public source",
+      "url": "https://wyoleg.gov/Legislators/2019/D/2027"
+    },
+    {
+      "title": "Public source",
+      "url": "https://wyoleg.gov/Legislators/2021/D/2027"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

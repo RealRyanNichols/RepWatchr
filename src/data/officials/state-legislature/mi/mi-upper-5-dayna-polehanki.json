@@ -1,0 +1,68 @@
+{
+  "id": "dayna-polehanki",
+  "name": "Dayna Polehanki",
+  "firstName": "Dayna",
+  "lastName": "Polehanki",
+  "photo": "/images/officials/state-legislature/mi/dayna-polehanki.jpg",
+  "photoSourceUrl": "https://senatedems.com/polehanki/wp-content/uploads/sites/11/2022/12/Polehanki-Official-Portrait.jpeg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-5",
+  "jurisdiction": "Michigan Senate",
+  "county": [
+    "Michigan"
+  ],
+  "termStart": "2023-01-01",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room S-310, Capitol Building P.O. Box 30036, Lansing, MI 48909",
+    "phone": "517-373-7350",
+    "email": "sendpolehanki@senate.michigan.gov",
+    "website": "https://senatedems.com/polehanki"
+  },
+  "bio": "Dayna Polehanki serves as State Senator for Michigan Senate District 5. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "MI",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://senatedems.com/polehanki"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/mi/legislature/Dayna-Polehanki-f266a938-3705-4c7c-994f-859b2b6024dc.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://senatedems.com/polehanki/wp-content/uploads/sites/11/2022/12/Polehanki-Official-Portrait.jpeg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Dayna_Polehanki"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/182594/dayna-polehanki"
+    },
+    {
+      "title": "Public source",
+      "url": "https://senate.michigan.gov/senatorinfo_list.html"
+    },
+    {
+      "title": "Members List JSON Data Page",
+      "url": "https://senate.michigan.gov/senators/SenatorData.json"
+    },
+    {
+      "title": "Members List HTML page",
+      "url": "https://senate.michigan.gov/senators/senatorinfo_list.html"
+    },
+    {
+      "title": "Public source",
+      "url": "https://senatedems.com/polehanki/"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

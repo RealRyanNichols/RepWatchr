@@ -1,0 +1,64 @@
+{
+  "id": "adam-bird",
+  "name": "Adam Bird",
+  "firstName": "Adam",
+  "lastName": "Bird",
+  "photo": "/images/officials/state-legislature/oh/adam-bird.jpg",
+  "photoSourceUrl": "https://www.legislature.ohio.gov/assets/people/adam-c-bird/headshots/thumbnails/medium/adam-c-bird-january-2023-headshot_medium.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-63",
+  "jurisdiction": "Ohio House of Representatives",
+  "county": [
+    "Ohio"
+  ],
+  "termStart": "2023-01-01",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "77 S. High St. 14th Floor, Columbus, OH 43215",
+    "phone": "614-644-6034",
+    "email": "rep63@ohiohouse.gov",
+    "website": "https://ohiohouse.gov/adam-c-bird"
+  },
+  "bio": "Adam Bird serves as State Representative for Ohio House of Representatives District 63. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "OH",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://ohiohouse.gov/adam-c-bird"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/oh/legislature/Adam-C-Bird-0c6a7bcf-e990-41a0-b59c-923f05771880.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://www.legislature.ohio.gov/assets/people/adam-c-bird/headshots/thumbnails/medium/adam-c-bird-january-2023-headshot_medium.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Adam_Bird"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Adam_Bird"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/189482/adam-bird"
+    },
+    {
+      "title": "member details page",
+      "url": "https://ohiohouse.gov/members/adam-c-bird"
+    },
+    {
+      "title": "member list page",
+      "url": "https://www.legislature.ohio.gov/legislators/house-directory"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

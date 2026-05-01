@@ -1,0 +1,72 @@
+{
+  "id": "victoria-gu",
+  "name": "Victoria Gu",
+  "firstName": "Victoria",
+  "lastName": "Gu",
+  "photo": "/images/officials/state-legislature/ri/victoria-gu.jpg",
+  "photoSourceUrl": "https://www.rilegislature.gov/senators/Pictures/Gu%202023.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-38",
+  "jurisdiction": "Rhode Island Senate",
+  "county": [
+    "Rhode Island"
+  ],
+  "termStart": "2023-01-03",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "82 Smith St., Providence, RI 02903",
+    "phone": "401-222-3580",
+    "email": "sen-gu@rilegislature.gov",
+    "website": "https://www.rilegislature.gov/Senators/gu/Pages/biography.aspx"
+  },
+  "bio": "Victoria Gu serves as State Senator for Rhode Island Senate District 38. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "RI",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.rilegislature.gov/Senators/gu/Pages/biography.aspx"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ri/legislature/Victoria-Gu-afeed427-2ef1-4197-840d-7ab06883e186.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://www.rilegislature.gov/senators/Pictures/Gu%202023.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Victoria_Gu"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/209986/victoria-gu"
+    },
+    {
+      "title": "Public source",
+      "url": "https://webserver.rilegislature.gov/Email/SenEmailListDistrict.asp"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.rilegislature.gov/senators/gu/Pages/Biography.aspx"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.rilegislature.gov/Senators/guvi/Pages/biography.aspx"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.rilegislature.gov/SiteAssets/MailingLists/Representatives.xls"
+    },
+    {
+      "title": "Detail Excel Source",
+      "url": "https://www.rilegislature.gov/SiteAssets/Representatives.xls"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

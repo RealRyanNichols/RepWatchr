@@ -1,0 +1,40 @@
+{
+  "id": "david-toland",
+  "name": "David Toland",
+  "firstName": "David",
+  "lastName": "Toland",
+  "party": "D",
+  "level": "state",
+  "position": "Lieutenant Governor",
+  "district": "Kansas",
+  "jurisdiction": "Kansas statewide public office",
+  "county": [
+    "Kansas"
+  ],
+  "termStart": "2021-01-04",
+  "termEnd": "2027-01-11",
+  "contactInfo": {
+    "office": "Kansas Statehouse, 300 SW 10th Ave., Ste. 241S; Topeka, KS 66612-1590",
+    "phone": "785-296-3232",
+    "website": "https://www.governor.ks.gov/about-the-office/lt-governor-david-toland"
+  },
+  "bio": "David Toland is listed as Lieutenant Governor for Kansas. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "KS",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.governor.ks.gov/about-the-office/lt-governor-david-toland"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ks/executive/David-Toland-33e1e312-76c0-4d83-81d3-fa07768eab34.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/David_Toland"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

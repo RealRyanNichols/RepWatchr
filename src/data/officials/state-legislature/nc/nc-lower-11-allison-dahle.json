@@ -1,0 +1,64 @@
+{
+  "id": "allison-dahle",
+  "name": "Allison Dahle",
+  "firstName": "Allison",
+  "lastName": "Dahle",
+  "photo": "/images/officials/state-legislature/nc/allison-dahle.jpg",
+  "photoSourceUrl": "https://www.ncleg.gov/Members/MemberImage/H/740/Low",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-11",
+  "jurisdiction": "North Carolina House of Representatives",
+  "county": [
+    "North Carolina"
+  ],
+  "termStart": "2019-01-01",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 1217, North Carolina Legislative Building 16 W. Jones St., Raleigh, NC 27601",
+    "phone": "919-733-5755",
+    "email": "allison.dahle@ncleg.gov",
+    "website": "https://www.ncleg.gov/Members/Biography/H/740"
+  },
+  "bio": "Allison Dahle serves as State Representative for North Carolina House of Representatives District 11. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "NC",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.ncleg.gov/Members/Biography/H/740"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/nc/legislature/Allison-A-Dahle-785927b3-34ca-4a2d-bc1c-df4cc8e16c47.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://www.ncleg.gov/Members/MemberImage/H/740/Low"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Allison_Dahle"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Allison_Dahle"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/178368/allison-dahle"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/allison-dahle-a186154"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.ncleg.gov/Members/MemberTable/H"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

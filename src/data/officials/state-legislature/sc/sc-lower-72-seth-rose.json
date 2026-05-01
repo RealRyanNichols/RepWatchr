@@ -1,0 +1,65 @@
+{
+  "id": "seth-rose",
+  "name": "Seth Rose",
+  "firstName": "Seth",
+  "lastName": "Rose",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-72",
+  "jurisdiction": "South Carolina House of Representatives",
+  "county": [
+    "South Carolina"
+  ],
+  "termStart": "2018-11-12",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 532D, Blatt Building P.O. Box 11867, Columbia, SC 29201",
+    "phone": "803-212-6971",
+    "email": "sethrose@schouse.gov",
+    "website": "https://scstatehouse.gov/member.php?code=1584090719"
+  },
+  "bio": "Seth Rose serves as State Representative for South Carolina House of Representatives District 72. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "SC",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://scstatehouse.gov/member.php?code=1584090719"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/sc/legislature/Seth-Rose-6f3e5d6a-0e85-4af0-9711-1eaa7e3da981.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Seth_Rose"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Seth_Rose"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/132461/seth-rose"
+    },
+    {
+      "title": "Public source",
+      "url": "https://scstatehouse.gov/member.php?chamber=H"
+    },
+    {
+      "title": "Public source",
+      "url": "https://sethroselaw.com/profile"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.scstatehouse.gov/member.php?chamber=H"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.scstatehouse.gov/member.php?code=1584090719"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

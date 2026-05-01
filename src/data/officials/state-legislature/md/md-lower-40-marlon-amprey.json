@@ -1,0 +1,60 @@
+{
+  "id": "marlon-amprey",
+  "name": "Marlon Amprey",
+  "firstName": "Marlon",
+  "lastName": "Amprey",
+  "photo": "/images/officials/state-legislature/md/marlon-amprey.jpg",
+  "photoSourceUrl": "http://mgaleg.maryland.gov/2021RS/images/amprey01.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "Delegate",
+  "district": "HD-40",
+  "jurisdiction": "Maryland House of Delegates",
+  "county": [
+    "Maryland"
+  ],
+  "termStart": "2021-01-13",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 314, Lowe House Office Building 6 Bladen St., Annapolis, MD 21401",
+    "phone": "410-841-3520",
+    "email": "marlon.amprey@house.maryland.gov",
+    "website": "https://mgaleg.maryland.gov/mgawebsite/Members/Details/amprey01"
+  },
+  "bio": "Marlon Amprey serves as Delegate for Maryland House of Delegates District 40. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "MD",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://mgaleg.maryland.gov/mgawebsite/Members/Details/amprey01"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/md/legislature/Marlon-Amprey-b6c25db2-72d7-47d0-a70d-f598d135180a.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "http://mgaleg.maryland.gov/2021RS/images/amprey01.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Marlon_Amprey"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Marlon_Amprey"
+    },
+    {
+      "title": "Public source",
+      "url": "https://msa.maryland.gov/msa/mdmanual/06hse/html/msa18286.html"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/marlonamprey"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

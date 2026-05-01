@@ -1,0 +1,72 @@
+{
+  "id": "amy-perruso",
+  "name": "Amy Perruso",
+  "firstName": "Amy",
+  "lastName": "Perruso",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-46",
+  "jurisdiction": "Hawaii House of Representatives",
+  "county": [
+    "Hawaii"
+  ],
+  "termStart": "2018-11-06",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "State Capitol Room 444, 415 S. Beretania St., Honolulu, HI 96813",
+    "phone": "808-586-6700",
+    "email": "repperruso@capitol.hawaii.gov",
+    "website": "https://capitol.hawaii.gov/memberpage.aspx?member=perruso&year=2019",
+    "socialMedia": {
+      "facebook": "https://facebook.com/representativeperruso"
+    }
+  },
+  "bio": "Amy Perruso serves as State Representative for Hawaii House of Representatives District 46. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "HI",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://capitol.hawaii.gov/memberpage.aspx?member=perruso&year=2019"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/hi/legislature/Amy-A-Perruso-cb860f85-2006-4d5b-b1a8-1c56c1def2d7.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Amy_Perruso"
+    },
+    {
+      "title": "Public source",
+      "url": "https://capitol.hawaii.gov/members/legislators.aspx?chamber=H"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Amy_Perruso"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/172203/amy-perruso"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.capitol.hawaii.gov/legislature/memberpage.aspx?member=109"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.capitol.hawaii.gov/legislature/memberpage.aspx?member=109&year=2023"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.capitol.hawaii.gov/legislature/memberpage.aspx?member=109&year=2024"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.capitol.hawaii.gov/memberpage.aspx?member=perruso&year=2021"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

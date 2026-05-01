@@ -1,0 +1,60 @@
+{
+  "id": "darsh-patel",
+  "name": "Darsh Patel",
+  "firstName": "Darsh",
+  "lastName": "Patel",
+  "photo": "/images/officials/state-legislature/ca/darsh-patel.jpg",
+  "photoSourceUrl": "https://s3.amazonaws.com/ballotpedia-api4/files/thumbs/200/300/Darshana_Patel.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "Assemblymember",
+  "district": "HD-76",
+  "jurisdiction": "California State Assembly",
+  "county": [
+    "California"
+  ],
+  "termStart": "2024-12-02",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 5140, 1021 O St. P.O. Box 942849, Sacramento, CA 94249",
+    "phone": "916-319-2076",
+    "email": "assemblymember.patel@assembly.ca.gov",
+    "website": "https://a76.asmdc.org/"
+  },
+  "bio": "Darsh Patel serves as Assemblymember for California State Assembly District 76. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "CA",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://a76.asmdc.org/"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ca/legislature/Darsh-Patel-86218623-ea63-4b2a-ab5c-7694e3f4a18a.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://s3.amazonaws.com/ballotpedia-api4/files/thumbs/200/300/Darshana_Patel.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://a76.asmdc.org"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Darshana_Patel"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.assembly.ca.gov/assemblymembers/76"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/darshanapatelphd"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

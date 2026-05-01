@@ -1,0 +1,61 @@
+{
+  "id": "marti-deuter",
+  "name": "Marti Deuter",
+  "firstName": "Marti",
+  "lastName": "Deuter",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-45",
+  "jurisdiction": "Illinois House of Representatives",
+  "county": [
+    "Illinois"
+  ],
+  "termStart": "2025-01-08",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 240A-W, Stratton Building, Springfield, IL 62706",
+    "phone": "217-782-1448",
+    "email": "office@repmartideuter.com",
+    "website": "https://www.ilga.gov/House/Members/Details/3455"
+  },
+  "bio": "Marti Deuter serves as State Representative for Illinois House of Representatives District 45. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "IL",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.ilga.gov/House/Members/Details/3455"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/il/legislature/Marti-Deuter-035b25c2-e97c-413e-8d84-d5c618f6a2fa.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Martha_Deuter"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Martha_Deuter"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/147379/marti-deuter"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.ilga.gov/house/Rep.asp?GA=104&MemberID=3455"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/martha-marti-wiles-deuter-33104b18a"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.repmartideuter.com"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

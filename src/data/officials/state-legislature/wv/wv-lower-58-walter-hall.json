@@ -1,0 +1,68 @@
+{
+  "id": "walter-hall",
+  "name": "Walter Hall",
+  "firstName": "Walter",
+  "lastName": "Hall",
+  "photo": "/images/officials/state-legislature/wv/walter-hall.jpg",
+  "photoSourceUrl": "http://www.wvlegislature.gov/images/members/2023/house/hall_walter.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "Delegate",
+  "district": "HD-58",
+  "jurisdiction": "West Virginia House of Delegates",
+  "county": [
+    "West Virginia"
+  ],
+  "termStart": "2022-12-01",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "State Capitol Room 218E, Complex, Building 1 1900 Kanawha Blvd. East, Charleston, WV 25305",
+    "phone": "304-340-3181",
+    "email": "walter.hall@wvhouse.gov",
+    "website": "https://www.wvlegislature.gov/House/lawmaker.cfm?member=Delegate%20Hall"
+  },
+  "bio": "Walter Hall serves as Delegate for West Virginia House of Delegates District 58. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "WV",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.wvlegislature.gov/House/lawmaker.cfm?member=Delegate%20Hall"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/wv/legislature/Walter-Hall-542b49b1-72ed-4e96-98bf-e7c236b92e12.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "http://www.wvlegislature.gov/images/members/2023/house/hall_walter.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Walter_Hall"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Walter_Hall_(American_politician)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/201752/walter-hall"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/walter-hall-15a0bb229"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.wvlegislature.gov/House/lawmaker.cfm?member=Delegate%20Hall,%20W."
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.wvlegislature.gov/House/roster.cfm"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

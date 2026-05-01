@@ -1,0 +1,61 @@
+{
+  "id": "stephanie-young",
+  "name": "Stephanie Young",
+  "firstName": "Stephanie",
+  "lastName": "Young",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-16",
+  "jurisdiction": "Michigan House of Representatives",
+  "county": [
+    "Michigan"
+  ],
+  "termStart": "2023-01-01",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room N-695, Anderson House Office Building 124 N. Capitol Ave., Lansing, MI 48933",
+    "phone": "517-373-2576",
+    "email": "stephanieyoung@house.mi.gov",
+    "website": "https://housedems.com/stephanie-young/"
+  },
+  "bio": "Stephanie Young serves as State Representative for Michigan House of Representatives District 16. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "MI",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://housedems.com/stephanie-young/"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/mi/legislature/Stephanie-Young-ea254169-e403-4e29-ab06-8f40fb869ac2.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Stephanie_Young"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Stephanie_Young_(politician)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://housedems.com/stephanie-young"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.house.mi.gov/AllRepresentatives"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.house.mi.gov/MHRPublic/frmRepListMilenia.aspx?all=true"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/stephanie-a-young-56b68570"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

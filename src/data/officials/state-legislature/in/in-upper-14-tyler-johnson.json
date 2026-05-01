@@ -1,0 +1,64 @@
+{
+  "id": "tyler-johnson",
+  "name": "Tyler Johnson",
+  "firstName": "Tyler",
+  "lastName": "Johnson",
+  "photo": "/images/officials/state-legislature/in/tyler-johnson.jpg",
+  "photoSourceUrl": "https://cdn.zephyrcms.com/91785bff-d689-4351-a1fa-2345256bf313/-/progressive/yes/-/format/jpeg/-/scale_crop/200x300/center/-/stretch/off/johnson-website.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-14",
+  "jurisdiction": "Indiana Senate",
+  "county": [
+    "Indiana"
+  ],
+  "termStart": "2022-11-09",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "200 W. Washington St., Indianapolis, IN 46204",
+    "phone": "317-232-9400",
+    "email": "s14@iga.in.gov",
+    "website": "https://www.indianasenaterepublicans.com/johnson"
+  },
+  "bio": "Tyler Johnson serves as State Senator for Indiana Senate District 14. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "IN",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.indianasenaterepublicans.com/johnson"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/in/legislature/Tyler-Johnson-5e19b0fa-7bdc-4732-826c-adf5fbad4e21.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://cdn.zephyrcms.com/91785bff-d689-4351-a1fa-2345256bf313/-/progressive/yes/-/format/jpeg/-/scale_crop/200x300/center/-/stretch/off/johnson-website.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Tyler_Johnson_(Indiana)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Tyler_Johnson_(politician)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/201927/tyler-johnson"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.indianasenaterepublicans.com/senators"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/tyler-johnson-6b26a28a"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

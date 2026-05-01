@@ -1,0 +1,60 @@
+{
+  "id": "scott-montgomery",
+  "name": "Scott Montgomery",
+  "firstName": "Scott",
+  "lastName": "Montgomery",
+  "photo": "/images/officials/state-legislature/sc/scott-montgomery.jpg",
+  "photoSourceUrl": "https://static.wixstatic.com/media/78a712_6c314e5806da4a328efc91387de831c7~mv2.jpg/v1/fill/w_321,h_446,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/DSC_6157-Edit.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-32",
+  "jurisdiction": "South Carolina House of Representatives",
+  "county": [
+    "South Carolina"
+  ],
+  "termStart": "2024-11-11",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 402A, Blatt Building P.O. Box 11867, Columbia, SC 29211",
+    "phone": "803-212-6790",
+    "email": "scottmontgomery@schouse.gov",
+    "website": "https://www.scstatehouse.gov/member.php?code=1351704384"
+  },
+  "bio": "Scott Montgomery serves as State Representative for South Carolina House of Representatives District 32. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "SC",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.scstatehouse.gov/member.php?code=1351704384"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/sc/legislature/Scott-Montgomery-afbbce75-a054-458a-ad5f-95ac385510f2.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://static.wixstatic.com/media/78a712_6c314e5806da4a328efc91387de831c7~mv2.jpg/v1/fill/w_321,h_446,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/DSC_6157-Edit.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Scott_Montgomery"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Scott_Montgomery_(politician)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/216319/scott-montgomery"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/scott-montgomery-0bb627"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

@@ -1,0 +1,64 @@
+{
+  "id": "jason-buchsbaum",
+  "name": "Jason Buchsbaum",
+  "firstName": "Jason",
+  "lastName": "Buchsbaum",
+  "photo": "/images/officials/state-legislature/ct/jason-buchsbaum.jpg",
+  "photoSourceUrl": "https://s3.amazonaws.com/ballotpedia-api4/files/thumbs/200/300/JAB_Photo.JPG",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-69",
+  "jurisdiction": "Connecticut House of Representatives",
+  "county": [
+    "Connecticut"
+  ],
+  "termStart": "2025-01-08",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 4200, Legislative Office Building 300 Capitol Ave., Hartford, CT 06106",
+    "phone": "860-240-8700",
+    "email": "jason.buchsbaum@housegop.ct.gov",
+    "website": "https://www.cthousegop.com/buchsbaum/"
+  },
+  "bio": "Jason Buchsbaum serves as State Representative for Connecticut House of Representatives District 69. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "CT",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.cthousegop.com/buchsbaum/"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ct/legislature/Jason-Buchsbaum-ff87fec9-1c97-45e5-bdcc-a0ed0b3025cc.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://s3.amazonaws.com/ballotpedia-api4/files/thumbs/200/300/JAB_Photo.JPG"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Jason_Buchsbaum"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Jason_Buchsbaum"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/208606/jason-buchsbaum"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.cthousegop.com/buchsbaum"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/jason-buchsbaum-76301622"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

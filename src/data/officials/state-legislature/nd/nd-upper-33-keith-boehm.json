@@ -1,0 +1,66 @@
+{
+  "id": "keith-boehm",
+  "name": "Keith Boehm",
+  "firstName": "Keith",
+  "lastName": "Boehm",
+  "photo": "/images/officials/state-legislature/nd/keith-boehm.jpg",
+  "photoSourceUrl": "https://www.ndlegis.gov/sites/default/files/styles/member_list_photo/public/person/photo/kboehm2023.jpg?itok=U-O9r8u7",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-33",
+  "jurisdiction": "North Dakota Senate",
+  "county": [
+    "North Dakota"
+  ],
+  "termStart": "2022-12-01",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "email": "kboehm@ndlegis.gov",
+    "website": "https://ndlegis.gov/biography/keith-boehm"
+  },
+  "bio": "Keith Boehm serves as State Senator for North Dakota Senate District 33. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "ND",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://ndlegis.gov/biography/keith-boehm"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/nd/legislature/Keith-Boehm-61200f69-4501-4cfb-a9cf-a37e86d6604c.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://www.ndlegis.gov/sites/default/files/styles/member_list_photo/public/person/photo/kboehm2023.jpg?itok=U-O9r8u7"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Keith_Boehm"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Keith_Boehm"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.boehmfornd.com/meet-keith"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/keithboehm"
+    },
+    {
+      "title": "members list page",
+      "url": "https://www.ndlegis.gov/assembly/68-2023/regular/members"
+    },
+    {
+      "title": "member details page",
+      "url": "https://www.ndlegis.gov/biography/keith-boehm"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

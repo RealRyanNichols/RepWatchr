@@ -1,0 +1,52 @@
+{
+  "id": "shaun-mena",
+  "name": "Shaun Mena",
+  "firstName": "Shaun",
+  "lastName": "Mena",
+  "photo": "/images/officials/state-legislature/la/shaun-mena.jpg",
+  "photoSourceUrl": "https://house.louisiana.gov/H_Reps/RepPics/rep23.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-23",
+  "jurisdiction": "Louisiana House of Representatives",
+  "county": [
+    "Louisiana"
+  ],
+  "termStart": "2024-01-08",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "P.O. Box 94062 900 N. 3rd St., Baton Rouge, LA 70804",
+    "phone": "225-342-6945",
+    "email": "hse023@legis.la.gov",
+    "website": "https://house.louisiana.gov/H_Reps/members?ID=23"
+  },
+  "bio": "Shaun Mena serves as State Representative for Louisiana House of Representatives District 23. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "LA",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://house.louisiana.gov/H_Reps/members?ID=23"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/la/legislature/Shaun-Mena-6fdcb100-c1e5-450e-a3dd-cf42c06cff1e.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://house.louisiana.gov/H_Reps/RepPics/rep23.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Shaun_Mena"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/shaun-mena-2269a126a"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

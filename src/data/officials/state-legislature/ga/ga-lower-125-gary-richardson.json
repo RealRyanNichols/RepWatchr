@@ -1,0 +1,56 @@
+{
+  "id": "gary-richardson",
+  "name": "Gary Richardson",
+  "firstName": "Gary",
+  "lastName": "Richardson",
+  "photo": "/images/officials/state-legislature/ga/gary-richardson.jpg",
+  "photoSourceUrl": "https://s3.amazonaws.com/ballotpedia-api4/files/thumbs/200/300/GaryRichardson2024.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-125",
+  "jurisdiction": "Georgia House of Representatives",
+  "county": [
+    "Georgia"
+  ],
+  "termStart": "2024-03-20",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 601-F, Coverdell Legislative Office Building 18 Capitol Square SW, Atlanta, GA 30334",
+    "phone": "404-656-0254",
+    "email": "gary.richardson@house.ga.gov",
+    "website": "https://www.legis.ga.gov/members/house/5063"
+  },
+  "bio": "Gary Richardson serves as State Representative for Georgia House of Representatives District 125. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "GA",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.legis.ga.gov/members/house/5063"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ga/legislature/Gary-Richardson-47fd36f3-f5d4-4ef6-a429-1ffc7681e233.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://s3.amazonaws.com/ballotpedia-api4/files/thumbs/200/300/GaryRichardson2024.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Gary_Richardson_(Georgia)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Gary_Richardson_(Georgia_politician)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.legis.ga.gov/members/house/5063?session=1031"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

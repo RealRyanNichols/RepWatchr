@@ -1,0 +1,56 @@
+{
+  "id": "renea-jones",
+  "name": "Renea Jones",
+  "firstName": "Renea",
+  "lastName": "Jones",
+  "photo": "/images/officials/state-legislature/tn/renea-jones.jpg",
+  "photoSourceUrl": "https://reneajones.com/wp-content/uploads/2023/12/aboutimage.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-4",
+  "jurisdiction": "Tennessee House of Representatives",
+  "county": [
+    "Tennessee"
+  ],
+  "termStart": "2024-11-05",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 584, Cordell Hull Building 425 Rep. John Lewis Way North, Nashville, TN 37243",
+    "phone": "615-741-7450",
+    "email": "rep.renea.jones@capitol.tn.gov",
+    "website": "https://wapp.capitol.tn.gov/apps/legislatorinfo/member.aspx?district=H4"
+  },
+  "bio": "Renea Jones serves as State Representative for Tennessee House of Representatives District 4. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "TN",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://wapp.capitol.tn.gov/apps/legislatorinfo/member.aspx?district=H4"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/tn/legislature/Renea-Jones-22be6e69-17be-43cf-aba3-bf06d4c7b54c.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://reneajones.com/wp-content/uploads/2023/12/aboutimage.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Renea_Jones"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Renea_Jones"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/renea-jones-09613647"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

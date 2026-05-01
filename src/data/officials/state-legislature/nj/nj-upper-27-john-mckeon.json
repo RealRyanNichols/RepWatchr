@@ -1,0 +1,72 @@
+{
+  "id": "john-mckeon",
+  "name": "John McKeon",
+  "firstName": "John",
+  "lastName": "McKeon",
+  "photo": "/images/officials/state-legislature/nj/john-mckeon.jpg",
+  "photoSourceUrl": "https://www.njleg.state.nj.us/members/memberphotos/mckeon_color.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-27",
+  "jurisdiction": "New Jersey Senate",
+  "county": [
+    "New Jersey"
+  ],
+  "termStart": "2024-01-09",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "P.O. Box 068 State House, 145 W. State St., Trenton, NJ 08625",
+    "phone": "609-847-3905",
+    "email": "senmckeon@njleg.org",
+    "website": "https://www.assemblydems.com/john-mckeon/"
+  },
+  "bio": "John McKeon serves as State Senator for New Jersey Senate District 27. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "NJ",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.assemblydems.com/john-mckeon/"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/nj/legislature/John-F-McKeon-1fec06e0-00df-4d84-8c9a-18e80a6f29e2.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://www.njleg.state.nj.us/members/memberphotos/mckeon_color.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/John_McKeon"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/John_McKeon_(New_Jersey)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/John_F._McKeon"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/55071/john-mckeon"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/john-mckeon-7bb671168"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.njleg.state.nj.us/api/legislatorData/legislatorBio/207"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.njleg.state.nj.us/downloads.asp"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

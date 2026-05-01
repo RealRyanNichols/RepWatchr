@@ -1,0 +1,69 @@
+{
+  "id": "cathy-osten",
+  "name": "Cathy Osten",
+  "firstName": "Cathy",
+  "lastName": "Osten",
+  "party": "D",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-19",
+  "jurisdiction": "Connecticut Senate",
+  "county": [
+    "Connecticut"
+  ],
+  "termStart": "2013-01-09",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 2700, Legislative Office Building 300 Capitol Ave., Hartford, CT 06106",
+    "phone": "860-240-0579",
+    "email": "osten@senatedems.ct.gov",
+    "website": "https://cga.ct.gov/asp/CGABillStatus/CGAMemberBills.asp?dist_code=%27S19%27&dist_name=Osten,%20Catherine%20A."
+  },
+  "bio": "Cathy Osten serves as State Senator for Connecticut Senate District 19. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "CT",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://cga.ct.gov/asp/CGABillStatus/CGAMemberBills.asp?dist_code=%27S19%27&dist_name=Osten,%20Catherine%20A."
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ct/legislature/Catherine-A-Osten-aec1fe1b-02ac-4802-be69-8714ec0b848e.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "ftp://ftp.cga.ct.gov/pub/data/LegislatorDatabase.csv"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Catherine_Osten"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Cathy_Osten"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/126682/cathy-osten"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/cathy-osten-a444981a"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.senatedems.ct.gov/Osten.php"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.senatedems.ct.gov/senator/cathy-osten"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.senatedems.ct.gov/senator/cathy-osten/bio"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

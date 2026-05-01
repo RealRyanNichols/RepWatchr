@@ -1,0 +1,71 @@
+{
+  "id": "lloyd-larsen",
+  "name": "Lloyd Larsen",
+  "firstName": "Lloyd",
+  "lastName": "Larsen",
+  "photo": "/images/officials/state-legislature/wy/lloyd-larsen.jpg",
+  "photoSourceUrl": "https://wyoleg.gov/LegislatorSummary/Photos/68th-LarsenLloyd.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-54",
+  "jurisdiction": "Wyoming House of Representatives",
+  "county": [
+    "Wyoming"
+  ],
+  "termStart": "2013-01-08",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "State Capitol 200 W. 24th St., Cheyenne, WY 82002",
+    "email": "lloyd.larsen@wyoleg.gov",
+    "website": "https://www.wyoleg.gov/Legislators/2023/H/1988"
+  },
+  "bio": "Lloyd Larsen serves as State Representative for Wyoming House of Representatives District 54. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "WY",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.wyoleg.gov/Legislators/2023/H/1988"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/wy/legislature/Lloyd-Larsen-6466bd0e-d531-4ac0-8667-3e7f34a32f9a.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://wyoleg.gov/LegislatorSummary/Photos/68th-LarsenLloyd.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Lloyd_Charles_Larsen"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Lloyd_Larsen"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/140069/lloyd-larsen"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/lloyd-larsen-ab29647"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.wyoleg.gov/Legislators/2025/H/1988"
+    },
+    {
+      "title": "Public source",
+      "url": "https://wyoleg.gov/Legislators/2019/R/1988"
+    },
+    {
+      "title": "Public source",
+      "url": "https://wyoleg.gov/Legislators/2021/R/1988"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

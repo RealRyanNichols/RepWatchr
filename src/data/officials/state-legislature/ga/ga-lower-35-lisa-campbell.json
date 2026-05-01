@@ -1,0 +1,65 @@
+{
+  "id": "lisa-campbell",
+  "name": "Lisa Campbell",
+  "firstName": "Lisa",
+  "lastName": "Campbell",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-35",
+  "jurisdiction": "Georgia House of Representatives",
+  "county": [
+    "Georgia"
+  ],
+  "termStart": "2023-01-09",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 507-F, Coverdell Legislative Office Building 18 Capitol Square SW, Atlanta, GA 30334",
+    "phone": "404-656-0202",
+    "email": "lisa.campbell@house.ga.gov",
+    "website": "https://www.legis.ga.gov/members/house"
+  },
+  "bio": "Lisa Campbell serves as State Representative for Georgia House of Representatives District 35. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "GA",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.legis.ga.gov/members/house"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ga/legislature/Lisa-Campbell-3a23acfd-5ce6-4e47-b641-1efdab05bdca.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Lisa_Campbell_(Georgia)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Lisa_Campbell_(politician)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/190211/lisa-campbell"
+    },
+    {
+      "title": "API member detail (requires authorization token)",
+      "url": "https://www.legis.ga.gov/api/members/detail/5023?session=1031&chamber=1"
+    },
+    {
+      "title": "API members list (requires authorization token)",
+      "url": "https://www.legis.ga.gov/api/members/list/1031"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.legis.ga.gov/members/house/5023"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/lisa-campbell-a804312"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

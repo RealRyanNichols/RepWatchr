@@ -1,0 +1,55 @@
+{
+  "id": "russell-coleman",
+  "name": "Russell Coleman",
+  "firstName": "Russell",
+  "lastName": "Coleman",
+  "photo": "/images/officials/state-executive/ky/russell-coleman.jpg",
+  "photoSourceUrl": "https://www.ag.ky.gov/about/SiteAssets/Pages/Attorney-General/Russell-Coleman-400x500.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "Attorney General",
+  "district": "Kentucky",
+  "jurisdiction": "Kentucky statewide public office",
+  "county": [
+    "Kentucky"
+  ],
+  "termStart": "2024-01-01",
+  "termEnd": "2028-01-03",
+  "contactInfo": {
+    "office": "1024 Capital Center Drive, Suite 200; Frankfort, KY 40601",
+    "phone": "502-696-5300",
+    "website": "https://www.ag.ky.gov/"
+  },
+  "bio": "Russell Coleman is listed as Attorney General for Kentucky. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "KY",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.ag.ky.gov/"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ky/executive/Russell-Coleman-542cf596-f393-4fcf-b2d6-7439e7726328.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://www.ag.ky.gov/about/SiteAssets/Pages/Attorney-General/Russell-Coleman-400x500.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.ag.ky.gov/about/Pages/Attorney-General.aspx"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Russell_Coleman"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.naag.org/attorney-general/russell-coleman/"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

@@ -1,0 +1,72 @@
+{
+  "id": "johnny-garrett",
+  "name": "Johnny Garrett",
+  "firstName": "Johnny",
+  "lastName": "Garrett",
+  "photo": "/images/officials/state-legislature/tn/johnny-garrett.jpg",
+  "photoSourceUrl": "https://www.spencerfane.com/wp-content/uploads/2023/05/garrett-j-731x1024.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-45",
+  "jurisdiction": "Tennessee House of Representatives",
+  "county": [
+    "Tennessee"
+  ],
+  "termStart": "2018-11-06",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 608, Cordell Hull Building 425 Rep. John Lewis Way North, Nashville, TN 37243",
+    "phone": "615-741-3893",
+    "email": "rep.johnny.garrett@capitol.tn.gov",
+    "website": "https://wapp.capitol.tn.gov/apps/legislatorinfo/member.aspx?district=H45"
+  },
+  "bio": "Johnny Garrett serves as State Representative for Tennessee House of Representatives District 45. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "TN",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://wapp.capitol.tn.gov/apps/legislatorinfo/member.aspx?district=H45"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/tn/legislature/Johnny-Garrett-8aeb3cc6-b0ca-4af6-ae9d-06aca0c6ae14.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://www.spencerfane.com/wp-content/uploads/2023/05/garrett-j-731x1024.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Johnny_Garrett"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Johnny_Garrett_(politician)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://wapp.capitol.tn.gov/apps/LegislatorInfo/directory.aspx?chamber=H"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.capitol.tn.gov/house/members"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.capitol.tn.gov/house/members/"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.capitol.tn.gov/house/members/h45.html"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/johnnycgarrett"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

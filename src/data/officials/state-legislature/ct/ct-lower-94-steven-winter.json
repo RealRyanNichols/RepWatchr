@@ -1,0 +1,64 @@
+{
+  "id": "steven-winter",
+  "name": "Steven Winter",
+  "firstName": "Steven",
+  "lastName": "Winter",
+  "photo": "/images/officials/state-legislature/ct/steven-winter.jpg",
+  "photoSourceUrl": "https://static.wixstatic.com/media/12e53d_1d12835cb6764b638fb9f744a2c18bcc~mv2.jpg/v1/fill/w_804,h_804,fp_0.50_0.37,q_85,usm_0.66_1.00_0.01,enc_auto/20240604-Dixwell-8480-EDIT.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-94",
+  "jurisdiction": "Connecticut House of Representatives",
+  "county": [
+    "Connecticut"
+  ],
+  "termStart": "2025-01-08",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 4016, Legislative Office Building 300 Capitol Ave., Hartford, CT 06106",
+    "phone": "860-240-8585",
+    "email": "steve.winter@cga.ct.gov",
+    "website": "https://www.housedems.ct.gov/Winter"
+  },
+  "bio": "Steven Winter serves as State Representative for Connecticut House of Representatives District 94. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "CT",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.housedems.ct.gov/Winter"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ct/legislature/Steven-Winter-17c7aeb7-7f31-4ca3-9d8c-041451663ff0.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://static.wixstatic.com/media/12e53d_1d12835cb6764b638fb9f744a2c18bcc~mv2.jpg/v1/fill/w_804,h_804,fp_0.50_0.37,q_85,usm_0.66_1.00_0.01,enc_auto/20240604-Dixwell-8480-EDIT.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Steven_Winter"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Steven_Winter_(Connecticut_politician)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/199276/steven-winter"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.housedems.ct.gov/Winter/Biography"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/steven-winter-61544718"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

@@ -1,0 +1,64 @@
+{
+  "id": "jennifer-white-holland",
+  "name": "Jennifer White Holland",
+  "firstName": "Jennifer",
+  "lastName": "White Holland",
+  "photo": "/images/officials/state-legislature/md/jennifer-white-holland.jpg",
+  "photoSourceUrl": "https://mgaleg.maryland.gov/2024RS/images/white01.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "Delegate",
+  "district": "HD-10",
+  "jurisdiction": "Maryland House of Delegates",
+  "county": [
+    "Maryland"
+  ],
+  "termStart": "2023-01-11",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 319, Lowe House Office Building 6 Bladen St., Annapolis, MD 21401",
+    "phone": "410-841-3744",
+    "email": "jennifer.white@house.maryland.gov",
+    "website": "https://mgaleg.maryland.gov/mgawebsite/Members/Details/white01"
+  },
+  "bio": "Jennifer White Holland serves as Delegate for Maryland House of Delegates District 10. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "MD",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://mgaleg.maryland.gov/mgawebsite/Members/Details/white01"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/md/legislature/Jennifer-White-e9d8fb0f-3272-47c8-8926-28c7bdfc19ca.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://mgaleg.maryland.gov/2024RS/images/white01.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Jennifer_White_(Maryland)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Jennifer_White_Holland"
+    },
+    {
+      "title": "Public source",
+      "url": "https://votejenniferwhite.com/bio-1"
+    },
+    {
+      "title": "Public source",
+      "url": "https://votejenniferwhite.com/jen-for-district-10"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/jenniferw1"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

@@ -1,0 +1,60 @@
+{
+  "id": "andre-carroll",
+  "name": "Andre Carroll",
+  "firstName": "Andre",
+  "lastName": "Carroll",
+  "photo": "/images/officials/state-legislature/pa/andre-carroll.jpg",
+  "photoSourceUrl": "https://storage.googleapis.com/enview-public-general/legislative-people-photos/150754.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-201",
+  "jurisdiction": "Pennsylvania House of Representatives",
+  "county": [
+    "Pennsylvania"
+  ],
+  "termStart": "2024-09-30",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 6B, East Wing P.O. Box 202201, Harrisburg, PA 17120",
+    "phone": "717-787-3181",
+    "email": "repcarroll@pahouse.net",
+    "website": "https://www.pahouse.com/Carroll/"
+  },
+  "bio": "Andre Carroll serves as State Representative for Pennsylvania House of Representatives District 201. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "PA",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.pahouse.com/Carroll/"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/pa/legislature/Andre-Carroll-628312bf-7920-44b7-b226-90c92f92a123.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://storage.googleapis.com/enview-public-general/legislative-people-photos/150754.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Andre_Carroll"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/andre-d-carroll-317518b9"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.pahouse.com/Carroll"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.palegis.us/house/members/bio/2019/rep-carroll"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

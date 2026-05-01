@@ -1,0 +1,69 @@
+{
+  "id": "earl-harris",
+  "name": "Earl Harris",
+  "firstName": "Earl",
+  "lastName": "Harris",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-2",
+  "jurisdiction": "Indiana House of Representatives",
+  "county": [
+    "Indiana"
+  ],
+  "termStart": "2016-11-09",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "200 W. Washington St., Indianapolis, IN 46204",
+    "phone": "800-382-9842",
+    "email": "h2@iga.in.gov",
+    "website": "https://iga.in.gov/legislative/2021/legislators/legislator_earl_harris_1"
+  },
+  "bio": "Earl Harris serves as State Representative for Indiana House of Representatives District 2. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "IN",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://iga.in.gov/legislative/2021/legislators/legislator_earl_harris_1"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/in/legislature/Earl-Harris-e0aaea95-033f-49d8-9be6-3875fc3b8efe.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://api.iga.in.gov/2021/legislators/earl_harris_1"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Earl_Harris,_Jr."
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Earl_Harris_Jr."
+    },
+    {
+      "title": "Public source",
+      "url": "https://iga.in.gov/legislative/2024/legislators/legislator_earl_harris_1"
+    },
+    {
+      "title": "Public source",
+      "url": "https://iga.in.gov/legislative/2026/legislators/legislator_earl_harris_1"
+    },
+    {
+      "title": "Public source",
+      "url": "https://indianahousedemocrats.org/members"
+    },
+    {
+      "title": "Public source",
+      "url": "https://indianahousedemocrats.org/members/earl-l-harris-jr"
+    },
+    {
+      "title": "Public source",
+      "url": "https://indianahousedemocrats.org/members/earl-l-harris-jr/full"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

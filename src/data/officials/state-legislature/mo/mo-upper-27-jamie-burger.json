@@ -1,0 +1,72 @@
+{
+  "id": "jamie-burger",
+  "name": "Jamie Burger",
+  "firstName": "Jamie",
+  "lastName": "Burger",
+  "photo": "/images/officials/state-legislature/mo/jamie-burger.jpg",
+  "photoSourceUrl": "https://house.mo.gov/MemberPhoto.aspx?id=2237",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-27",
+  "jurisdiction": "Missouri Senate",
+  "county": [
+    "Missouri"
+  ],
+  "termStart": "2025-01-08",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 334, 201 W. Capitol Ave., Jefferson City, MO 65101",
+    "phone": "573-751-2459",
+    "email": "jamie.burger@senate.mo.gov",
+    "website": "https://house.mo.gov/MemberDetails.aspx?district=148"
+  },
+  "bio": "Jamie Burger serves as State Senator for Missouri Senate District 27. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "MO",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://house.mo.gov/MemberDetails.aspx?district=148"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/mo/legislature/Jamie-Burger-87967de8-0f0d-45d5-9248-2767f9157d7b.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://house.mo.gov/MemberPhoto.aspx?id=2237"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Jamie_Burger"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Jamie_Burger"
+    },
+    {
+      "title": "Public source",
+      "url": "https://house.mo.gov/MemberDetails.aspx?year=2021&code=R&district=148"
+    },
+    {
+      "title": "Public source",
+      "url": "https://house.mo.gov/MemberDetails.aspx?year=2023&code=R&district=148"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/89858/jamie-burger"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.senate.mo.gov/Senators/Member/27"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.senate.mo.gov/Senators/Member?id=6376"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

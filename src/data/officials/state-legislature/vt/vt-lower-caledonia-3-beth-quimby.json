@@ -1,0 +1,56 @@
+{
+  "id": "beth-quimby",
+  "name": "Beth Quimby",
+  "firstName": "Beth",
+  "lastName": "Quimby",
+  "photo": "/images/officials/state-legislature/vt/beth-quimby.jpg",
+  "photoSourceUrl": "https://legislature.vermont.gov/Documents/Legislators/Quimby,%20Beth.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-Caledonia-3",
+  "jurisdiction": "Vermont House of Representatives",
+  "county": [
+    "Vermont"
+  ],
+  "termStart": "2024-03-12",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Vermont State House 115 State St., Montpelier, VT 05633",
+    "phone": "802-828-2228",
+    "email": "bquimby@leg.state.vt.us",
+    "website": "https://legislature.vermont.gov/people/single/2024/39966"
+  },
+  "bio": "Beth Quimby serves as State Representative for Vermont House of Representatives District Caledonia-3. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "VT",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://legislature.vermont.gov/people/single/2024/39966"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/vt/legislature/Beth-Quimby-54f186e0-f30c-410a-bae4-bbd443611e77.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://legislature.vermont.gov/Documents/Legislators/Quimby,%20Beth.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Beth_Quimby"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Beth_Quimby"
+    },
+    {
+      "title": "Public source",
+      "url": "https://legislature.vermont.gov/people/single/2026/39966"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

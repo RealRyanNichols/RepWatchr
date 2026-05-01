@@ -1,0 +1,52 @@
+{
+  "id": "mike-chaisson",
+  "name": "Mike Chaisson",
+  "firstName": "Mike",
+  "lastName": "Chaisson",
+  "photo": "/images/officials/state-legislature/ma/mike-chaisson.jpg",
+  "photoSourceUrl": "https://malegislature.gov/Legislators/Profile/170/MSC1.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-1st Bristol",
+  "jurisdiction": "Massachusetts House of Representatives",
+  "county": [
+    "Massachusetts"
+  ],
+  "termStart": "2025-01-01",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 540, State House 24 Beacon St., Boston, MA 02133",
+    "phone": "617-722-2090",
+    "email": "michael.chaisson@mahouse.gov",
+    "website": "https://malegislature.gov/Legislators/Profile/MSC1"
+  },
+  "bio": "Mike Chaisson serves as State Representative for Massachusetts House of Representatives District 1st Bristol. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "MA",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://malegislature.gov/Legislators/Profile/MSC1"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ma/legislature/Mike-Chaisson-0a74c581-eb5c-4935-b5c3-f4a77e6dcd31.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://malegislature.gov/Legislators/Profile/170/MSC1.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Michael_Chaisson"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/michael-chaisson-1720611b9"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

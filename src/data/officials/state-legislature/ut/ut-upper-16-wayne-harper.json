@@ -1,0 +1,68 @@
+{
+  "id": "wayne-harper",
+  "name": "Wayne Harper",
+  "firstName": "Wayne",
+  "lastName": "Harper",
+  "photo": "/images/officials/state-legislature/ut/wayne-harper.jpg",
+  "photoSourceUrl": "https://le.utah.gov/images/legislator/HARPEWA.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-16",
+  "jurisdiction": "Utah Senate",
+  "county": [
+    "Utah"
+  ],
+  "termStart": "2023-01-01",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "P.O. Box 145115 350 N. State St., Suite 320, Salt Lake City, UT 84114",
+    "phone": "801-538-1035",
+    "email": "wharper@le.utah.gov",
+    "website": "https://disclosures.utah.gov/Search/PublicSearch/FolderDetails/1070"
+  },
+  "bio": "Wayne Harper serves as State Senator for Utah Senate District 16. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "UT",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://disclosures.utah.gov/Search/PublicSearch/FolderDetails/1070"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ut/legislature/Wayne-A-Harper-c351d354-5397-4f6e-b67d-98c41cea0d2c.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://le.utah.gov/images/legislator/HARPEWA.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Wayne_Harper"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Wayne_Harper"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/10551/wayne-harper"
+    },
+    {
+      "title": "Public source",
+      "url": "https://le.utah.gov/data/legislators.json"
+    },
+    {
+      "title": "Public source",
+      "url": "https://senate.utah.gov/sen/HARPEWA"
+    },
+    {
+      "title": "Public source",
+      "url": "https://senate.utah.gov/sen/HARPEWA/"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

@@ -1,0 +1,72 @@
+{
+  "id": "monique-miller",
+  "name": "Monique Miller",
+  "firstName": "Monique",
+  "lastName": "Miller",
+  "photo": "/images/officials/state-legislature/fl/monique-miller.jpg",
+  "photoSourceUrl": "https://s3.amazonaws.com/ballotpedia-api4/files/thumbs/200/300/Monique_Miller.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-33",
+  "jurisdiction": "Florida House of Representatives",
+  "county": [
+    "Florida"
+  ],
+  "termStart": "2024-11-05",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 1301, The Capitol 402 S. Monroe St., Tallahassee, FL 32399",
+    "phone": "850-717-5033",
+    "email": "monique.miller@flhouse.gov",
+    "website": "https://www.flhouse.gov/Sections/Representatives/custom/details.aspx?MemberId=4913"
+  },
+  "bio": "Monique Miller serves as State Representative for Florida House of Representatives District 33. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "FL",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.flhouse.gov/Sections/Representatives/custom/details.aspx?MemberId=4913"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/fl/legislature/Monique-Miller-4a001cb2-e0ab-4036-a85d-b4f8ab3664cc.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://s3.amazonaws.com/ballotpedia-api4/files/thumbs/200/300/Monique_Miller.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Monique_Miller"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Monique_Miller_(politician)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/153863/monique-miller"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.flhouse.gov/Sections/Representatives/details.aspx?MemberId=4913"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.flhouse.gov/Sections/Representatives/details.aspx?MemberId=4913&LegislativeTermId=91"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/monique-miller-44a971"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.myfloridahouse.gov/Sections/Representatives/details.aspx?MemberId=4913&LegislativeTermId=91"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

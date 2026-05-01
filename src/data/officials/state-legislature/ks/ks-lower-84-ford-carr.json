@@ -1,0 +1,69 @@
+{
+  "id": "ford-carr",
+  "name": "Ford Carr",
+  "firstName": "Ford",
+  "lastName": "Carr",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-84",
+  "jurisdiction": "Kansas House of Representatives",
+  "county": [
+    "Kansas"
+  ],
+  "termStart": "2022-09-30",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "State Capitol Room 45-S, Kansas  Building 300 SW 10th St., Topeka, KS 66612",
+    "phone": "785-296-7649",
+    "email": "ford.carr@house.ks.gov",
+    "website": "https://www.kslegislature.gov/li/b2025_26/members/rep_carr_ford_1/"
+  },
+  "bio": "Ford Carr serves as State Representative for Kansas House of Representatives District 84. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "KS",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.kslegislature.gov/li/b2025_26/members/rep_carr_ford_1/"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ks/legislature/Ford-Carr-96643a66-5a00-41ba-9aa6-fc126a92849c.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Ford_Carr"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Ford_Carr"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/210963/ford-carr"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.kslegislature.gov/li/b2025_26/members/rep_carr_ford_1"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.kslegislature.org/li/api/v11/rev-1/members/rep_carr_ford_1"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.kslegislature.org/li/api/v11/rev-1/members/rep_carr_ford_1/"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.kslegislature.org/li/b2023_24/members/rep_carr_ford_1"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.kslegislature.org/li/b2023_24/members/rep_carr_ford_1/"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

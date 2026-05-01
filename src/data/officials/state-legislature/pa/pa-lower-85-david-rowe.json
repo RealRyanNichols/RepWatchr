@@ -1,0 +1,61 @@
+{
+  "id": "david-rowe",
+  "name": "David Rowe",
+  "firstName": "David",
+  "lastName": "Rowe",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-85",
+  "jurisdiction": "Pennsylvania House of Representatives",
+  "county": [
+    "Pennsylvania"
+  ],
+  "termStart": "2019-09-17",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 414, Main Capitol Building P.O. Box 202085, Harrisburg, PA 17120",
+    "phone": "717-787-3443",
+    "email": "drowe@pahousegop.com",
+    "website": "https://www.legis.state.pa.us/cfdocs/legis/home/member_information/House_bio.cfm?id=1871"
+  },
+  "bio": "David Rowe serves as State Representative for Pennsylvania House of Representatives District 85. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "PA",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.legis.state.pa.us/cfdocs/legis/home/member_information/House_bio.cfm?id=1871"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/pa/legislature/David-Rowe-c88ccd9a-3378-4284-9dc6-767a4826526e.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/David_Rowe"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/David_H._Rowe"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.legis.state.pa.us/cfdocs/legis/home/member_information/mbrList.cfm?body=H&sort=alpha"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.legis.state.pa.us/cfdocs/legis/home/member_information/representatives_alpha.cfm"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.palegis.us/house/members/bio/1871/rep-rowe"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.repdavidrowe.com"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

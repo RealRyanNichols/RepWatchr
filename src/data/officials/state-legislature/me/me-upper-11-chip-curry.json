@@ -1,0 +1,72 @@
+{
+  "id": "chip-curry",
+  "name": "Chip Curry",
+  "firstName": "Chip",
+  "lastName": "Curry",
+  "photo": "/images/officials/state-legislature/me/chip-curry.jpg",
+  "photoSourceUrl": "https://legislature.maine.gov/uploads/visual_edit/chipcurry-web-1024x683.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-11",
+  "jurisdiction": "Maine Senate",
+  "county": [
+    "Maine"
+  ],
+  "termStart": "2020-12-02",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "3 State House Station, Augusta, ME 04333",
+    "phone": "207-287-1515",
+    "email": "chip.curry@legislature.maine.gov",
+    "website": "https://legislature.maine.gov/District-11"
+  },
+  "bio": "Chip Curry serves as State Senator for Maine Senate District 11. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "ME",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://legislature.maine.gov/District-11"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/me/legislature/Glenn-Chip-Curry-6d397c09-c2d3-41ff-b33a-c42efae4f187.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://legislature.maine.gov/uploads/visual_edit/chipcurry-web-1024x683.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Glenn_Curry"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Chip_Curry"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/137202/chip-curry"
+    },
+    {
+      "title": "Public source",
+      "url": "https://legislature.maine.gov/district11"
+    },
+    {
+      "title": "Public source",
+      "url": "https://legislature.maine.gov/District11"
+    },
+    {
+      "title": "Public source",
+      "url": "https://legislature.maine.gov/uploads/visual_edit/130th-senate-contact-information-as-of-31221.xlsx"
+    },
+    {
+      "title": "Public source",
+      "url": "https://legislature.maine.gov/uploads/visual_edit/131-senator-contact-information-2.xlsx"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

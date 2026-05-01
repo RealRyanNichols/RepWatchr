@@ -1,0 +1,68 @@
+{
+  "id": "will-bruck",
+  "name": "Will Bruck",
+  "firstName": "Will",
+  "lastName": "Bruck",
+  "photo": "/images/officials/state-legislature/mi/will-bruck.jpg",
+  "photoSourceUrl": "https://www.house.mi.gov/media/Representatives/Bruck-030.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-30",
+  "jurisdiction": "Michigan House of Representatives",
+  "county": [
+    "Michigan"
+  ],
+  "termStart": "2023-01-01",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room N-794, Anderson House Office Building 124 N. Capitol Ave., Lansing, MI 48933",
+    "phone": "517-373-7768",
+    "email": "williambruck@house.mi.gov",
+    "website": "https://gophouse.org/member/RepWilliamBruck/posts"
+  },
+  "bio": "Will Bruck serves as State Representative for Michigan House of Representatives District 30. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "MI",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://gophouse.org/member/RepWilliamBruck/posts"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/mi/legislature/William-Bruck-a9f36e83-23ad-4912-a183-8b1e93ef3e81.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://www.house.mi.gov/media/Representatives/Bruck-030.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/William_Bruck"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/206654/william-bruck"
+    },
+    {
+      "title": "Member Details Page",
+      "url": "https://RepBruck.com"
+    },
+    {
+      "title": "Members List Page",
+      "url": "https://www.house.mi.gov/AllRepresentatives"
+    },
+    {
+      "title": "Member Details Page",
+      "url": "https://www.house.mi.gov/repdetail/repWilliamBruck"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/william-bruck-29351284"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

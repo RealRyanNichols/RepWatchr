@@ -1,0 +1,72 @@
+{
+  "id": "phillip-pettus",
+  "name": "Phillip Pettus",
+  "firstName": "Phillip",
+  "lastName": "Pettus",
+  "photo": "/images/officials/state-legislature/al/phillip-pettus.jpg",
+  "photoSourceUrl": "https://www.legislature.state.al.us/pdf/house/members/Pettus_1.png",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-1",
+  "jurisdiction": "Alabama House of Representatives",
+  "county": [
+    "Alabama"
+  ],
+  "termStart": "",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 434, 11 S. Union St., Montgomery, AL 36130",
+    "phone": "334-261-0591",
+    "email": "phillip.pettus@alhouse.gov",
+    "website": "https://alison.legislature.state.al.us/house-leaders-members"
+  },
+  "bio": "Phillip Pettus serves as State Representative for Alabama House of Representatives District 1. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "AL",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://alison.legislature.state.al.us/house-leaders-members"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/al/legislature/Phillip-Pettus-a84a3fe8-5444-4db3-9f64-06ea0cba0e90.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://www.legislature.state.al.us/pdf/house/members/Pettus_1.png"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Phillip_Pettus"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Phillip_Pettus"
+    },
+    {
+      "title": "graphql endpoint for member information",
+      "url": "https://gql.api.alison.legislature.state.al.us/graphql"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/149977/phillip-pettus"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.legislature.state.al.us/aliswww/ISD/ALRepresentative.aspx?NAME=Pettus&OID_SPONSOR=100481&OID_PERSON=7700&SESSNAME="
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.legislature.state.al.us/aliswww/ISD/ALRepresentative.aspx?OID_SPONSOR=100481&OID_PERSON=7700"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.legislature.state.al.us/aliswww/ISD/House/ALRepresentatives.aspx"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

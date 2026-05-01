@@ -1,0 +1,64 @@
+{
+  "id": "bill-rabon",
+  "name": "Bill Rabon",
+  "firstName": "Bill",
+  "lastName": "Rabon",
+  "photo": "/images/officials/state-legislature/nc/bill-rabon.jpg",
+  "photoSourceUrl": "https://www.ncleg.gov/Members/MemberImage/S/303/Low",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-8",
+  "jurisdiction": "North Carolina Senate",
+  "county": [
+    "North Carolina"
+  ],
+  "termStart": "2011-01-01",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 2010, North Carolina Legislative Building 16 W. Jones St., Raleigh, NC 27601",
+    "phone": "919-733-5963",
+    "email": "bill.rabon@ncleg.gov",
+    "website": "https://www.ncleg.gov/Members/Biography/S/303"
+  },
+  "bio": "Bill Rabon serves as State Senator for North Carolina Senate District 8. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "NC",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.ncleg.gov/Members/Biography/S/303"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/nc/legislature/Bill-Rabon-ac7e8e60-b5cb-41c2-92f9-1bdf9204f79a.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://www.ncleg.gov/Members/MemberImage/S/303/Low"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/William_Rabon"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Bill_Rabon"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/campaign-finance/117772/bill-rabon"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/william-rabon-b4ab7827"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.ncleg.gov/Members/MemberTable/S"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

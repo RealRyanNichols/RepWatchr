@@ -1,0 +1,68 @@
+{
+  "id": "amy-nielsen",
+  "name": "Amy Nielsen",
+  "firstName": "Amy",
+  "lastName": "Nielsen",
+  "photo": "/images/officials/state-legislature/ia/amy-nielsen.jpg",
+  "photoSourceUrl": "https://www.legis.iowa.gov/photo?action=getPhoto&ga=91&pid=18050",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-85",
+  "jurisdiction": "Iowa House of Representatives",
+  "county": [
+    "Iowa"
+  ],
+  "termStart": "2023-01-01",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "State Capitol Building 1007 E. Grand Ave., Des Moines, IA 50319",
+    "phone": "515-281-3221",
+    "email": "amy.nielsen@legis.iowa.gov",
+    "website": "https://eepurl.com/gXNTL1"
+  },
+  "bio": "Amy Nielsen serves as State Representative for Iowa House of Representatives District 85. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "IA",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://eepurl.com/gXNTL1"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ia/legislature/Amy-Nielsen-0ed1d7f1-1471-4055-b674-582bf19c28b3.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://www.legis.iowa.gov/photo?action=getPhoto&ga=91&pid=18050"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Amy_Nielsen"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Amy_Nielsen"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.legis.iowa.gov/legislators/house"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.legis.iowa.gov/legislators/legislator?ga=90&personID=18050"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.legis.iowa.gov/legislators/legislator?personID=18050"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/amy-nielsen-150183b2"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

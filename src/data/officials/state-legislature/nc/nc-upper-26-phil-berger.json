@@ -1,0 +1,64 @@
+{
+  "id": "phil-berger",
+  "name": "Phil Berger",
+  "firstName": "Phil",
+  "lastName": "Berger",
+  "photo": "/images/officials/state-legislature/nc/phil-berger.jpg",
+  "photoSourceUrl": "https://www.ncleg.gov/Members/MemberImage/S/64/Low",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-26",
+  "jurisdiction": "North Carolina Senate",
+  "county": [
+    "North Carolina"
+  ],
+  "termStart": "2023-01-01",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 2007, North Carolina Legislative Building 16 W. Jones St., Raleigh, NC 27601",
+    "phone": "919-733-5708",
+    "email": "phil.berger@ncleg.gov",
+    "website": "https://www.ncleg.gov/Members/Biography/S/64"
+  },
+  "bio": "Phil Berger serves as State Senator for North Carolina Senate District 26. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "NC",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.ncleg.gov/Members/Biography/S/64"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/nc/legislature/Phil-Berger-f276e61a-c569-4924-b302-caeda17a306a.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://www.ncleg.gov/Members/MemberImage/S/64/Low"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Phil_Berger"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Philip_E._Berger"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/41493/philip-berger-sr"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/phil-berger-1b84464b"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.ncleg.gov/Members/MemberTable/S"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

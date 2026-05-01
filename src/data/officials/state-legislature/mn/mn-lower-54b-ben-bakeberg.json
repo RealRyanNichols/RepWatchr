@@ -1,0 +1,72 @@
+{
+  "id": "ben-bakeberg",
+  "name": "Ben Bakeberg",
+  "firstName": "Ben",
+  "lastName": "Bakeberg",
+  "photo": "/images/officials/state-legislature/mn/ben-bakeberg.jpg",
+  "photoSourceUrl": "https://www.house.mn.gov/hinfo/memberimgls94/54B.gif?v=112221",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-54B",
+  "jurisdiction": "Minnesota House of Representatives",
+  "county": [
+    "Minnesota"
+  ],
+  "termStart": "2023-01-03",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Centennial Office Building 658 Cedar St., Second Floor, St. Paul, MN 55155",
+    "phone": "651-296-5185",
+    "email": "rep.ben.bakeberg@house.mn.gov",
+    "website": "https://www.house.mn.gov/members/profile/15569"
+  },
+  "bio": "Ben Bakeberg serves as State Representative for Minnesota House of Representatives District 54B. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "MN",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.house.mn.gov/members/profile/15569"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/mn/legislature/Ben-Bakeberg-f8d52f8b-1b8c-454d-87be-42edd3100511.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://www.house.mn.gov/hinfo/memberimgls94/54B.gif?v=112221"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Ben_Bakeberg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://benbakebergmn.com/about"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Ben_Bakeberg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/208061/ben-bakeberg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.benbakebergmn.com/about"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.house.leg.state.mn.us/members/hmem.asp"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/ben-bakeberg-53883610b"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

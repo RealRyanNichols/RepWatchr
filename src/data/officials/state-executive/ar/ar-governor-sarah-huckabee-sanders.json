@@ -1,0 +1,47 @@
+{
+  "id": "sarah-huckabee-sanders",
+  "name": "Sarah Huckabee Sanders",
+  "firstName": "Sarah",
+  "lastName": "Sanders",
+  "photo": "/images/officials/state-executive/ar/sarah-huckabee-sanders.jpg",
+  "photoSourceUrl": "https://governor.arkansas.gov/wp-content/uploads/GovSHSOfficialHeadshot-2-683x1024.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "Governor",
+  "district": "Arkansas",
+  "jurisdiction": "Arkansas statewide public office",
+  "county": [
+    "Arkansas"
+  ],
+  "termStart": "2023-01-10",
+  "termEnd": "2027-01-12",
+  "contactInfo": {
+    "office": "Governor Sarah Huckabee Sanders; State Capitol Room 250; 500 Woodlane St.; Little Rock, AR 72201",
+    "phone": "501-682-2345",
+    "website": "https://governor.arkansas.gov/",
+    "socialMedia": {
+      "x": "https://x.com/SarahHuckabee",
+      "twitter": "https://x.com/SarahHuckabee"
+    }
+  },
+  "bio": "Sarah Huckabee Sanders is listed as Governor for Arkansas. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "AR",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://governor.arkansas.gov/"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ar/executive/Sarah-Sanders-1c9262ce-53a4-4d0c-ab9e-45edb5377fa0.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://governor.arkansas.gov/wp-content/uploads/GovSHSOfficialHeadshot-2-683x1024.jpg"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

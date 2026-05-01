@@ -1,0 +1,60 @@
+{
+  "id": "cal-warwas",
+  "name": "Cal Warwas",
+  "firstName": "Cal",
+  "lastName": "Warwas",
+  "photo": "/images/officials/state-legislature/mn/cal-warwas.jpg",
+  "photoSourceUrl": "https://www.house.mn.gov/hinfo/memberimgls94/07B.gif?v=112221",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-7B",
+  "jurisdiction": "Minnesota House of Representatives",
+  "county": [
+    "Minnesota"
+  ],
+  "termStart": "2025-01-14",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Centennial Office Building 658 Cedar St., Second Floor, St. Paul, MN 55155",
+    "phone": "651-296-0170",
+    "email": "rep.cal.warwas@house.mn.gov",
+    "website": "https://www.house.mn.gov/members/profile/15648"
+  },
+  "bio": "Cal Warwas serves as State Representative for Minnesota House of Representatives District 7B. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "MN",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.house.mn.gov/members/profile/15648"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/mn/legislature/Cal-Warwas-0fcdf023-48a4-4f62-92d0-0be6715bf229.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://www.house.mn.gov/hinfo/memberimgls94/07B.gif?v=112221"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Cal_Warwas"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/218714/cal-warwas"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/cal-warwas-15460187"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.lrl.mn.gov/legdb/fulldetail?ID=15648"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

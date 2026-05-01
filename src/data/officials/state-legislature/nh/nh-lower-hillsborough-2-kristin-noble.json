@@ -1,0 +1,64 @@
+{
+  "id": "kristin-noble",
+  "name": "Kristin Noble",
+  "firstName": "Kristin",
+  "lastName": "Noble",
+  "photo": "/images/officials/state-legislature/nh/kristin-noble.jpg",
+  "photoSourceUrl": "https://kristinnoble.com/wp-content/uploads/2022/06/Kristin-Noble1.png",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-Hillsborough 2",
+  "jurisdiction": "New Hampshire House of Representatives",
+  "county": [
+    "New Hampshire"
+  ],
+  "termStart": "2022-12-07",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "State House 107 N. Main St., Concord, NH 03301",
+    "phone": "603-271-3661",
+    "email": "kristin.noble@gc.nh.gov",
+    "website": "https://gc.nh.gov/house/members/member.aspx?pid=10626"
+  },
+  "bio": "Kristin Noble serves as State Representative for New Hampshire House of Representatives District Hillsborough 2. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "NH",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://gc.nh.gov/house/members/member.aspx?pid=10626"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/nh/legislature/Kristin-Noble-4246d501-b872-4cf9-bfd8-7ef21015da7a.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://kristinnoble.com/wp-content/uploads/2022/06/Kristin-Noble1.png"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Kristin_Noble"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Kristin_Noble"
+    },
+    {
+      "title": "Public source",
+      "url": "https://gencourt.state.nh.us/house/members/member.aspx?pid=10626"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/154477/kristin-noble"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.gencourt.state.nh.us/house/members/member.aspx?pid=10626"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

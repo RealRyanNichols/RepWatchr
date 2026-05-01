@@ -1,0 +1,73 @@
+{
+  "id": "kevin-payne",
+  "name": "Kevin Payne",
+  "firstName": "Kevin",
+  "lastName": "Payne",
+  "photo": "/images/officials/state-legislature/az/kevin-payne.jpg",
+  "photoSourceUrl": "https://www.azleg.gov/alisImages/MemberPhotos/55leg/House/PAYNE.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-27",
+  "jurisdiction": "Arizona Senate",
+  "county": [
+    "Arizona"
+  ],
+  "termStart": "2025-01-13",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 302, 1700 W. Washington St., Phoenix, AZ 85007",
+    "phone": "602-926-4854",
+    "email": "kpayne@azleg.gov",
+    "website": "https://www.azleg.gov/house-member/?legislature=55&legislator=2023",
+    "socialMedia": {
+      "x": "https://x.com/kevinpayneld21",
+      "twitter": "https://x.com/kevinpayneld21",
+      "facebook": "https://facebook.com/electkevinpayne"
+    }
+  },
+  "bio": "Kevin Payne serves as State Senator for Arizona Senate District 27. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "AZ",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.azleg.gov/house-member/?legislature=55&legislator=2023"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/az/legislature/Kevin-Payne-4b336587-cb71-4a49-9cf8-514cdd2771ff.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://www.azleg.gov/alisImages/MemberPhotos/55leg/House/PAYNE.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Kevin_Payne"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Kevin_Payne_(politician)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.azleg.gov/MemberRoster/?body=H"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.azleg.gov/memberroster/?body=H"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.azleg.gov/senate-member/?legislature=57&legislator=2387"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/kevin-payne-32a61895"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

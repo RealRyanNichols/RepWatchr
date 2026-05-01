@@ -1,0 +1,72 @@
+{
+  "id": "mike-bousselot",
+  "name": "Mike Bousselot",
+  "firstName": "Mike",
+  "lastName": "Bousselot",
+  "photo": "/images/officials/state-legislature/ia/mike-bousselot.jpg",
+  "photoSourceUrl": "https://www.legis.iowa.gov/photo?action=getPhoto&ga=91&pid=32076&pType=3",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-21",
+  "jurisdiction": "Iowa Senate",
+  "county": [
+    "Iowa"
+  ],
+  "termStart": "2023-01-03",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "1007 E. Grand Ave., Des Moines, IA 50319",
+    "phone": "515-281-3371",
+    "email": "mike.bousselot@legis.iowa.gov",
+    "website": "https://www.iowasenaterepublicans.com/senators/mike-bousselot/"
+  },
+  "bio": "Mike Bousselot serves as State Senator for Iowa Senate District 21. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "IA",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.iowasenaterepublicans.com/senators/mike-bousselot/"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ia/legislature/Mike-Bousselot-37784f85-492c-422c-93a3-9910867f68f9.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://www.legis.iowa.gov/photo?action=getPhoto&ga=91&pid=32076&pType=3"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Mike_Bousselot"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Mike_Bousselot"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.legis.iowa.gov/legislators/house"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.legis.iowa.gov/legislators/legislator?ga=89&personID=32076"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.legis.iowa.gov/legislators/legislator?ga=90&personID=32076"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.legis.iowa.gov/legislators/legislator?personID=32076"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.legis.iowa.gov/legislators/senate"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

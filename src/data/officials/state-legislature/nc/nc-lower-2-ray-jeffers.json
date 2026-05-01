@@ -1,0 +1,60 @@
+{
+  "id": "ray-jeffers",
+  "name": "Ray Jeffers",
+  "firstName": "Ray",
+  "lastName": "Jeffers",
+  "photo": "/images/officials/state-legislature/nc/ray-jeffers.jpg",
+  "photoSourceUrl": "https://www.ncleg.gov/Members/MemberImage/H/805/Low",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-2",
+  "jurisdiction": "North Carolina House of Representatives",
+  "county": [
+    "North Carolina"
+  ],
+  "termStart": "2023-01-01",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 1319, North Carolina Legislative Building 16 W. Jones St., Raleigh, NC 27601",
+    "phone": "919-715-0850",
+    "email": "ray.jeffers@ncleg.gov",
+    "website": "https://www.ncleg.gov/Members/Biography/H/805"
+  },
+  "bio": "Ray Jeffers serves as State Representative for North Carolina House of Representatives District 2. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "NC",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.ncleg.gov/Members/Biography/H/805"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/nc/legislature/B-Ray-Jeffers-064a56b9-d616-43a1-a3f2-ffd4938740d3.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://www.ncleg.gov/Members/MemberImage/H/805/Low"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Ray_Jeffers"
+    },
+    {
+      "title": "Public source",
+      "url": "https://rayjeffers.com/about"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/b-ray-jeffers-900a4549"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.ncleg.gov/Members/MemberTable/H"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

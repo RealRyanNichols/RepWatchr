@@ -1,0 +1,78 @@
+{
+  "id": "jeff-wardlaw",
+  "name": "Jeff Wardlaw",
+  "firstName": "Jeff",
+  "lastName": "Wardlaw",
+  "photo": "/images/officials/state-legislature/ar/jeff-wardlaw.jpg",
+  "photoSourceUrl": "https://www.arkleg.state.ar.us/Content/photos/2023/House/387_sm.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-94",
+  "jurisdiction": "Arkansas House of Representatives",
+  "county": [
+    "Arkansas"
+  ],
+  "termStart": "2023-01-09",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "State Capitol Arkansas  500 Woodlane St., Suite 350, Little Rock, AR 72201",
+    "phone": "501-682-6211",
+    "email": "jeff@jeffwardlaw.com",
+    "website": "https://arkleg.state.ar.us/Legislators/Detail?member=Wardlaw",
+    "socialMedia": {
+      "x": "https://x.com/jeff_wardlaw",
+      "twitter": "https://x.com/jeff_wardlaw",
+      "facebook": "https://facebook.com/StateRepJeffWardlaw",
+      "instagram": "https://instagram.com/wardlaw2"
+    }
+  },
+  "bio": "Jeff Wardlaw serves as State Representative for Arkansas House of Representatives District 94. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "AR",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://arkleg.state.ar.us/Legislators/Detail?member=Wardlaw"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ar/legislature/Jeff-Wardlaw-80a1486d-1661-4409-adf4-63aacf4df148.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://www.arkleg.state.ar.us/Content/photos/2023/House/387_sm.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Jeff_R._Wardlaw"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Jeff_Wardlaw"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.arkansashouse.org/district/8"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.arkansashouse.org/district/94"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.arkleg.state.ar.us/Legislators/Detail?member=Wardlaw"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.arkleg.state.ar.us/Legislators/Detail?member=Wardlaw&ddBienniumSession=2019%2F2020F"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.arkleg.state.ar.us/Legislators/Detail?member=Wardlaw&ddBienniumSession=2021%2F2021R"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

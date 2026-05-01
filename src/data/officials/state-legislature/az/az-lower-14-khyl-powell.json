@@ -1,0 +1,60 @@
+{
+  "id": "khyl-powell",
+  "name": "Khyl Powell",
+  "firstName": "Khyl",
+  "lastName": "Powell",
+  "photo": "/images/officials/state-legislature/az/khyl-powell.jpg",
+  "photoSourceUrl": "https://s3.amazonaws.com/ballotpedia-api4/files/thumbs/200/300/Khyl_Powell_20240619_062043.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-14",
+  "jurisdiction": "Arizona House of Representatives",
+  "county": [
+    "Arizona"
+  ],
+  "termStart": "2025-01-13",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 342, 1700 W. Washington St., Phoenix, AZ 85007",
+    "phone": "602-926-3415",
+    "email": "kpowell@azleg.gov",
+    "website": "https://www.azleg.gov/house-member/?legislature=57&session=129&legislator=2362"
+  },
+  "bio": "Khyl Powell serves as State Representative for Arizona House of Representatives District 14. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "AZ",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.azleg.gov/house-member/?legislature=57&session=129&legislator=2362"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/az/legislature/Khyl-Powell-bd3fb0ce-720a-4137-bd45-87fb6bcf8649.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://s3.amazonaws.com/ballotpedia-api4/files/thumbs/200/300/Khyl_Powell_20240619_062043.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Khyl_Powell"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Khyl_Powell"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/216888/khyl-powell"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/khyl-powell-2bb84a11"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

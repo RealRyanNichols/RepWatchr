@@ -1,0 +1,64 @@
+{
+  "id": "marvin-holmes",
+  "name": "Marvin Holmes",
+  "firstName": "Marvin",
+  "lastName": "Holmes",
+  "photo": "/images/officials/state-legislature/md/marvin-holmes.jpg",
+  "photoSourceUrl": "https://mgaleg.maryland.gov/2025RS/images/holmes.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "Delegate",
+  "district": "HD-23",
+  "jurisdiction": "Maryland House of Delegates",
+  "county": [
+    "Maryland"
+  ],
+  "termStart": "2023-01-11",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 364, Taylor House Office Building 6 Bladen St., Annapolis, MD 21401",
+    "phone": "410-841-3310",
+    "email": "marvin.holmes@house.maryland.gov",
+    "website": "https://mgaleg.maryland.gov/mgawebsite/Members/Details/holmes"
+  },
+  "bio": "Marvin Holmes serves as Delegate for Maryland House of Delegates District 23. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "MD",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://mgaleg.maryland.gov/mgawebsite/Members/Details/holmes"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/md/legislature/Jr-Marvin-E-Holmes-5fff41d7-cea5-4e01-a4da-e4474d267691.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://mgaleg.maryland.gov/2025RS/images/holmes.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Marvin_Holmes_Jr."
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Marvin_E._Holmes_Jr."
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/19380/marvin-holmes-jr"
+    },
+    {
+      "title": "Public source",
+      "url": "https://mgaleg.maryland.gov/webmga/frmMain.aspx?pid=sponpage&tab=subject6&id=holmes&stab=01"
+    },
+    {
+      "title": "Public source",
+      "url": "https://msa.maryland.gov/msa/mdmanual/06hse/html/msa13964.html"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

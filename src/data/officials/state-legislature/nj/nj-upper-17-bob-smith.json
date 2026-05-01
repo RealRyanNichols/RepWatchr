@@ -1,0 +1,69 @@
+{
+  "id": "bob-smith",
+  "name": "Bob Smith",
+  "firstName": "Bob",
+  "lastName": "Smith",
+  "party": "D",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-17",
+  "jurisdiction": "New Jersey Senate",
+  "county": [
+    "New Jersey"
+  ],
+  "termStart": "2002-01-08",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "P.O. Box 068 State House, 145 W. State St., Trenton, NJ 08625",
+    "phone": "609-847-3905",
+    "email": "senbsmith@njleg.org",
+    "website": "https://www.njleg.state.nj.us/legislative-roster/53/senator-smith"
+  },
+  "bio": "Bob Smith serves as State Senator for New Jersey Senate District 17. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "NJ",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.njleg.state.nj.us/legislative-roster/53/senator-smith"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/nj/legislature/Bob-Smith-177d44ba-0c93-4e26-b245-84aa2239f7b4.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Bob_Smith,_New_Jersey_Senator"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Bob_Smith_(New_Jersey_State_Senator)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/4201/bob-smith"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/bob-smith-b9b7916"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.njleg.state.nj.us/api/legislatorData/legislatorBio/53"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.njleg.state.nj.us/downloads.asp"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.njleg.state.nj.us/legislative-roster"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.njleg.state.nj.us/members/abcroster.asp"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

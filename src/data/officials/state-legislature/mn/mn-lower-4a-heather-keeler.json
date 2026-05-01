@@ -1,0 +1,64 @@
+{
+  "id": "heather-keeler",
+  "name": "Heather Keeler",
+  "firstName": "Heather",
+  "lastName": "Keeler",
+  "photo": "/images/officials/state-legislature/mn/heather-keeler.jpg",
+  "photoSourceUrl": "https://www.house.mn.gov/hinfo/memberimgls94/04A.gif?v=112221",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-4A",
+  "jurisdiction": "Minnesota House of Representatives",
+  "county": [
+    "Minnesota"
+  ],
+  "termStart": "2021-01-05",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Centennial Office Building 658 Cedar St., Fifth Floor, St. Paul, MN 55155",
+    "phone": "651-296-5515",
+    "email": "rep.heather.keeler@house.mn.gov",
+    "website": "https://www.house.mn.gov/members/profile/15539"
+  },
+  "bio": "Heather Keeler serves as State Representative for Minnesota House of Representatives District 4A. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "MN",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.house.mn.gov/members/profile/15539"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/mn/legislature/Heather-Keeler-3ace0851-830e-42a1-8390-27c1142f2367.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://www.house.mn.gov/hinfo/memberimgls94/04A.gif?v=112221"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Heather_Keeler"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Heather_Keeler"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/194060/heather-keeler"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.house.leg.state.mn.us/members/hmem.asp"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/heather-keeler-1b3864121"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

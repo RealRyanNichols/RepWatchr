@@ -1,0 +1,64 @@
+{
+  "id": "kyle-harris",
+  "name": "Kyle Harris",
+  "firstName": "Kyle",
+  "lastName": "Harris",
+  "photo": "/images/officials/state-legislature/id/kyle-harris.jpg",
+  "photoSourceUrl": "https://legislature.idaho.gov/wp-content/uploads/sessioninfo/2025/directory/Harris9415.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-7A",
+  "jurisdiction": "Idaho House of Representatives",
+  "county": [
+    "Idaho"
+  ],
+  "termStart": "2024-12-01",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "P.O. Box 83720 700 W. Jefferson St., Boise, ID 83720",
+    "phone": "208-332-1133",
+    "email": "kharris@house.idaho.gov",
+    "website": "https://legislature.idaho.gov/legislators/membership/2025/id9415/"
+  },
+  "bio": "Kyle Harris serves as State Representative for Idaho House of Representatives District 7A. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "ID",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://legislature.idaho.gov/legislators/membership/2025/id9415/"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/id/legislature/Kyle-Harris-0c646770-75cb-4f65-b2af-fd7c933dfe24.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://legislature.idaho.gov/wp-content/uploads/sessioninfo/2025/directory/Harris9415.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Kyle_Harris_(Idaho)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Kyle_Harris_(politician)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/215941/kyle-harris"
+    },
+    {
+      "title": "Public source",
+      "url": "https://legislature.idaho.gov/legislators/membership/2025/id9415"
+    },
+    {
+      "title": "Public source",
+      "url": "https://legislature.idaho.gov/legislators/membership/2026/id9415"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

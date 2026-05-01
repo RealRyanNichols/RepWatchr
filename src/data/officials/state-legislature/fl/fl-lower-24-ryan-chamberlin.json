@@ -1,0 +1,69 @@
+{
+  "id": "ryan-chamberlin",
+  "name": "Ryan Chamberlin",
+  "firstName": "Ryan",
+  "lastName": "Chamberlin",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-24",
+  "jurisdiction": "Florida House of Representatives",
+  "county": [
+    "Florida"
+  ],
+  "termStart": "2023-05-16",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 1401, The Capitol 402 S. Monroe St., Tallahassee, FL 32399",
+    "phone": "850-717-5024",
+    "email": "ryan.chamberlin@flhouse.gov",
+    "website": "https://myfloridahouse.gov/Sections/Representatives/details.aspx?MemberId=4901&LegislativeTermId=90"
+  },
+  "bio": "Ryan Chamberlin serves as State Representative for Florida House of Representatives District 24. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "FL",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://myfloridahouse.gov/Sections/Representatives/details.aspx?MemberId=4901&LegislativeTermId=90"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/fl/legislature/Ryan-Chamberlin-baa03ffb-0948-4975-9e3a-c3fb9c0fcf40.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Ryan_Chamberlin"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Ryan_Chamberlin"
+    },
+    {
+      "title": "Public source",
+      "url": "https://myfloridahouse.gov/Sections/Representatives/details.aspx?MemberId=4901&LegislativeTermId=91"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ryanchamberlin.com"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.flhouse.gov/Sections/Representatives/custom/details.aspx?MemberId=4901"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.flhouse.gov/Sections/Representatives/details.aspx?MemberId=4901"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/ryandchamberlin"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.ryanchamberlin.com"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

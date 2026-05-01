@@ -1,0 +1,64 @@
+{
+  "id": "dalya-attar",
+  "name": "Dalya Attar",
+  "firstName": "Dalya",
+  "lastName": "Attar",
+  "photo": "/images/officials/state-legislature/md/dalya-attar.jpg",
+  "photoSourceUrl": "http://mgaleg.maryland.gov/2019RS/images/attar01.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-41",
+  "jurisdiction": "Maryland Senate",
+  "county": [
+    "Maryland"
+  ],
+  "termStart": "2025-01-24",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 122, James Senate Office Building 11 Bladen St., Annapolis, MD 21401",
+    "phone": "410-841-3697",
+    "email": "dalya.attar@senate.maryland.gov",
+    "website": "https://mgaleg.maryland.gov/mgawebsite/Members/Details/attar01"
+  },
+  "bio": "Dalya Attar serves as State Senator for Maryland Senate District 41. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "MD",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://mgaleg.maryland.gov/mgawebsite/Members/Details/attar01"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/md/legislature/Dalya-Attar-d848993b-65e9-4ea3-ab2a-dfaf796142cc.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "http://mgaleg.maryland.gov/2019RS/images/attar01.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Dalya_Attar"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Dalya_Attar"
+    },
+    {
+      "title": "Public source",
+      "url": "https://mgaleg.maryland.gov/mgawebsite/Members/Details/attar02"
+    },
+    {
+      "title": "Public source",
+      "url": "https://mgaleg.maryland.gov/webmga/frmMain.aspx?pid=sponpage&tab=subject6&id=attar01&stab=01"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/dalya-attar-b7375059"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

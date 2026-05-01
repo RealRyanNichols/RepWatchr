@@ -1,0 +1,70 @@
+{
+  "id": "judy-schwank",
+  "name": "Judy Schwank",
+  "firstName": "Judy",
+  "lastName": "Schwank",
+  "party": "D",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-11",
+  "jurisdiction": "Pennsylvania Senate",
+  "county": [
+    "Pennsylvania"
+  ],
+  "termStart": "2011-04-05",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 457, Main Capitol Senate Box 203011, Harrisburg, PA 17120",
+    "phone": "717-787-8925",
+    "email": "senatorschwank@pasenate.com",
+    "website": "https://www.legis.state.pa.us/cfdocs/legis/home/member_information/Senate_bio.cfm?id=1234",
+    "socialMedia": {
+      "x": "https://x.com/senjudyschwank",
+      "twitter": "https://x.com/senjudyschwank",
+      "facebook": "https://facebook.com/senatorjudyschwank"
+    }
+  },
+  "bio": "Judy Schwank serves as State Senator for Pennsylvania Senate District 11. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "PA",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.legis.state.pa.us/cfdocs/legis/home/member_information/Senate_bio.cfm?id=1234"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/pa/legislature/Judith-L-Schwank-35362d6e-d00a-4cf1-806d-b4f2f2a55f72.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Judy_Schwank"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Judy_Schwank"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.legis.state.pa.us/cfdocs/legis/home/member_information/mbrList.cfm?body=S&sort=alpha"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.legis.state.pa.us/cfdocs/legis/home/member_information/senators_alpha.cfm"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/judy-schwank-76485123"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.palegis.us/senate/members/bio/1234/sen-schwank"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.senatorschwank.com"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

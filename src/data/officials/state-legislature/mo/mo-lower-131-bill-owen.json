@@ -1,0 +1,64 @@
+{
+  "id": "bill-owen",
+  "name": "Bill Owen",
+  "firstName": "Bill",
+  "lastName": "Owen",
+  "photo": "/images/officials/state-legislature/mo/bill-owen.jpg",
+  "photoSourceUrl": "https://house.mo.gov/MemberPhoto.aspx?id=2231",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-131",
+  "jurisdiction": "Missouri House of Representatives",
+  "county": [
+    "Missouri"
+  ],
+  "termStart": "2021-01-06",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 403-A, 201 W. Capitol Ave., Jefferson City, MO 65101",
+    "phone": "573-751-2948",
+    "email": "bill.owen@house.mo.gov",
+    "website": "https://house.mo.gov/MemberDetails.aspx?district=131"
+  },
+  "bio": "Bill Owen serves as State Representative for Missouri House of Representatives District 131. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "MO",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://house.mo.gov/MemberDetails.aspx?district=131"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/mo/legislature/Bill-Owen-d9dd5492-e605-4fc6-a18a-8772a7682a08.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://house.mo.gov/MemberPhoto.aspx?id=2231"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Bill_Owen"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Bill_Owen_(politician)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://house.mo.gov/MemberDetails.aspx?year=2021&code=R&district=131"
+    },
+    {
+      "title": "Public source",
+      "url": "https://house.mo.gov/MemberDetails.aspx?year=2023&code=R&district=131"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/193398/bill-owen"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

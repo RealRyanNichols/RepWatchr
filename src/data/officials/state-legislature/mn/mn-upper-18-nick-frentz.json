@@ -1,0 +1,72 @@
+{
+  "id": "nick-frentz",
+  "name": "Nick Frentz",
+  "firstName": "Nick",
+  "lastName": "Frentz",
+  "photo": "/images/officials/state-legislature/mn/nick-frentz.jpg",
+  "photoSourceUrl": "https://www.senate.mn/graphics/19Frentz.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-18",
+  "jurisdiction": "Minnesota Senate",
+  "county": [
+    "Minnesota"
+  ],
+  "termStart": "2023-01-03",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 3109, Minnesota Senate Building 95 University Ave. West, St. Paul, MN 55155",
+    "phone": "651-296-6153",
+    "email": "sen.nick.frentz@senate.mn",
+    "website": "https://www.senate.mn/members/member_bio.html?mem_id=1224"
+  },
+  "bio": "Nick Frentz serves as State Senator for Minnesota Senate District 18. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "MN",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.senate.mn/members/member_bio.html?mem_id=1224"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/mn/legislature/Nick-A-Frentz-55a02119-b43d-4b39-a19b-07411c5ec7c9.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://www.senate.mn/graphics/19Frentz.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Nick_Frentz"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Nick_Frentz"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/171364/nick-frentz"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/frentzlaw"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.senate.mn/api/members"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.senate.mn/members/index.php"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.senate.mn/members/list.csv"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

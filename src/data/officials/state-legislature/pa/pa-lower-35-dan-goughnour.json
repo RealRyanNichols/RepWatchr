@@ -1,0 +1,57 @@
+{
+  "id": "dan-goughnour",
+  "name": "Dan Goughnour",
+  "firstName": "Dan",
+  "lastName": "Goughnour",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-35",
+  "jurisdiction": "Pennsylvania House of Representatives",
+  "county": [
+    "Pennsylvania"
+  ],
+  "termStart": "2025-04-07",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 117A, P.O. Box 202035, Harrisburg, PA 17120",
+    "phone": "717-783-1018",
+    "email": "repgergely@pahouse.net",
+    "website": "https://www.pahouse.com/gergely"
+  },
+  "bio": "Dan Goughnour serves as State Representative for Pennsylvania House of Representatives District 35. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "PA",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.pahouse.com/gergely"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/pa/legislature/Dan-Goughnour-b42a625f-25e4-4f25-b942-928c8a3e0bb2.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Dan_Goughnour"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Dan_Goughnour"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Daniel_Goughnour"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/220803/dan-goughnour"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.palegis.us/house/members/bio/2060/rep-goughnour"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

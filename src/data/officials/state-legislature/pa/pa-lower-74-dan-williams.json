@@ -1,0 +1,71 @@
+{
+  "id": "dan-williams",
+  "name": "Dan Williams",
+  "firstName": "Dan",
+  "lastName": "Williams",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-74",
+  "jurisdiction": "Pennsylvania House of Representatives",
+  "county": [
+    "Pennsylvania"
+  ],
+  "termStart": "2018-12-01",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 36, East Wing P.O. Box 202074, Harrisburg, PA 17120",
+    "phone": "717-783-4103",
+    "email": "dwilliams@pahouse.net",
+    "website": "https://www.legis.state.pa.us/cfdocs/legis/home/member_information/House_bio.cfm?id=1837",
+    "socialMedia": {
+      "x": "https://x.com/RepDanWilliams",
+      "twitter": "https://x.com/RepDanWilliams",
+      "facebook": "https://facebook.com/RepDanWilliams",
+      "youtube": "https://youtube.com/playlist?list=PLjtqNtfs0bgV65YUs6rjR2agLV_mJvFbI"
+    }
+  },
+  "bio": "Dan Williams serves as State Representative for Pennsylvania House of Representatives District 74. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "PA",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.legis.state.pa.us/cfdocs/legis/home/member_information/House_bio.cfm?id=1837"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/pa/legislature/Dan-K-Williams-8cb5e285-fdd9-4c63-b7c7-480bf9e477e1.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Dan_Williams_(Pennsylvania)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Dan_K._Williams"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/179287/dan-williams"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.legis.state.pa.us/cfdocs/legis/home/member_information/mbrList.cfm?body=H&sort=alpha"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.legis.state.pa.us/cfdocs/legis/home/member_information/representatives_alpha.cfm"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.pahouse.com/williams"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.palegis.us/house/members/bio/1837/rep-d-williams"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

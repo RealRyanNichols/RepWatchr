@@ -1,0 +1,72 @@
+{
+  "id": "lana-theis",
+  "name": "Lana Theis",
+  "firstName": "Lana",
+  "lastName": "Theis",
+  "photo": "/images/officials/state-legislature/mi/lana-theis.jpg",
+  "photoSourceUrl": "https://www.misenategop.com/wp-content/uploads/2019/01/Theis-580x770.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-22",
+  "jurisdiction": "Michigan Senate",
+  "county": [
+    "Michigan"
+  ],
+  "termStart": "2019-01-01",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 7400, Binsfeld Building P.O. Box 30036, Lansing, MI 48909",
+    "phone": "517-373-2420",
+    "email": "senltheis@senate.michigan.gov",
+    "website": "https://www.senatorlanatheis.com"
+  },
+  "bio": "Lana Theis serves as State Senator for Michigan Senate District 22. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "MI",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.senatorlanatheis.com"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/mi/legislature/Lana-Theis-4fa99fea-71fd-4f21-9f75-157e6a946c80.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://www.misenategop.com/wp-content/uploads/2019/01/Theis-580x770.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Lana_Theis"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Lana_Theis"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/149672/lana-theis"
+    },
+    {
+      "title": "Public source",
+      "url": "https://senate.michigan.gov/senatorinfo_list.html"
+    },
+    {
+      "title": "Members List JSON Data Page",
+      "url": "https://senate.michigan.gov/senators/SenatorData.json"
+    },
+    {
+      "title": "Members List HTML page",
+      "url": "https://senate.michigan.gov/senators/senatorinfo_list.html"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/lana-theis-707a2411"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

@@ -1,0 +1,53 @@
+{
+  "id": "gregg-hunter",
+  "name": "Gregg Hunter",
+  "firstName": "Gregg",
+  "lastName": "Hunter",
+  "party": "R",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-15",
+  "jurisdiction": "Montana Senate",
+  "county": [
+    "Montana"
+  ],
+  "termStart": "2025-01-06",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Capitol Building, 1301 E. 6th Ave. P.O. Box 200500, Helena, MT 59620",
+    "phone": "406-444-4800",
+    "email": "gregg.hunter@legmt.gov",
+    "website": "https://legislators.legmt.gov/#/legislator/154"
+  },
+  "bio": "Gregg Hunter serves as State Senator for Montana Senate District 15. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "MT",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://legislators.legmt.gov/#/legislator/154"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/mt/legislature/Gregg-Hunter-419a79a5-8153-4a77-9533-0833b8b57fad.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Gregg_Hunter"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Gregg_Hunter"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.legmt.gov/legislators/1275"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/gregg-hunter-b2983266"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

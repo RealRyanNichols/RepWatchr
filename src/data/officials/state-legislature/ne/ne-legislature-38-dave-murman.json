@@ -1,0 +1,68 @@
+{
+  "id": "dave-murman",
+  "name": "Dave Murman",
+  "firstName": "Dave",
+  "lastName": "Murman",
+  "photo": "/images/officials/state-legislature/ne/dave-murman.jpg",
+  "photoSourceUrl": "https://www.nebraskalegislature.gov/media/images/senators/dist38/highres/dist38.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "NP",
+  "level": "state",
+  "position": "State Senator",
+  "district": "LD-38",
+  "jurisdiction": "Nebraska Legislature",
+  "county": [
+    "Nebraska"
+  ],
+  "termStart": "2019-01-09",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "State Capitol Room 1107, P.O. Box 94604, Lincoln, NE 68509",
+    "phone": "402-471-2732",
+    "email": "dmurman@leg.ne.gov",
+    "website": "https://nebraskalegislature.gov/senators/landing-pages/index.php?District=38"
+  },
+  "bio": "Dave Murman serves as State Senator for Nebraska Legislature District 38. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "NE",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://nebraskalegislature.gov/senators/landing-pages/index.php?District=38"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ne/legislature/Dave-Murman-25c29fce-5de4-46cd-97f0-887033d446ce.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://www.nebraskalegislature.gov/media/images/senators/dist38/highres/dist38.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Dave_Murman"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Dave_Murman"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/179857/dave-murman"
+    },
+    {
+      "title": "Public source",
+      "url": "https://nebraskalegislature.gov/senators/senator_list.php"
+    },
+    {
+      "title": "Public source",
+      "url": "https://news.legislature.ne.gov/dist38"
+    },
+    {
+      "title": "Public source",
+      "url": "https://news.legislature.ne.gov/dist38/"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

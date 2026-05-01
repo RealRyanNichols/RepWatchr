@@ -1,0 +1,69 @@
+{
+  "id": "suzanne-schmidt",
+  "name": "Suzanne Schmidt",
+  "firstName": "Suzanne",
+  "lastName": "Schmidt",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-4",
+  "jurisdiction": "Washington House of Representatives",
+  "county": [
+    "Washington"
+  ],
+  "termStart": "2023-01-09",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 468, John L. O'Brien Building P.O. Box 40600, Olympia, WA 98504",
+    "phone": "360-786-7820",
+    "email": "suzanne.schmidt@leg.wa.gov",
+    "website": "https://leg.wa.gov/legislators/member/suzanne-schmidt"
+  },
+  "bio": "Suzanne Schmidt serves as State Representative for Washington House of Representatives District 4. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "WA",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://leg.wa.gov/legislators/member/suzanne-schmidt"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/wa/legislature/Suzanne-Schmidt-31197273-764c-4520-b5dc-bc85695bf36f.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://app.leg.wa.gov/ContentParts/MemberDirectory/?a=House"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Suzanne_Schmidt"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Suzanne_Schmidt"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/207341/suzanne-schmidt"
+    },
+    {
+      "title": "Public source",
+      "url": "https://suzanneschmidt.houserepublicans.wa.gov"
+    },
+    {
+      "title": "Public source",
+      "url": "https://suzanneschmidt.houserepublicans.wa.gov/"
+    },
+    {
+      "title": "Public source",
+      "url": "https://suzanneschmidt.houserepublicans.wa.gov/about"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/suzanne-schmidt-22b704119"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

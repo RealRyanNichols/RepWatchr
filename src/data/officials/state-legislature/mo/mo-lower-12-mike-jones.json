@@ -1,0 +1,48 @@
+{
+  "id": "mike-jones",
+  "name": "Mike Jones",
+  "firstName": "Mike",
+  "lastName": "Jones",
+  "photo": "/images/officials/state-legislature/mo/mike-jones.jpg",
+  "photoSourceUrl": "https://static.wixstatic.com/media/c0c31e_a5630222da5c43efb8e8c52283f027da~mv2.jpg/v1/fill/w_473,h_549,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/Michael-18%20(2)_edited.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-12",
+  "jurisdiction": "Missouri House of Representatives",
+  "county": [
+    "Missouri"
+  ],
+  "termStart": "2025-01-08",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 116-4, 201 W. Capitol Ave., Jefferson City, MO 65101",
+    "phone": "573-751-9760",
+    "email": "michael.jones@house.mo.gov",
+    "website": "https://house.mo.gov/MemberDetails.aspx?&district=012"
+  },
+  "bio": "Mike Jones serves as State Representative for Missouri House of Representatives District 12. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "MO",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://house.mo.gov/MemberDetails.aspx?&district=012"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/mo/legislature/Mike-Jones-8e0bb3e7-085b-471c-a588-a1de9b466706.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://static.wixstatic.com/media/c0c31e_a5630222da5c43efb8e8c52283f027da~mv2.jpg/v1/fill/w_473,h_549,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/Michael-18%20(2)_edited.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Mike_Jones_(Missouri_State_House_District_12_candidate)"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

@@ -1,0 +1,64 @@
+{
+  "id": "court-boice",
+  "name": "Court Boice",
+  "firstName": "Court",
+  "lastName": "Boice",
+  "photo": "/images/officials/state-legislature/or/court-boice.jpg",
+  "photoSourceUrl": "https://s3.amazonaws.com/ballotpedia-api4/files/thumbs/200/300/Court_Boice.png",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-1",
+  "jurisdiction": "Oregon House of Representatives",
+  "county": [
+    "Oregon"
+  ],
+  "termStart": "2023-02-09",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room H-476, 900 Court St. NE, Salem, OR 97301",
+    "phone": "503-986-1401",
+    "email": "rep.courtboice@oregonlegislature.gov",
+    "website": "https://www.oregonlegislature.gov/boice"
+  },
+  "bio": "Court Boice serves as State Representative for Oregon House of Representatives District 1. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "OR",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.oregonlegislature.gov/boice"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/or/legislature/Court-Boice-aa0eac5e-9089-4c72-8edb-4493e1c4a0ad.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://s3.amazonaws.com/ballotpedia-api4/files/thumbs/200/300/Court_Boice.png"
+    },
+    {
+      "title": "Public source",
+      "url": "https://api.oregonlegislature.gov/odata/odataservice.svc/LegislativeSessions('2023R1')/Legislators"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Court_Boice"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Court_Boice"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/178635/court-boice"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.oregonlegislature.gov/boice/Pages/biography.aspx"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

@@ -1,0 +1,68 @@
+{
+  "id": "james-roesener",
+  "name": "James Roesener",
+  "firstName": "James",
+  "lastName": "Roesener",
+  "photo": "/images/officials/state-legislature/nh/james-roesener.jpg",
+  "photoSourceUrl": "https://victoryfund.org/wp-content/uploads/2017/01/James-Roesener-1024x576.png",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-Merrimack 22",
+  "jurisdiction": "New Hampshire House of Representatives",
+  "county": [
+    "New Hampshire"
+  ],
+  "termStart": "2022-12-07",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "State House 107 N. Main St., Concord, NH 03301",
+    "phone": "603-271-3661",
+    "email": "james.roesener@gc.nh.gov",
+    "website": "https://gc.nh.gov/house/members/member.aspx?pid=10840"
+  },
+  "bio": "James Roesener serves as State Representative for New Hampshire House of Representatives District Merrimack 22. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "NH",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://gc.nh.gov/house/members/member.aspx?pid=10840"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/nh/legislature/James-Leon-Roesener-cfbe3994-9a8b-4edf-80e7-d087700ca75a.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://victoryfund.org/wp-content/uploads/2017/01/James-Roesener-1024x576.png"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/James_Leon_Roesener"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/James_Roesener"
+    },
+    {
+      "title": "Public source",
+      "url": "https://gencourt.state.nh.us/house/members/member.aspx?pid=10840"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/208892/james-roesener"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.gencourt.state.nh.us/house/members/member.aspx?pid=10840"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/james-roesener-65a2b8228"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

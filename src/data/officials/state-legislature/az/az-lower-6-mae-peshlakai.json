@@ -1,0 +1,53 @@
+{
+  "id": "mae-peshlakai",
+  "name": "Mae Peshlakai",
+  "firstName": "Mae",
+  "lastName": "Peshlakai",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-6",
+  "jurisdiction": "Arizona House of Representatives",
+  "county": [
+    "Arizona"
+  ],
+  "termStart": "2023-01-09",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 116, 1700 W. Washington St., Phoenix, AZ 85007",
+    "phone": "602-926-3708",
+    "email": "mpeshlakai@azleg.gov",
+    "website": "https://www.azleg.gov/house-member/?legislature=56&session=127&legislator=2190"
+  },
+  "bio": "Mae Peshlakai serves as State Representative for Arizona House of Representatives District 6. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "AZ",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.azleg.gov/house-member/?legislature=56&session=127&legislator=2190"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/az/legislature/Mae-Peshlakai-bcc217f5-fe08-4213-b8a5-78d1e4d64184.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Mae_Peshlakai"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Mae_Peshlakai"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.azleg.gov/house-member/?legislature=57&session=129&legislator=2332"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.azleg.gov/memberroster/?body=H"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

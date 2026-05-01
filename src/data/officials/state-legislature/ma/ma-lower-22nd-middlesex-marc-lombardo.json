@@ -1,0 +1,72 @@
+{
+  "id": "marc-lombardo",
+  "name": "Marc Lombardo",
+  "firstName": "Marc",
+  "lastName": "Lombardo",
+  "photo": "/images/officials/state-legislature/ma/marc-lombardo.jpg",
+  "photoSourceUrl": "https://malegislature.gov/Legislators/Profile/170/MTL1.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-22nd Middlesex",
+  "jurisdiction": "Massachusetts House of Representatives",
+  "county": [
+    "Massachusetts"
+  ],
+  "termStart": "2011-01-05",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 443, State House 24 Beacon St., Boston, MA 02133",
+    "phone": "617-722-2460",
+    "email": "marc.lombardo@mahouse.gov",
+    "website": "https://malegislature.gov/Legislators/Profile/MTL1"
+  },
+  "bio": "Marc Lombardo serves as State Representative for Massachusetts House of Representatives District 22nd Middlesex. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "MA",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://malegislature.gov/Legislators/Profile/MTL1"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ma/legislature/Marc-T-Lombardo-398f9a47-bc65-4c2a-b12e-347f375d8fac.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://malegislature.gov/Legislators/Profile/170/MTL1.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Marc_Lombardo"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Marc_Lombardo"
+    },
+    {
+      "title": "Public source",
+      "url": "https://malegislature.gov/api/GeneralCourts/192/LegislativeMembers"
+    },
+    {
+      "title": "Public source",
+      "url": "https://malegislature.gov/api/GeneralCourts/192/LegislativeMembers/"
+    },
+    {
+      "title": "Public source",
+      "url": "https://malegislature.gov/api/GeneralCourts/192/LegislativeMembers/MTL1"
+    },
+    {
+      "title": "Public source",
+      "url": "https://malegislature.gov/api/GeneralCourts/193/LegislativeMembers"
+    },
+    {
+      "title": "Public source",
+      "url": "https://malegislature.gov/api/GeneralCourts/193/LegislativeMembers/"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

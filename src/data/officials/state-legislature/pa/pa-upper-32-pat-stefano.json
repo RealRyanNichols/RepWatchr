@@ -1,0 +1,75 @@
+{
+  "id": "pat-stefano",
+  "name": "Pat Stefano",
+  "firstName": "Pat",
+  "lastName": "Stefano",
+  "party": "R",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-32",
+  "jurisdiction": "Pennsylvania Senate",
+  "county": [
+    "Pennsylvania"
+  ],
+  "termStart": "2015-01-06",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 187, Main Capitol Senate Box 203032, Harrisburg, PA 17120",
+    "phone": "717-787-7175",
+    "email": "pstefano@pasen.gov",
+    "website": "https://www.legis.state.pa.us/cfdocs/legis/home/member_information/Senate_bio.cfm?id=1697",
+    "socialMedia": {
+      "x": "https://x.com/Senatorstefano",
+      "twitter": "https://x.com/Senatorstefano",
+      "facebook": "https://facebook.com/Senatorstefano",
+      "instagram": "https://instagram.com/Senator_Stefano"
+    }
+  },
+  "bio": "Pat Stefano serves as State Senator for Pennsylvania Senate District 32. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "PA",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.legis.state.pa.us/cfdocs/legis/home/member_information/Senate_bio.cfm?id=1697"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/pa/legislature/Patrick-J-Stefano-14106428-709f-4018-8881-5c31ee078ff8.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Patrick_Stefano"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Patrick_J._Stefano"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/150873/pat-stefano"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.legis.state.pa.us/cfdocs/legis/home/member_information/mbrList.cfm?body=S&sort=alpha"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.legis.state.pa.us/cfdocs/legis/home/member_information/senators_alpha.cfm"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/patrick-stefano-6563817"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.palegis.us/senate/members/bio/1697/sen-stefano"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.senatorstefano.com"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

@@ -1,0 +1,72 @@
+{
+  "id": "dawn-euer",
+  "name": "Dawn Euer",
+  "firstName": "Dawn",
+  "lastName": "Euer",
+  "photo": "/images/officials/state-legislature/ri/dawn-euer.jpg",
+  "photoSourceUrl": "http://www.rilegislature.gov/senators/pictures/euer.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-13",
+  "jurisdiction": "Rhode Island Senate",
+  "county": [
+    "Rhode Island"
+  ],
+  "termStart": "2017-09-05",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 308, 82 Smith St., Providence, RI 02903",
+    "phone": "401-276-5561",
+    "email": "sen-euer@rilegislature.gov",
+    "website": "https://www.rilegislature.gov/senators/algiere/default.aspx"
+  },
+  "bio": "Dawn Euer serves as State Senator for Rhode Island Senate District 13. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "RI",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.rilegislature.gov/senators/algiere/default.aspx"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ri/legislature/Dawn-Euer-b747e057-fdd2-480a-beb9-c4ef37ae1e12.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "http://www.rilegislature.gov/senators/pictures/euer.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Dawn_Euer"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Dawn_Euer"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/176504/dawn-euer"
+    },
+    {
+      "title": "Public source",
+      "url": "https://webserver.rilegislature.gov/Email/SenEmailListDistrict.asp"
+    },
+    {
+      "title": "Public source",
+      "url": "https://webserver.rilin.state.ri.us/Email/SenEmailListDistrict.asp"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/dawneuer"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.rilegislature.gov/senators/Euer/default.aspx"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

@@ -1,0 +1,72 @@
+{
+  "id": "erica-harriss",
+  "name": "Erica Harriss",
+  "firstName": "Erica",
+  "lastName": "Harriss",
+  "photo": "/images/officials/state-legislature/il/erica-harriss.jpg",
+  "photoSourceUrl": "https://cdn.ilga.gov/assets/img/members/{7762DCAD-269B-472B-BDD4-5F5A28D47817}.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-56",
+  "jurisdiction": "Illinois Senate",
+  "county": [
+    "Illinois"
+  ],
+  "termStart": "2023-01-11",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Stratton Office Building Section A, Office H, Springfield, IL 62706",
+    "phone": "217-782-5247",
+    "email": "harris@ilsenategop.org",
+    "website": "https://ilga.gov/senate/Senator.asp?GA=103&MemberID=3216"
+  },
+  "bio": "Erica Harriss serves as State Senator for Illinois Senate District 56. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "IL",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://ilga.gov/senate/Senator.asp?GA=103&MemberID=3216"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/il/legislature/Erica-Conway-Harriss-4dadb374-d534-4ba0-8323-6e41a19933f5.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://cdn.ilga.gov/assets/img/members/{7762DCAD-269B-472B-BDD4-5F5A28D47817}.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Erica_Harriss"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Erica_Harriss"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ilga.gov/senate/default.asp?GA=103"
+    },
+    {
+      "title": "Public source",
+      "url": "https://senatorericaharriss.com"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.ilga.gov/Senate/Members/Details/3411"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.ilga.gov/senate/Senator.asp?GA=103&MemberID=3216"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.ilga.gov/senate/Senator.asp?GA=104&MemberID=3411"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

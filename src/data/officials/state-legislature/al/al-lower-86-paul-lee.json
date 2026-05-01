@@ -1,0 +1,72 @@
+{
+  "id": "paul-lee",
+  "name": "Paul Lee",
+  "firstName": "Paul",
+  "lastName": "Lee",
+  "photo": "/images/officials/state-legislature/al/paul-lee.jpg",
+  "photoSourceUrl": "https://www.legislature.state.al.us/pdf/house/members/Lee_86.png",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-86",
+  "jurisdiction": "Alabama House of Representatives",
+  "county": [
+    "Alabama"
+  ],
+  "termStart": "2010-11-03",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 410-F, 11 S. Union St., Montgomery, AL 36130",
+    "phone": "334-261-0488",
+    "email": "pleed86@gmail.com",
+    "website": "https://alison.legislature.state.al.us/house-leaders-members"
+  },
+  "bio": "Paul Lee serves as State Representative for Alabama House of Representatives District 86. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "AL",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://alison.legislature.state.al.us/house-leaders-members"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/al/legislature/Paul-W-Lee-37a5dfa8-e69f-4567-b8c0-3ea35a69f181.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://www.legislature.state.al.us/pdf/house/members/Lee_86.png"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Paul_Lee"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Paul_Lee_(politician)"
+    },
+    {
+      "title": "graphql endpoint for member information",
+      "url": "https://gql.api.alison.legislature.state.al.us/graphql"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/71487/paul-lee"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.legislature.state.al.us/aliswww/ISD/ALRepresentative.aspx?NAME=Lee&OID_SPONSOR=100568&OID_PERSON=6672&SESSNAME="
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.legislature.state.al.us/aliswww/ISD/ALRepresentative.aspx?OID_SPONSOR=100568&OID_PERSON=6672"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.legislature.state.al.us/aliswww/ISD/House/ALRepresentatives.aspx"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

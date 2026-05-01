@@ -1,0 +1,72 @@
+{
+  "id": "karen-spilka",
+  "name": "Karen Spilka",
+  "firstName": "Karen",
+  "lastName": "Spilka",
+  "photo": "/images/officials/state-legislature/ma/karen-spilka.jpg",
+  "photoSourceUrl": "https://malegislature.gov/Legislators/Profile/170/KES0.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-Middlesex and Norfolk",
+  "jurisdiction": "Massachusetts Senate",
+  "county": [
+    "Massachusetts"
+  ],
+  "termStart": "2023-01-04",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 332, State House 24 Beacon St., Boston, MA 02133",
+    "phone": "617-722-1500",
+    "email": "karen.spilka@masenate.gov",
+    "website": "https://karenspilka.com/"
+  },
+  "bio": "Karen Spilka serves as State Senator for Massachusetts Senate District Middlesex and Norfolk. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "MA",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://karenspilka.com/"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ma/legislature/Karen-E-Spilka-e48879ef-ed74-4f93-8e5b-c0f3752d4fd7.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://malegislature.gov/Legislators/Profile/170/KES0.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Karen_Spilka"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Karen_Spilka"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/35683/karen-spilka"
+    },
+    {
+      "title": "Public source",
+      "url": "https://karenspilka.com"
+    },
+    {
+      "title": "Public source",
+      "url": "https://malegislature.gov/api/GeneralCourts/192/LegislativeMembers"
+    },
+    {
+      "title": "Public source",
+      "url": "https://malegislature.gov/api/GeneralCourts/192/LegislativeMembers/"
+    },
+    {
+      "title": "Public source",
+      "url": "https://malegislature.gov/api/GeneralCourts/192/LegislativeMembers/KES0"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

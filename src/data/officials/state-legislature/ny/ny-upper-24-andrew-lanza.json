@@ -1,0 +1,65 @@
+{
+  "id": "andrew-lanza",
+  "name": "Andrew Lanza",
+  "firstName": "Andrew",
+  "lastName": "Lanza",
+  "party": "R",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-24",
+  "jurisdiction": "New York Senate",
+  "county": [
+    "New York"
+  ],
+  "termStart": "2007-01-03",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 413, Legislative Office Building, Albany, NY 12247",
+    "phone": "518-455-3215",
+    "email": "lanza@nysenate.gov",
+    "website": "https://www.nysenate.gov/senators-committees",
+    "socialMedia": {
+      "x": "https://x.com/senatorlanza",
+      "twitter": "https://x.com/senatorlanza"
+    }
+  },
+  "bio": "Andrew Lanza serves as State Senator for New York Senate District 24. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "NY",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.nysenate.gov/senators-committees"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ny/legislature/Andrew-J-Lanza-8dd98240-93c9-486a-b6c6-3a794b232090.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Andrew_Lanza"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Andrew_Lanza"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/44472/andrew-lanza"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/andrew-lanza-462a06b1"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.nysenate.gov/senators/andrew-j-lanza"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.nysenate.gov/senators/andrew-j-lanza/contact"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

@@ -1,0 +1,69 @@
+{
+  "id": "ted-gorski",
+  "name": "Ted Gorski",
+  "firstName": "Ted",
+  "lastName": "Gorski",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-Hillsborough 2",
+  "jurisdiction": "New Hampshire House of Representatives",
+  "county": [
+    "New Hampshire"
+  ],
+  "termStart": "2022-12-07",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "State House 107 N. Main St., Concord, NH 03301",
+    "phone": "603-271-3661",
+    "email": "ted.gorski@gc.nh.gov",
+    "website": "https://gc.nh.gov/house/members/member.aspx?pid=9898"
+  },
+  "bio": "Ted Gorski serves as State Representative for New Hampshire House of Representatives District Hillsborough 2. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "NH",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://gc.nh.gov/house/members/member.aspx?pid=9898"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/nh/legislature/Ted-Gorski-c40abbd9-220c-4081-9ad8-9559c10f9aae.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Ted_Gorski"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Ted_Gorski"
+    },
+    {
+      "title": "Public source",
+      "url": "https://gencourt.state.nh.us/downloads/Members.txt"
+    },
+    {
+      "title": "Public source",
+      "url": "https://gencourt.state.nh.us/downloads/members.txt"
+    },
+    {
+      "title": "Public source",
+      "url": "https://gencourt.state.nh.us/house/members/member.aspx?pid=9898"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/194995/ted-gorski"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.gencourt.state.nh.us/house/members/member.aspx?pid=9898"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/theodoregorski"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

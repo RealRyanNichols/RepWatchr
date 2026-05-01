@@ -1,0 +1,72 @@
+{
+  "id": "steve-nass",
+  "name": "Steve Nass",
+  "firstName": "Steve",
+  "lastName": "Nass",
+  "photo": "/images/officials/state-legislature/wi/steve-nass.jpg",
+  "photoSourceUrl": "https://docs.legis.wisconsin.gov/2023/legislators/senate/2427.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-11",
+  "jurisdiction": "Wisconsin Senate",
+  "county": [
+    "Wisconsin"
+  ],
+  "termStart": "2015-01-03",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "State Capitol Room 10 South, P.O. Box 7882 , 2 E. Main St., Madison, WI 53707",
+    "phone": "608-266-2635",
+    "email": "sen.nass@legis.wisconsin.gov",
+    "website": "https://docs.legis.wisconsin.gov/2017/legislators/senate/1519"
+  },
+  "bio": "Steve Nass serves as State Senator for Wisconsin Senate District 11. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "WI",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://docs.legis.wisconsin.gov/2017/legislators/senate/1519"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/wi/legislature/Stephen-L-Nass-0301a2cd-37fc-46f6-948a-f1fade57b5c0.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://docs.legis.wisconsin.gov/2023/legislators/senate/2427.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Stephen_Nass"
+    },
+    {
+      "title": "Public source",
+      "url": "https://docs.legis.wisconsin.gov/2019/legislators/senate/1911"
+    },
+    {
+      "title": "Public source",
+      "url": "https://docs.legis.wisconsin.gov/2021/legislators/senate"
+    },
+    {
+      "title": "Public source",
+      "url": "https://docs.legis.wisconsin.gov/2021/legislators/senate/"
+    },
+    {
+      "title": "Public source",
+      "url": "https://docs.legis.wisconsin.gov/2021/legislators/senate/2107"
+    },
+    {
+      "title": "Public source",
+      "url": "https://docs.legis.wisconsin.gov/2023/legislators/senate"
+    },
+    {
+      "title": "members list page",
+      "url": "https://docs.legis.wisconsin.gov/2023/legislators/senate/"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

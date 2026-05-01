@@ -1,0 +1,69 @@
+{
+  "id": "mike-gambrell",
+  "name": "Mike Gambrell",
+  "firstName": "Mike",
+  "lastName": "Gambrell",
+  "party": "R",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-4",
+  "jurisdiction": "South Carolina Senate",
+  "county": [
+    "South Carolina"
+  ],
+  "termStart": "2016-05-24",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 504, Gressette Building P.O. Box 142, Columbia, SC 29202",
+    "phone": "803-212-6032",
+    "email": "mwgambrell@bellsouth.net",
+    "website": "https://scstatehouse.gov/member.php?code=0635227197"
+  },
+  "bio": "Mike Gambrell serves as State Senator for South Carolina Senate District 4. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "SC",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://scstatehouse.gov/member.php?code=0635227197"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/sc/legislature/Michael-W-Gambrell-52d745c3-ccb7-41db-9b4a-624c757b678a.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Michael_Gambrell"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Michael_Gambrell"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/56638/mike-gambrell"
+    },
+    {
+      "title": "Public source",
+      "url": "https://scstatehouse.gov/member.php?chamber=S"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/mike-gambrell-6a95a755"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.scstatehouse.gov/member.php?chamber=H"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.scstatehouse.gov/member.php?chamber=S"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.scstatehouse.gov/member.php?code=0635227197"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

@@ -1,0 +1,40 @@
+{
+  "id": "maura-healey",
+  "name": "Maura Healey",
+  "firstName": "Maura",
+  "lastName": "Healey",
+  "party": "D",
+  "level": "state",
+  "position": "Governor",
+  "district": "Massachusetts",
+  "jurisdiction": "Massachusetts statewide public office",
+  "county": [
+    "Massachusetts"
+  ],
+  "termStart": "2023-01-05",
+  "termEnd": "2027-01-02",
+  "contactInfo": {
+    "office": "Massachusetts State House, 24 Beacon St.; Office of the Governor, Room 280; Boston, MA 02133",
+    "phone": "617-725-4005",
+    "website": "https://www.mass.gov/orgs/office-of-the-governor",
+    "socialMedia": {
+      "x": "https://x.com/MassGovernor",
+      "twitter": "https://x.com/MassGovernor"
+    }
+  },
+  "bio": "Maura Healey is listed as Governor for Massachusetts. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "MA",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.mass.gov/orgs/office-of-the-governor"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ma/executive/Maura-Healey-d90a06b9-0edf-4fda-a823-4247987244dc.yml"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

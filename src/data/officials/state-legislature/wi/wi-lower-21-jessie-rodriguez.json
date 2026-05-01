@@ -1,0 +1,70 @@
+{
+  "id": "jessie-rodriguez",
+  "name": "Jessie Rodriguez",
+  "firstName": "Jessie",
+  "lastName": "Rodriguez",
+  "photo": "/images/officials/state-legislature/wi/jessie-rodriguez.jpg",
+  "photoSourceUrl": "https://docs.legis.wisconsin.gov/2023/legislators/assembly/2505.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "Assemblymember",
+  "district": "HD-21",
+  "jurisdiction": "Wisconsin State Assembly",
+  "county": [
+    "Wisconsin"
+  ],
+  "termStart": "2013-12-04",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "email": "rep.rodriguez@legis.wisconsin.gov",
+    "website": "https://docs.legis.wisconsin.gov/2017/legislators/assembly/1604"
+  },
+  "bio": "Jessie Rodriguez serves as Assemblymember for Wisconsin State Assembly District 21. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "WI",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://docs.legis.wisconsin.gov/2017/legislators/assembly/1604"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/wi/legislature/Jessie-Rodriguez-1dd290f4-6504-4967-9566-55cb3340d303.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://docs.legis.wisconsin.gov/2023/legislators/assembly/2505.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Jessie_Rodriguez"
+    },
+    {
+      "title": "Public source",
+      "url": "https://docs.legis.wisconsin.gov/2019/legislators/assembly/1815"
+    },
+    {
+      "title": "Public source",
+      "url": "https://docs.legis.wisconsin.gov/2021/legislators/assembly"
+    },
+    {
+      "title": "Public source",
+      "url": "https://docs.legis.wisconsin.gov/2021/legislators/assembly/"
+    },
+    {
+      "title": "Public source",
+      "url": "https://docs.legis.wisconsin.gov/2021/legislators/assembly/2183"
+    },
+    {
+      "title": "Public source",
+      "url": "https://docs.legis.wisconsin.gov/2023/legislators/assembly"
+    },
+    {
+      "title": "members list page",
+      "url": "https://docs.legis.wisconsin.gov/2023/legislators/assembly/"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

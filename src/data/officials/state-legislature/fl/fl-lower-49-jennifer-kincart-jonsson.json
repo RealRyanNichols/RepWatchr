@@ -1,0 +1,49 @@
+{
+  "id": "jennifer-kincart-jonsson",
+  "name": "Jennifer Kincart Jonsson",
+  "firstName": "Jennifer",
+  "lastName": "Kincart Jonsson",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-49",
+  "jurisdiction": "Florida House of Representatives",
+  "county": [
+    "Florida"
+  ],
+  "termStart": "2024-11-05",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 1302, The Capitol 402 S. Monroe St., Tallahassee, FL 32399",
+    "phone": "850-717-5049",
+    "email": "jennifer.jonsson@flhouse.gov",
+    "website": "https://www.flhouse.gov/Sections/Representatives/custom/details.aspx?MemberId=4918"
+  },
+  "bio": "Jennifer Kincart Jonsson serves as State Representative for Florida House of Representatives District 49. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "FL",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.flhouse.gov/Sections/Representatives/custom/details.aspx?MemberId=4918"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/fl/legislature/Jennifer-Kincart-Jonsson-28e33eaa-f6cf-4158-83fe-aff91d0cd8f0.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Jennifer_Kincart_Jonsson"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/jennifer-kincart-jonsson1222"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.myfloridahouse.gov/Sections/Representatives/details.aspx?MemberId=4918&LegislativeTermId=91"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

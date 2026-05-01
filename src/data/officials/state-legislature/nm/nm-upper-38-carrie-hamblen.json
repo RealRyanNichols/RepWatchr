@@ -1,0 +1,64 @@
+{
+  "id": "carrie-hamblen",
+  "name": "Carrie Hamblen",
+  "firstName": "Carrie",
+  "lastName": "Hamblen",
+  "photo": "/images/officials/state-legislature/nm/carrie-hamblen.jpg",
+  "photoSourceUrl": "https://www.nmlegis.gov/Images/Legislators/Senate/SHAMB.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-38",
+  "jurisdiction": "New Mexico Senate",
+  "county": [
+    "New Mexico"
+  ],
+  "termStart": "2021-01-01",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "State Capitol Room 323A, New Mexico  490 Old Santa Fe Trail, Santa Fe, NM 87501",
+    "phone": "505-986-4310",
+    "email": "carrie.hamblen@nmlegis.gov",
+    "website": "https://www.nmlegis.gov/Members/Legislator?SponCode=SHAMB"
+  },
+  "bio": "Carrie Hamblen serves as State Senator for New Mexico Senate District 38. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "NM",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.nmlegis.gov/Members/Legislator?SponCode=SHAMB"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/nm/legislature/Carrie-Hamblen-83df260f-2110-4d39-8e19-6a2edc33491d.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://www.nmlegis.gov/Images/Legislators/Senate/SHAMB.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Carrie_Hamblen"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Carrie_Hamblen"
+    },
+    {
+      "title": "Public source",
+      "url": "https://hamblennmsenate38.com/about-carrie"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/carrie-hamblen-87a4a7b"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.nmlegis.gov/Members/Legislator_List?T=S"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

@@ -1,0 +1,45 @@
+{
+  "id": "joseph-hernandez",
+  "name": "Joseph Hernandez",
+  "firstName": "Joseph",
+  "lastName": "Hernandez",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-4",
+  "jurisdiction": "New Mexico House of Representatives",
+  "county": [
+    "New Mexico"
+  ],
+  "termStart": "2025-01-01",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "State Capitol Room 204A, New Mexico  490 Old Santa Fe Trail, Santa Fe, NM 87501",
+    "phone": "505-986-4233",
+    "email": "joseph.hernandez@nmlegis.gov",
+    "website": "https://www.nmlegis.gov/Members/Legislator?SponCode=HHEJO"
+  },
+  "bio": "Joseph Hernandez serves as State Representative for New Mexico House of Representatives District 4. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "NM",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.nmlegis.gov/Members/Legislator?SponCode=HHEJO"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/nm/legislature/Joseph-Hernandez-854e0c8a-0093-4282-8544-8d20bafde8f6.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Joseph_Hernandez"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/joseph-hernandez-877761117"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

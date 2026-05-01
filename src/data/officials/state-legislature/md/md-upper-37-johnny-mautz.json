@@ -1,0 +1,64 @@
+{
+  "id": "johnny-mautz",
+  "name": "Johnny Mautz",
+  "firstName": "Johnny",
+  "lastName": "Mautz",
+  "photo": "/images/officials/state-legislature/md/johnny-mautz.jpg",
+  "photoSourceUrl": "https://mgaleg.maryland.gov/2023RS/images/mautz02.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-37",
+  "jurisdiction": "Maryland Senate",
+  "county": [
+    "Maryland"
+  ],
+  "termStart": "2023-01-11",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 402, James Senate Office Building 11 Bladen St., Annapolis, MD 21401",
+    "phone": "410-841-3590",
+    "email": "johnny.mautz@senate.maryland.gov",
+    "website": "https://mgaleg.maryland.gov/mgawebsite/Members/Details/mautz01"
+  },
+  "bio": "Johnny Mautz serves as State Senator for Maryland Senate District 37. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "MD",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://mgaleg.maryland.gov/mgawebsite/Members/Details/mautz01"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/md/legislature/Johnny-Mautz-84e203b4-277c-4e10-aeb3-a80158bdf525.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://mgaleg.maryland.gov/2023RS/images/mautz02.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Johnny_Mautz"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Johnny_Mautz"
+    },
+    {
+      "title": "Public source",
+      "url": "https://mgaleg.maryland.gov/mgawebsite/Members/Details/mautz02"
+    },
+    {
+      "title": "Public source",
+      "url": "https://mgaleg.maryland.gov/webmga/frmMain.aspx?pid=sponpage&tab=subject6&id=mautz01&stab=01"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/johnny-mautz-74062819"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

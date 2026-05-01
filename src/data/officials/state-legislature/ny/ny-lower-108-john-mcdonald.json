@@ -1,0 +1,76 @@
+{
+  "id": "john-mcdonald",
+  "name": "John McDonald",
+  "firstName": "John",
+  "lastName": "McDonald",
+  "photo": "/images/officials/state-legislature/ny/john-mcdonald.jpg",
+  "photoSourceUrl": "https://assembly.state.ny.us/write/upload/member_files/108/headshot/108.jpg?hst=1660074489",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "Assemblymember",
+  "district": "HD-108",
+  "jurisdiction": "New York State Assembly",
+  "county": [
+    "New York"
+  ],
+  "termStart": "2013-01-01",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 625, Legislative Office Building, Albany, NY 12248",
+    "phone": "518-455-4474",
+    "email": "mcdonaldj@nyassembly.gov",
+    "website": "https://assembly.state.ny.us/mem/?sh=email",
+    "socialMedia": {
+      "x": "https://x.com/johnmcdonald108",
+      "twitter": "https://x.com/johnmcdonald108"
+    }
+  },
+  "bio": "John McDonald serves as Assemblymember for New York State Assembly District 108. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "NY",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://assembly.state.ny.us/mem/?sh=email"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ny/legislature/John-III-McDonald-0ce05d4e-e231-4d3e-8ba5-179499230adc.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://assembly.state.ny.us/write/upload/member_files/108/headshot/108.jpg?hst=1660074489"
+    },
+    {
+      "title": "Public source",
+      "url": "https://assembly.state.ny.us/mem/John-T-McDonald-III"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/John_T._McDonald_III"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/John_T._McDonald_III_(New_York)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/John_T._McDonald_III"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/142711/john-mcdonald-iii"
+    },
+    {
+      "title": "Public source",
+      "url": "https://nyassembly.gov/mem/John-T-McDonald-III"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/john-t-mcdonald-iii-a1b9b2b"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

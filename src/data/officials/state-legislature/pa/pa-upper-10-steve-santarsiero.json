@@ -1,0 +1,74 @@
+{
+  "id": "steve-santarsiero",
+  "name": "Steve Santarsiero",
+  "firstName": "Steve",
+  "lastName": "Santarsiero",
+  "party": "D",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-10",
+  "jurisdiction": "Pennsylvania Senate",
+  "county": [
+    "Pennsylvania"
+  ],
+  "termStart": "2018-12-01",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 182, Main Capitol Senate Box 203010, Harrisburg, PA 17120",
+    "phone": "717-787-7305",
+    "email": "senatorsantarsiero@pasenate.com",
+    "website": "https://www.legis.state.pa.us/cfdocs/legis/home/member_information/Senate_bio.cfm?id=1179",
+    "socialMedia": {
+      "x": "https://x.com/SenSantarsiero",
+      "twitter": "https://x.com/SenSantarsiero",
+      "facebook": "https://facebook.com/SenSantarsiero"
+    }
+  },
+  "bio": "Steve Santarsiero serves as State Senator for Pennsylvania Senate District 10. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "PA",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.legis.state.pa.us/cfdocs/legis/home/member_information/Senate_bio.cfm?id=1179"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/pa/legislature/Steven-J-Santarsiero-91f290d0-3405-4091-bb16-822a97f45af5.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Steve_Santarsiero"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Steve_Santarsiero"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/77468/steve-santarsiero"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.legis.state.pa.us/cfdocs/legis/home/member_information/mbrList.cfm?body=S&sort=alpha"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.legis.state.pa.us/cfdocs/legis/home/member_information/senators_alpha.cfm"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/steve-santarsiero-5456a310"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.palegis.us/senate/members/bio/1179/sen-santarsiero"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.senatorstevesantarsiero.com"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

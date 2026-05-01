@@ -1,0 +1,60 @@
+{
+  "id": "kevin-miller",
+  "name": "Kevin Miller",
+  "firstName": "Kevin",
+  "lastName": "Miller",
+  "photo": "/images/officials/state-legislature/oh/kevin-miller.jpg",
+  "photoSourceUrl": "https://www.legislature.ohio.gov/assets/people/kevin-d-miller/headshots/thumbnails/medium/kevin-d-miller-january-2021-headshot_medium.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-69",
+  "jurisdiction": "Ohio House of Representatives",
+  "county": [
+    "Ohio"
+  ],
+  "termStart": "2023-01-01",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "77 S. High St. 13th Floor, Columbus, OH 43215",
+    "phone": "614-466-2500",
+    "email": "rep69@ohiohouse.gov",
+    "website": "https://ohiohouse.gov/kevin-d-miller"
+  },
+  "bio": "Kevin Miller serves as State Representative for Ohio House of Representatives District 69. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "OH",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://ohiohouse.gov/kevin-d-miller"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/oh/legislature/Kevin-D-Miller-cefb7a31-f46c-4145-9f38-901be3b70e60.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://www.legislature.ohio.gov/assets/people/kevin-d-miller/headshots/thumbnails/medium/kevin-d-miller-january-2021-headshot_medium.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Kevin_Miller_(Ohio)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Kevin_D._Miller"
+    },
+    {
+      "title": "member details page",
+      "url": "https://ohiohouse.gov/members/kevin-d-miller"
+    },
+    {
+      "title": "member list page",
+      "url": "https://www.legislature.ohio.gov/legislators/house-directory"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

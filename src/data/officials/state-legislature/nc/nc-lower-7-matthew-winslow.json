@@ -1,0 +1,56 @@
+{
+  "id": "matthew-winslow",
+  "name": "Matthew Winslow",
+  "firstName": "Matthew",
+  "lastName": "Winslow",
+  "photo": "/images/officials/state-legislature/nc/matthew-winslow.jpg",
+  "photoSourceUrl": "https://www.ncleg.gov/Members/MemberImage/H/776/Low",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-7",
+  "jurisdiction": "North Carolina House of Representatives",
+  "county": [
+    "North Carolina"
+  ],
+  "termStart": "2021-01-01",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 1326, North Carolina Legislative Building 16 W. Jones St., Raleigh, NC 27601",
+    "phone": "919-715-3032",
+    "email": "matthew.winslow@ncleg.gov",
+    "website": "https://www.ncleg.gov/Members/Biography/H/776"
+  },
+  "bio": "Matthew Winslow serves as State Representative for North Carolina House of Representatives District 7. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "NC",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.ncleg.gov/Members/Biography/H/776"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/nc/legislature/Matthew-Winslow-1dfa7f10-249d-43aa-930b-a5be9e4fce9f.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://www.ncleg.gov/Members/MemberImage/H/776/Low"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Matthew_Winslow"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/matthew-winslow-3550aa15"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.ncleg.gov/Members/MemberTable/H"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

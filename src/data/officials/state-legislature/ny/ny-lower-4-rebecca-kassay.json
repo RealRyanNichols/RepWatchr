@@ -1,0 +1,60 @@
+{
+  "id": "rebecca-kassay",
+  "name": "Rebecca Kassay",
+  "firstName": "Rebecca",
+  "lastName": "Kassay",
+  "photo": "/images/officials/state-legislature/ny/rebecca-kassay.jpg",
+  "photoSourceUrl": "https://s3.amazonaws.com/ballotpedia-api4/files/thumbs/200/300/RebeccaKassay2024.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "Assemblymember",
+  "district": "HD-4",
+  "jurisdiction": "New York State Assembly",
+  "county": [
+    "New York"
+  ],
+  "termStart": "2025-01-01",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 921, Legislative Office Building, Albany, NY 12248",
+    "phone": "518-455-3600",
+    "email": "kassayr@nyassembly.gov",
+    "website": "https://nyassembly.gov/mem/Rebecca-Kassay"
+  },
+  "bio": "Rebecca Kassay serves as Assemblymember for New York State Assembly District 4. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "NY",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://nyassembly.gov/mem/Rebecca-Kassay"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ny/legislature/Rebecca-Kassay-9cd7610d-b220-4443-991d-83c4c5e1f55b.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://s3.amazonaws.com/ballotpedia-api4/files/thumbs/200/300/RebeccaKassay2024.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Rebecca_Kassay"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Rebecca_Kassay"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/216735/rebecca-kassay"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/rebeccakassay"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

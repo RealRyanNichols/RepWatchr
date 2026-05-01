@@ -1,0 +1,65 @@
+{
+  "id": "nathan-ballentine",
+  "name": "Nathan Ballentine",
+  "firstName": "Nathan",
+  "lastName": "Ballentine",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-71",
+  "jurisdiction": "South Carolina House of Representatives",
+  "county": [
+    "South Carolina"
+  ],
+  "termStart": "",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 320B, Blatt Building P.O. Box 11867, Columbia, SC 29201",
+    "phone": "803-734-2969",
+    "email": "nathanballentine@schouse.gov",
+    "website": "https://scstatehouse.gov/member.php?code=0102272715"
+  },
+  "bio": "Nathan Ballentine serves as State Representative for South Carolina House of Representatives District 71. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "SC",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://scstatehouse.gov/member.php?code=0102272715"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/sc/legislature/Nathan-Ballentine-129fde97-b4fa-4004-bfb9-f96169a7c0a5.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Nathan_Ballentine"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Nathan_Ballentine"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/47966/nathan-ballentine"
+    },
+    {
+      "title": "Public source",
+      "url": "https://scstatehouse.gov/member.php?chamber=H"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/nathanballentine1970/?trk=pub-pbmap&originalSubdomain=nl"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.scstatehouse.gov/member.php?chamber=H"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.scstatehouse.gov/member.php?code=0102272715"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

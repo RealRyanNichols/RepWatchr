@@ -1,0 +1,72 @@
+{
+  "id": "zack-fields",
+  "name": "Zack Fields",
+  "firstName": "Zack",
+  "lastName": "Fields",
+  "photo": "/images/officials/state-legislature/ak/zack-fields.jpg",
+  "photoSourceUrl": "http://akleg.gov/images/legislators/450x600/FIE.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-17",
+  "jurisdiction": "Alaska House of Representatives",
+  "county": [
+    "Alaska"
+  ],
+  "termStart": "2023-01-17",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "State Capitol Room 24, 120 4th St., Juneau, AK 99801",
+    "phone": "907-465-2647",
+    "email": "representative.zack.fields@akleg.gov",
+    "website": "https://akhouse.org/rep-fields/"
+  },
+  "bio": "Zack Fields serves as State Representative for Alaska House of Representatives District 17. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "AK",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://akhouse.org/rep-fields/"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ak/legislature/Zack-Fields-c1d170a4-d099-43cb-b7e5-5a9db63ae716.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "http://akleg.gov/images/legislators/450x600/FIE.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://akhouse.org/rep-fields"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Zack_Fields_(Alaska)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Zack_Fields"
+    },
+    {
+      "title": "Public source",
+      "url": "https://w3.akleg.gov"
+    },
+    {
+      "title": "Public source",
+      "url": "https://w3.akleg.gov/"
+    },
+    {
+      "title": "member list page",
+      "url": "https://www.akleg.gov/basis/mbr_info.asp?session=33"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.akleg.gov/basis/Member/Detail/33?code=FIE"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

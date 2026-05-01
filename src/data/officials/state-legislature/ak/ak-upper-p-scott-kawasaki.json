@@ -1,0 +1,72 @@
+{
+  "id": "scott-kawasaki",
+  "name": "Scott Kawasaki",
+  "firstName": "Scott",
+  "lastName": "Kawasaki",
+  "photo": "/images/officials/state-legislature/ak/scott-kawasaki.jpg",
+  "photoSourceUrl": "http://akleg.gov/images/legislators/450x600/KAW.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-P",
+  "jurisdiction": "Alaska Senate",
+  "county": [
+    "Alaska"
+  ],
+  "termStart": "2023-01-17",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "State Capitol Room 119, 120 4th St., Juneau, AK 99801",
+    "phone": "907-465-3466",
+    "email": "senator.scott.kawasaki@akleg.gov",
+    "website": "https://aksenatedems.com/sen-kawasaki/"
+  },
+  "bio": "Scott Kawasaki serves as State Senator for Alaska Senate District P. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "AK",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://aksenatedems.com/sen-kawasaki/"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ak/legislature/Scott-Kawasaki-53f7b86b-ce31-4199-86ef-f566ae9aa02c.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "http://akleg.gov/images/legislators/450x600/KAW.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://aksenatedems.com/sen-kawasaki"
+    },
+    {
+      "title": "Public source",
+      "url": "https://alaskasenate.org/kawasaki"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Scott_Kawasaki"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Scott_Kawasaki"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/27313/scott-kawasaki"
+    },
+    {
+      "title": "Public source",
+      "url": "https://w3.akleg.gov"
+    },
+    {
+      "title": "Public source",
+      "url": "https://w3.akleg.gov/"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

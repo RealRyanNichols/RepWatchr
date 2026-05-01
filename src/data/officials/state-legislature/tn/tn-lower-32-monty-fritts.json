@@ -1,0 +1,68 @@
+{
+  "id": "monty-fritts",
+  "name": "Monty Fritts",
+  "firstName": "Monty",
+  "lastName": "Fritts",
+  "photo": "/images/officials/state-legislature/tn/monty-fritts.jpg",
+  "photoSourceUrl": "https://static.wixstatic.com/media/fd35b0_10146244fb184e609fc7bce8e27b2b82~mv2.png/v1/fill/w_252,h_358,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/Monty%20Image%20cropped%20(1)_edited.png",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-32",
+  "jurisdiction": "Tennessee House of Representatives",
+  "county": [
+    "Tennessee"
+  ],
+  "termStart": "2022-11-08",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 430, Cordell Hull Building 425 Rep. John Lewis Way North, Nashville, TN 37243",
+    "phone": "615-741-7658",
+    "email": "rep.monty.fritts@capitol.tn.gov",
+    "website": "https://tnhousegop.org/members/representative-monty-fritts/"
+  },
+  "bio": "Monty Fritts serves as State Representative for Tennessee House of Representatives District 32. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "TN",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://tnhousegop.org/members/representative-monty-fritts/"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/tn/legislature/Monty-Fritts-eb738f26-e0b1-4c51-af77-024bfed96183.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://static.wixstatic.com/media/fd35b0_10146244fb184e609fc7bce8e27b2b82~mv2.png/v1/fill/w_252,h_358,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/Monty%20Image%20cropped%20(1)_edited.png"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Monty_Fritts"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Monty_Fritts"
+    },
+    {
+      "title": "Public source",
+      "url": "https://tnhousegop.org/members/representative-monty-fritts"
+    },
+    {
+      "title": "Public source",
+      "url": "https://wapp.capitol.tn.gov/apps/LegislatorInfo/directory.aspx?chamber=H"
+    },
+    {
+      "title": "Public source",
+      "url": "https://wapp.capitol.tn.gov/apps/legislatorinfo/member.aspx?district=H32"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/monty-fritts-595a4380"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

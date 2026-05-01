@@ -1,0 +1,56 @@
+{
+  "id": "carl-mickens",
+  "name": "Carl Mickens",
+  "firstName": "Carl",
+  "lastName": "Mickens",
+  "photo": "/images/officials/state-legislature/ms/carl-mickens.jpg",
+  "photoSourceUrl": "http://billstatus.ls.state.ms.us/members/house/mickens.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-42",
+  "jurisdiction": "Mississippi House of Representatives",
+  "county": [
+    "Mississippi"
+  ],
+  "termStart": "2016-01-05",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "State Capitol Room 400-F, 400 High St., Jackson, MS 39201",
+    "phone": "601-359-2439",
+    "email": "cmickens@house.ms.gov",
+    "website": "https://billstatus.ls.state.ms.us/members/house/mickens.xml"
+  },
+  "bio": "Carl Mickens serves as State Representative for Mississippi House of Representatives District 42. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "MS",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://billstatus.ls.state.ms.us/members/house/mickens.xml"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ms/legislature/Carl-Mickens-6e50b530-8c0e-485a-a568-6d40ba83127d.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "http://billstatus.ls.state.ms.us/members/house/mickens.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Carl_L._Mickens"
+    },
+    {
+      "title": "Public source",
+      "url": "https://billstatus.ls.state.ms.us/members/hr_membs.xml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Carl_L._Mickens"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

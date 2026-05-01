@@ -1,0 +1,68 @@
+{
+  "id": "gene-dornink",
+  "name": "Gene Dornink",
+  "firstName": "Gene",
+  "lastName": "Dornink",
+  "photo": "/images/officials/state-legislature/mn/gene-dornink.jpg",
+  "photoSourceUrl": "https://www.senate.mn/graphics/27DorninkGene.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-23",
+  "jurisdiction": "Minnesota Senate",
+  "county": [
+    "Minnesota"
+  ],
+  "termStart": "2023-01-03",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 3411, Minnesota Senate Building 95 University Ave. West, St. Paul, MN 55155",
+    "phone": "651-296-5240",
+    "email": "sen.gene.dornink@mnsenate.gov",
+    "website": "https://www.senate.mn/members/member_bio.html?mem_id=1250"
+  },
+  "bio": "Gene Dornink serves as State Senator for Minnesota Senate District 23. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "MN",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.senate.mn/members/member_bio.html?mem_id=1250"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/mn/legislature/Gene-Dornink-d3857eb4-0ec5-4406-840a-e338aad6a238.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://www.senate.mn/graphics/27DorninkGene.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Gene_Dornink"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Gene_Dornink"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/171382/gene-dornink"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.senate.mn/api/members"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.senate.mn/members/index.php"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.senate.mn/members/list.csv"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

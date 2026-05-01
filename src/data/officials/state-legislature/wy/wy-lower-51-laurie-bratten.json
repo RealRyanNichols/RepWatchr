@@ -1,0 +1,56 @@
+{
+  "id": "laurie-bratten",
+  "name": "Laurie Bratten",
+  "firstName": "Laurie",
+  "lastName": "Bratten",
+  "photo": "/images/officials/state-legislature/wy/laurie-bratten.jpg",
+  "photoSourceUrl": "https://wyoleg.gov/LegislatorSummary/Photos/68th-BrattenLaurie.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-51",
+  "jurisdiction": "Wyoming House of Representatives",
+  "county": [
+    "Wyoming"
+  ],
+  "termStart": "2025-01-06",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "State Capitol 200 W. 24th St., Cheyenne, WY 82002",
+    "phone": "307-777-7881",
+    "email": "laurie.bratten@wyoleg.gov",
+    "website": "https://wyoleg.gov/Legislators/2025/H/2131"
+  },
+  "bio": "Laurie Bratten serves as State Representative for Wyoming House of Representatives District 51. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "WY",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://wyoleg.gov/Legislators/2025/H/2131"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/wy/legislature/Laurie-Bratten-5eabff67-a57e-4fd5-b62c-3072d0374d56.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://wyoleg.gov/LegislatorSummary/Photos/68th-BrattenLaurie.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Laurie_Bratten"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/218354/laurie-bratten"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/laurie-bratten-87591661"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

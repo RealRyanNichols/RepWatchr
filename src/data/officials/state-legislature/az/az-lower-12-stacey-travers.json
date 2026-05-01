@@ -1,0 +1,57 @@
+{
+  "id": "stacey-travers",
+  "name": "Stacey Travers",
+  "firstName": "Stacey",
+  "lastName": "Travers",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-12",
+  "jurisdiction": "Arizona House of Representatives",
+  "county": [
+    "Arizona"
+  ],
+  "termStart": "2023-01-09",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 322, 1700 W. Washington St., Phoenix, AZ 85007",
+    "phone": "602-926-3917",
+    "email": "stravers@azleg.gov",
+    "website": "https://www.azleg.gov/house-member/?legislature=56&session=127&legislator=2203"
+  },
+  "bio": "Stacey Travers serves as State Representative for Arizona House of Representatives District 12. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "AZ",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.azleg.gov/house-member/?legislature=56&session=127&legislator=2203"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/az/legislature/Stacey-Travers-7bd58fc8-e6df-4091-86c6-c64f54b96c35.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Anastasia_Travers"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Stacey_Travers"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.azleg.gov/house-member/?legislature=57&session=129&legislator=2340"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.azleg.gov/memberroster/?body=H"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/stacey-travers-446226229"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

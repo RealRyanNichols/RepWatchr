@@ -1,0 +1,74 @@
+{
+  "id": "hearcel-craig",
+  "name": "Hearcel Craig",
+  "firstName": "Hearcel",
+  "lastName": "Craig",
+  "photo": "/images/officials/state-legislature/oh/hearcel-craig.jpg",
+  "photoSourceUrl": "https://www.legislature.ohio.gov/assets/people/hearcel-f-craig/headshots/thumbnails/medium/hearcel-f-craig-may-2023-headshot_medium.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-15",
+  "jurisdiction": "Ohio Senate",
+  "county": [
+    "Ohio"
+  ],
+  "termStart": "2019-01-01",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 228, Statehouse, 1 Capitol Square Second Floor, Columbus, OH 43215",
+    "phone": "614-466-5131",
+    "email": "sd15@ohiosenate.gov",
+    "website": "https://www.ohiosenate.gov/members/hearcel-f-craig",
+    "socialMedia": {
+      "x": "https://x.com/hearcelcraig",
+      "twitter": "https://x.com/hearcelcraig",
+      "facebook": "https://facebook.com/senatorhearcelcraig",
+      "instagram": "https://instagram.com/hearcelcraig"
+    }
+  },
+  "bio": "Hearcel Craig serves as State Senator for Ohio Senate District 15. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "OH",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.ohiosenate.gov/members/hearcel-f-craig"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/oh/legislature/Hearcel-F-Craig-ed858ef9-97dc-4be8-97ab-006ea96923ae.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://www.legislature.ohio.gov/assets/people/hearcel-f-craig/headshots/thumbnails/medium/hearcel-f-craig-may-2023-headshot_medium.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Hearcel_Craig"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Hearcel_Craig"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/75244/hearcel-craig"
+    },
+    {
+      "title": "member details page",
+      "url": "https://ohiosenate.gov/members/hearcel-f-craig"
+    },
+    {
+      "title": "member list page",
+      "url": "https://www.legislature.ohio.gov/legislators/senate-directory"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.ohiosenate.gov/senators"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

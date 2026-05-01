@@ -1,0 +1,64 @@
+{
+  "id": "larry-butler",
+  "name": "Larry Butler",
+  "firstName": "Larry",
+  "lastName": "Butler",
+  "photo": "/images/officials/state-legislature/ct/larry-butler.jpg",
+  "photoSourceUrl": "http://www2.housedems.ct.gov/Butler/images/Butler_HS.jpg?ver=",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-72",
+  "jurisdiction": "Connecticut House of Representatives",
+  "county": [
+    "Connecticut"
+  ],
+  "termStart": "2007-01-03",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 5001, Legislative Office Building 300 Capitol Ave., Hartford, CT 06106",
+    "phone": "860-240-8585",
+    "email": "larry.butler@cga.ct.gov",
+    "website": "https://www.cga.ct.gov/asp/CGABillStatus/CGAMemberBills.asp?dist_code=%27072%27&dist_name=072%20-%Butler,%Larry%20B."
+  },
+  "bio": "Larry Butler serves as State Representative for Connecticut House of Representatives District 72. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "CT",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.cga.ct.gov/asp/CGABillStatus/CGAMemberBills.asp?dist_code=%27072%27&dist_name=072%20-%Butler,%Larry%20B."
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ct/legislature/Larry-B-Butler-47282285-14de-4306-b33f-a82754702ec5.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "http://www2.housedems.ct.gov/Butler/images/Butler_HS.jpg?ver="
+    },
+    {
+      "title": "Public source",
+      "url": "ftp://ftp.cga.ct.gov/pub/data/LegislatorDatabase.csv"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Larry_Butler_(Connecticut)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/68422/larry-butler"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.housedems.ct.gov/Butler"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/larry-b-butler-75548a31"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

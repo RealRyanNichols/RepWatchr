@@ -1,0 +1,72 @@
+{
+  "id": "sam-monta-o",
+  "name": "Sam Monta\u00f1o",
+  "firstName": "Sam",
+  "lastName": "Monta\u00f1o",
+  "photo": "/images/officials/state-legislature/ma/sam-monta-o.jpg",
+  "photoSourceUrl": "https://malegislature.gov/Legislators/Profile/170/S_M1.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-15th Suffolk",
+  "jurisdiction": "Massachusetts House of Representatives",
+  "county": [
+    "Massachusetts"
+  ],
+  "termStart": "2023-01-04",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 446, State House 24 Beacon St., Boston, MA 02133",
+    "phone": "617-722-2460",
+    "email": "samantha.montano@mahouse.gov",
+    "website": "https://malegislature.gov/Legislators/Profile/S_M1"
+  },
+  "bio": "Sam Monta\u00f1o serves as State Representative for Massachusetts House of Representatives District 15th Suffolk. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "MA",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://malegislature.gov/Legislators/Profile/S_M1"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ma/legislature/Samantha-Montao-668db267-f9e1-4839-918d-c092741f96f9.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://malegislature.gov/Legislators/Profile/170/S_M1.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Sam_Monta%C3%B1o"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Sam_Monta%C3%B1o"
+    },
+    {
+      "title": "Public source",
+      "url": "https://malegislature.gov/api/GeneralCourts/193/LegislativeMembers"
+    },
+    {
+      "title": "Public source",
+      "url": "https://malegislature.gov/api/GeneralCourts/193/LegislativeMembers/"
+    },
+    {
+      "title": "Public source",
+      "url": "https://malegislature.gov/api/GeneralCourts/193/LegislativeMembers/S_M1"
+    },
+    {
+      "title": "Public source",
+      "url": "https://malegislature.gov/Legislators/Profile/S_M1/District"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/samantha-monta%C3%B1o-a36815107"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

@@ -1,0 +1,68 @@
+{
+  "id": "robert-stevens",
+  "name": "Robert Stevens",
+  "firstName": "Robert",
+  "lastName": "Stevens",
+  "photo": "/images/officials/state-legislature/tn/robert-stevens.jpg",
+  "photoSourceUrl": "https://capitol.tn.gov/house/members/images/H13.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-13",
+  "jurisdiction": "Tennessee House of Representatives",
+  "county": [
+    "Tennessee"
+  ],
+  "termStart": "2022-11-08",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 432, Cordell Hull Building 425 Rep. John Lewis Way North, Nashville, TN 37243",
+    "phone": "615-741-3830",
+    "email": "rep.robert.stevens@capitol.tn.gov",
+    "website": "https://wapp.capitol.tn.gov/apps/legislatorinfo/member.aspx?district=H13"
+  },
+  "bio": "Robert Stevens serves as State Representative for Tennessee House of Representatives District 13. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "TN",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://wapp.capitol.tn.gov/apps/legislatorinfo/member.aspx?district=H13"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/tn/legislature/Robert-Stevens-c8be1020-e805-46a9-a8b0-79e206b57540.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://capitol.tn.gov/house/members/images/H13.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Robert_Stevens_(Tennessee)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Robert_Stevens_(Tennessee_politician)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/153284/robert-stevens"
+    },
+    {
+      "title": "Public source",
+      "url": "https://stevenslawtn.com/attorney-profile"
+    },
+    {
+      "title": "Public source",
+      "url": "https://wapp.capitol.tn.gov/apps/LegislatorInfo/directory.aspx?chamber=H"
+    },
+    {
+      "title": "Public source",
+      "url": "https://wapp.capitol.tn.gov/apps/legislatorinfo/member?district=H13"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

@@ -1,0 +1,56 @@
+{
+  "id": "tara-johnson",
+  "name": "Tara Johnson",
+  "firstName": "Tara",
+  "lastName": "Johnson",
+  "photo": "/images/officials/state-legislature/wi/tara-johnson.jpg",
+  "photoSourceUrl": "https://wisconsinpublictv.s3.us-east-2.amazonaws.com/wp-content/uploads/2023/09/politics-election-2024-3rddistrict-tarajohnson-announcement.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "Assemblymember",
+  "district": "HD-96",
+  "jurisdiction": "Wisconsin State Assembly",
+  "county": [
+    "Wisconsin"
+  ],
+  "termStart": "2025-01-06",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "State Capitol Room 8 West, P.O. Box 8952 , 2 E. Main St., Madison, WI 53708",
+    "phone": "608-237-9196",
+    "email": "rep.johnson@legis.wisconsin.gov",
+    "website": "https://docs.legis.wisconsin.gov/2025/legislators/assembly/2904"
+  },
+  "bio": "Tara Johnson serves as Assemblymember for Wisconsin State Assembly District 96. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "WI",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://docs.legis.wisconsin.gov/2025/legislators/assembly/2904"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/wi/legislature/Tara-Johnson-17b43cb0-9999-42ee-a5b4-c68aebc129b6.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://wisconsinpublictv.s3.us-east-2.amazonaws.com/wp-content/uploads/2023/09/politics-election-2024-3rddistrict-tarajohnson-announcement.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Tara_Johnson_(Wisconsin)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Tara_Johnson"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/98438/tara-johnson"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

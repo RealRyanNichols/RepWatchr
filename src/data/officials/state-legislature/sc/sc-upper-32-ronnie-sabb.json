@@ -1,0 +1,65 @@
+{
+  "id": "ronnie-sabb",
+  "name": "Ronnie Sabb",
+  "firstName": "Ronnie",
+  "lastName": "Sabb",
+  "party": "D",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-32",
+  "jurisdiction": "South Carolina Senate",
+  "county": [
+    "South Carolina"
+  ],
+  "termStart": "2014-11-10",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 613, Gressette Building P.O. Box 142, Columbia, SC 29201",
+    "phone": "803-212-6056",
+    "email": "ronniesabb@scsenate.gov",
+    "website": "https://scstatehouse.gov/member.php?code=1617045261"
+  },
+  "bio": "Ronnie Sabb serves as State Senator for South Carolina Senate District 32. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "SC",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://scstatehouse.gov/member.php?code=1617045261"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/sc/legislature/Ronnie-A-Sabb-92a0b883-789a-4291-b2f1-330ec804ba12.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Ronnie_Sabb"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Ronnie_A._Sabb"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/121747/ronnie-sabb"
+    },
+    {
+      "title": "Public source",
+      "url": "https://scstatehouse.gov/member.php?chamber=S"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/ronnie-sabb-4a753017b"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.scstatehouse.gov/member.php?chamber=S"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.scstatehouse.gov/member.php?code=1617045261"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

@@ -1,0 +1,64 @@
+{
+  "id": "patty-mueller",
+  "name": "Patty Mueller",
+  "firstName": "Patty",
+  "lastName": "Mueller",
+  "photo": "/images/officials/state-legislature/mn/patty-mueller.jpg",
+  "photoSourceUrl": "https://www.house.mn.gov/hinfo/memberimgls94/23B.gif?v=112221",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-23B",
+  "jurisdiction": "Minnesota House of Representatives",
+  "county": [
+    "Minnesota"
+  ],
+  "termStart": "2023-01-03",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Centennial Office Building 658 Cedar St., Second Floor, St. Paul, MN 55155",
+    "phone": "651-296-4193",
+    "email": "rep.patricia.mueller@house.mn.gov",
+    "website": "https://www.house.mn.gov/members/profile/15561"
+  },
+  "bio": "Patty Mueller serves as State Representative for Minnesota House of Representatives District 23B. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "MN",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.house.mn.gov/members/profile/15561"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/mn/legislature/Patricia-Mueller-71df2690-6a54-4452-960a-54a5b6540bc7.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://www.house.mn.gov/hinfo/memberimgls94/23B.gif?v=112221"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Patricia_Mueller"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Patricia_Mueller"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/194177/patricia-mueller"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.house.leg.state.mn.us/members/hmem.asp"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/dr-patricia-mueller-ed-d-56138b15b"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

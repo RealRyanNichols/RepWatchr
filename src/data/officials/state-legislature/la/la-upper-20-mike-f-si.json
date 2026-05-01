@@ -1,0 +1,53 @@
+{
+  "id": "mike-f-si",
+  "name": "Mike F\u00e9si",
+  "firstName": "Mike",
+  "lastName": "F\u00e9si",
+  "party": "R",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-20",
+  "jurisdiction": "Louisiana Senate",
+  "county": [
+    "Louisiana"
+  ],
+  "termStart": "2020-01-13",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "P.O. Box 94183 900 N. 3rd St., Baton Rouge, LA 70804",
+    "phone": "225-342-2024",
+    "email": "sen20@legis.la.gov",
+    "website": "https://senate.la.gov/smembers.aspx?ID=20"
+  },
+  "bio": "Mike F\u00e9si serves as State Senator for Louisiana Senate District 20. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "LA",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://senate.la.gov/smembers.aspx?ID=20"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/la/legislature/Michael-Big-Mike-Fesi-750a2868-c9b0-4124-95c7-3516f93ff087.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Michael_Fesi"
+    },
+    {
+      "title": "Public source",
+      "url": "https://senate.la.gov/Senators_FullInfo"
+    },
+    {
+      "title": "Public source",
+      "url": "https://senate.la.gov/smembers?ID=20"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/bigmikefesi"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

@@ -1,0 +1,70 @@
+{
+  "id": "camera-bartolotta",
+  "name": "Camera Bartolotta",
+  "firstName": "Camera",
+  "lastName": "Bartolotta",
+  "party": "R",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-46",
+  "jurisdiction": "Pennsylvania Senate",
+  "county": [
+    "Pennsylvania"
+  ],
+  "termStart": "2015-01-06",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 19, East Wing Senate Box 203046, Harrisburg, PA 17120",
+    "phone": "717-787-1463",
+    "email": "cbartolotta@pasen.gov",
+    "website": "https://www.legis.state.pa.us/cfdocs/legis/home/member_information/Senate_bio.cfm?id=1698",
+    "socialMedia": {
+      "x": "https://x.com/senbartolotta",
+      "twitter": "https://x.com/senbartolotta",
+      "facebook": "https://facebook.com/senatorbartolotta"
+    }
+  },
+  "bio": "Camera Bartolotta serves as State Senator for Pennsylvania Senate District 46. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "PA",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.legis.state.pa.us/cfdocs/legis/home/member_information/Senate_bio.cfm?id=1698"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/pa/legislature/Camera-Bartolotta-66b8c0a7-f8be-4acd-aafb-29ca02fcde65.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Camera_Bartolotta"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Camera_Bartolotta"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.legis.state.pa.us/cfdocs/legis/home/member_information/mbrList.cfm?body=S&sort=alpha"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.legis.state.pa.us/cfdocs/legis/home/member_information/senators_alpha.cfm"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/cameracbartolotta"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.palegis.us/senate/members/bio/1698/sen-bartolotta"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.senatorbartolotta.com"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

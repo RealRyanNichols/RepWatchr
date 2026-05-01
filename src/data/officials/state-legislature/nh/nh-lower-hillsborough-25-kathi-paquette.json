@@ -1,0 +1,64 @@
+{
+  "id": "kathi-paquette",
+  "name": "Kathi Paquette",
+  "firstName": "Kathi",
+  "lastName": "Paquette",
+  "photo": "/images/officials/state-legislature/nh/kathi-paquette.jpg",
+  "photoSourceUrl": "https://www.citizenscount.org/sites/default/files/styles/profile_140x176/public/2024-10/kathleen-paquette2.jpg?itok=EFb590kd",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-Hillsborough 25",
+  "jurisdiction": "New Hampshire House of Representatives",
+  "county": [
+    "New Hampshire"
+  ],
+  "termStart": "2024-12-04",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "State House 107 N. Main St., Concord, NH 03301",
+    "phone": "603-305-2774",
+    "email": "kathleen.paquette@gc.nh.gov",
+    "website": "https://gc.nh.gov/house/members/member.aspx?pid=10648"
+  },
+  "bio": "Kathi Paquette serves as State Representative for New Hampshire House of Representatives District Hillsborough 25. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "NH",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://gc.nh.gov/house/members/member.aspx?pid=10648"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/nh/legislature/Kathi-Paquette-dca02694-20ad-476e-8b56-2ff59d3d8ba6.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://www.citizenscount.org/sites/default/files/styles/profile_140x176/public/2024-10/kathleen-paquette2.jpg?itok=EFb590kd"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Kathleen_Paquette"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Kathleen_Paquette"
+    },
+    {
+      "title": "Public source",
+      "url": "https://gencourt.state.nh.us/house/members/member.aspx?pid=10648"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/211123/kathleen-paquette"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/kathleen-paquette-a6520294"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

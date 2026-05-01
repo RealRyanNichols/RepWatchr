@@ -1,0 +1,65 @@
+{
+  "id": "thomas-alexander",
+  "name": "Thomas Alexander",
+  "firstName": "Thomas",
+  "lastName": "Alexander",
+  "party": "R",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-1",
+  "jurisdiction": "South Carolina Senate",
+  "county": [
+    "South Carolina"
+  ],
+  "termStart": "",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 213, Gressette Building P.O. Box 142, Columbia, SC 29201",
+    "phone": "803-212-6220",
+    "email": "thomasalexander@scsenate.gov",
+    "website": "https://scstatehouse.gov/member.php?code=0013636362"
+  },
+  "bio": "Thomas Alexander serves as State Senator for South Carolina Senate District 1. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "SC",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://scstatehouse.gov/member.php?code=0013636362"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/sc/legislature/Thomas-C-Alexander-06c7c886-4087-499e-855c-f36b0fa75195.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Thomas_Alexander"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Thomas_C._Alexander"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/3941/thomas-alexander"
+    },
+    {
+      "title": "Public source",
+      "url": "https://scstatehouse.gov/member.php?chamber=S"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/thomas-alexander-74006a6"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.scstatehouse.gov/member.php?chamber=S"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.scstatehouse.gov/member.php?code=0013636362"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

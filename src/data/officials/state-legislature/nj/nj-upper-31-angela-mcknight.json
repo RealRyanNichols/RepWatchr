@@ -1,0 +1,72 @@
+{
+  "id": "angela-mcknight",
+  "name": "Angela McKnight",
+  "firstName": "Angela",
+  "lastName": "McKnight",
+  "photo": "/images/officials/state-legislature/nj/angela-mcknight.jpg",
+  "photoSourceUrl": "https://www.njleg.state.nj.us/members/memberphotos/mcknight_color.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-31",
+  "jurisdiction": "New Jersey Senate",
+  "county": [
+    "New Jersey"
+  ],
+  "termStart": "2024-01-09",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "P.O. Box 068 State House, 145 W. State St., Trenton, NJ 08625",
+    "phone": "609-847-3905",
+    "email": "senmcknight@njleg.org",
+    "website": "https://www.njleg.state.nj.us/legislative-roster/383/assemblywoman-mcknight"
+  },
+  "bio": "Angela McKnight serves as State Senator for New Jersey Senate District 31. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "NJ",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.njleg.state.nj.us/legislative-roster/383/assemblywoman-mcknight"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/nj/legislature/Angela-V-McKnight-d8c826c4-95c7-465b-8448-1f05495bfc45.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://www.njleg.state.nj.us/members/memberphotos/mcknight_color.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Angela_McKnight"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Angela_V._McKnight"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/156554/angela-mcknight"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.angelacares.org/about"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/angela-v-mcknight-33992420"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.njleg.state.nj.us/api/legislatorData/legislatorBio/383"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.njleg.state.nj.us/downloads.asp"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

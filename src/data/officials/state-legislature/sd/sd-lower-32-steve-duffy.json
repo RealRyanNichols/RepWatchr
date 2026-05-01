@@ -1,0 +1,68 @@
+{
+  "id": "steve-duffy",
+  "name": "Steve Duffy",
+  "firstName": "Steve",
+  "lastName": "Duffy",
+  "photo": "/images/officials/state-legislature/sd/steve-duffy.jpg",
+  "photoSourceUrl": "https://s3.amazonaws.com/ballotpedia-api4/files/thumbs/200/300/SteveDuffy.png",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-32",
+  "jurisdiction": "South Dakota House of Representatives",
+  "county": [
+    "South Dakota"
+  ],
+  "termStart": "2023-01-10",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Capitol Building 500 E. Capitol Ave., Pierre, SD 57501",
+    "phone": "605-773-3851",
+    "email": "steve.duffy@sdlegislature.gov",
+    "website": "https://sdlegislature.gov/Legislators/Profile/4468/Detail"
+  },
+  "bio": "Steve Duffy serves as State Representative for South Dakota House of Representatives District 32. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "SD",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://sdlegislature.gov/Legislators/Profile/4468/Detail"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/sd/legislature/Steve-Duffy-a86e2b88-677f-4819-9fc2-0e9ba4c04377.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://s3.amazonaws.com/ballotpedia-api4/files/thumbs/200/300/SteveDuffy.png"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Steve_Duffy"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Steve_Duffy"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/205165/steve-duffy"
+    },
+    {
+      "title": "Public source",
+      "url": "https://sdlegislature.gov/Legislators/Profile/4604/Detail"
+    },
+    {
+      "title": "Public source",
+      "url": "https://sdlegislature.gov/Legislators/Profile/4747/Detail"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/steve-duffy-348b1573"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

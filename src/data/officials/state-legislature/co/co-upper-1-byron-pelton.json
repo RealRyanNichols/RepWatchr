@@ -1,0 +1,49 @@
+{
+  "id": "byron-pelton",
+  "name": "Byron Pelton",
+  "firstName": "Byron",
+  "lastName": "Pelton",
+  "party": "R",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-1",
+  "jurisdiction": "Colorado Senate",
+  "county": [
+    "Colorado"
+  ],
+  "termStart": "2023-01-09",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "State Capitol Room 346, Colorado  Building 200 E. Colfax Ave., Denver, CO 80203",
+    "phone": "303-866-6360",
+    "email": "byron.pelton.senate@coleg.gov",
+    "website": "https://leg.colorado.gov/legislators/byron-pelton"
+  },
+  "bio": "Byron Pelton serves as State Senator for Colorado Senate District 1. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "CO",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://leg.colorado.gov/legislators/byron-pelton"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/co/legislature/Byron-Pelton-2d0d060c-6d5f-45da-a069-fe2be14547eb.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Byron_Pelton"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Byron_Pelton"
+    },
+    {
+      "title": "Public source",
+      "url": "https://leg.colorado.gov/legislators"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

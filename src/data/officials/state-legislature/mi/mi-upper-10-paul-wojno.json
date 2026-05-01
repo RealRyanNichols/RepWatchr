@@ -1,0 +1,72 @@
+{
+  "id": "paul-wojno",
+  "name": "Paul Wojno",
+  "firstName": "Paul",
+  "lastName": "Wojno",
+  "photo": "/images/officials/state-legislature/mi/paul-wojno.jpg",
+  "photoSourceUrl": "https://senatedems.com/wojno/wp-content/uploads/sites/3/2023/01/MDS_Wojno_OfficialPortrait.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-10",
+  "jurisdiction": "Michigan Senate",
+  "county": [
+    "Michigan"
+  ],
+  "termStart": "2023-01-01",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 6300, Binsfeld Building P.O. Box 30036, Lansing, MI 48909",
+    "phone": "517-373-8360",
+    "email": "senpwojno@senate.michigan.gov",
+    "website": "https://senatedems.com/wojno"
+  },
+  "bio": "Paul Wojno serves as State Senator for Michigan Senate District 10. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "MI",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://senatedems.com/wojno"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/mi/legislature/Paul-Wojno-1d71200f-5f95-46e8-ac9b-a35c6c0178d8.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://senatedems.com/wojno/wp-content/uploads/sites/3/2023/01/MDS_Wojno_OfficialPortrait.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Paul_Wojno"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Paul_Wojno"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/11873/paul-wojno"
+    },
+    {
+      "title": "Public source",
+      "url": "https://senate.michigan.gov/senatorinfo_list.html"
+    },
+    {
+      "title": "Members List JSON Data Page",
+      "url": "https://senate.michigan.gov/senators/SenatorData.json"
+    },
+    {
+      "title": "Members List HTML page",
+      "url": "https://senate.michigan.gov/senators/senatorinfo_list.html"
+    },
+    {
+      "title": "Public source",
+      "url": "https://senatedems.com/wojno/"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

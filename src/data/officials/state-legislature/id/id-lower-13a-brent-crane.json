@@ -1,0 +1,72 @@
+{
+  "id": "brent-crane",
+  "name": "Brent Crane",
+  "firstName": "Brent",
+  "lastName": "Crane",
+  "photo": "/images/officials/state-legislature/id/brent-crane.jpg",
+  "photoSourceUrl": "https://legislature.idaho.gov/wp-content/uploads/sessioninfo/2025/directory/Crane21.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-13A",
+  "jurisdiction": "Idaho House of Representatives",
+  "county": [
+    "Idaho"
+  ],
+  "termStart": "2006-12-01",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "P.O. Box 83720 700 W. Jefferson St., Boise, ID 83720",
+    "phone": "208-332-1058",
+    "email": "bcrane@house.idaho.gov",
+    "website": "https://legislature.idaho.gov/legislators/membership/2023/id21/"
+  },
+  "bio": "Brent Crane serves as State Representative for Idaho House of Representatives District 13A. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "ID",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://legislature.idaho.gov/legislators/membership/2023/id21/"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/id/legislature/Brent-J-Crane-81d4b890-9bf4-44e0-99b2-eda866f02d48.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://legislature.idaho.gov/wp-content/uploads/sessioninfo/2025/directory/Crane21.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Brent_Crane"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Brent_Crane"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/58399/brent-crane"
+    },
+    {
+      "title": "Public source",
+      "url": "https://legislature.idaho.gov/house/membership"
+    },
+    {
+      "title": "Public source",
+      "url": "https://legislature.idaho.gov/house/membership/"
+    },
+    {
+      "title": "Public source",
+      "url": "https://legislature.idaho.gov/legislators/membership/2023/id21"
+    },
+    {
+      "title": "Public source",
+      "url": "https://legislature.idaho.gov/legislators/membership/2026/id21"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

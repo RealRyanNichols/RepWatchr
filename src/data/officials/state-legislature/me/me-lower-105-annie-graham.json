@@ -1,0 +1,56 @@
+{
+  "id": "annie-graham",
+  "name": "Annie Graham",
+  "firstName": "Annie",
+  "lastName": "Graham",
+  "photo": "/images/officials/state-legislature/me/annie-graham.jpg",
+  "photoSourceUrl": "https://legislature.maine.gov/house/house/Repository/MemberProfiles/3c31dd8d-1de9-4bf3-b506-b7c45790974f_AGRAHAM.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-105",
+  "jurisdiction": "Maine House of Representatives",
+  "county": [
+    "Maine"
+  ],
+  "termStart": "2022-12-07",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 333, House Democratic Office 2 State House Station, Augusta, ME 04333",
+    "phone": "800-423-2900",
+    "email": "anne.graham@legislature.maine.gov",
+    "website": "https://legislature.maine.gov/house/house/MemberProfiles/Details/259"
+  },
+  "bio": "Annie Graham serves as State Representative for Maine House of Representatives District 105. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "ME",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://legislature.maine.gov/house/house/MemberProfiles/Details/259"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/me/legislature/Anne-P-Graham-2f7e7649-5c68-4f8f-8c9a-7993b66d383a.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://legislature.maine.gov/house/house/Repository/MemberProfiles/3c31dd8d-1de9-4bf3-b506-b7c45790974f_AGRAHAM.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Anne_Graham"
+    },
+    {
+      "title": "Public source",
+      "url": "https://legislature.maine.gov/house/house/MemberProfiles/ListAlpha"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/anne-graham-0930548"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

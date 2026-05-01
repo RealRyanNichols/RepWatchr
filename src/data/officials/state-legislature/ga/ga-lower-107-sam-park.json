@@ -1,0 +1,69 @@
+{
+  "id": "sam-park",
+  "name": "Sam Park",
+  "firstName": "Sam",
+  "lastName": "Park",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-107",
+  "jurisdiction": "Georgia House of Representatives",
+  "county": [
+    "Georgia"
+  ],
+  "termStart": "2023-01-09",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 609, Coverdell Legislative Office Building 18 Capitol Square SW, Atlanta, GA 30334",
+    "phone": "404-656-5059",
+    "email": "samuel.park@house.ga.gov",
+    "website": "https://www.house.ga.gov/Representatives/en-US/member.aspx?Member=4901&Session=27"
+  },
+  "bio": "Sam Park serves as State Representative for Georgia House of Representatives District 107. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "GA",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.house.ga.gov/Representatives/en-US/member.aspx?Member=4901&Session=27"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ga/legislature/Sam-Park-2ba0916f-40b1-4255-9496-94b12ccabd1e.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Samuel_Park"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Sam_Park"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/168354/samuel-park"
+    },
+    {
+      "title": "Public source",
+      "url": "https://webservices.legis.ga.gov/GGAServices/Members/Service.svc?wsdl"
+    },
+    {
+      "title": "Detail page (requires authorization token)",
+      "url": "https://www.legis.ga.gov/api/members/detail/4901?session=1029&chamber=1"
+    },
+    {
+      "title": "API member detail (requires authorization token)",
+      "url": "https://www.legis.ga.gov/api/members/detail/4901?session=1031&chamber=1"
+    },
+    {
+      "title": "API members list (requires authorization token)",
+      "url": "https://www.legis.ga.gov/api/members/list/1031"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.legis.ga.gov/members/house/4901"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

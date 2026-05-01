@@ -1,0 +1,49 @@
+{
+  "id": "ty-winter",
+  "name": "Ty Winter",
+  "firstName": "Ty",
+  "lastName": "Winter",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-47",
+  "jurisdiction": "Colorado House of Representatives",
+  "county": [
+    "Colorado"
+  ],
+  "termStart": "2023-01-09",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "State Capitol Room 307, Colorado  Building 200 E. Colfax Ave., Denver, CO 80203",
+    "phone": "303-866-2747",
+    "email": "ty.winter.house@coleg.gov",
+    "website": "https://leg.colorado.gov/legislators/ty-winter"
+  },
+  "bio": "Ty Winter serves as State Representative for Colorado House of Representatives District 47. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "CO",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://leg.colorado.gov/legislators/ty-winter"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/co/legislature/Ty-Winter-f3cd2006-7729-41b0-a009-0c5cf64e95e0.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Ty_Winter"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Ty_Winter"
+    },
+    {
+      "title": "Public source",
+      "url": "https://leg.colorado.gov/legislators"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

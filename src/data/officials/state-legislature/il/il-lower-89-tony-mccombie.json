@@ -1,0 +1,69 @@
+{
+  "id": "tony-mccombie",
+  "name": "Tony McCombie",
+  "firstName": "Tony",
+  "lastName": "McCombie",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-89",
+  "jurisdiction": "Illinois House of Representatives",
+  "county": [
+    "Illinois"
+  ],
+  "termStart": "2023-01-11",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 316, Capitol Building, Springfield, IL 62706",
+    "phone": "217-782-3992",
+    "email": "mccombie@ilhousegop.org",
+    "website": "https://ilga.gov/house/Rep.asp?GA=101&MemberID=2688"
+  },
+  "bio": "Tony McCombie serves as State Representative for Illinois House of Representatives District 89. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "IL",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://ilga.gov/house/Rep.asp?GA=101&MemberID=2688"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/il/legislature/Tony-McCombie-d6d5becd-7733-4849-b2a2-b543bbfea1ec.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Tony_McCombie"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Tony_McCombie"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ilga.gov/house/default.asp?GA=101"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ilga.gov/house/default.asp?GA=102"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ilga.gov/house/default.asp?GA=103"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ilga.gov/house/Rep.asp?GA=102&MemberID=2905"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ilga.gov/house/Rep.asp?GA=103&MemberID=3108"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/166410/tony-mccombie"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

@@ -1,0 +1,72 @@
+{
+  "id": "joe-mcgonagle",
+  "name": "Joe McGonagle",
+  "firstName": "Joe",
+  "lastName": "McGonagle",
+  "photo": "/images/officials/state-legislature/ma/joe-mcgonagle.jpg",
+  "photoSourceUrl": "https://malegislature.gov/Legislators/Profile/170/jwm1.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-28th Middlesex",
+  "jurisdiction": "Massachusetts House of Representatives",
+  "county": [
+    "Massachusetts"
+  ],
+  "termStart": "2015-01-07",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 171, State House 24 Beacon St., Boston, MA 02133",
+    "phone": "617-722-2015",
+    "email": "joseph.mcgonagle@mahouse.gov",
+    "website": "https://malegislature.gov/Legislators/Profile/jwm1"
+  },
+  "bio": "Joe McGonagle serves as State Representative for Massachusetts House of Representatives District 28th Middlesex. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "MA",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://malegislature.gov/Legislators/Profile/jwm1"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ma/legislature/Joseph-W-McGonagle-Jr-6c3b63a2-ef13-43e5-b6de-d5e0901aa65a.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://malegislature.gov/Legislators/Profile/170/jwm1.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Joseph_McGonagle,_Jr."
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Joe_McGonagle"
+    },
+    {
+      "title": "Public source",
+      "url": "https://malegislature.gov/api/GeneralCourts/192/LegislativeMembers"
+    },
+    {
+      "title": "Public source",
+      "url": "https://malegislature.gov/api/GeneralCourts/192/LegislativeMembers/"
+    },
+    {
+      "title": "Public source",
+      "url": "https://malegislature.gov/api/GeneralCourts/192/LegislativeMembers/jwm1"
+    },
+    {
+      "title": "Public source",
+      "url": "https://malegislature.gov/api/GeneralCourts/193/LegislativeMembers"
+    },
+    {
+      "title": "Public source",
+      "url": "https://malegislature.gov/api/GeneralCourts/193/LegislativeMembers/"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

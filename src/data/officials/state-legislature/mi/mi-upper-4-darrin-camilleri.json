@@ -1,0 +1,72 @@
+{
+  "id": "darrin-camilleri",
+  "name": "Darrin Camilleri",
+  "firstName": "Darrin",
+  "lastName": "Camilleri",
+  "photo": "/images/officials/state-legislature/mi/darrin-camilleri.jpg",
+  "photoSourceUrl": "https://senatedems.com/camilleri/wp-content/uploads/sites/10/2022/12/Portrait_Camilleri_Web.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-4",
+  "jurisdiction": "Michigan Senate",
+  "county": [
+    "Michigan"
+  ],
+  "termStart": "2023-01-01",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room S-2, Capitol Building P.O. Box 30036, Lansing, MI 48909",
+    "phone": "517-373-7918",
+    "email": "sendcamilleri@senate.michigan.gov",
+    "website": "https://housedems.com/camilleri"
+  },
+  "bio": "Darrin Camilleri serves as State Senator for Michigan Senate District 4. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "MI",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://housedems.com/camilleri"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/mi/legislature/Darrin-Camilleri-5d2fbcb4-0e27-4cb5-99bf-f94693b3aa12.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://senatedems.com/camilleri/wp-content/uploads/sites/10/2022/12/Portrait_Camilleri_Web.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Darrin_Camilleri"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Darrin_Camilleri"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/170332/darrin-camilleri"
+    },
+    {
+      "title": "Members List JSON Data Page",
+      "url": "https://senate.michigan.gov/senators/SenatorData.json"
+    },
+    {
+      "title": "Members List HTML page",
+      "url": "https://senate.michigan.gov/senators/senatorinfo_list.html"
+    },
+    {
+      "title": "Public source",
+      "url": "https://senatedems.com/camilleri"
+    },
+    {
+      "title": "Public source",
+      "url": "https://senatedems.com/camilleri/"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

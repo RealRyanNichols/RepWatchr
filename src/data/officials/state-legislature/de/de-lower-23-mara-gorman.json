@@ -1,0 +1,60 @@
+{
+  "id": "mara-gorman",
+  "name": "Mara Gorman",
+  "firstName": "Mara",
+  "lastName": "Gorman",
+  "photo": "/images/officials/state-legislature/de/mara-gorman.jpg",
+  "photoSourceUrl": "https://s3.amazonaws.com/ballotpedia-api4/files/thumbs/200/300/MaraGorman2024.jpeg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-23",
+  "jurisdiction": "Delaware House of Representatives",
+  "county": [
+    "Delaware"
+  ],
+  "termStart": "2024-11-06",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "P.O. Box 1401 411 Legislative Ave., Dover, DE 19901",
+    "phone": "302-744-4351",
+    "email": "mara.gorman@delaware.gov",
+    "website": "https://housedems.delaware.gov/members/house-district-23/"
+  },
+  "bio": "Mara Gorman serves as State Representative for Delaware House of Representatives District 23. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "DE",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://housedems.delaware.gov/members/house-district-23/"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/de/legislature/Mara-Gorman-1f51da39-f7e2-4489-9307-f2121e9e8adf.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://s3.amazonaws.com/ballotpedia-api4/files/thumbs/200/300/MaraGorman2024.jpeg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Mara_Gorman"
+    },
+    {
+      "title": "Public source",
+      "url": "https://housedems.delaware.gov/members/house-district-23"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/maragorman"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.marafordelaware.com/about-mara"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

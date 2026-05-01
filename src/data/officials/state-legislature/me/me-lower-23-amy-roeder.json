@@ -1,0 +1,57 @@
+{
+  "id": "amy-roeder",
+  "name": "Amy Roeder",
+  "firstName": "Amy",
+  "lastName": "Roeder",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-23",
+  "jurisdiction": "Maine House of Representatives",
+  "county": [
+    "Maine"
+  ],
+  "termStart": "2022-12-07",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 333, House Democratic Office 2 State House Station, Augusta, ME 04333",
+    "phone": "800-423-2900",
+    "email": "amy.roeder@legislature.maine.gov",
+    "website": "https://legislature.maine.gov/house/house/MemberProfiles/Details/1437"
+  },
+  "bio": "Amy Roeder serves as State Representative for Maine House of Representatives District 23. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "ME",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://legislature.maine.gov/house/house/MemberProfiles/Details/1437"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/me/legislature/Amy-J-Roeder-42c79801-802e-4f3d-8917-f3f956766e50.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Amy_Roeder"
+    },
+    {
+      "title": "Public source",
+      "url": "https://legislature.maine.gov/house/house/MemberProfiles/ListAlpha"
+    },
+    {
+      "title": "Public source",
+      "url": "https://legislature.maine.gov/housedems/roedera/index.html"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/amyroeder"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.maine.gov/housedems/roedera"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

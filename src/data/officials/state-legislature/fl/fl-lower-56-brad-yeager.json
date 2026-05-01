@@ -1,0 +1,57 @@
+{
+  "id": "brad-yeager",
+  "name": "Brad Yeager",
+  "firstName": "Brad",
+  "lastName": "Yeager",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-56",
+  "jurisdiction": "Florida House of Representatives",
+  "county": [
+    "Florida"
+  ],
+  "termStart": "2022-11-08",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 214, House Office Building 402 S. Monroe St., Tallahassee, FL 32399",
+    "phone": "850-717-5056",
+    "email": "brad.yeager@flhouse.gov",
+    "website": "https://myfloridahouse.gov/Sections/Representatives/details.aspx?MemberId=4882&LegislativeTermId=90"
+  },
+  "bio": "Brad Yeager serves as State Representative for Florida House of Representatives District 56. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "FL",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://myfloridahouse.gov/Sections/Representatives/details.aspx?MemberId=4882&LegislativeTermId=90"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/fl/legislature/Bradford-Troy-Brad-Yeager-8d746fc8-370b-4d12-bcf8-3dd4a4061707.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Brad_Yeager"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.flhouse.gov/Sections/Representatives/details.aspx?MemberId=4882"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/bradyeager"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.myfloridahouse.gov/Sections/Representatives/details.aspx?MemberId=4882"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.yeagerforflorida.com/meet-brad"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

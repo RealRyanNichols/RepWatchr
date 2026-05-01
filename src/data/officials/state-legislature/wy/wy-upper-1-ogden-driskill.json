@@ -1,0 +1,71 @@
+{
+  "id": "ogden-driskill",
+  "name": "Ogden Driskill",
+  "firstName": "Ogden",
+  "lastName": "Driskill",
+  "photo": "/images/officials/state-legislature/wy/ogden-driskill.jpg",
+  "photoSourceUrl": "https://wyoleg.gov/LegislatorSummary/Photos/68th-DriskillOgden.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-1",
+  "jurisdiction": "Wyoming Senate",
+  "county": [
+    "Wyoming"
+  ],
+  "termStart": "2011-01-11",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "State Capitol 200 W. 24th St., Cheyenne, WY 82002",
+    "email": "ogden.driskill@wyoleg.gov",
+    "website": "https://www.wyoleg.gov/Legislators/2023/S/1972"
+  },
+  "bio": "Ogden Driskill serves as State Senator for Wyoming Senate District 1. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "WY",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.wyoleg.gov/Legislators/2023/S/1972"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/wy/legislature/Ogden-Driskill-e72a31cf-cefd-42c1-9620-967af32a2f48.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://wyoleg.gov/LegislatorSummary/Photos/68th-DriskillOgden.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Ogden_Driskill"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Ogden_Driskill"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/52627/ogden-driskill"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/ogden-driskill-b43bb610"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.wyoleg.gov/Legislators/2025/S/1972"
+    },
+    {
+      "title": "Public source",
+      "url": "https://wyoleg.gov/Legislators/2019/R/1972"
+    },
+    {
+      "title": "Public source",
+      "url": "https://wyoleg.gov/Legislators/2021/R/1972"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

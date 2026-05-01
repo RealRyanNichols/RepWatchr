@@ -1,0 +1,60 @@
+{
+  "id": "veronica-turner",
+  "name": "Veronica Turner",
+  "firstName": "Veronica",
+  "lastName": "Turner",
+  "photo": "/images/officials/state-legislature/md/veronica-turner.jpg",
+  "photoSourceUrl": "http://mgaleg.maryland.gov/2019RS/images/turner01.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "Delegate",
+  "district": "HD-26",
+  "jurisdiction": "Maryland House of Delegates",
+  "county": [
+    "Maryland"
+  ],
+  "termStart": "2019-01-09",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 205, Lowe House Office Building 6 Bladen St., Annapolis, MD 21401",
+    "phone": "410-841-3212",
+    "email": "veronica.turner@house.maryland.gov",
+    "website": "https://mgaleg.maryland.gov/mgawebsite/Members/Details/turner01"
+  },
+  "bio": "Veronica Turner serves as Delegate for Maryland House of Delegates District 26. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "MD",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://mgaleg.maryland.gov/mgawebsite/Members/Details/turner01"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/md/legislature/Veronica-Turner-b982cab0-0d2e-46ae-8e22-51f68e7aac82.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "http://mgaleg.maryland.gov/2019RS/images/turner01.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Veronica_Turner"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Veronica_L._Turner"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/36495/veronica-turner"
+    },
+    {
+      "title": "Public source",
+      "url": "https://mgaleg.maryland.gov/webmga/frmMain.aspx?pid=sponpage&tab=subject6&id=turner01&stab=01"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

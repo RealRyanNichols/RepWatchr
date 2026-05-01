@@ -1,0 +1,69 @@
+{
+  "id": "russ-ingalls",
+  "name": "Russ Ingalls",
+  "firstName": "Russ",
+  "lastName": "Ingalls",
+  "party": "R",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-Essex",
+  "jurisdiction": "Vermont Senate",
+  "county": [
+    "Vermont"
+  ],
+  "termStart": "2023-01-04",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Vermont State House 115 State St., Montpelier, VT 05633",
+    "phone": "802-828-2228",
+    "email": "ringalls@leg.state.vt.us",
+    "website": "https://legislature.vermont.gov/Documents/SmallMaps/2022/Senate/Essex.pdf"
+  },
+  "bio": "Russ Ingalls serves as State Senator for Vermont Senate District Essex. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "VT",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://legislature.vermont.gov/Documents/SmallMaps/2022/Senate/Essex.pdf"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/vt/legislature/Russ-Ingalls-ec8b2fa8-32e3-43ef-a8e9-101958b5d652.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Russ_Ingalls"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Russ_Ingalls"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/194123/russ-ingalls"
+    },
+    {
+      "title": "Public source",
+      "url": "https://legislature.vermont.gov/people/loadAll/2022"
+    },
+    {
+      "title": "Public source",
+      "url": "https://legislature.vermont.gov/people/loadAll/2024"
+    },
+    {
+      "title": "Public source",
+      "url": "https://legislature.vermont.gov/people/single/2022/34725"
+    },
+    {
+      "title": "Public source",
+      "url": "https://legislature.vermont.gov/people/single/2024/34725"
+    },
+    {
+      "title": "Public source",
+      "url": "https://legislature.vermont.gov/people/single/2026/34725"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

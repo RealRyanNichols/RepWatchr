@@ -1,0 +1,60 @@
+{
+  "id": "pamelya-herndon",
+  "name": "Pamelya Herndon",
+  "firstName": "Pamelya",
+  "lastName": "Herndon",
+  "photo": "/images/officials/state-legislature/nm/pamelya-herndon.jpg",
+  "photoSourceUrl": "https://www.nmlegis.gov/Images/Legislators/House/HHEPA.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-28",
+  "jurisdiction": "New Mexico House of Representatives",
+  "county": [
+    "New Mexico"
+  ],
+  "termStart": "2021-06-22",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "State Capitol Room 206B, New Mexico  490 Old Santa Fe Trail, Santa Fe, NM 87501",
+    "phone": "505-986-4248",
+    "email": "pamelya.herndon@nmlegis.gov",
+    "website": "https://www.nmlegis.gov/Members/Legislator?SponCode=HHEPA"
+  },
+  "bio": "Pamelya Herndon serves as State Representative for New Mexico House of Representatives District 28. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "NM",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.nmlegis.gov/Members/Legislator?SponCode=HHEPA"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/nm/legislature/Pamelya-Herndon-800d2a2e-1622-4ab2-b290-3c537b38bdf8.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://www.nmlegis.gov/Images/Legislators/House/HHEPA.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Pamelya_Herndon"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Pamelya_Herndon"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/pamelya-herndon-4055929"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.nmlegis.gov/Members/Legislator_List?T=R"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

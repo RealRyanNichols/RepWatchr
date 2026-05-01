@@ -1,0 +1,72 @@
+{
+  "id": "bobby-joe-champion",
+  "name": "Bobby Joe Champion",
+  "firstName": "Bobby Joe",
+  "lastName": "Champion",
+  "photo": "/images/officials/state-legislature/mn/bobby-joe-champion.jpg",
+  "photoSourceUrl": "https://www.senate.mn/graphics/59Champion.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-59",
+  "jurisdiction": "Minnesota Senate",
+  "county": [
+    "Minnesota"
+  ],
+  "termStart": "2013-01-08",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 3401, Minnesota Senate Building 95 University Ave. West, St. Paul, MN 55155",
+    "phone": "651-296-9246",
+    "email": "sen.bobby.champion@senate.mn",
+    "website": "https://www.senate.mn/members/member_bio.html?mem_id=1212"
+  },
+  "bio": "Bobby Joe Champion serves as State Senator for Minnesota Senate District 59. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "MN",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.senate.mn/members/member_bio.html?mem_id=1212"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/mn/legislature/Bobby-Joe-Champion-c7436be4-472a-4d5e-82f5-f46359395d3a.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://www.senate.mn/graphics/59Champion.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Bobby_Joe_Champion"
+    },
+    {
+      "title": "Public source",
+      "url": "https://champion4change.org"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Bobby_Joe_Champion"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/109081/bobby-joe-champion"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.senate.mn/api/members"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.senate.mn/members/index.php"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.senate.mn/members/list.csv"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

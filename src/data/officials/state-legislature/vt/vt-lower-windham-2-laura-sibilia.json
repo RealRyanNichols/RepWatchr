@@ -1,0 +1,72 @@
+{
+  "id": "laura-sibilia",
+  "name": "Laura Sibilia",
+  "firstName": "Laura",
+  "lastName": "Sibilia",
+  "photo": "/images/officials/state-legislature/vt/laura-sibilia.jpg",
+  "photoSourceUrl": "https://legislature.vermont.gov/Documents/Legislators/Sibilia,Laura.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "I",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-Windham-2",
+  "jurisdiction": "Vermont House of Representatives",
+  "county": [
+    "Vermont"
+  ],
+  "termStart": "2023-01-04",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Vermont State House 115 State St., Montpelier, VT 05633",
+    "phone": "802-828-2228",
+    "email": "lsibilia@leg.state.vt.us",
+    "website": "https://legislature.vermont.gov/Documents/SmallMaps/2022/House/Windham-2.pdf"
+  },
+  "bio": "Laura Sibilia serves as State Representative for Vermont House of Representatives District Windham-2. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "VT",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://legislature.vermont.gov/Documents/SmallMaps/2022/House/Windham-2.pdf"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/vt/legislature/Laura-Sibilia-57c62cd8-8701-4af6-9627-b89e735b5632.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://legislature.vermont.gov/Documents/Legislators/Sibilia,Laura.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Laura_Sibilia"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Laura_Sibilia"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/155667/laura-sibilia"
+    },
+    {
+      "title": "Public source",
+      "url": "https://legislature.vermont.gov/people/loadAll/2020"
+    },
+    {
+      "title": "Public source",
+      "url": "https://legislature.vermont.gov/people/loadAll/2022"
+    },
+    {
+      "title": "Public source",
+      "url": "https://legislature.vermont.gov/people/loadAll/2024"
+    },
+    {
+      "title": "Public source",
+      "url": "https://legislature.vermont.gov/people/single/2020/24023"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

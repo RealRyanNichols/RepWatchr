@@ -1,0 +1,53 @@
+{
+  "id": "rashon-young",
+  "name": "RaShon Young",
+  "firstName": "RaShon",
+  "lastName": "Young",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-40",
+  "jurisdiction": "Florida House of Representatives",
+  "county": [
+    "Florida"
+  ],
+  "termStart": "2025-09-02",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 1402, The Capitol 402 S. Monroe St., Tallahassee, FL 32399",
+    "phone": "850-717-5040",
+    "email": "rashon.young@flhouse.gov",
+    "website": "https://www.flhouse.gov/Sections/Representatives/custom/details.aspx?MemberId=5065"
+  },
+  "bio": "RaShon Young serves as State Representative for Florida House of Representatives District 40. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "FL",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.flhouse.gov/Sections/Representatives/custom/details.aspx?MemberId=5065"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/fl/legislature/RaShon-Young-ff372569-d6f5-4bd0-8d36-569a7458f3e2.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/RaShon_Young"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/RaShon_Young"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/223242/rashon-young"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/rashon-young-71ab48175"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

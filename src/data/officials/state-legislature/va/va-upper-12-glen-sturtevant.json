@@ -1,0 +1,64 @@
+{
+  "id": "glen-sturtevant",
+  "name": "Glen Sturtevant",
+  "firstName": "Glen",
+  "lastName": "Sturtevant",
+  "photo": "/images/officials/state-legislature/va/glen-sturtevant.jpg",
+  "photoSourceUrl": "https://apps.senate.virginia.gov/Senator/images/member_photos/Sturtevant12",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-12",
+  "jurisdiction": "Virginia Senate",
+  "county": [
+    "Virginia"
+  ],
+  "termStart": "2024-01-10",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 604, General Assembly Building P.O. Box 396, Richmond, VA 23218",
+    "phone": "804-698-7512",
+    "email": "senatorsturtevant@senate.virginia.gov",
+    "website": "https://apps.senate.virginia.gov/Senator/memberpage.php?id=S99"
+  },
+  "bio": "Glen Sturtevant serves as State Senator for Virginia Senate District 12. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "VA",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://apps.senate.virginia.gov/Senator/memberpage.php?id=S99"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/va/legislature/Glen-H-Sturtevant-Jr-815f7b31-d344-481a-9922-ad77d16b808a.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://apps.senate.virginia.gov/Senator/images/member_photos/Sturtevant12"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Glen_Sturtevant"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Glen_Sturtevant"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/156453/glen-sturtevant-jr"
+    },
+    {
+      "title": "Public source",
+      "url": "https://lis.virginia.gov/cgi-bin/legp604.exe?241+mbr+S99"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/glensturtevant"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

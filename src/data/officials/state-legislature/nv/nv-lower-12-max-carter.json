@@ -1,0 +1,72 @@
+{
+  "id": "max-carter",
+  "name": "Max Carter",
+  "firstName": "Max",
+  "lastName": "Carter",
+  "photo": "/images/officials/state-legislature/nv/max-carter.jpg",
+  "photoSourceUrl": "http://leg.state.nv.us/Session/82nd2023/legislators/Assembly/Images/Carter.Max.393.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "Assemblymember",
+  "district": "HD-12",
+  "jurisdiction": "Nevada Assembly",
+  "county": [
+    "Nevada"
+  ],
+  "termStart": "2022-11-09",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 3140, Nevada Assembly 401 S. Carson St., Carson City, NV 89701",
+    "phone": "775-684-8819",
+    "email": "max.carter@asm.state.nv.us",
+    "website": "https://www.leg.state.nv.us/App/Legislator/A/Assembly/Current/12"
+  },
+  "bio": "Max Carter serves as Assemblymember for Nevada Assembly District 12. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "NV",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.leg.state.nv.us/App/Legislator/A/Assembly/Current/12"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/nv/legislature/Max-Carter-bd27bab3-8a47-439f-8ae5-8ce3ba534f90.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "http://leg.state.nv.us/Session/82nd2023/legislators/Assembly/Images/Carter.Max.393.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Max_Carter_II"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Max_Carter"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/204180/max-carter"
+    },
+    {
+      "title": "Public source",
+      "url": "https://nevadarealtorssupport.com/max-carter-ii"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.carter4nv.com/about-max"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.leg.state.nv.us/App/Legislator/A/Assembly/Current"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.leg.state.nv.us/App/Legislator/A/Assembly/Current/12                               \""
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

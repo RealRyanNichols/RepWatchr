@@ -1,0 +1,64 @@
+{
+  "id": "bob-fehrenbacher",
+  "name": "Bob Fehrenbacher",
+  "firstName": "Bob",
+  "lastName": "Fehrenbacher",
+  "photo": "/images/officials/state-legislature/wv/bob-fehrenbacher.jpg",
+  "photoSourceUrl": "http://www.wvlegislature.gov/images/members/2023/house/fehrenbacher_bob.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "Delegate",
+  "district": "HD-11",
+  "jurisdiction": "West Virginia House of Delegates",
+  "county": [
+    "West Virginia"
+  ],
+  "termStart": "2022-12-01",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "State Capitol Room 150R-A, Complex, Building 1 1900 Kanawha Blvd. East, Charleston, WV 25305",
+    "phone": "304-340-3137",
+    "email": "bob.fehrenbacher@wvhouse.gov",
+    "website": "https://www.wvlegislature.gov/House/lawmaker.cfm?member=Delegate%20Fehrenbacher"
+  },
+  "bio": "Bob Fehrenbacher serves as Delegate for West Virginia House of Delegates District 11. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "WV",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.wvlegislature.gov/House/lawmaker.cfm?member=Delegate%20Fehrenbacher"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/wv/legislature/Bob-Fehrenbacher-a70a295b-82a5-44a0-ba22-a462823f7abb.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "http://www.wvlegislature.gov/images/members/2023/house/fehrenbacher_bob.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Bob_Fehrenbacher"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Bob_Fehrenbacher"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/201629/bob-fehrenbacher"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/robert-fehrenbacher-941b164"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.wvlegislature.gov/House/roster.cfm"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

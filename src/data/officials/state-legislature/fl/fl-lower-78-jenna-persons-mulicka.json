@@ -1,0 +1,65 @@
+{
+  "id": "jenna-persons-mulicka",
+  "name": "Jenna Persons-Mulicka",
+  "firstName": "Jenna",
+  "lastName": "Persons-Mulicka",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-78",
+  "jurisdiction": "Florida House of Representatives",
+  "county": [
+    "Florida"
+  ],
+  "termStart": "2020-11-03",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 222, The Capitol 402 S. Monroe St., Tallahassee, FL 32399",
+    "phone": "850-717-5078",
+    "email": "jenna.persons@flhouse.gov",
+    "website": "https://myfloridahouse.gov/Sections/Representatives/details.aspx?MemberId=4785&LegislativeTermId=90"
+  },
+  "bio": "Jenna Persons-Mulicka serves as State Representative for Florida House of Representatives District 78. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "FL",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://myfloridahouse.gov/Sections/Representatives/details.aspx?MemberId=4785&LegislativeTermId=90"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/fl/legislature/Jenna-Persons-Mulicka-bc54a6ff-f7b3-4bbf-a23a-4acc9caa8064.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Jenna_Persons"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/194544/jenna-persons-mulicka"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.flhouse.gov/Sections/Representatives/custom/details.aspx?MemberId=4785"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.flhouse.gov/Sections/Representatives/details.aspx?MemberId=4785"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/jenna-persons-61b7bab9"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.myfloridahouse.gov/Sections/Representatives/details.aspx?MemberId=4785"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.myfloridahouse.gov/Sections/Representatives/details.aspx?MemberId=4785&LegislativeTermId=89"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

@@ -1,0 +1,60 @@
+{
+  "id": "billy-bob-faulkingham",
+  "name": "Billy Bob Faulkingham",
+  "firstName": "Billy Bob",
+  "lastName": "Faulkingham",
+  "photo": "/images/officials/state-legislature/me/billy-bob-faulkingham.jpg",
+  "photoSourceUrl": "https://legislature.maine.gov/house/house/Repository/MemberProfiles/b1dc14b4-920f-4f14-99c9-bce559bceb76_FaulkinghamNEW.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-12",
+  "jurisdiction": "Maine House of Representatives",
+  "county": [
+    "Maine"
+  ],
+  "termStart": "2022-12-07",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 332, House Republican Office 2 State House Station, Augusta, ME 04333",
+    "phone": "800-423-2900",
+    "email": "william.faulkingham@legislature.maine.gov",
+    "website": "https://legislature.maine.gov/house/house/MemberProfiles/Details/1379"
+  },
+  "bio": "Billy Bob Faulkingham serves as State Representative for Maine House of Representatives District 12. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "ME",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://legislature.maine.gov/house/house/MemberProfiles/Details/1379"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/me/legislature/Billy-Bob-Faulkingham-43c2650b-6248-46f9-a553-8c2bd0bab294.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://legislature.maine.gov/house/house/Repository/MemberProfiles/b1dc14b4-920f-4f14-99c9-bce559bceb76_FaulkinghamNEW.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/William_Faulkingham"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Billy_Bob_Faulkingham"
+    },
+    {
+      "title": "Public source",
+      "url": "https://legislature.maine.gov/house/house/MemberProfiles/ListAlpha"
+    },
+    {
+      "title": "Public source",
+      "url": "https://mainehousegop.org/members/faulkingham-billy-bob"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

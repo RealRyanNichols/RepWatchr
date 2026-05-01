@@ -1,0 +1,64 @@
+{
+  "id": "leonard-spencer",
+  "name": "Leonard Spencer",
+  "firstName": "Leonard",
+  "lastName": "Spencer",
+  "photo": "/images/officials/state-legislature/fl/leonard-spencer.jpg",
+  "photoSourceUrl": "https://floridapolitics.com/wp-content/uploads/2024/05/Spencer-Leonars.jpeg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-45",
+  "jurisdiction": "Florida House of Representatives",
+  "county": [
+    "Florida"
+  ],
+  "termStart": "2024-11-05",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 1402, The Capitol 402 S. Monroe St., Tallahassee, FL 32399",
+    "phone": "850-717-5045",
+    "email": "leonard.spencer@flhouse.gov",
+    "website": "https://www.flhouse.gov/Sections/Representatives/custom/details.aspx?MemberId=4915&LegislativeTermId=91"
+  },
+  "bio": "Leonard Spencer serves as State Representative for Florida House of Representatives District 45. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "FL",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.flhouse.gov/Sections/Representatives/custom/details.aspx?MemberId=4915&LegislativeTermId=91"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/fl/legislature/Leonard-Spencer-69e5941c-0def-4c79-a33e-c318ff516c9a.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://floridapolitics.com/wp-content/uploads/2024/05/Spencer-Leonars.jpeg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Leonard_Spencer"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/217900/leonard-spencer"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.flhouse.gov/Sections/Representatives/details.aspx?MemberId=4915"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/leonardkspencer"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.myfloridahouse.gov/Sections/Representatives/details.aspx?MemberId=4915&LegislativeTermId=91"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

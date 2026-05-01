@@ -1,0 +1,72 @@
+{
+  "id": "april-berg",
+  "name": "April Berg",
+  "firstName": "April",
+  "lastName": "Berg",
+  "photo": "/images/officials/state-legislature/wa/april-berg.jpg",
+  "photoSourceUrl": "https://housedemocrats.wa.gov/tmp/2021/01/Rep-Berg_April-2021_150x200.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-44",
+  "jurisdiction": "Washington House of Representatives",
+  "county": [
+    "Washington"
+  ],
+  "termStart": "2021-01-11",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 132C, Legislative Building P.O. Box 40600, Olympia, WA 98504",
+    "phone": "360-786-7892",
+    "email": "april.berg@leg.wa.gov",
+    "website": "https://housedemocrats.wa.gov/Berg/"
+  },
+  "bio": "April Berg serves as State Representative for Washington House of Representatives District 44. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "WA",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://housedemocrats.wa.gov/Berg/"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/wa/legislature/April-Berg-aebe068c-accc-4740-9e0d-97d20404ee95.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://housedemocrats.wa.gov/tmp/2021/01/Rep-Berg_April-2021_150x200.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://app.leg.wa.gov/ContentParts/MemberDirectory/?a=House"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/April_Berg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/April_Berg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://housedemocrats.wa.gov/berg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://housedemocrats.wa.gov/berg/"
+    },
+    {
+      "title": "Public source",
+      "url": "https://housedemocrats.wa.gov/berg/biography"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/192790/april-berg"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

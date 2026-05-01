@@ -1,0 +1,64 @@
+{
+  "id": "lori-korzen",
+  "name": "Lori Korzen",
+  "firstName": "Lori",
+  "lastName": "Korzen",
+  "photo": "/images/officials/state-legislature/nh/lori-korzen.jpg",
+  "photoSourceUrl": "https://www.citizenscount.org/sites/default/files/2022-07/lori-korzen2.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-Coos 7",
+  "jurisdiction": "New Hampshire House of Representatives",
+  "county": [
+    "New Hampshire"
+  ],
+  "termStart": "2024-12-04",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "State House 107 N. Main St., Concord, NH 03301",
+    "phone": "603-271-3661",
+    "email": "lori.korzen@gc.nh.gov",
+    "website": "https://gc.nh.gov/house/members/member.aspx?pid=10612"
+  },
+  "bio": "Lori Korzen serves as State Representative for New Hampshire House of Representatives District Coos 7. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "NH",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://gc.nh.gov/house/members/member.aspx?pid=10612"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/nh/legislature/Lori-Korzen-1becd24c-cc2c-46fd-9859-a06c46340b93.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://www.citizenscount.org/sites/default/files/2022-07/lori-korzen2.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Lori_Korzen"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Lori_Korzen"
+    },
+    {
+      "title": "Public source",
+      "url": "https://gencourt.state.nh.us/house/members/member.aspx?pid=10612"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/208995/lori-korzen"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/lori-korzen-67759b76"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

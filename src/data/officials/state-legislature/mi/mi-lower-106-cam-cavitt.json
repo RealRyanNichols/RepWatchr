@@ -1,0 +1,68 @@
+{
+  "id": "cam-cavitt",
+  "name": "Cam Cavitt",
+  "firstName": "Cam",
+  "lastName": "Cavitt",
+  "photo": "/images/officials/state-legislature/mi/cam-cavitt.jpg",
+  "photoSourceUrl": "https://www.house.mi.gov/media/Representatives/Cavitt-106.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-106",
+  "jurisdiction": "Michigan House of Representatives",
+  "county": [
+    "Michigan"
+  ],
+  "termStart": "2023-01-01",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room S-1485, Anderson House Office Building 124 N. Capitol Ave., Lansing, MI 48933",
+    "phone": "517-373-0833",
+    "email": "camcavitt@house.mi.gov",
+    "website": "https://gophouse.org/member/RepCamCavitt/posts"
+  },
+  "bio": "Cam Cavitt serves as State Representative for Michigan House of Representatives District 106. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "MI",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://gophouse.org/member/RepCamCavitt/posts"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/mi/legislature/Cameron-Cavitt-60ae519b-a739-4dc5-80bb-c0161269607a.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://www.house.mi.gov/media/Representatives/Cavitt-106.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Cameron_Cavitt"
+    },
+    {
+      "title": "Public source",
+      "url": "https://gophouse.org/member/RepCamCavitt/about"
+    },
+    {
+      "title": "Member Details Page",
+      "url": "https://RepCavitt.com"
+    },
+    {
+      "title": "Members List Page",
+      "url": "https://www.house.mi.gov/AllRepresentatives"
+    },
+    {
+      "title": "Member Details Page",
+      "url": "https://www.house.mi.gov/repdetail/repCameronCavitt"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/cameron-cavitt-9582ba12"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

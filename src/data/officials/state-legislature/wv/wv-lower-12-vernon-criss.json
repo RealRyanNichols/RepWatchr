@@ -1,0 +1,64 @@
+{
+  "id": "vernon-criss",
+  "name": "Vernon Criss",
+  "firstName": "Vernon",
+  "lastName": "Criss",
+  "photo": "/images/officials/state-legislature/wv/vernon-criss.jpg",
+  "photoSourceUrl": "https://www.wvlegislature.gov/images/members/2025/house/criss_vernon.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "Delegate",
+  "district": "HD-12",
+  "jurisdiction": "West Virginia House of Delegates",
+  "county": [
+    "West Virginia"
+  ],
+  "termStart": "2022-12-01",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "State Capitol Room 462M, Complex, Building 1 1900 Kanawha Blvd. East, Charleston, WV 25305",
+    "phone": "304-340-3230",
+    "email": "vernon.criss@wvhouse.gov",
+    "website": "https://www.legis.state.wv.us/House/lawmaker.cfm?member=Delegate+Criss"
+  },
+  "bio": "Vernon Criss serves as Delegate for West Virginia House of Delegates District 12. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "WV",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.legis.state.wv.us/House/lawmaker.cfm?member=Delegate+Criss"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/wv/legislature/Vernon-Criss-381e0784-9202-4308-a138-399c84740804.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://www.wvlegislature.gov/images/members/2025/house/criss_vernon.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Vernon_Criss"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Vernon_Criss"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/52393/vernon-criss"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.wvlegislature.gov/House/lawmaker.cfm?member=Delegate%20Criss"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.wvlegislature.gov/House/roster.cfm"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

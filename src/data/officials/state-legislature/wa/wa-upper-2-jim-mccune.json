@@ -1,0 +1,69 @@
+{
+  "id": "jim-mccune",
+  "name": "Jim McCune",
+  "firstName": "Jim",
+  "lastName": "McCune",
+  "party": "R",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-2",
+  "jurisdiction": "Washington Senate",
+  "county": [
+    "Washington"
+  ],
+  "termStart": "2021-01-11",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 210A, Irv Newhouse Building P.O. Box 40402, Olympia, WA 98504",
+    "phone": "360-786-7602",
+    "email": "jim.mccune@leg.wa.gov",
+    "website": "https://JimMcCune.src.wastateleg.org/"
+  },
+  "bio": "Jim McCune serves as State Senator for Washington Senate District 2. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "WA",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://JimMcCune.src.wastateleg.org/"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/wa/legislature/Jim-McCune-fc68fcd2-66ca-481a-b699-7a4ba113d4d7.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://app.leg.wa.gov/ContentParts/MemberDirectory/?a=Senate"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Jim_McCune_(Washington)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Jim_McCune"
+    },
+    {
+      "title": "Public source",
+      "url": "https://jimmccune.src.wastateleg.org"
+    },
+    {
+      "title": "Public source",
+      "url": "https://jimmccune.src.wastateleg.org/"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/51573/jim-mccune"
+    },
+    {
+      "title": "Public source",
+      "url": "https://leg.wa.gov/legislators/member/jim-mccune"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.leg.wa.gov/house/representatives/Pages/mccune.aspx"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

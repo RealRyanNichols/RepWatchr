@@ -1,0 +1,49 @@
+{
+  "id": "meredith-craig",
+  "name": "Meredith Craig",
+  "firstName": "Meredith",
+  "lastName": "Craig",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-77",
+  "jurisdiction": "Ohio House of Representatives",
+  "county": [
+    "Ohio"
+  ],
+  "termStart": "2025-01-01",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "77 S. High St. 11th Floor, Columbus, OH 43215",
+    "phone": "614-466-1474",
+    "email": "rep77@ohiohouse.gov",
+    "website": "https://ohiohouse.gov/members/meredith-craig"
+  },
+  "bio": "Meredith Craig serves as State Representative for Ohio House of Representatives District 77. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "OH",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://ohiohouse.gov/members/meredith-craig"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/oh/legislature/Meredith-Craig-75257af6-5d83-4d3b-b127-744aaa377c9f.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Meredith_Craig"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ohiohouse.gov/members/meredith-craig/biography"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/meredithccraig"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

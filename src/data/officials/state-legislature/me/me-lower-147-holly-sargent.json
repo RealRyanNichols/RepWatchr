@@ -1,0 +1,60 @@
+{
+  "id": "holly-sargent",
+  "name": "Holly Sargent",
+  "firstName": "Holly",
+  "lastName": "Sargent",
+  "photo": "/images/officials/state-legislature/me/holly-sargent.jpg",
+  "photoSourceUrl": "https://legislature.maine.gov/house/house/Repository/MemberProfiles/191052f1-463d-4a44-bfdc-ecde7bb45ec0_SARGENT.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-147",
+  "jurisdiction": "Maine House of Representatives",
+  "county": [
+    "Maine"
+  ],
+  "termStart": "2022-12-07",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 333, House Democratic Office 2 State House Station, Augusta, ME 04333",
+    "phone": "800-423-2900",
+    "email": "holly.sargent@legislature.maine.gov",
+    "website": "https://legislature.maine.gov/house/house/MemberProfiles/Details/1471"
+  },
+  "bio": "Holly Sargent serves as State Representative for Maine House of Representatives District 147. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "ME",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://legislature.maine.gov/house/house/MemberProfiles/Details/1471"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/me/legislature/Holly-T-Sargent-82f5c446-4f81-4c54-98ae-7b302003d39d.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://legislature.maine.gov/house/house/Repository/MemberProfiles/191052f1-463d-4a44-bfdc-ecde7bb45ec0_SARGENT.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Holly_Sargent"
+    },
+    {
+      "title": "Public source",
+      "url": "https://legislature.maine.gov/house/house/MemberProfiles/ListAlpha"
+    },
+    {
+      "title": "Public source",
+      "url": "https://legislature.maine.gov/housedems/sargent/index.html"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/holly-sargent-33bb8a12"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

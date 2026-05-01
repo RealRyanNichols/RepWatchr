@@ -1,0 +1,61 @@
+{
+  "id": "rachel-hunt",
+  "name": "Rachel Hunt",
+  "firstName": "Rachel",
+  "lastName": "Hunt",
+  "party": "D",
+  "level": "state",
+  "position": "Lieutenant Governor",
+  "district": "North Carolina",
+  "jurisdiction": "North Carolina statewide public office",
+  "county": [
+    "North Carolina"
+  ],
+  "termStart": "2025-01-01",
+  "termEnd": "2029-01-01",
+  "contactInfo": {
+    "office": "310 N. Blount Street; Raleigh, NC 27601",
+    "phone": "919-814-3680",
+    "email": "rachel.hunt@ncleg.gov",
+    "website": "https://www.ncleg.gov/Members/IntroducedBills/S/442"
+  },
+  "bio": "Rachel Hunt is listed as Lieutenant Governor for North Carolina. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "NC",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.ncleg.gov/Members/IntroducedBills/S/442"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/nc/executive/Rachel-Hunt-4c3a1120-2dd5-4fbe-a084-e64894e57163.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Rachel_Hunt"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/183473/rachel-hunt"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/rachel-hunt-56a7a230"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.ncleg.gov/Members/Biography/S/442"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.ncleg.gov/Members/MemberTable/S"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ltgov.nc.gov/"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

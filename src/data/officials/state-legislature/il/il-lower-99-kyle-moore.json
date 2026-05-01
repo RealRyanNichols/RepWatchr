@@ -1,0 +1,72 @@
+{
+  "id": "kyle-moore",
+  "name": "Kyle Moore",
+  "firstName": "Kyle",
+  "lastName": "Moore",
+  "photo": "/images/officials/state-legislature/il/kyle-moore.jpg",
+  "photoSourceUrl": "https://cdn.ilga.gov/assets/img/members/%7BBB70A39A-DE8F-4EF5-A923-0EE51834A45F%7D.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-99",
+  "jurisdiction": "Illinois House of Representatives",
+  "county": [
+    "Illinois"
+  ],
+  "termStart": "2025-01-08",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 222-N, Stratton Office Building, Springfield, IL 62706",
+    "phone": "217-782-8096",
+    "email": "moore@ilhousegop.org",
+    "website": "https://repmoore.com/"
+  },
+  "bio": "Kyle Moore serves as State Representative for Illinois House of Representatives District 99. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "IL",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://repmoore.com/"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/il/legislature/Kyle-Moore-6f9e28df-bdf5-4493-aac1-68f1b7be39cb.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://cdn.ilga.gov/assets/img/members/%7BBB70A39A-DE8F-4EF5-A923-0EE51834A45F%7D.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Kyle_Moore_(Illinois)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Kyle_Moore_(politician)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/113384/kyle-moore"
+    },
+    {
+      "title": "Public source",
+      "url": "https://repmoore.com"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.ilga.gov/House/Members/Details/3456"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.ilga.gov/house/Rep.asp?GA=104&MemberID=3456"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/kyle-moore-351a1a1bb"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

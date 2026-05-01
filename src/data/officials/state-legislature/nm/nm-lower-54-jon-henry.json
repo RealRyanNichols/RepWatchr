@@ -1,0 +1,41 @@
+{
+  "id": "jon-henry",
+  "name": "Jon Henry",
+  "firstName": "Jon",
+  "lastName": "Henry",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-54",
+  "jurisdiction": "New Mexico House of Representatives",
+  "county": [
+    "New Mexico"
+  ],
+  "termStart": "2025-01-01",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "State Capitol Room 202A, New Mexico  490 Old Santa Fe Trail, Santa Fe, NM 87501",
+    "phone": "505-986-4221",
+    "email": "jonathan.henry@nmlegis.gov",
+    "website": "https://www.nmlegis.gov/Members/Legislator?SponCode=HHENR"
+  },
+  "bio": "Jon Henry serves as State Representative for New Mexico House of Representatives District 54. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "NM",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.nmlegis.gov/Members/Legislator?SponCode=HHENR"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/nm/legislature/Jon-Henry-3c29303f-1a07-4767-9172-b7f453918d77.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Jonathan_Henry"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

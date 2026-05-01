@@ -1,0 +1,72 @@
+{
+  "id": "ladonna-appelbaum",
+  "name": "LaDonna Appelbaum",
+  "firstName": "LaDonna",
+  "lastName": "Appelbaum",
+  "photo": "/images/officials/state-legislature/mo/ladonna-appelbaum.jpg",
+  "photoSourceUrl": "https://house.mo.gov/MemberPhoto.aspx?id=2057",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-71",
+  "jurisdiction": "Missouri House of Representatives",
+  "county": [
+    "Missouri"
+  ],
+  "termStart": "2019-01-09",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 101-A, 201 W. Capitol Ave., Jefferson City, MO 65101",
+    "phone": "573-751-4183",
+    "email": "ladonna.appelbaum@house.mo.gov",
+    "website": "https://house.mo.gov/MemberDetails.aspx?district=071"
+  },
+  "bio": "LaDonna Appelbaum serves as State Representative for Missouri House of Representatives District 71. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "MO",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://house.mo.gov/MemberDetails.aspx?district=071"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/mo/legislature/LaDonna-Appelbaum-6c3609dd-62d2-4030-9b24-7b5d49a16677.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://house.mo.gov/MemberPhoto.aspx?id=2057"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/LaDonna_Appelbaum"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/LaDonna_Appelbaum"
+    },
+    {
+      "title": "Public source",
+      "url": "https://house.mo.gov/MemberDetails.aspx?year=2021&code=R&district=071"
+    },
+    {
+      "title": "Public source",
+      "url": "https://house.mo.gov/MemberDetails.aspx?year=2023&code=R&district=071"
+    },
+    {
+      "title": "Public source",
+      "url": "https://house.mo.gov/MemberGridCluster.aspx"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/183247/ladonna-appelbaum"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.house.mo.gov/MemberDetails.aspx?district=71"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

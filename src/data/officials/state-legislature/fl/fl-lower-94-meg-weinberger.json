@@ -1,0 +1,64 @@
+{
+  "id": "meg-weinberger",
+  "name": "Meg Weinberger",
+  "firstName": "Meg",
+  "lastName": "Weinberger",
+  "photo": "/images/officials/state-legislature/fl/meg-weinberger.jpg",
+  "photoSourceUrl": "https://s3.amazonaws.com/ballotpedia-api4/files/thumbs/200/300/Nick_Ward_20240808_093359.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-94",
+  "jurisdiction": "Florida House of Representatives",
+  "county": [
+    "Florida"
+  ],
+  "termStart": "2024-11-05",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 1401, The Capitol 402 S. Monroe St., Tallahassee, FL 32399",
+    "phone": "850-717-5094",
+    "email": "meg.weinberger@flhouse.gov",
+    "website": "https://www.flhouse.gov/Sections/Representatives/custom/details.aspx?MemberId=4926"
+  },
+  "bio": "Meg Weinberger serves as State Representative for Florida House of Representatives District 94. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "FL",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.flhouse.gov/Sections/Representatives/custom/details.aspx?MemberId=4926"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/fl/legislature/Meg-Weinberger-7079537f-b144-4304-b389-8e572e62e1c9.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://s3.amazonaws.com/ballotpedia-api4/files/thumbs/200/300/Nick_Ward_20240808_093359.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Meg_Weinberger"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/217966/meg-weinberger"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.flhouse.gov/Sections/Representatives/custom/details.aspx?MemberId=4926&LegislativeTermId=91"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/megan-o-neill-weinberger-49878433"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.myfloridahouse.gov/Sections/Representatives/details.aspx?MemberId=4926&LegislativeTermId=91"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

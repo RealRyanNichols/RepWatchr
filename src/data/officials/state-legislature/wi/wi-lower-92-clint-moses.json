@@ -1,0 +1,70 @@
+{
+  "id": "clint-moses",
+  "name": "Clint Moses",
+  "firstName": "Clint",
+  "lastName": "Moses",
+  "photo": "/images/officials/state-legislature/wi/clint-moses.jpg",
+  "photoSourceUrl": "https://docs.legis.wisconsin.gov/2023/legislators/assembly/2487.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "Assemblymember",
+  "district": "HD-92",
+  "jurisdiction": "Wisconsin State Assembly",
+  "county": [
+    "Wisconsin"
+  ],
+  "termStart": "2025-01-06",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "email": "rep.moses@legis.wisconsin.gov",
+    "website": "https://docs.legis.wisconsin.gov/2021/legislators/assembly/2253"
+  },
+  "bio": "Clint Moses serves as Assemblymember for Wisconsin State Assembly District 92. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "WI",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://docs.legis.wisconsin.gov/2021/legislators/assembly/2253"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/wi/legislature/Clint-P-Moses-21e310b1-c14b-42e6-b3fc-84c1613c3063.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://docs.legis.wisconsin.gov/2023/legislators/assembly/2487.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Clint_Moses"
+    },
+    {
+      "title": "Public source",
+      "url": "https://docs.legis.wisconsin.gov/2021/legislators/assembly"
+    },
+    {
+      "title": "Public source",
+      "url": "https://docs.legis.wisconsin.gov/2021/legislators/assembly/"
+    },
+    {
+      "title": "Public source",
+      "url": "https://docs.legis.wisconsin.gov/2023/legislators/assembly"
+    },
+    {
+      "title": "members list page",
+      "url": "https://docs.legis.wisconsin.gov/2023/legislators/assembly/"
+    },
+    {
+      "title": "member detail page",
+      "url": "https://docs.legis.wisconsin.gov/2023/legislators/assembly/2487"
+    },
+    {
+      "title": "Public source",
+      "url": "https://docs.legis.wisconsin.gov/2025/legislators/assembly/2875"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

@@ -1,0 +1,72 @@
+{
+  "id": "robert-white",
+  "name": "Robert White",
+  "firstName": "Robert",
+  "lastName": "White",
+  "photo": "/images/officials/state-legislature/dc/robert-white.jpg",
+  "photoSourceUrl": "https://dccouncil.gov/wp-content/uploads/2017/06/CM-Robert-White-Headshot_Photo-credit-Sebastian-Vizcarra-scaled-75x75-c-default.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "Councilmember",
+  "district": "At-Large",
+  "jurisdiction": "Council of the District of Columbia",
+  "county": [
+    "District of Columbia"
+  ],
+  "termStart": "2016-09-16",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "1350 Pennsylvania Ave. NW Suite 107, Washington, DC 20004",
+    "phone": "202-724-8174",
+    "email": "rwhite@dccouncil.gov",
+    "website": "https://dccouncil.gov/council/councilmember-robert-c-white-jr/"
+  },
+  "bio": "Robert White serves as Councilmember for Council of the District of Columbia District At-Large. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "DC",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://dccouncil.gov/council/councilmember-robert-c-white-jr/"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/dc/legislature/Robert-C-White-Jr-07b9c384-a232-40d5-b445-61db9e4bb65b.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://dccouncil.gov/wp-content/uploads/2017/06/CM-Robert-White-Headshot_Photo-credit-Sebastian-Vizcarra-scaled-75x75-c-default.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Robert_White_(District_of_Columbia)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://dccouncil.gov/council/councilmember-robert-c-white-jr"
+    },
+    {
+      "title": "Public source",
+      "url": "https://dccouncil.us/council/councilmember-robert-c-white-jr"
+    },
+    {
+      "title": "Public source",
+      "url": "https://dccouncil.us/council/councilmember-robert-c-white-jr/"
+    },
+    {
+      "title": "Public source",
+      "url": "https://dccouncil.us/councilmembers"
+    },
+    {
+      "title": "Public source",
+      "url": "https://dccouncil.us/councilmembers/"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Robert_White_(Washington,_D.C._politician)"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

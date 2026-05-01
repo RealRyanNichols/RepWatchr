@@ -1,0 +1,72 @@
+{
+  "id": "bill-falkner",
+  "name": "Bill Falkner",
+  "firstName": "Bill",
+  "lastName": "Falkner",
+  "photo": "/images/officials/state-legislature/mo/bill-falkner.jpg",
+  "photoSourceUrl": "https://house.mo.gov/MemberPhoto.aspx?id=2062",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-10",
+  "jurisdiction": "Missouri House of Representatives",
+  "county": [
+    "Missouri"
+  ],
+  "termStart": "2019-01-09",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 206-A, 201 W. Capitol Ave., Jefferson City, MO 65101",
+    "phone": "573-751-9755",
+    "email": "bill.falkner@house.mo.gov",
+    "website": "https://house.mo.gov/memberdetails.aspx?district=010"
+  },
+  "bio": "Bill Falkner serves as State Representative for Missouri House of Representatives District 10. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "MO",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://house.mo.gov/memberdetails.aspx?district=010"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/mo/legislature/Bill-Falkner-28245e55-fddc-46db-85a7-ce9ca55da6d7.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://house.mo.gov/MemberPhoto.aspx?id=2062"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Bill_Falkner"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Bill_Falkner"
+    },
+    {
+      "title": "Public source",
+      "url": "https://house.mo.gov/MemberDetails.aspx?year=2021&code=R&district=010"
+    },
+    {
+      "title": "Public source",
+      "url": "https://house.mo.gov/MemberDetails.aspx?year=2023&code=R&district=010"
+    },
+    {
+      "title": "Public source",
+      "url": "https://house.mo.gov/MemberGridCluster.aspx"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/75375/bill-falkner"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.house.mo.gov/MemberDetails.aspx?district=10"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

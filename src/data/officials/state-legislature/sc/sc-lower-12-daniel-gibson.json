@@ -1,0 +1,57 @@
+{
+  "id": "daniel-gibson",
+  "name": "Daniel Gibson",
+  "firstName": "Daniel",
+  "lastName": "Gibson",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-12",
+  "jurisdiction": "South Carolina House of Representatives",
+  "county": [
+    "South Carolina"
+  ],
+  "termStart": "2022-11-14",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 314D, Blatt Building P.O. Box 11867, Columbia, SC 29201",
+    "phone": "803-212-6814",
+    "email": "danielgibson@schouse.gov",
+    "website": "https://scstatehouse.gov/member.php?code=0667045375"
+  },
+  "bio": "Daniel Gibson serves as State Representative for South Carolina House of Representatives District 12. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "SC",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://scstatehouse.gov/member.php?code=0667045375"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/sc/legislature/Daniel-Gibson-fd827c3d-df23-4497-b39e-7c7ab43138fd.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Daniel_Gibson"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Daniel_Gibson_(politician)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/205401/daniel-gibson"
+    },
+    {
+      "title": "Public source",
+      "url": "https://scstatehouse.gov/member.php?chamber=H"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.scstatehouse.gov/member.php?code=0667045375"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

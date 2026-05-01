@@ -1,0 +1,47 @@
+{
+  "id": "jacqueline-coleman",
+  "name": "Jacqueline Coleman",
+  "firstName": "Jacqueline",
+  "lastName": "Coleman",
+  "photo": "/images/officials/state-executive/ky/jacqueline-coleman.jpg",
+  "photoSourceUrl": "https://governor.ky.gov/PublishingImages/Lt-Governor-Jacqueline-Coleman-Crop.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "Lieutenant Governor",
+  "district": "Kentucky",
+  "jurisdiction": "Kentucky statewide public office",
+  "county": [
+    "Kentucky"
+  ],
+  "termStart": "2019-12-10",
+  "termEnd": "2027-12-07",
+  "contactInfo": {
+    "office": "501 High Street, 2nd Floor; Frankfort, KY 40602",
+    "phone": "502-564-2611",
+    "website": "https://governor.ky.gov/about/lt-governor-jacqueline-coleman"
+  },
+  "bio": "Jacqueline Coleman is listed as Lieutenant Governor for Kentucky. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "KY",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://governor.ky.gov/about/lt-governor-jacqueline-coleman"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ky/executive/Jacqueline-Coleman-9b07a848-b96c-4424-826a-5194b65e43d9.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://governor.ky.gov/PublishingImages/Lt-Governor-Jacqueline-Coleman-Crop.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Jacqueline_Coleman"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

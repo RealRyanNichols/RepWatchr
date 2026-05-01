@@ -1,0 +1,69 @@
+{
+  "id": "david-young",
+  "name": "David Young",
+  "firstName": "David",
+  "lastName": "Young",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-28",
+  "jurisdiction": "Iowa House of Representatives",
+  "county": [
+    "Iowa"
+  ],
+  "termStart": "2023-01-01",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "State Capitol Building 1007 E. Grand Ave., Des Moines, IA 50319",
+    "phone": "515-281-3221",
+    "email": "david.young@legis.iowa.gov",
+    "website": "https://www.legis.iowa.gov/legislators/legislator/newsletter?id=33972&ga=90"
+  },
+  "bio": "David Young serves as State Representative for Iowa House of Representatives District 28. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "IA",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.legis.iowa.gov/legislators/legislator/newsletter?id=33972&ga=90"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ia/legislature/David-E-Young-e0df02a4-7910-4538-8c3b-8152fb8f657c.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/David_Young_(Iowa)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/David_Young_%28Iowa_politician%29"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/155218/david-young"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.govtrack.us/congress/members/david_young/412628"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.legis.iowa.gov/legislators/house"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.legis.iowa.gov/legislators/legislator?ga=90&personID=33972"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.legis.iowa.gov/legislators/legislator?personID=33972"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/david-young-28993510"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

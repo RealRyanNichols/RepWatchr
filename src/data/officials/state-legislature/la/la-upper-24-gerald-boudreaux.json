@@ -1,0 +1,53 @@
+{
+  "id": "gerald-boudreaux",
+  "name": "Gerald Boudreaux",
+  "firstName": "Gerald",
+  "lastName": "Boudreaux",
+  "party": "D",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-24",
+  "jurisdiction": "Louisiana Senate",
+  "county": [
+    "Louisiana"
+  ],
+  "termStart": "2016-01-11",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "P.O. Box 94183 900 N. 3rd St., Baton Rouge, LA 70804",
+    "phone": "225-342-2024",
+    "email": "boudreauxg@legis.la.gov",
+    "website": "https://senate.la.gov/smembers.aspx?ID=24"
+  },
+  "bio": "Gerald Boudreaux serves as State Senator for Louisiana Senate District 24. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "LA",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://senate.la.gov/smembers.aspx?ID=24"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/la/legislature/Gerald-Boudreaux-379e9992-463c-4188-9702-668457a75c3d.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Gerald_Boudreaux"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Gerald_Boudreaux"
+    },
+    {
+      "title": "Public source",
+      "url": "https://senate.la.gov/Senators_FullInfo"
+    },
+    {
+      "title": "Public source",
+      "url": "https://senate.la.gov/smembers?ID=24"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

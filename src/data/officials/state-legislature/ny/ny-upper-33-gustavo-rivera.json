@@ -1,0 +1,65 @@
+{
+  "id": "gustavo-rivera",
+  "name": "Gustavo Rivera",
+  "firstName": "Gustavo",
+  "lastName": "Rivera",
+  "party": "D",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-33",
+  "jurisdiction": "New York Senate",
+  "county": [
+    "New York"
+  ],
+  "termStart": "2011-01-01",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 502C, Capitol Building, Albany, NY 12247",
+    "phone": "518-455-3395",
+    "email": "grivera@nysenate.gov",
+    "website": "https://www.nysenate.gov/senators-committees",
+    "socialMedia": {
+      "x": "https://x.com/NYSenatorRivera",
+      "twitter": "https://x.com/NYSenatorRivera"
+    }
+  },
+  "bio": "Gustavo Rivera serves as State Senator for New York Senate District 33. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "NY",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.nysenate.gov/senators-committees"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ny/legislature/Gustavo-Rivera-068528ac-bc5e-449f-a4df-4541f8c09415.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/J._Gustavo_Rivera"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Gustavo_Rivera_(politician)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/127819/gustavo-rivera"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/gustavo-rivera-75558a"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.nysenate.gov/senators/gustavo-rivera"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.nysenate.gov/senators/gustavo-rivera/contact"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

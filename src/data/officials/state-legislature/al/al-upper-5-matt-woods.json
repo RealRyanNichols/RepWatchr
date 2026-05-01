@@ -1,0 +1,60 @@
+{
+  "id": "matt-woods",
+  "name": "Matt Woods",
+  "firstName": "Matt",
+  "lastName": "Woods",
+  "photo": "/images/officials/state-legislature/al/matt-woods.jpg",
+  "photoSourceUrl": "https://www.legislature.state.al.us/pdf/house/members/Woods_13.png",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-5",
+  "jurisdiction": "Alabama Senate",
+  "county": [
+    "Alabama"
+  ],
+  "termStart": "2025-06-27",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 737, 11 S. Union St., Montgomery, AL 36130",
+    "phone": "334-261-0894",
+    "email": "matt.woods@alsenate.gov",
+    "website": "https://alison.legislature.state.al.us/house-leaders-members"
+  },
+  "bio": "Matt Woods serves as State Senator for Alabama Senate District 5. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "AL",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://alison.legislature.state.al.us/house-leaders-members"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/al/legislature/Matt-Woods-e6c4edb0-48af-4db8-aa0a-57570f0aef1e.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://www.legislature.state.al.us/pdf/house/members/Woods_13.png"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Matt_Woods"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Matt_Woods_(politician)"
+    },
+    {
+      "title": "graphql endpoint for member information",
+      "url": "https://gql.api.alison.legislature.state.al.us/graphql"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/matthew-woods-20680883"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

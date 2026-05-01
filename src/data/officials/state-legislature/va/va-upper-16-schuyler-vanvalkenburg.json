@@ -1,0 +1,75 @@
+{
+  "id": "schuyler-vanvalkenburg",
+  "name": "Schuyler VanValkenburg",
+  "firstName": "Schuyler",
+  "lastName": "VanValkenburg",
+  "photo": "/images/officials/state-legislature/va/schuyler-vanvalkenburg.jpg",
+  "photoSourceUrl": "https://apps.senate.virginia.gov/Senator/images/member_photos/VanValkenburg16",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-16",
+  "jurisdiction": "Virginia Senate",
+  "county": [
+    "Virginia"
+  ],
+  "termStart": "2024-01-10",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "email": "senatorvanvalkenburg@senate.virginia.gov",
+    "website": "https://apps.senate.virginia.gov/Senator/memberpage.php?id=S129",
+    "socialMedia": {
+      "x": "https://x.com/vvfordelegate",
+      "twitter": "https://x.com/vvfordelegate",
+      "facebook": "https://facebook.com/VanValkenburg4VA"
+    }
+  },
+  "bio": "Schuyler VanValkenburg serves as State Senator for Virginia Senate District 16. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "VA",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://apps.senate.virginia.gov/Senator/memberpage.php?id=S129"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/va/legislature/Schuyler-T-VanValkenburg-aec7ee58-7da0-41e1-88d0-5c9e68737a0f.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://apps.senate.virginia.gov/Senator/images/member_photos/VanValkenburg16"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Schuyler_VanValkenburg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Schuyler_VanValkenburg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/176574/schuyler-vanvalkenburg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://lis.virginia.gov/191/mbr/MBR.HTM"
+    },
+    {
+      "title": "Public source",
+      "url": "https://lis.virginia.gov/201/mbr/MBR.HTM"
+    },
+    {
+      "title": "Public source",
+      "url": "https://lis.virginia.gov/cgi-bin/legp604.exe?191+mbr+H307"
+    },
+    {
+      "title": "Public source",
+      "url": "https://lis.virginia.gov/cgi-bin/legp604.exe?201+mbr+H307"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

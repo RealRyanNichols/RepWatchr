@@ -1,0 +1,65 @@
+{
+  "id": "robert-rivas",
+  "name": "Robert Rivas",
+  "firstName": "Robert",
+  "lastName": "Rivas",
+  "party": "D",
+  "level": "state",
+  "position": "Assemblymember",
+  "district": "HD-29",
+  "jurisdiction": "California State Assembly",
+  "county": [
+    "California"
+  ],
+  "termStart": "2022-12-05",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 8330, 1021 O St. P.O. Box 942849, Sacramento, CA 94249",
+    "phone": "916-319-2029",
+    "email": "assemblymember.robertrivas@assembly.ca.gov",
+    "website": "https://a29.asmdc.org/"
+  },
+  "bio": "Robert Rivas serves as Assemblymember for California State Assembly District 29. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "CA",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://a29.asmdc.org/"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ca/legislature/Robert-Rivas-68f5ee30-aa70-489b-84b7-6501e6188751.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://assembly.ca.gov/assemblymembers"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Robert_Rivas"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Robert_Rivas_(politician)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/129744/robert-rivas"
+    },
+    {
+      "title": "Public source",
+      "url": "https://speaker.asmdc.org"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.assembly.ca.gov/assemblymembers"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/robert-rivas-8924b141"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

@@ -1,0 +1,71 @@
+{
+  "id": "reuben-tarver",
+  "name": "Reuben Tarver",
+  "firstName": "Reuben",
+  "lastName": "Tarver",
+  "photo": "/images/officials/state-legislature/wy/reuben-tarver.jpg",
+  "photoSourceUrl": "https://wyoleg.gov/LegislatorSummary/Photos/68th-TarverReuben.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-52",
+  "jurisdiction": "Wyoming House of Representatives",
+  "county": [
+    "Wyoming"
+  ],
+  "termStart": "2023-01-02",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "State Capitol 200 W. 24th St., Cheyenne, WY 82002",
+    "email": "reuben.tarver@wyoleg.gov",
+    "website": "https://www.wyoleg.gov/Legislators/2023/H/2112"
+  },
+  "bio": "Reuben Tarver serves as State Representative for Wyoming House of Representatives District 52. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "WY",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.wyoleg.gov/Legislators/2023/H/2112"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/wy/legislature/Reuben-Tarver-8b636fd9-d6e2-4369-9764-c56803244076.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://wyoleg.gov/LegislatorSummary/Photos/68th-TarverReuben.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Reuben_Tarver"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Reuben_Tarver"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/207717/reuben-tarver"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/reuben-tarver-70174178"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.wyoleg.gov/Legislators/2025/H/2112"
+    },
+    {
+      "title": "Public source",
+      "url": "https://wyoleg.gov/LsoService/api/legislator/2023/H"
+    },
+    {
+      "title": "Public source",
+      "url": "https://wyoleg.gov/LsoService/api/legislator/2112"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

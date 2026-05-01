@@ -1,0 +1,61 @@
+{
+  "id": "elle-cochran",
+  "name": "Elle Cochran",
+  "firstName": "Elle",
+  "lastName": "Cochran",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-14",
+  "jurisdiction": "Hawaii House of Representatives",
+  "county": [
+    "Hawaii"
+  ],
+  "termStart": "2022-11-08",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "State Capitol Room 315, 415 S. Beretania St., Honolulu, HI 96813",
+    "phone": "808-586-6160",
+    "email": "repcochran@capitol.hawaii.gov",
+    "website": "https://www.capitol.hawaii.gov/legislature/memberpage.aspx?member=253"
+  },
+  "bio": "Elle Cochran serves as State Representative for Hawaii House of Representatives District 14. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "HI",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.capitol.hawaii.gov/legislature/memberpage.aspx?member=253"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/hi/legislature/Elle-Cochran-f7bd1cdd-c131-47eb-ab96-1a7c0599bfa7.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Elle_Cochran"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Elle_Cochran"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.capitol.hawaii.gov/legislature/memberpage.aspx?member=253&year=2023"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.capitol.hawaii.gov/legislature/memberpage.aspx?member=253&year=2024"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.capitol.hawaii.gov/members/legislators.aspx"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/elle-cochran-23061546"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

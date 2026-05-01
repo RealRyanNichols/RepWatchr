@@ -1,0 +1,72 @@
+{
+  "id": "brad-jones",
+  "name": "Brad Jones",
+  "firstName": "Brad",
+  "lastName": "Jones",
+  "photo": "/images/officials/state-legislature/ma/brad-jones.jpg",
+  "photoSourceUrl": "https://malegislature.gov/Legislators/Profile/170/BHJ1.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-20th Middlesex",
+  "jurisdiction": "Massachusetts House of Representatives",
+  "county": [
+    "Massachusetts"
+  ],
+  "termStart": "1995-01-01",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 124, State House 24 Beacon St., Boston, MA 02133",
+    "phone": "617-722-2100",
+    "email": "bradley.jones@mahouse.gov",
+    "website": "https://malegislature.gov/Legislators/Profile/BHJ1"
+  },
+  "bio": "Brad Jones serves as State Representative for Massachusetts House of Representatives District 20th Middlesex. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "MA",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://malegislature.gov/Legislators/Profile/BHJ1"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ma/legislature/Bradley-H-Jones-Jr-368c3f95-1124-4f0a-9ab5-7361cb2805d3.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://malegislature.gov/Legislators/Profile/170/BHJ1.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Bradley_Jones,_Jr."
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Bradley_Jones_Jr."
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/4821/brad-jones-jr"
+    },
+    {
+      "title": "Public source",
+      "url": "https://malegislature.gov/api/GeneralCourts/192/LegislativeMembers"
+    },
+    {
+      "title": "Public source",
+      "url": "https://malegislature.gov/api/GeneralCourts/192/LegislativeMembers/"
+    },
+    {
+      "title": "Public source",
+      "url": "https://malegislature.gov/api/GeneralCourts/192/LegislativeMembers/BHJ1"
+    },
+    {
+      "title": "Public source",
+      "url": "https://malegislature.gov/api/GeneralCourts/193/LegislativeMembers"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

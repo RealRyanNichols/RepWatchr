@@ -1,0 +1,76 @@
+{
+  "id": "latrice-walker",
+  "name": "Latrice Walker",
+  "firstName": "Latrice",
+  "lastName": "Walker",
+  "photo": "/images/officials/state-legislature/ny/latrice-walker.jpg",
+  "photoSourceUrl": "https://assembly.state.ny.us/write/upload/member_files/055/headshot/055.jpg?hst=1660073650",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "Assemblymember",
+  "district": "HD-55",
+  "jurisdiction": "New York State Assembly",
+  "county": [
+    "New York"
+  ],
+  "termStart": "2015-01-01",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 713, Legislative Office Building, Albany, NY 12248",
+    "phone": "518-455-4466",
+    "email": "walkerl@nyassembly.gov",
+    "website": "https://assembly.state.ny.us/mem/?sh=email",
+    "socialMedia": {
+      "x": "https://x.com/TheRealLatriceW",
+      "twitter": "https://x.com/TheRealLatriceW"
+    }
+  },
+  "bio": "Latrice Walker serves as Assemblymember for New York State Assembly District 55. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "NY",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://assembly.state.ny.us/mem/?sh=email"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ny/legislature/Latrice-Walker-88a4af90-81b8-4d72-a57c-518a20a0881b.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://assembly.state.ny.us/write/upload/member_files/055/headshot/055.jpg?hst=1660073650"
+    },
+    {
+      "title": "Public source",
+      "url": "https://assembly.state.ny.us/mem/Latrice-M-Walker"
+    },
+    {
+      "title": "Public source",
+      "url": "https://assembly.state.ny.us/mem/Latrice-Walker"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Latrice_Walker"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Latrice_Walker"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/155451/latrice-walker"
+    },
+    {
+      "title": "Public source",
+      "url": "https://nyassembly.gov/mem/Latrice-Walker"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/latrice-monique-walker-259a9551"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

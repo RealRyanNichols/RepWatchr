@@ -1,0 +1,77 @@
+{
+  "id": "scott-surovell",
+  "name": "Scott Surovell",
+  "firstName": "Scott",
+  "lastName": "Surovell",
+  "photo": "/images/officials/state-legislature/va/scott-surovell.jpg",
+  "photoSourceUrl": "https://apps.senate.virginia.gov/Senator/images/member_photos/Surovell34",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-34",
+  "jurisdiction": "Virginia Senate",
+  "county": [
+    "Virginia"
+  ],
+  "termStart": "2024-01-10",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 1405, General Assembly Building P.O. Box 396, Richmond, VA 23218",
+    "phone": "804-698-7534",
+    "email": "senatorsurovell@senate.virginia.gov",
+    "website": "https://apps.senate.virginia.gov/Senator/memberpage.php?id=S100",
+    "socialMedia": {
+      "x": "https://x.com/ssurovell",
+      "twitter": "https://x.com/ssurovell",
+      "facebook": "https://facebook.com/Surovell"
+    }
+  },
+  "bio": "Scott Surovell serves as State Senator for Virginia Senate District 34. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "VA",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://apps.senate.virginia.gov/Senator/memberpage.php?id=S100"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/va/legislature/Scott-A-Surovell-50a6c704-2ba7-4ecc-a24c-8f55b400709b.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://apps.senate.virginia.gov/Senator/images/member_photos/Surovell34"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Scott_Surovell"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Scott_Surovell"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/115805/scott-surovell"
+    },
+    {
+      "title": "Public source",
+      "url": "https://lis.virginia.gov/191/mbr/MBR.HTM"
+    },
+    {
+      "title": "Public source",
+      "url": "https://lis.virginia.gov/201/mbr/MBR.HTM"
+    },
+    {
+      "title": "Public source",
+      "url": "https://lis.virginia.gov/cgi-bin/legp604.exe?191+mbr+S100"
+    },
+    {
+      "title": "Public source",
+      "url": "https://lis.virginia.gov/cgi-bin/legp604.exe?201+mbr+S100"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

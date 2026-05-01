@@ -1,0 +1,60 @@
+{
+  "id": "tiara-auxier",
+  "name": "Tiara Auxier",
+  "firstName": "Tiara",
+  "lastName": "Auxier",
+  "photo": "/images/officials/state-legislature/ut/tiara-auxier.jpg",
+  "photoSourceUrl": "https://le.utah.gov/images/legislator/house/AUXIET.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-4",
+  "jurisdiction": "Utah House of Representatives",
+  "county": [
+    "Utah"
+  ],
+  "termStart": "2025-01-21",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "P.O. Box 145030 350 N. State St., Suite 350, Salt Lake City, UT 84114",
+    "phone": "801-538-1029",
+    "email": "tauxier@le.utah.gov",
+    "website": "https://house.utleg.gov/rep/AUXIET/"
+  },
+  "bio": "Tiara Auxier serves as State Representative for Utah House of Representatives District 4. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "UT",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://house.utleg.gov/rep/AUXIET/"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ut/legislature/Tiara-Auxier-85745a94-5b45-4ac2-a258-1a1f48dc33db.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://le.utah.gov/images/legislator/house/AUXIET.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Tiara_Auxier"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Tiara_Auxier"
+    },
+    {
+      "title": "Public source",
+      "url": "https://house.utleg.gov/rep/AUXIET"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/220763/tiara-auxier"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

@@ -1,0 +1,71 @@
+{
+  "id": "bill-landen",
+  "name": "Bill Landen",
+  "firstName": "Bill",
+  "lastName": "Landen",
+  "photo": "/images/officials/state-legislature/wy/bill-landen.jpg",
+  "photoSourceUrl": "https://wyoleg.gov/LegislatorSummary/Photos/68th-LandenBill.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-27",
+  "jurisdiction": "Wyoming Senate",
+  "county": [
+    "Wyoming"
+  ],
+  "termStart": "2007-01-03",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "State Capitol 200 W. 24th St., Cheyenne, WY 82002",
+    "email": "bill.landen@wyoleg.gov",
+    "website": "https://www.wyoleg.gov/Legislators/2023/S/434"
+  },
+  "bio": "Bill Landen serves as State Senator for Wyoming Senate District 27. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "WY",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.wyoleg.gov/Legislators/2023/S/434"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/wy/legislature/Bill-Landen-e0c25487-a7fb-406b-b637-c3a4de3c6770.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://wyoleg.gov/LegislatorSummary/Photos/68th-LandenBill.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Bill_Landen"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Bill_Landen"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/93366/bill-landen"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/william-r-landen-80838021"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.wyoleg.gov/Legislators/2026/S/434"
+    },
+    {
+      "title": "Public source",
+      "url": "https://wyoleg.gov/Legislators/2019/R/434"
+    },
+    {
+      "title": "Public source",
+      "url": "https://wyoleg.gov/Legislators/2021/R/434"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

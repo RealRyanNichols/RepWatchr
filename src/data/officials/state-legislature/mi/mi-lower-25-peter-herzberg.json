@@ -1,0 +1,56 @@
+{
+  "id": "peter-herzberg",
+  "name": "Peter Herzberg",
+  "firstName": "Peter",
+  "lastName": "Herzberg",
+  "photo": "/images/officials/state-legislature/mi/peter-herzberg.jpg",
+  "photoSourceUrl": "https://s3.amazonaws.com/ballotpedia-api4/files/thumbs/200/300/PeterHerzberg.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-25",
+  "jurisdiction": "Michigan House of Representatives",
+  "county": [
+    "Michigan"
+  ],
+  "termStart": "2024-04-30",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room S-789, Anderson House Office Building 124 N. Capitol Ave., Lansing, MI 48933",
+    "phone": "517-373-2275",
+    "email": "peterherzberg@house.mi.gov",
+    "website": "https://housedems.com/peter-herzberg/"
+  },
+  "bio": "Peter Herzberg serves as State Representative for Michigan House of Representatives District 25. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "MI",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://housedems.com/peter-herzberg/"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/mi/legislature/Peter-Herzberg-8e6c8809-d207-477d-8bdc-6646878249c5.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://s3.amazonaws.com/ballotpedia-api4/files/thumbs/200/300/PeterHerzberg.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Peter_Herzberg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://housedems.com/peter-herzberg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/peter-herzberg-607469179"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

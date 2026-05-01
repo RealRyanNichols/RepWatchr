@@ -1,0 +1,57 @@
+{
+  "id": "julie-gonzales",
+  "name": "Julie Gonzales",
+  "firstName": "Julie",
+  "lastName": "Gonzales",
+  "party": "D",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-34",
+  "jurisdiction": "Colorado Senate",
+  "county": [
+    "Colorado"
+  ],
+  "termStart": "2019-01-09",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "State Capitol Room 346, Colorado  Building 200 E. Colfax Ave., Denver, CO 80203",
+    "phone": "303-866-4862",
+    "email": "julie.gonzales.senate@coleg.gov",
+    "website": "https://leg.colorado.gov/legislators/julie-gonzales"
+  },
+  "bio": "Julie Gonzales serves as State Senator for Colorado Senate District 34. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "CO",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://leg.colorado.gov/legislators/julie-gonzales"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/co/legislature/Julie-Gonzales-8dae5ba5-6741-4aca-8c1e-24f014fda187.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Julie_Gonzales"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Julie_Gonzales"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/181717/julie-gonzales"
+    },
+    {
+      "title": "Public source",
+      "url": "https://leg.colorado.gov/legislators"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/julie-gonzales-50aa3556"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

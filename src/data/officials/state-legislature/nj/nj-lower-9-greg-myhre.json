@@ -1,0 +1,57 @@
+{
+  "id": "greg-myhre",
+  "name": "Greg Myhre",
+  "firstName": "Greg",
+  "lastName": "Myhre",
+  "party": "R",
+  "level": "state",
+  "position": "Assemblymember",
+  "district": "HD-9",
+  "jurisdiction": "New Jersey General Assembly",
+  "county": [
+    "New Jersey"
+  ],
+  "termStart": "2024-01-09",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "P.O. Box 068 State House, 145 W. State St., Trenton, NJ 08625",
+    "phone": "609-847-3905",
+    "email": "asmmyhre@njleg.org",
+    "website": "https://www.njassemblygop.com/231/Gregory-Myhre"
+  },
+  "bio": "Greg Myhre serves as Assemblymember for New Jersey General Assembly District 9. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "NJ",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.njassemblygop.com/231/Gregory-Myhre"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/nj/legislature/Greg-Myhre-85863833-b5e6-40f2-aafc-5a0fc5f790d0.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Gregory_Myhre"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Greg_Myhre"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/211633/gregory-myhre"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.njassemblygop.com/asm-myhre"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.njleg.state.nj.us/legislative-roster/466/assemblyman-myhre"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

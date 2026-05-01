@@ -1,0 +1,70 @@
+{
+  "id": "calvin-callahan",
+  "name": "Calvin Callahan",
+  "firstName": "Calvin",
+  "lastName": "Callahan",
+  "photo": "/images/officials/state-legislature/wi/calvin-callahan.jpg",
+  "photoSourceUrl": "https://docs.legis.wisconsin.gov/2023/legislators/assembly/2456.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "Assemblymember",
+  "district": "HD-35",
+  "jurisdiction": "Wisconsin State Assembly",
+  "county": [
+    "Wisconsin"
+  ],
+  "termStart": "2021-01-04",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "email": "rep.callahan@legis.wisconsin.gov",
+    "website": "https://docs.legis.wisconsin.gov/2021/legislators/assembly/2260"
+  },
+  "bio": "Calvin Callahan serves as Assemblymember for Wisconsin State Assembly District 35. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "WI",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://docs.legis.wisconsin.gov/2021/legislators/assembly/2260"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/wi/legislature/Calvin-T-Callahan-23c03244-880a-4263-8e2f-18c0c5556b45.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://docs.legis.wisconsin.gov/2023/legislators/assembly/2456.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Calvin_Callahan"
+    },
+    {
+      "title": "Public source",
+      "url": "https://docs.legis.wisconsin.gov/2021/legislators/assembly"
+    },
+    {
+      "title": "Public source",
+      "url": "https://docs.legis.wisconsin.gov/2021/legislators/assembly/"
+    },
+    {
+      "title": "Public source",
+      "url": "https://docs.legis.wisconsin.gov/2023/legislators/assembly"
+    },
+    {
+      "title": "members list page",
+      "url": "https://docs.legis.wisconsin.gov/2023/legislators/assembly/"
+    },
+    {
+      "title": "member detail page",
+      "url": "https://docs.legis.wisconsin.gov/2023/legislators/assembly/2456"
+    },
+    {
+      "title": "Public source",
+      "url": "https://docs.legis.wisconsin.gov/2025/legislators/assembly/2720"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

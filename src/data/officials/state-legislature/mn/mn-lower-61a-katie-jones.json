@@ -1,0 +1,64 @@
+{
+  "id": "katie-jones",
+  "name": "Katie Jones",
+  "firstName": "Katie",
+  "lastName": "Jones",
+  "photo": "/images/officials/state-legislature/mn/katie-jones.jpg",
+  "photoSourceUrl": "https://www.house.mn.gov/hinfo/memberimgls94/61A.gif?v=112221",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-61A",
+  "jurisdiction": "Minnesota House of Representatives",
+  "county": [
+    "Minnesota"
+  ],
+  "termStart": "2025-01-14",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Centennial Office Building 658 Cedar St., Fifth Floor, St. Paul, MN 55155",
+    "phone": "651-296-9281",
+    "email": "rep.katie.jones@house.mn.gov",
+    "website": "https://www.house.mn.gov/members/profile/15638"
+  },
+  "bio": "Katie Jones serves as State Representative for Minnesota House of Representatives District 61A. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "MN",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.house.mn.gov/members/profile/15638"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/mn/legislature/Katie-Jones-12252e69-5ffb-459b-a84e-333af1219f94.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://www.house.mn.gov/hinfo/memberimgls94/61A.gif?v=112221"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Katie_Jones_(Minnesota)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Katie_Jones_(politician)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/218850/katie-jones"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/katiejonesmpls"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.lrl.mn.gov/legdb/fulldetail?ID=15638"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

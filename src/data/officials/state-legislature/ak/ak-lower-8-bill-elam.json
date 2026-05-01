@@ -1,0 +1,56 @@
+{
+  "id": "bill-elam",
+  "name": "Bill Elam",
+  "firstName": "Bill",
+  "lastName": "Elam",
+  "photo": "/images/officials/state-legislature/ak/bill-elam.jpg",
+  "photoSourceUrl": "https://s3.amazonaws.com/ballotpedia-api4/files/thumbs/200/300/BillElam2024.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-8",
+  "jurisdiction": "Alaska House of Representatives",
+  "county": [
+    "Alaska"
+  ],
+  "termStart": "2025-01-21",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "State Capitol Room 422, 120 4th St., Juneau, AK 99801",
+    "phone": "907-465-3779",
+    "email": "representative.bill.elam@akleg.gov",
+    "website": "https://www.akleg.gov/basis/Member/Detail/34?code=ela"
+  },
+  "bio": "Bill Elam serves as State Representative for Alaska House of Representatives District 8. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "AK",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.akleg.gov/basis/Member/Detail/34?code=ela"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ak/legislature/Bill-Elam-354dc869-cbaf-4298-89cd-c691c0f52a1e.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://s3.amazonaws.com/ballotpedia-api4/files/thumbs/200/300/BillElam2024.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Bill_Elam"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/196774/bill-elam"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/bill-elam-b6970213"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

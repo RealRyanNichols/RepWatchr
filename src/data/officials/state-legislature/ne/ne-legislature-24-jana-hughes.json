@@ -1,0 +1,60 @@
+{
+  "id": "jana-hughes",
+  "name": "Jana Hughes",
+  "firstName": "Jana",
+  "lastName": "Hughes",
+  "photo": "/images/officials/state-legislature/ne/jana-hughes.jpg",
+  "photoSourceUrl": "https://www.nebraskalegislature.gov/media/images/senators/dist24/highres/dist24.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "NP",
+  "level": "state",
+  "position": "State Senator",
+  "district": "LD-24",
+  "jurisdiction": "Nebraska Legislature",
+  "county": [
+    "Nebraska"
+  ],
+  "termStart": "2023-01-04",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "State Capitol Room 1212, P.O. Box 94604, Lincoln, NE 68509",
+    "phone": "402-471-2756",
+    "email": "jhughes@leg.ne.gov",
+    "website": "https://nebraskalegislature.gov/senators/landing-pages/index.php?District=24"
+  },
+  "bio": "Jana Hughes serves as State Senator for Nebraska Legislature District 24. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "NE",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://nebraskalegislature.gov/senators/landing-pages/index.php?District=24"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ne/legislature/Jana-Hughes-967bf436-18bf-444e-bd2f-d83e5ec78995.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://www.nebraskalegislature.gov/media/images/senators/dist24/highres/dist24.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Jana_Hughes"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Jana_Hughes"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/202072/jana-hughes"
+    },
+    {
+      "title": "Public source",
+      "url": "https://nebraskalegislature.gov/senators/senator_list.php"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

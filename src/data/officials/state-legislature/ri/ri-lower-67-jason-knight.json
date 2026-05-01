@@ -1,0 +1,72 @@
+{
+  "id": "jason-knight",
+  "name": "Jason Knight",
+  "firstName": "Jason",
+  "lastName": "Knight",
+  "photo": "/images/officials/state-legislature/ri/jason-knight.jpg",
+  "photoSourceUrl": "https://www.jasonknightlaw.com/wp-content/uploads/2025/01/about-img.webp",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-67",
+  "jurisdiction": "Rhode Island House of Representatives",
+  "county": [
+    "Rhode Island"
+  ],
+  "termStart": "2017-01-03",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 5, 82 Smith St., Providence, RI 02903",
+    "phone": "401-903-9804",
+    "email": "rep-knight@rilegislature.gov",
+    "website": "https://www.rilegislature.gov/representatives/carson/default.aspx"
+  },
+  "bio": "Jason Knight serves as State Representative for Rhode Island House of Representatives District 67. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "RI",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.rilegislature.gov/representatives/carson/default.aspx"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ri/legislature/Jason-Knight-cef11d28-cbbb-4ffd-b8f2-23c71e73f1b3.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://www.jasonknightlaw.com/wp-content/uploads/2025/01/about-img.webp"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Jason_Knight_(Rhode_Island)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Jason_Knight_(politician)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/173749/jason-knight"
+    },
+    {
+      "title": "Public source",
+      "url": "https://webserver.rilin.state.ri.us/Email/RepEmailListDistrict.asp"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.jasonknightlaw.com/staff-profiles/jason-knight"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.jasonknightri.com/about-jason"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/jason-knight-3ba25724"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

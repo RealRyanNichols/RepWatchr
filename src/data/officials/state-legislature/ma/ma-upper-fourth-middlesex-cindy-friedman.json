@@ -1,0 +1,72 @@
+{
+  "id": "cindy-friedman",
+  "name": "Cindy Friedman",
+  "firstName": "Cindy",
+  "lastName": "Friedman",
+  "photo": "/images/officials/state-legislature/ma/cindy-friedman.jpg",
+  "photoSourceUrl": "https://malegislature.gov/Legislators/Profile/170/CFF0.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-Fourth Middlesex",
+  "jurisdiction": "Massachusetts Senate",
+  "county": [
+    "Massachusetts"
+  ],
+  "termStart": "2017-07-25",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 313, State House 24 Beacon St., Boston, MA 02133",
+    "phone": "617-722-1432",
+    "email": "cindy.friedman@masenate.gov",
+    "website": "https://cindyfriedman.org/"
+  },
+  "bio": "Cindy Friedman serves as State Senator for Massachusetts Senate District Fourth Middlesex. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "MA",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://cindyfriedman.org/"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ma/legislature/Cindy-F-Friedman-456b0061-febd-4ff7-8547-42be0685526f.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://malegislature.gov/Legislators/Profile/170/CFF0.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Cindy_Friedman"
+    },
+    {
+      "title": "Public source",
+      "url": "https://cindyfriedman.org"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Cindy_Friedman"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/176469/cindy-friedman"
+    },
+    {
+      "title": "Public source",
+      "url": "https://malegislature.gov/api/GeneralCourts/192/LegislativeMembers"
+    },
+    {
+      "title": "Public source",
+      "url": "https://malegislature.gov/api/GeneralCourts/192/LegislativeMembers/"
+    },
+    {
+      "title": "Public source",
+      "url": "https://malegislature.gov/api/GeneralCourts/192/LegislativeMembers/CFF0"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

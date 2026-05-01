@@ -1,0 +1,72 @@
+{
+  "id": "angelo-puppolo",
+  "name": "Angelo Puppolo",
+  "firstName": "Angelo",
+  "lastName": "Puppolo",
+  "photo": "/images/officials/state-legislature/ma/angelo-puppolo.jpg",
+  "photoSourceUrl": "https://malegislature.gov/Legislators/Profile/170/AJP1.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-12th Hampden",
+  "jurisdiction": "Massachusetts House of Representatives",
+  "county": [
+    "Massachusetts"
+  ],
+  "termStart": "",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 122, State House 24 Beacon St., Boston, MA 02133",
+    "phone": "617-722-2006",
+    "email": "angelo.puppolo@mahouse.gov",
+    "website": "https://malegislature.gov/Legislators/Profile/AJP1"
+  },
+  "bio": "Angelo Puppolo serves as State Representative for Massachusetts House of Representatives District 12th Hampden. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "MA",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://malegislature.gov/Legislators/Profile/AJP1"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ma/legislature/Angelo-J-Puppolo-Jr-8302648f-4ed2-454e-ad1e-d7389e25b8dc.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://malegislature.gov/Legislators/Profile/170/AJP1.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Angelo_Puppolo,_Jr."
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Angelo_Puppolo"
+    },
+    {
+      "title": "Public source",
+      "url": "https://malegislature.gov/api/GeneralCourts/192/LegislativeMembers"
+    },
+    {
+      "title": "Public source",
+      "url": "https://malegislature.gov/api/GeneralCourts/192/LegislativeMembers/"
+    },
+    {
+      "title": "Public source",
+      "url": "https://malegislature.gov/api/GeneralCourts/192/LegislativeMembers/AJP1"
+    },
+    {
+      "title": "Public source",
+      "url": "https://malegislature.gov/api/GeneralCourts/193/LegislativeMembers"
+    },
+    {
+      "title": "Public source",
+      "url": "https://malegislature.gov/api/GeneralCourts/193/LegislativeMembers/"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

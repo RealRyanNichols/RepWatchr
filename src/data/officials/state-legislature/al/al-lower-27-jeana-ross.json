@@ -1,0 +1,44 @@
+{
+  "id": "jeana-ross",
+  "name": "Jeana Ross",
+  "firstName": "Jeana",
+  "lastName": "Ross",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-27",
+  "jurisdiction": "Alabama House of Representatives",
+  "county": [
+    "Alabama"
+  ],
+  "termStart": "2024-05-01",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 427-L, 11 S. Union St., Montgomery, AL 36130",
+    "phone": "334-261-0539",
+    "email": "jeana.ross@alhouse.gov"
+  },
+  "bio": "Jeana Ross serves as State Representative for Alabama House of Representatives District 27. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "AL",
+  "sourceLinks": [
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/al/legislature/Jeana-Ross-70d0256c-91eb-4338-b86d-181e1db4d8f7.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Jeana_Ross"
+    },
+    {
+      "title": "Public source",
+      "url": "https://education.ua.edu/jeana-ross-2"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/jeana-ross-4a19a986"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

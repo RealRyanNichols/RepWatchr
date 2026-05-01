@@ -1,0 +1,56 @@
+{
+  "id": "jennifer-smith",
+  "name": "Jennifer Smith",
+  "firstName": "Jennifer",
+  "lastName": "Smith",
+  "photo": "/images/officials/state-legislature/ia/jennifer-smith.jpg",
+  "photoSourceUrl": "https://www.legis.iowa.gov/photo?action=getPhoto&ga=91&pid=37389",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-72",
+  "jurisdiction": "Iowa House of Representatives",
+  "county": [
+    "Iowa"
+  ],
+  "termStart": "2025-01-01",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "State Capitol Building 1007 E. Grand Ave., Des Moines, IA 50319",
+    "phone": "515-281-3221",
+    "email": "jennifer.smith@legis.iowa.gov",
+    "website": "https://www.legis.iowa.gov/legislators/legislator?ga=91&personID=37389"
+  },
+  "bio": "Jennifer Smith serves as State Representative for Iowa House of Representatives District 72. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "IA",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.legis.iowa.gov/legislators/legislator?ga=91&personID=37389"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ia/legislature/Jennifer-Smith-4b61e993-1cb9-4bd2-a383-46d264d298f9.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://www.legis.iowa.gov/photo?action=getPhoto&ga=91&pid=37389"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Jennifer_Smith_(Iowa)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Jennifer_Smith_(Iowa_politician)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.legis.iowa.gov/legislators/legislator?personID=37389"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

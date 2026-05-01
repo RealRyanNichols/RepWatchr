@@ -1,0 +1,68 @@
+{
+  "id": "jeff-golden",
+  "name": "Jeff Golden",
+  "firstName": "Jeff",
+  "lastName": "Golden",
+  "photo": "/images/officials/state-legislature/or/jeff-golden.jpg",
+  "photoSourceUrl": "https://www.oregonlegislature.gov/golden/PublishingImages/member_photo.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-3",
+  "jurisdiction": "Oregon Senate",
+  "county": [
+    "Oregon"
+  ],
+  "termStart": "2019-01-14",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room S-421, 900 Court St. NE, Salem, OR 97301",
+    "phone": "503-986-1703",
+    "email": "sen.jeffgolden@oregonlegislature.gov",
+    "website": "https://www.oregonlegislature.gov/golden"
+  },
+  "bio": "Jeff Golden serves as State Senator for Oregon Senate District 3. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "OR",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.oregonlegislature.gov/golden"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/or/legislature/Jeff-Golden-0240017c-38e7-45da-8841-c40b007965dc.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://www.oregonlegislature.gov/golden/PublishingImages/member_photo.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://api.oregonlegislature.gov/odata/odataservice.svc/LegislativeSessions('2022R1')/Legislators"
+    },
+    {
+      "title": "Public source",
+      "url": "https://api.oregonlegislature.gov/odata/odataservice.svc/LegislativeSessions('2023R1')/Legislators"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Jeff_Golden_(Oregon)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Jeff_Golden"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/179932/jeff-golden"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/jeff-golden-bba8015"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

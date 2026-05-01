@@ -1,0 +1,65 @@
+{
+  "id": "samantha-steckloff",
+  "name": "Samantha Steckloff",
+  "firstName": "Samantha",
+  "lastName": "Steckloff",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-19",
+  "jurisdiction": "Michigan House of Representatives",
+  "county": [
+    "Michigan"
+  ],
+  "termStart": "2023-01-01",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room CB-373, Capitol Building 100 N. Capitol Ave., Lansing, MI 48933",
+    "phone": "517-373-3920",
+    "email": "samanthasteckloff@house.mi.gov",
+    "website": "https://housedems.com/samantha-steckloff/"
+  },
+  "bio": "Samantha Steckloff serves as State Representative for Michigan House of Representatives District 19. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "MI",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://housedems.com/samantha-steckloff/"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/mi/legislature/Samantha-Steckloff-5a99ab1c-62e3-4424-9bb1-310ffcecc3e3.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Samantha_Steckloff"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Samantha_Steckloff"
+    },
+    {
+      "title": "Public source",
+      "url": "https://housedems.com/samantha-steckloff"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/146811/samantha-steckloff"
+    },
+    {
+      "title": "Members List Page",
+      "url": "https://www.house.mi.gov/AllRepresentatives"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.house.mi.gov/MHRPublic/frmRepListMilenia.aspx?all=true"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/samantha-steckloff-78a51158"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

@@ -1,0 +1,53 @@
+{
+  "id": "al-abdelaziz",
+  "name": "Al Abdelaziz",
+  "firstName": "Al",
+  "lastName": "Abdelaziz",
+  "party": "D",
+  "level": "state",
+  "position": "Assemblymember",
+  "district": "HD-35",
+  "jurisdiction": "New Jersey General Assembly",
+  "county": [
+    "New Jersey"
+  ],
+  "termStart": "2025-01-23",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "P.O. Box 068 State House, 145 W. State St., Trenton, NJ 08625",
+    "phone": "609-847-3905",
+    "email": "asmabdelaziz@njleg.org",
+    "website": "https://www.assemblydems.com/388/Alaa-Al-Abdelaziz---District-35"
+  },
+  "bio": "Al Abdelaziz serves as Assemblymember for New Jersey General Assembly District 35. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "NJ",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.assemblydems.com/388/Alaa-Al-Abdelaziz---District-35"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/nj/legislature/Al-Abdelaziz-d358cf84-b9ae-4bce-bb28-aa083fe082b4.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Alaa_Abdelaziz"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Al_Abdelaziz"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/187190/alaa-abdelaziz"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.njleg.state.nj.us/legislative-roster/498/assemblyman-abdelaziz"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

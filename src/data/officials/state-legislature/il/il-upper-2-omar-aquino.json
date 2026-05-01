@@ -1,0 +1,72 @@
+{
+  "id": "omar-aquino",
+  "name": "Omar Aquino",
+  "firstName": "Omar",
+  "lastName": "Aquino",
+  "photo": "/images/officials/state-legislature/il/omar-aquino.jpg",
+  "photoSourceUrl": "https://cdn.ilga.gov/assets/img/members/{79A5CDE2-DD9F-423E-83F0-4643FDB13ABB}.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-2",
+  "jurisdiction": "Illinois Senate",
+  "county": [
+    "Illinois"
+  ],
+  "termStart": "2016-07-05",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 325-D, Capitol Building, Springfield, IL 62706",
+    "phone": "217-782-5652",
+    "email": "aquino.senate2il@gmail.com",
+    "website": "https://ilga.gov/senate/Senator.asp?GA=101&MemberID=2673"
+  },
+  "bio": "Omar Aquino serves as State Senator for Illinois Senate District 2. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "IL",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://ilga.gov/senate/Senator.asp?GA=101&MemberID=2673"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/il/legislature/Omar-Aquino-436c1e53-1203-4ce3-9931-d22f9e3c406a.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://cdn.ilga.gov/assets/img/members/{79A5CDE2-DD9F-423E-83F0-4643FDB13ABB}.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Omar_Aquino"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Omar_Aquino"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ilga.gov/senate/default.asp?GA=101"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ilga.gov/senate/default.asp?GA=102"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ilga.gov/senate/default.asp?GA=103"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ilga.gov/senate/Senator.asp?GA=102&MemberID=2894"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ilga.gov/senate/Senator.asp?GA=103&MemberID=3099"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

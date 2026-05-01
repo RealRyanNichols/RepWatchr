@@ -1,0 +1,57 @@
+{
+  "id": "daniel-zolnikov",
+  "name": "Daniel Zolnikov",
+  "firstName": "Daniel",
+  "lastName": "Zolnikov",
+  "party": "R",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-22",
+  "jurisdiction": "Montana Senate",
+  "county": [
+    "Montana"
+  ],
+  "termStart": "2023-01-02",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Capitol Building, 1301 E. 6th Ave. P.O. Box 200500, Helena, MT 59620",
+    "phone": "406-444-4800",
+    "email": "daniel.zolnikov@legmt.gov",
+    "website": "https://leg.mt.gov/legislator-information/roster/individual/7652"
+  },
+  "bio": "Daniel Zolnikov serves as State Senator for Montana Senate District 22. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "MT",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://leg.mt.gov/legislator-information/roster/individual/7652"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/mt/legislature/Daniel-Zolnikov-afffd4a2-fd6b-4cc5-8eff-8aa1f696db3a.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Daniel_Zolnikov"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Daniel_Zolnikov"
+    },
+    {
+      "title": "Public source",
+      "url": "https://legislators.legmt.gov/#/legislator/89"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.legmt.gov/legislators/1260"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/zolnikov"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

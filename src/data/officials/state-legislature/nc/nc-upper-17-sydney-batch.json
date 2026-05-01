@@ -1,0 +1,64 @@
+{
+  "id": "sydney-batch",
+  "name": "Sydney Batch",
+  "firstName": "Sydney",
+  "lastName": "Batch",
+  "photo": "/images/officials/state-legislature/nc/sydney-batch.jpg",
+  "photoSourceUrl": "https://www.ncleg.gov/Members/MemberImage/S/434/Low",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-17",
+  "jurisdiction": "North Carolina Senate",
+  "county": [
+    "North Carolina"
+  ],
+  "termStart": "2021-01-11",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 1026, North Carolina Legislative Building 16 W. Jones St., Raleigh, NC 27601",
+    "phone": "919-733-5653",
+    "email": "sydney.batch@ncleg.gov",
+    "website": "https://www.ncleg.gov/Members/Biography/S/434"
+  },
+  "bio": "Sydney Batch serves as State Senator for North Carolina Senate District 17. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "NC",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.ncleg.gov/Members/Biography/S/434"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/nc/legislature/Sydney-Batch-f29f268e-5a29-4f49-8c5e-3fa19688f4a2.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://www.ncleg.gov/Members/MemberImage/S/434/Low"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Sydney_Batch"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Sydney_Batch"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/183405/sydney-batch"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/sydney-batch-0260566"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.ncleg.gov/Members/MemberTable/S"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

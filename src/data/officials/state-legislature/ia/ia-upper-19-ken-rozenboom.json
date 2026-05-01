@@ -1,0 +1,72 @@
+{
+  "id": "ken-rozenboom",
+  "name": "Ken Rozenboom",
+  "firstName": "Ken",
+  "lastName": "Rozenboom",
+  "photo": "/images/officials/state-legislature/ia/ken-rozenboom.jpg",
+  "photoSourceUrl": "https://www.legis.iowa.gov/photo?action=getPhoto&ga=91&pid=10731",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-19",
+  "jurisdiction": "Iowa Senate",
+  "county": [
+    "Iowa"
+  ],
+  "termStart": "2023-01-03",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "1007 E. Grand Ave., Des Moines, IA 50319",
+    "phone": "515-281-3371",
+    "email": "ken.rozenboom@legis.iowa.gov",
+    "website": "https://www.iowasenaterepublicans.com/senators/ken-rozenboom/"
+  },
+  "bio": "Ken Rozenboom serves as State Senator for Iowa Senate District 19. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "IA",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.iowasenaterepublicans.com/senators/ken-rozenboom/"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ia/legislature/Ken-Rozenboom-1cfc824d-740a-4e35-a4e2-3728e2d43056.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://www.legis.iowa.gov/photo?action=getPhoto&ga=91&pid=10731"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Ken_Rozenboom"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Ken_Rozenboom"
+    },
+    {
+      "title": "Public source",
+      "url": "https://iowasenaterepublicans.com/senators/ken-rozenboom"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.legis.iowa.gov/legislators/legislator?ga=88&personID=10731"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.legis.iowa.gov/legislators/legislator?ga=89&personID=10731"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.legis.iowa.gov/legislators/legislator?ga=90&personID=10731"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.legis.iowa.gov/legislators/legislator?personID=10731"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

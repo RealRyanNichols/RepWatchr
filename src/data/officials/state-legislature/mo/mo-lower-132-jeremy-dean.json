@@ -1,0 +1,52 @@
+{
+  "id": "jeremy-dean",
+  "name": "Jeremy Dean",
+  "firstName": "Jeremy",
+  "lastName": "Dean",
+  "photo": "/images/officials/state-legislature/mo/jeremy-dean.jpg",
+  "photoSourceUrl": "https://s3.amazonaws.com/ballotpedia-api4/files/thumbs/200/300/Jeremy_Dean_20240911_121645.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-132",
+  "jurisdiction": "Missouri House of Representatives",
+  "county": [
+    "Missouri"
+  ],
+  "termStart": "2025-01-08",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 103-BB, 201 W. Capitol Ave., Jefferson City, MO 65101",
+    "phone": "573-751-3795",
+    "email": "jeremy.dean@house.mo.gov",
+    "website": "https://house.mo.gov/MemberDetails.aspx?district=132"
+  },
+  "bio": "Jeremy Dean serves as State Representative for Missouri House of Representatives District 132. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "MO",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://house.mo.gov/MemberDetails.aspx?district=132"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/mo/legislature/Jeremy-Dean-98bc3ac1-1f5d-4a1c-bac8-356dfbbfa875.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://s3.amazonaws.com/ballotpedia-api4/files/thumbs/200/300/Jeremy_Dean_20240911_121645.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Jeremy_Dean"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/jeremy-dean-308199172"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

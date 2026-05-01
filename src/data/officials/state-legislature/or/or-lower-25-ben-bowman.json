@@ -1,0 +1,60 @@
+{
+  "id": "ben-bowman",
+  "name": "Ben Bowman",
+  "firstName": "Ben",
+  "lastName": "Bowman",
+  "photo": "/images/officials/state-legislature/or/ben-bowman.jpg",
+  "photoSourceUrl": "https://www.oregonlegislature.gov/bowman/PublishingImages/member_photo.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-25",
+  "jurisdiction": "Oregon House of Representatives",
+  "county": [
+    "Oregon"
+  ],
+  "termStart": "2023-01-09",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room H-295, 900 Court St. NE, Salem, OR 97301",
+    "phone": "503-986-1425",
+    "email": "rep.benbowman@oregonlegislature.gov",
+    "website": "https://www.oregonlegislature.gov/bowman"
+  },
+  "bio": "Ben Bowman serves as State Representative for Oregon House of Representatives District 25. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "OR",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.oregonlegislature.gov/bowman"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/or/legislature/Ben-Bowman-a19e8e1f-4859-4d05-8dc7-6f0a352c0757.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://www.oregonlegislature.gov/bowman/PublishingImages/member_photo.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://api.oregonlegislature.gov/odata/odataservice.svc/LegislativeSessions('2023R1')/Legislators"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Ben_Bowman"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Ben_Bowman_(politician)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/benjaminwbowman"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

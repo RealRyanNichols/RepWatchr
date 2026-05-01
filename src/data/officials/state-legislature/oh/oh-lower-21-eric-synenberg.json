@@ -1,0 +1,60 @@
+{
+  "id": "eric-synenberg",
+  "name": "Eric Synenberg",
+  "firstName": "Eric",
+  "lastName": "Synenberg",
+  "photo": "/images/officials/state-legislature/oh/eric-synenberg.jpg",
+  "photoSourceUrl": "https://synenberg.com/wp-content/uploads/2018/07/synenberg-eric-e1532726812589.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-21",
+  "jurisdiction": "Ohio House of Representatives",
+  "county": [
+    "Ohio"
+  ],
+  "termStart": "2025-01-01",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "77 S. High St. 10th Floor, Columbus, OH 43215",
+    "phone": "614-644-5079",
+    "email": "rep21@ohiohouse.gov",
+    "website": "https://ohiohouse.gov/members/eric-synenberg"
+  },
+  "bio": "Eric Synenberg serves as State Representative for Ohio House of Representatives District 21. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "OH",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://ohiohouse.gov/members/eric-synenberg"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/oh/legislature/Eric-Synenberg-1ebfe182-1b49-4e69-b7f3-2fd528c70d73.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://synenberg.com/wp-content/uploads/2018/07/synenberg-eric-e1532726812589.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Eric_Synenberg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ohiohouse.gov/members/eric-synenberg/biography"
+    },
+    {
+      "title": "Public source",
+      "url": "https://synenberg.com/people/eric-synenberg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/eric-synenberg-93a81ba1"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

@@ -1,0 +1,53 @@
+{
+  "id": "jerry-alvord",
+  "name": "Jerry Alvord",
+  "firstName": "Jerry",
+  "lastName": "Alvord",
+  "party": "R",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-14",
+  "jurisdiction": "Oklahoma Senate",
+  "county": [
+    "Oklahoma"
+  ],
+  "termStart": "2022-11-23",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 415, 2300 N. Lincoln Blvd., Oklahoma City, OK 73105",
+    "phone": "405-521-5607",
+    "email": "jerry.alvord@oksenate.gov",
+    "website": "https://oksenate.gov/contact-senator?sid=1523283"
+  },
+  "bio": "Jerry Alvord serves as State Senator for Oklahoma Senate District 14. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "OK",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://oksenate.gov/contact-senator?sid=1523283"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ok/legislature/Jerry-Alvord-edf90069-7569-4cd7-9a8e-e3890e395ac7.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Jerry_Alvord"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Jerry_Alvord"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/163948/jerry-alvord"
+    },
+    {
+      "title": "Public source",
+      "url": "https://oksenate.gov/senators/jerry-alvord"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

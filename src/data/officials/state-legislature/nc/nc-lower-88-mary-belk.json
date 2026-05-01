@@ -1,0 +1,60 @@
+{
+  "id": "mary-belk",
+  "name": "Mary Belk",
+  "firstName": "Mary",
+  "lastName": "Belk",
+  "photo": "/images/officials/state-legislature/nc/mary-belk.jpg",
+  "photoSourceUrl": "https://www.ncleg.gov/Members/MemberImage/H/713/Low",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-88",
+  "jurisdiction": "North Carolina House of Representatives",
+  "county": [
+    "North Carolina"
+  ],
+  "termStart": "2017-01-01",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 1313, North Carolina Legislative Building 16 W. Jones St., Raleigh, NC 27601",
+    "phone": "919-733-5607",
+    "email": "mary.belk@ncleg.gov",
+    "website": "https://www.ncleg.gov/Members/Biography/H/713"
+  },
+  "bio": "Mary Belk serves as State Representative for North Carolina House of Representatives District 88. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "NC",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.ncleg.gov/Members/Biography/H/713"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/nc/legislature/Mary-Belk-819581b6-a44a-4d4a-8a08-14c2dccd86f5.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://www.ncleg.gov/Members/MemberImage/H/713/Low"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Mary_Belk"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Mary_Gardner_Belk"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/166839/mary-belk"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.ncleg.gov/Members/MemberTable/H"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

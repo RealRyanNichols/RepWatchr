@@ -1,0 +1,64 @@
+{
+  "id": "regina-boyce",
+  "name": "Regina Boyce",
+  "firstName": "Regina",
+  "lastName": "Boyce",
+  "photo": "/images/officials/state-legislature/md/regina-boyce.jpg",
+  "photoSourceUrl": "https://mgaleg.maryland.gov/2023RS/images/boyce01.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "Delegate",
+  "district": "HD-43A",
+  "jurisdiction": "Maryland House of Delegates",
+  "county": [
+    "Maryland"
+  ],
+  "termStart": "2023-01-11",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 251, Taylor House Office Building 6 Bladen St., Annapolis, MD 21401",
+    "phone": "410-841-3476",
+    "email": "regina.boyce@house.maryland.gov",
+    "website": "https://mgaleg.maryland.gov/mgawebsite/Members/Details/boyce01"
+  },
+  "bio": "Regina Boyce serves as Delegate for Maryland House of Delegates District 43A. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "MD",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://mgaleg.maryland.gov/mgawebsite/Members/Details/boyce01"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/md/legislature/Regina-T-Boyce-f25013b8-d93b-46bf-a1ef-8b368731040d.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://mgaleg.maryland.gov/2023RS/images/boyce01.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Regina_Boyce"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Regina_T._Boyce"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/181675/regina-boyce"
+    },
+    {
+      "title": "Public source",
+      "url": "https://mgaleg.maryland.gov/webmga/frmMain.aspx?pid=sponpage&tab=subject6&id=boyce01&stab=01"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/regina-t-boyce-mpa-22310611"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

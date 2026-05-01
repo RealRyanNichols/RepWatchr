@@ -1,0 +1,60 @@
+{
+  "id": "jeff-zell",
+  "name": "Jeff Zell",
+  "firstName": "Jeff",
+  "lastName": "Zell",
+  "photo": "/images/officials/state-legislature/sc/jeff-zell.jpg",
+  "photoSourceUrl": "https://s3.amazonaws.com/ballotpedia-api4/files/thumbs/200/300/Jeffrey_Zell.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-36",
+  "jurisdiction": "South Carolina Senate",
+  "county": [
+    "South Carolina"
+  ],
+  "termStart": "2024-11-11",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 610, Gressette Building P.O. Box 142, Columbia, SC 29201",
+    "phone": "803-212-6040",
+    "email": "jeffzell@scsenate.gov",
+    "website": "https://www.scstatehouse.gov/member.php?code=1999431789"
+  },
+  "bio": "Jeff Zell serves as State Senator for South Carolina Senate District 36. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "SC",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.scstatehouse.gov/member.php?code=1999431789"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/sc/legislature/Jeff-Zell-236892d9-be31-4afa-9c3c-e68dff8bf480.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://s3.amazonaws.com/ballotpedia-api4/files/thumbs/200/300/Jeffrey_Zell.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Jeffrey_Zell"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Jeff_Zell"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/216230/jeff-zell"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/jeffrey-zell"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

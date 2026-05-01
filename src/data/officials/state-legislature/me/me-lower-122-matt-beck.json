@@ -1,0 +1,56 @@
+{
+  "id": "matt-beck",
+  "name": "Matt Beck",
+  "firstName": "Matt",
+  "lastName": "Beck",
+  "photo": "/images/officials/state-legislature/me/matt-beck.jpg",
+  "photoSourceUrl": "https://legislature.maine.gov/house/house/Repository/MemberProfiles/10b00e2f-ff9f-4f15-b72a-1b8ed89dc9a8_BECK.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-122",
+  "jurisdiction": "Maine House of Representatives",
+  "county": [
+    "Maine"
+  ],
+  "termStart": "2024-03-06",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 333, House Democratic Office 2 State House Station, Augusta, ME 04333",
+    "phone": "800-423-2900",
+    "email": "matthew.beck@legislature.maine.gov",
+    "website": "https://legislature.maine.gov/house/house/MemberProfiles/Details/1509"
+  },
+  "bio": "Matt Beck serves as State Representative for Maine House of Representatives District 122. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "ME",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://legislature.maine.gov/house/house/MemberProfiles/Details/1509"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/me/legislature/Matt-Beck-dec943c1-07d5-479a-972f-a3c1cc6a2714.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://legislature.maine.gov/house/house/Repository/MemberProfiles/10b00e2f-ff9f-4f15-b72a-1b8ed89dc9a8_BECK.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Matthew_Beck"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/matthew-beck-640a526"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.mattbeckformaine.org/about"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

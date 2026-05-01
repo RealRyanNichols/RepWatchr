@@ -1,0 +1,72 @@
+{
+  "id": "john-ley",
+  "name": "John Ley",
+  "firstName": "John",
+  "lastName": "Ley",
+  "photo": "/images/officials/state-legislature/wa/john-ley.jpg",
+  "photoSourceUrl": "https://leg.wa.gov/memberphoto/35422.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-18",
+  "jurisdiction": "Washington House of Representatives",
+  "county": [
+    "Washington"
+  ],
+  "termStart": "2025-01-13",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 411, John L. O'Brien Building P.O. Box 40600, Olympia, WA 98504",
+    "phone": "360-786-7812",
+    "email": "john.ley@leg.wa.gov",
+    "website": "https://johnley.houserepublicans.wa.gov/"
+  },
+  "bio": "John Ley serves as State Representative for Washington House of Representatives District 18. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "WA",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://johnley.houserepublicans.wa.gov/"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/wa/legislature/John-Ley-24366911-f15b-48a4-a8e8-b1e30a3d0d24.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://leg.wa.gov/memberphoto/35422.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/John_Ley"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/John_Ley_(politician)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://johnley.houserepublicans.wa.gov"
+    },
+    {
+      "title": "Public source",
+      "url": "https://johnley.houserepublicans.wa.gov/about"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/153072/john-ley"
+    },
+    {
+      "title": "Public source",
+      "url": "https://leg.wa.gov/legislators/member/john-ley"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/john-ley-7a67772a5"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

@@ -1,0 +1,57 @@
+{
+  "id": "tanya-burgoyne",
+  "name": "Tanya Burgoyne",
+  "firstName": "Tanya",
+  "lastName": "Burgoyne",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-29B",
+  "jurisdiction": "Idaho House of Representatives",
+  "county": [
+    "Idaho"
+  ],
+  "termStart": "2024-12-01",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "P.O. Box 83720 700 W. Jefferson St., Boise, ID 83720",
+    "phone": "208-332-1031",
+    "email": "tburgoyne@house.idaho.gov",
+    "website": "https://legislature.idaho.gov/legislators/membership/2025/id9428/"
+  },
+  "bio": "Tanya Burgoyne serves as State Representative for Idaho House of Representatives District 29B. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "ID",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://legislature.idaho.gov/legislators/membership/2025/id9428/"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/id/legislature/Tanya-Burgoyne-7255260c-8991-427e-acd7-5ef985041199.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Tanya_Burgoyne"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Tanya_Burgoyne"
+    },
+    {
+      "title": "Public source",
+      "url": "https://legislature.idaho.gov/legislators/membership/2025/id9428"
+    },
+    {
+      "title": "Public source",
+      "url": "https://legislature.idaho.gov/legislators/membership/2026/id9428"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/tanya-burgoyne-0b053516"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

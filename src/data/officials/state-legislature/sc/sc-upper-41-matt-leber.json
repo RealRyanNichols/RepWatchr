@@ -1,0 +1,61 @@
+{
+  "id": "matt-leber",
+  "name": "Matt Leber",
+  "firstName": "Matt",
+  "lastName": "Leber",
+  "party": "R",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-41",
+  "jurisdiction": "South Carolina Senate",
+  "county": [
+    "South Carolina"
+  ],
+  "termStart": "2024-11-11",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 504, Gressette Building P.O. Box 142, Columbia, SC 29201",
+    "phone": "803-212-6032",
+    "email": "matthewleber@scsenate.gov",
+    "website": "https://scstatehouse.gov/member.php?code=1074431690"
+  },
+  "bio": "Matt Leber serves as State Senator for South Carolina Senate District 41. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "SC",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://scstatehouse.gov/member.php?code=1074431690"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/sc/legislature/Matthew-W-Matt-Leber-1bf0b19d-9fa1-474a-99f2-16e7835064cf.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Matthew_Leber"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Matt_Leber"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/205505/matt-leber"
+    },
+    {
+      "title": "Public source",
+      "url": "https://scstatehouse.gov/member.php?chamber=H"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/matt-leber-879a80279"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.scstatehouse.gov/member.php?code=1074431690"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

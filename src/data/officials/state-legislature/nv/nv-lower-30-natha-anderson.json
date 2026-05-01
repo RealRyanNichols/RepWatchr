@@ -1,0 +1,64 @@
+{
+  "id": "natha-anderson",
+  "name": "Natha Anderson",
+  "firstName": "Natha",
+  "lastName": "Anderson",
+  "photo": "/images/officials/state-legislature/nv/natha-anderson.jpg",
+  "photoSourceUrl": "http://leg.state.nv.us/Session/83rd2025/legislators/Assembly/Images/Anderson.Natha.375.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "Assemblymember",
+  "district": "HD-30",
+  "jurisdiction": "Nevada Assembly",
+  "county": [
+    "Nevada"
+  ],
+  "termStart": "2020-11-04",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 3158, Nevada Assembly 401 S. Carson St., Carson City, NV 89701",
+    "phone": "775-684-8841",
+    "email": "natha.anderson@asm.state.nv.us",
+    "website": "https://www.leg.state.nv.us/App/Legislator/A/api/81st2021/Legislator?id=375"
+  },
+  "bio": "Natha Anderson serves as Assemblymember for Nevada Assembly District 30. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "NV",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.leg.state.nv.us/App/Legislator/A/api/81st2021/Legislator?id=375"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/nv/legislature/Natha-C-Anderson-d4a1125a-69d2-4de1-a4b4-af2aae20de09.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "http://leg.state.nv.us/Session/83rd2025/legislators/Assembly/Images/Anderson.Natha.375.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Natha_Anderson"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Natha_Anderson"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/191357/natha-anderson"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.leg.state.nv.us/App/Legislator/A/Assembly/Current"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.leg.state.nv.us/App/Legislator/A/Assembly/Current/30"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

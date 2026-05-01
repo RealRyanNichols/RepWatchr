@@ -1,0 +1,72 @@
+{
+  "id": "erik-dilan",
+  "name": "Erik Dilan",
+  "firstName": "Erik",
+  "lastName": "Dilan",
+  "photo": "/images/officials/state-legislature/ny/erik-dilan.jpg",
+  "photoSourceUrl": "https://assembly.state.ny.us/write/upload/member_files/054/headshot/054.jpg?hst=1660073635",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "Assemblymember",
+  "district": "HD-54",
+  "jurisdiction": "New York State Assembly",
+  "county": [
+    "New York"
+  ],
+  "termStart": "2015-01-01",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 526, Legislative Office Building, Albany, NY 12248",
+    "phone": "518-455-5821",
+    "email": "dilane@nyassembly.gov",
+    "website": "https://assembly.state.ny.us/mem/?sh=email",
+    "socialMedia": {
+      "x": "https://x.com/edilan37",
+      "twitter": "https://x.com/edilan37"
+    }
+  },
+  "bio": "Erik Dilan serves as Assemblymember for New York State Assembly District 54. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "NY",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://assembly.state.ny.us/mem/?sh=email"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ny/legislature/Erik-Dilan-489a01e1-6a0f-4907-bc00-110020e2f27d.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://assembly.state.ny.us/write/upload/member_files/054/headshot/054.jpg?hst=1660073635"
+    },
+    {
+      "title": "Public source",
+      "url": "https://assembly.state.ny.us/mem/Erik-M-Dilan"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Erik_Dilan"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Erik_Martin_Dilan"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/80261/erik-dilan"
+    },
+    {
+      "title": "Public source",
+      "url": "https://nyassembly.gov/mem/Erik-M-Dilan"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/erik-dilan-a764337b"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

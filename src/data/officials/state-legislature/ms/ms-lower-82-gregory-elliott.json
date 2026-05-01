@@ -1,0 +1,52 @@
+{
+  "id": "gregory-elliott",
+  "name": "Gregory Elliott",
+  "firstName": "Gregory",
+  "lastName": "Elliott",
+  "photo": "/images/officials/state-legislature/ms/gregory-elliott.jpg",
+  "photoSourceUrl": "https://billstatus.ls.state.ms.us/members/house/elliott.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-82",
+  "jurisdiction": "Mississippi House of Representatives",
+  "county": [
+    "Mississippi"
+  ],
+  "termStart": "2025-05-07",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "State Capitol 400 High St., Jackson, MS 39201",
+    "phone": "601-359-3770",
+    "email": "gelliott@house.ms.gov",
+    "website": "https://billstatus.ls.state.ms.us/members/house/elliott.xml"
+  },
+  "bio": "Gregory Elliott serves as State Representative for Mississippi House of Representatives District 82. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "MS",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://billstatus.ls.state.ms.us/members/house/elliott.xml"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ms/legislature/Gregory-Elliott-9b5e1a7c-98cd-448e-9f75-d59a5591f1a4.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://billstatus.ls.state.ms.us/members/house/elliott.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Gregory_Elliott"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Gregory_Elliott"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

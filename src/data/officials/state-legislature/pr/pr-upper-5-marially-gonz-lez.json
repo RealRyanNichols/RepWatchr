@@ -1,0 +1,61 @@
+{
+  "id": "marially-gonz-lez",
+  "name": "Marially Gonz\u00e1lez",
+  "firstName": "Marially",
+  "lastName": "Gonz\u00e1lez",
+  "party": "NP",
+  "level": "state",
+  "position": "Territorial Senator",
+  "district": "5",
+  "jurisdiction": "Puerto Rico Senate",
+  "county": [
+    "Puerto Rico"
+  ],
+  "termStart": "2021-01-02",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Senado, El Capitolio P.O. Box 9023431, San Juan, PR 00902",
+    "phone": "787-724-2030",
+    "email": "magonzalez@senado.pr.gov",
+    "website": "https://senado.pr.gov/senators/hon-marially-gonz%C3%A1lez-huertas"
+  },
+  "bio": "Marially Gonz\u00e1lez serves as Territorial Senator for Puerto Rico Senate District 5. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "PR",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://senado.pr.gov/senators/hon-marially-gonz%C3%A1lez-huertas"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/pr/legislature/Marially-Gonzalez-dd5cfa44-9cb3-414b-a780-ea182b4fe217.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Marially_Gonz%C3%A1lez"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Marially_Gonz%C3%A1lez_Huertas"
+    },
+    {
+      "title": "Public source",
+      "url": "https://senado.pr.gov/index.cfm?module=senadores"
+    },
+    {
+      "title": "Public source",
+      "url": "https://senado.pr.gov/senators/hon-marially-gonz\u00e1lez-huertas"
+    },
+    {
+      "title": "Public source",
+      "url": "https://sutra.oslpr.org/osl/esutra/AdmLegisladorReg.aspx?rid=692"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.senado.pr.gov/hon-marially-gonz-lez-huertas"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

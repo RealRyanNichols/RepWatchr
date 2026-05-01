@@ -1,0 +1,68 @@
+{
+  "id": "tony-strickland",
+  "name": "Tony Strickland",
+  "firstName": "Tony",
+  "lastName": "Strickland",
+  "photo": "/images/officials/state-legislature/ca/tony-strickland.jpg",
+  "photoSourceUrl": "http://votesmart.org/canphoto/16765.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-36",
+  "jurisdiction": "California Senate",
+  "county": [
+    "California"
+  ],
+  "termStart": "2025-03-11",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "1021 O St., Suite 6730, Sacramento, CA 95814",
+    "phone": "916-651-4036",
+    "email": "senator.strickland@senate.ca.gov",
+    "website": "https://cssrc.us/web/19/"
+  },
+  "bio": "Tony Strickland serves as State Senator for California Senate District 36. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "CA",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://cssrc.us/web/19/"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ca/legislature/Tony-Strickland-3dae8bef-7fb2-40a0-afee-78d79212521b.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "http://votesmart.org/canphoto/16765.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Tony_Strickland"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Tony_Strickland"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/16765/tony-strickland"
+    },
+    {
+      "title": "Public source",
+      "url": "https://senate.ca.gov/senators"
+    },
+    {
+      "title": "Public source",
+      "url": "https://sr36.senate.ca.gov"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/tony-strickland-8720616"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

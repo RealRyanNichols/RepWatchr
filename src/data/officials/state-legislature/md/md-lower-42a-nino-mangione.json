@@ -1,0 +1,60 @@
+{
+  "id": "nino-mangione",
+  "name": "Nino Mangione",
+  "firstName": "Nino",
+  "lastName": "Mangione",
+  "photo": "/images/officials/state-legislature/md/nino-mangione.jpg",
+  "photoSourceUrl": "http://mgaleg.maryland.gov/2019RS/images/mangione01.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "Delegate",
+  "district": "HD-42A",
+  "jurisdiction": "Maryland House of Delegates",
+  "county": [
+    "Maryland"
+  ],
+  "termStart": "2023-01-11",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 320, Lowe House Office Building 6 Bladen St., Annapolis, MD 21401",
+    "phone": "410-841-3258",
+    "email": "nino.mangione@house.maryland.gov",
+    "website": "https://mgaleg.maryland.gov/mgawebsite/Members/Details/mangione01"
+  },
+  "bio": "Nino Mangione serves as Delegate for Maryland House of Delegates District 42A. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "MD",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://mgaleg.maryland.gov/mgawebsite/Members/Details/mangione01"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/md/legislature/Nino-Mangione-7817a7bd-51a6-456a-a2df-4b9e3523d181.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "http://mgaleg.maryland.gov/2019RS/images/mangione01.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Nino_Mangione"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Nino_Mangione"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/181672/nino-mangione"
+    },
+    {
+      "title": "Public source",
+      "url": "https://mgaleg.maryland.gov/webmga/frmMain.aspx?pid=sponpage&tab=subject6&id=mangione01&stab=01"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

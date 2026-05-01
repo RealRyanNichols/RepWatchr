@@ -1,0 +1,60 @@
+{
+  "id": "joe-hogan",
+  "name": "Joe Hogan",
+  "firstName": "Joe",
+  "lastName": "Hogan",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-142",
+  "jurisdiction": "Pennsylvania House of Representatives",
+  "county": [
+    "Pennsylvania"
+  ],
+  "termStart": "2022-12-01",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 161B, East Wing P.O. Box 202142, Harrisburg, PA 17120",
+    "phone": "717-260-6140",
+    "email": "jhogan@pahousegop.com",
+    "website": "https://www.legis.state.pa.us/cfdocs/legis/home/member_information/House_bio.cfm?id=1971",
+    "socialMedia": {
+      "facebook": "https://facebook.com/RepHogan"
+    }
+  },
+  "bio": "Joe Hogan serves as State Representative for Pennsylvania House of Representatives District 142. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "PA",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.legis.state.pa.us/cfdocs/legis/home/member_information/House_bio.cfm?id=1971"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/pa/legislature/Joe-Hogan-b1beaa5c-93d2-479e-9408-47c7687cd212.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Joseph_Hogan_(Pennsylvania)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Joe_Hogan_(Pennsylvania_politician)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.legis.state.pa.us/cfdocs/legis/home/member_information/mbrList.cfm?body=H&sort=alpha"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.palegis.us/house/members/bio/1971/rep-hogan"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.rephogan.com"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

@@ -1,0 +1,56 @@
+{
+  "id": "bryan-lawrence",
+  "name": "Bryan Lawrence",
+  "firstName": "Bryan",
+  "lastName": "Lawrence",
+  "photo": "/images/officials/state-legislature/mn/bryan-lawrence.jpg",
+  "photoSourceUrl": "https://www.house.mn.gov/hinfo/memberimgls94/27B.gif?v=112221",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-27B",
+  "jurisdiction": "Minnesota House of Representatives",
+  "county": [
+    "Minnesota"
+  ],
+  "termStart": "2024-04-02",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Centennial Office Building 658 Cedar St., Second Floor, St. Paul, MN 55155",
+    "phone": "651-296-5364",
+    "email": "rep.bryan.lawrence@house.mn.gov",
+    "website": "https://www.house.mn.gov/members/profile/15626"
+  },
+  "bio": "Bryan Lawrence serves as State Representative for Minnesota House of Representatives District 27B. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "MN",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.house.mn.gov/members/profile/15626"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/mn/legislature/Bryan-Lawrence-b135d3fd-c3cd-4bb5-a0b8-eefef669aada.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://www.house.mn.gov/hinfo/memberimgls94/27B.gif?v=112221"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Bryan_Lawrence"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Bryan_Lawrence_(politician)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/13459/bryan-lawrence"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

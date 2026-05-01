@@ -1,0 +1,69 @@
+{
+  "id": "doug-mccrory",
+  "name": "Doug McCrory",
+  "firstName": "Doug",
+  "lastName": "McCrory",
+  "party": "D",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-2",
+  "jurisdiction": "Connecticut Senate",
+  "county": [
+    "Connecticut"
+  ],
+  "termStart": "2017-03-03",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 3100, Legislative Office Building 300 Capitol Ave., Hartford, CT 06106",
+    "phone": "860-240-1453",
+    "email": "douglas.mccrory@cga.ct.gov",
+    "website": "https://cga.ct.gov/asp/CGABillStatus/CGAMemberBills.asp?dist_code=%27S02%27&dist_name=McCrory,%20Douglas"
+  },
+  "bio": "Doug McCrory serves as State Senator for Connecticut Senate District 2. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "CT",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://cga.ct.gov/asp/CGABillStatus/CGAMemberBills.asp?dist_code=%27S02%27&dist_name=McCrory,%20Douglas"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ct/legislature/Douglas-McCrory-83a4e876-4df7-48ef-8a84-7d7940585af9.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "ftp://ftp.cga.ct.gov/pub/data/LegislatorDatabase.csv"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Douglas_McCrory"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Douglas_McCrory"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/30617/douglas-mccrory"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/douglas-mccrory-2562b91a"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.senatedems.ct.gov/mccrory"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.senatedems.ct.gov/senator/doug-mccrory"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.senatedems.ct.gov/senator/doug-mccrory/bio"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

@@ -1,0 +1,66 @@
+{
+  "id": "mandy-steele",
+  "name": "Mandy Steele",
+  "firstName": "Mandy",
+  "lastName": "Steele",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-33",
+  "jurisdiction": "Pennsylvania House of Representatives",
+  "county": [
+    "Pennsylvania"
+  ],
+  "termStart": "2022-12-01",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 111B, East Wing P.O. Box 202033, Harrisburg, PA 17120",
+    "phone": "717-705-7141",
+    "email": "repsteele@pahouse.net",
+    "website": "https://www.legis.state.pa.us/cfdocs/legis/home/member_information/House_bio.cfm?id=1945",
+    "socialMedia": {
+      "x": "https://x.com/RepSteele",
+      "twitter": "https://x.com/RepSteele",
+      "facebook": "https://facebook.com/RepSteele"
+    }
+  },
+  "bio": "Mandy Steele serves as State Representative for Pennsylvania House of Representatives District 33. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "PA",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.legis.state.pa.us/cfdocs/legis/home/member_information/House_bio.cfm?id=1945"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/pa/legislature/Mandy-Steele-63f8d7ea-b621-48b7-a326-4e2a732a521c.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Mandy_Steele"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Mandy_Steele"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.legis.state.pa.us/cfdocs/legis/home/member_information/mbrList.cfm?body=H&sort=alpha"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.pahouse.com/steele"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.palegis.us/house/members/bio/1945/rep-steele"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.steeleforpa.com/about"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

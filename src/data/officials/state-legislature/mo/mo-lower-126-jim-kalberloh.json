@@ -1,0 +1,64 @@
+{
+  "id": "jim-kalberloh",
+  "name": "Jim Kalberloh",
+  "firstName": "Jim",
+  "lastName": "Kalberloh",
+  "photo": "/images/officials/state-legislature/mo/jim-kalberloh.jpg",
+  "photoSourceUrl": "https://house.mo.gov/MemberPhoto.aspx?id=2229",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-126",
+  "jurisdiction": "Missouri House of Representatives",
+  "county": [
+    "Missouri"
+  ],
+  "termStart": "2023-01-04",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 410-B, 201 W. Capitol Ave., Jefferson City, MO 65101",
+    "phone": "573-751-5388",
+    "email": "jim.kalberloh@house.mo.gov",
+    "website": "https://house.mo.gov/MemberDetails.aspx?district=126"
+  },
+  "bio": "Jim Kalberloh serves as State Representative for Missouri House of Representatives District 126. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "MO",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://house.mo.gov/MemberDetails.aspx?district=126"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/mo/legislature/Jim-Kalberloh-49c68d0e-cf5d-4b46-9890-c887a428929e.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://house.mo.gov/MemberPhoto.aspx?id=2229"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Jim_Kalberloh"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Jim_Kalberloh"
+    },
+    {
+      "title": "Public source",
+      "url": "https://house.mo.gov/MemberDetails.aspx?year=2021&code=R&district=125"
+    },
+    {
+      "title": "Public source",
+      "url": "https://house.mo.gov/MemberDetails.aspx?year=2023&code=R&district=126"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/193389/jim-kalberloh"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

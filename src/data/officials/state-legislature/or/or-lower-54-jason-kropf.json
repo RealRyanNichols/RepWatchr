@@ -1,0 +1,53 @@
+{
+  "id": "jason-kropf",
+  "name": "Jason Kropf",
+  "firstName": "Jason",
+  "lastName": "Kropf",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-54",
+  "jurisdiction": "Oregon House of Representatives",
+  "county": [
+    "Oregon"
+  ],
+  "termStart": "2021-01-11",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room H-491, 900 Court St. NE, Salem, OR 97301",
+    "phone": "503-986-1454",
+    "email": "rep.jasonkropf@oregonlegislature.gov",
+    "website": "https://www.oregonlegislature.gov/kropf"
+  },
+  "bio": "Jason Kropf serves as State Representative for Oregon House of Representatives District 54. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "OR",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.oregonlegislature.gov/kropf"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/or/legislature/Jason-Kropf-47e270fe-abc4-4f5d-9bad-2b7979442f5d.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://api.oregonlegislature.gov/odata/odataservice.svc/LegislativeSessions('2022R1')/Legislators"
+    },
+    {
+      "title": "Public source",
+      "url": "https://api.oregonlegislature.gov/odata/odataservice.svc/LegislativeSessions('2023R1')/Legislators"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Jason_Kropf"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Jason_Kropf"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

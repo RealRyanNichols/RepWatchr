@@ -1,0 +1,69 @@
+{
+  "id": "perry-dozier",
+  "name": "Perry Dozier",
+  "firstName": "Perry",
+  "lastName": "Dozier",
+  "party": "R",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-16",
+  "jurisdiction": "Washington Senate",
+  "county": [
+    "Washington"
+  ],
+  "termStart": "2021-01-11",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 342, Irv Newhouse Building P.O. Box 40416, Olympia, WA 98504",
+    "phone": "360-786-7630",
+    "email": "perry.dozier@leg.wa.gov",
+    "website": "https://leg.wa.gov/legislators/member/perry-dozier"
+  },
+  "bio": "Perry Dozier serves as State Senator for Washington Senate District 16. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "WA",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://leg.wa.gov/legislators/member/perry-dozier"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/wa/legislature/Perry-Dozier-b7caabda-31e5-48b5-a4b1-82d2bffae0ae.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://app.leg.wa.gov/ContentParts/MemberDirectory/?a=Senate"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Perry_Dozier"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Perry_Dozier"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/116092/perry-dozier"
+    },
+    {
+      "title": "Public source",
+      "url": "https://perrydozier.src.wastateleg.org"
+    },
+    {
+      "title": "Public source",
+      "url": "https://perrydozier.src.wastateleg.org/"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.leg.wa.gov/senate/senators/Pages/default.aspx"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/perry-dozier-9b735151"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

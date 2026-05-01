@@ -1,0 +1,60 @@
+{
+  "id": "consuelo-hernandez",
+  "name": "Consuelo Hernandez",
+  "firstName": "Consuelo",
+  "lastName": "Hernandez",
+  "photo": "/images/officials/state-legislature/az/consuelo-hernandez.jpg",
+  "photoSourceUrl": "https://azleg.gov/alisImages/MemberPhotos/57leg/House/HERNANDEZ_C.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-21",
+  "jurisdiction": "Arizona House of Representatives",
+  "county": [
+    "Arizona"
+  ],
+  "termStart": "2023-01-09",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 117, 1700 W. Washington St., Phoenix, AZ 85007",
+    "phone": "602-926-3523",
+    "email": "chernandez@azleg.gov",
+    "website": "https://www.azleg.gov/house-member/?legislature=56&session=127&legislator=2169"
+  },
+  "bio": "Consuelo Hernandez serves as State Representative for Arizona House of Representatives District 21. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "AZ",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.azleg.gov/house-member/?legislature=56&session=127&legislator=2169"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/az/legislature/Consuelo-Hernandez-0a4e4b0a-a16e-475b-8aa1-75088657d8c1.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://azleg.gov/alisImages/MemberPhotos/57leg/House/HERNANDEZ_C.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Consuelo_Hernandez"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.azleg.gov/house-member/?legislature=57&session=129&legislator=2313"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.azleg.gov/memberroster/?body=H"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/consuelo-hernandez-7aa21a3b"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

@@ -1,0 +1,68 @@
+{
+  "id": "ben-brown",
+  "name": "Ben Brown",
+  "firstName": "Ben",
+  "lastName": "Brown",
+  "photo": "/images/officials/state-legislature/mo/ben-brown.jpg",
+  "photoSourceUrl": "https://www.senate.mo.gov/WebPhotos/SenatorPortraits/Brown26.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-26",
+  "jurisdiction": "Missouri Senate",
+  "county": [
+    "Missouri"
+  ],
+  "termStart": "2023-01-04",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 430, 201 W. Capitol Ave., Jefferson City, MO 65101",
+    "phone": "573-751-3678",
+    "email": "ben.brown@senate.mo.gov",
+    "website": "https://www.senate.mo.gov/Senators/Member/26"
+  },
+  "bio": "Ben Brown serves as State Senator for Missouri Senate District 26. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "MO",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.senate.mo.gov/Senators/Member/26"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/mo/legislature/Ben-Brown-c44ce433-7957-40b8-98dd-221b2f7d1436.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://www.senate.mo.gov/WebPhotos/SenatorPortraits/Brown26.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Ben_Brown_(Missouri)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Ben_Brown_(politician)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/205662/ben-brown"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/benjamin-brown-88474328"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.senate.mo.gov/senators/index"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.senate.mo.gov/Senators/Member?id=271"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

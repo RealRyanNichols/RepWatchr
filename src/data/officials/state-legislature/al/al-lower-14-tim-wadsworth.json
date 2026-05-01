@@ -1,0 +1,72 @@
+{
+  "id": "tim-wadsworth",
+  "name": "Tim Wadsworth",
+  "firstName": "Tim",
+  "lastName": "Wadsworth",
+  "photo": "/images/officials/state-legislature/al/tim-wadsworth.jpg",
+  "photoSourceUrl": "https://www.legislature.state.al.us/pdf/house/members/Wadsworth_14.png",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-14",
+  "jurisdiction": "Alabama House of Representatives",
+  "county": [
+    "Alabama"
+  ],
+  "termStart": "2014-11-05",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 427-C, 11 S. Union St., Montgomery, AL 36130",
+    "phone": "205-300-4008",
+    "email": "wadsworth.tim654321@gmail.com",
+    "website": "https://alison.legislature.state.al.us/house-leaders-members"
+  },
+  "bio": "Tim Wadsworth serves as State Representative for Alabama House of Representatives District 14. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "AL",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://alison.legislature.state.al.us/house-leaders-members"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/al/legislature/Tim-Wadsworth-04f7bd8e-094b-433c-9e91-7ebe64c75604.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://www.legislature.state.al.us/pdf/house/members/Wadsworth_14.png"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Tim_Wadsworth"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Tim_Wadsworth"
+    },
+    {
+      "title": "graphql endpoint for member information",
+      "url": "https://gql.api.alison.legislature.state.al.us/graphql"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/150001/tim-wadsworth"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.legislature.state.al.us/aliswww/ISD/ALRepresentative.aspx?NAME=Wadsworth&OID_SPONSOR=100494&OID_PERSON=7704&SESSNAME="
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.legislature.state.al.us/aliswww/ISD/ALRepresentative.aspx?OID_SPONSOR=100494&OID_PERSON=7704"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.legislature.state.al.us/aliswww/ISD/House/ALRepresentatives.aspx"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

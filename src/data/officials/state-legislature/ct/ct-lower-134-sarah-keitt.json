@@ -1,0 +1,61 @@
+{
+  "id": "sarah-keitt",
+  "name": "Sarah Keitt",
+  "firstName": "Sarah",
+  "lastName": "Keitt",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-134",
+  "jurisdiction": "Connecticut House of Representatives",
+  "county": [
+    "Connecticut"
+  ],
+  "termStart": "2023-01-04",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 4014, Legislative Office Building 300 Capitol Ave., Hartford, CT 06106",
+    "phone": "860-240-8585",
+    "email": "sarah.keitt@cga.ct.gov",
+    "website": "https://www.housedems.ct.gov/keitt"
+  },
+  "bio": "Sarah Keitt serves as State Representative for Connecticut House of Representatives District 134. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "CT",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.housedems.ct.gov/keitt"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ct/legislature/Sarah-Keitt-7af92839-ae80-4370-a84a-e63799ed5a48.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "ftp://ftp.cga.ct.gov/pub/data/LegislatorDatabase.csv"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Sarah_Keitt"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Sarah_Keitt"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/208723/sarah-keitt"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.housedems.ct.gov/Keitt"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/sarah-keitt-6360178"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

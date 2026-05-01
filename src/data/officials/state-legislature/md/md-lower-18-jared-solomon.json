@@ -1,0 +1,64 @@
+{
+  "id": "jared-solomon",
+  "name": "Jared Solomon",
+  "firstName": "Jared",
+  "lastName": "Solomon",
+  "photo": "/images/officials/state-legislature/md/jared-solomon.jpg",
+  "photoSourceUrl": "https://bosepublicaffairs.com/wp-content/uploads/2020/12/solomon-768x959.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "Delegate",
+  "district": "HD-18",
+  "jurisdiction": "Maryland House of Delegates",
+  "county": [
+    "Maryland"
+  ],
+  "termStart": "2019-01-09",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 312, Lowe House Office Building 6 Bladen St., Annapolis, MD 21401",
+    "phone": "410-841-3130",
+    "email": "jared.solomon@house.maryland.gov",
+    "website": "https://mgaleg.maryland.gov/mgawebsite/Members/Details/solomon01"
+  },
+  "bio": "Jared Solomon serves as Delegate for Maryland House of Delegates District 18. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "MD",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://mgaleg.maryland.gov/mgawebsite/Members/Details/solomon01"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/md/legislature/Jared-Solomon-4edadbc3-1635-4ce9-9b8c-1220f07e7b23.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://bosepublicaffairs.com/wp-content/uploads/2020/12/solomon-768x959.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Jared_Solomon_(Maryland)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://bosepublicaffairs.com/staff/jared-solomon"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Jared_Solomon_(Maryland_politician)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://mgaleg.maryland.gov/webmga/frmMain.aspx?pid=sponpage&tab=subject6&id=solomon01&stab=01"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/jared-solomon-b2655725"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

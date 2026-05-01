@@ -1,0 +1,56 @@
+{
+  "id": "celeste-hurst",
+  "name": "Celeste Hurst",
+  "firstName": "Celeste",
+  "lastName": "Hurst",
+  "photo": "/images/officials/state-legislature/ms/celeste-hurst.jpg",
+  "photoSourceUrl": "https://static.wixstatic.com/media/4b62c6_190e934501654befbc52179bbb3d45b0~mv2.jpeg/v1/fill/w_605,h_713,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/4b62c6_190e934501654befbc52179bbb3d45b0~mv2.jpeg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-75",
+  "jurisdiction": "Mississippi House of Representatives",
+  "county": [
+    "Mississippi"
+  ],
+  "termStart": "2024-01-02",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "State Capitol 400 High St., Jackson, MS 39201",
+    "phone": "601-359-3770",
+    "email": "churst@house.ms.gov",
+    "website": "https://billstatus.ls.state.ms.us/members/house/hurst.xml"
+  },
+  "bio": "Celeste Hurst serves as State Representative for Mississippi House of Representatives District 75. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "MS",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://billstatus.ls.state.ms.us/members/house/hurst.xml"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ms/legislature/Celeste-Hurst-c854a4e7-61d0-4c5e-8623-694a38f0ad20.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://static.wixstatic.com/media/4b62c6_190e934501654befbc52179bbb3d45b0~mv2.jpeg/v1/fill/w_605,h_713,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/4b62c6_190e934501654befbc52179bbb3d45b0~mv2.jpeg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Celeste_Hurst"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Celeste_Hurst"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/key-votes/211458/celeste-hurst"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

@@ -1,0 +1,60 @@
+{
+  "id": "joyce-waddell",
+  "name": "Joyce Waddell",
+  "firstName": "Joyce",
+  "lastName": "Waddell",
+  "photo": "/images/officials/state-legislature/nc/joyce-waddell.jpg",
+  "photoSourceUrl": "https://www.ncleg.gov/Members/MemberImage/S/393/Low",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-40",
+  "jurisdiction": "North Carolina Senate",
+  "county": [
+    "North Carolina"
+  ],
+  "termStart": "2015-01-01",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 1106, North Carolina Legislative Building 16 W. Jones St., Raleigh, NC 27601",
+    "phone": "919-733-5650",
+    "email": "joyce.waddell@ncleg.gov",
+    "website": "https://www.ncleg.gov/Members/Biography/S/393"
+  },
+  "bio": "Joyce Waddell serves as State Senator for North Carolina Senate District 40. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "NC",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.ncleg.gov/Members/Biography/S/393"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/nc/legislature/Joyce-Waddell-3e8067e6-6232-4ebb-979c-d077ab968446.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://www.ncleg.gov/Members/MemberImage/S/393/Low"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Joyce_Waddell"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Joyce_Waddell"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/joyce-waddell-730a8527"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.ncleg.gov/Members/MemberTable/S"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

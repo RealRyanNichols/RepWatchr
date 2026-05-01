@@ -1,0 +1,56 @@
+{
+  "id": "reginald-jackson",
+  "name": "Reginald Jackson",
+  "firstName": "Reginald",
+  "lastName": "Jackson",
+  "photo": "/images/officials/state-legislature/ms/reginald-jackson.jpg",
+  "photoSourceUrl": "https://billstatus.ls.state.ms.us/members/senate/jackson.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-11",
+  "jurisdiction": "Mississippi Senate",
+  "county": [
+    "Mississippi"
+  ],
+  "termStart": "2024-01-02",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "State Capitol 400 High St., Jackson, MS 39201",
+    "phone": "601-359-4088",
+    "email": "rjackson@senate.ms.gov",
+    "website": "https://billstatus.ls.state.ms.us/members/senate/jackson.xml"
+  },
+  "bio": "Reginald Jackson serves as State Senator for Mississippi Senate District 11. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "MS",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://billstatus.ls.state.ms.us/members/senate/jackson.xml"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ms/legislature/Robert-L-Jackson-0fde8bcf-e43a-4b39-a9a5-b7869424e2d9.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://billstatus.ls.state.ms.us/members/senate/jackson.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Reginald_Jackson_(Mississippi)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://billstatus.ls.state.ms.us/members/senate/jackson_(11th).xml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://billstatus.ls.state.ms.us/members/ss_membs.xml"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

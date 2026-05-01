@@ -1,0 +1,72 @@
+{
+  "id": "ruth-ward",
+  "name": "Ruth Ward",
+  "firstName": "Ruth",
+  "lastName": "Ward",
+  "photo": "/images/officials/state-legislature/nh/ruth-ward.jpg",
+  "photoSourceUrl": "https://storage.googleapis.com/enview-dev-public-general/legislative-people-photos/59194.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-8",
+  "jurisdiction": "New Hampshire Senate",
+  "county": [
+    "New Hampshire"
+  ],
+  "termStart": "2016-12-07",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 302, State House 107 N. Main St., Concord, NH 03301",
+    "phone": "603-271-2609",
+    "email": "ruth.ward@gc.nh.gov",
+    "website": "https://gc.nh.gov/Senate/members/webpages/district08.aspx"
+  },
+  "bio": "Ruth Ward serves as State Senator for New Hampshire Senate District 8. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "NH",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://gc.nh.gov/Senate/members/webpages/district08.aspx"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/nh/legislature/Ruth-Ward-9089a509-1f26-4770-adc6-199ed716e692.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://storage.googleapis.com/enview-dev-public-general/legislative-people-photos/59194.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Ruth_Ward"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Ruth_Ward"
+    },
+    {
+      "title": "Public source",
+      "url": "https://gencourt.state.nh.us/downloads/Members.txt"
+    },
+    {
+      "title": "Public source",
+      "url": "https://gencourt.state.nh.us/downloads/members.txt"
+    },
+    {
+      "title": "Public source",
+      "url": "https://gencourt.state.nh.us/Senate/members/webpages/district08.aspx"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.gencourt.state.nh.us/downloads/Members.txt"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.gencourt.state.nh.us/Senate/members/webpages/district08.aspx"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

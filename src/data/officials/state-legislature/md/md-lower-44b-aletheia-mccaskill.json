@@ -1,0 +1,56 @@
+{
+  "id": "aletheia-mccaskill",
+  "name": "Aletheia McCaskill",
+  "firstName": "Aletheia",
+  "lastName": "McCaskill",
+  "photo": "/images/officials/state-legislature/md/aletheia-mccaskill.jpg",
+  "photoSourceUrl": "https://mgaleg.maryland.gov/2023RS/images/mccaskill01.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "Delegate",
+  "district": "HD-44B",
+  "jurisdiction": "Maryland House of Delegates",
+  "county": [
+    "Maryland"
+  ],
+  "termStart": "2023-01-11",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 326, Lowe House Office Building 6 Bladen St., Annapolis, MD 21401",
+    "phone": "410-841-3692",
+    "email": "aletheia.mccaskill@house.maryland.gov",
+    "website": "https://mgaleg.maryland.gov/mgawebsite/Members/Details/mccaskill01"
+  },
+  "bio": "Aletheia McCaskill serves as Delegate for Maryland House of Delegates District 44B. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "MD",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://mgaleg.maryland.gov/mgawebsite/Members/Details/mccaskill01"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/md/legislature/Aletheia-McCaskill-311ecab9-74b4-4c0f-849b-c077dfbb291f.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://mgaleg.maryland.gov/2023RS/images/mccaskill01.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Aletheia_McCaskill"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Aletheia_McCaskill"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/181455/aletheia-mccaskill"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

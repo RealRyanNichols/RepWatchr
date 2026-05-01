@@ -1,0 +1,71 @@
+{
+  "id": "austen-schauer",
+  "name": "Austen Schauer",
+  "firstName": "Austen",
+  "lastName": "Schauer",
+  "photo": "/images/officials/state-legislature/nd/austen-schauer.jpg",
+  "photoSourceUrl": "https://www.ndlegis.gov/sites/default/files/styles/member_list_photo/public/person/photo/aschauer2023.jpg?itok=nn6aFXan",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-13",
+  "jurisdiction": "North Dakota House of Representatives",
+  "county": [
+    "North Dakota"
+  ],
+  "termStart": "2018-12-01",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "State Capitol 600 E. Boulevard Ave., Bismarck, ND 58505",
+    "email": "aschauer@ndlegis.gov",
+    "website": "https://ndlegis.gov/biography/austen-schauer"
+  },
+  "bio": "Austen Schauer serves as State Representative for North Dakota House of Representatives District 13. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "ND",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://ndlegis.gov/biography/austen-schauer"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/nd/legislature/Austen-Schauer-860892bd-92d1-4a30-a5e6-3b5f2359e9df.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://www.ndlegis.gov/sites/default/files/styles/member_list_photo/public/person/photo/aschauer2023.jpg?itok=nn6aFXan"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Austen_Schauer"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Austen_Schauer"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/181378/austen-schauer"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.legis.nd.gov/assembly/66-2019/members/house/representative-austen-schauer"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.legis.nd.gov/assembly/67-2021/members/house/representative-austen-schauer"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.legis.nd.gov/assembly/67-2021/members/members-by-district"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/austen-schauer-a9a0b544"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

@@ -1,0 +1,65 @@
+{
+  "id": "larry-grooms",
+  "name": "Larry Grooms",
+  "firstName": "Larry",
+  "lastName": "Grooms",
+  "party": "R",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-37",
+  "jurisdiction": "South Carolina Senate",
+  "county": [
+    "South Carolina"
+  ],
+  "termStart": "1997-11-10",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 313, Gressette Building P.O. Box 142, Columbia, SC 29201",
+    "phone": "803-212-6400",
+    "email": "stranscomm@scsenate.gov",
+    "website": "https://scstatehouse.gov/member.php?code=0729545367"
+  },
+  "bio": "Larry Grooms serves as State Senator for South Carolina Senate District 37. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "SC",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://scstatehouse.gov/member.php?code=0729545367"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/sc/legislature/Lawrence-K-Larry-Grooms-cc6f617e-1af7-4aa5-a9cc-a2214b2c21e2.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Lawrence_Grooms"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Larry_Grooms"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/15260/larry-grooms"
+    },
+    {
+      "title": "Public source",
+      "url": "https://scstatehouse.gov/member.php?chamber=S"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/larrygrooms"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.scstatehouse.gov/member.php?chamber=S"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.scstatehouse.gov/member.php?code=0729545367"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

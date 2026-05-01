@@ -1,0 +1,72 @@
+{
+  "id": "shannon-grove",
+  "name": "Shannon Grove",
+  "firstName": "Shannon",
+  "lastName": "Grove",
+  "photo": "/images/officials/state-legislature/ca/shannon-grove.jpg",
+  "photoSourceUrl": "https://www.senate.ca.gov/sites/senate.ca.gov/files/senator_photos/grove_hs_0625_lls.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-12",
+  "jurisdiction": "California Senate",
+  "county": [
+    "California"
+  ],
+  "termStart": "2022-12-05",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "1021 O St. Suite 7150, Sacramento, CA 95814",
+    "phone": "916-651-4012",
+    "email": "senator.grove@senate.ca.gov",
+    "website": "https://senate.ca.gov/sd12"
+  },
+  "bio": "Shannon Grove serves as State Senator for California Senate District 12. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "CA",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://senate.ca.gov/sd12"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ca/legislature/Shannon-Grove-b4b8e8fb-831b-4cae-9081-b8f75477fcd0.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://www.senate.ca.gov/sites/senate.ca.gov/files/senator_photos/grove_hs_0625_lls.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Shannon_Grove"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Shannon_Grove"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/120204/shannon-grove"
+    },
+    {
+      "title": "Public source",
+      "url": "https://senate.ca.gov/senators"
+    },
+    {
+      "title": "Public source",
+      "url": "https://sr12.senate.ca.gov"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/shannon-grove-b17b4116"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.senate.ca.gov/senators"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

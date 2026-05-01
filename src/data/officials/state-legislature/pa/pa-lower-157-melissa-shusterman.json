@@ -1,0 +1,71 @@
+{
+  "id": "melissa-shusterman",
+  "name": "Melissa Shusterman",
+  "firstName": "Melissa",
+  "lastName": "Shusterman",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-157",
+  "jurisdiction": "Pennsylvania House of Representatives",
+  "county": [
+    "Pennsylvania"
+  ],
+  "termStart": "2018-12-01",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 114, Irvis Office Building P.O. Box 202157, Harrisburg, PA 17120",
+    "phone": "717-787-7524",
+    "email": "repshusterman@pahouse.net",
+    "website": "https://www.legis.state.pa.us/cfdocs/legis/home/member_information/House_bio.cfm?id=1851",
+    "socialMedia": {
+      "x": "https://x.com/RepShusterman",
+      "twitter": "https://x.com/RepShusterman",
+      "facebook": "https://facebook.com/RepShusterman",
+      "youtube": "https://youtube.com/playlist?list=PLjtqNtfs0bgXjeB8QUgnxtsPuHEN1Zzs1"
+    }
+  },
+  "bio": "Melissa Shusterman serves as State Representative for Pennsylvania House of Representatives District 157. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "PA",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.legis.state.pa.us/cfdocs/legis/home/member_information/House_bio.cfm?id=1851"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/pa/legislature/Melissa-L-Shusterman-2cb7688e-e8ea-431e-9f56-34ee9a9a3ecc.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Melissa_Shusterman"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Melissa_Shusterman"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.legis.state.pa.us/cfdocs/legis/home/member_information/mbrList.cfm?body=H&sort=alpha"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.legis.state.pa.us/cfdocs/legis/home/member_information/representatives_alpha.cfm"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/melissashusterman"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.pahouse.com/shusterman"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.palegis.us/house/members/bio/1851/rep-shusterman"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

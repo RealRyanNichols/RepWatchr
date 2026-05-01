@@ -1,0 +1,65 @@
+{
+  "id": "brian-lampton",
+  "name": "Brian Lampton",
+  "firstName": "Brian",
+  "lastName": "Lampton",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-70",
+  "jurisdiction": "Ohio House of Representatives",
+  "county": [
+    "Ohio"
+  ],
+  "termStart": "2023-01-01",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "77 S. High St. 13th Floor, Columbus, OH 43215",
+    "phone": "614-644-6020",
+    "email": "rep70@ohiohouse.gov",
+    "website": "https://ohiohouse.gov/brian-e-lampton"
+  },
+  "bio": "Brian Lampton serves as State Representative for Ohio House of Representatives District 70. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "OH",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://ohiohouse.gov/brian-e-lampton"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/oh/legislature/Brian-E-Lampton-1895e223-ba42-4e25-8cd0-915ca5cc2829.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Brian_Lampton"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Brian_Lampton"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/102740/brian-lampton"
+    },
+    {
+      "title": "member details page",
+      "url": "https://ohiohouse.gov/members/brian-e-lampton"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ohiohouse.gov/members/brian-lampton"
+    },
+    {
+      "title": "member list page",
+      "url": "https://www.legislature.ohio.gov/legislators/house-directory"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/brian-lampton-a6555614"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

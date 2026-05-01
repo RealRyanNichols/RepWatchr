@@ -1,0 +1,53 @@
+{
+  "id": "kevin-ford",
+  "name": "Kevin Ford",
+  "firstName": "Kevin",
+  "lastName": "Ford",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-54",
+  "jurisdiction": "Mississippi House of Representatives",
+  "county": [
+    "Mississippi"
+  ],
+  "termStart": "2017-12-11",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "State Capitol 400 High St., Jackson, MS 39201",
+    "phone": "601-359-9473",
+    "email": "kford@house.ms.gov",
+    "website": "https://billstatus.ls.state.ms.us/members/house/ford.xml"
+  },
+  "bio": "Kevin Ford serves as State Representative for Mississippi House of Representatives District 54. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "MS",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://billstatus.ls.state.ms.us/members/house/ford.xml"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ms/legislature/Kevin-Ford-7a9174a7-1301-407a-8c77-5f70e70fde92.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Kevin_Ford"
+    },
+    {
+      "title": "Public source",
+      "url": "https://billstatus.ls.state.ms.us/members/house/ford_(54th).xml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://billstatus.ls.state.ms.us/members/hr_membs.xml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/kevin-ford-b86ab519"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

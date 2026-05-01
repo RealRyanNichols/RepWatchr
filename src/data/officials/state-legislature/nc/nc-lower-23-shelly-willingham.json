@@ -1,0 +1,64 @@
+{
+  "id": "shelly-willingham",
+  "name": "Shelly Willingham",
+  "firstName": "Shelly",
+  "lastName": "Willingham",
+  "photo": "/images/officials/state-legislature/nc/shelly-willingham.jpg",
+  "photoSourceUrl": "https://www.ncleg.gov/Members/MemberImage/H/700/Low",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-23",
+  "jurisdiction": "North Carolina House of Representatives",
+  "county": [
+    "North Carolina"
+  ],
+  "termStart": "2015-01-01",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 513, Legislative Office Building 300 N. Salisbury St., Raleigh, NC 27603",
+    "phone": "919-715-3024",
+    "email": "shelly.willingham@ncleg.gov",
+    "website": "https://www.ncleg.gov/Members/Biography/H/700"
+  },
+  "bio": "Shelly Willingham serves as State Representative for North Carolina House of Representatives District 23. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "NC",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.ncleg.gov/Members/Biography/H/700"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/nc/legislature/Shelly-Willingham-f0d9b7f4-abb7-4111-b640-766a1f81d653.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://www.ncleg.gov/Members/MemberImage/H/700/Low"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Shelly_Willingham"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Shelly_Willingham"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/41293/shelly-willingham"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/shelly-willingham-92930662"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.ncleg.gov/Members/MemberTable/H"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

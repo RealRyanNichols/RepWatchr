@@ -1,0 +1,72 @@
+{
+  "id": "sue-shink",
+  "name": "Sue Shink",
+  "firstName": "Sue",
+  "lastName": "Shink",
+  "photo": "/images/officials/state-legislature/mi/sue-shink.jpg",
+  "photoSourceUrl": "https://senatedems.com/shink/wp-content/uploads/sites/18/2022/12/Portrait_Shink_Web.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-14",
+  "jurisdiction": "Michigan Senate",
+  "county": [
+    "Michigan"
+  ],
+  "termStart": "2023-01-01",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 4200, Binsfeld Building P.O. Box 30036, Lansing, MI 48909",
+    "phone": "517-373-2426",
+    "email": "sensshink@senate.michigan.gov",
+    "website": "https://senatedems.com/shink"
+  },
+  "bio": "Sue Shink serves as State Senator for Michigan Senate District 14. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "MI",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://senatedems.com/shink"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/mi/legislature/Sue-Shink-38c58e5f-715a-4943-a8d9-2b557db3db02.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://senatedems.com/shink/wp-content/uploads/sites/18/2022/12/Portrait_Shink_Web.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Sue_Shink"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Sue_Shink"
+    },
+    {
+      "title": "Members List JSON Data Page",
+      "url": "https://senate.michigan.gov/senators/SenatorData.json"
+    },
+    {
+      "title": "Members List HTML page",
+      "url": "https://senate.michigan.gov/senators/senatorinfo_list.html"
+    },
+    {
+      "title": "Public source",
+      "url": "https://senatedems.com/shink/"
+    },
+    {
+      "title": "Public source",
+      "url": "https://senatedems.com/shink/bio"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/sue-shink-521a80158"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

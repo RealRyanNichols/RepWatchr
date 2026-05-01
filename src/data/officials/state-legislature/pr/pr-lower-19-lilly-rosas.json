@@ -1,0 +1,49 @@
+{
+  "id": "lilly-rosas",
+  "name": "Lilly Rosas",
+  "firstName": "Lilly",
+  "lastName": "Rosas",
+  "party": "NP",
+  "level": "state",
+  "position": "Territorial Representative",
+  "district": "19",
+  "jurisdiction": "Puerto Rico House of Representatives",
+  "county": [
+    "Puerto Rico"
+  ],
+  "termStart": "2025-01-02",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "El Capitolio, Avenida Constituci\u00f3n P.O. Box 9022228, San Juan, PR 00902",
+    "phone": "787-622-4381",
+    "email": "lrosas@camara.pr.gov",
+    "website": "https://camara.registrok12.com/team/lilibeth-lilly-rosas/"
+  },
+  "bio": "Lilly Rosas serves as Territorial Representative for Puerto Rico House of Representatives District 19. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "PR",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://camara.registrok12.com/team/lilibeth-lilly-rosas/"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/pr/legislature/Lilly-Rosas-71cb1a9e-7449-4695-bec5-1f0349ad2e2c.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Lilibeth_Rosas"
+    },
+    {
+      "title": "Public source",
+      "url": "https://camara.registrok12.com/team/lilibeth-lilly-rosas"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.camara.pr.gov/team/lilibeth-lilly-rosas"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

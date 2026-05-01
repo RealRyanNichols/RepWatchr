@@ -1,0 +1,49 @@
+{
+  "id": "ashley-bryant-bailey",
+  "name": "Ashley Bryant Bailey",
+  "firstName": "Ashley",
+  "lastName": "Bryant Bailey",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-26",
+  "jurisdiction": "Ohio House of Representatives",
+  "county": [
+    "Ohio"
+  ],
+  "termStart": "2025-10-01",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "77 S. High St. 10th Floor, Columbus, OH 43215",
+    "phone": "614-466-1308",
+    "email": "rep26@ohiohouse.gov",
+    "website": "https://ohiohouse.gov/members/ashley-bryant-bailey"
+  },
+  "bio": "Ashley Bryant Bailey serves as State Representative for Ohio House of Representatives District 26. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "OH",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://ohiohouse.gov/members/ashley-bryant-bailey"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/oh/legislature/Ashley-Bryant-Bailey-6d39391d-7068-4ad3-866d-4ee59890ce6e.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ashleybryantbailey.com"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Ashley_Bryant_Bailey"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/ashleylbryant"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

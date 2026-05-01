@@ -1,0 +1,72 @@
+{
+  "id": "dave-vieira",
+  "name": "Dave Vieira",
+  "firstName": "Dave",
+  "lastName": "Vieira",
+  "photo": "/images/officials/state-legislature/ma/dave-vieira.jpg",
+  "photoSourceUrl": "https://malegislature.gov/Legislators/Profile/170/DTV1.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-3rd Barnstable",
+  "jurisdiction": "Massachusetts House of Representatives",
+  "county": [
+    "Massachusetts"
+  ],
+  "termStart": "2011-01-05",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 167, State House 24 Beacon St., Boston, MA 02133",
+    "phone": "617-722-2230",
+    "email": "david.vieira@mahouse.gov",
+    "website": "https://malegislature.gov/Legislators/Profile/DTV1"
+  },
+  "bio": "Dave Vieira serves as State Representative for Massachusetts House of Representatives District 3rd Barnstable. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "MA",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://malegislature.gov/Legislators/Profile/DTV1"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ma/legislature/David-T-Vieira-5c798735-2f95-40a6-9ef7-4cd25eb638f6.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://malegislature.gov/Legislators/Profile/170/DTV1.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/David_Vieira"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/David_Vieira_(politician)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/54354/david-vieira"
+    },
+    {
+      "title": "Public source",
+      "url": "https://malegislature.gov/api/GeneralCourts/192/LegislativeMembers"
+    },
+    {
+      "title": "Public source",
+      "url": "https://malegislature.gov/api/GeneralCourts/192/LegislativeMembers/"
+    },
+    {
+      "title": "Public source",
+      "url": "https://malegislature.gov/api/GeneralCourts/192/LegislativeMembers/DTV1"
+    },
+    {
+      "title": "Public source",
+      "url": "https://malegislature.gov/api/GeneralCourts/193/LegislativeMembers"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

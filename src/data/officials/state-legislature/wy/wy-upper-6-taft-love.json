@@ -1,0 +1,59 @@
+{
+  "id": "taft-love",
+  "name": "Taft Love",
+  "firstName": "Taft",
+  "lastName": "Love",
+  "photo": "/images/officials/state-legislature/wy/taft-love.jpg",
+  "photoSourceUrl": "https://wyoleg.gov/LegislatorSummary/Photos/68th-LoveTaft.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-6",
+  "jurisdiction": "Wyoming Senate",
+  "county": [
+    "Wyoming"
+  ],
+  "termStart": "2025-09-09",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "State Capitol 200 W. 24th St., Cheyenne, WY 82002",
+    "email": "taft.love@wyoleg.gov",
+    "website": "https://wyoleg.gov/Legislators/2026/R/2145"
+  },
+  "bio": "Taft Love serves as State Senator for Wyoming Senate District 6. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "WY",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://wyoleg.gov/Legislators/2026/R/2145"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/wy/legislature/Taft-Love-e6276406-b441-4265-a110-7e3f9b8b0e3f.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://wyoleg.gov/LegislatorSummary/Photos/68th-LoveTaft.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Taft_Love"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Taft_Love"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/218298/taft-love"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/taft-love-231148101"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

@@ -1,0 +1,57 @@
+{
+  "id": "carol-fukunaga",
+  "name": "Carol Fukunaga",
+  "firstName": "Carol",
+  "lastName": "Fukunaga",
+  "party": "D",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-11",
+  "jurisdiction": "Hawaii Senate",
+  "county": [
+    "Hawaii"
+  ],
+  "termStart": "2022-11-08",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "State Capitol Room 216, 415 S. Beretania St., Honolulu, HI 96813",
+    "phone": "808-586-6460",
+    "email": "senfukunaga@capitol.hawaii.gov",
+    "website": "https://www.capitol.hawaii.gov/legislature/memberpage.aspx?member=168&year=2023"
+  },
+  "bio": "Carol Fukunaga serves as State Senator for Hawaii Senate District 11. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "HI",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.capitol.hawaii.gov/legislature/memberpage.aspx?member=168&year=2023"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/hi/legislature/Carol-Fukunaga-ca85a087-4a1f-450b-9386-11c13eb8c280.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Carol_Fukunaga"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Carol_Fukunaga"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.capitol.hawaii.gov/legislature/memberpage.aspx?member=168&year=2024"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.capitol.hawaii.gov/members/legislators.aspx"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/carol-fukunaga-0890a818"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

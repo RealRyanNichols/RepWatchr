@@ -1,0 +1,53 @@
+{
+  "id": "brian-stewart",
+  "name": "Brian Stewart",
+  "firstName": "Brian",
+  "lastName": "Stewart",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-12",
+  "jurisdiction": "Ohio House of Representatives",
+  "county": [
+    "Ohio"
+  ],
+  "termStart": "2023-01-01",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "77 S. High St. 13th Floor, Columbus, OH 43215",
+    "phone": "614-466-1464",
+    "email": "rep12@ohiohouse.gov",
+    "website": "https://ohiohouse.gov/brian-stewart"
+  },
+  "bio": "Brian Stewart serves as State Representative for Ohio House of Representatives District 12. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "OH",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://ohiohouse.gov/brian-stewart"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/oh/legislature/Brian-Stewart-f4e6c51a-89bd-4841-848b-b1097fd3fc9d.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Brian_Stewart_(Ohio)"
+    },
+    {
+      "title": "member details page",
+      "url": "https://ohiohouse.gov/members/brian-stewart"
+    },
+    {
+      "title": "member list page",
+      "url": "https://www.legislature.ohio.gov/legislators/house-directory"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/brianstewartohio"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

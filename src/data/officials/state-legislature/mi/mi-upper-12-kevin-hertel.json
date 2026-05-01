@@ -1,0 +1,72 @@
+{
+  "id": "kevin-hertel",
+  "name": "Kevin Hertel",
+  "firstName": "Kevin",
+  "lastName": "Hertel",
+  "photo": "/images/officials/state-legislature/mi/kevin-hertel.jpg",
+  "photoSourceUrl": "https://senatedems.com/hertel/wp-content/uploads/sites/16/2022/12/Hertel_Portrait.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-12",
+  "jurisdiction": "Michigan Senate",
+  "county": [
+    "Michigan"
+  ],
+  "termStart": "2023-01-01",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 7600, Binsfeld Building P.O. Box 30036, Lansing, MI 48909",
+    "phone": "517-373-7315",
+    "email": "senkhertel@senate.michigan.gov",
+    "website": "https://housedems.com/hertel"
+  },
+  "bio": "Kevin Hertel serves as State Senator for Michigan Senate District 12. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "MI",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://housedems.com/hertel"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/mi/legislature/Kevin-Hertel-cbfd5eae-d312-4498-a988-bcb52883f637.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://senatedems.com/hertel/wp-content/uploads/sites/16/2022/12/Hertel_Portrait.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Kevin_Hertel"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Kevin_Hertel"
+    },
+    {
+      "title": "Members List JSON Data Page",
+      "url": "https://senate.michigan.gov/senators/SenatorData.json"
+    },
+    {
+      "title": "Members List HTML page",
+      "url": "https://senate.michigan.gov/senators/senatorinfo_list.html"
+    },
+    {
+      "title": "Public source",
+      "url": "https://senatedems.com/hertel"
+    },
+    {
+      "title": "Public source",
+      "url": "https://senatedems.com/hertel/"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.house.mi.gov/AllRepresentatives"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

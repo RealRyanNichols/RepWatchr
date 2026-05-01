@@ -1,0 +1,60 @@
+{
+  "id": "robbie-morris",
+  "name": "Robbie Morris",
+  "firstName": "Robbie",
+  "lastName": "Morris",
+  "photo": "/images/officials/state-legislature/wv/robbie-morris.jpg",
+  "photoSourceUrl": "https://www.wvlegislature.gov/images/members/2025/senate/morris_robbie.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-11",
+  "jurisdiction": "West Virginia Senate",
+  "county": [
+    "West Virginia"
+  ],
+  "termStart": "2024-12-01",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "State Capitol Room 214W, Complex, Building 1 1900 Kanawha Blvd. East, Charleston, WV 25305",
+    "phone": "304-357-7973",
+    "email": "robbie.morris@wvsenate.gov",
+    "website": "https://www.wvlegislature.gov/Senate1/lawmaker.cfm?member=Senator%20Morris"
+  },
+  "bio": "Robbie Morris serves as State Senator for West Virginia Senate District 11. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "WV",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.wvlegislature.gov/Senate1/lawmaker.cfm?member=Senator%20Morris"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/wv/legislature/Robbie-Morris-86c70f70-4fc9-43f3-bd70-632d3a8f023b.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://www.wvlegislature.gov/images/members/2025/senate/morris_robbie.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Robbie_Morris"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Robbie_Morris_(politician)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/214462/robbie-morris"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/robbie-morris-5b596598"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

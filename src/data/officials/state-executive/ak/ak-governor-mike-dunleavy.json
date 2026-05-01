@@ -1,0 +1,40 @@
+{
+  "id": "mike-dunleavy",
+  "name": "Mike Dunleavy",
+  "firstName": "Mike",
+  "lastName": "Dunleavy",
+  "party": "R",
+  "level": "state",
+  "position": "Governor",
+  "district": "Alaska",
+  "jurisdiction": "Alaska statewide public office",
+  "county": [
+    "Alaska"
+  ],
+  "termStart": "2018-12-03",
+  "termEnd": "2026-12-07",
+  "contactInfo": {
+    "office": "State Capitol; P.O. Box 110001; Juneau, AK 99811-0001",
+    "phone": "907-465-3500",
+    "website": "https://gov.alaska.gov/",
+    "socialMedia": {
+      "x": "https://x.com/GovDunleavy",
+      "twitter": "https://x.com/GovDunleavy"
+    }
+  },
+  "bio": "Mike Dunleavy is listed as Governor for Alaska. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "AK",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://gov.alaska.gov/"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ak/executive/Mike-Dunleavy-80f0f5f8-976d-427b-b980-ce3a23a23e84.yml"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

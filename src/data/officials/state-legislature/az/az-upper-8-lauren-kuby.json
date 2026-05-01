@@ -1,0 +1,56 @@
+{
+  "id": "lauren-kuby",
+  "name": "Lauren Kuby",
+  "firstName": "Lauren",
+  "lastName": "Kuby",
+  "photo": "/images/officials/state-legislature/az/lauren-kuby.jpg",
+  "photoSourceUrl": "https://s3.amazonaws.com/ballotpedia-api4/files/thumbs/200/300/LaurenKuby24.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-8",
+  "jurisdiction": "Arizona Senate",
+  "county": [
+    "Arizona"
+  ],
+  "termStart": "2025-01-13",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 311, 1700 W. Washington St., Phoenix, AZ 85007",
+    "phone": "602-926-4124",
+    "email": "lkuby@azleg.gov",
+    "website": "https://www.azleg.gov/senate-member/?legislature=57&legislator=2390"
+  },
+  "bio": "Lauren Kuby serves as State Senator for Arizona Senate District 8. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "AZ",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.azleg.gov/senate-member/?legislature=57&legislator=2390"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/az/legislature/Lauren-Kuby-159091af-9aa8-4cb8-8c9c-9e20ba83c0ed.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://s3.amazonaws.com/ballotpedia-api4/files/thumbs/200/300/LaurenKuby24.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Lauren_Kuby"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Lauren_Kuby"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/laurenkuby"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

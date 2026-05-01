@@ -1,0 +1,52 @@
+{
+  "id": "keishan-scott",
+  "name": "Keishan Scott",
+  "firstName": "Keishan",
+  "lastName": "Scott",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-50",
+  "jurisdiction": "South Carolina House of Representatives",
+  "county": [
+    "South Carolina"
+  ],
+  "termStart": "2025-06-03",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 422D, Blatt Building 1105 Pendleton St., Columbia, SC 29201",
+    "phone": "803-212-6958",
+    "website": "https://www.scstatehouse.gov/member.php?code=1645738439"
+  },
+  "bio": "Keishan Scott serves as State Representative for South Carolina House of Representatives District 50. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "SC",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.scstatehouse.gov/member.php?code=1645738439"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/sc/legislature/Keishan-Scott-d38909c5-fdcb-4230-8380-498f6f8cc510.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Keishan_Scott"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Keishan_Scott"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/220936/keishan-scott"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/keishan-scott-6a07a8247"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

@@ -1,0 +1,72 @@
+{
+  "id": "sam-zurier",
+  "name": "Sam Zurier",
+  "firstName": "Sam",
+  "lastName": "Zurier",
+  "photo": "/images/officials/state-legislature/ri/sam-zurier.jpg",
+  "photoSourceUrl": "https://www.rilegislature.gov/senators/Pictures/Zurier-2022.jpg?csf=1&e=5y4LAP",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-3",
+  "jurisdiction": "Rhode Island Senate",
+  "county": [
+    "Rhode Island"
+  ],
+  "termStart": "2021-11-16",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "82 Smith St., Providence, RI 02903",
+    "phone": "401-222-3580",
+    "email": "sen-zurier@rilegislature.gov",
+    "website": "https://www.rilegislature.gov/senators/zurier/Pages/Biography.aspx"
+  },
+  "bio": "Sam Zurier serves as State Senator for Rhode Island Senate District 3. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "RI",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.rilegislature.gov/senators/zurier/Pages/Biography.aspx"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ri/legislature/Samuel-D-Zurier-3a4fd015-1c56-4d7b-9e57-1a2a6b9b4c9b.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://www.rilegislature.gov/senators/Pictures/Zurier-2022.jpg?csf=1&e=5y4LAP"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Sam_Zurier"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Sam_Zurier"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/132114/samuel-zurier"
+    },
+    {
+      "title": "Public source",
+      "url": "https://webserver.rilegislature.gov/Email/SenEmailListDistrict.asp"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/samuel-zurier-0330a39"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.rilegislature.gov/SiteAssets/MailingLists/Representatives.xls"
+    },
+    {
+      "title": "Detail Excel Source",
+      "url": "https://www.rilegislature.gov/SiteAssets/Representatives.xls"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

@@ -1,0 +1,66 @@
+{
+  "id": "gail-armstrong",
+  "name": "Gail Armstrong",
+  "firstName": "Gail",
+  "lastName": "Armstrong",
+  "photo": "/images/officials/state-legislature/nm/gail-armstrong.jpg",
+  "photoSourceUrl": "https://www.nmlegis.gov/Images/Legislators/House/HARMG.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-49",
+  "jurisdiction": "New Mexico House of Representatives",
+  "county": [
+    "New Mexico"
+  ],
+  "termStart": "2017-01-17",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "State Capitol Room 125C, New Mexico  490 Old Santa Fe Trail, Santa Fe, NM 87501",
+    "phone": "505-986-4758",
+    "email": "gail@gailfornewmexico.com",
+    "website": "https://www.nmlegis.gov/Members/Legislator?SponCode=HARMG",
+    "socialMedia": {
+      "x": "https://x.com/gail4nm",
+      "twitter": "https://x.com/gail4nm",
+      "facebook": "https://facebook.com/Gail4NM",
+      "instagram": "https://instagram.com/gail4nm"
+    }
+  },
+  "bio": "Gail Armstrong serves as State Representative for New Mexico House of Representatives District 49. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "NM",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.nmlegis.gov/Members/Legislator?SponCode=HARMG"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/nm/legislature/Gail-Armstrong-9564298b-dc55-4037-8205-5eca1c2063dc.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://www.nmlegis.gov/Images/Legislators/House/HARMG.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Gail_Armstrong"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Gail_Armstrong_(politician)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/gail-armstrong-03029b63"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.nmlegis.gov/Members/Legislator_List?T=R"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

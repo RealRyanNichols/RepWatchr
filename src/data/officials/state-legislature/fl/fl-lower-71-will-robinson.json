@@ -1,0 +1,69 @@
+{
+  "id": "will-robinson",
+  "name": "Will Robinson",
+  "firstName": "Will",
+  "lastName": "Robinson",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-71",
+  "jurisdiction": "Florida House of Representatives",
+  "county": [
+    "Florida"
+  ],
+  "termStart": "2018-11-06",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 303, House Office Building 402 S. Monroe St., Tallahassee, FL 32399",
+    "phone": "850-717-5071",
+    "email": "will.robinson@flhouse.gov",
+    "website": "https://myfloridahouse.gov/Sections/Representatives/details.aspx?MemberId=4733&LegislativeTermId=90"
+  },
+  "bio": "Will Robinson serves as State Representative for Florida House of Representatives District 71. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "FL",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://myfloridahouse.gov/Sections/Representatives/details.aspx?MemberId=4733&LegislativeTermId=90"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/fl/legislature/William-Cloud-Will-Robinson--Jr-042b27f1-ec82-497e-958c-ebe5da28b706.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Will_Robinson"
+    },
+    {
+      "title": "Public source",
+      "url": "https://blalockwalters.com/attorneys/william-c-robinson-jr"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Will_Robinson_(Florida_politician)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.flhouse.gov/Sections/Representatives/details.aspx?MemberId=4733"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/williamcrobinsonjr"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.myfloridahouse.gov/Representatives"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.myfloridahouse.gov/Sections/Representatives/details.aspx?MemberId=4733"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.myfloridahouse.gov/Sections/Representatives/details.aspx?MemberId=4733&LegislativeTermId=88"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

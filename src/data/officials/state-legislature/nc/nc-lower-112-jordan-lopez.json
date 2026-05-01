@@ -1,0 +1,52 @@
+{
+  "id": "jordan-lopez",
+  "name": "Jordan Lopez",
+  "firstName": "Jordan",
+  "lastName": "Lopez",
+  "photo": "/images/officials/state-legislature/nc/jordan-lopez.jpg",
+  "photoSourceUrl": "https://lopez4nc.com/wp-content/uploads/2023/12/FAV1127_LOPEZ_-121.webp",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-112",
+  "jurisdiction": "North Carolina House of Representatives",
+  "county": [
+    "North Carolina"
+  ],
+  "termStart": "2025-01-01",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 1325, North Carolina Legislative Building 16 W. Jones St., Raleigh, NC 27601",
+    "phone": "919-733-5749",
+    "email": "jordan.lopez@ncleg.gov",
+    "website": "https://www.ncleg.gov/Members/Biography/H/835"
+  },
+  "bio": "Jordan Lopez serves as State Representative for North Carolina House of Representatives District 112. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "NC",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.ncleg.gov/Members/Biography/H/835"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/nc/legislature/Jordan-Lopez-196e72cf-7987-4847-8e2f-03b540064e86.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://lopez4nc.com/wp-content/uploads/2023/12/FAV1127_LOPEZ_-121.webp"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Jordan_Lopez"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/jordanalopez"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

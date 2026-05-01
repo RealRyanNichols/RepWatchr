@@ -1,0 +1,65 @@
+{
+  "id": "abigail-salisbury",
+  "name": "Abigail Salisbury",
+  "firstName": "Abigail",
+  "lastName": "Salisbury",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-34",
+  "jurisdiction": "Pennsylvania House of Representatives",
+  "county": [
+    "Pennsylvania"
+  ],
+  "termStart": "2023-02-21",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 123B, East Wing P.O. Box 202034, Harrisburg, PA 17120",
+    "phone": "717-783-1914",
+    "email": "repsalisbury@pahouse.net",
+    "website": "https://www.legis.state.pa.us/cfdocs/legis/home/member_information/House_bio.cfm?id=2012"
+  },
+  "bio": "Abigail Salisbury serves as State Representative for Pennsylvania House of Representatives District 34. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "PA",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.legis.state.pa.us/cfdocs/legis/home/member_information/House_bio.cfm?id=2012"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/pa/legislature/Abigail-Salisbury-4bc74848-3896-4a0a-9310-970458f48d1a.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://asalisbury.org"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Abigail_Salisbury"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Abigail_Salisbury"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.legis.state.pa.us/cfdocs/legis/home/member_information/mbrList.cfm?body=H&sort=alpha"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/abigailsalisbury"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.pahouse.com/salisbury"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.palegis.us/house/members/bio/2012/rep-salisbury"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

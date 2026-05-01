@@ -1,0 +1,64 @@
+{
+  "id": "christopher-cabaldon",
+  "name": "Christopher Cabaldon",
+  "firstName": "Christopher",
+  "lastName": "Cabaldon",
+  "photo": "/images/officials/state-legislature/ca/christopher-cabaldon.jpg",
+  "photoSourceUrl": "https://calearninglab.org/wp-content/uploads/2024/09/Emcee-Christopher-Cabaldon-488x559.png",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-3",
+  "jurisdiction": "California Senate",
+  "county": [
+    "California"
+  ],
+  "termStart": "2024-12-02",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "1021 O St. Suite 7320, Sacramento, CA 95814",
+    "phone": "916-651-4003",
+    "email": "senator.cabaldon@senate.ca.gov",
+    "website": "https://sd03.senate.ca.gov/"
+  },
+  "bio": "Christopher Cabaldon serves as State Senator for California Senate District 3. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "CA",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://sd03.senate.ca.gov/"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ca/legislature/Christopher-Cabaldon-8833976f-b95a-45bf-bbd9-ccdb66946d20.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://calearninglab.org/wp-content/uploads/2024/09/Emcee-Christopher-Cabaldon-488x559.png"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Christopher_Cabaldon"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Christopher_Cabaldon"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/key-votes/71164/christopher-cabaldon"
+    },
+    {
+      "title": "Public source",
+      "url": "https://sd03.senate.ca.gov"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/christophercabaldon"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

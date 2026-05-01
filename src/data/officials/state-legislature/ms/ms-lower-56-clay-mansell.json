@@ -1,0 +1,56 @@
+{
+  "id": "clay-mansell",
+  "name": "Clay Mansell",
+  "firstName": "Clay",
+  "lastName": "Mansell",
+  "photo": "/images/officials/state-legislature/ms/clay-mansell.jpg",
+  "photoSourceUrl": "https://s3.amazonaws.com/ballotpedia-api4/files/thumbs/200/300/Clay_Mansell.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-56",
+  "jurisdiction": "Mississippi House of Representatives",
+  "county": [
+    "Mississippi"
+  ],
+  "termStart": "2024-01-02",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "State Capitol 400 High St., Jackson, MS 39201",
+    "phone": "601-359-3770",
+    "email": "cmansell@house.ms.gov",
+    "website": "https://billstatus.ls.state.ms.us/members/house/mansell.xml"
+  },
+  "bio": "Clay Mansell serves as State Representative for Mississippi House of Representatives District 56. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "MS",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://billstatus.ls.state.ms.us/members/house/mansell.xml"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ms/legislature/Clay-Mansell-bb9ba950-b671-4c41-b851-4a2c86d2059d.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://s3.amazonaws.com/ballotpedia-api4/files/thumbs/200/300/Clay_Mansell.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Clay_Mansell"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.claymansell.com/about-8"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/claymansell"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

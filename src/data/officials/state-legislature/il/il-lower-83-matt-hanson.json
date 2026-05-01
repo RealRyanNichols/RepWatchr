@@ -1,0 +1,72 @@
+{
+  "id": "matt-hanson",
+  "name": "Matt Hanson",
+  "firstName": "Matt",
+  "lastName": "Hanson",
+  "photo": "/images/officials/state-legislature/il/matt-hanson.jpg",
+  "photoSourceUrl": "https://cdn.ilga.gov/assets/img/members/{457B8F0B-1DF6-4107-A5FC-9B2BFAAE1008}.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-83",
+  "jurisdiction": "Illinois House of Representatives",
+  "county": [
+    "Illinois"
+  ],
+  "termStart": "2023-01-11",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 260-W, Stratton Office Building, Springfield, IL 62706",
+    "phone": "217-782-1486",
+    "email": "info@repmatthanson.com",
+    "website": "https://ilga.gov/house/Rep.asp?GA=103&MemberID=3225"
+  },
+  "bio": "Matt Hanson serves as State Representative for Illinois House of Representatives District 83. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "IL",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://ilga.gov/house/Rep.asp?GA=103&MemberID=3225"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/il/legislature/Matt-Hanson-14b940c9-8843-4709-97a9-9faee25bb201.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://cdn.ilga.gov/assets/img/members/{457B8F0B-1DF6-4107-A5FC-9B2BFAAE1008}.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Matt_Hanson"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Matt_Hanson_(politician)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ilga.gov/house/default.asp?GA=103"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/204483/matt-hanson"
+    },
+    {
+      "title": "Public source",
+      "url": "https://repmatthanson.com"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.ilga.gov/House/Members/Details/3416"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.ilga.gov/house/Rep.asp?GA=103&MemberID=3225"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

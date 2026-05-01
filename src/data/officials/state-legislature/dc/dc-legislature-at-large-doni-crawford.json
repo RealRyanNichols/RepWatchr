@@ -1,0 +1,56 @@
+{
+  "id": "doni-crawford",
+  "name": "Doni Crawford",
+  "firstName": "Doni",
+  "lastName": "Crawford",
+  "photo": "/images/officials/state-legislature/dc/doni-crawford.jpg",
+  "photoSourceUrl": "https://dccouncil.gov/wp-content/uploads/2026/01/Bio-Pic-scaled-125x125-c-default.jpeg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "I",
+  "level": "state",
+  "position": "Councilmember",
+  "district": "At-Large",
+  "jurisdiction": "Council of the District of Columbia",
+  "county": [
+    "District of Columbia"
+  ],
+  "termStart": "2026-01-20",
+  "termEnd": "2026-07-01",
+  "contactInfo": {
+    "office": "1350 Pennsylvania Ave. NW Suite 506, Washington, DC 20004",
+    "phone": "202-724-7772",
+    "email": "dcrawford@dccouncil.gov",
+    "website": "https://dccouncil.gov/council/at-large-councilmember-doni-crawford/"
+  },
+  "bio": "Doni Crawford serves as Councilmember for Council of the District of Columbia District At-Large. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "DC",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://dccouncil.gov/council/at-large-councilmember-doni-crawford/"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/dc/legislature/Doni-Crawford-5b179576-4f3f-453c-b40a-32917d38d751.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://dccouncil.gov/wp-content/uploads/2026/01/Bio-Pic-scaled-125x125-c-default.jpeg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://dccouncil.gov/council/at-large-councilmember-doni-crawford"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Doni_Crawford"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/donicrawford"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

@@ -1,0 +1,68 @@
+{
+  "id": "ron-latz",
+  "name": "Ron Latz",
+  "firstName": "Ron",
+  "lastName": "Latz",
+  "photo": "/images/officials/state-legislature/mn/ron-latz.jpg",
+  "photoSourceUrl": "https://www.senate.mn/graphics/46Latz.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-46",
+  "jurisdiction": "Minnesota Senate",
+  "county": [
+    "Minnesota"
+  ],
+  "termStart": "2007-01-03",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 3105, Minnesota Senate Building 95 University Ave. West, St. Paul, MN 55155",
+    "phone": "651-297-8065",
+    "email": "sen.ron.latz@senate.mn",
+    "website": "https://www.senate.mn/members/member_bio.html?mem_id=1102"
+  },
+  "bio": "Ron Latz serves as State Senator for Minnesota Senate District 46. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "MN",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.senate.mn/members/member_bio.html?mem_id=1102"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/mn/legislature/Ron-Latz-834a2c10-beb0-454e-8e08-619309d8a08a.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://www.senate.mn/graphics/46Latz.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Ron_Latz"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/38473/ron-latz"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/ronald-latz-87920244"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.senate.mn/api/members"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.senate.mn/members/index.php"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.senate.mn/members/list.csv"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

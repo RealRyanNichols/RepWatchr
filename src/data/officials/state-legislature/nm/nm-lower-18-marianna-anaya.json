@@ -1,0 +1,56 @@
+{
+  "id": "marianna-anaya",
+  "name": "Marianna Anaya",
+  "firstName": "Marianna",
+  "lastName": "Anaya",
+  "photo": "/images/officials/state-legislature/nm/marianna-anaya.jpg",
+  "photoSourceUrl": "https://s3.amazonaws.com/ballotpedia-api4/files/thumbs/200/300/MariannaAnaya.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-18",
+  "jurisdiction": "New Mexico House of Representatives",
+  "county": [
+    "New Mexico"
+  ],
+  "termStart": "2025-01-01",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 203CN, New Mexico Capitol Annex 325 Don Gaspar Ave., Santa Fe, NM 87501",
+    "phone": "505-986-4254",
+    "email": "marianna.anaya@nmlegis.gov",
+    "website": "https://www.nmlegis.gov/Members/Legislator?SponCode=HANMA"
+  },
+  "bio": "Marianna Anaya serves as State Representative for New Mexico House of Representatives District 18. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "NM",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.nmlegis.gov/Members/Legislator?SponCode=HANMA"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/nm/legislature/Marianna-Anaya-bc194113-8c8a-4cba-b1f4-25269c72a9fd.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://s3.amazonaws.com/ballotpedia-api4/files/thumbs/200/300/MariannaAnaya.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Marianna_Anaya"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Marianna_Anaya"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/mariannaanaya"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

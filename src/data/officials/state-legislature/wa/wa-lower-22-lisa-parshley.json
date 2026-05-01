@@ -1,0 +1,72 @@
+{
+  "id": "lisa-parshley",
+  "name": "Lisa Parshley",
+  "firstName": "Lisa",
+  "lastName": "Parshley",
+  "photo": "/images/officials/state-legislature/wa/lisa-parshley.jpg",
+  "photoSourceUrl": "https://leg.wa.gov/memberphoto/35415.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-22",
+  "jurisdiction": "Washington House of Representatives",
+  "county": [
+    "Washington"
+  ],
+  "termStart": "2025-01-13",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 317, John L. O'Brien Building P.O. Box 40600, Olympia, WA 98504",
+    "phone": "360-786-7992",
+    "email": "lisa.parshley@leg.wa.gov",
+    "website": "https://housedemocrats.wa.gov/parshley/"
+  },
+  "bio": "Lisa Parshley serves as State Representative for Washington House of Representatives District 22. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "WA",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://housedemocrats.wa.gov/parshley/"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/wa/legislature/Lisa-Parshley-dddbc05c-06fa-4e62-9c7b-96d58cf73aa1.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://leg.wa.gov/memberphoto/35415.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Lisa_Parshley"
+    },
+    {
+      "title": "Public source",
+      "url": "https://housedemocrats.wa.gov/parshley"
+    },
+    {
+      "title": "Public source",
+      "url": "https://housedemocrats.wa.gov/parshley/biography"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/217593/lisa-parshley"
+    },
+    {
+      "title": "Public source",
+      "url": "https://leg.wa.gov/legislators/member/lisa-parshley"
+    },
+    {
+      "title": "Public source",
+      "url": "https://lisaparshley.com"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/lisa-parshley-1628163b"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

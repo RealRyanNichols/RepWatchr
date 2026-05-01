@@ -1,0 +1,65 @@
+{
+  "id": "ceci-maher",
+  "name": "Ceci Maher",
+  "firstName": "Ceci",
+  "lastName": "Maher",
+  "party": "D",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-26",
+  "jurisdiction": "Connecticut Senate",
+  "county": [
+    "Connecticut"
+  ],
+  "termStart": "2023-01-04",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 3100, Legislative Office Building 300 Capitol Ave., Hartford, CT 06106",
+    "phone": "860-240-0068",
+    "email": "ceci.maher@cga.ct.gov",
+    "website": "https://www.senatedems.ct.gov/maher"
+  },
+  "bio": "Ceci Maher serves as State Senator for Connecticut Senate District 26. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "CT",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.senatedems.ct.gov/maher"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ct/legislature/Ceci-Maher-5310d199-fa92-40aa-8d0b-efad6d3027b2.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "ftp://ftp.cga.ct.gov/pub/data/LegislatorDatabase.csv"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Ceci_Maher"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Ceci_Maher"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/208763/cecilia-maher"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/cqmaher"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.senatedems.ct.gov/senator/ceci-maher"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.senatedems.ct.gov/senator/ceci-maher/bio"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

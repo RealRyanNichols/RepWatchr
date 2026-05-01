@@ -1,0 +1,57 @@
+{
+  "id": "jeff-gordon",
+  "name": "Jeff Gordon",
+  "firstName": "Jeff",
+  "lastName": "Gordon",
+  "party": "R",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-35",
+  "jurisdiction": "Connecticut Senate",
+  "county": [
+    "Connecticut"
+  ],
+  "termStart": "2023-01-04",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 3400, Legislative Office Building 300 Capitol Ave., Hartford, CT 06106",
+    "phone": "860-240-8800",
+    "email": "jeffrey.gordon@cga.ct.gov",
+    "website": "https://ctsenaterepublicans.com/home-gordon/"
+  },
+  "bio": "Jeff Gordon serves as State Senator for Connecticut Senate District 35. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "CT",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://ctsenaterepublicans.com/home-gordon/"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ct/legislature/Jeff-Gordon-1a60b520-6887-4830-b33e-78520b7b53aa.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "ftp://ftp.cga.ct.gov/pub/data/LegislatorDatabase.csv"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Jeff_Gordon_(Connecticut)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ctsenaterepublicans.com/about-gordon"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ctsenaterepublicans.com/home-gordon"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/jeffrey-gordon-84283030"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

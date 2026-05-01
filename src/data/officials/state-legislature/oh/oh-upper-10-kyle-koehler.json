@@ -1,0 +1,64 @@
+{
+  "id": "kyle-koehler",
+  "name": "Kyle Koehler",
+  "firstName": "Kyle",
+  "lastName": "Koehler",
+  "photo": "/images/officials/state-legislature/oh/kyle-koehler.jpg",
+  "photoSourceUrl": "https://img.legistorm.com/people/980/46980.jpg?rand=345402",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-10",
+  "jurisdiction": "Ohio Senate",
+  "county": [
+    "Ohio"
+  ],
+  "termStart": "2025-01-01",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 35, Statehouse, 1 Capitol Square Ground Floor, Columbus, OH 43215",
+    "phone": "614-466-3780",
+    "email": "sd10@ohiosenate.gov",
+    "website": "https://ohiosenate.gov/members/kyle-koehler"
+  },
+  "bio": "Kyle Koehler serves as State Senator for Ohio Senate District 10. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "OH",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://ohiosenate.gov/members/kyle-koehler"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/oh/legislature/Kyle-Koehler-f2e79c7c-7e3a-496d-8f87-d43b62eb54a5.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://img.legistorm.com/people/980/46980.jpg?rand=345402"
+    },
+    {
+      "title": "Public source",
+      "url": "http://www.ohiohouse.gov/members/member-directory"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Kyle_Koehler"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Kyle_Koehler"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ohiosenate.gov/members/kyle-koehler/biography"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/kylekoehler"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

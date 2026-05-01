@@ -1,0 +1,69 @@
+{
+  "id": "dan-griffey",
+  "name": "Dan Griffey",
+  "firstName": "Dan",
+  "lastName": "Griffey",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-35",
+  "jurisdiction": "Washington House of Representatives",
+  "county": [
+    "Washington"
+  ],
+  "termStart": "2015-01-12",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 403, John L. O'Brien Building P.O. Box 40600, Olympia, WA 98504",
+    "phone": "360-786-7966",
+    "email": "dan.griffey@leg.wa.gov",
+    "website": "https://DanGriffey.houserepublicans.wa.gov/"
+  },
+  "bio": "Dan Griffey serves as State Representative for Washington House of Representatives District 35. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "WA",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://DanGriffey.houserepublicans.wa.gov/"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/wa/legislature/Dan-Griffey-6a94e7b0-0c19-4377-ac1d-468d2bd3e892.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://app.leg.wa.gov/ContentParts/MemberDirectory/?a=House"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Dan_Griffey"
+    },
+    {
+      "title": "Public source",
+      "url": "https://dangriffey.houserepublicans.wa.gov"
+    },
+    {
+      "title": "Public source",
+      "url": "https://dangriffey.houserepublicans.wa.gov/"
+    },
+    {
+      "title": "Public source",
+      "url": "https://dangriffey.houserepublicans.wa.gov/about"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Dan_Griffey"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/126394/dan-griffey"
+    },
+    {
+      "title": "Public source",
+      "url": "https://leg.wa.gov/legislators/member/dan-griffey"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

@@ -1,0 +1,64 @@
+{
+  "id": "ontario-tillman",
+  "name": "Ontario Tillman",
+  "firstName": "Ontario",
+  "lastName": "Tillman",
+  "photo": "/images/officials/state-legislature/al/ontario-tillman.jpg",
+  "photoSourceUrl": "https://www.legislature.state.al.us/pdf/house/members/Tillman_56.png",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-56",
+  "jurisdiction": "Alabama House of Representatives",
+  "county": [
+    "Alabama"
+  ],
+  "termStart": "2022-11-09",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 540-D, 11 S. Union St., Montgomery, AL 36130",
+    "phone": "334-261-0529",
+    "email": "ojtillman@gmail.com",
+    "website": "https://alison.legislature.state.al.us/house-leaders-members"
+  },
+  "bio": "Ontario Tillman serves as State Representative for Alabama House of Representatives District 56. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "AL",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://alison.legislature.state.al.us/house-leaders-members"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/al/legislature/Ontario-Tillman-a86c6f40-304e-49fd-a312-3aa30660fcdf.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://www.legislature.state.al.us/pdf/house/members/Tillman_56.png"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Ontario_Tillman"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Ontario_Tillman"
+    },
+    {
+      "title": "graphql endpoint for member information",
+      "url": "https://gql.api.alison.legislature.state.al.us/graphql"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/201897/ontario-tillman"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/ontario-tillman-b8517a41"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

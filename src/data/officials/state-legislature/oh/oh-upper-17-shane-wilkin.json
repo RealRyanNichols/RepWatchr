@@ -1,0 +1,57 @@
+{
+  "id": "shane-wilkin",
+  "name": "Shane Wilkin",
+  "firstName": "Shane",
+  "lastName": "Wilkin",
+  "party": "R",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-17",
+  "jurisdiction": "Ohio Senate",
+  "county": [
+    "Ohio"
+  ],
+  "termStart": "2023-01-01",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 221, Statehouse, 1 Capitol Square Second Floor, Columbus, OH 43215",
+    "phone": "614-466-8156",
+    "email": "sd17@ohiosenate.gov",
+    "website": "https://ohiohouse.gov/shane-wilkin"
+  },
+  "bio": "Shane Wilkin serves as State Senator for Ohio Senate District 17. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "OH",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://ohiohouse.gov/shane-wilkin"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/oh/legislature/Shane-Wilkin-bb1ae016-cdfe-48aa-8bc5-9e3636e430f3.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Shane_Wilkin"
+    },
+    {
+      "title": "member details page",
+      "url": "https://ohiosenate.gov/members/shane-wilkin"
+    },
+    {
+      "title": "member list page",
+      "url": "https://www.legislature.ohio.gov/legislators/senate-directory"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/shane-wilkin-32947920"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.ohiohouse.gov/members/member-directory"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

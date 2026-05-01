@@ -1,0 +1,64 @@
+{
+  "id": "todd-beard",
+  "name": "Todd Beard",
+  "firstName": "Todd",
+  "lastName": "Beard",
+  "photo": "/images/officials/state-legislature/nd/todd-beard.jpg",
+  "photoSourceUrl": "https://www.ndlegis.gov/sites/default/files/styles/member_list_photo/public/person/photo/tbeard2023.jpg?itok=tC5PWQQL",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-23",
+  "jurisdiction": "North Dakota Senate",
+  "county": [
+    "North Dakota"
+  ],
+  "termStart": "2022-12-01",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "State Capitol 600 E. Boulevard Ave., Bismarck, ND 58505",
+    "phone": "701-328-3373",
+    "email": "tbeard@ndlegis.gov",
+    "website": "https://ndlegis.gov/biography/todd-beard"
+  },
+  "bio": "Todd Beard serves as State Senator for North Dakota Senate District 23. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "ND",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://ndlegis.gov/biography/todd-beard"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/nd/legislature/Todd-Beard-f01e3e40-01d3-4290-a85b-760683d4292e.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://www.ndlegis.gov/sites/default/files/styles/member_list_photo/public/person/photo/tbeard2023.jpg?itok=tC5PWQQL"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Todd_Beard"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Todd_Beard"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/todd-beard-04053411b"
+    },
+    {
+      "title": "members list page",
+      "url": "https://www.ndlegis.gov/assembly/68-2023/regular/members"
+    },
+    {
+      "title": "member details page",
+      "url": "https://www.ndlegis.gov/biography/todd-beard"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

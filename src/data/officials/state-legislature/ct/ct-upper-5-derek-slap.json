@@ -1,0 +1,69 @@
+{
+  "id": "derek-slap",
+  "name": "Derek Slap",
+  "firstName": "Derek",
+  "lastName": "Slap",
+  "party": "D",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-5",
+  "jurisdiction": "Connecticut Senate",
+  "county": [
+    "Connecticut"
+  ],
+  "termStart": "2019-03-01",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 1800, Legislative Office Building 300 Capitol Ave., Hartford, CT 06106",
+    "phone": "860-240-1436",
+    "email": "derek.slap@cga.ct.gov",
+    "website": "https://cga.ct.gov/asp/CGABillStatus/CGAMemberBills.asp?dist_code=%27S05%27&dist_name=Slap,%20Derek"
+  },
+  "bio": "Derek Slap serves as State Senator for Connecticut Senate District 5. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "CT",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://cga.ct.gov/asp/CGABillStatus/CGAMemberBills.asp?dist_code=%27S05%27&dist_name=Slap,%20Derek"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ct/legislature/Derek-Slap-a33a2113-e60b-4000-9dc7-eb58a775d986.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "ftp://ftp.cga.ct.gov/pub/data/LegislatorDatabase.csv"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Derek_Slap"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Derek_Slap"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/172159/derek-slap"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/derek-slap-9337b9a"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.senatedems.ct.gov/senator/derek-slap"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.senatedems.ct.gov/senator/derek-slap/bio"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.senatedems.ct.gov/slap"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

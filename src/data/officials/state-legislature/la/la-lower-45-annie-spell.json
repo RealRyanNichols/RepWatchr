@@ -1,0 +1,49 @@
+{
+  "id": "annie-spell",
+  "name": "Annie Spell",
+  "firstName": "Annie",
+  "lastName": "Spell",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-45",
+  "jurisdiction": "Louisiana House of Representatives",
+  "county": [
+    "Louisiana"
+  ],
+  "termStart": "2025-04-14",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "P.O. Box 94062 900 N. 3rd St., Baton Rouge, LA 70804",
+    "phone": "225-342-6945",
+    "email": "hse045@legis.la.gov",
+    "website": "https://house.louisiana.gov/H_Reps/members?ID=45"
+  },
+  "bio": "Annie Spell serves as State Representative for Louisiana House of Representatives District 45. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "LA",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://house.louisiana.gov/H_Reps/members?ID=45"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/la/legislature/Annie-Spell-a6a9544c-d12b-44cc-a52d-f2ec0e01f556.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Annie_Spell"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Annie_Spell"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/221862/annie-spell"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

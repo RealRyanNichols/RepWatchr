@@ -1,0 +1,61 @@
+{
+  "id": "clay-staires",
+  "name": "Clay Staires",
+  "firstName": "Clay",
+  "lastName": "Staires",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-66",
+  "jurisdiction": "Oklahoma House of Representatives",
+  "county": [
+    "Oklahoma"
+  ],
+  "termStart": "2022-11-23",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 347, 2300 N. Lincoln Blvd., Oklahoma City, OK 73105",
+    "phone": "405-557-7390",
+    "email": "clay.staires@okhouse.gov",
+    "website": "https://www.okhouse.gov/Members/Contact.aspx?District=66"
+  },
+  "bio": "Clay Staires serves as State Representative for Oklahoma House of Representatives District 66. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "OK",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.okhouse.gov/Members/Contact.aspx?District=66"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ok/legislature/Clay-Staires-82e04ad9-64c8-4439-9853-cbc3e273d637.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Clay_Staires"
+    },
+    {
+      "title": "Public source",
+      "url": "https://claystaires.com"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Clay_Staires"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/206402/clay-staires"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/clay-staires-33511241"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.okhouse.gov/representatives/clay-staires"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

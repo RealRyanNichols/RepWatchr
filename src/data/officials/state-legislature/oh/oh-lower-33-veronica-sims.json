@@ -1,0 +1,60 @@
+{
+  "id": "veronica-sims",
+  "name": "Veronica Sims",
+  "firstName": "Veronica",
+  "lastName": "Sims",
+  "photo": "/images/officials/state-legislature/oh/veronica-sims.jpg",
+  "photoSourceUrl": "https://s3.amazonaws.com/ballotpedia-api4/files/thumbs/200/300/Veronica_Sims.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-33",
+  "jurisdiction": "Ohio House of Representatives",
+  "county": [
+    "Ohio"
+  ],
+  "termStart": "2024-02-07",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "77 S. High St. 10th Floor, Columbus, OH 43215",
+    "phone": "614-644-6037",
+    "email": "rep33@ohiohouse.gov",
+    "website": "https://ohiohouse.gov/members/veronica-r-sims"
+  },
+  "bio": "Veronica Sims serves as State Representative for Ohio House of Representatives District 33. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "OH",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://ohiohouse.gov/members/veronica-r-sims"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/oh/legislature/Veronica-Sims-8b367fce-9be2-4848-837a-a475c3d531e4.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://s3.amazonaws.com/ballotpedia-api4/files/thumbs/200/300/Veronica_Sims.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Veronica_Sims"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ohiohouse.gov/members/veronica-r-sims/biography"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ohiohouse.gov/members/veronica-sims"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/veronica-r-sims-b21b857"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

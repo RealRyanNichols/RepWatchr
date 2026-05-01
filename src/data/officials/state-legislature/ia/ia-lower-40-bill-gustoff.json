@@ -1,0 +1,68 @@
+{
+  "id": "bill-gustoff",
+  "name": "Bill Gustoff",
+  "firstName": "Bill",
+  "lastName": "Gustoff",
+  "photo": "/images/officials/state-legislature/ia/bill-gustoff.jpg",
+  "photoSourceUrl": "https://www.legis.iowa.gov/photo?action=getPhoto&ga=91&pid=33978",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-40",
+  "jurisdiction": "Iowa House of Representatives",
+  "county": [
+    "Iowa"
+  ],
+  "termStart": "2023-01-01",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "State Capitol Building 1007 E. Grand Ave., Des Moines, IA 50319",
+    "phone": "515-281-3221",
+    "email": "bill.gustoff@legis.iowa.gov",
+    "website": "https://eepurl.com/h6jOxr"
+  },
+  "bio": "Bill Gustoff serves as State Representative for Iowa House of Representatives District 40. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "IA",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://eepurl.com/h6jOxr"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ia/legislature/Bill-Gustoff-7ebd4346-a560-458d-b010-3ddd82d1cf38.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://www.legis.iowa.gov/photo?action=getPhoto&ga=91&pid=33978"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Bill_Gustoff"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Bill_Gustoff"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.legis.iowa.gov/legislators/house"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.legis.iowa.gov/legislators/legislator?ga=90&personID=33978"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.legis.iowa.gov/legislators/legislator?personID=33978"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/gustoff"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

@@ -1,0 +1,65 @@
+{
+  "id": "james-buchanan",
+  "name": "James Buchanan",
+  "firstName": "James",
+  "lastName": "Buchanan",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-74",
+  "jurisdiction": "Florida House of Representatives",
+  "county": [
+    "Florida"
+  ],
+  "termStart": "2018-11-06",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 418, The Capitol 402 S. Monroe St., Tallahassee, FL 32399",
+    "phone": "850-717-5074",
+    "email": "james.buchanan@flhouse.gov",
+    "website": "https://myfloridahouse.gov/Sections/Representatives/details.aspx?MemberId=4731&LegislativeTermId=90"
+  },
+  "bio": "James Buchanan serves as State Representative for Florida House of Representatives District 74. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "FL",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://myfloridahouse.gov/Sections/Representatives/details.aspx?MemberId=4731&LegislativeTermId=90"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/fl/legislature/James-Buchanan-797767ca-fadc-49d9-a7a5-5722baf6557e.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/James_Buchanan_(Florida)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/James_Buchanan_(Florida_politician)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.flhouse.gov/Sections/Representatives/custom/details.aspx?MemberId=4731"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.myfloridahouse.gov/Representatives"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.myfloridahouse.gov/Sections/Representatives/details.aspx?MemberId=4731"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.myfloridahouse.gov/Sections/Representatives/details.aspx?MemberId=4731&LegislativeTermId=88"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.myfloridahouse.gov/Sections/Representatives/representatives.aspx"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

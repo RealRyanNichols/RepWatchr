@@ -1,0 +1,64 @@
+{
+  "id": "walt-blackman",
+  "name": "Walt Blackman",
+  "firstName": "Walt",
+  "lastName": "Blackman",
+  "photo": "/images/officials/state-legislature/az/walt-blackman.jpg",
+  "photoSourceUrl": "https://azleg.gov/alisImages/MemberPhotos/57leg/House/BLACKMAN.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-7",
+  "jurisdiction": "Arizona House of Representatives",
+  "county": [
+    "Arizona"
+  ],
+  "termStart": "2025-01-13",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 224, 1700 W. Washington St., Phoenix, AZ 85007",
+    "phone": "602-926-3244",
+    "email": "wblackman@azleg.gov",
+    "website": "https://www.azleg.gov/house-member/?legislature=57&session=129&legislator=2356"
+  },
+  "bio": "Walt Blackman serves as State Representative for Arizona House of Representatives District 7. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "AZ",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.azleg.gov/house-member/?legislature=57&session=129&legislator=2356"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/az/legislature/Walt-Blackman-d4068bfb-d487-4fde-b36e-7db0ac5cae38.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://azleg.gov/alisImages/MemberPhotos/57leg/House/BLACKMAN.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Walter_Blackman"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Walter_Blackman"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/184551/walt-blackman"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/rep-walt-blackman-b7076a2a4"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/walt-blackman-67a268119"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

@@ -1,0 +1,64 @@
+{
+  "id": "nasif-majeed",
+  "name": "Nasif Majeed",
+  "firstName": "Nasif",
+  "lastName": "Majeed",
+  "photo": "/images/officials/state-legislature/nc/nasif-majeed.jpg",
+  "photoSourceUrl": "https://www.ncleg.gov/Members/MemberImage/H/752/Low",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-99",
+  "jurisdiction": "North Carolina House of Representatives",
+  "county": [
+    "North Carolina"
+  ],
+  "termStart": "2019-01-01",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 1008, North Carolina Legislative Building 16 W. Jones St., Raleigh, NC 27601",
+    "phone": "919-733-5606",
+    "email": "nasif.majeed@ncleg.gov",
+    "website": "https://www.ncleg.gov/Members/Biography/H/752"
+  },
+  "bio": "Nasif Majeed serves as State Representative for North Carolina House of Representatives District 99. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "NC",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.ncleg.gov/Members/Biography/H/752"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/nc/legislature/Nasif-Majeed-6acc3963-2724-4d88-8762-f78df333be94.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://www.ncleg.gov/Members/MemberImage/H/752/Low"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Nasif_Majeed"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Nasif_Majeed"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/41645/nasif-majeed"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/nasif-majeed-0589a125"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.ncleg.gov/Members/MemberTable/H"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

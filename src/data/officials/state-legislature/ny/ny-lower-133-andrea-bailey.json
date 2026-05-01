@@ -1,0 +1,60 @@
+{
+  "id": "andrea-bailey",
+  "name": "Andrea Bailey",
+  "firstName": "Andrea",
+  "lastName": "Bailey",
+  "photo": "/images/officials/state-legislature/ny/andrea-bailey.jpg",
+  "photoSourceUrl": "https://s3.amazonaws.com/ballotpedia-api4/files/thumbs/200/300/AndreaBailey24.png",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "Assemblymember",
+  "district": "HD-133",
+  "jurisdiction": "New York State Assembly",
+  "county": [
+    "New York"
+  ],
+  "termStart": "2025-01-01",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 718, Legislative Office Building, Albany, NY 12248",
+    "phone": "518-455-5662",
+    "email": "baileya@nyassembly.gov",
+    "website": "https://nyassembly.gov/mem/Andrea-K-Bailey"
+  },
+  "bio": "Andrea Bailey serves as Assemblymember for New York State Assembly District 133. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "NY",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://nyassembly.gov/mem/Andrea-K-Bailey"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ny/legislature/Andrea-Bailey-b46dbcbc-500c-4d28-ac9b-cf2a7291e79f.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://s3.amazonaws.com/ballotpedia-api4/files/thumbs/200/300/AndreaBailey24.png"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Andrea_K._Bailey_(New_York)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Andrea_Bailey"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/216747/andrea-bailey"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/andrea-bailey-a0401429"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

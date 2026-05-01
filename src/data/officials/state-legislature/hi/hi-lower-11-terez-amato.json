@@ -1,0 +1,57 @@
+{
+  "id": "terez-amato",
+  "name": "Terez Amato",
+  "firstName": "Terez",
+  "lastName": "Amato",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-11",
+  "jurisdiction": "Hawaii House of Representatives",
+  "county": [
+    "Hawaii"
+  ],
+  "termStart": "2022-11-08",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "State Capitol Room 328, 415 S. Beretania St., Honolulu, HI 96813",
+    "phone": "808-586-8525",
+    "email": "repamato@capitol.hawaii.gov",
+    "website": "https://www.capitol.hawaii.gov/legislature/memberpage.aspx?member=250"
+  },
+  "bio": "Terez Amato serves as State Representative for Hawaii House of Representatives District 11. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "HI",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.capitol.hawaii.gov/legislature/memberpage.aspx?member=250"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/hi/legislature/Terez-Amato-3c16b940-790f-43f2-946d-998b6177dc5a.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Terez_Amato"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Terez_Amato"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.capitol.hawaii.gov/legislature/memberpage.aspx?member=250&year=2023"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.capitol.hawaii.gov/legislature/memberpage.aspx?member=250&year=2024"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.capitol.hawaii.gov/members/legislators.aspx"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

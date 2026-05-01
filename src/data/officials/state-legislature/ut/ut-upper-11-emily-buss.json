@@ -1,0 +1,49 @@
+{
+  "id": "emily-buss",
+  "name": "Emily Buss",
+  "firstName": "Emily",
+  "lastName": "Buss",
+  "party": "NP",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-11",
+  "jurisdiction": "Utah Senate",
+  "county": [
+    "Utah"
+  ],
+  "termStart": "2025-12-17",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "350 N. State St. Suite 320, Salt Lake City, UT 84114",
+    "phone": "801-538-1029",
+    "email": "ebuss@le.utah.gov",
+    "website": "https://senate.utah.gov/sen/BUSSEM/"
+  },
+  "bio": "Emily Buss serves as State Senator for Utah Senate District 11. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "UT",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://senate.utah.gov/sen/BUSSEM/"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ut/legislature/Emily-Buss-f5149921-03c9-4420-bb21-9b54c19e0c65.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Emily_Buss_(politician)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://senate.utah.gov/sen/BUSSEM"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/emilybu"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

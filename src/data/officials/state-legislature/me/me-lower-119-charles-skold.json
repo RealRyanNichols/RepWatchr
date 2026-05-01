@@ -1,0 +1,64 @@
+{
+  "id": "charles-skold",
+  "name": "Charles Skold",
+  "firstName": "Charles",
+  "lastName": "Skold",
+  "photo": "/images/officials/state-legislature/me/charles-skold.jpg",
+  "photoSourceUrl": "https://legislature.maine.gov/house/house/Repository/MemberProfiles/f62e4eee-633b-458e-9410-219176bec3a2_CSKOLD.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-119",
+  "jurisdiction": "Maine House of Representatives",
+  "county": [
+    "Maine"
+  ],
+  "termStart": "2022-12-07",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 333, House Democratic Office 2 State House Station, Augusta, ME 04333",
+    "phone": "800-423-2900",
+    "email": "charles.skold@legislature.maine.gov",
+    "website": "https://legislature.maine.gov/house/house/MemberProfiles/Details/1475"
+  },
+  "bio": "Charles Skold serves as State Representative for Maine House of Representatives District 119. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "ME",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://legislature.maine.gov/house/house/MemberProfiles/Details/1475"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/me/legislature/Charles-A-Skold-d87034c7-fd93-4ba1-a61b-f4ea810506c9.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://legislature.maine.gov/house/house/Repository/MemberProfiles/f62e4eee-633b-458e-9410-219176bec3a2_CSKOLD.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Charles_Skold"
+    },
+    {
+      "title": "Public source",
+      "url": "https://legislature.maine.gov/house/house/MemberProfiles/ListAlpha"
+    },
+    {
+      "title": "Public source",
+      "url": "https://legislature.maine.gov/housedems/skold/index.html"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/charlesskold"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.maine.gov/housedems/skold"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

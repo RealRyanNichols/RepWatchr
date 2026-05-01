@@ -1,0 +1,68 @@
+{
+  "id": "chris-taylor",
+  "name": "Chris Taylor",
+  "firstName": "Chris",
+  "lastName": "Taylor",
+  "photo": "/images/officials/state-legislature/vt/chris-taylor.jpg",
+  "photoSourceUrl": "https://3.files.edl.io/f264/22/08/30/162354-6ed2c7ed-c20a-4c29-a9b7-5c9e39e327f9.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-Chittenden-Franklin",
+  "jurisdiction": "Vermont House of Representatives",
+  "county": [
+    "Vermont"
+  ],
+  "termStart": "2023-01-04",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Vermont State House 115 State St., Montpelier, VT 05633",
+    "phone": "802-828-2228",
+    "email": "cataylor@leg.state.vt.us",
+    "website": "https://legislature.vermont.gov/Documents/SmallMaps/2022/House/Chittenden-Franklin.pdf"
+  },
+  "bio": "Chris Taylor serves as State Representative for Vermont House of Representatives District Chittenden-Franklin. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "VT",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://legislature.vermont.gov/Documents/SmallMaps/2022/House/Chittenden-Franklin.pdf"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/vt/legislature/Chris-Taylor-8a7c0a35-c3bc-4b94-a1c3-c726c8ecaaae.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://3.files.edl.io/f264/22/08/30/162354-6ed2c7ed-c20a-4c29-a9b7-5c9e39e327f9.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Chris_Taylor_(Vermont)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Chris_Taylor_(Vermont_politician)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://legislature.vermont.gov/people/loadAll/2024"
+    },
+    {
+      "title": "Public source",
+      "url": "https://legislature.vermont.gov/people/single/2024/37400"
+    },
+    {
+      "title": "Public source",
+      "url": "https://legislature.vermont.gov/people/single/2026/37400"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/christopher-taylor-1509ab84"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

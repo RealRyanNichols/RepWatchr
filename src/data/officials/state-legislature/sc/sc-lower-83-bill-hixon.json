@@ -1,0 +1,69 @@
+{
+  "id": "bill-hixon",
+  "name": "Bill Hixon",
+  "firstName": "Bill",
+  "lastName": "Hixon",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-83",
+  "jurisdiction": "South Carolina House of Representatives",
+  "county": [
+    "South Carolina"
+  ],
+  "termStart": "",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 411, Blatt Building P.O. Box 11867, Columbia, SC 29201",
+    "phone": "803-734-3022",
+    "email": "billhixon@schouse.gov",
+    "website": "https://billhixon.com/"
+  },
+  "bio": "Bill Hixon serves as State Representative for South Carolina House of Representatives District 83. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "SC",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://billhixon.com/"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/sc/legislature/William-M-Bill-Hixon-d1f25d1c-bd0e-4d0d-be0e-f8f3edad8a3d.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Bill_Hixon"
+    },
+    {
+      "title": "Public source",
+      "url": "https://billhixon.com"
+    },
+    {
+      "title": "Public source",
+      "url": "https://billhixon.com/about"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Bill_Hixon"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/121738/bill-hixon"
+    },
+    {
+      "title": "Public source",
+      "url": "https://scstatehouse.gov/member.php?chamber=H"
+    },
+    {
+      "title": "Public source",
+      "url": "https://scstatehouse.gov/member.php?code=0849715808"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.billhixon.com"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

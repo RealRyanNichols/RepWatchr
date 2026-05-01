@@ -1,0 +1,60 @@
+{
+  "id": "heather-baxter",
+  "name": "Heather Baxter",
+  "firstName": "Heather",
+  "lastName": "Baxter",
+  "photo": "/images/officials/state-legislature/sd/heather-baxter.jpg",
+  "photoSourceUrl": "https://substackcdn.com/image/fetch/w_1200,h_600,c_fill,f_jpg,q_auto:good,fl_progressive:steep,g_auto/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F110b1f43-2918-4e73-928e-0b9834191446_750x517.webp",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-34",
+  "jurisdiction": "South Dakota House of Representatives",
+  "county": [
+    "South Dakota"
+  ],
+  "termStart": "2025-01-14",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Capitol Building 500 E. Capitol Ave., Pierre, SD 57501",
+    "phone": "605-773-3851",
+    "email": "heather.baxter@sdlegislature.gov",
+    "website": "https://sdlegislature.gov/Legislators/Profile/4721/Detail"
+  },
+  "bio": "Heather Baxter serves as State Representative for South Dakota House of Representatives District 34. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "SD",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://sdlegislature.gov/Legislators/Profile/4721/Detail"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/sd/legislature/Heather-Baxter-229c5337-951c-41d2-9e76-dc74878bcf89.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://substackcdn.com/image/fetch/w_1200,h_600,c_fill,f_jpg,q_auto:good,fl_progressive:steep,g_auto/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F110b1f43-2918-4e73-928e-0b9834191446_750x517.webp"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Heather_Baxter"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Heather_Baxter"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/216122/heather-baxter"
+    },
+    {
+      "title": "Public source",
+      "url": "https://sdlegislature.gov/Legislators/Profile/4737/Detail"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

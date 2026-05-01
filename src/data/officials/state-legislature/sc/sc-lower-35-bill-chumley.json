@@ -1,0 +1,65 @@
+{
+  "id": "bill-chumley",
+  "name": "Bill Chumley",
+  "firstName": "Bill",
+  "lastName": "Chumley",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-35",
+  "jurisdiction": "South Carolina House of Representatives",
+  "county": [
+    "South Carolina"
+  ],
+  "termStart": "",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 326A, Blatt Building P.O. Box 11867, Columbia, SC 29201",
+    "phone": "803-212-6894",
+    "email": "billchumley@schouse.gov",
+    "website": "https://scstatehouse.gov/member.php?code=0351704504"
+  },
+  "bio": "Bill Chumley serves as State Representative for South Carolina House of Representatives District 35. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "SC",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://scstatehouse.gov/member.php?code=0351704504"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/sc/legislature/William-M-Bill-Chumley-20240c0c-69e5-445f-b8ca-d33dd377e086.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Bill_Chumley"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Bill_Chumley"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/48119/bill-chumley"
+    },
+    {
+      "title": "Public source",
+      "url": "https://scstatehouse.gov/member.php?chamber=H"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/bill-chumley-511151bb"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.scstatehouse.gov/member.php?chamber=H"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.scstatehouse.gov/member.php?code=0351704504"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

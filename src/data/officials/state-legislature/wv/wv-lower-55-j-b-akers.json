@@ -1,0 +1,64 @@
+{
+  "id": "j-b-akers",
+  "name": "J.B. Akers",
+  "firstName": "J.B.",
+  "lastName": "Akers",
+  "photo": "/images/officials/state-legislature/wv/j-b-akers.jpg",
+  "photoSourceUrl": "https://www.wvlegislature.gov/images/members/2024/house/akers_james.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "Delegate",
+  "district": "HD-55",
+  "jurisdiction": "West Virginia House of Delegates",
+  "county": [
+    "West Virginia"
+  ],
+  "termStart": "2024-01-09",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "State Capitol Room 418M, Complex, Building 1 1900 Kanawha Blvd. East, Charleston, WV 25305",
+    "phone": "304-340-3340",
+    "email": "jb.akers@wvhouse.gov",
+    "website": "https://www.wvlegislature.gov/house/lawmaker.cfm?member=Delegate%20Akers"
+  },
+  "bio": "J.B. Akers serves as Delegate for West Virginia House of Delegates District 55. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "WV",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.wvlegislature.gov/house/lawmaker.cfm?member=Delegate%20Akers"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/wv/legislature/JB-Akers-33e56ab1-3106-45fa-a992-fab181983a99.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://www.wvlegislature.gov/images/members/2024/house/akers_james.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/JB_Akers"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/JB_Akers"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/214509/jb-akers"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.akerslawoffices.com/attorney-profile/jb-akers"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/jbakers"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

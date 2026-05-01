@@ -1,0 +1,68 @@
+{
+  "id": "gene-yaw",
+  "name": "Gene Yaw",
+  "firstName": "Gene",
+  "lastName": "Yaw",
+  "party": "R",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-23",
+  "jurisdiction": "Pennsylvania Senate",
+  "county": [
+    "Pennsylvania"
+  ],
+  "termStart": "2009-01-06",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 362, Main Capitol Senate Box 203023, Harrisburg, PA 17120",
+    "phone": "717-787-3280",
+    "email": "gyaw@pasen.gov",
+    "website": "https://www.legis.state.pa.us/cfdocs/legis/home/member_information/Senate_bio.cfm?id=1186",
+    "socialMedia": {
+      "x": "https://x.com/SenatorGeneYaw",
+      "twitter": "https://x.com/SenatorGeneYaw",
+      "facebook": "https://facebook.com/SenatorGeneYaw",
+      "youtube": "https://youtube.com/UCfLs1ZD65qG1wGNc7xB9PBg",
+      "instagram": "https://instagram.com/senatoryaw"
+    }
+  },
+  "bio": "Gene Yaw serves as State Senator for Pennsylvania Senate District 23. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "PA",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.legis.state.pa.us/cfdocs/legis/home/member_information/Senate_bio.cfm?id=1186"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/pa/legislature/Gene-Yaw-18127660-d04e-43c2-b931-084f0c87142c.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Gene_Yaw"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Eugene_Yaw"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.legis.state.pa.us/cfdocs/legis/home/member_information/mbrList.cfm?body=S&sort=alpha"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.legis.state.pa.us/cfdocs/legis/home/member_information/senators_alpha.cfm"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.palegis.us/senate/members/bio/1186/sen-yaw"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.senatorgeneyaw.com"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

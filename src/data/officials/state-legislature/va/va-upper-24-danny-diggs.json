@@ -1,0 +1,72 @@
+{
+  "id": "danny-diggs",
+  "name": "Danny Diggs",
+  "firstName": "Danny",
+  "lastName": "Diggs",
+  "photo": "/images/officials/state-legislature/va/danny-diggs.jpg",
+  "photoSourceUrl": "https://s3.amazonaws.com/ballotpedia-api4/files/thumbs/200/300/DiggsDanny.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-24",
+  "jurisdiction": "Virginia Senate",
+  "county": [
+    "Virginia"
+  ],
+  "termStart": "2024-01-10",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 503, General Assembly Building P.O. Box 396, Richmond, VA 23218",
+    "phone": "804-698-7524",
+    "email": "senatordiggs@senate.virginia.gov",
+    "website": "https://apps.senate.virginia.gov/Senator/memberpage.php?id=S119"
+  },
+  "bio": "Danny Diggs serves as State Senator for Virginia Senate District 24. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "VA",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://apps.senate.virginia.gov/Senator/memberpage.php?id=S119"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/va/legislature/JD-Danny-Diggs-ebdc449e-b987-4c44-895b-5047e343c0a0.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://s3.amazonaws.com/ballotpedia-api4/files/thumbs/200/300/DiggsDanny.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/J.D._Diggs"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Danny_Diggs"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/212144/danny-diggs"
+    },
+    {
+      "title": "Public source",
+      "url": "https://lis.virginia.gov/cgi-bin/legp604.exe?241+mbr+S119"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.diggsforsenate.com/about"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.diggsforsenate.com/about-1"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/j-d-danny-diggs-30203717"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

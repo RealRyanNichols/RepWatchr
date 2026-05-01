@@ -1,0 +1,72 @@
+{
+  "id": "kevin-hensley",
+  "name": "Kevin Hensley",
+  "firstName": "Kevin",
+  "lastName": "Hensley",
+  "photo": "/images/officials/state-legislature/de/kevin-hensley.jpg",
+  "photoSourceUrl": "https://housegop.delaware.gov/wp-content/blogs.dir/207/files/sites/207/2022/08/hensley-headshot-cropped-jan-231.jpeg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-9",
+  "jurisdiction": "Delaware House of Representatives",
+  "county": [
+    "Delaware"
+  ],
+  "termStart": "2015-01-13",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "P.O. Box 1401 411 Legislative Ave., Dover, DE 19901",
+    "phone": "302-744-4171",
+    "email": "kevin.hensley@delaware.gov",
+    "website": "https://housegop.delaware.gov/members/house-district-9/"
+  },
+  "bio": "Kevin Hensley serves as State Representative for Delaware House of Representatives District 9. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "DE",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://housegop.delaware.gov/members/house-district-9/"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/de/legislature/Kevin-S-Hensley-d1020a85-27a1-4458-9ae2-90b09367be2c.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://housegop.delaware.gov/wp-content/blogs.dir/207/files/sites/207/2022/08/hensley-headshot-cropped-jan-231.jpeg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Kevin_S._Hensley"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Kevin_Hensley_(politician)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://housegop.delaware.gov/members/house-district-9"
+    },
+    {
+      "title": "Public source",
+      "url": "https://legis.delaware.gov/AssemblyMember/150/Hensley"
+    },
+    {
+      "title": "legislator list page",
+      "url": "https://legis.delaware.gov/House"
+    },
+    {
+      "title": "Public source",
+      "url": "https://legis.delaware.gov/json/House/GetRepresentatives"
+    },
+    {
+      "title": "Public source",
+      "url": "https://legis.delaware.gov/LegislatorDetail?personId=193"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

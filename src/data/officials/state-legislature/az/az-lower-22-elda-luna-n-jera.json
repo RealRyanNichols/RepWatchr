@@ -1,0 +1,56 @@
+{
+  "id": "elda-luna-n-jera",
+  "name": "Elda Luna-N\u00e1jera",
+  "firstName": "Elda",
+  "lastName": "Luna-N\u00e1jera",
+  "photo": "/images/officials/state-legislature/az/elda-luna-n-jera.jpg",
+  "photoSourceUrl": "https://s3.amazonaws.com/ballotpedia-api4/files/thumbs/200/300/EldaLunaNajera2024.JPG",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-22",
+  "jurisdiction": "Arizona House of Representatives",
+  "county": [
+    "Arizona"
+  ],
+  "termStart": "2024-03-01",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 332, 1700 W. Washington St., Phoenix, AZ 85007",
+    "phone": "602-926-3881",
+    "email": "eluna-najera@azleg.gov",
+    "website": "https://www.azleg.gov/house-member/?legislature=56&session=127&legislator=2281"
+  },
+  "bio": "Elda Luna-N\u00e1jera serves as State Representative for Arizona House of Representatives District 22. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "AZ",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.azleg.gov/house-member/?legislature=56&session=127&legislator=2281"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/az/legislature/Elda-Luna-Njera-93db82ca-c8b1-43e4-98ce-ba52f4d0f635.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://s3.amazonaws.com/ballotpedia-api4/files/thumbs/200/300/EldaLunaNajera2024.JPG"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Elda_Luna-N%C3%A1jera"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Elda_Luna-N%C3%A1jera"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.azleg.gov/house-member/?legislature=57&session=129&legislator=2349"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

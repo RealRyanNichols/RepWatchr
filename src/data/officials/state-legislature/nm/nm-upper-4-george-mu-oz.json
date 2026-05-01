@@ -1,0 +1,65 @@
+{
+  "id": "george-mu-oz",
+  "name": "George Mu\u00f1oz",
+  "firstName": "George",
+  "lastName": "Mu\u00f1oz",
+  "photo": "/images/officials/state-legislature/nm/george-mu-oz.jpg",
+  "photoSourceUrl": "https://www.nmlegis.gov/Images/Legislators/Senate/SMUNO.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-4",
+  "jurisdiction": "New Mexico Senate",
+  "county": [
+    "New Mexico"
+  ],
+  "termStart": "2009-01-20",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "State Capitol Room 325B, New Mexico  490 Old Santa Fe Trail, Santa Fe, NM 87501",
+    "phone": "505-986-4371",
+    "email": "george.munoz@nmlegis.gov",
+    "website": "https://www.nmlegis.gov/Members/Legislator?SponCode=SMUNO",
+    "socialMedia": {
+      "x": "https://x.com/munozfornm",
+      "twitter": "https://x.com/munozfornm",
+      "facebook": "https://facebook.com/nmsenatormunoz"
+    }
+  },
+  "bio": "George Mu\u00f1oz serves as State Senator for New Mexico Senate District 4. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "NM",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.nmlegis.gov/Members/Legislator?SponCode=SMUNO"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/nm/legislature/George-K-Munoz-b4c20aea-b56c-4a19-a89a-788c53d995d7.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://www.nmlegis.gov/Images/Legislators/Senate/SMUNO.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/George_Munoz"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/George_Mu%C3%B1oz_(politician)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/103938/george-munoz"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.nmlegis.gov/Members/Legislator_List?T=S"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

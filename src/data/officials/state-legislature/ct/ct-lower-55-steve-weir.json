@@ -1,0 +1,61 @@
+{
+  "id": "steve-weir",
+  "name": "Steve Weir",
+  "firstName": "Steve",
+  "lastName": "Weir",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-55",
+  "jurisdiction": "Connecticut House of Representatives",
+  "county": [
+    "Connecticut"
+  ],
+  "termStart": "2023-01-04",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 4200, Legislative Office Building 300 Capitol Ave., Hartford, CT 06106",
+    "phone": "860-240-8700",
+    "email": "steve.weir@housegop.ct.gov",
+    "website": "https://www.cthousegop.com/Weir/"
+  },
+  "bio": "Steve Weir serves as State Representative for Connecticut House of Representatives District 55. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "CT",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.cthousegop.com/Weir/"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ct/legislature/Steve-Weir-755c489b-dcb4-4037-8df7-d9e62006e844.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "ftp://ftp.cga.ct.gov/pub/data/LegislatorDatabase.csv"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Steve_Weir"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Steve_Weir"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/193703/steve-weir"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.cthousegop.com/Weir"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/steve-weir-26613a12"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

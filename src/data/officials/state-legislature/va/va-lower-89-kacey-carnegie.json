@@ -1,0 +1,56 @@
+{
+  "id": "kacey-carnegie",
+  "name": "Kacey Carnegie",
+  "firstName": "Kacey",
+  "lastName": "Carnegie",
+  "photo": "/images/officials/state-legislature/va/kacey-carnegie.jpg",
+  "photoSourceUrl": "https://house.vga.virginia.gov/delegate_photos/H0387.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "Delegate",
+  "district": "HD-89",
+  "jurisdiction": "Virginia House of Delegates",
+  "county": [
+    "Virginia"
+  ],
+  "termStart": "2026-01-14",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 902, General Assembly Building 201 N. 9th St., Richmond, VA 23219",
+    "phone": "804-698-1089",
+    "email": "delkcarnegie@house.virginia.gov",
+    "website": "https://house.vga.virginia.gov/members/H0387"
+  },
+  "bio": "Kacey Carnegie serves as Delegate for Virginia House of Delegates District 89. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "VA",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://house.vga.virginia.gov/members/H0387"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/va/legislature/Kacey-Carnegie-aeba499e-3396-4787-bd81-e9b16a8898f7.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://house.vga.virginia.gov/delegate_photos/H0387.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Karen_Robins_Carnegie"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Kacey_Carnegie"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/kacey-carnegie-50aa8185"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

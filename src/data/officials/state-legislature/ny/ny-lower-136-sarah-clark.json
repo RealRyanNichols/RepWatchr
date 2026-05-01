@@ -1,0 +1,68 @@
+{
+  "id": "sarah-clark",
+  "name": "Sarah Clark",
+  "firstName": "Sarah",
+  "lastName": "Clark",
+  "photo": "/images/officials/state-legislature/ny/sarah-clark.jpg",
+  "photoSourceUrl": "https://assembly.state.ny.us/write/upload/member_files/136/headshot/136.jpg?hst=1660074877",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "Assemblymember",
+  "district": "HD-136",
+  "jurisdiction": "New York State Assembly",
+  "county": [
+    "New York"
+  ],
+  "termStart": "2020-11-12",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 746, Legislative Office Building, Albany, NY 12248",
+    "phone": "518-455-5373",
+    "email": "clarks@nyassembly.gov",
+    "website": "https://assembly.state.ny.us/mem/Sarah-Clark"
+  },
+  "bio": "Sarah Clark serves as Assemblymember for New York State Assembly District 136. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "NY",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://assembly.state.ny.us/mem/Sarah-Clark"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ny/legislature/Sarah-Clark-fbb1dc03-2c64-431f-9aeb-6ee54c1c8ac6.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://assembly.state.ny.us/write/upload/member_files/136/headshot/136.jpg?hst=1660074877"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Sarah_Clark_(New_York)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Sarah_Clark_(politician)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/192290/sarah-clark"
+    },
+    {
+      "title": "Public source",
+      "url": "https://nyassembly.gov/mem/Sarah-Clark"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/sarah-clark-26688610"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/sarah-hart-clark-a0347511"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

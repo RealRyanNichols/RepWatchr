@@ -1,0 +1,52 @@
+{
+  "id": "aaron-marquez",
+  "name": "Aaron Marquez",
+  "firstName": "Aaron",
+  "lastName": "Marquez",
+  "photo": "/images/officials/state-legislature/az/aaron-marquez.jpg",
+  "photoSourceUrl": "https://cmsv2-assets.apptegy.net/uploads/23522/file/3233138/f4ffcd47-cd48-4c93-a121-db3084965d55.jpeg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-5",
+  "jurisdiction": "Arizona House of Representatives",
+  "county": [
+    "Arizona"
+  ],
+  "termStart": "2025-01-13",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 123, 1700 W. Washington St., Phoenix, AZ 85007",
+    "phone": "602-926-3179",
+    "email": "amarquez@azleg.gov",
+    "website": "https://www.azleg.gov/house-member/?legislature=57&session=129&legislator=2355"
+  },
+  "bio": "Aaron Marquez serves as State Representative for Arizona House of Representatives District 5. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "AZ",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.azleg.gov/house-member/?legislature=57&session=129&legislator=2355"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/az/legislature/Aaron-Marquez-c6a181c7-b58e-4c2a-aa2d-9ca31fc6548f.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://cmsv2-assets.apptegy.net/uploads/23522/file/3233138/f4ffcd47-cd48-4c93-a121-db3084965d55.jpeg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Aaron_Marquez"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/aaronmarquez"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

@@ -1,0 +1,60 @@
+{
+  "id": "jonathan-wilk",
+  "name": "Jonathan Wilk",
+  "firstName": "Jonathan",
+  "lastName": "Wilk",
+  "photo": "/images/officials/state-legislature/ok/jonathan-wilk.jpg",
+  "photoSourceUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQcSK-0G7vutoYpyD-I4rn3EZVvTgV8ij17A&s",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-20",
+  "jurisdiction": "Oklahoma House of Representatives",
+  "county": [
+    "Oklahoma"
+  ],
+  "termStart": "2024-11-20",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 546, 2300 N. Lincoln Blvd., Oklahoma City, OK 73105",
+    "phone": "405-557-7308",
+    "email": "jonathan.wilk@okhouse.gov",
+    "website": "https://www.okhouse.gov/representatives/jonathan-wilk"
+  },
+  "bio": "Jonathan Wilk serves as State Representative for Oklahoma House of Representatives District 20. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "OK",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.okhouse.gov/representatives/jonathan-wilk"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ok/legislature/Jonathan-Wilk-d8c6a83e-cdac-439d-af83-d90d9f543541.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQcSK-0G7vutoYpyD-I4rn3EZVvTgV8ij17A&s"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Jonathan_Wilk"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Jonathan_Wilk"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/216470/jonathan-wilk"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/jonathan-wilk-53305b102"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

@@ -1,0 +1,49 @@
+{
+  "id": "william-folden",
+  "name": "William Folden",
+  "firstName": "William",
+  "lastName": "Folden",
+  "party": "R",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-4",
+  "jurisdiction": "Maryland Senate",
+  "county": [
+    "Maryland"
+  ],
+  "termStart": "2023-01-11",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 414, James Senate Office Building 11 Bladen St., Annapolis, MD 21401",
+    "phone": "410-841-3704",
+    "email": "william.folden@senate.maryland.gov",
+    "website": "https://mgaleg.maryland.gov/mgawebsite/Members/Details/folden02"
+  },
+  "bio": "William Folden serves as State Senator for Maryland Senate District 4. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "MD",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://mgaleg.maryland.gov/mgawebsite/Members/Details/folden02"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/md/legislature/William-G-Folden-d8938e62-87cd-420e-a009-f78a418ed138.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/William_%22Bill%22_Folden"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/William_Folden"
+    },
+    {
+      "title": "Public source",
+      "url": "https://mgaleg.maryland.gov/webmga/frmMain.aspx?pid=sponpage&tab=subject6&id=folden01&stab=01"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

@@ -1,0 +1,57 @@
+{
+  "id": "john-kissel",
+  "name": "John Kissel",
+  "firstName": "John",
+  "lastName": "Kissel",
+  "party": "R",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-7",
+  "jurisdiction": "Connecticut Senate",
+  "county": [
+    "Connecticut"
+  ],
+  "termStart": "1993-01-06",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 2503, Legislative Office Building 300 Capitol Ave., Hartford, CT 06106",
+    "phone": "860-240-8800",
+    "email": "john.a.kissel@cga.ct.gov",
+    "website": "https://cga.ct.gov/asp/CGABillStatus/CGAMemberBills.asp?dist_code=%27S07%27&dist_name=Kissel,%20John%20A."
+  },
+  "bio": "John Kissel serves as State Senator for Connecticut Senate District 7. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "CT",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://cga.ct.gov/asp/CGABillStatus/CGAMemberBills.asp?dist_code=%27S07%27&dist_name=Kissel,%20John%20A."
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ct/legislature/John-A-Kissel-da65a738-37c7-41c1-8cd4-abae65ef0167.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "ftp://ftp.cga.ct.gov/pub/data/LegislatorDatabase.csv"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/John_Kissel"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ctsenaterepublicans.com/home-kissel"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ctsenaterepublicans.com/home-kissel/"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/John_Kissel_(Connecticut_politician)"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

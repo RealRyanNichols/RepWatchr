@@ -1,0 +1,65 @@
+{
+  "id": "beth-bernstein",
+  "name": "Beth Bernstein",
+  "firstName": "Beth",
+  "lastName": "Bernstein",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-78",
+  "jurisdiction": "South Carolina House of Representatives",
+  "county": [
+    "South Carolina"
+  ],
+  "termStart": "2012-11-12",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 532C, Blatt Building P.O. Box 11867, Columbia, SC 29201",
+    "phone": "803-212-6940",
+    "email": "bethbernstein@schouse.gov",
+    "website": "https://scstatehouse.gov/member.php?code=0141477256"
+  },
+  "bio": "Beth Bernstein serves as State Representative for South Carolina House of Representatives District 78. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "SC",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://scstatehouse.gov/member.php?code=0141477256"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/sc/legislature/Beth-E-Bernstein-a45d8c37-372d-4d32-b9a5-cce96299ea3d.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Beth_Bernstein"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Beth_Bernstein"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/139541/beth-bernstein"
+    },
+    {
+      "title": "Public source",
+      "url": "https://scstatehouse.gov/member.php?chamber=H"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/beth-bernstein-6475a57"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.scstatehouse.gov/member.php?chamber=H"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.scstatehouse.gov/member.php?code=0141477256"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

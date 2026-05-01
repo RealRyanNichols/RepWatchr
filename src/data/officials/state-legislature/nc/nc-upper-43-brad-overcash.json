@@ -1,0 +1,56 @@
+{
+  "id": "brad-overcash",
+  "name": "Brad Overcash",
+  "firstName": "Brad",
+  "lastName": "Overcash",
+  "photo": "/images/officials/state-legislature/nc/brad-overcash.jpg",
+  "photoSourceUrl": "https://www.ncleg.gov/Members/MemberImage/S/444/Low",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-43",
+  "jurisdiction": "North Carolina Senate",
+  "county": [
+    "North Carolina"
+  ],
+  "termStart": "2023-01-01",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 526, Legislative Office Building 300 N. Salisbury St., Raleigh, NC 27603",
+    "phone": "919-733-5734",
+    "email": "brad.overcash@ncleg.gov",
+    "website": "https://www.ncleg.gov/Members/Biography/S/444"
+  },
+  "bio": "Brad Overcash serves as State Senator for North Carolina Senate District 43. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "NC",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.ncleg.gov/Members/Biography/S/444"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/nc/legislature/Brad-Overcash-dfacde1f-3324-4ebe-bc96-ae473548e951.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://www.ncleg.gov/Members/MemberImage/S/444/Low"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Brad_Overcash"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/bradovercash"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.ncleg.gov/Members/MemberTable/S"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

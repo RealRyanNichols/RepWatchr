@@ -1,0 +1,69 @@
+{
+  "id": "steve-fitzpatrick",
+  "name": "Steve Fitzpatrick",
+  "firstName": "Steve",
+  "lastName": "Fitzpatrick",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-24",
+  "jurisdiction": "Montana House of Representatives",
+  "county": [
+    "Montana"
+  ],
+  "termStart": "2025-01-06",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Capitol Building, 1301 E. 6th Ave. P.O. Box 200400, Helena, MT 59620",
+    "phone": "406-444-4800",
+    "email": "steve.fitzpatrick@legmt.gov",
+    "website": "https://leg.mt.gov/legislator-information/roster/individual/4723"
+  },
+  "bio": "Steve Fitzpatrick serves as State Representative for Montana House of Representatives District 24. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "MT",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://leg.mt.gov/legislator-information/roster/individual/4723"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/mt/legislature/Steve-Fitzpatrick-afcd51eb-e3cf-4bc4-8093-80f884de54e2.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Steve_Fitzpatrick"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Steve_Fitzpatrick"
+    },
+    {
+      "title": "legislator list page",
+      "url": "https://leg.mt.gov/legislator-information/?session_select=111"
+    },
+    {
+      "title": "Public source",
+      "url": "https://leg.mt.gov/legislator-information/?session_select=113"
+    },
+    {
+      "title": "Public source",
+      "url": "https://leg.mt.gov/legislator-information/roster/individual/5009"
+    },
+    {
+      "title": "Public source",
+      "url": "https://leg.mt.gov/legislator-information/roster/individual/6819"
+    },
+    {
+      "title": "Public source",
+      "url": "https://leg.mt.gov/legislator-information/roster/individual/7506"
+    },
+    {
+      "title": "Public source",
+      "url": "https://legislators.legmt.gov/#/legislator/16"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

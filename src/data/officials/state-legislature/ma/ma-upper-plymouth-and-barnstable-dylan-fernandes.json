@@ -1,0 +1,72 @@
+{
+  "id": "dylan-fernandes",
+  "name": "Dylan Fernandes",
+  "firstName": "Dylan",
+  "lastName": "Fernandes",
+  "photo": "/images/officials/state-legislature/ma/dylan-fernandes.jpg",
+  "photoSourceUrl": "https://malegislature.gov/Legislators/Profile/170/DAF0.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-Plymouth and Barnstable",
+  "jurisdiction": "Massachusetts Senate",
+  "county": [
+    "Massachusetts"
+  ],
+  "termStart": "2025-01-01",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 519, State House 24 Beacon St., Boston, MA 02133",
+    "phone": "617-722-1330",
+    "email": "dylan.fernandes@masenate.gov",
+    "website": "https://malegislature.gov/Legislators/Profile/DAF0"
+  },
+  "bio": "Dylan Fernandes serves as State Senator for Massachusetts Senate District Plymouth and Barnstable. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "MA",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://malegislature.gov/Legislators/Profile/DAF0"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ma/legislature/Dylan-Fernandes-cd05a88c-19f0-4fc5-bc3b-d339572842b7.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://malegislature.gov/Legislators/Profile/170/DAF0.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Dylan_A._Fernandes"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Dylan_Fernandes"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/172069/dylan-fernandes"
+    },
+    {
+      "title": "Public source",
+      "url": "https://malegislature.gov/api/GeneralCourts/192/LegislativeMembers"
+    },
+    {
+      "title": "Public source",
+      "url": "https://malegislature.gov/api/GeneralCourts/192/LegislativeMembers/"
+    },
+    {
+      "title": "Public source",
+      "url": "https://malegislature.gov/api/GeneralCourts/192/LegislativeMembers/DAF1"
+    },
+    {
+      "title": "Public source",
+      "url": "https://malegislature.gov/api/GeneralCourts/193/LegislativeMembers"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

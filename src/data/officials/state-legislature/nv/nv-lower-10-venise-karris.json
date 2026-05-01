@@ -1,0 +1,56 @@
+{
+  "id": "venise-karris",
+  "name": "Venise Karris",
+  "firstName": "Venise",
+  "lastName": "Karris",
+  "photo": "/images/officials/state-legislature/nv/venise-karris.jpg",
+  "photoSourceUrl": "https://s3.amazonaws.com/ballotpedia-api4/files/thumbs/200/300/VeniseKarris2024.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "Assemblymember",
+  "district": "HD-10",
+  "jurisdiction": "Nevada Assembly",
+  "county": [
+    "Nevada"
+  ],
+  "termStart": "2024-11-06",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 4121, Nevada Assembly 401 S. Carson St., Carson City, NV 89701",
+    "phone": "775-684-8541",
+    "email": "venise.karris@asm.state.nv.us",
+    "website": "https://www.leg.state.nv.us/App/Legislator/A/Assembly/Current/10"
+  },
+  "bio": "Venise Karris serves as Assemblymember for Nevada Assembly District 10. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "NV",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.leg.state.nv.us/App/Legislator/A/Assembly/Current/10"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/nv/legislature/Venise-Karris-c1af6bc9-bae5-4174-a2f1-6b4d3c5fc496.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://s3.amazonaws.com/ballotpedia-api4/files/thumbs/200/300/VeniseKarris2024.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Venise_Karris"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Venise_Karris"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/key-votes/215840/venise-karris"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

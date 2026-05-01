@@ -1,0 +1,69 @@
+{
+  "id": "regina-lewis-ward",
+  "name": "Regina Lewis-Ward",
+  "firstName": "Regina",
+  "lastName": "Lewis-Ward",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-115",
+  "jurisdiction": "Georgia House of Representatives",
+  "county": [
+    "Georgia"
+  ],
+  "termStart": "2023-01-09",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 607-A, Coverdell Legislative Office Building 18 Capitol Square SW, Atlanta, GA 30334",
+    "phone": "404-656-0287",
+    "email": "regina.lewis-ward@house.ga.gov",
+    "website": "https://www.legis.ga.gov/members/house"
+  },
+  "bio": "Regina Lewis-Ward serves as State Representative for Georgia House of Representatives District 115. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "GA",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.legis.ga.gov/members/house"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ga/legislature/Regina-Lewis-Ward-21651856-bba6-49fd-b3f8-8ed1b723e804.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Regina_Lewis-Ward"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Regina_Lewis-Ward"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/178960/regina-lewis-ward"
+    },
+    {
+      "title": "Detail page (requires authorization token)",
+      "url": "https://www.legis.ga.gov/api/members/detail/5001?session=1029&chamber=1"
+    },
+    {
+      "title": "API member detail (requires authorization token)",
+      "url": "https://www.legis.ga.gov/api/members/detail/5001?session=1031&chamber=1"
+    },
+    {
+      "title": "API members list (requires authorization token)",
+      "url": "https://www.legis.ga.gov/api/members/list/1031"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.legis.ga.gov/members/house/5001"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.legis.ga.gov/members/house/5001?session=1029"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

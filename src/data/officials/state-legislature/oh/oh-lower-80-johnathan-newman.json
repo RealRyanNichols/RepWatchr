@@ -1,0 +1,60 @@
+{
+  "id": "johnathan-newman",
+  "name": "Johnathan Newman",
+  "firstName": "Johnathan",
+  "lastName": "Newman",
+  "photo": "/images/officials/state-legislature/oh/johnathan-newman.jpg",
+  "photoSourceUrl": "https://s3.amazonaws.com/ballotpedia-api4/files/thumbs/200/300/JohnathanNewman2024.jpeg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-80",
+  "jurisdiction": "Ohio House of Representatives",
+  "county": [
+    "Ohio"
+  ],
+  "termStart": "2025-01-01",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "77 S. High St. 11th Floor, Columbus, OH 43215",
+    "phone": "614-466-8114",
+    "email": "rep80@ohiohouse.gov",
+    "website": "https://ohiohouse.gov/members/johnathan-newman"
+  },
+  "bio": "Johnathan Newman serves as State Representative for Ohio House of Representatives District 80. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "OH",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://ohiohouse.gov/members/johnathan-newman"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/oh/legislature/Johnathan-Newman-9d7cc971-9ed9-4918-b93f-39d41d35e565.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://s3.amazonaws.com/ballotpedia-api4/files/thumbs/200/300/JohnathanNewman2024.jpeg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Johnathan_Newman"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/214038/johnathan-newman"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ohiohouse.gov/members/johnathan-newman/biography"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/johnathan-newman-848993290"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

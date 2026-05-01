@@ -1,0 +1,53 @@
+{
+  "id": "bill-pluecker",
+  "name": "Bill Pluecker",
+  "firstName": "Bill",
+  "lastName": "Pluecker",
+  "party": "I",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-44",
+  "jurisdiction": "Maine House of Representatives",
+  "county": [
+    "Maine"
+  ],
+  "termStart": "2022-12-07",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Office of the Clerk of the House 2 State House Station, Augusta, ME 04333",
+    "phone": "800-423-2900",
+    "email": "bill.pluecker@legislature.maine.gov",
+    "website": "https://legislature.maine.gov/house/house/MemberProfiles/Details/1383"
+  },
+  "bio": "Bill Pluecker serves as State Representative for Maine House of Representatives District 44. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "ME",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://legislature.maine.gov/house/house/MemberProfiles/Details/1383"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/me/legislature/William-D-Pluecker-30ae681d-e01b-4305-9c6e-60df2e62b49b.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/William_Pluecker"
+    },
+    {
+      "title": "Public source",
+      "url": "https://billpluecker.com"
+    },
+    {
+      "title": "Public source",
+      "url": "https://legislature.maine.gov/house/house/MemberProfiles/ListAlpha"
+    },
+    {
+      "title": "Public source",
+      "url": "https://legislature.maine.gov/representative-bill-pluecker"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

@@ -1,0 +1,68 @@
+{
+  "id": "dan-gehlbach",
+  "name": "Dan Gehlbach",
+  "firstName": "Dan",
+  "lastName": "Gehlbach",
+  "photo": "/images/officials/state-legislature/ia/dan-gehlbach.jpg",
+  "photoSourceUrl": "https://www.legis.iowa.gov/photo?action=getPhoto&ga=91&pid=33980",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-46",
+  "jurisdiction": "Iowa House of Representatives",
+  "county": [
+    "Iowa"
+  ],
+  "termStart": "2023-01-01",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "State Capitol Building 1007 E. Grand Ave., Des Moines, IA 50319",
+    "phone": "515-281-3221",
+    "email": "dan.gehlbach@legis.iowa.gov",
+    "website": "https://www.legis.iowa.gov/legislators/legislator/newsletter?id=33980&ga=90"
+  },
+  "bio": "Dan Gehlbach serves as State Representative for Iowa House of Representatives District 46. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "IA",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.legis.iowa.gov/legislators/legislator/newsletter?id=33980&ga=90"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ia/legislature/Dan-Gehlbach-d9b64ebb-2332-4ab8-b21f-e697f08759d3.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://www.legis.iowa.gov/photo?action=getPhoto&ga=91&pid=33980"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Dan_Gehlbach"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Dan_Gehlbach"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.legis.iowa.gov/legislators/house"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.legis.iowa.gov/legislators/legislator?ga=90&personID=33980"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.legis.iowa.gov/legislators/legislator?personID=33980"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/dangehlbach"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

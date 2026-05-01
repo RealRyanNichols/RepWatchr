@@ -1,0 +1,67 @@
+{
+  "id": "jayme-davis",
+  "name": "Jayme Davis",
+  "firstName": "Jayme",
+  "lastName": "Davis",
+  "photo": "/images/officials/state-legislature/nd/jayme-davis.jpg",
+  "photoSourceUrl": "https://www.ndlegis.gov/sites/default/files/styles/member_list_photo/public/person/photo/jdavis2023.jpg?itok=u9HL5YrU",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-9",
+  "jurisdiction": "North Dakota House of Representatives",
+  "county": [
+    "North Dakota"
+  ],
+  "termStart": "2024-12-01",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "State Capitol 600 E. Boulevard Ave., Bismarck, ND 58505",
+    "email": "jdavis@ndlegis.gov",
+    "website": "https://ndlegis.gov/biography/jayme-davis"
+  },
+  "bio": "Jayme Davis serves as State Representative for North Dakota House of Representatives District 9. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "ND",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://ndlegis.gov/biography/jayme-davis"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/nd/legislature/Jayme-Davis-967219db-3714-49e4-8642-5fb444ef882c.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://www.ndlegis.gov/sites/default/files/styles/member_list_photo/public/person/photo/jdavis2023.jpg?itok=u9HL5YrU"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Jayme_Davis"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Jayme_Davis"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/jayme-davis-945810215"
+    },
+    {
+      "title": "members list page",
+      "url": "https://www.ndlegis.gov/assembly/68-2023/regular/members?combine=&field_legis_chamber_target_id=All&field_legis_district_target_id=All&field_legislator_party_target_id=All&page=1"
+    },
+    {
+      "title": "members list page",
+      "url": "https://www.ndlegis.gov/assembly/68-2023/regular/members?page=1"
+    },
+    {
+      "title": "member details page",
+      "url": "https://www.ndlegis.gov/biography/jayme-davis"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

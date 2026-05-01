@@ -1,0 +1,72 @@
+{
+  "id": "tasha-boerner",
+  "name": "Tasha Boerner",
+  "firstName": "Tasha",
+  "lastName": "Boerner",
+  "photo": "/images/officials/state-legislature/ca/tasha-boerner.jpg",
+  "photoSourceUrl": "https://www.assembly.ca.gov/sites/assembly.ca.gov/files/memberphotos/a76_t_b_horvath.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "Assemblymember",
+  "district": "HD-77",
+  "jurisdiction": "California State Assembly",
+  "county": [
+    "California"
+  ],
+  "termStart": "2022-12-05",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 4150, 1021 O St. P.O. Box 942849, Sacramento, CA 94249",
+    "phone": "916-319-2077",
+    "email": "assemblymember.boerner@assembly.ca.gov",
+    "website": "https://a77.asmdc.org/"
+  },
+  "bio": "Tasha Boerner serves as Assemblymember for California State Assembly District 77. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "CA",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://a77.asmdc.org/"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ca/legislature/Tasha-Boerner-Horvath-9e69729e-4383-410b-840e-ad4ea0f1ab4a.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://www.assembly.ca.gov/sites/assembly.ca.gov/files/memberphotos/a76_t_b_horvath.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://a77.asmdc.org"
+    },
+    {
+      "title": "Public source",
+      "url": "https://a77.asmdc.org/biography"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Tasha_Boerner_Horvath"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Tasha_Boerner_Horvath"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/180144/tasha-boerner"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.assembly.ca.gov/assemblymembers"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/boerner"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

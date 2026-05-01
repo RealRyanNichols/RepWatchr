@@ -1,0 +1,61 @@
+{
+  "id": "doug-gilliam",
+  "name": "Doug Gilliam",
+  "firstName": "Doug",
+  "lastName": "Gilliam",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-42",
+  "jurisdiction": "South Carolina House of Representatives",
+  "county": [
+    "South Carolina"
+  ],
+  "termStart": "2018-11-12",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 420C, Blatt Building P.O. Box 11867, Columbia, SC 29201",
+    "phone": "803-212-6968",
+    "email": "douggilliam@schouse.gov",
+    "website": "https://scstatehouse.gov/member.php?code=0675426055"
+  },
+  "bio": "Doug Gilliam serves as State Representative for South Carolina House of Representatives District 42. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "SC",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://scstatehouse.gov/member.php?code=0675426055"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/sc/legislature/Leon-D-Doug-Gilliam-3a09cbd2-aa21-4fa8-9511-d1f842816e49.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Doug_Gilliam"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Doug_Gilliam"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/181033/doug-gilliam"
+    },
+    {
+      "title": "Public source",
+      "url": "https://scstatehouse.gov/member.php?chamber=H"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.scstatehouse.gov/member.php?chamber=H"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.scstatehouse.gov/member.php?code=0675426055"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

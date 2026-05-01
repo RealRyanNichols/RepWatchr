@@ -1,0 +1,64 @@
+{
+  "id": "morgan-foreman",
+  "name": "Morgan Foreman",
+  "firstName": "Morgan",
+  "lastName": "Foreman",
+  "photo": "/images/officials/state-legislature/mi/morgan-foreman.jpg",
+  "photoSourceUrl": "https://s3.amazonaws.com/ballotpedia-api4/files/thumbs/200/300/Nathan_Fallahi_20240808_091506.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-33",
+  "jurisdiction": "Michigan House of Representatives",
+  "county": [
+    "Michigan"
+  ],
+  "termStart": "2025-01-01",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room N-797, Anderson House Office Building 124 N. Capitol Ave., Lansing, MI 48933",
+    "phone": "517-373-0820",
+    "email": "morganforeman@house.mi.gov",
+    "website": "https://housedems.com/morgan-foreman/"
+  },
+  "bio": "Morgan Foreman serves as State Representative for Michigan House of Representatives District 33. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "MI",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://housedems.com/morgan-foreman/"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/mi/legislature/Morgan-Foreman-0cec5462-4aa6-423a-a946-c13d03370565.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://s3.amazonaws.com/ballotpedia-api4/files/thumbs/200/300/Nathan_Fallahi_20240808_091506.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Morgan_Foreman"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Morgan_Foreman"
+    },
+    {
+      "title": "Public source",
+      "url": "https://housedems.com/morgan-foreman"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/217233/morgan-foreman"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/morganforeman"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

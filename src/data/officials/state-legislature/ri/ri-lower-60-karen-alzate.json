@@ -1,0 +1,72 @@
+{
+  "id": "karen-alzate",
+  "name": "Karen Alzate",
+  "firstName": "Karen",
+  "lastName": "Alzate",
+  "photo": "/images/officials/state-legislature/ri/karen-alzate.jpg",
+  "photoSourceUrl": "http://www.rilegislature.gov/representatives/pictures/alzate.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-60",
+  "jurisdiction": "Rhode Island House of Representatives",
+  "county": [
+    "Rhode Island"
+  ],
+  "termStart": "2019-01-01",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "82 Smith St., Providence, RI 02903",
+    "phone": "401-222-3580",
+    "email": "rep-alzate@rilegislature.gov",
+    "website": "https://www.rilegislature.gov/representatives/alzate/default.aspx"
+  },
+  "bio": "Karen Alzate serves as State Representative for Rhode Island House of Representatives District 60. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "RI",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.rilegislature.gov/representatives/alzate/default.aspx"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ri/legislature/Karen-Alzate-016b40cf-1be0-4e66-acdf-78a029822e1c.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "http://www.rilegislature.gov/representatives/pictures/alzate.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Karen_Alzate"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Karen_Alzate"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/185037/karen-alzate"
+    },
+    {
+      "title": "Public source",
+      "url": "https://webserver.rilin.state.ri.us/Email/RepEmailListDistrict.asp"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/karen-alzate-"
+    },
+    {
+      "title": "Image Source",
+      "url": "https://www.rilegislature.gov/representatives/alzate/Pages/Biography.aspx"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.rilegislature.gov/SiteAssets/MailingLists/Representatives.xls"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

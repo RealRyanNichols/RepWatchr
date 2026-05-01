@@ -1,0 +1,71 @@
+{
+  "id": "mary-jo-daley",
+  "name": "Mary Jo Daley",
+  "firstName": "Mary Jo",
+  "lastName": "Daley",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-148",
+  "jurisdiction": "Pennsylvania House of Representatives",
+  "county": [
+    "Pennsylvania"
+  ],
+  "termStart": "2013-01-01",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 225, Irvis Office Building P.O. Box 202148, Harrisburg, PA 17120",
+    "phone": "717-787-9475",
+    "email": "repmaryjodaley@pahouse.net",
+    "website": "https://www.legis.state.pa.us/cfdocs/legis/home/member_information/House_bio.cfm?id=1622",
+    "socialMedia": {
+      "x": "https://x.com/RepMJDaley",
+      "twitter": "https://x.com/RepMJDaley",
+      "facebook": "https://facebook.com/RepMJDaley",
+      "youtube": "https://youtube.com/playlist?list=PLjtqNtfs0bgVcpT_30Ku0bBEfTC5kGzUr"
+    }
+  },
+  "bio": "Mary Jo Daley serves as State Representative for Pennsylvania House of Representatives District 148. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "PA",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.legis.state.pa.us/cfdocs/legis/home/member_information/House_bio.cfm?id=1622"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/pa/legislature/Mary-Jo-Daley-2b9c199b-dd4e-477a-a5d0-849180c956a0.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Mary_Jo_Daley"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Mary_Jo_Daley"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.legis.state.pa.us/cfdocs/legis/home/member_information/mbrList.cfm?body=H&sort=alpha"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.legis.state.pa.us/cfdocs/legis/home/member_information/representatives_alpha.cfm"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/mary-jo-daley-21a87722"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.pahouse.com/MDaley"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.palegis.us/house/members/bio/1622/rep-daley"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

@@ -1,0 +1,53 @@
+{
+  "id": "aundr-bumgardner",
+  "name": "Aundr\u00e9 Bumgardner",
+  "firstName": "Aundr\u00e9",
+  "lastName": "Bumgardner",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-41",
+  "jurisdiction": "Connecticut House of Representatives",
+  "county": [
+    "Connecticut"
+  ],
+  "termStart": "2023-01-04",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 1001, Legislative Office Building 300 Capitol Ave., Hartford, CT 06106",
+    "phone": "860-240-8585",
+    "email": "aundre.bumgardner@cga.ct.gov",
+    "website": "https://www.housedems.ct.gov/Bumgardner"
+  },
+  "bio": "Aundr\u00e9 Bumgardner serves as State Representative for Connecticut House of Representatives District 41. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "CT",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.housedems.ct.gov/Bumgardner"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ct/legislature/Aundre-Bumgardner-32ad6577-b1ee-411f-9dca-e40e06226703.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "ftp://ftp.cga.ct.gov/pub/data/LegislatorDatabase.csv"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Aundre_Bumgardner"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Aundre_Bumgardner"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/aundrebumgardner"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

@@ -1,0 +1,64 @@
+{
+  "id": "jeffery-harness",
+  "name": "Jeffery Harness",
+  "firstName": "Jeffery",
+  "lastName": "Harness",
+  "photo": "/images/officials/state-legislature/ms/jeffery-harness.jpg",
+  "photoSourceUrl": "https://s3.amazonaws.com/ballotpedia-api4/files/thumbs/200/300/harness.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-85",
+  "jurisdiction": "Mississippi House of Representatives",
+  "county": [
+    "Mississippi"
+  ],
+  "termStart": "2018-12-21",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "State Capitol 400 High St., Jackson, MS 39201",
+    "phone": "601-359-3770",
+    "email": "jharness@house.ms.gov",
+    "website": "https://billstatus.ls.state.ms.us/members/house/harness.xml"
+  },
+  "bio": "Jeffery Harness serves as State Representative for Mississippi House of Representatives District 85. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "MS",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://billstatus.ls.state.ms.us/members/house/harness.xml"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ms/legislature/Jeffery-Harness-73fee1dd-f8c0-40a7-a4f9-e7576b4ecc3f.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://s3.amazonaws.com/ballotpedia-api4/files/thumbs/200/300/harness.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Jeffery_Harness"
+    },
+    {
+      "title": "Public source",
+      "url": "https://billstatus.ls.state.ms.us/members/hr_membs.xml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Jeffery_Harness"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/130567/jeffery-harness"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/jeffery-harness-156bba62"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

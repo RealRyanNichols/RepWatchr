@@ -1,0 +1,68 @@
+{
+  "id": "mike-gabbard",
+  "name": "Mike Gabbard",
+  "firstName": "Mike",
+  "lastName": "Gabbard",
+  "party": "D",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-21",
+  "jurisdiction": "Hawaii Senate",
+  "county": [
+    "Hawaii"
+  ],
+  "termStart": "2022-11-08",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "State Capitol Room 201, 415 S. Beretania St., Honolulu, HI 96813",
+    "phone": "808-586-6830",
+    "email": "sengabbard@capitol.hawaii.gov",
+    "website": "https://www.capitol.hawaii.gov/legislature/memberpage.aspx?member=169",
+    "socialMedia": {
+      "x": "https://x.com/senmikegabbard",
+      "twitter": "https://x.com/senmikegabbard",
+      "facebook": "https://facebook.com/mikegabbardsenatedistrict21",
+      "youtube": "https://youtube.com/senmikegabbard",
+      "instagram": "https://instagram.com/gabbardaloha"
+    }
+  },
+  "bio": "Mike Gabbard serves as State Senator for Hawaii Senate District 21. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "HI",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.capitol.hawaii.gov/legislature/memberpage.aspx?member=169"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/hi/legislature/Mike-Gabbard-9f87e7d6-a307-45ab-b384-96a8599dab56.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Mike_Gabbard"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Mike_Gabbard"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.capitol.hawaii.gov/legislature/memberpage.aspx?member=169&year=2023"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.capitol.hawaii.gov/legislature/memberpage.aspx?member=169&year=2024"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.capitol.hawaii.gov/members/legislators.aspx"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/mikegabbard"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

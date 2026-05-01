@@ -1,0 +1,69 @@
+{
+  "id": "darlene-taylor",
+  "name": "Darlene Taylor",
+  "firstName": "Darlene",
+  "lastName": "Taylor",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-173",
+  "jurisdiction": "Georgia House of Representatives",
+  "county": [
+    "Georgia"
+  ],
+  "termStart": "2011-01-10",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "State Capitol Room 245-B, 206 Washington St. SW, Atlanta, GA 30334",
+    "phone": "404-463-2246",
+    "email": "darlene.taylor@house.ga.gov",
+    "website": "https://www.house.ga.gov/Representatives/en-US/member.aspx?Member=786&Session=27"
+  },
+  "bio": "Darlene Taylor serves as State Representative for Georgia House of Representatives District 173. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "GA",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.house.ga.gov/Representatives/en-US/member.aspx?Member=786&Session=27"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ga/legislature/Darlene-K-Taylor-d00eb950-0fb6-41ab-ae22-8e9ce84d7cf0.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Darlene_Taylor"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Darlene_Taylor_(politician)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/122919/darlene-taylor"
+    },
+    {
+      "title": "Public source",
+      "url": "https://webservices.legis.ga.gov/GGAServices/Members/Service.svc?wsdl"
+    },
+    {
+      "title": "Detail page (requires authorization token)",
+      "url": "https://www.legis.ga.gov/api/members/detail/786?session=1029&chamber=1"
+    },
+    {
+      "title": "API member detail (requires authorization token)",
+      "url": "https://www.legis.ga.gov/api/members/detail/786?session=1031&chamber=1"
+    },
+    {
+      "title": "API members list (requires authorization token)",
+      "url": "https://www.legis.ga.gov/api/members/list/1031"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.legis.ga.gov/members/house/786"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

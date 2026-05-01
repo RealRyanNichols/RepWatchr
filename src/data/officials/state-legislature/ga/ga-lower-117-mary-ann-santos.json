@@ -1,0 +1,53 @@
+{
+  "id": "mary-ann-santos",
+  "name": "Mary Ann Santos",
+  "firstName": "Mary Ann",
+  "lastName": "Santos",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-117",
+  "jurisdiction": "Georgia House of Representatives",
+  "county": [
+    "Georgia"
+  ],
+  "termStart": "2025-01-13",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 507-C, Coverdell Legislative Office Building 18 Capitol Square SW, Atlanta, GA 30334",
+    "phone": "404-656-0202",
+    "email": "maryann.santos@house.ga.gov",
+    "website": "https://www.legis.ga.gov/members/house/5078"
+  },
+  "bio": "Mary Ann Santos serves as State Representative for Georgia House of Representatives District 117. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "GA",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.legis.ga.gov/members/house/5078"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ga/legislature/Mary-Ann-Santos-7deae3f1-5548-4afe-9018-e8112945fd8d.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Mary_Ann_Santos"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Mary_Ann_Santos"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/215292/mary-santos"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/mary-ann-santos"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

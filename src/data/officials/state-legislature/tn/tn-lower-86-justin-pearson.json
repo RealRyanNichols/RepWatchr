@@ -1,0 +1,64 @@
+{
+  "id": "justin-pearson",
+  "name": "Justin Pearson",
+  "firstName": "Justin",
+  "lastName": "Pearson",
+  "photo": "/images/officials/state-legislature/tn/justin-pearson.jpg",
+  "photoSourceUrl": "https://images.squarespace-cdn.com/content/v1/638e0e4731cb8444ce5a20e8/1d467f44-2f5f-42d0-96e9-8819eee165fb/Justin_21.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-86",
+  "jurisdiction": "Tennessee House of Representatives",
+  "county": [
+    "Tennessee"
+  ],
+  "termStart": "2023-04-12",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 572, Cordell Hull Building 425 Rep. John Lewis Way North, Nashville, TN 37243",
+    "phone": "615-741-4295",
+    "email": "rep.justin.j.pearson@capitol.tn.gov",
+    "website": "https://wapp.capitol.tn.gov/apps/legislatorinfo/member.aspx?district=H86"
+  },
+  "bio": "Justin Pearson serves as State Representative for Tennessee House of Representatives District 86. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "TN",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://wapp.capitol.tn.gov/apps/legislatorinfo/member.aspx?district=H86"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/tn/legislature/Justin-J-Pearson-df116f27-98bd-497d-a5bc-9f1d7ddff506.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://images.squarespace-cdn.com/content/v1/638e0e4731cb8444ce5a20e8/1d467f44-2f5f-42d0-96e9-8819eee165fb/Justin_21.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Justin_Pearson_(Tennessee)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Justin_J._Pearson"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/211334/justin-pearson"
+    },
+    {
+      "title": "Public source",
+      "url": "https://wapp.capitol.tn.gov/apps/LegislatorInfo/directory.aspx?chamber=H"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/justinjpearson"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

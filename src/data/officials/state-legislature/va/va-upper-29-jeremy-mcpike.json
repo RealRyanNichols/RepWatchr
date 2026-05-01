@@ -1,0 +1,77 @@
+{
+  "id": "jeremy-mcpike",
+  "name": "Jeremy McPike",
+  "firstName": "Jeremy",
+  "lastName": "McPike",
+  "photo": "/images/officials/state-legislature/va/jeremy-mcpike.jpg",
+  "photoSourceUrl": "https://apps.senate.virginia.gov/Senator/images/member_photos/McPike29.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-29",
+  "jurisdiction": "Virginia Senate",
+  "county": [
+    "Virginia"
+  ],
+  "termStart": "2016-01-13",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 607, General Assembly Building P.O. Box 396, Richmond, VA 23218",
+    "phone": "804-698-7529",
+    "email": "senatormcpike@senate.virginia.gov",
+    "website": "https://apps.senate.virginia.gov/Senator/memberpage.php?id=S98",
+    "socialMedia": {
+      "x": "https://x.com/jeremymcpike",
+      "twitter": "https://x.com/jeremymcpike",
+      "facebook": "https://facebook.com/McPikeforSenate"
+    }
+  },
+  "bio": "Jeremy McPike serves as State Senator for Virginia Senate District 29. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "VA",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://apps.senate.virginia.gov/Senator/memberpage.php?id=S98"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/va/legislature/Jeremy-S-McPike-500ff29f-8ae7-4886-93ec-eec1ad91d299.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://apps.senate.virginia.gov/Senator/images/member_photos/McPike29.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Jeremy_McPike"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Jeremy_McPike"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/144818/jeremy-mcpike"
+    },
+    {
+      "title": "Public source",
+      "url": "https://lis.virginia.gov/191/mbr/MBR.HTM"
+    },
+    {
+      "title": "Public source",
+      "url": "https://lis.virginia.gov/201/mbr/MBR.HTM"
+    },
+    {
+      "title": "Public source",
+      "url": "https://lis.virginia.gov/cgi-bin/legp604.exe?191+mbr+S98"
+    },
+    {
+      "title": "Public source",
+      "url": "https://lis.virginia.gov/cgi-bin/legp604.exe?201+mbr+S98"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

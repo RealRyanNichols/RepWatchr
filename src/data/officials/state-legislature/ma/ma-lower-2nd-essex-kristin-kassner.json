@@ -1,0 +1,68 @@
+{
+  "id": "kristin-kassner",
+  "name": "Kristin Kassner",
+  "firstName": "Kristin",
+  "lastName": "Kassner",
+  "photo": "/images/officials/state-legislature/ma/kristin-kassner.jpg",
+  "photoSourceUrl": "https://malegislature.gov/Legislators/Profile/170/K_K2.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-2nd Essex",
+  "jurisdiction": "Massachusetts House of Representatives",
+  "county": [
+    "Massachusetts"
+  ],
+  "termStart": "2023-02-03",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 254, State House 24 Beacon St., Boston, MA 02133",
+    "phone": "617-722-2220",
+    "email": "kristin.kassner@mahouse.gov",
+    "website": "https://malegislature.gov/Legislators/Profile/K_K2"
+  },
+  "bio": "Kristin Kassner serves as State Representative for Massachusetts House of Representatives District 2nd Essex. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "MA",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://malegislature.gov/Legislators/Profile/K_K2"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ma/legislature/Kristin-Kassner-1129a0d9-c280-4bf0-af34-20879293a2b5.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://malegislature.gov/Legislators/Profile/170/K_K2.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Kristin_Kassner"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Kristin_Kassner"
+    },
+    {
+      "title": "Public source",
+      "url": "https://malegislature.gov/api/GeneralCourts/193/LegislativeMembers"
+    },
+    {
+      "title": "Public source",
+      "url": "https://malegislature.gov/api/GeneralCourts/193/LegislativeMembers/"
+    },
+    {
+      "title": "Public source",
+      "url": "https://malegislature.gov/api/GeneralCourts/193/LegislativeMembers/K_K2"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/kristin-kassner-b8b05712"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

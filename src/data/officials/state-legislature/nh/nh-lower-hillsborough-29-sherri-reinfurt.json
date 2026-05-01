@@ -1,0 +1,60 @@
+{
+  "id": "sherri-reinfurt",
+  "name": "Sherri Reinfurt",
+  "firstName": "Sherri",
+  "lastName": "Reinfurt",
+  "photo": "/images/officials/state-legislature/nh/sherri-reinfurt.jpg",
+  "photoSourceUrl": "https://s3.amazonaws.com/ballotpedia-api4/files/thumbs/200/300/Sherri_Reinfurt_20240826_053342.jpeg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-Hillsborough 29",
+  "jurisdiction": "New Hampshire House of Representatives",
+  "county": [
+    "New Hampshire"
+  ],
+  "termStart": "2024-12-04",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "State House 107 N. Main St., Concord, NH 03301",
+    "phone": "603-271-3661",
+    "email": "sherri.reinfurt@gc.nh.gov",
+    "website": "https://gc.nh.gov/house/members/member.aspx?pid=11364"
+  },
+  "bio": "Sherri Reinfurt serves as State Representative for New Hampshire House of Representatives District Hillsborough 29. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "NH",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://gc.nh.gov/house/members/member.aspx?pid=11364"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/nh/legislature/Sherri-Reinfurt-19278cc6-c610-4ae1-b1eb-b33f60658f0b.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://s3.amazonaws.com/ballotpedia-api4/files/thumbs/200/300/Sherri_Reinfurt_20240826_053342.jpeg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Sherri_Reinfurt"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Sherri_Reinfurt"
+    },
+    {
+      "title": "Public source",
+      "url": "https://gencourt.state.nh.us/house/members/member.aspx?pid=11364"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/219000/sherri-reinfurt"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

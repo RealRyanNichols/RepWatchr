@@ -1,0 +1,53 @@
+{
+  "id": "eric-albus",
+  "name": "Eric Albus",
+  "firstName": "Eric",
+  "lastName": "Albus",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-28",
+  "jurisdiction": "Montana House of Representatives",
+  "county": [
+    "Montana"
+  ],
+  "termStart": "2025-01-06",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Capitol Building, 1301 E. 6th Ave. P.O. Box 200500, Helena, MT 59620",
+    "phone": "406-444-4800",
+    "email": "eric.albus@legmt.gov",
+    "website": "https://legislators.legmt.gov/#/legislator/186"
+  },
+  "bio": "Eric Albus serves as State Representative for Montana House of Representatives District 28. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "MT",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://legislators.legmt.gov/#/legislator/186"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/mt/legislature/Eric-Albus-3d8ef86d-689a-40ed-a09d-2f612a7ecf6a.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Eric_Albus"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.legmt.gov/legislators/1293"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/eric-albus-75927613"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/eric-albus-a7252940"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

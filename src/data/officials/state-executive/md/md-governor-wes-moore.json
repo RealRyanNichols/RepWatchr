@@ -1,0 +1,47 @@
+{
+  "id": "wes-moore",
+  "name": "Wes Moore",
+  "firstName": "Wes",
+  "lastName": "Moore",
+  "photo": "/images/officials/state-executive/md/wes-moore.jpg",
+  "photoSourceUrl": "https://governor.maryland.gov/PublishingImages/governor-wes-moore-official-portrait-web.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "Governor",
+  "district": "Maryland",
+  "jurisdiction": "Maryland statewide public office",
+  "county": [
+    "Maryland"
+  ],
+  "termStart": "2023-01-18",
+  "termEnd": "2027-01-20",
+  "contactInfo": {
+    "office": "100 State Circle; Annapolis, Maryland; 21401-1925",
+    "phone": "410-974-3901",
+    "website": "https://governor.maryland.gov/",
+    "socialMedia": {
+      "x": "https://x.com/GovWesMoore",
+      "twitter": "https://x.com/GovWesMoore"
+    }
+  },
+  "bio": "Wes Moore is listed as Governor for Maryland. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "MD",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://governor.maryland.gov/"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/md/executive/Wes-Moore-a6a4f3ad-59c0-471c-8fd3-ea06a8e21a87.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://governor.maryland.gov/PublishingImages/governor-wes-moore-official-portrait-web.jpg"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

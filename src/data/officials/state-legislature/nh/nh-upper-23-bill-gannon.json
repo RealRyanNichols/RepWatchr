@@ -1,0 +1,72 @@
+{
+  "id": "bill-gannon",
+  "name": "Bill Gannon",
+  "firstName": "Bill",
+  "lastName": "Gannon",
+  "photo": "/images/officials/state-legislature/nh/bill-gannon.jpg",
+  "photoSourceUrl": "https://storage.googleapis.com/enview-dev-public-general/legislative-people-photos/49858.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-23",
+  "jurisdiction": "New Hampshire Senate",
+  "county": [
+    "New Hampshire"
+  ],
+  "termStart": "2020-12-02",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 124, State House 107 N. Main St., Concord, NH 03301",
+    "phone": "603-271-3077",
+    "email": "william.gannon@gc.nh.gov",
+    "website": "https://gc.nh.gov/Senate/members/webpages/district23.aspx"
+  },
+  "bio": "Bill Gannon serves as State Senator for New Hampshire Senate District 23. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "NH",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://gc.nh.gov/Senate/members/webpages/district23.aspx"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/nh/legislature/Bill-Gannon-d3c437bd-532d-458b-961f-4f6dccec1e4b.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://storage.googleapis.com/enview-dev-public-general/legislative-people-photos/49858.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/William_Gannon"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Bill_Gannon_(New_Hampshire_politician)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://gencourt.state.nh.us/downloads/Members.txt"
+    },
+    {
+      "title": "Public source",
+      "url": "https://gencourt.state.nh.us/downloads/members.txt"
+    },
+    {
+      "title": "Public source",
+      "url": "https://gencourt.state.nh.us/Senate/members/webpages/district23.aspx"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/154540/william-gannon"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.gencourt.state.nh.us/Senate/members/webpages/district23.aspx"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

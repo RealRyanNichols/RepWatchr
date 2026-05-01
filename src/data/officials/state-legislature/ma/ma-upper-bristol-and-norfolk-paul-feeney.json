@@ -1,0 +1,72 @@
+{
+  "id": "paul-feeney",
+  "name": "Paul Feeney",
+  "firstName": "Paul",
+  "lastName": "Feeney",
+  "photo": "/images/officials/state-legislature/ma/paul-feeney.jpg",
+  "photoSourceUrl": "https://malegislature.gov/Legislators/Profile/170/PRF0.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-Bristol and Norfolk",
+  "jurisdiction": "Massachusetts Senate",
+  "county": [
+    "Massachusetts"
+  ],
+  "termStart": "2017-11-01",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 112, State House 24 Beacon St., Boston, MA 02133",
+    "phone": "617-722-1222",
+    "email": "paul.feeney@masenate.gov",
+    "website": "https://malegislature.gov/Legislators/Profile/PRF0"
+  },
+  "bio": "Paul Feeney serves as State Senator for Massachusetts Senate District Bristol and Norfolk. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "MA",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://malegislature.gov/Legislators/Profile/PRF0"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ma/legislature/Paul-R-Feeney-b390af07-1fa2-4516-b8f0-b6bd1b62121a.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://malegislature.gov/Legislators/Profile/170/PRF0.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Paul_Feeney"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Paul_Feeney"
+    },
+    {
+      "title": "Public source",
+      "url": "https://malegislature.gov/api/GeneralCourts/192/LegislativeMembers"
+    },
+    {
+      "title": "Public source",
+      "url": "https://malegislature.gov/api/GeneralCourts/192/LegislativeMembers/"
+    },
+    {
+      "title": "Public source",
+      "url": "https://malegislature.gov/api/GeneralCourts/192/LegislativeMembers/PRF0"
+    },
+    {
+      "title": "Public source",
+      "url": "https://malegislature.gov/api/GeneralCourts/193/LegislativeMembers"
+    },
+    {
+      "title": "Public source",
+      "url": "https://malegislature.gov/api/GeneralCourts/193/LegislativeMembers/"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

@@ -1,0 +1,72 @@
+{
+  "id": "jim-guthrie",
+  "name": "Jim Guthrie",
+  "firstName": "Jim",
+  "lastName": "Guthrie",
+  "photo": "/images/officials/state-legislature/id/jim-guthrie.jpg",
+  "photoSourceUrl": "https://legislature.idaho.gov/wp-content/uploads/sessioninfo/2017/directory/Guthrie1179.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-28",
+  "jurisdiction": "Idaho Senate",
+  "county": [
+    "Idaho"
+  ],
+  "termStart": "2012-12-01",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "P.O. Box 83720 700 W. Jefferson St., Boise, ID 83720",
+    "phone": "208-332-1348",
+    "email": "jguthrie@senate.idaho.gov",
+    "website": "https://legislature.idaho.gov/legislators/membership/2023/id1179/"
+  },
+  "bio": "Jim Guthrie serves as State Senator for Idaho Senate District 28. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "ID",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://legislature.idaho.gov/legislators/membership/2023/id1179/"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/id/legislature/Jim-Guthrie-e2a8fbe1-e9dc-4569-865f-450fa5f13665.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://legislature.idaho.gov/wp-content/uploads/sessioninfo/2017/directory/Guthrie1179.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Jim_Guthrie_(Idaho)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Jim_Guthrie_(politician)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/59699/jim-guthrie"
+    },
+    {
+      "title": "Public source",
+      "url": "https://legislature.idaho.gov/legislators/membership/2023/id1179"
+    },
+    {
+      "title": "Public source",
+      "url": "https://legislature.idaho.gov/legislators/membership/2024/id1179"
+    },
+    {
+      "title": "Public source",
+      "url": "https://legislature.idaho.gov/legislators/membership/2026/id1179"
+    },
+    {
+      "title": "Public source",
+      "url": "https://legislature.idaho.gov/senate/membership"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

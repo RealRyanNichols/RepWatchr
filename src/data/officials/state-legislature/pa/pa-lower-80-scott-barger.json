@@ -1,0 +1,61 @@
+{
+  "id": "scott-barger",
+  "name": "Scott Barger",
+  "firstName": "Scott",
+  "lastName": "Barger",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-80",
+  "jurisdiction": "Pennsylvania House of Representatives",
+  "county": [
+    "Pennsylvania"
+  ],
+  "termStart": "2024-12-01",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 409, Irvis Office Building P.O. Box 202080, Harrisburg, PA 17120",
+    "phone": "717-787-9020",
+    "email": "sbarger@pahousegop.com",
+    "website": "https://repbarger.com/"
+  },
+  "bio": "Scott Barger serves as State Representative for Pennsylvania House of Representatives District 80. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "PA",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://repbarger.com/"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/pa/legislature/Scott-Barger-983dc33a-559e-4f01-9c60-08fed48a1415.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Scott_Barger_(Pennsylvania)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Scott_Barger"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/214872/scott-barger"
+    },
+    {
+      "title": "Public source",
+      "url": "https://repbarger.com"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/scottdbarger"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.palegis.us/house/members/bio/2027/rep-barger"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

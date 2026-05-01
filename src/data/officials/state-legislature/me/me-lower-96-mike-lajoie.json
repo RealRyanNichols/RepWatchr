@@ -1,0 +1,60 @@
+{
+  "id": "mike-lajoie",
+  "name": "Mike Lajoie",
+  "firstName": "Mike",
+  "lastName": "Lajoie",
+  "photo": "/images/officials/state-legislature/me/mike-lajoie.jpg",
+  "photoSourceUrl": "https://legislature.maine.gov/house/house/Repository/MemberProfiles/5dfb974c-7ace-4bd3-86bf-d975d1ac8aa1_lajoma.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-96",
+  "jurisdiction": "Maine House of Representatives",
+  "county": [
+    "Maine"
+  ],
+  "termStart": "2022-12-07",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 333, House Democratic Office 2 State House Station, Augusta, ME 04333",
+    "phone": "800-423-2900",
+    "email": "michel.lajoie@legislature.maine.gov",
+    "website": "https://legislature.maine.gov/house/house/MemberProfiles/Details/212"
+  },
+  "bio": "Mike Lajoie serves as State Representative for Maine House of Representatives District 96. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "ME",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://legislature.maine.gov/house/house/MemberProfiles/Details/212"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/me/legislature/Michel-A-Lajoie-c3185181-4ae9-42ce-8bf5-9a2f04c2422b.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://legislature.maine.gov/house/house/Repository/MemberProfiles/5dfb974c-7ace-4bd3-86bf-d975d1ac8aa1_lajoma.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Michel_Lajoie"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Mike_Lajoie"
+    },
+    {
+      "title": "Public source",
+      "url": "https://legislature.maine.gov/house/house/MemberProfiles/ListAlpha"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/michel-mike-lajoie-7619185b"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

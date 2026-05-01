@@ -1,0 +1,72 @@
+{
+  "id": "sonya-harper",
+  "name": "Sonya Harper",
+  "firstName": "Sonya",
+  "lastName": "Harper",
+  "photo": "/images/officials/state-legislature/il/sonya-harper.jpg",
+  "photoSourceUrl": "https://cdn.ilga.gov/assets/img/members/{04C99384-69F8-4ACE-9E43-11E21CC5F820}.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-6",
+  "jurisdiction": "Illinois House of Representatives",
+  "county": [
+    "Illinois"
+  ],
+  "termStart": "2015-10-20",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 274-S, Stratton Office Building, Springfield, IL 62706",
+    "phone": "217-782-5971",
+    "email": "repsonyaharper@gmail.com",
+    "website": "https://ilga.gov/house/Rep.asp?GA=101&MemberID=2670"
+  },
+  "bio": "Sonya Harper serves as State Representative for Illinois House of Representatives District 6. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "IL",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://ilga.gov/house/Rep.asp?GA=101&MemberID=2670"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/il/legislature/Sonya-M-Harper-8a39d16f-edbf-454b-8a77-33030fa9a8c2.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://cdn.ilga.gov/assets/img/members/{04C99384-69F8-4ACE-9E43-11E21CC5F820}.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Sonya_Harper"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Sonya_Harper"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ilga.gov/house/default.asp?GA=101"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ilga.gov/house/default.asp?GA=102"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ilga.gov/house/default.asp?GA=103"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ilga.gov/house/Rep.asp?GA=102&MemberID=2892"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ilga.gov/house/Rep.asp?GA=103&MemberID=3097"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

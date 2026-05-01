@@ -1,0 +1,64 @@
+{
+  "id": "kristin-bahner",
+  "name": "Kristin Bahner",
+  "firstName": "Kristin",
+  "lastName": "Bahner",
+  "photo": "/images/officials/state-legislature/mn/kristin-bahner.jpg",
+  "photoSourceUrl": "https://www.house.mn.gov/hinfo/memberimgls94/37B.gif",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-37B",
+  "jurisdiction": "Minnesota House of Representatives",
+  "county": [
+    "Minnesota"
+  ],
+  "termStart": "2023-01-03",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Centennial Office Building 658 Cedar St., Fifth Floor, St. Paul, MN 55155",
+    "phone": "651-296-5502",
+    "email": "rep.kristin.bahner@house.mn.gov",
+    "website": "https://www.house.mn.gov/members/profile/15505"
+  },
+  "bio": "Kristin Bahner serves as State Representative for Minnesota House of Representatives District 37B. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "MN",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.house.mn.gov/members/profile/15505"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/mn/legislature/Kristin-Bahner-ad111cf3-f5f9-4e94-a087-dc39ce1fb136.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://www.house.mn.gov/hinfo/memberimgls94/37B.gif"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Kristin_Bahner"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Kristin_Bahner"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/171548/kristin-bahner"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.house.leg.state.mn.us/members/hmem.asp"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/kristinbahner"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

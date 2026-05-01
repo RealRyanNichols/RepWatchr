@@ -1,0 +1,60 @@
+{
+  "id": "keri-heintzeman",
+  "name": "Keri Heintzeman",
+  "firstName": "Keri",
+  "lastName": "Heintzeman",
+  "photo": "/images/officials/state-legislature/mn/keri-heintzeman.jpg",
+  "photoSourceUrl": "https://www.senate.mn/graphics/06Heintzeman.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-6",
+  "jurisdiction": "Minnesota Senate",
+  "county": [
+    "Minnesota"
+  ],
+  "termStart": "2025-05-06",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 2235, Minnesota Senate Building 95 University Ave. West, St. Paul, MN 55155",
+    "phone": "651-296-7079",
+    "email": "sen.keri.heintzeman@mnsenate.gov",
+    "website": "https://www.senate.mn/members/member_bio.html?mem_id=1276"
+  },
+  "bio": "Keri Heintzeman serves as State Senator for Minnesota Senate District 6. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "MN",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.senate.mn/members/member_bio.html?mem_id=1276"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/mn/legislature/Keri-Heintzeman-4d922135-f178-4e50-8439-ebbf47cf025c.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://www.senate.mn/graphics/06Heintzeman.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Keri_Heintzeman"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Keri_Heintzeman"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/222639/keri-heintzeman"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/keri-heintzeman-a29b53128"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

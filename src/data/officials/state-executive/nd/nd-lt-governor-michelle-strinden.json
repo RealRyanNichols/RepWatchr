@@ -1,0 +1,72 @@
+{
+  "id": "michelle-strinden",
+  "name": "Michelle Strinden",
+  "firstName": "Michelle",
+  "lastName": "Strinden",
+  "photo": "/images/officials/state-executive/nd/michelle-strinden.jpg",
+  "photoSourceUrl": "https://www.governor.nd.gov/sites/www/files/documents/portraits/LtGovMichelleStrinden.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "Lieutenant Governor",
+  "district": "North Dakota",
+  "jurisdiction": "North Dakota statewide public office",
+  "county": [
+    "North Dakota"
+  ],
+  "termStart": "2024-12-15",
+  "termEnd": "2028-12-15",
+  "contactInfo": {
+    "office": "600 East Boulevard Avenue; Bismarck, ND 58505-0100",
+    "phone": "701-328-2200",
+    "email": "mstrinden@ndlegis.gov",
+    "website": "https://www.legis.nd.gov/assembly/66-2019/members/house/representative-michelle-strinden"
+  },
+  "bio": "Michelle Strinden is listed as Lieutenant Governor for North Dakota. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "ND",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.legis.nd.gov/assembly/66-2019/members/house/representative-michelle-strinden"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/nd/executive/Michelle-Strinden-a6e733ce-ccdc-425a-bb9b-9010a09c3933.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://www.governor.nd.gov/sites/www/files/documents/portraits/LtGovMichelleStrinden.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Michelle_Strinden"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/181415/michelle-strinden"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ndlegis.gov/biography/michelle-strinden"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.legis.nd.gov/assembly/67-2021/members/house/representative-michelle-strinden"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.legis.nd.gov/assembly/67-2021/members/members-by-district"
+    },
+    {
+      "title": "members list page",
+      "url": "https://www.ndlegis.gov/assembly/68-2023/regular/members?combine=&field_legis_chamber_target_id=All&field_legis_district_target_id=All&field_legislator_party_target_id=All&page=7"
+    },
+    {
+      "title": "members list page",
+      "url": "https://www.ndlegis.gov/assembly/68-2023/regular/members?page=7"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

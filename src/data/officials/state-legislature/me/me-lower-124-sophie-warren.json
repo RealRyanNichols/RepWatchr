@@ -1,0 +1,56 @@
+{
+  "id": "sophie-warren",
+  "name": "Sophie Warren",
+  "firstName": "Sophie",
+  "lastName": "Warren",
+  "photo": "/images/officials/state-legislature/me/sophie-warren.jpg",
+  "photoSourceUrl": "https://legislature.maine.gov/house/house/Repository/MemberProfiles/cf752b53-787f-40ea-980b-165536a3a6c7_Warren.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-124",
+  "jurisdiction": "Maine House of Representatives",
+  "county": [
+    "Maine"
+  ],
+  "termStart": "2022-12-07",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Office of the Clerk of the House 2 State House Station, Augusta, ME 04333",
+    "phone": "800-423-2900",
+    "email": "sophia.warren@legislature.maine.gov",
+    "website": "https://legislature.maine.gov/house/house/MemberProfiles/Details/1413"
+  },
+  "bio": "Sophie Warren serves as State Representative for Maine House of Representatives District 124. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "ME",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://legislature.maine.gov/house/house/MemberProfiles/Details/1413"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/me/legislature/Sophia-B-Warren-140459ab-ba63-410a-819c-aec28c2f2f66.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://legislature.maine.gov/house/house/Repository/MemberProfiles/cf752b53-787f-40ea-980b-165536a3a6c7_Warren.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Sophia_Warren"
+    },
+    {
+      "title": "Public source",
+      "url": "https://legislature.maine.gov/house/house/MemberProfiles/ListAlpha"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/sophiabaileywarren"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

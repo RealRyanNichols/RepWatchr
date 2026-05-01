@@ -1,0 +1,72 @@
+{
+  "id": "bruce-ayers",
+  "name": "Bruce Ayers",
+  "firstName": "Bruce",
+  "lastName": "Ayers",
+  "photo": "/images/officials/state-legislature/ma/bruce-ayers.jpg",
+  "photoSourceUrl": "https://malegislature.gov/Legislators/Profile/170/BJA1.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-1st Norfolk",
+  "jurisdiction": "Massachusetts House of Representatives",
+  "county": [
+    "Massachusetts"
+  ],
+  "termStart": "1999-01-04",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 473-C, State House 24 Beacon St., Boston, MA 02133",
+    "phone": "617-722-2070",
+    "email": "bruce.ayers@mahouse.gov",
+    "website": "https://malegislature.gov/Legislators/Profile/BJA1"
+  },
+  "bio": "Bruce Ayers serves as State Representative for Massachusetts House of Representatives District 1st Norfolk. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "MA",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://malegislature.gov/Legislators/Profile/BJA1"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ma/legislature/Bruce-J-Ayers-f81b07bd-cc43-47be-95ea-dca26f19a647.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://malegislature.gov/Legislators/Profile/170/BJA1.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Bruce_Ayers"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Bruce_Ayers"
+    },
+    {
+      "title": "Public source",
+      "url": "https://malegislature.gov/api/GeneralCourts/192/LegislativeMembers"
+    },
+    {
+      "title": "Public source",
+      "url": "https://malegislature.gov/api/GeneralCourts/192/LegislativeMembers/"
+    },
+    {
+      "title": "Public source",
+      "url": "https://malegislature.gov/api/GeneralCourts/192/LegislativeMembers/BJA1"
+    },
+    {
+      "title": "Public source",
+      "url": "https://malegislature.gov/api/GeneralCourts/193/LegislativeMembers"
+    },
+    {
+      "title": "Public source",
+      "url": "https://malegislature.gov/api/GeneralCourts/193/LegislativeMembers/"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

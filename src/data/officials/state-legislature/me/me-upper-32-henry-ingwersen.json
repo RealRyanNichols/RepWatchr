@@ -1,0 +1,72 @@
+{
+  "id": "henry-ingwersen",
+  "name": "Henry Ingwersen",
+  "firstName": "Henry",
+  "lastName": "Ingwersen",
+  "photo": "/images/officials/state-legislature/me/henry-ingwersen.jpg",
+  "photoSourceUrl": "https://legislature.maine.gov/uploads/visual_edit/ingwersen-1024x1024.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-32",
+  "jurisdiction": "Maine Senate",
+  "county": [
+    "Maine"
+  ],
+  "termStart": "2022-12-07",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "3 State House Station, Augusta, ME 04333",
+    "phone": "207-287-1515",
+    "email": "henry.ingwersen@legislature.maine.gov",
+    "website": "https://legislature.maine.gov/District32"
+  },
+  "bio": "Henry Ingwersen serves as State Senator for Maine Senate District 32. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "ME",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://legislature.maine.gov/District32"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/me/legislature/Henry-Ingwersen-050d357e-3b22-4647-942f-56c9d8755194.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://legislature.maine.gov/uploads/visual_edit/ingwersen-1024x1024.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Henry_Ingwersen"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Henry_Ingwersen"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/181160/henry-ingwersen"
+    },
+    {
+      "title": "Public source",
+      "url": "https://legislature.maine.gov/district32"
+    },
+    {
+      "title": "Public source",
+      "url": "https://legislature.maine.gov/uploads/visual_edit/131-senator-contact-information-2.xlsx"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/henry-ingwersen-32790761"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.mainesenate.org/senator/senator/henry-ingwersen"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

@@ -1,0 +1,60 @@
+{
+  "id": "dan-leclerc",
+  "name": "Dan LeClerc",
+  "firstName": "Dan",
+  "lastName": "LeClerc",
+  "photo": "/images/officials/state-legislature/nh/dan-leclerc.jpg",
+  "photoSourceUrl": "https://storage.googleapis.com/enview-dev-public-general/legislative-people-photos/123345.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-Hillsborough 34",
+  "jurisdiction": "New Hampshire House of Representatives",
+  "county": [
+    "New Hampshire"
+  ],
+  "termStart": "2022-12-07",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "State House 107 N. State St., Concord, NH 03301",
+    "phone": "603-365-6006",
+    "email": "daniel.leclerc@gc.nh.gov",
+    "website": "https://gc.nh.gov/house/members/member.aspx?pid=10814"
+  },
+  "bio": "Dan LeClerc serves as State Representative for New Hampshire House of Representatives District Hillsborough 34. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "NH",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://gc.nh.gov/house/members/member.aspx?pid=10814"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/nh/legislature/Daniel-J-LeClerc-ce0bbcca-54b7-40f4-817f-4f17e7a212a1.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://storage.googleapis.com/enview-dev-public-general/legislative-people-photos/123345.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Daniel_LeClerc"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Daniel_LeClerc"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/208838/daniel-leclerc"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.gencourt.state.nh.us/house/members/member.aspx?pid=10814"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

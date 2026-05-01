@@ -1,0 +1,64 @@
+{
+  "id": "jordan-bridges",
+  "name": "Jordan Bridges",
+  "firstName": "Jordan",
+  "lastName": "Bridges",
+  "photo": "/images/officials/state-legislature/wv/jordan-bridges.jpg",
+  "photoSourceUrl": "http://www.wvlegislature.gov/images/members/2021/house/bridges_jordan.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "Delegate",
+  "district": "HD-33",
+  "jurisdiction": "West Virginia House of Delegates",
+  "county": [
+    "West Virginia"
+  ],
+  "termStart": "2022-12-01",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "State Capitol Room 212E, Complex, Building 1 1900 Kanawha Blvd. East, Charleston, WV 25305",
+    "phone": "304-340-3297",
+    "email": "jordan.bridges@wvhouse.gov",
+    "website": "https://www.legis.state.wv.us/House/lawmaker.cfm?member=Delegate+Bridges"
+  },
+  "bio": "Jordan Bridges serves as Delegate for West Virginia House of Delegates District 33. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "WV",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.legis.state.wv.us/House/lawmaker.cfm?member=Delegate+Bridges"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/wv/legislature/Jordan-Bridges-be682c29-e66f-4a19-89cc-761c60330eea.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "http://www.wvlegislature.gov/images/members/2021/house/bridges_jordan.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Jordan_Bridges_(West_Virginia)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Jordan_Bridges_(politician)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/167262/jordan-bridges"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.wvlegislature.gov/House/lawmaker.cfm?member=Delegate%20Bridges"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.wvlegislature.gov/House/roster.cfm"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

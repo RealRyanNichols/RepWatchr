@@ -1,0 +1,68 @@
+{
+  "id": "yolanda-young",
+  "name": "Yolanda Young",
+  "firstName": "Yolanda",
+  "lastName": "Young",
+  "photo": "/images/officials/state-legislature/mo/yolanda-young.jpg",
+  "photoSourceUrl": "https://house.mo.gov/MemberPhoto.aspx?id=2168",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-22",
+  "jurisdiction": "Missouri House of Representatives",
+  "county": [
+    "Missouri"
+  ],
+  "termStart": "2020-01-08",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 105-A, 201 W. Capitol Ave., Jefferson City, MO 65101",
+    "phone": "573-751-3129",
+    "email": "yolanda.young@house.mo.gov",
+    "website": "https://house.mo.gov/MemberDetails.aspx?district=022"
+  },
+  "bio": "Yolanda Young serves as State Representative for Missouri House of Representatives District 22. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "MO",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://house.mo.gov/MemberDetails.aspx?district=022"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/mo/legislature/Yolanda-Young-e2fb607f-9af9-4d80-b473-8ed33e3d942d.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://house.mo.gov/MemberPhoto.aspx?id=2168"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Yolanda_Young"
+    },
+    {
+      "title": "Public source",
+      "url": "https://house.mo.gov/MemberDetails.aspx?year=2021&code=R&district=022"
+    },
+    {
+      "title": "Public source",
+      "url": "https://house.mo.gov/MemberDetails.aspx?year=2023&code=R&district=022"
+    },
+    {
+      "title": "Public source",
+      "url": "https://house.mo.gov/MemberGridCluster.aspx"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.house.mo.gov/MemberDetails.aspx?district=22"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/yolanda-young-mo22rep"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

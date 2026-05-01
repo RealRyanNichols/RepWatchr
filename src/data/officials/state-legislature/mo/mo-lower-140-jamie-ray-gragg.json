@@ -1,0 +1,52 @@
+{
+  "id": "jamie-ray-gragg",
+  "name": "Jamie Ray Gragg",
+  "firstName": "Jamie Ray",
+  "lastName": "Gragg",
+  "photo": "/images/officials/state-legislature/mo/jamie-ray-gragg.jpg",
+  "photoSourceUrl": "https://house.mo.gov/MemberPhoto.aspx?id=2386",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-140",
+  "jurisdiction": "Missouri House of Representatives",
+  "county": [
+    "Missouri"
+  ],
+  "termStart": "2023-01-04",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 412-A, 201 W. Capitol Ave., Jefferson City, MO 65101",
+    "phone": "573-751-2565",
+    "email": "jamieray.gragg@house.mo.gov",
+    "website": "https://house.mo.gov/MemberDetails.aspx?district=140"
+  },
+  "bio": "Jamie Ray Gragg serves as State Representative for Missouri House of Representatives District 140. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "MO",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://house.mo.gov/MemberDetails.aspx?district=140"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/mo/legislature/Jamie-Ray-Gragg-1235305e-980d-4eb8-8743-8d0d8a455c4e.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://house.mo.gov/MemberPhoto.aspx?id=2386"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Jamie_Ray_Gragg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://house.mo.gov/MemberDetails.aspx?year=2023&code=R&district=140"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

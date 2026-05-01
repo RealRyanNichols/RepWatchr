@@ -1,0 +1,64 @@
+{
+  "id": "jess-hanson",
+  "name": "Jess Hanson",
+  "firstName": "Jess",
+  "lastName": "Hanson",
+  "photo": "/images/officials/state-legislature/mn/jess-hanson.jpg",
+  "photoSourceUrl": "https://www.house.mn.gov/hinfo/memberimgls94/55A.gif?v=112221",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-55A",
+  "jurisdiction": "Minnesota House of Representatives",
+  "county": [
+    "Minnesota"
+  ],
+  "termStart": "2023-01-03",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Centennial Office Building 658 Cedar St., Fifth Floor, St. Paul, MN 55155",
+    "phone": "651-296-4212",
+    "email": "rep.jessica.hanson@house.mn.gov",
+    "website": "https://www.house.mn.gov/members/profile/15563"
+  },
+  "bio": "Jess Hanson serves as State Representative for Minnesota House of Representatives District 55A. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "MN",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.house.mn.gov/members/profile/15563"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/mn/legislature/Jessica-Hanson-5099a61c-2d2a-41d0-a03d-ccbbb0edbf15.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://www.house.mn.gov/hinfo/memberimgls94/55A.gif?v=112221"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Jessica_Hanson"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Jessica_Hanson"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/194236/jessica-hanson"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.house.leg.state.mn.us/members/hmem.asp"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/jessicahanson13"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

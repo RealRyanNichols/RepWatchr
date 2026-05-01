@@ -1,0 +1,72 @@
+{
+  "id": "megan-dahle",
+  "name": "Megan Dahle",
+  "firstName": "Megan",
+  "lastName": "Dahle",
+  "photo": "/images/officials/state-legislature/ca/megan-dahle.jpg",
+  "photoSourceUrl": "https://www.assembly.ca.gov/sites/assembly.ca.gov/files/memberphotos/mdahle-ad01.gif",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-1",
+  "jurisdiction": "California Senate",
+  "county": [
+    "California"
+  ],
+  "termStart": "2024-12-02",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "1021 O St. Suite 7230, Sacramento, CA 95814",
+    "phone": "916-651-4001",
+    "email": "senator.dahle@senate.ca.gov",
+    "website": "https://ad01.asmrc.org/"
+  },
+  "bio": "Megan Dahle serves as State Senator for California Senate District 1. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "CA",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://ad01.asmrc.org/"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ca/legislature/Megan-Dahle-1509d608-4d2b-4ebc-be73-b4cd6c06b7c6.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://www.assembly.ca.gov/sites/assembly.ca.gov/files/memberphotos/mdahle-ad01.gif"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ad01.asmrc.org"
+    },
+    {
+      "title": "Public source",
+      "url": "https://assembly.ca.gov/assemblymembers"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Megan_Dahle"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Megan_Dahle"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/186798/megan-dahle"
+    },
+    {
+      "title": "Public source",
+      "url": "https://sr01.senate.ca.gov"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.assembly.ca.gov/assemblymembers"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

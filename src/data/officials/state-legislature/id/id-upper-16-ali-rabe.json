@@ -1,0 +1,72 @@
+{
+  "id": "ali-rabe",
+  "name": "Ali Rabe",
+  "firstName": "Ali",
+  "lastName": "Rabe",
+  "photo": "/images/officials/state-legislature/id/ali-rabe.jpg",
+  "photoSourceUrl": "https://cdn.theorg.com/61b74bbb-61b5-48d5-a84d-fb498da306b9_thumb.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-16",
+  "jurisdiction": "Idaho Senate",
+  "county": [
+    "Idaho"
+  ],
+  "termStart": "2022-12-01",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "P.O. Box 83720 700 W. Jefferson St., Boise, ID 83720",
+    "phone": "208-332-1409",
+    "email": "arabe@senate.idaho.gov",
+    "website": "https://legislature.idaho.gov/legislators/membership/2023/id6687/"
+  },
+  "bio": "Ali Rabe serves as State Senator for Idaho Senate District 16. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "ID",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://legislature.idaho.gov/legislators/membership/2023/id6687/"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/id/legislature/Ali-Rabe-c77bc461-d0fe-47b4-8999-72e4eda69da1.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://cdn.theorg.com/61b74bbb-61b5-48d5-a84d-fb498da306b9_thumb.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Alison_Rabe"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Alison_Rabe"
+    },
+    {
+      "title": "Public source",
+      "url": "https://legislature.idaho.gov/legislators/membership/2023/id6687"
+    },
+    {
+      "title": "Public source",
+      "url": "https://legislature.idaho.gov/legislators/membership/2024/id6687"
+    },
+    {
+      "title": "Public source",
+      "url": "https://legislature.idaho.gov/legislators/membership/2026/id6687"
+    },
+    {
+      "title": "Public source",
+      "url": "https://legislature.idaho.gov/senate/membership"
+    },
+    {
+      "title": "Public source",
+      "url": "https://legislature.idaho.gov/senate/membership/"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

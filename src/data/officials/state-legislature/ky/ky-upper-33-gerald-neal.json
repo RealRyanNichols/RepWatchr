@@ -1,0 +1,64 @@
+{
+  "id": "gerald-neal",
+  "name": "Gerald Neal",
+  "firstName": "Gerald",
+  "lastName": "Neal",
+  "photo": "/images/officials/state-legislature/ky/gerald-neal.jpg",
+  "photoSourceUrl": "https://legislature.ky.gov/Legislators%20Thumbnail%20Images/senate133.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-33",
+  "jurisdiction": "Kentucky Senate",
+  "county": [
+    "Kentucky"
+  ],
+  "termStart": "1989-01-01",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "KY",
+    "phone": "502-776-1222",
+    "email": "gerald.neal@kylegislature.gov",
+    "website": "https://legislature.ky.gov/Legislators/Pages/Legislator-Profile.aspx?DistrictNumber=133",
+    "socialMedia": {
+      "x": "https://x.com/GeraldNeal33",
+      "twitter": "https://x.com/GeraldNeal33"
+    }
+  },
+  "bio": "Gerald Neal serves as State Senator for Kentucky Senate District 33. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "KY",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://legislature.ky.gov/Legislators/Pages/Legislator-Profile.aspx?DistrictNumber=133"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ky/legislature/Gerald-A-Neal-0d92a09c-ce23-46cd-9582-b7d1b08d76dd.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://legislature.ky.gov/Legislators%20Thumbnail%20Images/senate133.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Gerald_Neal"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Gerald_Neal"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/4041/gerald-neal"
+    },
+    {
+      "title": "Public source",
+      "url": "https://legislature.ky.gov/Legislators/senate"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

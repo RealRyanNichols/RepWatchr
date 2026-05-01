@@ -1,0 +1,71 @@
+{
+  "id": "doug-mastriano",
+  "name": "Doug Mastriano",
+  "firstName": "Doug",
+  "lastName": "Mastriano",
+  "party": "R",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-33",
+  "jurisdiction": "Pennsylvania Senate",
+  "county": [
+    "Pennsylvania"
+  ],
+  "termStart": "2019-06-10",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 170, Main Capitol Senate Box 203033, Harrisburg, PA 17120",
+    "phone": "717-787-4651",
+    "email": "dmastriano@pasen.gov",
+    "website": "https://senatormastriano.com/",
+    "socialMedia": {
+      "x": "https://x.com/senmastriano",
+      "twitter": "https://x.com/senmastriano",
+      "facebook": "https://facebook.com/SenatorDougMastriano",
+      "instagram": "https://instagram.com/senatormastriano"
+    }
+  },
+  "bio": "Doug Mastriano serves as State Senator for Pennsylvania Senate District 33. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "PA",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://senatormastriano.com/"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/pa/legislature/Doug-Mastriano-cda65f80-13e8-463c-88fa-6f5569a599bf.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Doug_Mastriano"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Douglas_V._Mastriano"
+    },
+    {
+      "title": "Public source",
+      "url": "https://senatormastriano.com"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.legis.state.pa.us/cfdocs/legis/home/member_information/mbrList.cfm?body=S&sort=alpha"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.legis.state.pa.us/cfdocs/legis/home/member_information/Senate_bio.cfm?id=1869"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.legis.state.pa.us/cfdocs/legis/home/member_information/senators_alpha.cfm"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.palegis.us/senate/members/bio/1869/sen-mastriano"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

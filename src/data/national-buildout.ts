@@ -1,3 +1,5 @@
+import { officialProfileCountsByJurisdiction } from "@/data/national-official-profile-counts";
+
 export type NationalBuildoutStatus = "loaded" | "partial" | "queued";
 
 export interface NationalJurisdictionBuildout {
@@ -100,7 +102,7 @@ const nationalStateSourcePlan = [
   "public social account links",
 ];
 
-export const nationalJurisdictionBuildouts: NationalJurisdictionBuildout[] = [
+const baseNationalJurisdictionBuildouts: NationalJurisdictionBuildout[] = [
   { code: "AL", name: "Alabama", status: "queued", modelEnabled: true, loadedProfileCount: 0, sourcePlan: nationalStateSourcePlan, note: "Federal/state model enabled; source import queued." },
   { code: "AK", name: "Alaska", status: "queued", modelEnabled: true, loadedProfileCount: 0, sourcePlan: nationalStateSourcePlan, note: "Federal/state model enabled; source import queued." },
   { code: "AZ", name: "Arizona", status: "queued", modelEnabled: true, loadedProfileCount: 0, sourcePlan: nationalStateSourcePlan, note: "Federal/state model enabled; source import queued." },
@@ -153,7 +155,7 @@ export const nationalJurisdictionBuildouts: NationalJurisdictionBuildout[] = [
   { code: "WY", name: "Wyoming", status: "queued", modelEnabled: true, loadedProfileCount: 0, sourcePlan: nationalStateSourcePlan, note: "Federal/state model enabled; source import queued." },
 ];
 
-export const nationalTerritoryBuildouts: NationalJurisdictionBuildout[] = [
+const baseNationalTerritoryBuildouts: NationalJurisdictionBuildout[] = [
   { code: "DC", name: "District of Columbia", status: "queued", modelEnabled: true, loadedProfileCount: 0, sourcePlan: nationalStateSourcePlan, note: "Federal/local model enabled; district source import queued." },
   { code: "AS", name: "American Samoa", status: "queued", modelEnabled: true, loadedProfileCount: 0, sourcePlan: nationalStateSourcePlan, note: "Delegate and territorial government model enabled; source import queued." },
   { code: "GU", name: "Guam", status: "queued", modelEnabled: true, loadedProfileCount: 0, sourcePlan: nationalStateSourcePlan, note: "Delegate and territorial government model enabled; source import queued." },
@@ -161,6 +163,23 @@ export const nationalTerritoryBuildouts: NationalJurisdictionBuildout[] = [
   { code: "PR", name: "Puerto Rico", status: "queued", modelEnabled: true, loadedProfileCount: 0, sourcePlan: nationalStateSourcePlan, note: "Resident commissioner and territorial government model enabled; source import queued." },
   { code: "VI", name: "U.S. Virgin Islands", status: "queued", modelEnabled: true, loadedProfileCount: 0, sourcePlan: nationalStateSourcePlan, note: "Delegate and territorial government model enabled; source import queued." },
 ];
+
+function applyOfficialProfileCounts(items: NationalJurisdictionBuildout[]): NationalJurisdictionBuildout[] {
+  return items.map((item) => {
+    const count = officialProfileCountsByJurisdiction[item.code] ?? item.loadedProfileCount;
+    if (count <= 0) return item;
+
+    return {
+      ...item,
+      status: "loaded",
+      loadedProfileCount: Math.max(item.loadedProfileCount, count),
+      note: `${count.toLocaleString()} source-seeded official profile files are loaded. County, city, school-board, attorney, media, vote, funding, and public-statement layers may still need deeper source buildout.`,
+    };
+  });
+}
+
+export const nationalJurisdictionBuildouts = applyOfficialProfileCounts(baseNationalJurisdictionBuildouts);
+export const nationalTerritoryBuildouts = applyOfficialProfileCounts(baseNationalTerritoryBuildouts);
 
 export const socialMonitoringConnections = [
   {

@@ -1,0 +1,69 @@
+{
+  "id": "richard-cash",
+  "name": "Richard Cash",
+  "firstName": "Richard",
+  "lastName": "Cash",
+  "party": "R",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-3",
+  "jurisdiction": "South Carolina Senate",
+  "county": [
+    "South Carolina"
+  ],
+  "termStart": "2017-06-06",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 506, Gressette Building P.O. Box 142, Columbia, SC 29201",
+    "phone": "803-212-6124",
+    "email": "richardcash@scsenate.gov",
+    "website": "https://scstatehouse.gov/member.php?code=0328409052"
+  },
+  "bio": "Richard Cash serves as State Senator for South Carolina Senate District 3. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "SC",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://scstatehouse.gov/member.php?code=0328409052"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/sc/legislature/Richard-J-Cash-69162972-6151-4fe2-b5fe-dee599d86ad3.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Richard_Cash"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Richard_Cash"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Richard_Cash_(politician)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/121778/richard-cash"
+    },
+    {
+      "title": "Public source",
+      "url": "https://scstatehouse.gov/member.php?chamber=S"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/richard-cash-18b91912"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.scstatehouse.gov/member.php?chamber=S"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.scstatehouse.gov/member.php?code=0328409052"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

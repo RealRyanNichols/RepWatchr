@@ -1,0 +1,60 @@
+{
+  "id": "hildy-angius",
+  "name": "Hildy Angius",
+  "firstName": "Hildy",
+  "lastName": "Angius",
+  "photo": "/images/officials/state-legislature/az/hildy-angius.jpg",
+  "photoSourceUrl": "https://www.azleg.gov/alisImages/MemberPhotos/57leg/Senate/ANGIUS.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-30",
+  "jurisdiction": "Arizona Senate",
+  "county": [
+    "Arizona"
+  ],
+  "termStart": "2025-01-13",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 302, 1700 W. Washington St., Phoenix, AZ 85007",
+    "phone": "602-926-5051",
+    "email": "hangius@azleg.gov",
+    "website": "https://www.azleg.gov/senate-member/?legislature=57&legislator=2373"
+  },
+  "bio": "Hildy Angius serves as State Senator for Arizona Senate District 30. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "AZ",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.azleg.gov/senate-member/?legislature=57&legislator=2373"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/az/legislature/Hildy-Angius-a739b3e9-8161-4b10-b007-3d1e90de791f.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://www.azleg.gov/alisImages/MemberPhotos/57leg/Senate/ANGIUS.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Hildy_Angius"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Hildy_Angius"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/156980/hildy-angius"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/hildy-angius-0b9a7a1a1"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

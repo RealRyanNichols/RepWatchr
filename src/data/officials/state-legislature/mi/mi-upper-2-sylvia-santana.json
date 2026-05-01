@@ -1,0 +1,72 @@
+{
+  "id": "sylvia-santana",
+  "name": "Sylvia Santana",
+  "firstName": "Sylvia",
+  "lastName": "Santana",
+  "photo": "/images/officials/state-legislature/mi/sylvia-santana.jpg",
+  "photoSourceUrl": "https://senatedems.com/santana/wp-content/uploads/sites/8/2022/12/Santana-Official-Portrait.jpeg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-2",
+  "jurisdiction": "Michigan Senate",
+  "county": [
+    "Michigan"
+  ],
+  "termStart": "2023-01-01",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 5600, Binsfeld Building P.O. Box 30036, Lansing, MI 48909",
+    "phone": "517-373-0990",
+    "email": "senssantana@senate.michigan.gov",
+    "website": "https://senatedems.com/santana"
+  },
+  "bio": "Sylvia Santana serves as State Senator for Michigan Senate District 2. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "MI",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://senatedems.com/santana"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/mi/legislature/Sylvia-Santana-8e302b97-4868-4575-a56f-3881e91ae0f8.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://senatedems.com/santana/wp-content/uploads/sites/8/2022/12/Santana-Official-Portrait.jpeg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Sylvia_Santana"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Sylvia_Santana"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/170218/sylvia-santana"
+    },
+    {
+      "title": "Public source",
+      "url": "https://senate.michigan.gov/senatorinfo_list.html"
+    },
+    {
+      "title": "Members List JSON Data Page",
+      "url": "https://senate.michigan.gov/senators/SenatorData.json"
+    },
+    {
+      "title": "Members List HTML page",
+      "url": "https://senate.michigan.gov/senators/senatorinfo_list.html"
+    },
+    {
+      "title": "Public source",
+      "url": "https://senatedems.com/santana/"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

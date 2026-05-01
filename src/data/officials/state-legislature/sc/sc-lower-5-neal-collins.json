@@ -1,0 +1,65 @@
+{
+  "id": "neal-collins",
+  "name": "Neal Collins",
+  "firstName": "Neal",
+  "lastName": "Collins",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-5",
+  "jurisdiction": "South Carolina House of Representatives",
+  "county": [
+    "South Carolina"
+  ],
+  "termStart": "2014-11-10",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 418C, Blatt Building P.O. Box 11867, Columbia, SC 29201",
+    "phone": "803-212-6913",
+    "email": "nealcollins@schouse.gov",
+    "website": "https://scstatehouse.gov/member.php?code=0388636317"
+  },
+  "bio": "Neal Collins serves as State Representative for South Carolina House of Representatives District 5. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "SC",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://scstatehouse.gov/member.php?code=0388636317"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/sc/legislature/Neal-A-Collins-73b7f73e-705e-409a-b582-51060e573fd5.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Neal_Collins"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Neal_Collins_(politician)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/121780/neal-collins"
+    },
+    {
+      "title": "Public source",
+      "url": "https://scstatehouse.gov/member.php?chamber=H"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/neal-collins-261395220"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.scstatehouse.gov/member.php?chamber=H"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.scstatehouse.gov/member.php?code=0388636317"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

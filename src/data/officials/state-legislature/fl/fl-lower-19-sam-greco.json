@@ -1,0 +1,56 @@
+{
+  "id": "sam-greco",
+  "name": "Sam Greco",
+  "firstName": "Sam",
+  "lastName": "Greco",
+  "photo": "/images/officials/state-legislature/fl/sam-greco.jpg",
+  "photoSourceUrl": "https://s3.amazonaws.com/ballotpedia-api4/files/thumbs/200/300/SamGreco2024.png",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-19",
+  "jurisdiction": "Florida House of Representatives",
+  "county": [
+    "Florida"
+  ],
+  "termStart": "2024-11-05",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 1401, The Capitol 402 S. Monroe St., Tallahassee, FL 32399",
+    "phone": "850-717-5019",
+    "email": "sam.greco@flhouse.gov",
+    "website": "https://www.flhouse.gov/Sections/Representatives/details.aspx?MemberId=4906"
+  },
+  "bio": "Sam Greco serves as State Representative for Florida House of Representatives District 19. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "FL",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.flhouse.gov/Sections/Representatives/details.aspx?MemberId=4906"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/fl/legislature/Sam-Greco-2da96449-663b-48ed-ab70-ef4e433afda3.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://s3.amazonaws.com/ballotpedia-api4/files/thumbs/200/300/SamGreco2024.png"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Sam_Greco"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/samuel-greco"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.myfloridahouse.gov/Sections/Representatives/details.aspx?MemberId=4906&LegislativeTermId=91"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

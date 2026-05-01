@@ -1,0 +1,72 @@
+{
+  "id": "blaine-wilhour",
+  "name": "Blaine Wilhour",
+  "firstName": "Blaine",
+  "lastName": "Wilhour",
+  "photo": "/images/officials/state-legislature/il/blaine-wilhour.jpg",
+  "photoSourceUrl": "https://cdn.ilga.gov/assets/img/members/{66C5580C-A414-41BB-B3AC-638925AC34CD}.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-110",
+  "jurisdiction": "Illinois House of Representatives",
+  "county": [
+    "Illinois"
+  ],
+  "termStart": "2023-01-11",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 213-N, Stratton Office Building, Springfield, IL 62706",
+    "phone": "217-782-0066",
+    "email": "wilhour@ilhousegop.org",
+    "website": "https://ilga.gov/house/Rep.asp?GA=101&MemberID=2761"
+  },
+  "bio": "Blaine Wilhour serves as State Representative for Illinois House of Representatives District 110. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "IL",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://ilga.gov/house/Rep.asp?GA=101&MemberID=2761"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/il/legislature/Blaine-Wilhour-500ffee4-de06-4a0b-b4df-f8e6f52c4e96.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://cdn.ilga.gov/assets/img/members/{66C5580C-A414-41BB-B3AC-638925AC34CD}.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Blaine_Wilhour"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Blaine_Wilhour"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ilga.gov/house/default.asp?GA=101"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ilga.gov/house/default.asp?GA=102"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ilga.gov/house/default.asp?GA=103"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ilga.gov/house/Rep.asp?GA=102&MemberID=2962"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ilga.gov/house/Rep.asp?GA=103&MemberID=3156"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

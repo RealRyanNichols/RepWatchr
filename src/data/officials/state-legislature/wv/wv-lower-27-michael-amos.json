@@ -1,0 +1,64 @@
+{
+  "id": "michael-amos",
+  "name": "Michael Amos",
+  "firstName": "Michael",
+  "lastName": "Amos",
+  "photo": "/images/officials/state-legislature/wv/michael-amos.jpg",
+  "photoSourceUrl": "https://www.wvlegislature.gov/images/members/2025/house/amos_michael.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "Delegate",
+  "district": "HD-27",
+  "jurisdiction": "West Virginia House of Delegates",
+  "county": [
+    "West Virginia"
+  ],
+  "termStart": "2024-12-01",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "State Capitol Room 151R, Complex, Building 1 1900 Kanawha Blvd. East, Charleston, WV 25305",
+    "phone": "304-340-3355",
+    "email": "michael.amos@wvhouse.gov",
+    "website": "https://www.wvlegislature.gov/House/lawmaker.cfm?member=Delegate%20Amos"
+  },
+  "bio": "Michael Amos serves as Delegate for West Virginia House of Delegates District 27. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "WV",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.wvlegislature.gov/House/lawmaker.cfm?member=Delegate%20Amos"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/wv/legislature/Michael-Amos-3d5db222-66fb-4f3a-a178-d12246697654.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://www.wvlegislature.gov/images/members/2025/house/amos_michael.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Michael_Amos"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Michael_Amos_(politician)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/214484/michael-amos"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/michael-amos-md-dabfm-dabom-6b89b6198"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/michael-amos-md-faafp-dabfm-dabom-6b89b6198"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

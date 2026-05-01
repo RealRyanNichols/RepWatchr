@@ -1,0 +1,53 @@
+{
+  "id": "aaron-reinhardt",
+  "name": "Aaron Reinhardt",
+  "firstName": "Aaron",
+  "lastName": "Reinhardt",
+  "party": "R",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-37",
+  "jurisdiction": "Oklahoma Senate",
+  "county": [
+    "Oklahoma"
+  ],
+  "termStart": "2024-11-20",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 528.2, 2300 N. Lincoln Blvd., Oklahoma City, OK 73105",
+    "phone": "405-521-5600",
+    "email": "aaron.reinhardt@oksenate.gov",
+    "website": "https://oksenate.gov/senators/aaron-reinhardt"
+  },
+  "bio": "Aaron Reinhardt serves as State Senator for Oklahoma Senate District 37. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "OK",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://oksenate.gov/senators/aaron-reinhardt"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ok/legislature/Aaron-Reinhardt-78900b72-692c-4b5f-ac8b-290577d6abd4.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Aaron_Reinhardt"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Aaron_Reinhardt"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/216446/aaron-reinhardt"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/aaron-reinhardt-5b7a6949"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

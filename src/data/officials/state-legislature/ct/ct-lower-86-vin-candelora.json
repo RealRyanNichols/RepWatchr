@@ -1,0 +1,65 @@
+{
+  "id": "vin-candelora",
+  "name": "Vin Candelora",
+  "firstName": "Vin",
+  "lastName": "Candelora",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-86",
+  "jurisdiction": "Connecticut House of Representatives",
+  "county": [
+    "Connecticut"
+  ],
+  "termStart": "",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 4200, Legislative Office Building 300 Capitol Ave., Hartford, CT 06106",
+    "phone": "860-240-8700",
+    "email": "vincent.candelora@housegop.ct.gov",
+    "website": "https://cga.ct.gov/asp/CGABillStatus/CGAMemberBills.asp?dist_code=%27086%27&dist_name=Candelora,%20Vincent%20J."
+  },
+  "bio": "Vin Candelora serves as State Representative for Connecticut House of Representatives District 86. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "CT",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://cga.ct.gov/asp/CGABillStatus/CGAMemberBills.asp?dist_code=%27086%27&dist_name=Candelora,%20Vincent%20J."
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ct/legislature/Vincent-J-Candelora-1d02baaa-ab25-4607-b33f-40948893f928.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "ftp://ftp.cga.ct.gov/pub/data/LegislatorDatabase.csv"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Vincent_Candelora"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Vincent_Candelora"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/65266/vin-candelora"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.cthousegop.com/Candelora/main"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.cthousegop.com/Candelora/main/"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/vincent-candelora-8981a67"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

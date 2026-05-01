@@ -1,0 +1,72 @@
+{
+  "id": "susannah-whipps",
+  "name": "Susannah Whipps",
+  "firstName": "Susannah",
+  "lastName": "Whipps",
+  "photo": "/images/officials/state-legislature/ma/susannah-whipps.jpg",
+  "photoSourceUrl": "https://malegislature.gov/Legislators/Profile/170/SLG1.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "I",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-2nd Franklin",
+  "jurisdiction": "Massachusetts House of Representatives",
+  "county": [
+    "Massachusetts"
+  ],
+  "termStart": "2017-08-22",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 540, State House 24 Beacon St., Boston, MA 02133",
+    "phone": "617-722-2090",
+    "email": "susannah.whipps@mahouse.gov",
+    "website": "https://malegislature.gov/Legislators/Profile/SLG1"
+  },
+  "bio": "Susannah Whipps serves as State Representative for Massachusetts House of Representatives District 2nd Franklin. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "MA",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://malegislature.gov/Legislators/Profile/SLG1"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ma/legislature/Susannah-M-Whipps-76b07f35-1876-4259-9c0a-bdf595541c39.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://malegislature.gov/Legislators/Profile/170/SLG1.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Susannah_Whipps"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Susannah_Whipps_Lee"
+    },
+    {
+      "title": "Public source",
+      "url": "https://malegislature.gov/api/GeneralCourts/192/LegislativeMembers"
+    },
+    {
+      "title": "Public source",
+      "url": "https://malegislature.gov/api/GeneralCourts/192/LegislativeMembers/"
+    },
+    {
+      "title": "Public source",
+      "url": "https://malegislature.gov/api/GeneralCourts/192/LegislativeMembers/SLG1"
+    },
+    {
+      "title": "Public source",
+      "url": "https://malegislature.gov/api/GeneralCourts/193/LegislativeMembers"
+    },
+    {
+      "title": "Public source",
+      "url": "https://malegislature.gov/api/GeneralCourts/193/LegislativeMembers/"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

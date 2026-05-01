@@ -1,0 +1,60 @@
+{
+  "id": "brian-rasel",
+  "name": "Brian Rasel",
+  "firstName": "Brian",
+  "lastName": "Rasel",
+  "photo": "/images/officials/state-legislature/pa/brian-rasel.jpg",
+  "photoSourceUrl": "https://www.palegis.us/resources/images/members/200/2025.jpg?20241220",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-56",
+  "jurisdiction": "Pennsylvania House of Representatives",
+  "county": [
+    "Pennsylvania"
+  ],
+  "termStart": "2024-12-01",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 147B, East Wing P.O. Box 202056, Harrisburg, PA 17120",
+    "phone": "717-260-6132",
+    "email": "brasel@pahousegop.com",
+    "website": "https://reprasel.com/"
+  },
+  "bio": "Brian Rasel serves as State Representative for Pennsylvania House of Representatives District 56. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "PA",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://reprasel.com/"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/pa/legislature/Brian-Rasel-7ec5f0f0-0899-4f54-b284-c4c5931c25bc.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://www.palegis.us/resources/images/members/200/2025.jpg?20241220"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Brian_Rasel"
+    },
+    {
+      "title": "Public source",
+      "url": "https://reprasel.com"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/brian-rasel-25b30497"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.palegis.us/house/members/bio/2025/rep-rasel"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

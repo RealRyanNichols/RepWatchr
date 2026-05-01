@@ -1,0 +1,52 @@
+{
+  "id": "denny-heck",
+  "name": "Denny Heck",
+  "firstName": "Denny",
+  "lastName": "Heck",
+  "photo": "/images/officials/state-executive/wa/denny-heck.jpg",
+  "photoSourceUrl": "https://images.squarespace-cdn.com/content/v1/5d70140860791400013fe3ce/2bb4d89d-3bb3-45dd-896a-5f984bdd1d4e/Lt.+Gov+Heck+headshot_updated.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "Lieutenant Governor",
+  "district": "Washington",
+  "jurisdiction": "Washington statewide public office",
+  "county": [
+    "Washington"
+  ],
+  "termStart": "2021-01-11",
+  "termEnd": "2029-01-08",
+  "contactInfo": {
+    "office": "220 Legislative Building, 416 Sid Snyder Ave. S.W.; Olympia, WA 98504",
+    "phone": "360-786-7700",
+    "email": "ltgov@ltgov.wa.gov",
+    "website": "https://www.ltgov.wa.gov/"
+  },
+  "bio": "Denny Heck is listed as Lieutenant Governor for Washington. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "WA",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.ltgov.wa.gov/"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/wa/executive/Denny-Heck-b1789e29-3532-4554-9ee1-853497224a85.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://images.squarespace-cdn.com/content/v1/5d70140860791400013fe3ce/2bb4d89d-3bb3-45dd-896a-5f984bdd1d4e/Lt.+Gov+Heck+headshot_updated.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.ltgov.wa.gov/aboutdenny"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Denny_Heck"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

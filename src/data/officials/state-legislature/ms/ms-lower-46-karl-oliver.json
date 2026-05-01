@@ -1,0 +1,60 @@
+{
+  "id": "karl-oliver",
+  "name": "Karl Oliver",
+  "firstName": "Karl",
+  "lastName": "Oliver",
+  "photo": "/images/officials/state-legislature/ms/karl-oliver.jpg",
+  "photoSourceUrl": "http://billstatus.ls.state.ms.us/members/house/oliver.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-46",
+  "jurisdiction": "Mississippi House of Representatives",
+  "county": [
+    "Mississippi"
+  ],
+  "termStart": "2016-01-05",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "State Capitol Room 201-D, 400 High St., Jackson, MS 39201",
+    "phone": "601-359-3340",
+    "email": "koliver@house.ms.gov",
+    "website": "https://billstatus.ls.state.ms.us/members/house/oliver.xml"
+  },
+  "bio": "Karl Oliver serves as State Representative for Mississippi House of Representatives District 46. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "MS",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://billstatus.ls.state.ms.us/members/house/oliver.xml"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ms/legislature/Karl-Oliver-761527db-bbe0-43e5-90e0-2a06528ebfa4.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "http://billstatus.ls.state.ms.us/members/house/oliver.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Karl_Oliver"
+    },
+    {
+      "title": "Public source",
+      "url": "https://billstatus.ls.state.ms.us/members/hr_membs.xml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Karl_Oliver"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/156354/karl-oliver"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

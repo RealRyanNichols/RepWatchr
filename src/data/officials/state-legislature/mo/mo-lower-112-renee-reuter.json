@@ -1,0 +1,68 @@
+{
+  "id": "renee-reuter",
+  "name": "Renee Reuter",
+  "firstName": "Renee",
+  "lastName": "Reuter",
+  "photo": "/images/officials/state-legislature/mo/renee-reuter.jpg",
+  "photoSourceUrl": "https://house.mo.gov/MemberPhoto.aspx?id=2396",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-112",
+  "jurisdiction": "Missouri House of Representatives",
+  "county": [
+    "Missouri"
+  ],
+  "termStart": "2023-01-04",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 235-BB, 201 W. Capitol Ave., Jefferson City, MO 65101",
+    "phone": "573-751-3607",
+    "email": "renee.reuter@house.mo.gov",
+    "website": "https://house.mo.gov/MemberDetails.aspx?district=112"
+  },
+  "bio": "Renee Reuter serves as State Representative for Missouri House of Representatives District 112. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "MO",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://house.mo.gov/MemberDetails.aspx?district=112"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/mo/legislature/Renee-Reuter-64a3bd7d-7dc8-4ce6-bd30-6101b2b7926e.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://house.mo.gov/MemberPhoto.aspx?id=2396"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Renee_Reuter"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Renee_Reuter"
+    },
+    {
+      "title": "Public source",
+      "url": "https://house.mo.gov/MemberDetails.aspx?year=2023&code=R&district=112"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/132669/renee-reuter"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/reneemreuter"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.reneereuter.info"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

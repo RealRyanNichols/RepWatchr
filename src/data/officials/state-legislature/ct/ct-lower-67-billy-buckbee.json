@@ -1,0 +1,65 @@
+{
+  "id": "billy-buckbee",
+  "name": "Billy Buckbee",
+  "firstName": "Billy",
+  "lastName": "Buckbee",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-67",
+  "jurisdiction": "Connecticut House of Representatives",
+  "county": [
+    "Connecticut"
+  ],
+  "termStart": "2017-01-04",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 4200, Legislative Office Building 300 Capitol Ave., Hartford, CT 06106",
+    "phone": "860-240-8700",
+    "email": "bill.buckbee@housegop.ct.gov",
+    "website": "https://cga.ct.gov/asp/CGABillStatus/CGAMemberBills.asp?dist_code=%27067%27&dist_name=Buckbee,%20Bill"
+  },
+  "bio": "Billy Buckbee serves as State Representative for Connecticut House of Representatives District 67. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "CT",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://cga.ct.gov/asp/CGABillStatus/CGAMemberBills.asp?dist_code=%27067%27&dist_name=Buckbee,%20Bill"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ct/legislature/Bill-Buckbee-1c270bf3-7cc6-4e11-93fb-e35f5d9a1774.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "ftp://ftp.cga.ct.gov/pub/data/LegislatorDatabase.csv"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/William_Buckbee"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Bill_Buckbee"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/173314/billy-buckbee"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.cthousegop.com/Buckbee/main"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.cthousegop.com/Buckbee/main/"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/william-billy-mo-buckbee-81086250"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

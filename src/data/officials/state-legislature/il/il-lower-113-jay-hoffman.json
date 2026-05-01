@@ -1,0 +1,69 @@
+{
+  "id": "jay-hoffman",
+  "name": "Jay Hoffman",
+  "firstName": "Jay",
+  "lastName": "Hoffman",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-113",
+  "jurisdiction": "Illinois House of Representatives",
+  "county": [
+    "Illinois"
+  ],
+  "termStart": "2013-01-09",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 300, Capitol Building, Springfield, IL 62706",
+    "phone": "217-782-0104",
+    "email": "repjayhoffman@gmail.com",
+    "website": "https://ilga.gov/house/Rep.asp?GA=101&MemberID=2643"
+  },
+  "bio": "Jay Hoffman serves as State Representative for Illinois House of Representatives District 113. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "IL",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://ilga.gov/house/Rep.asp?GA=101&MemberID=2643"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/il/legislature/Jay-C-Hoffman-21e2f7d1-8073-4ee1-a5b5-b32ccdd321d5.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Jay_C._Hoffman"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Jay_Hoffman_(politician)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ilga.gov/house/default.asp?GA=101"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ilga.gov/house/default.asp?GA=102"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ilga.gov/house/default.asp?GA=103"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ilga.gov/house/Rep.asp?GA=102&MemberID=2874"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ilga.gov/house/Rep.asp?GA=103&MemberID=3083"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/6334/jay-hoffman"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

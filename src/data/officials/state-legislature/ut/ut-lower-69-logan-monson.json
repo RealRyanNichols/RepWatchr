@@ -1,0 +1,64 @@
+{
+  "id": "logan-monson",
+  "name": "Logan Monson",
+  "firstName": "Logan",
+  "lastName": "Monson",
+  "photo": "/images/officials/state-legislature/ut/logan-monson.jpg",
+  "photoSourceUrl": "https://images.squarespace-cdn.com/content/v1/653bf32647727060129bd0cf/f7061061-f68f-4697-9dc5-fd2bcc264299/IMG_7508.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-69",
+  "jurisdiction": "Utah House of Representatives",
+  "county": [
+    "Utah"
+  ],
+  "termStart": "2025-01-01",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "P.O. Box 145030 350 N. State St., Suite 350, Salt Lake City, UT 84114",
+    "phone": "801-538-1029",
+    "email": "lmonson@le.utah.gov",
+    "website": "https://house.utleg.gov/rep/MONSOL/"
+  },
+  "bio": "Logan Monson serves as State Representative for Utah House of Representatives District 69. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "UT",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://house.utleg.gov/rep/MONSOL/"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ut/legislature/Logan-Monson-afd0bd15-a816-44ae-b28e-cecf50dda45b.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://images.squarespace-cdn.com/content/v1/653bf32647727060129bd0cf/f7061061-f68f-4697-9dc5-fd2bcc264299/IMG_7508.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Logan_Monson"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Logan_Monson"
+    },
+    {
+      "title": "Public source",
+      "url": "https://house.utleg.gov/rep/MONSOL"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/214359/logan-monson"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/logan-monson-aa738a231"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

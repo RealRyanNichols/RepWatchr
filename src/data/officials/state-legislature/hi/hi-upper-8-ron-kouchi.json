@@ -1,0 +1,69 @@
+{
+  "id": "ron-kouchi",
+  "name": "Ron Kouchi",
+  "firstName": "Ron",
+  "lastName": "Kouchi",
+  "party": "D",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-8",
+  "jurisdiction": "Hawaii Senate",
+  "county": [
+    "Hawaii"
+  ],
+  "termStart": "2012-11-06",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "State Capitol Room 409, 415 S. Beretania St., Honolulu, HI 96813",
+    "phone": "808-586-6030",
+    "email": "senkouchi@capitol.hawaii.gov",
+    "website": "https://capitol.hawaii.gov/memberpage.aspx?member=kouchi&year=2019"
+  },
+  "bio": "Ron Kouchi serves as State Senator for Hawaii Senate District 8. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "HI",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://capitol.hawaii.gov/memberpage.aspx?member=kouchi&year=2019"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/hi/legislature/Ronald-D-Kouchi-3ca1b2e5-0c68-4be1-ba5b-b0d935b85e6f.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Ronald_Kouchi"
+    },
+    {
+      "title": "Public source",
+      "url": "https://capitol.hawaii.gov/members/legislators.aspx?chamber=S"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Ron_Kouchi"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/85011/ronald-kouchi"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.capitol.hawaii.gov/legislature/memberpage.aspx?member=192"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.capitol.hawaii.gov/legislature/memberpage.aspx?member=192&year=2023"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.capitol.hawaii.gov/legislature/memberpage.aspx?member=192&year=2024"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.capitol.hawaii.gov/memberpage.aspx?member=kouchi&year=2021"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

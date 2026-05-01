@@ -1,0 +1,52 @@
+{
+  "id": "jeremy-shaffer",
+  "name": "Jeremy Shaffer",
+  "firstName": "Jeremy",
+  "lastName": "Shaffer",
+  "photo": "/images/officials/state-legislature/pa/jeremy-shaffer.jpg",
+  "photoSourceUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQSorGMaPu0r-cmKNo0wUJlamXWmBuybfdPUA&s",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-28",
+  "jurisdiction": "Pennsylvania House of Representatives",
+  "county": [
+    "Pennsylvania"
+  ],
+  "termStart": "2024-12-01",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 413, Irvis Office Building P.O. Box 202028, Harrisburg, PA 17120",
+    "phone": "717-772-9943",
+    "email": "jshaffer@pahousegop.com",
+    "website": "https://www.palegis.us/house/members/bio/2023/rep-shaffer"
+  },
+  "bio": "Jeremy Shaffer serves as State Representative for Pennsylvania House of Representatives District 28. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "PA",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.palegis.us/house/members/bio/2023/rep-shaffer"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/pa/legislature/Jeremy-Shaffer-0df3f8d5-b6df-4cd8-a2c7-1dee651e60a8.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQSorGMaPu0r-cmKNo0wUJlamXWmBuybfdPUA&s"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Jeremy_Shaffer"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/jeremy-shaffer-0115397"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

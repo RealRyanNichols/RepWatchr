@@ -1,0 +1,72 @@
+{
+  "id": "patrick-windhorst",
+  "name": "Patrick Windhorst",
+  "firstName": "Patrick",
+  "lastName": "Windhorst",
+  "photo": "/images/officials/state-legislature/il/patrick-windhorst.jpg",
+  "photoSourceUrl": "https://cdn.ilga.gov/assets/img/members/{547F9C92-7368-4390-B625-5BB795568D50}.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-117",
+  "jurisdiction": "Illinois House of Representatives",
+  "county": [
+    "Illinois"
+  ],
+  "termStart": "2023-01-11",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 314, Capitol Building, Springfield, IL 62706",
+    "phone": "217-782-5131",
+    "email": "windhorst@ilhousegop.org",
+    "website": "https://ilga.gov/house/Rep.asp?GA=101&MemberID=2760"
+  },
+  "bio": "Patrick Windhorst serves as State Representative for Illinois House of Representatives District 117. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "IL",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://ilga.gov/house/Rep.asp?GA=101&MemberID=2760"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/il/legislature/Patrick-Windhorst-6cb9bc2c-97b3-4dd1-b5ba-36a644360057.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://cdn.ilga.gov/assets/img/members/{547F9C92-7368-4390-B625-5BB795568D50}.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Patrick_Windhorst"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Patrick_Windhorst"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ilga.gov/house/default.asp?GA=101"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ilga.gov/house/default.asp?GA=102"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ilga.gov/house/default.asp?GA=103"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ilga.gov/house/Rep.asp?GA=102&MemberID=2961"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ilga.gov/house/Rep.asp?GA=103&MemberID=3155"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

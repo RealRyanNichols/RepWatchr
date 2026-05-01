@@ -1,0 +1,76 @@
+{
+  "id": "jo-anne-simon",
+  "name": "Jo Anne Simon",
+  "firstName": "Jo Anne",
+  "lastName": "Simon",
+  "photo": "/images/officials/state-legislature/ny/jo-anne-simon.jpg",
+  "photoSourceUrl": "https://assembly.state.ny.us/write/upload/member_files/052/headshot/052.jpg?hst=1660073592",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "Assemblymember",
+  "district": "HD-52",
+  "jurisdiction": "New York State Assembly",
+  "county": [
+    "New York"
+  ],
+  "termStart": "2015-01-01",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 826, Legislative Office Building, Albany, NY 12248",
+    "phone": "518-455-5426",
+    "email": "simonj@nyassembly.gov",
+    "website": "https://assembly.state.ny.us/mem/?sh=email",
+    "socialMedia": {
+      "x": "https://x.com/JoAnneSimonBK52",
+      "twitter": "https://x.com/JoAnneSimonBK52"
+    }
+  },
+  "bio": "Jo Anne Simon serves as Assemblymember for New York State Assembly District 52. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "NY",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://assembly.state.ny.us/mem/?sh=email"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ny/legislature/Jo-Anne-Simon-21da6116-bec3-44a4-9e0b-a68eef91222d.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://assembly.state.ny.us/write/upload/member_files/052/headshot/052.jpg?hst=1660073592"
+    },
+    {
+      "title": "Public source",
+      "url": "https://assembly.state.ny.us/mem/Jo-Anne-Simon"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Jo_Anne_Simon"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Jo_Anne_Simon"
+    },
+    {
+      "title": "Public source",
+      "url": "https://joannesimon.com"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/155448/jo-anne-simon"
+    },
+    {
+      "title": "Public source",
+      "url": "https://nyassembly.gov/mem/Jo-Anne-Simon"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/joanne-simon-9b40135"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

@@ -1,0 +1,77 @@
+{
+  "id": "jon-rivera",
+  "name": "Jon Rivera",
+  "firstName": "Jon",
+  "lastName": "Rivera",
+  "photo": "/images/officials/state-legislature/ny/jon-rivera.jpg",
+  "photoSourceUrl": "https://assembly.state.ny.us/write/upload/member_files/149/headshot/149.jpg?hst=1660075024",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "Assemblymember",
+  "district": "HD-149",
+  "jurisdiction": "New York State Assembly",
+  "county": [
+    "New York"
+  ],
+  "termStart": "2021-01-06",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 540, Legislative Office Building, Albany, NY 12248",
+    "phone": "518-455-4886",
+    "email": "riverajd@nyassembly.gov",
+    "website": "https://assembly.state.ny.us/mem/Jonathan-Rivera",
+    "socialMedia": {
+      "x": "https://x.com/JonRivera149",
+      "twitter": "https://x.com/JonRivera149",
+      "facebook": "https://facebook.com/JonRivera149"
+    }
+  },
+  "bio": "Jon Rivera serves as Assemblymember for New York State Assembly District 149. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "NY",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://assembly.state.ny.us/mem/Jonathan-Rivera"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ny/legislature/Jonathan-Rivera-869acf23-9c50-48da-897c-515c5a7adcfe.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://assembly.state.ny.us/write/upload/member_files/149/headshot/149.jpg?hst=1660075024"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Jonathan_Rivera"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Jonathan_Rivera_(New_York)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Jonathan_Rivera"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/192308/jon-rivera"
+    },
+    {
+      "title": "Public source",
+      "url": "https://nyassembly.gov/mem/Jonathan-Rivera"
+    },
+    {
+      "title": "Public source",
+      "url": "https://nyassembly.gov/mem/Jonathan-Rivera/bio"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/jonathan-rivera-57258817"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

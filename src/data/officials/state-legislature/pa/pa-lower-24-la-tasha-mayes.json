@@ -1,0 +1,66 @@
+{
+  "id": "la-tasha-mayes",
+  "name": "La'Tasha Mayes",
+  "firstName": "La'Tasha",
+  "lastName": "Mayes",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-24",
+  "jurisdiction": "Pennsylvania House of Representatives",
+  "county": [
+    "Pennsylvania"
+  ],
+  "termStart": "2022-12-01",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 111A, East Wing P.O. Box 202024, Harrisburg, PA 17120",
+    "phone": "717-783-1017",
+    "email": "repmayes@pahouse.net",
+    "website": "https://www.legis.state.pa.us/cfdocs/legis/home/member_information/House_bio.cfm?id=1941",
+    "socialMedia": {
+      "x": "https://x.com/RepMayes",
+      "twitter": "https://x.com/RepMayes",
+      "facebook": "https://facebook.com/RepMayes"
+    }
+  },
+  "bio": "La'Tasha Mayes serves as State Representative for Pennsylvania House of Representatives District 24. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "PA",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.legis.state.pa.us/cfdocs/legis/home/member_information/House_bio.cfm?id=1941"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/pa/legislature/LaTasha-D-Mayes-526967db-cef3-4f64-a380-1377f5c6f1fe.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Latasha_D._Mayes"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/La%27Tasha_Mayes"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.legis.state.pa.us/cfdocs/legis/home/member_information/mbrList.cfm?body=H&sort=alpha"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/latashadmayes"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.pahouse.com/Mayes"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.palegis.us/house/members/bio/1941/rep-mayes"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

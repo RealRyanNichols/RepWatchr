@@ -1,0 +1,69 @@
+{
+  "id": "curtis-king",
+  "name": "Curtis King",
+  "firstName": "Curtis",
+  "lastName": "King",
+  "party": "R",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-14",
+  "jurisdiction": "Washington Senate",
+  "county": [
+    "Washington"
+  ],
+  "termStart": "2007-11-29",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 340A, Irv Newhouse Building P.O. Box 40414, Olympia, WA 98504",
+    "phone": "360-786-7626",
+    "email": "curtis.king@leg.wa.gov",
+    "website": "https://CurtisKing.src.wastateleg.org/"
+  },
+  "bio": "Curtis King serves as State Senator for Washington Senate District 14. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "WA",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://CurtisKing.src.wastateleg.org/"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/wa/legislature/Curtis-King-a8e7617c-7cbb-45ed-a577-3dd7341a3bd7.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://app.leg.wa.gov/ContentParts/MemberDirectory/?a=Senate"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Curtis_King"
+    },
+    {
+      "title": "Public source",
+      "url": "https://curtisking.src.wastateleg.org"
+    },
+    {
+      "title": "Public source",
+      "url": "https://curtisking.src.wastateleg.org/"
+    },
+    {
+      "title": "Public source",
+      "url": "https://curtisking.us"
+    },
+    {
+      "title": "Public source",
+      "url": "https://curtisking.us/about"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Curtis_King_(politician)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/101906/curtis-king"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

@@ -1,0 +1,64 @@
+{
+  "id": "alaina-shonkwiler",
+  "name": "Alaina Shonkwiler",
+  "firstName": "Alaina",
+  "lastName": "Shonkwiler",
+  "photo": "/images/officials/state-legislature/in/alaina-shonkwiler.jpg",
+  "photoSourceUrl": "https://storage.googleapis.com/enview-dev-public-general/legislative-people-photos/157746.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-29",
+  "jurisdiction": "Indiana House of Representatives",
+  "county": [
+    "Indiana"
+  ],
+  "termStart": "2024-11-06",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "200 W. Washington St., Indianapolis, IN 46204",
+    "phone": "317-232-9600",
+    "email": "h29@iga.in.gov",
+    "website": "https://iga.in.gov/legislative/2026/legislators/legislator_alaina_shonkwiler_1"
+  },
+  "bio": "Alaina Shonkwiler serves as State Representative for Indiana House of Representatives District 29. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "IN",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://iga.in.gov/legislative/2026/legislators/legislator_alaina_shonkwiler_1"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/in/legislature/Alaina-Shonkwiler-3564d02c-d1d7-4c46-87b7-dbc1c5f1dc14.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://storage.googleapis.com/enview-dev-public-general/legislative-people-photos/157746.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Alaina_Shonkwiler"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Alaina_Shonkwiler"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/214718/alaina-shonkwiler"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.indianahouserepublicans.com/members/general/alaina-shonkwiler"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/alainashonkwiler"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

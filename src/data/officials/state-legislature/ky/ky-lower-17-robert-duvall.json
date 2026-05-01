@@ -1,0 +1,62 @@
+{
+  "id": "robert-duvall",
+  "name": "Robert Duvall",
+  "firstName": "Robert",
+  "lastName": "Duvall",
+  "photo": "/images/officials/state-legislature/ky/robert-duvall.jpg",
+  "photoSourceUrl": "https://legislature.ky.gov/Legislators%20Thumbnail%20Images/house17.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-17",
+  "jurisdiction": "Kentucky House of Representatives",
+  "county": [
+    "Kentucky"
+  ],
+  "termStart": "2023-01-01",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "email": "robert.duvall@kylegislature.gov",
+    "website": "https://legislature.ky.gov/Legislators/Pages/Legislator-Profile.aspx?DistrictNumber=17"
+  },
+  "bio": "Robert Duvall serves as State Representative for Kentucky House of Representatives District 17. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "KY",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://legislature.ky.gov/Legislators/Pages/Legislator-Profile.aspx?DistrictNumber=17"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ky/legislature/Robert-Duvall-ad2d1d2a-b838-4727-ac0f-a6fb64298b14.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://legislature.ky.gov/Legislators%20Thumbnail%20Images/house17.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Robert_Duvall_(Kentucky)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Robert_Duvall_(politician)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://legislature.ky.gov/Legislators/house-of-representatives"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.bgeyes.com/team/robert-b-duvall-od"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/robert-duvall-2818298"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

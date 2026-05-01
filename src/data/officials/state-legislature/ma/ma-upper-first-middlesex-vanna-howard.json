@@ -1,0 +1,72 @@
+{
+  "id": "vanna-howard",
+  "name": "Vanna Howard",
+  "firstName": "Vanna",
+  "lastName": "Howard",
+  "photo": "/images/officials/state-legislature/ma/vanna-howard.jpg",
+  "photoSourceUrl": "https://malegislature.gov/Legislators/Profile/170/V_H1.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-First Middlesex",
+  "jurisdiction": "Massachusetts Senate",
+  "county": [
+    "Massachusetts"
+  ],
+  "termStart": "2026-03-18",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 109-E, State House 24 Beacon St., Boston, MA 02133",
+    "phone": "617-722-1630",
+    "email": "vanna.howard@masenate.gov",
+    "website": "https://malegislature.gov/Legislators/Profile/V_H0"
+  },
+  "bio": "Vanna Howard serves as State Senator for Massachusetts Senate District First Middlesex. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "MA",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://malegislature.gov/Legislators/Profile/V_H0"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ma/legislature/Vanna-Howard-053aae1e-ae76-41b0-912c-39f27f3f6d6f.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://malegislature.gov/Legislators/Profile/170/V_H1.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Vanna_Howard"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Vanna_Howard"
+    },
+    {
+      "title": "Public source",
+      "url": "https://malegislature.gov/api/GeneralCourts/192/LegislativeMembers"
+    },
+    {
+      "title": "Public source",
+      "url": "https://malegislature.gov/api/GeneralCourts/192/LegislativeMembers/"
+    },
+    {
+      "title": "Public source",
+      "url": "https://malegislature.gov/api/GeneralCourts/192/LegislativeMembers/V_H1"
+    },
+    {
+      "title": "Public source",
+      "url": "https://malegislature.gov/api/GeneralCourts/193/LegislativeMembers"
+    },
+    {
+      "title": "Public source",
+      "url": "https://malegislature.gov/api/GeneralCourts/193/LegislativeMembers/"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

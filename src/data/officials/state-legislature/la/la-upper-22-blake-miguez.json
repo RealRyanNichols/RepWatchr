@@ -1,0 +1,68 @@
+{
+  "id": "blake-miguez",
+  "name": "Blake Miguez",
+  "firstName": "Blake",
+  "lastName": "Miguez",
+  "photo": "/images/officials/state-legislature/la/blake-miguez.jpg",
+  "photoSourceUrl": "https://senate.la.gov/SenPics/Sen22.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-22",
+  "jurisdiction": "Louisiana Senate",
+  "county": [
+    "Louisiana"
+  ],
+  "termStart": "2024-01-08",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "P.O. Box 94183 900 N. 3rd St., Baton Rouge, LA 70804",
+    "phone": "225-342-2024",
+    "email": "sen22@legis.la.gov",
+    "website": "https://house.louisiana.gov/H_Reps/members.aspx?ID=49"
+  },
+  "bio": "Blake Miguez serves as State Senator for Louisiana Senate District 22. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "LA",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://house.louisiana.gov/H_Reps/members.aspx?ID=49"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/la/legislature/Blake-Miguez-8574f94d-93ed-49b0-a5f6-aa1832b5542a.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://senate.la.gov/SenPics/Sen22.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Blake_Miguez"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Blake_Miguez"
+    },
+    {
+      "title": "Public source",
+      "url": "https://house.louisiana.gov/H_Reps/H_Reps_FullInfo"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/156101/blake-miguez"
+    },
+    {
+      "title": "Public source",
+      "url": "https://senate.la.gov/smembers?ID=22"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/blake-miguez-764b14123"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

@@ -1,0 +1,61 @@
+{
+  "id": "farley-santos",
+  "name": "Farley Santos",
+  "firstName": "Farley",
+  "lastName": "Santos",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-109",
+  "jurisdiction": "Connecticut House of Representatives",
+  "county": [
+    "Connecticut"
+  ],
+  "termStart": "2023-01-04",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 4050, Legislative Office Building 300 Capitol Ave., Hartford, CT 06106",
+    "phone": "860-240-8585",
+    "email": "farley.santos@cga.ct.gov",
+    "website": "https://www.housedems.ct.gov/Santos"
+  },
+  "bio": "Farley Santos serves as State Representative for Connecticut House of Representatives District 109. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "CT",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.housedems.ct.gov/Santos"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ct/legislature/Farley-Santos-b9f6e7c0-0413-4490-a3a4-3fb63620b4cc.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "ftp://ftp.cga.ct.gov/pub/data/LegislatorDatabase.csv"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Farley_Santos"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Farley_Santos"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/199752/farley-santos"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.housedems.ct.gov/Santos/Biography"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/farley-santos-1957a748"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

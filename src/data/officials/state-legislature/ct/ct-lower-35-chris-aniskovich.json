@@ -1,0 +1,65 @@
+{
+  "id": "chris-aniskovich",
+  "name": "Chris Aniskovich",
+  "firstName": "Chris",
+  "lastName": "Aniskovich",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-35",
+  "jurisdiction": "Connecticut House of Representatives",
+  "county": [
+    "Connecticut"
+  ],
+  "termStart": "2023-01-04",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 4200, Legislative Office Building 300 Capitol Ave., Hartford, CT 06106",
+    "phone": "860-240-8700",
+    "email": "chris.aniskovich@housegop.ct.gov",
+    "website": "https://www.cthousegop.com/aniskovich/"
+  },
+  "bio": "Chris Aniskovich serves as State Representative for Connecticut House of Representatives District 35. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "CT",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.cthousegop.com/aniskovich/"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ct/legislature/Chris-Aniskovich-3dac820b-e022-4ee6-a5d5-4b194f8988ec.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "ftp://ftp.cga.ct.gov/pub/data/LegislatorDatabase.csv"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Chris_Aniskovich"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Chris_Aniskovich"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/208578/christopher-aniskovich"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.cthousegop.com/Aniskovich"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.cthousegop.com/Aniskovich/"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/chris-aniskovich-67a9456"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

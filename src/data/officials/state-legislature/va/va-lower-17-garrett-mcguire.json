@@ -1,0 +1,56 @@
+{
+  "id": "garrett-mcguire",
+  "name": "Garrett McGuire",
+  "firstName": "Garrett",
+  "lastName": "McGuire",
+  "photo": "/images/officials/state-legislature/va/garrett-mcguire.jpg",
+  "photoSourceUrl": "https://virginiamercury.com/wp-content/uploads/2026/01/611290992_122105542683186780_8562161094291278751_n.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "Delegate",
+  "district": "HD-17",
+  "jurisdiction": "Virginia House of Delegates",
+  "county": [
+    "Virginia"
+  ],
+  "termStart": "2026-01-21",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 1018, General Assembly Building 201 N. 9th St., Richmond, VA 23219",
+    "phone": "804-698-1017",
+    "email": "delgmcguire@house.virginia.gov",
+    "website": "https://house.vga.virginia.gov/members/H0405"
+  },
+  "bio": "Garrett McGuire serves as Delegate for Virginia House of Delegates District 17. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "VA",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://house.vga.virginia.gov/members/H0405"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/va/legislature/Garrett-McGuire-418a32b0-5822-4673-9293-e8363038805b.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://virginiamercury.com/wp-content/uploads/2026/01/611290992_122105542683186780_8562161094291278751_n.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Garrett_McGuire"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/garrett-m-b5992b26"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/garrett-mcguire-b5992b26"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

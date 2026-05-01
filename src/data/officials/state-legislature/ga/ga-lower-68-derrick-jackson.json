@@ -1,0 +1,69 @@
+{
+  "id": "derrick-jackson",
+  "name": "Derrick Jackson",
+  "firstName": "Derrick",
+  "lastName": "Jackson",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-68",
+  "jurisdiction": "Georgia House of Representatives",
+  "county": [
+    "Georgia"
+  ],
+  "termStart": "2023-06-29",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 512-C, Coverdell Legislative Office Building 18 Capitol Square SW, Atlanta, GA 30334",
+    "phone": "404-656-7859",
+    "email": "derrick.jackson@house.ga.gov",
+    "website": "https://www.legis.ga.gov/members/house"
+  },
+  "bio": "Derrick Jackson serves as State Representative for Georgia House of Representatives District 68. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "GA",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.legis.ga.gov/members/house"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ga/legislature/Derrick-Jackson-9046fcb2-f3eb-4233-bd92-32c94e60f9df.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Derrick_Jackson"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Derrick_Jackson_(politician)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/168268/derrick-jackson"
+    },
+    {
+      "title": "API member detail (requires authorization token)",
+      "url": "https://www.legis.ga.gov/api/members/detail/4891?session=1031&chamber=1"
+    },
+    {
+      "title": "API members list (requires authorization token)",
+      "url": "https://www.legis.ga.gov/api/members/list/1031"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.legis.ga.gov/members/house/4891"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.legis.ga.gov/members/house/4891?session=1031"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/derrick-jackson-abd-522a287"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

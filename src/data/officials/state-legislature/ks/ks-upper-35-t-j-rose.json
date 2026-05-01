@@ -1,0 +1,53 @@
+{
+  "id": "t-j-rose",
+  "name": "T.J. Rose",
+  "firstName": "T.J.",
+  "lastName": "Rose",
+  "party": "R",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-35",
+  "jurisdiction": "Kansas Senate",
+  "county": [
+    "Kansas"
+  ],
+  "termStart": "2025-01-13",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "State Capitol Room 418-E, Kansas  Building 300 SW 10th St., Topeka, KS 66612",
+    "phone": "785-296-7394",
+    "email": "tj.rose@senate.ks.gov",
+    "website": "https://www.kslegislature.gov/li/b2025_26/members/sen_rose_tj_1/"
+  },
+  "bio": "T.J. Rose serves as State Senator for Kansas Senate District 35. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "KS",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.kslegislature.gov/li/b2025_26/members/sen_rose_tj_1/"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ks/legislature/TJ-Rose-5327f35f-aecc-4ecb-a23a-9136c8e503e1.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/TJ_Rose"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/218098/tj-rose"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.kslegislature.gov/li/b2025_26/members/sen_rose_tj_1"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/tj-rose-02b31a6"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

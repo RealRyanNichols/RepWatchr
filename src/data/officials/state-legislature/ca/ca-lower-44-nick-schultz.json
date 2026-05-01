@@ -1,0 +1,68 @@
+{
+  "id": "nick-schultz",
+  "name": "Nick Schultz",
+  "firstName": "Nick",
+  "lastName": "Schultz",
+  "photo": "/images/officials/state-legislature/ca/nick-schultz.jpg",
+  "photoSourceUrl": "https://www.burbankca.gov/documents/1626247/0/20210330-nick-schultz-001.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "Assemblymember",
+  "district": "HD-44",
+  "jurisdiction": "California State Assembly",
+  "county": [
+    "California"
+  ],
+  "termStart": "2024-12-02",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 5150, 1021 O St. P.O. Box 942849, Sacramento, CA 94249",
+    "phone": "916-319-2044",
+    "email": "assemblymember.schultz@assembly.ca.gov",
+    "website": "https://a44.asmdc.org/"
+  },
+  "bio": "Nick Schultz serves as Assemblymember for California State Assembly District 44. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "CA",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://a44.asmdc.org/"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ca/legislature/Nick-Schultz-06ae0707-255b-4af9-8e3e-c940e8f29600.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://www.burbankca.gov/documents/1626247/0/20210330-nick-schultz-001.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://a44.asmdc.org"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Nick_Schultz"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Nick_Schultz_(politician)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.assembly.ca.gov/assemblymembers/44"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.burbankca.gov/nick-schultz"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/nick-schultz-a11b1996"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

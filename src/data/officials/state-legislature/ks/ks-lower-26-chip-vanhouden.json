@@ -1,0 +1,57 @@
+{
+  "id": "chip-vanhouden",
+  "name": "Chip VanHouden",
+  "firstName": "Chip",
+  "lastName": "VanHouden",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-26",
+  "jurisdiction": "Kansas House of Representatives",
+  "county": [
+    "Kansas"
+  ],
+  "termStart": "2025-01-13",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "State Capitol Room 512-N, Kansas  Building 300 SW 10th St., Topeka, KS 66612",
+    "phone": "785-296-3113",
+    "email": "chip.vanhouden@house.ks.gov",
+    "website": "https://www.kslegislature.gov/li/b2025_26/members/rep_vanhouden_charles_1/"
+  },
+  "bio": "Chip VanHouden serves as State Representative for Kansas House of Representatives District 26. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "KS",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.kslegislature.gov/li/b2025_26/members/rep_vanhouden_charles_1/"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ks/legislature/Chip-VanHouden-bb92c4f1-d89e-4147-9b09-5fc1f56fca1c.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Chip_VanHouden"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Chip_VanHouden"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/152952/chad-vanhouden"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.kslegislature.gov/li/b2025_26/members/rep_vanhouden_charles_1"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/chip-vanhouden-216559340"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

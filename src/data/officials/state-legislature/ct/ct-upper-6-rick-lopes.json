@@ -1,0 +1,69 @@
+{
+  "id": "rick-lopes",
+  "name": "Rick Lopes",
+  "firstName": "Rick",
+  "lastName": "Lopes",
+  "party": "D",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-6",
+  "jurisdiction": "Connecticut Senate",
+  "county": [
+    "Connecticut"
+  ],
+  "termStart": "2021-01-06",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 3200, Legislative Office Building 300 Capitol Ave., Hartford, CT 06106",
+    "phone": "860-240-0099",
+    "email": "rick.lopes@cga.ct.gov",
+    "website": "https://cga.ct.gov/asp/CGABillStatus/CGAMemberBills.asp?dist_code=%27S06%27&dist_name=Lopes,%20Rick"
+  },
+  "bio": "Rick Lopes serves as State Senator for Connecticut Senate District 6. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "CT",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://cga.ct.gov/asp/CGABillStatus/CGAMemberBills.asp?dist_code=%27S06%27&dist_name=Lopes,%20Rick"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ct/legislature/Rick-Lopes-bdc5f5a0-0285-45d2-a6fd-d29d8b31cd43.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "ftp://ftp.cga.ct.gov/pub/data/LegislatorDatabase.csv"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Rick_Lopes"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Rick_Lopes"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/138610/rick-lopes"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/lopes-rick-38b478b"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.senatedems.ct.gov/lopes"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.senatedems.ct.gov/senator/rick-lopes"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.senatedems.ct.gov/senator/rick-lopes/bio"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

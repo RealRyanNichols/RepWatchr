@@ -1,0 +1,65 @@
+{
+  "id": "liz-larson",
+  "name": "Liz Larson",
+  "firstName": "Liz",
+  "lastName": "Larson",
+  "party": "D",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-10",
+  "jurisdiction": "South Dakota Senate",
+  "county": [
+    "South Dakota"
+  ],
+  "termStart": "2023-01-10",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Capitol Building 500 E. Capitol Ave., Pierre, SD 57501",
+    "phone": "605-773-3821",
+    "email": "liz.larson@sdlegislature.gov",
+    "website": "https://sdlegislature.gov/Legislators/Profile/4466/Detail"
+  },
+  "bio": "Liz Larson serves as State Senator for South Dakota Senate District 10. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "SD",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://sdlegislature.gov/Legislators/Profile/4466/Detail"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/sd/legislature/Liz-Larson-81df3498-7677-4749-9753-c1ae9799e444.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Elizabeth_Larson_(South_Dakota)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Liz_Larson_(South_Dakota)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Liz_Larson"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/195587/elizabeth-larson"
+    },
+    {
+      "title": "Public source",
+      "url": "https://sdlegislature.gov/Legislators/Profile/4630/Detail"
+    },
+    {
+      "title": "Public source",
+      "url": "https://sdlegislature.gov/Legislators/Profile/4781/Detail"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/liz-larson-bohora"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

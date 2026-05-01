@@ -1,0 +1,69 @@
+{
+  "id": "connie-keogh",
+  "name": "Connie Keogh",
+  "firstName": "Connie",
+  "lastName": "Keogh",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-92",
+  "jurisdiction": "Montana House of Representatives",
+  "county": [
+    "Montana"
+  ],
+  "termStart": "2025-01-06",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Capitol Building, 1301 E. 6th Ave. P.O. Box 200400, Helena, MT 59620",
+    "phone": "406-444-4800",
+    "email": "connie.keogh@legmt.gov",
+    "website": "https://leg.mt.gov/legislator-information/roster/individual/5150"
+  },
+  "bio": "Connie Keogh serves as State Representative for Montana House of Representatives District 92. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "MT",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://leg.mt.gov/legislator-information/roster/individual/5150"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/mt/legislature/Connie-Keogh-d640b7b9-98c0-48f4-820d-24440c180667.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Connie_Keogh"
+    },
+    {
+      "title": "Public source",
+      "url": "https://conniekeoghforhd91.com/index.php/about/index.html"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Connie_Keogh"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/180758/connie-keogh"
+    },
+    {
+      "title": "Public source",
+      "url": "https://leg.mt.gov/legislator-information/?session_select=113"
+    },
+    {
+      "title": "Public source",
+      "url": "https://leg.mt.gov/legislator-information/roster/individual/6876"
+    },
+    {
+      "title": "Public source",
+      "url": "https://leg.mt.gov/legislator-information/roster/individual/7539"
+    },
+    {
+      "title": "Public source",
+      "url": "https://legislators.legmt.gov/#/legislator/51"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

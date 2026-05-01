@@ -1,0 +1,65 @@
+{
+  "id": "david-nelson",
+  "name": "David Nelson",
+  "firstName": "David",
+  "lastName": "Nelson",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-18",
+  "jurisdiction": "Alaska House of Representatives",
+  "county": [
+    "Alaska"
+  ],
+  "termStart": "2025-01-21",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "State Capitol Room 426, 120 4th St., Juneau, AK 99801",
+    "phone": "907-465-4998",
+    "email": "representative.david.nelson@akleg.gov",
+    "website": "https://www.akleg.gov/basis/Member/Detail/32?code=ned"
+  },
+  "bio": "David Nelson serves as State Representative for Alaska House of Representatives District 18. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "AK",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.akleg.gov/basis/Member/Detail/32?code=ned"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ak/legislature/David-Nelson-e1a32811-98f9-484f-8d4b-12df7eab4183.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/David_Nelson_(Alaska)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/David_Nelson_(Alaska_politician)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/194410/david-nelson"
+    },
+    {
+      "title": "Public source",
+      "url": "https://nelsonforalaska.com/meet-david"
+    },
+    {
+      "title": "Public source",
+      "url": "https://w3.akleg.gov"
+    },
+    {
+      "title": "Public source",
+      "url": "https://w3.akleg.gov/"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.akleg.gov/basis/Member/Detail/34?code=ned"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

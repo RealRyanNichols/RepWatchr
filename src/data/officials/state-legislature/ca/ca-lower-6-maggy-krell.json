@@ -1,0 +1,68 @@
+{
+  "id": "maggy-krell",
+  "name": "Maggy Krell",
+  "firstName": "Maggy",
+  "lastName": "Krell",
+  "photo": "/images/officials/state-legislature/ca/maggy-krell.jpg",
+  "photoSourceUrl": "https://lettersandscience.ucdavis.edu/sites/g/files/dgvnsk15706/files/styles/sf_profile/public/images/person/Maggy%20Krell.jpeg?h=a7e6d17b&itok=kwhSUK6x",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "Assemblymember",
+  "district": "HD-6",
+  "jurisdiction": "California State Assembly",
+  "county": [
+    "California"
+  ],
+  "termStart": "2024-12-02",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 5230, 1021 O St. P.O. Box 942849, Sacramento, CA 94249",
+    "phone": "916-319-2006",
+    "email": "assemblymember.krell@assembly.ca.gov",
+    "website": "https://a06.asmdc.org/"
+  },
+  "bio": "Maggy Krell serves as Assemblymember for California State Assembly District 6. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "CA",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://a06.asmdc.org/"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ca/legislature/Maggy-Krell-e8ac7b26-03a5-4818-b05d-0f379029bbdb.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://lettersandscience.ucdavis.edu/sites/g/files/dgvnsk15706/files/styles/sf_profile/public/images/person/Maggy%20Krell.jpeg?h=a7e6d17b&itok=kwhSUK6x"
+    },
+    {
+      "title": "Public source",
+      "url": "https://a06.asmdc.org"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Maggy_Krell"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Maggy_Krell"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/213154/maggy-krell"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.assembly.ca.gov/assemblymembers/06"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/maggy-krell-7aa62066"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

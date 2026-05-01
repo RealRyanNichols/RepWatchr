@@ -1,0 +1,56 @@
+{
+  "id": "nick-kimble",
+  "name": "Nick Kimble",
+  "firstName": "Nick",
+  "lastName": "Kimble",
+  "photo": "/images/officials/state-legislature/mo/nick-kimble.jpg",
+  "photoSourceUrl": "https://media.upballot.com/candidates/_250x250_crop_center-center_100_none/Nick-Kimble-Headshot.jpeg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-82",
+  "jurisdiction": "Missouri House of Representatives",
+  "county": [
+    "Missouri"
+  ],
+  "termStart": "2025-01-08",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 106-A, 201 W. Capitol Ave., Jefferson City, MO 65101",
+    "phone": "573-751-4220",
+    "email": "nick.kimble@house.mo.gov",
+    "website": "https://house.mo.gov/MemberDetails.aspx?district=082"
+  },
+  "bio": "Nick Kimble serves as State Representative for Missouri House of Representatives District 82. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "MO",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://house.mo.gov/MemberDetails.aspx?district=082"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/mo/legislature/Nick-Kimble-e6caa351-c418-431a-bf50-1bd16923ae49.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://media.upballot.com/candidates/_250x250_crop_center-center_100_none/Nick-Kimble-Headshot.jpeg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://house.mo.gov/MemberDetails.aspx?year=2025&code=R&district=082"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/217698/nick-kimble"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/nick-kimble-b754ab94"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

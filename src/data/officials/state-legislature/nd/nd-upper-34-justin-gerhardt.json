@@ -1,0 +1,58 @@
+{
+  "id": "justin-gerhardt",
+  "name": "Justin Gerhardt",
+  "firstName": "Justin",
+  "lastName": "Gerhardt",
+  "photo": "/images/officials/state-legislature/nd/justin-gerhardt.jpg",
+  "photoSourceUrl": "https://www.ndlegis.gov/sites/default/files/styles/member_list_photo/public/person/photo/jgerhardt2.jpg?itok=0hJ_0R_C",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-34",
+  "jurisdiction": "North Dakota Senate",
+  "county": [
+    "North Dakota"
+  ],
+  "termStart": "2023-10-19",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "email": "jgerhardt@ndlegis.gov",
+    "website": "https://ndlegis.gov/biography/justin-gerhardt"
+  },
+  "bio": "Justin Gerhardt serves as State Senator for North Dakota Senate District 34. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "ND",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://ndlegis.gov/biography/justin-gerhardt"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/nd/legislature/Justin-Gerhardt-17f0bfb4-083b-460d-9b3f-483079df42c6.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://www.ndlegis.gov/sites/default/files/styles/member_list_photo/public/person/photo/jgerhardt2.jpg?itok=0hJ_0R_C"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Justin_Gerhardt"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Justin_Gerhardt"
+    },
+    {
+      "title": "members list page",
+      "url": "https://www.ndlegis.gov/assembly/68-2023/regular/members?page=2"
+    },
+    {
+      "title": "member details page",
+      "url": "https://www.ndlegis.gov/biography/justin-gerhardt"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

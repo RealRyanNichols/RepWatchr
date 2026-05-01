@@ -1,0 +1,72 @@
+{
+  "id": "mike-henderson",
+  "name": "Mike Henderson",
+  "firstName": "Mike",
+  "lastName": "Henderson",
+  "photo": "/images/officials/state-legislature/mo/mike-henderson.jpg",
+  "photoSourceUrl": "https://house.mo.gov/MemberPhoto.aspx?id=1944",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-3",
+  "jurisdiction": "Missouri Senate",
+  "county": [
+    "Missouri"
+  ],
+  "termStart": "2025-01-08",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 431, 201 W. Capitol Ave., Jefferson City, MO 65101",
+    "phone": "573-751-4008",
+    "email": "mike.henderson@senate.mo.gov",
+    "website": "https://house.mo.gov/MemberDetails.aspx?district=117"
+  },
+  "bio": "Mike Henderson serves as State Senator for Missouri Senate District 3. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "MO",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://house.mo.gov/MemberDetails.aspx?district=117"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/mo/legislature/Mike-Henderson-bfad4ef7-fad2-46e6-8f12-f8ea9feaa0cb.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://house.mo.gov/MemberPhoto.aspx?id=1944"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Mike_Henderson"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Mike_Henderson_(politician)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://house.mo.gov/MemberDetails.aspx?year=2021&code=R&district=117"
+    },
+    {
+      "title": "Public source",
+      "url": "https://house.mo.gov/MemberDetails.aspx?year=2023&code=R&district=117"
+    },
+    {
+      "title": "Public source",
+      "url": "https://house.mo.gov/MemberGridCluster.aspx"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/169897/mike-henderson"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.house.mo.gov/MemberDetails.aspx?district=117"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

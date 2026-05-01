@@ -1,0 +1,72 @@
+{
+  "id": "gale-mastrofrancesco",
+  "name": "Gale Mastrofrancesco",
+  "firstName": "Gale",
+  "lastName": "Mastrofrancesco",
+  "photo": "/images/officials/state-legislature/ct/gale-mastrofrancesco.jpg",
+  "photoSourceUrl": "https://www.cga.ct.gov/legpics/080.png?ver=",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-80",
+  "jurisdiction": "Connecticut House of Representatives",
+  "county": [
+    "Connecticut"
+  ],
+  "termStart": "2019-01-09",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 4200, Legislative Office Building 300 Capitol Ave., Hartford, CT 06106",
+    "phone": "860-240-8700",
+    "email": "gale.mastrofrancesco@housegop.ct.gov",
+    "website": "https://cga.ct.gov/asp/CGABillStatus/CGAMemberBills.asp?dist_code=%27080%27&dist_name=Mastrofrancesco,%20Gale%20L."
+  },
+  "bio": "Gale Mastrofrancesco serves as State Representative for Connecticut House of Representatives District 80. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "CT",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://cga.ct.gov/asp/CGABillStatus/CGAMemberBills.asp?dist_code=%27080%27&dist_name=Mastrofrancesco,%20Gale%20L."
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ct/legislature/Gale-L-Mastrofrancesco-c60ec8d2-fcc3-414e-a122-cca6aeef901d.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://www.cga.ct.gov/legpics/080.png?ver="
+    },
+    {
+      "title": "Public source",
+      "url": "ftp://ftp.cga.ct.gov/pub/data/LegislatorDatabase.csv"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Gale_Mastrofrancesco"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Gale_Mastrofrancesco"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/185719/gale-mastrofrancesco"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.cthousegop.com/mastrofrancesco"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.cthousegop.com/mastrofrancesco/"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/gale-mastrofrancesco-04616031"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

@@ -1,0 +1,68 @@
+{
+  "id": "caroline-menjivar",
+  "name": "Caroline Menjivar",
+  "firstName": "Caroline",
+  "lastName": "Menjivar",
+  "photo": "/images/officials/state-legislature/ca/caroline-menjivar.jpg",
+  "photoSourceUrl": "https://www.senate.ca.gov/sites/senate.ca.gov/files/senator_photos/menjivar_caroline_d-20.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-20",
+  "jurisdiction": "California Senate",
+  "county": [
+    "California"
+  ],
+  "termStart": "2022-12-05",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "1021 O St. Suite 6630, Sacramento, CA 95814",
+    "phone": "916-651-4020",
+    "email": "senator.menjivar@senate.ca.gov",
+    "website": "https://sd20.senate.ca.gov/"
+  },
+  "bio": "Caroline Menjivar serves as State Senator for California Senate District 20. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "CA",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://sd20.senate.ca.gov/"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ca/legislature/Caroline-Menjivar-b19c0361-ca41-4cba-bcf4-b7342a67f28b.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://www.senate.ca.gov/sites/senate.ca.gov/files/senator_photos/menjivar_caroline_d-20.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Caroline_Menjivar"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Caroline_Menjivar"
+    },
+    {
+      "title": "Public source",
+      "url": "https://sd20.senate.ca.gov"
+    },
+    {
+      "title": "Public source",
+      "url": "https://sd20.senate.ca.gov/biography"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/menjivarc"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.senate.ca.gov/senators"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

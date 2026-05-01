@@ -1,0 +1,61 @@
+{
+  "id": "andrew-garrett",
+  "name": "Andrew Garrett",
+  "firstName": "Andrew",
+  "lastName": "Garrett",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-22",
+  "jurisdiction": "Hawaii House of Representatives",
+  "county": [
+    "Hawaii"
+  ],
+  "termStart": "2022-11-08",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "State Capitol Room 323, 415 S. Beretania St., Honolulu, HI 96813",
+    "phone": "808-586-8475",
+    "email": "repgarrett@capitol.hawaii.gov",
+    "website": "https://www.capitol.hawaii.gov/legislature/memberpage.aspx?member=256",
+    "socialMedia": {
+      "facebook": "https://facebook.com/profile.php?id=100085131802111",
+      "instagram": "https://instagram.com/repgarrett"
+    }
+  },
+  "bio": "Andrew Garrett serves as State Representative for Hawaii House of Representatives District 22. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "HI",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.capitol.hawaii.gov/legislature/memberpage.aspx?member=256"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/hi/legislature/Andrew-Takuya-Garrett-442e3aac-61ca-4efe-bbb8-716654554597.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Andrew_Takuya_Garrett"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Andrew_Takuya_Garrett"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.capitol.hawaii.gov/legislature/memberpage.aspx?member=256&year=2023"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.capitol.hawaii.gov/legislature/memberpage.aspx?member=256&year=2024"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.capitol.hawaii.gov/members/legislators.aspx"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

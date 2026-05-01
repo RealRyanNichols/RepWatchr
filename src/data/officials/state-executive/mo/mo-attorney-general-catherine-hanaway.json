@@ -1,0 +1,51 @@
+{
+  "id": "catherine-hanaway",
+  "name": "Catherine Hanaway",
+  "firstName": "Catherine",
+  "lastName": "Hanaway",
+  "photo": "/images/officials/state-executive/mo/catherine-hanaway.jpg",
+  "photoSourceUrl": "https://ago.mo.gov/wp-content/uploads/Hanaway-Headshot-230x300.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "Attorney General",
+  "district": "Missouri",
+  "jurisdiction": "Missouri statewide public office",
+  "county": [
+    "Missouri"
+  ],
+  "termStart": "2025-09-08",
+  "termEnd": "2029-01-08",
+  "contactInfo": {
+    "office": "Supreme Court Building, 207 W. High St.; Jefferson City, MO 65102",
+    "phone": "573-751-3321",
+    "website": "https://ago.mo.gov/"
+  },
+  "bio": "Catherine Hanaway is listed as Attorney General for Missouri. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "MO",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://ago.mo.gov/"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/mo/executive/Catherine-Hanaway-c2f94a50-d59c-4c56-abe6-2eebbce40a68.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://ago.mo.gov/wp-content/uploads/Hanaway-Headshot-230x300.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Catherine_Hanaway"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.naag.org/attorney-general/catherine-hanaway/"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

@@ -1,0 +1,64 @@
+{
+  "id": "dave-nagel",
+  "name": "Dave Nagel",
+  "firstName": "Dave",
+  "lastName": "Nagel",
+  "photo": "/images/officials/state-legislature/nh/dave-nagel.jpg",
+  "photoSourceUrl": "https://s3.amazonaws.com/ballotpedia-api4/files/thumbs/200/300/DavidNagel.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-Belknap 6",
+  "jurisdiction": "New Hampshire House of Representatives",
+  "county": [
+    "New Hampshire"
+  ],
+  "termStart": "2022-12-07",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "State House 107 N. Main St., Concord, NH 03301",
+    "phone": "603-271-3661",
+    "email": "davidnagelmd@gmail.com",
+    "website": "https://gc.nh.gov/house/members/member.aspx?pid=10574"
+  },
+  "bio": "Dave Nagel serves as State Representative for New Hampshire House of Representatives District Belknap 6. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "NH",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://gc.nh.gov/house/members/member.aspx?pid=10574"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/nh/legislature/David-J-Nagel-c614a6b4-5a2b-46ca-89c0-1ff666aef92a.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://s3.amazonaws.com/ballotpedia-api4/files/thumbs/200/300/DavidNagel.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/David_Nagel"
+    },
+    {
+      "title": "Public source",
+      "url": "https://gencourt.state.nh.us/house/members/member.aspx?pid=10574"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.drnagelfornh.com/about-dave.html"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.gencourt.state.nh.us/house/members/member.aspx?pid=10574"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/david-nagel-12712a74"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

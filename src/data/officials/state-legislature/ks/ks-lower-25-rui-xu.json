@@ -1,0 +1,69 @@
+{
+  "id": "rui-xu",
+  "name": "Rui Xu",
+  "firstName": "Rui",
+  "lastName": "Xu",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-25",
+  "jurisdiction": "Kansas House of Representatives",
+  "county": [
+    "Kansas"
+  ],
+  "termStart": "2019-01-14",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "State Capitol Room 174-W, Kansas  Building 300 SW 10th St., Topeka, KS 66612",
+    "phone": "785-296-7686",
+    "email": "rui.xu@house.ks.gov",
+    "website": "https://www.kslegislature.gov/li/b2025_26/members/rep_xu_rui_1/"
+  },
+  "bio": "Rui Xu serves as State Representative for Kansas House of Representatives District 25. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "KS",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.kslegislature.gov/li/b2025_26/members/rep_xu_rui_1/"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ks/legislature/Rui-Xu-c4495c7d-3d3a-4651-9c8b-e3c975c0b84c.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Rui_Xu"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Rui_Xu"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/183534/rui-xu"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.kslegislature.gov/li/b2025_26/members/rep_xu_rui_1"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.kslegislature.org/li/api/v11/rev-1/members/rep_xu_rui_1"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.kslegislature.org/li/api/v11/rev-1/members/rep_xu_rui_1/"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.kslegislature.org/li/b2023_24/members/rep_xu_rui_1"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.kslegislature.org/li/b2023_24/members/rep_xu_rui_1/"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

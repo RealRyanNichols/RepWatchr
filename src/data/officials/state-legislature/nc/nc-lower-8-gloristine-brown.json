@@ -1,0 +1,56 @@
+{
+  "id": "gloristine-brown",
+  "name": "Gloristine Brown",
+  "firstName": "Gloristine",
+  "lastName": "Brown",
+  "photo": "/images/officials/state-legislature/nc/gloristine-brown.jpg",
+  "photoSourceUrl": "https://www.ncleg.gov/Members/MemberImage/H/794/Low",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-8",
+  "jurisdiction": "North Carolina House of Representatives",
+  "county": [
+    "North Carolina"
+  ],
+  "termStart": "2023-01-01",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 403, Legislative Office Building 300 N. Salisbury St., Raleigh, NC 27603",
+    "phone": "919-715-3023",
+    "email": "gloristine.brown@ncleg.gov",
+    "website": "https://www.ncleg.gov/Members/Biography/H/794"
+  },
+  "bio": "Gloristine Brown serves as State Representative for North Carolina House of Representatives District 8. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "NC",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.ncleg.gov/Members/Biography/H/794"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/nc/legislature/Gloristine-Brown-d2ab7bb8-d0d6-4824-a42e-d180c2644f9e.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://www.ncleg.gov/Members/MemberImage/H/794/Low"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Gloristine_Brown"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/gloristine-brown-5187b144"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.ncleg.gov/Members/MemberTable/H"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

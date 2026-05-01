@@ -1,0 +1,64 @@
+{
+  "id": "margaret-franklin",
+  "name": "Margaret Franklin",
+  "firstName": "Margaret",
+  "lastName": "Franklin",
+  "photo": "/images/officials/state-legislature/va/margaret-franklin.jpg",
+  "photoSourceUrl": "https://www.pwcva.gov/assets/2024-01/dsc_6818retouch.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "Delegate",
+  "district": "HD-23",
+  "jurisdiction": "Virginia House of Delegates",
+  "county": [
+    "Virginia"
+  ],
+  "termStart": "2026-01-19",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 816, General Assembly Building 201 N. 9th St., Richmond, VA 23219",
+    "phone": "804-698-1023",
+    "email": "delmfranklin@house.virginia.gov",
+    "website": "https://house.vga.virginia.gov/members/H0404"
+  },
+  "bio": "Margaret Franklin serves as Delegate for Virginia House of Delegates District 23. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "VA",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://house.vga.virginia.gov/members/H0404"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/va/legislature/Margaret-Franklin-71c20dff-ae7b-4799-bd80-7e0c03c402fc.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://www.pwcva.gov/assets/2024-01/dsc_6818retouch.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Margaret_Franklin_(Virginia)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Margaret_Franklin_(politician)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/margaret-franklin"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/margaret-franklin-7a709124"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.pwcva.gov/department/board-county-supervisors/woodbridge-district-supervisor-margaret-angela-franklin"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

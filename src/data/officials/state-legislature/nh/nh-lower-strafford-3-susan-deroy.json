@@ -1,0 +1,64 @@
+{
+  "id": "susan-deroy",
+  "name": "Susan DeRoy",
+  "firstName": "Susan",
+  "lastName": "DeRoy",
+  "photo": "/images/officials/state-legislature/nh/susan-deroy.jpg",
+  "photoSourceUrl": "https://www.citizenscount.org/sites/default/files/2024-07/susan-deroy.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-Strafford 3",
+  "jurisdiction": "New Hampshire House of Representatives",
+  "county": [
+    "New Hampshire"
+  ],
+  "termStart": "2024-12-04",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "State House 107 N. Main St., Concord, NH 03301",
+    "phone": "603-271-3661",
+    "email": "susan.deroy@gc.nh.gov",
+    "website": "https://gc.nh.gov/house/members/member.aspx?pid=11424"
+  },
+  "bio": "Susan DeRoy serves as State Representative for New Hampshire House of Representatives District Strafford 3. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "NH",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://gc.nh.gov/house/members/member.aspx?pid=11424"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/nh/legislature/Susan-DeRoy-09972c73-4e4f-471a-9888-558053aace85.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://www.citizenscount.org/sites/default/files/2024-07/susan-deroy.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Susan_DeRoy"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Susan_DeRoy"
+    },
+    {
+      "title": "Public source",
+      "url": "https://gencourt.state.nh.us/house/members/member.aspx?pid=11424"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/219253/susan-deroy"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/susan-deroy-117613a"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

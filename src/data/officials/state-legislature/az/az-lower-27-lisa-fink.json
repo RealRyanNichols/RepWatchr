@@ -1,0 +1,52 @@
+{
+  "id": "lisa-fink",
+  "name": "Lisa Fink",
+  "firstName": "Lisa",
+  "lastName": "Fink",
+  "photo": "/images/officials/state-legislature/az/lisa-fink.jpg",
+  "photoSourceUrl": "https://www.azvoterguide.com/wp-content/uploads/2024/06/Fink16-photo.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-27",
+  "jurisdiction": "Arizona House of Representatives",
+  "county": [
+    "Arizona"
+  ],
+  "termStart": "2025-01-13",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 345, 1700 W. Washington St., Phoenix, AZ 85007",
+    "phone": "602-926-3516",
+    "email": "lfink@azleg.gov",
+    "website": "https://www.azleg.gov/house-member/?legislature=57&session=129&legislator=2369"
+  },
+  "bio": "Lisa Fink serves as State Representative for Arizona House of Representatives District 27. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "AZ",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.azleg.gov/house-member/?legislature=57&session=129&legislator=2369"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/az/legislature/Lisa-Fink-981d0aee-d239-4acc-9da8-1332481e57ee.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://www.azvoterguide.com/wp-content/uploads/2024/06/Fink16-photo.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Lisa_Fink"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/lisa-fink-11a05413"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

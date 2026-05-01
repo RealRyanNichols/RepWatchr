@@ -1,0 +1,64 @@
+{
+  "id": "kevin-harris",
+  "name": "Kevin Harris",
+  "firstName": "Kevin",
+  "lastName": "Harris",
+  "photo": "/images/officials/state-legislature/md/kevin-harris.jpg",
+  "photoSourceUrl": "https://mgaleg.maryland.gov/2026RS/images/harris03.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-27",
+  "jurisdiction": "Maryland Senate",
+  "county": [
+    "Maryland"
+  ],
+  "termStart": "2025-12-09",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Annapolis, MD 21401",
+    "phone": "410-841-3700",
+    "email": "kevin.harris@senate.maryland.gov",
+    "website": "https://mgaleg.maryland.gov/mgawebsite/Members/Details/harris02"
+  },
+  "bio": "Kevin Harris serves as State Senator for Maryland Senate District 27. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "MD",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://mgaleg.maryland.gov/mgawebsite/Members/Details/harris02"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/md/legislature/Kevin-M-Harris-0b93e4f5-9d81-4c35-a9d3-04ad1375bae9.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://mgaleg.maryland.gov/2026RS/images/harris03.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Kevin_Harris_(Maryland)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Kevin_M._Harris_(Maryland_state_representative)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Kevin_Harris_(politician)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://mgaleg.maryland.gov/mgawebsite/Members/Details/harris03"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/thekevinmharris"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

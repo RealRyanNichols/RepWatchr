@@ -1,0 +1,56 @@
+{
+  "id": "robert-flournoy",
+  "name": "Robert Flournoy",
+  "firstName": "Robert",
+  "lastName": "Flournoy",
+  "photo": "/images/officials/state-legislature/ga/robert-flournoy.jpg",
+  "photoSourceUrl": "https://s3.amazonaws.com/ballotpedia-api4/files/thumbs/200/300/Robert_Flournoy_20241223_044055.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-74",
+  "jurisdiction": "Georgia House of Representatives",
+  "county": [
+    "Georgia"
+  ],
+  "termStart": "2025-01-13",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 512-D, Coverdell Legislative Office Building 18 Capitol Square SW, Atlanta, GA 30334",
+    "phone": "404-656-7859",
+    "email": "robert.flournoy@house.ga.gov",
+    "website": "https://www.legis.ga.gov/members/house/5074"
+  },
+  "bio": "Robert Flournoy serves as State Representative for Georgia House of Representatives District 74. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "GA",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.legis.ga.gov/members/house/5074"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ga/legislature/Robert-Flournoy-32c3fbdd-4034-47d0-b7ab-0411bd200737.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://s3.amazonaws.com/ballotpedia-api4/files/thumbs/200/300/Robert_Flournoy_20241223_044055.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Robert_Flournoy_Jr."
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/203336/robert-flournoy"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/robert-flournoy-16a328bb"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

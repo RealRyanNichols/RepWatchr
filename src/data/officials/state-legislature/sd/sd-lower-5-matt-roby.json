@@ -1,0 +1,64 @@
+{
+  "id": "matt-roby",
+  "name": "Matt Roby",
+  "firstName": "Matt",
+  "lastName": "Roby",
+  "photo": "/images/officials/state-legislature/sd/matt-roby.jpg",
+  "photoSourceUrl": "https://bloximages.newyork1.vip.townnews.com/mykxlg.com/content/tncms/assets/v3/editorial/8/8b/88bea3ac-5e1f-11ee-ba1f-dfd780c64f5d/6515af82998be.image.jpg?resize=333%2C500",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-5",
+  "jurisdiction": "South Dakota House of Representatives",
+  "county": [
+    "South Dakota"
+  ],
+  "termStart": "2025-01-14",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Capitol Building 500 E. Capitol Ave., Pierre, SD 57501",
+    "phone": "605-773-3851",
+    "email": "matt.roby@sdlegislature.gov",
+    "website": "https://sdlegislature.gov/Legislators/Profile/4704/Detail"
+  },
+  "bio": "Matt Roby serves as State Representative for South Dakota House of Representatives District 5. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "SD",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://sdlegislature.gov/Legislators/Profile/4704/Detail"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/sd/legislature/Matt-Roby-8ea8be55-3862-4034-b0c9-8aa418dfc915.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://bloximages.newyork1.vip.townnews.com/mykxlg.com/content/tncms/assets/v3/editorial/8/8b/88bea3ac-5e1f-11ee-ba1f-dfd780c64f5d/6515af82998be.image.jpg?resize=333%2C500"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Matt_Roby"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Matt_Roby"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/216147/matt-roby"
+    },
+    {
+      "title": "Public source",
+      "url": "https://sdlegislature.gov/Legislators/Profile/4812/Detail"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/mattroby"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

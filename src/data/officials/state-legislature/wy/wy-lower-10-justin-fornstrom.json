@@ -1,0 +1,51 @@
+{
+  "id": "justin-fornstrom",
+  "name": "Justin Fornstrom",
+  "firstName": "Justin",
+  "lastName": "Fornstrom",
+  "photo": "/images/officials/state-legislature/wy/justin-fornstrom.jpg",
+  "photoSourceUrl": "https://wyoleg.gov/LegislatorSummary/Photos/68th-FornstromJustin.JPG",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-10",
+  "jurisdiction": "Wyoming House of Representatives",
+  "county": [
+    "Wyoming"
+  ],
+  "termStart": "2025-12-16",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "State Capitol 200 W. 24th St., Cheyenne, WY 82002",
+    "email": "justin.fornstrom@wyoleg.gov",
+    "website": "https://www.wyoleg.gov/Legislators/2025/H/2146"
+  },
+  "bio": "Justin Fornstrom serves as State Representative for Wyoming House of Representatives District 10. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "WY",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.wyoleg.gov/Legislators/2025/H/2146"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/wy/legislature/Justin-Fornstrom-970ff542-b60c-4a3b-bd63-492a38a0a878.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://wyoleg.gov/LegislatorSummary/Photos/68th-FornstromJustin.JPG"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Justin_Fornstrom"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Justin_Fornstrom_(Mayor_of_Pine_Bluffs,_Wyoming,_candidate_2024)"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

@@ -1,0 +1,60 @@
+{
+  "id": "john-larochelle",
+  "name": "John Larochelle",
+  "firstName": "John",
+  "lastName": "Larochelle",
+  "photo": "/images/officials/state-legislature/nh/john-larochelle.jpg",
+  "photoSourceUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9ZbTDURwWF8S0AVA9twgNvOu92KPEOL5v4A&s",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-Strafford 19",
+  "jurisdiction": "New Hampshire House of Representatives",
+  "county": [
+    "New Hampshire"
+  ],
+  "termStart": "2024-12-04",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "State House 107 N. Main St., Concord, NH 03301",
+    "phone": "603-271-3661",
+    "email": "john.larochelle@gc.nh.gov",
+    "website": "https://gc.nh.gov/house/members/member.aspx?pid=11288"
+  },
+  "bio": "John Larochelle serves as State Representative for New Hampshire House of Representatives District Strafford 19. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "NH",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://gc.nh.gov/house/members/member.aspx?pid=11288"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/nh/legislature/John-Larochelle-fcd4cdd8-007f-4d0d-b4c5-371db50e81a5.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9ZbTDURwWF8S0AVA9twgNvOu92KPEOL5v4A&s"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/John_Larochelle"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/John_Larochelle"
+    },
+    {
+      "title": "Public source",
+      "url": "https://gencourt.state.nh.us/house/members/member.aspx?pid=11288"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/111932/john-larochelle"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

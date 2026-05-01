@@ -1,0 +1,60 @@
+{
+  "id": "mark-matthiesen",
+  "name": "Mark Matthiesen",
+  "firstName": "Mark",
+  "lastName": "Matthiesen",
+  "photo": "/images/officials/state-legislature/mo/mark-matthiesen.jpg",
+  "photoSourceUrl": "https://house.mo.gov/MemberPhoto.aspx?id=1937",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-107",
+  "jurisdiction": "Missouri House of Representatives",
+  "county": [
+    "Missouri"
+  ],
+  "termStart": "2023-01-04",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 207-B, 201 W. Capitol Ave., Jefferson City, MO 65101",
+    "phone": "573-751-1470",
+    "email": "mark.matthiesen@house.mo.gov",
+    "website": "https://house.mo.gov/MemberDetails.aspx?district=107"
+  },
+  "bio": "Mark Matthiesen serves as State Representative for Missouri House of Representatives District 107. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "MO",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://house.mo.gov/MemberDetails.aspx?district=107"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/mo/legislature/Mark-Matthiesen-661f49f4-e075-491e-aad8-4dde65ecb6df.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://house.mo.gov/MemberPhoto.aspx?id=1937"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Mark_Matthiesen"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Mark_Matthiesen"
+    },
+    {
+      "title": "Public source",
+      "url": "https://house.mo.gov/MemberDetails.aspx?year=2023&code=R&district=107"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/169778/mark-matthiesen"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

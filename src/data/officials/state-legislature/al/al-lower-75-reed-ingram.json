@@ -1,0 +1,72 @@
+{
+  "id": "reed-ingram",
+  "name": "Reed Ingram",
+  "firstName": "Reed",
+  "lastName": "Ingram",
+  "photo": "/images/officials/state-legislature/al/reed-ingram.jpg",
+  "photoSourceUrl": "https://www.legislature.state.al.us/pdf/house/members/Ingram_75.png",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-75",
+  "jurisdiction": "Alabama House of Representatives",
+  "county": [
+    "Alabama"
+  ],
+  "termStart": "",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 413-C, 11 S. Union St., Montgomery, AL 36130",
+    "phone": "334-261-0507",
+    "email": "reedingram75@gmail.com",
+    "website": "https://alison.legislature.state.al.us/house-leaders-members"
+  },
+  "bio": "Reed Ingram serves as State Representative for Alabama House of Representatives District 75. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "AL",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://alison.legislature.state.al.us/house-leaders-members"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/al/legislature/Reed-Ingram-bd08d7a5-b1f3-484f-80c1-bddf2d636413.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://www.legislature.state.al.us/pdf/house/members/Ingram_75.png"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Reed_Ingram"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Reed_Ingram"
+    },
+    {
+      "title": "graphql endpoint for member information",
+      "url": "https://gql.api.alison.legislature.state.al.us/graphql"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/81538/reed-ingram"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.legislature.state.al.us/aliswww/ISD/ALRepresentative.aspx?NAME=Ingram&OID_SPONSOR=100557&OID_PERSON=6167&SESSNAME="
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.legislature.state.al.us/aliswww/ISD/ALRepresentative.aspx?OID_SPONSOR=100557&OID_PERSON=6167"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.legislature.state.al.us/aliswww/ISD/House/ALRepresentatives.aspx"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

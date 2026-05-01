@@ -1,0 +1,65 @@
+{
+  "id": "chris-hart",
+  "name": "Chris Hart",
+  "firstName": "Chris",
+  "lastName": "Hart",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-73",
+  "jurisdiction": "South Carolina House of Representatives",
+  "county": [
+    "South Carolina"
+  ],
+  "termStart": "",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 432B, Blatt Building P.O. Box 11867, Columbia, SC 29201",
+    "phone": "803-734-3061",
+    "email": "chrishart@schouse.gov",
+    "website": "https://scstatehouse.gov/member.php?code=0770454453"
+  },
+  "bio": "Chris Hart serves as State Representative for South Carolina House of Representatives District 73. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "SC",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://scstatehouse.gov/member.php?code=0770454453"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/sc/legislature/Christopher-R-Chris-Hart-f9925f2e-d43e-47ff-ba74-f670b65d96e7.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Christopher_Hart"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Christopher_R._Hart"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/56705/chris-hart"
+    },
+    {
+      "title": "Public source",
+      "url": "https://scstatehouse.gov/member.php?chamber=H"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/christopher-hart-a0245128"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.scstatehouse.gov/member.php?chamber=H"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.scstatehouse.gov/member.php?code=0770454453"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

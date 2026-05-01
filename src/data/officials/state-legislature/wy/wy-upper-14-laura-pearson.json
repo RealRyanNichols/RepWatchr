@@ -1,0 +1,63 @@
+{
+  "id": "laura-pearson",
+  "name": "Laura Pearson",
+  "firstName": "Laura",
+  "lastName": "Pearson",
+  "photo": "/images/officials/state-legislature/wy/laura-pearson.jpg",
+  "photoSourceUrl": "https://wyoleg.gov/LegislatorSummary/Photos/68th-PearsonLaura.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-14",
+  "jurisdiction": "Wyoming Senate",
+  "county": [
+    "Wyoming"
+  ],
+  "termStart": "2025-01-06",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "State Capitol 200 W. 24th St., Cheyenne, WY 82002",
+    "email": "laura.pearson@wyoleg.gov",
+    "website": "https://wyoleg.gov/Legislators/2025/R/2138"
+  },
+  "bio": "Laura Pearson serves as State Senator for Wyoming Senate District 14. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "WY",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://wyoleg.gov/Legislators/2025/R/2138"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/wy/legislature/Laura-Pearson-c6b78357-5a9d-41e9-b947-1d81227b0f15.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://wyoleg.gov/LegislatorSummary/Photos/68th-PearsonLaura.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Laura_Taliaferro_Pearson"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Laura_Taliaferro_Pearson"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/218302/laura-taliaferro-pearson"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/laura-pearson-80352334"
+    },
+    {
+      "title": "Public source",
+      "url": "https://wyoleg.gov/Legislators/2025/S/2138"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

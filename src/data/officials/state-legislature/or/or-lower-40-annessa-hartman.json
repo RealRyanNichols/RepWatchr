@@ -1,0 +1,64 @@
+{
+  "id": "annessa-hartman",
+  "name": "Annessa Hartman",
+  "firstName": "Annessa",
+  "lastName": "Hartman",
+  "photo": "/images/officials/state-legislature/or/annessa-hartman.jpg",
+  "photoSourceUrl": "https://www.clackamas.us/sites/default/files/2021-12/annessa_hartman.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-40",
+  "jurisdiction": "Oregon House of Representatives",
+  "county": [
+    "Oregon"
+  ],
+  "termStart": "2023-01-09",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room H-487, 900 Court St. NE, Salem, OR 97301",
+    "phone": "503-986-1440",
+    "email": "rep.annessahartman@oregonlegislature.gov",
+    "website": "https://www.oregonlegislature.gov/hartman"
+  },
+  "bio": "Annessa Hartman serves as State Representative for Oregon House of Representatives District 40. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "OR",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.oregonlegislature.gov/hartman"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/or/legislature/Annessa-Hartman-7a36fd6a-105a-44b3-b7e3-b3447979db49.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://www.clackamas.us/sites/default/files/2021-12/annessa_hartman.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://api.oregonlegislature.gov/odata/odataservice.svc/LegislativeSessions('2023R1')/Legislators"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Annessa_Hartman"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Annessa_Hartman"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/annessahartman"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.oregonlegislature.gov/hartman/Pages/biography.aspx"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

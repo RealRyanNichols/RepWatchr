@@ -1,0 +1,60 @@
+{
+  "id": "george-grant",
+  "name": "George Grant",
+  "firstName": "George",
+  "lastName": "Grant",
+  "photo": "/images/officials/state-legislature/nh/george-grant.jpg",
+  "photoSourceUrl": "https://images.squarespace-cdn.com/content/v1/66dfa3554a4adb713d84216a/3071f119-e8b0-4f19-be72-993a6c7f8fea/George-Grant-Sul5-2+%281%29.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-Sullivan 5",
+  "jurisdiction": "New Hampshire House of Representatives",
+  "county": [
+    "New Hampshire"
+  ],
+  "termStart": "2024-12-04",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "State House 107 N. Main St., Concord, NH 03301",
+    "phone": "603-271-3661",
+    "email": "george.grant@gc.nh.gov",
+    "website": "https://gc.nh.gov/house/members/member.aspx?pid=10729"
+  },
+  "bio": "George Grant serves as State Representative for New Hampshire House of Representatives District Sullivan 5. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "NH",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://gc.nh.gov/house/members/member.aspx?pid=10729"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/nh/legislature/George-Grant-8ecb185e-f9d2-4da1-94af-8ea367b7b34a.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://images.squarespace-cdn.com/content/v1/66dfa3554a4adb713d84216a/3071f119-e8b0-4f19-be72-993a6c7f8fea/George-Grant-Sul5-2+%281%29.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/George_Grant"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/George_Grant_(New_Hampshire_politician)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://gencourt.state.nh.us/house/members/member.aspx?pid=10729"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/210505/george-grant"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

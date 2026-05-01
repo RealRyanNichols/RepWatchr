@@ -1,0 +1,56 @@
+{
+  "id": "mike-pike",
+  "name": "Mike Pike",
+  "firstName": "Mike",
+  "lastName": "Pike",
+  "photo": "/images/officials/state-legislature/ia/mike-pike.jpg",
+  "photoSourceUrl": "https://www.legis.iowa.gov/photo?action=getPhoto&ga=91&pid=37458",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-20",
+  "jurisdiction": "Iowa Senate",
+  "county": [
+    "Iowa"
+  ],
+  "termStart": "2025-01-02",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "1007 E. Grand Ave., Des Moines, IA 50319",
+    "phone": "515-281-3371",
+    "email": "mike.pike@legis.iowa.gov",
+    "website": "https://www.legis.iowa.gov/legislators/legislator?ga=91&personID=37458"
+  },
+  "bio": "Mike Pike serves as State Senator for Iowa Senate District 20. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "IA",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.legis.iowa.gov/legislators/legislator?ga=91&personID=37458"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ia/legislature/Mike-Pike-fdb8c40c-9f1e-4799-bc5f-0249d21f3811.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://www.legis.iowa.gov/photo?action=getPhoto&ga=91&pid=37458"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Mike_Pike"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Mike_Pike"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.legis.iowa.gov/legislators/legislator?personID=37458"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

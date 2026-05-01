@@ -1,0 +1,61 @@
+{
+  "id": "al-cutrona",
+  "name": "Al Cutrona",
+  "firstName": "Al",
+  "lastName": "Cutrona",
+  "party": "R",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-33",
+  "jurisdiction": "Ohio Senate",
+  "county": [
+    "Ohio"
+  ],
+  "termStart": "2024-06-26",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 41, Statehouse, 1 Capitol Square Ground Floor, Columbus, OH 43215",
+    "phone": "614-466-8285",
+    "email": "sd33@ohiosenate.gov",
+    "website": "https://ohiohouse.gov/al-cutrona"
+  },
+  "bio": "Al Cutrona serves as State Senator for Ohio Senate District 33. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "OH",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://ohiohouse.gov/al-cutrona"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/oh/legislature/Al-Cutrona-6a1fc3b1-ebfd-47b7-adec-ddcd84d137c9.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Alessandro_Cutrona"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Alessandro_Cutrona"
+    },
+    {
+      "title": "member details page",
+      "url": "https://ohiohouse.gov/members/al-cutrona"
+    },
+    {
+      "title": "member list page",
+      "url": "https://www.legislature.ohio.gov/legislators/house-directory"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.ohiohouse.gov/members/al-cutrona"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.ohiosenate.gov/members/al-cutrona"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

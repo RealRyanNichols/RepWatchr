@@ -1,0 +1,72 @@
+{
+  "id": "eliot-bostar",
+  "name": "Eliot Bostar",
+  "firstName": "Eliot",
+  "lastName": "Bostar",
+  "photo": "/images/officials/state-legislature/ne/eliot-bostar.jpg",
+  "photoSourceUrl": "https://www.nebraskalegislature.gov/media/images/senators/dist29/highres/dist29.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "NP",
+  "level": "state",
+  "position": "State Senator",
+  "district": "LD-29",
+  "jurisdiction": "Nebraska Legislature",
+  "county": [
+    "Nebraska"
+  ],
+  "termStart": "2021-01-06",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "State Capitol Room 1012, P.O. Box 94604, Lincoln, NE 68509",
+    "phone": "402-471-2734",
+    "email": "ebostar@leg.ne.gov",
+    "website": "https://nebraskalegislature.gov/senators/landing-pages/index.php?District=29"
+  },
+  "bio": "Eliot Bostar serves as State Senator for Nebraska Legislature District 29. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "NE",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://nebraskalegislature.gov/senators/landing-pages/index.php?District=29"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ne/legislature/Eliot-Bostar-5e6ca662-d4e3-405b-a060-d0150546eede.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://www.nebraskalegislature.gov/media/images/senators/dist29/highres/dist29.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Eliot_Bostar"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Eliot_Bostar"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/190110/eliot-bostar"
+    },
+    {
+      "title": "Public source",
+      "url": "https://nebraskalegislature.gov/senators/senator_list.php"
+    },
+    {
+      "title": "Public source",
+      "url": "https://news.legislature.ne.gov/dist29"
+    },
+    {
+      "title": "Public source",
+      "url": "https://news.legislature.ne.gov/dist29/"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/eliotbostar"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

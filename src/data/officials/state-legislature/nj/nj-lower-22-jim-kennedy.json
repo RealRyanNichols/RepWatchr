@@ -1,0 +1,69 @@
+{
+  "id": "jim-kennedy",
+  "name": "Jim Kennedy",
+  "firstName": "Jim",
+  "lastName": "Kennedy",
+  "party": "D",
+  "level": "state",
+  "position": "Assemblymember",
+  "district": "HD-22",
+  "jurisdiction": "New Jersey General Assembly",
+  "county": [
+    "New Jersey"
+  ],
+  "termStart": "2016-01-12",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "P.O. Box 068 State House, 145 W. State St., Trenton, NJ 08625",
+    "phone": "609-847-3905",
+    "email": "asmkennedy@njleg.org",
+    "website": "https://www.assemblydems.com/195/James-J-Kennedy---District-22"
+  },
+  "bio": "Jim Kennedy serves as Assemblymember for New Jersey General Assembly District 22. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "NJ",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.assemblydems.com/195/James-J-Kennedy---District-22"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/nj/legislature/James-J-Kennedy-d80f0df2-57cd-436b-a250-7413ec11fe27.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/James_J._Kennedy"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/James_J._Kennedy"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/156538/james-kennedy"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.assemblydems.com/james-kennedy"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/james-kennedy-4704b73a"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.njleg.state.nj.us/api/legislatorData/legislatorBio/381"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.njleg.state.nj.us/downloads.asp"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.njleg.state.nj.us/legislative-roster"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

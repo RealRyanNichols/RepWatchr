@@ -1,0 +1,52 @@
+{
+  "id": "bobbi-boudman",
+  "name": "Bobbi Boudman",
+  "firstName": "Bobbi",
+  "lastName": "Boudman",
+  "photo": "/images/officials/state-legislature/nh/bobbi-boudman.jpg",
+  "photoSourceUrl": "https://s3.amazonaws.com/ballotpedia-api4/files/thumbs/200/300/Bobbi_Boudman.jpeg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-Carroll 7",
+  "jurisdiction": "New Hampshire House of Representatives",
+  "county": [
+    "New Hampshire"
+  ],
+  "termStart": "2026-03-25",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "State House 107 N. Main St., Concord, NH 03301",
+    "phone": "603-271-3661",
+    "email": "bobbi.boudman@gc.nh.gov",
+    "website": "https://gc.nh.gov/house/members/member.aspx?pid=10746"
+  },
+  "bio": "Bobbi Boudman serves as State Representative for New Hampshire House of Representatives District Carroll 7. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "NH",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://gc.nh.gov/house/members/member.aspx?pid=10746"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/nh/legislature/Bobbi-Boudman-4dadf712-9f7e-4120-bd9a-455bf619f757.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://s3.amazonaws.com/ballotpedia-api4/files/thumbs/200/300/Bobbi_Boudman.jpeg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Bobbi_Boudman"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Bobbi_Boudman"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

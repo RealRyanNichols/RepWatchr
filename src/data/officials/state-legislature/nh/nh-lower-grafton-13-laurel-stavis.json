@@ -1,0 +1,72 @@
+{
+  "id": "laurel-stavis",
+  "name": "Laurel Stavis",
+  "firstName": "Laurel",
+  "lastName": "Stavis",
+  "photo": "/images/officials/state-legislature/nh/laurel-stavis.jpg",
+  "photoSourceUrl": "https://lebanonnh.gov/ImageRepository/Document?documentID=20959",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-Grafton 13",
+  "jurisdiction": "New Hampshire House of Representatives",
+  "county": [
+    "New Hampshire"
+  ],
+  "termStart": "2018-12-05",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "State House 107 N. Main St., Concord, NH 03301",
+    "phone": "603-271-3661",
+    "email": "laurel.stavis@gc.nh.gov",
+    "website": "https://gc.nh.gov/house/members/member.aspx?pid=9063"
+  },
+  "bio": "Laurel Stavis serves as State Representative for New Hampshire House of Representatives District Grafton 13. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "NH",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://gc.nh.gov/house/members/member.aspx?pid=9063"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/nh/legislature/Laurel-Stavis-90ca1969-94b3-4c8d-b712-e00e48a7a671.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://lebanonnh.gov/ImageRepository/Document?documentID=20959"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Laurel_Stavis"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Laurel_Stavis"
+    },
+    {
+      "title": "Public source",
+      "url": "https://gencourt.state.nh.us/downloads/Members.txt"
+    },
+    {
+      "title": "Public source",
+      "url": "https://gencourt.state.nh.us/downloads/members.txt"
+    },
+    {
+      "title": "Public source",
+      "url": "https://gencourt.state.nh.us/house/members/member.aspx?pid=9063"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/185538/laurel-stavis"
+    },
+    {
+      "title": "Public source",
+      "url": "https://lebanonnh.gov/1856/Councilor-Laurel-Stavis"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

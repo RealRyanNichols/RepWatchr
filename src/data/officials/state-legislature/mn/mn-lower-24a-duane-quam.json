@@ -1,0 +1,64 @@
+{
+  "id": "duane-quam",
+  "name": "Duane Quam",
+  "firstName": "Duane",
+  "lastName": "Quam",
+  "photo": "/images/officials/state-legislature/mn/duane-quam.jpg",
+  "photoSourceUrl": "https://www.house.mn.gov/hinfo/memberimgls94/24A.gif?v=112221",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-24A",
+  "jurisdiction": "Minnesota House of Representatives",
+  "county": [
+    "Minnesota"
+  ],
+  "termStart": "2023-01-03",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Centennial Office Building 658 Cedar St., Second Floor, St. Paul, MN 55155",
+    "phone": "651-296-9236",
+    "email": "rep.duane.quam@house.mn.gov",
+    "website": "https://www.house.mn.gov/members/profile/15366"
+  },
+  "bio": "Duane Quam serves as State Representative for Minnesota House of Representatives District 24A. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "MN",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.house.mn.gov/members/profile/15366"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/mn/legislature/Duane-Quam-6652aa40-32c5-4430-bbf6-707a0b8a1f56.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://www.house.mn.gov/hinfo/memberimgls94/24A.gif?v=112221"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Duane_Quam"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Duane_Quam"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/123232/duane-quam"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.house.leg.state.mn.us/members/hmem.asp"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/drquam"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

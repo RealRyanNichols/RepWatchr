@@ -1,0 +1,60 @@
+{
+  "id": "xp-lee",
+  "name": "Xp Lee",
+  "firstName": "Xp",
+  "lastName": "Lee",
+  "photo": "/images/officials/state-legislature/mn/xp-lee.jpg",
+  "photoSourceUrl": "https://www.house.mn.gov/hinfo/memberimgls94/34B.gif?v=112221",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-34B",
+  "jurisdiction": "Minnesota House of Representatives",
+  "county": [
+    "Minnesota"
+  ],
+  "termStart": "2025-09-26",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Centennial Office Building 658 Cedar St., Fifth Floor, St. Paul, MN 55155",
+    "phone": "651-296-4280",
+    "email": "rep.xp.lee@house.mn.gov",
+    "website": "https://www.house.mn.gov/members/profile/15652"
+  },
+  "bio": "Xp Lee serves as State Representative for Minnesota House of Representatives District 34B. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "MN",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.house.mn.gov/members/profile/15652"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/mn/legislature/Xp-Lee-622e5358-869c-4d25-b6ed-e5425ca56caa.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://www.house.mn.gov/hinfo/memberimgls94/34B.gif?v=112221"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Xp_Lee"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Xp_Lee"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/226798/xp-lee"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/xiongpaolee"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

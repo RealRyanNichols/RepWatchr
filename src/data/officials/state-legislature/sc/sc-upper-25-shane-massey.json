@@ -1,0 +1,65 @@
+{
+  "id": "shane-massey",
+  "name": "Shane Massey",
+  "firstName": "Shane",
+  "lastName": "Massey",
+  "party": "R",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-25",
+  "jurisdiction": "South Carolina Senate",
+  "county": [
+    "South Carolina"
+  ],
+  "termStart": "",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 311, Gressette Building P.O. Box 142, Columbia, SC 29201",
+    "phone": "803-212-6330",
+    "email": "shanemassey@scsenate.gov",
+    "website": "https://scstatehouse.gov/member.php?code=1185227131"
+  },
+  "bio": "Shane Massey serves as State Senator for South Carolina Senate District 25. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "SC",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://scstatehouse.gov/member.php?code=1185227131"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/sc/legislature/A-Shane-Massey-340b7b78-4f07-49ef-8872-dab35cf48c5c.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Shane_Massey"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/A._Shane_Massey"
+    },
+    {
+      "title": "Public source",
+      "url": "https://floodcoalition.org/members/shane-massey"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/101903/shane-massey"
+    },
+    {
+      "title": "Public source",
+      "url": "https://scstatehouse.gov/member.php?chamber=S"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.scstatehouse.gov/member.php?chamber=S"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.scstatehouse.gov/member.php?code=1185227131"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

@@ -1,0 +1,56 @@
+{
+  "id": "lilly-fuchs",
+  "name": "Lilly Fuchs",
+  "firstName": "Lilly",
+  "lastName": "Fuchs",
+  "photo": "/images/officials/state-legislature/mo/lilly-fuchs.jpg",
+  "photoSourceUrl": "https://victoryfund.org/wp-content/uploads/2024/08/Capital-Photos-Arm-on-hip-at-pillar-full-body-scaled-e1724799705880-500x500-250x250.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-80",
+  "jurisdiction": "Missouri House of Representatives",
+  "county": [
+    "Missouri"
+  ],
+  "termStart": "2025-01-08",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 109-H, 201 W. Capitol Ave., Jefferson City, MO 65101",
+    "phone": "573-751-6736",
+    "email": "elizabeth.fuchs@house.mo.gov",
+    "website": "https://house.mo.gov/MemberDetails.aspx?district=080"
+  },
+  "bio": "Lilly Fuchs serves as State Representative for Missouri House of Representatives District 80. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "MO",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://house.mo.gov/MemberDetails.aspx?district=080"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/mo/legislature/Lilly-Fuchs-733d6ca4-9be3-4541-bcc9-75b7431cfc39.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://victoryfund.org/wp-content/uploads/2024/08/Capital-Photos-Arm-on-hip-at-pillar-full-body-scaled-e1724799705880-500x500-250x250.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Elizabeth_Fuchs"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/217695/elizabeth-fuchs"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/elizabeth-fuchs-msw-8b31226a"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

@@ -1,0 +1,48 @@
+{
+  "id": "pat-boone",
+  "name": "Pat Boone",
+  "firstName": "Pat",
+  "lastName": "Boone",
+  "photo": "/images/officials/state-legislature/nm/pat-boone.jpg",
+  "photoSourceUrl": "https://senatorpatboone.com/wp-content/uploads/2024/03/Pat-Boone-Photo-1.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-27",
+  "jurisdiction": "New Mexico Senate",
+  "county": [
+    "New Mexico"
+  ],
+  "termStart": "2025-01-01",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "State Capitol Room 415D, New Mexico  490 Old Santa Fe Trail, Santa Fe, NM 87501",
+    "phone": "505-986-4393",
+    "email": "pat.boone@nmlegis.gov",
+    "website": "https://www.nmlegis.gov/Members/Legislator?SponCode=SBOON"
+  },
+  "bio": "Pat Boone serves as State Senator for New Mexico Senate District 27. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "NM",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.nmlegis.gov/Members/Legislator?SponCode=SBOON"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/nm/legislature/Pat-Boone-4093c9b8-d07a-4a12-b13b-abbd4130b1fe.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://senatorpatboone.com/wp-content/uploads/2024/03/Pat-Boone-Photo-1.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Patrick_Boone_IV"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

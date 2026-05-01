@@ -1,0 +1,60 @@
+{
+  "id": "cecelia-espenoza",
+  "name": "Cecelia Espenoza",
+  "firstName": "Cecelia",
+  "lastName": "Espenoza",
+  "photo": "/images/officials/state-legislature/co/cecelia-espenoza.jpg",
+  "photoSourceUrl": "https://s3.amazonaws.com/ballotpedia-api4/files/thumbs/200/300/CeceliaEspenoza24.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-4",
+  "jurisdiction": "Colorado House of Representatives",
+  "county": [
+    "Colorado"
+  ],
+  "termStart": "2025-01-08",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "State Capitol Room 307, Colorado  Building 200 E. Colfax Ave., Denver, CO 80203",
+    "phone": "303-866-2954",
+    "email": "cecelia.espenoza.house@coleg.gov",
+    "website": "https://leg.colorado.gov/legislators/cecelia-espenoza"
+  },
+  "bio": "Cecelia Espenoza serves as State Representative for Colorado House of Representatives District 4. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "CO",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://leg.colorado.gov/legislators/cecelia-espenoza"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/co/legislature/Cecelia-Espenoza-a34a6b10-12d9-4109-86d1-76c311463333.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://s3.amazonaws.com/ballotpedia-api4/files/thumbs/200/300/CeceliaEspenoza24.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Cecelia_Espenoza"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Cecelia_Espenoza"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/217129/cecelia-espenoza"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/cecelia-espenoza"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

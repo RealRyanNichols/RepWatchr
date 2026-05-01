@@ -1,0 +1,47 @@
+{
+  "id": "brian-kemp",
+  "name": "Brian Kemp",
+  "firstName": "Brian",
+  "lastName": "Kemp",
+  "photo": "/images/officials/state-executive/ga/brian-kemp.jpg",
+  "photoSourceUrl": "https://gov.georgia.gov/sites/gov.georgia.gov/files/styles/flexheight/public/2022-06/Headshot%202022.JPG?itok=KYKoui1E",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "Governor",
+  "district": "Georgia",
+  "jurisdiction": "Georgia statewide public office",
+  "county": [
+    "Georgia"
+  ],
+  "termStart": "2019-01-14",
+  "termEnd": "2027-01-11",
+  "contactInfo": {
+    "office": "206 Washington Street; Suite 203, State Capitol; Atlanta, GA 30334",
+    "phone": "404-656-1776",
+    "website": "https://gov.georgia.gov/",
+    "socialMedia": {
+      "x": "https://x.com/govkemp",
+      "twitter": "https://x.com/govkemp"
+    }
+  },
+  "bio": "Brian Kemp is listed as Governor for Georgia. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "GA",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://gov.georgia.gov/"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ga/executive/Brian-Kemp-600e5c48-f5c0-4535-a219-60a5fd94c38f.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://gov.georgia.gov/sites/gov.georgia.gov/files/styles/flexheight/public/2022-06/Headshot%202022.JPG?itok=KYKoui1E"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

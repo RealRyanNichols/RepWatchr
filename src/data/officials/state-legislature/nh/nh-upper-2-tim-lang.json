@@ -1,0 +1,68 @@
+{
+  "id": "tim-lang",
+  "name": "Tim Lang",
+  "firstName": "Tim",
+  "lastName": "Lang",
+  "photo": "/images/officials/state-legislature/nh/tim-lang.jpg",
+  "photoSourceUrl": "https://storage.googleapis.com/enview-dev-public-general/legislative-people-photos/59100.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-2",
+  "jurisdiction": "New Hampshire Senate",
+  "county": [
+    "New Hampshire"
+  ],
+  "termStart": "2022-12-07",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 117, State House 107 N. Main St., Concord, NH 03301",
+    "phone": "603-271-2117",
+    "email": "timothy.lang@gc.nh.gov",
+    "website": "https://gc.nh.gov/senate/members/webpages/district02.aspx"
+  },
+  "bio": "Tim Lang serves as State Senator for New Hampshire Senate District 2. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "NH",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://gc.nh.gov/senate/members/webpages/district02.aspx"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/nh/legislature/Timothy-Lang-5330ad05-ce69-47c0-9093-6286233c7a7d.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://storage.googleapis.com/enview-dev-public-general/legislative-people-photos/59100.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Timothy_Lang,_Sr."
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Timothy_Lang_Sr."
+    },
+    {
+      "title": "Public source",
+      "url": "https://gencourt.state.nh.us/senate/members/webpages/district02.aspx"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/141853/timothy-lang-sr"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.gencourt.state.nh.us/Senate/members/webpages/district02.aspx"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/tlangsr"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

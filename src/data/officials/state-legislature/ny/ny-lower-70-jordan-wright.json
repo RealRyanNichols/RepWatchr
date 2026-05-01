@@ -1,0 +1,60 @@
+{
+  "id": "jordan-wright",
+  "name": "Jordan Wright",
+  "firstName": "Jordan",
+  "lastName": "Wright",
+  "photo": "/images/officials/state-legislature/ny/jordan-wright.jpg",
+  "photoSourceUrl": "https://static.wixstatic.com/media/de9c5c_2dc7bbf2df8248b58511913d9eb7f780~mv2.png/v1/fill/w_874,h_1023,al_c,q_90,usm_0.66_1.00_0.01,enc_avif,quality_auto/image4_edited.png",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "Assemblymember",
+  "district": "HD-70",
+  "jurisdiction": "New York State Assembly",
+  "county": [
+    "New York"
+  ],
+  "termStart": "2025-01-01",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 532, Legislative Office Building, Albany, NY 12248",
+    "phone": "518-455-4793",
+    "email": "wrightjj@nyassembly.gov",
+    "website": "https://nyassembly.gov/mem/Jordan-J.G-Wright"
+  },
+  "bio": "Jordan Wright serves as Assemblymember for New York State Assembly District 70. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "NY",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://nyassembly.gov/mem/Jordan-J.G-Wright"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ny/legislature/Jordan-Wright-3f77833f-4ab3-45b2-9cca-ee51f69e65ba.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://static.wixstatic.com/media/de9c5c_2dc7bbf2df8248b58511913d9eb7f780~mv2.png/v1/fill/w_874,h_1023,al_c,q_90,usm_0.66_1.00_0.01,enc_avif,quality_auto/image4_edited.png"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Jordan_Wright"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Jordan_Wright_(politician)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/217348/jordan-wright"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/jordanjgwright"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

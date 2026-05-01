@@ -1,0 +1,55 @@
+{
+  "id": "anthony-g-brown",
+  "name": "Anthony G. Brown",
+  "firstName": "Anthony",
+  "lastName": "Brown",
+  "photo": "/images/officials/state-executive/md/anthony-g-brown.jpg",
+  "photoSourceUrl": "https://oag.maryland.gov/our-office/PublishingImages/AttorneyGeneral.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "Attorney General",
+  "district": "Maryland",
+  "jurisdiction": "Maryland statewide public office",
+  "county": [
+    "Maryland"
+  ],
+  "termStart": "2023-01-03",
+  "termEnd": "2027-01-04",
+  "contactInfo": {
+    "office": "200 St. Paul Place; Baltimore, MD 21202",
+    "phone": "410-576-6300",
+    "website": "https://oag.maryland.gov/"
+  },
+  "bio": "Anthony G. Brown is listed as Attorney General for Maryland. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "MD",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://oag.maryland.gov/"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/md/executive/Anthony-Brown-1ad81709-e1d6-42bd-86bc-afdec934288c.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://oag.maryland.gov/our-office/PublishingImages/AttorneyGeneral.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://oag.maryland.gov/Pages/oag.aspx"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Anthony_Brown_(Maryland)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.naag.org/attorney-general/anthony-brown/"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

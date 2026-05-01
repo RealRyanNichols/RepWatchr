@@ -1,0 +1,74 @@
+{
+  "id": "mitzi-epstein",
+  "name": "Mitzi Epstein",
+  "firstName": "Mitzi",
+  "lastName": "Epstein",
+  "party": "D",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-12",
+  "jurisdiction": "Arizona Senate",
+  "county": [
+    "Arizona"
+  ],
+  "termStart": "2023-01-09",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 315, 1700 W. Washington St., Phoenix, AZ 85007",
+    "phone": "602-926-4870",
+    "email": "mepstein@azleg.gov",
+    "website": "https://www.azleg.gov/House/House-member/?legislature=54&session=122&legislator=1881",
+    "socialMedia": {
+      "x": "https://x.com/MitziEpstein",
+      "twitter": "https://x.com/MitziEpstein",
+      "facebook": "https://facebook.com/MitziEpsteinforAZ"
+    }
+  },
+  "bio": "Mitzi Epstein serves as State Senator for Arizona Senate District 12. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "AZ",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.azleg.gov/House/House-member/?legislature=54&session=122&legislator=1881"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/az/legislature/Denise-Epstein-f0175b18-52a0-407d-af38-c1fe118e209d.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Denise_Epstein"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Denise_Epstein"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/153884/mitzi-epstein"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.azleg.gov/MemberRoster/?body=H"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.azleg.gov/memberroster/?body=H"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.azleg.gov/memberroster/?body=S"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.azleg.gov/senate-member/?legislature=56&legislator=2122"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.azleg.gov/senate-member/?legislature=57&legislator=2377"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

@@ -1,0 +1,64 @@
+{
+  "id": "greg-goode",
+  "name": "Greg Goode",
+  "firstName": "Greg",
+  "lastName": "Goode",
+  "photo": "/images/officials/state-legislature/in/greg-goode.jpg",
+  "photoSourceUrl": "https://cdn.zephyrcms.com/4f942262-ed42-47cc-a158-6691b9333043/-/progressive/yes/-/format/jpeg/-/scale_crop/200x300/center/-/stretch/off/goode-website-2.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-38",
+  "jurisdiction": "Indiana Senate",
+  "county": [
+    "Indiana"
+  ],
+  "termStart": "2023-11-01",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "200 W. Washington St., Indianapolis, IN 46204",
+    "phone": "800-382-9467",
+    "email": "s38@iga.in.gov",
+    "website": "https://www.indianasenaterepublicans.com/goode"
+  },
+  "bio": "Greg Goode serves as State Senator for Indiana Senate District 38. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "IN",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.indianasenaterepublicans.com/goode"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/in/legislature/Greg-Goode-a5c26055-cf9f-4d9c-979a-f8964c48c4da.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://cdn.zephyrcms.com/4f942262-ed42-47cc-a158-6691b9333043/-/progressive/yes/-/format/jpeg/-/scale_crop/200x300/center/-/stretch/off/goode-website-2.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Greg_Goode_(Indiana)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Greg_Goode"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/212880/greg-goode"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.indianasenaterepublicans.com/senators"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/greg-goode-66320118"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

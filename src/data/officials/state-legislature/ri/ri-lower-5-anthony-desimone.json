@@ -1,0 +1,64 @@
+{
+  "id": "anthony-desimone",
+  "name": "Anthony DeSimone",
+  "firstName": "Anthony",
+  "lastName": "DeSimone",
+  "photo": "/images/officials/state-legislature/ri/anthony-desimone.jpg",
+  "photoSourceUrl": "https://www.rilegislature.gov/representatives/Pictures/DeSimone.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-5",
+  "jurisdiction": "Rhode Island House of Representatives",
+  "county": [
+    "Rhode Island"
+  ],
+  "termStart": "2023-01-03",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "82 Smith St., Providence, RI 02903",
+    "phone": "401-222-3580",
+    "email": "rep-desimone@rilegislature.gov",
+    "website": "https://www.rilegislature.gov/representatives/desimone/Pages/Biography.aspx"
+  },
+  "bio": "Anthony DeSimone serves as State Representative for Rhode Island House of Representatives District 5. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "RI",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.rilegislature.gov/representatives/desimone/Pages/Biography.aspx"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ri/legislature/Anthony-J-DeSimone-b9359c6a-fbb2-4165-af9b-a6c63290d851.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://www.rilegislature.gov/representatives/Pictures/DeSimone.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Anthony_DeSimone"
+    },
+    {
+      "title": "Public source",
+      "url": "https://webserver.rilin.state.ri.us/Email/RepEmailListDistrict.asp"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.rilegislature.gov/representatives/disemonea/Pages/Biography.aspx"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.rilegislature.gov/SiteAssets/MailingLists/Representatives.xls"
+    },
+    {
+      "title": "Detail Excel Source",
+      "url": "https://www.rilegislature.gov/SiteAssets/Representatives.xls"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

@@ -1,0 +1,69 @@
+{
+  "id": "kirk-haskins",
+  "name": "Kirk Haskins",
+  "firstName": "Kirk",
+  "lastName": "Haskins",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-53",
+  "jurisdiction": "Kansas House of Representatives",
+  "county": [
+    "Kansas"
+  ],
+  "termStart": "2023-01-09",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "State Capitol Room 43-S, Kansas  Building 300 SW 10th St., Topeka, KS 66612",
+    "phone": "785-296-7673",
+    "email": "kirk.haskins@house.ks.gov",
+    "website": "https://www.kslegislature.gov/li/b2025_26/members/rep_haskins_kirk_1/"
+  },
+  "bio": "Kirk Haskins serves as State Representative for Kansas House of Representatives District 53. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "KS",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.kslegislature.gov/li/b2025_26/members/rep_haskins_kirk_1/"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ks/legislature/Kirk-Haskins-a81f29c0-88a5-4984-a36e-214eddb912fb.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Kirk_Haskins"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Kirk_Haskins"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.kslegislature.gov/li/b2025_26/members/rep_haskins_kirk_1"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.kslegislature.org/li/api/v11/rev-1/members/rep_haskins_kirk_1"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.kslegislature.org/li/api/v11/rev-1/members/rep_haskins_kirk_1/"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.kslegislature.org/li/b2023_24/members/rep_haskins_kirk_1"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.kslegislature.org/li/b2023_24/members/rep_haskins_kirk_1/"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/kirkhaskins"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

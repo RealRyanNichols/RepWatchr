@@ -1,0 +1,60 @@
+{
+  "id": "lammis-vargas",
+  "name": "Lammis Vargas",
+  "firstName": "Lammis",
+  "lastName": "Vargas",
+  "photo": "/images/officials/state-legislature/ri/lammis-vargas.jpg",
+  "photoSourceUrl": "https://lammisvargas.com/wp-content/uploads/2024/07/Lammis-Headshot-1536x1536.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-28",
+  "jurisdiction": "Rhode Island Senate",
+  "county": [
+    "Rhode Island"
+  ],
+  "termStart": "2025-01-07",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "82 Smith St., Providence, RI 02903",
+    "phone": "401-222-3580",
+    "email": "sen-vargas@rilegislature.gov",
+    "website": "https://rilegislature.gov/senators/Vargas/Pages/Biography.aspx"
+  },
+  "bio": "Lammis Vargas serves as State Senator for Rhode Island Senate District 28. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "RI",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://rilegislature.gov/senators/Vargas/Pages/Biography.aspx"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ri/legislature/Lammis-Vargas-5ab817c5-d86c-4bf0-9a8f-78ca20cdc56b.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://lammisvargas.com/wp-content/uploads/2024/07/Lammis-Headshot-1536x1536.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Lammis_Vargas"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Lammis_Vargas"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/187292/lammis-vargas"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/lammis-vargas-996732160"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

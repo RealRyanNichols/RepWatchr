@@ -1,0 +1,52 @@
+{
+  "id": "shirley-templo",
+  "name": "Shirley Templo",
+  "firstName": "Shirley",
+  "lastName": "Templo",
+  "photo": "/images/officials/state-legislature/hi/shirley-templo.jpg",
+  "photoSourceUrl": "https://s3.amazonaws.com/ballotpedia-api4/files/thumbs/200/300/Shirley_Ann_Templo.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-30",
+  "jurisdiction": "Hawaii House of Representatives",
+  "county": [
+    "Hawaii"
+  ],
+  "termStart": "2024-11-05",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "State Capitol Room 317, 415 S. Beretania St., Honolulu, HI 96813",
+    "phone": "808-586-6010",
+    "email": "reptemplo@capitol.hawaii.gov",
+    "website": "https://www.capitol.hawaii.gov/legislature/memberpage.aspx?member=303"
+  },
+  "bio": "Shirley Templo serves as State Representative for Hawaii House of Representatives District 30. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "HI",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.capitol.hawaii.gov/legislature/memberpage.aspx?member=303"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/hi/legislature/Shirley-Templo-58181d36-e194-462d-a3cb-b3ab7615fbf9.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://s3.amazonaws.com/ballotpedia-api4/files/thumbs/200/300/Shirley_Ann_Templo.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Shirley_Ann_Templo"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/shirley-templo-650ab158"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

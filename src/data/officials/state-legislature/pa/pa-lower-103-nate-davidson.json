@@ -1,0 +1,64 @@
+{
+  "id": "nate-davidson",
+  "name": "Nate Davidson",
+  "firstName": "Nate",
+  "lastName": "Davidson",
+  "photo": "/images/officials/state-legislature/pa/nate-davidson.jpg",
+  "photoSourceUrl": "https://storage.googleapis.com/enview-dev-public-general/legislative-people-photos/133354.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-103",
+  "jurisdiction": "Pennsylvania House of Representatives",
+  "county": [
+    "Pennsylvania"
+  ],
+  "termStart": "2024-12-01",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 4E, East Wing P.O. Box 202103, Harrisburg, PA 17120",
+    "phone": "717-783-9342",
+    "email": "repdavidson@pahouse.net",
+    "website": "https://www.pahouse.com/davidson/"
+  },
+  "bio": "Nate Davidson serves as State Representative for Pennsylvania House of Representatives District 103. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "PA",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.pahouse.com/davidson/"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/pa/legislature/Nate-Davidson-c7f76970-11d0-483e-81b4-b4750220932c.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://storage.googleapis.com/enview-dev-public-general/legislative-people-photos/133354.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Nate_Davidson"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/214892/nate-davidson"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/nathan-davidson-32b68726"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.pahouse.com/davidson"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.palegis.us/house/members/bio/2031/rep-davidson"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

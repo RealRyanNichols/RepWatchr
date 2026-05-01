@@ -1,0 +1,65 @@
+{
+  "id": "richie-yow",
+  "name": "Richie Yow",
+  "firstName": "Richie",
+  "lastName": "Yow",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-53",
+  "jurisdiction": "South Carolina House of Representatives",
+  "county": [
+    "South Carolina"
+  ],
+  "termStart": "",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 327C, Blatt Building P.O. Box 11867, Columbia, SC 29201",
+    "phone": "803-212-6949",
+    "email": "richieyow@schouse.gov",
+    "website": "https://scstatehouse.gov/member.php?code=1998863577"
+  },
+  "bio": "Richie Yow serves as State Representative for South Carolina House of Representatives District 53. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "SC",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://scstatehouse.gov/member.php?code=1998863577"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/sc/legislature/Richard-L-Richie-Yow-ebfb814e-0b47-4d8f-be94-63718f71a96c.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Richie_Yow"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Richie_Yow"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/139467/richie-yow"
+    },
+    {
+      "title": "Public source",
+      "url": "https://scstatehouse.gov/member.php?chamber=H"
+    },
+    {
+      "title": "Public source",
+      "url": "https://treely.wixsite.com/yowtemplate03/about"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.scstatehouse.gov/member.php?chamber=H"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.scstatehouse.gov/member.php?code=1998863577"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

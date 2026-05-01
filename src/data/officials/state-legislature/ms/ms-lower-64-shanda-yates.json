@@ -1,0 +1,64 @@
+{
+  "id": "shanda-yates",
+  "name": "Shanda Yates",
+  "firstName": "Shanda",
+  "lastName": "Yates",
+  "photo": "/images/officials/state-legislature/ms/shanda-yates.jpg",
+  "photoSourceUrl": "http://billstatus.ls.state.ms.us/members/house/yates.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "I",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-64",
+  "jurisdiction": "Mississippi House of Representatives",
+  "county": [
+    "Mississippi"
+  ],
+  "termStart": "2022-01-13",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "State Capitol 400 High St., Jackson, MS 39201",
+    "phone": "601-359-3770",
+    "email": "syates@house.ms.gov",
+    "website": "https://billstatus.ls.state.ms.us/members/house/yates.xml"
+  },
+  "bio": "Shanda Yates serves as State Representative for Mississippi House of Representatives District 64. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "MS",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://billstatus.ls.state.ms.us/members/house/yates.xml"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ms/legislature/Shanda-Yates-de5a9a25-1b08-45ba-9aff-e635905498ba.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "http://billstatus.ls.state.ms.us/members/house/yates.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Shanda_Yates"
+    },
+    {
+      "title": "Public source",
+      "url": "https://billstatus.ls.state.ms.us/members/hr_membs.xml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Shanda_Yates"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/186645/shanda-yates"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/shanda-yates-8a00a07"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

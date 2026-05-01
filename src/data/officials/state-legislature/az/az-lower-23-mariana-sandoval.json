@@ -1,0 +1,64 @@
+{
+  "id": "mariana-sandoval",
+  "name": "Mariana Sandoval",
+  "firstName": "Mariana",
+  "lastName": "Sandoval",
+  "photo": "/images/officials/state-legislature/az/mariana-sandoval.jpg",
+  "photoSourceUrl": "https://azleg.gov/alisImages/MemberPhotos/56leg/House/SANDOVAL.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-23",
+  "jurisdiction": "Arizona House of Representatives",
+  "county": [
+    "Arizona"
+  ],
+  "termStart": "2023-01-09",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 326, 1700 W. Washington St., Phoenix, AZ 85007",
+    "phone": "602-926-3740",
+    "email": "msandoval@azleg.gov",
+    "website": "https://www.azleg.gov/house-member/?legislature=56&session=127&legislator=2194"
+  },
+  "bio": "Mariana Sandoval serves as State Representative for Arizona House of Representatives District 23. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "AZ",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.azleg.gov/house-member/?legislature=56&session=127&legislator=2194"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/az/legislature/Mariana-Sandoval-3b6fa6b2-0a60-4f2e-9fd8-0882b04d9e0b.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://azleg.gov/alisImages/MemberPhotos/56leg/House/SANDOVAL.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Mariana_Sandoval"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Mariana_Sandoval"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/192539/mariana-sandoval"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.azleg.gov/house-member/?legislature=57&session=129&legislator=2334"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.azleg.gov/memberroster/?body=H"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

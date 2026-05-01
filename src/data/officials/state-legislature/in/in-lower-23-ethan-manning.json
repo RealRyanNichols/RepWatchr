@@ -1,0 +1,72 @@
+{
+  "id": "ethan-manning",
+  "name": "Ethan Manning",
+  "firstName": "Ethan",
+  "lastName": "Manning",
+  "photo": "/images/officials/state-legislature/in/ethan-manning.jpg",
+  "photoSourceUrl": "https://www.indianahouserepublicans.com/clientuploads/directory/members/Main_List/Manning_MainList2023V2.png",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-23",
+  "jurisdiction": "Indiana House of Representatives",
+  "county": [
+    "Indiana"
+  ],
+  "termStart": "2018-11-07",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "200 W. Washington St., Indianapolis, IN 46204",
+    "phone": "317-232-9651",
+    "email": "h23@iga.in.gov",
+    "website": "https://iga.in.gov/legislative/2021/legislators/legislator_ethan_manning_1"
+  },
+  "bio": "Ethan Manning serves as State Representative for Indiana House of Representatives District 23. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "IN",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://iga.in.gov/legislative/2021/legislators/legislator_ethan_manning_1"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/in/legislature/Ethan-Manning-bdae77c7-d89e-426d-b6f6-52e1a48bc87a.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://www.indianahouserepublicans.com/clientuploads/directory/members/Main_List/Manning_MainList2023V2.png"
+    },
+    {
+      "title": "Public source",
+      "url": "https://api.iga.in.gov/2021/legislators/ethan_manning_1"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Ethan_Manning"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Ethan_Manning"
+    },
+    {
+      "title": "Public source",
+      "url": "https://iga.in.gov/legislative/2024/legislators/legislator_ethan_manning_1"
+    },
+    {
+      "title": "Public source",
+      "url": "https://iga.in.gov/legislative/2026/legislators/legislator_ethan_manning_1"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/175321/ethan-manning"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.indianahouserepublicans.com/members"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

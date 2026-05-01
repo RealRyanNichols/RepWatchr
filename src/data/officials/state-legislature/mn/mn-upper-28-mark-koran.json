@@ -1,0 +1,72 @@
+{
+  "id": "mark-koran",
+  "name": "Mark Koran",
+  "firstName": "Mark",
+  "lastName": "Koran",
+  "photo": "/images/officials/state-legislature/mn/mark-koran.jpg",
+  "photoSourceUrl": "https://www.senate.mn/graphics/32Koran.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-28",
+  "jurisdiction": "Minnesota Senate",
+  "county": [
+    "Minnesota"
+  ],
+  "termStart": "2023-01-03",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 2203, Minnesota Senate Building 95 University Ave. West, St. Paul, MN 55155",
+    "phone": "651-296-5419",
+    "email": "sen.mark.koran@senate.mn",
+    "website": "https://www.markkoranmn.com/"
+  },
+  "bio": "Mark Koran serves as State Senator for Minnesota Senate District 28. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "MN",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.markkoranmn.com/"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/mn/legislature/Mark-W-Koran-f20a4255-6c65-4091-a0f5-aea70f133cdb.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://www.senate.mn/graphics/32Koran.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Mark_Koran"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Mark_Koran"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/171390/mark-koran"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/markkoran"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.markkoranmn.com"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.markkoranmn.com/about"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.senate.mn/api/members"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

@@ -1,0 +1,72 @@
+{
+  "id": "peggy-mcgaugh",
+  "name": "Peggy McGaugh",
+  "firstName": "Peggy",
+  "lastName": "McGaugh",
+  "photo": "/images/officials/state-legislature/mo/peggy-mcgaugh.jpg",
+  "photoSourceUrl": "https://house.mo.gov/MemberPhoto.aspx?id=2019",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-7",
+  "jurisdiction": "Missouri House of Representatives",
+  "county": [
+    "Missouri"
+  ],
+  "termStart": "2023-01-04",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 402, 201 W. Capitol Ave., Jefferson City, MO 65101",
+    "phone": "573-751-1468",
+    "email": "peggy.mcgaugh@house.mo.gov",
+    "website": "https://house.mo.gov/MemberDetails.aspx?district=007"
+  },
+  "bio": "Peggy McGaugh serves as State Representative for Missouri House of Representatives District 7. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "MO",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://house.mo.gov/MemberDetails.aspx?district=007"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/mo/legislature/Peggy-McGaugh-920c5b79-73a0-477b-a90d-1a290e48e014.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://house.mo.gov/MemberPhoto.aspx?id=2019"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Peggy_McGaugh"
+    },
+    {
+      "title": "Public source",
+      "url": "https://house.mo.gov/MemberDetails.aspx?year=2021&code=R&district=039"
+    },
+    {
+      "title": "Public source",
+      "url": "https://house.mo.gov/MemberDetails.aspx?year=2023&code=R&district=007"
+    },
+    {
+      "title": "Public source",
+      "url": "https://house.mo.gov/MemberGridCluster.aspx"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/177250/peggy-mcgaugh"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.house.mo.gov/MemberDetails.aspx?district=39"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/peggy-mcgaugh-32702650"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

@@ -1,0 +1,64 @@
+{
+  "id": "nick-menapace",
+  "name": "Nick Menapace",
+  "firstName": "Nick",
+  "lastName": "Menapace",
+  "photo": "/images/officials/state-legislature/ct/nick-menapace.jpg",
+  "photoSourceUrl": "https://s3.amazonaws.com/ballotpedia-api4/files/thumbs/200/300/Nick_Menapace.jpeg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-37",
+  "jurisdiction": "Connecticut House of Representatives",
+  "county": [
+    "Connecticut"
+  ],
+  "termStart": "2025-01-08",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 4043, Legislative Office Building 300 Capitol Ave., Hartford, CT 06106",
+    "phone": "860-240-8585",
+    "email": "nick.menapace@cga.ct.gov",
+    "website": "https://www.housedems.ct.gov/Menapace"
+  },
+  "bio": "Nick Menapace serves as State Representative for Connecticut House of Representatives District 37. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "CT",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.housedems.ct.gov/Menapace"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ct/legislature/Nick-Menapace-467c2737-7494-44d0-a370-c38c178740e9.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://s3.amazonaws.com/ballotpedia-api4/files/thumbs/200/300/Nick_Menapace.jpeg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Nick_Menapace"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Nick_Menapace"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/208580/nick-menapace"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.housedems.ct.gov/Menapace/Biography"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/nicholas-menapace-10b74aa4"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

@@ -1,0 +1,72 @@
+{
+  "id": "kyle-walker",
+  "name": "Kyle Walker",
+  "firstName": "Kyle",
+  "lastName": "Walker",
+  "photo": "/images/officials/state-legislature/in/kyle-walker.jpg",
+  "photoSourceUrl": "https://cdn.zephyrcms.com/020c0a65-17de-4aa9-a073-80954fb48637/-/progressive/yes/-/format/jpeg/-/scale_crop/200x300/center/-/stretch/off/walker-k-website.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-31",
+  "jurisdiction": "Indiana Senate",
+  "county": [
+    "Indiana"
+  ],
+  "termStart": "2020-11-17",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "200 W. Washington St., Indianapolis, IN 46204",
+    "phone": "800-382-9467",
+    "email": "s31@iga.in.gov",
+    "website": "https://iga.in.gov/legislative/2021/legislators/legislator_kyle_walker_1"
+  },
+  "bio": "Kyle Walker serves as State Senator for Indiana Senate District 31. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "IN",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://iga.in.gov/legislative/2021/legislators/legislator_kyle_walker_1"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/in/legislature/Kyle-Walker-da010a7d-0344-48cb-b9ba-2eca71007cc6.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://cdn.zephyrcms.com/020c0a65-17de-4aa9-a073-80954fb48637/-/progressive/yes/-/format/jpeg/-/scale_crop/200x300/center/-/stretch/off/walker-k-website.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://api.iga.in.gov/2021/legislators/kyle_walker_1"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Kyle_Walker_(Indiana)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Kyle_Walker_(politician)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://iga.in.gov/legislative/2022/legislators/legislator_kyle_walker_1"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/195788/kyle-walker"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.indianasenaterepublicans.com/kyle-walker"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.indianasenaterepublicans.com/senators"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

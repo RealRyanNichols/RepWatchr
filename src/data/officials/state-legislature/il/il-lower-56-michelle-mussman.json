@@ -1,0 +1,69 @@
+{
+  "id": "michelle-mussman",
+  "name": "Michelle Mussman",
+  "firstName": "Michelle",
+  "lastName": "Mussman",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-56",
+  "jurisdiction": "Illinois House of Representatives",
+  "county": [
+    "Illinois"
+  ],
+  "termStart": "2011-01-12",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 257-S, Stratton Office Building, Springfield, IL 62706",
+    "phone": "217-782-3725",
+    "email": "staterepmussman@gmail.com",
+    "website": "https://ilga.gov/house/Rep.asp?GA=101&MemberID=2593"
+  },
+  "bio": "Michelle Mussman serves as State Representative for Illinois House of Representatives District 56. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "IL",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://ilga.gov/house/Rep.asp?GA=101&MemberID=2593"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/il/legislature/Michelle-Mussman-394eec6a-ad20-447e-b72c-f09d76e66fa2.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Michelle_Mussman"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Michelle_Mussman"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ilga.gov/house/default.asp?GA=101"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ilga.gov/house/default.asp?GA=102"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ilga.gov/house/default.asp?GA=103"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ilga.gov/house/Rep.asp?GA=102&MemberID=2835"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ilga.gov/house/Rep.asp?GA=103&MemberID=3052"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/116656/michelle-mussman"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

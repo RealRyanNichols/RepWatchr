@@ -1,0 +1,56 @@
+{
+  "id": "janeen-connolly",
+  "name": "Janeen Connolly",
+  "firstName": "Janeen",
+  "lastName": "Connolly",
+  "photo": "/images/officials/state-legislature/az/janeen-connolly.jpg",
+  "photoSourceUrl": "https://s3.amazonaws.com/ballotpedia-api4/files/thumbs/200/300/JaneenConnolly2024.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-8",
+  "jurisdiction": "Arizona House of Representatives",
+  "county": [
+    "Arizona"
+  ],
+  "termStart": "2025-01-13",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 118, 1700 W. Washington St., Phoenix, AZ 85007",
+    "phone": "602-926-3300",
+    "email": "jconnolly@azleg.gov",
+    "website": "https://www.azleg.gov/house-member/?legislature=57&session=129&legislator=2357"
+  },
+  "bio": "Janeen Connolly serves as State Representative for Arizona House of Representatives District 8. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "AZ",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.azleg.gov/house-member/?legislature=57&session=129&legislator=2357"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/az/legislature/Janeen-Connolly-acfd8972-7a82-41f3-9fd7-0993cfa7365c.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://s3.amazonaws.com/ballotpedia-api4/files/thumbs/200/300/JaneenConnolly2024.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Janeen_Connolly"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Janeen_Connolly"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/janeen-connolly-formerly-rohovit-38963a213"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

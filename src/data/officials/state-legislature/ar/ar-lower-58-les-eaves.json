@@ -1,0 +1,72 @@
+{
+  "id": "les-eaves",
+  "name": "Les Eaves",
+  "firstName": "Les",
+  "lastName": "Eaves",
+  "photo": "/images/officials/state-legislature/ar/les-eaves.jpg",
+  "photoSourceUrl": "https://www.arkleg.state.ar.us/Content/photos/2023/House/476_sm.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-58",
+  "jurisdiction": "Arkansas House of Representatives",
+  "county": [
+    "Arkansas"
+  ],
+  "termStart": "2023-01-09",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "State Capitol Arkansas  500 Woodlane St., Suite 350, Little Rock, AR 72201",
+    "phone": "501-682-6211",
+    "email": "les.eaves@arkansashouse.org",
+    "website": "https://arkleg.state.ar.us/Legislators/Detail?member=Eaves"
+  },
+  "bio": "Les Eaves serves as State Representative for Arkansas House of Representatives District 58. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "AR",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://arkleg.state.ar.us/Legislators/Detail?member=Eaves"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ar/legislature/Les-D-Eaves-7d85c10d-346f-4c4f-a4e5-470799f7b21c.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://www.arkleg.state.ar.us/Content/photos/2023/House/476_sm.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Les_Eaves"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Les_Eaves"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/150240/les-eaves"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.arkansashouse.org/district/58"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.arkleg.state.ar.us/Legislators/Detail?member=Eaves"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.arkleg.state.ar.us/Legislators/Detail?member=Eaves&ddBienniumSession=2023%2F2023R"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.arkleg.state.ar.us/Legislators/List?sort=Type&by=desc&ddBienniumSession=2023%2F2023R#SearchResults"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

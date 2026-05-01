@@ -1,0 +1,69 @@
+{
+  "id": "jason-shoaf",
+  "name": "Jason Shoaf",
+  "firstName": "Jason",
+  "lastName": "Shoaf",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-7",
+  "jurisdiction": "Florida House of Representatives",
+  "county": [
+    "Florida"
+  ],
+  "termStart": "2019-06-19",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 222, The Capitol 402 S. Monroe St., Tallahassee, FL 32399",
+    "phone": "850-717-5007",
+    "email": "jason.shoaf@flhouse.gov",
+    "website": "https://myfloridahouse.gov/Sections/Representatives/details.aspx?MemberId=4756&LegislativeTermId=90"
+  },
+  "bio": "Jason Shoaf serves as State Representative for Florida House of Representatives District 7. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "FL",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://myfloridahouse.gov/Sections/Representatives/details.aspx?MemberId=4756&LegislativeTermId=90"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/fl/legislature/Jason-Shoaf-2bae38cc-f703-446b-93ec-576c0e388760.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Jason_Shoaf"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Jason_Shoaf"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.flhouse.gov/Sections/Representatives/custom/details.aspx?MemberId=4756"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.flhouse.gov/Sections/Representatives/details.aspx?MemberId=4756"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/jason-shoaf-6b553a37"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.myfloridahouse.gov/Representatives"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.myfloridahouse.gov/Sections/Representatives/details.aspx?MemberId=4756"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.myfloridahouse.gov/Sections/Representatives/details.aspx?MemberId=4756&LegislativeTermId=88"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

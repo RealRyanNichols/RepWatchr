@@ -1,0 +1,60 @@
+{
+  "id": "bill-conerly",
+  "name": "Bill Conerly",
+  "firstName": "Bill",
+  "lastName": "Conerly",
+  "photo": "/images/officials/state-legislature/fl/bill-conerly.jpg",
+  "photoSourceUrl": "https://s3.amazonaws.com/ballotpedia-api4/files/thumbs/200/300/BillConerly2024.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-72",
+  "jurisdiction": "Florida House of Representatives",
+  "county": [
+    "Florida"
+  ],
+  "termStart": "2024-11-05",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 1401, The Capitol 402 S. Monroe St., Tallahassee, FL 32399",
+    "phone": "850-717-5072",
+    "email": "bill.conerly@flhouse.gov",
+    "website": "https://www.flhouse.gov/Sections/Representatives/custom/details.aspx?MemberId=4920"
+  },
+  "bio": "Bill Conerly serves as State Representative for Florida House of Representatives District 72. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "FL",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.flhouse.gov/Sections/Representatives/custom/details.aspx?MemberId=4920"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/fl/legislature/Bill-Conerly-43724cbb-0b19-4fad-ae9b-1e8bcd47c16d.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://s3.amazonaws.com/ballotpedia-api4/files/thumbs/200/300/BillConerly2024.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Bill_Conerly"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.flhouse.gov/Sections/Representatives/details.aspx?MemberId=4920"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/bill-conerly-65275513"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.myfloridahouse.gov/Sections/Representatives/details.aspx?MemberId=4920&SessionId=105"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

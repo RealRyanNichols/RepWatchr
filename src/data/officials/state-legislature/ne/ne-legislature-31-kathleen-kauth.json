@@ -1,0 +1,72 @@
+{
+  "id": "kathleen-kauth",
+  "name": "Kathleen Kauth",
+  "firstName": "Kathleen",
+  "lastName": "Kauth",
+  "photo": "/images/officials/state-legislature/ne/kathleen-kauth.jpg",
+  "photoSourceUrl": "https://www.nebraskalegislature.gov/media/images/senators/dist31/highres/dist31.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "NP",
+  "level": "state",
+  "position": "State Senator",
+  "district": "LD-31",
+  "jurisdiction": "Nebraska Legislature",
+  "county": [
+    "Nebraska"
+  ],
+  "termStart": "2022-06-07",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "State Capitol Room 2010, P.O. Box 94604, Lincoln, NE 68509",
+    "phone": "402-471-2327",
+    "email": "kkauth@leg.ne.gov",
+    "website": "https://nebraskalegislature.gov/senators/landing-pages/index.php?District=31"
+  },
+  "bio": "Kathleen Kauth serves as State Senator for Nebraska Legislature District 31. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "NE",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://nebraskalegislature.gov/senators/landing-pages/index.php?District=31"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ne/legislature/Kathleen-Kauth-9d6fd408-5497-4038-9716-c1f487e348d2.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://www.nebraskalegislature.gov/media/images/senators/dist31/highres/dist31.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Kathleen_Kauth"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Kathleen_Kauth_(Nebraska_politician)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/208260/kathleen-kauth"
+    },
+    {
+      "title": "Public source",
+      "url": "https://kathleenkauth.com/#meet"
+    },
+    {
+      "title": "Public source",
+      "url": "https://nebraskalegislature.gov/senators/senator_list.php"
+    },
+    {
+      "title": "Public source",
+      "url": "https://news.legislature.ne.gov/dist31"
+    },
+    {
+      "title": "Public source",
+      "url": "https://news.legislature.ne.gov/dist31/"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

@@ -1,0 +1,72 @@
+{
+  "id": "shannon-morris",
+  "name": "Shannon Morris",
+  "firstName": "Shannon",
+  "lastName": "Morris",
+  "photo": "/images/officials/state-legislature/de/shannon-morris.jpg",
+  "photoSourceUrl": "https://housegop.delaware.gov/wp-content/blogs.dir/207/files/sites/207/2023/02/morris-headshot-compressed-jan-23.jpeg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-30",
+  "jurisdiction": "Delaware House of Representatives",
+  "county": [
+    "Delaware"
+  ],
+  "termStart": "2018-11-07",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "P.O. Box 1401 411 Legislative Ave., Dover, DE 19901",
+    "phone": "302-744-4171",
+    "email": "shannon.morris@delaware.gov",
+    "website": "https://housegop.delaware.gov/members/house-district-30/"
+  },
+  "bio": "Shannon Morris serves as State Representative for Delaware House of Representatives District 30. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "DE",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://housegop.delaware.gov/members/house-district-30/"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/de/legislature/W-Shannon-Morris-1952d6d2-3cd8-4a2c-b663-f16052b948c3.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://housegop.delaware.gov/wp-content/blogs.dir/207/files/sites/207/2023/02/morris-headshot-compressed-jan-23.jpeg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Shannon_Morris"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/W._Shannon_Morris"
+    },
+    {
+      "title": "Public source",
+      "url": "https://housegop.delaware.gov/members/house-district-30"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/184908/shannon-morris"
+    },
+    {
+      "title": "Public source",
+      "url": "https://legis.delaware.gov/AssemblyMember/150/Morris"
+    },
+    {
+      "title": "legislator list page",
+      "url": "https://legis.delaware.gov/House"
+    },
+    {
+      "title": "Public source",
+      "url": "https://legis.delaware.gov/json/House/GetRepresentatives"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

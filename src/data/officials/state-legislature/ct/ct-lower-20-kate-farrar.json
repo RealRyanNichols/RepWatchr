@@ -1,0 +1,64 @@
+{
+  "id": "kate-farrar",
+  "name": "Kate Farrar",
+  "firstName": "Kate",
+  "lastName": "Farrar",
+  "photo": "/images/officials/state-legislature/ct/kate-farrar.jpg",
+  "photoSourceUrl": "http://www2.housedems.ct.gov/Farrar/images/Farrar_HS.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-20",
+  "jurisdiction": "Connecticut House of Representatives",
+  "county": [
+    "Connecticut"
+  ],
+  "termStart": "2021-01-06",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 4043, Legislative Office Building 300 Capitol Ave., Hartford, CT 06106",
+    "phone": "800-842-8267",
+    "email": "kate.farrar@cga.ct.gov",
+    "website": "https://www.cga.ct.gov/asp/CGABillStatus/CGAMemberBills.asp?dist_code=%27020%27&dist_name=020%20-%Farrar,%Kate"
+  },
+  "bio": "Kate Farrar serves as State Representative for Connecticut House of Representatives District 20. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "CT",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.cga.ct.gov/asp/CGABillStatus/CGAMemberBills.asp?dist_code=%27020%27&dist_name=020%20-%Farrar,%Kate"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ct/legislature/Kate-Farrar-96fa444a-7e86-4ead-9d2e-c3ffef258be2.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "http://www2.housedems.ct.gov/Farrar/images/Farrar_HS.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "ftp://ftp.cga.ct.gov/pub/data/LegislatorDatabase.csv"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Kate_Farrar"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Kate_Farrar"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.housedems.ct.gov/Farrar"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/kate-c-farrar-b57b6065"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

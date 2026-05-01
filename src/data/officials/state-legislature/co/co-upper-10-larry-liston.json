@@ -1,0 +1,57 @@
+{
+  "id": "larry-liston",
+  "name": "Larry Liston",
+  "firstName": "Larry",
+  "lastName": "Liston",
+  "party": "R",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-10",
+  "jurisdiction": "Colorado Senate",
+  "county": [
+    "Colorado"
+  ],
+  "termStart": "2021-01-13",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "State Capitol Room 346, Colorado  Building 200 E. Colfax Ave., Denver, CO 80203",
+    "phone": "303-866-2737",
+    "email": "larry.liston.senate@coleg.gov",
+    "website": "https://leg.colorado.gov/legislators/larry-liston"
+  },
+  "bio": "Larry Liston serves as State Senator for Colorado Senate District 10. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "CO",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://leg.colorado.gov/legislators/larry-liston"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/co/legislature/Larry-Liston-c9fd6b10-91a3-44ec-ac6a-48f73eee3ed1.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Larry_Liston"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Larry_Liston"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/30002/larry-liston"
+    },
+    {
+      "title": "Public source",
+      "url": "https://leg.colorado.gov/legislators"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/larry-liston-12120410"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

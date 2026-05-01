@@ -1,0 +1,72 @@
+{
+  "id": "tom-delnicki",
+  "name": "Tom Delnicki",
+  "firstName": "Tom",
+  "lastName": "Delnicki",
+  "photo": "/images/officials/state-legislature/ct/tom-delnicki.jpg",
+  "photoSourceUrl": "https://cga.ct.gov/legpics/014.png?ver=",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-14",
+  "jurisdiction": "Connecticut House of Representatives",
+  "county": [
+    "Connecticut"
+  ],
+  "termStart": "2017-01-04",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 4200, Legislative Office Building 300 Capitol Ave., Hartford, CT 06106",
+    "phone": "860-240-8700",
+    "email": "tom.delnicki@housegop.ct.gov",
+    "website": "https://cga.ct.gov/asp/CGABillStatus/CGAMemberBills.asp?dist_code=%27014%27&dist_name=Delnicki,%20Tom"
+  },
+  "bio": "Tom Delnicki serves as State Representative for Connecticut House of Representatives District 14. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "CT",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://cga.ct.gov/asp/CGABillStatus/CGAMemberBills.asp?dist_code=%27014%27&dist_name=Delnicki,%20Tom"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ct/legislature/Tom-Delnicki-8bf7e55e-afc1-4f5c-99c3-9b7a1356fbc3.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://cga.ct.gov/legpics/014.png?ver="
+    },
+    {
+      "title": "Public source",
+      "url": "ftp://ftp.cga.ct.gov/pub/data/LegislatorDatabase.csv"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Tom_Delnicki"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Tom_Delnicki"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/172152/tom-delnicki"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.cthousegop.com/Delnicki/main"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.cthousegop.com/Delnicki/main/"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/tom-delnicki-4944a471"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

@@ -1,0 +1,72 @@
+{
+  "id": "mary-keefe",
+  "name": "Mary Keefe",
+  "firstName": "Mary",
+  "lastName": "Keefe",
+  "photo": "/images/officials/state-legislature/ma/mary-keefe.jpg",
+  "photoSourceUrl": "https://malegislature.gov/Legislators/Profile/170/MSK1.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-15th Worcester",
+  "jurisdiction": "Massachusetts House of Representatives",
+  "county": [
+    "Massachusetts"
+  ],
+  "termStart": "2013-01-02",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 466, State House 24 Beacon St., Boston, MA 02133",
+    "phone": "617-626-0286",
+    "email": "mary.keefe@mahouse.gov",
+    "website": "https://malegislature.gov/Legislators/Profile/MSK1"
+  },
+  "bio": "Mary Keefe serves as State Representative for Massachusetts House of Representatives District 15th Worcester. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "MA",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://malegislature.gov/Legislators/Profile/MSK1"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ma/legislature/Mary-S-Keefe-4d0b5dda-d9d1-4c25-9c94-ce8fbd8ff398.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://malegislature.gov/Legislators/Profile/170/MSK1.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Mary_S._Keefe"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Mary_Keefe"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/141620/mary-keefe"
+    },
+    {
+      "title": "Public source",
+      "url": "https://malegislature.gov/api/GeneralCourts/192/LegislativeMembers"
+    },
+    {
+      "title": "Public source",
+      "url": "https://malegislature.gov/api/GeneralCourts/192/LegislativeMembers/"
+    },
+    {
+      "title": "Public source",
+      "url": "https://malegislature.gov/api/GeneralCourts/192/LegislativeMembers/MSK1"
+    },
+    {
+      "title": "Public source",
+      "url": "https://malegislature.gov/api/GeneralCourts/193/LegislativeMembers"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

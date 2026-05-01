@@ -1,0 +1,72 @@
+{
+  "id": "scott-beck",
+  "name": "Scott Beck",
+  "firstName": "Scott",
+  "lastName": "Beck",
+  "photo": "/images/officials/state-legislature/vt/scott-beck.jpg",
+  "photoSourceUrl": "https://legislature.vermont.gov/Documents/Legislators/Beck,Scott%20008.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-Caledonia",
+  "jurisdiction": "Vermont Senate",
+  "county": [
+    "Vermont"
+  ],
+  "termStart": "2025-01-08",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Vermont State House 115 State St., Montpelier, VT 05633",
+    "phone": "802-828-2228",
+    "email": "sbeck@leg.state.vt.us",
+    "website": "https://legislature.vermont.gov/Documents/SmallMaps/CAL-3.pdf"
+  },
+  "bio": "Scott Beck serves as State Senator for Vermont Senate District Caledonia. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "VT",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://legislature.vermont.gov/Documents/SmallMaps/CAL-3.pdf"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/vt/legislature/Scott-Beck-d626c3d1-769d-456c-a073-f1efb326fe1d.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://legislature.vermont.gov/Documents/Legislators/Beck,Scott%20008.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Scott_Beck"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Scott_Beck_(politician)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/154118/scott-beck"
+    },
+    {
+      "title": "Public source",
+      "url": "https://legislature.vermont.gov/people/loadAll/2020"
+    },
+    {
+      "title": "Public source",
+      "url": "https://legislature.vermont.gov/people/loadAll/2022"
+    },
+    {
+      "title": "Public source",
+      "url": "https://legislature.vermont.gov/people/single/2020/23996"
+    },
+    {
+      "title": "Public source",
+      "url": "https://legislature.vermont.gov/people/single/2022/23996"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

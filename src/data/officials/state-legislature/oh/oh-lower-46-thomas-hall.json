@@ -1,0 +1,57 @@
+{
+  "id": "thomas-hall",
+  "name": "Thomas Hall",
+  "firstName": "Thomas",
+  "lastName": "Hall",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-46",
+  "jurisdiction": "Ohio House of Representatives",
+  "county": [
+    "Ohio"
+  ],
+  "termStart": "2023-01-01",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "77 S. High St. 12th Floor, Columbus, OH 43215",
+    "phone": "614-644-5094",
+    "email": "rep46@ohiohouse.gov",
+    "website": "https://ohiohouse.gov/members/thomas-hall"
+  },
+  "bio": "Thomas Hall serves as State Representative for Ohio House of Representatives District 46. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "OH",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://ohiohouse.gov/members/thomas-hall"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/oh/legislature/Thomas-Hall-7948afad-ec3c-4e4c-a073-305fb8cd1b21.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Thomas_Hall"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/189462/thomas-hall"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ohiohouse.gov/thomas-hall"
+    },
+    {
+      "title": "member list page",
+      "url": "https://www.legislature.ohio.gov/legislators/house-directory"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/thomas-hall-513a2215a"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

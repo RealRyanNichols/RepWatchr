@@ -1,0 +1,57 @@
+{
+  "id": "kiyan-michael",
+  "name": "Kiyan Michael",
+  "firstName": "Kiyan",
+  "lastName": "Michael",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-16",
+  "jurisdiction": "Florida House of Representatives",
+  "county": [
+    "Florida"
+  ],
+  "termStart": "2022-11-08",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 300, House Office Building 402 S. Monroe St., Tallahassee, FL 32399",
+    "phone": "850-717-5016",
+    "email": "kiyan.michael@flhouse.gov",
+    "website": "https://myfloridahouse.gov/Sections/Representatives/details.aspx?MemberId=4869&LegislativeTermId=90"
+  },
+  "bio": "Kiyan Michael serves as State Representative for Florida House of Representatives District 16. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "FL",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://myfloridahouse.gov/Sections/Representatives/details.aspx?MemberId=4869&LegislativeTermId=90"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/fl/legislature/Kiyan-Michael-efa5f0b9-e10e-4ae0-a352-db879b1e0d3b.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Kiyan_Michael"
+    },
+    {
+      "title": "Public source",
+      "url": "https://electkiyan.com"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.flhouse.gov/Sections/Representatives/details.aspx?MemberId=4869"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/kiyan-michael-018b815"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.myfloridahouse.gov/Sections/Representatives/details.aspx?MemberId=4869&LegislativeTermId=90"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

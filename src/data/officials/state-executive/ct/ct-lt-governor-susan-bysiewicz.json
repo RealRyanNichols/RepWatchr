@@ -1,0 +1,46 @@
+{
+  "id": "susan-bysiewicz",
+  "name": "Susan Bysiewicz",
+  "firstName": "Susan",
+  "lastName": "Bysiewicz",
+  "photo": "/images/officials/state-executive/ct/susan-bysiewicz.jpg",
+  "photoSourceUrl": "https://portal.ct.gov/lt-governor/-/media/otlg/02-site-images/official-portraits-of-the-lt-governor/about-lt-governor-susan-bysiewicz.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "Lieutenant Governor",
+  "district": "Connecticut",
+  "jurisdiction": "Connecticut statewide public office",
+  "county": [
+    "Connecticut"
+  ],
+  "termStart": "2019-01-09",
+  "termEnd": "2027-01-06",
+  "contactInfo": {
+    "office": "State Capitol, 210 Capitol Avenue, Room 304; Hartford, CT 06106",
+    "website": "https://portal.ct.gov/lt-governor"
+  },
+  "bio": "Susan Bysiewicz is listed as Lieutenant Governor for Connecticut. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "CT",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://portal.ct.gov/lt-governor"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ct/executive/Susan-Bysiewicz-e5e49f6f-a9d8-4f9c-b235-53f7f571c3e3.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://portal.ct.gov/lt-governor/-/media/otlg/02-site-images/official-portraits-of-the-lt-governor/about-lt-governor-susan-bysiewicz.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Susan_Bysiewicz"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

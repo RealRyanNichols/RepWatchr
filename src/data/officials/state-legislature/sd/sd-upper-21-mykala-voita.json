@@ -1,0 +1,58 @@
+{
+  "id": "mykala-voita",
+  "name": "MyKala Voita",
+  "firstName": "MyKala",
+  "lastName": "Voita",
+  "photo": "/images/officials/state-legislature/sd/mykala-voita.jpg",
+  "photoSourceUrl": "https://substackcdn.com/image/fetch/f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F7b0400d1-d3d8-4073-95b9-39e28c8c6203.heic",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-21",
+  "jurisdiction": "South Dakota Senate",
+  "county": [
+    "South Dakota"
+  ],
+  "termStart": "2025-01-14",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "email": "mykala.voita@sdlegislature.gov",
+    "website": "https://sdlegislature.gov/Legislators/Profile/4697/Detail"
+  },
+  "bio": "MyKala Voita serves as State Senator for South Dakota Senate District 21. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "SD",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://sdlegislature.gov/Legislators/Profile/4697/Detail"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/sd/legislature/MyKala-Voita-5cfb95b9-aa6a-4285-89d1-04770ae033fd.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://substackcdn.com/image/fetch/f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F7b0400d1-d3d8-4073-95b9-39e28c8c6203.heic"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/MyKala_Voita"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Mykala_Voita"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/216123/mykala-voita"
+    },
+    {
+      "title": "Public source",
+      "url": "https://sdlegislature.gov/Legislators/Profile/4829/Detail"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

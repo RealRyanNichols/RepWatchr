@@ -1,0 +1,64 @@
+{
+  "id": "buck-newton",
+  "name": "Buck Newton",
+  "firstName": "Buck",
+  "lastName": "Newton",
+  "photo": "/images/officials/state-legislature/nc/buck-newton.jpg",
+  "photoSourceUrl": "https://www.ncleg.gov/Members/MemberImage/S/443/Low",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-4",
+  "jurisdiction": "North Carolina Senate",
+  "county": [
+    "North Carolina"
+  ],
+  "termStart": "2023-01-01",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 308, Legislative Office Building 300 N. Salisbury St., Raleigh, NC 27603",
+    "phone": "919-733-5878",
+    "email": "buck.newton@ncleg.gov",
+    "website": "https://www.ncga.state.nc.us/gascripts/members/viewMember.pl?sChamber=Senate&nUserID=362"
+  },
+  "bio": "Buck Newton serves as State Senator for North Carolina Senate District 4. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "NC",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.ncga.state.nc.us/gascripts/members/viewMember.pl?sChamber=Senate&nUserID=362"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/nc/legislature/E-S-Newton-b560f232-dfa2-49f7-81c8-42000cc9027b.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://www.ncleg.gov/Members/MemberImage/S/443/Low"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Buck_Newton"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Buck_Newton"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/buck-newton-4042062a"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.ncleg.gov/Members/Biography/S/443"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.ncleg.gov/Members/MemberTable/S"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

@@ -1,0 +1,77 @@
+{
+  "id": "mark-obenshain",
+  "name": "Mark Obenshain",
+  "firstName": "Mark",
+  "lastName": "Obenshain",
+  "photo": "/images/officials/state-legislature/va/mark-obenshain.jpg",
+  "photoSourceUrl": "https://apps.senate.virginia.gov/Senator/images/member_photos/Obenshain2",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-2",
+  "jurisdiction": "Virginia Senate",
+  "county": [
+    "Virginia"
+  ],
+  "termStart": "2024-01-10",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 609, General Assembly Building P.O. Box 396, Richmond, VA 23218",
+    "phone": "804-698-7502",
+    "email": "senatorobenshain@senate.virginia.gov",
+    "website": "https://apps.senate.virginia.gov/Senator/memberpage.php?id=S68",
+    "socialMedia": {
+      "x": "https://x.com/MarkObenshain",
+      "twitter": "https://x.com/MarkObenshain",
+      "facebook": "https://facebook.com/markobenshain"
+    }
+  },
+  "bio": "Mark Obenshain serves as State Senator for Virginia Senate District 2. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "VA",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://apps.senate.virginia.gov/Senator/memberpage.php?id=S68"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/va/legislature/Mark-D-Obenshain-b5ce9d0e-c76e-4424-bb84-57ceb335dc52.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://apps.senate.virginia.gov/Senator/images/member_photos/Obenshain2"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Mark_Obenshain"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Mark_Obenshain"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/50954/mark-obenshain"
+    },
+    {
+      "title": "Public source",
+      "url": "https://lis.virginia.gov/191/mbr/MBR.HTM"
+    },
+    {
+      "title": "Public source",
+      "url": "https://lis.virginia.gov/201/mbr/MBR.HTM"
+    },
+    {
+      "title": "Public source",
+      "url": "https://lis.virginia.gov/cgi-bin/legp604.exe?191+mbr+S68"
+    },
+    {
+      "title": "Public source",
+      "url": "https://lis.virginia.gov/cgi-bin/legp604.exe?201+mbr+S68"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

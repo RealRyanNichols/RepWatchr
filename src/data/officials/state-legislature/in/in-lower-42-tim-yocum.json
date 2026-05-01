@@ -1,0 +1,57 @@
+{
+  "id": "tim-yocum",
+  "name": "Tim Yocum",
+  "firstName": "Tim",
+  "lastName": "Yocum",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-42",
+  "jurisdiction": "Indiana House of Representatives",
+  "county": [
+    "Indiana"
+  ],
+  "termStart": "2025-01-16",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "200 W. Washington St., Indianapolis, IN 46204",
+    "phone": "317-232-9986",
+    "email": "h42@iga.in.gov",
+    "website": "https://iga.in.gov/legislative/2026/legislators/legislator_tim_yocum_1"
+  },
+  "bio": "Tim Yocum serves as State Representative for Indiana House of Representatives District 42. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "IN",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://iga.in.gov/legislative/2026/legislators/legislator_tim_yocum_1"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/in/legislature/Tim-Yocum-fb16b382-4ca4-47c2-abaf-3c6e72f5a780.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Tim_Yocum"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Tim_Yocum"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/158728/tim-yocum"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.indianahouserepublicans.com/members/general/tim-yocum"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/tim-yocum-4b905346"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

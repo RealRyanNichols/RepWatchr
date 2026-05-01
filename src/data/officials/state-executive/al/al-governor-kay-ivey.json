@@ -1,0 +1,40 @@
+{
+  "id": "kay-ivey",
+  "name": "Kay Ivey",
+  "firstName": "Kay",
+  "lastName": "Ivey",
+  "party": "R",
+  "level": "state",
+  "position": "Governor",
+  "district": "Alabama",
+  "jurisdiction": "Alabama statewide public office",
+  "county": [
+    "Alabama"
+  ],
+  "termStart": "2017-04-10",
+  "termEnd": "2027-01-18",
+  "contactInfo": {
+    "office": "State Capitol; 600 Dexter Avenue; Montgomery, AL 36130-2751",
+    "phone": "334-242-7100",
+    "website": "https://governor.alabama.gov/",
+    "socialMedia": {
+      "x": "https://x.com/GovernorKayIvey",
+      "twitter": "https://x.com/GovernorKayIvey"
+    }
+  },
+  "bio": "Kay Ivey is listed as Governor for Alabama. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "AL",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://governor.alabama.gov/"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/al/executive/Kay-Ivey-1fcc4f8d-90c5-4e7c-aa4c-3b58a3a87ba5.yml"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

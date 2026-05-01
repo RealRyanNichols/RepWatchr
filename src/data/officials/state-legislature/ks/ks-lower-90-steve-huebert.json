@@ -1,0 +1,63 @@
+{
+  "id": "steve-huebert",
+  "name": "Steve Huebert",
+  "firstName": "Steve",
+  "lastName": "Huebert",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-90",
+  "jurisdiction": "Kansas House of Representatives",
+  "county": [
+    "Kansas"
+  ],
+  "termStart": "2025-01-13",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "email": "steve.huebert@house.ks.gov",
+    "website": "https://www.kslegislature.gov/li/b2025_26/members/rep_huebert_steve_1/"
+  },
+  "bio": "Steve Huebert serves as State Representative for Kansas House of Representatives District 90. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "KS",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.kslegislature.gov/li/b2025_26/members/rep_huebert_steve_1/"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ks/legislature/Steve-Huebert-528160f1-93ab-49f0-89d5-c00cf6e87b81.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Steve_Huebert"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Steve_Huebert"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/18585/steve-huebert"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.kslegislature.gov/li/b2025_26/members/rep_huebert_steve_1"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.kslegislature.org/li/api/v11/rev-1/members/rep_huebert_steve_1"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.kslegislature.org/li/api/v11/rev-1/members/rep_huebert_steve_1/"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.kslegislature.org/li_2022/b2021_22/members/rep_huebert_steve_1"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

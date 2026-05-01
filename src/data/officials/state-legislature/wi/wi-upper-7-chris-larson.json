@@ -1,0 +1,72 @@
+{
+  "id": "chris-larson",
+  "name": "Chris Larson",
+  "firstName": "Chris",
+  "lastName": "Larson",
+  "photo": "/images/officials/state-legislature/wi/chris-larson.jpg",
+  "photoSourceUrl": "https://docs.legis.wisconsin.gov/2023/legislators/senate/2424.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-7",
+  "jurisdiction": "Wisconsin Senate",
+  "county": [
+    "Wisconsin"
+  ],
+  "termStart": "2011-01-03",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "State Capitol Room 18 South, P.O. Box 7882 , 2 E. Main St., Madison, WI 53707",
+    "phone": "608-266-7505",
+    "email": "sen.larson@legis.wisconsin.gov",
+    "website": "https://docs.legis.wisconsin.gov/2017/legislators/senate/1511"
+  },
+  "bio": "Chris Larson serves as State Senator for Wisconsin Senate District 7. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "WI",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://docs.legis.wisconsin.gov/2017/legislators/senate/1511"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/wi/legislature/Chris-Larson-48d90383-6c55-47c7-979c-2b95a806ec4c.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://docs.legis.wisconsin.gov/2023/legislators/senate/2424.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Chris_Larson"
+    },
+    {
+      "title": "Public source",
+      "url": "https://docs.legis.wisconsin.gov/2019/legislators/senate/1906"
+    },
+    {
+      "title": "Public source",
+      "url": "https://docs.legis.wisconsin.gov/2021/legislators/senate"
+    },
+    {
+      "title": "Public source",
+      "url": "https://docs.legis.wisconsin.gov/2021/legislators/senate/"
+    },
+    {
+      "title": "Public source",
+      "url": "https://docs.legis.wisconsin.gov/2021/legislators/senate/2103"
+    },
+    {
+      "title": "Public source",
+      "url": "https://docs.legis.wisconsin.gov/2023/legislators/senate"
+    },
+    {
+      "title": "members list page",
+      "url": "https://docs.legis.wisconsin.gov/2023/legislators/senate/"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

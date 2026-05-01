@@ -1,0 +1,69 @@
+{
+  "id": "mike-jones-pa-legislature-lower-93",
+  "name": "Mike Jones",
+  "firstName": "Mike",
+  "lastName": "Jones",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-93",
+  "jurisdiction": "Pennsylvania House of Representatives",
+  "county": [
+    "Pennsylvania"
+  ],
+  "termStart": "2018-12-01",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 210, Ryan Office Building P.O. Box 202093, Harrisburg, PA 17120",
+    "phone": "717-783-8389",
+    "email": "mjones@pahousegop.com",
+    "website": "https://www.legis.state.pa.us/cfdocs/legis/home/member_information/House_bio.cfm?id=1842",
+    "socialMedia": {
+      "facebook": "https://facebook.com/RepMikeJonesPA",
+      "youtube": "https://youtube.com/UCaC4s-tQTnXEtyonJZ2G7Ig"
+    }
+  },
+  "bio": "Mike Jones serves as State Representative for Pennsylvania House of Representatives District 93. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "PA",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.legis.state.pa.us/cfdocs/legis/home/member_information/House_bio.cfm?id=1842"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/pa/legislature/Mike-Jones-ce5d2c01-e29c-4eac-b06b-208d8c302dff.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Mike_Jones_(Pennsylvania)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Mike_Jones_(Pennsylvania_politician)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.legis.state.pa.us/cfdocs/legis/home/member_information/mbrList.cfm?body=H&sort=alpha"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.legis.state.pa.us/cfdocs/legis/home/member_information/representatives_alpha.cfm"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/mike-jones-96221a4"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.palegis.us/house/members/bio/1842/rep-m-jones"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.repmikejones.com"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

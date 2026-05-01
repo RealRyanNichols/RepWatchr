@@ -1,0 +1,60 @@
+{
+  "id": "brian-lorenz",
+  "name": "Brian Lorenz",
+  "firstName": "Brian",
+  "lastName": "Lorenz",
+  "photo": "/images/officials/state-legislature/oh/brian-lorenz.jpg",
+  "photoSourceUrl": "https://www.legislature.ohio.gov/assets/people/brian-lorenz/headshots/thumbnails/medium/brian-lorenz-november-2023-headshot_medium.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-60",
+  "jurisdiction": "Ohio House of Representatives",
+  "county": [
+    "Ohio"
+  ],
+  "termStart": "2023-05-10",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "77 S. High St. 11th Floor, Columbus, OH 43215",
+    "phone": "614-644-6711",
+    "email": "rep60@ohiohouse.gov",
+    "website": "https://ohiohouse.gov/members/brian-lorenz"
+  },
+  "bio": "Brian Lorenz serves as State Representative for Ohio House of Representatives District 60. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "OH",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://ohiohouse.gov/members/brian-lorenz"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/oh/legislature/Brian-Lorenz-a3ccce64-ea28-47dc-8bab-3af6ed2dd860.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://www.legislature.ohio.gov/assets/people/brian-lorenz/headshots/thumbnails/medium/brian-lorenz-november-2023-headshot_medium.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Brian_Lorenz"
+    },
+    {
+      "title": "Public source",
+      "url": "https://brianlorenzohio.com"
+    },
+    {
+      "title": "member list page",
+      "url": "https://www.legislature.ohio.gov/legislators/house-directory"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/brianlorenz79"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

@@ -1,0 +1,72 @@
+{
+  "id": "kate-donaghue",
+  "name": "Kate Donaghue",
+  "firstName": "Kate",
+  "lastName": "Donaghue",
+  "photo": "/images/officials/state-legislature/ma/kate-donaghue.jpg",
+  "photoSourceUrl": "https://malegislature.gov/Legislators/Profile/170/K_D1.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-19th Worcester",
+  "jurisdiction": "Massachusetts House of Representatives",
+  "county": [
+    "Massachusetts"
+  ],
+  "termStart": "2023-01-04",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 472, State House 24 Beacon St., Boston, MA 02133",
+    "phone": "617-722-2013",
+    "email": "kate.donaghue@mahouse.gov",
+    "website": "https://malegislature.gov/Legislators/Profile/K_D1"
+  },
+  "bio": "Kate Donaghue serves as State Representative for Massachusetts House of Representatives District 19th Worcester. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "MA",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://malegislature.gov/Legislators/Profile/K_D1"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ma/legislature/Kate-Donaghue-e2aa2c0f-d6e6-49d7-8483-d595a3a1eb3a.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://malegislature.gov/Legislators/Profile/170/K_D1.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Kate_Donaghue"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Kate_Donaghue"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/209605/kate-donaghue"
+    },
+    {
+      "title": "Public source",
+      "url": "https://malegislature.gov/api/GeneralCourts/193/LegislativeMembers"
+    },
+    {
+      "title": "Public source",
+      "url": "https://malegislature.gov/api/GeneralCourts/193/LegislativeMembers/"
+    },
+    {
+      "title": "Public source",
+      "url": "https://malegislature.gov/api/GeneralCourts/193/LegislativeMembers/K_D1"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/kate-donaghue-022b553"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

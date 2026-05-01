@@ -1,0 +1,57 @@
+{
+  "id": "jimmie-wilson",
+  "name": "Jimmie Wilson",
+  "firstName": "Jimmie",
+  "lastName": "Wilson",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-32",
+  "jurisdiction": "Michigan House of Representatives",
+  "county": [
+    "Michigan"
+  ],
+  "termStart": "2023-01-01",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room N-796, Anderson House Office Building 124 N. Capitol Ave., Lansing, MI 48933",
+    "phone": "517-373-8931",
+    "email": "jimmiewilson@house.mi.gov",
+    "website": "https://housedems.com/Jimmie-Wilson-Jr/"
+  },
+  "bio": "Jimmie Wilson serves as State Representative for Michigan House of Representatives District 32. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "MI",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://housedems.com/Jimmie-Wilson-Jr/"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/mi/legislature/Jimmie-Wilson-8560a009-9142-4824-bec4-67559d8d0add.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Jimmie_Wilson_Jr._(Michigan)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://housedems.com/Jimmie-Wilson-Jr"
+    },
+    {
+      "title": "Public source",
+      "url": "https://housedems.com/jimmie-wilson-jr/about"
+    },
+    {
+      "title": "Members List Page",
+      "url": "https://www.house.mi.gov/AllRepresentatives"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/jimmie-wilson-jr-988765120"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

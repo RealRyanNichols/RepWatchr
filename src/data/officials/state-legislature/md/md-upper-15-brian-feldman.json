@@ -1,0 +1,64 @@
+{
+  "id": "brian-feldman",
+  "name": "Brian Feldman",
+  "firstName": "Brian",
+  "lastName": "Feldman",
+  "photo": "/images/officials/state-legislature/md/brian-feldman.jpg",
+  "photoSourceUrl": "https://mgaleg.maryland.gov/2023RS/images/feldman.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-15",
+  "jurisdiction": "Maryland Senate",
+  "county": [
+    "Maryland"
+  ],
+  "termStart": "2013-09-17",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 2 West, Miller Senate Office Building 11 Bladen St., Annapolis, MD 21401",
+    "phone": "410-841-3169",
+    "email": "brian.feldman@senate.maryland.gov",
+    "website": "https://mgaleg.maryland.gov/mgawebsite/Members/Details/feldman"
+  },
+  "bio": "Brian Feldman serves as State Senator for Maryland Senate District 15. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "MD",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://mgaleg.maryland.gov/mgawebsite/Members/Details/feldman"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/md/legislature/Brian-J-Feldman-c3ce882c-89d3-453c-a70f-b0ef9046fcf3.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://mgaleg.maryland.gov/2023RS/images/feldman.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Brian_Feldman"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Brian_Feldman_(politician)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://mgaleg.maryland.gov/webmga/frmMain.aspx?pid=sponpage&tab=subject6&id=feldman&stab=01"
+    },
+    {
+      "title": "Public source",
+      "url": "https://msa.maryland.gov/msa/mdmanual/05sen/html/msa13991.html"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/brian-feldman-53095215"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

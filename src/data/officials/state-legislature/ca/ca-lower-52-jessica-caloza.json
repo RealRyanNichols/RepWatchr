@@ -1,0 +1,64 @@
+{
+  "id": "jessica-caloza",
+  "name": "Jessica Caloza",
+  "firstName": "Jessica",
+  "lastName": "Caloza",
+  "photo": "/images/officials/state-legislature/ca/jessica-caloza.jpg",
+  "photoSourceUrl": "https://storage.googleapis.com/enview-dev-public-general/legislative-people-photos/158655.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "Assemblymember",
+  "district": "HD-52",
+  "jurisdiction": "California State Assembly",
+  "county": [
+    "California"
+  ],
+  "termStart": "2024-12-02",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 5620, 1021 O St. P.O. Box 942849, Sacramento, CA 94249",
+    "phone": "916-319-2052",
+    "email": "assemblymember.caloza@assembly.ca.gov",
+    "website": "https://a52.asmdc.org/"
+  },
+  "bio": "Jessica Caloza serves as Assemblymember for California State Assembly District 52. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "CA",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://a52.asmdc.org/"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ca/legislature/Jessica-Caloza-81d9225e-7584-43c9-9e9b-f12b7e7dbd4e.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://storage.googleapis.com/enview-dev-public-general/legislative-people-photos/158655.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://a52.asmdc.org"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Jessica_Caloza"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Jessica_Caloza"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.assembly.ca.gov/assemblymembers/52"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/jessicacaloza"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

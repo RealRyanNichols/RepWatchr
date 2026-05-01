@@ -1,0 +1,65 @@
+{
+  "id": "solomon-adesanya",
+  "name": "Solomon Adesanya",
+  "firstName": "Solomon",
+  "lastName": "Adesanya",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-43",
+  "jurisdiction": "Georgia House of Representatives",
+  "county": [
+    "Georgia"
+  ],
+  "termStart": "2023-01-09",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 509-E, Coverdell Legislative Office Building 18 Capitol Square SW, Atlanta, GA 30334",
+    "phone": "404-656-0220",
+    "email": "solomon.adesanya@house.ga.gov",
+    "website": "https://www.legis.ga.gov/members/house"
+  },
+  "bio": "Solomon Adesanya serves as State Representative for Georgia House of Representatives District 43. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "GA",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.legis.ga.gov/members/house"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ga/legislature/Solomon-Adesanya-5474fbe2-6cdb-4ad2-9831-cdffaca442af.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Solomon_Adesanya"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Solomon_Adesanya"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/207193/solomon-adesanya"
+    },
+    {
+      "title": "API member detail (requires authorization token)",
+      "url": "https://www.legis.ga.gov/api/members/detail/5025?session=1031&chamber=1"
+    },
+    {
+      "title": "API members list (requires authorization token)",
+      "url": "https://www.legis.ga.gov/api/members/list/1031"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.legis.ga.gov/members/house/5025"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/solomon-adesanya-b59042a1"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

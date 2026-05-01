@@ -1,0 +1,53 @@
+{
+  "id": "melanie-sachs",
+  "name": "Melanie Sachs",
+  "firstName": "Melanie",
+  "lastName": "Sachs",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-102",
+  "jurisdiction": "Maine House of Representatives",
+  "county": [
+    "Maine"
+  ],
+  "termStart": "2022-12-07",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 333, House Democratic Office 2 State House Station, Augusta, ME 04333",
+    "phone": "800-423-2900",
+    "email": "melanie.sachs@legislature.maine.gov",
+    "website": "https://legislature.maine.gov/house/house/MemberProfiles/Details/1420"
+  },
+  "bio": "Melanie Sachs serves as State Representative for Maine House of Representatives District 102. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "ME",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://legislature.maine.gov/house/house/MemberProfiles/Details/1420"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/me/legislature/Melanie-F-Sachs-efda26eb-c8f7-443c-a963-95419878a856.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Melanie_Sachs"
+    },
+    {
+      "title": "Public source",
+      "url": "https://legislature.maine.gov/house/house/MemberProfiles/ListAlpha"
+    },
+    {
+      "title": "Public source",
+      "url": "https://legislature.maine.gov/housedems/sachsm/index.html"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.maine.gov/housedems/sachsm"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

@@ -1,0 +1,68 @@
+{
+  "id": "emilie-krasnow",
+  "name": "Emilie Krasnow",
+  "firstName": "Emilie",
+  "lastName": "Krasnow",
+  "photo": "/images/officials/state-legislature/vt/emilie-krasnow.jpg",
+  "photoSourceUrl": "https://images.squarespace-cdn.com/content/620c2499aa05237b7428dec9/1651861860161-DJHK1UPY8S7PFCW32285/headshot+for+web.jpg?format=1500w&content-type=image%2Fjpeg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-Chittenden-9",
+  "jurisdiction": "Vermont House of Representatives",
+  "county": [
+    "Vermont"
+  ],
+  "termStart": "2023-01-04",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Vermont State House 115 State St., Montpelier, VT 05633",
+    "phone": "802-828-2228",
+    "email": "ekrasnow@leg.state.vt.us",
+    "website": "https://legislature.vermont.gov/Documents/SmallMaps/2022/House/Chittenden-9.pdf"
+  },
+  "bio": "Emilie Krasnow serves as State Representative for Vermont House of Representatives District Chittenden-9. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "VT",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://legislature.vermont.gov/Documents/SmallMaps/2022/House/Chittenden-9.pdf"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/vt/legislature/Emilie-Krasnow-0ab172d4-ecc7-46e4-a4f1-ee71429595bd.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://images.squarespace-cdn.com/content/620c2499aa05237b7428dec9/1651861860161-DJHK1UPY8S7PFCW32285/headshot+for+web.jpg?format=1500w&content-type=image%2Fjpeg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Emily_Krasnow"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Emilie_Krasnow"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/210294/emilie-krasnow"
+    },
+    {
+      "title": "Public source",
+      "url": "https://legislature.vermont.gov/people/loadAll/2024"
+    },
+    {
+      "title": "Public source",
+      "url": "https://legislature.vermont.gov/people/single/2024/37394"
+    },
+    {
+      "title": "Public source",
+      "url": "https://legislature.vermont.gov/people/single/2026/37394"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

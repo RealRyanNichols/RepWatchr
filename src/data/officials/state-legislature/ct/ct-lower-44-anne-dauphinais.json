@@ -1,0 +1,72 @@
+{
+  "id": "anne-dauphinais",
+  "name": "Anne Dauphinais",
+  "firstName": "Anne",
+  "lastName": "Dauphinais",
+  "photo": "/images/officials/state-legislature/ct/anne-dauphinais.jpg",
+  "photoSourceUrl": "https://www.cga.ct.gov/legpics/044.png?ver=",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-44",
+  "jurisdiction": "Connecticut House of Representatives",
+  "county": [
+    "Connecticut"
+  ],
+  "termStart": "2017-01-04",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 4200, Legislative Office Building 300 Capitol Ave., Hartford, CT 06106",
+    "phone": "860-240-8700",
+    "email": "anne.dauphinais@housegop.ct.gov",
+    "website": "https://cga.ct.gov/asp/CGABillStatus/CGAMemberBills.asp?dist_code=%27044%27&dist_name=Dauphinais,%20Anne"
+  },
+  "bio": "Anne Dauphinais serves as State Representative for Connecticut House of Representatives District 44. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "CT",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://cga.ct.gov/asp/CGABillStatus/CGAMemberBills.asp?dist_code=%27044%27&dist_name=Dauphinais,%20Anne"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ct/legislature/Anne-Dauphinais-087a813d-b14a-4205-a08f-cec795647318.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://www.cga.ct.gov/legpics/044.png?ver="
+    },
+    {
+      "title": "Public source",
+      "url": "ftp://ftp.cga.ct.gov/pub/data/LegislatorDatabase.csv"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Anne_Dauphinais"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Anne_Dauphinais"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/172193/anne-dauphinais"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.cthousegop.com/dauphinais"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.cthousegop.com/Dauphinais/main"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.cthousegop.com/Dauphinais/main/"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

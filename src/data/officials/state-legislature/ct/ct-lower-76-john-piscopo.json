@@ -1,0 +1,65 @@
+{
+  "id": "john-piscopo",
+  "name": "John Piscopo",
+  "firstName": "John",
+  "lastName": "Piscopo",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-76",
+  "jurisdiction": "Connecticut House of Representatives",
+  "county": [
+    "Connecticut"
+  ],
+  "termStart": "1989-01-04",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 4200, Legislative Office Building 300 Capitol Ave., Hartford, CT 06106",
+    "phone": "860-240-8700",
+    "email": "john.piscopo@housegop.ct.gov",
+    "website": "https://www.cga.ct.gov/asp/CGABillStatus/CGAMemberBills.asp?dist_code=%27076%27&dist_name=Piscopo,%20John"
+  },
+  "bio": "John Piscopo serves as State Representative for Connecticut House of Representatives District 76. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "CT",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.cga.ct.gov/asp/CGABillStatus/CGAMemberBills.asp?dist_code=%27076%27&dist_name=Piscopo,%20John"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ct/legislature/John-E-Piscopo-e7f7ad52-69a8-4306-8dfe-02368f74d75b.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "ftp://ftp.cga.ct.gov/pub/data/LegislatorDatabase.csv"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/John_Piscopo"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/John_Piscopo"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/7238/john-piscopo"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.cthousegop.com/Piscopo/main"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.cthousegop.com/Piscopo/main/"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/john-piscopo-60882b33"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

@@ -1,0 +1,72 @@
+{
+  "id": "wayne-rosenthal",
+  "name": "Wayne Rosenthal",
+  "firstName": "Wayne",
+  "lastName": "Rosenthal",
+  "photo": "/images/officials/state-legislature/il/wayne-rosenthal.jpg",
+  "photoSourceUrl": "https://cdn.ilga.gov/assets/img/members/{43DB5751-834C-4CA0-B8A4-6D1016E3CB28}.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-108",
+  "jurisdiction": "Illinois House of Representatives",
+  "county": [
+    "Illinois"
+  ],
+  "termStart": "2023-01-11",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room E-1, Stratton Office Building, Springfield, IL 62706",
+    "phone": "217-782-8071",
+    "email": "rosenthal@ilhousegop.org",
+    "website": "https://ilga.gov/house/Rep.asp?GA=103&MemberID=3243"
+  },
+  "bio": "Wayne Rosenthal serves as State Representative for Illinois House of Representatives District 108. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "IL",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://ilga.gov/house/Rep.asp?GA=103&MemberID=3243"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/il/legislature/Wayne-A-Rosenthal-5a23473f-1af0-4f7d-8b08-cb287d93db6f.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://cdn.ilga.gov/assets/img/members/{43DB5751-834C-4CA0-B8A4-6D1016E3CB28}.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Wayne_Arthur_Rosenthal"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Wayne_Rosenthal_(politician)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ilga.gov/house/default.asp?GA=103"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/116692/wayne-rosenthal"
+    },
+    {
+      "title": "Public source",
+      "url": "https://reprosenthal.com"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.ilga.gov/House/Members/Details/3434"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.ilga.gov/house/Rep.asp?GA=103&MemberID=3243"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

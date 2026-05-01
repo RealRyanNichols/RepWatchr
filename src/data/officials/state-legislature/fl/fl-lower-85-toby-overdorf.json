@@ -1,0 +1,69 @@
+{
+  "id": "toby-overdorf",
+  "name": "Toby Overdorf",
+  "firstName": "Toby",
+  "lastName": "Overdorf",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-85",
+  "jurisdiction": "Florida House of Representatives",
+  "county": [
+    "Florida"
+  ],
+  "termStart": "2022-11-08",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 402, House Office Building 402 S. Monroe St., Tallahassee, FL 32399",
+    "phone": "850-717-5085",
+    "email": "toby.overdorf@flhouse.gov",
+    "website": "https://myfloridahouse.gov/Sections/Representatives/details.aspx?MemberId=4728&LegislativeTermId=90"
+  },
+  "bio": "Toby Overdorf serves as State Representative for Florida House of Representatives District 85. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "FL",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://myfloridahouse.gov/Sections/Representatives/details.aspx?MemberId=4728&LegislativeTermId=90"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/fl/legislature/Tobin-Rogers-Toby-Overdorf-a44181b6-df0b-466d-9989-d369083201aa.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Toby_Overdorf"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Toby_Overdorf"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.flhouse.gov/Sections/Representatives/custom/details.aspx?MemberId=4728"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.flhouse.gov/Sections/Representatives/details.aspx?MemberId=4728"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.myfloridahouse.gov/Representatives"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.myfloridahouse.gov/Sections/Representatives/details.aspx?MemberId=4728"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.myfloridahouse.gov/Sections/Representatives/details.aspx?MemberId=4728&LegislativeTermId=88"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.myfloridahouse.gov/Sections/Representatives/representatives.aspx"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

@@ -1,0 +1,68 @@
+{
+  "id": "mary-mushinsky",
+  "name": "Mary Mushinsky",
+  "firstName": "Mary",
+  "lastName": "Mushinsky",
+  "photo": "/images/officials/state-legislature/ct/mary-mushinsky.jpg",
+  "photoSourceUrl": "http://www2.housedems.ct.gov/Mushinsky/images/Mushinsky_HS.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-85",
+  "jurisdiction": "Connecticut House of Representatives",
+  "county": [
+    "Connecticut"
+  ],
+  "termStart": "1981-01-07",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 4012, Legislative Office Building 300 Capitol Ave., Hartford, CT 06106",
+    "phone": "860-240-8585",
+    "email": "mary.mushinsky@cga.ct.gov",
+    "website": "https://www.cga.ct.gov/asp/CGABillStatus/CGAMemberBills.asp?dist_code=%27085%27&dist_name=085%20-%Mushinsky,%Mary%20M."
+  },
+  "bio": "Mary Mushinsky serves as State Representative for Connecticut House of Representatives District 85. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "CT",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.cga.ct.gov/asp/CGABillStatus/CGAMemberBills.asp?dist_code=%27085%27&dist_name=085%20-%Mushinsky,%Mary%20M."
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ct/legislature/Mary-M-Mushinsky-817e17bf-a01c-4bf1-b70f-3e16aeef088e.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "http://www2.housedems.ct.gov/Mushinsky/images/Mushinsky_HS.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "ftp://ftp.cga.ct.gov/pub/data/LegislatorDatabase.csv"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Mary_Mushinsky"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Mary_Mushinsky"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/7230/mary-mushinsky"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.housedems.ct.gov/Mushinsky"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/mary-mushinsky-0a6b9228"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

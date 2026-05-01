@@ -1,0 +1,61 @@
+{
+  "id": "martha-marx",
+  "name": "Martha Marx",
+  "firstName": "Martha",
+  "lastName": "Marx",
+  "party": "D",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-20",
+  "jurisdiction": "Connecticut Senate",
+  "county": [
+    "Connecticut"
+  ],
+  "termStart": "2023-01-04",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 2200, Legislative Office Building 300 Capitol Ave., Hartford, CT 06106",
+    "phone": "860-240-0436",
+    "email": "martha.marx@cga.ct.gov",
+    "website": "https://www.senatedems.ct.gov/marx"
+  },
+  "bio": "Martha Marx serves as State Senator for Connecticut Senate District 20. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "CT",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.senatedems.ct.gov/marx"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ct/legislature/Martha-Marx-e171a437-11bc-4200-ae58-f6f8c4971f39.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "ftp://ftp.cga.ct.gov/pub/data/LegislatorDatabase.csv"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Martha_Marx"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Martha_Marx"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/185747/martha-marx"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.senatedems.ct.gov/senator/martha-marx"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.senatedems.ct.gov/senator/martha-marx/bio"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

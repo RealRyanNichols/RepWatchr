@@ -1,0 +1,49 @@
+{
+  "id": "mark-cooper",
+  "name": "Mark Cooper",
+  "firstName": "Mark",
+  "lastName": "Cooper",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-107",
+  "jurisdiction": "Maine House of Representatives",
+  "county": [
+    "Maine"
+  ],
+  "termStart": "2024-12-03",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 332, House Republican Office 2 State House Station, Augusta, ME 04333",
+    "phone": "800-423-2900",
+    "email": "mark.cooper@legislature.maine.gov",
+    "website": "https://legislature.maine.gov/house/house/MemberProfiles/Details/3132"
+  },
+  "bio": "Mark Cooper serves as State Representative for Maine House of Representatives District 107. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "ME",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://legislature.maine.gov/house/house/MemberProfiles/Details/3132"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/me/legislature/Mark-Cooper-0e9ec0ba-18f6-4dd5-90c2-5893f0216138.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Mark_Cooper_(Maine)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://mainehousegop.org/members/cooper-mark"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/mark-cooper-9911a920"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

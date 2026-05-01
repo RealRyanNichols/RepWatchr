@@ -1,0 +1,60 @@
+{
+  "id": "david-sampson",
+  "name": "David Sampson",
+  "firstName": "David",
+  "lastName": "Sampson",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-153",
+  "jurisdiction": "Georgia House of Representatives",
+  "county": [
+    "Georgia"
+  ],
+  "termStart": "2023-01-09",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "1713 E. Oglethorpe, Albany, GA 31705",
+    "email": "david.sampson@house.ga.gov",
+    "website": "https://www.legis.ga.gov/members/house"
+  },
+  "bio": "David Sampson serves as State Representative for Georgia House of Representatives District 153. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "GA",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.legis.ga.gov/members/house"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ga/legislature/David-Sampson-9a8e7b0c-3c19-473f-b04a-d3a17037af0a.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/David_Sampson"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/David_Sampson_(politician)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/203510/david-sampson"
+    },
+    {
+      "title": "API member detail (requires authorization token)",
+      "url": "https://www.legis.ga.gov/api/members/detail/5052?session=1031&chamber=1"
+    },
+    {
+      "title": "API members list (requires authorization token)",
+      "url": "https://www.legis.ga.gov/api/members/list/1031"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.legis.ga.gov/members/house/5052"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

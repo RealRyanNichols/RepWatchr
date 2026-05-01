@@ -1,0 +1,72 @@
+{
+  "id": "david-tikoian",
+  "name": "David Tikoian",
+  "firstName": "David",
+  "lastName": "Tikoian",
+  "photo": "/images/officials/state-legislature/ri/david-tikoian.jpg",
+  "photoSourceUrl": "https://www.rilegislature.gov/senators/Pictures/Tikoian%202023.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-22",
+  "jurisdiction": "Rhode Island Senate",
+  "county": [
+    "Rhode Island"
+  ],
+  "termStart": "2023-01-03",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "82 Smith St., Providence, RI 02903",
+    "phone": "401-222-3580",
+    "email": "sen-tikoian@rilegislature.gov",
+    "website": "https://www.rilegislature.gov/Senators/tikoian/pages/biography.aspx"
+  },
+  "bio": "David Tikoian serves as State Senator for Rhode Island Senate District 22. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "RI",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.rilegislature.gov/Senators/tikoian/pages/biography.aspx"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ri/legislature/David-P-Tikoian-63bb0194-1993-4149-b39d-23f229c3040e.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://www.rilegislature.gov/senators/Pictures/Tikoian%202023.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/David_Tikoian"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/David_Tikoian"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/209963/david-tikoian"
+    },
+    {
+      "title": "Public source",
+      "url": "https://webserver.rilegislature.gov/Email/SenEmailListDistrict.asp"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/david-p-tikoian-8953501b5"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.rilegislature.gov/senators/tikoian/Pages/Biography.aspx"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.rilegislature.gov/Senators/tikoiand/pages/biography.aspx"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

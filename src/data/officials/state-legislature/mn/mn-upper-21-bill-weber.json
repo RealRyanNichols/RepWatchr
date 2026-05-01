@@ -1,0 +1,72 @@
+{
+  "id": "bill-weber",
+  "name": "Bill Weber",
+  "firstName": "Bill",
+  "lastName": "Weber",
+  "photo": "/images/officials/state-legislature/mn/bill-weber.jpg",
+  "photoSourceUrl": "https://www.senate.mn/graphics/22Weber.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-21",
+  "jurisdiction": "Minnesota Senate",
+  "county": [
+    "Minnesota"
+  ],
+  "termStart": "2023-01-03",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 2211, Minnesota Senate Building 95 University Ave. West, St. Paul, MN 55155",
+    "phone": "651-296-5650",
+    "email": "sen.bill.weber@senate.mn",
+    "website": "https://www.senate.mn/members/member_bio.html?mem_id=1199"
+  },
+  "bio": "Bill Weber serves as State Senator for Minnesota Senate District 21. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "MN",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.senate.mn/members/member_bio.html?mem_id=1199"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/mn/legislature/Bill-Weber-f839da78-1e9c-4e4b-b1d7-d203970ec6b2.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://www.senate.mn/graphics/22Weber.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Bill_Weber"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Bill_Weber_(Minnesota_politician)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Bill_Weber_(politician)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/68614/bill-weber"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/68614/bill-weber"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/bill-weber-63134a62"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.senate.mn/api/members"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

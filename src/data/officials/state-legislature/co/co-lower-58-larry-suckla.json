@@ -1,0 +1,49 @@
+{
+  "id": "larry-suckla",
+  "name": "Larry Suckla",
+  "firstName": "Larry",
+  "lastName": "Suckla",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-58",
+  "jurisdiction": "Colorado House of Representatives",
+  "county": [
+    "Colorado"
+  ],
+  "termStart": "2025-01-08",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "State Capitol Room 307, Colorado  Building 200 E. Colfax Ave., Denver, CO 80203",
+    "phone": "303-866-2955",
+    "email": "larry.suckla.house@coleg.gov",
+    "website": "https://leg.colorado.gov/legislators/larry-don-suckla"
+  },
+  "bio": "Larry Suckla serves as State Representative for Colorado House of Representatives District 58. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "CO",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://leg.colorado.gov/legislators/larry-don-suckla"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/co/legislature/Larry-Suckla-a2745e24-bcf2-40f8-aa77-fad08d873ab1.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Larry_Suckla"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Larry_Don_Suckla"
+    },
+    {
+      "title": "Public source",
+      "url": "https://leg.colorado.gov/legislators/larry-suckla"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

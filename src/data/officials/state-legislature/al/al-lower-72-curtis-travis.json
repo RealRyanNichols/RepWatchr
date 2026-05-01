@@ -1,0 +1,60 @@
+{
+  "id": "curtis-travis",
+  "name": "Curtis Travis",
+  "firstName": "Curtis",
+  "lastName": "Travis",
+  "photo": "/images/officials/state-legislature/al/curtis-travis.jpg",
+  "photoSourceUrl": "https://www.legislature.state.al.us/pdf/house/members/Travis_72.png",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-72",
+  "jurisdiction": "Alabama House of Representatives",
+  "county": [
+    "Alabama"
+  ],
+  "termStart": "2022-11-09",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 539-E, 11 S. Union St., Montgomery, AL 36130",
+    "phone": "334-261-0559",
+    "email": "cltravis620@charter.net",
+    "website": "https://alison.legislature.state.al.us/house-leaders-members"
+  },
+  "bio": "Curtis Travis serves as State Representative for Alabama House of Representatives District 72. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "AL",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://alison.legislature.state.al.us/house-leaders-members"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/al/legislature/Curtis-Travis-583c130d-a97a-48c9-9a18-03e94aa93930.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://www.legislature.state.al.us/pdf/house/members/Travis_72.png"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Curtis_Travis"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Curtis_Travis"
+    },
+    {
+      "title": "graphql endpoint for member information",
+      "url": "https://gql.api.alison.legislature.state.al.us/graphql"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/201890/curtis-travis"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

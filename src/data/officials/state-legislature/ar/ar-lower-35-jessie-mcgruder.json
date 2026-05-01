@@ -1,0 +1,60 @@
+{
+  "id": "jessie-mcgruder",
+  "name": "Jessie McGruder",
+  "firstName": "Jessie",
+  "lastName": "McGruder",
+  "photo": "/images/officials/state-legislature/ar/jessie-mcgruder.jpg",
+  "photoSourceUrl": "https://s3.amazonaws.com/ballotpedia-api4/files/thumbs/200/300/Jessie_McGruder_20240811_111220.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-35",
+  "jurisdiction": "Arkansas House of Representatives",
+  "county": [
+    "Arkansas"
+  ],
+  "termStart": "2025-01-13",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "State Capitol Arkansas  500 Woodlane St., Suite 350, Little Rock, AR 72201",
+    "phone": "501-682-6211",
+    "email": "mcgruder4arkansashouse@gmail.com",
+    "website": "https://arkansashouse.org/district/35"
+  },
+  "bio": "Jessie McGruder serves as State Representative for Arkansas House of Representatives District 35. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "AR",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://arkansashouse.org/district/35"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ar/legislature/Jessie-McGruder-f81fdd7f-aa3e-4678-bc4f-870114f8b0ce.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://s3.amazonaws.com/ballotpedia-api4/files/thumbs/200/300/Jessie_McGruder_20240811_111220.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://arkleg.state.ar.us/Legislators/Detail?member=McGruder"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Jessie_McGruder"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/212939/jessie-mcgruder"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/jessie-mcgruder-61b69758"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

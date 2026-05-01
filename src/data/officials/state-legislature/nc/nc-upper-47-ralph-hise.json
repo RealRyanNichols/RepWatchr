@@ -1,0 +1,60 @@
+{
+  "id": "ralph-hise",
+  "name": "Ralph Hise",
+  "firstName": "Ralph",
+  "lastName": "Hise",
+  "photo": "/images/officials/state-legislature/nc/ralph-hise.jpg",
+  "photoSourceUrl": "https://www.ncleg.gov/Members/MemberImage/S/298/Low",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-47",
+  "jurisdiction": "North Carolina Senate",
+  "county": [
+    "North Carolina"
+  ],
+  "termStart": "2011-01-26",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 300-A, Legislative Office Building 300 N. Salisbury St., Raleigh, NC 27603",
+    "phone": "919-733-3460",
+    "email": "ralph.hise@ncleg.gov",
+    "website": "https://www.ncleg.gov/Members/Biography/S/298"
+  },
+  "bio": "Ralph Hise serves as State Senator for North Carolina Senate District 47. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "NC",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.ncleg.gov/Members/Biography/S/298"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/nc/legislature/Ralph-Hise-25828c07-8295-45af-bd01-b044b59d530a.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://www.ncleg.gov/Members/MemberImage/S/298/Low"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Ralph_Hise"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Ralph_Hise"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/117794/ralph-hise-jr"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.ncleg.gov/Members/MemberTable/S"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

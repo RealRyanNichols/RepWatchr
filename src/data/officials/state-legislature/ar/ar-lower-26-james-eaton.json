@@ -1,0 +1,53 @@
+{
+  "id": "james-eaton",
+  "name": "James Eaton",
+  "firstName": "James",
+  "lastName": "Eaton",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-26",
+  "jurisdiction": "Arkansas House of Representatives",
+  "county": [
+    "Arkansas"
+  ],
+  "termStart": "2025-01-13",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "State Capitol Arkansas  500 Woodlane St., Suite 350, Little Rock, AR 72201",
+    "phone": "501-682-6211",
+    "email": "james.eaton@arkansashouse.org",
+    "website": "https://arkansashouse.org/district/26"
+  },
+  "bio": "James Eaton serves as State Representative for Arkansas House of Representatives District 26. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "AR",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://arkansashouse.org/district/26"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ar/legislature/James-Eaton-43843e57-ce6c-45a5-877c-eca55b1c14e6.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://arkleg.state.ar.us/Legislators/Detail?member=Eaton"
+    },
+    {
+      "title": "Public source",
+      "url": "https://arkleg.state.ar.us/Legislators/Detail?member=Eaton&ddBienniumSession=2025%2F2025R"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/James_Eaton_(Arkansas)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/212931/james-eaton"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

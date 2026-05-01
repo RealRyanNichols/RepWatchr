@@ -1,0 +1,69 @@
+{
+  "id": "herron-gaston",
+  "name": "Herron Gaston",
+  "firstName": "Herron",
+  "lastName": "Gaston",
+  "party": "D",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-23",
+  "jurisdiction": "Connecticut Senate",
+  "county": [
+    "Connecticut"
+  ],
+  "termStart": "2023-01-04",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 2000, Legislative Office Building 300 Capitol Ave., Hartford, CT 06106",
+    "phone": "860-240-0591",
+    "email": "herron.gaston@cga.ct.gov",
+    "website": "https://senatedems.ct.gov/gaston"
+  },
+  "bio": "Herron Gaston serves as State Senator for Connecticut Senate District 23. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "CT",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://senatedems.ct.gov/gaston"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ct/legislature/Herron-Gaston-3be9e2dc-7ffa-40fb-90c8-d25fe4970dee.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "ftp://ftp.cga.ct.gov/pub/data/LegislatorDatabase.csv"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Herron_Gaston"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Herron_Gaston"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/dr-herron-keyon-gaston-13ba83a3"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/dr-herron-keyon-gaston-j-d-4580ab14"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.senatedems.ct.gov/gaston"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.senatedems.ct.gov/gaston-230104"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.senatedems.ct.gov/senator/herron-keyon-gaston/bio"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

@@ -1,0 +1,64 @@
+{
+  "id": "darren-thorne",
+  "name": "Darren Thorne",
+  "firstName": "Darren",
+  "lastName": "Thorne",
+  "photo": "/images/officials/state-legislature/wv/darren-thorne.jpg",
+  "photoSourceUrl": "http://www.wvlegislature.gov/images/members/2023/house/thorne_darren.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-15",
+  "jurisdiction": "West Virginia Senate",
+  "county": [
+    "West Virginia"
+  ],
+  "termStart": "2025-01-03",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "State Capitol Room 200W, Complex, Building 1 1900 Kanawha Blvd. East, Charleston, WV 25305",
+    "phone": "304-357-7980",
+    "email": "darren.thorne@wvsenate.gov",
+    "website": "https://www.wvlegislature.gov/House/lawmaker.cfm?member=Delegate%20Thorne"
+  },
+  "bio": "Darren Thorne serves as State Senator for West Virginia Senate District 15. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "WV",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.wvlegislature.gov/House/lawmaker.cfm?member=Delegate%20Thorne"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/wv/legislature/Darren-Thorne-60b7f294-2c42-40ab-ab7d-2a639e5be5e5.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "http://www.wvlegislature.gov/images/members/2023/house/thorne_darren.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Darren_Thorne"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Darren_Thorne"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/201690/darren-thorne"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.wvlegislature.gov/House/roster.cfm"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.wvlegislature.gov/Senate1/lawmaker.cfm?member=Senator%20Thorne"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

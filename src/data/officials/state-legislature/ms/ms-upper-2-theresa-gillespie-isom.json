@@ -1,0 +1,51 @@
+{
+  "id": "theresa-gillespie-isom",
+  "name": "Theresa Gillespie Isom",
+  "firstName": "Theresa",
+  "lastName": "Gillespie Isom",
+  "photo": "/images/officials/state-legislature/ms/theresa-gillespie-isom.jpg",
+  "photoSourceUrl": "https://billstatus.ls.state.ms.us/members/Senate/Gillespie_Isom.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-2",
+  "jurisdiction": "Mississippi Senate",
+  "county": [
+    "Mississippi"
+  ],
+  "termStart": "2026-01-06",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "State Capitol 400 High St., Jackson, MS 39201",
+    "phone": "662-250-6908",
+    "email": "tgillespie-isom@senate.ms.gov"
+  },
+  "bio": "Theresa Gillespie Isom serves as State Senator for Mississippi Senate District 2. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "MS",
+  "sourceLinks": [
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ms/legislature/Theresa-Gillespie-Isom-34b84276-9c36-4f69-b015-ba05a1c5ee58.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://billstatus.ls.state.ms.us/members/Senate/Gillespie_Isom.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Theresa_Gillespie_Isom"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Theresa_Gillespie_Isom"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/theresa-isom-549ab015"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

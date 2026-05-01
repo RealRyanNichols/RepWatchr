@@ -1,0 +1,72 @@
+{
+  "id": "adam-niemerg",
+  "name": "Adam Niemerg",
+  "firstName": "Adam",
+  "lastName": "Niemerg",
+  "photo": "/images/officials/state-legislature/il/adam-niemerg.jpg",
+  "photoSourceUrl": "https://cdn.ilga.gov/assets/img/members/{EDDABDD8-51A3-413F-B2A0-FA5953D29598}.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-102",
+  "jurisdiction": "Illinois House of Representatives",
+  "county": [
+    "Illinois"
+  ],
+  "termStart": "2023-01-11",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 232-N, Stratton Office Building, Springfield, IL 62706",
+    "phone": "217-782-2087",
+    "email": "niemerg@ilhousegop.org",
+    "website": "https://ilga.gov/house/Rep.asp?GA=102&MemberID=3001"
+  },
+  "bio": "Adam Niemerg serves as State Representative for Illinois House of Representatives District 102. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "IL",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://ilga.gov/house/Rep.asp?GA=102&MemberID=3001"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/il/legislature/Adam-Niemerg-9729745e-386d-4f4b-8d04-0e762dcd87b2.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://cdn.ilga.gov/assets/img/members/{EDDABDD8-51A3-413F-B2A0-FA5953D29598}.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Adam_Niemerg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Adam_Niemerg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ilga.gov/house/default.asp?GA=102"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ilga.gov/house/default.asp?GA=103"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ilga.gov/house/Rep.asp?GA=103&MemberID=3189"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/188124/adam-niemerg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://repniemerg.com"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

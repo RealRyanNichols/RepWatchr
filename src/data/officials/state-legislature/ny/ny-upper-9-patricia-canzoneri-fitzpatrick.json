@@ -1,0 +1,53 @@
+{
+  "id": "patricia-canzoneri-fitzpatrick",
+  "name": "Patricia Canzoneri-Fitzpatrick",
+  "firstName": "Patricia",
+  "lastName": "Canzoneri-Fitzpatrick",
+  "party": "R",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-9",
+  "jurisdiction": "New York Senate",
+  "county": [
+    "New York"
+  ],
+  "termStart": "2023-01-01",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 415, Legislative Office Building, Albany, NY 12247",
+    "phone": "518-455-2400",
+    "email": "canzoneri@nysenate.gov",
+    "website": "https://www.nysenate.gov/senators/patricia-canzoneri-fitzpatrick"
+  },
+  "bio": "Patricia Canzoneri-Fitzpatrick serves as State Senator for New York Senate District 9. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "NY",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.nysenate.gov/senators/patricia-canzoneri-fitzpatrick"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ny/legislature/Patricia-Canzoneri-Fitzpatrick-d04bd8aa-6178-419b-8738-a5f92141753a.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Patricia_Canzoneri-Fitzpatrick"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Patricia_Canzoneri-Fitzpatrick"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/192112/patricia-canzoneri-fitzpatrick"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.patriciaforsenate.com/meet-patricia"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

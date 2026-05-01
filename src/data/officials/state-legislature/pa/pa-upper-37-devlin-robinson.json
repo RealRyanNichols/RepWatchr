@@ -1,0 +1,74 @@
+{
+  "id": "devlin-robinson",
+  "name": "Devlin Robinson",
+  "firstName": "Devlin",
+  "lastName": "Robinson",
+  "party": "R",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-37",
+  "jurisdiction": "Pennsylvania Senate",
+  "county": [
+    "Pennsylvania"
+  ],
+  "termStart": "2020-12-01",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 171, Main Capitol Senate Box 203037, Harrisburg, PA 17120",
+    "phone": "717-787-5839",
+    "email": "drobinson@pasen.gov",
+    "website": "https://senatorrobinson.com/",
+    "socialMedia": {
+      "x": "https://x.com/SenRobinsonPA",
+      "twitter": "https://x.com/SenRobinsonPA",
+      "facebook": "https://facebook.com/SenRobinsonPA"
+    }
+  },
+  "bio": "Devlin Robinson serves as State Senator for Pennsylvania Senate District 37. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "PA",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://senatorrobinson.com/"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/pa/legislature/Devlin-Robinson-5271803b-8b46-449c-bf89-44f7d09c6cd2.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Devlin_Robinson"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Devlin_Robinson"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/189924/devlin-robinson"
+    },
+    {
+      "title": "Public source",
+      "url": "https://senatorrobinson.com"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.legis.state.pa.us/cfdocs/legis/home/member_information/mbrList.cfm?body=S&sort=alpha"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.legis.state.pa.us/cfdocs/legis/home/member_information/Senate_bio.cfm?id=1924"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.legis.state.pa.us/cfdocs/legis/home/member_information/senators_alpha.cfm"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/devlin-robinson-49bba431"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

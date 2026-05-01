@@ -1,0 +1,57 @@
+{
+  "id": "adrian-tam",
+  "name": "Adrian Tam",
+  "firstName": "Adrian",
+  "lastName": "Tam",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-24",
+  "jurisdiction": "Hawaii House of Representatives",
+  "county": [
+    "Hawaii"
+  ],
+  "termStart": "2022-11-08",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "State Capitol Room 402, 415 S. Beretania St., Honolulu, HI 96813",
+    "phone": "808-586-8520",
+    "email": "reptam@capitol.hawaii.gov",
+    "website": "https://www.capitol.hawaii.gov/legislature/memberpage.aspx?member=132",
+    "socialMedia": {
+      "facebook": "https://facebook.com/repadriantam",
+      "instagram": "https://instagram.com/repadriantam"
+    }
+  },
+  "bio": "Adrian Tam serves as State Representative for Hawaii House of Representatives District 24. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "HI",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.capitol.hawaii.gov/legislature/memberpage.aspx?member=132"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/hi/legislature/Adrian-K-Tam-0ce91900-de38-4ab2-a6fe-089b04b20b74.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Adrian_Tam"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Adrian_Tam"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.capitol.hawaii.gov/members/legislators.aspx"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/adrian-tam-7552205a"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

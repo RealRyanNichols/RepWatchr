@@ -1,0 +1,70 @@
+{
+  "id": "rick-gundrum",
+  "name": "Rick Gundrum",
+  "firstName": "Rick",
+  "lastName": "Gundrum",
+  "photo": "/images/officials/state-legislature/wi/rick-gundrum.jpg",
+  "photoSourceUrl": "https://docs.legis.wisconsin.gov/2023/legislators/assembly/2467.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "Assemblymember",
+  "district": "HD-58",
+  "jurisdiction": "Wisconsin State Assembly",
+  "county": [
+    "Wisconsin"
+  ],
+  "termStart": "2018-01-24",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "email": "rep.gundrum@legis.wisconsin.gov",
+    "website": "https://docs.legis.wisconsin.gov/2017/legislators/assembly/1780"
+  },
+  "bio": "Rick Gundrum serves as Assemblymember for Wisconsin State Assembly District 58. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "WI",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://docs.legis.wisconsin.gov/2017/legislators/assembly/1780"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/wi/legislature/Rick-Gundrum-264f7afa-69cb-46f3-97f3-ff8f21a1d68a.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://docs.legis.wisconsin.gov/2023/legislators/assembly/2467.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Rick_Gundrum"
+    },
+    {
+      "title": "Public source",
+      "url": "https://docs.legis.wisconsin.gov/2019/legislators/assembly/1852"
+    },
+    {
+      "title": "Public source",
+      "url": "https://docs.legis.wisconsin.gov/2021/legislators/assembly"
+    },
+    {
+      "title": "Public source",
+      "url": "https://docs.legis.wisconsin.gov/2021/legislators/assembly/"
+    },
+    {
+      "title": "Public source",
+      "url": "https://docs.legis.wisconsin.gov/2021/legislators/assembly/2141"
+    },
+    {
+      "title": "Public source",
+      "url": "https://docs.legis.wisconsin.gov/2023/legislators/assembly"
+    },
+    {
+      "title": "members list page",
+      "url": "https://docs.legis.wisconsin.gov/2023/legislators/assembly/"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

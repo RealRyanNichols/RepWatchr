@@ -1,0 +1,61 @@
+{
+  "id": "bill-coleman",
+  "name": "Bill Coleman",
+  "firstName": "Bill",
+  "lastName": "Coleman",
+  "party": "R",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-10",
+  "jurisdiction": "Oklahoma Senate",
+  "county": [
+    "Oklahoma"
+  ],
+  "termStart": "2018-11-16",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 426, 2300 N. Lincoln Blvd., Oklahoma City, OK 73105",
+    "phone": "405-521-5581",
+    "email": "bill.coleman@oksenate.gov",
+    "website": "https://oksenate.gov/contact-senator?sid=1844"
+  },
+  "bio": "Bill Coleman serves as State Senator for Oklahoma Senate District 10. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "OK",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://oksenate.gov/contact-senator?sid=1844"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ok/legislature/Bill-Coleman-446468ba-e7a8-49ff-8edc-e9f96da9d613.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Bill_Coleman_(Oklahoma)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Bill_Coleman_(Oklahoma_politician)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/181809/bill-coleman"
+    },
+    {
+      "title": "Public source",
+      "url": "https://oksenate.gov/senators/bill-coleman"
+    },
+    {
+      "title": "Public source",
+      "url": "https://oksenate.gov/Senators/biographies/coleman_bio.aspx"
+    },
+    {
+      "title": "Public source",
+      "url": "https://oksenate.gov/Senators/biographies/coleman_bio.html"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

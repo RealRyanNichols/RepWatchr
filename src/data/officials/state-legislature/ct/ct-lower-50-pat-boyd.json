@@ -1,0 +1,68 @@
+{
+  "id": "pat-boyd",
+  "name": "Pat Boyd",
+  "firstName": "Pat",
+  "lastName": "Boyd",
+  "photo": "/images/officials/state-legislature/ct/pat-boyd.jpg",
+  "photoSourceUrl": "http://www2.housedems.ct.gov/Boyd/images/Boyd_HS.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-50",
+  "jurisdiction": "Connecticut House of Representatives",
+  "county": [
+    "Connecticut"
+  ],
+  "termStart": "2017-01-04",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 3603, Legislative Office Building 300 Capitol Ave., Hartford, CT 06106",
+    "phone": "800-842-8267",
+    "email": "pat.boyd@cga.ct.gov",
+    "website": "https://cga.ct.gov/asp/CGABillStatus/CGAMemberBills.asp?dist_code=%27050%27&dist_name=Boyd,%20Patrick%20S."
+  },
+  "bio": "Pat Boyd serves as State Representative for Connecticut House of Representatives District 50. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "CT",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://cga.ct.gov/asp/CGABillStatus/CGAMemberBills.asp?dist_code=%27050%27&dist_name=Boyd,%20Patrick%20S."
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ct/legislature/Patrick-S-Boyd-50e78f89-a9e7-43f5-9566-a9f2cb23a5c9.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "http://www2.housedems.ct.gov/Boyd/images/Boyd_HS.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "ftp://ftp.cga.ct.gov/pub/data/LegislatorDatabase.csv"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Pat_Boyd"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Pat_Boyd"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/172208/pat-boyd"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.housedems.ct.gov/Boyd"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/patrick-s-boyd-12943724"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

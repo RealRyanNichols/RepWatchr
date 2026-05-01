@@ -1,0 +1,60 @@
+{
+  "id": "sandy-donatucci",
+  "name": "Sandy Donatucci",
+  "firstName": "Sandy",
+  "lastName": "Donatucci",
+  "photo": "/images/officials/state-legislature/ga/sandy-donatucci.jpg",
+  "photoSourceUrl": "https://s3.amazonaws.com/ballotpedia-api4/files/thumbs/200/300/Sandy_Donatucci_20240808_092636.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-105",
+  "jurisdiction": "Georgia House of Representatives",
+  "county": [
+    "Georgia"
+  ],
+  "termStart": "2025-01-13",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 501-B, Coverdell Legislative Office Building 18 Capitol Square SW, Atlanta, GA 30334",
+    "phone": "404-656-0177",
+    "email": "sandy.donatucci@house.ga.gov",
+    "website": "https://www.legis.ga.gov/members/house/5077"
+  },
+  "bio": "Sandy Donatucci serves as State Representative for Georgia House of Representatives District 105. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "GA",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.legis.ga.gov/members/house/5077"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ga/legislature/Sandy-Donatucci-4ab15127-5b7a-40bc-8807-26e8e8a73397.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://s3.amazonaws.com/ballotpedia-api4/files/thumbs/200/300/Sandy_Donatucci_20240808_092636.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Sandy_Donatucci"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/210864/sandy-donatucci"
+    },
+    {
+      "title": "Public source",
+      "url": "https://sandy-donatucci.kw.com"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/sandy-donatucci-56077280"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

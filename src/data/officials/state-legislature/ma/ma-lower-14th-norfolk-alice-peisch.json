@@ -1,0 +1,72 @@
+{
+  "id": "alice-peisch",
+  "name": "Alice Peisch",
+  "firstName": "Alice",
+  "lastName": "Peisch",
+  "photo": "/images/officials/state-legislature/ma/alice-peisch.jpg",
+  "photoSourceUrl": "https://malegislature.gov/Legislators/Profile/170/AHP1.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-14th Norfolk",
+  "jurisdiction": "Massachusetts House of Representatives",
+  "county": [
+    "Massachusetts"
+  ],
+  "termStart": "2011-01-01",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 234, State House 24 Beacon St., Boston, MA 02133",
+    "phone": "617-722-2783",
+    "email": "alice.peisch@mahouse.gov",
+    "website": "https://malegislature.gov/Legislators/Profile/AHP1"
+  },
+  "bio": "Alice Peisch serves as State Representative for Massachusetts House of Representatives District 14th Norfolk. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "MA",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://malegislature.gov/Legislators/Profile/AHP1"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ma/legislature/Alice-Hanlon-Peisch-2a9569a0-feaf-431d-8a8d-012d8ebccbf8.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://malegislature.gov/Legislators/Profile/170/AHP1.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Alice_Peisch"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Alice_Peisch"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/35864/alice-peisch"
+    },
+    {
+      "title": "Public source",
+      "url": "https://malegislature.gov/api/GeneralCourts/192/LegislativeMembers"
+    },
+    {
+      "title": "Public source",
+      "url": "https://malegislature.gov/api/GeneralCourts/192/LegislativeMembers/"
+    },
+    {
+      "title": "Public source",
+      "url": "https://malegislature.gov/api/GeneralCourts/192/LegislativeMembers/AHP1"
+    },
+    {
+      "title": "Public source",
+      "url": "https://malegislature.gov/api/GeneralCourts/193/LegislativeMembers"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

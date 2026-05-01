@@ -1,0 +1,53 @@
+{
+  "id": "tommy-john-schiavoni",
+  "name": "Tommy John Schiavoni",
+  "firstName": "Tommy John",
+  "lastName": "Schiavoni",
+  "party": "D",
+  "level": "state",
+  "position": "Assemblymember",
+  "district": "HD-1",
+  "jurisdiction": "New York State Assembly",
+  "county": [
+    "New York"
+  ],
+  "termStart": "2025-01-01",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 920, Legislative Office Building, Albany, NY 12248",
+    "phone": "518-455-5997",
+    "email": "schiavonitj@nyassembly.gov",
+    "website": "https://nyassembly.gov/mem/Tommy-John-Schiavoni"
+  },
+  "bio": "Tommy John Schiavoni serves as Assemblymember for New York State Assembly District 1. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "NY",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://nyassembly.gov/mem/Tommy-John-Schiavoni"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ny/legislature/Tommy-John-Schiavoni-60b6c2ff-a1ce-46a1-b484-affd805bc297.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Thomas_Schiavoni"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/T._John_Schiavoni"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/192037/thomas-schiavoni"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/tommy-john-schiavoni-127263160"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

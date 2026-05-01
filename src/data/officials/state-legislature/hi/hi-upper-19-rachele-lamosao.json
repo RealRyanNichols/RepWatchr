@@ -1,0 +1,61 @@
+{
+  "id": "rachele-lamosao",
+  "name": "Rachele Lamosao",
+  "firstName": "Rachele",
+  "lastName": "Lamosao",
+  "party": "D",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-19",
+  "jurisdiction": "Hawaii Senate",
+  "county": [
+    "Hawaii"
+  ],
+  "termStart": "2025-12-03",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "State Capitol Room 204, 415 S. Beretania St., Honolulu, HI 96813",
+    "phone": "808-586-6970",
+    "email": "senlamosao@capitol.hawaii.gov",
+    "website": "https://www.capitol.hawaii.gov/legislature/memberpage.aspx?member=270",
+    "socialMedia": {
+      "facebook": "https://facebook.com/rachelelamosao?mibextid=lqqt4d",
+      "instagram": "https://instagram.com/replamosao"
+    }
+  },
+  "bio": "Rachele Lamosao serves as State Senator for Hawaii Senate District 19. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "HI",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.capitol.hawaii.gov/legislature/memberpage.aspx?member=270"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/hi/legislature/Rachele-F-Lamosao-19b5116e-d2b7-4f4b-8d7d-f4dfcbcbe1d6.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Rachele_Fernandez_Lamosao"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Rachele_Lamosao"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.capitol.hawaii.gov/legislature/memberpage.aspx?member=270&year=2023"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.capitol.hawaii.gov/legislature/memberpage.aspx?member=270&year=2024"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.capitol.hawaii.gov/members/legislators.aspx"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

@@ -1,0 +1,64 @@
+{
+  "id": "p-k-o-neill",
+  "name": "P.K. O'Neill",
+  "firstName": "P.K.",
+  "lastName": "O'Neill",
+  "photo": "/images/officials/state-legislature/nv/p-k-o-neill.jpg",
+  "photoSourceUrl": "http://leg.state.nv.us/Session/81st2021/legislators/Assembly/Images/ONeill.PhilipPK.285.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "Assemblymember",
+  "district": "HD-40",
+  "jurisdiction": "Nevada Assembly",
+  "county": [
+    "Nevada"
+  ],
+  "termStart": "2020-11-04",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 3153, Nevada Assembly 401 S. Carson St., Carson City, NV 89701",
+    "phone": "775-684-8825",
+    "email": "pk.oneill@asm.state.nv.us",
+    "website": "https://www.leg.state.nv.us/App/Legislator/A/api/81st2021/Legislator?id=285"
+  },
+  "bio": "P.K. O'Neill serves as Assemblymember for Nevada Assembly District 40. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "NV",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.leg.state.nv.us/App/Legislator/A/api/81st2021/Legislator?id=285"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/nv/legislature/Philip-PK-ONeill-a964be66-bd32-48ab-b6c4-9ede22177328.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "http://leg.state.nv.us/Session/81st2021/legislators/Assembly/Images/ONeill.PhilipPK.285.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Philip_O%27Neill"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/P._K._O%27Neill"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.leg.state.nv.us/App/Legislator/A/Assembly/Current"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.leg.state.nv.us/App/Legislator/A/Assembly/Current/40"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/pk-oneill-19036037"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

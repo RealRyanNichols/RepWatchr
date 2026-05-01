@@ -1,0 +1,56 @@
+{
+  "id": "garrett-bascom",
+  "name": "Garrett Bascom",
+  "firstName": "Garrett",
+  "lastName": "Bascom",
+  "photo": "/images/officials/state-legislature/in/garrett-bascom.jpg",
+  "photoSourceUrl": "https://static.wixstatic.com/media/f28da3_b29a2e74679b49238353ddcbc6d86e18~mv2.jpg/v1/crop/x_1193,y_1470,w_2798,h_3119/fill/w_264,h_296,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/ATR_8283.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-68",
+  "jurisdiction": "Indiana House of Representatives",
+  "county": [
+    "Indiana"
+  ],
+  "termStart": "2024-11-06",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "200 W. Washington St., Indianapolis, IN 46204",
+    "phone": "317-232-9600",
+    "email": "h68@iga.in.gov",
+    "website": "https://iga.in.gov/legislative/2026/legislators/legislator_garrett_bascom_1"
+  },
+  "bio": "Garrett Bascom serves as State Representative for Indiana House of Representatives District 68. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "IN",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://iga.in.gov/legislative/2026/legislators/legislator_garrett_bascom_1"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/in/legislature/Garrett-Bascom-552456a4-62fc-4f94-a9f9-1c5dd8ebe57a.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://static.wixstatic.com/media/f28da3_b29a2e74679b49238353ddcbc6d86e18~mv2.jpg/v1/crop/x_1193,y_1470,w_2798,h_3119/fill/w_264,h_296,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/ATR_8283.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Garrett_Bascom"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.indianahouserepublicans.com/members/general/garrett-bascom"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/garrett-bascom-73157482"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

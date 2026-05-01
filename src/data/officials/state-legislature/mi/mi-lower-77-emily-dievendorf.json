@@ -1,0 +1,57 @@
+{
+  "id": "emily-dievendorf",
+  "name": "Emily Dievendorf",
+  "firstName": "Emily",
+  "lastName": "Dievendorf",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-77",
+  "jurisdiction": "Michigan House of Representatives",
+  "county": [
+    "Michigan"
+  ],
+  "termStart": "2023-01-01",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room S-1096, Anderson House Office Building 124 N. Capitol Ave., Lansing, MI 48933",
+    "phone": "517-373-2277",
+    "email": "emilydievendorf@house.mi.gov",
+    "website": "https://housedems.com/Emily-Dievendorf/"
+  },
+  "bio": "Emily Dievendorf serves as State Representative for Michigan House of Representatives District 77. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "MI",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://housedems.com/Emily-Dievendorf/"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/mi/legislature/Emily-Dievendorf-10e1b0b6-8c1d-4f2b-b29a-08770991b1d4.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Emily_Dievendorf"
+    },
+    {
+      "title": "Public source",
+      "url": "https://housedems.com/Emily-Dievendorf"
+    },
+    {
+      "title": "Public source",
+      "url": "https://housedems.com/emily-dievendorf/about"
+    },
+    {
+      "title": "Members List Page",
+      "url": "https://www.house.mi.gov/AllRepresentatives"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/emily-dievendorf-b078738a"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

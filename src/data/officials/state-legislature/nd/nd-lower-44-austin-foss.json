@@ -1,0 +1,59 @@
+{
+  "id": "austin-foss",
+  "name": "Austin Foss",
+  "firstName": "Austin",
+  "lastName": "Foss",
+  "photo": "/images/officials/state-legislature/nd/austin-foss.jpg",
+  "photoSourceUrl": "https://demnpl.com/wp-content/uploads/2024/05/Austin-Foss-1225x1500.png",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-44",
+  "jurisdiction": "North Dakota House of Representatives",
+  "county": [
+    "North Dakota"
+  ],
+  "termStart": "2024-12-01",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "State Capitol 600 E. Boulevard Ave., Bismarck, ND 58505",
+    "email": "afoss@ndlegis.gov",
+    "website": "https://ndlegis.gov/biography/austin-foss"
+  },
+  "bio": "Austin Foss serves as State Representative for North Dakota House of Representatives District 44. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "ND",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://ndlegis.gov/biography/austin-foss"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/nd/legislature/Austin-Foss-7b99ceee-cc27-4b30-96f9-b29845bacdf8.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://demnpl.com/wp-content/uploads/2024/05/Austin-Foss-1225x1500.png"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Austin_Foss"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Austin_Foss"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/216717/austin-foss"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/austin-foss-38599b124"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

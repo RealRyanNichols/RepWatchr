@@ -1,0 +1,65 @@
+{
+  "id": "tami-zawistowski",
+  "name": "Tami Zawistowski",
+  "firstName": "Tami",
+  "lastName": "Zawistowski",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-61",
+  "jurisdiction": "Connecticut House of Representatives",
+  "county": [
+    "Connecticut"
+  ],
+  "termStart": "2014-04-16",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 4200, Legislative Office Building 300 Capitol Ave., Hartford, CT 06106",
+    "phone": "860-240-8700",
+    "email": "tami.zawistowski@housegop.ct.gov",
+    "website": "https://cga.ct.gov/asp/CGABillStatus/CGAMemberBills.asp?dist_code=%27061%27&dist_name=Zawistowski,%20Tami"
+  },
+  "bio": "Tami Zawistowski serves as State Representative for Connecticut House of Representatives District 61. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "CT",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://cga.ct.gov/asp/CGABillStatus/CGAMemberBills.asp?dist_code=%27061%27&dist_name=Zawistowski,%20Tami"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ct/legislature/Tami-Zawistowski-b57c3599-c0b0-4fd3-a48c-2bfd32d95071.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "ftp://ftp.cga.ct.gov/pub/data/LegislatorDatabase.csv"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Tami_Zawistowski"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Tami_Zawistowski"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/141155/tami-zawistowski"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.cthousegop.com/Zawistowski/main"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.cthousegop.com/Zawistowski/main/"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/resourcebooks"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

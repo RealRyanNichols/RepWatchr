@@ -1,0 +1,56 @@
+{
+  "id": "todd-nash",
+  "name": "Todd Nash",
+  "firstName": "Todd",
+  "lastName": "Nash",
+  "photo": "/images/officials/state-legislature/or/todd-nash.jpg",
+  "photoSourceUrl": "https://www.oregonlegislature.gov/nash/PublishingImages/member_photo.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-29",
+  "jurisdiction": "Oregon Senate",
+  "county": [
+    "Oregon"
+  ],
+  "termStart": "2025-01-13",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room S-421, 900 Court St. NE, Salem, OR 97301",
+    "phone": "503-986-1729",
+    "email": "sen.toddnash@oregonlegislature.gov",
+    "website": "https://www.oregonlegislature.gov/nash"
+  },
+  "bio": "Todd Nash serves as State Senator for Oregon Senate District 29. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "OR",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.oregonlegislature.gov/nash"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/or/legislature/Todd-Nash-66c4922d-6b7e-4636-85a4-565e812df7a2.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://www.oregonlegislature.gov/nash/PublishingImages/member_photo.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Todd_Nash"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/215479/todd-nash"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/todd-nash-4109a6b3"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

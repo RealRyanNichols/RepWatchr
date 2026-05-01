@@ -1,0 +1,65 @@
+{
+  "id": "stephen-harding",
+  "name": "Stephen Harding",
+  "firstName": "Stephen",
+  "lastName": "Harding",
+  "party": "R",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-30",
+  "jurisdiction": "Connecticut Senate",
+  "county": [
+    "Connecticut"
+  ],
+  "termStart": "2023-01-04",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 3402, Legislative Office Building 300 Capitol Ave., Hartford, CT 06106",
+    "phone": "860-240-8800",
+    "email": "stephen.harding@cga.ct.gov",
+    "website": "https://cga.ct.gov/asp/CGABillStatus/CGAMemberBills.asp?dist_code=%27107%27&dist_name=Harding,%20Stephen%20G."
+  },
+  "bio": "Stephen Harding serves as State Senator for Connecticut Senate District 30. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "CT",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://cga.ct.gov/asp/CGABillStatus/CGAMemberBills.asp?dist_code=%27107%27&dist_name=Harding,%20Stephen%20G."
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ct/legislature/Stephen-G-Harding-Jr-f0f89d15-9682-4a2e-8096-57700ac5b8dc.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "ftp://ftp.cga.ct.gov/pub/data/LegislatorDatabase.csv"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Stephen_Harding,_Jr."
+    },
+    {
+      "title": "Public source",
+      "url": "https://ctsenaterepublicans.com/about-harding"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ctsenaterepublicans.com/home-harding"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ctsenaterepublicans.com/home-harding/"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Stephen_Harding_(politician)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/stephen-harding-law"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

@@ -1,0 +1,72 @@
+{
+  "id": "marcus-evans",
+  "name": "Marcus Evans",
+  "firstName": "Marcus",
+  "lastName": "Evans",
+  "photo": "/images/officials/state-legislature/il/marcus-evans.jpg",
+  "photoSourceUrl": "https://cdn.ilga.gov/assets/img/members/{BFD8B13A-CD65-452C-8F20-9D32C3A013BF}.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-33",
+  "jurisdiction": "Illinois House of Representatives",
+  "county": [
+    "Illinois"
+  ],
+  "termStart": "2012-04-13",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 268-S, Stratton Office Building, Springfield, IL 62706",
+    "phone": "217-782-8272",
+    "email": "marcus@repevans.com",
+    "website": "https://ilga.gov/house/Rep.asp?GA=101&MemberID=2604"
+  },
+  "bio": "Marcus Evans serves as State Representative for Illinois House of Representatives District 33. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "IL",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://ilga.gov/house/Rep.asp?GA=101&MemberID=2604"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/il/legislature/Marcus-C-Evans-Jr-4e02286b-b560-4837-8b9c-efa2c679e437.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://cdn.ilga.gov/assets/img/members/{BFD8B13A-CD65-452C-8F20-9D32C3A013BF}.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Marcus_Evans"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Marcus_C._Evans_Jr."
+    },
+    {
+      "title": "Public source",
+      "url": "https://ilga.gov/house/default.asp?GA=101"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ilga.gov/house/default.asp?GA=102"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ilga.gov/house/default.asp?GA=103"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ilga.gov/house/Rep.asp?GA=102&MemberID=2843"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ilga.gov/house/Rep.asp?GA=103&MemberID=3058"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

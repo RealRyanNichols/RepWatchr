@@ -1,0 +1,65 @@
+{
+  "id": "irene-haines",
+  "name": "Irene Haines",
+  "firstName": "Irene",
+  "lastName": "Haines",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-34",
+  "jurisdiction": "Connecticut House of Representatives",
+  "county": [
+    "Connecticut"
+  ],
+  "termStart": "2019-01-09",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 4200, Legislative Office Building 300 Capitol Ave., Hartford, CT 06106",
+    "phone": "860-240-8700",
+    "email": "irene.haines@housegop.ct.gov",
+    "website": "https://cga.ct.gov/asp/CGABillStatus/CGAMemberBills.asp?dist_code=%27034%27&dist_name=Haines,%20Irene%20M."
+  },
+  "bio": "Irene Haines serves as State Representative for Connecticut House of Representatives District 34. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "CT",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://cga.ct.gov/asp/CGABillStatus/CGAMemberBills.asp?dist_code=%27034%27&dist_name=Haines,%20Irene%20M."
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ct/legislature/Irene-Haines-02cd12d5-6a88-4834-b9b5-11fb491f6b4b.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "ftp://ftp.cga.ct.gov/pub/data/LegislatorDatabase.csv"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Irene_Haines"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Irene_Haines"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/185688/irene-haines"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.cthousegop.com/haines"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.cthousegop.com/haines/"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/irene-haines-aa85511"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

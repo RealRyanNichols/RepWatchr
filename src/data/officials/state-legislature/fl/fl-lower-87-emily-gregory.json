@@ -1,0 +1,56 @@
+{
+  "id": "emily-gregory",
+  "name": "Emily Gregory",
+  "firstName": "Emily",
+  "lastName": "Gregory",
+  "photo": "/images/officials/state-legislature/fl/emily-gregory.jpg",
+  "photoSourceUrl": "https://www.sun-sentinel.com/wp-content/uploads/2025/10/TFL-L-Emily-Gregory-candidate-01.jpg?w=864",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-87",
+  "jurisdiction": "Florida House of Representatives",
+  "county": [
+    "Florida"
+  ],
+  "termStart": "2026-03-24",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 1101, The Capitol 402 S. Monroe St., Tallahassee, FL 32399",
+    "phone": "850-717-5087",
+    "email": "emily.gregory@flhouse.gov",
+    "website": "https://www.flhouse.gov/Sections/Representatives/details.aspx?MemberId=5069"
+  },
+  "bio": "Emily Gregory serves as State Representative for Florida House of Representatives District 87. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "FL",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.flhouse.gov/Sections/Representatives/details.aspx?MemberId=5069"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/fl/legislature/Emily-Gregory-e2d16b6f-6522-46c6-9817-3d4f4d1b66ce.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://www.sun-sentinel.com/wp-content/uploads/2025/10/TFL-L-Emily-Gregory-candidate-01.jpg?w=864"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Emily_Gregory"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Emily_Gregory_(politician)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/emily-gregory-5923a96"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

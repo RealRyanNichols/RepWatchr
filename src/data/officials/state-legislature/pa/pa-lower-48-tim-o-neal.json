@@ -1,0 +1,68 @@
+{
+  "id": "tim-o-neal",
+  "name": "Tim O'Neal",
+  "firstName": "Tim",
+  "lastName": "O'Neal",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-48",
+  "jurisdiction": "Pennsylvania House of Representatives",
+  "county": [
+    "Pennsylvania"
+  ],
+  "termStart": "2018-06-05",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 428, Main Capitol Building P.O. Box 202048, Harrisburg, PA 17120",
+    "phone": "717-787-3315",
+    "email": "toneal@pahousegop.com",
+    "website": "https://www.legis.state.pa.us/cfdocs/legis/home/member_information/House_bio.cfm?id=1797",
+    "socialMedia": {
+      "facebook": "https://facebook.com/RepTimONeal"
+    }
+  },
+  "bio": "Tim O'Neal serves as State Representative for Pennsylvania House of Representatives District 48. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "PA",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.legis.state.pa.us/cfdocs/legis/home/member_information/House_bio.cfm?id=1797"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/pa/legislature/Timothy-J-ONeal-2c5551d6-71a8-4099-b1a4-a30721320869.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Timothy_O%27Neal"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Tim_O%27Neal_(politician)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.legis.state.pa.us/cfdocs/legis/home/member_information/mbrList.cfm?body=H&sort=alpha"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.legis.state.pa.us/cfdocs/legis/home/member_information/representatives_alpha.cfm"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/timothy-o-neal-6960406"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.palegis.us/house/members/bio/1797/rep-o'neal"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.reponeal.com"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

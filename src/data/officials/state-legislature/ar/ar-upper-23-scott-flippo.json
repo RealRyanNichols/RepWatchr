@@ -1,0 +1,77 @@
+{
+  "id": "scott-flippo",
+  "name": "Scott Flippo",
+  "firstName": "Scott",
+  "lastName": "Flippo",
+  "photo": "/images/officials/state-legislature/ar/scott-flippo.jpg",
+  "photoSourceUrl": "https://www.arkleg.state.ar.us/Content/photos/2023/Senate/508_sm.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-23",
+  "jurisdiction": "Arkansas Senate",
+  "county": [
+    "Arkansas"
+  ],
+  "termStart": "2023-01-09",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "State Capitol Building 500 Woodlane St., Suite 320, Little Rock, AR 72201",
+    "phone": "501-682-2902",
+    "email": "scott.flippo@senate.ar.gov",
+    "website": "https://arkleg.state.ar.us/Legislators/Detail?member=Flippo",
+    "socialMedia": {
+      "x": "https://x.com/ScottFlippo",
+      "twitter": "https://x.com/ScottFlippo",
+      "facebook": "https://facebook.com/scott.flippo.9"
+    }
+  },
+  "bio": "Scott Flippo serves as State Senator for Arkansas Senate District 23. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "AR",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://arkleg.state.ar.us/Legislators/Detail?member=Flippo"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ar/legislature/Scott-Flippo-b61d9a4f-d5d1-43b4-84b2-91cb5741b153.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://www.arkleg.state.ar.us/Content/photos/2023/Senate/508_sm.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Scott_Flippo"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Scott_Flippo"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/150244/scott-flippo"
+    },
+    {
+      "title": "Public source",
+      "url": "https://senate.arkansas.gov/senators/508"
+    },
+    {
+      "title": "Public source",
+      "url": "https://senate.arkansas.gov/senators/scott-flippo"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.arkleg.state.ar.us/Legislators/Detail?member=Flippo"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.arkleg.state.ar.us/Legislators/Detail?member=Flippo&ddBienniumSession=2019%2F2020F"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

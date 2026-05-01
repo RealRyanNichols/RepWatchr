@@ -1,0 +1,60 @@
+{
+  "id": "jonathan-kyle",
+  "name": "Jonathan Kyle",
+  "firstName": "Jonathan",
+  "lastName": "Kyle",
+  "photo": "/images/officials/state-legislature/wv/jonathan-kyle.jpg",
+  "photoSourceUrl": "https://www.wvlegislature.gov/images/members/2025/house/kyle_jonathan.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "Delegate",
+  "district": "HD-66",
+  "jurisdiction": "West Virginia House of Delegates",
+  "county": [
+    "West Virginia"
+  ],
+  "termStart": "2024-12-01",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "State Capitol Room 231E, Complex, Building 1 1900 Kanawha Blvd. East, Charleston, WV 25305",
+    "phone": "304-340-3178",
+    "email": "jonathan.kyle@wvhouse.gov",
+    "website": "https://www.wvlegislature.gov/House/lawmaker.cfm?member=Delegate%20Kyle"
+  },
+  "bio": "Jonathan Kyle serves as Delegate for West Virginia House of Delegates District 66. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "WV",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.wvlegislature.gov/House/lawmaker.cfm?member=Delegate%20Kyle"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/wv/legislature/Jonathan-Kyle-e83c168f-6725-47ea-ac8d-7dbadc6736c7.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://www.wvlegislature.gov/images/members/2025/house/kyle_jonathan.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Jonathan_B._Kyle"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Jonathan_Kyle"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/167421/jonathan-kyle"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/jonathan-kyle-b6a2b72b"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

@@ -1,0 +1,64 @@
+{
+  "id": "aron-maberry",
+  "name": "Aron Maberry",
+  "firstName": "Aron",
+  "lastName": "Maberry",
+  "photo": "/images/officials/state-legislature/tn/aron-maberry.jpg",
+  "photoSourceUrl": "https://www.cmcss.net/wp-content/uploads/elementor/thumbs/L10A9877-2-scaled-qx0h1ahjmd2n4yug9v0d3onejmbo99kwtpl6ybvbxo.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-68",
+  "jurisdiction": "Tennessee House of Representatives",
+  "county": [
+    "Tennessee"
+  ],
+  "termStart": "2024-11-05",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 576, Cordell Hull Building 425 Rep. John Lewis Way North, Nashville, TN 37243",
+    "phone": "615-741-4341",
+    "email": "rep.aron.maberry@capitol.tn.gov",
+    "website": "https://wapp.capitol.tn.gov/apps/legislatorinfo/member.aspx?district=H68"
+  },
+  "bio": "Aron Maberry serves as State Representative for Tennessee House of Representatives District 68. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "TN",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://wapp.capitol.tn.gov/apps/legislatorinfo/member.aspx?district=H68"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/tn/legislature/Aron-Maberry-0b5b90de-2d94-424f-ab28-b434696cb5a9.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://www.cmcss.net/wp-content/uploads/elementor/thumbs/L10A9877-2-scaled-qx0h1ahjmd2n4yug9v0d3onejmbo99kwtpl6ybvbxo.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Aron_Maberry"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Aron_Maberry"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/216641/aron-maberry"
+    },
+    {
+      "title": "Public source",
+      "url": "https://votemaberry.com/about-aron-maberry"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/aronmaberry"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

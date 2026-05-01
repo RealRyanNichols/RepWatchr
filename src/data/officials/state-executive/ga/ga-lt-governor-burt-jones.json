@@ -1,0 +1,64 @@
+{
+  "id": "burt-jones",
+  "name": "Burt Jones",
+  "firstName": "Burt",
+  "lastName": "Jones",
+  "photo": "/images/officials/state-executive/ga/burt-jones.jpg",
+  "photoSourceUrl": "https://ltgov.georgia.gov/sites/ltgov.georgia.gov/files/styles/4_3_720px_x_540px_/public/2022-12/burt-jones.jpeg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "Lieutenant Governor",
+  "district": "Georgia",
+  "jurisdiction": "Georgia statewide public office",
+  "county": [
+    "Georgia"
+  ],
+  "termStart": "2023-01-09",
+  "termEnd": "2027-01-11",
+  "contactInfo": {
+    "office": "240 State Capitol; Atlanta, GA 30334",
+    "phone": "404-656-5030",
+    "email": "burt.jones@senate.ga.gov",
+    "website": "http://www.senate.ga.gov/SENATORS/en-US/member.aspx?Member=805&Session=27"
+  },
+  "bio": "Burt Jones is listed as Lieutenant Governor for Georgia. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "GA",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "http://www.senate.ga.gov/SENATORS/en-US/member.aspx?Member=805&Session=27"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ga/executive/Burt-Jones-ddfab174-3a42-42c0-946e-0ce3169c4d1b.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://ltgov.georgia.gov/sites/ltgov.georgia.gov/files/styles/4_3_720px_x_540px_/public/2022-12/burt-jones.jpeg"
+    },
+    {
+      "title": "Public source",
+      "url": "http://webservices.legis.ga.gov/GGAServices/Members/Service.svc?wsdl"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.legis.ga.gov/members/senate/805?session=1029"
+    },
+    {
+      "title": "Detail page (requires authorization token)",
+      "url": "https://www.legis.ga.gov/api/members/detail/805?session=1029&chamber=2"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ltgov.georgia.gov/"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Burt_Jones"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

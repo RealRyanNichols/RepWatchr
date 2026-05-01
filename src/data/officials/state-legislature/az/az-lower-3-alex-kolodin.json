@@ -1,0 +1,64 @@
+{
+  "id": "alex-kolodin",
+  "name": "Alex Kolodin",
+  "firstName": "Alex",
+  "lastName": "Kolodin",
+  "photo": "/images/officials/state-legislature/az/alex-kolodin.jpg",
+  "photoSourceUrl": "https://s3.amazonaws.com/ballotpedia-api4/files/thumbs/200/300/Alexander_Kolodin.jpeg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-3",
+  "jurisdiction": "Arizona House of Representatives",
+  "county": [
+    "Arizona"
+  ],
+  "termStart": "2023-01-09",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 323, 1700 W. Washington St., Phoenix, AZ 85007",
+    "phone": "602-926-3560",
+    "email": "akolodin@azleg.gov",
+    "website": "https://www.azleg.gov/house-member/?legislature=56&session=127&legislator=2174"
+  },
+  "bio": "Alex Kolodin serves as State Representative for Arizona House of Representatives District 3. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "AZ",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.azleg.gov/house-member/?legislature=56&session=127&legislator=2174"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/az/legislature/Alexander-Kolodin-102ffcb1-3028-401f-b74f-6f45db25e05e.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://s3.amazonaws.com/ballotpedia-api4/files/thumbs/200/300/Alexander_Kolodin.jpeg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Alexander_Kolodin"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/192510/alexander-kolodin"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.azleg.gov/house-member/?legislature=57&session=129&legislator=2318"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.azleg.gov/memberroster/?body=H"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/alexander-kolodin-16535222"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

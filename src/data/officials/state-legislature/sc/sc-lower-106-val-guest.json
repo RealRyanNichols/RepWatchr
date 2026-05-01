@@ -1,0 +1,61 @@
+{
+  "id": "val-guest",
+  "name": "Val Guest",
+  "firstName": "Val",
+  "lastName": "Guest",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-106",
+  "jurisdiction": "South Carolina House of Representatives",
+  "county": [
+    "South Carolina"
+  ],
+  "termStart": "2022-11-14",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 522A, Blatt Building P.O. Box 11867, Columbia, SC 29201",
+    "phone": "803-212-6781",
+    "email": "valguest@schouse.gov",
+    "website": "https://scstatehouse.gov/member.php?code=0730113549"
+  },
+  "bio": "Val Guest serves as State Representative for South Carolina House of Representatives District 106. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "SC",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://scstatehouse.gov/member.php?code=0730113549"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/sc/legislature/Thomas-Duval-Val-Guest-Jr-f8956197-cf73-4a14-927d-c3a0f62cff4c.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Val_Guest"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Thomas_Val_Guest"
+    },
+    {
+      "title": "Public source",
+      "url": "https://grandstrandattorneys.com/attorney/thomas-d-guest"
+    },
+    {
+      "title": "Public source",
+      "url": "https://scstatehouse.gov/member.php?chamber=H"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/thomas-guest-735b09110"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.scstatehouse.gov/member.php?code=0730113549"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

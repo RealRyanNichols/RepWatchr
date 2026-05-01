@@ -1,0 +1,72 @@
+{
+  "id": "clint-anderson",
+  "name": "Clint Anderson",
+  "firstName": "Clint",
+  "lastName": "Anderson",
+  "photo": "/images/officials/state-legislature/wi/clint-anderson.jpg",
+  "photoSourceUrl": "https://docs.legis.wisconsin.gov/2023/legislators/assembly/2559.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "Assemblymember",
+  "district": "HD-45",
+  "jurisdiction": "Wisconsin State Assembly",
+  "county": [
+    "Wisconsin"
+  ],
+  "termStart": "2023-01-03",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "State Capitol Room 17 North, P.O. Box 8952 , 2 E. Main St., Madison, WI 53708",
+    "phone": "608-237-9145",
+    "email": "rep.canderson@legis.wisconsin.gov",
+    "website": "https://docs.legis.wisconsin.gov/2023/legislators/assembly/2559"
+  },
+  "bio": "Clint Anderson serves as Assemblymember for Wisconsin State Assembly District 45. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "WI",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://docs.legis.wisconsin.gov/2023/legislators/assembly/2559"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/wi/legislature/Clinton-Anderson-d670cb97-7d46-4d57-95ec-1a3654a6fe0c.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://docs.legis.wisconsin.gov/2023/legislators/assembly/2559.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Clinton_Anderson"
+    },
+    {
+      "title": "Public source",
+      "url": "https://docs.legis.wisconsin.gov/2023/legislators/assembly"
+    },
+    {
+      "title": "members list page",
+      "url": "https://docs.legis.wisconsin.gov/2023/legislators/assembly/"
+    },
+    {
+      "title": "Public source",
+      "url": "https://docs.legis.wisconsin.gov/2025/legislators/assembly/2706"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Clinton_Anderson_(Wisconsin_politician)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/172044/clinton-anderson"
+    },
+    {
+      "title": "Public source",
+      "url": "https://legis.wisconsin.gov/assembly/45/anderson"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

@@ -1,0 +1,72 @@
+{
+  "id": "bernie-willis",
+  "name": "Bernie Willis",
+  "firstName": "Bernie",
+  "lastName": "Willis",
+  "photo": "/images/officials/state-legislature/oh/bernie-willis.jpg",
+  "photoSourceUrl": "https://www.legislature.ohio.gov/assets/people/bernard-willis/headshots/thumbnails/medium/bernard-willis-february-2023-headshot_medium.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-74",
+  "jurisdiction": "Ohio House of Representatives",
+  "county": [
+    "Ohio"
+  ],
+  "termStart": "2023-01-01",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "77 S. High St. 13th Floor, Columbus, OH 43215",
+    "phone": "614-466-2038",
+    "email": "rep74@ohiohouse.gov",
+    "website": "https://www.ohiohouse.gov/members/bernard-willis"
+  },
+  "bio": "Bernie Willis serves as State Representative for Ohio House of Representatives District 74. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "OH",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.ohiohouse.gov/members/bernard-willis"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/oh/legislature/Bernard-Willis-550986e6-b595-4fa8-9424-8e09327cf060.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://www.legislature.ohio.gov/assets/people/bernard-willis/headshots/thumbnails/medium/bernard-willis-february-2023-headshot_medium.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Bernard_Willis"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/209726/bernard-willis"
+    },
+    {
+      "title": "member details page",
+      "url": "https://ohiohouse.gov/members/bernard-willis"
+    },
+    {
+      "title": "Public source",
+      "url": "https://willisforohio.nationbuilder.com/about_bernie"
+    },
+    {
+      "title": "member list page",
+      "url": "https://www.legislature.ohio.gov/legislators/house-directory"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/bernie-willis-754b04257"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/colonel-bernie-bunyan-willis-2a57b538"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

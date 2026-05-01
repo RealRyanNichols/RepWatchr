@@ -1,0 +1,47 @@
+{
+  "id": "kevin-stitt",
+  "name": "Kevin Stitt",
+  "firstName": "Kevin",
+  "lastName": "Stitt",
+  "photo": "/images/officials/state-executive/ok/kevin-stitt.jpg",
+  "photoSourceUrl": "https://oklahoma.gov/content/dam/ok/en/governor/images/gov-stitt-official-photo.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "Governor",
+  "district": "Oklahoma",
+  "jurisdiction": "Oklahoma statewide public office",
+  "county": [
+    "Oklahoma"
+  ],
+  "termStart": "2019-01-14",
+  "termEnd": "2027-01-11",
+  "contactInfo": {
+    "office": "Capitol Building; 2300 N. Lincoln Blvd., Suite 212; Oklahoma City, OK 73105",
+    "phone": "405-521-2342",
+    "website": "https://oklahoma.gov/governor.html",
+    "socialMedia": {
+      "x": "https://x.com/GovStitt",
+      "twitter": "https://x.com/GovStitt"
+    }
+  },
+  "bio": "Kevin Stitt is listed as Governor for Oklahoma. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "OK",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://oklahoma.gov/governor.html"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ok/executive/Kevin-Stitt-b4b14ac3-5ee6-4404-a4fc-ec6ea805ac90.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://oklahoma.gov/content/dam/ok/en/governor/images/gov-stitt-official-photo.jpg"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

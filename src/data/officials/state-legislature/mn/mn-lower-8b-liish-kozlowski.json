@@ -1,0 +1,64 @@
+{
+  "id": "liish-kozlowski",
+  "name": "Liish Kozlowski",
+  "firstName": "Liish",
+  "lastName": "Kozlowski",
+  "photo": "/images/officials/state-legislature/mn/liish-kozlowski.jpg",
+  "photoSourceUrl": "https://www.house.mn.gov/hinfo/memberimgls94/08B.gif?v=112221",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-8B",
+  "jurisdiction": "Minnesota House of Representatives",
+  "county": [
+    "Minnesota"
+  ],
+  "termStart": "2023-01-03",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Centennial Office Building 658 Cedar St., Fifth Floor, St. Paul, MN 55155",
+    "phone": "651-296-2228",
+    "email": "rep.alicia.kozlowski@house.mn.gov",
+    "website": "https://www.house.mn.gov/members/profile/15595"
+  },
+  "bio": "Liish Kozlowski serves as State Representative for Minnesota House of Representatives District 8B. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "MN",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.house.mn.gov/members/profile/15595"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/mn/legislature/Alicia-Kozlowski-5604b347-d9b5-40b6-844d-8bc5246283d3.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://www.house.mn.gov/hinfo/memberimgls94/08B.gif?v=112221"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Alicia_Kozlowski"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Alicia_Kozlowski"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/207774/liish-kozlowski"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.house.leg.state.mn.us/members/hmem.asp"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/aliciakozlowski"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

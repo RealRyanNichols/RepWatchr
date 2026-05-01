@@ -1,0 +1,72 @@
+{
+  "id": "christine-barber",
+  "name": "Christine Barber",
+  "firstName": "Christine",
+  "lastName": "Barber",
+  "photo": "/images/officials/state-legislature/ma/christine-barber.jpg",
+  "photoSourceUrl": "https://malegislature.gov/Legislators/Profile/170/CPB2.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-34th Middlesex",
+  "jurisdiction": "Massachusetts House of Representatives",
+  "county": [
+    "Massachusetts"
+  ],
+  "termStart": "2015-01-07",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 167, State House 24 Beacon St., Boston, MA 02133",
+    "phone": "617-722-2230",
+    "email": "christine.barber@mahouse.gov",
+    "website": "https://malegislature.gov/Legislators/Profile/CPB2"
+  },
+  "bio": "Christine Barber serves as State Representative for Massachusetts House of Representatives District 34th Middlesex. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "MA",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://malegislature.gov/Legislators/Profile/CPB2"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ma/legislature/Christine-P-Barber-35396516-6096-4336-ab74-80d6d8e53bcd.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://malegislature.gov/Legislators/Profile/170/CPB2.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Christine_Barber"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Christine_Barber"
+    },
+    {
+      "title": "Public source",
+      "url": "https://malegislature.gov/api/GeneralCourts/192/LegislativeMembers"
+    },
+    {
+      "title": "Public source",
+      "url": "https://malegislature.gov/api/GeneralCourts/192/LegislativeMembers/"
+    },
+    {
+      "title": "Public source",
+      "url": "https://malegislature.gov/api/GeneralCourts/192/LegislativeMembers/CPB2"
+    },
+    {
+      "title": "Public source",
+      "url": "https://malegislature.gov/api/GeneralCourts/193/LegislativeMembers"
+    },
+    {
+      "title": "Public source",
+      "url": "https://malegislature.gov/api/GeneralCourts/193/LegislativeMembers/"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

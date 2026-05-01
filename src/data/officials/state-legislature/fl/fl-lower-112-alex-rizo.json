@@ -1,0 +1,57 @@
+{
+  "id": "alex-rizo",
+  "name": "Alex Rizo",
+  "firstName": "Alex",
+  "lastName": "Rizo",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-112",
+  "jurisdiction": "Florida House of Representatives",
+  "county": [
+    "Florida"
+  ],
+  "termStart": "2022-11-08",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 313, House Office Building 402 S. Monroe St., Tallahassee, FL 32399",
+    "phone": "850-717-5112",
+    "email": "alex.rizo@flhouse.gov",
+    "website": "https://myfloridahouse.gov/Sections/Representatives/details.aspx?MemberId=4796&LegislativeTermId=90"
+  },
+  "bio": "Alex Rizo serves as State Representative for Florida House of Representatives District 112. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "FL",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://myfloridahouse.gov/Sections/Representatives/details.aspx?MemberId=4796&LegislativeTermId=90"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/fl/legislature/Alex-Rizo-b2fce1a8-4ba6-483b-a534-fa48cc43ee7f.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Alex_Rizo"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.flhouse.gov/Sections/Representatives/custom/details.aspx?MemberId=4796"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.flhouse.gov/Sections/Representatives/details.aspx?MemberId=4796"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/alex-rizo-jr-b260b761"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.myfloridahouse.gov/Sections/Representatives/details.aspx?MemberId=4796"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

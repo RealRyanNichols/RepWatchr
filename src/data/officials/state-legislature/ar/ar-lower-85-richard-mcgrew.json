@@ -1,0 +1,75 @@
+{
+  "id": "richard-mcgrew",
+  "name": "Richard McGrew",
+  "firstName": "Richard",
+  "lastName": "McGrew",
+  "photo": "/images/officials/state-legislature/ar/richard-mcgrew.jpg",
+  "photoSourceUrl": "https://www.arkleg.state.ar.us/Content/photos/2023/House/578_sm.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-85",
+  "jurisdiction": "Arkansas House of Representatives",
+  "county": [
+    "Arkansas"
+  ],
+  "termStart": "2023-01-09",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "State Capitol Arkansas  500 Woodlane St., Suite 350, Little Rock, AR 72201",
+    "phone": "501-682-6211",
+    "email": "mcgrewrep22@gmail.com",
+    "website": "https://arkleg.state.ar.us/Legislators/Detail?member=McGrew",
+    "socialMedia": {
+      "facebook": "https://facebook.com/richard.mcgrew.94"
+    }
+  },
+  "bio": "Richard McGrew serves as State Representative for Arkansas House of Representatives District 85. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "AR",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://arkleg.state.ar.us/Legislators/Detail?member=McGrew"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ar/legislature/Richard-McGrew-7f9f1a8b-47a7-456d-bc5d-1e6ec32e8572.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://www.arkleg.state.ar.us/Content/photos/2023/House/578_sm.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Richard_McGrew"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Richard_McGrew"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/187741/richard-mcgrew"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.arkansashouse.org/district/85"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.arkleg.state.ar.us/Legislators/Detail?member=McGrew"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.arkleg.state.ar.us/Legislators/Detail?member=McGrew&ddBienniumSession=2019%2F2020F"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.arkleg.state.ar.us/Legislators/Detail?member=McGrew&ddBienniumSession=2021%2F2021R"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

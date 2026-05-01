@@ -1,0 +1,56 @@
+{
+  "id": "del-taylor",
+  "name": "Del Taylor",
+  "firstName": "Del",
+  "lastName": "Taylor",
+  "photo": "/images/officials/state-legislature/mo/del-taylor.jpg",
+  "photoSourceUrl": "https://house.mo.gov/MemberPhoto.aspx?id=2400",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-84",
+  "jurisdiction": "Missouri House of Representatives",
+  "county": [
+    "Missouri"
+  ],
+  "termStart": "2023-01-04",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 130-DA, 201 W. Capitol Ave., Jefferson City, MO 65101",
+    "phone": "573-751-2198",
+    "email": "del.taylor@house.mo.gov",
+    "website": "https://house.mo.gov/MemberDetails.aspx?district=084"
+  },
+  "bio": "Del Taylor serves as State Representative for Missouri House of Representatives District 84. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "MO",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://house.mo.gov/MemberDetails.aspx?district=084"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/mo/legislature/Del-Taylor-4a6e4da5-0cbd-4033-89a3-5bd749b37108.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://house.mo.gov/MemberPhoto.aspx?id=2400"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Del_Taylor"
+    },
+    {
+      "title": "Public source",
+      "url": "https://house.mo.gov/MemberDetails.aspx?year=2023&code=R&district=084"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/delbret-taylor-27b02152"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

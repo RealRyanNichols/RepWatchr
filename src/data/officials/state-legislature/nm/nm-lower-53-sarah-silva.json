@@ -1,0 +1,52 @@
+{
+  "id": "sarah-silva",
+  "name": "Sarah Silva",
+  "firstName": "Sarah",
+  "lastName": "Silva",
+  "photo": "/images/officials/state-legislature/nm/sarah-silva.jpg",
+  "photoSourceUrl": "https://images.squarespace-cdn.com/content/v1/66d0e643284c6d63d067a073/8916e12c-d13c-49fb-810a-2c7ffb58d300/SilvaSarah.JPG",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-53",
+  "jurisdiction": "New Mexico House of Representatives",
+  "county": [
+    "New Mexico"
+  ],
+  "termStart": "2025-01-01",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "State Capitol Room 413C, New Mexico  490 Old Santa Fe Trail, Santa Fe, NM 87501",
+    "phone": "505-986-4436",
+    "email": "sarah.silva@nmlegis.gov",
+    "website": "https://www.nmlegis.gov/Members/Legislator?SponCode=HSISA"
+  },
+  "bio": "Sarah Silva serves as State Representative for New Mexico House of Representatives District 53. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "NM",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.nmlegis.gov/Members/Legislator?SponCode=HSISA"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/nm/legislature/Sarah-Silva-a9377979-b109-4e11-b338-89b203c04527.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://images.squarespace-cdn.com/content/v1/66d0e643284c6d63d067a073/8916e12c-d13c-49fb-810a-2c7ffb58d300/SilvaSarah.JPG"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Sarah_Silva"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/sarah-silva-36369527"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

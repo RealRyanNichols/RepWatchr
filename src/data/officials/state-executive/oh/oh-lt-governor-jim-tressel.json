@@ -1,0 +1,40 @@
+{
+  "id": "jim-tressel",
+  "name": "Jim Tressel",
+  "firstName": "Jim",
+  "lastName": "Tressel",
+  "party": "R",
+  "level": "state",
+  "position": "Lieutenant Governor",
+  "district": "Ohio",
+  "jurisdiction": "Ohio statewide public office",
+  "county": [
+    "Ohio"
+  ],
+  "termStart": "2025-02-14",
+  "termEnd": "2027-01-11",
+  "contactInfo": {
+    "office": "Riffe Center, 30th Floor, 77 South High Street; Columbus, OH 43215-6117",
+    "phone": "614-644-4357",
+    "website": "https://governor.ohio.gov/administration/lt-governor"
+  },
+  "bio": "Jim Tressel is listed as Lieutenant Governor for Ohio. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "OH",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://governor.ohio.gov/administration/lt-governor"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/oh/executive/Jim-Tressel-6aef5093-5720-48fd-9997-e4f5451014b4.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Jim_Tressel"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

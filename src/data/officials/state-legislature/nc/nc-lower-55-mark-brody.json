@@ -1,0 +1,60 @@
+{
+  "id": "mark-brody",
+  "name": "Mark Brody",
+  "firstName": "Mark",
+  "lastName": "Brody",
+  "photo": "/images/officials/state-legislature/nc/mark-brody.jpg",
+  "photoSourceUrl": "https://www.ncleg.gov/Members/MemberImage/H/663/Low",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-55",
+  "jurisdiction": "North Carolina House of Representatives",
+  "county": [
+    "North Carolina"
+  ],
+  "termStart": "2013-01-01",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 419A, Legislative Office Building 300 N. Salisbury St., Raleigh, NC 27603",
+    "phone": "919-715-3029",
+    "email": "mark.brody@ncleg.gov",
+    "website": "https://www.ncleg.gov/Members/Biography/H/663"
+  },
+  "bio": "Mark Brody serves as State Representative for North Carolina House of Representatives District 55. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "NC",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.ncleg.gov/Members/Biography/H/663"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/nc/legislature/Mark-Brody-cc238a7c-3222-4ac2-8d4d-3884dd342a5f.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://www.ncleg.gov/Members/MemberImage/H/663/Low"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Mark_Brody"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Mark_Brody"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/108503/mark-brody"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.ncleg.gov/Members/MemberTable/H"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

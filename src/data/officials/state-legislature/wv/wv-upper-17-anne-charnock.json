@@ -1,0 +1,56 @@
+{
+  "id": "anne-charnock",
+  "name": "Anne Charnock",
+  "firstName": "Anne",
+  "lastName": "Charnock",
+  "photo": "/images/officials/state-legislature/wv/anne-charnock.jpg",
+  "photoSourceUrl": "https://www.wvlegislature.gov/images/members/2025/senate/charnock_anne.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-17",
+  "jurisdiction": "West Virginia Senate",
+  "county": [
+    "West Virginia"
+  ],
+  "termStart": "2025-02-06",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "State Capitol Room 203W, Complex, Building 1 1900 Kanawha Blvd. East, Charleston, WV 25305",
+    "phone": "304-357-7854",
+    "email": "anne.charnock@wvsenate.gov",
+    "website": "https://www.wvlegislature.gov/Senate1/lawmaker.cfm?member=Senator%20Charnock"
+  },
+  "bio": "Anne Charnock serves as State Senator for West Virginia Senate District 17. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "WV",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.wvlegislature.gov/Senate1/lawmaker.cfm?member=Senator%20Charnock"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/wv/legislature/Anne-Charnock-37bf9de9-84b5-4983-8742-a5c3eeeca64a.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://www.wvlegislature.gov/images/members/2025/senate/charnock_anne.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Anne_Charnock"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Anne_Charnock_(politician)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/220790/anne-charnock"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

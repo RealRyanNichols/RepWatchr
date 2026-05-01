@@ -1,0 +1,48 @@
+{
+  "id": "stephanie-simacek",
+  "name": "Stephanie Simacek",
+  "firstName": "Stephanie",
+  "lastName": "Simacek",
+  "photo": "/images/officials/state-legislature/az/stephanie-simacek.jpg",
+  "photoSourceUrl": "https://azleg.gov/alisImages/MemberPhotos/57leg/House/SIMACEK.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-2",
+  "jurisdiction": "Arizona House of Representatives",
+  "county": [
+    "Arizona"
+  ],
+  "termStart": "2025-01-13",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 120, 1700 W. Washington St., Phoenix, AZ 85007",
+    "phone": "602-926-3083",
+    "email": "ssimacek@azleg.gov",
+    "website": "https://www.azleg.gov/house-member/?legislature=57&session=129&legislator=2353"
+  },
+  "bio": "Stephanie Simacek serves as State Representative for Arizona House of Representatives District 2. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "AZ",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.azleg.gov/house-member/?legislature=57&session=129&legislator=2353"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/az/legislature/Stephanie-Simacek-bf406953-ad2b-43f7-95ea-3af060525c90.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://azleg.gov/alisImages/MemberPhotos/57leg/House/SIMACEK.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Stephanie_Simacek"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

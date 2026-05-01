@@ -1,0 +1,61 @@
+{
+  "id": "jose-serrano",
+  "name": "Jose Serrano",
+  "firstName": "Jose",
+  "lastName": "Serrano",
+  "party": "D",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-29",
+  "jurisdiction": "New York Senate",
+  "county": [
+    "New York"
+  ],
+  "termStart": "2013-01-01",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 418, Capitol Building 172 State St., Albany, NY 12247",
+    "phone": "518-455-2795",
+    "email": "serrano@nysenate.gov",
+    "website": "https://www.nysenate.gov/senators-committees",
+    "socialMedia": {
+      "x": "https://x.com/SenatorSerrano",
+      "twitter": "https://x.com/SenatorSerrano"
+    }
+  },
+  "bio": "Jose Serrano serves as State Senator for New York Senate District 29. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "NY",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.nysenate.gov/senators-committees"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ny/legislature/Jos-M-Serrano-31d058e9-909a-46b5-8e66-21a3e86b5a56.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Jose_M._Serrano"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Jos%C3%A9_M._Serrano"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/45014/jose-serrano"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.nysenate.gov/senators/jos%C3%A9-m-serrano/contact"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.nysenate.gov/senators/jose-m-serrano"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

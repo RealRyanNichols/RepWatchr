@@ -1,0 +1,60 @@
+{
+  "id": "spencer-kern",
+  "name": "Spencer Kern",
+  "firstName": "Spencer",
+  "lastName": "Kern",
+  "photo": "/images/officials/state-legislature/ok/spencer-kern.jpg",
+  "photoSourceUrl": "https://static.votesmart.org/static/canphoto/216441.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-31",
+  "jurisdiction": "Oklahoma Senate",
+  "county": [
+    "Oklahoma"
+  ],
+  "termStart": "2024-11-20",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 432, 2300 N. Lincoln Blvd., Oklahoma City, OK 73105",
+    "phone": "405-521-5563",
+    "email": "spencer.kern@oksenate.gov",
+    "website": "https://oksenate.gov/senators/spencer-kern"
+  },
+  "bio": "Spencer Kern serves as State Senator for Oklahoma Senate District 31. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "OK",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://oksenate.gov/senators/spencer-kern"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ok/legislature/Spencer-Kern-4d4f5043-830c-498d-806c-5b1e9eb183df.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://static.votesmart.org/static/canphoto/216441.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Spencer_Kern"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Spencer_Kern"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/216441/spencer-kern"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/spencer-kern-1451a137"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

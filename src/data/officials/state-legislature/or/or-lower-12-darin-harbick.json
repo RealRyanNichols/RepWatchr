@@ -1,0 +1,56 @@
+{
+  "id": "darin-harbick",
+  "name": "Darin Harbick",
+  "firstName": "Darin",
+  "lastName": "Harbick",
+  "photo": "/images/officials/state-legislature/or/darin-harbick.jpg",
+  "photoSourceUrl": "https://s3.amazonaws.com/ballotpedia-api4/files/thumbs/200/300/DarinHarbick.png",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-12",
+  "jurisdiction": "Oregon House of Representatives",
+  "county": [
+    "Oregon"
+  ],
+  "termStart": "2025-01-13",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room H-376, 900 Court St. NE, Salem, OR 97301",
+    "phone": "503-986-1412",
+    "email": "rep.darinharbick@oregonlegislature.gov",
+    "website": "https://www.oregonlegislature.gov/harbick"
+  },
+  "bio": "Darin Harbick serves as State Representative for Oregon House of Representatives District 12. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "OR",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.oregonlegislature.gov/harbick"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/or/legislature/Darin-Harbick-69c394b0-4299-4776-82aa-f847907f5308.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://s3.amazonaws.com/ballotpedia-api4/files/thumbs/200/300/DarinHarbick.png"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Darin_Harbick"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/darin-harbick-8a772184"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.oregonlegislature.gov/harbick/Pages/biography.aspx"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

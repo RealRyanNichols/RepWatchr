@@ -1,0 +1,49 @@
+{
+  "id": "pam-guzzone",
+  "name": "Pam Guzzone",
+  "firstName": "Pam",
+  "lastName": "Guzzone",
+  "party": "D",
+  "level": "state",
+  "position": "Delegate",
+  "district": "HD-13",
+  "jurisdiction": "Maryland House of Delegates",
+  "county": [
+    "Maryland"
+  ],
+  "termStart": "2023-01-11",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 216, Lowe House Office Building 6 Bladen St., Annapolis, MD 21401",
+    "phone": "410-841-3083",
+    "email": "pam.guzzone@house.maryland.gov",
+    "website": "https://mgaleg.maryland.gov/mgawebsite/Members/Details/guzzone01"
+  },
+  "bio": "Pam Guzzone serves as Delegate for Maryland House of Delegates District 13. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "MD",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://mgaleg.maryland.gov/mgawebsite/Members/Details/guzzone01"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/md/legislature/Pam-Lanman-Guzzone-ba217836-74e4-49ec-8eac-58d21e792e63.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Pam_Lanman_Guzzone"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Pam_Guzzone"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/pam-lanman-guzzone-3b1a77112"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

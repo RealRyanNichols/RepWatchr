@@ -1,0 +1,72 @@
+{
+  "id": "elizabeth-bennett-parker",
+  "name": "Elizabeth Bennett-Parker",
+  "firstName": "Elizabeth",
+  "lastName": "Bennett-Parker",
+  "photo": "/images/officials/state-legislature/va/elizabeth-bennett-parker.jpg",
+  "photoSourceUrl": "https://memdata.virginiageneralassembly.gov/images/display_image/H0334",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-39",
+  "jurisdiction": "Virginia Senate",
+  "county": [
+    "Virginia"
+  ],
+  "termStart": "2026-02-18",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 611, P.O. Box 396 General Assembly Building, 201 N. 9th St., Richmond, VA 23218",
+    "phone": "804-698-7539",
+    "email": "senatorbennett-parker@senate.virginia.gov",
+    "website": "https://house.vga.virginia.gov/members/H0334"
+  },
+  "bio": "Elizabeth Bennett-Parker serves as State Senator for Virginia Senate District 39. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "VA",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://house.vga.virginia.gov/members/H0334"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/va/legislature/Elizabeth-B-Bennett-Parker-c3b0c2fc-c7bf-45f8-8ee3-50d5a57bad08.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://memdata.virginiageneralassembly.gov/images/display_image/H0334"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Elizabeth_Bennett-Parker"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Elizabeth_Bennett-Parker"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/195975/elizabeth-bennett-parker"
+    },
+    {
+      "title": "Public source",
+      "url": "https://lis.virginia.gov/cgi-bin/legp604.exe?221+mbr+H334"
+    },
+    {
+      "title": "Public source",
+      "url": "https://lis.virginia.gov/cgi-bin/legp604.exe?241+mbr+H334"
+    },
+    {
+      "title": "Public source",
+      "url": "https://senate.virginia.gov/Senator/memberpage.php?id=S135"
+    },
+    {
+      "title": "Public source",
+      "url": "https://virginiageneralassembly.gov/house/members/members.php?id=H0334"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

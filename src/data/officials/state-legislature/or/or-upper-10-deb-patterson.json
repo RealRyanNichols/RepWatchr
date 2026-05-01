@@ -1,0 +1,61 @@
+{
+  "id": "deb-patterson",
+  "name": "Deb Patterson",
+  "firstName": "Deb",
+  "lastName": "Patterson",
+  "party": "D",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-10",
+  "jurisdiction": "Oregon Senate",
+  "county": [
+    "Oregon"
+  ],
+  "termStart": "2021-01-11",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room S-411, 900 Court St. NE, Salem, OR 97301",
+    "phone": "503-986-1710",
+    "email": "sen.debpatterson@oregonlegislature.gov",
+    "website": "https://www.oregonlegislature.gov/patterson"
+  },
+  "bio": "Deb Patterson serves as State Senator for Oregon Senate District 10. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "OR",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.oregonlegislature.gov/patterson"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/or/legislature/Deb-Patterson-6c867cbf-9d0b-4dd8-9537-55e834a42dc4.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://api.oregonlegislature.gov/odata/odataservice.svc/LegislativeSessions('2022R1')/Legislators"
+    },
+    {
+      "title": "Public source",
+      "url": "https://api.oregonlegislature.gov/odata/odataservice.svc/LegislativeSessions('2023R1')/Legislators"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Deb_Patterson"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Deb_Patterson_(politician)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/deb-patterson-49009162"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.oregonlegislature.gov/Patterson"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

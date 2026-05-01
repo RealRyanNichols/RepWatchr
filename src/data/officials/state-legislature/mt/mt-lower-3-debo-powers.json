@@ -1,0 +1,61 @@
+{
+  "id": "debo-powers",
+  "name": "Debo Powers",
+  "firstName": "Debo",
+  "lastName": "Powers",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-3",
+  "jurisdiction": "Montana House of Representatives",
+  "county": [
+    "Montana"
+  ],
+  "termStart": "2025-01-06",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Capitol Building, 1301 E. 6th Ave. P.O. Box 200400, Helena, MT 59620",
+    "phone": "406-444-4800",
+    "email": "debo.powers@legmt.gov",
+    "website": "https://leg.mt.gov/legislator-information/roster/individual/6334"
+  },
+  "bio": "Debo Powers serves as State Representative for Montana House of Representatives District 3. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "MT",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://leg.mt.gov/legislator-information/roster/individual/6334"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/mt/legislature/Debo-Powers-cf8ab221-3027-4ab8-81bc-66bc28e342fb.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Debo_Powers"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Debo_Powers"
+    },
+    {
+      "title": "Public source",
+      "url": "https://leg.mt.gov/legislator-information/?session_select=113"
+    },
+    {
+      "title": "Public source",
+      "url": "https://legislators.legmt.gov/#/legislator/236"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.legmt.gov/legislators/1423"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/debo-powers-99265b36"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

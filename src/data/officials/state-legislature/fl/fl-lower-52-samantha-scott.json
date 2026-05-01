@@ -1,0 +1,52 @@
+{
+  "id": "samantha-scott",
+  "name": "Samantha Scott",
+  "firstName": "Samantha",
+  "lastName": "Scott",
+  "photo": "/images/officials/state-legislature/fl/samantha-scott.jpg",
+  "photoSourceUrl": "https://lakeandsumterstyle.com/wp-content/uploads/2025/09/548330102_10238294438960625_7665889559183237490_n-e1758302240695-1200x730.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-52",
+  "jurisdiction": "Florida House of Representatives",
+  "county": [
+    "Florida"
+  ],
+  "termStart": "2026-03-24",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 1401, The Capitol 402 S. Monroe St., Tallahassee, FL 32399",
+    "phone": "850-717-5052",
+    "email": "samantha.scott@flhouse.gov",
+    "website": "https://www.flhouse.gov/Sections/Representatives/details.aspx?MemberId=5070"
+  },
+  "bio": "Samantha Scott serves as State Representative for Florida House of Representatives District 52. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "FL",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.flhouse.gov/Sections/Representatives/details.aspx?MemberId=5070"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/fl/legislature/Samantha-Scott-6e6024d7-d66b-437d-b4a7-1e96bc365d5d.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://lakeandsumterstyle.com/wp-content/uploads/2025/09/548330102_10238294438960625_7665889559183237490_n-e1758302240695-1200x730.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Samantha_Scott"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Samantha_Scott_(politician)"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

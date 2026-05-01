@@ -1,0 +1,55 @@
+{
+  "id": "otha-williams",
+  "name": "Otha Williams",
+  "firstName": "Otha",
+  "lastName": "Williams",
+  "photo": "/images/officials/state-legislature/ms/otha-williams.jpg",
+  "photoSourceUrl": "https://magnoliatribune.com/wp-content/uploads/2025/11/Otha-Williams-1024x1024.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-26",
+  "jurisdiction": "Mississippi House of Representatives",
+  "county": [
+    "Mississippi"
+  ],
+  "termStart": "2025-12-10",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "State Capitol 400 High St., Jackson, MS 39201",
+    "email": "owilliams@house.ms.gov",
+    "website": "https://billstatus.ls.state.ms.us/members/house/williams.xml"
+  },
+  "bio": "Otha Williams serves as State Representative for Mississippi House of Representatives District 26. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "MS",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://billstatus.ls.state.ms.us/members/house/williams.xml"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ms/legislature/Otha-Williams-c730cb69-8d30-4676-afe8-0fb513f3845f.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://magnoliatribune.com/wp-content/uploads/2025/11/Otha-Williams-1024x1024.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Otha_Williams_III"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Otha_Williams"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/otha-williams-617531b3"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

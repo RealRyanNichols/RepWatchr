@@ -1,0 +1,75 @@
+{
+  "id": "mark-johnson",
+  "name": "Mark Johnson",
+  "firstName": "Mark",
+  "lastName": "Johnson",
+  "photo": "/images/officials/state-legislature/ar/mark-johnson.jpg",
+  "photoSourceUrl": "https://www.arkleg.state.ar.us/Content/photos/2023/Senate/574_sm.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-17",
+  "jurisdiction": "Arkansas Senate",
+  "county": [
+    "Arkansas"
+  ],
+  "termStart": "2023-01-09",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "State Capitol Building 500 Woodlane St., Suite 320, Little Rock, AR 72201",
+    "phone": "501-682-2902",
+    "email": "mark.johnson@senate.ar.gov",
+    "website": "https://arkleg.state.ar.us/Legislators/Detail?member=M.+Johnson",
+    "socialMedia": {
+      "facebook": "https://facebook.com/markjohnsonforarkansas"
+    }
+  },
+  "bio": "Mark Johnson serves as State Senator for Arkansas Senate District 17. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "AR",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://arkleg.state.ar.us/Legislators/Detail?member=M.+Johnson"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ar/legislature/Mark-Johnson-927a87ee-64b3-49b8-8794-9b0857581d1c.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://www.arkleg.state.ar.us/Content/photos/2023/Senate/574_sm.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Mark_Johnson_(Arkansas)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Mark_Johnson_(Arkansas_politician)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/178604/mark-johnson"
+    },
+    {
+      "title": "Public source",
+      "url": "https://senate.arkansas.gov/senators/574"
+    },
+    {
+      "title": "Public source",
+      "url": "https://senate.arkansas.gov/senators/mark-johnson"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.arkleg.state.ar.us/Legislators/Detail?member=M.+Johnson"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.arkleg.state.ar.us/Legislators/Detail?member=M.+Johnson&ddBienniumSession=2019%2F2020F"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

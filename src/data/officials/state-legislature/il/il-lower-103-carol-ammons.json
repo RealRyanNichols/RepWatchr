@@ -1,0 +1,72 @@
+{
+  "id": "carol-ammons",
+  "name": "Carol Ammons",
+  "firstName": "Carol",
+  "lastName": "Ammons",
+  "photo": "/images/officials/state-legislature/il/carol-ammons.jpg",
+  "photoSourceUrl": "https://cdn.ilga.gov/assets/img/members/{BD4B7A5C-6D24-4E82-9C18-D5A0F3C42F6C}.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-103",
+  "jurisdiction": "Illinois House of Representatives",
+  "county": [
+    "Illinois"
+  ],
+  "termStart": "2015-01-14",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 243-E, Stratton Office Building, Springfield, IL 62706",
+    "phone": "217-558-1009",
+    "email": "assistance@staterepcarolammons.com",
+    "website": "https://ilga.gov/house/Rep.asp?GA=101&MemberID=2651"
+  },
+  "bio": "Carol Ammons serves as State Representative for Illinois House of Representatives District 103. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "IL",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://ilga.gov/house/Rep.asp?GA=101&MemberID=2651"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/il/legislature/Carol-Ammons-bc409660-f360-4624-914f-ba785bbf9b7b.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://cdn.ilga.gov/assets/img/members/{BD4B7A5C-6D24-4E82-9C18-D5A0F3C42F6C}.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Carol_Ammons"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Carol_Ammons"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ilga.gov/house/default.asp?GA=101"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ilga.gov/house/default.asp?GA=102"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ilga.gov/house/default.asp?GA=103"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ilga.gov/house/Rep.asp?GA=102&MemberID=2877"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ilga.gov/house/Rep.asp?GA=103&MemberID=3086"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

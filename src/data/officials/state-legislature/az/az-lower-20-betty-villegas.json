@@ -1,0 +1,68 @@
+{
+  "id": "betty-villegas",
+  "name": "Betty Villegas",
+  "firstName": "Betty",
+  "lastName": "Villegas",
+  "photo": "/images/officials/state-legislature/az/betty-villegas.jpg",
+  "photoSourceUrl": "https://upload.wikimedia.org/wikipedia/commons/3/36/Betty_Villegas_by_Gage_Skidmore.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-20",
+  "jurisdiction": "Arizona House of Representatives",
+  "county": [
+    "Arizona"
+  ],
+  "termStart": "2023-07-31",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 324, 1700 W. Washington St., Phoenix, AZ 85007",
+    "phone": "602-926-3027",
+    "email": "bvillegas@azleg.gov",
+    "website": "https://www.azleg.gov/house-member/?legislature=56&session=127&legislator=2274"
+  },
+  "bio": "Betty Villegas serves as State Representative for Arizona House of Representatives District 20. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "AZ",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.azleg.gov/house-member/?legislature=56&session=127&legislator=2274"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/az/legislature/Betty-J-Villegas-81d12f3a-b635-4111-be8d-a71d2f7565f2.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/3/36/Betty_Villegas_by_Gage_Skidmore.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Betty_Villegas"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Betty_Villegas"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/184515/betty-villegas"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.azleg.gov/house-member/?legislature=57&session=129&legislator=2346"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.azleg.gov/memberroster/?body=H"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/bettyvillegasaz"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

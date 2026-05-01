@@ -1,0 +1,70 @@
+{
+  "id": "pat-snyder",
+  "name": "Pat Snyder",
+  "firstName": "Pat",
+  "lastName": "Snyder",
+  "photo": "/images/officials/state-legislature/wi/pat-snyder.jpg",
+  "photoSourceUrl": "https://docs.legis.wisconsin.gov/2023/legislators/assembly/2515.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "Assemblymember",
+  "district": "HD-85",
+  "jurisdiction": "Wisconsin State Assembly",
+  "county": [
+    "Wisconsin"
+  ],
+  "termStart": "2017-01-02",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "email": "rep.snyder@legis.wisconsin.gov",
+    "website": "https://docs.legis.wisconsin.gov/2017/legislators/assembly/1641"
+  },
+  "bio": "Pat Snyder serves as Assemblymember for Wisconsin State Assembly District 85. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "WI",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://docs.legis.wisconsin.gov/2017/legislators/assembly/1641"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/wi/legislature/Patrick-Snyder-38649f7a-eba4-4908-b264-f95fe908fc7a.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://docs.legis.wisconsin.gov/2023/legislators/assembly/2515.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Patrick_Snyder"
+    },
+    {
+      "title": "Public source",
+      "url": "https://docs.legis.wisconsin.gov/2019/legislators/assembly/1879"
+    },
+    {
+      "title": "Public source",
+      "url": "https://docs.legis.wisconsin.gov/2021/legislators/assembly"
+    },
+    {
+      "title": "Public source",
+      "url": "https://docs.legis.wisconsin.gov/2021/legislators/assembly/"
+    },
+    {
+      "title": "Public source",
+      "url": "https://docs.legis.wisconsin.gov/2021/legislators/assembly/2191"
+    },
+    {
+      "title": "Public source",
+      "url": "https://docs.legis.wisconsin.gov/2023/legislators/assembly"
+    },
+    {
+      "title": "members list page",
+      "url": "https://docs.legis.wisconsin.gov/2023/legislators/assembly/"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

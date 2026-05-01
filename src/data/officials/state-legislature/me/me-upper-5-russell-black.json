@@ -1,0 +1,68 @@
+{
+  "id": "russell-black",
+  "name": "Russell Black",
+  "firstName": "Russell",
+  "lastName": "Black",
+  "photo": "/images/officials/state-legislature/me/russell-black.jpg",
+  "photoSourceUrl": "https://legislature.maine.gov/uploads/visual_edit/black-5x7.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-5",
+  "jurisdiction": "Maine Senate",
+  "county": [
+    "Maine"
+  ],
+  "termStart": "2022-12-07",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "3 State House Station, Augusta, ME 04333",
+    "phone": "207-287-1505",
+    "email": "russell.black@legislature.maine.gov",
+    "website": "https://legislature.maine.gov/District-17"
+  },
+  "bio": "Russell Black serves as State Senator for Maine Senate District 5. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "ME",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://legislature.maine.gov/District-17"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/me/legislature/Russell-J-Black-fa3e8ae3-757e-44fb-9451-6bf381d748ce.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://legislature.maine.gov/uploads/visual_edit/black-5x7.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Russell_Black"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Russell_Black"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/121044/russell-black"
+    },
+    {
+      "title": "Public source",
+      "url": "https://legislature.maine.gov/District5"
+    },
+    {
+      "title": "Public source",
+      "url": "https://legislature.maine.gov/uploads/visual_edit/130th-senate-contact-information-as-of-31221.xlsx"
+    },
+    {
+      "title": "Public source",
+      "url": "https://legislature.maine.gov/uploads/visual_edit/131-senator-contact-information-2.xlsx"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

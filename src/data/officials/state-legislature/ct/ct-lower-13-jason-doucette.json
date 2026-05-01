@@ -1,0 +1,68 @@
+{
+  "id": "jason-doucette",
+  "name": "Jason Doucette",
+  "firstName": "Jason",
+  "lastName": "Doucette",
+  "photo": "/images/officials/state-legislature/ct/jason-doucette.jpg",
+  "photoSourceUrl": "http://www2.housedems.ct.gov/Doucette/images/Doucette_HS.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-13",
+  "jurisdiction": "Connecticut House of Representatives",
+  "county": [
+    "Connecticut"
+  ],
+  "termStart": "2019-01-09",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 2403, Legislative Office Building 300 Capitol Ave., Hartford, CT 06106",
+    "phone": "800-842-8267",
+    "email": "jason.doucette@cga.ct.gov",
+    "website": "https://housedems.ct.gov/doucette"
+  },
+  "bio": "Jason Doucette serves as State Representative for Connecticut House of Representatives District 13. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "CT",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://housedems.ct.gov/doucette"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ct/legislature/Jason-Doucette-33a50ad7-61f8-4e5a-92fc-a24efddc15f1.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "http://www2.housedems.ct.gov/Doucette/images/Doucette_HS.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "ftp://ftp.cga.ct.gov/pub/data/LegislatorDatabase.csv"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Jason_Doucette"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Jason_Edward_Doucette"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/72359/jason-doucette"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.housedems.ct.gov/doucette"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/jason-doucette-5779818"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

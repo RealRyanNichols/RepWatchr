@@ -1,0 +1,65 @@
+{
+  "id": "jubilee-mcgill",
+  "name": "Jubilee McGill",
+  "firstName": "Jubilee",
+  "lastName": "McGill",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-Addison-5",
+  "jurisdiction": "Vermont House of Representatives",
+  "county": [
+    "Vermont"
+  ],
+  "termStart": "2023-01-04",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Vermont State House 115 State St., Montpelier, VT 05633",
+    "phone": "802-828-2228",
+    "email": "jmcgill@leg.state.vt.us",
+    "website": "https://legislature.vermont.gov/Documents/SmallMaps/2022/House/Addison-5.pdf"
+  },
+  "bio": "Jubilee McGill serves as State Representative for Vermont House of Representatives District Addison-5. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "VT",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://legislature.vermont.gov/Documents/SmallMaps/2022/House/Addison-5.pdf"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/vt/legislature/Jubilee-McGill-829926f6-054a-45e2-be75-1c1da860f0c4.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Jubilee_McGill"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Jubilee_McGill"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/194212/jubilee-mcgill"
+    },
+    {
+      "title": "Public source",
+      "url": "https://legislature.vermont.gov/people/loadAll/2024"
+    },
+    {
+      "title": "Public source",
+      "url": "https://legislature.vermont.gov/people/single/2024/37355"
+    },
+    {
+      "title": "Public source",
+      "url": "https://legislature.vermont.gov/people/single/2026/37355"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/jubilee-mcgill-21b34a8"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

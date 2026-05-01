@@ -1,0 +1,64 @@
+{
+  "id": "rob-kupec",
+  "name": "Rob Kupec",
+  "firstName": "Rob",
+  "lastName": "Kupec",
+  "photo": "/images/officials/state-legislature/mn/rob-kupec.jpg",
+  "photoSourceUrl": "https://www.senate.mn/graphics/04Kupec.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-4",
+  "jurisdiction": "Minnesota Senate",
+  "county": [
+    "Minnesota"
+  ],
+  "termStart": "2023-01-03",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 3101, Minnesota Senate Building 95 University Ave. West, St. Paul, MN 55155",
+    "phone": "651-296-3205",
+    "email": "sen.robert.kupec@senate.mn",
+    "website": "https://www.senate.mn/members/member_bio.html?mem_id=1253"
+  },
+  "bio": "Rob Kupec serves as State Senator for Minnesota Senate District 4. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "MN",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.senate.mn/members/member_bio.html?mem_id=1253"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/mn/legislature/Robert-J-Kupec-b8c303a5-0a73-4a26-8071-be5a9dcf113a.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://www.senate.mn/graphics/04Kupec.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Rob_Kupec"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Rob_Kupec"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/207783/rob-kupec"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/robert-kupec-833b1192"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.senate.mn/api/members"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

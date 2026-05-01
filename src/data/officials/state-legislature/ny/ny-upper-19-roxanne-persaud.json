@@ -1,0 +1,65 @@
+{
+  "id": "roxanne-persaud",
+  "name": "Roxanne Persaud",
+  "firstName": "Roxanne",
+  "lastName": "Persaud",
+  "party": "D",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-19",
+  "jurisdiction": "New York Senate",
+  "county": [
+    "New York"
+  ],
+  "termStart": "2015-11-03",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 409, Legislative Office Building, Albany, NY 12247",
+    "phone": "518-455-2788",
+    "email": "persaud@nysenate.gov",
+    "website": "https://www.nysenate.gov/senators-committees",
+    "socialMedia": {
+      "x": "https://x.com/SenatorPersaud",
+      "twitter": "https://x.com/SenatorPersaud"
+    }
+  },
+  "bio": "Roxanne Persaud serves as State Senator for New York Senate District 19. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "NY",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.nysenate.gov/senators-committees"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ny/legislature/Roxanne-J-Persaud-aa80fb3b-9add-463b-bfba-fe51e3409212.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Roxanne_Persaud"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Roxanne_Persaud"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/155565/roxanne-persaud"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/roxannepersaud"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.nysenate.gov/senators/roxanne-j-persaud"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.nysenate.gov/senators/roxanne-j-persaud/contact"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

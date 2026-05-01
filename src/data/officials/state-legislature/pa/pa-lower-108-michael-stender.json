@@ -1,0 +1,64 @@
+{
+  "id": "michael-stender",
+  "name": "Michael Stender",
+  "firstName": "Michael",
+  "lastName": "Stender",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-108",
+  "jurisdiction": "Pennsylvania House of Representatives",
+  "county": [
+    "Pennsylvania"
+  ],
+  "termStart": "2023-06-05",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 51, East Wing P.O. Box 202108, Harrisburg, PA 17120",
+    "phone": "717-787-3485",
+    "email": "mstender@pahousegop.com",
+    "website": "https://www.legis.state.pa.us/cfdocs/legis/home/member_information/House_bio.cfm?id=2014",
+    "socialMedia": {
+      "facebook": "https://facebook.com/repstender"
+    }
+  },
+  "bio": "Michael Stender serves as State Representative for Pennsylvania House of Representatives District 108. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "PA",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.legis.state.pa.us/cfdocs/legis/home/member_information/House_bio.cfm?id=2014"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/pa/legislature/Michael-A-Stender-ef4ff98e-baba-4655-b24f-66ec5933fcb0.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Michael_Stender"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Michael_Stender"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.legis.state.pa.us/cfdocs/legis/home/member_information/mbrList.cfm?body=H&sort=alpha"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/michael-a-stender-277a7722"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.palegis.us/house/members/bio/2014/rep-stender"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.repstender.com"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

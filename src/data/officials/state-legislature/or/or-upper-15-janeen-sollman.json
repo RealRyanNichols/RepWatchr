@@ -1,0 +1,57 @@
+{
+  "id": "janeen-sollman",
+  "name": "Janeen Sollman",
+  "firstName": "Janeen",
+  "lastName": "Sollman",
+  "party": "D",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-15",
+  "jurisdiction": "Oregon Senate",
+  "county": [
+    "Oregon"
+  ],
+  "termStart": "2022-01-21",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room S-207\u200b, 900 Court St. NE, Salem, OR 97301",
+    "phone": "503-986-1715",
+    "email": "sen.janeensollman@oregonlegislature.gov",
+    "website": "https://www.oregonlegislature.gov/sollman"
+  },
+  "bio": "Janeen Sollman serves as State Senator for Oregon Senate District 15. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "OR",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.oregonlegislature.gov/sollman"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/or/legislature/Janeen-Sollman-9d3f5669-f452-4926-91ec-a74a4c4a48e5.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://api.oregonlegislature.gov/odata/odataservice.svc/LegislativeSessions('2022R1')/Legislators"
+    },
+    {
+      "title": "Public source",
+      "url": "https://api.oregonlegislature.gov/odata/odataservice.svc/LegislativeSessions('2023R1')/Legislators"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Janeen_Sollman"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Janeen_Sollman"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/janeen-sollman-1555216b"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

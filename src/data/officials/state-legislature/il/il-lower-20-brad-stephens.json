@@ -1,0 +1,69 @@
+{
+  "id": "brad-stephens",
+  "name": "Brad Stephens",
+  "firstName": "Brad",
+  "lastName": "Stephens",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-20",
+  "jurisdiction": "Illinois House of Representatives",
+  "county": [
+    "Illinois"
+  ],
+  "termStart": "2019-06-29",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 314, Capitol Building, Springfield, IL 62706",
+    "phone": "217-782-8182",
+    "email": "stephens@ilhousegop.org",
+    "website": "https://ilga.gov/house/Rep.asp?GA=101&MemberID=2770"
+  },
+  "bio": "Brad Stephens serves as State Representative for Illinois House of Representatives District 20. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "IL",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://ilga.gov/house/Rep.asp?GA=101&MemberID=2770"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/il/legislature/Bradley-Stephens-49c0fac1-8cf0-48d2-8166-811afe9ac5c5.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Brad_Stephens"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Bradley_Stephens"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ilga.gov/house/default.asp?GA=101"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ilga.gov/house/default.asp?GA=102"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ilga.gov/house/default.asp?GA=103"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ilga.gov/house/Rep.asp?GA=102&MemberID=2971"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ilga.gov/house/Rep.asp?GA=103&MemberID=3162"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/113172/brad-stephens"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

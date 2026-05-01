@@ -1,0 +1,61 @@
+{
+  "id": "liz-krueger",
+  "name": "Liz Krueger",
+  "firstName": "Liz",
+  "lastName": "Krueger",
+  "party": "D",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-28",
+  "jurisdiction": "New York Senate",
+  "county": [
+    "New York"
+  ],
+  "termStart": "2013-01-01",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 416, Capitol Building 172 State Street, Albany, NY 12247",
+    "phone": "518-455-2297",
+    "email": "lkrueger@nysenate.gov",
+    "website": "https://www.nysenate.gov/senators-committees",
+    "socialMedia": {
+      "x": "https://x.com/LizKrueger",
+      "twitter": "https://x.com/LizKrueger"
+    }
+  },
+  "bio": "Liz Krueger serves as State Senator for New York Senate District 28. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "NY",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.nysenate.gov/senators-committees"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ny/legislature/Liz-Krueger-638d1d66-ccbe-4107-b7fb-f3d22cb2ec9c.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Liz_Krueger"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Liz_Krueger"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/55235/liz-krueger"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.nysenate.gov/senators/liz-krueger"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.nysenate.gov/senators/liz-krueger/contact"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

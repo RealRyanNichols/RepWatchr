@@ -1,0 +1,49 @@
+{
+  "id": "mike-lance",
+  "name": "Mike Lance",
+  "firstName": "Mike",
+  "lastName": "Lance",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-79",
+  "jurisdiction": "Maine House of Representatives",
+  "county": [
+    "Maine"
+  ],
+  "termStart": "2024-12-03",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 332, House Republican Office 2 State House Station, Augusta, ME 04333",
+    "phone": "800-423-2900",
+    "email": "michael.lance@legislature.maine.gov",
+    "website": "https://legislature.maine.gov/house/house/MemberProfiles/Details/3125"
+  },
+  "bio": "Mike Lance serves as State Representative for Maine House of Representatives District 79. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "ME",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://legislature.maine.gov/house/house/MemberProfiles/Details/3125"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/me/legislature/Mike-Lance-a2494f1d-e78d-4a29-b631-5c40b3fe43d8.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Michael_Lance"
+    },
+    {
+      "title": "Public source",
+      "url": "https://mainehousegop.org/members/lance-michael"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/michael-lance-68b341108"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

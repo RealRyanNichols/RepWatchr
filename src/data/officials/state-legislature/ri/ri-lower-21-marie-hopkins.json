@@ -1,0 +1,52 @@
+{
+  "id": "marie-hopkins",
+  "name": "Marie Hopkins",
+  "firstName": "Marie",
+  "lastName": "Hopkins",
+  "photo": "/images/officials/state-legislature/ri/marie-hopkins.jpg",
+  "photoSourceUrl": "https://s3.amazonaws.com/ballotpedia-api4/files/thumbs/200/300/MarieHopkins.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-21",
+  "jurisdiction": "Rhode Island House of Representatives",
+  "county": [
+    "Rhode Island"
+  ],
+  "termStart": "2025-01-07",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "82 Smith St., Providence, RI 02903",
+    "phone": "401-222-3580",
+    "email": "rep-hopkins@rilegislature.gov",
+    "website": "https://rilegislature.gov/representatives/Hopkins/Pages/Biography.aspx"
+  },
+  "bio": "Marie Hopkins serves as State Representative for Rhode Island House of Representatives District 21. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "RI",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://rilegislature.gov/representatives/Hopkins/Pages/Biography.aspx"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ri/legislature/Marie-Hopkins-bc0b7591-fb22-44c1-9766-49ea0d70d894.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://s3.amazonaws.com/ballotpedia-api4/files/thumbs/200/300/MarieHopkins.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Marie_Hopkins"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/210000/marie-hopkins"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

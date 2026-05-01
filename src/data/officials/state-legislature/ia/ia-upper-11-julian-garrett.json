@@ -1,0 +1,72 @@
+{
+  "id": "julian-garrett",
+  "name": "Julian Garrett",
+  "firstName": "Julian",
+  "lastName": "Garrett",
+  "photo": "/images/officials/state-legislature/ia/julian-garrett.jpg",
+  "photoSourceUrl": "https://www.legis.iowa.gov/photo?action=getPhoto&ga=91&pid=9404",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-11",
+  "jurisdiction": "Iowa Senate",
+  "county": [
+    "Iowa"
+  ],
+  "termStart": "2023-01-03",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "1007 E. Grand Ave., Des Moines, IA 50319",
+    "phone": "515-281-3371",
+    "email": "julian.garrett@legis.iowa.gov",
+    "website": "https://www.iowasenaterepublicans.com/senators/julian-garrett/"
+  },
+  "bio": "Julian Garrett serves as State Senator for Iowa Senate District 11. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "IA",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.iowasenaterepublicans.com/senators/julian-garrett/"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ia/legislature/Julian-B-Garrett-67f25420-8ea1-49d1-aa86-488136b5f9f5.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://www.legis.iowa.gov/photo?action=getPhoto&ga=91&pid=9404"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Julian_B._Garrett"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Julian_Garrett"
+    },
+    {
+      "title": "Public source",
+      "url": "https://iowasenaterepublicans.com/senators/julian.garrett"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/57126/julian-garrett"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.legis.iowa.gov/legislators/legislator?ga=88&personID=9404"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.legis.iowa.gov/legislators/legislator?ga=89&personID=9404"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.legis.iowa.gov/legislators/legislator?ga=90&personID=9404"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

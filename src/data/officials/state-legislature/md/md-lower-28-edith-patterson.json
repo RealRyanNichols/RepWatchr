@@ -1,0 +1,64 @@
+{
+  "id": "edith-patterson",
+  "name": "Edith Patterson",
+  "firstName": "Edith",
+  "lastName": "Patterson",
+  "photo": "/images/officials/state-legislature/md/edith-patterson.jpg",
+  "photoSourceUrl": "http://mgaleg.maryland.gov/2018RS/images/patterson02.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "Delegate",
+  "district": "HD-28",
+  "jurisdiction": "Maryland House of Delegates",
+  "county": [
+    "Maryland"
+  ],
+  "termStart": "2015-01-14",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 429, Lowe House Office Building 6 Bladen St., Annapolis, MD 21401",
+    "phone": "410-841-3247",
+    "email": "edith.patterson@house.maryland.gov",
+    "website": "https://mgaleg.maryland.gov/mgawebsite/Members/Details/patterson02"
+  },
+  "bio": "Edith Patterson serves as Delegate for Maryland House of Delegates District 28. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "MD",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://mgaleg.maryland.gov/mgawebsite/Members/Details/patterson02"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/md/legislature/Edith-J-Patterson-c8851cc0-d707-49c5-939a-485fc7e14075.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "http://mgaleg.maryland.gov/2018RS/images/patterson02.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Edith_Patterson"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Edith_J._Patterson"
+    },
+    {
+      "title": "Public source",
+      "url": "https://mgaleg.maryland.gov/webmga/frmMain.aspx?pid=sponpage&tab=subject6&id=patterson02&stab=01"
+    },
+    {
+      "title": "Public source",
+      "url": "https://msa.maryland.gov/msa/mdmanual/06hse/html/msa14559.html"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/edith-patterson-970b921a"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

@@ -1,0 +1,68 @@
+{
+  "id": "tom-brandt",
+  "name": "Tom Brandt",
+  "firstName": "Tom",
+  "lastName": "Brandt",
+  "photo": "/images/officials/state-legislature/ne/tom-brandt.jpg",
+  "photoSourceUrl": "https://www.nebraskalegislature.gov/media/images/senators/dist32/highres/dist32.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "NP",
+  "level": "state",
+  "position": "State Senator",
+  "district": "LD-32",
+  "jurisdiction": "Nebraska Legislature",
+  "county": [
+    "Nebraska"
+  ],
+  "termStart": "2019-01-09",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "State Capitol Room 1210, P.O. Box 94604, Lincoln, NE 68509",
+    "phone": "402-471-2711",
+    "email": "tbrandt@leg.ne.gov",
+    "website": "https://nebraskalegislature.gov/senators/landing-pages/index.php?District=32"
+  },
+  "bio": "Tom Brandt serves as State Senator for Nebraska Legislature District 32. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "NE",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://nebraskalegislature.gov/senators/landing-pages/index.php?District=32"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ne/legislature/Tom-Brandt-37ed5b35-3aea-40a2-95ed-ecc5120fbe82.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://www.nebraskalegislature.gov/media/images/senators/dist32/highres/dist32.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Tom_Brandt"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Tom_Brandt_(politician)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/179853/tom-brandt"
+    },
+    {
+      "title": "Public source",
+      "url": "https://nebraskalegislature.gov/senators/senator_list.php"
+    },
+    {
+      "title": "Public source",
+      "url": "https://news.legislature.ne.gov/dist32"
+    },
+    {
+      "title": "Public source",
+      "url": "https://news.legislature.ne.gov/dist32/"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

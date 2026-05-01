@@ -1,0 +1,61 @@
+{
+  "id": "carlos-smith",
+  "name": "Carlos Smith",
+  "firstName": "Carlos",
+  "lastName": "Smith",
+  "party": "D",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-17",
+  "jurisdiction": "Florida Senate",
+  "county": [
+    "Florida"
+  ],
+  "termStart": "2024-11-05",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 218, Senate Building 404 S. Monroe St., Tallahassee, FL 32399",
+    "phone": "850-487-5017",
+    "email": "smith.carlos.web@flsenate.gov",
+    "website": "https://www.flsenate.gov/Senators/S17"
+  },
+  "bio": "Carlos Smith serves as State Senator for Florida Senate District 17. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "FL",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.flsenate.gov/Senators/S17"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/fl/legislature/Carlos-Guillermo-Smith-df1d6ab6-b2cd-4a6f-b7cc-aa5a63d8011f.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Carlos_Guillermo_Smith"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Carlos_Guillermo_Smith"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/carlosgsmith"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.myfloridahouse.gov/Representatives"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.myfloridahouse.gov/Sections/Representatives/details.aspx?MemberId=4642&LegislativeTermId=88"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.myfloridahouse.gov/Sections/Representatives/representatives.aspx"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

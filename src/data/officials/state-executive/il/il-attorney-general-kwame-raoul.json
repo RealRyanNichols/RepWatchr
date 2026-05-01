@@ -1,0 +1,59 @@
+{
+  "id": "kwame-raoul",
+  "name": "Kwame Raoul",
+  "firstName": "Kwame",
+  "lastName": "Raoul",
+  "photo": "/images/officials/state-executive/il/kwame-raoul.jpg",
+  "photoSourceUrl": "https://illinoisattorneygeneral.gov/images/AG_BioPhoto.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "Attorney General",
+  "district": "Illinois",
+  "jurisdiction": "Illinois statewide public office",
+  "county": [
+    "Illinois"
+  ],
+  "termStart": "2019-01-15",
+  "termEnd": "2027-01-11",
+  "contactInfo": {
+    "office": "500 S. 2nd St.; Springfield, IL 62701",
+    "phone": "217-782-1090",
+    "website": "http://ilga.gov/senate/Senator.asp?GA=100&MemberID=2340"
+  },
+  "bio": "Kwame Raoul is listed as Attorney General for Illinois. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "IL",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "http://ilga.gov/senate/Senator.asp?GA=100&MemberID=2340"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/il/executive/Kwame-Raoul-65ee6848-68bd-430d-890c-a121fb6e8577.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://illinoisattorneygeneral.gov/images/AG_BioPhoto.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "http://ilga.gov/senate/default.asp?GA=100"
+    },
+    {
+      "title": "Public source",
+      "url": "https://illinoisattorneygeneral.gov/about/biography/"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Kwame_Raoul"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.naag.org/attorney-general/kwame-raoul/"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

@@ -1,0 +1,60 @@
+{
+  "id": "charles-smith",
+  "name": "Charles Smith",
+  "firstName": "Charles",
+  "lastName": "Smith",
+  "photo": "/images/officials/state-legislature/nc/charles-smith.jpg",
+  "photoSourceUrl": "https://www.ncleg.gov/Members/MemberImage/H/813/Low",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-44",
+  "jurisdiction": "North Carolina House of Representatives",
+  "county": [
+    "North Carolina"
+  ],
+  "termStart": "2023-01-01",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 2123, North Carolina Legislative Building 16 W. Jones St., Raleigh, NC 27601",
+    "phone": "919-733-5601",
+    "email": "charles.smith@ncleg.gov",
+    "website": "https://www.ncleg.gov/Members/Biography/H/813"
+  },
+  "bio": "Charles Smith serves as State Representative for North Carolina House of Representatives District 44. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "NC",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.ncleg.gov/Members/Biography/H/813"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/nc/legislature/Charles-Smith-2736ade6-4cc1-4833-ab0d-cf1953227726.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://www.ncleg.gov/Members/MemberImage/H/813/Low"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Charles_Smith_(North_Carolina_House_of_Representatives_candidate)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://charlessmithfornc.com/meet-charles"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/charles-smith-a69312247"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.ncleg.gov/Members/MemberTable/H"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

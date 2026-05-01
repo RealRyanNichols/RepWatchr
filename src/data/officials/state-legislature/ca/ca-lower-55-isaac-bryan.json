@@ -1,0 +1,72 @@
+{
+  "id": "isaac-bryan",
+  "name": "Isaac Bryan",
+  "firstName": "Isaac",
+  "lastName": "Bryan",
+  "photo": "/images/officials/state-legislature/ca/isaac-bryan.jpg",
+  "photoSourceUrl": "https://www.assembly.ca.gov/sites/assembly.ca.gov/files/memberphotos/isaacbryan.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "Assemblymember",
+  "district": "HD-55",
+  "jurisdiction": "California State Assembly",
+  "county": [
+    "California"
+  ],
+  "termStart": "2022-12-05",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 5630, 1021 O St. P.O. Box 942849, Sacramento, CA 94249",
+    "phone": "916-319-2055",
+    "email": "assemblymember.bryan@assembly.ca.gov",
+    "website": "https://a54.asmdc.org"
+  },
+  "bio": "Isaac Bryan serves as Assemblymember for California State Assembly District 55. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "CA",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://a54.asmdc.org"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ca/legislature/Isaac-Bryan-e9e56c3e-1c7d-4eab-a3ac-35cfc7c6a651.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://www.assembly.ca.gov/sites/assembly.ca.gov/files/memberphotos/isaacbryan.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://a54.asmdc.org/"
+    },
+    {
+      "title": "Public source",
+      "url": "https://a55.asmdc.org"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Isaac_Bryan"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Isaac_Bryan"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/195907/isaac-bryan"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.assembly.ca.gov/assemblymembers"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/isaacbryan"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

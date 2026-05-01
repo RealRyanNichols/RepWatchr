@@ -1,0 +1,72 @@
+{
+  "id": "gary-stevens",
+  "name": "Gary Stevens",
+  "firstName": "Gary",
+  "lastName": "Stevens",
+  "photo": "/images/officials/state-legislature/ak/gary-stevens.jpg",
+  "photoSourceUrl": "http://akleg.gov/images/legislators/450x600/STG.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-C",
+  "jurisdiction": "Alaska Senate",
+  "county": [
+    "Alaska"
+  ],
+  "termStart": "2023-01-17",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "State Capitol Room 111, 120 4th St., Juneau, AK 99801",
+    "phone": "907-465-4925",
+    "email": "senator.gary.stevens@akleg.gov",
+    "website": "https://www.akleg.gov/basis/Member/Detail/30?code=stg"
+  },
+  "bio": "Gary Stevens serves as State Senator for Alaska Senate District C. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "AK",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.akleg.gov/basis/Member/Detail/30?code=stg"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ak/legislature/Gary-Stevens-f5c83068-a809-4f57-8b77-1e77c87ee93b.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "http://akleg.gov/images/legislators/450x600/STG.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Gary_Stevens"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Gary_Stevens_(politician)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/12784/gary-stevens"
+    },
+    {
+      "title": "Public source",
+      "url": "https://w3.akleg.gov"
+    },
+    {
+      "title": "Public source",
+      "url": "https://w3.akleg.gov/"
+    },
+    {
+      "title": "member list page",
+      "url": "https://www.akleg.gov/basis/mbr_info.asp?session=33"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.akleg.gov/basis/Member/Detail/33?code=STG"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

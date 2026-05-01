@@ -1,0 +1,56 @@
+{
+  "id": "tangie-herring",
+  "name": "Tangie Herring",
+  "firstName": "Tangie",
+  "lastName": "Herring",
+  "photo": "/images/officials/state-legislature/ga/tangie-herring.jpg",
+  "photoSourceUrl": "https://images.squarespace-cdn.com/content/v1/64b7398b4867300614bcfe48/9ddc7dee-fc52-4309-a0dc-3c8671c9eaaa/Tangie+Herring_headshot.jpg?format=2500w",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-145",
+  "jurisdiction": "Georgia House of Representatives",
+  "county": [
+    "Georgia"
+  ],
+  "termStart": "2025-01-13",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 507-G, Coverdell Legislative Office Building 18 Capitol Square SW, Atlanta, GA 30334",
+    "phone": "404-656-0202",
+    "email": "tangie.herring@house.ga.gov",
+    "website": "https://www.legis.ga.gov/members/house/5082"
+  },
+  "bio": "Tangie Herring serves as State Representative for Georgia House of Representatives District 145. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "GA",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.legis.ga.gov/members/house/5082"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ga/legislature/Tangie-Herring-c5766526-3a5a-4d33-b5ff-a0d1d358d7ae.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://images.squarespace-cdn.com/content/v1/64b7398b4867300614bcfe48/9ddc7dee-fc52-4309-a0dc-3c8671c9eaaa/Tangie+Herring_headshot.jpg?format=2500w"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Tangie_Herring"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Tangie_Herring"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/215265/tangie-herring"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

@@ -1,0 +1,56 @@
+{
+  "id": "caldwell-jackson",
+  "name": "Caldwell Jackson",
+  "firstName": "Caldwell",
+  "lastName": "Jackson",
+  "photo": "/images/officials/state-legislature/me/caldwell-jackson.jpg",
+  "photoSourceUrl": "https://legislature.maine.gov/house/house/Repository/MemberProfiles/4a816ecf-f3c1-49e1-88e9-f7a4d18cb5de_JACKSON.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-80",
+  "jurisdiction": "Maine House of Representatives",
+  "county": [
+    "Maine"
+  ],
+  "termStart": "2022-12-07",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 332, House Republican Office 2 State House Station, Augusta, ME 04333",
+    "phone": "800-423-2900",
+    "email": "caldwell.jackson@legislature.maine.gov",
+    "website": "https://legislature.maine.gov/house/house/MemberProfiles/Details/1485"
+  },
+  "bio": "Caldwell Jackson serves as State Representative for Maine House of Representatives District 80. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "ME",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://legislature.maine.gov/house/house/MemberProfiles/Details/1485"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/me/legislature/Caldwell-Jackson-cf1f0a32-7107-44ea-96f2-1f3c604d87cc.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://legislature.maine.gov/house/house/Repository/MemberProfiles/4a816ecf-f3c1-49e1-88e9-f7a4d18cb5de_JACKSON.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Caldwell_Jackson"
+    },
+    {
+      "title": "Public source",
+      "url": "https://legislature.maine.gov/house/house/MemberProfiles/ListAlpha"
+    },
+    {
+      "title": "Public source",
+      "url": "https://mainehousegop.org/members/jackson-caldwell"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

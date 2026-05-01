@@ -1,0 +1,56 @@
+{
+  "id": "vinnie-miresse",
+  "name": "Vinnie Miresse",
+  "firstName": "Vinnie",
+  "lastName": "Miresse",
+  "photo": "/images/officials/state-legislature/wi/vinnie-miresse.jpg",
+  "photoSourceUrl": "https://s3.amazonaws.com/ballotpedia-api4/files/thumbs/200/300/Vinnie_Miresse.jpeg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "Assemblymember",
+  "district": "HD-71",
+  "jurisdiction": "Wisconsin State Assembly",
+  "county": [
+    "Wisconsin"
+  ],
+  "termStart": "2025-01-06",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "State Capitol Room 112 North, P.O. Box 8953 , 2 E. Main St., Madison, WI 53708",
+    "phone": "608-237-9171",
+    "email": "rep.miresse@legis.wisconsin.gov",
+    "website": "https://docs.legis.wisconsin.gov/2025/legislators/assembly/2895"
+  },
+  "bio": "Vinnie Miresse serves as Assemblymember for Wisconsin State Assembly District 71. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "WI",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://docs.legis.wisconsin.gov/2025/legislators/assembly/2895"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/wi/legislature/Vinnie-Miresse-b4fedde3-c1a5-4cb5-976d-05f4c541e382.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://s3.amazonaws.com/ballotpedia-api4/files/thumbs/200/300/Vinnie_Miresse.jpeg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Vinnie_Miresse"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Vinnie_Miresse"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/218655/vinnie-miresse"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

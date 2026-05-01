@@ -1,0 +1,60 @@
+{
+  "id": "michele-pe-a",
+  "name": "Michele Pe\u00f1a",
+  "firstName": "Michele",
+  "lastName": "Pe\u00f1a",
+  "photo": "/images/officials/state-legislature/az/michele-pe-a.jpg",
+  "photoSourceUrl": "https://s3.amazonaws.com/ballotpedia-api4/files/thumbs/200/300/MichelePena.png",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-23",
+  "jurisdiction": "Arizona House of Representatives",
+  "county": [
+    "Arizona"
+  ],
+  "termStart": "2023-01-09",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 341, 1700 W. Washington St., Phoenix, AZ 85007",
+    "phone": "602-926-3696",
+    "email": "mpena@azleg.gov",
+    "website": "https://www.azleg.gov/house-member/?legislature=56&session=127&legislator=2189"
+  },
+  "bio": "Michele Pe\u00f1a serves as State Representative for Arizona House of Representatives District 23. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "AZ",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.azleg.gov/house-member/?legislature=56&session=127&legislator=2189"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/az/legislature/Michele-Pea-68c38dfc-a12b-4c51-8b70-c4e02931cddf.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://s3.amazonaws.com/ballotpedia-api4/files/thumbs/200/300/MichelePena.png"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Michele_Pena"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Michele_Pena"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.azleg.gov/house-member/?legislature=57&session=129&legislator=2331"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.azleg.gov/memberroster/?body=H"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

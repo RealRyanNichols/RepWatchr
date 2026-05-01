@@ -1,0 +1,72 @@
+{
+  "id": "yolonda-morris",
+  "name": "Yolonda Morris",
+  "firstName": "Yolonda",
+  "lastName": "Morris",
+  "photo": "/images/officials/state-legislature/il/yolonda-morris.jpg",
+  "photoSourceUrl": "https://cdn.ilga.gov/assets/img/members/{2EDE65F3-F463-4E44-B703-6B06D2ECB787}.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-9",
+  "jurisdiction": "Illinois House of Representatives",
+  "county": [
+    "Illinois"
+  ],
+  "termStart": "2023-09-12",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 276-S, Stratton Office Building, Springfield, IL 62706",
+    "phone": "217-782-8116",
+    "email": "9thdistrictinfo@gmail.com",
+    "website": "https://ilga.gov/house/Rep.asp?GA=103&MemberID=3255"
+  },
+  "bio": "Yolonda Morris serves as State Representative for Illinois House of Representatives District 9. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "IL",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://ilga.gov/house/Rep.asp?GA=103&MemberID=3255"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/il/legislature/Yolonda-Morris-753dc145-9162-4e02-9b76-836be48498cb.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://cdn.ilga.gov/assets/img/members/{2EDE65F3-F463-4E44-B703-6B06D2ECB787}.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Yolonda_Morris"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Yolonda_Morris"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ilga.gov/house/default.asp?GA=103"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/212760/yolonda-morris"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.ilga.gov/House/Members/Details/3444"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.ilga.gov/house/Rep.asp?GA=103&MemberID=3255"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.ilga.gov/house/Rep.asp?MemberID=3444"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

@@ -1,0 +1,72 @@
+{
+  "id": "darrin-madison",
+  "name": "Darrin Madison",
+  "firstName": "Darrin",
+  "lastName": "Madison",
+  "photo": "/images/officials/state-legislature/wi/darrin-madison.jpg",
+  "photoSourceUrl": "https://docs.legis.wisconsin.gov/2023/legislators/assembly/2536.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "Assemblymember",
+  "district": "HD-10",
+  "jurisdiction": "Wisconsin State Assembly",
+  "county": [
+    "Wisconsin"
+  ],
+  "termStart": "2023-01-03",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "State Capitol Room 21 North, P.O. Box 8952 , 2 E. Main St., Madison, WI 53708",
+    "phone": "608-237-9110",
+    "email": "rep.madison@legis.wisconsin.gov",
+    "website": "https://docs.legis.wisconsin.gov/2023/legislators/assembly/2536"
+  },
+  "bio": "Darrin Madison serves as Assemblymember for Wisconsin State Assembly District 10. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "WI",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://docs.legis.wisconsin.gov/2023/legislators/assembly/2536"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/wi/legislature/Darrin-Madison-d9f84b91-88ac-4abc-8d47-0672e2de5970.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://docs.legis.wisconsin.gov/2023/legislators/assembly/2536.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Darrin_Madison_Jr."
+    },
+    {
+      "title": "Public source",
+      "url": "https://docs.legis.wisconsin.gov/2023/legislators/assembly"
+    },
+    {
+      "title": "members list page",
+      "url": "https://docs.legis.wisconsin.gov/2023/legislators/assembly/"
+    },
+    {
+      "title": "Public source",
+      "url": "https://docs.legis.wisconsin.gov/2025/legislators/assembly/2748"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Darrin_Madison"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/208180/darrin-madison"
+    },
+    {
+      "title": "Public source",
+      "url": "https://legis.wisconsin.gov/assembly/10/madison"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

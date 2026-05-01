@@ -1,0 +1,71 @@
+{
+  "id": "j-t-larson",
+  "name": "J.T. Larson",
+  "firstName": "J.T.",
+  "lastName": "Larson",
+  "photo": "/images/officials/state-legislature/wy/j-t-larson.jpg",
+  "photoSourceUrl": "https://wyoleg.gov/LegislatorSummary/Photos/68th-LarsonJT.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-17",
+  "jurisdiction": "Wyoming House of Representatives",
+  "county": [
+    "Wyoming"
+  ],
+  "termStart": "2023-01-02",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "State Capitol 200 W. 24th St., Cheyenne, WY 82002",
+    "email": "jt.larson@wyoleg.gov",
+    "website": "https://www.wyoleg.gov/Legislators/2023/H/2096"
+  },
+  "bio": "J.T. Larson serves as State Representative for Wyoming House of Representatives District 17. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "WY",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.wyoleg.gov/Legislators/2023/H/2096"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/wy/legislature/JT-Larson-2a0be03f-4f0a-4b2e-850b-50b4d0dade13.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://wyoleg.gov/LegislatorSummary/Photos/68th-LarsonJT.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/J.T._Larson"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/J.T._Larson"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/207679/joshua-larson"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/j-t-larson-4a80a1197"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.wyoleg.gov/Legislators/2025/H/2096"
+    },
+    {
+      "title": "Public source",
+      "url": "https://wyoleg.gov/LsoService/api/legislator/2023/H"
+    },
+    {
+      "title": "Public source",
+      "url": "https://wyoleg.gov/LsoService/api/legislator/2096"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

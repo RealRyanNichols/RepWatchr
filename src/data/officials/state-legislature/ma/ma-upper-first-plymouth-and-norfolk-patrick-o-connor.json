@@ -1,0 +1,72 @@
+{
+  "id": "patrick-o-connor",
+  "name": "Patrick O'Connor",
+  "firstName": "Patrick",
+  "lastName": "O'Connor",
+  "photo": "/images/officials/state-legislature/ma/patrick-o-connor.jpg",
+  "photoSourceUrl": "https://malegislature.gov/Legislators/Profile/170/PMO.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-First Plymouth and Norfolk",
+  "jurisdiction": "Massachusetts Senate",
+  "county": [
+    "Massachusetts"
+  ],
+  "termStart": "2023-01-04",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 419, State House 24 Beacon St., Boston, MA 02133",
+    "phone": "617-722-1646",
+    "email": "patrick.oconnor@masenate.gov",
+    "website": "https://malegislature.gov/Legislators/Profile/PMO"
+  },
+  "bio": "Patrick O'Connor serves as State Senator for Massachusetts Senate District First Plymouth and Norfolk. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "MA",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://malegislature.gov/Legislators/Profile/PMO"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ma/legislature/Patrick-M-OConnor-493988da-4de8-49a0-8d6c-090097e89920.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://malegislature.gov/Legislators/Profile/170/PMO.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Patrick_O%27Connor_(Massachusetts)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Patrick_O%27Connor_(Massachusetts_politician)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/75467/patrick-oconnor"
+    },
+    {
+      "title": "Public source",
+      "url": "https://malegislature.gov/api/GeneralCourts/192/LegislativeMembers"
+    },
+    {
+      "title": "Public source",
+      "url": "https://malegislature.gov/api/GeneralCourts/192/LegislativeMembers/"
+    },
+    {
+      "title": "Public source",
+      "url": "https://malegislature.gov/api/GeneralCourts/192/LegislativeMembers/PMO"
+    },
+    {
+      "title": "Public source",
+      "url": "https://malegislature.gov/api/GeneralCourts/193/LegislativeMembers"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

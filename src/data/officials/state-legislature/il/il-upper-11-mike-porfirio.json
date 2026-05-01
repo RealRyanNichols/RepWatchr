@@ -1,0 +1,72 @@
+{
+  "id": "mike-porfirio",
+  "name": "Mike Porfirio",
+  "firstName": "Mike",
+  "lastName": "Porfirio",
+  "photo": "/images/officials/state-legislature/il/mike-porfirio.jpg",
+  "photoSourceUrl": "https://cdn.ilga.gov/assets/img/members/{0824C110-5C93-4CBA-92E2-C330BBD6FE02}.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-11",
+  "jurisdiction": "Illinois Senate",
+  "county": [
+    "Illinois"
+  ],
+  "termStart": "2023-01-11",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Stratton Office Building Section F, Office L, Springfield, IL 62706",
+    "phone": "217-782-0054",
+    "email": "info@senatorporfirio.com",
+    "website": "https://ilga.gov/senate/Senator.asp?GA=103&MemberID=3208"
+  },
+  "bio": "Mike Porfirio serves as State Senator for Illinois Senate District 11. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "IL",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://ilga.gov/senate/Senator.asp?GA=103&MemberID=3208"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/il/legislature/Mike-Porfirio-4666ba31-e78b-48f5-9d88-f4823527df6b.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://cdn.ilga.gov/assets/img/members/{0824C110-5C93-4CBA-92E2-C330BBD6FE02}.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Mike_Porfirio"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Mike_Porfirio"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ilga.gov/senate/default.asp?GA=103"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/204373/mike-porfirio"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.ilga.gov/Senate/Members/Details/3404"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.ilga.gov/senate/Senator.asp?GA=103&MemberID=3208"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.ilga.gov/senate/Senator.asp?GA=104&MemberID=3404"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

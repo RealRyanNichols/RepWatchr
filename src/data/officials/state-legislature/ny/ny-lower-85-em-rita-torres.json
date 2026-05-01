@@ -1,0 +1,64 @@
+{
+  "id": "em-rita-torres",
+  "name": "Em\u00e9rita Torres",
+  "firstName": "Em\u00e9rita",
+  "lastName": "Torres",
+  "photo": "/images/officials/state-legislature/ny/em-rita-torres.jpg",
+  "photoSourceUrl": "https://storage.googleapis.com/enview-dev-public-general/legislative-people-photos/164656.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "Assemblymember",
+  "district": "HD-85",
+  "jurisdiction": "New York State Assembly",
+  "county": [
+    "New York"
+  ],
+  "termStart": "2025-01-01",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 833, Legislative Office Building, Albany, NY 12248",
+    "phone": "518-455-5514",
+    "email": "torrese@nyassembly.gov",
+    "website": "https://nyassembly.gov/mem/Emerita-Torres/"
+  },
+  "bio": "Em\u00e9rita Torres serves as Assemblymember for New York State Assembly District 85. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "NY",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://nyassembly.gov/mem/Emerita-Torres/"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ny/legislature/Emrita-Torres-4af19dc2-41c7-4b7e-b271-b23e20e1ccb1.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://storage.googleapis.com/enview-dev-public-general/legislative-people-photos/164656.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Emerita_Torres"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Emerita_Torres"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/219835/emerita-torres"
+    },
+    {
+      "title": "Public source",
+      "url": "https://nyassembly.gov/mem/Emerita-Torres"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/emeritatorres/?"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

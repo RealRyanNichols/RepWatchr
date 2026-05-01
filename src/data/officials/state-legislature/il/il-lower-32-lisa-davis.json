@@ -1,0 +1,57 @@
+{
+  "id": "lisa-davis",
+  "name": "Lisa Davis",
+  "firstName": "Lisa",
+  "lastName": "Davis",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-32",
+  "jurisdiction": "Illinois House of Representatives",
+  "county": [
+    "Illinois"
+  ],
+  "termStart": "2025-01-08",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 252-W, Stratton Building, Springfield, IL 62706",
+    "phone": "217-782-1702",
+    "email": "districtdirector32@gmail.com",
+    "website": "https://www.ilga.gov/House/Members/Details/3458"
+  },
+  "bio": "Lisa Davis serves as State Representative for Illinois House of Representatives District 32. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "IL",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.ilga.gov/House/Members/Details/3458"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/il/legislature/Lisa-Davis-607e0b8f-4f4a-46ae-bfac-24b179d67542.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Lisa_Davis_(Illinois)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Lisa_Davis_(politician)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/213068/lisa-davis"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.ilga.gov/house/Rep.asp?GA=104&MemberID=3458"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/lisa-davis-35683029b"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

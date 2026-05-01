@@ -1,0 +1,64 @@
+{
+  "id": "susan-johnson",
+  "name": "Susan Johnson",
+  "firstName": "Susan",
+  "lastName": "Johnson",
+  "photo": "/images/officials/state-legislature/ct/susan-johnson.jpg",
+  "photoSourceUrl": "http://www2.housedems.ct.gov/Johnson/images/Johnson_HS.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-49",
+  "jurisdiction": "Connecticut House of Representatives",
+  "county": [
+    "Connecticut"
+  ],
+  "termStart": "",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 4029, Legislative Office Building 300 Capitol Ave., Hartford, CT 06106",
+    "phone": "860-240-8585",
+    "email": "susan.johnson@cga.ct.gov",
+    "website": "https://cga.ct.gov/asp/CGABillStatus/CGAMemberBills.asp?dist_code=%27049%27&dist_name=Johnson,%20Susan%20M."
+  },
+  "bio": "Susan Johnson serves as State Representative for Connecticut House of Representatives District 49. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "CT",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://cga.ct.gov/asp/CGABillStatus/CGAMemberBills.asp?dist_code=%27049%27&dist_name=Johnson,%20Susan%20M."
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ct/legislature/Susan-M-Johnson-454e5979-c5bb-4f4e-9f3d-dc11f5e5b6ca.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "http://www2.housedems.ct.gov/Johnson/images/Johnson_HS.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "ftp://ftp.cga.ct.gov/pub/data/LegislatorDatabase.csv"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Susan_Johnson,_Connecticut_Representative"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Susan_Johnson_(politician)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/22189/susan-johnson"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.housedems.ct.gov/Johnson"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

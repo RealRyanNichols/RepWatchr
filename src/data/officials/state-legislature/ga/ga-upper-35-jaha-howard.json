@@ -1,0 +1,52 @@
+{
+  "id": "jaha-howard",
+  "name": "Jaha Howard",
+  "firstName": "Jaha",
+  "lastName": "Howard",
+  "party": "D",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-35",
+  "jurisdiction": "Georgia Senate",
+  "county": [
+    "Georgia"
+  ],
+  "termStart": "2025-12-31",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "4450 S. Cobb Drive, Smyrna, GA 30080",
+    "email": "jaha.howard@senate.ga.gov",
+    "website": "https://www.legis.ga.gov/members/senate/5090"
+  },
+  "bio": "Jaha Howard serves as State Senator for Georgia Senate District 35. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "GA",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.legis.ga.gov/members/senate/5090"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ga/legislature/Jaha-Howard-fcd57129-480c-4fba-a0d1-7fb369706611.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Jaha_Howard"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Jaha_Howard"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/168156/jaha-howard"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/drjahahoward"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

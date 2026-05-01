@@ -1,0 +1,58 @@
+{
+  "id": "nick-fosness",
+  "name": "Nick Fosness",
+  "firstName": "Nick",
+  "lastName": "Fosness",
+  "photo": "/images/officials/state-legislature/sd/nick-fosness.jpg",
+  "photoSourceUrl": "https://sdaho.org/wp-content/uploads/2018/03/nick-fosness-big-696x967.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-1",
+  "jurisdiction": "South Dakota House of Representatives",
+  "county": [
+    "South Dakota"
+  ],
+  "termStart": "2025-08-05",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "email": "nick.fosness@sdlegislature.gov",
+    "website": "https://sdlegislature.gov/Legislators/Profile/4839/Detail"
+  },
+  "bio": "Nick Fosness serves as State Representative for South Dakota House of Representatives District 1. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "SD",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://sdlegislature.gov/Legislators/Profile/4839/Detail"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/sd/legislature/Nick-Fosness-1f9d8833-6a73-4985-b33e-635b6bc194b7.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://sdaho.org/wp-content/uploads/2018/03/nick-fosness-big-696x967.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Nicholas_Fosness"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Nick_Fosness"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/228104/nicholas-fosness"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/nickfosness"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

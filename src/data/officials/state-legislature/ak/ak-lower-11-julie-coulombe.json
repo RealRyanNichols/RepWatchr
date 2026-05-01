@@ -1,0 +1,68 @@
+{
+  "id": "julie-coulombe",
+  "name": "Julie Coulombe",
+  "firstName": "Julie",
+  "lastName": "Coulombe",
+  "photo": "/images/officials/state-legislature/ak/julie-coulombe.jpg",
+  "photoSourceUrl": "http://akleg.gov/images/legislators/450x600/COU.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-11",
+  "jurisdiction": "Alaska House of Representatives",
+  "county": [
+    "Alaska"
+  ],
+  "termStart": "2023-01-17",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "State Capitol Room 420, 120 4th St., Juneau, AK 99801",
+    "phone": "907-465-3879",
+    "email": "representative.julie.coulombe@akleg.gov",
+    "website": "https://akhousemajority.com/rep-coulombe/"
+  },
+  "bio": "Julie Coulombe serves as State Representative for Alaska House of Representatives District 11. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "AK",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://akhousemajority.com/rep-coulombe/"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ak/legislature/Julie-Coulombe-a66f1539-56d3-458c-8ac0-3aff6907a69d.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "http://akleg.gov/images/legislators/450x600/COU.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://akhousemajority.com/rep-coulombe"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Julie_Coulombe"
+    },
+    {
+      "title": "member list page",
+      "url": "https://www.akleg.gov/basis/mbr_info.asp?session=33"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.akleg.gov/basis/Member/Detail/33?code=COU"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.akleg.gov/basis/Member/Detail/33?code=cou"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.akleg.gov/basis/Member/Detail/34?code=cou"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

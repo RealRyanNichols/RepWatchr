@@ -1,0 +1,44 @@
+{
+  "id": "will-ainsworth",
+  "name": "Will Ainsworth",
+  "firstName": "Will",
+  "lastName": "Ainsworth",
+  "party": "R",
+  "level": "state",
+  "position": "Lieutenant Governor",
+  "district": "Alabama",
+  "jurisdiction": "Alabama statewide public office",
+  "county": [
+    "Alabama"
+  ],
+  "termStart": "2019-01-14",
+  "termEnd": "2027-01-18",
+  "contactInfo": {
+    "office": "Alabama State House; 11 S Union Street; Montgomery, AL 36130",
+    "phone": "334-261-9590",
+    "website": "http://www.legislature.state.al.us/aliswww/ISD/ALRepresentative.aspx?OID_SPONSOR=85941&OID_PERSON=7709"
+  },
+  "bio": "Will Ainsworth is listed as Lieutenant Governor for Alabama. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "AL",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "http://www.legislature.state.al.us/aliswww/ISD/ALRepresentative.aspx?OID_SPONSOR=85941&OID_PERSON=7709"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/al/executive/Will-Ainsworth-cb01dcb8-b382-48af-a781-d4019eb3dfa6.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "http://www.legislature.state.al.us/aliswww/ISD/House/ALRepresentatives.aspx"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ltgov.alabama.gov/about/"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

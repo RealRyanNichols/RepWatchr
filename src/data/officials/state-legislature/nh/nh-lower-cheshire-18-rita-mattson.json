@@ -1,0 +1,60 @@
+{
+  "id": "rita-mattson",
+  "name": "Rita Mattson",
+  "firstName": "Rita",
+  "lastName": "Mattson",
+  "photo": "/images/officials/state-legislature/nh/rita-mattson.jpg",
+  "photoSourceUrl": "https://www.citizenscount.org/sites/default/files/styles/profile_140x176/public/2024-10/Rita-Mattson.jpg?itok=yh9OW9aS",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-Cheshire 18",
+  "jurisdiction": "New Hampshire House of Representatives",
+  "county": [
+    "New Hampshire"
+  ],
+  "termStart": "2024-12-04",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "State House 107 N. Main St., Concord, NH 03301",
+    "phone": "603-271-3661",
+    "email": "rita.mattson@gc.nh.gov",
+    "website": "https://gc.nh.gov/house/members/member.aspx?pid=10034"
+  },
+  "bio": "Rita Mattson serves as State Representative for New Hampshire House of Representatives District Cheshire 18. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "NH",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://gc.nh.gov/house/members/member.aspx?pid=10034"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/nh/legislature/Rita-Mattson-6554d13d-8086-437d-8b44-e5a164b34933.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://www.citizenscount.org/sites/default/files/styles/profile_140x176/public/2024-10/Rita-Mattson.jpg?itok=yh9OW9aS"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Rita_Mattson"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Rita_Mattson"
+    },
+    {
+      "title": "Public source",
+      "url": "https://gencourt.state.nh.us/house/members/member.aspx?pid=10034"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/194720/rita-mattson"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

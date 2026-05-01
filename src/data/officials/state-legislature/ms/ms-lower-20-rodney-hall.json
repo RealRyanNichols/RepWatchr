@@ -1,0 +1,53 @@
+{
+  "id": "rodney-hall",
+  "name": "Rodney Hall",
+  "firstName": "Rodney",
+  "lastName": "Hall",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-20",
+  "jurisdiction": "Mississippi House of Representatives",
+  "county": [
+    "Mississippi"
+  ],
+  "termStart": "2024-01-02",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "State Capitol 400 High St., Jackson, MS 39201",
+    "phone": "601-359-3770",
+    "email": "rhall@house.ms.gov",
+    "website": "https://billstatus.ls.state.ms.us/members/house/hall.xml"
+  },
+  "bio": "Rodney Hall serves as State Representative for Mississippi House of Representatives District 20. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "MS",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://billstatus.ls.state.ms.us/members/house/hall.xml"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ms/legislature/Rodney-Hall-6d293363-c72f-479b-81fc-225071ac4913.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Rodney_Hall_(Mississippi)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Rodney_Hall_(Mississippi_politician)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/211403/rodney-hall"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/rodneyhallforms"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

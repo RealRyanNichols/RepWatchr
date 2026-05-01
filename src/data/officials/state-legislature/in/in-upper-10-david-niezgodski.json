@@ -1,0 +1,72 @@
+{
+  "id": "david-niezgodski",
+  "name": "David Niezgodski",
+  "firstName": "David",
+  "lastName": "Niezgodski",
+  "photo": "/images/officials/state-legislature/in/david-niezgodski.jpg",
+  "photoSourceUrl": "https://indianasenatedemocrats.org/wp-content/uploads/2022/12/Senator-niezgodski-Indiana-State-Flag-Headshot.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-10",
+  "jurisdiction": "Indiana Senate",
+  "county": [
+    "Indiana"
+  ],
+  "termStart": "2016-11-08",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "200 W. Washington St., Indianapolis, IN 46204",
+    "phone": "800-382-9467",
+    "email": "s10@iga.in.gov",
+    "website": "https://iga.in.gov/legislative/2021/legislators/legislator_david_niezgodski_1"
+  },
+  "bio": "David Niezgodski serves as State Senator for Indiana Senate District 10. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "IN",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://iga.in.gov/legislative/2021/legislators/legislator_david_niezgodski_1"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/in/legislature/David-Niezgodski-1fad6d9f-7d2c-4b2e-a74f-26a2ea44f371.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://indianasenatedemocrats.org/wp-content/uploads/2022/12/Senator-niezgodski-Indiana-State-Flag-Headshot.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://api.iga.in.gov/2021/legislators/david_niezgodski_1"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/David_Niezgodski"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/David_L._Niezgodski"
+    },
+    {
+      "title": "Public source",
+      "url": "https://iga.in.gov/legislative/2021/legislators/legislator_david_niezgodski_1/"
+    },
+    {
+      "title": "Public source",
+      "url": "https://indianasenatedemocrats.org/senators/s10"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/57875/david-niezgodski"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.indianasenatedemocrats.org/s10"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

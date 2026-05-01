@@ -1,0 +1,68 @@
+{
+  "id": "amy-morrin-bello",
+  "name": "Amy Morrin Bello",
+  "firstName": "Amy",
+  "lastName": "Morrin Bello",
+  "photo": "/images/officials/state-legislature/ct/amy-morrin-bello.jpg",
+  "photoSourceUrl": "http://www2.housedems.ct.gov/MorrinBello/images/MorrinBello_HS.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-28",
+  "jurisdiction": "Connecticut House of Representatives",
+  "county": [
+    "Connecticut"
+  ],
+  "termStart": "2021-01-06",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 4040, Legislative Office Building 300 Capitol Ave., Hartford, CT 06106",
+    "phone": "800-842-8267",
+    "email": "amy.morrinbello@cga.ct.gov",
+    "website": "https://cga.ct.gov/asp/CGABillStatus/CGAMemberBills.asp?dist_code=%27028%27&dist_name=Morrin%20Bello,%20Amy"
+  },
+  "bio": "Amy Morrin Bello serves as State Representative for Connecticut House of Representatives District 28. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "CT",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://cga.ct.gov/asp/CGABillStatus/CGAMemberBills.asp?dist_code=%27028%27&dist_name=Morrin%20Bello,%20Amy"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ct/legislature/Amy-Morrin-Bello-ff1c4d90-5cc3-4ff9-8f31-454d03803816.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "http://www2.housedems.ct.gov/MorrinBello/images/MorrinBello_HS.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "ftp://ftp.cga.ct.gov/pub/data/LegislatorDatabase.csv"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Amy_Bello"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Amy_Morrin_Bello"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/193864/amy-morrin-bello"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.housedems.ct.gov/morrinbello"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/amy-morrin-bello-596717160"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

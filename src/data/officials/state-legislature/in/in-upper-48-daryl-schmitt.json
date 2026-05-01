@@ -1,0 +1,52 @@
+{
+  "id": "daryl-schmitt",
+  "name": "Daryl Schmitt",
+  "firstName": "Daryl",
+  "lastName": "Schmitt",
+  "photo": "/images/officials/state-legislature/in/daryl-schmitt.jpg",
+  "photoSourceUrl": "https://storage.googleapis.com/enview-public-general/legislative-people-photos/150061.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-48",
+  "jurisdiction": "Indiana Senate",
+  "county": [
+    "Indiana"
+  ],
+  "termStart": "2024-09-10",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "200 W. Washington St., Indianapolis, IN 46204",
+    "phone": "317-232-9400",
+    "email": "s48@iga.in.gov",
+    "website": "https://www.indianasenaterepublicans.com/schmitt"
+  },
+  "bio": "Daryl Schmitt serves as State Senator for Indiana Senate District 48. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "IN",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.indianasenaterepublicans.com/schmitt"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/in/legislature/Daryl-Schmitt-06fded2a-c138-46b5-9966-7662c0f28c41.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://storage.googleapis.com/enview-public-general/legislative-people-photos/150061.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Daryl_Schmitt"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Daryl_Schmitt"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

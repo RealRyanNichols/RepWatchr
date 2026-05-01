@@ -1,0 +1,60 @@
+{
+  "id": "matt-blake",
+  "name": "Matt Blake",
+  "firstName": "Matt",
+  "lastName": "Blake",
+  "photo": "/images/officials/state-legislature/ia/matt-blake.jpg",
+  "photoSourceUrl": "https://www.legis.iowa.gov/photo?action=getPhoto&ga=91&pid=37460",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-22",
+  "jurisdiction": "Iowa Senate",
+  "county": [
+    "Iowa"
+  ],
+  "termStart": "2025-01-02",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "1007 E. Grand Ave., Des Moines, IA 50319",
+    "phone": "515-281-3371",
+    "email": "matt.blake@legis.iowa.gov",
+    "website": "https://www.legis.iowa.gov/legislators/legislator?ga=91&personID=37460"
+  },
+  "bio": "Matt Blake serves as State Senator for Iowa Senate District 22. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "IA",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.legis.iowa.gov/legislators/legislator?ga=91&personID=37460"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ia/legislature/Matt-Blake-4bb97641-21a7-4aaa-b4d8-7f0dfcacd3a0.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://www.legis.iowa.gov/photo?action=getPhoto&ga=91&pid=37460"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Matt_Blake_(Iowa)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.dickinsonbradshaw.com/attorney-profiles/matthew-d-blake"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.legis.iowa.gov/legislators/legislator?personID=37460"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/matt-blake-51532666"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

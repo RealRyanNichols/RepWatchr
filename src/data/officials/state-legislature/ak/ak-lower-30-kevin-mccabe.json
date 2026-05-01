@@ -1,0 +1,72 @@
+{
+  "id": "kevin-mccabe",
+  "name": "Kevin McCabe",
+  "firstName": "Kevin",
+  "lastName": "McCabe",
+  "photo": "/images/officials/state-legislature/ak/kevin-mccabe.jpg",
+  "photoSourceUrl": "http://akleg.gov/images/legislators/450x600/MCA.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-30",
+  "jurisdiction": "Alaska House of Representatives",
+  "county": [
+    "Alaska"
+  ],
+  "termStart": "2023-01-17",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "State Capitol Room 13, 120 4th St., Juneau, AK 99801",
+    "phone": "907-465-2679",
+    "email": "representative.kevin.mccabe@akleg.gov",
+    "website": "https://akhousemajority.com/rep-mccabe/"
+  },
+  "bio": "Kevin McCabe serves as State Representative for Alaska House of Representatives District 30. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "AK",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://akhousemajority.com/rep-mccabe/"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ak/legislature/Kevin-McCabe-0160c6d2-4090-4143-8e23-f8501501bdd0.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "http://akleg.gov/images/legislators/450x600/MCA.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://akhousemajority.com/rep-mccabe"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Kevin_McCabe_(Alaska)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Kevin_J._McCabe"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/194398/kevin-mccabe"
+    },
+    {
+      "title": "Public source",
+      "url": "https://w3.akleg.gov"
+    },
+    {
+      "title": "Public source",
+      "url": "https://w3.akleg.gov/"
+    },
+    {
+      "title": "member list page",
+      "url": "https://www.akleg.gov/basis/mbr_info.asp?session=33"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

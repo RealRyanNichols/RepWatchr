@@ -1,0 +1,58 @@
+{
+  "id": "tesa-schwans",
+  "name": "Tesa Schwans",
+  "firstName": "Tesa",
+  "lastName": "Schwans",
+  "photo": "/images/officials/state-legislature/sd/tesa-schwans.jpg",
+  "photoSourceUrl": "https://s3.amazonaws.com/ballotpedia-api4/files/thumbs/200/300/TesaSchwans2024.jpeg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-9",
+  "jurisdiction": "South Dakota House of Representatives",
+  "county": [
+    "South Dakota"
+  ],
+  "termStart": "2025-01-14",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "email": "tesa.schwans@sdlegislature.gov",
+    "website": "https://sdlegislature.gov/Legislators/Profile/4717/Detail"
+  },
+  "bio": "Tesa Schwans serves as State Representative for South Dakota House of Representatives District 9. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "SD",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://sdlegislature.gov/Legislators/Profile/4717/Detail"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/sd/legislature/Tesa-Schwans-052b96bd-7f02-4518-ba11-b1a55084149e.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://s3.amazonaws.com/ballotpedia-api4/files/thumbs/200/300/TesaSchwans2024.jpeg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Tesa_Schwans"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Tesa_Schwans"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/216159/tesa-schwans"
+    },
+    {
+      "title": "Public source",
+      "url": "https://sdlegislature.gov/Legislators/Profile/4818/Detail"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

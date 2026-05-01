@@ -1,0 +1,57 @@
+{
+  "id": "andre-baker",
+  "name": "Andre Baker",
+  "firstName": "Andre",
+  "lastName": "Baker",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-124",
+  "jurisdiction": "Connecticut House of Representatives",
+  "county": [
+    "Connecticut"
+  ],
+  "termStart": "2015-01-07",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 5005, Legislative Office Building 300 Capitol Ave., Hartford, CT 06106",
+    "phone": "860-240-8585",
+    "email": "andre.baker@cga.ct.gov",
+    "website": "https://cga.ct.gov/asp/CGABillStatus/CGAMemberBills.asp?dist_code=%27124%27&dist_name=Baker,%20Andre%20F."
+  },
+  "bio": "Andre Baker serves as State Representative for Connecticut House of Representatives District 124. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "CT",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://cga.ct.gov/asp/CGABillStatus/CGAMemberBills.asp?dist_code=%27124%27&dist_name=Baker,%20Andre%20F."
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ct/legislature/Andre-F-Baker-Jr-e823b0bf-1132-4ed8-b860-e0febf9a275a.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "ftp://ftp.cga.ct.gov/pub/data/LegislatorDatabase.csv"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Andre_Baker"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Andre_Baker"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/81211/andre-baker-jr"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.housedems.ct.gov/Baker"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

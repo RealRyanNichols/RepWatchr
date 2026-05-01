@@ -1,0 +1,68 @@
+{
+  "id": "tone-felipe",
+  "name": "Tone Felipe",
+  "firstName": "Tone",
+  "lastName": "Felipe",
+  "photo": "/images/officials/state-legislature/ct/tone-felipe.jpg",
+  "photoSourceUrl": "http://www2.housedems.ct.gov/Felipe/images/Felipe_HS.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-130",
+  "jurisdiction": "Connecticut House of Representatives",
+  "county": [
+    "Connecticut"
+  ],
+  "termStart": "2019-05-13",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 1801, Legislative Office Building 300 Capitol Ave., Hartford, CT 06106",
+    "phone": "860-240-8585",
+    "email": "antonio.felipe@cga.ct.gov",
+    "website": "https://cga.ct.gov/asp/CGABillStatus/CGAMemberBills.asp?dist_code=%27130%27&dist_name=Felipe,%20Antonio"
+  },
+  "bio": "Tone Felipe serves as State Representative for Connecticut House of Representatives District 130. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "CT",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://cga.ct.gov/asp/CGABillStatus/CGAMemberBills.asp?dist_code=%27130%27&dist_name=Felipe,%20Antonio"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ct/legislature/Antonio-Felipe-caaba025-7a5a-401d-8714-73f627651196.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "http://www2.housedems.ct.gov/Felipe/images/Felipe_HS.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "ftp://ftp.cga.ct.gov/pub/data/LegislatorDatabase.csv"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Antonio_Felipe"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Antonio_Felipe"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/186463/antonio-felipe"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.housedems.ct.gov/felipe"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/antonio-felipe-8810aa157"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

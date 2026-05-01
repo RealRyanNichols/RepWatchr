@@ -1,0 +1,72 @@
+{
+  "id": "trey-sherwood",
+  "name": "Trey Sherwood",
+  "firstName": "Trey",
+  "lastName": "Sherwood",
+  "photo": "/images/officials/state-legislature/wy/trey-sherwood.jpg",
+  "photoSourceUrl": "https://wyoleg.gov/LegislatorSummary/Photos/68th-SherwoodTrey.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-14",
+  "jurisdiction": "Wyoming House of Representatives",
+  "county": [
+    "Wyoming"
+  ],
+  "termStart": "2021-01-04",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "State Capitol 200 W. 24th St., Cheyenne, WY 82002",
+    "phone": "307-777-7881",
+    "email": "trey.sherwood@wyoleg.gov",
+    "website": "https://www.wyoleg.gov/Legislators/2023/H/2072"
+  },
+  "bio": "Trey Sherwood serves as State Representative for Wyoming House of Representatives District 14. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "WY",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.wyoleg.gov/Legislators/2023/H/2072"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/wy/legislature/Trey-Sherwood-b2265fcb-f768-4617-ad03-15f5b65af79f.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://wyoleg.gov/LegislatorSummary/Photos/68th-SherwoodTrey.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Trey_Sherwood"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Trey_Sherwood"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/treysherwood"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.wyoleg.gov/Legislators/2025/H/2072"
+    },
+    {
+      "title": "Public source",
+      "url": "https://wyoleg.gov/Legislators/2021/D/2072"
+    },
+    {
+      "title": "Public source",
+      "url": "https://wyoleg.gov/LsoService/api/legislator/2021/H"
+    },
+    {
+      "title": "Public source",
+      "url": "https://wyoleg.gov/LsoService/api/legislator/2023/H"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

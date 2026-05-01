@@ -1,0 +1,57 @@
+{
+  "id": "terry-falk",
+  "name": "Terry Falk",
+  "firstName": "Terry",
+  "lastName": "Falk",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-10",
+  "jurisdiction": "Montana House of Representatives",
+  "county": [
+    "Montana"
+  ],
+  "termStart": "2025-01-06",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Capitol Building, 1301 E. 6th Ave. P.O. Box 200400, Helena, MT 59620",
+    "phone": "406-444-4800",
+    "email": "terry.falk@legmt.gov",
+    "website": "https://leg.mt.gov/legislator-information/roster/individual/7626"
+  },
+  "bio": "Terry Falk serves as State Representative for Montana House of Representatives District 10. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "MT",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://leg.mt.gov/legislator-information/roster/individual/7626"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/mt/legislature/Terry-Falk-be2c0041-9ca1-48d1-8244-023a31458b5e.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Terry_Falk"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Terry_Falk"
+    },
+    {
+      "title": "Public source",
+      "url": "https://legislators.legmt.gov/#/legislator/75"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.legmt.gov/legislators/1336"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/terry-falk-2758b716"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

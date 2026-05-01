@@ -1,0 +1,60 @@
+{
+  "id": "kelly-dooner",
+  "name": "Kelly Dooner",
+  "firstName": "Kelly",
+  "lastName": "Dooner",
+  "photo": "/images/officials/state-legislature/ma/kelly-dooner.jpg",
+  "photoSourceUrl": "https://malegislature.gov/Legislators/Profile/170/KAD0.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-Third Bristol and Plymouth",
+  "jurisdiction": "Massachusetts Senate",
+  "county": [
+    "Massachusetts"
+  ],
+  "termStart": "2025-01-01",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 213-B, State House 24 Beacon St., Boston, MA 02133",
+    "phone": "617-722-1551",
+    "email": "kelly.dooner@masenate.gov",
+    "website": "https://malegislature.gov/Legislators/Profile/KAD0"
+  },
+  "bio": "Kelly Dooner serves as State Senator for Massachusetts Senate District Third Bristol and Plymouth. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "MA",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://malegislature.gov/Legislators/Profile/KAD0"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ma/legislature/Kelly-Dooner-062618e6-3ba4-4170-8b4f-9d0fa325a9ab.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://malegislature.gov/Legislators/Profile/170/KAD0.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Kelly_Dooner"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Kelly_Dooner"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/189540/kelly-dooner"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/kelly-a-dooner-b4580297"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

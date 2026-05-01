@@ -1,0 +1,72 @@
+{
+  "id": "howard-marklein",
+  "name": "Howard Marklein",
+  "firstName": "Howard",
+  "lastName": "Marklein",
+  "photo": "/images/officials/state-legislature/wi/howard-marklein.jpg",
+  "photoSourceUrl": "https://docs.legis.wisconsin.gov/2023/legislators/senate/2426.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-17",
+  "jurisdiction": "Wisconsin Senate",
+  "county": [
+    "Wisconsin"
+  ],
+  "termStart": "2015-01-03",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "State Capitol Room 316 East, P.O. Box 7882 , 2 E. Main St., Madison, WI 53707",
+    "phone": "608-266-0703",
+    "email": "sen.marklein@legis.wi.gov",
+    "website": "https://docs.legis.wisconsin.gov/2017/legislators/senate/1516"
+  },
+  "bio": "Howard Marklein serves as State Senator for Wisconsin Senate District 17. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "WI",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://docs.legis.wisconsin.gov/2017/legislators/senate/1516"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/wi/legislature/Howard-L-Marklein-c405ad68-fdbd-43fe-abc2-f449f33c89b0.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://docs.legis.wisconsin.gov/2023/legislators/senate/2426.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Howard_Marklein"
+    },
+    {
+      "title": "Public source",
+      "url": "https://docs.legis.wisconsin.gov/2019/legislators/senate/1908"
+    },
+    {
+      "title": "Public source",
+      "url": "https://docs.legis.wisconsin.gov/2021/legislators/senate"
+    },
+    {
+      "title": "Public source",
+      "url": "https://docs.legis.wisconsin.gov/2021/legislators/senate/"
+    },
+    {
+      "title": "Public source",
+      "url": "https://docs.legis.wisconsin.gov/2021/legislators/senate/2105"
+    },
+    {
+      "title": "Public source",
+      "url": "https://docs.legis.wisconsin.gov/2023/legislators/senate"
+    },
+    {
+      "title": "members list page",
+      "url": "https://docs.legis.wisconsin.gov/2023/legislators/senate/"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

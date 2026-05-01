@@ -1,0 +1,64 @@
+{
+  "id": "jay-chaudhuri",
+  "name": "Jay Chaudhuri",
+  "firstName": "Jay",
+  "lastName": "Chaudhuri",
+  "photo": "/images/officials/state-legislature/nc/jay-chaudhuri.jpg",
+  "photoSourceUrl": "https://www.ncleg.gov/Members/MemberImage/S/395/Low",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-15",
+  "jurisdiction": "North Carolina Senate",
+  "county": [
+    "North Carolina"
+  ],
+  "termStart": "2019-01-01",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 1117, North Carolina Legislative Building 16 W. Jones St., Raleigh, NC 27601",
+    "phone": "919-715-6400",
+    "email": "jay.chaudhuri@ncleg.gov",
+    "website": "https://www.ncleg.gov/Members/Biography/S/395"
+  },
+  "bio": "Jay Chaudhuri serves as State Senator for North Carolina Senate District 15. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "NC",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.ncleg.gov/Members/Biography/S/395"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/nc/legislature/Jay-J-Chaudhuri-75860d99-3e31-4c38-b511-734f76477c9b.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://www.ncleg.gov/Members/MemberImage/S/395/Low"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Jay_Chaudhuri"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Jay_Chaudhuri"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/166590/jay-chaudhuri"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/jaychaudhuri"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.ncleg.gov/Members/MemberTable/S"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

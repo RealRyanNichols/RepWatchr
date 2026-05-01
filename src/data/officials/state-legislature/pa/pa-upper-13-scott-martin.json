@@ -1,0 +1,74 @@
+{
+  "id": "scott-martin",
+  "name": "Scott Martin",
+  "firstName": "Scott",
+  "lastName": "Martin",
+  "party": "R",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-13",
+  "jurisdiction": "Pennsylvania Senate",
+  "county": [
+    "Pennsylvania"
+  ],
+  "termStart": "2016-12-01",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 281, Main Capitol Senate Box 203013, Harrisburg, PA 17120",
+    "phone": "717-787-6535",
+    "email": "smartin@pasen.gov",
+    "website": "https://senatorscottmartinpa.com/",
+    "socialMedia": {
+      "x": "https://x.com/ScottFMartin",
+      "twitter": "https://x.com/ScottFMartin",
+      "facebook": "https://facebook.com/SenatorScottMartinPA"
+    }
+  },
+  "bio": "Scott Martin serves as State Senator for Pennsylvania Senate District 13. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "PA",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://senatorscottmartinpa.com/"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/pa/legislature/Scott-Martin-c2fcd2dc-22f8-4ec2-b70a-439bc6d60802.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Scott_Martin_(Pennsylvania)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Scott_Martin_(Pennsylvania_politician)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/107945/scott-martin"
+    },
+    {
+      "title": "Public source",
+      "url": "https://senatorscottmartinpa.com"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.legis.state.pa.us/cfdocs/legis/home/member_information/mbrList.cfm?body=S&sort=alpha"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.legis.state.pa.us/cfdocs/legis/home/member_information/Senate_bio.cfm?id=1763"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.legis.state.pa.us/cfdocs/legis/home/member_information/senators_alpha.cfm"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/scott-martin-a1b2755"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

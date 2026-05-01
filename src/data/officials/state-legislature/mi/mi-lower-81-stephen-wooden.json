@@ -1,0 +1,53 @@
+{
+  "id": "stephen-wooden",
+  "name": "Stephen Wooden",
+  "firstName": "Stephen",
+  "lastName": "Wooden",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-81",
+  "jurisdiction": "Michigan House of Representatives",
+  "county": [
+    "Michigan"
+  ],
+  "termStart": "2025-01-01",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room S-1185, Anderson House Office Building 124 N. Capitol Ave., Lansing, MI 48933",
+    "phone": "517-373-1790",
+    "email": "stephenwooden@house.mi.gov",
+    "website": "https://housedems.com/stephen-wooden/"
+  },
+  "bio": "Stephen Wooden serves as State Representative for Michigan House of Representatives District 81. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "MI",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://housedems.com/stephen-wooden/"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/mi/legislature/Stephen-Wooden-a071cb31-2347-40a8-a88b-ec72bacdeffd.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Stephen_Wooden"
+    },
+    {
+      "title": "Public source",
+      "url": "https://housedems.com/stephen-wooden"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/187891/stephen-wooden"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/stephenwooden"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

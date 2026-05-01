@@ -1,0 +1,53 @@
+{
+  "id": "rebecca-martinez",
+  "name": "Rebecca Martinez",
+  "firstName": "Rebecca",
+  "lastName": "Martinez",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-22",
+  "jurisdiction": "Connecticut House of Representatives",
+  "county": [
+    "Connecticut"
+  ],
+  "termStart": "2025-01-08",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 4044, Legislative Office Building 300 Capitol Ave., Hartford, CT 06106",
+    "phone": "860-240-8585",
+    "email": "rebecca.martinez@cga.ct.gov",
+    "website": "https://www.housedems.ct.gov/martinez"
+  },
+  "bio": "Rebecca Martinez serves as State Representative for Connecticut House of Representatives District 22. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "CT",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.housedems.ct.gov/martinez"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ct/legislature/Rebecca-Martinez-606b5b0a-a9f3-4625-8224-e7f66bd3eed4.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Rebecca_Martinez"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Rebecca_Martinez"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/208565/rebecca-martinez"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/rebecca-martinez-05509016b"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

@@ -1,0 +1,65 @@
+{
+  "id": "bob-norris",
+  "name": "Bob Norris",
+  "firstName": "Bob",
+  "lastName": "Norris",
+  "party": "R",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-Franklin",
+  "jurisdiction": "Vermont Senate",
+  "county": [
+    "Vermont"
+  ],
+  "termStart": "2023-01-04",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Vermont State House 115 State St., Montpelier, VT 05633",
+    "phone": "802-828-2228",
+    "email": "rnorris@leg.state.vt.us",
+    "website": "https://legislature.vermont.gov/Documents/SmallMaps/FRA-4.pdf"
+  },
+  "bio": "Bob Norris serves as State Senator for Vermont Senate District Franklin. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "VT",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://legislature.vermont.gov/Documents/SmallMaps/FRA-4.pdf"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/vt/legislature/Robert-Norris-2f1d3491-871e-4eb6-988b-57d3c9ea7a19.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Robert_Norris"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Robert_Norris_(Vermont_politician)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://legislature.vermont.gov/people/loadAll/2022"
+    },
+    {
+      "title": "Public source",
+      "url": "https://legislature.vermont.gov/people/single/2022/34702"
+    },
+    {
+      "title": "Public source",
+      "url": "https://legislature.vermont.gov/people/single/2024/37409"
+    },
+    {
+      "title": "Public source",
+      "url": "https://legislature.vermont.gov/people/single/2026/37409"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/robert-norris-90760231"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

@@ -1,0 +1,60 @@
+{
+  "id": "tom-millett",
+  "name": "Tom Millett",
+  "firstName": "Tom",
+  "lastName": "Millett",
+  "photo": "/images/officials/state-legislature/mt/tom-millett.jpg",
+  "photoSourceUrl": "https://www.legmt.gov/wp-content/legislator-photos/lowres/1403.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-2",
+  "jurisdiction": "Montana House of Representatives",
+  "county": [
+    "Montana"
+  ],
+  "termStart": "2025-01-06",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Capitol Building, 1301 E. 6th Ave. P.O. Box 200400, Helena, MT 59620",
+    "phone": "406-444-4800",
+    "email": "tom.millett@legmt.gov",
+    "website": "https://legislators.legmt.gov/#/legislator/241"
+  },
+  "bio": "Tom Millett serves as State Representative for Montana House of Representatives District 2. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "MT",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://legislators.legmt.gov/#/legislator/241"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/mt/legislature/Tom-Millett-53b80943-16fb-4e9a-a2ff-dc5d476af9de.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://www.legmt.gov/wp-content/legislator-photos/lowres/1403.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Tom_Millett"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Tom_Millett"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/215706/tom-millett"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.legmt.gov/legislators/1403"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

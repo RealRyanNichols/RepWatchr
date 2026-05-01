@@ -1,0 +1,57 @@
+{
+  "id": "josh-lowenthal",
+  "name": "Josh Lowenthal",
+  "firstName": "Josh",
+  "lastName": "Lowenthal",
+  "party": "D",
+  "level": "state",
+  "position": "Assemblymember",
+  "district": "HD-69",
+  "jurisdiction": "California State Assembly",
+  "county": [
+    "California"
+  ],
+  "termStart": "2022-12-05",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 8320, 1021 O St. P.O. Box 942849, Sacramento, CA 94249",
+    "phone": "916-319-2069",
+    "email": "assemblymember.lowenthal@assembly.ca.gov",
+    "website": "https://a69.asmdc.org/"
+  },
+  "bio": "Josh Lowenthal serves as Assemblymember for California State Assembly District 69. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "CA",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://a69.asmdc.org/"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ca/legislature/Josh-Lowenthal-b20254b0-437a-4d3d-9aa9-baa5db2bc5ef.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://a69.asmdc.org"
+    },
+    {
+      "title": "Public source",
+      "url": "https://a69.asmdc.org/biography"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Josh_Lowenthal"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.assembly.ca.gov/assemblymembers"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/josh-lowenthal-82298420"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

@@ -1,0 +1,72 @@
+{
+  "id": "tim-dukes",
+  "name": "Tim Dukes",
+  "firstName": "Tim",
+  "lastName": "Dukes",
+  "photo": "/images/officials/state-legislature/de/tim-dukes.jpg",
+  "photoSourceUrl": "https://housegop.delaware.gov/wp-content/blogs.dir/207/files/sites/207/2023/01/dukes-headshot-compressed2-jan-23.png",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-40",
+  "jurisdiction": "Delaware House of Representatives",
+  "county": [
+    "Delaware"
+  ],
+  "termStart": "2013-01-08",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "P.O. Box 1401 411 Legislative Ave., Dover, DE 19901",
+    "phone": "302-744-4171",
+    "email": "timothy.dukes@delaware.gov",
+    "website": "https://housegop.delaware.gov/members/house-district-40/"
+  },
+  "bio": "Tim Dukes serves as State Representative for Delaware House of Representatives District 40. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "DE",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://housegop.delaware.gov/members/house-district-40/"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/de/legislature/Timothy-D-Dukes-101c752d-fbe4-471c-ae50-f2b1409a328f.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://housegop.delaware.gov/wp-content/blogs.dir/207/files/sites/207/2023/01/dukes-headshot-compressed2-jan-23.png"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Timothy_Dukes_(Delaware)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Timothy_Dukes"
+    },
+    {
+      "title": "Public source",
+      "url": "https://housegop.delaware.gov/members/house-district-40"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/142597/tim-dukes"
+    },
+    {
+      "title": "Public source",
+      "url": "https://legis.delaware.gov/AssemblyMember/150/Dukes"
+    },
+    {
+      "title": "legislator list page",
+      "url": "https://legis.delaware.gov/House"
+    },
+    {
+      "title": "Public source",
+      "url": "https://legis.delaware.gov/json/House/GetRepresentatives"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

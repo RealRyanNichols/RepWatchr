@@ -1,0 +1,74 @@
+{
+  "id": "liz-guzm-n",
+  "name": "Liz Guzm\u00e1n",
+  "firstName": "Liz",
+  "lastName": "Guzm\u00e1n",
+  "party": "D",
+  "level": "state",
+  "position": "Delegate",
+  "district": "HD-22",
+  "jurisdiction": "Virginia House of Delegates",
+  "county": [
+    "Virginia"
+  ],
+  "termStart": "2026-01-14",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 920, General Assembly Building 201 N. 9th St., Richmond, VA 23219",
+    "phone": "804-698-1022",
+    "email": "deleguzman@house.virginia.gov",
+    "website": "https://house.vga.virginia.gov/members/H0297",
+    "socialMedia": {
+      "x": "https://x.com/delegateguzman",
+      "twitter": "https://x.com/delegateguzman",
+      "facebook": "https://facebook.com/elizabethguzmanva"
+    }
+  },
+  "bio": "Liz Guzm\u00e1n serves as Delegate for Virginia House of Delegates District 22. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "VA",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://house.vga.virginia.gov/members/H0297"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/va/legislature/Elizabeth-R-Guzman-34c31079-0077-4ce5-9985-d0f2a95a12a7.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Elizabeth_Guzman"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Elizabeth_Guzm%C3%A1n"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/176356/elizabeth-guzman"
+    },
+    {
+      "title": "Public source",
+      "url": "https://lis.virginia.gov/191/mbr/MBR.HTM"
+    },
+    {
+      "title": "Public source",
+      "url": "https://lis.virginia.gov/201/mbr/MBR.HTM"
+    },
+    {
+      "title": "Public source",
+      "url": "https://lis.virginia.gov/cgi-bin/legp604.exe?191+mbr+H297"
+    },
+    {
+      "title": "Public source",
+      "url": "https://lis.virginia.gov/cgi-bin/legp604.exe?201+mbr+H297"
+    },
+    {
+      "title": "Public source",
+      "url": "https://lis.virginia.gov/cgi-bin/legp604.exe?221+mbr+H297"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

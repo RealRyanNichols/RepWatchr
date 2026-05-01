@@ -1,0 +1,58 @@
+{
+  "id": "glen-vilhauer",
+  "name": "Glen Vilhauer",
+  "firstName": "Glen",
+  "lastName": "Vilhauer",
+  "photo": "/images/officials/state-legislature/sd/glen-vilhauer.jpg",
+  "photoSourceUrl": "https://s3.amazonaws.com/ballotpedia-api4/files/thumbs/200/300/Glen_Vilhauer.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-5",
+  "jurisdiction": "South Dakota Senate",
+  "county": [
+    "South Dakota"
+  ],
+  "termStart": "2025-01-14",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "email": "glen.vilhauer@sdlegislature.gov",
+    "website": "https://sdlegislature.gov/Legislators/Profile/4706/Detail"
+  },
+  "bio": "Glen Vilhauer serves as State Senator for South Dakota Senate District 5. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "SD",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://sdlegislature.gov/Legislators/Profile/4706/Detail"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/sd/legislature/Glen-Vilhauer-4d53d676-05f1-409a-8ef8-762d97143443.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://s3.amazonaws.com/ballotpedia-api4/files/thumbs/200/300/Glen_Vilhauer.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Glen_Vilhauer"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Glen_Vilhauer"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/216106/glen-vilhauer"
+    },
+    {
+      "title": "Public source",
+      "url": "https://sdlegislature.gov/Legislators/Profile/4827/Detail"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

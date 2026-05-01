@@ -1,0 +1,72 @@
+{
+  "id": "debbie-meyers-martin",
+  "name": "Debbie Meyers-Martin",
+  "firstName": "Debbie",
+  "lastName": "Meyers-Martin",
+  "photo": "/images/officials/state-legislature/il/debbie-meyers-martin.jpg",
+  "photoSourceUrl": "https://cdn.ilga.gov/assets/img/members/{E3E2099C-AB6A-442B-B191-3A83D6D3A1E2}.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-38",
+  "jurisdiction": "Illinois House of Representatives",
+  "county": [
+    "Illinois"
+  ],
+  "termStart": "2019-01-09",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 254-W, Stratton Office Building, Springfield, IL 62706",
+    "phone": "217-558-1007",
+    "email": "staterepdebbiemm@gmail.com",
+    "website": "https://ilga.gov/house/Rep.asp?GA=101&MemberID=2741"
+  },
+  "bio": "Debbie Meyers-Martin serves as State Representative for Illinois House of Representatives District 38. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "IL",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://ilga.gov/house/Rep.asp?GA=101&MemberID=2741"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/il/legislature/Debbie-Meyers-Martin-e1d4b5b4-34b8-4d91-ab9f-08c8a361e12a.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://cdn.ilga.gov/assets/img/members/{E3E2099C-AB6A-442B-B191-3A83D6D3A1E2}.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Debbie_Meyers-Martin"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Debbie_Meyers-Martin"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ilga.gov/house/default.asp?GA=101"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ilga.gov/house/default.asp?GA=102"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ilga.gov/house/default.asp?GA=103"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ilga.gov/house/Rep.asp?GA=102&MemberID=2942"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ilga.gov/house/Rep.asp?GA=103&MemberID=3139"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

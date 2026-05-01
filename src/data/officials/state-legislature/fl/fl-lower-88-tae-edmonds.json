@@ -1,0 +1,53 @@
+{
+  "id": "tae-edmonds",
+  "name": "Tae Edmonds",
+  "firstName": "Tae",
+  "lastName": "Edmonds",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-88",
+  "jurisdiction": "Florida House of Representatives",
+  "county": [
+    "Florida"
+  ],
+  "termStart": "2022-03-10",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 1101, The Capitol 402 S. Monroe St., Tallahassee, FL 32399",
+    "phone": "850-717-5088",
+    "email": "jervonte.edmonds@flhouse.gov",
+    "website": "https://myfloridahouse.gov/Sections/Representatives/details.aspx?MemberId=4842&LegislativeTermId=90"
+  },
+  "bio": "Tae Edmonds serves as State Representative for Florida House of Representatives District 88. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "FL",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://myfloridahouse.gov/Sections/Representatives/details.aspx?MemberId=4842&LegislativeTermId=90"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/fl/legislature/Jervonte-Tae-Edmonds-bb2ae855-2e7a-4744-9271-a8ae1af89428.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Jervonte_Edmonds"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.flhouse.gov/Sections/Representatives/details.aspx?MemberId=4842"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/jervonte-\u201ctae\u201d-edmonds-51b47a52"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.myfloridahouse.gov/Sections/Representatives/details.aspx?MemberId=4842&LegislativeTermId=89"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

@@ -1,0 +1,56 @@
+{
+  "id": "marshall-archer",
+  "name": "Marshall Archer",
+  "firstName": "Marshall",
+  "lastName": "Archer",
+  "photo": "/images/officials/state-legislature/me/marshall-archer.jpg",
+  "photoSourceUrl": "https://static.wixstatic.com/media/5f6ec7_b6a4675891d74ce79ddda0199423840c~mv2.jpg/v1/fill/w_453,h_453,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/36802673_10216176856237143_8803646993508.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-129",
+  "jurisdiction": "Maine House of Representatives",
+  "county": [
+    "Maine"
+  ],
+  "termStart": "2024-12-03",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 333, House Democratic Office 2 State House Station, Augusta, ME 04333",
+    "phone": "800-423-2900",
+    "email": "marshall.archer@legislature.maine.gov",
+    "website": "https://legislature.maine.gov/house/house/MemberProfiles/Details/3139"
+  },
+  "bio": "Marshall Archer serves as State Representative for Maine House of Representatives District 129. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "ME",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://legislature.maine.gov/house/house/MemberProfiles/Details/3139"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/me/legislature/Marshall-Archer-9b3c17b4-3c7a-4f8d-96bb-8215a385fdd2.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://static.wixstatic.com/media/5f6ec7_b6a4675891d74ce79ddda0199423840c~mv2.jpg/v1/fill/w_453,h_453,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/36802673_10216176856237143_8803646993508.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Marshall_Archer"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/marshallarcher"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.maine.gov/housedems/node/4077"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

@@ -1,0 +1,68 @@
+{
+  "id": "bob-godfrey",
+  "name": "Bob Godfrey",
+  "firstName": "Bob",
+  "lastName": "Godfrey",
+  "photo": "/images/officials/state-legislature/ct/bob-godfrey.jpg",
+  "photoSourceUrl": "http://www2.housedems.ct.gov/Godfrey/images/Godfrey_HS.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-110",
+  "jurisdiction": "Connecticut House of Representatives",
+  "county": [
+    "Connecticut"
+  ],
+  "termStart": "",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 4107, Legislative Office Building 300 Capitol Ave., Hartford, CT 06106",
+    "phone": "860-240-8500",
+    "email": "bob.godfrey@cga.ct.gov",
+    "website": "https://cga.ct.gov/asp/CGABillStatus/CGAMemberBills.asp?dist_code=%27110%27&dist_name=Godfrey,%20Bob"
+  },
+  "bio": "Bob Godfrey serves as State Representative for Connecticut House of Representatives District 110. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "CT",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://cga.ct.gov/asp/CGABillStatus/CGAMemberBills.asp?dist_code=%27110%27&dist_name=Godfrey,%20Bob"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ct/legislature/Bob-Godfrey-97e1ed70-218e-41d6-abad-73cf8c717c5b.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "http://www2.housedems.ct.gov/Godfrey/images/Godfrey_HS.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "ftp://ftp.cga.ct.gov/pub/data/LegislatorDatabase.csv"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Bob_Godfrey"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Bob_Godfrey_(politician)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/7193/bob-godfrey"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.housedems.ct.gov/Godfrey"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/bob-godfrey-807bb312"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

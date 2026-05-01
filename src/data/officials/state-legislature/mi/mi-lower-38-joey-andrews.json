@@ -1,0 +1,61 @@
+{
+  "id": "joey-andrews",
+  "name": "Joey Andrews",
+  "firstName": "Joey",
+  "lastName": "Andrews",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-38",
+  "jurisdiction": "Michigan House of Representatives",
+  "county": [
+    "Michigan"
+  ],
+  "termStart": "2023-01-01",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room S-887, Anderson House Office Building 124 N. Capitol Ave., Lansing, MI 48933",
+    "phone": "517-373-0827",
+    "email": "joeyandrews@house.mi.gov",
+    "website": "https://housedems.com/joey-andrews/"
+  },
+  "bio": "Joey Andrews serves as State Representative for Michigan House of Representatives District 38. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "MI",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://housedems.com/joey-andrews/"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/mi/legislature/Joey-Andrews-fd51ab83-f1b7-4044-b794-871ba167b504.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Joey_Andrews"
+    },
+    {
+      "title": "Public source",
+      "url": "https://housedems.com/joey-andrews"
+    },
+    {
+      "title": "Public source",
+      "url": "https://housedems.com/Joey-Andrews"
+    },
+    {
+      "title": "Member Details Page",
+      "url": "https://housedems.com/Joey-Andrews/"
+    },
+    {
+      "title": "Members List Page",
+      "url": "https://www.house.mi.gov/AllRepresentatives"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/jbandrewsiv"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

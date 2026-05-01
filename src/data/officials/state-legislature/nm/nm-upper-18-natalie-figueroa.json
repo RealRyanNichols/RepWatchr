@@ -1,0 +1,68 @@
+{
+  "id": "natalie-figueroa",
+  "name": "Natalie Figueroa",
+  "firstName": "Natalie",
+  "lastName": "Figueroa",
+  "party": "D",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-18",
+  "jurisdiction": "New Mexico Senate",
+  "county": [
+    "New Mexico"
+  ],
+  "termStart": "2025-01-01",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "State Capitol Room 416G, New Mexico  490 Old Santa Fe Trail, Santa Fe, NM 87501",
+    "phone": "505-986-4266",
+    "email": "natalie.figueroa@nmlegis.gov",
+    "website": "https://www.linkedin.com/in/natalie-figueroa-150a0670/",
+    "socialMedia": {
+      "facebook": "https://facebook.com/Natalie4NM"
+    }
+  },
+  "bio": "Natalie Figueroa serves as State Senator for New Mexico Senate District 18. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "NM",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.linkedin.com/in/natalie-figueroa-150a0670/"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/nm/legislature/Natalie-Figueroa-48969449-b004-4ca3-a72b-8508e95e0051.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Natalie_R._Figueroa"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Natalie_Figueroa_(politician)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/168298/natalie-figueroa"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/natalie-figueroa-150a0670"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.nmlegis.gov/Members/Legislator?SponCode=HFIGU"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.nmlegis.gov/Members/Legislator?SponCode=SFIGU"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.nmlegis.gov/Members/Legislator_List?T=R"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

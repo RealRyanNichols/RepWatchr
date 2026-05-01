@@ -1,0 +1,53 @@
+{
+  "id": "jack-martins",
+  "name": "Jack Martins",
+  "firstName": "Jack",
+  "lastName": "Martins",
+  "party": "R",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-7",
+  "jurisdiction": "New York Senate",
+  "county": [
+    "New York"
+  ],
+  "termStart": "2023-01-01",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 608, Legislative Office Building, Albany, NY 12247",
+    "phone": "518-455-2677",
+    "email": "martins@nysenate.gov",
+    "website": "https://www.nysenate.gov/senators/jack-m-martins"
+  },
+  "bio": "Jack Martins serves as State Senator for New York Senate District 7. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "NY",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.nysenate.gov/senators/jack-m-martins"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ny/legislature/Jack-M-Martins-7f031836-0a9e-46d2-bcab-7cc6a14848df.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Jack_Martins"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Jack_Martins"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/110269/jack-martins"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/jack-martins-632a1558"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

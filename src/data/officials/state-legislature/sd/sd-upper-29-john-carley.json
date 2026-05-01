@@ -1,0 +1,60 @@
+{
+  "id": "john-carley",
+  "name": "John Carley",
+  "firstName": "John",
+  "lastName": "Carley",
+  "photo": "/images/officials/state-legislature/sd/john-carley.jpg",
+  "photoSourceUrl": "https://s3.amazonaws.com/ballotpedia-api4/files/thumbs/200/300/JohnCarley3.png",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-29",
+  "jurisdiction": "South Dakota Senate",
+  "county": [
+    "South Dakota"
+  ],
+  "termStart": "2025-01-14",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Capitol Building 500 E. Capitol Ave., Pierre, SD 57501",
+    "phone": "605-773-3821",
+    "email": "john.carley@sdlegislature.gov",
+    "website": "https://sdlegislature.gov/Legislators/Profile/4692/Detail"
+  },
+  "bio": "John Carley serves as State Senator for South Dakota Senate District 29. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "SD",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://sdlegislature.gov/Legislators/Profile/4692/Detail"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/sd/legislature/John-Carley-2d13f154-7e05-462c-b8d9-da5c5556d8b9.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://s3.amazonaws.com/ballotpedia-api4/files/thumbs/200/300/JohnCarley3.png"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/John_Carley"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/John_Carley"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/205084/john-carley"
+    },
+    {
+      "title": "Public source",
+      "url": "https://sdlegislature.gov/Legislators/Profile/4740/Detail"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

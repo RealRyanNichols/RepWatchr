@@ -1,0 +1,56 @@
+{
+  "id": "homar-gomez",
+  "name": "Homar Gomez",
+  "firstName": "Homar",
+  "lastName": "Gomez",
+  "photo": "/images/officials/state-legislature/ma/homar-gomez.jpg",
+  "photoSourceUrl": "https://images.squarespace-cdn.com/content/v1/6616e5c7caac657d5a7f9682/0c122a29-b755-4647-a180-d5cbdb08bbcc/Screenshot+2024-04-10+at+4.35.35+PM.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-2nd Hampshire",
+  "jurisdiction": "Massachusetts House of Representatives",
+  "county": [
+    "Massachusetts"
+  ],
+  "termStart": "2025-01-01",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 130, State House 24 Beacon St., Boston, MA 02133",
+    "phone": "413-977-2676",
+    "email": "homar.gomez@mahouse.gov",
+    "website": "https://malegislature.gov/Legislators/Profile/H_G1"
+  },
+  "bio": "Homar Gomez serves as State Representative for Massachusetts House of Representatives District 2nd Hampshire. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "MA",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://malegislature.gov/Legislators/Profile/H_G1"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ma/legislature/Homar-Gomez-6b27dd86-5c03-4223-957c-9efd12c70e04.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://images.squarespace-cdn.com/content/v1/6616e5c7caac657d5a7f9682/0c122a29-b755-4647-a180-d5cbdb08bbcc/Screenshot+2024-04-10+at+4.35.35+PM.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Homar_Gomez"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/218918/homar-gomez"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/homar-gomez-488112281"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

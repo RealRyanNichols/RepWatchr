@@ -1,0 +1,72 @@
+{
+  "id": "tim-hicks",
+  "name": "Tim Hicks",
+  "firstName": "Tim",
+  "lastName": "Hicks",
+  "photo": "/images/officials/state-legislature/tn/tim-hicks.jpg",
+  "photoSourceUrl": "http://www.capitol.tn.gov/house/members/images/h6.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-6",
+  "jurisdiction": "Tennessee House of Representatives",
+  "county": [
+    "Tennessee"
+  ],
+  "termStart": "2020-11-03",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 518, Cordell Hull Building 425 Rep. John Lewis Way North, Nashville, TN 37243",
+    "phone": "615-741-1717",
+    "email": "rep.tim.hicks@capitol.tn.gov",
+    "website": "https://tnhousegop.org/members/representative-tim-hicks/"
+  },
+  "bio": "Tim Hicks serves as State Representative for Tennessee House of Representatives District 6. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "TN",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://tnhousegop.org/members/representative-tim-hicks/"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/tn/legislature/Tim-Hicks-d3ad0df9-8812-46b9-8fb3-6433036a1a9f.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "http://www.capitol.tn.gov/house/members/images/h6.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Tim_Hicks_(Tennessee)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Tim_Hicks_(politician)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/193437/tim-hicks"
+    },
+    {
+      "title": "Public source",
+      "url": "https://tnhousegop.org/members/representative-tim-hicks"
+    },
+    {
+      "title": "Public source",
+      "url": "https://wapp.capitol.tn.gov/apps/LegislatorInfo/directory.aspx?chamber=H"
+    },
+    {
+      "title": "Public source",
+      "url": "https://wapp.capitol.tn.gov/apps/legislatorinfo/member.aspx?district=H6"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.capitol.tn.gov/house/members"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

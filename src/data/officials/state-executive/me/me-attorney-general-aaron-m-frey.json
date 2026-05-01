@@ -1,0 +1,56 @@
+{
+  "id": "aaron-m-frey",
+  "name": "Aaron M. Frey",
+  "firstName": "Aaron M.",
+  "lastName": "Frey",
+  "photo": "/images/officials/state-executive/me/aaron-m-frey.jpg",
+  "photoSourceUrl": "https://www.naag.org/wp-content/uploads/2020/09/ag-ME-Frey-Aaron-2025.png",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "Attorney General",
+  "district": "Maine",
+  "jurisdiction": "Maine statewide public office",
+  "county": [
+    "Maine"
+  ],
+  "termStart": "2019-01-08",
+  "termEnd": "2027-01-05",
+  "contactInfo": {
+    "office": "State House Station 6; Augusta, ME 04333",
+    "phone": "207-626-8800",
+    "email": "Aaron.Frey@legislature.maine.gov",
+    "website": "http://www.maine.gov/legis/house/hsebios/freyam.htm"
+  },
+  "bio": "Aaron M. Frey is listed as Attorney General for Maine. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "ME",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "http://www.maine.gov/legis/house/hsebios/freyam.htm"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/me/executive/Aaron-M-Frey-530fa17b-8a45-4d39-adb1-e9492081a761.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://www.naag.org/wp-content/uploads/2020/09/ag-ME-Frey-Aaron-2025.png"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.maine.gov/ag/about/message.shtml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Aaron_Frey"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.naag.org/attorney-general/aaron-frey/"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

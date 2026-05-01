@@ -1,0 +1,64 @@
+{
+  "id": "solomon-osborne",
+  "name": "Solomon Osborne",
+  "firstName": "Solomon",
+  "lastName": "Osborne",
+  "photo": "/images/officials/state-legislature/ms/solomon-osborne.jpg",
+  "photoSourceUrl": "http://billstatus.ls.state.ms.us/members/house/osborne.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-32",
+  "jurisdiction": "Mississippi House of Representatives",
+  "county": [
+    "Mississippi"
+  ],
+  "termStart": "2019-03-18",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "State Capitol 400 High St., Jackson, MS 39201",
+    "phone": "601-359-3770",
+    "email": "sosborne@house.ms.gov",
+    "website": "https://billstatus.ls.state.ms.us/members/house/osborne.xml"
+  },
+  "bio": "Solomon Osborne serves as State Representative for Mississippi House of Representatives District 32. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "MS",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://billstatus.ls.state.ms.us/members/house/osborne.xml"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ms/legislature/Solomon-Osborne-23d69b3d-2f17-4fa9-a23c-c9ad8db4f7a9.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "http://billstatus.ls.state.ms.us/members/house/osborne.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Solomon_Osborne"
+    },
+    {
+      "title": "Public source",
+      "url": "https://billstatus.ls.state.ms.us/members/hr_membs.xml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Solomon_Osborne"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/186054/solomon-osborne"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/solomon-osborne-11970941"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

@@ -1,0 +1,56 @@
+{
+  "id": "dana-henry",
+  "name": "Dana Henry",
+  "firstName": "Dana",
+  "lastName": "Henry",
+  "photo": "/images/officials/state-legislature/la/dana-henry.jpg",
+  "photoSourceUrl": "https://s3.amazonaws.com/ballotpedia-api4/files/thumbs/200/300/Dana_Henry_20260113_023611.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-100",
+  "jurisdiction": "Louisiana House of Representatives",
+  "county": [
+    "Louisiana"
+  ],
+  "termStart": "2026-03-23",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "P.O. Box 94062 900 N. 3rd St., Baton Rouge, LA 70804",
+    "phone": "225-342-6945",
+    "email": "hse100@legis.la.gov",
+    "website": "https://house.louisiana.gov/H_Reps/members?ID=100"
+  },
+  "bio": "Dana Henry serves as State Representative for Louisiana House of Representatives District 100. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "LA",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://house.louisiana.gov/H_Reps/members?ID=100"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/la/legislature/Dana-Henry-1175d9fd-94fc-4988-98ee-de8d0029de06.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://s3.amazonaws.com/ballotpedia-api4/files/thumbs/200/300/Dana_Henry_20260113_023611.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Dana_Henry"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Dana_Henry"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/danahenry1"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

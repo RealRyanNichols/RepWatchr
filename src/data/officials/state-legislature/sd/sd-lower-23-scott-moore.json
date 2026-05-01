@@ -1,0 +1,55 @@
+{
+  "id": "scott-moore",
+  "name": "Scott Moore",
+  "firstName": "Scott",
+  "lastName": "Moore",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-23",
+  "jurisdiction": "South Dakota House of Representatives",
+  "county": [
+    "South Dakota"
+  ],
+  "termStart": "2023-01-10",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "email": "scott.moore@sdlegislature.gov",
+    "website": "https://sdlegislature.gov/Legislators/Profile/4469/Detail"
+  },
+  "bio": "Scott Moore serves as State Representative for South Dakota House of Representatives District 23. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "SD",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://sdlegislature.gov/Legislators/Profile/4469/Detail"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/sd/legislature/Scott-Moore-f6efc9b6-c985-4765-bd47-8da24d06712b.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Scott_Moore_(South_Dakota)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Scott_Moore_(politician)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/205146/scott-moore"
+    },
+    {
+      "title": "Public source",
+      "url": "https://sdlegislature.gov/Legislators/Profile/4638/Detail"
+    },
+    {
+      "title": "Public source",
+      "url": "https://sdlegislature.gov/Legislators/Profile/4789/Detail"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

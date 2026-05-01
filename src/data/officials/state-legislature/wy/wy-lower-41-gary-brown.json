@@ -1,0 +1,51 @@
+{
+  "id": "gary-brown",
+  "name": "Gary Brown",
+  "firstName": "Gary",
+  "lastName": "Brown",
+  "photo": "/images/officials/state-legislature/wy/gary-brown.jpg",
+  "photoSourceUrl": "https://wyoleg.gov/LegislatorSummary/Photos/68th-BrownGary.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-41",
+  "jurisdiction": "Wyoming House of Representatives",
+  "county": [
+    "Wyoming"
+  ],
+  "termStart": "2025-01-06",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "State Capitol 200 W. 24th St., Cheyenne, WY 82002",
+    "email": "gary.brown@wyoleg.gov",
+    "website": "https://wyoleg.gov/Legislators/2025/H/2140"
+  },
+  "bio": "Gary Brown serves as State Representative for Wyoming House of Representatives District 41. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "WY",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://wyoleg.gov/Legislators/2025/H/2140"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/wy/legislature/Gary-Brown-472c50ea-da65-42c3-a9b3-3639a9881a7f.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://wyoleg.gov/LegislatorSummary/Photos/68th-BrownGary.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Gary_Brown_(Wyoming)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/218338/gary-brown"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

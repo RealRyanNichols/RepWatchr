@@ -1,0 +1,65 @@
+{
+  "id": "robert-jackson",
+  "name": "Robert Jackson",
+  "firstName": "Robert",
+  "lastName": "Jackson",
+  "party": "D",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-31",
+  "jurisdiction": "New York Senate",
+  "county": [
+    "New York"
+  ],
+  "termStart": "2019-01-02",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 306, Legislative Office Building 188 State Street, Albany, NY 12247",
+    "phone": "518-455-2041",
+    "email": "jackson@nysenate.gov",
+    "website": "https://www.nysenate.gov/senators-committees",
+    "socialMedia": {
+      "x": "https://x.com/SenatorRJackson",
+      "twitter": "https://x.com/SenatorRJackson"
+    }
+  },
+  "bio": "Robert Jackson serves as State Senator for New York Senate District 31. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "NY",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.nysenate.gov/senators-committees"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ny/legislature/Robert-Jackson-3da548b5-8a96-4dbf-9bf8-da3755d6caa3.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Robert_Jackson_(New_York)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Robert_Jackson_(New_York_politician)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/44949/robert-jackson"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/robert-jackson-3b45a462"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.nysenate.gov/senators/robert-jackson"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.nysenate.gov/senators/robert-jackson/contact"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

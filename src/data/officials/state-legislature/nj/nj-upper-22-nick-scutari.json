@@ -1,0 +1,69 @@
+{
+  "id": "nick-scutari",
+  "name": "Nick Scutari",
+  "firstName": "Nick",
+  "lastName": "Scutari",
+  "party": "D",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-22",
+  "jurisdiction": "New Jersey Senate",
+  "county": [
+    "New Jersey"
+  ],
+  "termStart": "2004-01-13",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "P.O. Box 068 State House, 145 W. State St., Trenton, NJ 08625",
+    "phone": "609-847-3905",
+    "email": "senscutari@njleg.org",
+    "website": "https://www.njleg.state.nj.us/legislative-roster/237/senator-scutari"
+  },
+  "bio": "Nick Scutari serves as State Senator for New Jersey Senate District 22. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "NJ",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.njleg.state.nj.us/legislative-roster/237/senator-scutari"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/nj/legislature/Nicholas-P-Scutari-4d47b297-b5f4-4d83-94e6-bb95eb91ecd7.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Nicholas_Scutari"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Nicholas_Scutari"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/43083/nicholas-scutari"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/nicholas-scutari-1244269b"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.njleg.state.nj.us/api/legislatorData/legislatorBio/237"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.njleg.state.nj.us/downloads.asp"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.njleg.state.nj.us/legislative-roster"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.njleg.state.nj.us/members/abcroster.asp"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

@@ -1,0 +1,56 @@
+{
+  "id": "dudley-greene",
+  "name": "Dudley Greene",
+  "firstName": "Dudley",
+  "lastName": "Greene",
+  "photo": "/images/officials/state-legislature/nc/dudley-greene.jpg",
+  "photoSourceUrl": "https://www.ncleg.gov/Members/MemberImage/H/777/Low",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-85",
+  "jurisdiction": "North Carolina House of Representatives",
+  "county": [
+    "North Carolina"
+  ],
+  "termStart": "2021-01-01",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 306B1, Legislative Office Building 300 N. Salisbury St., Raleigh, NC 27603",
+    "phone": "919-733-5862",
+    "email": "dudley.greene@ncleg.gov",
+    "website": "https://www.ncleg.gov/Members/Biography/H/777"
+  },
+  "bio": "Dudley Greene serves as State Representative for North Carolina House of Representatives District 85. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "NC",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.ncleg.gov/Members/Biography/H/777"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/nc/legislature/Dudley-Greene-0573192d-0557-449a-9c3e-8462844a79ab.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://www.ncleg.gov/Members/MemberImage/H/777/Low"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Dudley_Greene"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/dudley-greene-847384a2"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.ncleg.gov/Members/MemberTable/H"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

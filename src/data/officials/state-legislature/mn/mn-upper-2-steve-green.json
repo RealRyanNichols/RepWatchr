@@ -1,0 +1,64 @@
+{
+  "id": "steve-green",
+  "name": "Steve Green",
+  "firstName": "Steve",
+  "lastName": "Green",
+  "photo": "/images/officials/state-legislature/mn/steve-green.jpg",
+  "photoSourceUrl": "https://www.senate.mn/graphics/02Green.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-2",
+  "jurisdiction": "Minnesota Senate",
+  "county": [
+    "Minnesota"
+  ],
+  "termStart": "2023-01-03",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 2319, Minnesota Senate Building 95 University Ave. West, St. Paul, MN 55155",
+    "phone": "651-297-8063",
+    "email": "sen.steve.green@mnsenate.gov",
+    "website": "https://www.senate.mn/members/member_bio.html?mem_id=1251"
+  },
+  "bio": "Steve Green serves as State Senator for Minnesota Senate District 2. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "MN",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.senate.mn/members/member_bio.html?mem_id=1251"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/mn/legislature/Steve-Green-9d8b9b67-e74b-4e7f-92d5-52e3c0907f1d.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://www.senate.mn/graphics/02Green.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Steve_Green_(Minnesota)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Steve_Green_(politician)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/109054/steve-green"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.house.leg.state.mn.us/members/hmem.asp"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.senate.mn/api/members"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

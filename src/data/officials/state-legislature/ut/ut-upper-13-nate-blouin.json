@@ -1,0 +1,68 @@
+{
+  "id": "nate-blouin",
+  "name": "Nate Blouin",
+  "firstName": "Nate",
+  "lastName": "Blouin",
+  "photo": "/images/officials/state-legislature/ut/nate-blouin.jpg",
+  "photoSourceUrl": "https://le.utah.gov/images/legislator/BLOUIN.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-13",
+  "jurisdiction": "Utah Senate",
+  "county": [
+    "Utah"
+  ],
+  "termStart": "2023-01-01",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "P.O. Box 145115 350 N. State St., Suite 320, Salt Lake City, UT 84114",
+    "phone": "801-538-1035",
+    "email": "nblouin@le.utah.gov",
+    "website": "https://le.utah.gov/asp/billsintro/SenResults.asp?Listbox2=BLOUIN"
+  },
+  "bio": "Nate Blouin serves as State Senator for Utah Senate District 13. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "UT",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://le.utah.gov/asp/billsintro/SenResults.asp?Listbox2=BLOUIN"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ut/legislature/Nate-Blouin-c9f2ef36-ee69-4e91-9da9-6c9311334912.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://le.utah.gov/images/legislator/BLOUIN.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Nate_Blouin"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Nate_Blouin"
+    },
+    {
+      "title": "Public source",
+      "url": "https://le.utah.gov/data/legislators.json"
+    },
+    {
+      "title": "Public source",
+      "url": "https://senate.utah.gov/sen/BLOUIN"
+    },
+    {
+      "title": "Public source",
+      "url": "https://senate.utah.gov/sen/BLOUIN/"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/nateblouin"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

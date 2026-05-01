@@ -1,0 +1,61 @@
+{
+  "id": "helena-scott",
+  "name": "Helena Scott",
+  "firstName": "Helena",
+  "lastName": "Scott",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-8",
+  "jurisdiction": "Michigan House of Representatives",
+  "county": [
+    "Michigan"
+  ],
+  "termStart": "2025-01-01",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room S-687, Anderson House Office Building 124 N. Capitol Ave., Lansing, MI 48933",
+    "phone": "517-373-3815",
+    "email": "helenascott@house.mi.gov",
+    "website": "https://housedems.com/helena-scott/"
+  },
+  "bio": "Helena Scott serves as State Representative for Michigan House of Representatives District 8. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "MI",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://housedems.com/helena-scott/"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/mi/legislature/Helena-Scott-6751fa70-04e4-45e1-b3c5-6e0a5a397f8f.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Helena_Scott"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Helena_Scott_(politician)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://housedems.com/helena-scott"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.house.mi.gov/AllRepresentatives"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.house.mi.gov/MHRPublic/frmRepListMilenia.aspx?all=true"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/hhelenascott"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

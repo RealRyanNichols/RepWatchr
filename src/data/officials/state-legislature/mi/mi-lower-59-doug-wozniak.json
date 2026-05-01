@@ -1,0 +1,69 @@
+{
+  "id": "doug-wozniak",
+  "name": "Doug Wozniak",
+  "firstName": "Doug",
+  "lastName": "Wozniak",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-59",
+  "jurisdiction": "Michigan House of Representatives",
+  "county": [
+    "Michigan"
+  ],
+  "termStart": "2023-01-01",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room N-993, Anderson House Office Building 124 N. Capitol Ave., Lansing, MI 48933",
+    "phone": "517-373-0832",
+    "email": "douglaswozniak@house.mi.gov",
+    "website": "https://gophouse.org/member/repdougwozniak/posts"
+  },
+  "bio": "Doug Wozniak serves as State Representative for Michigan House of Representatives District 59. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "MI",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://gophouse.org/member/repdougwozniak/posts"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/mi/legislature/Douglas-Wozniak-2e512bae-42f3-4ce8-b565-df48469da08a.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Douglas_Wozniak"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Doug_Wozniak"
+    },
+    {
+      "title": "Public source",
+      "url": "https://gophouse.org/member/repdougwozniak/about"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/111696/douglas-wozniak"
+    },
+    {
+      "title": "Public source",
+      "url": "https://macombcountyrealestateattorney.com/attorneys"
+    },
+    {
+      "title": "Member Details Page",
+      "url": "https://RepWozniak.com"
+    },
+    {
+      "title": "Public source",
+      "url": "https://senate.michigan.gov/senatorinfo_list.html"
+    },
+    {
+      "title": "Members List Page",
+      "url": "https://www.house.mi.gov/AllRepresentatives"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

@@ -1,0 +1,72 @@
+{
+  "id": "cristina-castro",
+  "name": "Cristina Castro",
+  "firstName": "Cristina",
+  "lastName": "Castro",
+  "photo": "/images/officials/state-legislature/il/cristina-castro.jpg",
+  "photoSourceUrl": "https://cdn.ilga.gov/assets/img/members/{F09EB558-EB8D-48B1-91F0-EF47A07632F5}.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-22",
+  "jurisdiction": "Illinois Senate",
+  "county": [
+    "Illinois"
+  ],
+  "termStart": "2017-01-11",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 507, Capitol Building, Springfield, IL 62706",
+    "phone": "217-782-7746",
+    "email": "senatorcastro@gmail.com",
+    "website": "https://ilga.gov/senate/Senator.asp?GA=101&MemberID=2677"
+  },
+  "bio": "Cristina Castro serves as State Senator for Illinois Senate District 22. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "IL",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://ilga.gov/senate/Senator.asp?GA=101&MemberID=2677"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/il/legislature/Cristina-Castro-f5add4b7-0c7e-4909-8e31-3042698f5b49.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://cdn.ilga.gov/assets/img/members/{F09EB558-EB8D-48B1-91F0-EF47A07632F5}.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Cristina_Castro"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Cristina_Castro"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ilga.gov/senate/default.asp?GA=101"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ilga.gov/senate/default.asp?GA=102"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ilga.gov/senate/default.asp?GA=103"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ilga.gov/senate/Senator.asp?GA=102&MemberID=2896"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ilga.gov/senate/Senator.asp?GA=103&MemberID=3101"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

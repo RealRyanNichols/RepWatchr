@@ -1,0 +1,60 @@
+{
+  "id": "hamilton-grant",
+  "name": "Hamilton Grant",
+  "firstName": "Hamilton",
+  "lastName": "Grant",
+  "photo": "/images/officials/state-legislature/sc/hamilton-grant.jpg",
+  "photoSourceUrl": "https://s3.amazonaws.com/ballotpedia-api4/files/thumbs/200/300/HamiltonGrant2024.jpeg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-79",
+  "jurisdiction": "South Carolina House of Representatives",
+  "county": [
+    "South Carolina"
+  ],
+  "termStart": "2024-11-11",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 333A, Blatt Building P.O. Box 11867, Columbia, SC 29211",
+    "phone": "803-212-6794",
+    "email": "hamiltongrant@schouse.gov",
+    "website": "https://www.scstatehouse.gov/member.php?code=0705681734"
+  },
+  "bio": "Hamilton Grant serves as State Representative for South Carolina House of Representatives District 79. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "SC",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.scstatehouse.gov/member.php?code=0705681734"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/sc/legislature/Hamilton-Grant-c7b115f3-0fa8-4a8b-b01f-9b222f44018f.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://s3.amazonaws.com/ballotpedia-api4/files/thumbs/200/300/HamiltonGrant2024.jpeg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Hamilton_Grant"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Hamilton_R._Grant"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/216249/hamilton-grant"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/hamilton-grant-mba-1b5771a3"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

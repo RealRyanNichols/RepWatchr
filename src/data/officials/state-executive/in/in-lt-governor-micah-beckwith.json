@@ -1,0 +1,49 @@
+{
+  "id": "micah-beckwith",
+  "name": "Micah Beckwith",
+  "firstName": "Micah",
+  "lastName": "Beckwith",
+  "photo": "/images/officials/state-executive/in/micah-beckwith.jpg",
+  "photoSourceUrl": "https://www.in.gov/lg/images/LG-Headshot-26.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "Lieutenant Governor",
+  "district": "Indiana",
+  "jurisdiction": "Indiana statewide public office",
+  "county": [
+    "Indiana"
+  ],
+  "termStart": "2025-01-13",
+  "termEnd": "2029-01-08",
+  "contactInfo": {
+    "website": "https://www.in.gov/lg/"
+  },
+  "bio": "Micah Beckwith is listed as Lieutenant Governor for Indiana. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "IN",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.in.gov/lg/"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/in/executive/Micah-Beckwith-f3361ebb-630c-4160-9f66-68c7c9eb7419.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://www.in.gov/lg/images/LG-Headshot-26.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.in.gov/lg/about-the-office/biography/"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Micah_Beckwith"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

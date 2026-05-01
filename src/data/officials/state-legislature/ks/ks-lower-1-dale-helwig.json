@@ -1,0 +1,64 @@
+{
+  "id": "dale-helwig",
+  "name": "Dale Helwig",
+  "firstName": "Dale",
+  "lastName": "Helwig",
+  "photo": "/images/officials/state-legislature/ks/dale-helwig.jpg",
+  "photoSourceUrl": "https://s3.amazonaws.com/ballotpedia-api4/files/thumbs/200/300/Dale_Helwig_20241007_022311.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-1",
+  "jurisdiction": "Kansas House of Representatives",
+  "county": [
+    "Kansas"
+  ],
+  "termStart": "2025-01-13",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "State Capitol Room 561-W, Kansas  Building 300 SW 10th St., Topeka, KS 66612",
+    "phone": "785-296-4749",
+    "email": "dale.helwig@house.ks.gov",
+    "website": "https://www.kslegislature.gov/li/b2025_26/members/rep_helwig_dale_1/"
+  },
+  "bio": "Dale Helwig serves as State Representative for Kansas House of Representatives District 1. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "KS",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.kslegislature.gov/li/b2025_26/members/rep_helwig_dale_1/"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ks/legislature/Dale-Helwig-9972db5e-e19b-48ab-9d3a-10983c96fc5c.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://s3.amazonaws.com/ballotpedia-api4/files/thumbs/200/300/Dale_Helwig_20241007_022311.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Dale_Helwig#Campaign_themes"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Dale_Helwig"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/218103/dale-helwig"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.kslegislature.gov/li/b2025_26/members/rep_helwig_dale_1"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/dale-helwig-3a6489130"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

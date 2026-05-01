@@ -1,0 +1,72 @@
+{
+  "id": "rodger-smitherman",
+  "name": "Rodger Smitherman",
+  "firstName": "Rodger",
+  "lastName": "Smitherman",
+  "photo": "/images/officials/state-legislature/al/rodger-smitherman.jpg",
+  "photoSourceUrl": "https://www.legislature.state.al.us/pdf/senate/members/Smitherman_18.png",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-18",
+  "jurisdiction": "Alabama Senate",
+  "county": [
+    "Alabama"
+  ],
+  "termStart": "1995-11-08",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 736, 11 S. Union St., Montgomery, AL 36130",
+    "phone": "334-261-0870",
+    "email": "rodger.smitherman@alsenate.gov",
+    "website": "https://alison.legislature.state.al.us/senate-leaders-members"
+  },
+  "bio": "Rodger Smitherman serves as State Senator for Alabama Senate District 18. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "AL",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://alison.legislature.state.al.us/senate-leaders-members"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/al/legislature/Rodger-M-Smitherman-3b925820-55f7-4d24-b4df-d924fd3d1bf7.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://www.legislature.state.al.us/pdf/senate/members/Smitherman_18.png"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Rodger_Smitherman"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Rodger_Smitherman"
+    },
+    {
+      "title": "graphql endpoint for member information",
+      "url": "https://gql.api.alison.legislature.state.al.us/graphql"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/5617/rodger-smitherman"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.legislature.state.al.us/aliswww/ISD/ALSenator.aspx?NAME=Smitherman&OID_SPONSOR=100461&OID_PERSON=1139&SESSNAME=Regular%20Session%202022"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.legislature.state.al.us/aliswww/ISD/ALSenator.aspx?OID_SPONSOR=100461&OID_PERSON=1139"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.legislature.state.al.us/aliswww/ISD/Senate/ALSenators.aspx"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

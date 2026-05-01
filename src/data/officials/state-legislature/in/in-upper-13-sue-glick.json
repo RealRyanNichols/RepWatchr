@@ -1,0 +1,72 @@
+{
+  "id": "sue-glick",
+  "name": "Sue Glick",
+  "firstName": "Sue",
+  "lastName": "Glick",
+  "photo": "/images/officials/state-legislature/in/sue-glick.jpg",
+  "photoSourceUrl": "https://cdn.zephyrcms.com/9104a840-3113-47f6-b8fc-112521fe5577/-/progressive/yes/-/format/jpeg/-/scale_crop/200x300/center/-/stretch/off/glick-website.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-13",
+  "jurisdiction": "Indiana Senate",
+  "county": [
+    "Indiana"
+  ],
+  "termStart": "2010-12-16",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "200 W. Washington St., Indianapolis, IN 46204",
+    "phone": "317-232-9400",
+    "email": "s13@iga.in.gov",
+    "website": "https://iga.in.gov/legislative/2021/legislators/legislator_susan_glick_1048"
+  },
+  "bio": "Sue Glick serves as State Senator for Indiana Senate District 13. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "IN",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://iga.in.gov/legislative/2021/legislators/legislator_susan_glick_1048"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/in/legislature/Susan-Glick-a0b2ce58-2c2d-4b71-a9e2-7b8ae153d53f.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://cdn.zephyrcms.com/9104a840-3113-47f6-b8fc-112521fe5577/-/progressive/yes/-/format/jpeg/-/scale_crop/200x300/center/-/stretch/off/glick-website.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://api.iga.in.gov/2021/legislators/susan_glick_1048"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Susan_Glick"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Sue_Glick"
+    },
+    {
+      "title": "Public source",
+      "url": "https://iga.in.gov/legislative/2022/legislators/legislator_susan_glick_1048"
+    },
+    {
+      "title": "Public source",
+      "url": "https://iga.in.gov/legislative/2022/legislators/legislator_susan_glick_1048/"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/128689/susan-glick"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.indianasenaterepublicans.com/glick"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

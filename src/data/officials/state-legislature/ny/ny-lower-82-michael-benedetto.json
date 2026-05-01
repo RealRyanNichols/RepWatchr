@@ -1,0 +1,72 @@
+{
+  "id": "michael-benedetto",
+  "name": "Michael Benedetto",
+  "firstName": "Michael",
+  "lastName": "Benedetto",
+  "photo": "/images/officials/state-legislature/ny/michael-benedetto.jpg",
+  "photoSourceUrl": "https://assembly.state.ny.us/write/upload/member_files/082/headshot/082.jpg?hst=1660074060",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "Assemblymember",
+  "district": "HD-82",
+  "jurisdiction": "New York State Assembly",
+  "county": [
+    "New York"
+  ],
+  "termStart": "2005-01-01",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 836, Legislative Office Building, Albany, NY 12248",
+    "phone": "518-455-5296",
+    "email": "benedettom@nyassembly.gov",
+    "website": "https://assembly.state.ny.us/mem/?sh=email",
+    "socialMedia": {
+      "x": "https://x.com/mikebenedetto82?lang=en",
+      "twitter": "https://x.com/mikebenedetto82?lang=en"
+    }
+  },
+  "bio": "Michael Benedetto serves as Assemblymember for New York State Assembly District 82. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "NY",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://assembly.state.ny.us/mem/?sh=email"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ny/legislature/Michael-Benedetto-b2b9862e-f665-4848-9d9c-5dcf2c986fed.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://assembly.state.ny.us/write/upload/member_files/082/headshot/082.jpg?hst=1660074060"
+    },
+    {
+      "title": "Public source",
+      "url": "https://assembly.state.ny.us/mem/Michael-Benedetto"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Michael_Benedetto"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Michael_Benedetto"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/55244/michael-benedetto"
+    },
+    {
+      "title": "Public source",
+      "url": "https://nyassembly.gov/mem/michael-benedetto"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/michael-benedetto-06334735"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

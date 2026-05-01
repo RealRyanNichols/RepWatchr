@@ -1,0 +1,64 @@
+{
+  "id": "jerry-mcnerney",
+  "name": "Jerry McNerney",
+  "firstName": "Jerry",
+  "lastName": "McNerney",
+  "photo": "/images/officials/state-legislature/ca/jerry-mcnerney.jpg",
+  "photoSourceUrl": "https://storage.googleapis.com/enview-dev-public-general/legislative-people-photos/70583.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-5",
+  "jurisdiction": "California Senate",
+  "county": [
+    "California"
+  ],
+  "termStart": "2024-12-02",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "1021 O St. Suite 6640, Sacramento, CA 95814",
+    "phone": "916-651-4005",
+    "email": "senator.mcnerney@senate.ca.gov",
+    "website": "https://sd05.senate.ca.gov/"
+  },
+  "bio": "Jerry McNerney serves as State Senator for California Senate District 5. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "CA",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://sd05.senate.ca.gov/"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ca/legislature/Jerry-McNerney-e9733632-df5d-48b4-b4a3-4768e7dcb5f7.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://storage.googleapis.com/enview-dev-public-general/legislative-people-photos/70583.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Jerry_McNerney"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Jerry_McNerney"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/29474/jerry-mcnerney"
+    },
+    {
+      "title": "Public source",
+      "url": "https://sd05.senate.ca.gov"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.govtrack.us/congress/members/jerry_mcnerney/412189"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

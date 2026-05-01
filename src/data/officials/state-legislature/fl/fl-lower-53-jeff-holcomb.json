@@ -1,0 +1,53 @@
+{
+  "id": "jeff-holcomb",
+  "name": "Jeff Holcomb",
+  "firstName": "Jeff",
+  "lastName": "Holcomb",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-53",
+  "jurisdiction": "Florida House of Representatives",
+  "county": [
+    "Florida"
+  ],
+  "termStart": "2022-11-08",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 315, House Office Building 402 S. Monroe St., Tallahassee, FL 32399",
+    "phone": "850-717-5053",
+    "email": "jeff.holcomb@flhouse.gov",
+    "website": "https://myfloridahouse.gov/Sections/Representatives/details.aspx?MemberId=4890&LegislativeTermId=90"
+  },
+  "bio": "Jeff Holcomb serves as State Representative for Florida House of Representatives District 53. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "FL",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://myfloridahouse.gov/Sections/Representatives/details.aspx?MemberId=4890&LegislativeTermId=90"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/fl/legislature/Jeff-Holcomb-5bd19ebd-e225-49a5-b0f5-42f6380a9fa8.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Jeff_Holcomb_(Florida)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/158287/jeff-holcomb"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.flhouse.gov/Sections/Representatives/details.aspx?MemberId=4890"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.myfloridahouse.gov/Sections/Representatives/details.aspx?MemberId=4890&LegislativeTermId=90"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

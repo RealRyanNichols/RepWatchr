@@ -1,0 +1,70 @@
+{
+  "id": "jim-townsend",
+  "name": "Jim Townsend",
+  "firstName": "Jim",
+  "lastName": "Townsend",
+  "party": "R",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-34",
+  "jurisdiction": "New Mexico Senate",
+  "county": [
+    "New Mexico"
+  ],
+  "termStart": "2025-01-01",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "State Capitol Room 415C, New Mexico  490 Old Santa Fe Trail, Santa Fe, NM 87501",
+    "phone": "505-986-4366",
+    "email": "townsend@pvtn.net",
+    "website": "https://www.linkedin.com/in/jim-townsend-5897b633/",
+    "socialMedia": {
+      "x": "https://x.com/LeaderTownsend",
+      "twitter": "https://x.com/LeaderTownsend",
+      "facebook": "https://facebook.com/jimandpaula.townsend"
+    }
+  },
+  "bio": "Jim Townsend serves as State Senator for New Mexico Senate District 34. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "NM",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.linkedin.com/in/jim-townsend-5897b633/"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/nm/legislature/James-G-Townsend-667a8a3c-dbe9-4aba-b768-e90be503df88.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/James_Townsend_(New_Mexico)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/James_G._Townsend"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/168398/jim-townsend"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/jim-townsend-5897b633"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.nmlegis.gov/Members/Legislator?SponCode=HTOWJ"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.nmlegis.gov/Members/Legislator?SponCode=STOWJ"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.nmlegis.gov/Members/Legislator_List?T=R"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

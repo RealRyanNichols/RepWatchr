@@ -1,0 +1,60 @@
+{
+  "id": "andrew-kuzma",
+  "name": "Andrew Kuzma",
+  "firstName": "Andrew",
+  "lastName": "Kuzma",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-39",
+  "jurisdiction": "Pennsylvania House of Representatives",
+  "county": [
+    "Pennsylvania"
+  ],
+  "termStart": "2022-12-01",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 159B, East Wing P.O. Box 202039, Harrisburg, PA 17120",
+    "phone": "717-260-6122",
+    "email": "akuzma@pahousegop.com",
+    "website": "https://www.legis.state.pa.us/cfdocs/legis/home/member_information/House_bio.cfm?id=1946",
+    "socialMedia": {
+      "facebook": "https://facebook.com/RepKuzma"
+    }
+  },
+  "bio": "Andrew Kuzma serves as State Representative for Pennsylvania House of Representatives District 39. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "PA",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.legis.state.pa.us/cfdocs/legis/home/member_information/House_bio.cfm?id=1946"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/pa/legislature/Andrew-Kuzma-0d86d77b-ff68-4182-be53-09ff196b8174.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Andrew_Kuzma"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Andrew_Kuzma"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.legis.state.pa.us/cfdocs/legis/home/member_information/mbrList.cfm?body=H&sort=alpha"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.palegis.us/house/members/bio/1946/rep-kuzma"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.repkuzma.com"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

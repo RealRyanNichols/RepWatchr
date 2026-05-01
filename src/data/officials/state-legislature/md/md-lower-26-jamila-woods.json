@@ -1,0 +1,56 @@
+{
+  "id": "jamila-woods",
+  "name": "Jamila Woods",
+  "firstName": "Jamila",
+  "lastName": "Woods",
+  "photo": "/images/officials/state-legislature/md/jamila-woods.jpg",
+  "photoSourceUrl": "https://s3.amazonaws.com/ballotpedia-api4/files/thumbs/200/300/Jamila_01-2018.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "Delegate",
+  "district": "HD-26",
+  "jurisdiction": "Maryland House of Delegates",
+  "county": [
+    "Maryland"
+  ],
+  "termStart": "2023-01-11",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 206, Lowe House Office Building 6 Bladen St., Annapolis, MD 21401",
+    "phone": "410-841-3544",
+    "email": "jamila.woods@house.maryland.gov",
+    "website": "https://mgaleg.maryland.gov/mgawebsite/Members/Details/woods01"
+  },
+  "bio": "Jamila Woods serves as Delegate for Maryland House of Delegates District 26. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "MD",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://mgaleg.maryland.gov/mgawebsite/Members/Details/woods01"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/md/legislature/Jamila-J-Woods-108e1cf8-7e40-49bd-a7c8-1a7978e55b32.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://s3.amazonaws.com/ballotpedia-api4/files/thumbs/200/300/Jamila_01-2018.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Jamila_Woods"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Jamila_Woods_(politician)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/jamila-woods-mdiv-lgsw-cams-i-189b4486"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

@@ -1,0 +1,72 @@
+{
+  "id": "tou-xiong",
+  "name": "Tou Xiong",
+  "firstName": "Tou",
+  "lastName": "Xiong",
+  "photo": "/images/officials/state-legislature/mn/tou-xiong.jpg",
+  "photoSourceUrl": "https://www.senate.mn/graphics/44Xiong.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-44",
+  "jurisdiction": "Minnesota Senate",
+  "county": [
+    "Minnesota"
+  ],
+  "termStart": "2023-01-03",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 3203, Minnesota Senate Building 95 University Ave. West, St. Paul, MN 55155",
+    "phone": "651-296-6820",
+    "email": "sen.tou.xiong@senate.mn",
+    "website": "https://www.senate.mn/members/member_bio.html?mem_id=1267"
+  },
+  "bio": "Tou Xiong serves as State Senator for Minnesota Senate District 44. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "MN",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.senate.mn/members/member_bio.html?mem_id=1267"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/mn/legislature/Tou-Xiong-5d9e1da5-ecf9-45d9-b104-7d1238032aff.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://www.senate.mn/graphics/44Xiong.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Tou_Xiong"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Tou_Xiong"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/173949/tou-xiong"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.house.leg.state.mn.us/members/hmem.asp"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/tou-xiong-159b0475"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/tou-xiong-b03b731a7"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.senate.mn/api/members"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

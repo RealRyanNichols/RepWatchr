@@ -1,0 +1,72 @@
+{
+  "id": "kirk-hatcher",
+  "name": "Kirk Hatcher",
+  "firstName": "Kirk",
+  "lastName": "Hatcher",
+  "photo": "/images/officials/state-legislature/al/kirk-hatcher.jpg",
+  "photoSourceUrl": "https://www.legislature.state.al.us/pdf/senate/members/Hatcher_26.png",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-26",
+  "jurisdiction": "Alabama Senate",
+  "county": [
+    "Alabama"
+  ],
+  "termStart": "2021-03-03",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 738, 11 S. Union St., Montgomery, AL 36130",
+    "phone": "334-261-9001",
+    "email": "kirk.hatcher@alsenate.gov",
+    "website": "https://alison.legislature.state.al.us/senate-leaders-members"
+  },
+  "bio": "Kirk Hatcher serves as State Senator for Alabama Senate District 26. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "AL",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://alison.legislature.state.al.us/senate-leaders-members"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/al/legislature/Kirk-Hatcher-e0a28b79-3df1-491b-af90-4c0414ba72c8.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://www.legislature.state.al.us/pdf/senate/members/Hatcher_26.png"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Kirk_Hatcher"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Kirk_Hatcher"
+    },
+    {
+      "title": "graphql endpoint for member information",
+      "url": "https://gql.api.alison.legislature.state.al.us/graphql"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/180541/kirk-hatcher"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.legislature.state.al.us/aliswww/ISD/ALRepresentative.aspx?OID_SPONSOR=100560&OID_PERSON=8507"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.legislature.state.al.us/aliswww/ISD/ALSenator.aspx?NAME=Hatcher&OID_SPONSOR=108969&OID_PERSON=8507&SESSNAME=Regular%20Session%202022"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.legislature.state.al.us/aliswww/ISD/ALSenator.aspx?OID_SPONSOR=108969&OID_PERSON=98507"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

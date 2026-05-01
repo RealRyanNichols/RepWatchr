@@ -1,0 +1,72 @@
+{
+  "id": "tiara-mack",
+  "name": "Tiara Mack",
+  "firstName": "Tiara",
+  "lastName": "Mack",
+  "photo": "/images/officials/state-legislature/ri/tiara-mack.jpg",
+  "photoSourceUrl": "https://media3.s-nbcnews.com/j/newscms/2020_47/3429284/201118-MAIN-tiara-mack-benjamin-branchaud-ew-1140a_41fc9dcc361b3077b5b335fab1dc4a55.fit-760w.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-6",
+  "jurisdiction": "Rhode Island Senate",
+  "county": [
+    "Rhode Island"
+  ],
+  "termStart": "2021-01-05",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 219, 82 Smith St., Providence, RI 02903",
+    "phone": "401-288-1288",
+    "email": "sen-mack@rilegislature.gov",
+    "website": "https://www.rilegislature.gov/senators/algiere/default.aspx"
+  },
+  "bio": "Tiara Mack serves as State Senator for Rhode Island Senate District 6. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "RI",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.rilegislature.gov/senators/algiere/default.aspx"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ri/legislature/Tiara-T-Mack-b3d5296c-05df-46f5-9a93-4caf96121a84.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://media3.s-nbcnews.com/j/newscms/2020_47/3429284/201118-MAIN-tiara-mack-benjamin-branchaud-ew-1140a_41fc9dcc361b3077b5b335fab1dc4a55.fit-760w.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Tiara_Mack"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Tiara_Mack"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/195112/tiara-mack"
+    },
+    {
+      "title": "Public source",
+      "url": "https://webserver.rilegislature.gov/Email/SenEmailListDistrict.asp"
+    },
+    {
+      "title": "Public source",
+      "url": "https://webserver.rilin.state.ri.us/Email/SenEmailListDistrict.asp"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/tiaramack"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.rilegislature.gov/senators/mack/default.aspx"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

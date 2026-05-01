@@ -1,0 +1,64 @@
+{
+  "id": "karen-young",
+  "name": "Karen Young",
+  "firstName": "Karen",
+  "lastName": "Young",
+  "photo": "/images/officials/state-legislature/md/karen-young.jpg",
+  "photoSourceUrl": "https://mgaleg.maryland.gov/2023RS/images/young04.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-3",
+  "jurisdiction": "Maryland Senate",
+  "county": [
+    "Maryland"
+  ],
+  "termStart": "2023-01-11",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 3 West, Miller Senate Office Building 11 Bladen St., Annapolis, MD 21401",
+    "phone": "410-841-3575",
+    "email": "karen.lewisyoung@senate.maryland.gov",
+    "website": "https://mgaleg.maryland.gov/mgawebsite/Members/Details/young02"
+  },
+  "bio": "Karen Young serves as State Senator for Maryland Senate District 3. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "MD",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://mgaleg.maryland.gov/mgawebsite/Members/Details/young02"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/md/legislature/Karen-Lewis-Young-eebac21f-2ba7-4368-a8e9-fcc20672ad1e.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://mgaleg.maryland.gov/2023RS/images/young04.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Karen_Lewis_Young"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Karen_Lewis_Young"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/122628/karen-lewis-young"
+    },
+    {
+      "title": "Public source",
+      "url": "https://mgaleg.maryland.gov/mgawebsite/Members/Details/young04"
+    },
+    {
+      "title": "Public source",
+      "url": "https://mgaleg.maryland.gov/webmga/frmMain.aspx?pid=sponpage&tab=subject6&id=young02&stab=01"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

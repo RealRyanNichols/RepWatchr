@@ -1,0 +1,64 @@
+{
+  "id": "jody-steverson",
+  "name": "Jody Steverson",
+  "firstName": "Jody",
+  "lastName": "Steverson",
+  "photo": "/images/officials/state-legislature/ms/jody-steverson.jpg",
+  "photoSourceUrl": "http://billstatus.ls.state.ms.us/members/house/steverson.jpg?rand=41826",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-4",
+  "jurisdiction": "Mississippi House of Representatives",
+  "county": [
+    "Mississippi"
+  ],
+  "termStart": "2015-11-05",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "State Capitol Room 201-M7, 400 High St., Jackson, MS 39201",
+    "phone": "601-359-3457",
+    "email": "jsteverson@house.ms.gov",
+    "website": "https://billstatus.ls.state.ms.us/members/house/steverson.xml"
+  },
+  "bio": "Jody Steverson serves as State Representative for Mississippi House of Representatives District 4. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "MS",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://billstatus.ls.state.ms.us/members/house/steverson.xml"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ms/legislature/Jody-Steverson-f4bd4ab9-cb95-4b3e-95cb-68312eda5b16.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "http://billstatus.ls.state.ms.us/members/house/steverson.jpg?rand=41826"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Jody_Steverson"
+    },
+    {
+      "title": "Public source",
+      "url": "https://billstatus.ls.state.ms.us/members/hr_membs.xml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Jody_Steverson"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/130532/jody-steverson"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/jody-steverson-231172129"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

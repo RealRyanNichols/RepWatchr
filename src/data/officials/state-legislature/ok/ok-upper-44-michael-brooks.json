@@ -1,0 +1,69 @@
+{
+  "id": "michael-brooks",
+  "name": "Michael Brooks",
+  "firstName": "Michael",
+  "lastName": "Brooks",
+  "party": "D",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-44",
+  "jurisdiction": "Oklahoma Senate",
+  "county": [
+    "Oklahoma"
+  ],
+  "termStart": "2017-07-25",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 513, 2300 N. Lincoln Blvd., Oklahoma City, OK 73105",
+    "phone": "405-521-5557",
+    "email": "michael.brooks@oksenate.gov",
+    "website": "https://oksenate.gov/contact-senator?sid=1842"
+  },
+  "bio": "Michael Brooks serves as State Senator for Oklahoma Senate District 44. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "OK",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://oksenate.gov/contact-senator?sid=1842"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ok/legislature/Michael-Brooks-faabecda-dfa0-4995-b574-2b0a33b039ef.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Michael_Brooks_(Oklahoma)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://brooksjimenez.com"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Michael_Brooks-Jimenez"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/152311/michael-brooks"
+    },
+    {
+      "title": "Public source",
+      "url": "https://oksenate.gov/Senators/biographies/brooks_bio.aspx"
+    },
+    {
+      "title": "Public source",
+      "url": "https://oksenate.gov/Senators/biographies/brooks_bio.html"
+    },
+    {
+      "title": "Public source",
+      "url": "https://oksenate.gov/senators/michael-brooks"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/michael-brooks-jimenez-13330714"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

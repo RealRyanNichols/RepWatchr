@@ -1,0 +1,64 @@
+{
+  "id": "stefano-famiglietti",
+  "name": "Stefano Famiglietti",
+  "firstName": "Stefano",
+  "lastName": "Famiglietti",
+  "photo": "/images/officials/state-legislature/ri/stefano-famiglietti.jpg",
+  "photoSourceUrl": "https://www.rilegislature.gov/LegislationPictures/stefano_famiglietti.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-4",
+  "jurisdiction": "Rhode Island Senate",
+  "county": [
+    "Rhode Island"
+  ],
+  "termStart": "2025-08-14",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "82 Smith St., Providence, RI 02903",
+    "phone": "401-222-3580",
+    "email": "sen-famiglietti@rilegislature.gov",
+    "website": "https://www.rilegislature.gov/senators/famiglietti/Pages/Biography.aspx"
+  },
+  "bio": "Stefano Famiglietti serves as State Senator for Rhode Island Senate District 4. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "RI",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.rilegislature.gov/senators/famiglietti/Pages/Biography.aspx"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ri/legislature/Stefano-Famiglietti-a2ff0de0-40d1-4ac1-a347-e1e9dedb6d30.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://www.rilegislature.gov/LegislationPictures/stefano_famiglietti.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Stefano_Famiglietti"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Stefano_Famiglietti"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/223445/stefano-famiglietti"
+    },
+    {
+      "title": "Public source",
+      "url": "https://rilegislature.gov/senators/famiglietti/Pages/Biography.aspx"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/stefano-v-famiglietti-esq-5a941456"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

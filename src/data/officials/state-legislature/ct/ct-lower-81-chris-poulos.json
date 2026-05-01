@@ -1,0 +1,57 @@
+{
+  "id": "chris-poulos",
+  "name": "Chris Poulos",
+  "firstName": "Chris",
+  "lastName": "Poulos",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-81",
+  "jurisdiction": "Connecticut House of Representatives",
+  "county": [
+    "Connecticut"
+  ],
+  "termStart": "2023-01-04",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 4111, Legislative Office Building 300 Capitol Ave., Hartford, CT 06106",
+    "phone": "860-240-8585",
+    "email": "chris.poulos@cga.ct.gov",
+    "website": "https://www.housedems.ct.gov/poulos"
+  },
+  "bio": "Chris Poulos serves as State Representative for Connecticut House of Representatives District 81. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "CT",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.housedems.ct.gov/poulos"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ct/legislature/Christopher-Poulos-7fda8e36-f73d-43e2-bf43-8365c617d94e.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "ftp://ftp.cga.ct.gov/pub/data/LegislatorDatabase.csv"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Christopher_Poulos"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Chris_Poulos"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/199626/christopher-poulos"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.housedems.ct.gov/Poulos"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

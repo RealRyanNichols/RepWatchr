@@ -1,0 +1,53 @@
+{
+  "id": "tom-sullivan",
+  "name": "Tom Sullivan",
+  "firstName": "Tom",
+  "lastName": "Sullivan",
+  "party": "D",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-27",
+  "jurisdiction": "Colorado Senate",
+  "county": [
+    "Colorado"
+  ],
+  "termStart": "2023-01-09",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "State Capitol Room 346, Colorado  Building 200 E. Colfax Ave., Denver, CO 80203",
+    "phone": "303-866-4873",
+    "email": "tom.sullivan.senate@coleg.gov",
+    "website": "https://leg.colorado.gov/legislators/tom-sullivan"
+  },
+  "bio": "Tom Sullivan serves as State Senator for Colorado Senate District 27. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "CO",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://leg.colorado.gov/legislators/tom-sullivan"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/co/legislature/Tom-Sullivan-dc9056b8-fb9c-4a66-99b8-210acce64bff.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Tom_Sullivan_(Colorado)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Tom_Sullivan_(Colorado_politician)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/169958/tom-sullivan"
+    },
+    {
+      "title": "Public source",
+      "url": "https://leg.colorado.gov/legislators"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

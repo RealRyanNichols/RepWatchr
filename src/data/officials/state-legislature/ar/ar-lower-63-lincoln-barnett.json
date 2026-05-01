@@ -1,0 +1,60 @@
+{
+  "id": "lincoln-barnett",
+  "name": "Lincoln Barnett",
+  "firstName": "Lincoln",
+  "lastName": "Barnett",
+  "photo": "/images/officials/state-legislature/ar/lincoln-barnett.jpg",
+  "photoSourceUrl": "https://static.wixstatic.com/media/e0590d_a448445eb66f44af836ca4edceee8ab4~mv2.jpeg/v1/crop/x_563,y_0,w_1048,h_1362/fill/w_567,h_737,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/e0590d_a448445eb66f44af836ca4edceee8ab4~mv2.jpeg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-63",
+  "jurisdiction": "Arkansas House of Representatives",
+  "county": [
+    "Arkansas"
+  ],
+  "termStart": "2025-01-13",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "State Capitol Arkansas  500 Woodlane St., Suite 350, Little Rock, AR 72201",
+    "phone": "501-682-6211",
+    "email": "lincoln.barnett@arkansashouse.org",
+    "website": "https://arkansashouse.org/district/63"
+  },
+  "bio": "Lincoln Barnett serves as State Representative for Arkansas House of Representatives District 63. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "AR",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://arkansashouse.org/district/63"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ar/legislature/Lincoln-Barnett-6e3a7643-abe7-4d0f-8d03-47b514558a67.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://static.wixstatic.com/media/e0590d_a448445eb66f44af836ca4edceee8ab4~mv2.jpeg/v1/crop/x_563,y_0,w_1048,h_1362/fill/w_567,h_737,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/e0590d_a448445eb66f44af836ca4edceee8ab4~mv2.jpeg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://arkleg.state.ar.us/Legislators/Detail?member=Barnett"
+    },
+    {
+      "title": "Public source",
+      "url": "https://arkleg.state.ar.us/Legislators/Detail?member=Barnett&ddBienniumSession=2025%2F2025R"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Lincoln_Barnett"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/lincolnbarnett"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

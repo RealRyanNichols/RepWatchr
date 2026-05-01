@@ -1,0 +1,56 @@
+{
+  "id": "matthew-overcast",
+  "name": "Matthew Overcast",
+  "firstName": "Matthew",
+  "lastName": "Overcast",
+  "photo": "/images/officials/state-legislature/mo/matthew-overcast.jpg",
+  "photoSourceUrl": "https://s3.amazonaws.com/ballotpedia-api4/files/thumbs/200/300/Matthew_Overcast23.jpeg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-155",
+  "jurisdiction": "Missouri House of Representatives",
+  "county": [
+    "Missouri"
+  ],
+  "termStart": "2025-01-08",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 115-H, 201 W. Capitol Ave., Jefferson City, MO 65101",
+    "phone": "573-751-2042",
+    "email": "matthew.overcast@house.mo.gov",
+    "website": "https://house.mo.gov/MemberDetails.aspx?district=155"
+  },
+  "bio": "Matthew Overcast serves as State Representative for Missouri House of Representatives District 155. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "MO",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://house.mo.gov/MemberDetails.aspx?district=155"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/mo/legislature/Matthew-Overcast-c22f94cc-641f-4a45-a2a6-610f829e7c43.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://s3.amazonaws.com/ballotpedia-api4/files/thumbs/200/300/Matthew_Overcast23.jpeg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Matthew_Overcast"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/217782/matthew-overcast"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/matthewovercast"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

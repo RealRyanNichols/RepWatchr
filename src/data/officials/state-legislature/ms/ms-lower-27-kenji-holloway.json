@@ -1,0 +1,60 @@
+{
+  "id": "kenji-holloway",
+  "name": "Kenji Holloway",
+  "firstName": "Kenji",
+  "lastName": "Holloway",
+  "photo": "/images/officials/state-legislature/ms/kenji-holloway.jpg",
+  "photoSourceUrl": "https://s3.amazonaws.com/ballotpedia-api4/files/thumbs/200/300/KenjiHolloway.jpeg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-27",
+  "jurisdiction": "Mississippi House of Representatives",
+  "county": [
+    "Mississippi"
+  ],
+  "termStart": "2024-01-02",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "State Capitol 400 High St., Jackson, MS 39201",
+    "phone": "601-359-3770",
+    "email": "holloway@house.ms.gov",
+    "website": "https://billstatus.ls.state.ms.us/members/house/holloway_(27th).xml"
+  },
+  "bio": "Kenji Holloway serves as State Representative for Mississippi House of Representatives District 27. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "MS",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://billstatus.ls.state.ms.us/members/house/holloway_(27th).xml"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ms/legislature/Kenji-Holloway-f0fd6950-d890-445b-834e-a635715b75d5.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://s3.amazonaws.com/ballotpedia-api4/files/thumbs/200/300/KenjiHolloway.jpeg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Kenji_Holloway"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Kenji_Holloway"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/211407/kenji-holloway"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/kenji-holloway-26a499159"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

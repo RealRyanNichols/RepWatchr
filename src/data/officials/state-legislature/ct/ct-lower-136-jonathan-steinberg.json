@@ -1,0 +1,64 @@
+{
+  "id": "jonathan-steinberg",
+  "name": "Jonathan Steinberg",
+  "firstName": "Jonathan",
+  "lastName": "Steinberg",
+  "photo": "/images/officials/state-legislature/ct/jonathan-steinberg.jpg",
+  "photoSourceUrl": "http://www2.housedems.ct.gov/Steinberg/images/Steinberg_HS.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-136",
+  "jurisdiction": "Connecticut House of Representatives",
+  "county": [
+    "Connecticut"
+  ],
+  "termStart": "2011-01-07",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 3902, Legislative Office Building 300 Capitol Ave., Hartford, CT 06106",
+    "phone": "860-240-0562",
+    "email": "jonathan.steinberg@cga.ct.gov",
+    "website": "https://www.cga.ct.gov/asp/CGABillStatus/CGAMemberBills.asp?dist_code=%27136%27&dist_name=136%20-%Steinberg,%Jonathan"
+  },
+  "bio": "Jonathan Steinberg serves as State Representative for Connecticut House of Representatives District 136. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "CT",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.cga.ct.gov/asp/CGABillStatus/CGAMemberBills.asp?dist_code=%27136%27&dist_name=136%20-%Steinberg,%Jonathan"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ct/legislature/Jonathan-Steinberg-22b7b95d-3488-4c14-8365-c5157b3cb099.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "http://www2.housedems.ct.gov/Steinberg/images/Steinberg_HS.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "ftp://ftp.cga.ct.gov/pub/data/LegislatorDatabase.csv"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Jonathan_Steinberg_(Connecticut)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/126732/jonathan-steinberg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.housedems.ct.gov/Steinberg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/jonathan-philip-steinberg-35664712"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

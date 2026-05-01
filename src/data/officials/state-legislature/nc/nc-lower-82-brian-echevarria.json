@@ -1,0 +1,48 @@
+{
+  "id": "brian-echevarria",
+  "name": "Brian Echevarria",
+  "firstName": "Brian",
+  "lastName": "Echevarria",
+  "photo": "/images/officials/state-legislature/nc/brian-echevarria.jpg",
+  "photoSourceUrl": "https://s3.amazonaws.com/ballotpedia-api4/files/thumbs/200/300/Brian_Echiveria_.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-82",
+  "jurisdiction": "North Carolina House of Representatives",
+  "county": [
+    "North Carolina"
+  ],
+  "termStart": "2025-01-01",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 536, Legislative Office Building 300 N. Salisbury St., Raleigh, NC 27603",
+    "phone": "919-733-5861",
+    "email": "brian.echevarria@ncleg.gov",
+    "website": "https://www.ncleg.gov/Members/Biography/H/828"
+  },
+  "bio": "Brian Echevarria serves as State Representative for North Carolina House of Representatives District 82. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "NC",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.ncleg.gov/Members/Biography/H/828"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/nc/legislature/Brian-Echevarria-19c32795-3313-4f2f-a1d2-b79ff1dd81fb.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://s3.amazonaws.com/ballotpedia-api4/files/thumbs/200/300/Brian_Echiveria_.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Brian_Echevarria"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

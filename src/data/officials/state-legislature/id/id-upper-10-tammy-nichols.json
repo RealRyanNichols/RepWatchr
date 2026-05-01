@@ -1,0 +1,72 @@
+{
+  "id": "tammy-nichols",
+  "name": "Tammy Nichols",
+  "firstName": "Tammy",
+  "lastName": "Nichols",
+  "photo": "/images/officials/state-legislature/id/tammy-nichols.jpg",
+  "photoSourceUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/56/Tammy_Nichols_Election_Photo.jpg/500px-Tammy_Nichols_Election_Photo.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-10",
+  "jurisdiction": "Idaho Senate",
+  "county": [
+    "Idaho"
+  ],
+  "termStart": "2022-12-01",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "P.O. Box 83720 700 W. Jefferson St., Boise, ID 83720",
+    "phone": "208-332-1423",
+    "email": "tnichols@senate.idaho.gov",
+    "website": "https://legislature.idaho.gov/legislators/membership/2023/id5380/"
+  },
+  "bio": "Tammy Nichols serves as State Senator for Idaho Senate District 10. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "ID",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://legislature.idaho.gov/legislators/membership/2023/id5380/"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/id/legislature/Tammy-Nichols-846c0e7d-ec02-4f49-afb9-3604dd27da98.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/56/Tammy_Nichols_Election_Photo.jpg/500px-Tammy_Nichols_Election_Photo.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Tammy_Nichols"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Tammy_Nichols"
+    },
+    {
+      "title": "Public source",
+      "url": "https://legislature.idaho.gov/house/membership"
+    },
+    {
+      "title": "Public source",
+      "url": "https://legislature.idaho.gov/house/membership/"
+    },
+    {
+      "title": "Public source",
+      "url": "https://legislature.idaho.gov/legislators/membership/2023/id5380"
+    },
+    {
+      "title": "Public source",
+      "url": "https://legislature.idaho.gov/legislators/membership/2024/id5380"
+    },
+    {
+      "title": "Public source",
+      "url": "https://legislature.idaho.gov/legislators/membership/2026/id5380"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

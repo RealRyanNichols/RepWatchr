@@ -1,0 +1,74 @@
+{
+  "id": "nick-pisciottano",
+  "name": "Nick Pisciottano",
+  "firstName": "Nick",
+  "lastName": "Pisciottano",
+  "party": "D",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-45",
+  "jurisdiction": "Pennsylvania Senate",
+  "county": [
+    "Pennsylvania"
+  ],
+  "termStart": "2024-12-01",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 460, Main Capitol Senate Box 203045, Harrisburg, PA 17120",
+    "phone": "717-787-5580",
+    "email": "nick.pisciottano@pasenate.com",
+    "website": "https://pasenatornick.com/",
+    "socialMedia": {
+      "x": "https://x.com/RepPisciottano",
+      "twitter": "https://x.com/RepPisciottano",
+      "facebook": "https://facebook.com/RepPisciottano"
+    }
+  },
+  "bio": "Nick Pisciottano serves as State Senator for Pennsylvania Senate District 45. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "PA",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://pasenatornick.com/"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/pa/legislature/Nick-Pisciottano-c9f6833a-470e-480f-b3ad-d91c887aa4f9.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Nick_Pisciottano_Jr."
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Nick_Pisciottano"
+    },
+    {
+      "title": "Public source",
+      "url": "https://pasenatornick.com"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.legis.state.pa.us/cfdocs/legis/home/member_information/House_bio.cfm?id=1900"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.legis.state.pa.us/cfdocs/legis/home/member_information/mbrList.cfm?body=H&sort=alpha"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.legis.state.pa.us/cfdocs/legis/home/member_information/representatives_alpha.cfm"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/nick-pisciottano-cpa-38670541"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.pahouse.com/pisciottano"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

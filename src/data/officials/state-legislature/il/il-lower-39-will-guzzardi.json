@@ -1,0 +1,72 @@
+{
+  "id": "will-guzzardi",
+  "name": "Will Guzzardi",
+  "firstName": "Will",
+  "lastName": "Guzzardi",
+  "photo": "/images/officials/state-legislature/il/will-guzzardi.jpg",
+  "photoSourceUrl": "https://cdn.ilga.gov/assets/img/members/{C127AF36-0EAE-48B6-8C31-86AAE3935790}.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-39",
+  "jurisdiction": "Illinois House of Representatives",
+  "county": [
+    "Illinois"
+  ],
+  "termStart": "2015-01-14",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 259-S, Stratton Office Building, Springfield, IL 62706",
+    "phone": "217-558-1032",
+    "email": "will@repguzzardi.com",
+    "website": "https://ilga.gov/house/Rep.asp?GA=101&MemberID=2662"
+  },
+  "bio": "Will Guzzardi serves as State Representative for Illinois House of Representatives District 39. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "IL",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://ilga.gov/house/Rep.asp?GA=101&MemberID=2662"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/il/legislature/Will-Guzzardi-df11068d-eb77-4eb8-90c8-95056891e633.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://cdn.ilga.gov/assets/img/members/{C127AF36-0EAE-48B6-8C31-86AAE3935790}.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Will_Guzzardi"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Will_Guzzardi"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ilga.gov/house/default.asp?GA=101"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ilga.gov/house/default.asp?GA=102"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ilga.gov/house/default.asp?GA=103"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ilga.gov/house/Rep.asp?GA=102&MemberID=2884"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ilga.gov/house/Rep.asp?GA=103&MemberID=3091"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

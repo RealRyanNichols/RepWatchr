@@ -1,0 +1,61 @@
+{
+  "id": "john-kascenska",
+  "name": "John Kascenska",
+  "firstName": "John",
+  "lastName": "Kascenska",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-Essex-Caledonia",
+  "jurisdiction": "Vermont House of Representatives",
+  "county": [
+    "Vermont"
+  ],
+  "termStart": "2025-01-08",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Vermont State House 115 State St., Montpelier, VT 05633",
+    "phone": "802-828-2228",
+    "email": "jkascenska@leg.state.vt.us",
+    "website": "https://legislature.vermont.gov/Documents/SmallMaps/CAL-4.pdf"
+  },
+  "bio": "John Kascenska serves as State Representative for Vermont House of Representatives District Essex-Caledonia. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "VT",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://legislature.vermont.gov/Documents/SmallMaps/CAL-4.pdf"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/vt/legislature/John-Kascenska-b9c3e545-5ef2-4fb2-9128-64a369608dda.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/John_Kascenska"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/John_Kascenska"
+    },
+    {
+      "title": "Public source",
+      "url": "https://legislature.vermont.gov/people/loadAll/2022"
+    },
+    {
+      "title": "Public source",
+      "url": "https://legislature.vermont.gov/people/single/2022/36986"
+    },
+    {
+      "title": "Public source",
+      "url": "https://legislature.vermont.gov/people/single/2026/36986"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/john-kascenska-a740215b"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

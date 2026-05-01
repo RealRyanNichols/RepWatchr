@@ -1,0 +1,72 @@
+{
+  "id": "pat-jehlen",
+  "name": "Pat Jehlen",
+  "firstName": "Pat",
+  "lastName": "Jehlen",
+  "photo": "/images/officials/state-legislature/ma/pat-jehlen.jpg",
+  "photoSourceUrl": "https://malegislature.gov/Legislators/Profile/170/PDJ0.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-Second Middlesex",
+  "jurisdiction": "Massachusetts Senate",
+  "county": [
+    "Massachusetts"
+  ],
+  "termStart": "2005-10-12",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 424, State House 24 Beacon St., Boston, MA 02133",
+    "phone": "617-722-1578",
+    "email": "patricia.jehlen@masenate.gov",
+    "website": "https://malegislature.gov/Legislators/Profile/PDJ0"
+  },
+  "bio": "Pat Jehlen serves as State Senator for Massachusetts Senate District Second Middlesex. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "MA",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://malegislature.gov/Legislators/Profile/PDJ0"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ma/legislature/Patricia-D-Jehlen-6de50ed2-4fe8-4b98-894d-0bc391c876b5.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://malegislature.gov/Legislators/Profile/170/PDJ0.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Patricia_Jehlen"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Patricia_D._Jehlen"
+    },
+    {
+      "title": "Public source",
+      "url": "https://malegislature.gov/api/GeneralCourts/192/LegislativeMembers"
+    },
+    {
+      "title": "Public source",
+      "url": "https://malegislature.gov/api/GeneralCourts/192/LegislativeMembers/"
+    },
+    {
+      "title": "Public source",
+      "url": "https://malegislature.gov/api/GeneralCourts/192/LegislativeMembers/PDJ0"
+    },
+    {
+      "title": "Public source",
+      "url": "https://malegislature.gov/api/GeneralCourts/193/LegislativeMembers"
+    },
+    {
+      "title": "Public source",
+      "url": "https://malegislature.gov/api/GeneralCourts/193/LegislativeMembers/"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

@@ -1,0 +1,56 @@
+{
+  "id": "keith-jackson",
+  "name": "Keith Jackson",
+  "firstName": "Keith",
+  "lastName": "Jackson",
+  "photo": "/images/officials/state-legislature/ms/keith-jackson.jpg",
+  "photoSourceUrl": "https://www.theclintoncourier.net/wp-content/uploads/2024/03/Statement-by-Attorney-Christopher-A.-Collins-on-Behalf-of-Keith-Jackson.png",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-45",
+  "jurisdiction": "Mississippi House of Representatives",
+  "county": [
+    "Mississippi"
+  ],
+  "termStart": "2024-01-02",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "State Capitol 400 High St., Jackson, MS 39201",
+    "phone": "601-359-3770",
+    "email": "jackson@house.ms.gov",
+    "website": "https://billstatus.ls.state.ms.us/members/house/jackson_(45th).xml"
+  },
+  "bio": "Keith Jackson serves as State Representative for Mississippi House of Representatives District 45. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "MS",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://billstatus.ls.state.ms.us/members/house/jackson_(45th).xml"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ms/legislature/Keith-Jackson-0f07445d-ab7a-4c6f-9b3c-a402436afbed.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://www.theclintoncourier.net/wp-content/uploads/2024/03/Statement-by-Attorney-Christopher-A.-Collins-on-Behalf-of-Keith-Jackson.png"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Keith_Jackson_(Mississippi)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Keith_Jackson_(politician)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/156220/keith-jackson"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

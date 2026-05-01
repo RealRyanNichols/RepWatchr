@@ -1,0 +1,69 @@
+{
+  "id": "chris-gildon",
+  "name": "Chris Gildon",
+  "firstName": "Chris",
+  "lastName": "Gildon",
+  "party": "R",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-25",
+  "jurisdiction": "Washington Senate",
+  "county": [
+    "Washington"
+  ],
+  "termStart": "2021-01-11",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 311A, Irv Newhouse Building P.O. Box 40425, Olympia, WA 98504",
+    "phone": "360-786-7648",
+    "email": "chris.gildon@leg.wa.gov",
+    "website": "https://ChrisGildon.src.wastateleg.org/"
+  },
+  "bio": "Chris Gildon serves as State Senator for Washington Senate District 25. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "WA",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://ChrisGildon.src.wastateleg.org/"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/wa/legislature/Chris-Gildon-1e20aaf3-ffbb-4666-82c2-374b232b41ac.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://app.leg.wa.gov/ContentParts/MemberDirectory/?a=Senate"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Chris_Gildon"
+    },
+    {
+      "title": "Public source",
+      "url": "https://chrisgildon.src.wastateleg.org"
+    },
+    {
+      "title": "Public source",
+      "url": "https://chrisgildon.src.wastateleg.org/"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Chris_Gildon"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/183034/chris-gildon"
+    },
+    {
+      "title": "Public source",
+      "url": "https://leg.wa.gov/legislators/member/chris-gildon"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.leg.wa.gov/house/representatives/Pages/default.aspx"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

@@ -1,0 +1,60 @@
+{
+  "id": "mike-murphy-nh-legislature-lower-coos-6",
+  "name": "Mike Murphy",
+  "firstName": "Mike",
+  "lastName": "Murphy",
+  "photo": "/images/officials/state-legislature/nh/mike-murphy-nh-legislature-lower-coos-6.jpg",
+  "photoSourceUrl": "https://nhjournal.com/wp-content/uploads/2024/01/mike-murphy-233x300.jpeg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-Coos 6",
+  "jurisdiction": "New Hampshire House of Representatives",
+  "county": [
+    "New Hampshire"
+  ],
+  "termStart": "2024-01-31",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "State House 107 N. Main St., Concord, NH 03301",
+    "phone": "603-271-3661",
+    "email": "michael.murphy@gc.nh.gov",
+    "website": "https://gc.nh.gov/house/members/member.aspx?pid=11119"
+  },
+  "bio": "Mike Murphy serves as State Representative for New Hampshire House of Representatives District Coos 6. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "NH",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://gc.nh.gov/house/members/member.aspx?pid=11119"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/nh/legislature/Mike-Murphy-546b9d6e-0e31-4a6c-9d8f-63a0c9bb2b1f.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://nhjournal.com/wp-content/uploads/2024/01/mike-murphy-233x300.jpeg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Michael_Murphy_(New_Hampshire)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Michael_Murphy_(New_Hampshire_politician)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/214108/michael-murphy"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.gencourt.state.nh.us/house/members/member.aspx?pid=11119"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

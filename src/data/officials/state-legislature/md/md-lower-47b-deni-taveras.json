@@ -1,0 +1,60 @@
+{
+  "id": "deni-taveras",
+  "name": "Deni Taveras",
+  "firstName": "Deni",
+  "lastName": "Taveras",
+  "photo": "/images/officials/state-legislature/md/deni-taveras.jpg",
+  "photoSourceUrl": "https://global-uploads.webflow.com/5e1b86c619c05c91b9967ad6/620e4aa91638bf13a472cf3e_DtOqMwcsRnKd3LnHjPV2jw_thumb_d6b.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "Delegate",
+  "district": "HD-47B",
+  "jurisdiction": "Maryland House of Delegates",
+  "county": [
+    "Maryland"
+  ],
+  "termStart": "2023-01-11",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 206, Lowe House Office Building 6 Bladen St., Annapolis, MD 21401",
+    "phone": "410-841-3101",
+    "email": "deni.taveras@house.maryland.gov",
+    "website": "https://mgaleg.maryland.gov/mgawebsite/Members/Details/taveras01"
+  },
+  "bio": "Deni Taveras serves as Delegate for Maryland House of Delegates District 47B. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "MD",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://mgaleg.maryland.gov/mgawebsite/Members/Details/taveras01"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/md/legislature/Deni-Taveras-1ef3da63-78d6-4d56-a5a0-b4c4106eda34.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://global-uploads.webflow.com/5e1b86c619c05c91b9967ad6/620e4aa91638bf13a472cf3e_DtOqMwcsRnKd3LnHjPV2jw_thumb_d6b.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Deni_Taveras"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Deni_Taveras"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/159520/deni-taveras"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/deni-taveras"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

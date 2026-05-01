@@ -1,0 +1,72 @@
+{
+  "id": "jenny-armini",
+  "name": "Jenny Armini",
+  "firstName": "Jenny",
+  "lastName": "Armini",
+  "photo": "/images/officials/state-legislature/ma/jenny-armini.jpg",
+  "photoSourceUrl": "https://malegislature.gov/Legislators/Profile/170/JBA1.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-8th Essex",
+  "jurisdiction": "Massachusetts House of Representatives",
+  "county": [
+    "Massachusetts"
+  ],
+  "termStart": "2023-01-04",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 21, State House 24 Beacon St., Boston, MA 02133",
+    "phone": "617-722-2140",
+    "email": "jennifer.armini@mahouse.gov",
+    "website": "https://malegislature.gov/Legislators/Profile/JBA1"
+  },
+  "bio": "Jenny Armini serves as State Representative for Massachusetts House of Representatives District 8th Essex. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "MA",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://malegislature.gov/Legislators/Profile/JBA1"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ma/legislature/Jennifer-Balinsky-Armini-eab9b69f-0434-4307-972c-6acce9deb370.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://malegislature.gov/Legislators/Profile/170/JBA1.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Jenny_Armini"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Jenny_Armini"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/209560/jennifer-armini"
+    },
+    {
+      "title": "Public source",
+      "url": "https://malegislature.gov/api/GeneralCourts/193/LegislativeMembers"
+    },
+    {
+      "title": "Public source",
+      "url": "https://malegislature.gov/api/GeneralCourts/193/LegislativeMembers/"
+    },
+    {
+      "title": "Public source",
+      "url": "https://malegislature.gov/api/GeneralCourts/193/LegislativeMembers/JBA1"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/jennifer-armini-9ab1849a"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

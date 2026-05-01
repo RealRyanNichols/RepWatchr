@@ -1,0 +1,56 @@
+{
+  "id": "rebecca-edgeworth",
+  "name": "Rebecca Edgeworth",
+  "firstName": "Rebecca",
+  "lastName": "Edgeworth",
+  "photo": "/images/officials/state-legislature/nv/rebecca-edgeworth.jpg",
+  "photoSourceUrl": "http://leg.state.nv.us/Session/83rd2025/legislators/Assembly/Images/Edgeworth.Rebecca.411.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "Assemblymember",
+  "district": "HD-35",
+  "jurisdiction": "Nevada Assembly",
+  "county": [
+    "Nevada"
+  ],
+  "termStart": "2024-11-06",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 4102, Nevada Assembly 401 S. Carson St., Carson City, NV 89701",
+    "phone": "775-684-8573",
+    "email": "rebecca.edgeworth@asm.state.nv.us",
+    "website": "https://www.leg.state.nv.us/App/Legislator/A/Assembly/Current/35"
+  },
+  "bio": "Rebecca Edgeworth serves as Assemblymember for Nevada Assembly District 35. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "NV",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.leg.state.nv.us/App/Legislator/A/Assembly/Current/35"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/nv/legislature/Rebecca-Edgeworth-0460d67c-f5e3-4ff8-82c3-27caabeff9a2.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "http://leg.state.nv.us/Session/83rd2025/legislators/Assembly/Images/Edgeworth.Rebecca.411.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Rebecca_Edgeworth"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Rebecca_Edgeworth"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/215873/rebecca-edgeworth"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

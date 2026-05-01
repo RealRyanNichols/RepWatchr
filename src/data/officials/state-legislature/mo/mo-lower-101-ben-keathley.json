@@ -1,0 +1,56 @@
+{
+  "id": "ben-keathley",
+  "name": "Ben Keathley",
+  "firstName": "Ben",
+  "lastName": "Keathley",
+  "photo": "/images/officials/state-legislature/mo/ben-keathley.jpg",
+  "photoSourceUrl": "https://house.mo.gov/MemberPhoto.aspx?id=2389",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-101",
+  "jurisdiction": "Missouri House of Representatives",
+  "county": [
+    "Missouri"
+  ],
+  "termStart": "2023-01-04",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 112, 201 W. Capitol Ave., Jefferson City, MO 65101",
+    "phone": "573-751-1247",
+    "email": "ben.keathley@house.mo.gov",
+    "website": "https://house.mo.gov/MemberDetails.aspx?district=101"
+  },
+  "bio": "Ben Keathley serves as State Representative for Missouri House of Representatives District 101. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "MO",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://house.mo.gov/MemberDetails.aspx?district=101"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/mo/legislature/Ben-Keathley-1f082953-c9f5-4a72-a281-cdb9fe4bda5e.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://house.mo.gov/MemberPhoto.aspx?id=2389"
+    },
+    {
+      "title": "Public source",
+      "url": "https://house.mo.gov/MemberDetails.aspx?year=2023&code=R&district=101"
+    },
+    {
+      "title": "Public source",
+      "url": "https://house.mo.gov/MemberDetails.aspx?year=2024&code=R&district=101"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/benkeath"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

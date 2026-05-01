@@ -1,0 +1,57 @@
+{
+  "id": "tullio-liberati",
+  "name": "Tullio Liberati",
+  "firstName": "Tullio",
+  "lastName": "Liberati",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-2",
+  "jurisdiction": "Michigan House of Representatives",
+  "county": [
+    "Michigan"
+  ],
+  "termStart": "2023-01-01",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room S-586, Anderson House Office Building 124 N. Capitol Ave., Lansing, MI 48933",
+    "phone": "517-373-1776",
+    "email": "tullioliberati@house.mi.gov",
+    "website": "https://housedems.com/tullio-liberati/"
+  },
+  "bio": "Tullio Liberati serves as State Representative for Michigan House of Representatives District 2. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "MI",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://housedems.com/tullio-liberati/"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/mi/legislature/Tullio-Liberati-4d548157-c00e-4131-bf2b-5838ffc5281a.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Tullio_Liberati"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Tullio_Liberati"
+    },
+    {
+      "title": "Public source",
+      "url": "https://housedems.com/tullio-liberati"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.house.mi.gov/AllRepresentatives"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.house.mi.gov/MHRPublic/frmRepListMilenia.aspx?all=true"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

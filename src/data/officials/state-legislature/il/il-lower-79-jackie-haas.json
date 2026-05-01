@@ -1,0 +1,69 @@
+{
+  "id": "jackie-haas",
+  "name": "Jackie Haas",
+  "firstName": "Jackie",
+  "lastName": "Haas",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-79",
+  "jurisdiction": "Illinois House of Representatives",
+  "county": [
+    "Illinois"
+  ],
+  "termStart": "2020-12-08",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 201-N, Stratton Office Building, Springfield, IL 62706",
+    "phone": "217-782-5981",
+    "email": "haas@ilhousegop.org",
+    "website": "https://ilga.gov/house/Rep.asp?GA=102&MemberID=2981"
+  },
+  "bio": "Jackie Haas serves as State Representative for Illinois House of Representatives District 79. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "IL",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://ilga.gov/house/Rep.asp?GA=102&MemberID=2981"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/il/legislature/Jackie-Haas-5da74880-f9e4-4c20-bc17-74d88526a7a4.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Jackie_Haas"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Jackie_Haas_(politician)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ilga.gov/house/default.asp?GA=102"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ilga.gov/house/default.asp?GA=103"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ilga.gov/house/Rep.asp?GA=103&MemberID=3171"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/evaluations/188042/jackie-haas"
+    },
+    {
+      "title": "Public source",
+      "url": "https://rephaas.com"
+    },
+    {
+      "title": "Public source",
+      "url": "https://rephaas.com/"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

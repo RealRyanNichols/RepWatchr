@@ -1,0 +1,68 @@
+{
+  "id": "jeff-olsommer",
+  "name": "Jeff Olsommer",
+  "firstName": "Jeff",
+  "lastName": "Olsommer",
+  "photo": "/images/officials/state-legislature/pa/jeff-olsommer.jpg",
+  "photoSourceUrl": "https://s3.amazonaws.com/ballotpedia-api4/files/thumbs/200/300/Jeff_Olsommer.jpeg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-139",
+  "jurisdiction": "Pennsylvania House of Representatives",
+  "county": [
+    "Pennsylvania"
+  ],
+  "termStart": "2024-05-21",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 164, East Wing P.O. Box 202139, Harrisburg, PA 17120",
+    "phone": "717-783-2037",
+    "email": "jolsommer@pahousegop.com",
+    "website": "https://www.legis.state.pa.us/cfdocs/legis/home/member_information/House_bio.cfm?id=2018"
+  },
+  "bio": "Jeff Olsommer serves as State Representative for Pennsylvania House of Representatives District 139. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "PA",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.legis.state.pa.us/cfdocs/legis/home/member_information/House_bio.cfm?id=2018"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/pa/legislature/Jeff-Olsommer-08211014-af0e-4d71-92a7-e0045ba8062a.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://s3.amazonaws.com/ballotpedia-api4/files/thumbs/200/300/Jeff_Olsommer.jpeg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Jeff_Olsommer"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Jeff_Olsommer"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/jeff-olsommer-cic-ab8b7a2"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.palegis.us/house/members/bio/2018/rep-olsommer"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.repolsommer.com"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.repolsommer.com/about"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

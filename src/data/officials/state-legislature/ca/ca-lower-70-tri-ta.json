@@ -1,0 +1,61 @@
+{
+  "id": "tri-ta",
+  "name": "Tri Ta",
+  "firstName": "Tri",
+  "lastName": "Ta",
+  "party": "R",
+  "level": "state",
+  "position": "Assemblymember",
+  "district": "HD-70",
+  "jurisdiction": "California State Assembly",
+  "county": [
+    "California"
+  ],
+  "termStart": "2022-12-05",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 5540, 1021 O St. P.O. Box 942849, Sacramento, CA 94249",
+    "phone": "916-319-2070",
+    "email": "assemblymember.ta@assembly.ca.gov",
+    "website": "https://ad70.asmrc.org"
+  },
+  "bio": "Tri Ta serves as Assemblymember for California State Assembly District 70. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "CA",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://ad70.asmrc.org"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ca/legislature/Tri-Ta-75229920-399d-4216-9b76-c27ea398665a.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ad70.asmrc.org/biography"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Tri_Ta"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Tri_Ta"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.assembly.ca.gov/assemblymembers"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.ci.westminster.ca.us"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.ci.westminster.ca.us/"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

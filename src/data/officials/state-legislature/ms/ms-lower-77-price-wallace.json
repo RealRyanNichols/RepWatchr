@@ -1,0 +1,64 @@
+{
+  "id": "price-wallace",
+  "name": "Price Wallace",
+  "firstName": "Price",
+  "lastName": "Wallace",
+  "photo": "/images/officials/state-legislature/ms/price-wallace.jpg",
+  "photoSourceUrl": "http://billstatus.ls.state.ms.us/members/house/wallace.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-77",
+  "jurisdiction": "Mississippi House of Representatives",
+  "county": [
+    "Mississippi"
+  ],
+  "termStart": "2018-08-15",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "State Capitol 400 High St., Jackson, MS 39201",
+    "phone": "601-359-3770",
+    "email": "pwallace@house.ms.gov",
+    "website": "https://billstatus.ls.state.ms.us/members/house/wallace.xml"
+  },
+  "bio": "Price Wallace serves as State Representative for Mississippi House of Representatives District 77. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "MS",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://billstatus.ls.state.ms.us/members/house/wallace.xml"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ms/legislature/Price-Wallace-35bf01bd-be16-4ce6-b07c-bfff3d25e7e3.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "http://billstatus.ls.state.ms.us/members/house/wallace.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Price_Wallace"
+    },
+    {
+      "title": "Public source",
+      "url": "https://billstatus.ls.state.ms.us/members/hr_membs.xml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Price_Wallace"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/182811/price-wallace"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/price-wallace-75a549110"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

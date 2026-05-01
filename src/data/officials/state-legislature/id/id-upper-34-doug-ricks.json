@@ -1,0 +1,72 @@
+{
+  "id": "doug-ricks",
+  "name": "Doug Ricks",
+  "firstName": "Doug",
+  "lastName": "Ricks",
+  "photo": "/images/officials/state-legislature/id/doug-ricks.jpg",
+  "photoSourceUrl": "https://legislature.idaho.gov/wp-content/uploads/sessioninfo/2021/directory/Ricks5383.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-34",
+  "jurisdiction": "Idaho Senate",
+  "county": [
+    "Idaho"
+  ],
+  "termStart": "2020-12-01",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "P.O. Box 83720 700 W. Jefferson St., Boise, ID 83720",
+    "phone": "208-332-1301",
+    "email": "dricks@senate.idaho.gov",
+    "website": "https://legislature.idaho.gov/legislators/membership/2023/id5383/"
+  },
+  "bio": "Doug Ricks serves as State Senator for Idaho Senate District 34. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "ID",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://legislature.idaho.gov/legislators/membership/2023/id5383/"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/id/legislature/Doug-Ricks-2960c6c4-abca-4406-9d9d-4734fec3f68d.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://legislature.idaho.gov/wp-content/uploads/sessioninfo/2021/directory/Ricks5383.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Doug_Ricks"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Doug_Ricks"
+    },
+    {
+      "title": "Public source",
+      "url": "https://legislature.idaho.gov/legislators/membership/2023/id5383"
+    },
+    {
+      "title": "Public source",
+      "url": "https://legislature.idaho.gov/legislators/membership/2024/id5383"
+    },
+    {
+      "title": "Public source",
+      "url": "https://legislature.idaho.gov/legislators/membership/2026/id5383"
+    },
+    {
+      "title": "Public source",
+      "url": "https://legislature.idaho.gov/senate/membership"
+    },
+    {
+      "title": "Public source",
+      "url": "https://legislature.idaho.gov/senate/membership/"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

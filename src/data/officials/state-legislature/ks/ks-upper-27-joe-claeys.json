@@ -1,0 +1,49 @@
+{
+  "id": "joe-claeys",
+  "name": "Joe Claeys",
+  "firstName": "Joe",
+  "lastName": "Claeys",
+  "party": "R",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-27",
+  "jurisdiction": "Kansas Senate",
+  "county": [
+    "Kansas"
+  ],
+  "termStart": "2025-01-13",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "State Capitol Room 237-E, Kansas  Building 300 SW 10th St., Topeka, KS 66612",
+    "phone": "785-296-7353",
+    "email": "joseph.claeys@senate.ks.gov",
+    "website": "https://www.kslegislature.gov/li/b2025_26/members/sen_claeys_joseph_1/"
+  },
+  "bio": "Joe Claeys serves as State Senator for Kansas Senate District 27. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "KS",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.kslegislature.gov/li/b2025_26/members/sen_claeys_joseph_1/"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ks/legislature/Joe-Claeys-918f677f-eac8-4e2d-acc9-eb2c3e4de80f.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Joe_Claeys"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.kslegislature.gov/li/b2025_26/members/sen_claeys_joseph_1"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/claeysjoseph"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

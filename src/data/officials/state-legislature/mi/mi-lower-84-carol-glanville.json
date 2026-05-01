@@ -1,0 +1,57 @@
+{
+  "id": "carol-glanville",
+  "name": "Carol Glanville",
+  "firstName": "Carol",
+  "lastName": "Glanville",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-84",
+  "jurisdiction": "Michigan House of Representatives",
+  "county": [
+    "Michigan"
+  ],
+  "termStart": "2023-01-01",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room S-1188, Anderson House Office Building 124 N. Capitol Ave., Lansing, MI 48933",
+    "phone": "517-373-0476",
+    "email": "caglanville@house.mi.gov",
+    "website": "https://housedems.com/carol-glanville/"
+  },
+  "bio": "Carol Glanville serves as State Representative for Michigan House of Representatives District 84. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "MI",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://housedems.com/carol-glanville/"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/mi/legislature/Carol-Glanville-86812673-e63a-4f36-aa3e-26de84380657.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Carol_Glanville"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Carol_Glanville"
+    },
+    {
+      "title": "Public source",
+      "url": "https://housedems.com/carol-glanville"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.house.mi.gov/AllRepresentatives"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/caglanville"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

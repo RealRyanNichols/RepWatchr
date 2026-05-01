@@ -1,0 +1,61 @@
+{
+  "id": "leon-howard",
+  "name": "Leon Howard",
+  "firstName": "Leon",
+  "lastName": "Howard",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-76",
+  "jurisdiction": "South Carolina House of Representatives",
+  "county": [
+    "South Carolina"
+  ],
+  "termStart": "",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 530B, Blatt Building P.O. Box 11867, Columbia, SC 29201",
+    "phone": "803-734-3049",
+    "email": "leonhoward@schouse.gov",
+    "website": "https://scstatehouse.gov/member.php?code=0879545349"
+  },
+  "bio": "Leon Howard serves as State Representative for South Carolina House of Representatives District 76. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "SC",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://scstatehouse.gov/member.php?code=0879545349"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/sc/legislature/Leon-Howard-a7665bc0-b03c-419e-976c-b3a25ebf358e.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Leon_Howard"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Leon_Howard_(South_Carolina_politician)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/8610/leon-howard"
+    },
+    {
+      "title": "Public source",
+      "url": "https://scstatehouse.gov/member.php?chamber=H"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.scstatehouse.gov/member.php?chamber=H"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.scstatehouse.gov/member.php?code=0879545349"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

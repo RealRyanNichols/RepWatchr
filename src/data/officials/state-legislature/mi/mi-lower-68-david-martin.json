@@ -1,0 +1,53 @@
+{
+  "id": "david-martin",
+  "name": "David Martin",
+  "firstName": "David",
+  "lastName": "Martin",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-68",
+  "jurisdiction": "Michigan House of Representatives",
+  "county": [
+    "Michigan"
+  ],
+  "termStart": "2023-01-01",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room N-1087, Anderson House Office Building 124 N. Capitol Ave., Lansing, MI 48933",
+    "phone": "517-373-0826",
+    "email": "davidmartin@house.mi.gov",
+    "website": "https://gophouse.org/member/repdavidmartin/posts"
+  },
+  "bio": "David Martin serves as State Representative for Michigan House of Representatives District 68. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "MI",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://gophouse.org/member/repdavidmartin/posts"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/mi/legislature/David-Martin-95434509-a8fd-4e25-9f04-a952416d6da3.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/David_Martin_(Michigan)"
+    },
+    {
+      "title": "Member Details Page",
+      "url": "https://repmartin.com"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.house.mi.gov/AllRepresentatives"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.house.mi.gov/MHRPublic/frmRepListMilenia.aspx?all=true"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

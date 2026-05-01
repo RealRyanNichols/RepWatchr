@@ -1,0 +1,56 @@
+{
+  "id": "jane-raybould",
+  "name": "Jane Raybould",
+  "firstName": "Jane",
+  "lastName": "Raybould",
+  "photo": "/images/officials/state-legislature/ne/jane-raybould.jpg",
+  "photoSourceUrl": "https://www.nebraskalegislature.gov/media/images/senators/dist28/highres/dist28.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "NP",
+  "level": "state",
+  "position": "State Senator",
+  "district": "LD-28",
+  "jurisdiction": "Nebraska Legislature",
+  "county": [
+    "Nebraska"
+  ],
+  "termStart": "2023-01-04",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "State Capitol Room 1406, P.O. Box 94604, Lincoln, NE 68509",
+    "phone": "402-471-2633",
+    "email": "jraybould@leg.ne.gov",
+    "website": "https://nebraskalegislature.gov/senators/landing-pages/index.php?District=28"
+  },
+  "bio": "Jane Raybould serves as State Senator for Nebraska Legislature District 28. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "NE",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://nebraskalegislature.gov/senators/landing-pages/index.php?District=28"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ne/legislature/Jane-Raybould-0f176ff3-ed75-4605-9e8b-5bb5a3d3c4cf.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://www.nebraskalegislature.gov/media/images/senators/dist28/highres/dist28.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Jane_Raybould"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Jane_Raybould"
+    },
+    {
+      "title": "Public source",
+      "url": "https://nebraskalegislature.gov/senators/senator_list.php"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

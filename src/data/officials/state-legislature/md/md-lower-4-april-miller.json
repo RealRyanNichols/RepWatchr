@@ -1,0 +1,52 @@
+{
+  "id": "april-miller",
+  "name": "April Miller",
+  "firstName": "April",
+  "lastName": "Miller",
+  "photo": "/images/officials/state-legislature/md/april-miller.jpg",
+  "photoSourceUrl": "https://s3.amazonaws.com/ballotpedia-api4/files/thumbs/200/300/April_Fleming_Miller.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "Delegate",
+  "district": "HD-4",
+  "jurisdiction": "Maryland House of Delegates",
+  "county": [
+    "Maryland"
+  ],
+  "termStart": "2023-01-11",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 226, Lowe House Office Building 6 Bladen St., Annapolis, MD 21401",
+    "phone": "410-841-3288",
+    "email": "april.miller@house.maryland.gov",
+    "website": "https://mgaleg.maryland.gov/mgawebsite/Members/Details/miller03"
+  },
+  "bio": "April Miller serves as Delegate for Maryland House of Delegates District 4. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "MD",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://mgaleg.maryland.gov/mgawebsite/Members/Details/miller03"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/md/legislature/April-Miller-ce14f02f-4b1e-407e-b8e5-57eb78c8d557.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://s3.amazonaws.com/ballotpedia-api4/files/thumbs/200/300/April_Fleming_Miller.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/April_Fleming_Miller"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/April_Fleming_Miller"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

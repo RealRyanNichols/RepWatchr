@@ -1,0 +1,53 @@
+{
+  "id": "warren-hamilton",
+  "name": "Warren Hamilton",
+  "firstName": "Warren",
+  "lastName": "Hamilton",
+  "party": "R",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-7",
+  "jurisdiction": "Oklahoma Senate",
+  "county": [
+    "Oklahoma"
+  ],
+  "termStart": "2020-11-16",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 416, 2300 N. Lincoln Blvd., Oklahoma City, OK 73105",
+    "phone": "405-521-5604",
+    "email": "warren.hamilton@oksenate.gov",
+    "website": "https://oksenate.gov/contact-senator?sid=1521374"
+  },
+  "bio": "Warren Hamilton serves as State Senator for Oklahoma Senate District 7. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "OK",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://oksenate.gov/contact-senator?sid=1521374"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ok/legislature/Warren-Hamilton-48d6aa7c-97e1-4c69-8014-8818ae9ad055.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Warren_Hamilton"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Warren_Hamilton"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/192208/warren-hamilton"
+    },
+    {
+      "title": "Public source",
+      "url": "https://oksenate.gov/senators/warren-hamilton"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

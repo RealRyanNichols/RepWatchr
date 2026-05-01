@@ -1,0 +1,57 @@
+{
+  "id": "liz-barbour",
+  "name": "Liz Barbour",
+  "firstName": "Liz",
+  "lastName": "Barbour",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-Hillsborough 35",
+  "jurisdiction": "New Hampshire House of Representatives",
+  "county": [
+    "New Hampshire"
+  ],
+  "termStart": "2024-12-04",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "State House 107 N. Main St., Concord, NH 03301",
+    "phone": "603-271-3661",
+    "email": "liz.barbour@gc.nh.gov",
+    "website": "https://gc.nh.gov/house/members/member.aspx?pid=10659"
+  },
+  "bio": "Liz Barbour serves as State Representative for New Hampshire House of Representatives District Hillsborough 35. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "NH",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://gc.nh.gov/house/members/member.aspx?pid=10659"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/nh/legislature/Liz-Barbour-6fbc7a9b-82b3-4897-86e1-61e3fb4a4f77.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Liz_Barbour"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Liz_Barbour"
+    },
+    {
+      "title": "Public source",
+      "url": "https://gencourt.state.nh.us/house/members/member.aspx?pid=10659"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/209049/liz-barbour"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/liz-barbour-29ab276"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

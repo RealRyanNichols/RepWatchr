@@ -1,0 +1,48 @@
+{
+  "id": "christina-wolff",
+  "name": "Christina Wolff",
+  "firstName": "Christina",
+  "lastName": "Wolff",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-38",
+  "jurisdiction": "North Dakota House of Representatives",
+  "county": [
+    "North Dakota"
+  ],
+  "termStart": "2024-12-01",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "State Capitol 600 E. Boulevard Ave., Bismarck, ND 58505",
+    "email": "cwolff@ndlegis.gov",
+    "website": "https://ndlegis.gov/biography/christina-wolff"
+  },
+  "bio": "Christina Wolff serves as State Representative for North Dakota House of Representatives District 38. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "ND",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://ndlegis.gov/biography/christina-wolff"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/nd/legislature/Christina-Wolff-f503a00c-951e-43c6-a5e5-8aff9bda4a6a.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Christina_Wolff"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Christina_Wolff"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/216710/christina-wolff"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

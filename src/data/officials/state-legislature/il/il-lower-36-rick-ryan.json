@@ -1,0 +1,56 @@
+{
+  "id": "rick-ryan",
+  "name": "Rick Ryan",
+  "firstName": "Rick",
+  "lastName": "Ryan",
+  "photo": "/images/officials/state-legislature/il/rick-ryan.jpg",
+  "photoSourceUrl": "https://cdn.ilga.gov/assets/img/members/{D636B7BF-6A7A-4F82-8429-018FF5E1CE36}.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-36",
+  "jurisdiction": "Illinois House of Representatives",
+  "county": [
+    "Illinois"
+  ],
+  "termStart": "2025-01-08",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 523-C, Stratton Building, Springfield, IL 62706",
+    "phone": "217-782-0515",
+    "email": "ryanrep36@gmail.com",
+    "website": "https://www.ilga.gov/House/Members/Details/3457"
+  },
+  "bio": "Rick Ryan serves as State Representative for Illinois House of Representatives District 36. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "IL",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.ilga.gov/House/Members/Details/3457"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/il/legislature/Rick-Ryan-749cc87c-81a8-48ba-9cee-a6be77e1d333.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://cdn.ilga.gov/assets/img/members/{D636B7BF-6A7A-4F82-8429-018FF5E1CE36}.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Rick_Ryan"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/33833/rick-ryan"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.ilga.gov/house/Rep.asp?GA=104&MemberID=3457"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

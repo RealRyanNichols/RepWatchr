@@ -1,0 +1,65 @@
+{
+  "id": "john-waldron",
+  "name": "John Waldron",
+  "firstName": "John",
+  "lastName": "Waldron",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-77",
+  "jurisdiction": "Oklahoma House of Representatives",
+  "county": [
+    "Oklahoma"
+  ],
+  "termStart": "2018-11-16",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 501, 2300 N. Lincoln Blvd., Oklahoma City, OK 73105",
+    "phone": "405-557-7410",
+    "email": "john.waldron@okhouse.gov",
+    "website": "https://www.okhouse.gov/Members/Contact.aspx?District=77"
+  },
+  "bio": "John Waldron serves as State Representative for Oklahoma House of Representatives District 77. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "OK",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.okhouse.gov/Members/Contact.aspx?District=77"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ok/legislature/John-Waldron-6a662cc1-492b-4c65-a77c-9b8b202b1ae5.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/John_Waldron"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/John_Waldron_(politician)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/170655/john-waldron"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/john-waldron-a3235a5"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.okhouse.gov/Members/Default.aspx"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.okhouse.gov/Members/District.aspx?District=77"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.okhouse.gov/representatives/john-waldron"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

@@ -1,0 +1,64 @@
+{
+  "id": "sarah-stevens",
+  "name": "Sarah Stevens",
+  "firstName": "Sarah",
+  "lastName": "Stevens",
+  "photo": "/images/officials/state-legislature/nc/sarah-stevens.jpg",
+  "photoSourceUrl": "https://www.ncleg.gov/Members/MemberImage/H/592/Low",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-90",
+  "jurisdiction": "North Carolina House of Representatives",
+  "county": [
+    "North Carolina"
+  ],
+  "termStart": "2009-01-28",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 635, Legislative Office Building 300 N. Salisbury St., Raleigh, NC 27603",
+    "phone": "919-715-1883",
+    "email": "sarah.stevens@ncleg.gov",
+    "website": "https://www.ncleg.gov/Members/Biography/H/592"
+  },
+  "bio": "Sarah Stevens serves as State Representative for North Carolina House of Representatives District 90. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "NC",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.ncleg.gov/Members/Biography/H/592"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/nc/legislature/Sarah-Stevens-09099128-27fc-463f-af36-28253d1e7a60.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://www.ncleg.gov/Members/MemberImage/H/592/Low"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Sarah_Stevens"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Sarah_Stevens_(politician)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/103057/sarah-stevens"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/rep-sarah-stevens-88494b35"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.ncleg.gov/Members/MemberTable/H"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

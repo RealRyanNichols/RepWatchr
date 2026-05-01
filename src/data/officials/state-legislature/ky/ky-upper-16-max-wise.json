@@ -1,0 +1,62 @@
+{
+  "id": "max-wise",
+  "name": "Max Wise",
+  "firstName": "Max",
+  "lastName": "Wise",
+  "photo": "/images/officials/state-legislature/ky/max-wise.jpg",
+  "photoSourceUrl": "https://legislature.ky.gov/Legislators%20Thumbnail%20Images/senate116.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-16",
+  "jurisdiction": "Kentucky Senate",
+  "county": [
+    "Kentucky"
+  ],
+  "termStart": "2015-01-01",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "email": "max.wise@kylegislature.gov",
+    "website": "https://legislature.ky.gov/Legislators/Pages/Legislator-Profile.aspx?DistrictNumber=116",
+    "socialMedia": {
+      "x": "https://x.com/maxwellwise",
+      "twitter": "https://x.com/maxwellwise"
+    }
+  },
+  "bio": "Max Wise serves as State Senator for Kentucky Senate District 16. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "KY",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://legislature.ky.gov/Legislators/Pages/Legislator-Profile.aspx?DistrictNumber=116"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ky/legislature/Max-Wise-32b5035e-6d1a-44b8-9f7a-4173a1cdb940.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://legislature.ky.gov/Legislators%20Thumbnail%20Images/senate116.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Max_Wise"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Max_Wise"
+    },
+    {
+      "title": "Public source",
+      "url": "https://legislature.ky.gov/Legislators/senate"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/max-wise-1a1b1970"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

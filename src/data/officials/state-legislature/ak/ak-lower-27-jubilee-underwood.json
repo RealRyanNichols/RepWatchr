@@ -1,0 +1,60 @@
+{
+  "id": "jubilee-underwood",
+  "name": "Jubilee Underwood",
+  "firstName": "Jubilee",
+  "lastName": "Underwood",
+  "photo": "/images/officials/state-legislature/ak/jubilee-underwood.jpg",
+  "photoSourceUrl": "https://s3.amazonaws.com/ballotpedia-api4/files/thumbs/200/300/JubileeUnderwood2024.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-27",
+  "jurisdiction": "Alaska House of Representatives",
+  "county": [
+    "Alaska"
+  ],
+  "termStart": "2025-01-21",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "State Capitol Room 112, 120 4th St., Juneau, AK 99801",
+    "phone": "907-465-2186",
+    "email": "representative.jubilee.underwood@akleg.gov",
+    "website": "https://www.akleg.gov/basis/Member/Detail/34?code=und"
+  },
+  "bio": "Jubilee Underwood serves as State Representative for Alaska House of Representatives District 27. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "AK",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.akleg.gov/basis/Member/Detail/34?code=und"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ak/legislature/Jubilee-Underwood-a5fc1d39-03f4-427f-9266-8baf789b6ac6.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://s3.amazonaws.com/ballotpedia-api4/files/thumbs/200/300/JubileeUnderwood2024.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Jubilee_Underwood"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Jubilee_Underwood"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/218161/jubilee-underwood"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/jubileeunderwood"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

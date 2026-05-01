@@ -1,0 +1,57 @@
+{
+  "id": "jay-luneau",
+  "name": "Jay Luneau",
+  "firstName": "Jay",
+  "lastName": "Luneau",
+  "party": "D",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-29",
+  "jurisdiction": "Louisiana Senate",
+  "county": [
+    "Louisiana"
+  ],
+  "termStart": "2016-01-11",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "P.O. Box 94183 900 N. 3rd St., Baton Rouge, LA 70804",
+    "phone": "225-342-2024",
+    "email": "luneauj@legis.la.gov",
+    "website": "https://senate.la.gov/smembers.aspx?ID=29"
+  },
+  "bio": "Jay Luneau serves as State Senator for Louisiana Senate District 29. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "LA",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://senate.la.gov/smembers.aspx?ID=29"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/la/legislature/W-Jay-Luneau-b4a4657a-e588-4036-9a0f-48847e22a140.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Jay_Luneau"
+    },
+    {
+      "title": "Public source",
+      "url": "https://luneaubecklaw.com/about/senator-w-jay-luneau"
+    },
+    {
+      "title": "Public source",
+      "url": "https://luneaulaw.com/profiles/wjayluneau.html"
+    },
+    {
+      "title": "Public source",
+      "url": "https://senate.la.gov/Senators_FullInfo"
+    },
+    {
+      "title": "Public source",
+      "url": "https://senate.la.gov/smembers?ID=29"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

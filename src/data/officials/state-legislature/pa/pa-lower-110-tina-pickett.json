@@ -1,0 +1,73 @@
+{
+  "id": "tina-pickett",
+  "name": "Tina Pickett",
+  "firstName": "Tina",
+  "lastName": "Pickett",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-110",
+  "jurisdiction": "Pennsylvania House of Representatives",
+  "county": [
+    "Pennsylvania"
+  ],
+  "termStart": "2001-01-02",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 315A, Main Capitol Building P.O. Box 202110, Harrisburg, PA 17120",
+    "phone": "717-783-8238",
+    "email": "tpickett@pahousegop.com",
+    "website": "https://www.legis.state.pa.us/cfdocs/legis/home/member_information/House_bio.cfm?id=97",
+    "socialMedia": {
+      "facebook": "https://facebook.com/RepPickett",
+      "youtube": "https://youtube.com/RepPickett"
+    }
+  },
+  "bio": "Tina Pickett serves as State Representative for Pennsylvania House of Representatives District 110. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "PA",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.legis.state.pa.us/cfdocs/legis/home/member_information/House_bio.cfm?id=97"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/pa/legislature/Tina-Pickett-8e174923-d514-4240-b6cd-cbb7927410ba.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Tina_Pickett"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Tina_Pickett"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/46920/tina-pickett"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.legis.state.pa.us/cfdocs/legis/home/member_information/mbrList.cfm?body=H&sort=alpha"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.legis.state.pa.us/cfdocs/legis/home/member_information/representatives_alpha.cfm"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.palegis.us/house/members/bio/97/rep-pickett"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.reppickett.com"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.reppickett.com/about"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

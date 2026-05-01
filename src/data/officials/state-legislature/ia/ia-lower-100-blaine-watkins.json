@@ -1,0 +1,60 @@
+{
+  "id": "blaine-watkins",
+  "name": "Blaine Watkins",
+  "firstName": "Blaine",
+  "lastName": "Watkins",
+  "photo": "/images/officials/state-legislature/ia/blaine-watkins.jpg",
+  "photoSourceUrl": "https://www.legis.iowa.gov/photo?action=getPhoto&ga=91&pid=28966",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-100",
+  "jurisdiction": "Iowa House of Representatives",
+  "county": [
+    "Iowa"
+  ],
+  "termStart": "2025-03-24",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "State Capitol Building 1007 E. Grand Ave., Des Moines, IA 50319",
+    "phone": "515-281-3221",
+    "email": "blaine.watkins@legis.iowa.gov",
+    "website": "https://www.legis.iowa.gov/legislators/legislator?ga=91&personID=28966"
+  },
+  "bio": "Blaine Watkins serves as State Representative for Iowa House of Representatives District 100. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "IA",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.legis.iowa.gov/legislators/legislator?ga=91&personID=28966"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ia/legislature/Blaine-Watkins-16d3e647-2d71-4eb0-beb3-1c6e0294fd7d.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://www.legis.iowa.gov/photo?action=getPhoto&ga=91&pid=28966"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Blaine_Watkins"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Blaine_Watkins"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.legis.iowa.gov/legislators/legislator?personID=28966"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/blaine-watkins-b92692275"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

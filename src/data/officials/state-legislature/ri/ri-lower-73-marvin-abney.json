@@ -1,0 +1,72 @@
+{
+  "id": "marvin-abney",
+  "name": "Marvin Abney",
+  "firstName": "Marvin",
+  "lastName": "Abney",
+  "photo": "/images/officials/state-legislature/ri/marvin-abney.jpg",
+  "photoSourceUrl": "http://www.rilegislature.gov/representatives/pictures/abney.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-73",
+  "jurisdiction": "Rhode Island House of Representatives",
+  "county": [
+    "Rhode Island"
+  ],
+  "termStart": "2013-01-01",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "82 Smith St., Providence, RI 02903",
+    "phone": "401-222-3580",
+    "email": "rep-abney@rilegislature.gov",
+    "website": "https://www.rilegislature.gov/representatives/abney/default.aspx"
+  },
+  "bio": "Marvin Abney serves as State Representative for Rhode Island House of Representatives District 73. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "RI",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.rilegislature.gov/representatives/abney/default.aspx"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ri/legislature/Marvin-L-Abney-ed735cca-8f53-4304-a1ec-9e212744ec17.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "http://www.rilegislature.gov/representatives/pictures/abney.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Marvin_Abney"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Marvin_Abney"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/142143/marvin-abney"
+    },
+    {
+      "title": "Public source",
+      "url": "https://webserver.rilin.state.ri.us/Email/RepEmailListDistrict.asp"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.rilegislature.gov/representatives/Abney/default.aspx"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.rilegislature.gov/representatives/Abney/Pages/Biography.aspx"
+    },
+    {
+      "title": "Image Source",
+      "url": "https://www.rilegislature.gov/representatives/abney/Pages/Biography.aspx"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

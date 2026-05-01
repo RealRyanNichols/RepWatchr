@@ -1,0 +1,53 @@
+{
+  "id": "jessica-scarcella-spanton",
+  "name": "Jessica Scarcella-Spanton",
+  "firstName": "Jessica",
+  "lastName": "Scarcella-Spanton",
+  "party": "D",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-23",
+  "jurisdiction": "New York Senate",
+  "county": [
+    "New York"
+  ],
+  "termStart": "2023-01-01",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 944, Legislative Office Building, Albany, NY 12247",
+    "phone": "518-455-2437",
+    "email": "spanton@nysenate.gov",
+    "website": "https://www.nysenate.gov/senators/jessica-scarcella-spanton"
+  },
+  "bio": "Jessica Scarcella-Spanton serves as State Senator for New York Senate District 23. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "NY",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.nysenate.gov/senators/jessica-scarcella-spanton"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ny/legislature/Jessica-Scarcella-Spanton-84b5ed8b-c048-4d62-ab8f-17d217605301.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Jessica_Scarcella-Spanton"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Jessica_Scarcella-Spanton"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/208788/jessica-scarcella-spanton"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/jessica-scarcella-spanton-5426a711"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

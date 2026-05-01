@@ -1,0 +1,64 @@
+{
+  "id": "brad-tabke",
+  "name": "Brad Tabke",
+  "firstName": "Brad",
+  "lastName": "Tabke",
+  "photo": "/images/officials/state-legislature/mn/brad-tabke.jpg",
+  "photoSourceUrl": "https://www.house.mn.gov/hinfo/memberimgls94/54A.gif?v=112221",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-54A",
+  "jurisdiction": "Minnesota House of Representatives",
+  "county": [
+    "Minnesota"
+  ],
+  "termStart": "2023-01-03",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Centennial Office Building 658 Cedar St., Fifth Floor, St. Paul, MN 55155",
+    "phone": "651-296-8872",
+    "email": "rep.brad.tabke@house.mn.gov",
+    "website": "https://www.house.mn.gov/members/profile/15523"
+  },
+  "bio": "Brad Tabke serves as State Representative for Minnesota House of Representatives District 54A. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "MN",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.house.mn.gov/members/profile/15523"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/mn/legislature/Brad-Tabke-05f634e6-f8d3-4983-9604-dfc8dddc574e.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://www.house.mn.gov/hinfo/memberimgls94/54A.gif?v=112221"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Brad_Tabke"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Brad_Tabke"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/143691/brad-tabke"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.house.leg.state.mn.us/members/hmem.asp"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/btabke"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

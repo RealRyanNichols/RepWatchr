@@ -1,0 +1,72 @@
+{
+  "id": "sabrina-cervantes",
+  "name": "Sabrina Cervantes",
+  "firstName": "Sabrina",
+  "lastName": "Cervantes",
+  "photo": "/images/officials/state-legislature/ca/sabrina-cervantes.jpg",
+  "photoSourceUrl": "https://www.assembly.ca.gov/sites/assembly.ca.gov/files/memberphotos/ad60_cervantes_roster150_20161205.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-31",
+  "jurisdiction": "California Senate",
+  "county": [
+    "California"
+  ],
+  "termStart": "2024-12-02",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "1021 O St. Suite 7330, Sacramento, CA 95814",
+    "phone": "916-651-4031",
+    "email": "senator.cervantes@senate.ca.gov",
+    "website": "https://a58.asmdc.org/"
+  },
+  "bio": "Sabrina Cervantes serves as State Senator for California Senate District 31. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "CA",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://a58.asmdc.org/"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ca/legislature/Sabrina-Cervantes-61cc77e3-551f-40e6-bb6f-16edd89b04db.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://www.assembly.ca.gov/sites/assembly.ca.gov/files/memberphotos/ad60_cervantes_roster150_20161205.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://a58.asmdc.org"
+    },
+    {
+      "title": "Public source",
+      "url": "https://assembly.ca.gov/assemblymembers"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Sabrina_Cervantes"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Sabrina_Cervantes"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/169409/sabrina-cervantes"
+    },
+    {
+      "title": "Public source",
+      "url": "https://sabrinacervantes.com/meet-sabrina-cervantes"
+    },
+    {
+      "title": "Public source",
+      "url": "https://sd31.senate.ca.gov"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

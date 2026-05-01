@@ -1,0 +1,64 @@
+{
+  "id": "buck-jennings",
+  "name": "Buck Jennings",
+  "firstName": "Buck",
+  "lastName": "Jennings",
+  "photo": "/images/officials/state-legislature/wv/buck-jennings.jpg",
+  "photoSourceUrl": "http://www.wvlegislature.gov/images/members/2023/house/jennings_d.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "Delegate",
+  "district": "HD-84",
+  "jurisdiction": "West Virginia House of Delegates",
+  "county": [
+    "West Virginia"
+  ],
+  "termStart": "2022-12-01",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "State Capitol Room 207E, Complex, Building 1 1900 Kanawha Blvd. East, Charleston, WV 25305",
+    "phone": "304-340-3396",
+    "email": "buck.jennings@wvhouse.gov",
+    "website": "https://www.legis.state.wv.us/House/lawmaker.cfm?member=Delegate+Jennings"
+  },
+  "bio": "Buck Jennings serves as Delegate for West Virginia House of Delegates District 84. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "WV",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.legis.state.wv.us/House/lawmaker.cfm?member=Delegate+Jennings"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/wv/legislature/D-Rolland-Jennings-34e1e6dd-469b-4e3d-9cc5-604bffe79730.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "http://www.wvlegislature.gov/images/members/2023/house/jennings_d.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/D.R._Jennings"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/D._Rolland_Jennings"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/167574/buck-jennings"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.wvlegislature.gov/House/lawmaker.cfm?member=Delegate%20Jennings"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.wvlegislature.gov/House/roster.cfm"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

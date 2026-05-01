@@ -1,0 +1,72 @@
+{
+  "id": "tom-ploszaj",
+  "name": "Tom Ploszaj",
+  "firstName": "Tom",
+  "lastName": "Ploszaj",
+  "photo": "/images/officials/state-legislature/nh/tom-ploszaj.jpg",
+  "photoSourceUrl": "https://storage.googleapis.com/enview-dev-public-general/legislative-people-photos/93655.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "I",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-Belknap 1",
+  "jurisdiction": "New Hampshire House of Representatives",
+  "county": [
+    "New Hampshire"
+  ],
+  "termStart": "2020-12-02",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "State House 107 N. Main St., Concord, NH 03301",
+    "phone": "603-271-3661",
+    "email": "tom.ploszaj@gc.nh.gov",
+    "website": "https://gc.nh.gov/house/members/member.aspx?pid=9860"
+  },
+  "bio": "Tom Ploszaj serves as State Representative for New Hampshire House of Representatives District Belknap 1. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "NH",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://gc.nh.gov/house/members/member.aspx?pid=9860"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/nh/legislature/Tom-Ploszaj-8f685697-5fb0-4966-8cd0-ad3059650f8d.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://storage.googleapis.com/enview-dev-public-general/legislative-people-photos/93655.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Tom_Ploszaj"
+    },
+    {
+      "title": "Public source",
+      "url": "https://gencourt.state.nh.us/downloads/Members.txt"
+    },
+    {
+      "title": "Public source",
+      "url": "https://gencourt.state.nh.us/downloads/members.txt"
+    },
+    {
+      "title": "Public source",
+      "url": "https://gencourt.state.nh.us/house/members/member.aspx?pid=9860"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/141713/tom-ploszaj"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.gencourt.state.nh.us/house/members/member.aspx?pid=9860"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/tomploszaj"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

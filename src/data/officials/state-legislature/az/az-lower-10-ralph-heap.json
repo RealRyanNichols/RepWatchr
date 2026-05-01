@@ -1,0 +1,60 @@
+{
+  "id": "ralph-heap",
+  "name": "Ralph Heap",
+  "firstName": "Ralph",
+  "lastName": "Heap",
+  "photo": "/images/officials/state-legislature/az/ralph-heap.jpg",
+  "photoSourceUrl": "https://s3.amazonaws.com/ballotpedia-api4/files/thumbs/200/300/Ralph_Heap.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-10",
+  "jurisdiction": "Arizona House of Representatives",
+  "county": [
+    "Arizona"
+  ],
+  "termStart": "2025-01-13",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 309, 1700 W. Washington St., Phoenix, AZ 85007",
+    "phone": "602-926-3381",
+    "email": "rheap@azleg.gov",
+    "website": "https://www.azleg.gov/house-member/?legislature=57&session=129&legislator=2360"
+  },
+  "bio": "Ralph Heap serves as State Representative for Arizona House of Representatives District 10. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "AZ",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.azleg.gov/house-member/?legislature=57&session=129&legislator=2360"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/az/legislature/Ralph-Heap-176a6d0b-88bb-45fa-bf37-b4610972b2ae.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://s3.amazonaws.com/ballotpedia-api4/files/thumbs/200/300/Ralph_Heap.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Ralph_Heap"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Ralph_Heap"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/153821/ralph-heap"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/ralph-heap-6a534987"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

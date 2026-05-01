@@ -1,0 +1,49 @@
+{
+  "id": "jeff-hales",
+  "name": "Jeff Hales",
+  "firstName": "Jeff",
+  "lastName": "Hales",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-86",
+  "jurisdiction": "Missouri House of Representatives",
+  "county": [
+    "Missouri"
+  ],
+  "termStart": "2025-01-08",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 105-E, 201 W. Capitol Ave., Jefferson City, MO 65101",
+    "phone": "573-751-4265",
+    "email": "jeffrey.hales@house.mo.gov",
+    "website": "https://house.mo.gov/MemberDetails.aspx?&district=086"
+  },
+  "bio": "Jeff Hales serves as State Representative for Missouri House of Representatives District 86. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "MO",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://house.mo.gov/MemberDetails.aspx?&district=086"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/mo/legislature/Jeff-Hales-92aabb0f-94de-4d54-b4d0-23f09035d8a0.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Jeff_Hales"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Jeff_Hales"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/jeffhalesjr"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

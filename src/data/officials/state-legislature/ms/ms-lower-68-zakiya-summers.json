@@ -1,0 +1,64 @@
+{
+  "id": "zakiya-summers",
+  "name": "Zakiya Summers",
+  "firstName": "Zakiya",
+  "lastName": "Summers",
+  "photo": "/images/officials/state-legislature/ms/zakiya-summers.jpg",
+  "photoSourceUrl": "https://stateinnovation.org/wp-content/uploads/2021/04/Zakiya-Summers.png",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-68",
+  "jurisdiction": "Mississippi House of Representatives",
+  "county": [
+    "Mississippi"
+  ],
+  "termStart": "2020-01-07",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "State Capitol 400 High St., Jackson, MS 39201",
+    "phone": "601-359-3770",
+    "email": "zsummers@house.ms.gov",
+    "website": "https://billstatus.ls.state.ms.us/members/house/summers.xml"
+  },
+  "bio": "Zakiya Summers serves as State Representative for Mississippi House of Representatives District 68. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "MS",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://billstatus.ls.state.ms.us/members/house/summers.xml"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ms/legislature/Zakiya-Summers-56158045-4973-4fd2-9589-01ad212f2975.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://stateinnovation.org/wp-content/uploads/2021/04/Zakiya-Summers.png"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Zakiya_Summers"
+    },
+    {
+      "title": "Public source",
+      "url": "https://billstatus.ls.state.ms.us/members/hr_membs.xml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Zakiya_Summers"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/186649/zakiya-summers"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/zakiya-summers-800b5517"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

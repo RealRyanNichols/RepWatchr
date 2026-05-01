@@ -1,0 +1,59 @@
+{
+  "id": "shannon-pinto",
+  "name": "Shannon Pinto",
+  "firstName": "Shannon",
+  "lastName": "Pinto",
+  "photo": "/images/officials/state-legislature/nm/shannon-pinto.jpg",
+  "photoSourceUrl": "https://www.nmlegis.gov/Images/Legislators/Senate/SPINS.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-3",
+  "jurisdiction": "New Mexico Senate",
+  "county": [
+    "New Mexico"
+  ],
+  "termStart": "2019-07-23",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "State Capitol Room 301B, New Mexico  490 Old Santa Fe Trail, Santa Fe, NM 87501",
+    "phone": "505-986-4835",
+    "email": "shannon.pinto@nmlegis.gov",
+    "website": "https://www.nmlegis.gov/Members/Legislator?SponCode=SPINS",
+    "socialMedia": {
+      "facebook": "https://facebook.com/Shannon4NM"
+    }
+  },
+  "bio": "Shannon Pinto serves as State Senator for New Mexico Senate District 3. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "NM",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.nmlegis.gov/Members/Legislator?SponCode=SPINS"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/nm/legislature/Shannon-D-Pinto-fa98430a-5031-4c64-bd6d-8a6f0cc4043e.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://www.nmlegis.gov/Images/Legislators/Senate/SPINS.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Shannon_Pinto"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Shannon_Pinto"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.nmlegis.gov/Members/Legislator_List?T=S"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

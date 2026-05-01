@@ -1,0 +1,61 @@
+{
+  "id": "tom-fabricio",
+  "name": "Tom Fabricio",
+  "firstName": "Tom",
+  "lastName": "Fabricio",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-110",
+  "jurisdiction": "Florida House of Representatives",
+  "county": [
+    "Florida"
+  ],
+  "termStart": "2022-11-08",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 319, The Capitol 402 S. Monroe St., Tallahassee, FL 32399",
+    "phone": "850-717-5110",
+    "email": "tom.fabricio@flhouse.gov",
+    "website": "https://myfloridahouse.gov/Sections/Representatives/details.aspx?MemberId=4792&LegislativeTermId=90"
+  },
+  "bio": "Tom Fabricio serves as State Representative for Florida House of Representatives District 110. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "FL",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://myfloridahouse.gov/Sections/Representatives/details.aspx?MemberId=4792&LegislativeTermId=90"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/fl/legislature/Tom-Fabricio-35f68144-b99b-4f86-b223-726897926bfa.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Tom_Fabricio"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.flhouse.gov/Sections/Representatives/custom/details.aspx?MemberId=4792"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.flhouse.gov/Sections/Representatives/details.aspx?MemberId=4792"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/tom-fabricio-9894121"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.myfloridahouse.gov/Sections/Representatives/details.aspx?MemberId=4792"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.myfloridahouse.gov/Sections/Representatives/details.aspx?MemberId=4792&LegislativeTermId=89"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

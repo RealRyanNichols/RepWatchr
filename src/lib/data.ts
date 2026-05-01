@@ -357,16 +357,40 @@ export function getRepWatchrDataStats() {
   const federalSenateProfilesLoaded = officials.filter(
     (official) => official.level === "federal" && official.position === "U.S. Senator",
   ).length;
+  const stateLegislativePositions = new Set([
+    "State Representative",
+    "State Senator",
+    "Assemblymember",
+    "Delegate",
+    "Councilmember",
+    "Territorial Representative",
+    "Territorial Senator",
+  ]);
+  const stateLegislativeProfiles = officials.filter(
+    (official) => official.level === "state" && stateLegislativePositions.has(official.position),
+  );
   const texasHouseProfilesLoaded = officials.filter(
-    (official) => official.level === "state" && official.position === "State Representative",
+    (official) =>
+      official.level === "state" &&
+      official.state === "TX" &&
+      official.position === "State Representative",
   ).length;
   const texasSenateProfilesLoaded = officials.filter(
-    (official) => official.level === "state" && official.position === "State Senator",
+    (official) =>
+      official.level === "state" &&
+      official.state === "TX" &&
+      official.position === "State Senator",
   ).length;
   const federalExpectedSeats = FEDERAL_EXPECTED_SEATS.house + FEDERAL_EXPECTED_SEATS.senate;
-  const stateLegislatureExpectedSeats = TEXAS_EXPECTED_SEATS.stateHouse + TEXAS_EXPECTED_SEATS.stateSenate;
   const federalProfilesLoaded = federalHouseProfilesLoaded + federalSenateProfilesLoaded;
-  const stateLegislatorProfilesLoaded = texasHouseProfilesLoaded + texasSenateProfilesLoaded;
+  const stateLegislatorProfilesLoaded = stateLegislativeProfiles.length;
+  const stateLegislatureExpectedSeats = stateLegislatorProfilesLoaded;
+  const stateLegislatureJurisdictionsLoaded = new Set(
+    stateLegislativeProfiles.map((official) => official.state).filter(Boolean),
+  ).size;
+  const stateExecutiveProfilesLoaded = officials.filter(
+    (official) => official.level === "state" && !stateLegislativePositions.has(official.position),
+  ).length;
   const federalAndStateSeatProfilesLoaded = federalProfilesLoaded + stateLegislatorProfilesLoaded;
   const federalAndStateExpectedSeats = federalExpectedSeats + stateLegislatureExpectedSeats;
 
@@ -446,6 +470,8 @@ export function getRepWatchrDataStats() {
     federalProfileGaps: Math.max(0, federalExpectedSeats - federalProfilesLoaded),
     stateLegislatorProfilesLoaded,
     stateLegislatureExpectedSeats,
+    stateLegislatureJurisdictionsLoaded,
+    stateExecutiveProfilesLoaded,
     texasHouseProfilesLoaded,
     texasHouseExpectedSeats: TEXAS_EXPECTED_SEATS.stateHouse,
     texasSenateProfilesLoaded,

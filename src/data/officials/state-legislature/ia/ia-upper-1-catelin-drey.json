@@ -1,0 +1,56 @@
+{
+  "id": "catelin-drey",
+  "name": "Catelin Drey",
+  "firstName": "Catelin",
+  "lastName": "Drey",
+  "photo": "/images/officials/state-legislature/ia/catelin-drey.jpg",
+  "photoSourceUrl": "https://s3.amazonaws.com/ballotpedia-api4/files/thumbs/200/300/Catelin_Drey.png",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-1",
+  "jurisdiction": "Iowa Senate",
+  "county": [
+    "Iowa"
+  ],
+  "termStart": "2025-09-15",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "1007 E. Grand Ave., Des Moines, IA 50319",
+    "phone": "515-281-3371",
+    "email": "catelin.drey@legis.iowa.gov",
+    "website": "https://www.legis.iowa.gov/legislators/legislator?personID=39183"
+  },
+  "bio": "Catelin Drey serves as State Senator for Iowa Senate District 1. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "IA",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.legis.iowa.gov/legislators/legislator?personID=39183"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ia/legislature/Catelin-Drey-96941816-29ce-4c03-ab43-efa1ef2930ab.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://s3.amazonaws.com/ballotpedia-api4/files/thumbs/200/300/Catelin_Drey.png"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Catelin_Drey"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Catelin_Drey"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/catelin-drey"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

@@ -1,0 +1,64 @@
+{
+  "id": "sara-gelser-blouin",
+  "name": "Sara Gelser Blouin",
+  "firstName": "Sara",
+  "lastName": "Gelser Blouin",
+  "photo": "/images/officials/state-legislature/or/sara-gelser-blouin.jpg",
+  "photoSourceUrl": "http://www.oregonlegislature.gov/senate/MemberPhotos/gelser.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-8",
+  "jurisdiction": "Oregon Senate",
+  "county": [
+    "Oregon"
+  ],
+  "termStart": "2015-01-12",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room S-211, 900 Court St. NE, Salem, OR 97301",
+    "phone": "503-986-1708",
+    "email": "sen.saragelser@oregonlegislature.gov",
+    "website": "https://www.oregonlegislature.gov/gelser"
+  },
+  "bio": "Sara Gelser Blouin serves as State Senator for Oregon Senate District 8. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "OR",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.oregonlegislature.gov/gelser"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/or/legislature/Sara-Gelser-10b42647-1509-4e86-9155-4622c2d17315.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "http://www.oregonlegislature.gov/senate/MemberPhotos/gelser.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://api.oregonlegislature.gov/odata/odataservice.svc/LegislativeSessions('2022R1')/Legislators"
+    },
+    {
+      "title": "Public source",
+      "url": "https://api.oregonlegislature.gov/odata/odataservice.svc/LegislativeSessions('2023R1')/Legislators"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Sara_Gelser"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Sara_Gelser"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/sara-gelser-blouin-397a983b"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

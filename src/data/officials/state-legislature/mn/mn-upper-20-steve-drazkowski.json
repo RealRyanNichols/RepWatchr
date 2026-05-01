@@ -1,0 +1,68 @@
+{
+  "id": "steve-drazkowski",
+  "name": "Steve Drazkowski",
+  "firstName": "Steve",
+  "lastName": "Drazkowski",
+  "photo": "/images/officials/state-legislature/mn/steve-drazkowski.jpg",
+  "photoSourceUrl": "https://www.senate.mn/graphics/20Drazkowski.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-20",
+  "jurisdiction": "Minnesota Senate",
+  "county": [
+    "Minnesota"
+  ],
+  "termStart": "2023-01-03",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 2411, Minnesota Senate Building 95 University Ave. West, St. Paul, MN 55155",
+    "phone": "651-296-5612",
+    "email": "sen.steve.drazkowski@senate.mn",
+    "website": "https://www.senate.mn/members/member_bio.html?mem_id=1258"
+  },
+  "bio": "Steve Drazkowski serves as State Senator for Minnesota Senate District 20. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "MN",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.senate.mn/members/member_bio.html?mem_id=1258"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/mn/legislature/Steve-Drazkowski-a947d529-ab68-4ae8-b1e8-7ff012dde193.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://www.senate.mn/graphics/20Drazkowski.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Steve_Drazkowski"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Steve_Drazkowski"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/65586/steve-drazkowski"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.house.leg.state.mn.us/members/hmem.asp"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/stevedrazkowski"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.senate.mn/api/members"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

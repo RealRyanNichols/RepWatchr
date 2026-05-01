@@ -1,0 +1,69 @@
+{
+  "id": "jake-fey",
+  "name": "Jake Fey",
+  "firstName": "Jake",
+  "lastName": "Fey",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-27",
+  "jurisdiction": "Washington House of Representatives",
+  "county": [
+    "Washington"
+  ],
+  "termStart": "2013-01-14",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 415, John L. O'Brien Building P.O. Box 40600, Olympia, WA 98504",
+    "phone": "360-786-7974",
+    "email": "jake.fey@leg.wa.gov",
+    "website": "https://housedemocrats.wa.gov/Fey/"
+  },
+  "bio": "Jake Fey serves as State Representative for Washington House of Representatives District 27. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "WA",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://housedemocrats.wa.gov/Fey/"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/wa/legislature/Jake-Fey-4ed1ee96-ea0f-4fc6-9c74-14cea6328716.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://app.leg.wa.gov/ContentParts/MemberDirectory/?a=House"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Jake_Fey"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Jake_Fey"
+    },
+    {
+      "title": "Public source",
+      "url": "https://housedemocrats.wa.gov/fey"
+    },
+    {
+      "title": "Public source",
+      "url": "https://housedemocrats.wa.gov/fey/"
+    },
+    {
+      "title": "Public source",
+      "url": "https://housedemocrats.wa.gov/fey/biography"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/80588/jake-fey"
+    },
+    {
+      "title": "Public source",
+      "url": "https://leg.wa.gov/legislators/member/jake-fey"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

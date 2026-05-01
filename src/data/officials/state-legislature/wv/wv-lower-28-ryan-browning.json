@@ -1,0 +1,60 @@
+{
+  "id": "ryan-browning",
+  "name": "Ryan Browning",
+  "firstName": "Ryan",
+  "lastName": "Browning",
+  "photo": "/images/officials/state-legislature/wv/ryan-browning.jpg",
+  "photoSourceUrl": "https://www.wvlegislature.gov/images/members/2024/house/browning_ryan.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "Delegate",
+  "district": "HD-28",
+  "jurisdiction": "West Virginia House of Delegates",
+  "county": [
+    "West Virginia"
+  ],
+  "termStart": "2024-07-03",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "State Capitol Room 231E, Complex, Building 1 1900 Kanawha Blvd. East, Charleston, WV 25305",
+    "phone": "304-340-3126",
+    "email": "ryan.browning@wvhouse.gov",
+    "website": "https://www.wvlegislature.gov/House/lawmaker.cfm?member=Delegate%20Browning"
+  },
+  "bio": "Ryan Browning serves as Delegate for West Virginia House of Delegates District 28. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "WV",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.wvlegislature.gov/House/lawmaker.cfm?member=Delegate%20Browning"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/wv/legislature/Ryan-Browning-c95f5292-14c3-4e79-8465-05cca13242b6.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://www.wvlegislature.gov/images/members/2024/house/browning_ryan.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Ryan_Browning"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Ryan_Browning"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/214487/ryan-browning"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/ryan-browning-08485673"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

@@ -1,0 +1,70 @@
+{
+  "id": "rick-krajewski",
+  "name": "Rick Krajewski",
+  "firstName": "Rick",
+  "lastName": "Krajewski",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-188",
+  "jurisdiction": "Pennsylvania House of Representatives",
+  "county": [
+    "Pennsylvania"
+  ],
+  "termStart": "2020-12-01",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 109, Irvis Office Building P.O. Box 202188, Harrisburg, PA 17120",
+    "phone": "717-783-1000",
+    "email": "repkrajewski@pahouse.net",
+    "website": "https://www.legis.state.pa.us/cfdocs/legis/home/member_information/House_bio.cfm?id=1918",
+    "socialMedia": {
+      "x": "https://x.com/RepKrajewski",
+      "twitter": "https://x.com/RepKrajewski",
+      "facebook": "https://facebook.com/RepKrajewski"
+    }
+  },
+  "bio": "Rick Krajewski serves as State Representative for Pennsylvania House of Representatives District 188. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "PA",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.legis.state.pa.us/cfdocs/legis/home/member_information/House_bio.cfm?id=1918"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/pa/legislature/Rick-Krajewski-42ffbed1-2284-4018-a60f-b5bfa3f35833.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Rick_Krajewski"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Rick_Krajewski"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.legis.state.pa.us/cfdocs/legis/home/member_information/mbrList.cfm?body=H&sort=alpha"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.legis.state.pa.us/cfdocs/legis/home/member_information/representatives_alpha.cfm"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/rick-krajewski-76896383"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.pahouse.com/krajewski"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.palegis.us/house/members/bio/1918/rep-krajewski"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

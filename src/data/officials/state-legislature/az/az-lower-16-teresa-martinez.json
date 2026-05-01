@@ -1,0 +1,64 @@
+{
+  "id": "teresa-martinez",
+  "name": "Teresa Martinez",
+  "firstName": "Teresa",
+  "lastName": "Martinez",
+  "photo": "/images/officials/state-legislature/az/teresa-martinez.jpg",
+  "photoSourceUrl": "https://storage.googleapis.com/enview-dev-public-general/legislative-people-photos/30908.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-16",
+  "jurisdiction": "Arizona House of Representatives",
+  "county": [
+    "Arizona"
+  ],
+  "termStart": "2023-01-09",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 129, 1700 W. Washington St., Phoenix, AZ 85007",
+    "phone": "602-926-3158",
+    "email": "tmartinez@azleg.gov",
+    "website": "https://www.azleg.gov/house-member/?legislature=55&session=123&legislator=2096"
+  },
+  "bio": "Teresa Martinez serves as State Representative for Arizona House of Representatives District 16. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "AZ",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.azleg.gov/house-member/?legislature=55&session=123&legislator=2096"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/az/legislature/Teresa-Martinez-0fa874b7-acab-4f29-b800-56bd54f375fe.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://storage.googleapis.com/enview-dev-public-general/legislative-people-photos/30908.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Teresa_Martinez"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Teresa_Martinez"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.azleg.gov/house-member/?legislature=57&session=129&legislator=2323"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.azleg.gov/memberroster/?body=H"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/teresa-martinez-65661216"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

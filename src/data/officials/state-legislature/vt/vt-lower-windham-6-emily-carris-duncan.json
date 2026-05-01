@@ -1,0 +1,49 @@
+{
+  "id": "emily-carris-duncan",
+  "name": "Emily Carris-Duncan",
+  "firstName": "Emily",
+  "lastName": "Carris-Duncan",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-Windham-6",
+  "jurisdiction": "Vermont House of Representatives",
+  "county": [
+    "Vermont"
+  ],
+  "termStart": "2025-01-08",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Vermont State House 115 State St., Montpelier, VT 05633",
+    "phone": "802-828-2228",
+    "email": "ecarris-duncan@leg.state.vt.us",
+    "website": "https://legislature.vermont.gov/people/single/2026/40435"
+  },
+  "bio": "Emily Carris-Duncan serves as State Representative for Vermont House of Representatives District Windham-6. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "VT",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://legislature.vermont.gov/people/single/2026/40435"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/vt/legislature/Emily-Carris-Duncan-f5c660c9-81e8-4038-9cf2-a7ad838ef980.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Emily_Carris-Duncan"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/218492/emily-carris-duncan"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/emily-carris-91928893"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

@@ -1,0 +1,57 @@
+{
+  "id": "ellyn-hefner",
+  "name": "Ellyn Hefner",
+  "firstName": "Ellyn",
+  "lastName": "Hefner",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-87",
+  "jurisdiction": "Oklahoma House of Representatives",
+  "county": [
+    "Oklahoma"
+  ],
+  "termStart": "2022-11-23",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 541, 2300 N. Lincoln Blvd., Oklahoma City, OK 73105",
+    "phone": "405-557-7335",
+    "email": "ellyn.hefner@okhouse.gov",
+    "website": "https://www.okhouse.gov/Members/Contact.aspx?District=87"
+  },
+  "bio": "Ellyn Hefner serves as State Representative for Oklahoma House of Representatives District 87. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "OK",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.okhouse.gov/Members/Contact.aspx?District=87"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ok/legislature/Ellyn-Hefner-c9e547ff-6762-49f8-807c-32c78ce569cf.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Ellyn_Hefner"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Ellyn_Hefner"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/206417/ellyn-hefner"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/ellyn-novak-hefner-chsnc-5b540b125"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.okhouse.gov/representatives/ellyn-hefner"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

@@ -1,0 +1,66 @@
+{
+  "id": "anthony-bellmon",
+  "name": "Anthony Bellmon",
+  "firstName": "Anthony",
+  "lastName": "Bellmon",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-203",
+  "jurisdiction": "Pennsylvania House of Representatives",
+  "county": [
+    "Pennsylvania"
+  ],
+  "termStart": "2022-12-01",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 26B, East Wing P.O. Box 202203, Harrisburg, PA 17120",
+    "phone": "717-783-4111",
+    "email": "repbellmon@pahouse.net",
+    "website": "https://www.legis.state.pa.us/cfdocs/legis/home/member_information/House_bio.cfm?id=1984",
+    "socialMedia": {
+      "x": "https://x.com/RepBellmon",
+      "twitter": "https://x.com/RepBellmon",
+      "facebook": "https://facebook.com/RepBellmon"
+    }
+  },
+  "bio": "Anthony Bellmon serves as State Representative for Pennsylvania House of Representatives District 203. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "PA",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.legis.state.pa.us/cfdocs/legis/home/member_information/House_bio.cfm?id=1984"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/pa/legislature/Anthony-A-Bellmon-57be936d-802b-4d09-b95e-2a5354cb9984.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Anthony_Bellmon"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Anthony_A._Bellmon"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.legis.state.pa.us/cfdocs/legis/home/member_information/mbrList.cfm?body=H&sort=alpha"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/anthony-bellmon-b432ba33"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.pahouse.com/Bellmon"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.palegis.us/house/members/bio/1984/rep-bellmon"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

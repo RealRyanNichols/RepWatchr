@@ -1,0 +1,58 @@
+{
+  "id": "renuka-mayadev",
+  "name": "Renuka Mayadev",
+  "firstName": "Renuka",
+  "lastName": "Mayadev",
+  "photo": "/images/officials/state-legislature/wi/renuka-mayadev.jpg",
+  "photoSourceUrl": "https://s3.amazonaws.com/ballotpedia-api4/files/thumbs/200/300/Renuka_Mayadev_20240808_092901.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "Assemblymember",
+  "district": "HD-77",
+  "jurisdiction": "Wisconsin State Assembly",
+  "county": [
+    "Wisconsin"
+  ],
+  "termStart": "2025-01-06",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "email": "rep.mayadev@legis.wisconsin.gov",
+    "website": "https://docs.legis.wisconsin.gov/2025/legislators/assembly/2898"
+  },
+  "bio": "Renuka Mayadev serves as Assemblymember for Wisconsin State Assembly District 77. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "WI",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://docs.legis.wisconsin.gov/2025/legislators/assembly/2898"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/wi/legislature/Renuka-Mayadev-8b54c039-be1b-4320-89f8-415ac1afa698.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://s3.amazonaws.com/ballotpedia-api4/files/thumbs/200/300/Renuka_Mayadev_20240808_092901.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Renuka_Mayadev"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Renuka_Mayadev"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/218665/renuka-mayadev"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/renuka-mayadev-3b850b114"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

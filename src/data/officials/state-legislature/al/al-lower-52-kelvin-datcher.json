@@ -1,0 +1,47 @@
+{
+  "id": "kelvin-datcher",
+  "name": "Kelvin Datcher",
+  "firstName": "Kelvin",
+  "lastName": "Datcher",
+  "photo": "/images/officials/state-legislature/al/kelvin-datcher.jpg",
+  "photoSourceUrl": "https://s3.amazonaws.com/ballotpedia-api4/files/thumbs/200/300/Kelvin_Datcher_20240808_092142.jpeg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-52",
+  "jurisdiction": "Alabama House of Representatives",
+  "county": [
+    "Alabama"
+  ],
+  "termStart": "2024-10-02",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 540-C, 11 S. Union St., Montgomery, AL 36130",
+    "phone": "334-261-0387",
+    "email": "kelvin.datcher@alhouse.gov"
+  },
+  "bio": "Kelvin Datcher serves as State Representative for Alabama House of Representatives District 52. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "AL",
+  "sourceLinks": [
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/al/legislature/Kelvin-Datcher-441922a8-63c1-498b-9de5-f5ee85d9dcf3.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://s3.amazonaws.com/ballotpedia-api4/files/thumbs/200/300/Kelvin_Datcher_20240808_092142.jpeg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Kelvin_Datcher"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/kelvindatcher"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

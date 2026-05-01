@@ -1,0 +1,72 @@
+{
+  "id": "john-gannon",
+  "name": "John Gannon",
+  "firstName": "John",
+  "lastName": "Gannon",
+  "photo": "/images/officials/state-legislature/id/john-gannon.jpg",
+  "photoSourceUrl": "https://legislature.idaho.gov/wp-content/uploads/sessioninfo/2017/directory/Gannon2144.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-17A",
+  "jurisdiction": "Idaho House of Representatives",
+  "county": [
+    "Idaho"
+  ],
+  "termStart": "2012-12-01",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "P.O. Box 83720 700 W. Jefferson St., Boise, ID 83720",
+    "phone": "208-332-1082",
+    "email": "jgannon@house.idaho.gov",
+    "website": "https://legislature.idaho.gov/legislators/membership/2023/id2144/"
+  },
+  "bio": "John Gannon serves as State Representative for Idaho House of Representatives District 17A. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "ID",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://legislature.idaho.gov/legislators/membership/2023/id2144/"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/id/legislature/John-Gannon-048117e1-cf54-4ebf-9afc-f244d023e039.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://legislature.idaho.gov/wp-content/uploads/sessioninfo/2017/directory/Gannon2144.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/John_L._Gannon"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/John_Gannon_(American_politician)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/John_Gannon_(Idaho_politician)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/33078/john-gannon"
+    },
+    {
+      "title": "Public source",
+      "url": "https://legislature.idaho.gov/house/membership"
+    },
+    {
+      "title": "Public source",
+      "url": "https://legislature.idaho.gov/house/membership/"
+    },
+    {
+      "title": "Public source",
+      "url": "https://legislature.idaho.gov/legislators/membership/2023/id2144"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

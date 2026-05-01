@@ -1,0 +1,68 @@
+{
+  "id": "terence-everitt",
+  "name": "Terence Everitt",
+  "firstName": "Terence",
+  "lastName": "Everitt",
+  "photo": "/images/officials/state-legislature/nc/terence-everitt.jpg",
+  "photoSourceUrl": "https://www.ncleg.gov/Members/MemberImage/H/741/Low",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-18",
+  "jurisdiction": "North Carolina Senate",
+  "county": [
+    "North Carolina"
+  ],
+  "termStart": "2025-01-01",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 1419, North Carolina Legislative Building 16 W. Jones St., Raleigh, NC 27601",
+    "phone": "919-733-5850",
+    "email": "terence.everitt@ncleg.gov",
+    "website": "https://www.ncleg.gov/Members/Biography/H/741"
+  },
+  "bio": "Terence Everitt serves as State Senator for North Carolina Senate District 18. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "NC",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.ncleg.gov/Members/Biography/H/741"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/nc/legislature/Terence-Everitt-1217dc52-8590-4c6b-832b-666b57ef121c.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://www.ncleg.gov/Members/MemberImage/H/741/Low"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Terence_Everitt"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Terence_Everitt"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.everittlaw.com/biography"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/terenceeveritt"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.ncleg.gov/Members/Biography/S/453"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.ncleg.gov/Members/MemberTable/H"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

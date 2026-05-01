@@ -1,0 +1,53 @@
+{
+  "id": "jen-mazzocco",
+  "name": "Jen Mazzocco",
+  "firstName": "Jen",
+  "lastName": "Mazzocco",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-42",
+  "jurisdiction": "Pennsylvania House of Representatives",
+  "county": [
+    "Pennsylvania"
+  ],
+  "termStart": "2026-03-23",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 117B, East Wing P.O. Box 202042, Harrisburg, PA 17120",
+    "phone": "717-783-1850",
+    "email": "repmazzocco@pahouse.net",
+    "website": "https://www.pahouse.com/Mazzocco/"
+  },
+  "bio": "Jen Mazzocco serves as State Representative for Pennsylvania House of Representatives District 42. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "PA",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.pahouse.com/Mazzocco/"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/pa/legislature/Jen-Mazzocco-65b852b7-0c73-487d-aaf4-2b6648fa6383.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Jennifer_Mazzocco"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Jen_Mazzocco"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.pahouse.com/Mazzocco"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.palegis.us/house/members/bio/2063/rep-mazzocco"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

@@ -1,0 +1,72 @@
+{
+  "id": "fred-love",
+  "name": "Fred Love",
+  "firstName": "Fred",
+  "lastName": "Love",
+  "photo": "/images/officials/state-legislature/ar/fred-love.jpg",
+  "photoSourceUrl": "https://www.arkleg.state.ar.us/Content/photos/2023/Senate/640_sm.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-15",
+  "jurisdiction": "Arkansas Senate",
+  "county": [
+    "Arkansas"
+  ],
+  "termStart": "2023-01-09",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "State Capitol Building 500 Woodlane St., Suite 320, Little Rock, AR 72201",
+    "phone": "501-682-2902",
+    "email": "fred.love@senate.ar.gov",
+    "website": "https://arkleg.state.ar.us/Legislators/Detail?member=F.+Love"
+  },
+  "bio": "Fred Love serves as State Senator for Arkansas Senate District 15. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "AR",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://arkleg.state.ar.us/Legislators/Detail?member=F.+Love"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ar/legislature/Fredrick-J-Love-b35d0a49-a7f2-4013-83f0-a2feb42adba3.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://www.arkleg.state.ar.us/Content/photos/2023/Senate/640_sm.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Fredrick_Love"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Fredrick_Love"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/27882/fred-love"
+    },
+    {
+      "title": "Public source",
+      "url": "https://senate.arkansas.gov/senators/640"
+    },
+    {
+      "title": "Public source",
+      "url": "https://senate.arkansas.gov/senators/fredrick-j-love"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.arkleg.state.ar.us/Legislators/Detail?member=F.+Love&ddBienniumSession=2023%2F2023R"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.arkleg.state.ar.us/Legislators/List?sort=Type&by=desc&ddBienniumSession=2023%2F2023R#SearchResults"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

@@ -1,0 +1,73 @@
+{
+  "id": "craig-brandt",
+  "name": "Craig Brandt",
+  "firstName": "Craig",
+  "lastName": "Brandt",
+  "photo": "/images/officials/state-legislature/nm/craig-brandt.jpg",
+  "photoSourceUrl": "https://www.nmlegis.gov/Images/Legislators/Senate/SBRAN.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-40",
+  "jurisdiction": "New Mexico Senate",
+  "county": [
+    "New Mexico"
+  ],
+  "termStart": "2013-01-15",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "State Capitol Room 414D, New Mexico  490 Old Santa Fe Trail, Santa Fe, NM 87501",
+    "phone": "505-986-4703",
+    "email": "craig.brandt@nmlegis.gov",
+    "website": "https://www.linkedin.com/in/craigbrandtnm/",
+    "socialMedia": {
+      "x": "https://x.com/Craig4NM",
+      "twitter": "https://x.com/Craig4NM",
+      "facebook": "https://facebook.com/craig.brandt.31"
+    }
+  },
+  "bio": "Craig Brandt serves as State Senator for New Mexico Senate District 40. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "NM",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.linkedin.com/in/craigbrandtnm/"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/nm/legislature/Craig-W-Brandt-365e015d-5011-4126-8b07-0b0f90a949c7.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://www.nmlegis.gov/Images/Legislators/Senate/SBRAN.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Craig_Brandt"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Craig_Brandt"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/139123/craig-brandt"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/craigbrandtnm"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.nmlegis.gov/Members/Legislator?SponCode=SBRAN"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.nmlegis.gov/Members/Legislator_List?T=S"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

@@ -1,0 +1,57 @@
+{
+  "id": "jason-nazarenko",
+  "name": "Jason Nazarenko",
+  "firstName": "Jason",
+  "lastName": "Nazarenko",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-4",
+  "jurisdiction": "Arkansas House of Representatives",
+  "county": [
+    "Arkansas"
+  ],
+  "termStart": "2025-01-13",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "State Capitol Arkansas  500 Woodlane St., Suite 350, Little Rock, AR 72201",
+    "phone": "501-682-6211",
+    "email": "jason.nazarenko@arkansashouse.org",
+    "website": "https://arkansashouse.org/district/4"
+  },
+  "bio": "Jason Nazarenko serves as State Representative for Arkansas House of Representatives District 4. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "AR",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://arkansashouse.org/district/4"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ar/legislature/Jason-Nazarenko-8a728485-a8bf-4bf8-9197-710ee37eb5e1.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://arkleg.state.ar.us/Legislators/Detail?member=Nazarenko"
+    },
+    {
+      "title": "Public source",
+      "url": "https://arkleg.state.ar.us/Legislators/Detail?member=Nazarenko&ddBienniumSession=2025%2F2025R"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Jason_Nazarenko"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/212915/jason-nazarenko"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/nazarenkoja"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

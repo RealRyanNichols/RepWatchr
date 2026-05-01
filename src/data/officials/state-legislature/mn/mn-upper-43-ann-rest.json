@@ -1,0 +1,72 @@
+{
+  "id": "ann-rest",
+  "name": "Ann Rest",
+  "firstName": "Ann",
+  "lastName": "Rest",
+  "photo": "/images/officials/state-legislature/mn/ann-rest.jpg",
+  "photoSourceUrl": "https://www.senate.mn/graphics/43Rest.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-43",
+  "jurisdiction": "Minnesota Senate",
+  "county": [
+    "Minnesota"
+  ],
+  "termStart": "2023-01-03",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 328, Capitol Building 75 Rev. Dr. Martin Luther King Jr. Blvd., St. Paul, MN 55155",
+    "phone": "651-296-2889",
+    "email": "sen.ann.rest@senate.mn",
+    "website": "https://www.senate.mn/members/member_bio.html?mem_id=1051"
+  },
+  "bio": "Ann Rest serves as State Senator for Minnesota Senate District 43. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "MN",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.senate.mn/members/member_bio.html?mem_id=1051"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/mn/legislature/Ann-H-Rest-ec588921-873b-4335-8fa1-2e3485008d3e.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://www.senate.mn/graphics/43Rest.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Ann_Rest"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Ann_Rest"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/3841/ann-rest"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&ved=2ahUKEwiH-o_buqH8AhVcDkQIHf27BTUQFnoECBwQAQ&url=https%3A%2F%2Fwww.lrl.mn.gov%2Flegdb%2Ffulldetail%3Fid%3D10558&usg=AOvVaw1C1mauRjiid2O4kS3-BNW-"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/ann-rest-02760516"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.senate.mn/api/members"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.senate.mn/members/index.php"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

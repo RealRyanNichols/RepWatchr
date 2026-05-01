@@ -1,0 +1,41 @@
+{
+  "id": "ron-desantis",
+  "name": "Ron DeSantis",
+  "firstName": "Ron",
+  "lastName": "DeSantis",
+  "party": "R",
+  "level": "state",
+  "position": "Governor",
+  "district": "Florida",
+  "jurisdiction": "Florida statewide public office",
+  "county": [
+    "Florida"
+  ],
+  "termStart": "2019-01-08",
+  "termEnd": "2027-01-01",
+  "contactInfo": {
+    "office": "Office of Governor Ron DeSantis; The Capitol; 400 S.Monroe St.; Tallahassee, FL 32399-0001",
+    "phone": "850-717-9337",
+    "email": "GovernorRon.Desantis@eog.myflorida.com",
+    "website": "https://www.flgov.com/",
+    "socialMedia": {
+      "x": "https://x.com/GovRonDeSantis",
+      "twitter": "https://x.com/GovRonDeSantis"
+    }
+  },
+  "bio": "Ron DeSantis is listed as Governor for Florida. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "FL",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.flgov.com/"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/fl/executive/Ron-DeSantis-284392c5-5708-4014-9ea1-9552536c5a3e.yml"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

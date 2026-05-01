@@ -1,0 +1,77 @@
+{
+  "id": "rodney-pol",
+  "name": "Rodney Pol",
+  "firstName": "Rodney",
+  "lastName": "Pol",
+  "photo": "/images/officials/state-legislature/in/rodney-pol.jpg",
+  "photoSourceUrl": "https://indianasenatedemocrats.org/wp-content/uploads/2021/11/Senator-Pol_Hoosierjpg.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-4",
+  "jurisdiction": "Indiana Senate",
+  "county": [
+    "Indiana"
+  ],
+  "termStart": "2021-11-16",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "200 W. Washington St., Indianapolis, IN 46204",
+    "phone": "317-232-9404",
+    "email": "s4@iga.in.gov",
+    "website": "https://indianasenatedemocrats.org/senators/s4/",
+    "socialMedia": {
+      "x": "https://x.com/SenRodneyPol",
+      "twitter": "https://x.com/SenRodneyPol",
+      "facebook": "https://facebook.com/StateSenatorRodneyPolJr"
+    }
+  },
+  "bio": "Rodney Pol serves as State Senator for Indiana Senate District 4. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "IN",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://indianasenatedemocrats.org/senators/s4/"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/in/legislature/Rodney-Pol-4058ba4c-30a9-46a7-80a1-1f3de1e44a2f.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://indianasenatedemocrats.org/wp-content/uploads/2021/11/Senator-Pol_Hoosierjpg.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Rodney_Pol_Jr."
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Rodney_Pol_Jr."
+    },
+    {
+      "title": "Public source",
+      "url": "https://indianasenatedemocrats.org/senators/s4"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/200559/rodney-pol-jr"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.indianasenatedemocrats.org/s4"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.indianasenatedemocrats.org/senators"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.indianasenatedemocrats.org/senators/"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

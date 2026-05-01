@@ -1,0 +1,72 @@
+{
+  "id": "bob-rita",
+  "name": "Bob Rita",
+  "firstName": "Bob",
+  "lastName": "Rita",
+  "photo": "/images/officials/state-legislature/il/bob-rita.jpg",
+  "photoSourceUrl": "https://cdn.ilga.gov/assets/img/members/{AC16F1E8-0988-4A08-A2E5-EF4D06371A24}.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-28",
+  "jurisdiction": "Illinois House of Representatives",
+  "county": [
+    "Illinois"
+  ],
+  "termStart": "2003-01-08",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 109, Capitol Building, Springfield, IL 62706",
+    "phone": "217-558-1000",
+    "email": "robertbobrita@aol.com",
+    "website": "https://ilga.gov/house/Rep.asp?GA=101&MemberID=2547"
+  },
+  "bio": "Bob Rita serves as State Representative for Illinois House of Representatives District 28. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "IL",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://ilga.gov/house/Rep.asp?GA=101&MemberID=2547"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/il/legislature/Robert-Rita-3ce631a4-7a4f-4905-a959-574f1f0d3d6d.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://cdn.ilga.gov/assets/img/members/{AC16F1E8-0988-4A08-A2E5-EF4D06371A24}.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Robert_Rita"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Robert_Rita"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ilga.gov/house/default.asp?GA=101"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ilga.gov/house/default.asp?GA=102"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ilga.gov/house/default.asp?GA=103"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ilga.gov/house/Rep.asp?GA=102&MemberID=2802"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ilga.gov/house/Rep.asp?GA=103&MemberID=3027"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

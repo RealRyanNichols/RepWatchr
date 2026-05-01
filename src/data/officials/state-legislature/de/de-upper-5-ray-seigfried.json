@@ -1,0 +1,60 @@
+{
+  "id": "ray-seigfried",
+  "name": "Ray Seigfried",
+  "firstName": "Ray",
+  "lastName": "Seigfried",
+  "photo": "/images/officials/state-legislature/de/ray-seigfried.jpg",
+  "photoSourceUrl": "https://senatedems.delaware.gov/wp-content/blogs.dir/219/files/sites/219/2022/09/8344182d-3f96-487f-aee1-554e065f16c4-533x710.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-5",
+  "jurisdiction": "Delaware Senate",
+  "county": [
+    "Delaware"
+  ],
+  "termStart": "2025-02-16",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "P.O. Box 1401 411 Legislative Ave., Dover, DE 19901",
+    "phone": "302-744-4137",
+    "email": "ray.seigfried@delaware.gov",
+    "website": "https://senatedems.delaware.gov/members/senate-district-5/"
+  },
+  "bio": "Ray Seigfried serves as State Senator for Delaware Senate District 5. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "DE",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://senatedems.delaware.gov/members/senate-district-5/"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/de/legislature/Ray-Seigfried-e841e17b-6ea1-4401-b3d3-9b99237b6366.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://senatedems.delaware.gov/wp-content/blogs.dir/219/files/sites/219/2022/09/8344182d-3f96-487f-aee1-554e065f16c4-533x710.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Raymond_Seigfried"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Ray_Seigfried"
+    },
+    {
+      "title": "Public source",
+      "url": "https://senatedems.delaware.gov/members/senate-district-5"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/raymondjseigfried"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

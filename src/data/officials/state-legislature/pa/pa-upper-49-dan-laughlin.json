@@ -1,0 +1,74 @@
+{
+  "id": "dan-laughlin",
+  "name": "Dan Laughlin",
+  "firstName": "Dan",
+  "lastName": "Laughlin",
+  "party": "R",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-49",
+  "jurisdiction": "Pennsylvania Senate",
+  "county": [
+    "Pennsylvania"
+  ],
+  "termStart": "2016-12-01",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 20, East Wing Senate Box 203049, Harrisburg, PA 17120",
+    "phone": "717-787-8927",
+    "email": "dlaughlin@pasen.gov",
+    "website": "https://www.legis.state.pa.us/cfdocs/legis/home/member_information/Senate_bio.cfm?id=1766",
+    "socialMedia": {
+      "x": "https://x.com/senatorlaughlin",
+      "twitter": "https://x.com/senatorlaughlin",
+      "facebook": "https://facebook.com/senatorlaughlin"
+    }
+  },
+  "bio": "Dan Laughlin serves as State Senator for Pennsylvania Senate District 49. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "PA",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.legis.state.pa.us/cfdocs/legis/home/member_information/Senate_bio.cfm?id=1766"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/pa/legislature/Daniel-Laughlin-431a823e-0268-4921-a62d-5f698211e706.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Daniel_Laughlin"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Dan_Laughlin"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/167728/dan-laughlin"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.legis.state.pa.us/cfdocs/legis/home/member_information/mbrList.cfm?body=S&sort=alpha"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.legis.state.pa.us/cfdocs/legis/home/member_information/senators_alpha.cfm"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/dan-laughlin-293b88148"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.palegis.us/senate/members/bio/1766/sen-laughlin"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.senatorlaughlin.com"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

@@ -1,0 +1,56 @@
+{
+  "id": "sarah-wolek",
+  "name": "Sarah Wolek",
+  "firstName": "Sarah",
+  "lastName": "Wolek",
+  "photo": "/images/officials/state-legislature/md/sarah-wolek.jpg",
+  "photoSourceUrl": "https://mgaleg.maryland.gov/2023RS/images/wolek01.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "Delegate",
+  "district": "HD-16",
+  "jurisdiction": "Maryland House of Delegates",
+  "county": [
+    "Maryland"
+  ],
+  "termStart": "2023-04-03",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 222, Lowe House Office Building 6 Bladen St., Annapolis, MD 21401",
+    "phone": "410-841-3642",
+    "email": "sarah.wolek@house.maryland.gov",
+    "website": "https://mgaleg.maryland.gov/mgawebsite/Members/Details/wolek01"
+  },
+  "bio": "Sarah Wolek serves as Delegate for Maryland House of Delegates District 16. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "MD",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://mgaleg.maryland.gov/mgawebsite/Members/Details/wolek01"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/md/legislature/Sarah-Wolek-80095967-58e7-4c8b-a675-eb1c461104fc.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://mgaleg.maryland.gov/2023RS/images/wolek01.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Sarah_Wolek"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Sarah_Wolek"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/sarahswolek"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

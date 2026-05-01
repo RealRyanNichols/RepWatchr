@@ -1,0 +1,57 @@
+{
+  "id": "andy-boesenecker",
+  "name": "Andy Boesenecker",
+  "firstName": "Andy",
+  "lastName": "Boesenecker",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-53",
+  "jurisdiction": "Colorado House of Representatives",
+  "county": [
+    "Colorado"
+  ],
+  "termStart": "2021-04-28",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "State Capitol Room 307, Colorado  Building 200 E. Colfax Ave., Denver, CO 80203",
+    "phone": "303-866-2917",
+    "email": "andrew.boesenecker.house@coleg.gov",
+    "website": "https://leg.colorado.gov/legislators/andrew-boesenecker"
+  },
+  "bio": "Andy Boesenecker serves as State Representative for Colorado House of Representatives District 53. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "CO",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://leg.colorado.gov/legislators/andrew-boesenecker"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/co/legislature/Andrew-Boesenecker-278f042b-4fe3-4325-ad59-bc240e4fda0c.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Andrew_Boesenecker"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Andrew_Boesenecker"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/196267/andrew-boesenecker"
+    },
+    {
+      "title": "Public source",
+      "url": "https://leg.colorado.gov/legislators"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/andrew-boesenecker-477657134"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

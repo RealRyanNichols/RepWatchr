@@ -1,0 +1,64 @@
+{
+  "id": "cecil-thomas",
+  "name": "Cecil Thomas",
+  "firstName": "Cecil",
+  "lastName": "Thomas",
+  "photo": "/images/officials/state-legislature/oh/cecil-thomas.jpg",
+  "photoSourceUrl": "https://www.legislature.ohio.gov/assets/people/cecil-thomas/headshots/thumbnails/medium/cecil-thomas-january-2023-headshot_medium.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-25",
+  "jurisdiction": "Ohio House of Representatives",
+  "county": [
+    "Ohio"
+  ],
+  "termStart": "2023-01-01",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "77 S. High St. 10th Floor, Columbus, OH 43215",
+    "phone": "614-466-1645",
+    "email": "rep25@ohiohouse.gov",
+    "website": "https://ohiohouse.gov/members/cecil-thomas"
+  },
+  "bio": "Cecil Thomas serves as State Representative for Ohio House of Representatives District 25. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "OH",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://ohiohouse.gov/members/cecil-thomas"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/oh/legislature/Cecil-Thomas-5ba7ae7d-2f10-42b7-8784-8e734507ce33.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://www.legislature.ohio.gov/assets/people/cecil-thomas/headshots/thumbnails/medium/cecil-thomas-january-2023-headshot_medium.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Cecil_Thomas"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Cecil_Thomas_(politician)"
+    },
+    {
+      "title": "member list page",
+      "url": "https://www.legislature.ohio.gov/legislators/house-directory"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/cecil-thomas-37933a9b"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.ohiosenate.gov/senators"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

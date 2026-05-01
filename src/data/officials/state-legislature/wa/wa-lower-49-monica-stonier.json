@@ -1,0 +1,72 @@
+{
+  "id": "monica-stonier",
+  "name": "Monica Stonier",
+  "firstName": "Monica",
+  "lastName": "Stonier",
+  "photo": "/images/officials/state-legislature/wa/monica-stonier.jpg",
+  "photoSourceUrl": "https://leg.wa.gov/memberphoto/17279.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-49",
+  "jurisdiction": "Washington House of Representatives",
+  "county": [
+    "Washington"
+  ],
+  "termStart": "2017-01-09",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 436A, Legislative Building P.O. Box 40600, Olympia, WA 98504",
+    "phone": "360-786-7872",
+    "email": "monica.stonier@leg.wa.gov",
+    "website": "https://housedemocrats.wa.gov/legislators/Monica-Jurado-Stonier/"
+  },
+  "bio": "Monica Stonier serves as State Representative for Washington House of Representatives District 49. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "WA",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://housedemocrats.wa.gov/legislators/Monica-Jurado-Stonier/"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/wa/legislature/Monica-Jurado-Stonier-fabb9834-0e6d-476b-ba0f-50d4ecf74a43.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://leg.wa.gov/memberphoto/17279.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://app.leg.wa.gov/ContentParts/MemberDirectory/?a=House"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Monica_Jurado_Stonier"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Monica_Stonier"
+    },
+    {
+      "title": "Public source",
+      "url": "https://housedemocrats.wa.gov/stonier"
+    },
+    {
+      "title": "Public source",
+      "url": "https://housedemocrats.wa.gov/stonier/"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/126320/monica-stonier"
+    },
+    {
+      "title": "Public source",
+      "url": "https://leg.wa.gov/legislators/member/monica-jurado-stonier"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

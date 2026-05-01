@@ -1,0 +1,72 @@
+{
+  "id": "nicole-macri",
+  "name": "Nicole Macri",
+  "firstName": "Nicole",
+  "lastName": "Macri",
+  "photo": "/images/officials/state-legislature/wa/nicole-macri.jpg",
+  "photoSourceUrl": "https://leg.wa.gov/memberphoto/26178.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-43",
+  "jurisdiction": "Washington House of Representatives",
+  "county": [
+    "Washington"
+  ],
+  "termStart": "2017-01-09",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 336, John L. O'Brien Building P.O. Box 40600, Olympia, WA 98504",
+    "phone": "360-786-7826",
+    "email": "nicole.macri@leg.wa.gov",
+    "website": "https://housedemocrats.wa.gov/legislators/Nicole-Macri/"
+  },
+  "bio": "Nicole Macri serves as State Representative for Washington House of Representatives District 43. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "WA",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://housedemocrats.wa.gov/legislators/Nicole-Macri/"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/wa/legislature/Nicole-Macri-989733b9-6846-465f-9ed6-44b1b823e7c4.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://leg.wa.gov/memberphoto/26178.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://app.leg.wa.gov/ContentParts/MemberDirectory/?a=House"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Nicole_Macri"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Nicole_Macri"
+    },
+    {
+      "title": "Public source",
+      "url": "https://housedemocrats.wa.gov/macri"
+    },
+    {
+      "title": "Public source",
+      "url": "https://housedemocrats.wa.gov/macri/"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/171054/nicole-macri"
+    },
+    {
+      "title": "Public source",
+      "url": "https://leg.wa.gov/legislators/member/nicole-macri"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

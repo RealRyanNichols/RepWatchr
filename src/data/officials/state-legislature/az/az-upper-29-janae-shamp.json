@@ -1,0 +1,64 @@
+{
+  "id": "janae-shamp",
+  "name": "Janae Shamp",
+  "firstName": "Janae",
+  "lastName": "Shamp",
+  "photo": "/images/officials/state-legislature/az/janae-shamp.jpg",
+  "photoSourceUrl": "https://www.azleg.gov/alisImages/MemberPhotos/56leg/Senate/SHAMP.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-29",
+  "jurisdiction": "Arizona Senate",
+  "county": [
+    "Arizona"
+  ],
+  "termStart": "2023-01-09",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 212, 1700 W. Washington St., Phoenix, AZ 85007",
+    "phone": "602-926-3499",
+    "email": "jshamp@azleg.gov",
+    "website": "https://www.azleg.gov/senate-member/?legislature=56&legislator=2141"
+  },
+  "bio": "Janae Shamp serves as State Senator for Arizona Senate District 29. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "AZ",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.azleg.gov/senate-member/?legislature=56&legislator=2141"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/az/legislature/Janae-Shamp-c94f542a-52e0-4831-8479-02793a97ccd9.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://www.azleg.gov/alisImages/MemberPhotos/56leg/Senate/SHAMP.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Janae_Shamp"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Janae_Shamp"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.azleg.gov/memberroster/?body=S"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.azleg.gov/senate-member/?legislature=57&legislator=2395"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/janae-shamp-44b07a339"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

@@ -1,0 +1,69 @@
+{
+  "id": "fentrice-driskell",
+  "name": "Fentrice Driskell",
+  "firstName": "Fentrice",
+  "lastName": "Driskell",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-67",
+  "jurisdiction": "Florida House of Representatives",
+  "county": [
+    "Florida"
+  ],
+  "termStart": "2022-11-08",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 316, The Capitol 402 S. Monroe St., Tallahassee, FL 32399",
+    "phone": "850-717-5067",
+    "email": "fentrice.driskell@flhouse.gov",
+    "website": "https://myfloridahouse.gov/Sections/Representatives/details.aspx?MemberId=4745&LegislativeTermId=90"
+  },
+  "bio": "Fentrice Driskell serves as State Representative for Florida House of Representatives District 67. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "FL",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://myfloridahouse.gov/Sections/Representatives/details.aspx?MemberId=4745&LegislativeTermId=90"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/fl/legislature/Fentrice-Driskell-5a138490-70a4-46fa-967e-8739d1ea7456.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Fentrice_Driskell"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Fentrice_Driskell"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.carltonfields.com/team/d/fentrice-d-driskell"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.flhouse.gov/Sections/Representatives/custom/details.aspx?MemberId=4745&LegislativeTermId=91"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.flhouse.gov/Sections/Representatives/details.aspx?MemberId=4745"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/fentricedriskell"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.myfloridahouse.gov/Representatives"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.myfloridahouse.gov/Sections/Representatives/details.aspx?MemberId=4745"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

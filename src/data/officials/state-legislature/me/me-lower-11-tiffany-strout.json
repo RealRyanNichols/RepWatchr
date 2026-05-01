@@ -1,0 +1,60 @@
+{
+  "id": "tiffany-strout",
+  "name": "Tiffany Strout",
+  "firstName": "Tiffany",
+  "lastName": "Strout",
+  "photo": "/images/officials/state-legislature/me/tiffany-strout.jpg",
+  "photoSourceUrl": "https://legislature.maine.gov/house/house/Repository/MemberProfiles/0cea9b69-973d-411d-bbd7-b5c6e1e6d559_TSTROUT.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-11",
+  "jurisdiction": "Maine House of Representatives",
+  "county": [
+    "Maine"
+  ],
+  "termStart": "2022-12-07",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 332, House Republican Office 2 State House Station, Augusta, ME 04333",
+    "phone": "800-423-2900",
+    "email": "tiffany.strout@legislature.maine.gov",
+    "website": "https://legislature.maine.gov/house/house/MemberProfiles/Details/1459"
+  },
+  "bio": "Tiffany Strout serves as State Representative for Maine House of Representatives District 11. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "ME",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://legislature.maine.gov/house/house/MemberProfiles/Details/1459"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/me/legislature/Tiffany-Strout-2ffd13d7-b22a-4bea-8bc0-eaa6c0a53c17.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://legislature.maine.gov/house/house/Repository/MemberProfiles/0cea9b69-973d-411d-bbd7-b5c6e1e6d559_TSTROUT.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Tiffany_Strout"
+    },
+    {
+      "title": "Public source",
+      "url": "https://legislature.maine.gov/house/house/MemberProfiles/ListAlpha"
+    },
+    {
+      "title": "Public source",
+      "url": "https://mainehousegop.org/members/strout-tiffany"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/tiffany-strout-59921927"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

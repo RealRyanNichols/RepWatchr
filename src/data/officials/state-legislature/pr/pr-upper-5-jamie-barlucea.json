@@ -1,0 +1,45 @@
+{
+  "id": "jamie-barlucea",
+  "name": "Jamie Barlucea",
+  "firstName": "Jamie",
+  "lastName": "Barlucea",
+  "party": "NP",
+  "level": "state",
+  "position": "Territorial Senator",
+  "district": "5",
+  "jurisdiction": "Puerto Rico Senate",
+  "county": [
+    "Puerto Rico"
+  ],
+  "termStart": "2025-01-02",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Senado, El Capitolio P.O. Box 9023431, San Juan, PR 00902",
+    "phone": "787-724-2030",
+    "email": "jbarlucea@senado.pr.gov",
+    "website": "https://www.senado.pr.gov/jamie-barlucea-rodr%C3%ADguez"
+  },
+  "bio": "Jamie Barlucea serves as Territorial Senator for Puerto Rico Senate District 5. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "PR",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.senado.pr.gov/jamie-barlucea-rodr%C3%ADguez"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/pr/legislature/Jamie-Barlucea-30c2fbb8-324f-4b30-a42c-7b3a8768bd9b.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Jamie_Barlucea"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.senado.pr.gov/senators/jamie-barlucea-rodr%C3%ADguez"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

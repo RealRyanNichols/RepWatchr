@@ -1,0 +1,55 @@
+{
+  "id": "rob-kreibich",
+  "name": "Rob Kreibich",
+  "firstName": "Rob",
+  "lastName": "Kreibich",
+  "party": "R",
+  "level": "state",
+  "position": "Assemblymember",
+  "district": "HD-28",
+  "jurisdiction": "Wisconsin State Assembly",
+  "county": [
+    "Wisconsin"
+  ],
+  "termStart": "2025-01-06",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "email": "rep.kreibich@legis.wisconsin.gov",
+    "website": "https://docs.legis.wisconsin.gov/2025/legislators/assembly/2885"
+  },
+  "bio": "Rob Kreibich serves as Assemblymember for Wisconsin State Assembly District 28. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "WI",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://docs.legis.wisconsin.gov/2025/legislators/assembly/2885"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/wi/legislature/Rob-Kreibich-a5d9287a-c3e7-4457-8faf-31024e0e9ac6.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Rob_Kreibich"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Robin_Kreibich"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/3510/robin-kreibich"
+    },
+    {
+      "title": "Public source",
+      "url": "https://legis.wisconsin.gov/assembly/28/kreibich"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/rob-kreibich-862a7078"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

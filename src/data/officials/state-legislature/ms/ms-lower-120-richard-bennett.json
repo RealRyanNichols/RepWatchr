@@ -1,0 +1,64 @@
+{
+  "id": "richard-bennett",
+  "name": "Richard Bennett",
+  "firstName": "Richard",
+  "lastName": "Bennett",
+  "photo": "/images/officials/state-legislature/ms/richard-bennett.jpg",
+  "photoSourceUrl": "https://static.votesmart.org/static/canphoto/69948.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-120",
+  "jurisdiction": "Mississippi House of Representatives",
+  "county": [
+    "Mississippi"
+  ],
+  "termStart": "2008-01-03",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "State Capitol 400 High St., Jackson, MS 39201",
+    "phone": "601-359-2860",
+    "email": "rbennett@house.ms.gov",
+    "website": "https://billstatus.ls.state.ms.us/members/house/bennett.xml"
+  },
+  "bio": "Richard Bennett serves as State Representative for Mississippi House of Representatives District 120. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "MS",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://billstatus.ls.state.ms.us/members/house/bennett.xml"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ms/legislature/Richard-Bennett-4b4c6bbd-fcbb-4c7e-9746-83acffe80898.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://static.votesmart.org/static/canphoto/69948.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Richard_Bennett_(Mississippi)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://billstatus.ls.state.ms.us/members/hr_membs.xml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Richard_Bennett_(Mississippi_politician)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/69948/richard-bennett"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/richard-bennett-6708b5154"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

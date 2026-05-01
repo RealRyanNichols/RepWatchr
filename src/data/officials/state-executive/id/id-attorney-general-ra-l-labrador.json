@@ -1,0 +1,55 @@
+{
+  "id": "ra-l-labrador",
+  "name": "Ra\u00fal Labrador",
+  "firstName": "Ra\u00fal",
+  "lastName": "Labrador",
+  "photo": "/images/officials/state-executive/id/ra-l-labrador.jpg",
+  "photoSourceUrl": "https://www.ag.idaho.gov/content/uploads/2025/07/320A4720.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "Attorney General",
+  "district": "Idaho",
+  "jurisdiction": "Idaho statewide public office",
+  "county": [
+    "Idaho"
+  ],
+  "termStart": "2023-01-02",
+  "termEnd": "2027-01-04",
+  "contactInfo": {
+    "office": "700 W. Jefferson Street, Suite 210; Boise, ID 83720-0010",
+    "phone": "208-334-2400",
+    "website": "https://www.ag.idaho.gov/"
+  },
+  "bio": "Ra\u00fal Labrador is listed as Attorney General for Idaho. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "ID",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.ag.idaho.gov/"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/id/executive/Raul-Labrador-a6d731ea-af56-43f8-ba93-124774ae97c4.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://www.ag.idaho.gov/content/uploads/2025/07/320A4720.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.ag.idaho.gov/about/"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Ra%C3%BAl_Labrador"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.naag.org/attorney-general/raul-labrador/"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

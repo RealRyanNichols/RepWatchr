@@ -1,0 +1,60 @@
+{
+  "id": "mark-chapman",
+  "name": "Mark Chapman",
+  "firstName": "Mark",
+  "lastName": "Chapman",
+  "photo": "/images/officials/state-legislature/ok/mark-chapman.jpg",
+  "photoSourceUrl": "https://s3.amazonaws.com/ballotpedia-api4/files/thumbs/200/300/MarkChapman2024.JPG",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-12",
+  "jurisdiction": "Oklahoma House of Representatives",
+  "county": [
+    "Oklahoma"
+  ],
+  "termStart": "2024-11-20",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 300, 2300 N. Lincoln Blvd., Oklahoma City, OK 73105",
+    "phone": "405-557-7388",
+    "email": "mark.chapman@okhouse.gov",
+    "website": "https://www.okhouse.gov/representatives/mark-chapman"
+  },
+  "bio": "Mark Chapman serves as State Representative for Oklahoma House of Representatives District 12. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "OK",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.okhouse.gov/representatives/mark-chapman"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ok/legislature/Mark-Chapman-a688f8ac-d265-4830-963f-617b726524ed.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://s3.amazonaws.com/ballotpedia-api4/files/thumbs/200/300/MarkChapman2024.JPG"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Mark_Chapman"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Mark_Chapman_(politician)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/216462/mark-chapman"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/mark-chapman-78b3a330"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

@@ -1,0 +1,60 @@
+{
+  "id": "judson-sapp",
+  "name": "Judson Sapp",
+  "firstName": "Judson",
+  "lastName": "Sapp",
+  "photo": "/images/officials/state-legislature/fl/judson-sapp.jpg",
+  "photoSourceUrl": "https://static.wixstatic.com/media/239f01_44bd85c8941a4875a3e3f89d1cf01db3~mv2.jpeg/v1/fill/w_490,h_591,al_t,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/239f01_44bd85c8941a4875a3e3f89d1cf01db3~mv2.jpeg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-20",
+  "jurisdiction": "Florida House of Representatives",
+  "county": [
+    "Florida"
+  ],
+  "termStart": "2024-11-05",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 1301, The Capitol 402 S. Monroe St., Tallahassee, FL 32399",
+    "phone": "850-717-5020",
+    "email": "judson.sapp@flhouse.gov",
+    "website": "https://www.flhouse.gov/Sections/Representatives/details.aspx?MemberId=4907"
+  },
+  "bio": "Judson Sapp serves as State Representative for Florida House of Representatives District 20. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "FL",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.flhouse.gov/Sections/Representatives/details.aspx?MemberId=4907"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/fl/legislature/Judson-Sapp-09ff6379-dbcc-4aa2-bc70-0b2fa9fd69ec.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://static.wixstatic.com/media/239f01_44bd85c8941a4875a3e3f89d1cf01db3~mv2.jpeg/v1/fill/w_490,h_591,al_t,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/239f01_44bd85c8941a4875a3e3f89d1cf01db3~mv2.jpeg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Judson_Sapp"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Judson_Sapp"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/182254/judson-sapp"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.myfloridahouse.gov/Sections/Representatives/details.aspx?MemberId=4907&LegislativeTermId=91"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

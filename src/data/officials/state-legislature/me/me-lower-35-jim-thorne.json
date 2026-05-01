@@ -1,0 +1,60 @@
+{
+  "id": "jim-thorne",
+  "name": "Jim Thorne",
+  "firstName": "Jim",
+  "lastName": "Thorne",
+  "photo": "/images/officials/state-legislature/me/jim-thorne.jpg",
+  "photoSourceUrl": "https://legislature.maine.gov/house/house/Repository/MemberProfiles/92dc9462-f2b9-4767-8dec-39b147b90d53_ThorneNEWNEW.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-35",
+  "jurisdiction": "Maine House of Representatives",
+  "county": [
+    "Maine"
+  ],
+  "termStart": "2022-12-07",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 332, House Republican Office 2 State House Station, Augusta, ME 04333",
+    "phone": "800-423-2900",
+    "email": "jim.thorne@legislature.maine.gov",
+    "website": "https://legislature.maine.gov/house/house/MemberProfiles/Details/1431"
+  },
+  "bio": "Jim Thorne serves as State Representative for Maine House of Representatives District 35. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "ME",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://legislature.maine.gov/house/house/MemberProfiles/Details/1431"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/me/legislature/James-E-Thorne-e4f0e3da-2e65-4986-96ad-1ef21f9da73d.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://legislature.maine.gov/house/house/Repository/MemberProfiles/92dc9462-f2b9-4767-8dec-39b147b90d53_ThorneNEWNEW.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/James_Thorne_(Maine)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://legislature.maine.gov/house/house/MemberProfiles/ListAlpha"
+    },
+    {
+      "title": "Public source",
+      "url": "https://mainehousegop.org/members/thorne-james"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/jim-thorne-a439a375"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

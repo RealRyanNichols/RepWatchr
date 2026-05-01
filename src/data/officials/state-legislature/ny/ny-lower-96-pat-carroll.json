@@ -1,0 +1,60 @@
+{
+  "id": "pat-carroll",
+  "name": "Pat Carroll",
+  "firstName": "Pat",
+  "lastName": "Carroll",
+  "photo": "/images/officials/state-legislature/ny/pat-carroll.jpg",
+  "photoSourceUrl": "https://www.clarkstown.gov/wp-content/uploads/2021/10/Patrick-Carroll.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "Assemblymember",
+  "district": "HD-96",
+  "jurisdiction": "New York State Assembly",
+  "county": [
+    "New York"
+  ],
+  "termStart": "2025-01-01",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 631, Legislative Office Building, Albany, NY 12248",
+    "phone": "518-455-5735",
+    "email": "carrollp@nyassembly.gov",
+    "website": "https://nyassembly.gov/mem/Patrick-J-Carroll"
+  },
+  "bio": "Pat Carroll serves as Assemblymember for New York State Assembly District 96. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "NY",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://nyassembly.gov/mem/Patrick-J-Carroll"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ny/legislature/Patrick-J-Carroll-04a87708-f68c-43ca-b892-fc987f4deb5a.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://www.clarkstown.gov/wp-content/uploads/2021/10/Patrick-Carroll.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Patrick_Carroll_(New_York)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Patrick_Carroll_(New_York_politician)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/218028/patrick-carroll"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/patrick-j-carroll-3921159"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

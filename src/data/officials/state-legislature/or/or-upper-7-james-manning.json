@@ -1,0 +1,65 @@
+{
+  "id": "james-manning",
+  "name": "James Manning",
+  "firstName": "James",
+  "lastName": "Manning",
+  "party": "D",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-7",
+  "jurisdiction": "Oregon Senate",
+  "county": [
+    "Oregon"
+  ],
+  "termStart": "2016-12-15",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room S-213, 900 Court St. NE, Salem, OR 97301",
+    "phone": "503-986-1707",
+    "email": "sen.jamesmanning@oregonlegislature.gov",
+    "website": "https://www.oregonlegislature.gov/Manning"
+  },
+  "bio": "James Manning serves as State Senator for Oregon Senate District 7. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "OR",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.oregonlegislature.gov/Manning"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/or/legislature/James-Manning-Jr-f1be7436-8ea5-48b2-8997-53dd566633b9.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://api.oregonlegislature.gov/odata/odataservice.svc/LegislativeSessions('2022R1')/Legislators"
+    },
+    {
+      "title": "Public source",
+      "url": "https://api.oregonlegislature.gov/odata/odataservice.svc/LegislativeSessions('2023R1')/Legislators"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/James_Manning_(Oregon)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/James_Manning_Jr."
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/168035/james-manning-jr"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/senator-james-i-manning-jr-0822163b"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.oregonlegislature.gov/manning"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

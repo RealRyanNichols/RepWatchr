@@ -1,0 +1,72 @@
+{
+  "id": "sydney-carlin",
+  "name": "Sydney Carlin",
+  "firstName": "Sydney",
+  "lastName": "Carlin",
+  "photo": "/images/officials/state-legislature/ks/sydney-carlin.jpg",
+  "photoSourceUrl": "https://assets.nationbuilder.com/carlinforkansas/pages/22/attachments/original/1473126263/IMG_0437.JPG?1473126263",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-66",
+  "jurisdiction": "Kansas House of Representatives",
+  "county": [
+    "Kansas"
+  ],
+  "termStart": "2003-01-13",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "State Capitol Room 451-S, Kansas  Building 300 SW 10th St., Topeka, KS 66612",
+    "phone": "785-296-7657",
+    "email": "sydney.carlin@house.ks.gov",
+    "website": "https://www.kslegislature.gov/li/b2025_26/members/rep_carlin_sydney_1/"
+  },
+  "bio": "Sydney Carlin serves as State Representative for Kansas House of Representatives District 66. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "KS",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.kslegislature.gov/li/b2025_26/members/rep_carlin_sydney_1/"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ks/legislature/Sydney-Carlin-61dc8b8f-5016-4114-b08a-b2dd0cb16993.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://assets.nationbuilder.com/carlinforkansas/pages/22/attachments/original/1473126263/IMG_0437.JPG?1473126263"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Sydney_Carlin"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Sydney_Carlin"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/18618/sydney-carlin"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.kslegislature.gov/li/b2025_26/members/rep_carlin_sydney_1"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.kslegislature.org/li/api/v11/rev-1/members/rep_carlin_sydney_1"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.kslegislature.org/li/api/v11/rev-1/members/rep_carlin_sydney_1/"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.kslegislature.org/li/b2023_24/members/rep_carlin_sydney_1"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

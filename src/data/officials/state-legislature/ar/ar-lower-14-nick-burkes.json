@@ -1,0 +1,68 @@
+{
+  "id": "nick-burkes",
+  "name": "Nick Burkes",
+  "firstName": "Nick",
+  "lastName": "Burkes",
+  "photo": "/images/officials/state-legislature/ar/nick-burkes.jpg",
+  "photoSourceUrl": "https://s3.amazonaws.com/ballotpedia-api4/files/thumbs/200/300/Nick_Burkes.jpeg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-14",
+  "jurisdiction": "Arkansas House of Representatives",
+  "county": [
+    "Arkansas"
+  ],
+  "termStart": "2025-01-13",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "State Capitol Arkansas  500 Woodlane St., Suite 350, Little Rock, AR 72201",
+    "phone": "501-682-6211",
+    "email": "nick.burkes@arkansashouse.org",
+    "website": "https://arkansashouse.org/district/14"
+  },
+  "bio": "Nick Burkes serves as State Representative for Arkansas House of Representatives District 14. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "AR",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://arkansashouse.org/district/14"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ar/legislature/Nick-Burkes-4b82405d-205f-47f7-8d9c-a7af23e9bada.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://s3.amazonaws.com/ballotpedia-api4/files/thumbs/200/300/Nick_Burkes.jpeg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://arkleg.state.ar.us/Legislators/Detail?member=N.+Burkes"
+    },
+    {
+      "title": "Public source",
+      "url": "https://arkleg.state.ar.us/Legislators/Detail?member=N.+Burkes&ddBienniumSession=2025%2F2025R"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Nick_Burkes"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Nick_Burkes"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/evaluations/212921/nick-burkes"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/nick-b-6588b4175"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

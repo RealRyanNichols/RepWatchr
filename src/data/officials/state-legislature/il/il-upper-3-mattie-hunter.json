@@ -1,0 +1,72 @@
+{
+  "id": "mattie-hunter",
+  "name": "Mattie Hunter",
+  "firstName": "Mattie",
+  "lastName": "Hunter",
+  "photo": "/images/officials/state-legislature/il/mattie-hunter.jpg",
+  "photoSourceUrl": "https://cdn.ilga.gov/assets/img/members/{F4630DDB-11F0-417E-8C0A-B4ED6426116F}.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-3",
+  "jurisdiction": "Illinois Senate",
+  "county": [
+    "Illinois"
+  ],
+  "termStart": "2003-01-08",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 417 C, Capitol Building, Springfield, IL 62706",
+    "phone": "217-782-5966",
+    "email": "senator03district@gmail.com",
+    "website": "https://ilga.gov/senate/Senator.asp?GA=101&MemberID=2554"
+  },
+  "bio": "Mattie Hunter serves as State Senator for Illinois Senate District 3. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "IL",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://ilga.gov/senate/Senator.asp?GA=101&MemberID=2554"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/il/legislature/Mattie-Hunter-879afbe3-9394-4a84-b57f-af36ca92cb14.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://cdn.ilga.gov/assets/img/members/{F4630DDB-11F0-417E-8C0A-B4ED6426116F}.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Mattie_Hunter"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Mattie_Hunter"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ilga.gov/senate/default.asp?GA=101"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ilga.gov/senate/default.asp?GA=102"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ilga.gov/senate/default.asp?GA=103"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ilga.gov/senate/Senator.asp?GA=102&MemberID=2808"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ilga.gov/senate/Senator.asp?GA=103&MemberID=3030"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

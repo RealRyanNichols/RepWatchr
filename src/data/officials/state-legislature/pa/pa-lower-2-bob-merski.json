@@ -1,0 +1,75 @@
+{
+  "id": "bob-merski",
+  "name": "Bob Merski",
+  "firstName": "Bob",
+  "lastName": "Merski",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-2",
+  "jurisdiction": "Pennsylvania House of Representatives",
+  "county": [
+    "Pennsylvania"
+  ],
+  "termStart": "2018-12-01",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 221, Irvis Office Building P.O. Box 202002, Harrisburg, PA 17120",
+    "phone": "717-787-4358",
+    "email": "rmerski@pahouse.net",
+    "website": "https://www.legis.state.pa.us/cfdocs/legis/home/member_information/House_bio.cfm?id=1822",
+    "socialMedia": {
+      "x": "https://x.com/bobmerski",
+      "twitter": "https://x.com/bobmerski",
+      "facebook": "https://facebook.com/bobmerski",
+      "youtube": "https://youtube.com/playlist?list=PLjtqNtfs0bgXx81_87Iuo4q8-yfllNpqL"
+    }
+  },
+  "bio": "Bob Merski serves as State Representative for Pennsylvania House of Representatives District 2. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "PA",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.legis.state.pa.us/cfdocs/legis/home/member_information/House_bio.cfm?id=1822"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/pa/legislature/Robert-E-Merski-bd4c3d05-059a-4084-b8f8-e8598e4eb955.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Robert_Merski"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Robert_Merski"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/161373/bob-merski"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.legis.state.pa.us/cfdocs/legis/home/member_information/mbrList.cfm?body=H&sort=alpha"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.legis.state.pa.us/cfdocs/legis/home/member_information/representatives_alpha.cfm"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/bobmerski"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.pahouse.com/merski"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.palegis.us/house/members/bio/1822/rep-merski"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

@@ -1,0 +1,56 @@
+{
+  "id": "tim-longest",
+  "name": "Tim Longest",
+  "firstName": "Tim",
+  "lastName": "Longest",
+  "photo": "/images/officials/state-legislature/nc/tim-longest.jpg",
+  "photoSourceUrl": "https://www.ncleg.gov/Members/MemberImage/H/818/Low",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-34",
+  "jurisdiction": "North Carolina House of Representatives",
+  "county": [
+    "North Carolina"
+  ],
+  "termStart": "2023-01-01",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 1315, North Carolina Legislative Building 16 W. Jones St., Raleigh, NC 27601",
+    "phone": "919-733-5773",
+    "email": "tim.longest@ncleg.gov",
+    "website": "https://www.ncleg.gov/Members/Biography/H/818"
+  },
+  "bio": "Tim Longest serves as State Representative for North Carolina House of Representatives District 34. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "NC",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.ncleg.gov/Members/Biography/H/818"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/nc/legislature/Tim-Longest-1bc1818f-49fd-478a-affa-1f167adcfb51.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://www.ncleg.gov/Members/MemberImage/H/818/Low"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Tim_Longest"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/tim-longest-66889045"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.ncleg.gov/Members/MemberTable/H"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

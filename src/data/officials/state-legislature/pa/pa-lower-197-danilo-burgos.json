@@ -1,0 +1,75 @@
+{
+  "id": "danilo-burgos",
+  "name": "Danilo Burgos",
+  "firstName": "Danilo",
+  "lastName": "Burgos",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-197",
+  "jurisdiction": "Pennsylvania House of Representatives",
+  "county": [
+    "Pennsylvania"
+  ],
+  "termStart": "2018-12-01",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 106, Irvis Office Building P.O. Box 202197, Harrisburg, PA 17120",
+    "phone": "717-772-2004",
+    "email": "dburgos@pahouse.net",
+    "website": "https://www.legis.state.pa.us/cfdocs/legis/home/member_information/House_bio.cfm?id=1863",
+    "socialMedia": {
+      "x": "https://x.com/RepBurgos",
+      "twitter": "https://x.com/RepBurgos",
+      "facebook": "https://facebook.com/RepBurgos",
+      "youtube": "https://youtube.com/playlist?list=PLjtqNtfs0bgXt_x4JyRcCrfs9KrY14amC"
+    }
+  },
+  "bio": "Danilo Burgos serves as State Representative for Pennsylvania House of Representatives District 197. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "PA",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.legis.state.pa.us/cfdocs/legis/home/member_information/House_bio.cfm?id=1863"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/pa/legislature/Danilo-Burgos-a2579707-5a31-4f4b-a9ed-49847d35eae6.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Danilo_Burgos"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Danilo_Burgos"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/150719/danilo-burgos"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.legis.state.pa.us/cfdocs/legis/home/member_information/mbrList.cfm?body=H&sort=alpha"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.legis.state.pa.us/cfdocs/legis/home/member_information/representatives_alpha.cfm"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/danilo-burgos-25863470"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.pahouse.com/burgos"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.palegis.us/house/members/bio/1863/rep-burgos"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

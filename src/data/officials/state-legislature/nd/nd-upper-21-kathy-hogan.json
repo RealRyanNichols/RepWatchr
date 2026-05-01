@@ -1,0 +1,71 @@
+{
+  "id": "kathy-hogan",
+  "name": "Kathy Hogan",
+  "firstName": "Kathy",
+  "lastName": "Hogan",
+  "photo": "/images/officials/state-legislature/nd/kathy-hogan.jpg",
+  "photoSourceUrl": "https://www.ndlegis.gov/sites/default/files/styles/member_list_photo/public/person/photo/khogan2023.jpg?itok=kb5LgV9d",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-21",
+  "jurisdiction": "North Dakota Senate",
+  "county": [
+    "North Dakota"
+  ],
+  "termStart": "2018-12-01",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "State Capitol 600 E. Boulevard Ave., Bismarck, ND 58505",
+    "email": "khogan@ndlegis.gov",
+    "website": "https://ndlegis.gov/biography/kathy-hogan"
+  },
+  "bio": "Kathy Hogan serves as State Senator for North Dakota Senate District 21. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "ND",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://ndlegis.gov/biography/kathy-hogan"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/nd/legislature/Kathy-Hogan-03924b26-a081-4722-947b-2738200f9063.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://www.ndlegis.gov/sites/default/files/styles/member_list_photo/public/person/photo/khogan2023.jpg?itok=kb5LgV9d"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Kathy_Hogan"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Kathy_Hogan"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/121213/kathy-hogan"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.legis.nd.gov/assembly/65-2017/members/house/representative-kathy-hogan"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.legis.nd.gov/assembly/66-2019/members/senate/senator-kathy-hogan"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.legis.nd.gov/assembly/67-2021/members/members-by-district"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.legis.nd.gov/assembly/67-2021/members/senate/senator-kathy-hogan"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

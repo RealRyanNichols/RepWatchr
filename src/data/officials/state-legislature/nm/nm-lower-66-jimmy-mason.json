@@ -1,0 +1,56 @@
+{
+  "id": "jimmy-mason",
+  "name": "Jimmy Mason",
+  "firstName": "Jimmy",
+  "lastName": "Mason",
+  "photo": "/images/officials/state-legislature/nm/jimmy-mason.jpg",
+  "photoSourceUrl": "https://www.nmlegis.gov/Images/Legislators/House/HMASO.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-66",
+  "jurisdiction": "New Mexico House of Representatives",
+  "county": [
+    "New Mexico"
+  ],
+  "termStart": "2023-01-01",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "State Capitol Room 202B, New Mexico  490 Old Santa Fe Trail, Santa Fe, NM 87501",
+    "phone": "505-986-4220",
+    "email": "jimmy.mason@nmlegis.gov",
+    "website": "https://www.nmlegis.gov/Members/Legislator?SponCode=HMASO"
+  },
+  "bio": "Jimmy Mason serves as State Representative for New Mexico House of Representatives District 66. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "NM",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.nmlegis.gov/Members/Legislator?SponCode=HMASO"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/nm/legislature/Jimmy-Mason-d92a32b1-e3ef-43d7-8e63-c24e59c52b3d.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://www.nmlegis.gov/Images/Legislators/House/HMASO.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Jimmy_Mason"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Jimmy_Mason_(politician)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.nmlegis.gov/Members/Legislator_List?T=R"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

@@ -1,0 +1,53 @@
+{
+  "id": "sean-stinnett",
+  "name": "Sean Stinnett",
+  "firstName": "Sean",
+  "lastName": "Stinnett",
+  "party": "D",
+  "level": "state",
+  "position": "Delegate",
+  "district": "HD-41",
+  "jurisdiction": "Maryland House of Delegates",
+  "county": [
+    "Maryland"
+  ],
+  "termStart": "2025-03-03",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 350, Taylor House Office Building 6 Bladen St., Annapolis, MD 21401",
+    "phone": "410-841-3268",
+    "email": "sean.stinnett@house.maryland.gov",
+    "website": "https://mgaleg.maryland.gov/mgawebsite/Members/Details/stinnett01"
+  },
+  "bio": "Sean Stinnett serves as Delegate for Maryland House of Delegates District 41. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "MD",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://mgaleg.maryland.gov/mgawebsite/Members/Details/stinnett01"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/md/legislature/Sean-Stinnett-1dcca9f3-9880-4ed6-95fc-c8a8435f63fd.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Sean_Stinnett"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Sean_Stinnett"
+    },
+    {
+      "title": "Public source",
+      "url": "https://msa.maryland.gov/msa/mdmanual/06hse/html/msa18618.html"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/sastinnett"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

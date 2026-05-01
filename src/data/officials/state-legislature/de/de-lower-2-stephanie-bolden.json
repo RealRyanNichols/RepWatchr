@@ -1,0 +1,72 @@
+{
+  "id": "stephanie-bolden",
+  "name": "Stephanie Bolden",
+  "firstName": "Stephanie",
+  "lastName": "Bolden",
+  "photo": "/images/officials/state-legislature/de/stephanie-bolden.jpg",
+  "photoSourceUrl": "https://housedems.delaware.gov/wp-content/blogs.dir/210/files/sites/210/2023/02/Bolden.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-2",
+  "jurisdiction": "Delaware House of Representatives",
+  "county": [
+    "Delaware"
+  ],
+  "termStart": "2010-11-03",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "P.O. Box 1401 411 Legislative Ave., Dover, DE 19901",
+    "phone": "302-744-4351",
+    "email": "stephaniet.bolden@delaware.gov",
+    "website": "https://housedems.delaware.gov/members/house-district-2/"
+  },
+  "bio": "Stephanie Bolden serves as State Representative for Delaware House of Representatives District 2. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "DE",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://housedems.delaware.gov/members/house-district-2/"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/de/legislature/Stephanie-T-Bolden-3ad8467d-5ec5-4626-aab5-11e42b62ad60.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://housedems.delaware.gov/wp-content/blogs.dir/210/files/sites/210/2023/02/Bolden.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Stephanie_Bolden"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Stephanie_Bolden"
+    },
+    {
+      "title": "Public source",
+      "url": "https://housedems.delaware.gov/members/house-district-2"
+    },
+    {
+      "title": "Public source",
+      "url": "https://legis.delaware.gov/AssemblyMember/150/Bolden"
+    },
+    {
+      "title": "legislator list page",
+      "url": "https://legis.delaware.gov/House"
+    },
+    {
+      "title": "Public source",
+      "url": "https://legis.delaware.gov/json/House/GetRepresentatives"
+    },
+    {
+      "title": "Public source",
+      "url": "https://legis.delaware.gov/LegislatorDetail?personId=332"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

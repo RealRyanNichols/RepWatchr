@@ -1,0 +1,56 @@
+{
+  "id": "tim-reeder",
+  "name": "Tim Reeder",
+  "firstName": "Tim",
+  "lastName": "Reeder",
+  "photo": "/images/officials/state-legislature/nc/tim-reeder.jpg",
+  "photoSourceUrl": "https://www.ncleg.gov/Members/MemberImage/H/811/Low",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-9",
+  "jurisdiction": "North Carolina House of Representatives",
+  "county": [
+    "North Carolina"
+  ],
+  "termStart": "2023-01-01",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 416B, Legislative Office Building 300 N. Salisbury St., Raleigh, NC 27603",
+    "phone": "919-733-5757",
+    "email": "timothy.reeder@ncleg.gov",
+    "website": "https://www.ncleg.gov/Members/Biography/H/811"
+  },
+  "bio": "Tim Reeder serves as State Representative for North Carolina House of Representatives District 9. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "NC",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.ncleg.gov/Members/Biography/H/811"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/nc/legislature/Timothy-Reeder-MD-f836e608-2d16-4792-bec5-0993fa2db3aa.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://www.ncleg.gov/Members/MemberImage/H/811/Low"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Timothy_Reeder"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/tim-reeder-82292b89"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.ncleg.gov/Members/MemberTable/H"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

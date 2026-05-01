@@ -1,0 +1,56 @@
+{
+  "id": "bob-brinson",
+  "name": "Bob Brinson",
+  "firstName": "Bob",
+  "lastName": "Brinson",
+  "photo": "/images/officials/state-legislature/nc/bob-brinson.jpg",
+  "photoSourceUrl": "https://s3.amazonaws.com/ballotpedia-api4/files/thumbs/200/300/Bob_Brinson.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-3",
+  "jurisdiction": "North Carolina Senate",
+  "county": [
+    "North Carolina"
+  ],
+  "termStart": "2025-01-01",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 2115, North Carolina Legislative Building 16 W. Jones St., Raleigh, NC 27601",
+    "phone": "919-733-5621",
+    "email": "bob.brinson@ncleg.gov",
+    "website": "https://www.ncleg.gov/Members/Biography/S/448"
+  },
+  "bio": "Bob Brinson serves as State Senator for North Carolina Senate District 3. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "NC",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.ncleg.gov/Members/Biography/S/448"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/nc/legislature/Bob-Brinson-0104c116-78b6-4a91-af98-464fdbf12904.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://s3.amazonaws.com/ballotpedia-api4/files/thumbs/200/300/Bob_Brinson.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Bob_Brinson"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Bob_Brinson"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/robert-brinson"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

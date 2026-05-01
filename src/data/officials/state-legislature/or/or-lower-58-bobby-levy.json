@@ -1,0 +1,64 @@
+{
+  "id": "bobby-levy",
+  "name": "Bobby Levy",
+  "firstName": "Bobby",
+  "lastName": "Levy",
+  "photo": "/images/officials/state-legislature/or/bobby-levy.jpg",
+  "photoSourceUrl": "https://www.oregonlegislature.gov/levy/PublishingImages/member_photo.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-58",
+  "jurisdiction": "Oregon House of Representatives",
+  "county": [
+    "Oregon"
+  ],
+  "termStart": "2021-01-11",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room H-385, 900 Court St. NE, Salem, OR 97301",
+    "phone": "503-986-1458",
+    "email": "rep.bobbylevy@oregonlegislature.gov",
+    "website": "https://www.oregonlegislature.gov/levy"
+  },
+  "bio": "Bobby Levy serves as State Representative for Oregon House of Representatives District 58. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "OR",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.oregonlegislature.gov/levy"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/or/legislature/Bobby-Levy-4c9f2660-6dd3-49f5-a503-6fe5bc5c7787.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://www.oregonlegislature.gov/levy/PublishingImages/member_photo.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://api.oregonlegislature.gov/odata/odataservice.svc/LegislativeSessions('2022R1')/Legislators"
+    },
+    {
+      "title": "Public source",
+      "url": "https://api.oregonlegislature.gov/odata/odataservice.svc/LegislativeSessions('2023R1')/Legislators"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Bobby_Levy"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Bobby_Levy"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/bobby-levy-89737947"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

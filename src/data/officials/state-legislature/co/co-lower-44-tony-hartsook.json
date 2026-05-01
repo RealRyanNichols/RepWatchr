@@ -1,0 +1,53 @@
+{
+  "id": "tony-hartsook",
+  "name": "Tony Hartsook",
+  "firstName": "Tony",
+  "lastName": "Hartsook",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-44",
+  "jurisdiction": "Colorado House of Representatives",
+  "county": [
+    "Colorado"
+  ],
+  "termStart": "2023-01-09",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "State Capitol Room 307, Colorado  Building 200 E. Colfax Ave., Denver, CO 80203",
+    "phone": "303-866-2933",
+    "email": "anthony.hartsook.house@coleg.gov",
+    "website": "https://leg.colorado.gov/legislators/anthony-hartsook"
+  },
+  "bio": "Tony Hartsook serves as State Representative for Colorado House of Representatives District 44. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "CO",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://leg.colorado.gov/legislators/anthony-hartsook"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/co/legislature/Anthony-Hartsook-561892b1-c618-43cb-9767-9237514f0a92.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Anthony_Hartsook"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Anthony_Hartsook"
+    },
+    {
+      "title": "Public source",
+      "url": "https://leg.colorado.gov/legislators"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/anthony-hartsook-a5a1ba3b"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

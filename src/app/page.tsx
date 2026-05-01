@@ -167,7 +167,7 @@ export default function HomePage() {
   const dataStats = getRepWatchrDataStats();
 
   const stats = [
-    { label: "Federal/State Seat Profiles", value: formatNumber(dataStats.federalAndStateSeatProfilesLoaded), caption: `${dataStats.federalAndStateProfileGaps} expected gaps` },
+    { label: "Federal/State Seat Profiles", value: formatNumber(dataStats.federalAndStateSeatProfilesLoaded), caption: `${dataStats.stateLegislatureJurisdictionsLoaded} jurisdictions loaded` },
     { label: "Official Photos", value: formatNumber(dataStats.officialsWithPhotos), caption: "local headshots loaded" },
     { label: "School Board Trustees", value: formatNumber(schoolBoardStats.candidates), caption: "TEA source seed" },
     { label: "Scored Profiles", value: formatNumber(dataStats.officialsWithScoreCards), caption: `${dataStats.bills} vote files loaded` },

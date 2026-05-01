@@ -1,0 +1,72 @@
+{
+  "id": "david-haggan",
+  "name": "David Haggan",
+  "firstName": "David",
+  "lastName": "Haggan",
+  "photo": "/images/officials/state-legislature/me/david-haggan.jpg",
+  "photoSourceUrl": "https://legislature.maine.gov/house/house/Repository/MemberProfiles/ef1b37a7-5997-414d-9ae4-6f38e8f619d8_haggdg.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-10",
+  "jurisdiction": "Maine Senate",
+  "county": [
+    "Maine"
+  ],
+  "termStart": "2024-12-03",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "3 State House Station, Augusta, ME 04333",
+    "phone": "207-287-1505",
+    "email": "david.haggan@legislature.maine.gov",
+    "website": "https://legislature.maine.gov/District10"
+  },
+  "bio": "David Haggan serves as State Senator for Maine Senate District 10. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "ME",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://legislature.maine.gov/District10"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/me/legislature/David-G-Haggan-b3f3ab98-9169-42f8-b7d7-c04b3bdfb545.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://legislature.maine.gov/house/house/Repository/MemberProfiles/ef1b37a7-5997-414d-9ae4-6f38e8f619d8_haggdg.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/David_Haggan"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/David_Haggan"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/170353/david-haggan"
+    },
+    {
+      "title": "Public source",
+      "url": "https://legislature.maine.gov/house/house/MemberProfiles/Details/77"
+    },
+    {
+      "title": "Public source",
+      "url": "https://legislature.maine.gov/house/house/MemberProfiles/ListAlpha"
+    },
+    {
+      "title": "Public source",
+      "url": "https://mainehousegop.org/members/haggan-david"
+    },
+    {
+      "title": "Public source",
+      "url": "https://mesenategop.com/your-senators/senator-david-haggan"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

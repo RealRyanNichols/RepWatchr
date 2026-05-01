@@ -1,0 +1,64 @@
+{
+  "id": "aaron-crossley",
+  "name": "Aaron Crossley",
+  "firstName": "Aaron",
+  "lastName": "Crossley",
+  "photo": "/images/officials/state-legislature/mo/aaron-crossley.jpg",
+  "photoSourceUrl": "https://house.mo.gov/MemberPhoto.aspx?id=2366",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-29",
+  "jurisdiction": "Missouri House of Representatives",
+  "county": [
+    "Missouri"
+  ],
+  "termStart": "2023-01-04",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 109-I, 201 W. Capitol Ave., Jefferson City, MO 65101",
+    "phone": "573-751-3623",
+    "email": "aaron.crossley@house.mo.gov",
+    "website": "https://house.mo.gov/MemberDetails.aspx?district=29"
+  },
+  "bio": "Aaron Crossley serves as State Representative for Missouri House of Representatives District 29. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "MO",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://house.mo.gov/MemberDetails.aspx?district=29"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/mo/legislature/Aaron-Crossley-ba6eb394-0402-49ba-9917-c5618d8a1589.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://house.mo.gov/MemberPhoto.aspx?id=2366"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Aaron_Crossley"
+    },
+    {
+      "title": "Public source",
+      "url": "https://house.mo.gov/MemberDetails.aspx?year=2023&code=R&district=029"
+    },
+    {
+      "title": "Public source",
+      "url": "https://house.mo.gov/MemberDetails.aspx?year=2023&code=R&district=29"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/205695/aaron-crossley"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/aaron-crossley"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

@@ -1,0 +1,69 @@
+{
+  "id": "brandon-voas",
+  "name": "Brandon Voas",
+  "firstName": "Brandon",
+  "lastName": "Voas",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-57",
+  "jurisdiction": "Rhode Island House of Representatives",
+  "county": [
+    "Rhode Island"
+  ],
+  "termStart": "2023-01-03",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "82 Smith St., Providence, RI 02903",
+    "phone": "401-222-3580",
+    "email": "rep-voas@rilegislature.gov",
+    "website": "https://www.rilegislature.gov/representatives/voas/pages/biography.aspx"
+  },
+  "bio": "Brandon Voas serves as State Representative for Rhode Island House of Representatives District 57. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "RI",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.rilegislature.gov/representatives/voas/pages/biography.aspx"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ri/legislature/Brandon-T-Voas-f0206346-2c07-4316-a556-cee7fe595e9a.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Brandon_Voas"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Brandon_Voas"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/210042/brandon-voas"
+    },
+    {
+      "title": "Public source",
+      "url": "https://webserver.rilin.state.ri.us/Email/RepEmailListDistrict.asp"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/brandon-voas-88483811a"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.rilegislature.gov/representatives/voas/Pages/Biography.aspx"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.rilegislature.gov/representatives/voasb/pages/biography.aspx"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.rilegislature.gov/SiteAssets/MailingLists/Representatives.xls"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

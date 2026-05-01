@@ -1,0 +1,62 @@
+{
+  "id": "duke-tucker",
+  "name": "Duke Tucker",
+  "firstName": "Duke",
+  "lastName": "Tucker",
+  "photo": "/images/officials/state-legislature/wi/duke-tucker.jpg",
+  "photoSourceUrl": "https://dukeforwisconsin.com/wp-content/uploads/2024/03/IMG_0256-scaled.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "Assemblymember",
+  "district": "HD-75",
+  "jurisdiction": "Wisconsin State Assembly",
+  "county": [
+    "Wisconsin"
+  ],
+  "termStart": "2025-01-06",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "email": "rep.tucker@legis.wisconsin.gov",
+    "website": "https://docs.legis.wisconsin.gov/2025/legislators/assembly/2897"
+  },
+  "bio": "Duke Tucker serves as Assemblymember for Wisconsin State Assembly District 75. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "WI",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://docs.legis.wisconsin.gov/2025/legislators/assembly/2897"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/wi/legislature/Duke-Tucker-2a047fc5-2adb-4c4b-9c67-0eda3aa07233.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://dukeforwisconsin.com/wp-content/uploads/2024/03/IMG_0256-scaled.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Duke_Tucker"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Duke_Tucker"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/218664/duke-tucker"
+    },
+    {
+      "title": "Public source",
+      "url": "https://legis.wisconsin.gov/assembly/75/tucker"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/duke-tucker-33855a27"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

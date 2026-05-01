@@ -1,0 +1,61 @@
+{
+  "id": "lorena-garc-a",
+  "name": "Lorena Garc\u00eda",
+  "firstName": "Lorena",
+  "lastName": "Garc\u00eda",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-35",
+  "jurisdiction": "Colorado House of Representatives",
+  "county": [
+    "Colorado"
+  ],
+  "termStart": "2023-01-09",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "State Capitol Room 307, Colorado  Building 200 E. Colfax Ave., Denver, CO 80203",
+    "phone": "303-866-2964",
+    "email": "lorena.garcia.house@coleg.gov",
+    "website": "https://leg.colorado.gov/legislators/lorena-garc%C3%ADa"
+  },
+  "bio": "Lorena Garc\u00eda serves as State Representative for Colorado House of Representatives District 35. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "CO",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://leg.colorado.gov/legislators/lorena-garc%C3%ADa"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/co/legislature/Lorena-Garcia-d7569723-ddde-4706-a857-422804198fa8.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Lorena_Garcia"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Lorena_Garcia_(politician)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/211290/lorena-garcia"
+    },
+    {
+      "title": "Public source",
+      "url": "https://leg.colorado.gov/legislators"
+    },
+    {
+      "title": "Public source",
+      "url": "https://leg.colorado.gov/legislators/lorena-garcia"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/lorena-e-garcia"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

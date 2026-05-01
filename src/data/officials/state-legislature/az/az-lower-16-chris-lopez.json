@@ -1,0 +1,48 @@
+{
+  "id": "chris-lopez",
+  "name": "Chris Lopez",
+  "firstName": "Chris",
+  "lastName": "Lopez",
+  "photo": "/images/officials/state-legislature/az/chris-lopez.jpg",
+  "photoSourceUrl": "https://images.squarespace-cdn.com/content/v1/651b0dc83f033107360db6a8/3cdfad91-9aeb-434f-ae53-bb6febf9025d/LOPEZ+STATE+FAIR.2+VERTICAL.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-16",
+  "jurisdiction": "Arizona House of Representatives",
+  "county": [
+    "Arizona"
+  ],
+  "termStart": "2025-01-13",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 310, 1700 W. Washington St., Phoenix, AZ 85007",
+    "phone": "602-926-3445",
+    "email": "clopez@azleg.gov",
+    "website": "https://www.azleg.gov/house-member/?legislature=57&session=129&legislator=2364"
+  },
+  "bio": "Chris Lopez serves as State Representative for Arizona House of Representatives District 16. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "AZ",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.azleg.gov/house-member/?legislature=57&session=129&legislator=2364"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/az/legislature/Chris-Lopez-9128a4e7-1464-483c-8642-0d878da05619.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://images.squarespace-cdn.com/content/v1/651b0dc83f033107360db6a8/3cdfad91-9aeb-434f-ae53-bb6febf9025d/LOPEZ+STATE+FAIR.2+VERTICAL.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Chris_Lopez_(Arizona)"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

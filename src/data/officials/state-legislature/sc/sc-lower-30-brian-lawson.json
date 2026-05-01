@@ -1,0 +1,57 @@
+{
+  "id": "brian-lawson",
+  "name": "Brian Lawson",
+  "firstName": "Brian",
+  "lastName": "Lawson",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-30",
+  "jurisdiction": "South Carolina House of Representatives",
+  "county": [
+    "South Carolina"
+  ],
+  "termStart": "2022-11-14",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 402D, Blatt Building P.O. Box 11867, Columbia, SC 29201",
+    "phone": "803-212-6885",
+    "email": "brianlawson@schouse.gov",
+    "website": "https://scstatehouse.gov/member.php?code=1067613508"
+  },
+  "bio": "Brian Lawson serves as State Representative for South Carolina House of Representatives District 30. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "SC",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://scstatehouse.gov/member.php?code=1067613508"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/sc/legislature/M-Brian-Lawson-d2019dc3-160d-4229-b681-280c52561435.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Brian_Lawson"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Brian_Lawson"
+    },
+    {
+      "title": "Public source",
+      "url": "https://scstatehouse.gov/member.php?chamber=H"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/brian-lawson-0797a2b1"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.scstatehouse.gov/member.php?code=1067613508"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

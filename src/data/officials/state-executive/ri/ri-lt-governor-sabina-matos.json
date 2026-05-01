@@ -1,0 +1,51 @@
+{
+  "id": "sabina-matos",
+  "name": "Sabina Matos",
+  "firstName": "Sabina",
+  "lastName": "Matos",
+  "photo": "/images/officials/state-executive/ri/sabina-matos.jpg",
+  "photoSourceUrl": "https://ltgov.ri.gov/sites/g/files/xkgbur491/files/styles/max_2600x2600/public/2021-05/Sabina-StatePhoto.png",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "Lieutenant Governor",
+  "district": "Rhode Island",
+  "jurisdiction": "Rhode Island statewide public office",
+  "county": [
+    "Rhode Island"
+  ],
+  "termStart": "2021-04-14",
+  "termEnd": "2027-01-05",
+  "contactInfo": {
+    "office": "82 Smith Street, Room 116; Providence, RI 02903",
+    "phone": "401-222-2371",
+    "website": "https://ltgov.ri.gov/"
+  },
+  "bio": "Sabina Matos is listed as Lieutenant Governor for Rhode Island. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "RI",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://ltgov.ri.gov/"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ri/executive/Sabina-Matos-811001df-7f40-4641-9461-fb2dc02bacce.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://ltgov.ri.gov/sites/g/files/xkgbur491/files/styles/max_2600x2600/public/2021-05/Sabina-StatePhoto.png"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ltgov.ri.gov/about"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Sabina_Matos"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

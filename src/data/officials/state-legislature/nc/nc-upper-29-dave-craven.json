@@ -1,0 +1,52 @@
+{
+  "id": "dave-craven",
+  "name": "Dave Craven",
+  "firstName": "Dave",
+  "lastName": "Craven",
+  "photo": "/images/officials/state-legislature/nc/dave-craven.jpg",
+  "photoSourceUrl": "https://www.ncleg.gov/Members/MemberImage/S/423/Low",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-29",
+  "jurisdiction": "North Carolina Senate",
+  "county": [
+    "North Carolina"
+  ],
+  "termStart": "2023-01-01",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 2108, North Carolina Legislative Building 16 W. Jones St., Raleigh, NC 27601",
+    "phone": "919-733-5870",
+    "email": "david.craven@ncleg.gov",
+    "website": "https://www.ncleg.gov/Members/Biography/S/423"
+  },
+  "bio": "Dave Craven serves as State Senator for North Carolina Senate District 29. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "NC",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.ncleg.gov/Members/Biography/S/423"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/nc/legislature/David-W-Craven-Jr-7074c9f6-6a8e-4c63-b0b3-ae43b9cfba0d.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://www.ncleg.gov/Members/MemberImage/S/423/Low"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/dave-craven-b6b088a4"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.ncleg.gov/Members/MemberTable/S"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

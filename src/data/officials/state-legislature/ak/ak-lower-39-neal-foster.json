@@ -1,0 +1,72 @@
+{
+  "id": "neal-foster",
+  "name": "Neal Foster",
+  "firstName": "Neal",
+  "lastName": "Foster",
+  "photo": "/images/officials/state-legislature/ak/neal-foster.jpg",
+  "photoSourceUrl": "http://akleg.gov/images/legislators/450x600/FON.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-39",
+  "jurisdiction": "Alaska House of Representatives",
+  "county": [
+    "Alaska"
+  ],
+  "termStart": "2023-01-17",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "State Capitol Room 511, 120 4th St., Juneau, AK 99801",
+    "phone": "907-465-3789",
+    "email": "representative.neal.foster@akleg.gov",
+    "website": "https://akhousemajority.com/rep-foster/"
+  },
+  "bio": "Neal Foster serves as State Representative for Alaska House of Representatives District 39. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "AK",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://akhousemajority.com/rep-foster/"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ak/legislature/Neal-Foster-14f39e67-1604-4eb4-8000-99c699f196a0.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "http://akleg.gov/images/legislators/450x600/FON.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://akhousemajority.com/rep-foster"
+    },
+    {
+      "title": "Public source",
+      "url": "https://akleg.gov/legislator.php?id=fon"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Neal_Foster"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Neal_Foster"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/116449/neal-foster"
+    },
+    {
+      "title": "Public source",
+      "url": "https://w3.akleg.gov"
+    },
+    {
+      "title": "Public source",
+      "url": "https://w3.akleg.gov/"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

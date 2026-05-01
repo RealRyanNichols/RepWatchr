@@ -1,0 +1,60 @@
+{
+  "id": "margaret-arney",
+  "name": "Margaret Arney",
+  "firstName": "Margaret",
+  "lastName": "Arney",
+  "photo": "/images/officials/state-legislature/wi/margaret-arney.jpg",
+  "photoSourceUrl": "https://s3.amazonaws.com/ballotpedia-api4/files/thumbs/200/300/Brennan_Balestrieri_20240808_094539.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "Assemblymember",
+  "district": "HD-18",
+  "jurisdiction": "Wisconsin State Assembly",
+  "county": [
+    "Wisconsin"
+  ],
+  "termStart": "2025-01-06",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "State Capitol Room 303 West, P.O. Box 8952 , 2 E. Main St., Madison, WI 53708",
+    "phone": "608-237-9118",
+    "email": "rep.arney@legis.wisconsin.gov",
+    "website": "https://docs.legis.wisconsin.gov/2025/legislators/assembly/2882"
+  },
+  "bio": "Margaret Arney serves as Assemblymember for Wisconsin State Assembly District 18. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "WI",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://docs.legis.wisconsin.gov/2025/legislators/assembly/2882"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/wi/legislature/Margaret-Arney-74ee2a17-e955-441b-9dca-32feb5fba9b0.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://s3.amazonaws.com/ballotpedia-api4/files/thumbs/200/300/Brennan_Balestrieri_20240808_094539.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Margaret_Arney"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Margaret_Arney"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/218595/margaret-arney"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/margaretmichele-arney"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

@@ -1,0 +1,72 @@
+{
+  "id": "andrea-hunley",
+  "name": "Andrea Hunley",
+  "firstName": "Andrea",
+  "lastName": "Hunley",
+  "photo": "/images/officials/state-legislature/in/andrea-hunley.jpg",
+  "photoSourceUrl": "https://indianasenatedemocrats.org/wp-content/uploads/2022/12/Senator-Hunley_Hoosier-Profile-Pic-600x900-2.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-46",
+  "jurisdiction": "Indiana Senate",
+  "county": [
+    "Indiana"
+  ],
+  "termStart": "2022-11-09",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "200 W. Washington St., Indianapolis, IN 46204",
+    "phone": "317-232-9491",
+    "email": "s46@iga.in.gov",
+    "website": "https://indianasenatedemocrats.org/senators/s46/"
+  },
+  "bio": "Andrea Hunley serves as State Senator for Indiana Senate District 46. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "IN",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://indianasenatedemocrats.org/senators/s46/"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/in/legislature/Andrea-Hunley-f22b3c5a-950d-4e0c-83c8-bf9a7c005c73.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://indianasenatedemocrats.org/wp-content/uploads/2022/12/Senator-Hunley_Hoosier-Profile-Pic-600x900-2.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Andrea_Hunley"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Andrea_Hunley"
+    },
+    {
+      "title": "Public source",
+      "url": "https://indianasenatedemocrats.org/senators/s46"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/evaluations/202027/andrea-hunley"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.indianasenatedemocrats.org/s46"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.indianasenatedemocrats.org/senators"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.indianasenatedemocrats.org/senators/"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

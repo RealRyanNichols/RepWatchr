@@ -1,0 +1,72 @@
+{
+  "id": "amy-elik",
+  "name": "Amy Elik",
+  "firstName": "Amy",
+  "lastName": "Elik",
+  "photo": "/images/officials/state-legislature/il/amy-elik.jpg",
+  "photoSourceUrl": "https://cdn.ilga.gov/assets/img/members/{D070CEE6-55DF-4D51-961B-CCA4A0E49A8C}.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-111",
+  "jurisdiction": "Illinois House of Representatives",
+  "county": [
+    "Illinois"
+  ],
+  "termStart": "2021-01-13",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 204-N, Stratton Office Building, Springfield, IL 62706",
+    "phone": "217-782-5996",
+    "email": "elik@ilhousegop.org",
+    "website": "https://ilga.gov/house/Rep.asp?GA=102&MemberID=3002"
+  },
+  "bio": "Amy Elik serves as State Representative for Illinois House of Representatives District 111. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "IL",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://ilga.gov/house/Rep.asp?GA=102&MemberID=3002"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/il/legislature/Amy-Elik-b13c7ff5-806e-426d-afd5-181f53e9fed1.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://cdn.ilga.gov/assets/img/members/{D070CEE6-55DF-4D51-961B-CCA4A0E49A8C}.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Amy_Elik"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Amy_Elik"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ilga.gov/house/default.asp?GA=102"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ilga.gov/house/default.asp?GA=103"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ilga.gov/house/Rep.asp?GA=103&MemberID=3190"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/188117/amy-elik"
+    },
+    {
+      "title": "Public source",
+      "url": "https://repelik.com"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

@@ -1,0 +1,53 @@
+{
+  "id": "carmen-amato",
+  "name": "Carmen Amato",
+  "firstName": "Carmen",
+  "lastName": "Amato",
+  "party": "R",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-9",
+  "jurisdiction": "New Jersey Senate",
+  "county": [
+    "New Jersey"
+  ],
+  "termStart": "2024-01-09",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "P.O. Box 068 State House, 145 W. State St., Trenton, NJ 08625",
+    "phone": "609-847-3905",
+    "email": "senamato@njleg.org",
+    "website": "https://www.njleg.state.nj.us/legislative-roster/465/senator-amato"
+  },
+  "bio": "Carmen Amato serves as State Senator for New Jersey Senate District 9. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "NJ",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.njleg.state.nj.us/legislative-roster/465/senator-amato"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/nj/legislature/Carmen-Amato-0f0e1edc-6ab5-4fca-8999-2db3229c5d19.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Carmen_Amato_Jr."
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/81264/carmen-amato-jr"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/carmen-amato-b1422a177"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.senatenj.com/206/Carmen-Amato---District-9"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

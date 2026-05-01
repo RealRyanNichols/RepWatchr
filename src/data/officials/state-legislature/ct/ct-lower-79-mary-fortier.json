@@ -1,0 +1,57 @@
+{
+  "id": "mary-fortier",
+  "name": "Mary Fortier",
+  "firstName": "Mary",
+  "lastName": "Fortier",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-79",
+  "jurisdiction": "Connecticut House of Representatives",
+  "county": [
+    "Connecticut"
+  ],
+  "termStart": "2023-01-04",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 4042, Legislative Office Building 300 Capitol Ave., Hartford, CT 06106",
+    "phone": "860-240-8585",
+    "email": "mary.fortier@cga.ct.gov",
+    "website": "https://www.housedems.ct.gov/Fortier"
+  },
+  "bio": "Mary Fortier serves as State Representative for Connecticut House of Representatives District 79. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "CT",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.housedems.ct.gov/Fortier"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ct/legislature/Mary-Fortier-dba46a90-f765-4508-a9e1-9bfdeb4a03dd.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "ftp://ftp.cga.ct.gov/pub/data/LegislatorDatabase.csv"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Mary_Fortier"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Mary_Fortier"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/148381/mary-fortier"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/mary-fortier-384070a9"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

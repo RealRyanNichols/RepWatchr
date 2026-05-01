@@ -1,0 +1,72 @@
+{
+  "id": "john-burke",
+  "name": "John Burke",
+  "firstName": "John",
+  "lastName": "Burke",
+  "photo": "/images/officials/state-legislature/ri/john-burke.jpg",
+  "photoSourceUrl": "https://www.rilegislature.gov/senators/pictures/burke.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-9",
+  "jurisdiction": "Rhode Island Senate",
+  "county": [
+    "Rhode Island"
+  ],
+  "termStart": "2021-01-05",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "82 Smith St., Providence, RI 02903",
+    "phone": "401-222-3580",
+    "email": "sen-burke@rilegislature.gov",
+    "website": "https://www.rilegislature.gov/senators/algiere/default.aspx"
+  },
+  "bio": "John Burke serves as State Senator for Rhode Island Senate District 9. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "RI",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.rilegislature.gov/senators/algiere/default.aspx"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ri/legislature/John-P-Burke-a5f646b2-0370-494c-aebc-25869f019a1b.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://www.rilegislature.gov/senators/pictures/burke.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/John_Burke_(Rhode_Island)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/John_Burke_(Rhode_Island_politician)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/195110/john-burke"
+    },
+    {
+      "title": "Public source",
+      "url": "https://webserver.rilegislature.gov/Email/SenEmailListDistrict.asp"
+    },
+    {
+      "title": "Public source",
+      "url": "https://webserver.rilin.state.ri.us/Email/SenEmailListDistrict.asp"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/john-burke-38839664"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.rilegislature.gov/senators/burke/default.aspx"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

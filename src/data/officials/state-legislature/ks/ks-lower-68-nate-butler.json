@@ -1,0 +1,65 @@
+{
+  "id": "nate-butler",
+  "name": "Nate Butler",
+  "firstName": "Nate",
+  "lastName": "Butler",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-68",
+  "jurisdiction": "Kansas House of Representatives",
+  "county": [
+    "Kansas"
+  ],
+  "termStart": "2023-01-09",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "State Capitol Room 519-N, Kansas  Building 300 SW 10th St., Topeka, KS 66612",
+    "phone": "785-296-6997",
+    "email": "nate.butler@house.ks.gov",
+    "website": "https://www.kslegislature.gov/li/b2025_26/members/rep_butler_nathan_1/"
+  },
+  "bio": "Nate Butler serves as State Representative for Kansas House of Representatives District 68. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "KS",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.kslegislature.gov/li/b2025_26/members/rep_butler_nathan_1/"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ks/legislature/Nathan-Butler-529d7e5b-3acd-467b-b6b2-bf4314fcf633.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Nathan_Butler"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/208107/nathan-butler"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.kslegislature.gov/li/b2025_26/members/rep_butler_nathan_1"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.kslegislature.org/li/api/v11/rev-1/members/rep_butler_nathan_1"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.kslegislature.org/li/api/v11/rev-1/members/rep_butler_nathan_1/"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.kslegislature.org/li/b2023_24/members/rep_butler_nathan_1"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.kslegislature.org/li/b2023_24/members/rep_butler_nathan_1/"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

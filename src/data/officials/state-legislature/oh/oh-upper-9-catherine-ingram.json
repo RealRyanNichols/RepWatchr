@@ -1,0 +1,76 @@
+{
+  "id": "catherine-ingram",
+  "name": "Catherine Ingram",
+  "firstName": "Catherine",
+  "lastName": "Ingram",
+  "photo": "/images/officials/state-legislature/oh/catherine-ingram.jpg",
+  "photoSourceUrl": "https://www.legislature.ohio.gov/assets/people/catherine-d-ingram/headshots/thumbnails/medium/catherine-d-ingram-may-2023-headshot_medium.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-9",
+  "jurisdiction": "Ohio Senate",
+  "county": [
+    "Ohio"
+  ],
+  "termStart": "2023-01-01",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 56, Statehouse, 1 Capitol Square Ground Floor, Columbus, OH 43215",
+    "phone": "614-466-5980",
+    "email": "sd09@ohiosenate.gov",
+    "website": "https://ohiohouse.gov/catherine-d-ingram",
+    "socialMedia": {
+      "x": "https://x.com/cingram32",
+      "twitter": "https://x.com/cingram32"
+    }
+  },
+  "bio": "Catherine Ingram serves as State Senator for Ohio Senate District 9. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "OH",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://ohiohouse.gov/catherine-d-ingram"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/oh/legislature/Catherine-D-Ingram-94ba65dd-57c5-4ab0-b607-5e310d50cae0.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://www.legislature.ohio.gov/assets/people/catherine-d-ingram/headshots/thumbnails/medium/catherine-d-ingram-may-2023-headshot_medium.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Catherine_Ingram"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Catherine_Ingram"
+    },
+    {
+      "title": "member details page",
+      "url": "https://ohiosenate.gov/members/catherine-d-ingram"
+    },
+    {
+      "title": "member list page",
+      "url": "https://www.legislature.ohio.gov/legislators/senate-directory"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/catherine-ingram-mba-558b9253"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.ohiohouse.gov/members/member-directory"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.ohiosenate.gov/members/catherine-d-ingram"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

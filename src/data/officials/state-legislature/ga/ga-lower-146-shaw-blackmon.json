@@ -1,0 +1,69 @@
+{
+  "id": "shaw-blackmon",
+  "name": "Shaw Blackmon",
+  "firstName": "Shaw",
+  "lastName": "Blackmon",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-146",
+  "jurisdiction": "Georgia House of Representatives",
+  "county": [
+    "Georgia"
+  ],
+  "termStart": "2015-08-20",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "State Capitol Room 133, 206 Washington St. SW, Atlanta, GA 30334",
+    "phone": "404-656-5103",
+    "email": "shaw.blackmon@house.ga.gov",
+    "website": "https://www.house.ga.gov/Representatives/en-US/member.aspx?Member=1878&Session=27"
+  },
+  "bio": "Shaw Blackmon serves as State Representative for Georgia House of Representatives District 146. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "GA",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.house.ga.gov/Representatives/en-US/member.aspx?Member=1878&Session=27"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ga/legislature/Shaw-Blackmon-ee145624-3295-4db4-b3ce-9d1583e4ef6e.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Shaw_Blackmon"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Shaw_Blackmon"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/157218/shaw-blackmon"
+    },
+    {
+      "title": "Public source",
+      "url": "https://webservices.legis.ga.gov/GGAServices/Members/Service.svc?wsdl"
+    },
+    {
+      "title": "Detail page (requires authorization token)",
+      "url": "https://www.legis.ga.gov/api/members/detail/1878?session=1029&chamber=1"
+    },
+    {
+      "title": "API member detail (requires authorization token)",
+      "url": "https://www.legis.ga.gov/api/members/detail/1878?session=1031&chamber=1"
+    },
+    {
+      "title": "API members list (requires authorization token)",
+      "url": "https://www.legis.ga.gov/api/members/list/1031"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.legis.ga.gov/members/house/1878"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

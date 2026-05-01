@@ -1,0 +1,61 @@
+{
+  "id": "mike-reichenbach",
+  "name": "Mike Reichenbach",
+  "firstName": "Mike",
+  "lastName": "Reichenbach",
+  "party": "R",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-31",
+  "jurisdiction": "South Carolina Senate",
+  "county": [
+    "South Carolina"
+  ],
+  "termStart": "2022-04-06",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 604, Gressette Building P.O. Box 142, Columbia, SC 29201",
+    "phone": "803-212-6016",
+    "email": "mikereichenbach@scsenate.gov",
+    "website": "https://scstatehouse.gov/member.php?code=1528408908"
+  },
+  "bio": "Mike Reichenbach serves as State Senator for South Carolina Senate District 31. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "SC",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://scstatehouse.gov/member.php?code=1528408908"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/sc/legislature/Mike-Reichenbach-c2a237ba-67b6-4280-9cf2-430f1d10d28e.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Mike_Reichenbach"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/201397/mike-reichenbach"
+    },
+    {
+      "title": "Public source",
+      "url": "https://scstatehouse.gov/member.php?chamber=S"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/mike-reichenbach-a034bb7"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.scstatehouse.gov/member.php?chamber=S"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.scstatehouse.gov/member.php?code=1528408908"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

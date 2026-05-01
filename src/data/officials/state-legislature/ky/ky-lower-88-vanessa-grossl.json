@@ -1,0 +1,50 @@
+{
+  "id": "vanessa-grossl",
+  "name": "Vanessa Grossl",
+  "firstName": "Vanessa",
+  "lastName": "Grossl",
+  "photo": "/images/officials/state-legislature/ky/vanessa-grossl.jpg",
+  "photoSourceUrl": "https://s3.amazonaws.com/ballotpedia-api4/files/thumbs/200/300/VanessaGrossl.jpeg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-88",
+  "jurisdiction": "Kentucky House of Representatives",
+  "county": [
+    "Kentucky"
+  ],
+  "termStart": "2025-01-01",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "email": "vanessa.grossl@kylegislature.gov",
+    "website": "https://legislature.ky.gov/Legislators/Pages/Legislator-Profile.aspx?DistrictNumber=88"
+  },
+  "bio": "Vanessa Grossl serves as State Representative for Kentucky House of Representatives District 88. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "KY",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://legislature.ky.gov/Legislators/Pages/Legislator-Profile.aspx?DistrictNumber=88"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ky/legislature/Vanessa-Grossl-bc34f3ad-05ad-494c-bb80-bd2eb99e4fe9.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://s3.amazonaws.com/ballotpedia-api4/files/thumbs/200/300/VanessaGrossl.jpeg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Vanessa_Grossl"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/vgrossl"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

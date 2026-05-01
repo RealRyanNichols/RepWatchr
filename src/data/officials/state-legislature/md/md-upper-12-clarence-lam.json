@@ -1,0 +1,64 @@
+{
+  "id": "clarence-lam",
+  "name": "Clarence Lam",
+  "firstName": "Clarence",
+  "lastName": "Lam",
+  "photo": "/images/officials/state-legislature/md/clarence-lam.jpg",
+  "photoSourceUrl": "http://mgaleg.maryland.gov/2016RS/images/lam01.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-12",
+  "jurisdiction": "Maryland Senate",
+  "county": [
+    "Maryland"
+  ],
+  "termStart": "2019-01-09",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 420, Miller Senate Office Building 11 Bladen St., Annapolis, MD 21401",
+    "phone": "410-841-3653",
+    "email": "clarence.lam@senate.maryland.gov",
+    "website": "https://mgaleg.maryland.gov/mgawebsite/Members/Details/lam02"
+  },
+  "bio": "Clarence Lam serves as State Senator for Maryland Senate District 12. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "MD",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://mgaleg.maryland.gov/mgawebsite/Members/Details/lam02"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/md/legislature/Clarence-K-Lam-b002bdd1-0622-4462-8623-e8bb52fde504.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "http://mgaleg.maryland.gov/2016RS/images/lam01.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Clarence_K._Lam"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Clarence_Lam"
+    },
+    {
+      "title": "Public source",
+      "url": "https://mgaleg.maryland.gov/webmga/frmMain.aspx?pid=sponpage&tab=subject6&id=lam02&stab=01"
+    },
+    {
+      "title": "Public source",
+      "url": "https://msa.maryland.gov/msa/mdmanual/05sen/html/msa17058.html"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/clarence-lam-721ab531"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

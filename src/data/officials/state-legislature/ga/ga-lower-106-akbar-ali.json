@@ -1,0 +1,47 @@
+{
+  "id": "akbar-ali",
+  "name": "Akbar Ali",
+  "firstName": "Akbar",
+  "lastName": "Ali",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-106",
+  "jurisdiction": "Georgia House of Representatives",
+  "county": [
+    "Georgia"
+  ],
+  "termStart": "2025-12-18",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "email": "akbar.ali@house.ga.gov",
+    "website": "https://www.legis.ga.gov/members/house/5089"
+  },
+  "bio": "Akbar Ali serves as State Representative for Georgia House of Representatives District 106. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "GA",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.legis.ga.gov/members/house/5089"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ga/legislature/Akbar-Ali-938f2479-c51f-446a-87f0-76d4f07c61e5.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Muhammad_Akbar_Ali"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Akbar_Ali_(politician)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/akbar-ali-427454240"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

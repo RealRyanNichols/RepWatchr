@@ -1,0 +1,72 @@
+{
+  "id": "mia-costello",
+  "name": "Mia Costello",
+  "firstName": "Mia",
+  "lastName": "Costello",
+  "photo": "/images/officials/state-legislature/ak/mia-costello.jpg",
+  "photoSourceUrl": "http://akleg.gov/images/legislators/cos.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-15",
+  "jurisdiction": "Alaska House of Representatives",
+  "county": [
+    "Alaska"
+  ],
+  "termStart": "2025-01-21",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "State Capitol Room 421, 120 4th St., Juneau, AK 99801",
+    "phone": "907-465-4993",
+    "email": "representative.mia.costello@akleg.gov",
+    "website": "https://akleg.gov/legislator.php?id=cos"
+  },
+  "bio": "Mia Costello serves as State Representative for Alaska House of Representatives District 15. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "AK",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://akleg.gov/legislator.php?id=cos"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ak/legislature/Mia-Costello-aea19844-4572-4086-9462-e50ad3ff4b76.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "http://akleg.gov/images/legislators/cos.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Mia_Costello"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Mia_Costello"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/117406/mia-costello"
+    },
+    {
+      "title": "Public source",
+      "url": "https://w3.akleg.gov"
+    },
+    {
+      "title": "Public source",
+      "url": "https://w3.akleg.gov/"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.akleg.gov/basis/Member/Detail/30?code=cos"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.akleg.gov/basis/Member/Detail/32?code=cos"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

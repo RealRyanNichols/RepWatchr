@@ -1,0 +1,61 @@
+{
+  "id": "darius-kila",
+  "name": "Darius Kila",
+  "firstName": "Darius",
+  "lastName": "Kila",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-44",
+  "jurisdiction": "Hawaii House of Representatives",
+  "county": [
+    "Hawaii"
+  ],
+  "termStart": "2022-11-08",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "State Capitol Room 403, 415 S. Beretania St., Honolulu, HI 96813",
+    "phone": "808-586-9480",
+    "email": "repkila@capitol.hawaii.gov",
+    "website": "https://www.capitol.hawaii.gov/legislature/memberpage.aspx?member=266"
+  },
+  "bio": "Darius Kila serves as State Representative for Hawaii House of Representatives District 44. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "HI",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.capitol.hawaii.gov/legislature/memberpage.aspx?member=266"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/hi/legislature/Darius-K-Kila-76c9a0ff-a9f0-47ac-bf3d-9f8ee134c411.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Darius_Kila"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Darius_Kila"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.capitol.hawaii.gov/legislature/memberpage.aspx?member=266&year=2023"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.capitol.hawaii.gov/legislature/memberpage.aspx?member=266&year=2024"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.capitol.hawaii.gov/members/legislators.aspx"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/darius-kila-629848b8"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

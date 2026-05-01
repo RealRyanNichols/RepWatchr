@@ -1,0 +1,76 @@
+{
+  "id": "david-weprin",
+  "name": "David Weprin",
+  "firstName": "David",
+  "lastName": "Weprin",
+  "photo": "/images/officials/state-legislature/ny/david-weprin.jpg",
+  "photoSourceUrl": "https://assembly.state.ny.us/write/upload/member_files/024/headshot/024.jpg?hst=1660073135",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "Assemblymember",
+  "district": "HD-24",
+  "jurisdiction": "New York State Assembly",
+  "county": [
+    "New York"
+  ],
+  "termStart": "2010-02-09",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 716, Legislative Office Building, Albany, NY 12248",
+    "phone": "518-455-5806",
+    "email": "weprind@nyassembly.gov",
+    "website": "https://assembly.state.ny.us/mem/?sh=email",
+    "socialMedia": {
+      "x": "https://x.com/DavidWeprin",
+      "twitter": "https://x.com/DavidWeprin"
+    }
+  },
+  "bio": "David Weprin serves as Assemblymember for New York State Assembly District 24. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "NY",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://assembly.state.ny.us/mem/?sh=email"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ny/legislature/David-Weprin-df0c2fdc-3cf4-4c89-849a-b62ac2d7d2d4.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://assembly.state.ny.us/write/upload/member_files/024/headshot/024.jpg?hst=1660073135"
+    },
+    {
+      "title": "Public source",
+      "url": "https://assembly.state.ny.us/mem/David-I-Weprin"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/David_Weprin"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/David_Weprin"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/80379/david-weprin"
+    },
+    {
+      "title": "Public source",
+      "url": "https://nyassembly.gov/mem/david-i-weprin"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.davidweprin2009.org"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/davidweprin"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

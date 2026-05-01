@@ -1,0 +1,61 @@
+{
+  "id": "tyrone-carter",
+  "name": "Tyrone Carter",
+  "firstName": "Tyrone",
+  "lastName": "Carter",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-1",
+  "jurisdiction": "Michigan House of Representatives",
+  "county": [
+    "Michigan"
+  ],
+  "termStart": "2022-12-31",
+  "termEnd": "2027-01-01",
+  "contactInfo": {
+    "office": "Room S-585, Anderson House Office Building 124 N. Capitol Ave., Lansing, MI 48933",
+    "phone": "517-373-0154",
+    "email": "tyronecarter@house.mi.gov",
+    "website": "https://housedems.com/tyrone-carter"
+  },
+  "bio": "Tyrone Carter serves as State Representative for Michigan House of Representatives District 1. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "MI",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://housedems.com/tyrone-carter"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/mi/legislature/Tyrone-Carter-38d2f8c4-f40c-44b7-a2dd-57a4d5375572.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Tyrone_Carter"
+    },
+    {
+      "title": "Public source",
+      "url": "https://housedems.com/tyrone-carter/"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/153394/tyrone-carter"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.house.mi.gov/AllRepresentatives"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.house.mi.gov/MHRPublic/frmRepListMilenia.aspx?all=true"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/tyrone-carter-56945020"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

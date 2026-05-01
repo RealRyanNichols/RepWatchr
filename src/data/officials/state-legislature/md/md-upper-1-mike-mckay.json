@@ -1,0 +1,64 @@
+{
+  "id": "mike-mckay",
+  "name": "Mike McKay",
+  "firstName": "Mike",
+  "lastName": "McKay",
+  "photo": "/images/officials/state-legislature/md/mike-mckay.jpg",
+  "photoSourceUrl": "https://mgaleg.maryland.gov/2023RS/images/mckay02.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-1",
+  "jurisdiction": "Maryland Senate",
+  "county": [
+    "Maryland"
+  ],
+  "termStart": "2023-01-11",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 416, James Senate Office Building 11 Bladen St., Annapolis, MD 21401",
+    "phone": "410-841-3565",
+    "email": "mike.mckay@senate.maryland.gov",
+    "website": "https://mgaleg.maryland.gov/mgawebsite/Members/Details/mckay01"
+  },
+  "bio": "Mike McKay serves as State Senator for Maryland Senate District 1. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "MD",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://mgaleg.maryland.gov/mgawebsite/Members/Details/mckay01"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/md/legislature/Mike-McKay-5bdf592a-c502-4b60-8799-8ed681950475.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://mgaleg.maryland.gov/2023RS/images/mckay02.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Mike_McKay"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Mike_McKay_(politician)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/131924/mike-mckay"
+    },
+    {
+      "title": "Public source",
+      "url": "https://mgaleg.maryland.gov/mgawebsite/Members/Details/mckay02"
+    },
+    {
+      "title": "Public source",
+      "url": "https://mgaleg.maryland.gov/webmga/frmMain.aspx?pid=sponpage&tab=subject6&id=mckay01&stab=01"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

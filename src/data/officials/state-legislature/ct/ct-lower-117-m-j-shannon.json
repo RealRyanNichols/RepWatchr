@@ -1,0 +1,64 @@
+{
+  "id": "m-j-shannon",
+  "name": "M.J. Shannon",
+  "firstName": "M.J.",
+  "lastName": "Shannon",
+  "photo": "/images/officials/state-legislature/ct/m-j-shannon.jpg",
+  "photoSourceUrl": "https://static.wixstatic.com/media/d65472_8f9c284ad8f943ab9eb91ca4b6c59479~mv2.jpg/v1/crop/x_874,y_196,w_3728,h_2696/fill/w_560,h_406,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/2024-09-04-MJ%20Shannon-0004.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-117",
+  "jurisdiction": "Connecticut House of Representatives",
+  "county": [
+    "Connecticut"
+  ],
+  "termStart": "2025-01-08",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 4048, Legislative Office Building 300 Capitol Ave., Hartford, CT 06106",
+    "phone": "860-240-8585",
+    "email": "mj.shannon@cga.ct.gov",
+    "website": "https://www.housedems.ct.gov/Shannon"
+  },
+  "bio": "M.J. Shannon serves as State Representative for Connecticut House of Representatives District 117. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "CT",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.housedems.ct.gov/Shannon"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ct/legislature/MJ-Shannon-79a30b4c-53c7-4031-9267-66fbae2df6c8.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://static.wixstatic.com/media/d65472_8f9c284ad8f943ab9eb91ca4b6c59479~mv2.jpg/v1/crop/x_874,y_196,w_3728,h_2696/fill/w_560,h_406,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/2024-09-04-MJ%20Shannon-0004.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/MJ_Shannon"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/MJ_Shannon"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/219101/michael-shannon"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.housedems.ct.gov/Shannon/Biography"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/michael-mj-shannon-3949a51a1"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

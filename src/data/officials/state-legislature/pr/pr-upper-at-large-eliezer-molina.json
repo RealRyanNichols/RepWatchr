@@ -1,0 +1,45 @@
+{
+  "id": "eliezer-molina",
+  "name": "Eliezer Molina",
+  "firstName": "Eliezer",
+  "lastName": "Molina",
+  "party": "I",
+  "level": "state",
+  "position": "Territorial Senator",
+  "district": "At-Large",
+  "jurisdiction": "Puerto Rico Senate",
+  "county": [
+    "Puerto Rico"
+  ],
+  "termStart": "2025-01-02",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Senado, El Capitolio P.O. Box 9023431, San Juan, PR 00902",
+    "phone": "787-724-2030",
+    "email": "emolina@senado.pr.gov",
+    "website": "https://www.senado.pr.gov/hon-eliezer-molina-p%C3%A9rez"
+  },
+  "bio": "Eliezer Molina serves as Territorial Senator for Puerto Rico Senate District At-Large. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "PR",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.senado.pr.gov/hon-eliezer-molina-p%C3%A9rez"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/pr/legislature/Eliezer-Molina-e747a8b3-a7e3-4f4e-afea-2dccd3ab0bdf.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Eliezer_Molina_P%C3%A9rez"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.senado.pr.gov/senators/hon-eliezer-molina-p%C3%A9rez"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

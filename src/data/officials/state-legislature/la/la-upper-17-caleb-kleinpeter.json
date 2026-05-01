@@ -1,0 +1,57 @@
+{
+  "id": "caleb-kleinpeter",
+  "name": "Caleb Kleinpeter",
+  "firstName": "Caleb",
+  "lastName": "Kleinpeter",
+  "party": "R",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-17",
+  "jurisdiction": "Louisiana Senate",
+  "county": [
+    "Louisiana"
+  ],
+  "termStart": "2022-12-06",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "P.O. Box 94183 900 N. 3rd St., Baton Rouge, LA 70804",
+    "phone": "225-342-2024",
+    "email": "sen17@legis.la.gov",
+    "website": "https://senate.la.gov/smembers.aspx?ID=17"
+  },
+  "bio": "Caleb Kleinpeter serves as State Senator for Louisiana Senate District 17. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "LA",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://senate.la.gov/smembers.aspx?ID=17"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/la/legislature/Caleb-Kleinpeter-75f165af-66d1-464e-99b0-4176b8636501.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Caleb_Kleinpeter"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Caleb_Kleinpeter"
+    },
+    {
+      "title": "Public source",
+      "url": "https://senate.la.gov/Senators_FullInfo"
+    },
+    {
+      "title": "Public source",
+      "url": "https://senate.la.gov/smembers?ID=17"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/caleb-kleinpeter-1484a3177"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

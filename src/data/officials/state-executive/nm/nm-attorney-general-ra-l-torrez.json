@@ -1,0 +1,55 @@
+{
+  "id": "ra-l-torrez",
+  "name": "Ra\u00fal Torrez",
+  "firstName": "Ra\u00fal",
+  "lastName": "Torrez",
+  "photo": "/images/officials/state-executive/nm/ra-l-torrez.jpg",
+  "photoSourceUrl": "https://www.naag.org/wp-content/uploads/2022/11/ag-NM-Torrez.png",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "Attorney General",
+  "district": "New Mexico",
+  "jurisdiction": "New Mexico statewide public office",
+  "county": [
+    "New Mexico"
+  ],
+  "termStart": "2023-01-01",
+  "termEnd": "2027-01-01",
+  "contactInfo": {
+    "office": "408 Galisteo Street, Villagra Building; Santa Fe, NM 87501",
+    "phone": "505-490-4060",
+    "website": "https://nmdoj.gov/"
+  },
+  "bio": "Ra\u00fal Torrez is listed as Attorney General for New Mexico. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "NM",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://nmdoj.gov/"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/nm/executive/Raul-Torrez-d52c0e56-76f1-4b81-a62c-2a3dd7abcc4e.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://www.naag.org/wp-content/uploads/2022/11/ag-NM-Torrez.png"
+    },
+    {
+      "title": "Public source",
+      "url": "https://nmdoj.gov/about-the-office/meet-the-attorney-general/"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Raul_Torrez"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.naag.org/attorney-general/raul-torrez/"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

@@ -1,0 +1,65 @@
+{
+  "id": "wendell-gilliard",
+  "name": "Wendell Gilliard",
+  "firstName": "Wendell",
+  "lastName": "Gilliard",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-111",
+  "jurisdiction": "South Carolina House of Representatives",
+  "county": [
+    "South Carolina"
+  ],
+  "termStart": "",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 328D, Blatt Building P.O. Box 11867, Columbia, SC 29201",
+    "phone": "803-212-6793",
+    "email": "wendellgilliard@schouse.gov",
+    "website": "https://scstatehouse.gov/member.php?code=0675568101"
+  },
+  "bio": "Wendell Gilliard serves as State Representative for South Carolina House of Representatives District 111. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "SC",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://scstatehouse.gov/member.php?code=0675568101"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/sc/legislature/Wendell-G-Gilliard-7d11e90b-a028-4947-89d1-ac0788530446.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Wendell_Gilliard"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Wendell_Gilliard"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/78936/wendell-gilliard"
+    },
+    {
+      "title": "Public source",
+      "url": "https://scstatehouse.gov/member.php?chamber=H"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/representative-wendell-g-gilliard-79174518"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.scstatehouse.gov/member.php?chamber=H"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.scstatehouse.gov/member.php?code=0675568101"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

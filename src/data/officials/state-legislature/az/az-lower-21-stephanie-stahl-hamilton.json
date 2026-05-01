@@ -1,0 +1,72 @@
+{
+  "id": "stephanie-stahl-hamilton",
+  "name": "Stephanie Stahl Hamilton",
+  "firstName": "Stephanie",
+  "lastName": "Stahl Hamilton",
+  "photo": "/images/officials/state-legislature/az/stephanie-stahl-hamilton.jpg",
+  "photoSourceUrl": "https://www.azleg.gov/alisImages/MemberPhotos/55leg/House/STAHL_HAMILTON.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-21",
+  "jurisdiction": "Arizona House of Representatives",
+  "county": [
+    "Arizona"
+  ],
+  "termStart": "2023-01-09",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 333, 1700 W. Washington St., Phoenix, AZ 85007",
+    "phone": "602-926-3279",
+    "email": "sstahlhamilton@azleg.gov",
+    "website": "https://www.azleg.gov/house-member/?legislature=56&legislator=2199&session=128"
+  },
+  "bio": "Stephanie Stahl Hamilton serves as State Representative for Arizona House of Representatives District 21. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "AZ",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.azleg.gov/house-member/?legislature=56&legislator=2199&session=128"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/az/legislature/Stephanie-Hamilton-df482d8a-1ed9-41ae-b4ba-d73d4cd9aa39.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://www.azleg.gov/alisImages/MemberPhotos/55leg/House/STAHL_HAMILTON.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Stephanie_Stahl_Hamilton"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Stephanie_Stahl_Hamilton"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/192535/stephanie-stahl-hamilton"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.azleg.gov/house-member/?legislature=57&session=129&legislator=2338"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.azleg.gov/MemberRoster/?body=H"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.azleg.gov/memberroster/?body=H"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.azleg.gov/memberroster/?body=S"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

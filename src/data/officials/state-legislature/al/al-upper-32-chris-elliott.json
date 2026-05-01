@@ -1,0 +1,72 @@
+{
+  "id": "chris-elliott",
+  "name": "Chris Elliott",
+  "firstName": "Chris",
+  "lastName": "Elliott",
+  "photo": "/images/officials/state-legislature/al/chris-elliott.jpg",
+  "photoSourceUrl": "https://www.legislature.state.al.us/pdf/senate/members/Elliott_32.png",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-32",
+  "jurisdiction": "Alabama Senate",
+  "county": [
+    "Alabama"
+  ],
+  "termStart": "2018-11-07",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 732, 11 S. Union St., Montgomery, AL 36130",
+    "phone": "334-261-0897",
+    "email": "chris.elliott@alsenate.gov",
+    "website": "https://alison.legislature.state.al.us/senate-leaders-members"
+  },
+  "bio": "Chris Elliott serves as State Senator for Alabama Senate District 32. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "AL",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://alison.legislature.state.al.us/senate-leaders-members"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/al/legislature/Chris-Elliott-67479855-f23e-4119-b886-91dddc09a47a.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://www.legislature.state.al.us/pdf/senate/members/Elliott_32.png"
+    },
+    {
+      "title": "Public source",
+      "url": "https://alsenaterepublicans.org/representatives/0032-chris-elliott"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Chris_Elliott_(Alabama)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Chris_Elliott_(politician)"
+    },
+    {
+      "title": "graphql endpoint for member information",
+      "url": "https://gql.api.alison.legislature.state.al.us/graphql"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/156759/chris-elliott"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.legislature.state.al.us/aliswww/ISD/ALSenator.aspx?NAME=Elliott&OID_SPONSOR=100475&OID_PERSON=8487&SESSNAME=Regular%20Session%202022"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.legislature.state.al.us/aliswww/ISD/ALSenator.aspx?OID_SPONSOR=100475&OID_PERSON=8487"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

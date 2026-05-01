@@ -1,0 +1,53 @@
+{
+  "id": "travis-johnson",
+  "name": "Travis Johnson",
+  "firstName": "Travis",
+  "lastName": "Johnson",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-21",
+  "jurisdiction": "Louisiana House of Representatives",
+  "county": [
+    "Louisiana"
+  ],
+  "termStart": "2020-01-13",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "P.O. Box 94062 900 N. 3rd St., Baton Rouge, LA 70804",
+    "phone": "225-342-6945",
+    "email": "hse021@legis.la.gov",
+    "website": "https://house.louisiana.gov/H_Reps/members.aspx?ID=21"
+  },
+  "bio": "Travis Johnson serves as State Representative for Louisiana House of Representatives District 21. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "LA",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://house.louisiana.gov/H_Reps/members.aspx?ID=21"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/la/legislature/C-Travis-Johnson-871d5c01-9710-46f4-aeba-b321bdf11e30.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/C._Travis_Johnson"
+    },
+    {
+      "title": "Public source",
+      "url": "https://house.louisiana.gov/H_Reps/H_Reps_FullInfo"
+    },
+    {
+      "title": "Public source",
+      "url": "https://house.louisiana.gov/H_Reps/members?ID=21"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/c-travis-johnson-1b8119a"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

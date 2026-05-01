@@ -1,0 +1,72 @@
+{
+  "id": "sandra-hollins",
+  "name": "Sandra Hollins",
+  "firstName": "Sandra",
+  "lastName": "Hollins",
+  "photo": "/images/officials/state-legislature/ut/sandra-hollins.jpg",
+  "photoSourceUrl": "https://le.utah.gov/images/legislator/HOLLIS.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-21",
+  "jurisdiction": "Utah House of Representatives",
+  "county": [
+    "Utah"
+  ],
+  "termStart": "2023-01-01",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "P.O. Box 145030 350 N. State St., Suite 350, Salt Lake City, UT 84114",
+    "phone": "801-538-1029",
+    "email": "shollins@le.utah.gov",
+    "website": "https://disclosures.utah.gov/Search/PublicSearch/FolderDetails/1412641"
+  },
+  "bio": "Sandra Hollins serves as State Representative for Utah House of Representatives District 21. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "UT",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://disclosures.utah.gov/Search/PublicSearch/FolderDetails/1412641"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ut/legislature/Sandra-Hollins-8c8d32a7-32ed-4ef1-a03d-9661ca98fc5a.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://le.utah.gov/images/legislator/HOLLIS.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Sandra_Hollins"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Sandra_Hollins"
+    },
+    {
+      "title": "Public source",
+      "url": "https://house.utah.gov/rep/HOLLIS"
+    },
+    {
+      "title": "Public source",
+      "url": "https://house.utah.gov/rep/HOLLIS/"
+    },
+    {
+      "title": "Public source",
+      "url": "https://house.utleg.gov/rep/HOLLIS"
+    },
+    {
+      "title": "Public source",
+      "url": "https://house.utleg.gov/rep/HOLLIS/"
+    },
+    {
+      "title": "Public source",
+      "url": "https://le.utah.gov/data/legislators.json"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

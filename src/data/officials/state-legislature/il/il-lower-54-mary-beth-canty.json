@@ -1,0 +1,72 @@
+{
+  "id": "mary-beth-canty",
+  "name": "Mary Beth Canty",
+  "firstName": "Mary Beth",
+  "lastName": "Canty",
+  "photo": "/images/officials/state-legislature/il/mary-beth-canty.jpg",
+  "photoSourceUrl": "https://cdn.ilga.gov/assets/img/members/{1A73F23E-9C8D-4392-B6BD-154AB570C66E}.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-54",
+  "jurisdiction": "Illinois House of Representatives",
+  "county": [
+    "Illinois"
+  ],
+  "termStart": "2023-01-11",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 280-S, Stratton Office Building, Springfield, IL 62706",
+    "phone": "217-782-8026",
+    "email": "info@repmbc.com",
+    "website": "https://ilga.gov/house/Rep.asp?GA=103&MemberID=3233"
+  },
+  "bio": "Mary Beth Canty serves as State Representative for Illinois House of Representatives District 54. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "IL",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://ilga.gov/house/Rep.asp?GA=103&MemberID=3233"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/il/legislature/Mary-Beth-Canty-48d73b90-0109-4fb2-8689-57e803c8294a.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://cdn.ilga.gov/assets/img/members/{1A73F23E-9C8D-4392-B6BD-154AB570C66E}.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Mary_Beth_Canty"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Mary_Beth_Canty"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ilga.gov/house/default.asp?GA=103"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/197271/mary-beth-canty"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.ilga.gov/House/Members/Details/3424"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.ilga.gov/house/Rep.asp?GA=103&MemberID=3233"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.ilga.gov/house/Rep.asp?GA=104&MemberID=3424"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

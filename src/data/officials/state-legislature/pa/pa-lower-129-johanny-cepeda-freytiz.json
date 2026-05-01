@@ -1,0 +1,66 @@
+{
+  "id": "johanny-cepeda-freytiz",
+  "name": "Johanny Cepeda-Freytiz",
+  "firstName": "Johanny",
+  "lastName": "Cepeda-Freytiz",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-129",
+  "jurisdiction": "Pennsylvania House of Representatives",
+  "county": [
+    "Pennsylvania"
+  ],
+  "termStart": "2022-12-01",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 104A, East Wing P.O. Box 202129, Harrisburg, PA 17120",
+    "phone": "717-772-1858",
+    "email": "repcepedafreytiz@pahouse.net",
+    "website": "https://www.legis.state.pa.us/cfdocs/legis/home/member_information/House_bio.cfm?id=1969",
+    "socialMedia": {
+      "x": "https://x.com/RepJohanny",
+      "twitter": "https://x.com/RepJohanny",
+      "facebook": "https://facebook.com/RepJohanny"
+    }
+  },
+  "bio": "Johanny Cepeda-Freytiz serves as State Representative for Pennsylvania House of Representatives District 129. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "PA",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.legis.state.pa.us/cfdocs/legis/home/member_information/House_bio.cfm?id=1969"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/pa/legislature/Johanny-Cepeda-Freytiz-8d5ab463-45d5-4cf0-9c65-85820c08e506.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Johanny_Cepeda-Freytiz"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Johanny_Cepeda-Freytiz"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.legis.state.pa.us/cfdocs/legis/home/member_information/mbrList.cfm?body=H&sort=alpha"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/johannycepedafreytiz"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.pahouse.com/Cepeda-Freytiz"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.palegis.us/house/members/bio/1969/rep-cepeda-freytiz"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

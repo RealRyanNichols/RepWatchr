@@ -1,0 +1,48 @@
+{
+  "id": "tate-reeves",
+  "name": "Tate Reeves",
+  "firstName": "Tate",
+  "lastName": "Reeves",
+  "photo": "/images/officials/state-executive/ms/tate-reeves.jpg",
+  "photoSourceUrl": "https://governorreeves.ms.gov/wp-content/uploads/headshot-governor-tate-reeves_R.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "Governor",
+  "district": "Mississippi",
+  "jurisdiction": "Mississippi statewide public office",
+  "county": [
+    "Mississippi"
+  ],
+  "termStart": "2020-01-14",
+  "termEnd": "2028-01-11",
+  "contactInfo": {
+    "office": "P.O. Box 139; Jackson, MS 39205",
+    "phone": "601-359-3150",
+    "email": "governor@govreeves.ms.gov",
+    "website": "https://governorreeves.ms.gov/",
+    "socialMedia": {
+      "x": "https://x.com/tatereeves",
+      "twitter": "https://x.com/tatereeves"
+    }
+  },
+  "bio": "Tate Reeves is listed as Governor for Mississippi. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "MS",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://governorreeves.ms.gov/"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ms/executive/Tate-Reeves-3c19275b-6e87-43fa-83fa-ced52c9119bf.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://governorreeves.ms.gov/wp-content/uploads/headshot-governor-tate-reeves_R.jpg"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

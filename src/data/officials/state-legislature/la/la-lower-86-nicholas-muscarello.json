@@ -1,0 +1,57 @@
+{
+  "id": "nicholas-muscarello",
+  "name": "Nicholas Muscarello",
+  "firstName": "Nicholas",
+  "lastName": "Muscarello",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-86",
+  "jurisdiction": "Louisiana House of Representatives",
+  "county": [
+    "Louisiana"
+  ],
+  "termStart": "2018-04-03",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "P.O. Box 94062 900 N. 3rd St., Baton Rouge, LA 70804",
+    "phone": "225-342-6945",
+    "email": "muscarellon@legis.la.gov",
+    "website": "https://house.louisiana.gov/H_Reps/members.aspx?ID=86"
+  },
+  "bio": "Nicholas Muscarello serves as State Representative for Louisiana House of Representatives District 86. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "LA",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://house.louisiana.gov/H_Reps/members.aspx?ID=86"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/la/legislature/Nicholas-Muscarello-Jr-bc967860-a12b-4285-bd97-36379803f119.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Nicholas_Muscarello_Jr."
+    },
+    {
+      "title": "Public source",
+      "url": "https://house.louisiana.gov/H_Reps/H_Reps_FullInfo"
+    },
+    {
+      "title": "Public source",
+      "url": "https://house.louisiana.gov/H_Reps/members?ID=86"
+    },
+    {
+      "title": "Public source",
+      "url": "https://njmlawfirm.com/About-Us/Nicholas-J-Muscarello-Jr"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/nicholas-%E2%80%9Cnicky%E2%80%9D-muscarello-00261411"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

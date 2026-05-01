@@ -1,0 +1,72 @@
+{
+  "id": "rob-martwick",
+  "name": "Rob Martwick",
+  "firstName": "Rob",
+  "lastName": "Martwick",
+  "photo": "/images/officials/state-legislature/il/rob-martwick.jpg",
+  "photoSourceUrl": "https://cdn.ilga.gov/assets/img/members/{8FA2A22C-6775-4098-905C-0C7D8BBD7AEE}.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-10",
+  "jurisdiction": "Illinois Senate",
+  "county": [
+    "Illinois"
+  ],
+  "termStart": "2019-06-28",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 607, Capitol Building, Springfield, IL 62706",
+    "phone": "217-782-1035",
+    "email": "info@senatormartwick.com",
+    "website": "https://ilga.gov/senate/Senator.asp?GA=101&MemberID=2769"
+  },
+  "bio": "Rob Martwick serves as State Senator for Illinois Senate District 10. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "IL",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://ilga.gov/senate/Senator.asp?GA=101&MemberID=2769"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/il/legislature/Robert-F-Martwick-4a3645fe-2a56-400f-ae2a-18e50f2b0bea.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://cdn.ilga.gov/assets/img/members/{8FA2A22C-6775-4098-905C-0C7D8BBD7AEE}.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Robert_Martwick"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Robert_F._Martwick_Jr."
+    },
+    {
+      "title": "Public source",
+      "url": "https://ilga.gov/senate/default.asp?GA=101"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ilga.gov/senate/default.asp?GA=102"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ilga.gov/senate/default.asp?GA=103"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ilga.gov/senate/Senator.asp?GA=102&MemberID=2970"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ilga.gov/senate/Senator.asp?GA=103&MemberID=3161"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

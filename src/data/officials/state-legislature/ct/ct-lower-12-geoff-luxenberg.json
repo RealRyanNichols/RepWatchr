@@ -1,0 +1,72 @@
+{
+  "id": "geoff-luxenberg",
+  "name": "Geoff Luxenberg",
+  "firstName": "Geoff",
+  "lastName": "Luxenberg",
+  "photo": "/images/officials/state-legislature/ct/geoff-luxenberg.jpg",
+  "photoSourceUrl": "http://www2.housedems.ct.gov/Luxenberg/images/Luxenberg_HS.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-12",
+  "jurisdiction": "Connecticut House of Representatives",
+  "county": [
+    "Connecticut"
+  ],
+  "termStart": "2019-01-09",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 5002, Legislative Office Building 300 Capitol Ave., Hartford, CT 06106",
+    "phone": "860-240-0449",
+    "email": "geoff.luxenberg@cga.ct.gov",
+    "website": "https://cga.ct.gov/asp/CGABillStatus/CGAMemberBills.asp?dist_code=%27012%27&dist_name=Luxenberg,%20Geoff"
+  },
+  "bio": "Geoff Luxenberg serves as State Representative for Connecticut House of Representatives District 12. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "CT",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://cga.ct.gov/asp/CGABillStatus/CGAMemberBills.asp?dist_code=%27012%27&dist_name=Luxenberg,%20Geoff"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ct/legislature/Geoff-Luxenberg-37f6cb6c-888c-44c1-8c21-b273d967a62d.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "http://www2.housedems.ct.gov/Luxenberg/images/Luxenberg_HS.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "ftp://ftp.cga.ct.gov/pub/data/LegislatorDatabase.csv"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Geoff_Luxenberg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Geoff_Luxenberg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/126641/geoff-luxenberg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.housedems.ct.gov/luxenberg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/geoff-luxenberg-bb409114"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/geoffrey-luxenberg-4b4b77151"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

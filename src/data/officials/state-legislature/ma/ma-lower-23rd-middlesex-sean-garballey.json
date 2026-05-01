@@ -1,0 +1,72 @@
+{
+  "id": "sean-garballey",
+  "name": "Sean Garballey",
+  "firstName": "Sean",
+  "lastName": "Garballey",
+  "photo": "/images/officials/state-legislature/ma/sean-garballey.jpg",
+  "photoSourceUrl": "https://malegislature.gov/Legislators/Profile/170/S_G1.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-23rd Middlesex",
+  "jurisdiction": "Massachusetts House of Representatives",
+  "county": [
+    "Massachusetts"
+  ],
+  "termStart": "2011-01-01",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 540, State House 24 Beacon St., Boston, MA 02133",
+    "phone": "617-722-2090",
+    "email": "sean.garballey@mahouse.gov",
+    "website": "https://malegislature.gov/Legislators/Profile/S_G1"
+  },
+  "bio": "Sean Garballey serves as State Representative for Massachusetts House of Representatives District 23rd Middlesex. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "MA",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://malegislature.gov/Legislators/Profile/S_G1"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ma/legislature/Sean-Garballey-1e9d742c-c20b-45cf-9e22-e7752189fa7a.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://malegislature.gov/Legislators/Profile/170/S_G1.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Sean_Garballey"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Sean_Garballey"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/103921/sean-garballey"
+    },
+    {
+      "title": "Public source",
+      "url": "https://malegislature.gov/api/GeneralCourts/192/LegislativeMembers"
+    },
+    {
+      "title": "Public source",
+      "url": "https://malegislature.gov/api/GeneralCourts/192/LegislativeMembers/"
+    },
+    {
+      "title": "Public source",
+      "url": "https://malegislature.gov/api/GeneralCourts/192/LegislativeMembers/S_G1"
+    },
+    {
+      "title": "Public source",
+      "url": "https://malegislature.gov/api/GeneralCourts/193/LegislativeMembers"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

@@ -1,0 +1,69 @@
+{
+  "id": "mike-gottlieb",
+  "name": "Mike Gottlieb",
+  "firstName": "Mike",
+  "lastName": "Gottlieb",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-102",
+  "jurisdiction": "Florida House of Representatives",
+  "county": [
+    "Florida"
+  ],
+  "termStart": "2022-11-08",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 403, House Office Building 402 S. Monroe St., Tallahassee, FL 32399",
+    "phone": "850-717-5102",
+    "email": "mike.gottlieb@flhouse.gov",
+    "website": "https://myfloridahouse.gov/Sections/Representatives/details.aspx?MemberId=4724&LegislativeTermId=90"
+  },
+  "bio": "Mike Gottlieb serves as State Representative for Florida House of Representatives District 102. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "FL",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://myfloridahouse.gov/Sections/Representatives/details.aspx?MemberId=4724&LegislativeTermId=90"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/fl/legislature/Michael-Mike-Gottlieb-1c170657-03fb-4ab7-ae9f-f8e83568471e.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Michael_Gottlieb"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Michael_Gottlieb_(politician)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.flhouse.gov/Sections/Representatives/details.aspx?MemberId=4724"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/michael-gottlieb-b5b61a35"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.myfloridahouse.gov/Representatives"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.myfloridahouse.gov/Sections/Representatives/details.aspx?MemberId=4724"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.myfloridahouse.gov/Sections/Representatives/details.aspx?MemberId=4724&LegislativeTermId=88"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.myfloridahouse.gov/Sections/Representatives/representatives.aspx"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

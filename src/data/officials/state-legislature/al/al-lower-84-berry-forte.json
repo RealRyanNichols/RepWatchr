@@ -1,0 +1,72 @@
+{
+  "id": "berry-forte",
+  "name": "Berry Forte",
+  "firstName": "Berry",
+  "lastName": "Forte",
+  "photo": "/images/officials/state-legislature/al/berry-forte.jpg",
+  "photoSourceUrl": "https://www.legislature.state.al.us/pdf/house/members/Forte_84.png",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-84",
+  "jurisdiction": "Alabama House of Representatives",
+  "county": [
+    "Alabama"
+  ],
+  "termStart": "",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 537-F, 11 S. Union St., Montgomery, AL 36130",
+    "phone": "334-261-0566",
+    "email": "berry.forte@alhouse.gov",
+    "website": "https://alison.legislature.state.al.us/house-leaders-members"
+  },
+  "bio": "Berry Forte serves as State Representative for Alabama House of Representatives District 84. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "AL",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://alison.legislature.state.al.us/house-leaders-members"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/al/legislature/Berry-Forte-a5d0ab78-e643-4ea1-86f2-2dad948b498a.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://www.legislature.state.al.us/pdf/house/members/Forte_84.png"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Berry_Forte"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Berry_Forte"
+    },
+    {
+      "title": "graphql endpoint for member information",
+      "url": "https://gql.api.alison.legislature.state.al.us/graphql"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/81792/berry-forte"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.legislature.state.al.us/aliswww/ISD/ALRepresentative.aspx?NAME=Forte&OID_SPONSOR=100566&OID_PERSON=6664&SESSNAME="
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.legislature.state.al.us/aliswww/ISD/ALRepresentative.aspx?OID_SPONSOR=100566&OID_PERSON=6664"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.legislature.state.al.us/aliswww/ISD/House/ALRepresentatives.aspx"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

@@ -1,0 +1,72 @@
+{
+  "id": "mark-weber",
+  "name": "Mark Weber",
+  "firstName": "Mark",
+  "lastName": "Weber",
+  "photo": "/images/officials/state-legislature/nd/mark-weber.jpg",
+  "photoSourceUrl": "https://www.ndlegis.gov/sites/default/files/styles/member_list_photo/public/person/photo/markweber2023.jpg?itok=ae8Xlskt",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-22",
+  "jurisdiction": "North Dakota Senate",
+  "county": [
+    "North Dakota"
+  ],
+  "termStart": "2020-12-01",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "State Capitol 600 E. Boulevard Ave., Bismarck, ND 58505",
+    "phone": "701-328-3373",
+    "email": "markweber@ndlegis.gov",
+    "website": "https://ndlegis.gov/biography/mark-f-weber"
+  },
+  "bio": "Mark Weber serves as State Senator for North Dakota Senate District 22. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "ND",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://ndlegis.gov/biography/mark-f-weber"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/nd/legislature/Mark-F-Weber-450cf40c-eb15-4f0d-843f-3a3e071d54fc.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://www.ndlegis.gov/sites/default/files/styles/member_list_photo/public/person/photo/markweber2023.jpg?itok=ae8Xlskt"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Mark_Weber"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Mark_Weber_(politician)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.legis.nd.gov/assembly/67-2021/members/members-by-district"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.legis.nd.gov/assembly/67-2021/members/senate/senator-mark-f-weber"
+    },
+    {
+      "title": "members list page",
+      "url": "https://www.ndlegis.gov/assembly/68-2023/regular/members?combine=&field_legis_chamber_target_id=All&field_legis_district_target_id=All&field_legislator_party_target_id=All&page=8"
+    },
+    {
+      "title": "members list page",
+      "url": "https://www.ndlegis.gov/assembly/68-2023/regular/members?page=8"
+    },
+    {
+      "title": "member details page",
+      "url": "https://www.ndlegis.gov/biography/mark-f-weber"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

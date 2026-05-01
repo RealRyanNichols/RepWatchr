@@ -1,0 +1,52 @@
+{
+  "id": "anna-ferguson",
+  "name": "Anna Ferguson",
+  "firstName": "Anna",
+  "lastName": "Ferguson",
+  "photo": "/images/officials/state-legislature/nc/anna-ferguson.jpg",
+  "photoSourceUrl": "https://img.legistorm.com/people/562/207562.jpg?rand=35526",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-119",
+  "jurisdiction": "North Carolina House of Representatives",
+  "county": [
+    "North Carolina"
+  ],
+  "termStart": "2026-04-16",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 633, Legislative Office Building 300 N. Salisbury St., Raleigh, NC 27603",
+    "phone": "919-715-3005",
+    "email": "anna.ferguson@ncleg.gov",
+    "website": "https://www.ncleg.gov/Members/Biography/H/1003"
+  },
+  "bio": "Anna Ferguson serves as State Representative for North Carolina House of Representatives District 119. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "NC",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.ncleg.gov/Members/Biography/H/1003"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/nc/legislature/Anna-Ferguson-5ca31513-814c-44b9-9206-aae55c05d056.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://img.legistorm.com/people/562/207562.jpg?rand=35526"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Anna_Ferguson_(North_Carolina)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/savannah-ferguson-856b0216"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

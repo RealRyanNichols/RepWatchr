@@ -1,0 +1,75 @@
+{
+  "id": "joe-webster",
+  "name": "Joe Webster",
+  "firstName": "Joe",
+  "lastName": "Webster",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-150",
+  "jurisdiction": "Pennsylvania House of Representatives",
+  "county": [
+    "Pennsylvania"
+  ],
+  "termStart": "2018-12-01",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 125B, East Wing P.O. Box 202150, Harrisburg, PA 17120",
+    "phone": "717-787-0419",
+    "email": "repwebster@pahouse.net",
+    "website": "https://www.legis.state.pa.us/cfdocs/legis/home/member_information/House_bio.cfm?id=1848",
+    "socialMedia": {
+      "x": "https://x.com/RepJoeWebster",
+      "twitter": "https://x.com/RepJoeWebster",
+      "facebook": "https://facebook.com/RepJoeWebster",
+      "youtube": "https://youtube.com/playlist?list=PLjtqNtfs0bgVqc-0u5IRw2yt5F84yWNoy"
+    }
+  },
+  "bio": "Joe Webster serves as State Representative for Pennsylvania House of Representatives District 150. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "PA",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.legis.state.pa.us/cfdocs/legis/home/member_information/House_bio.cfm?id=1848"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/pa/legislature/Joe-Webster-676410b6-c3aa-4c17-856f-7d896e6fbc83.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Joseph_Webster_(Pennsylvania)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Joe_Webster_(politician)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/179538/joseph-webster"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.legis.state.pa.us/cfdocs/legis/home/member_information/mbrList.cfm?body=H&sort=alpha"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.legis.state.pa.us/cfdocs/legis/home/member_information/representatives_alpha.cfm"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/joseph-g-webster"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.pahouse.com/webster"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.palegis.us/house/members/bio/1848/rep-webster"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

@@ -1,0 +1,72 @@
+{
+  "id": "sally-cluchey",
+  "name": "Sally Cluchey",
+  "firstName": "Sally",
+  "lastName": "Cluchey",
+  "photo": "/images/officials/state-legislature/me/sally-cluchey.jpg",
+  "photoSourceUrl": "https://legislature.maine.gov/house/house/Repository/MemberProfiles/c6886b51-5eda-49d0-b7ad-a5315555764c_SCLUCHEY.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-52",
+  "jurisdiction": "Maine House of Representatives",
+  "county": [
+    "Maine"
+  ],
+  "termStart": "2022-12-07",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 333, House Democratic Office 2 State House Station, Augusta, ME 04333",
+    "phone": "800-423-2900",
+    "email": "sally.cluchey@legislature.maine.gov",
+    "website": "https://legislature.maine.gov/house/house/MemberProfiles/Details/1501"
+  },
+  "bio": "Sally Cluchey serves as State Representative for Maine House of Representatives District 52. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "ME",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://legislature.maine.gov/house/house/MemberProfiles/Details/1501"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/me/legislature/Sally-Jeane-Cluchey-d91a8965-c40d-481f-af61-5acb9b953fd3.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://legislature.maine.gov/house/house/Repository/MemberProfiles/c6886b51-5eda-49d0-b7ad-a5315555764c_SCLUCHEY.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Sally_Cluchey"
+    },
+    {
+      "title": "Public source",
+      "url": "https://legislature.maine.gov/house/house/MemberProfiles/ListAlpha"
+    },
+    {
+      "title": "Public source",
+      "url": "https://legislature.maine.gov/housedems/clucheys"
+    },
+    {
+      "title": "Public source",
+      "url": "https://legislature.maine.gov/housedems/clucheys/index.html"
+    },
+    {
+      "title": "Public source",
+      "url": "https://sallycluchey.com"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/sallycluchey"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.maine.gov/housedems/clucheys"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

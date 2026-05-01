@@ -1,0 +1,72 @@
+{
+  "id": "stephanie-flowers",
+  "name": "Stephanie Flowers",
+  "firstName": "Stephanie",
+  "lastName": "Flowers",
+  "photo": "/images/officials/state-legislature/ar/stephanie-flowers.jpg",
+  "photoSourceUrl": "https://www.arkleg.state.ar.us/Content/photos/2023/Senate/339_sm.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-8",
+  "jurisdiction": "Arkansas Senate",
+  "county": [
+    "Arkansas"
+  ],
+  "termStart": "2023-01-09",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "State Capitol Building 500 Woodlane St., Suite 320, Little Rock, AR 72201",
+    "phone": "501-682-2902",
+    "email": "stephanie.flowers@senate.ar.gov",
+    "website": "https://arkleg.state.ar.us/Legislators/Detail?member=S.+Flowers"
+  },
+  "bio": "Stephanie Flowers serves as State Senator for Arkansas Senate District 8. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "AR",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://arkleg.state.ar.us/Legislators/Detail?member=S.+Flowers"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ar/legislature/Stephanie-Flowers-536c6536-294f-499b-a261-120a685297f0.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://www.arkleg.state.ar.us/Content/photos/2023/Senate/339_sm.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Stephanie_Flowers"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Stephanie_Flowers"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/27988/stephanie-flowers"
+    },
+    {
+      "title": "Public source",
+      "url": "https://senate.arkansas.gov/senators/339"
+    },
+    {
+      "title": "Public source",
+      "url": "https://senate.arkansas.gov/senators/stephanie-flowers"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.arkleg.state.ar.us/Legislators/Detail?member=S.+Flowers"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.arkleg.state.ar.us/Legislators/Detail?member=S.+Flowers&ddBienniumSession=2023%2F2023R"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

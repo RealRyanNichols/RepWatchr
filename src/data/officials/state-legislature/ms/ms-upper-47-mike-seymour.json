@@ -1,0 +1,60 @@
+{
+  "id": "mike-seymour",
+  "name": "Mike Seymour",
+  "firstName": "Mike",
+  "lastName": "Seymour",
+  "photo": "/images/officials/state-legislature/ms/mike-seymour.jpg",
+  "photoSourceUrl": "http://billstatus.ls.state.ms.us/members/senate/seymour.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-47",
+  "jurisdiction": "Mississippi Senate",
+  "county": [
+    "Mississippi"
+  ],
+  "termStart": "2016-01-05",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "State Capitol Room 405, 400 High St., Jackson, MS 39201",
+    "phone": "601-359-2224",
+    "email": "jseymour@senate.ms.gov",
+    "website": "https://billstatus.ls.state.ms.us/members/senate/seymour.xml"
+  },
+  "bio": "Mike Seymour serves as State Senator for Mississippi Senate District 47. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "MS",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://billstatus.ls.state.ms.us/members/senate/seymour.xml"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ms/legislature/Joseph-M-Seymour-70b45762-64ee-4a16-b15a-194e4e3c9bf6.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "http://billstatus.ls.state.ms.us/members/senate/seymour.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Joseph_Seymour"
+    },
+    {
+      "title": "Public source",
+      "url": "https://billstatus.ls.state.ms.us/members/ss_membs.xml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Mike_Seymour_(Mississippi_politician)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/40160/joseph-seymour"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

@@ -1,0 +1,68 @@
+{
+  "id": "joaquin-arambula",
+  "name": "Joaquin Arambula",
+  "firstName": "Joaquin",
+  "lastName": "Arambula",
+  "photo": "/images/officials/state-legislature/ca/joaquin-arambula.jpg",
+  "photoSourceUrl": "https://www.assembly.ca.gov/sites/assembly.ca.gov/files/memberphotos/asm-arambula.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "Assemblymember",
+  "district": "HD-31",
+  "jurisdiction": "California State Assembly",
+  "county": [
+    "California"
+  ],
+  "termStart": "2016-04-14",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 6130, 1021 O St. P.O. Box 942849, Sacramento, CA 94249",
+    "phone": "916-319-2031",
+    "email": "assemblymember.arambula@assembly.ca.gov",
+    "website": "https://a31.asmdc.org/"
+  },
+  "bio": "Joaquin Arambula serves as Assemblymember for California State Assembly District 31. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "CA",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://a31.asmdc.org/"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ca/legislature/Dr-Joaquin-Arambula-e2da0f08-1bd8-4ac2-95f1-002870238527.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://www.assembly.ca.gov/sites/assembly.ca.gov/files/memberphotos/asm-arambula.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://a31.asmdc.org"
+    },
+    {
+      "title": "Public source",
+      "url": "https://assembly.ca.gov/assemblymembers"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Joaquin_Arambula"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Joaquin_Arambula"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/169272/joaquin-arambula"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.assembly.ca.gov/assemblymembers"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

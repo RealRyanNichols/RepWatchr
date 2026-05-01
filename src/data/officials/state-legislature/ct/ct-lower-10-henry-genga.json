@@ -1,0 +1,68 @@
+{
+  "id": "henry-genga",
+  "name": "Henry Genga",
+  "firstName": "Henry",
+  "lastName": "Genga",
+  "photo": "/images/officials/state-legislature/ct/henry-genga.jpg",
+  "photoSourceUrl": "http://www2.housedems.ct.gov/Genga/images/Genga_HS.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-10",
+  "jurisdiction": "Connecticut House of Representatives",
+  "county": [
+    "Connecticut"
+  ],
+  "termStart": "2006-02-01",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 4030, Legislative Office Building 300 Capitol Ave., Hartford, CT 06106",
+    "phone": "860-240-8585",
+    "email": "henry.genga@cga.ct.gov",
+    "website": "https://cga.ct.gov/asp/CGABillStatus/CGAMemberBills.asp?dist_code=%27010%27&dist_name=Genga,%20Henry%20J."
+  },
+  "bio": "Henry Genga serves as State Representative for Connecticut House of Representatives District 10. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "CT",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://cga.ct.gov/asp/CGABillStatus/CGAMemberBills.asp?dist_code=%27010%27&dist_name=Genga,%20Henry%20J."
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ct/legislature/Henry-J-Genga-c07f613b-b79d-4e11-b959-589c8cefac41.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "http://www2.housedems.ct.gov/Genga/images/Genga_HS.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "ftp://ftp.cga.ct.gov/pub/data/LegislatorDatabase.csv"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Henry_Genga"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Henry_Genga"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/58698/henry-genga"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.housedems.ct.gov/Genga"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/henry-genga-1b819214"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

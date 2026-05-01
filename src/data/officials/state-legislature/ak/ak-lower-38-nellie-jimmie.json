@@ -1,0 +1,56 @@
+{
+  "id": "nellie-jimmie",
+  "name": "Nellie Jimmie",
+  "firstName": "Nellie",
+  "lastName": "Jimmie",
+  "photo": "/images/officials/state-legislature/ak/nellie-jimmie.jpg",
+  "photoSourceUrl": "https://npr.brightspotcdn.com/dims4/default/41429e9/2147483647/strip/true/crop/6000x4000+0+0/resize/880x587!/quality/90/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2Ffe%2F2b%2F2bf76eb540a397e680305d5eac7d%2Fimg-2003.JPG",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-38",
+  "jurisdiction": "Alaska House of Representatives",
+  "county": [
+    "Alaska"
+  ],
+  "termStart": "2025-01-21",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "State Capitol Room 513, 120 4th St., Juneau, AK 99801",
+    "phone": "907-465-4942",
+    "email": "representative.nellie.unangiq.jimmie@akleg.gov",
+    "website": "https://www.akleg.gov/basis/Member/Detail/34?code=jim"
+  },
+  "bio": "Nellie Jimmie serves as State Representative for Alaska House of Representatives District 38. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "AK",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.akleg.gov/basis/Member/Detail/34?code=jim"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ak/legislature/Nellie-Jimmie-1454451c-f821-4b6d-903e-07bef45ab0de.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://npr.brightspotcdn.com/dims4/default/41429e9/2147483647/strip/true/crop/6000x4000+0+0/resize/880x587!/quality/90/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2Ffe%2F2b%2F2bf76eb540a397e680305d5eac7d%2Fimg-2003.JPG"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Nellie_Jimmie"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Nellie_Jimmie"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/218218/nellie-jimmie"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

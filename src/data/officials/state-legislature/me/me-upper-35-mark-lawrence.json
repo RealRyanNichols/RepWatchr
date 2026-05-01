@@ -1,0 +1,72 @@
+{
+  "id": "mark-lawrence",
+  "name": "Mark Lawrence",
+  "firstName": "Mark",
+  "lastName": "Lawrence",
+  "photo": "/images/officials/state-legislature/me/mark-lawrence.jpg",
+  "photoSourceUrl": "https://legislature.maine.gov/uploads/visual_edit/lawrence-5x7-1.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-35",
+  "jurisdiction": "Maine Senate",
+  "county": [
+    "Maine"
+  ],
+  "termStart": "2018-12-05",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "3 State House Station, Augusta, ME 04333",
+    "phone": "207-287-1515",
+    "email": "mark.lawrence@legislature.maine.gov",
+    "website": "https://legislature.maine.gov/District-35"
+  },
+  "bio": "Mark Lawrence serves as State Senator for Maine Senate District 35. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "ME",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://legislature.maine.gov/District-35"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/me/legislature/Mark-Lawrence-ce4a4a85-e41d-410f-bfba-07f7f5b9dee0.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://legislature.maine.gov/uploads/visual_edit/lawrence-5x7-1.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Mark_Lawrence_(Maine)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Mark_Lawrence_(politician)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://legislature.maine.gov/district35"
+    },
+    {
+      "title": "Public source",
+      "url": "https://legislature.maine.gov/District35"
+    },
+    {
+      "title": "Public source",
+      "url": "https://legislature.maine.gov/uploads/visual_edit/130th-senate-contact-information-as-of-31221.xlsx"
+    },
+    {
+      "title": "Public source",
+      "url": "https://legislature.maine.gov/uploads/visual_edit/131-senator-contact-information-2.xlsx"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/mark-lawrence-37319841"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

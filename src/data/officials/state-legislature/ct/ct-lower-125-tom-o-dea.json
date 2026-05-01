@@ -1,0 +1,69 @@
+{
+  "id": "tom-o-dea",
+  "name": "Tom O'Dea",
+  "firstName": "Tom",
+  "lastName": "O'Dea",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-125",
+  "jurisdiction": "Connecticut House of Representatives",
+  "county": [
+    "Connecticut"
+  ],
+  "termStart": "2013-01-09",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 4200, Legislative Office Building 300 Capitol Ave., Hartford, CT 06106",
+    "phone": "860-240-8700",
+    "email": "tom.odea@housegop.ct.gov",
+    "website": "https://cga.ct.gov/asp/CGABillStatus/CGAMemberBills.asp?dist_code=%27125%27&dist_name=O%27Dea,%20Tom"
+  },
+  "bio": "Tom O'Dea serves as State Representative for Connecticut House of Representatives District 125. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "CT",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://cga.ct.gov/asp/CGABillStatus/CGAMemberBills.asp?dist_code=%27125%27&dist_name=O%27Dea,%20Tom"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ct/legislature/Tom-ODea-03642345-7acb-4294-91b5-84dcc3c18cc7.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "ftp://ftp.cga.ct.gov/pub/data/LegislatorDatabase.csv"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Tom_O%27Dea"
+    },
+    {
+      "title": "Public source",
+      "url": "https://diseriomartin.com/attorneys/thomas-p-odea-jr"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Tom_O%27Dea"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/141206/tom-odea"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.cthousegop.com/odea"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.cthousegop.com/odea/"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/thomas-p-o-dea-jr-935707"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

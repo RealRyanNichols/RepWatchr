@@ -1,0 +1,69 @@
+{
+  "id": "tommy-pope",
+  "name": "Tommy Pope",
+  "firstName": "Tommy",
+  "lastName": "Pope",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-47",
+  "jurisdiction": "South Carolina House of Representatives",
+  "county": [
+    "South Carolina"
+  ],
+  "termStart": "2010-11-08",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 505, Blatt Building P.O. Box 11867, Columbia, SC 29201",
+    "phone": "803-734-2701",
+    "email": "tommypope@schouse.gov",
+    "website": "https://scstatehouse.gov/member.php?code=1484090731"
+  },
+  "bio": "Tommy Pope serves as State Representative for South Carolina House of Representatives District 47. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "SC",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://scstatehouse.gov/member.php?code=1484090731"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/sc/legislature/Thomas-E-Tommy-Pope-7a31b7ee-6b6c-487b-bc69-c3c323357c05.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Tommy_Pope"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Tommy_Pope_(politician)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/121790/tommy-pope"
+    },
+    {
+      "title": "Public source",
+      "url": "https://scstatehouse.gov/member.php?chamber=H"
+    },
+    {
+      "title": "Public source",
+      "url": "https://tommypope.com"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/tommy-pope-94a54232"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.scstatehouse.gov/member.php?chamber=H"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.scstatehouse.gov/member.php?code=1484090731"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

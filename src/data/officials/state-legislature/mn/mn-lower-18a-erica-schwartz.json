@@ -1,0 +1,60 @@
+{
+  "id": "erica-schwartz",
+  "name": "Erica Schwartz",
+  "firstName": "Erica",
+  "lastName": "Schwartz",
+  "photo": "/images/officials/state-legislature/mn/erica-schwartz.jpg",
+  "photoSourceUrl": "https://www.house.mn.gov/hinfo/memberimgls94/18A.gif?v=112221",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-18A",
+  "jurisdiction": "Minnesota House of Representatives",
+  "county": [
+    "Minnesota"
+  ],
+  "termStart": "2025-01-14",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Centennial Office Building 658 Cedar St., Second Floor, St. Paul, MN 55155",
+    "phone": "651-296-8634",
+    "email": "rep.erica.schwartz@house.mn.gov",
+    "website": "https://www.house.mn.gov/members/profile/15644"
+  },
+  "bio": "Erica Schwartz serves as State Representative for Minnesota House of Representatives District 18A. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "MN",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.house.mn.gov/members/profile/15644"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/mn/legislature/Erica-Schwartz-e62d342c-ae38-4607-88d7-3a7f3f7e248b.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://www.house.mn.gov/hinfo/memberimgls94/18A.gif?v=112221"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Erica_Schwartz"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Erica_Schwartz_(politician)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/218768/erica-schwartz"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.lrl.mn.gov/legdb/fulldetail?ID=15644"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

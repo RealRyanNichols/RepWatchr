@@ -1,0 +1,60 @@
+{
+  "id": "keith-harris",
+  "name": "Keith Harris",
+  "firstName": "Keith",
+  "lastName": "Harris",
+  "photo": "/images/officials/state-legislature/pa/keith-harris.jpg",
+  "photoSourceUrl": "https://storage.googleapis.com/enview-public-general/legislative-people-photos/150757.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-195",
+  "jurisdiction": "Pennsylvania House of Representatives",
+  "county": [
+    "Pennsylvania"
+  ],
+  "termStart": "2024-09-30",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 6A, East Wing P.O. Box 202195, Harrisburg, PA 17120",
+    "phone": "717-787-3480",
+    "email": "kharris@pahouse.net",
+    "website": "https://www.pahouse.com/KHarris/"
+  },
+  "bio": "Keith Harris serves as State Representative for Pennsylvania House of Representatives District 195. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "PA",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.pahouse.com/KHarris/"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/pa/legislature/Keith-Harris-99c32bc9-33c2-4394-94e6-2f9d0ff43133.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://storage.googleapis.com/enview-public-general/legislative-people-photos/150757.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Keith_S._Harris_(Pennsylvania)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Keith_Harris_(politician)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.pahouse.com/KHarris"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.palegis.us/house/members/bio/2020/rep-kharris"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

@@ -1,0 +1,66 @@
+{
+  "id": "katie-muth",
+  "name": "Katie Muth",
+  "firstName": "Katie",
+  "lastName": "Muth",
+  "party": "D",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-44",
+  "jurisdiction": "Pennsylvania Senate",
+  "county": [
+    "Pennsylvania"
+  ],
+  "termStart": "2018-12-01",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 185, Main Capitol Senate Box 203044, Harrisburg, PA 17120",
+    "phone": "717-787-1398",
+    "email": "senatormuth@pasenate.com",
+    "website": "https://www.legis.state.pa.us/cfdocs/legis/home/member_information/Senate_bio.cfm?id=1802",
+    "socialMedia": {
+      "x": "https://x.com/senatormuth",
+      "twitter": "https://x.com/senatormuth",
+      "facebook": "https://facebook.com/senatormuth"
+    }
+  },
+  "bio": "Katie Muth serves as State Senator for Pennsylvania Senate District 44. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "PA",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.legis.state.pa.us/cfdocs/legis/home/member_information/Senate_bio.cfm?id=1802"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/pa/legislature/Katie-J-Muth-ade3ef98-a98c-4448-a974-ec4e0eede98f.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Katie_Muth"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Katie_Muth"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.legis.state.pa.us/cfdocs/legis/home/member_information/mbrList.cfm?body=S&sort=alpha"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.legis.state.pa.us/cfdocs/legis/home/member_information/senators_alpha.cfm"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.palegis.us/senate/members/bio/1802/sen-muth"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.senatormuth.com"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

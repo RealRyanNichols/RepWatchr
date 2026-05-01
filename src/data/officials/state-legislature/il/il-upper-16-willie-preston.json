@@ -1,0 +1,71 @@
+{
+  "id": "willie-preston",
+  "name": "Willie Preston",
+  "firstName": "Willie",
+  "lastName": "Preston",
+  "photo": "/images/officials/state-legislature/il/willie-preston.jpg",
+  "photoSourceUrl": "https://cdn.ilga.gov/assets/img/members/{CFF4C1DD-FC97-428B-9D19-A520A543F4AC}.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-16",
+  "jurisdiction": "Illinois Senate",
+  "county": [
+    "Illinois"
+  ],
+  "termStart": "2023-01-11",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 537, Capitol Building, Springfield, IL 62706",
+    "phone": "217-782-1607",
+    "website": "https://ilga.gov/senate/Senator.asp?GA=103&MemberID=3209"
+  },
+  "bio": "Willie Preston serves as State Senator for Illinois Senate District 16. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "IL",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://ilga.gov/senate/Senator.asp?GA=103&MemberID=3209"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/il/legislature/Willie-Preston-34274113-7ea1-4e6e-aa7a-da2c9d1037b4.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://cdn.ilga.gov/assets/img/members/{CFF4C1DD-FC97-428B-9D19-A520A543F4AC}.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Willie_Preston"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Willie_Preston"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ilga.gov/senate/default.asp?GA=103"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/177160/willie-preston"
+    },
+    {
+      "title": "Public source",
+      "url": "https://senatorpreston.com"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.ilga.gov/Senate/Members/Details/3405"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.ilga.gov/senate/Senator.asp?GA=103&MemberID=3209"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

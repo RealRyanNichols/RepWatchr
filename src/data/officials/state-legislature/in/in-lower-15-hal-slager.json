@@ -1,0 +1,72 @@
+{
+  "id": "hal-slager",
+  "name": "Hal Slager",
+  "firstName": "Hal",
+  "lastName": "Slager",
+  "photo": "/images/officials/state-legislature/in/hal-slager.jpg",
+  "photoSourceUrl": "https://www.indianahouserepublicans.com/clientuploads/directory/members/Main_List/Slager_mainlist.png",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-15",
+  "jurisdiction": "Indiana House of Representatives",
+  "county": [
+    "Indiana"
+  ],
+  "termStart": "2020-11-04",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "200 W. Washington St., Indianapolis, IN 46204",
+    "phone": "800-352-9841",
+    "email": "h15@iga.in.gov",
+    "website": "https://iga.in.gov/legislative/2021/legislators/legislator_harold_slager_1111"
+  },
+  "bio": "Hal Slager serves as State Representative for Indiana House of Representatives District 15. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "IN",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://iga.in.gov/legislative/2021/legislators/legislator_harold_slager_1111"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/in/legislature/Harold-Slager-b71e9f3a-2c59-4e18-80e6-da0a7cc51648.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://www.indianahouserepublicans.com/clientuploads/directory/members/Main_List/Slager_mainlist.png"
+    },
+    {
+      "title": "Public source",
+      "url": "https://api.iga.in.gov/2021/legislators/harold_slager_1111"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Harold_Slager"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Hal_Slager"
+    },
+    {
+      "title": "Public source",
+      "url": "https://iga.in.gov/legislative/2021/legislators/legislator_harold_slager_1111/"
+    },
+    {
+      "title": "Public source",
+      "url": "https://iga.in.gov/legislative/2024/legislators/legislator_harold_slager_1111"
+    },
+    {
+      "title": "Public source",
+      "url": "https://iga.in.gov/legislative/2026/legislators/legislator_harold_slager_1111"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/113823/hal-slager"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

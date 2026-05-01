@@ -1,0 +1,60 @@
+{
+  "id": "mekyah-mcqueen",
+  "name": "Mekyah McQueen",
+  "firstName": "Mekyah",
+  "lastName": "McQueen",
+  "photo": "/images/officials/state-legislature/ga/mekyah-mcqueen.jpg",
+  "photoSourceUrl": "https://static.wixstatic.com/media/a3388b_311f34c52195445d89b52eadd1384ad8~mv2.png/v1/fill/w_640,h_838,al_c,q_90,usm_0.66_1.00_0.01,enc_auto/a3388b_311f34c52195445d89b52eadd1384ad8~mv2.png",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-61",
+  "jurisdiction": "Georgia House of Representatives",
+  "county": [
+    "Georgia"
+  ],
+  "termStart": "2025-01-13",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 404-B, Coverdell Legislative Office Building 18 Capitol Square SW, Atlanta, GA 30334",
+    "phone": "404-656-0109",
+    "email": "mekyah.mcqueen@house.ga.gov",
+    "website": "https://www.legis.ga.gov/members/house/5070"
+  },
+  "bio": "Mekyah McQueen serves as State Representative for Georgia House of Representatives District 61. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "GA",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.legis.ga.gov/members/house/5070"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ga/legislature/Mekyah-McQueen-f0af2586-d535-4e44-bcaa-65239f9390b1.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://static.wixstatic.com/media/a3388b_311f34c52195445d89b52eadd1384ad8~mv2.png/v1/fill/w_640,h_838,al_c,q_90,usm_0.66_1.00_0.01,enc_auto/a3388b_311f34c52195445d89b52eadd1384ad8~mv2.png"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Mekyah_McQueen"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Mekyah_McQueen"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/215237/mekyah-mcqueen"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/mekyahmcqueen"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

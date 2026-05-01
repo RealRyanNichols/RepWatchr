@@ -1,0 +1,69 @@
+{
+  "id": "josiah-magnuson",
+  "name": "Josiah Magnuson",
+  "firstName": "Josiah",
+  "lastName": "Magnuson",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-38",
+  "jurisdiction": "South Carolina House of Representatives",
+  "county": [
+    "South Carolina"
+  ],
+  "termStart": "2016-11-14",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 434C, Blatt Building P.O. Box 11867, Columbia, SC 29201",
+    "phone": "803-212-6876",
+    "email": "josiahmagnuson@schouse.gov",
+    "website": "https://scstatehouse.gov/member.php?code=1130965774"
+  },
+  "bio": "Josiah Magnuson serves as State Representative for South Carolina House of Representatives District 38. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "SC",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://scstatehouse.gov/member.php?code=1130965774"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/sc/legislature/Josiah-Magnuson-6db09ea1-fe89-497a-8502-dce892c13fe8.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Josiah_Magnuson"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Josiah_Magnuson"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/168961/josiah-magnuson"
+    },
+    {
+      "title": "Public source",
+      "url": "https://scstatehouse.gov/member.php?chamber=H"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.josiahmagnuson.com/about"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/josiah-magnuson-1983208b"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.scstatehouse.gov/member.php?chamber=H"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.scstatehouse.gov/member.php?code=1130965774"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

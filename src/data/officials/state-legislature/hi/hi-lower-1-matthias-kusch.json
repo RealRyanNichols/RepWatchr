@@ -1,0 +1,60 @@
+{
+  "id": "matthias-kusch",
+  "name": "Matthias Kusch",
+  "firstName": "Matthias",
+  "lastName": "Kusch",
+  "photo": "/images/officials/state-legislature/hi/matthias-kusch.jpg",
+  "photoSourceUrl": "https://storage.googleapis.com/enview-public-general/legislative-people-photos/149765.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-1",
+  "jurisdiction": "Hawaii House of Representatives",
+  "county": [
+    "Hawaii"
+  ],
+  "termStart": "2024-11-27",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "State Capitol Room 311, 415 S. Beretania St., Honolulu, HI 96813",
+    "phone": "808-586-6680",
+    "email": "repkusch@capitol.hawaii.gov",
+    "website": "https://www.capitol.hawaii.gov/legislature/memberpage.aspx?member=297"
+  },
+  "bio": "Matthias Kusch serves as State Representative for Hawaii House of Representatives District 1. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "HI",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.capitol.hawaii.gov/legislature/memberpage.aspx?member=297"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/hi/legislature/Matthias-Kusch-fb23dd18-ee42-45da-9fc5-8379ced56c88.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://storage.googleapis.com/enview-public-general/legislative-people-photos/149765.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Matthias_Kusch"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Matthias_Kusch"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.capitol.hawaii.gov/legislature/memberpage.aspx?member=297&year=2024"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/matthias-kusch-0b9a256"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

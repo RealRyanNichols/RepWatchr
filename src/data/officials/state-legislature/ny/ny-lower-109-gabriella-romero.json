@@ -1,0 +1,60 @@
+{
+  "id": "gabriella-romero",
+  "name": "Gabriella Romero",
+  "firstName": "Gabriella",
+  "lastName": "Romero",
+  "photo": "/images/officials/state-legislature/ny/gabriella-romero.jpg",
+  "photoSourceUrl": "https://albanyny.gov/ImageRepository/Document?documentID=6737",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "Assemblymember",
+  "district": "HD-109",
+  "jurisdiction": "New York State Assembly",
+  "county": [
+    "New York"
+  ],
+  "termStart": "2025-01-01",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 704, Legislative Office Building, Albany, NY 12248",
+    "phone": "518-455-4178",
+    "email": "romerog@nyassembly.gov",
+    "website": "https://nyassembly.gov/mem/Gabriella-A-Romero"
+  },
+  "bio": "Gabriella Romero serves as Assemblymember for New York State Assembly District 109. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "NY",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://nyassembly.gov/mem/Gabriella-A-Romero"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ny/legislature/Gabriella-A-Romero-0a053bbf-e97b-44aa-a38f-83ad7f9682ac.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://albanyny.gov/ImageRepository/Document?documentID=6737"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Gabriella_Romero"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Gabriella_Romero"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/217380/gabriella-romero"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/gabriella-romero-99221a45"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

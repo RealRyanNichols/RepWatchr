@@ -1,0 +1,68 @@
+{
+  "id": "roberta-lange",
+  "name": "Roberta Lange",
+  "firstName": "Roberta",
+  "lastName": "Lange",
+  "photo": "/images/officials/state-legislature/nv/roberta-lange.jpg",
+  "photoSourceUrl": "http://leg.state.nv.us/Session/83rd2025/legislators/Senators/Images/Lange.Roberta.383.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-7",
+  "jurisdiction": "Nevada Senate",
+  "county": [
+    "Nevada"
+  ],
+  "termStart": "2020-11-04",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 1224, Nevada Senate 401 S. Carson St., Carson City, NV 89701",
+    "phone": "775-684-6504",
+    "email": "roberta.lange@sen.state.nv.us",
+    "website": "https://www.leg.state.nv.us/App/Legislator/A/api/81st2021/Legislator?id=383"
+  },
+  "bio": "Roberta Lange serves as State Senator for Nevada Senate District 7. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "NV",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.leg.state.nv.us/App/Legislator/A/api/81st2021/Legislator?id=383"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/nv/legislature/Roberta-Lange-05dee0b4-bfea-4473-b253-739895818b0d.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "http://leg.state.nv.us/Session/83rd2025/legislators/Senators/Images/Lange.Roberta.383.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Roberta_Lange"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Roberta_Lange"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/191084/roberta-lange"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.leg.state.nv.us/App/Legislator/A/Senate/Current"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.leg.state.nv.us/App/Legislator/A/Senate/Current/7"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/robertalange"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

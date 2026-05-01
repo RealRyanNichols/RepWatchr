@@ -1,0 +1,69 @@
+{
+  "id": "les-ihara",
+  "name": "Les Ihara",
+  "firstName": "Les",
+  "lastName": "Ihara",
+  "party": "D",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-10",
+  "jurisdiction": "Hawaii Senate",
+  "county": [
+    "Hawaii"
+  ],
+  "termStart": "2013-01-16",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "State Capitol Room 220, 415 S. Beretania St., Honolulu, HI 96813",
+    "phone": "808-586-6250",
+    "email": "senihara@capitol.hawaii.gov",
+    "website": "https://capitol.hawaii.gov/memberpage.aspx?member=ihara&year=2019"
+  },
+  "bio": "Les Ihara serves as State Senator for Hawaii Senate District 10. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "HI",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://capitol.hawaii.gov/memberpage.aspx?member=ihara&year=2019"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/hi/legislature/Les-Ihara-94e42ecd-2e4d-4502-8b50-c1c6324617f1.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Les_Ihara,_Jr."
+    },
+    {
+      "title": "Public source",
+      "url": "https://capitol.hawaii.gov/members/legislators.aspx?chamber=S"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Les_Ihara_Jr."
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/3392/les-ihara-jr"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.capitol.hawaii.gov/legislature/memberpage.aspx?member=180&year=2023"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.capitol.hawaii.gov/legislature/memberpage.aspx?member=180&year=2024"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.capitol.hawaii.gov/memberpage.aspx?member=ihara&year=2021"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.capitol.hawaii.gov/memberpage.aspx?member=ihara&year=2022"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

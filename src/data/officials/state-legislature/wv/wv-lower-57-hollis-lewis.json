@@ -1,0 +1,64 @@
+{
+  "id": "hollis-lewis",
+  "name": "Hollis Lewis",
+  "firstName": "Hollis",
+  "lastName": "Lewis",
+  "photo": "/images/officials/state-legislature/wv/hollis-lewis.jpg",
+  "photoSourceUrl": "https://www.wvlegislature.gov/images/members/2023/house/lewis_hollis.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "Delegate",
+  "district": "HD-57",
+  "jurisdiction": "West Virginia House of Delegates",
+  "county": [
+    "West Virginia"
+  ],
+  "termStart": "2023-11-03",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "State Capitol Room 6U-A, Complex, Building 1 1900 Kanawha Blvd. East, Charleston, WV 25305",
+    "phone": "304-340-3183",
+    "email": "hollis.lewis@wvhouse.gov",
+    "website": "https://www.wvlegislature.gov/House/lawmaker.cfm?member=Delegate%20Lewis"
+  },
+  "bio": "Hollis Lewis serves as Delegate for West Virginia House of Delegates District 57. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "WV",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.wvlegislature.gov/House/lawmaker.cfm?member=Delegate%20Lewis"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/wv/legislature/Hollis-Lewis-68163122-16de-4528-8eda-fd1f9783c45d.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://www.wvlegislature.gov/images/members/2023/house/lewis_hollis.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Hollis_Lewis"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Hollis_Lewis"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/212986/hollis-lewis"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/hollis-t-lewis-ii-jd-719a46a3"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.wvlegislature.gov/House/roster.cfm"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

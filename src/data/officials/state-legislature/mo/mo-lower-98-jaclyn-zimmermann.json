@@ -1,0 +1,64 @@
+{
+  "id": "jaclyn-zimmermann",
+  "name": "Jaclyn Zimmermann",
+  "firstName": "Jaclyn",
+  "lastName": "Zimmermann",
+  "photo": "/images/officials/state-legislature/mo/jaclyn-zimmermann.jpg",
+  "photoSourceUrl": "https://s3.amazonaws.com/ballotpedia-api4/files/thumbs/200/300/JaclynZimmerman2024.JPG",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-98",
+  "jurisdiction": "Missouri House of Representatives",
+  "county": [
+    "Missouri"
+  ],
+  "termStart": "2025-01-08",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 109-G, 201 W. Capitol Ave., Jefferson City, MO 65101",
+    "phone": "573-751-4392",
+    "email": "jaclyn.zimmermann@house.mo.gov",
+    "website": "https://house.mo.gov/MemberDetails.aspx?district=098"
+  },
+  "bio": "Jaclyn Zimmermann serves as State Representative for Missouri House of Representatives District 98. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "MO",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://house.mo.gov/MemberDetails.aspx?district=098"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/mo/legislature/Jaclyn-Zimmermann-b7335950-e605-45b7-9c64-1e725315deca.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://s3.amazonaws.com/ballotpedia-api4/files/thumbs/200/300/JaclynZimmerman2024.JPG"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Jaclyn_Zimmermann"
+    },
+    {
+      "title": "Public source",
+      "url": "https://house.mo.gov/MemberDetails.aspx?year=2025&code=R&district=098"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/217712/jaclyn-zimmermann"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/jaclyn-zimmermann-13a19522"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.ponderzimmermann.com/lawyers/jaclyn-zimmermann"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

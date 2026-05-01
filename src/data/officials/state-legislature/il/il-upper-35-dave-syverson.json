@@ -1,0 +1,69 @@
+{
+  "id": "dave-syverson",
+  "name": "Dave Syverson",
+  "firstName": "Dave",
+  "lastName": "Syverson",
+  "party": "R",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-35",
+  "jurisdiction": "Illinois Senate",
+  "county": [
+    "Illinois"
+  ],
+  "termStart": "2013-01-09",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 108, Capitol Building, Springfield, IL 62706",
+    "phone": "217-782-5413",
+    "email": "info@senatordavesyverson.com",
+    "website": "https://ilga.gov/senate/Senator.asp?GA=101&MemberID=2540"
+  },
+  "bio": "Dave Syverson serves as State Senator for Illinois Senate District 35. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "IL",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://ilga.gov/senate/Senator.asp?GA=101&MemberID=2540"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/il/legislature/Dave-Syverson-d02beb7e-1f30-48f2-8418-4c9287452562.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Dave_Syverson"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Dave_Syverson"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ilga.gov/senate/default.asp?GA=101"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ilga.gov/senate/default.asp?GA=102"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ilga.gov/senate/default.asp?GA=103"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ilga.gov/senate/Senator.asp?GA=102&MemberID=2798"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ilga.gov/senate/Senator.asp?GA=103&MemberID=3025"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/6289/dave-syverson"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

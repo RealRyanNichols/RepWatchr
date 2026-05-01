@@ -1,0 +1,69 @@
+{
+  "id": "catherine-stefani",
+  "name": "Catherine Stefani",
+  "firstName": "Catherine",
+  "lastName": "Stefani",
+  "party": "D",
+  "level": "state",
+  "position": "Assemblymember",
+  "district": "HD-19",
+  "jurisdiction": "California State Assembly",
+  "county": [
+    "California"
+  ],
+  "termStart": "2024-12-02",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 5220, 1021 O St. P.O. Box 942849, Sacramento, CA 94249",
+    "phone": "916-319-2019",
+    "email": "assemblymember.stefani@assembly.ca.gov",
+    "website": "https://a19.asmdc.org/"
+  },
+  "bio": "Catherine Stefani serves as Assemblymember for California State Assembly District 19. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "CA",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://a19.asmdc.org/"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ca/legislature/Catherine-Stefani-3864202e-3b40-430e-a218-cfe56d83cee5.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://a19.asmdc.org"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Catherine_Stefani"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Catherine_Stefani"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/187411/catherine-stefani"
+    },
+    {
+      "title": "Public source",
+      "url": "https://sfbos.org/supervisor-stefani-district-2"
+    },
+    {
+      "title": "Public source",
+      "url": "https://sfbos.org/supervisor-stefani-overview"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.assembly.ca.gov/assemblymembers/19"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/catherine-stefani-64969b20"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

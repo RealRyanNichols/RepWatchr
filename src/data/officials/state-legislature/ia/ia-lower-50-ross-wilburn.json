@@ -1,0 +1,68 @@
+{
+  "id": "ross-wilburn",
+  "name": "Ross Wilburn",
+  "firstName": "Ross",
+  "lastName": "Wilburn",
+  "photo": "/images/officials/state-legislature/ia/ross-wilburn.jpg",
+  "photoSourceUrl": "https://www.legis.iowa.gov/photo?action=getPhoto&ga=91&pid=28701",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-50",
+  "jurisdiction": "Iowa House of Representatives",
+  "county": [
+    "Iowa"
+  ],
+  "termStart": "2023-01-01",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "State Capitol Building 1007 E. Grand Ave., Des Moines, IA 50319",
+    "phone": "515-281-3221",
+    "email": "ross.wilburn@legis.iowa.gov",
+    "website": "https://eepurl.com/gXMQCb"
+  },
+  "bio": "Ross Wilburn serves as State Representative for Iowa House of Representatives District 50. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "IA",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://eepurl.com/gXMQCb"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ia/legislature/Ross-Wilburn-068a7290-ab67-4ff5-abe5-8e23a7715097.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://www.legis.iowa.gov/photo?action=getPhoto&ga=91&pid=28701"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Ross_Wilburn"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Ross_Wilburn"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.legis.iowa.gov/legislators/house"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.legis.iowa.gov/legislators/legislator?ga=90&personID=28701"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.legis.iowa.gov/legislators/legislator?personID=28701"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/ross-wilburn-2266811b"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

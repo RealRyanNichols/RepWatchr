@@ -1,0 +1,69 @@
+{
+  "id": "ty-masterson",
+  "name": "Ty Masterson",
+  "firstName": "Ty",
+  "lastName": "Masterson",
+  "party": "R",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-16",
+  "jurisdiction": "Kansas Senate",
+  "county": [
+    "Kansas"
+  ],
+  "termStart": "2009-01-12",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "State Capitol Room 332-E, Kansas  Building 300 SW 10th St., Topeka, KS 66612",
+    "phone": "785-296-2419",
+    "email": "ty.masterson@senate.ks.gov",
+    "website": "https://www.kslegislature.gov/li/b2025_26/members/sen_masterson_ty_1/"
+  },
+  "bio": "Ty Masterson serves as State Senator for Kansas Senate District 16. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "KS",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.kslegislature.gov/li/b2025_26/members/sen_masterson_ty_1/"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ks/legislature/Ty-Masterson-b4774ff4-de16-4716-8956-65ecc740eb8c.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Ty_Masterson"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Ty_Masterson"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.kslegislature.gov/li/b2025_26/members/sen_masterson_ty_1"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.kslegislature.org/li/api/v11/rev-1/members/sen_masterson_ty_1"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.kslegislature.org/li/api/v11/rev-1/members/sen_masterson_ty_1/"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.kslegislature.org/li/b2023_24/members/sen_masterson_ty_1"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.kslegislature.org/li/b2023_24/members/sen_masterson_ty_1/"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/tymastersonkansas"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

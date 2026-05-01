@@ -1,0 +1,57 @@
+{
+  "id": "gallop-franklin",
+  "name": "Gallop Franklin",
+  "firstName": "Gallop",
+  "lastName": "Franklin",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-8",
+  "jurisdiction": "Florida House of Representatives",
+  "county": [
+    "Florida"
+  ],
+  "termStart": "2022-11-08",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 1003, The Capitol 402 S. Monroe St., Tallahassee, FL 32399",
+    "phone": "850-717-5008",
+    "email": "gallop.franklin@flhouse.gov",
+    "website": "https://myfloridahouse.gov/Sections/Representatives/details.aspx?MemberId=4863&LegislativeTermId=90"
+  },
+  "bio": "Gallop Franklin serves as State Representative for Florida House of Representatives District 8. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "FL",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://myfloridahouse.gov/Sections/Representatives/details.aspx?MemberId=4863&LegislativeTermId=90"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/fl/legislature/Gallop-Franklin-II-3c9e6522-75aa-40d0-870c-1792d5178b04.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Gallop_Franklin"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.flhouse.gov/Sections/Representatives/custom/details.aspx?MemberId=4863"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.flhouse.gov/Sections/Representatives/details.aspx?MemberId=4863"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/gallop-franklin-222485a3"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.myfloridahouse.gov/Sections/Representatives/details.aspx?MemberId=4863&LegislativeTermId=90"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

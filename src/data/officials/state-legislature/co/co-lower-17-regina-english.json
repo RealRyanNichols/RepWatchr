@@ -1,0 +1,57 @@
+{
+  "id": "regina-english",
+  "name": "Regina English",
+  "firstName": "Regina",
+  "lastName": "English",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-17",
+  "jurisdiction": "Colorado House of Representatives",
+  "county": [
+    "Colorado"
+  ],
+  "termStart": "2023-01-09",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "State Capitol Room 307, Colorado  Building 200 E. Colfax Ave., Denver, CO 80203",
+    "phone": "303-866-3069",
+    "email": "regina.english.house@coleg.gov",
+    "website": "https://leg.colorado.gov/legislators/regina-english"
+  },
+  "bio": "Regina English serves as State Representative for Colorado House of Representatives District 17. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "CO",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://leg.colorado.gov/legislators/regina-english"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/co/legislature/Regina-English-d5be5146-f7a9-46eb-86f9-b0d1cebc4e9c.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Regina_English"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Regina_English"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/206155/regina-english"
+    },
+    {
+      "title": "Public source",
+      "url": "https://leg.colorado.gov/legislators"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/regina-english-1b4bb218"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

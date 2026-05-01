@@ -1,0 +1,65 @@
+{
+  "id": "pete-harckham",
+  "name": "Pete Harckham",
+  "firstName": "Pete",
+  "lastName": "Harckham",
+  "party": "D",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-40",
+  "jurisdiction": "New York Senate",
+  "county": [
+    "New York"
+  ],
+  "termStart": "2019-01-02",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 310, Legislative Office Building 198 State St., Albany, NY 12210",
+    "phone": "518-455-2340",
+    "email": "harckham@nysenate.gov",
+    "website": "https://www.nysenate.gov/senators-committees",
+    "socialMedia": {
+      "x": "https://x.com/SenatorHarckham",
+      "twitter": "https://x.com/SenatorHarckham"
+    }
+  },
+  "bio": "Pete Harckham serves as State Senator for New York Senate District 40. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "NY",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.nysenate.gov/senators-committees"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ny/legislature/Peter-Harckham-ee71493b-ee0d-43ac-bac5-c7dde6a0ef1c.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Peter_Harckham"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Peter_Harckham"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/107594/pete-harckham"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.nysenate.gov/senators/pete-harckham"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.nysenate.gov/senators/pete-harckham/contact"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.nysenate.gov/senators/peter-harckham/contact"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

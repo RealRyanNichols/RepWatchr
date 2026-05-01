@@ -1,0 +1,72 @@
+{
+  "id": "trey-paradee",
+  "name": "Trey Paradee",
+  "firstName": "Trey",
+  "lastName": "Paradee",
+  "photo": "/images/officials/state-legislature/de/trey-paradee.jpg",
+  "photoSourceUrl": "https://senatedems.delaware.gov/wp-content/blogs.dir/219/files/sites/219/2023/03/Senator-Paradee.png",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-17",
+  "jurisdiction": "Delaware Senate",
+  "county": [
+    "Delaware"
+  ],
+  "termStart": "2018-11-07",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "P.O. Box 1401 411 Legislative Ave., Dover, DE 19901",
+    "phone": "302-744-4162",
+    "email": "trey.paradee@delaware.gov",
+    "website": "https://legis.delaware.gov/AssemblyMember/150/Paradee"
+  },
+  "bio": "Trey Paradee serves as State Senator for Delaware Senate District 17. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "DE",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://legis.delaware.gov/AssemblyMember/150/Paradee"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/de/legislature/Trey-Charles-Paradee-89be0266-5ecf-40ac-9f5c-3dba2ce79a0d.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://senatedems.delaware.gov/wp-content/blogs.dir/219/files/sites/219/2023/03/Senator-Paradee.png"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/W._Charles_Paradee"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/W._Charles_Paradee"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/109397/trey-paradee-iii"
+    },
+    {
+      "title": "legislator list page",
+      "url": "https://legis.delaware.gov/House"
+    },
+    {
+      "title": "Public source",
+      "url": "https://legis.delaware.gov/json/Senate/GetSenators"
+    },
+    {
+      "title": "Public source",
+      "url": "https://legis.delaware.gov/LegislatorDetail?personId=355"
+    },
+    {
+      "title": "legislator list page",
+      "url": "https://legis.delaware.gov/Senate"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

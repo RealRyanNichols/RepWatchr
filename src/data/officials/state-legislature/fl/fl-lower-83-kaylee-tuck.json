@@ -1,0 +1,53 @@
+{
+  "id": "kaylee-tuck",
+  "name": "Kaylee Tuck",
+  "firstName": "Kaylee",
+  "lastName": "Tuck",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-83",
+  "jurisdiction": "Florida House of Representatives",
+  "county": [
+    "Florida"
+  ],
+  "termStart": "2022-11-08",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 209, House Office Building 402 S. Monroe St., Tallahassee, FL 32399",
+    "phone": "850-717-5083",
+    "email": "kaylee.tuck@flhouse.gov",
+    "website": "https://myfloridahouse.gov/Sections/Representatives/details.aspx?MemberId=4776&LegislativeTermId=90"
+  },
+  "bio": "Kaylee Tuck serves as State Representative for Florida House of Representatives District 83. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "FL",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://myfloridahouse.gov/Sections/Representatives/details.aspx?MemberId=4776&LegislativeTermId=90"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/fl/legislature/Kaylee-Tuck-43356d29-3396-423e-9286-f7bd1e52ebde.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Kaylee_Tuck"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.flhouse.gov/Sections/Representatives/details.aspx?MemberId=4776"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/kayleetuck"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.myfloridahouse.gov/Sections/Representatives/details.aspx?MemberId=4776"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

@@ -1,0 +1,55 @@
+{
+  "id": "drew-wrigley",
+  "name": "Drew Wrigley",
+  "firstName": "Drew",
+  "lastName": "Wrigley",
+  "photo": "/images/officials/state-executive/nd/drew-wrigley.jpg",
+  "photoSourceUrl": "https://www.naag.org/wp-content/uploads/2022/02/ag-ND-Wrigley-Drew.png",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "Attorney General",
+  "district": "North Dakota",
+  "jurisdiction": "North Dakota statewide public office",
+  "county": [
+    "North Dakota"
+  ],
+  "termStart": "2022-02-09",
+  "termEnd": "2027-01-01",
+  "contactInfo": {
+    "office": "State Capitol, 600 E. Boulevard Ave.; Bismarck, ND 58505-0040",
+    "phone": "701-328-2210",
+    "website": "https://attorneygeneral.nd.gov/"
+  },
+  "bio": "Drew Wrigley is listed as Attorney General for North Dakota. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "ND",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://attorneygeneral.nd.gov/"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/nd/executive/Drew-Wrigley-b86dfdcd-93e3-40d8-929f-47f1c86813e3.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://www.naag.org/wp-content/uploads/2022/02/ag-ND-Wrigley-Drew.png"
+    },
+    {
+      "title": "Public source",
+      "url": "https://attorneygeneral.nd.gov/attorney-generals-office/attorney-general-drew-h-wrigley"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Drew_Wrigley"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.naag.org/attorney-general/drew-wrigley/"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

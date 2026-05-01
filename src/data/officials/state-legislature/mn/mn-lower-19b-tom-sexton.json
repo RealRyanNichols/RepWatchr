@@ -1,0 +1,64 @@
+{
+  "id": "tom-sexton",
+  "name": "Tom Sexton",
+  "firstName": "Tom",
+  "lastName": "Sexton",
+  "photo": "/images/officials/state-legislature/mn/tom-sexton.jpg",
+  "photoSourceUrl": "https://www.house.mn.gov/hinfo/memberimgls94/19B.gif?v=112221",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-19B",
+  "jurisdiction": "Minnesota House of Representatives",
+  "county": [
+    "Minnesota"
+  ],
+  "termStart": "2025-01-14",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Centennial Office Building 658 Cedar St., Second Floor, St. Paul, MN 55155",
+    "phone": "651-296-5368",
+    "email": "rep.tom.sexton@house.mn.gov",
+    "website": "https://www.house.mn.gov/members/profile/15645"
+  },
+  "bio": "Tom Sexton serves as State Representative for Minnesota House of Representatives District 19B. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "MN",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.house.mn.gov/members/profile/15645"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/mn/legislature/Tom-Sexton-2989633c-a60b-4337-972d-49941a4db1b6.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://www.house.mn.gov/hinfo/memberimgls94/19B.gif?v=112221"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Tom_Sexton"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Thomas_Sexton_(Minnesota_politician)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/218772/thomas-sexton"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/tom-sexton-111b5116"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.lrl.mn.gov/legdb/fulldetail?ID=15645"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

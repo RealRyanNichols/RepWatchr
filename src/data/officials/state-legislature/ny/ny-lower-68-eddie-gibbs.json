@@ -1,0 +1,68 @@
+{
+  "id": "eddie-gibbs",
+  "name": "Eddie Gibbs",
+  "firstName": "Eddie",
+  "lastName": "Gibbs",
+  "photo": "/images/officials/state-legislature/ny/eddie-gibbs.jpg",
+  "photoSourceUrl": "https://assembly.state.ny.us/write/upload/member_files/068/headshot/068.jpg?hst=1662988090",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "Assemblymember",
+  "district": "HD-68",
+  "jurisdiction": "New York State Assembly",
+  "county": [
+    "New York"
+  ],
+  "termStart": "2022-01-26",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 734, Legislative Office Building, Albany, NY 12248",
+    "phone": "518-455-4781",
+    "email": "gibbse@nyassembly.gov",
+    "website": "https://assembly.state.ny.us/mem/Eddie-Gibbs",
+    "socialMedia": {
+      "x": "https://x.com/AMEddieGibbs",
+      "twitter": "https://x.com/AMEddieGibbs"
+    }
+  },
+  "bio": "Eddie Gibbs serves as Assemblymember for New York State Assembly District 68. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "NY",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://assembly.state.ny.us/mem/Eddie-Gibbs"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ny/legislature/Eddie-Gibbs-5764a626-de74-4d88-bc53-b43b523aa75c.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://assembly.state.ny.us/write/upload/member_files/068/headshot/068.jpg?hst=1662988090"
+    },
+    {
+      "title": "Public source",
+      "url": "https://assembly.state.ny.us/mem/Edward-Gibbs"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Eddie_Gibbs"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Eddie_Gibbs_(politician)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/69171/eddie-gibbs"
+    },
+    {
+      "title": "Public source",
+      "url": "https://nyassembly.gov/mem/Edward-Gibbs"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

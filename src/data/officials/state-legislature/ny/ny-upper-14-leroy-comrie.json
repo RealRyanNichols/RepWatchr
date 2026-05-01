@@ -1,0 +1,65 @@
+{
+  "id": "leroy-comrie",
+  "name": "Leroy Comrie",
+  "firstName": "Leroy",
+  "lastName": "Comrie",
+  "party": "D",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-14",
+  "jurisdiction": "New York Senate",
+  "county": [
+    "New York"
+  ],
+  "termStart": "2015-01-01",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 913, Legislative Office Building, Albany, NY 12247",
+    "phone": "518-455-2701",
+    "email": "comrie@nysenate.gov",
+    "website": "https://www.nysenate.gov/senators-committees",
+    "socialMedia": {
+      "x": "https://x.com/LeroyComrie",
+      "twitter": "https://x.com/LeroyComrie"
+    }
+  },
+  "bio": "Leroy Comrie serves as State Senator for New York Senate District 14. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "NY",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.nysenate.gov/senators-committees"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ny/legislature/Leroy-Comrie-dbc5723f-2fad-4c3e-b051-5ea05706340f.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Leroy_Comrie"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Leroy_Comrie"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/44666/leroy-comrie"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/comrieforsenate"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.nysenate.gov/senators/leroy-comrie"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.nysenate.gov/senators/leroy-comrie/contact"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

@@ -1,0 +1,72 @@
+{
+  "id": "janice-weiner",
+  "name": "Janice Weiner",
+  "firstName": "Janice",
+  "lastName": "Weiner",
+  "photo": "/images/officials/state-legislature/ia/janice-weiner.jpg",
+  "photoSourceUrl": "https://www.legis.iowa.gov/photo?action=getPhoto&ga=91&pid=34011",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-45",
+  "jurisdiction": "Iowa Senate",
+  "county": [
+    "Iowa"
+  ],
+  "termStart": "2023-01-03",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "1007 E. Grand Ave., Des Moines, IA 50319",
+    "phone": "515-281-3371",
+    "email": "janice.weiner@legis.iowa.gov",
+    "website": "https://www.legis.iowa.gov/legislators/legislator?ga=90&personID=34011"
+  },
+  "bio": "Janice Weiner serves as State Senator for Iowa Senate District 45. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "IA",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.legis.iowa.gov/legislators/legislator?ga=90&personID=34011"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ia/legislature/Janice-Weiner-1c841d58-bdbe-4021-9126-055184cecdd5.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://www.legis.iowa.gov/photo?action=getPhoto&ga=91&pid=34011"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Janice_Weiner"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Janice_Weiner"
+    },
+    {
+      "title": "Public source",
+      "url": "https://iowasenatedemocrats.com/senator-janice-weiner"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.legis.iowa.gov/legislators/legislator?personID=34011"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.legis.iowa.gov/legislators/senate"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/jgweiner"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.senate.iowa.gov/senator/weiner"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

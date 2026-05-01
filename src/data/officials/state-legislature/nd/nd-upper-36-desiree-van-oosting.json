@@ -1,0 +1,58 @@
+{
+  "id": "desiree-van-oosting",
+  "name": "Desiree Van Oosting",
+  "firstName": "Desiree",
+  "lastName": "Van Oosting",
+  "photo": "/images/officials/state-legislature/nd/desiree-van-oosting.jpg",
+  "photoSourceUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSYgQlKUMR3p-uneRcuoLPMxOOnOdNKtaUbkA&s",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-36",
+  "jurisdiction": "North Dakota Senate",
+  "county": [
+    "North Dakota"
+  ],
+  "termStart": "2024-12-01",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "email": "dvanoosting@ndlegis.gov",
+    "website": "https://ndlegis.gov/biography/desiree-van-oosting"
+  },
+  "bio": "Desiree Van Oosting serves as State Senator for North Dakota Senate District 36. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "ND",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://ndlegis.gov/biography/desiree-van-oosting"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/nd/legislature/Desiree-Van-Oosting-4d0233df-e907-42eb-9682-fa31578f52b7.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSYgQlKUMR3p-uneRcuoLPMxOOnOdNKtaUbkA&s"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Desiree_Van_Oosting"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Desiree_Van_Oosting"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/216647/desiree-oosting"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/desiree-bourgois-van-oosting-5056379a"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

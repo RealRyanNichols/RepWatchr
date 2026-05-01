@@ -1,0 +1,56 @@
+{
+  "id": "gregg-swallow",
+  "name": "Gregg Swallow",
+  "firstName": "Gregg",
+  "lastName": "Swallow",
+  "photo": "/images/officials/state-legislature/me/gregg-swallow.jpg",
+  "photoSourceUrl": "https://legislature.maine.gov/house/house/Repository/MemberProfiles/e42361cf-f827-42a9-85de-64b34fc21ab3_swallow.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-7",
+  "jurisdiction": "Maine House of Representatives",
+  "county": [
+    "Maine"
+  ],
+  "termStart": "2022-12-07",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 332, House Republican Office 2 State House Station, Augusta, ME 04333",
+    "phone": "207-287-1440",
+    "email": "gregory.swallow@legislature.maine.gov",
+    "website": "https://legislature.maine.gov/house/house/MemberProfiles/Details/1381"
+  },
+  "bio": "Gregg Swallow serves as State Representative for Maine House of Representatives District 7. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "ME",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://legislature.maine.gov/house/house/MemberProfiles/Details/1381"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/me/legislature/Gregory-Lewis-Swallow-90989c27-4cd8-409e-8325-9bd50dac9cf4.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://legislature.maine.gov/house/house/Repository/MemberProfiles/e42361cf-f827-42a9-85de-64b34fc21ab3_swallow.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Gregory_Swallow"
+    },
+    {
+      "title": "Public source",
+      "url": "https://legislature.maine.gov/house/house/MemberProfiles/ListAlpha"
+    },
+    {
+      "title": "Public source",
+      "url": "https://mainehousegop.org/members/swallow-gregory"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

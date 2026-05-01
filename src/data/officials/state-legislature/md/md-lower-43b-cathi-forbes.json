@@ -1,0 +1,60 @@
+{
+  "id": "cathi-forbes",
+  "name": "Cathi Forbes",
+  "firstName": "Cathi",
+  "lastName": "Forbes",
+  "photo": "/images/officials/state-legislature/md/cathi-forbes.jpg",
+  "photoSourceUrl": "http://mgaleg.maryland.gov/2019RS/images/forbes01.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "Delegate",
+  "district": "HD-43B",
+  "jurisdiction": "Maryland House of Delegates",
+  "county": [
+    "Maryland"
+  ],
+  "termStart": "2023-01-11",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 304, House Office Building 6 Bladen St., Annapolis, MD 21401",
+    "phone": "410-841-3487",
+    "email": "catherine.forbes@house.maryland.gov",
+    "website": "https://mgaleg.maryland.gov/mgawebsite/Members/Details/forbes01"
+  },
+  "bio": "Cathi Forbes serves as Delegate for Maryland House of Delegates District 43B. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "MD",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://mgaleg.maryland.gov/mgawebsite/Members/Details/forbes01"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/md/legislature/Catherine-M-Forbes-3c9356a4-fd55-43ff-809f-65568d0a8e53.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "http://mgaleg.maryland.gov/2019RS/images/forbes01.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Cathi_Forbes"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Cathi_Forbes"
+    },
+    {
+      "title": "Public source",
+      "url": "https://msa.maryland.gov/msa/mdmanual/06hse/html/msa18236.html"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/cathiforbes"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

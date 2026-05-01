@@ -1,0 +1,72 @@
+{
+  "id": "julia-reed",
+  "name": "Julia Reed",
+  "firstName": "Julia",
+  "lastName": "Reed",
+  "photo": "/images/officials/state-legislature/wa/julia-reed.jpg",
+  "photoSourceUrl": "https://leg.wa.gov/memberphoto/34033.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-36",
+  "jurisdiction": "Washington House of Representatives",
+  "county": [
+    "Washington"
+  ],
+  "termStart": "2023-01-09",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 326, John L. O'Brien Building P.O. Box 40600, Olympia, WA 98504",
+    "phone": "360-786-7814",
+    "email": "julia.reed@leg.wa.gov",
+    "website": "https://housedemocrats.wa.gov/Reed/"
+  },
+  "bio": "Julia Reed serves as State Representative for Washington House of Representatives District 36. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "WA",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://housedemocrats.wa.gov/Reed/"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/wa/legislature/Julia-Reed-f99df1f1-a5ee-4fba-b497-e04ac6e4972d.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://leg.wa.gov/memberphoto/34033.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://app.leg.wa.gov/ContentParts/MemberDirectory/?a=House"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Julia_Reed"
+    },
+    {
+      "title": "Public source",
+      "url": "https://housedemocrats.wa.gov/reed"
+    },
+    {
+      "title": "Public source",
+      "url": "https://housedemocrats.wa.gov/reed/"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/207437/julia-grant-reed"
+    },
+    {
+      "title": "Public source",
+      "url": "https://leg.wa.gov/legislators/member/julia-reed"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/juliagrantreed"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

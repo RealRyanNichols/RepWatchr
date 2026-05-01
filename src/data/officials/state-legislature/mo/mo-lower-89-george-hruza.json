@@ -1,0 +1,56 @@
+{
+  "id": "george-hruza",
+  "name": "George Hruza",
+  "firstName": "George",
+  "lastName": "Hruza",
+  "photo": "/images/officials/state-legislature/mo/george-hruza.jpg",
+  "photoSourceUrl": "https://s3.amazonaws.com/ballotpedia-api4/files/thumbs/200/300/GeorgeHruza2023.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-89",
+  "jurisdiction": "Missouri House of Representatives",
+  "county": [
+    "Missouri"
+  ],
+  "termStart": "2025-01-08",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 201-G, 201 W. Capitol Ave., Jefferson City, MO 65101",
+    "phone": "573-751-1544",
+    "email": "george.hruza@house.mo.gov",
+    "website": "https://house.mo.gov/MemberDetails.aspx?district=089"
+  },
+  "bio": "George Hruza serves as State Representative for Missouri House of Representatives District 89. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "MO",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://house.mo.gov/MemberDetails.aspx?district=089"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/mo/legislature/George-Hruza-5e3e358e-622b-462c-ba56-ea42bf7c1fc2.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://s3.amazonaws.com/ballotpedia-api4/files/thumbs/200/300/GeorgeHruza2023.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/George_Hruza"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/George_J._Hruza"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/georgehruza"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

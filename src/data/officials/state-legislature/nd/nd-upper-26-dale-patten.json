@@ -1,0 +1,70 @@
+{
+  "id": "dale-patten",
+  "name": "Dale Patten",
+  "firstName": "Dale",
+  "lastName": "Patten",
+  "photo": "/images/officials/state-legislature/nd/dale-patten.jpg",
+  "photoSourceUrl": "https://www.ndlegis.gov/sites/default/files/styles/member_list_photo/public/person/photo/dpatten2023.jpg?itok=wc6NP5DG",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-26",
+  "jurisdiction": "North Dakota Senate",
+  "county": [
+    "North Dakota"
+  ],
+  "termStart": "2022-12-01",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "email": "dpatten@ndlegis.gov",
+    "website": "https://ndlegis.gov/biography/dale-patten"
+  },
+  "bio": "Dale Patten serves as State Senator for North Dakota Senate District 26. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "ND",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://ndlegis.gov/biography/dale-patten"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/nd/legislature/Dale-Patten-ffc100fb-2fbe-47d1-bfde-a2e4b0acae3c.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://www.ndlegis.gov/sites/default/files/styles/member_list_photo/public/person/photo/dpatten2023.jpg?itok=wc6NP5DG"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Dale_Patten"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Dale_Patten"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/93619/dale-patten"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.legis.nd.gov/assembly/66-2019/members/senate/senator-dale-patten"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.legis.nd.gov/assembly/67-2021/members/members-by-district"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.legis.nd.gov/assembly/67-2021/members/senate/senator-dale-patten"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/dale-patten-96631319"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

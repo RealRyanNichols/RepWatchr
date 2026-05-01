@@ -1,0 +1,64 @@
+{
+  "id": "jay-adams",
+  "name": "Jay Adams",
+  "firstName": "Jay",
+  "lastName": "Adams",
+  "photo": "/images/officials/state-legislature/nc/jay-adams.jpg",
+  "photoSourceUrl": "https://www.ncleg.gov/Members/MemberImage/H/697/Low",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-96",
+  "jurisdiction": "North Carolina House of Representatives",
+  "county": [
+    "North Carolina"
+  ],
+  "termStart": "2015-01-01",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 2207, North Carolina Legislative Building 16 W. Jones St., Raleigh, NC 27601",
+    "phone": "919-733-5988",
+    "email": "jay.adams@ncleg.gov",
+    "website": "https://www.ncleg.gov/Members/Biography/H/697"
+  },
+  "bio": "Jay Adams serves as State Representative for North Carolina House of Representatives District 96. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "NC",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.ncleg.gov/Members/Biography/H/697"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/nc/legislature/Jay-Adams-1a75f967-8f35-40aa-8b0a-990a135e70cb.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://www.ncleg.gov/Members/MemberImage/H/697/Low"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Jay_Adams"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Jay_Adams_(politician)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/150322/jay-adams-jr"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/jay-adams-541b6718"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.ncleg.gov/Members/MemberTable/H"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

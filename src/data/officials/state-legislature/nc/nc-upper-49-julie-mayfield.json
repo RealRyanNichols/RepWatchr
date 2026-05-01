@@ -1,0 +1,56 @@
+{
+  "id": "julie-mayfield",
+  "name": "Julie Mayfield",
+  "firstName": "Julie",
+  "lastName": "Mayfield",
+  "photo": "/images/officials/state-legislature/nc/julie-mayfield.jpg",
+  "photoSourceUrl": "https://www.ncleg.gov/Members/MemberImage/S/432/Low",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-49",
+  "jurisdiction": "North Carolina Senate",
+  "county": [
+    "North Carolina"
+  ],
+  "termStart": "2021-01-01",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 1025, North Carolina Legislative Building 16 W. Jones St., Raleigh, NC 27601",
+    "phone": "919-715-3001",
+    "email": "julie.mayfield@ncleg.gov",
+    "website": "https://www.ncleg.gov/Members/Biography/S/432"
+  },
+  "bio": "Julie Mayfield serves as State Senator for North Carolina Senate District 49. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "NC",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.ncleg.gov/Members/Biography/S/432"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/nc/legislature/Julie-Mayfield-c8ac71ee-e3dc-450f-83f7-efeb363e88bc.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://www.ncleg.gov/Members/MemberImage/S/432/Low"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Julie_Mayfield"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/julie-mayfield-7763059"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.ncleg.gov/Members/MemberTable/S"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

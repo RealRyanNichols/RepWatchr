@@ -1,0 +1,68 @@
+{
+  "id": "bryan-posthumus",
+  "name": "Bryan Posthumus",
+  "firstName": "Bryan",
+  "lastName": "Posthumus",
+  "photo": "/images/officials/state-legislature/mi/bryan-posthumus.jpg",
+  "photoSourceUrl": "https://dtj5wlj7ond0z.cloudfront.net/uploads/2021/01/Bryan-Posthumus_HS.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-90",
+  "jurisdiction": "Michigan House of Representatives",
+  "county": [
+    "Michigan"
+  ],
+  "termStart": "2023-01-01",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room H-153, Capitol Building 100 N Capitol Ave., Lansing, MI 48933",
+    "phone": "517-373-0830",
+    "email": "bryanposthumus@house.mi.gov",
+    "website": "https://gophouse.org/member/repbryanposthumus/about"
+  },
+  "bio": "Bryan Posthumus serves as State Representative for Michigan House of Representatives District 90. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "MI",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://gophouse.org/member/repbryanposthumus/about"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/mi/legislature/Bryan-Posthumus-c925c469-552f-448d-a89f-ef456e15da21.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://dtj5wlj7ond0z.cloudfront.net/uploads/2021/01/Bryan-Posthumus_HS.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Bryan_Posthumus"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Bryan_Posthumus"
+    },
+    {
+      "title": "Member Details Page",
+      "url": "https://repposthumus.com"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.house.mi.gov/AllRepresentatives"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.house.mi.gov/MHRPublic/frmRepListMilenia.aspx?all=true"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/bryan-posthumus-a9102414"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

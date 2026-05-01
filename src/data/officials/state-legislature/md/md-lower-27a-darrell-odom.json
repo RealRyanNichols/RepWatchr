@@ -1,0 +1,56 @@
+{
+  "id": "darrell-odom",
+  "name": "Darrell Odom",
+  "firstName": "Darrell",
+  "lastName": "Odom",
+  "photo": "/images/officials/state-legislature/md/darrell-odom.jpg",
+  "photoSourceUrl": "https://mgaleg.maryland.gov/2026RS/images/odom01.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "Delegate",
+  "district": "HD-27A",
+  "jurisdiction": "Maryland House of Delegates",
+  "county": [
+    "Maryland"
+  ],
+  "termStart": "2026-01-13",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 206, Lowe House Office Building 6 Bladen St., Annapolis, MD 21401",
+    "phone": "410-841-3257",
+    "email": "darrell.odom@house.maryland.gov",
+    "website": "https://mgaleg.maryland.gov/mgawebsite/Members/Details/odom01"
+  },
+  "bio": "Darrell Odom serves as Delegate for Maryland House of Delegates District 27A. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "MD",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://mgaleg.maryland.gov/mgawebsite/Members/Details/odom01"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/md/legislature/Darrell-Odom-1bfa80b8-7204-4f06-8b78-e3cb95b9a475.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://mgaleg.maryland.gov/2026RS/images/odom01.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Darrell_Odom"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Darrell_Odom"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/darrell-odom-4ba1a4110"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

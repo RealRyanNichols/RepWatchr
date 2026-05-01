@@ -1,0 +1,56 @@
+{
+  "id": "chad-reichard",
+  "name": "Chad Reichard",
+  "firstName": "Chad",
+  "lastName": "Reichard",
+  "photo": "/images/officials/state-legislature/pa/chad-reichard.jpg",
+  "photoSourceUrl": "https://seventy.org/uploads/attachments/cly5z27ztjodi7xnpsnqhzmfb-screenshot-2024-07-03-at-11-07-37-am.0.29.1038.1099.max.png",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-90",
+  "jurisdiction": "Pennsylvania House of Representatives",
+  "county": [
+    "Pennsylvania"
+  ],
+  "termStart": "2024-12-01",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room B16, Main Capitol Building P.O. Box 202090, Harrisburg, PA 17120",
+    "phone": "717-783-5218",
+    "email": "creichard@pahousegop.com",
+    "website": "https://repreichard.com/"
+  },
+  "bio": "Chad Reichard serves as State Representative for Pennsylvania House of Representatives District 90. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "PA",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://repreichard.com/"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/pa/legislature/Chad-Reichard-851902e6-5649-4c0c-948a-57fb9c1dd40d.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://seventy.org/uploads/attachments/cly5z27ztjodi7xnpsnqhzmfb-screenshot-2024-07-03-at-11-07-37-am.0.29.1038.1099.max.png"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Chad_Reichard"
+    },
+    {
+      "title": "Public source",
+      "url": "https://repreichard.com"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.palegis.us/house/members/bio/2028/rep-reichard"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

@@ -1,0 +1,68 @@
+{
+  "id": "elaine-marzola",
+  "name": "Elaine Marzola",
+  "firstName": "Elaine",
+  "lastName": "Marzola",
+  "photo": "/images/officials/state-legislature/nv/elaine-marzola.jpg",
+  "photoSourceUrl": "http://leg.state.nv.us/Session/83rd2025/legislators/Assembly/Images/Marzola.Elaine.376.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "Assemblymember",
+  "district": "HD-21",
+  "jurisdiction": "Nevada Assembly",
+  "county": [
+    "Nevada"
+  ],
+  "termStart": "2020-11-04",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 4108, Nevada Assembly 401 S. Carson St., Carson City, NV 89701",
+    "phone": "775-684-8839",
+    "email": "elaine.marzola@asm.state.nv.us",
+    "website": "https://www.leg.state.nv.us/App/Legislator/A/api/81st2021/Legislator?id=376"
+  },
+  "bio": "Elaine Marzola serves as Assemblymember for Nevada Assembly District 21. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "NV",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.leg.state.nv.us/App/Legislator/A/api/81st2021/Legislator?id=376"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/nv/legislature/Elaine-Marzola-a76836f8-24c9-4f90-8e13-29f417a7ad9f.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "http://leg.state.nv.us/Session/83rd2025/legislators/Assembly/Images/Marzola.Elaine.376.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Elaine_Marzola"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Elaine_Marzola"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/191161/elaine-marzola"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.leg.state.nv.us/App/Legislator/A/Assembly/Current"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.leg.state.nv.us/App/Legislator/A/Assembly/Current/21"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/elaine-marzola-964b51115"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

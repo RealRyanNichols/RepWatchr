@@ -1,0 +1,60 @@
+{
+  "id": "loren-lippincott",
+  "name": "Loren Lippincott",
+  "firstName": "Loren",
+  "lastName": "Lippincott",
+  "photo": "/images/officials/state-legislature/ne/loren-lippincott.jpg",
+  "photoSourceUrl": "https://www.nebraskalegislature.gov/media/images/senators/dist34/highres/dist34.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "NP",
+  "level": "state",
+  "position": "State Senator",
+  "district": "LD-34",
+  "jurisdiction": "Nebraska Legislature",
+  "county": [
+    "Nebraska"
+  ],
+  "termStart": "2023-01-04",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "State Capitol Room 1018, P.O. Box 94604, Lincoln, NE 68509",
+    "phone": "402-471-2630",
+    "email": "llippincott@leg.ne.gov",
+    "website": "https://nebraskalegislature.gov/senators/landing-pages/index.php?District=34"
+  },
+  "bio": "Loren Lippincott serves as State Senator for Nebraska Legislature District 34. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "NE",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://nebraskalegislature.gov/senators/landing-pages/index.php?District=34"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ne/legislature/Loren-Lippincott-2ad42fad-ae37-44a6-8933-0a942f7a85f7.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://www.nebraskalegislature.gov/media/images/senators/dist34/highres/dist34.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Loren_Lippincott"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Loren_Lippincott"
+    },
+    {
+      "title": "Public source",
+      "url": "https://nebraskalegislature.gov/senators/senator_list.php"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/loren-lippincott-954914150"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

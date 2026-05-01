@@ -1,0 +1,53 @@
+{
+  "id": "anne-marie-mastraccio",
+  "name": "Anne-Marie Mastraccio",
+  "firstName": "Anne-Marie",
+  "lastName": "Mastraccio",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-142",
+  "jurisdiction": "Maine House of Representatives",
+  "county": [
+    "Maine"
+  ],
+  "termStart": "2022-12-07",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 333, House Democratic Office 2 State House Station, Augusta, ME 04333",
+    "phone": "800-423-2900",
+    "email": "anne-marie.mastraccio@legislature.maine.gov",
+    "website": "https://legislature.maine.gov/house/house/MemberProfiles/Details/111"
+  },
+  "bio": "Anne-Marie Mastraccio serves as State Representative for Maine House of Representatives District 142. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "ME",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://legislature.maine.gov/house/house/MemberProfiles/Details/111"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/me/legislature/Anne-Marie-Mastraccio-56960ccd-b154-42ae-9fb3-c323e07c23b1.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Anne-Marie_Mastraccio"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Anne-Marie_Mastraccio"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/137415/anne-marie-mastraccio"
+    },
+    {
+      "title": "Public source",
+      "url": "https://legislature.maine.gov/house/house/MemberProfiles/ListAlpha"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

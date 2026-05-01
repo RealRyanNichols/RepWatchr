@@ -1,0 +1,69 @@
+{
+  "id": "mike-moon",
+  "name": "Mike Moon",
+  "firstName": "Mike",
+  "lastName": "Moon",
+  "party": "R",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-29",
+  "jurisdiction": "Missouri Senate",
+  "county": [
+    "Missouri"
+  ],
+  "termStart": "2021-01-06",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 220, 201 W. Capitol Ave., Jefferson City, MO 65101",
+    "phone": "573-751-1480",
+    "email": "mike.moon@senate.mo.gov",
+    "website": "https://www.house.mo.gov/MemberDetails.aspx?district=157"
+  },
+  "bio": "Mike Moon serves as State Senator for Missouri Senate District 29. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "MO",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.house.mo.gov/MemberDetails.aspx?district=157"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/mo/legislature/Mike-Moon-43563b48-1d26-4a85-bad2-615971201d41.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Mike_Moon"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Mike_Moon_(politician)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://house.mo.gov/MemberGridCluster.aspx"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/123397/mike-moon"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/mike-moon-59875820"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.senate.mo.gov/mem29"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.senate.mo.gov/senators-listing"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.senate.mo.gov/senators-listing/"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

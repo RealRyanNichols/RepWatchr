@@ -1,0 +1,59 @@
+{
+  "id": "nels-christianson",
+  "name": "Nels Christianson",
+  "firstName": "Nels",
+  "lastName": "Christianson",
+  "photo": "/images/officials/state-legislature/nd/nels-christianson.jpg",
+  "photoSourceUrl": "https://storage.googleapis.com/enview-dev-public-general/legislative-people-photos/162773.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-18",
+  "jurisdiction": "North Dakota House of Representatives",
+  "county": [
+    "North Dakota"
+  ],
+  "termStart": "2024-12-01",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "State Capitol 600 E. Boulevard Ave., Bismarck, ND 58505",
+    "email": "nchristianson@ndlegis.gov",
+    "website": "https://ndlegis.gov/biography/nels-christianson"
+  },
+  "bio": "Nels Christianson serves as State Representative for North Dakota House of Representatives District 18. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "ND",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://ndlegis.gov/biography/nels-christianson"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/nd/legislature/Nels-Christianson-1db300de-726b-44fc-b3fe-f4c918a55ea1.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://storage.googleapis.com/enview-dev-public-general/legislative-people-photos/162773.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Nels_Christianson"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Nels_Christianson"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/nels-christianson-076a28b"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/nels-christianson-32b1b0128"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

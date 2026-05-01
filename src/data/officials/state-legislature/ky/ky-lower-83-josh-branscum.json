@@ -1,0 +1,70 @@
+{
+  "id": "josh-branscum",
+  "name": "Josh Branscum",
+  "firstName": "Josh",
+  "lastName": "Branscum",
+  "photo": "/images/officials/state-legislature/ky/josh-branscum.jpg",
+  "photoSourceUrl": "https://legislature.ky.gov/Legislators%20Thumbnail%20Images/house83.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-83",
+  "jurisdiction": "Kentucky House of Representatives",
+  "county": [
+    "Kentucky"
+  ],
+  "termStart": "2021-01-01",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "email": "josh.branscum@kylegislature.gov",
+    "website": "https://legislature.ky.gov/Legislators/Pages/Legislator-Profile.aspx?DistrictNumber=83",
+    "socialMedia": {
+      "x": "https://x.com/BranscumforKY",
+      "twitter": "https://x.com/BranscumforKY"
+    }
+  },
+  "bio": "Josh Branscum serves as State Representative for Kentucky House of Representatives District 83. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "KY",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://legislature.ky.gov/Legislators/Pages/Legislator-Profile.aspx?DistrictNumber=83"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ky/legislature/Josh-Branscum-ff91cf3b-77a1-47b0-81b3-1c18f006349a.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://legislature.ky.gov/Legislators%20Thumbnail%20Images/house83.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Joshua_Branscum"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Josh_Branscum"
+    },
+    {
+      "title": "Public source",
+      "url": "https://legislature.ky.gov/Legislators/house-of-representatives"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.bloomberg.com/profile/person/20027693"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/josh-branscum-302276192"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/josh-branscum-baa4856"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

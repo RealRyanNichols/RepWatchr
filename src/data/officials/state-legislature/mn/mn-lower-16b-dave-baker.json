@@ -1,0 +1,64 @@
+{
+  "id": "dave-baker",
+  "name": "Dave Baker",
+  "firstName": "Dave",
+  "lastName": "Baker",
+  "photo": "/images/officials/state-legislature/mn/dave-baker.jpg",
+  "photoSourceUrl": "https://www.house.mn.gov/hinfo/memberimgls94/16B.gif?v=112221",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-16B",
+  "jurisdiction": "Minnesota House of Representatives",
+  "county": [
+    "Minnesota"
+  ],
+  "termStart": "2023-01-03",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Centennial Office Building 658 Cedar St., Second Floor, St. Paul, MN 55155",
+    "phone": "651-296-6206",
+    "email": "rep.dave.baker@house.mn.gov",
+    "website": "https://www.house.mn.gov/members/profile/15429"
+  },
+  "bio": "Dave Baker serves as State Representative for Minnesota House of Representatives District 16B. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "MN",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.house.mn.gov/members/profile/15429"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/mn/legislature/Dave-Baker-c0275aeb-e2ff-44c7-b4ab-cae4bf495d84.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://www.house.mn.gov/hinfo/memberimgls94/16B.gif?v=112221"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Dave_Baker_(Minnesota)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Dave_Baker_(Minnesota_politician)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/152840/dave-baker"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.house.leg.state.mn.us/members/hmem.asp"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/dave-baker-61189217"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

@@ -1,0 +1,56 @@
+{
+  "id": "erika-white",
+  "name": "Erika White",
+  "firstName": "Erika",
+  "lastName": "White",
+  "photo": "/images/officials/state-legislature/oh/erika-white.jpg",
+  "photoSourceUrl": "https://i0.wp.com/erikaforohio.org/wp-content/uploads/2024/06/Erika_2024_enhanced.png?fit=600%2C742&ssl=1",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-41",
+  "jurisdiction": "Ohio House of Representatives",
+  "county": [
+    "Ohio"
+  ],
+  "termStart": "2025-01-01",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "77 S. High St. 10th Floor, Columbus, OH 43215",
+    "phone": "614-466-1731",
+    "email": "rep41@ohiohouse.gov",
+    "website": "https://ohiohouse.gov/members/erika-white"
+  },
+  "bio": "Erika White serves as State Representative for Ohio House of Representatives District 41. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "OH",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://ohiohouse.gov/members/erika-white"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/oh/legislature/Erika-White-ab851536-a9e6-45d7-b2fe-fad70f5acf07.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://i0.wp.com/erikaforohio.org/wp-content/uploads/2024/06/Erika_2024_enhanced.png?fit=600%2C742&ssl=1"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Erika_White"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ohiohouse.gov/members/erika-white/biography"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/erika-d-white-31840024"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

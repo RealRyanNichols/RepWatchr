@@ -1,0 +1,57 @@
+{
+  "id": "joe-white",
+  "name": "Joe White",
+  "firstName": "Joe",
+  "lastName": "White",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-40",
+  "jurisdiction": "South Carolina House of Representatives",
+  "county": [
+    "South Carolina"
+  ],
+  "termStart": "2022-11-14",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 320D, Blatt Building P.O. Box 11867, Columbia, SC 29201",
+    "phone": "803-212-6951",
+    "email": "joewhite@schouse.gov",
+    "website": "https://scstatehouse.gov/member.php?code=1912499771"
+  },
+  "bio": "Joe White serves as State Representative for South Carolina House of Representatives District 40. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "SC",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://scstatehouse.gov/member.php?code=1912499771"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/sc/legislature/Joseph-S-Joe-White-e6db7b68-2d69-4585-816a-ad2c7ee9b1cc.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Joe_White_(South_Carolina)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Joe_White_(South_Carolina_politician)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/205429/joe-white"
+    },
+    {
+      "title": "Public source",
+      "url": "https://scstatehouse.gov/member.php?chamber=H"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.scstatehouse.gov/member.php?code=1912499771"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

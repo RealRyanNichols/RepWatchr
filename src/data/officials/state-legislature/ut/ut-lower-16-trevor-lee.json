@@ -1,0 +1,72 @@
+{
+  "id": "trevor-lee",
+  "name": "Trevor Lee",
+  "firstName": "Trevor",
+  "lastName": "Lee",
+  "photo": "/images/officials/state-legislature/ut/trevor-lee.jpg",
+  "photoSourceUrl": "https://le.utah.gov/images/legislator/LEETA.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-16",
+  "jurisdiction": "Utah House of Representatives",
+  "county": [
+    "Utah"
+  ],
+  "termStart": "2023-01-01",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "P.O. Box 145030 350 N. State St., Suite 350, Salt Lake City, UT 84114",
+    "phone": "801-538-1029",
+    "email": "tlee@le.utah.gov",
+    "website": "https://house.utah.gov/rep/LEETA/"
+  },
+  "bio": "Trevor Lee serves as State Representative for Utah House of Representatives District 16. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "UT",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://house.utah.gov/rep/LEETA/"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ut/legislature/Trevor-A-Lee-3187c9ea-c509-45f3-9eb4-a8ba2d8fd7d9.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://le.utah.gov/images/legislator/LEETA.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Trevor_Lee"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Trevor_Lee_(politician)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://house.utah.gov/rep/LEETA"
+    },
+    {
+      "title": "Public source",
+      "url": "https://house.utleg.gov/rep/LEETA"
+    },
+    {
+      "title": "Public source",
+      "url": "https://house.utleg.gov/rep/LEETA/"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/204605/trevor-lee"
+    },
+    {
+      "title": "Public source",
+      "url": "https://le.utah.gov/data/legislators.json"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

@@ -1,0 +1,52 @@
+{
+  "id": "terry-baker",
+  "name": "Terry Baker",
+  "firstName": "Terry",
+  "lastName": "Baker",
+  "photo": "/images/officials/state-legislature/md/terry-baker.jpg",
+  "photoSourceUrl": "https://msa.maryland.gov/msa/mdmanual/36loc/wa/leg/images/1198-1-09528b.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "Delegate",
+  "district": "HD-1C",
+  "jurisdiction": "Maryland House of Delegates",
+  "county": [
+    "Maryland"
+  ],
+  "termStart": "2023-01-11",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 323, Lowe House Office Building 6 Bladen St., Annapolis, MD 21401",
+    "phone": "410-841-3321",
+    "email": "terry.baker@house.maryland.gov",
+    "website": "https://mgaleg.maryland.gov/mgawebsite/Members/Details/baker04"
+  },
+  "bio": "Terry Baker serves as Delegate for Maryland House of Delegates District 1C. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "MD",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://mgaleg.maryland.gov/mgawebsite/Members/Details/baker04"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/md/legislature/Terry-L-Baker-e5f4fb79-fd8e-437d-9488-68fd47d430c6.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://msa.maryland.gov/msa/mdmanual/36loc/wa/leg/images/1198-1-09528b.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Terry_Baker"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Terry_Baker_(politician)"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

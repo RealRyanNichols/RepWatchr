@@ -1,0 +1,69 @@
+{
+  "id": "tony-bucco",
+  "name": "Tony Bucco",
+  "firstName": "Tony",
+  "lastName": "Bucco",
+  "party": "R",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-25",
+  "jurisdiction": "New Jersey Senate",
+  "county": [
+    "New Jersey"
+  ],
+  "termStart": "2019-10-24",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "P.O. Box 068 State House, 145 W. State St., Trenton, NJ 08625",
+    "phone": "609-847-3905",
+    "email": "senbucco@njleg.org",
+    "website": "https://bucco.senatenj.com/"
+  },
+  "bio": "Tony Bucco serves as State Senator for New Jersey Senate District 25. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "NJ",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://bucco.senatenj.com/"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/nj/legislature/Anthony-M-Bucco-f321f20f-b8af-4d0b-85ba-e7b8dcf9ae03.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Anthony_Bucco,_Jr."
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Tony_Bucco"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/122157/anthony-bucco-jr"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/asmbucco"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.njleg.state.nj.us/api/legislatorData/legislatorBio/419"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.njleg.state.nj.us/downloads.asp"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.njleg.state.nj.us/legislative-roster"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.njleg.state.nj.us/legislative-roster/419/senator-bucco"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

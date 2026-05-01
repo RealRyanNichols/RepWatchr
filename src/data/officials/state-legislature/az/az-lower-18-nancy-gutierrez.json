@@ -1,0 +1,64 @@
+{
+  "id": "nancy-gutierrez",
+  "name": "Nancy Gutierrez",
+  "firstName": "Nancy",
+  "lastName": "Gutierrez",
+  "photo": "/images/officials/state-legislature/az/nancy-gutierrez.jpg",
+  "photoSourceUrl": "https://azleg.gov/alisImages/MemberPhotos/56leg/House/GUTIERREZ.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-18",
+  "jurisdiction": "Arizona House of Representatives",
+  "county": [
+    "Arizona"
+  ],
+  "termStart": "2023-01-09",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 330, 1700 W. Washington St., Phoenix, AZ 85007",
+    "phone": "602-926-4134",
+    "email": "ngutierrez@azleg.gov",
+    "website": "https://www.azleg.gov/house-member/?legislature=56&session=127&legislator=2165"
+  },
+  "bio": "Nancy Gutierrez serves as State Representative for Arizona House of Representatives District 18. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "AZ",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.azleg.gov/house-member/?legislature=56&session=127&legislator=2165"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/az/legislature/Nancy-Gutierrez-f9216229-6490-412d-aa30-8baac5c2be3e.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://azleg.gov/alisImages/MemberPhotos/56leg/House/GUTIERREZ.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Nancy_Gutierrez"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/205615/nancy-gutierrez"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.azleg.gov/house-member/?legislature=57&session=129&legislator=2310"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.azleg.gov/memberroster/?body=H"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/nancy-gutierrez-0268253a"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

@@ -1,0 +1,53 @@
+{
+  "id": "todd-gollihare",
+  "name": "Todd Gollihare",
+  "firstName": "Todd",
+  "lastName": "Gollihare",
+  "party": "R",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-12",
+  "jurisdiction": "Oklahoma Senate",
+  "county": [
+    "Oklahoma"
+  ],
+  "termStart": "2022-11-23",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 429, 2300 N. Lincoln Blvd., Oklahoma City, OK 73105",
+    "phone": "405-521-5528",
+    "email": "todd.gollihare@oksenate.gov",
+    "website": "https://oksenate.gov/contact-senator?sid=1523282"
+  },
+  "bio": "Todd Gollihare serves as State Senator for Oklahoma Senate District 12. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "OK",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://oksenate.gov/contact-senator?sid=1523282"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ok/legislature/Todd-Gollihare-54d37a3d-68cb-4e87-9916-c38f2f0f8ed3.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Todd_Gollihare"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Todd_Gollihare"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/206331/todd-gollihare"
+    },
+    {
+      "title": "Public source",
+      "url": "https://oksenate.gov/senators/todd-gollihare"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

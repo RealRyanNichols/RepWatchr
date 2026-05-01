@@ -1,0 +1,75 @@
+{
+  "id": "buddy-fowler",
+  "name": "Buddy Fowler",
+  "firstName": "Buddy",
+  "lastName": "Fowler",
+  "photo": "/images/officials/state-legislature/va/buddy-fowler.jpg",
+  "photoSourceUrl": "https://memdata.virginiageneralassembly.gov/images/display_image/H0259",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "Delegate",
+  "district": "HD-59",
+  "jurisdiction": "Virginia House of Delegates",
+  "county": [
+    "Virginia"
+  ],
+  "termStart": "2024-01-10",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 1108, General Assembly Building 201 N. 9th St., Richmond, VA 23219",
+    "phone": "804-698-1059",
+    "email": "delbfowler@house.virginia.gov",
+    "website": "https://house.vga.virginia.gov/members/H0259",
+    "socialMedia": {
+      "facebook": "https://facebook.com/H-Buddy-Fowler-55th-District-of-VA-House-of-Delegates-580739761936432"
+    }
+  },
+  "bio": "Buddy Fowler serves as Delegate for Virginia House of Delegates District 59. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "VA",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://house.vga.virginia.gov/members/H0259"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/va/legislature/Hyland-F-Buddy-Fowler-Jr-e2ce02ec-6a92-435d-8ae2-bead5abe5ace.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://memdata.virginiageneralassembly.gov/images/display_image/H0259"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Buddy_Fowler_Jr."
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Buddy_Fowler"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/144840/buddy-fowler-jr"
+    },
+    {
+      "title": "Public source",
+      "url": "https://lis.virginia.gov/191/mbr/MBR.HTM"
+    },
+    {
+      "title": "Public source",
+      "url": "https://lis.virginia.gov/201/mbr/MBR.HTM"
+    },
+    {
+      "title": "Public source",
+      "url": "https://lis.virginia.gov/cgi-bin/legp604.exe?191+mbr+H259"
+    },
+    {
+      "title": "Public source",
+      "url": "https://lis.virginia.gov/cgi-bin/legp604.exe?201+mbr+H259"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

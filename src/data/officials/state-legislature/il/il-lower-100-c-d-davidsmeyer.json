@@ -1,0 +1,69 @@
+{
+  "id": "c-d-davidsmeyer",
+  "name": "C.D. Davidsmeyer",
+  "firstName": "C.D.",
+  "lastName": "Davidsmeyer",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-100",
+  "jurisdiction": "Illinois House of Representatives",
+  "county": [
+    "Illinois"
+  ],
+  "termStart": "2012-12-12",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 202-N, Stratton Office Building, Springfield, IL 62706",
+    "phone": "217-782-1840",
+    "email": "davidsmeyer@ilhousegop.org",
+    "website": "https://cddavidsmeyer.org/"
+  },
+  "bio": "C.D. Davidsmeyer serves as State Representative for Illinois House of Representatives District 100. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "IL",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://cddavidsmeyer.org/"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/il/legislature/CD-Davidsmeyer-384c08f3-49fd-45a7-bb7b-5689bdeae7a7.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/C.D._Davidsmeyer"
+    },
+    {
+      "title": "Public source",
+      "url": "https://cddavidsmeyer.org"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/C._D._Davidsmeyer"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ilga.gov/house/default.asp?GA=101"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ilga.gov/house/default.asp?GA=102"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ilga.gov/house/default.asp?GA=103"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ilga.gov/house/Rep.asp?GA=101&MemberID=2641"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ilga.gov/house/Rep.asp?GA=102&MemberID=2872"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

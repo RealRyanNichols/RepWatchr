@@ -1,0 +1,68 @@
+{
+  "id": "jill-dickman",
+  "name": "Jill Dickman",
+  "firstName": "Jill",
+  "lastName": "Dickman",
+  "photo": "/images/officials/state-legislature/nv/jill-dickman.jpg",
+  "photoSourceUrl": "http://www.leg.state.nv.us/Session/36th2025Special/legislators/Assembly/Images/Dickman.Jill.277.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "Assemblymember",
+  "district": "HD-31",
+  "jurisdiction": "Nevada Assembly",
+  "county": [
+    "Nevada"
+  ],
+  "termStart": "2020-11-04",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 3124, Nevada Assembly 401 S. Carson St., Carson City, NV 89701",
+    "phone": "775-684-8563",
+    "email": "jill.dickman@asm.state.nv.us",
+    "website": "https://www.leg.state.nv.us/App/Legislator/A/api/81st2021/Legislator?id=277"
+  },
+  "bio": "Jill Dickman serves as Assemblymember for Nevada Assembly District 31. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "NV",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.leg.state.nv.us/App/Legislator/A/api/81st2021/Legislator?id=277"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/nv/legislature/Jill-Dickman-70e15282-2812-4486-9d7e-06862aa45cc3.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "http://www.leg.state.nv.us/Session/36th2025Special/legislators/Assembly/Images/Dickman.Jill.277.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Jill_Dickman"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Jill_Dickman"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/key-votes/152682/jill-dickman"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.leg.state.nv.us/App/Legislator/A/Assembly/Current"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.leg.state.nv.us/App/Legislator/A/Assembly/Current/31"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/jill-dickman-59aa3985"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

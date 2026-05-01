@@ -1,0 +1,61 @@
+{
+  "id": "lori-wilson",
+  "name": "Lori Wilson",
+  "firstName": "Lori",
+  "lastName": "Wilson",
+  "party": "D",
+  "level": "state",
+  "position": "Assemblymember",
+  "district": "HD-11",
+  "jurisdiction": "California State Assembly",
+  "county": [
+    "California"
+  ],
+  "termStart": "2022-04-06",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 8110, 1021 O St. P.O. Box 942849, Sacramento, CA 94249",
+    "phone": "916-319-2011",
+    "email": "assemblymember.wilson@assembly.ca.gov",
+    "website": "https://a11.asmdc.org"
+  },
+  "bio": "Lori Wilson serves as Assemblymember for California State Assembly District 11. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "CA",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://a11.asmdc.org"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ca/legislature/Lori-D-Wilson-926d1337-0318-4c12-a291-178f10199b23.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Lori_Wilson"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Lori_Wilson_(California_politician)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/202065/lori-wilson"
+    },
+    {
+      "title": "Public source",
+      "url": "https://loridwilson.com"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.assembly.ca.gov/assemblymembers"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/loridwilson"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

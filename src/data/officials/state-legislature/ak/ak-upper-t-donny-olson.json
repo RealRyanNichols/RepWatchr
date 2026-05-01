@@ -1,0 +1,72 @@
+{
+  "id": "donny-olson",
+  "name": "Donny Olson",
+  "firstName": "Donny",
+  "lastName": "Olson",
+  "photo": "/images/officials/state-legislature/ak/donny-olson.jpg",
+  "photoSourceUrl": "http://akleg.gov/images/legislators/450x600/OLS.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-T",
+  "jurisdiction": "Alaska Senate",
+  "county": [
+    "Alaska"
+  ],
+  "termStart": "2015-01-26",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "State Capitol Room 508, 120 4th St., Juneau, AK 99801",
+    "phone": "907-465-3707",
+    "email": "senator.donald.olson@akleg.gov",
+    "website": "https://alaskasenate.org/olson/"
+  },
+  "bio": "Donny Olson serves as State Senator for Alaska Senate District T. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "AK",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://alaskasenate.org/olson/"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ak/legislature/Donny-Olson-cd3ca264-553d-4e21-a993-e3f5097b1b77.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "http://akleg.gov/images/legislators/450x600/OLS.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://alaskasenate.org/olson"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Donald_C._Olson"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Donny_Olson"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/27314/donald-olson"
+    },
+    {
+      "title": "Public source",
+      "url": "https://senatorolson.wordpress.com"
+    },
+    {
+      "title": "Public source",
+      "url": "https://w3.akleg.gov"
+    },
+    {
+      "title": "Public source",
+      "url": "https://w3.akleg.gov/"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

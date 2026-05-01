@@ -1,0 +1,58 @@
+{
+  "id": "nick-wilson",
+  "name": "Nick Wilson",
+  "firstName": "Nick",
+  "lastName": "Wilson",
+  "photo": "/images/officials/state-legislature/ky/nick-wilson.jpg",
+  "photoSourceUrl": "https://legislature.ky.gov/Legislators%20Thumbnail%20Images/house82.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-82",
+  "jurisdiction": "Kentucky House of Representatives",
+  "county": [
+    "Kentucky"
+  ],
+  "termStart": "2023-01-01",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "email": "nick.wilson@kylegislature.gov",
+    "website": "https://legislature.ky.gov/Legislators/Pages/Legislator-Profile.aspx?DistrictNumber=82"
+  },
+  "bio": "Nick Wilson serves as State Representative for Kentucky House of Representatives District 82. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "KY",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://legislature.ky.gov/Legislators/Pages/Legislator-Profile.aspx?DistrictNumber=82"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ky/legislature/Nick-Wilson-716d7b2c-0576-4bf8-b5a9-b6fa2c1f8024.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://legislature.ky.gov/Legislators%20Thumbnail%20Images/house82.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Nick_Wilson"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Nick_Wilson_(Kentucky)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Nick_Wilson_(Survivor_contestant)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://legislature.ky.gov/Legislators/house-of-representatives"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

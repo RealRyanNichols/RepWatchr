@@ -1,0 +1,72 @@
+{
+  "id": "iris-rudder",
+  "name": "Iris Rudder",
+  "firstName": "Iris",
+  "lastName": "Rudder",
+  "photo": "/images/officials/state-legislature/tn/iris-rudder.jpg",
+  "photoSourceUrl": "https://data.openstates.org/images/small/ocd-person/96432d4d-ecdf-4fa0-8a20-e8a5636fb7dd",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-39",
+  "jurisdiction": "Tennessee House of Representatives",
+  "county": [
+    "Tennessee"
+  ],
+  "termStart": "2018-11-06",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 560, Cordell Hull Building 425 Rep. John Lewis Way North, Nashville, TN 37243",
+    "phone": "615-741-8695",
+    "email": "rep.iris.rudder@capitol.tn.gov",
+    "website": "https://tnhousegop.org/members/representative-iris-rudder/"
+  },
+  "bio": "Iris Rudder serves as State Representative for Tennessee House of Representatives District 39. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "TN",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://tnhousegop.org/members/representative-iris-rudder/"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/tn/legislature/Iris-Rudder-96432d4d-ecdf-4fa0-8a20-e8a5636fb7dd.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://data.openstates.org/images/small/ocd-person/96432d4d-ecdf-4fa0-8a20-e8a5636fb7dd"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Iris_Rudder"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Iris_Rudder"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/163549/iris-rudder"
+    },
+    {
+      "title": "Public source",
+      "url": "https://tnhousegop.org/members/representative-iris-rudder"
+    },
+    {
+      "title": "Public source",
+      "url": "https://wapp.capitol.tn.gov/apps/LegislatorInfo/directory.aspx?chamber=H"
+    },
+    {
+      "title": "Public source",
+      "url": "https://wapp.capitol.tn.gov/apps/legislatorinfo/member.aspx?district=H39"
+    },
+    {
+      "title": "Public source",
+      "url": "https://wapp.capitol.tn.gov/apps/legislatorinfo/member?district=H39"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

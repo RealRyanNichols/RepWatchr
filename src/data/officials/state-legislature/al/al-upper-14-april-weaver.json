@@ -1,0 +1,72 @@
+{
+  "id": "april-weaver",
+  "name": "April Weaver",
+  "firstName": "April",
+  "lastName": "Weaver",
+  "photo": "/images/officials/state-legislature/al/april-weaver.jpg",
+  "photoSourceUrl": "https://www.legislature.state.al.us/pdf/senate/members/Weaver_14.png",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-14",
+  "jurisdiction": "Alabama Senate",
+  "county": [
+    "Alabama"
+  ],
+  "termStart": "2021-07-14",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 733, 11 S. Union St., Montgomery, AL 36130",
+    "phone": "334-261-0886",
+    "email": "april.weaver@alsenate.gov",
+    "website": "https://alison.legislature.state.al.us/senate-leaders-members"
+  },
+  "bio": "April Weaver serves as State Senator for Alabama Senate District 14. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "AL",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://alison.legislature.state.al.us/senate-leaders-members"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/al/legislature/April-Weaver-15ebe01e-1447-4bdb-8dfb-e9d5948b872d.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://www.legislature.state.al.us/pdf/senate/members/Weaver_14.png"
+    },
+    {
+      "title": "Public source",
+      "url": "https://alsenaterepublicans.org/representatives/0014-april-weaver"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/April_Weaver_(Alabama)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/April_Weaver"
+    },
+    {
+      "title": "graphql endpoint for member information",
+      "url": "https://gql.api.alison.legislature.state.al.us/graphql"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/121534/april-weaver"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.legislature.state.al.us/aliswww/ISD/ALRepresentative.aspx?OID_SPONSOR=100530&OID_PERSON=6684"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.legislature.state.al.us/aliswww/ISD/ALSenator.aspx?NAME=Weaver&OID_SPONSOR=110577&OID_PERSON=6684&SESSNAME=Regular%20Session%202022"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

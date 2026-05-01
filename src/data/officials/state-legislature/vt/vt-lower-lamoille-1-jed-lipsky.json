@@ -1,0 +1,64 @@
+{
+  "id": "jed-lipsky",
+  "name": "Jed Lipsky",
+  "firstName": "Jed",
+  "lastName": "Lipsky",
+  "photo": "/images/officials/state-legislature/vt/jed-lipsky.jpg",
+  "photoSourceUrl": "https://bloximages.chicago2.vip.townnews.com/vtcng.com/content/tncms/assets/v3/editorial/b/61/b61c72f4-e286-11ec-823a-9b701652a585/6298d426f0838.image.jpg?resize=375%2C500",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "I",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-Lamoille-1",
+  "jurisdiction": "Vermont House of Representatives",
+  "county": [
+    "Vermont"
+  ],
+  "termStart": "2023-01-04",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Vermont State House 115 State St., Montpelier, VT 05633",
+    "phone": "802-828-2228",
+    "email": "jlipsky@leg.state.vt.us",
+    "website": "https://legislature.vermont.gov/Documents/SmallMaps/2022/House/Lamoille-1.pdf"
+  },
+  "bio": "Jed Lipsky serves as State Representative for Vermont House of Representatives District Lamoille-1. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "VT",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://legislature.vermont.gov/Documents/SmallMaps/2022/House/Lamoille-1.pdf"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/vt/legislature/Jed-Lipsky-5581159f-1776-41de-ab76-72c8fe5167c0.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://bloximages.chicago2.vip.townnews.com/vtcng.com/content/tncms/assets/v3/editorial/b/61/b61c72f4-e286-11ec-823a-9b701652a585/6298d426f0838.image.jpg?resize=375%2C500"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Jed_Lipsky"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Jed_Lipsky"
+    },
+    {
+      "title": "Public source",
+      "url": "https://legislature.vermont.gov/people/loadAll/2024"
+    },
+    {
+      "title": "Public source",
+      "url": "https://legislature.vermont.gov/people/single/2024/37385"
+    },
+    {
+      "title": "Public source",
+      "url": "https://legislature.vermont.gov/people/single/2026/37385"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

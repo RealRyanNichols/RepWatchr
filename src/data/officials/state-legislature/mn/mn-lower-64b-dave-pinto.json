@@ -1,0 +1,64 @@
+{
+  "id": "dave-pinto",
+  "name": "Dave Pinto",
+  "firstName": "Dave",
+  "lastName": "Pinto",
+  "photo": "/images/officials/state-legislature/mn/dave-pinto.jpg",
+  "photoSourceUrl": "https://www.house.mn.gov/hinfo/memberimgls94/64B.gif?v=112221",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-64B",
+  "jurisdiction": "Minnesota House of Representatives",
+  "county": [
+    "Minnesota"
+  ],
+  "termStart": "2015-01-06",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Centennial Office Building 658 Cedar St., Fifth Floor, St. Paul, MN 55155",
+    "phone": "651-296-4199",
+    "email": "rep.dave.pinto@house.mn.gov",
+    "website": "https://www.house.mn.gov/members/profile/15444"
+  },
+  "bio": "Dave Pinto serves as State Representative for Minnesota House of Representatives District 64B. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "MN",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.house.mn.gov/members/profile/15444"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/mn/legislature/Dave-Pinto-a8c6c773-371b-4df9-a57a-5d2565c7b876.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://www.house.mn.gov/hinfo/memberimgls94/64B.gif?v=112221"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Dave_Pinto"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Dave_Pinto"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/152837/dave-pinto"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.house.leg.state.mn.us/members/hmem.asp"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/davepinto"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

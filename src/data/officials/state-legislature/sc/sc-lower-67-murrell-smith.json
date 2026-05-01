@@ -1,0 +1,65 @@
+{
+  "id": "murrell-smith",
+  "name": "Murrell Smith",
+  "firstName": "Murrell",
+  "lastName": "Smith",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-67",
+  "jurisdiction": "South Carolina House of Representatives",
+  "county": [
+    "South Carolina"
+  ],
+  "termStart": "",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 506, Blatt Building P.O. Box 11867, Columbia, SC 29201",
+    "phone": "803-734-3125",
+    "email": "murrellsmith@schouse.gov",
+    "website": "https://scstatehouse.gov/member.php?code=1703408887"
+  },
+  "bio": "Murrell Smith serves as State Representative for South Carolina House of Representatives District 67. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "SC",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://scstatehouse.gov/member.php?code=1703408887"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/sc/legislature/G-Murrell-Smith-Jr-bc549137-780f-4b77-9438-61a92d3dce48.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/George_Smith_Jr."
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/G._Murrell_Smith_Jr."
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/121732/murrell-smith-jr"
+    },
+    {
+      "title": "Public source",
+      "url": "https://scstatehouse.gov/member.php?chamber=H"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/murrell-smith-4442869"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.scstatehouse.gov/member.php?chamber=H"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.scstatehouse.gov/member.php?code=1703408887"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

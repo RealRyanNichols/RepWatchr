@@ -1,0 +1,52 @@
+{
+  "id": "bryan-cohn",
+  "name": "Bryan Cohn",
+  "firstName": "Bryan",
+  "lastName": "Cohn",
+  "photo": "/images/officials/state-legislature/nc/bryan-cohn.jpg",
+  "photoSourceUrl": "https://s3.amazonaws.com/ballotpedia-api4/files/thumbs/200/300/Bryan__Cohn__20240808_093541.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-32",
+  "jurisdiction": "North Carolina House of Representatives",
+  "county": [
+    "North Carolina"
+  ],
+  "termStart": "2025-01-01",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 1211, North Carolina Legislative Building 16 W. Jones St., Raleigh, NC 27601",
+    "phone": "919-733-5824",
+    "email": "bryan.cohn@ncleg.gov",
+    "website": "https://www.ncleg.gov/Members/Biography/H/827"
+  },
+  "bio": "Bryan Cohn serves as State Representative for North Carolina House of Representatives District 32. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "NC",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.ncleg.gov/Members/Biography/H/827"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/nc/legislature/Bryan-Cohn-e596d2ce-a208-475c-a9c1-15e25ccb3404.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://s3.amazonaws.com/ballotpedia-api4/files/thumbs/200/300/Bryan__Cohn__20240808_093541.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Bryan_Cohn"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/rep-bryan-cohn-633342b7"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

@@ -1,0 +1,57 @@
+{
+  "id": "polly-thomas",
+  "name": "Polly Thomas",
+  "firstName": "Polly",
+  "lastName": "Thomas",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-80",
+  "jurisdiction": "Louisiana House of Representatives",
+  "county": [
+    "Louisiana"
+  ],
+  "termStart": "2016-08-24",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "P.O. Box 94062 900 N. 3rd St., Baton Rouge, LA 70804",
+    "phone": "225-342-6945",
+    "email": "thomaspj@legis.la.gov",
+    "website": "https://house.louisiana.gov/H_Reps/members.aspx?ID=80"
+  },
+  "bio": "Polly Thomas serves as State Representative for Louisiana House of Representatives District 80. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "LA",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://house.louisiana.gov/H_Reps/members.aspx?ID=80"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/la/legislature/Polly-Thomas-d95410b8-a66c-4662-bcc6-1884252e061b.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Polly_Thomas"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Polly_Thomas"
+    },
+    {
+      "title": "Public source",
+      "url": "https://house.louisiana.gov/H_Reps/H_Reps_FullInfo"
+    },
+    {
+      "title": "Public source",
+      "url": "https://house.louisiana.gov/H_Reps/members?ID=80"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/35438/polly-thomas"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

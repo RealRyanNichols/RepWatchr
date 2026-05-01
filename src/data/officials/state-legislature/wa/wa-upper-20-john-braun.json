@@ -1,0 +1,72 @@
+{
+  "id": "john-braun",
+  "name": "John Braun",
+  "firstName": "John",
+  "lastName": "Braun",
+  "photo": "/images/officials/state-legislature/wa/john-braun.jpg",
+  "photoSourceUrl": "https://leg.wa.gov/memberphoto/17289.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-20",
+  "jurisdiction": "Washington Senate",
+  "county": [
+    "Washington"
+  ],
+  "termStart": "2013-01-14",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 314, Legislative Building P.O. Box 40420, Olympia, WA 98504",
+    "phone": "360-786-7638",
+    "email": "john.braun@leg.wa.gov",
+    "website": "https://JohnBraun.src.wastateleg.org/"
+  },
+  "bio": "John Braun serves as State Senator for Washington Senate District 20. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "WA",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://JohnBraun.src.wastateleg.org/"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/wa/legislature/John-Braun-b4856c5b-d3e0-4227-a4c0-ff6abe81fda7.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://leg.wa.gov/memberphoto/17289.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://app.leg.wa.gov/ContentParts/MemberDirectory/?a=Senate"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/John_Braun"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/John_E._Braun"
+    },
+    {
+      "title": "Public source",
+      "url": "https://johnbraun.src.wastateleg.org"
+    },
+    {
+      "title": "Public source",
+      "url": "https://johnbraun.src.wastateleg.org/"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/140192/john-braun"
+    },
+    {
+      "title": "Public source",
+      "url": "https://leg.wa.gov/legislators/member/john-braun"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

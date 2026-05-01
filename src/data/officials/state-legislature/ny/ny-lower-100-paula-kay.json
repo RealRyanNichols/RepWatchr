@@ -1,0 +1,60 @@
+{
+  "id": "paula-kay",
+  "name": "Paula Kay",
+  "firstName": "Paula",
+  "lastName": "Kay",
+  "photo": "/images/officials/state-legislature/ny/paula-kay.jpg",
+  "photoSourceUrl": "https://s3.amazonaws.com/ballotpedia-api4/files/thumbs/200/300/Rebecca_Gatto_20240808_100808.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "Assemblymember",
+  "district": "HD-100",
+  "jurisdiction": "New York State Assembly",
+  "county": [
+    "New York"
+  ],
+  "termStart": "2025-01-01",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 435, Legislative Office Building, Albany, NY 12248",
+    "phone": "518-455-5355",
+    "email": "kayp@nyassembly.gov",
+    "website": "https://nyassembly.gov/mem/Paula-Elaine-Kay"
+  },
+  "bio": "Paula Kay serves as Assemblymember for New York State Assembly District 100. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "NY",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://nyassembly.gov/mem/Paula-Elaine-Kay"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ny/legislature/Paula-Kay-ef4d73c0-2772-42ce-bc8b-407abf745f27.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://s3.amazonaws.com/ballotpedia-api4/files/thumbs/200/300/Rebecca_Gatto_20240808_100808.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Paula_Kay"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Paula_Kay"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/216765/paula-kay"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/paula-elaine-kay-93078910"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

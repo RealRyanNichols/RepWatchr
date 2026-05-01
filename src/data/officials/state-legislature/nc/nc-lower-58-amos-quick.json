@@ -1,0 +1,64 @@
+{
+  "id": "amos-quick",
+  "name": "Amos Quick",
+  "firstName": "Amos",
+  "lastName": "Quick",
+  "photo": "/images/officials/state-legislature/nc/amos-quick.jpg",
+  "photoSourceUrl": "https://www.ncleg.gov/Members/MemberImage/H/725/Low",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-58",
+  "jurisdiction": "North Carolina House of Representatives",
+  "county": [
+    "North Carolina"
+  ],
+  "termStart": "2017-01-01",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 510, Legislative Office Building 300 N. Salisbury St., Raleigh, NC 27603",
+    "phone": "919-733-5902",
+    "email": "amos.quick@ncleg.gov",
+    "website": "https://www.ncleg.gov/Members/Biography/H/725"
+  },
+  "bio": "Amos Quick serves as State Representative for North Carolina House of Representatives District 58. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "NC",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.ncleg.gov/Members/Biography/H/725"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/nc/legislature/Amos-L-Quick-III-46275779-8191-48be-8b0b-8373376fa23d.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://www.ncleg.gov/Members/MemberImage/H/725/Low"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Amos_Quick"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Amos_Quick"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/166622/amos-quick-iii"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/amos-quick-8505a81b"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.ncleg.gov/Members/MemberTable/H"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

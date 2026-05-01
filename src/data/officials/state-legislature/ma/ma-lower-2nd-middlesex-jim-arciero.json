@@ -1,0 +1,72 @@
+{
+  "id": "jim-arciero",
+  "name": "Jim Arciero",
+  "firstName": "Jim",
+  "lastName": "Arciero",
+  "photo": "/images/officials/state-legislature/ma/jim-arciero.jpg",
+  "photoSourceUrl": "https://malegislature.gov/Legislators/Profile/170/J_A1.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-2nd Middlesex",
+  "jurisdiction": "Massachusetts House of Representatives",
+  "county": [
+    "Massachusetts"
+  ],
+  "termStart": "2009-01-07",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 134, State House 24 Beacon St., Boston, MA 02133",
+    "phone": "617-722-2400",
+    "email": "james.arciero@mahouse.gov",
+    "website": "https://malegislature.gov/Legislators/Profile/J_A1"
+  },
+  "bio": "Jim Arciero serves as State Representative for Massachusetts House of Representatives District 2nd Middlesex. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "MA",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://malegislature.gov/Legislators/Profile/J_A1"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ma/legislature/James-Arciero-70e42c78-89e1-43cb-bc65-7d0da132daa2.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://malegislature.gov/Legislators/Profile/170/J_A1.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/James_Arciero"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/James_Arciero"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/109539/jim-arciero"
+    },
+    {
+      "title": "Public source",
+      "url": "https://malegislature.gov/api/GeneralCourts/192/LegislativeMembers"
+    },
+    {
+      "title": "Public source",
+      "url": "https://malegislature.gov/api/GeneralCourts/192/LegislativeMembers/"
+    },
+    {
+      "title": "Public source",
+      "url": "https://malegislature.gov/api/GeneralCourts/192/LegislativeMembers/J_A1"
+    },
+    {
+      "title": "Public source",
+      "url": "https://malegislature.gov/api/GeneralCourts/193/LegislativeMembers"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

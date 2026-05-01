@@ -1,0 +1,56 @@
+{
+  "id": "jim-white",
+  "name": "Jim White",
+  "firstName": "Jim",
+  "lastName": "White",
+  "photo": "/images/officials/state-legislature/me/jim-white.jpg",
+  "photoSourceUrl": "https://legislature.maine.gov/house/house/Repository/MemberProfiles/4f4a6b7f-2c72-4910-848e-2f14ebf20832_WHITEJ.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-30",
+  "jurisdiction": "Maine House of Representatives",
+  "county": [
+    "Maine"
+  ],
+  "termStart": "2022-12-07",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 332, House Republican Office 2 State House Station, Augusta, ME 04333",
+    "phone": "207-287-1440",
+    "email": "james.white@legislature.maine.gov",
+    "website": "https://legislature.maine.gov/house/house/MemberProfiles/Details/1466"
+  },
+  "bio": "Jim White serves as State Representative for Maine House of Representatives District 30. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "ME",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://legislature.maine.gov/house/house/MemberProfiles/Details/1466"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/me/legislature/James-Lee-White-54f9af68-0a59-4cd7-a448-40725e8781ab.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://legislature.maine.gov/house/house/Repository/MemberProfiles/4f4a6b7f-2c72-4910-848e-2f14ebf20832_WHITEJ.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/James_White_(Maine)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://legislature.maine.gov/house/house/MemberProfiles/ListAlpha"
+    },
+    {
+      "title": "Public source",
+      "url": "https://mainehousegop.org/members/white-james"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

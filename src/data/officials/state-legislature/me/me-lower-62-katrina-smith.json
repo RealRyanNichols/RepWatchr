@@ -1,0 +1,60 @@
+{
+  "id": "katrina-smith",
+  "name": "Katrina Smith",
+  "firstName": "Katrina",
+  "lastName": "Smith",
+  "photo": "/images/officials/state-legislature/me/katrina-smith.jpg",
+  "photoSourceUrl": "https://legislature.maine.gov/house/house/Repository/MemberProfiles/5d2a8b6b-bea9-4f98-ad05-6d20c8f83aa6_KSMITH.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-62",
+  "jurisdiction": "Maine House of Representatives",
+  "county": [
+    "Maine"
+  ],
+  "termStart": "2022-12-07",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 332, House Republican Office 2 State House Station, Augusta, ME 04333",
+    "phone": "207-287-1440",
+    "email": "katrina.smith@legislature.maine.gov",
+    "website": "https://legislature.maine.gov/house/house/MemberProfiles/Details/1505"
+  },
+  "bio": "Katrina Smith serves as State Representative for Maine House of Representatives District 62. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "ME",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://legislature.maine.gov/house/house/MemberProfiles/Details/1505"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/me/legislature/Katrina-J-Smith-b07e421b-8c1f-473d-aa7a-10d71e8a443b.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://legislature.maine.gov/house/house/Repository/MemberProfiles/5d2a8b6b-bea9-4f98-ad05-6d20c8f83aa6_KSMITH.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Katrina_Smith"
+    },
+    {
+      "title": "Public source",
+      "url": "https://legislature.maine.gov/house/house/MemberProfiles/ListAlpha"
+    },
+    {
+      "title": "Public source",
+      "url": "https://mainehousegop.org/members/smith-katrina"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/katrina-smith-14215914b"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

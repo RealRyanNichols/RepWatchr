@@ -1,0 +1,72 @@
+{
+  "id": "jessica-giannino",
+  "name": "Jessica Giannino",
+  "firstName": "Jessica",
+  "lastName": "Giannino",
+  "photo": "/images/officials/state-legislature/ma/jessica-giannino.jpg",
+  "photoSourceUrl": "https://malegislature.gov/Legislators/Profile/170/JAG1.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-16th Suffolk",
+  "jurisdiction": "Massachusetts House of Representatives",
+  "county": [
+    "Massachusetts"
+  ],
+  "termStart": "2021-01-06",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 527A, State House 24 Beacon St., Boston, MA 02133",
+    "phone": "617-722-2020",
+    "email": "jessica.giannino@mahouse.gov",
+    "website": "https://malegislature.gov/Legislators/Profile/JAG1"
+  },
+  "bio": "Jessica Giannino serves as State Representative for Massachusetts House of Representatives District 16th Suffolk. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "MA",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://malegislature.gov/Legislators/Profile/JAG1"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ma/legislature/Jessica-Ann-Giannino-0ed98993-456c-4630-bd52-894bdde0c0b0.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://malegislature.gov/Legislators/Profile/170/JAG1.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Jessica_Giannino"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Jessica_Giannino"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/148815/jessica-giannino"
+    },
+    {
+      "title": "Public source",
+      "url": "https://malegislature.gov/api/GeneralCourts/192/LegislativeMembers"
+    },
+    {
+      "title": "Public source",
+      "url": "https://malegislature.gov/api/GeneralCourts/192/LegislativeMembers/"
+    },
+    {
+      "title": "Public source",
+      "url": "https://malegislature.gov/api/GeneralCourts/192/LegislativeMembers/JAG1"
+    },
+    {
+      "title": "Public source",
+      "url": "https://malegislature.gov/api/GeneralCourts/193/LegislativeMembers"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

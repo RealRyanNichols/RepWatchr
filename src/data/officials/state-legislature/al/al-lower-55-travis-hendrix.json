@@ -1,0 +1,64 @@
+{
+  "id": "travis-hendrix",
+  "name": "Travis Hendrix",
+  "firstName": "Travis",
+  "lastName": "Hendrix",
+  "photo": "/images/officials/state-legislature/al/travis-hendrix.jpg",
+  "photoSourceUrl": "https://www.legislature.state.al.us/pdf/house/members/Hendrix_55.png",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-55",
+  "jurisdiction": "Alabama House of Representatives",
+  "county": [
+    "Alabama"
+  ],
+  "termStart": "2023-10-25",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 540-A, 11 S. Union St., Montgomery, AL 36130",
+    "phone": "334-261-0452",
+    "email": "hendrixfor55@gmail.com",
+    "website": "https://alison.legislature.state.al.us/house-leaders-members"
+  },
+  "bio": "Travis Hendrix serves as State Representative for Alabama House of Representatives District 55. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "AL",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://alison.legislature.state.al.us/house-leaders-members"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/al/legislature/Travis-Hendrix-03ab8e26-365c-4dab-8e49-df2a8b7613f8.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://www.legislature.state.al.us/pdf/house/members/Hendrix_55.png"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Travis_Hendrix"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Travis_Hendrix"
+    },
+    {
+      "title": "graphql endpoint for member information",
+      "url": "https://gql.api.alison.legislature.state.al.us/graphql"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/201900/travis-hendrix"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/travis-hendrix-40a413b7"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

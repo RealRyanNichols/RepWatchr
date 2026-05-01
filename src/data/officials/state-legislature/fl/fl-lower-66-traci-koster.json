@@ -1,0 +1,61 @@
+{
+  "id": "traci-koster",
+  "name": "Traci Koster",
+  "firstName": "Traci",
+  "lastName": "Koster",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-66",
+  "jurisdiction": "Florida House of Representatives",
+  "county": [
+    "Florida"
+  ],
+  "termStart": "2022-11-08",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 412, House Office Building 402 S. Monroe St., Tallahassee, FL 32399",
+    "phone": "850-717-5066",
+    "email": "traci.koster@flhouse.gov",
+    "website": "https://myfloridahouse.gov/Sections/Representatives/details.aspx?MemberId=4779&LegislativeTermId=90"
+  },
+  "bio": "Traci Koster serves as State Representative for Florida House of Representatives District 66. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "FL",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://myfloridahouse.gov/Sections/Representatives/details.aspx?MemberId=4779&LegislativeTermId=90"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/fl/legislature/Traci-Koster-217f848d-99c2-43aa-98d2-6fee2812c1e6.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Traci_Koster"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Traci_Koster"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.flhouse.gov/Sections/Representatives/details.aspx?MemberId=4779"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/traci-koster-8a234b3"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.myfloridahouse.gov/Sections/Representatives/details.aspx?MemberId=4779"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.myfloridahouse.gov/Sections/Representatives/details.aspx?MemberId=4779&LegislativeTermId=89"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

@@ -1,0 +1,72 @@
+{
+  "id": "pat-serpa",
+  "name": "Pat Serpa",
+  "firstName": "Pat",
+  "lastName": "Serpa",
+  "photo": "/images/officials/state-legislature/ri/pat-serpa.jpg",
+  "photoSourceUrl": "http://www.rilegislature.gov/representatives/pictures/serpa.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-27",
+  "jurisdiction": "Rhode Island House of Representatives",
+  "county": [
+    "Rhode Island"
+  ],
+  "termStart": "2007-01-02",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "82 Smith St., Providence, RI 02903",
+    "phone": "401-222-3580",
+    "email": "rep-serpa@rilegislature.gov",
+    "website": "https://www.rilegislature.gov/representatives/carson/default.aspx"
+  },
+  "bio": "Pat Serpa serves as State Representative for Rhode Island House of Representatives District 27. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "RI",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.rilegislature.gov/representatives/carson/default.aspx"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ri/legislature/Patricia-A-Serpa-45fd70a7-613e-405d-959f-2900eea0f264.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "http://www.rilegislature.gov/representatives/pictures/serpa.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Patricia_Serpa"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Patricia_Serpa"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/67214/patricia-serpa"
+    },
+    {
+      "title": "Public source",
+      "url": "https://webserver.rilin.state.ri.us/Email/RepEmailListDistrict.asp"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/patricia-serpa-b3921614"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.rilegislature.gov/representatives/serpa/default.aspx"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.rilegislature.gov/representatives/Serpa/Pages/Biography.aspx"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

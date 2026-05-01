@@ -1,0 +1,60 @@
+{
+  "id": "robert-reese",
+  "name": "Robert Reese",
+  "firstName": "Robert",
+  "lastName": "Reese",
+  "photo": "/images/officials/state-legislature/sc/robert-reese.jpg",
+  "photoSourceUrl": "https://i0.wp.com/robertreeseforsc70.com/wp-content/uploads/2024/05/Rob_Marketing_-08-removebg-preview.png?w=408&ssl=1",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-70",
+  "jurisdiction": "South Carolina House of Representatives",
+  "county": [
+    "South Carolina"
+  ],
+  "termStart": "2024-11-11",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 314A, Blatt Building P.O. Box 11867, Columbia, SC 29211",
+    "phone": "803-212-4473",
+    "email": "robertreese@schouse.gov",
+    "website": "https://www.scstatehouse.gov/member.php?code=1527840726"
+  },
+  "bio": "Robert Reese serves as State Representative for South Carolina House of Representatives District 70. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "SC",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.scstatehouse.gov/member.php?code=1527840726"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/sc/legislature/Robert-Reese-82c25564-6f95-4fbc-96b8-2ab8a5954a4b.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://i0.wp.com/robertreeseforsc70.com/wp-content/uploads/2024/05/Rob_Marketing_-08-removebg-preview.png?w=408&ssl=1"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Robert_Reese"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Robert_Reese"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/216350/robert-reese"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/robert-reese-47903928"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

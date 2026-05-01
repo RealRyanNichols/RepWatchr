@@ -1,0 +1,55 @@
+{
+  "id": "darin-mccann",
+  "name": "Darin McCann",
+  "firstName": "Darin",
+  "lastName": "McCann",
+  "photo": "/images/officials/state-legislature/wy/darin-mccann.jpg",
+  "photoSourceUrl": "https://wyoleg.gov/LegislatorSummary/Photos/68th-McCannDarin.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-48",
+  "jurisdiction": "Wyoming House of Representatives",
+  "county": [
+    "Wyoming"
+  ],
+  "termStart": "2025-01-06",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "State Capitol 200 W. 24th St., Cheyenne, WY 82002",
+    "email": "darin.mccann@wyoleg.gov",
+    "website": "https://wyoleg.gov/Legislators/2025/H/2130"
+  },
+  "bio": "Darin McCann serves as State Representative for Wyoming House of Representatives District 48. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "WY",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://wyoleg.gov/Legislators/2025/H/2130"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/wy/legislature/Darin-McCann-ff389664-aac3-4241-abc7-3a8e781e5989.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://wyoleg.gov/LegislatorSummary/Photos/68th-McCannDarin.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Darin_McCann"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/218347/darin-mccann"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/darin-mccann-29258930"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

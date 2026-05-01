@@ -1,0 +1,69 @@
+{
+  "id": "holly-schepisi",
+  "name": "Holly Schepisi",
+  "firstName": "Holly",
+  "lastName": "Schepisi",
+  "party": "R",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-39",
+  "jurisdiction": "New Jersey Senate",
+  "county": [
+    "New Jersey"
+  ],
+  "termStart": "2021-03-25",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "P.O. Box 068 State House, 145 W. State St., Trenton, NJ 08625",
+    "phone": "609-847-3905",
+    "email": "senschepisi@njleg.org",
+    "website": "https://schepisi.senatenj.com/"
+  },
+  "bio": "Holly Schepisi serves as State Senator for New Jersey Senate District 39. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "NJ",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://schepisi.senatenj.com/"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/nj/legislature/Holly-T-Schepisi-57fe7d05-af12-4f44-b143-e19814f2cfa2.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Holly_Schepisi"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Holly_Schepisi"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/134860/holly-schepisi"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/holly-schepisi-78bb81"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.njleg.state.nj.us/api/legislatorData/legislatorBio/430"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.njleg.state.nj.us/downloads.asp"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.njleg.state.nj.us/legislative-roster"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.njleg.state.nj.us/legislative-roster/430/senator-schepisi"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

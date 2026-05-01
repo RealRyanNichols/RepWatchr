@@ -1,0 +1,64 @@
+{
+  "id": "warren-daniel",
+  "name": "Warren Daniel",
+  "firstName": "Warren",
+  "lastName": "Daniel",
+  "photo": "/images/officials/state-legislature/nc/warren-daniel.jpg",
+  "photoSourceUrl": "https://www.ncleg.gov/Members/MemberImage/S/295/Low",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-46",
+  "jurisdiction": "North Carolina Senate",
+  "county": [
+    "North Carolina"
+  ],
+  "termStart": "2013-01-01",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 627, Legislative Office Building 300 N. Salisbury St., Raleigh, NC 27603",
+    "phone": "919-715-7823",
+    "email": "warren.daniel@ncleg.gov",
+    "website": "https://www.ncleg.gov/Members/Biography/S/295"
+  },
+  "bio": "Warren Daniel serves as State Senator for North Carolina Senate District 46. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "NC",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.ncleg.gov/Members/Biography/S/295"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/nc/legislature/Warren-Daniel-5397305f-16ba-460d-aa16-3bee6185299b.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://www.ncleg.gov/Members/MemberImage/S/295/Low"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Warren_Daniel"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Warren_Daniel"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/117792/warren-daniel"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/warren-daniel-91842a11"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.ncleg.gov/Members/MemberTable/S"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

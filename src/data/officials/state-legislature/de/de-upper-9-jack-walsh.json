@@ -1,0 +1,72 @@
+{
+  "id": "jack-walsh",
+  "name": "Jack Walsh",
+  "firstName": "Jack",
+  "lastName": "Walsh",
+  "photo": "/images/officials/state-legislature/de/jack-walsh.jpg",
+  "photoSourceUrl": "https://senatedems.delaware.gov/wp-content/blogs.dir/219/files/sites/219/2023/03/Senator-Walsh.png",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-9",
+  "jurisdiction": "Delaware Senate",
+  "county": [
+    "Delaware"
+  ],
+  "termStart": "2016-11-09",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "P.O. Box 1401 411 Legislative Ave., Dover, DE 19901",
+    "phone": "302-744-4163",
+    "email": "john.walsh@delaware.gov",
+    "website": "https://legis.delaware.gov/AssemblyMember/150/Walsh"
+  },
+  "bio": "Jack Walsh serves as State Senator for Delaware Senate District 9. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "DE",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://legis.delaware.gov/AssemblyMember/150/Walsh"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/de/legislature/John-Walsh-7188a518-8d78-42e8-b618-ee38a10d20a4.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://senatedems.delaware.gov/wp-content/blogs.dir/219/files/sites/219/2023/03/Senator-Walsh.png"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Jack_Walsh_(Delaware)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Jack_Walsh_(politician)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/174060/jack-walsh"
+    },
+    {
+      "title": "Public source",
+      "url": "https://legis.delaware.gov/json/Senate/GetSenators"
+    },
+    {
+      "title": "Public source",
+      "url": "https://legis.delaware.gov/LegislatorDetail?personId=3131"
+    },
+    {
+      "title": "legislator list page",
+      "url": "https://legis.delaware.gov/Senate"
+    },
+    {
+      "title": "Public source",
+      "url": "https://senatedems.delaware.gov/members/senate-district-9"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

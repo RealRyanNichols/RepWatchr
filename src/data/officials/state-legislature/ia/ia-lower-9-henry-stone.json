@@ -1,0 +1,72 @@
+{
+  "id": "henry-stone",
+  "name": "Henry Stone",
+  "firstName": "Henry",
+  "lastName": "Stone",
+  "photo": "/images/officials/state-legislature/ia/henry-stone.jpg",
+  "photoSourceUrl": "https://www.legis.iowa.gov/photo?action=getPhoto&ga=91&pid=30645",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-9",
+  "jurisdiction": "Iowa House of Representatives",
+  "county": [
+    "Iowa"
+  ],
+  "termStart": "2023-01-01",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "State Capitol Building 1007 E. Grand Ave., Des Moines, IA 50319",
+    "phone": "515-281-3221",
+    "email": "henry.stone@legis.iowa.gov",
+    "website": "https://iowa.us7.list-manage.com/subscribe?u=b7d249185b0959748eda3cd67&id=04fa01942f"
+  },
+  "bio": "Henry Stone serves as State Representative for Iowa House of Representatives District 9. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "IA",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://iowa.us7.list-manage.com/subscribe?u=b7d249185b0959748eda3cd67&id=04fa01942f"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ia/legislature/Henry-Stone-21405c5b-96dc-4c28-9b69-59c2cf00e9a5.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://www.legis.iowa.gov/photo?action=getPhoto&ga=91&pid=30645"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Henry_Stone"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Henry_Stone_(born_1971)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Henry_Stone_(politician)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/190949/henry-stone"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.legis.iowa.gov/legislators/house"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.legis.iowa.gov/legislators/legislator?ga=89&personID=30645"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.legis.iowa.gov/legislators/legislator?ga=90&personID=30645"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

@@ -1,0 +1,68 @@
+{
+  "id": "eleni-degraw",
+  "name": "Eleni DeGraw",
+  "firstName": "Eleni",
+  "lastName": "DeGraw",
+  "photo": "/images/officials/state-legislature/ct/eleni-degraw.jpg",
+  "photoSourceUrl": "http://www2.housedems.ct.gov/KavrosDeGraw/images/KavrosDeGraw_HS.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-17",
+  "jurisdiction": "Connecticut House of Representatives",
+  "county": [
+    "Connecticut"
+  ],
+  "termStart": "2021-01-06",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 2103, Legislative Office Building 300 Capitol Ave., Hartford, CT 06106",
+    "phone": "800-842-8267",
+    "email": "elenikavros.degraw@cga.ct.gov",
+    "website": "https://cga.ct.gov/asp/CGABillStatus/CGAMemberBills.asp?dist_code=%27017%27&dist_name=Kavros%20DeGraw,%20Eleni"
+  },
+  "bio": "Eleni DeGraw serves as State Representative for Connecticut House of Representatives District 17. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "CT",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://cga.ct.gov/asp/CGABillStatus/CGAMemberBills.asp?dist_code=%27017%27&dist_name=Kavros%20DeGraw,%20Eleni"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ct/legislature/Eleni-Kavros-DeGraw-2a3c062a-ac41-4295-9c26-195f78369242.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "http://www2.housedems.ct.gov/KavrosDeGraw/images/KavrosDeGraw_HS.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "ftp://ftp.cga.ct.gov/pub/data/LegislatorDatabase.csv"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Eleni_Kavros_DeGraw"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Eleni_Kavros_DeGraw"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/185679/eleni-kavros-degraw"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.housedems.ct.gov/KavrosDegraw"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/eleni-kavros-degraw-0562545"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

@@ -1,0 +1,60 @@
+{
+  "id": "jesse-pippy",
+  "name": "Jesse Pippy",
+  "firstName": "Jesse",
+  "lastName": "Pippy",
+  "photo": "/images/officials/state-legislature/md/jesse-pippy.jpg",
+  "photoSourceUrl": "http://mgaleg.maryland.gov/2019RS/images/pippy01.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "Delegate",
+  "district": "HD-4",
+  "jurisdiction": "Maryland House of Delegates",
+  "county": [
+    "Maryland"
+  ],
+  "termStart": "2019-01-09",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 212, Lowe House Office Building 6 Bladen St., Annapolis, MD 21401",
+    "phone": "410-841-3118",
+    "email": "jesse.pippy@house.maryland.gov",
+    "website": "https://mgaleg.maryland.gov/mgawebsite/Members/Details/pippy01"
+  },
+  "bio": "Jesse Pippy serves as Delegate for Maryland House of Delegates District 4. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "MD",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://mgaleg.maryland.gov/mgawebsite/Members/Details/pippy01"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/md/legislature/Jesse-T-Pippy-208e3148-8653-4162-8c92-6ba02e15e59b.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "http://mgaleg.maryland.gov/2019RS/images/pippy01.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Jesse_Pippy"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Jesse_Pippy"
+    },
+    {
+      "title": "Public source",
+      "url": "https://mgaleg.maryland.gov/webmga/frmMain.aspx?pid=sponpage&tab=subject6&id=pippy01&stab=01"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/jesse-pippy-esq-4b88572b"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

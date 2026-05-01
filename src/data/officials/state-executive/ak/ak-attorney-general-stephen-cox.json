@@ -1,0 +1,48 @@
+{
+  "id": "stephen-cox",
+  "name": "Stephen Cox",
+  "firstName": "Stephen",
+  "lastName": "Cox",
+  "photo": "/images/officials/state-executive/ak/stephen-cox.jpg",
+  "photoSourceUrl": "https://law.alaska.gov/img/headshot_CoxLG2601.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "Attorney General",
+  "district": "Alaska",
+  "jurisdiction": "Alaska statewide public office",
+  "county": [
+    "Alaska"
+  ],
+  "termStart": "2025-08-29",
+  "termEnd": "2026-12-07",
+  "contactInfo": {
+    "office": "1031 West 4th Avenue, Suite 200; Anchorage, AK 99501-1994",
+    "phone": "907-269-5100",
+    "email": "attorney.general@alaska.gov",
+    "website": "https://law.alaska.gov/"
+  },
+  "bio": "Stephen Cox is listed as Attorney General for Alaska. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "AK",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://law.alaska.gov/"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ak/executive/Stephen-Cox-671acdf5-e1ec-4259-ba3d-19d1df9a146e.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://law.alaska.gov/img/headshot_CoxLG2601.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Stephen_Cox"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

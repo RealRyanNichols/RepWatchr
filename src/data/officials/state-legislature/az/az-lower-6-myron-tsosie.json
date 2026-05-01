@@ -1,0 +1,69 @@
+{
+  "id": "myron-tsosie",
+  "name": "Myron Tsosie",
+  "firstName": "Myron",
+  "lastName": "Tsosie",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-6",
+  "jurisdiction": "Arizona House of Representatives",
+  "county": [
+    "Arizona"
+  ],
+  "termStart": "2023-01-09",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 339, 1700 W. Washington St., Phoenix, AZ 85007",
+    "phone": "602-926-3157",
+    "email": "mtsosie@azleg.gov",
+    "website": "https://www.azleg.gov/house-member/?legislature=55&legislator=2037",
+    "socialMedia": {
+      "x": "https://x.com/myrontsosield7",
+      "twitter": "https://x.com/myrontsosield7"
+    }
+  },
+  "bio": "Myron Tsosie serves as State Representative for Arizona House of Representatives District 6. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "AZ",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.azleg.gov/house-member/?legislature=55&legislator=2037"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/az/legislature/Myron-Tsosie-a437a3ce-e3ba-44ec-af75-3308e70f5a87.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Myron_Tsosie"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Myron_Tsosie"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/184557/myron-tsosie"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.azleg.gov/house-member/?legislature=57&session=129&legislator=2341"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.azleg.gov/MemberRoster/?body=H"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.azleg.gov/memberroster/?body=H"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/myron-tsosie-1a240574"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

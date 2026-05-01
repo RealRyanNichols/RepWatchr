@@ -1,0 +1,72 @@
+{
+  "id": "jon-patterson",
+  "name": "Jon Patterson",
+  "firstName": "Jon",
+  "lastName": "Patterson",
+  "photo": "/images/officials/state-legislature/mo/jon-patterson.jpg",
+  "photoSourceUrl": "https://house.mo.gov/MemberPhoto.aspx?id=2075",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-30",
+  "jurisdiction": "Missouri House of Representatives",
+  "county": [
+    "Missouri"
+  ],
+  "termStart": "2019-01-09",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 308, 201 W. Capitol Ave., Jefferson City, MO 65101",
+    "phone": "573-751-0907",
+    "email": "jonathan.patterson@house.mo.gov",
+    "website": "https://house.mo.gov/MemberDetails.aspx?district=030"
+  },
+  "bio": "Jon Patterson serves as State Representative for Missouri House of Representatives District 30. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "MO",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://house.mo.gov/MemberDetails.aspx?district=030"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/mo/legislature/Jonathan-Patterson-419c30c0-b3f2-4d4b-a2f1-ee08050e845b.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://house.mo.gov/MemberPhoto.aspx?id=2075"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Jon_Patterson"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Jonathan_Patterson"
+    },
+    {
+      "title": "Public source",
+      "url": "https://house.mo.gov/MemberDetails.aspx?year=2021&code=R&district=030"
+    },
+    {
+      "title": "Public source",
+      "url": "https://house.mo.gov/MemberDetails.aspx?year=2023&code=R&district=030"
+    },
+    {
+      "title": "Public source",
+      "url": "https://house.mo.gov/MemberGridCluster.aspx"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/183179/jon-patterson"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.house.mo.gov/MemberDetails.aspx?district=30"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

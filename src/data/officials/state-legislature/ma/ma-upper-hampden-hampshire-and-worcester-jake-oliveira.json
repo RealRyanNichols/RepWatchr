@@ -1,0 +1,72 @@
+{
+  "id": "jake-oliveira",
+  "name": "Jake Oliveira",
+  "firstName": "Jake",
+  "lastName": "Oliveira",
+  "photo": "/images/officials/state-legislature/ma/jake-oliveira.jpg",
+  "photoSourceUrl": "https://malegislature.gov/Legislators/Profile/170/JRO0.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-Hampden, Hampshire and Worcester",
+  "jurisdiction": "Massachusetts Senate",
+  "county": [
+    "Massachusetts"
+  ],
+  "termStart": "2023-01-04",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 416-B, State House 24 Beacon St., Boston, MA 02133",
+    "phone": "617-722-1291",
+    "email": "jacob.oliveira@masenate.gov",
+    "website": "https://malegislature.gov/Legislators/Profile/JRO0"
+  },
+  "bio": "Jake Oliveira serves as State Senator for Massachusetts Senate District Hampden, Hampshire and Worcester. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "MA",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://malegislature.gov/Legislators/Profile/JRO0"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ma/legislature/Jacob-R-Oliveira-b857e2f7-b65a-4d34-a680-50dfff745a16.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://malegislature.gov/Legislators/Profile/170/JRO0.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Jacob_Oliveira"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Jacob_Oliveira"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/194843/jake-oliveira"
+    },
+    {
+      "title": "Public source",
+      "url": "https://malegislature.gov/api/GeneralCourts/192/LegislativeMembers"
+    },
+    {
+      "title": "Public source",
+      "url": "https://malegislature.gov/api/GeneralCourts/192/LegislativeMembers/"
+    },
+    {
+      "title": "Public source",
+      "url": "https://malegislature.gov/api/GeneralCourts/192/LegislativeMembers/JRO1"
+    },
+    {
+      "title": "Public source",
+      "url": "https://malegislature.gov/api/GeneralCourts/193/LegislativeMembers"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

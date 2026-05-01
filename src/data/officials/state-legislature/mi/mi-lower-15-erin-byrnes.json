@@ -1,0 +1,57 @@
+{
+  "id": "erin-byrnes",
+  "name": "Erin Byrnes",
+  "firstName": "Erin",
+  "lastName": "Byrnes",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-15",
+  "jurisdiction": "Michigan House of Representatives",
+  "county": [
+    "Michigan"
+  ],
+  "termStart": "2023-01-01",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room N-694, Anderson House Office Building 124 N. Capitol Ave., Lansing, MI 48933",
+    "phone": "517-373-0847",
+    "email": "erinbyrnes@house.mi.gov",
+    "website": "https://housedems.com/Erin-Byrnes/"
+  },
+  "bio": "Erin Byrnes serves as State Representative for Michigan House of Representatives District 15. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "MI",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://housedems.com/Erin-Byrnes/"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/mi/legislature/Erin-Byrnes-3d6727ea-1a91-414d-aac4-ba312cbfaabc.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Erin_Byrnes"
+    },
+    {
+      "title": "Public source",
+      "url": "https://housedems.com/Erin-Byrnes"
+    },
+    {
+      "title": "Public source",
+      "url": "https://housedems.com/erin-byrnes/about"
+    },
+    {
+      "title": "Members List Page",
+      "url": "https://www.house.mi.gov/AllRepresentatives"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/erin-byrnes"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

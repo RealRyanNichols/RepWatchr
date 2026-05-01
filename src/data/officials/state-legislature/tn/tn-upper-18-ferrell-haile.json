@@ -1,0 +1,72 @@
+{
+  "id": "ferrell-haile",
+  "name": "Ferrell Haile",
+  "firstName": "Ferrell",
+  "lastName": "Haile",
+  "photo": "/images/officials/state-legislature/tn/ferrell-haile.jpg",
+  "photoSourceUrl": "http://www.capitol.tn.gov/senate/members/images/s18.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-18",
+  "jurisdiction": "Tennessee Senate",
+  "county": [
+    "Tennessee"
+  ],
+  "termStart": "2013-01-08",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 708, Cordell Hull Building 425 Rep. John Lewis Way North, Nashville, TN 37243",
+    "phone": "615-741-1999",
+    "email": "sen.ferrell.haile@capitol.tn.gov",
+    "website": "https://wapp.capitol.tn.gov/apps/legislatorinfo/member.aspx?district=S18"
+  },
+  "bio": "Ferrell Haile serves as State Senator for Tennessee Senate District 18. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "TN",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://wapp.capitol.tn.gov/apps/legislatorinfo/member.aspx?district=S18"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/tn/legislature/Ferrell-Haile-f539ae98-f5d7-4290-9835-f64a1ab0a8c7.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "http://www.capitol.tn.gov/senate/members/images/s18.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Ferrell_Haile"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Ferrell_Haile"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/49009/ferrell-haile"
+    },
+    {
+      "title": "Public source",
+      "url": "https://wapp.capitol.tn.gov/apps/LegislatorInfo/directory.aspx?chamber=S"
+    },
+    {
+      "title": "Public source",
+      "url": "https://wapp.capitol.tn.gov/apps/LegislatorInfo/Member?district=S18&ga=114"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.capitol.tn.gov/senate/members"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.capitol.tn.gov/senate/members/"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

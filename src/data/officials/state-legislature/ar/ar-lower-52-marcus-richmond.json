@@ -1,0 +1,75 @@
+{
+  "id": "marcus-richmond",
+  "name": "Marcus Richmond",
+  "firstName": "Marcus",
+  "lastName": "Richmond",
+  "photo": "/images/officials/state-legislature/ar/marcus-richmond.jpg",
+  "photoSourceUrl": "https://www.arkleg.state.ar.us/Content/photos/2023/House/496_sm.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-52",
+  "jurisdiction": "Arkansas House of Representatives",
+  "county": [
+    "Arkansas"
+  ],
+  "termStart": "2023-01-09",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "State Capitol Arkansas  500 Woodlane St., Suite 350, Little Rock, AR 72201",
+    "phone": "501-682-6211",
+    "email": "richmond4staterep@gmail.com",
+    "website": "https://arkleg.state.ar.us/Legislators/Detail?member=Richmond",
+    "socialMedia": {
+      "facebook": "https://facebook.com/Richmond4StateRep"
+    }
+  },
+  "bio": "Marcus Richmond serves as State Representative for Arkansas House of Representatives District 52. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "AR",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://arkleg.state.ar.us/Legislators/Detail?member=Richmond"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ar/legislature/Marcus-E-Richmond-41f3a186-d3b7-4b46-b3dc-2da6f89c902e.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://www.arkleg.state.ar.us/Content/photos/2023/House/496_sm.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Marcus_Richmond"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.arkansashouse.org/district/52"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.arkleg.state.ar.us/Legislators/Detail?member=Richmond"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.arkleg.state.ar.us/Legislators/Detail?member=Richmond&ddBienniumSession=2019%2F2020F"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.arkleg.state.ar.us/Legislators/Detail?member=Richmond&ddBienniumSession=2021%2F2021R"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.arkleg.state.ar.us/Legislators/Detail?member=Richmond&ddBienniumSession=2021%2F2021S1"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.arkleg.state.ar.us/Legislators/Detail?member=Richmond&ddBienniumSession=2021%2F2022F"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

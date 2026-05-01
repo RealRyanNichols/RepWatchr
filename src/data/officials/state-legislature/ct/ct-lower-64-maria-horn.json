@@ -1,0 +1,68 @@
+{
+  "id": "maria-horn",
+  "name": "Maria Horn",
+  "firstName": "Maria",
+  "lastName": "Horn",
+  "photo": "/images/officials/state-legislature/ct/maria-horn.jpg",
+  "photoSourceUrl": "http://www2.housedems.ct.gov/Horn/images/Horn_HS.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-64",
+  "jurisdiction": "Connecticut House of Representatives",
+  "county": [
+    "Connecticut"
+  ],
+  "termStart": "2019-01-09",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 3704, Legislative Office Building 300 Capitol Ave., Hartford, CT 06106",
+    "phone": "800-842-8267",
+    "email": "maria.horn@cga.ct.gov",
+    "website": "https://www.cga.ct.gov/asp/CGABillStatus/CGAMemberBills.asp?dist_code=%27064%27&dist_name=064%20-%Horn,%Maria"
+  },
+  "bio": "Maria Horn serves as State Representative for Connecticut House of Representatives District 64. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "CT",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.cga.ct.gov/asp/CGABillStatus/CGAMemberBills.asp?dist_code=%27064%27&dist_name=064%20-%Horn,%Maria"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ct/legislature/Maria-P-Horn-283ad876-68be-4235-a108-e0aedbadde40.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "http://www2.housedems.ct.gov/Horn/images/Horn_HS.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "ftp://ftp.cga.ct.gov/pub/data/LegislatorDatabase.csv"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Maria_Horn"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Maria_Horn"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/185709/maria-horn"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.housedems.ct.gov/horn"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/maria-horn-433038115"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

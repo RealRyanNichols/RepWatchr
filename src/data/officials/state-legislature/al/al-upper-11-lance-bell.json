@@ -1,0 +1,68 @@
+{
+  "id": "lance-bell",
+  "name": "Lance Bell",
+  "firstName": "Lance",
+  "lastName": "Bell",
+  "photo": "/images/officials/state-legislature/al/lance-bell.jpg",
+  "photoSourceUrl": "https://www.legislature.state.al.us/pdf/senate/members/Bell_11.png",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-11",
+  "jurisdiction": "Alabama Senate",
+  "county": [
+    "Alabama"
+  ],
+  "termStart": "2022-11-09",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 733, 11 S. Union St., Montgomery, AL 36130",
+    "phone": "334-261-0789",
+    "email": "lance.bell@alsenate.gov",
+    "website": "https://alison.legislature.state.al.us/senate-leaders-members"
+  },
+  "bio": "Lance Bell serves as State Senator for Alabama Senate District 11. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "AL",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://alison.legislature.state.al.us/senate-leaders-members"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/al/legislature/Lance-Bell-889eac7b-10b6-4f00-9bd6-e93a93d93211.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://www.legislature.state.al.us/pdf/senate/members/Bell_11.png"
+    },
+    {
+      "title": "Public source",
+      "url": "https://alsenaterepublicans.org/representatives/0011-jim-mcclendon"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Lance_Bell"
+    },
+    {
+      "title": "graphql endpoint for member information",
+      "url": "https://gql.api.alison.legislature.state.al.us/graphql"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/201801/lance-bell"
+    },
+    {
+      "title": "Public source",
+      "url": "https://tfrblaw.com/attorneys/r-lance-bell"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/lance-bell-412bb170"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

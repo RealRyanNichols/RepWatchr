@@ -1,0 +1,54 @@
+{
+  "id": "andrea-joy-campbell",
+  "name": "Andrea Joy Campbell",
+  "firstName": "Andrea",
+  "lastName": "Campbell",
+  "photo": "/images/officials/state-executive/ma/andrea-joy-campbell.jpg",
+  "photoSourceUrl": "https://www.naag.org/wp-content/uploads/2022/11/ag-MA-Campbell.png",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "Attorney General",
+  "district": "Massachusetts",
+  "jurisdiction": "Massachusetts statewide public office",
+  "county": [
+    "Massachusetts"
+  ],
+  "termStart": "2023-01-04",
+  "termEnd": "2027-01-06",
+  "contactInfo": {
+    "phone": "617-727-2200",
+    "website": "https://www.mass.gov/orgs/office-of-the-attorney-general"
+  },
+  "bio": "Andrea Joy Campbell is listed as Attorney General for Massachusetts. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "MA",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.mass.gov/orgs/office-of-the-attorney-general"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ma/executive/Andrea-Campbell-4e8f36fb-9017-4a35-a692-7f09958dcf61.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://www.naag.org/wp-content/uploads/2022/11/ag-MA-Campbell.png"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.mass.gov/person/andrea-joy-campbell-attorney-general"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Andrea_Joy_Campbell"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.naag.org/attorney-general/andrea-campbell/"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

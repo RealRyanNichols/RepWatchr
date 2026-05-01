@@ -1,0 +1,66 @@
+{
+  "id": "rob-mccolley",
+  "name": "Rob McColley",
+  "firstName": "Rob",
+  "lastName": "McColley",
+  "party": "R",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-1",
+  "jurisdiction": "Ohio Senate",
+  "county": [
+    "Ohio"
+  ],
+  "termStart": "2017-12-05",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 201, Statehouse, 1 Capitol Square Second Floor, Columbus, OH 43215",
+    "phone": "614-466-8150",
+    "email": "sd01@ohiosenate.gov",
+    "website": "https://www.ohiosenate.gov/members/rob-mccolley",
+    "socialMedia": {
+      "x": "https://x.com/rob_mccolley",
+      "twitter": "https://x.com/rob_mccolley",
+      "facebook": "https://facebook.com/mccolley4ohio"
+    }
+  },
+  "bio": "Rob McColley serves as State Senator for Ohio Senate District 1. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "OH",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.ohiosenate.gov/members/rob-mccolley"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/oh/legislature/Rob-McColley-e0d52f86-e997-4299-9e50-972a2c208c20.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Robert_McColley"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Rob_McColley"
+    },
+    {
+      "title": "member details page",
+      "url": "https://ohiosenate.gov/members/rob-mccolley"
+    },
+    {
+      "title": "member list page",
+      "url": "https://www.legislature.ohio.gov/legislators/senate-directory"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/rob-mccolley-294b963"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.ohiosenate.gov/senators"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

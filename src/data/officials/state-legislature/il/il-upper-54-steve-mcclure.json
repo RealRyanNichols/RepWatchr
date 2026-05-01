@@ -1,0 +1,72 @@
+{
+  "id": "steve-mcclure",
+  "name": "Steve McClure",
+  "firstName": "Steve",
+  "lastName": "McClure",
+  "photo": "/images/officials/state-legislature/il/steve-mcclure.jpg",
+  "photoSourceUrl": "https://cdn.ilga.gov/assets/img/members/{EB86B3C4-3F25-4D5C-8944-7B4CBCA7CACE}.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-54",
+  "jurisdiction": "Illinois Senate",
+  "county": [
+    "Illinois"
+  ],
+  "termStart": "2023-01-11",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 309-I, Capitol Building, Springfield, IL 62706",
+    "phone": "217-782-8206",
+    "email": "senatormcclure@gmail.com",
+    "website": "https://ilga.gov/senate/Senator.asp?GA=101&MemberID=2728"
+  },
+  "bio": "Steve McClure serves as State Senator for Illinois Senate District 54. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "IL",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://ilga.gov/senate/Senator.asp?GA=101&MemberID=2728"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/il/legislature/Steve-McClure-d3450848-4552-4b8f-97dc-fb3c26c2566c.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://cdn.ilga.gov/assets/img/members/{EB86B3C4-3F25-4D5C-8944-7B4CBCA7CACE}.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Steve_McClure_(Illinois)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Steve_McClure_(politician)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ilga.gov/senate/default.asp?GA=101"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ilga.gov/senate/default.asp?GA=102"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ilga.gov/senate/default.asp?GA=103"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ilga.gov/senate/Senator.asp?GA=102&MemberID=2933"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ilga.gov/senate/Senator.asp?GA=103&MemberID=3131"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

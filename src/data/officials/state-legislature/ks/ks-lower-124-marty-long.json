@@ -1,0 +1,65 @@
+{
+  "id": "marty-long",
+  "name": "Marty Long",
+  "firstName": "Marty",
+  "lastName": "Long",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-124",
+  "jurisdiction": "Kansas House of Representatives",
+  "county": [
+    "Kansas"
+  ],
+  "termStart": "2024-08-21",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "State Capitol Room 268-W, Kansas  Building 300 SW 10th St., Topeka, KS 66612",
+    "phone": "785-296-7641",
+    "email": "marty.long@house.ks.gov",
+    "website": "https://www.kslegislature.gov/li/b2025_26/members/rep_long_martin_1/"
+  },
+  "bio": "Marty Long serves as State Representative for Kansas House of Representatives District 124. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "KS",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.kslegislature.gov/li/b2025_26/members/rep_long_martin_1/"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ks/legislature/Marty-Long-ef29753b-3048-4126-bc08-353befde18ab.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Martin_Long_(Kansas)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Marty_Long"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/87095/martin-long"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.kslegislature.gov/li/b2025_26/members/rep_long_martin_1"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.kslegislature.org/li/api/v11/rev-1/members/rep_long_martin_1"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.kslegislature.org/li/api/v11/rev-1/members/rep_long_martin_1/"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.kslegislature.org/li_2022/b2021_22/members/rep_long_martin_1"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

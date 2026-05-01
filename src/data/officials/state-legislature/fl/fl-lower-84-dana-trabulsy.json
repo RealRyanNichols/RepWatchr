@@ -1,0 +1,65 @@
+{
+  "id": "dana-trabulsy",
+  "name": "Dana Trabulsy",
+  "firstName": "Dana",
+  "lastName": "Trabulsy",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-84",
+  "jurisdiction": "Florida House of Representatives",
+  "county": [
+    "Florida"
+  ],
+  "termStart": "2020-11-03",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 313, House Office Building 402 S. Monroe St., Tallahassee, FL 32399",
+    "phone": "850-717-5084",
+    "email": "dana.trabulsy@flhouse.gov",
+    "website": "https://myfloridahouse.gov/Sections/Representatives/details.aspx?MemberId=4788&LegislativeTermId=90"
+  },
+  "bio": "Dana Trabulsy serves as State Representative for Florida House of Representatives District 84. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "FL",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://myfloridahouse.gov/Sections/Representatives/details.aspx?MemberId=4788&LegislativeTermId=90"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/fl/legislature/Dana-Lee-Trabulsy-767d2aef-21ee-4b6d-b64b-ed9350abaa60.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Dana_Trabulsy"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Dana_Trabulsy"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/194522/dana-trabulsy"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.flhouse.gov/Sections/Representatives/details.aspx?MemberId=4788"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/dana-trabulsy-ab419bb"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.myfloridahouse.gov/Sections/Representatives/details.aspx?MemberId=4788"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.myfloridahouse.gov/Sections/Representatives/details.aspx?MemberId=4788&LegislativeTermId=89"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

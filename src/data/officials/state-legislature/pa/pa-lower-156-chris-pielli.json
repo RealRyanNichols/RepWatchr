@@ -1,0 +1,66 @@
+{
+  "id": "chris-pielli",
+  "name": "Chris Pielli",
+  "firstName": "Chris",
+  "lastName": "Pielli",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-156",
+  "jurisdiction": "Pennsylvania House of Representatives",
+  "county": [
+    "Pennsylvania"
+  ],
+  "termStart": "2022-12-01",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 115B, East Wing P.O. Box 202156, Harrisburg, PA 17120",
+    "phone": "717-705-2075",
+    "email": "reppielli@pahouse.net",
+    "website": "https://www.legis.state.pa.us/cfdocs/legis/home/member_information/House_bio.cfm?id=1975",
+    "socialMedia": {
+      "x": "https://x.com/RepPielli",
+      "twitter": "https://x.com/RepPielli",
+      "facebook": "https://facebook.com/RepPielli"
+    }
+  },
+  "bio": "Chris Pielli serves as State Representative for Pennsylvania House of Representatives District 156. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "PA",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.legis.state.pa.us/cfdocs/legis/home/member_information/House_bio.cfm?id=1975"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/pa/legislature/Chris-Pielli-d83a0679-02c9-469b-89ed-11f9b46166c5.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Christopher_Pielli"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Chris_Pielli"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.legis.state.pa.us/cfdocs/legis/home/member_information/mbrList.cfm?body=H&sort=alpha"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/christopher-pielli-52170683"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.pahouse.com/Pielli"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.palegis.us/house/members/bio/1975/rep-pielli"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

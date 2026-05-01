@@ -1,0 +1,52 @@
+{
+  "id": "nick-mckinley",
+  "name": "Nick McKinley",
+  "firstName": "Nick",
+  "lastName": "McKinley",
+  "photo": "/images/officials/state-legislature/in/nick-mckinley.jpg",
+  "photoSourceUrl": "https://cdn.zephyrcms.com/47a598a5-02c8-412d-9df6-953a1593189d/-/progressive/yes/-/format/jpeg/-/resize/200x/-/stretch/off/mc-kinley-website.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-17",
+  "jurisdiction": "Indiana Senate",
+  "county": [
+    "Indiana"
+  ],
+  "termStart": "2026-02-09",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "200 W. Washington St., Indianapolis, IN 46204",
+    "phone": "317-232-9400",
+    "email": "s17@iga.in.gov",
+    "website": "https://iga.in.gov/legislative/2026/legislators/legislator_nick_mckinley_1"
+  },
+  "bio": "Nick McKinley serves as State Senator for Indiana Senate District 17. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "IN",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://iga.in.gov/legislative/2026/legislators/legislator_nick_mckinley_1"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/in/legislature/Nick-McKinley-b5f773c4-4e25-4fac-b905-5aca0023100d.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://cdn.zephyrcms.com/47a598a5-02c8-412d-9df6-953a1593189d/-/progressive/yes/-/format/jpeg/-/resize/200x/-/stretch/off/mc-kinley-website.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.indianasenaterepublicans.com/mckinley"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/nickmckinley"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

@@ -1,0 +1,70 @@
+{
+  "id": "randy-lemm",
+  "name": "Randy Lemm",
+  "firstName": "Randy",
+  "lastName": "Lemm",
+  "photo": "/images/officials/state-legislature/nd/randy-lemm.jpg",
+  "photoSourceUrl": "https://www.ndlegis.gov/sites/default/files/styles/member_list_photo/public/person/photo/rlemm2023.jpg?itok=7pnwdctH",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-20",
+  "jurisdiction": "North Dakota Senate",
+  "county": [
+    "North Dakota"
+  ],
+  "termStart": "2019-03-27",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "email": "rlemm@ndlegis.gov",
+    "website": "https://ndlegis.gov/biography/randy-d-lemm"
+  },
+  "bio": "Randy Lemm serves as State Senator for North Dakota Senate District 20. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "ND",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://ndlegis.gov/biography/randy-d-lemm"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/nd/legislature/Randy-D-Lemm-c8e63920-e054-4bb3-aff3-e9caeb012d2c.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://www.ndlegis.gov/sites/default/files/styles/member_list_photo/public/person/photo/rlemm2023.jpg?itok=7pnwdctH"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Randy_Lemm"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Randy_Lemm"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/186281/randy-lemm"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.legis.nd.gov/assembly/67-2021/members/members-by-district"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.legis.nd.gov/assembly/67-2021/members/senate/senator-randy-d-lemm"
+    },
+    {
+      "title": "members list page",
+      "url": "https://www.ndlegis.gov/assembly/68-2023/regular/members?combine=&field_legis_chamber_target_id=All&field_legis_district_target_id=All&field_legislator_party_target_id=All&page=4"
+    },
+    {
+      "title": "members list page",
+      "url": "https://www.ndlegis.gov/assembly/68-2023/regular/members?page=4"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

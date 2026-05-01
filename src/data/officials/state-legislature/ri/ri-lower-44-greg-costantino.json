@@ -1,0 +1,72 @@
+{
+  "id": "greg-costantino",
+  "name": "Greg Costantino",
+  "firstName": "Greg",
+  "lastName": "Costantino",
+  "photo": "/images/officials/state-legislature/ri/greg-costantino.jpg",
+  "photoSourceUrl": "http://www.rilegislature.gov/representatives/pictures/costantino.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-44",
+  "jurisdiction": "Rhode Island House of Representatives",
+  "county": [
+    "Rhode Island"
+  ],
+  "termStart": "2013-01-01",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "82 Smith St., Providence, RI 02903",
+    "phone": "401-222-3580",
+    "email": "rep-costantino@rilegislature.gov",
+    "website": "https://www.rilegislature.gov/representatives/carson/default.aspx"
+  },
+  "bio": "Greg Costantino serves as State Representative for Rhode Island House of Representatives District 44. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "RI",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.rilegislature.gov/representatives/carson/default.aspx"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ri/legislature/Gregory-J-Costantino-4b45cbc5-99f3-4a08-a154-cac0cc90ae1a.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "http://www.rilegislature.gov/representatives/pictures/costantino.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Gregory_Costantino"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Gregory_Costantino"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/125840/gregory-costantino"
+    },
+    {
+      "title": "Public source",
+      "url": "https://webserver.rilin.state.ri.us/Email/RepEmailListDistrict.asp"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.rilegislature.gov/representatives/costantino/default.aspx"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.rilegislature.gov/representatives/Costantino/Pages/Biography.aspx"
+    },
+    {
+      "title": "Image Source",
+      "url": "https://www.rilegislature.gov/representatives/costantino/Pages/Biography.aspx"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

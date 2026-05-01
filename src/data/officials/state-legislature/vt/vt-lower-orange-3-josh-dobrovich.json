@@ -1,0 +1,56 @@
+{
+  "id": "josh-dobrovich",
+  "name": "Josh Dobrovich",
+  "firstName": "Josh",
+  "lastName": "Dobrovich",
+  "photo": "/images/officials/state-legislature/vt/josh-dobrovich.jpg",
+  "photoSourceUrl": "https://static.wixstatic.com/media/071d59_a647ae96ed7b4def9aa010cbb5c0ed29~mv2.jpg/v1/crop/x_268,y_5,w_1320,h_1583/fill/w_256,h_307,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/Headshot.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-Orange-3",
+  "jurisdiction": "Vermont House of Representatives",
+  "county": [
+    "Vermont"
+  ],
+  "termStart": "2025-01-08",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Vermont State House 115 State St., Montpelier, VT 05633",
+    "phone": "802-828-2228",
+    "email": "jdobrovich@leg.state.vt.us",
+    "website": "https://legislature.vermont.gov/people/single/2026/40419"
+  },
+  "bio": "Josh Dobrovich serves as State Representative for Vermont House of Representatives District Orange-3. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "VT",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://legislature.vermont.gov/people/single/2026/40419"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/vt/legislature/Josh-Dobrovich-f668b31d-5c47-4d56-a850-1a1d859c8510.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://static.wixstatic.com/media/071d59_a647ae96ed7b4def9aa010cbb5c0ed29~mv2.jpg/v1/crop/x_268,y_5,w_1320,h_1583/fill/w_256,h_307,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/Headshot.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Josh_Dobrovich"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/218472/josh-dobrovich"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/joshua-dobrovich-389291b7"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

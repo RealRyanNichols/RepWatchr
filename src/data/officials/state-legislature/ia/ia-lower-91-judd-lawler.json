@@ -1,0 +1,60 @@
+{
+  "id": "judd-lawler",
+  "name": "Judd Lawler",
+  "firstName": "Judd",
+  "lastName": "Lawler",
+  "photo": "/images/officials/state-legislature/ia/judd-lawler.jpg",
+  "photoSourceUrl": "https://www.legis.iowa.gov/photo?action=getPhoto&ga=91&pid=37392",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-91",
+  "jurisdiction": "Iowa House of Representatives",
+  "county": [
+    "Iowa"
+  ],
+  "termStart": "2025-01-01",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "State Capitol Building 1007 E. Grand Ave., Des Moines, IA 50319",
+    "phone": "515-281-3221",
+    "email": "judd.lawler@legis.iowa.gov",
+    "website": "https://www.legis.iowa.gov/legislators/legislator?ga=91&personID=37392"
+  },
+  "bio": "Judd Lawler serves as State Representative for Iowa House of Representatives District 91. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "IA",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.legis.iowa.gov/legislators/legislator?ga=91&personID=37392"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ia/legislature/Judd-Lawler-69441bf5-e98f-4872-8bf0-5bca86e3c258.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://www.legis.iowa.gov/photo?action=getPhoto&ga=91&pid=37392"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Judd_Lawler"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Judd_Lawler"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.legis.iowa.gov/legislators/legislator?personID=37392"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/judd-lawler-0a97718"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

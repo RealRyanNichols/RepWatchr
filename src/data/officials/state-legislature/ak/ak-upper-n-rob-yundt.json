@@ -1,0 +1,60 @@
+{
+  "id": "rob-yundt",
+  "name": "Rob Yundt",
+  "firstName": "Rob",
+  "lastName": "Yundt",
+  "photo": "/images/officials/state-legislature/ak/rob-yundt.jpg",
+  "photoSourceUrl": "https://ktna.org/wp-content/uploads/2023/06/YundtThumb.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-N",
+  "jurisdiction": "Alaska Senate",
+  "county": [
+    "Alaska"
+  ],
+  "termStart": "2025-01-21",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "State Capitol Room 417, 120 4th St., Juneau, AK 99801",
+    "phone": "907-465-3878",
+    "email": "senator.robert.yundt@akleg.gov",
+    "website": "https://www.akleg.gov/basis/Member/Detail/34?code=yun"
+  },
+  "bio": "Rob Yundt serves as State Senator for Alaska Senate District N. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "AK",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.akleg.gov/basis/Member/Detail/34?code=yun"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ak/legislature/Rob-Yundt-82334f7b-8119-4494-bf3e-a7ddb09536bd.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://ktna.org/wp-content/uploads/2023/06/YundtThumb.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Robert_Yundt"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Robert_Yundt"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/194395/robert-yundt-ii"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/robert-yundt-4a96b49a"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

@@ -1,0 +1,75 @@
+{
+  "id": "matt-bradford",
+  "name": "Matt Bradford",
+  "firstName": "Matt",
+  "lastName": "Bradford",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-70",
+  "jurisdiction": "Pennsylvania House of Representatives",
+  "county": [
+    "Pennsylvania"
+  ],
+  "termStart": "2009-01-06",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 110, Main Capitol Building P.O. Box 202070, Harrisburg, PA 17120",
+    "phone": "717-772-2572",
+    "email": "repbradford@pahouse.net",
+    "website": "https://www.legis.state.pa.us/cfdocs/legis/home/member_information/House_bio.cfm?id=1161",
+    "socialMedia": {
+      "x": "https://x.com/RepBradford",
+      "twitter": "https://x.com/RepBradford",
+      "facebook": "https://facebook.com/RepBradford",
+      "youtube": "https://youtube.com/playlist?list=PL97682F1C72BC1829"
+    }
+  },
+  "bio": "Matt Bradford serves as State Representative for Pennsylvania House of Representatives District 70. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "PA",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.legis.state.pa.us/cfdocs/legis/home/member_information/House_bio.cfm?id=1161"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/pa/legislature/Matthew-D-Bradford-a15da78b-2475-4606-854f-7477dfc4233d.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Matthew_Bradford"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Matthew_Bradford"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/109564/matthew-bradford"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.legis.state.pa.us/cfdocs/legis/home/member_information/mbrList.cfm?body=H&sort=alpha"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.legis.state.pa.us/cfdocs/legis/home/member_information/representatives_alpha.cfm"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/matt-bradford-57277646"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.pahouse.com/Bradford"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.palegis.us/house/members/bio/1161/rep-bradford"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

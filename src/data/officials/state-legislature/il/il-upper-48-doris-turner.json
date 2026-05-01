@@ -1,0 +1,69 @@
+{
+  "id": "doris-turner",
+  "name": "Doris Turner",
+  "firstName": "Doris",
+  "lastName": "Turner",
+  "party": "D",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-48",
+  "jurisdiction": "Illinois Senate",
+  "county": [
+    "Illinois"
+  ],
+  "termStart": "2021-02-06",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Stratton Office Building Section F, Office B, Springfield, IL 62706",
+    "phone": "217-782-0228",
+    "email": "senatorturnermac@gmail.com",
+    "website": "https://ilga.gov/senate/Senator.asp?GA=102&MemberID=3009"
+  },
+  "bio": "Doris Turner serves as State Senator for Illinois Senate District 48. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "IL",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://ilga.gov/senate/Senator.asp?GA=102&MemberID=3009"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/il/legislature/Doris-Turner-5db8d260-f850-406c-8e26-d618762c10cd.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Doris_Turner_(Illinois)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Doris_Turner_(politician)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ilga.gov/senate/default.asp?GA=102"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ilga.gov/senate/default.asp?GA=103"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ilga.gov/senate/Senator.asp?GA=103&MemberID=3197"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/84005/doris-turner"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.ilga.gov/Senate/Members/Details/3399"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.ilga.gov/senate/Senator.asp?GA=103&MemberID=3197"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

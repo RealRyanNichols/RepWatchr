@@ -1,0 +1,69 @@
+{
+  "id": "mark-schreiber",
+  "name": "Mark Schreiber",
+  "firstName": "Mark",
+  "lastName": "Schreiber",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-60",
+  "jurisdiction": "Kansas House of Representatives",
+  "county": [
+    "Kansas"
+  ],
+  "termStart": "2017-01-09",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "State Capitol Room 168-W, Kansas  Building 300 SW 10th St., Topeka, KS 66612",
+    "phone": "785-296-2721",
+    "email": "mark.schreiber@house.ks.gov",
+    "website": "https://www.kslegislature.gov/li/b2025_26/members/rep_schreiber_mark_1/"
+  },
+  "bio": "Mark Schreiber serves as State Representative for Kansas House of Representatives District 60. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "KS",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.kslegislature.gov/li/b2025_26/members/rep_schreiber_mark_1/"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ks/legislature/Mark-Schreiber-1748d756-be07-4eaf-be90-82992092e990.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Mark_Schreiber_(Kansas)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Mark_Schreiber_(Kansas_politician)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://schreiberforkansas.com/meet-mark-schreiber"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.kslegislature.gov/li/b2025_26/members/rep_schreiber_mark_1"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.kslegislature.org/li/api/v11/rev-1/members/rep_schreiber_mark_1"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.kslegislature.org/li/api/v11/rev-1/members/rep_schreiber_mark_1/"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.kslegislature.org/li/b2023_24/members/rep_schreiber_mark_1"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.kslegislature.org/li/b2023_24/members/rep_schreiber_mark_1/"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

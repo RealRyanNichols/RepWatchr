@@ -1,0 +1,72 @@
+{
+  "id": "dave-cortese",
+  "name": "Dave Cortese",
+  "firstName": "Dave",
+  "lastName": "Cortese",
+  "photo": "/images/officials/state-legislature/ca/dave-cortese.jpg",
+  "photoSourceUrl": "https://www.senate.ca.gov/sites/senate.ca.gov/files/senator_photos/sd15_cortese_0.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-15",
+  "jurisdiction": "California Senate",
+  "county": [
+    "California"
+  ],
+  "termStart": "2020-12-07",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "1021 O St. Suite 7520, Sacramento, CA 95814",
+    "phone": "916-651-4015",
+    "email": "senator.cortese@senate.ca.gov",
+    "website": "https://sd15.senate.ca.gov/"
+  },
+  "bio": "Dave Cortese serves as State Senator for California Senate District 15. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "CA",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://sd15.senate.ca.gov/"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ca/legislature/Dave-Cortese-0fa65d2c-6020-4586-a6f1-5dfd41db38ff.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://www.senate.ca.gov/sites/senate.ca.gov/files/senator_photos/sd15_cortese_0.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Dave_Cortese_(California)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Dave_Cortese"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/114701/dave-cortese"
+    },
+    {
+      "title": "Public source",
+      "url": "https://sd15.senate.ca.gov"
+    },
+    {
+      "title": "Public source",
+      "url": "https://senate.ca.gov/senators"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/dave-cortese-a5874a4"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.senate.ca.gov/senators"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

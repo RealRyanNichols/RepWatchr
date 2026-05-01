@@ -1,0 +1,51 @@
+{
+  "id": "chris-carr",
+  "name": "Chris Carr",
+  "firstName": "Chris",
+  "lastName": "Carr",
+  "photo": "/images/officials/state-executive/ga/chris-carr.jpg",
+  "photoSourceUrl": "https://www.naag.org/wp-content/uploads/2020/09/ag-GA-Carr1.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "Attorney General",
+  "district": "Georgia",
+  "jurisdiction": "Georgia statewide public office",
+  "county": [
+    "Georgia"
+  ],
+  "termStart": "2016-11-01",
+  "termEnd": "2027-01-11",
+  "contactInfo": {
+    "office": "40 Capitol Square, SW; Atlanta, GA 30334-1300",
+    "phone": "404-656-3300",
+    "website": "https://law.georgia.gov/"
+  },
+  "bio": "Chris Carr is listed as Attorney General for Georgia. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "GA",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://law.georgia.gov/"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ga/executive/Chris-Carr-57002bfc-2ba0-48cd-85d4-94673c5bf75a.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://www.naag.org/wp-content/uploads/2020/09/ag-GA-Carr1.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Chris_Carr_(Georgia)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.naag.org/attorney-general/chris-carr/"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

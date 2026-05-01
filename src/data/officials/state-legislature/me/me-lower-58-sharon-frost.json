@@ -1,0 +1,41 @@
+{
+  "id": "sharon-frost",
+  "name": "Sharon Frost",
+  "firstName": "Sharon",
+  "lastName": "Frost",
+  "party": "I",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-58",
+  "jurisdiction": "Maine House of Representatives",
+  "county": [
+    "Maine"
+  ],
+  "termStart": "2024-12-03",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Office of the Clerk of the House 2 State House Station, Augusta, ME 04333",
+    "phone": "800-423-2900",
+    "email": "sharon.frost@legislature.maine.gov",
+    "website": "https://legislature.maine.gov/house/house/MemberProfiles/Details/3117"
+  },
+  "bio": "Sharon Frost serves as State Representative for Maine House of Representatives District 58. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "ME",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://legislature.maine.gov/house/house/MemberProfiles/Details/3117"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/me/legislature/Sharon-Frost-05a89099-12b0-46b5-9f6e-002e1e621583.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Sharon_Frost"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

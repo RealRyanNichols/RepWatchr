@@ -1,0 +1,69 @@
+{
+  "id": "phil-fortunato",
+  "name": "Phil Fortunato",
+  "firstName": "Phil",
+  "lastName": "Fortunato",
+  "party": "R",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-31",
+  "jurisdiction": "Washington Senate",
+  "county": [
+    "Washington"
+  ],
+  "termStart": "2017-01-07",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 341A, Irv Newhouse Building P.O. Box 40431, Olympia, WA 98504",
+    "phone": "360-786-7660",
+    "email": "phil.fortunato@leg.wa.gov",
+    "website": "https://leg.wa.gov/legislators/member/phil-fortunato"
+  },
+  "bio": "Phil Fortunato serves as State Senator for Washington Senate District 31. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "WA",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://leg.wa.gov/legislators/member/phil-fortunato"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/wa/legislature/Phil-Fortunato-2d0faef3-45a8-489c-84bd-9491c8ce0315.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://app.leg.wa.gov/ContentParts/MemberDirectory/?a=Senate"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Phil_Fortunato"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Phil_Fortunato"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/26196/phil-fortunato"
+    },
+    {
+      "title": "Public source",
+      "url": "https://philfortunato.src.wastateleg.org"
+    },
+    {
+      "title": "Public source",
+      "url": "https://philfortunato.src.wastateleg.org/"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.leg.wa.gov/senate/senators/Pages/default.aspx"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/phil-fortunato-618a6b31"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

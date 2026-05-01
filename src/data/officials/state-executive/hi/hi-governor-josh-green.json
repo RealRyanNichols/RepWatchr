@@ -1,0 +1,47 @@
+{
+  "id": "josh-green",
+  "name": "Josh Green",
+  "firstName": "Josh",
+  "lastName": "Green",
+  "photo": "/images/officials/state-executive/hi/josh-green.jpg",
+  "photoSourceUrl": "https://governor.hawaii.gov/wp-content/uploads/2023/02/governor_green_-046-scaled.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "Governor",
+  "district": "Hawaii",
+  "jurisdiction": "Hawaii statewide public office",
+  "county": [
+    "Hawaii"
+  ],
+  "termStart": "2022-12-05",
+  "termEnd": "2026-12-07",
+  "contactInfo": {
+    "office": "Governor Josh Green; Executive Chambers; State Capitol; 415 South Beretania St.; Honolulu, HI 96813",
+    "phone": "808-586-0034",
+    "website": "https://governor.hawaii.gov/",
+    "socialMedia": {
+      "x": "https://x.com/govhawaii",
+      "twitter": "https://x.com/govhawaii"
+    }
+  },
+  "bio": "Josh Green is listed as Governor for Hawaii. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "HI",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://governor.hawaii.gov/"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/hi/executive/Josh-Green-c7e5e0d4-7a5d-42dc-a3cc-d7b54b1dc51b.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://governor.hawaii.gov/wp-content/uploads/2023/02/governor_green_-046-scaled.jpg"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

@@ -1,0 +1,72 @@
+{
+  "id": "mark-walker",
+  "name": "Mark Walker",
+  "firstName": "Mark",
+  "lastName": "Walker",
+  "photo": "/images/officials/state-legislature/il/mark-walker.jpg",
+  "photoSourceUrl": "https://cdn.ilga.gov/assets/img/members/{BC2AF76D-FAE4-44C4-8632-AA4E629A9678}.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-27",
+  "jurisdiction": "Illinois Senate",
+  "county": [
+    "Illinois"
+  ],
+  "termStart": "2024-05-11",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Stratton Office Building Section F, Office H, Springfield, IL 62706",
+    "phone": "217-782-4471",
+    "email": "contact@staterepwalker53.com",
+    "website": "https://ilga.gov/house/Rep.asp?GA=101&MemberID=2743"
+  },
+  "bio": "Mark Walker serves as State Senator for Illinois Senate District 27. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "IL",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://ilga.gov/house/Rep.asp?GA=101&MemberID=2743"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/il/legislature/Mark-L-Walker-d1c2870a-8fee-47bf-a48e-4320311f06fd.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://cdn.ilga.gov/assets/img/members/{BC2AF76D-FAE4-44C4-8632-AA4E629A9678}.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Mark_Walker_(Illinois)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Mark_L._Walker"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ilga.gov/house/default.asp?GA=101"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ilga.gov/house/default.asp?GA=102"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ilga.gov/house/default.asp?GA=103"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ilga.gov/house/Rep.asp?GA=102&MemberID=2944"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ilga.gov/house/Rep.asp?GA=103&MemberID=3140"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

@@ -1,0 +1,49 @@
+{
+  "id": "rhonda-butler",
+  "name": "Rhonda Butler",
+  "firstName": "Rhonda",
+  "lastName": "Butler",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-38",
+  "jurisdiction": "Louisiana House of Representatives",
+  "county": [
+    "Louisiana"
+  ],
+  "termStart": "2020-01-13",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "P.O. Box 94062 900 N. 3rd St., Baton Rouge, LA 70804",
+    "phone": "225-342-6945",
+    "email": "hse038@legis.la.gov",
+    "website": "https://house.louisiana.gov/H_Reps/members.aspx?ID=38"
+  },
+  "bio": "Rhonda Butler serves as State Representative for Louisiana House of Representatives District 38. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "LA",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://house.louisiana.gov/H_Reps/members.aspx?ID=38"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/la/legislature/Rhonda-Gaye-Butler-6c232d36-fe39-4006-8397-de9cb1e5454c.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Rhonda_Butler"
+    },
+    {
+      "title": "Public source",
+      "url": "https://house.louisiana.gov/H_Reps/H_Reps_FullInfo"
+    },
+    {
+      "title": "Public source",
+      "url": "https://house.louisiana.gov/H_Reps/members?ID=38"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

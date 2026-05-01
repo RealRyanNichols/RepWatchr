@@ -1,0 +1,65 @@
+{
+  "id": "jay-case",
+  "name": "Jay Case",
+  "firstName": "Jay",
+  "lastName": "Case",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-63",
+  "jurisdiction": "Connecticut House of Representatives",
+  "county": [
+    "Connecticut"
+  ],
+  "termStart": "2013-01-09",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 4200, Legislative Office Building 300 Capitol Ave., Hartford, CT 06106",
+    "phone": "860-240-8700",
+    "email": "jay.case@housegop.ct.gov",
+    "website": "https://www.cga.ct.gov/asp/CGABillStatus/CGAMemberBills.asp?dist_code=%27063%27&dist_name=Jay,%20Case"
+  },
+  "bio": "Jay Case serves as State Representative for Connecticut House of Representatives District 63. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "CT",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.cga.ct.gov/asp/CGABillStatus/CGAMemberBills.asp?dist_code=%27063%27&dist_name=Jay,%20Case"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ct/legislature/Jay-M-Case-fc3cb4e1-f784-46ac-9d54-1dd44cb817b0.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "ftp://ftp.cga.ct.gov/pub/data/LegislatorDatabase.csv"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Jay_Case"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Jay_Case"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/141157/jay-case"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.cthousegop.com/Case/main"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.cthousegop.com/Case/main/"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/jay-case-20347732"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

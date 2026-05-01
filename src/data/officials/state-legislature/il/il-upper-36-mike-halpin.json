@@ -1,0 +1,72 @@
+{
+  "id": "mike-halpin",
+  "name": "Mike Halpin",
+  "firstName": "Mike",
+  "lastName": "Halpin",
+  "photo": "/images/officials/state-legislature/il/mike-halpin.jpg",
+  "photoSourceUrl": "https://cdn.ilga.gov/assets/img/members/{35F1D456-C798-4A8B-9180-4608CB0FDB78}.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-36",
+  "jurisdiction": "Illinois Senate",
+  "county": [
+    "Illinois"
+  ],
+  "termStart": "2023-01-11",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 609, Capitol Building, Springfield, IL 62706",
+    "phone": "217-782-4307",
+    "email": "senatormikehalpin@gmail.com",
+    "website": "https://ilga.gov/house/Rep.asp?GA=101&MemberID=2685"
+  },
+  "bio": "Mike Halpin serves as State Senator for Illinois Senate District 36. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "IL",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://ilga.gov/house/Rep.asp?GA=101&MemberID=2685"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/il/legislature/Michael-Halpin-8021b51f-4acc-459e-a038-786ebaca8666.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://cdn.ilga.gov/assets/img/members/{35F1D456-C798-4A8B-9180-4608CB0FDB78}.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Michael_Halpin"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Michael_Halpin"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ilga.gov/house/default.asp?GA=101"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ilga.gov/house/default.asp?GA=102"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ilga.gov/house/default.asp?GA=103"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ilga.gov/house/Rep.asp?GA=102&MemberID=2903"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ilga.gov/house/Rep.asp?GA=103&MemberID=3106"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

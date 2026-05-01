@@ -1,0 +1,69 @@
+{
+  "id": "beth-doglio",
+  "name": "Beth Doglio",
+  "firstName": "Beth",
+  "lastName": "Doglio",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-22",
+  "jurisdiction": "Washington House of Representatives",
+  "county": [
+    "Washington"
+  ],
+  "termStart": "2023-01-09",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 308, John L. O'Brien Building P.O. Box 40600, Olympia, WA 98504",
+    "phone": "360-786-7940",
+    "email": "beth.doglio@leg.wa.gov",
+    "website": "https://housedemocrats.wa.gov/Doglio/"
+  },
+  "bio": "Beth Doglio serves as State Representative for Washington House of Representatives District 22. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "WA",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://housedemocrats.wa.gov/Doglio/"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/wa/legislature/Beth-Doglio-0bbe7652-d8a7-46aa-bdbc-90b411347343.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://app.leg.wa.gov/ContentParts/MemberDirectory/?a=House"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Beth_Doglio"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Beth_Doglio"
+    },
+    {
+      "title": "Public source",
+      "url": "https://housedemocrats.wa.gov/doglio"
+    },
+    {
+      "title": "Public source",
+      "url": "https://housedemocrats.wa.gov/doglio/"
+    },
+    {
+      "title": "Public source",
+      "url": "https://housedemocrats.wa.gov/doglio/biography"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/171007/beth-doglio"
+    },
+    {
+      "title": "Public source",
+      "url": "https://leg.wa.gov/legislators/member/beth-doglio"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

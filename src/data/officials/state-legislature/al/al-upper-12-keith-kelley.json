@@ -1,0 +1,64 @@
+{
+  "id": "keith-kelley",
+  "name": "Keith Kelley",
+  "firstName": "Keith",
+  "lastName": "Kelley",
+  "photo": "/images/officials/state-legislature/al/keith-kelley.jpg",
+  "photoSourceUrl": "https://www.legislature.state.al.us/pdf/senate/members/Kelley_12.png",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-12",
+  "jurisdiction": "Alabama Senate",
+  "county": [
+    "Alabama"
+  ],
+  "termStart": "2022-11-09",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 733, 11 S. Union St., Montgomery, AL 36130",
+    "phone": "334-261-0846",
+    "email": "keith.kelley@alsenate.gov",
+    "website": "https://alison.legislature.state.al.us/senate-leaders-members"
+  },
+  "bio": "Keith Kelley serves as State Senator for Alabama Senate District 12. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "AL",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://alison.legislature.state.al.us/senate-leaders-members"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/al/legislature/Keith-Kelley-e259674a-2a78-4423-b8d0-3d759ee90912.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://www.legislature.state.al.us/pdf/senate/members/Kelley_12.png"
+    },
+    {
+      "title": "Public source",
+      "url": "https://alsenaterepublicans.org/representatives/0012-keith-kelley"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Keith_Kelley"
+    },
+    {
+      "title": "graphql endpoint for member information",
+      "url": "https://gql.api.alison.legislature.state.al.us/graphql"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/201804/keith-kelley"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/keith-kelley-7b711061"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

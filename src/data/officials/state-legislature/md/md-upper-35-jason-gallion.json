@@ -1,0 +1,60 @@
+{
+  "id": "jason-gallion",
+  "name": "Jason Gallion",
+  "firstName": "Jason",
+  "lastName": "Gallion",
+  "photo": "/images/officials/state-legislature/md/jason-gallion.jpg",
+  "photoSourceUrl": "https://mgaleg.maryland.gov/2025RS/images/gallion01.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-35",
+  "jurisdiction": "Maryland Senate",
+  "county": [
+    "Maryland"
+  ],
+  "termStart": "2019-01-09",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 420, James Senate Office Building 11 Bladen St., Annapolis, MD 21401",
+    "phone": "410-841-3603",
+    "email": "jason.gallion@senate.maryland.gov",
+    "website": "https://mgaleg.maryland.gov/mgawebsite/Members/Details/gallion01"
+  },
+  "bio": "Jason Gallion serves as State Senator for Maryland Senate District 35. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "MD",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://mgaleg.maryland.gov/mgawebsite/Members/Details/gallion01"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/md/legislature/Jason-C-Gallion-7c2a7a4b-f847-4efa-baea-2e5633acdcd5.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://mgaleg.maryland.gov/2025RS/images/gallion01.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Jason_Gallion"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Jason_C._Gallion"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/125985/jason-gallion"
+    },
+    {
+      "title": "Public source",
+      "url": "https://mgaleg.maryland.gov/webmga/frmMain.aspx?pid=sponpage&tab=subject6&id=gallion01&stab=01"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

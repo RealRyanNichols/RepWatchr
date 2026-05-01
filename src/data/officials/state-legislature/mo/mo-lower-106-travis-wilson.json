@@ -1,0 +1,64 @@
+{
+  "id": "travis-wilson",
+  "name": "Travis Wilson",
+  "firstName": "Travis",
+  "lastName": "Wilson",
+  "photo": "/images/officials/state-legislature/mo/travis-wilson.jpg",
+  "photoSourceUrl": "https://house.mo.gov/MemberPhoto.aspx?id=2373",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-106",
+  "jurisdiction": "Missouri House of Representatives",
+  "county": [
+    "Missouri"
+  ],
+  "termStart": "2023-01-04",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 201-A, 201 W. Capitol Ave., Jefferson City, MO 65101",
+    "phone": "573-751-1452",
+    "email": "travis.wilson@house.mo.gov",
+    "website": "https://house.mo.gov/MemberDetails.aspx?district=106"
+  },
+  "bio": "Travis Wilson serves as State Representative for Missouri House of Representatives District 106. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "MO",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://house.mo.gov/MemberDetails.aspx?district=106"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/mo/legislature/Travis-Wilson-350514c2-7875-44c4-8ef3-20da25540793.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://house.mo.gov/MemberPhoto.aspx?id=2373"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Travis_Wilson"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Travis_Wilson_(politician)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://house.mo.gov/MemberDetails.aspx?year=2023&code=R&district=106"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/205769/travis-wilson"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/travis-wilson-670a3a80"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

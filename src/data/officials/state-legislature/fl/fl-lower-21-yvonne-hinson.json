@@ -1,0 +1,69 @@
+{
+  "id": "yvonne-hinson",
+  "name": "Yvonne Hinson",
+  "firstName": "Yvonne",
+  "lastName": "Hinson",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-21",
+  "jurisdiction": "Florida House of Representatives",
+  "county": [
+    "Florida"
+  ],
+  "termStart": "2022-11-08",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 1102, The Capitol 402 S. Monroe St., Tallahassee, FL 32399",
+    "phone": "850-717-5021",
+    "email": "yvonne.hinson@flhouse.gov",
+    "website": "https://myfloridahouse.gov/Sections/Representatives/details.aspx?MemberId=4768&LegislativeTermId=90"
+  },
+  "bio": "Yvonne Hinson serves as State Representative for Florida House of Representatives District 21. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "FL",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://myfloridahouse.gov/Sections/Representatives/details.aspx?MemberId=4768&LegislativeTermId=90"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/fl/legislature/Yvonne-Hayes-Hinson-0f5d2710-6b7c-4444-8a45-ea3e917805ba.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Yvonne_Hayes_Hinson"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Yvonne_Hayes_Hinson"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/182253/yvonne-hinson"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.flhouse.gov/Sections/Representatives/custom/details.aspx?MemberId=4768"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.flhouse.gov/Sections/Representatives/details.aspx?MemberId=4768"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/yvonne-hinson-0406b612"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.myfloridahouse.gov/Sections/Representatives/details.aspx?MemberId=4768"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.myfloridahouse.gov/Sections/Representatives/details.aspx?MemberId=4768&LegislativeTermId=89"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

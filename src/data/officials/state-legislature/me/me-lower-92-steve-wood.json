@@ -1,0 +1,56 @@
+{
+  "id": "steve-wood",
+  "name": "Steve Wood",
+  "firstName": "Steve",
+  "lastName": "Wood",
+  "photo": "/images/officials/state-legislature/me/steve-wood.jpg",
+  "photoSourceUrl": "https://legislature.maine.gov/house/house/Repository/MemberProfiles/1e90c36e-1b64-464a-8371-c4bb4bad5925_woodsj[1].jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-92",
+  "jurisdiction": "Maine House of Representatives",
+  "county": [
+    "Maine"
+  ],
+  "termStart": "2022-12-07",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 332, House Republican Office 2 State House Station, Augusta, ME 04333",
+    "phone": "800-423-2900",
+    "email": "stephen.wood@legislature.maine.gov",
+    "website": "https://legislature.maine.gov/house/house/MemberProfiles/Details/40"
+  },
+  "bio": "Steve Wood serves as State Representative for Maine House of Representatives District 92. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "ME",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://legislature.maine.gov/house/house/MemberProfiles/Details/40"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/me/legislature/Stephen-J-Wood-94645c8f-f06c-485e-b5fa-797e3590ea30.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://legislature.maine.gov/house/house/Repository/MemberProfiles/1e90c36e-1b64-464a-8371-c4bb4bad5925_woodsj[1].jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Stephen_Wood"
+    },
+    {
+      "title": "Public source",
+      "url": "https://legislature.maine.gov/house/house/MemberProfiles/ListAlpha"
+    },
+    {
+      "title": "Public source",
+      "url": "https://mainehousegop.org/members/wood-stephen"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

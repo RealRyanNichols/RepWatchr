@@ -1,0 +1,76 @@
+{
+  "id": "harry-bronson",
+  "name": "Harry Bronson",
+  "firstName": "Harry",
+  "lastName": "Bronson",
+  "photo": "/images/officials/state-legislature/ny/harry-bronson.jpg",
+  "photoSourceUrl": "https://assembly.state.ny.us/write/upload/member_files/138/headshot/138.jpg?hst=1660074897",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "Assemblymember",
+  "district": "HD-138",
+  "jurisdiction": "New York State Assembly",
+  "county": [
+    "New York"
+  ],
+  "termStart": "2013-01-01",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 522, Legislative Office Building, Albany, NY 12248",
+    "phone": "518-455-4527",
+    "email": "bronsonh@nyassembly.gov",
+    "website": "https://assembly.state.ny.us/mem/?sh=email",
+    "socialMedia": {
+      "x": "https://x.com/HarryBBronson",
+      "twitter": "https://x.com/HarryBBronson"
+    }
+  },
+  "bio": "Harry Bronson serves as Assemblymember for New York State Assembly District 138. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "NY",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://assembly.state.ny.us/mem/?sh=email"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ny/legislature/Harry-Bronson-a23e140f-4beb-43d5-b850-198ff81a75f3.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://assembly.state.ny.us/write/upload/member_files/138/headshot/138.jpg?hst=1660074897"
+    },
+    {
+      "title": "Public source",
+      "url": "https://assembly.state.ny.us/mem/Harry-B-Bronson"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Harry_Bronson"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Harry_Bronson"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/92093/harry-bronson"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/92093/harry-bronson"
+    },
+    {
+      "title": "Public source",
+      "url": "https://nyassembly.gov/mem/harry-b-bronson"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/harry-bronson-1343858"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

@@ -1,0 +1,60 @@
+{
+  "id": "sean-camacho",
+  "name": "Sean Camacho",
+  "firstName": "Sean",
+  "lastName": "Camacho",
+  "photo": "/images/officials/state-legislature/co/sean-camacho.jpg",
+  "photoSourceUrl": "https://s3.amazonaws.com/ballotpedia-api4/files/thumbs/200/300/SeanCamacho2024.jpeg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-6",
+  "jurisdiction": "Colorado House of Representatives",
+  "county": [
+    "Colorado"
+  ],
+  "termStart": "2025-01-08",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "State Capitol Room 307, Colorado  Building 200 E. Colfax Ave., Denver, CO 80203",
+    "phone": "303-866-2911",
+    "email": "sean.camacho.house@coleg.gov",
+    "website": "https://leg.colorado.gov/legislators/sean-camacho"
+  },
+  "bio": "Sean Camacho serves as State Representative for Colorado House of Representatives District 6. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "CO",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://leg.colorado.gov/legislators/sean-camacho"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/co/legislature/Sean-Camacho-56e058a4-2a75-4864-8d5e-18c1c98f6960.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://s3.amazonaws.com/ballotpedia-api4/files/thumbs/200/300/SeanCamacho2024.jpeg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Sean_Camacho"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Sean_Camacho"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/206136/sean-camacho"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/sean-camacho-86462063"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

@@ -1,0 +1,60 @@
+{
+  "id": "cathy-loy",
+  "name": "Cathy Loy",
+  "firstName": "Cathy",
+  "lastName": "Loy",
+  "photo": "/images/officials/state-legislature/mo/cathy-loy.jpg",
+  "photoSourceUrl": "https://s3.amazonaws.com/ballotpedia-api4/files/thumbs/200/300/CathyLoy2024.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-163",
+  "jurisdiction": "Missouri House of Representatives",
+  "county": [
+    "Missouri"
+  ],
+  "termStart": "2025-01-08",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 201-F, 201 W. Capitol Ave., Jefferson City, MO 65101",
+    "phone": "573-751-5458",
+    "email": "cathyjo.loy@house.mo.gov",
+    "website": "https://house.mo.gov/MemberDetails.aspx?district=163"
+  },
+  "bio": "Cathy Loy serves as State Representative for Missouri House of Representatives District 163. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "MO",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://house.mo.gov/MemberDetails.aspx?district=163"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/mo/legislature/Cathy-Loy-0d50b579-ab89-4b9c-ae24-eb0d4216f3bd.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://s3.amazonaws.com/ballotpedia-api4/files/thumbs/200/300/CathyLoy2024.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Cathy_Loy"
+    },
+    {
+      "title": "Public source",
+      "url": "https://house.mo.gov/MemberDetails.aspx?year=2025&code=R&district=163"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/217791/cathy-jo-loy"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/cathy-jo-loy"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

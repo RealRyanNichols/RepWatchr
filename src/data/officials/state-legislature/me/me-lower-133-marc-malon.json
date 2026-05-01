@@ -1,0 +1,60 @@
+{
+  "id": "marc-malon",
+  "name": "Marc Malon",
+  "firstName": "Marc",
+  "lastName": "Malon",
+  "photo": "/images/officials/state-legislature/me/marc-malon.jpg",
+  "photoSourceUrl": "https://legislature.maine.gov/house/house/Repository/MemberProfiles/24740258-3b61-4d37-9179-239dbb5b64ee_MMALON.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-133",
+  "jurisdiction": "Maine House of Representatives",
+  "county": [
+    "Maine"
+  ],
+  "termStart": "2022-12-07",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 333, House Democratic Office 2 State House Station, Augusta, ME 04333",
+    "phone": "800-423-2900",
+    "email": "marc.malon@legislature.maine.gov",
+    "website": "https://legislature.maine.gov/house/house/MemberProfiles/Details/1478"
+  },
+  "bio": "Marc Malon serves as State Representative for Maine House of Representatives District 133. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "ME",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://legislature.maine.gov/house/house/MemberProfiles/Details/1478"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/me/legislature/Marc-G-Malon-48305a9e-8f2a-4cea-8689-b93491c82ad5.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://legislature.maine.gov/house/house/Repository/MemberProfiles/24740258-3b61-4d37-9179-239dbb5b64ee_MMALON.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Marc_Malon"
+    },
+    {
+      "title": "Public source",
+      "url": "https://legislature.maine.gov/house/house/MemberProfiles/ListAlpha"
+    },
+    {
+      "title": "Public source",
+      "url": "https://legislature.maine.gov/housedems/malon/index.html"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/marcmalon2"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

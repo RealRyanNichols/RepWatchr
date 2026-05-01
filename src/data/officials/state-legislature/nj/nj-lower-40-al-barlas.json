@@ -1,0 +1,61 @@
+{
+  "id": "al-barlas",
+  "name": "Al Barlas",
+  "firstName": "Al",
+  "lastName": "Barlas",
+  "party": "R",
+  "level": "state",
+  "position": "Assemblymember",
+  "district": "HD-40",
+  "jurisdiction": "New Jersey General Assembly",
+  "county": [
+    "New Jersey"
+  ],
+  "termStart": "2024-01-09",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "P.O. Box 068 State House, 145 W. State St., Trenton, NJ 08625",
+    "phone": "609-847-3905",
+    "email": "asmbarlas@njleg.org",
+    "website": "https://www.njassemblygop.com/218/Al-Barlas"
+  },
+  "bio": "Al Barlas serves as Assemblymember for New Jersey General Assembly District 40. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "NJ",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.njassemblygop.com/218/Al-Barlas"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/nj/legislature/Al-Barlas-525b3307-b007-4cfa-8166-efb0810fcda7.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Al_Barlas"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Al_Barlas"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/211694/al-barlas"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/al-b-50449a7a"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.njassemblygop.com/asm-barlas"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.njleg.state.nj.us/legislative-roster/494/assemblyman-barlas"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

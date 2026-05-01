@@ -1,0 +1,52 @@
+{
+  "id": "aaron-dana",
+  "name": "Aaron Dana",
+  "firstName": "Aaron",
+  "lastName": "Dana",
+  "photo": "/images/officials/state-legislature/me/aaron-dana.jpg",
+  "photoSourceUrl": "https://legislature.maine.gov/house/house/Repository/MemberProfiles/27852f04-e612-46a5-9727-1bbd1d5e48e0_DANA.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "I",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-Passamaquoddy Tribe",
+  "jurisdiction": "Maine House of Representatives",
+  "county": [
+    "Maine"
+  ],
+  "termStart": "2022-10-01",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Office of the Clerk of the House 2 State House Station, Augusta, ME 04333",
+    "phone": "800-423-2900",
+    "email": "aaron.dana@legislature.maine.gov",
+    "website": "https://legislature.maine.gov/house/house/MemberProfiles/Details/1507"
+  },
+  "bio": "Aaron Dana serves as State Representative for Maine House of Representatives District Passamaquoddy Tribe. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "ME",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://legislature.maine.gov/house/house/MemberProfiles/Details/1507"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/me/legislature/Aaron-Dana-906cd606-c6ff-41e5-87a6-e038b711fa61.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://legislature.maine.gov/house/house/Repository/MemberProfiles/27852f04-e612-46a5-9727-1bbd1d5e48e0_DANA.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Aaron_M._Dana"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/aaron-dana-77810185"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

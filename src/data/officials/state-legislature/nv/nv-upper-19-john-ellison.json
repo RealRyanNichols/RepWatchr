@@ -1,0 +1,72 @@
+{
+  "id": "john-ellison",
+  "name": "John Ellison",
+  "firstName": "John",
+  "lastName": "Ellison",
+  "photo": "/images/officials/state-legislature/nv/john-ellison.jpg",
+  "photoSourceUrl": "http://leg.state.nv.us/Session/81st2021/legislators/Assembly/Images/Ellison.John.159.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-19",
+  "jurisdiction": "Nevada Senate",
+  "county": [
+    "Nevada"
+  ],
+  "termStart": "2024-11-06",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 2102, Nevada Senate 401 S. Carson St., Carson City, NV 89701",
+    "phone": "775-684-1447",
+    "email": "john.ellison@sen.state.nv.us",
+    "website": "https://www.leg.state.nv.us/App/Legislator/A/api/81st2021/Legislator?id=159"
+  },
+  "bio": "John Ellison serves as State Senator for Nevada Senate District 19. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "NV",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.leg.state.nv.us/App/Legislator/A/api/81st2021/Legislator?id=159"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/nv/legislature/John-C-Ellison-87e878e2-fd19-4b55-a7b5-b76adf520e84.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "http://leg.state.nv.us/Session/81st2021/legislators/Assembly/Images/Ellison.John.159.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/John_Ellison"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/John_Ellison_%28politician%29"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/90566/john-ellison"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.leg.state.nv.us/App/Legislator/A/Assembly/Current"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.leg.state.nv.us/App/Legislator/A/Assembly/Current/33"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.leg.state.nv.us/App/Legislator/A/Senate/Current/19"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/john-ellison-a7858246"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

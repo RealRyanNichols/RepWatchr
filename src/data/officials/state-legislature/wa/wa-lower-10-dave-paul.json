@@ -1,0 +1,69 @@
+{
+  "id": "dave-paul",
+  "name": "Dave Paul",
+  "firstName": "Dave",
+  "lastName": "Paul",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-10",
+  "jurisdiction": "Washington House of Representatives",
+  "county": [
+    "Washington"
+  ],
+  "termStart": "2019-01-14",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 424, John L. O'Brien Building P.O. Box 40600, Olympia, WA 98504",
+    "phone": "360-786-7914",
+    "email": "dave.paul@leg.wa.gov",
+    "website": "https://housedemocrats.wa.gov/legislators/Dave-Paul/"
+  },
+  "bio": "Dave Paul serves as State Representative for Washington House of Representatives District 10. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "WA",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://housedemocrats.wa.gov/legislators/Dave-Paul/"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/wa/legislature/Dave-Paul-7ab5a10d-3d4a-4187-ac98-9afa60e34b61.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://app.leg.wa.gov/ContentParts/MemberDirectory/?a=House"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Dave_Paul"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Dave_Paul"
+    },
+    {
+      "title": "Public source",
+      "url": "https://housedemocrats.wa.gov/paul"
+    },
+    {
+      "title": "Public source",
+      "url": "https://housedemocrats.wa.gov/paul/"
+    },
+    {
+      "title": "Public source",
+      "url": "https://housedemocrats.wa.gov/paul/biography"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/182988/dave-paul"
+    },
+    {
+      "title": "Public source",
+      "url": "https://leg.wa.gov/legislators/member/dave-paul"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

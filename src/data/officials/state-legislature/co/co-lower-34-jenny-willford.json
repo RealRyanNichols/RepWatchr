@@ -1,0 +1,49 @@
+{
+  "id": "jenny-willford",
+  "name": "Jenny Willford",
+  "firstName": "Jenny",
+  "lastName": "Willford",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-34",
+  "jurisdiction": "Colorado House of Representatives",
+  "county": [
+    "Colorado"
+  ],
+  "termStart": "2025-01-08",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "State Capitol Room 307, Colorado  Building 200 E. Colfax Ave., Denver, CO 80203",
+    "phone": "303-866-2931",
+    "email": "jenny.willford.house@coleg.gov",
+    "website": "https://leg.colorado.gov/legislators/jenny-willford"
+  },
+  "bio": "Jenny Willford serves as State Representative for Colorado House of Representatives District 34. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "CO",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://leg.colorado.gov/legislators/jenny-willford"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/co/legislature/Jenny-Willford-655c629d-72f6-45d1-bd8f-a241e200d089.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Jenny_Willford"
+    },
+    {
+      "title": "Public source",
+      "url": "https://leg.colorado.gov/legislators"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/jennyclaywillford"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

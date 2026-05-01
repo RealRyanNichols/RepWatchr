@@ -1,0 +1,72 @@
+{
+  "id": "dawn-white",
+  "name": "Dawn White",
+  "firstName": "Dawn",
+  "lastName": "White",
+  "photo": "/images/officials/state-legislature/tn/dawn-white.jpg",
+  "photoSourceUrl": "http://www.capitol.tn.gov/senate/members/images/s13.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-13",
+  "jurisdiction": "Tennessee Senate",
+  "county": [
+    "Tennessee"
+  ],
+  "termStart": "2018-11-06",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 744, Cordell Hull Building 425 Rep. John Lewis Way North, Nashville, TN 37243",
+    "phone": "615-741-6853",
+    "email": "sen.dawn.white@capitol.tn.gov",
+    "website": "https://wapp.capitol.tn.gov/apps/legislatorinfo/member.aspx?district=S13"
+  },
+  "bio": "Dawn White serves as State Senator for Tennessee Senate District 13. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "TN",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://wapp.capitol.tn.gov/apps/legislatorinfo/member.aspx?district=S13"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/tn/legislature/Dawn-White-80bf42b1-4942-4187-af19-94e830333ce2.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "http://www.capitol.tn.gov/senate/members/images/s13.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Dawn_White"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Dawn_White"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/138657/dawn-white"
+    },
+    {
+      "title": "Public source",
+      "url": "https://wapp.capitol.tn.gov/apps/LegislatorInfo/directory.aspx?chamber=S"
+    },
+    {
+      "title": "Public source",
+      "url": "https://wapp.capitol.tn.gov/apps/legislatorinfo/member?district=S13"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.capitol.tn.gov/senate/members"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.capitol.tn.gov/senate/members/"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

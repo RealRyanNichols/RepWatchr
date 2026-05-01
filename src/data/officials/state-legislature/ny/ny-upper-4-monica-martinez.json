@@ -1,0 +1,49 @@
+{
+  "id": "monica-martinez",
+  "name": "Monica Martinez",
+  "firstName": "Monica",
+  "lastName": "Martinez",
+  "party": "D",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-4",
+  "jurisdiction": "New York Senate",
+  "county": [
+    "New York"
+  ],
+  "termStart": "2023-01-01",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 903, Legislative Office Building, Albany, NY 12247",
+    "phone": "518-455-2765",
+    "email": "martinez@nysenate.gov",
+    "website": "https://www.nysenate.gov/senators/monica-r-martinez"
+  },
+  "bio": "Monica Martinez serves as State Senator for New York Senate District 4. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "NY",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.nysenate.gov/senators/monica-r-martinez"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ny/legislature/Monica-R-Martinez-622242c6-d42c-4557-b9ab-29ca87e6d141.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Monica_Martinez"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Monica_Martinez"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/monica-r-martinez-54007771"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

@@ -1,0 +1,60 @@
+{
+  "id": "jerry-turner",
+  "name": "Jerry Turner",
+  "firstName": "Jerry",
+  "lastName": "Turner",
+  "photo": "/images/officials/state-legislature/ms/jerry-turner.jpg",
+  "photoSourceUrl": "http://billstatus.ls.state.ms.us/members/house/turner.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-18",
+  "jurisdiction": "Mississippi House of Representatives",
+  "county": [
+    "Mississippi"
+  ],
+  "termStart": "2004-01-06",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "State Capitol Room 402-B, 400 High St., Jackson, MS 39201",
+    "phone": "601-359-3328",
+    "email": "jturner@house.ms.gov",
+    "website": "https://billstatus.ls.state.ms.us/members/house/turner.xml"
+  },
+  "bio": "Jerry Turner serves as State Representative for Mississippi House of Representatives District 18. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "MS",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://billstatus.ls.state.ms.us/members/house/turner.xml"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ms/legislature/Jerry-R-Turner-52d3da6f-c397-4795-9bd8-5a3f17657129.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "http://billstatus.ls.state.ms.us/members/house/turner.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Jerry_Turner_(Mississippi)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://billstatus.ls.state.ms.us/members/hr_membs.xml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Jerry_Turner_(politician)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/jerry-turner-4053a899"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

@@ -1,0 +1,68 @@
+{
+  "id": "regan-deering",
+  "name": "Regan Deering",
+  "firstName": "Regan",
+  "lastName": "Deering",
+  "photo": "/images/officials/state-legislature/il/regan-deering.jpg",
+  "photoSourceUrl": "https://cdn.ilga.gov/assets/img/members/{57C9E73B-E152-4B7D-B42B-6EA67289504E}.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-88",
+  "jurisdiction": "Illinois House of Representatives",
+  "county": [
+    "Illinois"
+  ],
+  "termStart": "2025-01-08",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 221-N, Stratton Office Building, Springfield, IL 62706",
+    "phone": "217-782-8163",
+    "email": "deering@ilhousegop.org",
+    "website": "https://repdeering.com/"
+  },
+  "bio": "Regan Deering serves as State Representative for Illinois House of Representatives District 88. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "IL",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://repdeering.com/"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/il/legislature/Regan-Deering-8d81a4e9-f895-4a60-8064-2ddd2bd785c8.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://cdn.ilga.gov/assets/img/members/{57C9E73B-E152-4B7D-B42B-6EA67289504E}.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Regan_Deering"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/204324/regan-deering"
+    },
+    {
+      "title": "Public source",
+      "url": "https://repdeering.com"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.ilga.gov/House/Members/Details/3454"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.ilga.gov/house/Rep.asp?GA=104&MemberID=3454"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/regan-andreas-deering-b18074a2"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

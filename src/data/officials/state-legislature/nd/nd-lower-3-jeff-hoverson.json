@@ -1,0 +1,71 @@
+{
+  "id": "jeff-hoverson",
+  "name": "Jeff Hoverson",
+  "firstName": "Jeff",
+  "lastName": "Hoverson",
+  "photo": "/images/officials/state-legislature/nd/jeff-hoverson.jpg",
+  "photoSourceUrl": "https://www.ndlegis.gov/sites/default/files/styles/member_list_photo/public/person/photo/jahoverson2023.jpg?itok=MxnKpSrt",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-3",
+  "jurisdiction": "North Dakota House of Representatives",
+  "county": [
+    "North Dakota"
+  ],
+  "termStart": "2018-12-01",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "State Capitol 600 E. Boulevard Ave., Bismarck, ND 58505",
+    "email": "jahoverson@ndlegis.gov",
+    "website": "https://ndlegis.gov/biography/jeff-a-hoverson"
+  },
+  "bio": "Jeff Hoverson serves as State Representative for North Dakota House of Representatives District 3. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "ND",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://ndlegis.gov/biography/jeff-a-hoverson"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/nd/legislature/Jeff-A-Hoverson-4c53491d-adf0-4c18-a645-a63667f2c828.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://www.ndlegis.gov/sites/default/files/styles/member_list_photo/public/person/photo/jahoverson2023.jpg?itok=MxnKpSrt"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Jeff_Hoverson"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Jeff_Hoverson"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/181349/jeff-hoverson"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.legis.nd.gov/assembly/66-2019/members/house/representative-jeff-a-hoverson"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.legis.nd.gov/assembly/67-2021/members/house/representative-jeff-a-hoverson"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.legis.nd.gov/assembly/67-2021/members/members-by-district"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/jeff-hoverson-39804114"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

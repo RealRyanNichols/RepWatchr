@@ -1,0 +1,57 @@
+{
+  "id": "doug-shane",
+  "name": "Doug Shane",
+  "firstName": "Doug",
+  "lastName": "Shane",
+  "party": "R",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-37",
+  "jurisdiction": "Kansas Senate",
+  "county": [
+    "Kansas"
+  ],
+  "termStart": "2025-01-13",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "State Capitol Room 237-E, Kansas  Building 300 SW 10th St., Topeka, KS 66612",
+    "phone": "785-296-7368",
+    "email": "doug.shane@senate.ks.gov",
+    "website": "https://www.kslegislature.gov/li/b2025_26/members/sen_shane_doug_1/"
+  },
+  "bio": "Doug Shane serves as State Senator for Kansas Senate District 37. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "KS",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.kslegislature.gov/li/b2025_26/members/sen_shane_doug_1/"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ks/legislature/Doug-Shane-d0ae10e6-5c26-4be4-af00-036b23664127.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://aaivet.org/doug-shane"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Douglas_Shane"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/219526/douglas-shane"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.kslegislature.gov/li/b2025_26/members/sen_shane_doug_1"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/douglas-shane-a380a3116"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

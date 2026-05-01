@@ -1,0 +1,64 @@
+{
+  "id": "danny-nix",
+  "name": "Danny Nix",
+  "firstName": "Danny",
+  "lastName": "Nix",
+  "photo": "/images/officials/state-legislature/fl/danny-nix.jpg",
+  "photoSourceUrl": "https://s3.amazonaws.com/ballotpedia-api4/files/thumbs/200/300/Danny_Nix.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-75",
+  "jurisdiction": "Florida House of Representatives",
+  "county": [
+    "Florida"
+  ],
+  "termStart": "2024-11-05",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 1301, The Capitol 402 S. Monroe St., Tallahassee, FL 32399",
+    "phone": "850-717-5075",
+    "email": "danny.nix@flhouse.gov",
+    "website": "https://myfloridahouse.gov/Sections/Representatives/details.aspx?MemberId=4921&LegislativeTermId=91"
+  },
+  "bio": "Danny Nix serves as State Representative for Florida House of Representatives District 75. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "FL",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://myfloridahouse.gov/Sections/Representatives/details.aspx?MemberId=4921&LegislativeTermId=91"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/fl/legislature/Danny-Nix-971fb9ac-b0f3-45df-89f0-f24b6ba9b5a3.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://s3.amazonaws.com/ballotpedia-api4/files/thumbs/200/300/Danny_Nix.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Danny_Nix"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.flhouse.gov/Sections/Representatives/custom/details.aspx?MemberId=4921&LegislativeTermId=91"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.flhouse.gov/Sections/Representatives/details.aspx?MemberId=4921"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.flhouse.gov/Sections/Representatives/details.aspx?MemberId=4921&LegislativeTermId=91"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/danny-nix-ccim-403a0260"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

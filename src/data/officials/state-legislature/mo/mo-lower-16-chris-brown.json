@@ -1,0 +1,64 @@
+{
+  "id": "chris-brown",
+  "name": "Chris Brown",
+  "firstName": "Chris",
+  "lastName": "Brown",
+  "photo": "/images/officials/state-legislature/mo/chris-brown.jpg",
+  "photoSourceUrl": "https://house.mo.gov/MemberPhoto.aspx?id=2212",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-16",
+  "jurisdiction": "Missouri House of Representatives",
+  "county": [
+    "Missouri"
+  ],
+  "termStart": "2021-01-06",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 302-1, 201 W. Capitol Ave., Jefferson City, MO 65101",
+    "phone": "573-751-9458",
+    "email": "chris.brown@house.mo.gov",
+    "website": "https://house.mo.gov/MemberDetails.aspx?district=016"
+  },
+  "bio": "Chris Brown serves as State Representative for Missouri House of Representatives District 16. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "MO",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://house.mo.gov/MemberDetails.aspx?district=016"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/mo/legislature/Chris-Brown-43f13a74-64cd-41b6-b03a-51af80dbfc10.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://house.mo.gov/MemberPhoto.aspx?id=2212"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Chris_Brown_(Missouri_House_of_Representatives_District_16_candidate)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Chris_Brown_(Missouri_politician)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://house.mo.gov/MemberDetails.aspx?year=2021&code=R&district=016"
+    },
+    {
+      "title": "Public source",
+      "url": "https://house.mo.gov/MemberDetails.aspx?year=2023&code=R&district=016"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/193276/chris-brown"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

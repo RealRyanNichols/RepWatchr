@@ -1,0 +1,72 @@
+{
+  "id": "adam-scanlon",
+  "name": "Adam Scanlon",
+  "firstName": "Adam",
+  "lastName": "Scanlon",
+  "photo": "/images/officials/state-legislature/ma/adam-scanlon.jpg",
+  "photoSourceUrl": "https://malegislature.gov/Legislators/Profile/170/AJS1.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-14th Bristol",
+  "jurisdiction": "Massachusetts House of Representatives",
+  "county": [
+    "Massachusetts"
+  ],
+  "termStart": "2021-01-06",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 127, State House 24 Beacon St., Boston, MA 02133",
+    "phone": "617-722-2680",
+    "email": "adam.scanlon@mahouse.gov",
+    "website": "https://malegislature.gov/Legislators/Profile/AJS1"
+  },
+  "bio": "Adam Scanlon serves as State Representative for Massachusetts House of Representatives District 14th Bristol. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "MA",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://malegislature.gov/Legislators/Profile/AJS1"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ma/legislature/Adam-J-Scanlon-804c5518-7fdf-43c9-ba24-f2c24eb3b0ab.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://malegislature.gov/Legislators/Profile/170/AJS1.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Adam_Scanlon"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Adam_Scanlon"
+    },
+    {
+      "title": "Public source",
+      "url": "https://malegislature.gov/api/GeneralCourts/192/LegislativeMembers"
+    },
+    {
+      "title": "Public source",
+      "url": "https://malegislature.gov/api/GeneralCourts/192/LegislativeMembers/"
+    },
+    {
+      "title": "Public source",
+      "url": "https://malegislature.gov/api/GeneralCourts/192/LegislativeMembers/AJS1"
+    },
+    {
+      "title": "Public source",
+      "url": "https://malegislature.gov/api/GeneralCourts/193/LegislativeMembers"
+    },
+    {
+      "title": "Public source",
+      "url": "https://malegislature.gov/api/GeneralCourts/193/LegislativeMembers/"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

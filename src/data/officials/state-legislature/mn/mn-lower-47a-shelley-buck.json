@@ -1,0 +1,56 @@
+{
+  "id": "shelley-buck",
+  "name": "Shelley Buck",
+  "firstName": "Shelley",
+  "lastName": "Buck",
+  "photo": "/images/officials/state-legislature/mn/shelley-buck.jpg",
+  "photoSourceUrl": "https://www.house.mn.gov/hinfo/memberimgls94/47A.gif?v=012126",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-47A",
+  "jurisdiction": "Minnesota House of Representatives",
+  "county": [
+    "Minnesota"
+  ],
+  "termStart": "2026-02-03",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Centennial Office Building 658 Cedar St., Fifth Floor, St. Paul, MN 55155",
+    "phone": "651-296-7807",
+    "email": "rep.shelley.buck@house.mn.gov",
+    "website": "https://www.house.mn.gov/members/profile/15655"
+  },
+  "bio": "Shelley Buck serves as State Representative for Minnesota House of Representatives District 47A. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "MN",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.house.mn.gov/members/profile/15655"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/mn/legislature/Shelley-Buck-0b860ed2-515a-4212-81ab-cc27b5e16223.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://www.house.mn.gov/hinfo/memberimgls94/47A.gif?v=012126"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Shelley_Buck"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Shelley_Buck"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/shelley-buck-pte-wicota-6a53b35a"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

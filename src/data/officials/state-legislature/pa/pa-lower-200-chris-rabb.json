@@ -1,0 +1,69 @@
+{
+  "id": "chris-rabb",
+  "name": "Chris Rabb",
+  "firstName": "Chris",
+  "lastName": "Rabb",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-200",
+  "jurisdiction": "Pennsylvania House of Representatives",
+  "county": [
+    "Pennsylvania"
+  ],
+  "termStart": "2016-12-01",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 322, Irvis Office Building P.O. Box 202200, Harrisburg, PA 17120",
+    "phone": "717-783-2178",
+    "email": "reprabb@pahouse.net",
+    "website": "https://www.legis.state.pa.us/cfdocs/legis/home/member_information/House_bio.cfm?id=1760"
+  },
+  "bio": "Chris Rabb serves as State Representative for Pennsylvania House of Representatives District 200. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "PA",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.legis.state.pa.us/cfdocs/legis/home/member_information/House_bio.cfm?id=1760"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/pa/legislature/Christopher-M-Rabb-e6a8e555-0d65-4a1f-9673-56ad1e3c7855.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Christopher_Rabb"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Chris_Rabb"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/167968/christopher-rabb"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.legis.state.pa.us/cfdocs/legis/home/member_information/mbrList.cfm?body=H&sort=alpha"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.legis.state.pa.us/cfdocs/legis/home/member_information/representatives_alpha.cfm"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/chrisrabb"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.pahouse.com/Rabb"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.palegis.us/house/members/bio/1760/rep-rabb"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

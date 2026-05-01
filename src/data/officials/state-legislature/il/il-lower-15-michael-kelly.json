@@ -1,0 +1,72 @@
+{
+  "id": "michael-kelly",
+  "name": "Michael Kelly",
+  "firstName": "Michael",
+  "lastName": "Kelly",
+  "photo": "/images/officials/state-legislature/il/michael-kelly.jpg",
+  "photoSourceUrl": "https://cdn.ilga.gov/assets/img/members/{90B28E06-84A0-47EB-A80B-403DF4CDA607}.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-15",
+  "jurisdiction": "Illinois House of Representatives",
+  "county": [
+    "Illinois"
+  ],
+  "termStart": "2021-11-23",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 279-S, Stratton Office Building, Springfield, IL 62706",
+    "phone": "217-782-8198",
+    "email": "district@repkelly.com",
+    "website": "https://ilga.gov/house/Rep.asp?GA=102&MemberID=3013"
+  },
+  "bio": "Michael Kelly serves as State Representative for Illinois House of Representatives District 15. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "IL",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://ilga.gov/house/Rep.asp?GA=102&MemberID=3013"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/il/legislature/Michael-Kelly-c98bae02-b0dd-40ea-96a8-8a5fa994d211.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://cdn.ilga.gov/assets/img/members/{90B28E06-84A0-47EB-A80B-403DF4CDA607}.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Michael_Kelly_(Illinois)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Michael_Kelly_(Illinois_politician)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ilga.gov/house/default.asp?GA=102"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ilga.gov/house/default.asp?GA=103"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ilga.gov/house/Rep.asp?GA=103&MemberID=3201"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/200759/michael-kelly"
+    },
+    {
+      "title": "Public source",
+      "url": "https://repkelly.com"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

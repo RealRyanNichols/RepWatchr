@@ -1,0 +1,63 @@
+{
+  "id": "gabriel-ramos",
+  "name": "Gabriel Ramos",
+  "firstName": "Gabriel",
+  "lastName": "Ramos",
+  "photo": "/images/officials/state-legislature/nm/gabriel-ramos.jpg",
+  "photoSourceUrl": "http://www.nmlegis.gov/Images/Legislators/Senate/SRAMO.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-28",
+  "jurisdiction": "New Mexico Senate",
+  "county": [
+    "New Mexico"
+  ],
+  "termStart": "2025-01-01",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "State Capitol Room 414A, New Mexico  490 Old Santa Fe Trail, Santa Fe, NM 87501",
+    "phone": "505-986-4391",
+    "email": "gabriel.ramos@nmlegis.gov",
+    "website": "https://www.linkedin.com/in/gabriel-ramos-a5aa74109/",
+    "socialMedia": {
+      "facebook": "https://facebook.com/NMSenRamos"
+    }
+  },
+  "bio": "Gabriel Ramos serves as State Senator for New Mexico Senate District 28. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "NM",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.linkedin.com/in/gabriel-ramos-a5aa74109/"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/nm/legislature/Gabriel-Ramos-6677ca7f-f961-44f1-a241-d14280762f5d.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "http://www.nmlegis.gov/Images/Legislators/Senate/SRAMO.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Gabriel_Ramos"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Gabriel_Ramos_(politician)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/gabriel-ramos-0a767457"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.nmlegis.gov/Members/Legislator?SponCode=SRAMO"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

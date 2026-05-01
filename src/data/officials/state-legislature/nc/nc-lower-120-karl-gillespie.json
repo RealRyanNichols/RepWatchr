@@ -1,0 +1,64 @@
+{
+  "id": "karl-gillespie",
+  "name": "Karl Gillespie",
+  "firstName": "Karl",
+  "lastName": "Gillespie",
+  "photo": "/images/officials/state-legislature/nc/karl-gillespie.jpg",
+  "photoSourceUrl": "https://www.ncleg.gov/Members/MemberImage/H/771/Low",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-120",
+  "jurisdiction": "North Carolina House of Representatives",
+  "county": [
+    "North Carolina"
+  ],
+  "termStart": "2021-01-01",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 1227, North Carolina Legislative Building 16 W. Jones St., Raleigh, NC 27601",
+    "phone": "919-733-5859",
+    "email": "karl.gillespie@ncleg.gov",
+    "website": "https://www.ncleg.gov/Members/Biography/H/771"
+  },
+  "bio": "Karl Gillespie serves as State Representative for North Carolina House of Representatives District 120. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "NC",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.ncleg.gov/Members/Biography/H/771"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/nc/legislature/Karl-E-Gillespie-c0ca675d-4bd2-462f-9bcb-b7ac8226dbdf.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://www.ncleg.gov/Members/MemberImage/H/771/Low"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Karl_Gillespie"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Karl_Gillespie"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/karl-gillespie-69772249"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/karl-gillespie-69938757"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.ncleg.gov/Members/MemberTable/H"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

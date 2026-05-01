@@ -1,0 +1,68 @@
+{
+  "id": "lesley-lopez",
+  "name": "Lesley Lopez",
+  "firstName": "Lesley",
+  "lastName": "Lopez",
+  "photo": "/images/officials/state-legislature/md/lesley-lopez.jpg",
+  "photoSourceUrl": "https://static.votesmart.org/static/canphoto/181654.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "Delegate",
+  "district": "HD-39",
+  "jurisdiction": "Maryland House of Delegates",
+  "county": [
+    "Maryland"
+  ],
+  "termStart": "2019-01-09",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 210, Lowe House Office Building 6 Bladen St., Annapolis, MD 21401",
+    "phone": "410-841-3021",
+    "email": "lesley.lopez@house.maryland.gov",
+    "website": "https://mgaleg.maryland.gov/mgawebsite/Members/Details/lopez01"
+  },
+  "bio": "Lesley Lopez serves as Delegate for Maryland House of Delegates District 39. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "MD",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://mgaleg.maryland.gov/mgawebsite/Members/Details/lopez01"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/md/legislature/Lesley-J-Lopez-3972ae32-865b-4f83-961f-d8a7ca703ad5.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://static.votesmart.org/static/canphoto/181654.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Lesley_Lopez"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Lesley_Lopez"
+    },
+    {
+      "title": "Public source",
+      "url": "https://gspm.gwu.edu/lesley-lopez"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/181654/lesley-lopez"
+    },
+    {
+      "title": "Public source",
+      "url": "https://mgaleg.maryland.gov/webmga/frmMain.aspx?pid=sponpage&tab=subject6&id=lopez01&stab=01"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/lesleylopez"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

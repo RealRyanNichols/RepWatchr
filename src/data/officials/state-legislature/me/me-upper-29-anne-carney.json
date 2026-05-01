@@ -1,0 +1,72 @@
+{
+  "id": "anne-carney",
+  "name": "Anne Carney",
+  "firstName": "Anne",
+  "lastName": "Carney",
+  "photo": "/images/officials/state-legislature/me/anne-carney.jpg",
+  "photoSourceUrl": "https://legislature.maine.gov/uploads/visual_edit/carney-web-1-1024x854.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-29",
+  "jurisdiction": "Maine Senate",
+  "county": [
+    "Maine"
+  ],
+  "termStart": "2020-12-02",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "3 State House Station, Augusta, ME 04333",
+    "phone": "207-287-1515",
+    "email": "anne.carney@legislature.maine.gov",
+    "website": "https://legislature.maine.gov/District-29"
+  },
+  "bio": "Anne Carney serves as State Senator for Maine Senate District 29. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "ME",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://legislature.maine.gov/District-29"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/me/legislature/Anne-M-Carney-50f75f0e-328c-413c-8733-de2872c5b7b0.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://legislature.maine.gov/uploads/visual_edit/carney-web-1-1024x854.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Anne_Carney"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Anne_Carney"
+    },
+    {
+      "title": "Public source",
+      "url": "https://legislature.maine.gov/district29"
+    },
+    {
+      "title": "Public source",
+      "url": "https://legislature.maine.gov/District29"
+    },
+    {
+      "title": "Public source",
+      "url": "https://legislature.maine.gov/uploads/visual_edit/130th-senate-contact-information-as-of-31221.xlsx"
+    },
+    {
+      "title": "Public source",
+      "url": "https://legislature.maine.gov/uploads/visual_edit/131-senator-contact-information-2.xlsx"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/anne-carney-90a976149"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

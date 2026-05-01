@@ -1,0 +1,70 @@
+{
+  "id": "mike-dwyer",
+  "name": "Mike Dwyer",
+  "firstName": "Mike",
+  "lastName": "Dwyer",
+  "photo": "/images/officials/state-legislature/nd/mike-dwyer.jpg",
+  "photoSourceUrl": "https://www.ndlegis.gov/sites/default/files/styles/member_list_photo/public/person/photo/mdwyer2023.jpg?itok=8BekhLxi",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-47",
+  "jurisdiction": "North Dakota Senate",
+  "county": [
+    "North Dakota"
+  ],
+  "termStart": "2018-12-01",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "email": "mdwyer@ndlegis.gov",
+    "website": "https://ndlegis.gov/biography/michael-dwyer"
+  },
+  "bio": "Mike Dwyer serves as State Senator for North Dakota Senate District 47. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "ND",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://ndlegis.gov/biography/michael-dwyer"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/nd/legislature/Michael-Dwyer-704150b0-5d7f-43ea-afd5-b6f059463575.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://www.ndlegis.gov/sites/default/files/styles/member_list_photo/public/person/photo/mdwyer2023.jpg?itok=8BekhLxi"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Mike_Dwyer"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Michael_Dwyer_(North_Dakota_politician)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/181443/mike-dwyer"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.legis.nd.gov/assembly/66-2019/members/senate/senator-michael-dwyer"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.legis.nd.gov/assembly/67-2021/members/members-by-district"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.legis.nd.gov/assembly/67-2021/members/senate/senator-michael-dwyer"
+    },
+    {
+      "title": "members list page",
+      "url": "https://www.ndlegis.gov/assembly/68-2023/regular/members?combine=&field_legis_chamber_target_id=All&field_legis_district_target_id=All&field_legislator_party_target_id=All&page=1"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

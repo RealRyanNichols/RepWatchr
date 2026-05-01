@@ -1,0 +1,65 @@
+{
+  "id": "matt-koleszar",
+  "name": "Matt Koleszar",
+  "firstName": "Matt",
+  "lastName": "Koleszar",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-22",
+  "jurisdiction": "Michigan House of Representatives",
+  "county": [
+    "Michigan"
+  ],
+  "termStart": "2023-01-01",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room N-786, Anderson House Office Building 124 N. Capitol Ave., Lansing, MI 48933",
+    "phone": "517-373-0854",
+    "email": "mattkoleszar@house.mi.gov",
+    "website": "https://housedems.com/koleszar"
+  },
+  "bio": "Matt Koleszar serves as State Representative for Michigan House of Representatives District 22. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "MI",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://housedems.com/koleszar"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/mi/legislature/Matt-Koleszar-42a456fa-8979-468f-b2a6-30f81ff20299.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Matt_Koleszar"
+    },
+    {
+      "title": "Public source",
+      "url": "https://housedems.com/matt-koleszar"
+    },
+    {
+      "title": "Public source",
+      "url": "https://housedems.com/matt-koleszar/"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/182748/matt-koleszar"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.house.mi.gov/AllRepresentatives"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.house.mi.gov/MHRPublic/frmRepListMilenia.aspx?all=true"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/mattformichigan"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

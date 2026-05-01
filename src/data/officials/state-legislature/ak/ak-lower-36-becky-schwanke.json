@@ -1,0 +1,56 @@
+{
+  "id": "becky-schwanke",
+  "name": "Becky Schwanke",
+  "firstName": "Becky",
+  "lastName": "Schwanke",
+  "photo": "/images/officials/state-legislature/ak/becky-schwanke.jpg",
+  "photoSourceUrl": "https://bloximages.newyork1.vip.townnews.com/newsminer.com/content/tncms/assets/v3/editorial/3/e9/3e94520a-9536-11ef-bf77-632b9a4876c1/671f9b183c878.image.jpg?resize=424%2C500",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-36",
+  "jurisdiction": "Alaska House of Representatives",
+  "county": [
+    "Alaska"
+  ],
+  "termStart": "2025-01-21",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "State Capitol Room 409, 120 4th St., Juneau, AK 99801",
+    "phone": "907-465-2327",
+    "email": "representative.rebecca.schwanke@akleg.gov",
+    "website": "https://www.akleg.gov/basis/Member/Detail/34?code=scw"
+  },
+  "bio": "Becky Schwanke serves as State Representative for Alaska House of Representatives District 36. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "AK",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.akleg.gov/basis/Member/Detail/34?code=scw"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ak/legislature/Becky-Schwanke-a160c8f2-f8a9-4429-9bc2-e14831545503.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://bloximages.newyork1.vip.townnews.com/newsminer.com/content/tncms/assets/v3/editorial/3/e9/3e94520a-9536-11ef-bf77-632b9a4876c1/671f9b183c878.image.jpg?resize=424%2C500"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Becky_Schwanke"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/218216/rebecca-schwanke"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/rebeccaschwanke"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

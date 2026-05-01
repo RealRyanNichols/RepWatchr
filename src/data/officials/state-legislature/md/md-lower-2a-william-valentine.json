@@ -1,0 +1,52 @@
+{
+  "id": "william-valentine",
+  "name": "William Valentine",
+  "firstName": "William",
+  "lastName": "Valentine",
+  "photo": "/images/officials/state-legislature/md/william-valentine.jpg",
+  "photoSourceUrl": "https://bloximages.newyork1.vip.townnews.com/fredericknewspost.com/content/tncms/assets/v3/editorial/a/7a/a7adf4f6-64f2-5123-82bc-5d65e10bda6e/62b95a9a20374.image.jpg?crop=815%2C1208%2C356%2C15&resize=200%2C296&order=crop%2Cresize",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "Delegate",
+  "district": "HD-2A",
+  "jurisdiction": "Maryland House of Delegates",
+  "county": [
+    "Maryland"
+  ],
+  "termStart": "2023-01-11",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 324, Lowe House Office Building 6 Bladen St., Annapolis, MD 21401",
+    "phone": "410-841-3636",
+    "email": "william.valentine@house.maryland.gov",
+    "website": "https://mgaleg.maryland.gov/mgawebsite/Members/Details/valentine01"
+  },
+  "bio": "William Valentine serves as Delegate for Maryland House of Delegates District 2A. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "MD",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://mgaleg.maryland.gov/mgawebsite/Members/Details/valentine01"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/md/legislature/William-Valentine-943e92d3-98ad-490f-a93a-16182c624a1f.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://bloximages.newyork1.vip.townnews.com/fredericknewspost.com/content/tncms/assets/v3/editorial/a/7a/a7adf4f6-64f2-5123-82bc-5d65e10bda6e/62b95a9a20374.image.jpg?crop=815%2C1208%2C356%2C15&resize=200%2C296&order=crop%2Cresize"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/William_Valentine"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/William_Valentine_(politician)"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

@@ -1,0 +1,71 @@
+{
+  "id": "suann-olson",
+  "name": "SuAnn Olson",
+  "firstName": "SuAnn",
+  "lastName": "Olson",
+  "photo": "/images/officials/state-legislature/nd/suann-olson.jpg",
+  "photoSourceUrl": "https://www.ndlegis.gov/sites/default/files/styles/member_list_photo/public/person/photo/solson2023.jpg?itok=DQSnHPuC",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-8",
+  "jurisdiction": "North Dakota House of Representatives",
+  "county": [
+    "North Dakota"
+  ],
+  "termStart": "2022-12-01",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "State Capitol 600 E. Boulevard Ave., Bismarck, ND 58505",
+    "email": "solson@ndlegis.gov",
+    "website": "https://ndlegis.gov/biography/suann-olson"
+  },
+  "bio": "SuAnn Olson serves as State Representative for North Dakota House of Representatives District 8. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "ND",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://ndlegis.gov/biography/suann-olson"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/nd/legislature/SuAnn-Olson-e3f46d13-b49b-4fd9-a604-16ad12393a71.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://www.ndlegis.gov/sites/default/files/styles/member_list_photo/public/person/photo/solson2023.jpg?itok=DQSnHPuC"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/SuAnn_Olson"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/SuAnn_Olson"
+    },
+    {
+      "title": "Public source",
+      "url": "https://suannolson.com/about"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/suann-olson-cpa-16746514"
+    },
+    {
+      "title": "members list page",
+      "url": "https://www.ndlegis.gov/assembly/68-2023/regular/members?combine=&field_legis_chamber_target_id=All&field_legis_district_target_id=All&field_legislator_party_target_id=All&page=5"
+    },
+    {
+      "title": "members list page",
+      "url": "https://www.ndlegis.gov/assembly/68-2023/regular/members?page=5"
+    },
+    {
+      "title": "member details page",
+      "url": "https://www.ndlegis.gov/biography/suann-olson"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

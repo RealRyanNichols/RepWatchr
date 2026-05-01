@@ -1,0 +1,60 @@
+{
+  "id": "lisa-fragala",
+  "name": "Lisa Fragala",
+  "firstName": "Lisa",
+  "lastName": "Fragala",
+  "photo": "/images/officials/state-legislature/or/lisa-fragala.jpg",
+  "photoSourceUrl": "https://www.oregonlegislature.gov/fragala/PublishingImages/member_photo.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-8",
+  "jurisdiction": "Oregon House of Representatives",
+  "county": [
+    "Oregon"
+  ],
+  "termStart": "2025-01-13",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room H-484, 900 Court St. NE, Salem, OR 97301",
+    "phone": "503-986-1408",
+    "email": "rep.lisafragala@oregonlegislature.gov",
+    "website": "https://www.oregonlegislature.gov/fragala"
+  },
+  "bio": "Lisa Fragala serves as State Representative for Oregon House of Representatives District 8. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "OR",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.oregonlegislature.gov/fragala"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/or/legislature/Lisa-Fragala-d75fd48f-fff7-4ccb-a46e-93854b4de3eb.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://www.oregonlegislature.gov/fragala/PublishingImages/member_photo.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Lisa_Fragala"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Lisa_Fragala"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/215488/lisa-fragala"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.oregonlegislature.gov/fragala/Pages/biography.aspx"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

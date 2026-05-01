@@ -1,0 +1,54 @@
+{
+  "id": "brenna-bird",
+  "name": "Brenna Bird",
+  "firstName": "Brenna",
+  "lastName": "Bird",
+  "photo": "/images/officials/state-executive/ia/brenna-bird.jpg",
+  "photoSourceUrl": "https://www.naag.org/wp-content/uploads/2022/11/ag-IA-Bird.png",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "Attorney General",
+  "district": "Iowa",
+  "jurisdiction": "Iowa statewide public office",
+  "county": [
+    "Iowa"
+  ],
+  "termStart": "2023-01-02",
+  "termEnd": "2027-01-01",
+  "contactInfo": {
+    "office": "Hoover State Office Bldg., 1305 E. Walnut; Des Moines, IA 50319",
+    "website": "https://www.iowaattorneygeneral.gov/"
+  },
+  "bio": "Brenna Bird is listed as Attorney General for Iowa. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "IA",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.iowaattorneygeneral.gov/"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ia/executive/Brenna-Bird-fcb94ca1-9a57-4378-9568-ecbe6c3ae0d6.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://www.naag.org/wp-content/uploads/2022/11/ag-IA-Bird.png"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.iowaattorneygeneral.gov/about-us/about-attorney-general-brenna-bird"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Brenna_Bird"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.naag.org/attorney-general/brenna-bird/"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

@@ -1,0 +1,61 @@
+{
+  "id": "keith-truenow",
+  "name": "Keith Truenow",
+  "firstName": "Keith",
+  "lastName": "Truenow",
+  "party": "R",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-13",
+  "jurisdiction": "Florida Senate",
+  "county": [
+    "Florida"
+  ],
+  "termStart": "2024-11-05",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 306, Senate Building 404 S. Monroe St., Tallahassee, FL 32399",
+    "phone": "850-487-5013",
+    "email": "truenow.keith.web@flsenate.gov",
+    "website": "https://myfloridahouse.gov/Sections/Representatives/details.aspx?MemberId=4772&LegislativeTermId=90"
+  },
+  "bio": "Keith Truenow serves as State Senator for Florida Senate District 13. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "FL",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://myfloridahouse.gov/Sections/Representatives/details.aspx?MemberId=4772&LegislativeTermId=90"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/fl/legislature/Keith-L-Truenow-9c87088c-e5a4-4902-b3cb-4477e062de66.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Keith_Truenow"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Keith_Truenow"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.flsenate.gov/Senators/s13?pref=full"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/keith-truenow-42ba2043"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.myfloridahouse.gov/Sections/Representatives/details.aspx?MemberId=4772"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.myfloridahouse.gov/Sections/Representatives/details.aspx?MemberId=4772&LegislativeTermId=89"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

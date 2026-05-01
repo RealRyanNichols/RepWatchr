@@ -1,0 +1,72 @@
+{
+  "id": "larry-alley",
+  "name": "Larry Alley",
+  "firstName": "Larry",
+  "lastName": "Alley",
+  "photo": "/images/officials/state-legislature/ks/larry-alley.jpg",
+  "photoSourceUrl": "https://s3.amazonaws.com/ballotpedia-api4/files/thumbs/200/300/Larry_Alley.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-32",
+  "jurisdiction": "Kansas Senate",
+  "county": [
+    "Kansas"
+  ],
+  "termStart": "2017-01-09",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "State Capitol Room 441-E, Kansas  Building 300 SW 10th St., Topeka, KS 66612",
+    "phone": "785-296-7370",
+    "email": "larry.alley@senate.ks.gov",
+    "website": "https://www.kslegislature.gov/li/b2025_26/members/sen_alley_larry_1/"
+  },
+  "bio": "Larry Alley serves as State Senator for Kansas Senate District 32. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "KS",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.kslegislature.gov/li/b2025_26/members/sen_alley_larry_1/"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ks/legislature/Larry-Alley-4c340817-c498-4df6-afe4-d3251ce6594b.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://s3.amazonaws.com/ballotpedia-api4/files/thumbs/200/300/Larry_Alley.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Larry_Alley"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/128209/larry-alley"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.kslegislature.gov/li/b2025_26/members/sen_alley_larry_1"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.kslegislature.org/li/api/v11/rev-1/members/sen_alley_larry_1"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.kslegislature.org/li/api/v11/rev-1/members/sen_alley_larry_1/"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.kslegislature.org/li/b2023_24/members/sen_alley_larry_1"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.kslegislature.org/li/b2023_24/members/sen_alley_larry_1/"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

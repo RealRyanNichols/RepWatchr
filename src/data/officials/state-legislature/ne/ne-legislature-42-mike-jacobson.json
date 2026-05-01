@@ -1,0 +1,72 @@
+{
+  "id": "mike-jacobson",
+  "name": "Mike Jacobson",
+  "firstName": "Mike",
+  "lastName": "Jacobson",
+  "photo": "/images/officials/state-legislature/ne/mike-jacobson.jpg",
+  "photoSourceUrl": "https://www.nebraskalegislature.gov/media/images/senators/dist42/highres/dist42.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "NP",
+  "level": "state",
+  "position": "State Senator",
+  "district": "LD-42",
+  "jurisdiction": "Nebraska Legislature",
+  "county": [
+    "Nebraska"
+  ],
+  "termStart": "2022-02-23",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "State Capitol Room 1117, P.O. Box 94604, Lincoln, NE 68509",
+    "phone": "402-471-2729",
+    "email": "mjacobson@leg.ne.gov",
+    "website": "https://nebraskalegislature.gov/senators/landing-pages/index.php?District=42"
+  },
+  "bio": "Mike Jacobson serves as State Senator for Nebraska Legislature District 42. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "NE",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://nebraskalegislature.gov/senators/landing-pages/index.php?District=42"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ne/legislature/Mike-Jacobson-70b3f826-87f3-43c6-9762-27a178156a55.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://www.nebraskalegislature.gov/media/images/senators/dist42/highres/dist42.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Michael_Jacobson"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Mike_Jacobson"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/202292/michael-jacobson"
+    },
+    {
+      "title": "Public source",
+      "url": "https://nebraskalegislature.gov/senators/senator_list.php"
+    },
+    {
+      "title": "Public source",
+      "url": "https://news.legislature.ne.gov/dist42"
+    },
+    {
+      "title": "Public source",
+      "url": "https://news.legislature.ne.gov/dist42/"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/mike-jacobson-b6636751"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

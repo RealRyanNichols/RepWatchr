@@ -1,0 +1,74 @@
+{
+  "id": "morgan-cephas",
+  "name": "Morgan Cephas",
+  "firstName": "Morgan",
+  "lastName": "Cephas",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-192",
+  "jurisdiction": "Pennsylvania House of Representatives",
+  "county": [
+    "Pennsylvania"
+  ],
+  "termStart": "2016-12-01",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 324, Main Capitol Building P.O. Box 202192, Harrisburg, PA 17120",
+    "phone": "717-783-2192",
+    "email": "mcephas@pahouse.net",
+    "website": "https://www.legis.state.pa.us/cfdocs/legis/home/member_information/House_bio.cfm?id=1759",
+    "socialMedia": {
+      "x": "https://x.com/RepCephas",
+      "twitter": "https://x.com/RepCephas",
+      "facebook": "https://facebook.com/RepCephas"
+    }
+  },
+  "bio": "Morgan Cephas serves as State Representative for Pennsylvania House of Representatives District 192. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "PA",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.legis.state.pa.us/cfdocs/legis/home/member_information/House_bio.cfm?id=1759"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/pa/legislature/Morgan-Cephas-05326e52-202a-46cd-bbbe-cc8d01d9a44b.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Morgan_Cephas"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Morgan_Cephas"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/167868/morgan-cephas"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.legis.state.pa.us/cfdocs/legis/home/member_information/mbrList.cfm?body=H&sort=alpha"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.legis.state.pa.us/cfdocs/legis/home/member_information/representatives_alpha.cfm"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/morgan-cephas-11304580"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.pahouse.com/Cephas"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.pahouse.com/Cephas/About/Biography"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

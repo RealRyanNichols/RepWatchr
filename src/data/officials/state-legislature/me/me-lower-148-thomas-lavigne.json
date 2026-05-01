@@ -1,0 +1,60 @@
+{
+  "id": "thomas-lavigne",
+  "name": "Thomas Lavigne",
+  "firstName": "Thomas",
+  "lastName": "Lavigne",
+  "photo": "/images/officials/state-legislature/me/thomas-lavigne.jpg",
+  "photoSourceUrl": "https://legislature.maine.gov/house/house/Repository/MemberProfiles/fc7494df-6e51-45a2-9716-43f8d0f0b162_LAVIGNE.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-148",
+  "jurisdiction": "Maine House of Representatives",
+  "county": [
+    "Maine"
+  ],
+  "termStart": "2022-12-07",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 332, House Republican Office 2 State House Station, Augusta, ME 04333",
+    "phone": "800-423-2900",
+    "email": "thomas.lavigne@legislature.maine.gov",
+    "website": "https://legislature.maine.gov/house/house/MemberProfiles/Details/1472"
+  },
+  "bio": "Thomas Lavigne serves as State Representative for Maine House of Representatives District 148. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "ME",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://legislature.maine.gov/house/house/MemberProfiles/Details/1472"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/me/legislature/Thomas-A-Lavigne-be3df38c-150a-4e3c-8c16-6e97bdbeadc4.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://legislature.maine.gov/house/house/Repository/MemberProfiles/fc7494df-6e51-45a2-9716-43f8d0f0b162_LAVIGNE.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Thomas_Lavigne"
+    },
+    {
+      "title": "Public source",
+      "url": "https://legislature.maine.gov/house/house/MemberProfiles/ListAlpha"
+    },
+    {
+      "title": "Public source",
+      "url": "https://mainehousegop.org/members/lavigne-thomas"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/thomas-lavigne-a34646162"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

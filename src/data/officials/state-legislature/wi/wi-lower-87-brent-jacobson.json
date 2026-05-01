@@ -1,0 +1,51 @@
+{
+  "id": "brent-jacobson",
+  "name": "Brent Jacobson",
+  "firstName": "Brent",
+  "lastName": "Jacobson",
+  "party": "R",
+  "level": "state",
+  "position": "Assemblymember",
+  "district": "HD-87",
+  "jurisdiction": "Wisconsin State Assembly",
+  "county": [
+    "Wisconsin"
+  ],
+  "termStart": "2025-01-06",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "email": "rep.brent.jacobson@legis.wisconsin.gov",
+    "website": "https://docs.legis.wisconsin.gov/2025/legislators/assembly/2899"
+  },
+  "bio": "Brent Jacobson serves as Assemblymember for Wisconsin State Assembly District 87. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "WI",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://docs.legis.wisconsin.gov/2025/legislators/assembly/2899"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/wi/legislature/Brent-Jacobson-3089bcca-553d-4637-9b50-2d9698944d5a.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Brent_Jacobson_(Wisconsin)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Brent_Jacobson"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/184002/brent-jacobson"
+    },
+    {
+      "title": "Public source",
+      "url": "https://legis.wisconsin.gov/assembly/87/jacobson"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

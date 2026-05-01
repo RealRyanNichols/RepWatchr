@@ -1,0 +1,64 @@
+{
+  "id": "brian-crosby",
+  "name": "Brian Crosby",
+  "firstName": "Brian",
+  "lastName": "Crosby",
+  "photo": "/images/officials/state-legislature/md/brian-crosby.jpg",
+  "photoSourceUrl": "http://mgaleg.maryland.gov/2019RS/images/crosby01.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "Delegate",
+  "district": "HD-29B",
+  "jurisdiction": "Maryland House of Delegates",
+  "county": [
+    "Maryland"
+  ],
+  "termStart": "2019-01-09",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 220, Lowe House Office Building 6 Bladen St., Annapolis, MD 21401",
+    "phone": "410-841-3227",
+    "email": "brian.crosby@house.maryland.gov",
+    "website": "https://mgaleg.maryland.gov/mgawebsite/Members/Details/crosby01"
+  },
+  "bio": "Brian Crosby serves as Delegate for Maryland House of Delegates District 29B. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "MD",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://mgaleg.maryland.gov/mgawebsite/Members/Details/crosby01"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/md/legislature/Brian-M-Crosby-d9828ed6-bdb0-414e-ba12-486b78362842.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "http://mgaleg.maryland.gov/2019RS/images/crosby01.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Brian_Crosby"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Brian_M._Crosby"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/181601/brian-crosby#collapseFive"
+    },
+    {
+      "title": "Public source",
+      "url": "https://mgaleg.maryland.gov/webmga/frmMain.aspx?pid=sponpage&tab=subject6&id=crosby01&stab=01"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/brian-m-crosby"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

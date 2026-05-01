@@ -1,0 +1,72 @@
+{
+  "id": "maxine-dibert",
+  "name": "Maxine Dibert",
+  "firstName": "Maxine",
+  "lastName": "Dibert",
+  "photo": "/images/officials/state-legislature/ak/maxine-dibert.jpg",
+  "photoSourceUrl": "http://akleg.gov/images/legislators/450x600/DIB.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-31",
+  "jurisdiction": "Alaska House of Representatives",
+  "county": [
+    "Alaska"
+  ],
+  "termStart": "2023-01-17",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "State Capitol Room 128, 120 4th St., Juneau, AK 99801",
+    "phone": "907-465-2138",
+    "email": "representative.maxine.dibert@akleg.gov",
+    "website": "https://akhouse.org/rep-dibert/"
+  },
+  "bio": "Maxine Dibert serves as State Representative for Alaska House of Representatives District 31. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "AK",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://akhouse.org/rep-dibert/"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ak/legislature/Maxine-Dibert-5ef3ef20-0fd1-41a3-be56-7844d169bba8.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "http://akleg.gov/images/legislators/450x600/DIB.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://akhouse.org/rep-dibert"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Maxine_Dibert"
+    },
+    {
+      "title": "member list page",
+      "url": "https://www.akleg.gov/basis/mbr_info.asp?session=33"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.akleg.gov/basis/Member/Detail/33?code=DIB"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.akleg.gov/basis/Member/Detail/33?code=dib"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.akleg.gov/basis/Member/Detail/34?code=dib"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/maxine-dibert-52715566"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

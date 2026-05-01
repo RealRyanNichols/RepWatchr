@@ -1,0 +1,57 @@
+{
+  "id": "april-baskin",
+  "name": "April Baskin",
+  "firstName": "April",
+  "lastName": "Baskin",
+  "party": "D",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-63",
+  "jurisdiction": "New York Senate",
+  "county": [
+    "New York"
+  ],
+  "termStart": "2025-01-01",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 815, Legislative Office Building, Albany, NY 12247",
+    "phone": "518-455-2426",
+    "email": "baskin@nysenate.gov",
+    "website": "https://www.nysenate.gov/senators/april-baskin"
+  },
+  "bio": "April Baskin serves as State Senator for New York Senate District 63. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "NY",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.nysenate.gov/senators/april-baskin"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ny/legislature/April-N-McCants-Baskin-b1371ded-fa50-44d8-8fad-a8532b98406a.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/April_McCants-Baskin"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/April_Baskin"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/186279/april-mccants-baskin"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/april-n-m-baskin-75898098"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www4.erie.gov/baskin"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

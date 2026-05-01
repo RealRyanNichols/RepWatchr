@@ -1,0 +1,72 @@
+{
+  "id": "parker-moore",
+  "name": "Parker Moore",
+  "firstName": "Parker",
+  "lastName": "Moore",
+  "photo": "/images/officials/state-legislature/al/parker-moore.jpg",
+  "photoSourceUrl": "https://www.legislature.state.al.us/pdf/house/members/Moore_4.png",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-4",
+  "jurisdiction": "Alabama House of Representatives",
+  "county": [
+    "Alabama"
+  ],
+  "termStart": "2018-05-16",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 417-E, 11 S. Union St., Montgomery, AL 36130",
+    "phone": "334-261-0579",
+    "email": "parker.moore@alhouse.gov",
+    "website": "https://alison.legislature.state.al.us/house-leaders-members"
+  },
+  "bio": "Parker Moore serves as State Representative for Alabama House of Representatives District 4. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "AL",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://alison.legislature.state.al.us/house-leaders-members"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/al/legislature/Parker-Moore-95e63d6f-1815-4364-8817-0d26e360013f.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://www.legislature.state.al.us/pdf/house/members/Moore_4.png"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Parker_Moore"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Parker_Moore"
+    },
+    {
+      "title": "graphql endpoint for member information",
+      "url": "https://gql.api.alison.legislature.state.al.us/graphql"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/176839/parker-moore"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.legislature.state.al.us/aliswww/ISD/ALRepresentative.aspx?NAME=Moore&OID_SPONSOR=100484&OID_PERSON=8461&SESSNAME="
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.legislature.state.al.us/aliswww/ISD/ALRepresentative.aspx?OID_SPONSOR=100484&OID_PERSON=8461"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.legislature.state.al.us/aliswww/ISD/House/ALRepresentatives.aspx"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

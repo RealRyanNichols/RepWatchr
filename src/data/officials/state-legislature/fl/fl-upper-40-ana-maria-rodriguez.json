@@ -1,0 +1,60 @@
+{
+  "id": "ana-maria-rodriguez",
+  "name": "Ana Maria Rodriguez",
+  "firstName": "Ana Maria",
+  "lastName": "Rodriguez",
+  "photo": "/images/officials/state-legislature/fl/ana-maria-rodriguez.jpg",
+  "photoSourceUrl": "https://flsenate.gov/PublishedContent/Senators/2022-2024/Photos/s40_5379.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-40",
+  "jurisdiction": "Florida Senate",
+  "county": [
+    "Florida"
+  ],
+  "termStart": "2022-11-08",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 410, Senate Building 404 S. Monroe St., Tallahassee, FL 32399",
+    "phone": "850-487-5040",
+    "email": "rodriguez.anamaria.web@flsenate.gov",
+    "website": "https://flsenate.gov/Senators/2022-2024/S40"
+  },
+  "bio": "Ana Maria Rodriguez serves as State Senator for Florida Senate District 40. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "FL",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://flsenate.gov/Senators/2022-2024/S40"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/fl/legislature/Ana-Maria-Rodriguez-afd55a58-b8f6-4dd7-9d93-a2207b65e425.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://flsenate.gov/PublishedContent/Senators/2022-2024/Photos/s40_5379.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Ana_Maria_Rodriguez"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Ana_Maria_Rodriguez_(politician)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.flsenate.gov/Senators/S40"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/ana-maria-rodriguez-2730436"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

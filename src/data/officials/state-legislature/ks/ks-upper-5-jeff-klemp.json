@@ -1,0 +1,60 @@
+{
+  "id": "jeff-klemp",
+  "name": "Jeff Klemp",
+  "firstName": "Jeff",
+  "lastName": "Klemp",
+  "photo": "/images/officials/state-legislature/ks/jeff-klemp.jpg",
+  "photoSourceUrl": "https://s3.amazonaws.com/ballotpedia-api4/files/thumbs/200/300/JeffKlemp2024.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-5",
+  "jurisdiction": "Kansas Senate",
+  "county": [
+    "Kansas"
+  ],
+  "termStart": "2025-01-13",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "State Capitol Room 225-E, Kansas  Building 300 SW 10th St., Topeka, KS 66612",
+    "phone": "785-296-7522",
+    "email": "jeff.klemp@senate.ks.gov",
+    "website": "https://www.kslegislature.gov/li/b2025_26/members/sen_klemp_jeff_1/"
+  },
+  "bio": "Jeff Klemp serves as State Senator for Kansas Senate District 5. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "KS",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.kslegislature.gov/li/b2025_26/members/sen_klemp_jeff_1/"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ks/legislature/Jeff-Klemp-49a02bbc-55ad-456e-9175-d51041b583de.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://s3.amazonaws.com/ballotpedia-api4/files/thumbs/200/300/JeffKlemp2024.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Jeff_Klemp"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/218066/jeff-klemp"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.kslegislature.gov/li/b2025_26/members/sen_klemp_jeff_1"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/jeffrey-klemp-045894"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

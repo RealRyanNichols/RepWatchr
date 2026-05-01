@@ -1,0 +1,64 @@
+{
+  "id": "lew-frederick",
+  "name": "Lew Frederick",
+  "firstName": "Lew",
+  "lastName": "Frederick",
+  "photo": "/images/officials/state-legislature/or/lew-frederick.jpg",
+  "photoSourceUrl": "https://www.oregonlegislature.gov/frederick/PublishingImages/member_photo.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-22",
+  "jurisdiction": "Oregon Senate",
+  "county": [
+    "Oregon"
+  ],
+  "termStart": "2017-01-09",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room S-419, 900 Court St. NE, Salem, OR 97301",
+    "phone": "503-986-1722",
+    "email": "sen.lewfrederick@oregonlegislature.gov",
+    "website": "https://www.oregonlegislature.gov/frederick"
+  },
+  "bio": "Lew Frederick serves as State Senator for Oregon Senate District 22. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "OR",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.oregonlegislature.gov/frederick"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/or/legislature/Lew-Frederick-2256d4a8-f19b-4e1d-ba35-771cc0349b0b.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://www.oregonlegislature.gov/frederick/PublishingImages/member_photo.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://api.oregonlegislature.gov/odata/odataservice.svc/LegislativeSessions('2022R1')/Legislators"
+    },
+    {
+      "title": "Public source",
+      "url": "https://api.oregonlegislature.gov/odata/odataservice.svc/LegislativeSessions('2023R1')/Legislators"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Lew_Frederick"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Lew_Frederick"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/lew-frederick-1133536"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

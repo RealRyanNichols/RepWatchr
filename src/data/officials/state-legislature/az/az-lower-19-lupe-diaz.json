@@ -1,0 +1,57 @@
+{
+  "id": "lupe-diaz",
+  "name": "Lupe Diaz",
+  "firstName": "Lupe",
+  "lastName": "Diaz",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-19",
+  "jurisdiction": "Arizona House of Representatives",
+  "county": [
+    "Arizona"
+  ],
+  "termStart": "2023-01-09",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 302, 1700 W. Washington St., Phoenix, AZ 85007",
+    "phone": "602-926-4852",
+    "email": "ldiaz@azleg.gov",
+    "website": "https://www.azleg.gov/house-member/?legislature=55&session=123&legislator=2100"
+  },
+  "bio": "Lupe Diaz serves as State Representative for Arizona House of Representatives District 19. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "AZ",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.azleg.gov/house-member/?legislature=55&session=123&legislator=2100"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/az/legislature/Lupe-Diaz-bc52f516-a13b-4490-a12c-7b98fa3969e5.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Lupe_Diaz"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Lupe_Diaz"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.azleg.gov/house-member/?legislature=57&session=129&legislator=2304"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.azleg.gov/memberroster/?body=H"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/lupediaz"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

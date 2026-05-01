@@ -1,0 +1,72 @@
+{
+  "id": "dale-fowler",
+  "name": "Dale Fowler",
+  "firstName": "Dale",
+  "lastName": "Fowler",
+  "photo": "/images/officials/state-legislature/il/dale-fowler.jpg",
+  "photoSourceUrl": "https://cdn.ilga.gov/assets/img/members/{1E60CA94-7006-4CAB-841D-C9D99569D9D3}.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-59",
+  "jurisdiction": "Illinois Senate",
+  "county": [
+    "Illinois"
+  ],
+  "termStart": "2017-01-11",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 309-J, Capitol Building, Springfield, IL 62706",
+    "phone": "217-782-5509",
+    "email": "senatorfowler59@gmail.com",
+    "website": "https://ilga.gov/senate/Senator.asp?GA=101&MemberID=2678"
+  },
+  "bio": "Dale Fowler serves as State Senator for Illinois Senate District 59. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "IL",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://ilga.gov/senate/Senator.asp?GA=101&MemberID=2678"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/il/legislature/Dale-Fowler-5a84a944-7d29-454e-aec6-85e6c3238d53.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://cdn.ilga.gov/assets/img/members/{1E60CA94-7006-4CAB-841D-C9D99569D9D3}.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Dale_Fowler"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Dale_Fowler"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ilga.gov/senate/default.asp?GA=101"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ilga.gov/senate/default.asp?GA=102"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ilga.gov/senate/default.asp?GA=103"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ilga.gov/senate/Senator.asp?GA=102&MemberID=2897"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ilga.gov/senate/Senator.asp?GA=103&MemberID=3102"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

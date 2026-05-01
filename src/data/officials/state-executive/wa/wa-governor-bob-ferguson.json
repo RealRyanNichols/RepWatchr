@@ -1,0 +1,43 @@
+{
+  "id": "bob-ferguson",
+  "name": "Bob Ferguson",
+  "firstName": "Bob",
+  "lastName": "Ferguson",
+  "photo": "/images/officials/state-executive/wa/bob-ferguson.jpg",
+  "photoSourceUrl": "https://governor.wa.gov/sites/default/files/styles/max_650x650/public/2025-01/Bob%20Bio%20Headshot%20banner%20width.JPG",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "Governor",
+  "district": "Washington",
+  "jurisdiction": "Washington statewide public office",
+  "county": [
+    "Washington"
+  ],
+  "termStart": "2025-01-09",
+  "termEnd": "2028-12-30",
+  "contactInfo": {
+    "office": "Office of the Governor; PO Box 40002; Olympia, WA 98504-0002",
+    "phone": "360-902-4111",
+    "website": "https://governor.wa.gov/"
+  },
+  "bio": "Bob Ferguson is listed as Governor for Washington. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "WA",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://governor.wa.gov/"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/wa/executive/Bob-Ferguson-117499b6-79e9-4eaf-827d-59c0ed14b7c0.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://governor.wa.gov/sites/default/files/styles/max_650x650/public/2025-01/Bob%20Bio%20Headshot%20banner%20width.JPG"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

@@ -1,0 +1,60 @@
+{
+  "id": "matt-commons",
+  "name": "Matt Commons",
+  "firstName": "Matt",
+  "lastName": "Commons",
+  "photo": "/images/officials/state-legislature/in/matt-commons.jpg",
+  "photoSourceUrl": "https://static.wixstatic.com/media/00b233_c656903b0f40495f862980ada8809bd3~mv2.png/v1/fill/w_560,h_730,al_c,q_90,enc_auto/00b233_c656903b0f40495f862980ada8809bd3~mv2.png",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-13",
+  "jurisdiction": "Indiana House of Representatives",
+  "county": [
+    "Indiana"
+  ],
+  "termStart": "2024-11-06",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "200 W. Washington St., Indianapolis, IN 46204",
+    "phone": "317-232-9600",
+    "email": "h13@iga.in.gov",
+    "website": "https://iga.in.gov/legislative/2026/legislators/legislator_matt_commons_1"
+  },
+  "bio": "Matt Commons serves as State Representative for Indiana House of Representatives District 13. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "IN",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://iga.in.gov/legislative/2026/legislators/legislator_matt_commons_1"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/in/legislature/Matt-Commons-1f2380f8-be03-4499-a72a-8dac376d6aaa.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://static.wixstatic.com/media/00b233_c656903b0f40495f862980ada8809bd3~mv2.png/v1/fill/w_560,h_730,al_c,q_90,enc_auto/00b233_c656903b0f40495f862980ada8809bd3~mv2.png"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Matt_Commons"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Matt_Commons"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/214708/matthew-commons"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.indianahouserepublicans.com/members/general/matt-commons"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

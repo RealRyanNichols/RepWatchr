@@ -1,0 +1,72 @@
+{
+  "id": "trenton-barnhart",
+  "name": "Trenton Barnhart",
+  "firstName": "Trenton",
+  "lastName": "Barnhart",
+  "photo": "/images/officials/state-legislature/wv/trenton-barnhart.jpg",
+  "photoSourceUrl": "http://www.wvlegislature.gov/images/members/2023/house/barnhart_trenton.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-3",
+  "jurisdiction": "West Virginia Senate",
+  "county": [
+    "West Virginia"
+  ],
+  "termStart": "2026-01-28",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "State Capitol Room 223W, Complex, Building 1 1900 Kanawha Blvd. East, Charleston, WV 25305",
+    "phone": "304-357-7905",
+    "email": "trenton.barnhart@wvsenate.gov",
+    "website": "https://www.legis.state.wv.us/House/lawmaker.cfm?member=Delegate+Barnhart"
+  },
+  "bio": "Trenton Barnhart serves as State Senator for West Virginia Senate District 3. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "WV",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.legis.state.wv.us/House/lawmaker.cfm?member=Delegate+Barnhart"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/wv/legislature/Trenton-Barnhart-4a909c49-37c6-4105-ac77-afe4745a1b1b.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "http://www.wvlegislature.gov/images/members/2023/house/barnhart_trenton.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Trenton_Barnhart"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Trenton_Barnhart"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/187328/trenton-barnhart"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/trenton-barnhart-mba-77a691161"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.wvlegislature.gov/House/lawmaker.cfm?member=Delegate%20Barnhart"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.wvlegislature.gov/House/roster.cfm"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.wvlegislature.gov/Senate1/lawmaker.cfm?member=Senator%20Barnhart"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

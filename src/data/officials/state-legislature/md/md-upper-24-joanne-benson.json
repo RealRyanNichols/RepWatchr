@@ -1,0 +1,72 @@
+{
+  "id": "joanne-benson",
+  "name": "Joanne Benson",
+  "firstName": "Joanne",
+  "lastName": "Benson",
+  "photo": "/images/officials/state-legislature/md/joanne-benson.jpg",
+  "photoSourceUrl": "http://mgaleg.maryland.gov/2016RS/images/benson.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-24",
+  "jurisdiction": "Maryland Senate",
+  "county": [
+    "Maryland"
+  ],
+  "termStart": "2011-01-12",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 201, James Senate Office Building 11 Bladen St., Annapolis, MD 21401",
+    "phone": "410-841-3148",
+    "email": "joanne.benson@senate.maryland.gov",
+    "website": "https://mgaleg.maryland.gov/mgawebsite/Members/Details/benson"
+  },
+  "bio": "Joanne Benson serves as State Senator for Maryland Senate District 24. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "MD",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://mgaleg.maryland.gov/mgawebsite/Members/Details/benson"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/md/legislature/Joanne-C-Benson-a5a952f8-f001-4619-9056-103a1f4e4d8e.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "http://mgaleg.maryland.gov/2016RS/images/benson.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Joanne_Benson"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Joanne_C._Benson"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/6106/joanne-benson"
+    },
+    {
+      "title": "Public source",
+      "url": "https://mgaleg.maryland.gov/webmga/frmMain.aspx?pid=sponpage&tab=subject6&id=benson&stab=01"
+    },
+    {
+      "title": "Public source",
+      "url": "https://msa.maryland.gov/msa/mdmanual/05sen/html/msa12185.html"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.joannecbenson.com"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/joanne-benson-22775340"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

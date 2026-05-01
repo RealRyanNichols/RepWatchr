@@ -1,0 +1,49 @@
+{
+  "id": "t-j-brown",
+  "name": "T.J. Brown",
+  "firstName": "T.J.",
+  "lastName": "Brown",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-27",
+  "jurisdiction": "North Dakota House of Representatives",
+  "county": [
+    "North Dakota"
+  ],
+  "termStart": "2025-03-12",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "State Capitol 600 E. Boulevard Ave., Bismarck, ND 58505",
+    "phone": "701-328-3373",
+    "email": "tbrown@ndlegis.gov",
+    "website": "https://ndlegis.gov/biography/tj-brown"
+  },
+  "bio": "T.J. Brown serves as State Representative for North Dakota House of Representatives District 27. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "ND",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://ndlegis.gov/biography/tj-brown"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/nd/legislature/TJ-Brown-1e04adce-2d55-4b2a-bf7b-8a2977cd05f9.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Timothy_Brown_(North_Dakota)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Timothy_Brown_(North_Dakota_politician)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/timothybrown701"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

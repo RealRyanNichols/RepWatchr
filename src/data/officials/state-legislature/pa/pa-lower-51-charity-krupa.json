@@ -1,0 +1,60 @@
+{
+  "id": "charity-krupa",
+  "name": "Charity Krupa",
+  "firstName": "Charity",
+  "lastName": "Krupa",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-51",
+  "jurisdiction": "Pennsylvania House of Representatives",
+  "county": [
+    "Pennsylvania"
+  ],
+  "termStart": "2022-12-01",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 406, Irvis Office Building P.O. Box 202051, Harrisburg, PA 17120",
+    "phone": "717-783-5173",
+    "email": "ckrupa@pahousegop.com",
+    "website": "https://www.legis.state.pa.us/cfdocs/legis/home/member_information/House_bio.cfm?id=1949",
+    "socialMedia": {
+      "facebook": "https://facebook.com/RepGrimmKrupa"
+    }
+  },
+  "bio": "Charity Krupa serves as State Representative for Pennsylvania House of Representatives District 51. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "PA",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.legis.state.pa.us/cfdocs/legis/home/member_information/House_bio.cfm?id=1949"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/pa/legislature/Charity-Grimm-Krupa-d5bd036c-03f5-4111-b770-15cb2dbe3278.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Charity_Grimm_Krupa"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Charity_Grimm_Krupa"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.legis.state.pa.us/cfdocs/legis/home/member_information/mbrList.cfm?body=H&sort=alpha"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.palegis.us/house/members/bio/1949/rep-krupa"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.repgrimmkrupa.com"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

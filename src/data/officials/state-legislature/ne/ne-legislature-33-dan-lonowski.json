@@ -1,0 +1,60 @@
+{
+  "id": "dan-lonowski",
+  "name": "Dan Lonowski",
+  "firstName": "Dan",
+  "lastName": "Lonowski",
+  "photo": "/images/officials/state-legislature/ne/dan-lonowski.jpg",
+  "photoSourceUrl": "https://storage.googleapis.com/enview-dev-public-general/legislative-people-photos/167026.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "NP",
+  "level": "state",
+  "position": "State Senator",
+  "district": "LD-33",
+  "jurisdiction": "Nebraska Legislature",
+  "county": [
+    "Nebraska"
+  ],
+  "termStart": "2025-01-08",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "State Capitol Room 1017, P.O. Box 94604, Lincoln, NE 68509",
+    "phone": "402-471-2712",
+    "email": "dlonowski@leg.ne.gov",
+    "website": "https://nebraskalegislature.gov/senators/landing-pages/index.php?District=33"
+  },
+  "bio": "Dan Lonowski serves as State Senator for Nebraska Legislature District 33. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "NE",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://nebraskalegislature.gov/senators/landing-pages/index.php?District=33"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ne/legislature/Dan-Lonowski-40eb4961-5467-4d1b-af44-59a2e4de6fae.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://storage.googleapis.com/enview-dev-public-general/legislative-people-photos/167026.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Dan_Lonowski"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Dan_Lonowski"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/215048/dan-lonowski"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/dan-lonowski-419564106"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

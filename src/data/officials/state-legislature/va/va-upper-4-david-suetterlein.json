@@ -1,0 +1,77 @@
+{
+  "id": "david-suetterlein",
+  "name": "David Suetterlein",
+  "firstName": "David",
+  "lastName": "Suetterlein",
+  "photo": "/images/officials/state-legislature/va/david-suetterlein.jpg",
+  "photoSourceUrl": "https://apps.senate.virginia.gov/Senator/images/member_photos/Suetterlein4",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-4",
+  "jurisdiction": "Virginia Senate",
+  "county": [
+    "Virginia"
+  ],
+  "termStart": "2024-01-10",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 606, General Assembly Building P.O. Box 396, Richmond, VA 23218",
+    "phone": "804-698-7504",
+    "email": "senatorsuetterlein@senate.virginia.gov",
+    "website": "https://apps.senate.virginia.gov/Senator/memberpage.php?id=S101",
+    "socialMedia": {
+      "x": "https://x.com/DRSuetterlein",
+      "twitter": "https://x.com/DRSuetterlein",
+      "facebook": "https://facebook.com/suetterlein"
+    }
+  },
+  "bio": "David Suetterlein serves as State Senator for Virginia Senate District 4. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "VA",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://apps.senate.virginia.gov/Senator/memberpage.php?id=S101"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/va/legislature/David-R-Suetterlein-73e0de29-93b1-4c5c-af72-6c4a3d3950bd.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://apps.senate.virginia.gov/Senator/images/member_photos/Suetterlein4"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/David_Suetterlein"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/David_Suetterlein"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/156664/david-suetterlein"
+    },
+    {
+      "title": "Public source",
+      "url": "https://lis.virginia.gov/191/mbr/MBR.HTM"
+    },
+    {
+      "title": "Public source",
+      "url": "https://lis.virginia.gov/201/mbr/MBR.HTM"
+    },
+    {
+      "title": "Public source",
+      "url": "https://lis.virginia.gov/cgi-bin/legp604.exe?191+mbr+S101"
+    },
+    {
+      "title": "Public source",
+      "url": "https://lis.virginia.gov/cgi-bin/legp604.exe?201+mbr+S101"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

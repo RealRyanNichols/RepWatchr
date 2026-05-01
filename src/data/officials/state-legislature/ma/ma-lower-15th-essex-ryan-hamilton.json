@@ -1,0 +1,72 @@
+{
+  "id": "ryan-hamilton",
+  "name": "Ryan Hamilton",
+  "firstName": "Ryan",
+  "lastName": "Hamilton",
+  "photo": "/images/officials/state-legislature/ma/ryan-hamilton.jpg",
+  "photoSourceUrl": "https://malegislature.gov/Legislators/Profile/170/RMH2.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-15th Essex",
+  "jurisdiction": "Massachusetts House of Representatives",
+  "county": [
+    "Massachusetts"
+  ],
+  "termStart": "2023-01-04",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 540, State House 24 Beacon St., Boston, MA 02133",
+    "phone": "617-722-2090",
+    "email": "ryan.hamilton@mahouse.gov",
+    "website": "https://malegislature.gov/Legislators/Profile/RMH2"
+  },
+  "bio": "Ryan Hamilton serves as State Representative for Massachusetts House of Representatives District 15th Essex. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "MA",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://malegislature.gov/Legislators/Profile/RMH2"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ma/legislature/Ryan-M-Hamilton-799d49f3-28e5-46a1-bcc8-6370e9fbf44a.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://malegislature.gov/Legislators/Profile/170/RMH2.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Ryan_Hamilton"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Ryan_Hamilton_(Massachusetts_politician)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/209567/ryan-hamilton"
+    },
+    {
+      "title": "Public source",
+      "url": "https://malegislature.gov/api/GeneralCourts/193/LegislativeMembers"
+    },
+    {
+      "title": "Public source",
+      "url": "https://malegislature.gov/api/GeneralCourts/193/LegislativeMembers/"
+    },
+    {
+      "title": "Public source",
+      "url": "https://malegislature.gov/api/GeneralCourts/193/LegislativeMembers/RMH2"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/ryan-hamilton-578835217"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

@@ -1,0 +1,56 @@
+{
+  "id": "hanadi-nadeem",
+  "name": "Hanadi Nadeem",
+  "firstName": "Hanadi",
+  "lastName": "Nadeem",
+  "photo": "/images/officials/state-legislature/nv/hanadi-nadeem.jpg",
+  "photoSourceUrl": "https://s3.amazonaws.com/ballotpedia-api4/files/thumbs/200/300/Hanadi_Nadeem1.jpeg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "Assemblymember",
+  "district": "HD-34",
+  "jurisdiction": "Nevada Assembly",
+  "county": [
+    "Nevada"
+  ],
+  "termStart": "2024-11-06",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 4104, Nevada Assembly 401 S. Carson St., Carson City, NV 89701",
+    "phone": "775-684-8847",
+    "email": "hanadi.nadeem@asm.state.nv.us",
+    "website": "https://www.leg.state.nv.us/App/Legislator/A/Assembly/Current/34"
+  },
+  "bio": "Hanadi Nadeem serves as Assemblymember for Nevada Assembly District 34. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "NV",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.leg.state.nv.us/App/Legislator/A/Assembly/Current/34"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/nv/legislature/Hanadi-Nadeem-684e4e66-da40-4914-943a-40ef578fa231.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://s3.amazonaws.com/ballotpedia-api4/files/thumbs/200/300/Hanadi_Nadeem1.jpeg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Hanadi_Nadeem"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Hanadi_Nadeem"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/hanadi-nadeem-b0ba8a38"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

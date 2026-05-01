@@ -1,0 +1,72 @@
+{
+  "id": "steve-stafstrom",
+  "name": "Steve Stafstrom",
+  "firstName": "Steve",
+  "lastName": "Stafstrom",
+  "photo": "/images/officials/state-legislature/ct/steve-stafstrom.jpg",
+  "photoSourceUrl": "http://www2.housedems.ct.gov/Stafstrom/images/Stafstrom_HS.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-129",
+  "jurisdiction": "Connecticut House of Representatives",
+  "county": [
+    "Connecticut"
+  ],
+  "termStart": "2015-02-27",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 2502, Legislative Office Building 300 Capitol Ave., Hartford, CT 06106",
+    "phone": "860-240-8585",
+    "email": "steven.stafstrom@cga.ct.gov",
+    "website": "https://cga.ct.gov/asp/CGABillStatus/CGAMemberBills.asp?dist_code=%27129%27&dist_name=Stafstrom,%20Steven%20J."
+  },
+  "bio": "Steve Stafstrom serves as State Representative for Connecticut House of Representatives District 129. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "CT",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://cga.ct.gov/asp/CGABillStatus/CGAMemberBills.asp?dist_code=%27129%27&dist_name=Stafstrom,%20Steven%20J."
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ct/legislature/Steven-J-Stafstrom-cb252e7b-fffb-4bda-b951-d2b54a3c37e3.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "http://www2.housedems.ct.gov/Stafstrom/images/Stafstrom_HS.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "ftp://ftp.cga.ct.gov/pub/data/LegislatorDatabase.csv"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Steven_Stafstrom"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Steven_Stafstrom"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/156183/steven-stafstrom-jr"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.housedems.ct.gov/Stafstrom"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/stevestafstrom"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.pullcom.com/people-stevenstafstrom"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

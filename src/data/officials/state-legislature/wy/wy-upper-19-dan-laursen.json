@@ -1,0 +1,72 @@
+{
+  "id": "dan-laursen",
+  "name": "Dan Laursen",
+  "firstName": "Dan",
+  "lastName": "Laursen",
+  "photo": "/images/officials/state-legislature/wy/dan-laursen.jpg",
+  "photoSourceUrl": "https://wyoleg.gov/LegislatorSummary/Photos/68th-LaursenDan.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-19",
+  "jurisdiction": "Wyoming Senate",
+  "county": [
+    "Wyoming"
+  ],
+  "termStart": "2023-01-02",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "State Capitol 200 W. 24th St., Cheyenne, WY 82002",
+    "phone": "307-777-7881",
+    "email": "dan.laursen@wyoleg.gov",
+    "website": "https://www.wyoleg.gov/Legislators/2023/S/2006"
+  },
+  "bio": "Dan Laursen serves as State Senator for Wyoming Senate District 19. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "WY",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.wyoleg.gov/Legislators/2023/S/2006"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/wy/legislature/Dan-Laursen-982cdb50-2a81-47b4-97e8-cf80b92d1412.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://wyoleg.gov/LegislatorSummary/Photos/68th-LaursenDan.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Dan_Laursen"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Dan_Laursen"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/153967/dan-laursen"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/representative-laursen-965ba0101"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.wyoleg.gov/Legislators/2025/S/2006"
+    },
+    {
+      "title": "Public source",
+      "url": "https://wyoleg.gov/LsoService/api/legislator/2006"
+    },
+    {
+      "title": "Public source",
+      "url": "https://wyoleg.gov/LsoService/api/legislator/2023/S"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

@@ -1,0 +1,72 @@
+{
+  "id": "jack-flanagan",
+  "name": "Jack Flanagan",
+  "firstName": "Jack",
+  "lastName": "Flanagan",
+  "photo": "/images/officials/state-legislature/nh/jack-flanagan.jpg",
+  "photoSourceUrl": "http://www.gencourt.state.nh.us/house/images/memberpics/376936.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-Hillsborough 45",
+  "jurisdiction": "New Hampshire House of Representatives",
+  "county": [
+    "New Hampshire"
+  ],
+  "termStart": "2024-12-04",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "State House 107 N. Main St., Concord, NH 03301",
+    "phone": "603-271-3661",
+    "email": "jack.flanagan@gc.nh.gov",
+    "website": "https://gc.nh.gov/house/members/member.aspx?pid=623"
+  },
+  "bio": "Jack Flanagan serves as State Representative for New Hampshire House of Representatives District Hillsborough 45. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "NH",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://gc.nh.gov/house/members/member.aspx?pid=623"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/nh/legislature/Jack-B-Flanagan-0772e02f-5d9a-45d3-aa62-81a5416b06e2.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "http://www.gencourt.state.nh.us/house/images/memberpics/376936.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Jack_Flanagan"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Jack_Flanagan_(New_Hampshire_politician)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://gencourt.state.nh.us/house/members/member.aspx?pid=623"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/14551/jack-flanagan"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.gencourt.state.nh.us/downloads/Members.txt"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.gencourt.state.nh.us/house/members/member.aspx?member=376936"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/jack-flanagan-84514950"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

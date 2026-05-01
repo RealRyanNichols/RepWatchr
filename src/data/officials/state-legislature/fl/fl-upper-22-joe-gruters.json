@@ -1,0 +1,72 @@
+{
+  "id": "joe-gruters",
+  "name": "Joe Gruters",
+  "firstName": "Joe",
+  "lastName": "Gruters",
+  "photo": "/images/officials/state-legislature/fl/joe-gruters.jpg",
+  "photoSourceUrl": "https://flsenate.gov/PublishedContent/Senators/2022-2024/Photos/s22_5347.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-22",
+  "jurisdiction": "Florida Senate",
+  "county": [
+    "Florida"
+  ],
+  "termStart": "2022-11-08",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 413, Senate Building 404 S. Monroe St., Tallahassee, FL 32399",
+    "phone": "850-487-5022",
+    "email": "gruters.joe.web@flsenate.gov",
+    "website": "https://flsenate.gov/Senators/2022-2024/S22"
+  },
+  "bio": "Joe Gruters serves as State Senator for Florida Senate District 22. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "FL",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://flsenate.gov/Senators/2022-2024/S22"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/fl/legislature/Joe-Gruters-24b4458a-bc61-42f8-805a-6bc43edf6acb.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://flsenate.gov/PublishedContent/Senators/2022-2024/Photos/s22_5347.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Joe_Gruters"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Joe_Gruters"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.flsenate.gov/Senators"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.flsenate.gov/Senators/"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.flsenate.gov/Senators/2018-2020/S23"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.flsenate.gov/Senators/s22"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.flsenate.gov/Senators/s23"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

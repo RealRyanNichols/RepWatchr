@@ -1,0 +1,64 @@
+{
+  "id": "dan-ankeles",
+  "name": "Dan Ankeles",
+  "firstName": "Dan",
+  "lastName": "Ankeles",
+  "photo": "/images/officials/state-legislature/me/dan-ankeles.jpg",
+  "photoSourceUrl": "https://legislature.maine.gov/house/house/Repository/MemberProfiles/4ce09159-182e-48aa-93cb-0c127b0abe7c_ANKELES.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-100",
+  "jurisdiction": "Maine House of Representatives",
+  "county": [
+    "Maine"
+  ],
+  "termStart": "2022-12-07",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 333, House Democratic Office 2 State House Station, Augusta, ME 04333",
+    "phone": "800-423-2900",
+    "email": "daniel.ankeles@legislature.maine.gov",
+    "website": "https://legislature.maine.gov/house/house/MemberProfiles/Details/1495"
+  },
+  "bio": "Dan Ankeles serves as State Representative for Maine House of Representatives District 100. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "ME",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://legislature.maine.gov/house/house/MemberProfiles/Details/1495"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/me/legislature/Daniel-J-Ankeles-eb5efd36-8020-46f1-a6ef-6dac6873f692.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://legislature.maine.gov/house/house/Repository/MemberProfiles/4ce09159-182e-48aa-93cb-0c127b0abe7c_ANKELES.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Dan_Ankeles"
+    },
+    {
+      "title": "Public source",
+      "url": "https://legislature.maine.gov/house/house/MemberProfiles/ListAlpha"
+    },
+    {
+      "title": "Public source",
+      "url": "https://legislature.maine.gov/housedems/ankeles/index.html"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/dan-ankeles-7979a33"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.maine.gov/housedems/ankeles"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

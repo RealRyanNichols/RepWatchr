@@ -1,0 +1,72 @@
+{
+  "id": "amy-kuhn",
+  "name": "Amy Kuhn",
+  "firstName": "Amy",
+  "lastName": "Kuhn",
+  "photo": "/images/officials/state-legislature/me/amy-kuhn.jpg",
+  "photoSourceUrl": "https://legislature.maine.gov/house/house/Repository/MemberProfiles/a99f9866-50ae-4e3a-8eee-10a3e0d00dce_AKUHN.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-111",
+  "jurisdiction": "Maine House of Representatives",
+  "county": [
+    "Maine"
+  ],
+  "termStart": "2022-12-07",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 333, House Democratic Office 2 State House Station, Augusta, ME 04333",
+    "phone": "800-423-2900",
+    "email": "amy.kuhn@legislature.maine.gov",
+    "website": "https://legislature.maine.gov/house/house/MemberProfiles/Details/1474"
+  },
+  "bio": "Amy Kuhn serves as State Representative for Maine House of Representatives District 111. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "ME",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://legislature.maine.gov/house/house/MemberProfiles/Details/1474"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/me/legislature/Amy-D-Kuhn-d9825f86-280b-4b70-9a6e-2bb7f02e239a.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://legislature.maine.gov/house/house/Repository/MemberProfiles/a99f9866-50ae-4e3a-8eee-10a3e0d00dce_AKUHN.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Amy_Kuhn"
+    },
+    {
+      "title": "Public source",
+      "url": "https://legislature.maine.gov/house/house/MemberProfiles/ListAlpha"
+    },
+    {
+      "title": "Public source",
+      "url": "https://legislature.maine.gov/housedems/kuhn"
+    },
+    {
+      "title": "Public source",
+      "url": "https://legislature.maine.gov/housedems/kuhn/index.html"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.falmouthme.org/people/amy-kuhn"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/amy-donovan-kuhn-847bb149"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.maine.gov/housedems/kuhn"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

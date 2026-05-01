@@ -1,0 +1,72 @@
+{
+  "id": "leonard-christian",
+  "name": "Leonard Christian",
+  "firstName": "Leonard",
+  "lastName": "Christian",
+  "photo": "/images/officials/state-legislature/wa/leonard-christian.jpg",
+  "photoSourceUrl": "https://leg.wa.gov/memberphoto/18458.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-4",
+  "jurisdiction": "Washington Senate",
+  "county": [
+    "Washington"
+  ],
+  "termStart": "2025-01-13",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 322A, Irv Newhouse Building P.O. Box 40404, Olympia, WA 98504",
+    "phone": "360-786-7606",
+    "email": "leonard.christian@leg.wa.gov",
+    "website": "https://leg.wa.gov/legislators/member/leonard-christian"
+  },
+  "bio": "Leonard Christian serves as State Senator for Washington Senate District 4. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "WA",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://leg.wa.gov/legislators/member/leonard-christian"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/wa/legislature/Leonard-Christian-4d01a3aa-64e5-439d-9574-c1b749c1d52a.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://leg.wa.gov/memberphoto/18458.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://app.leg.wa.gov/ContentParts/MemberDirectory/?a=House"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Leonard_Christian"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Leonard_Christian"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/key-votes/150055/leonard-christian"
+    },
+    {
+      "title": "Public source",
+      "url": "https://leonardchristian.houserepublicans.wa.gov"
+    },
+    {
+      "title": "Public source",
+      "url": "https://leonardchristian.houserepublicans.wa.gov/"
+    },
+    {
+      "title": "Public source",
+      "url": "https://src.wastateleg.org/leonard-christian"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

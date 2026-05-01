@@ -1,0 +1,56 @@
+{
+  "id": "chasity-martinez",
+  "name": "Chasity Martinez",
+  "firstName": "Chasity",
+  "lastName": "Martinez",
+  "photo": "/images/officials/state-legislature/la/chasity-martinez.jpg",
+  "photoSourceUrl": "https://ibervilleparish.com/wp-content/uploads/District-10-Chasity-Martinez.png",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-60",
+  "jurisdiction": "Louisiana House of Representatives",
+  "county": [
+    "Louisiana"
+  ],
+  "termStart": "2026-03-09",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "P.O. Box 94062 900 N. 3rd St., Baton Rouge, LA 70804",
+    "phone": "225-342-6945",
+    "email": "hse060@legis.la.gov",
+    "website": "https://house.louisiana.gov/H_Reps/members?ID=60"
+  },
+  "bio": "Chasity Martinez serves as State Representative for Louisiana House of Representatives District 60. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "LA",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://house.louisiana.gov/H_Reps/members?ID=60"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/la/legislature/Chasity-Martinez-c58cdaf8-5e0d-4a0c-ac40-7e95c38ac83e.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://ibervilleparish.com/wp-content/uploads/District-10-Chasity-Martinez.png"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Chasity_Martinez"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Chasity_Martinez"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/chasity-martinez-848328195"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

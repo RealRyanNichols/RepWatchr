@@ -1,0 +1,68 @@
+{
+  "id": "jeremy-moss",
+  "name": "Jeremy Moss",
+  "firstName": "Jeremy",
+  "lastName": "Moss",
+  "photo": "/images/officials/state-legislature/mi/jeremy-moss.jpg",
+  "photoSourceUrl": "https://senatedems.com/moss/wp-content/uploads/sites/13/2023/01/MDS_Moss_W3A6000.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-7",
+  "jurisdiction": "Michigan Senate",
+  "county": [
+    "Michigan"
+  ],
+  "termStart": "2023-01-01",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room S-132, Capitol Building P.O. Box 30036, Lansing, MI 48909",
+    "phone": "517-373-7888",
+    "email": "senjmoss@senate.michigan.gov",
+    "website": "https://senatedems.com/moss"
+  },
+  "bio": "Jeremy Moss serves as State Senator for Michigan Senate District 7. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "MI",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://senatedems.com/moss"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/mi/legislature/Jeremy-Moss-d1c4631b-145d-4418-8a29-24683b83ae44.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://senatedems.com/moss/wp-content/uploads/sites/13/2023/01/MDS_Moss_W3A6000.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Jeremy_Moss"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Jeremy_Moss"
+    },
+    {
+      "title": "Public source",
+      "url": "https://senate.michigan.gov/senatorinfo_list.html"
+    },
+    {
+      "title": "Members List JSON Data Page",
+      "url": "https://senate.michigan.gov/senators/SenatorData.json"
+    },
+    {
+      "title": "Members List HTML page",
+      "url": "https://senate.michigan.gov/senators/senatorinfo_list.html"
+    },
+    {
+      "title": "Public source",
+      "url": "https://senatedems.com/moss/"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

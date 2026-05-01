@@ -1,0 +1,61 @@
+{
+  "id": "jen-plumb",
+  "name": "Jen Plumb",
+  "firstName": "Jen",
+  "lastName": "Plumb",
+  "party": "D",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-9",
+  "jurisdiction": "Utah Senate",
+  "county": [
+    "Utah"
+  ],
+  "termStart": "2023-01-01",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "P.O. Box 145115 350 N. State St., Suite 320, Salt Lake City, UT 84114",
+    "phone": "801-538-1035",
+    "email": "jplumb@le.utah.gov",
+    "website": "https://le.utah.gov/asp/billsintro/SenResults.asp?Listbox2=PLUMBJ"
+  },
+  "bio": "Jen Plumb serves as State Senator for Utah Senate District 9. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "UT",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://le.utah.gov/asp/billsintro/SenResults.asp?Listbox2=PLUMBJ"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ut/legislature/Jen-Plumb-bd870ade-5b3f-4ed3-9e6f-6bbab93a7d35.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Jennifer_Plumb"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Jennifer_Plumb"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/182107/jennifer-plumb"
+    },
+    {
+      "title": "Public source",
+      "url": "https://le.utah.gov/data/legislators.json"
+    },
+    {
+      "title": "Public source",
+      "url": "https://senate.utah.gov/sen/PLUMBJ"
+    },
+    {
+      "title": "Public source",
+      "url": "https://senate.utah.gov/sen/PLUMBJ/"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

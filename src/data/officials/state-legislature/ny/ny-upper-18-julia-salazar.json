@@ -1,0 +1,61 @@
+{
+  "id": "julia-salazar",
+  "name": "Julia Salazar",
+  "firstName": "Julia",
+  "lastName": "Salazar",
+  "party": "D",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-18",
+  "jurisdiction": "New York Senate",
+  "county": [
+    "New York"
+  ],
+  "termStart": "2020-01-08",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "State Capitol Room 514, Building 172 State Street, Albany, NY 12247",
+    "phone": "518-455-2177",
+    "email": "salazar@nysenate.gov",
+    "website": "https://www.nysenate.gov/senators-committees",
+    "socialMedia": {
+      "x": "https://x.com/JuliaCarmel__",
+      "twitter": "https://x.com/JuliaCarmel__"
+    }
+  },
+  "bio": "Julia Salazar serves as State Senator for New York Senate District 18. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "NY",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.nysenate.gov/senators-committees"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ny/legislature/Julia-Salazar-6c410f28-9316-45db-935d-52764c90b4ae.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Julia_Salazar"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Julia_Salazar"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/185085/julia-salazar"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.nysenate.gov/senators/julia-salazar"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.nysenate.gov/senators/julia-salazar/contact"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

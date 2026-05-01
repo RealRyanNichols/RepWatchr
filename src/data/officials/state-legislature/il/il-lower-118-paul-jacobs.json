@@ -1,0 +1,72 @@
+{
+  "id": "paul-jacobs",
+  "name": "Paul Jacobs",
+  "firstName": "Paul",
+  "lastName": "Jacobs",
+  "photo": "/images/officials/state-legislature/il/paul-jacobs.jpg",
+  "photoSourceUrl": "https://cdn.ilga.gov/assets/img/members/{0E151A06-57C8-4261-9577-278F5DD4B717}.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-118",
+  "jurisdiction": "Illinois House of Representatives",
+  "county": [
+    "Illinois"
+  ],
+  "termStart": "2023-01-11",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 234-N, Stratton Office Building, Springfield, IL 62706",
+    "phone": "217-782-0387",
+    "email": "jacobs@ilhousegop.org",
+    "website": "https://ilga.gov/house/Rep.asp?GA=102&MemberID=3003"
+  },
+  "bio": "Paul Jacobs serves as State Representative for Illinois House of Representatives District 118. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "IL",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://ilga.gov/house/Rep.asp?GA=102&MemberID=3003"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/il/legislature/Paul-Jacobs-2febe0de-8b57-43c9-b8cd-a5363af4eae3.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://cdn.ilga.gov/assets/img/members/{0E151A06-57C8-4261-9577-278F5DD4B717}.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Paul_Jacobs"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Paul_Jacobs_(politician)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ilga.gov/house/default.asp?GA=102"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ilga.gov/house/default.asp?GA=103"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ilga.gov/house/Rep.asp?GA=103&MemberID=3191"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/177244/paul-jacobs"
+    },
+    {
+      "title": "Public source",
+      "url": "https://reppauljacobs.com"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

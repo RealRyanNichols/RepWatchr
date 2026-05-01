@@ -1,0 +1,77 @@
+{
+  "id": "rip-sullivan",
+  "name": "Rip Sullivan",
+  "firstName": "Rip",
+  "lastName": "Sullivan",
+  "photo": "/images/officials/state-legislature/va/rip-sullivan.jpg",
+  "photoSourceUrl": "https://memdata.virginiageneralassembly.gov/images/display_image/H0269",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "Delegate",
+  "district": "HD-6",
+  "jurisdiction": "Virginia House of Delegates",
+  "county": [
+    "Virginia"
+  ],
+  "termStart": "2024-01-10",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 908, General Assembly Building 201 N. 9th St., Richmond, VA 23219",
+    "phone": "804-698-1006",
+    "email": "delrsullivan@house.virginia.gov",
+    "website": "https://house.vga.virginia.gov/members/H0269",
+    "socialMedia": {
+      "x": "https://x.com/RipSullivan48",
+      "twitter": "https://x.com/RipSullivan48",
+      "facebook": "https://facebook.com/RipSullivanVA"
+    }
+  },
+  "bio": "Rip Sullivan serves as Delegate for Virginia House of Delegates District 6. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "VA",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://house.vga.virginia.gov/members/H0269"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/va/legislature/Richard-C-Rip-Sullivan-Jr-658209cc-5e85-4c57-aa94-878089f3d816.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://memdata.virginiageneralassembly.gov/images/display_image/H0269"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/R.C._Sullivan_Jr."
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Rip_Sullivan"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/69978/rip-sullivan-jr"
+    },
+    {
+      "title": "Public source",
+      "url": "https://lis.virginia.gov/191/mbr/MBR.HTM"
+    },
+    {
+      "title": "Public source",
+      "url": "https://lis.virginia.gov/201/mbr/MBR.HTM"
+    },
+    {
+      "title": "Public source",
+      "url": "https://lis.virginia.gov/cgi-bin/legp604.exe?191+mbr+H269"
+    },
+    {
+      "title": "Public source",
+      "url": "https://lis.virginia.gov/cgi-bin/legp604.exe?201+mbr+H269"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

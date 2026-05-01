@@ -1,0 +1,68 @@
+{
+  "id": "willis-blackshear",
+  "name": "Willis Blackshear",
+  "firstName": "Willis",
+  "lastName": "Blackshear",
+  "photo": "/images/officials/state-legislature/oh/willis-blackshear.jpg",
+  "photoSourceUrl": "https://www.legislature.ohio.gov/assets/people/willis-e-blackshear-jr/headshots/thumbnails/medium/willis-e-blackshear-jr-january-2023-headshot_medium.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-6",
+  "jurisdiction": "Ohio Senate",
+  "county": [
+    "Ohio"
+  ],
+  "termStart": "2025-01-01",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 49, Statehouse, 1 Capitol Square Ground Floor, Columbus, OH 43215",
+    "phone": "614-466-4538",
+    "email": "sd06@ohiosenate.gov",
+    "website": "https://ohiohouse.gov/members/willis-e-blackshear-jr"
+  },
+  "bio": "Willis Blackshear serves as State Senator for Ohio Senate District 6. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "OH",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://ohiohouse.gov/members/willis-e-blackshear-jr"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/oh/legislature/Willis-E-Blackshear-Jr-23c443b0-e2f7-4c7a-af1e-d67d7aa366ce.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://www.legislature.ohio.gov/assets/people/willis-e-blackshear-jr/headshots/thumbnails/medium/willis-e-blackshear-jr-january-2023-headshot_medium.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Willis_Blackshear_Jr."
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/189447/willis-blackshear-jr"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ohiohouse.gov/willis-e-blackshear-jr"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ohiosenate.gov/members/willis-e-blackshear-jr"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ohiosenate.gov/members/willis-e-blackshear-jr/biography"
+    },
+    {
+      "title": "member list page",
+      "url": "https://www.legislature.ohio.gov/legislators/house-directory"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

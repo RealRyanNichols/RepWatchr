@@ -1,0 +1,64 @@
+{
+  "id": "donni-steele",
+  "name": "Donni Steele",
+  "firstName": "Donni",
+  "lastName": "Steele",
+  "photo": "/images/officials/state-legislature/mi/donni-steele.jpg",
+  "photoSourceUrl": "https://www.house.mi.gov/media/Representatives/Steele-054.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-54",
+  "jurisdiction": "Michigan House of Representatives",
+  "county": [
+    "Michigan"
+  ],
+  "termStart": "2023-01-01",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room N-988, Anderson House Office Building 124 N. Capitol Ave., Lansing, MI 48933",
+    "phone": "517-373-1771",
+    "email": "donnisteele@house.mi.gov",
+    "website": "https://gophouse.org/member/RepDonniSteele/posts"
+  },
+  "bio": "Donni Steele serves as State Representative for Michigan House of Representatives District 54. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "MI",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://gophouse.org/member/RepDonniSteele/posts"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/mi/legislature/Donni-Steele-4a5a14f9-56b4-4f7a-ad0c-bfe3750912a3.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://www.house.mi.gov/media/Representatives/Steele-054.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Donni_Steele"
+    },
+    {
+      "title": "Public source",
+      "url": "https://gophouse.org/member/RepDonniSteele/about"
+    },
+    {
+      "title": "Member Details Page",
+      "url": "https://RepDonniSteele.com"
+    },
+    {
+      "title": "Members List Page",
+      "url": "https://www.house.mi.gov/AllRepresentatives"
+    },
+    {
+      "title": "Member Details Page",
+      "url": "https://www.house.mi.gov/repdetail/repDonniSteele"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

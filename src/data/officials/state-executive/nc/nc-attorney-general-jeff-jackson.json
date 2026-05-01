@@ -1,0 +1,60 @@
+{
+  "id": "jeff-jackson",
+  "name": "Jeff Jackson",
+  "firstName": "Jeff",
+  "lastName": "Jackson",
+  "photo": "/images/officials/state-executive/nc/jeff-jackson.jpg",
+  "photoSourceUrl": "https://www.naag.org/wp-content/uploads/2025/01/ag-NC-Jackson-Jeff-2025.png",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "Attorney General",
+  "district": "North Carolina",
+  "jurisdiction": "North Carolina statewide public office",
+  "county": [
+    "North Carolina"
+  ],
+  "termStart": "2025-01-01",
+  "termEnd": "2029-01-01",
+  "contactInfo": {
+    "office": "Dept. of Justice, P.O. Box 629; Raleigh, NC 27602-0629",
+    "phone": "919-716-6400",
+    "email": "Jeff.Jackson@ncleg.gov",
+    "website": "https://www.ncleg.gov/Members/Biography/S/386"
+  },
+  "bio": "Jeff Jackson is listed as Attorney General for North Carolina. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "NC",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.ncleg.gov/Members/Biography/S/386"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/nc/executive/Jeff-Jackson-59ece42c-d325-427b-bd54-96b3625bc43d.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://www.naag.org/wp-content/uploads/2025/01/ag-NC-Jackson-Jeff-2025.png"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.ncleg.gov/Members/MemberTable/S"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ncdoj.gov/about-ncdoj/the-attorney-general/"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Jeff_Jackson"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.naag.org/attorney-general/jeff-jackson/"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

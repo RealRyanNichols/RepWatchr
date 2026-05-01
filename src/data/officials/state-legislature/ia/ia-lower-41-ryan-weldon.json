@@ -1,0 +1,56 @@
+{
+  "id": "ryan-weldon",
+  "name": "Ryan Weldon",
+  "firstName": "Ryan",
+  "lastName": "Weldon",
+  "photo": "/images/officials/state-legislature/ia/ryan-weldon.jpg",
+  "photoSourceUrl": "https://www.legis.iowa.gov/photo?action=getPhoto&ga=91&pid=37382",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-41",
+  "jurisdiction": "Iowa House of Representatives",
+  "county": [
+    "Iowa"
+  ],
+  "termStart": "2025-01-01",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "State Capitol Building 1007 E. Grand Ave., Des Moines, IA 50319",
+    "phone": "515-281-3221",
+    "email": "ryan.weldon@legis.iowa.gov",
+    "website": "https://www.legis.iowa.gov/legislators/legislator?ga=91&personID=37382"
+  },
+  "bio": "Ryan Weldon serves as State Representative for Iowa House of Representatives District 41. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "IA",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.legis.iowa.gov/legislators/legislator?ga=91&personID=37382"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ia/legislature/Ryan-Weldon-3c21eb9b-0b5d-429e-9bb4-0d53adf4442c.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://www.legis.iowa.gov/photo?action=getPhoto&ga=91&pid=37382"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Ryan_Weldon"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.legis.iowa.gov/legislators/legislator?personID=37382"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/ryan-weldon-b90b0b7"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

@@ -1,0 +1,64 @@
+{
+  "id": "shane-jett",
+  "name": "Shane Jett",
+  "firstName": "Shane",
+  "lastName": "Jett",
+  "photo": "/images/officials/state-legislature/ok/shane-jett.jpg",
+  "photoSourceUrl": "https://oksenate.gov/sites/default/files/Jett%2C%20Shane_flags.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-17",
+  "jurisdiction": "Oklahoma Senate",
+  "county": [
+    "Oklahoma"
+  ],
+  "termStart": "2020-11-16",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 417, 2300 N. Lincoln Blvd., Oklahoma City, OK 73105",
+    "phone": "405-521-5539",
+    "email": "shane.jett@oksenate.gov",
+    "website": "https://oksenate.gov/contact-senator?sid=1521375"
+  },
+  "bio": "Shane Jett serves as State Senator for Oklahoma Senate District 17. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "OK",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://oksenate.gov/contact-senator?sid=1521375"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ok/legislature/Shane-Jett-97650810-9219-451e-97d1-e3d3318c5d53.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://oksenate.gov/sites/default/files/Jett%2C%20Shane_flags.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Shane_Jett"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Shane_Jett"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/46260/shane-jett"
+    },
+    {
+      "title": "Public source",
+      "url": "https://oksenate.gov/senators/shane-jett"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/shanejett"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

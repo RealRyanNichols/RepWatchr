@@ -1,0 +1,49 @@
+{
+  "id": "harriet-holman",
+  "name": "Harriet Holman",
+  "firstName": "Harriet",
+  "lastName": "Holman",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-102",
+  "jurisdiction": "South Carolina House of Representatives",
+  "county": [
+    "South Carolina"
+  ],
+  "termStart": "2024-11-11",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 323D, Blatt Building P.O. Box 11867, Columbia, SC 29211",
+    "phone": "803-212-4474",
+    "email": "harrietholman@schouse.gov",
+    "website": "https://www.scstatehouse.gov/member.php?code=0867045351"
+  },
+  "bio": "Harriet Holman serves as State Representative for South Carolina House of Representatives District 102. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "SC",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.scstatehouse.gov/member.php?code=0867045351"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/sc/legislature/Harriet-Holman-7f424e9d-ce81-4413-9438-c5aeee1ec079.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Harriet_Holman"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Harriet_Holman"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/216289/harriet-holman"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

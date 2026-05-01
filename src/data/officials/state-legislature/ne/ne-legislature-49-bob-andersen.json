@@ -1,0 +1,64 @@
+{
+  "id": "bob-andersen",
+  "name": "Bob Andersen",
+  "firstName": "Bob",
+  "lastName": "Andersen",
+  "photo": "/images/officials/state-legislature/ne/bob-andersen.jpg",
+  "photoSourceUrl": "https://storage.googleapis.com/enview-dev-public-general/legislative-people-photos/167021.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "NP",
+  "level": "state",
+  "position": "State Senator",
+  "district": "LD-49",
+  "jurisdiction": "Nebraska Legislature",
+  "county": [
+    "Nebraska"
+  ],
+  "termStart": "2025-01-08",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "State Capitol Room 1021, P.O. Box 94604, Lincoln, NE 68509",
+    "phone": "402-471-2725",
+    "email": "bandersen@leg.ne.gov",
+    "website": "https://nebraskalegislature.gov/senators/landing-pages/index.php?District=49"
+  },
+  "bio": "Bob Andersen serves as State Senator for Nebraska Legislature District 49. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "NE",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://nebraskalegislature.gov/senators/landing-pages/index.php?District=49"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ne/legislature/Bob-Andersen-db002bad-ee6a-4e22-b5c5-840c665ecad4.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://storage.googleapis.com/enview-dev-public-general/legislative-people-photos/167021.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Bob_Andersen_(Nebraska_State_Senate_candidate)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Bob_Andersen_(Nebraska_state_senator)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Bob_Andersen_(politician)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/215059/bob-andersen"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/robert-andersen-9432aa39"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

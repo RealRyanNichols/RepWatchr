@@ -1,0 +1,77 @@
+{
+  "id": "steve-wilson",
+  "name": "Steve Wilson",
+  "firstName": "Steve",
+  "lastName": "Wilson",
+  "photo": "/images/officials/state-legislature/oh/steve-wilson.jpg",
+  "photoSourceUrl": "https://www.legislature.ohio.gov/assets/people/steve-wilson/headshots/thumbnails/medium/steve-wilson-may-2023-headshot_medium.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-7",
+  "jurisdiction": "Ohio Senate",
+  "county": [
+    "Ohio"
+  ],
+  "termStart": "2017-01-25",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 222, Statehouse, 1 Capitol Square Second Floor, Columbus, OH 43215",
+    "phone": "614-466-9737",
+    "email": "sd07@ohiosenate.gov",
+    "website": "https://www.ohiosenate.gov/members/steve-wilson",
+    "socialMedia": {
+      "x": "https://x.com/stevewilsonoh",
+      "twitter": "https://x.com/stevewilsonoh",
+      "facebook": "https://facebook.com/stevewilsonoh"
+    }
+  },
+  "bio": "Steve Wilson serves as State Senator for Ohio Senate District 7. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "OH",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.ohiosenate.gov/members/steve-wilson"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/oh/legislature/Steve-Wilson-26444e7e-72b2-4838-bc24-31899c90d504.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://www.legislature.ohio.gov/assets/people/steve-wilson/headshots/thumbnails/medium/steve-wilson-may-2023-headshot_medium.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Steve_Wilson"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Steve_Wilson_(Ohio_politician)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/176515/steve-wilson"
+    },
+    {
+      "title": "member details page",
+      "url": "https://ohiosenate.gov/members/steve-wilson"
+    },
+    {
+      "title": "member list page",
+      "url": "https://www.legislature.ohio.gov/legislators/senate-directory"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/steve-wilson-133354b5"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.ohiosenate.gov/senators"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

@@ -1,0 +1,64 @@
+{
+  "id": "cesar-aguilar",
+  "name": "Cesar Aguilar",
+  "firstName": "Cesar",
+  "lastName": "Aguilar",
+  "photo": "/images/officials/state-legislature/az/cesar-aguilar.jpg",
+  "photoSourceUrl": "https://azleg.gov/alisImages/MemberPhotos/57leg/House/AGUILAR.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-26",
+  "jurisdiction": "Arizona House of Representatives",
+  "county": [
+    "Arizona"
+  ],
+  "termStart": "2023-01-09",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 122, 1700 W. Washington St., Phoenix, AZ 85007",
+    "phone": "602-926-3953",
+    "email": "caguilar@azleg.gov",
+    "website": "https://www.azleg.gov/house-member/?legislature=56&session=127&legislator=2146"
+  },
+  "bio": "Cesar Aguilar serves as State Representative for Arizona House of Representatives District 26. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "AZ",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.azleg.gov/house-member/?legislature=56&session=127&legislator=2146"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/az/legislature/Cesar-Aguilar-b1da595a-8c97-42f8-ae58-694c17efa3f3.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://azleg.gov/alisImages/MemberPhotos/57leg/House/AGUILAR.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Cesar_Aguilar_(Arizona)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Cesar_Aguilar"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.azleg.gov/house-member/?legislature=57&session=129&legislator=2293"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.azleg.gov/memberroster/?body=H"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/cesar-aguilar-1904187a"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

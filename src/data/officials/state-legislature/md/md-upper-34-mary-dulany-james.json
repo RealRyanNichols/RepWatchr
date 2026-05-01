@@ -1,0 +1,64 @@
+{
+  "id": "mary-dulany-james",
+  "name": "Mary-Dulany James",
+  "firstName": "Mary-Dulany",
+  "lastName": "James",
+  "photo": "/images/officials/state-legislature/md/mary-dulany-james.jpg",
+  "photoSourceUrl": "https://mgaleg.maryland.gov/2023RS/images/james01.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-34",
+  "jurisdiction": "Maryland Senate",
+  "county": [
+    "Maryland"
+  ],
+  "termStart": "2023-01-11",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 103, James Senate Office Building 11 Bladen St., Annapolis, MD 21401",
+    "phone": "410-841-3158",
+    "email": "marydulany.james@senate.maryland.gov",
+    "website": "https://mgaleg.maryland.gov/mgawebsite/Members/Details/james01"
+  },
+  "bio": "Mary-Dulany James serves as State Senator for Maryland Senate District 34. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "MD",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://mgaleg.maryland.gov/mgawebsite/Members/Details/james01"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/md/legislature/Mary-Dulany-James-72a5c405-0523-4ea4-9029-024c49d76cb3.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://mgaleg.maryland.gov/2023RS/images/james01.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Mary-Dulany_James"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Mary-Dulany_James"
+    },
+    {
+      "title": "Public source",
+      "url": "https://msa.maryland.gov/msa/mdmanual/05sen/html/msa02778.html"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/mary-dulany-james-a4b45990"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.mdjamesforsenate.com/meet-mary-dulany"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

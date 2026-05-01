@@ -1,0 +1,72 @@
+{
+  "id": "john-damoose",
+  "name": "John Damoose",
+  "firstName": "John",
+  "lastName": "Damoose",
+  "photo": "/images/officials/state-legislature/mi/john-damoose.jpg",
+  "photoSourceUrl": "https://www.misenategop.com/wp-content/uploads/2023/01/Damoose-580x770.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-37",
+  "jurisdiction": "Michigan Senate",
+  "county": [
+    "Michigan"
+  ],
+  "termStart": "2023-01-01",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 4300, Binsfeld Building P.O. Box 30036, Lansing, MI 48909",
+    "phone": "517-373-2413",
+    "email": "senjdamoose@senate.michigan.gov",
+    "website": "https://repdamoose.com"
+  },
+  "bio": "John Damoose serves as State Senator for Michigan Senate District 37. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "MI",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://repdamoose.com"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/mi/legislature/John-Damoose-071e391f-da3d-4e66-ae78-61a63bc23729.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://www.misenategop.com/wp-content/uploads/2023/01/Damoose-580x770.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/John_Damoose"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/John_Damoose"
+    },
+    {
+      "title": "Members List JSON Data Page",
+      "url": "https://senate.michigan.gov/senators/SenatorData.json"
+    },
+    {
+      "title": "Members List HTML page",
+      "url": "https://senate.michigan.gov/senators/senatorinfo_list.html"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.house.mi.gov/AllRepresentatives"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.house.mi.gov/MHRPublic/frmRepListMilenia.aspx?all=true"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/johndamoose"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

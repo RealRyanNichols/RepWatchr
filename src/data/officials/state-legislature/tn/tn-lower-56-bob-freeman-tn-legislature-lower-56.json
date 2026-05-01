@@ -1,0 +1,72 @@
+{
+  "id": "bob-freeman-tn-legislature-lower-56",
+  "name": "Bob Freeman",
+  "firstName": "Bob",
+  "lastName": "Freeman",
+  "photo": "/images/officials/state-legislature/tn/bob-freeman-tn-legislature-lower-56.jpg",
+  "photoSourceUrl": "https://www.capitol.tn.gov/house/members/images/H56.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-56",
+  "jurisdiction": "Tennessee House of Representatives",
+  "county": [
+    "Tennessee"
+  ],
+  "termStart": "2018-11-06",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 592, Cordell Hull Building 425 Rep. John Lewis Way North, Nashville, TN 37243",
+    "phone": "615-741-0709",
+    "email": "rep.bob.freeman@capitol.tn.gov",
+    "website": "https://wapp.capitol.tn.gov/apps/legislatorinfo/member.aspx?district=H56"
+  },
+  "bio": "Bob Freeman serves as State Representative for Tennessee House of Representatives District 56. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "TN",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://wapp.capitol.tn.gov/apps/legislatorinfo/member.aspx?district=H56"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/tn/legislature/Bob-Freeman-c8a26be8-8de1-434b-864a-21697f8f15d4.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://www.capitol.tn.gov/house/members/images/H56.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Bob_Freeman_(Tennessee)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Bob_Freeman_(politician)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/182470/bob-freeman"
+    },
+    {
+      "title": "Public source",
+      "url": "https://wapp.capitol.tn.gov/apps/LegislatorInfo/directory.aspx?chamber=H"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.capitol.tn.gov/house/members"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.capitol.tn.gov/house/members/"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.capitol.tn.gov/house/members/h56.html"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

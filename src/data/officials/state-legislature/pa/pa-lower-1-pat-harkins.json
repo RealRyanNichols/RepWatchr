@@ -1,0 +1,68 @@
+{
+  "id": "pat-harkins",
+  "name": "Pat Harkins",
+  "firstName": "Pat",
+  "lastName": "Harkins",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-1",
+  "jurisdiction": "Pennsylvania House of Representatives",
+  "county": [
+    "Pennsylvania"
+  ],
+  "termStart": "2007-01-02",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 331, Irvis Office Building P.O. Box 202001, Harrisburg, PA 17120",
+    "phone": "717-787-7406",
+    "email": "pharkins@pahouse.net",
+    "website": "https://pahouse.com/Harkins",
+    "socialMedia": {
+      "youtube": "https://youtube.com/playlist?list=PLjtqNtfs0bgV_GcfsgVUt0PwAXkAWeMvn"
+    }
+  },
+  "bio": "Pat Harkins serves as State Representative for Pennsylvania House of Representatives District 1. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "PA",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://pahouse.com/Harkins"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/pa/legislature/Patrick-J-Harkins-c4a1a8f4-cb29-4700-8235-b103fcb40279.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Patrick_Harkins"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Pat_Harkins"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/60212/patrick-harkins"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.legis.state.pa.us/cfdocs/legis/home/member_information/House_bio.cfm?id=1081"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.legis.state.pa.us/cfdocs/legis/home/member_information/mbrList.cfm?body=H&sort=alpha"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.legis.state.pa.us/cfdocs/legis/home/member_information/representatives_alpha.cfm"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.palegis.us/house/members/bio/1081/rep-harkins"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

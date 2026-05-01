@@ -1,0 +1,57 @@
+{
+  "id": "jason-hoskins",
+  "name": "Jason Hoskins",
+  "firstName": "Jason",
+  "lastName": "Hoskins",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-18",
+  "jurisdiction": "Michigan House of Representatives",
+  "county": [
+    "Michigan"
+  ],
+  "termStart": "2023-01-01",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room N-697, Anderson House Office Building 124 N. Capitol Ave., Lansing, MI 48933",
+    "phone": "517-373-1180",
+    "email": "jasonhoskins@house.mi.gov",
+    "website": "https://housedems.com/Jason-Hoskins/"
+  },
+  "bio": "Jason Hoskins serves as State Representative for Michigan House of Representatives District 18. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "MI",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://housedems.com/Jason-Hoskins/"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/mi/legislature/Jason-Hoskins-d6da4c9b-26ef-4fa9-a1c6-a79d843abe09.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Jason_Hoskins"
+    },
+    {
+      "title": "Public source",
+      "url": "https://housedems.com/Jason-Hoskins"
+    },
+    {
+      "title": "Public source",
+      "url": "https://housedems.com/jason-hoskins/about"
+    },
+    {
+      "title": "Members List Page",
+      "url": "https://www.house.mi.gov/AllRepresentatives"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/jasonmhoskins"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

@@ -1,0 +1,72 @@
+{
+  "id": "nick-smith",
+  "name": "Nick Smith",
+  "firstName": "Nick",
+  "lastName": "Smith",
+  "photo": "/images/officials/state-legislature/il/nick-smith.jpg",
+  "photoSourceUrl": "https://cdn.ilga.gov/assets/img/members/{4D7D283C-73C8-40F8-A3F0-7FA9301456F5}.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-34",
+  "jurisdiction": "Illinois House of Representatives",
+  "county": [
+    "Illinois"
+  ],
+  "termStart": "2018-01-26",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 632, Capitol Building, Springfield, IL 62706",
+    "phone": "217-782-6476",
+    "email": "repsmith34@gmail.com",
+    "website": "https://ilga.gov/house/Rep.asp?GA=101&MemberID=2704"
+  },
+  "bio": "Nick Smith serves as State Representative for Illinois House of Representatives District 34. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "IL",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://ilga.gov/house/Rep.asp?GA=101&MemberID=2704"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/il/legislature/Nicholas-K-Smith-a5e32db2-c1a9-4b4a-b42e-d2d541bd5825.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://cdn.ilga.gov/assets/img/members/{4D7D283C-73C8-40F8-A3F0-7FA9301456F5}.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Nicholas_Smith_(Illinois)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Nicholas_Smith_(Illinois_politician)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ilga.gov/house/default.asp?GA=101"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ilga.gov/house/default.asp?GA=102"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ilga.gov/house/default.asp?GA=103"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ilga.gov/house/Rep.asp?GA=102&MemberID=2919"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ilga.gov/house/Rep.asp?GA=103&MemberID=3118"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

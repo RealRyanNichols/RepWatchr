@@ -1,0 +1,64 @@
+{
+  "id": "jill-koford",
+  "name": "Jill Koford",
+  "firstName": "Jill",
+  "lastName": "Koford",
+  "photo": "/images/officials/state-legislature/ut/jill-koford.jpg",
+  "photoSourceUrl": "https://s3.amazonaws.com/ballotpedia-api4/files/thumbs/200/300/JillKoford.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-10",
+  "jurisdiction": "Utah House of Representatives",
+  "county": [
+    "Utah"
+  ],
+  "termStart": "2025-01-01",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "P.O. Box 145030 350 N. State St., Suite 350, Salt Lake City, UT 84114",
+    "phone": "801-538-1029",
+    "email": "jkoford@le.utah.gov",
+    "website": "https://house.utleg.gov/rep/KOFORJ/"
+  },
+  "bio": "Jill Koford serves as State Representative for Utah House of Representatives District 10. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "UT",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://house.utleg.gov/rep/KOFORJ/"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ut/legislature/Jill-Koford-598a8b34-ab05-4438-b927-77b20437035d.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://s3.amazonaws.com/ballotpedia-api4/files/thumbs/200/300/JillKoford.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Jill_Koford"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Jill_Koford"
+    },
+    {
+      "title": "Public source",
+      "url": "https://house.utleg.gov/rep/KOFORJ"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/204614/jill-koford"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/jill-koford-346358130"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

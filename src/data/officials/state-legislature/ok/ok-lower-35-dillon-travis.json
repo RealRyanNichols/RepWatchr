@@ -1,0 +1,49 @@
+{
+  "id": "dillon-travis",
+  "name": "Dillon Travis",
+  "firstName": "Dillon",
+  "lastName": "Travis",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-35",
+  "jurisdiction": "Oklahoma House of Representatives",
+  "county": [
+    "Oklahoma"
+  ],
+  "termStart": "2026-02-18",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 242, 2300 N. Lincoln Blvd., Oklahoma City, OK 73105",
+    "phone": "405-557-7344",
+    "email": "dillon.travis@okhouse.gov",
+    "website": "https://www.okhouse.gov/representatives/dillon-travis"
+  },
+  "bio": "Dillon Travis serves as State Representative for Oklahoma House of Representatives District 35. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "OK",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.okhouse.gov/representatives/dillon-travis"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ok/legislature/Dillon-Travis-14d6a46d-124c-4274-ae72-bfe5541a4a0a.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Dillon_Travis"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Dillon_Travis"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/dillon-travis-05343bb7"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

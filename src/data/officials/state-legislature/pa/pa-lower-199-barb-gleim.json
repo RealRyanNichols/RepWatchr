@@ -1,0 +1,75 @@
+{
+  "id": "barb-gleim",
+  "name": "Barb Gleim",
+  "firstName": "Barb",
+  "lastName": "Gleim",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-199",
+  "jurisdiction": "Pennsylvania House of Representatives",
+  "county": [
+    "Pennsylvania"
+  ],
+  "termStart": "2018-12-01",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 427, Irvis Office Building P.O. Box 202199, Harrisburg, PA 17120",
+    "phone": "717-772-2280",
+    "email": "bgleim@pahousegop.com",
+    "website": "https://www.legis.state.pa.us/cfdocs/legis/home/member_information/House_bio.cfm?id=1864",
+    "socialMedia": {
+      "x": "https://x.com/repgleim",
+      "twitter": "https://x.com/repgleim",
+      "facebook": "https://facebook.com/RepGleim",
+      "youtube": "https://youtube.com/UChtuvXCwuGvDP_EJAf8ZU5w"
+    }
+  },
+  "bio": "Barb Gleim serves as State Representative for Pennsylvania House of Representatives District 199. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "PA",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.legis.state.pa.us/cfdocs/legis/home/member_information/House_bio.cfm?id=1864"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/pa/legislature/Barbara-Gleim-48c5b966-eef2-456a-8ca0-f47d584e7883.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Barbara_Gleim"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Barbara_Gleim"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/179593/barbara-gleim"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.legis.state.pa.us/cfdocs/legis/home/member_information/mbrList.cfm?body=H&sort=alpha"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.legis.state.pa.us/cfdocs/legis/home/member_information/representatives_alpha.cfm"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/barbara-gleim-30437760"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.palegis.us/house/members/bio/1864/rep-gleim"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.repgleim.com"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

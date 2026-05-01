@@ -1,0 +1,72 @@
+{
+  "id": "mike-gipson",
+  "name": "Mike Gipson",
+  "firstName": "Mike",
+  "lastName": "Gipson",
+  "photo": "/images/officials/state-legislature/ca/mike-gipson.jpg",
+  "photoSourceUrl": "https://www.assembly.ca.gov/sites/assembly.ca.gov/files/memberphotos/AD64_Gipson_Portrait150_20141201.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "Assemblymember",
+  "district": "HD-65",
+  "jurisdiction": "California State Assembly",
+  "county": [
+    "California"
+  ],
+  "termStart": "2022-12-05",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 6210, 1021 O St. P.O. Box 942849, Sacramento, CA 94249",
+    "phone": "916-319-2065",
+    "email": "assemblymember.gipson@assembly.ca.gov",
+    "website": "https://a64.asmdc.org/"
+  },
+  "bio": "Mike Gipson serves as Assemblymember for California State Assembly District 65. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "CA",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://a64.asmdc.org/"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ca/legislature/Mike-A-Gipson-404dbee4-6b74-4249-ab26-9644cab7c7d5.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://www.assembly.ca.gov/sites/assembly.ca.gov/files/memberphotos/AD64_Gipson_Portrait150_20141201.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://a65.asmdc.org"
+    },
+    {
+      "title": "Public source",
+      "url": "https://assembly.ca.gov/assemblymembers"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Mike_Gipson"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Mike_Gipson"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/70443/mike-gipson"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.assembly.ca.gov/assemblymembers"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/mike-gipson-b3304120"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

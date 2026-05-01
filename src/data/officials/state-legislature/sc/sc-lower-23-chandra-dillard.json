@@ -1,0 +1,65 @@
+{
+  "id": "chandra-dillard",
+  "name": "Chandra Dillard",
+  "firstName": "Chandra",
+  "lastName": "Dillard",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-23",
+  "jurisdiction": "South Carolina House of Representatives",
+  "county": [
+    "South Carolina"
+  ],
+  "termStart": "",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 414B, Blatt Building P.O. Box 11867, Columbia, SC 29201",
+    "phone": "803-212-6791",
+    "email": "chandra@chandradillard.com",
+    "website": "https://scstatehouse.gov/member.php?code=0479545397"
+  },
+  "bio": "Chandra Dillard serves as State Representative for South Carolina House of Representatives District 23. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "SC",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://scstatehouse.gov/member.php?code=0479545397"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/sc/legislature/Chandra-E-Dillard-2432a9be-a476-4dae-966c-74f01e24fdbb.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Chandra_Dillard"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Chandra_Dillard"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/77602/chandra-dillard"
+    },
+    {
+      "title": "Public source",
+      "url": "https://scstatehouse.gov/member.php?chamber=H"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/chandra-dillard-a0b2457"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.scstatehouse.gov/member.php?chamber=H"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.scstatehouse.gov/member.php?code=0479545397"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

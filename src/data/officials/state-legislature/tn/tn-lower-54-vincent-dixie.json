@@ -1,0 +1,72 @@
+{
+  "id": "vincent-dixie",
+  "name": "Vincent Dixie",
+  "firstName": "Vincent",
+  "lastName": "Dixie",
+  "photo": "/images/officials/state-legislature/tn/vincent-dixie.jpg",
+  "photoSourceUrl": "https://www.capitol.tn.gov/house/members/images/H54.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-54",
+  "jurisdiction": "Tennessee House of Representatives",
+  "county": [
+    "Tennessee"
+  ],
+  "termStart": "2018-11-06",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 408, Cordell Hull Building 425 Rep. John Lewis Way North, Nashville, TN 37243",
+    "phone": "615-741-1997",
+    "email": "rep.vincent.dixie@capitol.tn.gov",
+    "website": "https://wapp.capitol.tn.gov/apps/legislatorinfo/member.aspx?district=H54"
+  },
+  "bio": "Vincent Dixie serves as State Representative for Tennessee House of Representatives District 54. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "TN",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://wapp.capitol.tn.gov/apps/legislatorinfo/member.aspx?district=H54"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/tn/legislature/Vincent-Dixie-ee804d8a-2f07-4271-83a7-0179f4c3445c.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://www.capitol.tn.gov/house/members/images/H54.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Vincent_Dixie"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Vincent_Dixie"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/182467/vincent-dixie"
+    },
+    {
+      "title": "Public source",
+      "url": "https://wapp.capitol.tn.gov/apps/LegislatorInfo/directory.aspx?chamber=H"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.capitol.tn.gov/house/members"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.capitol.tn.gov/house/members/"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.capitol.tn.gov/house/members/h54.html"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

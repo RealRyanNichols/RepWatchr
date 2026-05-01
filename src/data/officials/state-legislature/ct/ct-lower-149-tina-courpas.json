@@ -1,0 +1,64 @@
+{
+  "id": "tina-courpas",
+  "name": "Tina Courpas",
+  "firstName": "Tina",
+  "lastName": "Courpas",
+  "photo": "/images/officials/state-legislature/ct/tina-courpas.jpg",
+  "photoSourceUrl": "https://s3.amazonaws.com/ballotpedia-api4/files/thumbs/200/300/TinaCourpas2024.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-149",
+  "jurisdiction": "Connecticut House of Representatives",
+  "county": [
+    "Connecticut"
+  ],
+  "termStart": "2025-01-08",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 4200, Legislative Office Building 300 Capitol Ave., Hartford, CT 06106",
+    "phone": "860-240-8700",
+    "email": "tina.courpas@housegop.ct.gov",
+    "website": "https://www.cthousegop.com/courpas/"
+  },
+  "bio": "Tina Courpas serves as State Representative for Connecticut House of Representatives District 149. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "CT",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.cthousegop.com/courpas/"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ct/legislature/Tina-Courpas-ca470373-9e97-47c5-ab96-96e3f93cee08.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://s3.amazonaws.com/ballotpedia-api4/files/thumbs/200/300/TinaCourpas2024.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Tina_Courpas"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Tina_Courpas"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/219139/katherine-courpas"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.cthousegop.com/courpas"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/tinacourpas"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

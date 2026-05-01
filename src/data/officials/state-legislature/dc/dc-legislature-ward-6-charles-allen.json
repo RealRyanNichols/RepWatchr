@@ -1,0 +1,77 @@
+{
+  "id": "charles-allen",
+  "name": "Charles Allen",
+  "firstName": "Charles",
+  "lastName": "Allen",
+  "photo": "/images/officials/state-legislature/dc/charles-allen.jpg",
+  "photoSourceUrl": "https://dccouncil.gov/wp-content/uploads/2017/06/C._Allen_small_1-75x75-c-default.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "Councilmember",
+  "district": "Ward 6",
+  "jurisdiction": "Council of the District of Columbia",
+  "county": [
+    "District of Columbia"
+  ],
+  "termStart": "2015-01-02",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "1350 Pennsylvania Ave. NW Suite 110, Washington, DC 20004",
+    "phone": "202-724-8072",
+    "email": "callen@dccouncil.gov",
+    "website": "https://dccouncil.gov/council/councilmember-allen/",
+    "socialMedia": {
+      "x": "https://x.com/CMCharlesAllen",
+      "twitter": "https://x.com/CMCharlesAllen",
+      "facebook": "https://facebook.com/CMcharlesallen"
+    }
+  },
+  "bio": "Charles Allen serves as Councilmember for Council of the District of Columbia District Ward 6. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "DC",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://dccouncil.gov/council/councilmember-allen/"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/dc/legislature/Charles-Allen-ab8e39c8-583e-4e9d-b481-0f43c21318ba.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://dccouncil.gov/wp-content/uploads/2017/06/C._Allen_small_1-75x75-c-default.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Charles_Allen_(Washington_DC)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://dccouncil.gov/council/councilmember-allen"
+    },
+    {
+      "title": "Public source",
+      "url": "https://dccouncil.us/council/councilmember-allen"
+    },
+    {
+      "title": "Public source",
+      "url": "https://dccouncil.us/council/councilmember-allen/"
+    },
+    {
+      "title": "Public source",
+      "url": "https://dccouncil.us/councilmembers"
+    },
+    {
+      "title": "Public source",
+      "url": "https://dccouncil.us/councilmembers/"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Charles_Allen_%28Washington,_D.C._politician%29"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

@@ -1,0 +1,48 @@
+{
+  "id": "blair-eddins",
+  "name": "Blair Eddins",
+  "firstName": "Blair",
+  "lastName": "Eddins",
+  "photo": "/images/officials/state-legislature/nc/blair-eddins.jpg",
+  "photoSourceUrl": "https://storage.googleapis.com/enview-public-general/legislative-people-photos/151642.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-94",
+  "jurisdiction": "North Carolina House of Representatives",
+  "county": [
+    "North Carolina"
+  ],
+  "termStart": "2024-10-01",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 2219, North Carolina Legislative Building 16 W. Jones St., Raleigh, NC 27601",
+    "phone": "919-733-5935",
+    "email": "blair.eddins@ncleg.gov",
+    "website": "https://www.ncleg.gov/Members/Biography/H/825"
+  },
+  "bio": "Blair Eddins serves as State Representative for North Carolina House of Representatives District 94. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "NC",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.ncleg.gov/Members/Biography/H/825"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/nc/legislature/Blair-Eddins-b558be80-96b1-4df6-8714-fcba387f8abc.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://storage.googleapis.com/enview-public-general/legislative-people-photos/151642.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Blair_Eddins"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

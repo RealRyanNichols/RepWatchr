@@ -1,0 +1,56 @@
+{
+  "id": "mark-edelson",
+  "name": "Mark Edelson",
+  "firstName": "Mark",
+  "lastName": "Edelson",
+  "photo": "/images/officials/state-legislature/md/mark-edelson.jpg",
+  "photoSourceUrl": "https://mgaleg.maryland.gov/2023RS/images/edelson01.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "Delegate",
+  "district": "HD-46",
+  "jurisdiction": "Maryland House of Delegates",
+  "county": [
+    "Maryland"
+  ],
+  "termStart": "2023-01-11",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 316, Lowe House Office Building 6 Bladen St., Annapolis, MD 21401",
+    "phone": "410-841-3291",
+    "email": "mark.edelson@house.maryland.gov",
+    "website": "https://mgaleg.maryland.gov/mgawebsite/Members/Details/edelson01"
+  },
+  "bio": "Mark Edelson serves as Delegate for Maryland House of Delegates District 46. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "MD",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://mgaleg.maryland.gov/mgawebsite/Members/Details/edelson01"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/md/legislature/Mark-Edelson-d09ea440-65a0-4e4f-81dd-201202f1ff3c.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://mgaleg.maryland.gov/2023RS/images/edelson01.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Mark_Edelson"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Mark_Edelson"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/mark-edelson-823945b8"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

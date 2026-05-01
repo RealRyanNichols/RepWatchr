@@ -1,0 +1,60 @@
+{
+  "id": "greg-hafen",
+  "name": "Greg Hafen",
+  "firstName": "Greg",
+  "lastName": "Hafen",
+  "photo": "/images/officials/state-legislature/nv/greg-hafen.jpg",
+  "photoSourceUrl": "http://leg.state.nv.us/Session/83rd2025/legislators/Assembly/Images/Hafen.Gregory.371.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "Assemblymember",
+  "district": "HD-36",
+  "jurisdiction": "Nevada Assembly",
+  "county": [
+    "Nevada"
+  ],
+  "termStart": "2018-12-07",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 3105C, Nevada Assembly 401 S. Carson St., Carson City, NV 89701",
+    "phone": "775-684-8805",
+    "email": "gregory.hafen@asm.state.nv.us",
+    "website": "https://www.leg.state.nv.us/App/Legislator/A/api/81st2021/Legislator?id=371"
+  },
+  "bio": "Greg Hafen serves as Assemblymember for Nevada Assembly District 36. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "NV",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.leg.state.nv.us/App/Legislator/A/api/81st2021/Legislator?id=371"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/nv/legislature/Gregory-T-Hafen-II-33330e1e-b22d-49d7-bce8-6964b289683a.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "http://leg.state.nv.us/Session/83rd2025/legislators/Assembly/Images/Hafen.Gregory.371.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Gregory_Hafen"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Gregory_Hafen_II"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.leg.state.nv.us/App/Legislator/A/Assembly/Current"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.leg.state.nv.us/App/Legislator/A/Assembly/Current/36"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

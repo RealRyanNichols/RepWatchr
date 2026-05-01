@@ -1,0 +1,49 @@
+{
+  "id": "vinney-st-blanc",
+  "name": "Vinney St. Blanc",
+  "firstName": "Vinney",
+  "lastName": "St. Blanc",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-50",
+  "jurisdiction": "Louisiana House of Representatives",
+  "county": [
+    "Louisiana"
+  ],
+  "termStart": "2020-01-13",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "P.O. Box 94062 900 N. 3rd St., Baton Rouge, LA 70804",
+    "phone": "225-342-6945",
+    "email": "hse050@legis.la.gov",
+    "website": "https://house.louisiana.gov/H_Reps/members.aspx?ID=50"
+  },
+  "bio": "Vinney St. Blanc serves as State Representative for Louisiana House of Representatives District 50. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "LA",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://house.louisiana.gov/H_Reps/members.aspx?ID=50"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/la/legislature/Vincent-Vinney-J-St-Blanc-III-c75a9e00-6017-4e74-95fd-70fbfa803c58.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Vincent_St._Blanc_III"
+    },
+    {
+      "title": "Public source",
+      "url": "https://house.louisiana.gov/H_Reps/H_Reps_FullInfo"
+    },
+    {
+      "title": "Public source",
+      "url": "https://house.louisiana.gov/H_Reps/members?ID=50"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

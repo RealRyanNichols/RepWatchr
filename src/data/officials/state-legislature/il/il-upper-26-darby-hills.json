@@ -1,0 +1,60 @@
+{
+  "id": "darby-hills",
+  "name": "Darby Hills",
+  "firstName": "Darby",
+  "lastName": "Hills",
+  "party": "R",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-26",
+  "jurisdiction": "Illinois Senate",
+  "county": [
+    "Illinois"
+  ],
+  "termStart": "2025-02-28",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Stratton Office Building Section A, Office D, Springfield, IL 62706",
+    "phone": "217-782-8010",
+    "website": "https://www.ilga.gov/Senate/Members/Details/3460"
+  },
+  "bio": "Darby Hills serves as State Senator for Illinois Senate District 26. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "IL",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.ilga.gov/Senate/Members/Details/3460"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/il/legislature/Darby-Hills-3249a901-9d57-4623-a9a0-4cbb1240f2a1.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Darby_Hills"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Darby_Hills"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.ilga.gov/senate/Senator.asp?MemberID=3460"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/darby-hills-a19b6413"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/state-senator-darby-hills-a19b6413"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.senatordarbyhills.com"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

@@ -1,0 +1,72 @@
+{
+  "id": "brett-easterbrook",
+  "name": "Brett Easterbrook",
+  "firstName": "Brett",
+  "lastName": "Easterbrook",
+  "photo": "/images/officials/state-legislature/al/brett-easterbrook.jpg",
+  "photoSourceUrl": "https://www.legislature.state.al.us/pdf/house/members/Easterbrook_65.png",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-65",
+  "jurisdiction": "Alabama House of Representatives",
+  "county": [
+    "Alabama"
+  ],
+  "termStart": "2018-11-07",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 427-M, 11 S. Union St., Montgomery, AL 36130",
+    "phone": "334-261-0402",
+    "email": "brett.easterbrook@yahoo.com",
+    "website": "https://alison.legislature.state.al.us/house-leaders-members"
+  },
+  "bio": "Brett Easterbrook serves as State Representative for Alabama House of Representatives District 65. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "AL",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://alison.legislature.state.al.us/house-leaders-members"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/al/legislature/Brett-Easterbrook-def57a9e-a907-4e62-b990-41dc19661c06.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://www.legislature.state.al.us/pdf/house/members/Easterbrook_65.png"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Brett_Easterbrook"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Brett_Easterbrook"
+    },
+    {
+      "title": "graphql endpoint for member information",
+      "url": "https://gql.api.alison.legislature.state.al.us/graphql"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/180594/brett-easterbrook"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.legislature.state.al.us/aliswww/ISD/ALRepresentative.aspx?NAME=Easterbrook&OID_SPONSOR=100547&OID_PERSON=8505&SESSNAME="
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.legislature.state.al.us/aliswww/ISD/ALRepresentative.aspx?OID_SPONSOR=100547&OID_PERSON=8505"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.legislature.state.al.us/aliswww/ISD/House/ALRepresentatives.aspx"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

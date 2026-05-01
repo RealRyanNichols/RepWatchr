@@ -1,0 +1,68 @@
+{
+  "id": "andrew-ireland",
+  "name": "Andrew Ireland",
+  "firstName": "Andrew",
+  "lastName": "Ireland",
+  "photo": "/images/officials/state-legislature/in/andrew-ireland.jpg",
+  "photoSourceUrl": "https://storage.googleapis.com/enview-dev-public-general/legislative-people-photos/157749.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-90",
+  "jurisdiction": "Indiana House of Representatives",
+  "county": [
+    "Indiana"
+  ],
+  "termStart": "2024-11-06",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "200 W. Washington St., Indianapolis, IN 46204",
+    "phone": "317-232-9600",
+    "email": "h90@iga.in.gov",
+    "website": "https://iga.in.gov/legislative/2026/legislators/legislator_andrew_ireland_1"
+  },
+  "bio": "Andrew Ireland serves as State Representative for Indiana House of Representatives District 90. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "IN",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://iga.in.gov/legislative/2026/legislators/legislator_andrew_ireland_1"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/in/legislature/Andrew-Ireland-27343a14-0487-4a7a-8ddd-1e0991c4a694.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://storage.googleapis.com/enview-dev-public-general/legislative-people-photos/157749.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Andrew_Ireland"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Andrew_Ireland_(politician)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/214775/andrew-ireland"
+    },
+    {
+      "title": "Public source",
+      "url": "https://scopelitis.com/attorneys/andrew-j-ireland"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.indianahouserepublicans.com/members/general/andrew-ireland"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/andrewirelandin"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

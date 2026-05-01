@@ -1,0 +1,49 @@
+{
+  "id": "parnell-terry",
+  "name": "Parnell Terry",
+  "firstName": "Parnell",
+  "lastName": "Terry",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-108",
+  "jurisdiction": "Maine House of Representatives",
+  "county": [
+    "Maine"
+  ],
+  "termStart": "2024-12-03",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 333, House Democratic Office 2 State House Station, Augusta, ME 04333",
+    "phone": "800-423-2900",
+    "email": "parnell.terry@legislature.maine.gov",
+    "website": "https://legislature.maine.gov/house/house/MemberProfiles/Details/3133"
+  },
+  "bio": "Parnell Terry serves as State Representative for Maine House of Representatives District 108. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "ME",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://legislature.maine.gov/house/house/MemberProfiles/Details/3133"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/me/legislature/Parnell-Terry-a3686503-340d-4f8b-91d3-6f8de4d8a55d.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Parnell_Terry"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/216020/parnell-terry"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.maine.gov/housedems/node/4095"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

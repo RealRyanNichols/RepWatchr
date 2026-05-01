@@ -1,0 +1,69 @@
+{
+  "id": "jim-minnix",
+  "name": "Jim Minnix",
+  "firstName": "Jim",
+  "lastName": "Minnix",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-118",
+  "jurisdiction": "Kansas House of Representatives",
+  "county": [
+    "Kansas"
+  ],
+  "termStart": "2021-01-11",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "State Capitol Room 149-S, Kansas  Building 300 SW 10th St., Topeka, KS 66612",
+    "phone": "785-296-7384",
+    "email": "jim.minnix@house.ks.gov",
+    "website": "https://www.kslegislature.gov/li/b2025_26/members/rep_minnix_jim_1/"
+  },
+  "bio": "Jim Minnix serves as State Representative for Kansas House of Representatives District 118. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "KS",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.kslegislature.gov/li/b2025_26/members/rep_minnix_jim_1/"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ks/legislature/Jim-Minnix-ca29b8ff-9845-40ba-a196-458cef943041.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Jim_Minnix"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Jim_Minnix"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.kslegislature.gov/li/b2025_26/members/rep_minnix_jim_1"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.kslegislature.org/li/api/v11/rev-1/members/rep_minnix_jim_1"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.kslegislature.org/li/api/v11/rev-1/members/rep_minnix_jim_1/"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.kslegislature.org/li/b2023_24/members/rep_minnix_jim_1"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.kslegislature.org/li/b2023_24/members/rep_minnix_jim_1/"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/james-minnix-55558411"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

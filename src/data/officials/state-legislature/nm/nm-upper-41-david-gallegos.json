@@ -1,0 +1,76 @@
+{
+  "id": "david-gallegos",
+  "name": "David Gallegos",
+  "firstName": "David",
+  "lastName": "Gallegos",
+  "photo": "/images/officials/state-legislature/nm/david-gallegos.jpg",
+  "photoSourceUrl": "https://www.nmlegis.gov/Images/Legislators/Senate/SGADM.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-41",
+  "jurisdiction": "New Mexico Senate",
+  "county": [
+    "New Mexico"
+  ],
+  "termStart": "2021-01-01",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "State Capitol Room 109B, New Mexico  490 Old Santa Fe Trail, Santa Fe, NM 87501",
+    "phone": "505-986-4877",
+    "email": "david@ramirezandsonsinc.com",
+    "website": "https://www.linkedin.com/in/david-gallegos-02427756/",
+    "socialMedia": {
+      "x": "https://x.com/gallegos4nm",
+      "twitter": "https://x.com/gallegos4nm"
+    }
+  },
+  "bio": "David Gallegos serves as State Senator for New Mexico Senate District 41. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "NM",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.linkedin.com/in/david-gallegos-02427756/"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/nm/legislature/David-M-Gallegos-9d5296b7-b8b1-40c8-a8ce-246f719b8ff0.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://www.nmlegis.gov/Images/Legislators/Senate/SGADM.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/David_M._Gallegos"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/David_Gallegos"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/139056/david-gallegos"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/david-gallegos-02427756"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.nmlegis.gov/Members/Legislator?SponCode=HGADV"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.nmlegis.gov/Members/Legislator?SponCode=SGADM"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.nmlegis.gov/Members/Legislator_List?T=S"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

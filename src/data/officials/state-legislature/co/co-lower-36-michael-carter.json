@@ -1,0 +1,52 @@
+{
+  "id": "michael-carter",
+  "name": "Michael Carter",
+  "firstName": "Michael",
+  "lastName": "Carter",
+  "photo": "/images/officials/state-legislature/co/michael-carter.jpg",
+  "photoSourceUrl": "https://aps.ss20.sharpschool.com/UserFiles/Servers/Server_3217444/Image/Board%20of%20Education/Members/Carter_Michael_152-200x300.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-36",
+  "jurisdiction": "Colorado House of Representatives",
+  "county": [
+    "Colorado"
+  ],
+  "termStart": "2025-01-08",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "State Capitol Room 307, Colorado  Building 200 E. Colfax Ave., Denver, CO 80203",
+    "phone": "303-866-2942",
+    "email": "michael.carter.house@coleg.gov",
+    "website": "https://leg.colorado.gov/legislators/michael-carter"
+  },
+  "bio": "Michael Carter serves as State Representative for Colorado House of Representatives District 36. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "CO",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://leg.colorado.gov/legislators/michael-carter"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/co/legislature/Michael-J-Carter-9c2accab-1bbf-495c-8036-137e48ba684d.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://aps.ss20.sharpschool.com/UserFiles/Servers/Server_3217444/Image/Board%20of%20Education/Members/Carter_Michael_152-200x300.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Michael_Carter_(Colorado)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/michael-carter-82a0196"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

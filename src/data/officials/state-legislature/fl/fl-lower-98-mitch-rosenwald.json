@@ -1,0 +1,53 @@
+{
+  "id": "mitch-rosenwald",
+  "name": "Mitch Rosenwald",
+  "firstName": "Mitch",
+  "lastName": "Rosenwald",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-98",
+  "jurisdiction": "Florida House of Representatives",
+  "county": [
+    "Florida"
+  ],
+  "termStart": "2024-11-05",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 1402, The Capitol 402 S. Monroe St., Tallahassee, FL 32399",
+    "phone": "850-717-5098",
+    "email": "mitch.rosenwald@flhouse.gov",
+    "website": "https://myfloridahouse.gov/Sections/Representatives/details.aspx?MemberId=4927&LegislativeTermId=91"
+  },
+  "bio": "Mitch Rosenwald serves as State Representative for Florida House of Representatives District 98. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "FL",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://myfloridahouse.gov/Sections/Representatives/details.aspx?MemberId=4927&LegislativeTermId=91"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/fl/legislature/Mitch-Rosenwald-04a025da-737a-4580-9c0f-64531e9cbbec.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Mitch_Rosenwald"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.flhouse.gov/Sections/Representatives/details.aspx?MemberId=4927"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.flhouse.gov/Sections/Representatives/details.aspx?MemberId=4927&LegislativeTermId=91"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/mitch-rosenwald-b2a981238"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

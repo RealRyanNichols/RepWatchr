@@ -1,0 +1,48 @@
+{
+  "id": "jonathan-mcmillan",
+  "name": "Jonathan McMillan",
+  "firstName": "Jonathan",
+  "lastName": "McMillan",
+  "photo": "/images/officials/state-legislature/ms/jonathan-mcmillan.jpg",
+  "photoSourceUrl": "https://billstatus.ls.state.ms.us/members/house/mcmillan.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-58",
+  "jurisdiction": "Mississippi House of Representatives",
+  "county": [
+    "Mississippi"
+  ],
+  "termStart": "2024-01-02",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "State Capitol 400 High St., Jackson, MS 39201",
+    "phone": "601-359-3770",
+    "email": "mcmillan@house.ms.gov",
+    "website": "https://billstatus.ls.state.ms.us/members/house/mcmillan.xml"
+  },
+  "bio": "Jonathan McMillan serves as State Representative for Mississippi House of Representatives District 58. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "MS",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://billstatus.ls.state.ms.us/members/house/mcmillan.xml"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ms/legislature/Jonathan-McMillan-392af292-07d5-4bfd-9636-fe4257df61b3.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://billstatus.ls.state.ms.us/members/house/mcmillan.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Jonathan_McMillan"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

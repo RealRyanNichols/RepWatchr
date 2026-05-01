@@ -1,0 +1,49 @@
+{
+  "id": "tyson-miyake",
+  "name": "Tyson Miyake",
+  "firstName": "Tyson",
+  "lastName": "Miyake",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-10",
+  "jurisdiction": "Hawaii House of Representatives",
+  "county": [
+    "Hawaii"
+  ],
+  "termStart": "2023-12-18",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "State Capitol Room 421, 415 S. Beretania St., Honolulu, HI 96813",
+    "phone": "808-586-9444",
+    "email": "repmiyake@capitol.hawaii.gov",
+    "website": "https://www.capitol.hawaii.gov/legislature/memberpage.aspx?member=294"
+  },
+  "bio": "Tyson Miyake serves as State Representative for Hawaii House of Representatives District 10. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "HI",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.capitol.hawaii.gov/legislature/memberpage.aspx?member=294"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/hi/legislature/Tyson-Miyake-6fb71afb-6ce8-4f21-ad16-a7255ca2bfec.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Tyson_Miyake"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Tyson_Miyake"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/tyson-miyake-tkm82"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

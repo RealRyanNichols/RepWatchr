@@ -1,0 +1,75 @@
+{
+  "id": "leanne-krueger",
+  "name": "Leanne Krueger",
+  "firstName": "Leanne",
+  "lastName": "Krueger",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-161",
+  "jurisdiction": "Pennsylvania House of Representatives",
+  "county": [
+    "Pennsylvania"
+  ],
+  "termStart": "2015-08-25",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 512E, Main Capitol Building P.O. Box 202161, Harrisburg, PA 17120",
+    "phone": "717-705-2567",
+    "email": "repkrueger@pahouse.net",
+    "website": "https://www.legis.state.pa.us/cfdocs/legis/home/member_information/House_bio.cfm?id=1735",
+    "socialMedia": {
+      "x": "https://x.com/RepLeanne",
+      "twitter": "https://x.com/RepLeanne",
+      "facebook": "https://facebook.com/RepLeanne",
+      "youtube": "https://youtube.com/watch?v=7sQ9tqMo_3I&list=PLjtqNtfs0bgXePTgy_OAmbAVHgnIR5qWd"
+    }
+  },
+  "bio": "Leanne Krueger serves as State Representative for Pennsylvania House of Representatives District 161. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "PA",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.legis.state.pa.us/cfdocs/legis/home/member_information/House_bio.cfm?id=1735"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/pa/legislature/Leanne-Krueger-Braneky-8187ecb2-3e4b-4ba0-819e-a7cfb4b9ac93.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Leanne_Krueger-Braneky"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Leanne_Krueger-Braneky"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/150779/leanne-krueger"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.legis.state.pa.us/cfdocs/legis/home/member_information/mbrList.cfm?body=H&sort=alpha"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.legis.state.pa.us/cfdocs/legis/home/member_information/representatives_alpha.cfm"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/leanne-krueger-braneky-5726563"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.pahouse.com/Krueger"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.palegis.us/house/members/bio/1735/rep-krueger"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

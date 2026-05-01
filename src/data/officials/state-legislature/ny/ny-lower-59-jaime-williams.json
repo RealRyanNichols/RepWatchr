@@ -1,0 +1,68 @@
+{
+  "id": "jaime-williams",
+  "name": "Jaime Williams",
+  "firstName": "Jaime",
+  "lastName": "Williams",
+  "photo": "/images/officials/state-legislature/ny/jaime-williams.jpg",
+  "photoSourceUrl": "https://assembly.state.ny.us/write/upload/member_files/059/headshot/059.jpg?hst=1660073711",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "Assemblymember",
+  "district": "HD-59",
+  "jurisdiction": "New York State Assembly",
+  "county": [
+    "New York"
+  ],
+  "termStart": "2016-05-03",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 641, Legislative Office Building, Albany, NY 12248",
+    "phone": "518-455-5211",
+    "email": "williamsja@nyassembly.gov",
+    "website": "https://assembly.state.ny.us/mem/?sh=email"
+  },
+  "bio": "Jaime Williams serves as Assemblymember for New York State Assembly District 59. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "NY",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://assembly.state.ny.us/mem/?sh=email"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ny/legislature/Jaime-Williams-67047d73-acc1-4d6f-b580-fbeee33cc1f8.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://assembly.state.ny.us/write/upload/member_files/059/headshot/059.jpg?hst=1660073711"
+    },
+    {
+      "title": "Public source",
+      "url": "https://assembly.state.ny.us/mem/Jaime-R-Williams"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Jaime_Williams"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Jaime_Williams_%28legislator%29"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/170040/jaime-williams"
+    },
+    {
+      "title": "Public source",
+      "url": "https://nyassembly.gov/mem/Jaime-R-Williams"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/jaime-williams-4b38bb45"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

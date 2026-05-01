@@ -1,0 +1,64 @@
+{
+  "id": "jake-sawyer",
+  "name": "Jake Sawyer",
+  "firstName": "Jake",
+  "lastName": "Sawyer",
+  "photo": "/images/officials/state-legislature/ut/jake-sawyer.jpg",
+  "photoSourceUrl": "https://static.wixstatic.com/media/d27656_26f8c475869649a59bad8ae179994b0f~mv2.jpg/v1/fill/w_317,h_383,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/Jake_Website_edited.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-9",
+  "jurisdiction": "Utah House of Representatives",
+  "county": [
+    "Utah"
+  ],
+  "termStart": "2025-01-01",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "P.O. Box 145030 350 N. State St., Suite 350, Salt Lake City, UT 84114",
+    "phone": "801-538-1029",
+    "email": "jsawyer@le.utah.gov",
+    "website": "https://house.utleg.gov/rep/SAWYEJ/"
+  },
+  "bio": "Jake Sawyer serves as State Representative for Utah House of Representatives District 9. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "UT",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://house.utleg.gov/rep/SAWYEJ/"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ut/legislature/Jake-Sawyer-dd923550-9fd3-4476-9a43-219a199c8057.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://static.wixstatic.com/media/d27656_26f8c475869649a59bad8ae179994b0f~mv2.jpg/v1/fill/w_317,h_383,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/Jake_Website_edited.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Jake_Sawyer"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Jake_Sawyer"
+    },
+    {
+      "title": "Public source",
+      "url": "https://house.utleg.gov/rep/SAWYEJ"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/214362/jake-sawyer"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/jacob-sawyer62"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

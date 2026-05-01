@@ -1,0 +1,60 @@
+{
+  "id": "charlotte-little",
+  "name": "Charlotte Little",
+  "firstName": "Charlotte",
+  "lastName": "Little",
+  "photo": "/images/officials/state-legislature/nm/charlotte-little.jpg",
+  "photoSourceUrl": "https://www.nmlegis.gov/Images/Legislators/House/HLITC.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-68",
+  "jurisdiction": "New Mexico House of Representatives",
+  "county": [
+    "New Mexico"
+  ],
+  "termStart": "2023-01-01",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "State Capitol Room 413F, New Mexico  490 Old Santa Fe Trail, Santa Fe, NM 87501",
+    "phone": "505-986-4432",
+    "email": "charlotte.little@nmlegis.gov",
+    "website": "https://www.nmlegis.gov/Members/Legislator?SponCode=HLITC"
+  },
+  "bio": "Charlotte Little serves as State Representative for New Mexico House of Representatives District 68. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "NM",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.nmlegis.gov/Members/Legislator?SponCode=HLITC"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/nm/legislature/Charlotte-Little-052e06cd-7f58-4c3c-8640-be1d8842a19b.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://www.nmlegis.gov/Images/Legislators/House/HLITC.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Charlotte_Little"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Charlotte_Little"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/charlotte-little-6709974"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.nmlegis.gov/Members/Legislator_List?T=R"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

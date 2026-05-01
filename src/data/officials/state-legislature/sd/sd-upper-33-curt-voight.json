@@ -1,0 +1,64 @@
+{
+  "id": "curt-voight",
+  "name": "Curt Voight",
+  "firstName": "Curt",
+  "lastName": "Voight",
+  "photo": "/images/officials/state-legislature/sd/curt-voight.jpg",
+  "photoSourceUrl": "https://substackcdn.com/image/fetch/f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F1b0cc545-be4d-4e1d-a25e-504b7057b344.heic",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-33",
+  "jurisdiction": "South Dakota Senate",
+  "county": [
+    "South Dakota"
+  ],
+  "termStart": "2025-01-14",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Capitol Building 500 E. Capitol Ave., Pierre, SD 57501",
+    "phone": "605-773-3821",
+    "email": "curt.voight@sdlegislature.gov",
+    "website": "https://sdlegislature.gov/Legislators/Profile/4702/Detail"
+  },
+  "bio": "Curt Voight serves as State Senator for South Dakota Senate District 33. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "SD",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://sdlegislature.gov/Legislators/Profile/4702/Detail"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/sd/legislature/Curt-Voight-6dce0110-114c-467d-adb2-50e0309a8079.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://substackcdn.com/image/fetch/f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F1b0cc545-be4d-4e1d-a25e-504b7057b344.heic"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Curt_Voight"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Curt_Voight"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/216135/curt-voight"
+    },
+    {
+      "title": "Public source",
+      "url": "https://sdlegislature.gov/Legislators/Profile/4828/Detail"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/curt-voight-747b1522"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

@@ -1,0 +1,52 @@
+{
+  "id": "thomas-moakley",
+  "name": "Thomas Moakley",
+  "firstName": "Thomas",
+  "lastName": "Moakley",
+  "photo": "/images/officials/state-legislature/ma/thomas-moakley.jpg",
+  "photoSourceUrl": "https://malegislature.gov/Legislators/Profile/170/TWM1.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-Barnstable, Dukes and Nantucket",
+  "jurisdiction": "Massachusetts House of Representatives",
+  "county": [
+    "Massachusetts"
+  ],
+  "termStart": "2025-01-01",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 134, State House 24 Beacon St., Boston, MA 02133",
+    "phone": "617-722-2400",
+    "email": "thomas.moakley@mahouse.gov",
+    "website": "https://malegislature.gov/Legislators/Profile/TWM1"
+  },
+  "bio": "Thomas Moakley serves as State Representative for Massachusetts House of Representatives District Barnstable, Dukes and Nantucket. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "MA",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://malegislature.gov/Legislators/Profile/TWM1"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ma/legislature/Thomas-Moakley-ebfdda03-c083-4a13-b3a4-f87f6e24adac.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://malegislature.gov/Legislators/Profile/170/TWM1.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Thomas_Moakley"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/thomas-moakley-623031a8"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

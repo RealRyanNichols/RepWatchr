@@ -1,0 +1,60 @@
+{
+  "id": "claire-valdez",
+  "name": "Claire Valdez",
+  "firstName": "Claire",
+  "lastName": "Valdez",
+  "photo": "/images/officials/state-legislature/ny/claire-valdez.jpg",
+  "photoSourceUrl": "https://s3.amazonaws.com/ballotpedia-api4/files/thumbs/200/300/Claire_Valdez_20240808_060205.jpeg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "Assemblymember",
+  "district": "HD-37",
+  "jurisdiction": "New York State Assembly",
+  "county": [
+    "New York"
+  ],
+  "termStart": "2025-01-01",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 427, Legislative Office Building, Albany, NY 12248",
+    "phone": "518-455-4851",
+    "email": "valdezc@nyassembly.gov",
+    "website": "https://assembly.state.ny.us/mem/Claire-Valdez/"
+  },
+  "bio": "Claire Valdez serves as Assemblymember for New York State Assembly District 37. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "NY",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://assembly.state.ny.us/mem/Claire-Valdez/"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ny/legislature/Claire-Valdez-9147362c-8b83-49ff-8fab-4d48a77eebc9.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://s3.amazonaws.com/ballotpedia-api4/files/thumbs/200/300/Claire_Valdez_20240808_060205.jpeg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://assembly.state.ny.us/mem/Claire-Valdez"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Claire_Valdez"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Claire_Valdez"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/217339/claire-valdez"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

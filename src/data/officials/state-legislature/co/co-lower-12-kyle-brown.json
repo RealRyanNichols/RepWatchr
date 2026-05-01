@@ -1,0 +1,57 @@
+{
+  "id": "kyle-brown",
+  "name": "Kyle Brown",
+  "firstName": "Kyle",
+  "lastName": "Brown",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-12",
+  "jurisdiction": "Colorado House of Representatives",
+  "county": [
+    "Colorado"
+  ],
+  "termStart": "2023-02-01",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "State Capitol Room 307, Colorado  Building 200 E. Colfax Ave., Denver, CO 80203",
+    "phone": "303-866-2920",
+    "email": "kyle.brown.house@coleg.gov",
+    "website": "https://leg.colorado.gov/legislators/kyle-brown"
+  },
+  "bio": "Kyle Brown serves as State Representative for Colorado House of Representatives District 12. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "CO",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://leg.colorado.gov/legislators/kyle-brown"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/co/legislature/Kyle-Brown-f376a75e-e0b0-4bf7-95b1-0931ade3bdb8.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Kyle_Brown_(Colorado)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Kyle_Brown_(politician)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/211356/kyle-brown"
+    },
+    {
+      "title": "Public source",
+      "url": "https://leg.colorado.gov/legislators"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/kyle-brown-0905677"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

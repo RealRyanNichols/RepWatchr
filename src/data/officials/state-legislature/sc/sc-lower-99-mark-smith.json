@@ -1,0 +1,65 @@
+{
+  "id": "mark-smith",
+  "name": "Mark Smith",
+  "firstName": "Mark",
+  "lastName": "Smith",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-99",
+  "jurisdiction": "South Carolina House of Representatives",
+  "county": [
+    "South Carolina"
+  ],
+  "termStart": "2020-11-09",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 327A, Blatt Building P.O. Box 11867, Columbia, SC 29201",
+    "phone": "803-212-6719",
+    "email": "marksmith@schouse.gov",
+    "website": "https://scstatehouse.gov/member.php?code=1724999793"
+  },
+  "bio": "Mark Smith serves as State Representative for South Carolina House of Representatives District 99. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "SC",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://scstatehouse.gov/member.php?code=1724999793"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/sc/legislature/Marvin-Mark-Smith-9d1ecabb-7f76-4f2e-9951-03599223ca4c.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Mark_Smith_(South_Carolina)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Mark_Smith_(South_Carolina_politician)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/160942/marvin-smith"
+    },
+    {
+      "title": "Public source",
+      "url": "https://scstatehouse.gov/member.php?chamber=H"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/mark-m-smith-cfsp-56a37824"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.scstatehouse.gov/member.php?chamber=H"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.scstatehouse.gov/member.php?code=1724999793"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

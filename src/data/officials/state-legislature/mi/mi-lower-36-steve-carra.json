@@ -1,0 +1,64 @@
+{
+  "id": "steve-carra",
+  "name": "Steve Carra",
+  "firstName": "Steve",
+  "lastName": "Carra",
+  "photo": "/images/officials/state-legislature/mi/steve-carra.jpg",
+  "photoSourceUrl": "https://dtj5wlj7ond0z.cloudfront.net/uploads/2021/05/HS_CARRA_0221_NSC_2360-scaled.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-36",
+  "jurisdiction": "Michigan House of Representatives",
+  "county": [
+    "Michigan"
+  ],
+  "termStart": "2023-01-01",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room S-885, Anderson House Office Building 124 N. Capitol Ave., Lansing, MI 48933",
+    "phone": "517-373-0843",
+    "email": "stevecarra@house.mi.gov",
+    "website": "https://gophouse.org/member/repstevecarra/about"
+  },
+  "bio": "Steve Carra serves as State Representative for Michigan House of Representatives District 36. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "MI",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://gophouse.org/member/repstevecarra/about"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/mi/legislature/Steve-Carra-4dee484b-79f4-4ca2-92dc-2ed7e0623d6b.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://dtj5wlj7ond0z.cloudfront.net/uploads/2021/05/HS_CARRA_0221_NSC_2360-scaled.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Steve_Carra"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Steve_Carra"
+    },
+    {
+      "title": "Member Details Page",
+      "url": "https://repcarra.com"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.house.mi.gov/AllRepresentatives"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.house.mi.gov/MHRPublic/frmRepListMilenia.aspx?all=true"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

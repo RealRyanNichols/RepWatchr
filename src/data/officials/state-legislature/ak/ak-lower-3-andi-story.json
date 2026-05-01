@@ -1,0 +1,72 @@
+{
+  "id": "andi-story",
+  "name": "Andi Story",
+  "firstName": "Andi",
+  "lastName": "Story",
+  "photo": "/images/officials/state-legislature/ak/andi-story.jpg",
+  "photoSourceUrl": "http://akleg.gov/images/legislators/450x600/STO.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-3",
+  "jurisdiction": "Alaska House of Representatives",
+  "county": [
+    "Alaska"
+  ],
+  "termStart": "2023-01-17",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "State Capitol Room 403, 120 4th St., Juneau, AK 99801",
+    "phone": "907-465-3744",
+    "email": "representative.andi.story@akleg.gov",
+    "website": "https://akhouse.org/rep-story/"
+  },
+  "bio": "Andi Story serves as State Representative for Alaska House of Representatives District 3. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "AK",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://akhouse.org/rep-story/"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ak/legislature/Andi-Story-7db414a5-dd7e-48a9-aba2-9c0204f93a5c.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "http://akleg.gov/images/legislators/450x600/STO.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://akhouse.org/rep-story"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Andi_Story"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Andi_Story"
+    },
+    {
+      "title": "Public source",
+      "url": "https://w3.akleg.gov"
+    },
+    {
+      "title": "Public source",
+      "url": "https://w3.akleg.gov/"
+    },
+    {
+      "title": "member list page",
+      "url": "https://www.akleg.gov/basis/mbr_info.asp?session=33"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.akleg.gov/basis/Member/Detail/33?code=STO"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

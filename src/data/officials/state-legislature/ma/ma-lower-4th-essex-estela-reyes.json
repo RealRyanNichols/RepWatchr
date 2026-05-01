@@ -1,0 +1,68 @@
+{
+  "id": "estela-reyes",
+  "name": "Estela Reyes",
+  "firstName": "Estela",
+  "lastName": "Reyes",
+  "photo": "/images/officials/state-legislature/ma/estela-reyes.jpg",
+  "photoSourceUrl": "https://malegislature.gov/Legislators/Profile/170/EAR1.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-4th Essex",
+  "jurisdiction": "Massachusetts House of Representatives",
+  "county": [
+    "Massachusetts"
+  ],
+  "termStart": "2023-01-04",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 156, State House 24 Beacon St., Boston, MA 02133",
+    "phone": "617-722-2240",
+    "email": "estela.reyes@mahouse.gov",
+    "website": "https://malegislature.gov/Legislators/Profile/EAR1"
+  },
+  "bio": "Estela Reyes serves as State Representative for Massachusetts House of Representatives District 4th Essex. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "MA",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://malegislature.gov/Legislators/Profile/EAR1"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ma/legislature/Estela-A-Reyes-824532f7-8dc9-4a1a-a7b3-16b2d0e78941.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://malegislature.gov/Legislators/Profile/170/EAR1.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Estela_Reyes"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Estela_Reyes"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/148762/estela-reyes"
+    },
+    {
+      "title": "Public source",
+      "url": "https://malegislature.gov/api/GeneralCourts/193/LegislativeMembers"
+    },
+    {
+      "title": "Public source",
+      "url": "https://malegislature.gov/api/GeneralCourts/193/LegislativeMembers/"
+    },
+    {
+      "title": "Public source",
+      "url": "https://malegislature.gov/api/GeneralCourts/193/LegislativeMembers/EAR1"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

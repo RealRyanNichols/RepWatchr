@@ -1,0 +1,69 @@
+{
+  "id": "bill-hauter",
+  "name": "Bill Hauter",
+  "firstName": "Bill",
+  "lastName": "Hauter",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-87",
+  "jurisdiction": "Illinois House of Representatives",
+  "county": [
+    "Illinois"
+  ],
+  "termStart": "2023-01-11",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 207-N, Stratton Office Building, Springfield, IL 62706",
+    "phone": "217-782-0221",
+    "email": "hauter@ilhousegop.org",
+    "website": "https://ilga.gov/house/Rep.asp?GA=103&MemberID=3238"
+  },
+  "bio": "Bill Hauter serves as State Representative for Illinois House of Representatives District 87. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "IL",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://ilga.gov/house/Rep.asp?GA=103&MemberID=3238"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/il/legislature/William-E-Hauter-fb6cc95a-0c98-41e3-a481-8d5dc51d6c54.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Bill_Hauter"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Bill_Hauter"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ilga.gov/house/default.asp?GA=103"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/204489/william-hauter"
+    },
+    {
+      "title": "Public source",
+      "url": "https://rephauter.com"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.ilga.gov/House/Members/Details/3429"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.ilga.gov/house/Rep.asp?GA=103&MemberID=3238"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.ilga.gov/house/Rep.asp?GA=104&MemberID=3429"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

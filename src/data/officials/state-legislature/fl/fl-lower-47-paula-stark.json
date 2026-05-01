@@ -1,0 +1,61 @@
+{
+  "id": "paula-stark",
+  "name": "Paula Stark",
+  "firstName": "Paula",
+  "lastName": "Stark",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-47",
+  "jurisdiction": "Florida House of Representatives",
+  "county": [
+    "Florida"
+  ],
+  "termStart": "2022-11-08",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 200, House Office Building 402 S. Monroe St., Tallahassee, FL 32399",
+    "phone": "850-717-5047",
+    "email": "paula.stark@flhouse.gov",
+    "website": "https://myfloridahouse.gov/Sections/Representatives/details.aspx?MemberId=4878&LegislativeTermId=90"
+  },
+  "bio": "Paula Stark serves as State Representative for Florida House of Representatives District 47. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "FL",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://myfloridahouse.gov/Sections/Representatives/details.aspx?MemberId=4878&LegislativeTermId=90"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/fl/legislature/Paula-A-Stark-0a0ec0a3-4f1d-4cd8-b790-d51bff717798.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Paula_Stark"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Paula_Stark"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.flhouse.gov/Sections/Representatives/custom/details.aspx?MemberId=4878"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.flhouse.gov/Sections/Representatives/details.aspx?MemberId=4878"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/paula-stark-7a010734"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.myfloridahouse.gov/Sections/Representatives/details.aspx?MemberId=4878"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

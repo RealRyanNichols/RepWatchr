@@ -1,0 +1,60 @@
+{
+  "id": "nicole-williams",
+  "name": "Nicole Williams",
+  "firstName": "Nicole",
+  "lastName": "Williams",
+  "photo": "/images/officials/state-legislature/md/nicole-williams.jpg",
+  "photoSourceUrl": "https://mgaleg.maryland.gov/2025RS/images/williams01.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "Delegate",
+  "district": "HD-22",
+  "jurisdiction": "Maryland House of Delegates",
+  "county": [
+    "Maryland"
+  ],
+  "termStart": "2019-12-06",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 207, Lowe House Office Building 6 Bladen St., Annapolis, MD 21401",
+    "phone": "410-841-3058",
+    "email": "nicole.williams@house.maryland.gov",
+    "website": "https://mgaleg.maryland.gov/mgawebsite/Members/Details/williams01"
+  },
+  "bio": "Nicole Williams serves as Delegate for Maryland House of Delegates District 22. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "MD",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://mgaleg.maryland.gov/mgawebsite/Members/Details/williams01"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/md/legislature/Nicole-A-Williams-0e07b201-0a1a-4a45-af43-f4d9d779b409.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://mgaleg.maryland.gov/2025RS/images/williams01.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Nicole_Williams"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Nicole_A._Williams"
+    },
+    {
+      "title": "Public source",
+      "url": "https://msa.maryland.gov/msa/mdmanual/06hse/html/msa18240.html"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/nicoleawilliams"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

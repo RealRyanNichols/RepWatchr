@@ -1,0 +1,47 @@
+{
+  "id": "matt-pinnell",
+  "name": "Matt Pinnell",
+  "firstName": "Matt",
+  "lastName": "Pinnell",
+  "photo": "/images/officials/state-executive/ok/matt-pinnell.jpg",
+  "photoSourceUrl": "https://oklahoma.gov/content/dam/ok/en/ltgov/images/photography/Official-LtGovMattPinnell.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "Lieutenant Governor",
+  "district": "Oklahoma",
+  "jurisdiction": "Oklahoma statewide public office",
+  "county": [
+    "Oklahoma"
+  ],
+  "termStart": "2019-01-14",
+  "termEnd": "2027-01-11",
+  "contactInfo": {
+    "office": "2300 N Lincoln Blvd, Room 117; Oklahoma City, OK 73105",
+    "phone": "405-521-2161",
+    "website": "https://oklahoma.gov/ltgovpinnell.html"
+  },
+  "bio": "Matt Pinnell is listed as Lieutenant Governor for Oklahoma. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "OK",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://oklahoma.gov/ltgovpinnell.html"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ok/executive/Matt-Pinnell-c363ab87-72b9-4c52-af58-c5cb2da323d2.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://oklahoma.gov/content/dam/ok/en/ltgov/images/photography/Official-LtGovMattPinnell.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Matt_Pinnell"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

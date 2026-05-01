@@ -1,0 +1,51 @@
+{
+  "id": "jennifer-davenport",
+  "name": "Jennifer Davenport",
+  "firstName": "Jennifer",
+  "lastName": "Davenport",
+  "photo": "/images/officials/state-executive/nj/jennifer-davenport.jpg",
+  "photoSourceUrl": "https://www.naag.org/wp-content/uploads/2026/01/ag-NJ-Davenport-Jennifer.png",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "Attorney General",
+  "district": "New Jersey",
+  "jurisdiction": "New Jersey statewide public office",
+  "county": [
+    "New Jersey"
+  ],
+  "termStart": "2026-02-24",
+  "termEnd": "2030-01-15",
+  "contactInfo": {
+    "office": "Richard J. Hughes Justice Complex, 25 Market Street, P.O. Box 080; Trenton, NJ 08625",
+    "phone": "609-292-8740",
+    "website": "https://www.njoag.gov/"
+  },
+  "bio": "Jennifer Davenport is listed as Attorney General for New Jersey. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "NJ",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.njoag.gov/"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/nj/executive/Jennifer-Davenport-cf9793dd-4ef2-4db2-807c-4cf8fce4eecb.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://www.naag.org/wp-content/uploads/2026/01/ag-NJ-Davenport-Jennifer.png"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Jennifer_Davenport"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.naag.org/attorney-general/jennifer-davenport/"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

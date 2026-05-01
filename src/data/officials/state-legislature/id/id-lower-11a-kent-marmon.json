@@ -1,0 +1,68 @@
+{
+  "id": "kent-marmon",
+  "name": "Kent Marmon",
+  "firstName": "Kent",
+  "lastName": "Marmon",
+  "photo": "/images/officials/state-legislature/id/kent-marmon.jpg",
+  "photoSourceUrl": "https://legislature.idaho.gov/wp-content/uploads/sessioninfo/2025/directory/Marmon9417.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-11A",
+  "jurisdiction": "Idaho House of Representatives",
+  "county": [
+    "Idaho"
+  ],
+  "termStart": "2024-12-01",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "P.O. Box 83720 700 W. Jefferson St., Boise, ID 83720",
+    "phone": "208-332-1052",
+    "email": "kmarmon@house.idaho.gov",
+    "website": "https://legislature.idaho.gov/legislators/membership/2025/id9417/"
+  },
+  "bio": "Kent Marmon serves as State Representative for Idaho House of Representatives District 11A. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "ID",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://legislature.idaho.gov/legislators/membership/2025/id9417/"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/id/legislature/Kent-Marmon-c92ba4ff-72aa-4985-b8c0-bb3178187c81.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://legislature.idaho.gov/wp-content/uploads/sessioninfo/2025/directory/Marmon9417.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Kent_Marmon"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Kent_Marmon"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/103814/kent-marmon"
+    },
+    {
+      "title": "Public source",
+      "url": "https://legislature.idaho.gov/legislators/membership/2025/id9417"
+    },
+    {
+      "title": "Public source",
+      "url": "https://legislature.idaho.gov/legislators/membership/2026/id9417"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/kent-marmon-ba073367"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

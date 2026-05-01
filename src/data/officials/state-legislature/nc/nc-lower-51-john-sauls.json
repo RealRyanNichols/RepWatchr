@@ -1,0 +1,56 @@
+{
+  "id": "john-sauls",
+  "name": "John Sauls",
+  "firstName": "John",
+  "lastName": "Sauls",
+  "photo": "/images/officials/state-legislature/nc/john-sauls.jpg",
+  "photoSourceUrl": "https://www.ncleg.gov/Members/MemberImage/H/393/Low",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-51",
+  "jurisdiction": "North Carolina House of Representatives",
+  "county": [
+    "North Carolina"
+  ],
+  "termStart": "2017-01-01",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 408, Legislative Office Building 300 N. Salisbury St., Raleigh, NC 27603",
+    "phone": "919-715-3026",
+    "email": "john.sauls@ncleg.gov",
+    "website": "https://www.ncleg.gov/Members/Biography/H/393"
+  },
+  "bio": "John Sauls serves as State Representative for North Carolina House of Representatives District 51. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "NC",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.ncleg.gov/Members/Biography/H/393"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/nc/legislature/John-Sauls-bde014bb-27c1-42a3-909f-c5d96cca5c3f.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://www.ncleg.gov/Members/MemberImage/H/393/Low"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/John_Sauls"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/John_I._Sauls"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.ncleg.gov/Members/MemberTable/H"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

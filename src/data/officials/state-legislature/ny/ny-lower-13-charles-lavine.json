@@ -1,0 +1,73 @@
+{
+  "id": "charles-lavine",
+  "name": "Charles Lavine",
+  "firstName": "Charles",
+  "lastName": "Lavine",
+  "photo": "/images/officials/state-legislature/ny/charles-lavine.jpg",
+  "photoSourceUrl": "https://assembly.state.ny.us/write/upload/member_files/013/headshot/013.jpg?hst=1660072879",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "Assemblymember",
+  "district": "HD-13",
+  "jurisdiction": "New York State Assembly",
+  "county": [
+    "New York"
+  ],
+  "termStart": "2005-01-01",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 831, Legislative Office Building, Albany, NY 12248",
+    "phone": "518-455-5456",
+    "email": "lavinec@nyassembly.gov",
+    "website": "https://assembly.state.ny.us/mem/?sh=email",
+    "socialMedia": {
+      "x": "https://x.com/CharlesLavineNY",
+      "twitter": "https://x.com/CharlesLavineNY",
+      "facebook": "https://facebook.com/57599145372"
+    }
+  },
+  "bio": "Charles Lavine serves as Assemblymember for New York State Assembly District 13. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "NY",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://assembly.state.ny.us/mem/?sh=email"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ny/legislature/Charles-Lavine-3bb6eebd-d57b-4592-bc52-9ce338df9ccf.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://assembly.state.ny.us/write/upload/member_files/013/headshot/013.jpg?hst=1660072879"
+    },
+    {
+      "title": "Public source",
+      "url": "https://assembly.state.ny.us/mem/Charles-D-Lavine"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Charles_Lavine"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Charles_D._Lavine"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/44694/charles-lavine"
+    },
+    {
+      "title": "Public source",
+      "url": "https://nyassembly.gov/mem/charles-d-lavine"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/chuck-lavine-2ab20b5"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

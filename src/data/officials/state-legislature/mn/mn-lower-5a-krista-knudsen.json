@@ -1,0 +1,64 @@
+{
+  "id": "krista-knudsen",
+  "name": "Krista Knudsen",
+  "firstName": "Krista",
+  "lastName": "Knudsen",
+  "photo": "/images/officials/state-legislature/mn/krista-knudsen.jpg",
+  "photoSourceUrl": "https://www.house.mn.gov/hinfo/memberimgls94/05A.gif?v=112221",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-5A",
+  "jurisdiction": "Minnesota House of Representatives",
+  "county": [
+    "Minnesota"
+  ],
+  "termStart": "2023-01-03",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Centennial Office Building 658 Cedar St., Second Floor, St. Paul, MN 55155",
+    "phone": "651-296-9918",
+    "email": "rep.krista.knudsen@house.mn.gov",
+    "website": "https://www.house.mn.gov/members/profile/15592"
+  },
+  "bio": "Krista Knudsen serves as State Representative for Minnesota House of Representatives District 5A. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "MN",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.house.mn.gov/members/profile/15592"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/mn/legislature/Krista-Knudsen-d9b75b0d-6065-4efc-81e2-03084dee070a.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://www.house.mn.gov/hinfo/memberimgls94/05A.gif?v=112221"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Krista_Knudsen"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Krista_Knudsen"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/207766/krista-knudsen"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.house.leg.state.mn.us/members/hmem.asp"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/krista-knudsen-110440b2"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

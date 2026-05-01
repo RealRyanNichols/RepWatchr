@@ -1,0 +1,71 @@
+{
+  "id": "wes-kitchens",
+  "name": "Wes Kitchens",
+  "firstName": "Wes",
+  "lastName": "Kitchens",
+  "photo": "/images/officials/state-legislature/al/wes-kitchens.jpg",
+  "photoSourceUrl": "https://www.legislature.state.al.us/pdf/senate/members/Kitchens_9.png",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-9",
+  "jurisdiction": "Alabama Senate",
+  "county": [
+    "Alabama"
+  ],
+  "termStart": "2024-01-23",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 737, 11 S. Union St., Montgomery, AL 36130",
+    "email": "wes.kitchens@alsenate.gov",
+    "website": "https://alison.legislature.state.al.us/house-leaders-members"
+  },
+  "bio": "Wes Kitchens serves as State Senator for Alabama Senate District 9. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "AL",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://alison.legislature.state.al.us/house-leaders-members"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/al/legislature/Wes-Kitchens-3f143edf-eac6-4bee-89b3-c5ac0b0b856e.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://www.legislature.state.al.us/pdf/senate/members/Kitchens_9.png"
+    },
+    {
+      "title": "Public source",
+      "url": "https://alsenaterepublicans.org/representatives/009-district9-senator"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Wes_Kitchens"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Wes_Kitchens"
+    },
+    {
+      "title": "graphql endpoint for member information",
+      "url": "https://gql.api.alison.legislature.state.al.us/graphql"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/180577/wes-kitchens"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.legislature.state.al.us/aliswww/ISD/ALRepresentative.aspx?NAME=Kitchens&OID_SPONSOR=100507&OID_PERSON=8496&SESSNAME="
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.legislature.state.al.us/aliswww/ISD/ALRepresentative.aspx?OID_SPONSOR=100507&OID_PERSON=8496"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

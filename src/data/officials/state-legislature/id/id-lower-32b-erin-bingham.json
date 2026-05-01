@@ -1,0 +1,56 @@
+{
+  "id": "erin-bingham",
+  "name": "Erin Bingham",
+  "firstName": "Erin",
+  "lastName": "Bingham",
+  "photo": "/images/officials/state-legislature/id/erin-bingham.jpg",
+  "photoSourceUrl": "https://legislature.idaho.gov/wp-content/uploads/sessioninfo/2026/directory/Bingham10415.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-32B",
+  "jurisdiction": "Idaho House of Representatives",
+  "county": [
+    "Idaho"
+  ],
+  "termStart": "2026-01-10",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "P.O. Box 83720 700 W. Jefferson St., Boise, ID 83720",
+    "phone": "208-332-1071",
+    "email": "ebingham@house.idaho.gov",
+    "website": "https://legislature.idaho.gov/legislators/membership/2026/id10415/"
+  },
+  "bio": "Erin Bingham serves as State Representative for Idaho House of Representatives District 32B. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "ID",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://legislature.idaho.gov/legislators/membership/2026/id10415/"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/id/legislature/Erin-Bingham-13b5078f-aaaf-4222-a0ae-c8afcbdf3757.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://legislature.idaho.gov/wp-content/uploads/sessioninfo/2026/directory/Bingham10415.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Erin_Bingham"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Erin_Bingham"
+    },
+    {
+      "title": "Public source",
+      "url": "https://legislature.idaho.gov/legislators/membership/2026/id10415"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

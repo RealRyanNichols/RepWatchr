@@ -1,0 +1,69 @@
+{
+  "id": "stewart-barlow",
+  "name": "Stewart Barlow",
+  "firstName": "Stewart",
+  "lastName": "Barlow",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-17",
+  "jurisdiction": "Utah House of Representatives",
+  "county": [
+    "Utah"
+  ],
+  "termStart": "2011-09-01",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "P.O. Box 145030 350 N. State St., Suite 350, Salt Lake City, UT 84114",
+    "phone": "801-538-1029",
+    "email": "sbarlow@le.utah.gov",
+    "website": "https://disclosures.utah.gov/Search/PublicSearch/FolderDetails/1411299"
+  },
+  "bio": "Stewart Barlow serves as State Representative for Utah House of Representatives District 17. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "UT",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://disclosures.utah.gov/Search/PublicSearch/FolderDetails/1411299"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ut/legislature/Stewart-E-Barlow-b5285658-1e71-48a2-8641-a2bc75957b24.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Stewart_Barlow"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Stewart_Barlow"
+    },
+    {
+      "title": "Public source",
+      "url": "https://house.utah.gov/rep/BARLOSE"
+    },
+    {
+      "title": "Public source",
+      "url": "https://house.utah.gov/rep/BARLOSE/"
+    },
+    {
+      "title": "Public source",
+      "url": "https://house.utleg.gov/rep/BARLOSE"
+    },
+    {
+      "title": "Public source",
+      "url": "https://house.utleg.gov/rep/BARLOSE/"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/134842/stewart-barlow"
+    },
+    {
+      "title": "Public source",
+      "url": "https://le.utah.gov/data/legislators.json"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

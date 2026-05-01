@@ -1,0 +1,60 @@
+{
+  "id": "paul-childress",
+  "name": "Paul Childress",
+  "firstName": "Paul",
+  "lastName": "Childress",
+  "photo": "/images/officials/state-legislature/ar/paul-childress.jpg",
+  "photoSourceUrl": "https://arkansasadvocate.com/wp-content/uploads/2024/09/Paul-Childress-SOS-2024.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-83",
+  "jurisdiction": "Arkansas House of Representatives",
+  "county": [
+    "Arkansas"
+  ],
+  "termStart": "2025-01-13",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "State Capitol Arkansas  500 Woodlane St., Suite 350, Little Rock, AR 72201",
+    "phone": "501-682-6211",
+    "email": "paul.childress@arkansashouse.org",
+    "website": "https://arkansashouse.org/district/83"
+  },
+  "bio": "Paul Childress serves as State Representative for Arkansas House of Representatives District 83. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "AR",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://arkansashouse.org/district/83"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ar/legislature/Paul-Childress-bd307080-d45f-4c7b-8365-2c7386e0fc3a.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://arkansasadvocate.com/wp-content/uploads/2024/09/Paul-Childress-SOS-2024.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://arkleg.state.ar.us/Legislators/Detail?member=Childress"
+    },
+    {
+      "title": "Public source",
+      "url": "https://arkleg.state.ar.us/Legislators/Detail?member=Childress&ddBienniumSession=2025%2F2025R"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Paul_Childress"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/paul-childress-951959b6"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

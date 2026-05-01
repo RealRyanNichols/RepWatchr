@@ -1,0 +1,72 @@
+{
+  "id": "travis-weaver",
+  "name": "Travis Weaver",
+  "firstName": "Travis",
+  "lastName": "Weaver",
+  "photo": "/images/officials/state-legislature/il/travis-weaver.jpg",
+  "photoSourceUrl": "https://cdn.ilga.gov/assets/img/members/{0A077509-6D57-4C96-8525-0480C8338827}.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-93",
+  "jurisdiction": "Illinois House of Representatives",
+  "county": [
+    "Illinois"
+  ],
+  "termStart": "2023-01-11",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 224-N, Stratton Office Building, Springfield, IL 62706",
+    "phone": "217-782-8152",
+    "email": "weaver@ilhousegop.org",
+    "website": "https://ilga.gov/house/Rep.asp?GA=103&MemberID=3244"
+  },
+  "bio": "Travis Weaver serves as State Representative for Illinois House of Representatives District 93. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "IL",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://ilga.gov/house/Rep.asp?GA=103&MemberID=3244"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/il/legislature/Travis-Weaver-63883963-04b0-454c-8d18-81dcca230b55.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://cdn.ilga.gov/assets/img/members/{0A077509-6D57-4C96-8525-0480C8338827}.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Travis_Weaver"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Travis_Weaver"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ilga.gov/house/default.asp?GA=103"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/204495/travis-weaver"
+    },
+    {
+      "title": "Public source",
+      "url": "https://repweaver.com"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.ilga.gov/House/Members/Details/3435"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.ilga.gov/house/Rep.asp?GA=103&MemberID=3244"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

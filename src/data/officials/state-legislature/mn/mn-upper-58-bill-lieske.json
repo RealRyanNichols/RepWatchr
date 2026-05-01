@@ -1,0 +1,64 @@
+{
+  "id": "bill-lieske",
+  "name": "Bill Lieske",
+  "firstName": "Bill",
+  "lastName": "Lieske",
+  "photo": "/images/officials/state-legislature/mn/bill-lieske.jpg",
+  "photoSourceUrl": "https://www.senate.mn/graphics/58Lieske.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-58",
+  "jurisdiction": "Minnesota Senate",
+  "county": [
+    "Minnesota"
+  ],
+  "termStart": "2023-01-03",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 2327, Minnesota Senate Building 95 University Ave. West, St. Paul, MN 55155",
+    "phone": "651-296-5019",
+    "email": "sen.bill.lieske@senate.mn",
+    "website": "https://www.senate.mn/members/member_bio.html?mem_id=1272"
+  },
+  "bio": "Bill Lieske serves as State Senator for Minnesota Senate District 58. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "MN",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.senate.mn/members/member_bio.html?mem_id=1272"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/mn/legislature/Bill-Lieske-05fb3c26-0704-49c8-8eb6-8c624b752434.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://www.senate.mn/graphics/58Lieske.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Bill_Lieske"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Bill_Lieske"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/207872/bill-lieske"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.senate.mn/api/members"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.senate.mn/members/member_bio.html?member_id=1272"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

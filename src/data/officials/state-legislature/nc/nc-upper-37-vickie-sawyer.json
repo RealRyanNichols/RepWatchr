@@ -1,0 +1,64 @@
+{
+  "id": "vickie-sawyer",
+  "name": "Vickie Sawyer",
+  "firstName": "Vickie",
+  "lastName": "Sawyer",
+  "photo": "/images/officials/state-legislature/nc/vickie-sawyer.jpg",
+  "photoSourceUrl": "https://www.ncleg.gov/Members/MemberImage/S/405/Low",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-37",
+  "jurisdiction": "North Carolina Senate",
+  "county": [
+    "North Carolina"
+  ],
+  "termStart": "2023-01-01",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 312, Legislative Office Building 300 N. Salisbury St., Raleigh, NC 27603",
+    "phone": "919-715-3038",
+    "email": "vickie.sawyer@ncleg.gov",
+    "website": "https://www.ncleg.gov/Members/Biography/S/405"
+  },
+  "bio": "Vickie Sawyer serves as State Senator for North Carolina Senate District 37. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "NC",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.ncleg.gov/Members/Biography/S/405"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/nc/legislature/Vickie-Sawyer-ece1f23b-841d-4145-9719-3807bf29f861.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://www.ncleg.gov/Members/MemberImage/S/405/Low"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Vickie_Sawyer"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Vickie_Sawyer"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/178345/vickie-sawyer"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/vickie-sawyer-62705647"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.ncleg.gov/Members/MemberTable/S"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

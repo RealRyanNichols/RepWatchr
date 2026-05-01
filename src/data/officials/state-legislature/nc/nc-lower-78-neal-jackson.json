@@ -1,0 +1,64 @@
+{
+  "id": "neal-jackson",
+  "name": "Neal Jackson",
+  "firstName": "Neal",
+  "lastName": "Jackson",
+  "photo": "/images/officials/state-legislature/nc/neal-jackson.jpg",
+  "photoSourceUrl": "https://www.ncleg.gov/Members/MemberImage/H/804/Low",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-78",
+  "jurisdiction": "North Carolina House of Representatives",
+  "county": [
+    "North Carolina"
+  ],
+  "termStart": "2023-01-01",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 406, Legislative Office Building 300 N. Salisbury St., Raleigh, NC 27603",
+    "phone": "919-715-4946",
+    "email": "neal.jackson@ncleg.gov",
+    "website": "https://www.ncleg.gov/Members/Biography/H/804"
+  },
+  "bio": "Neal Jackson serves as State Representative for North Carolina House of Representatives District 78. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "NC",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.ncleg.gov/Members/Biography/H/804"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/nc/legislature/Neal-Jackson-1e2d0ef7-d021-4427-af07-14fae1ad5aa0.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://www.ncleg.gov/Members/MemberImage/H/804/Low"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Neal_Jackson"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Neal_Jackson_(North_Carolina_politician)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/202734/neal-jackson"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.ncleg.gov/Members/MemberTable/H"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.nealjackson4nc.org/about"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

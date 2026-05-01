@@ -1,0 +1,72 @@
+{
+  "id": "sue-sosnowski",
+  "name": "Sue Sosnowski",
+  "firstName": "Sue",
+  "lastName": "Sosnowski",
+  "photo": "/images/officials/state-legislature/ri/sue-sosnowski.jpg",
+  "photoSourceUrl": "http://www.rilegislature.gov/Senators/Pictures/sosnowski.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-37",
+  "jurisdiction": "Rhode Island Senate",
+  "county": [
+    "Rhode Island"
+  ],
+  "termStart": "1997-01-07",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "82 Smith St., Providence, RI 02903",
+    "phone": "401-222-3580",
+    "email": "sen-sosnowski@rilegislature.gov",
+    "website": "https://www.rilegislature.gov/senators/algiere/default.aspx"
+  },
+  "bio": "Sue Sosnowski serves as State Senator for Rhode Island Senate District 37. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "RI",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.rilegislature.gov/senators/algiere/default.aspx"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ri/legislature/V-Susan-Sosnowski-c5757781-d437-4b9b-b7a1-9bb96c9b74ab.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "http://www.rilegislature.gov/Senators/Pictures/sosnowski.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/V._Susan_Sosnowski"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/V._Susan_Sosnowski"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/12867/v-susan-sosnowski"
+    },
+    {
+      "title": "Public source",
+      "url": "https://webserver.rilegislature.gov/Email/SenEmailListDistrict.asp"
+    },
+    {
+      "title": "Public source",
+      "url": "https://webserver.rilin.state.ri.us/Email/SenEmailListDistrict.asp"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.rilegislature.gov/senators/sosnowski/default.aspx"
+    },
+    {
+      "title": "Image Source",
+      "url": "https://www.rilegislature.gov/senators/sosnowski/Pages/Biography.aspx"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

@@ -1,0 +1,49 @@
+{
+  "id": "tex-fischer",
+  "name": "Tex Fischer",
+  "firstName": "Tex",
+  "lastName": "Fischer",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-59",
+  "jurisdiction": "Ohio House of Representatives",
+  "county": [
+    "Ohio"
+  ],
+  "termStart": "2025-01-01",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "77 S. High St. 13th Floor, Columbus, OH 43215",
+    "phone": "614-466-6107",
+    "email": "rep59@ohiohouse.gov",
+    "website": "https://ohiohouse.gov/houseapp/members/tex-fischer"
+  },
+  "bio": "Tex Fischer serves as State Representative for Ohio House of Representatives District 59. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "OH",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://ohiohouse.gov/houseapp/members/tex-fischer"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/oh/legislature/Tex-Fischer-16e469e4-8014-4ba2-8fc4-91804d6ef491.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Tex_Fischer"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/tex-fischer-65613570"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.ohiohouse.gov/members/tex-fischer"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

@@ -1,0 +1,64 @@
+{
+  "id": "tim-taylor",
+  "name": "Tim Taylor",
+  "firstName": "Tim",
+  "lastName": "Taylor",
+  "photo": "/images/officials/state-legislature/mo/tim-taylor.jpg",
+  "photoSourceUrl": "https://house.mo.gov/MemberPhoto.aspx?id=2217",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-48",
+  "jurisdiction": "Missouri House of Representatives",
+  "county": [
+    "Missouri"
+  ],
+  "termStart": "2021-01-06",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 304-A, 201 W. Capitol Ave., Jefferson City, MO 65101",
+    "phone": "573-751-0169",
+    "email": "tim.taylor@house.mo.gov",
+    "website": "https://house.mo.gov/MemberDetails.aspx?district=048"
+  },
+  "bio": "Tim Taylor serves as State Representative for Missouri House of Representatives District 48. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "MO",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://house.mo.gov/MemberDetails.aspx?district=048"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/mo/legislature/Tim-Taylor-14c919a7-4443-4bc7-8221-34a59cc3bfef.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://house.mo.gov/MemberPhoto.aspx?id=2217"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Tim_Taylor_(Missouri)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://house.mo.gov/MemberDetails.aspx?year=2021&code=R&district=048"
+    },
+    {
+      "title": "Public source",
+      "url": "https://house.mo.gov/MemberDetails.aspx?year=2023&code=R&district=048"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/193319/tim-taylor"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/timothy-taylor-4aba9773"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

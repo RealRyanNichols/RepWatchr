@@ -1,0 +1,72 @@
+{
+  "id": "nicole-grohoski",
+  "name": "Nicole Grohoski",
+  "firstName": "Nicole",
+  "lastName": "Grohoski",
+  "photo": "/images/officials/state-legislature/me/nicole-grohoski.jpg",
+  "photoSourceUrl": "https://legislature.maine.gov/uploads/visual_edit/senator-grohoski-photo-web.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-7",
+  "jurisdiction": "Maine Senate",
+  "county": [
+    "Maine"
+  ],
+  "termStart": "2022-07-06",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "3 State House Station, Augusta, ME 04333",
+    "phone": "207-287-1515",
+    "email": "nicole.grohoski@legislature.maine.gov",
+    "website": "https://legislature.maine.gov/district-7"
+  },
+  "bio": "Nicole Grohoski serves as State Senator for Maine Senate District 7. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "ME",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://legislature.maine.gov/district-7"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/me/legislature/Nicole-Grohoski-e53a09e6-a38e-4622-97e4-c40bf2d93faa.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://legislature.maine.gov/uploads/visual_edit/senator-grohoski-photo-web.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Nicole_Grohoski"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Nicole_Grohoski"
+    },
+    {
+      "title": "Public source",
+      "url": "https://legislature.maine.gov/district7"
+    },
+    {
+      "title": "Public source",
+      "url": "https://legislature.maine.gov/District7"
+    },
+    {
+      "title": "Public source",
+      "url": "https://legislature.maine.gov/house/house/MemberProfiles/Details/1387"
+    },
+    {
+      "title": "Public source",
+      "url": "https://legislature.maine.gov/house/house/MemberProfiles/ListAlpha"
+    },
+    {
+      "title": "Public source",
+      "url": "https://legislature.maine.gov/uploads/visual_edit/131-senator-contact-information-2.xlsx"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

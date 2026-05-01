@@ -1,0 +1,60 @@
+{
+  "id": "alonna-berry",
+  "name": "Alonna Berry",
+  "firstName": "Alonna",
+  "lastName": "Berry",
+  "photo": "/images/officials/state-legislature/de/alonna-berry.jpg",
+  "photoSourceUrl": "https://housedems.delaware.gov/wp-content/blogs.dir/210/files/sites/210/2025/08/Untitled-design-1-710x710.png",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-20",
+  "jurisdiction": "Delaware House of Representatives",
+  "county": [
+    "Delaware"
+  ],
+  "termStart": "2025-08-12",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "P.O. Box 1401 411 Legislative Ave., Dover, DE 19901",
+    "phone": "302-744-4351",
+    "email": "alonna.berry@delaware.gov",
+    "website": "https://housedems.delaware.gov/members/house-district-20/"
+  },
+  "bio": "Alonna Berry serves as State Representative for Delaware House of Representatives District 20. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "DE",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://housedems.delaware.gov/members/house-district-20/"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/de/legislature/Alonna-Berry-e9301c44-8042-4031-8ed0-4731c64a5a66.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://housedems.delaware.gov/wp-content/blogs.dir/210/files/sites/210/2025/08/Untitled-design-1-710x710.png"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Alonna_Berry"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Alonna_Berry"
+    },
+    {
+      "title": "Public source",
+      "url": "https://housedems.delaware.gov/members/house-district-20"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/alonna-b-468922186"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

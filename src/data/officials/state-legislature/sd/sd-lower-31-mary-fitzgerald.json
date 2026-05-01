@@ -1,0 +1,65 @@
+{
+  "id": "mary-fitzgerald",
+  "name": "Mary Fitzgerald",
+  "firstName": "Mary",
+  "lastName": "Fitzgerald",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-31",
+  "jurisdiction": "South Dakota House of Representatives",
+  "county": [
+    "South Dakota"
+  ],
+  "termStart": "2021-01-12",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Capitol Building 500 E. Capitol Ave., Pierre, SD 57501",
+    "phone": "605-773-3851",
+    "email": "mary.fitzgerald@sdlegislature.gov",
+    "website": "https://sdlegislature.gov/Legislators/Profile/3785/Detail"
+  },
+  "bio": "Mary Fitzgerald serves as State Representative for South Dakota House of Representatives District 31. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "SD",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://sdlegislature.gov/Legislators/Profile/3785/Detail"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/sd/legislature/Mary-J-Fitzgerald-e03644b8-7ddd-4ae0-a734-6f6e76e735ba.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Mary_Fitzgerald_(South_Dakota)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Mary_Fitzgerald_(politician)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/191469/mary-fitzgerald"
+    },
+    {
+      "title": "Public source",
+      "url": "https://sdlegislature.gov/Legislators/Profile/4358/Detail"
+    },
+    {
+      "title": "Public source",
+      "url": "https://sdlegislature.gov/Legislators/Profile/4607/Detail"
+    },
+    {
+      "title": "Public source",
+      "url": "https://sdlegislature.gov/Legislators/Profile/4750/Detail"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/mary-fitzgerald-658b6918"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

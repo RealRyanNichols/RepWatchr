@@ -1,0 +1,60 @@
+{
+  "id": "carson-smith",
+  "name": "Carson Smith",
+  "firstName": "Carson",
+  "lastName": "Smith",
+  "photo": "/images/officials/state-legislature/nc/carson-smith.jpg",
+  "photoSourceUrl": "https://www.ncleg.gov/Members/MemberImage/H/755/Low",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-16",
+  "jurisdiction": "North Carolina House of Representatives",
+  "county": [
+    "North Carolina"
+  ],
+  "termStart": "2019-01-01",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 410, Legislative Office Building 300 N. Salisbury St., Raleigh, NC 27603",
+    "phone": "919-715-9664",
+    "email": "carson.smith@ncleg.gov",
+    "website": "https://www.ncleg.gov/Members/Biography/H/755"
+  },
+  "bio": "Carson Smith serves as State Representative for North Carolina House of Representatives District 16. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "NC",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.ncleg.gov/Members/Biography/H/755"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/nc/legislature/Carson-Smith-6f78b8a8-f77c-4aef-bfa4-b3dac3312e33.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://www.ncleg.gov/Members/MemberImage/H/755/Low"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Carson_Smith_Jr."
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Carson_Smith_(politician)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/183362/carson-smith-jr"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.ncleg.gov/Members/MemberTable/H"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

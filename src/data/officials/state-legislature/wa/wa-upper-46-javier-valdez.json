@@ -1,0 +1,69 @@
+{
+  "id": "javier-valdez",
+  "name": "Javier Valdez",
+  "firstName": "Javier",
+  "lastName": "Valdez",
+  "party": "D",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-46",
+  "jurisdiction": "Washington Senate",
+  "county": [
+    "Washington"
+  ],
+  "termStart": "2023-01-09",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 226, John A. Cherberg Building P.O. Box 40446, Olympia, WA 98504",
+    "phone": "360-786-7690",
+    "email": "javier.valdez@leg.wa.gov",
+    "website": "https://housedemocrats.wa.gov/legislators/Javier-Valdez/"
+  },
+  "bio": "Javier Valdez serves as State Senator for Washington Senate District 46. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "WA",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://housedemocrats.wa.gov/legislators/Javier-Valdez/"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/wa/legislature/Javier-Valdez-aba2c522-236c-4553-bda2-c02d72e79981.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://app.leg.wa.gov/ContentParts/MemberDirectory/?a=House"
+    },
+    {
+      "title": "Public source",
+      "url": "https://app.leg.wa.gov/ContentParts/MemberDirectory/?a=Senate"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Javier_Valdez"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Javier_Valdez"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/176532/javier-valdez"
+    },
+    {
+      "title": "Public source",
+      "url": "https://leg.wa.gov/legislators/member/javier-valdez"
+    },
+    {
+      "title": "Public source",
+      "url": "https://senatedemocrats.wa.gov/valdez"
+    },
+    {
+      "title": "Public source",
+      "url": "https://senatedemocrats.wa.gov/valdez/"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

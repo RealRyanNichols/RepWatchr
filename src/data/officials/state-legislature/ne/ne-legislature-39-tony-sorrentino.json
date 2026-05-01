@@ -1,0 +1,53 @@
+{
+  "id": "tony-sorrentino",
+  "name": "Tony Sorrentino",
+  "firstName": "Tony",
+  "lastName": "Sorrentino",
+  "party": "NP",
+  "level": "state",
+  "position": "State Senator",
+  "district": "LD-39",
+  "jurisdiction": "Nebraska Legislature",
+  "county": [
+    "Nebraska"
+  ],
+  "termStart": "2025-01-08",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "State Capitol Room 1522, P.O. Box 94604, Lincoln, NE 68509",
+    "phone": "402-471-2885",
+    "email": "tsorrentino@leg.ne.gov",
+    "website": "https://nebraskalegislature.gov/senators/landing-pages/index.php?District=39"
+  },
+  "bio": "Tony Sorrentino serves as State Senator for Nebraska Legislature District 39. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "NE",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://nebraskalegislature.gov/senators/landing-pages/index.php?District=39"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ne/legislature/Tony-Sorrentino-7093e661-0dbc-4c75-91e0-09a3e171caf1.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Tony_Sorrentino"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Tony_Sorrentino"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/57687/tony-sorrentino"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/tony-sorrentino-jd-cpa"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

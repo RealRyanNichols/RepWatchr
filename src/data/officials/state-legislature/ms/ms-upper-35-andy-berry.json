@@ -1,0 +1,52 @@
+{
+  "id": "andy-berry",
+  "name": "Andy Berry",
+  "firstName": "Andy",
+  "lastName": "Berry",
+  "photo": "/images/officials/state-legislature/ms/andy-berry.jpg",
+  "photoSourceUrl": "https://billstatus.ls.state.ms.us/members/senate/Berry.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-35",
+  "jurisdiction": "Mississippi Senate",
+  "county": [
+    "Mississippi"
+  ],
+  "termStart": "2024-01-02",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "State Capitol 400 High St., Jackson, MS 39201",
+    "phone": "601-359-2886",
+    "email": "aberry@senate.ms.gov",
+    "website": "https://billstatus.ls.state.ms.us/members/senate/berry.xml"
+  },
+  "bio": "Andy Berry serves as State Senator for Mississippi Senate District 35. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "MS",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://billstatus.ls.state.ms.us/members/senate/berry.xml"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ms/legislature/Andy-Berry-80fca1ba-017c-4941-990c-a5e2ff34aea0.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://billstatus.ls.state.ms.us/members/senate/Berry.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Andy_Berry"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/andy-berry-031945130"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

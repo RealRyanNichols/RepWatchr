@@ -1,0 +1,51 @@
+{
+  "id": "dave-sunday",
+  "name": "Dave Sunday",
+  "firstName": "Dave",
+  "lastName": "Sunday",
+  "photo": "/images/officials/state-executive/pa/dave-sunday.jpg",
+  "photoSourceUrl": "https://www.naag.org/wp-content/uploads/2025/01/ag-PA-Sunday-2025.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "Attorney General",
+  "district": "Pennsylvania",
+  "jurisdiction": "Pennsylvania statewide public office",
+  "county": [
+    "Pennsylvania"
+  ],
+  "termStart": "2025-01-21",
+  "termEnd": "2029-01-16",
+  "contactInfo": {
+    "office": "Strawberry Square; Harrisburg, PA 17120",
+    "phone": "717-787-3391",
+    "website": "https://www.attorneygeneral.gov/"
+  },
+  "bio": "Dave Sunday is listed as Attorney General for Pennsylvania. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "PA",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.attorneygeneral.gov/"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/pa/executive/Dave-Sunday-d880fd50-7249-4f5d-b7d4-193a4ae8319e.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://www.naag.org/wp-content/uploads/2025/01/ag-PA-Sunday-2025.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Dave_Sunday"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.naag.org/attorney-general/dave-sunday/"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

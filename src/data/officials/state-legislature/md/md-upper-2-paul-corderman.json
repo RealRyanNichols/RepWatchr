@@ -1,0 +1,68 @@
+{
+  "id": "paul-corderman",
+  "name": "Paul Corderman",
+  "firstName": "Paul",
+  "lastName": "Corderman",
+  "photo": "/images/officials/state-legislature/md/paul-corderman.jpg",
+  "photoSourceUrl": "http://mgaleg.maryland.gov/2018RS/images/corderman01.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-2",
+  "jurisdiction": "Maryland Senate",
+  "county": [
+    "Maryland"
+  ],
+  "termStart": "2020-09-01",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 403, James Senate Office Building 11 Bladen St., Annapolis, MD 21401",
+    "phone": "410-841-3903",
+    "email": "paul.corderman@senate.maryland.gov",
+    "website": "https://mgaleg.maryland.gov/mgawebsite/Members/Details/corderman01"
+  },
+  "bio": "Paul Corderman serves as State Senator for Maryland Senate District 2. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "MD",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://mgaleg.maryland.gov/mgawebsite/Members/Details/corderman01"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/md/legislature/Paul-Corderman-6605f7aa-80cb-4ee0-8d0d-18cff943f158.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "http://mgaleg.maryland.gov/2018RS/images/corderman01.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Paul_Corderman"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Paul_D._Corderman"
+    },
+    {
+      "title": "Public source",
+      "url": "https://mgaleg.maryland.gov/mgawebsite/Members/Details/corderman02"
+    },
+    {
+      "title": "Public source",
+      "url": "https://mgaleg.maryland.gov/webmga/frmMain.aspx?pid=sponpage&tab=subject6&id=corderman01&stab=01"
+    },
+    {
+      "title": "Public source",
+      "url": "https://msa.maryland.gov/msa/mdmanual/05sen/html/msa17582.html"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/paul-corderman-5a011a8"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

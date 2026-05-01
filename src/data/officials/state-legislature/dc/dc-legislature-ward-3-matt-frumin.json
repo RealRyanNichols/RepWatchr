@@ -1,0 +1,73 @@
+{
+  "id": "matt-frumin",
+  "name": "Matt Frumin",
+  "firstName": "Matt",
+  "lastName": "Frumin",
+  "photo": "/images/officials/state-legislature/dc/matt-frumin.jpg",
+  "photoSourceUrl": "https://dccouncil.gov/wp-content/uploads/2023/01/Headshot1-scaled-75x75-c-default.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "Councilmember",
+  "district": "Ward 3",
+  "jurisdiction": "Council of the District of Columbia",
+  "county": [
+    "District of Columbia"
+  ],
+  "termStart": "2023-01-02",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "1350 Pennsylvania Ave. NW Suite 408, Washington, DC 20004",
+    "phone": "202-724-8062",
+    "email": "mfrumin@dccouncil.gov",
+    "website": "https://dccouncil.gov/council/ward-3-councilmember-matthew-frumin/",
+    "socialMedia": {
+      "x": "https://x.com/CMFrumin",
+      "twitter": "https://x.com/CMFrumin",
+      "facebook": "https://facebook.com/cmfrumin"
+    }
+  },
+  "bio": "Matt Frumin serves as Councilmember for Council of the District of Columbia District Ward 3. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "DC",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://dccouncil.gov/council/ward-3-councilmember-matthew-frumin/"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/dc/legislature/Matthew-Frumin-3451eb73-5042-4269-91b5-0287e527e72e.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://dccouncil.gov/wp-content/uploads/2023/01/Headshot1-scaled-75x75-c-default.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Matthew_Frumin"
+    },
+    {
+      "title": "Public source",
+      "url": "https://dccouncil.gov/council/ward-3-councilmember-matthew-frumin"
+    },
+    {
+      "title": "Public source",
+      "url": "https://dccouncil.us/councilmembers"
+    },
+    {
+      "title": "Public source",
+      "url": "https://dccouncil.us/councilmembers/"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Matthew_Frumin"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/matthew-frumin-75990745"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

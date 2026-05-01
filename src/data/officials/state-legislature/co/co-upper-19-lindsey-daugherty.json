@@ -1,0 +1,53 @@
+{
+  "id": "lindsey-daugherty",
+  "name": "Lindsey Daugherty",
+  "firstName": "Lindsey",
+  "lastName": "Daugherty",
+  "party": "D",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-19",
+  "jurisdiction": "Colorado Senate",
+  "county": [
+    "Colorado"
+  ],
+  "termStart": "2025-01-08",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "State Capitol Room 346, Colorado  Building 200 E. Colfax Ave., Denver, CO 80203",
+    "phone": "303-866-4840",
+    "email": "lindsey.daugherty.senate@coleg.gov",
+    "website": "https://leg.colorado.gov/legislators/lindsey-daugherty"
+  },
+  "bio": "Lindsey Daugherty serves as State Senator for Colorado Senate District 19. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "CO",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://leg.colorado.gov/legislators/lindsey-daugherty"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/co/legislature/Lindsey-Daugherty-2de0a3a1-a1e3-477f-88b9-3212fa52fb9c.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Lindsey_Daugherty"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Lindsey_Daugherty"
+    },
+    {
+      "title": "Public source",
+      "url": "https://leg.colorado.gov/legislators"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/lindsey-daugherty-6396aa21"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

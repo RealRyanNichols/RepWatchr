@@ -1,0 +1,55 @@
+{
+  "id": "nick-brown",
+  "name": "Nick Brown",
+  "firstName": "Nick",
+  "lastName": "Brown",
+  "photo": "/images/officials/state-executive/wa/nick-brown.jpg",
+  "photoSourceUrl": "https://www.naag.org/wp-content/uploads/2025/01/ag-WA-Brown-Nick.png",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "Attorney General",
+  "district": "Washington",
+  "jurisdiction": "Washington statewide public office",
+  "county": [
+    "Washington"
+  ],
+  "termStart": "2025-01-13",
+  "termEnd": "2029-01-08",
+  "contactInfo": {
+    "office": "1125 Washington St. SE, P.O. Box 40100; Olympia, WA 98504-0100",
+    "phone": "360-753-6200",
+    "website": "https://www.atg.wa.gov/"
+  },
+  "bio": "Nick Brown is listed as Attorney General for Washington. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "WA",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.atg.wa.gov/"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/wa/executive/Nick-Brown-4816d75e-eac4-4ff8-8270-fb79324b93c8.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://www.naag.org/wp-content/uploads/2025/01/ag-WA-Brown-Nick.png"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.atg.wa.gov/about-nick-brown"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Nick_Brown_(Washington)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.naag.org/attorney-general/nick-brown/"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

@@ -1,0 +1,64 @@
+{
+  "id": "peggy-scott",
+  "name": "Peggy Scott",
+  "firstName": "Peggy",
+  "lastName": "Scott",
+  "photo": "/images/officials/state-legislature/mn/peggy-scott.jpg",
+  "photoSourceUrl": "https://www.house.mn.gov/hinfo/memberimgls94/31B.gif?v=112221",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-31B",
+  "jurisdiction": "Minnesota House of Representatives",
+  "county": [
+    "Minnesota"
+  ],
+  "termStart": "2023-01-03",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Centennial Office Building 658 Cedar St., Second Floor, St. Paul, MN 55155",
+    "phone": "651-296-4231",
+    "email": "rep.peggy.scott@house.mn.gov",
+    "website": "https://www.house.mn.gov/members/profile/15314"
+  },
+  "bio": "Peggy Scott serves as State Representative for Minnesota House of Representatives District 31B. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "MN",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.house.mn.gov/members/profile/15314"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/mn/legislature/Peggy-Scott-75f1b339-bd9f-4f7c-820b-75812553bde0.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://www.house.mn.gov/hinfo/memberimgls94/31B.gif?v=112221"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Peggy_Scott"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Peggy_Scott_(politician)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/109239/peggy-scott"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.house.leg.state.mn.us/members/hmem.asp"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/peggy-scott-55a66b44"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

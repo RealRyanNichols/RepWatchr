@@ -1,0 +1,41 @@
+{
+  "id": "rex-wilson",
+  "name": "Rex Wilson",
+  "firstName": "Rex",
+  "lastName": "Wilson",
+  "party": "R",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-33",
+  "jurisdiction": "New Mexico Senate",
+  "county": [
+    "New Mexico"
+  ],
+  "termStart": "2026-01-12",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "State Capitol Room 415F, New Mexico  490 Old Santa Fe Trail, Santa Fe, NM 87501",
+    "phone": "505-986-4395",
+    "email": "rex.wilson@nmlegis.gov",
+    "website": "https://www.nmlegis.gov/Members/Legislator?SponCode=SWIRE"
+  },
+  "bio": "Rex Wilson serves as State Senator for New Mexico Senate District 33. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "NM",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.nmlegis.gov/Members/Legislator?SponCode=SWIRE"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/nm/legislature/Rex-Wilson-0884aac3-cddb-4374-88e1-94bf623410f3.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Rex_Wilson"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

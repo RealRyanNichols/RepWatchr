@@ -1,0 +1,56 @@
+{
+  "id": "michele-meyer",
+  "name": "Michele Meyer",
+  "firstName": "Michele",
+  "lastName": "Meyer",
+  "photo": "/images/officials/state-legislature/me/michele-meyer.jpg",
+  "photoSourceUrl": "https://legislature.maine.gov/house/house/Repository/MemberProfiles/b1004d88-844a-4d6d-9e4a-e6a329b430c9_meyer.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-150",
+  "jurisdiction": "Maine House of Representatives",
+  "county": [
+    "Maine"
+  ],
+  "termStart": "2022-12-07",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 333, House Democratic Office 2 State House Station, Augusta, ME 04333",
+    "phone": "800-423-2900",
+    "email": "michele.meyer@legislature.maine.gov",
+    "website": "https://legislature.maine.gov/house/house/MemberProfiles/Details/1337"
+  },
+  "bio": "Michele Meyer serves as State Representative for Maine House of Representatives District 150. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "ME",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://legislature.maine.gov/house/house/MemberProfiles/Details/1337"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/me/legislature/Michele-Meyer-e26fdc8a-3099-4ea4-ad2d-1ccdc45ce1e6.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://legislature.maine.gov/house/house/Repository/MemberProfiles/b1004d88-844a-4d6d-9e4a-e6a329b430c9_meyer.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Michele_Meyer_(Maine)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/181154/michele-meyer"
+    },
+    {
+      "title": "Public source",
+      "url": "https://legislature.maine.gov/house/house/MemberProfiles/ListAlpha"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

@@ -1,0 +1,72 @@
+{
+  "id": "laura-hall",
+  "name": "Laura Hall",
+  "firstName": "Laura",
+  "lastName": "Hall",
+  "photo": "/images/officials/state-legislature/al/laura-hall.jpg",
+  "photoSourceUrl": "https://www.legislature.state.al.us/pdf/house/members/Hall_19.png",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-19",
+  "jurisdiction": "Alabama House of Representatives",
+  "county": [
+    "Alabama"
+  ],
+  "termStart": "",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 517-D, 11 S. Union St., Montgomery, AL 36130",
+    "phone": "334-261-0517",
+    "email": "laura.hall@alhouse.org",
+    "website": "https://alison.legislature.state.al.us/house-leaders-members"
+  },
+  "bio": "Laura Hall serves as State Representative for Alabama House of Representatives District 19. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "AL",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://alison.legislature.state.al.us/house-leaders-members"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/al/legislature/Laura-Hall-9314859d-000f-447c-9aa7-4993b13e8010.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://www.legislature.state.al.us/pdf/house/members/Hall_19.png"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Laura_Hall_(Alabama)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Laura_Hall_(politician)"
+    },
+    {
+      "title": "graphql endpoint for member information",
+      "url": "https://gql.api.alison.legislature.state.al.us/graphql"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/5652/laura-hall"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.legislature.state.al.us/aliswww/ISD/ALRepresentative.aspx?NAME=Hall&OID_SPONSOR=100499&OID_PERSON=1068&SESSNAME="
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.legislature.state.al.us/aliswww/ISD/ALRepresentative.aspx?OID_SPONSOR=100499&OID_PERSON=1068"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.legislature.state.al.us/aliswww/ISD/House/ALRepresentatives.aspx"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

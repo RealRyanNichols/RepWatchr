@@ -1,0 +1,60 @@
+{
+  "id": "bernie-perryman",
+  "name": "Bernie Perryman",
+  "firstName": "Bernie",
+  "lastName": "Perryman",
+  "photo": "/images/officials/state-legislature/mn/bernie-perryman.jpg",
+  "photoSourceUrl": "https://www.house.mn.gov/hinfo/memberimgls94/14A.gif?v=112221",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-14A",
+  "jurisdiction": "Minnesota House of Representatives",
+  "county": [
+    "Minnesota"
+  ],
+  "termStart": "2023-01-03",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Centennial Office Building 658 Cedar St., Second Floor, St. Paul, MN 55155",
+    "phone": "651-296-6316",
+    "email": "rep.bernie.perryman@house.mn.gov",
+    "website": "https://www.house.mn.gov/members/profile/15599"
+  },
+  "bio": "Bernie Perryman serves as State Representative for Minnesota House of Representatives District 14A. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "MN",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.house.mn.gov/members/profile/15599"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/mn/legislature/Bernie-Perryman-354e366b-b9b5-46b4-b9ce-f3d96f508ceb.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://www.house.mn.gov/hinfo/memberimgls94/14A.gif?v=112221"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Bernie_Perryman"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Bernie_Perryman"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.house.leg.state.mn.us/members/hmem.asp"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/bernie-perryman-452aba38"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

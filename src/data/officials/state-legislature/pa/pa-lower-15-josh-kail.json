@@ -1,0 +1,73 @@
+{
+  "id": "josh-kail",
+  "name": "Josh Kail",
+  "firstName": "Josh",
+  "lastName": "Kail",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-15",
+  "jurisdiction": "Pennsylvania House of Representatives",
+  "county": [
+    "Pennsylvania"
+  ],
+  "termStart": "2018-12-01",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 218, Ryan Office Building P.O. Box 202015, Harrisburg, PA 17120",
+    "phone": "717-260-6144",
+    "email": "jkail@pahousegop.com",
+    "website": "https://www.legis.state.pa.us/cfdocs/legis/home/member_information/House_bio.cfm?id=1823",
+    "socialMedia": {
+      "facebook": "https://facebook.com/RepKail",
+      "youtube": "https://youtube.com/UCpzQL17DfPDyIgOebGq3Zjg"
+    }
+  },
+  "bio": "Josh Kail serves as State Representative for Pennsylvania House of Representatives District 15. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "PA",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.legis.state.pa.us/cfdocs/legis/home/member_information/House_bio.cfm?id=1823"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/pa/legislature/Joshua-D-Kail-fbb14b8a-8940-4679-9ed8-3ec48096a3a2.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Joshua_Kail"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Josh_Kail"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/179211/joshua-kail"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.legis.state.pa.us/cfdocs/legis/home/member_information/mbrList.cfm?body=H&sort=alpha"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.legis.state.pa.us/cfdocs/legis/home/member_information/representatives_alpha.cfm"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/joshua-d-kail-55271724"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.palegis.us/house/members/bio/1823/rep-kail"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.repkail.com"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

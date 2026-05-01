@@ -1,0 +1,70 @@
+{
+  "id": "regina-young",
+  "name": "Regina Young",
+  "firstName": "Regina",
+  "lastName": "Young",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-185",
+  "jurisdiction": "Pennsylvania House of Representatives",
+  "county": [
+    "Pennsylvania"
+  ],
+  "termStart": "2020-12-01",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 105A, East Wing P.O. Box 202185, Harrisburg, PA 17120",
+    "phone": "717-783-8634",
+    "email": "repyoung@pahouse.net",
+    "website": "https://www.legis.state.pa.us/cfdocs/legis/home/member_information/House_bio.cfm?id=1917",
+    "socialMedia": {
+      "x": "https://x.com/RepReginaYoung",
+      "twitter": "https://x.com/RepReginaYoung",
+      "facebook": "https://facebook.com/RepReginaYoung"
+    }
+  },
+  "bio": "Regina Young serves as State Representative for Pennsylvania House of Representatives District 185. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "PA",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.legis.state.pa.us/cfdocs/legis/home/member_information/House_bio.cfm?id=1917"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/pa/legislature/Regina-G-Young-a737f4d4-5b45-469b-8d51-98c7aa78183a.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Regina_Young"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Regina_Young"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.legis.state.pa.us/cfdocs/legis/home/member_information/mbrList.cfm?body=H&sort=alpha"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.legis.state.pa.us/cfdocs/legis/home/member_information/representatives_alpha.cfm"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/regina-young-7b839a34"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.pahouse.com/Young"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.palegis.us/house/members/bio/1917/rep-young"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

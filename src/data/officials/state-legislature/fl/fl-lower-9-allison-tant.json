@@ -1,0 +1,61 @@
+{
+  "id": "allison-tant",
+  "name": "Allison Tant",
+  "firstName": "Allison",
+  "lastName": "Tant",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-9",
+  "jurisdiction": "Florida House of Representatives",
+  "county": [
+    "Florida"
+  ],
+  "termStart": "2020-11-03",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 329, The Capitol 402 S. Monroe St., Tallahassee, FL 32399",
+    "phone": "850-717-5009",
+    "email": "allison.tant@flhouse.gov",
+    "website": "https://myfloridahouse.gov/Sections/Representatives/details.aspx?MemberId=4765&LegislativeTermId=90"
+  },
+  "bio": "Allison Tant serves as State Representative for Florida House of Representatives District 9. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "FL",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://myfloridahouse.gov/Sections/Representatives/details.aspx?MemberId=4765&LegislativeTermId=90"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/fl/legislature/Allison-Tant-c26599eb-5ef8-44c3-93a6-77cf23a9567e.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Allison_Tant"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.flhouse.gov/Sections/Representatives/custom/details.aspx?MemberId=4765"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.flhouse.gov/Sections/Representatives/details.aspx?MemberId=4765"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/allison-tant-b1b90b89"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.myfloridahouse.gov/Sections/Representatives/details.aspx?MemberId=4765"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.myfloridahouse.gov/Sections/Representatives/details.aspx?MemberId=4765&LegislativeTermId=89"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

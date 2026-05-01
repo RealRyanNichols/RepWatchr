@@ -1,0 +1,61 @@
+{
+  "id": "sade-elhawary",
+  "name": "Sade Elhawary",
+  "firstName": "Sade",
+  "lastName": "Elhawary",
+  "party": "D",
+  "level": "state",
+  "position": "Assemblymember",
+  "district": "HD-57",
+  "jurisdiction": "California State Assembly",
+  "county": [
+    "California"
+  ],
+  "termStart": "2024-12-02",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 6320, 1021 O St. P.O. Box 942849, Sacramento, CA 94249",
+    "phone": "916-319-2057",
+    "email": "assemblymember.elhawary@assembly.ca.gov",
+    "website": "https://a57.asmdc.org/"
+  },
+  "bio": "Sade Elhawary serves as Assemblymember for California State Assembly District 57. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "CA",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://a57.asmdc.org/"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ca/legislature/Sade-Elhawary-6d83a613-6815-48c9-bb31-94adb1ee92ea.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://a57.asmdc.org"
+    },
+    {
+      "title": "Public source",
+      "url": "https://a57.asmdc.org/biography"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Sade_Elhawary"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Sade_Elhawary"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.assembly.ca.gov/assemblymembers/57"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/sadeelhawary"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

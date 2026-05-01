@@ -1,0 +1,44 @@
+{
+  "id": "pamela-evette",
+  "name": "Pamela Evette",
+  "firstName": "Pamela",
+  "lastName": "Evette",
+  "party": "R",
+  "level": "state",
+  "position": "Lieutenant Governor",
+  "district": "South Carolina",
+  "jurisdiction": "South Carolina statewide public office",
+  "county": [
+    "South Carolina"
+  ],
+  "termStart": "2019-01-09",
+  "termEnd": "2027-01-13",
+  "contactInfo": {
+    "office": "State House, 1100 Gervais Street; Columbia, SC 29201",
+    "phone": "803-734-2100",
+    "website": "https://governor.sc.gov/lieutenant-governor"
+  },
+  "bio": "Pamela Evette is listed as Lieutenant Governor for South Carolina. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "SC",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://governor.sc.gov/lieutenant-governor"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/sc/executive/Pamela-Evette-f96c83a2-ed1e-4ff6-b5a7-7bb83afdf2df.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://contactgovernor.my.site.com/constituents/s/contact-the-governor"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Pamela_Evette"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

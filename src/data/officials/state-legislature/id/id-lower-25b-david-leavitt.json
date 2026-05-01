@@ -1,0 +1,64 @@
+{
+  "id": "david-leavitt",
+  "name": "David Leavitt",
+  "firstName": "David",
+  "lastName": "Leavitt",
+  "photo": "/images/officials/state-legislature/id/david-leavitt.jpg",
+  "photoSourceUrl": "https://legislature.idaho.gov/wp-content/uploads/sessioninfo/2025/directory/Leavitt9426.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-25B",
+  "jurisdiction": "Idaho House of Representatives",
+  "county": [
+    "Idaho"
+  ],
+  "termStart": "2024-12-01",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "P.O. Box 83720 700 W. Jefferson St., Boise, ID 83720",
+    "phone": "208-332-1182",
+    "email": "dleavitt@house.idaho.gov",
+    "website": "https://legislature.idaho.gov/legislators/membership/2025/id9426/"
+  },
+  "bio": "David Leavitt serves as State Representative for Idaho House of Representatives District 25B. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "ID",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://legislature.idaho.gov/legislators/membership/2025/id9426/"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/id/legislature/David-Leavitt-140cefcc-8d67-4b5d-9051-c7892072bc38.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://legislature.idaho.gov/wp-content/uploads/sessioninfo/2025/directory/Leavitt9426.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/David_Leavitt_(Idaho)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/David_Leavitt_(politician)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://leavitt4idaho.com"
+    },
+    {
+      "title": "Public source",
+      "url": "https://legislature.idaho.gov/legislators/membership/2025/id9426"
+    },
+    {
+      "title": "Public source",
+      "url": "https://legislature.idaho.gov/legislators/membership/2026/id9426"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

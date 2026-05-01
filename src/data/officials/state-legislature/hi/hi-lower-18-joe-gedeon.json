@@ -1,0 +1,45 @@
+{
+  "id": "joe-gedeon",
+  "name": "Joe Gedeon",
+  "firstName": "Joe",
+  "lastName": "Gedeon",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-18",
+  "jurisdiction": "Hawaii House of Representatives",
+  "county": [
+    "Hawaii"
+  ],
+  "termStart": "2025-05-28",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "State Capitol Room 319, 415 S. Beretania St., Honolulu, HI 96813",
+    "phone": "808-586-6420",
+    "email": "repgedeon@capitol.hawaii.gov",
+    "website": "https://www.capitol.hawaii.gov/legislature/memberpage.aspx?member=309"
+  },
+  "bio": "Joe Gedeon serves as State Representative for Hawaii House of Representatives District 18. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "HI",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.capitol.hawaii.gov/legislature/memberpage.aspx?member=309"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/hi/legislature/Joe-Gedeon-06d54403-a57b-40f8-96a6-94b58f4b2a0c.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Joe_Gedeon"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/joegedeon"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

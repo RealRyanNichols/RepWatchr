@@ -1,0 +1,69 @@
+{
+  "id": "manny-de-los-santos",
+  "name": "Manny De Los Santos",
+  "firstName": "Manny",
+  "lastName": "De Los Santos",
+  "photo": "/images/officials/state-legislature/ny/manny-de-los-santos.jpg",
+  "photoSourceUrl": "https://assembly.state.ny.us/write/upload/member_files/072/headshot/072.jpg?hst=1660073911",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "Assemblymember",
+  "district": "HD-72",
+  "jurisdiction": "New York State Assembly",
+  "county": [
+    "New York"
+  ],
+  "termStart": "2022-02-17",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 454, Legislative Office Building, Albany, NY 12248",
+    "phone": "518-455-5807",
+    "email": "delossm@nyassembly.gov",
+    "website": "https://assembly.state.ny.us/mem/Manny-De-Los-Santos",
+    "socialMedia": {
+      "x": "https://x.com/AMDeLosSantos72",
+      "twitter": "https://x.com/AMDeLosSantos72",
+      "facebook": "https://facebook.com/AssemblymanMannyDeLosSantos"
+    }
+  },
+  "bio": "Manny De Los Santos serves as Assemblymember for New York State Assembly District 72. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "NY",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://assembly.state.ny.us/mem/Manny-De-Los-Santos"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ny/legislature/Manny-De-Los-Santos-e9e827d2-5eb7-4c53-bec7-d6a9fdef82fa.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://assembly.state.ny.us/write/upload/member_files/072/headshot/072.jpg?hst=1660073911"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Manny_De_Los_Santos"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Manny_De_Los_Santos"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/155417/manny-de-los-santos"
+    },
+    {
+      "title": "Public source",
+      "url": "https://nyassembly.gov/mem/Manny-De-Los-Santos"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/manny-de-los-santos-4b6a94aa"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

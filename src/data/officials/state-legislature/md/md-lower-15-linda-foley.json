@@ -1,0 +1,60 @@
+{
+  "id": "linda-foley",
+  "name": "Linda Foley",
+  "firstName": "Linda",
+  "lastName": "Foley",
+  "photo": "/images/officials/state-legislature/md/linda-foley.jpg",
+  "photoSourceUrl": "https://mgaleg.maryland.gov/2022RS/images/foley01.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "Delegate",
+  "district": "HD-15",
+  "jurisdiction": "Maryland House of Delegates",
+  "county": [
+    "Maryland"
+  ],
+  "termStart": "2021-12-17",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 220, House Office Building 6 Bladen St., Annapolis, MD 21401",
+    "phone": "410-841-3052",
+    "email": "linda.foley@house.maryland.gov",
+    "website": "https://mgaleg.maryland.gov/mgawebsite/Members/Details/foley01"
+  },
+  "bio": "Linda Foley serves as Delegate for Maryland House of Delegates District 15. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "MD",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://mgaleg.maryland.gov/mgawebsite/Members/Details/foley01"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/md/legislature/Linda-Foley-9858db06-ec0e-40fe-b000-0630238a6ad1.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://mgaleg.maryland.gov/2022RS/images/foley01.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Linda_Foley"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Linda_Foley"
+    },
+    {
+      "title": "Public source",
+      "url": "https://msa.maryland.gov/msa/mdmanual/06hse/html/msa18326.html"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/lindakfoley"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

@@ -1,0 +1,65 @@
+{
+  "id": "fawn-pedalino",
+  "name": "Fawn Pedalino",
+  "firstName": "Fawn",
+  "lastName": "Pedalino",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-64",
+  "jurisdiction": "South Carolina House of Representatives",
+  "county": [
+    "South Carolina"
+  ],
+  "termStart": "2022-11-14",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 418D, Blatt Building P.O. Box 11867, Columbia, SC 29201",
+    "phone": "803-212-6929",
+    "email": "fawnpedalino@schouse.gov",
+    "website": "https://scstatehouse.gov/member.php?code=1453408917"
+  },
+  "bio": "Fawn Pedalino serves as State Representative for South Carolina House of Representatives District 64. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "SC",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://scstatehouse.gov/member.php?code=1453408917"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/sc/legislature/Fawn-M-Pedalino-5861846a-d293-416f-b5ab-227f8fd12b94.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Fawn_Pedalino"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Fawn_Pedalino"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/205457/fawn-pedalino"
+    },
+    {
+      "title": "Public source",
+      "url": "https://scstatehouse.gov/member.php?chamber=H"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.fawnsc.com/about"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/fawn-pedalino-319793311"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.scstatehouse.gov/member.php?code=1453408917"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

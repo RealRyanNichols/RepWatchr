@@ -1,0 +1,41 @@
+{
+  "id": "chanel-mosley",
+  "name": "Chanel Mosley",
+  "firstName": "Chanel",
+  "lastName": "Mosley",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-75",
+  "jurisdiction": "Missouri House of Representatives",
+  "county": [
+    "Missouri"
+  ],
+  "termStart": "2025-01-08",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 105-I, 201 W. Capitol Ave., Jefferson City, MO 65101",
+    "phone": "573-751-5538",
+    "email": "chanel.mosley@house.mo.gov",
+    "website": "https://house.mo.gov/MemberDetails.aspx?&district=075"
+  },
+  "bio": "Chanel Mosley serves as State Representative for Missouri House of Representatives District 75. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "MO",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://house.mo.gov/MemberDetails.aspx?&district=075"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/mo/legislature/Chanel-Mosley-ef435f26-5456-4e1b-9d53-16d972983db0.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Chanel_Mosley"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

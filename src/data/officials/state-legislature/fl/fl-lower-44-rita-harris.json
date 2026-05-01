@@ -1,0 +1,57 @@
+{
+  "id": "rita-harris",
+  "name": "Rita Harris",
+  "firstName": "Rita",
+  "lastName": "Harris",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-44",
+  "jurisdiction": "Florida House of Representatives",
+  "county": [
+    "Florida"
+  ],
+  "termStart": "2022-11-08",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 1102, The Capitol 402 S. Monroe St., Tallahassee, FL 32399",
+    "phone": "850-717-5044",
+    "email": "rita.harris@flhouse.gov",
+    "website": "https://myfloridahouse.gov/Sections/Representatives/details.aspx?MemberId=4877&LegislativeTermId=90"
+  },
+  "bio": "Rita Harris serves as State Representative for Florida House of Representatives District 44. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "FL",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://myfloridahouse.gov/Sections/Representatives/details.aspx?MemberId=4877&LegislativeTermId=90"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/fl/legislature/Jennifer-Rita-Harris-ca476441-7c7a-4f21-ba55-207c21a7d51d.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Jennifer_Harris"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.flhouse.gov/Sections/Representatives/custom/details.aspx?MemberId=4877"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.flhouse.gov/Sections/Representatives/details.aspx?MemberId=4877"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.myfloridahouse.gov/Sections/Representatives/details.aspx?MemberId=4877&LegislativeTermId=90"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.ritaforflorida.com"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

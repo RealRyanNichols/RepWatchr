@@ -1,0 +1,69 @@
+{
+  "id": "kenny-titus",
+  "name": "Kenny Titus",
+  "firstName": "Kenny",
+  "lastName": "Titus",
+  "party": "R",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-18",
+  "jurisdiction": "Kansas Senate",
+  "county": [
+    "Kansas"
+  ],
+  "termStart": "2025-01-13",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "State Capitol Room 124-E, Kansas  Building 300 SW 10th St., Topeka, KS 66612",
+    "phone": "785-296-7656",
+    "email": "kenny.titus@senate.ks.gov",
+    "website": "https://www.kslegislature.gov/li/b2025_26/members/sen_titus_kenny_1/"
+  },
+  "bio": "Kenny Titus serves as State Senator for Kansas Senate District 18. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "KS",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.kslegislature.gov/li/b2025_26/members/sen_titus_kenny_1/"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ks/legislature/Kenny-Titus-8a353296-bd2d-4fd6-b1b9-d8b3c8b3f771.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Kenny_Titus"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Kenny_Titus"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/208090/kenny-titus"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.kslegislature.gov/li/b2025_26/members/sen_titus_kenny_1"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.kslegislature.org/li/api/v11/rev-1/members/rep_titus_kenny_1"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.kslegislature.org/li/api/v11/rev-1/members/rep_titus_kenny_1/"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.kslegislature.org/li/b2023_24/members/rep_titus_kenny_1"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.kslegislature.org/li/b2023_24/members/rep_titus_kenny_1/"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

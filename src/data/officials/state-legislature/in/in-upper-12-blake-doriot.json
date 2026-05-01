@@ -1,0 +1,72 @@
+{
+  "id": "blake-doriot",
+  "name": "Blake Doriot",
+  "firstName": "Blake",
+  "lastName": "Doriot",
+  "photo": "/images/officials/state-legislature/in/blake-doriot.jpg",
+  "photoSourceUrl": "https://cdn.zephyrcms.com/6e687e05-6d5e-450b-a8b4-f08c648001c2/-/progressive/yes/-/format/jpeg/-/scale_crop/200x300/center/-/stretch/off/doriot-website.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-12",
+  "jurisdiction": "Indiana Senate",
+  "county": [
+    "Indiana"
+  ],
+  "termStart": "2016-11-09",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "200 W. Washington St., Indianapolis, IN 46204",
+    "phone": "317-232-9400",
+    "email": "s12@iga.in.gov",
+    "website": "https://iga.in.gov/legislative/2021/legislators/legislator_blake_doriot_1"
+  },
+  "bio": "Blake Doriot serves as State Senator for Indiana Senate District 12. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "IN",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://iga.in.gov/legislative/2021/legislators/legislator_blake_doriot_1"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/in/legislature/Blake-Doriot-a1002ff1-ffd8-4d82-8db9-3a8295ca5e06.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://cdn.zephyrcms.com/6e687e05-6d5e-450b-a8b4-f08c648001c2/-/progressive/yes/-/format/jpeg/-/scale_crop/200x300/center/-/stretch/off/doriot-website.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://api.iga.in.gov/2021/legislators/blake_doriot_1"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Blake_Doriot"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Blake_Doriot"
+    },
+    {
+      "title": "Public source",
+      "url": "https://iga.in.gov/legislative/2022/legislators/legislator_blake_doriot_1"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/167534/blake-doriot"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.indianasenaterepublicans.com/doriot"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.indianasenaterepublicans.com/senators"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

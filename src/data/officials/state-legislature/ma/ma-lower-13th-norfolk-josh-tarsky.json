@@ -1,0 +1,60 @@
+{
+  "id": "josh-tarsky",
+  "name": "Josh Tarsky",
+  "firstName": "Josh",
+  "lastName": "Tarsky",
+  "photo": "/images/officials/state-legislature/ma/josh-tarsky.jpg",
+  "photoSourceUrl": "https://malegislature.gov/Legislators/Profile/170/J_T1.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-13th Norfolk",
+  "jurisdiction": "Massachusetts House of Representatives",
+  "county": [
+    "Massachusetts"
+  ],
+  "termStart": "2025-01-01",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 448, State House 24 Beacon St., Boston, MA 02133",
+    "phone": "617-722-2582",
+    "email": "joshua.tarsky@mahouse.gov",
+    "website": "https://malegislature.gov/Legislators/Profile/J_T1"
+  },
+  "bio": "Josh Tarsky serves as State Representative for Massachusetts House of Representatives District 13th Norfolk. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "MA",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://malegislature.gov/Legislators/Profile/J_T1"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ma/legislature/Josh-Tarsky-9c847f4f-a48b-4d42-95cb-2b6a219f89ac.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://malegislature.gov/Legislators/Profile/170/J_T1.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Joshua_Tarsky"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Joshua_Tarsky"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/218946/joshua-tarsky"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/josh-tarsky-aa94b530"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

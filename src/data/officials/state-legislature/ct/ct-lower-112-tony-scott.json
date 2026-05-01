@@ -1,0 +1,72 @@
+{
+  "id": "tony-scott",
+  "name": "Tony Scott",
+  "firstName": "Tony",
+  "lastName": "Scott",
+  "photo": "/images/officials/state-legislature/ct/tony-scott.jpg",
+  "photoSourceUrl": "https://cga.ct.gov/legpics/112.png?ver=",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-112",
+  "jurisdiction": "Connecticut House of Representatives",
+  "county": [
+    "Connecticut"
+  ],
+  "termStart": "2021-04-19",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 4200, Legislative Office Building 300 Capitol Ave., Hartford, CT 06106",
+    "phone": "800-842-1423",
+    "email": "tony.scott@housegop.ct.gov",
+    "website": "https://cga.ct.gov/asp/CGABillStatus/CGAMemberBills.asp?dist_code=%27112%27&dist_name=Scott,%20Tony%20J"
+  },
+  "bio": "Tony Scott serves as State Representative for Connecticut House of Representatives District 112. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "CT",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://cga.ct.gov/asp/CGABillStatus/CGAMemberBills.asp?dist_code=%27112%27&dist_name=Scott,%20Tony%20J"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ct/legislature/Tony-Scott-bc3200fa-f97b-433f-bb0b-ac15f71b2e92.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://cga.ct.gov/legpics/112.png?ver="
+    },
+    {
+      "title": "Public source",
+      "url": "ftp://ftp.cga.ct.gov/pub/data/LegislatorDatabase.csv"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Tony_Scott"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Tony_Scott_(politician)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/195887/tony-scott"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.cthousegop.com/Scott"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.cthousegop.com/Scott/"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/tonyjscott"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

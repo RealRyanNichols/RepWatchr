@@ -1,0 +1,72 @@
+{
+  "id": "rachel-ventura",
+  "name": "Rachel Ventura",
+  "firstName": "Rachel",
+  "lastName": "Ventura",
+  "photo": "/images/officials/state-legislature/il/rachel-ventura.jpg",
+  "photoSourceUrl": "https://cdn.ilga.gov/assets/img/members/{F4164483-CA9E-423B-ADF4-FA52EE9A3F08}.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-43",
+  "jurisdiction": "Illinois Senate",
+  "county": [
+    "Illinois"
+  ],
+  "termStart": "2023-01-11",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 119 B, Capitol Building, Springfield, IL 62706",
+    "phone": "217-782-8800",
+    "email": "info@senatorventura.com",
+    "website": "https://ilga.gov/senate/Senator.asp?GA=103&MemberID=3214"
+  },
+  "bio": "Rachel Ventura serves as State Senator for Illinois Senate District 43. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "IL",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://ilga.gov/senate/Senator.asp?GA=103&MemberID=3214"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/il/legislature/Rachel-Ventura-ed666567-961a-43f1-8ca3-ddd29e07f8af.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://cdn.ilga.gov/assets/img/members/{F4164483-CA9E-423B-ADF4-FA52EE9A3F08}.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Rachel_Ventura"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Rachel_Ventura"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ilga.gov/senate/default.asp?GA=103"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.ilga.gov/Senate/Members/Details/3409"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.ilga.gov/senate/Senator.asp?GA=103&MemberID=3214"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.ilga.gov/senate/Senator.asp?GA=104&MemberID=3409"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/electventura"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

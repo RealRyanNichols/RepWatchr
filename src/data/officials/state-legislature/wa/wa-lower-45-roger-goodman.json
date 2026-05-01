@@ -1,0 +1,72 @@
+{
+  "id": "roger-goodman",
+  "name": "Roger Goodman",
+  "firstName": "Roger",
+  "lastName": "Goodman",
+  "photo": "/images/officials/state-legislature/wa/roger-goodman.jpg",
+  "photoSourceUrl": "https://leg.wa.gov/memberphoto/11999.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-45",
+  "jurisdiction": "Washington House of Representatives",
+  "county": [
+    "Washington"
+  ],
+  "termStart": "2007-01-08",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 436B, Legislative Building P.O. Box 40600, Olympia, WA 98504",
+    "phone": "360-786-7878",
+    "email": "roger.goodman@leg.wa.gov",
+    "website": "https://housedemocrats.wa.gov/Goodman/"
+  },
+  "bio": "Roger Goodman serves as State Representative for Washington House of Representatives District 45. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "WA",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://housedemocrats.wa.gov/Goodman/"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/wa/legislature/Roger-Goodman-c9908a1e-4d33-45e2-9caa-ace8a8232d7e.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://leg.wa.gov/memberphoto/11999.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://app.leg.wa.gov/ContentParts/MemberDirectory/?a=House"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Roger_Goodman"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Roger_Goodman"
+    },
+    {
+      "title": "Public source",
+      "url": "https://housedemocrats.wa.gov/goodman"
+    },
+    {
+      "title": "Public source",
+      "url": "https://housedemocrats.wa.gov/goodman/"
+    },
+    {
+      "title": "Public source",
+      "url": "https://housedemocrats.wa.gov/goodman/biography"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/68784/roger-goodman"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

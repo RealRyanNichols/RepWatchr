@@ -1,0 +1,61 @@
+{
+  "id": "seth-bronko",
+  "name": "Seth Bronko",
+  "firstName": "Seth",
+  "lastName": "Bronko",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-70",
+  "jurisdiction": "Connecticut House of Representatives",
+  "county": [
+    "Connecticut"
+  ],
+  "termStart": "2023-01-04",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 4200, Legislative Office Building 300 Capitol Ave., Hartford, CT 06106",
+    "phone": "860-240-8700",
+    "email": "seth.bronko@housegop.ct.gov",
+    "website": "https://www.cthousegop.com/Bronko/"
+  },
+  "bio": "Seth Bronko serves as State Representative for Connecticut House of Representatives District 70. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "CT",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.cthousegop.com/Bronko/"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ct/legislature/Seth-Bronko-a0e90d7c-cc41-469e-a27a-7efa009ef801.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "ftp://ftp.cga.ct.gov/pub/data/LegislatorDatabase.csv"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Seth_Bronko"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Seth_Bronko"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/208608/seth-bronko"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.cthousegop.com/Bronko"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/sethbronko"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

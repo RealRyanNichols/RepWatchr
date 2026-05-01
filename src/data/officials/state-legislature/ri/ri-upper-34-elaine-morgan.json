@@ -1,0 +1,72 @@
+{
+  "id": "elaine-morgan",
+  "name": "Elaine Morgan",
+  "firstName": "Elaine",
+  "lastName": "Morgan",
+  "photo": "/images/officials/state-legislature/ri/elaine-morgan.jpg",
+  "photoSourceUrl": "http://www.rilegislature.gov/Senators/Pictures/morgan.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-34",
+  "jurisdiction": "Rhode Island Senate",
+  "county": [
+    "Rhode Island"
+  ],
+  "termStart": "2015-01-06",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "82 Smith St., Providence, RI 02903",
+    "phone": "401-222-3580",
+    "email": "sen-morgan@rilegislature.gov",
+    "website": "https://www.rilegislature.gov/senators/algiere/default.aspx"
+  },
+  "bio": "Elaine Morgan serves as State Senator for Rhode Island Senate District 34. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "RI",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.rilegislature.gov/senators/algiere/default.aspx"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ri/legislature/Elaine-J-Morgan-6913b936-2e96-414a-80d6-6518f5accb7e.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "http://www.rilegislature.gov/Senators/Pictures/morgan.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Elaine_Morgan"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Elaine_J._Morgan"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/154559/elaine-morgan"
+    },
+    {
+      "title": "Public source",
+      "url": "https://webserver.rilegislature.gov/Email/SenEmailListDistrict.asp"
+    },
+    {
+      "title": "Public source",
+      "url": "https://webserver.rilin.state.ri.us/Email/SenEmailListDistrict.asp"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/elaine-morgan-125b0a58"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.rilegislature.gov/senators/morgan/default.aspx"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

@@ -1,0 +1,49 @@
+{
+  "id": "matt-martinez",
+  "name": "Matt Martinez",
+  "firstName": "Matt",
+  "lastName": "Martinez",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-62",
+  "jurisdiction": "Colorado House of Representatives",
+  "county": [
+    "Colorado"
+  ],
+  "termStart": "2023-01-09",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "State Capitol Room 307, Colorado  Building 200 E. Colfax Ave., Denver, CO 80203",
+    "phone": "303-866-2916",
+    "email": "matthew.martinez.house@coleg.gov",
+    "website": "https://leg.colorado.gov/legislators/matthew-martinez"
+  },
+  "bio": "Matt Martinez serves as State Representative for Colorado House of Representatives District 62. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "CO",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://leg.colorado.gov/legislators/matthew-martinez"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/co/legislature/Matthew-Martinez-27716b46-14de-4097-a29c-1a882ae3cd3a.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Matthew_Martinez"
+    },
+    {
+      "title": "Public source",
+      "url": "https://leg.colorado.gov/legislators"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/matthew-martinez-2a882094"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

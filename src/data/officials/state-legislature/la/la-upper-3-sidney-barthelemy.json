@@ -1,0 +1,45 @@
+{
+  "id": "sidney-barthelemy",
+  "name": "Sidney Barthelemy",
+  "firstName": "Sidney",
+  "lastName": "Barthelemy",
+  "party": "D",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-3",
+  "jurisdiction": "Louisiana Senate",
+  "county": [
+    "Louisiana"
+  ],
+  "termStart": "2026-03-23",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "P.O. Box 94183 900 N. 3rd St., Baton Rouge, LA 70804",
+    "phone": "225-342-2024",
+    "email": "sen03@legis.la.gov",
+    "website": "https://senate.la.gov/smembers?ID=3"
+  },
+  "bio": "Sidney Barthelemy serves as State Senator for Louisiana Senate District 3. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "LA",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://senate.la.gov/smembers?ID=3"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/la/legislature/Sidney-Barthelemy-7b4128f7-b147-4cdd-b6ee-0d7d3f2edb6f.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Sidney_Barthelemy_II"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Sidney_Barthelemy_II"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

@@ -1,0 +1,49 @@
+{
+  "id": "andrew-molitor",
+  "name": "Andrew Molitor",
+  "firstName": "Andrew",
+  "lastName": "Molitor",
+  "party": "R",
+  "level": "state",
+  "position": "Assemblymember",
+  "district": "HD-150",
+  "jurisdiction": "New York State Assembly",
+  "county": [
+    "New York"
+  ],
+  "termStart": "2025-01-01",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 721, Legislative Office Building, Albany, NY 12248",
+    "phone": "518-455-4511",
+    "email": "molitora@nyassembly.gov",
+    "website": "https://nyassembly.gov/mem/Andrew-M-Molitor"
+  },
+  "bio": "Andrew Molitor serves as Assemblymember for New York State Assembly District 150. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "NY",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://nyassembly.gov/mem/Andrew-M-Molitor"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ny/legislature/Andrew-Molitor-ba5fb3f1-a049-45a1-abd7-77b132e789d6.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Andrew_Molitor"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Andrew_Molitor"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/216741/andrew-molitor"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

@@ -1,0 +1,60 @@
+{
+  "id": "stephanie-smith",
+  "name": "Stephanie Smith",
+  "firstName": "Stephanie",
+  "lastName": "Smith",
+  "photo": "/images/officials/state-legislature/md/stephanie-smith.jpg",
+  "photoSourceUrl": "http://mgaleg.maryland.gov/2019RS/images/smith03.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "Delegate",
+  "district": "HD-45",
+  "jurisdiction": "Maryland House of Delegates",
+  "county": [
+    "Maryland"
+  ],
+  "termStart": "2019-01-09",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 307, Lowe House Office Building 6 Bladen St., Annapolis, MD 21401",
+    "phone": "410-841-3486",
+    "email": "stephanie.smith@house.maryland.gov",
+    "website": "https://mgaleg.maryland.gov/mgawebsite/Members/Details/smith03"
+  },
+  "bio": "Stephanie Smith serves as Delegate for Maryland House of Delegates District 45. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "MD",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://mgaleg.maryland.gov/mgawebsite/Members/Details/smith03"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/md/legislature/Stephanie-Smith-0f8f065b-2d2e-4da3-91d4-988f16c72ef1.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "http://mgaleg.maryland.gov/2019RS/images/smith03.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Stephanie_Smith_(Maryland)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Stephanie_M._Smith"
+    },
+    {
+      "title": "Public source",
+      "url": "https://mgaleg.maryland.gov/webmga/frmMain.aspx?pid=sponpage&tab=subject6&id=smith03&stab=01"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/stephanie-maddin-smith-0a76282"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

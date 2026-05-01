@@ -1,0 +1,72 @@
+{
+  "id": "donna-bailey",
+  "name": "Donna Bailey",
+  "firstName": "Donna",
+  "lastName": "Bailey",
+  "photo": "/images/officials/state-legislature/me/donna-bailey.jpg",
+  "photoSourceUrl": "https://legislature.maine.gov/uploads/visual_edit/bailey-donna-6.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-31",
+  "jurisdiction": "Maine Senate",
+  "county": [
+    "Maine"
+  ],
+  "termStart": "2020-12-02",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "3 State House Station, Augusta, ME 04333",
+    "phone": "207-287-1515",
+    "email": "donna.bailey@legislature.maine.gov",
+    "website": "https://legislature.maine.gov/District-31"
+  },
+  "bio": "Donna Bailey serves as State Senator for Maine Senate District 31. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "ME",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://legislature.maine.gov/District-31"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/me/legislature/Donna-Bailey-d071215f-4839-4c4c-ab4d-f3c7179004a6.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://legislature.maine.gov/uploads/visual_edit/bailey-donna-6.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Donna_Bailey_(Maine)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Donna_Bailey"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/170078/donna-bailey"
+    },
+    {
+      "title": "Public source",
+      "url": "https://legislature.maine.gov/district31"
+    },
+    {
+      "title": "Public source",
+      "url": "https://legislature.maine.gov/District31"
+    },
+    {
+      "title": "Public source",
+      "url": "https://legislature.maine.gov/uploads/visual_edit/130th-senate-contact-information-as-of-31221.xlsx"
+    },
+    {
+      "title": "Public source",
+      "url": "https://legislature.maine.gov/uploads/visual_edit/131-senator-contact-information-2.xlsx"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

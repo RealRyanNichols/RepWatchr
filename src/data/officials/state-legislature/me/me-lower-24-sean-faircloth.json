@@ -1,0 +1,57 @@
+{
+  "id": "sean-faircloth",
+  "name": "Sean Faircloth",
+  "firstName": "Sean",
+  "lastName": "Faircloth",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-24",
+  "jurisdiction": "Maine House of Representatives",
+  "county": [
+    "Maine"
+  ],
+  "termStart": "2025-02-25",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 333, House Democratic Office 2 State House Station, Augusta, ME 04333",
+    "phone": "800-423-2900",
+    "email": "sean.faircloth@legislature.maine.gov",
+    "website": "https://legislature.maine.gov/house/house/MemberProfiles/Details/430"
+  },
+  "bio": "Sean Faircloth serves as State Representative for Maine House of Representatives District 24. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "ME",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://legislature.maine.gov/house/house/MemberProfiles/Details/430"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/me/legislature/Sean-Faircloth-9db9a9ba-552e-446f-b5a3-58f74596a115.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Sean_Faircloth"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Sean_Faircloth"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/sean-faircloth-a1511a22"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/sean-faircloth-b25155155"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.maine.gov/housedems/node/4205"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

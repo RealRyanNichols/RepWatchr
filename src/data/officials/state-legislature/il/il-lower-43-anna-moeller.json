@@ -1,0 +1,72 @@
+{
+  "id": "anna-moeller",
+  "name": "Anna Moeller",
+  "firstName": "Anna",
+  "lastName": "Moeller",
+  "photo": "/images/officials/state-legislature/il/anna-moeller.jpg",
+  "photoSourceUrl": "https://cdn.ilga.gov/assets/img/members/{DCE9D682-0582-49BD-AD67-98C2502D89C2}.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-43",
+  "jurisdiction": "Illinois House of Representatives",
+  "county": [
+    "Illinois"
+  ],
+  "termStart": "2014-03-30",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 255-S, Stratton Office Building, Springfield, IL 62706",
+    "phone": "217-782-8020",
+    "email": "staterepmoeller@gmail.com",
+    "website": "https://ilga.gov/house/Rep.asp?GA=101&MemberID=2647"
+  },
+  "bio": "Anna Moeller serves as State Representative for Illinois House of Representatives District 43. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "IL",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://ilga.gov/house/Rep.asp?GA=101&MemberID=2647"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/il/legislature/Anna-Moeller-f38a2b8a-b0e4-4e7d-92cf-7855d42e9c2d.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://cdn.ilga.gov/assets/img/members/{DCE9D682-0582-49BD-AD67-98C2502D89C2}.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Anna_Moeller"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Anna_Moeller"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ilga.gov/house/default.asp?GA=101"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ilga.gov/house/default.asp?GA=102"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ilga.gov/house/default.asp?GA=103"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ilga.gov/house/Rep.asp?GA=102&MemberID=2876"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ilga.gov/house/Rep.asp?GA=103&MemberID=3085"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

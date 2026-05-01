@@ -1,0 +1,64 @@
+{
+  "id": "adam-lowe",
+  "name": "Adam Lowe",
+  "firstName": "Adam",
+  "lastName": "Lowe",
+  "photo": "/images/officials/state-legislature/tn/adam-lowe.jpg",
+  "photoSourceUrl": "https://static.wixstatic.com/media/599b12_afa74a3390064dd386df25e882ac9659~mv2.jpeg/v1/fill/w_675,h_716,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/599b12_afa74a3390064dd386df25e882ac9659~mv2.jpeg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-1",
+  "jurisdiction": "Tennessee Senate",
+  "county": [
+    "Tennessee"
+  ],
+  "termStart": "2022-11-08",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 732, Cordell Hull Building 425 Rep. John Lewis Way North, Nashville, TN 37243",
+    "phone": "615-741-1946",
+    "email": "sen.adam.lowe@capitol.tn.gov",
+    "website": "https://wapp.capitol.tn.gov/apps/legislatorinfo/member.aspx?district=S1"
+  },
+  "bio": "Adam Lowe serves as State Senator for Tennessee Senate District 1. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "TN",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://wapp.capitol.tn.gov/apps/legislatorinfo/member.aspx?district=S1"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/tn/legislature/Adam-Lowe-b3bd4f95-946f-4b4b-b58f-ab78345847b7.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://static.wixstatic.com/media/599b12_afa74a3390064dd386df25e882ac9659~mv2.jpeg/v1/fill/w_675,h_716,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/599b12_afa74a3390064dd386df25e882ac9659~mv2.jpeg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/J._Adam_Lowe"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/J._Adam_Lowe"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/133392/j-adam-lowe"
+    },
+    {
+      "title": "Public source",
+      "url": "https://wapp.capitol.tn.gov/apps/LegislatorInfo/directory.aspx?chamber=S"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/jadamlowe"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

@@ -1,0 +1,57 @@
+{
+  "id": "vanessa-lafleur",
+  "name": "Vanessa LaFleur",
+  "firstName": "Vanessa",
+  "lastName": "LaFleur",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-101",
+  "jurisdiction": "Louisiana House of Representatives",
+  "county": [
+    "Louisiana"
+  ],
+  "termStart": "2022-04-11",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "P.O. Box 94062 900 N. 3rd St., Baton Rouge, LA 70804",
+    "phone": "225-342-6945",
+    "email": "hse101@legis.la.gov",
+    "website": "https://house.louisiana.gov/H_Reps/members.aspx?ID=101"
+  },
+  "bio": "Vanessa LaFleur serves as State Representative for Louisiana House of Representatives District 101. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "LA",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://house.louisiana.gov/H_Reps/members.aspx?ID=101"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/la/legislature/Vanessa-Caston-LaFleur-9510158f-4e63-4b68-ad44-daef2987b780.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Vanessa_Caston_LaFleur"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Vanessa_Caston_LaFleur"
+    },
+    {
+      "title": "Public source",
+      "url": "https://house.louisiana.gov/H_Reps/H_Reps_FullInfo"
+    },
+    {
+      "title": "Public source",
+      "url": "https://house.louisiana.gov/H_Reps/members?ID=101"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/vanessa-caston-lafleur-652a45230"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

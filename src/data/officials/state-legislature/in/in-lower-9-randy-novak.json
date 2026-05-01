@@ -1,0 +1,61 @@
+{
+  "id": "randy-novak",
+  "name": "Randy Novak",
+  "firstName": "Randy",
+  "lastName": "Novak",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-9",
+  "jurisdiction": "Indiana House of Representatives",
+  "county": [
+    "Indiana"
+  ],
+  "termStart": "2025-10-22",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "200 W. Washington St., Indianapolis, IN 46204",
+    "phone": "800-382-9842",
+    "email": "h9@iga.in.gov",
+    "website": "https://iga.in.gov/legislative/2025/legislators/legislator_randy_novak_1"
+  },
+  "bio": "Randy Novak serves as State Representative for Indiana House of Representatives District 9. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "IN",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://iga.in.gov/legislative/2025/legislators/legislator_randy_novak_1"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/in/legislature/Randy-Novak-74acd892-bd86-453a-8a48-87954ad68c19.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Randy_Novak"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Randy_Novak_(LaPorte_County_Commissioner_Board_District_3,_Indiana,_candidate_2024)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://iga.in.gov/legislative/2026/legislators/legislator_randy_novak_1"
+    },
+    {
+      "title": "Public source",
+      "url": "https://randynovak.com"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.indianahousedemocrats.org/members/randy-novak"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/randall-novak-323a8992"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

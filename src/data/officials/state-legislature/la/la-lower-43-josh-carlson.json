@@ -1,0 +1,60 @@
+{
+  "id": "josh-carlson",
+  "name": "Josh Carlson",
+  "firstName": "Josh",
+  "lastName": "Carlson",
+  "photo": "/images/officials/state-legislature/la/josh-carlson.jpg",
+  "photoSourceUrl": "https://house.louisiana.gov/H_Reps/RepPics/rep43.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-43",
+  "jurisdiction": "Louisiana House of Representatives",
+  "county": [
+    "Louisiana"
+  ],
+  "termStart": "2024-01-08",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "P.O. Box 94062 900 N. 3rd St., Baton Rouge, LA 70804",
+    "phone": "225-342-6945",
+    "email": "hse043@legis.la.gov",
+    "website": "https://house.louisiana.gov/H_Reps/members?ID=43"
+  },
+  "bio": "Josh Carlson serves as State Representative for Louisiana House of Representatives District 43. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "LA",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://house.louisiana.gov/H_Reps/members?ID=43"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/la/legislature/Josh-Carlson-85df7a11-9edb-4e27-b7ce-60ffe7b35d39.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://house.louisiana.gov/H_Reps/RepPics/rep43.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Josh_Carlson"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Josh_Carlson"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/196940/joshua-carlson"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/joshuapcarlson"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

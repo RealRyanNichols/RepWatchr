@@ -1,0 +1,56 @@
+{
+  "id": "andrew-sorrell",
+  "name": "Andrew Sorrell",
+  "firstName": "Andrew",
+  "lastName": "Sorrell",
+  "party": "R",
+  "level": "state",
+  "position": "Auditor",
+  "district": "Alabama",
+  "jurisdiction": "Alabama statewide public office",
+  "county": [
+    "Alabama"
+  ],
+  "termStart": "2023-01-16",
+  "termEnd": "2027-01-18",
+  "contactInfo": {
+    "office": "600 Dexter Avenue, Room S-101; Montgomery, AL 36104",
+    "phone": "334-242-7010",
+    "website": "https://www.auditor.alabama.gov/"
+  },
+  "bio": "Andrew Sorrell is listed as Auditor for Alabama. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "AL",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.auditor.alabama.gov/"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/al/executive/Andrew-Sorrell-6e7f8f74-90fd-416b-b08e-188d6315b3ce.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "http://www.legislature.state.al.us/aliswww/ISD/ALRepresentative.aspx?OID_SPONSOR=100483&OID_PERSON=8489"
+    },
+    {
+      "title": "Public source",
+      "url": "http://www.legislature.state.al.us/aliswww/ISD/House/ALRepresentatives.aspx"
+    },
+    {
+      "title": "Public source",
+      "url": "http://www.legislature.state.al.us/aliswww/ISD/ALRepresentative.aspx?NAME=Sorrell&OID_SPONSOR=100483&OID_PERSON=8489&SESSNAME="
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.auditor.alabama.gov/about/andrew-sorrell-biography/"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.auditor.alabama.gov/contact.aspx"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

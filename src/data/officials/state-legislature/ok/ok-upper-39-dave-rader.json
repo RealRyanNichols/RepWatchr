@@ -1,0 +1,65 @@
+{
+  "id": "dave-rader",
+  "name": "Dave Rader",
+  "firstName": "Dave",
+  "lastName": "Rader",
+  "party": "R",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-39",
+  "jurisdiction": "Oklahoma Senate",
+  "county": [
+    "Oklahoma"
+  ],
+  "termStart": "2016-11-23",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 233, 2300 N. Lincoln Blvd., Oklahoma City, OK 73105",
+    "phone": "405-521-5620",
+    "email": "rader@oksenate.gov",
+    "website": "https://oksenate.gov/contact-senator?sid=1898"
+  },
+  "bio": "Dave Rader serves as State Senator for Oklahoma Senate District 39. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "OK",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://oksenate.gov/contact-senator?sid=1898"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ok/legislature/Dave-Rader-3714523f-ea6d-4bd5-a801-1397dd508208.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Dave_Rader"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/David_Rader"
+    },
+    {
+      "title": "Public source",
+      "url": "https://oksenate.gov/Senators/biographies/rader_bio.aspx"
+    },
+    {
+      "title": "Public source",
+      "url": "https://oksenate.gov/Senators/biographies/rader_bio.html"
+    },
+    {
+      "title": "Public source",
+      "url": "https://oksenate.gov/senators/dave-rader"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.daverader.com"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/david-rader-0b944829"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

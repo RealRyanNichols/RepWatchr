@@ -1,0 +1,75 @@
+{
+  "id": "reginald-murdock",
+  "name": "Reginald Murdock",
+  "firstName": "Reginald",
+  "lastName": "Murdock",
+  "photo": "/images/officials/state-legislature/ar/reginald-murdock.jpg",
+  "photoSourceUrl": "https://www.arkleg.state.ar.us/Content/photos/2023/Senate/639_sm.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-9",
+  "jurisdiction": "Arkansas Senate",
+  "county": [
+    "Arkansas"
+  ],
+  "termStart": "2023-01-09",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "State Capitol Building 500 Woodlane St., Suite 320, Little Rock, AR 72201",
+    "phone": "501-682-2902",
+    "email": "rkm_72360@yahoo.com",
+    "website": "https://arkleg.state.ar.us/Legislators/Detail?member=R.+Murdock",
+    "socialMedia": {
+      "facebook": "https://facebook.com/ReginaldMurdockAR"
+    }
+  },
+  "bio": "Reginald Murdock serves as State Senator for Arkansas Senate District 9. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "AR",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://arkleg.state.ar.us/Legislators/Detail?member=R.+Murdock"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ar/legislature/Reginald-Murdock-f148aa6d-abfe-4577-9c15-44f2ea79c707.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://www.arkleg.state.ar.us/Content/photos/2023/Senate/639_sm.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Reginald_Murdock"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Reginald_Murdock"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/27965/reginald-murdock"
+    },
+    {
+      "title": "Public source",
+      "url": "https://senate.arkansas.gov/senators/reginald-murdock"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.arkleg.state.ar.us/Legislators/Detail?member=Murdock&ddBienniumSession=2019%2F2020F"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.arkleg.state.ar.us/Legislators/Detail?member=Murdock&ddBienniumSession=2021%2F2021R"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.arkleg.state.ar.us/Legislators/Detail?member=Murdock&ddBienniumSession=2021%2F2021S1"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

@@ -1,0 +1,77 @@
+{
+  "id": "lonnie-randolph",
+  "name": "Lonnie Randolph",
+  "firstName": "Lonnie",
+  "lastName": "Randolph",
+  "photo": "/images/officials/state-legislature/in/lonnie-randolph.jpg",
+  "photoSourceUrl": "https://indianasenatedemocrats.org/wp-content/uploads/2022/12/Senator-Randolph-Indiana-State-Flag-Headshot.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-2",
+  "jurisdiction": "Indiana Senate",
+  "county": [
+    "Indiana"
+  ],
+  "termStart": "2008-11-05",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "200 W. Washington St., Indianapolis, IN 46204",
+    "phone": "800-382-9467",
+    "email": "s2@iga.in.gov",
+    "website": "https://iga.in.gov/legislative/2021/legislators/legislator_lonnie_randolph_160",
+    "socialMedia": {
+      "x": "https://x.com/senatorrandolph",
+      "twitter": "https://x.com/senatorrandolph",
+      "facebook": "https://facebook.com/SenatorRandolph"
+    }
+  },
+  "bio": "Lonnie Randolph serves as State Senator for Indiana Senate District 2. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "IN",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://iga.in.gov/legislative/2021/legislators/legislator_lonnie_randolph_160"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/in/legislature/Lonnie-Randolph-a48f9631-3436-4445-b8fc-87c143f373cd.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://indianasenatedemocrats.org/wp-content/uploads/2022/12/Senator-Randolph-Indiana-State-Flag-Headshot.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://api.iga.in.gov/2021/legislators/lonnie_randolph_160"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Lonnie_Randolph"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Lonnie_Randolph"
+    },
+    {
+      "title": "Public source",
+      "url": "https://indianasenatedemocrats.org/senators/s2"
+    },
+    {
+      "title": "Public source",
+      "url": "https://indianasenatedemocrats.org/senators/s2/"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/4527/lonnie-randolph-jr"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.indianasenatedemocrats.org/s2"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

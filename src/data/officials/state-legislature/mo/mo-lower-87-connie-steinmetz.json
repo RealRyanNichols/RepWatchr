@@ -1,0 +1,56 @@
+{
+  "id": "connie-steinmetz",
+  "name": "Connie Steinmetz",
+  "firstName": "Connie",
+  "lastName": "Steinmetz",
+  "photo": "/images/officials/state-legislature/mo/connie-steinmetz.jpg",
+  "photoSourceUrl": "https://s3.amazonaws.com/ballotpedia-api4/files/thumbs/200/300/Connie_Steinmetz.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-87",
+  "jurisdiction": "Missouri House of Representatives",
+  "county": [
+    "Missouri"
+  ],
+  "termStart": "2025-01-08",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 135-BC, 201 W. Capitol Ave., Jefferson City, MO 65101",
+    "phone": "573-751-0100",
+    "email": "connie.steinmetz@house.mo.gov",
+    "website": "https://house.mo.gov/MemberDetails.aspx?district=087"
+  },
+  "bio": "Connie Steinmetz serves as State Representative for Missouri House of Representatives District 87. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "MO",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://house.mo.gov/MemberDetails.aspx?district=087"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/mo/legislature/Connie-Steinmetz-a4d25b21-09c7-49d8-aaca-a07a18dad245.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://s3.amazonaws.com/ballotpedia-api4/files/thumbs/200/300/Connie_Steinmetz.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Connie_Steinmetz"
+    },
+    {
+      "title": "Public source",
+      "url": "https://house.mo.gov/MemberDetails.aspx?year=2025&code=R&district=087"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/connie-steinmetz-0b631725"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

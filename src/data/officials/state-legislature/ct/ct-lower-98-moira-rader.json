@@ -1,0 +1,61 @@
+{
+  "id": "moira-rader",
+  "name": "Moira Rader",
+  "firstName": "Moira",
+  "lastName": "Rader",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-98",
+  "jurisdiction": "Connecticut House of Representatives",
+  "county": [
+    "Connecticut"
+  ],
+  "termStart": "2023-01-04",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 4004, Legislative Office Building 300 Capitol Ave., Hartford, CT 06106",
+    "phone": "860-240-8585",
+    "email": "moira.rader@cga.ct.gov",
+    "website": "https://www.housedems.ct.gov/Rader"
+  },
+  "bio": "Moira Rader serves as State Representative for Connecticut House of Representatives District 98. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "CT",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.housedems.ct.gov/Rader"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ct/legislature/Moira-Rader-adb6f661-e282-42a5-8b55-cb1e5f56aa5a.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "ftp://ftp.cga.ct.gov/pub/data/LegislatorDatabase.csv"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Moira_Rader"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Moira_Rader"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/208688/moira-rader"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.housedems.ct.gov/Rader/Biography"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/moira-rader-b758a4115"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

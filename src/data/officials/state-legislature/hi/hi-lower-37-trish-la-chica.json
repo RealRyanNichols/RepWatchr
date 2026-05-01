@@ -1,0 +1,61 @@
+{
+  "id": "trish-la-chica",
+  "name": "Trish La Chica",
+  "firstName": "Trish",
+  "lastName": "La Chica",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-37",
+  "jurisdiction": "Hawaii House of Representatives",
+  "county": [
+    "Hawaii"
+  ],
+  "termStart": "2023-02-15",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "State Capitol Room 441, 415 S. Beretania St., Honolulu, HI 96813",
+    "phone": "808-586-6150",
+    "email": "replachica@capitol.hawaii.gov",
+    "website": "https://www.capitol.hawaii.gov/legislature/memberpage.aspx?member=292"
+  },
+  "bio": "Trish La Chica serves as State Representative for Hawaii House of Representatives District 37. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "HI",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.capitol.hawaii.gov/legislature/memberpage.aspx?member=292"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/hi/legislature/Trish-La-Chica-9957f6f1-9231-45b3-940f-2122c1caf3f7.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Trish_La_Chica"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Trish_La_Chica"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.capitol.hawaii.gov/legislature/memberpage.aspx?member=292&year=2023"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.capitol.hawaii.gov/legislature/memberpage.aspx?member=292&year=2024"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.capitol.hawaii.gov/members/legislators.aspx"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/trishlachica"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

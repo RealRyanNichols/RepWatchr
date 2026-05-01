@@ -1,0 +1,52 @@
+{
+  "id": "dante-pittman",
+  "name": "Dante Pittman",
+  "firstName": "Dante",
+  "lastName": "Pittman",
+  "photo": "/images/officials/state-legislature/nc/dante-pittman.jpg",
+  "photoSourceUrl": "https://s3.amazonaws.com/ballotpedia-api4/files/thumbs/200/300/DantePittman2024.JPG",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-24",
+  "jurisdiction": "North Carolina House of Representatives",
+  "county": [
+    "North Carolina"
+  ],
+  "termStart": "2025-01-01",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 1311, North Carolina Legislative Building 16 W. Jones St., Raleigh, NC 27601",
+    "phone": "919-733-5898",
+    "email": "dante.pittman@ncleg.gov",
+    "website": "https://www.ncleg.gov/Members/Biography/H/839"
+  },
+  "bio": "Dante Pittman serves as State Representative for North Carolina House of Representatives District 24. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "NC",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.ncleg.gov/Members/Biography/H/839"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/nc/legislature/Dante-Pittman-d0cbde92-5f2b-4177-822a-f100613a9b30.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://s3.amazonaws.com/ballotpedia-api4/files/thumbs/200/300/DantePittman2024.JPG"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Dante_Pittman"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/dante-pittman-827487114"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

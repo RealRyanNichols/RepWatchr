@@ -1,0 +1,72 @@
+{
+  "id": "david-gregory",
+  "name": "David Gregory",
+  "firstName": "David",
+  "lastName": "Gregory",
+  "photo": "/images/officials/state-legislature/mo/david-gregory.jpg",
+  "photoSourceUrl": "https://house.mo.gov/MemberPhoto.aspx?id=1943",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-15",
+  "jurisdiction": "Missouri Senate",
+  "county": [
+    "Missouri"
+  ],
+  "termStart": "2025-01-08",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 331, 201 W. Capitol Ave., Jefferson City, MO 65101",
+    "phone": "573-751-5568",
+    "email": "david.gregory@senate.mo.gov",
+    "website": "https://house.mo.gov/MemberDetails.aspx?year=2021&code=R&district=096"
+  },
+  "bio": "David Gregory serves as State Senator for Missouri Senate District 15. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "MO",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://house.mo.gov/MemberDetails.aspx?year=2021&code=R&district=096"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/mo/legislature/David-Gregory-2f4b4782-bc17-40fd-88b7-53840c68ee3a.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://house.mo.gov/MemberPhoto.aspx?id=1943"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/David_Gregory"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/David_Gregory_(politician)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://house.mo.gov/MemberGridCluster.aspx"
+    },
+    {
+      "title": "Public source",
+      "url": "https://senate.mo.gov/Senators/Member/15"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.house.mo.gov/MemberDetails.aspx?district=96"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/david-gregory-86ab511aa"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.senate.mo.gov/Senators/Member?id=6371"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

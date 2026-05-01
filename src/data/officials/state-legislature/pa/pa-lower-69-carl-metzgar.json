@@ -1,0 +1,68 @@
+{
+  "id": "carl-metzgar",
+  "name": "Carl Metzgar",
+  "firstName": "Carl",
+  "lastName": "Metzgar",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-69",
+  "jurisdiction": "Pennsylvania House of Representatives",
+  "county": [
+    "Pennsylvania"
+  ],
+  "termStart": "2009-01-06",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 216, Ryan Office Building P.O. Box 202069, Harrisburg, PA 17120",
+    "phone": "717-783-8756",
+    "email": "cmetzgar@pahousegop.com",
+    "website": "https://www.legis.state.pa.us/cfdocs/legis/home/member_information/House_bio.cfm?id=1174",
+    "socialMedia": {
+      "youtube": "https://youtube.com/RepMetzgar"
+    }
+  },
+  "bio": "Carl Metzgar serves as State Representative for Pennsylvania House of Representatives District 69. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "PA",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.legis.state.pa.us/cfdocs/legis/home/member_information/House_bio.cfm?id=1174"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/pa/legislature/Carl-Walker-Metzgar-462fc474-e481-436e-b47a-7bbde2de3e3a.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Carl_Metzgar"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Carl_Walker_Metzgar"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/102537/carl-metzgar"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.legis.state.pa.us/cfdocs/legis/home/member_information/mbrList.cfm?body=H&sort=alpha"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.legis.state.pa.us/cfdocs/legis/home/member_information/representatives_alpha.cfm"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.palegis.us/house/members/bio/1174/rep-metzgar"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.repmetzgar.com"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

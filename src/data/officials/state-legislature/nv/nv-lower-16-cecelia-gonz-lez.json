@@ -1,0 +1,64 @@
+{
+  "id": "cecelia-gonz-lez",
+  "name": "Cecelia Gonz\u00e1lez",
+  "firstName": "Cecelia",
+  "lastName": "Gonz\u00e1lez",
+  "photo": "/images/officials/state-legislature/nv/cecelia-gonz-lez.jpg",
+  "photoSourceUrl": "http://leg.state.nv.us/Session/83rd2025/legislators/Assembly/Images/Gonzlez.Cecelia.378.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "Assemblymember",
+  "district": "HD-16",
+  "jurisdiction": "Nevada Assembly",
+  "county": [
+    "Nevada"
+  ],
+  "termStart": "2020-11-04",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 3160, Nevada Assembly 401 S. Carson St., Carson City, NV 89701",
+    "phone": "775-684-8595",
+    "email": "cecelia.gonzalez@asm.state.nv.us",
+    "website": "https://www.leg.state.nv.us/App/Legislator/A/api/81st2021/Legislator?id=378"
+  },
+  "bio": "Cecelia Gonz\u00e1lez serves as Assemblymember for Nevada Assembly District 16. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "NV",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.leg.state.nv.us/App/Legislator/A/api/81st2021/Legislator?id=378"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/nv/legislature/Cecelia-Gonzlez-67f22a3d-05c3-4256-8260-dac682607fc7.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "http://leg.state.nv.us/Session/83rd2025/legislators/Assembly/Images/Gonzlez.Cecelia.378.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Cecelia_Gonz%C3%A1lez"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Cecelia_Gonz%C3%A1lez"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.leg.state.nv.us/App/Legislator/A/Assembly/Current"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.leg.state.nv.us/App/Legislator/A/Assembly/Current/16"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/cecelia-gonz%C3%A1lez-484738174"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

@@ -1,0 +1,75 @@
+{
+  "id": "john-kane-pa-legislature-upper-9",
+  "name": "John Kane",
+  "firstName": "John",
+  "lastName": "Kane",
+  "party": "D",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-9",
+  "jurisdiction": "Pennsylvania Senate",
+  "county": [
+    "Pennsylvania"
+  ],
+  "termStart": "2020-12-01",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 458, Main Capitol Senate Box 203009, Harrisburg, PA 17120",
+    "phone": "717-787-4712",
+    "email": "kane@pasenate.com",
+    "website": "https://pasenatorkane.com/",
+    "socialMedia": {
+      "x": "https://x.com/senatorjohnkane",
+      "twitter": "https://x.com/senatorjohnkane",
+      "facebook": "https://facebook.com/SenatorJohnKane",
+      "instagram": "https://instagram.com/senatorjohnkane"
+    }
+  },
+  "bio": "John Kane serves as State Senator for Pennsylvania Senate District 9. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "PA",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://pasenatorkane.com/"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/pa/legislature/John-I-Kane-c45052c1-f3e4-485e-a3d2-f346fa51839b.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/John_Kane_(Pennsylvania)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/John_I._Kane"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/150771/john-kane"
+    },
+    {
+      "title": "Public source",
+      "url": "https://pasenatorkane.com"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.legis.state.pa.us/cfdocs/legis/home/member_information/mbrList.cfm?body=S&sort=alpha"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.legis.state.pa.us/cfdocs/legis/home/member_information/Senate_bio.cfm?id=1925"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.legis.state.pa.us/cfdocs/legis/home/member_information/senators_alpha.cfm"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.palegis.us/senate/members/bio/1925/sen-kane"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

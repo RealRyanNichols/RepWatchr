@@ -1,0 +1,64 @@
+{
+  "id": "tricia-byrnes",
+  "name": "Tricia Byrnes",
+  "firstName": "Tricia",
+  "lastName": "Byrnes",
+  "photo": "/images/officials/state-legislature/mo/tricia-byrnes.jpg",
+  "photoSourceUrl": "https://house.mo.gov/MemberPhoto.aspx?id=2382",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-63",
+  "jurisdiction": "Missouri House of Representatives",
+  "county": [
+    "Missouri"
+  ],
+  "termStart": "2023-01-04",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 313-3, 201 W. Capitol Ave., Jefferson City, MO 65101",
+    "phone": "573-751-1460",
+    "email": "tricia.byrnes@house.mo.gov",
+    "website": "https://house.mo.gov/MemberDetails.aspx?district=063"
+  },
+  "bio": "Tricia Byrnes serves as State Representative for Missouri House of Representatives District 63. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "MO",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://house.mo.gov/MemberDetails.aspx?district=063"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/mo/legislature/Tricia-Byrnes-4f9135f0-db97-4860-af00-182d0026feae.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://house.mo.gov/MemberPhoto.aspx?id=2382"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Tricia_Byrnes"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Tricia_Byrnes_(politician)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://house.mo.gov/MemberDetails.aspx?year=2023&code=R&district=063"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/205735/tricia-byrnes"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/triciabyrnes"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

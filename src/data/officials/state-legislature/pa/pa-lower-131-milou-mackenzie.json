@@ -1,0 +1,68 @@
+{
+  "id": "milou-mackenzie",
+  "name": "Milou Mackenzie",
+  "firstName": "Milou",
+  "lastName": "Mackenzie",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-131",
+  "jurisdiction": "Pennsylvania House of Representatives",
+  "county": [
+    "Pennsylvania"
+  ],
+  "termStart": "2020-12-01",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 405, Irvis Office Building P.O. Box 202131, Harrisburg, PA 17120",
+    "phone": "717-783-1673",
+    "email": "mmackenzie@pahousegop.com",
+    "website": "https://www.legis.state.pa.us/cfdocs/legis/home/member_information/House_bio.cfm?id=1909",
+    "socialMedia": {
+      "facebook": "https://facebook.com/PA-State-Rep-Milou-Mackenzie-100834955213333"
+    }
+  },
+  "bio": "Milou Mackenzie serves as State Representative for Pennsylvania House of Representatives District 131. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "PA",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.legis.state.pa.us/cfdocs/legis/home/member_information/House_bio.cfm?id=1909"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/pa/legislature/Milou-Mackenzie-b4559406-2139-4c7c-9ce9-7a2a604a8a95.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Milou_Mackenzie"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Milou_Mackenzie"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.legis.state.pa.us/cfdocs/legis/home/member_information/mbrList.cfm?body=H&sort=alpha"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.legis.state.pa.us/cfdocs/legis/home/member_information/representatives_alpha.cfm"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.palegis.us/house/members/bio/1909/rep-m-mackenzie"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.repmiloumackenziepa.com"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.repmiloumackenziepa.com/"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

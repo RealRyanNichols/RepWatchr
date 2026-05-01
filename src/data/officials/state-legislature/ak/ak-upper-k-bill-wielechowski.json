@@ -1,0 +1,72 @@
+{
+  "id": "bill-wielechowski",
+  "name": "Bill Wielechowski",
+  "firstName": "Bill",
+  "lastName": "Wielechowski",
+  "photo": "/images/officials/state-legislature/ak/bill-wielechowski.jpg",
+  "photoSourceUrl": "http://akleg.gov/images/legislators/450x600/WIE.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-K",
+  "jurisdiction": "Alaska Senate",
+  "county": [
+    "Alaska"
+  ],
+  "termStart": "2023-01-17",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "State Capitol Room 103, 120 4th St., Juneau, AK 99801",
+    "phone": "907-465-2435",
+    "email": "senator.bill.wielechowski@akleg.gov",
+    "website": "https://alaskasenate.org/wielechowski/"
+  },
+  "bio": "Bill Wielechowski serves as State Senator for Alaska Senate District K. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "AK",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://alaskasenate.org/wielechowski/"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ak/legislature/Bill-Wielechowski-57554431-caac-4074-a8d8-40a4e6289ec1.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "http://akleg.gov/images/legislators/450x600/WIE.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://alaskasenate.org/wielechowski"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Bill_Wielechowski"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Bill_Wielechowski"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/68283/bill-wielechowski"
+    },
+    {
+      "title": "Public source",
+      "url": "https://senatorbill.org"
+    },
+    {
+      "title": "Public source",
+      "url": "https://w3.akleg.gov"
+    },
+    {
+      "title": "Public source",
+      "url": "https://w3.akleg.gov/"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

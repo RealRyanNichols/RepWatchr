@@ -1,0 +1,60 @@
+{
+  "id": "robert-dawson",
+  "name": "Robert Dawson",
+  "firstName": "Robert",
+  "lastName": "Dawson",
+  "photo": "/images/officials/state-legislature/ga/robert-dawson.jpg",
+  "photoSourceUrl": "https://s3.amazonaws.com/ballotpedia-api4/files/thumbs/200/300/rdawson.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-65",
+  "jurisdiction": "Georgia House of Representatives",
+  "county": [
+    "Georgia"
+  ],
+  "termStart": "2025-01-13",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 511-C, Coverdell Legislative Office Building 18 Capitol Square SW, Atlanta, GA 30334",
+    "phone": "404-656-6372",
+    "email": "robert.dawson@house.ga.gov",
+    "website": "https://www.legis.ga.gov/members/house/5072"
+  },
+  "bio": "Robert Dawson serves as State Representative for Georgia House of Representatives District 65. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "GA",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.legis.ga.gov/members/house/5072"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ga/legislature/Robert-Dawson-5d77204f-89e7-43df-bccb-a08b9956132d.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://s3.amazonaws.com/ballotpedia-api4/files/thumbs/200/300/rdawson.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Robert_Dawson_(Georgia)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Robert_Dawson_(Georgia_politician)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/203414/robert-dawson"
+    },
+    {
+      "title": "Public source",
+      "url": "https://rdawson.net"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

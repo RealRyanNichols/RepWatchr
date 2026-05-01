@@ -1,0 +1,60 @@
+{
+  "id": "mike-steinmeyer",
+  "name": "Mike Steinmeyer",
+  "firstName": "Mike",
+  "lastName": "Steinmeyer",
+  "photo": "/images/officials/state-legislature/mo/mike-steinmeyer.jpg",
+  "photoSourceUrl": "https://s3.amazonaws.com/ballotpedia-api4/files/thumbs/200/300/Mike_Steinmeyer_20241028_013139.jpeg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-20",
+  "jurisdiction": "Missouri House of Representatives",
+  "county": [
+    "Missouri"
+  ],
+  "termStart": "2025-01-08",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 116-A2, 201 W. Capitol Ave., Jefferson City, MO 65101",
+    "phone": "573-751-3674",
+    "email": "mike.steinmeyer@house.mo.gov",
+    "website": "https://house.mo.gov/MemberDetails.aspx?district=020"
+  },
+  "bio": "Mike Steinmeyer serves as State Representative for Missouri House of Representatives District 20. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "MO",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://house.mo.gov/MemberDetails.aspx?district=020"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/mo/legislature/Mike-Steinmeyer-df4d176b-2a0b-41be-977f-efa722d6a321.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://s3.amazonaws.com/ballotpedia-api4/files/thumbs/200/300/Mike_Steinmeyer_20241028_013139.jpeg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Mike_Steinmeyer"
+    },
+    {
+      "title": "Public source",
+      "url": "https://house.mo.gov/MemberDetails.aspx?year=2025&code=R&district=020"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/197071/michael-steinmeyer"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/michaelsteinmeyer"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

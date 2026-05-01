@@ -1,0 +1,45 @@
+{
+  "id": "lesley-smith",
+  "name": "Lesley Smith",
+  "firstName": "Lesley",
+  "lastName": "Smith",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-49",
+  "jurisdiction": "Colorado House of Representatives",
+  "county": [
+    "Colorado"
+  ],
+  "termStart": "2025-01-08",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "State Capitol Room 307, Colorado  Building 200 E. Colfax Ave., Denver, CO 80203",
+    "phone": "303-866-2578",
+    "email": "lesley.smith.house@coleg.gov",
+    "website": "https://leg.colorado.gov/legislators/lesley-smith"
+  },
+  "bio": "Lesley Smith serves as State Representative for Colorado House of Representatives District 49. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "CO",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://leg.colorado.gov/legislators/lesley-smith"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/co/legislature/Lesley-Smith-475639af-fb56-4fde-9a78-213593db91d0.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Lesley_Smith_(Colorado)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/lesley-smith-colorado"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

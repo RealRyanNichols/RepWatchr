@@ -1,0 +1,68 @@
+{
+  "id": "david-tangipa",
+  "name": "David Tangipa",
+  "firstName": "David",
+  "lastName": "Tangipa",
+  "photo": "/images/officials/state-legislature/ca/david-tangipa.jpg",
+  "photoSourceUrl": "https://youngamericans.berkeley.edu/wp-content/uploads/2024/04/David-Tangipa-1024x1024.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "Assemblymember",
+  "district": "HD-8",
+  "jurisdiction": "California State Assembly",
+  "county": [
+    "California"
+  ],
+  "termStart": "2024-12-02",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 4310, 1021 O St. P.O. Box 942849, Sacramento, CA 94249",
+    "phone": "916-319-2008",
+    "email": "assemblymember.tangipa@assembly.ca.gov",
+    "website": "https://ad08.asmrc.org/"
+  },
+  "bio": "David Tangipa serves as Assemblymember for California State Assembly District 8. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "CA",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://ad08.asmrc.org/"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ca/legislature/David-Tangipa-748ce69c-a2bc-41a7-95e2-b09fba6e5ecd.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://youngamericans.berkeley.edu/wp-content/uploads/2024/04/David-Tangipa-1024x1024.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ad08.asmrc.org"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/David_Tangipa"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/David_Tangipa"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/213160/david-tangipa"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.assembly.ca.gov/assemblymembers/08"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/david-tangipa-819877b2"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

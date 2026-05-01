@@ -1,0 +1,59 @@
+{
+  "id": "dean-kaufert",
+  "name": "Dean Kaufert",
+  "firstName": "Dean",
+  "lastName": "Kaufert",
+  "party": "R",
+  "level": "state",
+  "position": "Assemblymember",
+  "district": "HD-53",
+  "jurisdiction": "Wisconsin State Assembly",
+  "county": [
+    "Wisconsin"
+  ],
+  "termStart": "2025-01-06",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "email": "rep.kaufert@legis.wisconsin.gov",
+    "website": "https://docs.legis.wisconsin.gov/2025/legislators/assembly/2852"
+  },
+  "bio": "Dean Kaufert serves as Assemblymember for Wisconsin State Assembly District 53. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "WI",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://docs.legis.wisconsin.gov/2025/legislators/assembly/2852"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/wi/legislature/Dean-Kaufert-72aa0b66-48f0-41fd-8ac8-b33f610d97c7.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Dean_Kaufert"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Dean_Kaufert"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/3507/dean-kaufert"
+    },
+    {
+      "title": "Public source",
+      "url": "https://legis.wisconsin.gov/assembly/53/kaufert"
+    },
+    {
+      "title": "Public source",
+      "url": "https://legis.wisconsin.gov/Pages/leg-info.aspx?d=55&h=A"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/dean-kaufert-0219195a"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

@@ -1,0 +1,69 @@
+{
+  "id": "wayne-fontana",
+  "name": "Wayne Fontana",
+  "firstName": "Wayne",
+  "lastName": "Fontana",
+  "party": "D",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-42",
+  "jurisdiction": "Pennsylvania Senate",
+  "county": [
+    "Pennsylvania"
+  ],
+  "termStart": "2005-06-14",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 543, Main Capitol Senate Box 203042, Harrisburg, PA 17120",
+    "phone": "717-787-5300",
+    "email": "fontana@pasenate.com",
+    "website": "https://www.legis.state.pa.us/cfdocs/legis/home/member_information/Senate_bio.cfm?id=1041",
+    "socialMedia": {
+      "x": "https://x.com/waynedfontana",
+      "twitter": "https://x.com/waynedfontana"
+    }
+  },
+  "bio": "Wayne Fontana serves as State Senator for Pennsylvania Senate District 42. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "PA",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.legis.state.pa.us/cfdocs/legis/home/member_information/Senate_bio.cfm?id=1041"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/pa/legislature/Wayne-D-Fontana-b93e4f38-764f-4e95-bd51-4d40dba0aaa4.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Wayne_Fontana"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Wayne_D._Fontana"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.legis.state.pa.us/cfdocs/legis/home/member_information/mbrList.cfm?body=S&sort=alpha"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.legis.state.pa.us/cfdocs/legis/home/member_information/senators_alpha.cfm"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.palegis.us/senate/members/bio/1041/sen-fontana"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.senatorfontana.com"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.senatorfontana.com/about"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

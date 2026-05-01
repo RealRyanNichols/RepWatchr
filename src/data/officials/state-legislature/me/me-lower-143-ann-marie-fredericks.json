@@ -1,0 +1,53 @@
+{
+  "id": "ann-marie-fredericks",
+  "name": "Ann Marie Fredericks",
+  "firstName": "Ann Marie",
+  "lastName": "Fredericks",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-143",
+  "jurisdiction": "Maine House of Representatives",
+  "county": [
+    "Maine"
+  ],
+  "termStart": "2022-12-07",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 332, House Republican Office 2 State House Station, Augusta, ME 04333",
+    "phone": "800-423-2900",
+    "email": "ann.fredericks@legislature.maine.gov",
+    "website": "https://legislature.maine.gov/house/house/MemberProfiles/Details/1468"
+  },
+  "bio": "Ann Marie Fredericks serves as State Representative for Maine House of Representatives District 143. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "ME",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://legislature.maine.gov/house/house/MemberProfiles/Details/1468"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/me/legislature/Ann-Fredericks-8646c09c-1d84-4065-bcf2-8be6a8baf494.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Ann_Marie_Fredericks"
+    },
+    {
+      "title": "Public source",
+      "url": "https://legislature.maine.gov/house/house/MemberProfiles/ListAlpha"
+    },
+    {
+      "title": "Public source",
+      "url": "https://mainehousegop.org/members/fredericks-ann"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/annmarie-fredericks-828bba225"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

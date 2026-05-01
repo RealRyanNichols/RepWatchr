@@ -1,0 +1,61 @@
+{
+  "id": "linda-trujillo",
+  "name": "Linda Trujillo",
+  "firstName": "Linda",
+  "lastName": "Trujillo",
+  "party": "D",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-24",
+  "jurisdiction": "New Mexico Senate",
+  "county": [
+    "New Mexico"
+  ],
+  "termStart": "2025-01-01",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "State Capitol Room 416G, New Mexico  490 Old Santa Fe Trail, Santa Fe, NM 87501",
+    "phone": "505-986-4863",
+    "email": "linda.trujillo@nmlegis.gov",
+    "website": "https://www.nmlegis.gov/Members/Legislator?SponCode=HTRUL",
+    "socialMedia": {
+      "x": "https://x.com/jellybeanlaw4",
+      "twitter": "https://x.com/jellybeanlaw4"
+    }
+  },
+  "bio": "Linda Trujillo serves as State Senator for New Mexico Senate District 24. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "NM",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.nmlegis.gov/Members/Legislator?SponCode=HTRUL"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/nm/legislature/Linda-M-Trujillo-4cbcf352-3f7a-412d-afc6-568dc4b94400.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Linda_Trujillo"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Linda_Trujillo"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/168393/linda-trujillo"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/linda-trujillo-606472240"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.nmlegis.gov/Members/Legislator?SponCode=STRUL"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

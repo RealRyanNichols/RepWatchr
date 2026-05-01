@@ -1,0 +1,60 @@
+{
+  "id": "mike-lay",
+  "name": "Mike Lay",
+  "firstName": "Mike",
+  "lastName": "Lay",
+  "photo": "/images/officials/state-legislature/ok/mike-lay.jpg",
+  "photoSourceUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS6rbtW0elpYl-o3FI3jbR9-PkUylFA7p5-Ig&s",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-68",
+  "jurisdiction": "Oklahoma House of Representatives",
+  "county": [
+    "Oklahoma"
+  ],
+  "termStart": "2024-11-20",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 260, 2300 N. Lincoln Blvd., Oklahoma City, OK 73105",
+    "phone": "405-557-7340",
+    "email": "mike.lay@okhouse.gov",
+    "website": "https://www.okhouse.gov/representatives/mike-lay"
+  },
+  "bio": "Mike Lay serves as State Representative for Oklahoma House of Representatives District 68. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "OK",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.okhouse.gov/representatives/mike-lay"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ok/legislature/Mike-Lay-65f17e9b-aa29-4241-80c8-a800aea8ddae.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS6rbtW0elpYl-o3FI3jbR9-PkUylFA7p5-Ig&s"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Mike_Lay"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Mike_Lay"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/216521/mike-lay"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/mike-lay-41b57a4a"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

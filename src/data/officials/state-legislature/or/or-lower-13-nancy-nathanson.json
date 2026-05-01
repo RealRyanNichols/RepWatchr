@@ -1,0 +1,68 @@
+{
+  "id": "nancy-nathanson",
+  "name": "Nancy Nathanson",
+  "firstName": "Nancy",
+  "lastName": "Nathanson",
+  "photo": "/images/officials/state-legislature/or/nancy-nathanson.jpg",
+  "photoSourceUrl": "https://www.oregonlegislature.gov/nathanson/PublishingImages/member_photo.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-13",
+  "jurisdiction": "Oregon House of Representatives",
+  "county": [
+    "Oregon"
+  ],
+  "termStart": "",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room H-279, 900 Court St. NE, Salem, OR 97301",
+    "phone": "503-986-1413",
+    "email": "rep.nancynathanson@oregonlegislature.gov",
+    "website": "https://www.oregonlegislature.gov/nathanson"
+  },
+  "bio": "Nancy Nathanson serves as State Representative for Oregon House of Representatives District 13. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "OR",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.oregonlegislature.gov/nathanson"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/or/legislature/Nancy-Nathanson-dd5774a0-d6fe-44cc-86b3-b197225666eb.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://www.oregonlegislature.gov/nathanson/PublishingImages/member_photo.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://api.oregonlegislature.gov/odata/odataservice.svc/LegislativeSessions('2022R1')/Legislators"
+    },
+    {
+      "title": "Public source",
+      "url": "https://api.oregonlegislature.gov/odata/odataservice.svc/LegislativeSessions('2023R1')/Legislators"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Nancy_Nathanson"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Nancy_Nathanson"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/58128/nancy-nathanson"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/nancy-nathanson-44440a20"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

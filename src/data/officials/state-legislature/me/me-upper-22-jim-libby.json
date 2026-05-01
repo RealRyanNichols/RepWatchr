@@ -1,0 +1,72 @@
+{
+  "id": "jim-libby",
+  "name": "Jim Libby",
+  "firstName": "Jim",
+  "lastName": "Libby",
+  "photo": "/images/officials/state-legislature/me/jim-libby.jpg",
+  "photoSourceUrl": "https://legislature.maine.gov/uploads/visual_edit/libby-1.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-22",
+  "jurisdiction": "Maine Senate",
+  "county": [
+    "Maine"
+  ],
+  "termStart": "2022-12-07",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "3 State House Station, Augusta, ME 04333",
+    "phone": "207-287-1505",
+    "email": "james.libby@legislature.maine.gov",
+    "website": "https://legislature.maine.gov/District22"
+  },
+  "bio": "Jim Libby serves as State Senator for Maine Senate District 22. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "ME",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://legislature.maine.gov/District22"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/me/legislature/James-Libby-32c9dbd7-beb7-481e-b0f4-22f3eaa00e50.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://legislature.maine.gov/uploads/visual_edit/libby-1.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/James_Libby_(Maine)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/James_Libby"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/6666/james-libby"
+    },
+    {
+      "title": "Public source",
+      "url": "https://legislature.maine.gov/district22"
+    },
+    {
+      "title": "Public source",
+      "url": "https://legislature.maine.gov/uploads/visual_edit/131-senator-contact-information-2.xlsx"
+    },
+    {
+      "title": "Public source",
+      "url": "https://mesenategop.com/your-senators/senator-james-libby"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/james-libby-a56297b"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

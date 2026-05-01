@@ -1,0 +1,72 @@
+{
+  "id": "dean-cray",
+  "name": "Dean Cray",
+  "firstName": "Dean",
+  "lastName": "Cray",
+  "photo": "/images/officials/state-legislature/me/dean-cray.jpg",
+  "photoSourceUrl": "https://legislature.maine.gov/house/house/Repository/MemberProfiles/898a0677-23f7-4936-a1a4-c913ae94227c_CRAY.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-69",
+  "jurisdiction": "Maine House of Representatives",
+  "county": [
+    "Maine"
+  ],
+  "termStart": "2022-12-07",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 332, House Republican Office 2 State House Station, Augusta, ME 04333",
+    "phone": "207-287-1440",
+    "email": "dean.cray@legislature.maine.gov",
+    "website": "https://legislature.maine.gov/house/house/MemberProfiles/Details/249"
+  },
+  "bio": "Dean Cray serves as State Representative for Maine House of Representatives District 69. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "ME",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://legislature.maine.gov/house/house/MemberProfiles/Details/249"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/me/legislature/Dean-A-Cray-8bc14822-ff62-4ffe-bf42-4114bd5bd99b.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://legislature.maine.gov/house/house/Repository/MemberProfiles/898a0677-23f7-4936-a1a4-c913ae94227c_CRAY.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Dean_Cray"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Dean_Cray"
+    },
+    {
+      "title": "Public source",
+      "url": "https://legislature.maine.gov/house/house/MemberProfiles/ListAlpha"
+    },
+    {
+      "title": "Public source",
+      "url": "https://mainehousegop.org/members/cray-dean"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/dean-cray-b4a58b33"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.maine.gov/legis/house/dist_mem.htm"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.maine.gov/legis/house/hsebios/crayda.htm"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

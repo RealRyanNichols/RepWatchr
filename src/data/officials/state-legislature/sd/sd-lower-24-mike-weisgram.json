@@ -1,0 +1,65 @@
+{
+  "id": "mike-weisgram",
+  "name": "Mike Weisgram",
+  "firstName": "Mike",
+  "lastName": "Weisgram",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-24",
+  "jurisdiction": "South Dakota House of Representatives",
+  "county": [
+    "South Dakota"
+  ],
+  "termStart": "2021-01-12",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Capitol Building 500 E. Capitol Ave., Pierre, SD 57501",
+    "phone": "605-773-3851",
+    "email": "mike.weisgram@sdlegislature.gov",
+    "website": "https://sdlegislature.gov/Legislators/Profile/3789/Detail"
+  },
+  "bio": "Mike Weisgram serves as State Representative for South Dakota House of Representatives District 24. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "SD",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://sdlegislature.gov/Legislators/Profile/3789/Detail"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/sd/legislature/Mike-Weisgram-f611d7e5-8438-49da-a323-374bbf0af218.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Mike_Weisgram"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Mike_Weisgram"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/191493/michael-weisgram"
+    },
+    {
+      "title": "Public source",
+      "url": "https://sdlegislature.gov/Legislators/Profile/4429/Detail"
+    },
+    {
+      "title": "Public source",
+      "url": "https://sdlegislature.gov/Legislators/Profile/4678/Detail"
+    },
+    {
+      "title": "Public source",
+      "url": "https://sdlegislature.gov/Legislators/Profile/4832/Detail"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/mike-weisgram-83047747"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

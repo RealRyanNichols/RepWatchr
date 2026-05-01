@@ -1,0 +1,69 @@
+{
+  "id": "cecilia-aguiar-curry",
+  "name": "Cecilia Aguiar-Curry",
+  "firstName": "Cecilia",
+  "lastName": "Aguiar-Curry",
+  "party": "D",
+  "level": "state",
+  "position": "Assemblymember",
+  "district": "HD-4",
+  "jurisdiction": "California State Assembly",
+  "county": [
+    "California"
+  ],
+  "termStart": "2016-12-05",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 8210, 1021 O St. P.O. Box 942849, Sacramento, CA 94249",
+    "phone": "916-319-2004",
+    "email": "assemblymember.aguiar-curry@assembly.ca.gov",
+    "website": "https://a04.asmdc.org/"
+  },
+  "bio": "Cecilia Aguiar-Curry serves as Assemblymember for California State Assembly District 4. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "CA",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://a04.asmdc.org/"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ca/legislature/Cecilia-M-Aguiar-Curry-434bcfb4-1279-40cc-916b-f89af5805a9c.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://a04.asmdc.org"
+    },
+    {
+      "title": "Public source",
+      "url": "https://a04.asmdc.org/biography"
+    },
+    {
+      "title": "Public source",
+      "url": "https://assembly.ca.gov/assemblymembers"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Cecilia_Aguiar-Curry"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Cecilia_Aguiar-Curry"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/169297/cecilia-aguiar-curry"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.assembly.ca.gov/assemblymembers"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.assembly.ca.gov/assemblymembers/04"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

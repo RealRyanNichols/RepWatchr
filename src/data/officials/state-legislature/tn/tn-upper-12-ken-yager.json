@@ -1,0 +1,72 @@
+{
+  "id": "ken-yager",
+  "name": "Ken Yager",
+  "firstName": "Ken",
+  "lastName": "Yager",
+  "photo": "/images/officials/state-legislature/tn/ken-yager.jpg",
+  "photoSourceUrl": "http://www.capitol.tn.gov/senate/members/images/s12.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-12",
+  "jurisdiction": "Tennessee Senate",
+  "county": [
+    "Tennessee"
+  ],
+  "termStart": "2009-01-15",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 704, Cordell Hull Building 425 Rep. John Lewis Way North, Nashville, TN 37243",
+    "phone": "615-741-1449",
+    "email": "sen.ken.yager@capitol.tn.gov",
+    "website": "https://wapp.capitol.tn.gov/apps/legislatorinfo/member.aspx?district=S12"
+  },
+  "bio": "Ken Yager serves as State Senator for Tennessee Senate District 12. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "TN",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://wapp.capitol.tn.gov/apps/legislatorinfo/member.aspx?district=S12"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/tn/legislature/Ken-Yager-908edc68-a862-455c-a609-7619977252d1.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "http://www.capitol.tn.gov/senate/members/images/s12.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Ken_Yager"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Ken_Yager"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/104797/ken-yager"
+    },
+    {
+      "title": "Public source",
+      "url": "https://wapp.capitol.tn.gov/apps/LegislatorInfo/directory.aspx?chamber=S"
+    },
+    {
+      "title": "Public source",
+      "url": "https://wapp.capitol.tn.gov/apps/legislatorinfo/member?district=S12"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.capitol.tn.gov/senate/members"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.capitol.tn.gov/senate/members/"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

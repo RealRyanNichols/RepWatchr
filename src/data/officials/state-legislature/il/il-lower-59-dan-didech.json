@@ -1,0 +1,72 @@
+{
+  "id": "dan-didech",
+  "name": "Dan Didech",
+  "firstName": "Dan",
+  "lastName": "Didech",
+  "photo": "/images/officials/state-legislature/il/dan-didech.jpg",
+  "photoSourceUrl": "https://cdn.ilga.gov/assets/img/members/{1EA869A9-B93D-4E72-824B-E14992452581}.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-59",
+  "jurisdiction": "Illinois House of Representatives",
+  "county": [
+    "Illinois"
+  ],
+  "termStart": "2019-01-09",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 273-S, Stratton Office Building, Springfield, IL 62706",
+    "phone": "217-782-0499",
+    "email": "info@repdidech.com",
+    "website": "https://ilga.gov/house/Rep.asp?GA=101&MemberID=2737"
+  },
+  "bio": "Dan Didech serves as State Representative for Illinois House of Representatives District 59. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "IL",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://ilga.gov/house/Rep.asp?GA=101&MemberID=2737"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/il/legislature/Daniel-Didech-c5786e99-12fd-41eb-b40e-372187dde261.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://cdn.ilga.gov/assets/img/members/{1EA869A9-B93D-4E72-824B-E14992452581}.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Daniel_Didech"
+    },
+    {
+      "title": "Public source",
+      "url": "https://dlglawgroup.com/our-attorneys/daniel-c-didech"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Daniel_Didech"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ilga.gov/house/default.asp?GA=101"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ilga.gov/house/default.asp?GA=102"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ilga.gov/house/default.asp?GA=103"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ilga.gov/house/Rep.asp?GA=102&MemberID=2938"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

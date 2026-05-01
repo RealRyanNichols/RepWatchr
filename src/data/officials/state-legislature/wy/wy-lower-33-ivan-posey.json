@@ -1,0 +1,71 @@
+{
+  "id": "ivan-posey",
+  "name": "Ivan Posey",
+  "firstName": "Ivan",
+  "lastName": "Posey",
+  "photo": "/images/officials/state-legislature/wy/ivan-posey.jpg",
+  "photoSourceUrl": "https://wyoleg.gov/LegislatorSummary/Photos/68th-PoseyIvan.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-33",
+  "jurisdiction": "Wyoming House of Representatives",
+  "county": [
+    "Wyoming"
+  ],
+  "termStart": "2025-01-06",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "State Capitol 200 W. 24th St., Cheyenne, WY 82002",
+    "email": "ivan.posey@wyoleg.gov",
+    "website": "https://www.poseyforhd33.com/"
+  },
+  "bio": "Ivan Posey serves as State Representative for Wyoming House of Representatives District 33. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "WY",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.poseyforhd33.com/"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/wy/legislature/Ivan-Posey-df82de40-cf5b-4197-b276-5e5982146849.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://wyoleg.gov/LegislatorSummary/Photos/68th-PoseyIvan.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Ivan_Posey"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Ivan_Posey"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/218330/ivan-posey"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/ivan-posey-802848132"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.poseyforhd33.com"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.poseyforhd33.com/about"
+    },
+    {
+      "title": "Public source",
+      "url": "https://wyoleg.gov/Legislators/2025/H/2141"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

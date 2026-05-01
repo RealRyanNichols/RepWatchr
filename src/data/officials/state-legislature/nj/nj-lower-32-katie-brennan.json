@@ -1,0 +1,53 @@
+{
+  "id": "katie-brennan",
+  "name": "Katie Brennan",
+  "firstName": "Katie",
+  "lastName": "Brennan",
+  "party": "D",
+  "level": "state",
+  "position": "Assemblymember",
+  "district": "HD-32",
+  "jurisdiction": "New Jersey General Assembly",
+  "county": [
+    "New Jersey"
+  ],
+  "termStart": "2026-01-13",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "P.O. Box 068 State House, 145 W. State St., Trenton, NJ 08625",
+    "phone": "609-847-3905",
+    "email": "aswbrennan@njleg.org",
+    "website": "https://njleg.state.nj.us/legislative-roster/510/assemblywoman-brennan"
+  },
+  "bio": "Katie Brennan serves as Assemblymember for New Jersey General Assembly District 32. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "NJ",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://njleg.state.nj.us/legislative-roster/510/assemblywoman-brennan"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/nj/legislature/Katie-Brennan-a04dc132-6a91-4e1b-a336-ede062d06884.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Katie_Brennan"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Katie_Brennan_(politician)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.assemblydems.com/403/Katie-Brennan---District-32"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/brennankatherine"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

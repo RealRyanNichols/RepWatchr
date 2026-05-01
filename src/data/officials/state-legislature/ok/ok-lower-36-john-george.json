@@ -1,0 +1,57 @@
+{
+  "id": "john-george",
+  "name": "John George",
+  "firstName": "John",
+  "lastName": "George",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-36",
+  "jurisdiction": "Oklahoma House of Representatives",
+  "county": [
+    "Oklahoma"
+  ],
+  "termStart": "2022-11-23",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 504, 2300 N. Lincoln Blvd., Oklahoma City, OK 73105",
+    "phone": "405-557-7322",
+    "email": "john.george@okhouse.gov",
+    "website": "https://www.okhouse.gov/Members/Contact.aspx?District=36"
+  },
+  "bio": "John George serves as State Representative for Oklahoma House of Representatives District 36. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "OK",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.okhouse.gov/Members/Contact.aspx?District=36"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ok/legislature/John-George-3af08d09-7d36-4f0b-b257-a0206a8c2778.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/John_George_(Oklahoma)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/John_George_(Oklahoma_politician)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/206373/john-george"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/john-george-609a899b"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.okhouse.gov/representatives/john-george"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

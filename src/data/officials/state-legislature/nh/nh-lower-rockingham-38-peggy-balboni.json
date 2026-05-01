@@ -1,0 +1,60 @@
+{
+  "id": "peggy-balboni",
+  "name": "Peggy Balboni",
+  "firstName": "Peggy",
+  "lastName": "Balboni",
+  "photo": "/images/officials/state-legislature/nh/peggy-balboni.jpg",
+  "photoSourceUrl": "https://storage.googleapis.com/enview-dev-public-general/legislative-people-photos/123163.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-Rockingham 38",
+  "jurisdiction": "New Hampshire House of Representatives",
+  "county": [
+    "New Hampshire"
+  ],
+  "termStart": "2022-12-07",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "State House 107 N. Main St., Concord, NH 03301",
+    "phone": "603-271-3661",
+    "email": "peggy.balboni@gc.nh.gov",
+    "website": "https://gc.nh.gov/house/members/member.aspx?pid=10885"
+  },
+  "bio": "Peggy Balboni serves as State Representative for New Hampshire House of Representatives District Rockingham 38. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "NH",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://gc.nh.gov/house/members/member.aspx?pid=10885"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/nh/legislature/Peggy-Balboni-3d7dffbf-59f3-4a2f-a29a-bcece98c17fb.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://storage.googleapis.com/enview-dev-public-general/legislative-people-photos/123163.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Peggy_Balboni"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Peggy_Balboni"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/210283/peggy-balboni"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.gencourt.state.nh.us/house/members/member.aspx?pid=10885"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

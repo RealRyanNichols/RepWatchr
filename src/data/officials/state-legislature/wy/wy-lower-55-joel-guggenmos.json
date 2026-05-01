@@ -1,0 +1,51 @@
+{
+  "id": "joel-guggenmos",
+  "name": "Joel Guggenmos",
+  "firstName": "Joel",
+  "lastName": "Guggenmos",
+  "photo": "/images/officials/state-legislature/wy/joel-guggenmos.jpg",
+  "photoSourceUrl": "https://wyoleg.gov/LegislatorSummary/Photos/68th-GuggenmosJoel.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-55",
+  "jurisdiction": "Wyoming House of Representatives",
+  "county": [
+    "Wyoming"
+  ],
+  "termStart": "2025-01-06",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "State Capitol 200 W. 24th St., Cheyenne, WY 82002",
+    "email": "joel.guggenmos@wyoleg.gov",
+    "website": "https://wyoleg.gov/Legislators/2025/H/2132"
+  },
+  "bio": "Joel Guggenmos serves as State Representative for Wyoming House of Representatives District 55. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "WY",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://wyoleg.gov/Legislators/2025/H/2132"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/wy/legislature/Joel-Guggenmos-39076643-ca3a-47d2-888e-d944eb4f5de9.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://wyoleg.gov/LegislatorSummary/Photos/68th-GuggenmosJoel.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Joel_Guggenmos"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/218356/joel-guggenmos"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

@@ -1,0 +1,64 @@
+{
+  "id": "camille-blaylock",
+  "name": "Camille Blaylock",
+  "firstName": "Camille",
+  "lastName": "Blaylock",
+  "photo": "/images/officials/state-legislature/id/camille-blaylock.jpg",
+  "photoSourceUrl": "https://idgop.org/wp-content/uploads/sites/4/2024/05/blaylock-1.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-11",
+  "jurisdiction": "Idaho Senate",
+  "county": [
+    "Idaho"
+  ],
+  "termStart": "2024-12-01",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "P.O. Box 83720 700 W. Jefferson St., Boise, ID 83720",
+    "phone": "208-332-1320",
+    "email": "cblaylock@senate.idaho.gov",
+    "website": "https://legislature.idaho.gov/legislators/membership/2025/id9400/"
+  },
+  "bio": "Camille Blaylock serves as State Senator for Idaho Senate District 11. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "ID",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://legislature.idaho.gov/legislators/membership/2025/id9400/"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/id/legislature/Camille-Blaylock-6a0fc69b-9842-4d47-b509-f555fee240e6.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://idgop.org/wp-content/uploads/sites/4/2024/05/blaylock-1.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Camille_Blaylock"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Camille_Blaylock"
+    },
+    {
+      "title": "Public source",
+      "url": "https://legislature.idaho.gov/legislators/membership/2025/id9400"
+    },
+    {
+      "title": "Public source",
+      "url": "https://legislature.idaho.gov/legislators/membership/2026/id9400"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/camilleblaylock"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

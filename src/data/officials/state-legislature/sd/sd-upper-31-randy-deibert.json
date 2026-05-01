@@ -1,0 +1,68 @@
+{
+  "id": "randy-deibert",
+  "name": "Randy Deibert",
+  "firstName": "Randy",
+  "lastName": "Deibert",
+  "photo": "/images/officials/state-legislature/sd/randy-deibert.jpg",
+  "photoSourceUrl": "https://s3.amazonaws.com/ballotpedia-api4/files/thumbs/200/300/RandyDeibert.png",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-31",
+  "jurisdiction": "South Dakota Senate",
+  "county": [
+    "South Dakota"
+  ],
+  "termStart": "2023-01-10",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Capitol Building 500 E. Capitol Ave., Pierre, SD 57501",
+    "phone": "605-773-3821",
+    "email": "randy.deibert@sdlegislature.gov",
+    "website": "https://sdlegislature.gov/Legislators/Profile/4448/Detail"
+  },
+  "bio": "Randy Deibert serves as State Senator for South Dakota Senate District 31. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "SD",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://sdlegislature.gov/Legislators/Profile/4448/Detail"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/sd/legislature/Randy-Deibert-73f418c4-6d07-4ef5-924f-1664738d2b46.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://s3.amazonaws.com/ballotpedia-api4/files/thumbs/200/300/RandyDeibert.png"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Randy_Deibert"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Randy_Deibert"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/205085/randy-deibert"
+    },
+    {
+      "title": "Public source",
+      "url": "https://sdlegislature.gov/Legislators/Profile/4597/Detail"
+    },
+    {
+      "title": "Public source",
+      "url": "https://sdlegislature.gov/Legislators/Profile/4745/Detail"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/randy-deibert-0b54a794"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

@@ -1,0 +1,56 @@
+{
+  "id": "ren-e-price",
+  "name": "Ren\u00e9e Price",
+  "firstName": "Ren\u00e9e",
+  "lastName": "Price",
+  "photo": "/images/officials/state-legislature/nc/ren-e-price.jpg",
+  "photoSourceUrl": "https://www.ncleg.gov/Members/MemberImage/H/810/Low",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-50",
+  "jurisdiction": "North Carolina House of Representatives",
+  "county": [
+    "North Carolina"
+  ],
+  "termStart": "2023-01-01",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 1321, North Carolina Legislative Building 16 W. Jones St., Raleigh, NC 27601",
+    "phone": "919-715-3019",
+    "email": "renee.price@ncleg.gov",
+    "website": "https://www.ncleg.gov/Members/Biography/H/810"
+  },
+  "bio": "Ren\u00e9e Price serves as State Representative for North Carolina House of Representatives District 50. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "NC",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.ncleg.gov/Members/Biography/H/810"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/nc/legislature/Rene-A-Price-7ee23b19-064e-4531-a9e8-2e928f8f2203.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://www.ncleg.gov/Members/MemberImage/H/810/Low"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Renee_Price"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/renee-price-94630b30"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.ncleg.gov/Members/MemberTable/H"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

@@ -1,0 +1,77 @@
+{
+  "id": "mike-webert",
+  "name": "Mike Webert",
+  "firstName": "Mike",
+  "lastName": "Webert",
+  "photo": "/images/officials/state-legislature/va/mike-webert.jpg",
+  "photoSourceUrl": "https://memdata.virginiageneralassembly.gov/images/display_image/H0247",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "Delegate",
+  "district": "HD-61",
+  "jurisdiction": "Virginia House of Delegates",
+  "county": [
+    "Virginia"
+  ],
+  "termStart": "2024-01-10",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 714, General Assembly Building 201 N. 9th St., Richmond, VA 23219",
+    "phone": "804-698-1061",
+    "email": "delmwebert@house.virginia.gov",
+    "website": "https://house.vga.virginia.gov/members/H0247",
+    "socialMedia": {
+      "x": "https://x.com/MichaelWebert",
+      "twitter": "https://x.com/MichaelWebert",
+      "facebook": "https://facebook.com/michaelwebertfordelegate"
+    }
+  },
+  "bio": "Mike Webert serves as Delegate for Virginia House of Delegates District 61. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "VA",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://house.vga.virginia.gov/members/H0247"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/va/legislature/Michael-J-Webert-bf425b62-d078-45bd-957c-baceb4bfad1b.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://memdata.virginiageneralassembly.gov/images/display_image/H0247"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Michael_Webert"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Michael_Webert"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/134510/mike-webert"
+    },
+    {
+      "title": "Public source",
+      "url": "https://lis.virginia.gov/191/mbr/MBR.HTM"
+    },
+    {
+      "title": "Public source",
+      "url": "https://lis.virginia.gov/201/mbr/MBR.HTM"
+    },
+    {
+      "title": "Public source",
+      "url": "https://lis.virginia.gov/cgi-bin/legp604.exe?191+mbr+H247"
+    },
+    {
+      "title": "Public source",
+      "url": "https://lis.virginia.gov/cgi-bin/legp604.exe?201+mbr+H247"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

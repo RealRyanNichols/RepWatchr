@@ -1,0 +1,64 @@
+{
+  "id": "april-rose",
+  "name": "April Rose",
+  "firstName": "April",
+  "lastName": "Rose",
+  "photo": "/images/officials/state-legislature/md/april-rose.jpg",
+  "photoSourceUrl": "https://mgaleg.maryland.gov/2025RS/images/rose01.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "Delegate",
+  "district": "HD-5",
+  "jurisdiction": "Maryland House of Delegates",
+  "county": [
+    "Maryland"
+  ],
+  "termStart": "2015-03-16",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 213, Lowe House Office Building 6 Bladen St., Annapolis, MD 21401",
+    "phone": "410-841-3070",
+    "email": "april.rose@house.maryland.gov",
+    "website": "https://mgaleg.maryland.gov/mgawebsite/Members/Details/rose01"
+  },
+  "bio": "April Rose serves as Delegate for Maryland House of Delegates District 5. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "MD",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://mgaleg.maryland.gov/mgawebsite/Members/Details/rose01"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/md/legislature/April-Rose-76812cdb-3d6d-458a-b864-feb72f363a8e.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://mgaleg.maryland.gov/2025RS/images/rose01.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/April_Rose"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/April_Rose_(politician)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://mgaleg.maryland.gov/webmga/frmMain.aspx?pid=sponpage&tab=subject6&id=rose01&stab=01"
+    },
+    {
+      "title": "Public source",
+      "url": "https://msa.maryland.gov/msa/mdmanual/06hse/html/msa17126.html"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/aprilrose1"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

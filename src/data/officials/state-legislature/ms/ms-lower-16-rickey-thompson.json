@@ -1,0 +1,64 @@
+{
+  "id": "rickey-thompson",
+  "name": "Rickey Thompson",
+  "firstName": "Rickey",
+  "lastName": "Thompson",
+  "photo": "/images/officials/state-legislature/ms/rickey-thompson.jpg",
+  "photoSourceUrl": "http://billstatus.ls.state.ms.us/members/house/thompson.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-16",
+  "jurisdiction": "Mississippi House of Representatives",
+  "county": [
+    "Mississippi"
+  ],
+  "termStart": "2020-01-07",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "State Capitol 400 High St., Jackson, MS 39201",
+    "phone": "601-359-3770",
+    "email": "rthompson@house.ms.gov",
+    "website": "https://billstatus.ls.state.ms.us/members/house/thompson.xml"
+  },
+  "bio": "Rickey Thompson serves as State Representative for Mississippi House of Representatives District 16. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "MS",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://billstatus.ls.state.ms.us/members/house/thompson.xml"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ms/legislature/Rickey-Thompson-f8b65fd8-7b11-4954-93fd-47a5cbbd53c8.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "http://billstatus.ls.state.ms.us/members/house/thompson.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Rickey_Thompson"
+    },
+    {
+      "title": "Public source",
+      "url": "https://billstatus.ls.state.ms.us/members/hr_membs.xml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Rickey_W._Thompson"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/186634/rickey-thompson"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/rickey-thompson-355464b1"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

@@ -1,0 +1,60 @@
+{
+  "id": "joseph-fox",
+  "name": "Joseph Fox",
+  "firstName": "Joseph",
+  "lastName": "Fox",
+  "photo": "/images/officials/state-legislature/mi/joseph-fox.jpg",
+  "photoSourceUrl": "https://www.house.mi.gov/media/Representatives/Fox-101.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-101",
+  "jurisdiction": "Michigan House of Representatives",
+  "county": [
+    "Michigan"
+  ],
+  "termStart": "2023-01-01",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room S-1385, Anderson House Office Building 124 N. Capitol Ave., Lansing, MI 48933",
+    "phone": "517-373-0825",
+    "email": "josephfox@house.mi.gov",
+    "website": "https://gophouse.org/member/RepJosephFox/posts"
+  },
+  "bio": "Joseph Fox serves as State Representative for Michigan House of Representatives District 101. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "MI",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://gophouse.org/member/RepJosephFox/posts"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/mi/legislature/Joseph-Fox-ba49b4ef-08fb-48a0-b8a9-495a3605ef0a.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://www.house.mi.gov/media/Representatives/Fox-101.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Joseph_Fox"
+    },
+    {
+      "title": "Public source",
+      "url": "https://gophouse.org/member/RepJosephFox/about"
+    },
+    {
+      "title": "Members List Page",
+      "url": "https://www.house.mi.gov/AllRepresentatives"
+    },
+    {
+      "title": "Member Details Page",
+      "url": "https://www.house.mi.gov/repdetail/repJosephFox"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

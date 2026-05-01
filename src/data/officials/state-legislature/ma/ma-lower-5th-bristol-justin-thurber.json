@@ -1,0 +1,52 @@
+{
+  "id": "justin-thurber",
+  "name": "Justin Thurber",
+  "firstName": "Justin",
+  "lastName": "Thurber",
+  "photo": "/images/officials/state-legislature/ma/justin-thurber.jpg",
+  "photoSourceUrl": "https://malegislature.gov/Legislators/Profile/170/J_T2.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-5th Bristol",
+  "jurisdiction": "Massachusetts House of Representatives",
+  "county": [
+    "Massachusetts"
+  ],
+  "termStart": "2025-01-01",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 443, State House 24 Beacon St., Boston, MA 02133",
+    "phone": "617-722-2460",
+    "email": "justin.thurber@mahouse.gov",
+    "website": "https://malegislature.gov/Legislators/Profile/J_T2"
+  },
+  "bio": "Justin Thurber serves as State Representative for Massachusetts House of Representatives District 5th Bristol. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "MA",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://malegislature.gov/Legislators/Profile/J_T2"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ma/legislature/Justin-Thurber-4002361d-3211-4f02-b627-95d6e6a3f76c.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://malegislature.gov/Legislators/Profile/170/J_T2.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Justin_Thurber"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/218957/justin-thurber"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

@@ -1,0 +1,69 @@
+{
+  "id": "larry-springer",
+  "name": "Larry Springer",
+  "firstName": "Larry",
+  "lastName": "Springer",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-45",
+  "jurisdiction": "Washington House of Representatives",
+  "county": [
+    "Washington"
+  ],
+  "termStart": "",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 437A, Legislative Building P.O. Box 40600, Olympia, WA 98504",
+    "phone": "360-786-7822",
+    "email": "larry.springer@leg.wa.gov",
+    "website": "https://housedemocrats.wa.gov/legislators/Larry-Springer/"
+  },
+  "bio": "Larry Springer serves as State Representative for Washington House of Representatives District 45. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "WA",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://housedemocrats.wa.gov/legislators/Larry-Springer/"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/wa/legislature/Larry-Springer-a677ddb3-2d16-479d-aeaf-7d90e7c17509.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://app.leg.wa.gov/ContentParts/MemberDirectory/?a=House"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Larry_Springer"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Larry_Springer"
+    },
+    {
+      "title": "Public source",
+      "url": "https://housedemocrats.wa.gov/springer"
+    },
+    {
+      "title": "Public source",
+      "url": "https://housedemocrats.wa.gov/springer/"
+    },
+    {
+      "title": "Public source",
+      "url": "https://housedemocrats.wa.gov/springer/biography"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/51435/larry-springer"
+    },
+    {
+      "title": "Public source",
+      "url": "https://leg.wa.gov/legislators/member/larry-springer"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

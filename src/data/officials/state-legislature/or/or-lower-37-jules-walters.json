@@ -1,0 +1,60 @@
+{
+  "id": "jules-walters",
+  "name": "Jules Walters",
+  "firstName": "Jules",
+  "lastName": "Walters",
+  "photo": "/images/officials/state-legislature/or/jules-walters.jpg",
+  "photoSourceUrl": "https://www.oregonlegislature.gov/house/MemberPhotos/walters.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-37",
+  "jurisdiction": "Oregon House of Representatives",
+  "county": [
+    "Oregon"
+  ],
+  "termStart": "2023-01-09",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room H-489, 900 Court St. NE, Salem, OR 97301",
+    "phone": "503-986-1437",
+    "email": "rep.juleswalters@oregonlegislature.gov",
+    "website": "https://www.oregonlegislature.gov/walters"
+  },
+  "bio": "Jules Walters serves as State Representative for Oregon House of Representatives District 37. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "OR",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.oregonlegislature.gov/walters"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/or/legislature/Jules-Walters-55ecfa8d-e89f-4a7b-af2d-6822f1025607.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://www.oregonlegislature.gov/house/MemberPhotos/walters.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://api.oregonlegislature.gov/odata/odataservice.svc/LegislativeSessions('2023R1')/Legislators"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Jules_Walters"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Jules_Walters"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/juleswaltersoregon"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

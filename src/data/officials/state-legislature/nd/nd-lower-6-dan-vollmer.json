@@ -1,0 +1,60 @@
+{
+  "id": "dan-vollmer",
+  "name": "Dan Vollmer",
+  "firstName": "Dan",
+  "lastName": "Vollmer",
+  "photo": "/images/officials/state-legislature/nd/dan-vollmer.jpg",
+  "photoSourceUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRyDqLw7JBj51C2bugaTTnyhM7X1pQwN2zhhQ&s",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-6",
+  "jurisdiction": "North Dakota House of Representatives",
+  "county": [
+    "North Dakota"
+  ],
+  "termStart": "2024-12-01",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "State Capitol 600 E. Boulevard Ave., Bismarck, ND 58505",
+    "phone": "701-328-3373",
+    "email": "dvollmer@ndlegis.gov",
+    "website": "https://ndlegis.gov/biography/daniel-r-vollmer"
+  },
+  "bio": "Dan Vollmer serves as State Representative for North Dakota House of Representatives District 6. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "ND",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://ndlegis.gov/biography/daniel-r-vollmer"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/nd/legislature/Dan-Vollmer-bd6e2ebb-5fc3-4a04-9def-d9e581c39783.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRyDqLw7JBj51C2bugaTTnyhM7X1pQwN2zhhQ&s"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Dan_Vollmer"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Dan_Vollmer"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/216661/dan-vollmer"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/dan-vollmer-8a4404a3"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

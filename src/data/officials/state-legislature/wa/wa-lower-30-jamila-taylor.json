@@ -1,0 +1,69 @@
+{
+  "id": "jamila-taylor",
+  "name": "Jamila Taylor",
+  "firstName": "Jamila",
+  "lastName": "Taylor",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-30",
+  "jurisdiction": "Washington House of Representatives",
+  "county": [
+    "Washington"
+  ],
+  "termStart": "2021-01-11",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 370, John L. O'Brien Building P.O. Box 40600, Olympia, WA 98504",
+    "phone": "360-786-7898",
+    "email": "jamila.taylor@leg.wa.gov",
+    "website": "https://housedemocrats.wa.gov/Taylor/"
+  },
+  "bio": "Jamila Taylor serves as State Representative for Washington House of Representatives District 30. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "WA",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://housedemocrats.wa.gov/Taylor/"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/wa/legislature/Jamila-Taylor-9ed4e759-d24a-48f1-a691-635984357174.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://app.leg.wa.gov/ContentParts/MemberDirectory/?a=House"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Jamila_Taylor"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Jamila_Taylor"
+    },
+    {
+      "title": "Public source",
+      "url": "https://housedemocrats.wa.gov/taylor"
+    },
+    {
+      "title": "Public source",
+      "url": "https://housedemocrats.wa.gov/taylor/"
+    },
+    {
+      "title": "Public source",
+      "url": "https://housedemocrats.wa.gov/taylor/biography"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/192841/jamila-taylor"
+    },
+    {
+      "title": "Public source",
+      "url": "https://leg.wa.gov/legislators/member/jamila-taylor"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

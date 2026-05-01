@@ -1,0 +1,72 @@
+{
+  "id": "mark-tisdel",
+  "name": "Mark Tisdel",
+  "firstName": "Mark",
+  "lastName": "Tisdel",
+  "photo": "/images/officials/state-legislature/mi/mark-tisdel.jpg",
+  "photoSourceUrl": "https://dtj5wlj7ond0z.cloudfront.net/uploads/2021/01/HS_TISDEL_0121_NSC_7619-scaled.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-55",
+  "jurisdiction": "Michigan House of Representatives",
+  "county": [
+    "Michigan"
+  ],
+  "termStart": "2023-01-01",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room N-989, Anderson House Office Building 124 N. Capitol Ave., Lansing, MI 48933",
+    "phone": "517-373-1792",
+    "email": "marktisdel@house.mi.gov",
+    "website": "https://gophouse.org/member/repmarktisdel/about"
+  },
+  "bio": "Mark Tisdel serves as State Representative for Michigan House of Representatives District 55. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "MI",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://gophouse.org/member/repmarktisdel/about"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/mi/legislature/Mark-Tisdel-a5bb89cb-ac42-47c0-bcc8-96bf18e4d865.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://dtj5wlj7ond0z.cloudfront.net/uploads/2021/01/HS_TISDEL_0121_NSC_7619-scaled.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Mark_Tisdel"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Mark_Tisdel"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/146854/mark-tisdel"
+    },
+    {
+      "title": "Member Details Page",
+      "url": "https://reptisdel.com"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.house.mi.gov/AllRepresentatives"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.house.mi.gov/MHRPublic/frmRepListMilenia.aspx?all=true"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/mark-tisdel-64335636"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

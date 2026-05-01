@@ -1,0 +1,72 @@
+{
+  "id": "javier-cervantes",
+  "name": "Javier Cervantes",
+  "firstName": "Javier",
+  "lastName": "Cervantes",
+  "photo": "/images/officials/state-legislature/il/javier-cervantes.jpg",
+  "photoSourceUrl": "https://cdn.ilga.gov/assets/img/members/{C05FD6B2-E0A9-4446-AAE5-D67396FCE7D5}.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-1",
+  "jurisdiction": "Illinois Senate",
+  "county": [
+    "Illinois"
+  ],
+  "termStart": "2023-01-11",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 625, Capitol Building, Springfield, IL 62706",
+    "phone": "217-782-9415",
+    "email": "senator.jcervantes@gmail.com",
+    "website": "https://ilga.gov/senate/Senator.asp?GA=103&MemberID=3206"
+  },
+  "bio": "Javier Cervantes serves as State Senator for Illinois Senate District 1. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "IL",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://ilga.gov/senate/Senator.asp?GA=103&MemberID=3206"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/il/legislature/Javier-L-Cervantes-caf27c44-2fec-4e26-a102-e6a30ca56be0.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://cdn.ilga.gov/assets/img/members/{C05FD6B2-E0A9-4446-AAE5-D67396FCE7D5}.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Javier_Loera_Cervantes"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ilga.gov/senate/default.asp?GA=103"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/204366/javier-cervantes"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.ilga.gov/Senate/Members/Details/3403"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.ilga.gov/senate/Senator.asp?GA=103&MemberID=3206"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.ilga.gov/senate/Senator.asp?GA=104&MemberID=3403"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/javier-loera-cervantes-9959a7173"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

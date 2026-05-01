@@ -1,0 +1,55 @@
+{
+  "id": "elissa-campbell",
+  "name": "Elissa Campbell",
+  "firstName": "Elissa",
+  "lastName": "Campbell",
+  "photo": "/images/officials/state-legislature/wy/elissa-campbell.jpg",
+  "photoSourceUrl": "https://wyoleg.gov/LegislatorSummary/Photos/68th-CampbellElissa.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-56",
+  "jurisdiction": "Wyoming House of Representatives",
+  "county": [
+    "Wyoming"
+  ],
+  "termStart": "2025-01-06",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "State Capitol 200 W. 24th St., Cheyenne, WY 82002",
+    "email": "elissa.campbell@wyoleg.gov",
+    "website": "https://wyoleg.gov/Legislators/2025/H/2133"
+  },
+  "bio": "Elissa Campbell serves as State Representative for Wyoming House of Representatives District 56. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "WY",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://wyoleg.gov/Legislators/2025/H/2133"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/wy/legislature/Elissa-Campbell-c0c75f8e-6d58-4197-9076-154528191d47.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://wyoleg.gov/LegislatorSummary/Photos/68th-CampbellElissa.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Elissa_Campbell"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/218357/elissa-campbell"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/elissa-campbell-b6511b11"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

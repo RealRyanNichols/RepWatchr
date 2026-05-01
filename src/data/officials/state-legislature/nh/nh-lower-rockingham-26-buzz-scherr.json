@@ -1,0 +1,64 @@
+{
+  "id": "buzz-scherr",
+  "name": "Buzz Scherr",
+  "firstName": "Buzz",
+  "lastName": "Scherr",
+  "photo": "/images/officials/state-legislature/nh/buzz-scherr.jpg",
+  "photoSourceUrl": "https://bloximages.newyork1.vip.townnews.com/unionleader.com/content/tncms/assets/v3/editorial/c/73/c73dbee6-e3fd-59b7-b09b-cb7ac9197a64/60b10625b5ec1.image.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-Rockingham 26",
+  "jurisdiction": "New Hampshire House of Representatives",
+  "county": [
+    "New Hampshire"
+  ],
+  "termStart": "2024-12-04",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "State House 107 N. Main St., Concord, NH 03301",
+    "phone": "603-271-3661",
+    "email": "buzz.scherr@gc.nh.gov",
+    "website": "https://gc.nh.gov/house/members/member.aspx?pid=11267"
+  },
+  "bio": "Buzz Scherr serves as State Representative for New Hampshire House of Representatives District Rockingham 26. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "NH",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://gc.nh.gov/house/members/member.aspx?pid=11267"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/nh/legislature/Buzz-Scherr-214295d3-da3e-45cb-89bc-80de2be1a071.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://bloximages.newyork1.vip.townnews.com/unionleader.com/content/tncms/assets/v3/editorial/c/73/c73dbee6-e3fd-59b7-b09b-cb7ac9197a64/60b10625b5ec1.image.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Buzz_Scherr"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Buzz_Scherr"
+    },
+    {
+      "title": "Public source",
+      "url": "https://gencourt.state.nh.us/house/members/member.aspx?pid=11267"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/219212/buzz-scherr"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/albert-scherr-713b5189"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

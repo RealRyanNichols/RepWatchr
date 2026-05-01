@@ -1,0 +1,72 @@
+{
+  "id": "joe-kerwin",
+  "name": "Joe Kerwin",
+  "firstName": "Joe",
+  "lastName": "Kerwin",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-125",
+  "jurisdiction": "Pennsylvania House of Representatives",
+  "county": [
+    "Pennsylvania"
+  ],
+  "termStart": "2020-12-01",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 115, Ryan Office Building P.O. Box 202125, Harrisburg, PA 17120",
+    "phone": "717-260-6148",
+    "email": "jkerwin@pahousegop.com",
+    "website": "https://www.legis.state.pa.us/cfdocs/legis/home/member_information/House_bio.cfm?id=1907",
+    "socialMedia": {
+      "facebook": "https://facebook.com/PA-State-Rep-Joe-Kerwin-100763238533524"
+    }
+  },
+  "bio": "Joe Kerwin serves as State Representative for Pennsylvania House of Representatives District 125. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "PA",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.legis.state.pa.us/cfdocs/legis/home/member_information/House_bio.cfm?id=1907"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/pa/legislature/Joe-Kerwin-8a7494a6-3d82-432b-a5c2-6dc46d192611.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Joe_Kerwin"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Joseph_Kerwin_(politician)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.legis.state.pa.us/cfdocs/legis/home/member_information/mbrList.cfm?body=H&sort=alpha"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.legis.state.pa.us/cfdocs/legis/home/member_information/representatives_alpha.cfm"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/joseph-kerwin-6219a6113"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.palegis.us/house/members/bio/1907/rep-kerwin"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.repjoekerwin.com"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.repjoekerwin.com/"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

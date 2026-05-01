@@ -1,0 +1,72 @@
+{
+  "id": "casey-murdock",
+  "name": "Casey Murdock",
+  "firstName": "Casey",
+  "lastName": "Murdock",
+  "photo": "/images/officials/state-legislature/ok/casey-murdock.jpg",
+  "photoSourceUrl": "https://oksenate.gov/sites/default/files/murdock.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-27",
+  "jurisdiction": "Oklahoma Senate",
+  "county": [
+    "Oklahoma"
+  ],
+  "termStart": "2018-02-26",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 431, 2300 N. Lincoln Blvd., Oklahoma City, OK 73105",
+    "phone": "405-521-5626",
+    "email": "murdock@oksenate.gov",
+    "website": "https://oksenate.gov/contact-senator?sid=1862"
+  },
+  "bio": "Casey Murdock serves as State Senator for Oklahoma Senate District 27. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "OK",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://oksenate.gov/contact-senator?sid=1862"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ok/legislature/Casey-Murdock-8c8517c3-75ee-4b27-8d8c-3444c036ba78.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://oksenate.gov/sites/default/files/murdock.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Casey_Murdock"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Casey_Murdock"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/152372/casey-murdock"
+    },
+    {
+      "title": "Public source",
+      "url": "https://oksenate.gov/Senators/biographies/murdock_bio.aspx"
+    },
+    {
+      "title": "Public source",
+      "url": "https://oksenate.gov/Senators/biographies/murdock_bio.html"
+    },
+    {
+      "title": "Public source",
+      "url": "https://oksenate.gov/senators/casey-murdock"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/casey-murdock-46b57896"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

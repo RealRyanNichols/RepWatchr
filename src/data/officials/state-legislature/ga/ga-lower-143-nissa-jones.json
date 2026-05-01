@@ -1,0 +1,68 @@
+{
+  "id": "nissa-jones",
+  "name": "Nissa Jones",
+  "firstName": "Nissa",
+  "lastName": "Jones",
+  "photo": "/images/officials/state-legislature/ga/nissa-jones.jpg",
+  "photoSourceUrl": "https://s3.amazonaws.com/ballotpedia-api4/files/thumbs/200/300/AnissaJones2024.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-143",
+  "jurisdiction": "Georgia House of Representatives",
+  "county": [
+    "Georgia"
+  ],
+  "termStart": "2025-01-13",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 611-D, Coverdell Legislative Office Building 18 Capitol Square SW, Atlanta, GA 30334",
+    "phone": "404-656-0314",
+    "email": "anissa.jones@house.ga.gov",
+    "website": "https://www.legis.ga.gov/members/house/5081"
+  },
+  "bio": "Nissa Jones serves as State Representative for Georgia House of Representatives District 143. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "GA",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.legis.ga.gov/members/house/5081"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ga/legislature/Nissa-Jones-55074030-4d64-4da0-b68a-5e3945d00f25.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://s3.amazonaws.com/ballotpedia-api4/files/thumbs/200/300/AnissaJones2024.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Anissa_Jones"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Anissa_Jones_(politician)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/215269/anissa-jones"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.legis.ga.gov/api/document/docs/default-source/bios/jones-anissa-5081.pdf"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.legis.ga.gov/members/house/5081?session=1033"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/drnissadc"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

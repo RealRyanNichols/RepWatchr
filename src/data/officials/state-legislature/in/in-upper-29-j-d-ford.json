@@ -1,0 +1,77 @@
+{
+  "id": "j-d-ford",
+  "name": "J.D. Ford",
+  "firstName": "J.D.",
+  "lastName": "Ford",
+  "photo": "/images/officials/state-legislature/in/j-d-ford.jpg",
+  "photoSourceUrl": "https://indianasenatedemocrats.org/wp-content/uploads/2022/12/Senator-Ford-Indiana-State-Flag-Headshot.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-29",
+  "jurisdiction": "Indiana Senate",
+  "county": [
+    "Indiana"
+  ],
+  "termStart": "2018-11-07",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "200 W. Washington St., Indianapolis, IN 46204",
+    "phone": "317-232-9400",
+    "email": "s29@iga.in.gov",
+    "website": "https://iga.in.gov/legislative/2021/legislators/legislator_jd_ford_1",
+    "socialMedia": {
+      "x": "https://x.com/fordsenator",
+      "twitter": "https://x.com/fordsenator",
+      "facebook": "https://facebook.com/senatorjdford"
+    }
+  },
+  "bio": "J.D. Ford serves as State Senator for Indiana Senate District 29. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "IN",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://iga.in.gov/legislative/2021/legislators/legislator_jd_ford_1"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/in/legislature/JD-Ford-85b8c0cf-3df4-45a1-8c38-d220b7122226.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://indianasenatedemocrats.org/wp-content/uploads/2022/12/Senator-Ford-Indiana-State-Flag-Headshot.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://api.iga.in.gov/2021/legislators/jd_ford_1"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/J.D._Ford"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/J._D._Ford"
+    },
+    {
+      "title": "Public source",
+      "url": "https://iga.in.gov/legislative/2021/legislators/legislator_jd_ford_1/"
+    },
+    {
+      "title": "Public source",
+      "url": "https://indianasenatedemocrats.org/senators/s29"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/178147/jd-ford"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.indianasenatedemocrats.org/s29"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

@@ -1,0 +1,68 @@
+{
+  "id": "john-michael-parker",
+  "name": "John-Michael Parker",
+  "firstName": "John-Michael",
+  "lastName": "Parker",
+  "photo": "/images/officials/state-legislature/ct/john-michael-parker.jpg",
+  "photoSourceUrl": "http://www2.housedems.ct.gov/Parker/images/Parker_HS.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-101",
+  "jurisdiction": "Connecticut House of Representatives",
+  "county": [
+    "Connecticut"
+  ],
+  "termStart": "2021-01-06",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 3001, Legislative Office Building 300 Capitol Ave., Hartford, CT 06106",
+    "phone": "800-842-8267",
+    "email": "john-michael.parker@cga.ct.gov",
+    "website": "https://www.cga.ct.gov/asp/CGABillStatus/CGAMemberBills.asp?dist_code=%27101%27&dist_name=101%20-%Parker,%John-Michael"
+  },
+  "bio": "John-Michael Parker serves as State Representative for Connecticut House of Representatives District 101. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "CT",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.cga.ct.gov/asp/CGABillStatus/CGAMemberBills.asp?dist_code=%27101%27&dist_name=101%20-%Parker,%John-Michael"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ct/legislature/John-Michael-Parker-7e0711c4-57d1-405e-afe7-33df0bf064d6.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "http://www2.housedems.ct.gov/Parker/images/Parker_HS.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "ftp://ftp.cga.ct.gov/pub/data/LegislatorDatabase.csv"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/John-Michael_Parker"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/John-Michael_Parker"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/185737/john-michael-parker"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.housedems.ct.gov/Parker"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/john-michael-parker-bb33901a"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

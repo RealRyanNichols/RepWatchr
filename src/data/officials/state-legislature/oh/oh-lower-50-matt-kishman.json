@@ -1,0 +1,56 @@
+{
+  "id": "matt-kishman",
+  "name": "Matt Kishman",
+  "firstName": "Matt",
+  "lastName": "Kishman",
+  "photo": "/images/officials/state-legislature/oh/matt-kishman.jpg",
+  "photoSourceUrl": "https://images.squarespace-cdn.com/content/v1/65a09d4d50790252eca6f810/be978e73-e9f1-4978-9bcf-9553f9a6d410/Kishman+Matthew_2270.jpg?format=500w",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-50",
+  "jurisdiction": "Ohio House of Representatives",
+  "county": [
+    "Ohio"
+  ],
+  "termStart": "2025-01-01",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "77 S. High St. 11th Floor, Columbus, OH 43215",
+    "phone": "614-466-9078",
+    "email": "rep50@ohiohouse.gov",
+    "website": "https://ohiohouse.gov/members/matthew-kishman"
+  },
+  "bio": "Matt Kishman serves as State Representative for Ohio House of Representatives District 50. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "OH",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://ohiohouse.gov/members/matthew-kishman"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/oh/legislature/Matt-Kishman-7ab0cf86-d569-4a6e-8677-8cd7721a9475.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://images.squarespace-cdn.com/content/v1/65a09d4d50790252eca6f810/be978e73-e9f1-4978-9bcf-9553f9a6d410/Kishman+Matthew_2270.jpg?format=500w"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Matthew_Kishman"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ohiohouse.gov/members/matthew-kishman/biography"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/matthew-kishman-927b2025"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

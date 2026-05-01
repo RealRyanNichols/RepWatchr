@@ -1,0 +1,57 @@
+{
+  "id": "christal-lloyd",
+  "name": "Christal Lloyd",
+  "firstName": "Christal",
+  "lastName": "Lloyd",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-Hillsborough 8",
+  "jurisdiction": "New Hampshire House of Representatives",
+  "county": [
+    "New Hampshire"
+  ],
+  "termStart": "2022-12-07",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "State House 107 N. Main St., Concord, NH 03301",
+    "phone": "603-271-3661",
+    "email": "christal.lloyd@gc.nh.gov",
+    "website": "https://gc.nh.gov/house/members/member.aspx?pid=10783"
+  },
+  "bio": "Christal Lloyd serves as State Representative for New Hampshire House of Representatives District Hillsborough 8. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "NH",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://gc.nh.gov/house/members/member.aspx?pid=10783"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/nh/legislature/Christal-Lloyd-84fef36b-d3a0-4bb1-9458-7e7b165a51ff.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Christal_Lloyd"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Christal_Lloyd"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/208810/christal-lloyd"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.gencourt.state.nh.us/house/members/member.aspx?pid=10783"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/christal-lloyd-19847b76"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

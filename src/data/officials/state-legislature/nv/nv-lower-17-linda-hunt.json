@@ -1,0 +1,52 @@
+{
+  "id": "linda-hunt",
+  "name": "Linda Hunt",
+  "firstName": "Linda",
+  "lastName": "Hunt",
+  "photo": "/images/officials/state-legislature/nv/linda-hunt.jpg",
+  "photoSourceUrl": "http://leg.state.nv.us/Session/83rd2025/legislators/Assembly/Images/Hunt.Linda.420.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "Assemblymember",
+  "district": "HD-17",
+  "jurisdiction": "Nevada Assembly",
+  "county": [
+    "Nevada"
+  ],
+  "termStart": "2024-11-06",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 4122, Nevada Assembly 401 S. Carson St., Carson City, NV 89701",
+    "phone": "775-684-8569",
+    "email": "linda.hunt@asm.state.nv.us",
+    "website": "https://www.leg.state.nv.us/App/Legislator/A/Assembly/Current/17"
+  },
+  "bio": "Linda Hunt serves as Assemblymember for Nevada Assembly District 17. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "NV",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.leg.state.nv.us/App/Legislator/A/Assembly/Current/17"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/nv/legislature/Linda-Hunt-9a681fc4-e005-4c1f-a16b-6fa2b02106e3.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "http://leg.state.nv.us/Session/83rd2025/legislators/Assembly/Images/Hunt.Linda.420.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Linda_Hunt_(Nevada)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Linda_Hunt_(politician)"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

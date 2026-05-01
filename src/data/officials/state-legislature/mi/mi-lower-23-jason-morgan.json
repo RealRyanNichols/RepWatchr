@@ -1,0 +1,61 @@
+{
+  "id": "jason-morgan",
+  "name": "Jason Morgan",
+  "firstName": "Jason",
+  "lastName": "Morgan",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-23",
+  "jurisdiction": "Michigan House of Representatives",
+  "county": [
+    "Michigan"
+  ],
+  "termStart": "2023-01-01",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room S-787, Anderson House Office Building 124 N. Capitol Ave., Lansing, MI 48933",
+    "phone": "517-373-0855",
+    "email": "jasonmorgan@house.mi.gov",
+    "website": "https://housedems.com/Jason-Morgan/"
+  },
+  "bio": "Jason Morgan serves as State Representative for Michigan House of Representatives District 23. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "MI",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://housedems.com/Jason-Morgan/"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/mi/legislature/Jason-Morgan-9b0967d9-1238-4f90-8e03-233a17fc03e0.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Jason_Morgan"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Jason_Morgan_(politician)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://housedems.com/Jason-Morgan"
+    },
+    {
+      "title": "Public source",
+      "url": "https://housedems.com/jason-morgan/about"
+    },
+    {
+      "title": "Members List Page",
+      "url": "https://www.house.mi.gov/AllRepresentatives"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/jasontmorgan"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

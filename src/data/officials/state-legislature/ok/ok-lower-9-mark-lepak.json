@@ -1,0 +1,61 @@
+{
+  "id": "mark-lepak",
+  "name": "Mark Lepak",
+  "firstName": "Mark",
+  "lastName": "Lepak",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-9",
+  "jurisdiction": "Oklahoma House of Representatives",
+  "county": [
+    "Oklahoma"
+  ],
+  "termStart": "2014-11-18",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 453, 2300 N. Lincoln Blvd., Oklahoma City, OK 73105",
+    "phone": "405-557-7380",
+    "email": "mark.lepak@okhouse.gov",
+    "website": "https://www.okhouse.gov/Members/Contact.aspx?District=9"
+  },
+  "bio": "Mark Lepak serves as State Representative for Oklahoma House of Representatives District 9. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "OK",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.okhouse.gov/Members/Contact.aspx?District=9"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ok/legislature/Mark-Lepak-a1d5d401-d767-4088-b9b6-e03af9d5ed49.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Mark_Lepak"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Mark_Lepak"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/152320/mark-lepak"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.okhouse.gov/Members/Default.aspx"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.okhouse.gov/Members/District.aspx?District=9"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.okhouse.gov/representatives/mark-lepak"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

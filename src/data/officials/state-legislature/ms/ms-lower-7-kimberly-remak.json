@@ -1,0 +1,56 @@
+{
+  "id": "kimberly-remak",
+  "name": "Kimberly Remak",
+  "firstName": "Kimberly",
+  "lastName": "Remak",
+  "photo": "/images/officials/state-legislature/ms/kimberly-remak.jpg",
+  "photoSourceUrl": "https://s3.amazonaws.com/ballotpedia-api4/files/thumbs/200/300/KimberlyRemak.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-7",
+  "jurisdiction": "Mississippi House of Representatives",
+  "county": [
+    "Mississippi"
+  ],
+  "termStart": "2024-01-02",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "State Capitol 400 High St., Jackson, MS 39201",
+    "phone": "601-359-3728",
+    "email": "remak@house.ms.gov",
+    "website": "https://billstatus.ls.state.ms.us/members/house/remak.xml"
+  },
+  "bio": "Kimberly Remak serves as State Representative for Mississippi House of Representatives District 7. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "MS",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://billstatus.ls.state.ms.us/members/house/remak.xml"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ms/legislature/Kimberly-Remak-58bd4b77-f7d6-45bd-bb3e-0386cf36bbf3.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://s3.amazonaws.com/ballotpedia-api4/files/thumbs/200/300/KimberlyRemak.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Kimberly_Remak"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Kimberly_Remak"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/key-votes/186590/kimberly-remak"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

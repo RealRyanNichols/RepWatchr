@@ -1,0 +1,61 @@
+{
+  "id": "brad-starnes",
+  "name": "Brad Starnes",
+  "firstName": "Brad",
+  "lastName": "Starnes",
+  "party": "R",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-22",
+  "jurisdiction": "Kansas Senate",
+  "county": [
+    "Kansas"
+  ],
+  "termStart": "2025-01-13",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "State Capitol Room 124-E, Kansas  Building 300 SW 10th St., Topeka, KS 66612",
+    "phone": "785-296-7360",
+    "email": "brad.starnes@senate.ks.gov",
+    "website": "https://starnes4senate.com/"
+  },
+  "bio": "Brad Starnes serves as State Senator for Kansas Senate District 22. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "KS",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://starnes4senate.com/"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ks/legislature/Brad-Starnes-2b66826b-7af3-4053-8d3b-90dbcf4f0740.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Brad_Starnes"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Brad_Starnes"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/208101/brad-starnes"
+    },
+    {
+      "title": "Public source",
+      "url": "https://starnes4senate.com"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.kslegislature.gov/li/b2025_26/members/sen_starnes_brad_1"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/brad-starnes-43493418"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

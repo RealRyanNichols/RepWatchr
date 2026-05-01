@@ -1,0 +1,72 @@
+{
+  "id": "sam-azzinaro",
+  "name": "Sam Azzinaro",
+  "firstName": "Sam",
+  "lastName": "Azzinaro",
+  "photo": "/images/officials/state-legislature/ri/sam-azzinaro.jpg",
+  "photoSourceUrl": "http://www.rilegislature.gov/representatives/pictures/azzinaro.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-37",
+  "jurisdiction": "Rhode Island House of Representatives",
+  "county": [
+    "Rhode Island"
+  ],
+  "termStart": "2009-01-06",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "82 Smith St., Providence, RI 02903",
+    "phone": "401-222-3580",
+    "email": "rep-azzinaro@rilegislature.gov",
+    "website": "https://www.rilegislature.gov/representatives/azzinaro/default.aspx"
+  },
+  "bio": "Sam Azzinaro serves as State Representative for Rhode Island House of Representatives District 37. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "RI",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.rilegislature.gov/representatives/azzinaro/default.aspx"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ri/legislature/Samuel-A-Azzinaro-c9229f5a-b4ac-4cf2-b227-a0b4e56cca2f.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "http://www.rilegislature.gov/representatives/pictures/azzinaro.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Samuel_Azzinaro"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Samuel_Azzinaro"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/109459/sam-azzinaro"
+    },
+    {
+      "title": "Public source",
+      "url": "https://webserver.rilin.state.ri.us/Email/RepEmailListDistrict.asp"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/sam-azzinaro-99925564"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.rilegislature.gov/representatives/Azzinaro/Pages/Biography.aspx"
+    },
+    {
+      "title": "Image Source",
+      "url": "https://www.rilegislature.gov/representatives/azzinaro/Pages/Biography.aspx"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

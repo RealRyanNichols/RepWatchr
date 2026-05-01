@@ -1,0 +1,68 @@
+{
+  "id": "nathan-manning",
+  "name": "Nathan Manning",
+  "firstName": "Nathan",
+  "lastName": "Manning",
+  "photo": "/images/officials/state-legislature/oh/nathan-manning.jpg",
+  "photoSourceUrl": "https://www.legislature.ohio.gov/assets/people/nathan-h-manning/headshots/thumbnails/medium/nathan-h-manning-may-2023-headshot_medium.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-13",
+  "jurisdiction": "Ohio Senate",
+  "county": [
+    "Ohio"
+  ],
+  "termStart": "2019-01-01",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 39, Statehouse, 1 Capitol Square Ground Floor, Columbus, OH 43215",
+    "phone": "614-644-7613",
+    "email": "sd13@ohiosenate.gov",
+    "website": "https://www.ohiosenate.gov/members/nathan-h-manning"
+  },
+  "bio": "Nathan Manning serves as State Senator for Ohio Senate District 13. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "OH",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.ohiosenate.gov/members/nathan-h-manning"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/oh/legislature/Nathan-H-Manning-d3508136-3927-461f-a2f0-a85665845ab1.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://www.legislature.ohio.gov/assets/people/nathan-h-manning/headshots/thumbnails/medium/nathan-h-manning-may-2023-headshot_medium.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Nathan_Manning"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Nathan_Manning"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/150617/nathan-manning"
+    },
+    {
+      "title": "member details page",
+      "url": "https://ohiosenate.gov/members/nathan-h-manning"
+    },
+    {
+      "title": "member list page",
+      "url": "https://www.legislature.ohio.gov/legislators/senate-directory"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.ohiosenate.gov/senators"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

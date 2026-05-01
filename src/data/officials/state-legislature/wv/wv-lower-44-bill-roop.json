@@ -1,0 +1,56 @@
+{
+  "id": "bill-roop",
+  "name": "Bill Roop",
+  "firstName": "Bill",
+  "lastName": "Roop",
+  "photo": "/images/officials/state-legislature/wv/bill-roop.jpg",
+  "photoSourceUrl": "https://www.wvlegislature.gov/images/members/2024/house/roop_carl.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "Delegate",
+  "district": "HD-44",
+  "jurisdiction": "West Virginia House of Delegates",
+  "county": [
+    "West Virginia"
+  ],
+  "termStart": "2024-08-02",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "State Capitol Room 203E, Complex, Building 1 1900 Kanawha Blvd. East, Charleston, WV 25305",
+    "phone": "304-340-3180",
+    "email": "bill.roop@wvhouse.gov",
+    "website": "https://www.wvlegislature.gov/House/lawmaker.cfm?member=Delegate%20Roop"
+  },
+  "bio": "Bill Roop serves as Delegate for West Virginia House of Delegates District 44. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "WV",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.wvlegislature.gov/House/lawmaker.cfm?member=Delegate%20Roop"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/wv/legislature/Bill-Roop-9f35a509-bd40-4ed2-8792-407169b7a944.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://www.wvlegislature.gov/images/members/2024/house/roop_carl.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Carl_Roop_(West_Virginia)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Carl_%22Bill%22_Roop"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/214494/carl-roop"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

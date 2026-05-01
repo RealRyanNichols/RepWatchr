@@ -1,0 +1,45 @@
+{
+  "id": "mark-nolte",
+  "name": "Mark Nolte",
+  "firstName": "Mark",
+  "lastName": "Nolte",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-51",
+  "jurisdiction": "Missouri House of Representatives",
+  "county": [
+    "Missouri"
+  ],
+  "termStart": "2025-01-08",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 115-I, 201 W. Capitol Ave., Jefferson City, MO 65101",
+    "phone": "573-751-2204",
+    "email": "mark.nolte@house.mo.gov",
+    "website": "https://house.mo.gov/MemberDetails.aspx?&district=051"
+  },
+  "bio": "Mark Nolte serves as State Representative for Missouri House of Representatives District 51. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "MO",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://house.mo.gov/MemberDetails.aspx?&district=051"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/mo/legislature/Mark-Nolte-443938dd-c7a0-4061-890a-8bd4ec4a1924.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Mark_Nolte"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/mark-nolte-10405b2a2"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

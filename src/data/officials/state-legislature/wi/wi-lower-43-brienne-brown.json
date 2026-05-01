@@ -1,0 +1,62 @@
+{
+  "id": "brienne-brown",
+  "name": "Brienne Brown",
+  "firstName": "Brienne",
+  "lastName": "Brown",
+  "photo": "/images/officials/state-legislature/wi/brienne-brown.jpg",
+  "photoSourceUrl": "https://s3.amazonaws.com/ballotpedia-api4/files/thumbs/200/300/Brienne_Brown.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "Assemblymember",
+  "district": "HD-43",
+  "jurisdiction": "Wisconsin State Assembly",
+  "county": [
+    "Wisconsin"
+  ],
+  "termStart": "2025-01-06",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "email": "rep.brown@legis.wisconsin.gov",
+    "website": "https://docs.legis.wisconsin.gov/2025/legislators/assembly/2888"
+  },
+  "bio": "Brienne Brown serves as Assemblymember for Wisconsin State Assembly District 43. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "WI",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://docs.legis.wisconsin.gov/2025/legislators/assembly/2888"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/wi/legislature/Brienne-Brown-f8f3683e-3615-4a4b-bafe-d4d042f291d0.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://s3.amazonaws.com/ballotpedia-api4/files/thumbs/200/300/Brienne_Brown.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Brienne_Brown"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Brienne_Brown"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/208253/brienne-brown"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/brienne-brown-023331"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/brienne-d-brown-023331"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

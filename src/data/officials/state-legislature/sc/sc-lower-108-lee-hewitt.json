@@ -1,0 +1,65 @@
+{
+  "id": "lee-hewitt",
+  "name": "Lee Hewitt",
+  "firstName": "Lee",
+  "lastName": "Hewitt",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-108",
+  "jurisdiction": "South Carolina House of Representatives",
+  "county": [
+    "South Carolina"
+  ],
+  "termStart": "2016-11-14",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 327D, Blatt Building P.O. Box 11867, Columbia, SC 29201",
+    "phone": "803-212-6927",
+    "email": "leehewitt@schouse.gov",
+    "website": "https://scstatehouse.gov/member.php?code=0834658991"
+  },
+  "bio": "Lee Hewitt serves as State Representative for South Carolina House of Representatives District 108. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "SC",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://scstatehouse.gov/member.php?code=0834658991"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/sc/legislature/Lee-Hewitt-eba98c82-1f71-45c1-951f-40076eb34a8b.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Lee_Hewitt"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Lee_Hewitt"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/173043/lee-hewitt"
+    },
+    {
+      "title": "Public source",
+      "url": "https://scstatehouse.gov/member.php?chamber=H"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/lee-hewitt-b30862a"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.scstatehouse.gov/member.php?chamber=H"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.scstatehouse.gov/member.php?code=0834658991"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

@@ -1,0 +1,72 @@
+{
+  "id": "roger-victory",
+  "name": "Roger Victory",
+  "firstName": "Roger",
+  "lastName": "Victory",
+  "photo": "/images/officials/state-legislature/mi/roger-victory.jpg",
+  "photoSourceUrl": "https://www.misenategop.com/wp-content/uploads/2019/01/Victory-580x770.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-31",
+  "jurisdiction": "Michigan Senate",
+  "county": [
+    "Michigan"
+  ],
+  "termStart": "2023-01-01",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 6400, Binsfeld Building P.O. Box 30036, Lansing, MI 48909",
+    "phone": "517-373-6920",
+    "email": "senrvictory@senate.michigan.gov",
+    "website": "https://www.senatorrogervictory.com"
+  },
+  "bio": "Roger Victory serves as State Senator for Michigan Senate District 31. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "MI",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.senatorrogervictory.com"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/mi/legislature/Roger-Victory-cd36ab04-a62b-41fa-8b91-d6c792f6719e.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://www.misenategop.com/wp-content/uploads/2019/01/Victory-580x770.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Roger_Victory"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Roger_Victory"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/140004/roger-victory"
+    },
+    {
+      "title": "Public source",
+      "url": "https://senate.michigan.gov/senatorinfo_list.html"
+    },
+    {
+      "title": "Members List JSON Data Page",
+      "url": "https://senate.michigan.gov/senators/SenatorData.json"
+    },
+    {
+      "title": "Members List HTML page",
+      "url": "https://senate.michigan.gov/senators/senatorinfo_list.html"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/roger-victory-a9b9ba70"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

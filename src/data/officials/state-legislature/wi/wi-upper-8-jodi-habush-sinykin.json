@@ -1,0 +1,64 @@
+{
+  "id": "jodi-habush-sinykin",
+  "name": "Jodi Habush Sinykin",
+  "firstName": "Jodi",
+  "lastName": "Habush Sinykin",
+  "photo": "/images/officials/state-legislature/wi/jodi-habush-sinykin.jpg",
+  "photoSourceUrl": "https://s3.amazonaws.com/ballotpedia-api4/files/thumbs/200/300/Jodi_Habush_Sinykin.PNG",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-8",
+  "jurisdiction": "Wisconsin Senate",
+  "county": [
+    "Wisconsin"
+  ],
+  "termStart": "2025-01-06",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "State Capitol Room 19 South, P.O. Box 7882 , 2 E. Main St., Madison, WI 53707",
+    "phone": "608-266-5830",
+    "email": "sen.habushsinykin@legis.wisconsin.gov",
+    "website": "https://docs.legis.wisconsin.gov/2025/legislators/senate/2839"
+  },
+  "bio": "Jodi Habush Sinykin serves as State Senator for Wisconsin Senate District 8. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "WI",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://docs.legis.wisconsin.gov/2025/legislators/senate/2839"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/wi/legislature/Jodi-Habush-Sinykin-225f946c-4812-435d-83f1-dad22a2fb0d6.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://s3.amazonaws.com/ballotpedia-api4/files/thumbs/200/300/Jodi_Habush_Sinykin.PNG"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Jodi_Habush_Sinykin"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Jodi_Habush_Sinykin"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/211316/jodi-habush-sinykin"
+    },
+    {
+      "title": "Public source",
+      "url": "https://legis.wisconsin.gov/senate/08/habush-sinykin"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/jodi-habush-sinykin-68717a312"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

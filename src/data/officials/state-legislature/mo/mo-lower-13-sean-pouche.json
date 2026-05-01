@@ -1,0 +1,68 @@
+{
+  "id": "sean-pouche",
+  "name": "Sean Pouche",
+  "firstName": "Sean",
+  "lastName": "Pouche",
+  "photo": "/images/officials/state-legislature/mo/sean-pouche.jpg",
+  "photoSourceUrl": "https://house.mo.gov/MemberPhoto.aspx?id=2209",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-13",
+  "jurisdiction": "Missouri House of Representatives",
+  "county": [
+    "Missouri"
+  ],
+  "termStart": "2021-01-06",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 233-B, 201 W. Capitol Ave., Jefferson City, MO 65101",
+    "phone": "573-751-6593",
+    "email": "sean.pouche@house.mo.gov",
+    "website": "https://house.mo.gov/MemberDetails.aspx?district=013"
+  },
+  "bio": "Sean Pouche serves as State Representative for Missouri House of Representatives District 13. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "MO",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://house.mo.gov/MemberDetails.aspx?district=013"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/mo/legislature/Sean-Pouche-e1a53185-3c84-4f82-87f0-09bd607cf2e7.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://house.mo.gov/MemberPhoto.aspx?id=2209"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Sean_Pouche"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Sean_Pouche"
+    },
+    {
+      "title": "Public source",
+      "url": "https://house.mo.gov/MemberDetails.aspx?year=2021&code=R&district=013"
+    },
+    {
+      "title": "Public source",
+      "url": "https://house.mo.gov/MemberDetails.aspx?year=2023&code=R&district=013"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/169729/sean-pouche"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/sean-scobee-pouche-93a251b7"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

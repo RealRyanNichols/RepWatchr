@@ -1,0 +1,60 @@
+{
+  "id": "paul-santucci",
+  "name": "Paul Santucci",
+  "firstName": "Paul",
+  "lastName": "Santucci",
+  "photo": "/images/officials/state-legislature/ri/paul-santucci.jpg",
+  "photoSourceUrl": "https://static.votesmart.org/static/canphoto/195096.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-53",
+  "jurisdiction": "Rhode Island House of Representatives",
+  "county": [
+    "Rhode Island"
+  ],
+  "termStart": "2025-01-07",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "82 Smith St., Providence, RI 02903",
+    "phone": "401-222-3580",
+    "email": "rep-santucci@rilegislature.gov",
+    "website": "https://rilegislature.gov/representatives/Santucci/Pages/Biography.aspx"
+  },
+  "bio": "Paul Santucci serves as State Representative for Rhode Island House of Representatives District 53. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "RI",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://rilegislature.gov/representatives/Santucci/Pages/Biography.aspx"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ri/legislature/Paul-Santucci-d28514b2-da9f-4c03-9590-781d3c1529ad.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://static.votesmart.org/static/canphoto/195096.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Paul_Santucci_(Rhode_Island)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Paul_Santucci"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/195096/paul-santucci"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/paul-santucci-3b21161a"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

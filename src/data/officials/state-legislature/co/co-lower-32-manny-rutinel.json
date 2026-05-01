@@ -1,0 +1,57 @@
+{
+  "id": "manny-rutinel",
+  "name": "Manny Rutinel",
+  "firstName": "Manny",
+  "lastName": "Rutinel",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-32",
+  "jurisdiction": "Colorado House of Representatives",
+  "county": [
+    "Colorado"
+  ],
+  "termStart": "2023-10-13",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "State Capitol Room 307, Colorado  Building 200 E. Colfax Ave., Denver, CO 80203",
+    "phone": "303-866-2945",
+    "email": "manny.rutinel.house@coleg.gov",
+    "website": "https://leg.colorado.gov/legislators/manny-rutinel"
+  },
+  "bio": "Manny Rutinel serves as State Representative for Colorado House of Representatives District 32. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "CO",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://leg.colorado.gov/legislators/manny-rutinel"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/co/legislature/Manny-Rutinel-ce4bd827-c1bc-4736-a580-f4f0215e727d.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Manny_Rutinel"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Manny_Rutinel"
+    },
+    {
+      "title": "Public source",
+      "url": "https://leg.colorado.gov/legislators"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/mannyrutinel"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.mannyforcolorado.com/meetmanny"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

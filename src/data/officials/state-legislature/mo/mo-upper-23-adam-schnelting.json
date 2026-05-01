@@ -1,0 +1,72 @@
+{
+  "id": "adam-schnelting",
+  "name": "Adam Schnelting",
+  "firstName": "Adam",
+  "lastName": "Schnelting",
+  "photo": "/images/officials/state-legislature/mo/adam-schnelting.jpg",
+  "photoSourceUrl": "https://house.mo.gov/MemberPhoto.aspx?id=2087",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-23",
+  "jurisdiction": "Missouri Senate",
+  "county": [
+    "Missouri"
+  ],
+  "termStart": "2025-01-08",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 219, 201 W. Capitol Ave., Jefferson City, MO 65101",
+    "phone": "573-751-1141",
+    "email": "adam.schnelting@senate.mo.gov",
+    "website": "https://house.mo.gov/MemberDetails.aspx?district=069"
+  },
+  "bio": "Adam Schnelting serves as State Senator for Missouri Senate District 23. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "MO",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://house.mo.gov/MemberDetails.aspx?district=069"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/mo/legislature/Adam-Schnelting-f436aa10-c006-4128-9748-050bf50c4e21.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://house.mo.gov/MemberPhoto.aspx?id=2087"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Adam_Schnelting"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Adam_Schnelting"
+    },
+    {
+      "title": "Public source",
+      "url": "https://house.mo.gov/MemberDetails.aspx?year=2021&code=R&district=104"
+    },
+    {
+      "title": "Public source",
+      "url": "https://house.mo.gov/MemberDetails.aspx?year=2023&code=R&district=069"
+    },
+    {
+      "title": "Public source",
+      "url": "https://house.mo.gov/MemberGridCluster.aspx"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/169769/adam-schnelting"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.house.mo.gov/MemberDetails.aspx?district=104"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

@@ -1,0 +1,72 @@
+{
+  "id": "jeff-ehlers",
+  "name": "Jeff Ehlers",
+  "firstName": "Jeff",
+  "lastName": "Ehlers",
+  "photo": "/images/officials/state-legislature/id/jeff-ehlers.jpg",
+  "photoSourceUrl": "https://legislature.idaho.gov/wp-content/uploads/sessioninfo/2026/directory/Ehlers7805.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-21B",
+  "jurisdiction": "Idaho House of Representatives",
+  "county": [
+    "Idaho"
+  ],
+  "termStart": "2022-12-01",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "P.O. Box 83720 700 W. Jefferson St., Boise, ID 83720",
+    "phone": "208-332-1072",
+    "email": "jehlers@house.idaho.gov",
+    "website": "https://legislature.idaho.gov/legislators/membership/2023/id7805/"
+  },
+  "bio": "Jeff Ehlers serves as State Representative for Idaho House of Representatives District 21B. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "ID",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://legislature.idaho.gov/legislators/membership/2023/id7805/"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/id/legislature/Jeff-Ehlers-a0b66388-5039-4a2c-b022-ac2ece0ce865.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://legislature.idaho.gov/wp-content/uploads/sessioninfo/2026/directory/Ehlers7805.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Jeff_Ehlers"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Jeff_Ehlers"
+    },
+    {
+      "title": "Public source",
+      "url": "https://jeffehlers4idaho.com/about"
+    },
+    {
+      "title": "Public source",
+      "url": "https://legislature.idaho.gov/house/membership"
+    },
+    {
+      "title": "Public source",
+      "url": "https://legislature.idaho.gov/house/membership/"
+    },
+    {
+      "title": "Public source",
+      "url": "https://legislature.idaho.gov/legislators/membership/2023/id7805"
+    },
+    {
+      "title": "Public source",
+      "url": "https://legislature.idaho.gov/legislators/membership/2026/id7805"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

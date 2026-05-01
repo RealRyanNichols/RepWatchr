@@ -1,0 +1,72 @@
+{
+  "id": "nabeela-syed",
+  "name": "Nabeela Syed",
+  "firstName": "Nabeela",
+  "lastName": "Syed",
+  "photo": "/images/officials/state-legislature/il/nabeela-syed.jpg",
+  "photoSourceUrl": "https://cdn.ilga.gov/assets/img/members/{1B81D1C2-BEE3-408C-B52D-8B269BC5DA24}.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-51",
+  "jurisdiction": "Illinois House of Representatives",
+  "county": [
+    "Illinois"
+  ],
+  "termStart": "2023-01-11",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 242-W, Stratton Office Building, Springfield, IL 62706",
+    "phone": "217-782-3696",
+    "email": "info@repsyed.com",
+    "website": "https://ilga.gov/house/Rep.asp?GA=103&MemberID=3232"
+  },
+  "bio": "Nabeela Syed serves as State Representative for Illinois House of Representatives District 51. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "IL",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://ilga.gov/house/Rep.asp?GA=103&MemberID=3232"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/il/legislature/Nabeela-Syed-3115335b-b84e-49e5-b0ed-8ee2ab139784.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://cdn.ilga.gov/assets/img/members/{1B81D1C2-BEE3-408C-B52D-8B269BC5DA24}.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Nabeela_Syed"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Nabeela_Syed"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ilga.gov/house/default.asp?GA=103"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/204457/nabeela-syed"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.ilga.gov/House/Members/Details/3423"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.ilga.gov/house/Rep.asp?GA=103&MemberID=3232"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.ilga.gov/house/Rep.asp?MemberID=3423"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

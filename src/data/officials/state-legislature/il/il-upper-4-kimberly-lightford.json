@@ -1,0 +1,72 @@
+{
+  "id": "kimberly-lightford",
+  "name": "Kimberly Lightford",
+  "firstName": "Kimberly",
+  "lastName": "Lightford",
+  "photo": "/images/officials/state-legislature/il/kimberly-lightford.jpg",
+  "photoSourceUrl": "https://cdn.ilga.gov/assets/img/members/{7FBA8DB0-281E-406F-BF9F-ABEB75B7B38E}.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-4",
+  "jurisdiction": "Illinois Senate",
+  "county": [
+    "Illinois"
+  ],
+  "termStart": "1998-11-20",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 325-E, Capitol Building, Springfield, IL 62706",
+    "phone": "217-782-8505",
+    "email": "majorityleader@senatorlightford.com",
+    "website": "https://ilga.gov/senate/Senator.asp?GA=101&MemberID=2535"
+  },
+  "bio": "Kimberly Lightford serves as State Senator for Illinois Senate District 4. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "IL",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://ilga.gov/senate/Senator.asp?GA=101&MemberID=2535"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/il/legislature/Kimberly-A-Lightford-595f7bf4-5bd7-4238-94a3-e14d8b6d4545.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://cdn.ilga.gov/assets/img/members/{7FBA8DB0-281E-406F-BF9F-ABEB75B7B38E}.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Kimberly_Lightford"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Kimberly_A._Lightford"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ilga.gov/senate/default.asp?GA=101"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ilga.gov/senate/default.asp?GA=102"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ilga.gov/senate/default.asp?GA=103"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ilga.gov/senate/Senator.asp?GA=102&MemberID=2795"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ilga.gov/senate/Senator.asp?GA=103&MemberID=3023"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

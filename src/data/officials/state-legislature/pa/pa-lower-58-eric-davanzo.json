@@ -1,0 +1,68 @@
+{
+  "id": "eric-davanzo",
+  "name": "Eric Davanzo",
+  "firstName": "Eric",
+  "lastName": "Davanzo",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-58",
+  "jurisdiction": "Pennsylvania House of Representatives",
+  "county": [
+    "Pennsylvania"
+  ],
+  "termStart": "2020-04-06",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room B12, Main Capitol Building P.O. Box 202058, Harrisburg, PA 17120",
+    "phone": "717-783-3825",
+    "email": "edavanzo@pahousegop.com",
+    "website": "https://www.legis.state.pa.us/cfdocs/legis/home/member_information/House_bio.cfm?id=1875",
+    "socialMedia": {
+      "facebook": "https://facebook.com/RepDavanzo"
+    }
+  },
+  "bio": "Eric Davanzo serves as State Representative for Pennsylvania House of Representatives District 58. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "PA",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.legis.state.pa.us/cfdocs/legis/home/member_information/House_bio.cfm?id=1875"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/pa/legislature/Eric-Davanzo-80abce94-a517-4357-a70d-cbc791aa34a1.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Eric_Davanzo"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Eric_Davanzo"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.legis.state.pa.us/cfdocs/legis/home/member_information/mbrList.cfm?body=H&sort=alpha"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.legis.state.pa.us/cfdocs/legis/home/member_information/representatives_alpha.cfm"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/eric-davanzo-davanzo-a1463a164"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.palegis.us/house/members/bio/1875/rep-davanzo"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.repdavanzo.com"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

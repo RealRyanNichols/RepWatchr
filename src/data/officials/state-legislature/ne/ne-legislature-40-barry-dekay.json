@@ -1,0 +1,64 @@
+{
+  "id": "barry-dekay",
+  "name": "Barry DeKay",
+  "firstName": "Barry",
+  "lastName": "DeKay",
+  "photo": "/images/officials/state-legislature/ne/barry-dekay.jpg",
+  "photoSourceUrl": "https://www.nebraskalegislature.gov/media/images/senators/dist40/highres/dist40.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "NP",
+  "level": "state",
+  "position": "State Senator",
+  "district": "LD-40",
+  "jurisdiction": "Nebraska Legislature",
+  "county": [
+    "Nebraska"
+  ],
+  "termStart": "2023-01-04",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "State Capitol Room 1022, P.O. Box 94604, Lincoln, NE 68509",
+    "phone": "402-471-2801",
+    "email": "bdekay@leg.ne.gov",
+    "website": "https://nebraskalegislature.gov/senators/landing-pages/index.php?District=40"
+  },
+  "bio": "Barry DeKay serves as State Senator for Nebraska Legislature District 40. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "NE",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://nebraskalegislature.gov/senators/landing-pages/index.php?District=40"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ne/legislature/Barry-DeKay-01d5ca17-53a1-463a-b2f6-74fe24833c0f.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://www.nebraskalegislature.gov/media/images/senators/dist40/highres/dist40.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Barry_DeKay"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Barry_DeKay"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/202079/barry-dekay"
+    },
+    {
+      "title": "Public source",
+      "url": "https://nebraskalegislature.gov/senators/senator_list.php"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/barry-dekay-11a691101"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

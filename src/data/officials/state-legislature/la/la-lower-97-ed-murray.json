@@ -1,0 +1,56 @@
+{
+  "id": "ed-murray",
+  "name": "Ed Murray",
+  "firstName": "Ed",
+  "lastName": "Murray",
+  "photo": "/images/officials/state-legislature/la/ed-murray.jpg",
+  "photoSourceUrl": "https://ed4nola.com/wp-content/uploads/2025/11/EdMurray_CampaignShoot_1-45-683x1024.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-97",
+  "jurisdiction": "Louisiana House of Representatives",
+  "county": [
+    "Louisiana"
+  ],
+  "termStart": "2026-02-07",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "P.O. Box 94062 900 N. 3rd St., Baton Rouge, LA 70804",
+    "phone": "225-342-6945",
+    "email": "hse097@legis.la.gov",
+    "website": "https://house.louisiana.gov/H_Reps/members?ID=97"
+  },
+  "bio": "Ed Murray serves as State Representative for Louisiana House of Representatives District 97. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "LA",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://house.louisiana.gov/H_Reps/members?ID=97"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/la/legislature/Ed-Murray-807a71ac-5657-4933-add4-024d35529e38.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://ed4nola.com/wp-content/uploads/2025/11/EdMurray_CampaignShoot_1-45-683x1024.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Ed_Murray_(Louisiana)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://chehardy.com/attorneys/ed-murray"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/edwin-murray-4b5270102"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

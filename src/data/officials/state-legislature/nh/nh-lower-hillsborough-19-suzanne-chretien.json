@@ -1,0 +1,64 @@
+{
+  "id": "suzanne-chretien",
+  "name": "Suzanne Chretien",
+  "firstName": "Suzanne",
+  "lastName": "Chretien",
+  "photo": "/images/officials/state-legislature/nh/suzanne-chretien.jpg",
+  "photoSourceUrl": "https://nhhousedems.org/wp-content/uploads/2024/10/suzanne_chretien.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-Hillsborough 19",
+  "jurisdiction": "New Hampshire House of Representatives",
+  "county": [
+    "New Hampshire"
+  ],
+  "termStart": "2024-12-04",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "State House 107 N. State St., Concord, NH 03301",
+    "phone": "603-271-3661",
+    "email": "suzanne.chretien@gc.nh.gov",
+    "website": "https://gc.nh.gov/house/members/member.aspx?pid=11204"
+  },
+  "bio": "Suzanne Chretien serves as State Representative for New Hampshire House of Representatives District Hillsborough 19. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "NH",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://gc.nh.gov/house/members/member.aspx?pid=11204"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/nh/legislature/Suzanne-Chretien-4c5b973d-20c9-4205-a69d-bed3b74ca391.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://nhhousedems.org/wp-content/uploads/2024/10/suzanne_chretien.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Suzanne_Chretien"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Suzanne_Chretien"
+    },
+    {
+      "title": "Public source",
+      "url": "https://gencourt.state.nh.us/house/members/member.aspx?pid=11204"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/218989/suzanne-chretien"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/suzanne-chretien-2a898720a"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

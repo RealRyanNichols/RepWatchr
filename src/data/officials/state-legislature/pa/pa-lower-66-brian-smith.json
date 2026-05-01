@@ -1,0 +1,64 @@
+{
+  "id": "brian-smith",
+  "name": "Brian Smith",
+  "firstName": "Brian",
+  "lastName": "Smith",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-66",
+  "jurisdiction": "Pennsylvania House of Representatives",
+  "county": [
+    "Pennsylvania"
+  ],
+  "termStart": "2020-12-01",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 145A, East Wing P.O. Box 202066, Harrisburg, PA 17120",
+    "phone": "717-787-3845",
+    "email": "bsmith@pahousegop.com",
+    "website": "https://www.legis.state.pa.us/cfdocs/legis/home/member_information/House_bio.cfm?id=1902",
+    "socialMedia": {
+      "facebook": "https://facebook.com/PA-State-Rep-Brian-Smith-104029998216098"
+    }
+  },
+  "bio": "Brian Smith serves as State Representative for Pennsylvania House of Representatives District 66. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "PA",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.legis.state.pa.us/cfdocs/legis/home/member_information/House_bio.cfm?id=1902"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/pa/legislature/Brian-Smith-ac7d02d3-9bb7-4cc1-8cee-4283094fe604.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Brian_Smith_(Pennsylvania)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Brian_Smith_(Pennsylvania_politician)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.legis.state.pa.us/cfdocs/legis/home/member_information/mbrList.cfm?body=H&sort=alpha"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.legis.state.pa.us/cfdocs/legis/home/member_information/representatives_alpha.cfm"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.palegis.us/house/members/bio/1902/rep-smith"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.repsmith.com"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

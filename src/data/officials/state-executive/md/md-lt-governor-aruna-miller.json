@@ -1,0 +1,55 @@
+{
+  "id": "aruna-miller",
+  "name": "Aruna Miller",
+  "firstName": "Aruna",
+  "lastName": "Miller",
+  "photo": "/images/officials/state-executive/md/aruna-miller.jpg",
+  "photoSourceUrl": "https://governor.maryland.gov/leadership/ltgovernor/PublishingImages/Pages/biography/Lt.%20Governor%20Aruna%20K.%20Miller.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "Lieutenant Governor",
+  "district": "Maryland",
+  "jurisdiction": "Maryland statewide public office",
+  "county": [
+    "Maryland"
+  ],
+  "termStart": "2023-01-18",
+  "termEnd": "2027-01-20",
+  "contactInfo": {
+    "office": "100 State Circle; Annapolis, MD 21401-1925",
+    "phone": "410-974-3901",
+    "website": "http://mgaleg.maryland.gov/webmga/frmMain.aspx?pid=sponpage&tab=subject6&id=miller%20a&stab=01"
+  },
+  "bio": "Aruna Miller is listed as Lieutenant Governor for Maryland. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "MD",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "http://mgaleg.maryland.gov/webmga/frmMain.aspx?pid=sponpage&tab=subject6&id=miller%20a&stab=01"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/md/executive/Aruna-Miller-27dd7c4f-0e25-4cd0-b849-6830e5ec7fa1.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://governor.maryland.gov/leadership/ltgovernor/PublishingImages/Pages/biography/Lt.%20Governor%20Aruna%20K.%20Miller.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://governor.maryland.gov/leadership/ltgovernor/Pages/biography.aspx"
+    },
+    {
+      "title": "Public source",
+      "url": "https://governor.maryland.gov/leadership/ltgovernor/contact-us/Pages/default.aspx"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Aruna_Miller"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

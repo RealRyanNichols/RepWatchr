@@ -1,0 +1,69 @@
+{
+  "id": "ron-muzzall",
+  "name": "Ron Muzzall",
+  "firstName": "Ron",
+  "lastName": "Muzzall",
+  "party": "R",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-10",
+  "jurisdiction": "Washington Senate",
+  "county": [
+    "Washington"
+  ],
+  "termStart": "2019-10-18",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 310A, Irv Newhouse Building P.O. Box 40410, Olympia, WA 98504",
+    "phone": "360-786-7618",
+    "email": "ron.muzzall@leg.wa.gov",
+    "website": "https://leg.wa.gov/legislators/member/ron-muzzall"
+  },
+  "bio": "Ron Muzzall serves as State Senator for Washington Senate District 10. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "WA",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://leg.wa.gov/legislators/member/ron-muzzall"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/wa/legislature/Ron-Muzzall-57efa2de-d8dc-4d0b-92a3-7ca12549c339.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://app.leg.wa.gov/ContentParts/MemberDirectory/?a=Senate"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Ron_Muzzall"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Ron_Muzzall"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/187523/ron-muzzall"
+    },
+    {
+      "title": "Public source",
+      "url": "https://leg.wa.gov/Senate/Senators/Pages/default.aspx"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ronmuzzall.src.wastateleg.org"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ronmuzzall.src.wastateleg.org/"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.leg.wa.gov/senate/senators/Pages/default.aspx"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

@@ -1,0 +1,72 @@
+{
+  "id": "steve-bergquist",
+  "name": "Steve Bergquist",
+  "firstName": "Steve",
+  "lastName": "Bergquist",
+  "photo": "/images/officials/state-legislature/wa/steve-bergquist.jpg",
+  "photoSourceUrl": "https://leg.wa.gov/memberphoto/17227.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-11",
+  "jurisdiction": "Washington House of Representatives",
+  "county": [
+    "Washington"
+  ],
+  "termStart": "2013-01-14",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 438B, Legislative Building P.O. Box 40600, Olympia, WA 98504",
+    "phone": "360-786-7862",
+    "email": "steve.bergquist@leg.wa.gov",
+    "website": "https://housedemocrats.wa.gov/Bergquist/"
+  },
+  "bio": "Steve Bergquist serves as State Representative for Washington House of Representatives District 11. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "WA",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://housedemocrats.wa.gov/Bergquist/"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/wa/legislature/Steve-Bergquist-89960b3d-2697-4941-8682-9a4888b70ff0.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://leg.wa.gov/memberphoto/17227.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://app.leg.wa.gov/ContentParts/MemberDirectory/?a=House"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Steve_Bergquist"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Steve_Bergquist"
+    },
+    {
+      "title": "Public source",
+      "url": "https://housedemocrats.wa.gov/bergquist"
+    },
+    {
+      "title": "Public source",
+      "url": "https://housedemocrats.wa.gov/bergquist/"
+    },
+    {
+      "title": "Public source",
+      "url": "https://housedemocrats.wa.gov/bergquist/biography"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/140106/steve-bergquist"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

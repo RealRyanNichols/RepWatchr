@@ -1,0 +1,78 @@
+{
+  "id": "mary-bentley",
+  "name": "Mary Bentley",
+  "firstName": "Mary",
+  "lastName": "Bentley",
+  "photo": "/images/officials/state-legislature/ar/mary-bentley.jpg",
+  "photoSourceUrl": "https://www.arkleg.state.ar.us/Content/photos/2023/House/469_sm.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-54",
+  "jurisdiction": "Arkansas House of Representatives",
+  "county": [
+    "Arkansas"
+  ],
+  "termStart": "2023-01-09",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "State Capitol Arkansas  500 Woodlane St., Suite 350, Little Rock, AR 72201",
+    "phone": "501-682-6211",
+    "email": "mary.bentley@arkansashouse.org",
+    "website": "https://arkleg.state.ar.us/Legislators/Detail?member=Bentley",
+    "socialMedia": {
+      "x": "https://x.com/MaryBentleyAR",
+      "twitter": "https://x.com/MaryBentleyAR",
+      "facebook": "https://facebook.com/mary.bentley.39",
+      "youtube": "https://youtube.com/UCeLj0zTgt3jyDIYL3IAzLpQ"
+    }
+  },
+  "bio": "Mary Bentley serves as State Representative for Arkansas House of Representatives District 54. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "AR",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://arkleg.state.ar.us/Legislators/Detail?member=Bentley"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ar/legislature/Mary-Bentley-7e778aa7-3d02-4d6c-9373-42470990fdea.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://www.arkleg.state.ar.us/Content/photos/2023/House/469_sm.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Mary_Bentley"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Mary_Bentley_(Arkansas_politician)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/136704/mary-bentley"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.arkansashouse.org/district/54"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.arkleg.state.ar.us/Legislators/Detail?member=Bentley"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.arkleg.state.ar.us/Legislators/Detail?member=Bentley&ddBienniumSession=2019%2F2020F"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.arkleg.state.ar.us/Legislators/Detail?member=Bentley&ddBienniumSession=2021%2F2021R"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

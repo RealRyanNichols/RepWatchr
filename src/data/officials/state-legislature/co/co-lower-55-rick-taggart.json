@@ -1,0 +1,53 @@
+{
+  "id": "rick-taggart",
+  "name": "Rick Taggart",
+  "firstName": "Rick",
+  "lastName": "Taggart",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-55",
+  "jurisdiction": "Colorado House of Representatives",
+  "county": [
+    "Colorado"
+  ],
+  "termStart": "2023-01-09",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "State Capitol Room 307, Colorado  Building 200 E. Colfax Ave., Denver, CO 80203",
+    "phone": "303-866-3068",
+    "email": "rick.taggart.house@coleg.gov",
+    "website": "https://leg.colorado.gov/legislators/rick-taggart"
+  },
+  "bio": "Rick Taggart serves as State Representative for Colorado House of Representatives District 55. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "CO",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://leg.colorado.gov/legislators/rick-taggart"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/co/legislature/Rick-Taggart-5dae0c7f-430e-42a2-906d-9e177782f91b.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Rick_Taggart"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Rick_Taggart"
+    },
+    {
+      "title": "Public source",
+      "url": "https://leg.colorado.gov/legislators"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/rick-taggart-b3b44128"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

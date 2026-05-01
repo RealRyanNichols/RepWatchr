@@ -1,0 +1,68 @@
+{
+  "id": "mike-crawford",
+  "name": "Mike Crawford",
+  "firstName": "Mike",
+  "lastName": "Crawford",
+  "photo": "/images/officials/state-legislature/il/mike-crawford.jpg",
+  "photoSourceUrl": "https://cdn.ilga.gov/assets/img/members/{C79CCD19-74A9-494F-BE14-E0D1E0A9D326}.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-31",
+  "jurisdiction": "Illinois House of Representatives",
+  "county": [
+    "Illinois"
+  ],
+  "termStart": "2025-01-08",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 250-W, Stratton Building, Springfield, IL 62706",
+    "phone": "217-782-4207",
+    "email": "districtdirector31@gmail.com",
+    "website": "https://www.ilga.gov/House/Members/Details/3452"
+  },
+  "bio": "Mike Crawford serves as State Representative for Illinois House of Representatives District 31. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "IL",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.ilga.gov/House/Members/Details/3452"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/il/legislature/Mike-Crawford-08699f92-8a4f-4dfa-8e8c-8bf129fb08d0.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://cdn.ilga.gov/assets/img/members/{C79CCD19-74A9-494F-BE14-E0D1E0A9D326}.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Michael_Crawford"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Michael_Crawford_(politician)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/166391/michael-crawford"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.ilga.gov/house/Rep.asp?GA=104&MemberID=3452"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/illinois-state-representative-michael-crawford-a9510b348"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/michaelcrawford1"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

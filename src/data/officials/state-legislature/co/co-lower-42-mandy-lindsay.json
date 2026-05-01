@@ -1,0 +1,45 @@
+{
+  "id": "mandy-lindsay",
+  "name": "Mandy Lindsay",
+  "firstName": "Mandy",
+  "lastName": "Lindsay",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-42",
+  "jurisdiction": "Colorado House of Representatives",
+  "county": [
+    "Colorado"
+  ],
+  "termStart": "2022-01-18",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "State Capitol Room 307, Colorado  Building 200 E. Colfax Ave., Denver, CO 80203",
+    "phone": "303-866-3911",
+    "email": "mandy.lindsay.house@coleg.gov",
+    "website": "https://leg.colorado.gov/legislators/mandy-lindsay"
+  },
+  "bio": "Mandy Lindsay serves as State Representative for Colorado House of Representatives District 42. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "CO",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://leg.colorado.gov/legislators/mandy-lindsay"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/co/legislature/Mandy-Lindsay-2582d3dd-20c0-4d15-83a0-3b6dab1e98d2.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Mandy_Lindsay"
+    },
+    {
+      "title": "Public source",
+      "url": "https://leg.colorado.gov/legislators"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

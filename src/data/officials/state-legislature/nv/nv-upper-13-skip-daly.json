@@ -1,0 +1,64 @@
+{
+  "id": "skip-daly",
+  "name": "Skip Daly",
+  "firstName": "Skip",
+  "lastName": "Daly",
+  "photo": "/images/officials/state-legislature/nv/skip-daly.jpg",
+  "photoSourceUrl": "http://leg.state.nv.us/Session/82nd2023/legislators/Senators/Images/Daly.Skip.155.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-13",
+  "jurisdiction": "Nevada Senate",
+  "county": [
+    "Nevada"
+  ],
+  "termStart": "2022-11-09",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 2143, Nevada Senate 401 S. Carson St., Carson City, NV 89701",
+    "phone": "775-684-1433",
+    "email": "skip.daly@sen.state.nv.us",
+    "website": "https://www.leg.state.nv.us/App/Legislator/A/Senate/Current/13"
+  },
+  "bio": "Skip Daly serves as State Senator for Nevada Senate District 13. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "NV",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.leg.state.nv.us/App/Legislator/A/Senate/Current/13"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/nv/legislature/Skip-Daly-a0553b6f-7142-4321-9e3a-c089447d3a78.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "http://leg.state.nv.us/Session/82nd2023/legislators/Senators/Images/Daly.Skip.155.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Skip_Daly"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Skip_Daly"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/121904/skip-daly"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.leg.state.nv.us/App/Legislator/A/Senate/Current"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/skip-daly-01a69a84"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

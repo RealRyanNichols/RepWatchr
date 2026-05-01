@@ -1,0 +1,60 @@
+{
+  "id": "andrew-rice",
+  "name": "Andrew Rice",
+  "firstName": "Andrew",
+  "lastName": "Rice",
+  "photo": "/images/officials/state-legislature/va/andrew-rice.jpg",
+  "photoSourceUrl": "https://s3.amazonaws.com/ballotpedia-api4/files/thumbs/200/300/AndrewRiceVA26.png",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "Delegate",
+  "district": "HD-98",
+  "jurisdiction": "Virginia House of Delegates",
+  "county": [
+    "Virginia"
+  ],
+  "termStart": "2026-03-17",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 917, General Assembly Building 201 N. 9th St., Richmond, VA 23219",
+    "phone": "804-698-1098",
+    "email": "delarice@house.virginia.gov",
+    "website": "https://house.vga.virginia.gov/members/H0407"
+  },
+  "bio": "Andrew Rice serves as Delegate for Virginia House of Delegates District 98. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "VA",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://house.vga.virginia.gov/members/H0407"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/va/legislature/Andrew-Rice-7517f920-b2ba-4759-a80a-246816ebb09b.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://s3.amazonaws.com/ballotpedia-api4/files/thumbs/200/300/AndrewRiceVA26.png"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Andrew_Rice_(Virginia)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Andrew_Rice_(Virginia_politician)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.justice3d.com/team/andrew-rice"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/andrew-rice-90117224"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

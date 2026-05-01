@@ -1,0 +1,72 @@
+{
+  "id": "jon-bumstead",
+  "name": "Jon Bumstead",
+  "firstName": "Jon",
+  "lastName": "Bumstead",
+  "photo": "/images/officials/state-legislature/mi/jon-bumstead.jpg",
+  "photoSourceUrl": "https://www.misenategop.com/wp-content/uploads/2023/01/Bumstead-580x770.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-32",
+  "jurisdiction": "Michigan Senate",
+  "county": [
+    "Michigan"
+  ],
+  "termStart": "2023-01-01",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 4600, Binsfeld Building P.O. Box 30036, Lansing, MI 48909",
+    "phone": "517-373-1635",
+    "email": "senjbumstead@senate.michigan.gov",
+    "website": "https://www.senatorjonbumstead.com"
+  },
+  "bio": "Jon Bumstead serves as State Senator for Michigan Senate District 32. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "MI",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.senatorjonbumstead.com"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/mi/legislature/Jon-Bumstead-5a58fa81-639b-4304-87ca-7471ba9ade96.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://www.misenategop.com/wp-content/uploads/2023/01/Bumstead-580x770.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Jon_Bumstead"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Jon_Bumstead"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/123095/jon-bumstead"
+    },
+    {
+      "title": "Public source",
+      "url": "https://senate.michigan.gov/senatorinfo_list.html"
+    },
+    {
+      "title": "Members List JSON Data Page",
+      "url": "https://senate.michigan.gov/senators/SenatorData.json"
+    },
+    {
+      "title": "Members List HTML page",
+      "url": "https://senate.michigan.gov/senators/senatorinfo_list.html"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/jon-bumstead-74280118"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

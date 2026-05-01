@@ -1,0 +1,49 @@
+{
+  "id": "jason-dickerson",
+  "name": "Jason Dickerson",
+  "firstName": "Jason",
+  "lastName": "Dickerson",
+  "party": "R",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-21",
+  "jurisdiction": "Georgia Senate",
+  "county": [
+    "Georgia"
+  ],
+  "termStart": "2025-10-14",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "State Capitol Room 420-D, 206 Washington St. SW, Atlanta, GA 30334",
+    "phone": "404-463-1378",
+    "email": "jason.dickerson@senate.ga.gov",
+    "website": "https://www.legis.ga.gov/members/senate/5088?session=1033"
+  },
+  "bio": "Jason Dickerson serves as State Senator for Georgia Senate District 21. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "GA",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.legis.ga.gov/members/senate/5088?session=1033"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ga/legislature/Jason-Dickerson-584267b0-e40b-4d6e-a7fe-4c076eb6214c.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Jason_Dickerson_(Georgia)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Jason_Dickerson"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/223826/jason-dickerson"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

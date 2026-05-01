@@ -1,0 +1,64 @@
+{
+  "id": "spencer-igo",
+  "name": "Spencer Igo",
+  "firstName": "Spencer",
+  "lastName": "Igo",
+  "photo": "/images/officials/state-legislature/mn/spencer-igo.jpg",
+  "photoSourceUrl": "https://www.house.mn.gov/hinfo/memberimgls94/07A.gif?v=112221",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-7A",
+  "jurisdiction": "Minnesota House of Representatives",
+  "county": [
+    "Minnesota"
+  ],
+  "termStart": "2023-01-03",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Centennial Office Building 658 Cedar St., Second Floor, St. Paul, MN 55155",
+    "phone": "651-296-4936",
+    "email": "rep.spencer.igo@house.mn.gov",
+    "website": "https://www.house.mn.gov/members/profile/15540"
+  },
+  "bio": "Spencer Igo serves as State Representative for Minnesota House of Representatives District 7A. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "MN",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.house.mn.gov/members/profile/15540"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/mn/legislature/Spencer-Igo-2e342c55-f56d-4895-9dd2-ef1271f784c0.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://www.house.mn.gov/hinfo/memberimgls94/07A.gif?v=112221"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Spencer_Igo"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Spencer_Igo"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/194065/spencer-igo"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.house.leg.state.mn.us/members/hmem.asp"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/spencer-igo-2a291114b"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

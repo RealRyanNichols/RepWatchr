@@ -1,0 +1,40 @@
+{
+  "id": "heath-allbright",
+  "name": "Heath Allbright",
+  "firstName": "Heath",
+  "lastName": "Allbright",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-11",
+  "jurisdiction": "Alabama House of Representatives",
+  "county": [
+    "Alabama"
+  ],
+  "termStart": "2025-08-27",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 525-C, 11 S. Union St., Montgomery, AL 36130",
+    "phone": "334-261-0530",
+    "email": "heathallbright@gmail.com"
+  },
+  "bio": "Heath Allbright serves as State Representative for Alabama House of Representatives District 11. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "AL",
+  "sourceLinks": [
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/al/legislature/Heath-Allbright-de4c986e-ec06-437e-8d3d-b7ca591606bc.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Heath_Allbright"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/heath-allbright-3b817b117"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

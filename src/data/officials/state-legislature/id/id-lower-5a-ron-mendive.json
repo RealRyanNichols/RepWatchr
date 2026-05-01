@@ -1,0 +1,72 @@
+{
+  "id": "ron-mendive",
+  "name": "Ron Mendive",
+  "firstName": "Ron",
+  "lastName": "Mendive",
+  "photo": "/images/officials/state-legislature/id/ron-mendive.jpg",
+  "photoSourceUrl": "https://legislature.idaho.gov/wp-content/uploads/sessioninfo/2019/directory/Mendive2124.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-5A",
+  "jurisdiction": "Idaho House of Representatives",
+  "county": [
+    "Idaho"
+  ],
+  "termStart": "2022-12-01",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "P.O. Box 83720 700 W. Jefferson St., Boise, ID 83720",
+    "phone": "208-332-1040",
+    "email": "rmendive@house.idaho.gov",
+    "website": "https://legislature.idaho.gov/legislators/membership/2021/id2124/"
+  },
+  "bio": "Ron Mendive serves as State Representative for Idaho House of Representatives District 5A. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "ID",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://legislature.idaho.gov/legislators/membership/2021/id2124/"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/id/legislature/Ron-Mendive-71489ac3-457d-41ec-b285-a099648b601b.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://legislature.idaho.gov/wp-content/uploads/sessioninfo/2019/directory/Mendive2124.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Ron_Mendive"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Ron_Mendive"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/136961/ron-mendive"
+    },
+    {
+      "title": "Public source",
+      "url": "https://legislature.idaho.gov/house/membership"
+    },
+    {
+      "title": "Public source",
+      "url": "https://legislature.idaho.gov/house/membership/"
+    },
+    {
+      "title": "Public source",
+      "url": "https://legislature.idaho.gov/legislators/membership/2021/id2124"
+    },
+    {
+      "title": "Public source",
+      "url": "https://legislature.idaho.gov/legislators/membership/2026/id2124"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

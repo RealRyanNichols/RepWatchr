@@ -1,0 +1,60 @@
+{
+  "id": "josh-hawkins",
+  "name": "Josh Hawkins",
+  "firstName": "Josh",
+  "lastName": "Hawkins",
+  "photo": "/images/officials/state-legislature/ms/josh-hawkins.jpg",
+  "photoSourceUrl": "https://s3.amazonaws.com/ballotpedia-api4/files/thumbs/200/300/80182230_83452a1c-4a99-4e85-9c86-d12418dab31b.jpeg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-10",
+  "jurisdiction": "Mississippi House of Representatives",
+  "county": [
+    "Mississippi"
+  ],
+  "termStart": "2024-01-02",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "State Capitol 400 High St., Jackson, MS 39201",
+    "phone": "601-359-3770",
+    "email": "jhawkins@house.ms.gov",
+    "website": "https://billstatus.ls.state.ms.us/members/house/hawkins.xml"
+  },
+  "bio": "Josh Hawkins serves as State Representative for Mississippi House of Representatives District 10. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "MS",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://billstatus.ls.state.ms.us/members/house/hawkins.xml"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ms/legislature/Josh-Hawkins-5ad5b396-01a0-40eb-8d4b-0f76f2727406.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://s3.amazonaws.com/ballotpedia-api4/files/thumbs/200/300/80182230_83452a1c-4a99-4e85-9c86-d12418dab31b.jpeg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Josh_Hawkins"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Josh_Hawkins_(politician)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/186668/josh-hawkins"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/josh-hawkins-15a394210"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

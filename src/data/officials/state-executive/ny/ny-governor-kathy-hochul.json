@@ -1,0 +1,47 @@
+{
+  "id": "kathy-hochul",
+  "name": "Kathy Hochul",
+  "firstName": "Kathy",
+  "lastName": "Hochul",
+  "photo": "/images/officials/state-executive/ny/kathy-hochul.jpg",
+  "photoSourceUrl": "https://www.governor.ny.gov/sites/default/files/styles/square_extra_large/public/2021-08/GovKathyHocul_FeatureBio_Photo.png?h=00546c34&itok=Sdxjp4cd",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "Governor",
+  "district": "New York",
+  "jurisdiction": "New York statewide public office",
+  "county": [
+    "New York"
+  ],
+  "termStart": "2021-08-24",
+  "termEnd": "2027-01-01",
+  "contactInfo": {
+    "office": "The Honorable Kathy Hochul; Governor of New York State; NYS State Capitol Building; Albany, NY 12224",
+    "phone": "518-474-8390",
+    "website": "https://www.governor.ny.gov/",
+    "socialMedia": {
+      "x": "https://x.com/GovKathyHochul",
+      "twitter": "https://x.com/GovKathyHochul"
+    }
+  },
+  "bio": "Kathy Hochul is listed as Governor for New York. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "NY",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.governor.ny.gov/"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ny/executive/Kathy-Hochul-ccdd914d-9853-4fd2-9a80-ce6c962cdd18.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://www.governor.ny.gov/sites/default/files/styles/square_extra_large/public/2021-08/GovKathyHocul_FeatureBio_Photo.png?h=00546c34&itok=Sdxjp4cd"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

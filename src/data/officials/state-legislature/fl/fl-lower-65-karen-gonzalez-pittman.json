@@ -1,0 +1,53 @@
+{
+  "id": "karen-gonzalez-pittman",
+  "name": "Karen Gonzalez Pittman",
+  "firstName": "Karen",
+  "lastName": "Gonzalez Pittman",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-65",
+  "jurisdiction": "Florida House of Representatives",
+  "county": [
+    "Florida"
+  ],
+  "termStart": "2022-11-08",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 212, The Capitol 402 S. Monroe St., Tallahassee, FL 32399",
+    "phone": "850-717-5065",
+    "email": "karen.pittman@flhouse.gov",
+    "website": "https://myfloridahouse.gov/Sections/Representatives/details.aspx?MemberId=4888&LegislativeTermId=90"
+  },
+  "bio": "Karen Gonzalez Pittman serves as State Representative for Florida House of Representatives District 65. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "FL",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://myfloridahouse.gov/Sections/Representatives/details.aspx?MemberId=4888&LegislativeTermId=90"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/fl/legislature/Karen-Gonzalez-Pittman-d1296445-72e8-45e5-ad0e-4443275176ef.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Karen_Gonzalez_Pittman"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.flhouse.gov/Sections/Representatives/details.aspx?MemberId=4888"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/karen-gonzalez-pittman-92216190"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.myfloridahouse.gov/Sections/Representatives/details.aspx?MemberId=4888&LegislativeTermId=90"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

@@ -1,0 +1,60 @@
+{
+  "id": "alex-holladay",
+  "name": "Alex Holladay",
+  "firstName": "Alex",
+  "lastName": "Holladay",
+  "photo": "/images/officials/state-legislature/ar/alex-holladay.jpg",
+  "photoSourceUrl": "https://s3.amazonaws.com/ballotpedia-api4/files/thumbs/200/300/Kathryn_Rhodes_20241023_120643.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-70",
+  "jurisdiction": "Arkansas House of Representatives",
+  "county": [
+    "Arkansas"
+  ],
+  "termStart": "2026-03-20",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "State Capitol Arkansas  500 Woodlane St., Suite 350, Little Rock, AR 72201",
+    "phone": "501-682-6211",
+    "email": "alex.holladay@arkansashouse.org",
+    "website": "https://arkleg.state.ar.us/Legislators/Detail?member=Holladay"
+  },
+  "bio": "Alex Holladay serves as State Representative for Arkansas House of Representatives District 70. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "AR",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://arkleg.state.ar.us/Legislators/Detail?member=Holladay"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ar/legislature/Alex-Holladay-54b2621c-cc79-4a5b-95bf-d9113525624e.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://s3.amazonaws.com/ballotpedia-api4/files/thumbs/200/300/Kathryn_Rhodes_20241023_120643.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Alex_Holladay"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Alex_Holladay"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.arkansashouse.org/district/70"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/alex-b-holladay-9b764a8"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

@@ -1,0 +1,57 @@
+{
+  "id": "joe-patterson",
+  "name": "Joe Patterson",
+  "firstName": "Joe",
+  "lastName": "Patterson",
+  "party": "R",
+  "level": "state",
+  "position": "Assemblymember",
+  "district": "HD-5",
+  "jurisdiction": "California State Assembly",
+  "county": [
+    "California"
+  ],
+  "termStart": "2022-12-05",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 4530, 1021 O St. P.O. Box 942849, Sacramento, CA 94249",
+    "phone": "916-319-2005",
+    "email": "assemblymember.joepatterson@assembly.ca.gov",
+    "website": "https://ad05.asmrc.org"
+  },
+  "bio": "Joe Patterson serves as Assemblymember for California State Assembly District 5. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "CA",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://ad05.asmrc.org"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ca/legislature/Joe-Patterson-c7a404d9-03f7-4e82-b730-1623da31d4cc.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ad05.asmrc.org/biography"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Joe_Patterson_(California)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://joepatterson.com/about"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.assembly.ca.gov/assemblymembers"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/joepatterson82"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

@@ -1,0 +1,49 @@
+{
+  "id": "chris-measmer",
+  "name": "Chris Measmer",
+  "firstName": "Chris",
+  "lastName": "Measmer",
+  "party": "R",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-34",
+  "jurisdiction": "North Carolina Senate",
+  "county": [
+    "North Carolina"
+  ],
+  "termStart": "2025-04-08",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 2106, 16 W. Jones St., Raleigh, NC 27601",
+    "phone": "919-733-7223",
+    "email": "chris.measmer@ncleg.gov",
+    "website": "https://www.ncleg.gov/Members/Biography/S/455"
+  },
+  "bio": "Chris Measmer serves as State Senator for North Carolina Senate District 34. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "NC",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.ncleg.gov/Members/Biography/S/455"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/nc/legislature/Chris-Measmer-9dfc9308-ec16-4da8-b5c7-8a9cc55df534.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Chris_Measmer"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Chris_Measmer_(Cabarrus_County_Board_of_Commissioners,_North_Carolina,_candidate_2022)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Chris_Measmer"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

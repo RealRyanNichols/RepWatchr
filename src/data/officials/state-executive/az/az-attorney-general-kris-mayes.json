@@ -1,0 +1,51 @@
+{
+  "id": "kris-mayes",
+  "name": "Kris Mayes",
+  "firstName": "Kris",
+  "lastName": "Mayes",
+  "photo": "/images/officials/state-executive/az/kris-mayes.jpg",
+  "photoSourceUrl": "https://www.naag.org/wp-content/uploads/2022/11/ag-AZ-Mayes.png",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "Attorney General",
+  "district": "Arizona",
+  "jurisdiction": "Arizona statewide public office",
+  "county": [
+    "Arizona"
+  ],
+  "termStart": "2023-01-02",
+  "termEnd": "2027-01-04",
+  "contactInfo": {
+    "office": "2005 N Central Ave; Phoenix, AZ 85004",
+    "phone": "602-542-5025",
+    "website": "https://www.azag.gov/"
+  },
+  "bio": "Kris Mayes is listed as Attorney General for Arizona. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "AZ",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.azag.gov/"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/az/executive/Kris-Mayes-a94ae259-7b2d-4756-9c9b-d9fc778e6c1f.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://www.naag.org/wp-content/uploads/2022/11/ag-AZ-Mayes.png"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Kris_Mayes"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.naag.org/attorney-general/kris-mayes/"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

@@ -1,0 +1,56 @@
+{
+  "id": "josh-stonko",
+  "name": "Josh Stonko",
+  "firstName": "Josh",
+  "lastName": "Stonko",
+  "photo": "/images/officials/state-legislature/md/josh-stonko.jpg",
+  "photoSourceUrl": "https://mgaleg.maryland.gov/2023RS/images/stonko01.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "Delegate",
+  "district": "HD-42C",
+  "jurisdiction": "Maryland House of Delegates",
+  "county": [
+    "Maryland"
+  ],
+  "termStart": "2023-01-11",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 215, Lowe House Office Building 6 Bladen St., Annapolis, MD 21401",
+    "phone": "410-841-3833",
+    "email": "joshua.stonko@house.maryland.gov",
+    "website": "https://mgaleg.maryland.gov/mgawebsite/Members/Details/stonko01"
+  },
+  "bio": "Josh Stonko serves as Delegate for Maryland House of Delegates District 42C. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "MD",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://mgaleg.maryland.gov/mgawebsite/Members/Details/stonko01"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/md/legislature/Joshua-J-Stonko-9026e10a-e925-4bcb-ba28-85852dc4b2a4.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://mgaleg.maryland.gov/2023RS/images/stonko01.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Joshua_Stonko"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Joshua_Stonko"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/joshuastonko"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

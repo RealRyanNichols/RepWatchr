@@ -1,0 +1,41 @@
+{
+  "id": "becky-laubinger",
+  "name": "Becky Laubinger",
+  "firstName": "Becky",
+  "lastName": "Laubinger",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-117",
+  "jurisdiction": "Missouri House of Representatives",
+  "county": [
+    "Missouri"
+  ],
+  "termStart": "2025-01-08",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 407-C, 201 W. Capitol Ave., Jefferson City, MO 65101",
+    "phone": "573-751-2317",
+    "email": "becky.laubinger@house.mo.gov",
+    "website": "https://house.mo.gov/MemberDetails.aspx?&district=117"
+  },
+  "bio": "Becky Laubinger serves as State Representative for Missouri House of Representatives District 117. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "MO",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://house.mo.gov/MemberDetails.aspx?&district=117"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/mo/legislature/Becky-Laubinger-483aaa6b-d64a-48d0-8bc4-bca6c252f8dc.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Becky_Laubinger"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

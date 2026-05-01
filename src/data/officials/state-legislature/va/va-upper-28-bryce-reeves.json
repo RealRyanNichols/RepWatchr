@@ -1,0 +1,77 @@
+{
+  "id": "bryce-reeves",
+  "name": "Bryce Reeves",
+  "firstName": "Bryce",
+  "lastName": "Reeves",
+  "photo": "/images/officials/state-legislature/va/bryce-reeves.jpg",
+  "photoSourceUrl": "https://apps.senate.virginia.gov/Senator/images/member_photos/Reeves28",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-28",
+  "jurisdiction": "Virginia Senate",
+  "county": [
+    "Virginia"
+  ],
+  "termStart": "2024-01-10",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 614, General Assembly Building P.O. Box 396, Richmond, VA 23218",
+    "phone": "804-698-7528",
+    "email": "senatorreeves@senate.virginia.gov",
+    "website": "https://apps.senate.virginia.gov/Senator/memberpage.php?id=S88",
+    "socialMedia": {
+      "x": "https://x.com/ReevesVA",
+      "twitter": "https://x.com/ReevesVA",
+      "facebook": "https://facebook.com/BryceReevesVA"
+    }
+  },
+  "bio": "Bryce Reeves serves as State Senator for Virginia Senate District 28. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "VA",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://apps.senate.virginia.gov/Senator/memberpage.php?id=S88"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/va/legislature/Bryce-E-Reeves-adb58f21-f2fd-4830-85b6-f490b0867d14.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://apps.senate.virginia.gov/Senator/images/member_photos/Reeves28"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Bryce_Reeves"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Bryce_Reeves"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/134699/bryce-reeves"
+    },
+    {
+      "title": "Public source",
+      "url": "https://lis.virginia.gov/191/mbr/MBR.HTM"
+    },
+    {
+      "title": "Public source",
+      "url": "https://lis.virginia.gov/201/mbr/MBR.HTM"
+    },
+    {
+      "title": "Public source",
+      "url": "https://lis.virginia.gov/cgi-bin/legp604.exe?191+mbr+S88"
+    },
+    {
+      "title": "Public source",
+      "url": "https://lis.virginia.gov/cgi-bin/legp604.exe?201+mbr+S88"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

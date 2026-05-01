@@ -1,0 +1,65 @@
+{
+  "id": "joe-polletta",
+  "name": "Joe Polletta",
+  "firstName": "Joe",
+  "lastName": "Polletta",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-68",
+  "jurisdiction": "Connecticut House of Representatives",
+  "county": [
+    "Connecticut"
+  ],
+  "termStart": "2017-05-01",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 4200, Legislative Office Building 300 Capitol Ave., Hartford, CT 06106",
+    "phone": "860-240-8700",
+    "email": "joe.polletta@housegop.ct.gov",
+    "website": "https://cga.ct.gov/asp/CGABillStatus/CGAMemberBills.asp?dist_code=%27068%27&dist_name=Polletta,%20Joe"
+  },
+  "bio": "Joe Polletta serves as State Representative for Connecticut House of Representatives District 68. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "CT",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://cga.ct.gov/asp/CGABillStatus/CGAMemberBills.asp?dist_code=%27068%27&dist_name=Polletta,%20Joe"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ct/legislature/Joe-Polletta-df318645-047c-46a5-be61-682a7272e6b6.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "ftp://ftp.cga.ct.gov/pub/data/LegislatorDatabase.csv"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Joe_Polletta"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Joseph_Polletta"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/154863/joe-polletta"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.cthousegop.com/Polletta/main"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.cthousegop.com/Polletta/main/"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/joe-polletta-645b14105"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

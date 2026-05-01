@@ -1,0 +1,65 @@
+{
+  "id": "michelle-hinchey",
+  "name": "Michelle Hinchey",
+  "firstName": "Michelle",
+  "lastName": "Hinchey",
+  "party": "D",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-41",
+  "jurisdiction": "New York Senate",
+  "county": [
+    "New York"
+  ],
+  "termStart": "2023-01-01",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 315, Legislative Office Building 198 State Street, Albany, NY 12247",
+    "phone": "518-455-2350",
+    "email": "hinchey@nysenate.gov",
+    "website": "https://www.nysenate.gov/senators-committees",
+    "socialMedia": {
+      "x": "https://x.com/MichelleHinchey",
+      "twitter": "https://x.com/MichelleHinchey"
+    }
+  },
+  "bio": "Michelle Hinchey serves as State Senator for New York Senate District 41. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "NY",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.nysenate.gov/senators-committees"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ny/legislature/Michelle-Hinchey-0f3cecb9-87fb-48c7-96af-fd3ff8e0cd8b.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Michelle_Hinchey"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Michelle_Hinchey"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/191970/michelle-hinchey"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/michellehinchey"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.nysenate.gov/senators/michelle-hinchey"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.nysenate.gov/senators/michelle-hinchey/contact"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

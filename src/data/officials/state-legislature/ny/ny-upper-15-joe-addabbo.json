@@ -1,0 +1,57 @@
+{
+  "id": "joe-addabbo",
+  "name": "Joe Addabbo",
+  "firstName": "Joe",
+  "lastName": "Addabbo",
+  "party": "D",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-15",
+  "jurisdiction": "New York Senate",
+  "county": [
+    "New York"
+  ],
+  "termStart": "2009-01-01",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 811, Legislative Office Building 188 State Street, Albany, NY 12247",
+    "phone": "518-455-2322",
+    "email": "addabbo@nysenate.gov",
+    "website": "https://www.nysenate.gov/senators-committees"
+  },
+  "bio": "Joe Addabbo serves as State Senator for New York Senate District 15. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "NY",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.nysenate.gov/senators-committees"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ny/legislature/Joseph-P-Addabbo-Jr-f3a41618-3c28-4bab-9a56-ef49c9cafcec.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Joseph_Addabbo"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Joseph_Addabbo,_Jr."
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/44931/joseph-addabbo-jr"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.nysenate.gov/senators/joseph-p-addabbo-jr"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.nysenate.gov/senators/joseph-p-addabbo-jr/contact"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

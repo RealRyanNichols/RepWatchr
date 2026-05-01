@@ -1,0 +1,53 @@
+{
+  "id": "lea-webb",
+  "name": "Lea Webb",
+  "firstName": "Lea",
+  "lastName": "Webb",
+  "party": "D",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-52",
+  "jurisdiction": "New York Senate",
+  "county": [
+    "New York"
+  ],
+  "termStart": "2023-01-01",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 848, Legislative Office Building, Albany, NY 12247",
+    "phone": "518-455-2170",
+    "email": "leawebb@nysenate.gov",
+    "website": "https://www.nysenate.gov/senators/lea-webb"
+  },
+  "bio": "Lea Webb serves as State Senator for New York Senate District 52. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "NY",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.nysenate.gov/senators/lea-webb"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ny/legislature/Lea-Webb-a0876791-c573-4028-8c61-f7bbac545074.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Lea_Webb"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Lea_Webb"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/106166/lea-webb"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/lea-webb-368947a"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

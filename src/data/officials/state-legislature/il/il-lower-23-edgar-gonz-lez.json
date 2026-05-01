@@ -1,0 +1,72 @@
+{
+  "id": "edgar-gonz-lez",
+  "name": "Edgar Gonz\u00e1lez",
+  "firstName": "Edgar",
+  "lastName": "Gonz\u00e1lez",
+  "photo": "/images/officials/state-legislature/il/edgar-gonz-lez.jpg",
+  "photoSourceUrl": "https://cdn.ilga.gov/assets/img/members/{370B1494-7F8F-48BC-BD66-4756E15442E1}.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-23",
+  "jurisdiction": "Illinois House of Representatives",
+  "county": [
+    "Illinois"
+  ],
+  "termStart": "2023-01-11",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 240-W, Stratton Office Building, Springfield, IL 62706",
+    "phone": "217-782-7752",
+    "email": "office@repedgargonzalez.com",
+    "website": "https://ilga.gov/house/Rep.asp?GA=101&MemberID=2776"
+  },
+  "bio": "Edgar Gonz\u00e1lez serves as State Representative for Illinois House of Representatives District 23. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "IL",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://ilga.gov/house/Rep.asp?GA=101&MemberID=2776"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/il/legislature/Edgar-Gonzalez-Jr-e8bba8fb-50a8-4ddd-9bed-785c5f1bb70d.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://cdn.ilga.gov/assets/img/members/{370B1494-7F8F-48BC-BD66-4756E15442E1}.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Edgar_Gonzalez_Jr."
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Edgar_Gonzalez_Jr."
+    },
+    {
+      "title": "Public source",
+      "url": "https://ilga.gov/house/default.asp?GA=101"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ilga.gov/house/default.asp?GA=102"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ilga.gov/house/default.asp?GA=103"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ilga.gov/house/Rep.asp?GA=102&MemberID=2975"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ilga.gov/house/Rep.asp?GA=103&MemberID=3166"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

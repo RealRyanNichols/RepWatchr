@@ -1,0 +1,61 @@
+{
+  "id": "darrell-jackson",
+  "name": "Darrell Jackson",
+  "firstName": "Darrell",
+  "lastName": "Jackson",
+  "party": "D",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-21",
+  "jurisdiction": "South Carolina Senate",
+  "county": [
+    "South Carolina"
+  ],
+  "termStart": "",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 612, Gressette Building P.O. Box 142, Columbia, SC 29201",
+    "phone": "803-212-6048",
+    "email": "darrelljackson@scsenate.gov",
+    "website": "https://scstatehouse.gov/member.php?code=0920454435"
+  },
+  "bio": "Darrell Jackson serves as State Senator for South Carolina Senate District 21. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "SC",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://scstatehouse.gov/member.php?code=0920454435"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/sc/legislature/Darrell-Jackson-4eca904a-5153-440d-8e5c-4c9e056a1dd1.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Darrell_Jackson_(South_Carolina)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Darrell_Jackson_(politician)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/3957/darrell-jackson"
+    },
+    {
+      "title": "Public source",
+      "url": "https://scstatehouse.gov/member.php?chamber=S"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.scstatehouse.gov/member.php?chamber=S"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.scstatehouse.gov/member.php?code=0920454435"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

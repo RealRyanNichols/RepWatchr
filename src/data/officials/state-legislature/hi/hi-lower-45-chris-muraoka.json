@@ -1,0 +1,49 @@
+{
+  "id": "chris-muraoka",
+  "name": "Chris Muraoka",
+  "firstName": "Chris",
+  "lastName": "Muraoka",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-45",
+  "jurisdiction": "Hawaii House of Representatives",
+  "county": [
+    "Hawaii"
+  ],
+  "termStart": "2024-11-05",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "State Capitol Room 313, 415 S. Beretania St., Honolulu, HI 96813",
+    "phone": "808-586-8460",
+    "email": "repmuraoka@capitol.hawaii.gov",
+    "website": "https://www.capitol.hawaii.gov/legislature/memberpage.aspx?member=307"
+  },
+  "bio": "Chris Muraoka serves as State Representative for Hawaii House of Representatives District 45. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "HI",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.capitol.hawaii.gov/legislature/memberpage.aspx?member=307"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/hi/legislature/Chris-Muraoka-1a5995d1-114e-4e7e-a53f-d91017df2bc3.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Chris_Muraoka"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Chris_Muraoka"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/christopher-muraoka-72a813a3"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

@@ -1,0 +1,75 @@
+{
+  "id": "harlan-breaux",
+  "name": "Harlan Breaux",
+  "firstName": "Harlan",
+  "lastName": "Breaux",
+  "photo": "/images/officials/state-legislature/ar/harlan-breaux.jpg",
+  "photoSourceUrl": "https://www.arkleg.state.ar.us/Content/photos/2023/House/567_sm.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-6",
+  "jurisdiction": "Arkansas House of Representatives",
+  "county": [
+    "Arkansas"
+  ],
+  "termStart": "2023-01-09",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "State Capitol Arkansas  500 Woodlane St., Suite 350, Little Rock, AR 72201",
+    "phone": "501-682-6211",
+    "email": "harlan.breaux@arkansashouse.org",
+    "website": "https://arkleg.state.ar.us/Legislators/Detail?member=Breaux",
+    "socialMedia": {
+      "facebook": "https://facebook.com/Harlan Breaux for State Representative"
+    }
+  },
+  "bio": "Harlan Breaux serves as State Representative for Arkansas House of Representatives District 6. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "AR",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://arkleg.state.ar.us/Legislators/Detail?member=Breaux"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ar/legislature/Harlan-Breaux-72ce8f2a-95f2-4c1c-8e91-203653d0610a.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://www.arkleg.state.ar.us/Content/photos/2023/House/567_sm.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Harlan_Breaux"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Harlan_Breaux"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/178599/harlan-breaux"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.arkansashouse.org/district/6"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.arkleg.state.ar.us/Legislators/Detail?member=Breaux"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.arkleg.state.ar.us/Legislators/Detail?member=Breaux&ddBienniumSession=2019%2F2020F"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.arkleg.state.ar.us/Legislators/Detail?member=Breaux&ddBienniumSession=2021%2F2021R"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

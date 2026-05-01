@@ -1,0 +1,64 @@
+{
+  "id": "brent-jackson",
+  "name": "Brent Jackson",
+  "firstName": "Brent",
+  "lastName": "Jackson",
+  "photo": "/images/officials/state-legislature/nc/brent-jackson.jpg",
+  "photoSourceUrl": "https://www.ncleg.gov/Members/MemberImage/S/281/Low",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-9",
+  "jurisdiction": "North Carolina Senate",
+  "county": [
+    "North Carolina"
+  ],
+  "termStart": "2023-01-01",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 2022, North Carolina Legislative Building 16 W. Jones St., Raleigh, NC 27601",
+    "phone": "919-733-5705",
+    "email": "brent.jackson@ncleg.gov",
+    "website": "https://www.ncleg.gov/Members/Biography/S/281"
+  },
+  "bio": "Brent Jackson serves as State Senator for North Carolina Senate District 9. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "NC",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.ncleg.gov/Members/Biography/S/281"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/nc/legislature/Brent-Jackson-23f1da0b-34b2-4347-adb4-f5fc26e0475d.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://www.ncleg.gov/Members/MemberImage/S/281/Low"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Brent_Jackson_(North_Carolina_State_Senator)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/W._Brent_Jackson"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/117775/brent-jackson"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/brent-jackson-a393b684"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.ncleg.gov/Members/MemberTable/S"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

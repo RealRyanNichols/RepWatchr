@@ -1,0 +1,56 @@
+{
+  "id": "fred-atchley",
+  "name": "Fred Atchley",
+  "firstName": "Fred",
+  "lastName": "Atchley",
+  "photo": "/images/officials/state-legislature/tn/fred-atchley.jpg",
+  "photoSourceUrl": "https://static.wixstatic.com/media/2859e9_1cd01bea042640618e87046b22a3e1ef~mv2.png/v1/crop/x_578,y_0,w_2532,h_2534/fill/w_434,h_434,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/2023%201204%20Atchley%20Thank%20You%20Cards.png",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-12",
+  "jurisdiction": "Tennessee House of Representatives",
+  "county": [
+    "Tennessee"
+  ],
+  "termStart": "2024-11-05",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 640, Cordell Hull Building 425 Rep. John Lewis Way North, Nashville, TN 37243",
+    "phone": "615-741-5981",
+    "email": "rep.fred.atchley@capitol.tn.gov",
+    "website": "https://wapp.capitol.tn.gov/apps/legislatorinfo/member.aspx?district=H12&ga=114"
+  },
+  "bio": "Fred Atchley serves as State Representative for Tennessee House of Representatives District 12. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "TN",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://wapp.capitol.tn.gov/apps/legislatorinfo/member.aspx?district=H12&ga=114"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/tn/legislature/Fred-Atchley-a9c952eb-ff76-4d8c-9dbd-820b8909622e.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://static.wixstatic.com/media/2859e9_1cd01bea042640618e87046b22a3e1ef~mv2.png/v1/crop/x_578,y_0,w_2532,h_2534/fill/w_434,h_434,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/2023%201204%20Atchley%20Thank%20You%20Cards.png"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Fred_Atchley"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Fred_Atchley"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/99759/fred-atchley"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

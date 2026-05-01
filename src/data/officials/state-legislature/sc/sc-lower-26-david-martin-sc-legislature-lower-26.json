@@ -1,0 +1,60 @@
+{
+  "id": "david-martin-sc-legislature-lower-26",
+  "name": "David Martin",
+  "firstName": "David",
+  "lastName": "Martin",
+  "photo": "/images/officials/state-legislature/sc/david-martin-sc-legislature-lower-26.jpg",
+  "photoSourceUrl": "https://s3.amazonaws.com/ballotpedia-api4/files/thumbs/200/300/David_Martin_20240907_125219.jpeg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-26",
+  "jurisdiction": "South Carolina House of Representatives",
+  "county": [
+    "South Carolina"
+  ],
+  "termStart": "2024-11-11",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 306D, Blatt Building P.O. Box 11867, Columbia, SC 29211",
+    "phone": "803-212-6892",
+    "email": "davidmartin@schouse.gov",
+    "website": "https://www.scstatehouse.gov/member.php?code=1157954407"
+  },
+  "bio": "David Martin serves as State Representative for South Carolina House of Representatives District 26. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "SC",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.scstatehouse.gov/member.php?code=1157954407"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/sc/legislature/David-Martin-0187a0b8-b72e-42f1-82ea-8fdac9b9c484.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://s3.amazonaws.com/ballotpedia-api4/files/thumbs/200/300/David_Martin_20240907_125219.jpeg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/David_Martin_(South_Carolina)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/David_Martin_(South_Carolina_politician)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/216310/david-martin"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/david-w-martin-9a37113a"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

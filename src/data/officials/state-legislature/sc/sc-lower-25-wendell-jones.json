@@ -1,0 +1,61 @@
+{
+  "id": "wendell-jones",
+  "name": "Wendell Jones",
+  "firstName": "Wendell",
+  "lastName": "Jones",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-25",
+  "jurisdiction": "South Carolina House of Representatives",
+  "county": [
+    "South Carolina"
+  ],
+  "termStart": "2022-11-14",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 414C, Blatt Building P.O. Box 11867, Columbia, SC 29201",
+    "phone": "803-212-6941",
+    "email": "wendelljones@schouse.gov",
+    "website": "https://scstatehouse.gov/member.php?code=0953408977"
+  },
+  "bio": "Wendell Jones serves as State Representative for South Carolina House of Representatives District 25. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "SC",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://scstatehouse.gov/member.php?code=0953408977"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/sc/legislature/Wendell-K-Jones-7a7e6769-eee4-4bb5-8246-a6463457f342.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Wendell_Jones"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Wendell_K._Jones"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/205394/wendell-jones"
+    },
+    {
+      "title": "Public source",
+      "url": "https://scstatehouse.gov/member.php?chamber=H"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/wendell-jones-b9407713"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.scstatehouse.gov/member.php?code=0953408977"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

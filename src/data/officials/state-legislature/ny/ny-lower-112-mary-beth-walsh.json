@@ -1,0 +1,76 @@
+{
+  "id": "mary-beth-walsh",
+  "name": "Mary Beth Walsh",
+  "firstName": "Mary Beth",
+  "lastName": "Walsh",
+  "photo": "/images/officials/state-legislature/ny/mary-beth-walsh.jpg",
+  "photoSourceUrl": "https://assembly.state.ny.us/write/upload/member_files/112/headshot/112.jpg?hst=1660074618",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "Assemblymember",
+  "district": "HD-112",
+  "jurisdiction": "New York State Assembly",
+  "county": [
+    "New York"
+  ],
+  "termStart": "2017-01-04",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 446, Legislative Office Building, Albany, NY 12248",
+    "phone": "518-455-5772",
+    "email": "walshm@nyassembly.gov",
+    "website": "https://assembly.state.ny.us/mem/?sh=email",
+    "socialMedia": {
+      "x": "https://x.com/MBWalsh112",
+      "twitter": "https://x.com/MBWalsh112"
+    }
+  },
+  "bio": "Mary Beth Walsh serves as Assemblymember for New York State Assembly District 112. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "NY",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://assembly.state.ny.us/mem/?sh=email"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ny/legislature/Mary-Beth-Walsh-f83f11f2-bfdb-4f84-925a-ae04c97b990e.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://assembly.state.ny.us/write/upload/member_files/112/headshot/112.jpg?hst=1660074618"
+    },
+    {
+      "title": "Public source",
+      "url": "https://assembly.state.ny.us/mem/Mary-Beth-Walsh"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Mary_Beth_Walsh"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Mary_Beth_Walsh"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/174245/mary-walsh"
+    },
+    {
+      "title": "Public source",
+      "url": "https://marybeth4ny.com/meet-mary-beth"
+    },
+    {
+      "title": "Public source",
+      "url": "https://nyassembly.gov/mem/Mary-Beth-Walsh"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/mahynes"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

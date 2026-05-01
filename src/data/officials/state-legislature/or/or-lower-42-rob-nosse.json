@@ -1,0 +1,61 @@
+{
+  "id": "rob-nosse",
+  "name": "Rob Nosse",
+  "firstName": "Rob",
+  "lastName": "Nosse",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-42",
+  "jurisdiction": "Oregon House of Representatives",
+  "county": [
+    "Oregon"
+  ],
+  "termStart": "2014-07-07",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room H-277, 900 Court St. NE, Salem, OR 97301",
+    "phone": "503-986-1442",
+    "email": "rep.robnosse@oregonlegislature.gov",
+    "website": "https://www.oregonlegislature.gov/nosse"
+  },
+  "bio": "Rob Nosse serves as State Representative for Oregon House of Representatives District 42. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "OR",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.oregonlegislature.gov/nosse"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/or/legislature/Rob-Nosse-2aa7ebf4-d8a7-42c6-8e20-1edef58aa545.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://api.oregonlegislature.gov/odata/odataservice.svc/LegislativeSessions('2022R1')/Legislators"
+    },
+    {
+      "title": "Public source",
+      "url": "https://api.oregonlegislature.gov/odata/odataservice.svc/LegislativeSessions('2023R1')/Legislators"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Rob_Nosse"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Rob_Nosse"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/150910/rob-nosse"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/rob-nosse-7472a936"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

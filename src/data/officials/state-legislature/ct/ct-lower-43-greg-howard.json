@@ -1,0 +1,61 @@
+{
+  "id": "greg-howard",
+  "name": "Greg Howard",
+  "firstName": "Greg",
+  "lastName": "Howard",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-43",
+  "jurisdiction": "Connecticut House of Representatives",
+  "county": [
+    "Connecticut"
+  ],
+  "termStart": "2021-01-06",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 4200, Legislative Office Building 300 Capitol Ave., Hartford, CT 06106",
+    "phone": "860-240-8700",
+    "email": "greg.howard@housegop.ct.gov",
+    "website": "https://www.cga.ct.gov/asp/CGABillStatus/CGAMemberBills.asp?dist_code=%27043%27&dist_name=Howard,%20Greg%20S."
+  },
+  "bio": "Greg Howard serves as State Representative for Connecticut House of Representatives District 43. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "CT",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.cga.ct.gov/asp/CGABillStatus/CGAMemberBills.asp?dist_code=%27043%27&dist_name=Howard,%20Greg%20S."
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ct/legislature/Greg-Howard-d8829ada-0b6e-4cbf-8aa6-e88c70d76e89.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "ftp://ftp.cga.ct.gov/pub/data/LegislatorDatabase.csv"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Greg_Howard_(Connecticut)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Greg_Howard_(politician)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/194705/greg-howard"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.cthousegop.com/howard"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.cthousegop.com/howard/"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

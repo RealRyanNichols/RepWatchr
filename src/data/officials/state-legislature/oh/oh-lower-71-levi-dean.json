@@ -1,0 +1,49 @@
+{
+  "id": "levi-dean",
+  "name": "Levi Dean",
+  "firstName": "Levi",
+  "lastName": "Dean",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-71",
+  "jurisdiction": "Ohio House of Representatives",
+  "county": [
+    "Ohio"
+  ],
+  "termStart": "2025-01-01",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "77 S. High St. 11th Floor, Columbus, OH 43215",
+    "phone": "614-466-1470",
+    "email": "rep71@ohiohouse.gov",
+    "website": "https://ohiohouse.gov/members/levi-dean"
+  },
+  "bio": "Levi Dean serves as State Representative for Ohio House of Representatives District 71. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "OH",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://ohiohouse.gov/members/levi-dean"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/oh/legislature/Levi-Dean-1dcb1bfa-861d-4d16-8d7d-02364e1b4def.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Levi_Dean"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Levi_Dean"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ohiohouse.gov/members/levi-dean/biography"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

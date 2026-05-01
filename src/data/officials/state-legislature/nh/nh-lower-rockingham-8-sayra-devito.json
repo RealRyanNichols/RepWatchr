@@ -1,0 +1,64 @@
+{
+  "id": "sayra-devito",
+  "name": "Sayra DeVito",
+  "firstName": "Sayra",
+  "lastName": "DeVito",
+  "photo": "/images/officials/state-legislature/nh/sayra-devito.jpg",
+  "photoSourceUrl": "https://www.citizenscount.org/sites/default/files/2024-10/Sayra-DeVito.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-Rockingham 8",
+  "jurisdiction": "New Hampshire House of Representatives",
+  "county": [
+    "New Hampshire"
+  ],
+  "termStart": "2024-12-04",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "State House 107 N. Main St., Concord, NH 03301",
+    "phone": "405-590-0911",
+    "email": "sayra.devito@gc.nh.gov",
+    "website": "https://gc.nh.gov/house/members/member.aspx?pid=11401"
+  },
+  "bio": "Sayra DeVito serves as State Representative for New Hampshire House of Representatives District Rockingham 8. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "NH",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://gc.nh.gov/house/members/member.aspx?pid=11401"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/nh/legislature/Sayra-DeVito-44357af0-cbba-4906-87fd-1929564931b9.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://www.citizenscount.org/sites/default/files/2024-10/Sayra-DeVito.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Sayra_DeVito"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Sayra_DeVito"
+    },
+    {
+      "title": "Public source",
+      "url": "https://gencourt.state.nh.us/house/members/member.aspx?pid=11401"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/219195/sayra-devito"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/sayradevito"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

@@ -1,0 +1,72 @@
+{
+  "id": "greg-vital",
+  "name": "Greg Vital",
+  "firstName": "Greg",
+  "lastName": "Vital",
+  "photo": "/images/officials/state-legislature/tn/greg-vital.jpg",
+  "photoSourceUrl": "https://www.capitol.tn.gov/house/members/images/h29.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-29",
+  "jurisdiction": "Tennessee House of Representatives",
+  "county": [
+    "Tennessee"
+  ],
+  "termStart": "2021-09-15",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 550, Cordell Hull Building 425 Rep. John Lewis Way North, Nashville, TN 37243",
+    "phone": "615-741-3025",
+    "email": "rep.greg.vital@capitol.tn.gov",
+    "website": "https://tnhousegop.org/members/representative-greg-vital/"
+  },
+  "bio": "Greg Vital serves as State Representative for Tennessee House of Representatives District 29. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "TN",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://tnhousegop.org/members/representative-greg-vital/"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/tn/legislature/Greg-Vital-1035ecfa-8b33-472b-8aa9-2c6286c7fb59.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://www.capitol.tn.gov/house/members/images/h29.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Greg_Vital"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Greg_Vital"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/138995/greg-vital"
+    },
+    {
+      "title": "Public source",
+      "url": "https://tnhousegop.org/members/representative-greg-vital"
+    },
+    {
+      "title": "Public source",
+      "url": "https://wapp.capitol.tn.gov/apps/LegislatorInfo/directory.aspx?chamber=H"
+    },
+    {
+      "title": "Public source",
+      "url": "https://wapp.capitol.tn.gov/apps/legislatorinfo/member.aspx?district=H29"
+    },
+    {
+      "title": "Public source",
+      "url": "https://wapp.capitol.tn.gov/apps/legislatorinfo/member?district=H29"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

@@ -1,0 +1,57 @@
+{
+  "id": "kristian-grant",
+  "name": "Kristian Grant",
+  "firstName": "Kristian",
+  "lastName": "Grant",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-82",
+  "jurisdiction": "Michigan House of Representatives",
+  "county": [
+    "Michigan"
+  ],
+  "termStart": "2023-01-01",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room S-1186, Anderson House Office Building 124 N. Capitol Ave., Lansing, MI 48933",
+    "phone": "517-373-1800",
+    "email": "kristiangrant@house.mi.gov",
+    "website": "https://housedems.com/Kristian-Grant/"
+  },
+  "bio": "Kristian Grant serves as State Representative for Michigan House of Representatives District 82. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "MI",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://housedems.com/Kristian-Grant/"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/mi/legislature/Kristian-Grant-642baa61-66d3-44c1-997f-58b2c5740b4f.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Kristian_Grant"
+    },
+    {
+      "title": "Public source",
+      "url": "https://housedems.com/Kristian-Grant"
+    },
+    {
+      "title": "Public source",
+      "url": "https://housedems.com/kristian-grant/about"
+    },
+    {
+      "title": "Members List Page",
+      "url": "https://www.house.mi.gov/AllRepresentatives"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/kristiangrant"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

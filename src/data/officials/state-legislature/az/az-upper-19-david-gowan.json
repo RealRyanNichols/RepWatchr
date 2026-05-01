@@ -1,0 +1,68 @@
+{
+  "id": "david-gowan",
+  "name": "David Gowan",
+  "firstName": "David",
+  "lastName": "Gowan",
+  "photo": "/images/officials/state-legislature/az/david-gowan.jpg",
+  "photoSourceUrl": "https://www.azleg.gov/alisImages/MemberPhotos/57leg/Senate/GOWAN.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-19",
+  "jurisdiction": "Arizona Senate",
+  "county": [
+    "Arizona"
+  ],
+  "termStart": "2023-01-09",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 300, 1700 W. Washington St., Phoenix, AZ 85007",
+    "phone": "602-926-5154",
+    "email": "dgowan@azleg.gov",
+    "website": "https://www.azleg.gov/senate-member/?legislature=55&legislator=1968"
+  },
+  "bio": "David Gowan serves as State Senator for Arizona Senate District 19. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "AZ",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.azleg.gov/senate-member/?legislature=55&legislator=1968"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/az/legislature/David-Gowan-51520de4-0e87-475b-91d2-99aa18addf72.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://www.azleg.gov/alisImages/MemberPhotos/57leg/Senate/GOWAN.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/David_Gowan"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/David_Gowan_(politician)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/28241/david-gowan-sr"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.azleg.gov/memberroster/?body=S"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.azleg.gov/senate-member/?legislature=57&legislator=2382"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/david-gowan-912b2518"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

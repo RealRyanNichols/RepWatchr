@@ -1,0 +1,41 @@
+{
+  "id": "lisa-durnell",
+  "name": "Lisa Durnell",
+  "firstName": "Lisa",
+  "lastName": "Durnell",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-154",
+  "jurisdiction": "Missouri House of Representatives",
+  "county": [
+    "Missouri"
+  ],
+  "termStart": "2025-01-08",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 115-C, 201 W. Capitol Ave., Jefferson City, MO 65101",
+    "phone": "573-751-1455",
+    "email": "lisa.durnell@house.mo.gov",
+    "website": "https://house.mo.gov/MemberDetails.aspx?&district=154"
+  },
+  "bio": "Lisa Durnell serves as State Representative for Missouri House of Representatives District 154. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "MO",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://house.mo.gov/MemberDetails.aspx?&district=154"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/mo/legislature/Lisa-Durnell-5f182358-80ec-4463-a8b0-2dd660ac97ab.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Lisa_Durnell"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

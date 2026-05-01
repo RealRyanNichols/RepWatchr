@@ -1,0 +1,49 @@
+{
+  "id": "ken-gucker",
+  "name": "Ken Gucker",
+  "firstName": "Ken",
+  "lastName": "Gucker",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-138",
+  "jurisdiction": "Connecticut House of Representatives",
+  "county": [
+    "Connecticut"
+  ],
+  "termStart": "2025-01-08",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 4052, Legislative Office Building 300 Capitol Ave., Hartford, CT 06106",
+    "phone": "800-842-8267",
+    "email": "ken.gucker@cga.ct.gov",
+    "website": "https://www.housedems.ct.gov/gucker"
+  },
+  "bio": "Ken Gucker serves as State Representative for Connecticut House of Representatives District 138. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "CT",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.housedems.ct.gov/gucker"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ct/legislature/Ken-Gucker-f086a8e8-70ea-40bc-a77f-2012b74f3a00.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Kenneth_Gucker"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Ken_Gucker"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/172359/kenneth-gucker"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

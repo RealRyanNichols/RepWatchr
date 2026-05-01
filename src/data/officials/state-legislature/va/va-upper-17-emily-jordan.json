@@ -1,0 +1,77 @@
+{
+  "id": "emily-jordan",
+  "name": "Emily Jordan",
+  "firstName": "Emily",
+  "lastName": "Jordan",
+  "photo": "/images/officials/state-legislature/va/emily-jordan.jpg",
+  "photoSourceUrl": "https://apps.senate.virginia.gov/Senator/images/member_photos/Jordan17",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-17",
+  "jurisdiction": "Virginia Senate",
+  "county": [
+    "Virginia"
+  ],
+  "termStart": "2024-01-10",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 521, General Assembly Building P.O. Box 396, Richmond, VA 23218",
+    "phone": "804-698-7517",
+    "email": "senatorjordan@senate.virginia.gov",
+    "website": "https://apps.senate.virginia.gov/Senator/memberpage.php?id=S116",
+    "socialMedia": {
+      "x": "https://x.com/BrewerForVA",
+      "twitter": "https://x.com/BrewerForVA",
+      "facebook": "https://facebook.com/BrewerForVA"
+    }
+  },
+  "bio": "Emily Jordan serves as State Senator for Virginia Senate District 17. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "VA",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://apps.senate.virginia.gov/Senator/memberpage.php?id=S116"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/va/legislature/Emily-M-Brewer-f1a906cd-6602-492c-88dc-61887401c346.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://apps.senate.virginia.gov/Senator/images/member_photos/Jordan17"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Emily_Jordan"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Emily_Brewer"
+    },
+    {
+      "title": "Public source",
+      "url": "https://lis.virginia.gov/191/mbr/MBR.HTM"
+    },
+    {
+      "title": "Public source",
+      "url": "https://lis.virginia.gov/201/mbr/MBR.HTM"
+    },
+    {
+      "title": "Public source",
+      "url": "https://lis.virginia.gov/cgi-bin/legp604.exe?191+mbr+H291"
+    },
+    {
+      "title": "Public source",
+      "url": "https://lis.virginia.gov/cgi-bin/legp604.exe?201+mbr+H291"
+    },
+    {
+      "title": "Public source",
+      "url": "https://lis.virginia.gov/cgi-bin/legp604.exe?221+mbr+H291"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

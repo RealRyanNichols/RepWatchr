@@ -1,0 +1,73 @@
+{
+  "id": "didi-barrett",
+  "name": "Didi Barrett",
+  "firstName": "Didi",
+  "lastName": "Barrett",
+  "photo": "/images/officials/state-legislature/ny/didi-barrett.jpg",
+  "photoSourceUrl": "https://assembly.state.ny.us/write/upload/member_files/106/headshot/106.jpg?hst=1660074414",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "Assemblymember",
+  "district": "HD-106",
+  "jurisdiction": "New York State Assembly",
+  "county": [
+    "New York"
+  ],
+  "termStart": "2013-01-01",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 724, Legislative Office Building, Albany, NY 12248",
+    "phone": "518-455-5177",
+    "email": "barrettd@nyassembly.gov",
+    "website": "https://assembly.state.ny.us/mem/?sh=email",
+    "socialMedia": {
+      "x": "https://x.com/DidiBarrett106",
+      "twitter": "https://x.com/DidiBarrett106",
+      "facebook": "https://facebook.com/AssemblymemberDidiBarrett"
+    }
+  },
+  "bio": "Didi Barrett serves as Assemblymember for New York State Assembly District 106. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "NY",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://assembly.state.ny.us/mem/?sh=email"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ny/legislature/Didi-Barrett-da883f7a-698b-49d6-8519-11bab87823cf.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://assembly.state.ny.us/write/upload/member_files/106/headshot/106.jpg?hst=1660074414"
+    },
+    {
+      "title": "Public source",
+      "url": "https://assembly.state.ny.us/mem/Didi-Barrett"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Didi_Barrett"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Didi_Barrett"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/127871/didi-barrett"
+    },
+    {
+      "title": "Public source",
+      "url": "https://nyassembly.gov/mem/didi-barrett"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/didi-barrett-13a3441b"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

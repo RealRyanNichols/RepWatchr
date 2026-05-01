@@ -1,0 +1,64 @@
+{
+  "id": "kathy-szeliga",
+  "name": "Kathy Szeliga",
+  "firstName": "Kathy",
+  "lastName": "Szeliga",
+  "photo": "/images/officials/state-legislature/md/kathy-szeliga.jpg",
+  "photoSourceUrl": "https://mgaleg.maryland.gov/2025RS/images/szeliga.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "R",
+  "level": "state",
+  "position": "Delegate",
+  "district": "HD-7A",
+  "jurisdiction": "Maryland House of Delegates",
+  "county": [
+    "Maryland"
+  ],
+  "termStart": "2023-01-11",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 322, Lowe House Office Building 6 Bladen St., Annapolis, MD 21401",
+    "phone": "410-841-3698",
+    "email": "kathy.szeliga@house.maryland.gov",
+    "website": "https://mgaleg.maryland.gov/mgawebsite/Members/Details/szeliga"
+  },
+  "bio": "Kathy Szeliga serves as Delegate for Maryland House of Delegates District 7A. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "MD",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://mgaleg.maryland.gov/mgawebsite/Members/Details/szeliga"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/md/legislature/Kathy-Szeliga-943d1601-904b-40dc-8b98-84bbb02851ab.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://mgaleg.maryland.gov/2025RS/images/szeliga.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Kathy_Szeliga"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Kathy_Szeliga"
+    },
+    {
+      "title": "Public source",
+      "url": "https://mgaleg.maryland.gov/webmga/frmMain.aspx?pid=sponpage&tab=subject6&id=szeliga&stab=01"
+    },
+    {
+      "title": "Public source",
+      "url": "https://msa.maryland.gov/msa/mdmanual/06hse/html/msa15446.html"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/kathy-szeliga-72b0056"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

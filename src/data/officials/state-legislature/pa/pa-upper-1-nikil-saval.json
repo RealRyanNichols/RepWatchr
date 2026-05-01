@@ -1,0 +1,67 @@
+{
+  "id": "nikil-saval",
+  "name": "Nikil Saval",
+  "firstName": "Nikil",
+  "lastName": "Saval",
+  "party": "D",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-1",
+  "jurisdiction": "Pennsylvania Senate",
+  "county": [
+    "Pennsylvania"
+  ],
+  "termStart": "2020-12-01",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 543, Main Capitol Senate Box 203001, Harrisburg, PA 17120",
+    "phone": "717-787-5662",
+    "email": "saval@pasenate.com",
+    "website": "https://www.legis.state.pa.us/cfdocs/legis/home/member_information/Senate_bio.cfm?id=1921",
+    "socialMedia": {
+      "x": "https://x.com/senatorsaval",
+      "twitter": "https://x.com/senatorsaval",
+      "facebook": "https://facebook.com/SenatorSaval",
+      "instagram": "https://instagram.com/senatorsaval"
+    }
+  },
+  "bio": "Nikil Saval serves as State Senator for Pennsylvania Senate District 1. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "PA",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.legis.state.pa.us/cfdocs/legis/home/member_information/Senate_bio.cfm?id=1921"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/pa/legislature/Nikil-Saval-6f172bc8-50b0-4dd3-aed6-b5fd48b70eeb.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Nikil_Saval"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Nikil_Saval"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.legis.state.pa.us/cfdocs/legis/home/member_information/mbrList.cfm?body=S&sort=alpha"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.legis.state.pa.us/cfdocs/legis/home/member_information/senators_alpha.cfm"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.palegis.us/senate/members/bio/1921/sen-saval"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.pasenatorsaval.com"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

@@ -1,0 +1,57 @@
+{
+  "id": "ron-napoli",
+  "name": "Ron Napoli",
+  "firstName": "Ron",
+  "lastName": "Napoli",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-73",
+  "jurisdiction": "Connecticut House of Representatives",
+  "county": [
+    "Connecticut"
+  ],
+  "termStart": "2019-01-09",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 4011, Legislative Office Building 300 Capitol Ave., Hartford, CT 06106",
+    "phone": "800-842-8267",
+    "email": "ron.napoli@cga.ct.gov",
+    "website": "https://cga.ct.gov/asp/CGABillStatus/CGAMemberBills.asp?dist_code=%27073%27&dist_name=Napoli,%20Ronald%20A."
+  },
+  "bio": "Ron Napoli serves as State Representative for Connecticut House of Representatives District 73. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "CT",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://cga.ct.gov/asp/CGABillStatus/CGAMemberBills.asp?dist_code=%27073%27&dist_name=Napoli,%20Ronald%20A."
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ct/legislature/Ronald-A-Napoli-Jr-71fb3504-679f-419d-86bf-d1ae7d573244.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "ftp://ftp.cga.ct.gov/pub/data/LegislatorDatabase.csv"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Ronald_Napoli_Jr."
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Ronald_Napoli_Jr."
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/130366/ronald-napoli-jr"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.housedems.ct.gov/napoli"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

@@ -1,0 +1,72 @@
+{
+  "id": "neil-rafferty",
+  "name": "Neil Rafferty",
+  "firstName": "Neil",
+  "lastName": "Rafferty",
+  "photo": "/images/officials/state-legislature/al/neil-rafferty.jpg",
+  "photoSourceUrl": "https://www.legislature.state.al.us/pdf/house/members/Rafferty_54.png",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-54",
+  "jurisdiction": "Alabama House of Representatives",
+  "county": [
+    "Alabama"
+  ],
+  "termStart": "2018-11-07",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 539-F, 11 S. Union St., Montgomery, AL 36130",
+    "phone": "334-261-0543",
+    "email": "reprafferty@gmail.com",
+    "website": "https://alison.legislature.state.al.us/house-leaders-members"
+  },
+  "bio": "Neil Rafferty serves as State Representative for Alabama House of Representatives District 54. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "AL",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://alison.legislature.state.al.us/house-leaders-members"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/al/legislature/Neil-Rafferty-dc6e41ae-d1b3-47c7-b225-1d5ec88a9fdc.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://www.legislature.state.al.us/pdf/house/members/Rafferty_54.png"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Neil_Rafferty"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Neil_Rafferty"
+    },
+    {
+      "title": "graphql endpoint for member information",
+      "url": "https://gql.api.alison.legislature.state.al.us/graphql"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/180386/neil-rafferty"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.legislature.state.al.us/aliswww/ISD/ALRepresentative.aspx?NAME=Rafferty&OID_SPONSOR=100535&OID_PERSON=8503&SESSNAME="
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.legislature.state.al.us/aliswww/ISD/ALRepresentative.aspx?OID_SPONSOR=100535&OID_PERSON=8503"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.legislature.state.al.us/aliswww/ISD/House/ALRepresentatives.aspx"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

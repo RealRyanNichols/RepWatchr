@@ -1,0 +1,72 @@
+{
+  "id": "josh-becker",
+  "name": "Josh Becker",
+  "firstName": "Josh",
+  "lastName": "Becker",
+  "photo": "/images/officials/state-legislature/ca/josh-becker.jpg",
+  "photoSourceUrl": "https://www.senate.ca.gov/sites/senate.ca.gov/files/senator_photos/sd13_becker_0.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-13",
+  "jurisdiction": "California Senate",
+  "county": [
+    "California"
+  ],
+  "termStart": "2020-12-07",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "1021 O St. Suite 6520, Sacramento, CA 95814",
+    "phone": "916-651-4013",
+    "email": "senator.becker@senate.ca.gov",
+    "website": "https://sd13.senate.ca.gov/"
+  },
+  "bio": "Josh Becker serves as State Senator for California Senate District 13. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "CA",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://sd13.senate.ca.gov/"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ca/legislature/Josh-Becker-c71137b2-3fc3-48bf-b0ad-6c29aff98268.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://www.senate.ca.gov/sites/senate.ca.gov/files/senator_photos/sd13_becker_0.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Josh_Becker"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Josh_Becker_(politician)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/120184/josh-becker"
+    },
+    {
+      "title": "Public source",
+      "url": "https://sd13.senate.ca.gov"
+    },
+    {
+      "title": "Public source",
+      "url": "https://senate.ca.gov/senators"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/beckerjosh"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.senate.ca.gov/senators"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

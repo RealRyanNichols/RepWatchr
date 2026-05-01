@@ -1,0 +1,49 @@
+{
+  "id": "kevin-steele",
+  "name": "Kevin Steele",
+  "firstName": "Kevin",
+  "lastName": "Steele",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-55",
+  "jurisdiction": "Florida House of Representatives",
+  "county": [
+    "Florida"
+  ],
+  "termStart": "2022-11-08",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 315, House Office Building 402 S. Monroe St., Tallahassee, FL 32399",
+    "phone": "850-717-5055",
+    "email": "kevin.steele@flhouse.gov",
+    "website": "https://myfloridahouse.gov/Sections/Representatives/details.aspx?MemberId=4881&LegislativeTermId=90"
+  },
+  "bio": "Kevin Steele serves as State Representative for Florida House of Representatives District 55. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "FL",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://myfloridahouse.gov/Sections/Representatives/details.aspx?MemberId=4881&LegislativeTermId=90"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/fl/legislature/Kevin-M-Steele-7cf27467-9070-4d4a-9a45-24bfe980dfb8.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Kevin_Steele"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.flhouse.gov/Sections/Representatives/details.aspx?MemberId=4881"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.myfloridahouse.gov/Sections/Representatives/details.aspx?MemberId=4881"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

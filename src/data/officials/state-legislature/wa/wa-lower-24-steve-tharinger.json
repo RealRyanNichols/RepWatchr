@@ -1,0 +1,69 @@
+{
+  "id": "steve-tharinger",
+  "name": "Steve Tharinger",
+  "firstName": "Steve",
+  "lastName": "Tharinger",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-24",
+  "jurisdiction": "Washington House of Representatives",
+  "county": [
+    "Washington"
+  ],
+  "termStart": "2011-01-10",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 314, John L. O'Brien Building P.O. Box 40600, Olympia, WA 98504",
+    "phone": "360-786-7904",
+    "email": "steve.tharinger@leg.wa.gov",
+    "website": "https://housedemocrats.wa.gov/legislators/Steve-Tharinger/"
+  },
+  "bio": "Steve Tharinger serves as State Representative for Washington House of Representatives District 24. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "WA",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://housedemocrats.wa.gov/legislators/Steve-Tharinger/"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/wa/legislature/Steve-Tharinger-a7654dc1-5240-437e-9579-48640c8564d8.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://app.leg.wa.gov/ContentParts/MemberDirectory/?a=House"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Steve_Tharinger"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Steve_Tharinger"
+    },
+    {
+      "title": "Public source",
+      "url": "https://housedemocrats.wa.gov/tharinger"
+    },
+    {
+      "title": "Public source",
+      "url": "https://housedemocrats.wa.gov/tharinger/"
+    },
+    {
+      "title": "Public source",
+      "url": "https://housedemocrats.wa.gov/tharinger/biography"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/94645/steve-tharinger"
+    },
+    {
+      "title": "Public source",
+      "url": "https://leg.wa.gov/legislators/member/steve-tharinger"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

@@ -1,0 +1,77 @@
+{
+  "id": "dan-helmer",
+  "name": "Dan Helmer",
+  "firstName": "Dan",
+  "lastName": "Helmer",
+  "photo": "/images/officials/state-legislature/va/dan-helmer.jpg",
+  "photoSourceUrl": "https://memdata.virginiageneralassembly.gov/images/display_image/H0317",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "Delegate",
+  "district": "HD-10",
+  "jurisdiction": "Virginia House of Delegates",
+  "county": [
+    "Virginia"
+  ],
+  "termStart": "2024-01-10",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 1013, General Assembly Building 201 N. 9th St., Richmond, VA 23219",
+    "phone": "804-698-1010",
+    "email": "deldhelmer@house.virginia.gov",
+    "website": "https://house.vga.virginia.gov/members/H0317",
+    "socialMedia": {
+      "x": "https://x.com/helmerVA",
+      "twitter": "https://x.com/helmerVA",
+      "facebook": "https://facebook.com/HelmerVA"
+    }
+  },
+  "bio": "Dan Helmer serves as Delegate for Virginia House of Delegates District 10. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "VA",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://house.vga.virginia.gov/members/H0317"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/va/legislature/Dan-I-Helmer-5e5e025d-7e50-4c2f-ba81-720f19aa0d81.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://memdata.virginiageneralassembly.gov/images/display_image/H0317"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Dan_Helmer"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Dan_Helmer"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/179688/dan-helmer"
+    },
+    {
+      "title": "Public source",
+      "url": "https://lis.virginia.gov/201/mbr/MBR.HTM"
+    },
+    {
+      "title": "Public source",
+      "url": "https://lis.virginia.gov/cgi-bin/legp604.exe?201+mbr+H317"
+    },
+    {
+      "title": "Public source",
+      "url": "https://lis.virginia.gov/cgi-bin/legp604.exe?221+mbr+H317"
+    },
+    {
+      "title": "Public source",
+      "url": "https://lis.virginia.gov/cgi-bin/legp604.exe?241+mbr+H317"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

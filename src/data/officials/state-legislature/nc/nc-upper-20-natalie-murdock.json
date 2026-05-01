@@ -1,0 +1,56 @@
+{
+  "id": "natalie-murdock",
+  "name": "Natalie Murdock",
+  "firstName": "Natalie",
+  "lastName": "Murdock",
+  "photo": "/images/officials/state-legislature/nc/natalie-murdock.jpg",
+  "photoSourceUrl": "https://www.ncleg.gov/Members/MemberImage/S/422/Low",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-20",
+  "jurisdiction": "North Carolina Senate",
+  "county": [
+    "North Carolina"
+  ],
+  "termStart": "2020-04-01",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 1118, North Carolina Legislative Building 16 W. Jones St., Raleigh, NC 27601",
+    "phone": "919-733-4599",
+    "email": "natalie.murdock@ncleg.gov",
+    "website": "https://www.ncleg.gov/Members/Biography/S/422"
+  },
+  "bio": "Natalie Murdock serves as State Senator for North Carolina Senate District 20. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "NC",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.ncleg.gov/Members/Biography/S/422"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/nc/legislature/Natalie-S-Murdock-121cec2b-d03f-45bc-a835-1ae5f4eb18d3.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://www.ncleg.gov/Members/MemberImage/S/422/Low"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Natalie_Murdock"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/natalie-murdock-2b8ab425"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.ncleg.gov/Members/MemberTable/S"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

@@ -1,0 +1,77 @@
+{
+  "id": "jeion-ward",
+  "name": "Jeion Ward",
+  "firstName": "Jeion",
+  "lastName": "Ward",
+  "photo": "/images/officials/state-legislature/va/jeion-ward.jpg",
+  "photoSourceUrl": "https://memdata.virginiageneralassembly.gov/images/display_image/H0173",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "Delegate",
+  "district": "HD-87",
+  "jurisdiction": "Virginia House of Delegates",
+  "county": [
+    "Virginia"
+  ],
+  "termStart": "2024-01-10",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 1009, General Assembly Building 201 N. 9th St., Richmond, VA 23219",
+    "phone": "804-698-1087",
+    "email": "deljward@house.virginia.gov",
+    "website": "https://house.vga.virginia.gov/members/H0173",
+    "socialMedia": {
+      "x": "https://x.com/jeionward",
+      "twitter": "https://x.com/jeionward",
+      "facebook": "https://facebook.com/delegatejeionward"
+    }
+  },
+  "bio": "Jeion Ward serves as Delegate for Virginia House of Delegates District 87. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "VA",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://house.vga.virginia.gov/members/H0173"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/va/legislature/Jeion-A-Ward-f3e15ab0-8419-43c2-ab7a-f3984419d1eb.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://memdata.virginiageneralassembly.gov/images/display_image/H0173"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Jeion_Ward"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Jeion_Ward"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/50921/jeion-ward"
+    },
+    {
+      "title": "Public source",
+      "url": "https://lis.virginia.gov/191/mbr/MBR.HTM"
+    },
+    {
+      "title": "Public source",
+      "url": "https://lis.virginia.gov/201/mbr/MBR.HTM"
+    },
+    {
+      "title": "Public source",
+      "url": "https://lis.virginia.gov/cgi-bin/legp604.exe?191+mbr+H173"
+    },
+    {
+      "title": "Public source",
+      "url": "https://lis.virginia.gov/cgi-bin/legp604.exe?201+mbr+H173"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

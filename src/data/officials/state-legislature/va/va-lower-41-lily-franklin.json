@@ -1,0 +1,49 @@
+{
+  "id": "lily-franklin",
+  "name": "Lily Franklin",
+  "firstName": "Lily",
+  "lastName": "Franklin",
+  "party": "D",
+  "level": "state",
+  "position": "Delegate",
+  "district": "HD-41",
+  "jurisdiction": "Virginia House of Delegates",
+  "county": [
+    "Virginia"
+  ],
+  "termStart": "2026-01-14",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 721, General Assembly Building 201 N. 9th St., Richmond, VA 23219",
+    "phone": "804-698-1041",
+    "email": "dellfranklin@house.virginia.gov",
+    "website": "https://house.vga.virginia.gov/members/H0393"
+  },
+  "bio": "Lily Franklin serves as Delegate for Virginia House of Delegates District 41. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "VA",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://house.vga.virginia.gov/members/H0393"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/va/legislature/Lily-Franklin-ae28ba3f-6c53-463c-ac43-a5549ef51d48.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Lily_Franklin"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Lily_Franklin"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/lily-franklin-668063139"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

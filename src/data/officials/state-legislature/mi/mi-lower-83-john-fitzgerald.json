@@ -1,0 +1,57 @@
+{
+  "id": "john-fitzgerald",
+  "name": "John Fitzgerald",
+  "firstName": "John",
+  "lastName": "Fitzgerald",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-83",
+  "jurisdiction": "Michigan House of Representatives",
+  "county": [
+    "Michigan"
+  ],
+  "termStart": "2023-01-01",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room H141, Capitol Building 100 N. Capitol Ave., Lansing, MI 48933",
+    "phone": "517-373-0835",
+    "email": "johnfitzgerald@house.mi.gov",
+    "website": "https://housedems.com/John-Fitzgerald/"
+  },
+  "bio": "John Fitzgerald serves as State Representative for Michigan House of Representatives District 83. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "MI",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://housedems.com/John-Fitzgerald/"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/mi/legislature/John-Fitzgerald-9f4f8b82-e4ee-4e50-a2ea-d46bbf264d34.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/John_Fitzgerald_(Michigan_House_candidate)"
+    },
+    {
+      "title": "Public source",
+      "url": "https://housedems.com/John-Fitzgerald"
+    },
+    {
+      "title": "Public source",
+      "url": "https://housedems.com/john-fitzgerald/about"
+    },
+    {
+      "title": "Members List Page",
+      "url": "https://www.house.mi.gov/AllRepresentatives"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/john-fitzgerald-38b65980"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

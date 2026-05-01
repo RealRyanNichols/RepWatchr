@@ -1,0 +1,72 @@
+{
+  "id": "brandy-fluker-reid",
+  "name": "Brandy Fluker-Reid",
+  "firstName": "Brandy",
+  "lastName": "Fluker-Reid",
+  "photo": "/images/officials/state-legislature/ma/brandy-fluker-reid.jpg",
+  "photoSourceUrl": "https://malegislature.gov/Legislators/Profile/170/BFO1.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-12th Suffolk",
+  "jurisdiction": "Massachusetts House of Representatives",
+  "county": [
+    "Massachusetts"
+  ],
+  "termStart": "2021-01-06",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 136, State House 24 Beacon St., Boston, MA 02133",
+    "phone": "617-722-2396",
+    "email": "brandy.flukerreid@mahouse.gov",
+    "website": "https://malegislature.gov/Legislators/Profile/BFO1"
+  },
+  "bio": "Brandy Fluker-Reid serves as State Representative for Massachusetts House of Representatives District 12th Suffolk. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "MA",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://malegislature.gov/Legislators/Profile/BFO1"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ma/legislature/Brandy-Fluker-Oakley-99c9c9e7-f0e3-480b-ad38-de297e6c635a.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://malegislature.gov/Legislators/Profile/170/BFO1.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Brandy_Fluker_Oakley"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Brandy_Fluker_Oakley"
+    },
+    {
+      "title": "Public source",
+      "url": "https://malegislature.gov/api/GeneralCourts/192/LegislativeMembers"
+    },
+    {
+      "title": "Public source",
+      "url": "https://malegislature.gov/api/GeneralCourts/192/LegislativeMembers/"
+    },
+    {
+      "title": "Public source",
+      "url": "https://malegislature.gov/api/GeneralCourts/192/LegislativeMembers/BFO1"
+    },
+    {
+      "title": "Public source",
+      "url": "https://malegislature.gov/api/GeneralCourts/193/LegislativeMembers"
+    },
+    {
+      "title": "Public source",
+      "url": "https://malegislature.gov/api/GeneralCourts/193/LegislativeMembers/"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

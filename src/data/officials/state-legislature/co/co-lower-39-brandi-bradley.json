@@ -1,0 +1,57 @@
+{
+  "id": "brandi-bradley",
+  "name": "Brandi Bradley",
+  "firstName": "Brandi",
+  "lastName": "Bradley",
+  "party": "R",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-39",
+  "jurisdiction": "Colorado House of Representatives",
+  "county": [
+    "Colorado"
+  ],
+  "termStart": "2023-01-09",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "State Capitol Room 307, Colorado  Building 200 E. Colfax Ave., Denver, CO 80203",
+    "phone": "303-866-2935",
+    "email": "brandi.bradley.house@coleg.gov",
+    "website": "https://leg.colorado.gov/legislators/brandi-bradley"
+  },
+  "bio": "Brandi Bradley serves as State Representative for Colorado House of Representatives District 39. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "CO",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://leg.colorado.gov/legislators/brandi-bradley"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/co/legislature/Brandi-Bradley-5a396024-8dcf-438c-beca-a730e972d9d8.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Brandi_Bradley"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Brandi_Bradley"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/206196/brandi-bradley"
+    },
+    {
+      "title": "Public source",
+      "url": "https://leg.colorado.gov/legislators"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.coloradohouserepublicans.com/brandi-bradley"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

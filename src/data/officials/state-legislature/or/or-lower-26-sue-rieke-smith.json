@@ -1,0 +1,56 @@
+{
+  "id": "sue-rieke-smith",
+  "name": "Sue Rieke Smith",
+  "firstName": "Sue",
+  "lastName": "Rieke Smith",
+  "photo": "/images/officials/state-legislature/or/sue-rieke-smith.jpg",
+  "photoSourceUrl": "https://www.oregonlegislature.gov/riekesmith/PublishingImages/member_photo.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-26",
+  "jurisdiction": "Oregon House of Representatives",
+  "county": [
+    "Oregon"
+  ],
+  "termStart": "2025-06-09",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room H-281, 900 Court St. NE, Salem, OR 97301",
+    "phone": "503-986-1426",
+    "email": "rep.sueriekesmith@oregonlegislature.gov",
+    "website": "https://www.oregonlegislature.gov/riekesmith"
+  },
+  "bio": "Sue Rieke Smith serves as State Representative for Oregon House of Representatives District 26. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "OR",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.oregonlegislature.gov/riekesmith"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/or/legislature/Sue-Rieke-Smith-0f296591-6b7e-40b0-8a92-9198dd72bd7e.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://www.oregonlegislature.gov/riekesmith/PublishingImages/member_photo.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Sue_Rieke_Smith"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Sue_Rieke_Smith"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/224051/sue-rieke-smith"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

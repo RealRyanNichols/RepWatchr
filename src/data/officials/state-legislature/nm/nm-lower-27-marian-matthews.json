@@ -1,0 +1,69 @@
+{
+  "id": "marian-matthews",
+  "name": "Marian Matthews",
+  "firstName": "Marian",
+  "lastName": "Matthews",
+  "photo": "/images/officials/state-legislature/nm/marian-matthews.jpg",
+  "photoSourceUrl": "https://www.nmlegis.gov/Images/Legislators/House/HMATT.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-27",
+  "jurisdiction": "New Mexico House of Representatives",
+  "county": [
+    "New Mexico"
+  ],
+  "termStart": "2020-01-07",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "State Capitol Room 206B, New Mexico  490 Old Santa Fe Trail, Santa Fe, NM 87501",
+    "phone": "505-986-4248",
+    "email": "marian.matthews@nmlegis.gov",
+    "website": "https://www.linkedin.com/in/marianmatthews/",
+    "socialMedia": {
+      "x": "https://x.com/Hd27Marian",
+      "twitter": "https://x.com/Hd27Marian",
+      "facebook": "https://facebook.com/MarianMatthewsHD27"
+    }
+  },
+  "bio": "Marian Matthews serves as State Representative for New Mexico House of Representatives District 27. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "NM",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.linkedin.com/in/marianmatthews/"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/nm/legislature/Marian-Matthews-c2fb0283-189c-4b0c-9d99-7b70d2f62c40.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://www.nmlegis.gov/Images/Legislators/House/HMATT.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Marian_Matthews"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Marian_Matthews"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/marianmatthews"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.nmlegis.gov/Members/Legislator?SponCode=HMATT"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.nmlegis.gov/Members/Legislator_List?T=R"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

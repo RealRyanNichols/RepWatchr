@@ -1,0 +1,65 @@
+{
+  "id": "amos-o-neal",
+  "name": "Amos O'Neal",
+  "firstName": "Amos",
+  "lastName": "O'Neal",
+  "party": "D",
+  "level": "state",
+  "position": "State Representative",
+  "district": "HD-94",
+  "jurisdiction": "Michigan House of Representatives",
+  "county": [
+    "Michigan"
+  ],
+  "termStart": "2023-01-01",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room N-1198, Anderson House Office Building 124 N. Capitol Ave., Lansing, MI 48933",
+    "phone": "517-373-0837",
+    "email": "amosoneal@house.mi.gov",
+    "website": "https://housedems.com/amos-oneal/"
+  },
+  "bio": "Amos O'Neal serves as State Representative for Michigan House of Representatives District 94. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "MI",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://housedems.com/amos-oneal/"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/mi/legislature/Amos-ONeal-5f160dff-1ce1-4606-a469-fdd08125beb4.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Amos_O%27Neal"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Amos_O%27Neal"
+    },
+    {
+      "title": "Public source",
+      "url": "https://housedems.com/amos-oneal"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/76476/amos-oneal"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.house.mi.gov/AllRepresentatives"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.house.mi.gov/MHRPublic/frmRepListMilenia.aspx?all=true"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/amosoneal"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

@@ -1,0 +1,65 @@
+{
+  "id": "john-fonfara",
+  "name": "John Fonfara",
+  "firstName": "John",
+  "lastName": "Fonfara",
+  "party": "D",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-1",
+  "jurisdiction": "Connecticut Senate",
+  "county": [
+    "Connecticut"
+  ],
+  "termStart": "1997-01-08",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 3700, Legislative Office Building 300 Capitol Ave., Hartford, CT 06106",
+    "phone": "860-240-0043",
+    "email": "fonfara@senatedems.ct.gov",
+    "website": "https://cga.ct.gov/asp/CGABillStatus/CGAMemberBills.asp?dist_code=%27S01%27&dist_name=Fonfara,%20John%20W."
+  },
+  "bio": "John Fonfara serves as State Senator for Connecticut Senate District 1. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "CT",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://cga.ct.gov/asp/CGABillStatus/CGAMemberBills.asp?dist_code=%27S01%27&dist_name=Fonfara,%20John%20W."
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ct/legislature/John-W-Fonfara-749be8b3-0b40-41ec-8670-7dfbfbc90b6e.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "ftp://ftp.cga.ct.gov/pub/data/LegislatorDatabase.csv"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/John_Fonfara"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/John_Fonfara"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/7180/john-fonfara"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.senatedems.ct.gov/fonfara"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.senatedems.ct.gov/fonfara-161024"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.senatedems.ct.gov/senator/john-fonfara/bio"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}

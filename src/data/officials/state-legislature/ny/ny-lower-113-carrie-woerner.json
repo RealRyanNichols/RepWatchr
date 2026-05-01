@@ -1,0 +1,72 @@
+{
+  "id": "carrie-woerner",
+  "name": "Carrie Woerner",
+  "firstName": "Carrie",
+  "lastName": "Woerner",
+  "photo": "/images/officials/state-legislature/ny/carrie-woerner.jpg",
+  "photoSourceUrl": "https://assembly.state.ny.us/write/upload/member_files/113/headshot/113.jpg?hst=1660074635",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "state",
+  "position": "Assemblymember",
+  "district": "HD-113",
+  "jurisdiction": "New York State Assembly",
+  "county": [
+    "New York"
+  ],
+  "termStart": "2015-01-01",
+  "termEnd": "Current public term pending source review",
+  "contactInfo": {
+    "office": "Room 845, Legislative Office Building, Albany, NY 12248",
+    "phone": "518-455-5404",
+    "email": "woernerc@nyassembly.gov",
+    "website": "https://assembly.state.ny.us/mem/?sh=email",
+    "socialMedia": {
+      "x": "https://x.com/AMCarrieWoerner",
+      "twitter": "https://x.com/AMCarrieWoerner"
+    }
+  },
+  "bio": "Carrie Woerner serves as Assemblymember for New York State Assembly District 113. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "NY",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://assembly.state.ny.us/mem/?sh=email"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/ny/legislature/Carrie-Woerner-6d6f344e-39b8-401f-807e-c88924fb2793.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://assembly.state.ny.us/write/upload/member_files/113/headshot/113.jpg?hst=1660074635"
+    },
+    {
+      "title": "Public source",
+      "url": "https://assembly.state.ny.us/mem/Carrie-Woerner"
+    },
+    {
+      "title": "Public source",
+      "url": "https://ballotpedia.org/Carrie_Woerner"
+    },
+    {
+      "title": "Public source",
+      "url": "https://en.wikipedia.org/wiki/Carrie_Woerner"
+    },
+    {
+      "title": "Public source",
+      "url": "https://justfacts.votesmart.org/candidate/biography/142544/carrie-woerner"
+    },
+    {
+      "title": "Public source",
+      "url": "https://nyassembly.gov/mem/Carrie-Woerner"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.linkedin.com/in/carriewoerner"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-01"
+}
