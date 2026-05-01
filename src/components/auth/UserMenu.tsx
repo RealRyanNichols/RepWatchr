@@ -32,13 +32,13 @@ export default function UserMenu() {
       <div className="flex items-center gap-2">
         <Link
           href="/auth/login"
-          className="rounded-md px-3 py-2 text-sm font-medium text-gray-700 transition-colors hover:bg-gray-100"
+          className="rounded-md px-3 py-2 text-sm font-black text-white transition-colors hover:bg-white/10 hover:text-[#d6b35a]"
         >
           Log In
         </Link>
         <Link
           href="/auth/signup"
-          className="rounded-md bg-blue-600 px-3 py-2 text-sm font-medium text-white transition-colors hover:bg-blue-700"
+          className="rounded-md bg-blue-600 px-3 py-2 text-sm font-black text-white shadow-sm transition-colors hover:bg-blue-500"
         >
           Sign Up
         </Link>
@@ -50,7 +50,7 @@ export default function UserMenu() {
     <div className="relative" ref={menuRef}>
       <button
         onClick={() => setOpen(!open)}
-        className="flex items-center gap-2 rounded-md px-3 py-2 text-sm font-medium text-gray-700 transition-colors hover:bg-gray-100"
+        className="flex items-center gap-2 rounded-md px-3 py-2 text-sm font-black text-white transition-colors hover:bg-white/10"
       >
         <div className="flex h-7 w-7 items-center justify-center rounded-full bg-blue-600 text-xs font-bold text-white">
           {user.email?.[0]?.toUpperCase() ?? "U"}

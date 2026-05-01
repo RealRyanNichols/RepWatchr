@@ -5,6 +5,7 @@ import { Suspense } from "react";
 import { getAllOfficials, getAllScoreCards, getRepWatchrDataStats } from "@/lib/data";
 import { getSchoolBoardStats } from "@/lib/school-board-research";
 import OfficialGrid from "@/components/officials/OfficialGrid";
+import OfficialsCommandSearchForm from "@/components/officials/OfficialsCommandSearchForm";
 import NationalSpotlightSelector from "@/components/shared/NationalSpotlightSelector";
 import type { GovernmentLevel, Official } from "@/types";
 import { getAllNationalJurisdictions, getNationalBuildoutSummary, nationalGovernmentScopes } from "@/data/national-buildout";
@@ -349,56 +350,14 @@ function OfficialsCommandDeck({
             Federal is open by default. Search a name, pick a state, or change levels to move from Congress down into state, county, city, district, and school-board records.
           </p>
 
-          <form action="/officials" className="mt-5 grid gap-2 rounded-lg border border-white/10 bg-white/10 p-3 md:grid-cols-[minmax(0,1fr)_150px_170px_auto]">
-            <label className="min-w-0">
-              <span className="text-[11px] font-black uppercase tracking-wide text-slate-300">Search name or office</span>
-              <input
-                name="search"
-                defaultValue={initialSearch}
-                placeholder="Search by name, office, district, state, or county"
-                className="mt-1 w-full rounded-lg border border-white/15 bg-white px-3 py-3 text-sm font-black text-slate-950 placeholder:text-slate-500 outline-none focus:border-blue-300 focus:ring-2 focus:ring-blue-200"
-              />
-            </label>
-            <label>
-              <span className="text-[11px] font-black uppercase tracking-wide text-slate-300">Level</span>
-              <select
-                name="level"
-                defaultValue={initialLevel}
-                className="mt-1 w-full rounded-lg border border-white/15 bg-white px-3 py-3 text-sm font-black text-slate-950 outline-none focus:border-blue-300 focus:ring-2 focus:ring-blue-200"
-              >
-                <option value="federal">Federal</option>
-                <option value="state">State</option>
-                <option value="county">County</option>
-                <option value="city">City</option>
-                <option value="school-board">School Board</option>
-                <option value="all">All loaded</option>
-              </select>
-            </label>
-            <label>
-              <span className="text-[11px] font-black uppercase tracking-wide text-slate-300">State</span>
-              <select
-                name="state"
-                defaultValue={selectedStateCode ?? ""}
-                className="mt-1 w-full rounded-lg border border-white/15 bg-white px-3 py-3 text-sm font-black text-slate-950 outline-none focus:border-blue-300 focus:ring-2 focus:ring-blue-200"
-              >
-                <option value="">National</option>
-                {jurisdictions.map((state) => {
-                  const count = profileCountsByState[state.code] ?? 0;
-                  return (
-                    <option key={state.code} value={state.code}>
-                      {state.name}{count > 0 ? ` - ${count.toLocaleString()}` : " - queued"}
-                    </option>
-                  );
-                })}
-              </select>
-            </label>
-            <button
-              type="submit"
-              className="rounded-lg bg-[#d5aa3f] px-5 py-3 text-sm font-black text-slate-950 shadow-sm transition hover:bg-[#f0c75f] md:self-end"
-            >
-              Open
-            </button>
-          </form>
+          <OfficialsCommandSearchForm
+            jurisdictions={jurisdictions}
+            profileCountsByState={profileCountsByState}
+            selectedStateCode={selectedStateCode}
+            initialLevel={initialLevel}
+            initialSearch={initialSearch}
+            totalOfficials={totalOfficials}
+          />
 
           <div className="mt-3 flex gap-2 overflow-x-auto pb-1">
             <Link
