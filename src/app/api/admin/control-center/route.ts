@@ -1,7 +1,7 @@
 import { NextResponse } from "next/server";
 import { getRepWatchrDataStats } from "@/lib/data";
 import { getSchoolBoardStats } from "@/lib/school-board-research";
-import { getAttorneyWatchProfiles, getMediaWatchProfiles, getPowerWatchStats } from "@/lib/power-watch";
+import { getAttorneyWatchProfiles, getMediaWatchProfiles, getPowerWatchStats, getPublicSafetyWatchProfiles } from "@/lib/power-watch";
 import { getNationalBuildoutSummary, adminOnlyWatchItems } from "@/data/national-buildout";
 import { createServerSupabaseClient } from "@/lib/supabase-server";
 import { getSupabaseAdminClient } from "@/lib/supabase-admin";
@@ -75,6 +75,7 @@ export async function GET() {
   const schoolStats = getSchoolBoardStats();
   const attorneyStats = getPowerWatchStats(getAttorneyWatchProfiles());
   const mediaStats = getPowerWatchStats(getMediaWatchProfiles());
+  const publicSafetyStats = getPowerWatchStats(getPublicSafetyWatchProfiles());
   const nationalSummary = getNationalBuildoutSummary();
   const tableCounts = await Promise.all(countTables.map(countTable));
 
@@ -89,6 +90,7 @@ export async function GET() {
       schoolBoards: schoolStats,
       attorneys: attorneyStats,
       media: mediaStats,
+      publicSafety: publicSafetyStats,
       national: nationalSummary,
     },
     connections: [

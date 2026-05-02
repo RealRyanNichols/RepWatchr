@@ -78,8 +78,8 @@ function CompactGeoTable({
         </thead>
         <tbody className="divide-y divide-slate-100">
           {rows.map((row) => {
-            const profileCount = row.officialProfiles + row.schoolBoardMembers + row.attorneyProfiles + row.mediaProfiles;
-            const powerCount = row.attorneyProfiles + row.mediaProfiles;
+            const profileCount = row.officialProfiles + row.schoolBoardMembers + row.attorneyProfiles + row.mediaProfiles + row.publicSafetyProfiles;
+            const powerCount = row.attorneyProfiles + row.mediaProfiles + row.publicSafetyProfiles;
             const content = (
               <>
                 <td className="px-3 py-2">
@@ -304,6 +304,7 @@ export default function BuildoutDashboardPage() {
     (electedProfilesLoaded / dataStats.nationalAllElectedOfficialEstimate) * 1000,
   ) / 10;
   const sourceUrlCount = dataStats.publicSourceUrls + stats.sourceCount;
+  const totalPublicPowerProfiles = attorneyStats.totalProfiles + mediaStats.totalProfiles + publicSafetyStats.totalProfiles;
   const openWorkCount =
     officialBuildoutStats.incompleteProfiles +
     dataStats.nationalFederalStateOfficialGaps +
@@ -431,7 +432,7 @@ export default function BuildoutDashboardPage() {
     {
       label: "Public source URLs",
       value: sourceUrlCount,
-      status: `${stats.sourceCount} school-board URLs and ${dataStats.publicSourceUrls} official, funding, vote, red-flag, or news URLs. This is evidence coverage, not pageview analytics.`,
+      status: `${stats.sourceCount} school-board URLs and ${dataStats.publicSourceUrls} official, public-power, funding, vote, red-flag, or news URLs. This is evidence coverage, not pageview analytics.`,
       href: "/methodology",
     },
     {
@@ -571,7 +572,7 @@ export default function BuildoutDashboardPage() {
     },
     {
       label: "Power profiles",
-      value: attorneyStats.totalProfiles + mediaStats.totalProfiles + publicSafetyStats.totalProfiles,
+      value: totalPublicPowerProfiles,
       detail: `${attorneyStats.totalProfiles} attorney/law-firm/public-defense profiles, ${mediaStats.totalProfiles} media/newsroom profiles, and ${publicSafetyStats.totalProfiles} public-safety profiles are source-seeded.`,
     },
     {
@@ -768,7 +769,7 @@ export default function BuildoutDashboardPage() {
                     <ProgressBar percent={state.completionPercent} tone={toneFor(state.completionPercent)} />
                   </div>
                   <p className="mt-2 text-xs font-semibold leading-5 text-slate-600">
-                    {state.officialProfiles.toLocaleString()} profiles loaded, including {state.federalOfficials.toLocaleString()} federal records. {state.topGap}
+                    {(state.officialProfiles + state.schoolBoardMembers + state.attorneyProfiles + state.mediaProfiles + state.publicSafetyProfiles).toLocaleString()} profiles loaded, including {state.federalOfficials.toLocaleString()} federal records. {state.topGap}
                   </p>
                 </div>
               ))}

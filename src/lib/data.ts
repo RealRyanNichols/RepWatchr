@@ -18,6 +18,11 @@ import type {
   NewsArticle,
   PublicVoteRecord,
 } from "@/types";
+import {
+  getAttorneyWatchProfiles,
+  getMediaWatchProfiles,
+  getPublicSafetyWatchProfiles,
+} from "@/lib/power-watch";
 
 // Base path to the data directory
 const DATA_DIR = path.join(process.cwd(), "src", "data");
@@ -334,6 +339,14 @@ export function getRepWatchrDataStats() {
   const bills = getAllBills();
   const issueCategories = getIssueCategories();
   const newsArticles = getAllNews();
+  const attorneyWatchProfiles = getAttorneyWatchProfiles();
+  const mediaWatchProfiles = getMediaWatchProfiles();
+  const publicSafetyWatchProfiles = getPublicSafetyWatchProfiles();
+  const publicPowerProfiles = [
+    ...attorneyWatchProfiles,
+    ...mediaWatchProfiles,
+    ...publicSafetyWatchProfiles,
+  ];
   const voteRecords = officials
     .map((official) => getPublicVoteRecord(official.id))
     .filter((record): record is PublicVoteRecord => Boolean(record));
@@ -361,6 +374,7 @@ export function getRepWatchrDataStats() {
   const redFlagSourceUrls = new Set<string>();
   const voteSourceUrls = new Set<string>();
   const newsSourceUrls = new Set<string>();
+  const publicPowerSourceUrls = new Set<string>();
   const reviewStatusCounts = officials.reduce<Record<string, number>>((acc, official) => {
     const status = official.reviewStatus ?? "missing";
     acc[status] = (acc[status] ?? 0) + 1;
@@ -464,6 +478,18 @@ export function getRepWatchrDataStats() {
       publicSourceUrls.add(article.sourceUrl);
     }
   });
+  publicPowerProfiles.forEach((profile) => {
+    profile.sourceLinks.forEach((source) => {
+      if (source.url) {
+        publicPowerSourceUrls.add(source.url);
+        publicSourceUrls.add(source.url);
+      }
+    });
+    if (profile.profileImageSource?.startsWith("http")) {
+      publicPowerSourceUrls.add(profile.profileImageSource);
+      publicSourceUrls.add(profile.profileImageSource);
+    }
+  });
   officials.forEach((official) => {
     official.sourceLinks?.forEach((source) => {
       if (source.url) {
@@ -548,11 +574,19 @@ export function getRepWatchrDataStats() {
     issueCategories: issueCategories.length,
     newsArticles: newsArticles.length,
     featuredNewsArticles: newsArticles.filter((article) => article.featured).length,
+    attorneyWatchProfiles: attorneyWatchProfiles.length,
+    mediaWatchProfiles: mediaWatchProfiles.length,
+    publicSafetyWatchProfiles: publicSafetyWatchProfiles.length,
+    publicPowerProfiles: publicPowerProfiles.length,
+    publicPowerProfilesNeedingBuildout: publicPowerProfiles.filter(
+      (profile) => profile.profileStatus === "needs_profile_buildout",
+    ).length,
     officialSourceUrls: officialSourceUrls.size,
     fundingSourceUrls: fundingSourceUrls.size,
     redFlagSourceUrls: redFlagSourceUrls.size,
     voteSourceUrls: voteSourceUrls.size,
     newsSourceUrls: newsSourceUrls.size,
+    publicPowerSourceUrls: publicPowerSourceUrls.size,
     publicSourceUrls: publicSourceUrls.size,
   };
 }

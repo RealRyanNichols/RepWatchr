@@ -165,12 +165,31 @@ export default function HomePage() {
   const issueCategories = getIssueCategories();
   const schoolBoardStats = getSchoolBoardStats();
   const dataStats = getRepWatchrDataStats();
+  const electedProfileCount = dataStats.nonSchoolOfficialFiles + schoolBoardStats.candidates;
+  const allPublicProfileCount = electedProfileCount + dataStats.publicPowerProfiles;
+  const allPublicSourceUrls = dataStats.publicSourceUrls + schoolBoardStats.sourceCount;
 
   const stats = [
-    { label: "Federal/State Profiles", value: formatNumber(dataStats.federalAndStateOfficeProfilesLoaded), caption: `${dataStats.nationalFederalStateCompletionPercent}% broad benchmark` },
-    { label: "Official Photos", value: formatNumber(dataStats.officialsWithPhotos), caption: "local headshots loaded" },
-    { label: "School Board Trustees", value: formatNumber(schoolBoardStats.candidates), caption: "TEA source seed" },
-    { label: "Vote Records", value: formatNumber(dataStats.publicVoteRecords), caption: `${formatNumber(dataStats.publicVoteRecordRows)} roll-call rows loaded` },
+    {
+      label: "Public Profiles",
+      value: formatNumber(allPublicProfileCount),
+      caption: "officials, schools, attorneys, media, safety",
+    },
+    {
+      label: "Federal/State",
+      value: formatNumber(dataStats.federalAndStateOfficeProfilesLoaded),
+      caption: `${dataStats.nationalFederalStateCompletionPercent}% broad benchmark`,
+    },
+    {
+      label: "Power Profiles",
+      value: formatNumber(dataStats.publicPowerProfiles),
+      caption: `${formatNumber(dataStats.publicSafetyWatchProfiles)} public-safety live`,
+    },
+    {
+      label: "Source URLs",
+      value: formatNumber(allPublicSourceUrls),
+      caption: `${formatNumber(dataStats.newsSourceUrls)} news links + public records`,
+    },
   ];
 
   const photoOfficials = officials
@@ -216,7 +235,10 @@ export default function HomePage() {
                 Watch Board Live
               </span>
               <span className="rounded-full border border-blue-200 bg-white px-3 py-1 text-xs font-black uppercase tracking-wide text-blue-950 shadow-sm">
-                {formatNumber(dataStats.officialsWithPhotos)} faces loaded
+                {formatNumber(dataStats.officialsWithPhotos)} official faces
+              </span>
+              <span className="rounded-full border border-blue-200 bg-white px-3 py-1 text-xs font-black uppercase tracking-wide text-blue-950 shadow-sm">
+                {formatNumber(dataStats.publicPowerProfiles)} power profiles
               </span>
               <span className="rounded-full border border-amber-200 bg-amber-50 px-3 py-1 text-xs font-black uppercase tracking-wide text-amber-900 shadow-sm">
                 Source-backed only
@@ -289,7 +311,7 @@ export default function HomePage() {
               </p>
             </div>
 
-            <div className="grid gap-3 sm:grid-cols-2">
+            <div className="grid gap-3 sm:grid-cols-3">
               <Link href="/attorneys" className="rounded-xl border border-slate-300 bg-white p-4 shadow-sm transition hover:-translate-y-0.5 hover:border-blue-400 hover:shadow-md">
                 <p className="text-xs font-black uppercase tracking-wide text-red-700">New lane</p>
                 <h3 className="mt-1 text-lg font-black text-blue-950">Attorney Watch</h3>
@@ -299,6 +321,11 @@ export default function HomePage() {
                 <p className="text-xs font-black uppercase tracking-wide text-red-700">New lane</p>
                 <h3 className="mt-1 text-lg font-black text-blue-950">Media Watch</h3>
                 <p className="mt-1 text-sm font-semibold leading-5 text-slate-600">Newsrooms, editors, reporters, corrections.</p>
+              </Link>
+              <Link href="/public-safety" className="rounded-xl border border-slate-300 bg-white p-4 shadow-sm transition hover:-translate-y-0.5 hover:border-blue-400 hover:shadow-md">
+                <p className="text-xs font-black uppercase tracking-wide text-red-700">New lane</p>
+                <h3 className="mt-1 text-lg font-black text-blue-950">Public Safety</h3>
+                <p className="mt-1 text-sm font-semibold leading-5 text-slate-600">Agencies, sheriffs, chiefs, complaint paths.</p>
               </Link>
             </div>
           </div>

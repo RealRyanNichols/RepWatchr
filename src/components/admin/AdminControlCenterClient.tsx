@@ -52,6 +52,11 @@ type ControlCenterPayload = {
       needsBuildout: number;
       sourceLinks: number;
     };
+    publicSafety: {
+      totalProfiles: number;
+      needsBuildout: number;
+      sourceLinks: number;
+    };
     national: {
       enabledJurisdictions: number;
       loadedJurisdictions: number;
@@ -144,9 +149,16 @@ export default function AdminControlCenterClient() {
           detail: `${payload.coverage.schoolBoards.districts} districts; ${payload.coverage.schoolBoards.gapCount} open gaps`,
         },
         {
-          label: "Attorney/media profiles",
-          value: payload.coverage.attorneys.totalProfiles + payload.coverage.media.totalProfiles,
-          detail: `${payload.coverage.attorneys.sourceLinks + payload.coverage.media.sourceLinks} unique source URLs`,
+          label: "Power profiles",
+          value:
+            payload.coverage.attorneys.totalProfiles +
+            payload.coverage.media.totalProfiles +
+            payload.coverage.publicSafety.totalProfiles,
+          detail: `${
+            payload.coverage.attorneys.sourceLinks +
+            payload.coverage.media.sourceLinks +
+            payload.coverage.publicSafety.sourceLinks
+          } unique source URLs; ${payload.coverage.publicSafety.totalProfiles} public-safety profiles`,
         },
         {
           label: "National jurisdictions",

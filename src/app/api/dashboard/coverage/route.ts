@@ -1,7 +1,7 @@
 import { NextResponse } from "next/server";
 import { getAllOfficials, getRepWatchrDataStats } from "@/lib/data";
 import { getSchoolBoardStats } from "@/lib/school-board-research";
-import { getAttorneyWatchProfiles, getMediaWatchProfiles, getPowerWatchStats } from "@/lib/power-watch";
+import { getAttorneyWatchProfiles, getMediaWatchProfiles, getPowerWatchStats, getPublicSafetyWatchProfiles } from "@/lib/power-watch";
 import { getAllNationalJurisdictions, getNationalBuildoutSummary } from "@/data/national-buildout";
 import { countByState } from "@/lib/state-scope";
 import { getGeographicBuildoutDashboard } from "@/lib/geographic-buildout";
@@ -24,8 +24,10 @@ export async function GET() {
   const schoolStats = getSchoolBoardStats();
   const attorneyProfiles = getAttorneyWatchProfiles();
   const mediaProfiles = getMediaWatchProfiles();
+  const publicSafetyProfiles = getPublicSafetyWatchProfiles();
   const attorneyStats = getPowerWatchStats(attorneyProfiles);
   const mediaStats = getPowerWatchStats(mediaProfiles);
+  const publicSafetyStats = getPowerWatchStats(publicSafetyProfiles);
   const nationalSummary = getNationalBuildoutSummary();
   const jurisdictions = getAllNationalJurisdictions();
   const geographic = getGeographicBuildoutDashboard();
@@ -35,13 +37,15 @@ export async function GET() {
   const schoolBoardCountsByState = { TX: schoolStats.candidates };
   const attorneyCountsByState = countByState(attorneyProfiles, (profile) => profile.state);
   const mediaCountsByState = countByState(mediaProfiles, (profile) => profile.state);
+  const publicSafetyCountsByState = countByState(publicSafetyProfiles, (profile) => profile.state);
 
   const stateRows = jurisdictions.map((state) => {
     const officialsCount = officialCountsByState[state.code] ?? 0;
     const schoolBoardsCount = schoolBoardCountsByState[state.code as "TX"] ?? 0;
     const attorneysCount = attorneyCountsByState[state.code] ?? 0;
     const mediaCount = mediaCountsByState[state.code] ?? 0;
-    const total = officialsCount + schoolBoardsCount + attorneysCount + mediaCount;
+    const publicSafetyCount = publicSafetyCountsByState[state.code] ?? 0;
+    const total = officialsCount + schoolBoardsCount + attorneysCount + mediaCount + publicSafetyCount;
 
     return {
       code: state.code,
@@ -51,6 +55,7 @@ export async function GET() {
       schoolBoards: schoolBoardsCount,
       attorneys: attorneysCount,
       media: mediaCount,
+      publicSafety: publicSafetyCount,
       total,
     };
   });
@@ -59,7 +64,7 @@ export async function GET() {
     stateRows.filter((state) => state.total > 0).map((state) => state.code),
   );
   const totalPublicProfiles =
-    dataStats.officialFiles + schoolStats.candidates + attorneyStats.totalProfiles + mediaStats.totalProfiles;
+    dataStats.officialFiles + schoolStats.candidates + attorneyStats.totalProfiles + mediaStats.totalProfiles + publicSafetyStats.totalProfiles;
   const electedProfilesLoaded = dataStats.nonSchoolOfficialFiles + schoolStats.candidates;
   const allElectedOfficialGaps = Math.max(
     0,
@@ -70,7 +75,7 @@ export async function GET() {
     dataStats.nationalAllElectedOfficialEstimate,
   );
   const sourceLinksSurfaced =
-    dataStats.publicSourceUrls + schoolStats.sourceCount + attorneyStats.sourceLinks + mediaStats.sourceLinks;
+    dataStats.publicSourceUrls + schoolStats.sourceCount;
 
   return NextResponse.json({
     generatedAt: new Date().toISOString(),
@@ -126,12 +131,21 @@ export async function GET() {
         detail: `${mediaStats.people.toLocaleString()} newsroom people and ${mediaStats.organizations.toLocaleString()} companies are source-seeded.`,
         notTracked: `${mediaStats.needsBuildout.toLocaleString()} media records need deeper buildout.`,
       },
+      {
+        id: "public-safety",
+        label: "Public safety",
+        value: publicSafetyStats.totalProfiles,
+        loadedStates: nonZeroStateCount(publicSafetyCountsByState),
+        href: "/public-safety",
+        detail: `${publicSafetyStats.people.toLocaleString()} sheriffs, chiefs, or public-safety officials and ${publicSafetyStats.organizations.toLocaleString()} agencies or oversight sources are source-seeded.`,
+        notTracked: `${publicSafetyStats.needsBuildout.toLocaleString()} public-safety records need policies, complaint paths, photos, TCOLE checks, and case links.`,
+      },
     ],
     dataQuality: [
       {
         label: "Public profiles surfaced",
         value: totalPublicProfiles,
-        detail: "Officials, school-board members, attorneys/law firms, and media profiles currently loaded.",
+        detail: "Officials, school-board members, attorneys/law firms, media profiles, and public-safety profiles currently loaded.",
       },
       {
         label: "Federal/state official completion",
@@ -146,7 +160,7 @@ export async function GET() {
       {
         label: "Source links surfaced",
         value: sourceLinksSurfaced,
-        detail: "Official, school-board, attorney, media, vote, funding, red-flag, and news source URLs counted across loaded data.",
+        detail: "Official, school-board, attorney, media, public-safety, vote, funding, red-flag, and news source URLs counted across loaded data.",
       },
       {
         label: "Full official profiles",
@@ -170,8 +184,9 @@ export async function GET() {
           dataStats.federalAndStateProfileGaps +
           schoolStats.gapCount +
           attorneyStats.needsBuildout +
-          mediaStats.needsBuildout,
-        detail: "Known incomplete official profiles, missing profile imports, school-board gaps, and attorney/media records needing buildout.",
+          mediaStats.needsBuildout +
+          publicSafetyStats.needsBuildout,
+        detail: "Known incomplete official profiles, missing profile imports, school-board gaps, and attorney/media/public-safety records needing buildout.",
       },
     ],
     geographicSummary: geographic.summary,
