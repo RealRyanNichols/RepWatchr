@@ -409,9 +409,9 @@ export default function BuildoutDashboardPage() {
       href: "/votes",
     },
     {
-      label: "Federal public vote snapshots",
+      label: "Public vote snapshots",
       value: dataStats.publicVoteRecords,
-      status: `${dataStats.publicVoteRecordRows.toLocaleString()} recent House and Senate roll-call rows are loaded from official XML. These are evidence snapshots, not automatic left/right scores.`,
+      status: `${dataStats.publicVoteRecordRows.toLocaleString()} public roll-call rows are loaded from official federal XML and Texas Legislature Online sources. These are evidence snapshots, not automatic left/right scores.`,
       href: "/officials",
     },
     {

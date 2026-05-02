@@ -159,9 +159,9 @@ export async function GET() {
         detail: `${dataStats.scoredVoteRows.toLocaleString()} scored vote rows. Universal profile votes are a separate member layer.`,
       },
       {
-        label: "Federal public vote snapshots",
+        label: "Public vote snapshots",
         value: dataStats.publicVoteRecords,
-        detail: `${dataStats.publicVoteRecordRows.toLocaleString()} House/Senate roll-call rows loaded from official federal XML sources. These are not automatic left/right scores.`,
+        detail: `${dataStats.publicVoteRecordRows.toLocaleString()} public roll-call rows loaded from official federal XML and Texas Legislature Online sources. These are evidence snapshots, not automatic left/right scores.`,
       },
       {
         label: "Open buildout work",

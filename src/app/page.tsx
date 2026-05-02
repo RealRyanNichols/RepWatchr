@@ -170,7 +170,7 @@ export default function HomePage() {
     { label: "Federal/State Profiles", value: formatNumber(dataStats.federalAndStateOfficeProfilesLoaded), caption: `${dataStats.nationalFederalStateCompletionPercent}% broad benchmark` },
     { label: "Official Photos", value: formatNumber(dataStats.officialsWithPhotos), caption: "local headshots loaded" },
     { label: "School Board Trustees", value: formatNumber(schoolBoardStats.candidates), caption: "TEA source seed" },
-    { label: "Scored Profiles", value: formatNumber(dataStats.officialsWithScoreCards), caption: `${dataStats.bills} vote files loaded` },
+    { label: "Vote Records", value: formatNumber(dataStats.publicVoteRecords), caption: `${formatNumber(dataStats.publicVoteRecordRows)} roll-call rows loaded` },
   ];
 
   const photoOfficials = officials
