@@ -1,0 +1,35 @@
+{
+  "id": "leah-juarez",
+  "name": "Leah Juarez",
+  "firstName": "Leah",
+  "lastName": "Juarez",
+  "party": "R",
+  "level": "city",
+  "position": "Mayor",
+  "district": "Citywide",
+  "jurisdiction": "City of Mills, Wyoming",
+  "county": [],
+  "termStart": "Start date pending source review",
+  "termEnd": "2027-01-01",
+  "contactInfo": {
+    "office": "704 Fourth Street;P.O. Box 789;Mills, WY 82644",
+    "phone": "307-234-6679",
+    "email": "Mayor@millswy.gov",
+    "website": "https://www.millswy.gov/directory-listing/leah-juarez"
+  },
+  "bio": "Leah Juarez is listed as mayor of the City of Mills, Wyoming. This RepWatchr starter profile is source-seeded from OpenStates public municipality data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "WY",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.millswy.gov/directory-listing/leah-juarez"
+    },
+    {
+      "title": "OpenStates public municipality record",
+      "url": "https://raw.githubusercontent.com/openstates/people/9d9a7f4a873a7e42cb405af0f6702770f2ae07a7/data/wy/municipalities/Leah-Juarez-97289ff3-4fff-4dc2-85d7-980ec21b48b7.yml"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-02"
+}

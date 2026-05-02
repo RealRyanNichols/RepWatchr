@@ -1,0 +1,35 @@
+{
+  "id": "michael-j-newhard",
+  "name": "Michael J. Newhard",
+  "firstName": "Michael",
+  "lastName": "Newhard",
+  "party": "NP",
+  "level": "city",
+  "position": "Mayor",
+  "district": "Citywide",
+  "jurisdiction": "City of Warwick, New York",
+  "county": [],
+  "termStart": "Start date pending source review",
+  "termEnd": "2028-04-01",
+  "contactInfo": {
+    "office": "77 Main Street;P.O. Box 369;Warwick, NY 10990",
+    "phone": "845-986-2031",
+    "email": "mayor@villageofwarwickny.gov",
+    "website": "https://villageofwarwickny.gov/mayors-office/"
+  },
+  "bio": "Michael J. Newhard is listed as mayor of the City of Warwick, New York. This RepWatchr starter profile is source-seeded from OpenStates public municipality data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "NY",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://villageofwarwickny.gov/mayors-office/"
+    },
+    {
+      "title": "OpenStates public municipality record",
+      "url": "https://raw.githubusercontent.com/openstates/people/9d9a7f4a873a7e42cb405af0f6702770f2ae07a7/data/ny/municipalities/Michael-J-Newhard-93db7a0f-557d-41f3-8c2f-cf8efe8eb008.yml"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-02"
+}

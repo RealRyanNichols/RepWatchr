@@ -1,0 +1,39 @@
+{
+  "id": "na-cole-thompson",
+  "name": "Na'Cole Thompson",
+  "firstName": "Na'Cole",
+  "lastName": "Thompson",
+  "party": "NP",
+  "level": "city",
+  "position": "Mayor",
+  "district": "Citywide",
+  "jurisdiction": "City of Leander, Texas",
+  "county": [],
+  "termStart": "Start date pending source review",
+  "termEnd": "2027-05-31",
+  "contactInfo": {
+    "office": "105 N Brushy St;Leander, TX 78641",
+    "phone": "512-528-2700",
+    "email": "mayor@leandertx.gov",
+    "website": "https://www.leandertx.gov/527/City-Council"
+  },
+  "bio": "Na'Cole Thompson is listed as mayor of the City of Leander, Texas. This RepWatchr starter profile is source-seeded from OpenStates public municipality data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "TX",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.leandertx.gov/527/City-Council"
+    },
+    {
+      "title": "OpenStates public municipality record",
+      "url": "https://raw.githubusercontent.com/openstates/people/9d9a7f4a873a7e42cb405af0f6702770f2ae07a7/data/tx/municipalities/NaCole-Thompson-fa9d06a8-6f0b-4edb-94ac-3d84047e77c8.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.leandertx.gov/990/2026-Special-Election---Mayor"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-02"
+}

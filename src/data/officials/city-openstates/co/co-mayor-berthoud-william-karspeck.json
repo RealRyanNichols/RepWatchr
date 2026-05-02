@@ -1,0 +1,35 @@
+{
+  "id": "william-karspeck",
+  "name": "William Karspeck",
+  "firstName": "William",
+  "lastName": "Karspeck",
+  "party": "NP",
+  "level": "city",
+  "position": "Mayor",
+  "district": "Citywide",
+  "jurisdiction": "City of Berthoud, Colorado",
+  "county": [],
+  "termStart": "Start date pending source review",
+  "termEnd": "2028-04-30",
+  "contactInfo": {
+    "office": "P.O. Box 1229;Berthoud, CO 80513",
+    "phone": "970-685-7737",
+    "email": "wkarspeck@berthoud.org",
+    "website": "https://berthoud.org/directory.aspx?EID=48"
+  },
+  "bio": "William Karspeck is listed as mayor of the City of Berthoud, Colorado. This RepWatchr starter profile is source-seeded from OpenStates public municipality data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "CO",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://berthoud.org/directory.aspx?EID=48"
+    },
+    {
+      "title": "OpenStates public municipality record",
+      "url": "https://raw.githubusercontent.com/openstates/people/9d9a7f4a873a7e42cb405af0f6702770f2ae07a7/data/co/municipalities/William-Karspeck-86d788a9-eeb9-47df-b86f-1ed51115ca6d.yml"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-02"
+}

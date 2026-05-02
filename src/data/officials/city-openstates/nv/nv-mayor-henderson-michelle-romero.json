@@ -1,0 +1,39 @@
+{
+  "id": "michelle-romero",
+  "name": "Michelle Romero",
+  "firstName": "Michelle",
+  "lastName": "Romero",
+  "party": "NP",
+  "level": "city",
+  "position": "Mayor",
+  "district": "Citywide",
+  "jurisdiction": "City of Henderson, Nevada",
+  "county": [],
+  "termStart": "Start date pending source review",
+  "termEnd": "2026-06-16",
+  "contactInfo": {
+    "office": "P.O. Box 95050;Henderson, NV 89002",
+    "phone": "702-267-2406",
+    "email": "michelle.romero@cityofhenderson.com",
+    "website": "https://clients.comcate.com/newrequest.php?id=90&dept=907"
+  },
+  "bio": "Michelle Romero is listed as mayor of the City of Henderson, Nevada. This RepWatchr starter profile is source-seeded from OpenStates public municipality data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "NV",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://clients.comcate.com/newrequest.php?id=90&dept=907"
+    },
+    {
+      "title": "OpenStates public municipality record",
+      "url": "https://raw.githubusercontent.com/openstates/people/9d9a7f4a873a7e42cb405af0f6702770f2ae07a7/data/nv/municipalities/Michelle-Romero-45be3320-92ab-4d9d-b553-5c8efc6df887.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.cityofhenderson.com/government/contact-us"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-02"
+}

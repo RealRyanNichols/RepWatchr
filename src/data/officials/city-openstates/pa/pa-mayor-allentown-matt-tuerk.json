@@ -1,0 +1,35 @@
+{
+  "id": "matt-tuerk",
+  "name": "Matt Tuerk",
+  "firstName": "Matt",
+  "lastName": "Tuerk",
+  "party": "D",
+  "level": "city",
+  "position": "Mayor",
+  "district": "Citywide",
+  "jurisdiction": "City of Allentown, Pennsylvania",
+  "county": [],
+  "termStart": "Start date pending source review",
+  "termEnd": "2030-01-06",
+  "contactInfo": {
+    "office": "435 Hamilton Street;Allentown, PA 18101",
+    "phone": "610-437-7546",
+    "email": "matt.tuerk@allentownpa.gov",
+    "website": "https://www.allentownpa.gov/en-us/Government/Elected-Offices/Mayors-Office"
+  },
+  "bio": "Matt Tuerk is listed as mayor of the City of Allentown, Pennsylvania. This RepWatchr starter profile is source-seeded from OpenStates public municipality data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "PA",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.allentownpa.gov/en-us/Government/Elected-Offices/Mayors-Office"
+    },
+    {
+      "title": "OpenStates public municipality record",
+      "url": "https://raw.githubusercontent.com/openstates/people/9d9a7f4a873a7e42cb405af0f6702770f2ae07a7/data/pa/municipalities/Matt-Tuerk-e70def95-7ae8-406a-b13e-6d10e7fc051a.yml"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-02"
+}

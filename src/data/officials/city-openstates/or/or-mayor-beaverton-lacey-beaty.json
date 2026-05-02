@@ -1,0 +1,48 @@
+{
+  "id": "lacey-beaty",
+  "name": "Lacey Beaty",
+  "firstName": "Lacey",
+  "lastName": "Beaty",
+  "photo": "/images/officials/city-openstates/or/lacey-beaty.jpg",
+  "photoSourceUrl": "https://content.civicplus.com/api/assets/70088868-34d2-461f-adb2-fc968dd85947",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "NP",
+  "level": "city",
+  "position": "Mayor",
+  "district": "Citywide",
+  "jurisdiction": "City of Beaverton, Oregon",
+  "county": [],
+  "termStart": "Start date pending source review",
+  "termEnd": "2028-12-31",
+  "contactInfo": {
+    "office": "12725 SW Millikan Way, 5th Floor;Beaverton, OR 97005",
+    "phone": "503-526-2345",
+    "email": "lbeaty@beavertonoregon.gov",
+    "website": "https://beavertonoregon.gov/185/Mayor",
+    "socialMedia": {
+      "x": "https://x.com/laceybeaty",
+      "twitter": "https://x.com/laceybeaty",
+      "facebook": "https://facebook.com/MayorLaceyBeaty",
+      "youtube": "https://youtube.com/mayorlaceybeaty1591"
+    }
+  },
+  "bio": "Lacey Beaty is listed as mayor of the City of Beaverton, Oregon. This RepWatchr starter profile is source-seeded from OpenStates public municipality data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "OR",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://beavertonoregon.gov/185/Mayor"
+    },
+    {
+      "title": "OpenStates public municipality record",
+      "url": "https://raw.githubusercontent.com/openstates/people/9d9a7f4a873a7e42cb405af0f6702770f2ae07a7/data/or/municipalities/Lacey-Beaty-950b354c-8ac5-4932-a058-6e393bc72c1a.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://content.civicplus.com/api/assets/70088868-34d2-461f-adb2-fc968dd85947"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-02"
+}

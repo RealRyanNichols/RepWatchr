@@ -1,0 +1,35 @@
+{
+  "id": "kristi-cox",
+  "name": "Kristi Cox",
+  "firstName": "Kristi",
+  "lastName": "Cox",
+  "party": "NP",
+  "level": "city",
+  "position": "Mayor",
+  "district": "Citywide",
+  "jurisdiction": "City of Richmond Hill, Georgia",
+  "county": [],
+  "termStart": "Start date pending source review",
+  "termEnd": "2029-12-31",
+  "contactInfo": {
+    "office": "40 Richard R. Davis Drive;Richmond Hill, GA 31324",
+    "phone": "912-756-3345",
+    "email": "kcox@richmondhill-ga.gov",
+    "website": "https://www.richmondhill-ga.gov/199/Meet-the-Mayor-Council"
+  },
+  "bio": "Kristi Cox is listed as mayor of the City of Richmond Hill, Georgia. This RepWatchr starter profile is source-seeded from OpenStates public municipality data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "GA",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.richmondhill-ga.gov/199/Meet-the-Mayor-Council"
+    },
+    {
+      "title": "OpenStates public municipality record",
+      "url": "https://raw.githubusercontent.com/openstates/people/9d9a7f4a873a7e42cb405af0f6702770f2ae07a7/data/ga/municipalities/Kristi-Cox-e2ed3cae-dd53-4a00-87b9-e1eb200a44f7.yml"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-02"
+}

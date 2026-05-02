@@ -1,0 +1,35 @@
+{
+  "id": "john-metz",
+  "name": "John Metz",
+  "firstName": "John",
+  "lastName": "Metz",
+  "party": "NP",
+  "level": "city",
+  "position": "Mayor",
+  "district": "Citywide",
+  "jurisdiction": "City of Rogersville, Tennessee",
+  "county": [],
+  "termStart": "Start date pending source review",
+  "termEnd": "2029-06-02",
+  "contactInfo": {
+    "office": "PO Box 788;106 East Kyle St;Rogersville, TN 37857",
+    "phone": "423-327-0419",
+    "email": "info@rogersvilletn.gov",
+    "website": "https://www.mtas.tennessee.edu/city/rogersville"
+  },
+  "bio": "John Metz is listed as mayor of the City of Rogersville, Tennessee. This RepWatchr starter profile is source-seeded from OpenStates public municipality data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "TN",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.mtas.tennessee.edu/city/rogersville"
+    },
+    {
+      "title": "OpenStates public municipality record",
+      "url": "https://raw.githubusercontent.com/openstates/people/9d9a7f4a873a7e42cb405af0f6702770f2ae07a7/data/tn/municipalities/John-Metz-700d04b2-15e7-426a-a1bf-12c2f7360bb7.yml"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-02"
+}

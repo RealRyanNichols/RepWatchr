@@ -1,0 +1,34 @@
+{
+  "id": "sollie-flora",
+  "name": "Sollie Flora",
+  "firstName": "Sollie",
+  "lastName": "Flora",
+  "party": "NP",
+  "level": "city",
+  "position": "Mayor",
+  "district": "Citywide",
+  "jurisdiction": "City of Mission, Kansas",
+  "county": [],
+  "termStart": "Start date pending source review",
+  "termEnd": "2029-12-31",
+  "contactInfo": {
+    "office": "6090 Woodson Road;Mission, KS 66202",
+    "phone": "913-676-8350",
+    "website": "https://www.missionks.org/city-government/governing-body/mayor-sollie-flora/"
+  },
+  "bio": "Sollie Flora is listed as mayor of the City of Mission, Kansas. This RepWatchr starter profile is source-seeded from OpenStates public municipality data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "KS",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.missionks.org/city-government/governing-body/mayor-sollie-flora/"
+    },
+    {
+      "title": "OpenStates public municipality record",
+      "url": "https://raw.githubusercontent.com/openstates/people/9d9a7f4a873a7e42cb405af0f6702770f2ae07a7/data/ks/municipalities/Sollie-Flora-fbb2e244-d828-4bbe-acaa-8d3a55ee8d2e.yml"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-02"
+}

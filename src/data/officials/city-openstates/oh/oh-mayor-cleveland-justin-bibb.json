@@ -1,0 +1,35 @@
+{
+  "id": "justin-bibb",
+  "name": "Justin Bibb",
+  "firstName": "Justin",
+  "lastName": "Bibb",
+  "party": "NP",
+  "level": "city",
+  "position": "Mayor",
+  "district": "Citywide",
+  "jurisdiction": "City of Cleveland, Ohio",
+  "county": [],
+  "termStart": "Start date pending source review",
+  "termEnd": "2030-01-31",
+  "contactInfo": {
+    "office": "601 Lakeside Avenue;Cleveland, OH 44114",
+    "phone": "216-664-2200",
+    "email": "MayorBibb@clevelandohio.gov",
+    "website": "https://clevelandohio.gov/mayor"
+  },
+  "bio": "Justin Bibb is listed as mayor of the City of Cleveland, Ohio. This RepWatchr starter profile is source-seeded from OpenStates public municipality data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "OH",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://clevelandohio.gov/mayor"
+    },
+    {
+      "title": "OpenStates public municipality record",
+      "url": "https://raw.githubusercontent.com/openstates/people/9d9a7f4a873a7e42cb405af0f6702770f2ae07a7/data/oh/municipalities/Justin-Bibb-c7c15601-0852-4e1e-8ab1-1689136531dc.yml"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-02"
+}

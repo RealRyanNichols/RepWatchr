@@ -1,0 +1,42 @@
+{
+  "id": "kaarin-knudson",
+  "name": "Kaarin Knudson",
+  "firstName": "Kaarin",
+  "lastName": "Knudson",
+  "photo": "/images/officials/city-openstates/or/kaarin-knudson.jpg",
+  "photoSourceUrl": "https://www.eugene-or.gov/ImageRepository/Document?documentId=77310",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "NP",
+  "level": "city",
+  "position": "Mayor",
+  "district": "Citywide",
+  "jurisdiction": "City of Eugene, Oregon",
+  "county": [],
+  "termStart": "Start date pending source review",
+  "termEnd": "2029-12-31",
+  "contactInfo": {
+    "office": "500 East 4th Avenue;Suite 302;Eugene, OR 97401",
+    "phone": "541-682-5010",
+    "email": "kknudson@eugene-or.gov",
+    "website": "https://www.eugene-or.gov/3458/Mayor-Kaarin-Knudson-Bio"
+  },
+  "bio": "Kaarin Knudson is listed as mayor of the City of Eugene, Oregon. This RepWatchr starter profile is source-seeded from OpenStates public municipality data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "OR",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.eugene-or.gov/3458/Mayor-Kaarin-Knudson-Bio"
+    },
+    {
+      "title": "OpenStates public municipality record",
+      "url": "https://raw.githubusercontent.com/openstates/people/9d9a7f4a873a7e42cb405af0f6702770f2ae07a7/data/or/municipalities/Kaarin-Knudson-92059ffb-bf0a-4e90-91d0-dff0111fbdeb.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://www.eugene-or.gov/ImageRepository/Document?documentId=77310"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-02"
+}

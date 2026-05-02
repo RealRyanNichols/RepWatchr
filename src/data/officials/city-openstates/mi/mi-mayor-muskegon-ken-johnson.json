@@ -1,0 +1,35 @@
+{
+  "id": "ken-johnson",
+  "name": "Ken Johnson",
+  "firstName": "Kenneth",
+  "lastName": "Johnson",
+  "party": "NP",
+  "level": "city",
+  "position": "Mayor",
+  "district": "Citywide",
+  "jurisdiction": "City of Muskegon, Michigan",
+  "county": [],
+  "termStart": "Start date pending source review",
+  "termEnd": "2029-12-31",
+  "contactInfo": {
+    "office": "933 Terrace Street;Muskegon, MI 49443",
+    "phone": "231-724-6701",
+    "email": "ken.johnson@shorelinecity.com",
+    "website": "https://muskegon-mi.gov/city-services/elected-officials/mayor-ken-johnson/"
+  },
+  "bio": "Ken Johnson is listed as mayor of the City of Muskegon, Michigan. This RepWatchr starter profile is source-seeded from OpenStates public municipality data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "MI",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://muskegon-mi.gov/city-services/elected-officials/mayor-ken-johnson/"
+    },
+    {
+      "title": "OpenStates public municipality record",
+      "url": "https://raw.githubusercontent.com/openstates/people/9d9a7f4a873a7e42cb405af0f6702770f2ae07a7/data/mi/municipalities/Kenneth-Johnson-e338ee29-cca4-4d5b-b789-41404e71c0c1.yml"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-02"
+}

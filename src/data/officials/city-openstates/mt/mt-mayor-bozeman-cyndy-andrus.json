@@ -1,0 +1,35 @@
+{
+  "id": "cyndy-andrus",
+  "name": "Cyndy Andrus",
+  "firstName": "Cyndy",
+  "lastName": "Andrus",
+  "party": "NP",
+  "level": "city",
+  "position": "Mayor",
+  "district": "Citywide",
+  "jurisdiction": "City of Bozeman, Montana",
+  "county": [],
+  "termStart": "Start date pending source review",
+  "termEnd": "2026-12-31",
+  "contactInfo": {
+    "office": "121 N Rouse Ave;Bozeman, MT 59715",
+    "phone": "406-581-4992",
+    "email": "candrus@bozeman.net",
+    "website": "https://www.bozeman.net/Home/Components/StaffDirectory/StaffDirectory/773/2052"
+  },
+  "bio": "Cyndy Andrus is listed as mayor of the City of Bozeman, Montana. This RepWatchr starter profile is source-seeded from OpenStates public municipality data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "MT",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.bozeman.net/Home/Components/StaffDirectory/StaffDirectory/773/2052"
+    },
+    {
+      "title": "OpenStates public municipality record",
+      "url": "https://raw.githubusercontent.com/openstates/people/9d9a7f4a873a7e42cb405af0f6702770f2ae07a7/data/mt/municipalities/Cyndy-Andrus-4e68f7de-d2f1-4078-8519-fb069e189a94.yml"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-02"
+}

@@ -1,0 +1,35 @@
+{
+  "id": "thomas-hood",
+  "name": "Thomas Hood",
+  "firstName": "Thomas",
+  "lastName": "Hood",
+  "party": "NP",
+  "level": "city",
+  "position": "Mayor",
+  "district": "Citywide",
+  "jurisdiction": "City of Gurnee, Illinois",
+  "county": [],
+  "termStart": "Start date pending source review",
+  "termEnd": "2029-04-30",
+  "contactInfo": {
+    "office": "325 N O'Plaine Rd;Gurnee, IL 60031",
+    "phone": "847-599-7500",
+    "email": "mayor@village.gurnee.il.us",
+    "website": "https://www.gurnee.il.us/government/members-terms-of-the-village-board/thomas-hood-mayor"
+  },
+  "bio": "Thomas Hood is listed as mayor of the City of Gurnee, Illinois. This RepWatchr starter profile is source-seeded from OpenStates public municipality data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "IL",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.gurnee.il.us/government/members-terms-of-the-village-board/thomas-hood-mayor"
+    },
+    {
+      "title": "OpenStates public municipality record",
+      "url": "https://raw.githubusercontent.com/openstates/people/9d9a7f4a873a7e42cb405af0f6702770f2ae07a7/data/il/municipalities/Thomas-Hood-a8ed7379-79ae-4228-8b45-ce1ba50fa10e.yml"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-02"
+}

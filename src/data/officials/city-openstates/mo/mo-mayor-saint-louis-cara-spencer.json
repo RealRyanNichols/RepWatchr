@@ -1,0 +1,39 @@
+{
+  "id": "cara-spencer",
+  "name": "Cara Spencer",
+  "firstName": "Cara",
+  "lastName": "Spencer",
+  "party": "D",
+  "level": "city",
+  "position": "Mayor",
+  "district": "Citywide",
+  "jurisdiction": "City of Saint Louis, Missouri",
+  "county": [],
+  "termStart": "Start date pending source review",
+  "termEnd": "2029-04-17",
+  "contactInfo": {
+    "office": "1200 Market Street, City Hall, Room 200;Saint Louis, MO 63103",
+    "phone": "314-622-3201",
+    "email": "mayor@stlouis-mo.gov",
+    "website": "https://www.stlouis-mo.gov/government/departments/mayor/profiles/mayor-cara-spencer.cfm"
+  },
+  "bio": "Cara Spencer is listed as mayor of the City of Saint Louis, Missouri. This RepWatchr starter profile is source-seeded from OpenStates public municipality data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "MO",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.stlouis-mo.gov/government/departments/mayor/profiles/mayor-cara-spencer.cfm"
+    },
+    {
+      "title": "OpenStates public municipality record",
+      "url": "https://raw.githubusercontent.com/openstates/people/9d9a7f4a873a7e42cb405af0f6702770f2ae07a7/data/mo/municipalities/Cara-Spencer-ca4ccf60-f3e3-4a06-86b1-55c502c2f2af.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.stlouis-mo.gov/government/departments/mayor/news/mayor-cara-spencer-takes-office-as-the-48th-mayor-of-st-louis.cfm"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-02"
+}

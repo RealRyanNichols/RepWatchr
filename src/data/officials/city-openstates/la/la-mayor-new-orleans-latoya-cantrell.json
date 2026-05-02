@@ -1,0 +1,35 @@
+{
+  "id": "latoya-cantrell",
+  "name": "LaToya Cantrell",
+  "firstName": "LaToya",
+  "lastName": "Cantrell",
+  "party": "NP",
+  "level": "city",
+  "position": "Mayor",
+  "district": "Citywide",
+  "jurisdiction": "City of New Orleans, Louisiana",
+  "county": [],
+  "termStart": "Start date pending source review",
+  "termEnd": "2026-12-26",
+  "contactInfo": {
+    "office": "1300 Perdido Street, 2nd Floor;New Orleans, LA 70112",
+    "phone": "504-658-4900",
+    "email": "mayor@nola.gov",
+    "website": "https://www.nola.gov/services/"
+  },
+  "bio": "LaToya Cantrell is listed as mayor of the City of New Orleans, Louisiana. This RepWatchr starter profile is source-seeded from OpenStates public municipality data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "LA",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.nola.gov/services/"
+    },
+    {
+      "title": "OpenStates public municipality record",
+      "url": "https://raw.githubusercontent.com/openstates/people/9d9a7f4a873a7e42cb405af0f6702770f2ae07a7/data/la/municipalities/LaToya-Cantrell-2a1a0bb7-d422-4ee0-af11-4208f4429acc.yml"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-02"
+}

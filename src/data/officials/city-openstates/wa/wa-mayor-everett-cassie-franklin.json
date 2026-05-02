@@ -1,0 +1,42 @@
+{
+  "id": "cassie-franklin",
+  "name": "Cassie Franklin",
+  "firstName": "Cassie",
+  "lastName": "Franklin",
+  "photo": "/images/officials/city-openstates/wa/cassie-franklin.jpg",
+  "photoSourceUrl": "https://www.everettwa.gov/ImageRepository/Document?documentID=39363",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "NP",
+  "level": "city",
+  "position": "Mayor",
+  "district": "Citywide",
+  "jurisdiction": "City of Everett, Washington",
+  "county": [],
+  "termStart": "2018-01-01",
+  "termEnd": "2026-12-31",
+  "contactInfo": {
+    "office": "2930 Wetmore Avenue;Everett, WA 98201",
+    "phone": "425-257-8700",
+    "email": "cfranklin@everettwa.gov",
+    "website": "https://www.everettwa.gov/1132/About-Mayor-Franklin"
+  },
+  "bio": "Cassie Franklin is listed as mayor of the City of Everett, Washington. This RepWatchr starter profile is source-seeded from OpenStates public municipality data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "WA",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.everettwa.gov/1132/About-Mayor-Franklin"
+    },
+    {
+      "title": "OpenStates public municipality record",
+      "url": "https://raw.githubusercontent.com/openstates/people/9d9a7f4a873a7e42cb405af0f6702770f2ae07a7/data/wa/municipalities/Cassie-Franklin-1c70a869-0ccb-445a-a87a-da6db3731ac7.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://www.everettwa.gov/ImageRepository/Document?documentID=39363"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-02"
+}

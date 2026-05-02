@@ -1,0 +1,35 @@
+{
+  "id": "fred-keeley",
+  "name": "Fred Keeley",
+  "firstName": "Fred",
+  "lastName": "Keeley",
+  "party": "D",
+  "level": "city",
+  "position": "Mayor",
+  "district": "Citywide",
+  "jurisdiction": "City of Santa Cruz, California",
+  "county": [],
+  "termStart": "Start date pending source review",
+  "termEnd": "2026-12-31",
+  "contactInfo": {
+    "office": "809 Center St.;Santa Cruz, CA 95060",
+    "phone": "831-420-5030",
+    "email": "fkeeley@santacruzca.gov",
+    "website": "https://www.santacruzca.gov/Government/City-Council/Meet-the-Mayor-and-City-Council/Mayor-Fred-Keeley"
+  },
+  "bio": "Fred Keeley is listed as mayor of the City of Santa Cruz, California. This RepWatchr starter profile is source-seeded from OpenStates public municipality data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "CA",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.santacruzca.gov/Government/City-Council/Meet-the-Mayor-and-City-Council/Mayor-Fred-Keeley"
+    },
+    {
+      "title": "OpenStates public municipality record",
+      "url": "https://raw.githubusercontent.com/openstates/people/9d9a7f4a873a7e42cb405af0f6702770f2ae07a7/data/ca/municipalities/Fred-Keeley-fe8b721f-6837-4bb6-a40c-0fe280286ce3.yml"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-02"
+}

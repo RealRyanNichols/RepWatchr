@@ -1,0 +1,43 @@
+{
+  "id": "victor-gordo",
+  "name": "Victor Gordo",
+  "firstName": "Victor",
+  "lastName": "Gordo",
+  "party": "NP",
+  "level": "city",
+  "position": "Mayor",
+  "district": "Citywide",
+  "jurisdiction": "City of Pasadena, California",
+  "county": [],
+  "termStart": "Start date pending source review",
+  "termEnd": "2028-12-07",
+  "contactInfo": {
+    "office": "100 N. Garfield Avenue, S228;PO Box 7115;Pasadena, CA 91109",
+    "phone": "626-744-4111",
+    "email": "vgordo@cityofpasadena.net",
+    "website": "https://www.cityofpasadena.net/mayor/contact/"
+  },
+  "bio": "Victor Gordo is listed as mayor of the City of Pasadena, California. This RepWatchr starter profile is source-seeded from OpenStates public municipality data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "CA",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.cityofpasadena.net/mayor/contact/"
+    },
+    {
+      "title": "OpenStates public municipality record",
+      "url": "https://raw.githubusercontent.com/openstates/people/9d9a7f4a873a7e42cb405af0f6702770f2ae07a7/data/ca/municipalities/Victor-Gordo-08d8ce60-5711-40e2-84d2-ecebb21ec7db.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.cityofpasadena.net/city-clerk/general-election-2020/"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.pasadenastarnews.com/2020/12/07/gordo-sworn-in-as-pasadena-mayor-urges-unity-and-hope-spring-will-come/"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-02"
+}

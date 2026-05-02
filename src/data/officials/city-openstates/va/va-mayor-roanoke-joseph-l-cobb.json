@@ -1,0 +1,35 @@
+{
+  "id": "joseph-l-cobb",
+  "name": "Joseph L. Cobb",
+  "firstName": "Joseph",
+  "lastName": "Cobb",
+  "party": "NP",
+  "level": "city",
+  "position": "Mayor",
+  "district": "Citywide",
+  "jurisdiction": "City of Roanoke, Virginia",
+  "county": [],
+  "termStart": "Start date pending source review",
+  "termEnd": "2028-12-31",
+  "contactInfo": {
+    "office": "215 Church Avenue SW;Room 452;Roanoke, VA 24011",
+    "phone": "540-853-2444",
+    "email": "joseph.cobb@roanokeva.gov",
+    "website": "https://www.roanokeva.gov/1007/Joseph-L-Cobb"
+  },
+  "bio": "Joseph L. Cobb is listed as mayor of the City of Roanoke, Virginia. This RepWatchr starter profile is source-seeded from OpenStates public municipality data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "VA",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.roanokeva.gov/1007/Joseph-L-Cobb"
+    },
+    {
+      "title": "OpenStates public municipality record",
+      "url": "https://raw.githubusercontent.com/openstates/people/9d9a7f4a873a7e42cb405af0f6702770f2ae07a7/data/va/municipalities/Joseph-L-Cobb-0932120c-3624-438c-8de6-6bcf8e28dcac.yml"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-02"
+}

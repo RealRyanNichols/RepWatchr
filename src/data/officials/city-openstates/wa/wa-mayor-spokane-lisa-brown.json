@@ -1,0 +1,56 @@
+{
+  "id": "lisa-brown",
+  "name": "Lisa Brown",
+  "firstName": "Lisa",
+  "lastName": "Brown",
+  "photo": "/images/officials/city-openstates/wa/lisa-brown.jpg",
+  "photoSourceUrl": "https://static.spokanecity.org/photos/2023/01/13/lisa-brown/3x4/medium/lisa-brown.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "city",
+  "position": "Mayor",
+  "district": "Citywide",
+  "jurisdiction": "City of Spokane, Washington",
+  "county": [],
+  "termStart": "2024-01-02",
+  "termEnd": "2028-12-29",
+  "contactInfo": {
+    "office": "Spokane City Hall;808 W. Spokane Falls Blvd.;Spokane, WA 99201",
+    "phone": "509-625-6250",
+    "email": "mayor@spokanecity.org",
+    "website": "https://my.spokanecity.org/mayor/about/",
+    "socialMedia": {
+      "x": "https://x.com/spokanecity",
+      "twitter": "https://x.com/spokanecity",
+      "facebook": "https://facebook.com/spokanecity",
+      "instagram": "https://instagram.com/mayorofspokane"
+    }
+  },
+  "bio": "Lisa Brown is listed as mayor of the City of Spokane, Washington. This RepWatchr starter profile is source-seeded from OpenStates public municipality data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "WA",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://my.spokanecity.org/mayor/about/"
+    },
+    {
+      "title": "OpenStates public municipality record",
+      "url": "https://raw.githubusercontent.com/openstates/people/9d9a7f4a873a7e42cb405af0f6702770f2ae07a7/data/wa/municipalities/Lisa-Brown-39318c21-9a46-4850-89fa-16aaf15784dc.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://static.spokanecity.org/photos/2023/01/13/lisa-brown/3x4/medium/lisa-brown.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "http://www.leg.wa.gov/senate/senators/Pages/brown.aspx"
+    },
+    {
+      "title": "Public source",
+      "url": "https://my.spokanecity.org/directory/officials/"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-02"
+}

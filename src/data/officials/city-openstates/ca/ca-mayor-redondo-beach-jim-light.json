@@ -1,0 +1,35 @@
+{
+  "id": "jim-light",
+  "name": "Jim Light",
+  "firstName": "Jim",
+  "lastName": "Light",
+  "party": "NP",
+  "level": "city",
+  "position": "Mayor",
+  "district": "Citywide",
+  "jurisdiction": "City of Redondo Beach, California",
+  "county": [],
+  "termStart": "Start date pending source review",
+  "termEnd": "2029-03-31",
+  "contactInfo": {
+    "office": "415 Diamond Street;Redondo Beach, CA 90277",
+    "phone": "310-372-1171",
+    "email": "jim.light@redondo.org",
+    "website": "https://www.redondo.org/government/mayor_and_city_council/mayor.php"
+  },
+  "bio": "Jim Light is listed as mayor of the City of Redondo Beach, California. This RepWatchr starter profile is source-seeded from OpenStates public municipality data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "CA",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.redondo.org/government/mayor_and_city_council/mayor.php"
+    },
+    {
+      "title": "OpenStates public municipality record",
+      "url": "https://raw.githubusercontent.com/openstates/people/9d9a7f4a873a7e42cb405af0f6702770f2ae07a7/data/ca/municipalities/Jim-Light-9c3c2632-a5d2-4a45-8e10-76ec49ef488a.yml"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-02"
+}

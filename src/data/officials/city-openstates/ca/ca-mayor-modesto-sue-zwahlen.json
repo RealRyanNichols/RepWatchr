@@ -1,0 +1,35 @@
+{
+  "id": "sue-zwahlen",
+  "name": "Sue Zwahlen",
+  "firstName": "Sue",
+  "lastName": "Zwahlen",
+  "party": "D",
+  "level": "city",
+  "position": "Mayor",
+  "district": "Citywide",
+  "jurisdiction": "City of Modesto, California",
+  "county": [],
+  "termStart": "Start date pending source review",
+  "termEnd": "2028-12-31",
+  "contactInfo": {
+    "office": "1010 10th Street;P.O. Box 642;Modesto, CA 95353",
+    "phone": "209-571-5597",
+    "email": "mayor@modestogov.com",
+    "website": "https://www.modestogov.com/717/Mayor---Sue-Zwahlen"
+  },
+  "bio": "Sue Zwahlen is listed as mayor of the City of Modesto, California. This RepWatchr starter profile is source-seeded from OpenStates public municipality data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "CA",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.modestogov.com/717/Mayor---Sue-Zwahlen"
+    },
+    {
+      "title": "OpenStates public municipality record",
+      "url": "https://raw.githubusercontent.com/openstates/people/9d9a7f4a873a7e42cb405af0f6702770f2ae07a7/data/ca/municipalities/Sue-Zwahlen-6dc497aa-7e7e-4dec-919e-84a3d6b03610.yml"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-02"
+}

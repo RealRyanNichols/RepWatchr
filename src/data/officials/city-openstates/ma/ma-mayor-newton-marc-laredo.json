@@ -1,0 +1,35 @@
+{
+  "id": "marc-laredo",
+  "name": "Marc Laredo",
+  "firstName": "Marc",
+  "lastName": "Laredo",
+  "party": "NP",
+  "level": "city",
+  "position": "Mayor",
+  "district": "Citywide",
+  "jurisdiction": "City of Newton, Massachusetts",
+  "county": [],
+  "termStart": "Start date pending source review",
+  "termEnd": "2030-01-01",
+  "contactInfo": {
+    "office": "1000 Commonwealth Avenue;Newton Centre, MA 02459",
+    "phone": "617-796-1100",
+    "email": "mayor@newtonma.gov",
+    "website": "https://www.newtonma.gov/government/mayor-laredo"
+  },
+  "bio": "Marc Laredo is listed as mayor of the City of Newton, Massachusetts. This RepWatchr starter profile is source-seeded from OpenStates public municipality data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "MA",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.newtonma.gov/government/mayor-laredo"
+    },
+    {
+      "title": "OpenStates public municipality record",
+      "url": "https://raw.githubusercontent.com/openstates/people/9d9a7f4a873a7e42cb405af0f6702770f2ae07a7/data/ma/municipalities/Marc-Laredo-f536d703-2220-491b-a38c-93df88a70156.yml"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-02"
+}

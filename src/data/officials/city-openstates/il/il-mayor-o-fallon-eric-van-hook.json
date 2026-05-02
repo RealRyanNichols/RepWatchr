@@ -1,0 +1,35 @@
+{
+  "id": "eric-van-hook",
+  "name": "Eric Van Hook",
+  "firstName": "Eric",
+  "lastName": "Van Hook",
+  "party": "NP",
+  "level": "city",
+  "position": "Mayor",
+  "district": "Citywide",
+  "jurisdiction": "City of O Fallon, Illinois",
+  "county": [],
+  "termStart": "Start date pending source review",
+  "termEnd": "2029-05-05",
+  "contactInfo": {
+    "office": "500 Lake Vista Way;O'Fallon, IL 62269",
+    "phone": "618-624-8730",
+    "email": "evanhook@ofallon.org",
+    "website": "https://www.ofallon.org/348/Mayors-Office"
+  },
+  "bio": "Eric Van Hook is listed as mayor of the City of O Fallon, Illinois. This RepWatchr starter profile is source-seeded from OpenStates public municipality data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "IL",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.ofallon.org/348/Mayors-Office"
+    },
+    {
+      "title": "OpenStates public municipality record",
+      "url": "https://raw.githubusercontent.com/openstates/people/9d9a7f4a873a7e42cb405af0f6702770f2ae07a7/data/il/municipalities/Eric-Van-Hook-9b150401-aa64-43a4-8f9c-8248c91ee715.yml"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-02"
+}

@@ -1,0 +1,35 @@
+{
+  "id": "jared-nicholson",
+  "name": "Jared Nicholson",
+  "firstName": "Jared",
+  "lastName": "Nicholson",
+  "party": "D",
+  "level": "city",
+  "position": "Mayor",
+  "district": "Citywide",
+  "jurisdiction": "City of Lynn, Massachusetts",
+  "county": [],
+  "termStart": "Start date pending source review",
+  "termEnd": "2030-01-05",
+  "contactInfo": {
+    "office": "3 City Hall Square;Lynn, MA 01901",
+    "phone": "781-586-6850",
+    "email": "jared.nicholson@lynnma.gov",
+    "website": "https://www.lynnma.gov/city_government/mayor"
+  },
+  "bio": "Jared Nicholson is listed as mayor of the City of Lynn, Massachusetts. This RepWatchr starter profile is source-seeded from OpenStates public municipality data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "MA",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.lynnma.gov/city_government/mayor"
+    },
+    {
+      "title": "OpenStates public municipality record",
+      "url": "https://raw.githubusercontent.com/openstates/people/9d9a7f4a873a7e42cb405af0f6702770f2ae07a7/data/ma/municipalities/Jared-Nicholson-5b21dd89-cebf-446b-9a0c-17fb6f2ba3b4.yml"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-02"
+}

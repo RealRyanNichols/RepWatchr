@@ -1,0 +1,39 @@
+{
+  "id": "patrick-haley",
+  "name": "Patrick Haley",
+  "firstName": "Patrick",
+  "lastName": "Haley",
+  "party": "R",
+  "level": "city",
+  "position": "Mayor",
+  "district": "Citywide",
+  "jurisdiction": "City of Wilmington, Ohio",
+  "county": [],
+  "termStart": "Start date pending source review",
+  "termEnd": "2027-12-31",
+  "contactInfo": {
+    "office": "69 N South St;Wilmington, OH 45177",
+    "phone": "937-382-5458",
+    "email": "mayor@wilmingtonohio.gov",
+    "website": "https://wilmingtonohio.gov/departments/elected-officials/"
+  },
+  "bio": "Patrick Haley is listed as mayor of the City of Wilmington, Ohio. This RepWatchr starter profile is source-seeded from OpenStates public municipality data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "OH",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://wilmingtonohio.gov/departments/elected-officials/"
+    },
+    {
+      "title": "OpenStates public municipality record",
+      "url": "https://raw.githubusercontent.com/openstates/people/9d9a7f4a873a7e42cb405af0f6702770f2ae07a7/data/oh/municipalities/Patrick-Haley-c5d8c6c2-f020-4fac-8f5a-11fd754d1c33.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://wilmingtonohio.gov/contacts/patrick-haley/"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-02"
+}

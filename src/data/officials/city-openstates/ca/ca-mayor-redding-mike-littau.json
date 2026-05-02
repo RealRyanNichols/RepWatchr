@@ -1,0 +1,35 @@
+{
+  "id": "mike-littau",
+  "name": "Mike Littau",
+  "firstName": "Mike",
+  "lastName": "Littau",
+  "party": "NP",
+  "level": "city",
+  "position": "Mayor",
+  "district": "Citywide",
+  "jurisdiction": "City of Redding, California",
+  "county": [],
+  "termStart": "Start date pending source review",
+  "termEnd": "2026-12-01",
+  "contactInfo": {
+    "office": "777 Cypress Avenue, 3rd Floor;Redding, CA 96001",
+    "phone": "530-225-4447",
+    "email": "mlittau@cityofredding.gov",
+    "website": "https://www.cityofredding.gov/government/departments/city_council/vice_mayor_mike_littau.php"
+  },
+  "bio": "Mike Littau is listed as mayor of the City of Redding, California. This RepWatchr starter profile is source-seeded from OpenStates public municipality data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "CA",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.cityofredding.gov/government/departments/city_council/vice_mayor_mike_littau.php"
+    },
+    {
+      "title": "OpenStates public municipality record",
+      "url": "https://raw.githubusercontent.com/openstates/people/9d9a7f4a873a7e42cb405af0f6702770f2ae07a7/data/ca/municipalities/Mike-Littau-6ef9eefd-88c8-4610-9605-6870dd3bf086.yml"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-02"
+}

@@ -1,0 +1,34 @@
+{
+  "id": "kaohly-her",
+  "name": "Kaohly Her",
+  "firstName": "Kaohly",
+  "lastName": "Her",
+  "party": "D",
+  "level": "city",
+  "position": "Mayor",
+  "district": "Citywide",
+  "jurisdiction": "City of Saint Paul, Minnesota",
+  "county": [],
+  "termStart": "Start date pending source review",
+  "termEnd": "2029-01-08",
+  "contactInfo": {
+    "office": "15 Kellogg Blvd. West;390 City Hall;Saint Paul, MN 55102",
+    "phone": "651-266-8989",
+    "website": "https://www.stpaul.gov/departments/mayors-office"
+  },
+  "bio": "Kaohly Her is listed as mayor of the City of Saint Paul, Minnesota. This RepWatchr starter profile is source-seeded from OpenStates public municipality data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "MN",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.stpaul.gov/departments/mayors-office"
+    },
+    {
+      "title": "OpenStates public municipality record",
+      "url": "https://raw.githubusercontent.com/openstates/people/9d9a7f4a873a7e42cb405af0f6702770f2ae07a7/data/mn/municipalities/Kaohly-Her-79caa971-9111-4dd9-8eb5-cf896c56a0b7.yml"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-02"
+}

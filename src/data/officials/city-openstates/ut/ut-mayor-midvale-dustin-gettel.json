@@ -1,0 +1,35 @@
+{
+  "id": "dustin-gettel",
+  "name": "Dustin Gettel",
+  "firstName": "Dustin",
+  "lastName": "Gettel",
+  "party": "NP",
+  "level": "city",
+  "position": "Mayor",
+  "district": "Citywide",
+  "jurisdiction": "City of Midvale , Utah",
+  "county": [],
+  "termStart": "Start date pending source review",
+  "termEnd": "2029-01-08",
+  "contactInfo": {
+    "office": "7505 S Holden St;Midvale, UT 84047",
+    "phone": "385-246-3574",
+    "email": "dgettel@midvaleut.gov",
+    "website": "https://www.midvale.utah.gov/government/mayor.php"
+  },
+  "bio": "Dustin Gettel is listed as mayor of the City of Midvale , Utah. This RepWatchr starter profile is source-seeded from OpenStates public municipality data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "UT",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.midvale.utah.gov/government/mayor.php"
+    },
+    {
+      "title": "OpenStates public municipality record",
+      "url": "https://raw.githubusercontent.com/openstates/people/9d9a7f4a873a7e42cb405af0f6702770f2ae07a7/data/ut/municipalities/Dustin-Gettel-33cce721-522a-47c1-98cd-a73f0ba8a65f.yml"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-02"
+}

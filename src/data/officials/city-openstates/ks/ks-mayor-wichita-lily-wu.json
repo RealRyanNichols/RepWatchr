@@ -1,0 +1,35 @@
+{
+  "id": "lily-wu",
+  "name": "Lily Wu",
+  "firstName": "Lily",
+  "lastName": "Wu",
+  "party": "NP",
+  "level": "city",
+  "position": "Mayor",
+  "district": "Citywide",
+  "jurisdiction": "City of Wichita, Kansas",
+  "county": [],
+  "termStart": "Start date pending source review",
+  "termEnd": "2028-01-10",
+  "contactInfo": {
+    "office": "455 N. Main, 1st Floor;Wichita, KS 67202",
+    "phone": "316-268-4331",
+    "email": "LWu@wichita.gov",
+    "website": "https://www.wichita.gov/785/Mayor-Lily-Wu"
+  },
+  "bio": "Lily Wu is listed as mayor of the City of Wichita, Kansas. This RepWatchr starter profile is source-seeded from OpenStates public municipality data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "KS",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.wichita.gov/785/Mayor-Lily-Wu"
+    },
+    {
+      "title": "OpenStates public municipality record",
+      "url": "https://raw.githubusercontent.com/openstates/people/9d9a7f4a873a7e42cb405af0f6702770f2ae07a7/data/ks/municipalities/Lily-Wu-af13b723-3a7f-43c8-98e9-cbf7c5baf63f.yml"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-02"
+}

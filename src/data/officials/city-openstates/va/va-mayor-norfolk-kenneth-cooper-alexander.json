@@ -1,0 +1,35 @@
+{
+  "id": "kenneth-cooper-alexander",
+  "name": "Kenneth Cooper Alexander",
+  "firstName": "Kenneth Cooper",
+  "lastName": "Alexander",
+  "party": "NP",
+  "level": "city",
+  "position": "Mayor",
+  "district": "Citywide",
+  "jurisdiction": "City of Norfolk, Virginia",
+  "county": [],
+  "termStart": "Start date pending source review",
+  "termEnd": "2028-12-31",
+  "contactInfo": {
+    "office": "810 Union Street, Suite 1001;Norfolk, VA 23510",
+    "phone": "757-664-4268",
+    "email": "mayor@norfolk.gov",
+    "website": "https://www.norfolk.gov/directory.aspx?EID=3"
+  },
+  "bio": "Kenneth Cooper Alexander is listed as mayor of the City of Norfolk, Virginia. This RepWatchr starter profile is source-seeded from OpenStates public municipality data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "VA",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.norfolk.gov/directory.aspx?EID=3"
+    },
+    {
+      "title": "OpenStates public municipality record",
+      "url": "https://raw.githubusercontent.com/openstates/people/9d9a7f4a873a7e42cb405af0f6702770f2ae07a7/data/va/municipalities/Kenneth-Cooper-Alexander-981d17be-22f0-4365-bf74-cb81dfa732d5.yml"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-02"
+}

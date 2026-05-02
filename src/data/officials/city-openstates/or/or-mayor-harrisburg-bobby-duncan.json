@@ -1,0 +1,35 @@
+{
+  "id": "bobby-duncan",
+  "name": "Bobby Duncan",
+  "firstName": "Bobby",
+  "lastName": "Duncan",
+  "party": "NP",
+  "level": "city",
+  "position": "Mayor",
+  "district": "Citywide",
+  "jurisdiction": "City of Harrisburg, Oregon",
+  "county": [],
+  "termStart": "Start date pending source review",
+  "termEnd": "2026-12-31",
+  "contactInfo": {
+    "office": "120 Smith Street;PO Box 378;Harrisburg, OR 97446",
+    "phone": "541-995-6655",
+    "email": "rduncan@ci.harrisburg.or.us",
+    "website": "https://www.ci.harrisburg.or.us/citycouncil/page/mayors-page"
+  },
+  "bio": "Bobby Duncan is listed as mayor of the City of Harrisburg, Oregon. This RepWatchr starter profile is source-seeded from OpenStates public municipality data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "OR",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.ci.harrisburg.or.us/citycouncil/page/mayors-page"
+    },
+    {
+      "title": "OpenStates public municipality record",
+      "url": "https://raw.githubusercontent.com/openstates/people/9d9a7f4a873a7e42cb405af0f6702770f2ae07a7/data/or/municipalities/Bobby-Duncan-4b18acc2-4c9a-4f6c-b8b4-99773b158844.yml"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-02"
+}

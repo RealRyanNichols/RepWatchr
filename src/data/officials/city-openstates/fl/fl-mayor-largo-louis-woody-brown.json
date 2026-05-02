@@ -1,0 +1,35 @@
+{
+  "id": "louis-woody-brown",
+  "name": "Louis \"Woody\" Brown",
+  "firstName": "Louis \"Woody\"",
+  "lastName": "Brown",
+  "party": "NP",
+  "level": "city",
+  "position": "Mayor",
+  "district": "Citywide",
+  "jurisdiction": "City of Largo, Florida",
+  "county": [],
+  "termStart": "Start date pending source review",
+  "termEnd": "2028-11-30",
+  "contactInfo": {
+    "office": "201 Highland Ave N;Largo, FL 33770",
+    "phone": "727-587-6702",
+    "email": "wobrown@largo.com",
+    "website": "https://www.largo.com/connect/mayor_and_commission/mayor.php"
+  },
+  "bio": "Louis \"Woody\" Brown is listed as mayor of the City of Largo, Florida. This RepWatchr starter profile is source-seeded from OpenStates public municipality data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "FL",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.largo.com/connect/mayor_and_commission/mayor.php"
+    },
+    {
+      "title": "OpenStates public municipality record",
+      "url": "https://raw.githubusercontent.com/openstates/people/9d9a7f4a873a7e42cb405af0f6702770f2ae07a7/data/fl/municipalities/Louis-Woody-Brown-630069bc-52e2-437b-8a93-0dac2366f035.yml"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-02"
+}

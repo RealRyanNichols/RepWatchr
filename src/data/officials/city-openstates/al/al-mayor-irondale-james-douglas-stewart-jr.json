@@ -1,0 +1,35 @@
+{
+  "id": "james-douglas-stewart-jr",
+  "name": "James Douglas Stewart Jr.",
+  "firstName": "James Douglas",
+  "lastName": "Stewart Jr.",
+  "party": "NP",
+  "level": "city",
+  "position": "Mayor",
+  "district": "Citywide",
+  "jurisdiction": "City of Irondale, Alabama",
+  "county": [],
+  "termStart": "Start date pending source review",
+  "termEnd": "2029-11-05",
+  "contactInfo": {
+    "office": "101 20th Street South;Irondale, AL 35210",
+    "phone": "205-956-9200",
+    "email": "info@cityofirondaleal.gov",
+    "website": "https://cityofirondaleal.gov/government/mayors-page/"
+  },
+  "bio": "James Douglas Stewart Jr. is listed as mayor of the City of Irondale, Alabama. This RepWatchr starter profile is source-seeded from OpenStates public municipality data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "AL",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://cityofirondaleal.gov/government/mayors-page/"
+    },
+    {
+      "title": "OpenStates public municipality record",
+      "url": "https://raw.githubusercontent.com/openstates/people/9d9a7f4a873a7e42cb405af0f6702770f2ae07a7/data/al/municipalities/James-Douglas-Stewart-Jr-c0ad0a1d-5db9-4bfe-93d6-f665d89db321.yml"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-02"
+}

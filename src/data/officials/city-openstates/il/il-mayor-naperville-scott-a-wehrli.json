@@ -1,0 +1,35 @@
+{
+  "id": "scott-a-wehrli",
+  "name": "Scott A. Wehrli",
+  "firstName": "Scott",
+  "lastName": "Wehrli",
+  "party": "NP",
+  "level": "city",
+  "position": "Mayor",
+  "district": "Citywide",
+  "jurisdiction": "City of Naperville, Illinois",
+  "county": [],
+  "termStart": "Start date pending source review",
+  "termEnd": "2027-05-05",
+  "contactInfo": {
+    "office": "400 S. Eagle Street;Naperville, IL 60540",
+    "phone": "630-420-6018",
+    "email": "wehrlis@naperville.il.us",
+    "website": "https://www.naperville.il.us/government/meet-your-city-council/mayor-scott-wehrli/"
+  },
+  "bio": "Scott A. Wehrli is listed as mayor of the City of Naperville, Illinois. This RepWatchr starter profile is source-seeded from OpenStates public municipality data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "IL",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.naperville.il.us/government/meet-your-city-council/mayor-scott-wehrli/"
+    },
+    {
+      "title": "OpenStates public municipality record",
+      "url": "https://raw.githubusercontent.com/openstates/people/9d9a7f4a873a7e42cb405af0f6702770f2ae07a7/data/il/municipalities/Scott-A-Wehrli-c181df03-08e6-4979-ba29-4be5ca9ce6e2.yml"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-02"
+}

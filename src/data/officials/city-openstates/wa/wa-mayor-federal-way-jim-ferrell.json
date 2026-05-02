@@ -1,0 +1,52 @@
+{
+  "id": "jim-ferrell",
+  "name": "Jim Ferrell",
+  "firstName": "Jim",
+  "lastName": "Ferrell",
+  "photo": "/images/officials/city-openstates/wa/jim-ferrell.jpg",
+  "photoSourceUrl": "https://www.federalwaywa.gov/sites/default/files/styles/featured/public/2024-02/Jim%20Ferrell%20New%20Headshot.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "NP",
+  "level": "city",
+  "position": "Mayor",
+  "district": "Citywide",
+  "jurisdiction": "City of Federal Way, Washington",
+  "county": [],
+  "termStart": "2014-01-01",
+  "termEnd": "2029-12-31",
+  "contactInfo": {
+    "office": "33325 8th Ave S;Federal Way, WA 98003",
+    "phone": "253-835-2402",
+    "email": "jim.ferrell@cityoffederalway.com",
+    "website": "https://www.federalwaywa.gov/mayors-office",
+    "socialMedia": {
+      "x": "https://x.com/WAFederalWay",
+      "twitter": "https://x.com/WAFederalWay",
+      "facebook": "https://facebook.com/MayorJimFerrell",
+      "instagram": "https://instagram.com/fedwaywa"
+    }
+  },
+  "bio": "Jim Ferrell is listed as mayor of the City of Federal Way, Washington. This RepWatchr starter profile is source-seeded from OpenStates public municipality data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "WA",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.federalwaywa.gov/mayors-office"
+    },
+    {
+      "title": "OpenStates public municipality record",
+      "url": "https://raw.githubusercontent.com/openstates/people/9d9a7f4a873a7e42cb405af0f6702770f2ae07a7/data/wa/municipalities/Jim-Ferrell-b2a0bc15-72af-40f3-9fff-616335fc06d0.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://www.federalwaywa.gov/sites/default/files/styles/featured/public/2024-02/Jim%20Ferrell%20New%20Headshot.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.federalwaywa.gov/page/about-jim-ferrell"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-02"
+}

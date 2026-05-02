@@ -1,0 +1,46 @@
+{
+  "id": "danny-avula",
+  "name": "Danny Avula",
+  "firstName": "Danny",
+  "lastName": "Avula",
+  "photo": "/images/officials/city-openstates/va/danny-avula.jpg",
+  "photoSourceUrl": "https://www.rva.gov/sites/default/files/inline-images/2025-MayorsOffice-WebGraphics-02.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "NP",
+  "level": "city",
+  "position": "Mayor",
+  "district": "Citywide",
+  "jurisdiction": "City of Richmond, Virginia",
+  "county": [],
+  "termStart": "Start date pending source review",
+  "termEnd": "2029-01-01",
+  "contactInfo": {
+    "office": "900 E. Broad St., Suite 201;Richmond, VA 23219",
+    "phone": "804-646-7970",
+    "email": "RVAMayor@rva.gov",
+    "website": "https://www.rva.gov/mayors-office"
+  },
+  "bio": "Danny Avula is listed as mayor of the City of Richmond, Virginia. This RepWatchr starter profile is source-seeded from OpenStates public municipality data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "VA",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.rva.gov/mayors-office"
+    },
+    {
+      "title": "OpenStates public municipality record",
+      "url": "https://raw.githubusercontent.com/openstates/people/9d9a7f4a873a7e42cb405af0f6702770f2ae07a7/data/va/municipalities/Danny-Avula-71510f59-6883-4a75-9915-577add1b7a8d.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://www.rva.gov/sites/default/files/inline-images/2025-MayorsOffice-WebGraphics-02.jpg"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.rva.gov/mayors-office/about-danny"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-02"
+}

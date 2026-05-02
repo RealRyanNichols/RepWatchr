@@ -1,0 +1,34 @@
+{
+  "id": "pat-burns",
+  "name": "Pat Burns",
+  "firstName": "Pat",
+  "lastName": "Burns",
+  "party": "NP",
+  "level": "city",
+  "position": "Mayor",
+  "district": "Citywide",
+  "jurisdiction": "City of Huntington Beach, California",
+  "county": [],
+  "termStart": "Start date pending source review",
+  "termEnd": "2026-12-31",
+  "contactInfo": {
+    "office": "2000 Main Street;Huntington Beach, CA 92648",
+    "email": "Pat.Burns@surfcity-hb.org",
+    "website": "https://www.huntingtonbeachca.gov/government/city_council/index.php"
+  },
+  "bio": "Pat Burns is listed as mayor of the City of Huntington Beach, California. This RepWatchr starter profile is source-seeded from OpenStates public municipality data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "CA",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.huntingtonbeachca.gov/government/city_council/index.php"
+    },
+    {
+      "title": "OpenStates public municipality record",
+      "url": "https://raw.githubusercontent.com/openstates/people/9d9a7f4a873a7e42cb405af0f6702770f2ae07a7/data/ca/municipalities/Pat-Burns-055b6619-b179-48b2-ab68-50921371be22.yml"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-02"
+}

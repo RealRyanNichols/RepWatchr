@@ -1,0 +1,35 @@
+{
+  "id": "robert-gallagher",
+  "name": "Robert Gallagher",
+  "firstName": "Robert",
+  "lastName": "Gallagher",
+  "party": "NP",
+  "level": "city",
+  "position": "Mayor",
+  "district": "Citywide",
+  "jurisdiction": "City of Bettendorf, Iowa",
+  "county": [],
+  "termStart": "Start date pending source review",
+  "termEnd": "2027-12-31",
+  "contactInfo": {
+    "office": "1609 State St;Bettendorf, IA 52722",
+    "phone": "563-344-4000",
+    "email": "bgallagher@bettendorf.org",
+    "website": "https://www.bettendorf.org/government/mayor___council/index.php"
+  },
+  "bio": "Robert Gallagher is listed as mayor of the City of Bettendorf, Iowa. This RepWatchr starter profile is source-seeded from OpenStates public municipality data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "IA",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.bettendorf.org/government/mayor___council/index.php"
+    },
+    {
+      "title": "OpenStates public municipality record",
+      "url": "https://raw.githubusercontent.com/openstates/people/9d9a7f4a873a7e42cb405af0f6702770f2ae07a7/data/ia/municipalities/Robert-Gallagher-2d6b3f1a-baa0-4dd3-96f4-fe5970c845a1.yml"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-02"
+}

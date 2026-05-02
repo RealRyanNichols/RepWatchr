@@ -1,0 +1,35 @@
+{
+  "id": "jason-beck",
+  "name": "Jason Beck",
+  "firstName": "Jason",
+  "lastName": "Beck",
+  "party": "NP",
+  "level": "city",
+  "position": "Mayor",
+  "district": "Citywide",
+  "jurisdiction": "City of Peoria, Arizona",
+  "county": [],
+  "termStart": "Start date pending source review",
+  "termEnd": "2027-01-01",
+  "contactInfo": {
+    "office": "8401 W. Monroe St.;Peoria, AZ 85345",
+    "phone": "623-773-7000",
+    "email": "jason.beck@peoriaaz.gov",
+    "website": "https://www.peoriaaz.gov/government/mayor-and-city-council/mayor-jason-beck"
+  },
+  "bio": "Jason Beck is listed as mayor of the City of Peoria, Arizona. This RepWatchr starter profile is source-seeded from OpenStates public municipality data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "AZ",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.peoriaaz.gov/government/mayor-and-city-council/mayor-jason-beck"
+    },
+    {
+      "title": "OpenStates public municipality record",
+      "url": "https://raw.githubusercontent.com/openstates/people/9d9a7f4a873a7e42cb405af0f6702770f2ae07a7/data/az/municipalities/Jason-Beck-91b11b1a-14df-4605-b92c-6f10fadd925d.yml"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-02"
+}

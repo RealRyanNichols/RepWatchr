@@ -1,0 +1,42 @@
+{
+  "id": "anders-ibsen",
+  "name": "Anders Ibsen",
+  "firstName": "Anders",
+  "lastName": "Ibsen",
+  "party": "NP",
+  "level": "city",
+  "position": "Mayor",
+  "district": "Citywide",
+  "jurisdiction": "City of Tacoma, Washington",
+  "county": [],
+  "termStart": "2026-01-01",
+  "termEnd": "2029-12-31",
+  "contactInfo": {
+    "office": "Tacoma Municipal Building;747 Market Street;12th Floor;Tacoma, WA 98402",
+    "phone": "253-591-5100",
+    "email": "anders.ibsen@cityoftacoma.org",
+    "website": "https://tacoma.gov/profile/office-of-mayor-anders-ibsen/",
+    "socialMedia": {
+      "x": "https://x.com/cityoftacoma",
+      "twitter": "https://x.com/cityoftacoma",
+      "facebook": "https://facebook.com/CityofTacoma",
+      "youtube": "https://youtube.com/cityoftacoma",
+      "instagram": "https://instagram.com/cityoftacoma"
+    }
+  },
+  "bio": "Anders Ibsen is listed as mayor of the City of Tacoma, Washington. This RepWatchr starter profile is source-seeded from OpenStates public municipality data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "WA",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://tacoma.gov/profile/office-of-mayor-anders-ibsen/"
+    },
+    {
+      "title": "OpenStates public municipality record",
+      "url": "https://raw.githubusercontent.com/openstates/people/9d9a7f4a873a7e42cb405af0f6702770f2ae07a7/data/wa/municipalities/Anders-Ibsen-176cd78c-9701-4b95-a626-1ea91ecaedae.yml"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-02"
+}

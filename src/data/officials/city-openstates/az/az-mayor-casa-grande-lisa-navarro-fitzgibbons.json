@@ -1,0 +1,35 @@
+{
+  "id": "lisa-navarro-fitzgibbons",
+  "name": "Lisa Navarro Fitzgibbons",
+  "firstName": "Lisa",
+  "lastName": "Fitzgibbons",
+  "party": "NP",
+  "level": "city",
+  "position": "Mayor",
+  "district": "Citywide",
+  "jurisdiction": "City of Casa Grande, Arizona",
+  "county": [],
+  "termStart": "Start date pending source review",
+  "termEnd": "2026-12-31",
+  "contactInfo": {
+    "office": "510 E Florence Blvd;Casa Grande, AZ 85122",
+    "phone": "520-421-8600",
+    "email": "lfitzgibbons@casagrandeaz.gov",
+    "website": "https://casagrandeaz.gov/353/City-Council"
+  },
+  "bio": "Lisa Navarro Fitzgibbons is listed as mayor of the City of Casa Grande, Arizona. This RepWatchr starter profile is source-seeded from OpenStates public municipality data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "AZ",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://casagrandeaz.gov/353/City-Council"
+    },
+    {
+      "title": "OpenStates public municipality record",
+      "url": "https://raw.githubusercontent.com/openstates/people/9d9a7f4a873a7e42cb405af0f6702770f2ae07a7/data/az/municipalities/Lisa-Navarro-Fitzgibbons-7b5f8d87-7637-4a94-a40c-177d9e852cb2.yml"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-02"
+}

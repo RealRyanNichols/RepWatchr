@@ -1,0 +1,30 @@
+{
+  "id": "erin-mendenhall",
+  "name": "Erin Mendenhall",
+  "firstName": "Erin",
+  "lastName": "Mendenhall",
+  "party": "NP",
+  "level": "city",
+  "position": "Mayor",
+  "district": "Citywide",
+  "jurisdiction": "City of Salt Lake City, Utah",
+  "county": [],
+  "termStart": "Start date pending source review",
+  "termEnd": "2028-01-04",
+  "contactInfo": {
+    "office": "P.O. Box 145474;Salt Lake City, UT 84114",
+    "phone": "801-535-7704",
+    "email": "Mayor@slcgov.com"
+  },
+  "bio": "Erin Mendenhall is listed as mayor of the City of Salt Lake City, Utah. This RepWatchr starter profile is source-seeded from OpenStates public municipality data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "UT",
+  "sourceLinks": [
+    {
+      "title": "OpenStates public municipality record",
+      "url": "https://raw.githubusercontent.com/openstates/people/9d9a7f4a873a7e42cb405af0f6702770f2ae07a7/data/ut/municipalities/Erin-Mendenhall-cd98c525-5eff-4f47-a638-5ca88644e134.yml"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-02"
+}

@@ -1,0 +1,35 @@
+{
+  "id": "lana-negrete",
+  "name": "Lana Negrete",
+  "firstName": "Lana",
+  "lastName": "Negrete",
+  "party": "NP",
+  "level": "city",
+  "position": "Mayor",
+  "district": "Citywide",
+  "jurisdiction": "City of Santa Monica, California",
+  "county": [],
+  "termStart": "Start date pending source review",
+  "termEnd": "2026-12-31",
+  "contactInfo": {
+    "office": "1685 Main Street;Santa Monica, CA 90401",
+    "phone": "310-458-8201",
+    "email": "lana.negrete@santamonica.gov",
+    "website": "https://www.santamonica.gov/departments/city-managers-office/city-council"
+  },
+  "bio": "Lana Negrete is listed as mayor of the City of Santa Monica, California. This RepWatchr starter profile is source-seeded from OpenStates public municipality data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "CA",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.santamonica.gov/departments/city-managers-office/city-council"
+    },
+    {
+      "title": "OpenStates public municipality record",
+      "url": "https://raw.githubusercontent.com/openstates/people/9d9a7f4a873a7e42cb405af0f6702770f2ae07a7/data/ca/municipalities/Lana-Negrete-0dbb0173-ca74-40a3-b395-90018ce76882.yml"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-02"
+}

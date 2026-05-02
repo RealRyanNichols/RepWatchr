@@ -1,0 +1,39 @@
+{
+  "id": "chip-wilson",
+  "name": "Chip Wilson",
+  "firstName": "Chip",
+  "lastName": "Wilson",
+  "party": "NP",
+  "level": "city",
+  "position": "Mayor",
+  "district": "Citywide",
+  "jurisdiction": "City of Apache Junction, Arizona",
+  "county": [],
+  "termStart": "Start date pending source review",
+  "termEnd": "2027-01-01",
+  "contactInfo": {
+    "office": "300 E. Superstition Blvd.;Apache Junction, AZ 85119",
+    "phone": "480-474-5066",
+    "email": "walterchip@aol.com",
+    "website": "https://www.apachejunctionaz.gov/282/Our-City-Council"
+  },
+  "bio": "Chip Wilson is listed as mayor of the City of Apache Junction, Arizona. This RepWatchr starter profile is source-seeded from OpenStates public municipality data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "AZ",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.apachejunctionaz.gov/282/Our-City-Council"
+    },
+    {
+      "title": "OpenStates public municipality record",
+      "url": "https://raw.githubusercontent.com/openstates/people/9d9a7f4a873a7e42cb405af0f6702770f2ae07a7/data/az/municipalities/Chip-Wilson-be3fc82e-5b4c-4138-ad93-82d5773248cb.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.apachejunctionaz.gov/directory.aspx?EID=8"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-02"
+}

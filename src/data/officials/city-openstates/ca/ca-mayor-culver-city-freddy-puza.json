@@ -1,0 +1,35 @@
+{
+  "id": "freddy-puza",
+  "name": "Freddy Puza",
+  "firstName": "Freddy",
+  "lastName": "Puza",
+  "party": "NP",
+  "level": "city",
+  "position": "Mayor",
+  "district": "Citywide",
+  "jurisdiction": "City of Culver City, California",
+  "county": [],
+  "termStart": "Start date pending source review",
+  "termEnd": "2026-12-14",
+  "contactInfo": {
+    "office": "9770 Culver Blvd;Culver City, CA 90232",
+    "phone": "310-253-6000",
+    "email": "freddy.puza@culvercity.org",
+    "website": "https://www.culvercity.gov/City-Hall/City-Council/Mayor-Freddy-Puza"
+  },
+  "bio": "Freddy Puza is listed as mayor of the City of Culver City, California. This RepWatchr starter profile is source-seeded from OpenStates public municipality data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "CA",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.culvercity.gov/City-Hall/City-Council/Mayor-Freddy-Puza"
+    },
+    {
+      "title": "OpenStates public municipality record",
+      "url": "https://raw.githubusercontent.com/openstates/people/9d9a7f4a873a7e42cb405af0f6702770f2ae07a7/data/ca/municipalities/Freddy-Puza-1c2e24d8-3dd8-4e35-8865-f1be4af9cc17.yml"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-02"
+}

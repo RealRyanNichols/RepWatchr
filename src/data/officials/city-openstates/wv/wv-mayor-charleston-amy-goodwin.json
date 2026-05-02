@@ -1,0 +1,35 @@
+{
+  "id": "amy-goodwin",
+  "name": "Amy Goodwin",
+  "firstName": "Amy",
+  "lastName": "Goodwin",
+  "party": "NP",
+  "level": "city",
+  "position": "Mayor",
+  "district": "Citywide",
+  "jurisdiction": "City of Charleston, West Virginia",
+  "county": [],
+  "termStart": "Start date pending source review",
+  "termEnd": "2027-01-04",
+  "contactInfo": {
+    "office": "501 Virginia St. East;Charleston, WV 25301",
+    "phone": "304-348-8033",
+    "email": "mayorsoffice@cityofcharleston.org",
+    "website": "https://www.charlestonwv.gov/foia"
+  },
+  "bio": "Amy Goodwin is listed as mayor of the City of Charleston, West Virginia. This RepWatchr starter profile is source-seeded from OpenStates public municipality data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "WV",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.charlestonwv.gov/foia"
+    },
+    {
+      "title": "OpenStates public municipality record",
+      "url": "https://raw.githubusercontent.com/openstates/people/9d9a7f4a873a7e42cb405af0f6702770f2ae07a7/data/wv/municipalities/Amy-Goodwin-13251721-ae99-4067-901d-e071a5ab0a35.yml"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-02"
+}

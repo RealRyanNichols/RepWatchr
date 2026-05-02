@@ -1,0 +1,42 @@
+{
+  "id": "francis-a-benjamin",
+  "name": "Francis A. Benjamin",
+  "firstName": "Francis",
+  "lastName": "Benjamin",
+  "party": "NP",
+  "level": "city",
+  "position": "Mayor",
+  "district": "Citywide",
+  "jurisdiction": "City of Pullman, Washington",
+  "county": [],
+  "termStart": "Start date pending source review",
+  "termEnd": "2027-12-31",
+  "contactInfo": {
+    "office": "190 SE Crestview St;Pullman, WA 99163",
+    "phone": "509-338-3316",
+    "email": "francis.benjamin@pullman-wa.gov",
+    "website": "https://www.pullman-wa.gov/government/mayor.php",
+    "socialMedia": {
+      "x": "https://x.com/city_of_pullman",
+      "twitter": "https://x.com/city_of_pullman",
+      "facebook": "https://facebook.com/CityOfPullman",
+      "youtube": "https://youtube.com/CityofPullmanWA",
+      "instagram": "https://instagram.com/cityofpullman"
+    }
+  },
+  "bio": "Francis A. Benjamin is listed as mayor of the City of Pullman, Washington. This RepWatchr starter profile is source-seeded from OpenStates public municipality data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "WA",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.pullman-wa.gov/government/mayor.php"
+    },
+    {
+      "title": "OpenStates public municipality record",
+      "url": "https://raw.githubusercontent.com/openstates/people/9d9a7f4a873a7e42cb405af0f6702770f2ae07a7/data/wa/municipalities/Francis-A-Benjamin-6a1245cf-862b-4aaf-8cfe-dd250da568c7.yml"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-02"
+}

@@ -1,0 +1,35 @@
+{
+  "id": "ben-thomas-jr",
+  "name": "Ben Thomas Jr.",
+  "firstName": "Ben",
+  "lastName": "Thomas",
+  "party": "R",
+  "level": "city",
+  "position": "Mayor",
+  "district": "Citywide",
+  "jurisdiction": "City of Greencastle, Pennsylvania",
+  "county": [],
+  "termStart": "Start date pending source review",
+  "termEnd": "2030-01-06",
+  "contactInfo": {
+    "office": "60 North Washington Street;Greencastle, PA 17225",
+    "phone": "717-597-7143",
+    "email": "office@greencastlepa.gov",
+    "website": "https://greencastlepa.gov/government/mayor/"
+  },
+  "bio": "Ben Thomas Jr. is listed as mayor of the City of Greencastle, Pennsylvania. This RepWatchr starter profile is source-seeded from OpenStates public municipality data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "PA",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://greencastlepa.gov/government/mayor/"
+    },
+    {
+      "title": "OpenStates public municipality record",
+      "url": "https://raw.githubusercontent.com/openstates/people/9d9a7f4a873a7e42cb405af0f6702770f2ae07a7/data/pa/municipalities/Ben-Thomas-Jr-16d5a322-c415-4255-8298-05a8028afc62.yml"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-02"
+}

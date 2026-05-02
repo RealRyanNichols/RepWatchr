@@ -1,0 +1,37 @@
+{
+  "id": "kim-lund",
+  "name": "Kim Lund",
+  "firstName": "Kim",
+  "lastName": "Lund",
+  "photo": "/images/officials/city-openstates/wa/kim-lund.jpg",
+  "photoSourceUrl": "https://cob.org/wp-content/smush-webp//Lund1a810-320x400.jpg.webp",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "NP",
+  "level": "city",
+  "position": "Mayor",
+  "district": "Citywide",
+  "jurisdiction": "City of Bellingham, Washington",
+  "county": [],
+  "termStart": "2024-01-01",
+  "termEnd": "2027-12-31",
+  "contactInfo": {
+    "office": "210 Lottie St;Bellingham, WA 98225",
+    "phone": "360-778-8100",
+    "email": "mayorsoffice@cob.org"
+  },
+  "bio": "Kim Lund is listed as mayor of the City of Bellingham, Washington. This RepWatchr starter profile is source-seeded from OpenStates public municipality data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "WA",
+  "sourceLinks": [
+    {
+      "title": "OpenStates public municipality record",
+      "url": "https://raw.githubusercontent.com/openstates/people/9d9a7f4a873a7e42cb405af0f6702770f2ae07a7/data/wa/municipalities/Kim-Lund-da875177-6f78-4e5a-a9db-08cf296c7aaf.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://cob.org/wp-content/smush-webp//Lund1a810-320x400.jpg.webp"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-02"
+}

@@ -1,0 +1,35 @@
+{
+  "id": "dade-royer",
+  "name": "Dade Royer",
+  "firstName": "Dade",
+  "lastName": "Royer",
+  "party": "NP",
+  "level": "city",
+  "position": "Mayor",
+  "district": "Citywide",
+  "jurisdiction": "City of Waynesboro, Pennsylvania",
+  "county": [],
+  "termStart": "Start date pending source review",
+  "termEnd": "2030-01-05",
+  "contactInfo": {
+    "office": "55 E Main Street;Waynesboro, PA 17268",
+    "phone": "717-762-2101",
+    "email": "DadeRoyer@waynesboropa.gov",
+    "website": "https://waynesboropa.gov/mayor/"
+  },
+  "bio": "Dade Royer is listed as mayor of the City of Waynesboro, Pennsylvania. This RepWatchr starter profile is source-seeded from OpenStates public municipality data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "PA",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://waynesboropa.gov/mayor/"
+    },
+    {
+      "title": "OpenStates public municipality record",
+      "url": "https://raw.githubusercontent.com/openstates/people/9d9a7f4a873a7e42cb405af0f6702770f2ae07a7/data/pa/municipalities/Dade-Royer-7556c6e4-ef64-4099-8196-9821e17c7981.yml"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-02"
+}

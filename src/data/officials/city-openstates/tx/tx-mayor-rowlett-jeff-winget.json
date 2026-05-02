@@ -1,0 +1,35 @@
+{
+  "id": "jeff-winget",
+  "name": "Jeff Winget",
+  "firstName": "Jeff",
+  "lastName": "Winget",
+  "party": "NP",
+  "level": "city",
+  "position": "Mayor",
+  "district": "Citywide",
+  "jurisdiction": "City of Rowlett, Texas",
+  "county": [],
+  "termStart": "Start date pending source review",
+  "termEnd": "2028-05-31",
+  "contactInfo": {
+    "office": "4000 Main St;Rowlett, TX 75088",
+    "phone": "972-412-6109",
+    "email": "jwinget@rowlett.com",
+    "website": "https://www.rowletttx.gov/653/Jeff-Winget-Mayor"
+  },
+  "bio": "Jeff Winget is listed as mayor of the City of Rowlett, Texas. This RepWatchr starter profile is source-seeded from OpenStates public municipality data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "TX",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.rowletttx.gov/653/Jeff-Winget-Mayor"
+    },
+    {
+      "title": "OpenStates public municipality record",
+      "url": "https://raw.githubusercontent.com/openstates/people/9d9a7f4a873a7e42cb405af0f6702770f2ae07a7/data/tx/municipalities/Jeff-Winget-a9ca4db0-8167-47ff-a284-c35102bd4e59.yml"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-02"
+}

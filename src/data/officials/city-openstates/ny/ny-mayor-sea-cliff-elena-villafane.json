@@ -1,0 +1,34 @@
+{
+  "id": "elena-villafane",
+  "name": "Elena Villafane",
+  "firstName": "Elena",
+  "lastName": "Villafane",
+  "party": "NP",
+  "level": "city",
+  "position": "Mayor",
+  "district": "Citywide",
+  "jurisdiction": "City of Sea Cliff, New York",
+  "county": [],
+  "termStart": "Start date pending source review",
+  "termEnd": "2027-03-31",
+  "contactInfo": {
+    "office": "300 Sea Cliff Avenue;PO Box 340;Sea Cliff, NY 11579",
+    "phone": "516-671-0080",
+    "website": "https://www.seacliff-ny.gov/about-village/pages/mayors-corner"
+  },
+  "bio": "Elena Villafane is listed as mayor of the City of Sea Cliff, New York. This RepWatchr starter profile is source-seeded from OpenStates public municipality data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "NY",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.seacliff-ny.gov/about-village/pages/mayors-corner"
+    },
+    {
+      "title": "OpenStates public municipality record",
+      "url": "https://raw.githubusercontent.com/openstates/people/9d9a7f4a873a7e42cb405af0f6702770f2ae07a7/data/ny/municipalities/Elena-Villafane-0c9bcc88-91a2-4416-a421-76886b188e04.yml"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-02"
+}

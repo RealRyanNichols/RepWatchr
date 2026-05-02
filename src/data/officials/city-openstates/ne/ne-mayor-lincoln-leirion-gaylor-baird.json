@@ -1,0 +1,35 @@
+{
+  "id": "leirion-gaylor-baird",
+  "name": "Leirion Gaylor Baird",
+  "firstName": "Leirion",
+  "lastName": "Gaylor Baird",
+  "party": "NP",
+  "level": "city",
+  "position": "Mayor",
+  "district": "Citywide",
+  "jurisdiction": "City of Lincoln, Nebraska",
+  "county": [],
+  "termStart": "Start date pending source review",
+  "termEnd": "2027-05-01",
+  "contactInfo": {
+    "office": "555 South 10th St.;Suite 301;Lincoln, NE 68508",
+    "phone": "402-441-7511",
+    "email": "mayor@lincoln.ne.gov",
+    "website": "https://www.lincoln.ne.gov/City/Mayor"
+  },
+  "bio": "Leirion Gaylor Baird is listed as mayor of the City of Lincoln, Nebraska. This RepWatchr starter profile is source-seeded from OpenStates public municipality data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "NE",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.lincoln.ne.gov/City/Mayor"
+    },
+    {
+      "title": "OpenStates public municipality record",
+      "url": "https://raw.githubusercontent.com/openstates/people/9d9a7f4a873a7e42cb405af0f6702770f2ae07a7/data/ne/municipalities/Leirion-Gaylor-Baird-9873b12d-f6b2-4cab-b96d-8fb69518aa2b.yml"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-02"
+}

@@ -1,0 +1,35 @@
+{
+  "id": "debbie-long",
+  "name": "Debbie Long",
+  "firstName": "Debbie",
+  "lastName": "Long",
+  "party": "R",
+  "level": "city",
+  "position": "Mayor",
+  "district": "Citywide",
+  "jurisdiction": "City of Claremore, Oklahoma",
+  "county": [],
+  "termStart": "Start date pending source review",
+  "termEnd": "2027-05-01",
+  "contactInfo": {
+    "office": "104 S Muskogee Ave;Claremore, OK 74017",
+    "phone": "918-341-1325",
+    "email": "debbie.long@claremore.com",
+    "website": "https://www.claremorecity.com/61/Mayor"
+  },
+  "bio": "Debbie Long is listed as mayor of the City of Claremore, Oklahoma. This RepWatchr starter profile is source-seeded from OpenStates public municipality data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "OK",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.claremorecity.com/61/Mayor"
+    },
+    {
+      "title": "OpenStates public municipality record",
+      "url": "https://raw.githubusercontent.com/openstates/people/9d9a7f4a873a7e42cb405af0f6702770f2ae07a7/data/ok/municipalities/Debbie-Long-5fbe4ddb-4aff-4741-9615-59c335fc4e18.yml"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-02"
+}

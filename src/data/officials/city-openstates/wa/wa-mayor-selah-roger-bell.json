@@ -1,0 +1,35 @@
+{
+  "id": "roger-bell",
+  "name": "Roger Bell",
+  "firstName": "Roger",
+  "lastName": "Bell",
+  "party": "NP",
+  "level": "city",
+  "position": "Mayor",
+  "district": "Citywide",
+  "jurisdiction": "City of Selah, Washington",
+  "county": [],
+  "termStart": "2024-01-01",
+  "termEnd": "2027-12-31",
+  "contactInfo": {
+    "office": "115 W. Naches Ave;Selah, WA 98942",
+    "phone": "509-698-7328",
+    "email": "roger.bell@selahwa.gov",
+    "website": "https://selahwa.gov/mayor/"
+  },
+  "bio": "Roger Bell is listed as mayor of the City of Selah, Washington. This RepWatchr starter profile is source-seeded from OpenStates public municipality data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "WA",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://selahwa.gov/mayor/"
+    },
+    {
+      "title": "OpenStates public municipality record",
+      "url": "https://raw.githubusercontent.com/openstates/people/9d9a7f4a873a7e42cb405af0f6702770f2ae07a7/data/wa/municipalities/Roger-Bell-f7bdf65f-6ae4-4349-aea4-4b20d1d05c37.yml"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-02"
+}

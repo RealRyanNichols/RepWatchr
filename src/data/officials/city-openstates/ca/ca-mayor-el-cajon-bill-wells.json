@@ -1,0 +1,30 @@
+{
+  "id": "bill-wells",
+  "name": "Bill Wells",
+  "firstName": "Bill",
+  "lastName": "Wells",
+  "party": "NP",
+  "level": "city",
+  "position": "Mayor",
+  "district": "Citywide",
+  "jurisdiction": "City of El Cajon, California",
+  "county": [],
+  "termStart": "Start date pending source review",
+  "termEnd": "2026-12-31",
+  "contactInfo": {
+    "office": "200 Civic Center Way;El Cajon, CA 92020",
+    "phone": "619-441-1788",
+    "email": "bwells@cityofelcajon.us"
+  },
+  "bio": "Bill Wells is listed as mayor of the City of El Cajon, California. This RepWatchr starter profile is source-seeded from OpenStates public municipality data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "CA",
+  "sourceLinks": [
+    {
+      "title": "OpenStates public municipality record",
+      "url": "https://raw.githubusercontent.com/openstates/people/9d9a7f4a873a7e42cb405af0f6702770f2ae07a7/data/ca/municipalities/Bill-Wells-311a7f62-f2b8-44c4-b573-77c648de125d.yml"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-02"
+}

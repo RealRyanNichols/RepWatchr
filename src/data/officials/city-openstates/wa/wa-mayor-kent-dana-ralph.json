@@ -1,0 +1,41 @@
+{
+  "id": "dana-ralph",
+  "name": "Dana Ralph",
+  "firstName": "Dana",
+  "lastName": "Ralph",
+  "party": "NP",
+  "level": "city",
+  "position": "Mayor",
+  "district": "Citywide",
+  "jurisdiction": "City of Kent, Washington",
+  "county": [],
+  "termStart": "2018-01-02",
+  "termEnd": "2029-12-31",
+  "contactInfo": {
+    "office": "220 Fourth Ave. S;Kent, WA 98032",
+    "phone": "253-856-5700",
+    "email": "Mayor@KentWA.gov",
+    "website": "https://www.kentwa.gov/government/kent-mayor",
+    "socialMedia": {
+      "x": "https://x.com/cityofkent",
+      "twitter": "https://x.com/cityofkent",
+      "facebook": "https://facebook.com/CityofKent",
+      "instagram": "https://instagram.com/cityofkent"
+    }
+  },
+  "bio": "Dana Ralph is listed as mayor of the City of Kent, Washington. This RepWatchr starter profile is source-seeded from OpenStates public municipality data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "WA",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.kentwa.gov/government/kent-mayor"
+    },
+    {
+      "title": "OpenStates public municipality record",
+      "url": "https://raw.githubusercontent.com/openstates/people/9d9a7f4a873a7e42cb405af0f6702770f2ae07a7/data/wa/municipalities/Dana-Ralph-e80904b8-4c6e-4ec8-92da-739902383a9a.yml"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-02"
+}

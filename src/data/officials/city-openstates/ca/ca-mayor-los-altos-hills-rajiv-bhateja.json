@@ -1,0 +1,35 @@
+{
+  "id": "rajiv-bhateja",
+  "name": "Rajiv Bhateja",
+  "firstName": "Rajiv",
+  "lastName": "Bhateja",
+  "party": "NP",
+  "level": "city",
+  "position": "Mayor",
+  "district": "Citywide",
+  "jurisdiction": "City of Los Altos Hills, California",
+  "county": [],
+  "termStart": "Start date pending source review",
+  "termEnd": "2028-12-31",
+  "contactInfo": {
+    "office": "26379 Fremont Road;Los Altos Hills, CA 94022",
+    "phone": "650-941-7222",
+    "email": "rajivb@losaltoshills.ca.gov",
+    "website": "https://www.losaltoshills.ca.gov"
+  },
+  "bio": "Rajiv Bhateja is listed as mayor of the City of Los Altos Hills, California. This RepWatchr starter profile is source-seeded from OpenStates public municipality data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "CA",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.losaltoshills.ca.gov"
+    },
+    {
+      "title": "OpenStates public municipality record",
+      "url": "https://raw.githubusercontent.com/openstates/people/9d9a7f4a873a7e42cb405af0f6702770f2ae07a7/data/ca/municipalities/Rajiv-Bhateja-6eab3651-4993-44d3-9bac-437d2eba810a.yml"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-02"
+}

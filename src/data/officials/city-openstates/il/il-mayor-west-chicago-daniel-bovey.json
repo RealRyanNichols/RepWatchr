@@ -1,0 +1,35 @@
+{
+  "id": "daniel-bovey",
+  "name": "Daniel Bovey",
+  "firstName": "Daniel",
+  "lastName": "Bovey",
+  "party": "NP",
+  "level": "city",
+  "position": "Mayor",
+  "district": "Citywide",
+  "jurisdiction": "City of West Chicago, Illinois",
+  "county": [],
+  "termStart": "Start date pending source review",
+  "termEnd": "2029-05-05",
+  "contactInfo": {
+    "office": "475 Main Street;West Chicago, IL 60185",
+    "phone": "630-293-2200",
+    "email": "dbovey@westchicago.org",
+    "website": "https://westchicago.org/elected-officials/"
+  },
+  "bio": "Daniel Bovey is listed as mayor of the City of West Chicago, Illinois. This RepWatchr starter profile is source-seeded from OpenStates public municipality data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "IL",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://westchicago.org/elected-officials/"
+    },
+    {
+      "title": "OpenStates public municipality record",
+      "url": "https://raw.githubusercontent.com/openstates/people/9d9a7f4a873a7e42cb405af0f6702770f2ae07a7/data/il/municipalities/Daniel-Bovey-9d3d3481-6fad-4b78-8598-be679afb7a41.yml"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-02"
+}

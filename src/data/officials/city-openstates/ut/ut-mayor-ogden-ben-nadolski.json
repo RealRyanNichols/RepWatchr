@@ -1,0 +1,35 @@
+{
+  "id": "ben-nadolski",
+  "name": "Ben Nadolski",
+  "firstName": "Ben",
+  "lastName": "Nadolski",
+  "party": "NP",
+  "level": "city",
+  "position": "Mayor",
+  "district": "Citywide",
+  "jurisdiction": "City of Ogden, Utah",
+  "county": [],
+  "termStart": "Start date pending source review",
+  "termEnd": "2028-01-02",
+  "contactInfo": {
+    "office": "2549 Washington Blvd;Ogden, UT 84401",
+    "phone": "801-629-8111",
+    "email": "bennadolski@ogdencity.com",
+    "website": "https://www.ogdencity.gov/3341/Mayor-Nadolski-Bio"
+  },
+  "bio": "Ben Nadolski is listed as mayor of the City of Ogden, Utah. This RepWatchr starter profile is source-seeded from OpenStates public municipality data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "UT",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.ogdencity.gov/3341/Mayor-Nadolski-Bio"
+    },
+    {
+      "title": "OpenStates public municipality record",
+      "url": "https://raw.githubusercontent.com/openstates/people/9d9a7f4a873a7e42cb405af0f6702770f2ae07a7/data/ut/municipalities/Ben-Nadolski-95489e28-8366-4e87-a008-9ff965b0e188.yml"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-02"
+}

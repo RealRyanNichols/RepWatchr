@@ -1,0 +1,35 @@
+{
+  "id": "hank-guess",
+  "name": "Hank Guess",
+  "firstName": "Hank",
+  "lastName": "Guess",
+  "party": "NP",
+  "level": "city",
+  "position": "Mayor",
+  "district": "Citywide",
+  "jurisdiction": "City of Hickory, North Carolina",
+  "county": [],
+  "termStart": "Start date pending source review",
+  "termEnd": "2029-12-31",
+  "contactInfo": {
+    "office": "76 N Center St;Hickory, NC 28601",
+    "phone": "828-323-7400",
+    "email": "hguess@hickorync.gov",
+    "website": "https://www.hickorync.gov/hickory-mayor-hank-guess"
+  },
+  "bio": "Hank Guess is listed as mayor of the City of Hickory, North Carolina. This RepWatchr starter profile is source-seeded from OpenStates public municipality data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "NC",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.hickorync.gov/hickory-mayor-hank-guess"
+    },
+    {
+      "title": "OpenStates public municipality record",
+      "url": "https://raw.githubusercontent.com/openstates/people/9d9a7f4a873a7e42cb405af0f6702770f2ae07a7/data/nc/municipalities/Hank-Guess-248d8919-19e7-4788-bd41-ba146f59e2c1.yml"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-02"
+}

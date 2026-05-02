@@ -1,0 +1,35 @@
+{
+  "id": "nick-guccione",
+  "name": "Nick Guccione",
+  "firstName": "Nick",
+  "lastName": "Guccione",
+  "party": "NP",
+  "level": "city",
+  "position": "Mayor",
+  "district": "Citywide",
+  "jurisdiction": "City of Wentzville, Missouri",
+  "county": [],
+  "termStart": "Start date pending source review",
+  "termEnd": "2028-04-04",
+  "contactInfo": {
+    "office": "1001 Schroeder Creek Blvd;Wentzville, MO 63385",
+    "phone": "636-327-5101",
+    "email": "Nick.Guccione@wentzvillemo.gov",
+    "website": "https://www.wentzvillemo.gov/government/mayor-aldermen/mayors-welcome/"
+  },
+  "bio": "Nick Guccione is listed as mayor of the City of Wentzville, Missouri. This RepWatchr starter profile is source-seeded from OpenStates public municipality data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "MO",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.wentzvillemo.gov/government/mayor-aldermen/mayors-welcome/"
+    },
+    {
+      "title": "OpenStates public municipality record",
+      "url": "https://raw.githubusercontent.com/openstates/people/9d9a7f4a873a7e42cb405af0f6702770f2ae07a7/data/mo/municipalities/Nick-Guccione-278d458b-f4ce-4228-9b08-f302f442620a.yml"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-02"
+}

@@ -1,0 +1,35 @@
+{
+  "id": "nick-smith-ca-mayor-pacific-grove",
+  "name": "Nick Smith",
+  "firstName": "Nick",
+  "lastName": "Smith",
+  "party": "NP",
+  "level": "city",
+  "position": "Mayor",
+  "district": "Citywide",
+  "jurisdiction": "City of Pacific Grove, California",
+  "county": [],
+  "termStart": "Start date pending source review",
+  "termEnd": "2026-12-31",
+  "contactInfo": {
+    "office": "300 Forest Ave.;Pacific Grove, CA 93950",
+    "phone": "831-648-3106",
+    "email": "nsmith@cityofpacificgrove.org",
+    "website": "https://www.cityofpacificgrove.gov/our_city/city_council_/nick_smith_biography.php"
+  },
+  "bio": "Nick Smith is listed as mayor of the City of Pacific Grove, California. This RepWatchr starter profile is source-seeded from OpenStates public municipality data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "CA",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.cityofpacificgrove.gov/our_city/city_council_/nick_smith_biography.php"
+    },
+    {
+      "title": "OpenStates public municipality record",
+      "url": "https://raw.githubusercontent.com/openstates/people/9d9a7f4a873a7e42cb405af0f6702770f2ae07a7/data/ca/municipalities/Nick-Smith-028a45b5-ea5b-4dd8-b9d7-87fe440a82b1.yml"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-02"
+}

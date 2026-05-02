@@ -1,0 +1,35 @@
+{
+  "id": "jeff-trudeau",
+  "name": "Jeff Trudeau",
+  "firstName": "Jeff",
+  "lastName": "Trudeau",
+  "party": "NP",
+  "level": "city",
+  "position": "Mayor",
+  "district": "Citywide",
+  "jurisdiction": "City of Horace, North Dakota",
+  "county": [],
+  "termStart": "Start date pending source review",
+  "termEnd": "2028-06-30",
+  "contactInfo": {
+    "office": "PO Box 99;Horace, ND 58047",
+    "phone": "701-492-2972",
+    "email": "jtrudeau@cityofhorace.com",
+    "website": "https://www.cityofhorace.com/"
+  },
+  "bio": "Jeff Trudeau is listed as mayor of the City of Horace, North Dakota. This RepWatchr starter profile is source-seeded from OpenStates public municipality data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "ND",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.cityofhorace.com/"
+    },
+    {
+      "title": "OpenStates public municipality record",
+      "url": "https://raw.githubusercontent.com/openstates/people/9d9a7f4a873a7e42cb405af0f6702770f2ae07a7/data/nd/municipalities/Jeff-Trudeau-9a105935-13a4-4db1-b24c-b5d629f1870f.yml"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-02"
+}

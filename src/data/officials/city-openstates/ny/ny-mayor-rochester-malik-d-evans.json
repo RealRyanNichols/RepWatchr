@@ -1,0 +1,35 @@
+{
+  "id": "malik-d-evans",
+  "name": "Malik D. Evans",
+  "firstName": "Malik",
+  "lastName": "Evans",
+  "party": "D",
+  "level": "city",
+  "position": "Mayor",
+  "district": "Citywide",
+  "jurisdiction": "City of Rochester, New York",
+  "county": [],
+  "termStart": "Start date pending source review",
+  "termEnd": "2029-12-31",
+  "contactInfo": {
+    "office": "30 Church Street, Room 202A;Rochester, NY 14614",
+    "phone": "585-428-7045",
+    "email": "mayor@cityofrochester.gov",
+    "website": "https://www.cityofrochester.gov/departments/mayors-office/malik-evans-mayor"
+  },
+  "bio": "Malik D. Evans is listed as mayor of the City of Rochester, New York. This RepWatchr starter profile is source-seeded from OpenStates public municipality data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "NY",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.cityofrochester.gov/departments/mayors-office/malik-evans-mayor"
+    },
+    {
+      "title": "OpenStates public municipality record",
+      "url": "https://raw.githubusercontent.com/openstates/people/9d9a7f4a873a7e42cb405af0f6702770f2ae07a7/data/ny/municipalities/Malik-D-Evans-32cf86a4-ccf2-4978-a111-52568e20a1ed.yml"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-02"
+}

@@ -1,0 +1,39 @@
+{
+  "id": "brian-montini",
+  "name": "Brian Montini",
+  "firstName": "Brian",
+  "lastName": "Montini",
+  "party": "NP",
+  "level": "city",
+  "position": "Mayor",
+  "district": "Citywide",
+  "jurisdiction": "City of Northlake, Texas",
+  "county": [],
+  "termStart": "Start date pending source review",
+  "termEnd": "2027-05-31",
+  "contactInfo": {
+    "office": "1500 Commons Circle, Suite 300;Northlake, TX 76226",
+    "phone": "940-648-3290",
+    "email": "bmontini@town.northlake.tx.us",
+    "website": "https://www.town.northlake.tx.us/222/Brian-Montini"
+  },
+  "bio": "Brian Montini is listed as mayor of the City of Northlake, Texas. This RepWatchr starter profile is source-seeded from OpenStates public municipality data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "TX",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.town.northlake.tx.us/222/Brian-Montini"
+    },
+    {
+      "title": "OpenStates public municipality record",
+      "url": "https://raw.githubusercontent.com/openstates/people/9d9a7f4a873a7e42cb405af0f6702770f2ae07a7/data/tx/municipalities/Brian-Montini-32223d3b-5a15-42e2-98d9-7a7e031a3742.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.town.northlake.tx.us/219/Town-Council"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-02"
+}

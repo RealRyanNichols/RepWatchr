@@ -1,0 +1,35 @@
+{
+  "id": "greg-wheeler",
+  "name": "Greg Wheeler",
+  "firstName": "Greg",
+  "lastName": "Wheeler",
+  "party": "NP",
+  "level": "city",
+  "position": "Mayor",
+  "district": "Citywide",
+  "jurisdiction": "City of Bremerton, Washington",
+  "county": [],
+  "termStart": "Start date pending source review",
+  "termEnd": "2029-12-31",
+  "contactInfo": {
+    "office": "345 6th Street;Suite 600;Bremerton, WA 98337",
+    "phone": "360-473-5266",
+    "email": "Greg.Wheeler@ci.bremerton.wa.us",
+    "website": "https://www.bremertonwa.gov/194/Mayor-Greg-Wheeler"
+  },
+  "bio": "Greg Wheeler is listed as mayor of the City of Bremerton, Washington. This RepWatchr starter profile is source-seeded from OpenStates public municipality data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "WA",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.bremertonwa.gov/194/Mayor-Greg-Wheeler"
+    },
+    {
+      "title": "OpenStates public municipality record",
+      "url": "https://raw.githubusercontent.com/openstates/people/9d9a7f4a873a7e42cb405af0f6702770f2ae07a7/data/wa/municipalities/Greg-Wheeler-ed4c031e-8156-4961-a5b6-3af89b8e26bd.yml"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-02"
+}

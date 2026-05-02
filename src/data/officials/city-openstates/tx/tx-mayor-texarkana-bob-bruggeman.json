@@ -1,0 +1,35 @@
+{
+  "id": "bob-bruggeman",
+  "name": "Bob Bruggeman",
+  "firstName": "Bob",
+  "lastName": "Bruggeman",
+  "party": "NP",
+  "level": "city",
+  "position": "Mayor",
+  "district": "Citywide",
+  "jurisdiction": "City of Texarkana, Texas",
+  "county": [],
+  "termStart": "Start date pending source review",
+  "termEnd": "2027-11-30",
+  "contactInfo": {
+    "office": "220 Texas Boulevard;Texarkana, TX 75501",
+    "phone": "903-798-3930",
+    "email": "rbbruggeman@aol.com",
+    "website": "https://www.texarkanatexas.gov/302/Bob-Bruggeman-Mayor"
+  },
+  "bio": "Bob Bruggeman is listed as mayor of the City of Texarkana, Texas. This RepWatchr starter profile is source-seeded from OpenStates public municipality data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "TX",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.texarkanatexas.gov/302/Bob-Bruggeman-Mayor"
+    },
+    {
+      "title": "OpenStates public municipality record",
+      "url": "https://raw.githubusercontent.com/openstates/people/9d9a7f4a873a7e42cb405af0f6702770f2ae07a7/data/tx/municipalities/Bob-Bruggeman-930fbecb-a4d7-4f6f-a7e3-59ebe06a1366.yml"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-02"
+}

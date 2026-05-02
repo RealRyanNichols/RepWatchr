@@ -1,0 +1,39 @@
+{
+  "id": "david-p-black",
+  "name": "David P. Black",
+  "firstName": "David",
+  "lastName": "Black",
+  "party": "NP",
+  "level": "city",
+  "position": "Mayor",
+  "district": "Citywide",
+  "jurisdiction": "City of Papillion, Nebraska",
+  "county": [],
+  "termStart": "Start date pending source review",
+  "termEnd": "2026-12-31",
+  "contactInfo": {
+    "office": "122 East Third Street;Papillion, NE 68046",
+    "phone": "402-827-1111",
+    "email": "info@papillion.org",
+    "website": "https://www.papillion.org/236/Mayors-Office"
+  },
+  "bio": "David P. Black is listed as mayor of the City of Papillion, Nebraska. This RepWatchr starter profile is source-seeded from OpenStates public municipality data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "NE",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.papillion.org/236/Mayors-Office"
+    },
+    {
+      "title": "OpenStates public municipality record",
+      "url": "https://raw.githubusercontent.com/openstates/people/9d9a7f4a873a7e42cb405af0f6702770f2ae07a7/data/ne/municipalities/David-P-Black-052e81b0-8c9c-47a5-8fcb-6cadf297ff9a.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.papillion.org/directory.aspx?EID=69"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-02"
+}

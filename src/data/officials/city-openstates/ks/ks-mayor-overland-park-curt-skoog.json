@@ -1,0 +1,35 @@
+{
+  "id": "curt-skoog",
+  "name": "Curt Skoog",
+  "firstName": "Curt",
+  "lastName": "Skoog",
+  "party": "NP",
+  "level": "city",
+  "position": "Mayor",
+  "district": "Citywide",
+  "jurisdiction": "City of Overland Park, Kansas",
+  "county": [],
+  "termStart": "Start date pending source review",
+  "termEnd": "2029-12-31",
+  "contactInfo": {
+    "office": "8500 Santa Fe Drive;Overland Park, KS 66212",
+    "phone": "913-895-6108",
+    "email": "Curt.Skoog@opkansas.org",
+    "website": "https://www.opkansas.org/city-government/mayors-office/mayor-curt-skoog/"
+  },
+  "bio": "Curt Skoog is listed as mayor of the City of Overland Park, Kansas. This RepWatchr starter profile is source-seeded from OpenStates public municipality data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "KS",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.opkansas.org/city-government/mayors-office/mayor-curt-skoog/"
+    },
+    {
+      "title": "OpenStates public municipality record",
+      "url": "https://raw.githubusercontent.com/openstates/people/9d9a7f4a873a7e42cb405af0f6702770f2ae07a7/data/ks/municipalities/Curt-Skoog-e78cea60-94cd-4f2b-9e1e-9fca379b22f3.yml"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-02"
+}

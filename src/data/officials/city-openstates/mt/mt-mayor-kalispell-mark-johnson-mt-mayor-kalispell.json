@@ -1,0 +1,35 @@
+{
+  "id": "mark-johnson-mt-mayor-kalispell",
+  "name": "Mark Johnson",
+  "firstName": "Mark",
+  "lastName": "Johnson",
+  "party": "NP",
+  "level": "city",
+  "position": "Mayor",
+  "district": "Citywide",
+  "jurisdiction": "City of Kalispell, Montana",
+  "county": [],
+  "termStart": "Start date pending source review",
+  "termEnd": "2026-12-31",
+  "contactInfo": {
+    "office": "P.O. Box 1997;Kalispell, MT 59903",
+    "phone": "406-758-7756",
+    "email": "citycouncil@kalispell.com",
+    "website": "https://www.kalispell.com/184/Mayor-City-Council"
+  },
+  "bio": "Mark Johnson is listed as mayor of the City of Kalispell, Montana. This RepWatchr starter profile is source-seeded from OpenStates public municipality data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "MT",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.kalispell.com/184/Mayor-City-Council"
+    },
+    {
+      "title": "OpenStates public municipality record",
+      "url": "https://raw.githubusercontent.com/openstates/people/9d9a7f4a873a7e42cb405af0f6702770f2ae07a7/data/mt/municipalities/Mark-Johnson-f72c6048-082d-4f36-b17c-dc07e9f4fb8c.yml"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-02"
+}

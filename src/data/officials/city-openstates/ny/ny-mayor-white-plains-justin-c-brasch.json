@@ -1,0 +1,35 @@
+{
+  "id": "justin-c-brasch",
+  "name": "Justin C. Brasch",
+  "firstName": "Justin",
+  "lastName": "Brasch",
+  "party": "NP",
+  "level": "city",
+  "position": "Mayor",
+  "district": "Citywide",
+  "jurisdiction": "City of White Plains, New York",
+  "county": [],
+  "termStart": "Start date pending source review",
+  "termEnd": "2029-12-31",
+  "contactInfo": {
+    "office": "255 Main Street;White Plains, NY 10601",
+    "phone": "914-422-1411",
+    "email": "mayorsoffice@whiteplainsny.gov",
+    "website": "https://www.cityofwhiteplains.com/1066/Mayor-Justin-C-Brasch"
+  },
+  "bio": "Justin C. Brasch is listed as mayor of the City of White Plains, New York. This RepWatchr starter profile is source-seeded from OpenStates public municipality data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "NY",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.cityofwhiteplains.com/1066/Mayor-Justin-C-Brasch"
+    },
+    {
+      "title": "OpenStates public municipality record",
+      "url": "https://raw.githubusercontent.com/openstates/people/9d9a7f4a873a7e42cb405af0f6702770f2ae07a7/data/ny/municipalities/Justin-C-Brasch-c8074966-dc12-40a5-aa37-101fdabf2540.yml"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-02"
+}

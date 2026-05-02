@@ -1,0 +1,35 @@
+{
+  "id": "robert-j-lovero",
+  "name": "Robert J. Lovero",
+  "firstName": "Robert J.",
+  "lastName": "Lovero",
+  "party": "NP",
+  "level": "city",
+  "position": "Mayor",
+  "district": "Citywide",
+  "jurisdiction": "City of Berwyn, Illinois",
+  "county": [],
+  "termStart": "Start date pending source review",
+  "termEnd": "2029-05-05",
+  "contactInfo": {
+    "office": "6700 W. 26th Street;Berwyn, IL 60402",
+    "phone": "708-788-2660",
+    "email": "rlovero@ci.berwyn.il.us",
+    "website": "https://www.berwyn-il.gov/?q=contact_the_city"
+  },
+  "bio": "Robert J. Lovero is listed as mayor of the City of Berwyn, Illinois. This RepWatchr starter profile is source-seeded from OpenStates public municipality data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "IL",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.berwyn-il.gov/?q=contact_the_city"
+    },
+    {
+      "title": "OpenStates public municipality record",
+      "url": "https://raw.githubusercontent.com/openstates/people/9d9a7f4a873a7e42cb405af0f6702770f2ae07a7/data/il/municipalities/Robert-J-Lovero-d8b9c7ae-5eef-4684-96cb-62d71511f5aa.yml"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-02"
+}

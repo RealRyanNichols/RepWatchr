@@ -1,0 +1,35 @@
+{
+  "id": "john-e-dailey",
+  "name": "John E. Dailey",
+  "firstName": "John",
+  "lastName": "Dailey",
+  "party": "D",
+  "level": "city",
+  "position": "Mayor",
+  "district": "Citywide",
+  "jurisdiction": "City of Tallahassee, Florida",
+  "county": [],
+  "termStart": "Start date pending source review",
+  "termEnd": "2026-11-16",
+  "contactInfo": {
+    "office": "300 S. Adams Street;Tallahassee, FL 32301",
+    "phone": "850-891-2000",
+    "email": "Mayor@talgov.com",
+    "website": "https://www.talgov.com/cityleadership/dailey"
+  },
+  "bio": "John E. Dailey is listed as mayor of the City of Tallahassee, Florida. This RepWatchr starter profile is source-seeded from OpenStates public municipality data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "FL",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.talgov.com/cityleadership/dailey"
+    },
+    {
+      "title": "OpenStates public municipality record",
+      "url": "https://raw.githubusercontent.com/openstates/people/9d9a7f4a873a7e42cb405af0f6702770f2ae07a7/data/fl/municipalities/John-E-Dailey-33c0e882-174c-45b9-8a44-004531c69577.yml"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-02"
+}

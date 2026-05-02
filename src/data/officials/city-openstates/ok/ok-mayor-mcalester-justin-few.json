@@ -1,0 +1,35 @@
+{
+  "id": "justin-few",
+  "name": "Justin Few",
+  "firstName": "Justin",
+  "lastName": "Few",
+  "party": "NP",
+  "level": "city",
+  "position": "Mayor",
+  "district": "Citywide",
+  "jurisdiction": "City of Mcalester, Oklahoma",
+  "county": [],
+  "termStart": "Start date pending source review",
+  "termEnd": "2027-05-01",
+  "contactInfo": {
+    "office": "28 E. Washington Avenue;P.O. Box 578;McAlester, OK 74502",
+    "phone": "918-423-9300",
+    "email": "justin.few@cityofmcalester.com",
+    "website": "https://www.cityofmcalester.com/government/city_council/index.php"
+  },
+  "bio": "Justin Few is listed as mayor of the City of Mcalester, Oklahoma. This RepWatchr starter profile is source-seeded from OpenStates public municipality data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "OK",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.cityofmcalester.com/government/city_council/index.php"
+    },
+    {
+      "title": "OpenStates public municipality record",
+      "url": "https://raw.githubusercontent.com/openstates/people/9d9a7f4a873a7e42cb405af0f6702770f2ae07a7/data/ok/municipalities/Justin-Few-c0362f5f-f819-4f40-8654-ea2fb2f5eb6e.yml"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-02"
+}

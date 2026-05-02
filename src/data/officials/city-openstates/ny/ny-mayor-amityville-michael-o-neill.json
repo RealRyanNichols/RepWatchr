@@ -1,0 +1,35 @@
+{
+  "id": "michael-o-neill",
+  "name": "Michael O'Neill",
+  "firstName": "Michael",
+  "lastName": "O'Neill",
+  "party": "NP",
+  "level": "city",
+  "position": "Mayor",
+  "district": "Citywide",
+  "jurisdiction": "City of Amityville, New York",
+  "county": [],
+  "termStart": "Start date pending source review",
+  "termEnd": "2029-04-22",
+  "contactInfo": {
+    "office": "21 Ireland Place;Amityville, NY 11701",
+    "phone": "631-264-6000",
+    "email": "mayor@amityville.com",
+    "website": "https://www.amityville.gov/175/Mayor"
+  },
+  "bio": "Michael O'Neill is listed as mayor of the City of Amityville, New York. This RepWatchr starter profile is source-seeded from OpenStates public municipality data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "NY",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.amityville.gov/175/Mayor"
+    },
+    {
+      "title": "OpenStates public municipality record",
+      "url": "https://raw.githubusercontent.com/openstates/people/9d9a7f4a873a7e42cb405af0f6702770f2ae07a7/data/ny/municipalities/Michael-ONeill-61d9d8ab-066c-4e19-8112-2b355d62d272.yml"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-02"
+}

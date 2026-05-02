@@ -1,0 +1,35 @@
+{
+  "id": "corey-d-woods",
+  "name": "Corey D. Woods",
+  "firstName": "Corey D.",
+  "lastName": "Woods",
+  "party": "NP",
+  "level": "city",
+  "position": "Mayor",
+  "district": "Citywide",
+  "jurisdiction": "City of Tempe, Arizona",
+  "county": [],
+  "termStart": "Start date pending source review",
+  "termEnd": "2028-07-01",
+  "contactInfo": {
+    "office": "P.O. Box 5002;Tempe, AZ 85280",
+    "phone": "480-350-8793",
+    "email": "Corey_Woods@tempe.gov",
+    "website": "https://www.tempe.gov/government/mayor-and-city-council/corey-d-woods-mayor"
+  },
+  "bio": "Corey D. Woods is listed as mayor of the City of Tempe, Arizona. This RepWatchr starter profile is source-seeded from OpenStates public municipality data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "AZ",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.tempe.gov/government/mayor-and-city-council/corey-d-woods-mayor"
+    },
+    {
+      "title": "OpenStates public municipality record",
+      "url": "https://raw.githubusercontent.com/openstates/people/9d9a7f4a873a7e42cb405af0f6702770f2ae07a7/data/az/municipalities/Corey-D-Woods-978a1abb-5661-43df-8db8-53c63b99e943.yml"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-02"
+}

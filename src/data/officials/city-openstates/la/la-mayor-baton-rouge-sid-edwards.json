@@ -1,0 +1,35 @@
+{
+  "id": "sid-edwards",
+  "name": "Sid Edwards",
+  "firstName": "Sid",
+  "lastName": "Edwards",
+  "party": "R",
+  "level": "city",
+  "position": "Mayor",
+  "district": "Citywide",
+  "jurisdiction": "City of Baton Rouge, Louisiana",
+  "county": [],
+  "termStart": "Start date pending source review",
+  "termEnd": "2028-12-31",
+  "contactInfo": {
+    "office": "222 Saint Louis Street, 3rd Floor;Baton Rouge, LA 70802",
+    "phone": "225-389-3100",
+    "email": "mayor@brla.gov",
+    "website": "https://www.brla.gov/588/Mayor-President"
+  },
+  "bio": "Sid Edwards is listed as mayor of the City of Baton Rouge, Louisiana. This RepWatchr starter profile is source-seeded from OpenStates public municipality data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "LA",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.brla.gov/588/Mayor-President"
+    },
+    {
+      "title": "OpenStates public municipality record",
+      "url": "https://raw.githubusercontent.com/openstates/people/9d9a7f4a873a7e42cb405af0f6702770f2ae07a7/data/la/municipalities/Sid-Edwards-71dada38-c61f-4457-b04a-5fbbbb1a3410.yml"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-02"
+}

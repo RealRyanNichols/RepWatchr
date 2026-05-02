@@ -1,0 +1,35 @@
+{
+  "id": "jonathan-hornik",
+  "name": "Jonathan Hornik",
+  "firstName": "Jonathan",
+  "lastName": "Hornik",
+  "party": "NP",
+  "level": "city",
+  "position": "Mayor",
+  "district": "Citywide",
+  "jurisdiction": "City of Marlboro, New Jersey",
+  "county": [],
+  "termStart": "Start date pending source review",
+  "termEnd": "2027-12-31",
+  "contactInfo": {
+    "office": "1979 Township Drive;Marlboro, NJ 07746",
+    "phone": "732-536-0200",
+    "email": "mayor@marlboro-nj.gov",
+    "website": "https://www.marlboro-nj.gov/Officials/Bio/mayor-jonathan-hornik"
+  },
+  "bio": "Jonathan Hornik is listed as mayor of the City of Marlboro, New Jersey. This RepWatchr starter profile is source-seeded from OpenStates public municipality data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "NJ",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.marlboro-nj.gov/Officials/Bio/mayor-jonathan-hornik"
+    },
+    {
+      "title": "OpenStates public municipality record",
+      "url": "https://raw.githubusercontent.com/openstates/people/9d9a7f4a873a7e42cb405af0f6702770f2ae07a7/data/nj/municipalities/Jonathan-Hornik-64d2afdc-ac82-449a-a4fa-538d22d06931.yml"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-02"
+}

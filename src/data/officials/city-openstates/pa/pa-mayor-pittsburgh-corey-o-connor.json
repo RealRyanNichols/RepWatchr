@@ -1,0 +1,35 @@
+{
+  "id": "corey-o-connor",
+  "name": "Corey O'Connor",
+  "firstName": "Corey",
+  "lastName": "O'Connor",
+  "party": "D",
+  "level": "city",
+  "position": "Mayor",
+  "district": "Citywide",
+  "jurisdiction": "City of Pittsburgh, Pennsylvania",
+  "county": [],
+  "termStart": "Start date pending source review",
+  "termEnd": "2030-01-07",
+  "contactInfo": {
+    "office": "414 Grant Street;Pittsburgh, PA 15219",
+    "phone": "412-255-2626",
+    "email": "corey.oconnor@pittsburghpa.gov",
+    "website": "https://pittsburghpa.gov/mayor/"
+  },
+  "bio": "Corey O'Connor is listed as mayor of the City of Pittsburgh, Pennsylvania. This RepWatchr starter profile is source-seeded from OpenStates public municipality data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "PA",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://pittsburghpa.gov/mayor/"
+    },
+    {
+      "title": "OpenStates public municipality record",
+      "url": "https://raw.githubusercontent.com/openstates/people/9d9a7f4a873a7e42cb405af0f6702770f2ae07a7/data/pa/municipalities/Corey-OConnor-1fdf1e77-cd77-4544-9d20-f8b288c392ba.yml"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-02"
+}

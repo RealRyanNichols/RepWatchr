@@ -1,0 +1,35 @@
+{
+  "id": "brandon-m-scott",
+  "name": "Brandon M. Scott",
+  "firstName": "Brandon M",
+  "lastName": "Scott",
+  "party": "NP",
+  "level": "city",
+  "position": "Mayor",
+  "district": "Citywide",
+  "jurisdiction": "City of Baltimore, Maryland",
+  "county": [],
+  "termStart": "Start date pending source review",
+  "termEnd": "2028-12-05",
+  "contactInfo": {
+    "office": "City Hall, Room 250, 100 N. Holliday St.;Baltimore, MD 21202",
+    "phone": "410-545-0778",
+    "email": "mayor@baltimorecity.gov",
+    "website": "https://mayor.baltimorecity.gov/contact-mayor"
+  },
+  "bio": "Brandon M. Scott is listed as mayor of the City of Baltimore, Maryland. This RepWatchr starter profile is source-seeded from OpenStates public municipality data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "MD",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://mayor.baltimorecity.gov/contact-mayor"
+    },
+    {
+      "title": "OpenStates public municipality record",
+      "url": "https://raw.githubusercontent.com/openstates/people/9d9a7f4a873a7e42cb405af0f6702770f2ae07a7/data/md/municipalities/Brandon-M-Scott-98c19d50-0fac-42df-9cf5-26ee79b0c5a9.yml"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-02"
+}

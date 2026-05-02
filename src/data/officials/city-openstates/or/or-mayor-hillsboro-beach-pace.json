@@ -1,0 +1,30 @@
+{
+  "id": "beach-pace",
+  "name": "Beach Pace",
+  "firstName": "Beach",
+  "lastName": "Pace",
+  "party": "NP",
+  "level": "city",
+  "position": "Mayor",
+  "district": "Citywide",
+  "jurisdiction": "City of Hillsboro, Oregon",
+  "county": [],
+  "termStart": "Start date pending source review",
+  "termEnd": "2029-12-31",
+  "contactInfo": {
+    "office": "150 E. Main Street;Hillsboro, OR 97123-4028",
+    "phone": "503-681-6219",
+    "email": "beach.pace@hillsboro-oregon.gov"
+  },
+  "bio": "Beach Pace is listed as mayor of the City of Hillsboro, Oregon. This RepWatchr starter profile is source-seeded from OpenStates public municipality data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "OR",
+  "sourceLinks": [
+    {
+      "title": "OpenStates public municipality record",
+      "url": "https://raw.githubusercontent.com/openstates/people/9d9a7f4a873a7e42cb405af0f6702770f2ae07a7/data/or/municipalities/Beach-Pace-d2582dd2-a5a5-4867-915c-eaef8ec58066.yml"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-02"
+}

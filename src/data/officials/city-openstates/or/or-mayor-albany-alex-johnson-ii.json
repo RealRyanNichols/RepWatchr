@@ -1,0 +1,35 @@
+{
+  "id": "alex-johnson-ii",
+  "name": "Alex Johnson II",
+  "firstName": "Alex",
+  "lastName": "Johnson",
+  "party": "NP",
+  "level": "city",
+  "position": "Mayor",
+  "district": "Citywide",
+  "jurisdiction": "City of Albany, Oregon",
+  "county": [],
+  "termStart": "Start date pending source review",
+  "termEnd": "2026-12-31",
+  "contactInfo": {
+    "office": "632 35th Avenue SE;Albany, OR 97321",
+    "phone": "541-791-0300",
+    "email": "alex.johnson@cityofalbany.net",
+    "website": "https://www.cityofalbany.net/"
+  },
+  "bio": "Alex Johnson II is listed as mayor of the City of Albany, Oregon. This RepWatchr starter profile is source-seeded from OpenStates public municipality data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "OR",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.cityofalbany.net/"
+    },
+    {
+      "title": "OpenStates public municipality record",
+      "url": "https://raw.githubusercontent.com/openstates/people/9d9a7f4a873a7e42cb405af0f6702770f2ae07a7/data/or/municipalities/Alex-Johnson-II-14ba6695-6f70-4d94-90af-d47893d67bdf.yml"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-02"
+}

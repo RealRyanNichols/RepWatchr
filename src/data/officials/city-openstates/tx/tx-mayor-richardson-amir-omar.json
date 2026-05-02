@@ -1,0 +1,35 @@
+{
+  "id": "amir-omar",
+  "name": "Amir Omar",
+  "firstName": "Amir",
+  "lastName": "Omar",
+  "party": "NP",
+  "level": "city",
+  "position": "Mayor",
+  "district": "Citywide",
+  "jurisdiction": "City of Richardson, Texas",
+  "county": [],
+  "termStart": "Start date pending source review",
+  "termEnd": "2027-05-31",
+  "contactInfo": {
+    "office": "411 W. Arapaho Road;Richardson, TX 75080",
+    "phone": "972-744-4203",
+    "email": "Amir.Omar@cor.gov",
+    "website": "https://www.cor.net/government/city-council/who-are-our-city-council-members/amir-omar"
+  },
+  "bio": "Amir Omar is listed as mayor of the City of Richardson, Texas. This RepWatchr starter profile is source-seeded from OpenStates public municipality data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "TX",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.cor.net/government/city-council/who-are-our-city-council-members/amir-omar"
+    },
+    {
+      "title": "OpenStates public municipality record",
+      "url": "https://raw.githubusercontent.com/openstates/people/9d9a7f4a873a7e42cb405af0f6702770f2ae07a7/data/tx/municipalities/Amir-Omar-455824a2-1992-469e-97b0-76fc9c80304a.yml"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-02"
+}

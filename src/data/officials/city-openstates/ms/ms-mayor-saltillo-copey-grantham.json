@@ -1,0 +1,35 @@
+{
+  "id": "copey-grantham",
+  "name": "Copey Grantham",
+  "firstName": "Copey",
+  "lastName": "Grantham",
+  "party": "NP",
+  "level": "city",
+  "position": "Mayor",
+  "district": "Citywide",
+  "jurisdiction": "City of Saltillo, Mississippi",
+  "county": [],
+  "termStart": "Start date pending source review",
+  "termEnd": "2029-07-01",
+  "contactInfo": {
+    "office": "395 Mobile St;Saltillo, MS 38866",
+    "phone": "662-871-4021",
+    "email": "mayor@saltilloms.org",
+    "website": "http://www.saltilloms.org/contact-us/"
+  },
+  "bio": "Copey Grantham is listed as mayor of the City of Saltillo, Mississippi. This RepWatchr starter profile is source-seeded from OpenStates public municipality data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "MS",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "http://www.saltilloms.org/contact-us/"
+    },
+    {
+      "title": "OpenStates public municipality record",
+      "url": "https://raw.githubusercontent.com/openstates/people/9d9a7f4a873a7e42cb405af0f6702770f2ae07a7/data/ms/municipalities/Copey-Grantham-b080bd99-3b3f-41d3-84e9-356c3ae45cf6.yml"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-02"
+}

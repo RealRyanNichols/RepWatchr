@@ -1,0 +1,35 @@
+{
+  "id": "jake-woodford",
+  "name": "Jake Woodford",
+  "firstName": "Jake",
+  "lastName": "Woodford",
+  "party": "NP",
+  "level": "city",
+  "position": "Mayor",
+  "district": "Citywide",
+  "jurisdiction": "City of Appleton, Wisconsin",
+  "county": [],
+  "termStart": "Start date pending source review",
+  "termEnd": "2028-04-15",
+  "contactInfo": {
+    "office": "100 N. Appleton Street;Appleton, WI 54911-4799",
+    "phone": "920-832-6400",
+    "email": "mayor@appleton.org",
+    "website": "https://www.appleton.org/government/mayor-s-office/contact-us"
+  },
+  "bio": "Jake Woodford is listed as mayor of the City of Appleton, Wisconsin. This RepWatchr starter profile is source-seeded from OpenStates public municipality data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "WI",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.appleton.org/government/mayor-s-office/contact-us"
+    },
+    {
+      "title": "OpenStates public municipality record",
+      "url": "https://raw.githubusercontent.com/openstates/people/9d9a7f4a873a7e42cb405af0f6702770f2ae07a7/data/wi/municipalities/Jake-Woodford-2f2c00c0-a0cc-4c1b-989b-8c1167c337e2.yml"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-02"
+}

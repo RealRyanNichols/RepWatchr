@@ -1,0 +1,39 @@
+{
+  "id": "steve-hogan",
+  "name": "Steve Hogan",
+  "firstName": "Steve",
+  "lastName": "Hogan",
+  "party": "NP",
+  "level": "city",
+  "position": "Mayor",
+  "district": "Citywide",
+  "jurisdiction": "City of Camas, Washington",
+  "county": [],
+  "termStart": "Start date pending source review",
+  "termEnd": "2027-12-31",
+  "contactInfo": {
+    "office": "616 NE 4th Avenue;Camas, WA 98607",
+    "phone": "360-834-6864",
+    "email": "shogan@cityofcamas.us",
+    "website": "https://www.cityofcamas.us/mayor/page/mayor-steve-hogan"
+  },
+  "bio": "Steve Hogan is listed as mayor of the City of Camas, Washington. This RepWatchr starter profile is source-seeded from OpenStates public municipality data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "WA",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.cityofcamas.us/mayor/page/mayor-steve-hogan"
+    },
+    {
+      "title": "OpenStates public municipality record",
+      "url": "https://raw.githubusercontent.com/openstates/people/9d9a7f4a873a7e42cb405af0f6702770f2ae07a7/data/wa/municipalities/Steve-Hogan-32b9ba2c-3395-4193-926f-44a7de9e4108.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.cityofcamas.us/mayor"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-02"
+}

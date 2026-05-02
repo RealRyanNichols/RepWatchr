@@ -1,0 +1,35 @@
+{
+  "id": "eugene-escobar-jr",
+  "name": "Eugene Escobar Jr",
+  "firstName": "Eugene",
+  "lastName": "Escobar",
+  "party": "NP",
+  "level": "city",
+  "position": "Mayor",
+  "district": "Citywide",
+  "jurisdiction": "City of Princeton, Texas",
+  "county": [],
+  "termStart": "Start date pending source review",
+  "termEnd": "2029-01-30",
+  "contactInfo": {
+    "office": "2000 E Princeton Drive;Princeton, TX 75407",
+    "phone": "972-734-2416",
+    "email": "Eescobar@princetontx.us",
+    "website": "https://princetontx.gov/721/Office-of-the-Mayor"
+  },
+  "bio": "Eugene Escobar Jr is listed as mayor of the City of Princeton, Texas. This RepWatchr starter profile is source-seeded from OpenStates public municipality data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "TX",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://princetontx.gov/721/Office-of-the-Mayor"
+    },
+    {
+      "title": "OpenStates public municipality record",
+      "url": "https://raw.githubusercontent.com/openstates/people/9d9a7f4a873a7e42cb405af0f6702770f2ae07a7/data/tx/municipalities/Eugene-Escobar-Jr-c50a51f7-6d66-4326-bcb9-09872006a5f4.yml"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-02"
+}

@@ -1,0 +1,33 @@
+{
+  "id": "michael-ceci",
+  "name": "Michael Ceci",
+  "firstName": "Michael",
+  "lastName": "Ceci",
+  "party": "D",
+  "level": "city",
+  "position": "Mayor",
+  "district": "Citywide",
+  "jurisdiction": "City of Aldan, Pennsylvania",
+  "county": [],
+  "termStart": "Start date pending source review",
+  "termEnd": "2029-12-31",
+  "contactInfo": {
+    "office": "1 W Providence Rd;Aldan, PA 19018",
+    "website": "https://www.aldanpa.gov/borough-government"
+  },
+  "bio": "Michael Ceci is listed as mayor of the City of Aldan, Pennsylvania. This RepWatchr starter profile is source-seeded from OpenStates public municipality data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "PA",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.aldanpa.gov/borough-government"
+    },
+    {
+      "title": "OpenStates public municipality record",
+      "url": "https://raw.githubusercontent.com/openstates/people/9d9a7f4a873a7e42cb405af0f6702770f2ae07a7/data/pa/municipalities/Michael-Ceci-a989eb13-285e-49a0-9cba-2d09f9506133.yml"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-02"
+}

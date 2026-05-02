@@ -1,0 +1,30 @@
+{
+  "id": "kenneth-hopkins",
+  "name": "Kenneth Hopkins",
+  "firstName": "Kenneth",
+  "lastName": "Hopkins",
+  "party": "NP",
+  "level": "city",
+  "position": "Mayor",
+  "district": "Citywide",
+  "jurisdiction": "City of Cranston, Rhode Island",
+  "county": [],
+  "termStart": "Start date pending source review",
+  "termEnd": "2029-01-01",
+  "contactInfo": {
+    "office": "869 Park Avenue;Cranston, RI 02910",
+    "phone": "401-780-3110",
+    "email": "khopkins@cranstonri.org"
+  },
+  "bio": "Kenneth Hopkins is listed as mayor of the City of Cranston, Rhode Island. This RepWatchr starter profile is source-seeded from OpenStates public municipality data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "RI",
+  "sourceLinks": [
+    {
+      "title": "OpenStates public municipality record",
+      "url": "https://raw.githubusercontent.com/openstates/people/9d9a7f4a873a7e42cb405af0f6702770f2ae07a7/data/ri/municipalities/Kenneth-Hopkins-c285e6ef-cd26-42b1-89dc-56bb29cf1fd0.yml"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-02"
+}

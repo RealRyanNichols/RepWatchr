@@ -1,0 +1,41 @@
+{
+  "id": "armondo-pavone",
+  "name": "Armondo Pavone",
+  "firstName": "Armondo",
+  "lastName": "Pavone",
+  "party": "NP",
+  "level": "city",
+  "position": "Mayor",
+  "district": "Citywide",
+  "jurisdiction": "City of Renton, Washington",
+  "county": [],
+  "termStart": "2020-01-01",
+  "termEnd": "2028-01-01",
+  "contactInfo": {
+    "office": "1055 S. Grady Way;Renton, WA 98057",
+    "phone": "425-430-6500",
+    "email": "mayor@rentonwa.gov",
+    "website": "https://www.rentonwa.gov/Government/Mayor",
+    "socialMedia": {
+      "x": "https://x.com/CityofRenton",
+      "twitter": "https://x.com/CityofRenton",
+      "facebook": "https://facebook.com/CityofRenton",
+      "instagram": "https://instagram.com/cityofrenton"
+    }
+  },
+  "bio": "Armondo Pavone is listed as mayor of the City of Renton, Washington. This RepWatchr starter profile is source-seeded from OpenStates public municipality data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "WA",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.rentonwa.gov/Government/Mayor"
+    },
+    {
+      "title": "OpenStates public municipality record",
+      "url": "https://raw.githubusercontent.com/openstates/people/9d9a7f4a873a7e42cb405af0f6702770f2ae07a7/data/wa/municipalities/Armondo-Pavone-d0bd9711-d623-404b-8808-3184995f7db8.yml"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-02"
+}

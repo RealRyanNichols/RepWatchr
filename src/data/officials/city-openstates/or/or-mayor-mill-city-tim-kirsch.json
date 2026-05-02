@@ -1,0 +1,35 @@
+{
+  "id": "tim-kirsch",
+  "name": "Tim Kirsch",
+  "firstName": "Tim",
+  "lastName": "Kirsch",
+  "party": "NP",
+  "level": "city",
+  "position": "Mayor",
+  "district": "Citywide",
+  "jurisdiction": "City of Mill City, Oregon",
+  "county": [],
+  "termStart": "Start date pending source review",
+  "termEnd": "2026-12-31",
+  "contactInfo": {
+    "office": "444 S 1st Avenue;Mill City, OR 97360",
+    "phone": "503-897-2302",
+    "email": "tkirsch@ci.mill-city.or.us",
+    "website": "http://www.ci.mill-city.or.us/departments/office-of-the-mayor"
+  },
+  "bio": "Tim Kirsch is listed as mayor of the City of Mill City, Oregon. This RepWatchr starter profile is source-seeded from OpenStates public municipality data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "OR",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "http://www.ci.mill-city.or.us/departments/office-of-the-mayor"
+    },
+    {
+      "title": "OpenStates public municipality record",
+      "url": "https://raw.githubusercontent.com/openstates/people/9d9a7f4a873a7e42cb405af0f6702770f2ae07a7/data/or/municipalities/Tim-Kirsch-6d62ce92-42fd-45ea-a7b9-2874e9a81659.yml"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-02"
+}

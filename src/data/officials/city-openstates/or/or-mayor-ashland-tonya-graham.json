@@ -1,0 +1,42 @@
+{
+  "id": "tonya-graham",
+  "name": "Tonya Graham",
+  "firstName": "Tonya",
+  "lastName": "Graham",
+  "photo": "/images/officials/city-openstates/or/tonya-graham.jpg",
+  "photoSourceUrl": "https://ashlandoregon.gov/ImageRepository/Document?documentID=881",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "NP",
+  "level": "city",
+  "position": "Mayor",
+  "district": "Citywide",
+  "jurisdiction": "City of Ashland, Oregon",
+  "county": [],
+  "termStart": "Start date pending source review",
+  "termEnd": "2028-12-30",
+  "contactInfo": {
+    "office": "20 East Main St;Ashland, OR 97520",
+    "phone": "541-488-6002",
+    "email": "tonya.graham@council.ashlandoregon.gov",
+    "website": "http://www.ashland.or.us/contactus.asp"
+  },
+  "bio": "Tonya Graham is listed as mayor of the City of Ashland, Oregon. This RepWatchr starter profile is source-seeded from OpenStates public municipality data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "OR",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "http://www.ashland.or.us/contactus.asp"
+    },
+    {
+      "title": "OpenStates public municipality record",
+      "url": "https://raw.githubusercontent.com/openstates/people/9d9a7f4a873a7e42cb405af0f6702770f2ae07a7/data/or/municipalities/Tonya-Graham-e8b5f719-a64a-4991-82bd-476fb4c0c600.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://ashlandoregon.gov/ImageRepository/Document?documentID=881"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-02"
+}

@@ -1,0 +1,35 @@
+{
+  "id": "ashley-curry",
+  "name": "Ashley Curry",
+  "firstName": "Ashley",
+  "lastName": "Curry",
+  "party": "NP",
+  "level": "city",
+  "position": "Mayor",
+  "district": "Citywide",
+  "jurisdiction": "City of Vestavia Hills, Alabama",
+  "county": [],
+  "termStart": "Start date pending source review",
+  "termEnd": "2029-11-03",
+  "contactInfo": {
+    "office": "1032 Montgomery Hwy;Vestavia Hills, AL 35216",
+    "phone": "205-978-0130",
+    "email": "acurry@vhal.org",
+    "website": "https://vhal.org/government/city-leadership-2/"
+  },
+  "bio": "Ashley Curry is listed as mayor of the City of Vestavia Hills, Alabama. This RepWatchr starter profile is source-seeded from OpenStates public municipality data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "AL",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://vhal.org/government/city-leadership-2/"
+    },
+    {
+      "title": "OpenStates public municipality record",
+      "url": "https://raw.githubusercontent.com/openstates/people/9d9a7f4a873a7e42cb405af0f6702770f2ae07a7/data/al/municipalities/Ashley-Curry-fd10a8b5-e5f4-4978-b8ec-d0127d781804.yml"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-02"
+}

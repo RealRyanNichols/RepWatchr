@@ -1,0 +1,47 @@
+{
+  "id": "mike-rosen",
+  "name": "Mike Rosen",
+  "firstName": "Mike",
+  "lastName": "Rosen",
+  "photo": "/images/officials/city-openstates/wa/mike-rosen.jpg",
+  "photoSourceUrl": "https://cdnsm5-hosted.civiclive.com/UserFiles/Servers/Server_16494932/Image/Government/Departments/Mayor's%20Office/Mike%20Rosen%20for%20website.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "NP",
+  "level": "city",
+  "position": "Mayor",
+  "district": "Citywide",
+  "jurisdiction": "City of Edmonds, Washington",
+  "county": [],
+  "termStart": "2024-01-01",
+  "termEnd": "2027-12-31",
+  "contactInfo": {
+    "office": "121 Fifth Avenue North;3rd floor;Edmonds, WA 98020",
+    "phone": "425-771-0246",
+    "email": "mike.rosen@edmondswa.gov",
+    "website": "https://www.edmondswa.gov/government/departments/mayors_office",
+    "socialMedia": {
+      "x": "https://x.com/waedmonds",
+      "twitter": "https://x.com/waedmonds",
+      "facebook": "https://facebook.com/cityofedmonds"
+    }
+  },
+  "bio": "Mike Rosen is listed as mayor of the City of Edmonds, Washington. This RepWatchr starter profile is source-seeded from OpenStates public municipality data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "WA",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.edmondswa.gov/government/departments/mayors_office"
+    },
+    {
+      "title": "OpenStates public municipality record",
+      "url": "https://raw.githubusercontent.com/openstates/people/9d9a7f4a873a7e42cb405af0f6702770f2ae07a7/data/wa/municipalities/Mike-Rosen-e4f8740a-65ee-4b11-b5d7-0829a94de841.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://cdnsm5-hosted.civiclive.com/UserFiles/Servers/Server_16494932/Image/Government/Departments/Mayor's%20Office/Mike%20Rosen%20for%20website.jpg"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-02"
+}

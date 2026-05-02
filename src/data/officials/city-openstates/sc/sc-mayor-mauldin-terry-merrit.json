@@ -1,0 +1,35 @@
+{
+  "id": "terry-merrit",
+  "name": "Terry Merrit",
+  "firstName": "Terry",
+  "lastName": "Merrit",
+  "party": "NP",
+  "level": "city",
+  "position": "Mayor",
+  "district": "Citywide",
+  "jurisdiction": "City of Mauldin, South Carolina",
+  "county": [],
+  "termStart": "Start date pending source review",
+  "termEnd": "2027-12-31",
+  "contactInfo": {
+    "office": "P.O. Box 249;Mauldin, SC 29662",
+    "phone": "864-289-8892",
+    "email": "tmerritt@mauldincitysc.com",
+    "website": "https://cityofmauldin.org/your-government/meet-your-mayor/"
+  },
+  "bio": "Terry Merrit is listed as mayor of the City of Mauldin, South Carolina. This RepWatchr starter profile is source-seeded from OpenStates public municipality data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "SC",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://cityofmauldin.org/your-government/meet-your-mayor/"
+    },
+    {
+      "title": "OpenStates public municipality record",
+      "url": "https://raw.githubusercontent.com/openstates/people/9d9a7f4a873a7e42cb405af0f6702770f2ae07a7/data/sc/municipalities/Terry-Merrit-dd311286-f5ad-4947-ae7f-28bea9766452.yml"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-02"
+}

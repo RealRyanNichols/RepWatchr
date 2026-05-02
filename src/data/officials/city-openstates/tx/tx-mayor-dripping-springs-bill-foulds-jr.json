@@ -1,0 +1,39 @@
+{
+  "id": "bill-foulds-jr",
+  "name": "Bill Foulds Jr.",
+  "firstName": "Bill",
+  "lastName": "Foulds",
+  "party": "NP",
+  "level": "city",
+  "position": "Mayor",
+  "district": "Citywide",
+  "jurisdiction": "City of Dripping Springs, Texas",
+  "county": [],
+  "termStart": "Start date pending source review",
+  "termEnd": "2026-05-02",
+  "contactInfo": {
+    "office": "511 Mercer Street;Dripping Springs, TX 78620",
+    "phone": "512-858-4725",
+    "email": "bfoulds@cityofdrippingsprings.com",
+    "website": "https://www.cityofdrippingsprings.com/city-council/pages/meet-city-council"
+  },
+  "bio": "Bill Foulds Jr. is listed as mayor of the City of Dripping Springs, Texas. This RepWatchr starter profile is source-seeded from OpenStates public municipality data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "TX",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.cityofdrippingsprings.com/city-council/pages/meet-city-council"
+    },
+    {
+      "title": "OpenStates public municipality record",
+      "url": "https://raw.githubusercontent.com/openstates/people/9d9a7f4a873a7e42cb405af0f6702770f2ae07a7/data/tx/municipalities/Bill-Foulds-Jr-e025ce75-3360-45fe-8899-de32d8d71322.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.cityofdrippingsprings.com/people/bill-foulds-jr"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-02"
+}

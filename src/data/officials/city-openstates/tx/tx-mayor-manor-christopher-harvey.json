@@ -1,0 +1,39 @@
+{
+  "id": "christopher-harvey",
+  "name": "Christopher Harvey",
+  "firstName": "Christopher",
+  "lastName": "Harvey",
+  "party": "NP",
+  "level": "city",
+  "position": "Mayor",
+  "district": "Citywide",
+  "jurisdiction": "City of Manor, Texas",
+  "county": [],
+  "termStart": "Start date pending source review",
+  "termEnd": "2028-11-01",
+  "contactInfo": {
+    "office": "105 E. Eggleston St.;P.O. Box 387;Manor, TX 78653",
+    "phone": "512-272-5555",
+    "email": "drcjharvey@manortx.gov",
+    "website": "https://www.manortx.gov/173/City-Council"
+  },
+  "bio": "Christopher Harvey is listed as mayor of the City of Manor, Texas. This RepWatchr starter profile is source-seeded from OpenStates public municipality data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "TX",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.manortx.gov/173/City-Council"
+    },
+    {
+      "title": "OpenStates public municipality record",
+      "url": "https://raw.githubusercontent.com/openstates/people/9d9a7f4a873a7e42cb405af0f6702770f2ae07a7/data/tx/municipalities/Christopher-Harvey-bac44b63-7be2-4aed-be7b-52a0b95e2948.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.manortx.gov/directory.aspx?eid=50"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-02"
+}

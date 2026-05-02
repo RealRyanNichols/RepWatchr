@@ -1,0 +1,35 @@
+{
+  "id": "kristie-s-overson",
+  "name": "Kristie S. Overson",
+  "firstName": "Kristie",
+  "lastName": "Overson",
+  "party": "NP",
+  "level": "city",
+  "position": "Mayor",
+  "district": "Citywide",
+  "jurisdiction": "City of Taylorsville, Utah",
+  "county": [],
+  "termStart": "Start date pending source review",
+  "termEnd": "2030-01-01",
+  "contactInfo": {
+    "office": "2600 Taylorsville Blvd;Taylorsville, UT 84129",
+    "phone": "801-963-5400",
+    "email": "koverson@taylorsvilleut.gov",
+    "website": "https://www.taylorsvilleut.gov/government/elected-officials/mayor"
+  },
+  "bio": "Kristie S. Overson is listed as mayor of the City of Taylorsville, Utah. This RepWatchr starter profile is source-seeded from OpenStates public municipality data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "UT",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.taylorsvilleut.gov/government/elected-officials/mayor"
+    },
+    {
+      "title": "OpenStates public municipality record",
+      "url": "https://raw.githubusercontent.com/openstates/people/9d9a7f4a873a7e42cb405af0f6702770f2ae07a7/data/ut/municipalities/Kristie-S-Overson-54576cb6-f8bb-4cc3-bc23-d7011e598d06.yml"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-02"
+}

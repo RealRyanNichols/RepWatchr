@@ -1,0 +1,34 @@
+{
+  "id": "van-r-johnson-ii",
+  "name": "Van R. Johnson II",
+  "firstName": "Van",
+  "lastName": "Johnson",
+  "party": "D",
+  "level": "city",
+  "position": "Mayor",
+  "district": "Citywide",
+  "jurisdiction": "City of Savannah, Georgia",
+  "county": [],
+  "termStart": "Start date pending source review",
+  "termEnd": "2028-01-01",
+  "contactInfo": {
+    "office": "2 East Bay Street;Savannah, GA 31401",
+    "phone": "912-651-6444",
+    "website": "https://www.savannahga.gov/388/Office-of-the-Mayor"
+  },
+  "bio": "Van R. Johnson II is listed as mayor of the City of Savannah, Georgia. This RepWatchr starter profile is source-seeded from OpenStates public municipality data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "GA",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.savannahga.gov/388/Office-of-the-Mayor"
+    },
+    {
+      "title": "OpenStates public municipality record",
+      "url": "https://raw.githubusercontent.com/openstates/people/9d9a7f4a873a7e42cb405af0f6702770f2ae07a7/data/ga/municipalities/Van-R-Johnson-II-31ddbce1-fe21-4dc6-a741-47a145ff3148.yml"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-02"
+}

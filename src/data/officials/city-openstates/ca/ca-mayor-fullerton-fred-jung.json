@@ -1,0 +1,35 @@
+{
+  "id": "fred-jung",
+  "name": "Fred Jung",
+  "firstName": "Fred",
+  "lastName": "Jung",
+  "party": "NP",
+  "level": "city",
+  "position": "Mayor",
+  "district": "Citywide",
+  "jurisdiction": "City of Fullerton, California",
+  "county": [],
+  "termStart": "Start date pending source review",
+  "termEnd": "2028-12-31",
+  "contactInfo": {
+    "office": "303 W Commonwealth Ave;Fullerton, CA 92832",
+    "phone": "714-738-6300",
+    "email": "fred.jung@cityoffullerton.com",
+    "website": "https://www.cityoffullerton.com/government/city-council/mayor-fred-jung"
+  },
+  "bio": "Fred Jung is listed as mayor of the City of Fullerton, California. This RepWatchr starter profile is source-seeded from OpenStates public municipality data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "CA",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.cityoffullerton.com/government/city-council/mayor-fred-jung"
+    },
+    {
+      "title": "OpenStates public municipality record",
+      "url": "https://raw.githubusercontent.com/openstates/people/9d9a7f4a873a7e42cb405af0f6702770f2ae07a7/data/ca/municipalities/Fred-Jung-19273565-048a-4a53-a61b-b04b8ccfaefc.yml"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-02"
+}

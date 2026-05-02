@@ -1,0 +1,34 @@
+{
+  "id": "robert-bell",
+  "name": "Robert Bell",
+  "firstName": "Robert",
+  "lastName": "Bell",
+  "party": "D",
+  "level": "city",
+  "position": "Mayor",
+  "district": "Citywide",
+  "jurisdiction": "City of Greensburg, Pennsylvania",
+  "county": [],
+  "termStart": "Start date pending source review",
+  "termEnd": "2028-01-02",
+  "contactInfo": {
+    "office": "416 S. Main Street;Greensburg, PA 15601",
+    "phone": "724-838-4324",
+    "website": "https://www.greensburgpa.org/people/robert-l-bell"
+  },
+  "bio": "Robert Bell is listed as mayor of the City of Greensburg, Pennsylvania. This RepWatchr starter profile is source-seeded from OpenStates public municipality data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "PA",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.greensburgpa.org/people/robert-l-bell"
+    },
+    {
+      "title": "OpenStates public municipality record",
+      "url": "https://raw.githubusercontent.com/openstates/people/9d9a7f4a873a7e42cb405af0f6702770f2ae07a7/data/pa/municipalities/Robert-Bell-30ea2d63-a6e7-4d89-b062-6523840ff3d4.yml"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-02"
+}

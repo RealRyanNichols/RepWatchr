@@ -1,0 +1,35 @@
+{
+  "id": "barry-truchil",
+  "name": "Barry Truchil",
+  "firstName": "Barry",
+  "lastName": "Truchil",
+  "party": "D",
+  "level": "city",
+  "position": "Mayor",
+  "district": "Citywide",
+  "jurisdiction": "City of Langhorne, Pennsylvania",
+  "county": [],
+  "termStart": "Start date pending source review",
+  "termEnd": "2030-01-06",
+  "contactInfo": {
+    "office": "114 E. Maple Avenue;Langhorne, PA 19047",
+    "phone": "215-752-1200",
+    "email": "btruchil@langhorneboro.com",
+    "website": "https://www.langhorneboro.com/mayor"
+  },
+  "bio": "Barry Truchil is listed as mayor of the City of Langhorne, Pennsylvania. This RepWatchr starter profile is source-seeded from OpenStates public municipality data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "PA",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.langhorneboro.com/mayor"
+    },
+    {
+      "title": "OpenStates public municipality record",
+      "url": "https://raw.githubusercontent.com/openstates/people/9d9a7f4a873a7e42cb405af0f6702770f2ae07a7/data/pa/municipalities/Barry-Truchil-9349e9b0-55e5-426c-9b42-0c23666a2cc5.yml"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-02"
+}

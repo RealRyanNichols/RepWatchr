@@ -1,0 +1,35 @@
+{
+  "id": "rick-stopfer",
+  "name": "Rick Stopfer",
+  "firstName": "Rick",
+  "lastName": "Stopfer",
+  "party": "NP",
+  "level": "city",
+  "position": "Mayor",
+  "district": "Citywide",
+  "jurisdiction": "City of Irving, Texas",
+  "county": [],
+  "termStart": "Start date pending source review",
+  "termEnd": "2026-05-02",
+  "contactInfo": {
+    "office": "825 W Irving Boulevard;Irving, TX 75060",
+    "phone": "972-721-2410",
+    "email": "mayor@cityofirving.org",
+    "website": "https://www.cityofirving.org/FormCenter/Customer-Questions-and-Concerns-8/Customer-Questions-and-Concerns-Form-55"
+  },
+  "bio": "Rick Stopfer is listed as mayor of the City of Irving, Texas. This RepWatchr starter profile is source-seeded from OpenStates public municipality data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "TX",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.cityofirving.org/FormCenter/Customer-Questions-and-Concerns-8/Customer-Questions-and-Concerns-Form-55"
+    },
+    {
+      "title": "OpenStates public municipality record",
+      "url": "https://raw.githubusercontent.com/openstates/people/9d9a7f4a873a7e42cb405af0f6702770f2ae07a7/data/tx/municipalities/Rick-Stopfer-52ffb6dd-053d-42ba-91fd-719a46d13364.yml"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-02"
+}

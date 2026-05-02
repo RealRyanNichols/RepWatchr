@@ -1,0 +1,35 @@
+{
+  "id": "guynn-savage",
+  "name": "Guynn Savage",
+  "firstName": "Guynn",
+  "lastName": "Savage",
+  "party": "NP",
+  "level": "city",
+  "position": "Mayor",
+  "district": "Citywide",
+  "jurisdiction": "City of Fort Mill, South Carolina",
+  "county": [],
+  "termStart": "Start date pending source review",
+  "termEnd": "2028-01-01",
+  "contactInfo": {
+    "office": "205 N. White Street;Fort Mill, SC 29715",
+    "phone": "803-547-2116",
+    "email": "gsavage@fortmillsc.gov",
+    "website": "https://fortmillsc.gov/240/Mayors-Office"
+  },
+  "bio": "Guynn Savage is listed as mayor of the City of Fort Mill, South Carolina. This RepWatchr starter profile is source-seeded from OpenStates public municipality data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "SC",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://fortmillsc.gov/240/Mayors-Office"
+    },
+    {
+      "title": "OpenStates public municipality record",
+      "url": "https://raw.githubusercontent.com/openstates/people/9d9a7f4a873a7e42cb405af0f6702770f2ae07a7/data/sc/municipalities/Guynn-Savage-b4e21b4c-ea16-4ca0-ae7b-7cc834c80bc0.yml"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-02"
+}

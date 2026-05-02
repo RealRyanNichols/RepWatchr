@@ -1,0 +1,48 @@
+{
+  "id": "katie-b-wilson",
+  "name": "Katie B. Wilson",
+  "firstName": "Katie",
+  "lastName": "Wilson",
+  "photo": "/images/officials/city-openstates/wa/katie-b-wilson.jpg",
+  "photoSourceUrl": "https://www.seattle.gov/images//images/MayorWilson/About-Mayor-Wilson-635x250.png",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "NP",
+  "level": "city",
+  "position": "Mayor",
+  "district": "Citywide",
+  "jurisdiction": "City of Seattle, Washington",
+  "county": [],
+  "termStart": "2026-01-01",
+  "termEnd": "2029-12-31",
+  "contactInfo": {
+    "office": "P.O. Box 94749;Seattle, WA 98124-4749",
+    "phone": "206-684-4000",
+    "email": "katie.wilson@seattle.gov",
+    "website": "https://www.seattle.gov/mayor/about-the-mayor",
+    "socialMedia": {
+      "x": "https://x.com/mayorofseattle",
+      "twitter": "https://x.com/mayorofseattle",
+      "facebook": "https://facebook.com/MayorofSeattle",
+      "instagram": "https://instagram.com/mayorofseattle"
+    }
+  },
+  "bio": "Katie B. Wilson is listed as mayor of the City of Seattle, Washington. This RepWatchr starter profile is source-seeded from OpenStates public municipality data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "WA",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.seattle.gov/mayor/about-the-mayor"
+    },
+    {
+      "title": "OpenStates public municipality record",
+      "url": "https://raw.githubusercontent.com/openstates/people/9d9a7f4a873a7e42cb405af0f6702770f2ae07a7/data/wa/municipalities/Katie-Wilson-afc4b599-0d58-4c0e-8895-c2fbb9c2af65.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://www.seattle.gov/images//images/MayorWilson/About-Mayor-Wilson-635x250.png"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-02"
+}

@@ -1,0 +1,49 @@
+{
+  "id": "jerrilea-crawford",
+  "name": "Jerrilea Crawford",
+  "firstName": "Jerrilea",
+  "lastName": "Crawford",
+  "photo": "/images/officials/city-openstates/wa/jerrilea-crawford.jpg",
+  "photoSourceUrl": "https://www.eastwenatcheewa.gov/ImageRepository/Document?documentID=265",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "NP",
+  "level": "city",
+  "position": "Mayor",
+  "district": "Citywide",
+  "jurisdiction": "City of East Wenatchee, Washington",
+  "county": [],
+  "termStart": "Start date pending source review",
+  "termEnd": "2027-12-31",
+  "contactInfo": {
+    "office": "271 9th Street NE;East Wenatchee, WA 98802",
+    "phone": "509-884-9515",
+    "email": "jcrawford@eastwenatcheewa.gov",
+    "website": "https://www.eastwenatcheewa.gov/246/Mayors-Office",
+    "socialMedia": {
+      "x": "https://x.com/CityofEastWen",
+      "twitter": "https://x.com/CityofEastWen",
+      "facebook": "https://facebook.com/CityofEastWenatchee",
+      "youtube": "https://youtube.com/cityofeastwenatchee",
+      "instagram": "https://instagram.com/cityofeastwenatchee"
+    }
+  },
+  "bio": "Jerrilea Crawford is listed as mayor of the City of East Wenatchee, Washington. This RepWatchr starter profile is source-seeded from OpenStates public municipality data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "WA",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.eastwenatcheewa.gov/246/Mayors-Office"
+    },
+    {
+      "title": "OpenStates public municipality record",
+      "url": "https://raw.githubusercontent.com/openstates/people/9d9a7f4a873a7e42cb405af0f6702770f2ae07a7/data/wa/municipalities/Jerrilea-Crawford-7aa4040d-4fdb-4f8e-8852-077f5c8b2999.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://www.eastwenatcheewa.gov/ImageRepository/Document?documentID=265"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-02"
+}

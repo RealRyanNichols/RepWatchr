@@ -1,0 +1,35 @@
+{
+  "id": "aftab-pureval",
+  "name": "Aftab Pureval",
+  "firstName": "Aftab",
+  "lastName": "Pureval",
+  "party": "NP",
+  "level": "city",
+  "position": "Mayor",
+  "district": "Citywide",
+  "jurisdiction": "City of Cincinnati, Ohio",
+  "county": [],
+  "termStart": "Start date pending source review",
+  "termEnd": "2030-01-08",
+  "contactInfo": {
+    "office": "801 Plum St., Suite 150;Cincinnati, OH 45202",
+    "phone": "513-352-3250",
+    "email": "mayor.aftab@cincinnati-oh.gov",
+    "website": "https://www.cincinnati-oh.gov/mayor/contact-the-mayor/"
+  },
+  "bio": "Aftab Pureval is listed as mayor of the City of Cincinnati, Ohio. This RepWatchr starter profile is source-seeded from OpenStates public municipality data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "OH",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.cincinnati-oh.gov/mayor/contact-the-mayor/"
+    },
+    {
+      "title": "OpenStates public municipality record",
+      "url": "https://raw.githubusercontent.com/openstates/people/9d9a7f4a873a7e42cb405af0f6702770f2ae07a7/data/oh/municipalities/Aftab-Pureval-aa81e0c6-dba7-4f08-b70e-a71c3f537200.yml"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-02"
+}

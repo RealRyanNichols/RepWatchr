@@ -1,0 +1,42 @@
+{
+  "id": "kevin-schilling",
+  "name": "Kevin Schilling",
+  "firstName": "Kevin",
+  "lastName": "Schilling",
+  "photo": "/images/officials/city-openstates/wa/kevin-schilling.jpg",
+  "photoSourceUrl": "https://cdnsm5-hosted.civiclive.com/UserFiles/Servers/Server_11045935/Image/City%20Hall/City%20Council/Kevin-Schilling-2024.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "NP",
+  "level": "city",
+  "position": "Mayor",
+  "district": "Citywide",
+  "jurisdiction": "City of Burien, Washington",
+  "county": [],
+  "termStart": "2024-01-01",
+  "termEnd": "2027-12-31",
+  "contactInfo": {
+    "office": "400 SW 152nd St;Suite 300;Burien, WA 98166",
+    "phone": "206-241-4647",
+    "email": "kevins@burienwa.gov",
+    "website": "https://www.burienwa.gov/city_hall/city_council/mayor_kevin_schilling"
+  },
+  "bio": "Kevin Schilling is listed as mayor of the City of Burien, Washington. This RepWatchr starter profile is source-seeded from OpenStates public municipality data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "WA",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.burienwa.gov/city_hall/city_council/mayor_kevin_schilling"
+    },
+    {
+      "title": "OpenStates public municipality record",
+      "url": "https://raw.githubusercontent.com/openstates/people/9d9a7f4a873a7e42cb405af0f6702770f2ae07a7/data/wa/municipalities/Kevin-Schilling-6df4d950-a8b9-48d6-a98f-3adf4d7cb187.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://cdnsm5-hosted.civiclive.com/UserFiles/Servers/Server_11045935/Image/City%20Hall/City%20Council/Kevin-Schilling-2024.jpg"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-02"
+}

@@ -1,0 +1,35 @@
+{
+  "id": "susie-hidalgo-fahring",
+  "name": "Susie Hidalgo-Fahring",
+  "firstName": "Susie",
+  "lastName": "Hidalgo-Fahring",
+  "party": "D",
+  "level": "city",
+  "position": "Mayor",
+  "district": "Citywide",
+  "jurisdiction": "City of Longmont, Colorado",
+  "county": [],
+  "termStart": "Start date pending source review",
+  "termEnd": "2027-12-07",
+  "contactInfo": {
+    "office": "350 Kimbark St;Longmont, CO 80501",
+    "phone": "303-651-8601",
+    "email": "Susie.Hidalgo-Fahring@longmontcolorado.gov",
+    "website": "https://longmontcolorado.gov/government/mayor-city-council-members/"
+  },
+  "bio": "Susie Hidalgo-Fahring is listed as mayor of the City of Longmont, Colorado. This RepWatchr starter profile is source-seeded from OpenStates public municipality data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "CO",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://longmontcolorado.gov/government/mayor-city-council-members/"
+    },
+    {
+      "title": "OpenStates public municipality record",
+      "url": "https://raw.githubusercontent.com/openstates/people/9d9a7f4a873a7e42cb405af0f6702770f2ae07a7/data/co/municipalities/Susie-Hidalgo-Fahring-5a02f1f1-38aa-4a1e-bc70-5979da17b72f.yml"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-02"
+}

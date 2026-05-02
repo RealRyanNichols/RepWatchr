@@ -1,0 +1,35 @@
+{
+  "id": "michael-wheeler",
+  "name": "Michael Wheeler",
+  "firstName": "Michael",
+  "lastName": "Wheeler",
+  "party": "R",
+  "level": "city",
+  "position": "Mayor",
+  "district": "Citywide",
+  "jurisdiction": "City of Richfield, Ohio",
+  "county": [],
+  "termStart": "Start date pending source review",
+  "termEnd": "2027-12-31",
+  "contactInfo": {
+    "office": "4410 W. Streetsboro Rd.;Richfield, OH 44286",
+    "phone": "330-659-9201",
+    "email": "mwheeler@richfieldvillageohio.org",
+    "website": "https://richfieldvillageohio.org/167/Mayor"
+  },
+  "bio": "Michael Wheeler is listed as mayor of the City of Richfield, Ohio. This RepWatchr starter profile is source-seeded from OpenStates public municipality data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "OH",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://richfieldvillageohio.org/167/Mayor"
+    },
+    {
+      "title": "OpenStates public municipality record",
+      "url": "https://raw.githubusercontent.com/openstates/people/9d9a7f4a873a7e42cb405af0f6702770f2ae07a7/data/oh/municipalities/Michael-Wheeler-9c50e1c5-1e2c-4a95-b8e3-28ddb1a6fe45.yml"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-02"
+}

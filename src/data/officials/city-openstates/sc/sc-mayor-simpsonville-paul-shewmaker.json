@@ -1,0 +1,35 @@
+{
+  "id": "paul-shewmaker",
+  "name": "Paul Shewmaker",
+  "firstName": "Paul",
+  "lastName": "Shewmaker",
+  "party": "NP",
+  "level": "city",
+  "position": "Mayor",
+  "district": "Citywide",
+  "jurisdiction": "City of Simpsonville, South Carolina",
+  "county": [],
+  "termStart": "Start date pending source review",
+  "termEnd": "2027-12-31",
+  "contactInfo": {
+    "office": "2 Knightsbridge Drive;Simpsonville, SC 29681",
+    "phone": "864-619-8445",
+    "email": "mayorshewmaker@simpsonville.com",
+    "website": "https://www.simpsonville.com/contact"
+  },
+  "bio": "Paul Shewmaker is listed as mayor of the City of Simpsonville, South Carolina. This RepWatchr starter profile is source-seeded from OpenStates public municipality data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "SC",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.simpsonville.com/contact"
+    },
+    {
+      "title": "OpenStates public municipality record",
+      "url": "https://raw.githubusercontent.com/openstates/people/9d9a7f4a873a7e42cb405af0f6702770f2ae07a7/data/sc/municipalities/Paul-Shewmaker-3fba9eea-a682-4c64-b43b-33642c93e34c.yml"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-02"
+}

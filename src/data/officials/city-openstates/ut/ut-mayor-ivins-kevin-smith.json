@@ -1,0 +1,35 @@
+{
+  "id": "kevin-smith",
+  "name": "Kevin Smith",
+  "firstName": "Kevin",
+  "lastName": "Smith",
+  "party": "NP",
+  "level": "city",
+  "position": "Mayor",
+  "district": "Citywide",
+  "jurisdiction": "City of Ivins, Utah",
+  "county": [],
+  "termStart": "Start date pending source review",
+  "termEnd": "2029-12-31",
+  "contactInfo": {
+    "office": "85 Main St;Ivins, UT 84738",
+    "phone": "435-628-0606",
+    "email": "ksmith@ivinsutah.gov",
+    "website": "https://www.ivinsutah.gov/government/mayor.php"
+  },
+  "bio": "Kevin Smith is listed as mayor of the City of Ivins, Utah. This RepWatchr starter profile is source-seeded from OpenStates public municipality data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "UT",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.ivinsutah.gov/government/mayor.php"
+    },
+    {
+      "title": "OpenStates public municipality record",
+      "url": "https://raw.githubusercontent.com/openstates/people/9d9a7f4a873a7e42cb405af0f6702770f2ae07a7/data/ut/municipalities/Kevin-Smith-1b1c4613-6efb-4b20-afb7-22e44dfd1081.yml"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-02"
+}

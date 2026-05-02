@@ -1,0 +1,42 @@
+{
+  "id": "jeannette-sanchez-palacios",
+  "name": "Jeannette Sanchez-Palacios",
+  "firstName": "Jeannette",
+  "lastName": "Sanchez-Palacios",
+  "photo": "/images/officials/city-openstates/ca/jeannette-sanchez-palacios.jpg",
+  "photoSourceUrl": "https://www.cityofventura.ca.gov/ImageRepository/Document?documentID=40061",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "NP",
+  "level": "city",
+  "position": "Mayor",
+  "district": "Citywide",
+  "jurisdiction": "City of Ventura, California",
+  "county": [],
+  "termStart": "Start date pending source review",
+  "termEnd": "2026-12-31",
+  "contactInfo": {
+    "office": "501 Poli Street;Ventura, CA 93001",
+    "phone": "805-654-7800",
+    "email": "jpalacios@cityofventura.ca.gov",
+    "website": "https://www.cityofventura.ca.gov/712/City-Council"
+  },
+  "bio": "Jeannette Sanchez-Palacios is listed as mayor of the City of Ventura, California. This RepWatchr starter profile is source-seeded from OpenStates public municipality data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "CA",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.cityofventura.ca.gov/712/City-Council"
+    },
+    {
+      "title": "OpenStates public municipality record",
+      "url": "https://raw.githubusercontent.com/openstates/people/9d9a7f4a873a7e42cb405af0f6702770f2ae07a7/data/ca/municipalities/Jeannette-Sanchez-Palacios-e5a82d42-025c-48bf-8ad2-b3cd749fbd3e.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://www.cityofventura.ca.gov/ImageRepository/Document?documentID=40061"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-02"
+}

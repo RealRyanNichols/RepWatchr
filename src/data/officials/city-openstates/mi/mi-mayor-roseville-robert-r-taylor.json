@@ -1,0 +1,39 @@
+{
+  "id": "robert-r-taylor",
+  "name": "Robert R. Taylor",
+  "firstName": "Robert",
+  "lastName": "Taylor",
+  "party": "NP",
+  "level": "city",
+  "position": "Mayor",
+  "district": "Citywide",
+  "jurisdiction": "City of Roseville, Michigan",
+  "county": [],
+  "termStart": "Start date pending source review",
+  "termEnd": "2029-11-30",
+  "contactInfo": {
+    "office": "29777 Gratiot Avenue;Roseville, MI 48066",
+    "phone": "586-445-5443",
+    "email": "rtaylor@roseville-mi.gov",
+    "website": "https://www.roseville-mi.gov/229/City-Officials"
+  },
+  "bio": "Robert R. Taylor is listed as mayor of the City of Roseville, Michigan. This RepWatchr starter profile is source-seeded from OpenStates public municipality data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "MI",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.roseville-mi.gov/229/City-Officials"
+    },
+    {
+      "title": "OpenStates public municipality record",
+      "url": "https://raw.githubusercontent.com/openstates/people/9d9a7f4a873a7e42cb405af0f6702770f2ae07a7/data/mi/municipalities/Robert-R-Taylor-37e6d603-c511-4883-93f1-7554bd76c715.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.roseville-mi.gov/228/City-Council"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-02"
+}

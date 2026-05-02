@@ -1,0 +1,38 @@
+{
+  "id": "scott-holmes",
+  "name": "Scott Holmes",
+  "firstName": "Scott",
+  "lastName": "Holmes",
+  "party": "NP",
+  "level": "city",
+  "position": "Mayor",
+  "district": "Citywide",
+  "jurisdiction": "City of Worthington, Ohio",
+  "county": [],
+  "termStart": "Start date pending source review",
+  "termEnd": "2026-12-31",
+  "contactInfo": {
+    "office": "6550 N. High Street;Worthington, OH 43085",
+    "phone": "614-786-7351",
+    "website": "https://www.worthington.org/27/Our-Government"
+  },
+  "bio": "Scott Holmes is listed as mayor of the City of Worthington, Ohio. This RepWatchr starter profile is source-seeded from OpenStates public municipality data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "OH",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.worthington.org/27/Our-Government"
+    },
+    {
+      "title": "OpenStates public municipality record",
+      "url": "https://raw.githubusercontent.com/openstates/people/9d9a7f4a873a7e42cb405af0f6702770f2ae07a7/data/oh/municipalities/Scott-Holmes-4b777983-ec82-4ad9-9224-f0ce7227ee9a.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://worthington.org/Directory.aspx?EID=103"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-02"
+}

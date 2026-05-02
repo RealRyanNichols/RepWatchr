@@ -1,0 +1,35 @@
+{
+  "id": "daniel-biss",
+  "name": "Daniel Biss",
+  "firstName": "Daniel",
+  "lastName": "Biss",
+  "party": "NP",
+  "level": "city",
+  "position": "Mayor",
+  "district": "Citywide",
+  "jurisdiction": "City of Evanston, Illinois",
+  "county": [],
+  "termStart": "Start date pending source review",
+  "termEnd": "2029-05-01",
+  "contactInfo": {
+    "office": "2100 Ridge Ave., #2500;Evanston, IL 60201",
+    "phone": "847-448-4311",
+    "email": "dbiss@cityofevanston.org",
+    "website": "https://www.cityofevanston.org/government/mayor/"
+  },
+  "bio": "Daniel Biss is listed as mayor of the City of Evanston, Illinois. This RepWatchr starter profile is source-seeded from OpenStates public municipality data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "IL",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.cityofevanston.org/government/mayor/"
+    },
+    {
+      "title": "OpenStates public municipality record",
+      "url": "https://raw.githubusercontent.com/openstates/people/9d9a7f4a873a7e42cb405af0f6702770f2ae07a7/data/il/municipalities/Daniel-Biss-c15bcf05-635e-4c9e-95e1-5f52d5a5dd47.yml"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-02"
+}

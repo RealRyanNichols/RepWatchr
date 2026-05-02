@@ -1,0 +1,33 @@
+{
+  "id": "lisa-burtenshaw",
+  "name": "Lisa Burtenshaw",
+  "firstName": "Lisa",
+  "lastName": "Burtenshaw",
+  "party": "NP",
+  "level": "city",
+  "position": "Mayor",
+  "district": "Citywide",
+  "jurisdiction": "City of Idaho Falls, Idaho",
+  "county": [],
+  "termStart": "Start date pending source review",
+  "termEnd": "2030-01-01",
+  "contactInfo": {
+    "office": "680 Park Avenue;Idaho Falls, ID 83402",
+    "website": "https://www.idahofallsidaho.gov/1712/About-the-Mayor"
+  },
+  "bio": "Lisa Burtenshaw is listed as mayor of the City of Idaho Falls, Idaho. This RepWatchr starter profile is source-seeded from OpenStates public municipality data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "ID",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.idahofallsidaho.gov/1712/About-the-Mayor"
+    },
+    {
+      "title": "OpenStates public municipality record",
+      "url": "https://raw.githubusercontent.com/openstates/people/9d9a7f4a873a7e42cb405af0f6702770f2ae07a7/data/id/municipalities/Lisa-Burtenshaw-c22bfcdf-cd74-41da-a552-468dcbf85824.yml"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-02"
+}

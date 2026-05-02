@@ -1,0 +1,30 @@
+{
+  "id": "esther-c-sanchez",
+  "name": "Esther C. Sanchez",
+  "firstName": "Esther C.",
+  "lastName": "Sanchez",
+  "party": "NP",
+  "level": "city",
+  "position": "Mayor",
+  "district": "Citywide",
+  "jurisdiction": "City of Oceanside, California",
+  "county": [],
+  "termStart": "Start date pending source review",
+  "termEnd": "2028-11-05",
+  "contactInfo": {
+    "office": "300 North Coast Hwy;Oceanside, CA 92054",
+    "phone": "760-435-3057",
+    "email": "esanchez@oceansideca.org"
+  },
+  "bio": "Esther C. Sanchez is listed as mayor of the City of Oceanside, California. This RepWatchr starter profile is source-seeded from OpenStates public municipality data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "CA",
+  "sourceLinks": [
+    {
+      "title": "OpenStates public municipality record",
+      "url": "https://raw.githubusercontent.com/openstates/people/9d9a7f4a873a7e42cb405af0f6702770f2ae07a7/data/ca/municipalities/Esther-C-Sanchez-f98a3cd1-5d31-4fa7-92ab-830fe5dcc7da.yml"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-02"
+}

@@ -1,0 +1,35 @@
+{
+  "id": "kevin-sartor",
+  "name": "Kevin Sartor",
+  "firstName": "Kevin",
+  "lastName": "Sartor",
+  "party": "NP",
+  "level": "city",
+  "position": "Mayor",
+  "district": "Citywide",
+  "jurisdiction": "City of Surprise, Arizona",
+  "county": [],
+  "termStart": "Start date pending source review",
+  "termEnd": "2029-01-08",
+  "contactInfo": {
+    "office": "16000 N Civic Center Plaza;Surprise, AZ 85374",
+    "phone": "623-222-1313",
+    "email": "kevin.sartor@surpriseaz.gov",
+    "website": "https://surpriseaz.gov/738/Office-of-the-Mayor---Kevin-Sartor"
+  },
+  "bio": "Kevin Sartor is listed as mayor of the City of Surprise, Arizona. This RepWatchr starter profile is source-seeded from OpenStates public municipality data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "AZ",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://surpriseaz.gov/738/Office-of-the-Mayor---Kevin-Sartor"
+    },
+    {
+      "title": "OpenStates public municipality record",
+      "url": "https://raw.githubusercontent.com/openstates/people/9d9a7f4a873a7e42cb405af0f6702770f2ae07a7/data/az/municipalities/Kevin-Sartor-f1f44d5c-9089-48ed-ae85-4abe7d7ef8a0.yml"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-02"
+}

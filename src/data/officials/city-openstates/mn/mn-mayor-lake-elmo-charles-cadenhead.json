@@ -1,0 +1,35 @@
+{
+  "id": "charles-cadenhead",
+  "name": "Charles Cadenhead",
+  "firstName": "Charles",
+  "lastName": "Cadenhead",
+  "party": "NP",
+  "level": "city",
+  "position": "Mayor",
+  "district": "Citywide",
+  "jurisdiction": "City of Lake Elmo, Minnesota",
+  "county": [],
+  "termStart": "Start date pending source review",
+  "termEnd": "2029-01-01",
+  "contactInfo": {
+    "office": "3880 Laverne Avenue North Suite #100;Lake Elmo, MN 55042",
+    "phone": "651-300-9641",
+    "email": "CCadenhead@lakeelmo.org",
+    "website": "http://www.lakeelmo.org/government/city_council.php"
+  },
+  "bio": "Charles Cadenhead is listed as mayor of the City of Lake Elmo, Minnesota. This RepWatchr starter profile is source-seeded from OpenStates public municipality data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "MN",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "http://www.lakeelmo.org/government/city_council.php"
+    },
+    {
+      "title": "OpenStates public municipality record",
+      "url": "https://raw.githubusercontent.com/openstates/people/9d9a7f4a873a7e42cb405af0f6702770f2ae07a7/data/mn/municipalities/Charles-Cadenhead-33ea9900-4a70-4f20-ae76-7489215ceaa7.yml"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-02"
+}

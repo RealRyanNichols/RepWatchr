@@ -1,0 +1,35 @@
+{
+  "id": "dirk-burton",
+  "name": "Dirk Burton",
+  "firstName": "Dirk",
+  "lastName": "Burton",
+  "party": "NP",
+  "level": "city",
+  "position": "Mayor",
+  "district": "Citywide",
+  "jurisdiction": "City of West Jordan, Utah",
+  "county": [],
+  "termStart": "Start date pending source review",
+  "termEnd": "2028-01-06",
+  "contactInfo": {
+    "office": "8000 South Redwood Road;West Jordan, UT 84088",
+    "phone": "801-569-5100",
+    "email": "mayor@westjordan.utah.gov",
+    "website": "https://www.westjordan.utah.gov/mayor/"
+  },
+  "bio": "Dirk Burton is listed as mayor of the City of West Jordan, Utah. This RepWatchr starter profile is source-seeded from OpenStates public municipality data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "UT",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.westjordan.utah.gov/mayor/"
+    },
+    {
+      "title": "OpenStates public municipality record",
+      "url": "https://raw.githubusercontent.com/openstates/people/9d9a7f4a873a7e42cb405af0f6702770f2ae07a7/data/ut/municipalities/Dirk-Burton-d41be727-b36a-4c89-b6f9-67772b7c7611.yml"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-02"
+}

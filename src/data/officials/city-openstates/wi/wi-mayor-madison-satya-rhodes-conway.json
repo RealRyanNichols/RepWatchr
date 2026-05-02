@@ -1,0 +1,39 @@
+{
+  "id": "satya-rhodes-conway",
+  "name": "Satya Rhodes-Conway",
+  "firstName": "Satya",
+  "lastName": "Rhodes-Conway",
+  "party": "D",
+  "level": "city",
+  "position": "Mayor",
+  "district": "Citywide",
+  "jurisdiction": "City of Madison, Wisconsin",
+  "county": [],
+  "termStart": "Start date pending source review",
+  "termEnd": "2027-04-20",
+  "contactInfo": {
+    "office": "210 Martin Luther King Jr. Blvd, Room 403;Madison, WI 53703",
+    "phone": "608-266-4611",
+    "email": "mayor@cityofmadison.com",
+    "website": "https://www.cityofmadison.com/mayor"
+  },
+  "bio": "Satya Rhodes-Conway is listed as mayor of the City of Madison, Wisconsin. This RepWatchr starter profile is source-seeded from OpenStates public municipality data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "WI",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.cityofmadison.com/mayor"
+    },
+    {
+      "title": "OpenStates public municipality record",
+      "url": "https://raw.githubusercontent.com/openstates/people/9d9a7f4a873a7e42cb405af0f6702770f2ae07a7/data/wi/municipalities/Satya-Rhodes-Conway-0537e2fe-8e96-4d05-8023-e747c92e4ad1.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.cityofmadison.com/mayor/about"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-02"
+}

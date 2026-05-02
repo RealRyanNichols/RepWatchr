@@ -1,0 +1,35 @@
+{
+  "id": "jill-shudak",
+  "name": "Jill Shudak",
+  "firstName": "Jill",
+  "lastName": "Shudak",
+  "party": "NP",
+  "level": "city",
+  "position": "Mayor",
+  "district": "Citywide",
+  "jurisdiction": "City of Council Bluffs, Iowa",
+  "county": [],
+  "termStart": "Start date pending source review",
+  "termEnd": "2029-12-31",
+  "contactInfo": {
+    "office": "209 Pearl St;Council Bluffs, IA 51503",
+    "phone": "712-890-5100",
+    "email": "mayor@councilbluffs-ia.gov",
+    "website": "https://www.councilbluffs-ia.gov/586/Jill-Shudak"
+  },
+  "bio": "Jill Shudak is listed as mayor of the City of Council Bluffs, Iowa. This RepWatchr starter profile is source-seeded from OpenStates public municipality data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "IA",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.councilbluffs-ia.gov/586/Jill-Shudak"
+    },
+    {
+      "title": "OpenStates public municipality record",
+      "url": "https://raw.githubusercontent.com/openstates/people/9d9a7f4a873a7e42cb405af0f6702770f2ae07a7/data/ia/municipalities/Jill-Shudak-933acfa9-e6a3-4b54-8014-70381eb80b8a.yml"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-02"
+}

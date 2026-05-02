@@ -1,0 +1,54 @@
+{
+  "id": "mark-n-dion",
+  "name": "Mark N. Dion",
+  "firstName": "Mark",
+  "lastName": "Dion",
+  "photo": "/images/officials/city-openstates/me/mark-n-dion.jpg",
+  "photoSourceUrl": "https://mainelegislature.org/images/logo.png",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "D",
+  "level": "city",
+  "position": "Mayor",
+  "district": "Citywide",
+  "jurisdiction": "City of Portland, Maine",
+  "county": [],
+  "termStart": "Start date pending source review",
+  "termEnd": "2027-12-01",
+  "contactInfo": {
+    "office": "389 Congress Street;Portland, ME 04101",
+    "phone": "207-756-8241",
+    "email": "mdion@portlandmaine.gov",
+    "website": "https://www.portlandmaine.gov/771/Mayor"
+  },
+  "bio": "Mark N. Dion is listed as mayor of the City of Portland, Maine. This RepWatchr starter profile is source-seeded from OpenStates public municipality data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "ME",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.portlandmaine.gov/771/Mayor"
+    },
+    {
+      "title": "OpenStates public municipality record",
+      "url": "https://raw.githubusercontent.com/openstates/people/9d9a7f4a873a7e42cb405af0f6702770f2ae07a7/data/me/municipalities/Mark-N-Dion-063897c8-da0a-4d03-a493-1ca57e4d5d8d.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://mainelegislature.org/images/logo.png"
+    },
+    {
+      "title": "Public source",
+      "url": "https://mainelegislature.org/senate/senator-mark-dion/9366"
+    },
+    {
+      "title": "Public source",
+      "url": "http://www.maine.gov/legis/house/dist_mem.htm"
+    },
+    {
+      "title": "Public source",
+      "url": "http://www.maine.gov/legis/house/hsebios/dionmn.htm"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-02"
+}

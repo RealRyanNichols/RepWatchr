@@ -1,0 +1,35 @@
+{
+  "id": "scott-brakefield",
+  "name": "Scott Brakefield",
+  "firstName": "Scott",
+  "lastName": "Brakefield",
+  "party": "NP",
+  "level": "city",
+  "position": "Mayor",
+  "district": "Citywide",
+  "jurisdiction": "City of Alabaster, Alabama",
+  "county": [],
+  "termStart": "Start date pending source review",
+  "termEnd": "2029-11-03",
+  "contactInfo": {
+    "office": "1953 Municipal Way;Alabaster, AL 35007",
+    "phone": "205-378-4057",
+    "email": "brakefield@cityofalabaster.com",
+    "website": "https://www.cityofalabaster.com/Directory.aspx?EID=11"
+  },
+  "bio": "Scott Brakefield is listed as mayor of the City of Alabaster, Alabama. This RepWatchr starter profile is source-seeded from OpenStates public municipality data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "AL",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.cityofalabaster.com/Directory.aspx?EID=11"
+    },
+    {
+      "title": "OpenStates public municipality record",
+      "url": "https://raw.githubusercontent.com/openstates/people/9d9a7f4a873a7e42cb405af0f6702770f2ae07a7/data/al/municipalities/Scott-Brakefield-b0bd1b56-be95-45c3-a143-5180380b0b50.yml"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-02"
+}

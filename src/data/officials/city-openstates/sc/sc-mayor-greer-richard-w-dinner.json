@@ -1,0 +1,35 @@
+{
+  "id": "richard-w-dinner",
+  "name": "Richard W. Dinner",
+  "firstName": "Richard",
+  "lastName": "Dinner",
+  "party": "NP",
+  "level": "city",
+  "position": "Mayor",
+  "district": "Citywide",
+  "jurisdiction": "City of Greer, South Carolina",
+  "county": [],
+  "termStart": "Start date pending source review",
+  "termEnd": "2027-12-31",
+  "contactInfo": {
+    "office": "301 E Poinsett Street;Greer, SC 29651",
+    "phone": "864-801-2027",
+    "email": "rdanner@cityofgreer.org",
+    "website": "https://www.cityofgreer.org/page/mayor"
+  },
+  "bio": "Richard W. Dinner is listed as mayor of the City of Greer, South Carolina. This RepWatchr starter profile is source-seeded from OpenStates public municipality data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "SC",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.cityofgreer.org/page/mayor"
+    },
+    {
+      "title": "OpenStates public municipality record",
+      "url": "https://raw.githubusercontent.com/openstates/people/9d9a7f4a873a7e42cb405af0f6702770f2ae07a7/data/sc/municipalities/Richard-Dinner-79fbcc5f-b9f8-48bd-8c4e-f0e4f8cde163.yml"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-02"
+}

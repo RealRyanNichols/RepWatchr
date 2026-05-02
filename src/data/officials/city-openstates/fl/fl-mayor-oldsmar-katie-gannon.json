@@ -1,0 +1,35 @@
+{
+  "id": "katie-gannon",
+  "name": "Katie Gannon",
+  "firstName": "Katie",
+  "lastName": "Gannon",
+  "party": "NP",
+  "level": "city",
+  "position": "Mayor",
+  "district": "Citywide",
+  "jurisdiction": "City of Oldsmar, Florida",
+  "county": [],
+  "termStart": "Start date pending source review",
+  "termEnd": "2028-03-31",
+  "contactInfo": {
+    "office": "100 State Street West;Oldsmar, FL 34677",
+    "phone": "813-763-0468",
+    "email": "kgannon@oldsmarfl.gov",
+    "website": "https://myoldsmar.com/1257/City-Council-Members"
+  },
+  "bio": "Katie Gannon is listed as mayor of the City of Oldsmar, Florida. This RepWatchr starter profile is source-seeded from OpenStates public municipality data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "FL",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://myoldsmar.com/1257/City-Council-Members"
+    },
+    {
+      "title": "OpenStates public municipality record",
+      "url": "https://raw.githubusercontent.com/openstates/people/9d9a7f4a873a7e42cb405af0f6702770f2ae07a7/data/fl/municipalities/Katie-Gannon-c45f89f5-44e8-45db-9d75-6043fa4bd1c2.yml"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-02"
+}

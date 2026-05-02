@@ -1,0 +1,35 @@
+{
+  "id": "shammas-malik",
+  "name": "Shammas Malik",
+  "firstName": "Shammas",
+  "lastName": "Malik",
+  "party": "NP",
+  "level": "city",
+  "position": "Mayor",
+  "district": "Citywide",
+  "jurisdiction": "City of Akron, Ohio",
+  "county": [],
+  "termStart": "Start date pending source review",
+  "termEnd": "2027-11-02",
+  "contactInfo": {
+    "office": "166 S High St Suite 200; Akron, OH 44308",
+    "phone": "330-375-2345",
+    "email": "mayor@akronohio.gov",
+    "website": "https://www.akronohio.gov/government/mayor_s_office/index.php"
+  },
+  "bio": "Shammas Malik is listed as mayor of the City of Akron, Ohio. This RepWatchr starter profile is source-seeded from OpenStates public municipality data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "OH",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.akronohio.gov/government/mayor_s_office/index.php"
+    },
+    {
+      "title": "OpenStates public municipality record",
+      "url": "https://raw.githubusercontent.com/openstates/people/9d9a7f4a873a7e42cb405af0f6702770f2ae07a7/data/oh/municipalities/Shammas-Malik-1555be34-cc57-4d84-9b6e-b00e607f697d.yml"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-02"
+}

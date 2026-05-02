@@ -1,0 +1,35 @@
+{
+  "id": "robert-craft",
+  "name": "Robert Craft",
+  "firstName": "Robert",
+  "lastName": "Craft",
+  "party": "NP",
+  "level": "city",
+  "position": "Mayor",
+  "district": "Citywide",
+  "jurisdiction": "City of Gulf Shores, Alabama",
+  "county": [],
+  "termStart": "Start date pending source review",
+  "termEnd": "2029-10-01",
+  "contactInfo": {
+    "office": "1905 W 1st Street;Gulf Shores, AL 36547",
+    "phone": "251-968-1126",
+    "email": "mayor@gulfshoresal.gov",
+    "website": "https://www.gulfshoresal.gov/401/Mayors-Office"
+  },
+  "bio": "Robert Craft is listed as mayor of the City of Gulf Shores, Alabama. This RepWatchr starter profile is source-seeded from OpenStates public municipality data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "AL",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.gulfshoresal.gov/401/Mayors-Office"
+    },
+    {
+      "title": "OpenStates public municipality record",
+      "url": "https://raw.githubusercontent.com/openstates/people/9d9a7f4a873a7e42cb405af0f6702770f2ae07a7/data/al/municipalities/Robert-Craft-b91e43af-0183-4710-9ddf-fef7571522f4.yml"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-02"
+}

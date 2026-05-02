@@ -1,0 +1,37 @@
+{
+  "id": "joe-buck",
+  "name": "Joe Buck",
+  "firstName": "Joe",
+  "lastName": "Buck",
+  "photo": "/images/officials/city-openstates/or/joe-buck.jpg",
+  "photoSourceUrl": "https://www.ci.oswego.or.us/sites/default/files/styles/primary/public/imageattachments/JBuck.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "NP",
+  "level": "city",
+  "position": "Mayor",
+  "district": "Citywide",
+  "jurisdiction": "City of Lake Oswego, Oregon",
+  "county": [],
+  "termStart": "Start date pending source review",
+  "termEnd": "2028-12-31",
+  "contactInfo": {
+    "office": "PO Box 369;380 A Avenue;Lake Oswego, OR 97034",
+    "phone": "503-635-0270",
+    "email": "jbuck@ci.oswego.or.us"
+  },
+  "bio": "Joe Buck is listed as mayor of the City of Lake Oswego, Oregon. This RepWatchr starter profile is source-seeded from OpenStates public municipality data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "OR",
+  "sourceLinks": [
+    {
+      "title": "OpenStates public municipality record",
+      "url": "https://raw.githubusercontent.com/openstates/people/9d9a7f4a873a7e42cb405af0f6702770f2ae07a7/data/or/municipalities/Joe-Buck-9de19c1f-d6ce-4325-be7a-36eb244638d2.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://www.ci.oswego.or.us/sites/default/files/styles/primary/public/imageattachments/JBuck.jpg"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-02"
+}

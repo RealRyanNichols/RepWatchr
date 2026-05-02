@@ -1,0 +1,35 @@
+{
+  "id": "douglas-j-nicholls",
+  "name": "Douglas J. Nicholls",
+  "firstName": "Douglas",
+  "lastName": "Nicholls",
+  "party": "NP",
+  "level": "city",
+  "position": "Mayor",
+  "district": "Citywide",
+  "jurisdiction": "City of Yuma, Arizona",
+  "county": [],
+  "termStart": "Start date pending source review",
+  "termEnd": "2026-12-31",
+  "contactInfo": {
+    "office": "One City Plaza;Yuma, AZ 85364",
+    "phone": "928-373-5000",
+    "email": "Douglas.Nicholls@YumaAZ.gov",
+    "website": "https://www.yumaaz.gov/government/mayor-and-council"
+  },
+  "bio": "Douglas J. Nicholls is listed as mayor of the City of Yuma, Arizona. This RepWatchr starter profile is source-seeded from OpenStates public municipality data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "AZ",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.yumaaz.gov/government/mayor-and-council"
+    },
+    {
+      "title": "OpenStates public municipality record",
+      "url": "https://raw.githubusercontent.com/openstates/people/9d9a7f4a873a7e42cb405af0f6702770f2ae07a7/data/az/municipalities/Douglas-Nicholls-a16fc264-18b4-4d53-8b6d-d5659ac114b3.yml"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-02"
+}

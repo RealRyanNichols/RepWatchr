@@ -1,0 +1,34 @@
+{
+  "id": "alan-c-beach",
+  "name": "Alan C. Beach",
+  "firstName": "Alan",
+  "lastName": "Beach",
+  "party": "NP",
+  "level": "city",
+  "position": "Mayor",
+  "district": "Citywide",
+  "jurisdiction": "City of Lynbrook, New York",
+  "county": [],
+  "termStart": "Start date pending source review",
+  "termEnd": "2027-03-31",
+  "contactInfo": {
+    "phone": "516-599-8300",
+    "email": "Abeach@lynbrookvillage.com",
+    "website": "https://lynbrookvillage.gov/mayor-board/"
+  },
+  "bio": "Alan C. Beach is listed as mayor of the City of Lynbrook, New York. This RepWatchr starter profile is source-seeded from OpenStates public municipality data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "NY",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://lynbrookvillage.gov/mayor-board/"
+    },
+    {
+      "title": "OpenStates public municipality record",
+      "url": "https://raw.githubusercontent.com/openstates/people/9d9a7f4a873a7e42cb405af0f6702770f2ae07a7/data/ny/municipalities/Alan-C-Beach-d004f727-70e1-4172-91c9-c6c13fbcd2c6.yml"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-02"
+}

@@ -1,0 +1,39 @@
+{
+  "id": "yvonne-flores-cale",
+  "name": "Yvonne Flores-Cale",
+  "firstName": "Yvonne",
+  "lastName": "Flores-Cale",
+  "party": "NP",
+  "level": "city",
+  "position": "Mayor",
+  "district": "Citywide",
+  "jurisdiction": "City of Kyle, Texas",
+  "county": [],
+  "termStart": "Start date pending source review",
+  "termEnd": "2026-11-17",
+  "contactInfo": {
+    "office": "100 W Center St;Kyle, TX 78640",
+    "phone": "512-262-1010",
+    "email": "ycale@cityofkyle.com",
+    "website": "https://www.cityofkyle.gov/city-hall/mayor-and-council/"
+  },
+  "bio": "Yvonne Flores-Cale is listed as mayor of the City of Kyle, Texas. This RepWatchr starter profile is source-seeded from OpenStates public municipality data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "TX",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.cityofkyle.gov/city-hall/mayor-and-council/"
+    },
+    {
+      "title": "OpenStates public municipality record",
+      "url": "https://raw.githubusercontent.com/openstates/people/9d9a7f4a873a7e42cb405af0f6702770f2ae07a7/data/tx/municipalities/Yvonne-Flores-Cale-fd6891f2-7ddf-4592-85dc-4479958f6669.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.cityofkyle.gov/press-room/posts/yvonne-flores-cale-to-be-sworn-in-as-kyle-mayor/"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-02"
+}

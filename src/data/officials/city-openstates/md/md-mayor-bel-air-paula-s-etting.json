@@ -1,0 +1,39 @@
+{
+  "id": "paula-s-etting",
+  "name": "Paula S. Etting",
+  "firstName": "Paula",
+  "lastName": "Etting",
+  "party": "NP",
+  "level": "city",
+  "position": "Mayor",
+  "district": "Citywide",
+  "jurisdiction": "City of Bel Air, Maryland",
+  "county": [],
+  "termStart": "Start date pending source review",
+  "termEnd": "2029-11-30",
+  "contactInfo": {
+    "office": "39 N Hickory Ave;Bel Air, MD 21014",
+    "phone": "410-638-4550",
+    "email": "petting@belairmd.org",
+    "website": "https://www.belairmd.org/212/Board-of-Town-Commissioners"
+  },
+  "bio": "Paula S. Etting is listed as mayor of the City of Bel Air, Maryland. This RepWatchr starter profile is source-seeded from OpenStates public municipality data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "MD",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.belairmd.org/212/Board-of-Town-Commissioners"
+    },
+    {
+      "title": "OpenStates public municipality record",
+      "url": "https://raw.githubusercontent.com/openstates/people/9d9a7f4a873a7e42cb405af0f6702770f2ae07a7/data/md/municipalities/Paula-S-Etting-952f72dd-f7ef-4cd4-ae40-e78baa211eef.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.belairmd.org/directory.aspx?EID=92"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-02"
+}

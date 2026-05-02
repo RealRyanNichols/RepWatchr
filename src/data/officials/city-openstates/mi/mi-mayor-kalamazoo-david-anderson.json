@@ -1,0 +1,35 @@
+{
+  "id": "david-anderson",
+  "name": "David Anderson",
+  "firstName": "David",
+  "lastName": "Anderson",
+  "party": "NP",
+  "level": "city",
+  "position": "Mayor",
+  "district": "Citywide",
+  "jurisdiction": "City of Kalamazoo, Michigan",
+  "county": [],
+  "termStart": "Start date pending source review",
+  "termEnd": "2027-11-30",
+  "contactInfo": {
+    "office": "241 West South Street;Kalamazoo, MI 49007",
+    "phone": "269-337-8000",
+    "email": "mayor@kalamazoocity.org",
+    "website": "https://www.kalamazoocity.org/citycommission"
+  },
+  "bio": "David Anderson is listed as mayor of the City of Kalamazoo, Michigan. This RepWatchr starter profile is source-seeded from OpenStates public municipality data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "MI",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.kalamazoocity.org/citycommission"
+    },
+    {
+      "title": "OpenStates public municipality record",
+      "url": "https://raw.githubusercontent.com/openstates/people/9d9a7f4a873a7e42cb405af0f6702770f2ae07a7/data/mi/municipalities/David-Anderson-29fb6f78-497d-4775-b1f9-8b0be6be371e.yml"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-02"
+}

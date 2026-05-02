@@ -1,0 +1,39 @@
+{
+  "id": "stephanie-terry",
+  "name": "Stephanie Terry",
+  "firstName": "Stephanie",
+  "lastName": "Terry",
+  "party": "D",
+  "level": "city",
+  "position": "Mayor",
+  "district": "Citywide",
+  "jurisdiction": "City of Evansville, Indiana",
+  "county": [],
+  "termStart": "Start date pending source review",
+  "termEnd": "2028-01-01",
+  "contactInfo": {
+    "office": "1 N.W. Martin Luther King, Jr. Boulevard;Evansville, IN 47708",
+    "phone": "812-435-5000",
+    "email": "mayor@evansville.in.gov",
+    "website": "https://www.evansvillegov.org/city/department/index.php?structureid=3"
+  },
+  "bio": "Stephanie Terry is listed as mayor of the City of Evansville, Indiana. This RepWatchr starter profile is source-seeded from OpenStates public municipality data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "IN",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.evansvillegov.org/city/department/index.php?structureid=3"
+    },
+    {
+      "title": "OpenStates public municipality record",
+      "url": "https://raw.githubusercontent.com/openstates/people/9d9a7f4a873a7e42cb405af0f6702770f2ae07a7/data/in/municipalities/Stephanie-Terry-a2e7dbc4-61f6-46c2-8f41-5ce3037523be.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.evansvillegov.org/city/department/division.php?structureid=363"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-02"
+}

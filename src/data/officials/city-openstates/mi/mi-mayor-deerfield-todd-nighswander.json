@@ -1,0 +1,34 @@
+{
+  "id": "todd-nighswander",
+  "name": "Todd Nighswander",
+  "firstName": "Todd",
+  "lastName": "Nighswander",
+  "party": "NP",
+  "level": "city",
+  "position": "Mayor",
+  "district": "Citywide",
+  "jurisdiction": "City of Deerfield, Michigan",
+  "county": [],
+  "termStart": "Start date pending source review",
+  "termEnd": "2029-01-08",
+  "contactInfo": {
+    "office": "101 W River Street;P.O. Box 277;Deerfield, MI 49238",
+    "phone": "517-447-3138",
+    "website": "https://www.deerfieldmichigan.gov/contact_information/index.php"
+  },
+  "bio": "Todd Nighswander is listed as mayor of the City of Deerfield, Michigan. This RepWatchr starter profile is source-seeded from OpenStates public municipality data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "MI",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.deerfieldmichigan.gov/contact_information/index.php"
+    },
+    {
+      "title": "OpenStates public municipality record",
+      "url": "https://raw.githubusercontent.com/openstates/people/9d9a7f4a873a7e42cb405af0f6702770f2ae07a7/data/mi/municipalities/Todd-Nighswander-3327da96-8364-4f99-8d86-577dd97069f1.yml"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-02"
+}

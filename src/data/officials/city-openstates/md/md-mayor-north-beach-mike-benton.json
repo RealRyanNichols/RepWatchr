@@ -1,0 +1,35 @@
+{
+  "id": "mike-benton",
+  "name": "Mike Benton",
+  "firstName": "Mike",
+  "lastName": "Benton",
+  "party": "NP",
+  "level": "city",
+  "position": "Mayor",
+  "district": "Citywide",
+  "jurisdiction": "City of North Beach, Maryland",
+  "county": [],
+  "termStart": "Start date pending source review",
+  "termEnd": "2026-12-31",
+  "contactInfo": {
+    "office": "8916 Chesapeake Ave.;North Beach, MD 20714",
+    "phone": "301-855-6681",
+    "email": "mbenton@northbeachmd.org",
+    "website": "https://www.northbeachmd.org/mayor-mike-benton"
+  },
+  "bio": "Mike Benton is listed as mayor of the City of North Beach, Maryland. This RepWatchr starter profile is source-seeded from OpenStates public municipality data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "MD",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.northbeachmd.org/mayor-mike-benton"
+    },
+    {
+      "title": "OpenStates public municipality record",
+      "url": "https://raw.githubusercontent.com/openstates/people/9d9a7f4a873a7e42cb405af0f6702770f2ae07a7/data/md/municipalities/Mike-Benton-67404f89-90c3-425b-a606-b6bd1b254491.yml"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-02"
+}

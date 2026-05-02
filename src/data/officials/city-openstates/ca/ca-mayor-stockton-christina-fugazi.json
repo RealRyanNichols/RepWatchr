@@ -1,0 +1,35 @@
+{
+  "id": "christina-fugazi",
+  "name": "Christina Fugazi",
+  "firstName": "Christina",
+  "lastName": "Fugazi",
+  "party": "D",
+  "level": "city",
+  "position": "Mayor",
+  "district": "Citywide",
+  "jurisdiction": "City of Stockton, California",
+  "county": [],
+  "termStart": "Start date pending source review",
+  "termEnd": "2029-01-01",
+  "contactInfo": {
+    "office": "425 N. El Dorado Street;Stockton, CA 95202",
+    "phone": "209-937-8212",
+    "email": "MayorFugazi@stocktonca.gov",
+    "website": "https://www.stocktonca.gov/government/city_council/mayor.php"
+  },
+  "bio": "Christina Fugazi is listed as mayor of the City of Stockton, California. This RepWatchr starter profile is source-seeded from OpenStates public municipality data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "CA",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.stocktonca.gov/government/city_council/mayor.php"
+    },
+    {
+      "title": "OpenStates public municipality record",
+      "url": "https://raw.githubusercontent.com/openstates/people/9d9a7f4a873a7e42cb405af0f6702770f2ae07a7/data/ca/municipalities/Christina-Fugazi-f085db72-c813-45a1-823d-04cff778cf74.yml"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-02"
+}

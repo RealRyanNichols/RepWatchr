@@ -1,0 +1,35 @@
+{
+  "id": "john-rees",
+  "name": "John Rees",
+  "firstName": "John",
+  "lastName": "Rees",
+  "party": "NP",
+  "level": "city",
+  "position": "Mayor",
+  "district": "Citywide",
+  "jurisdiction": "City of Winter Garden, Florida",
+  "county": [],
+  "termStart": "Start date pending source review",
+  "termEnd": "2027-03-31",
+  "contactInfo": {
+    "office": "300 West Plant Street;Winter Garden, FL 34787",
+    "phone": "407-656-7372",
+    "email": "jrees@cwgdn.com",
+    "website": "https://www.cwgdn.com/331/John-Rees"
+  },
+  "bio": "John Rees is listed as mayor of the City of Winter Garden, Florida. This RepWatchr starter profile is source-seeded from OpenStates public municipality data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "FL",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.cwgdn.com/331/John-Rees"
+    },
+    {
+      "title": "OpenStates public municipality record",
+      "url": "https://raw.githubusercontent.com/openstates/people/9d9a7f4a873a7e42cb405af0f6702770f2ae07a7/data/fl/municipalities/John-Rees-9425b1d1-9155-442a-805f-45ec65b66f56.yml"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-02"
+}

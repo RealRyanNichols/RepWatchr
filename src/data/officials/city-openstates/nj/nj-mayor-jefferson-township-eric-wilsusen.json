@@ -1,0 +1,35 @@
+{
+  "id": "eric-wilsusen",
+  "name": "Eric Wilsusen",
+  "firstName": "Eric",
+  "lastName": "Wilsusen",
+  "party": "R",
+  "level": "city",
+  "position": "Mayor",
+  "district": "Citywide",
+  "jurisdiction": "City of Jefferson Township, New Jersey",
+  "county": [],
+  "termStart": "Start date pending source review",
+  "termEnd": "2026-12-31",
+  "contactInfo": {
+    "office": "1033 Weldon Road;Lake Hopatcong, NJ 07849",
+    "phone": "973-208-6102",
+    "email": "Mayor@jeffersontownship.net",
+    "website": "https://www.jeffersontownship.net/454/About-the-Mayor"
+  },
+  "bio": "Eric Wilsusen is listed as mayor of the City of Jefferson Township, New Jersey. This RepWatchr starter profile is source-seeded from OpenStates public municipality data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "NJ",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.jeffersontownship.net/454/About-the-Mayor"
+    },
+    {
+      "title": "OpenStates public municipality record",
+      "url": "https://raw.githubusercontent.com/openstates/people/9d9a7f4a873a7e42cb405af0f6702770f2ae07a7/data/nj/municipalities/Eric-Wilsusen-d0ca06e6-4a89-44c1-a5c5-b58670380f12.yml"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-02"
+}

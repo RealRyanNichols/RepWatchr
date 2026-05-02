@@ -1,0 +1,39 @@
+{
+  "id": "jason-salamun",
+  "name": "Jason Salamun",
+  "firstName": "Jason",
+  "lastName": "Salamun",
+  "party": "NP",
+  "level": "city",
+  "position": "Mayor",
+  "district": "Citywide",
+  "jurisdiction": "City of Rapid City, South Dakota",
+  "county": [],
+  "termStart": "Start date pending source review",
+  "termEnd": "2027-06-06",
+  "contactInfo": {
+    "office": "300 Sixth Street;Rapid City, SD 57701",
+    "phone": "605-394-4110",
+    "email": "mayorsoffice@rcgov.org",
+    "website": "https://www.rcgov.org/departments/mayor-s-office-city-council/mayor-s-office.html"
+  },
+  "bio": "Jason Salamun is listed as mayor of the City of Rapid City, South Dakota. This RepWatchr starter profile is source-seeded from OpenStates public municipality data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "SD",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.rcgov.org/departments/mayor-s-office-city-council/mayor-s-office.html"
+    },
+    {
+      "title": "OpenStates public municipality record",
+      "url": "https://raw.githubusercontent.com/openstates/people/9d9a7f4a873a7e42cb405af0f6702770f2ae07a7/data/sd/municipalities/Jason-Salamun-002cc776-1de4-4156-a69b-b83dd4af5e03.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.rcgov.org/departments/mayor-s-office-city-council/mayor-s-office/mayor-s-office-107.html"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-02"
+}

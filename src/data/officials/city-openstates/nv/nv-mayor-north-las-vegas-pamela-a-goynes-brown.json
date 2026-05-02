@@ -1,0 +1,39 @@
+{
+  "id": "pamela-a-goynes-brown",
+  "name": "Pamela A. Goynes-Brown",
+  "firstName": "Pamela",
+  "lastName": "Goynes-Brown",
+  "party": "NP",
+  "level": "city",
+  "position": "Mayor",
+  "district": "Citywide",
+  "jurisdiction": "City of North Las Vegas, Nevada",
+  "county": [],
+  "termStart": "Start date pending source review",
+  "termEnd": "2026-11-03",
+  "contactInfo": {
+    "office": "2250 Las Vegas Blvd. North; Suite 910; North Las Vegas, NV 89030",
+    "phone": "702-633-1007",
+    "email": "goynesbrownp@cityofnorthlasvegas.com",
+    "website": "https://www.cityofnorthlasvegas.com/our-city/contact-us"
+  },
+  "bio": "Pamela A. Goynes-Brown is listed as mayor of the City of North Las Vegas, Nevada. This RepWatchr starter profile is source-seeded from OpenStates public municipality data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "NV",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.cityofnorthlasvegas.com/our-city/contact-us"
+    },
+    {
+      "title": "OpenStates public municipality record",
+      "url": "https://raw.githubusercontent.com/openstates/people/9d9a7f4a873a7e42cb405af0f6702770f2ae07a7/data/nv/municipalities/Pamela-A-Goynes-Brown-15c09249-ba32-47bb-ba43-c82d030ef78a.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.cityofnorthlasvegas.com/our-city/city-council/mayor"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-02"
+}

@@ -1,0 +1,35 @@
+{
+  "id": "keith-a-james",
+  "name": "Keith A. James",
+  "firstName": "Keith",
+  "lastName": "James",
+  "party": "NP",
+  "level": "city",
+  "position": "Mayor",
+  "district": "Citywide",
+  "jurisdiction": "City of West Palm Beach, Florida",
+  "county": [],
+  "termStart": "Start date pending source review",
+  "termEnd": "2027-03-09",
+  "contactInfo": {
+    "office": "401 Clematis Street;West Palm Beach, FL 33401",
+    "phone": "561-822-1400",
+    "email": "KJames@wpb.org",
+    "website": "https://www.wpb.org/Our-City/Office-of-Mayor-Keith-A.-James"
+  },
+  "bio": "Keith A. James is listed as mayor of the City of West Palm Beach, Florida. This RepWatchr starter profile is source-seeded from OpenStates public municipality data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "FL",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.wpb.org/Our-City/Office-of-Mayor-Keith-A.-James"
+    },
+    {
+      "title": "OpenStates public municipality record",
+      "url": "https://raw.githubusercontent.com/openstates/people/9d9a7f4a873a7e42cb405af0f6702770f2ae07a7/data/fl/municipalities/Keith-James-66ae8593-a7bc-4e82-b641-7d25c35946b1.yml"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-02"
+}

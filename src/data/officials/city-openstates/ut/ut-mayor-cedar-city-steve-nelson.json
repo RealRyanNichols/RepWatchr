@@ -1,0 +1,34 @@
+{
+  "id": "steve-nelson",
+  "name": "Steve Nelson",
+  "firstName": "Steve",
+  "lastName": "Nelson",
+  "party": "NP",
+  "level": "city",
+  "position": "Mayor",
+  "district": "Citywide",
+  "jurisdiction": "City of Cedar City, Utah",
+  "county": [],
+  "termStart": "Start date pending source review",
+  "termEnd": "2030-01-06",
+  "contactInfo": {
+    "office": "10 N Main Street;Cedar City, UT 84720",
+    "email": "nsteve@cedarcityut.gov",
+    "website": "https://www.cedarcityut.gov/141/Meet-the-Mayor"
+  },
+  "bio": "Steve Nelson is listed as mayor of the City of Cedar City, Utah. This RepWatchr starter profile is source-seeded from OpenStates public municipality data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "UT",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.cedarcityut.gov/141/Meet-the-Mayor"
+    },
+    {
+      "title": "OpenStates public municipality record",
+      "url": "https://raw.githubusercontent.com/openstates/people/9d9a7f4a873a7e42cb405af0f6702770f2ae07a7/data/ut/municipalities/Steve-Nelson-829132d3-bd02-472a-babf-1a57b6df1985.yml"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-02"
+}

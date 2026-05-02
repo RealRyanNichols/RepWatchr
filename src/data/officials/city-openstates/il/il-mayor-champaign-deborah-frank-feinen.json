@@ -1,0 +1,39 @@
+{
+  "id": "deborah-frank-feinen",
+  "name": "Deborah Frank Feinen",
+  "firstName": "Deborah",
+  "lastName": "Frank Feinen",
+  "party": "NP",
+  "level": "city",
+  "position": "Mayor",
+  "district": "Citywide",
+  "jurisdiction": "City of Champaign, Illinois",
+  "county": [],
+  "termStart": "Start date pending source review",
+  "termEnd": "2027-01-08",
+  "contactInfo": {
+    "office": "102 N. Neil St;Champaign, IL 61820",
+    "phone": "217-403-8720",
+    "email": "Deb.Feinen@champaignil.gov",
+    "website": "https://champaignil.gov/council/"
+  },
+  "bio": "Deborah Frank Feinen is listed as mayor of the City of Champaign, Illinois. This RepWatchr starter profile is source-seeded from OpenStates public municipality data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "IL",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://champaignil.gov/council/"
+    },
+    {
+      "title": "OpenStates public municipality record",
+      "url": "https://raw.githubusercontent.com/openstates/people/9d9a7f4a873a7e42cb405af0f6702770f2ae07a7/data/il/municipalities/Deborah-Frank-Feinen-e466c9d3-4df0-4dff-8e72-95d15b91d383.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://champaignil.gov/councilmember/deborah-frank-feinen/"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-02"
+}

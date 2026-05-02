@@ -1,0 +1,35 @@
+{
+  "id": "eric-mikkelson",
+  "name": "Eric Mikkelson",
+  "firstName": "Eric",
+  "lastName": "Mikkelson",
+  "party": "NP",
+  "level": "city",
+  "position": "Mayor",
+  "district": "Citywide",
+  "jurisdiction": "City of Prairie Village, Kansas",
+  "county": [],
+  "termStart": "Start date pending source review",
+  "termEnd": "2027-01-01",
+  "contactInfo": {
+    "office": "7700 Mission Road;Prairie Village, KS 66208",
+    "phone": "913-381-6464",
+    "email": "mayor@pvkansas.com",
+    "website": "https://www.pvkansas.com/governing-body/meet-the-mayor"
+  },
+  "bio": "Eric Mikkelson is listed as mayor of the City of Prairie Village, Kansas. This RepWatchr starter profile is source-seeded from OpenStates public municipality data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "KS",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.pvkansas.com/governing-body/meet-the-mayor"
+    },
+    {
+      "title": "OpenStates public municipality record",
+      "url": "https://raw.githubusercontent.com/openstates/people/9d9a7f4a873a7e42cb405af0f6702770f2ae07a7/data/ks/municipalities/Eric-Mikkelson-2b6b6438-dba4-47ed-b091-16f1bf8d5b53.yml"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-02"
+}

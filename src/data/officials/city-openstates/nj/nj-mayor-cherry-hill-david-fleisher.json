@@ -1,0 +1,35 @@
+{
+  "id": "david-fleisher",
+  "name": "David Fleisher",
+  "firstName": "David",
+  "lastName": "Fleisher",
+  "party": "NP",
+  "level": "city",
+  "position": "Mayor",
+  "district": "Citywide",
+  "jurisdiction": "City of Cherry Hill, New Jersey",
+  "county": [],
+  "termStart": "Start date pending source review",
+  "termEnd": "2027-12-31",
+  "contactInfo": {
+    "office": "820 Mercer St;Room 105;Cherry Hill, NJ 08002",
+    "phone": "856-488-7878",
+    "email": "DFleisher@chnj.gov",
+    "website": "https://www.chnj.gov/Directory.aspx?DID=9"
+  },
+  "bio": "David Fleisher is listed as mayor of the City of Cherry Hill, New Jersey. This RepWatchr starter profile is source-seeded from OpenStates public municipality data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "NJ",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.chnj.gov/Directory.aspx?DID=9"
+    },
+    {
+      "title": "OpenStates public municipality record",
+      "url": "https://raw.githubusercontent.com/openstates/people/9d9a7f4a873a7e42cb405af0f6702770f2ae07a7/data/nj/municipalities/David-Fleisher-f9feac66-0ee7-4e39-a0c6-33306faec98e.yml"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-02"
+}

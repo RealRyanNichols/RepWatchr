@@ -1,0 +1,35 @@
+{
+  "id": "chris-branscum",
+  "name": "Chris Branscum",
+  "firstName": "Chris",
+  "lastName": "Branscum",
+  "party": "NP",
+  "level": "city",
+  "position": "Mayor",
+  "district": "Citywide",
+  "jurisdiction": "City of Marysville, California",
+  "county": [],
+  "termStart": "Start date pending source review",
+  "termEnd": "2028-12-31",
+  "contactInfo": {
+    "office": "526 C Street;Marysville, CA 95901",
+    "phone": "530-749-3901",
+    "email": "cbranscum@marysville.ca.us",
+    "website": "https://www.marysville.ca.us/meet-the-mayor-council"
+  },
+  "bio": "Chris Branscum is listed as mayor of the City of Marysville, California. This RepWatchr starter profile is source-seeded from OpenStates public municipality data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "CA",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.marysville.ca.us/meet-the-mayor-council"
+    },
+    {
+      "title": "OpenStates public municipality record",
+      "url": "https://raw.githubusercontent.com/openstates/people/9d9a7f4a873a7e42cb405af0f6702770f2ae07a7/data/ca/municipalities/Chris-Branscum-d91abc98-9865-48ec-a397-21a580b919f1.yml"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-02"
+}

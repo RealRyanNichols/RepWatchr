@@ -1,0 +1,39 @@
+{
+  "id": "kelli-curtis",
+  "name": "Kelli Curtis",
+  "firstName": "Kelli",
+  "lastName": "Curtis",
+  "party": "NP",
+  "level": "city",
+  "position": "Mayor",
+  "district": "Citywide",
+  "jurisdiction": "City of Kirkland, Washington",
+  "county": [],
+  "termStart": "Start date pending source review",
+  "termEnd": "2027-12-31",
+  "contactInfo": {
+    "office": "123 Fifth Avenue;Kirkland, WA 98033",
+    "phone": "425-587-3000",
+    "email": "kcurtis@kirklandwa.gov",
+    "website": "https://www.kirklandwa.gov/Government/City-Council"
+  },
+  "bio": "Kelli Curtis is listed as mayor of the City of Kirkland, Washington. This RepWatchr starter profile is source-seeded from OpenStates public municipality data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "WA",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.kirklandwa.gov/Government/City-Council"
+    },
+    {
+      "title": "OpenStates public municipality record",
+      "url": "https://raw.githubusercontent.com/openstates/people/9d9a7f4a873a7e42cb405af0f6702770f2ae07a7/data/wa/municipalities/Kelli-Curtis-4be8ad85-79c4-4e34-a3f6-0a378355248f.yml"
+    },
+    {
+      "title": "Public source",
+      "url": "https://www.kirklandwa.gov/Whats-Happening/News/Mayor-Kelli-Curtis-Selected-to-Continue-as-Mayor-of-Kirkland"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-02"
+}

@@ -1,0 +1,35 @@
+{
+  "id": "greg-hines",
+  "name": "Greg Hines",
+  "firstName": "Greg",
+  "lastName": "Hines",
+  "party": "NP",
+  "level": "city",
+  "position": "Mayor",
+  "district": "Citywide",
+  "jurisdiction": "City of Rogers, Arkansas",
+  "county": [],
+  "termStart": "Start date pending source review",
+  "termEnd": "2028-12-31",
+  "contactInfo": {
+    "office": "301 W Chestnut St.;Rogers, AR 72756",
+    "phone": "479-621-1117",
+    "email": "Mayor@rogersar.gov",
+    "website": "https://www.rogersar.gov/738/Mayors-Office"
+  },
+  "bio": "Greg Hines is listed as mayor of the City of Rogers, Arkansas. This RepWatchr starter profile is source-seeded from OpenStates public municipality data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "AR",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.rogersar.gov/738/Mayors-Office"
+    },
+    {
+      "title": "OpenStates public municipality record",
+      "url": "https://raw.githubusercontent.com/openstates/people/9d9a7f4a873a7e42cb405af0f6702770f2ae07a7/data/ar/municipalities/Greg-Hines-4a61afcc-83c3-459d-8e03-03bfbb68a5c8.yml"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-02"
+}

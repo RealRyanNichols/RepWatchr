@@ -1,0 +1,35 @@
+{
+  "id": "teddy-milner",
+  "name": "Teddy Milner",
+  "firstName": "Teddy",
+  "lastName": "Milner",
+  "party": "NP",
+  "level": "city",
+  "position": "Mayor",
+  "district": "Citywide",
+  "jurisdiction": "City of Aiken, South Carolina",
+  "county": [],
+  "termStart": "Start date pending source review",
+  "termEnd": "2027-12-31",
+  "contactInfo": {
+    "office": "111 Chesterfield St S;Aiken, SC 29801",
+    "phone": "803-642-7600",
+    "email": "tmilner@cityofaikensc.gov",
+    "website": "https://www.cityofaikensc.gov/home/contact-us/contact-teddy-milner-mayor/"
+  },
+  "bio": "Teddy Milner is listed as mayor of the City of Aiken, South Carolina. This RepWatchr starter profile is source-seeded from OpenStates public municipality data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "SC",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.cityofaikensc.gov/home/contact-us/contact-teddy-milner-mayor/"
+    },
+    {
+      "title": "OpenStates public municipality record",
+      "url": "https://raw.githubusercontent.com/openstates/people/9d9a7f4a873a7e42cb405af0f6702770f2ae07a7/data/sc/municipalities/Teddy-Milner-f223a296-0219-434b-aa96-74eeee193bb6.yml"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-02"
+}

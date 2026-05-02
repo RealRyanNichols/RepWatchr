@@ -1,0 +1,35 @@
+{
+  "id": "rose-marie-angeloni",
+  "name": "Rose Marie Angeloni",
+  "firstName": "Rose Marie",
+  "lastName": "Angeloni",
+  "party": "R",
+  "level": "city",
+  "position": "Mayor",
+  "district": "Citywide",
+  "jurisdiction": "City of North Branford, Connecticut",
+  "county": [],
+  "termStart": "Start date pending source review",
+  "termEnd": "2027-11-30",
+  "contactInfo": {
+    "office": "909 Foxon Road;North Branford, CT 06471",
+    "phone": "203-484-6000",
+    "email": "rangeloni@northbranfordct.gov",
+    "website": "https://www.northbranfordct.gov/197/Town-Council"
+  },
+  "bio": "Rose Marie Angeloni is listed as mayor of the City of North Branford, Connecticut. This RepWatchr starter profile is source-seeded from OpenStates public municipality data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "CT",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.northbranfordct.gov/197/Town-Council"
+    },
+    {
+      "title": "OpenStates public municipality record",
+      "url": "https://raw.githubusercontent.com/openstates/people/9d9a7f4a873a7e42cb405af0f6702770f2ae07a7/data/ct/municipalities/Rose-Marie-Angeloni-3eee7b95-25f7-4006-a013-682c3e8b3ab3.yml"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-02"
+}

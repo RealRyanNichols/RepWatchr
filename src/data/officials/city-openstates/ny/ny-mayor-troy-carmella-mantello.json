@@ -1,0 +1,35 @@
+{
+  "id": "carmella-mantello",
+  "name": "Carmella Mantello",
+  "firstName": "Carmella",
+  "lastName": "Mantello",
+  "party": "NP",
+  "level": "city",
+  "position": "Mayor",
+  "district": "Citywide",
+  "jurisdiction": "City of Troy, New York",
+  "county": [],
+  "termStart": "Start date pending source review",
+  "termEnd": "2027-12-31",
+  "contactInfo": {
+    "office": "433 River Street;Troy, NY 12180",
+    "phone": "518-279-7156",
+    "email": "Carmella.mantello@troyny.gov",
+    "website": "https://www.troyny.gov/318/Mayors-Office"
+  },
+  "bio": "Carmella Mantello is listed as mayor of the City of Troy, New York. This RepWatchr starter profile is source-seeded from OpenStates public municipality data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "NY",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.troyny.gov/318/Mayors-Office"
+    },
+    {
+      "title": "OpenStates public municipality record",
+      "url": "https://raw.githubusercontent.com/openstates/people/9d9a7f4a873a7e42cb405af0f6702770f2ae07a7/data/ny/municipalities/Carmella-Mantello-5a3ed4fe-a83a-4d84-8d33-93d6e91f8cc7.yml"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-02"
+}

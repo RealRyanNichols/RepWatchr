@@ -1,0 +1,35 @@
+{
+  "id": "phillip-jones",
+  "name": "Phillip Jones",
+  "firstName": "Phillip",
+  "lastName": "Jones",
+  "party": "NP",
+  "level": "city",
+  "position": "Mayor",
+  "district": "Citywide",
+  "jurisdiction": "City of Newport News, Virginia",
+  "county": [],
+  "termStart": "Start date pending source review",
+  "termEnd": "2026-12-31",
+  "contactInfo": {
+    "office": "2400 Washington Ave.;10th Floor;Newport News, VA 23607",
+    "phone": "757-926-8403",
+    "email": "mayorsoffice@nnva.gov",
+    "website": "https://www.nnva.gov/2965/Office-of-Mayor-Phillip-Jones"
+  },
+  "bio": "Phillip Jones is listed as mayor of the City of Newport News, Virginia. This RepWatchr starter profile is source-seeded from OpenStates public municipality data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "VA",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.nnva.gov/2965/Office-of-Mayor-Phillip-Jones"
+    },
+    {
+      "title": "OpenStates public municipality record",
+      "url": "https://raw.githubusercontent.com/openstates/people/9d9a7f4a873a7e42cb405af0f6702770f2ae07a7/data/va/municipalities/Phillip-Jones-770a6b19-718a-4838-bb28-227155472d0f.yml"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-02"
+}

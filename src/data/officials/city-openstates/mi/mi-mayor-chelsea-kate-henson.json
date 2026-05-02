@@ -1,0 +1,34 @@
+{
+  "id": "kate-henson",
+  "name": "Kate Henson",
+  "firstName": "Kate",
+  "lastName": "Henson",
+  "party": "NP",
+  "level": "city",
+  "position": "Mayor",
+  "district": "Citywide",
+  "jurisdiction": "City of Chelsea, Michigan",
+  "county": [],
+  "termStart": "Start date pending source review",
+  "termEnd": "2029-11-01",
+  "contactInfo": {
+    "office": "305 S. Main St., Suite 100;Chelsea, MI 48118",
+    "phone": "734-475-1771",
+    "website": "https://city-chelsea.org/government"
+  },
+  "bio": "Kate Henson is listed as mayor of the City of Chelsea, Michigan. This RepWatchr starter profile is source-seeded from OpenStates public municipality data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "MI",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://city-chelsea.org/government"
+    },
+    {
+      "title": "OpenStates public municipality record",
+      "url": "https://raw.githubusercontent.com/openstates/people/9d9a7f4a873a7e42cb405af0f6702770f2ae07a7/data/mi/municipalities/Kate-Henson-73f67f1b-ad81-4bb7-a7fc-211e139110a4.yml"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-02"
+}

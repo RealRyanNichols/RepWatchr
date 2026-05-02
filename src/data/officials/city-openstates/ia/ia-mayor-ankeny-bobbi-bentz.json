@@ -1,0 +1,35 @@
+{
+  "id": "bobbi-bentz",
+  "name": "Bobbi Bentz",
+  "firstName": "Bobbi",
+  "lastName": "Bentz",
+  "party": "NP",
+  "level": "city",
+  "position": "Mayor",
+  "district": "Citywide",
+  "jurisdiction": "City of Ankeny, Iowa",
+  "county": [],
+  "termStart": "Start date pending source review",
+  "termEnd": "2029-12-31",
+  "contactInfo": {
+    "office": "410 W First Street;Ankeny, IA 50023",
+    "phone": "515-965-6400",
+    "email": "bbentz@ankenyiowa.gov",
+    "website": "https://www.ankenyiowa.gov/456/Mayor-City-Council"
+  },
+  "bio": "Bobbi Bentz is listed as mayor of the City of Ankeny, Iowa. This RepWatchr starter profile is source-seeded from OpenStates public municipality data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "IA",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.ankenyiowa.gov/456/Mayor-City-Council"
+    },
+    {
+      "title": "OpenStates public municipality record",
+      "url": "https://raw.githubusercontent.com/openstates/people/9d9a7f4a873a7e42cb405af0f6702770f2ae07a7/data/ia/municipalities/Bobbi-Bentz-52ec530d-e70c-488c-8778-309935fadcb8.yml"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-02"
+}

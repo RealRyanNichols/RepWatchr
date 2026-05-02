@@ -1,0 +1,48 @@
+{
+  "id": "peter-donovan",
+  "name": "Peter Donovan",
+  "firstName": "Peter",
+  "lastName": "Donovan",
+  "photo": "/images/officials/city-openstates/wa/peter-donovan.jpg",
+  "photoSourceUrl": "https://www.mountvernonwa.gov/ImageRepository/Document?documentId=15577",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "NP",
+  "level": "city",
+  "position": "Mayor",
+  "district": "Citywide",
+  "jurisdiction": "City of Mount Vernon, Washington",
+  "county": [],
+  "termStart": "2024-01-01",
+  "termEnd": "2027-12-31",
+  "contactInfo": {
+    "office": "910 Cleveland Avenue;Mount Vernon, WA 98273",
+    "phone": "360-336-6211",
+    "email": "mvmayor@mountvernonwa.gov",
+    "website": "https://www.mountvernonwa.gov/91/Mayor",
+    "socialMedia": {
+      "x": "https://x.com/mountvernonwa",
+      "twitter": "https://x.com/mountvernonwa",
+      "facebook": "https://facebook.com/Mt-Vernon-WA-154457071245372",
+      "youtube": "https://youtube.com/mountvernonwa"
+    }
+  },
+  "bio": "Peter Donovan is listed as mayor of the City of Mount Vernon, Washington. This RepWatchr starter profile is source-seeded from OpenStates public municipality data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "WA",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.mountvernonwa.gov/91/Mayor"
+    },
+    {
+      "title": "OpenStates public municipality record",
+      "url": "https://raw.githubusercontent.com/openstates/people/9d9a7f4a873a7e42cb405af0f6702770f2ae07a7/data/wa/municipalities/Peter-Donovan-f8fbe6ee-1377-42ce-ba09-ae0e095e2cfe.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://www.mountvernonwa.gov/ImageRepository/Document?documentId=15577"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-02"
+}

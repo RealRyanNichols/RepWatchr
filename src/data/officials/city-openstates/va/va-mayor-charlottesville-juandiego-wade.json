@@ -1,0 +1,35 @@
+{
+  "id": "juandiego-wade",
+  "name": "Juandiego Wade",
+  "firstName": "Juandiego",
+  "lastName": "Wade",
+  "party": "D",
+  "level": "city",
+  "position": "Mayor",
+  "district": "Citywide",
+  "jurisdiction": "City of Charlottesville, Virginia",
+  "county": [],
+  "termStart": "Start date pending source review",
+  "termEnd": "2027-12-31",
+  "contactInfo": {
+    "office": "605 E. Main Street;Charlottesville, VA 22902",
+    "phone": "434-326-3523",
+    "email": "wadej@charlottesville.gov",
+    "website": "https://www.charlottesville.gov/1482/Juandiego-Wade"
+  },
+  "bio": "Juandiego Wade is listed as mayor of the City of Charlottesville, Virginia. This RepWatchr starter profile is source-seeded from OpenStates public municipality data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "VA",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.charlottesville.gov/1482/Juandiego-Wade"
+    },
+    {
+      "title": "OpenStates public municipality record",
+      "url": "https://raw.githubusercontent.com/openstates/people/9d9a7f4a873a7e42cb405af0f6702770f2ae07a7/data/va/municipalities/Juandiego-Wade-d1261c3d-3dd7-4c2f-bba0-be41e4857a2c.yml"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-02"
+}

@@ -1,0 +1,35 @@
+{
+  "id": "george-patrick-mcleer-jr",
+  "name": "George Patrick McLeer, Jr.",
+  "firstName": "George Patrick (GP)",
+  "lastName": "McLeer",
+  "party": "NP",
+  "level": "city",
+  "position": "Mayor",
+  "district": "Citywide",
+  "jurisdiction": "City of Fountain Inn, South Carolina",
+  "county": [],
+  "termStart": "Start date pending source review",
+  "termEnd": "2027-11-30",
+  "contactInfo": {
+    "office": "200 North Main Street; Fountain Inn, SC 29644",
+    "phone": "864-862-4421",
+    "email": "gp.mcleer@fountaininn.org",
+    "website": "https://www.fountaininn.org/211/Mayor"
+  },
+  "bio": "George Patrick McLeer, Jr. is listed as mayor of the City of Fountain Inn, South Carolina. This RepWatchr starter profile is source-seeded from OpenStates public municipality data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "SC",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.fountaininn.org/211/Mayor"
+    },
+    {
+      "title": "OpenStates public municipality record",
+      "url": "https://raw.githubusercontent.com/openstates/people/9d9a7f4a873a7e42cb405af0f6702770f2ae07a7/data/sc/municipalities/George-Patrick-McLear-8def63bb-24f6-40cc-b95b-9eee73c20567.yml"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-02"
+}

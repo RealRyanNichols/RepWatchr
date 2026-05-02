@@ -1,0 +1,35 @@
+{
+  "id": "james-mosby",
+  "name": "James Mosby",
+  "firstName": "James",
+  "lastName": "Mosby",
+  "party": "NP",
+  "level": "city",
+  "position": "Mayor",
+  "district": "Citywide",
+  "jurisdiction": "City of Lompoc, California",
+  "county": [],
+  "termStart": "Start date pending source review",
+  "termEnd": "2026-12-31",
+  "contactInfo": {
+    "office": "100 Civic Center Plaza;Lompoc, CA 93436",
+    "phone": "805-736-1261",
+    "email": "j_mosby@ci.lompoc.ca.us",
+    "website": "https://www.cityoflompoc.com/government/our-city/your-city-council"
+  },
+  "bio": "James Mosby is listed as mayor of the City of Lompoc, California. This RepWatchr starter profile is source-seeded from OpenStates public municipality data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "CA",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.cityoflompoc.com/government/our-city/your-city-council"
+    },
+    {
+      "title": "OpenStates public municipality record",
+      "url": "https://raw.githubusercontent.com/openstates/people/9d9a7f4a873a7e42cb405af0f6702770f2ae07a7/data/ca/municipalities/James-Mosby-949706f7-ada5-491f-ba2c-41de5f60c36c.yml"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-02"
+}

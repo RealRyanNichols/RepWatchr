@@ -1,0 +1,35 @@
+{
+  "id": "leonardo-williams",
+  "name": "Leonardo Williams",
+  "firstName": "Leonardo",
+  "lastName": "Williams",
+  "party": "D",
+  "level": "city",
+  "position": "Mayor",
+  "district": "Citywide",
+  "jurisdiction": "City of Durham, North Carolina",
+  "county": [],
+  "termStart": "Start date pending source review",
+  "termEnd": "2027-12-04",
+  "contactInfo": {
+    "office": "101 City Hall Plaza;Durham, NC 27701",
+    "phone": "919-560-4333",
+    "email": "Leonardo.Williams@durhamnc.gov",
+    "website": "https://www.durhamnc.gov/4669/Mayor-Leonardo-Williams"
+  },
+  "bio": "Leonardo Williams is listed as mayor of the City of Durham, North Carolina. This RepWatchr starter profile is source-seeded from OpenStates public municipality data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "NC",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.durhamnc.gov/4669/Mayor-Leonardo-Williams"
+    },
+    {
+      "title": "OpenStates public municipality record",
+      "url": "https://raw.githubusercontent.com/openstates/people/9d9a7f4a873a7e42cb405af0f6702770f2ae07a7/data/nc/municipalities/Leonardo-Williams-f4e7ac9d-0c7f-4295-acbf-84df1d133fd4.yml"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-02"
+}

@@ -1,0 +1,35 @@
+{
+  "id": "shaun-rogers",
+  "name": "Shaun Rogers",
+  "firstName": "Shaun",
+  "lastName": "Rogers",
+  "party": "D",
+  "level": "city",
+  "position": "Mayor",
+  "district": "Citywide",
+  "jurisdiction": "City of Shippensburg, Pennsylvania",
+  "county": [],
+  "termStart": "Start date pending source review",
+  "termEnd": "2030-01-06",
+  "contactInfo": {
+    "office": "111 N. Fayette Street;P.O. Box 129;Shippensburg, PA 17257",
+    "phone": "717-609-9116",
+    "email": "srogers@shippensburg.pa.us",
+    "website": "https://borough.shippensburg.pa.us/Government/Officials/Mayor"
+  },
+  "bio": "Shaun Rogers is listed as mayor of the City of Shippensburg, Pennsylvania. This RepWatchr starter profile is source-seeded from OpenStates public municipality data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "PA",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://borough.shippensburg.pa.us/Government/Officials/Mayor"
+    },
+    {
+      "title": "OpenStates public municipality record",
+      "url": "https://raw.githubusercontent.com/openstates/people/9d9a7f4a873a7e42cb405af0f6702770f2ae07a7/data/pa/municipalities/Shaun-Rogers-053e02db-ee9a-45a2-aae5-178669ad14bb.yml"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-02"
+}

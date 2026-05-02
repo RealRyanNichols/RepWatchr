@@ -1,0 +1,35 @@
+{
+  "id": "kyle-hanson",
+  "name": "Kyle Hanson",
+  "firstName": "Kyle",
+  "lastName": "Hanson",
+  "party": "NP",
+  "level": "city",
+  "position": "Mayor",
+  "district": "Citywide",
+  "jurisdiction": "City of Barrington, New Jersey",
+  "county": [],
+  "termStart": "Start date pending source review",
+  "termEnd": "2027-12-31",
+  "contactInfo": {
+    "office": "229 Trenton Avenue;Barrington, NJ 08007",
+    "phone": "856-547-0706",
+    "email": "Mayor@barringtonboro.com",
+    "website": "https://barringtonboro.com/government/mayor-and-council-info/"
+  },
+  "bio": "Kyle Hanson is listed as mayor of the City of Barrington, New Jersey. This RepWatchr starter profile is source-seeded from OpenStates public municipality data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "NJ",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://barringtonboro.com/government/mayor-and-council-info/"
+    },
+    {
+      "title": "OpenStates public municipality record",
+      "url": "https://raw.githubusercontent.com/openstates/people/9d9a7f4a873a7e42cb405af0f6702770f2ae07a7/data/nj/municipalities/Kyle-Hanson-e18ea5ce-29d8-4388-bdda-409579ffb642.yml"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-02"
+}

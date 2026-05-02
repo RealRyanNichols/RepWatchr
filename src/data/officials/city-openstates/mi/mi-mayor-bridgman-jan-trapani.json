@@ -1,0 +1,35 @@
+{
+  "id": "jan-trapani",
+  "name": "Jan Trapani",
+  "firstName": "Jan",
+  "lastName": "Trapani",
+  "party": "NP",
+  "level": "city",
+  "position": "Mayor",
+  "district": "Citywide",
+  "jurisdiction": "City of Bridgman, Michigan",
+  "county": [],
+  "termStart": "Start date pending source review",
+  "termEnd": "2026-11-30",
+  "contactInfo": {
+    "office": "9765 Maple Street;Bridgman, MI 49106",
+    "phone": "269-465-5144",
+    "email": "jtrapani@bridgman.org",
+    "website": "https://www.bridgman.org/153/City-Council"
+  },
+  "bio": "Jan Trapani is listed as mayor of the City of Bridgman, Michigan. This RepWatchr starter profile is source-seeded from OpenStates public municipality data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "MI",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.bridgman.org/153/City-Council"
+    },
+    {
+      "title": "OpenStates public municipality record",
+      "url": "https://raw.githubusercontent.com/openstates/people/9d9a7f4a873a7e42cb405af0f6702770f2ae07a7/data/mi/municipalities/Jan-Trapani-37acea0f-1fb7-474b-a1a1-1878ae25a5c6.yml"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-02"
+}

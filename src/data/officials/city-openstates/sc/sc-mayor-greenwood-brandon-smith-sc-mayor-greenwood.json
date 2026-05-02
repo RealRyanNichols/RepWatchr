@@ -1,0 +1,42 @@
+{
+  "id": "brandon-smith-sc-mayor-greenwood",
+  "name": "Brandon Smith",
+  "firstName": "Brandon",
+  "lastName": "Smith",
+  "photo": "/images/officials/city-openstates/sc/brandon-smith-sc-mayor-greenwood.jpg",
+  "photoSourceUrl": "https://cms8.revize.com/revize/greenwoodsc/government/city%20council/Brandon%20Smith-03.jpg",
+  "photoCredit": "OpenStates public profile image source",
+  "party": "NP",
+  "level": "city",
+  "position": "Mayor",
+  "district": "Citywide",
+  "jurisdiction": "City of Greenwood, South Carolina",
+  "county": [],
+  "termStart": "Start date pending source review",
+  "termEnd": "2026-11-01",
+  "contactInfo": {
+    "office": "513 Lodge Drive; Greenwood, SC 29646",
+    "phone": "864-554-4535",
+    "email": "brandon.smith@gwdcity.com",
+    "website": "https://www.cityofgreenwoodsc.com/government/city_council.php"
+  },
+  "bio": "Brandon Smith is listed as mayor of the City of Greenwood, South Carolina. This RepWatchr starter profile is source-seeded from OpenStates public municipality data, official public links, and public profile photo sources where available.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "SC",
+  "sourceLinks": [
+    {
+      "title": "Official public profile",
+      "url": "https://www.cityofgreenwoodsc.com/government/city_council.php"
+    },
+    {
+      "title": "OpenStates public municipality record",
+      "url": "https://raw.githubusercontent.com/openstates/people/9d9a7f4a873a7e42cb405af0f6702770f2ae07a7/data/sc/municipalities/Brandon-Smith-a0eac124-d14c-421a-b2d7-c21cc772ee4b.yml"
+    },
+    {
+      "title": "Public profile photo source",
+      "url": "https://cms8.revize.com/revize/greenwoodsc/government/city%20council/Brandon%20Smith-03.jpg"
+    }
+  ],
+  "lastVerifiedAt": "2026-05-02"
+}
