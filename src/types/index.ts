@@ -282,6 +282,18 @@ export interface OfficialIdeologyProfile {
 
 export type NewsTag = "breaking" | "investigation" | "update" | "opinion" | "watchdog" | "election" | "corruption" | "transparency";
 
+export type NewsScope = "east-texas" | "texas" | "national";
+
+export type NewsPowerChannel =
+  | "officials"
+  | "school-boards"
+  | "attorneys"
+  | "media"
+  | "public-safety"
+  | "elections"
+  | "courts"
+  | "money";
+
 export interface NewsArticle {
   id: string;
   title: string;
@@ -295,6 +307,13 @@ export interface NewsArticle {
   author: string;
   publishedAt: string;
   featured: boolean;
+  scope?: NewsScope;
+  state?: string;
+  counties?: string[];
+  cities?: string[];
+  locationLabel?: string;
+  powerChannels?: NewsPowerChannel[];
+  sourceStatus?: "source_linked" | "needs_source_review";
 }
 
 // ============================================================

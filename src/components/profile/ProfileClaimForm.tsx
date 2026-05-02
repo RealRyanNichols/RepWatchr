@@ -13,7 +13,12 @@ type ProfileType =
   | "media_company"
   | "journalist"
   | "editor"
-  | "newsroom_leadership";
+  | "newsroom_leadership"
+  | "law_enforcement_agency"
+  | "sheriff"
+  | "police_chief"
+  | "public_safety_official"
+  | "oversight_agency";
 
 type ProfileClaimFormProps = {
   initialProfileType?: string;
@@ -31,6 +36,11 @@ function normalizeProfileType(value?: string): ProfileType {
     value === "journalist" ||
     value === "editor" ||
     value === "newsroom_leadership" ||
+    value === "law_enforcement_agency" ||
+    value === "sheriff" ||
+    value === "police_chief" ||
+    value === "public_safety_official" ||
+    value === "oversight_agency" ||
     value === "school_board"
   ) {
     return value;
@@ -245,6 +255,11 @@ export default function ProfileClaimForm({
                 <option value="journalist">Journalist / reporter</option>
                 <option value="editor">Editor</option>
                 <option value="newsroom_leadership">Newsroom leadership</option>
+                <option value="law_enforcement_agency">Law-enforcement agency</option>
+                <option value="sheriff">Sheriff</option>
+                <option value="police_chief">Police chief</option>
+                <option value="public_safety_official">Public-safety official</option>
+                <option value="oversight_agency">Oversight agency</option>
               </select>
             </label>
             <label className="block">

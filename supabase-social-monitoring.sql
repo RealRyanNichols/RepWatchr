@@ -17,6 +17,11 @@ create table if not exists public.profile_social_accounts (
       'journalist',
       'editor',
       'newsroom_leadership',
+      'law_enforcement_agency',
+      'sheriff',
+      'police_chief',
+      'public_safety_official',
+      'oversight_agency',
       'tribal_government',
       'public_agency'
     )

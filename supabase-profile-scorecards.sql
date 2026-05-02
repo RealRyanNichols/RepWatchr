@@ -18,7 +18,12 @@ create table if not exists public.profile_scorecard_votes (
       'media_company',
       'journalist',
       'editor',
-      'newsroom_leadership'
+      'newsroom_leadership',
+      'law_enforcement_agency',
+      'sheriff',
+      'police_chief',
+      'public_safety_official',
+      'oversight_agency'
     )
   ),
   target_id text not null,

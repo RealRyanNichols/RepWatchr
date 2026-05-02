@@ -11,8 +11,8 @@ const primaryLinks = [
   { href: "/school-boards", label: "Schools" },
   { href: "/attorneys", label: "Attorneys" },
   { href: "/media", label: "Media" },
-  { href: "/uap", label: "UAP" },
-  { href: "/faretta-ai", label: "AI" },
+  { href: "/public-safety", label: "Safety" },
+  { href: "/news", label: "News" },
 ];
 
 const moreLinks = [
@@ -20,9 +20,10 @@ const moreLinks = [
   { href: "/votes", label: "Votes" },
   { href: "/funding", label: "Funding" },
   { href: "/red-flags", label: "Red Flags" },
-  { href: "/news", label: "News" },
   { href: "/buildout", label: "Buildout" },
   { href: "/methodology", label: "Methodology" },
+  { href: "/faretta-ai", label: "Faretta AI" },
+  { href: "/uap", label: "UAP" },
 ];
 
 export default function Header() {

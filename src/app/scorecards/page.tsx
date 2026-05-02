@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { getAllOfficials, getAllScoreCards, getIssueCategories } from "@/lib/data";
-import { getAttorneyWatchProfiles, getMediaWatchProfiles } from "@/lib/power-watch";
+import { getAttorneyWatchProfiles, getMediaWatchProfiles, getPublicSafetyWatchProfiles } from "@/lib/power-watch";
 import { getProfileScorecardTargetType } from "@/lib/universal-scorecards";
 import LetterGradeBadge from "@/components/scores/LetterGradeBadge";
 import PartyBadge from "@/components/officials/PartyBadge";
@@ -13,7 +13,7 @@ import type { PublicPowerProfile } from "@/types/power-watch";
 export const metadata: Metadata = {
   title: "Universal Scorecards | RepWatchr",
   description:
-    "Scorecards for every RepWatchr public profile: officials, school-board members, attorneys, law firms, media companies, journalists, and editors.",
+    "Scorecards for every RepWatchr public profile: officials, school-board members, attorneys, law firms, media companies, journalists, editors, and public-safety profiles.",
 };
 
 type ScoredOfficial = {
@@ -28,7 +28,13 @@ function isScoredOfficial(item: ScoredOfficial | null): item is ScoredOfficial {
 function publicPowerPath(profile: PublicPowerProfile) {
   return profile.kind === "media-company" || profile.kind === "journalist" || profile.kind === "editor" || profile.kind === "newsroom-leadership"
     ? `/media/${profile.slug}`
-    : `/attorneys/${profile.slug}`;
+    : profile.kind === "law-enforcement-agency" ||
+        profile.kind === "sheriff" ||
+        profile.kind === "police-chief" ||
+        profile.kind === "public-safety-official" ||
+        profile.kind === "oversight-agency"
+      ? `/public-safety/${profile.slug}`
+      : `/attorneys/${profile.slug}`;
 }
 
 export default function ScorecardsPage() {
@@ -37,7 +43,8 @@ export default function ScorecardsPage() {
   const issueCategories = getIssueCategories();
   const attorneyProfiles = getAttorneyWatchProfiles();
   const mediaProfiles = getMediaWatchProfiles();
-  const powerProfiles = [...attorneyProfiles, ...mediaProfiles];
+  const publicSafetyProfiles = getPublicSafetyWatchProfiles();
+  const powerProfiles = [...attorneyProfiles, ...mediaProfiles, ...publicSafetyProfiles];
 
   const scoredOfficials = officials
     .map((official) => {
@@ -67,7 +74,7 @@ export default function ScorecardsPage() {
               </h1>
               <p className="mt-3 max-w-3xl text-sm font-semibold leading-6 text-slate-700 sm:text-base">
                 Elected officials, school-board members, attorneys, law firms, media companies, journalists, editors,
-                and future public-power profiles all use the same verified scorecard vote rule: one verified profile,
+                public-safety agencies, sheriffs, and police chiefs all use the same verified scorecard vote rule: one verified profile,
                 one vote per target.
               </p>
             </div>
@@ -212,7 +219,7 @@ export default function ScorecardsPage() {
         <section className="mt-8">
           <div>
             <p className="text-xs font-black uppercase tracking-[0.18em] text-red-700">New universal targets</p>
-            <h2 className="mt-1 text-2xl font-black text-slate-950">Attorneys, firms, media, journalists, and editors</h2>
+            <h2 className="mt-1 text-2xl font-black text-slate-950">Attorneys, firms, media, journalists, editors, and public safety</h2>
             <p className="mt-1 max-w-3xl text-sm font-semibold leading-6 text-slate-600">
               These profiles may not have source-backed vote records, but verified users can score them as public-power profiles.
               The scorecard vote becomes part of the universal algorithm.

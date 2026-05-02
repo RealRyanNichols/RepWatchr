@@ -33,6 +33,23 @@ const tagColors: Record<string, string> = {
   transparency: "bg-emerald-100 text-emerald-700",
 };
 
+const scopeLabels: Record<string, string> = {
+  "east-texas": "East Texas",
+  texas: "Texas",
+  national: "United States",
+};
+
+const channelLabels: Record<string, string> = {
+  attorneys: "Attorneys",
+  courts: "Courts",
+  elections: "Elections",
+  media: "Media",
+  money: "Money",
+  officials: "Officials",
+  "public-safety": "Public safety",
+  "school-boards": "School boards",
+};
+
 export default async function NewsArticlePage({
   params,
 }: {
@@ -69,6 +86,16 @@ export default async function NewsArticlePage({
 
       {/* Tags */}
       <div className="flex flex-wrap gap-2 mb-4">
+        {article.scope ? (
+          <span className="rounded-full bg-blue-950 px-3 py-1 text-xs font-bold uppercase tracking-wide text-white">
+            {scopeLabels[article.scope] ?? article.scope}
+          </span>
+        ) : null}
+        {article.locationLabel ? (
+          <span className="rounded-full bg-amber-100 px-3 py-1 text-xs font-bold uppercase tracking-wide text-amber-900">
+            {article.locationLabel}
+          </span>
+        ) : null}
         {article.tags.map((tag) => (
           <span
             key={tag}
@@ -78,6 +105,19 @@ export default async function NewsArticlePage({
           </span>
         ))}
       </div>
+
+      {article.powerChannels?.length ? (
+        <div className="mb-4 flex flex-wrap gap-2">
+          {article.powerChannels.map((channel) => (
+            <span
+              key={channel}
+              className="rounded-full border border-slate-200 bg-slate-50 px-3 py-1 text-xs font-black uppercase tracking-wide text-slate-700"
+            >
+              {channelLabels[channel] ?? channel}
+            </span>
+          ))}
+        </div>
+      ) : null}
 
       {/* Title */}
       <h1 className="text-3xl sm:text-4xl font-extrabold text-gray-900 leading-tight">
@@ -113,7 +153,38 @@ export default async function NewsArticlePage({
             )}
           </>
         )}
+        {article.sourceStatus === "source_linked" ? (
+          <>
+            <span>&middot;</span>
+            <span className="font-bold text-emerald-700">Source linked</span>
+          </>
+        ) : !article.sourceUrl ? (
+          <>
+            <span>&middot;</span>
+            <span className="font-bold text-red-700">Needs source review</span>
+          </>
+        ) : null}
       </div>
+
+      {(article.counties?.length || article.cities?.length || article.state) ? (
+        <div className="mt-4 flex flex-wrap gap-2">
+          {article.state ? (
+            <span className="rounded-full bg-blue-50 px-3 py-1 text-xs font-black text-blue-900">
+              {article.state}
+            </span>
+          ) : null}
+          {(article.counties ?? []).map((county) => (
+            <span key={county} className="rounded-full bg-slate-100 px-3 py-1 text-xs font-black text-slate-700">
+              {county} County
+            </span>
+          ))}
+          {(article.cities ?? []).map((city) => (
+            <span key={city} className="rounded-full bg-slate-100 px-3 py-1 text-xs font-black text-slate-700">
+              {city}
+            </span>
+          ))}
+        </div>
+      ) : null}
 
       {/* Share */}
       <div className="mt-4">

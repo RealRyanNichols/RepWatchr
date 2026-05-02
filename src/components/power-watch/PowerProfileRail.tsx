@@ -4,7 +4,7 @@ import PowerProfileAvatar from "@/components/power-watch/PowerProfileAvatar";
 
 interface PowerProfileRailProps {
   profiles: PublicPowerProfile[];
-  basePath: "/attorneys" | "/media";
+  basePath: "/attorneys" | "/media" | "/public-safety";
   kicker: string;
   title: string;
   detail: string;

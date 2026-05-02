@@ -1,6 +1,7 @@
 import type { PublicPowerProfile, PublicPowerStats } from "@/types/power-watch";
 import { attorneyWatchProfiles } from "@/data/attorney-watch";
 import { mediaWatchProfiles } from "@/data/media-watch";
+import { publicSafetyWatchProfiles } from "@/data/public-safety-watch";
 
 function sortProfiles(profiles: PublicPowerProfile[]) {
   return [...profiles].sort((a, b) => {
@@ -28,8 +29,24 @@ export function getMediaWatchProfileBySlug(slug: string): PublicPowerProfile | u
   return mediaWatchProfiles.find((profile) => profile.slug === slug);
 }
 
+export function getPublicSafetyWatchProfiles(): PublicPowerProfile[] {
+  return sortProfiles(publicSafetyWatchProfiles);
+}
+
+export function getPublicSafetyWatchProfileBySlug(slug: string): PublicPowerProfile | undefined {
+  return publicSafetyWatchProfiles.find((profile) => profile.slug === slug);
+}
+
 export function getPowerWatchStats(profiles: PublicPowerProfile[]): PublicPowerStats {
-  const peopleKinds = new Set(["attorney", "journalist", "editor", "newsroom-leadership"]);
+  const peopleKinds = new Set([
+    "attorney",
+    "journalist",
+    "editor",
+    "newsroom-leadership",
+    "sheriff",
+    "police-chief",
+    "public-safety-official",
+  ]);
   const counties = new Set(profiles.map((profile) => profile.county).filter(Boolean));
   const cities = new Set(profiles.map((profile) => profile.city).filter(Boolean));
 

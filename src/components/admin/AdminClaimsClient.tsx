@@ -43,6 +43,16 @@ function publicHrefForClaim(claim: Claim) {
     return `/media/${claim.profile_id}`;
   }
 
+  if (
+    claim.profile_type === "law_enforcement_agency" ||
+    claim.profile_type === "sheriff" ||
+    claim.profile_type === "police_chief" ||
+    claim.profile_type === "public_safety_official" ||
+    claim.profile_type === "oversight_agency"
+  ) {
+    return `/public-safety/${claim.profile_id}`;
+  }
+
   return `/officials/${claim.profile_id}`;
 }
 
@@ -54,6 +64,16 @@ function roleForClaim(claim: Claim) {
     claim.profile_type === "media_company"
   ) {
     return "journalist";
+  }
+
+  if (
+    claim.profile_type === "law_enforcement_agency" ||
+    claim.profile_type === "sheriff" ||
+    claim.profile_type === "police_chief" ||
+    claim.profile_type === "public_safety_official" ||
+    claim.profile_type === "oversight_agency"
+  ) {
+    return "researcher";
   }
 
   return "claimed_official";

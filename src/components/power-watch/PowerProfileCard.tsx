@@ -4,7 +4,7 @@ import PowerProfileAvatar from "@/components/power-watch/PowerProfileAvatar";
 
 interface PowerProfileCardProps {
   profile: PublicPowerProfile;
-  basePath: "/attorneys" | "/media";
+  basePath: "/attorneys" | "/media" | "/public-safety";
 }
 
 function statusLabel(status: PublicPowerProfile["profileStatus"]) {

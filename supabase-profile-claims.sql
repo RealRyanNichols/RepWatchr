@@ -26,7 +26,12 @@ create table if not exists public.profile_claims (
       'media_company',
       'journalist',
       'editor',
-      'newsroom_leadership'
+      'newsroom_leadership',
+      'law_enforcement_agency',
+      'sheriff',
+      'police_chief',
+      'public_safety_official',
+      'oversight_agency'
     )
   ),
   profile_id text not null,

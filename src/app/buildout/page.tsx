@@ -7,7 +7,7 @@ import {
 import { getRepWatchrDataStats } from "@/lib/data";
 import { getAllOfficialIdeologyProfiles, getOfficialProfileBuildoutStats } from "@/lib/ideology";
 import { getSchoolBoardCandidateUrl, getSchoolBoardDistrictUrl } from "@/lib/school-board-urls";
-import { getAttorneyWatchProfiles, getMediaWatchProfiles, getPowerWatchStats } from "@/lib/power-watch";
+import { getAttorneyWatchProfiles, getMediaWatchProfiles, getPowerWatchStats, getPublicSafetyWatchProfiles } from "@/lib/power-watch";
 import { getAttorneyBuildoutDashboard } from "@/data/attorney-buildout";
 import {
   getNationalBuildoutSummary,
@@ -284,6 +284,7 @@ export default function BuildoutDashboardPage() {
   const attorneyStats = getPowerWatchStats(attorneyProfiles);
   const attorneyBuildout = getAttorneyBuildoutDashboard(attorneyProfiles);
   const mediaStats = getPowerWatchStats(getMediaWatchProfiles());
+  const publicSafetyStats = getPowerWatchStats(getPublicSafetyWatchProfiles());
   const nationalSummary = getNationalBuildoutSummary();
   const geographic = getGeographicBuildoutDashboard();
   const officialBuildoutStats = getOfficialProfileBuildoutStats();
@@ -308,6 +309,7 @@ export default function BuildoutDashboardPage() {
     dataStats.nationalFederalStateOfficialGaps +
     allElectedOfficialGaps +
     stats.gapCount +
+    publicSafetyStats.needsBuildout +
     report.totalBrokenSources;
   const federalAndStateSeatPercent = dataStats.nationalFederalStateCompletionPercent;
 
@@ -371,6 +373,12 @@ export default function BuildoutDashboardPage() {
       href: "/attorneys",
     },
     {
+      label: "Public safety source profiles",
+      value: publicSafetyStats.totalProfiles,
+      status: `${publicSafetyStats.organizations} agencies or oversight sources and ${publicSafetyStats.people} public-safety people are source-seeded. ${publicSafetyStats.needsBuildout} need photos, TCOLE checks, policy records, complaint data, and case links.`,
+      href: "/public-safety?state=TX",
+    },
+    {
       label: "Public defender source map",
       value: attorneyBuildout.publicDefenderSourcesMapped,
       status: `${attorneyBuildout.publicDefenderSourcesMapped}/${attorneyBuildout.publicDefenderSourceTarget} official public-defense source paths mapped; ${attorneyBuildout.publicDefenderProfiles} public-defense records seeded.`,
@@ -431,6 +439,12 @@ export default function BuildoutDashboardPage() {
       value: attorneyBuildout.crossLinkedProfiles,
       status: `${attorneyBuildout.crossLinkedProfiles}/${attorneyBuildout.texasProfiles} Texas attorney-watch records have firm, person, case-file, public-record, or official relationship links.`,
       href: "/attorneys?state=TX",
+    },
+    {
+      label: "Public safety source links",
+      value: publicSafetyStats.sourceLinks,
+      status: `${publicSafetyStats.sourceLinks} agency pages, chief pages, sheriff pages, complaint paths, and oversight sources are attached to the public-safety lane.`,
+      href: "/public-safety?state=TX",
     },
     {
       label: "Public defender records",
@@ -556,9 +570,9 @@ export default function BuildoutDashboardPage() {
       detail: "Federal, state, local, school-board, tribal, courts, special districts, and public-power roles have source plans.",
     },
     {
-      label: "Attorney/media profiles",
-      value: attorneyStats.totalProfiles + mediaStats.totalProfiles,
-      detail: `${attorneyStats.totalProfiles} attorney/law-firm/public-defense profiles and ${mediaStats.totalProfiles} media/newsroom profiles are source-seeded.`,
+      label: "Power profiles",
+      value: attorneyStats.totalProfiles + mediaStats.totalProfiles + publicSafetyStats.totalProfiles,
+      detail: `${attorneyStats.totalProfiles} attorney/law-firm/public-defense profiles, ${mediaStats.totalProfiles} media/newsroom profiles, and ${publicSafetyStats.totalProfiles} public-safety profiles are source-seeded.`,
     },
     {
       label: "Attorney bar sources",
@@ -819,7 +833,7 @@ export default function BuildoutDashboardPage() {
                 <p className="text-xs font-black uppercase tracking-wide text-red-700">State dashboard</p>
                 <h3 className="text-xl font-black text-slate-950">National queue and loaded profile count</h3>
               </div>
-              <p className="text-xs font-semibold text-slate-500">Officials + school boards + attorneys + media</p>
+              <p className="text-xs font-semibold text-slate-500">Officials + school boards + attorneys + media + public safety</p>
             </div>
             <CompactGeoTable rows={geographic.stateRows} />
           </div>

@@ -5,7 +5,12 @@ export type PublicPowerKind =
   | "media-company"
   | "journalist"
   | "editor"
-  | "newsroom-leadership";
+  | "newsroom-leadership"
+  | "law-enforcement-agency"
+  | "sheriff"
+  | "police-chief"
+  | "public-safety-official"
+  | "oversight-agency";
 
 export type PublicPowerStatus =
   | "source_seeded"
@@ -25,7 +30,11 @@ export interface PublicPowerSource {
     | "public-record"
     | "case-file"
     | "review-directory"
-    | "article";
+    | "article"
+    | "agency-directory"
+    | "policy-record"
+    | "complaint-process"
+    | "oversight-record";
   lastCheckedAt: string;
 }
 
