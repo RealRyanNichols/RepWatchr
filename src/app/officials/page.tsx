@@ -119,9 +119,9 @@ export default async function OfficialsPage({
       detail: `${formatNumber(dataStats.officialsWithSourceLinks)} source-linked profiles and ${formatNumber(dataStats.officialsWithPhotos)} local photos; ${formatNumber(dataStats.missingReviewStatusOfficialProfiles)} legacy files still need review status.`,
     },
     {
-      label: "Tracked record sets",
-      value: formatNumber(dataStats.scoreCards),
-      detail: `${formatNumber(dataStats.fundingSummaries)} funding summaries, ${formatNumber(dataStats.redFlagItems)} red-flag items, and ${formatNumber(dataStats.bills)} vote files are loaded.`,
+      label: "Vote records loaded",
+      value: formatNumber(dataStats.publicVoteRecords),
+      detail: `${formatNumber(dataStats.publicVoteRecordRows)} public roll-call rows, ${formatNumber(dataStats.scoreCards)} scorecards, ${formatNumber(dataStats.fundingSummaries)} funding summaries, and ${formatNumber(dataStats.redFlagItems)} red-flag items are loaded.`,
     },
     {
       label: "School-board dossiers",
