@@ -1,6 +1,11 @@
 import fs from "fs";
 import path from "path";
 import { TEXAS_ROSTER_EXTENSIONS } from "@/data/texas-school-board-rosters";
+import {
+  TEXAS_SCHOOL_BOARD_2026_CYCLE,
+  TEXAS_SCHOOL_BOARD_ELECTION_WATCH,
+  type TexasSchoolBoardDistrictElectionWatch,
+} from "@/data/texas-school-board-elections";
 
 export type ResearchStatus = "queued" | "initial_dossier" | "stub" | "needs_review" | "complete" | string;
 
@@ -126,6 +131,7 @@ export interface DistrictResearch {
   officialRoster?: OfficialRosterMember[];
   feed?: SchoolBoardFeedItem[];
   sourceLinks?: SourceLink[];
+  electionWatch?: TexasSchoolBoardDistrictElectionWatch;
   investigationQueue?: string[];
 }
 
@@ -865,6 +871,24 @@ function mergeSources(...sourceGroups: Array<SourceLink[] | undefined>): SourceL
   return Array.from(byUrl.values());
 }
 
+function electionWatchForDistrict(slug: string): TexasSchoolBoardDistrictElectionWatch | undefined {
+  return TEXAS_SCHOOL_BOARD_ELECTION_WATCH.find((item) => item.districtSlug === slug);
+}
+
+function electionSourcesForDistrict(slug: string): SourceLink[] {
+  return (electionWatchForDistrict(slug)?.sourceLinks ?? []).map((source) => ({
+    url: source.url,
+    title: source.title,
+    accessed_date: source.accessedDate,
+    source_type: source.sourceType,
+  }));
+}
+
+function sourceLooksElectionRelated(source: SourceLink | undefined) {
+  const sourceText = `${source?.title ?? ""} ${source?.url ?? ""} ${source?.source_type ?? ""}`.toLowerCase();
+  return ["election", "candidate", "ballot", "campaign", "canvass", "runoff"].some((term) => sourceText.includes(term));
+}
+
 function mergeResearchGaps(...gapGroups: Array<string[] | undefined>): string[] {
   return Array.from(new Set(gapGroups.flatMap((group) => group ?? [])));
 }
@@ -972,6 +996,7 @@ export function getSchoolBoardDistricts(): DistrictResearch[] {
       summary: candidate.summary,
     }));
     district.sourceLinks = district.sourceLinks?.length ? district.sourceLinks : getDistrictSourceLinks(district.district_slug);
+    district.electionWatch = district.electionWatch ?? electionWatchForDistrict(district.district_slug);
     district.investigationQueue = district.investigationQueue?.length ? district.investigationQueue : getDistrictInvestigationQueue(district.district_slug);
     district.queueStatus = district.queueStatus ?? "needs_full_records_pull";
   }
@@ -988,7 +1013,8 @@ export function getSchoolBoardDistricts(): DistrictResearch[] {
         occupation: candidate.occupation,
       }));
       existing.feed = DISTRICT_FEED.filter((item) => item.district_slug === priority.district_slug);
-      existing.sourceLinks = DISTRICT_SOURCES[priority.district_slug] ?? [];
+      existing.sourceLinks = getDistrictSourceLinks(priority.district_slug);
+      existing.electionWatch = electionWatchForDistrict(priority.district_slug);
       existing.investigationQueue = getDistrictInvestigationQueue(priority.district_slug);
     } else {
       bySlug.set(priority.district_slug, {
@@ -998,7 +1024,8 @@ export function getSchoolBoardDistricts(): DistrictResearch[] {
         queueStatus: "needs_full_records_pull",
         officialRoster: OFFICIAL_ROSTERS[priority.district_slug] ?? [],
         feed: DISTRICT_FEED.filter((item) => item.district_slug === priority.district_slug),
-        sourceLinks: DISTRICT_SOURCES[priority.district_slug] ?? [],
+        sourceLinks: getDistrictSourceLinks(priority.district_slug),
+        electionWatch: electionWatchForDistrict(priority.district_slug),
         investigationQueue: getDistrictInvestigationQueue(priority.district_slug),
       });
     }
@@ -1027,9 +1054,8 @@ export function getDistrictFeed(slug: string): SchoolBoardFeedItem[] {
 
 export function getDistrictSourceLinks(slug: string): SourceLink[] {
   const explicitSources = DISTRICT_SOURCES[slug];
-  if (explicitSources?.length) return explicitSources;
   const statewideSource = statewideSourceForDistrict(slug);
-  return statewideSource ? [statewideSource] : [];
+  return mergeSources(explicitSources, statewideSource ? [statewideSource] : undefined, electionSourcesForDistrict(slug));
 }
 
 export function getDistrictInvestigationQueue(slug: string): string[] {
@@ -1305,6 +1331,12 @@ export function getSchoolBoardStats() {
     (district.sourceLinks?.length ?? 0) > 0 ||
     district.candidates.some((candidate) => (candidate.sources?.length ?? 0) > 0)
   ).length;
+  const districtsWithElectionSources = districts.filter((district) =>
+    Boolean(district.electionWatch) ||
+    (district.sourceLinks?.some(sourceLooksElectionRelated) ?? false) ||
+    district.candidates.some((candidate) => candidate.sources?.some(sourceLooksElectionRelated))
+  ).length;
+  const electionWatchDistricts = districts.filter((district) => district.electionWatch).length;
   const stubProfiles = candidates.filter((candidate) => candidate.status && IN_PROGRESS_STATUSES.has(candidate.status)).length;
   const completedDossiers = candidates.filter(
     (candidate) => candidate.status && !IN_PROGRESS_STATUSES.has(candidate.status)
@@ -1345,6 +1377,9 @@ export function getSchoolBoardStats() {
     districtsWithRosters,
     districtsWithMemberFiles,
     districtsWithSources,
+    districtsWithElectionSources,
+    electionWatchDistricts,
+    postElectionReviewDistricts: districts.length,
     stubProfiles,
     completedDossiers,
     districtsUnderTEAReview,
@@ -1352,5 +1387,6 @@ export function getSchoolBoardStats() {
     districtFeedItems: districts.reduce((total, district) => total + (district.feed?.length ?? 0), 0),
     districtsByCounty,
     statewideImport,
+    electionCycle: TEXAS_SCHOOL_BOARD_2026_CYCLE,
   };
 }

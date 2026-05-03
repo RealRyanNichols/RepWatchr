@@ -33,6 +33,7 @@ export default async function SchoolBoardsPage({
   const params = searchParams ? await searchParams : {};
   const selectedStateCode = getSelectedStateCode(params);
   const stats = getSchoolBoardStats();
+  const electionCycle = stats.electionCycle;
   const statewideImport = getStatewideSchoolBoardImportMeta();
   const districts = getSchoolBoardDistricts();
   const candidates = getSchoolBoardDossiers();
@@ -46,7 +47,6 @@ export default async function SchoolBoardsPage({
     ...districts.filter((district) => district.candidates.length < 7),
   ].slice(0, 12);
   const featuredDistricts = quickDistricts.slice(0, 9);
-  const fullRosterCount = districts.filter((district) => district.candidates.length >= 7).length;
   const profiledCandidates = candidates.map((candidate) => ({
     candidate,
     flags: getCandidateFlags(candidate),
@@ -139,7 +139,7 @@ export default async function SchoolBoardsPage({
               <div className="mt-6 grid grid-cols-2 gap-2 sm:grid-cols-4">
                 <HeroStat label="Schools" value={districts.length} />
                 <HeroStat label="Members" value={stats.candidates} />
-                <HeroStat label="Full boards" value={fullRosterCount} />
+                <HeroStat label="Election watch" value={stats.postElectionReviewDistricts} />
                 <HeroStat label="2026 ballot" value={stats.onBallot} />
               </div>
 
@@ -206,10 +206,63 @@ export default async function SchoolBoardsPage({
             Jump
           </span>
           <QuickJump href="#school-picker" label="Picker" />
+          <QuickJump href="#election-update" label="Election update" />
           <QuickJump href="#districts" label="Districts" />
           <QuickJump href="#member-ribbon" label="Members" />
           <QuickJump href="#ballot-2026" label="2026 ballot" />
           <QuickJump href="#sentiment" label="Live votes" />
+        </div>
+      </section>
+
+      <section id="election-update" className="border-b border-amber-200 bg-amber-50 scroll-mt-28">
+        <div className="mx-auto max-w-7xl px-4 py-8 sm:px-6 lg:px-8">
+          <div className="grid gap-5 lg:grid-cols-[minmax(0,1fr)_360px] lg:items-start">
+            <div>
+              <p className="text-xs font-black uppercase tracking-[0.18em] text-amber-800">Texas election update</p>
+              <h2 className="mt-2 text-3xl font-black leading-tight text-amber-950">May 2 results are in review mode.</h2>
+              <p className="mt-3 max-w-4xl text-sm font-semibold leading-6 text-amber-900">
+                {electionCycle.summary} {electionCycle.publicNote}
+              </p>
+              <div className="mt-4 flex flex-wrap gap-2">
+                {electionCycle.sourceLinks.map((source) => (
+                  <a
+                    key={source.url}
+                    href={source.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="rounded-full border border-amber-300 bg-white px-3 py-1.5 text-xs font-black uppercase tracking-wide text-amber-900 transition hover:border-red-300 hover:text-red-700"
+                  >
+                    {source.title}
+                  </a>
+                ))}
+              </div>
+            </div>
+            <div className="rounded-2xl border border-amber-300 bg-white p-4 shadow-sm">
+              <p className="text-xs font-black uppercase tracking-wide text-red-700">Live completion target</p>
+              <div className="mt-3 grid grid-cols-3 gap-2 text-center">
+                <MiniStat label="Review" value={stats.postElectionReviewDistricts} />
+                <MiniStat label="Watch" value={stats.electionWatchDistricts} />
+                <MiniStat label="Sources" value={stats.districtsWithElectionSources} />
+              </div>
+              <p className="mt-3 text-xs font-semibold leading-5 text-slate-600">
+                Every loaded Texas district is flagged for post-election review. Districts with explicit election links move faster.
+              </p>
+            </div>
+          </div>
+          <div className="mt-5 grid gap-3 md:grid-cols-4">
+            {electionCycle.milestones.map((milestone) => (
+              <article key={milestone.id} className="rounded-2xl border border-amber-200 bg-white p-4 shadow-sm">
+                <div className="flex items-center justify-between gap-2">
+                  <p className="text-xs font-black uppercase tracking-wide text-slate-500">{milestone.date}</p>
+                  <span className="rounded-full bg-amber-100 px-2 py-0.5 text-[11px] font-black uppercase text-amber-900">
+                    {milestone.status}
+                  </span>
+                </div>
+                <h3 className="mt-2 text-base font-black text-slate-950">{milestone.label}</h3>
+                <p className="mt-2 text-xs font-semibold leading-5 text-slate-600">{milestone.summary}</p>
+              </article>
+            ))}
+          </div>
         </div>
       </section>
 
@@ -295,8 +348,11 @@ export default async function SchoolBoardsPage({
           <div className="mx-auto max-w-7xl px-4 py-8 sm:px-6 lg:px-8">
             <div className="mb-5 flex flex-col gap-2 sm:flex-row sm:items-end sm:justify-between">
               <div>
-                <p className="text-xs font-black uppercase tracking-wide text-red-700">2026 ballot</p>
-                <h2 className="text-2xl font-black text-red-950">{ballotCandidates.length} trustees up this cycle</h2>
+                <p className="text-xs font-black uppercase tracking-wide text-red-700">Known 2026 trustee records</p>
+                <h2 className="text-2xl font-black text-red-950">{ballotCandidates.length} loaded trustees tied to the cycle</h2>
+                <p className="mt-1 max-w-3xl text-xs font-semibold leading-5 text-red-900">
+                  This is the loaded candidate/profile layer. Final winners still need local district or county result pages and canvass records.
+                </p>
               </div>
               <Link
                 href="/auth/signup"
@@ -394,8 +450,10 @@ export default async function SchoolBoardsPage({
             <Stat label="Source-seeded trustee profiles" value={stats.candidates} />
             <Stat label="TEA source rows imported" value={statewideImport.sourceRoleRowCount} />
             <Stat label="Source-backed districts" value={stats.districtsWithSources} />
+            <Stat label="Election source districts" value={stats.districtsWithElectionSources} />
             <Stat label="Counties covered" value={stats.counties} />
             <Stat label="On 2026 ballot" value={stats.onBallot} />
+            <Stat label="Post-election review districts" value={stats.postElectionReviewDistricts} />
             <Stat label="Source URLs cited" value={stats.sourceCount} />
             <Stat label="Documented good records" value={stats.goodRecordCount} />
             <Stat label="Voter questions / flags" value={stats.flagCount} />
@@ -427,6 +485,16 @@ function HeroStat({ label, value }: { label: string; value: number | string }) {
     <div className="rounded-xl border border-white/15 bg-white/10 px-3 py-3 shadow-sm">
       <p className="text-3xl font-black leading-none text-[#f8d884]">{displayValue}</p>
       <p className="mt-1 text-[11px] font-black uppercase tracking-wide text-blue-100">{label}</p>
+    </div>
+  );
+}
+
+function MiniStat({ label, value }: { label: string; value: number | string }) {
+  const displayValue = typeof value === "number" ? value.toLocaleString() : value;
+  return (
+    <div className="rounded-xl border border-amber-200 bg-amber-50 px-2 py-3">
+      <p className="text-xl font-black leading-none text-amber-950">{displayValue}</p>
+      <p className="mt-1 text-[10px] font-black uppercase tracking-wide text-amber-800">{label}</p>
     </div>
   );
 }

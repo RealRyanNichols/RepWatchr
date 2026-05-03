@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import { DAILY_NEWS_WATCH_SOURCES } from "@/data/daily-news-watch-sources";
 import { getAllNews, getOfficialById } from "@/lib/data";
 import type { NewsArticle, NewsPowerChannel, NewsScope } from "@/types";
 
@@ -224,6 +225,7 @@ export default async function NewsPage({
   const texasArticles = articles.filter((article) => articleScope(article) === "texas");
   const nationalArticles = articles.filter((article) => articleScope(article) === "national");
   const topStories = activeArticles.filter((article) => article.featured).slice(0, 6);
+  const clippingLanes = new Set(DAILY_NEWS_WATCH_SOURCES.flatMap((source) => source.powerChannels));
 
   return (
     <div className="bg-slate-100">
@@ -316,6 +318,23 @@ export default async function NewsPage({
           </div>
         </section>
 
+        <section className="mt-6 rounded-2xl border border-amber-300 bg-amber-50 p-4 shadow-sm">
+          <div className="flex flex-col gap-4 lg:flex-row lg:items-center lg:justify-between">
+            <div>
+              <p className="text-xs font-black uppercase tracking-[0.18em] text-amber-800">Daily clipping system</p>
+              <h2 className="text-xl font-black text-amber-950">Breaking public-source watch runs every morning.</h2>
+              <p className="mt-1 max-w-4xl text-sm font-semibold leading-6 text-amber-900">
+                RepWatchr now has a daily cron queue for public RSS and news-search links. It captures source-linked stories for review before they become public RepWatchr articles.
+              </p>
+            </div>
+            <div className="grid grid-cols-3 gap-2 text-center">
+              <MiniMetric label="Sources" value={DAILY_NEWS_WATCH_SOURCES.length} />
+              <MiniMetric label="Lanes" value={clippingLanes.size} />
+              <MiniMetric label="Status" value="Review" />
+            </div>
+          </div>
+        </section>
+
         <section className="mt-6">
           <div className="mb-3 flex items-end justify-between gap-3">
             <div>
@@ -388,6 +407,16 @@ export default async function NewsPage({
           </div>
         </section>
       </main>
+    </div>
+  );
+}
+
+function MiniMetric({ label, value }: { label: string; value: number | string }) {
+  const displayValue = typeof value === "number" ? value.toLocaleString() : value;
+  return (
+    <div className="rounded-xl border border-amber-200 bg-white px-3 py-3">
+      <p className="text-xl font-black text-amber-950">{displayValue}</p>
+      <p className="mt-1 text-[10px] font-black uppercase tracking-wide text-amber-800">{label}</p>
     </div>
   );
 }
