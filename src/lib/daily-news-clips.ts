@@ -65,34 +65,38 @@ function findTerms(source: DailyNewsWatchSource, text: string) {
 
 function parseRssClips(xml: string, source: DailyNewsWatchSource): DailyNewsClip[] {
   const items = xml.match(/<item\b[\s\S]*?<\/item>/gi) ?? [];
+  const clips: DailyNewsClip[] = [];
 
-  return items
-    .map((item) => {
-      const title = stripTags(extractTag(item, "title"));
-      const sourceUrl = stripTags(extractTag(item, "link"));
-      const summary = stripTags(extractTag(item, "description"));
-      const publishedAt = normalizeDate(extractTag(item, "pubDate"));
-      const matchedTerms = findTerms(source, `${title} ${summary}`);
+  for (const item of items) {
+    const title = stripTags(extractTag(item, "title"));
+    const sourceUrl = stripTags(extractTag(item, "link"));
+    const summary = stripTags(extractTag(item, "description"));
+    const publishedAt = normalizeDate(extractTag(item, "pubDate"));
+    const matchedTerms = findTerms(source, `${title} ${summary}`);
 
-      if (!title || !sourceUrl || matchedTerms.length === 0) return null;
+    if (!title || !sourceUrl || matchedTerms.length === 0) continue;
 
-      return {
-        id: hashClip(sourceUrl, title),
-        title,
-        summary: summary.slice(0, 420),
-        sourceUrl,
-        sourceName: source.label,
-        publishedAt,
-        scope: source.scope,
-        state: source.state,
-        counties: source.counties,
-        cities: source.cities,
-        powerChannels: source.powerChannels,
-        matchedTerms,
-        status: "needs_review" as const,
-      };
-    })
-    .filter((clip): clip is DailyNewsClip => Boolean(clip));
+    const clip: DailyNewsClip = {
+      id: hashClip(sourceUrl, title),
+      title,
+      summary: summary.slice(0, 420),
+      sourceUrl,
+      sourceName: source.label,
+      scope: source.scope,
+      powerChannels: source.powerChannels,
+      matchedTerms,
+      status: "needs_review",
+    };
+
+    if (publishedAt) clip.publishedAt = publishedAt;
+    if (source.state) clip.state = source.state;
+    if (source.counties?.length) clip.counties = source.counties;
+    if (source.cities?.length) clip.cities = source.cities;
+
+    clips.push(clip);
+  }
+
+  return clips;
 }
 
 async function fetchSource(source: DailyNewsWatchSource): Promise<{ clips: DailyNewsClip[]; error?: string }> {
