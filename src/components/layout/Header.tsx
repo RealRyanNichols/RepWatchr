@@ -8,6 +8,7 @@ import UserMenu from "@/components/auth/UserMenu";
 const primaryLinks = [
   { href: "/", label: "Home" },
   { href: "/officials", label: "Officials" },
+  { href: "/state-reps", label: "State Reps" },
   { href: "/school-boards", label: "Schools" },
   { href: "/attorneys", label: "Attorneys" },
   { href: "/media", label: "Media" },

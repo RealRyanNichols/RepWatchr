@@ -12,6 +12,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "",
     "/about",
     "/officials",
+    "/state-reps",
     "/school-boards",
     "/attorneys",
     "/media",

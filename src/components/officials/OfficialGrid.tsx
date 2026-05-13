@@ -28,18 +28,24 @@ const partyOptions: { value: Party | "all"; label: string }[] = [
 interface OfficialGridProps {
   officials: Official[];
   scoreCards: ScoreCard[];
+  defaultLevel?: GovernmentLevel | "all";
+  resetLabel?: string;
+  introText?: string;
 }
 
 export default function OfficialGrid({
   officials,
   scoreCards,
+  defaultLevel = "federal",
+  resetLabel,
+  introText,
 }: OfficialGridProps) {
   const searchParams = useSearchParams();
   const urlSearch = searchParams.get("search") ?? "";
   const urlLevel = searchParams.get("level") ?? "";
   const initialLevel = levelOptions.some((option) => option.value === urlLevel)
     ? (urlLevel as GovernmentLevel | "all")
-    : "federal";
+    : defaultLevel;
 
   const [searchQuery, setSearchQuery] = useState(urlSearch);
   const [levelFilter, setLevelFilter] = useState<GovernmentLevel | "all">(initialLevel);
@@ -135,7 +141,7 @@ export default function OfficialGrid({
 
   function resetFilters() {
     setSearchQuery("");
-    setLevelFilter("federal");
+    setLevelFilter(defaultLevel);
     setPartyFilter("all");
     setCountyFilter("all");
     setJurisdictionFilter("all");
@@ -163,7 +169,7 @@ export default function OfficialGrid({
               {activeLevelLabel} selected first.
             </h2>
             <p className="mt-1 max-w-3xl text-sm font-semibold leading-6 text-slate-200">
-              Start with federal officials, then drop into state, county, city, district, party, or name search.
+              {introText ?? "Start with federal officials, then drop into state, county, city, district, party, or name search."}
             </p>
           </div>
           <div className="rounded-xl border border-white/10 bg-white/10 px-4 py-3 text-left shadow-sm lg:text-right">
@@ -194,7 +200,7 @@ export default function OfficialGrid({
             onClick={resetFilters}
             className="rounded-xl border border-red-200 bg-red-50 px-4 py-3 text-sm font-black text-red-800 shadow-sm transition hover:border-red-300 hover:bg-white"
           >
-            Reset to Federal
+            {resetLabel ?? `Reset to ${levelOptions.find((option) => option.value === defaultLevel)?.label ?? "Federal"}`}
           </button>
         </div>
 

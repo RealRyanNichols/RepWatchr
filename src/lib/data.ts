@@ -398,6 +398,27 @@ export function getRepWatchrDataStats() {
   const stateLegislativeProfiles = officials.filter(
     (official) => official.level === "state" && stateLegislativePositions.has(official.position),
   );
+  const lowerStateLegislativePositions = new Set([
+    "State Representative",
+    "Assemblymember",
+    "Delegate",
+    "Councilmember",
+    "Territorial Representative",
+  ]);
+  const upperStateLegislativePositions = new Set(["State Senator", "Territorial Senator"]);
+  const voteRecordOfficialIds = new Set(voteRecords.map((record) => record.officialId));
+  const stateRepresentativeProfilesLoaded = stateLegislativeProfiles.filter((official) =>
+    lowerStateLegislativePositions.has(official.position),
+  ).length;
+  const stateSenatorProfilesLoaded = stateLegislativeProfiles.filter((official) =>
+    upperStateLegislativePositions.has(official.position),
+  ).length;
+  const stateLegislatorProfilesWithPhotos = stateLegislativeProfiles.filter((official) =>
+    Boolean(official.photo),
+  ).length;
+  const stateLegislatorProfilesWithVoteRecords = stateLegislativeProfiles.filter((official) =>
+    voteRecordOfficialIds.has(official.id),
+  ).length;
   const texasHouseProfilesLoaded = officials.filter(
     (official) =>
       official.level === "state" &&
@@ -521,6 +542,11 @@ export function getRepWatchrDataStats() {
     federalSenateExpectedSeats: FEDERAL_EXPECTED_SEATS.senate,
     federalProfileGaps: Math.max(0, federalExpectedSeats - federalProfilesLoaded),
     stateLegislatorProfilesLoaded,
+    stateRepresentativeProfilesLoaded,
+    stateSenatorProfilesLoaded,
+    stateLegislatorProfilesWithPhotos,
+    stateLegislatorProfilesMissingPhotos: Math.max(0, stateLegislatorProfilesLoaded - stateLegislatorProfilesWithPhotos),
+    stateLegislatorProfilesWithVoteRecords,
     stateLegislatureExpectedSeats,
     stateLegislatureJurisdictionsLoaded,
     stateExecutiveProfilesLoaded,

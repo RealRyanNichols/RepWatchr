@@ -11,6 +11,7 @@ import type { GovernmentLevel, Official } from "@/types";
 import { getAllNationalJurisdictions, getNationalBuildoutSummary, nationalGovernmentScopes } from "@/data/national-buildout";
 import { countByState, getSelectedStateCode } from "@/lib/state-scope";
 import { getOfficialProfileBuildoutStats } from "@/lib/ideology";
+import { getStateLegislatureBuildoutStats } from "@/lib/state-legislature";
 
 export const metadata: Metadata = {
   title: "National Elected Officials Directory",
@@ -79,6 +80,7 @@ export default async function OfficialsPage({
   const buildoutStats = getOfficialProfileBuildoutStats();
   const jurisdictions = getAllNationalJurisdictions();
   const nationalSummary = getNationalBuildoutSummary();
+  const stateLegislatureStats = getStateLegislatureBuildoutStats();
   const profileCountsByState = countByState(officials, (official) => official.state, "TX");
   const selectedState = jurisdictions.find((state) => state.code === selectedStateCode);
   const selectedOfficials = selectedStateCode
@@ -109,14 +111,19 @@ export default async function OfficialsPage({
   );
   const statCards = [
     {
-      label: "Federal/state officials",
-      value: formatNumber(dataStats.federalAndStateOfficeProfilesLoaded),
-      detail: `${dataStats.federalProfilesLoaded}/${dataStats.federalExpectedSeats} current federal seats plus ${formatNumber(dataStats.stateLegislatorProfilesLoaded)} state-legislative profiles and ${formatNumber(dataStats.stateExecutiveProfilesLoaded)} statewide executive/public-office profiles. ${dataStats.nationalFederalStateCompletionPercent}% of the broad federal/state benchmark is live.`,
+      label: "Statehouse profiles",
+      value: formatNumber(stateLegislatureStats.totalProfiles),
+      detail: `${formatNumber(stateLegislatureStats.lowerChamberProfiles)} state reps/delegates and ${formatNumber(stateLegislatureStats.upperChamberProfiles)} state senators across ${formatNumber(stateLegislatureStats.jurisdictionsLoaded)} jurisdictions.`,
+    },
+    {
+      label: "Federal seats",
+      value: `${dataStats.federalProfilesLoaded}/${dataStats.federalExpectedSeats}`,
+      detail: `${formatNumber(dataStats.federalHouseProfilesLoaded)} U.S. House profiles and ${formatNumber(dataStats.federalSenateProfilesLoaded)} U.S. Senate profiles are live before the deeper local buildout.`,
     },
     {
       label: "Source-seeded profiles",
       value: formatNumber(dataStats.sourceSeededOfficialProfiles),
-      detail: `${formatNumber(dataStats.officialsWithSourceLinks)} source-linked profiles and ${formatNumber(dataStats.officialsWithPhotos)} local photos; ${formatNumber(dataStats.missingReviewStatusOfficialProfiles)} legacy files still need review status.`,
+      detail: `${formatNumber(dataStats.officialsWithSourceLinks)} source-linked profiles and ${formatNumber(dataStats.officialsWithPhotos)} local photos; ${formatNumber(stateLegislatureStats.profilesMissingPhotos)} state-legislative profiles still need photos.`,
     },
     {
       label: "Vote records loaded",
@@ -365,6 +372,12 @@ function OfficialsCommandDeck({
               className="shrink-0 rounded-full border border-blue-300/40 bg-blue-500/15 px-3 py-1.5 text-xs font-black text-blue-100 transition hover:bg-blue-500/25"
             >
               National federal feed
+            </Link>
+            <Link
+              href="/state-reps"
+              className="shrink-0 rounded-full border border-[#d5aa3f]/70 bg-[#d5aa3f] px-3 py-1.5 text-xs font-black text-slate-950 transition hover:bg-[#f0c75f]"
+            >
+              State reps command
             </Link>
             {quickStates.map((state) => (
               <Link
