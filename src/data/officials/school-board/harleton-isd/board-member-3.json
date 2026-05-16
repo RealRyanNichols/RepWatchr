@@ -1,30 +1,32 @@
 {
-  "id": "harleton-isd-board-3",
-  "name": "Glen Shafer",
-  "firstName": "Glen",
-  "lastName": "Shafer",
+  "id": "harvey-fox-harleton-isd",
+  "name": "Harvey Fox",
+  "firstName": "Harvey",
+  "lastName": "Fox",
   "party": "NP",
   "level": "school-board",
   "position": "School Board Secretary",
   "district": "Place 3",
   "jurisdiction": "Harleton ISD",
   "county": [
-    "Harrison"
+    "Harrison County"
   ],
-  "termStart": "2023-05-01",
-  "termEnd": "2027-05-01",
+  "state": "TX",
+  "termStart": "2018-11-01",
+  "termEnd": "2026-11-01",
   "contactInfo": {
-    "office": "12752 FM 1404, Harleton, TX 75651",
-    "phone": "(903) 777-3261",
-    "website": "https://www.harletonisd.com/board"
+    "office": "17000 State Hwy 154, Harleton, TX 75651",
+    "phone": "(903) 777-2372",
+    "email": "foxharvey@harletonisd.net",
+    "website": "https://harletonisd.net/76025_3"
   },
-  "bio": "Glen Shafer serves as Secretary of the Harleton ISD Board of Trustees. He focuses on budget oversight and maintaining the close community ties that make Harleton ISD a special place for families.",
+  "bio": "Harvey Fox is listed by Harleton ISD as board Secretary and Place 3 trustee, elected in November 2018 with a term expiring in November 2026. The 2026 term date makes this a high-priority profile for ballot, vote, disclosure, and meeting-minutes review.",
   "sourceLinks": [
     {
-      "title": "Public office website",
-      "url": "https://www.harletonisd.com/board"
+      "title": "Harleton ISD School Board Information",
+      "url": "https://harletonisd.net/76025_3"
     }
   ],
-  "reviewStatus": "needs_source_review",
-  "lastVerifiedAt": "2026-05-01"
+  "reviewStatus": "source_seeded",
+  "lastVerifiedAt": "2026-05-16"
 }

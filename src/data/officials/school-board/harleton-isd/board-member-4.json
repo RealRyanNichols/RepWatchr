@@ -1,0 +1,40 @@
+{
+  "id": "kevin-evers-harleton-isd",
+  "name": "Kevin Evers",
+  "firstName": "Kevin",
+  "lastName": "Evers",
+  "party": "NP",
+  "level": "school-board",
+  "position": "School Board Vice President",
+  "district": "Place 4",
+  "jurisdiction": "Harleton ISD",
+  "county": [
+    "Harrison County"
+  ],
+  "state": "TX",
+  "termStart": "2024-02-01",
+  "termEnd": "2026-11-01",
+  "contactInfo": {
+    "office": "17000 State Hwy 154, Harleton, TX 75651",
+    "phone": "(903) 777-2372",
+    "email": "everskevin@harletonisd.net",
+    "website": "https://harletonisd.net/76025_3"
+  },
+  "bio": "Kevin Evers is listed by Harleton ISD as board Vice President and Place 4 trustee, appointed in February 2024 with a term expiring in November 2026. RepWatchr applies the same scrutiny here as every other trustee: appointment records, votes, attendance, Chapter 171 disclosures, recusals, vendors, campaign records, and public-source family or employment ties must be checked before any score-moving conclusion.",
+  "sourceLinks": [
+    {
+      "title": "Harleton ISD School Board Information",
+      "url": "https://harletonisd.net/76025_3"
+    },
+    {
+      "title": "Harleton ISD BoardBook minutes with 2025-2026 votes",
+      "url": "https://meetings.boardbook.org/Documents/DownloadPDF/92d185dc-6035-4ae5-9435-c52b1c97a761?org=1864"
+    },
+    {
+      "title": "TEA Texas School Directory 2009-2010 Harleton JH listing",
+      "url": "https://tealprod.tea.state.tx.us/TEA.AskTED.TSD/TSDfiles/tsd2010/not_tagged/school_list.pdf"
+    }
+  ],
+  "reviewStatus": "source_seeded",
+  "lastVerifiedAt": "2026-05-16"
+}

@@ -1,0 +1,32 @@
+{
+  "id": "patrick-mcgill-harleton-isd",
+  "name": "Patrick McGill",
+  "firstName": "Patrick",
+  "lastName": "McGill",
+  "party": "NP",
+  "level": "school-board",
+  "position": "School Board Trustee",
+  "district": "Place 6",
+  "jurisdiction": "Harleton ISD",
+  "county": [
+    "Harrison County"
+  ],
+  "state": "TX",
+  "termStart": "2016-11-01",
+  "termEnd": "2028-11-01",
+  "contactInfo": {
+    "office": "17000 State Hwy 154, Harleton, TX 75651",
+    "phone": "(903) 777-2372",
+    "email": "mcgillpat@harletonisd.net",
+    "website": "https://harletonisd.net/76025_3"
+  },
+  "bio": "Patrick McGill is listed by Harleton ISD as Place 6 trustee, elected in November 2016 with a term expiring in November 2028. This long-tenure profile needs the same deep review as every trustee: voting record, disclosures, recusal history, vendor relationships, family employment, and public-comment record.",
+  "sourceLinks": [
+    {
+      "title": "Harleton ISD School Board Information",
+      "url": "https://harletonisd.net/76025_3"
+    }
+  ],
+  "reviewStatus": "source_seeded",
+  "lastVerifiedAt": "2026-05-16"
+}

@@ -217,6 +217,7 @@ for (const extension of TEXAS_ROSTER_EXTENSIONS) {
 }
 
 const ACCESSED_DATE = "2026-04-24";
+const CURRENT_SOURCE_ACCESSED_DATE = "2026-05-16";
 const STATEWIDE_TRUSTEE_PATH = path.join(
   process.cwd(),
   "src",
@@ -233,7 +234,9 @@ let schoolBoardDistrictCache: DistrictResearch[] | undefined;
 
 const DISTRICT_SOURCES: Record<string, SourceLink[]> = {
   harleton_isd: [
-    { url: "https://www.harletonisd.net/111667_2", title: "Harleton ISD Board of Trustees", accessed_date: ACCESSED_DATE, source_type: "district_official" },
+    { url: "https://harletonisd.net/76025_3", title: "Harleton ISD School Board Information", accessed_date: CURRENT_SOURCE_ACCESSED_DATE, source_type: "district_official" },
+    { url: "https://meetings.boardbook.org/Public/Organization/1864", title: "Harleton ISD BoardBook public meeting portal", accessed_date: CURRENT_SOURCE_ACCESSED_DATE, source_type: "board_minutes" },
+    { url: "https://s3.amazonaws.com/scschoolfiles/6323/editable_meh_2024-25_employee_handbook.pdf", title: "Harleton ISD 2024-2025 Employee Handbook", accessed_date: CURRENT_SOURCE_ACCESSED_DATE, source_type: "district_official" },
   ],
   marshall_isd: [
     { url: "https://www.marshallisd.com/page/school-board", title: "Marshall ISD School Board", accessed_date: ACCESSED_DATE, source_type: "district_official" },
@@ -911,6 +914,197 @@ function normalizeStatewideCandidate(candidate: CandidateDossier): CandidateDoss
   };
 }
 
+const harletonBoardSource: SourceLink = {
+  url: "https://harletonisd.net/76025_3",
+  title: "Harleton ISD School Board Information",
+  accessed_date: CURRENT_SOURCE_ACCESSED_DATE,
+  source_type: "district_official",
+};
+
+const harletonBoardMinutesSource: SourceLink = {
+  url: "https://meetings.boardbook.org/Documents/DownloadPDF/92d185dc-6035-4ae5-9435-c52b1c97a761?org=1864",
+  title: "Harleton ISD BoardBook minutes with 2025-2026 votes",
+  accessed_date: CURRENT_SOURCE_ACCESSED_DATE,
+  source_type: "board_minutes",
+};
+
+const harletonCraigHistoricSource: SourceLink = {
+  url: "https://tealprod.tea.state.tx.us/TEA.AskTED.TSD/TSDfiles/tsd2010/not_tagged/school_list.pdf",
+  title: "TEA Texas School Directory 2009-2010 Harleton JH listing",
+  accessed_date: CURRENT_SOURCE_ACCESSED_DATE,
+  source_type: "tea_directory",
+};
+
+const HARLETON_CURRENT_BOARD_OVERLAYS: Record<string, Partial<CandidateDossier>> = {
+  ben_wilson_harleton_isd: {
+    seat: "Place 1",
+    role: "Trustee",
+    election_date: "Elected 11/2024; current term expires 11/2028",
+    summary: "Ben Wilson is listed by Harleton ISD as Place 1 trustee, elected in November 2024 with a term expiring in November 2028.",
+    sources: [harletonBoardSource],
+    status: "needs_review",
+    last_updated: CURRENT_SOURCE_ACCESSED_DATE,
+  },
+  tim_skaggs_harleton_isd: {
+    seat: "Place 2",
+    role: "Trustee",
+    election_date: "Elected 11/2024; current term expires 11/2028",
+    summary: "Tim Skaggs is listed by Harleton ISD as Place 2 trustee, elected in November 2024 with a term expiring in November 2028.",
+    sources: [harletonBoardSource],
+    status: "needs_review",
+    last_updated: CURRENT_SOURCE_ACCESSED_DATE,
+  },
+  harvey_fox_harleton_isd: {
+    seat: "Place 3",
+    role: "Secretary",
+    election_date: "Elected 11/2018; current term expires 11/2026",
+    on_2026_ballot: true,
+    summary: "Harvey Fox is listed by Harleton ISD as board Secretary and Place 3 trustee, elected in November 2018 with a term expiring in November 2026.",
+    sources: [harletonBoardSource],
+    status: "needs_review",
+    last_updated: CURRENT_SOURCE_ACCESSED_DATE,
+  },
+  kevin_evers_harleton_isd: {
+    seat: "Place 4",
+    role: "Vice President",
+    election_date: "Appointed 2/2024; current term expires 11/2026",
+    on_2026_ballot: true,
+    summary:
+      "Kevin Evers is listed by Harleton ISD as board Vice President and Place 4 trustee, appointed in February 2024 with a term expiring in November 2026. RepWatchr applies the same conflict, disclosure, vote, vendor, and public-record review standard to this profile as every other trustee.",
+    research_gaps: [
+      "Pull the February 2024 appointment minutes, oath, application packet if public, and any candidate filings tied to the Place 4 vacancy.",
+      "Review Harleton ISD minutes from Kevin Evers's appointment through 2026 for personnel, stipend, budget, tax-rate, insurance, policy, vendor, and closed-session votes.",
+      "Verify from public records whether Craig Evers has any current Harleton ISD employment, vendor, consultant, volunteer, church/nonprofit, or official-capacity connection relevant to board disclosure rules.",
+      "Verify any claimed family relationship between Kevin Evers and Craig Evers from a public source before treating it as a score factor.",
+      "Check Chapter 171 disclosure/recusal records, board packets, local policy BBFA, and agendas for any matter involving relatives, employers, nonprofits, vendors, or related entities.",
+    ],
+    sources: [harletonBoardSource, harletonBoardMinutesSource, harletonCraigHistoricSource],
+    status: "needs_review",
+    last_updated: CURRENT_SOURCE_ACCESSED_DATE,
+    about_public_record: {
+      conflicts_of_interest_inventory: [
+        {
+          type: "standard_family_employment_conflict_check",
+          fact_label: "REQUIRES_FURTHER_EVIDENCE",
+          severity: "low",
+          source_url: harletonCraigHistoricSource.url,
+          description:
+            "Standard scrutiny item: TEA's 2009-2010 Texas School Directory lists Craig Evers with Harleton JH, and Harleton ISD currently lists Kevin Evers on the board. Verify current employment, relationship, disclosure, and recusal records before scoring this as anything more than a conflict-review lead.",
+        },
+      ],
+      board_performance_incumbents_only: {
+        notable_votes: [
+          {
+            meeting_date: "2025-2026 board minutes",
+            item: "Approved Student Code of Conduct, local policy updates, stipend scale, proposed budget, proposed tax rate, insurance quote proposal, Region 7 ESC eAgreements, and out-of-state band trip items in the posted minutes.",
+            vote: "For",
+            board_outcome: "Motion carried on each listed item in the posted minutes.",
+            source_url: harletonBoardMinutesSource.url,
+          },
+        ],
+        committee_assignments: [],
+        meeting_attendance_pct: null,
+        meetings_missed_count: null,
+      },
+      about_summary_narrative:
+        "Current public records confirm Kevin Evers as Harleton ISD Place 4 / Vice President and show him voting on posted 2025-2026 board items. The Craig Evers-related lead is treated as a normal conflict-screening lead, not a protected exception and not a scored allegation until public records establish current relevance, relationship, disclosure duties, or recusal failures.",
+    },
+  },
+  brian_fitzgerald_harleton_isd: {
+    seat: "Place 5",
+    role: "Trustee",
+    election_date: "Elected 11/2024; current term expires 11/2028",
+    summary: "Brian Fitzgerald is listed by Harleton ISD as Place 5 trustee, elected in November 2024 with a term expiring in November 2028.",
+    sources: [harletonBoardSource],
+    status: "needs_review",
+    last_updated: CURRENT_SOURCE_ACCESSED_DATE,
+  },
+  pat_mcgill_harleton_isd: {
+    seat: "Place 6",
+    role: "Trustee",
+    election_date: "Elected 11/2016; current term expires 11/2028",
+    summary: "Patrick McGill is listed by Harleton ISD as Place 6 trustee, elected in November 2016 with a term expiring in November 2028.",
+    sources: [harletonBoardSource],
+    status: "needs_review",
+    last_updated: CURRENT_SOURCE_ACCESSED_DATE,
+  },
+  jacob_muehlstein_harleton_isd: {
+    seat: "Place 7",
+    role: "President",
+    election_date: "Elected 11/2018; current term expires 11/2026",
+    on_2026_ballot: true,
+    summary: "Jacob Muehlstein is listed by Harleton ISD as board President and Place 7 trustee, elected in November 2018 with a term expiring in November 2026.",
+    sources: [harletonBoardSource],
+    status: "needs_review",
+    last_updated: CURRENT_SOURCE_ACCESSED_DATE,
+  },
+};
+
+function mergeConflictRecords(...groups: Array<ConflictRecord[] | undefined>): ConflictRecord[] | undefined {
+  const merged = groups.flatMap((group) => group ?? []);
+  if (merged.length === 0) return undefined;
+  return merged.filter((record, index, records) => records.findIndex((item) => item.description === record.description) === index);
+}
+
+function mergeVotes(...groups: Array<VoteRecord[] | undefined>): VoteRecord[] | undefined {
+  const merged = groups.flatMap((group) => group ?? []);
+  if (merged.length === 0) return undefined;
+  return merged.filter((record, index, records) => records.findIndex((item) => `${item.meeting_date}-${item.item}` === `${record.meeting_date}-${record.item}`) === index);
+}
+
+function applyProfileOverlay(candidate: CandidateDossier): CandidateDossier {
+  const overlay = HARLETON_CURRENT_BOARD_OVERLAYS[candidate.candidate_id];
+  if (!overlay) return candidate;
+
+  const baseResearchGaps = (candidate.research_gaps ?? []).filter((gap) => {
+    if (gap === "District roster page, trustee email, and term dates need source confirmation.") return false;
+    if (
+      candidate.candidate_id === "kevin_evers_harleton_isd" &&
+      gap === "Board votes, meeting attendance, and agenda/minute links have not been loaded."
+    ) {
+      return false;
+    }
+    return true;
+  });
+  const existingAbout = candidate.about_public_record;
+  const overlayAbout = overlay.about_public_record;
+  const existingPerformance = existingAbout?.board_performance_incumbents_only;
+  const overlayPerformance = overlayAbout?.board_performance_incumbents_only;
+
+  return {
+    ...candidate,
+    ...overlay,
+    sources: mergeSources(candidate.sources, overlay.sources),
+    research_gaps: mergeResearchGaps(baseResearchGaps, overlay.research_gaps),
+    red_flags: mergeConflictRecords(candidate.red_flags, overlay.red_flags),
+    about_public_record: overlayAbout
+      ? {
+          ...existingAbout,
+          ...overlayAbout,
+          complete_employment_timeline: [
+            ...(existingAbout?.complete_employment_timeline ?? []),
+            ...(overlayAbout.complete_employment_timeline ?? []),
+          ],
+          affiliations_full_inventory: [
+            ...(existingAbout?.affiliations_full_inventory ?? []),
+            ...(overlayAbout.affiliations_full_inventory ?? []),
+          ],
+          conflicts_of_interest_inventory: mergeConflictRecords(
+            existingAbout?.conflicts_of_interest_inventory,
+            overlayAbout.conflicts_of_interest_inventory,
+          ),
+          board_performance_incumbents_only: overlayPerformance
+            ? {
+                ...existingPerformance,
+                ...overlayPerformance,
+                notable_votes: mergeVotes(existingPerformance?.notable_votes, overlayPerformance.notable_votes),
+              }
+            : existingPerformance,
+        }
+      : existingAbout,
+  };
+}
+
 function mergeRosterIntoQueuedProfile(existing: CandidateDossier | undefined, rosterCandidate: CandidateDossier): CandidateDossier {
   if (!existing) return rosterCandidate;
   if (existing.status !== "queued") return existing;
@@ -964,6 +1158,7 @@ export function getSchoolBoardDossiers(): CandidateDossier[] {
   });
 
   schoolBoardDossierCache = Array.from(byId.values())
+    .map(applyProfileOverlay)
     .sort((a, b) => a.district.localeCompare(b.district) || (a.seat ?? a.full_name).localeCompare(b.seat ?? b.full_name));
   return schoolBoardDossierCache;
 }
@@ -1071,6 +1266,7 @@ export function getDistrictInvestigationQueue(slug: string): string[] {
   ];
 
   const districtSpecific: Record<string, string[]> = {
+    harleton_isd: ["Apply the same scrutiny standard to every trustee: family/employment ties, district vendors, church/nonprofit links only when tied to public office, Chapter 171 disclosures, recusals, and votes. Current Harleton lead: Kevin Evers's Place 4 appointment and any Craig Evers relationship/current-role record require public-source confirmation before scoring."],
     longview_isd: ["Track the district police department vote, School Marshal Program implementation, contracts, and parent response."],
     marshall_isd: ["Review posted board videos for parent comments and trustee responses."],
     kilgore_isd: ["Track public-comment sign-up items and any excluded employee/student-specific comments by topic, not private names."],
@@ -1150,7 +1346,8 @@ export function getShareLine(candidate: CandidateDossier): string {
   const flags = getCandidateFlags(candidate);
   const gaps = getCandidateGaps(candidate);
   const good = getCandidateGoodRecords(candidate);
-  if (flags[0]) return flags[0].description;
+  const sourcedFlag = flags.find((flag) => flag.fact_label === "FACT" || flag.fact_label === "DOCUMENTED_INFERENCE");
+  if (sourcedFlag) return sourcedFlag.description;
   if (candidate.summary) return candidate.summary;
   if (good[0]) return good[0];
   return gaps[0] ?? `${candidate.full_name} has a RepWatchr public-record profile in progress.`;
