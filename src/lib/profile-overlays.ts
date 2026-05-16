@@ -222,7 +222,11 @@ export async function getPublicProfileOverlay(
     ),
   ]);
 
-  const accountIds = ((socialAccounts ?? []) as Array<{ id: string }>).map((account) => account.id);
+  const completionRow = completion as unknown as Record<string, unknown> | null;
+  const enrichmentRows = (enrichmentItems ?? []) as unknown as Array<Record<string, unknown>>;
+  const voteRows = (voteSnapshots ?? []) as unknown as Array<Record<string, unknown>>;
+  const socialAccountRows = (socialAccounts ?? []) as unknown as Array<Record<string, unknown>>;
+  const accountIds = socialAccountRows.map((account) => String(account.id)).filter(Boolean);
   const publicStatements =
     accountIds.length > 0
       ? await safeQuery(
@@ -239,22 +243,26 @@ export async function getPublicProfileOverlay(
 
   return {
     configured: true,
-    completion: completion
+    completion: completionRow
       ? {
-          profileType: completion.profile_type,
-          profileId: completion.profile_id,
-          profileName: completion.profile_name,
-          completionPercent: completion.completion_percent,
-          priority: completion.priority,
-          isComplete: completion.is_complete,
-          loadedItems: completion.loaded_items ?? [],
-          missingItems: completion.missing_items ?? [],
-          sourceReviewStatus: completion.source_review_status,
-          lastCheckedAt: completion.last_checked_at,
-          runId: completion.run_id,
+          profileType: completionRow.profile_type as ProfileOverlayType,
+          profileId: String(completionRow.profile_id),
+          profileName: String(completionRow.profile_name),
+          completionPercent: Number(completionRow.completion_percent ?? 0),
+          priority: completionRow.priority as ProfileCompletionPriority,
+          isComplete: Boolean(completionRow.is_complete),
+          loadedItems: Array.isArray(completionRow.loaded_items)
+            ? (completionRow.loaded_items as ProfileCompletionKey[])
+            : [],
+          missingItems: Array.isArray(completionRow.missing_items)
+            ? (completionRow.missing_items as ProfileCompletionKey[])
+            : [],
+          sourceReviewStatus: completionRow.source_review_status === "complete" ? "complete" : "needs_review",
+          lastCheckedAt: String(completionRow.last_checked_at ?? ""),
+          runId: completionRow.run_id ? String(completionRow.run_id) : null,
         }
       : null,
-    enrichmentItems: ((enrichmentItems ?? []) as Array<Record<string, unknown>>).map((item) => ({
+    enrichmentItems: enrichmentRows.map((item) => ({
       id: String(item.id),
       profileType: item.profile_type as ProfileOverlayType,
       profileId: String(item.profile_id),
@@ -267,7 +275,7 @@ export async function getPublicProfileOverlay(
       eventDate: item.event_date ? String(item.event_date) : null,
       status: item.status as ProfileOverlayStatus,
     })),
-    voteSnapshots: ((voteSnapshots ?? []) as Array<Record<string, unknown>>).map((vote) => ({
+    voteSnapshots: voteRows.map((vote) => ({
       id: String(vote.id),
       profileType: vote.profile_type as ProfileOverlayType,
       profileId: String(vote.profile_id),
@@ -285,13 +293,13 @@ export async function getPublicProfileOverlay(
       ideologyWeight: typeof vote.ideology_weight === "number" ? vote.ideology_weight : null,
       ruleReviewStatus: vote.rule_review_status as PublicProfileVoteSnapshot["ruleReviewStatus"],
     })),
-    socialAccounts: ((socialAccounts ?? []) as Array<Record<string, unknown>>).map((account) => ({
+    socialAccounts: socialAccountRows.map((account) => ({
       platform: String(account.platform),
       handle: account.handle ? String(account.handle) : null,
       publicUrl: String(account.public_url),
       isOfficial: Boolean(account.is_official),
     })),
-    publicStatements: ((publicStatements ?? []) as Array<Record<string, unknown>>).map((statement) => ({
+    publicStatements: ((publicStatements ?? []) as unknown as Array<Record<string, unknown>>).map((statement) => ({
       id: String(statement.id),
       platform: String(statement.platform),
       statementUrl: String(statement.statement_url),
