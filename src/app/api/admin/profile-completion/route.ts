@@ -63,7 +63,7 @@ async function getReviewCounts() {
       const { data, error } = await admin.from(table).select(statusColumn);
       if (error) return { table, error: error.message, counts: {} };
       const grouped = (data ?? []).reduce<Record<string, number>>((acc, row) => {
-        const status = String((row as Record<string, unknown>)[statusColumn] ?? "unknown");
+        const status = String(((row as unknown) as Record<string, unknown>)[statusColumn] ?? "unknown");
         acc[status] = (acc[status] ?? 0) + 1;
         return acc;
       }, {});
