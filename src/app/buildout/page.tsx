@@ -5,7 +5,8 @@ import {
   getSchoolBoardStats,
 } from "@/lib/school-board-research";
 import { getRepWatchrDataStats } from "@/lib/data";
-import { getAllOfficialIdeologyProfiles, getOfficialProfileBuildoutStats } from "@/lib/ideology";
+import { getAllOfficialIdeologyProfiles } from "@/lib/ideology";
+import { getOfficialCompletionDashboard } from "@/lib/profile-completion";
 import { getSchoolBoardCandidateUrl, getSchoolBoardDistrictUrl } from "@/lib/school-board-urls";
 import { getAttorneyWatchProfiles, getMediaWatchProfiles, getPowerWatchStats, getPublicSafetyWatchProfiles } from "@/lib/power-watch";
 import { getAttorneyBuildoutDashboard } from "@/data/attorney-buildout";
@@ -287,7 +288,7 @@ export default function BuildoutDashboardPage() {
   const publicSafetyStats = getPowerWatchStats(getPublicSafetyWatchProfiles());
   const nationalSummary = getNationalBuildoutSummary();
   const geographic = getGeographicBuildoutDashboard();
-  const officialBuildoutStats = getOfficialProfileBuildoutStats();
+  const officialBuildoutStats = getOfficialCompletionDashboard();
   const loadedJurisdictionRows = geographic.stateRows.filter((row) => row.status === "loaded").length;
   const partialJurisdictionRows = geographic.stateRows.filter((row) => row.status === "partial").length;
   const queuedJurisdictionRows = geographic.stateRows.filter((row) => row.status === "queued").length;
@@ -660,16 +661,16 @@ export default function BuildoutDashboardPage() {
               <div className="mt-4 grid gap-2">
                 {officialBuildoutStats.lowestCompletionProfiles.map((profile) => (
                   <Link
-                    key={profile.officialId}
-                    href={`/officials/${profile.officialId}`}
+                    key={profile.profileId}
+                    href={profile.profilePath}
                     className="rounded-xl border border-white bg-white p-3 shadow-sm transition hover:-translate-y-0.5 hover:border-blue-300"
                   >
                     <div className="flex items-start justify-between gap-3">
                       <div className="min-w-0">
-                        <p className="truncate text-sm font-black text-slate-950">{profile.name}</p>
+                        <p className="truncate text-sm font-black text-slate-950">{profile.profileName}</p>
                         <p className="truncate text-xs font-semibold text-slate-500">{profile.position} · {profile.jurisdiction}</p>
                         <p className="mt-1 line-clamp-2 text-xs font-semibold leading-5 text-slate-600">
-                          Missing: {profile.missingItems.slice(0, 4).join(", ")}
+                          Missing: {profile.missingItems.slice(0, 4).map((item) => item.replace(/_/g, " ")).join(", ")}
                           {profile.missingItems.length > 4 ? "..." : ""}
                         </p>
                       </div>

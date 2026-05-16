@@ -30,8 +30,11 @@ import ReportButton from "@/components/shared/ReportButton";
 import ProfileOpenTracker from "@/components/shared/ProfileOpenTracker";
 import ProfileScorecardVote from "@/components/scorecards/ProfileScorecardVote";
 import OfficialSocialPanel from "@/components/officials/OfficialSocialPanel";
+import { getPublicProfileOverlay, type PublicProfileEnrichmentItem, type PublicProfileOverlay, type PublicProfileVoteSnapshot } from "@/lib/profile-overlays";
+import { buildOfficialCompletionSnapshot } from "@/lib/profile-completion";
 
 export const revalidate = 86400;
+export const dynamic = "force-dynamic";
 export const dynamicParams = true;
 
 export async function generateStaticParams() {
@@ -81,9 +84,16 @@ export default async function OfficialProfilePage({
   const relatedNews = getNewsByOfficialId(id);
   const publicVoteRecord = getPublicVoteRecord(id);
   const ideologyProfile = getOfficialIdeologyProfile(id) ?? buildFallbackIdeologyProfile(official);
+  const profileOverlay = await getPublicProfileOverlay("official", id);
+  const staticCompletion = buildOfficialCompletionSnapshot(official);
   const sourceLinks = official.sourceLinks ?? [];
   const contactEmail = official.contactInfo.email;
   const contactIsUrl = contactEmail?.startsWith("http://") || contactEmail?.startsWith("https://");
+  const overlayPublicRecords = profileOverlay.enrichmentItems.filter((item) => item.category !== "news");
+  const overlayNews = profileOverlay.enrichmentItems.filter((item) => item.category === "news");
+  const buildoutPercent = profileOverlay.completion?.completionPercent ?? staticCompletion.completionPercent;
+  const buildoutComplete = profileOverlay.completion?.isComplete ?? staticCompletion.isComplete;
+  const buildoutMissingItems = profileOverlay.completion?.missingItems ?? staticCompletion.missingItems;
 
   const allScoredVotes = scoreCard
     ? Object.values(scoreCard.categories).flatMap((c) => c.votes)
@@ -224,6 +234,10 @@ export default async function OfficialProfilePage({
           </section>
         )}
 
+        {overlayPublicRecords.length > 0 && (
+          <ProfileOverlayEvidencePanel items={overlayPublicRecords} />
+        )}
+
         <div className="mb-8">
           <IdeologyChart profile={ideologyProfile} />
         </div>
@@ -256,6 +270,10 @@ export default async function OfficialProfilePage({
 
             {publicVoteRecord && publicVoteRecord.votes.length > 0 && (
               <FederalVoteRecordPanel record={publicVoteRecord} />
+            )}
+
+            {profileOverlay.voteSnapshots.length > 0 && (
+              <ProfileOverlayVotesPanel votes={profileOverlay.voteSnapshots} />
             )}
 
             {/* Campaign Promises */}
@@ -295,10 +313,12 @@ export default async function OfficialProfilePage({
             />
 
             <ProfileBuildoutPanel
-              percent={ideologyProfile.buildout.completionPercent}
-              isComplete={ideologyProfile.buildout.isComplete}
-              missingItems={ideologyProfile.buildout.missingItems}
+              percent={buildoutPercent}
+              isComplete={buildoutComplete}
+              missingItems={buildoutMissingItems}
             />
+
+            <ProfileOverlayStatusPanel overlay={profileOverlay} />
 
             {/* Citizen Approval Rating & Vote Button */}
             <OfficialVotingSection
@@ -434,6 +454,14 @@ export default async function OfficialProfilePage({
           </section>
         )}
 
+        {overlayNews.length > 0 && (
+          <ProfileOverlayEvidencePanel items={overlayNews} title="Latest Source-Linked Updates" />
+        )}
+
+        {profileOverlay.publicStatements.length > 0 && (
+          <ProfileOverlayStatementsPanel overlay={profileOverlay} />
+        )}
+
         {/* Public Discussion */}
         <CommentSection
           officialId={official.id}
@@ -493,7 +521,7 @@ function ProfileBuildoutPanel({
           <div className="mt-3 flex flex-wrap gap-2">
             {missingItems.slice(0, 8).map((item) => (
               <span key={item} className="rounded-full bg-white px-2.5 py-1 text-[11px] font-black capitalize shadow-sm">
-                {item}
+                {item.replace(/_/g, " ")}
               </span>
             ))}
           </div>
@@ -589,5 +617,160 @@ function VoteMetric({ label, value }: { label: string; value: number }) {
       <p className="text-lg font-black text-gray-950">{value}</p>
       <p className="text-[11px] font-black uppercase tracking-wide text-gray-500">{label}</p>
     </div>
+  );
+}
+
+function ProfileOverlayEvidencePanel({
+  items,
+  title = "Public Records & Controversies",
+}: {
+  items: PublicProfileEnrichmentItem[];
+  title?: string;
+}) {
+  return (
+    <section className="mb-8 rounded-2xl border border-red-100 bg-white p-5 shadow-sm">
+      <div className="flex flex-col gap-2 sm:flex-row sm:items-start sm:justify-between">
+        <div>
+          <p className="text-xs font-black uppercase tracking-wide text-red-700">Source-backed overlay</p>
+          <h2 className="mt-1 text-xl font-black text-gray-950">{title}</h2>
+          <p className="mt-1 text-sm font-semibold leading-6 text-gray-600">
+            Auto-published items require an official record or named publication source. Weak matches stay out of public view.
+          </p>
+        </div>
+        <span className="w-fit rounded-full border border-red-100 bg-red-50 px-3 py-1 text-xs font-black text-red-800">
+          {items.length} linked
+        </span>
+      </div>
+
+      <div className="mt-4 grid gap-3 md:grid-cols-2">
+        {items.slice(0, 8).map((item) => (
+          <a
+            key={item.id}
+            href={item.sourceUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="rounded-xl border border-gray-200 bg-gray-50 p-4 transition hover:border-red-200 hover:bg-red-50"
+          >
+            <div className="flex flex-wrap items-center gap-2">
+              <span className="rounded-full bg-blue-50 px-2 py-0.5 text-[10px] font-black uppercase tracking-wide text-blue-800">
+                {item.category.replace(/_/g, " ")}
+              </span>
+              <span className="rounded-full bg-emerald-50 px-2 py-0.5 text-[10px] font-black uppercase tracking-wide text-emerald-800">
+                {item.sourceTier.replace(/_/g, " ")}
+              </span>
+            </div>
+            <h3 className="mt-2 line-clamp-2 text-sm font-black text-gray-950">{item.title}</h3>
+            <p className="mt-1 line-clamp-3 text-xs font-semibold leading-5 text-gray-600">{item.summary}</p>
+            <p className="mt-2 text-[11px] font-black uppercase tracking-wide text-gray-500">
+              {item.sourceName}
+              {item.eventDate ? ` | ${new Date(item.eventDate).toLocaleDateString()}` : ""}
+            </p>
+          </a>
+        ))}
+      </div>
+    </section>
+  );
+}
+
+function ProfileOverlayVotesPanel({ votes }: { votes: PublicProfileVoteSnapshot[] }) {
+  return (
+    <section className="rounded-2xl border border-slate-200 bg-white p-5 shadow-sm">
+      <div className="flex flex-col gap-3 sm:flex-row sm:items-start sm:justify-between">
+        <div>
+          <p className="text-xs font-black uppercase tracking-wide text-blue-700">Daily vote overlay</p>
+          <h2 className="mt-1 text-xl font-black text-gray-950">Latest loaded roll calls</h2>
+          <p className="mt-1 text-sm font-semibold leading-6 text-gray-600">
+            These are source snapshots from the daily pipeline. The left/right chart moves only when a reviewed issue rule exists.
+          </p>
+        </div>
+        <span className="w-fit rounded-full border border-blue-100 bg-blue-50 px-3 py-1 text-xs font-black text-blue-800">
+          {votes.length} recent
+        </span>
+      </div>
+
+      <div className="mt-4 divide-y divide-gray-200 overflow-hidden rounded-xl border border-gray-200">
+        {votes.slice(0, 8).map((vote) => (
+          <a
+            key={vote.id}
+            href={vote.sourceUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="block bg-white px-4 py-3 transition hover:bg-blue-50"
+          >
+            <div className="flex flex-col gap-2 sm:flex-row sm:items-start sm:justify-between">
+              <div>
+                <p className="text-xs font-black uppercase tracking-wide text-gray-500">
+                  {vote.chamber ?? "roll call"} {vote.rollCall ? `#${vote.rollCall}` : ""}{" "}
+                  {vote.voteDate ? `| ${vote.voteDate}` : ""}
+                </p>
+                <h3 className="mt-1 line-clamp-2 text-sm font-black text-gray-950">
+                  {vote.issue ?? vote.question ?? vote.sourceVoteId}
+                </h3>
+                <p className="mt-1 text-xs font-semibold text-gray-500">
+                  Rule status: {vote.ruleReviewStatus.replace(/_/g, " ")}
+                </p>
+              </div>
+              <span className="shrink-0 rounded-full border border-gray-200 bg-gray-50 px-3 py-1 text-xs font-black uppercase tracking-wide text-gray-700">
+                {vote.voteCast ?? "loaded"}
+              </span>
+            </div>
+          </a>
+        ))}
+      </div>
+    </section>
+  );
+}
+
+function ProfileOverlayStatusPanel({ overlay }: { overlay: PublicProfileOverlay }) {
+  return (
+    <section className="rounded-xl border border-slate-200 bg-white p-5 shadow-sm">
+      <p className="text-xs font-black uppercase tracking-wide text-slate-500">Daily data overlay</p>
+      <h2 className="mt-1 text-lg font-black text-slate-950">
+        {overlay.configured ? "Live overlay ready" : "Static profile mode"}
+      </h2>
+      <p className="mt-2 text-sm font-semibold leading-6 text-slate-600">
+        {overlay.configured
+          ? "Supabase can add daily votes, news, public records, and statement links without a full site rebuild."
+          : "The profile still works from Git JSON. Configure Supabase service keys and run the overlay SQL to enable daily additions."}
+      </p>
+      {overlay.completion ? (
+        <p className="mt-2 text-xs font-black uppercase tracking-wide text-blue-800">
+          Last checked {new Date(overlay.completion.lastCheckedAt).toLocaleString()}
+        </p>
+      ) : null}
+      {overlay.errors.length > 0 ? (
+        <p className="mt-2 text-xs font-semibold leading-5 text-amber-700">
+          Overlay setup note: {overlay.errors[0]}
+        </p>
+      ) : null}
+    </section>
+  );
+}
+
+function ProfileOverlayStatementsPanel({ overlay }: { overlay: PublicProfileOverlay }) {
+  return (
+    <section className="mt-10 rounded-2xl border border-slate-200 bg-white p-5 shadow-sm">
+      <p className="text-xs font-black uppercase tracking-wide text-blue-700">Public statements</p>
+      <h2 className="mt-1 text-xl font-black text-gray-950">Recent sourced public statements</h2>
+      <div className="mt-4 grid gap-3 md:grid-cols-2">
+        {overlay.publicStatements.map((statement) => (
+          <a
+            key={statement.id}
+            href={statement.statementUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="rounded-xl border border-gray-200 bg-gray-50 p-4 transition hover:border-blue-200 hover:bg-blue-50"
+          >
+            <p className="text-xs font-black uppercase tracking-wide text-gray-500">
+              {statement.platform}
+              {statement.statementDate ? ` | ${new Date(statement.statementDate).toLocaleDateString()}` : ""}
+            </p>
+            <p className="mt-2 text-sm font-semibold leading-6 text-gray-700">
+              {statement.excerpt ?? statement.contextNote ?? "Open public statement source"}
+            </p>
+          </a>
+        ))}
+      </div>
+    </section>
   );
 }

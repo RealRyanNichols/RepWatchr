@@ -125,12 +125,19 @@ async function fetchSource(source: DailyNewsWatchSource): Promise<{ clips: Daily
 }
 
 export async function fetchDailyNewsClips(): Promise<DailyNewsFetchResult> {
-  const results = await Promise.all(
-    DAILY_NEWS_WATCH_SOURCES.map(async (source) => {
-      const result = await fetchSource(source);
-      return { source, ...result };
-    })
-  );
+  const results: Array<Awaited<ReturnType<typeof fetchSource>> & { source: DailyNewsWatchSource }> = [];
+  const batchSize = 8;
+
+  for (let index = 0; index < DAILY_NEWS_WATCH_SOURCES.length; index += batchSize) {
+    const batch = DAILY_NEWS_WATCH_SOURCES.slice(index, index + batchSize);
+    const batchResults = await Promise.all(
+      batch.map(async (source) => {
+        const result = await fetchSource(source);
+        return { source, ...result };
+      }),
+    );
+    results.push(...batchResults);
+  }
 
   const seen = new Set<string>();
   const clips: DailyNewsClip[] = [];
@@ -148,7 +155,7 @@ export async function fetchDailyNewsClips(): Promise<DailyNewsFetchResult> {
   }
 
   return {
-    clips: clips.slice(0, 80),
+    clips: clips.slice(0, 160),
     errors,
     sourceCount: DAILY_NEWS_WATCH_SOURCES.length,
   };

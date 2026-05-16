@@ -65,6 +65,40 @@ type ControlCenterPayload = {
       governmentScopeCount: number;
     };
   };
+  profileCompletion: {
+    totalProfiles: number;
+    completeProfiles: number;
+    incompleteProfiles: number;
+    averageCompletionPercent: number;
+    federalStateProfiles: number;
+    federalStateCompleteProfiles: number;
+    federalStateAverageCompletionPercent: number;
+    missingItemCounts: Array<{ key: string; label: string; count: number }>;
+    priorityCounts: { red: number; yellow: number; green: number };
+    stateRows: Array<{
+      state: string;
+      total: number;
+      complete: number;
+      averageCompletionPercent: number;
+      missingPhotos: number;
+      missingVotes: number;
+      missingFunding: number;
+      missingPublicRecords: number;
+      missingNews: number;
+    }>;
+  };
+  latestProfileUpdateRun: {
+    status: "ok" | "error" | "missing-service-role";
+    data: {
+      status: string;
+      started_at: string;
+      finished_at: string | null;
+      inserted_count: number;
+      skipped_count: number;
+      error_count: number;
+    } | null;
+    error: string | null;
+  };
   connections: ConnectionStatus[];
   tableCounts: TableCount[];
   adminOnlyWatchItems: AdminWatchItem[];
@@ -139,9 +173,9 @@ export default function AdminControlCenterClient() {
   const coverageCards = payload
     ? [
         {
-          label: "Official files",
-          value: payload.coverage.officials.officialFiles,
-          detail: `${payload.coverage.officials.federalAndStateSeatProfilesLoaded} federal/state seat profiles loaded`,
+          label: "Official completion",
+          value: payload.profileCompletion.completeProfiles,
+          detail: `${payload.profileCompletion.incompleteProfiles} incomplete; ${payload.profileCompletion.averageCompletionPercent}% average completion`,
         },
         {
           label: "School-board profiles",
@@ -233,6 +267,59 @@ export default function AdminControlCenterClient() {
                   <ActionLink href="/scorecards" label="Scorecards" detail="Open universal scorecard surface" />
                   <ActionLink href="https://vercel.com/theflashflash24-9833s-projects/repwatchr" label="Vercel project" detail="Open deployments, analytics, logs" external />
                   <ActionLink href="/admin/control-center" label="Social SQL file" detail="Run supabase-social-monitoring.sql from the repo before enabling scans" />
+                </div>
+              </div>
+            </section>
+
+            <section className="mt-6 grid gap-4 lg:grid-cols-[0.85fr_1.15fr]">
+              <div className="rounded-2xl border border-slate-300 bg-white p-5 shadow-sm">
+                <p className="text-xs font-black uppercase tracking-wide text-red-700">Daily profile pipeline</p>
+                <h2 className="mt-1 text-xl font-black text-slate-950">
+                  {payload.latestProfileUpdateRun.data?.status ?? "No run recorded"}
+                </h2>
+                <p className="mt-2 text-sm font-semibold leading-6 text-slate-700">
+                  {payload.latestProfileUpdateRun.data
+                    ? `${payload.latestProfileUpdateRun.data.inserted_count.toLocaleString()} rows inserted/updated, ${payload.latestProfileUpdateRun.data.skipped_count.toLocaleString()} skipped, ${payload.latestProfileUpdateRun.data.error_count.toLocaleString()} errors.`
+                    : payload.latestProfileUpdateRun.error ?? "Run the overlay SQL and wait for the next Vercel cron."}
+                </p>
+                {payload.latestProfileUpdateRun.data ? (
+                  <p className="mt-2 text-xs font-black uppercase tracking-wide text-slate-500">
+                    Started {new Date(payload.latestProfileUpdateRun.data.started_at).toLocaleString()}
+                  </p>
+                ) : null}
+                <Link
+                  href="/api/admin/profile-completion"
+                  className="mt-4 inline-flex rounded-xl bg-blue-900 px-4 py-2 text-xs font-black text-white hover:bg-red-700"
+                >
+                  Open completion JSON
+                </Link>
+              </div>
+
+              <div className="rounded-2xl border border-slate-300 bg-white p-5 shadow-sm">
+                <p className="text-xs font-black uppercase tracking-wide text-red-700">Federal/state completion gaps</p>
+                <div className="mt-3 grid gap-2 sm:grid-cols-3">
+                  <Metric
+                    label="Fed/state profiles"
+                    value={payload.profileCompletion.federalStateProfiles}
+                    detail={`${payload.profileCompletion.federalStateCompleteProfiles} complete`}
+                  />
+                  <Metric
+                    label="Average complete"
+                    value={payload.profileCompletion.federalStateAverageCompletionPercent}
+                    detail="Percent across federal/state officials"
+                  />
+                  <Metric
+                    label="Red priority"
+                    value={payload.profileCompletion.priorityCounts.red}
+                    detail="Profiles needing the fastest buildout"
+                  />
+                </div>
+                <div className="mt-4 flex flex-wrap gap-2">
+                  {payload.profileCompletion.missingItemCounts.slice(0, 8).map((item) => (
+                    <span key={item.key} className="rounded-full border border-amber-200 bg-amber-50 px-3 py-1 text-xs font-black text-amber-900">
+                      {item.label}: {item.count.toLocaleString()}
+                    </span>
+                  ))}
                 </div>
               </div>
             </section>

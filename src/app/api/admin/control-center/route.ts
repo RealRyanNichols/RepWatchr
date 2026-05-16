@@ -5,6 +5,7 @@ import { getAttorneyWatchProfiles, getMediaWatchProfiles, getPowerWatchStats, ge
 import { getNationalBuildoutSummary, adminOnlyWatchItems } from "@/data/national-buildout";
 import { createServerSupabaseClient } from "@/lib/supabase-server";
 import { getSupabaseAdminClient } from "@/lib/supabase-admin";
+import { getOfficialCompletionDashboard } from "@/lib/profile-completion";
 
 export const dynamic = "force-dynamic";
 
@@ -25,6 +26,11 @@ const countTables = [
   "profile_social_accounts",
   "public_statement_snapshots",
   "social_monitoring_jobs",
+  "profile_update_runs",
+  "profile_completion_snapshots",
+  "profile_enrichment_items",
+  "profile_vote_snapshots",
+  "vote_issue_rules",
 ];
 
 async function countTable(table: string) {
@@ -41,6 +47,24 @@ async function countTable(table: string) {
   }
 
   return { table, status: "ok" as const, count: count ?? 0, error: null };
+}
+
+async function getLatestProfileUpdateRun() {
+  const admin = getSupabaseAdminClient();
+
+  if (!admin) {
+    return { status: "missing-service-role" as const, data: null, error: "SUPABASE_SERVICE_ROLE_KEY is not configured." };
+  }
+
+  const { data, error } = await admin
+    .from("profile_update_runs")
+    .select("*")
+    .order("started_at", { ascending: false })
+    .limit(1)
+    .maybeSingle();
+
+  if (error) return { status: "error" as const, data: null, error: error.message };
+  return { status: "ok" as const, data, error: null };
 }
 
 export async function GET() {
@@ -77,7 +101,11 @@ export async function GET() {
   const mediaStats = getPowerWatchStats(getMediaWatchProfiles());
   const publicSafetyStats = getPowerWatchStats(getPublicSafetyWatchProfiles());
   const nationalSummary = getNationalBuildoutSummary();
-  const tableCounts = await Promise.all(countTables.map(countTable));
+  const officialCompletion = getOfficialCompletionDashboard();
+  const [tableCounts, latestProfileUpdateRun] = await Promise.all([
+    Promise.all(countTables.map(countTable)),
+    getLatestProfileUpdateRun(),
+  ]);
 
   return NextResponse.json({
     generatedAt: new Date().toISOString(),
@@ -93,6 +121,8 @@ export async function GET() {
       publicSafety: publicSafetyStats,
       national: nationalSummary,
     },
+    profileCompletion: officialCompletion,
+    latestProfileUpdateRun,
     connections: [
       {
         label: "Supabase browser client",

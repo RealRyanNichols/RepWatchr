@@ -5,7 +5,7 @@ import { getAttorneyWatchProfiles, getMediaWatchProfiles, getPowerWatchStats, ge
 import { getAllNationalJurisdictions, getNationalBuildoutSummary } from "@/data/national-buildout";
 import { countByState } from "@/lib/state-scope";
 import { getGeographicBuildoutDashboard } from "@/lib/geographic-buildout";
-import { getOfficialProfileBuildoutStats } from "@/lib/ideology";
+import { getOfficialCompletionDashboard } from "@/lib/profile-completion";
 
 export const dynamic = "force-dynamic";
 
@@ -31,7 +31,7 @@ export async function GET() {
   const nationalSummary = getNationalBuildoutSummary();
   const jurisdictions = getAllNationalJurisdictions();
   const geographic = getGeographicBuildoutDashboard();
-  const officialBuildout = getOfficialProfileBuildoutStats();
+  const officialBuildout = getOfficialCompletionDashboard();
 
   const officialCountsByState = countByState(officials, (official) => official.state, "TX");
   const schoolBoardCountsByState = { TX: schoolStats.candidates };

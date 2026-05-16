@@ -1,4 +1,5 @@
 import { fetchDailyNewsClips, persistDailyNewsClips } from "@/lib/daily-news-clips";
+import { runDailyProfileUpdates } from "@/lib/daily-profile-updates";
 
 export const dynamic = "force-dynamic";
 
@@ -11,15 +12,18 @@ export async function GET(request: Request) {
 
   const fetched = await fetchDailyNewsClips();
   const persisted = await persistDailyNewsClips(fetched.clips);
+  const profileUpdates = await runDailyProfileUpdates(fetched.clips);
 
   return Response.json({
-    ok: !persisted.error,
-    sourceCount: fetched.sourceCount,
+    ok: !persisted.error && profileUpdates.ok,
+    scope: "federal_state_daily",
+    sourceCount: fetched.sourceCount + profileUpdates.modules.length,
     clipsFound: fetched.clips.length,
     clipsInserted: persisted.inserted,
     clipsSkipped: persisted.skipped,
     supabaseConfigured: persisted.configured,
     fetchErrors: fetched.errors,
-    error: persisted.error,
+    profileUpdates,
+    error: persisted.error ?? profileUpdates.modules.find((module) => module.status === "error")?.error,
   });
 }

@@ -10,7 +10,7 @@ import NationalSpotlightSelector from "@/components/shared/NationalSpotlightSele
 import type { GovernmentLevel, Official } from "@/types";
 import { getAllNationalJurisdictions, getNationalBuildoutSummary, nationalGovernmentScopes } from "@/data/national-buildout";
 import { countByState, getSelectedStateCode } from "@/lib/state-scope";
-import { getOfficialProfileBuildoutStats } from "@/lib/ideology";
+import { getOfficialCompletionDashboard } from "@/lib/profile-completion";
 import { getStateLegislatureBuildoutStats } from "@/lib/state-legislature";
 
 export const metadata: Metadata = {
@@ -77,7 +77,7 @@ export default async function OfficialsPage({
   const scoreCards = getAllScoreCards();
   const schoolBoardStats = getSchoolBoardStats();
   const dataStats = getRepWatchrDataStats();
-  const buildoutStats = getOfficialProfileBuildoutStats();
+  const buildoutStats = getOfficialCompletionDashboard();
   const jurisdictions = getAllNationalJurisdictions();
   const nationalSummary = getNationalBuildoutSummary();
   const stateLegislatureStats = getStateLegislatureBuildoutStats();

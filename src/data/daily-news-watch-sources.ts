@@ -28,7 +28,91 @@ const texasPoliticsTerms = [
   "ethics",
 ];
 
-export const DAILY_NEWS_WATCH_SOURCES: DailyNewsWatchSource[] = [
+const stateNewsTerms = [
+  "state representative",
+  "state senator",
+  "governor",
+  "attorney general",
+  "ethics",
+  "investigation",
+  "lawsuit",
+  "vote",
+  "campaign finance",
+  "resigned",
+  "indicted",
+];
+
+const stateNewsTargets = [
+  ["AL", "Alabama"],
+  ["AK", "Alaska"],
+  ["AZ", "Arizona"],
+  ["AR", "Arkansas"],
+  ["CA", "California"],
+  ["CO", "Colorado"],
+  ["CT", "Connecticut"],
+  ["DE", "Delaware"],
+  ["FL", "Florida"],
+  ["GA", "Georgia"],
+  ["HI", "Hawaii"],
+  ["ID", "Idaho"],
+  ["IL", "Illinois"],
+  ["IN", "Indiana"],
+  ["IA", "Iowa"],
+  ["KS", "Kansas"],
+  ["KY", "Kentucky"],
+  ["LA", "Louisiana"],
+  ["ME", "Maine"],
+  ["MD", "Maryland"],
+  ["MA", "Massachusetts"],
+  ["MI", "Michigan"],
+  ["MN", "Minnesota"],
+  ["MS", "Mississippi"],
+  ["MO", "Missouri"],
+  ["MT", "Montana"],
+  ["NE", "Nebraska"],
+  ["NV", "Nevada"],
+  ["NH", "New Hampshire"],
+  ["NJ", "New Jersey"],
+  ["NM", "New Mexico"],
+  ["NY", "New York"],
+  ["NC", "North Carolina"],
+  ["ND", "North Dakota"],
+  ["OH", "Ohio"],
+  ["OK", "Oklahoma"],
+  ["OR", "Oregon"],
+  ["PA", "Pennsylvania"],
+  ["RI", "Rhode Island"],
+  ["SC", "South Carolina"],
+  ["SD", "South Dakota"],
+  ["TN", "Tennessee"],
+  ["TX", "Texas"],
+  ["UT", "Utah"],
+  ["VT", "Vermont"],
+  ["VA", "Virginia"],
+  ["WA", "Washington"],
+  ["WV", "West Virginia"],
+  ["WI", "Wisconsin"],
+  ["WY", "Wyoming"],
+  ["DC", "District of Columbia"],
+] as const;
+
+function googleNewsStateUrl(stateName: string) {
+  const query = `"${stateName}" ("state representative" OR "state senator" OR governor OR "attorney general") (ethics OR investigation OR lawsuit OR vote OR "campaign finance" OR resigned OR indicted) when:1d`;
+  return `https://news.google.com/rss/search?q=${encodeURIComponent(query)}&hl=en-US&gl=US&ceid=US%3Aen`;
+}
+
+const STATE_DAILY_NEWS_WATCH_SOURCES: DailyNewsWatchSource[] = stateNewsTargets.map(([code, name]) => ({
+  id: `google-news-${code.toLowerCase()}-state-officials`,
+  label: `Public news search: ${name} state officials`,
+  url: googleNewsStateUrl(name),
+  scope: code === "TX" ? "texas" : "national",
+  state: code,
+  powerChannels: ["officials", "elections", "courts", "money"],
+  sourceType: "public_news_search",
+  terms: stateNewsTerms,
+}));
+
+const BASE_DAILY_NEWS_WATCH_SOURCES: DailyNewsWatchSource[] = [
   {
     id: "texas-tribune-main",
     label: "Texas Tribune",
@@ -80,4 +164,9 @@ export const DAILY_NEWS_WATCH_SOURCES: DailyNewsWatchSource[] = [
     sourceType: "public_news_search",
     terms: ["senator", "representative", "governor", "ethics", "vote", "investigation", "funding", "election"],
   },
+];
+
+export const DAILY_NEWS_WATCH_SOURCES: DailyNewsWatchSource[] = [
+  ...BASE_DAILY_NEWS_WATCH_SOURCES,
+  ...STATE_DAILY_NEWS_WATCH_SOURCES,
 ];
