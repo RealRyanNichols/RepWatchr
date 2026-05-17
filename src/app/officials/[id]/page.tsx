@@ -32,6 +32,7 @@ import ProfileScorecardVote from "@/components/scorecards/ProfileScorecardVote";
 import OfficialSocialPanel from "@/components/officials/OfficialSocialPanel";
 import { getPublicProfileOverlay, type PublicProfileEnrichmentItem, type PublicProfileOverlay, type PublicProfileVoteSnapshot } from "@/lib/profile-overlays";
 import { buildOfficialCompletionSnapshot } from "@/lib/profile-completion";
+import { getCongressTradingSnapshot } from "@/lib/congress-trading";
 
 export const revalidate = 86400;
 export const dynamic = "force-dynamic";
@@ -83,6 +84,7 @@ export default async function OfficialProfilePage({
   const issueCategories = getIssueCategories();
   const relatedNews = getNewsByOfficialId(id);
   const publicVoteRecord = getPublicVoteRecord(id);
+  const congressTrading = getCongressTradingSnapshot(id);
   const ideologyProfile = getOfficialIdeologyProfile(id) ?? buildFallbackIdeologyProfile(official);
   const profileOverlay = await getPublicProfileOverlay("official", id);
   const staticCompletion = buildOfficialCompletionSnapshot(official);
@@ -236,6 +238,10 @@ export default async function OfficialProfilePage({
 
         {overlayPublicRecords.length > 0 && (
           <ProfileOverlayEvidencePanel items={overlayPublicRecords} />
+        )}
+
+        {congressTrading && (
+          <CongressTradingDisclosurePanel snapshot={congressTrading} />
         )}
 
         <div className="mb-8">
@@ -617,6 +623,131 @@ function VoteMetric({ label, value }: { label: string; value: number }) {
       <p className="text-lg font-black text-gray-950">{value}</p>
       <p className="text-[11px] font-black uppercase tracking-wide text-gray-500">{label}</p>
     </div>
+  );
+}
+
+function CongressTradingDisclosurePanel({
+  snapshot,
+}: {
+  snapshot: NonNullable<ReturnType<typeof getCongressTradingSnapshot>>;
+}) {
+  const primary = snapshot.primaryRow;
+  const tone = snapshot.highestRiskLevel;
+  const toneClasses = {
+    critical: {
+      shell: "border-red-300 bg-red-50",
+      eyebrow: "text-red-800",
+      badge: "border-red-200 bg-red-700 text-white",
+      metric: "border-red-200 bg-white text-red-950",
+      link: "border-red-200 bg-white text-red-800 hover:bg-red-100",
+    },
+    high: {
+      shell: "border-amber-300 bg-amber-50",
+      eyebrow: "text-amber-800",
+      badge: "border-amber-200 bg-amber-600 text-white",
+      metric: "border-amber-200 bg-white text-amber-950",
+      link: "border-amber-200 bg-white text-amber-800 hover:bg-amber-100",
+    },
+    watch: {
+      shell: "border-blue-200 bg-blue-50",
+      eyebrow: "text-blue-800",
+      badge: "border-blue-200 bg-blue-700 text-white",
+      metric: "border-blue-200 bg-white text-blue-950",
+      link: "border-blue-200 bg-white text-blue-800 hover:bg-blue-100",
+    },
+  }[tone];
+  const riskLabel = {
+    critical: "Critical disclosure review",
+    high: "High disclosure review",
+    watch: "Trading disclosure watch",
+  }[tone];
+
+  return (
+    <section className={`mb-8 rounded-2xl border p-5 shadow-sm ${toneClasses.shell}`}>
+      <div className="flex flex-col gap-3 sm:flex-row sm:items-start sm:justify-between">
+        <div>
+          <p className={`text-xs font-black uppercase tracking-wide ${toneClasses.eyebrow}`}>
+            Congress trading disclosure flag
+          </p>
+          <h2 className="mt-1 text-2xl font-black text-gray-950">{riskLabel}</h2>
+          <p className="mt-2 max-w-4xl text-sm font-semibold leading-6 text-gray-700">
+            RepWatchr is highlighting public disclosure volume and recency from a secondary tracker, then linking the
+            official House or Senate disclosure portal for source review. This is not a finding of wrongdoing.
+          </p>
+        </div>
+        <span className={`w-fit rounded-full border px-3 py-1 text-xs font-black uppercase tracking-wide ${toneClasses.badge}`}>
+          {tone}
+        </span>
+      </div>
+
+      <div className="mt-5 grid gap-3 sm:grid-cols-3">
+        <div className={`rounded-xl border p-4 ${toneClasses.metric}`}>
+          <p className="text-3xl font-black">{primary.transactions.toLocaleString()}</p>
+          <p className="mt-1 text-xs font-black uppercase tracking-wide">Tracker transactions</p>
+        </div>
+        <div className={`rounded-xl border p-4 ${toneClasses.metric}`}>
+          <p className="text-3xl font-black">{primary.filings.toLocaleString()}</p>
+          <p className="mt-1 text-xs font-black uppercase tracking-wide">Disclosure filings</p>
+        </div>
+        <div className={`rounded-xl border p-4 ${toneClasses.metric}`}>
+          <p className="text-3xl font-black">{primary.lastFilingDate}</p>
+          <p className="mt-1 text-xs font-black uppercase tracking-wide">Latest tracker filing</p>
+        </div>
+      </div>
+
+      <div className="mt-5 grid gap-4 lg:grid-cols-[1fr_0.8fr]">
+        <div className="rounded-xl border border-white/70 bg-white/80 p-4">
+          <p className="text-xs font-black uppercase tracking-wide text-gray-500">Why this is highlighted</p>
+          <ul className="mt-2 space-y-2 text-sm font-semibold leading-6 text-gray-700">
+            {primary.riskReasons.map((reason) => (
+              <li key={reason} className="flex gap-2">
+                <span className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-red-600" />
+                <span>{reason}</span>
+              </li>
+            ))}
+          </ul>
+          {snapshot.rows.length > 1 ? (
+            <p className="mt-3 text-xs font-bold text-gray-500">
+              {snapshot.rows.length} tracker rows matched this current profile. The highest-volume row is shown first
+              so duplicate or historical tracker entries do not get silently blended into one number.
+            </p>
+          ) : null}
+        </div>
+        <div className="rounded-xl border border-white/70 bg-white/80 p-4">
+          <p className="text-xs font-black uppercase tracking-wide text-gray-500">Source path</p>
+          <div className="mt-3 flex flex-wrap gap-2">
+            <a
+              href={primary.trackerUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className={`rounded-full border px-3 py-1.5 text-xs font-black ${toneClasses.link}`}
+            >
+              Open tracker profile
+            </a>
+            <a
+              href={primary.officialDisclosureUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className={`rounded-full border px-3 py-1.5 text-xs font-black ${toneClasses.link}`}
+            >
+              {primary.officialDisclosureName}
+            </a>
+            <a
+              href={snapshot.source.url}
+              target="_blank"
+              rel="noopener noreferrer"
+              className={`rounded-full border px-3 py-1.5 text-xs font-black ${toneClasses.link}`}
+            >
+              Snapshot source
+            </a>
+          </div>
+          <p className="mt-3 text-xs font-semibold leading-5 text-gray-600">
+            Snapshot pulled {snapshot.snapshotDate}. Official portals are attached so readers can verify filed PTR and
+            financial disclosure records before treating a tracker row as complete.
+          </p>
+        </div>
+      </div>
+    </section>
   );
 }
 

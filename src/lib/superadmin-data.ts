@@ -24,6 +24,8 @@ export type SuperAdminSnapshot = {
   allElectedOfficialGaps: number;
   scorecards: number;
   redFlagItems: number;
+  congressTradingProfiles: number;
+  congressTradingCriticalRows: number;
   newsArticles: number;
   fundingSummaries: number;
   publicPowerProfiles: number;
@@ -74,6 +76,8 @@ export function buildSuperAdminSnapshot(): SuperAdminSnapshot {
     allElectedOfficialGaps,
     scorecards: dataStats.scoreCards,
     redFlagItems: dataStats.redFlagItems,
+    congressTradingProfiles: dataStats.congressTradingCurrentProfilesWithRows,
+    congressTradingCriticalRows: dataStats.congressTradingCriticalRows,
     newsArticles: dataStats.newsArticles,
     fundingSummaries: dataStats.fundingSummaries,
     publicPowerProfiles,
@@ -125,6 +129,14 @@ export function buildSuperAdminWatchItems(): SuperAdminWatchItem[] {
       value: `${completion.overallPercent}%`,
       detail: `${completion.completedDistricts}/${completion.totalDistricts} districts and ${completion.completedMembers}/${completion.totalMembers} member profiles are at 75% or better.`,
       href: "/buildout",
+    },
+    {
+      id: "congress-trading-disclosures",
+      label: "Congress trading disclosure flags",
+      status: dataStats.congressTradingCriticalRows > 0 ? "red" : dataStats.congressTradingHighRows > 0 ? "yellow" : "green",
+      value: dataStats.congressTradingCurrentProfilesWithRows.toLocaleString(),
+      detail: `${dataStats.congressTradingMatchedRows.toLocaleString()} tracker rows are matched to current congressional profiles. ${dataStats.congressTradingCriticalRows} critical and ${dataStats.congressTradingHighRows} high rows are visible on public profiles.`,
+      href: "/officials?level=federal",
     },
     {
       id: "open-research-items",

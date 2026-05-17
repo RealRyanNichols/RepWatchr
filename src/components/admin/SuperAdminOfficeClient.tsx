@@ -810,6 +810,7 @@ function Overview({ snapshot, liveCounts }: { snapshot: SuperAdminSnapshot; live
         <ReadoutCard label="Source URLs" value={snapshot.sourceUrls.toLocaleString()} detail="Loaded public source URLs." glyph="S" />
         <ReadoutCard label="Open research" value={snapshot.openResearchItems.toLocaleString()} detail="Gaps and empty source URLs." glyph="R" />
         <ReadoutCard label="Red flags" value={snapshot.redFlagItems.toLocaleString()} detail="Sourced red-flag rows." glyph="F" />
+        <ReadoutCard label="Trading flags" value={snapshot.congressTradingProfiles.toLocaleString()} detail={`${snapshot.congressTradingCriticalRows.toLocaleString()} critical congressional disclosure rows.`} glyph="T" />
         <ReadoutCard label="Scorecards" value={snapshot.scorecards.toLocaleString()} detail="Loaded scorecard files." glyph="G" />
       </div>
       <div className="mt-6 grid gap-3 lg:grid-cols-2">

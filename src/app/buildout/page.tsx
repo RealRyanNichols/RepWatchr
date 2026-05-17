@@ -407,6 +407,12 @@ export default function BuildoutDashboardPage() {
       href: "/funding",
     },
     {
+      label: "Congress trading disclosures",
+      value: dataStats.congressTradingCurrentProfilesWithRows,
+      status: `${dataStats.congressTradingMatchedRows} tracker rows are matched to current congressional profiles from ${dataStats.congressTradingTrackerTransactions.toLocaleString()} public disclosure transaction rows. ${dataStats.congressTradingCriticalRows} critical and ${dataStats.congressTradingHighRows} high review rows are highlighted on profiles.`,
+      href: "/officials?level=federal",
+    },
+    {
       label: "Red-flag records",
       value: dataStats.redFlagItems,
       status: `${dataStats.officialsWithRedFlags} officials have one or more sourced red-flag records.`,

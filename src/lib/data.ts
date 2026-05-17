@@ -23,6 +23,7 @@ import {
   getMediaWatchProfiles,
   getPublicSafetyWatchProfiles,
 } from "@/lib/power-watch";
+import { getCongressTradingDataset, getCongressTradingStats } from "@/lib/congress-trading";
 
 // Base path to the data directory
 const DATA_DIR = path.join(process.cwd(), "src", "data");
@@ -342,6 +343,8 @@ export function getRepWatchrDataStats() {
   const attorneyWatchProfiles = getAttorneyWatchProfiles();
   const mediaWatchProfiles = getMediaWatchProfiles();
   const publicSafetyWatchProfiles = getPublicSafetyWatchProfiles();
+  const congressTradingStats = getCongressTradingStats();
+  const congressTradingDataset = getCongressTradingDataset();
   const publicPowerProfiles = [
     ...attorneyWatchProfiles,
     ...mediaWatchProfiles,
@@ -375,6 +378,7 @@ export function getRepWatchrDataStats() {
   const voteSourceUrls = new Set<string>();
   const newsSourceUrls = new Set<string>();
   const publicPowerSourceUrls = new Set<string>();
+  const congressTradingSourceUrls = new Set<string>();
   const reviewStatusCounts = officials.reduce<Record<string, number>>((acc, official) => {
     const status = official.reviewStatus ?? "missing";
     acc[status] = (acc[status] ?? 0) + 1;
@@ -511,6 +515,20 @@ export function getRepWatchrDataStats() {
       publicSourceUrls.add(profile.profileImageSource);
     }
   });
+  if (congressTradingDataset) {
+    const tradingUrls = [
+      congressTradingDataset.source.url,
+      ...congressTradingDataset.officialSources.map((source) => source.url),
+      ...congressTradingDataset.records.map((record) => record.trackerUrl),
+      ...congressTradingDataset.unmatchedRecords.map((record) => record.trackerUrl),
+    ];
+    tradingUrls.forEach((url) => {
+      if (url) {
+        congressTradingSourceUrls.add(url);
+        publicSourceUrls.add(url);
+      }
+    });
+  }
   officials.forEach((official) => {
     official.sourceLinks?.forEach((source) => {
       if (source.url) {
@@ -603,6 +621,15 @@ export function getRepWatchrDataStats() {
     attorneyWatchProfiles: attorneyWatchProfiles.length,
     mediaWatchProfiles: mediaWatchProfiles.length,
     publicSafetyWatchProfiles: publicSafetyWatchProfiles.length,
+    congressTradingSnapshotDate: congressTradingStats.snapshotDate,
+    congressTradingTrackerPoliticians: congressTradingStats.trackerPoliticians,
+    congressTradingTrackerTransactions: congressTradingStats.trackerTransactions,
+    congressTradingRowsParsed: congressTradingStats.rowsParsed,
+    congressTradingMatchedRows: congressTradingStats.matchedCurrentProfiles,
+    congressTradingUnmatchedRows: congressTradingStats.unmatchedOrFormerProfiles,
+    congressTradingCurrentProfilesWithRows: congressTradingStats.currentProfilesWithRows,
+    congressTradingCriticalRows: congressTradingStats.criticalRows,
+    congressTradingHighRows: congressTradingStats.highRows,
     publicPowerProfiles: publicPowerProfiles.length,
     publicPowerProfilesNeedingBuildout: publicPowerProfiles.filter(
       (profile) => profile.profileStatus === "needs_profile_buildout",
@@ -613,6 +640,7 @@ export function getRepWatchrDataStats() {
     voteSourceUrls: voteSourceUrls.size,
     newsSourceUrls: newsSourceUrls.size,
     publicPowerSourceUrls: publicPowerSourceUrls.size,
+    congressTradingSourceUrls: congressTradingSourceUrls.size,
     publicSourceUrls: publicSourceUrls.size,
   };
 }

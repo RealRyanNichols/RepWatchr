@@ -136,6 +136,65 @@ export interface FundingSummary {
   sources: DataSource[];
 }
 
+export type CongressTradingRiskLevel = "watch" | "high" | "critical";
+export type CongressTradingSourceTier = "official_record" | "secondary_tracker";
+export type CongressTradingMatchStatus = "matched_current_profile" | "unmatched_or_former_profile";
+
+export interface CongressTradingSource {
+  name: string;
+  url: string;
+  retrievedDate: string;
+  tier: CongressTradingSourceTier;
+}
+
+export interface CongressTradingTrackerRow {
+  id: string;
+  officialId?: string;
+  rank: number;
+  name: string;
+  chamber: "house" | "senate";
+  district: string;
+  filings: number;
+  transactions: number;
+  lastFilingDate: string;
+  popularityScore: number;
+  popularityNote: string;
+  trackerUrl: string;
+  officialDisclosureUrl: string;
+  officialDisclosureName: string;
+  riskLevel: CongressTradingRiskLevel;
+  riskReasons: string[];
+  status: CongressTradingMatchStatus;
+}
+
+export interface CongressTradingDataset {
+  snapshotDate: string;
+  source: CongressTradingSource;
+  officialSources: CongressTradingSource[];
+  totals: {
+    trackerPoliticians: number;
+    trackerTransactions: number;
+    rowsParsed: number;
+    matchedCurrentProfiles: number;
+    unmatchedOrFormerProfiles: number;
+    currentProfilesWithRows: number;
+    criticalRows: number;
+    highRows: number;
+  };
+  records: CongressTradingTrackerRow[];
+  unmatchedRecords: CongressTradingTrackerRow[];
+}
+
+export interface CongressTradingProfileSnapshot {
+  officialId: string;
+  snapshotDate: string;
+  source: CongressTradingSource;
+  officialSources: CongressTradingSource[];
+  rows: CongressTradingTrackerRow[];
+  primaryRow: CongressTradingTrackerRow;
+  highestRiskLevel: CongressTradingRiskLevel;
+}
+
 export interface BillVote {
   officialId: string;
   vote: VoteChoice;

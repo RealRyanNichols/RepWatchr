@@ -131,6 +131,11 @@ export default async function OfficialsPage({
       detail: `${formatNumber(dataStats.publicVoteRecordRows)} public roll-call rows, ${formatNumber(dataStats.scoreCards)} scorecards, ${formatNumber(dataStats.fundingSummaries)} funding summaries, and ${formatNumber(dataStats.redFlagItems)} red-flag items are loaded.`,
     },
     {
+      label: "Congress trading flags",
+      value: formatNumber(dataStats.congressTradingCurrentProfilesWithRows),
+      detail: `${formatNumber(dataStats.congressTradingMatchedRows)} matched tracker rows from ${formatNumber(dataStats.congressTradingTrackerTransactions)} public disclosure transactions; ${formatNumber(dataStats.congressTradingCriticalRows)} critical and ${formatNumber(dataStats.congressTradingHighRows)} high review rows.`,
+    },
+    {
       label: "School-board dossiers",
       value: formatNumber(schoolBoardStats.candidates),
       detail: `${formatNumber(schoolBoardStats.districts)} Texas districts, ${formatNumber(schoolBoardStats.stubProfiles)} queued or in-progress profiles, ${formatNumber(schoolBoardStats.gapCount)} research gaps.`,
@@ -157,6 +162,9 @@ export default async function OfficialsPage({
           completeProfiles={buildoutStats.completeProfiles}
           incompleteProfiles={buildoutStats.incompleteProfiles}
           averageCompletionPercent={buildoutStats.averageCompletionPercent}
+          congressTradingProfiles={dataStats.congressTradingCurrentProfilesWithRows}
+          congressTradingCriticalRows={dataStats.congressTradingCriticalRows}
+          congressTradingHighRows={dataStats.congressTradingHighRows}
         />
 
         {directoryOfficials.length > 0 ? (
@@ -292,6 +300,9 @@ function OfficialsCommandDeck({
   completeProfiles,
   incompleteProfiles,
   averageCompletionPercent,
+  congressTradingProfiles,
+  congressTradingCriticalRows,
+  congressTradingHighRows,
 }: {
   selectedStateCode?: string;
   selectedStateName?: string;
@@ -310,6 +321,9 @@ function OfficialsCommandDeck({
   completeProfiles: number;
   incompleteProfiles: number;
   averageCompletionPercent: number;
+  congressTradingProfiles: number;
+  congressTradingCriticalRows: number;
+  congressTradingHighRows: number;
 }) {
   const activeScope = selectedStateCode ? selectedStateName ?? selectedStateCode : "United States";
   const quickStates = jurisdictions
@@ -341,6 +355,11 @@ function OfficialsCommandDeck({
       label: "Source linked",
       value: formatNumber(sourceLinkedCount),
       detail: selectedStateCode ? "Profiles with public source links" : `${loadedFederalStates} states green for federal`,
+    },
+    {
+      label: "Trading flags",
+      value: formatNumber(congressTradingProfiles),
+      detail: `${formatNumber(congressTradingCriticalRows)} critical and ${formatNumber(congressTradingHighRows)} high congressional disclosure rows`,
     },
   ];
 
