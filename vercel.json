@@ -7,7 +7,7 @@
     },
     {
       "path": "/api/cron/daily-updates",
-      "schedule": "15 10 * * *"
+      "schedule": "0 12 * * *"
     }
   ]
 }
