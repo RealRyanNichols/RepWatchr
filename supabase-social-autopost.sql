@@ -33,6 +33,23 @@ revoke all on public.repwatchr_daily_clips from anon, authenticated;
 comment on table public.repwatchr_daily_clips is
   'Server-written RepWatchr daily wire clips collected from public RSS and news search sources.';
 
+create table if not exists public.repwatchr_social_tokens (
+  platform text primary key check (platform in ('facebook', 'x')),
+  access_token text,
+  refresh_token text,
+  expires_at timestamptz,
+  metadata jsonb not null default '{}'::jsonb,
+  created_at timestamptz not null default now(),
+  updated_at timestamptz not null default now()
+);
+
+alter table public.repwatchr_social_tokens enable row level security;
+
+revoke all on public.repwatchr_social_tokens from anon, authenticated;
+
+comment on table public.repwatchr_social_tokens is
+  'Server-only social OAuth token storage for RepWatchr autoposting. Never expose to public clients.';
+
 create table if not exists public.repwatchr_social_posts (
   id uuid primary key default gen_random_uuid(),
   clip_id text not null,

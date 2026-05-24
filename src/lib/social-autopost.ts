@@ -17,6 +17,21 @@ interface PlatformPostResponse {
   payload: unknown;
 }
 
+interface SocialTokenRow {
+  platform: SocialPlatform;
+  access_token: string | null;
+  refresh_token: string | null;
+  expires_at: string | null;
+}
+
+interface XRefreshTokenResponse {
+  access_token?: string;
+  refresh_token?: string;
+  expires_in?: number;
+  token_type?: string;
+  scope?: string;
+}
+
 export interface SocialStoryCandidate {
   clipId: string;
   title: string;
@@ -190,7 +205,14 @@ function xMessage(clip: DailyWireClip) {
 function configuredPlatforms(): SocialPlatform[] {
   const platforms: SocialPlatform[] = [];
   if (process.env.FACEBOOK_PAGE_ID && process.env.FACEBOOK_PAGE_ACCESS_TOKEN) platforms.push("facebook");
-  if (process.env.X_USER_ACCESS_TOKEN) platforms.push("x");
+  if (
+    process.env.X_USER_ACCESS_TOKEN ||
+    process.env.X_REFRESH_TOKEN ||
+    process.env.X_CLIENT_ID ||
+    process.env.X_AUTOPOST_ENABLED === "true"
+  ) {
+    platforms.push("x");
+  }
   return platforms;
 }
 
@@ -250,12 +272,8 @@ async function postToFacebook(clip: DailyWireClip): Promise<PlatformPostResponse
 }
 
 async function postToX(clip: DailyWireClip): Promise<PlatformPostResponse> {
-  const userToken = process.env.X_USER_ACCESS_TOKEN;
+  const userToken = await getXAccessToken();
   const apiUrl = process.env.X_POST_ENDPOINT ?? "https://api.x.com/2/tweets";
-
-  if (!userToken) {
-    throw new Error("Missing X_USER_ACCESS_TOKEN");
-  }
 
   const response = await fetch(apiUrl, {
     method: "POST",
@@ -274,6 +292,99 @@ async function postToX(clip: DailyWireClip): Promise<PlatformPostResponse> {
   const data = (payload as { data?: { id?: unknown } } | null)?.data;
   const platformPostId = typeof data?.id === "string" ? data.id : null;
   return { platformPostId, payload };
+}
+
+function tokenExpiresSoon(value: string | null) {
+  if (!value) return true;
+  const time = new Date(value).getTime();
+  if (Number.isNaN(time)) return true;
+  return time - Date.now() < 5 * 60 * 1000;
+}
+
+async function loadSocialToken(platform: SocialPlatform): Promise<SocialTokenRow | null> {
+  const supabase = getSupabaseAdminClient();
+  if (!supabase) return null;
+
+  const { data, error } = await supabase
+    .from("repwatchr_social_tokens")
+    .select("platform,access_token,refresh_token,expires_at")
+    .eq("platform", platform)
+    .maybeSingle();
+
+  if (error) return null;
+  return data as SocialTokenRow | null;
+}
+
+async function saveSocialToken(platform: SocialPlatform, token: XRefreshTokenResponse, fallbackRefreshToken: string) {
+  const supabase = getSupabaseAdminClient();
+  if (!supabase || !token.access_token) return;
+
+  const now = new Date();
+  const expiresInSeconds = typeof token.expires_in === "number" ? token.expires_in : 7200;
+  const expiresAt = new Date(now.getTime() + expiresInSeconds * 1000).toISOString();
+
+  await supabase.from("repwatchr_social_tokens").upsert(
+    {
+      platform,
+      access_token: token.access_token,
+      refresh_token: token.refresh_token ?? fallbackRefreshToken,
+      expires_at: expiresAt,
+      metadata: {
+        tokenType: token.token_type,
+        scope: token.scope,
+      },
+      updated_at: now.toISOString(),
+    },
+    { onConflict: "platform" },
+  );
+}
+
+async function refreshXAccessToken(refreshToken: string) {
+  const clientId = process.env.X_CLIENT_ID;
+
+  if (!clientId) {
+    throw new Error("Missing X_CLIENT_ID for X refresh-token flow");
+  }
+
+  const headers: Record<string, string> = {
+    "content-type": "application/x-www-form-urlencoded",
+  };
+
+  if (process.env.X_CLIENT_SECRET) {
+    headers.authorization = `Basic ${Buffer.from(`${clientId}:${process.env.X_CLIENT_SECRET}`).toString("base64")}`;
+  }
+
+  const response = await fetch("https://api.x.com/2/oauth2/token", {
+    method: "POST",
+    headers,
+    body: new URLSearchParams({
+      refresh_token: refreshToken,
+      grant_type: "refresh_token",
+      client_id: clientId,
+    }),
+  });
+  const payload = (await readResponsePayload(response)) as XRefreshTokenResponse | { error?: { message?: string } };
+
+  if (!response.ok || !("access_token" in payload) || !payload.access_token) {
+    throw new Error(payloadError(payload) ?? `X OAuth refresh returned HTTP ${response.status}`);
+  }
+
+  await saveSocialToken("x", payload, refreshToken);
+  return payload.access_token;
+}
+
+async function getXAccessToken() {
+  if (process.env.X_USER_ACCESS_TOKEN) return process.env.X_USER_ACCESS_TOKEN;
+
+  const stored = await loadSocialToken("x");
+  if (stored?.access_token && !tokenExpiresSoon(stored.expires_at)) return stored.access_token;
+
+  const refreshToken = stored?.refresh_token ?? process.env.X_REFRESH_TOKEN;
+  if (!refreshToken) {
+    throw new Error("Missing X_USER_ACCESS_TOKEN or X refresh token");
+  }
+
+  return refreshXAccessToken(refreshToken);
 }
 
 function rowForPlatform(rows: SocialPostLogRow[], platform: SocialPlatform) {
