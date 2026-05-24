@@ -43,7 +43,7 @@ const attentionLoop = [
   {
     step: "Search",
     title: "Find the person fast",
-    detail: "Start with a name, district, office, or school board. Attention dies when people cannot find the target.",
+    detail: "Start with a name, district, office, or school board and get to the record fast.",
   },
   {
     step: "Grade",
@@ -57,7 +57,7 @@ const attentionLoop = [
   },
   {
     step: "Share",
-    title: "Make every profile a distribution engine",
+    title: "Make every profile easy to share",
     detail: "The page should give voters a clean link they can post before meetings, elections, hearings, and news cycles.",
   },
 ];
@@ -115,7 +115,7 @@ const returnHooks = [
   },
   {
     trigger: "When a new record appears",
-    promise: "Submit the receipt, flag the gap, and turn scattered attention into a reusable public record trail.",
+    promise: "Submit the receipt, flag the gap, and turn scattered claims into a reusable public record trail.",
   },
   {
     trigger: "When election season starts",
@@ -309,7 +309,7 @@ export default function HomePage() {
     {
       label: "Receipts",
       value: formatNumber(allPublicSourceUrls),
-      detail: "source links keep attention alive",
+      detail: "source links voters can check",
     },
   ];
 
@@ -470,7 +470,7 @@ export default function HomePage() {
                 ))}
               </div>
               <p className="mt-3 text-xs font-semibold leading-5 text-slate-300">
-                The strongest attention pages are not opinion pages. They are names, votes,
+                The strongest RepWatchr pages are not opinion pages. They are names, votes,
                 scores, source links, and a next action voters can repeat.
               </p>
             </div>
@@ -479,19 +479,19 @@ export default function HomePage() {
               <Link href="/create-account" className="rounded-xl border border-red-200 bg-white p-4 shadow-sm transition hover:-translate-y-0.5 hover:border-red-400 hover:bg-red-50 hover:shadow-md">
                 <p className="text-xs font-black uppercase tracking-wide text-red-700">Citizen pressure</p>
                 <h3 className="mt-1 text-lg font-black text-blue-950">Grade the record</h3>
-                <p className="mt-1 text-sm font-semibold leading-5 text-slate-600">Give people one place to rate, watch, and come back.</p>
+                <p className="mt-1 text-sm font-semibold leading-5 text-slate-600">Rate the record, watch changes, and come back when new proof appears.</p>
               </Link>
               <Link href="/methodology" className="rounded-xl border border-blue-200 bg-white p-4 shadow-sm transition hover:-translate-y-0.5 hover:border-blue-400 hover:bg-blue-50 hover:shadow-md">
                 <p className="text-xs font-black uppercase tracking-wide text-blue-800">Trust shield</p>
                 <h3 className="mt-1 text-lg font-black text-blue-950">Show the receipts</h3>
-                <p className="mt-1 text-sm font-semibold leading-5 text-slate-600">Attention holds longer when every claim points back to a source.</p>
+                <p className="mt-1 text-sm font-semibold leading-5 text-slate-600">Every claim should point back to a source voters can inspect.</p>
               </Link>
             </div>
 
             <div className="rounded-2xl border border-amber-200 bg-amber-50 p-4 shadow-sm">
               <p className="text-xs font-black uppercase tracking-[0.18em] text-red-700">2-minute challenge</p>
               <h3 className="mt-2 text-2xl font-black leading-tight text-blue-950">
-                Give every visitor a mission before they drift.
+                Check one public record in the next two minutes.
               </h3>
               <div className="mt-4 grid gap-2">
                 {twoMinuteChallenge.map((action, index) => (
@@ -520,7 +520,7 @@ export default function HomePage() {
       <section className="border-b border-gray-100 bg-white">
         <div className="mx-auto max-w-7xl px-4 py-8 sm:px-6 lg:px-8">
           <div className="mb-6 max-w-2xl">
-            <p className="text-xs font-black uppercase tracking-[0.18em] text-red-700">Proof that holds attention</p>
+            <p className="text-xs font-black uppercase tracking-[0.18em] text-red-700">Proof people can check</p>
             <h2 className="mt-2 text-3xl font-black leading-tight text-blue-950">
               The record is already loaded. Now make it easy to open, grade, and share.
             </h2>
@@ -561,9 +561,9 @@ export default function HomePage() {
               Turn public records into stories people actually share.
             </h2>
             <p className="mt-4 text-sm font-semibold leading-6 text-blue-950/70">
-              The feed is the front door for attention. Articles become post-style
-              story packets with a hook, source trail, linked officials, share
-              snippet, and a path back to the full record.
+              The feed turns public records into readable story packets with a hook,
+              source trail, linked officials, share snippet, and a path back to the
+              full record.
             </p>
             <div className="mt-5 flex flex-wrap gap-3">
               <Link
@@ -613,14 +613,13 @@ export default function HomePage() {
         <div className="mx-auto max-w-7xl px-4 py-14 sm:px-6 lg:px-8">
           <div className="grid gap-8 lg:grid-cols-[0.78fr_1.22fr]">
             <div>
-              <p className="text-xs font-black uppercase tracking-[0.18em] text-red-700">ATTENTION multiplier</p>
+              <p className="text-xs font-black uppercase tracking-[0.18em] text-red-700">Record-to-action loop</p>
               <h2 className="mt-2 text-3xl font-black leading-tight text-blue-950 sm:text-5xl">
                 Every page should make the next click obvious.
               </h2>
               <p className="mt-4 text-sm font-semibold leading-6 text-blue-950/70">
-                The site should not ask visitors to admire a database. It should
-                push them into a loop that creates more attention, more records,
-                and more return visits.
+                The site should not ask voters to admire a database. It should give
+                them a clear path from search, to source, to share, to the next record.
               </p>
             </div>
             <div className="grid gap-3 sm:grid-cols-2">
@@ -646,13 +645,13 @@ export default function HomePage() {
         <div className="mx-auto max-w-7xl px-4 py-14 sm:px-6 lg:px-8">
           <div className="grid gap-8 lg:grid-cols-[1.05fr_0.95fr]">
             <div>
-              <p className="text-xs font-black uppercase tracking-[0.18em] text-red-700">Hold attention after the first click</p>
+              <p className="text-xs font-black uppercase tracking-[0.18em] text-red-700">Reasons to come back</p>
               <h2 className="mt-2 text-3xl font-black leading-tight text-blue-950 sm:text-5xl">
                 Make RepWatchr the place people return when pressure rises.
               </h2>
               <p className="mt-4 max-w-3xl text-sm font-semibold leading-6 text-blue-950/70">
-                Attention leaks when a page only answers one question. Hold it by giving people
-                repeat-use reasons tied to real moments: meetings, viral posts, new records, and elections.
+                A useful accountability page should answer the first question and point
+                to the next record: meetings, viral posts, new filings, and elections.
               </p>
               <div className="mt-6 grid gap-3 sm:grid-cols-2">
                 {returnHooks.map((hook) => (
