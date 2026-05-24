@@ -90,7 +90,7 @@ const twoMinuteChallenge = [
   {
     label: "Open one record",
     href: "/red-flags",
-    detail: "Look for the vote, funder, source gap, or red flag that gives the page heat.",
+    detail: "Look for the vote, funder, source gap, or red flag that needs a closer look.",
   },
   {
     label: "Submit one source",
@@ -453,7 +453,7 @@ export default function HomePage() {
               <div className="flex items-center justify-between gap-3">
                 <div>
                   <p className="text-xs font-black uppercase tracking-[0.18em] text-amber-300">Open first</p>
-                  <h2 className="mt-1 text-2xl font-black">Records built to spread.</h2>
+                  <h2 className="mt-1 text-2xl font-black">Records built to share.</h2>
                 </div>
                 <Link href="/red-flags" className="shrink-0 rounded-full bg-red-700 px-3 py-1.5 text-xs font-black text-white transition hover:bg-red-600">
                   Red flags
@@ -663,7 +663,7 @@ export default function HomePage() {
               </div>
             </div>
             <div className="rounded-3xl border border-slate-200 bg-slate-950 p-5 text-white shadow-xl shadow-blue-950/15">
-              <p className="text-xs font-black uppercase tracking-[0.18em] text-amber-300">Share lines that spread</p>
+              <p className="text-xs font-black uppercase tracking-[0.18em] text-amber-300">Share lines people can use</p>
               <h3 className="mt-2 text-3xl font-black leading-tight">
                 Give people words they can use without making claims they cannot prove.
               </h3>
