@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
-import Image from "next/image";
 import Link from "next/link";
 import { Suspense } from "react";
 import OfficialGrid from "@/components/officials/OfficialGrid";
+import OfficialPhotoImage from "@/components/shared/OfficialPhotoImage";
 import { stateCivicOutreachPriorities } from "@/data/state-civic-outreach-priorities";
 import { getAllScoreCards } from "@/lib/data";
 import { getAllStateLegislators, getStateLegislatureBuildoutStats } from "@/lib/state-legislature";
@@ -79,13 +79,11 @@ export default function StateRepsPage() {
                   href={`/officials/${official.id}`}
                   className="group w-36 shrink-0 overflow-hidden rounded-lg border border-white/10 bg-white text-slate-950 transition hover:-translate-y-0.5 hover:border-[#d5aa3f]"
                 >
-                  <div className="relative h-32 bg-slate-200">
-                    <Image
-                      src={official.photo!}
-                      alt={`${official.name} profile photo`}
-                      fill
-                      sizes="144px"
-                      className="object-cover"
+                  <div className="relative h-36 bg-slate-200">
+                    <OfficialPhotoImage
+                      official={official}
+                      sizes="288px"
+                      className="object-cover transition duration-300 group-hover:scale-105"
                     />
                   </div>
                   <div className="p-2">

@@ -4,8 +4,8 @@
   "firstName": "Ted",
   "lastName": "Cruz",
   "photo": "/images/officials/federal/ted-cruz.jpg",
-  "photoSourceUrl": "https://unitedstates.github.io/images/congress/225x275/C001098.jpg",
-  "photoCredit": "UnitedStates project congressional image mirror",
+  "photoSourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Ted%20Cruz%20official%20116th%20portrait.jpg",
+  "photoCredit": "Wikimedia Commons public-domain U.S. Senate portrait",
   "party": "R",
   "level": "federal",
   "position": "U.S. Senator",
@@ -39,8 +39,8 @@
       "url": "https://bioguide.congress.gov/search/bio/C001098"
     },
     {
-      "title": "Congressional photo source",
-      "url": "https://unitedstates.github.io/images/congress/225x275/C001098.jpg"
+      "title": "Public-domain congressional portrait source",
+      "url": "https://commons.wikimedia.org/wiki/File:Ted_Cruz_official_116th_portrait.jpg"
     }
   ],
   "lastVerifiedAt": "2026-04-29"

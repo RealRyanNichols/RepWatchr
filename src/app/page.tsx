@@ -1,10 +1,10 @@
 import Link from "next/link";
-import Image from "next/image";
-import { getAllOfficials, getScoreCard, getIssueCategories, getAllNews, getRedFlags, getRepWatchrDataStats } from "@/lib/data";
+import { getAllOfficials, getScoreCard, getIssueCategories, getAllNews, getRedFlags, getRepWatchrDataStats, getOfficialById } from "@/lib/data";
 import { getSchoolBoardStats } from "@/lib/school-board-research";
 import OfficialCard from "@/components/officials/OfficialCard";
 import FarettaSearchBox from "@/components/shared/FarettaSearchBox";
-import type { Official } from "@/types";
+import OfficialPhotoImage, { FEATURED_OFFICIAL_PHOTO_QUALITY } from "@/components/shared/OfficialPhotoImage";
+import type { NewsArticle, Official } from "@/types";
 
 const levelCards = [
   {
@@ -129,12 +129,12 @@ const sharePrompts = [
   "Do not argue from memory. Share the receipt.",
 ];
 
-function initialsFor(official: Official) {
-  return `${official.firstName[0] ?? ""}${official.lastName[0] ?? ""}`;
-}
-
 function formatNumber(value: number) {
   return new Intl.NumberFormat("en-US").format(value);
+}
+
+function isOfficial(value: Official | undefined): value is Official {
+  return Boolean(value);
 }
 
 function ProfileTicker({ officials }: { officials: Official[] }) {
@@ -150,19 +150,12 @@ function ProfileTicker({ officials }: { officials: Official[] }) {
             className="group flex min-w-[210px] items-center gap-3 rounded-full border border-slate-200 bg-slate-50 py-2 pl-2 pr-4 shadow-sm transition hover:border-blue-300 hover:bg-blue-50"
           >
             <div className="relative h-12 w-12 shrink-0 overflow-hidden rounded-full border border-white bg-slate-200 shadow-sm">
-              {official.photo ? (
-                <Image
-                  src={official.photo}
-                  alt={`${official.name} profile photo`}
-                  fill
-                  sizes="48px"
-                  className="object-cover"
-                />
-              ) : (
-                <div className="grid h-full w-full place-items-center text-xs font-black text-slate-700">
-                  {initialsFor(official)}
-                </div>
-              )}
+              <OfficialPhotoImage
+                official={official}
+                sizes="96px"
+                className="object-cover transition duration-300 group-hover:scale-110"
+                fallbackClassName="grid h-full w-full place-items-center text-xs font-black text-slate-700"
+              />
             </div>
             <div className="min-w-0">
               <p className="truncate text-sm font-black text-slate-950 group-hover:text-blue-800">
@@ -183,10 +176,12 @@ function WatchBoardCard({
   official,
   score,
   redFlags,
+  preload = false,
 }: {
   official: Official;
   score?: number;
   redFlags: number;
+  preload?: boolean;
 }) {
   return (
     <Link
@@ -194,19 +189,14 @@ function WatchBoardCard({
       className="group grid grid-cols-[56px_1fr_auto] items-center gap-3 rounded-xl border border-slate-300 bg-white p-2.5 shadow-sm transition hover:-translate-y-0.5 hover:border-red-300 hover:shadow-md"
     >
       <div className="relative h-14 w-14 overflow-hidden rounded-xl border border-slate-200 bg-slate-100">
-        {official.photo ? (
-          <Image
-            src={official.photo}
-            alt={`${official.name} profile photo`}
-            fill
-            sizes="56px"
-            className="object-cover"
-          />
-        ) : (
-          <div className="grid h-full w-full place-items-center text-sm font-black text-slate-700">
-            {initialsFor(official)}
-          </div>
-        )}
+        <OfficialPhotoImage
+          official={official}
+          sizes="112px"
+          preload={preload}
+          quality={FEATURED_OFFICIAL_PHOTO_QUALITY}
+          className="object-cover transition duration-300 group-hover:scale-105"
+          fallbackClassName="grid h-full w-full place-items-center text-sm font-black text-slate-700"
+        />
       </div>
       <div className="min-w-0">
         <p className="truncate text-sm font-black text-slate-950 group-hover:text-red-700">
@@ -228,6 +218,43 @@ function WatchBoardCard({
         </p>
       </div>
     </Link>
+  );
+}
+
+function HomeStoryVisual({ article }: { article: NewsArticle }) {
+  const officialsWithPhotos = article.officialIds
+    .map((id) => getOfficialById(id))
+    .filter(isOfficial)
+    .filter((official) => official.photo)
+    .slice(0, 3);
+
+  if (!officialsWithPhotos.length) {
+    return (
+      <div className="grid aspect-video place-items-center rounded-xl bg-slate-950 p-3 text-center sm:aspect-square">
+        <p className="text-[10px] font-black uppercase tracking-[0.18em] text-amber-300">Story</p>
+        <p className="mt-2 text-2xl font-black text-white">RW</p>
+      </div>
+    );
+  }
+
+  return (
+    <div className="grid aspect-video overflow-hidden rounded-xl border border-slate-300 bg-slate-950 sm:aspect-square">
+      <div className="grid h-full grid-cols-3">
+        {officialsWithPhotos.map((official) => (
+          <div key={official.id} className="relative min-h-0 border-r border-white/10 last:border-r-0">
+            <OfficialPhotoImage
+              official={official}
+              sizes="(min-width: 640px) 96px, 33vw"
+              quality={FEATURED_OFFICIAL_PHOTO_QUALITY}
+              className="object-cover opacity-95"
+            />
+            <div className="absolute inset-x-0 bottom-0 bg-slate-950/80 px-1.5 py-1">
+              <p className="truncate text-[9px] font-black text-white">{official.lastName}</p>
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
   );
 }
 
@@ -460,12 +487,13 @@ export default function HomePage() {
                 </Link>
               </div>
               <div className="mt-4 grid gap-2">
-                {watchBoardOfficials.map(({ official, score, redFlagCount }) => (
+                {watchBoardOfficials.map(({ official, score, redFlagCount }, index) => (
                   <WatchBoardCard
                     key={official.id}
                     official={official}
                     score={score}
                     redFlags={redFlagCount}
+                    preload={index < 2}
                   />
                 ))}
               </div>
@@ -585,12 +613,9 @@ export default function HomePage() {
               <Link
                 key={article.id}
                 href={`/news/${article.id}`}
-                className="group grid gap-3 rounded-2xl border border-slate-200 bg-slate-50 p-4 shadow-sm transition hover:-translate-y-0.5 hover:border-red-300 hover:bg-white hover:shadow-md sm:grid-cols-[108px_1fr]"
+                className="group grid gap-3 rounded-2xl border border-slate-200 bg-slate-50 p-4 shadow-sm transition hover:-translate-y-0.5 hover:border-red-300 hover:bg-white hover:shadow-md sm:grid-cols-[132px_1fr]"
               >
-                <div className="grid aspect-video place-items-center rounded-xl bg-slate-950 p-3 text-center sm:aspect-square">
-                  <p className="text-[10px] font-black uppercase tracking-[0.18em] text-amber-300">Story</p>
-                  <p className="mt-2 text-2xl font-black text-white">RW</p>
-                </div>
+                <HomeStoryVisual article={article} />
                 <div className="min-w-0">
                   <p className="text-xs font-black uppercase tracking-wide text-red-700">
                     {article.locationLabel ?? "RepWatchr"} / social-ready

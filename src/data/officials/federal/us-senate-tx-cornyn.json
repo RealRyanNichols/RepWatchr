@@ -4,8 +4,8 @@
   "firstName": "John",
   "lastName": "Cornyn",
   "photo": "/images/officials/federal/john-cornyn.jpg",
-  "photoSourceUrl": "https://unitedstates.github.io/images/congress/225x275/C001056.jpg",
-  "photoCredit": "UnitedStates project congressional image mirror",
+  "photoSourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/John%20Cornyn%20official%20senate%20portrait.jpg",
+  "photoCredit": "Wikimedia Commons public-domain U.S. Senate portrait",
   "party": "R",
   "level": "federal",
   "position": "U.S. Senator",
@@ -39,8 +39,8 @@
       "url": "https://bioguide.congress.gov/search/bio/C001056"
     },
     {
-      "title": "Congressional photo source",
-      "url": "https://unitedstates.github.io/images/congress/225x275/C001056.jpg"
+      "title": "Public-domain congressional portrait source",
+      "url": "https://commons.wikimedia.org/wiki/File:John_Cornyn_official_senate_portrait.jpg"
     }
   ],
   "lastVerifiedAt": "2026-04-29"

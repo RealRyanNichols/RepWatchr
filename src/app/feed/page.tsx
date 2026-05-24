@@ -3,6 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import CopySnippetButton from "@/components/shared/CopySnippetButton";
 import ShareButtons from "@/components/shared/ShareButtons";
+import OfficialPhotoImage, { FEATURED_OFFICIAL_PHOTO_QUALITY } from "@/components/shared/OfficialPhotoImage";
 import { getAllNews, getOfficialById, getRepWatchrDataStats } from "@/lib/data";
 import type { NewsArticle, NewsPowerChannel, NewsScope, Official } from "@/types";
 
@@ -188,6 +189,7 @@ function FeedMedia({
           alt={`${article.title} visual`}
           fill
           sizes="(min-width: 1024px) 720px, 100vw"
+          quality={FEATURED_OFFICIAL_PHOTO_QUALITY}
           className="object-cover"
         />
       </div>
@@ -199,12 +201,11 @@ function FeedMedia({
       <div className="grid aspect-[16/9] grid-cols-3 overflow-hidden bg-slate-900">
         {officialsWithPhotos.map((official) => (
           <div key={official.id} className="relative border-r border-white/10 last:border-r-0">
-            <Image
-              src={official.photo!}
-              alt={`${official.name} profile photo`}
-              fill
-              sizes="240px"
-              className="object-cover opacity-90"
+            <OfficialPhotoImage
+              official={official}
+              sizes="480px"
+              quality={FEATURED_OFFICIAL_PHOTO_QUALITY}
+              className="object-cover opacity-95"
             />
             <div className="absolute inset-x-0 bottom-0 bg-slate-950/78 p-2">
               <p className="truncate text-[11px] font-black text-white">{official.name}</p>
@@ -223,6 +224,7 @@ function FeedMedia({
           alt="RepWatchr"
           width={180}
           height={180}
+          quality={96}
           className="h-28 w-28 object-contain"
         />
       </div>

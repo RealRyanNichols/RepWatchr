@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import Image from "next/image";
 import {
   getOfficialWithScores,
   getScoreCard,
@@ -30,6 +29,7 @@ import ReportButton from "@/components/shared/ReportButton";
 import ProfileOpenTracker from "@/components/shared/ProfileOpenTracker";
 import ProfileScorecardVote from "@/components/scorecards/ProfileScorecardVote";
 import OfficialSocialPanel from "@/components/officials/OfficialSocialPanel";
+import OfficialPhotoImage, { FEATURED_OFFICIAL_PHOTO_QUALITY } from "@/components/shared/OfficialPhotoImage";
 import { getPublicProfileOverlay, type PublicProfileEnrichmentItem, type PublicProfileOverlay, type PublicProfileVoteSnapshot } from "@/lib/profile-overlays";
 import { buildOfficialCompletionSnapshot } from "@/lib/profile-completion";
 import { getCongressTradingSnapshot } from "@/lib/congress-trading";
@@ -118,26 +118,20 @@ export default async function OfficialProfilePage({
       >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6 sm:py-8">
           {/* Mobile: stacked layout, Desktop: side by side */}
-          <div className="flex flex-col sm:flex-row items-start gap-4 sm:gap-6">
+          <div className="flex flex-col items-start gap-4 sm:flex-row sm:gap-7">
             <figure className="shrink-0">
-              <div className="relative flex h-20 w-20 items-center justify-center overflow-hidden rounded-2xl border border-gray-200 bg-gray-200 text-2xl font-bold text-gray-500 shadow-sm sm:h-28 sm:w-28 sm:text-3xl">
-                {official.photo ? (
-                  <Image
-                    src={official.photo}
-                    alt={`${official.name} profile photo`}
-                    fill
-                    sizes="(min-width: 640px) 112px, 80px"
-                    className="object-cover"
-                  />
-                ) : (
-                  <>
-                    {official.firstName[0]}
-                    {official.lastName[0]}
-                  </>
-                )}
+              <div className="relative flex h-28 w-28 items-center justify-center overflow-hidden rounded-2xl border border-gray-200 bg-gray-200 text-3xl font-bold text-gray-500 shadow-md shadow-slate-950/10 sm:h-44 sm:w-44 sm:rounded-3xl sm:text-5xl">
+                <OfficialPhotoImage
+                  official={official}
+                  sizes="(min-width: 640px) 352px, 224px"
+                  quality={FEATURED_OFFICIAL_PHOTO_QUALITY}
+                  preload
+                  className="object-cover"
+                  fallbackClassName="grid h-full w-full place-items-center text-center font-black uppercase tracking-wide text-gray-500"
+                />
               </div>
               {official.photoCredit ? (
-                <figcaption className="mt-1 max-w-28 text-[10px] font-semibold leading-4 text-gray-500">
+                <figcaption className="mt-1 max-w-44 text-[10px] font-semibold leading-4 text-gray-500">
                   {official.photoCredit}
                 </figcaption>
               ) : null}

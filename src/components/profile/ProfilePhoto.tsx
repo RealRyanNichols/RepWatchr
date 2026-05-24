@@ -88,6 +88,8 @@ export default function ProfilePhoto({
           <img
             src={imageUrl}
             alt={`${name} profile photo`}
+            loading={size === "lg" ? "eager" : "lazy"}
+            decoding="async"
             className="h-full w-full object-cover"
           />
         ) : (

@@ -1,11 +1,11 @@
 "use client";
 
 import Link from "next/link";
-import Image from "next/image";
 import { track } from "@vercel/analytics";
 import type { Official, ScoreCard } from "@/types";
 import PartyBadge from "@/components/officials/PartyBadge";
 import LetterGradeBadge from "@/components/scores/LetterGradeBadge";
+import OfficialPhotoImage from "@/components/shared/OfficialPhotoImage";
 
 const partyAccent: Record<string, string> = {
   R: "from-red-500",
@@ -26,7 +26,6 @@ export default function OfficialCard({
   scoreCard,
 }: OfficialCardProps) {
   const accent = partyAccent[official.party] ?? "from-gray-400";
-  const initials = `${official.firstName[0] ?? ""}${official.lastName[0] ?? ""}`;
 
   return (
     <Link
@@ -47,20 +46,14 @@ export default function OfficialCard({
         className={`h-1 w-full bg-gradient-to-r ${accent} to-transparent`}
       />
       <div className="p-5">
-        <div className="flex items-start justify-between">
-          <div className="flex items-center gap-3">
-            <div className="relative flex h-14 w-14 shrink-0 items-center justify-center overflow-hidden rounded-xl border border-slate-300 bg-slate-100 text-base font-bold text-slate-600 transition-colors group-hover:bg-blue-50 group-hover:text-blue-700">
-              {official.photo ? (
-                <Image
-                  src={official.photo}
-                  alt={`${official.name} profile photo`}
-                  fill
-                  sizes="56px"
-                  className="object-cover"
-                />
-              ) : (
-                initials
-              )}
+        <div className="flex items-start justify-between gap-3">
+          <div className="flex min-w-0 items-center gap-3">
+            <div className="relative flex h-[72px] w-[72px] shrink-0 items-center justify-center overflow-hidden rounded-xl border border-slate-300 bg-slate-100 text-lg font-bold text-slate-600 shadow-sm transition-colors group-hover:bg-blue-50 group-hover:text-blue-700">
+              <OfficialPhotoImage
+                official={official}
+                sizes="144px"
+                className="object-cover transition duration-300 group-hover:scale-105"
+              />
             </div>
             <div className="min-w-0">
               <h3 className="truncate text-base font-black text-slate-950 transition-colors group-hover:text-blue-800">

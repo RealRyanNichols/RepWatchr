@@ -25,12 +25,13 @@ export default function BoardMemberProfile({
           <Image
             src={member.photo}
             alt={member.name}
-            width={64}
-            height={64}
-            className="h-16 w-16 shrink-0 rounded-full object-cover"
+            width={128}
+            height={128}
+            quality={96}
+            className="h-20 w-20 shrink-0 rounded-full object-cover shadow-sm"
           />
         ) : (
-          <div className="flex h-16 w-16 shrink-0 items-center justify-center rounded-full bg-gray-200 text-lg font-bold text-gray-500 dark:bg-gray-700 dark:text-gray-400">
+          <div className="flex h-20 w-20 shrink-0 items-center justify-center rounded-full bg-gray-200 text-lg font-bold text-gray-500 dark:bg-gray-700 dark:text-gray-400">
             {member.firstName.charAt(0)}
             {member.lastName.charAt(0)}
           </div>

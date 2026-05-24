@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import Image from "next/image";
 import Link from "next/link";
 import { Suspense } from "react";
 import { getAllOfficials, getAllScoreCards, getRepWatchrDataStats } from "@/lib/data";
@@ -7,6 +6,7 @@ import { getSchoolBoardStats } from "@/lib/school-board-research";
 import OfficialGrid from "@/components/officials/OfficialGrid";
 import OfficialsCommandSearchForm from "@/components/officials/OfficialsCommandSearchForm";
 import NationalSpotlightSelector from "@/components/shared/NationalSpotlightSelector";
+import OfficialPhotoImage, { FEATURED_OFFICIAL_PHOTO_QUALITY } from "@/components/shared/OfficialPhotoImage";
 import type { GovernmentLevel, Official } from "@/types";
 import { getAllNationalJurisdictions, getNationalBuildoutSummary, nationalGovernmentScopes } from "@/data/national-buildout";
 import { countByState, getSelectedStateCode } from "@/lib/state-scope";
@@ -435,37 +435,30 @@ function OfficialsCommandDeck({
               </Link>
             </div>
             <div className="mt-3 flex gap-3 overflow-x-auto pb-1">
-              {spotlightOfficials.map((official) => {
-                const initials = `${official.firstName[0] ?? ""}${official.lastName[0] ?? ""}`;
-                return (
-                  <Link
-                    key={official.id}
-                    href={`/officials/${official.id}`}
-                    className="group w-36 shrink-0 overflow-hidden rounded-lg border border-white/10 bg-white text-slate-950 transition hover:-translate-y-0.5 hover:border-[#d5aa3f]"
-                  >
-                    <div className="relative h-32 bg-slate-200">
-                      {official.photo ? (
-                        <Image
-                          src={official.photo}
-                          alt={`${official.name} profile photo`}
-                          fill
-                          sizes="144px"
-                          className="object-cover"
-                        />
-                      ) : (
-                        <div className="flex h-full items-center justify-center text-2xl font-black text-slate-500">{initials}</div>
-                      )}
-                    </div>
-                    <div className="p-2">
-                      <p className="truncate text-sm font-black group-hover:text-blue-800">{official.name}</p>
-                      <p className="mt-0.5 truncate text-[11px] font-bold text-slate-600">{official.position}</p>
-                      <p className="mt-1 truncate text-[11px] font-black uppercase tracking-wide text-red-700">
-                        {official.state ?? official.jurisdiction}
-                      </p>
-                    </div>
-                  </Link>
-                );
-              })}
+              {spotlightOfficials.map((official) => (
+                <Link
+                  key={official.id}
+                  href={`/officials/${official.id}`}
+                  className="group w-36 shrink-0 overflow-hidden rounded-lg border border-white/10 bg-white text-slate-950 transition hover:-translate-y-0.5 hover:border-[#d5aa3f]"
+                >
+                  <div className="relative h-36 bg-slate-200">
+                    <OfficialPhotoImage
+                      official={official}
+                      sizes="288px"
+                      quality={FEATURED_OFFICIAL_PHOTO_QUALITY}
+                      className="object-cover transition duration-300 group-hover:scale-105"
+                      fallbackClassName="flex h-full items-center justify-center text-2xl font-black text-slate-500"
+                    />
+                  </div>
+                  <div className="p-2">
+                    <p className="truncate text-sm font-black group-hover:text-blue-800">{official.name}</p>
+                    <p className="mt-0.5 truncate text-[11px] font-bold text-slate-600">{official.position}</p>
+                    <p className="mt-1 truncate text-[11px] font-black uppercase tracking-wide text-red-700">
+                      {official.state ?? official.jurisdiction}
+                    </p>
+                  </div>
+                </Link>
+              ))}
             </div>
           </div>
         </div>
