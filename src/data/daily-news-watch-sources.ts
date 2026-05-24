@@ -85,10 +85,10 @@ const exposureTerms = [
 ];
 
 const jonGrossCredit: SourceCredit = {
-  name: "Jon Gross",
+  name: "Jonathan Gross",
   handle: "@Jon_Gross",
   url: "https://x.com/Jon_Gross",
-  note: "Share the original, credit Jon Gross, then add RepWatchr source-backed context.",
+  note: "Share the original, credit Jonathan Gross, then add RepWatchr source-backed context.",
 };
 
 const stateNewsTargets = [
@@ -174,14 +174,19 @@ const BASE_DAILY_NEWS_WATCH_SOURCES: DailyNewsWatchSource[] = [
   },
   {
     id: "google-news-jon-gross-source-watch",
-    label: "Jon Gross source watch",
-    url: `https://news.google.com/rss/search?q=${encodeURIComponent('("Jon Gross" OR "Jon_Gross" OR "Jonathan Gross") (article OR report OR wrote OR writes OR published OR representative OR Congress OR oversight OR corruption OR accountability OR "public records" OR election OR official) when:7d')}&hl=en-US&gl=US&ceid=US%3Aen`,
+    label: "Jonathan Gross source watch",
+    url: `https://news.google.com/rss/search?q=${encodeURIComponent('("Jon Gross" OR "Jon_Gross" OR "Jonathan Gross" OR "Rabbi Jonathan Gross") (article OR report OR wrote OR writes OR published OR byline OR DOJ OR "civil rights" OR "Weaponization Working Group" OR "public records" OR accountability OR corruption OR Congress OR representative OR "January 6" OR J6) when:14d')}&hl=en-US&gl=US&ceid=US%3Aen`,
     scope: "national",
     powerChannels: ["media", "officials", "courts", "money"],
     sourceType: "public_news_search",
     terms: [
       "jon gross",
       "jon_gross",
+      "jonathan gross",
+      "j6",
+      "january 6",
+      "doj",
+      "weaponization",
       "representative",
       "congress",
       "oversight",
