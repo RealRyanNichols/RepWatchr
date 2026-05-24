@@ -30,6 +30,13 @@ export interface SourceLink {
   url: string;
 }
 
+export interface SourceCredit {
+  name: string;
+  url: string;
+  handle?: string;
+  note?: string;
+}
+
 export interface Official {
   id: string;
   name: string;

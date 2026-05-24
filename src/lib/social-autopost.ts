@@ -136,10 +136,11 @@ function isFreshEnough(clip: DailyWireClip, now: Date) {
 }
 
 function attentionScore(clip: DailyWireClip, now: Date) {
-  const text = `${clip.title} ${clip.summary} ${clip.sourceName} ${clip.matchedTerms.join(" ")}`.toLowerCase();
+  const text = `${clip.title} ${clip.summary} ${clip.sourceName} ${clip.sourceCredit?.name ?? ""} ${clip.sourceCredit?.handle ?? ""} ${clip.matchedTerms.join(" ")}`.toLowerCase();
   const ageHours = Math.max(0, (now.getTime() - clipTime(clip)) / (60 * 60 * 1000));
   let score = 40;
 
+  if (clip.sourceCredit) score += 28;
   if (clip.sourceTier === "official_record") score += 18;
   if (clip.sourceTier === "named_news") score += 14;
   if (clip.powerChannels.includes("officials")) score += 10;
@@ -174,7 +175,30 @@ function isEligibleClip(clip: DailyWireClip, now: Date) {
   );
 }
 
+function sourceCreditLabel(clip: DailyWireClip) {
+  const credit = clip.sourceCredit;
+  if (!credit) return null;
+  return credit.handle ? `${credit.name} (${credit.handle})` : credit.name;
+}
+
 function facebookMessage(clip: DailyWireClip) {
+  const credit = sourceCreditLabel(clip);
+
+  if (credit && clip.sourceCredit) {
+    return [
+      "RepWatchr credited source lead:",
+      clip.title,
+      "",
+      `Credit: ${credit}`,
+      `Creator link: ${clip.sourceCredit.url}`,
+      `Original source: ${clip.sourceUrl}`,
+      "",
+      `RepWatchr context: ${truncate(clip.summary, 520)}`,
+      "",
+      `Read and share: ${storyUrlFor(clip)}`,
+    ].join("\n");
+  }
+
   return [
     "RepWatchr story lead:",
     clip.title,
@@ -188,9 +212,21 @@ function facebookMessage(clip: DailyWireClip) {
 
 function xMessage(clip: DailyWireClip) {
   const url = storyUrlFor(clip);
+  const credit = sourceCreditLabel(clip);
   const source = truncate(clip.sourceName, 34);
   const title = truncate(clip.title, 150);
   const summary = truncate(clip.summary, 90);
+  if (credit) {
+    let text = `Credit ${truncate(credit, 46)}: ${title}\n\nRepWatchr context + original source:\n${url}`;
+    if (text.length <= 280) return text;
+
+    text = `Credit ${truncate(credit, 46)}: ${truncate(clip.title, 176)}\n${url}`;
+    if (text.length <= 280) return text;
+
+    const availableTitleLength = Math.max(32, 266 - url.length - truncate(credit, 46).length);
+    return `Credit ${truncate(credit, 46)}: ${truncate(clip.title, availableTitleLength)}\n${url}`;
+  }
+
   let text = `RepWatchr: ${title}\n\n${summary}\n\nSource: ${source}\n${url}`;
 
   if (text.length <= 280) return text;

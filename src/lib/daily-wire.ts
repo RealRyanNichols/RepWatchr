@@ -6,7 +6,7 @@ import {
   type ProfileSourceTier,
 } from "@/lib/profile-overlays";
 import { getSupabaseAdminClient } from "@/lib/supabase-admin";
-import type { NewsPowerChannel, NewsScope } from "@/types";
+import type { NewsPowerChannel, NewsScope, SourceCredit } from "@/types";
 
 export interface DailyWireClip {
   id: string;
@@ -25,6 +25,7 @@ export interface DailyWireClip {
   sourceTier: ProfileSourceTier;
   publicStatus: "auto_published" | "needs_review";
   updatedAt: string | null;
+  sourceCredit?: SourceCredit;
 }
 
 export interface DailyWireResult {
@@ -49,6 +50,7 @@ interface DailyWireClipRow {
   matched_terms: string[] | null;
   status: ProfileOverlayStatus | "needs_review" | null;
   updated_at: string | null;
+  raw: unknown;
 }
 
 const publicStatuses: DailyWireClip["publicStatus"][] = ["auto_published", "needs_review"];
@@ -67,11 +69,27 @@ function publicStatusFor(row: DailyWireClipRow): DailyWireClip["publicStatus"] {
   return status === "auto_published" && publicStatuses.includes(status) ? "auto_published" : "needs_review";
 }
 
+function sourceCreditFromRaw(raw: unknown): SourceCredit | undefined {
+  if (!raw || typeof raw !== "object") return undefined;
+  const sourceCredit = (raw as { sourceCredit?: unknown }).sourceCredit;
+  if (!sourceCredit || typeof sourceCredit !== "object") return undefined;
+  const credit = sourceCredit as Partial<SourceCredit>;
+  if (typeof credit.name !== "string" || typeof credit.url !== "string") return undefined;
+
+  return {
+    name: credit.name,
+    url: credit.url,
+    ...(typeof credit.handle === "string" ? { handle: credit.handle } : {}),
+    ...(typeof credit.note === "string" ? { note: credit.note } : {}),
+  };
+}
+
 function toDailyWireClip(row: DailyWireClipRow): DailyWireClip | null {
   if (!row.id || !row.title || !row.source_url) return null;
 
   const sourceName = row.source_name?.trim() || "Public source";
   const sourceTier = classifyProfileSource(row.source_url, sourceName);
+  const sourceCredit = sourceCreditFromRaw(row.raw);
 
   return {
     id: row.id,
@@ -90,6 +108,7 @@ function toDailyWireClip(row: DailyWireClipRow): DailyWireClip | null {
     sourceTier,
     publicStatus: publicStatusFor(row),
     updatedAt: row.updated_at,
+    ...(sourceCredit ? { sourceCredit } : {}),
   };
 }
 
@@ -108,7 +127,7 @@ export async function getDailyWireClips(limit = 48): Promise<DailyWireResult> {
   const { data, error } = await supabase
     .from("repwatchr_daily_clips")
     .select(
-      "id,title,summary,source_url,source_name,published_at,scope,state,counties,cities,power_channels,matched_terms,status,updated_at",
+      "id,title,summary,source_url,source_name,published_at,scope,state,counties,cities,power_channels,matched_terms,status,updated_at,raw",
     )
     .order("published_at", { ascending: false })
     .order("updated_at", { ascending: false })

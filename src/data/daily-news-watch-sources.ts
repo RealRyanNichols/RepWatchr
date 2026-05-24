@@ -1,4 +1,4 @@
-import type { NewsPowerChannel, NewsScope } from "@/types";
+import type { NewsPowerChannel, NewsScope, SourceCredit } from "@/types";
 
 export interface DailyNewsWatchSource {
   id: string;
@@ -11,6 +11,7 @@ export interface DailyNewsWatchSource {
   powerChannels: NewsPowerChannel[];
   sourceType: "public_rss" | "public_news_search";
   terms: string[];
+  sourceCredit?: SourceCredit;
 }
 
 const texasPoliticsTerms = [
@@ -82,6 +83,13 @@ const exposureTerms = [
   "fraud",
   "abuse",
 ];
+
+const jonGrossCredit: SourceCredit = {
+  name: "Jon Gross",
+  handle: "@Jon_Gross",
+  url: "https://x.com/Jon_Gross",
+  note: "Share the original, credit Jon Gross, then add RepWatchr source-backed context.",
+};
 
 const stateNewsTargets = [
   ["AL", "Alabama"],
@@ -163,6 +171,27 @@ const BASE_DAILY_NEWS_WATCH_SOURCES: DailyNewsWatchSource[] = [
     powerChannels: ["officials", "school-boards", "elections", "courts", "money"],
     sourceType: "public_rss",
     terms: texasPoliticsTerms,
+  },
+  {
+    id: "google-news-jon-gross-source-watch",
+    label: "Jon Gross source watch",
+    url: `https://news.google.com/rss/search?q=${encodeURIComponent('("Jon Gross" OR "Jon_Gross" OR "Jonathan Gross") (article OR report OR wrote OR writes OR published OR representative OR Congress OR oversight OR corruption OR accountability OR "public records" OR election OR official) when:7d')}&hl=en-US&gl=US&ceid=US%3Aen`,
+    scope: "national",
+    powerChannels: ["media", "officials", "courts", "money"],
+    sourceType: "public_news_search",
+    terms: [
+      "jon gross",
+      "jon_gross",
+      "representative",
+      "congress",
+      "oversight",
+      "corruption",
+      "accountability",
+      "public records",
+      "election",
+      "official",
+    ],
+    sourceCredit: jonGrossCredit,
   },
   {
     id: "google-news-texas-school-boards",

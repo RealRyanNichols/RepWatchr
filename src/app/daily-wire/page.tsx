@@ -4,7 +4,7 @@ import CopySnippetButton from "@/components/shared/CopySnippetButton";
 import { DAILY_NEWS_WATCH_SOURCES } from "@/data/daily-news-watch-sources";
 import { getAllNews } from "@/lib/data";
 import { getDailyWireClips, type DailyWireClip } from "@/lib/daily-wire";
-import type { NewsArticle, NewsPowerChannel, NewsScope } from "@/types";
+import type { NewsArticle, NewsPowerChannel, NewsScope, SourceCredit } from "@/types";
 
 export const dynamic = "force-dynamic";
 
@@ -86,12 +86,19 @@ function timeValue(value: string | null) {
   return Number.isNaN(time) ? 0 : time;
 }
 
+function sourceCreditLabel(credit: SourceCredit) {
+  return credit.handle ? `${credit.name} (${credit.handle})` : credit.name;
+}
+
 function wireSnippet(clip: DailyWireClip) {
   return [
     `RepWatchr daily wire: ${clip.title}`,
     "",
     `Why it matters: ${clip.summary}`,
     "",
+    ...(clip.sourceCredit
+      ? [`Credit: ${sourceCreditLabel(clip.sourceCredit)}`, `Creator link: ${clip.sourceCredit.url}`, ""]
+      : []),
     `Receipt: ${clip.sourceName} - ${clip.sourceUrl}`,
     "",
     "Open the daily wire: https://www.repwatchr.com/daily-wire",
@@ -137,6 +144,27 @@ function WireCard({ clip }: { clip: DailyWireClip }) {
       <p className="mt-2 text-sm font-semibold leading-6 text-slate-700">
         {clip.summary}
       </p>
+
+      {clip.sourceCredit ? (
+        <div className="mt-4 rounded-xl border border-blue-100 bg-blue-50 px-4 py-3">
+          <p className="text-[11px] font-black uppercase tracking-[0.18em] text-blue-900">
+            Credited source watch
+          </p>
+          <a
+            href={clip.sourceCredit.url}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="mt-1 inline-flex text-sm font-black text-blue-950 underline-offset-4 hover:text-red-700 hover:underline"
+          >
+            {sourceCreditLabel(clip.sourceCredit)}
+          </a>
+          {clip.sourceCredit.note ? (
+            <p className="mt-1 text-sm font-semibold leading-6 text-blue-900">
+              {clip.sourceCredit.note}
+            </p>
+          ) : null}
+        </div>
+      ) : null}
 
       <div className="mt-4 flex flex-wrap gap-2">
         {clip.matchedTerms.slice(0, 6).map((term) => (

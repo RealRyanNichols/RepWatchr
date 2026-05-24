@@ -1,7 +1,7 @@
 import { createHash } from "crypto";
 import { DAILY_NEWS_WATCH_SOURCES, type DailyNewsWatchSource } from "@/data/daily-news-watch-sources";
 import { getSupabaseAdminClient } from "@/lib/supabase-admin";
-import type { NewsPowerChannel, NewsScope } from "@/types";
+import type { NewsPowerChannel, NewsScope, SourceCredit } from "@/types";
 
 export interface DailyNewsClip {
   id: string;
@@ -17,6 +17,7 @@ export interface DailyNewsClip {
   powerChannels: NewsPowerChannel[];
   matchedTerms: string[];
   status: "needs_review";
+  sourceCredit?: SourceCredit;
 }
 
 export interface DailyNewsFetchResult {
@@ -65,7 +66,9 @@ function normalizeDate(value: string) {
 
 function findTerms(source: DailyNewsWatchSource, text: string) {
   const haystack = text.toLowerCase();
-  return source.terms.filter((term) => haystack.includes(term.toLowerCase()));
+  const matchedTerms = source.terms.filter((term) => haystack.includes(term.toLowerCase()));
+  if (matchedTerms.length || !source.sourceCredit) return matchedTerms;
+  return [source.sourceCredit.name];
 }
 
 function parseRssClips(xml: string, source: DailyNewsWatchSource): DailyNewsClip[] {
@@ -93,6 +96,7 @@ function parseRssClips(xml: string, source: DailyNewsWatchSource): DailyNewsClip
       status: "needs_review",
     };
 
+    if (source.sourceCredit) clip.sourceCredit = source.sourceCredit;
     if (publishedAt) clip.publishedAt = publishedAt;
     if (source.state) clip.state = source.state;
     if (source.counties?.length) clip.counties = source.counties;

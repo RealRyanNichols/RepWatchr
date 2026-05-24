@@ -6,7 +6,7 @@ import ShareButtons from "@/components/shared/ShareButtons";
 import OfficialPhotoImage, { FEATURED_OFFICIAL_PHOTO_QUALITY } from "@/components/shared/OfficialPhotoImage";
 import { getAllNews, getOfficialById, getRepWatchrDataStats } from "@/lib/data";
 import { getDailyWireClips, type DailyWireClip } from "@/lib/daily-wire";
-import type { NewsArticle, NewsPowerChannel, NewsScope, Official } from "@/types";
+import type { NewsArticle, NewsPowerChannel, NewsScope, Official, SourceCredit } from "@/types";
 
 export const dynamic = "force-dynamic";
 
@@ -170,12 +170,19 @@ function socialSnippet(article: NewsArticle) {
   ].join("\n");
 }
 
+function sourceCreditLabel(credit: SourceCredit) {
+  return credit.handle ? `${credit.name} (${credit.handle})` : credit.name;
+}
+
 function wireSocialSnippet(clip: DailyWireClip) {
   return [
     `RepWatchr live wire: ${clip.title}`,
     "",
     `Why it matters: ${clip.summary}`,
     "",
+    ...(clip.sourceCredit
+      ? [`Credit: ${sourceCreditLabel(clip.sourceCredit)}`, `Creator link: ${clip.sourceCredit.url}`, ""]
+      : []),
     `Receipt: ${clip.sourceName} - ${clip.sourceUrl}`,
     "",
     `Open the RepWatchr story lead: https://www.repwatchr.com/daily-wire#clip-${clip.id}`,
@@ -407,6 +414,27 @@ function WireFeedPostCard({ clip }: { clip: DailyWireClip }) {
       </div>
 
       <div className="px-4 py-4 sm:px-5">
+        {clip.sourceCredit ? (
+          <div className="mb-4 rounded-xl border border-blue-100 bg-blue-50 px-4 py-3">
+            <p className="text-[11px] font-black uppercase tracking-[0.18em] text-blue-900">
+              Credited source watch
+            </p>
+            <a
+              href={clip.sourceCredit.url}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="mt-1 inline-flex text-sm font-black text-blue-950 underline-offset-4 hover:text-red-700 hover:underline"
+            >
+              {sourceCreditLabel(clip.sourceCredit)}
+            </a>
+            {clip.sourceCredit.note ? (
+              <p className="mt-1 text-sm font-semibold leading-6 text-blue-900">
+                {clip.sourceCredit.note}
+              </p>
+            ) : null}
+          </div>
+        ) : null}
+
         <div className="flex flex-wrap gap-2">
           {channels.map((channel) => (
             <span key={channel} className="rounded-full bg-amber-100 px-2.5 py-1 text-[11px] font-black uppercase tracking-wide text-amber-900">
