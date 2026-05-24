@@ -3,6 +3,7 @@ import Image from "next/image";
 
 const quickLinks = [
   { href: "/feed", label: "Feed" },
+  { href: "/authors", label: "Citizen Authors" },
   { href: "/daily-wire", label: "Daily Watch" },
   { href: "/officials", label: "Officials" },
   { href: "/school-boards", label: "School Boards" },

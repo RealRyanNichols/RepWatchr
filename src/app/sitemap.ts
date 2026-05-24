@@ -29,6 +29,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     "",
     "/about",
     "/feed",
+    "/authors",
     "/daily-wire",
     "/officials",
     "/state-reps",

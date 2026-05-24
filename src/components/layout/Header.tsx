@@ -7,6 +7,7 @@ import UserMenu from "@/components/auth/UserMenu";
 
 const primaryLinks = [
   { href: "/feed", label: "Feed" },
+  { href: "/authors", label: "Authors" },
   { href: "/daily-wire", label: "Daily Watch" },
   { href: "/officials", label: "Find Reps" },
   { href: "/school-boards", label: "School Boards" },

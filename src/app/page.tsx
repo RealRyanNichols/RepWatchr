@@ -129,6 +129,24 @@ const sharePrompts = [
   "Do not argue from memory. Share the receipt.",
 ];
 
+const authorActions = [
+  {
+    label: "Build a story packet",
+    href: "/authors",
+    detail: "Pick the target, add the public source, write the hook, and copy the share snippet.",
+  },
+  {
+    label: "Claim a profile path",
+    href: "/profiles/claim",
+    detail: "Help improve a public profile with offices, terms, photos, links, votes, and missing context.",
+  },
+  {
+    label: "Submit the receipt",
+    href: "/feedback",
+    detail: "Send the agenda, filing, clip, article, roster, correction, or source gap for review.",
+  },
+];
+
 function formatNumber(value: number) {
   return new Intl.NumberFormat("en-US").format(value);
 }
@@ -445,7 +463,7 @@ export default function HomePage() {
             <div className="mt-5 max-w-2xl">
               <FarettaSearchBox compact placeholder="Search an official, school board, vote, funder, red flag, or record..." />
             </div>
-            <div className="mt-5 grid gap-2 sm:grid-cols-3">
+            <div className="mt-5 grid gap-2 sm:grid-cols-2 lg:grid-cols-4">
               <Link
                 href="/officials"
                 className="rounded-xl bg-red-700 px-5 py-4 text-center text-sm font-black uppercase tracking-wide text-white shadow-lg shadow-red-900/20 transition hover:-translate-y-0.5 hover:bg-blue-900"
@@ -463,6 +481,12 @@ export default function HomePage() {
                 className="rounded-xl border border-amber-200 bg-amber-50 px-5 py-4 text-center text-sm font-black uppercase tracking-wide text-amber-950 shadow-sm transition hover:-translate-y-0.5 hover:border-amber-400 hover:bg-amber-100"
               >
                 Submit source
+              </Link>
+              <Link
+                href="/authors"
+                className="rounded-xl border border-slate-300 bg-slate-950 px-5 py-4 text-center text-sm font-black uppercase tracking-wide text-white shadow-sm transition hover:-translate-y-0.5 hover:border-red-300 hover:bg-red-700"
+              >
+                Become an author
               </Link>
             </div>
             <div className="mt-5 grid gap-2 sm:grid-cols-4">
@@ -627,6 +651,59 @@ export default function HomePage() {
                     {article.summary}
                   </p>
                 </div>
+              </Link>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Citizen Author Desk */}
+      <section className="border-b border-blue-100 bg-[#f8fbff]">
+        <div className="mx-auto grid max-w-7xl gap-8 px-4 py-14 sm:px-6 lg:grid-cols-[0.85fr_1.15fr] lg:px-8">
+          <div>
+            <p className="text-xs font-black uppercase tracking-[0.18em] text-red-700">Citizen Author Desk</p>
+            <h2 className="mt-2 text-3xl font-black leading-tight text-blue-950 sm:text-5xl">
+              Do not just read the story. Help build the record people share.
+            </h2>
+            <p className="mt-4 text-sm font-semibold leading-6 text-blue-950/70">
+              Political attention holds longer when voters can become useful:
+              source runner, profile builder, meeting reporter, watchdog author,
+              or share editor. Give them a job, a receipt standard, and a clean
+              way back to RepWatchr.
+            </p>
+            <div className="mt-5 flex flex-wrap gap-3">
+              <Link
+                href="/authors"
+                className="rounded-xl bg-red-700 px-5 py-3 text-sm font-black uppercase tracking-wide text-white shadow-sm transition hover:-translate-y-0.5 hover:bg-blue-950"
+              >
+                Open Author Desk
+              </Link>
+              <Link
+                href="/profiles/claim"
+                className="rounded-xl border border-blue-200 bg-white px-5 py-3 text-sm font-black uppercase tracking-wide text-blue-950 transition hover:-translate-y-0.5 hover:border-red-300 hover:bg-blue-50"
+              >
+                Build a profile
+              </Link>
+            </div>
+          </div>
+          <div className="grid gap-3">
+            {authorActions.map((action, index) => (
+              <Link
+                key={action.label}
+                href={action.href}
+                className="group grid gap-3 rounded-2xl border border-slate-200 bg-white p-5 shadow-sm transition hover:-translate-y-0.5 hover:border-red-300 hover:shadow-md sm:grid-cols-[48px_1fr]"
+              >
+                <span className="grid h-12 w-12 place-items-center rounded-full bg-blue-950 text-sm font-black text-white group-hover:bg-red-700">
+                  {index + 1}
+                </span>
+                <span>
+                  <span className="block text-lg font-black leading-tight text-blue-950 group-hover:text-red-700">
+                    {action.label}
+                  </span>
+                  <span className="mt-1 block text-sm font-semibold leading-6 text-slate-600">
+                    {action.detail}
+                  </span>
+                </span>
               </Link>
             ))}
           </div>
@@ -1019,10 +1096,10 @@ export default function HomePage() {
             Source
           </Link>
           <Link
-            href="/create-account"
+            href="/authors"
             className="rounded-xl bg-blue-950 px-3 py-3 text-center text-[11px] font-black uppercase tracking-wide text-white"
           >
-            Watch
+            Author
           </Link>
         </div>
       </div>
