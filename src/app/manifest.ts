@@ -12,12 +12,12 @@ export default function manifest(): MetadataRoute.Manifest {
     theme_color: "#bf0d3e",
     icons: [
       {
-        src: "/icon.png",
+        src: "/images/repwatchr-logo-america-first.png",
         sizes: "1254x1254",
         type: "image/png",
       },
       {
-        src: "/apple-icon.png",
+        src: "/images/repwatchr-logo-america-first.png",
         sizes: "1254x1254",
         type: "image/png",
         purpose: "any",

@@ -377,7 +377,7 @@ export default function HomePage() {
       "@type": "Organization",
       name: "RepWatchr",
       url: "https://www.repwatchr.com",
-      logo: "https://www.repwatchr.com/images/profile.png",
+      logo: "https://www.repwatchr.com/images/repwatchr-logo-america-first.png",
       description:
         "A public accountability index built around official profiles, public records, voting data, school-board rosters, and citizen source submissions.",
     },

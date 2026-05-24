@@ -44,9 +44,9 @@ export const metadata: Metadata = {
   icons: {
     icon: [
       { url: "/favicon.ico" },
-      { url: "/images/profile.png", type: "image/png", sizes: "1254x1254" },
+      { url: "/images/repwatchr-logo-america-first.png", type: "image/png", sizes: "1254x1254" },
     ],
-    apple: [{ url: "/images/profile.png", type: "image/png", sizes: "1254x1254" }],
+    apple: [{ url: "/images/repwatchr-logo-america-first.png", type: "image/png", sizes: "1254x1254" }],
   },
   openGraph: {
     title: "RepWatchr - Find, Grade, Source, Share",
@@ -58,10 +58,10 @@ export const metadata: Metadata = {
     type: "website",
     images: [
       {
-        url: "/opengraph-image",
-        width: 1200,
-        height: 630,
-        alt: "RepWatchr - Find, Grade, Source, Share",
+        url: "/images/repwatchr-cover-america-first.png",
+        width: 2172,
+        height: 724,
+        alt: "RepWatchr America First cover photo",
       },
     ],
   },
@@ -70,7 +70,7 @@ export const metadata: Metadata = {
     title: "RepWatchr - Find, Grade, Source, Share",
     description:
       "Follow the feed, find officials, grade the record, submit missing sources, and share accountability stories that keep people coming back.",
-    images: ["/opengraph-image"],
+    images: ["/images/repwatchr-cover-america-first.png"],
   },
   robots: {
     index: true,

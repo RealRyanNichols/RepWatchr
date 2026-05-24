@@ -26,10 +26,10 @@ export const metadata: Metadata = {
     type: "website",
     images: [
       {
-        url: "/feed/opengraph-image",
-        width: 1200,
-        height: 630,
-        alt: "RepWatchr Feed - Political Attention Engine",
+        url: "/images/repwatchr-cover-america-first.png",
+        width: 2172,
+        height: 724,
+        alt: "RepWatchr Feed America First cover photo",
       },
     ],
   },
@@ -38,7 +38,7 @@ export const metadata: Metadata = {
     title: "RepWatchr Feed | Political Attention Engine",
     description:
       "Follow source-backed political stories, social snippets, public records, officials, school boards, votes, money, and red flags.",
-    images: ["/feed/opengraph-image"],
+    images: ["/images/repwatchr-cover-america-first.png"],
   },
 };
 
@@ -235,7 +235,7 @@ function FeedMedia({
     <div className="grid aspect-[16/9] grid-cols-[0.72fr_1fr] overflow-hidden bg-slate-950">
       <div className="grid place-items-center border-r border-white/10 bg-white">
         <Image
-          src="/images/profile.png"
+          src="/images/repwatchr-logo-america-first.png"
           alt="RepWatchr"
           width={180}
           height={180}

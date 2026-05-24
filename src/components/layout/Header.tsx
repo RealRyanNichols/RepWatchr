@@ -49,12 +49,12 @@ export default function Header() {
         <Link href="/" className="grid shrink-0 place-items-center transition hover:opacity-90" aria-label="RepWatchr home">
           <span className="relative h-12 w-12 overflow-hidden rounded-full border-2 border-[#d6b35a] bg-blue-950 shadow-lg shadow-black/30 sm:h-14 sm:w-14 md:h-16 md:w-16">
             <Image
-              src="/images/icon.png"
+              src="/images/repwatchr-logo-america-first.png"
               alt="RepWatchr logo"
               fill
               sizes="64px"
               priority
-              className="object-cover"
+              className="bg-white object-contain"
             />
           </span>
         </Link>

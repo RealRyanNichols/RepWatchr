@@ -29,11 +29,11 @@ export default function Footer() {
           {/* Brand */}
           <div>
             <Image
-              src="/images/logo.png"
+              src="/images/repwatchr-logo-america-first.png"
               alt="RepWatchr"
-              width={220}
-              height={60}
-              className="mb-2 h-10 w-auto"
+              width={1254}
+              height={1254}
+              className="mb-2 h-12 w-12 rounded-xl bg-white object-contain"
             />
             <h3 className="text-lg font-black text-white">
               RepWatchr

@@ -33,9 +33,9 @@ export async function generateMetadata({
       authors: [article.author],
       images: [
         {
-          url: "/opengraph-image",
-          width: 1200,
-          height: 630,
+          url: "/images/repwatchr-cover-america-first.png",
+          width: 2172,
+          height: 724,
           alt: article.title,
         },
       ],
@@ -44,7 +44,7 @@ export async function generateMetadata({
       card: "summary_large_image",
       title: article.title,
       description: article.summary,
-      images: ["/opengraph-image"],
+      images: ["/images/repwatchr-cover-america-first.png"],
     },
   };
 }
@@ -139,7 +139,7 @@ export default async function NewsArticlePage({
       name: "RepWatchr",
       logo: {
         "@type": "ImageObject",
-        url: "https://www.repwatchr.com/images/profile.png",
+        url: "https://www.repwatchr.com/images/repwatchr-logo-america-first.png",
       },
     },
     mainEntityOfPage: `https://www.repwatchr.com/news/${article.id}`,

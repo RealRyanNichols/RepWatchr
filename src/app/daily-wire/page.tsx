@@ -24,10 +24,10 @@ export const metadata: Metadata = {
     type: "website",
     images: [
       {
-        url: "/opengraph-image",
-        width: 1200,
-        height: 630,
-        alt: "RepWatchr Daily Watch Wire",
+        url: "/images/repwatchr-cover-america-first.png",
+        width: 2172,
+        height: 724,
+        alt: "RepWatchr Daily Watch Wire America First cover photo",
       },
     ],
   },
