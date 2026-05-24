@@ -362,6 +362,7 @@ export interface NewsArticle {
   tags: NewsTag[];
   sourceUrl?: string;
   sourceName?: string;
+  sourceLinks?: SourceLink[];
   imageUrl?: string;
   author: string;
   publishedAt: string;

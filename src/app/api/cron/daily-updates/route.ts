@@ -18,6 +18,7 @@ export async function GET(request: Request) {
   return Response.json({
     ok: !persisted.error && profileUpdates.ok,
     scope: "federal_state_daily",
+    publicWireUrl: "https://www.repwatchr.com/daily-wire",
     sourceCount: fetched.sourceCount + profileUpdates.modules.length,
     clipsFound: fetched.clips.length,
     clipsInserted: persisted.inserted,

@@ -62,7 +62,7 @@ export default function ScorecardsPage() {
   const totalPublicProfiles = officials.length + powerProfiles.length;
 
   return (
-    <div className="bg-slate-100">
+    <div className="rw-page-shell">
       <main className="mx-auto max-w-7xl px-4 py-8 sm:px-6 lg:px-8">
         <section className="overflow-hidden rounded-2xl border border-slate-300 bg-white shadow-sm">
           <div className="h-1.5 w-full bg-[linear-gradient(90deg,#b42318_0%,#b42318_48%,#ffffff_48%,#ffffff_52%,#1d4ed8_52%,#1d4ed8_100%)]" />

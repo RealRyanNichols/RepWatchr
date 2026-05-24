@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { getAllNews, getNewsById, getOfficialById } from "@/lib/data";
+import CopySnippetButton from "@/components/shared/CopySnippetButton";
 import ShareButtons from "@/components/shared/ShareButtons";
 
 export async function generateStaticParams() {
@@ -19,6 +20,32 @@ export async function generateMetadata({
   return {
     title: article.title,
     description: article.summary,
+    alternates: {
+      canonical: `https://www.repwatchr.com/news/${article.id}`,
+    },
+    openGraph: {
+      title: article.title,
+      description: article.summary,
+      url: `https://www.repwatchr.com/news/${article.id}`,
+      siteName: "RepWatchr",
+      type: "article",
+      publishedTime: article.publishedAt,
+      authors: [article.author],
+      images: [
+        {
+          url: "/opengraph-image",
+          width: 1200,
+          height: 630,
+          alt: article.title,
+        },
+      ],
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: article.title,
+      description: article.summary,
+      images: ["/opengraph-image"],
+    },
   };
 }
 
@@ -50,6 +77,28 @@ const channelLabels: Record<string, string> = {
   "school-boards": "School boards",
 };
 
+function articlePostSnippet(article: NonNullable<ReturnType<typeof getNewsById>>) {
+  const receipt = article.sourceUrl
+    ? articleSourceLine(article)
+    : "Source review needed before amplification.";
+
+  return [
+    `RepWatchr story: ${article.title}`,
+    "",
+    `Why it matters: ${article.summary}`,
+    "",
+    `Receipt: ${receipt}`,
+    "",
+    `Open the record: https://www.repwatchr.com/news/${article.id}`,
+  ].join("\n");
+}
+
+function articleSourceLine(article: NonNullable<ReturnType<typeof getNewsById>>) {
+  if (article.sourceUrl && article.sourceName) return `Source: ${article.sourceName}`;
+  if (article.sourceName) return `Source named: ${article.sourceName}`;
+  return "Source status: needs review";
+}
+
 export default async function NewsArticlePage({
   params,
 }: {
@@ -74,9 +123,53 @@ export default async function NewsArticlePage({
   const linkedOfficials = article.officialIds
     .map((officialId) => getOfficialById(officialId))
     .filter(Boolean);
+  const postSnippet = articlePostSnippet(article);
+  const articleStructuredData = {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    headline: article.title,
+    description: article.summary,
+    datePublished: article.publishedAt,
+    author: {
+      "@type": "Organization",
+      name: article.author,
+    },
+    publisher: {
+      "@type": "Organization",
+      name: "RepWatchr",
+      logo: {
+        "@type": "ImageObject",
+        url: "https://www.repwatchr.com/images/profile.png",
+      },
+    },
+    mainEntityOfPage: `https://www.repwatchr.com/news/${article.id}`,
+    isBasedOn: article.sourceLinks?.length
+      ? article.sourceLinks.map((source) => ({
+          "@type": "CreativeWork",
+          name: source.title,
+          url: source.url,
+        }))
+      : article.sourceUrl
+        ? {
+            "@type": "CreativeWork",
+            name: article.sourceName ?? "Public source",
+            url: article.sourceUrl,
+          }
+        : undefined,
+    about: linkedOfficials.map((official) => ({
+      "@type": "Person",
+      name: official!.name,
+      url: `https://www.repwatchr.com/officials/${official!.id}`,
+      jobTitle: official!.position,
+    })),
+  };
 
   return (
     <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(articleStructuredData) }}
+      />
       <Link
         href="/news"
         className="inline-flex items-center gap-1 text-sm text-gray-500 hover:text-gray-900 mb-6"
@@ -195,6 +288,46 @@ export default async function NewsArticlePage({
         />
       </div>
 
+      <section className="mt-6 rounded-2xl border border-slate-300 bg-slate-50 p-5">
+        <p className="text-xs font-black uppercase tracking-[0.18em] text-red-700">
+          Story packet
+        </p>
+        <h2 className="mt-2 text-2xl font-black leading-tight text-slate-950">
+          Read it here. Share the hook. Bring people back to the record.
+        </h2>
+        <div className="mt-4 grid gap-4 sm:grid-cols-3">
+          <div>
+            <p className="text-xs font-black uppercase tracking-wide text-blue-800">Hook</p>
+            <p className="mt-1 text-sm font-semibold leading-6 text-slate-700">
+              {article.title}
+            </p>
+          </div>
+          <div>
+            <p className="text-xs font-black uppercase tracking-wide text-blue-800">Receipt</p>
+            <p className="mt-1 text-sm font-semibold leading-6 text-slate-700">
+              {articleSourceLine(article)}
+            </p>
+          </div>
+          <div>
+            <p className="text-xs font-black uppercase tracking-wide text-blue-800">Next click</p>
+            <p className="mt-1 text-sm font-semibold leading-6 text-slate-700">
+              Open profiles, submit missing sources, or share this article.
+            </p>
+          </div>
+        </div>
+        <div className="mt-4 border-t border-slate-200 pt-4">
+          <div className="flex items-center justify-between gap-3">
+            <p className="text-xs font-black uppercase tracking-wide text-red-700">
+              Social snippet
+            </p>
+            <CopySnippetButton text={postSnippet} />
+          </div>
+          <p className="mt-2 whitespace-pre-line text-sm font-bold leading-6 text-slate-800">
+            {postSnippet}
+          </p>
+        </div>
+      </section>
+
       {/* Summary */}
       <p className="mt-8 text-lg text-gray-700 font-medium leading-relaxed border-l-4 border-blue-500 pl-4">
         {article.summary}
@@ -208,6 +341,27 @@ export default async function NewsArticlePage({
           </p>
         ))}
       </div>
+
+      {article.sourceLinks?.length ? (
+        <section className="mt-10 rounded-xl border border-slate-200 bg-slate-50 p-6">
+          <h2 className="text-sm font-bold uppercase tracking-wider text-slate-500">
+            Source Packet
+          </h2>
+          <div className="mt-4 grid gap-3">
+            {article.sourceLinks.map((source) => (
+              <a
+                key={source.url}
+                href={source.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="rounded-lg border border-slate-200 bg-white px-4 py-3 text-sm font-bold text-blue-800 shadow-sm transition hover:-translate-y-0.5 hover:border-blue-300 hover:shadow-md"
+              >
+                {source.title}
+              </a>
+            ))}
+          </div>
+        </section>
+      ) : null}
 
       {/* Linked Officials */}
       {linkedOfficials.length > 0 && (

@@ -15,7 +15,7 @@ export default async function FarettaAIPage({
   const params = searchParams ? await searchParams : undefined;
 
   return (
-    <div className="bg-slate-100">
+    <div className="rw-page-shell">
       <div className="mx-auto max-w-7xl px-4 py-8 sm:px-6 lg:px-8">
         <FarettaConsole initialQuery={params?.q ?? ""} />
       </div>

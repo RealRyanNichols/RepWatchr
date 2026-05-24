@@ -2,8 +2,9 @@ import type { Metadata } from "next";
 import ReportButton from "@/components/shared/ReportButton";
 
 export const metadata: Metadata = {
-  title: "Report Wrong Info or Missing Official",
-  description: "Report incorrect information, a missing official, or a new public source to the RepWatchr team.",
+  title: "Submit a Source, Correction, or Missing Official",
+  description:
+    "Send RepWatchr a public source, correction, roster, vote, filing, meeting record, or missing official for review.",
 };
 
 export default function FeedbackPage() {
@@ -13,13 +14,13 @@ export default function FeedbackPage() {
         <div className="h-1.5 w-full bg-[linear-gradient(90deg,#bf0d3e_0%,#bf0d3e_33%,#ffffff_33%,#ffffff_66%,#002868_66%,#002868_100%)]" />
         <div className="p-6">
           <p className="text-xs font-black uppercase tracking-[0.18em] text-red-700">
-            Source intake
+            Source drop
           </p>
           <h1 className="mt-3 text-3xl font-black tracking-tight text-blue-950">
-            Report wrong info or a missing official.
+            Put a missing receipt in the record.
           </h1>
           <p className="mt-3 text-sm font-semibold leading-6 text-slate-700">
-            Send a correction, missing office, new roster, meeting record, election source, filing, or profile update. You do not need an account. Public-source links help the record move faster.
+            Send the agenda, clip, filing, roster, article, vote, meeting video, campaign-finance record, correction, or missing official. You do not need an account. Public-source links are what turn attention into a reusable record.
           </p>
         </div>
       </section>
@@ -27,7 +28,7 @@ export default function FeedbackPage() {
       <div className="mb-8 grid gap-3 sm:grid-cols-2">
         <div className="rounded-xl border border-slate-200 bg-white p-5 shadow-sm">
           <h2 className="text-sm font-black uppercase tracking-wide text-blue-950">
-            Corrections
+            Fix the record
           </h2>
           <p className="mt-2 text-sm font-semibold leading-6 text-slate-600">
             Wrong name, outdated office, broken source, incorrect party, bad term date, score issue, or missing context.
@@ -35,11 +36,24 @@ export default function FeedbackPage() {
         </div>
         <div className="rounded-xl border border-slate-200 bg-white p-5 shadow-sm">
           <h2 className="text-sm font-black uppercase tracking-wide text-blue-950">
-            New officials
+            Add a target
           </h2>
           <p className="mt-2 text-sm font-semibold leading-6 text-slate-600">
             County, city, school board, public board, appointed office, election result, or official roster that RepWatchr has not loaded yet.
           </p>
+        </div>
+      </div>
+
+      <div className="mb-8 rounded-xl border border-red-100 bg-red-50 p-5">
+        <h2 className="text-sm font-black uppercase tracking-wide text-red-800">
+          What gets attention fastest
+        </h2>
+        <div className="mt-3 grid gap-2 sm:grid-cols-3">
+          {["Official source URL", "Date and jurisdiction", "Why voters should look"].map((item) => (
+            <div key={item} className="rounded-lg bg-white px-3 py-2 text-sm font-black text-blue-950 shadow-sm">
+              {item}
+            </div>
+          ))}
         </div>
       </div>
 

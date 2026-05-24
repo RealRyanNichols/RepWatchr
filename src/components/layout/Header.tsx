@@ -6,26 +6,29 @@ import Link from "next/link";
 import UserMenu from "@/components/auth/UserMenu";
 
 const primaryLinks = [
-  { href: "/", label: "Home" },
-  { href: "/officials", label: "Officials" },
-  { href: "/state-reps", label: "State Reps" },
-  { href: "/school-boards", label: "Schools" },
-  { href: "/attorneys", label: "Attorneys" },
-  { href: "/media", label: "Media" },
-  { href: "/public-safety", label: "Safety" },
-  { href: "/east-texas-predator-watch", label: "Predator Watch" },
-  { href: "/news", label: "News" },
+  { href: "/feed", label: "Feed" },
+  { href: "/daily-wire", label: "Daily Watch" },
+  { href: "/officials", label: "Find Reps" },
+  { href: "/school-boards", label: "School Boards" },
+  { href: "/red-flags", label: "Red Flags" },
+  { href: "/feedback", label: "Submit Source" },
+  { href: "/create-account", label: "Join Free" },
 ];
 
 const moreLinks = [
+  { href: "/", label: "Home" },
   { href: "/scorecards", label: "Scorecards" },
+  { href: "/state-reps", label: "State Reps" },
   { href: "/votes", label: "Votes" },
   { href: "/funding", label: "Funding" },
-  { href: "/red-flags", label: "Red Flags" },
-  { href: "/buildout", label: "Buildout" },
-  { href: "/methodology", label: "Methodology" },
+  { href: "/news", label: "News" },
+  { href: "/attorneys", label: "Attorney Watch" },
+  { href: "/media", label: "Media Watch" },
+  { href: "/public-safety", label: "Public Safety" },
+  { href: "/east-texas-predator-watch", label: "Predator Watch" },
   { href: "/faretta-ai", label: "Faretta AI" },
-  { href: "/uap", label: "UAP" },
+  { href: "/methodology", label: "Methodology" },
+  { href: "/buildout", label: "Buildout" },
 ];
 
 export default function Header() {
@@ -61,7 +64,7 @@ export default function Header() {
             RepWatchr
           </span>
           <span className="mt-1 block text-[10px] font-black uppercase leading-tight tracking-wide text-[#d6b35a] sm:text-sm md:text-base">
-            God. Family. Country. Justice.
+            Search. Grade. Source. Share.
           </span>
         </Link>
 
@@ -170,7 +173,7 @@ export default function Header() {
               </Link>
             ))}
             <p className="mt-2 border-t border-white/10 px-3 pt-3 text-[11px] font-black uppercase tracking-[0.18em] text-[#d6b35a]">
-              More records
+              More lanes
             </p>
             {moreLinks.map((link) => (
               <Link

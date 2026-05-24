@@ -9,11 +9,11 @@ import { Analytics } from "@vercel/analytics/next";
 
 export const metadata: Metadata = {
   title: {
-    default: "RepWatchr - Know Your Reps. Hold Them Accountable.",
+    default: "RepWatchr - Find, Grade, Source, Share",
     template: "%s | RepWatchr",
   },
   description:
-    "Track public officials nationwide with source-backed profiles, scorecards, voting records, campaign funding, public statements, and citizen input.",
+    "Find public officials and school boards, follow the political attention feed, grade the record, submit missing sources, and share source-backed accountability profiles.",
   keywords: [
     "RepWatchr",
     "elected officials",
@@ -28,8 +28,19 @@ export const metadata: Metadata = {
     "property tax",
     "water rights",
     "school board",
+    "political news feed",
+    "political attention",
+    "source-backed stories",
   ],
   metadataBase: new URL("https://www.repwatchr.com"),
+  applicationName: "RepWatchr",
+  alternates: {
+    canonical: "https://www.repwatchr.com",
+    types: {
+      "application/rss+xml": "/rss.xml",
+    },
+  },
+  category: "public accountability",
   icons: {
     icon: [
       { url: "/favicon.ico" },
@@ -38,28 +49,28 @@ export const metadata: Metadata = {
     apple: [{ url: "/images/profile.png", type: "image/png", sizes: "1254x1254" }],
   },
   openGraph: {
-    title: "RepWatchr - Know Your Reps. Hold Them Accountable.",
+    title: "RepWatchr - Find, Grade, Source, Share",
     description:
-      "Track elected officials with source-backed profiles, scorecards, voting records, campaign funding, red flags, and citizen input.",
+      "Open the feed, read the story, grade the record, submit a missing source, and share what voters need before the next meeting, vote, hearing, or election.",
     url: "https://www.repwatchr.com",
     siteName: "RepWatchr",
     locale: "en_US",
     type: "website",
     images: [
       {
-        url: "/images/profile.png",
-        width: 1254,
-        height: 1254,
-        alt: "RepWatchr - Know Your Reps. Hold Them Accountable.",
+        url: "/opengraph-image",
+        width: 1200,
+        height: 630,
+        alt: "RepWatchr - Find, Grade, Source, Share",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "RepWatchr - Know Your Reps. Hold Them Accountable.",
+    title: "RepWatchr - Find, Grade, Source, Share",
     description:
-      "Track elected officials with source-backed profiles, voting records, campaign funding, and red flags.",
-    images: ["/images/profile.png"],
+      "Follow the feed, find officials, grade the record, submit missing sources, and share accountability stories that keep people coming back.",
+    images: ["/opengraph-image"],
   },
   robots: {
     index: true,
@@ -74,7 +85,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className="h-full antialiased">
-      <body className="min-h-full flex flex-col bg-[#06172f] text-slate-100">
+      <body className="min-h-full flex flex-col bg-[#f6f9fc] text-slate-950">
         <GoogleAnalytics />
         <PageViewTracker />
         <AuthProvider>

@@ -5,9 +5,9 @@ import { getAllNews, getOfficialById } from "@/lib/data";
 import type { NewsArticle, NewsPowerChannel, NewsScope } from "@/types";
 
 export const metadata: Metadata = {
-  title: "Geo News Watch | RepWatchr",
+  title: "Political Attention Feed | RepWatchr",
   description:
-    "Top East Texas, Texas, and United States public-accountability stories organized by officials, school boards, attorneys, media, public safety, elections, courts, and money.",
+    "A source-backed political attention feed for public-accountability stories tied to officials, school boards, elections, courts, money, media, and public safety.",
 };
 
 const tagColors: Record<string, string> = {
@@ -77,6 +77,14 @@ function sourceLabel(article: NewsArticle) {
   return "Needs source URL";
 }
 
+function attentionLabel(article: NewsArticle) {
+  if (article.featured && article.sourceUrl) return "High attention";
+  if (article.tags.some((tag) => ["breaking", "investigation", "watchdog", "corruption"].includes(tag))) {
+    return "Watch closely";
+  }
+  return "On the record";
+}
+
 function matchesGeo(
   article: NewsArticle,
   scope?: string,
@@ -114,9 +122,12 @@ function ArticleCard({ article, compact = false }: { article: NewsArticle; compa
   return (
     <Link
       href={`/news/${article.id}`}
-      className="group flex h-full min-w-0 flex-col rounded-xl border border-slate-300 bg-white p-4 shadow-sm transition hover:-translate-y-0.5 hover:border-blue-300 hover:shadow-lg"
+      className="group flex h-full min-w-0 flex-col rounded-lg border border-slate-200 bg-white p-4 shadow-[0_14px_34px_rgba(15,23,42,0.07)] transition hover:-translate-y-0.5 hover:border-red-300 hover:shadow-[0_18px_46px_rgba(15,23,42,0.12)]"
     >
-      <div className="flex flex-wrap gap-2">
+      <div className="flex flex-wrap items-center gap-2">
+        <span className="rounded-full bg-red-700 px-2.5 py-1 text-[11px] font-black uppercase tracking-wide text-white">
+          {attentionLabel(article)}
+        </span>
         <span className="rounded-full bg-blue-950 px-2.5 py-1 text-[11px] font-black uppercase tracking-wide text-white">
           {scopeLabels[articleScope(article)]}
         </span>
@@ -158,11 +169,14 @@ function ArticleCard({ article, compact = false }: { article: NewsArticle; compa
         </div>
       ) : null}
 
-      <div className="mt-auto pt-4 text-xs font-bold text-slate-500">
+      <div className="mt-auto border-t border-slate-100 pt-4 text-xs font-bold text-slate-500">
         <p>{article.locationLabel ?? scopeLabels[articleScope(article)]} / {dateLabel(article.publishedAt)}</p>
         <p className={article.sourceUrl ? "mt-1 text-blue-800" : "mt-1 text-red-700"}>
           {sourceLabel(article)}
         </p>
+        <span className="mt-3 inline-flex text-[11px] font-black uppercase tracking-wide text-slate-900 group-hover:text-red-700">
+          Read the record
+        </span>
       </div>
     </Link>
   );
@@ -180,7 +194,7 @@ function Section({
   empty: string;
 }) {
   return (
-    <section className="rounded-2xl border border-slate-300 bg-slate-50 p-4 shadow-sm">
+    <section className="rounded-lg border border-slate-200 bg-white p-4 shadow-[0_14px_34px_rgba(15,23,42,0.06)]">
       <div className="mb-3 flex items-end justify-between gap-3">
         <div>
           <p className="text-xs font-black uppercase tracking-[0.18em] text-red-700">{kicker}</p>
@@ -197,7 +211,7 @@ function Section({
           ))}
         </div>
       ) : (
-        <div className="rounded-xl border border-dashed border-slate-300 bg-white p-4 text-sm font-semibold leading-6 text-slate-600">
+        <div className="rounded-lg border border-dashed border-slate-300 bg-slate-50 p-4 text-sm font-semibold leading-6 text-slate-600">
           {empty}
         </div>
       )}
@@ -228,23 +242,34 @@ export default async function NewsPage({
   const clippingLanes = new Set(DAILY_NEWS_WATCH_SOURCES.flatMap((source) => source.powerChannels));
 
   return (
-    <div className="bg-slate-100">
+    <div className="rw-news-page min-h-screen">
       <main className="mx-auto max-w-7xl px-4 py-8 sm:px-6 lg:px-8">
-        <section className="overflow-hidden rounded-2xl border border-slate-300 bg-white shadow-sm">
-          <div className="h-1.5 w-full bg-[linear-gradient(90deg,#b42318_0%,#b42318_30%,#d6b35a_30%,#d6b35a_42%,#ffffff_42%,#ffffff_55%,#1d4ed8_55%,#1d4ed8_100%)]" />
-          <div className="grid gap-6 p-5 lg:grid-cols-[1.08fr_0.92fr] lg:p-7">
+        <section className="border-b border-slate-200 pb-7">
+          <div className="grid gap-6 lg:grid-cols-[1.12fr_0.88fr]">
             <div>
-              <p className="text-xs font-black uppercase tracking-[0.18em] text-red-700">
-                Geo news watch
+              <p className="inline-flex rounded-full bg-red-700 px-3 py-1 text-xs font-black uppercase tracking-[0.18em] text-white">
+                Political attention feed
               </p>
-              <h1 className="mt-3 text-3xl font-black tracking-tight text-slate-950 sm:text-5xl">
-                Top stories by place and power lane.
+              <h1 className="mt-4 max-w-4xl text-4xl font-black tracking-tight text-slate-950 sm:text-6xl">
+                Stories that put public power on the record.
               </h1>
-              <p className="mt-3 max-w-3xl text-sm font-semibold leading-6 text-slate-700 sm:text-base">
-                RepWatchr news should not be a generic feed. It should connect public stories to officials, school boards, attorneys, media, public safety, elections, courts, and money where people live.
+              <p className="mt-4 max-w-3xl text-base font-semibold leading-7 text-slate-700 sm:text-lg">
+                RepWatchr news is built to grab attention without losing the evidence. Every story should connect a public claim, vote, agency, school board, court issue, money trail, or safety concern back to the people voters need to watch.
               </p>
 
               <div className="mt-5 flex flex-wrap gap-2">
+                <Link
+                  href="/feed"
+                  className="rounded-lg bg-red-700 px-4 py-2.5 text-sm font-black text-white shadow-sm transition hover:-translate-y-0.5 hover:bg-blue-950"
+                >
+                  Open the Feed
+                </Link>
+                <Link
+                  href="/daily-wire"
+                  className="rounded-lg border border-amber-200 bg-amber-50 px-4 py-2.5 text-sm font-black text-amber-950 shadow-sm transition hover:-translate-y-0.5 hover:border-red-300 hover:bg-white"
+                >
+                  Daily Watch
+                </Link>
                 {([
                   ["East Texas", queryFor({ scope: "east-texas" })],
                   ["Texas", queryFor({ scope: "texas", state: "TX" })],
@@ -254,7 +279,7 @@ export default async function NewsPage({
                   <Link
                     key={label}
                     href={href}
-                    className="rounded-xl border border-slate-300 bg-slate-50 px-4 py-2.5 text-sm font-black text-slate-800 transition hover:border-blue-400 hover:bg-blue-50"
+                    className="rounded-lg border border-slate-300 bg-white px-4 py-2.5 text-sm font-black text-slate-800 transition hover:border-blue-400 hover:bg-blue-50"
                   >
                     {label}
                   </Link>
@@ -263,22 +288,22 @@ export default async function NewsPage({
             </div>
 
             <div className="grid grid-cols-2 gap-3">
-              <div className="rounded-xl border border-slate-300 bg-slate-50 p-4">
+              <div className="rounded-lg border border-slate-200 bg-white p-4 shadow-[0_14px_34px_rgba(15,23,42,0.06)]">
                 <p className="text-2xl font-black text-slate-950">{articles.length}</p>
                 <p className="mt-1 text-xs font-black uppercase tracking-wide text-red-700">Stories loaded</p>
                 <p className="mt-2 text-xs font-semibold leading-5 text-slate-600">News records in the public feed.</p>
               </div>
-              <div className="rounded-xl border border-slate-300 bg-slate-50 p-4">
+              <div className="rounded-lg border border-slate-200 bg-white p-4 shadow-[0_14px_34px_rgba(15,23,42,0.06)]">
                 <p className="text-2xl font-black text-slate-950">{sourceLinkedCount}</p>
                 <p className="mt-1 text-xs font-black uppercase tracking-wide text-red-700">Source linked</p>
                 <p className="mt-2 text-xs font-semibold leading-5 text-slate-600">Stories with public source URLs.</p>
               </div>
-              <div className="rounded-xl border border-slate-300 bg-slate-50 p-4">
+              <div className="rounded-lg border border-slate-200 bg-white p-4 shadow-[0_14px_34px_rgba(15,23,42,0.06)]">
                 <p className="text-2xl font-black text-slate-950">{eastTexasArticles.length}</p>
                 <p className="mt-1 text-xs font-black uppercase tracking-wide text-red-700">East Texas</p>
                 <p className="mt-2 text-xs font-semibold leading-5 text-slate-600">Local power stories.</p>
               </div>
-              <div className="rounded-xl border border-slate-300 bg-slate-50 p-4">
+              <div className="rounded-lg border border-slate-200 bg-white p-4 shadow-[0_14px_34px_rgba(15,23,42,0.06)]">
                 <p className="text-2xl font-black text-slate-950">{filtered.length || articles.length}</p>
                 <p className="mt-1 text-xs font-black uppercase tracking-wide text-red-700">Active feed</p>
                 <p className="mt-2 text-xs font-semibold leading-5 text-slate-600">Current geo selection.</p>
@@ -287,7 +312,7 @@ export default async function NewsPage({
           </div>
         </section>
 
-        <section className="mt-6 rounded-2xl border border-slate-300 bg-white p-4 shadow-sm">
+        <section className="mt-6 rounded-lg border border-slate-200 bg-white p-4 shadow-[0_14px_34px_rgba(15,23,42,0.06)]">
           <div className="flex flex-col gap-3 lg:flex-row lg:items-center lg:justify-between">
             <div>
               <p className="text-xs font-black uppercase tracking-[0.18em] text-red-700">Geo preference</p>
@@ -318,20 +343,28 @@ export default async function NewsPage({
           </div>
         </section>
 
-        <section className="mt-6 rounded-2xl border border-amber-300 bg-amber-50 p-4 shadow-sm">
+        <section className="mt-6 rounded-lg border border-amber-300 bg-amber-50 p-4 shadow-[0_14px_34px_rgba(120,53,15,0.08)]">
           <div className="flex flex-col gap-4 lg:flex-row lg:items-center lg:justify-between">
             <div>
               <p className="text-xs font-black uppercase tracking-[0.18em] text-amber-800">Daily clipping system</p>
               <h2 className="text-xl font-black text-amber-950">Breaking public-source watch runs every morning.</h2>
               <p className="mt-1 max-w-4xl text-sm font-semibold leading-6 text-amber-900">
-                RepWatchr now has a daily cron queue for public RSS and news-search links. It captures source-linked stories for review before they become public RepWatchr articles.
+                RepWatchr now has a daily cron queue for public RSS and news-search links. It captures source-linked wire items every morning, publishes them on the Daily Watch, and keeps review labels attached before deeper RepWatchr articles are written.
               </p>
             </div>
             <div className="grid grid-cols-3 gap-2 text-center">
               <MiniMetric label="Sources" value={DAILY_NEWS_WATCH_SOURCES.length} />
               <MiniMetric label="Lanes" value={clippingLanes.size} />
-              <MiniMetric label="Status" value="Review" />
+              <MiniMetric label="Wire" value="Live" />
             </div>
+          </div>
+          <div className="mt-4">
+            <Link
+              href="/daily-wire"
+              className="inline-flex rounded-lg bg-amber-900 px-4 py-2.5 text-sm font-black uppercase tracking-wide text-white transition hover:bg-red-700"
+            >
+              Open Daily Watch
+            </Link>
           </div>
         </section>
 
@@ -373,7 +406,7 @@ export default async function NewsPage({
           />
         </div>
 
-        <section className="mt-8 rounded-2xl border border-slate-300 bg-white p-5 shadow-sm">
+        <section className="mt-8 rounded-lg border border-slate-200 bg-white p-5 shadow-[0_14px_34px_rgba(15,23,42,0.06)]">
           <div className="mb-4">
             <p className="text-xs font-black uppercase tracking-[0.18em] text-red-700">Power lanes</p>
             <h2 className="text-2xl font-black text-slate-950">Every tab gets its own news lane</h2>
@@ -382,7 +415,7 @@ export default async function NewsPage({
             {channelOrder.map((channel) => {
               const laneArticles = articles.filter((article) => articleChannels(article).includes(channel));
               return (
-                <div key={channel} className="rounded-xl border border-slate-300 bg-slate-50 p-4">
+                <div key={channel} className="rounded-lg border border-slate-200 bg-slate-50 p-4">
                   <div className="flex items-center justify-between gap-3">
                     <h3 className="text-base font-black text-slate-950">{channelLabels[channel]}</h3>
                     <span className="rounded-full bg-white px-2.5 py-1 text-xs font-black text-slate-700">

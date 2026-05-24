@@ -142,7 +142,7 @@ export default async function OfficialsPage({
     },
   ];
   return (
-    <div className="bg-slate-100">
+    <div className="rw-page-shell">
       <div className="mx-auto max-w-7xl px-4 py-4 sm:px-6 lg:px-8">
         <OfficialsCommandDeck
           selectedStateCode={selectedStateCode}

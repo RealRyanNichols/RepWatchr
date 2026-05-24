@@ -121,7 +121,7 @@ export default async function DistrictPage({
   const branding = getDistrictBranding(district.district_slug);
 
   return (
-    <div className="bg-[#fbfcff] text-gray-950">
+    <div className="rw-page-shell text-gray-950">
       <section className="border-b border-blue-100" style={{ background: `linear-gradient(135deg, #ffffff 0%, ${branding.accent} 48%, #fff7ed 100%)` }}>
         <div className="mx-auto grid max-w-7xl gap-8 px-4 py-8 sm:px-6 lg:grid-cols-[1.1fr_0.9fr] lg:px-8">
           <div>

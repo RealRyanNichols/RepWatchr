@@ -79,7 +79,7 @@ export default async function EastTexasPredatorWatchPage({
   const offenseOptions = Array.from(new Set(profiles.map((profile) => profile.offenseCategory))).sort();
 
   return (
-    <div className="bg-slate-100">
+    <div className="rw-page-shell">
       <PredatorAlertScroller profiles={profiles} />
       <main className="mx-auto max-w-7xl px-4 py-8 sm:px-6 lg:px-8">
         <section className="overflow-hidden rounded-2xl border border-slate-800 bg-slate-950 text-white shadow-sm">

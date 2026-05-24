@@ -2,6 +2,8 @@ import Link from "next/link";
 import Image from "next/image";
 
 const quickLinks = [
+  { href: "/feed", label: "Feed" },
+  { href: "/daily-wire", label: "Daily Watch" },
   { href: "/officials", label: "Officials" },
   { href: "/school-boards", label: "School Boards" },
   { href: "/attorneys", label: "Attorneys" },
@@ -14,7 +16,7 @@ const quickLinks = [
   { href: "/news", label: "News" },
   { href: "/faretta-ai", label: "AI Search" },
   { href: "/methodology", label: "Methodology" },
-  { href: "/feedback", label: "Report Incorrect Info" },
+  { href: "/feedback", label: "Submit Source" },
 ];
 
 export default function Footer() {
@@ -36,7 +38,7 @@ export default function Footer() {
               RepWatchr
             </h3>
             <p className="mt-2 text-sm font-semibold text-slate-300">
-              Watch your reps. Hold them accountable.
+              Search. Grade. Source. Share.
             </p>
             <a
               href="https://www.RepWatchr.com"
@@ -99,8 +101,14 @@ export default function Footer() {
               href="/feedback"
               className="text-xs font-semibold text-slate-400 transition-colors hover:text-white"
             >
-              Report an Issue
+              Submit Source
             </Link>
+            <a
+              href="/rss.xml"
+              className="text-xs font-semibold text-slate-400 transition-colors hover:text-white"
+            >
+              RSS
+            </a>
           </div>
           <p className="text-center text-sm font-semibold text-slate-400">
             &copy; {new Date().getFullYear()} RepWatchr. All rights

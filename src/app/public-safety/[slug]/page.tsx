@@ -49,7 +49,7 @@ export default async function PublicSafetyProfilePage({ params }: PublicSafetyPr
   if (!profile) notFound();
 
   return (
-    <div className="bg-slate-100">
+    <div className="rw-page-shell">
       <main className="mx-auto max-w-5xl px-4 py-8 sm:px-6 lg:px-8">
         <Link href="/public-safety" className="text-sm font-black text-blue-800 hover:text-red-700">
           &larr; Public safety watch

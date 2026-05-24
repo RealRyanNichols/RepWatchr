@@ -10,52 +10,123 @@ const levelCards = [
   {
     level: "federal",
     title: "Federal",
-    description: "U.S. House & Senate",
+    description: "Congressional profiles, votes, money, and public signals",
     href: "/officials?level=federal",
   },
   {
     level: "state",
     title: "State",
-    description: "Texas House & Senate live",
+    description: "Texas House and Senate profiles loaded first",
     href: "/officials?level=state",
   },
   {
     level: "county",
     title: "County",
-    description: "County offices",
+    description: "Local offices that touch taxes, courts, roads, and records",
     href: "/officials?level=county",
   },
   {
     level: "city",
     title: "City",
-    description: "City offices",
+    description: "Mayors, councils, departments, and local decision makers",
     href: "/officials?level=city",
   },
   {
     level: "school-board",
     title: "School Boards",
-    description: "Sourced profiles live",
+    description: "Board members, meetings, votes, and parent-facing records",
     href: "/school-boards",
+  },
+];
+
+const attentionLoop = [
+  {
+    step: "Search",
+    title: "Find the person fast",
+    detail: "Start with a name, district, office, or school board. Attention dies when people cannot find the target.",
+  },
+  {
+    step: "Grade",
+    title: "Let citizens put pressure on the record",
+    detail: "Profiles are not static biographies. They are public accountability pages people can rate, revisit, and watch.",
+  },
+  {
+    step: "Source",
+    title: "Turn claims into receipts",
+    detail: "Every useful tip should become a source, missing-record lead, vote, funding trail, or red flag for review.",
+  },
+  {
+    step: "Share",
+    title: "Make every profile a distribution engine",
+    detail: "The page should give voters a clean link they can post before meetings, elections, hearings, and news cycles.",
   },
 ];
 
 const memberFunnelTools = [
   {
-    label: "Build a records request",
+    label: "Watchlist",
+    detail: "Keep officials, boards, attorneys, agencies, and media names in one return path.",
+  },
+  {
+    label: "Records request",
     detail: "Turn a concern into a clean request for agendas, minutes, filings, videos, contracts, or vote records.",
   },
   {
-    label: "Start a timeline",
-    detail: "Drop facts into a timeline starter that separates dates, claims, records, and missing proof.",
+    label: "Timeline starter",
+    detail: "Separate dates, claims, source links, missing proof, and next records to pull.",
   },
   {
-    label: "Track a target",
-    detail: "Follow officials, boards, counties, races, attorneys, media, issues, and source gaps from one member office.",
+    label: "Safer share copy",
+    detail: "Post what the record shows without overstating what still needs verification.",
+  },
+];
+
+const twoMinuteChallenge = [
+  {
+    label: "Find one name",
+    href: "/officials",
+    detail: "Search the official, board member, district, or office people are arguing about.",
   },
   {
-    label: "Copy a safer post",
-    detail: "Share what is known without overstating what still needs records.",
+    label: "Open one record",
+    href: "/red-flags",
+    detail: "Look for the vote, funder, source gap, or red flag that gives the page heat.",
   },
+  {
+    label: "Submit one source",
+    href: "/feedback",
+    detail: "Send the agenda, clip, article, filing, meeting video, contract, or missing link.",
+  },
+  {
+    label: "Share one profile",
+    href: "/create-account",
+    detail: "Save the target and come back when the record changes.",
+  },
+];
+
+const returnHooks = [
+  {
+    trigger: "Before a meeting",
+    promise: "Open the profile, copy the clean talking point, and walk in with the record already organized.",
+  },
+  {
+    trigger: "When a post goes viral",
+    promise: "Drop the source-backed profile instead of sending people into another comment fight.",
+  },
+  {
+    trigger: "When a new record appears",
+    promise: "Submit the receipt, flag the gap, and turn scattered attention into a reusable public record trail.",
+  },
+  {
+    trigger: "When election season starts",
+    promise: "Compare faces, votes, red flags, money, citizen grades, and source links in one place.",
+  },
+];
+
+const sharePrompts = [
+  "Who voted for this, who funded it, and where is the source?",
+  "Open the record before the next meeting.",
+  "Do not argue from memory. Share the receipt.",
 ];
 
 function initialsFor(official: Official) {
@@ -173,30 +244,30 @@ export default function HomePage() {
     {
       label: "Public Profiles",
       value: formatNumber(allPublicProfileCount),
-      caption: "officials, schools, attorneys, media, safety",
+      caption: "people and institutions on the record",
     },
     {
       label: "Federal/State",
       value: formatNumber(dataStats.federalAndStateOfficeProfilesLoaded),
-      caption: `${dataStats.nationalFederalStateCompletionPercent}% broad benchmark`,
+      caption: `${dataStats.nationalFederalStateCompletionPercent}% broad benchmark loaded`,
     },
     {
       label: "Power Profiles",
       value: formatNumber(dataStats.publicPowerProfiles),
-      caption: `${formatNumber(dataStats.publicSafetyWatchProfiles)} public-safety live`,
+      caption: "attorneys, media, safety, and influence lanes",
     },
     {
       label: "Source URLs",
       value: formatNumber(allPublicSourceUrls),
-      caption: `${formatNumber(dataStats.newsSourceUrls)} news links + public records`,
+      caption: "links voters can open and share",
     },
   ];
 
   const photoOfficials = officials
     .filter((official) => official.photo && (official.level === "federal" || official.level === "state"))
-    .slice(0, 42);
+    .slice(0, 28);
 
-  const watchBoardOfficials = officials
+  const watchBoardSignals = officials
     .filter((official) => official.photo && (official.level === "federal" || official.level === "state"))
     .map((official) => {
       const scoreCard = getScoreCard(official.id);
@@ -209,88 +280,180 @@ export default function HomePage() {
       };
     })
     .filter(({ score, redFlagCount }) => typeof score === "number" || redFlagCount > 0)
-    .sort((a, b) => b.heat - a.heat)
-    .slice(0, 4);
+    .sort((a, b) => b.heat - a.heat);
+
+  const watchBoardOfficials = watchBoardSignals.slice(0, 4);
+
+  const latestNews = getAllNews().slice(0, 3);
 
   const featuredOfficials = officials
     .filter((o) => o.level === "federal" || o.level === "state")
     .slice(0, 6);
 
-  const latestNews = getAllNews().slice(0, 3);
+  const retentionStats = [
+    {
+      label: "First move",
+      value: "2 min",
+      detail: "Search, open, source, share",
+    },
+    {
+      label: "Hot records",
+      value: formatNumber(watchBoardSignals.length),
+      detail: "profiles with scores or flags",
+    },
+    {
+      label: "Fresh signals",
+      value: formatNumber(latestNews.length),
+      detail: "updates that point back to records",
+    },
+    {
+      label: "Receipts",
+      value: formatNumber(allPublicSourceUrls),
+      detail: "source links keep attention alive",
+    },
+  ];
+
+  const homeStructuredData = [
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      name: "RepWatchr",
+      url: "https://www.repwatchr.com",
+      description:
+        "Search public officials, school boards, votes, funding, red flags, source links, and citizen grades.",
+      potentialAction: {
+        "@type": "SearchAction",
+        target: "https://www.repwatchr.com/faretta-ai?q={search_term_string}",
+        "query-input": "required name=search_term_string",
+      },
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      name: "RepWatchr",
+      url: "https://www.repwatchr.com",
+      logo: "https://www.repwatchr.com/images/profile.png",
+      description:
+        "A public accountability index built around official profiles, public records, voting data, school-board rosters, and citizen source submissions.",
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "Dataset",
+      name: "RepWatchr public accountability profiles",
+      url: "https://www.repwatchr.com",
+      description:
+        "Source-backed public profiles covering officials, school boards, power profiles, votes, campaign finance, red flags, and public source links.",
+      keywords: [
+        "public officials",
+        "school boards",
+        "voting records",
+        "campaign finance",
+        "red flags",
+        "citizen grades",
+        "public records",
+      ],
+      creator: {
+        "@type": "Organization",
+        name: "RepWatchr",
+      },
+      spatialCoverage: "United States",
+      variableMeasured: [
+        "public profiles",
+        "source links",
+        "citizen grades",
+        "voting records",
+        "campaign finance",
+        "school-board rosters",
+      ],
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "HowTo",
+      name: "How to use RepWatchr",
+      description: "A four-step public accountability loop for voters.",
+      step: attentionLoop.map((item, index) => ({
+        "@type": "HowToStep",
+        position: index + 1,
+        name: item.title,
+        text: item.detail,
+      })),
+    },
+  ];
 
   return (
-    <div>
+    <div className="pb-24 md:pb-0">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(homeStructuredData) }}
+      />
       {/* Hero Section */}
-      <section className="relative overflow-hidden border-b border-blue-100 bg-[linear-gradient(135deg,#ffffff_0%,#eef4ff_48%,#fff7ed_100%)]">
+      <section className="relative overflow-hidden border-b border-blue-100 bg-[linear-gradient(135deg,#ffffff_0%,#eef4ff_50%,#fff7ed_100%)]">
         <div className="grid h-2 grid-cols-3">
           <div className="bg-red-700" />
           <div className="bg-white" />
           <div className="bg-blue-900" />
         </div>
-        <ProfileTicker officials={photoOfficials} />
-        <div className="relative mx-auto grid max-w-7xl gap-5 px-4 py-5 sm:px-6 sm:py-7 lg:grid-cols-[minmax(0,1.05fr)_minmax(380px,0.95fr)] lg:px-8">
-          <div>
+        <div className="relative mx-auto grid max-w-7xl gap-5 px-4 py-6 sm:px-6 sm:py-8 lg:grid-cols-[minmax(0,1fr)_minmax(380px,0.82fr)] lg:px-8">
+          <div className="flex min-h-[520px] flex-col justify-center">
             <div className="flex flex-wrap items-center gap-2">
               <span className="rounded-full bg-red-700 px-3 py-1 text-xs font-black uppercase tracking-wide text-white shadow-sm">
-                Watch Board Live
+                ATTENTION loop live
               </span>
               <span className="rounded-full border border-blue-200 bg-white px-3 py-1 text-xs font-black uppercase tracking-wide text-blue-950 shadow-sm">
-                {formatNumber(dataStats.officialsWithPhotos)} official faces
-              </span>
-              <span className="rounded-full border border-blue-200 bg-white px-3 py-1 text-xs font-black uppercase tracking-wide text-blue-950 shadow-sm">
-                {formatNumber(dataStats.publicPowerProfiles)} power profiles
+                {formatNumber(dataStats.officialsWithPhotos)} faces loaded
               </span>
               <span className="rounded-full border border-amber-200 bg-amber-50 px-3 py-1 text-xs font-black uppercase tracking-wide text-amber-900 shadow-sm">
-                Source-backed only
+                Source-backed
               </span>
             </div>
-            <h1 className="mt-4 text-4xl font-black leading-[0.96] tracking-tight text-blue-950 sm:text-6xl lg:text-7xl">
-              Know Your Reps.
-              <span className="block text-red-700">Put Them On The Record.</span>
+            <h1 className="mt-5 max-w-4xl text-5xl font-black leading-[0.92] tracking-tight text-blue-950 sm:text-6xl lg:text-8xl">
+              Put your officials
+              <span className="block text-red-700">on the record.</span>
             </h1>
             <p className="mt-4 max-w-3xl text-base font-semibold leading-7 text-blue-950/75 sm:text-lg">
-              Open a profile, check the score, follow the money, send a missing source, or flag the record that voters need to see. Texas is live first; the national map builds from public records.
+              Search a name. Open the profile. Grade the record. Add the missing source.
+              Share the page before the meeting, election, hearing, or news cycle. Attention
+              only matters when it turns into receipts, return visits, and pressure people can repeat.
             </p>
             <div className="mt-5 max-w-2xl">
-              <FarettaSearchBox compact placeholder="Ask Faretta AI who represents you, who funded them, or what record to pull..." />
+              <FarettaSearchBox compact placeholder="Search an official, school board, vote, funder, red flag, or record..." />
             </div>
             <div className="mt-5 grid gap-2 sm:grid-cols-3">
               <Link
                 href="/officials"
-                className="rounded-xl bg-blue-900 px-4 py-3 text-center text-sm font-black text-white shadow-lg transition hover:-translate-y-0.5 hover:bg-red-700"
+                className="rounded-xl bg-red-700 px-5 py-4 text-center text-sm font-black uppercase tracking-wide text-white shadow-lg shadow-red-900/20 transition hover:-translate-y-0.5 hover:bg-blue-900"
               >
-                Open Officials
-              </Link>
-              <Link
-                href="/create-account"
-                className="rounded-xl border border-red-200 bg-white px-4 py-3 text-center text-sm font-black text-red-700 shadow-sm transition hover:-translate-y-0.5 hover:border-red-400 hover:bg-red-50"
-              >
-                Create Free Account
+                Find an official
               </Link>
               <Link
                 href="/school-boards"
-                className="rounded-xl border border-blue-200 bg-white px-4 py-3 text-center text-sm font-black text-blue-950 shadow-sm transition hover:-translate-y-0.5 hover:border-blue-400 hover:bg-blue-50"
+                className="rounded-xl border border-blue-200 bg-white px-5 py-4 text-center text-sm font-black uppercase tracking-wide text-blue-950 shadow-sm transition hover:-translate-y-0.5 hover:border-blue-400 hover:bg-blue-50"
               >
-                School Boards
+                Open school boards
+              </Link>
+              <Link
+                href="/feedback"
+                className="rounded-xl border border-amber-200 bg-amber-50 px-5 py-4 text-center text-sm font-black uppercase tracking-wide text-amber-950 shadow-sm transition hover:-translate-y-0.5 hover:border-amber-400 hover:bg-amber-100"
+              >
+                Submit source
               </Link>
             </div>
-            <div className="mt-5 grid grid-cols-2 gap-2 sm:grid-cols-4">
-              {stats.map((stat) => (
-                <div key={stat.label} className="rounded-xl border border-slate-200 bg-white/85 p-3 shadow-sm">
-                  <p className="text-2xl font-black text-blue-950">{stat.value}</p>
-                  <p className="mt-1 text-[11px] font-black uppercase leading-4 text-red-700">{stat.label}</p>
-                  <p className="mt-1 text-[11px] font-bold leading-4 text-slate-500">{stat.caption}</p>
+            <div className="mt-5 grid gap-2 sm:grid-cols-4">
+              {attentionLoop.map((item) => (
+                <div key={item.step} className="rounded-xl border border-slate-200 bg-white/90 p-3 shadow-sm">
+                  <p className="text-[10px] font-black uppercase tracking-[0.18em] text-red-700">{item.step}</p>
+                  <p className="mt-1 text-sm font-black leading-5 text-blue-950">{item.title}</p>
                 </div>
               ))}
             </div>
           </div>
 
-          <div className="grid gap-3">
+          <div className="grid content-center gap-3">
             <div className="rounded-2xl border border-slate-300 bg-slate-950 p-4 text-white shadow-xl shadow-blue-950/20">
               <div className="flex items-center justify-between gap-3">
                 <div>
-                  <p className="text-xs font-black uppercase tracking-[0.18em] text-amber-300">The Watch Board</p>
-                  <h2 className="mt-1 text-2xl font-black">Records voters should open first.</h2>
+                  <p className="text-xs font-black uppercase tracking-[0.18em] text-amber-300">Open first</p>
+                  <h2 className="mt-1 text-2xl font-black">Records built to spread.</h2>
                 </div>
                 <Link href="/red-flags" className="shrink-0 rounded-full bg-red-700 px-3 py-1.5 text-xs font-black text-white transition hover:bg-red-600">
                   Red flags
@@ -307,87 +470,259 @@ export default function HomePage() {
                 ))}
               </div>
               <p className="mt-3 text-xs font-semibold leading-5 text-slate-300">
-                This board is driven by loaded scores and red-flag records. It changes when the source file changes.
+                The strongest attention pages are not opinion pages. They are names, votes,
+                scores, source links, and a next action voters can repeat.
               </p>
             </div>
 
-            <div className="grid gap-3 sm:grid-cols-3">
-              <Link href="/attorneys" className="rounded-xl border border-slate-300 bg-white p-4 shadow-sm transition hover:-translate-y-0.5 hover:border-blue-400 hover:shadow-md">
-                <p className="text-xs font-black uppercase tracking-wide text-red-700">New lane</p>
-                <h3 className="mt-1 text-lg font-black text-blue-950">Attorney Watch</h3>
-                <p className="mt-1 text-sm font-semibold leading-5 text-slate-600">Law firms and attorneys tied to public power.</p>
+            <div className="grid gap-3 sm:grid-cols-2">
+              <Link href="/create-account" className="rounded-xl border border-red-200 bg-white p-4 shadow-sm transition hover:-translate-y-0.5 hover:border-red-400 hover:bg-red-50 hover:shadow-md">
+                <p className="text-xs font-black uppercase tracking-wide text-red-700">Citizen pressure</p>
+                <h3 className="mt-1 text-lg font-black text-blue-950">Grade the record</h3>
+                <p className="mt-1 text-sm font-semibold leading-5 text-slate-600">Give people one place to rate, watch, and come back.</p>
               </Link>
-              <Link href="/media" className="rounded-xl border border-slate-300 bg-white p-4 shadow-sm transition hover:-translate-y-0.5 hover:border-blue-400 hover:shadow-md">
-                <p className="text-xs font-black uppercase tracking-wide text-red-700">New lane</p>
-                <h3 className="mt-1 text-lg font-black text-blue-950">Media Watch</h3>
-                <p className="mt-1 text-sm font-semibold leading-5 text-slate-600">Newsrooms, editors, reporters, corrections.</p>
+              <Link href="/methodology" className="rounded-xl border border-blue-200 bg-white p-4 shadow-sm transition hover:-translate-y-0.5 hover:border-blue-400 hover:bg-blue-50 hover:shadow-md">
+                <p className="text-xs font-black uppercase tracking-wide text-blue-800">Trust shield</p>
+                <h3 className="mt-1 text-lg font-black text-blue-950">Show the receipts</h3>
+                <p className="mt-1 text-sm font-semibold leading-5 text-slate-600">Attention holds longer when every claim points back to a source.</p>
               </Link>
-              <Link href="/public-safety" className="rounded-xl border border-slate-300 bg-white p-4 shadow-sm transition hover:-translate-y-0.5 hover:border-blue-400 hover:shadow-md">
-                <p className="text-xs font-black uppercase tracking-wide text-red-700">New lane</p>
-                <h3 className="mt-1 text-lg font-black text-blue-950">Public Safety</h3>
-                <p className="mt-1 text-sm font-semibold leading-5 text-slate-600">Agencies, sheriffs, chiefs, complaint paths.</p>
-              </Link>
+            </div>
+
+            <div className="rounded-2xl border border-amber-200 bg-amber-50 p-4 shadow-sm">
+              <p className="text-xs font-black uppercase tracking-[0.18em] text-red-700">2-minute challenge</p>
+              <h3 className="mt-2 text-2xl font-black leading-tight text-blue-950">
+                Give every visitor a mission before they drift.
+              </h3>
+              <div className="mt-4 grid gap-2">
+                {twoMinuteChallenge.map((action, index) => (
+                  <Link
+                    key={action.label}
+                    href={action.href}
+                    className="group grid grid-cols-[32px_1fr] gap-3 rounded-xl border border-amber-200 bg-white p-3 transition hover:-translate-y-0.5 hover:border-red-300 hover:shadow-sm"
+                  >
+                    <span className="grid h-8 w-8 place-items-center rounded-full bg-red-700 text-xs font-black text-white">
+                      {index + 1}
+                    </span>
+                    <span>
+                      <span className="block text-sm font-black text-blue-950 group-hover:text-red-700">{action.label}</span>
+                      <span className="mt-1 block text-xs font-semibold leading-5 text-slate-600">{action.detail}</span>
+                    </span>
+                  </Link>
+                ))}
+              </div>
             </div>
           </div>
         </div>
+        <ProfileTicker officials={photoOfficials} />
       </section>
 
-      {/* Stats Bar */}
-      <section className="bg-white border-b border-gray-100">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-2 sm:grid-cols-4 divide-x divide-gray-100">
+      {/* Proof Bar */}
+      <section className="border-b border-gray-100 bg-white">
+        <div className="mx-auto max-w-7xl px-4 py-8 sm:px-6 lg:px-8">
+          <div className="mb-6 max-w-2xl">
+            <p className="text-xs font-black uppercase tracking-[0.18em] text-red-700">Proof that holds attention</p>
+            <h2 className="mt-2 text-3xl font-black leading-tight text-blue-950">
+              The record is already loaded. Now make it easy to open, grade, and share.
+            </h2>
+          </div>
+          <div className="grid grid-cols-2 overflow-hidden rounded-2xl border border-gray-100 sm:grid-cols-4">
             {stats.map((stat) => (
-              <div key={stat.label} className="py-6 px-4 text-center">
-                <p className="text-2xl sm:text-3xl font-extrabold text-slate-900">
+              <div key={stat.label} className="border-b border-r border-gray-100 px-4 py-5 sm:border-b-0">
+                <p className="text-2xl font-black text-slate-900 sm:text-3xl">
                   {stat.value}
                 </p>
-                <p className="text-xs sm:text-sm text-gray-500 mt-1">
+                <p className="mt-1 text-xs font-black uppercase tracking-wide text-red-700 sm:text-sm">
                   {stat.label}
                 </p>
-                <p className="mt-0.5 text-[11px] font-semibold text-gray-400">
+                <p className="mt-1 text-[11px] font-semibold leading-4 text-gray-500">
                   {stat.caption}
                 </p>
+              </div>
+            ))}
+          </div>
+          <div className="mt-4 grid gap-3 sm:grid-cols-4">
+            {retentionStats.map((stat) => (
+              <div key={stat.label} className="rounded-2xl border border-blue-100 bg-[#f8fbff] p-4">
+                <p className="text-[10px] font-black uppercase tracking-[0.18em] text-blue-800">{stat.label}</p>
+                <p className="mt-2 text-3xl font-black text-red-700">{stat.value}</p>
+                <p className="mt-1 text-xs font-semibold leading-5 text-blue-950/70">{stat.detail}</p>
               </div>
             ))}
           </div>
         </div>
       </section>
 
-      {/* Member Funnel */}
-      <section className="border-b border-blue-100 bg-slate-950 text-white">
-        <div className="mx-auto grid max-w-7xl gap-6 px-4 py-12 sm:px-6 lg:grid-cols-[0.9fr_1.1fr] lg:px-8">
+      {/* Story Feed */}
+      <section className="border-b border-slate-200 bg-white">
+        <div className="mx-auto grid max-w-7xl gap-8 px-4 py-14 sm:px-6 lg:grid-cols-[0.8fr_1.2fr] lg:px-8">
           <div>
-            <p className="text-xs font-black uppercase tracking-wide text-red-300">Free founder access</p>
+            <p className="text-xs font-black uppercase tracking-[0.18em] text-red-700">RepWatchr feed</p>
+            <h2 className="mt-2 text-3xl font-black leading-tight text-blue-950 sm:text-5xl">
+              Turn public records into stories people actually share.
+            </h2>
+            <p className="mt-4 text-sm font-semibold leading-6 text-blue-950/70">
+              The feed is the front door for attention. Articles become post-style
+              story packets with a hook, source trail, linked officials, share
+              snippet, and a path back to the full record.
+            </p>
+            <div className="mt-5 flex flex-wrap gap-3">
+              <Link
+                href="/feed"
+                className="rounded-xl bg-red-700 px-5 py-3 text-sm font-black uppercase tracking-wide text-white shadow-sm transition hover:-translate-y-0.5 hover:bg-blue-950"
+              >
+                Open the Feed
+              </Link>
+              <Link
+                href="/news"
+                className="rounded-xl border border-blue-200 bg-blue-50 px-5 py-3 text-sm font-black uppercase tracking-wide text-blue-950 transition hover:-translate-y-0.5 hover:border-red-300 hover:bg-white"
+              >
+                Article archive
+              </Link>
+            </div>
+          </div>
+          <div className="grid gap-3">
+            {latestNews.map((article) => (
+              <Link
+                key={article.id}
+                href={`/news/${article.id}`}
+                className="group grid gap-3 rounded-2xl border border-slate-200 bg-slate-50 p-4 shadow-sm transition hover:-translate-y-0.5 hover:border-red-300 hover:bg-white hover:shadow-md sm:grid-cols-[108px_1fr]"
+              >
+                <div className="grid aspect-video place-items-center rounded-xl bg-slate-950 p-3 text-center sm:aspect-square">
+                  <p className="text-[10px] font-black uppercase tracking-[0.18em] text-amber-300">Story</p>
+                  <p className="mt-2 text-2xl font-black text-white">RW</p>
+                </div>
+                <div className="min-w-0">
+                  <p className="text-xs font-black uppercase tracking-wide text-red-700">
+                    {article.locationLabel ?? "RepWatchr"} / social-ready
+                  </p>
+                  <h3 className="mt-1 text-lg font-black leading-tight text-slate-950 group-hover:text-red-700">
+                    {article.title}
+                  </h3>
+                  <p className="mt-2 line-clamp-2 text-sm font-semibold leading-6 text-slate-600">
+                    {article.summary}
+                  </p>
+                </div>
+              </Link>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Attention Multiplier */}
+      <section className="border-b border-blue-100 bg-[#f8fbff]">
+        <div className="mx-auto max-w-7xl px-4 py-14 sm:px-6 lg:px-8">
+          <div className="grid gap-8 lg:grid-cols-[0.78fr_1.22fr]">
+            <div>
+              <p className="text-xs font-black uppercase tracking-[0.18em] text-red-700">ATTENTION multiplier</p>
+              <h2 className="mt-2 text-3xl font-black leading-tight text-blue-950 sm:text-5xl">
+                Every page should make the next click obvious.
+              </h2>
+              <p className="mt-4 text-sm font-semibold leading-6 text-blue-950/70">
+                The site should not ask visitors to admire a database. It should
+                push them into a loop that creates more attention, more records,
+                and more return visits.
+              </p>
+            </div>
+            <div className="grid gap-3 sm:grid-cols-2">
+              {attentionLoop.map((item, index) => (
+                <div key={item.step} className="rounded-2xl border border-slate-200 bg-white p-5 shadow-sm">
+                  <div className="flex items-center gap-3">
+                    <span className="grid h-9 w-9 place-items-center rounded-full bg-red-700 text-sm font-black text-white">
+                      {index + 1}
+                    </span>
+                    <p className="text-xs font-black uppercase tracking-[0.18em] text-blue-800">{item.step}</p>
+                  </div>
+                  <h3 className="mt-4 text-xl font-black leading-tight text-blue-950">{item.title}</h3>
+                  <p className="mt-2 text-sm font-semibold leading-6 text-slate-600">{item.detail}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Return Hooks */}
+      <section className="border-b border-slate-200 bg-white">
+        <div className="mx-auto max-w-7xl px-4 py-14 sm:px-6 lg:px-8">
+          <div className="grid gap-8 lg:grid-cols-[1.05fr_0.95fr]">
+            <div>
+              <p className="text-xs font-black uppercase tracking-[0.18em] text-red-700">Hold attention after the first click</p>
+              <h2 className="mt-2 text-3xl font-black leading-tight text-blue-950 sm:text-5xl">
+                Make RepWatchr the place people return when pressure rises.
+              </h2>
+              <p className="mt-4 max-w-3xl text-sm font-semibold leading-6 text-blue-950/70">
+                Attention leaks when a page only answers one question. Hold it by giving people
+                repeat-use reasons tied to real moments: meetings, viral posts, new records, and elections.
+              </p>
+              <div className="mt-6 grid gap-3 sm:grid-cols-2">
+                {returnHooks.map((hook) => (
+                  <div key={hook.trigger} className="rounded-2xl border border-slate-200 bg-slate-50 p-5">
+                    <p className="text-xs font-black uppercase tracking-wide text-red-700">{hook.trigger}</p>
+                    <p className="mt-2 text-sm font-semibold leading-6 text-slate-700">{hook.promise}</p>
+                  </div>
+                ))}
+              </div>
+            </div>
+            <div className="rounded-3xl border border-slate-200 bg-slate-950 p-5 text-white shadow-xl shadow-blue-950/15">
+              <p className="text-xs font-black uppercase tracking-[0.18em] text-amber-300">Share lines that spread</p>
+              <h3 className="mt-2 text-3xl font-black leading-tight">
+                Give people words they can use without making claims they cannot prove.
+              </h3>
+              <div className="mt-5 grid gap-3">
+                {sharePrompts.map((prompt) => (
+                  <div key={prompt} className="rounded-2xl border border-white/10 bg-white/10 p-4">
+                    <p className="text-sm font-black leading-6 text-white">&quot;{prompt}&quot;</p>
+                  </div>
+                ))}
+              </div>
+              <Link
+                href="/methodology"
+                className="mt-5 inline-flex rounded-xl bg-white px-5 py-3 text-sm font-black uppercase tracking-wide text-blue-950 transition hover:-translate-y-0.5 hover:bg-blue-50"
+              >
+                Check the rules
+              </Link>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Attention Loop */}
+      <section className="border-b border-blue-100 bg-slate-950 text-white">
+        <div className="mx-auto grid max-w-7xl gap-6 px-4 py-12 sm:px-6 lg:grid-cols-[0.88fr_1.12fr] lg:px-8">
+          <div>
+            <p className="text-xs font-black uppercase tracking-wide text-red-300">Retention engine</p>
             <h2 className="mt-2 text-3xl font-black leading-tight sm:text-5xl">
-              Give people useful political tools before asking them for money.
+              Attention compounds when people have a reason to come back.
             </h2>
             <p className="mt-4 max-w-2xl text-sm font-semibold leading-6 text-slate-300">
-              Create an account and get the member office: watch lists, accountability packets,
-              public-records request drafts, timeline starters, source tracking, signal map, and Faretta AI.
-              The goal is simple: make RepWatchr useful enough that people come back.
+              The homepage gets the click. The member office keeps the person. Give
+              citizens watchlists, source tracking, public-records drafts, timeline
+              starters, and safer share copy so RepWatchr becomes their repeat
+              accountability habit.
             </p>
             <div className="mt-5 flex flex-wrap gap-3">
               <Link
                 href="/create-account"
-                className="rounded-xl bg-white px-5 py-3 text-sm font-black text-blue-950 shadow-sm transition hover:-translate-y-0.5 hover:bg-blue-50"
+                className="rounded-xl bg-white px-5 py-3 text-sm font-black uppercase tracking-wide text-blue-950 shadow-sm transition hover:-translate-y-0.5 hover:bg-blue-50"
               >
-                Start Free
+                Join free
               </Link>
               <Link
-                href="/dashboard"
-                className="rounded-xl border border-white/20 px-5 py-3 text-sm font-black text-white transition hover:-translate-y-0.5 hover:bg-white/10"
+                href="/officials"
+                className="rounded-xl border border-white/20 px-5 py-3 text-sm font-black uppercase tracking-wide text-white transition hover:-translate-y-0.5 hover:bg-white/10"
               >
-                Open Member Office
+                Search first
               </Link>
             </div>
           </div>
 
           <div className="grid gap-3 sm:grid-cols-2">
             <div className="rounded-2xl border border-amber-300/30 bg-amber-300 p-5 text-slate-950">
-              <p className="text-xs font-black uppercase tracking-wide">Founder window</p>
-              <p className="mt-2 text-4xl font-black">90 days</p>
+              <p className="text-xs font-black uppercase tracking-wide">The ATTENTION formula</p>
+              <p className="mt-2 text-4xl font-black">4 moves</p>
               <p className="mt-2 text-sm font-bold leading-6">
-                Free buildout period. No price wall until the tools become part of people&apos;s regular research habit.
+                Search the name. Grade the record. Add the source. Share the profile.
+                That is the loop every page should push.
               </p>
             </div>
             {memberFunnelTools.map((tool) => (
@@ -404,10 +739,10 @@ export default function HomePage() {
       <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
         <div className="text-center mb-10">
           <h2 className="text-3xl font-extrabold text-gray-900">
-            Browse by Government Level
+            Choose the battlefield
           </h2>
           <p className="text-gray-500 mt-2">
-            From Congress to school boards, Texas is loaded first and every state follows the same source-backed model.
+            People do not share categories. They share names, boards, votes, red flags, and receipts.
           </p>
         </div>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-4">
@@ -422,7 +757,7 @@ export default function HomePage() {
               </h3>
               <p className="text-sm text-gray-500 mt-2">{card.description}</p>
               <span className="inline-block mt-4 text-xs font-semibold text-blue-600 group-hover:translate-x-1 transition-transform">
-                View Officials &rarr;
+                Open records &rarr;
               </span>
             </Link>
           ))}
@@ -434,10 +769,10 @@ export default function HomePage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
           <div className="text-center mb-10">
             <h2 className="text-3xl font-extrabold text-gray-900">
-              Scored on Public Issues
+              Score what people already argue about
             </h2>
             <p className="text-gray-500 mt-2">
-              Every score links back to a specific vote. Texas issue categories are the first live scoring set.
+              Turn hot-button issues into traceable votes, source links, and scorecards people can inspect.
             </p>
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-4">
@@ -474,17 +809,17 @@ export default function HomePage() {
         <div className="flex items-end justify-between mb-8">
           <div>
             <h2 className="text-3xl font-extrabold text-gray-900">
-              Featured Officials
+              Faces move faster than folders
             </h2>
             <p className="text-gray-500 mt-1">
-              Federal and state representatives
+              Open a name, inspect the record, then share the profile.
             </p>
           </div>
           <Link
             href="/officials"
             className="text-blue-600 hover:text-blue-800 text-sm font-bold"
           >
-            View All &rarr;
+            Find a rep &rarr;
           </Link>
         </div>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
@@ -505,17 +840,17 @@ export default function HomePage() {
             <div className="flex items-end justify-between mb-8">
               <div>
                 <h2 className="text-3xl font-extrabold text-gray-900">
-                  Latest News
+                  New records and accountability signals
                 </h2>
                 <p className="text-gray-500 mt-1">
-                  Breaking stories and accountability reports
+                  Updates should point people back into profiles, source trails, and action.
                 </p>
               </div>
               <Link
                 href="/news"
                 className="text-blue-600 hover:text-blue-800 text-sm font-bold"
               >
-                All News &rarr;
+                Open News &rarr;
               </Link>
             </div>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
@@ -558,6 +893,15 @@ export default function HomePage() {
       {/* CTA Cards */}
       <section className="border-y border-blue-100 bg-[#f4f8ff]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+          <div className="mb-8 max-w-3xl">
+            <p className="text-xs font-black uppercase tracking-[0.18em] text-red-700">Attention that survives scrutiny</p>
+            <h2 className="mt-2 text-3xl font-black leading-tight text-blue-950">
+              The loudest page should still be the safest page.
+            </h2>
+            <p className="mt-2 text-sm font-semibold leading-6 text-blue-950/70">
+              RepWatchr can hit hard without getting sloppy: funding, red flags, and scoring all need a visible receipt trail.
+            </p>
+          </div>
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">
             <Link
               href="/funding"
@@ -567,8 +911,8 @@ export default function HomePage() {
                 Who Funds Them?
               </h3>
               <p className="text-blue-950/70 text-sm leading-relaxed mb-4">
-                Follow the money. See who is funding your elected officials and
-                where their campaign dollars come from.
+                Follow the money and give people a shareable reason to ask who
+                benefits from the decision.
               </p>
               <span className="text-blue-700 text-sm font-bold group-hover:translate-x-1 inline-block transition-transform">
                 View Funding Data &rarr;
@@ -582,8 +926,8 @@ export default function HomePage() {
                 Red Flags
               </h3>
               <p className="text-blue-950/70 text-sm leading-relaxed mb-4">
-                Conflicts of interest, broken promises, and issues voters should
-                know about but may have missed.
+                Conflicts, promises, and source-backed issues voters can open
+                before they walk into a meeting.
               </p>
               <span className="text-red-700 text-sm font-bold group-hover:translate-x-1 inline-block transition-transform">
                 View Red Flags &rarr;
@@ -597,8 +941,8 @@ export default function HomePage() {
                 How We Score
               </h3>
               <p className="text-blue-950/70 text-sm leading-relaxed mb-4">
-                Every score is traceable to specific votes. Transparent
-                methodology focused on state-specific public interests.
+                Every public score needs to survive a hostile read. Show how the
+                record was weighed.
               </p>
               <span className="text-emerald-700 text-sm font-bold group-hover:translate-x-1 inline-block transition-transform">
                 View Methodology &rarr;
@@ -613,28 +957,51 @@ export default function HomePage() {
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-16 text-center">
           <div className="mx-auto mb-6 h-1.5 max-w-xs rounded-full bg-[linear-gradient(90deg,#bf0d3e_0%,#bf0d3e_35%,#ffffff_35%,#ffffff_65%,#002868_65%,#002868_100%)] shadow-sm" />
           <h2 className="text-3xl font-extrabold text-blue-950 mb-4">
-            Your Voice Matters
+            Do not just watch the record. Move it.
           </h2>
           <p className="text-blue-950/70 text-lg mb-8 max-w-2xl mx-auto">
-            Sign up, verify where voter verification is live, and start tracking
-            officials. Texas verification is first; the national map builds state by state.
+            Search a profile, grade what you see, send the missing source, and
+            share the page with people who need to open it before the next vote.
           </p>
           <div className="flex flex-wrap gap-4 justify-center">
             <Link
-              href="/auth/signup"
+              href="/create-account"
               className="rounded-xl bg-blue-900 px-8 py-3.5 text-sm font-bold text-white shadow-lg hover:shadow-xl transition-all hover:-translate-y-0.5 hover:bg-red-700"
             >
-              Create Free Account
+              Join Free
             </Link>
             <Link
-              href="/methodology"
+              href="/officials"
               className="rounded-xl border-2 border-red-200 px-8 py-3.5 text-sm font-bold text-red-700 hover:bg-red-50 transition-all"
             >
-              Learn More
+              Find Officials
             </Link>
           </div>
         </div>
       </section>
+
+      <div className="fixed inset-x-0 bottom-0 z-40 border-t border-slate-200 bg-white/95 px-3 py-2 shadow-2xl shadow-blue-950/20 backdrop-blur md:hidden">
+        <div className="mx-auto grid max-w-md grid-cols-3 gap-2">
+          <Link
+            href="/officials"
+            className="rounded-xl bg-red-700 px-3 py-3 text-center text-[11px] font-black uppercase tracking-wide text-white"
+          >
+            Find
+          </Link>
+          <Link
+            href="/feedback"
+            className="rounded-xl border border-amber-200 bg-amber-50 px-3 py-3 text-center text-[11px] font-black uppercase tracking-wide text-amber-950"
+          >
+            Source
+          </Link>
+          <Link
+            href="/create-account"
+            className="rounded-xl bg-blue-950 px-3 py-3 text-center text-[11px] font-black uppercase tracking-wide text-white"
+          >
+            Watch
+          </Link>
+        </div>
+      </div>
     </div>
   );
 }

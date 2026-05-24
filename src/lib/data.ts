@@ -502,6 +502,12 @@ export function getRepWatchrDataStats() {
       newsSourceUrls.add(article.sourceUrl);
       publicSourceUrls.add(article.sourceUrl);
     }
+    article.sourceLinks?.forEach((source) => {
+      if (source.url) {
+        newsSourceUrls.add(source.url);
+        publicSourceUrls.add(source.url);
+      }
+    });
   });
   publicPowerProfiles.forEach((profile) => {
     profile.sourceLinks.forEach((source) => {

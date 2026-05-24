@@ -1,8 +1,8 @@
 @import "tailwindcss";
 
 :root {
-  --background: #06172f;
-  --foreground: #f8fbff;
+  --background: #f6f9fc;
+  --foreground: #0f172a;
   --rw-navy: #06172f;
   --rw-navy-2: #0b2a55;
   --rw-blue: #1d4ed8;
@@ -23,11 +23,9 @@
 
 body {
   background:
-    linear-gradient(90deg, rgba(255,255,255,0.06) 1px, transparent 1px),
-    linear-gradient(180deg, rgba(255,255,255,0.04) 1px, transparent 1px),
-    radial-gradient(circle at 8% 12%, rgba(191,13,62,0.28), transparent 24rem),
-    radial-gradient(circle at 92% 6%, rgba(29,78,216,0.28), transparent 26rem),
-    linear-gradient(135deg, #06172f 0%, #0b2a55 42%, #7f1d1d 100%);
+    linear-gradient(180deg, rgba(255,255,255,0.96) 0%, rgba(246,249,252,0.92) 44%, rgba(255,253,248,0.96) 100%),
+    linear-gradient(90deg, rgba(180,35,24,0.05) 0%, transparent 30%, rgba(29,78,216,0.06) 72%, transparent 100%),
+    #f6f9fc;
   background-attachment: fixed;
   color: var(--foreground);
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
@@ -41,51 +39,44 @@ body::before {
   inset: 0;
   pointer-events: none;
   z-index: -1;
-  background-image:
-    radial-gradient(circle, rgba(255,255,255,0.42) 0 1px, transparent 1.5px),
-    linear-gradient(135deg, rgba(214,179,90,0.12), transparent 40%);
-  background-position: 0 0, 0 0;
-  background-size: 54px 54px, 100% 100%;
-  opacity: 0.45;
-}
-
-main > .bg-slate-100,
-main > .bg-slate-50,
-main > .bg-gray-50,
-main > .bg-white {
-  background: transparent !important;
-}
-
-.bg-white {
-  background-color: #f8fbff;
-}
-
-.bg-gray-50,
-.bg-slate-50 {
-  background-color: #eef6ff;
-}
-
-.bg-blue-50 {
-  background-color: #eaf3ff;
-}
-
-.bg-red-50 {
-  background-color: #fff0ed;
-}
-
-.bg-amber-50 {
-  background-color: #fff5d6;
+  background:
+    linear-gradient(180deg, rgba(6,23,47,0.045), transparent 15rem),
+    linear-gradient(90deg, transparent 0%, rgba(214,179,90,0.07) 48%, transparent 100%);
+  opacity: 1;
 }
 
 .rw-patriot-shell {
   min-height: 100%;
   background:
-    linear-gradient(180deg, rgba(248,251,255,0.08), transparent 18rem),
-    linear-gradient(90deg, rgba(180,35,24,0.12), transparent 28%, rgba(29,78,216,0.14) 72%, transparent);
+    linear-gradient(180deg, rgba(255,255,255,0.72), transparent 18rem),
+    linear-gradient(90deg, rgba(180,35,24,0.035), transparent 28%, rgba(29,78,216,0.04) 72%, transparent);
 }
 
 .rw-page {
-  color: #f8fbff;
+  color: #0f172a;
+}
+
+.rw-page-shell {
+  min-height: 100%;
+  color: #0f172a;
+  background:
+    linear-gradient(180deg, rgba(255,255,255,0.86) 0%, rgba(246,249,252,0.92) 44%, rgba(255,253,248,0.9) 100%),
+    linear-gradient(90deg, rgba(180,35,24,0.045) 0%, transparent 34%, rgba(29,78,216,0.055) 72%, transparent 100%),
+    #f6f9fc;
+}
+
+.rw-news-surface {
+  border-color: rgba(148, 163, 184, 0.42);
+  background: rgba(255, 255, 255, 0.92);
+  box-shadow: 0 18px 46px rgba(15, 23, 42, 0.08);
+}
+
+.rw-news-page {
+  color: #0f172a;
+  background:
+    linear-gradient(180deg, rgba(255,255,255,0.94) 0%, rgba(248,250,252,0.94) 42%, rgba(255,253,247,0.9) 100%),
+    linear-gradient(90deg, rgba(180,35,24,0.05) 0%, transparent 32%, rgba(214,179,90,0.045) 50%, transparent 66%, rgba(29,78,216,0.055) 100%),
+    #f8fafc;
 }
 
 .rw-hero-panel,

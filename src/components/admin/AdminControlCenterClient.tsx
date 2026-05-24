@@ -203,7 +203,7 @@ export default function AdminControlCenterClient() {
     : [];
 
   return (
-    <div className="bg-slate-100">
+    <div className="rw-page-shell">
       <main className="mx-auto max-w-7xl px-4 py-8 sm:px-6 lg:px-8">
         <section className="overflow-hidden rounded-2xl border border-slate-300 bg-slate-950 text-white shadow-sm">
           <div className="h-1.5 bg-[linear-gradient(90deg,#b42318_0%,#b42318_33%,#ffffff_33%,#ffffff_66%,#1d4ed8_66%,#1d4ed8_100%)]" />

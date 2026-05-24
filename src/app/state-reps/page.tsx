@@ -28,7 +28,7 @@ export default function StateRepsPage() {
     .slice(0, 8);
 
   return (
-    <div className="bg-slate-100 text-slate-950">
+    <div className="rw-page-shell text-slate-950">
       <div className="mx-auto max-w-7xl px-4 py-5 sm:px-6 lg:px-8">
         <section className="overflow-hidden rounded-lg border border-slate-300 bg-slate-950 text-white shadow-sm">
           <div className="h-1.5 bg-[linear-gradient(90deg,#c1121f_0%,#c1121f_33%,#f5f5f4_33%,#f5f5f4_66%,#1d4ed8_66%,#1d4ed8_100%)]" />

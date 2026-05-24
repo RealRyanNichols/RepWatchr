@@ -79,7 +79,7 @@ export default async function SchoolBoardsPage({
 
   if (selectedStateCode !== "TX") {
     return (
-      <div className="bg-[#eef3f8] pb-12">
+      <div className="rw-page-shell pb-12">
         <main className="mx-auto max-w-7xl px-4 py-6 sm:px-6 lg:px-8">
           {stateSelector}
           {selectedStateCode ? (
@@ -108,7 +108,7 @@ export default async function SchoolBoardsPage({
   }
 
   return (
-    <div className="bg-[#eef3f8]">
+    <div className="rw-page-shell">
       <div className="mx-auto max-w-7xl px-4 py-6 sm:px-6 lg:px-8">
         {stateSelector}
       </div>
