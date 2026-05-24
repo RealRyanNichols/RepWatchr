@@ -2,13 +2,20 @@
 // Supabase Client Configuration
 // ============================================================
 // Creates browser and server Supabase clients for auth and data.
-// Requires NEXT_PUBLIC_SUPABASE_URL and NEXT_PUBLIC_SUPABASE_ANON_KEY
-// environment variables.
+// Production requires NEXT_PUBLIC_SUPABASE_URL and NEXT_PUBLIC_SUPABASE_ANON_KEY.
+// Static/local builds use inert placeholders so public pages do not crash while
+// secrets are absent from the local shell.
 
 import { createBrowserClient } from "@supabase/ssr";
 
-const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL ?? "";
-const supabaseAnonKey = process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY ?? "";
+const fallbackSupabaseUrl = "https://placeholder.supabase.co";
+const fallbackSupabaseAnonKey = "placeholder-anon-key";
+
+const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL || fallbackSupabaseUrl;
+const supabaseAnonKey = process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY || fallbackSupabaseAnonKey;
+
+export const isSupabaseBrowserConfigured =
+  Boolean(process.env.NEXT_PUBLIC_SUPABASE_URL) && Boolean(process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY);
 
 /**
  * Create a Supabase client for use in browser/client components.
