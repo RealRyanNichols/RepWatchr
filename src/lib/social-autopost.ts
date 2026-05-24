@@ -1,0 +1,541 @@
+import { fetchDailyNewsClips, persistDailyNewsClips } from "@/lib/daily-news-clips";
+import { getDailyWireClips, type DailyWireClip } from "@/lib/daily-wire";
+import { getSupabaseAdminClient } from "@/lib/supabase-admin";
+
+type SocialPlatform = "facebook" | "x";
+type SocialPostStatus = "pending" | "posted" | "skipped" | "error";
+
+interface SocialPostLogRow {
+  id: string;
+  clip_id: string;
+  platform: SocialPlatform;
+  status: SocialPostStatus;
+}
+
+interface PlatformPostResponse {
+  platformPostId: string | null;
+  payload: unknown;
+}
+
+export interface SocialStoryCandidate {
+  clipId: string;
+  title: string;
+  summary: string;
+  sourceName: string;
+  sourceUrl: string;
+  storyUrl: string;
+  publishedAt: string | null;
+  score: number;
+}
+
+export interface SocialPostResult {
+  platform: SocialPlatform;
+  status: Exclude<SocialPostStatus, "pending">;
+  platformPostId?: string | null;
+  error?: string;
+  storyUrl: string;
+}
+
+export interface HourlySocialAutopostResult {
+  ok: boolean;
+  dryRun: boolean;
+  enabled: boolean;
+  configuredPlatforms: SocialPlatform[];
+  refreshed: {
+    sourceCount: number;
+    clipsFound: number;
+    clipsInserted: number;
+    clipsSkipped: number;
+    errors: Array<{ sourceId: string; message: string }>;
+  };
+  candidate: SocialStoryCandidate | null;
+  results: SocialPostResult[];
+  skippedReason?: string;
+  error?: string;
+}
+
+const SOCIAL_POST_TABLE = "repwatchr_social_posts";
+const DEFAULT_HOURLY_SOURCE_LIMIT = 24;
+const DEFAULT_MAX_CANDIDATE_AGE_HOURS = 72;
+const HIGH_ATTENTION_TERMS = [
+  "accountability",
+  "campaign finance",
+  "charged",
+  "corruption",
+  "doge",
+  "ethics",
+  "fraud",
+  "hearing",
+  "indicted",
+  "investigation",
+  "lawsuit",
+  "oversight",
+  "public records",
+  "resigned",
+  "subpoena",
+  "tim burchett",
+  "transparency",
+  "uap",
+  "ufo",
+  "waste",
+  "whistleblower",
+];
+
+function parsePositiveInteger(value: string | undefined, fallback: number) {
+  if (!value) return fallback;
+  const parsed = Number.parseInt(value, 10);
+  return Number.isFinite(parsed) && parsed > 0 ? parsed : fallback;
+}
+
+function siteUrl() {
+  return (process.env.NEXT_PUBLIC_SITE_URL ?? process.env.SITE_URL ?? "https://www.repwatchr.com").replace(/\/+$/, "");
+}
+
+function storyUrlFor(clip: DailyWireClip) {
+  return `${siteUrl()}/daily-wire#clip-${encodeURIComponent(clip.id)}`;
+}
+
+function compactWhitespace(value: string) {
+  return value.replace(/\s+/g, " ").trim();
+}
+
+function truncate(value: string, maxLength: number) {
+  const compacted = compactWhitespace(value);
+  if (compacted.length <= maxLength) return compacted;
+  if (maxLength <= 3) return compacted.slice(0, maxLength);
+  return `${compacted.slice(0, maxLength - 3).trimEnd()}...`;
+}
+
+function clipTime(clip: DailyWireClip) {
+  const value = clip.publishedAt ?? clip.updatedAt;
+  if (!value) return 0;
+  const parsed = new Date(value).getTime();
+  return Number.isNaN(parsed) ? 0 : parsed;
+}
+
+function isFreshEnough(clip: DailyWireClip, now: Date) {
+  const maxAgeHours = parsePositiveInteger(process.env.SOCIAL_AUTOPOST_MAX_AGE_HOURS, DEFAULT_MAX_CANDIDATE_AGE_HOURS);
+  const time = clipTime(clip);
+  if (!time) return false;
+  return now.getTime() - time <= maxAgeHours * 60 * 60 * 1000;
+}
+
+function attentionScore(clip: DailyWireClip, now: Date) {
+  const text = `${clip.title} ${clip.summary} ${clip.sourceName} ${clip.matchedTerms.join(" ")}`.toLowerCase();
+  const ageHours = Math.max(0, (now.getTime() - clipTime(clip)) / (60 * 60 * 1000));
+  let score = 40;
+
+  if (clip.sourceTier === "official_record") score += 18;
+  if (clip.sourceTier === "named_news") score += 14;
+  if (clip.powerChannels.includes("officials")) score += 10;
+  if (clip.powerChannels.includes("courts")) score += 8;
+  if (clip.powerChannels.includes("money")) score += 8;
+  if (clip.powerChannels.includes("media")) score += 6;
+  score += HIGH_ATTENTION_TERMS.filter((term) => text.includes(term)).length * 7;
+  score += Math.max(0, 24 - Math.floor(ageHours));
+
+  return score;
+}
+
+function toCandidate(clip: DailyWireClip, now: Date): SocialStoryCandidate {
+  return {
+    clipId: clip.id,
+    title: clip.title,
+    summary: clip.summary,
+    sourceName: clip.sourceName,
+    sourceUrl: clip.sourceUrl,
+    storyUrl: storyUrlFor(clip),
+    publishedAt: clip.publishedAt,
+    score: attentionScore(clip, now),
+  };
+}
+
+function isEligibleClip(clip: DailyWireClip, now: Date) {
+  return (
+    clip.publicStatus === "auto_published" &&
+    clip.title.trim().length > 0 &&
+    clip.sourceUrl.startsWith("http") &&
+    isFreshEnough(clip, now)
+  );
+}
+
+function facebookMessage(clip: DailyWireClip) {
+  return [
+    "RepWatchr story lead:",
+    clip.title,
+    "",
+    `Why it matters: ${truncate(clip.summary, 520)}`,
+    "",
+    `Source: ${clip.sourceName}`,
+    `Read and share: ${storyUrlFor(clip)}`,
+  ].join("\n");
+}
+
+function xMessage(clip: DailyWireClip) {
+  const url = storyUrlFor(clip);
+  const source = truncate(clip.sourceName, 34);
+  const title = truncate(clip.title, 150);
+  const summary = truncate(clip.summary, 90);
+  let text = `RepWatchr: ${title}\n\n${summary}\n\nSource: ${source}\n${url}`;
+
+  if (text.length <= 280) return text;
+
+  text = `RepWatchr: ${truncate(clip.title, 190)}\n\nSource: ${source}\n${url}`;
+  if (text.length <= 280) return text;
+
+  const availableTitleLength = Math.max(32, 276 - url.length);
+  return `RepWatchr: ${truncate(clip.title, availableTitleLength)}\n${url}`;
+}
+
+function configuredPlatforms(): SocialPlatform[] {
+  const platforms: SocialPlatform[] = [];
+  if (process.env.FACEBOOK_PAGE_ID && process.env.FACEBOOK_PAGE_ACCESS_TOKEN) platforms.push("facebook");
+  if (process.env.X_USER_ACCESS_TOKEN) platforms.push("x");
+  return platforms;
+}
+
+function hourlySourceLimit() {
+  const rawValue = process.env.SOCIAL_AUTOPOST_SOURCE_LIMIT;
+  if (rawValue?.toLowerCase() === "all") return undefined;
+  return parsePositiveInteger(rawValue, DEFAULT_HOURLY_SOURCE_LIMIT);
+}
+
+async function readResponsePayload(response: Response) {
+  const text = await response.text();
+  if (!text) return null;
+
+  try {
+    return JSON.parse(text) as unknown;
+  } catch {
+    return text;
+  }
+}
+
+function payloadError(payload: unknown) {
+  if (!payload || typeof payload !== "object") return undefined;
+  const maybeError = (payload as { error?: { message?: unknown }; detail?: unknown }).error;
+  if (maybeError?.message && typeof maybeError.message === "string") return maybeError.message;
+  const detail = (payload as { detail?: unknown }).detail;
+  return typeof detail === "string" ? detail : undefined;
+}
+
+async function postToFacebook(clip: DailyWireClip): Promise<PlatformPostResponse> {
+  const pageId = process.env.FACEBOOK_PAGE_ID;
+  const pageToken = process.env.FACEBOOK_PAGE_ACCESS_TOKEN;
+  const graphVersion = process.env.FACEBOOK_GRAPH_VERSION ?? "v24.0";
+
+  if (!pageId || !pageToken) {
+    throw new Error("Missing FACEBOOK_PAGE_ID or FACEBOOK_PAGE_ACCESS_TOKEN");
+  }
+
+  const response = await fetch(`https://graph.facebook.com/${graphVersion}/${pageId}/feed`, {
+    method: "POST",
+    headers: {
+      authorization: `Bearer ${pageToken}`,
+      "content-type": "application/x-www-form-urlencoded",
+    },
+    body: new URLSearchParams({
+      message: facebookMessage(clip),
+      link: storyUrlFor(clip),
+    }),
+  });
+  const payload = await readResponsePayload(response);
+
+  if (!response.ok) {
+    throw new Error(payloadError(payload) ?? `Facebook Graph API returned HTTP ${response.status}`);
+  }
+
+  const platformPostId = typeof (payload as { id?: unknown } | null)?.id === "string" ? (payload as { id: string }).id : null;
+  return { platformPostId, payload };
+}
+
+async function postToX(clip: DailyWireClip): Promise<PlatformPostResponse> {
+  const userToken = process.env.X_USER_ACCESS_TOKEN;
+  const apiUrl = process.env.X_POST_ENDPOINT ?? "https://api.x.com/2/tweets";
+
+  if (!userToken) {
+    throw new Error("Missing X_USER_ACCESS_TOKEN");
+  }
+
+  const response = await fetch(apiUrl, {
+    method: "POST",
+    headers: {
+      authorization: `Bearer ${userToken}`,
+      "content-type": "application/json",
+    },
+    body: JSON.stringify({ text: xMessage(clip) }),
+  });
+  const payload = await readResponsePayload(response);
+
+  if (!response.ok) {
+    throw new Error(payloadError(payload) ?? `X API returned HTTP ${response.status}`);
+  }
+
+  const data = (payload as { data?: { id?: unknown } } | null)?.data;
+  const platformPostId = typeof data?.id === "string" ? data.id : null;
+  return { platformPostId, payload };
+}
+
+function rowForPlatform(rows: SocialPostLogRow[], platform: SocialPlatform) {
+  return rows.find((row) => row.platform === platform);
+}
+
+async function loadSocialLogRows(clipIds: string[], platforms: SocialPlatform[]) {
+  const supabase = getSupabaseAdminClient();
+  if (!supabase || clipIds.length === 0 || platforms.length === 0) return { rows: [], error: null };
+
+  const { data, error } = await supabase
+    .from(SOCIAL_POST_TABLE)
+    .select("id,clip_id,platform,status")
+    .in("clip_id", clipIds)
+    .in("platform", platforms);
+
+  return {
+    rows: ((data ?? []) as SocialPostLogRow[]).filter((row) => row.clip_id && row.platform),
+    error,
+  };
+}
+
+async function assertSocialLogReady() {
+  const supabase = getSupabaseAdminClient();
+  if (!supabase) return "Missing NEXT_PUBLIC_SUPABASE_URL or SUPABASE_SERVICE_ROLE_KEY";
+
+  const { error } = await supabase.from(SOCIAL_POST_TABLE).select("id").limit(1);
+  return error?.message;
+}
+
+async function claimPlatformPost(clip: DailyWireClip, platform: SocialPlatform, message: string) {
+  const supabase = getSupabaseAdminClient();
+  if (!supabase) throw new Error("Missing Supabase admin client");
+
+  const now = new Date().toISOString();
+  const { data, error } = await supabase
+    .from(SOCIAL_POST_TABLE)
+    .insert({
+      clip_id: clip.id,
+      platform,
+      status: "pending",
+      story_title: clip.title,
+      story_url: storyUrlFor(clip),
+      source_url: clip.sourceUrl,
+      source_name: clip.sourceName,
+      published_at: clip.publishedAt,
+      message,
+      metadata: {
+        powerChannels: clip.powerChannels,
+        matchedTerms: clip.matchedTerms,
+        sourceTier: clip.sourceTier,
+      },
+      created_at: now,
+      updated_at: now,
+    })
+    .select("id")
+    .single();
+
+  if (error?.code === "23505") return null;
+  if (error) throw new Error(error.message);
+  return (data as { id?: string } | null)?.id ?? null;
+}
+
+async function updatePostLog(
+  id: string,
+  status: Exclude<SocialPostStatus, "pending">,
+  platformPostId: string | null,
+  errorMessage?: string,
+  payload?: unknown,
+) {
+  const supabase = getSupabaseAdminClient();
+  if (!supabase) return;
+
+  await supabase
+    .from(SOCIAL_POST_TABLE)
+    .update({
+      status,
+      platform_post_id: platformPostId,
+      error_message: errorMessage ?? null,
+      metadata: payload ? { response: payload } : undefined,
+      updated_at: new Date().toISOString(),
+    })
+    .eq("id", id);
+}
+
+async function postToPlatform(clip: DailyWireClip, platform: SocialPlatform): Promise<SocialPostResult> {
+  const message = platform === "facebook" ? facebookMessage(clip) : xMessage(clip);
+  const claimId = await claimPlatformPost(clip, platform, message);
+
+  if (!claimId) {
+    return {
+      platform,
+      status: "skipped",
+      error: "Already claimed or posted",
+      storyUrl: storyUrlFor(clip),
+    };
+  }
+
+  try {
+    const response = platform === "facebook" ? await postToFacebook(clip) : await postToX(clip);
+    await updatePostLog(claimId, "posted", response.platformPostId, undefined, response.payload);
+    return {
+      platform,
+      status: "posted",
+      platformPostId: response.platformPostId,
+      storyUrl: storyUrlFor(clip),
+    };
+  } catch (error) {
+    const errorMessage = error instanceof Error ? error.message : "Unknown social post error";
+    await updatePostLog(claimId, "error", null, errorMessage);
+    return {
+      platform,
+      status: "error",
+      error: errorMessage,
+      storyUrl: storyUrlFor(clip),
+    };
+  }
+}
+
+export async function runHourlySocialAutopost({ dryRun = false }: { dryRun?: boolean } = {}): Promise<HourlySocialAutopostResult> {
+  const enabled = process.env.SOCIAL_AUTOPOST_ENABLED === "true";
+  const platforms = configuredPlatforms();
+  const targetPlatforms: SocialPlatform[] = platforms.length || !dryRun ? platforms : ["facebook", "x"];
+  const now = new Date();
+  const emptyRefreshed = {
+    sourceCount: 0,
+    clipsFound: 0,
+    clipsInserted: 0,
+    clipsSkipped: 0,
+    errors: [],
+  };
+  const skippedResult = {
+    dryRun,
+    enabled,
+    configuredPlatforms: platforms,
+    refreshed: emptyRefreshed,
+    candidate: null,
+    results: [],
+  };
+
+  if (!enabled && !dryRun) {
+    return {
+      ok: true,
+      ...skippedResult,
+      skippedReason: "Autopost disabled",
+    };
+  }
+
+  if (enabled && !platforms.length && !dryRun) {
+    return {
+      ok: false,
+      ...skippedResult,
+      skippedReason: "No social platform credentials configured",
+      error: "Set Facebook and/or X platform credentials before enabling hourly autopost.",
+    };
+  }
+
+  const fetched = await fetchDailyNewsClips({ maxSources: hourlySourceLimit() });
+  const persisted = await persistDailyNewsClips(fetched.clips);
+  const refreshed = {
+    sourceCount: fetched.sourceCount,
+    clipsFound: fetched.clips.length,
+    clipsInserted: persisted.inserted,
+    clipsSkipped: persisted.skipped,
+    errors: fetched.errors,
+  };
+
+  const emptyResult = {
+    dryRun,
+    enabled,
+    configuredPlatforms: platforms,
+    refreshed,
+    candidate: null,
+    results: [],
+  };
+
+  if (!persisted.configured || persisted.error) {
+    return {
+      ok: false,
+      ...emptyResult,
+      error: persisted.error ?? "Daily news clip persistence is not configured",
+    };
+  }
+
+  const logError = await assertSocialLogReady();
+  if (logError) {
+    return {
+      ok: false,
+      ...emptyResult,
+      error: `Social post log is not ready: ${logError}`,
+    };
+  }
+
+  const wireResult = await getDailyWireClips(160);
+  if (!wireResult.configured || wireResult.error) {
+    return {
+      ok: false,
+      ...emptyResult,
+      error: wireResult.error ?? "Daily wire clips are not configured",
+    };
+  }
+
+  const eligibleClips = wireResult.clips
+    .filter((clip) => isEligibleClip(clip, now))
+    .sort((a, b) => attentionScore(b, now) - attentionScore(a, now) || clipTime(b) - clipTime(a));
+  const logRowsResult = await loadSocialLogRows(eligibleClips.map((clip) => clip.id), targetPlatforms);
+
+  if (logRowsResult.error) {
+    return {
+      ok: false,
+      ...emptyResult,
+      error: logRowsResult.error.message,
+    };
+  }
+
+  const rowsByClipId = new Map<string, SocialPostLogRow[]>();
+  for (const row of logRowsResult.rows) {
+    const rows = rowsByClipId.get(row.clip_id) ?? [];
+    rows.push(row);
+    rowsByClipId.set(row.clip_id, rows);
+  }
+
+  const selectedClip = eligibleClips.find((clip) => {
+    const rows = rowsByClipId.get(clip.id) ?? [];
+    return targetPlatforms.some((platform) => !rowForPlatform(rows, platform));
+  });
+
+  if (!selectedClip) {
+    return {
+      ok: true,
+      ...emptyResult,
+      skippedReason: "No fresh source-linked clips are waiting for the configured platforms",
+    };
+  }
+
+  const candidate = toCandidate(selectedClip, now);
+
+  if (dryRun) {
+    return {
+      ok: true,
+      ...emptyResult,
+      candidate,
+      results: targetPlatforms.map((platform) => ({
+        platform,
+        status: "skipped",
+        error: "Dry run only",
+        storyUrl: candidate.storyUrl,
+      })),
+    };
+  }
+
+  const existingRows = rowsByClipId.get(selectedClip.id) ?? [];
+  const missingPlatforms = targetPlatforms.filter((platform) => !rowForPlatform(existingRows, platform));
+  const results = await Promise.all(missingPlatforms.map((platform) => postToPlatform(selectedClip, platform)));
+  const postedCount = results.filter((result) => result.status === "posted").length;
+  const erroredCount = results.filter((result) => result.status === "error").length;
+
+  return {
+    ok: postedCount > 0 && erroredCount === 0,
+    ...emptyResult,
+    candidate,
+    results,
+    error: erroredCount ? "One or more social platforms rejected the post." : undefined,
+  };
+}

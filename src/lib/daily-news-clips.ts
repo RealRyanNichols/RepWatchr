@@ -25,6 +25,11 @@ export interface DailyNewsFetchResult {
   sourceCount: number;
 }
 
+export interface DailyNewsFetchOptions {
+  maxSources?: number;
+  sourceIds?: string[];
+}
+
 function decodeXmlEntities(value: string) {
   return value
     .replace(/<!\[CDATA\[([\s\S]*?)\]\]>/g, "$1")
@@ -124,12 +129,20 @@ async function fetchSource(source: DailyNewsWatchSource): Promise<{ clips: Daily
   }
 }
 
-export async function fetchDailyNewsClips(): Promise<DailyNewsFetchResult> {
+export async function fetchDailyNewsClips(options: DailyNewsFetchOptions = {}): Promise<DailyNewsFetchResult> {
+  const sourceIdSet = options.sourceIds?.length ? new Set(options.sourceIds) : null;
+  const selectedSources = sourceIdSet
+    ? DAILY_NEWS_WATCH_SOURCES.filter((source) => sourceIdSet.has(source.id))
+    : DAILY_NEWS_WATCH_SOURCES;
+  const sources =
+    typeof options.maxSources === "number" && options.maxSources > 0
+      ? selectedSources.slice(0, options.maxSources)
+      : selectedSources;
   const results: Array<Awaited<ReturnType<typeof fetchSource>> & { source: DailyNewsWatchSource }> = [];
   const batchSize = 8;
 
-  for (let index = 0; index < DAILY_NEWS_WATCH_SOURCES.length; index += batchSize) {
-    const batch = DAILY_NEWS_WATCH_SOURCES.slice(index, index + batchSize);
+  for (let index = 0; index < sources.length; index += batchSize) {
+    const batch = sources.slice(index, index + batchSize);
     const batchResults = await Promise.all(
       batch.map(async (source) => {
         const result = await fetchSource(source);
@@ -157,7 +170,7 @@ export async function fetchDailyNewsClips(): Promise<DailyNewsFetchResult> {
   return {
     clips: clips.slice(0, 160),
     errors,
-    sourceCount: DAILY_NEWS_WATCH_SOURCES.length,
+    sourceCount: sources.length,
   };
 }
 

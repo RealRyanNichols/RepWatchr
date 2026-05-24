@@ -116,7 +116,7 @@ function WireCard({ clip }: { clip: DailyWireClip }) {
       : "border-amber-200 bg-amber-50 text-amber-900";
 
   return (
-    <article className="rounded-2xl border border-slate-300 bg-white p-4 shadow-sm">
+    <article id={`clip-${clip.id}`} className="scroll-mt-28 rounded-2xl border border-slate-300 bg-white p-4 shadow-sm">
       <div className="flex flex-wrap items-center gap-2">
         <span className={`rounded-full border px-2.5 py-1 text-[11px] font-black uppercase tracking-wide ${statusClass}`}>
           {statusLabel}
@@ -260,7 +260,7 @@ export default async function DailyWirePage({
                 Auto-posted political attention, tied to public sources.
               </h1>
               <p className="mt-4 max-w-3xl text-base font-semibold leading-7 text-slate-700">
-                Every morning RepWatchr searches public RSS and news indexes for representatives, school boards, public safety, courts, money, elections, oversight, UAP transparency, ethics, whistleblowers, and corruption-risk signals. The wire shows the source trail first so readers can open the receipt.
+                Every hour RepWatchr can search public RSS and news indexes for representatives, school boards, public safety, courts, money, elections, oversight, UAP transparency, ethics, whistleblowers, and corruption-risk signals. The wire shows the source trail first so readers can open the receipt.
               </p>
               <div className="mt-5 flex flex-wrap gap-2">
                 <Link
@@ -307,7 +307,7 @@ export default async function DailyWirePage({
               <Metric label="Wire items" value={activeItems} />
               <Metric label="Sources watched" value={result.sourceCount} />
               <Metric label="Source-linked" value={sourceLinkedCount} />
-              <Metric label="Cron" value="Daily" />
+              <Metric label="Cron" value="Hourly" />
             </div>
           </div>
         </section>

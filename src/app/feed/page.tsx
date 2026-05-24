@@ -5,7 +5,10 @@ import CopySnippetButton from "@/components/shared/CopySnippetButton";
 import ShareButtons from "@/components/shared/ShareButtons";
 import OfficialPhotoImage, { FEATURED_OFFICIAL_PHOTO_QUALITY } from "@/components/shared/OfficialPhotoImage";
 import { getAllNews, getOfficialById, getRepWatchrDataStats } from "@/lib/data";
+import { getDailyWireClips, type DailyWireClip } from "@/lib/daily-wire";
 import type { NewsArticle, NewsPowerChannel, NewsScope, Official } from "@/types";
+
+export const dynamic = "force-dynamic";
 
 export const metadata: Metadata = {
   title: "RepWatchr Feed | Political Attention Engine",
@@ -164,6 +167,18 @@ function socialSnippet(article: NewsArticle) {
     `Receipt: ${receipt}`,
     "",
     `Open the record: https://www.repwatchr.com/news/${article.id}`,
+  ].join("\n");
+}
+
+function wireSocialSnippet(clip: DailyWireClip) {
+  return [
+    `RepWatchr live wire: ${clip.title}`,
+    "",
+    `Why it matters: ${clip.summary}`,
+    "",
+    `Receipt: ${clip.sourceName} - ${clip.sourceUrl}`,
+    "",
+    `Open the RepWatchr story lead: https://www.repwatchr.com/daily-wire#clip-${clip.id}`,
   ].join("\n");
 }
 
@@ -356,6 +371,93 @@ function FeedPostCard({ article }: { article: NewsArticle }) {
   );
 }
 
+function WireFeedPostCard({ clip }: { clip: DailyWireClip }) {
+  const snippet = wireSocialSnippet(clip);
+  const channels = clip.powerChannels.slice(0, 3);
+
+  return (
+    <article className="overflow-hidden rounded-2xl border border-slate-300 bg-white shadow-sm">
+      <div className="flex items-start justify-between gap-3 px-4 py-4 sm:px-5">
+        <div className="flex min-w-0 items-center gap-3">
+          <div className="grid h-11 w-11 shrink-0 place-items-center rounded-full bg-slate-950 text-sm font-black text-white">
+            RW
+          </div>
+          <div className="min-w-0">
+            <p className="truncate text-sm font-black text-slate-950">RepWatchr Hourly Wire</p>
+            <p className="text-xs font-bold text-slate-500">
+              {clip.publishedAt ? dateLabel(clip.publishedAt) : "Date pending"} / {scopeLabels[clip.scope]}
+            </p>
+          </div>
+        </div>
+        <div className="rounded-full bg-red-700 px-3 py-1 text-xs font-black text-white">
+          Live wire
+        </div>
+      </div>
+
+      <div className="border-y border-slate-200 bg-slate-950 px-5 py-5 text-white">
+        <p className="text-xs font-black uppercase tracking-[0.18em] text-amber-300">
+          Source-linked story lead
+        </p>
+        <h2 className="mt-3 text-2xl font-black leading-tight sm:text-3xl">
+          {clip.title}
+        </h2>
+        <p className="mt-3 text-sm font-semibold leading-6 text-slate-300 sm:text-base">
+          {clip.summary}
+        </p>
+      </div>
+
+      <div className="px-4 py-4 sm:px-5">
+        <div className="flex flex-wrap gap-2">
+          {channels.map((channel) => (
+            <span key={channel} className="rounded-full bg-amber-100 px-2.5 py-1 text-[11px] font-black uppercase tracking-wide text-amber-900">
+              {channelLabels[channel]}
+            </span>
+          ))}
+          <span className="rounded-full bg-blue-50 px-2.5 py-1 text-[11px] font-black uppercase tracking-wide text-blue-900">
+            {clip.sourceTier.replace("_", " ")}
+          </span>
+        </div>
+
+        <div className="mt-5 border-y border-slate-200 bg-slate-50 px-4 py-4">
+          <div className="flex items-center justify-between gap-3">
+            <p className="text-[11px] font-black uppercase tracking-[0.18em] text-red-700">
+              Social snippet
+            </p>
+            <CopySnippetButton text={snippet} />
+          </div>
+          <p className="mt-2 whitespace-pre-line text-sm font-bold leading-6 text-slate-800">
+            {snippet}
+          </p>
+        </div>
+
+        <div className="mt-4 flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
+          <ShareButtons
+            title={clip.title}
+            description={clip.summary}
+            path={`/daily-wire#clip-${clip.id}`}
+          />
+          <div className="flex flex-wrap gap-2">
+            <Link
+              href={`/daily-wire#clip-${clip.id}`}
+              className="rounded-xl bg-blue-950 px-4 py-2.5 text-xs font-black uppercase tracking-wide text-white transition hover:bg-red-700"
+            >
+              Open wire
+            </Link>
+            <a
+              href={clip.sourceUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="rounded-xl border border-amber-200 bg-amber-50 px-4 py-2.5 text-xs font-black uppercase tracking-wide text-amber-950 transition hover:border-red-300 hover:bg-white"
+            >
+              Open source
+            </a>
+          </div>
+        </div>
+      </div>
+    </article>
+  );
+}
+
 export default async function FeedPage({
   searchParams,
 }: {
@@ -364,6 +466,11 @@ export default async function FeedPage({
   const params = searchParams ? await searchParams : {};
   const selectedLaneParam = firstParam(params.lane);
   const selectedLane = isFeedChannel(selectedLaneParam) ? selectedLaneParam : undefined;
+  const wireResult = await getDailyWireClips(12);
+  const wireFeedClips = wireResult.clips
+    .filter((clip) => clip.publicStatus === "auto_published")
+    .filter((clip) => (selectedLane ? clip.powerChannels.includes(selectedLane) : true))
+    .slice(0, 4);
   const articles = getAllNews().slice().sort((a, b) => timeValue(b.publishedAt) - timeValue(a.publishedAt));
   const visibleArticles = selectedLane
     ? articles.filter((article) => articleChannels(article).includes(selectedLane))
@@ -478,7 +585,7 @@ export default async function FeedPage({
 
             <div className="grid grid-cols-2 gap-3">
               <Metric label="Posts" value={visibleArticles.length} />
-              <Metric label="Featured" value={featured.length} />
+              <Metric label="Live wire" value={wireFeedClips.length} />
               <Metric label="Sources" value={sourceLinked.length} />
               <Metric label="Profiles tied" value={profileLinkedCount} />
             </div>
@@ -487,10 +594,15 @@ export default async function FeedPage({
 
         <section className="mt-6 grid gap-4 lg:grid-cols-[minmax(0,1fr)_360px]">
           <div className="space-y-5">
-            {feedArticles.length ? (
-              feedArticles.slice(0, 8).map((article) => (
-                <FeedPostCard key={article.id} article={article} />
-              ))
+            {wireFeedClips.length || feedArticles.length ? (
+              <>
+                {wireFeedClips.map((clip) => (
+                  <WireFeedPostCard key={clip.id} clip={clip} />
+                ))}
+                {feedArticles.slice(0, 8).map((article) => (
+                  <FeedPostCard key={article.id} article={article} />
+                ))}
+              </>
             ) : (
               <div className="rounded-2xl border border-dashed border-slate-300 bg-white p-8 text-center">
                 <p className="text-sm font-black uppercase tracking-[0.18em] text-red-700">
@@ -518,10 +630,10 @@ export default async function FeedPage({
                 Daily Watch
               </p>
               <h2 className="mt-2 text-2xl font-black leading-tight text-slate-950">
-                New source-linked political wire every morning.
+                New source-linked political wire every hour.
               </h2>
               <p className="mt-2 text-sm font-semibold leading-6 text-slate-600">
-                Cron watches officials, oversight, UAP transparency, whistleblowers, ethics, money, courts, school boards, and public-safety signals.
+                Cron watches officials, oversight, UAP transparency, whistleblowers, ethics, money, courts, school boards, and public-safety signals, then queues one source-linked story for RepWatchr social distribution.
               </p>
               <Link
                 href="/daily-wire"
