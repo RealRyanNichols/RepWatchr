@@ -24,6 +24,7 @@ function statusClass(value: boolean): string {
 export default function IdeologyChart({ profile }: { profile: OfficialIdeologyProfile }) {
   const markerPercent = clampPercent(profile.ideologyScore);
   const hasVotePosition = profile.ideologyScore !== null;
+  const isVoteviewModel = profile.method.toLowerCase().includes("voteview");
   const buildoutItems = [
     ["Photo", profile.buildout.hasPhoto],
     ["Bio", profile.buildout.hasBio],
@@ -64,11 +65,19 @@ export default function IdeologyChart({ profile }: { profile: OfficialIdeologyPr
             aria-label={`Ideology marker: ${formatScore(profile.ideologyScore)}`}
           />
         </div>
-        <div className="mt-3 grid gap-2 text-xs font-bold text-slate-600 sm:grid-cols-3">
-          <span>{profile.leftVoteCount} left-coded vote{profile.leftVoteCount === 1 ? "" : "s"}</span>
-          <span>{profile.centerVoteCount} center/non-directional vote{profile.centerVoteCount === 1 ? "" : "s"}</span>
-          <span>{profile.rightVoteCount} right-coded vote{profile.rightVoteCount === 1 ? "" : "s"}</span>
-        </div>
+        {isVoteviewModel ? (
+          <div className="mt-3 grid gap-2 text-xs font-bold text-slate-600 sm:grid-cols-3">
+            <span>{profile.mappedVoteCount.toLocaleString()} Voteview roll calls</span>
+            <span>119th Congress model</span>
+            <span>Updated {profile.lastUpdated}</span>
+          </div>
+        ) : (
+          <div className="mt-3 grid gap-2 text-xs font-bold text-slate-600 sm:grid-cols-3">
+            <span>{profile.leftVoteCount} left-coded vote{profile.leftVoteCount === 1 ? "" : "s"}</span>
+            <span>{profile.centerVoteCount} center/non-directional vote{profile.centerVoteCount === 1 ? "" : "s"}</span>
+            <span>{profile.rightVoteCount} right-coded vote{profile.rightVoteCount === 1 ? "" : "s"}</span>
+          </div>
+        )}
       </div>
 
       <div className="mt-5 rounded-xl border border-slate-200 bg-slate-50 p-4">
@@ -80,7 +89,9 @@ export default function IdeologyChart({ profile }: { profile: OfficialIdeologyPr
             </p>
           </div>
           <p className="text-xs font-black uppercase tracking-wide text-slate-500">
-            {profile.mappedVoteCount}/{profile.totalScorecardVotes} scorecard votes mapped to the left/right axis
+            {isVoteviewModel
+              ? `${profile.mappedVoteCount.toLocaleString()} roll calls in source model`
+              : `${profile.mappedVoteCount}/${profile.totalScorecardVotes} scorecard votes mapped to the left/right axis`}
           </p>
         </div>
         <div className="mt-3 h-2 overflow-hidden rounded-full bg-white">

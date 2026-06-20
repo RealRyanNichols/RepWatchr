@@ -136,6 +136,129 @@ export default function MethodologyPage() {
 
         <section className="mb-8">
           <h2 className="text-xl font-bold text-gray-900 mb-3">
+            Left / Right Ideology Chart
+          </h2>
+          <div className="space-y-4 text-gray-700 text-sm">
+            <div className="bg-slate-50 rounded-lg p-4">
+              <h3 className="font-semibold text-gray-900 mb-2">
+                Federal Officials: Voteview First
+              </h3>
+              <p>
+                For U.S. House and U.S. Senate profiles, RepWatchr uses
+                Voteview&apos;s congressional ideology data when a current
+                Bioguide ID match exists. Voteview&apos;s first dimension is
+                scaled from -100 to +100 for the RepWatchr meter: negative is
+                left/liberal, positive is right/conservative, and center means
+                the source model is near zero.
+              </p>
+              <p className="mt-2">
+                Source:{" "}
+                <a
+                  href="https://voteview.com/data"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="font-semibold text-blue-700 hover:underline"
+                >
+                  Voteview data
+                </a>{" "}
+                and{" "}
+                <a
+                  href="https://voteview.com/articles/data_help_members"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="font-semibold text-blue-700 hover:underline"
+                >
+                  member data documentation
+                </a>
+                .
+              </p>
+            </div>
+            <div className="bg-slate-50 rounded-lg p-4">
+              <h3 className="font-semibold text-gray-900 mb-2">
+                Texas State and Local Officials
+              </h3>
+              <p>
+                State representatives, senators, school board members, county
+                officials, and city officials do not receive an automatic
+                left/right score until RepWatchr has enough source-backed
+                votes, minutes, agendas, or public records to avoid guessing.
+                Texas Legislature Online roll calls and local meeting minutes
+                are the next source lanes.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <section id="constitutional-alignment" className="mb-8 scroll-mt-24">
+          <h2 className="text-xl font-bold text-gray-900 mb-3">
+            Constitutional Alignment Meter
+          </h2>
+          <div className="space-y-4 text-gray-700 text-sm">
+            <div className="bg-emerald-50 border border-emerald-200 rounded-lg p-4">
+              <h3 className="font-semibold text-gray-900 mb-2">
+                What It Measures
+              </h3>
+              <p>
+                The constitutional meter is separate from party ideology. It
+                asks whether reviewed public votes line up with limited
+                government, individual liberty, fiscal restraint, federalism,
+                transparency, and due process. It is a civic accountability
+                signal, not a legal finding.
+              </p>
+            </div>
+            <div className="bg-gray-50 rounded-lg p-4">
+              <h3 className="font-semibold text-gray-900 mb-2">
+                What Moves the Meter
+              </h3>
+              <p>
+                Only reviewed issue rules move the score. For example, a vote
+                to extend surveillance authority can be scored against
+                individual liberty when the vote text does not show a limiting
+                civil-liberties reform. A vote against waiving budgetary
+                discipline can receive fiscal-restraint credit. Vague
+                amendments, nominations, cloture votes, and broad omnibus bills
+                stay visible but marked &quot;needs policy review&quot; until a
+                human-reviewed rule is added.
+              </p>
+            </div>
+            <div className="bg-gray-50 rounded-lg p-4">
+              <h3 className="font-semibold text-gray-900 mb-2">
+                Source Path
+              </h3>
+              <p>
+                Federal roll calls are linked to the House Clerk, Senate roll
+                call tables, and Congress.gov where available. Texas state
+                roll-call review will use Texas Legislature Online vote pages
+                and journals. Local official scoring will require meeting
+                minutes, agendas, video, or records requests before the meter
+                moves.
+              </p>
+              <div className="mt-3 flex flex-wrap gap-2 not-prose">
+                {[
+                  ["House Clerk Votes", "https://clerk.house.gov/Votes"],
+                  ["Senate Votes", "https://www.senate.gov/legislative/HowTo/how_to_votes.htm"],
+                  ["Congress.gov API", "https://api.congress.gov/"],
+                  ["Texas Vote Info", "https://capitol.texas.gov/help/findvoteinfo.aspx"],
+                  ["U.S. Constitution", "https://www.archives.gov/founding-docs/constitution-transcript"],
+                  ["Bill of Rights", "https://www.archives.gov/founding-docs/bill-of-rights/what-does-it-say"],
+                ].map(([label, href]) => (
+                  <a
+                    key={href}
+                    href={href}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="rounded-full border border-gray-200 bg-white px-3 py-1 text-xs font-bold text-blue-700 hover:bg-blue-50"
+                  >
+                    {label}
+                  </a>
+                ))}
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section className="mb-8">
+          <h2 className="text-xl font-bold text-gray-900 mb-3">
             Letter Grade Scale
           </h2>
           <div className="not-prose overflow-x-auto">

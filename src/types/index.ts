@@ -343,6 +343,67 @@ export interface OfficialIdeologyProfile {
 }
 
 // ============================================================
+// Constitutional Alignment Meter
+// ============================================================
+
+export type ConstitutionalAlignmentConfidence = "none" | "low" | "medium" | "high";
+
+export type ConstitutionalDimensionId =
+  | "individual-liberty"
+  | "limited-government"
+  | "fiscal-restraint"
+  | "federalism"
+  | "transparency-due-process";
+
+export type ConstitutionalVoteReviewStatus =
+  | "scored"
+  | "needs-policy-review"
+  | "not-scoreable";
+
+export interface ConstitutionalAlignmentDimension {
+  id: ConstitutionalDimensionId;
+  name: string;
+  description: string;
+  score: number | null;
+  scoredVoteCount: number;
+  possibleWeight: number;
+}
+
+export interface ConstitutionalAlignmentEvidence {
+  sourceId: string;
+  title: string;
+  date: string;
+  voteCast: string;
+  vote: string;
+  sourceUrl: string;
+  category: ConstitutionalDimensionId;
+  constitutionalPosition: "yea" | "nay" | "review";
+  aligned: boolean | null;
+  weight: number;
+  impact: number;
+  rationale: string;
+  reviewStatus: ConstitutionalVoteReviewStatus;
+}
+
+export interface ConstitutionalAlignmentProfile {
+  officialId: string;
+  name: string;
+  score: number | null;
+  label: string;
+  confidence: ConstitutionalAlignmentConfidence;
+  method: string;
+  basis: string;
+  totalVotesLoaded: number;
+  scoredVoteCount: number;
+  reviewVoteCount: number;
+  notScoreableVoteCount: number;
+  lastUpdated: string;
+  dimensions: ConstitutionalAlignmentDimension[];
+  evidence: ConstitutionalAlignmentEvidence[];
+  sourceLinks: SourceLink[];
+}
+
+// ============================================================
 // News / Articles
 // ============================================================
 

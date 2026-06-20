@@ -9,6 +9,7 @@ import {
   getNewsByOfficialId,
   getPublicVoteRecord,
 } from "@/lib/data";
+import { buildConstitutionalAlignmentProfile } from "@/lib/constitutional-alignment";
 import { buildFallbackIdeologyProfile, getOfficialIdeologyProfile } from "@/lib/ideology";
 import { formatLevelName, getPartyColor } from "@/lib/formatting";
 import ScoreGauge from "@/components/scores/ScoreGauge";
@@ -21,6 +22,7 @@ import VoteTimeline from "@/components/votes/VoteTimeline";
 import RedFlagCard from "@/components/shared/RedFlagCard";
 import PartyBadge from "@/components/officials/PartyBadge";
 import IdeologyChart from "@/components/officials/IdeologyChart";
+import ConstitutionalAlignmentMeter from "@/components/officials/ConstitutionalAlignmentMeter";
 import OfficialVotingSection from "@/components/voting/OfficialVotingSection";
 import GradeOfficialSection from "@/components/voting/GradeOfficialSection";
 import CommentSection from "@/components/comments/CommentSection";
@@ -115,6 +117,7 @@ export default async function OfficialProfilePage({
   const publicVoteRecord = getPublicVoteRecord(id);
   const congressTrading = getCongressTradingSnapshot(id);
   const ideologyProfile = getOfficialIdeologyProfile(id) ?? buildFallbackIdeologyProfile(official);
+  const constitutionalAlignment = publicVoteRecord ? buildConstitutionalAlignmentProfile(publicVoteRecord) : null;
   const profileOverlay = await getPublicProfileOverlay("official", id);
   const staticCompletion = buildOfficialCompletionSnapshot(official);
   const sourceLinks = official.sourceLinks ?? [];
@@ -267,8 +270,11 @@ export default async function OfficialProfilePage({
           <CongressTradingDisclosurePanel snapshot={congressTrading} />
         )}
 
-        <div className="mb-8">
+        <div className="mb-8 space-y-4">
           <IdeologyChart profile={ideologyProfile} />
+          {constitutionalAlignment ? (
+            <ConstitutionalAlignmentMeter profile={constitutionalAlignment} />
+          ) : null}
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
