@@ -3,6 +3,7 @@
 import { useState, useRef, useEffect } from "react";
 import Link from "next/link";
 import { useAuth } from "./AuthProvider";
+import { isSupabaseAuthEnabled } from "@/lib/supabase";
 
 export default function UserMenu() {
   const { user, profile, roles, loading, signOut } = useAuth();
@@ -20,6 +21,17 @@ export default function UserMenu() {
     document.addEventListener("mousedown", handleClickOutside);
     return () => document.removeEventListener("mousedown", handleClickOutside);
   }, []);
+
+  if (!isSupabaseAuthEnabled) {
+    return (
+      <Link
+        href="/elections/texas/contribute"
+        className="rounded-md bg-red-700 px-3 py-2 text-sm font-black text-white shadow-sm transition-colors hover:bg-red-600"
+      >
+        Texas Sources
+      </Link>
+    );
+  }
 
   if (loading) {
     return (

@@ -11,14 +11,14 @@ import { getOfficialById } from "@/lib/data";
 export const metadata: Metadata = {
   title: "Texas Election Races 2026 | RepWatchr",
   description:
-    "Texas-first RepWatchr election race hub for statewide races, East Texas congressional races, state legislative races, and school board watch lanes.",
+    "Texas-first RepWatchr election race hub for statewide races, East Texas races, state legislative races, school board watch lanes, and source-backed citizen contributions.",
   alternates: {
     canonical: "https://www.repwatchr.com/elections/texas",
   },
   openGraph: {
     title: "Texas Election Races 2026 | RepWatchr",
     description:
-      "The Texas-first election watchboard for big statewide races, East Texas races, officials, votes, money, source links, and share-ready records.",
+      "The Texas-first election watchboard for big statewide races, East Texas races, officials, votes, money, source links, citizen contributions, and share-ready records.",
     url: "https://www.repwatchr.com/elections/texas",
     siteName: "RepWatchr",
     type: "website",
@@ -35,7 +35,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Texas Election Races 2026 | RepWatchr",
     description:
-      "Statewide Texas races, East Texas races, officials, votes, money, source links, and share-ready election records.",
+      "Statewide Texas races, East Texas races, officials, votes, money, source links, citizen contributions, and share-ready election records.",
     images: ["/images/repwatchr-cover-america-first.png"],
   },
 };
@@ -45,6 +45,21 @@ const laneLabels: Record<TexasElectionRace["lane"], string> = {
   "east-texas": "East Texas races",
   "local-watch": "Local watch",
 };
+
+const contributionPillars = [
+  {
+    title: "Source packets always",
+    body: "Texas voters and local watchers can build clean race packets even if a live submission flow is temporarily unavailable.",
+  },
+  {
+    title: "Live review queue",
+    body: "With Supabase configured, account-based source submissions go into a private review queue before anything becomes public.",
+  },
+  {
+    title: "East Texas priority",
+    body: "Longview, Gregg County, Harrison County, Smith County, Tyler, and the surrounding districts get built first.",
+  },
+];
 
 function formatNumber(value: number) {
   return new Intl.NumberFormat("en-US").format(value);
@@ -160,20 +175,21 @@ export default function TexasElectionRacesPage() {
                 Texas officials
               </Link>
               <Link
-                href="/submit-source"
+                href="/elections/texas/contribute"
                 className="rounded-xl border border-amber-200 bg-amber-50 px-5 py-3 text-sm font-black uppercase tracking-wide text-amber-950 transition hover:-translate-y-0.5 hover:border-red-300 hover:bg-white"
               >
-                Submit race source
+                Contribute a source
               </Link>
             </div>
           </div>
 
           <div className="grid content-start gap-3 rounded-xl border border-slate-200 bg-white p-4 shadow-[0_18px_48px_rgba(15,23,42,0.10)]">
-            <div className="grid grid-cols-3 gap-3">
+            <div className="grid grid-cols-2 gap-3 sm:grid-cols-4">
               {[
                 ["Total races", races.length],
                 ["Big races", bigRaces.length],
                 ["East Texas", eastTexasRaces.length],
+                ["Local watch", localWatch.length],
               ].map(([label, value]) => (
                 <div key={label} className="rounded-lg border border-slate-200 bg-slate-50 p-4">
                   <p className="text-2xl font-black text-slate-950">{formatNumber(Number(value))}</p>
@@ -197,6 +213,43 @@ export default function TexasElectionRacesPage() {
       </section>
 
       <main className="mx-auto grid max-w-7xl gap-6 px-4 py-8 sm:px-6 lg:px-8">
+        <section className="rounded-lg border border-blue-100 bg-white p-5 shadow-[0_14px_34px_rgba(15,23,42,0.06)]">
+          <div className="grid gap-5 lg:grid-cols-[0.92fr_1.08fr] lg:items-center">
+            <div>
+              <p className="text-xs font-black uppercase tracking-[0.18em] text-red-700">Texas contributor network</p>
+              <h2 className="mt-2 text-3xl font-black leading-tight text-blue-950">
+                Let Texans help build the record without lowering the standard.
+              </h2>
+              <p className="mt-3 text-sm font-semibold leading-7 text-slate-700">
+                The Texas buildout starts with voters, local researchers, parents, county watchers,
+                and East Texas people who can point RepWatchr to filings, candidate pages, meeting
+                clips, agendas, corrections, and source-backed local issues.
+              </p>
+              <div className="mt-5 flex flex-wrap gap-3">
+                <Link
+                  href="/elections/texas/contribute"
+                  className="rounded-xl bg-red-700 px-5 py-3 text-sm font-black uppercase tracking-wide text-white transition hover:-translate-y-0.5 hover:bg-blue-950"
+                >
+                  Add Texas record
+                </Link>
+                <Link
+                  href="/elections/texas/contribute"
+                  className="rounded-xl border border-slate-300 bg-white px-5 py-3 text-sm font-black uppercase tracking-wide text-blue-950 transition hover:-translate-y-0.5 hover:border-red-300 hover:text-red-700"
+                >
+                  Open packet builder
+                </Link>
+              </div>
+            </div>
+            <div className="grid gap-3 md:grid-cols-3 lg:grid-cols-1">
+              {contributionPillars.map((pillar) => (
+                <div key={pillar.title} className="rounded-lg border border-slate-200 bg-slate-50 p-4">
+                  <h3 className="text-sm font-black text-blue-950">{pillar.title}</h3>
+                  <p className="mt-2 text-sm font-semibold leading-6 text-slate-700">{pillar.body}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
         <RaceSection kicker="Statewide attention" title="Big Texas races to watch first" races={bigRaces} />
         <RaceSection kicker="East Texas" title="East Texas congressional and state races" races={eastTexasRaces} />
         <RaceSection kicker="Local power" title="School board and local election lanes" races={localWatch} />

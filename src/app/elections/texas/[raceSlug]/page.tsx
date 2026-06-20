@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
+import TexasRacePublicContributions from "@/components/elections/TexasRacePublicContributions";
 import CopySnippetButton from "@/components/shared/CopySnippetButton";
 import ShareButtons from "@/components/shared/ShareButtons";
 import OfficialPhotoImage, { FEATURED_OFFICIAL_PHOTO_QUALITY } from "@/components/shared/OfficialPhotoImage";
@@ -230,6 +231,8 @@ export default async function TexasElectionRacePage({
           </section>
         ) : null}
 
+        <TexasRacePublicContributions raceSlug={race.slug} />
+
         <section className="mt-6 rounded-lg border border-amber-300 bg-amber-50 p-5 shadow-sm">
           <div className="flex flex-col gap-4 lg:flex-row lg:items-start lg:justify-between">
             <div>
@@ -243,10 +246,10 @@ export default async function TexasElectionRacePage({
               </p>
             </div>
             <Link
-              href="/submit-source"
+              href={`/elections/texas/contribute?race=${encodeURIComponent(race.slug)}`}
               className="shrink-0 rounded-xl bg-amber-900 px-5 py-3 text-sm font-black uppercase tracking-wide text-white transition hover:-translate-y-0.5 hover:bg-red-700"
             >
-              Submit source
+              Contribute source
             </Link>
           </div>
           <div className="mt-5 grid gap-3 md:grid-cols-2">

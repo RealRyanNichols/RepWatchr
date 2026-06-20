@@ -60,6 +60,16 @@ const texasTribuneBallot = {
   url: "https://apps.texastribune.org/features/2026/texas-march-2026-primary-ballot/",
 };
 
+const ballotpediaTexasHouse = {
+  title: "Ballotpedia: U.S. House elections in Texas, 2026",
+  url: "https://ballotpedia.org/United_States_House_of_Representatives_elections_in_Texas,_2026",
+};
+
+const texasRedistrictingDistricts = {
+  title: "Texas Legislative Council: Current Districts",
+  url: "https://redistricting.capitol.texas.gov/Current-districts",
+};
+
 export const TEXAS_ELECTION_RACES: TexasElectionRace[] = [
   {
     slug: "texas-us-senate-2026",
@@ -88,6 +98,26 @@ export const TEXAS_ELECTION_RACES: TexasElectionRace[] = [
         url: "https://ballotpedia.org/United_States_Senate_election_in_Texas,_2026",
       },
     ],
+  },
+  {
+    slug: "texas-us-house-delegation-2026",
+    title: "Texas U.S. House Delegation Races 2026",
+    shortTitle: "U.S. House",
+    office: "All 38 Texas U.S. House seats",
+    lane: "big-race",
+    region: "Texas",
+    electionDate: "November 3, 2026",
+    stage: "General election watch",
+    priority: 91,
+    summary:
+      "Every Texas U.S. House seat is on the ballot, creating 38 federal race lanes for votes, money, district promises, committee power, and local accountability.",
+    whyItMatters:
+      "House races decide federal control and give voters a direct record to inspect: roll-call votes, constituent service claims, appropriations, donor patterns, and district-level promises.",
+    geography: "All 38 Texas congressional districts",
+    officialIds: [],
+    recordFocus: ["Roll-call votes", "FEC filings", "district promises", "committee assignments", "local issue records"],
+    watchActions: ["Build district pages first for East Texas", "Use FEC and official vote sources", "Collect county questions", "Create share packets for high-attention votes"],
+    sourceLinks: [texasSosDates, texasSosOffices, ballotpediaTexasHouse, texasRedistrictingDistricts],
   },
   {
     slug: "texas-governor-2026",
@@ -172,6 +202,86 @@ export const TEXAS_ELECTION_RACES: TexasElectionRace[] = [
         url: "https://ballotpedia.org/Texas_lieutenant_gubernatorial_election,_2026",
       },
     ],
+  },
+  {
+    slug: "texas-comptroller-2026",
+    title: "Texas Comptroller Race 2026",
+    shortTitle: "Comptroller",
+    office: "Texas Comptroller of Public Accounts",
+    lane: "big-race",
+    region: "Texas",
+    electionDate: "November 3, 2026",
+    stage: "General election watch",
+    priority: 84,
+    summary:
+      "The statewide race for the office that tracks state revenue, tax administration, fiscal transparency, and the numbers behind public promises.",
+    whyItMatters:
+      "The comptroller touches state money, revenue estimates, taxes, transparency portals, and the fiscal claims campaigns use when asking voters for power.",
+    geography: "Statewide Texas",
+    officialIds: ["glenn-hegar"],
+    recordFocus: ["Revenue estimates", "tax policy", "transparency records", "state spending claims", "local fiscal impact"],
+    watchActions: ["Attach official fiscal sources", "Track candidate claims about taxes", "Explain local impact in plain English", "Build share cards around major budget claims"],
+    sourceLinks: [texasSosDates, texasSosOffices, texasTribuneBallot],
+  },
+  {
+    slug: "texas-land-commissioner-2026",
+    title: "Texas Land Commissioner Race 2026",
+    shortTitle: "Land Commissioner",
+    office: "Texas General Land Office Commissioner",
+    lane: "big-race",
+    region: "Texas",
+    electionDate: "November 3, 2026",
+    stage: "General election watch",
+    priority: 82,
+    summary:
+      "The race for land, disaster recovery, veterans homes, coastal policy, state assets, and the records behind major public land decisions.",
+    whyItMatters:
+      "The land commissioner controls a powerful office that affects disaster recovery, veterans programs, coastal communities, state land, and long-tail public money.",
+    geography: "Statewide Texas",
+    officialIds: ["dawn-buckingham"],
+    recordFocus: ["Disaster recovery", "veterans programs", "state land", "coastal policy", "contract records"],
+    watchActions: ["Track official GLO records", "Attach disaster-recovery sources", "Watch contract and land decisions", "Collect local impact reports"],
+    sourceLinks: [texasSosDates, texasSosOffices, texasTribuneBallot],
+  },
+  {
+    slug: "texas-agriculture-commissioner-2026",
+    title: "Texas Agriculture Commissioner Race 2026",
+    shortTitle: "Agriculture",
+    office: "Texas Agriculture Commissioner",
+    lane: "big-race",
+    region: "Texas",
+    electionDate: "November 3, 2026",
+    stage: "General election watch",
+    priority: 81,
+    summary:
+      "A statewide race tied to farms, rural communities, food programs, school nutrition, inspections, water pressure, and rural economic records.",
+    whyItMatters:
+      "Agriculture policy is local in Texas. Voters need a record lane that connects statewide claims to farmers, schools, rural counties, and food-program oversight.",
+    geography: "Statewide Texas",
+    officialIds: ["sid-miller"],
+    recordFocus: ["Rural policy", "food programs", "school nutrition", "inspection records", "water and farm issues"],
+    watchActions: ["Track agency actions", "Collect rural county sources", "Compare campaign claims to records", "Build East Texas rural issue packets"],
+    sourceLinks: [texasSosDates, texasSosOffices, texasTribuneBallot],
+  },
+  {
+    slug: "texas-railroad-commission-2026",
+    title: "Texas Railroad Commission Race 2026",
+    shortTitle: "Railroad Commission",
+    office: "Railroad Commissioner of Texas",
+    lane: "big-race",
+    region: "Texas",
+    electionDate: "November 3, 2026",
+    stage: "General election watch",
+    priority: 83,
+    summary:
+      "A high-impact energy race for oil, gas, pipelines, grid-adjacent issues, enforcement, environmental complaints, and industry money.",
+    whyItMatters:
+      "The Railroad Commission affects energy, landowners, local governments, enforcement decisions, and industry accountability across Texas.",
+    geography: "Statewide Texas",
+    officialIds: ["christi-craddick"],
+    recordFocus: ["Energy regulation", "industry donations", "enforcement actions", "pipeline issues", "landowner complaints"],
+    watchActions: ["Attach agency enforcement records", "Track campaign finance", "Collect county-level energy issues", "Build source-backed explainers"],
+    sourceLinks: [texasSosDates, texasSosOffices, texasTribuneBallot],
   },
   {
     slug: "texas-1st-congressional-district-2026",
@@ -417,6 +527,66 @@ export const TEXAS_ELECTION_RACES: TexasElectionRace[] = [
     recordFocus: ["House votes", "school policy", "state spending", "property taxes", "rural services"],
     watchActions: ["Track House votes", "Attach local source links", "Build side-by-side issue cards", "Collect missing records"],
     sourceLinks: [texasSosDates, texasSosOffices],
+  },
+  {
+    slug: "east-texas-county-election-watch-2026",
+    title: "East Texas County Election Watch 2026",
+    shortTitle: "County Offices",
+    office: "East Texas county offices, county election records, and ballot decisions",
+    lane: "local-watch",
+    region: "East Texas",
+    electionDate: "November 3, 2026",
+    stage: "County and local ballot watch",
+    priority: 88,
+    summary:
+      "A county-by-county watch lane for clerks, commissioners, local ballot records, turnout data, candidate filings, meeting votes, and public-money decisions.",
+    whyItMatters:
+      "County offices are where voters often feel government first. RepWatchr needs source-backed local records before county races disappear into noise.",
+    geography: "Longview, Gregg County, Harrison County, Smith County, Upshur County, Rusk County, Panola County, and surrounding East Texas counties",
+    officialIds: [],
+    recordFocus: ["County offices", "candidate filings", "meeting minutes", "local spending", "turnout and ballot records"],
+    watchActions: ["Invite county-level contributors", "Attach county election pages", "Track commissioners court votes", "Build county source packets"],
+    sourceLinks: [texasSosDates, texasSosOffices],
+  },
+  {
+    slug: "texas-judicial-races-2026",
+    title: "Texas Judicial Races 2026",
+    shortTitle: "Judicial Races",
+    office: "Texas Supreme Court, Court of Criminal Appeals, courts of appeals, and district court races",
+    lane: "local-watch",
+    region: "Texas",
+    electionDate: "November 3, 2026",
+    stage: "Judicial race watch",
+    priority: 85,
+    summary:
+      "A court-focused election lane for judicial candidates, appeals courts, district courts, public records, bar-poll context, and source-backed accountability.",
+    whyItMatters:
+      "Judicial races are powerful and often low-information. Voters need a plain-English way to inspect records, jurisdiction, public rulings, and campaign money.",
+    geography: "Statewide Texas and Texas judicial districts",
+    officialIds: [],
+    recordFocus: ["Judicial records", "court jurisdiction", "campaign finance", "public rulings", "bar and civic sources"],
+    watchActions: ["Separate rulings from allegations", "Attach court and campaign-finance sources", "Build district-level explainers", "Collect public candidate materials"],
+    sourceLinks: [texasSosDates, texasSosOffices, texasTribuneBallot],
+  },
+  {
+    slug: "texas-state-board-of-education-2026",
+    title: "Texas State Board of Education Races 2026",
+    shortTitle: "SBOE",
+    office: "Texas State Board of Education",
+    lane: "local-watch",
+    region: "Texas",
+    electionDate: "November 3, 2026",
+    stage: "Education race watch",
+    priority: 84,
+    summary:
+      "A statewide education accountability lane for curriculum power, textbook decisions, school-fund oversight, district maps, and parent-facing source packets.",
+    whyItMatters:
+      "SBOE decisions affect what families see in schools. RepWatchr should connect board races to source documents, votes, meeting clips, and district-level concerns.",
+    geography: "Texas State Board of Education districts",
+    officialIds: [],
+    recordFocus: ["Curriculum votes", "textbook decisions", "school fund oversight", "meeting clips", "district maps"],
+    watchActions: ["Track SBOE meeting records", "Attach district maps", "Collect parent-submitted sources", "Build race pages after high-attention votes"],
+    sourceLinks: [texasSosDates, texasSosOffices, texasTribuneBallot, texasRedistrictingDistricts],
   },
   {
     slug: "east-texas-school-board-watch-2026",

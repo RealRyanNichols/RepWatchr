@@ -4,6 +4,7 @@ import { getSchoolBoardStats } from "@/lib/school-board-research";
 import OfficialCard from "@/components/officials/OfficialCard";
 import FarettaSearchBox from "@/components/shared/FarettaSearchBox";
 import OfficialPhotoImage, { FEATURED_OFFICIAL_PHOTO_QUALITY } from "@/components/shared/OfficialPhotoImage";
+import { getRepWatchrServices } from "@/data/repwatchr-services";
 import type { NewsArticle, Official } from "@/types";
 
 const levelCards = [
@@ -98,9 +99,9 @@ const twoMinuteChallenge = [
     detail: "Send the agenda, clip, article, filing, meeting video, contract, or missing link.",
   },
   {
-    label: "Share one profile",
-    href: "/create-account",
-    detail: "Save the target and come back when the record changes.",
+    label: "Build one packet",
+    href: "/elections/texas/contribute",
+    detail: "Turn the source into a copyable packet that can become a story, correction, or profile update.",
   },
 ];
 
@@ -330,6 +331,7 @@ export default function HomePage() {
   const watchBoardOfficials = watchBoardSignals.slice(0, 4);
 
   const latestNews = getAllNews().slice(0, 3);
+  const serviceHighlights = getRepWatchrServices().slice(0, 3);
 
   const featuredOfficials = officials
     .filter((o) => o.level === "federal" || o.level === "state")
@@ -528,10 +530,10 @@ export default function HomePage() {
             </div>
 
             <div className="grid gap-3 sm:grid-cols-2">
-              <Link href="/create-account" className="rounded-xl border border-red-200 bg-white p-4 shadow-sm transition hover:-translate-y-0.5 hover:border-red-400 hover:bg-red-50 hover:shadow-md">
+              <Link href="/elections/texas/contribute" className="rounded-xl border border-red-200 bg-white p-4 shadow-sm transition hover:-translate-y-0.5 hover:border-red-400 hover:bg-red-50 hover:shadow-md">
                 <p className="text-xs font-black uppercase tracking-wide text-red-700">Citizen pressure</p>
-                <h3 className="mt-1 text-lg font-black text-blue-950">Grade the record</h3>
-                <p className="mt-1 text-sm font-semibold leading-5 text-slate-600">Rate the record, watch changes, and come back when new proof appears.</p>
+                <h3 className="mt-1 text-lg font-black text-blue-950">Build a source packet</h3>
+                <p className="mt-1 text-sm font-semibold leading-5 text-slate-600">Package the public source, target, dates, and missing record without waiting on accounts.</p>
               </Link>
               <Link href="/methodology" className="rounded-xl border border-blue-200 bg-white p-4 shadow-sm transition hover:-translate-y-0.5 hover:border-blue-400 hover:bg-blue-50 hover:shadow-md">
                 <p className="text-xs font-black uppercase tracking-wide text-blue-800">Trust shield</p>
@@ -619,10 +621,10 @@ export default function HomePage() {
             </p>
             <div className="mt-5 flex flex-wrap gap-3">
               <Link
-                href="/news"
+                href="/blog"
                 className="rounded-xl bg-red-700 px-5 py-3 text-sm font-black uppercase tracking-wide text-white shadow-sm transition hover:-translate-y-0.5 hover:bg-blue-950"
               >
-                Open Stories
+                Open Blog
               </Link>
               <Link
                 href="/elections"
@@ -786,6 +788,61 @@ export default function HomePage() {
         </div>
       </section>
 
+      {/* Services Funnel */}
+      <section className="border-b border-slate-200 bg-white">
+        <div className="mx-auto max-w-7xl px-4 py-14 sm:px-6 lg:px-8">
+          <div className="grid gap-8 lg:grid-cols-[0.86fr_1.14fr] lg:items-start">
+            <div>
+              <p className="text-xs font-black uppercase tracking-[0.18em] text-red-700">Free first. Paid when useful.</p>
+              <h2 className="mt-2 text-3xl font-black leading-tight text-blue-950 sm:text-5xl">
+                Turn attention into source work, research packets, and race pages.
+              </h2>
+              <p className="mt-4 max-w-3xl text-sm font-semibold leading-6 text-blue-950/70">
+                The free path captures sources while Supabase is paused. Paid services give voters,
+                campaigns, and local groups a way to request deeper public-record research without
+                turning RepWatchr into a rumor board.
+              </p>
+              <div className="mt-5 flex flex-wrap gap-3">
+                <Link
+                  href="/services"
+                  className="rounded-xl bg-red-700 px-5 py-3 text-sm font-black uppercase tracking-wide text-white shadow-sm transition hover:-translate-y-0.5 hover:bg-blue-950"
+                >
+                  View Services
+                </Link>
+                <Link
+                  href="/elections/texas/contribute"
+                  className="rounded-xl border border-amber-200 bg-amber-50 px-5 py-3 text-sm font-black uppercase tracking-wide text-amber-950 transition hover:-translate-y-0.5 hover:border-red-300 hover:bg-white"
+                >
+                  Build Free Packet
+                </Link>
+              </div>
+            </div>
+            <div className="grid gap-4 md:grid-cols-3">
+              {serviceHighlights.map((service) => (
+                <Link
+                  key={service.slug}
+                  href={`/services/${service.slug}`}
+                  className="group rounded-2xl border border-slate-200 bg-slate-50 p-5 shadow-sm transition hover:-translate-y-0.5 hover:border-red-300 hover:bg-white hover:shadow-md"
+                >
+                  <div className="flex items-center justify-between gap-3">
+                    <span className="rounded-full bg-blue-950 px-2.5 py-1 text-[11px] font-black uppercase tracking-wide text-white">
+                      {service.eyebrow}
+                    </span>
+                    <span className="text-lg font-black text-red-700">{service.priceLabel}</span>
+                  </div>
+                  <h3 className="mt-4 text-xl font-black leading-tight text-blue-950 group-hover:text-red-700">
+                    {service.name}
+                  </h3>
+                  <p className="mt-2 text-sm font-semibold leading-6 text-slate-600">
+                    {service.summary}
+                  </p>
+                </Link>
+              ))}
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Attention Loop */}
       <section className="border-b border-blue-100 bg-slate-950 text-white">
         <div className="mx-auto grid max-w-7xl gap-6 px-4 py-12 sm:px-6 lg:grid-cols-[0.88fr_1.12fr] lg:px-8">
@@ -795,17 +852,16 @@ export default function HomePage() {
               Accountability compounds when people have a reason to come back.
             </h2>
             <p className="mt-4 max-w-2xl text-sm font-semibold leading-6 text-slate-300">
-              The homepage gets the click. The member office keeps the person. Give
-              citizens watchlists, source tracking, public-records drafts, timeline
-              starters, and safer share copy so RepWatchr becomes their repeat
-              accountability habit.
+              The homepage gets the click. The source packet keeps the work moving.
+              Give citizens public-records drafts, timeline starters, source tracking,
+              and safer share copy so RepWatchr becomes their repeat accountability habit.
             </p>
             <div className="mt-5 flex flex-wrap gap-3">
               <Link
-                href="/create-account"
+                href="/elections/texas/contribute"
                 className="rounded-xl bg-white px-5 py-3 text-sm font-black uppercase tracking-wide text-blue-950 shadow-sm transition hover:-translate-y-0.5 hover:bg-blue-50"
               >
-                Join free
+                Build free packet
               </Link>
               <Link
                 href="/officials"
@@ -947,10 +1003,10 @@ export default function HomePage() {
                 </p>
               </div>
               <Link
-                href="/news"
+                href="/blog"
                 className="text-blue-600 hover:text-blue-800 text-sm font-bold"
               >
-                Open News &rarr;
+                Open Blog &rarr;
               </Link>
             </div>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
@@ -1060,15 +1116,21 @@ export default function HomePage() {
             Do not just watch the record. Move it.
           </h2>
           <p className="text-blue-950/70 text-lg mb-8 max-w-2xl mx-auto">
-            Search a profile, grade what you see, send the missing source, and
+            Search a profile, package the missing source, request deeper research, and
             share the page with people who need to open it before the next vote.
           </p>
           <div className="flex flex-wrap gap-4 justify-center">
             <Link
-              href="/create-account"
+              href="/elections/texas/contribute"
               className="rounded-xl bg-blue-900 px-8 py-3.5 text-sm font-bold text-white shadow-lg hover:shadow-xl transition-all hover:-translate-y-0.5 hover:bg-red-700"
             >
-              Join Free
+              Build Free Packet
+            </Link>
+            <Link
+              href="/services"
+              className="rounded-xl border-2 border-blue-200 px-8 py-3.5 text-sm font-bold text-blue-900 hover:bg-blue-50 transition-all"
+            >
+              View Services
             </Link>
             <Link
               href="/officials"
@@ -1095,10 +1157,10 @@ export default function HomePage() {
             Source
           </Link>
           <Link
-            href="/news"
+            href="/blog"
             className="rounded-xl bg-blue-950 px-3 py-3 text-center text-[11px] font-black uppercase tracking-wide text-white"
           >
-            Stories
+            Blog
           </Link>
         </div>
       </div>

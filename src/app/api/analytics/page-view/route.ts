@@ -57,7 +57,7 @@ export async function POST(request: Request) {
 
   const admin = getSupabaseAdminClient();
   if (!admin) {
-    return NextResponse.json({ error: "Analytics database is not configured." }, { status: 503 });
+    return new Response(null, { status: 204 });
   }
 
   const userAgent = request.headers.get("user-agent") ?? "";
@@ -72,8 +72,8 @@ export async function POST(request: Request) {
   });
 
   if (error) {
-    console.error(JSON.stringify({ level: "error", msg: "page_view_insert_failed", error: error.message }));
-    return NextResponse.json({ error: "Page view was not recorded." }, { status: 500 });
+    console.warn(JSON.stringify({ level: "warn", msg: "page_view_insert_skipped", error: error.message }));
+    return new Response(null, { status: 204 });
   }
 
   return NextResponse.json({ ok: true });

@@ -6,6 +6,7 @@ import {
   getFundingSummary,
   getIssueCategories,
 } from "@/lib/data";
+import { getRepWatchrServices } from "@/data/repwatchr-services";
 import { getTexasElectionRaces } from "@/data/texas-election-races";
 import { getSchoolBoardDistricts, getSchoolBoardDossiers } from "@/lib/school-board-research";
 import { getSchoolBoardCandidateUrl, getSchoolBoardDistrictUrl } from "@/lib/school-board-urls";
@@ -25,19 +26,19 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     "/about",
     "/elections",
     "/elections/texas",
+    "/elections/texas/contribute",
     "/officials",
     "/authority-watch",
     "/school-boards",
     "/submit-source",
-    "/create-account",
+    "/blog",
+    "/services",
     "/funding",
     "/red-flags",
     "/votes",
     "/news",
     "/issues",
     "/scorecards",
-    "/data-reports",
-    "/buildout",
     "/methodology",
     "/privacy",
     "/terms",
@@ -113,8 +114,16 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     priority: race.lane === "big-race" ? 0.82 : 0.78,
   }));
 
+  const serviceRoutes = getRepWatchrServices().map((service) => ({
+    url: `${siteUrl}/services/${service.slug}`,
+    lastModified: now,
+    changeFrequency: "monthly" as const,
+    priority: service.featured ? 0.76 : 0.7,
+  }));
+
   return [
     ...staticRoutes,
+    ...serviceRoutes,
     ...texasRaceRoutes,
     ...officialRoutes,
     ...fundingRoutes,

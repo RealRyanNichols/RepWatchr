@@ -6,27 +6,29 @@ import Link from "next/link";
 import UserMenu from "@/components/auth/UserMenu";
 
 const primaryLinks = [
-  { href: "/elections", label: "Elections" },
+  { href: "/elections/texas", label: "Texas Races" },
   { href: "/officials", label: "Officials" },
-  { href: "/authority-watch", label: "Authority Watch" },
   { href: "/school-boards", label: "School Boards" },
   { href: "/votes", label: "Votes" },
-  { href: "/red-flags", label: "Red Flags" },
-  { href: "/news", label: "Stories" },
-  { href: "/submit-source", label: "Submit Source" },
+  { href: "/blog", label: "Blog" },
+  { href: "/services", label: "Services" },
+  { href: "/elections/texas/contribute", label: "Free Packet" },
 ];
 
 const moreLinks = [
   { href: "/", label: "Home" },
-  { href: "/elections/texas", label: "Texas Races" },
-  { href: "/create-account", label: "Join Free" },
+  { href: "/elections", label: "All Elections" },
+  { href: "/submit-source", label: "Submit Source" },
+  { href: "/authority-watch", label: "Authority Watch" },
+  { href: "/public-safety", label: "Public Safety" },
   { href: "/funding", label: "Funding" },
+  { href: "/red-flags", label: "Red Flags" },
   { href: "/scorecards", label: "Scorecards" },
   { href: "/issues", label: "Issues" },
-  { href: "/data-reports", label: "Data Reports" },
+  { href: "/news", label: "Story Archive" },
+  { href: "/feed", label: "Social Feed" },
   { href: "/methodology", label: "Methodology" },
   { href: "/about", label: "About" },
-  { href: "/buildout", label: "Buildout" },
 ];
 
 export default function Header() {

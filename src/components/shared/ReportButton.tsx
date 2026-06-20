@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import { createClient } from "@/lib/supabase";
+import { createClient, isSupabaseReportsEnabled } from "@/lib/supabase";
 import { useAuth } from "@/components/auth/AuthProvider";
 
 interface ReportButtonProps {
@@ -20,6 +20,8 @@ const reportTypes = [
   { value: "other", label: "Other issue" },
 ];
 
+const reportDatabaseEnabled = isSupabaseReportsEnabled;
+
 export default function ReportButton({ officialId, pageUrl }: ReportButtonProps) {
   const { user } = useAuth();
   const [open, setOpen] = useState(false);
@@ -30,7 +32,36 @@ export default function ReportButton({ officialId, pageUrl }: ReportButtonProps)
   const [submitting, setSubmitting] = useState(false);
   const [submitted, setSubmitted] = useState(false);
   const [error, setError] = useState("");
-  const supabase = createClient();
+  const [packet, setPacket] = useState("");
+  const [copied, setCopied] = useState(false);
+  const supabase = reportDatabaseEnabled ? createClient() : null;
+
+  async function copyPacket(value: string) {
+    try {
+      await navigator.clipboard.writeText(value);
+      setCopied(true);
+    } catch {
+      setCopied(false);
+    }
+  }
+
+  function buildReportPacket() {
+    const reportLabel = reportTypes.find((type) => type.value === reportType)?.label ?? reportType;
+    return [
+      "RepWatchr Source / Correction Packet",
+      "",
+      `Page: ${pageUrl}`,
+      `Official ID: ${officialId ?? "Not supplied"}`,
+      `Type: ${reportLabel}`,
+      `Email: ${email.trim() || user?.email || "Not supplied"}`,
+      "",
+      "Description:",
+      description.trim(),
+      "",
+      "Suggested correction:",
+      correction.trim() || "Not supplied",
+    ].join("\n");
+  }
 
   async function handleSubmit(e: React.FormEvent) {
     e.preventDefault();
@@ -38,6 +69,28 @@ export default function ReportButton({ officialId, pageUrl }: ReportButtonProps)
 
     setSubmitting(true);
     setError("");
+    setPacket("");
+    setCopied(false);
+
+    if (!reportDatabaseEnabled) {
+      const nextPacket = buildReportPacket();
+      setPacket(nextPacket);
+      await copyPacket(nextPacket);
+      try {
+        window.localStorage.setItem("repwatchr.latestSourceCorrectionPacket", nextPacket);
+      } catch {
+        // Packet remains visible even when browser storage is blocked.
+      }
+      setSubmitted(true);
+      setSubmitting(false);
+      return;
+    }
+
+    if (!supabase) {
+      setError("Source reports are in packet mode because Supabase env vars are missing or the reports kill switch is off.");
+      setSubmitting(false);
+      return;
+    }
 
     const { error: insertError } = await supabase.from("reports").insert({
       user_id: user?.id ?? null,
@@ -63,11 +116,32 @@ export default function ReportButton({ officialId, pageUrl }: ReportButtonProps)
     return (
       <div className="rounded-xl border border-green-200 bg-green-50 p-4 text-center">
         <p className="text-sm font-semibold text-green-800">
-          Thank you for reporting this.
+          {reportDatabaseEnabled ? "Thank you for reporting this." : "Source packet ready."}
         </p>
         <p className="text-xs text-green-600 mt-1">
-          We&apos;ll review and correct it as soon as possible.
+          {reportDatabaseEnabled
+            ? "We'll review and correct it as soon as possible."
+            : copied
+              ? "It was copied and saved in this browser."
+              : "Copy the packet below and keep it for review."}
         </p>
+        {packet ? (
+          <textarea
+            readOnly
+            value={packet}
+            rows={8}
+            className="mt-3 w-full resize-none rounded-lg border border-green-200 bg-white px-3 py-2 text-left text-xs font-semibold leading-5 text-slate-900"
+          />
+        ) : null}
+        {packet ? (
+          <button
+            type="button"
+            onClick={() => copyPacket(packet)}
+            className="mt-2 rounded-lg bg-green-700 px-3 py-2 text-xs font-black uppercase tracking-wide text-white hover:bg-green-800"
+          >
+            {copied ? "Copied" : "Copy packet"}
+          </button>
+        ) : null}
         <button
           onClick={() => {
             setSubmitted(false);
@@ -76,6 +150,8 @@ export default function ReportButton({ officialId, pageUrl }: ReportButtonProps)
             setDescription("");
             setCorrection("");
             setEmail("");
+            setPacket("");
+            setCopied(false);
           }}
           className="mt-2 text-xs text-green-700 underline"
         >
@@ -185,12 +261,13 @@ export default function ReportButton({ officialId, pageUrl }: ReportButtonProps)
           disabled={submitting || !reportType || !description.trim()}
           className="w-full rounded-lg bg-red-600 px-4 py-2.5 text-sm font-semibold text-white transition-colors hover:bg-red-700 disabled:bg-gray-300 disabled:text-gray-500"
         >
-          {submitting ? "Submitting..." : "Submit Report"}
+          {submitting ? "Working..." : reportDatabaseEnabled ? "Submit Report" : "Build Source Packet"}
         </button>
 
         <p className="text-xs text-gray-400 text-center">
-          Reports are reviewed by the RepWatchr team and corrections are made as
-          quickly as possible.
+          {reportDatabaseEnabled
+            ? "Reports are reviewed by the RepWatchr team and corrections are made as quickly as possible."
+            : "Supabase reports are paused. This creates a copyable packet instead of writing to the database."}
         </p>
       </form>
     </div>

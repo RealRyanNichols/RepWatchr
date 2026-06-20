@@ -39,7 +39,10 @@ const requiredTables = [
   "predator_reports",
   "predator_report_evidence",
   "predator_public_notes",
+  "texas_election_contributions",
 ];
+
+const optionalTables: string[] = [];
 
 const requiredViews = [
   "approval_ratings",
@@ -122,8 +125,9 @@ export async function GET(request: NextRequest) {
     }, { status: 503 });
   }
 
-  const [tableChecks, viewChecks, xTokenResult, socialPostResult, clipResult] = await Promise.all([
+  const [tableChecks, optionalTableChecks, viewChecks, xTokenResult, socialPostResult, clipResult] = await Promise.all([
     Promise.all(requiredTables.map((table) => checkRelation(supabase, table))),
+    Promise.all(optionalTables.map((table) => checkRelation(supabase, table))),
     Promise.all(requiredViews.map((view) => checkRelation(supabase, view))),
     supabase
       .from("repwatchr_social_tokens")
@@ -156,6 +160,7 @@ export async function GET(request: NextRequest) {
     supabase: {
       configured: true,
       missingTables,
+      optionalTables: optionalTableChecks,
       missingViews,
       dailyClipCount: clipResult.count ?? null,
       socialPostCount: socialPostResult.count ?? null,

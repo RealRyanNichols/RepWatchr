@@ -16,6 +16,12 @@ const supabaseAnonKey = process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY || fallbackSup
 
 export const isSupabaseBrowserConfigured =
   Boolean(process.env.NEXT_PUBLIC_SUPABASE_URL) && Boolean(process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY);
+export const isSupabaseAuthEnabled =
+  isSupabaseBrowserConfigured && process.env.NEXT_PUBLIC_ENABLE_SUPABASE_AUTH !== "false";
+export const isSupabaseReportsEnabled =
+  isSupabaseBrowserConfigured && process.env.NEXT_PUBLIC_ENABLE_SUPABASE_REPORTS !== "false";
+export const isTexasElectionDbSubmissionsEnabled =
+  isSupabaseBrowserConfigured && process.env.NEXT_PUBLIC_TEXAS_ELECTION_DB_SUBMISSIONS !== "false";
 
 /**
  * Create a Supabase client for use in browser/client components.

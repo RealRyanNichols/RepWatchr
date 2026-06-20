@@ -14,6 +14,7 @@ export const metadata: Metadata = {
   title: "UAP Records Watch | RepWatchr",
   description:
     "Track UFO, UAP, alien-claim, congressional, declassification, and National Archives records with source-first public accountability.",
+  robots: { index: false, follow: false },
 };
 
 function sourceStatusLabel(status: UapSourceStatus) {

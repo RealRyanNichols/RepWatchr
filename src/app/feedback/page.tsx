@@ -20,7 +20,7 @@ export default function FeedbackPage() {
             Put a missing receipt in the record.
           </h1>
           <p className="mt-3 text-sm font-semibold leading-6 text-slate-700">
-            Send the agenda, clip, filing, roster, article, vote, meeting video, campaign-finance record, correction, or missing official. You do not need an account. Public-source links are what turn concern into a reusable record.
+            Build a source packet for the agenda, clip, filing, roster, article, vote, meeting video, campaign-finance record, correction, or missing official. You do not need an account. Public-source links are what turn concern into a reusable record.
           </p>
         </div>
       </section>
@@ -89,7 +89,7 @@ export default function FeedbackPage() {
               1
             </span>
             <span>
-              Your report goes directly to the RepWatchr team for review.
+              While Supabase is paused, the form creates a copyable source packet instead of writing to a database.
             </span>
           </li>
           <li className="flex gap-3">
@@ -97,8 +97,7 @@ export default function FeedbackPage() {
               2
             </span>
             <span>
-              We verify the correction against public records and official
-              sources.
+              Keep the packet with the public source URL, date, jurisdiction, and what needs to be checked.
             </span>
           </li>
           <li className="flex gap-3">
@@ -106,8 +105,7 @@ export default function FeedbackPage() {
               3
             </span>
             <span>
-              Once confirmed, the data is updated on the site or added to the
-              research queue.
+              When the review queue is active again, packets can be imported into the database-backed workflow.
             </span>
           </li>
         </ol>

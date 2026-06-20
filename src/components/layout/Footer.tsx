@@ -2,16 +2,17 @@ import Link from "next/link";
 import Image from "next/image";
 
 const quickLinks = [
-  { href: "/elections", label: "Elections" },
   { href: "/elections/texas", label: "Texas Races" },
   { href: "/officials", label: "Officials" },
-  { href: "/authority-watch", label: "Authority Watch" },
   { href: "/school-boards", label: "School Boards" },
   { href: "/votes", label: "Votes" },
+  { href: "/blog", label: "Blog" },
+  { href: "/services", label: "Services" },
+  { href: "/elections/texas/contribute", label: "Free Packet" },
+  { href: "/authority-watch", label: "Authority Watch" },
   { href: "/funding", label: "Funding" },
   { href: "/red-flags", label: "Red Flags" },
-  { href: "/news", label: "Stories" },
-  { href: "/scorecards", label: "Scorecards" },
+  { href: "/news", label: "Story Archive" },
   { href: "/methodology", label: "Methodology" },
   { href: "/submit-source", label: "Submit Source" },
 ];

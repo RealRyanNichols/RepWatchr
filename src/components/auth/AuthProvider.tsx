@@ -8,7 +8,7 @@ import {
   useState,
   type ReactNode,
 } from "react";
-import { createClient } from "@/lib/supabase";
+import { createClient, isSupabaseAuthEnabled } from "@/lib/supabase";
 import type { User } from "@supabase/supabase-js";
 
 interface UserProfile {
@@ -45,6 +45,22 @@ export function useAuth() {
   return useContext(AuthContext);
 }
 
+async function withTimeout<T>(task: Promise<T>, fallback: T, timeoutMs = 3500) {
+  let timer: ReturnType<typeof setTimeout> | undefined;
+  try {
+    return await Promise.race([
+      task,
+      new Promise<T>((resolve) => {
+        timer = setTimeout(() => resolve(fallback), timeoutMs);
+      }),
+    ]);
+  } catch {
+    return fallback;
+  } finally {
+    if (timer) clearTimeout(timer);
+  }
+}
+
 export default function AuthProvider({ children }: { children: ReactNode }) {
   const [user, setUser] = useState<User | null>(null);
   const [profile, setProfile] = useState<UserProfile | null>(null);
@@ -54,6 +70,19 @@ export default function AuthProvider({ children }: { children: ReactNode }) {
 
   useEffect(() => {
     let mounted = true;
+
+    if (!isSupabaseAuthEnabled) {
+      window.setTimeout(() => {
+        if (!mounted) return;
+        setUser(null);
+        setProfile(null);
+        setRoles([]);
+        setLoading(false);
+      }, 0);
+      return () => {
+        mounted = false;
+      };
+    }
 
     async function loadAccountState(currentUser: User | null) {
       if (!mounted) return;
@@ -65,17 +94,20 @@ export default function AuthProvider({ children }: { children: ReactNode }) {
         return;
       }
 
-      const [profileResult, rolesResult] = await Promise.all([
-        supabase
-          .from("profiles")
-          .select("county, district, verified")
-          .eq("user_id", currentUser.id)
-          .single(),
-        supabase
-          .from("user_roles")
-          .select("role")
-          .eq("user_id", currentUser.id),
-      ]);
+      const [profileResult, rolesResult] = await withTimeout(
+        Promise.all([
+          supabase
+            .from("profiles")
+            .select("county, district, verified")
+            .eq("user_id", currentUser.id)
+            .single(),
+          supabase
+            .from("user_roles")
+            .select("role")
+            .eq("user_id", currentUser.id),
+        ]),
+        [{ data: null }, { data: [] }]
+      );
 
       if (!mounted) return;
       setProfile((profileResult.data as UserProfile | null) ?? null);
@@ -83,9 +115,11 @@ export default function AuthProvider({ children }: { children: ReactNode }) {
     }
 
     const getSession = async () => {
-      const {
-        data: { user: currentUser },
-      } = await supabase.auth.getUser();
+      const sessionResult = await withTimeout(
+        supabase.auth.getUser(),
+        { data: { user: null }, error: null }
+      );
+      const currentUser = sessionResult.data.user;
       await loadAccountState(currentUser);
       if (!mounted) return;
       setLoading(false);

@@ -3,7 +3,7 @@
 import { useEffect, useMemo, useState } from "react";
 import Link from "next/link";
 import { useAuth } from "@/components/auth/AuthProvider";
-import { createClient } from "@/lib/supabase";
+import { createClient, isTexasElectionDbSubmissionsEnabled } from "@/lib/supabase";
 
 type ReviewStatus = "checking" | "allowed" | "denied";
 
@@ -37,6 +37,28 @@ type PendingMedia = {
   created_at: string;
 };
 
+type TexasElectionContribution = {
+  id: string;
+  race_slug: string;
+  race_title: string;
+  contribution_type: string;
+  title: string;
+  summary: string;
+  source_url: string;
+  source_label: string | null;
+  county: string | null;
+  city: string | null;
+  contact_email: string | null;
+  status: string;
+  visibility_status: string;
+  created_at: string;
+};
+
+type TexasContributionStatus = "source_check" | "accepted" | "published" | "rejected";
+type TexasContributionVisibility = "private_review" | "public_summary" | "held";
+
+const texasElectionDbSubmissionsEnabled = isTexasElectionDbSubmissionsEnabled;
+
 function fileNameFromPath(path: string) {
   return path.split("/").pop() ?? `${Date.now()}-profile-media`;
 }
@@ -47,6 +69,8 @@ export default function AdminContentReviewClient() {
   const [status, setStatus] = useState<ReviewStatus>("checking");
   const [content, setContent] = useState<PendingContent[]>([]);
   const [media, setMedia] = useState<PendingMedia[]>([]);
+  const [texasSources, setTexasSources] = useState<TexasElectionContribution[]>([]);
+  const [texasSourceNotice, setTexasSourceNotice] = useState("");
   const [notes, setNotes] = useState<Record<string, string>>({});
   const [message, setMessage] = useState("");
   const [error, setError] = useState("");
@@ -80,7 +104,7 @@ export default function AdminContentReviewClient() {
       }
 
       setStatus("allowed");
-      const [contentResult, mediaResult] = await Promise.all([
+      const [contentResult, mediaResult, texasSourceResult] = await Promise.all([
         supabase
           .from("claimed_profile_content")
           .select(
@@ -95,10 +119,29 @@ export default function AdminContentReviewClient() {
           )
           .eq("status", "pending_review")
           .order("created_at", { ascending: true }),
+        texasElectionDbSubmissionsEnabled
+          ? supabase
+              .from("texas_election_contributions")
+              .select(
+                "id, race_slug, race_title, contribution_type, title, summary, source_url, source_label, county, city, contact_email, status, visibility_status, created_at"
+              )
+              .in("status", ["needs_review", "source_check"])
+              .order("created_at", { ascending: true })
+          : Promise.resolve({ data: null, error: null }),
       ]);
 
       setContent((contentResult.data ?? []) as PendingContent[]);
       setMedia((mediaResult.data ?? []) as PendingMedia[]);
+      if (!texasElectionDbSubmissionsEnabled) {
+        setTexasSources([]);
+        setTexasSourceNotice("Texas election source queue is in packet mode because Supabase env vars are missing or the kill switch is set to false.");
+      } else if (texasSourceResult.error) {
+        setTexasSources([]);
+        setTexasSourceNotice("Texas election source queue is enabled, but the database query failed. Check the table, Data API grants, and RLS policies.");
+      } else {
+        setTexasSources((texasSourceResult.data ?? []) as TexasElectionContribution[]);
+        setTexasSourceNotice("");
+      }
     }
 
     loadReviewQueues();
@@ -203,6 +246,35 @@ export default function AdminContentReviewClient() {
     setMessage(`Media ${nextStatus}.`);
   }
 
+  async function reviewTexasSource(
+    item: TexasElectionContribution,
+    nextStatus: TexasContributionStatus,
+    nextVisibility: TexasContributionVisibility,
+  ) {
+    if (!user) return;
+    setError("");
+    setMessage("");
+
+    const { error: updateError } = await supabase
+      .from("texas_election_contributions")
+      .update({
+        status: nextStatus,
+        visibility_status: nextVisibility,
+        reviewer_notes: notes[item.id]?.trim() || null,
+        reviewed_by: user.id,
+        reviewed_at: new Date().toISOString(),
+      })
+      .eq("id", item.id);
+
+    if (updateError) {
+      setError(updateError.message);
+      return;
+    }
+
+    setTexasSources((current) => current.filter((row) => row.id !== item.id));
+    setMessage(`Texas election source marked ${nextStatus}.`);
+  }
+
   if (authLoading || status === "checking") {
     return (
       <div className="mx-auto max-w-6xl px-4 py-16">
@@ -251,6 +323,70 @@ export default function AdminContentReviewClient() {
       ) : null}
 
       <section className="grid gap-5">
+        <div>
+          <h2 className="text-xl font-black text-gray-950">
+            Texas election sources ({texasSources.length})
+          </h2>
+          {texasSourceNotice ? (
+            <div className="mt-3 rounded-2xl border border-amber-200 bg-amber-50 p-4 text-sm font-bold leading-6 text-amber-900">
+              {texasSourceNotice}
+            </div>
+          ) : null}
+          <div className="mt-3 grid gap-4">
+            {texasSources.length === 0 ? (
+              <EmptyReview label="No Texas election sources are pending review." />
+            ) : (
+              texasSources.map((item) => (
+                <article key={item.id} className="rounded-2xl border border-gray-200 bg-white p-6 shadow-sm">
+                  <div className="flex flex-wrap items-center gap-2">
+                    <span className="rounded-full bg-red-50 px-3 py-1 text-xs font-black text-red-700">
+                      {item.contribution_type.replaceAll("_", " ")}
+                    </span>
+                    <span className="rounded-full bg-blue-50 px-3 py-1 text-xs font-black text-blue-800">
+                      {item.race_title}
+                    </span>
+                    <span className="rounded-full bg-gray-100 px-3 py-1 text-xs font-black text-gray-700">
+                      {item.status}
+                    </span>
+                  </div>
+                  <h3 className="mt-4 text-lg font-black text-gray-950">{item.title}</h3>
+                  <p className="mt-2 whitespace-pre-line text-sm font-semibold leading-6 text-gray-700">
+                    {item.summary}
+                  </p>
+                  <div className="mt-4 grid gap-2 text-sm font-semibold text-gray-700 md:grid-cols-2">
+                    <a
+                      href={item.source_url}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="font-black text-blue-700 hover:text-red-700"
+                    >
+                      {item.source_label || item.source_url}
+                    </a>
+                    <p>
+                      {[item.city, item.county].filter(Boolean).join(", ") || "No local place supplied."}
+                    </p>
+                    {item.contact_email ? <p>{item.contact_email}</p> : null}
+                    <Link
+                      href={`/elections/texas/${item.race_slug}`}
+                      className="font-black text-blue-700 hover:text-red-700"
+                    >
+                      Open race page
+                    </Link>
+                  </div>
+                  <TexasSourceControls
+                    value={notes[item.id] ?? ""}
+                    onChange={(value) => setNotes((current) => ({ ...current, [item.id]: value }))}
+                    onPublish={() => reviewTexasSource(item, "published", "public_summary")}
+                    onAcceptPrivate={() => reviewTexasSource(item, "accepted", "private_review")}
+                    onSourceCheck={() => reviewTexasSource(item, "source_check", "private_review")}
+                    onReject={() => reviewTexasSource(item, "rejected", "held")}
+                  />
+                </article>
+              ))
+            )}
+          </div>
+        </div>
+
         <div>
           <h2 className="text-xl font-black text-gray-950">
             Profile text ({content.length})
@@ -400,6 +536,66 @@ function ReviewControls({
           className="rounded-xl bg-emerald-600 px-4 py-2 text-sm font-black text-white hover:bg-emerald-700"
         >
           Approve
+        </button>
+        <button
+          type="button"
+          onClick={onReject}
+          className="rounded-xl bg-red-600 px-4 py-2 text-sm font-black text-white hover:bg-red-700"
+        >
+          Reject
+        </button>
+      </div>
+    </div>
+  );
+}
+
+function TexasSourceControls({
+  value,
+  onChange,
+  onPublish,
+  onAcceptPrivate,
+  onSourceCheck,
+  onReject,
+}: {
+  value: string;
+  onChange: (value: string) => void;
+  onPublish: () => void;
+  onAcceptPrivate: () => void;
+  onSourceCheck: () => void;
+  onReject: () => void;
+}) {
+  return (
+    <div className="mt-5">
+      <label className="block">
+        <span className="text-sm font-black text-gray-700">Reviewer notes</span>
+        <textarea
+          value={value}
+          onChange={(event) => onChange(event.target.value)}
+          rows={3}
+          className="mt-1 w-full rounded-xl border border-gray-300 px-3 py-3 text-sm font-semibold leading-6 text-gray-900 focus:border-blue-500 focus:outline-none focus:ring-1 focus:ring-blue-500"
+        />
+      </label>
+      <div className="mt-3 flex flex-wrap gap-2">
+        <button
+          type="button"
+          onClick={onPublish}
+          className="rounded-xl bg-emerald-600 px-4 py-2 text-sm font-black text-white hover:bg-emerald-700"
+        >
+          Publish summary
+        </button>
+        <button
+          type="button"
+          onClick={onAcceptPrivate}
+          className="rounded-xl bg-blue-900 px-4 py-2 text-sm font-black text-white hover:bg-blue-800"
+        >
+          Accept private
+        </button>
+        <button
+          type="button"
+          onClick={onSourceCheck}
+          className="rounded-xl bg-amber-500 px-4 py-2 text-sm font-black text-amber-950 hover:bg-amber-400"
+        >
+          Source check
         </button>
         <button
           type="button"
