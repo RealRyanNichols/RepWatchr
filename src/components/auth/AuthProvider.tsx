@@ -27,6 +27,7 @@ type UserRole =
 
 type ProfileLookupResult = { data: UserProfile | null };
 type RolesLookupResult = { data: Array<{ role: UserRole }> | null };
+type UserLookupResult = { data: { user: User | null }; error: unknown | null };
 
 interface AuthContextType {
   user: User | null;
@@ -121,8 +122,11 @@ export default function AuthProvider({ children }: { children: ReactNode }) {
     }
 
     const getSession = async () => {
-      const sessionResult = await withTimeout(
-        supabase.auth.getUser(),
+      const sessionResult = await withTimeout<UserLookupResult>(
+        supabase.auth.getUser().then((result): UserLookupResult => ({
+          data: { user: result.data.user ?? null },
+          error: result.error,
+        })),
         { data: { user: null }, error: null }
       );
       const currentUser = sessionResult.data.user;
