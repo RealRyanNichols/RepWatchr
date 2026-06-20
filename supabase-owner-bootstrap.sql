@@ -34,6 +34,8 @@ create index if not exists idx_repw_operator_invites_active_email
   on public.repw_operator_invites(email)
   where is_active;
 
+create schema if not exists private;
+
 alter table public.repw_operator_invites enable row level security;
 
 drop policy if exists "Operators manage operator invites" on public.repw_operator_invites;
@@ -52,11 +54,11 @@ create policy "Invited users can read own invite"
     and lower(coalesce(auth.jwt() ->> 'email', '')) = email
   );
 
-create or replace function public.apply_repw_operator_invite()
+create or replace function private.apply_repw_operator_invite()
 returns trigger
 language plpgsql
 security definer
-set search_path = public
+set search_path = public, auth, pg_temp
 as $$
 declare
   invite_row public.repw_operator_invites%rowtype;
@@ -126,14 +128,16 @@ begin
 end;
 $$;
 
-revoke all on function public.apply_repw_operator_invite() from public;
-revoke all on function public.apply_repw_operator_invite() from anon;
-revoke all on function public.apply_repw_operator_invite() from authenticated;
+revoke all on function private.apply_repw_operator_invite() from public;
+revoke all on function private.apply_repw_operator_invite() from anon;
+revoke all on function private.apply_repw_operator_invite() from authenticated;
 
 drop trigger if exists on_auth_user_repw_operator_invite on auth.users;
 create trigger on_auth_user_repw_operator_invite
   after insert or update of email on auth.users
-  for each row execute function public.apply_repw_operator_invite();
+  for each row execute function private.apply_repw_operator_invite();
+
+drop function if exists public.apply_repw_operator_invite();
 
 grant select on public.repw_operator_invites to authenticated;
 grant insert, update, delete on public.repw_operator_invites to authenticated;
