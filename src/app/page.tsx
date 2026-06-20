@@ -7,6 +7,15 @@ import OfficialPhotoImage, { FEATURED_OFFICIAL_PHOTO_QUALITY } from "@/component
 import { getRepWatchrServices } from "@/data/repwatchr-services";
 import type { NewsArticle, Official } from "@/types";
 
+export const revalidate = 3600;
+
+type WatchBoardSignal = {
+  official: Official;
+  score?: number;
+  redFlagCount: number;
+  heat: number;
+};
+
 const levelCards = [
   {
     level: "federal",
@@ -152,6 +161,10 @@ function formatNumber(value: number) {
   return new Intl.NumberFormat("en-US").format(value);
 }
 
+function hashDateKey(value: string) {
+  return Array.from(value).reduce((total, char) => total + char.charCodeAt(0), 0);
+}
+
 function isOfficial(value: Official | undefined): value is Official {
   return Boolean(value);
 }
@@ -237,6 +250,115 @@ function WatchBoardCard({
         </p>
       </div>
     </Link>
+  );
+}
+
+function MobileWatchBoard({
+  signals,
+  prompt,
+}: {
+  signals: WatchBoardSignal[];
+  prompt: string;
+}) {
+  if (!signals.length) {
+    return null;
+  }
+
+  const [primary, ...supporting] = signals;
+
+  return (
+    <div className="mt-4 rounded-2xl border border-slate-300 bg-slate-950 p-3 text-white shadow-xl shadow-blue-950/20 lg:hidden">
+      <div className="flex items-start justify-between gap-3">
+        <div>
+          <p className="text-[10px] font-black uppercase tracking-[0.18em] text-amber-300">
+            Daily watch
+          </p>
+          <h2 className="mt-1 text-xl font-black leading-tight">
+            Open one record first.
+          </h2>
+        </div>
+        <span className="shrink-0 rounded-full bg-red-700 px-3 py-1 text-[10px] font-black uppercase tracking-wide text-white">
+          Daily hook
+        </span>
+      </div>
+
+      <Link
+        href={`/officials/${primary.official.id}`}
+        className="group mt-3 grid grid-cols-[56px_1fr_auto] items-center gap-3 rounded-xl border border-slate-300 bg-white p-2.5 text-slate-950 shadow-sm transition hover:border-red-300 hover:bg-red-50"
+      >
+        <div className="relative h-14 w-14 overflow-hidden rounded-xl border border-slate-200 bg-slate-100">
+          <OfficialPhotoImage
+            official={primary.official}
+            sizes="112px"
+            preload
+            quality={FEATURED_OFFICIAL_PHOTO_QUALITY}
+            className="object-cover transition duration-300 group-hover:scale-105"
+            fallbackClassName="grid h-full w-full place-items-center text-sm font-black text-slate-700"
+          />
+        </div>
+        <div className="min-w-0">
+          <p className="truncate text-sm font-black text-slate-950 group-hover:text-red-700">
+            {primary.official.name}
+          </p>
+          <p className="truncate text-[11px] font-bold text-slate-500">
+            {primary.official.position} / {primary.official.district ?? primary.official.jurisdiction}
+          </p>
+          <p className="mt-1 text-[11px] font-black uppercase tracking-wide text-blue-800">
+            {primary.redFlagCount} flag{primary.redFlagCount === 1 ? "" : "s"} loaded
+          </p>
+        </div>
+        <div className="text-right">
+          <p className="text-[10px] font-black uppercase tracking-wide text-slate-500">
+            Score
+          </p>
+          <p className="text-xl font-black text-red-700">
+            {typeof primary.score === "number" ? primary.score : "Open"}
+          </p>
+        </div>
+      </Link>
+
+      {supporting.length > 0 ? (
+        <div className="mt-2 grid gap-2">
+          {supporting.slice(0, 2).map(({ official, score, redFlagCount }) => (
+            <Link
+              key={official.id}
+              href={`/officials/${official.id}`}
+              className="group grid grid-cols-[40px_1fr_auto] items-center gap-2 rounded-xl border border-white/10 bg-white/10 p-2 transition hover:bg-white/15"
+            >
+              <div className="relative h-10 w-10 overflow-hidden rounded-lg border border-white/10 bg-slate-800">
+                <OfficialPhotoImage
+                  official={official}
+                  sizes="80px"
+                  quality={FEATURED_OFFICIAL_PHOTO_QUALITY}
+                  className="object-cover transition duration-300 group-hover:scale-105"
+                  fallbackClassName="grid h-full w-full place-items-center text-[10px] font-black text-white"
+                />
+              </div>
+              <div className="min-w-0">
+                <p className="truncate text-xs font-black text-white group-hover:text-amber-200">
+                  {official.name}
+                </p>
+                <p className="truncate text-[10px] font-bold text-slate-300">
+                  {redFlagCount} flags loaded
+                </p>
+              </div>
+              <span className="rounded-full bg-white px-2 py-1 text-[10px] font-black text-red-700">
+                {typeof score === "number" ? score : "Open"}
+              </span>
+            </Link>
+          ))}
+        </div>
+      ) : null}
+
+      <div className="mt-3 rounded-xl border border-white/10 bg-white/5 p-2.5">
+        <p className="text-[10px] font-black uppercase tracking-[0.18em] text-amber-300">
+          Share prompt
+        </p>
+        <p className="mt-1 text-xs font-semibold leading-5 text-slate-200">
+          {prompt}
+        </p>
+      </div>
+    </div>
   );
 }
 
@@ -329,6 +451,15 @@ export default function HomePage() {
     .sort((a, b) => b.heat - a.heat);
 
   const watchBoardOfficials = watchBoardSignals.slice(0, 4);
+  const dailySeed = hashDateKey(new Date().toISOString().slice(0, 10));
+  const dailyWatchIndex = watchBoardSignals.length > 0 ? dailySeed % watchBoardSignals.length : 0;
+  const mobileWatchSignals = watchBoardSignals.length
+    ? [
+        watchBoardSignals[dailyWatchIndex],
+        ...watchBoardSignals.filter((_, index) => index !== dailyWatchIndex).slice(0, 2),
+      ]
+    : [];
+  const dailySharePrompt = sharePrompts[dailySeed % sharePrompts.length];
 
   const latestNews = getAllNews().slice(0, 3);
   const serviceHighlights = getRepWatchrServices().slice(0, 3);
@@ -453,6 +584,7 @@ export default function HomePage() {
                 Source-backed
               </span>
             </div>
+            <MobileWatchBoard signals={mobileWatchSignals} prompt={dailySharePrompt} />
             <h1 className="mt-5 max-w-4xl text-5xl font-black leading-[0.92] tracking-tight text-blue-950 sm:text-6xl lg:text-8xl">
               Put your officials
               <span className="block text-red-700">on the record.</span>
