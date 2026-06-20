@@ -6,12 +6,6 @@ import {
   getFundingSummary,
   getIssueCategories,
 } from "@/lib/data";
-import {
-  getAttorneyWatchProfiles,
-  getMediaWatchProfiles,
-  getPublicSafetyWatchProfiles,
-} from "@/lib/power-watch";
-import { getPredatorWatchProfiles } from "@/lib/predator-watch";
 import { getSchoolBoardDistricts, getSchoolBoardDossiers } from "@/lib/school-board-research";
 import { getSchoolBoardCandidateUrl, getSchoolBoardDistrictUrl } from "@/lib/school-board-urls";
 
@@ -28,22 +22,11 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const staticRoutes: MetadataRoute.Sitemap = [
     "",
     "/about",
-    "/feed",
-    "/authors",
-    "/daily-wire",
     "/officials",
-    "/state-reps",
+    "/authority-watch",
     "/school-boards",
-    "/attorneys",
-    "/media",
-    "/public-safety",
-    "/east-texas-predator-watch",
-    "/uap",
-    "/faretta-ai",
-    "/gideon",
-    "/feedback",
+    "/submit-source",
     "/create-account",
-    "/profiles/claim",
     "/funding",
     "/red-flags",
     "/votes",
@@ -73,34 +56,6 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     url: `${siteUrl}${getSchoolBoardCandidateUrl(candidate)}`,
     lastModified: now,
     changeFrequency: "weekly" as const,
-    priority: 0.7,
-  }));
-
-  const attorneyRoutes = getAttorneyWatchProfiles().map((profile) => ({
-    url: `${siteUrl}/attorneys/${profile.slug}`,
-    lastModified: now,
-    changeFrequency: "weekly" as const,
-    priority: 0.7,
-  }));
-
-  const mediaRoutes = getMediaWatchProfiles().map((profile) => ({
-    url: `${siteUrl}/media/${profile.slug}`,
-    lastModified: now,
-    changeFrequency: "weekly" as const,
-    priority: 0.7,
-  }));
-
-  const publicSafetyRoutes = getPublicSafetyWatchProfiles().map((profile) => ({
-    url: `${siteUrl}/public-safety/${profile.slug}`,
-    lastModified: now,
-    changeFrequency: "weekly" as const,
-    priority: 0.7,
-  }));
-
-  const predatorWatchRoutes = (await getPredatorWatchProfiles()).map((profile) => ({
-    url: `${siteUrl}/east-texas-predator-watch/${profile.slug}`,
-    lastModified: now,
-    changeFrequency: "daily" as const,
     priority: 0.7,
   }));
 
@@ -158,9 +113,5 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     ...scorecardRoutes,
     ...districtRoutes,
     ...memberRoutes,
-    ...attorneyRoutes,
-    ...mediaRoutes,
-    ...publicSafetyRoutes,
-    ...predatorWatchRoutes,
   ];
 }

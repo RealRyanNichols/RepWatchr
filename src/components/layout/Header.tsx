@@ -6,29 +6,24 @@ import Link from "next/link";
 import UserMenu from "@/components/auth/UserMenu";
 
 const primaryLinks = [
-  { href: "/feed", label: "Feed" },
-  { href: "/authors", label: "Authors" },
-  { href: "/daily-wire", label: "Daily Watch" },
-  { href: "/officials", label: "Find Reps" },
+  { href: "/officials", label: "Officials" },
+  { href: "/authority-watch", label: "Authority Watch" },
   { href: "/school-boards", label: "School Boards" },
+  { href: "/votes", label: "Votes" },
   { href: "/red-flags", label: "Red Flags" },
-  { href: "/feedback", label: "Submit Source" },
+  { href: "/news", label: "Stories" },
+  { href: "/submit-source", label: "Submit Source" },
   { href: "/create-account", label: "Join Free" },
 ];
 
 const moreLinks = [
   { href: "/", label: "Home" },
-  { href: "/scorecards", label: "Scorecards" },
-  { href: "/state-reps", label: "State Reps" },
-  { href: "/votes", label: "Votes" },
   { href: "/funding", label: "Funding" },
-  { href: "/news", label: "News" },
-  { href: "/attorneys", label: "Attorney Watch" },
-  { href: "/media", label: "Media Watch" },
-  { href: "/public-safety", label: "Public Safety" },
-  { href: "/east-texas-predator-watch", label: "Predator Watch" },
-  { href: "/faretta-ai", label: "Faretta AI" },
+  { href: "/scorecards", label: "Scorecards" },
+  { href: "/issues", label: "Issues" },
+  { href: "/data-reports", label: "Data Reports" },
   { href: "/methodology", label: "Methodology" },
+  { href: "/about", label: "About" },
   { href: "/buildout", label: "Buildout" },
 ];
 

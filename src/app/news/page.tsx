@@ -5,9 +5,9 @@ import { getAllNews, getOfficialById } from "@/lib/data";
 import type { NewsArticle, NewsPowerChannel, NewsScope } from "@/types";
 
 export const metadata: Metadata = {
-  title: "Political Attention Feed | RepWatchr",
+  title: "Public Accountability Stories | RepWatchr",
   description:
-    "A source-backed political attention feed for public-accountability stories tied to officials, school boards, elections, courts, money, media, and public safety.",
+    "Source-backed public-accountability stories tied to officials, school boards, elections, courts, money, public offices, and public records.",
 };
 
 const tagColors: Record<string, string> = {
@@ -42,8 +42,6 @@ const channelOrder: NewsPowerChannel[] = [
   "officials",
   "school-boards",
   "public-safety",
-  "attorneys",
-  "media",
   "elections",
   "courts",
   "money",
@@ -77,8 +75,8 @@ function sourceLabel(article: NewsArticle) {
   return "Needs source URL";
 }
 
-function attentionLabel(article: NewsArticle) {
-  if (article.featured && article.sourceUrl) return "High attention";
+function recordLabel(article: NewsArticle) {
+  if (article.featured && article.sourceUrl) return "Source backed";
   if (article.tags.some((tag) => ["breaking", "investigation", "watchdog", "corruption"].includes(tag))) {
     return "Watch closely";
   }
@@ -126,7 +124,7 @@ function ArticleCard({ article, compact = false }: { article: NewsArticle; compa
     >
       <div className="flex flex-wrap items-center gap-2">
         <span className="rounded-full bg-red-700 px-2.5 py-1 text-[11px] font-black uppercase tracking-wide text-white">
-          {attentionLabel(article)}
+          {recordLabel(article)}
         </span>
         <span className="rounded-full bg-blue-950 px-2.5 py-1 text-[11px] font-black uppercase tracking-wide text-white">
           {scopeLabels[articleScope(article)]}
@@ -248,27 +246,27 @@ export default async function NewsPage({
           <div className="grid gap-6 lg:grid-cols-[1.12fr_0.88fr]">
             <div>
               <p className="inline-flex rounded-full bg-red-700 px-3 py-1 text-xs font-black uppercase tracking-[0.18em] text-white">
-                Political attention feed
+                Accountability stories
               </p>
               <h1 className="mt-4 max-w-4xl text-4xl font-black tracking-tight text-slate-950 sm:text-6xl">
                 Stories that put public power on the record.
               </h1>
               <p className="mt-4 max-w-3xl text-base font-semibold leading-7 text-slate-700 sm:text-lg">
-                RepWatchr news is built to grab attention without losing the evidence. Every story should connect a public claim, vote, agency, school board, court issue, money trail, or safety concern back to the people voters need to watch.
+                RepWatchr stories are built to hold interest without losing the evidence. Every story should connect a public claim, vote, agency, school board, court issue, money trail, or public-safety concern back to the people voters need to watch.
               </p>
 
               <div className="mt-5 flex flex-wrap gap-2">
                 <Link
-                  href="/feed"
+                  href="/officials"
                   className="rounded-lg bg-red-700 px-4 py-2.5 text-sm font-black text-white shadow-sm transition hover:-translate-y-0.5 hover:bg-blue-950"
                 >
-                  Open the Feed
+                  Find Officials
                 </Link>
                 <Link
-                  href="/daily-wire"
+                  href="/submit-source"
                   className="rounded-lg border border-amber-200 bg-amber-50 px-4 py-2.5 text-sm font-black text-amber-950 shadow-sm transition hover:-translate-y-0.5 hover:border-red-300 hover:bg-white"
                 >
-                  Daily Watch
+                  Submit Source
                 </Link>
                 {([
                   ["East Texas", queryFor({ scope: "east-texas" })],
@@ -291,7 +289,7 @@ export default async function NewsPage({
               <div className="rounded-lg border border-slate-200 bg-white p-4 shadow-[0_14px_34px_rgba(15,23,42,0.06)]">
                 <p className="text-2xl font-black text-slate-950">{articles.length}</p>
                 <p className="mt-1 text-xs font-black uppercase tracking-wide text-red-700">Stories loaded</p>
-                <p className="mt-2 text-xs font-semibold leading-5 text-slate-600">News records in the public feed.</p>
+                <p className="mt-2 text-xs font-semibold leading-5 text-slate-600">Story records tied back to public sources.</p>
               </div>
               <div className="rounded-lg border border-slate-200 bg-white p-4 shadow-[0_14px_34px_rgba(15,23,42,0.06)]">
                 <p className="text-2xl font-black text-slate-950">{sourceLinkedCount}</p>
@@ -305,7 +303,7 @@ export default async function NewsPage({
               </div>
               <div className="rounded-lg border border-slate-200 bg-white p-4 shadow-[0_14px_34px_rgba(15,23,42,0.06)]">
                 <p className="text-2xl font-black text-slate-950">{filtered.length || articles.length}</p>
-                <p className="mt-1 text-xs font-black uppercase tracking-wide text-red-700">Active feed</p>
+                <p className="mt-1 text-xs font-black uppercase tracking-wide text-red-700">Active view</p>
                 <p className="mt-2 text-xs font-semibold leading-5 text-slate-600">Current geo selection.</p>
               </div>
             </div>
@@ -318,7 +316,7 @@ export default async function NewsPage({
               <p className="text-xs font-black uppercase tracking-[0.18em] text-red-700">Geo preference</p>
               <h2 className="text-xl font-black text-slate-950">
                 {selectedScope || selectedState || selectedCounty || selectedCity
-                  ? "Filtered feed is active."
+                  ? "Filtered story view is active."
                   : "Pick a place. Saved-location preference comes next."}
               </h2>
               <p className="mt-1 text-sm font-semibold leading-6 text-slate-600">
@@ -346,10 +344,10 @@ export default async function NewsPage({
         <section className="mt-6 rounded-lg border border-amber-300 bg-amber-50 p-4 shadow-[0_14px_34px_rgba(120,53,15,0.08)]">
           <div className="flex flex-col gap-4 lg:flex-row lg:items-center lg:justify-between">
             <div>
-              <p className="text-xs font-black uppercase tracking-[0.18em] text-amber-800">Daily clipping system</p>
-              <h2 className="text-xl font-black text-amber-950">Breaking public-source watch runs every morning.</h2>
+              <p className="text-xs font-black uppercase tracking-[0.18em] text-amber-800">Source watch queue</p>
+              <h2 className="text-xl font-black text-amber-950">Public-source links are reviewed before they become stories.</h2>
               <p className="mt-1 max-w-4xl text-sm font-semibold leading-6 text-amber-900">
-                RepWatchr now has a daily cron queue for public RSS and news-search links. It captures source-linked wire items every morning, publishes them on the Daily Watch, and keeps review labels attached before deeper RepWatchr articles are written.
+                RepWatchr can collect public RSS and news-search links, but the public page should stay source-first: capture the link, attach review labels, then turn the strongest records into deeper RepWatchr stories.
               </p>
             </div>
             <div className="grid grid-cols-3 gap-2 text-center">
@@ -360,10 +358,10 @@ export default async function NewsPage({
           </div>
           <div className="mt-4">
             <Link
-              href="/daily-wire"
+              href="/submit-source"
               className="inline-flex rounded-lg bg-amber-900 px-4 py-2.5 text-sm font-black uppercase tracking-wide text-white transition hover:bg-red-700"
             >
-              Open Daily Watch
+              Submit Source
             </Link>
           </div>
         </section>
@@ -375,7 +373,7 @@ export default async function NewsPage({
               <h2 className="text-2xl font-black text-slate-950">What people should see first</h2>
             </div>
             <Link href="/news?scope=east-texas" className="text-sm font-black text-blue-800 hover:text-red-700">
-              East Texas feed
+              East Texas stories
             </Link>
           </div>
           <div className="grid gap-4 md:grid-cols-2 xl:grid-cols-3">
@@ -408,8 +406,8 @@ export default async function NewsPage({
 
         <section className="mt-8 rounded-lg border border-slate-200 bg-white p-5 shadow-[0_14px_34px_rgba(15,23,42,0.06)]">
           <div className="mb-4">
-            <p className="text-xs font-black uppercase tracking-[0.18em] text-red-700">Power lanes</p>
-            <h2 className="text-2xl font-black text-slate-950">Every tab gets its own news lane</h2>
+            <p className="text-xs font-black uppercase tracking-[0.18em] text-red-700">Record lanes</p>
+            <h2 className="text-2xl font-black text-slate-950">Every story should point back to a record</h2>
           </div>
           <div className="grid gap-4 md:grid-cols-2 xl:grid-cols-4">
             {channelOrder.map((channel) => {

@@ -39,7 +39,7 @@ const levelCards = [
   },
 ];
 
-const attentionLoop = [
+const recordLoop = [
   {
     step: "Search",
     title: "Find the person fast",
@@ -65,7 +65,7 @@ const attentionLoop = [
 const memberFunnelTools = [
   {
     label: "Watchlist",
-    detail: "Keep officials, boards, attorneys, agencies, and media names in one return path.",
+    detail: "Keep officials, boards, agencies, and public authority roles in one return path.",
   },
   {
     label: "Records request",
@@ -94,7 +94,7 @@ const twoMinuteChallenge = [
   },
   {
     label: "Submit one source",
-    href: "/feedback",
+    href: "/submit-source",
     detail: "Send the agenda, clip, article, filing, meeting video, contract, or missing link.",
   },
   {
@@ -129,21 +129,21 @@ const sharePrompts = [
   "Do not argue from memory. Share the receipt.",
 ];
 
-const authorActions = [
-  {
-    label: "Build a story packet",
-    href: "/authors",
-    detail: "Pick the target, add the public source, write the hook, and copy the share snippet.",
-  },
-  {
-    label: "Claim a profile path",
-    href: "/profiles/claim",
-    detail: "Help improve a public profile with offices, terms, photos, links, votes, and missing context.",
-  },
+const sourceDeskActions = [
   {
     label: "Submit the receipt",
-    href: "/feedback",
-    detail: "Send the agenda, filing, clip, article, roster, correction, or source gap for review.",
+    href: "/submit-source",
+    detail: "Send the roster, vote, agenda, filing, clip, article, correction, or missing source link.",
+  },
+  {
+    label: "Open the target",
+    href: "/officials",
+    detail: "Find the official, board, office, or public role so the source lands on the right record.",
+  },
+  {
+    label: "Check the rules",
+    href: "/methodology",
+    detail: "Keep facts, public claims, inferences, and missing proof clearly separated.",
   },
 ];
 
@@ -297,9 +297,9 @@ export default function HomePage() {
       caption: `${dataStats.nationalFederalStateCompletionPercent}% broad benchmark loaded`,
     },
     {
-      label: "Power Profiles",
+      label: "Authority Roles",
       value: formatNumber(dataStats.publicPowerProfiles),
-      caption: "attorneys, media, safety, and influence lanes",
+      caption: "public authority and influence roles",
     },
     {
       label: "Source URLs",
@@ -335,7 +335,7 @@ export default function HomePage() {
     .filter((o) => o.level === "federal" || o.level === "state")
     .slice(0, 6);
 
-  const retentionStats = [
+  const returnStats = [
     {
       label: "First move",
       value: "2 min",
@@ -416,7 +416,7 @@ export default function HomePage() {
       "@type": "HowTo",
       name: "How to use RepWatchr",
       description: "A four-step public accountability loop for voters.",
-      step: attentionLoop.map((item, index) => ({
+      step: recordLoop.map((item, index) => ({
         "@type": "HowToStep",
         position: index + 1,
         name: item.title,
@@ -442,7 +442,7 @@ export default function HomePage() {
           <div className="flex min-h-[520px] flex-col justify-center">
             <div className="flex flex-wrap items-center gap-2">
               <span className="rounded-full bg-red-700 px-3 py-1 text-xs font-black uppercase tracking-wide text-white shadow-sm">
-                ATTENTION loop live
+              Accountability loop live
               </span>
               <span className="rounded-full border border-blue-200 bg-white px-3 py-1 text-xs font-black uppercase tracking-wide text-blue-950 shadow-sm">
                 {formatNumber(dataStats.officialsWithPhotos)} faces loaded
@@ -457,8 +457,8 @@ export default function HomePage() {
             </h1>
             <p className="mt-4 max-w-3xl text-base font-semibold leading-7 text-blue-950/75 sm:text-lg">
               Search a name. Open the profile. Grade the record. Add the missing source.
-              Share the page before the meeting, election, hearing, or news cycle. Attention
-              only matters when it turns into receipts, return visits, and pressure people can repeat.
+              Share the page before the meeting, election, hearing, or news cycle. Public pressure
+              only works when it turns into receipts, return visits, and records people can repeat.
             </p>
             <div className="mt-5 max-w-2xl">
               <FarettaSearchBox compact placeholder="Search an official, school board, vote, funder, red flag, or record..." />
@@ -477,20 +477,20 @@ export default function HomePage() {
                 Open school boards
               </Link>
               <Link
-                href="/feedback"
+                href="/submit-source"
                 className="rounded-xl border border-amber-200 bg-amber-50 px-5 py-4 text-center text-sm font-black uppercase tracking-wide text-amber-950 shadow-sm transition hover:-translate-y-0.5 hover:border-amber-400 hover:bg-amber-100"
               >
                 Submit source
               </Link>
               <Link
-                href="/authors"
+                href="/submit-source"
                 className="rounded-xl border border-slate-300 bg-slate-950 px-5 py-4 text-center text-sm font-black uppercase tracking-wide text-white shadow-sm transition hover:-translate-y-0.5 hover:border-red-300 hover:bg-red-700"
               >
-                Become an author
+                Submit a record
               </Link>
             </div>
             <div className="mt-5 grid gap-2 sm:grid-cols-4">
-              {attentionLoop.map((item) => (
+              {recordLoop.map((item) => (
                 <div key={item.step} className="rounded-xl border border-slate-200 bg-white/90 p-3 shadow-sm">
                   <p className="text-[10px] font-black uppercase tracking-[0.18em] text-red-700">{item.step}</p>
                   <p className="mt-1 text-sm font-black leading-5 text-blue-950">{item.title}</p>
@@ -593,7 +593,7 @@ export default function HomePage() {
             ))}
           </div>
           <div className="mt-4 grid gap-3 sm:grid-cols-4">
-            {retentionStats.map((stat) => (
+            {returnStats.map((stat) => (
               <div key={stat.label} className="rounded-2xl border border-blue-100 bg-[#f8fbff] p-4">
                 <p className="text-[10px] font-black uppercase tracking-[0.18em] text-blue-800">{stat.label}</p>
                 <p className="mt-2 text-3xl font-black text-red-700">{stat.value}</p>
@@ -604,25 +604,25 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Story Feed */}
+      {/* Story Records */}
       <section className="border-b border-slate-200 bg-white">
         <div className="mx-auto grid max-w-7xl gap-8 px-4 py-14 sm:px-6 lg:grid-cols-[0.8fr_1.2fr] lg:px-8">
           <div>
-            <p className="text-xs font-black uppercase tracking-[0.18em] text-red-700">RepWatchr feed</p>
+            <p className="text-xs font-black uppercase tracking-[0.18em] text-red-700">RepWatchr records</p>
             <h2 className="mt-2 text-3xl font-black leading-tight text-blue-950 sm:text-5xl">
               Turn public records into stories people actually share.
             </h2>
             <p className="mt-4 text-sm font-semibold leading-6 text-blue-950/70">
-              The feed turns public records into readable story packets with a hook,
+              RepWatchr turns public records into readable story packets with a hook,
               source trail, linked officials, share snippet, and a path back to the
               full record.
             </p>
             <div className="mt-5 flex flex-wrap gap-3">
               <Link
-                href="/feed"
+                href="/news"
                 className="rounded-xl bg-red-700 px-5 py-3 text-sm font-black uppercase tracking-wide text-white shadow-sm transition hover:-translate-y-0.5 hover:bg-blue-950"
               >
-                Open the Feed
+                Open Stories
               </Link>
               <Link
                 href="/news"
@@ -657,37 +657,36 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Citizen Author Desk */}
+      {/* Citizen Source Desk */}
       <section className="border-b border-blue-100 bg-[#f8fbff]">
         <div className="mx-auto grid max-w-7xl gap-8 px-4 py-14 sm:px-6 lg:grid-cols-[0.85fr_1.15fr] lg:px-8">
           <div>
-            <p className="text-xs font-black uppercase tracking-[0.18em] text-red-700">Citizen Author Desk</p>
+            <p className="text-xs font-black uppercase tracking-[0.18em] text-red-700">Citizen Source Desk</p>
             <h2 className="mt-2 text-3xl font-black leading-tight text-blue-950 sm:text-5xl">
               Do not just read the story. Help build the record people share.
             </h2>
             <p className="mt-4 text-sm font-semibold leading-6 text-blue-950/70">
-              Political attention holds longer when voters can become useful:
-              source runner, profile builder, meeting reporter, watchdog author,
-              or share editor. Give them a job, a receipt standard, and a clean
-              way back to RepWatchr.
+              RepWatchr holds value when voters can become useful: source runner,
+              profile builder, meeting reporter, correction submitter, or share editor.
+              Give them a receipt standard and a clean way back to the record.
             </p>
             <div className="mt-5 flex flex-wrap gap-3">
               <Link
-                href="/authors"
+                href="/submit-source"
                 className="rounded-xl bg-red-700 px-5 py-3 text-sm font-black uppercase tracking-wide text-white shadow-sm transition hover:-translate-y-0.5 hover:bg-blue-950"
               >
-                Open Author Desk
+                Submit Source
               </Link>
               <Link
-                href="/profiles/claim"
+                href="/officials"
                 className="rounded-xl border border-blue-200 bg-white px-5 py-3 text-sm font-black uppercase tracking-wide text-blue-950 transition hover:-translate-y-0.5 hover:border-red-300 hover:bg-blue-50"
               >
-                Build a profile
+                Find a profile
               </Link>
             </div>
           </div>
           <div className="grid gap-3">
-            {authorActions.map((action, index) => (
+            {sourceDeskActions.map((action, index) => (
               <Link
                 key={action.label}
                 href={action.href}
@@ -725,7 +724,7 @@ export default function HomePage() {
               </p>
             </div>
             <div className="grid gap-3 sm:grid-cols-2">
-              {attentionLoop.map((item, index) => (
+              {recordLoop.map((item, index) => (
                 <div key={item.step} className="rounded-2xl border border-slate-200 bg-white p-5 shadow-sm">
                   <div className="flex items-center gap-3">
                     <span className="grid h-9 w-9 place-items-center rounded-full bg-red-700 text-sm font-black text-white">
@@ -791,9 +790,9 @@ export default function HomePage() {
       <section className="border-b border-blue-100 bg-slate-950 text-white">
         <div className="mx-auto grid max-w-7xl gap-6 px-4 py-12 sm:px-6 lg:grid-cols-[0.88fr_1.12fr] lg:px-8">
           <div>
-            <p className="text-xs font-black uppercase tracking-wide text-red-300">Retention engine</p>
+            <p className="text-xs font-black uppercase tracking-wide text-red-300">Return engine</p>
             <h2 className="mt-2 text-3xl font-black leading-tight sm:text-5xl">
-              Attention compounds when people have a reason to come back.
+              Accountability compounds when people have a reason to come back.
             </h2>
             <p className="mt-4 max-w-2xl text-sm font-semibold leading-6 text-slate-300">
               The homepage gets the click. The member office keeps the person. Give
@@ -819,7 +818,7 @@ export default function HomePage() {
 
           <div className="grid gap-3 sm:grid-cols-2">
             <div className="rounded-2xl border border-amber-300/30 bg-amber-300 p-5 text-slate-950">
-              <p className="text-xs font-black uppercase tracking-wide">The ATTENTION formula</p>
+              <p className="text-xs font-black uppercase tracking-wide">The record formula</p>
               <p className="mt-2 text-4xl font-black">4 moves</p>
               <p className="mt-2 text-sm font-bold leading-6">
                 Search the name. Grade the record. Add the source. Share the profile.
@@ -840,7 +839,7 @@ export default function HomePage() {
       <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
         <div className="text-center mb-10">
           <h2 className="text-3xl font-extrabold text-gray-900">
-            Choose the battlefield
+            Choose the record lane
           </h2>
           <p className="text-gray-500 mt-2">
             People do not share categories. They share names, boards, votes, red flags, and receipts.
@@ -1090,16 +1089,16 @@ export default function HomePage() {
             Find
           </Link>
           <Link
-            href="/feedback"
+              href="/submit-source"
             className="rounded-xl border border-amber-200 bg-amber-50 px-3 py-3 text-center text-[11px] font-black uppercase tracking-wide text-amber-950"
           >
             Source
           </Link>
           <Link
-            href="/authors"
+            href="/news"
             className="rounded-xl bg-blue-950 px-3 py-3 text-center text-[11px] font-black uppercase tracking-wide text-white"
           >
-            Author
+            Stories
           </Link>
         </div>
       </div>

@@ -2,22 +2,16 @@ import Link from "next/link";
 import Image from "next/image";
 
 const quickLinks = [
-  { href: "/feed", label: "Feed" },
-  { href: "/authors", label: "Citizen Authors" },
-  { href: "/daily-wire", label: "Daily Watch" },
   { href: "/officials", label: "Officials" },
+  { href: "/authority-watch", label: "Authority Watch" },
   { href: "/school-boards", label: "School Boards" },
-  { href: "/attorneys", label: "Attorneys" },
-  { href: "/media", label: "Media" },
-  { href: "/uap", label: "UAP Records" },
-  { href: "/scorecards", label: "Scorecards" },
   { href: "/votes", label: "Votes" },
   { href: "/funding", label: "Funding" },
   { href: "/red-flags", label: "Red Flags" },
-  { href: "/news", label: "News" },
-  { href: "/faretta-ai", label: "AI Search" },
+  { href: "/news", label: "Stories" },
+  { href: "/scorecards", label: "Scorecards" },
   { href: "/methodology", label: "Methodology" },
-  { href: "/feedback", label: "Submit Source" },
+  { href: "/submit-source", label: "Submit Source" },
 ];
 
 export default function Footer() {
@@ -39,7 +33,7 @@ export default function Footer() {
               RepWatchr
             </h3>
             <p className="mt-2 text-sm font-semibold text-slate-300">
-              Search. Grade. Source. Share.
+              Know your reps. Put them on the record.
             </p>
             <a
               href="https://www.RepWatchr.com"
@@ -78,7 +72,8 @@ export default function Footer() {
             <p className="mt-3 text-sm font-semibold leading-relaxed text-slate-300">
               Data sourced from public records, official government sites,
               election sources, FEC, Texas Ethics Commission, Open States, and
-              reviewed submissions where labeled.
+              reviewed citizen submissions where labeled. Private details and
+              unsourced allegations do not belong on public pages.
             </p>
           </div>
         </div>
@@ -99,7 +94,7 @@ export default function Footer() {
               Terms of Service
             </Link>
             <Link
-              href="/feedback"
+              href="/submit-source"
               className="text-xs font-semibold text-slate-400 transition-colors hover:text-white"
             >
               Submit Source

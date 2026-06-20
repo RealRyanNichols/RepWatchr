@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import ReportButton from "@/components/shared/ReportButton";
 
 export const metadata: Metadata = {
-  title: "Submit a Source, Correction, or Missing Official",
+  title: "Submit Source",
   description:
     "Send RepWatchr a public source, correction, roster, vote, filing, meeting record, or missing official for review.",
 };
@@ -20,7 +20,7 @@ export default function FeedbackPage() {
             Put a missing receipt in the record.
           </h1>
           <p className="mt-3 text-sm font-semibold leading-6 text-slate-700">
-            Send the agenda, clip, filing, roster, article, vote, meeting video, campaign-finance record, correction, or missing official. You do not need an account. Public-source links are what turn attention into a reusable record.
+            Send the agenda, clip, filing, roster, article, vote, meeting video, campaign-finance record, correction, or missing official. You do not need an account. Public-source links are what turn concern into a reusable record.
           </p>
         </div>
       </section>
@@ -46,7 +46,7 @@ export default function FeedbackPage() {
 
       <div className="mb-8 rounded-xl border border-red-100 bg-red-50 p-5">
         <h2 className="text-sm font-black uppercase tracking-wide text-red-800">
-          What gets attention fastest
+          What gets reviewed fastest
         </h2>
         <div className="mt-3 grid gap-2 sm:grid-cols-3">
           {["Official source URL", "Date and jurisdiction", "Why voters should look"].map((item) => (
@@ -57,7 +57,7 @@ export default function FeedbackPage() {
         </div>
       </div>
 
-      <ReportButton pageUrl="/feedback" />
+      <ReportButton pageUrl="/submit-source" />
 
       <div className="mt-10 rounded-xl bg-blue-50/70 border border-blue-100 p-6">
         <h2 className="text-lg font-bold text-blue-950 mb-3">
