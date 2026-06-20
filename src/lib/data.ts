@@ -34,6 +34,7 @@ const DATA_DIR = path.join(process.cwd(), "src", "data");
 let officialsCache: Official[] | null = null;
 let billsCache: Bill[] | null = null;
 let issueCategoriesCache: IssueCategory[] | null = null;
+let allNewsCache: NewsArticle[] | null = null;
 let newsCache: NewsArticle[] | null = null;
 const scoreCardCache = new Map<string, ScoreCard>();
 const fundingCache = new Map<string, FundingSummary>();
@@ -655,12 +656,20 @@ export function getRepWatchrDataStats() {
 // News / Articles
 // ---------------------------------------------------------------------------
 
+export function hasPublicNewsSource(article: NewsArticle): boolean {
+  return Boolean(article.sourceUrl || article.sourceLinks?.some((source) => source.url));
+}
+
+export function isPublishableNewsArticle(article: NewsArticle): boolean {
+  return article.sourceStatus !== "needs_source_review" && hasPublicNewsSource(article);
+}
+
 /**
- * Load all news articles from src/data/news/. Cached after first call.
+ * Load all news article records from src/data/news/. Cached after first call.
  * Sorted by publishedAt descending (newest first).
  */
-export function getAllNews(): NewsArticle[] {
-  if (newsCache) return newsCache;
+function getAllNewsRecords(): NewsArticle[] {
+  if (allNewsCache) return allNewsCache;
 
   const newsDir = path.join(DATA_DIR, "news");
   const files = collectJsonFiles(newsDir);
@@ -678,8 +687,26 @@ export function getAllNews(): NewsArticle[] {
       new Date(b.publishedAt).getTime() - new Date(a.publishedAt).getTime()
   );
 
-  newsCache = articles;
-  return articles;
+  allNewsCache = articles;
+  return allNewsCache;
+}
+
+/**
+ * Load public news articles. Review drafts without a public source URL are kept
+ * in data, but they do not lead public feeds, sitemaps, profiles, or share loops.
+ */
+export function getAllNews(): NewsArticle[] {
+  if (newsCache) return newsCache;
+
+  newsCache = getAllNewsRecords().filter(isPublishableNewsArticle);
+  return newsCache;
+}
+
+/**
+ * Load news records that need source cleanup before public amplification.
+ */
+export function getNewsReviewDrafts(): NewsArticle[] {
+  return getAllNewsRecords().filter((article) => !isPublishableNewsArticle(article));
 }
 
 /**

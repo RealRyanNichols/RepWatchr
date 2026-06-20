@@ -50,9 +50,38 @@ export async function generateMetadata({
   const { id } = await params;
   const official = getOfficialWithScores(id);
   if (!official) return { title: "Official Not Found" };
+  const title = `${official.name} - ${official.position}`;
+  const description = `Source-backed RepWatchr profile for ${official.name}, ${official.position} serving ${official.jurisdiction}.`;
+  const canonicalUrl = `https://www.repwatchr.com/officials/${official.id}`;
+  const ogImage = `/api/og/official?id=${encodeURIComponent(official.id)}`;
+
   return {
-    title: `${official.name} - ${official.position}`,
-    description: `Source-backed RepWatchr profile for ${official.name}, ${official.position} serving ${official.jurisdiction}.`,
+    title,
+    description,
+    alternates: {
+      canonical: canonicalUrl,
+    },
+    openGraph: {
+      title,
+      description,
+      url: canonicalUrl,
+      siteName: "RepWatchr",
+      type: "profile",
+      images: [
+        {
+          url: ogImage,
+          width: 1200,
+          height: 630,
+          alt: `${official.name} RepWatchr profile`,
+        },
+      ],
+    },
+    twitter: {
+      card: "summary_large_image",
+      title,
+      description,
+      images: [ogImage],
+    },
   };
 }
 

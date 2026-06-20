@@ -3,6 +3,7 @@ import Image from "next/image";
 
 const quickLinks = [
   { href: "/elections", label: "Elections" },
+  { href: "/elections/texas", label: "Texas Races" },
   { href: "/officials", label: "Officials" },
   { href: "/authority-watch", label: "Authority Watch" },
   { href: "/school-boards", label: "School Boards" },

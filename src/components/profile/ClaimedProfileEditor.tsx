@@ -52,6 +52,7 @@ export default function ClaimedProfileEditor({
   checkoutStatus?: string;
 }) {
   const { user, loading: authLoading } = useAuth();
+  const userId = user?.id;
   const supabase = useMemo(() => createClient(), []);
   const [claim, setClaim] = useState<Claim | null>(null);
   const [subscription, setSubscription] = useState<Subscription | null>(null);
@@ -75,10 +76,7 @@ export default function ClaimedProfileEditor({
   const [mediaCredit, setMediaCredit] = useState("");
 
   useEffect(() => {
-    if (!user) {
-      setLoading(false);
-      return;
-    }
+    if (!userId) return;
 
     let mounted = true;
 
@@ -89,7 +87,7 @@ export default function ClaimedProfileEditor({
             .from("profile_claims")
             .select("id, profile_id, profile_name, district_slug, status, reviewer_notes")
             .eq("id", claimId)
-            .eq("user_id", user!.id)
+            .eq("user_id", userId)
             .maybeSingle(),
           supabase
             .from("subscriptions")
@@ -144,7 +142,7 @@ export default function ClaimedProfileEditor({
     return () => {
       mounted = false;
     };
-  }, [claimId, supabase, user]);
+  }, [claimId, supabase, userId]);
 
   async function uploadPendingMedia(file: File, mediaType: "headshot" | "photo") {
     if (!user || !claim) return;
@@ -239,7 +237,9 @@ export default function ClaimedProfileEditor({
     setSubmitting(false);
   }
 
-  if (authLoading || loading) {
+  const pageLoading = authLoading || Boolean(userId && loading);
+
+  if (pageLoading) {
     return (
       <div className="mx-auto max-w-5xl px-4 py-16">
         <div className="h-64 animate-pulse rounded-2xl bg-gray-100" />

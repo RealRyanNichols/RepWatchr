@@ -55,6 +55,7 @@ export interface HourlySocialAutopostResult {
   ok: boolean;
   dryRun: boolean;
   enabled: boolean;
+  editorialApproved: boolean;
   configuredPlatforms: SocialPlatform[];
   refreshed: {
     sourceCount: number;
@@ -241,11 +242,11 @@ function xMessage(clip: DailyWireClip) {
 function configuredPlatforms(): SocialPlatform[] {
   const platforms: SocialPlatform[] = [];
   if (process.env.FACEBOOK_PAGE_ID && process.env.FACEBOOK_PAGE_ACCESS_TOKEN) platforms.push("facebook");
+  const hasStoredXTokenPath = Boolean(process.env.X_CLIENT_ID && process.env.NEXT_PUBLIC_SUPABASE_URL && process.env.SUPABASE_SERVICE_ROLE_KEY);
   if (
     process.env.X_USER_ACCESS_TOKEN ||
     process.env.X_REFRESH_TOKEN ||
-    process.env.X_CLIENT_ID ||
-    process.env.X_AUTOPOST_ENABLED === "true"
+    hasStoredXTokenPath
   ) {
     platforms.push("x");
   }
@@ -542,6 +543,7 @@ async function postToPlatform(clip: DailyWireClip, platform: SocialPlatform): Pr
 
 export async function runHourlySocialAutopost({ dryRun = false }: { dryRun?: boolean } = {}): Promise<HourlySocialAutopostResult> {
   const enabled = process.env.SOCIAL_AUTOPOST_ENABLED === "true";
+  const editorialApproved = process.env.SOCIAL_AUTOPOST_EDITORIAL_APPROVED === "true";
   const platforms = configuredPlatforms();
   const targetPlatforms: SocialPlatform[] = platforms.length || !dryRun ? platforms : ["facebook", "x"];
   const now = new Date();
@@ -555,6 +557,7 @@ export async function runHourlySocialAutopost({ dryRun = false }: { dryRun?: boo
   const skippedResult = {
     dryRun,
     enabled,
+    editorialApproved,
     configuredPlatforms: platforms,
     refreshed: emptyRefreshed,
     candidate: null,
@@ -566,6 +569,16 @@ export async function runHourlySocialAutopost({ dryRun = false }: { dryRun?: boo
       ok: true,
       ...skippedResult,
       skippedReason: "Autopost disabled",
+    };
+  }
+
+  if (enabled && !editorialApproved && !dryRun) {
+    return {
+      ok: false,
+      ...skippedResult,
+      skippedReason: "Editorial approval gate not confirmed",
+      error:
+        "Set SOCIAL_AUTOPOST_EDITORIAL_APPROVED=true only after credentials, source rules, and posting policy are approved.",
     };
   }
 
@@ -591,6 +604,7 @@ export async function runHourlySocialAutopost({ dryRun = false }: { dryRun?: boo
   const emptyResult = {
     dryRun,
     enabled,
+    editorialApproved,
     configuredPlatforms: platforms,
     refreshed,
     candidate: null,

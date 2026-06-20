@@ -3,10 +3,19 @@
   "title": "Watchdog Report: Most East Texas Legislators Score Below Average on Government Transparency Index",
   "summary": "A new transparency scorecard from the Freedom of Information Foundation of Texas gives low marks to several East Texas state legislators for their positions on open records and public meeting reforms.",
   "content": "The Freedom of Information Foundation of Texas released its 2026 Legislative Transparency Index on April 6, scoring all 181 members of the Texas Legislature on their support for open government measures. The index tracks votes on open records legislation, co-sponsorship of transparency bills, responsiveness to public information requests from their own offices, and attendance at public hearings on government accountability bills.\n\nAmong East Texas state legislators, the results were mixed. Rep. Travis Clardy (HD-11) earned the highest score in the delegation at 72 out of 100, credited for his co-sponsorship of HB 890, which would require state agencies to respond to public information requests within 10 business days instead of the current 'prompt' standard. Rep. Gary VanDeaver (HD-1) scored 65, buoyed by his support for live-streaming requirements for legislative committee hearings. At the bottom of the East Texas delegation, Rep. Matt Schaefer (HD-6) scored 38, having voted against HB 890 and two other open-government bills in committee. Rep. Cody Harris (HD-8) scored 41, and Rep. Jay Dean (HD-7) scored 44.\n\nSenator Bryan Hughes (SD-1) scored 52, dinged for supporting an amendment to SB 215 that would have exempted certain law enforcement records from public disclosure for up to two years. Senator Robert Nichols (SD-3) scored 58, with the Foundation noting his consistent support for infrastructure spending transparency but his silence on broader open-records reform.\n\nThe Foundation's executive director, Kelley Shannon, said the scores reflect a legislature that 'talks about accountability but often resists the specific reforms that would make accountability possible.' The full scorecard is available on the Foundation's website.",
-  "officialIds": ["gary-vandeaver", "cody-harris", "jay-dean", "bryan-hughes", "robert-nichols"],
-  "tags": ["watchdog", "transparency"],
-  "sourceName": "Freedom of Information Foundation of Texas",
+  "officialIds": [
+    "gary-vandeaver",
+    "cody-harris",
+    "jay-dean",
+    "bryan-hughes",
+    "robert-nichols"
+  ],
+  "tags": [
+    "watchdog",
+    "transparency"
+  ],
   "author": "RepWatchr Staff",
   "publishedAt": "2026-04-06T12:00:00Z",
-  "featured": false
+  "featured": false,
+  "sourceStatus": "needs_source_review"
 }

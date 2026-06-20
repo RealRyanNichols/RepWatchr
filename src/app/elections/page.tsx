@@ -72,6 +72,11 @@ const voterMoves = [
 
 const electionLanes = [
   {
+    title: "Texas race watch",
+    href: "/elections/texas",
+    detail: "The Texas-first race board for statewide power, East Texas congressional races, state districts, and local watch lanes.",
+  },
+  {
     title: "Federal and state offices",
     href: "/officials?level=federal",
     detail: "U.S. House, U.S. Senate, state representatives, state senators, governors, and statewide offices.",
@@ -342,6 +347,12 @@ export default function ElectionsPage() {
               money, read the story, submit the missing source, then share the receipt.
             </p>
             <div className="mt-6 flex flex-wrap gap-3">
+              <Link
+                href="/elections/texas"
+                className="rounded-xl bg-blue-950 px-5 py-3 text-sm font-black uppercase tracking-wide text-white shadow-sm transition hover:-translate-y-0.5 hover:bg-red-700"
+              >
+                Texas races
+              </Link>
               <Link
                 href="/officials"
                 className="rounded-xl bg-red-700 px-5 py-3 text-sm font-black uppercase tracking-wide text-white shadow-sm transition hover:-translate-y-0.5 hover:bg-blue-950"

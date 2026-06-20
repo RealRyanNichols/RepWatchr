@@ -3,10 +3,19 @@
   "title": "Aging Water Systems in Deep East Texas Face EPA Violations as Legislators Seek State Funding",
   "summary": "Over two dozen small water systems in East Texas are in violation of EPA safe drinking water standards. State legislators are pushing a $500 million infrastructure package.",
   "content": "At least 27 small community water systems across Deep East Texas are currently in violation of federal safe drinking water standards, according to data from the Texas Commission on Environmental Quality. The violations, concentrated in Angelina, Jasper, Newton, Polk, and San Augustine counties, range from elevated lead levels to inadequate filtration and chronic boil-water notices that have persisted for months.\n\nRep. Trent Ashby (HD-9), whose district encompasses the hardest-hit areas, has filed HB 3310, a $500 million water infrastructure bond package targeted at rural systems serving fewer than 10,000 connections. The bill would create a Rural Water Infrastructure Fund administered by the Texas Water Development Board. Ashby told reporters in Lufkin that some of these systems have pipes dating to the 1950s and that 'the state cannot wait another session to act.' Rep. Cody Harris (HD-8) has signed on as a co-author, citing similar problems in Shelby and Nacogdoches counties within his district.\n\nSenator Robert Nichols (SD-3), who chairs the Senate Transportation Committee and has long championed rural infrastructure, is expected to carry companion legislation in the upper chamber. Nichols told a town hall in Livingston on April 2 that water infrastructure would be his 'top priority for the remainder of the session.' Senator Bryan Hughes (SD-1) has expressed support but has conditioned his vote on the funding mechanism, opposing any increase in state debt.\n\nThe issue has drawn attention from federal officials as well. Senator John Cornyn's office announced on April 5 that it is working to direct a portion of the Infrastructure Investment and Jobs Act funding specifically toward small Texas water systems that are out of EPA compliance.",
-  "officialIds": ["trent-ashby", "cody-harris", "robert-nichols", "bryan-hughes", "john-cornyn"],
-  "tags": ["investigation", "watchdog"],
-  "sourceName": "Lufkin Daily News",
+  "officialIds": [
+    "trent-ashby",
+    "cody-harris",
+    "robert-nichols",
+    "bryan-hughes",
+    "john-cornyn"
+  ],
+  "tags": [
+    "investigation",
+    "watchdog"
+  ],
   "author": "RepWatchr Staff",
   "publishedAt": "2026-04-08T09:30:00Z",
-  "featured": false
+  "featured": false,
+  "sourceStatus": "needs_source_review"
 }

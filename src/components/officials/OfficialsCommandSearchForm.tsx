@@ -1,6 +1,5 @@
 "use client";
 
-import { useEffect, useState } from "react";
 import { track } from "@vercel/analytics";
 
 type JurisdictionOption = {
@@ -34,27 +33,16 @@ export default function OfficialsCommandSearchForm({
   initialSearch,
   totalOfficials,
 }: OfficialsCommandSearchFormProps) {
-  const [searchValue, setSearchValue] = useState(initialSearch);
-  const [levelValue, setLevelValue] = useState(initialLevel);
-  const [stateValue, setStateValue] = useState(selectedStateCode ?? "");
-
-  useEffect(() => {
-    setSearchValue(initialSearch);
-  }, [initialSearch]);
-
-  useEffect(() => {
-    setLevelValue(initialLevel);
-  }, [initialLevel]);
-
-  useEffect(() => {
-    setStateValue(selectedStateCode ?? "");
-  }, [selectedStateCode]);
-
   return (
     <form
       action="/officials"
       autoComplete="off"
-      onSubmit={() => {
+      onSubmit={(event) => {
+        const formData = new FormData(event.currentTarget);
+        const searchValue = String(formData.get("search") ?? "");
+        const levelValue = String(formData.get("level") ?? initialLevel);
+        const stateValue = String(formData.get("state") ?? selectedStateCode ?? "");
+
         track("official_button_click", {
           action: "command_deck_open",
           level: levelValue,
@@ -68,8 +56,7 @@ export default function OfficialsCommandSearchForm({
         <span className="text-[11px] font-black uppercase tracking-wide text-slate-300">Search name or office</span>
         <input
           name="search"
-          value={searchValue}
-          onChange={(event) => setSearchValue(event.target.value)}
+          defaultValue={initialSearch}
           placeholder="Search by name, office, district, state, or county"
           className="mt-1 w-full rounded-lg border border-white/15 bg-white px-3 py-3 text-sm font-black text-slate-950 placeholder:text-slate-500 outline-none focus:border-blue-300 focus:ring-2 focus:ring-blue-200"
         />
@@ -78,9 +65,8 @@ export default function OfficialsCommandSearchForm({
         <span className="text-[11px] font-black uppercase tracking-wide text-slate-300">Level</span>
         <select
           name="level"
-          value={levelValue}
+          defaultValue={initialLevel}
           onChange={(event) => {
-            setLevelValue(event.target.value);
             track("official_filter_change", { filter: "command_level", value: event.target.value });
           }}
           className="mt-1 w-full rounded-lg border border-white/15 bg-white px-3 py-3 text-sm font-black text-slate-950 outline-none focus:border-blue-300 focus:ring-2 focus:ring-blue-200"
@@ -96,9 +82,8 @@ export default function OfficialsCommandSearchForm({
         <span className="text-[11px] font-black uppercase tracking-wide text-slate-300">State</span>
         <select
           name="state"
-          value={stateValue}
+          defaultValue={selectedStateCode ?? ""}
           onChange={(event) => {
-            setStateValue(event.target.value);
             track("official_filter_change", {
               filter: "command_state",
               value: event.target.value || "national",

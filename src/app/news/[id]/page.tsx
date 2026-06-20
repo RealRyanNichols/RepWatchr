@@ -17,25 +17,28 @@ export async function generateMetadata({
   const { id } = await params;
   const article = getNewsById(id);
   if (!article) return { title: "Article Not Found" };
+  const canonicalUrl = `https://www.repwatchr.com/news/${article.id}`;
+  const ogImage = `/api/og/news?id=${encodeURIComponent(article.id)}`;
+
   return {
     title: article.title,
     description: article.summary,
     alternates: {
-      canonical: `https://www.repwatchr.com/news/${article.id}`,
+      canonical: canonicalUrl,
     },
     openGraph: {
       title: article.title,
       description: article.summary,
-      url: `https://www.repwatchr.com/news/${article.id}`,
+      url: canonicalUrl,
       siteName: "RepWatchr",
       type: "article",
       publishedTime: article.publishedAt,
       authors: [article.author],
       images: [
         {
-          url: "/images/repwatchr-cover-america-first.png",
-          width: 2172,
-          height: 724,
+          url: ogImage,
+          width: 1200,
+          height: 630,
           alt: article.title,
         },
       ],
@@ -44,7 +47,7 @@ export async function generateMetadata({
       card: "summary_large_image",
       title: article.title,
       description: article.summary,
-      images: ["/images/repwatchr-cover-america-first.png"],
+      images: [ogImage],
     },
   };
 }

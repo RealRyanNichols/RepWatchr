@@ -97,6 +97,7 @@ export async function GET(request: NextRequest) {
     xClientSecret: hasEnv("X_CLIENT_SECRET"),
     xAutopostEnabled: process.env.X_AUTOPOST_ENABLED === "true",
     socialAutopostEnabled: process.env.SOCIAL_AUTOPOST_ENABLED === "true",
+    socialAutopostEditorialApproved: process.env.SOCIAL_AUTOPOST_EDITORIAL_APPROVED === "true",
     facebookPage: hasEnv("FACEBOOK_PAGE_ID") && hasEnv("FACEBOOK_PAGE_ACCESS_TOKEN"),
     stripeSecret: hasEnv("STRIPE_SECRET_KEY"),
     stripeWebhookSecret: hasEnv("STRIPE_WEBHOOK_SECRET"),

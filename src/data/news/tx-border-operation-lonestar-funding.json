@@ -3,10 +3,18 @@
   "title": "Operation Lone Star Costs Top $11 Billion as East Texas Reps Push for More Federal Reimbursement",
   "summary": "Texas has now spent over $11 billion on its border security operation. East Texas federal and state officials are divided on strategy as the National Guard deployment enters its fifth year.",
   "content": "Operation Lone Star, Governor Abbott's signature border security initiative launched in 2021, has now cost Texas taxpayers more than $11 billion according to a Legislative Budget Board report released April 3. The operation, which deploys Texas National Guard troops and Department of Public Safety troopers to the southern border, has been a defining issue for Texas Republicans at every level of government.\n\nU.S. Rep. Nathaniel Moran (TX-1) has been among the most aggressive voices in Congress pushing for federal reimbursement of state border costs. Moran co-sponsored HR 2287, the State Border Cost Recovery Act, which would authorize the Treasury to reimburse Texas and other border states for Operation Lone Star expenditures. Senators Ted Cruz and John Cornyn have both backed the Senate companion bill. Cruz, who serves on the Senate Judiciary Committee, held a field hearing in McAllen in March where he called the spending 'a direct consequence of federal abdication.'\n\nAt the state level, the spending has created tension with fiscal conservatives who question whether the operation has produced measurable results. A January 2026 audit by the Texas State Auditor found that the operation lacked consistent metrics for success and that $340 million in contracts were awarded without competitive bidding. Rep. Cole Hefner (HD-5) raised concerns during an Appropriations Committee hearing in February, asking whether continued spending at this level was sustainable given other state priorities like property tax relief and water infrastructure.\n\nDespite the cost questions, the operation remains overwhelmingly popular among Republican primary voters in East Texas. Every state representative in the region voted to continue funding in the current budget cycle.",
-  "officialIds": ["nathaniel-moran", "ted-cruz", "john-cornyn", "cole-hefner"],
-  "tags": ["watchdog", "update"],
-  "sourceName": "Texas Tribune",
+  "officialIds": [
+    "nathaniel-moran",
+    "ted-cruz",
+    "john-cornyn",
+    "cole-hefner"
+  ],
+  "tags": [
+    "watchdog",
+    "update"
+  ],
   "author": "RepWatchr Staff",
   "publishedAt": "2026-04-07T11:00:00Z",
-  "featured": true
+  "featured": false,
+  "sourceStatus": "needs_source_review"
 }

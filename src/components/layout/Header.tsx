@@ -18,6 +18,7 @@ const primaryLinks = [
 
 const moreLinks = [
   { href: "/", label: "Home" },
+  { href: "/elections/texas", label: "Texas Races" },
   { href: "/create-account", label: "Join Free" },
   { href: "/funding", label: "Funding" },
   { href: "/scorecards", label: "Scorecards" },

@@ -6,6 +6,7 @@ import {
   getFundingSummary,
   getIssueCategories,
 } from "@/lib/data";
+import { getTexasElectionRaces } from "@/data/texas-election-races";
 import { getSchoolBoardDistricts, getSchoolBoardDossiers } from "@/lib/school-board-research";
 import { getSchoolBoardCandidateUrl, getSchoolBoardDistrictUrl } from "@/lib/school-board-urls";
 
@@ -23,6 +24,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     "",
     "/about",
     "/elections",
+    "/elections/texas",
     "/officials",
     "/authority-watch",
     "/school-boards",
@@ -104,8 +106,16 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     priority: 0.62,
   }));
 
+  const texasRaceRoutes = getTexasElectionRaces().map((race) => ({
+    url: `${siteUrl}/elections/texas/${race.slug}`,
+    lastModified: now,
+    changeFrequency: "weekly" as const,
+    priority: race.lane === "big-race" ? 0.82 : 0.78,
+  }));
+
   return [
     ...staticRoutes,
+    ...texasRaceRoutes,
     ...officialRoutes,
     ...fundingRoutes,
     ...voteRoutes,
