@@ -11,6 +11,7 @@ export default function UserMenu() {
   const menuRef = useRef<HTMLDivElement>(null);
   const isAdmin = roles.includes("admin");
   const canReview = roles.includes("admin") || roles.includes("reviewer");
+  const isOperator = canReview || roles.includes("researcher");
 
   useEffect(() => {
     function handleClickOutside(event: MouseEvent) {
@@ -120,9 +121,16 @@ export default function UserMenu() {
           >
             Claim Profile
           </Link>
-          {canReview ? (
+          {isOperator ? (
             <>
               <div className="my-1 border-t border-gray-100" />
+              <Link
+                href="/admin/superadmin"
+                className="block px-4 py-2 text-sm font-semibold text-red-700 hover:bg-red-50"
+                onClick={() => setOpen(false)}
+              >
+                SuperAdmin Office
+              </Link>
               {isAdmin ? (
                 <Link
                   href="/admin/control-center"
@@ -132,19 +140,30 @@ export default function UserMenu() {
                   Data Control Center
                 </Link>
               ) : null}
+              {canReview ? (
+                <>
+                  <Link
+                    href="/admin/claims"
+                    className="block px-4 py-2 text-sm font-semibold text-blue-800 hover:bg-blue-50"
+                    onClick={() => setOpen(false)}
+                  >
+                    Claim Queue
+                  </Link>
+                  <Link
+                    href="/admin/content-review"
+                    className="block px-4 py-2 text-sm font-semibold text-blue-800 hover:bg-blue-50"
+                    onClick={() => setOpen(false)}
+                  >
+                    Content Review
+                  </Link>
+                </>
+              ) : null}
               <Link
-                href="/admin/claims"
+                href="/elections/texas/contribute"
                 className="block px-4 py-2 text-sm font-semibold text-blue-800 hover:bg-blue-50"
                 onClick={() => setOpen(false)}
               >
-                Claim Queue
-              </Link>
-              <Link
-                href="/admin/content-review"
-                className="block px-4 py-2 text-sm font-semibold text-blue-800 hover:bg-blue-50"
-                onClick={() => setOpen(false)}
-              >
-                Content Review
+                Texas Source Queue
               </Link>
             </>
           ) : null}

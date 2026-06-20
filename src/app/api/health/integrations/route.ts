@@ -22,6 +22,7 @@ const requiredTables = [
   "repwatchr_daily_clips",
   "repwatchr_social_tokens",
   "repwatchr_social_posts",
+  "repw_operator_invites",
   "operator_tasks",
   "operator_asks",
   "accountability_cases",

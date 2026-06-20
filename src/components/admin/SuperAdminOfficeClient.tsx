@@ -140,6 +140,7 @@ const previewLiveCounts: LiveCount[] = [
   { label: "Comments", table: "comments", count: 96, status: "yellow", detail: "Public discussion rows waiting on moderation rules." },
   { label: "Faretta interactions", table: "faretta_interactions", count: 238, status: "green", detail: "Search, chat, note, and prompt-button interactions." },
   { label: "Profile activation requests", table: "profile_claims", count: 7, status: "yellow", detail: "24 total profile_claims rows, pending shown here." },
+  { label: "Operator invites", table: "repw_operator_invites", count: 1, status: "green", detail: "Owner and operator role bootstrap invitations." },
   { label: "Accountability cases", table: "accountability_cases", count: 18, status: "yellow", detail: "Case-builder and Faretta.Legal intake rows." },
   { label: "Texas election sources", table: "texas_election_contributions", count: 0, status: "green", detail: "Live review queue for source-backed Texas race contributions." },
   { label: "Faretta form submissions", table: "faretta_case_submissions", count: 6, status: "yellow", detail: "Cases received from Faretta.Legal intake." },
@@ -362,6 +363,7 @@ export default function SuperAdminOfficeClient({
         interactions,
         claims,
         pendingClaims,
+        operatorInvites,
         cases,
         texasContributions,
         farettaCases,
@@ -380,6 +382,7 @@ export default function SuperAdminOfficeClient({
         countRows(supabase, "faretta_interactions"),
         countRows(supabase, "profile_claims"),
         countRows(supabase, "profile_claims", { column: "status", value: "pending" }),
+        countRows(supabase, "repw_operator_invites"),
         countRows(supabase, "accountability_cases"),
         texasElectionDbSubmissionsEnabled
           ? countRows(supabase, "texas_election_contributions")
@@ -405,6 +408,7 @@ export default function SuperAdminOfficeClient({
         { label: "Comments", table: "comments", count: comments.count, status: comments.count && comments.count > 0 ? "green" : "yellow", detail: comments.error || "Public discussion rows." },
         { label: "Faretta interactions", table: "faretta_interactions", count: interactions.count, status: interactions.count === null ? "red" : interactions.count > 0 ? "green" : "yellow", detail: interactions.error || "Search, chat, note, and prompt-button interactions." },
         { label: "Profile activation requests", table: "profile_claims", count: pendingClaims.count, status: pendingClaims.count === null ? "red" : pendingClaims.count > 0 ? "yellow" : "green", detail: pendingClaims.error || `${claims.count ?? 0} total profile_claims rows, pending shown here.` },
+        { label: "Operator invites", table: "repw_operator_invites", count: operatorInvites.count, status: operatorInvites.count === null ? "red" : operatorInvites.count > 0 ? "green" : "yellow", detail: operatorInvites.error || "Owner and operator role bootstrap invitations." },
         { label: "Accountability cases", table: "accountability_cases", count: cases.count, status: cases.count === null ? "red" : cases.count > 0 ? "yellow" : "green", detail: cases.error || "Case-builder and Faretta.Legal intake rows." },
         {
           label: "Texas election sources",
