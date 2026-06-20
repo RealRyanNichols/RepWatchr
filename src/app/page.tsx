@@ -278,7 +278,7 @@ function MobileWatchBoard({
           </h2>
         </div>
         <span className="shrink-0 rounded-full bg-red-700 px-3 py-1 text-[10px] font-black uppercase tracking-wide text-white">
-          Daily hook
+          Open first
         </span>
       </div>
 
