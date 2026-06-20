@@ -440,8 +440,8 @@ export default function HomePage() {
           <div className="bg-white" />
           <div className="bg-blue-900" />
         </div>
-        <div className="relative mx-auto grid max-w-7xl gap-5 px-4 py-6 sm:px-6 sm:py-8 lg:grid-cols-[minmax(0,1fr)_minmax(380px,0.82fr)] lg:px-8">
-          <div className="flex min-h-[520px] flex-col justify-center">
+        <div className="relative mx-auto grid max-w-7xl gap-5 px-4 py-6 sm:px-6 sm:py-8 lg:grid-cols-[minmax(0,1fr)_minmax(380px,0.82fr)] lg:items-start lg:px-8 lg:py-6">
+          <div className="flex flex-col justify-start lg:pt-3 xl:pt-5">
             <div className="flex flex-wrap items-center gap-2">
               <span className="rounded-full bg-red-700 px-3 py-1 text-xs font-black uppercase tracking-wide text-white shadow-sm">
               Accountability loop live
@@ -501,7 +501,7 @@ export default function HomePage() {
             </div>
           </div>
 
-          <div className="grid content-center gap-3">
+          <div className="grid content-start gap-3">
             <div className="rounded-2xl border border-slate-300 bg-slate-950 p-4 text-white shadow-xl shadow-blue-950/20">
               <div className="flex items-center justify-between gap-3">
                 <div>
