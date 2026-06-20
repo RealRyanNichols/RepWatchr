@@ -6,6 +6,7 @@ import Link from "next/link";
 import UserMenu from "@/components/auth/UserMenu";
 
 const primaryLinks = [
+  { href: "/elections", label: "Elections" },
   { href: "/officials", label: "Officials" },
   { href: "/authority-watch", label: "Authority Watch" },
   { href: "/school-boards", label: "School Boards" },
@@ -13,11 +14,11 @@ const primaryLinks = [
   { href: "/red-flags", label: "Red Flags" },
   { href: "/news", label: "Stories" },
   { href: "/submit-source", label: "Submit Source" },
-  { href: "/create-account", label: "Join Free" },
 ];
 
 const moreLinks = [
   { href: "/", label: "Home" },
+  { href: "/create-account", label: "Join Free" },
   { href: "/funding", label: "Funding" },
   { href: "/scorecards", label: "Scorecards" },
   { href: "/issues", label: "Issues" },

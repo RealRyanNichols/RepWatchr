@@ -2,6 +2,7 @@ import Link from "next/link";
 import Image from "next/image";
 
 const quickLinks = [
+  { href: "/elections", label: "Elections" },
   { href: "/officials", label: "Officials" },
   { href: "/authority-watch", label: "Authority Watch" },
   { href: "/school-boards", label: "School Boards" },

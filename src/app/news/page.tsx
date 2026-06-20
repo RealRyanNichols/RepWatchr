@@ -257,6 +257,12 @@ export default async function NewsPage({
 
               <div className="mt-5 flex flex-wrap gap-2">
                 <Link
+                  href="/elections"
+                  className="rounded-lg bg-blue-950 px-4 py-2.5 text-sm font-black text-white shadow-sm transition hover:-translate-y-0.5 hover:bg-red-700"
+                >
+                  Election Hub
+                </Link>
+                <Link
                   href="/officials"
                   className="rounded-lg bg-red-700 px-4 py-2.5 text-sm font-black text-white shadow-sm transition hover:-translate-y-0.5 hover:bg-blue-950"
                 >

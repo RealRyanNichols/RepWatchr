@@ -28,6 +28,8 @@ export const metadata: Metadata = {
     "property tax",
     "water rights",
     "school board",
+    "midterm elections",
+    "election accountability",
     "public records",
     "authority watch",
     "source-backed stories",

@@ -483,10 +483,10 @@ export default function HomePage() {
                 Submit source
               </Link>
               <Link
-                href="/submit-source"
+                href="/elections"
                 className="rounded-xl border border-slate-300 bg-slate-950 px-5 py-4 text-center text-sm font-black uppercase tracking-wide text-white shadow-sm transition hover:-translate-y-0.5 hover:border-red-300 hover:bg-red-700"
               >
-                Submit a record
+                Election hub
               </Link>
             </div>
             <div className="mt-5 grid gap-2 sm:grid-cols-4">
@@ -625,10 +625,10 @@ export default function HomePage() {
                 Open Stories
               </Link>
               <Link
-                href="/news"
+                href="/elections"
                 className="rounded-xl border border-blue-200 bg-blue-50 px-5 py-3 text-sm font-black uppercase tracking-wide text-blue-950 transition hover:-translate-y-0.5 hover:border-red-300 hover:bg-white"
               >
-                Article archive
+                Election command center
               </Link>
             </div>
           </div>
