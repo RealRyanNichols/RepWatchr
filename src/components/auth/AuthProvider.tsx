@@ -25,6 +25,9 @@ type UserRole =
   | "journalist"
   | "voter";
 
+type ProfileLookupResult = { data: UserProfile | null };
+type RolesLookupResult = { data: Array<{ role: UserRole }> | null };
+
 interface AuthContextType {
   user: User | null;
   profile: UserProfile | null;
@@ -105,13 +108,16 @@ export default function AuthProvider({ children }: { children: ReactNode }) {
             .from("user_roles")
             .select("role")
             .eq("user_id", currentUser.id),
+        ]).then(([profileLookup, rolesLookup]): [ProfileLookupResult, RolesLookupResult] => [
+          { data: (profileLookup.data as UserProfile | null) ?? null },
+          { data: (rolesLookup.data as Array<{ role: UserRole }> | null) ?? [] },
         ]),
         [{ data: null }, { data: [] }]
       );
 
       if (!mounted) return;
-      setProfile((profileResult.data as UserProfile | null) ?? null);
-      setRoles(((rolesResult.data ?? []) as Array<{ role: UserRole }>).map((item) => item.role));
+      setProfile(profileResult.data);
+      setRoles((rolesResult.data ?? []).map((item) => item.role));
     }
 
     const getSession = async () => {
