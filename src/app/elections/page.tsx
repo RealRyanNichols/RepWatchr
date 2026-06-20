@@ -123,6 +123,54 @@ function heatForOfficial(official: Official) {
   return redFlags.length * 35 + scorePressure + (funding ? 18 : 0) + stateBoost;
 }
 
+function articleSourceReceipt(article: NewsArticle) {
+  if (article.sourceUrl) {
+    return `Receipt: ${article.sourceName ?? "Public source"} - ${article.sourceUrl}`;
+  }
+
+  const firstSource = article.sourceLinks?.find((source) => source.url);
+  if (firstSource) {
+    return `Receipt: ${firstSource.title} - ${firstSource.url}`;
+  }
+
+  return "Receipt: public-source review needed before amplification.";
+}
+
+function articleShareSnippet(article: NewsArticle) {
+  return [
+    "Before you vote, put this on the record.",
+    "",
+    article.title,
+    "",
+    `Why it matters: ${article.summary}`,
+    "",
+    articleSourceReceipt(article),
+    "",
+    `Open: https://www.repwatchr.com/news/${article.id}`,
+  ].join("\n");
+}
+
+function officialShareSnippet(official: Official) {
+  const scoreCard = getScoreCard(official.id);
+  const redFlagCount = getRedFlags(official.id).length;
+  const funding = getFundingSummary(official.id);
+  const district = official.district ?? official.jurisdiction;
+  const statusLines = [
+    scoreCard ? `RepWatchr score: ${scoreCard.overall} (${scoreCard.letterGrade})` : "RepWatchr score: open for source review",
+    `${redFlagCount} public red flag${redFlagCount === 1 ? "" : "s"} listed`,
+    funding ? "Campaign-money summary is loaded." : "Campaign-money sources still need review.",
+  ];
+
+  return [
+    `Before you vote, check ${official.name}'s record.`,
+    "",
+    `${official.position} / ${district}`,
+    ...statusLines,
+    "",
+    `Open: https://www.repwatchr.com/officials/${official.id}`,
+  ].join("\n");
+}
+
 function ElectionStoryCard({ article }: { article: NewsArticle }) {
   return (
     <Link
@@ -199,6 +247,36 @@ function OfficialWatchCard({ official }: { official: Official }) {
         </div>
       </div>
     </Link>
+  );
+}
+
+function SharePacketCard({
+  eyebrow,
+  title,
+  href,
+  snippet,
+}: {
+  eyebrow: string;
+  title: string;
+  href: string;
+  snippet: string;
+}) {
+  return (
+    <div className="rounded-lg border border-slate-200 bg-white p-4 shadow-sm">
+      <p className="text-[11px] font-black uppercase tracking-[0.16em] text-red-700">{eyebrow}</p>
+      <Link href={href} className="mt-2 block text-lg font-black leading-tight text-blue-950 hover:text-red-700">
+        {title}
+      </Link>
+      <p className="mt-3 max-h-40 overflow-hidden whitespace-pre-line rounded-lg border border-slate-200 bg-slate-50 p-3 text-xs font-semibold leading-5 text-slate-700">
+        {snippet}
+      </p>
+      <div className="mt-4 flex flex-wrap items-center gap-3">
+        <CopySnippetButton text={snippet} label="Copy post" copiedLabel="Post copied" />
+        <Link href={href} className="text-xs font-black uppercase tracking-wide text-blue-800 hover:text-red-700">
+          Open record
+        </Link>
+      </div>
+    </div>
   );
 }
 
@@ -429,6 +507,41 @@ export default function ElectionsPage() {
           <div className="grid gap-3 md:grid-cols-2">
             {watchOfficials.map((official) => (
               <OfficialWatchCard key={official.id} official={official} />
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="border-b border-slate-200 bg-white">
+        <div className="mx-auto max-w-7xl px-4 py-12 sm:px-6 lg:px-8">
+          <div className="mb-6 max-w-3xl">
+            <p className="text-xs font-black uppercase tracking-[0.18em] text-red-700">Post-ready packets</p>
+            <h2 className="mt-2 text-3xl font-black leading-tight text-blue-950 sm:text-5xl">
+              Give supporters the exact post to copy.
+            </h2>
+            <p className="mt-4 text-sm font-semibold leading-6 text-blue-950/70">
+              High-attention politics moves fast. These packets keep the hook short, name the record,
+              and drive people back to a page where the source trail can be checked.
+            </p>
+          </div>
+          <div className="grid gap-4 lg:grid-cols-2 xl:grid-cols-3">
+            {storiesToShow.slice(0, 3).map((article) => (
+              <SharePacketCard
+                key={`story-${article.id}`}
+                eyebrow="Story post"
+                title={article.title}
+                href={`/news/${article.id}`}
+                snippet={articleShareSnippet(article)}
+              />
+            ))}
+            {watchOfficials.slice(0, 3).map((official) => (
+              <SharePacketCard
+                key={`official-${official.id}`}
+                eyebrow="Profile post"
+                title={official.name}
+                href={`/officials/${official.id}`}
+                snippet={officialShareSnippet(official)}
+              />
             ))}
           </div>
         </div>
