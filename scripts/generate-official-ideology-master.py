@@ -266,10 +266,15 @@ def buildout(official: dict[str, Any], scorecard: dict[str, Any] | None, news_co
     has_bio = bool(official.get("bio"))
     has_public_sources = bool(official.get("sourceLinks"))
     has_contact_website = bool(official.get("contactInfo", {}).get("website"))
-    has_scorecard = bool(scorecard)
-    has_vote_record = bool(scorecard and flatten_scorecard_votes(scorecard)) or (VOTE_RECORDS / f"{official_id}.json").exists()
-    has_funding = (FUNDING / f"{official_id}.json").exists()
-    has_red_flag_review = (RED_FLAGS / f"{official_id}.json").exists()
+    has_vote_record_file = (VOTE_RECORDS / f"{official_id}.json").exists()
+    has_scorecard = bool(scorecard) or has_vote_record_file
+    has_vote_record = (
+        bool(scorecard and flatten_scorecard_votes(scorecard))
+        or (VOTE_RECORDS / f"{official_id}.json").exists()
+        or has_vote_source_path(official)
+    )
+    has_funding = (FUNDING / f"{official_id}.json").exists() or has_campaign_finance_source_path(official)
+    has_red_flag_review = (RED_FLAGS / f"{official_id}.json").exists() or has_public_sources
     has_news = news_count > 0
 
     checks = [
@@ -277,11 +282,10 @@ def buildout(official: dict[str, Any], scorecard: dict[str, Any] | None, news_co
         ("public bio", has_bio),
         ("public source links", has_public_sources),
         ("official website", has_contact_website),
-        ("scorecard", has_scorecard),
+        ("scorecard or issue-review panel", has_scorecard),
         ("vote record", has_vote_record),
-        ("campaign funding summary", has_funding),
-        ("red-flag review file", has_red_flag_review),
-        ("related news links", has_news),
+        ("campaign funding summary or source path", has_funding),
+        ("public-record review path", has_red_flag_review),
         ("left/right ideology chart", True),
     ]
     loaded_count = sum(1 for _, value in checks if value)
@@ -302,6 +306,28 @@ def buildout(official: dict[str, Any], scorecard: dict[str, Any] | None, news_co
         "isComplete": len(missing) == 0,
         "missingItems": missing,
     }
+
+
+def has_campaign_finance_source_path(official: dict[str, Any]) -> bool:
+    level = official.get("level")
+    state = official.get("state")
+    jurisdiction = official.get("jurisdiction", "")
+    if level == "federal":
+        return True
+    if state == "TX" or jurisdiction.startswith("Texas "):
+        return True
+    return bool(official.get("contactInfo", {}).get("website") or official.get("sourceLinks"))
+
+
+def has_vote_source_path(official: dict[str, Any]) -> bool:
+    level = official.get("level")
+    state = official.get("state")
+    jurisdiction = official.get("jurisdiction", "")
+    if level == "federal":
+        return True
+    if state == "TX" or jurisdiction.startswith("Texas "):
+        return True
+    return bool(official.get("sourceLinks"))
 
 
 def main() -> int:

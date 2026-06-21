@@ -10,6 +10,7 @@ import { getRepWatchrServices } from "@/data/repwatchr-services";
 import { getTexasElectionRaces } from "@/data/texas-election-races";
 import { getSchoolBoardDistricts, getSchoolBoardDossiers } from "@/lib/school-board-research";
 import { getSchoolBoardCandidateUrl, getSchoolBoardDistrictUrl } from "@/lib/school-board-urls";
+import { hasCampaignFinanceSourcePath } from "@/lib/campaign-finance-sources";
 
 const siteUrl = "https://www.repwatchr.com";
 
@@ -34,6 +35,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     "/blog",
     "/services",
     "/funding",
+    "/data-reports",
     "/red-flags",
     "/votes",
     "/news",
@@ -71,7 +73,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   }));
 
   const fundingRoutes = getAllOfficials()
-    .filter((official) => getFundingSummary(official.id))
+    .filter((official) => getFundingSummary(official.id) || hasCampaignFinanceSourcePath(official))
     .map((official) => ({
       url: `${siteUrl}/funding/${official.id}`,
       lastModified: now,

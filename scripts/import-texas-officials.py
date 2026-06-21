@@ -36,8 +36,8 @@ except ImportError as exc:
 ROOT = Path(__file__).resolve().parents[1]
 OFFICIALS_DIR = ROOT / "src" / "data" / "officials"
 IMAGE_DIR = ROOT / "public" / "images" / "officials"
-ACCESSED_DATE = "2026-04-27"
-TODAY = dt.date.fromisoformat(ACCESSED_DATE)
+TODAY = dt.date.today()
+ACCESSED_DATE = TODAY.isoformat()
 
 FEDERAL_SOURCE_URL = (
     "https://raw.githubusercontent.com/unitedstates/congress-legislators/master/"
@@ -120,17 +120,33 @@ def write_json(file_path: Path, payload: dict[str, Any]) -> None:
 
 
 def clean_generated_dirs() -> None:
-    for subdir in ["federal", "state"]:
-        target = OFFICIALS_DIR / subdir
-        target.mkdir(parents=True, exist_ok=True)
-        for item in target.glob("*.json"):
+    federal_dir = OFFICIALS_DIR / "federal"
+    federal_dir.mkdir(parents=True, exist_ok=True)
+    for item in federal_dir.glob("*.json"):
+        official = read_json_file(item)
+        if not official:
+            continue
+        district = str(official.get("district", ""))
+        if official.get("state") == "TX" or district == "Texas" or district.startswith("TX-"):
             item.unlink()
 
-    for subdir in ["federal", "state-house", "state-senate"]:
+    state_dir = OFFICIALS_DIR / "state"
+    state_dir.mkdir(parents=True, exist_ok=True)
+    for item in state_dir.glob("tx-*.json"):
+        item.unlink()
+
+    for subdir in ["state-house", "state-senate"]:
         target = IMAGE_DIR / subdir
         if target.exists():
             shutil.rmtree(target)
         target.mkdir(parents=True, exist_ok=True)
+
+
+def read_json_file(path: Path) -> dict[str, Any] | None:
+    try:
+        return json.loads(path.read_text(encoding="utf-8"))
+    except Exception:
+        return None
 
 
 def image_extension(url: str, content_type: str | None) -> str:

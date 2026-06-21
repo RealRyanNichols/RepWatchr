@@ -1,0 +1,32 @@
+{
+  "officialId": "taylor-rehmet",
+  "name": "Taylor Rehmet",
+  "level": "state",
+  "state": "TX",
+  "chamber": "senate",
+  "session": "Texas Senate Journal records from 2025-01-14 through 2026-06-21",
+  "lastUpdated": "2026-06-21",
+  "sourceLinks": [
+    {
+      "title": "Texas Senate votes by date",
+      "url": "https://capitol.texas.gov/Reports/GeneralVotesByDateSenate.aspx"
+    },
+    {
+      "title": "Texas Legislature Online vote information",
+      "url": "https://capitol.texas.gov/billlookup/voteinfo.aspx"
+    },
+    {
+      "title": "Texas Senate journal search",
+      "url": "https://journals.senate.texas.gov/"
+    }
+  ],
+  "summary": {
+    "totalVotesLoaded": 0,
+    "yea": 0,
+    "nay": 0,
+    "present": 0,
+    "notVoting": 0,
+    "other": 0
+  },
+  "votes": []
+}

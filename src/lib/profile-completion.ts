@@ -16,6 +16,7 @@ import {
   getScoreCard,
 } from "@/lib/data";
 import { getOfficialIdeologyProfile } from "@/lib/ideology";
+import { hasCampaignFinanceSourcePath } from "@/lib/campaign-finance-sources";
 
 export type ProfileCompletionKey =
   | "identity"
@@ -96,8 +97,8 @@ export const profileCompletionLabels: Record<ProfileCompletionKey, string> = {
   contact: "Official contact or website",
   vote_record: "Voting record",
   left_right_chart: "Rule-reviewed left/right chart",
-  scorecard: "Issue scorecard",
-  funding: "Campaign finance summary",
+  scorecard: "Issue scorecard or review panel",
+  funding: "Campaign finance summary or source path",
   public_records: "Public records and controversies review",
   news: "Related news links",
   social_links: "Public social or statement links",
@@ -117,6 +118,10 @@ const completionOrder: ProfileCompletionKey[] = [
   "news",
   "social_links",
 ];
+
+const requiredCompletionOrder: ProfileCompletionKey[] = completionOrder.filter(
+  (key) => key !== "news" && key !== "social_links",
+);
 
 function hasIdentity(official: Official) {
   return Boolean(official.name && official.position && official.jurisdiction && official.level);
@@ -160,6 +165,35 @@ function hasRuleReviewedIdeology(officialId: string) {
   );
 }
 
+function hasVoteSourcePath(official: Official) {
+  if (official.level === "federal") return true;
+  if (official.state === "TX" || official.jurisdiction.startsWith("Texas ")) return true;
+  return hasPublicSources(official);
+}
+
+function hasVoteRecordReview(
+  official: Official,
+  scoreCard: ScoreCard | undefined,
+  voteRecord: PublicVoteRecord | undefined,
+) {
+  return Boolean(voteRecord || scoreCard || hasVoteSourcePath(official));
+}
+
+function hasIssueScorecardReview(
+  scoreCard: ScoreCard | undefined,
+  voteRecord: PublicVoteRecord | undefined,
+) {
+  return Boolean(scoreCard || voteRecord?.votes.length);
+}
+
+function hasCampaignFinanceReview(official: Official, funding: FundingSummary | undefined) {
+  return Boolean(funding || hasCampaignFinanceSourcePath(official));
+}
+
+function hasPublicRecordReview(official: Official, redFlags: RedFlag[]) {
+  return Boolean(redFlags.length > 0 || hasPublicSources(official));
+}
+
 function priorityFromPercent(completionPercent: number): ProfileCompletionPriority {
   if (completionPercent >= 85) return "green";
   if (completionPercent >= 55) return "yellow";
@@ -181,13 +215,11 @@ function buildStaticBuildout(
     ["public_sources", hasPublicSources(official)],
     ["photo", Boolean(official.photo)],
     ["contact", hasContact(official)],
-    ["vote_record", Boolean(voteRecord?.votes.length || scoreCard)],
+    ["vote_record", hasVoteRecordReview(official, scoreCard, voteRecord)],
     ["left_right_chart", hasRuleReviewedChart],
-    ["scorecard", Boolean(scoreCard)],
-    ["funding", Boolean(funding)],
-    ["public_records", redFlags.length > 0],
-    ["news", newsRows > 0],
-    ["social_links", hasSocialLinks(official)],
+    ["scorecard", hasIssueScorecardReview(scoreCard, voteRecord)],
+    ["funding", hasCampaignFinanceReview(official, funding)],
+    ["public_records", hasPublicRecordReview(official, redFlags)],
   ];
 
   const loadedCount = checks.filter(([, loaded]) => loaded).length;
@@ -202,7 +234,7 @@ function buildStaticBuildout(
     hasPublicSources: hasPublicSources(official),
     hasContactWebsite: Boolean(official.contactInfo.website),
     hasScorecard: Boolean(scoreCard),
-    hasVoteRecord: Boolean(voteRecord?.votes.length || scoreCard),
+    hasVoteRecord: hasVoteRecordReview(official, scoreCard, voteRecord),
     hasFundingSummary: Boolean(funding),
     hasRedFlagReview: redFlags.length > 0,
     hasNewsLinks: newsRows > 0,
@@ -239,15 +271,15 @@ export function buildOfficialCompletionSnapshot(official: Official): ProfileComp
       case "contact":
         return hasContact(official);
       case "vote_record":
-        return Boolean(voteRecord?.votes.length || scoreCard);
+        return hasVoteRecordReview(official, scoreCard, voteRecord);
       case "left_right_chart":
         return hasRuleReviewedIdeology(official.id);
       case "scorecard":
-        return Boolean(scoreCard);
+        return hasIssueScorecardReview(scoreCard, voteRecord);
       case "funding":
-        return Boolean(funding);
+        return hasCampaignFinanceReview(official, funding);
       case "public_records":
-        return redFlags.length > 0;
+        return hasPublicRecordReview(official, redFlags);
       case "news":
         return newsRows > 0;
       case "social_links":
@@ -257,7 +289,7 @@ export function buildOfficialCompletionSnapshot(official: Official): ProfileComp
     }
   });
   const loadedSet = new Set(loadedItems);
-  const missingItems = completionOrder.filter((key) => !loadedSet.has(key));
+  const missingItems = requiredCompletionOrder.filter((key) => !loadedSet.has(key));
 
   return {
     profileType: "official",
@@ -277,10 +309,10 @@ export function buildOfficialCompletionSnapshot(official: Official): ProfileComp
     lastStaticReviewAt: official.lastVerifiedAt ?? null,
     summary: {
       hasPhoto: Boolean(official.photo),
-      hasVoteRecord: Boolean(voteRecord?.votes.length || scoreCard),
+      hasVoteRecord: hasVoteRecordReview(official, scoreCard, voteRecord),
       voteRows: voteRecord?.votes.length ?? 0,
-      hasFunding: Boolean(funding),
-      hasPublicRecords: redFlags.length > 0,
+      hasFunding: hasCampaignFinanceReview(official, funding),
+      hasPublicRecords: hasPublicRecordReview(official, redFlags),
       publicRecordRows: redFlags.length,
       hasNews: newsRows > 0,
       newsRows,

@@ -15,6 +15,7 @@ import { formatLevelName, getPartyColor } from "@/lib/formatting";
 import ScoreGauge from "@/components/scores/ScoreGauge";
 import CategoryBreakdown from "@/components/scores/CategoryBreakdown";
 import CampaignFundingSection from "@/components/funding/CampaignFundingSection";
+import CampaignFinanceSourcePanel from "@/components/funding/CampaignFinanceSourcePanel";
 import VoteTimeline from "@/components/votes/VoteTimeline";
 import RedFlagCard from "@/components/shared/RedFlagCard";
 import PartyBadge from "@/components/officials/PartyBadge";
@@ -31,6 +32,7 @@ import OfficialPhotoImage, { FEATURED_OFFICIAL_PHOTO_QUALITY } from "@/component
 import { getPublicProfileOverlay, type PublicProfileEnrichmentItem, type PublicProfileOverlay, type PublicProfileVoteSnapshot } from "@/lib/profile-overlays";
 import { buildOfficialCompletionSnapshot } from "@/lib/profile-completion";
 import { getCongressTradingSnapshot } from "@/lib/congress-trading";
+import type { Official, PublicVoteRecord } from "@/types";
 
 export const revalidate = 86400;
 export const dynamic = "force-dynamic";
@@ -267,6 +269,10 @@ export default async function OfficialProfilePage({
             </section>
           )}
 
+          {!scoreCard && (
+            <IssueScorecardStatusPanel official={official} record={publicVoteRecord} />
+          )}
+
           {allScoredVotes.length > 0 && (
             <section>
               <h2 className="mb-4 text-xl font-bold text-gray-900">
@@ -278,6 +284,10 @@ export default async function OfficialProfilePage({
 
           {publicVoteRecord && publicVoteRecord.votes.length > 0 && (
             <FederalVoteRecordPanel record={publicVoteRecord} />
+          )}
+
+          {!publicVoteRecord && (
+            <VoteRecordSourcePanel official={official} />
           )}
 
           {profileOverlay.voteSnapshots.length > 0 && (
@@ -307,7 +317,9 @@ export default async function OfficialProfilePage({
 
         {funding ? (
           <CampaignFundingSection funding={funding} />
-        ) : null}
+        ) : (
+          <CampaignFinanceSourcePanel official={official} />
+        )}
 
         <section className="mt-8">
           <div className="mb-4">
@@ -363,6 +375,10 @@ export default async function OfficialProfilePage({
           </section>
         )}
 
+        {overlayPublicRecords.length === 0 && !congressTrading && redFlags.length === 0 && (
+          <PublicRecordsReviewPanel official={official} />
+        )}
+
         <div className="mt-8 grid gap-6 lg:grid-cols-3">
           <OfficialSocialPanel
             officialName={official.name}
@@ -376,15 +392,6 @@ export default async function OfficialProfilePage({
           />
 
           <ProfileOverlayStatusPanel overlay={profileOverlay} />
-
-          {!funding && !scoreCard && (
-            <div className="rounded-lg bg-gray-50 p-6 text-center">
-              <p className="text-sm text-gray-500">
-                Detailed scoring and funding data is being collected for this
-                official. Check back soon.
-              </p>
-            </div>
-          )}
 
           {sourceLinks.length > 0 && (
             <section className="rounded-xl border border-gray-200 bg-white p-5 shadow-sm lg:col-span-3">
@@ -478,6 +485,166 @@ export default async function OfficialProfilePage({
   );
 }
 
+function IssueScorecardStatusPanel({
+  official,
+  record,
+}: {
+  official: Official;
+  record?: PublicVoteRecord;
+}) {
+  const voteCount = record?.summary.totalVotesLoaded ?? 0;
+
+  return (
+    <section className="rounded-2xl border border-slate-200 bg-white p-5 shadow-sm">
+      <div className="flex flex-col gap-3 sm:flex-row sm:items-start sm:justify-between">
+        <div>
+          <p className="text-xs font-black uppercase tracking-wide text-blue-700">
+            Issue scorecard
+          </p>
+          <h2 className="mt-1 text-xl font-black text-gray-950">
+            Scorecard rule review needed
+          </h2>
+          <p className="mt-2 max-w-4xl text-sm font-semibold leading-6 text-gray-600">
+            {voteCount > 0
+              ? `${voteCount.toLocaleString()} source-backed roll-call rows are loaded for ${official.name}. RepWatchr has not attached reviewed issue-score rules to this profile yet, so the grade should not be treated as neutral or clean.`
+              : `RepWatchr has the public profile sources for ${official.name}, but no vote rows are loaded yet. The issue scorecard stays in source-review mode until public votes and issue rules are attached.`}
+          </p>
+        </div>
+        <div className="rounded-xl border border-blue-100 bg-blue-50 px-4 py-3 text-right">
+          <p className="text-3xl font-black text-blue-950">{voteCount.toLocaleString()}</p>
+          <p className="text-xs font-black uppercase tracking-wide text-blue-700">Votes loaded</p>
+        </div>
+      </div>
+
+      <div className="mt-4 grid gap-3 md:grid-cols-3">
+        <ReviewStep label="1" title="Load public votes" done={voteCount > 0} />
+        <ReviewStep label="2" title="Map issue rules" done={false} />
+        <ReviewStep label="3" title="Publish scored grade" done={false} />
+      </div>
+    </section>
+  );
+}
+
+function ReviewStep({ label, title, done }: { label: string; title: string; done: boolean }) {
+  return (
+    <div className="rounded-xl border border-slate-200 bg-slate-50 p-4">
+      <div className="flex items-center gap-3">
+        <span
+          className={`grid h-8 w-8 place-items-center rounded-full text-sm font-black ${
+            done ? "bg-emerald-600 text-white" : "bg-slate-200 text-slate-700"
+          }`}
+        >
+          {label}
+        </span>
+        <p className="text-sm font-black text-slate-950">{title}</p>
+      </div>
+      <p className="mt-2 text-xs font-semibold leading-5 text-slate-600">
+        {done ? "Source data is loaded." : "Still requires source-backed review before it can move a public grade."}
+      </p>
+    </div>
+  );
+}
+
+function voteSourceLinksForOfficial(official: Official) {
+  if (official.level === "federal" && official.position === "U.S. Senator") {
+    return [
+      {
+        title: "Senate roll-call vote menu",
+        url: "https://www.senate.gov/legislative/votes_new.htm",
+      },
+    ];
+  }
+  if (official.level === "federal" && official.position === "U.S. Representative") {
+    return [
+      {
+        title: "House Clerk roll-call votes",
+        url: "https://clerk.house.gov/Votes",
+      },
+    ];
+  }
+  if (official.state === "TX" || official.jurisdiction.startsWith("Texas ")) {
+    return [
+      {
+        title: "Texas Legislature Online vote information",
+        url: "https://capitol.texas.gov/billlookup/voteinfo.aspx",
+      },
+    ];
+  }
+  return official.sourceLinks ?? [];
+}
+
+function VoteRecordSourcePanel({ official }: { official: Official }) {
+  const sources = voteSourceLinksForOfficial(official);
+
+  return (
+    <section className="rounded-2xl border border-amber-200 bg-amber-50 p-5 shadow-sm">
+      <p className="text-xs font-black uppercase tracking-wide text-amber-800">
+        Public vote record snapshot
+      </p>
+      <h2 className="mt-1 text-xl font-black text-gray-950">Vote source path loaded</h2>
+      <p className="mt-2 max-w-4xl text-sm font-semibold leading-6 text-amber-950">
+        This profile has a public vote-source path, but RepWatchr has not loaded a static roll-call snapshot for this
+        office yet. That is a data gap, not a clean voting record.
+      </p>
+      <div className="mt-4 flex flex-wrap gap-2">
+        {sources.map((source) => (
+          <a
+            key={`${source.title}-${source.url}`}
+            href={source.url}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="rounded-full border border-amber-200 bg-white px-3 py-1.5 text-xs font-black text-amber-900 transition hover:bg-amber-100"
+          >
+            {source.title}
+          </a>
+        ))}
+      </div>
+    </section>
+  );
+}
+
+function PublicRecordsReviewPanel({ official }: { official: Official }) {
+  const sources = official.sourceLinks ?? [];
+
+  return (
+    <section className="mt-8 rounded-2xl border border-slate-200 bg-white p-5 shadow-sm">
+      <div className="flex flex-col gap-3 sm:flex-row sm:items-start sm:justify-between">
+        <div>
+          <p className="text-xs font-black uppercase tracking-wide text-red-700">
+            Source-backed overlay
+          </p>
+          <h2 className="mt-1 text-xl font-black text-gray-950">Public Records & Controversies</h2>
+          <p className="mt-2 max-w-4xl text-sm font-semibold leading-6 text-gray-600">
+            No source-linked controversy item is loaded for {official.name} in the static profile review. Readers can
+            still inspect the official sources below or submit a public record for review.
+          </p>
+        </div>
+        <Link
+          href={`/submit-source?target=${encodeURIComponent(official.id)}`}
+          className="w-fit rounded-full border border-red-200 bg-red-50 px-3 py-1 text-xs font-black uppercase tracking-wide text-red-800 transition hover:bg-white"
+        >
+          Submit source
+        </Link>
+      </div>
+      {sources.length > 0 ? (
+        <div className="mt-4 flex flex-wrap gap-2">
+          {sources.slice(0, 6).map((source) => (
+            <a
+              key={`${source.title}-${source.url}`}
+              href={source.url}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="rounded-full border border-slate-200 bg-slate-50 px-3 py-1.5 text-xs font-black text-blue-800 transition hover:border-blue-200 hover:bg-blue-50"
+            >
+              {source.title}
+            </a>
+          ))}
+        </div>
+      ) : null}
+    </section>
+  );
+}
+
 function ProfileBuildoutPanel({
   percent,
   isComplete,
@@ -507,7 +674,7 @@ function ProfileBuildoutPanel({
         <div>
           <p className="text-xs font-black uppercase tracking-wide">Profile buildout</p>
           <h2 className="mt-1 text-lg font-black">
-            {isComplete ? "Full profile" : "Profile still being built"}
+            {isComplete ? "Core profile loaded" : "Profile still being built"}
           </h2>
         </div>
         <p className="text-3xl font-black">{percent}%</p>
@@ -517,12 +684,12 @@ function ProfileBuildoutPanel({
       </div>
       {isComplete ? (
         <p className="mt-3 text-sm font-semibold leading-6">
-          This profile currently has every required public-record section loaded.
+          This profile currently has the required core sections or source paths loaded.
         </p>
       ) : (
         <>
           <p className="mt-3 text-sm font-semibold leading-6">
-            This is not being treated as complete until the missing public-record sections are filled.
+            This is not being treated as complete until the missing public-record sections or source paths are filled.
           </p>
           <div className="mt-3 flex flex-wrap gap-2">
             {missingItems.slice(0, 8).map((item) => (
@@ -550,10 +717,10 @@ function FederalVoteRecordPanel({
             Public vote record snapshot
           </p>
           <h2 className="mt-1 text-xl font-black text-gray-950">
-            Current Senate session roll calls
+            Current public roll-call snapshot
           </h2>
           <p className="mt-1 text-sm font-semibold leading-6 text-gray-600">
-            Source-backed roll-call votes loaded from the official Senate feed through {record.lastUpdated}. These are not automatically scored left or right until issue mapping is reviewed.
+            Source-backed roll-call votes loaded from official public records through {record.lastUpdated}. These are not automatically scored left or right until issue mapping is reviewed.
           </p>
         </div>
         <div className="rounded-xl border border-blue-100 bg-blue-50 px-4 py-3 text-right">

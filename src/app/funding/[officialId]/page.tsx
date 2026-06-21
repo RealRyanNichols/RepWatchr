@@ -11,6 +11,7 @@ import FundingOverview from "@/components/funding/FundingOverview";
 import TopDonorsList from "@/components/funding/TopDonorsList";
 import DonorBreakdownChart from "@/components/funding/DonorBreakdownChart";
 import GeographicBreakdown from "@/components/funding/GeographicBreakdown";
+import CampaignFinanceSourcePanel from "@/components/funding/CampaignFinanceSourcePanel";
 
 export const revalidate = 86400;
 export const dynamicParams = true;
@@ -58,17 +59,27 @@ export default async function OfficialFundingPage({
 
   if (!funding) {
     return (
-      <div className="max-w-7xl mx-auto px-4 py-16 text-center">
-        <h1 className="text-2xl font-bold">{official.name}</h1>
-        <p className="mt-2 text-gray-600">
-          Campaign funding data is not yet available for this official.
-        </p>
-        <Link
-          href={`/officials/${official.id}`}
-          className="mt-4 text-blue-600 hover:underline"
-        >
-          View Profile
+      <div className="mx-auto max-w-7xl px-4 py-8 sm:px-6 lg:px-8">
+        <Link href="/funding" className="text-sm font-semibold text-blue-600 hover:underline">
+          Back to all funding
         </Link>
+        <div className="mt-4 rounded-2xl border border-slate-200 bg-white p-5 shadow-sm">
+          <div className="flex flex-col gap-2 sm:flex-row sm:items-start sm:justify-between">
+            <div>
+              <h1 className="text-3xl font-black text-gray-950">{official.name}</h1>
+              <p className="mt-1 text-sm font-semibold text-gray-600">
+                {official.position} - {formatLevelName(official.level)}
+              </p>
+            </div>
+            <Link
+              href={`/officials/${official.id}`}
+              className="w-fit rounded-full border border-blue-200 bg-blue-50 px-3 py-1.5 text-xs font-black text-blue-800 transition hover:bg-white"
+            >
+              View profile
+            </Link>
+          </div>
+        </div>
+        <CampaignFinanceSourcePanel official={official} />
       </div>
     );
   }
