@@ -9,6 +9,13 @@ interface ShareButtonsProps {
   path: string;
 }
 
+const SITE_ORIGIN = "https://www.repwatchr.com";
+
+function canonicalShareUrl(path: string) {
+  if (path.startsWith("http://") || path.startsWith("https://")) return path;
+  return `${SITE_ORIGIN}${path.startsWith("/") ? path : `/${path}`}`;
+}
+
 export default function ShareButtons({
   title,
   description,
@@ -16,8 +23,7 @@ export default function ShareButtons({
 }: ShareButtonsProps) {
   const [copied, setCopied] = useState(false);
 
-  const baseUrl = typeof window !== "undefined" ? window.location.origin : "";
-  const fullUrl = `${baseUrl}${path}`;
+  const fullUrl = canonicalShareUrl(path);
   const encodedUrl = encodeURIComponent(fullUrl);
   const encodedTitle = encodeURIComponent(title);
   const encodedDesc = encodeURIComponent(description || title);

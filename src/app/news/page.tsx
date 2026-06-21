@@ -78,7 +78,7 @@ function sourceLabel(article: NewsArticle) {
 function recordLabel(article: NewsArticle) {
   if (article.featured && article.sourceUrl) return "Source backed";
   if (article.tags.some((tag) => ["breaking", "investigation", "watchdog", "corruption"].includes(tag))) {
-    return "Watch closely";
+    return "Needs review";
   }
   return "On the record";
 }
@@ -173,7 +173,7 @@ function ArticleCard({ article, compact = false }: { article: NewsArticle; compa
           {sourceLabel(article)}
         </p>
         <span className="mt-3 inline-flex text-[11px] font-black uppercase tracking-wide text-slate-900 group-hover:text-red-700">
-          Read the record
+          Read source file
         </span>
       </div>
     </Link>
@@ -252,7 +252,7 @@ export default async function NewsPage({
                 Stories that put public power on the record.
               </h1>
               <p className="mt-4 max-w-3xl text-base font-semibold leading-7 text-slate-700 sm:text-lg">
-                RepWatchr stories are built to hold interest without losing the evidence. Every story should connect a public claim, vote, agency, school board, court issue, money trail, or public-safety concern back to the people voters need to watch.
+                RepWatchr stories are built to hold interest without losing the evidence. Every story should connect a public claim, vote, agency, school board, court issue, money trail, or public-safety concern back to records voters can check.
               </p>
 
               <div className="mt-5 flex flex-wrap gap-2">
@@ -350,7 +350,7 @@ export default async function NewsPage({
         <section className="mt-6 rounded-lg border border-amber-300 bg-amber-50 p-4 shadow-[0_14px_34px_rgba(120,53,15,0.08)]">
           <div className="flex flex-col gap-4 lg:flex-row lg:items-center lg:justify-between">
             <div>
-              <p className="text-xs font-black uppercase tracking-[0.18em] text-amber-800">Source watch queue</p>
+              <p className="text-xs font-black uppercase tracking-[0.18em] text-amber-800">Source review queue</p>
               <h2 className="text-xl font-black text-amber-950">Public-source links are reviewed before they become stories.</h2>
               <p className="mt-1 max-w-4xl text-sm font-semibold leading-6 text-amber-900">
                 RepWatchr can collect public RSS and news-search links, but the public page should stay source-first: capture the link, attach review labels, then turn the strongest records into deeper RepWatchr stories.
@@ -359,7 +359,7 @@ export default async function NewsPage({
             <div className="grid grid-cols-3 gap-2 text-center">
               <MiniMetric label="Sources" value={DAILY_NEWS_WATCH_SOURCES.length} />
               <MiniMetric label="Lanes" value={clippingLanes.size} />
-              <MiniMetric label="Wire" value="Live" />
+              <MiniMetric label="Queue" value="Live" />
             </div>
           </div>
           <div className="mt-4">
