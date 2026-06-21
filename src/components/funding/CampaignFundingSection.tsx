@@ -50,7 +50,7 @@ export default function CampaignFundingSection({
     {
       label: "Top donor concentration",
       value: formatPercent(topDonorShare),
-      note: `${formatCurrency(topDonorTotal)} from listed top donors in this funding file.`,
+      note: `${formatCurrency(topDonorTotal)} from listed donor/source aggregates in this funding file.`,
     },
   ];
 
@@ -89,7 +89,7 @@ export default function CampaignFundingSection({
 
       {funding.industrySectors.length > 0 ? (
         <div className="mt-5 rounded-lg border border-gray-200 bg-white p-4 shadow-sm">
-          <h3 className="text-sm font-semibold text-gray-900">Industry Sectors</h3>
+          <h3 className="text-sm font-semibold text-gray-900">Sector / Occupation Aggregates</h3>
           <div className="mt-4 grid gap-3 md:grid-cols-2">
             {funding.industrySectors.map((sector) => (
               <div key={sector.sector}>
@@ -111,10 +111,10 @@ export default function CampaignFundingSection({
 
       <div className="mt-5 grid gap-5 lg:grid-cols-[1.3fr_0.7fr]">
         <div>
-          <h3 className="mb-3 text-lg font-black text-gray-950">Top Donors</h3>
+          <h3 className="mb-3 text-lg font-black text-gray-950">Top Donor / Source Aggregates</h3>
           <TopDonorsList donors={funding.topDonors} totalRaised={funding.totalRaised} />
           <p className="mt-2 text-xs font-semibold leading-5 text-gray-500">
-            Organization names can represent PACs, committees, or employer/organization aggregates depending on the source. Treat them as contribution records to inspect, not proof of personal control.
+            Names can represent PACs, committees, occupations, employers, or organization aggregates depending on the source. Treat them as contribution records to inspect, not proof of personal control.
           </p>
         </div>
 

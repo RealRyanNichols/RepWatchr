@@ -18,9 +18,15 @@
     "office": "167 Russell Senate Office Building",
     "phone": "202-224-5922",
     "email": "https://www.cruz.senate.gov/?p=form&id=16",
-    "website": "https://www.cruz.senate.gov"
+    "website": "https://www.cruz.senate.gov",
+    "socialMedia": {
+      "twitter": "https://twitter.com/SenTedCruz",
+      "facebook": "https://www.facebook.com/SenatorTedCruz",
+      "instagram": "https://www.instagram.com/sentedcruz",
+      "youtube": "https://www.youtube.com/channel/UCOTZ-6H1rri1lSsj6IzhUyw"
+    }
   },
-  "bio": "Ted Cruz serves as a U.S. Senator for Texas. This RepWatchr starter profile is source-seeded from current congressional roster data, official public links, and public congressional photo sources.",
+  "bio": "Ted Cruz serves as a U.S. Senator for Texas. This RepWatchr profile is source-seeded from current congressional roster data, official public links, public congressional photo sources, Senate roll-call records, FEC campaign finance records, and public statement links.",
   "campaignPromises": [],
   "reviewStatus": "source_seeded",
   "state": "TX",
@@ -41,7 +47,19 @@
     {
       "title": "Public-domain congressional portrait source",
       "url": "https://commons.wikimedia.org/wiki/File:Ted_Cruz_official_116th_portrait.jpg"
+    },
+    {
+      "title": "Official Senate roll-call vote menu",
+      "url": "https://www.senate.gov/legislative/LIS/roll_call_lists/vote_menu_119_2.htm"
+    },
+    {
+      "title": "FEC principal campaign committee profile",
+      "url": "https://www.fec.gov/data/committee/C00492785/?cycle=2026"
+    },
+    {
+      "title": "Official public social links",
+      "url": "https://www.cruz.senate.gov"
     }
   ],
-  "lastVerifiedAt": "2026-04-29"
+  "lastVerifiedAt": "2026-06-21"
 }

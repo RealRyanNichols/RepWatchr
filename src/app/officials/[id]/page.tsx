@@ -121,9 +121,12 @@ export default async function OfficialProfilePage({
   const contactIsUrl = contactEmail?.startsWith("http://") || contactEmail?.startsWith("https://");
   const overlayPublicRecords = profileOverlay.enrichmentItems.filter((item) => item.category !== "news");
   const overlayNews = profileOverlay.enrichmentItems.filter((item) => item.category === "news");
-  const buildoutPercent = profileOverlay.completion?.completionPercent ?? staticCompletion.completionPercent;
-  const buildoutComplete = profileOverlay.completion?.isComplete ?? staticCompletion.isComplete;
-  const buildoutMissingItems = profileOverlay.completion?.missingItems ?? staticCompletion.missingItems;
+  const overlayCompletionPercent = profileOverlay.completion?.completionPercent ?? 0;
+  const buildoutPercent = Math.max(overlayCompletionPercent, staticCompletion.completionPercent);
+  const buildoutComplete = Boolean(profileOverlay.completion?.isComplete || staticCompletion.isComplete);
+  const buildoutMissingItems = buildoutComplete
+    ? []
+    : profileOverlay.completion?.missingItems ?? staticCompletion.missingItems;
 
   const allScoredVotes = scoreCard
     ? Object.values(scoreCard.categories).flatMap((c) => c.votes)
@@ -543,10 +546,10 @@ function FederalVoteRecordPanel({
             Public vote record snapshot
           </p>
           <h2 className="mt-1 text-xl font-black text-gray-950">
-            Recent federal roll calls
+            Current Senate session roll calls
           </h2>
           <p className="mt-1 text-sm font-semibold leading-6 text-gray-600">
-            Source-backed roll-call votes loaded from official House and Senate records. These are not automatically scored left or right until issue mapping is reviewed.
+            Source-backed roll-call votes loaded from the official Senate feed through {record.lastUpdated}. These are not automatically scored left or right until issue mapping is reviewed.
           </p>
         </div>
         <div className="rounded-xl border border-blue-100 bg-blue-50 px-4 py-3 text-right">

@@ -1,98 +1,114 @@
 {
   "officialId": "ted-cruz",
-  "cycle": "2024",
-  "totalRaised": 42560000,
-  "totalSpent": 39870000,
-  "cashOnHand": 3215000,
+  "cycle": "2025-2026",
+  "totalRaised": 8266381.4,
+  "totalSpent": 7469079.02,
+  "cashOnHand": 2584009.58,
   "topDonors": [
     {
-      "name": "Senate Conservatives Fund",
-      "type": "pac",
-      "totalAmount": 250000,
-      "city": "Washington",
-      "state": "DC"
+      "name": "Retired contributors",
+      "type": "individual",
+      "totalAmount": 2497566.54,
+      "occupation": "RETIRED"
     },
     {
-      "name": "Club for Growth",
-      "type": "pac",
-      "totalAmount": 200000,
-      "city": "Washington",
-      "state": "DC"
+      "name": "CEO contributors",
+      "type": "individual",
+      "totalAmount": 194436.19,
+      "occupation": "CEO"
     },
     {
-      "name": "Texas Oil & Gas Association PAC",
-      "type": "pac",
-      "totalAmount": 150000,
-      "city": "Austin",
-      "state": "TX"
+      "name": "Consultant contributors",
+      "type": "individual",
+      "totalAmount": 134253.14,
+      "occupation": "CONSULTANT"
     },
     {
-      "name": "National Rifle Association PAC",
-      "type": "pac",
-      "totalAmount": 100000,
-      "city": "Fairfax",
-      "state": "VA"
+      "name": "Information requested per best efforts contributors",
+      "type": "individual",
+      "totalAmount": 116790,
+      "occupation": "INFORMATION REQUESTED PER BEST EFFORTS"
     },
     {
-      "name": "Goldman Sachs Group",
-      "type": "corporation",
-      "totalAmount": 85000,
-      "city": "New York",
-      "state": "NY"
+      "name": "Attorney contributors",
+      "type": "individual",
+      "totalAmount": 77394.51,
+      "occupation": "ATTORNEY"
     },
     {
-      "name": "Koch Industries",
-      "type": "corporation",
-      "totalAmount": 75000,
-      "city": "Wichita",
-      "state": "KS"
+      "name": "Owner contributors",
+      "type": "individual",
+      "totalAmount": 70838.18,
+      "occupation": "OWNER"
     },
     {
-      "name": "National Republican Senatorial Committee",
-      "type": "pac",
-      "totalAmount": 125000,
-      "city": "Washington",
-      "state": "DC"
+      "name": "Homemaker contributors",
+      "type": "individual",
+      "totalAmount": 69200.07,
+      "occupation": "HOMEMAKER"
     },
     {
-      "name": "Hillcrest Capital Management",
-      "type": "corporation",
-      "totalAmount": 65000,
-      "city": "Dallas",
-      "state": "TX"
+      "name": "Investor contributors",
+      "type": "individual",
+      "totalAmount": 67639,
+      "occupation": "INVESTOR"
     }
   ],
   "donorBreakdown": {
-    "individual": 52,
-    "pac": 38,
+    "individual": 81.9,
+    "pac": 4.4,
     "selfFunded": 0,
-    "smallDollar": 35,
-    "largeDollar": 65
+    "smallDollar": 68.3,
+    "largeDollar": 31.5
   },
   "geographicBreakdown": {
     "inDistrict": 0,
-    "inState": 45,
-    "outOfState": 55
+    "inState": 51.3,
+    "outOfState": 48.7
   },
   "industrySectors": [
-    { "sector": "Oil & Gas", "amount": 5532800, "percentage": 13 },
-    { "sector": "Securities & Investment", "amount": 4256000, "percentage": 10 },
-    { "sector": "Lawyers & Lobbyists", "amount": 3830400, "percentage": 9 },
-    { "sector": "Real Estate", "amount": 3404800, "percentage": 8 },
-    { "sector": "Retired", "amount": 2979200, "percentage": 7 },
-    { "sector": "Health Professionals", "amount": 2553600, "percentage": 6 }
-  ],
-  "lastUpdated": "2026-01-15",
-  "sources": [
     {
-      "name": "Federal Election Commission",
-      "url": "https://www.fec.gov/data/candidate/S2TX00312/",
-      "retrievedDate": "2026-01-15"
+      "sector": "Retired occupation aggregate",
+      "amount": 2497566.54,
+      "percentage": 30.2
     },
     {
-      "name": "OpenSecrets",
-      "url": "https://www.opensecrets.org/members-of-congress/ted-cruz/summary",
-      "retrievedDate": "2026-01-15"
+      "sector": "Executive occupation aggregate",
+      "amount": 250735.89,
+      "percentage": 3
+    },
+    {
+      "sector": "Consultant occupation aggregate",
+      "amount": 134253.14,
+      "percentage": 1.6
+    },
+    {
+      "sector": "Attorney/lawyer occupation aggregate",
+      "amount": 131464.76,
+      "percentage": 1.6
+    },
+    {
+      "sector": "Owner occupation aggregate",
+      "amount": 70838.18,
+      "percentage": 0.9
+    },
+    {
+      "sector": "Investor occupation aggregate",
+      "amount": 67639,
+      "percentage": 0.8
+    }
+  ],
+  "lastUpdated": "2026-06-21",
+  "sources": [
+    {
+      "name": "Federal Election Commission committee profile",
+      "url": "https://www.fec.gov/data/committee/C00492785/?cycle=2026",
+      "retrievedDate": "2026-06-21"
+    },
+    {
+      "name": "OpenFEC committee totals, state, size, and occupation aggregates",
+      "url": "https://api.open.fec.gov/developers/",
+      "retrievedDate": "2026-06-21"
     }
   ]
 }
