@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Import recent Texas Legislature record-vote snapshots.
+"""Import recent Texas House record-vote snapshots.
 
 Sources:
 - Texas Legislature Online House votes-by-date pages.
@@ -8,9 +8,6 @@ Sources:
 
 This writes source-backed vote snapshots only. It does not assign left/right
 ideology scores; that still requires separate issue-direction review.
-
-Texas Senate history pages use a different vote reference shape. They are
-intentionally left out until a Senate journal parser is added.
 """
 
 from __future__ import annotations
@@ -21,6 +18,7 @@ import datetime as dt
 import html
 import json
 import re
+import time
 import unicodedata
 import urllib.parse
 import urllib.request
@@ -44,7 +42,7 @@ RECORD_VOTE_URL = (
 
 TODAY = dt.date.today()
 DEFAULT_START = dt.date(2025, 1, 14)
-DEFAULT_LIMIT = 0
+DEFAULT_STORED_VOTE_ROW_LIMIT = 60
 
 
 def request(url: str, data: bytes | None = None) -> urllib.request.Request:
@@ -103,7 +101,7 @@ def iso_date(value: str) -> str:
     return parse_date(value).isoformat()
 
 
-def load_texas_officials() -> tuple[dict[str, dict[str, Any]], dict[str, set[str]], dict[str, str]]:
+def load_texas_house_officials() -> tuple[dict[str, dict[str, Any]], dict[str, set[str]], dict[str, str]]:
     officials: dict[str, dict[str, Any]] = {}
     alias_candidates: dict[str, set[str]] = {}
     chamber_by_id: dict[str, str] = {}
@@ -115,9 +113,11 @@ def load_texas_officials() -> tuple[dict[str, dict[str, Any]], dict[str, set[str
         official_id = str(official.get("id"))
         if not official_id:
             continue
-        officials[official_id] = official
         position = str(official.get("position", ""))
-        chamber_by_id[official_id] = "senate" if "Senator" in position else "house"
+        if position != "State Representative":
+            continue
+        officials[official_id] = official
+        chamber_by_id[official_id] = "house"
 
         first = clean_text(official.get("firstName"))
         last = clean_text(official.get("lastName"))
@@ -225,7 +225,20 @@ def fetch_record_vote(vote: dict[str, str]) -> dict[str, Any] | None:
             f"type={vote.get('type', '')}",
         ]
     ).encode("utf-8")
-    raw = fetch_text(RECORD_VOTE_URL, data=body, timeout=30).strip()
+    last_exc: Exception | None = None
+    for attempt in range(1, 4):
+        try:
+            raw = fetch_text(RECORD_VOTE_URL, data=body, timeout=45).strip()
+            break
+        except Exception as exc:
+            last_exc = exc
+            if attempt == 3:
+                raise
+            time.sleep(attempt * 0.75)
+    else:
+        if last_exc:
+            raise last_exc
+        return None
     try:
         decoded = ast.literal_eval(raw)
         payload = json.loads(decoded)
@@ -305,7 +318,8 @@ def build_vote_rows(
     description_value = clean_text(payload.get("DescriptionValue")) or vote.get("bill") or "Texas Legislature record vote"
     totals = clean_text(payload.get("Totals"))
     chamber = "house" if vote["chamber"] == "H" else "senate"
-    source_id = f"tx-{vote['legSess'].lower()}-{vote['chamber'].lower()}-{int(vote['recordVote']):04d}"
+    bill_key = normalize_key(vote.get("bill") or description_value)[:40] or "record-vote"
+    source_id = f"tx-{vote['legSess'].lower()}-{vote['chamber'].lower()}-{int(vote['recordVote']):04d}-{bill_key}"
     meta = {
         "sourceId": source_id,
         "sourceName": "Texas Legislature Online record vote",
@@ -349,7 +363,7 @@ def collect_vote_specs(start: dt.date, end: dt.date, history_workers: int) -> tu
 
     days = date_range(start, end)
     for day_index, day in enumerate(days, start=1):
-        for chamber in ["H", "S"]:
+        for chamber in ["H"]:
             try:
                 page_html = fetch_text(vote_date_url(chamber, day), timeout=12)
             except Exception:
@@ -361,7 +375,7 @@ def collect_vote_specs(start: dt.date, end: dt.date, history_workers: int) -> tu
                 direct_votes[key] = vote
         if day_index % 30 == 0 or day_index == len(days):
             print(
-                f"Checked {day_index}/{len(days)} Texas calendar days; "
+                    f"Checked {day_index}/{len(days)} Texas House calendar days; "
                 f"{len(bill_links)} bill pages queued, {len(direct_votes)} direct record votes found.",
                 flush=True,
             )
@@ -398,16 +412,16 @@ def main() -> int:
     parser.add_argument(
         "--max-votes-per-official",
         type=int,
-        default=DEFAULT_LIMIT,
-        help="Maximum recent votes to keep per official. Use 0 for every collected vote.",
+        default=DEFAULT_STORED_VOTE_ROW_LIMIT,
+        help="Maximum recent votes to store per official. Full loaded vote counts stay in summary. Use 0 to store every collected vote.",
     )
     parser.add_argument("--history-workers", type=int, default=8, help="Concurrent Texas bill-history page fetches")
-    parser.add_argument("--vote-workers", type=int, default=12, help="Concurrent Texas record-vote payload fetches")
+    parser.add_argument("--vote-workers", type=int, default=8, help="Concurrent Texas record-vote payload fetches")
     args = parser.parse_args()
 
     start = dt.date.fromisoformat(args.start)
     end = dt.date.fromisoformat(args.end)
-    officials, alias_candidates, chamber_by_id = load_texas_officials()
+    officials, alias_candidates, chamber_by_id = load_texas_house_officials()
     tx_ids = set(officials)
     vote_specs, pages_checked, bill_count = collect_vote_specs(start, end, args.history_workers)
     print(
@@ -439,16 +453,17 @@ def main() -> int:
     for path in VOTE_RECORDS_DIR.glob("*.json"):
         existing = read_json(path) or {}
         if path.stem in tx_ids and existing.get("level") == "state":
-            path.unlink()
+            if existing.get("chamber") == "house":
+                path.unlink()
 
     written = 0
     for official_id, official in sorted(officials.items()):
-        votes = rows_by_official.get(official_id, [])
-        if not votes:
-            continue
-        votes = sorted(votes, key=lambda item: (item["date"], item["rollCall"]), reverse=True)
+        votes = sorted(rows_by_official.get(official_id, []), key=lambda item: (item["date"], item["rollCall"]), reverse=True)
+        summary = summarize_votes(votes)
         if args.max_votes_per_official > 0:
-            votes = votes[: args.max_votes_per_official]
+            stored_votes = votes[: args.max_votes_per_official]
+        else:
+            stored_votes = votes
         chamber = chamber_by_id.get(official_id, "house")
         write_json(
             VOTE_RECORDS_DIR / f"{official_id}.json",
@@ -461,8 +476,13 @@ def main() -> int:
                 "session": f"Texas Legislature records from {start.isoformat()} through {end.isoformat()}",
                 "lastUpdated": TODAY.isoformat(),
                 "sourceLinks": source_links_for_chamber(chamber),
-                "summary": summarize_votes(votes),
-                "votes": votes,
+                "summary": summary,
+                "storedVoteRows": len(stored_votes),
+                "voteRowStorageNote": (
+                    "Full Texas House roll-call rows loaded in this window are counted in summary; "
+                    f"the latest {len(stored_votes)} rows are stored for profile display."
+                ),
+                "votes": stored_votes,
             },
         )
         written += 1

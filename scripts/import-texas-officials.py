@@ -132,7 +132,7 @@ def clean_generated_dirs() -> None:
 
     state_dir = OFFICIALS_DIR / "state"
     state_dir.mkdir(parents=True, exist_ok=True)
-    for item in state_dir.glob("tx-*.json"):
+    for item in list(state_dir.glob("tx-house-*.json")) + list(state_dir.glob("tx-senate-*.json")):
         item.unlink()
 
     for subdir in ["state-house", "state-senate"]:

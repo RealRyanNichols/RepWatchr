@@ -228,9 +228,10 @@ export interface PublicVoteRecordVote {
   sourceName: string;
   sourceUrl: string;
   sourceXmlUrl?: string;
+  sourceLookupUrl?: string;
   chamber: "house" | "senate";
-  congress: number;
-  session: number;
+  congress?: number;
+  session: number | string;
   rollCall: number;
   date: string;
   issue: string;

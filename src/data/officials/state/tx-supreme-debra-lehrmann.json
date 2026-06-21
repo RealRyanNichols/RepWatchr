@@ -1,0 +1,48 @@
+{
+  "id": "tx-supreme-debra-lehrmann",
+  "name": "Debra Lehrmann",
+  "firstName": "Debra",
+  "lastName": "Lehrmann",
+  "party": "NP",
+  "level": "state",
+  "position": "Justice, Supreme Court of Texas",
+  "district": "Place 3",
+  "jurisdiction": "Texas Supreme Court",
+  "county": [
+    "Texas"
+  ],
+  "termStart": "Source review pending",
+  "termEnd": "Current court term pending election-record review",
+  "contactInfo": {
+    "office": "Supreme Court Building, 201 W. 14th Street, Room 104, Austin, Texas 78701",
+    "phone": "(512) 463-1312",
+    "website": "https://www.txcourts.gov/supreme/about-the-court/justices/justice-debra-lehrmann/"
+  },
+  "bio": "Debra Lehrmann serves as Place 3 Justice on the Supreme Court of Texas. The Texas Judicial Branch describes her as the Court's senior justice and longest-serving woman justice in Texas history.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "TX",
+  "sourceLinks": [
+    {
+      "title": "Official Texas Judicial Branch justice profile",
+      "url": "https://www.txcourts.gov/supreme/about-the-court/justices/justice-debra-lehrmann/"
+    },
+    {
+      "title": "Texas Supreme Court justices roster",
+      "url": "https://www.txcourts.gov/supreme/about-the-court/justices/"
+    },
+    {
+      "title": "Texas Supreme Court orders and opinions",
+      "url": "https://www.txcourts.gov/supreme/orders-opinions/"
+    },
+    {
+      "title": "Texas Supreme Court case search",
+      "url": "https://search.txcourts.gov/CaseSearch.aspx?coa=cossup"
+    },
+    {
+      "title": "Texas Supreme Court home",
+      "url": "https://www.txcourts.gov/supreme/"
+    }
+  ],
+  "lastVerifiedAt": "2026-06-21"
+}

@@ -28,5 +28,7 @@
     "notVoting": 0,
     "other": 0
   },
+  "storedVoteRows": 0,
+  "voteRowStorageNote": "Full Texas Senate journal roll-call rows loaded in this window are counted in summary; the latest 0 rows are stored for profile display.",
   "votes": []
 }

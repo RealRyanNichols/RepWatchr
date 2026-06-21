@@ -1,0 +1,48 @@
+{
+  "id": "tx-supreme-john-phillip-devine",
+  "name": "John Phillip Devine",
+  "firstName": "John Phillip",
+  "lastName": "Devine",
+  "party": "NP",
+  "level": "state",
+  "position": "Justice, Supreme Court of Texas",
+  "district": "Place 4",
+  "jurisdiction": "Texas Supreme Court",
+  "county": [
+    "Texas"
+  ],
+  "termStart": "2013-01",
+  "termEnd": "Current court term pending election-record review",
+  "contactInfo": {
+    "office": "Supreme Court Building, 201 W. 14th Street, Room 104, Austin, Texas 78701",
+    "phone": "(512) 463-1312",
+    "website": "https://www.txcourts.gov/supreme/about-the-court/justices/justice-john-phillip-devine/"
+  },
+  "bio": "John Phillip Devine serves as Place 4 Justice on the Supreme Court of Texas. The Texas Judicial Branch says he was first elected to the Court in November 2012.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "TX",
+  "sourceLinks": [
+    {
+      "title": "Official Texas Judicial Branch justice profile",
+      "url": "https://www.txcourts.gov/supreme/about-the-court/justices/justice-john-phillip-devine/"
+    },
+    {
+      "title": "Texas Supreme Court justices roster",
+      "url": "https://www.txcourts.gov/supreme/about-the-court/justices/"
+    },
+    {
+      "title": "Texas Supreme Court orders and opinions",
+      "url": "https://www.txcourts.gov/supreme/orders-opinions/"
+    },
+    {
+      "title": "Texas Supreme Court case search",
+      "url": "https://search.txcourts.gov/CaseSearch.aspx?coa=cossup"
+    },
+    {
+      "title": "Texas Supreme Court home",
+      "url": "https://www.txcourts.gov/supreme/"
+    }
+  ],
+  "lastVerifiedAt": "2026-06-21"
+}

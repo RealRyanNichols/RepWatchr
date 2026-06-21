@@ -39,7 +39,7 @@ HISTORY_URL = f"{TLO_BASE}/billlookup/History.aspx"
 
 TODAY = dt.date.today()
 DEFAULT_START = dt.date(2025, 1, 14)
-DEFAULT_LIMIT = 120
+DEFAULT_STORED_VOTE_ROW_LIMIT = 60
 
 LABEL_PATTERN = re.compile(r"\b(Yeas|Nays|Present(?:, not voting|-not voting|-not-voting)?|Present|Absent-excused|Absent):\s*", re.I)
 STOP_PATTERN = re.compile(
@@ -471,7 +471,12 @@ def main() -> int:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--start", default=DEFAULT_START.isoformat(), help="Start date, YYYY-MM-DD")
     parser.add_argument("--end", default=TODAY.isoformat(), help="End date, YYYY-MM-DD")
-    parser.add_argument("--max-votes-per-official", type=int, default=DEFAULT_LIMIT)
+    parser.add_argument(
+        "--max-votes-per-official",
+        type=int,
+        default=DEFAULT_STORED_VOTE_ROW_LIMIT,
+        help="Maximum recent votes to store per official. Full loaded vote counts stay in summary. Use 0 to store every collected vote.",
+    )
     parser.add_argument("--history-workers", type=int, default=10)
     args = parser.parse_args()
 
@@ -508,8 +513,11 @@ def main() -> int:
     for official_id, official in sorted(officials.items()):
         votes = rows_by_official.get(official_id, [])
         votes = sorted(votes, key=lambda item: (item["date"], item["rollCall"], item["issue"]), reverse=True)
+        summary = summarize_votes(votes)
         if args.max_votes_per_official > 0:
-            votes = votes[: args.max_votes_per_official]
+            stored_votes = votes[: args.max_votes_per_official]
+        else:
+            stored_votes = votes
         write_json(
             VOTE_RECORDS_DIR / f"{official_id}.json",
             {
@@ -521,8 +529,13 @@ def main() -> int:
                 "session": f"Texas Senate Journal records from {start.isoformat()} through {end.isoformat()}",
                 "lastUpdated": TODAY.isoformat(),
                 "sourceLinks": source_links(),
-                "summary": summarize_votes(votes),
-                "votes": votes,
+                "summary": summary,
+                "storedVoteRows": len(stored_votes),
+                "voteRowStorageNote": (
+                    "Full Texas Senate journal roll-call rows loaded in this window are counted in summary; "
+                    f"the latest {len(stored_votes)} rows are stored for profile display."
+                ),
+                "votes": stored_votes,
             },
         )
         written += 1

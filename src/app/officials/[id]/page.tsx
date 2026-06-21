@@ -546,6 +546,22 @@ function ReviewStep({ label, title, done }: { label: string; title: string; done
 }
 
 function voteSourceLinksForOfficial(official: Official) {
+  if (isJudicialOfficial(official)) {
+    return [
+      {
+        title: "Texas Supreme Court orders and opinions",
+        url: "https://www.txcourts.gov/supreme/orders-opinions/",
+      },
+      {
+        title: "Texas Supreme Court case search",
+        url: "https://search.txcourts.gov/CaseSearch.aspx?coa=cossup",
+      },
+      {
+        title: "Texas Supreme Court justices",
+        url: "https://www.txcourts.gov/supreme/about-the-court/justices/",
+      },
+    ];
+  }
   if (official.level === "federal" && official.position === "U.S. Senator") {
     return [
       {
@@ -573,18 +589,27 @@ function voteSourceLinksForOfficial(official: Official) {
   return official.sourceLinks ?? [];
 }
 
+function isJudicialOfficial(official: Official) {
+  const text = `${official.position} ${official.jurisdiction}`.toLowerCase();
+  return text.includes("supreme court") || text.includes("court of criminal appeals");
+}
+
 function VoteRecordSourcePanel({ official }: { official: Official }) {
   const sources = voteSourceLinksForOfficial(official);
+  const judicial = isJudicialOfficial(official);
 
   return (
     <section className="rounded-2xl border border-amber-200 bg-amber-50 p-5 shadow-sm">
       <p className="text-xs font-black uppercase tracking-wide text-amber-800">
-        Public vote record snapshot
+        {judicial ? "Public judicial record snapshot" : "Public vote record snapshot"}
       </p>
-      <h2 className="mt-1 text-xl font-black text-gray-950">Vote source path loaded</h2>
+      <h2 className="mt-1 text-xl font-black text-gray-950">
+        {judicial ? "Decision source path loaded" : "Vote source path loaded"}
+      </h2>
       <p className="mt-2 max-w-4xl text-sm font-semibold leading-6 text-amber-950">
-        This profile has a public vote-source path, but RepWatchr has not loaded a static roll-call snapshot for this
-        office yet. That is a data gap, not a clean voting record.
+        {judicial
+          ? "Judicial records are tracked through opinions, orders, and case documents, not legislative roll-call votes. RepWatchr has the official source path loaded, but a static decision snapshot has not been imported yet."
+          : "This profile has a public vote-source path, but RepWatchr has not loaded a static roll-call snapshot for this office yet. That is a data gap, not a clean voting record."}
       </p>
       <div className="mt-4 flex flex-wrap gap-2">
         {sources.map((source) => (
