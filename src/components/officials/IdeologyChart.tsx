@@ -80,6 +80,15 @@ export default function IdeologyChart({ profile }: { profile: OfficialIdeologyPr
         )}
       </div>
 
+      <div className="mt-4 rounded-xl border border-blue-100 bg-blue-50 p-4">
+        <p className="text-sm font-black text-blue-950">Read this as ideology, not approval.</p>
+        <p className="mt-1 text-sm font-semibold leading-6 text-blue-900">
+          {formatScore(profile.ideologyScore)} means this voting pattern sits on the right side of the vote-axis model.
+          It does not mean the official is doing a good job, keeping promises, following the Constitution, or serving constituents.
+          Those are separate scorecard, funding, red-flag, and verified citizen signals below.
+        </p>
+      </div>
+
       <div className="mt-5 rounded-xl border border-slate-200 bg-slate-50 p-4">
         <div className="flex flex-col gap-2 sm:flex-row sm:items-center sm:justify-between">
           <div>

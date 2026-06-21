@@ -13,13 +13,8 @@ import type { FundingSummary } from "@/types";
 
 const COLORS = ["#10b981", "#3b82f6", "#f59e0b"];
 
-function formatCurrency(amount: number): string {
-  return new Intl.NumberFormat("en-US", {
-    style: "currency",
-    currency: "USD",
-    minimumFractionDigits: 0,
-    maximumFractionDigits: 0,
-  }).format(amount);
+function formatPercent(amount: number): string {
+  return `${Number.isInteger(amount) ? amount : amount.toFixed(1)}%`;
 }
 
 interface GeographicBreakdownProps {
@@ -42,6 +37,9 @@ export default function GeographicBreakdown({
       <h3 className="mb-4 text-sm font-semibold text-gray-900 dark:text-white">
         Geographic Breakdown
       </h3>
+      <p className="mb-4 text-xs font-medium leading-5 text-gray-500 dark:text-gray-400">
+        Percent of coded contribution geography. For statewide senators, in-state is the key constituent geography.
+      </p>
 
       {/* Simple stat bars for mobile */}
       <div className="mb-4 space-y-3 sm:hidden">
@@ -54,7 +52,7 @@ export default function GeographicBreakdown({
                   {item.name}
                 </span>
                 <span className="font-semibold text-gray-900 dark:text-white">
-                  {formatCurrency(item.amount)}
+                  {formatPercent(item.amount)}
                 </span>
               </div>
               <div className="mt-1 h-2 w-full overflow-hidden rounded-full bg-gray-200 dark:bg-gray-700">
@@ -67,7 +65,7 @@ export default function GeographicBreakdown({
                 />
               </div>
               <p className="mt-0.5 text-xs text-gray-500 dark:text-gray-400">
-                {pct.toFixed(1)}%
+                Share of coded geography: {pct.toFixed(1)}%
               </p>
             </div>
           );
@@ -80,7 +78,8 @@ export default function GeographicBreakdown({
           <BarChart data={data} layout="vertical" margin={{ left: 20 }}>
             <XAxis
               type="number"
-              tickFormatter={(v: number) => formatCurrency(v)}
+              domain={[0, 100]}
+              tickFormatter={(v: number) => formatPercent(v)}
               tick={{ fontSize: 12 }}
             />
             <YAxis
@@ -90,7 +89,7 @@ export default function GeographicBreakdown({
               tick={{ fontSize: 12 }}
             />
             <Tooltip
-              formatter={(value) => formatCurrency(Number(value))}
+              formatter={(value) => formatPercent(Number(value))}
               contentStyle={{
                 borderRadius: "0.5rem",
                 border: "1px solid #e5e7eb",

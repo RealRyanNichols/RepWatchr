@@ -10,6 +10,10 @@ import {
 } from "@/lib/universal-scorecards";
 
 type Grade = "A" | "B" | "C" | "D" | "F";
+type VoterScope = "in_district" | "in_state" | "out_of_district" | "out_of_state" | "verified_unknown";
+type VoteAgain = "yes" | "no" | "unsure" | "not_eligible";
+type LastVoteChoice = "voted_for" | "voted_against" | "did_not_vote" | "not_eligible" | "prefer_not_to_say";
+type ApprovalAfterVote = "approve" | "disapprove" | "mixed" | "not_applicable";
 
 type SummaryRow = {
   target_type: ProfileScorecardTargetType;
@@ -26,6 +30,15 @@ type SummaryRow = {
 type MyVoteRow = {
   grade: Grade;
   rationale: string | null;
+  voter_scope?: VoterScope | null;
+  would_vote_again?: VoteAgain | null;
+  voted_for_last_time?: LastVoteChoice | null;
+  approval_after_vote?: ApprovalAfterVote | null;
+  top_issue?: string | null;
+};
+
+type ScopeSummaryRow = SummaryRow & {
+  voter_scope: VoterScope;
 };
 
 type ProfileScorecardVoteProps = {
@@ -33,6 +46,9 @@ type ProfileScorecardVoteProps = {
   targetId: string;
   targetName: string;
   targetPath: string;
+  officialState?: string;
+  officialDistrict?: string;
+  officialCounties?: string[];
   compact?: boolean;
 };
 
@@ -62,6 +78,36 @@ const gradeColors: Record<Grade, string> = {
 
 const grades: Grade[] = ["A", "B", "C", "D", "F"];
 
+const scopeLabels: Record<VoterScope, string> = {
+  in_district: "In-district constituent",
+  in_state: "In-state constituent",
+  out_of_district: "Out-of-district voter",
+  out_of_state: "Out-of-state voter",
+  verified_unknown: "Verified voter",
+};
+
+const voteAgainLabels: Record<VoteAgain, string> = {
+  yes: "Yes",
+  no: "No",
+  unsure: "Unsure",
+  not_eligible: "Not eligible",
+};
+
+const lastVoteLabels: Record<LastVoteChoice, string> = {
+  voted_for: "I voted for this official",
+  voted_against: "I voted against this official",
+  did_not_vote: "I did not vote in that race",
+  not_eligible: "I was not eligible",
+  prefer_not_to_say: "Prefer not to say",
+};
+
+const approvalAfterVoteLabels: Record<ApprovalAfterVote, string> = {
+  approve: "I like what they are doing",
+  disapprove: "I do not like what they are doing",
+  mixed: "Mixed / depends on the issue",
+  not_applicable: "Not applicable",
+};
+
 function averageToGrade(score: number | null | undefined): string {
   if (score === null || score === undefined) return "-";
   if (score >= 90) return "A";
@@ -69,6 +115,61 @@ function averageToGrade(score: number | null | undefined): string {
   if (score >= 50) return "C";
   if (score >= 30) return "D";
   return "F";
+}
+
+function normalizeText(value: string | null | undefined): string {
+  return (value ?? "").trim().toLowerCase();
+}
+
+function normalizeCounty(value: string | null | undefined): string {
+  return normalizeText(value).replace(/\s+county$/, "");
+}
+
+function getProfileState(
+  profile: { county?: string; state?: string } | null,
+  officialState?: string,
+) {
+  const directState = profile?.state?.trim().toUpperCase();
+  if (directState) return directState;
+  return profile?.county && officialState ? officialState.toUpperCase() : "";
+}
+
+function resolveVoterScope({
+  profile,
+  officialState,
+  officialDistrict,
+  officialCounties = [],
+}: {
+  profile: { county?: string; district?: string; state?: string; verified?: boolean } | null;
+  officialState?: string;
+  officialDistrict?: string;
+  officialCounties?: string[];
+}): VoterScope {
+  if (!profile?.verified) return "verified_unknown";
+
+  const profileState = getProfileState(profile, officialState);
+  const normalizedOfficialState = officialState?.trim().toUpperCase() ?? "";
+  if (normalizedOfficialState && profileState && profileState !== normalizedOfficialState) {
+    return "out_of_state";
+  }
+
+  const profileDistrict = normalizeText(profile.district);
+  const targetDistrict = normalizeText(officialDistrict);
+  if (profileDistrict && targetDistrict && profileDistrict === targetDistrict) {
+    return "in_district";
+  }
+
+  const profileCounty = normalizeCounty(profile.county);
+  const countySet = new Set(officialCounties.map(normalizeCounty).filter(Boolean));
+  if (profileCounty && countySet.size > 0) {
+    return countySet.has(profileCounty) ? "in_district" : "out_of_district";
+  }
+
+  if (normalizedOfficialState && profileState === normalizedOfficialState) {
+    return "in_state";
+  }
+
+  return "verified_unknown";
 }
 
 function applySummaryChange(
@@ -127,6 +228,46 @@ function applySummaryChange(
   return next;
 }
 
+function combineScopeRows(rows: ScopeSummaryRow[], scopes: VoterScope[]): SummaryRow | null {
+  const matching = rows.filter((row) => scopes.includes(row.voter_scope));
+  if (matching.length === 0) return null;
+
+  const combined = matching.reduce<SummaryRow>(
+    (acc, row) => ({
+      target_type: row.target_type,
+      target_id: row.target_id,
+      total_votes: acc.total_votes + row.total_votes,
+      a_count: acc.a_count + row.a_count,
+      b_count: acc.b_count + row.b_count,
+      c_count: acc.c_count + row.c_count,
+      d_count: acc.d_count + row.d_count,
+      f_count: acc.f_count + row.f_count,
+      average_score: null,
+    }),
+    {
+      target_type: matching[0].target_type,
+      target_id: matching[0].target_id,
+      total_votes: 0,
+      a_count: 0,
+      b_count: 0,
+      c_count: 0,
+      d_count: 0,
+      f_count: 0,
+      average_score: null,
+    },
+  );
+
+  if (combined.total_votes === 0) return combined;
+  const totalScore =
+    combined.a_count * gradeScores.A +
+    combined.b_count * gradeScores.B +
+    combined.c_count * gradeScores.C +
+    combined.d_count * gradeScores.D +
+    combined.f_count * gradeScores.F;
+  combined.average_score = Math.round((totalScore / combined.total_votes) * 10) / 10;
+  return combined;
+}
+
 function GradeBars({ row, compact }: { row: SummaryRow | null; compact?: boolean }) {
   if (!row || row.total_votes === 0) {
     return <p className="text-xs font-semibold text-slate-500">No verified scorecard votes yet.</p>;
@@ -162,23 +303,78 @@ function GradeBars({ row, compact }: { row: SummaryRow | null; compact?: boolean
   );
 }
 
+function ScopeCards({ rows }: { rows: ScopeSummaryRow[] }) {
+  const orderedScopes: VoterScope[] = [
+    "in_district",
+    "in_state",
+    "out_of_district",
+    "out_of_state",
+    "verified_unknown",
+  ];
+  const rowByScope = new Map(rows.map((row) => [row.voter_scope, row]));
+
+  return (
+    <div className="grid gap-2 sm:grid-cols-2 lg:grid-cols-5">
+      {orderedScopes.map((scope) => {
+        const row = rowByScope.get(scope);
+        return (
+          <div key={scope} className="rounded-xl border border-slate-200 bg-slate-50 p-3">
+            <p className="text-[11px] font-black uppercase tracking-wide text-slate-500">
+              {scopeLabels[scope]}
+            </p>
+            <div className="mt-1 flex items-end justify-between gap-3">
+              <p className="text-2xl font-black text-slate-950">
+                {averageToGrade(row?.average_score)}
+              </p>
+              <p className="text-xs font-bold text-slate-500">
+                {row?.total_votes ?? 0} vote{row?.total_votes === 1 ? "" : "s"}
+              </p>
+            </div>
+          </div>
+        );
+      })}
+    </div>
+  );
+}
+
 export default function ProfileScorecardVote({
   targetType,
   targetId,
   targetName,
   targetPath,
+  officialState,
+  officialDistrict,
+  officialCounties = [],
   compact = false,
 }: ProfileScorecardVoteProps) {
   const { user, profile, loading: authLoading } = useAuth();
   const supabase = useMemo(() => createClient(), []);
   const [summary, setSummary] = useState<SummaryRow | null>(null);
+  const [scopeRows, setScopeRows] = useState<ScopeSummaryRow[]>([]);
   const [currentGrade, setCurrentGrade] = useState<Grade | null>(null);
   const [rationale, setRationale] = useState("");
+  const [wouldVoteAgain, setWouldVoteAgain] = useState<VoteAgain>("unsure");
+  const [votedForLastTime, setVotedForLastTime] = useState<LastVoteChoice>("prefer_not_to_say");
+  const [approvalAfterVote, setApprovalAfterVote] = useState<ApprovalAfterVote>("mixed");
+  const [topIssue, setTopIssue] = useState("");
   const [loading, setLoading] = useState(true);
   const [saving, setSaving] = useState(false);
   const [message, setMessage] = useState("");
   const [unavailable, setUnavailable] = useState(false);
   const targetLabel = getProfileScorecardLabel(targetType);
+  const voterScope = resolveVoterScope({
+    profile: profile as ({ county?: string; district?: string; state?: string; verified?: boolean } | null),
+    officialState,
+    officialDistrict,
+    officialCounties,
+  });
+  const constituentSummary = useMemo(
+    () => {
+      const localRows = combineScopeRows(scopeRows, ["in_district", "in_state"]);
+      return scopeRows.length > 0 ? localRows : summary;
+    },
+    [scopeRows, summary],
+  );
 
   useEffect(() => {
     let cancelled = false;
@@ -188,17 +384,22 @@ export default function ProfileScorecardVote({
       setUnavailable(false);
       setMessage("");
 
-      const [summaryResult, mineResult] = await Promise.all([
+      const [summaryResult, scopeResult, mineResult] = await Promise.all([
         supabase
           .from("profile_scorecard_summary")
           .select("*")
           .eq("target_type", targetType)
           .eq("target_id", targetId)
           .maybeSingle(),
+        supabase
+          .from("profile_scorecard_summary_by_scope")
+          .select("*")
+          .eq("target_type", targetType)
+          .eq("target_id", targetId),
         user
           ? supabase
               .from("profile_scorecard_votes")
-              .select("grade, rationale")
+              .select("*")
               .eq("user_id", user.id)
               .eq("target_type", targetType)
               .eq("target_id", targetId)
@@ -215,9 +416,14 @@ export default function ProfileScorecardVote({
       }
 
       setSummary((summaryResult.data as SummaryRow | null) ?? null);
+      setScopeRows(scopeResult.error ? [] : ((scopeResult.data as ScopeSummaryRow[] | null) ?? []));
       const mine = mineResult.data as MyVoteRow | null;
       setCurrentGrade(mine?.grade ?? null);
       setRationale(mine?.rationale ?? "");
+      setWouldVoteAgain(mine?.would_vote_again ?? "unsure");
+      setVotedForLastTime(mine?.voted_for_last_time ?? "prefer_not_to_say");
+      setApprovalAfterVote(mine?.approval_after_vote ?? "mixed");
+      setTopIssue(mine?.top_issue ?? "");
       setLoading(false);
     }
 
@@ -235,7 +441,7 @@ export default function ProfileScorecardVote({
 
     const trimmedRationale = compact ? "" : rationale.trim();
 
-    if (currentGrade === grade && !trimmedRationale) {
+    if (compact && currentGrade === grade && !trimmedRationale) {
       const { error } = await supabase
         .from("profile_scorecard_votes")
         .delete()
@@ -254,30 +460,86 @@ export default function ProfileScorecardVote({
       return;
     }
 
-    const { error } = await supabase.from("profile_scorecard_votes").upsert(
-      {
-        user_id: user.id,
-        target_type: targetType,
-        target_id: targetId,
-        target_name: targetName,
-        target_path: targetPath,
-        grade,
-        score: gradeScores[grade],
-        county: profile.county,
-        rationale: trimmedRationale || null,
-      },
+    const basePayload = {
+      user_id: user.id,
+      target_type: targetType,
+      target_id: targetId,
+      target_name: targetName,
+      target_path: targetPath,
+      grade,
+      score: gradeScores[grade],
+      county: profile.county,
+      rationale: trimmedRationale || null,
+    };
+
+    const richPayload = {
+      ...basePayload,
+      voter_scope: voterScope,
+      voter_state: officialState ?? null,
+      voter_county: profile.county,
+      voter_district: profile.district ?? null,
+      would_vote_again: compact ? null : wouldVoteAgain,
+      voted_for_last_time: compact ? null : votedForLastTime,
+      approval_after_vote: compact ? null : approvalAfterVote,
+      top_issue: compact ? null : topIssue.trim() || null,
+    };
+
+    let { error } = await supabase.from("profile_scorecard_votes").upsert(
+      richPayload,
       { onConflict: "user_id,target_type,target_id" },
     );
+
+    if (error && /column|schema|cache|voter_|would_vote_again|voted_for_last_time|approval_after_vote|top_issue/i.test(error.message)) {
+      const fallback = await supabase.from("profile_scorecard_votes").upsert(
+        basePayload,
+        { onConflict: "user_id,target_type,target_id" },
+      );
+      error = fallback.error;
+    }
 
     if (error) {
       setMessage(error.message);
     } else {
       setSummary((current) => applySummaryChange(current, targetType, targetId, currentGrade, grade));
       setCurrentGrade(grade);
-      setMessage("Your verified scorecard vote is saved.");
+      setMessage("Your verified citizen scorecard is saved.");
     }
 
     setSaving(false);
+  }
+
+  async function removeVote() {
+    if (!user || !profile?.verified || saving || !currentGrade) return;
+
+    setSaving(true);
+    setMessage("");
+
+    const { error } = await supabase
+      .from("profile_scorecard_votes")
+      .delete()
+      .eq("user_id", user.id)
+      .eq("target_type", targetType)
+      .eq("target_id", targetId);
+
+    if (error) {
+      setMessage(error.message);
+    } else {
+      setSummary((current) => applySummaryChange(current, targetType, targetId, currentGrade, null));
+      setCurrentGrade(null);
+      setRationale("");
+      setTopIssue("");
+      setMessage("Your scorecard vote was removed.");
+    }
+
+    setSaving(false);
+  }
+
+  function saveCurrentQuestionnaire() {
+    if (!currentGrade) {
+      setMessage("Choose a letter grade before saving the questionnaire.");
+      return;
+    }
+    void saveGrade(currentGrade);
   }
 
   if (loading || authLoading) {
@@ -292,7 +554,7 @@ export default function ProfileScorecardVote({
   if (unavailable) {
     return (
       <div className={compact ? "rounded-xl border border-amber-200 bg-amber-50 p-3" : "rounded-2xl border border-amber-200 bg-amber-50 p-5 shadow-sm"}>
-        <p className="text-xs font-black uppercase tracking-wide text-amber-800">Universal scorecard</p>
+        <p className="text-xs font-black uppercase tracking-wide text-amber-800">Verified citizen scorecard</p>
         <p className="mt-1 text-sm font-semibold text-amber-900">
           Scorecard vote storage is waiting on the Supabase migration.
         </p>
@@ -304,35 +566,41 @@ export default function ProfileScorecardVote({
     <div className={compact ? "rounded-xl border border-slate-200 bg-white p-3" : "rounded-2xl border border-slate-200 bg-white p-5 shadow-sm"}>
       <div className="flex items-start justify-between gap-3">
         <div>
-          <p className="text-xs font-black uppercase tracking-wide text-red-700">Universal scorecard</p>
+          <p className="text-xs font-black uppercase tracking-wide text-red-700">Verified citizen scorecard</p>
           <h3 className={compact ? "mt-1 text-sm font-black text-slate-950" : "mt-1 text-lg font-black text-slate-950"}>
-            {compact ? targetName : `${targetName} scorecard vote`}
+            {compact ? targetName : `${targetName} citizen grade`}
           </h3>
           {!compact ? (
             <p className="mt-1 text-sm font-semibold leading-6 text-slate-600">
-              Verified RepWatchr profiles can vote once on this {targetLabel.toLowerCase()}. Updating a grade replaces the old vote.
+              Verified profiles can answer once on this {targetLabel.toLowerCase()}. Constituent, in-state, out-of-district, and out-of-state responses are tracked separately so outside votes do not control the local signal.
             </p>
           ) : null}
         </div>
         <div className="shrink-0 rounded-xl border border-slate-200 bg-slate-50 px-3 py-2 text-center">
-          <p className="text-xs font-black uppercase text-slate-500">Avg</p>
-          <p className="text-2xl font-black text-blue-950">{averageToGrade(summary?.average_score)}</p>
+          <p className="text-xs font-black uppercase text-slate-500">Local avg</p>
+          <p className="text-2xl font-black text-blue-950">{averageToGrade(constituentSummary?.average_score)}</p>
         </div>
       </div>
 
       {!compact ? (
-        <div className="mt-4 grid gap-4 sm:grid-cols-[0.7fr_1.3fr]">
-          <div className="rounded-xl border border-slate-200 bg-slate-50 p-4">
-            <p className="text-xs font-black uppercase tracking-wide text-slate-500">Verified votes</p>
-            <p className="mt-1 text-3xl font-black text-slate-950">{summary?.total_votes ?? 0}</p>
-            <p className="text-xs font-semibold text-slate-500">
-              Average score {summary?.average_score?.toFixed(1) ?? "-"} / 100
-            </p>
+        <>
+          <div className="mt-4 grid gap-4 sm:grid-cols-[0.7fr_1.3fr]">
+            <div className="rounded-xl border border-slate-200 bg-slate-50 p-4">
+              <p className="text-xs font-black uppercase tracking-wide text-slate-500">Verified constituent votes</p>
+              <p className="mt-1 text-3xl font-black text-slate-950">{constituentSummary?.total_votes ?? 0}</p>
+              <p className="text-xs font-semibold text-slate-500">
+                Average score {constituentSummary?.average_score?.toFixed(1) ?? "-"} / 100
+                {summary?.total_votes ? ` | ${summary.total_votes} all verified responses` : ""}
+              </p>
+            </div>
+            <div className="rounded-xl border border-slate-200 bg-slate-50 p-4">
+              <GradeBars row={constituentSummary} />
+            </div>
           </div>
-          <div className="rounded-xl border border-slate-200 bg-slate-50 p-4">
-            <GradeBars row={summary} />
+          <div className="mt-3">
+            <ScopeCards rows={scopeRows} />
           </div>
-        </div>
+        </>
       ) : (
         <div className="mt-3">
           <GradeBars row={summary} compact />
@@ -351,7 +619,12 @@ export default function ProfileScorecardVote({
           </div>
         ) : !profile?.verified ? (
           <div className={compact ? "text-xs font-semibold text-amber-700" : "text-center"}>
-            <p>Verify your profile before your scorecard vote counts.</p>
+            <p>Verify your identity before your citizen scorecard counts.</p>
+            {!compact ? (
+              <p className="mx-auto mt-1 max-w-xl text-sm font-semibold leading-6 text-amber-800">
+                RepWatchr should require real identity and voter-area verification before a profile can move constituent data. Outside responses can be collected, but they must stay labeled separately.
+              </p>
+            ) : null}
             {!compact ? (
               <Link href="/auth/verify" className="mt-2 inline-flex rounded-lg bg-amber-600 px-3 py-2 text-sm font-black text-white hover:bg-amber-700">
                 Verify profile
@@ -360,7 +633,21 @@ export default function ProfileScorecardVote({
           </div>
         ) : (
           <>
-            <p className="text-xs font-black uppercase tracking-wide text-slate-500">Your one verified vote</p>
+            <div className="flex flex-col gap-2 sm:flex-row sm:items-center sm:justify-between">
+              <div>
+                <p className="text-xs font-black uppercase tracking-wide text-slate-500">Your verified citizen response</p>
+                {!compact ? (
+                  <p className="mt-1 text-xs font-semibold leading-5 text-slate-500">
+                    Current scope: <span className="font-black text-slate-800">{scopeLabels[voterScope]}</span>.
+                  </p>
+                ) : null}
+              </div>
+              {!compact ? (
+                <span className="w-fit rounded-full border border-blue-200 bg-blue-50 px-3 py-1 text-[11px] font-black uppercase tracking-wide text-blue-800">
+                  Real profile required
+                </span>
+              ) : null}
+            </div>
             <div className="mt-2 grid grid-cols-5 gap-1.5">
               {grades.map((grade) => {
                 const active = currentGrade === grade;
@@ -385,17 +672,98 @@ export default function ProfileScorecardVote({
             </div>
             {!compact ? (
               <>
+                <div className="mt-4 grid gap-3 md:grid-cols-2">
+                  <label className="block">
+                    <span className="text-xs font-black uppercase tracking-wide text-slate-500">
+                      Would you vote for this official again?
+                    </span>
+                    <select
+                      value={wouldVoteAgain}
+                      onChange={(event) => setWouldVoteAgain(event.target.value as VoteAgain)}
+                      className="mt-1 w-full rounded-lg border border-slate-200 bg-white px-3 py-2 text-sm font-bold text-slate-900 focus:border-blue-500 focus:outline-none focus:ring-1 focus:ring-blue-500"
+                    >
+                      {Object.entries(voteAgainLabels).map(([value, label]) => (
+                        <option key={value} value={value}>{label}</option>
+                      ))}
+                    </select>
+                  </label>
+
+                  <label className="block">
+                    <span className="text-xs font-black uppercase tracking-wide text-slate-500">
+                      How did you vote last time?
+                    </span>
+                    <select
+                      value={votedForLastTime}
+                      onChange={(event) => setVotedForLastTime(event.target.value as LastVoteChoice)}
+                      className="mt-1 w-full rounded-lg border border-slate-200 bg-white px-3 py-2 text-sm font-bold text-slate-900 focus:border-blue-500 focus:outline-none focus:ring-1 focus:ring-blue-500"
+                    >
+                      {Object.entries(lastVoteLabels).map(([value, label]) => (
+                        <option key={value} value={value}>{label}</option>
+                      ))}
+                    </select>
+                  </label>
+
+                  <label className="block">
+                    <span className="text-xs font-black uppercase tracking-wide text-slate-500">
+                      If you voted for them, how do you feel now?
+                    </span>
+                    <select
+                      value={approvalAfterVote}
+                      onChange={(event) => setApprovalAfterVote(event.target.value as ApprovalAfterVote)}
+                      className="mt-1 w-full rounded-lg border border-slate-200 bg-white px-3 py-2 text-sm font-bold text-slate-900 focus:border-blue-500 focus:outline-none focus:ring-1 focus:ring-blue-500"
+                    >
+                      {Object.entries(approvalAfterVoteLabels).map(([value, label]) => (
+                        <option key={value} value={value}>{label}</option>
+                      ))}
+                    </select>
+                  </label>
+
+                  <label className="block">
+                    <span className="text-xs font-black uppercase tracking-wide text-slate-500">
+                      Top issue driving your grade
+                    </span>
+                    <input
+                      value={topIssue}
+                      onChange={(event) => setTopIssue(event.target.value)}
+                      maxLength={80}
+                      placeholder="Example: border, taxes, war powers, spending"
+                      className="mt-1 w-full rounded-lg border border-slate-200 bg-white px-3 py-2 text-sm font-bold text-slate-900 placeholder:text-slate-400 focus:border-blue-500 focus:outline-none focus:ring-1 focus:ring-blue-500"
+                    />
+                  </label>
+                </div>
                 <textarea
                   value={rationale}
                   onChange={(event) => setRationale(event.target.value)}
-                  placeholder="Optional: add a public-source link or short reason for your score."
+                  placeholder="Optional: add a specific vote, public-source link, or short reason for your score."
                   maxLength={500}
                   rows={2}
                   className="mt-3 w-full resize-none rounded-lg border border-slate-200 bg-slate-50 px-3 py-2 text-sm font-semibold text-slate-900 placeholder:text-slate-400 focus:border-blue-500 focus:outline-none focus:ring-1 focus:ring-blue-500"
                 />
-                <p className="mt-1 text-xs font-semibold text-slate-400">
-                  {rationale.length}/500. Click the active grade again with no note to remove your vote.
-                </p>
+                <div className="mt-2 flex flex-col gap-2 sm:flex-row sm:items-center sm:justify-between">
+                  <p className="text-xs font-semibold text-slate-400">
+                    {rationale.length}/500. Save replaces your prior response.
+                  </p>
+                  <div className="flex flex-wrap gap-2">
+                    {currentGrade ? (
+                      <button
+                        type="button"
+                        onClick={removeVote}
+                        disabled={saving}
+                        className="inline-flex w-fit rounded-lg border border-red-200 bg-white px-3 py-2 text-sm font-black text-red-700 hover:bg-red-50 disabled:opacity-50"
+                      >
+                        Remove vote
+                      </button>
+                    ) : null}
+                    <button
+                      type="button"
+                      onClick={saveCurrentQuestionnaire}
+                      disabled={saving}
+                      className="inline-flex w-fit rounded-lg bg-blue-700 px-3 py-2 text-sm font-black text-white hover:bg-blue-800 disabled:opacity-50"
+                    >
+                      Save questionnaire
+                    </button>
+                  </div>
+                </div>
               </>
             ) : null}
           </>

@@ -34,6 +34,12 @@ export default function ConstitutionalAlignmentMeter({
 }) {
   const scoredEvidence = profile.evidence.filter((item) => item.reviewStatus === "scored");
   const reviewEvidence = profile.evidence.filter((item) => item.reviewStatus !== "scored");
+  const hasThinEvidence =
+    profile.confidence === "none" ||
+    profile.confidence === "low" ||
+    profile.scoredVoteCount < 3;
+  const displayScore = hasThinEvidence ? "Review" : scoreText(profile.score);
+  const markerPosition = hasThinEvidence ? 50 : markerPercent(profile.score);
 
   return (
     <section className="rounded-2xl border border-slate-200 bg-white p-5 shadow-sm">
@@ -48,12 +54,25 @@ export default function ConstitutionalAlignmentMeter({
           </p>
         </div>
         <div className="shrink-0 rounded-xl border border-slate-200 bg-slate-50 px-4 py-3 text-right">
-          <p className="text-3xl font-black text-slate-950">{scoreText(profile.score)}</p>
+          <p className="text-3xl font-black text-slate-950">{displayScore}</p>
           <p className="text-xs font-black uppercase tracking-wide text-slate-500">
             {profile.confidence} confidence
           </p>
         </div>
       </div>
+
+      {hasThinEvidence ? (
+        <div className="mt-4 rounded-xl border border-amber-200 bg-amber-50 p-4">
+          <p className="text-sm font-black text-amber-950">
+            Do not read this as a final constitutional grade yet.
+          </p>
+          <p className="mt-1 text-sm font-semibold leading-6 text-amber-900">
+            {profile.scoredVoteCount} of {profile.totalVotesLoaded} loaded votes are currently scored by reviewed constitutional rules.
+            The unreviewed votes stay visible below, but they do not move this meter until a human policy rule is added.
+            Current scored sample: {scoreText(profile.score)}.
+          </p>
+        </div>
+      ) : null}
 
       <div className="mt-5">
         <div className="flex items-center justify-between text-xs font-black uppercase tracking-wide text-slate-500">
@@ -63,9 +82,9 @@ export default function ConstitutionalAlignmentMeter({
         </div>
         <div className="relative mt-3 h-4 rounded-full bg-[linear-gradient(90deg,#dc2626_0%,#f59e0b_50%,#059669_100%)]">
           <span
-            className={`absolute top-1/2 h-7 w-7 -translate-x-1/2 -translate-y-1/2 rotate-45 border-2 border-white shadow ${profile.score === null ? "bg-amber-500" : "bg-slate-950"}`}
-            style={{ left: `${markerPercent(profile.score)}%` }}
-            aria-label={`Constitutional alignment marker: ${scoreText(profile.score)}`}
+            className={`absolute top-1/2 h-7 w-7 -translate-x-1/2 -translate-y-1/2 rotate-45 border-2 border-white shadow ${hasThinEvidence || profile.score === null ? "bg-amber-500" : "bg-slate-950"}`}
+            style={{ left: `${markerPosition}%` }}
+            aria-label={`Constitutional alignment marker: ${displayScore}`}
           />
         </div>
       </div>

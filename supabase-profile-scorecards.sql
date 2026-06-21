@@ -32,16 +32,61 @@ create table if not exists public.profile_scorecard_votes (
   grade text not null check (grade in ('A', 'B', 'C', 'D', 'F')),
   score integer not null check (score >= 0 and score <= 100),
   county text not null,
+  voter_scope text not null default 'verified_unknown' check (
+    voter_scope in (
+      'in_district',
+      'in_state',
+      'out_of_district',
+      'out_of_state',
+      'verified_unknown'
+    )
+  ),
+  voter_state text,
+  voter_county text,
+  voter_district text,
+  would_vote_again text check (
+    would_vote_again is null or would_vote_again in ('yes', 'no', 'unsure', 'not_eligible')
+  ),
+  voted_for_last_time text check (
+    voted_for_last_time is null or voted_for_last_time in (
+      'voted_for',
+      'voted_against',
+      'did_not_vote',
+      'not_eligible',
+      'prefer_not_to_say'
+    )
+  ),
+  approval_after_vote text check (
+    approval_after_vote is null or approval_after_vote in (
+      'approve',
+      'disapprove',
+      'mixed',
+      'not_applicable'
+    )
+  ),
+  top_issue text check (top_issue is null or char_length(top_issue) <= 80),
   rationale text check (rationale is null or char_length(rationale) <= 500),
   created_at timestamptz default now() not null,
   updated_at timestamptz default now() not null,
   unique(user_id, target_type, target_id)
 );
 
+alter table public.profile_scorecard_votes
+  add column if not exists voter_scope text not null default 'verified_unknown',
+  add column if not exists voter_state text,
+  add column if not exists voter_county text,
+  add column if not exists voter_district text,
+  add column if not exists would_vote_again text,
+  add column if not exists voted_for_last_time text,
+  add column if not exists approval_after_vote text,
+  add column if not exists top_issue text;
+
 create index if not exists idx_profile_scorecard_votes_target
   on public.profile_scorecard_votes(target_type, target_id);
 create index if not exists idx_profile_scorecard_votes_target_county
   on public.profile_scorecard_votes(target_type, target_id, county);
+create index if not exists idx_profile_scorecard_votes_target_scope
+  on public.profile_scorecard_votes(target_type, target_id, voter_scope);
 create index if not exists idx_profile_scorecard_votes_user
   on public.profile_scorecard_votes(user_id, updated_at desc);
 
@@ -134,6 +179,27 @@ select
 from public.profile_scorecard_votes
 group by target_type, target_id, county;
 
+create or replace view public.profile_scorecard_summary_by_scope as
+select
+  target_type,
+  target_id,
+  voter_scope,
+  count(*) as total_votes,
+  count(*) filter (where grade = 'A') as a_count,
+  count(*) filter (where grade = 'B') as b_count,
+  count(*) filter (where grade = 'C') as c_count,
+  count(*) filter (where grade = 'D') as d_count,
+  count(*) filter (where grade = 'F') as f_count,
+  round(avg(score)::numeric, 1) as average_score,
+  count(*) filter (where would_vote_again = 'yes') as would_vote_again_yes,
+  count(*) filter (where would_vote_again = 'no') as would_vote_again_no,
+  count(*) filter (where voted_for_last_time = 'voted_for') as voted_for_last_time_yes,
+  count(*) filter (where approval_after_vote = 'approve') as approval_after_vote_yes,
+  count(*) filter (where approval_after_vote = 'disapprove') as approval_after_vote_no,
+  max(updated_at) as last_vote_at
+from public.profile_scorecard_votes
+group by target_type, target_id, voter_scope;
+
 create or replace view public.profile_scorecard_algorithm as
 select
   target_type,
@@ -149,6 +215,7 @@ from public.profile_scorecard_summary;
 
 grant select on public.profile_scorecard_summary to anon, authenticated;
 grant select on public.profile_scorecard_summary_by_county to anon, authenticated;
+grant select on public.profile_scorecard_summary_by_scope to anon, authenticated;
 grant select on public.profile_scorecard_algorithm to anon, authenticated;
 
 drop trigger if exists set_profile_scorecard_votes_updated_at on public.profile_scorecard_votes;

@@ -14,17 +14,13 @@ import { buildFallbackIdeologyProfile, getOfficialIdeologyProfile } from "@/lib/
 import { formatLevelName, getPartyColor } from "@/lib/formatting";
 import ScoreGauge from "@/components/scores/ScoreGauge";
 import CategoryBreakdown from "@/components/scores/CategoryBreakdown";
-import FundingOverview from "@/components/funding/FundingOverview";
-import TopDonorsList from "@/components/funding/TopDonorsList";
-import DonorBreakdownChart from "@/components/funding/DonorBreakdownChart";
-import GeographicBreakdown from "@/components/funding/GeographicBreakdown";
+import CampaignFundingSection from "@/components/funding/CampaignFundingSection";
 import VoteTimeline from "@/components/votes/VoteTimeline";
 import RedFlagCard from "@/components/shared/RedFlagCard";
 import PartyBadge from "@/components/officials/PartyBadge";
 import IdeologyChart from "@/components/officials/IdeologyChart";
 import ConstitutionalAlignmentMeter from "@/components/officials/ConstitutionalAlignmentMeter";
 import OfficialVotingSection from "@/components/voting/OfficialVotingSection";
-import GradeOfficialSection from "@/components/voting/GradeOfficialSection";
 import CommentSection from "@/components/comments/CommentSection";
 import ShareButtons from "@/components/shared/ShareButtons";
 import ReportButton from "@/components/shared/ReportButton";
@@ -248,20 +244,6 @@ export default async function OfficialProfilePage({
       </section>
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
-        {/* Red Flags */}
-        {redFlags.length > 0 && (
-          <section className="mb-8">
-            <h2 className="text-xl font-bold text-red-700 mb-4">
-              Red Flags ({redFlags.length})
-            </h2>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-              {redFlags.map((flag) => (
-                <RedFlagCard key={flag.id} flag={flag} />
-              ))}
-            </div>
-          </section>
-        )}
-
         {overlayPublicRecords.length > 0 && (
           <ProfileOverlayEvidencePanel items={overlayPublicRecords} />
         )}
@@ -277,166 +259,148 @@ export default async function OfficialProfilePage({
           ) : null}
         </div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
-          {/* Left Column: Scores + Votes */}
-          <div className="lg:col-span-2 space-y-8">
-            {/* Scorecard */}
-            {scoreCard && (
+        <div className="space-y-8">
+          {scoreCard && (
+            <section>
+              <h2 className="mb-4 text-xl font-bold text-gray-900">
+                Issue Scorecard
+              </h2>
+              <CategoryBreakdown
+                categories={scoreCard.categories}
+                issueCategories={issueCategories}
+              />
+            </section>
+          )}
+
+          {allScoredVotes.length > 0 && (
+            <section>
+              <h2 className="mb-4 text-xl font-bold text-gray-900">
+                Voting Record
+              </h2>
+              <VoteTimeline votes={allScoredVotes} />
+            </section>
+          )}
+
+          {publicVoteRecord && publicVoteRecord.votes.length > 0 && (
+            <FederalVoteRecordPanel record={publicVoteRecord} />
+          )}
+
+          {profileOverlay.voteSnapshots.length > 0 && (
+            <ProfileOverlayVotesPanel votes={profileOverlay.voteSnapshots} />
+          )}
+
+          {official.campaignPromises &&
+            official.campaignPromises.length > 0 && (
               <section>
-                <h2 className="text-xl font-bold text-gray-900 mb-4">
-                  Issue Scorecard
+                <h2 className="mb-4 text-xl font-bold text-gray-900">
+                  Campaign Promises
                 </h2>
-                <CategoryBreakdown
-                  categories={scoreCard.categories}
-                  issueCategories={issueCategories}
-                />
+                <ul className="space-y-2">
+                  {official.campaignPromises.map((promise, i) => (
+                    <li
+                      key={i}
+                      className="flex items-start gap-2 text-gray-700"
+                    >
+                      <span className="mt-1 text-blue-500">&#9679;</span>
+                      {promise}
+                    </li>
+                  ))}
+                </ul>
               </section>
             )}
+        </div>
 
-            {/* Voting Record */}
-            {allScoredVotes.length > 0 && (
-              <section>
-                <h2 className="text-xl font-bold text-gray-900 mb-4">
-                  Voting Record
-                </h2>
-                <VoteTimeline votes={allScoredVotes} />
-              </section>
-            )}
+        {funding ? (
+          <CampaignFundingSection funding={funding} />
+        ) : null}
 
-            {publicVoteRecord && publicVoteRecord.votes.length > 0 && (
-              <FederalVoteRecordPanel record={publicVoteRecord} />
-            )}
-
-            {profileOverlay.voteSnapshots.length > 0 && (
-              <ProfileOverlayVotesPanel votes={profileOverlay.voteSnapshots} />
-            )}
-
-            {/* Campaign Promises */}
-            {official.campaignPromises &&
-              official.campaignPromises.length > 0 && (
-                <section>
-                  <h2 className="text-xl font-bold text-gray-900 mb-4">
-                    Campaign Promises
-                  </h2>
-                  <ul className="space-y-2">
-                    {official.campaignPromises.map((promise, i) => (
-                      <li
-                        key={i}
-                        className="flex items-start gap-2 text-gray-700"
-                      >
-                        <span className="text-blue-500 mt-1">&#9679;</span>
-                        {promise}
-                      </li>
-                    ))}
-                  </ul>
-                </section>
-              )}
+        <section className="mt-8">
+          <div className="mb-4">
+            <p className="text-xs font-black uppercase tracking-wide text-red-700">
+              Citizen layer grade
+            </p>
+            <h2 className="mt-1 text-xl font-black text-gray-950">
+              Verified voter questionnaire
+            </h2>
+            <p className="mt-1 max-w-4xl text-sm font-semibold leading-6 text-gray-600">
+              This is where verified users answer whether they would vote for the official again, how they voted last time, what changed, and what issue should drive the public grade.
+            </p>
           </div>
-
-          {/* Right Column: Citizen Vote + Funding */}
-          <div className="space-y-6">
+          <div className="grid gap-6 lg:grid-cols-[1.4fr_0.6fr]">
             <ProfileScorecardVote
               targetType="official"
               targetId={official.id}
               targetName={official.name}
               targetPath={`/officials/${official.id}`}
+              officialState={official.state}
+              officialDistrict={official.district}
+              officialCounties={official.county}
             />
-
-            <OfficialSocialPanel
-              officialName={official.name}
-              contactInfo={official.contactInfo}
-            />
-
-            <ProfileBuildoutPanel
-              percent={buildoutPercent}
-              isComplete={buildoutComplete}
-              missingItems={buildoutMissingItems}
-            />
-
-            <ProfileOverlayStatusPanel overlay={profileOverlay} />
-
-            {/* Citizen Approval Rating & Vote Button */}
             <OfficialVotingSection
               officialId={official.id}
               officialCounties={official.county}
             />
-            <GradeOfficialSection
-              officialId={official.id}
-              officialCounties={official.county.map((c) =>
-                c.toLowerCase().endsWith("county") ? c : `${c} County`
-              )}
-              officialName={official.name}
-            />
-
-            {funding && (
-              <>
-                <h2 className="text-xl font-bold text-gray-900">
-                  Campaign Funding
-                </h2>
-                <FundingOverview funding={funding} />
-                <DonorBreakdownChart breakdown={funding.donorBreakdown} />
-                <GeographicBreakdown
-                  breakdown={funding.geographicBreakdown}
-                />
-                <div>
-                  <h3 className="font-semibold text-gray-900 mb-3">
-                    Top Donors
-                  </h3>
-                  <TopDonorsList donors={funding.topDonors} />
-                </div>
-                {funding.sources.length > 0 && (
-                  <div className="text-xs text-gray-500">
-                    <p className="font-medium mb-1">Data Sources:</p>
-                    {funding.sources.map((src, i) => (
-                      <p key={i}>
-                        <a
-                          href={src.url}
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          className="text-blue-600 hover:underline"
-                        >
-                          {src.name}
-                        </a>{" "}
-                        (retrieved {src.retrievedDate})
-                      </p>
-                    ))}
-                  </div>
-                )}
-              </>
-            )}
-
-            {!funding && !scoreCard && (
-              <div className="bg-gray-50 rounded-lg p-6 text-center">
-                <p className="text-gray-500 text-sm">
-                  Detailed scoring and funding data is being collected for this
-                  official. Check back soon.
-                </p>
-              </div>
-            )}
-
-            {sourceLinks.length > 0 && (
-              <section className="rounded-xl border border-gray-200 bg-white p-5 shadow-sm">
-                <h2 className="text-lg font-bold text-gray-900">Public Sources</h2>
-                <p className="mt-1 text-xs font-semibold text-gray-500">
-                  Last verified: {official.lastVerifiedAt ?? "source review pending"}
-                </p>
-                <div className="mt-4 space-y-2">
-                  {sourceLinks.map((source) => (
-                    <a
-                      key={`${source.title}-${source.url}`}
-                      href={source.url}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="flex items-center justify-between gap-3 rounded-lg border border-gray-200 bg-gray-50 px-3 py-2 text-sm font-semibold text-blue-700 transition hover:border-blue-200 hover:bg-blue-50"
-                    >
-                      <span>{source.title}</span>
-                      <span className="shrink-0 text-xs uppercase tracking-wide">Open</span>
-                    </a>
-                  ))}
-                </div>
-              </section>
-            )}
           </div>
+        </section>
+
+        {redFlags.length > 0 && (
+          <section className="mt-8">
+            <h2 className="mb-4 text-xl font-bold text-red-700">
+              Red Flags ({redFlags.length})
+            </h2>
+            <div className="grid grid-cols-1 gap-4 md:grid-cols-2">
+              {redFlags.map((flag) => (
+                <RedFlagCard key={flag.id} flag={flag} />
+              ))}
+            </div>
+          </section>
+        )}
+
+        <div className="mt-8 grid gap-6 lg:grid-cols-3">
+          <OfficialSocialPanel
+            officialName={official.name}
+            contactInfo={official.contactInfo}
+          />
+
+          <ProfileBuildoutPanel
+            percent={buildoutPercent}
+            isComplete={buildoutComplete}
+            missingItems={buildoutMissingItems}
+          />
+
+          <ProfileOverlayStatusPanel overlay={profileOverlay} />
+
+          {!funding && !scoreCard && (
+            <div className="rounded-lg bg-gray-50 p-6 text-center">
+              <p className="text-sm text-gray-500">
+                Detailed scoring and funding data is being collected for this
+                official. Check back soon.
+              </p>
+            </div>
+          )}
+
+          {sourceLinks.length > 0 && (
+            <section className="rounded-xl border border-gray-200 bg-white p-5 shadow-sm lg:col-span-3">
+              <h2 className="text-lg font-bold text-gray-900">Public Sources</h2>
+              <p className="mt-1 text-xs font-semibold text-gray-500">
+                Last verified: {official.lastVerifiedAt ?? "source review pending"}
+              </p>
+              <div className="mt-4 grid gap-2 md:grid-cols-2 lg:grid-cols-4">
+                {sourceLinks.map((source) => (
+                  <a
+                    key={`${source.title}-${source.url}`}
+                    href={source.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center justify-between gap-3 rounded-lg border border-gray-200 bg-gray-50 px-3 py-2 text-sm font-semibold text-blue-700 transition hover:border-blue-200 hover:bg-blue-50"
+                  >
+                    <span>{source.title}</span>
+                    <span className="shrink-0 text-xs uppercase tracking-wide">Open</span>
+                  </a>
+                ))}
+              </div>
+            </section>
+          )}
         </div>
 
         {/* Related News */}

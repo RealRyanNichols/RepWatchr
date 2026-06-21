@@ -235,12 +235,17 @@ export function buildConstitutionalAlignmentProfile(record: PublicVoteRecord): C
   const reviewVoteCount = evidence.filter((item) => item.reviewStatus === "needs-policy-review").length;
   const notScoreableVoteCount = evidence.filter((item) => item.reviewStatus === "not-scoreable").length;
 
+  const confidence = confidenceFor(scoredEvidence.length, record.summary.totalVotesLoaded);
+
   return {
     officialId: record.officialId,
     name: record.name,
     score,
-    label: labelFor(score),
-    confidence: confidenceFor(scoredEvidence.length, record.summary.totalVotesLoaded),
+    label:
+      confidence === "none" || confidence === "low"
+        ? "Constitutional score needs more reviewed votes"
+        : labelFor(score),
+    confidence,
     method:
       "RepWatchr constitutional alignment applies reviewed issue rules to loaded public roll-call votes. Unreviewed procedural votes stay visible but do not move the score.",
     basis:
