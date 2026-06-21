@@ -4,6 +4,7 @@ import { notFound } from "next/navigation";
 import type { ReactNode } from "react";
 import TexasRacePublicContributions from "@/components/elections/TexasRacePublicContributions";
 import CopySnippetButton from "@/components/shared/CopySnippetButton";
+import RecordVisual from "@/components/shared/RecordVisual";
 import ShareButtons from "@/components/shared/ShareButtons";
 import OfficialPhotoImage, { FEATURED_OFFICIAL_PHOTO_QUALITY } from "@/components/shared/OfficialPhotoImage";
 import { getOfficialById } from "@/lib/data";
@@ -323,6 +324,15 @@ function RaceMiniCard({ race }: { race: RaceHubRace }) {
       href={race.href}
       className="group rounded-lg border border-slate-200 bg-white p-4 shadow-sm transition hover:-translate-y-0.5 hover:border-red-300 hover:shadow-md"
     >
+      <RecordVisual
+        eyebrow="Race record"
+        title={race.title}
+        variant="race"
+        metric={{ label: "Sources", value: race.sourceCount }}
+        secondaryMetric={{ label: "Gaps", value: race.missingRecords.length }}
+        compact
+        className="mb-4"
+      />
       <div className="flex flex-wrap gap-2">
         <span className="rounded-full bg-red-700 px-2.5 py-1 text-[11px] font-black uppercase tracking-wide text-white">
           {race.shortTitle}
@@ -405,6 +415,13 @@ function RacePage({ race }: { race: RaceHubRace }) {
             </div>
 
             <div className="grid content-start gap-3">
+              <RecordVisual
+                eyebrow="Race dossier"
+                title={race.title}
+                variant="race"
+                metric={{ label: "Sources", value: race.sourceCount }}
+                secondaryMetric={{ label: "Candidates", value: race.candidates.length }}
+              />
               <StatTile label="Office" value={race.office} />
               <StatTile label="Jurisdiction" value={race.jurisdiction} />
               <StatTile label="Election date" value={race.electionDate} />
@@ -546,30 +563,41 @@ function CountyPage({ county }: { county: TexasCountyHub }) {
           &larr; Texas race hub
         </Link>
         <section className="mt-5 rounded-xl border border-slate-200 bg-white p-6 shadow-[0_18px_48px_rgba(15,23,42,0.10)]">
-          <p className="inline-flex rounded-full bg-red-700 px-3 py-1 text-xs font-black uppercase tracking-[0.18em] text-white">
-            County election hub
-          </p>
-          <h1 className="mt-5 max-w-4xl text-4xl font-black leading-[0.98] tracking-tight text-blue-950 sm:text-6xl">
-            {county.name}
-          </h1>
-          <p className="mt-5 max-w-3xl text-base font-semibold leading-7 text-slate-700 sm:text-lg">
-            {county.summary}
-          </p>
-          <div className="mt-5 grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
-            <StatTile label="Region" value={county.region} />
-            <StatTile label="Race lanes" value={county.races.length} />
-            <StatTile label="School boards" value={county.schoolBoards.length} />
-            <StatTile label="Cities" value={county.cities.length} />
-          </div>
-          <div className="mt-5">
-            <ShareButtons
-              title={`${county.name} | RepWatchr`}
-              description={county.summary}
-              path={county.href}
-              template="public_question"
-              subject={`${county.county} County election records`}
-              sourceLabel="county election sources, candidate filings, finance reports, school-board records, and public questions"
-            />
+          <div className="grid gap-6 lg:grid-cols-[1fr_0.82fr] lg:items-start">
+            <div>
+              <p className="inline-flex rounded-full bg-red-700 px-3 py-1 text-xs font-black uppercase tracking-[0.18em] text-white">
+                County election hub
+              </p>
+              <h1 className="mt-5 max-w-4xl text-4xl font-black leading-[0.98] tracking-tight text-blue-950 sm:text-6xl">
+                {county.name}
+              </h1>
+              <p className="mt-5 max-w-3xl text-base font-semibold leading-7 text-slate-700 sm:text-lg">
+                {county.summary}
+              </p>
+              <div className="mt-5">
+                <ShareButtons
+                  title={`${county.name} | RepWatchr`}
+                  description={county.summary}
+                  path={county.href}
+                  template="public_question"
+                  subject={`${county.county} County election records`}
+                  sourceLabel="county election sources, candidate filings, finance reports, school-board records, and public questions"
+                />
+              </div>
+            </div>
+            <div className="grid gap-3">
+              <RecordVisual
+                eyebrow="County hub"
+                title={county.name}
+                variant="county"
+                metric={{ label: "Races", value: county.races.length }}
+                secondaryMetric={{ label: "Schools", value: county.schoolBoards.length }}
+              />
+              <div className="grid gap-3 sm:grid-cols-2">
+                <StatTile label="Region" value={county.region} />
+                <StatTile label="Cities" value={county.cities.length} />
+              </div>
+            </div>
           </div>
         </section>
 
@@ -651,29 +679,41 @@ function DistrictPage({ district }: { district: TexasDistrictHub }) {
           &larr; Texas race hub
         </Link>
         <section className="mt-5 rounded-xl border border-slate-200 bg-white p-6 shadow-[0_18px_48px_rgba(15,23,42,0.10)]">
-          <p className="inline-flex rounded-full bg-blue-950 px-3 py-1 text-xs font-black uppercase tracking-[0.18em] text-white">
-            District election hub
-          </p>
-          <h1 className="mt-5 max-w-4xl text-4xl font-black leading-[0.98] tracking-tight text-blue-950 sm:text-6xl">
-            {district.name}
-          </h1>
-          <p className="mt-5 max-w-3xl text-base font-semibold leading-7 text-slate-700 sm:text-lg">
-            {district.summary}
-          </p>
-          <div className="mt-5 grid gap-3 sm:grid-cols-3">
-            <StatTile label="District type" value={district.districtType.replaceAll("_", " ")} />
-            <StatTile label="Region" value={district.region} />
-            <StatTile label="Race lanes" value={district.races.length} />
-          </div>
-          <div className="mt-5">
-            <ShareButtons
-              title={`${district.name} | RepWatchr`}
-              description={district.summary}
-              path={district.href}
-              template="public_question"
-              subject={`${district.name} election records`}
-              sourceLabel="district map, filings, finance reports, voting records, and public questions"
-            />
+          <div className="grid gap-6 lg:grid-cols-[1fr_0.82fr] lg:items-start">
+            <div>
+              <p className="inline-flex rounded-full bg-blue-950 px-3 py-1 text-xs font-black uppercase tracking-[0.18em] text-white">
+                District election hub
+              </p>
+              <h1 className="mt-5 max-w-4xl text-4xl font-black leading-[0.98] tracking-tight text-blue-950 sm:text-6xl">
+                {district.name}
+              </h1>
+              <p className="mt-5 max-w-3xl text-base font-semibold leading-7 text-slate-700 sm:text-lg">
+                {district.summary}
+              </p>
+              <div className="mt-5">
+                <ShareButtons
+                  title={`${district.name} | RepWatchr`}
+                  description={district.summary}
+                  path={district.href}
+                  template="public_question"
+                  subject={`${district.name} election records`}
+                  sourceLabel="district map, filings, finance reports, voting records, and public questions"
+                />
+              </div>
+            </div>
+            <div className="grid gap-3">
+              <RecordVisual
+                eyebrow="District hub"
+                title={district.name}
+                variant="district"
+                metric={{ label: "Races", value: district.races.length }}
+                secondaryMetric={{ label: "Gaps", value: district.missingRecords.length }}
+              />
+              <div className="grid gap-3 sm:grid-cols-2">
+                <StatTile label="District type" value={district.districtType.replaceAll("_", " ")} />
+                <StatTile label="Region" value={district.region} />
+              </div>
+            </div>
           </div>
         </section>
 

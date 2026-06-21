@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { getAllNews, getNewsById, getOfficialById } from "@/lib/data";
 import CopySnippetButton from "@/components/shared/CopySnippetButton";
+import RecordVisual from "@/components/shared/RecordVisual";
 import RouteEventTracker from "@/components/shared/RouteEventTracker";
 import ShareButtons from "@/components/shared/ShareButtons";
 import ReportButton from "@/components/shared/ReportButton";
@@ -266,6 +267,15 @@ export default async function NewsArticlePage({
           sourceLabel={article.sourceName || article.sourceLinks?.[0]?.title || "linked public sources"}
         />
       </div>
+
+      <RecordVisual
+        eyebrow={article.scope ? (scopeLabels[article.scope] ?? article.scope) : "Story file"}
+        title={article.title}
+        variant="story"
+        metric={{ label: "Sources", value: article.sourceLinks?.length || (article.sourceUrl ? 1 : 0) }}
+        secondaryMetric={{ label: "Officials", value: linkedOfficials.length }}
+        className="mt-6"
+      />
 
       <div className="mt-4 grid gap-3 lg:grid-cols-[1fr_auto] lg:items-start">
         <NextUsefulMove

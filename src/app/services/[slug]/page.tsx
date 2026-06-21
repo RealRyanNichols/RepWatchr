@@ -4,6 +4,7 @@ import { notFound } from "next/navigation";
 import type { ReactNode } from "react";
 import ServiceCheckoutButton from "@/components/services/ServiceCheckoutButton";
 import ServiceRequestPacketBuilder from "@/components/services/ServiceRequestPacketBuilder";
+import RecordVisual from "@/components/shared/RecordVisual";
 import SourceSubmissionForm from "@/components/source-submissions/SourceSubmissionForm";
 import { getRepWatchrService, getRepWatchrServiceLanding, getRepWatchrServices } from "@/data/repwatchr-services";
 import { isRepWatchrServiceCheckoutConfigured } from "@/lib/repwatchr-payment-products";
@@ -123,6 +124,13 @@ export default async function ServiceDetailPage({
               </div>
             </div>
             <div className="grid content-start gap-3">
+              <RecordVisual
+                eyebrow={service.eyebrow}
+                title={service.name}
+                variant="service"
+                metric={{ label: "Price", value: service.priceLabel }}
+                secondaryMetric={{ label: "Turnaround", value: service.turnaround }}
+              />
               <div className="rounded-lg border border-blue-100 bg-blue-50 p-5">
                 <p className="text-xs font-black uppercase tracking-wide text-blue-900">Price</p>
                 <p className="mt-1 text-4xl font-black text-blue-950">{service.priceLabel}</p>

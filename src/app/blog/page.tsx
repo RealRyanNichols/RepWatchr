@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import RecordVisual from "@/components/shared/RecordVisual";
 import {
   getEditorialLoopSteps,
   getSeoTopicClusters,
@@ -55,13 +56,6 @@ function dateLabel(value: string) {
     day: "numeric",
     year: "numeric",
   });
-}
-
-function sourceLabel(article: NewsArticle) {
-  if (article.sourceUrl && article.sourceName) return article.sourceName;
-  if (article.sourceLinks?.length) return `${article.sourceLinks.length} source links`;
-  if (article.sourceName) return article.sourceName;
-  return "Source review needed";
 }
 
 function clusterMatchesArticle(cluster: SeoTopicCluster, article: NewsArticle) {
@@ -127,17 +121,14 @@ function ArticleCard({ article, prominent = false }: { article: NewsArticle; pro
         prominent ? "md:grid md:grid-cols-[0.74fr_1fr] md:gap-5 md:p-5" : ""
       }`}
     >
-      <div className="rounded-lg border border-slate-200 bg-slate-950 p-4 text-white">
-        <p className="text-[11px] font-black uppercase tracking-[0.18em] text-amber-300">
-          {scopeLabels[articleScope(article)]}
-        </p>
-        <p className="mt-3 text-3xl font-black leading-none text-white">
-          {dateLabel(article.publishedAt).split(",")[0]}
-        </p>
-        <p className="mt-3 text-xs font-bold leading-5 text-slate-300">
-          Receipt: {sourceLabel(article)}
-        </p>
-      </div>
+      <RecordVisual
+        eyebrow={scopeLabels[articleScope(article)]}
+        title={article.title}
+        variant="story"
+        metric={{ label: "Date", value: dateLabel(article.publishedAt).split(",")[0] }}
+        secondaryMetric={{ label: "Sources", value: article.sourceLinks?.length || (article.sourceUrl ? 1 : 0) }}
+        compact={!prominent}
+      />
       <div className="mt-4 flex min-w-0 flex-col md:mt-0">
         <div className="flex flex-wrap gap-2">
           {articleChannels(article).slice(0, 3).map((channel) => (

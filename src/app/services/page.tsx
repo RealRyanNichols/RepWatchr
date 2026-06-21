@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import ServiceCheckoutButton from "@/components/services/ServiceCheckoutButton";
 import NextUsefulMove from "@/components/shared/NextUsefulMove";
+import RecordVisual from "@/components/shared/RecordVisual";
 import { getRepWatchrServices } from "@/data/repwatchr-services";
 import { isRepWatchrServiceCheckoutConfigured } from "@/lib/repwatchr-payment-products";
 import { buildOgImageUrl, buildRepWatchrMetadata } from "@/lib/repwatchr-seo";
@@ -99,6 +100,15 @@ export default function ServicesPage() {
                   href={`/services/${service.slug}`}
                   className="rounded-lg border border-slate-200 bg-slate-50 p-4 transition hover:-translate-y-0.5 hover:border-red-300 hover:bg-white"
                 >
+                  <RecordVisual
+                    eyebrow={service.eyebrow}
+                    title={service.name}
+                    variant="service"
+                    metric={{ label: "Price", value: service.priceLabel }}
+                    secondaryMetric={{ label: "Lane", value: service.billingLabel }}
+                    compact
+                    className="mb-4"
+                  />
                   <div className="flex items-center justify-between gap-3">
                     <span className="rounded-full bg-blue-950 px-2.5 py-1 text-[11px] font-black uppercase tracking-wide text-white">
                       {service.eyebrow}
@@ -126,6 +136,15 @@ export default function ServicesPage() {
         <section className="mt-7 grid gap-4 md:grid-cols-2 xl:grid-cols-3">
           {services.map((service) => (
               <article key={service.slug} className="flex h-full flex-col rounded-lg border border-slate-200 bg-white p-5 shadow-sm">
+                <RecordVisual
+                  eyebrow={service.eyebrow}
+                  title={service.name}
+                  variant="service"
+                  metric={{ label: "Price", value: service.priceLabel }}
+                  secondaryMetric={{ label: "Billing", value: service.billingLabel }}
+                  compact
+                  className="mb-4"
+                />
                 <div className="flex items-center justify-between gap-3">
                   <span className="rounded-full bg-slate-100 px-2.5 py-1 text-[11px] font-black uppercase tracking-wide text-slate-700">
                     {service.eyebrow}

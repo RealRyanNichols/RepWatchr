@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import ShareButtons from "@/components/shared/ShareButtons";
+import RecordVisual from "@/components/shared/RecordVisual";
 import { DAILY_NEWS_WATCH_SOURCES } from "@/data/daily-news-watch-sources";
 import { getAllNews, getOfficialById } from "@/lib/data";
 import { buildOgImageUrl, buildRepWatchrMetadata } from "@/lib/repwatchr-seo";
@@ -130,6 +131,15 @@ function ArticleCard({ article, compact = false }: { article: NewsArticle; compa
       href={`/news/${article.id}`}
       className="group flex h-full min-w-0 flex-col rounded-lg border border-slate-200 bg-white p-4 shadow-[0_14px_34px_rgba(15,23,42,0.07)] transition hover:-translate-y-0.5 hover:border-red-300 hover:shadow-[0_18px_46px_rgba(15,23,42,0.12)]"
     >
+      <RecordVisual
+        eyebrow={scopeLabels[articleScope(article)]}
+        title={article.title}
+        variant="story"
+        metric={{ label: "Sources", value: article.sourceLinks?.length || (article.sourceUrl ? 1 : 0) }}
+        secondaryMetric={{ label: "Officials", value: article.officialIds.length }}
+        compact={compact}
+        className="mb-4"
+      />
       <div className="flex flex-wrap items-center gap-2">
         <span className="rounded-full bg-red-700 px-2.5 py-1 text-[11px] font-black uppercase tracking-wide text-white">
           {recordLabel(article)}

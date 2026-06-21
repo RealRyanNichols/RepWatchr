@@ -6,6 +6,7 @@ import Link from "next/link";
 import UserMenu from "@/components/auth/UserMenu";
 
 const primaryLinks = [
+  { href: "/", label: "Home" },
   { href: "/elections/texas", label: "Texas Races" },
   { href: "/officials", label: "Officials" },
   { href: "/school-boards", label: "School Boards" },
@@ -16,7 +17,6 @@ const primaryLinks = [
 ];
 
 const moreLinks = [
-  { href: "/", label: "Home" },
   { href: "/elections", label: "All Elections" },
   { href: "/submit-source", label: "Submit Source" },
   { href: "/authority-watch", label: "Authority Watch" },

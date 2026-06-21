@@ -3,6 +3,7 @@ import Link from "next/link";
 import CommentSection from "@/components/comments/CommentSection";
 import LiveEngagementCounter from "@/components/school-board/LiveEngagementCounter";
 import DrillDownPicker from "@/components/school-board/DrillDownPicker";
+import RecordVisual, { SourceNeededAvatar } from "@/components/shared/RecordVisual";
 import ShareButtons from "@/components/shared/ShareButtons";
 import NationalSpotlightSelector from "@/components/shared/NationalSpotlightSelector";
 import NextUsefulMove from "@/components/shared/NextUsefulMove";
@@ -301,16 +302,19 @@ export default async function SchoolBoardsPage({
               <Link
                 key={candidate.candidate_id}
                 href={getSchoolBoardCandidateUrl(candidate)}
-                className="min-w-[220px] rounded-xl border border-[#d8e5f6] bg-[#f8fbff] px-3 py-3 shadow-sm transition hover:-translate-y-0.5 hover:border-[#bf0d3e] hover:bg-[#fffdf7] hover:shadow-md"
+                className="grid min-w-[260px] grid-cols-[72px_1fr] gap-3 rounded-xl border border-[#d8e5f6] bg-[#f8fbff] px-3 py-3 shadow-sm transition hover:-translate-y-0.5 hover:border-[#bf0d3e] hover:bg-[#fffdf7] hover:shadow-md"
               >
-                <p className="truncate text-sm font-black text-[#06172f]">{candidate.preferred_name ?? candidate.full_name}</p>
-                <p className="mt-0.5 truncate text-xs font-bold text-slate-500">{candidate.district}</p>
-                <div className="mt-2 flex flex-wrap gap-1.5 text-[11px] font-black">
-                  {candidate.on_2026_ballot || candidate.election_date?.includes("2026") ? (
-                    <span className="rounded-full bg-[#bf0d3e]/10 px-2 py-0.5 text-[#bf0d3e]">2026</span>
-                  ) : null}
-                  <span className="rounded-full bg-[#0057b8]/10 px-2 py-0.5 text-[#0057b8]">{good.length} good</span>
-                  <span className="rounded-full bg-amber-100 px-2 py-0.5 text-amber-800">{flags.length} questions</span>
+                <SourceNeededAvatar name={candidate.preferred_name ?? candidate.full_name} className="h-[72px] w-[72px]" />
+                <div className="min-w-0">
+                  <p className="truncate text-sm font-black text-[#06172f]">{candidate.preferred_name ?? candidate.full_name}</p>
+                  <p className="mt-0.5 truncate text-xs font-bold text-slate-500">{candidate.district}</p>
+                  <div className="mt-2 flex flex-wrap gap-1.5 text-[11px] font-black">
+                    {candidate.on_2026_ballot || candidate.election_date?.includes("2026") ? (
+                      <span className="rounded-full bg-[#bf0d3e]/10 px-2 py-0.5 text-[#bf0d3e]">2026</span>
+                    ) : null}
+                    <span className="rounded-full bg-[#0057b8]/10 px-2 py-0.5 text-[#0057b8]">{good.length} good</span>
+                    <span className="rounded-full bg-amber-100 px-2 py-0.5 text-amber-800">{flags.length} questions</span>
+                  </div>
                 </div>
               </Link>
             ))}
@@ -336,6 +340,15 @@ export default async function SchoolBoardsPage({
                 href={getSchoolBoardDistrictUrl(district)}
                 className="group rounded-2xl border border-gray-200 bg-white p-5 shadow-sm transition hover:-translate-y-0.5 hover:border-red-200 hover:shadow-lg"
               >
+                <RecordVisual
+                  eyebrow="School board"
+                  title={district.district}
+                  variant="school"
+                  metric={{ label: "Members", value: district.candidates.length }}
+                  secondaryMetric={{ label: "County", value: district.county }}
+                  compact
+                  className="mb-4"
+                />
                 <div className="flex items-baseline justify-between">
                   <p className="text-xs font-black uppercase tracking-wide text-gray-500">{district.county} County</p>
                   {ballot > 0 ? <span className="rounded-full bg-red-100 px-2.5 py-0.5 text-xs font-black text-red-700">{ballot} on 2026</span> : null}
@@ -385,14 +398,17 @@ export default async function SchoolBoardsPage({
                 <Link
                   key={candidate.candidate_id}
                   href={getSchoolBoardCandidateUrl(candidate)}
-                  className="rounded-2xl border border-red-200 bg-white p-4 shadow-sm transition hover:-translate-y-0.5 hover:shadow-md"
+                  className="grid grid-cols-[76px_1fr] gap-3 rounded-2xl border border-red-200 bg-white p-4 shadow-sm transition hover:-translate-y-0.5 hover:shadow-md"
                 >
-                  <div className="flex flex-wrap gap-2">
-                    <span className="rounded-full bg-red-100 px-2.5 py-0.5 text-xs font-black text-red-700">2026 ballot</span>
-                    <span className="rounded-full bg-slate-100 px-2.5 py-0.5 text-xs font-black text-slate-700">{candidate.seat ?? "Trustee"}</span>
+                  <SourceNeededAvatar name={candidate.preferred_name ?? candidate.full_name} className="h-[76px] w-[76px]" />
+                  <div className="min-w-0">
+                    <div className="flex flex-wrap gap-2">
+                      <span className="rounded-full bg-red-100 px-2.5 py-0.5 text-xs font-black text-red-700">2026 ballot</span>
+                      <span className="rounded-full bg-slate-100 px-2.5 py-0.5 text-xs font-black text-slate-700">{candidate.seat ?? "Trustee"}</span>
+                    </div>
+                    <h3 className="mt-2 text-lg font-black text-gray-950">{candidate.preferred_name ?? candidate.full_name}</h3>
+                    <p className="mt-0.5 text-sm font-semibold text-gray-500">{candidate.district}</p>
                   </div>
-                  <h3 className="mt-2 text-lg font-black text-gray-950">{candidate.preferred_name ?? candidate.full_name}</h3>
-                  <p className="mt-0.5 text-sm font-semibold text-gray-500">{candidate.district}</p>
                 </Link>
               ))}
             </div>
@@ -413,14 +429,19 @@ export default async function SchoolBoardsPage({
               className="group rounded-2xl border border-gray-200 bg-white p-5 shadow-sm transition hover:-translate-y-0.5 hover:border-red-200 hover:shadow-lg"
             >
               <Link href={getSchoolBoardCandidateUrl(candidate)} className="block">
-                <div className="flex flex-wrap gap-2">
-                  <span className="rounded-full bg-slate-100 px-2.5 py-0.5 text-xs font-black text-slate-700">{candidate.seat ?? "Trustee"}</span>
-                  {candidate.on_2026_ballot || candidate.election_date?.includes("2026") ? (
-                    <span className="rounded-full bg-red-100 px-2.5 py-0.5 text-xs font-black text-red-700">2026 ballot</span>
-                  ) : null}
+                <div className="grid grid-cols-[82px_1fr] gap-3">
+                  <SourceNeededAvatar name={candidate.preferred_name ?? candidate.full_name} className="h-[82px] w-[82px]" />
+                  <div className="min-w-0">
+                    <div className="flex flex-wrap gap-2">
+                      <span className="rounded-full bg-slate-100 px-2.5 py-0.5 text-xs font-black text-slate-700">{candidate.seat ?? "Trustee"}</span>
+                      {candidate.on_2026_ballot || candidate.election_date?.includes("2026") ? (
+                        <span className="rounded-full bg-red-100 px-2.5 py-0.5 text-xs font-black text-red-700">2026 ballot</span>
+                      ) : null}
+                    </div>
+                    <h3 className="mt-3 text-lg font-black text-gray-950 group-hover:text-red-700">{candidate.preferred_name ?? candidate.full_name}</h3>
+                    <p className="mt-0.5 text-sm font-semibold text-gray-500">{candidate.district}</p>
+                  </div>
                 </div>
-                <h3 className="mt-3 text-lg font-black text-gray-950 group-hover:text-red-700">{candidate.preferred_name ?? candidate.full_name}</h3>
-                <p className="mt-0.5 text-sm font-semibold text-gray-500">{candidate.district}</p>
                 <p className="mt-3 text-sm leading-6 text-gray-700 line-clamp-3">{getShareLine(candidate)}</p>
                 <div className="mt-4 grid grid-cols-2 gap-2 text-xs font-bold">
                   <span className="rounded-lg bg-emerald-50 px-2.5 py-1.5 text-emerald-700">{good.length} good</span>
