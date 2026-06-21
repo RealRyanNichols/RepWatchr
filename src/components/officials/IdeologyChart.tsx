@@ -6,7 +6,7 @@ function clampPercent(score: number | null): number {
 }
 
 function formatScore(score: number | null): string {
-  if (score === null) return "Center pending";
+  if (score === null) return "Score pending";
   if (score === 0) return "Center";
   return `${score > 0 ? "Right" : "Left"} ${Math.abs(score)}`;
 }
@@ -24,7 +24,10 @@ function statusClass(value: boolean): string {
 export default function IdeologyChart({ profile }: { profile: OfficialIdeologyProfile }) {
   const markerPercent = clampPercent(profile.ideologyScore);
   const hasVotePosition = profile.ideologyScore !== null;
-  const isVoteviewModel = profile.method.toLowerCase().includes("voteview");
+  const publicVoteRowsLoaded = profile.publicVoteRowsLoaded ?? 0;
+  const directionalMappedVotes = profile.directionalMappedVoteCount ?? profile.mappedVoteCount;
+  const reviewedVotes = profile.reviewedVoteCount ?? directionalMappedVotes + profile.centerVoteCount;
+  const unreviewedLoadedVotes = profile.unreviewedVoteRowsLoaded ?? Math.max(0, publicVoteRowsLoaded - reviewedVotes);
   const buildoutItems = [
     ["Photo", profile.buildout.hasPhoto],
     ["Bio", profile.buildout.hasBio],
@@ -40,7 +43,7 @@ export default function IdeologyChart({ profile }: { profile: OfficialIdeologyPr
     <section className="rounded-2xl border border-slate-200 bg-white p-5 shadow-sm">
       <div className="flex flex-col gap-2 sm:flex-row sm:items-start sm:justify-between">
         <div>
-          <p className="text-xs font-black uppercase tracking-wide text-red-700">Vote-weighted left/right chart</p>
+          <p className="text-xs font-black uppercase tracking-wide text-red-700">Reviewed left/right vote-axis chart</p>
           <h2 className="mt-1 text-xl font-black text-slate-950">{profile.ideologyLabel}</h2>
           <p className="mt-1 text-sm font-semibold leading-6 text-slate-600">
             {profile.basis}
@@ -65,11 +68,11 @@ export default function IdeologyChart({ profile }: { profile: OfficialIdeologyPr
             aria-label={`Ideology marker: ${formatScore(profile.ideologyScore)}`}
           />
         </div>
-        {isVoteviewModel ? (
+        {publicVoteRowsLoaded > 0 ? (
           <div className="mt-3 grid gap-2 text-xs font-bold text-slate-600 sm:grid-cols-3">
-            <span>{profile.mappedVoteCount.toLocaleString()} Voteview roll calls</span>
-            <span>119th Congress model</span>
-            <span>Updated {profile.lastUpdated}</span>
+            <span>{publicVoteRowsLoaded.toLocaleString()} official roll calls loaded</span>
+            <span>{directionalMappedVotes.toLocaleString()} direction-mapped</span>
+            <span>{unreviewedLoadedVotes.toLocaleString()} not direction-reviewed</span>
           </div>
         ) : (
           <div className="mt-3 grid gap-2 text-xs font-bold text-slate-600 sm:grid-cols-3">
@@ -78,14 +81,29 @@ export default function IdeologyChart({ profile }: { profile: OfficialIdeologyPr
             <span>{profile.rightVoteCount} right-coded vote{profile.rightVoteCount === 1 ? "" : "s"}</span>
           </div>
         )}
+        <div className="mt-2 grid gap-2 text-xs font-bold text-slate-500 sm:grid-cols-3">
+          <span>{reviewedVotes.toLocaleString()} reviewed for axis rules</span>
+          <span>{profile.mappedVoteCoveragePercent ?? 0}% mapped coverage</span>
+          <span>Updated {profile.lastUpdated}</span>
+        </div>
       </div>
 
       <div className="mt-4 rounded-xl border border-blue-100 bg-blue-50 p-4">
         <p className="text-sm font-black text-blue-950">Read this as ideology, not approval.</p>
         <p className="mt-1 text-sm font-semibold leading-6 text-blue-900">
-          {formatScore(profile.ideologyScore)} means this voting pattern sits on the right side of the vote-axis model.
-          It does not mean the official is doing a good job, keeping promises, following the Constitution, or serving constituents.
-          Those are separate scorecard, funding, red-flag, and verified citizen signals below.
+          {hasVotePosition ? (
+            <>
+              {formatScore(profile.ideologyScore)} means the reviewed voting pattern sits on the right/left vote-axis model.
+              It does not mean the official is doing a good job, keeping promises, following the Constitution, or serving constituents.
+              Those are separate scorecard, funding, red-flag, and verified citizen signals below.
+            </>
+          ) : (
+            <>
+              No numeric left/right marker is published yet. RepWatchr has {publicVoteRowsLoaded.toLocaleString()} loaded roll call
+              {publicVoteRowsLoaded === 1 ? "" : "s"} and {directionalMappedVotes.toLocaleString()} direction-mapped vote
+              {directionalMappedVotes === 1 ? "" : "s"} for this profile, so the marker stays centered until the reviewed rules catch up.
+            </>
+          )}
         </p>
       </div>
 
@@ -98,9 +116,9 @@ export default function IdeologyChart({ profile }: { profile: OfficialIdeologyPr
             </p>
           </div>
           <p className="text-xs font-black uppercase tracking-wide text-slate-500">
-            {isVoteviewModel
-              ? `${profile.mappedVoteCount.toLocaleString()} roll calls in source model`
-              : `${profile.mappedVoteCount}/${profile.totalScorecardVotes} scorecard votes mapped to the left/right axis`}
+            {publicVoteRowsLoaded > 0
+              ? `${directionalMappedVotes.toLocaleString()}/${publicVoteRowsLoaded.toLocaleString()} loaded roll calls direction-mapped`
+              : `${profile.mappedVoteCount}/${profile.totalScorecardVotes} scorecard votes direction-mapped`}
           </p>
         </div>
         <div className="mt-3 h-2 overflow-hidden rounded-full bg-white">
@@ -127,7 +145,7 @@ export default function IdeologyChart({ profile }: { profile: OfficialIdeologyPr
       {profile.evidence.length > 0 ? (
         <details className="mt-4 rounded-xl border border-slate-200 bg-white p-4">
           <summary className="cursor-pointer text-sm font-black text-slate-950">
-            Open vote-axis evidence ({profile.evidence.length})
+            Open mapped vote-axis evidence ({profile.evidence.length})
           </summary>
           <div className="mt-3 space-y-2">
             {profile.evidence.slice(0, 8).map((vote) => (

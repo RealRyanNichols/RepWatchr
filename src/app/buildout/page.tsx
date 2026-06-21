@@ -293,8 +293,8 @@ export default function BuildoutDashboardPage() {
   const partialJurisdictionRows = geographic.stateRows.filter((row) => row.status === "partial").length;
   const queuedJurisdictionRows = geographic.stateRows.filter((row) => row.status === "queued").length;
   const ideologyProfiles = getAllOfficialIdeologyProfiles();
-  const voteWeightedIdeologyProfiles = ideologyProfiles.filter((profile) => profile.ideologyScore !== null);
-  const pendingIdeologyProfiles = ideologyProfiles.length - voteWeightedIdeologyProfiles.length;
+  const numericIdeologyProfiles = ideologyProfiles.filter((profile) => profile.ideologyScore !== null);
+  const pendingIdeologyProfiles = ideologyProfiles.length - numericIdeologyProfiles.length;
   const loadedOfficialProfiles = dataStats.nonSchoolOfficialFiles;
   const electedProfilesLoaded = dataStats.nonSchoolOfficialFiles + stats.candidates;
   const allElectedOfficialGaps = Math.max(
@@ -389,7 +389,7 @@ export default function BuildoutDashboardPage() {
     {
       label: "Ideology master rows",
       value: ideologyProfiles.length,
-      status: `${voteWeightedIdeologyProfiles.length} rows have a vote-weighted left/right score. ${pendingIdeologyProfiles} rows have centered charts pending mapped vote records.`,
+      status: `${numericIdeologyProfiles.length} rows have a published reviewed left/right score. ${pendingIdeologyProfiles} rows stay centered until enough loaded votes have direction rules.`,
       href: "/officials",
     },
   ];

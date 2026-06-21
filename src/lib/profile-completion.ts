@@ -96,7 +96,7 @@ export const profileCompletionLabels: Record<ProfileCompletionKey, string> = {
   photo: "Profile photo",
   contact: "Official contact or website",
   vote_record: "Voting record",
-  left_right_chart: "Rule-reviewed left/right chart",
+  left_right_chart: "Left/right chart with vote-source counts",
   scorecard: "Issue scorecard or review panel",
   funding: "Campaign finance summary or source path",
   public_records: "Public records and controversies review",
@@ -160,8 +160,9 @@ function hasRuleReviewedIdeology(officialId: string) {
   const ideologyProfile = getOfficialIdeologyProfile(officialId);
   return Boolean(
     ideologyProfile &&
-      ideologyProfile.ideologyScore !== null &&
-      ideologyProfile.mappedVoteCount > 0,
+      (ideologyProfile.reviewedVoteCount > 0 ||
+        ideologyProfile.publicVoteRowsLoaded > 0 ||
+        ideologyProfile.totalScorecardVotes > 0),
   );
 }
 

@@ -141,34 +141,33 @@ export default function MethodologyPage() {
           <div className="space-y-4 text-gray-700 text-sm">
             <div className="bg-slate-50 rounded-lg p-4">
               <h3 className="font-semibold text-gray-900 mb-2">
-                Federal Officials: Voteview First
+                Federal Officials: Official Roll Calls First
               </h3>
               <p>
-                For U.S. House and U.S. Senate profiles, RepWatchr uses
-                Voteview&apos;s congressional ideology data when a current
-                Bioguide ID match exists. Voteview&apos;s first dimension is
-                scaled from -100 to +100 for the RepWatchr meter: negative is
-                left/liberal, positive is right/conservative, and center means
-                the source model is near zero.
+                For U.S. House and U.S. Senate profiles, RepWatchr loads
+                source snapshots from the official House Clerk and Senate
+                roll-call feeds. Those rows are evidence records first. They do
+                not automatically move the left/right meter until a reviewed
+                issue rule maps that vote to a direction.
               </p>
               <p className="mt-2">
-                Source:{" "}
+                Sources:{" "}
                 <a
-                  href="https://voteview.com/data"
+                  href="https://clerk.house.gov/evs/2026/index.asp"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="font-semibold text-blue-700 hover:underline"
                 >
-                  Voteview data
+                  House Clerk roll calls
                 </a>{" "}
                 and{" "}
                 <a
-                  href="https://voteview.com/articles/data_help_members"
+                  href="https://www.senate.gov/legislative/LIS/roll_call_lists/vote_menu_119_2.xml"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="font-semibold text-blue-700 hover:underline"
                 >
-                  member data documentation
+                  Senate roll-call XML
                 </a>
                 .
               </p>

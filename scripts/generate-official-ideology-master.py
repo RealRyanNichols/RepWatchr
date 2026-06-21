@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Generate the master vote-weighted ideology/profile-buildout file.
+"""Generate the master reviewed vote-axis/profile-buildout file.
 
 The output is intentionally evidence-first. The left/right marker moves only
 when a vote can be mapped to a directional policy axis. Everything else stays
@@ -24,6 +24,8 @@ RED_FLAGS = DATA / "red-flags"
 NEWS = DATA / "news"
 OUTPUT = DATA / "official-ideology-master.json"
 GENERATED_DATE = date.today().isoformat()
+MIN_DIRECTIONAL_MAPPED_VOTES = 25
+MIN_DIRECTIONAL_COVERAGE_RATIO = 0.20
 
 RIGHT_POLICY_CATEGORIES = {"taxes", "land-and-property-rights"}
 RIGHT_POLICY_KEYWORDS = {
@@ -118,6 +120,23 @@ def flatten_scorecard_votes(scorecard: dict[str, Any]) -> list[dict[str, Any]]:
     return votes
 
 
+def vote_record_summary(official_id: str) -> dict[str, Any]:
+    vote_record = read_json(VOTE_RECORDS / f"{official_id}.json", {})
+    votes = vote_record.get("votes", []) if isinstance(vote_record, dict) else []
+    summary = vote_record.get("summary", {}) if isinstance(vote_record, dict) else {}
+    total = summary.get("totalVotesLoaded")
+    try:
+        total_votes = int(total)
+    except (TypeError, ValueError):
+        total_votes = len(votes)
+
+    return {
+        "publicVoteRowsLoaded": max(0, total_votes),
+        "publicVoteRecordLastUpdated": vote_record.get("lastUpdated") if isinstance(vote_record, dict) else None,
+        "publicVoteRecordSourceCount": len(vote_record.get("sourceLinks", [])) if isinstance(vote_record, dict) else 0,
+    }
+
+
 def classify_vote_axis(vote: dict[str, Any]) -> tuple[int | None, str]:
     category = vote.get("category", "")
     text = f"{vote.get('billTitle', '')} {vote.get('explanation', '')}".lower()
@@ -141,18 +160,33 @@ def classify_vote_axis(vote: dict[str, Any]) -> tuple[int | None, str]:
 
 
 def build_ideology(official: dict[str, Any], scorecard: dict[str, Any] | None, vote_sources: dict[str, str]) -> dict[str, Any]:
+    official_id = official["id"]
+    public_vote_record = vote_record_summary(official_id)
+    public_vote_rows = public_vote_record["publicVoteRowsLoaded"]
+
     if not scorecard:
+        basis = (
+            f"{public_vote_rows} official roll-call row{' is' if public_vote_rows == 1 else 's are'} loaded, "
+            "but no left/right direction rules are mapped for this profile yet."
+            if public_vote_rows
+            else "The marker stays centered until public votes are loaded and mapped to the left/right policy axis."
+        )
         return {
             "ideologyScore": None,
             "ideologyLabel": "Vote record pending",
             "confidence": "none",
             "method": "No scorecard vote file exists for this official yet.",
-            "basis": "The marker stays centered until public votes are loaded and mapped to the left/right policy axis.",
+            "basis": basis,
             "mappedVoteCount": 0,
+            "directionalMappedVoteCount": 0,
+            "reviewedVoteCount": 0,
             "totalScorecardVotes": 0,
             "rightVoteCount": 0,
             "leftVoteCount": 0,
             "centerVoteCount": 0,
+            "unreviewedVoteRowsLoaded": public_vote_rows,
+            "mappedVoteCoveragePercent": 0,
+            **public_vote_record,
             "evidence": [],
         }
 
@@ -212,34 +246,101 @@ def build_ideology(official: dict[str, Any], scorecard: dict[str, Any] | None, v
         )
 
     mapped_vote_count = right_count + left_count
+    reviewed_vote_count = mapped_vote_count + center_count
+    unreviewed_scorecard_count = max(0, len(all_votes) - reviewed_vote_count)
+    coverage_base = public_vote_rows if public_vote_rows else len(all_votes)
+    mapped_coverage = (mapped_vote_count / coverage_base) if coverage_base else 0
+    mapped_coverage_percent = round(mapped_coverage * 100, 1)
+
     if total_weight == 0:
         return {
             "ideologyScore": None,
             "ideologyLabel": "Vote record not mapped",
             "confidence": "none",
             "method": "Scorecard exists, but no votes are mapped to the left/right policy axis yet.",
-            "basis": "The marker stays centered until vote-direction review is completed for this official.",
+            "basis": (
+                f"{public_vote_rows} official roll-call row{' is' if public_vote_rows == 1 else 's are'} loaded. "
+                "No directional left/right score is published until enough loaded vote rows have reviewed direction rules."
+                if public_vote_rows
+                else "The marker stays centered until vote-direction review is completed for this official."
+            ),
             "mappedVoteCount": 0,
+            "directionalMappedVoteCount": 0,
+            "reviewedVoteCount": reviewed_vote_count,
             "totalScorecardVotes": len(all_votes),
             "rightVoteCount": 0,
             "leftVoteCount": 0,
             "centerVoteCount": center_count,
+            "unreviewedVoteRowsLoaded": max(0, public_vote_rows - reviewed_vote_count),
+            "mappedVoteCoveragePercent": mapped_coverage_percent,
+            "unreviewedScorecardVoteCount": unreviewed_scorecard_count,
+            **public_vote_record,
             "evidence": [],
         }
 
+    has_enough_directional_votes = mapped_vote_count >= MIN_DIRECTIONAL_MAPPED_VOTES
+    has_enough_loaded_vote_coverage = public_vote_rows == 0 or mapped_coverage >= MIN_DIRECTIONAL_COVERAGE_RATIO
+    if not has_enough_directional_votes or not has_enough_loaded_vote_coverage:
+        threshold = (
+            f"RepWatchr requires at least {MIN_DIRECTIONAL_MAPPED_VOTES} direction-mapped votes"
+            f" and at least {round(MIN_DIRECTIONAL_COVERAGE_RATIO * 100)}% mapped coverage when official roll-call rows are loaded."
+        )
+        if public_vote_rows:
+            basis = (
+                f"{public_vote_rows} official roll-call row{' is' if public_vote_rows == 1 else 's are'} loaded. "
+                f"{mapped_vote_count} directional and {center_count} center/non-directional scorecard vote"
+                f"{'' if reviewed_vote_count == 1 else 's'} are reviewed, so the marker stays centered instead of treating "
+                "the reviewed subset as the full voting record."
+            )
+        else:
+            basis = (
+                f"{mapped_vote_count} directional and {center_count} center/non-directional scorecard vote"
+                f"{'' if reviewed_vote_count == 1 else 's'} are reviewed. More source-backed mapped votes are needed before a numeric left/right marker is published."
+            )
+
+        return {
+            "ideologyScore": None,
+            "ideologyLabel": "Left/right review pending",
+            "confidence": "none",
+            "method": threshold,
+            "basis": basis,
+            "mappedVoteCount": mapped_vote_count,
+            "directionalMappedVoteCount": mapped_vote_count,
+            "reviewedVoteCount": reviewed_vote_count,
+            "totalScorecardVotes": len(all_votes),
+            "rightVoteCount": right_count,
+            "leftVoteCount": left_count,
+            "centerVoteCount": center_count,
+            "unreviewedVoteRowsLoaded": max(0, public_vote_rows - reviewed_vote_count),
+            "mappedVoteCoveragePercent": mapped_coverage_percent,
+            "unreviewedScorecardVoteCount": unreviewed_scorecard_count,
+            **public_vote_record,
+            "evidence": evidence,
+        }
+
     ideology_score = round((weighted_score / total_weight) * 100)
-    confidence = "high" if mapped_vote_count >= 8 else "medium" if mapped_vote_count >= 4 else "low"
+    confidence = "high" if mapped_vote_count >= 75 else "medium" if mapped_vote_count >= 40 else "low"
     return {
         "ideologyScore": ideology_score,
         "ideologyLabel": ideology_label(ideology_score),
         "confidence": confidence,
-        "method": "Weighted average of scorecard votes that are mapped to a left/right policy axis.",
-        "basis": "Uses public vote records already loaded in the scorecard. Non-directional transparency and uncoded issue votes are not forced left or right.",
+        "method": "Weighted average of reviewed scorecard votes that are mapped to a left/right policy axis.",
+        "basis": (
+            f"Uses {mapped_vote_count} direction-mapped votes"
+            f"{f' out of {public_vote_rows} loaded official roll-call rows' if public_vote_rows else ''}. "
+            "Non-directional transparency, procedural, nomination, and uncoded issue votes are not forced left or right."
+        ),
         "mappedVoteCount": mapped_vote_count,
+        "directionalMappedVoteCount": mapped_vote_count,
+        "reviewedVoteCount": reviewed_vote_count,
         "totalScorecardVotes": len(all_votes),
         "rightVoteCount": right_count,
         "leftVoteCount": left_count,
         "centerVoteCount": center_count,
+        "unreviewedVoteRowsLoaded": max(0, public_vote_rows - reviewed_vote_count),
+        "mappedVoteCoveragePercent": mapped_coverage_percent,
+        "unreviewedScorecardVoteCount": unreviewed_scorecard_count,
+        **public_vote_record,
         "evidence": evidence,
     }
 
@@ -359,7 +460,7 @@ def main() -> int:
     with_votes = sum(1 for row in rows if row["ideologyScore"] is not None)
     complete = sum(1 for row in rows if row["buildout"]["isComplete"])
     print(f"Wrote {len(rows)} official ideology/profile rows to {OUTPUT.relative_to(ROOT)}")
-    print(f"{with_votes} rows have a vote-weighted left/right score; {complete} rows are marked complete.")
+    print(f"{with_votes} rows have a published reviewed left/right score; {complete} rows are marked complete.")
     return 0
 
 

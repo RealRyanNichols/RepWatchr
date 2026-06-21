@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Import recent public federal roll-call vote snapshots.
+"""Import public federal roll-call vote snapshots.
 
 Sources:
 - House Clerk roll-call XML for the 119th Congress, 2nd session.
@@ -12,6 +12,7 @@ requires issue mapping and review.
 
 from __future__ import annotations
 
+import argparse
 import datetime as dt
 import html
 import json
@@ -33,7 +34,7 @@ ACCESSED_DATE = dt.date.today().isoformat()
 CONGRESS = 119
 SESSION = 2
 YEAR = 2026
-RECENT_VOTE_LIMIT = 12
+DEFAULT_MAX_ROLLS = 0
 
 HOUSE_INDEX_URL = f"https://clerk.house.gov/evs/{YEAR}/index.asp"
 HOUSE_XML_URL = f"https://clerk.house.gov/evs/{YEAR}/roll{{roll:03d}}.xml"
@@ -146,11 +147,15 @@ class HouseIndexParser(HTMLParser):
 def latest_house_rolls(limit: int) -> list[int]:
     parser = HouseIndexParser()
     parser.feed(fetch_text(HOUSE_INDEX_URL))
+    sorted_rolls = sorted(set(parser.rolls), reverse=True)
+    if limit <= 0 and sorted_rolls:
+        return list(range(sorted_rolls[0], 0, -1))
+
     seen: list[int] = []
-    for roll in sorted(set(parser.rolls), reverse=True):
+    for roll in sorted_rolls:
         if roll not in seen:
             seen.append(roll)
-        if len(seen) >= limit:
+        if limit > 0 and len(seen) >= limit:
             break
     return seen
 
@@ -162,7 +167,8 @@ def latest_senate_rolls(limit: int) -> list[int]:
         value = text_at(vote, "vote_number")
         if value.isdigit():
             rolls.append(int(value))
-    return sorted(set(rolls), reverse=True)[:limit]
+    sorted_rolls = sorted(set(rolls), reverse=True)
+    return sorted_rolls[:limit] if limit > 0 else sorted_rolls
 
 
 def load_federal_officials() -> tuple[dict[str, dict[str, Any]], dict[tuple[str, str], dict[str, Any]]]:
@@ -239,6 +245,8 @@ def parse_senate_vote(roll: int, senators_by_state_last: dict[tuple[str, str], d
     source_url = SENATE_XML_URL.format(roll=roll)
     root = ET.fromstring(fetch_bytes(source_url))
     vote_number = int(text_at(root, "vote_number") or roll)
+    vote_title = text_at(root, "vote_title") or text_at(root, "document/document_title")
+    vote_question = text_at(root, "vote_question_text") or text_at(root, "question")
     vote_meta = {
         "sourceId": f"senate-{YEAR}-{vote_number:05d}",
         "sourceName": "U.S. Senate roll-call vote XML",
@@ -249,11 +257,11 @@ def parse_senate_vote(roll: int, senators_by_state_last: dict[tuple[str, str], d
         "session": int(text_at(root, "session") or SESSION),
         "rollCall": vote_number,
         "date": parse_senate_date(text_at(root, "vote_date")),
-        "issue": text_at(root, "document/document_name") or text_at(root, "issue"),
-        "question": text_at(root, "vote_question_text") or text_at(root, "question"),
+        "issue": text_at(root, "document/document_name") or text_at(root, "issue") or vote_title or vote_question,
+        "question": vote_question,
         "voteType": text_at(root, "question"),
         "result": text_at(root, "vote_result_text") or text_at(root, "vote_result"),
-        "title": text_at(root, "vote_title") or text_at(root, "document/document_title"),
+        "title": vote_title,
     }
 
     rows: list[tuple[str, dict[str, Any]]] = []
@@ -301,12 +309,41 @@ def summarize_votes(votes: list[dict[str, Any]]) -> dict[str, int]:
     return summary
 
 
+def source_links_for_chamber(chamber: str) -> list[dict[str, str]]:
+    if chamber == "house":
+        return [
+            {
+                "title": "House Clerk roll-call vote index",
+                "url": HOUSE_INDEX_URL,
+            },
+        ]
+    return [
+        {
+            "title": "Senate roll-call vote menu",
+            "url": SENATE_MENU_URL.replace(".xml", ".htm"),
+        },
+        {
+            "title": "Senate roll-call vote XML feed",
+            "url": SENATE_MENU_URL,
+        },
+    ]
+
+
 def main() -> int:
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument(
+        "--max-rolls",
+        type=int,
+        default=DEFAULT_MAX_ROLLS,
+        help="Maximum recent House and Senate rolls to import per chamber. Use 0 for the full current-session menu.",
+    )
+    args = parser.parse_args()
+
     by_bioguide, senators_by_state_last = load_federal_officials()
     vote_rows_by_official: dict[str, list[dict[str, Any]]] = {}
     warnings: list[str] = []
 
-    for roll in latest_house_rolls(RECENT_VOTE_LIMIT):
+    for roll in latest_house_rolls(args.max_rolls):
         try:
             _, rows = parse_house_vote(roll, by_bioguide)
         except (ET.ParseError, urllib.error.URLError, TimeoutError, OSError, ValueError) as exc:
@@ -315,7 +352,7 @@ def main() -> int:
         for official_id, row in rows:
             vote_rows_by_official.setdefault(official_id, []).append(row)
 
-    for roll in latest_senate_rolls(RECENT_VOTE_LIMIT):
+    for roll in latest_senate_rolls(args.max_rolls):
         try:
             _, rows = parse_senate_vote(roll, senators_by_state_last)
         except (ET.ParseError, urllib.error.URLError, TimeoutError, OSError, ValueError) as exc:
@@ -349,23 +386,15 @@ def main() -> int:
                 "chamber": chamber,
                 "session": f"{CONGRESS}th Congress, {SESSION}nd Session ({YEAR})",
                 "lastUpdated": ACCESSED_DATE,
-                "sourceLinks": [
-                    {
-                        "title": "House Clerk roll-call votes",
-                        "url": HOUSE_INDEX_URL,
-                    },
-                    {
-                        "title": "Senate roll-call votes",
-                        "url": SENATE_MENU_URL,
-                    },
-                ],
+                "sourceLinks": source_links_for_chamber(chamber),
                 "summary": summarize_votes(votes),
                 "votes": votes,
             },
         )
         written += 1
 
-    print(f"Wrote {written} federal vote-record snapshots to {VOTE_RECORDS_DIR.relative_to(ROOT)}")
+    roll_scope = "all current-session" if args.max_rolls <= 0 else f"latest {args.max_rolls}"
+    print(f"Wrote {written} federal vote-record snapshots from {roll_scope} rolls to {VOTE_RECORDS_DIR.relative_to(ROOT)}")
     if warnings:
         print("Warnings:")
         for warning in warnings:

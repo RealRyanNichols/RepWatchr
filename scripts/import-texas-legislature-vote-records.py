@@ -44,7 +44,7 @@ RECORD_VOTE_URL = (
 
 TODAY = dt.date.today()
 DEFAULT_START = dt.date(2025, 1, 14)
-DEFAULT_LIMIT = 120
+DEFAULT_LIMIT = 0
 
 
 def request(url: str, data: bytes | None = None) -> urllib.request.Request:
@@ -395,7 +395,12 @@ def main() -> int:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--start", default=DEFAULT_START.isoformat(), help="Start date, YYYY-MM-DD")
     parser.add_argument("--end", default=TODAY.isoformat(), help="End date, YYYY-MM-DD")
-    parser.add_argument("--max-votes-per-official", type=int, default=DEFAULT_LIMIT)
+    parser.add_argument(
+        "--max-votes-per-official",
+        type=int,
+        default=DEFAULT_LIMIT,
+        help="Maximum recent votes to keep per official. Use 0 for every collected vote.",
+    )
     parser.add_argument("--history-workers", type=int, default=8, help="Concurrent Texas bill-history page fetches")
     parser.add_argument("--vote-workers", type=int, default=12, help="Concurrent Texas record-vote payload fetches")
     args = parser.parse_args()

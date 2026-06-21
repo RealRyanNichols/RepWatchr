@@ -333,10 +333,18 @@ export interface OfficialIdeologyProfile {
   method: string;
   basis: string;
   mappedVoteCount: number;
+  directionalMappedVoteCount: number;
+  reviewedVoteCount: number;
   totalScorecardVotes: number;
   rightVoteCount: number;
   leftVoteCount: number;
   centerVoteCount: number;
+  publicVoteRowsLoaded: number;
+  publicVoteRecordLastUpdated?: string | null;
+  publicVoteRecordSourceCount: number;
+  unreviewedVoteRowsLoaded: number;
+  mappedVoteCoveragePercent: number;
+  unreviewedScorecardVoteCount?: number;
   lastUpdated: string;
   evidence: IdeologyVoteEvidence[];
   buildout: OfficialProfileBuildout;
