@@ -1,5 +1,3 @@
-import fs from "fs";
-import path from "path";
 import Link from "next/link";
 import { getAllOfficials, getScoreCard, getIssueCategories, getAllNews, getRedFlags, getRepWatchrDataStats, getOfficialById } from "@/lib/data";
 import { getSchoolBoardStats } from "@/lib/school-board-research";
@@ -10,13 +8,6 @@ import { getRepWatchrServices } from "@/data/repwatchr-services";
 import type { NewsArticle, Official } from "@/types";
 
 export const revalidate = 3600;
-
-type WatchBoardSignal = {
-  official: Official;
-  score?: number;
-  redFlagCount: number;
-  heat: number;
-};
 
 const levelCards = [
   {
@@ -92,6 +83,17 @@ const sourceDeskActions = [
   },
 ];
 
+const publicAssetAllowlist = new Set([
+  "/images/repwatchr-logo-america-first.png",
+  "/images/repwatchr-cover-america-first.png",
+  "/images/RepWatchr Profile Pic.png",
+  "/images/repwatchr_cover.png",
+  "/images/logo.png",
+  "/images/profile.png",
+  "/images/banner.png",
+  "/images/icon.png",
+]);
+
 function formatNumber(value: number) {
   return new Intl.NumberFormat("en-US").format(value);
 }
@@ -107,7 +109,7 @@ function publicAssetExists(assetPath?: string) {
   const normalizedPath = assetPath.replace(/^\/+/, "");
   if (!normalizedPath || normalizedPath.startsWith("..")) return false;
 
-  return fs.existsSync(path.join(process.cwd(), "public", normalizedPath));
+  return publicAssetAllowlist.has(`/${normalizedPath}`);
 }
 
 function officialWithSafePhoto(official: Official): Official {

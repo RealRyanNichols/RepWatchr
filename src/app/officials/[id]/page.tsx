@@ -720,7 +720,7 @@ function FederalVoteRecordPanel({
             Current public roll-call snapshot
           </h2>
           <p className="mt-1 text-sm font-semibold leading-6 text-gray-600">
-            Source-backed roll-call votes loaded from official public records through {record.lastUpdated}. These are not automatically scored left or right until issue mapping is reviewed.
+            Source-backed roll-call votes counted from official public records through {record.lastUpdated}. The newest rows are shown below; these votes are not automatically scored left or right until issue mapping is reviewed.
           </p>
         </div>
         <div className="rounded-xl border border-blue-100 bg-blue-50 px-4 py-3 text-right">
@@ -737,6 +737,9 @@ function FederalVoteRecordPanel({
       </div>
 
       <div className="mt-5 overflow-hidden rounded-xl border border-gray-200">
+        <div className="border-b border-gray-200 bg-gray-50 px-4 py-2 text-xs font-black uppercase tracking-wide text-gray-500">
+          Latest {record.votes.length} stored roll-call rows
+        </div>
         <div className="divide-y divide-gray-200">
           {record.votes.slice(0, 8).map((vote) => (
             <a

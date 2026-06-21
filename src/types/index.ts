@@ -258,6 +258,8 @@ export interface PublicVoteRecord {
     notVoting: number;
     other: number;
   };
+  storedVoteRows?: number;
+  voteRowStorageNote?: string;
   votes: PublicVoteRecordVote[];
 }
 

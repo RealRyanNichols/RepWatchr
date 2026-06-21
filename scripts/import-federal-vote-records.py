@@ -35,6 +35,7 @@ CONGRESS = 119
 SESSION = 2
 YEAR = 2026
 DEFAULT_MAX_ROLLS = 0
+STORED_VOTE_ROW_LIMIT = 24
 
 HOUSE_INDEX_URL = f"https://clerk.house.gov/evs/{YEAR}/index.asp"
 HOUSE_XML_URL = f"https://clerk.house.gov/evs/{YEAR}/roll{{roll:03d}}.xml"
@@ -377,6 +378,8 @@ def main() -> int:
             continue
         chamber = "senate" if official.get("position") == "U.S. Senator" else "house"
         votes = sorted(votes, key=lambda item: (item["date"], item["rollCall"]), reverse=True)
+        summary = summarize_votes(votes)
+        stored_votes = votes[:STORED_VOTE_ROW_LIMIT]
         write_json(
             VOTE_RECORDS_DIR / f"{official_id}.json",
             {
@@ -387,8 +390,13 @@ def main() -> int:
                 "session": f"{CONGRESS}th Congress, {SESSION}nd Session ({YEAR})",
                 "lastUpdated": ACCESSED_DATE,
                 "sourceLinks": source_links_for_chamber(chamber),
-                "summary": summarize_votes(votes),
-                "votes": votes,
+                "summary": summary,
+                "storedVoteRows": len(stored_votes),
+                "voteRowStorageNote": (
+                    "Full current-session roll calls are counted in summary; "
+                    f"the latest {STORED_VOTE_ROW_LIMIT} rows are stored for profile display."
+                ),
+                "votes": stored_votes,
             },
         )
         written += 1
