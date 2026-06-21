@@ -1,11 +1,15 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import { buildOgImageUrl, buildRepWatchrMetadata } from "@/lib/repwatchr-seo";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = buildRepWatchrMetadata({
   title: "About",
   description:
     "About RepWatchr, the Texas public-record map for officials, school boards, votes, sources, and citizen accountability.",
-};
+  path: "/about",
+  imagePath: buildOgImageUrl("home"),
+  imageAlt: "About RepWatchr preview",
+});
 
 export default function AboutPage() {
   return (

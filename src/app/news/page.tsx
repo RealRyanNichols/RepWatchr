@@ -1,13 +1,21 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import ShareButtons from "@/components/shared/ShareButtons";
 import { DAILY_NEWS_WATCH_SOURCES } from "@/data/daily-news-watch-sources";
 import { getAllNews, getOfficialById } from "@/lib/data";
+import { buildOgImageUrl, buildRepWatchrMetadata } from "@/lib/repwatchr-seo";
 import type { NewsArticle, NewsPowerChannel, NewsScope } from "@/types";
 
 export const metadata: Metadata = {
-  title: "Public Accountability Stories | RepWatchr",
-  description:
-    "Source-backed public-accountability stories tied to officials, school boards, elections, courts, money, public offices, and public records.",
+  ...buildRepWatchrMetadata({
+    title: "Public Accountability Stories | RepWatchr",
+    description:
+      "Source-backed public-accountability stories tied to officials, school boards, elections, courts, money, public offices, and public records.",
+    path: "/news",
+    imagePath: buildOgImageUrl("news"),
+    imageAlt: "RepWatchr public accountability stories preview",
+    type: "article",
+  }),
 };
 
 const tagColors: Record<string, string> = {
@@ -288,6 +296,16 @@ export default async function NewsPage({
                     {label}
                   </Link>
                 ))}
+              </div>
+              <div className="mt-5">
+                <ShareButtons
+                  title="RepWatchr public accountability stories"
+                  description="Source-backed stories tied to officials, school boards, elections, courts, money, public offices, and public records."
+                  path="/news"
+                  template="confirmed_record"
+                  subject="RepWatchr public accountability stories"
+                  sourceLabel="story source links, official profiles, and public records"
+                />
               </div>
             </div>
 

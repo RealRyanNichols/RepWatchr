@@ -1,11 +1,17 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { getIssueCategories } from "@/lib/data";
+import { buildOgImageUrl, buildRepWatchrMetadata } from "@/lib/repwatchr-seo";
 
 export const metadata: Metadata = {
-  title: "Methodology",
-  description:
-    "How we calculate scores for Texas elected officials. Transparent, traceable, and focused on local issues.",
+  ...buildRepWatchrMetadata({
+    title: "Methodology | RepWatchr",
+    description:
+      "How RepWatchr separates facts, public records, scored votes, source gaps, and review status before a claim becomes shareable.",
+    path: "/methodology",
+    imagePath: buildOgImageUrl("methodology"),
+    imageAlt: "RepWatchr methodology social preview",
+  }),
 };
 
 export default function MethodologyPage() {

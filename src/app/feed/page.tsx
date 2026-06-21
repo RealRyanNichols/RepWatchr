@@ -6,40 +6,20 @@ import ShareButtons from "@/components/shared/ShareButtons";
 import OfficialPhotoImage, { FEATURED_OFFICIAL_PHOTO_QUALITY } from "@/components/shared/OfficialPhotoImage";
 import { getAllNews, getOfficialById, getRepWatchrDataStats } from "@/lib/data";
 import { getDailyWireClips, type DailyWireClip } from "@/lib/daily-wire";
+import { buildOgImageUrl, buildRepWatchrMetadata } from "@/lib/repwatchr-seo";
 import type { NewsArticle, NewsPowerChannel, NewsScope, Official, SourceCredit } from "@/types";
 
 export const dynamic = "force-dynamic";
 
 export const metadata: Metadata = {
-  title: "RepWatchr Feed | Political Attention Engine",
-  description:
-    "A source-backed political attention feed built for stories, snippets, public records, officials, school boards, votes, money, red flags, and shareable accountability posts.",
-  alternates: {
-    canonical: "https://www.repwatchr.com/feed",
-  },
-  openGraph: {
-    title: "RepWatchr Feed | Political Attention Engine",
+  ...buildRepWatchrMetadata({
+    title: "RepWatchr Feed | Source-Backed Story Feed",
     description:
-      "Stories that travel like social posts and land like evidence packets: public records, officials, votes, money, school boards, and source-backed accountability.",
-    url: "https://www.repwatchr.com/feed",
-    siteName: "RepWatchr",
-    type: "website",
-    images: [
-      {
-        url: "/images/repwatchr-cover-america-first.png",
-        width: 2172,
-        height: 724,
-        alt: "RepWatchr Feed America First cover photo",
-      },
-    ],
-  },
-  twitter: {
-    card: "summary_large_image",
-    title: "RepWatchr Feed | Political Attention Engine",
-    description:
-      "Follow source-backed political stories, social snippets, public records, officials, school boards, votes, money, and red flags.",
-    images: ["/images/repwatchr-cover-america-first.png"],
-  },
+      "Follow source-backed stories, social snippets, public records, officials, school boards, votes, money, and red flags.",
+    path: "/feed",
+    imagePath: buildOgImageUrl("news"),
+    imageAlt: "RepWatchr source-backed story feed preview",
+  }),
 };
 
 const scopeLabels: Record<NewsScope, string> = {
@@ -348,6 +328,9 @@ function FeedPostCard({ article }: { article: NewsArticle }) {
             title={article.title}
             description={article.summary}
             path={`/news/${article.id}`}
+            template={article.sourceStatus === "needs_source_review" ? "missing_source" : "confirmed_record"}
+            subject={article.title}
+            sourceLabel={article.sourceName || article.sourceLinks?.[0]?.title || "linked public sources"}
           />
           <div className="flex flex-wrap gap-2">
             <Link
@@ -463,6 +446,9 @@ function WireFeedPostCard({ clip }: { clip: DailyWireClip }) {
             title={clip.title}
             description={clip.summary}
             path={`/daily-wire#clip-${clip.id}`}
+            template="meeting_clip"
+            subject={clip.title}
+            sourceLabel={clip.sourceCredit?.name || clip.sourceName}
           />
           <div className="flex flex-wrap gap-2">
             <Link
@@ -496,7 +482,7 @@ export default async function FeedPage({
   const selectedLane = isFeedChannel(selectedLaneParam) ? selectedLaneParam : undefined;
   const wireResult = await getDailyWireClips(12);
   const wireFeedClips = wireResult.clips
-    .filter((clip) => clip.publicStatus === "auto_published")
+    .filter((clip) => clip.publicStatus === "source_linked")
     .filter((clip) => (selectedLane ? clip.powerChannels.includes(selectedLane) : true))
     .slice(0, 4);
   const articles = getAllNews().slice().sort((a, b) => timeValue(b.publishedAt) - timeValue(a.publishedAt));

@@ -26,13 +26,18 @@ import CommentSection from "@/components/comments/CommentSection";
 import ShareButtons from "@/components/shared/ShareButtons";
 import ReportButton from "@/components/shared/ReportButton";
 import ProfileOpenTracker from "@/components/shared/ProfileOpenTracker";
+import NextUsefulMove from "@/components/shared/NextUsefulMove";
+import PublicContentRulesPanel from "@/components/shared/PublicContentRulesPanel";
 import ProfileScorecardVote from "@/components/scorecards/ProfileScorecardVote";
 import OfficialSocialPanel from "@/components/officials/OfficialSocialPanel";
 import OfficialPhotoImage, { FEATURED_OFFICIAL_PHOTO_QUALITY } from "@/components/shared/OfficialPhotoImage";
 import { getPublicProfileOverlay, type PublicProfileEnrichmentItem, type PublicProfileOverlay, type PublicProfileVoteSnapshot } from "@/lib/profile-overlays";
 import { buildOfficialCompletionSnapshot } from "@/lib/profile-completion";
 import { getCongressTradingSnapshot } from "@/lib/congress-trading";
-import type { Official, PublicVoteRecord } from "@/types";
+import { buildOgImageUrl, buildRepWatchrMetadata } from "@/lib/repwatchr-seo";
+import { breadcrumbJsonLd, jsonLd, profilePageJsonLd } from "@/lib/structured-data";
+import { buildOfficialDossier, type DossierSourceGroup, type DossierTimelineItem } from "@/lib/official-dossier";
+import type { Official, PublicVoteRecord, RedFlag, ScoredVote } from "@/types";
 
 export const revalidate = 86400;
 export const dynamic = "force-dynamic";
@@ -52,37 +57,14 @@ export async function generateMetadata({
   if (!official) return { title: "Official Not Found" };
   const title = `${official.name} - ${official.position}`;
   const description = `Source-backed RepWatchr profile for ${official.name}, ${official.position} serving ${official.jurisdiction}.`;
-  const canonicalUrl = `https://www.repwatchr.com/officials/${official.id}`;
-  const ogImage = `/api/og/official?id=${encodeURIComponent(official.id)}`;
-
-  return {
+  return buildRepWatchrMetadata({
     title,
     description,
-    alternates: {
-      canonical: canonicalUrl,
-    },
-    openGraph: {
-      title,
-      description,
-      url: canonicalUrl,
-      siteName: "RepWatchr",
-      type: "profile",
-      images: [
-        {
-          url: ogImage,
-          width: 1200,
-          height: 630,
-          alt: `${official.name} RepWatchr profile`,
-        },
-      ],
-    },
-    twitter: {
-      card: "summary_large_image",
-      title,
-      description,
-      images: [ogImage],
-    },
-  };
+    path: `/officials/${official.id}`,
+    imagePath: buildOgImageUrl("official", { id: official.id }),
+    imageAlt: `${official.name} RepWatchr profile`,
+    type: "profile",
+  });
 }
 
 export default async function OfficialProfilePage({
@@ -110,6 +92,7 @@ export default async function OfficialProfilePage({
   const scoreCard = getScoreCard(id);
   const funding = getFundingSummary(id);
   const redFlags = getRedFlags(id);
+  const sourceBackedRedFlags = redFlags.filter((flag) => Boolean(flag.sourceUrl));
   const issueCategories = getIssueCategories();
   const relatedNews = getNewsByOfficialId(id);
   const publicVoteRecord = getPublicVoteRecord(id);
@@ -129,6 +112,32 @@ export default async function OfficialProfilePage({
   const buildoutMissingItems = buildoutComplete
     ? []
     : profileOverlay.completion?.missingItems ?? staticCompletion.missingItems;
+  const dossier = buildOfficialDossier({
+    official,
+    scoreCard,
+    funding,
+    redFlags: sourceBackedRedFlags,
+    relatedNews,
+    publicVoteRecord,
+    overlay: profileOverlay,
+    congressTrading,
+    buildoutPercent,
+    missingItems: buildoutMissingItems,
+  });
+  const profileDescription = `Source-backed RepWatchr profile for ${official.name}, ${official.position} serving ${official.jurisdiction}.`;
+  const profileStructuredData = profilePageJsonLd({
+    name: official.name,
+    path: `/officials/${official.id}`,
+    description: profileDescription,
+    jobTitle: official.position,
+    image: official.photo,
+    jurisdiction: official.jurisdiction,
+  });
+  const breadcrumbStructuredData = breadcrumbJsonLd([
+    { name: "RepWatchr", path: "/" },
+    { name: "Officials", path: "/officials" },
+    { name: official.name, path: `/officials/${official.id}` },
+  ]);
 
   const allScoredVotes = scoreCard
     ? Object.values(scoreCard.categories).flatMap((c) => c.votes)
@@ -138,6 +147,14 @@ export default async function OfficialProfilePage({
 
   return (
     <div className="min-h-screen bg-[#f8fbff] text-slate-950">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: jsonLd(profileStructuredData) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: jsonLd(breadcrumbStructuredData) }}
+      />
       <ProfileOpenTracker
         profileId={official.id}
         profileType="official"
@@ -182,15 +199,49 @@ export default async function OfficialProfilePage({
                 <span>{official.jurisdiction}</span>
                 <span>{formatLevelName(official.level)}</span>
               </div>
+              <div className="mt-3 grid gap-2 sm:grid-cols-3">
+                <HeroDossierMetric
+                  label="Score/status"
+                  value={scoreCard ? `${scoreCard.letterGrade} / ${scoreCard.overall}` : "Needs review"}
+                  detail={scoreCard ? `Updated ${scoreCard.lastUpdated}` : "Insufficient scored data"}
+                />
+                <HeroDossierMetric
+                  label="Sources"
+                  value={dossier.sourceCount.toLocaleString()}
+                  detail="Public receipt links"
+                />
+                <HeroDossierMetric
+                  label="Profile"
+                  value={`${buildoutPercent}%`}
+                  detail={buildoutComplete ? "Core loaded" : "Buildout in progress"}
+                />
+              </div>
               <div className="mt-3 flex flex-wrap items-center gap-3">
+                <Link
+                  href={`/dashboard?watch=${encodeURIComponent(`/officials/${official.id}`)}&target=${encodeURIComponent(official.name)}`}
+                  className="rounded-lg border border-blue-700 bg-blue-700 px-3 py-2 text-xs font-black uppercase tracking-wide text-white shadow-sm transition hover:bg-blue-800"
+                >
+                  Watch profile
+                </Link>
+                <Link
+                  href="#dossier-actions"
+                  className="rounded-lg border border-slate-300 bg-white px-3 py-2 text-xs font-black uppercase tracking-wide text-slate-700 shadow-sm transition hover:border-blue-300 hover:bg-blue-50"
+                >
+                  Actions
+                </Link>
                 <ShareButtons
                   title={`${official.name} - ${official.position} | RepWatchr`}
                   description={`See the scorecard, voting record, and funding data for ${official.name}.`}
                   path={`/officials/${official.id}`}
+                  template="confirmed_record"
+                  subject={`${official.name} public profile`}
+                  sourceLabel="scorecard, voting record, funding data, public sources, and review notes"
                 />
                 <ReportButton
                   officialId={official.id}
                   pageUrl={`/officials/${official.id}`}
+                  targetLabel={official.name}
+                  jurisdiction={official.jurisdiction}
                 />
               </div>
               {official.bio && (
@@ -250,6 +301,18 @@ export default async function OfficialProfilePage({
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
         <div className="mb-8 space-y-4">
+          <RecordSummaryPanel
+            official={official}
+            summary={dossier.plainEnglishSummary}
+            confirmed={dossier.confirmed}
+            needsReview={dossier.needsReview}
+          />
+          <SourceTrailPanel groups={dossier.sourceGroups} />
+          <ScoreMethodologyPanel
+            scoreStatus={dossier.scoreStatus}
+            hasScoreCard={Boolean(scoreCard)}
+            voteRows={publicVoteRecord?.summary.totalVotesLoaded ?? 0}
+          />
           <IdeologyChart profile={ideologyProfile} />
           {constitutionalAlignment ? (
             <ConstitutionalAlignmentMeter profile={constitutionalAlignment} />
@@ -279,6 +342,7 @@ export default async function OfficialProfilePage({
                 Voting Record
               </h2>
               <VoteTimeline votes={allScoredVotes} />
+              <ScoreImpactVoteTable votes={allScoredVotes} />
             </section>
           )}
 
@@ -321,6 +385,60 @@ export default async function OfficialProfilePage({
           <CampaignFinanceSourcePanel official={official} />
         )}
 
+        <ProfileTimelinePanel items={dossier.timeline} />
+
+        <section className="mt-8 rounded-2xl border border-blue-100 bg-white p-5 shadow-sm">
+          <div className="flex flex-col gap-2 sm:flex-row sm:items-end sm:justify-between">
+            <div>
+              <p className="text-xs font-black uppercase tracking-wide text-blue-700">
+                Connected records
+              </p>
+              <h2 className="mt-1 text-xl font-black text-gray-950">
+                Open the source trails tied to {official.name}.
+              </h2>
+            </div>
+            <Link
+              href={`/submit-source?target=${encodeURIComponent(official.id)}`}
+              className="w-fit rounded-full border border-red-200 bg-red-50 px-3 py-1.5 text-xs font-black uppercase tracking-wide text-red-800 transition hover:bg-white"
+            >
+              Submit a better source
+            </Link>
+          </div>
+          <div className="mt-4 grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
+            <RelatedRecordLink
+              href={`/funding/${official.id}`}
+              title="Funding trail"
+              detail={funding ? "Donors, geography, source links." : "Campaign finance source path."}
+            />
+            <RelatedRecordLink
+              href="/votes"
+              title="Vote records"
+              detail={publicVoteRecord ? `${publicVoteRecord.summary.totalVotesLoaded.toLocaleString()} roll-call rows loaded.` : "Open vote source inventory."}
+            />
+            <RelatedRecordLink
+              href="/red-flags"
+              title="Red flags"
+              detail={`${sourceBackedRedFlags.length} source-linked review item${sourceBackedRedFlags.length === 1 ? "" : "s"} on this profile.`}
+            />
+            <RelatedRecordLink
+              href="/news"
+              title="Stories"
+              detail={`${relatedNews.length} linked stor${relatedNews.length === 1 ? "y" : "ies"} in RepWatchr.`}
+            />
+          </div>
+        </section>
+
+        <section className="mt-8 grid gap-4 lg:grid-cols-[1fr_0.85fr]">
+          <NextUsefulMove
+            recordPath={`/dashboard?watch=${encodeURIComponent(`/officials/${official.id}`)}&target=${encodeURIComponent(official.name)}`}
+            sourcePath={`/submit-source?target=${encodeURIComponent(official.id)}`}
+            packetPath={`/free-packet?target=${encodeURIComponent(official.name)}`}
+            safeShareLine={`RepWatchr profile for ${official.name}: check the votes, funding, public sources, and review notes before sharing stronger claims.`}
+            meetingQuestion={`What public record supports ${official.name}'s position on this issue, and where can constituents inspect it?`}
+          />
+          <PublicContentRulesPanel compact />
+        </section>
+
         <section className="mt-8">
           <div className="mb-4">
             <p className="text-xs font-black uppercase tracking-wide text-red-700">
@@ -362,20 +480,43 @@ export default async function OfficialProfilePage({
           </div>
         )}
 
-        {redFlags.length > 0 && (
+        {sourceBackedRedFlags.length > 0 && (
           <section className="mt-8">
-            <h2 className="mb-4 text-xl font-bold text-red-700">
-              Red Flags ({redFlags.length})
-            </h2>
+            <div className="mb-4">
+              <p className="text-xs font-black uppercase tracking-wide text-red-700">
+                Source-backed red flags
+              </p>
+              <h2 className="mt-1 text-xl font-bold text-red-700">
+                Red Flags ({sourceBackedRedFlags.length})
+              </h2>
+              <p className="mt-1 max-w-4xl text-sm font-semibold leading-6 text-gray-600">
+                These are not unsourced allegations. Each item must carry a public source and a public label before it
+                appears on the profile.
+              </p>
+              <div className="mt-3 flex flex-wrap gap-2">
+                <EvidenceLabel label="Confirmed record" tone="green" />
+                <EvidenceLabel label="Public question" tone="blue" />
+                <EvidenceLabel label="Allegation" tone="amber" />
+                <EvidenceLabel label="Needs source" tone="red" />
+              </div>
+            </div>
             <div className="grid grid-cols-1 gap-4 md:grid-cols-2">
-              {redFlags.map((flag) => (
-                <RedFlagCard key={flag.id} flag={flag} />
+              {sourceBackedRedFlags.map((flag) => (
+                <div key={flag.id} className="space-y-2">
+                  <RedFlagStatusLabel flag={flag} />
+                  <RedFlagCard
+                    flag={flag}
+                    officialName={official.name}
+                    jurisdiction={official.jurisdiction}
+                    sharePath={`/red-flags?flag=${encodeURIComponent(flag.id)}#red-flag-${flag.id}`}
+                  />
+                </div>
               ))}
             </div>
           </section>
         )}
 
-        {overlayPublicRecords.length === 0 && !congressTrading && redFlags.length === 0 && (
+        {overlayPublicRecords.length === 0 && !congressTrading && sourceBackedRedFlags.length === 0 && (
           <PublicRecordsReviewPanel official={official} />
         )}
 
@@ -475,6 +616,10 @@ export default async function OfficialProfilePage({
           <ProfileOverlayStatementsPanel overlay={profileOverlay} />
         )}
 
+        <PublicQuestionsPanel official={official} questions={dossier.publicQuestions} />
+
+        <DossierActionsPanel official={official} sourceCount={dossier.sourceCount} />
+
         {/* Public Discussion */}
         <CommentSection
           officialId={official.id}
@@ -482,6 +627,427 @@ export default async function OfficialProfilePage({
         />
       </div>
     </div>
+  );
+}
+
+function RelatedRecordLink({
+  href,
+  title,
+  detail,
+}: {
+  href: string;
+  title: string;
+  detail: string;
+}) {
+  return (
+    <Link
+      href={href}
+      className="rounded-xl border border-slate-200 bg-slate-50 p-4 transition hover:-translate-y-0.5 hover:border-blue-300 hover:bg-blue-50"
+    >
+      <p className="text-sm font-black text-blue-950">{title}</p>
+      <p className="mt-1 text-xs font-semibold leading-5 text-slate-600">{detail}</p>
+    </Link>
+  );
+}
+
+function HeroDossierMetric({
+  label,
+  value,
+  detail,
+}: {
+  label: string;
+  value: string;
+  detail: string;
+}) {
+  return (
+    <div className="rounded-xl border border-gray-200 bg-gray-50 px-3 py-2 shadow-sm">
+      <p className="text-[10px] font-black uppercase tracking-wide text-gray-500">{label}</p>
+      <p className="mt-1 text-lg font-black text-gray-950">{value}</p>
+      <p className="mt-0.5 text-[11px] font-bold text-gray-500">{detail}</p>
+    </div>
+  );
+}
+
+function RecordSummaryPanel({
+  official,
+  summary,
+  confirmed,
+  needsReview,
+}: {
+  official: Official;
+  summary: string;
+  confirmed: string[];
+  needsReview: string[];
+}) {
+  return (
+    <section className="rounded-2xl border border-slate-200 bg-white p-5 shadow-sm">
+      <div className="flex flex-col gap-3 lg:flex-row lg:items-start lg:justify-between">
+        <div>
+          <p className="text-xs font-black uppercase tracking-[0.18em] text-red-700">Record summary</p>
+          <h2 className="mt-1 text-2xl font-black text-slate-950">{official.name} accountability dossier</h2>
+          <p className="mt-2 max-w-5xl text-sm font-semibold leading-6 text-slate-700">{summary}</p>
+        </div>
+        <Link
+          href="/methodology"
+          className="w-fit rounded-full border border-blue-200 bg-blue-50 px-3 py-1.5 text-xs font-black uppercase tracking-wide text-blue-800 transition hover:bg-white"
+        >
+          Methodology
+        </Link>
+      </div>
+
+      <div className="mt-5 grid gap-4 lg:grid-cols-2">
+        <SummaryList title="What is confirmed" tone="green" items={confirmed} />
+        <SummaryList title="What needs more source review" tone="amber" items={needsReview} />
+      </div>
+    </section>
+  );
+}
+
+function SummaryList({
+  title,
+  tone,
+  items,
+}: {
+  title: string;
+  tone: "green" | "amber";
+  items: string[];
+}) {
+  const toneClasses =
+    tone === "green"
+      ? "border-emerald-200 bg-emerald-50 text-emerald-900"
+      : "border-amber-200 bg-amber-50 text-amber-950";
+
+  return (
+    <div className={`rounded-xl border p-4 ${toneClasses}`}>
+      <h3 className="text-sm font-black uppercase tracking-wide">{title}</h3>
+      <ul className="mt-3 space-y-2">
+        {items.length > 0 ? (
+          items.map((item) => (
+            <li key={item} className="flex gap-2 text-sm font-semibold leading-6">
+              <span className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-current" />
+              <span>{item}</span>
+            </li>
+          ))
+        ) : (
+          <li className="text-sm font-semibold leading-6">No item is loaded for this section yet.</li>
+        )}
+      </ul>
+    </div>
+  );
+}
+
+function SourceTrailPanel({ groups }: { groups: DossierSourceGroup[] }) {
+  return (
+    <section className="rounded-2xl border border-slate-200 bg-white p-5 shadow-sm">
+      <div>
+        <p className="text-xs font-black uppercase tracking-[0.18em] text-blue-700">Source trail</p>
+        <h2 className="mt-1 text-2xl font-black text-slate-950">Every claim should point back to a public receipt.</h2>
+        <p className="mt-2 max-w-5xl text-sm font-semibold leading-6 text-slate-600">
+          Official links, votes, funding, meetings, articles, corrections, red flags, and disclosure records are split
+          apart so a reader can see what is loaded and what still needs a source.
+        </p>
+      </div>
+      <div className="mt-5 grid gap-3 md:grid-cols-2 xl:grid-cols-4">
+        {groups.map((group) => (
+          <SourceGroupCard key={group.id} group={group} />
+        ))}
+      </div>
+    </section>
+  );
+}
+
+function SourceGroupCard({ group }: { group: DossierSourceGroup }) {
+  return (
+    <div className="rounded-xl border border-slate-200 bg-slate-50 p-4">
+      <div className="flex items-start justify-between gap-3">
+        <div>
+          <h3 className="text-sm font-black text-slate-950">{group.title}</h3>
+          <p className="mt-1 text-xs font-semibold leading-5 text-slate-600">{group.description}</p>
+        </div>
+        <span className="rounded-full border border-slate-200 bg-white px-2.5 py-1 text-xs font-black text-slate-700">
+          {group.links.length}
+        </span>
+      </div>
+      <div className="mt-3 space-y-2">
+        {group.links.length > 0 ? (
+          group.links.slice(0, 4).map((source) => (
+            <a
+              key={`${group.id}-${source.url}`}
+              href={source.url}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="block rounded-lg border border-slate-200 bg-white px-3 py-2 text-xs font-bold text-blue-800 transition hover:border-blue-300 hover:bg-blue-50"
+            >
+              <span className="line-clamp-1">{source.title}</span>
+              <span className="mt-0.5 block line-clamp-2 text-[11px] font-semibold leading-4 text-slate-500">
+                {source.detail}
+              </span>
+            </a>
+          ))
+        ) : (
+          <p className="rounded-lg border border-amber-200 bg-amber-50 px-3 py-2 text-xs font-bold leading-5 text-amber-900">
+            {group.emptyText}
+          </p>
+        )}
+      </div>
+    </div>
+  );
+}
+
+function ScoreMethodologyPanel({
+  scoreStatus,
+  hasScoreCard,
+  voteRows,
+}: {
+  scoreStatus: {
+    label: string;
+    detail: string;
+    methodologyDetail: string;
+  };
+  hasScoreCard: boolean;
+  voteRows: number;
+}) {
+  return (
+    <section className="rounded-2xl border border-blue-100 bg-blue-50 p-5 shadow-sm">
+      <div className="flex flex-col gap-4 lg:flex-row lg:items-start lg:justify-between">
+        <div>
+          <p className="text-xs font-black uppercase tracking-[0.18em] text-blue-800">Score / methodology</p>
+          <h2 className="mt-1 text-2xl font-black text-blue-950">{scoreStatus.label}</h2>
+          <p className="mt-2 max-w-5xl text-sm font-semibold leading-6 text-blue-950">{scoreStatus.detail}</p>
+          <p className="mt-2 max-w-5xl text-xs font-bold leading-5 text-blue-900">{scoreStatus.methodologyDetail}</p>
+        </div>
+        <div className="grid grid-cols-2 gap-2 sm:min-w-72">
+          <div className="rounded-xl border border-blue-200 bg-white px-4 py-3">
+            <p className="text-2xl font-black text-blue-950">{hasScoreCard ? "Yes" : "No"}</p>
+            <p className="text-[11px] font-black uppercase tracking-wide text-blue-700">Scored rules</p>
+          </div>
+          <div className="rounded-xl border border-blue-200 bg-white px-4 py-3">
+            <p className="text-2xl font-black text-blue-950">{voteRows.toLocaleString()}</p>
+            <p className="text-[11px] font-black uppercase tracking-wide text-blue-700">Vote rows</p>
+          </div>
+          <Link
+            href="/methodology"
+            className="col-span-2 rounded-xl border border-blue-700 bg-blue-700 px-4 py-3 text-center text-xs font-black uppercase tracking-wide text-white transition hover:bg-blue-800"
+          >
+            Open methodology
+          </Link>
+        </div>
+      </div>
+    </section>
+  );
+}
+
+function ScoreImpactVoteTable({ votes }: { votes: ScoredVote[] }) {
+  const sortedVotes = [...votes].sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime()).slice(0, 10);
+
+  return (
+    <div className="mt-5 overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm">
+      <div className="border-b border-slate-200 bg-slate-50 px-4 py-3">
+        <p className="text-xs font-black uppercase tracking-wide text-slate-500">Vote table</p>
+        <h3 className="text-lg font-black text-slate-950">Scored votes and score impact</h3>
+        <p className="mt-1 text-xs font-semibold leading-5 text-slate-600">
+          These rows show the local scorecard impact, not every public vote cast by the official.
+        </p>
+      </div>
+      <div className="overflow-x-auto">
+        <table className="min-w-full divide-y divide-slate-200 text-left text-sm">
+          <thead className="bg-white text-xs font-black uppercase tracking-wide text-slate-500">
+            <tr>
+              <th className="px-4 py-3">Bill / source</th>
+              <th className="px-4 py-3">Category</th>
+              <th className="px-4 py-3">Vote</th>
+              <th className="px-4 py-3">Score impact</th>
+            </tr>
+          </thead>
+          <tbody className="divide-y divide-slate-200">
+            {sortedVotes.map((vote) => (
+              <tr key={`${vote.billId}-${vote.date}`} className="bg-white">
+                <td className="px-4 py-3">
+                  <Link href={`/votes/${vote.billId}`} className="font-black text-blue-800 hover:underline">
+                    {vote.billTitle}
+                  </Link>
+                  <span className="mt-1 block text-xs font-semibold text-slate-500">{vote.date}</span>
+                </td>
+                <td className="px-4 py-3 font-bold text-slate-700">{vote.category}</td>
+                <td className="px-4 py-3 font-bold uppercase text-slate-700">{vote.officialVote}</td>
+                <td className="px-4 py-3">
+                  <span
+                    className={`rounded-full px-2.5 py-1 text-xs font-black ${
+                      vote.aligned ? "bg-emerald-50 text-emerald-800" : "bg-red-50 text-red-800"
+                    }`}
+                  >
+                    {vote.aligned ? "Aligned" : "Not aligned"} | weight {vote.weight}
+                  </span>
+                </td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+    </div>
+  );
+}
+
+function ProfileTimelinePanel({ items }: { items: DossierTimelineItem[] }) {
+  return (
+    <section className="mt-8 rounded-2xl border border-slate-200 bg-white p-5 shadow-sm">
+      <p className="text-xs font-black uppercase tracking-[0.18em] text-slate-500">Timeline</p>
+      <h2 className="mt-1 text-xl font-black text-slate-950">Public dates and sourced events</h2>
+      <p className="mt-1 max-w-4xl text-sm font-semibold leading-6 text-slate-600">
+        Dates are included only when a source-backed event, import, or profile record provides one.
+      </p>
+      <div className="mt-4 divide-y divide-slate-200 overflow-hidden rounded-xl border border-slate-200">
+        {items.length > 0 ? (
+          items.map((item) => (
+            <div key={item.id} className="bg-white px-4 py-3">
+              <div className="flex flex-col gap-2 sm:flex-row sm:items-start sm:justify-between">
+                <div>
+                  <p className="text-xs font-black uppercase tracking-wide text-slate-500">
+                    {item.label} | {formatDossierDate(item.date)}
+                  </p>
+                  <h3 className="mt-1 text-sm font-black text-slate-950">{item.title}</h3>
+                  <p className="mt-1 text-xs font-semibold leading-5 text-slate-600">{item.detail}</p>
+                </div>
+                {item.sourceUrl ? (
+                  <a
+                    href={item.sourceUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="shrink-0 rounded-full border border-blue-200 bg-blue-50 px-3 py-1 text-xs font-black text-blue-800 hover:bg-white"
+                  >
+                    Source
+                  </a>
+                ) : null}
+              </div>
+            </div>
+          ))
+        ) : (
+          <p className="bg-amber-50 px-4 py-3 text-sm font-bold text-amber-900">
+            No dated source events are loaded yet. Submit a public record with a clear date to build the timeline.
+          </p>
+        )}
+      </div>
+    </section>
+  );
+}
+
+function formatDossierDate(value: string) {
+  const date = new Date(value);
+  if (Number.isNaN(date.getTime())) return value;
+  return date.toLocaleDateString("en-US", {
+    year: "numeric",
+    month: "short",
+    day: "numeric",
+  });
+}
+
+function EvidenceLabel({ label, tone }: { label: string; tone: "green" | "blue" | "amber" | "red" }) {
+  const classes = {
+    green: "border-emerald-200 bg-emerald-50 text-emerald-800",
+    blue: "border-blue-200 bg-blue-50 text-blue-800",
+    amber: "border-amber-200 bg-amber-50 text-amber-900",
+    red: "border-red-200 bg-red-50 text-red-800",
+  }[tone];
+
+  return <span className={`rounded-full border px-3 py-1 text-xs font-black uppercase tracking-wide ${classes}`}>{label}</span>;
+}
+
+function redFlagEvidenceLabel(flag: RedFlag): { label: string; tone: "green" | "blue" | "amber" | "red" } {
+  const source = flag.sourceUrl.toLowerCase();
+  const text = `${flag.title} ${flag.description}`.toLowerCase();
+  if (!source) return { label: "Needs source", tone: "red" };
+  if (source.includes(".gov") || source.includes("house.gov") || source.includes("senate.gov") || source.includes("fec.gov")) {
+    return { label: "Confirmed record", tone: "green" };
+  }
+  if (text.includes("alleged") || text.includes("allegation") || text.includes("reported")) {
+    return { label: "Allegation", tone: "amber" };
+  }
+  return { label: "Public question", tone: "blue" };
+}
+
+function RedFlagStatusLabel({ flag }: { flag: RedFlag }) {
+  const status = redFlagEvidenceLabel(flag);
+  return <EvidenceLabel label={status.label} tone={status.tone} />;
+}
+
+function PublicQuestionsPanel({ official, questions }: { official: Official; questions: string[] }) {
+  return (
+    <section className="mt-10 rounded-2xl border border-slate-200 bg-white p-5 shadow-sm">
+      <p className="text-xs font-black uppercase tracking-[0.18em] text-blue-700">Public questions</p>
+      <h2 className="mt-1 text-xl font-black text-slate-950">Questions voters and reporters can ask</h2>
+      <p className="mt-1 max-w-4xl text-sm font-semibold leading-6 text-slate-600">
+        These questions are written to ask for records, not to overstate what the profile proves about {official.name}.
+      </p>
+      <div className="mt-4 grid gap-3 lg:grid-cols-2">
+        {questions.map((question, index) => (
+          <label key={question} className="block rounded-xl border border-slate-200 bg-slate-50 p-4">
+            <span className="text-xs font-black uppercase tracking-wide text-slate-500">Question {index + 1}</span>
+            <textarea
+              readOnly
+              value={question}
+              rows={3}
+              className="mt-2 w-full resize-none rounded-lg border border-slate-200 bg-white px-3 py-2 text-sm font-semibold leading-6 text-slate-800"
+            />
+          </label>
+        ))}
+      </div>
+    </section>
+  );
+}
+
+function DossierActionsPanel({ official, sourceCount }: { official: Official; sourceCount: number }) {
+  return (
+    <section id="dossier-actions" className="mt-10 rounded-2xl border border-slate-300 bg-slate-950 p-5 text-white shadow-sm">
+      <p className="text-xs font-black uppercase tracking-[0.18em] text-red-300">Actions</p>
+      <h2 className="mt-1 text-2xl font-black">Help improve this profile without overclaiming the proof.</h2>
+      <p className="mt-2 max-w-4xl text-sm font-semibold leading-6 text-slate-200">
+        This dossier has {sourceCount.toLocaleString()} public source link{sourceCount === 1 ? "" : "s"}. If a record is missing,
+        submit the source, request a brief, or watch the profile for updates.
+      </p>
+      <div className="mt-5 grid gap-3 md:grid-cols-2 xl:grid-cols-5">
+        <Link
+          href={`/submit-source?target=${encodeURIComponent(official.id)}&type=correction`}
+          className="rounded-xl border border-white/10 bg-white px-4 py-3 text-center text-sm font-black text-slate-950 hover:bg-blue-50"
+        >
+          Submit correction
+        </Link>
+        <Link
+          href={`/submit-source?target=${encodeURIComponent(official.id)}`}
+          className="rounded-xl border border-amber-300 bg-amber-300 px-4 py-3 text-center text-sm font-black text-slate-950 hover:bg-amber-200"
+        >
+          Submit source
+        </Link>
+        <Link
+          href={`/services/official-record-brief?official=${encodeURIComponent(official.id)}`}
+          className="rounded-xl border border-red-300 bg-red-600 px-4 py-3 text-center text-sm font-black text-white hover:bg-red-700"
+        >
+          Request official brief
+        </Link>
+        <Link
+          href={`/dashboard?watch=${encodeURIComponent(`/officials/${official.id}`)}&target=${encodeURIComponent(official.name)}`}
+          className="rounded-xl border border-blue-300 bg-blue-600 px-4 py-3 text-center text-sm font-black text-white hover:bg-blue-700"
+        >
+          Watch profile
+        </Link>
+        <Link
+          href={`/officials/${official.id}`}
+          className="rounded-xl border border-white/20 bg-white/10 px-4 py-3 text-center text-sm font-black text-white hover:bg-white/20"
+        >
+          Share profile
+        </Link>
+      </div>
+      <div className="mt-5">
+        <ShareButtons
+          title={`${official.name} - ${official.position} | RepWatchr`}
+          description={`Source-backed RepWatchr dossier for ${official.name}.`}
+          path={`/officials/${official.id}`}
+          template="confirmed_record"
+          subject={`${official.name} public accountability dossier`}
+          sourceLabel="official links, voting records, funding sources, public questions, and review gaps"
+          className="bg-white text-slate-950"
+        />
+      </div>
+    </section>
   );
 }
 

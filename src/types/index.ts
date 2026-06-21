@@ -283,6 +283,9 @@ export interface RedFlag {
   date: string;
   sourceUrl: string;
   whyItMatters: string;
+  jurisdiction?: string;
+  statusLabel?: string;
+  reviewerStatus?: string;
 }
 
 // ============================================================

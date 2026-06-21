@@ -1,7 +1,9 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import { track } from "@vercel/analytics";
 import type { RepWatchrService } from "@/data/repwatchr-services";
+import { trackRepWatchrEvent } from "@/lib/client-analytics";
 
 type SavedServicePacket = {
   id: string;
@@ -46,6 +48,7 @@ export default function ServiceRequestPacketBuilder({ service }: { service: RepW
   const [acknowledged, setAcknowledged] = useState(false);
   const [packet, setPacket] = useState("");
   const [copied, setCopied] = useState(false);
+  const [submitStatus, setSubmitStatus] = useState<"idle" | "submitting" | "submitted" | "error">("idle");
   const [savedPackets, setSavedPackets] = useState<SavedServicePacket[]>([]);
 
   useEffect(() => {
@@ -126,8 +129,34 @@ export default function ServiceRequestPacketBuilder({ service }: { service: RepW
     const nextPacket = buildPacket();
     setPacket(nextPacket);
     setCopied(false);
+    setSubmitStatus("submitting");
     persistPacket(nextPacket);
     await copyText(nextPacket);
+
+    track("service_request_submitted", { service_slug: service.slug });
+    trackRepWatchrEvent("service_request_submitted", { service_slug: service.slug });
+
+    try {
+      const response = await fetch("/api/services/request", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          serviceSlug: service.slug,
+          requesterName: name,
+          requesterEmail: email,
+          jurisdiction,
+          target,
+          sourceUrl,
+          summary,
+          deadline,
+          acknowledged,
+          packet: nextPacket,
+        }),
+      });
+      setSubmitStatus(response.ok ? "submitted" : "error");
+    } catch {
+      setSubmitStatus("error");
+    }
   }
 
   return (
@@ -135,19 +164,29 @@ export default function ServiceRequestPacketBuilder({ service }: { service: RepW
       <div>
         <p className="text-xs font-black uppercase tracking-[0.18em] text-red-700">Request packet</p>
         <h2 className="mt-2 text-2xl font-black leading-tight text-blue-950">
-          Start with the facts. Payment can come after scope is clear.
+          Request this package with the facts attached.
         </h2>
         <p className="mt-2 text-sm font-semibold leading-6 text-slate-700">
-          This builds a clean service request without Supabase. If a Stripe payment link is added later,
-          the same service page can point straight to checkout.
+          Use this if you want to send context first or if checkout is not available. Keep it source-backed:
+          public links, dates, jurisdiction, and the exact record question.
         </p>
       </div>
 
       {packet ? (
         <div className="mt-5 rounded-lg border border-blue-200 bg-blue-50 p-4">
           <p className="text-sm font-black text-blue-950">
-            Service packet ready{copied ? " and copied." : "."}
+            {submitStatus === "submitted"
+              ? "Service request submitted"
+              : submitStatus === "submitting"
+                ? "Submitting service request..."
+                : "Service packet ready"}
+            {copied ? " and copied." : "."}
           </p>
+          {submitStatus === "error" ? (
+            <p className="mt-2 text-sm font-bold text-red-800">
+              The packet is ready. Use Copy, Download, or Email to send it now.
+            </p>
+          ) : null}
           <textarea
             readOnly
             value={packet}
@@ -267,10 +306,10 @@ export default function ServiceRequestPacketBuilder({ service }: { service: RepW
         </label>
         <button
           type="submit"
-          disabled={!canBuild}
+          disabled={!canBuild || submitStatus === "submitting"}
           className="rounded-xl bg-red-700 px-5 py-3 text-sm font-black uppercase tracking-wide text-white transition hover:-translate-y-0.5 hover:bg-blue-950 disabled:cursor-not-allowed disabled:bg-slate-300 disabled:text-slate-500"
         >
-          Build Request Packet
+          {submitStatus === "submitting" ? "Submitting..." : "Submit Request Packet"}
         </button>
       </form>
 

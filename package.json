@@ -7,7 +7,22 @@
     "build": "next build",
     "generate:ideology": "python3 scripts/generate-official-ideology-master.py",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "smoke:payments": "node scripts/smoke-payments.mjs",
+    "smoke:sources": "node scripts/smoke-source-submissions.mjs",
+    "smoke:dashboard": "node scripts/smoke-member-dashboard.mjs",
+    "smoke:admin": "node scripts/smoke-admin-dashboard.mjs",
+    "smoke:sharing": "node scripts/smoke-sharing-system.mjs",
+    "smoke:og": "node scripts/smoke-og-previews.mjs",
+    "smoke:seo": "node scripts/smoke-seo-indexing.mjs",
+    "smoke:wire-quality": "node scripts/smoke-daily-wire-quality.mjs",
+    "smoke:officials": "node scripts/smoke-officials-search.mjs",
+    "smoke:profile-dossier": "node scripts/smoke-official-dossier.mjs",
+    "smoke:race-hub": "node scripts/smoke-race-hub.mjs",
+    "smoke:records": "node scripts/smoke-public-records-generator.mjs",
+    "smoke:growth": "node scripts/smoke-growth-membership.mjs",
+    "smoke:routes": "node scripts/smoke-route-quality.mjs",
+    "seo:report": "node scripts/seo-report.mjs"
   },
   "dependencies": {
     "@supabase/ssr": "^0.10.2",

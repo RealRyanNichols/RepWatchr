@@ -169,7 +169,7 @@ function toCandidate(clip: DailyWireClip, now: Date): SocialStoryCandidate {
 
 function isEligibleClip(clip: DailyWireClip, now: Date) {
   return (
-    clip.publicStatus === "auto_published" &&
+    clip.publicStatus === "source_linked" &&
     clip.title.trim().length > 0 &&
     clip.sourceUrl.startsWith("http") &&
     isFreshEnough(clip, now)

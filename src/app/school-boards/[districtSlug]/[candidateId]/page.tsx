@@ -18,6 +18,8 @@ import { getDistrictBranding } from "@/data/school-board-branding";
 import { getCandidateFlags, getCandidateGaps, getCandidateGoodRecords, getSchoolBoardCandidate, getShareLine } from "@/lib/school-board-research";
 import { getCandidateDataId, getCandidateUrlSlug, getDistrictUrlSlug, getSchoolBoardCandidateUrl, getSchoolBoardDistrictUrl } from "@/lib/school-board-urls";
 import { buildEvidenceFromDossier, calculateSchoolBoardScore, schoolBoardScoringModel } from "@/lib/school-board-scoring";
+import { buildOgImageUrl, buildRepWatchrMetadata } from "@/lib/repwatchr-seo";
+import { breadcrumbJsonLd, jsonLd, profilePageJsonLd } from "@/lib/structured-data";
 
 // Keep every member URL live and in the sitemap, but do not prebuild 8,000+
 // member pages into the Vercel deployment payload.
@@ -28,26 +30,20 @@ export async function generateMetadata({ params }: { params: Promise<{ districtS
   const candidate = getSchoolBoardCandidate(getCandidateDataId(candidateId));
   if (!candidate) return { title: "Candidate Not Found" };
   const canonical = getSchoolBoardCandidateUrl(candidate);
-  const socialImage = `/api/og/school-board?type=member&district=${getDistrictUrlSlug(candidate.district_slug)}&candidate=${getCandidateUrlSlug(candidate)}`;
   const title = `${candidate.preferred_name ?? candidate.full_name} School Board File`;
   const description = getShareLine(candidate).slice(0, 155);
-  return {
+  return buildRepWatchrMetadata({
     title,
     description,
-    alternates: { canonical },
-    openGraph: {
-      title,
-      description,
-      url: canonical,
-      images: [{ url: socialImage, width: 1200, height: 630, alt: `${candidate.preferred_name ?? candidate.full_name} school board profile` }],
-    },
-    twitter: {
-      card: "summary_large_image",
-      title,
-      description,
-      images: [socialImage],
-    },
-  };
+    path: canonical,
+    imagePath: buildOgImageUrl("school-board", {
+      type: "member",
+      district: getDistrictUrlSlug(candidate.district_slug),
+      candidate: getCandidateUrlSlug(candidate),
+    }),
+    imageAlt: `${candidate.preferred_name ?? candidate.full_name} school board profile`,
+    type: "profile",
+  });
 }
 
 function isMeaningful(value: string | undefined | null): boolean {
@@ -83,6 +79,22 @@ export default async function CandidatePage({ params }: { params: Promise<{ dist
     .map((part) => (part.toLowerCase().endsWith("county") ? part : `${part} County`));
 
   const subline = [candidate.seat, candidate.role].filter(Boolean).join(" · ");
+  const candidateName = candidate.preferred_name ?? candidate.full_name;
+  const candidatePath = getSchoolBoardCandidateUrl(candidate);
+  const candidateDescription = `${candidate.district} school-board record for ${candidateName}.`;
+  const profileStructuredData = profilePageJsonLd({
+    name: candidateName,
+    path: candidatePath,
+    description: candidateDescription,
+    jobTitle: candidate.role ?? candidate.seat ?? "School board profile",
+    jurisdiction: candidate.district,
+  });
+  const breadcrumbStructuredData = breadcrumbJsonLd([
+    { name: "RepWatchr", path: "/" },
+    { name: "School Boards", path: "/school-boards" },
+    { name: candidate.district, path: getSchoolBoardDistrictUrl(candidate) },
+    { name: candidateName, path: candidatePath },
+  ]);
   const quickFacts = [
     { label: "Seat", value: candidate.seat },
     { label: "Role", value: candidate.role },
@@ -102,6 +114,14 @@ export default async function CandidatePage({ params }: { params: Promise<{ dist
 
   return (
     <div className="bg-slate-50">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: jsonLd(profileStructuredData) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: jsonLd(breadcrumbStructuredData) }}
+      />
       <ProfileOpenTracker
         profileId={candidate.candidate_id}
         profileType="school_board"
@@ -150,8 +170,20 @@ export default async function CandidatePage({ params }: { params: Promise<{ dist
                     <QuickFacts facts={quickFacts} />
                   </div>
                   <div className="mt-5 flex flex-wrap items-center gap-3">
-                    <ShareButtons title={`${candidate.preferred_name ?? candidate.full_name} | RepWatchr`} description={getShareLine(candidate)} path={getSchoolBoardCandidateUrl(candidate)} />
-                    <ReportButton officialId={candidate.candidate_id} pageUrl={getSchoolBoardCandidateUrl(candidate)} />
+                    <ShareButtons
+                      title={`${candidate.preferred_name ?? candidate.full_name} | RepWatchr`}
+                      description={getShareLine(candidate)}
+                      path={getSchoolBoardCandidateUrl(candidate)}
+                      template="public_question"
+                      subject={`${candidate.preferred_name ?? candidate.full_name} school-board record`}
+                      sourceLabel={candidate.district}
+                    />
+                    <ReportButton
+                      officialId={candidate.candidate_id}
+                      pageUrl={getSchoolBoardCandidateUrl(candidate)}
+                      targetLabel={candidate.preferred_name ?? candidate.full_name}
+                      jurisdiction={candidate.district}
+                    />
                   </div>
                 </div>
               </div>
@@ -272,9 +304,34 @@ export default async function CandidatePage({ params }: { params: Promise<{ dist
 
       <ProfileQuestionPanel
         targetId={candidate.candidate_id}
-        targetName={candidate.preferred_name ?? candidate.full_name}
+        targetName={candidateName}
         className="mx-auto max-w-7xl px-4 pb-8 sm:px-6 lg:px-8"
       />
+
+      <section className="mx-auto max-w-7xl px-4 pb-8 sm:px-6 lg:px-8">
+        <div className="rounded-2xl border border-blue-100 bg-blue-50 p-6 shadow-sm">
+          <p className="text-xs font-black uppercase tracking-wide text-blue-800">
+            Connected records
+          </p>
+          <h2 className="mt-2 text-2xl font-black text-blue-950">
+            Open the district, sources, questions, and correction path.
+          </h2>
+          <div className="mt-4 grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
+            <Link href={getSchoolBoardDistrictUrl(candidate)} className="rounded-lg border border-blue-200 bg-white px-4 py-3 text-sm font-black text-blue-800 transition hover:border-red-300 hover:text-red-700">
+              District profile
+            </Link>
+            <Link href="/school-boards" className="rounded-lg border border-blue-200 bg-white px-4 py-3 text-sm font-black text-blue-800 transition hover:border-red-300 hover:text-red-700">
+              School board watch
+            </Link>
+            <Link href={`/submit-source?target=${encodeURIComponent(candidate.candidate_id)}`} className="rounded-lg border border-blue-200 bg-white px-4 py-3 text-sm font-black text-blue-800 transition hover:border-red-300 hover:text-red-700">
+              Submit a source
+            </Link>
+            <Link href="/methodology" className="rounded-lg border border-blue-200 bg-white px-4 py-3 text-sm font-black text-blue-800 transition hover:border-red-300 hover:text-red-700">
+              Review source rules
+            </Link>
+          </div>
+        </div>
+      </section>
 
       {/* Public discussion */}
       <section className="mx-auto max-w-7xl px-4 pb-10 sm:px-6 lg:px-8">

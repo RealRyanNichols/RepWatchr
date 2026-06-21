@@ -52,6 +52,7 @@ export async function GET() {
     })
     .join("");
   const wireItems = wireResult.clips
+    .filter((clip) => clip.publicStatus === "source_linked")
     .map((clip) => {
       const description = `${clip.summary} Source: ${clip.sourceName} (${clip.sourceUrl})`;
 

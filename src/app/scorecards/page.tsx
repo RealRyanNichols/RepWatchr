@@ -7,14 +7,19 @@ import LetterGradeBadge from "@/components/scores/LetterGradeBadge";
 import PartyBadge from "@/components/officials/PartyBadge";
 import ProfileScorecardVote from "@/components/scorecards/ProfileScorecardVote";
 import { calculateLetterGrade, getScoreDescription } from "@/lib/scoring";
+import { buildOgImageUrl, buildRepWatchrMetadata } from "@/lib/repwatchr-seo";
+import { breadcrumbJsonLd, datasetJsonLd, jsonLd } from "@/lib/structured-data";
 import type { Official, ScoreCard } from "@/types";
 import type { PublicPowerProfile } from "@/types/power-watch";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = buildRepWatchrMetadata({
   title: "Universal Scorecards | RepWatchr",
   description:
     "Scorecards for every RepWatchr public profile: officials, school-board members, attorneys, law firms, media companies, journalists, editors, and public-safety profiles.",
-};
+  path: "/scorecards",
+  imagePath: buildOgImageUrl("methodology"),
+  imageAlt: "RepWatchr universal scorecards preview",
+});
 
 type ScoredOfficial = {
   official: Official;
@@ -60,9 +65,28 @@ export default function ScorecardsPage() {
     .slice(0, 12);
 
   const totalPublicProfiles = officials.length + powerProfiles.length;
+  const breadcrumbStructuredData = breadcrumbJsonLd([
+    { name: "RepWatchr", path: "/" },
+    { name: "Scorecards", path: "/scorecards" },
+  ]);
+  const datasetStructuredData = datasetJsonLd({
+    name: "RepWatchr universal scorecards",
+    path: "/scorecards",
+    description:
+      "Scorecards for every RepWatchr public profile: officials, school-board members, attorneys, law firms, media companies, journalists, editors, and public-safety profiles.",
+    keywords: ["scorecards", "officials", "verified profile votes", "public records"],
+  });
 
   return (
     <div className="rw-page-shell">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: jsonLd(breadcrumbStructuredData) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: jsonLd(datasetStructuredData) }}
+      />
       <main className="mx-auto max-w-7xl px-4 py-8 sm:px-6 lg:px-8">
         <section className="overflow-hidden rounded-2xl border border-slate-300 bg-white shadow-sm">
           <div className="h-1.5 w-full bg-[linear-gradient(90deg,#b42318_0%,#b42318_48%,#ffffff_48%,#ffffff_52%,#1d4ed8_52%,#1d4ed8_100%)]" />

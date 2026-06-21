@@ -4,6 +4,7 @@ import { useMemo, useState } from "react";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { createClient } from "@/lib/supabase";
+import { trackRepWatchrEvent } from "@/lib/client-analytics";
 
 export default function LoginPage() {
   const [email, setEmail] = useState("");
@@ -33,6 +34,7 @@ export default function LoginPage() {
         return;
       }
 
+      trackRepWatchrEvent("login", { method: "password" });
       router.replace("/dashboard");
       router.refresh();
     } catch (loginError) {

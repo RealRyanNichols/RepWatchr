@@ -1,23 +1,24 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { Suspense } from "react";
-import { getAllOfficials, getAllScoreCards, getRepWatchrDataStats } from "@/lib/data";
+import { getAllOfficials, getRepWatchrDataStats } from "@/lib/data";
 import { getSchoolBoardStats } from "@/lib/school-board-research";
-import OfficialGrid from "@/components/officials/OfficialGrid";
 import OfficialsCommandSearchForm from "@/components/officials/OfficialsCommandSearchForm";
+import OfficialSearchPanel from "@/components/officials/OfficialSearchPanel";
 import NationalSpotlightSelector from "@/components/shared/NationalSpotlightSelector";
 import OfficialPhotoImage, { FEATURED_OFFICIAL_PHOTO_QUALITY } from "@/components/shared/OfficialPhotoImage";
+import NextUsefulMove from "@/components/shared/NextUsefulMove";
 import type { GovernmentLevel, Official } from "@/types";
 import { getAllNationalJurisdictions, getNationalBuildoutSummary, nationalGovernmentScopes } from "@/data/national-buildout";
 import { countByState, getSelectedStateCode } from "@/lib/state-scope";
 import { getOfficialCompletionDashboard } from "@/lib/profile-completion";
 import { getStateLegislatureBuildoutStats } from "@/lib/state-legislature";
-
-export const metadata: Metadata = {
-  title: "National Elected Officials Directory",
-  description:
-    "Choose a state to browse sourced elected-official profiles. RepWatchr starts national and opens loaded federal, state, county, city, and school-board records by state.",
-};
+import { buildOgImageUrl, buildRepWatchrMetadata } from "@/lib/repwatchr-seo";
+import {
+  isOfficialSearchIndexable,
+  officialSearchCanonicalPath,
+  parseOfficialSearchParams,
+  searchOfficials,
+} from "@/lib/official-search";
 
 const levelLabels: Record<GovernmentLevel, string> = {
   federal: "Federal",
@@ -36,7 +37,33 @@ function getParamValue(value: string | string[] | undefined) {
 }
 
 function getInitialLevel(value: string) {
-  return Object.keys(levelLabels).includes(value) || value === "all" ? value : "federal";
+  return Object.keys(levelLabels).includes(value) || value === "all" ? value : "all";
+}
+
+export async function generateMetadata({
+  searchParams,
+}: {
+  searchParams?: Promise<Record<string, string | string[] | undefined>>;
+}): Promise<Metadata> {
+  const rawParams = searchParams ? await searchParams : {};
+  const params = parseOfficialSearchParams(rawParams);
+  const jurisdictions = getAllNationalJurisdictions();
+  const selectedState = params.state ? jurisdictions.find((state) => state.code === params.state) : undefined;
+  const levelLabel = params.level !== "all" ? levelLabels[params.level] : "Elected";
+  const scope = selectedState?.name ?? (params.state || "National");
+  const isIndexable = isOfficialSearchIndexable(params);
+  const hasSafeFilter = params.state || params.level !== "all";
+
+  return buildRepWatchrMetadata({
+    title: hasSafeFilter ? `${scope} ${levelLabel} Officials` : "National Elected Officials Directory",
+    description: hasSafeFilter
+      ? `Browse source-backed ${levelLabel.toLowerCase()} official profiles for ${scope}. Search scores, source counts, voting data, funding data, red flags, and missing records.`
+      : "Search and filter RepWatchr elected-official profiles by state, county, city, office level, party, score, sources, funding, voting records, and red flags.",
+    path: officialSearchCanonicalPath(params),
+    imagePath: buildOgImageUrl("home"),
+    imageAlt: "RepWatchr officials directory preview",
+    robots: isIndexable ? undefined : { index: false, follow: true },
+  });
 }
 
 function getOfficialsWithPhotosByState(officials: Official[], limit = 14) {
@@ -70,11 +97,11 @@ export default async function OfficialsPage({
   searchParams?: Promise<Record<string, string | string[] | undefined>>;
 }) {
   const params = searchParams ? await searchParams : {};
-  const selectedStateCode = getSelectedStateCode(params);
-  const initialSearch = getParamValue(params.search);
-  const initialLevel = getInitialLevel(getParamValue(params.level));
+  const searchResult = await searchOfficials(params);
+  const selectedStateCode = getSelectedStateCode({ state: searchResult.params.state });
+  const initialSearch = searchResult.params.search || getParamValue(params.search);
+  const initialLevel = getInitialLevel(searchResult.params.level);
   const officials = getAllOfficials();
-  const scoreCards = getAllScoreCards();
   const schoolBoardStats = getSchoolBoardStats();
   const dataStats = getRepWatchrDataStats();
   const buildoutStats = getOfficialCompletionDashboard();
@@ -167,32 +194,24 @@ export default async function OfficialsPage({
           congressTradingHighRows={dataStats.congressTradingHighRows}
         />
 
-        {directoryOfficials.length > 0 ? (
-          <div id="official-directory" className="mt-5 scroll-mt-24">
-            <h1 className="sr-only">
-              {selectedStateCode ? `${selectedState?.name ?? selectedStateCode} elected officials directory` : "National elected officials directory"}
-            </h1>
-            <Suspense
-              fallback={
-                <div className="animate-pulse space-y-4 rounded-2xl border border-slate-300 bg-white p-5 shadow-sm">
-                  <div className="h-12 rounded-xl bg-gray-200" />
-                  <div className="flex flex-wrap gap-2">
-                    {[1, 2, 3, 4, 5, 6].map((i) => (
-                      <div key={i} className="h-8 w-24 rounded-full bg-gray-100" />
-                    ))}
-                  </div>
-                  <div className="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3">
-                    {[1, 2, 3, 4, 5, 6].map((i) => (
-                      <div key={i} className="h-32 rounded-2xl bg-gray-100" />
-                    ))}
-                  </div>
-                </div>
-              }
-            >
-              <OfficialGrid officials={directoryOfficials} scoreCards={scoreCards} />
-            </Suspense>
-          </div>
-        ) : selectedStateCode ? (
+        <div className="mt-5">
+          <NextUsefulMove
+            recordPath="/dashboard"
+            sourcePath="/submit-source?target=official"
+            packetPath="/free-packet?target=official"
+            safeShareLine="RepWatchr official profiles should be shared with the receipt attached: score, votes, funding, source links, and what still needs review."
+            meetingQuestion="What official source, vote record, or filing supports this profile detail?"
+          />
+        </div>
+
+        <div id="official-directory" className="mt-5 scroll-mt-24">
+          <h1 className="sr-only">
+            {selectedStateCode ? `${selectedState?.name ?? selectedStateCode} elected officials directory` : "National elected officials directory"}
+          </h1>
+          <OfficialSearchPanel result={searchResult} />
+        </div>
+
+        {selectedStateCode && directoryOfficials.length === 0 ? (
           <section className="mt-6 rounded-2xl border border-amber-200 bg-amber-50 p-5 shadow-sm">
             <p className="text-xs font-black uppercase tracking-[0.18em] text-amber-800">Source import queued</p>
             <h2 className="mt-1 text-2xl font-black text-amber-950">
@@ -373,7 +392,7 @@ function OfficialsCommandDeck({
             Find the people in office.
           </h1>
           <p className="mt-3 max-w-3xl text-sm font-semibold leading-6 text-slate-200 sm:text-base">
-            Federal is open by default. Search a name, pick a state, or change levels to move from Congress down into state, county, city, district, and school-board records.
+            All loaded profiles are open by default. Search a name, pick a state, or change levels to move from Congress down into state, county, city, district, and school-board records.
           </p>
 
           <OfficialsCommandSearchForm

@@ -1,9 +1,17 @@
 "use client";
 
-import Link from "next/link";
-import { useEffect, useMemo, useState } from "react";
+import { useEffect, useState } from "react";
+import { useRouter } from "next/navigation";
 import { useAuth } from "@/components/auth/AuthProvider";
-import { createClient, isTexasElectionDbSubmissionsEnabled } from "@/lib/supabase";
+import {
+  buildClientSourcePacket,
+  collectSourceAttribution,
+  copyText,
+  downloadTextFile,
+  safeFileName,
+  storeLatestSourceSubmission,
+  type SourceSubmissionResponse,
+} from "@/components/source-submissions/sourceSubmissionClient";
 
 type ContributionRace = {
   slug: string;
@@ -52,7 +60,6 @@ const contributionTypes: Array<{ value: ContributionType; label: string }> = [
   { value: "other", label: "Other source-backed item" },
 ];
 
-const databaseSubmissionsEnabled = isTexasElectionDbSubmissionsEnabled;
 const packetStorageKey = "repwatchr.texasElectionSourcePackets.v1";
 
 function isValidUrl(value: string) {
@@ -64,32 +71,12 @@ function isValidUrl(value: string) {
   }
 }
 
-function safeFileName(value: string) {
-  return value
-    .toLowerCase()
-    .replace(/[^a-z0-9]+/g, "-")
-    .replace(/(^-|-$)/g, "")
-    .slice(0, 80) || "repwatchr-source-packet";
-}
-
-function downloadTextFile(fileName: string, text: string) {
-  const blob = new Blob([text], { type: "text/plain;charset=utf-8" });
-  const url = URL.createObjectURL(blob);
-  const anchor = document.createElement("a");
-  anchor.href = url;
-  anchor.download = fileName;
-  document.body.appendChild(anchor);
-  anchor.click();
-  anchor.remove();
-  URL.revokeObjectURL(url);
-}
-
 export default function TexasElectionContributionForm({
   races,
   defaultRaceSlug,
 }: TexasElectionContributionFormProps) {
+  const router = useRouter();
   const { user, profile, loading } = useAuth();
-  const supabase = useMemo(() => (databaseSubmissionsEnabled ? createClient() : null), []);
   const initialRaceSlug = races.some((race) => race.slug === defaultRaceSlug)
     ? defaultRaceSlug!
     : races[0]?.slug ?? "";
@@ -98,15 +85,16 @@ export default function TexasElectionContributionForm({
   const [contributionType, setContributionType] = useState<ContributionType>("source_link");
   const [title, setTitle] = useState("");
   const [summary, setSummary] = useState("");
+  const [checkRequest, setCheckRequest] = useState("");
   const [sourceUrl, setSourceUrl] = useState("");
   const [sourceLabel, setSourceLabel] = useState("");
+  const [sourceDate, setSourceDate] = useState("");
   const [county, setCounty] = useState(profile?.county ?? "");
   const [city, setCity] = useState("");
   const [contactEmail, setContactEmail] = useState(user?.email ?? "");
   const [acknowledged, setAcknowledged] = useState(false);
   const [submitting, setSubmitting] = useState(false);
   const [error, setError] = useState("");
-  const [successRaceSlug, setSuccessRaceSlug] = useState("");
   const [generatedPacket, setGeneratedPacket] = useState("");
   const [copied, setCopied] = useState(false);
   const [savedPackets, setSavedPackets] = useState<SavedSourcePacket[]>([]);
@@ -145,35 +133,11 @@ export default function TexasElectionContributionForm({
     Boolean(selectedRace) &&
     title.trim().length > 0 &&
     summary.trim().length > 0 &&
+    checkRequest.trim().length > 0 &&
     isValidUrl(sourceUrl.trim()) &&
     acknowledged &&
     !submitting;
-  const canSubmit =
-    canBuildPacket && (!databaseSubmissionsEnabled || Boolean(user));
-
-  function buildPacket() {
-    const typeLabel = contributionTypes.find((type) => type.value === contributionType)?.label ?? contributionType;
-
-    return [
-      "RepWatchr Texas Election Source Packet",
-      "",
-      `Race: ${selectedRace?.title ?? "Unknown race"}`,
-      `Race page: https://www.repwatchr.com/elections/texas/${selectedRace?.slug ?? ""}`,
-      `Type: ${typeLabel}`,
-      `Title: ${title.trim()}`,
-      `Source: ${sourceLabel.trim() || sourceUrl.trim()}`,
-      `Source URL: ${sourceUrl.trim()}`,
-      `County: ${county.trim() || "Not supplied"}`,
-      `City: ${city.trim() || "Not supplied"}`,
-      `Contact email: ${contactEmail.trim() || user?.email || "Not supplied"}`,
-      "",
-      "What this source shows:",
-      summary.trim(),
-      "",
-      "Review guardrail:",
-      "Public, source-backed election information only. No private addresses, minors' information, sealed records, threats, or unsupported accusations.",
-    ].join("\n");
-  }
+  const canSubmit = canBuildPacket;
 
   async function copyPacket(packet: string) {
     try {
@@ -239,105 +203,83 @@ export default function TexasElectionContributionForm({
 
     setSubmitting(true);
     setError("");
-    setSuccessRaceSlug("");
     setGeneratedPacket("");
     setCopied(false);
 
-    if (!databaseSubmissionsEnabled) {
-      const packet = buildPacket();
-      setGeneratedPacket(packet);
-      await copyPacket(packet);
-      savePacket(packet);
-      setSubmitting(false);
-      return;
-    }
-
-    if (!user) {
-      setError("Live database submission requires an account. Create an account or use packet mode if the kill switch is turned on.");
-      setSubmitting(false);
-      return;
-    }
-
-    if (!supabase) {
-      setError("Database submissions are not available in this browser session.");
-      setSubmitting(false);
-      return;
-    }
-
-    const { error: insertError } = await supabase.from("texas_election_contributions").insert({
-      user_id: user.id,
-      race_slug: selectedRace.slug,
-      race_title: selectedRace.title,
-      contribution_type: contributionType,
-      title: title.trim(),
-      summary: summary.trim(),
-      source_url: trimmedSourceUrl,
-      source_label: sourceLabel.trim() || null,
-      county: county.trim() || null,
-      city: city.trim() || null,
-      contact_email: contactEmail.trim() || user.email || null,
+    const payload = {
+      submitterEmail: contactEmail.trim() || user?.email || "",
+      targetName: selectedRace.title,
+      targetType: "texas_election_race",
+      targetProfileId: selectedRace.slug,
+      targetPageUrl: `/elections/texas/${selectedRace.slug}`,
+      jurisdiction: [city.trim(), county.trim(), "Texas"].filter(Boolean).join(", "),
+      sourceUrl: trimmedSourceUrl,
+      sourceType: contributionType,
+      sourceTitle: title.trim() || sourceLabel.trim(),
+      sourceDate,
+      claimSummary: summary.trim(),
+      checkRequest: checkRequest.trim(),
+      publicFlag: true,
+      ...collectSourceAttribution(),
       metadata: {
         intake: "texas_election_contribution_form",
         page_path: `/elections/texas/${selectedRace.slug}`,
+        race_slug: selectedRace.slug,
+        race_title: selectedRace.title,
+        source_label: sourceLabel.trim() || null,
+        county: county.trim() || null,
+        city: city.trim() || null,
       },
-    });
+    };
+    const fallbackPacket = buildClientSourcePacket(payload);
 
-    if (insertError) {
-      setError(
-        insertError.message.includes("texas_election_contributions")
-          ? "The Texas election contribution table is not reachable yet. Check Supabase env vars, Data API grants, and RLS policies."
-          : insertError.message
-      );
+    try {
+      const response = await fetch("/api/source-submissions", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(payload),
+      });
+      const data = (await response.json().catch(() => null)) as SourceSubmissionResponse | null;
+
+      if (response.ok && data?.submissionId) {
+        const packet = data.packet || buildClientSourcePacket({ ...payload, submissionId: data.submissionId });
+        savePacket(packet);
+        storeLatestSourceSubmission({
+          submissionId: data.submissionId,
+          packet,
+          nextAction: data.nextAction || "Share the Texas source form with another voter who has a public record.",
+          shareUrl: data.shareUrl || "https://www.repwatchr.com/elections/texas/contribute",
+          targetName: selectedRace.title,
+          sourceUrl: trimmedSourceUrl,
+          createdAt: new Date().toISOString(),
+        });
+        await copyText(packet);
+        router.push(`/submit-source/thanks?id=${encodeURIComponent(data.submissionId)}`);
+        return;
+      }
+
+      const packet = data?.packet || fallbackPacket;
+      setGeneratedPacket(packet);
+      await copyPacket(packet);
+      savePacket(packet);
+      setError(data?.error || "The source queue is temporarily unavailable. Copy or download this packet and try again.");
+    } catch {
+      setGeneratedPacket(fallbackPacket);
+      await copyPacket(fallbackPacket);
+      savePacket(fallbackPacket);
+      setError("The source queue is temporarily unavailable. Copy or download this packet and try again.");
+    } finally {
       setSubmitting(false);
-      return;
     }
-
-    setSuccessRaceSlug(selectedRace.slug);
-    setTitle("");
-    setSummary("");
-    setSourceUrl("");
-    setSourceLabel("");
-    setCity("");
-    setAcknowledged(false);
-    setSubmitting(false);
   }
 
-  if (loading && databaseSubmissionsEnabled) {
+  if (loading) {
     return (
       <div className="rounded-lg border border-slate-200 bg-white p-5 shadow-sm">
         <div className="h-5 w-40 rounded bg-slate-200" />
         <div className="mt-4 h-11 rounded bg-slate-100" />
         <div className="mt-3 h-28 rounded bg-slate-100" />
         <div className="mt-3 h-11 rounded bg-slate-100" />
-      </div>
-    );
-  }
-
-  if (databaseSubmissionsEnabled && !user) {
-    return (
-      <div className="rounded-lg border border-blue-200 bg-white p-5 shadow-[0_16px_40px_rgba(15,23,42,0.08)]">
-        <p className="text-xs font-black uppercase tracking-[0.18em] text-red-700">Contributor access</p>
-        <h2 className="mt-2 text-2xl font-black leading-tight text-blue-950">
-          Create an account before submitting Texas election records.
-        </h2>
-        <p className="mt-3 text-sm font-semibold leading-6 text-slate-700">
-          Database submissions are enabled. Create an account so your source can be tied to a review queue
-          before anything is amplified.
-        </p>
-        <div className="mt-5 flex flex-wrap gap-3">
-          <Link
-            href="/create-account"
-            className="rounded-xl bg-blue-950 px-5 py-3 text-sm font-black uppercase tracking-wide text-white transition hover:-translate-y-0.5 hover:bg-red-700"
-          >
-            Create account
-          </Link>
-          <Link
-            href="/auth/login"
-            className="rounded-xl border border-slate-300 bg-white px-5 py-3 text-sm font-black uppercase tracking-wide text-blue-950 transition hover:-translate-y-0.5 hover:border-red-300 hover:text-red-700"
-          >
-            Log in
-          </Link>
-        </div>
       </div>
     );
   }
@@ -351,52 +293,19 @@ export default function TexasElectionContributionForm({
         <div>
           <p className="text-xs font-black uppercase tracking-[0.18em] text-red-700">Texas contributor desk</p>
           <h2 className="mt-2 text-2xl font-black leading-tight text-blue-950">
-            {databaseSubmissionsEnabled ? "Add a source to the Texas election record." : "Build a Texas election source packet."}
+            Add a source to the Texas election review queue.
           </h2>
         </div>
-        {!databaseSubmissionsEnabled ? (
-          <span className="rounded-full bg-amber-50 px-3 py-1 text-xs font-black uppercase tracking-wide text-amber-900">
-            Packet mode
-          </span>
-        ) : profile?.verified ? (
+        {profile?.verified ? (
           <span className="rounded-full bg-green-50 px-3 py-1 text-xs font-black uppercase tracking-wide text-green-800">
             Verified Texas voter
           </span>
         ) : (
-          <Link
-            href="/auth/verify"
-            className="rounded-full border border-blue-200 bg-blue-50 px-3 py-1 text-xs font-black uppercase tracking-wide text-blue-900 hover:border-red-300 hover:text-red-700"
-          >
-            Verify county
-          </Link>
+          <span className="rounded-full border border-blue-200 bg-blue-50 px-3 py-1 text-xs font-black uppercase tracking-wide text-blue-900">
+            Public source queue
+          </span>
         )}
       </div>
-
-      {!databaseSubmissionsEnabled ? (
-        <div className="mt-5 rounded-lg border border-amber-200 bg-amber-50 p-4">
-          <p className="text-sm font-black text-amber-950">Current mode: source-packet builder.</p>
-          <p className="mt-1 text-sm font-semibold leading-6 text-amber-900">
-            Supabase submissions are off only when the public env vars are missing or the kill switch is set to false.
-            This form still builds a clean review packet, copies it, and saves the latest packet in this browser.
-          </p>
-        </div>
-      ) : null}
-
-      {successRaceSlug ? (
-        <div className="mt-5 rounded-lg border border-green-200 bg-green-50 p-4">
-          <p className="text-sm font-black text-green-900">Submission received for review.</p>
-          <p className="mt-1 text-sm font-semibold leading-6 text-green-800">
-            It is private until a RepWatchr operator checks the source and decides whether it belongs
-            on a public race page.
-          </p>
-          <Link
-            href={`/elections/texas/${successRaceSlug}`}
-            className="mt-3 inline-flex text-sm font-black text-green-900 underline"
-          >
-            Open that race page
-          </Link>
-        </div>
-      ) : null}
 
       {generatedPacket ? (
         <div className="mt-5 rounded-lg border border-blue-200 bg-blue-50 p-4">
@@ -404,7 +313,7 @@ export default function TexasElectionContributionForm({
             Source packet ready{copied ? " and copied." : "."}
           </p>
           <p className="mt-1 text-sm font-semibold leading-6 text-blue-900">
-            Keep this packet for the review queue. When Supabase env vars are present, this same form submits directly.
+            Keep this packet for the review queue. The source packet was copied as a backup.
           </p>
           <textarea
             readOnly
@@ -520,6 +429,22 @@ export default function TexasElectionContributionForm({
         </div>
 
         <div>
+          <label htmlFor="check_request" className="block text-xs font-black uppercase tracking-wide text-slate-600">
+            What needs to be checked
+          </label>
+          <textarea
+            id="check_request"
+            value={checkRequest}
+            onChange={(event) => setCheckRequest(event.target.value)}
+            required
+            rows={4}
+            maxLength={3000}
+            placeholder="What should RepWatchr verify, attach, correct, compare, or add to this race page?"
+            className="mt-1 w-full resize-none rounded-lg border border-slate-300 px-3 py-3 text-sm font-semibold leading-6 text-slate-950 placeholder:text-slate-400 focus:border-blue-600 focus:outline-none focus:ring-1 focus:ring-blue-600"
+          />
+        </div>
+
+        <div>
           <label htmlFor="source_url" className="block text-xs font-black uppercase tracking-wide text-slate-600">
             Public source URL
           </label>
@@ -531,6 +456,19 @@ export default function TexasElectionContributionForm({
             required
             placeholder="https://..."
             className="mt-1 w-full rounded-lg border border-slate-300 px-3 py-3 text-sm font-semibold text-slate-950 placeholder:text-slate-400 focus:border-blue-600 focus:outline-none focus:ring-1 focus:ring-blue-600"
+          />
+        </div>
+
+        <div>
+          <label htmlFor="source_date" className="block text-xs font-black uppercase tracking-wide text-slate-600">
+            Date of source
+          </label>
+          <input
+            id="source_date"
+            type="date"
+            value={sourceDate}
+            onChange={(event) => setSourceDate(event.target.value)}
+            className="mt-1 w-full rounded-lg border border-slate-300 px-3 py-3 text-sm font-semibold text-slate-950 focus:border-blue-600 focus:outline-none focus:ring-1 focus:ring-blue-600"
           />
         </div>
 
@@ -600,11 +538,10 @@ export default function TexasElectionContributionForm({
           disabled={!canSubmit}
           className="rounded-xl bg-red-700 px-5 py-3 text-sm font-black uppercase tracking-wide text-white transition hover:-translate-y-0.5 hover:bg-blue-950 disabled:cursor-not-allowed disabled:bg-slate-300 disabled:text-slate-500"
         >
-          {submitting ? "Working..." : databaseSubmissionsEnabled ? "Submit for review" : "Build source packet"}
+          {submitting ? "Submitting..." : "Submit for Review"}
         </button>
 
-        {!databaseSubmissionsEnabled ? (
-          <div className="rounded-lg border border-slate-200 bg-slate-50 p-4">
+        <div className="rounded-lg border border-slate-200 bg-slate-50 p-4">
             <div className="flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
               <div>
                 <p className="text-xs font-black uppercase tracking-[0.18em] text-slate-600">Local packet queue</p>
@@ -656,8 +593,7 @@ export default function TexasElectionContributionForm({
                 ))}
               </div>
             ) : null}
-          </div>
-        ) : null}
+        </div>
       </div>
     </form>
   );

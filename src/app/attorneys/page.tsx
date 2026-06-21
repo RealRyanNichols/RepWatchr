@@ -11,13 +11,17 @@ import { attorneyWatchImportPlan } from "@/data/attorney-watch";
 import { getAllNationalJurisdictions } from "@/data/national-buildout";
 import { getAttorneyWatchProfiles, getPowerWatchStats } from "@/lib/power-watch";
 import { countByState, getSelectedStateCode } from "@/lib/state-scope";
+import { buildOgImageUrl, buildRepWatchrMetadata } from "@/lib/repwatchr-seo";
 import type { PublicPowerProfile } from "@/types/power-watch";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = buildRepWatchrMetadata({
   title: "National Attorneys, Public Defenders, and Law Firms | RepWatchr",
   description:
     "Track attorney, public-defender, and law-firm profiles state by state with bar-license sources, completion stages, cross-links, intake questions, and correction review.",
-};
+  path: "/attorneys",
+  imagePath: buildOgImageUrl("home"),
+  imageAlt: "RepWatchr attorney watch preview",
+});
 
 function StatCard({ label, value, detail }: { label: string; value: string | number; detail: string }) {
   return (

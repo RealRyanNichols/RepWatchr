@@ -7,6 +7,7 @@ import GoogleAnalytics from "@/components/shared/GoogleAnalytics";
 import PageViewTracker from "@/components/shared/PageViewTracker";
 import { Analytics } from "@vercel/analytics/next";
 import { SpeedInsights } from "@vercel/speed-insights/next";
+import { jsonLd, organizationJsonLd } from "@/lib/structured-data";
 
 export const metadata: Metadata = {
   title: {
@@ -61,10 +62,10 @@ export const metadata: Metadata = {
     type: "website",
     images: [
       {
-        url: "/images/repwatchr-cover-america-first.png",
-        width: 2172,
-        height: 724,
-        alt: "RepWatchr America First cover photo",
+        url: "/api/og",
+        width: 1200,
+        height: 630,
+        alt: "RepWatchr social preview",
       },
     ],
   },
@@ -73,7 +74,7 @@ export const metadata: Metadata = {
     title: "RepWatchr - Public Officials on the Record",
     description:
       "Find officials, inspect votes, submit missing sources, and share source-backed accountability records.",
-    images: ["/images/repwatchr-cover-america-first.png"],
+    images: ["/api/og"],
   },
   robots: {
     index: true,
@@ -89,6 +90,10 @@ export default function RootLayout({
   return (
     <html lang="en" className="h-full antialiased">
       <body className="min-h-full flex flex-col bg-[#f6f9fc] text-slate-950">
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: jsonLd(organizationJsonLd()) }}
+        />
         <GoogleAnalytics />
         <PageViewTracker />
         <AuthProvider>

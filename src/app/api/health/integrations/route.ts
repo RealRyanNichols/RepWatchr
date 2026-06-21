@@ -16,6 +16,10 @@ const requiredTables = [
   "profile_scorecard_votes",
   "member_profiles",
   "member_tracked_items",
+  "member_source_packet_drafts",
+  "member_public_record_requests",
+  "member_timeline_starters",
+  "member_faretta_notes",
   "member_research_theories",
   "member_action_packets",
   "site_page_views",
@@ -40,10 +44,20 @@ const requiredTables = [
   "predator_reports",
   "predator_report_evidence",
   "predator_public_notes",
-  "texas_election_contributions",
+  "source_submissions",
+  "source_submission_events",
+  "source_submission_attachments",
+  "source_review_notes",
+  "source_status_history",
+  "admin_audit_log",
+  "admin_profile_edits",
+  "admin_content_items",
+  "admin_broken_source_links",
+  "admin_import_runs",
+  "site_share_events",
 ];
 
-const optionalTables: string[] = [];
+const optionalTables = ["texas_election_contributions"];
 
 const requiredViews = [
   "approval_ratings",

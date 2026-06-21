@@ -9,14 +9,18 @@ import {
   getPredatorWatchProfiles,
   getPredatorWatchStats,
 } from "@/lib/predator-watch";
+import { buildOgImageUrl, buildRepWatchrMetadata } from "@/lib/repwatchr-seo";
 
 export const dynamic = "force-dynamic";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = buildRepWatchrMetadata({
   title: "East Texas Predator Watch | RepWatchr",
   description:
     "Source-backed East Texas Predator Watch profiles, registry records, watch-priority alerts, and private community report intake.",
-};
+  path: "/east-texas-predator-watch",
+  imagePath: buildOgImageUrl("home"),
+  imageAlt: "RepWatchr East Texas Predator Watch preview",
+});
 
 type SearchParams = Record<string, string | string[] | undefined>;
 

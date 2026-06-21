@@ -7,13 +7,17 @@ import { publicSafetyWatchImportPlan } from "@/data/public-safety-watch";
 import { getAllNationalJurisdictions } from "@/data/national-buildout";
 import { getPowerWatchStats, getPublicSafetyWatchProfiles } from "@/lib/power-watch";
 import { countByState, getSelectedStateCode } from "@/lib/state-scope";
+import { buildOgImageUrl, buildRepWatchrMetadata } from "@/lib/repwatchr-seo";
 import type { PublicPowerProfile } from "@/types/power-watch";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = buildRepWatchrMetadata({
   title: "Public Safety Watch | RepWatchr",
   description:
     "Track public-safety agencies, elected sheriffs, police chiefs, complaint paths, policy records, jail records, and source-backed badge-power profiles.",
-};
+  path: "/public-safety",
+  imagePath: buildOgImageUrl("home"),
+  imageAlt: "RepWatchr public safety watch preview",
+});
 
 const personKinds = new Set<PublicPowerProfile["kind"]>([
   "sheriff",

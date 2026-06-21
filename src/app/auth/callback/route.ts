@@ -11,7 +11,7 @@ export async function GET(request: NextRequest) {
 
   if (!supabaseUrl || !supabaseAnonKey) {
     const loginUrl = new URL("/login", request.url);
-    loginUrl.searchParams.set("error", "Member database is not configured.");
+    loginUrl.searchParams.set("error", "Member login is temporarily unavailable.");
     return NextResponse.redirect(loginUrl);
   }
 

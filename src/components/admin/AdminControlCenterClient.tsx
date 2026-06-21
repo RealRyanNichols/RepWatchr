@@ -266,7 +266,7 @@ export default function AdminControlCenterClient() {
                   <ActionLink href="/buildout" label="Public buildout" detail="See public coverage and missing data" />
                   <ActionLink href="/scorecards" label="Scorecards" detail="Open universal scorecard surface" />
                   <ActionLink href="https://vercel.com/theflashflash24-9833s-projects/repwatchr" label="Vercel project" detail="Open deployments, analytics, logs" external />
-                  <ActionLink href="/admin/control-center" label="Social SQL file" detail="Run supabase-social-monitoring.sql from the repo before enabling scans" />
+                  <ActionLink href="/admin/control-center" label="Social schema gap" detail="Create the missing social-monitoring migration before enabling scans" />
                 </div>
               </div>
             </section>
@@ -369,7 +369,7 @@ export default function AdminControlCenterClient() {
                 <h2 className="mt-1 text-xl font-black text-slate-950">Policy-safe next steps</h2>
                 <div className="mt-3 space-y-2 text-sm font-semibold leading-6 text-slate-700">
                   <p>1. Store official social account URLs with source proof.</p>
-                  <p>2. Apply `supabase-social-monitoring.sql` to create account, statement, and job tables.</p>
+                  <p>2. Create and apply the missing social-monitoring migration for account, statement, token, post-log, and job tables.</p>
                   <p>3. Add X API credentials only if the plan allows the needed public-account monitoring.</p>
                   <p>4. Run a backend collector that saves URLs, dates, excerpts, and review status, then publish only approved public-source context.</p>
                 </div>

@@ -1,105 +1,228 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useMemo, useState } from "react";
+import Link from "next/link";
 import { track } from "@vercel/analytics";
+import {
+  buildRepWatchrShareKit,
+  canonicalShareUrl,
+  type ShareTemplateKind,
+} from "@/lib/share-snippets";
+import { trackRepWatchrEvent } from "@/lib/client-analytics";
 
 interface ShareButtonsProps {
   title: string;
   description?: string;
   path: string;
+  template?: ShareTemplateKind;
+  subject?: string;
+  sourceLabel?: string;
+  className?: string;
 }
 
-const SITE_ORIGIN = "https://www.repwatchr.com";
+type ShareEventName =
+  | "share_copy_clicked"
+  | "native_share_clicked"
+  | "social_share_clicked"
+  | "source_snippet_copied"
+  | "profile_watch_clicked";
 
-function canonicalShareUrl(path: string) {
-  if (path.startsWith("http://") || path.startsWith("https://")) return path;
-  return `${SITE_ORIGIN}${path.startsWith("/") ? path : `/${path}`}`;
+function socialUrl(channel: "x" | "facebook" | "linkedin", url: string, text: string) {
+  const encodedUrl = encodeURIComponent(url);
+  const encodedText = encodeURIComponent(text);
+  if (channel === "x") return `https://twitter.com/intent/tweet?text=${encodedText}&url=${encodedUrl}`;
+  if (channel === "facebook") return `https://www.facebook.com/sharer/sharer.php?u=${encodedUrl}&quote=${encodedText}`;
+  return `https://www.linkedin.com/sharing/share-offsite/?url=${encodedUrl}`;
 }
 
 export default function ShareButtons({
   title,
   description,
   path,
+  template,
+  subject,
+  sourceLabel,
+  className = "",
 }: ShareButtonsProps) {
-  const [copied, setCopied] = useState(false);
+  const [copiedKey, setCopiedKey] = useState("");
+  const [nativeShareSupported, setNativeShareSupported] = useState(false);
 
-  const fullUrl = canonicalShareUrl(path);
-  const encodedUrl = encodeURIComponent(fullUrl);
-  const encodedTitle = encodeURIComponent(title);
-  const encodedDesc = encodeURIComponent(description || title);
+  const kit = useMemo(
+    () => buildRepWatchrShareKit({ title, description, path, template, subject, sourceLabel }),
+    [description, path, sourceLabel, subject, template, title],
+  );
+  const cleanUrl = canonicalShareUrl(path);
 
-  function trackShare(channel: "x" | "facebook" | "copy") {
-    track("share_click", { channel, path });
+  useEffect(() => {
+    const timer = window.setTimeout(() => {
+      setNativeShareSupported(typeof navigator !== "undefined" && typeof navigator.share === "function");
+    }, 0);
+    return () => window.clearTimeout(timer);
+  }, []);
+
+  function recordShareEvent(eventName: ShareEventName, channel: string, extra: Record<string, string> = {}) {
+    track(eventName, {
+      channel,
+      path,
+      template: kit.template,
+      ...extra,
+    });
+    trackRepWatchrEvent(eventName, {
+      channel,
+      path,
+      template: kit.template,
+      ...extra,
+    });
+    fetch("/api/analytics/share", {
+      method: "POST",
+      headers: { "content-type": "application/json" },
+      body: JSON.stringify({
+        eventName,
+        channel,
+        path,
+        template: kit.template,
+        title,
+        ...extra,
+      }),
+      keepalive: true,
+    }).catch(() => {
+      // Share persistence is best-effort; Vercel Analytics still records the action.
+    });
   }
 
-  async function copyLink() {
-    await navigator.clipboard.writeText(fullUrl);
-    trackShare("copy");
-    setCopied(true);
-    setTimeout(() => setCopied(false), 2000);
+  async function copyValue(key: string, value: string, eventName: ShareEventName, channel: string) {
+    try {
+      await navigator.clipboard.writeText(value);
+      setCopiedKey(key);
+      recordShareEvent(eventName, channel, { snippetType: key });
+      window.setTimeout(() => setCopiedKey((current) => (current === key ? "" : current)), 1800);
+    } catch {
+      setCopiedKey("");
+    }
+  }
+
+  async function nativeShare() {
+    if (!nativeShareSupported) return;
+    try {
+      await navigator.share({
+        title,
+        text: kit.snippet,
+        url: cleanUrl,
+      });
+      recordShareEvent("native_share_clicked", "native");
+    } catch {
+      // User cancellation is normal.
+    }
+  }
+
+  function onSocialClick(channel: "x" | "facebook" | "linkedin") {
+    recordShareEvent("social_share_clicked", channel);
+  }
+
+  function onWatchClick() {
+    recordShareEvent("profile_watch_clicked", "watch_record");
   }
 
   return (
-    <div className="flex items-center gap-2">
-      <span className="text-xs font-medium text-gray-500 uppercase tracking-wide mr-1">
-        Share
-      </span>
+    <section className={`w-full max-w-2xl rounded-xl border border-slate-200 bg-white p-3 shadow-sm ${className}`}>
+      <div className="flex flex-col gap-3 sm:flex-row sm:items-start sm:justify-between">
+        <div>
+          <p className="text-[11px] font-black uppercase tracking-[0.18em] text-red-700">{kit.label}</p>
+          <p className="mt-1 text-sm font-black leading-5 text-blue-950">Share the receipt, not just the outrage.</p>
+        </div>
+        <div className="flex flex-wrap gap-2">
+          <button
+            type="button"
+            onClick={() => copyValue("clean_link", cleanUrl, "share_copy_clicked", "copy")}
+            className="share-action-button"
+          >
+            {copiedKey === "clean_link" ? "Link copied" : "Copy link"}
+          </button>
+          {nativeShareSupported ? (
+            <button type="button" onClick={nativeShare} className="share-action-button">
+              Native share
+            </button>
+          ) : null}
+        </div>
+      </div>
 
-      {/* Twitter/X */}
-      <a
-        href={`https://twitter.com/intent/tweet?text=${encodedTitle}&url=${encodedUrl}`}
-        target="_blank"
-        rel="noopener noreferrer"
-        onClick={() => trackShare("x")}
-        className="flex h-9 w-9 items-center justify-center rounded-full bg-gray-100 text-gray-600 transition-all hover:bg-black hover:text-white"
-        title="Share on X (Twitter)"
-      >
-        <svg className="h-4 w-4" viewBox="0 0 24 24" fill="currentColor">
-          <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
-        </svg>
-      </a>
+      <div className="mt-3 rounded-lg border border-blue-100 bg-blue-50 p-3">
+        <div className="flex flex-col gap-2 sm:flex-row sm:items-center sm:justify-between">
+          <p className="text-[11px] font-black uppercase tracking-wide text-blue-900">Source-backed snippet</p>
+          <button
+            type="button"
+            onClick={() => copyValue("source_snippet", kit.snippet, "source_snippet_copied", "snippet")}
+            className="share-mini-button"
+          >
+            {copiedKey === "source_snippet" ? "Copied" : "Copy snippet"}
+          </button>
+        </div>
+        <p className="mt-2 text-sm font-bold leading-6 text-blue-950">{kit.snippet}</p>
+      </div>
 
-      {/* Facebook */}
-      <a
-        href={`https://www.facebook.com/sharer/sharer.php?u=${encodedUrl}&quote=${encodedDesc}`}
-        target="_blank"
-        rel="noopener noreferrer"
-        onClick={() => trackShare("facebook")}
-        className="flex h-9 w-9 items-center justify-center rounded-full bg-gray-100 text-gray-600 transition-all hover:bg-blue-600 hover:text-white"
-        title="Share on Facebook"
-      >
-        <svg className="h-4 w-4" viewBox="0 0 24 24" fill="currentColor">
-          <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" />
-        </svg>
-      </a>
+      <div className="mt-3 grid gap-2 sm:grid-cols-2">
+        <SnippetCopyCard
+          label="Before the meeting"
+          text={kit.talkingPoint}
+          copied={copiedKey === "talking_point"}
+          onCopy={() => copyValue("talking_point", kit.talkingPoint, "source_snippet_copied", "talking_point")}
+        />
+        <SnippetCopyCard
+          label="Ask this public question"
+          text={kit.publicQuestion}
+          copied={copiedKey === "public_question"}
+          onCopy={() => copyValue("public_question", kit.publicQuestion, "source_snippet_copied", "public_question")}
+        />
+      </div>
 
-      {/* Copy Link */}
-      <button
-        onClick={copyLink}
-        className={`flex h-9 items-center gap-1.5 rounded-full px-3 text-xs font-medium transition-all ${
-          copied
-            ? "bg-green-100 text-green-700"
-            : "bg-gray-100 text-gray-600 hover:bg-gray-200"
-        }`}
-        title="Copy link"
-      >
-        {copied ? (
-          <>
-            <svg className="h-3.5 w-3.5" viewBox="0 0 20 20" fill="currentColor">
-              <path fillRule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clipRule="evenodd" />
-            </svg>
-            Copied
-          </>
-        ) : (
-          <>
-            <svg className="h-3.5 w-3.5" viewBox="0 0 20 20" fill="currentColor">
-              <path d="M12.232 4.232a2.5 2.5 0 013.536 3.536l-1.225 1.224a.75.75 0 001.061 1.06l1.224-1.224a4 4 0 00-5.656-5.656l-3 3a4 4 0 00.225 5.865.75.75 0 00.977-1.138 2.5 2.5 0 01-.142-3.667l3-3z" />
-              <path d="M11.603 7.963a.75.75 0 00-.977 1.138 2.5 2.5 0 01.142 3.667l-3 3a2.5 2.5 0 01-3.536-3.536l1.225-1.224a.75.75 0 00-1.061-1.06l-1.224 1.224a4 4 0 105.656 5.656l3-3a4 4 0 00-.225-5.865z" />
-            </svg>
-            Link
-          </>
-        )}
-      </button>
+      <div className="mt-3 flex flex-col gap-2 sm:flex-row sm:items-center sm:justify-between">
+        <div className="flex flex-wrap gap-2">
+          {(["x", "facebook", "linkedin"] as const).map((channel) => (
+            <a
+              key={channel}
+              href={socialUrl(channel, cleanUrl, kit.snippet)}
+              target="_blank"
+              rel="noopener noreferrer"
+              onClick={() => onSocialClick(channel)}
+              className="share-social-link"
+            >
+              {channel === "x" ? "X" : channel === "facebook" ? "Facebook" : "LinkedIn"}
+            </a>
+          ))}
+        </div>
+        <div className="flex flex-wrap gap-2">
+          <Link href={kit.submitSourceHref} className="share-secondary-link">
+            Submit a better source
+          </Link>
+          <Link href={kit.watchHref} onClick={onWatchClick} className="share-primary-link">
+            Watch this record
+          </Link>
+        </div>
+      </div>
+    </section>
+  );
+}
+
+function SnippetCopyCard({
+  label,
+  text,
+  copied,
+  onCopy,
+}: {
+  label: string;
+  text: string;
+  copied: boolean;
+  onCopy: () => void;
+}) {
+  return (
+    <div className="rounded-lg border border-slate-200 bg-slate-50 p-3">
+      <div className="flex items-center justify-between gap-2">
+        <p className="text-[11px] font-black uppercase tracking-wide text-slate-600">{label}</p>
+        <button type="button" onClick={onCopy} className="share-mini-button">
+          {copied ? "Copied" : "Copy"}
+        </button>
+      </div>
+      <p className="mt-2 text-xs font-bold leading-5 text-slate-700">{text}</p>
     </div>
   );
 }

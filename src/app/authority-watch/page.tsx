@@ -1,11 +1,15 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import { buildOgImageUrl, buildRepWatchrMetadata } from "@/lib/repwatchr-seo";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = buildRepWatchrMetadata({
   title: "Authority Watch",
   description:
     "RepWatchr tracks public officials and public-facing authority roles through source-backed records, review labels, and safer citizen submissions.",
-};
+  path: "/authority-watch",
+  imagePath: buildOgImageUrl("home"),
+  imageAlt: "RepWatchr Authority Watch preview",
+});
 
 const authorityLanes = [
   {

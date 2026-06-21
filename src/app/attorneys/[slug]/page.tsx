@@ -6,6 +6,9 @@ import { getProfileScorecardTargetType } from "@/lib/universal-scorecards";
 import ProfileScorecardVote from "@/components/scorecards/ProfileScorecardVote";
 import ClaimProfileCta from "@/components/profile/ClaimProfileCta";
 import PowerProfileAvatar from "@/components/power-watch/PowerProfileAvatar";
+import ShareButtons from "@/components/shared/ShareButtons";
+import { buildOgImageUrl, buildRepWatchrMetadata } from "@/lib/repwatchr-seo";
+import { breadcrumbJsonLd, jsonLd, profilePageJsonLd } from "@/lib/structured-data";
 import type { PublicPowerKind } from "@/types/power-watch";
 
 interface AttorneyProfilePageProps {
@@ -24,10 +27,14 @@ export async function generateMetadata({ params }: AttorneyProfilePageProps): Pr
     return { title: "Attorney Profile Not Found | RepWatchr" };
   }
 
-  return {
+  return buildRepWatchrMetadata({
     title: `${profile.name} | Attorney Watch | RepWatchr`,
     description: `${profile.name} public profile: ${profile.summary}`,
-  };
+    path: `/attorneys/${profile.slug}`,
+    imagePath: buildOgImageUrl("home"),
+    imageAlt: `${profile.name} RepWatchr attorney watch preview`,
+    type: "profile",
+  });
 }
 
 function statusLabel(status: string) {
@@ -88,9 +95,29 @@ export default async function AttorneyProfilePage({ params }: AttorneyProfilePag
   const profile = getAttorneyWatchProfileBySlug(slug);
 
   if (!profile) notFound();
+  const profileStructuredData = profilePageJsonLd({
+    name: profile.name,
+    path: `/attorneys/${profile.slug}`,
+    description: `${profile.name} public profile: ${profile.summary}`,
+    jobTitle: profile.categoryLabel,
+    jurisdiction: [profile.city, profile.state].filter(Boolean).join(", "),
+  });
+  const breadcrumbStructuredData = breadcrumbJsonLd([
+    { name: "RepWatchr", path: "/" },
+    { name: "Attorney Watch", path: "/attorneys" },
+    { name: profile.name, path: `/attorneys/${profile.slug}` },
+  ]);
 
   return (
     <div className="rw-page-shell">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: jsonLd(profileStructuredData) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: jsonLd(breadcrumbStructuredData) }}
+      />
       <main className="mx-auto max-w-5xl px-4 py-8 sm:px-6 lg:px-8">
         <Link href="/attorneys" className="text-sm font-black text-blue-800 hover:text-red-700">
           &larr; Attorneys and law firms
@@ -155,6 +182,17 @@ export default async function AttorneyProfilePage({ params }: AttorneyProfilePag
               ))}
             </div>
           </div>
+        </section>
+
+        <section className="mt-6">
+          <ShareButtons
+            title={`${profile.name} | Attorney Watch | RepWatchr`}
+            description={profile.summary}
+            path={`/attorneys/${profile.slug}`}
+            template="public_question"
+            subject={`${profile.name} public accountability profile`}
+            sourceLabel={profile.sourceLinks[0]?.title || "public attorney profile source links"}
+          />
         </section>
 
         <section className="mt-6">

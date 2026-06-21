@@ -1,45 +1,25 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import TexasElectionContributionForm from "@/components/elections/TexasElectionContributionForm";
-import { getTexasElectionRaces } from "@/data/texas-election-races";
+import { getTexasRaceHubRaces } from "@/lib/race-hub";
+import { buildOgImageUrl, buildRepWatchrMetadata } from "@/lib/repwatchr-seo";
 
 export const metadata: Metadata = {
-  title: "Contribute Texas Election Records | RepWatchr",
-  description:
-    "Build source-backed Texas election record packets for RepWatchr review across East Texas races, statewide races, candidate information, events, corrections, and local issues.",
-  alternates: {
-    canonical: "https://www.repwatchr.com/elections/texas/contribute",
-  },
-  openGraph: {
-    title: "Contribute Texas Election Records | RepWatchr",
-    description:
-      "Build source-backed Texas election record packets for RepWatchr review across statewide races, East Texas races, county races, school boards, and judicial races.",
-    url: "https://www.repwatchr.com/elections/texas/contribute",
-    siteName: "RepWatchr",
-    type: "website",
-    images: [
-      {
-        url: "/images/repwatchr-cover-america-first.png",
-        width: 2172,
-        height: 724,
-        alt: "RepWatchr Texas election contribution desk",
-      },
-    ],
-  },
-  twitter: {
-    card: "summary_large_image",
+  ...buildRepWatchrMetadata({
     title: "Contribute Texas Election Records | RepWatchr",
     description:
       "Build source-backed Texas election record packets for review across statewide, East Texas, county, school board, and judicial races.",
-    images: ["/images/repwatchr-cover-america-first.png"],
-  },
+    path: "/elections/texas/contribute",
+    imagePath: buildOgImageUrl("source-packet", { target: "Texas election source packet" }),
+    imageAlt: "RepWatchr Texas election contribution source packet preview",
+  }),
 };
 
 const contributorSteps = [
-  "Build a source packet even if the live queue is temporarily unavailable.",
+  "Submit a source into the RepWatchr review queue and keep a copyable packet as backup.",
   "Pick the Texas race lane that matches the source.",
   "Add a public URL and plain-English summary of what the source shows.",
-  "When Supabase env vars are configured, the same workflow submits into the live private review queue.",
+  "RepWatchr reviews the record before anything becomes public or attaches to a profile.",
 ];
 
 const priorityTargets = [
@@ -57,7 +37,7 @@ export default async function TexasElectionContributePage({
 }) {
   const params = await searchParams;
   const defaultRaceSlug = typeof params.race === "string" ? params.race : undefined;
-  const races = getTexasElectionRaces().map((race) => ({
+  const races = getTexasRaceHubRaces().map((race) => ({
     slug: race.slug,
     title: race.title,
     shortTitle: race.shortTitle,
@@ -81,7 +61,7 @@ export default async function TexasElectionContributePage({
               RepWatchr should become the page voters open before they vote, share, or show up.
               That only works if Texas people can add records, corrections, meeting clips, filings,
               and local questions without turning the site into noise. Right now this page builds
-              clean source packets without requiring Supabase.
+              clean source packets and sends them into the private review queue when the database is configured.
             </p>
           </div>
 

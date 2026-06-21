@@ -4,8 +4,11 @@ import { notFound } from "next/navigation";
 import PowerProfileAvatar from "@/components/power-watch/PowerProfileAvatar";
 import ClaimProfileCta from "@/components/profile/ClaimProfileCta";
 import ProfileScorecardVote from "@/components/scorecards/ProfileScorecardVote";
+import ShareButtons from "@/components/shared/ShareButtons";
 import { getPublicSafetyWatchProfileBySlug, getPublicSafetyWatchProfiles } from "@/lib/power-watch";
 import { getProfileScorecardTargetType } from "@/lib/universal-scorecards";
+import { buildOgImageUrl, buildRepWatchrMetadata } from "@/lib/repwatchr-seo";
+import { breadcrumbJsonLd, jsonLd, profilePageJsonLd } from "@/lib/structured-data";
 import type { PublicPowerKind } from "@/types/power-watch";
 
 interface PublicSafetyProfilePageProps {
@@ -24,10 +27,14 @@ export async function generateMetadata({ params }: PublicSafetyProfilePageProps)
     return { title: "Public Safety Profile Not Found | RepWatchr" };
   }
 
-  return {
+  return buildRepWatchrMetadata({
     title: `${profile.name} | Public Safety Watch | RepWatchr`,
     description: `${profile.name} public-safety profile: ${profile.summary}`,
-  };
+    path: `/public-safety/${profile.slug}`,
+    imagePath: buildOgImageUrl("home"),
+    imageAlt: `${profile.name} RepWatchr public safety preview`,
+    type: "profile",
+  });
 }
 
 function statusLabel(status: string) {
@@ -47,9 +54,29 @@ export default async function PublicSafetyProfilePage({ params }: PublicSafetyPr
   const profile = getPublicSafetyWatchProfileBySlug(slug);
 
   if (!profile) notFound();
+  const profileStructuredData = profilePageJsonLd({
+    name: profile.name,
+    path: `/public-safety/${profile.slug}`,
+    description: `${profile.name} public-safety profile: ${profile.summary}`,
+    jobTitle: profile.categoryLabel,
+    jurisdiction: [profile.city, profile.state].filter(Boolean).join(", "),
+  });
+  const breadcrumbStructuredData = breadcrumbJsonLd([
+    { name: "RepWatchr", path: "/" },
+    { name: "Public Safety Watch", path: "/public-safety" },
+    { name: profile.name, path: `/public-safety/${profile.slug}` },
+  ]);
 
   return (
     <div className="rw-page-shell">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: jsonLd(profileStructuredData) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: jsonLd(breadcrumbStructuredData) }}
+      />
       <main className="mx-auto max-w-5xl px-4 py-8 sm:px-6 lg:px-8">
         <Link href="/public-safety" className="text-sm font-black text-blue-800 hover:text-red-700">
           &larr; Public safety watch
@@ -99,6 +126,17 @@ export default async function PublicSafetyProfilePage({ params }: PublicSafetyPr
                 ))}
             </div>
           </div>
+        </section>
+
+        <section className="mt-6">
+          <ShareButtons
+            title={`${profile.name} | Public Safety Watch | RepWatchr`}
+            description={profile.summary}
+            path={`/public-safety/${profile.slug}`}
+            template="public_question"
+            subject={`${profile.name} public-safety accountability profile`}
+            sourceLabel={profile.sourceLinks[0]?.title || "public safety source links"}
+          />
         </section>
 
         <section className="mt-6">

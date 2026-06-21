@@ -1,40 +1,20 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import {
-  getRepWatchrServicePaymentHref,
-  getRepWatchrServices,
-} from "@/data/repwatchr-services";
+import ServiceCheckoutButton from "@/components/services/ServiceCheckoutButton";
+import NextUsefulMove from "@/components/shared/NextUsefulMove";
+import { getRepWatchrServices } from "@/data/repwatchr-services";
+import { isRepWatchrServiceCheckoutConfigured } from "@/lib/repwatchr-payment-products";
+import { buildOgImageUrl, buildRepWatchrMetadata } from "@/lib/repwatchr-seo";
 
 export const metadata: Metadata = {
-  title: "RepWatchr Services | Free Source Packets and Paid Research",
-  description:
-    "Free source-packet tools and paid RepWatchr research services for Texas elections, East Texas races, public officials, school boards, and source-backed accountability records.",
-  alternates: {
-    canonical: "https://www.repwatchr.com/services",
-  },
-  openGraph: {
+  ...buildRepWatchrMetadata({
     title: "RepWatchr Services | Free Source Packets and Paid Research",
     description:
-      "Start free with a source packet, then request paid research for local races, officials, school boards, and election watch lanes.",
-    url: "https://www.repwatchr.com/services",
-    siteName: "RepWatchr",
-    type: "website",
-    images: [
-      {
-        url: "/images/repwatchr-cover-america-first.png",
-        width: 2172,
-        height: 724,
-        alt: "RepWatchr services",
-      },
-    ],
-  },
-  twitter: {
-    card: "summary_large_image",
-    title: "RepWatchr Services | Free Source Packets and Paid Research",
-    description:
-      "Free source-packet tools and paid public-record research services for Texas elections and public accountability.",
-    images: ["/images/repwatchr-cover-america-first.png"],
-  },
+      "Free source-packet tools and paid public-record research services for Texas elections, East Texas races, public officials, school boards, and accountability records.",
+    path: "/services",
+    imagePath: buildOgImageUrl("services"),
+    imageAlt: "RepWatchr services social preview",
+  }),
 };
 
 function serviceJsonLd() {
@@ -74,6 +54,7 @@ function serviceJsonLd() {
 export default function ServicesPage() {
   const services = getRepWatchrServices();
   const featured = services.filter((service) => service.featured);
+  const paymentsEnabled = isRepWatchrServiceCheckoutConfigured();
 
   return (
     <div className="min-h-screen bg-[#f6f9fc]">
@@ -98,7 +79,7 @@ export default function ServicesPage() {
               </p>
               <div className="mt-6 flex flex-wrap gap-3">
                 <Link
-                  href="/elections/texas/contribute"
+                  href="/services/free-source-packet#request-package"
                   className="rounded-xl bg-red-700 px-5 py-3 text-sm font-black uppercase tracking-wide text-white transition hover:-translate-y-0.5 hover:bg-blue-950"
                 >
                   Start Free
@@ -132,11 +113,18 @@ export default function ServicesPage() {
           </div>
         </section>
 
+        <div className="mt-5">
+          <NextUsefulMove
+            recordPath="/dashboard"
+            sourcePath="/submit-source"
+            packetPath="/free-packet"
+            safeShareLine="RepWatchr services organize public records, sources, and review questions. They do not promise legal advice, private investigation, or political results."
+            meetingQuestion="What source packet would make this public question easier to verify?"
+          />
+        </div>
+
         <section className="mt-7 grid gap-4 md:grid-cols-2 xl:grid-cols-3">
-          {services.map((service) => {
-            const href = getRepWatchrServicePaymentHref(service);
-            const external = href.startsWith("http");
-            return (
+          {services.map((service) => (
               <article key={service.slug} className="flex h-full flex-col rounded-lg border border-slate-200 bg-white p-5 shadow-sm">
                 <div className="flex items-center justify-between gap-3">
                   <span className="rounded-full bg-slate-100 px-2.5 py-1 text-[11px] font-black uppercase tracking-wide text-slate-700">
@@ -161,23 +149,25 @@ export default function ServicesPage() {
                   ))}
                 </div>
                 <div className="mt-auto pt-5">
-                  <Link
-                    href={href}
-                    target={external ? "_blank" : undefined}
-                    rel={external ? "noopener noreferrer" : undefined}
-                    className="inline-flex w-full justify-center rounded-xl bg-blue-950 px-4 py-3 text-sm font-black uppercase tracking-wide text-white transition hover:-translate-y-0.5 hover:bg-red-700"
-                  >
-                    {service.ctaLabel}
-                  </Link>
-                  {service.priceCents > 0 && !external ? (
-                    <p className="mt-2 text-center text-xs font-bold text-slate-500">
-                      Stripe link not configured yet. This opens the request packet page.
-                    </p>
-                  ) : null}
+                  {service.priceCents > 0 ? (
+                    <ServiceCheckoutButton
+                      serviceSlug={service.slug}
+                      label={service.ctaLabel}
+                      fallbackHref={service.fallbackHref}
+                      paymentsEnabled={paymentsEnabled}
+                      className="inline-flex w-full justify-center rounded-xl bg-blue-950 px-4 py-3 text-sm font-black uppercase tracking-wide text-white transition hover:-translate-y-0.5 hover:bg-red-700 disabled:cursor-not-allowed disabled:bg-slate-300"
+                    />
+                  ) : (
+                    <Link
+                      href={service.fallbackHref}
+                      className="inline-flex w-full justify-center rounded-xl bg-blue-950 px-4 py-3 text-sm font-black uppercase tracking-wide text-white transition hover:-translate-y-0.5 hover:bg-red-700"
+                    >
+                      {service.ctaLabel}
+                    </Link>
+                  )}
                 </div>
               </article>
-            );
-          })}
+          ))}
         </section>
       </main>
     </div>

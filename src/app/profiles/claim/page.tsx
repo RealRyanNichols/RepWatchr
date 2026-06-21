@@ -5,6 +5,10 @@ export const metadata: Metadata = {
   title: "Claim a Profile | RepWatchr",
   description:
     "Request verified RepWatchr profile ownership for reviewed bio, media, and official links while public facts and evidence stay locked.",
+  robots: {
+    index: false,
+    follow: false,
+  },
 };
 
 export default async function ClaimProfilePage({

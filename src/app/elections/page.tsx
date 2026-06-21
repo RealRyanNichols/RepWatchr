@@ -13,38 +13,18 @@ import { getSchoolBoardStats } from "@/lib/school-board-research";
 import CopySnippetButton from "@/components/shared/CopySnippetButton";
 import OfficialPhotoImage, { FEATURED_OFFICIAL_PHOTO_QUALITY } from "@/components/shared/OfficialPhotoImage";
 import ShareButtons from "@/components/shared/ShareButtons";
+import { buildOgImageUrl, buildRepWatchrMetadata } from "@/lib/repwatchr-seo";
 import type { NewsArticle, Official } from "@/types";
 
 export const metadata: Metadata = {
-  title: "Election Command Center",
-  description:
-    "A source-backed election hub for finding officials, votes, funding, red flags, school boards, and stories voters can inspect and share.",
-  alternates: {
-    canonical: "https://www.repwatchr.com/elections",
-  },
-  openGraph: {
-    title: "RepWatchr Election Command Center",
-    description:
-      "Before a meeting, vote, hearing, debate, or election, open the record: officials, votes, money, red flags, school boards, source links, and share-ready stories.",
-    url: "https://www.repwatchr.com/elections",
-    siteName: "RepWatchr",
-    type: "website",
-    images: [
-      {
-        url: "/images/repwatchr-cover-america-first.png",
-        width: 2172,
-        height: 724,
-        alt: "RepWatchr Election Command Center",
-      },
-    ],
-  },
-  twitter: {
-    card: "summary_large_image",
-    title: "RepWatchr Election Command Center",
+  ...buildRepWatchrMetadata({
+    title: "Election Command Center | RepWatchr",
     description:
       "Find officials, inspect votes, check money, open red flags, submit missing sources, and share the record.",
-    images: ["/images/repwatchr-cover-america-first.png"],
-  },
+    path: "/elections",
+    imagePath: buildOgImageUrl("race"),
+    imageAlt: "RepWatchr Election Command Center preview",
+  }),
 };
 
 const voterMoves = [
@@ -377,6 +357,9 @@ export default function ElectionsPage() {
                 title="RepWatchr Election Command Center"
                 description="Find officials, inspect votes, check money, open red flags, submit missing sources, and share the record."
                 path="/elections"
+                template="public_question"
+                subject="RepWatchr election records"
+                sourceLabel="officials, votes, money, red flags, school boards, stories, and source links"
               />
             </div>
           </div>
@@ -581,6 +564,9 @@ export default function ElectionsPage() {
                 title="Before you vote, check the record."
                 description="RepWatchr Election Command Center: officials, votes, money, red flags, school boards, stories, and source links."
                 path="/elections"
+                template="public_question"
+                subject="RepWatchr election source packet"
+                sourceLabel="officials, votes, money, red flags, school boards, stories, and source links"
               />
             </div>
           </div>

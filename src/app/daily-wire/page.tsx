@@ -1,36 +1,25 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import CopySnippetButton from "@/components/shared/CopySnippetButton";
+import RouteEventTracker from "@/components/shared/RouteEventTracker";
+import ShareButtons from "@/components/shared/ShareButtons";
 import { DAILY_NEWS_WATCH_SOURCES } from "@/data/daily-news-watch-sources";
 import { getAllNews } from "@/lib/data";
 import { getDailyWireClips, type DailyWireClip } from "@/lib/daily-wire";
+import { buildOgImageUrl, buildRepWatchrMetadata } from "@/lib/repwatchr-seo";
 import type { NewsArticle, NewsPowerChannel, NewsScope, SourceCredit } from "@/types";
 
 export const dynamic = "force-dynamic";
 
 export const metadata: Metadata = {
-  title: "Daily Watch Wire | RepWatchr",
-  description:
-    "Auto-collected daily political accountability wire items from public sources, organized by officials, oversight, money, courts, elections, media, school boards, and public safety.",
-  alternates: {
-    canonical: "https://www.repwatchr.com/daily-wire",
-  },
-  openGraph: {
-    title: "RepWatchr Daily Watch Wire",
+  ...buildRepWatchrMetadata({
+    title: "Daily Watch Wire | RepWatchr",
     description:
-      "A daily source-linked public accountability wire for high-attention political stories and representative oversight.",
-    url: "https://www.repwatchr.com/daily-wire",
-    siteName: "RepWatchr",
-    type: "website",
-    images: [
-      {
-        url: "/images/repwatchr-cover-america-first.png",
-        width: 2172,
-        height: 724,
-        alt: "RepWatchr Daily Watch Wire America First cover photo",
-      },
-    ],
-  },
+      "Daily source-linked public accountability wire items organized by officials, oversight, money, courts, elections, media, school boards, and public safety.",
+    path: "/daily-wire",
+    imagePath: buildOgImageUrl("news"),
+    imageAlt: "RepWatchr Daily Watch Wire preview",
+  }),
 };
 
 const scopeLabels: Record<NewsScope, string> = {
@@ -116,9 +105,9 @@ function articleFallbackSnippet(article: NewsArticle) {
 }
 
 function WireCard({ clip }: { clip: DailyWireClip }) {
-  const statusLabel = clip.publicStatus === "auto_published" ? "Source-linked" : "Review queue";
+  const statusLabel = clip.publicStatus === "source_linked" ? "Source-linked" : "Needs review";
   const statusClass =
-    clip.publicStatus === "auto_published"
+    clip.publicStatus === "source_linked"
       ? "border-emerald-200 bg-emerald-50 text-emerald-800"
       : "border-amber-200 bg-amber-50 text-amber-900";
 
@@ -128,6 +117,14 @@ function WireCard({ clip }: { clip: DailyWireClip }) {
         <span className={`rounded-full border px-2.5 py-1 text-[11px] font-black uppercase tracking-wide ${statusClass}`}>
           {statusLabel}
         </span>
+        {clip.publicLabels
+          .filter((label) => label !== statusLabel)
+          .slice(0, 3)
+          .map((label) => (
+            <span key={label} className="rounded-full border border-blue-100 bg-blue-50 px-2.5 py-1 text-[11px] font-black uppercase tracking-wide text-blue-900">
+              {label}
+            </span>
+          ))}
         <span className="rounded-full bg-blue-950 px-2.5 py-1 text-[11px] font-black uppercase tracking-wide text-white">
           {scopeLabels[clip.scope] ?? clip.scope}
         </span>
@@ -167,8 +164,8 @@ function WireCard({ clip }: { clip: DailyWireClip }) {
       ) : null}
 
       <div className="mt-4 flex flex-wrap gap-2">
-        {clip.matchedTerms.slice(0, 6).map((term) => (
-          <span key={term} className="rounded-full border border-red-100 bg-red-50 px-2 py-0.5 text-[11px] font-black text-red-800">
+        {clip.topicTags.slice(0, 6).map((term) => (
+          <span key={term} className="rounded-full border border-red-100 bg-red-50 px-2 py-0.5 text-[11px] font-black uppercase tracking-wide text-red-800">
             {term}
           </span>
         ))}
@@ -177,7 +174,8 @@ function WireCard({ clip }: { clip: DailyWireClip }) {
       <div className="mt-4 grid gap-3 border-t border-slate-200 pt-4 sm:grid-cols-[1fr_auto] sm:items-center">
         <div className="text-xs font-bold leading-5 text-slate-500">
           <p>{dateLabel(clip.publishedAt)} / {clip.sourceName}</p>
-          <p>Source tier: {clip.sourceTier.replace("_", " ")}</p>
+          <p>Source tier: {clip.sourceTier.replace("_", " ")} / domain: {clip.sourceDomain || "pending"}</p>
+          <p>Quality: {clip.qualityScore}/100 / jurisdiction: {clip.jurisdictionMatch} / geography: {clip.geographicRelevance}</p>
         </div>
         <div className="flex flex-wrap gap-2">
           <CopySnippetButton text={wireSnippet(clip)} />
@@ -190,6 +188,16 @@ function WireCard({ clip }: { clip: DailyWireClip }) {
             Open source
           </a>
         </div>
+      </div>
+      <div className="mt-4">
+        <ShareButtons
+          title={clip.title}
+          description={clip.summary}
+          path={`/daily-wire#clip-${clip.id}`}
+          template="meeting_clip"
+          subject={clip.title}
+          sourceLabel={clip.sourceCredit?.name || clip.sourceName}
+        />
       </div>
     </article>
   );
@@ -223,6 +231,16 @@ function FallbackArticleCard({ article }: { article: NewsArticle }) {
           Read story
         </Link>
       </div>
+      <div className="mt-4">
+        <ShareButtons
+          title={article.title}
+          description={article.summary}
+          path={`/news/${article.id}`}
+          template={article.sourceStatus === "needs_source_review" ? "missing_source" : "confirmed_record"}
+          subject={article.title}
+          sourceLabel={article.sourceName || article.sourceLinks?.[0]?.title || "linked public sources"}
+        />
+      </div>
     </article>
   );
 }
@@ -242,7 +260,8 @@ export default async function DailyWirePage({
   const visibleClips = selectedLane
     ? wireClips.filter((clip) => clip.powerChannels.includes(selectedLane))
     : wireClips;
-  const sourceLinkedCount = wireClips.filter((clip) => clip.publicStatus === "auto_published").length;
+  const sourceLinkedCount = wireClips.filter((clip) => clip.publicStatus === "source_linked").length;
+  const needsReviewCount = wireClips.filter((clip) => clip.publicStatus === "needs_review").length;
   const fallbackArticles = getAllNews().slice(0, 9);
   const laneCounts = channelOrder.map((channel) => ({
     channel,
@@ -258,7 +277,7 @@ export default async function DailyWirePage({
       ? `https://www.repwatchr.com/daily-wire?lane=${selectedLane}`
       : "https://www.repwatchr.com/daily-wire",
     description:
-      "Auto-collected source-linked public accountability wire items for political officials, oversight, money, courts, elections, media, school boards, and public safety.",
+      "Review-gated source-linked public accountability wire items for political officials, oversight, money, courts, elections, media, school boards, and public safety.",
     mainEntity: {
       "@type": "ItemList",
       itemListElement: visibleClips.slice(0, 20).map((clip, index) => ({
@@ -272,6 +291,15 @@ export default async function DailyWirePage({
 
   return (
     <div className="rw-page-shell">
+      <RouteEventTracker
+        eventName="daily_wire_item_open"
+        metadata={{
+          lane: selectedLane ?? "all",
+          visible_count: activeItems,
+          source_linked_count: sourceLinkedCount,
+          needs_review_count: needsReviewCount,
+        }}
+      />
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
@@ -285,10 +313,10 @@ export default async function DailyWirePage({
                 Daily Watch Wire
               </p>
               <h1 className="mt-3 text-4xl font-black leading-[0.95] tracking-tight text-slate-950 sm:text-6xl">
-                Auto-posted political attention, tied to public sources.
+                Review-gated leads. Receipts stay attached.
               </h1>
               <p className="mt-4 max-w-3xl text-base font-semibold leading-7 text-slate-700">
-                Every hour RepWatchr can search public RSS and news indexes for representatives, school boards, public safety, courts, money, elections, oversight, UAP transparency, ethics, whistleblowers, and corruption-risk signals. The wire shows the source trail first so readers can open the receipt.
+                Every hour RepWatchr can search public RSS and news indexes for representatives, school boards, public safety, courts, money, elections, oversight, UAP transparency, ethics, whistleblowers, and corruption-risk signals. Items are scored for jurisdiction, geography, source quality, duplicates, and topic fit before they appear here. A wire item is a lead with a receipt, not a RepWatchr finding.
               </p>
               <div className="mt-5 flex flex-wrap gap-2">
                 <Link
@@ -335,7 +363,7 @@ export default async function DailyWirePage({
               <Metric label="Wire items" value={activeItems} />
               <Metric label="Sources watched" value={result.sourceCount} />
               <Metric label="Source-linked" value={sourceLinkedCount} />
-              <Metric label="Cron" value="Hourly" />
+              <Metric label="Needs review" value={needsReviewCount} />
             </div>
           </div>
         </section>
@@ -398,7 +426,7 @@ export default async function DailyWirePage({
                 The hook travels. The receipt stays attached.
               </h2>
               <p className="mt-3 text-sm font-semibold leading-6 text-slate-300">
-                Wire posts are not verdicts, threats, or legal findings. They are source-linked public items that deserve review, sharing, profile attachment, or deeper RepWatchr story work.
+                Wire posts are not verdicts, threats, or legal findings. They are source-linked public leads that must stay tied to a receipt, profile attachment, or deeper RepWatchr story work.
               </p>
             </section>
 

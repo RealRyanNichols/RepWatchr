@@ -1,10 +1,19 @@
 import type { Metadata } from "next";
-import ReportButton from "@/components/shared/ReportButton";
+import SourceSubmissionForm from "@/components/source-submissions/SourceSubmissionForm";
+import ShareButtons from "@/components/shared/ShareButtons";
+import NextUsefulMove from "@/components/shared/NextUsefulMove";
+import PublicContentRulesPanel from "@/components/shared/PublicContentRulesPanel";
+import { buildOgImageUrl, buildRepWatchrMetadata } from "@/lib/repwatchr-seo";
 
 export const metadata: Metadata = {
-  title: "Submit Source",
-  description:
-    "Send RepWatchr a public source, correction, roster, vote, filing, meeting record, or missing official for review.",
+  ...buildRepWatchrMetadata({
+    title: "Submit Source | RepWatchr",
+    description:
+      "Send RepWatchr a public source, correction, roster, vote, filing, meeting record, or missing official for review.",
+    path: "/submit-source",
+    imagePath: buildOgImageUrl("source-packet"),
+    imageAlt: "RepWatchr source packet preview",
+  }),
 };
 
 export default function FeedbackPage() {
@@ -57,7 +66,29 @@ export default function FeedbackPage() {
         </div>
       </div>
 
-      <ReportButton pageUrl="/submit-source" />
+      <div className="mb-8">
+        <ShareButtons
+          title="Submit a better source to RepWatchr"
+          description="Send RepWatchr a correction, public record, filing, vote, agenda, meeting clip, or missing source for review."
+          path="/submit-source"
+          template="correction_needed"
+          subject="RepWatchr source correction form"
+          sourceLabel="public record, correction, source URL, or missing official source"
+        />
+      </div>
+
+      <div className="mb-8 grid gap-4 lg:grid-cols-[1fr_0.85fr]">
+        <NextUsefulMove
+          recordPath="/dashboard"
+          sourcePath="/submit-source"
+          packetPath="/free-packet"
+          safeShareLine="RepWatchr source submissions work best when the public URL, date, jurisdiction, and exact question stay attached."
+          meetingQuestion="What source are we missing, and who is the public custodian for that record?"
+        />
+        <PublicContentRulesPanel compact />
+      </div>
+
+      <SourceSubmissionForm defaultTargetPageUrl="/submit-source" />
 
       <div className="mt-10 rounded-xl bg-blue-50/70 border border-blue-100 p-6">
         <h2 className="text-lg font-bold text-blue-950 mb-3">
@@ -89,7 +120,7 @@ export default function FeedbackPage() {
               1
             </span>
             <span>
-              While Supabase is paused, the form creates a copyable source packet instead of writing to a database.
+              Your source enters the private review queue with a submission ID.
             </span>
           </li>
           <li className="flex gap-3">
@@ -97,7 +128,7 @@ export default function FeedbackPage() {
               2
             </span>
             <span>
-              Keep the packet with the public source URL, date, jurisdiction, and what needs to be checked.
+              You get a copyable packet for your own records.
             </span>
           </li>
           <li className="flex gap-3">
@@ -105,7 +136,7 @@ export default function FeedbackPage() {
               3
             </span>
             <span>
-              When the review queue is active again, packets can be imported into the database-backed workflow.
+              A RepWatchr admin checks the source before it is attached to a profile, race, story, or record page.
             </span>
           </li>
         </ol>

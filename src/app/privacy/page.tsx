@@ -1,9 +1,13 @@
 import type { Metadata } from "next";
+import { buildOgImageUrl, buildRepWatchrMetadata } from "@/lib/repwatchr-seo";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = buildRepWatchrMetadata({
   title: "Privacy Policy",
   description: "RepWatchr privacy policy - how we collect, use, and protect your data.",
-};
+  path: "/privacy",
+  imagePath: buildOgImageUrl("methodology"),
+  imageAlt: "RepWatchr privacy policy preview",
+});
 
 export default function PrivacyPage() {
   return (

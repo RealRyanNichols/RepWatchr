@@ -1,13 +1,25 @@
+import type { Metadata } from "next";
 import Link from "next/link";
 import { getAllOfficials, getScoreCard, getIssueCategories, getAllNews, getRedFlags, getRepWatchrDataStats, getOfficialById } from "@/lib/data";
 import { getSchoolBoardStats } from "@/lib/school-board-research";
 import OfficialCard from "@/components/officials/OfficialCard";
 import FarettaSearchBox from "@/components/shared/FarettaSearchBox";
 import OfficialPhotoImage, { FEATURED_OFFICIAL_PHOTO_QUALITY } from "@/components/shared/OfficialPhotoImage";
+import NextUsefulMove from "@/components/shared/NextUsefulMove";
 import { getRepWatchrServices } from "@/data/repwatchr-services";
+import { buildOgImageUrl, buildRepWatchrMetadata } from "@/lib/repwatchr-seo";
 import type { NewsArticle, Official } from "@/types";
 
 export const revalidate = 3600;
+
+export const metadata: Metadata = buildRepWatchrMetadata({
+  title: "RepWatchr - Public Officials on the Record",
+  description:
+    "Find public officials, school boards, votes, funding, red flags, and source-backed accountability records voters can inspect and share.",
+  path: "/",
+  imagePath: buildOgImageUrl("home"),
+  imageAlt: "RepWatchr homepage social preview",
+});
 
 const levelCards = [
   {
@@ -479,6 +491,18 @@ export default function HomePage() {
           </div>
         </div>
         <ProfileTicker officials={photoOfficials} />
+      </section>
+
+      <section className="border-b border-blue-100 bg-white">
+        <div className="mx-auto max-w-7xl px-4 py-5 sm:px-6 lg:px-8">
+          <NextUsefulMove
+            recordPath="/dashboard"
+            sourcePath="/submit-source"
+            packetPath="/free-packet"
+            safeShareLine="RepWatchr is for public records first: search the profile, check the receipt, and submit a better source when something is missing."
+            meetingQuestion="What public record supports this decision, and where can citizens inspect it before the next meeting?"
+          />
+        </div>
       </section>
 
       {/* Proof Bar */}

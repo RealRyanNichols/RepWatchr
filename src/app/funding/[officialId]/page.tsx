@@ -12,6 +12,9 @@ import TopDonorsList from "@/components/funding/TopDonorsList";
 import DonorBreakdownChart from "@/components/funding/DonorBreakdownChart";
 import GeographicBreakdown from "@/components/funding/GeographicBreakdown";
 import CampaignFinanceSourcePanel from "@/components/funding/CampaignFinanceSourcePanel";
+import ShareButtons from "@/components/shared/ShareButtons";
+import { buildOgImageUrl, buildRepWatchrMetadata } from "@/lib/repwatchr-seo";
+import { breadcrumbJsonLd, datasetJsonLd, jsonLd } from "@/lib/structured-data";
 
 export const revalidate = 86400;
 export const dynamicParams = true;
@@ -31,10 +34,13 @@ export async function generateMetadata({
   const { officialId } = await params;
   const official = getOfficialById(officialId);
   if (!official) return { title: "Not Found" };
-  return {
+  return buildRepWatchrMetadata({
     title: `Funding: ${official.name}`,
-    description: `Campaign finance data for ${official.name}, ${official.position}.`,
-  };
+    description: `Campaign finance source path and reported funding data for ${official.name}, ${official.position}.`,
+    path: `/funding/${official.id}`,
+    imagePath: buildOgImageUrl("funding", { officialId: official.id }),
+    imageAlt: `${official.name} RepWatchr funding preview`,
+  });
 }
 
 export default async function OfficialFundingPage({
@@ -58,8 +64,28 @@ export default async function OfficialFundingPage({
   }
 
   if (!funding) {
+    const breadcrumbStructuredData = breadcrumbJsonLd([
+      { name: "RepWatchr", path: "/" },
+      { name: "Funding", path: "/funding" },
+      { name: official.name, path: `/funding/${official.id}` },
+    ]);
+    const datasetStructuredData = datasetJsonLd({
+      name: `${official.name} campaign finance source path`,
+      path: `/funding/${official.id}`,
+      description: `Campaign finance source path for ${official.name}. Matched donor totals have not been loaded yet.`,
+      keywords: ["campaign finance", official.name, official.position, official.jurisdiction],
+    });
+
     return (
       <div className="mx-auto max-w-7xl px-4 py-8 sm:px-6 lg:px-8">
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: jsonLd(breadcrumbStructuredData) }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: jsonLd(datasetStructuredData) }}
+        />
         <Link href="/funding" className="text-sm font-semibold text-blue-600 hover:underline">
           Back to all funding
         </Link>
@@ -78,14 +104,43 @@ export default async function OfficialFundingPage({
               View profile
             </Link>
           </div>
+          <div className="mt-5">
+            <ShareButtons
+              title={`Funding source path: ${official.name}`}
+              description={`Campaign finance source path for ${official.name}. RepWatchr still needs matched totals before showing donor charts.`}
+              path={`/funding/${official.id}`}
+              template="missing_source"
+              subject={`${official.name} campaign finance source path`}
+            />
+          </div>
         </div>
         <CampaignFinanceSourcePanel official={official} />
       </div>
     );
   }
+  const breadcrumbStructuredData = breadcrumbJsonLd([
+    { name: "RepWatchr", path: "/" },
+    { name: "Funding", path: "/funding" },
+    { name: official.name, path: `/funding/${official.id}` },
+  ]);
+  const datasetStructuredData = datasetJsonLd({
+    name: `${official.name} campaign funding data`,
+    path: `/funding/${official.id}`,
+    description: `Reported campaign finance totals, donors, geography, and source links for ${official.name}.`,
+    keywords: ["campaign finance", "donors", official.name, funding.cycle, official.position],
+    dateModified: funding.lastUpdated,
+  });
 
   return (
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: jsonLd(breadcrumbStructuredData) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: jsonLd(datasetStructuredData) }}
+      />
       <Link href="/funding" className="text-sm text-blue-600 hover:underline">
         ← All Funding
       </Link>
@@ -104,6 +159,16 @@ export default async function OfficialFundingPage({
           <p className="text-sm text-gray-500">
             Cycle: {funding.cycle} | Last updated: {funding.lastUpdated}
           </p>
+          <div className="mt-4">
+            <ShareButtons
+              title={`Funding trail: ${official.name}`}
+              description={`Reported campaign finance totals, donors, geography, and source links for ${official.name}.`}
+              path={`/funding/${official.id}`}
+              template="funding_trail"
+              subject={`${official.name} campaign funding`}
+              sourceLabel={funding.sources[0]?.name || "campaign finance source links"}
+            />
+          </div>
         </div>
       </div>
 

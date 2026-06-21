@@ -1,9 +1,13 @@
 import type { Metadata } from "next";
+import { buildOgImageUrl, buildRepWatchrMetadata } from "@/lib/repwatchr-seo";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = buildRepWatchrMetadata({
   title: "Terms of Service",
   description: "RepWatchr terms of service - rules for using the platform.",
-};
+  path: "/terms",
+  imagePath: buildOgImageUrl("methodology"),
+  imageAlt: "RepWatchr terms of service preview",
+});
 
 export default function TermsPage() {
   return (

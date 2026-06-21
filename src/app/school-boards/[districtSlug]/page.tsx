@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import ProfilePhoto from "@/components/profile/ProfilePhoto";
+import ShareButtons from "@/components/shared/ShareButtons";
 import { getDistrictBranding } from "@/data/school-board-branding";
 import {
   getCandidateFlags,
@@ -19,6 +20,8 @@ import {
   getSchoolBoardCandidateUrl,
   getSchoolBoardDistrictUrl,
 } from "@/lib/school-board-urls";
+import { buildOgImageUrl, buildRepWatchrMetadata } from "@/lib/repwatchr-seo";
+import { breadcrumbJsonLd, datasetJsonLd, jsonLd } from "@/lib/structured-data";
 
 type DashboardMetric = {
   label: string;
@@ -49,25 +52,17 @@ export async function generateMetadata({
   const district = getSchoolBoardDistrict(getDistrictDataSlug(districtSlug));
   if (!district) return { title: "District Not Found" };
   const canonical = getSchoolBoardDistrictUrl(district);
-  const socialImage = `/api/og/school-board?type=district&district=${getDistrictUrlSlug(district.district_slug)}`;
 
-  return {
+  return buildRepWatchrMetadata({
     title: `${district.district} School Board`,
     description: `${district.district} candidate dossiers, trustee records, source links, red flags, good records, and research gaps.`,
-    alternates: { canonical },
-    openGraph: {
-      title: `${district.district} School Board`,
-      description: `${district.district} board-member profiles, district facts, source records, praise reports, and public questions.`,
-      url: canonical,
-      images: [{ url: socialImage, width: 1200, height: 630, alt: `${district.district} school board profile` }],
-    },
-    twitter: {
-      card: "summary_large_image",
-      title: `${district.district} School Board`,
-      description: `${district.district} board-member profiles and source records.`,
-      images: [socialImage],
-    },
-  };
+    path: canonical,
+    imagePath: buildOgImageUrl("school-board", {
+      type: "district",
+      district: getDistrictUrlSlug(district.district_slug),
+    }),
+    imageAlt: `${district.district} school board profile`,
+  });
 }
 
 export default async function DistrictPage({
@@ -119,9 +114,29 @@ export default async function DistrictPage({
   });
   const intelligenceNotes = buildIntelligenceNotes(district.district, sourceLinks.length, feed.length);
   const branding = getDistrictBranding(district.district_slug);
+  const districtPath = getSchoolBoardDistrictUrl(district);
+  const breadcrumbStructuredData = breadcrumbJsonLd([
+    { name: "RepWatchr", path: "/" },
+    { name: "School Boards", path: "/school-boards" },
+    { name: district.district, path: districtPath },
+  ]);
+  const datasetStructuredData = datasetJsonLd({
+    name: `${district.district} school-board public record dataset`,
+    path: districtPath,
+    description: `${district.district} trustee/candidate files, source links, district feed items, praise records, concern lanes, and research gaps.`,
+    keywords: ["school board", district.county, district.district, "public records", "RepWatchr"],
+  });
 
   return (
     <div className="rw-page-shell text-gray-950">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: jsonLd(breadcrumbStructuredData) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: jsonLd(datasetStructuredData) }}
+      />
       <section className="border-b border-blue-100" style={{ background: `linear-gradient(135deg, #ffffff 0%, ${branding.accent} 48%, #fff7ed 100%)` }}>
         <div className="mx-auto grid max-w-7xl gap-8 px-4 py-8 sm:px-6 lg:grid-cols-[1.1fr_0.9fr] lg:px-8">
           <div>
@@ -161,6 +176,16 @@ export default async function DistrictPage({
               <a href="#profiles" className="rounded-full border border-gray-300 bg-white px-4 py-2 text-sm font-black text-gray-800 shadow-sm transition hover:border-blue-400 hover:text-blue-800">
                 Board profiles
               </a>
+            </div>
+            <div className="mt-5">
+              <ShareButtons
+                title={`${district.district} School Board | RepWatchr`}
+                description={`${district.district} board-member profiles, district facts, source records, praise reports, and public questions.`}
+                path={getSchoolBoardDistrictUrl(district)}
+                template="public_question"
+                subject={`${district.district} school board records`}
+                sourceLabel={sourceLinks[0]?.title || "district rosters, agendas, election records, and public source links"}
+              />
             </div>
           </div>
 

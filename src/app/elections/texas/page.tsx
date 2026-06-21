@@ -1,43 +1,27 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import {
-  TEXAS_ELECTION_DATES,
-  getTexasElectionRaces,
-  getTexasElectionRacesByLane,
-  type TexasElectionRace,
-} from "@/data/texas-election-races";
+import { TEXAS_ELECTION_DATES, type TexasElectionRace } from "@/data/texas-election-races";
 import { getOfficialById } from "@/lib/data";
+import ShareButtons from "@/components/shared/ShareButtons";
+import { buildOgImageUrl, buildRepWatchrMetadata } from "@/lib/repwatchr-seo";
+import {
+  getTexasCountyHubs,
+  getTexasDistrictHubs,
+  getTexasRaceHubRaces,
+  type RaceHubRace,
+  type TexasCountyHub,
+  type TexasDistrictHub,
+} from "@/lib/race-hub";
 
 export const metadata: Metadata = {
-  title: "Texas Election Races 2026 | RepWatchr",
-  description:
-    "Texas-first RepWatchr election race hub for statewide races, East Texas races, state legislative races, school board watch lanes, and source-backed citizen contributions.",
-  alternates: {
-    canonical: "https://www.repwatchr.com/elections/texas",
-  },
-  openGraph: {
-    title: "Texas Election Races 2026 | RepWatchr",
-    description:
-      "The Texas-first election watchboard for big statewide races, East Texas races, officials, votes, money, source links, citizen contributions, and share-ready records.",
-    url: "https://www.repwatchr.com/elections/texas",
-    siteName: "RepWatchr",
-    type: "website",
-    images: [
-      {
-        url: "/images/repwatchr-cover-america-first.png",
-        width: 2172,
-        height: 724,
-        alt: "RepWatchr Texas Election Races",
-      },
-    ],
-  },
-  twitter: {
-    card: "summary_large_image",
+  ...buildRepWatchrMetadata({
     title: "Texas Election Races 2026 | RepWatchr",
     description:
       "Statewide Texas races, East Texas races, officials, votes, money, source links, citizen contributions, and share-ready election records.",
-    images: ["/images/repwatchr-cover-america-first.png"],
-  },
+    path: "/elections/texas",
+    imagePath: buildOgImageUrl("race"),
+    imageAlt: "RepWatchr Texas election races preview",
+  }),
 };
 
 const laneLabels: Record<TexasElectionRace["lane"], string> = {
@@ -65,12 +49,12 @@ function formatNumber(value: number) {
   return new Intl.NumberFormat("en-US").format(value);
 }
 
-function RaceCard({ race }: { race: TexasElectionRace }) {
+function RaceCard({ race }: { race: RaceHubRace }) {
   const officials = race.officialIds.map((id) => getOfficialById(id)).filter(Boolean);
 
   return (
     <Link
-      href={`/elections/texas/${race.slug}`}
+      href={race.href}
       className="group flex h-full flex-col rounded-lg border border-slate-200 bg-white p-5 shadow-sm transition hover:-translate-y-0.5 hover:border-red-300 hover:shadow-[0_18px_46px_rgba(15,23,42,0.12)]"
     >
       <div className="flex flex-wrap gap-2">
@@ -101,7 +85,9 @@ function RaceCard({ race }: { race: TexasElectionRace }) {
       ) : null}
       <div className="mt-auto border-t border-slate-100 pt-4">
         <p className="text-xs font-black uppercase tracking-wide text-slate-500">{race.region}</p>
-        <p className="mt-1 text-sm font-black text-slate-950">{race.electionDate}</p>
+        <p className="mt-1 text-sm font-black text-slate-950">
+          {race.electionDate} / {race.sourceCount} sources / {race.missingRecords.length} gaps
+        </p>
         <span className="mt-3 inline-flex text-[11px] font-black uppercase tracking-wide text-blue-800 group-hover:text-red-700">
           Open race record
         </span>
@@ -117,7 +103,7 @@ function RaceSection({
 }: {
   title: string;
   kicker: string;
-  races: TexasElectionRace[];
+  races: RaceHubRace[];
 }) {
   return (
     <section className="rounded-lg border border-slate-200 bg-white p-5 shadow-[0_14px_34px_rgba(15,23,42,0.06)]">
@@ -139,11 +125,58 @@ function RaceSection({
   );
 }
 
+function CountyCard({ county }: { county: TexasCountyHub }) {
+  return (
+    <Link
+      href={county.href}
+      className="group rounded-lg border border-slate-200 bg-white p-5 shadow-sm transition hover:-translate-y-0.5 hover:border-red-300 hover:shadow-md"
+    >
+      <div className="flex flex-wrap gap-2">
+        <span className="rounded-full bg-blue-950 px-2.5 py-1 text-[11px] font-black uppercase tracking-wide text-white">
+          {county.region}
+        </span>
+        <span className="rounded-full bg-red-50 px-2.5 py-1 text-[11px] font-black uppercase tracking-wide text-red-700">
+          {county.races.length} race lanes
+        </span>
+      </div>
+      <h3 className="mt-4 text-xl font-black leading-tight text-blue-950 group-hover:text-red-700">
+        {county.name}
+      </h3>
+      <p className="mt-2 line-clamp-3 text-sm font-semibold leading-6 text-slate-600">{county.summary}</p>
+      <p className="mt-3 text-xs font-black uppercase tracking-wide text-slate-500">
+        {county.cities.slice(0, 4).join(" / ")}
+      </p>
+    </Link>
+  );
+}
+
+function DistrictCard({ district }: { district: TexasDistrictHub }) {
+  return (
+    <Link
+      href={district.href}
+      className="group rounded-lg border border-slate-200 bg-white p-5 shadow-sm transition hover:-translate-y-0.5 hover:border-red-300 hover:shadow-md"
+    >
+      <span className="rounded-full bg-blue-50 px-2.5 py-1 text-[11px] font-black uppercase tracking-wide text-blue-900">
+        {district.districtType.replaceAll("_", " ")}
+      </span>
+      <h3 className="mt-4 text-xl font-black leading-tight text-blue-950 group-hover:text-red-700">
+        {district.name}
+      </h3>
+      <p className="mt-2 line-clamp-3 text-sm font-semibold leading-6 text-slate-600">{district.summary}</p>
+      <p className="mt-3 text-xs font-black uppercase tracking-wide text-slate-500">
+        {district.region} / {district.races.length} race page{district.races.length === 1 ? "" : "s"}
+      </p>
+    </Link>
+  );
+}
+
 export default function TexasElectionRacesPage() {
-  const races = getTexasElectionRaces();
-  const bigRaces = getTexasElectionRacesByLane("big-race");
-  const eastTexasRaces = getTexasElectionRacesByLane("east-texas");
-  const localWatch = getTexasElectionRacesByLane("local-watch");
+  const races = getTexasRaceHubRaces();
+  const bigRaces = races.filter((race) => race.lane === "big-race");
+  const eastTexasRaces = races.filter((race) => race.lane === "east-texas");
+  const localWatch = races.filter((race) => race.lane === "local-watch");
+  const countyHubs = getTexasCountyHubs();
+  const districtHubs = getTexasDistrictHubs();
 
   return (
     <div className="min-h-screen bg-[#f6f9fc]">
@@ -181,6 +214,16 @@ export default function TexasElectionRacesPage() {
                 Contribute a source
               </Link>
             </div>
+            <div className="mt-5">
+              <ShareButtons
+                title="Texas Election Races 2026 | RepWatchr"
+                description="Texas statewide races, East Texas races, officials, votes, money, source links, citizen contributions, and share-ready election records."
+                path="/elections/texas"
+                template="public_question"
+                subject="Texas election race records"
+                sourceLabel="Texas race pages, official profiles, source links, and citizen contribution queue"
+              />
+            </div>
           </div>
 
           <div className="grid content-start gap-3 rounded-xl border border-slate-200 bg-white p-4 shadow-[0_18px_48px_rgba(15,23,42,0.10)]">
@@ -190,6 +233,7 @@ export default function TexasElectionRacesPage() {
                 ["Big races", bigRaces.length],
                 ["East Texas", eastTexasRaces.length],
                 ["Local watch", localWatch.length],
+                ["County hubs", countyHubs.length],
               ].map(([label, value]) => (
                 <div key={label} className="rounded-lg border border-slate-200 bg-slate-50 p-4">
                   <p className="text-2xl font-black text-slate-950">{formatNumber(Number(value))}</p>
@@ -250,6 +294,44 @@ export default function TexasElectionRacesPage() {
             </div>
           </div>
         </section>
+        <section className="rounded-lg border border-slate-200 bg-white p-5 shadow-[0_14px_34px_rgba(15,23,42,0.06)]">
+          <div className="mb-4 flex flex-col gap-2 sm:flex-row sm:items-end sm:justify-between">
+            <div>
+              <p className="text-xs font-black uppercase tracking-[0.18em] text-red-700">Local SEO hubs</p>
+              <h2 className="mt-1 text-2xl font-black leading-tight text-blue-950">
+                East Texas county race hubs
+              </h2>
+            </div>
+            <span className="rounded-full bg-slate-100 px-3 py-1 text-xs font-black text-slate-700">
+              {formatNumber(countyHubs.length)} counties
+            </span>
+          </div>
+          <div className="grid gap-4 md:grid-cols-2 xl:grid-cols-4">
+            {countyHubs.map((county) => (
+              <CountyCard key={county.slug} county={county} />
+            ))}
+          </div>
+        </section>
+
+        <section className="rounded-lg border border-slate-200 bg-white p-5 shadow-[0_14px_34px_rgba(15,23,42,0.06)]">
+          <div className="mb-4 flex flex-col gap-2 sm:flex-row sm:items-end sm:justify-between">
+            <div>
+              <p className="text-xs font-black uppercase tracking-[0.18em] text-red-700">District routes</p>
+              <h2 className="mt-1 text-2xl font-black leading-tight text-blue-950">
+                Congressional, Senate, House, and school-board hubs
+              </h2>
+            </div>
+            <span className="rounded-full bg-slate-100 px-3 py-1 text-xs font-black text-slate-700">
+              {formatNumber(districtHubs.length)} districts
+            </span>
+          </div>
+          <div className="grid gap-4 md:grid-cols-2 xl:grid-cols-4">
+            {districtHubs.map((district) => (
+              <DistrictCard key={district.slug} district={district} />
+            ))}
+          </div>
+        </section>
+
         <RaceSection kicker="Statewide attention" title="Big Texas races to watch first" races={bigRaces} />
         <RaceSection kicker="East Texas" title="East Texas congressional and state races" races={eastTexasRaces} />
         <RaceSection kicker="Local power" title="School board and local election lanes" races={localWatch} />

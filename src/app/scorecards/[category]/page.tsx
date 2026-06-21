@@ -4,6 +4,8 @@ import { getAllOfficials, getAllScoreCards, getIssueCategories } from "@/lib/dat
 import LetterGradeBadge from "@/components/scores/LetterGradeBadge";
 import PartyBadge from "@/components/officials/PartyBadge";
 import { calculateLetterGrade } from "@/lib/scoring";
+import { buildOgImageUrl, buildRepWatchrMetadata } from "@/lib/repwatchr-seo";
+import { breadcrumbJsonLd, datasetJsonLd, jsonLd } from "@/lib/structured-data";
 
 const categoryKeyMap: Record<string, string> = {
   "water-rights": "waterRights",
@@ -25,10 +27,13 @@ export async function generateMetadata({
   const { category } = await params;
   const categories = getIssueCategories();
   const cat = categories.find((c) => c.id === category);
-  return {
+  return buildRepWatchrMetadata({
     title: cat ? `${cat.name} Scorecard` : "Category Scorecard",
-    description: cat?.description,
-  };
+    description: cat?.description ?? "RepWatchr source-backed scorecard category.",
+    path: `/scorecards/${category}`,
+    imagePath: buildOgImageUrl("methodology"),
+    imageAlt: `${cat?.name ?? "Category"} RepWatchr scorecard preview`,
+  });
 }
 
 export default async function CategoryScorecardPage({
@@ -65,9 +70,28 @@ export default async function CategoryScorecardPage({
     })
     .filter(Boolean)
     .sort((a, b) => b!.catScore.score - a!.catScore.score);
+  const breadcrumbStructuredData = breadcrumbJsonLd([
+    { name: "RepWatchr", path: "/" },
+    { name: "Scorecards", path: "/scorecards" },
+    { name: issueCat.name, path: `/scorecards/${issueCat.id}` },
+  ]);
+  const datasetStructuredData = datasetJsonLd({
+    name: `${issueCat.name} scorecard`,
+    path: `/scorecards/${issueCat.id}`,
+    description: issueCat.description,
+    keywords: ["scorecard", issueCat.name, "official voting record", "RepWatchr"],
+  });
 
   return (
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: jsonLd(breadcrumbStructuredData) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: jsonLd(datasetStructuredData) }}
+      />
       <div className="mb-8">
         <Link
           href="/scorecards"

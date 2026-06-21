@@ -3,7 +3,7 @@
 import { useEffect, useMemo, useState, type FormEvent, type ReactNode } from "react";
 import Link from "next/link";
 import { useAuth } from "@/components/auth/AuthProvider";
-import { createClient, isTexasElectionDbSubmissionsEnabled } from "@/lib/supabase";
+import { createClient } from "@/lib/supabase";
 import type { SuperAdminSnapshot, SuperAdminWatchItem } from "@/lib/superadmin-data";
 
 type TabId = "overview" | "watch" | "cases" | "intake" | "questions" | "decisions" | "analytics";
@@ -142,7 +142,7 @@ const previewLiveCounts: LiveCount[] = [
   { label: "Profile activation requests", table: "profile_claims", count: 7, status: "yellow", detail: "24 total profile_claims rows, pending shown here." },
   { label: "Operator invites", table: "repw_operator_invites", count: 1, status: "green", detail: "Owner and operator role bootstrap invitations." },
   { label: "Accountability cases", table: "accountability_cases", count: 18, status: "yellow", detail: "Case-builder and Faretta.Legal intake rows." },
-  { label: "Texas election sources", table: "texas_election_contributions", count: 0, status: "green", detail: "Live review queue for source-backed Texas race contributions." },
+  { label: "Source submissions", table: "source_submissions", count: 0, status: "green", detail: "Unified review queue for source-backed records, corrections, and Texas race contributions." },
   { label: "Faretta form submissions", table: "faretta_case_submissions", count: 6, status: "yellow", detail: "Cases received from Faretta.Legal intake." },
   { label: "Profile questions", table: "profile_questions", count: 31, status: "yellow", detail: "Questions attached to target profiles." },
   { label: "Open office tasks", table: "operator_tasks", count: 14, status: "yellow", detail: "Ryan-facing to-dos tracked inside the office." },
@@ -150,8 +150,6 @@ const previewLiveCounts: LiveCount[] = [
   { label: "RepWatchr page views", table: "site_page_views", count: 3487, status: "green", detail: "Owned public-page views collected without storing raw IPs or raw user agents." },
   { label: "Unique daily visitors", table: "site_unique_daily_visitors", count: 1194, status: "green", detail: "Distinct daily anonymous visitor hashes from the owned tracker." },
 ];
-
-const texasElectionDbSubmissionsEnabled = isTexasElectionDbSubmissionsEnabled;
 
 const previewCases: RecentCase[] = [
   {
@@ -365,7 +363,7 @@ export default function SuperAdminOfficeClient({
         pendingClaims,
         operatorInvites,
         cases,
-        texasContributions,
+        sourceSubmissions,
         farettaCases,
         questions,
         openTasks,
@@ -384,9 +382,7 @@ export default function SuperAdminOfficeClient({
         countRows(supabase, "profile_claims", { column: "status", value: "pending" }),
         countRows(supabase, "repw_operator_invites"),
         countRows(supabase, "accountability_cases"),
-        texasElectionDbSubmissionsEnabled
-          ? countRows(supabase, "texas_election_contributions")
-          : Promise.resolve({ count: null, error: null }),
+        countRows(supabase, "source_submissions"),
         countRows(supabase, "accountability_cases", { column: "source_site", value: "faretta_legal" }),
         countRows(supabase, "profile_questions"),
         countRows(supabase, "operator_tasks", { column: "status", value: "open" }),
@@ -411,19 +407,11 @@ export default function SuperAdminOfficeClient({
         { label: "Operator invites", table: "repw_operator_invites", count: operatorInvites.count, status: operatorInvites.count === null ? "red" : operatorInvites.count > 0 ? "green" : "yellow", detail: operatorInvites.error || "Owner and operator role bootstrap invitations." },
         { label: "Accountability cases", table: "accountability_cases", count: cases.count, status: cases.count === null ? "red" : cases.count > 0 ? "yellow" : "green", detail: cases.error || "Case-builder and Faretta.Legal intake rows." },
         {
-          label: "Texas election sources",
-          table: "texas_election_contributions",
-          count: texasContributions.count,
-          status: texasElectionDbSubmissionsEnabled
-            ? texasContributions.count === null
-              ? "red"
-              : texasContributions.count > 0
-                ? "yellow"
-                : "green"
-            : "yellow",
-          detail: texasElectionDbSubmissionsEnabled
-            ? texasContributions.error || "Source-backed Texas race contributions waiting for review."
-            : "Packet mode because Supabase env vars are missing or the Texas election kill switch is set to false.",
+          label: "Source submissions",
+          table: "source_submissions",
+          count: sourceSubmissions.count,
+          status: sourceSubmissions.count === null ? "red" : sourceSubmissions.count > 0 ? "yellow" : "green",
+          detail: sourceSubmissions.error || "Unified review queue for source-backed records, corrections, and Texas race contributions.",
         },
         { label: "Faretta form submissions", table: "faretta_case_submissions", count: farettaCases.count, status: farettaCases.count === null ? "red" : farettaCases.count > 0 ? "yellow" : "green", detail: farettaCases.error || "Cases received from Faretta.Legal intake." },
         { label: "Profile questions", table: "profile_questions", count: questions.count, status: questions.count === null ? "red" : questions.count > 0 ? "yellow" : "green", detail: questions.error || "Questions attached to target profiles." },

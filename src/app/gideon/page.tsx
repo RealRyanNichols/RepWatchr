@@ -5,6 +5,10 @@ export const metadata: Metadata = {
   title: "Faretta AI | RepWatchr",
   description:
     "Ask Faretta AI to search RepWatchr, find officials, collect research facts, and shape the next public-record question.",
+  robots: {
+    index: false,
+    follow: false,
+  },
 };
 
 export default async function LegacyAIPage({

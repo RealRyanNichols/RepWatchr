@@ -2,7 +2,13 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { getAllNews, getNewsById, getOfficialById } from "@/lib/data";
 import CopySnippetButton from "@/components/shared/CopySnippetButton";
+import RouteEventTracker from "@/components/shared/RouteEventTracker";
 import ShareButtons from "@/components/shared/ShareButtons";
+import ReportButton from "@/components/shared/ReportButton";
+import NextUsefulMove from "@/components/shared/NextUsefulMove";
+import TrustLabel from "@/components/shared/TrustLabel";
+import { buildOgImageUrl, buildRepWatchrMetadata } from "@/lib/repwatchr-seo";
+import { breadcrumbJsonLd, jsonLd, newsArticleJsonLd } from "@/lib/structured-data";
 
 export async function generateStaticParams() {
   const articles = getAllNews();
@@ -17,39 +23,16 @@ export async function generateMetadata({
   const { id } = await params;
   const article = getNewsById(id);
   if (!article) return { title: "Article Not Found" };
-  const canonicalUrl = `https://www.repwatchr.com/news/${article.id}`;
-  const ogImage = `/api/og/news?id=${encodeURIComponent(article.id)}`;
-
-  return {
+  return buildRepWatchrMetadata({
     title: article.title,
     description: article.summary,
-    alternates: {
-      canonical: canonicalUrl,
-    },
-    openGraph: {
-      title: article.title,
-      description: article.summary,
-      url: canonicalUrl,
-      siteName: "RepWatchr",
-      type: "article",
-      publishedTime: article.publishedAt,
-      authors: [article.author],
-      images: [
-        {
-          url: ogImage,
-          width: 1200,
-          height: 630,
-          alt: article.title,
-        },
-      ],
-    },
-    twitter: {
-      card: "summary_large_image",
-      title: article.title,
-      description: article.summary,
-      images: [ogImage],
-    },
-  };
+    path: `/news/${article.id}`,
+    imagePath: buildOgImageUrl("news", { id: article.id }),
+    imageAlt: `${article.title} RepWatchr story preview`,
+    type: "article",
+    publishedTime: article.publishedAt,
+    authors: [article.author],
+  });
 }
 
 const tagColors: Record<string, string> = {
@@ -127,51 +110,41 @@ export default async function NewsArticlePage({
     .map((officialId) => getOfficialById(officialId))
     .filter(Boolean);
   const postSnippet = articlePostSnippet(article);
-  const articleStructuredData = {
-    "@context": "https://schema.org",
-    "@type": "Article",
+  const sourceStructuredLinks = article.sourceLinks?.length
+    ? article.sourceLinks
+    : article.sourceUrl
+      ? [{ title: article.sourceName ?? "Public source", url: article.sourceUrl }]
+      : undefined;
+  const articleStructuredData = newsArticleJsonLd({
     headline: article.title,
     description: article.summary,
+    path: `/news/${article.id}`,
     datePublished: article.publishedAt,
-    author: {
-      "@type": "Organization",
-      name: article.author,
-    },
-    publisher: {
-      "@type": "Organization",
-      name: "RepWatchr",
-      logo: {
-        "@type": "ImageObject",
-        url: "https://www.repwatchr.com/images/repwatchr-logo-america-first.png",
-      },
-    },
-    mainEntityOfPage: `https://www.repwatchr.com/news/${article.id}`,
-    isBasedOn: article.sourceLinks?.length
-      ? article.sourceLinks.map((source) => ({
-          "@type": "CreativeWork",
-          name: source.title,
-          url: source.url,
-        }))
-      : article.sourceUrl
-        ? {
-            "@type": "CreativeWork",
-            name: article.sourceName ?? "Public source",
-            url: article.sourceUrl,
-          }
-        : undefined,
+    authorName: article.author,
+    image: buildOgImageUrl("news", { id: article.id }),
+    sourceLinks: sourceStructuredLinks,
     about: linkedOfficials.map((official) => ({
-      "@type": "Person",
       name: official!.name,
-      url: `https://www.repwatchr.com/officials/${official!.id}`,
+      path: `/officials/${official!.id}`,
       jobTitle: official!.position,
     })),
-  };
+  });
+  const breadcrumbStructuredData = breadcrumbJsonLd([
+    { name: "RepWatchr", path: "/" },
+    { name: "News", path: "/news" },
+    { name: article.title, path: `/news/${article.id}` },
+  ]);
 
   return (
     <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
+      <RouteEventTracker eventName="article_open" metadata={{ article_id: article.id, source_status: article.sourceStatus }} />
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(articleStructuredData) }}
+        dangerouslySetInnerHTML={{ __html: jsonLd(articleStructuredData) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: jsonLd(breadcrumbStructuredData) }}
       />
       <Link
         href="/news"
@@ -252,12 +225,12 @@ export default async function NewsArticlePage({
         {article.sourceStatus === "source_linked" ? (
           <>
             <span>&middot;</span>
-            <span className="font-bold text-emerald-700">Source linked</span>
+            <TrustLabel id="confirmed_public_record" />
           </>
         ) : !article.sourceUrl ? (
           <>
             <span>&middot;</span>
-            <span className="font-bold text-red-700">Needs source review</span>
+            <TrustLabel id="needs_source" />
           </>
         ) : null}
       </div>
@@ -288,6 +261,24 @@ export default async function NewsArticlePage({
           title={article.title}
           description={article.summary}
           path={`/news/${article.id}`}
+          template={article.sourceStatus === "needs_source_review" ? "missing_source" : "confirmed_record"}
+          subject={article.title}
+          sourceLabel={article.sourceName || article.sourceLinks?.[0]?.title || "linked public sources"}
+        />
+      </div>
+
+      <div className="mt-4 grid gap-3 lg:grid-cols-[1fr_auto] lg:items-start">
+        <NextUsefulMove
+          recordPath={`/dashboard?watch=${encodeURIComponent(`/news/${article.id}`)}&target=${encodeURIComponent(article.title)}`}
+          sourcePath={`/submit-source?target=${encodeURIComponent(article.id)}`}
+          packetPath={`/free-packet?target=${encodeURIComponent(article.title)}`}
+          safeShareLine={`RepWatchr story: ${article.title}. Read the receipt and source status before sharing a stronger claim.`}
+          meetingQuestion="What public source confirms this story, and what record is still missing?"
+        />
+        <ReportButton
+          pageUrl={`/news/${article.id}`}
+          targetLabel={article.title}
+          jurisdiction={article.locationLabel || article.state || article.scope}
         />
       </div>
 
@@ -394,6 +385,26 @@ export default async function NewsArticlePage({
           </div>
         </div>
       )}
+
+      <section className="mt-10 rounded-xl border border-blue-100 bg-blue-50 p-6">
+        <h2 className="text-sm font-bold uppercase tracking-wider text-blue-900">
+          Open connected records
+        </h2>
+        <div className="mt-4 grid gap-3 sm:grid-cols-2">
+          <Link href="/news" className="rounded-lg border border-blue-200 bg-white px-4 py-3 text-sm font-black text-blue-800 transition hover:border-red-300 hover:text-red-700">
+            More RepWatchr stories
+          </Link>
+          <Link href="/submit-source" className="rounded-lg border border-blue-200 bg-white px-4 py-3 text-sm font-black text-blue-800 transition hover:border-red-300 hover:text-red-700">
+            Submit a better source
+          </Link>
+          <Link href="/methodology" className="rounded-lg border border-blue-200 bg-white px-4 py-3 text-sm font-black text-blue-800 transition hover:border-red-300 hover:text-red-700">
+            Review the source rules
+          </Link>
+          <Link href="/funding" className="rounded-lg border border-blue-200 bg-white px-4 py-3 text-sm font-black text-blue-800 transition hover:border-red-300 hover:text-red-700">
+            Check funding trails
+          </Link>
+        </div>
+      </section>
     </div>
   );
 }

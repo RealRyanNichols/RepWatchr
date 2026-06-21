@@ -249,6 +249,16 @@ export function getRedFlags(officialId: string): RedFlag[] {
   return flags;
 }
 
+export function getAllRedFlagRecords() {
+  return getAllOfficials().flatMap((official) =>
+    getRedFlags(official.id).map((flag) => ({ official, flag })),
+  );
+}
+
+export function getRedFlagRecordById(id: string) {
+  return getAllRedFlagRecords().find(({ flag }) => flag.id === id);
+}
+
 // ---------------------------------------------------------------------------
 // Bills / Votes
 // ---------------------------------------------------------------------------

@@ -1,13 +1,36 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { getAllOfficials, getRedFlags } from "@/lib/data";
+import { getAllOfficials, getRedFlagRecordById, getRedFlags } from "@/lib/data";
 import RedFlagCard from "@/components/shared/RedFlagCard";
+import { buildOgImageUrl, buildRepWatchrMetadata } from "@/lib/repwatchr-seo";
+import NextUsefulMove from "@/components/shared/NextUsefulMove";
+import PublicContentRulesPanel from "@/components/shared/PublicContentRulesPanel";
 
-export const metadata: Metadata = {
-  title: "Red Flags",
-  description:
-    "Conflicts of interest, broken promises, and accountability issues Texas voters should know about.",
-};
+function firstParam(value: string | string[] | undefined) {
+  return Array.isArray(value) ? value[0] : value;
+}
+
+export async function generateMetadata({
+  searchParams,
+}: {
+  searchParams?: Promise<Record<string, string | string[] | undefined>>;
+}): Promise<Metadata> {
+  const params = searchParams ? await searchParams : {};
+  const flagId = firstParam(params.flag);
+  const record = flagId ? getRedFlagRecordById(flagId) : undefined;
+  const title = record ? `${record.flag.title} | RepWatchr Red Flag` : "Red Flags | RepWatchr";
+  const description =
+    record?.flag.whyItMatters ??
+    "Conflicts of interest, broken promises, public-record questions, and accountability issues voters should inspect with source links attached.";
+
+  return buildRepWatchrMetadata({
+    title,
+    description,
+    path: record ? `/red-flags?flag=${record.flag.id}` : "/red-flags",
+    imagePath: buildOgImageUrl("red-flag", { id: record?.flag.id }),
+    imageAlt: record ? `${record.flag.title} RepWatchr red flag preview` : "RepWatchr red flags preview",
+  });
+}
 
 export default function RedFlagsPage() {
   const officials = getAllOfficials();
@@ -30,11 +53,19 @@ export default function RedFlagsPage() {
       <div className="mb-8">
         <h1 className="text-3xl font-bold text-gray-900">Red Flags</h1>
         <p className="mt-2 text-gray-600 max-w-2xl">
-          Issues that Texas voters should know about -- conflicts of
-          interest, broken campaign promises, ethics complaints, suspicious
-          funding connections, and controversial votes that may have flown under
-          the radar.
+          Public-record questions, sourced concerns, vote records, funding trails,
+          and correction requests that voters can inspect with the receipt attached.
         </p>
+      </div>
+
+      <div className="mb-8 grid gap-4 lg:grid-cols-[1fr_0.9fr]">
+        <NextUsefulMove
+          recordPath="/red-flags"
+          sourcePath="/submit-source?target=red-flag"
+          safeShareLine="RepWatchr red flags are public-record review items. Check the receipt, ask the public question, and submit a better source if one is missing."
+          meetingQuestion="What public source supports this concern, and has the official or public body answered it on the record?"
+        />
+        <PublicContentRulesPanel compact />
       </div>
 
       {/* Summary */}
@@ -76,7 +107,12 @@ export default function RedFlagsPage() {
                     {official.name} - {official.position}
                   </Link>
                 </div>
-                <RedFlagCard flag={flag} />
+                <RedFlagCard
+                  flag={flag}
+                  officialName={official.name}
+                  jurisdiction={official.jurisdiction}
+                  sharePath={`/red-flags?flag=${encodeURIComponent(flag.id)}#red-flag-${flag.id}`}
+                />
               </div>
             ))}
           </div>
@@ -98,7 +134,12 @@ export default function RedFlagsPage() {
                     {official.name} - {official.position}
                   </Link>
                 </div>
-                <RedFlagCard flag={flag} />
+                <RedFlagCard
+                  flag={flag}
+                  officialName={official.name}
+                  jurisdiction={official.jurisdiction}
+                  sharePath={`/red-flags?flag=${encodeURIComponent(flag.id)}#red-flag-${flag.id}`}
+                />
               </div>
             ))}
           </div>
@@ -117,10 +158,9 @@ export default function RedFlagsPage() {
       <div className="mt-8 bg-gray-50 rounded-lg p-5 text-sm text-gray-600">
         <p className="font-medium text-gray-900 mb-1">About Red Flags</p>
         <p>
-          All red flags are sourced from public records, news reports, and
-          official filings. Each flag includes a source link for verification.
-          We document these to ensure voters have the information they need to
-          make informed decisions.
+          Public red flags must stay tied to public records, named publications,
+          official filings, vote records, meeting records, or correction review.
+          If a source is missing or weak, the item should be marked for review instead of amplified as a finding.
         </p>
       </div>
     </div>

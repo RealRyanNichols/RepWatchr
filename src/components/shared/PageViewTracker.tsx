@@ -2,6 +2,7 @@
 
 import { useEffect } from "react";
 import { usePathname } from "next/navigation";
+import { trackRepWatchrEvent } from "@/lib/client-analytics";
 
 const excludedPrefixes = ["/admin", "/api", "/auth", "/dashboard", "/login", "/create-account"];
 
@@ -41,6 +42,7 @@ export default function PageViewTracker() {
     });
 
     window.setTimeout(() => {
+      trackRepWatchrEvent("page_view", { path: pathname, referrer_host: getReferrerHost() });
       fetch("/api/analytics/page-view", {
         method: "POST",
         headers: { "Content-Type": "application/json" },

@@ -4,6 +4,7 @@ import { useMemo, useState } from "react";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { createClient } from "@/lib/supabase";
+import { trackRepWatchrEvent } from "@/lib/client-analytics";
 
 const signupTools = [
   "Watch list for officials, boards, races, attorneys, media, and issues",
@@ -37,6 +38,7 @@ export default function SignUpPage() {
     }
 
     setLoading(true);
+    trackRepWatchrEvent("signup_started", { source: "auth_signup" });
 
     try {
       const normalizedEmail = email.trim().toLowerCase();
@@ -64,11 +66,13 @@ export default function SignUpPage() {
           },
           { onConflict: "user_id" }
         );
+        trackRepWatchrEvent("signup_completed", { confirmation_required: false });
         router.replace("/dashboard");
         router.refresh();
         return;
       }
 
+      trackRepWatchrEvent("signup_completed", { confirmation_required: true });
       setSuccess(true);
       setLoading(false);
     } catch (signupError) {

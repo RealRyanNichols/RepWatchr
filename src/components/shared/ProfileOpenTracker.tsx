@@ -2,6 +2,7 @@
 
 import { useEffect } from "react";
 import { track } from "@vercel/analytics";
+import { trackRepWatchrEvent } from "@/lib/client-analytics";
 
 interface ProfileOpenTrackerProps {
   profileId: string;
@@ -29,6 +30,7 @@ export default function ProfileOpenTracker({
     if (level) properties.level = level;
 
     track("profile_open", properties);
+    trackRepWatchrEvent("profile_open", properties);
   }, [districtSlug, level, path, profileId, profileType]);
 
   return null;

@@ -5,6 +5,7 @@ import { useSearchParams } from "next/navigation";
 import { track } from "@vercel/analytics";
 import type { GovernmentLevel, Official, Party, ScoreCard } from "@/types";
 import OfficialCard from "@/components/officials/OfficialCard";
+import { trackRepWatchrEvent } from "@/lib/client-analytics";
 
 const levelOptions: { value: GovernmentLevel | "all"; label: string }[] = [
   { value: "federal", label: "Federal" },
@@ -129,6 +130,12 @@ export default function OfficialGrid({
       level: levelFilter,
       visible_count: String(filtered.length),
     });
+    trackRepWatchrEvent("filter_used", {
+      filter,
+      value,
+      level: levelFilter,
+      visible_count: filtered.length,
+    });
   }
 
   function changeLevel(value: GovernmentLevel | "all") {
@@ -137,6 +144,7 @@ export default function OfficialGrid({
     setJurisdictionFilter("all");
     setDistrictFilter("all");
     track("official_button_click", { action: "level_select", value });
+    trackRepWatchrEvent("filter_used", { filter: "level", value });
   }
 
   function resetFilters() {
@@ -156,6 +164,11 @@ export default function OfficialGrid({
       query: value,
       level: levelFilter,
       visible_count: String(filtered.length),
+    });
+    trackRepWatchrEvent("official_search", {
+      query: value,
+      level: levelFilter,
+      visible_count: filtered.length,
     });
   }
 

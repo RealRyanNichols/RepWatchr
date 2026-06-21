@@ -1,19 +1,42 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { getIssueCategories, getAllBills } from "@/lib/data";
+import { buildOgImageUrl, buildRepWatchrMetadata } from "@/lib/repwatchr-seo";
+import { breadcrumbJsonLd, datasetJsonLd, jsonLd } from "@/lib/structured-data";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = buildRepWatchrMetadata({
   title: "Texas Issues",
   description:
     "The issues we track: water rights, land rights, taxes, government transparency, and voting records.",
-};
+  path: "/issues",
+  imagePath: buildOgImageUrl("methodology"),
+  imageAlt: "RepWatchr issue tracker preview",
+});
 
 export default function IssuesPage() {
   const categories = getIssueCategories();
   const bills = getAllBills();
+  const breadcrumbStructuredData = breadcrumbJsonLd([
+    { name: "RepWatchr", path: "/" },
+    { name: "Issues", path: "/issues" },
+  ]);
+  const datasetStructuredData = datasetJsonLd({
+    name: "RepWatchr tracked issues",
+    path: "/issues",
+    description: "The issues RepWatchr tracks: water rights, property rights, taxes, transparency, and voting records.",
+    keywords: categories.map((category) => category.name),
+  });
 
   return (
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: jsonLd(breadcrumbStructuredData) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: jsonLd(datasetStructuredData) }}
+      />
       <div className="mb-8">
         <h1 className="text-3xl font-bold text-gray-900">
           Texas Issues

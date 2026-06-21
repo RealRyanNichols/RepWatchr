@@ -6,38 +6,18 @@ import {
   type SeoTopicCluster,
 } from "@/data/seo-content-plan";
 import { getAllNews } from "@/lib/data";
+import { buildOgImageUrl, buildRepWatchrMetadata } from "@/lib/repwatchr-seo";
 import type { NewsArticle, NewsPowerChannel, NewsScope } from "@/types";
 
 export const metadata: Metadata = {
-  title: "RepWatchr Blog | Texas Election Records and Accountability",
-  description:
-    "Source-backed RepWatchr articles on Texas elections, East Texas officials, school boards, campaign finance, public records, and accountability stories.",
-  alternates: {
-    canonical: "https://www.repwatchr.com/blog",
-  },
-  openGraph: {
-    title: "RepWatchr Blog | Texas Election Records and Accountability",
-    description:
-      "Public-record stories, source packets, election guides, official profiles, and share-ready accountability articles.",
-    url: "https://www.repwatchr.com/blog",
-    siteName: "RepWatchr",
-    type: "website",
-    images: [
-      {
-        url: "/images/repwatchr-cover-america-first.png",
-        width: 2172,
-        height: 724,
-        alt: "RepWatchr blog",
-      },
-    ],
-  },
-  twitter: {
-    card: "summary_large_image",
+  ...buildRepWatchrMetadata({
     title: "RepWatchr Blog | Texas Election Records and Accountability",
     description:
       "Source-backed articles for Texas elections, East Texas officials, school boards, public records, and public accountability.",
-    images: ["/images/repwatchr-cover-america-first.png"],
-  },
+    path: "/blog",
+    imagePath: buildOgImageUrl("news"),
+    imageAlt: "RepWatchr blog social preview",
+  }),
 };
 
 const scopeLabels: Record<NewsScope, string> = {

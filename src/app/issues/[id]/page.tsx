@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { getIssueCategories, getAllOfficials, getScoreCard } from "@/lib/data";
 import LetterGradeBadge from "@/components/scores/LetterGradeBadge";
+import { buildOgImageUrl, buildRepWatchrMetadata } from "@/lib/repwatchr-seo";
+import { breadcrumbJsonLd, datasetJsonLd, jsonLd } from "@/lib/structured-data";
 
 const issueDetails: Record<string, { fullDescription: string; whyItMatters: string[]; keyQuestions: string[] }> = {
   "water-rights": {
@@ -100,10 +102,13 @@ export async function generateMetadata({
   const categories = getIssueCategories();
   const category = categories.find((c) => c.id === id);
   if (!category) return { title: "Issue Not Found" };
-  return {
+  return buildRepWatchrMetadata({
     title: `${category.name} - Texas Issues`,
     description: `How Texas elected officials score on ${category.name.toLowerCase()}. Scorecards, voting records, and accountability.`,
-  };
+    path: `/issues/${category.id}`,
+    imagePath: buildOgImageUrl("methodology"),
+    imageAlt: `${category.name} RepWatchr issue preview`,
+  });
 }
 
 export default async function IssueDetailPage({
@@ -147,9 +152,28 @@ export default async function IssueDetailPage({
     })
     .filter(Boolean)
     .sort((a, b) => b!.score - a!.score);
+  const breadcrumbStructuredData = breadcrumbJsonLd([
+    { name: "RepWatchr", path: "/" },
+    { name: "Issues", path: "/issues" },
+    { name: category.name, path: `/issues/${category.id}` },
+  ]);
+  const datasetStructuredData = datasetJsonLd({
+    name: `${category.name} issue score data`,
+    path: `/issues/${category.id}`,
+    description: category.description,
+    keywords: ["issue scorecard", category.name, "voting record", "public officials"],
+  });
 
   return (
     <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: jsonLd(breadcrumbStructuredData) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: jsonLd(datasetStructuredData) }}
+      />
       <Link
         href="/issues"
         className="inline-flex items-center gap-1 text-sm text-gray-500 hover:text-gray-900 mb-6"

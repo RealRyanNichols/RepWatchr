@@ -7,12 +7,16 @@ import { mediaWatchImportPlan } from "@/data/media-watch";
 import { getAllNationalJurisdictions } from "@/data/national-buildout";
 import { getMediaWatchProfiles, getPowerWatchStats } from "@/lib/power-watch";
 import { countByState, getSelectedStateCode } from "@/lib/state-scope";
+import { buildOgImageUrl, buildRepWatchrMetadata } from "@/lib/repwatchr-seo";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = buildRepWatchrMetadata({
   title: "National Media Watch | RepWatchr",
   description:
     "Choose a state to track media companies, editors, reporters, newsroom leadership, bylines, corrections, and official coverage with source-backed public profiles.",
-};
+  path: "/media",
+  imagePath: buildOgImageUrl("home"),
+  imageAlt: "RepWatchr media watch preview",
+});
 
 function StatCard({ label, value, detail }: { label: string; value: string | number; detail: string }) {
   return (

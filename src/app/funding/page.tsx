@@ -3,15 +3,22 @@ import Link from "next/link";
 import { getAllOfficials, getFundingSummary } from "@/lib/data";
 import { formatCurrency } from "@/lib/formatting";
 import PartyBadge from "@/components/officials/PartyBadge";
+import ShareButtons from "@/components/shared/ShareButtons";
 import {
   getCampaignFinanceSourcePath,
   hasCampaignFinanceSourcePath,
 } from "@/lib/campaign-finance-sources";
+import { buildOgImageUrl, buildRepWatchrMetadata } from "@/lib/repwatchr-seo";
 
 export const metadata: Metadata = {
-  title: "Campaign Funding",
-  description:
-    "Follow the money. See who funds Texas elected officials and where their campaign dollars come from.",
+  ...buildRepWatchrMetadata({
+    title: "Campaign Funding | RepWatchr",
+    description:
+      "Follow reported campaign money, donor categories, geography, source paths, and missing finance records.",
+    path: "/funding",
+    imagePath: buildOgImageUrl("funding"),
+    imageAlt: "RepWatchr campaign funding social preview",
+  }),
 };
 
 export default function FundingPage() {
@@ -41,6 +48,15 @@ export default function FundingPage() {
           Follow the money. See who is funding your Texas elected officials
           and where their campaign dollars come from.
         </p>
+        <div className="mt-4">
+          <ShareButtons
+            title="RepWatchr Campaign Funding"
+            description="Follow reported campaign money, donor categories, geography, source paths, and missing finance records."
+            path="/funding"
+            template="funding_trail"
+            subject="RepWatchr campaign funding records"
+          />
+        </div>
       </div>
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">

@@ -5,6 +5,7 @@ import LiveEngagementCounter from "@/components/school-board/LiveEngagementCount
 import DrillDownPicker from "@/components/school-board/DrillDownPicker";
 import ShareButtons from "@/components/shared/ShareButtons";
 import NationalSpotlightSelector from "@/components/shared/NationalSpotlightSelector";
+import NextUsefulMove from "@/components/shared/NextUsefulMove";
 import { buildPickerStates } from "@/lib/picker-data";
 import {
   getCandidateFlags,
@@ -18,11 +19,17 @@ import {
 import { getSchoolBoardCandidateUrl, getSchoolBoardDistrictUrl } from "@/lib/school-board-urls";
 import { getAllNationalJurisdictions } from "@/data/national-buildout";
 import { getSelectedStateCode } from "@/lib/state-scope";
+import { buildOgImageUrl, buildRepWatchrMetadata } from "@/lib/repwatchr-seo";
 
 export const metadata: Metadata = {
-  title: "National School Board Watch",
-  description:
-    "Choose a state to find school-board trustees. Texas is source-seeded first, with national state-by-state school-board buildout queued.",
+  ...buildRepWatchrMetadata({
+    title: "National School Board Watch | RepWatchr",
+    description:
+      "Choose a state to find school-board trustees. Texas is source-seeded first, with national state-by-state school-board buildout queued.",
+    path: "/school-boards",
+    imagePath: buildOgImageUrl("school-board"),
+    imageAlt: "RepWatchr school board watch social preview",
+  }),
 };
 
 export default async function SchoolBoardsPage({
@@ -175,6 +182,9 @@ export default async function SchoolBoardsPage({
                   title="RepWatchr School Board Watch"
                   description={sharedShareLine}
                   path="/school-boards"
+                  template="public_question"
+                  subject="school board source records"
+                  sourceLabel="district rosters, agendas, election records, and public source links"
                 />
               </div>
               <DrillDownPicker states={pickerStates} compact />
@@ -216,6 +226,15 @@ export default async function SchoolBoardsPage({
 
       <section id="election-update" className="border-b border-amber-200 bg-amber-50 scroll-mt-28">
         <div className="mx-auto max-w-7xl px-4 py-8 sm:px-6 lg:px-8">
+          <div className="mb-6">
+            <NextUsefulMove
+              recordPath="/dashboard"
+              sourcePath="/submit-source?target=school-board"
+              packetPath="/free-packet?target=school-board"
+              safeShareLine="RepWatchr school-board records should stay tied to agendas, minutes, meeting video, trustee rosters, and election sources."
+              meetingQuestion="Which agenda item, vote record, meeting video, or board packet supports this school-board claim?"
+            />
+          </div>
           <div className="grid gap-5 lg:grid-cols-[minmax(0,1fr)_360px] lg:items-start">
             <div>
               <p className="text-xs font-black uppercase tracking-[0.18em] text-amber-800">Texas election update</p>
@@ -413,6 +432,9 @@ export default async function SchoolBoardsPage({
                   title={`${candidate.preferred_name ?? candidate.full_name} | RepWatchr`}
                   description={getShareLine(candidate)}
                   path={getSchoolBoardCandidateUrl(candidate)}
+                  template="public_question"
+                  subject={`${candidate.preferred_name ?? candidate.full_name} school-board record`}
+                  sourceLabel={candidate.district}
                 />
               </div>
             </article>

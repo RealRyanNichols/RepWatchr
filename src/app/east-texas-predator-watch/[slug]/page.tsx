@@ -2,7 +2,9 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import PredatorWatchReportForm from "@/components/predator-watch/PredatorWatchReportForm";
+import ShareButtons from "@/components/shared/ShareButtons";
 import { getPredatorWatchProfileBySlug, getPredatorWatchProfiles } from "@/lib/predator-watch";
+import { buildOgImageUrl, buildRepWatchrMetadata } from "@/lib/repwatchr-seo";
 import type { PredatorProfile } from "@/types/predator-watch";
 
 export const dynamic = "force-dynamic";
@@ -24,10 +26,14 @@ export async function generateMetadata({ params }: PredatorProfilePageProps): Pr
     return { title: "Predator Watch Profile Not Found | RepWatchr" };
   }
 
-  return {
+  return buildRepWatchrMetadata({
     title: `${profile.fullName} | East Texas Predator Watch | RepWatchr`,
     description: `${profile.fullName} official registry profile: ${profile.offense}`,
-  };
+    path: `/east-texas-predator-watch/${profile.slug}`,
+    imagePath: buildOgImageUrl("home"),
+    imageAlt: `${profile.fullName} RepWatchr registry profile preview`,
+    type: "profile",
+  });
 }
 
 function riskLabel(riskLevel: PredatorProfile["riskLevel"]) {
@@ -137,6 +143,17 @@ export default async function PredatorWatchProfilePage({ params }: PredatorProfi
               </a>
             </div>
           </div>
+        </section>
+
+        <section className="mt-6">
+          <ShareButtons
+            title={`${profile.fullName} | East Texas Predator Watch | RepWatchr`}
+            description={`${profile.fullName} official registry profile: ${profile.offense}`}
+            path={`/east-texas-predator-watch/${profile.slug}`}
+            template="confirmed_record"
+            subject={`${profile.fullName} official registry record`}
+            sourceLabel={profile.sources[0]?.title || "official registry and public-record links"}
+          />
         </section>
 
         <section className="mt-6 grid gap-4 md:grid-cols-2 lg:grid-cols-4">

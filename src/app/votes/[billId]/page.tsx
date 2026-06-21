@@ -8,6 +8,9 @@ import {
 } from "@/lib/data";
 import { formatDate } from "@/lib/formatting";
 import PartyBadge from "@/components/officials/PartyBadge";
+import ShareButtons from "@/components/shared/ShareButtons";
+import { buildOgImageUrl, buildRepWatchrMetadata } from "@/lib/repwatchr-seo";
+import { breadcrumbJsonLd, datasetJsonLd, jsonLd } from "@/lib/structured-data";
 
 export async function generateStaticParams() {
   const bills = getAllBills();
@@ -22,10 +25,13 @@ export async function generateMetadata({
   const { billId } = await params;
   const bill = getBillById(billId);
   if (!bill) return { title: "Bill Not Found" };
-  return {
+  return buildRepWatchrMetadata({
     title: bill.title,
     description: bill.summary,
-  };
+    path: `/votes/${bill.id}`,
+    imagePath: buildOgImageUrl("methodology"),
+    imageAlt: `${bill.title} RepWatchr vote record preview`,
+  });
 }
 
 export default async function BillDetailPage({
@@ -47,9 +53,29 @@ export default async function BillDetailPage({
       </div>
     );
   }
+  const breadcrumbStructuredData = breadcrumbJsonLd([
+    { name: "RepWatchr", path: "/" },
+    { name: "Tracked Votes", path: "/votes" },
+    { name: bill.title, path: `/votes/${bill.id}` },
+  ]);
+  const datasetStructuredData = datasetJsonLd({
+    name: `${bill.title} vote record`,
+    path: `/votes/${bill.id}`,
+    description: bill.summary,
+    keywords: ["vote record", bill.id, bill.level, bill.chamber, ...bill.categories],
+    dateModified: bill.dateVoted,
+  });
 
   return (
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: jsonLd(breadcrumbStructuredData) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: jsonLd(datasetStructuredData) }}
+      />
       <Link href="/votes" className="text-sm text-blue-600 hover:underline">
         ← All Tracked Votes
       </Link>
@@ -87,6 +113,16 @@ export default async function BillDetailPage({
               </span>
             );
           })}
+        </div>
+        <div className="mt-5">
+          <ShareButtons
+            title={`${bill.title} | RepWatchr Vote Record`}
+            description={bill.summary}
+            path={`/votes/${bill.id}`}
+            template="vote_record"
+            subject={`${bill.title} vote record`}
+            sourceLabel={bill.sourceUrl ? "official vote source link" : "tracked vote rows"}
+          />
         </div>
       </div>
 

@@ -9,6 +9,7 @@ export interface DailyNewsClip {
   summary: string;
   sourceUrl: string;
   sourceName: string;
+  publisherUrl?: string;
   publishedAt?: string;
   scope: NewsScope;
   state?: string;
@@ -17,6 +18,9 @@ export interface DailyNewsClip {
   powerChannels: NewsPowerChannel[];
   matchedTerms: string[];
   status: "needs_review";
+  sourceWatchId: string;
+  sourceWatchLabel: string;
+  queryLane?: string;
   sourceCredit?: SourceCredit;
 }
 
@@ -53,6 +57,18 @@ function extractTag(item: string, tag: string) {
   return match ? decodeXmlEntities(match[1]).trim() : "";
 }
 
+function extractSourceMeta(item: string) {
+  const match = item.match(/<source\b([^>]*)>([\s\S]*?)<\/source>/i);
+  if (!match) return { name: "", url: "" };
+  const attrs = match[1] ?? "";
+  const name = stripTags(match[2] ?? "");
+  const urlMatch = attrs.match(/\burl=["']([^"']+)["']/i);
+  return {
+    name,
+    url: urlMatch ? decodeXmlEntities(urlMatch[1]).trim() : "",
+  };
+}
+
 function hashClip(sourceUrl: string, title: string) {
   return createHash("sha256").update(`${sourceUrl}|${title}`).digest("hex").slice(0, 24);
 }
@@ -80,6 +96,7 @@ function parseRssClips(xml: string, source: DailyNewsWatchSource): DailyNewsClip
     const sourceUrl = stripTags(extractTag(item, "link"));
     const summary = stripTags(extractTag(item, "description"));
     const publishedAt = normalizeDate(extractTag(item, "pubDate"));
+    const publisher = extractSourceMeta(item);
     const matchedTerms = findTerms(source, `${title} ${summary}`);
 
     if (!title || !sourceUrl || matchedTerms.length === 0) continue;
@@ -89,13 +106,17 @@ function parseRssClips(xml: string, source: DailyNewsWatchSource): DailyNewsClip
       title,
       summary: summary.slice(0, 420),
       sourceUrl,
-      sourceName: source.label,
+      sourceName: publisher.name || source.label,
+      sourceWatchId: source.id,
+      sourceWatchLabel: source.label,
       scope: source.scope,
       powerChannels: source.powerChannels,
       matchedTerms,
       status: "needs_review",
     };
 
+    if (publisher.url) clip.publisherUrl = publisher.url;
+    if (source.queryLane) clip.queryLane = source.queryLane;
     if (source.sourceCredit) clip.sourceCredit = source.sourceCredit;
     if (publishedAt) clip.publishedAt = publishedAt;
     if (source.state) clip.state = source.state;
@@ -193,7 +214,13 @@ function toClipRow(clip: DailyNewsClip) {
     power_channels: clip.powerChannels,
     matched_terms: clip.matchedTerms,
     status: clip.status,
-    raw: clip,
+    raw: {
+      ...clip,
+      sourceWatchId: clip.sourceWatchId,
+      sourceWatchLabel: clip.sourceWatchLabel,
+      queryLane: clip.queryLane ?? null,
+      publisherUrl: clip.publisherUrl ?? null,
+    },
     updated_at: new Date().toISOString(),
   };
 }

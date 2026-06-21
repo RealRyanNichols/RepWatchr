@@ -1,12 +1,17 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { getRepWatchrDataStats } from "@/lib/data";
+import { buildOgImageUrl, buildRepWatchrMetadata } from "@/lib/repwatchr-seo";
+import { breadcrumbJsonLd, datasetJsonLd, jsonLd } from "@/lib/structured-data";
 
-export const metadata: Metadata = {
-  title: "Data Reports | RepWatchr",
+export const metadata: Metadata = buildRepWatchrMetadata({
+  title: "Data Reports",
   description:
     "RepWatchr data coverage, source inventory, and public-record buildout status for officials, votes, funding, news, and review overlays.",
-};
+  path: "/data-reports",
+  imagePath: buildOgImageUrl("methodology"),
+  imageAlt: "RepWatchr data reports preview",
+});
 
 function formatNumber(value: number) {
   return new Intl.NumberFormat("en-US").format(value);
@@ -25,9 +30,28 @@ function StatCard({ label, value, detail }: { label: string; value: string; deta
 export default function DataReportsPage() {
   const stats = getRepWatchrDataStats();
   const texasLegislators = stats.texasHouseProfilesLoaded + stats.texasSenateProfilesLoaded;
+  const breadcrumbStructuredData = breadcrumbJsonLd([
+    { name: "RepWatchr", path: "/" },
+    { name: "Data Reports", path: "/data-reports" },
+  ]);
+  const datasetStructuredData = datasetJsonLd({
+    name: "RepWatchr public data coverage report",
+    path: "/data-reports",
+    description:
+      "RepWatchr data coverage, source inventory, and public-record buildout status for officials, votes, funding, news, and review overlays.",
+    keywords: ["RepWatchr", "public records", "data coverage", "officials", "votes", "funding"],
+  });
 
   return (
     <main className="rw-page-shell text-slate-950">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: jsonLd(breadcrumbStructuredData) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: jsonLd(datasetStructuredData) }}
+      />
       <div className="mx-auto max-w-7xl px-4 py-8 sm:px-6 lg:px-8">
         <section className="rounded-lg border border-slate-300 bg-slate-950 p-5 text-white shadow-sm sm:p-6">
           <p className="text-xs font-black uppercase tracking-[0.18em] text-red-300">

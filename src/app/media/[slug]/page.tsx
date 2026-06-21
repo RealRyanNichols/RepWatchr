@@ -6,6 +6,9 @@ import { getProfileScorecardTargetType } from "@/lib/universal-scorecards";
 import ProfileScorecardVote from "@/components/scorecards/ProfileScorecardVote";
 import ClaimProfileCta from "@/components/profile/ClaimProfileCta";
 import PowerProfileAvatar from "@/components/power-watch/PowerProfileAvatar";
+import ShareButtons from "@/components/shared/ShareButtons";
+import { buildOgImageUrl, buildRepWatchrMetadata } from "@/lib/repwatchr-seo";
+import { breadcrumbJsonLd, jsonLd, profilePageJsonLd } from "@/lib/structured-data";
 import type { PublicPowerKind } from "@/types/power-watch";
 
 interface MediaProfilePageProps {
@@ -24,10 +27,14 @@ export async function generateMetadata({ params }: MediaProfilePageProps): Promi
     return { title: "Media Profile Not Found | RepWatchr" };
   }
 
-  return {
+  return buildRepWatchrMetadata({
     title: `${profile.name} | Media Watch | RepWatchr`,
     description: `${profile.name} public media profile: ${profile.summary}`,
-  };
+    path: `/media/${profile.slug}`,
+    imagePath: buildOgImageUrl("home"),
+    imageAlt: `${profile.name} RepWatchr media watch preview`,
+    type: "profile",
+  });
 }
 
 function statusLabel(status: string) {
@@ -46,9 +53,29 @@ export default async function MediaProfilePage({ params }: MediaProfilePageProps
   const profile = getMediaWatchProfileBySlug(slug);
 
   if (!profile) notFound();
+  const profileStructuredData = profilePageJsonLd({
+    name: profile.name,
+    path: `/media/${profile.slug}`,
+    description: `${profile.name} public media profile: ${profile.summary}`,
+    jobTitle: profile.categoryLabel,
+    jurisdiction: [profile.city, profile.state].filter(Boolean).join(", "),
+  });
+  const breadcrumbStructuredData = breadcrumbJsonLd([
+    { name: "RepWatchr", path: "/" },
+    { name: "Media Watch", path: "/media" },
+    { name: profile.name, path: `/media/${profile.slug}` },
+  ]);
 
   return (
     <div className="rw-page-shell">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: jsonLd(profileStructuredData) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: jsonLd(breadcrumbStructuredData) }}
+      />
       <main className="mx-auto max-w-5xl px-4 py-8 sm:px-6 lg:px-8">
         <Link href="/media" className="text-sm font-black text-blue-800 hover:text-red-700">
           &larr; Media watch
@@ -98,6 +125,17 @@ export default async function MediaProfilePage({ params }: MediaProfilePageProps
                 ))}
             </div>
           </div>
+        </section>
+
+        <section className="mt-6">
+          <ShareButtons
+            title={`${profile.name} | Media Watch | RepWatchr`}
+            description={profile.summary}
+            path={`/media/${profile.slug}`}
+            template="public_question"
+            subject={`${profile.name} media accountability profile`}
+            sourceLabel={profile.sourceLinks[0]?.title || "public media profile source links"}
+          />
         </section>
 
         <section className="mt-6">

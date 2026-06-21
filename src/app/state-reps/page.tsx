@@ -6,12 +6,17 @@ import OfficialPhotoImage from "@/components/shared/OfficialPhotoImage";
 import { stateCivicOutreachPriorities } from "@/data/state-civic-outreach-priorities";
 import { getAllScoreCards } from "@/lib/data";
 import { getAllStateLegislators, getStateLegislatureBuildoutStats } from "@/lib/state-legislature";
+import { buildOgImageUrl, buildRepWatchrMetadata } from "@/lib/repwatchr-seo";
+import { breadcrumbJsonLd, datasetJsonLd, jsonLd } from "@/lib/structured-data";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = buildRepWatchrMetadata({
   title: "State Representatives Directory",
   description:
     "Browse RepWatchr's source-seeded state representative and state senator profiles across the United States, with photos, sources, vote-record gaps, and buildout status.",
-};
+  path: "/state-reps",
+  imagePath: buildOgImageUrl("home"),
+  imageAlt: "RepWatchr state representatives directory preview",
+});
 
 function formatNumber(value: number) {
   return new Intl.NumberFormat("en-US").format(value);
@@ -26,9 +31,28 @@ export default function StateRepsPage() {
   const gapRows = [...stats.rows]
     .sort((a, b) => b.profilesMissingPhotos - a.profilesMissingPhotos || a.name.localeCompare(b.name))
     .slice(0, 8);
+  const breadcrumbStructuredData = breadcrumbJsonLd([
+    { name: "RepWatchr", path: "/" },
+    { name: "State Representatives", path: "/state-reps" },
+  ]);
+  const datasetStructuredData = datasetJsonLd({
+    name: "RepWatchr state representatives directory",
+    path: "/state-reps",
+    description:
+      "Source-seeded state representative and state senator profiles across the United States, with photos, sources, vote-record gaps, and buildout status.",
+    keywords: ["state representatives", "state senators", "statehouse", "public records"],
+  });
 
   return (
     <div className="rw-page-shell text-slate-950">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: jsonLd(breadcrumbStructuredData) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: jsonLd(datasetStructuredData) }}
+      />
       <div className="mx-auto max-w-7xl px-4 py-5 sm:px-6 lg:px-8">
         <section className="overflow-hidden rounded-lg border border-slate-300 bg-slate-950 text-white shadow-sm">
           <div className="h-1.5 bg-[linear-gradient(90deg,#c1121f_0%,#c1121f_33%,#f5f5f4_33%,#f5f5f4_66%,#1d4ed8_66%,#1d4ed8_100%)]" />

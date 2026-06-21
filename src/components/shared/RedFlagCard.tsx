@@ -1,14 +1,35 @@
 import type { RedFlag } from "@/types";
+import ShareButtons from "@/components/shared/ShareButtons";
+import ReportButton from "@/components/shared/ReportButton";
+import TrustLabel from "@/components/shared/TrustLabel";
+import { labelForSource, validateRedFlagForPublicUse } from "@/lib/trust-safety";
 
 interface RedFlagCardProps {
   flag: RedFlag;
+  officialName?: string;
+  sharePath?: string;
+  jurisdiction?: string;
 }
 
-export default function RedFlagCard({ flag }: RedFlagCardProps) {
+export default function RedFlagCard({ flag, officialName, sharePath, jurisdiction }: RedFlagCardProps) {
   const isCritical = flag.severity === "critical";
+  const shareSubject = officialName ? `${officialName}: ${flag.title}` : flag.title;
+  const publicPath = sharePath || `/red-flags?flag=${encodeURIComponent(flag.id)}#red-flag-${flag.id}`;
+  const effectiveJurisdiction = flag.jurisdiction || jurisdiction || "Jurisdiction review pending";
+  const statusLabel = labelForSource(flag.sourceUrl, flag.statusLabel);
+  const reviewerLabel = flag.reviewerStatus === "reviewed" || flag.reviewerStatus === "attached_to_profile"
+    ? "source_backed_claim"
+    : "under_review";
+  const missingPublicFields = validateRedFlagForPublicUse({
+    ...flag,
+    jurisdiction: effectiveJurisdiction,
+    statusLabel: statusLabel.id,
+    reviewerStatus: flag.reviewerStatus || reviewerLabel,
+  });
 
   return (
     <div
+      id={`red-flag-${flag.id}`}
       className={`rounded-xl border-l-4 bg-white p-5 shadow-sm ${
         isCritical ? "border-l-red-500" : "border-l-amber-500"
       }`}
@@ -41,6 +62,8 @@ export default function RedFlagCard({ flag }: RedFlagCardProps) {
             >
               {flag.severity}
             </span>
+            <TrustLabel id={statusLabel.id} />
+            <TrustLabel id={reviewerLabel} />
             <h4 className="text-sm font-bold text-gray-900">
               {flag.title}
             </h4>
@@ -60,6 +83,7 @@ export default function RedFlagCard({ flag }: RedFlagCardProps) {
           </div>
 
           <div className="mt-3 flex flex-wrap items-center gap-3 text-xs text-gray-400">
+            <span className="font-semibold text-gray-500">{effectiveJurisdiction}</span>
             <span>
               {new Date(flag.date).toLocaleDateString("en-US", {
                 year: "numeric",
@@ -77,6 +101,31 @@ export default function RedFlagCard({ flag }: RedFlagCardProps) {
                 View Source
               </a>
             )}
+          </div>
+
+          {missingPublicFields.length > 0 ? (
+            <div className="mt-3 rounded-lg border border-amber-200 bg-amber-50 p-3 text-xs font-bold leading-5 text-amber-950">
+              Source review needed before this item is treated as complete: {missingPublicFields.join(", ")}.
+            </div>
+          ) : null}
+
+          <div className="mt-4 border-t border-gray-100 pt-4">
+            <ShareButtons
+              title={`${flag.title} | RepWatchr`}
+              description={flag.description}
+              path={publicPath}
+              template="red_flag"
+              subject={shareSubject}
+              sourceLabel={flag.sourceUrl ? "linked public source" : "source needed"}
+            />
+            <div className="mt-3">
+              <ReportButton
+                officialId={flag.officialId}
+                pageUrl={publicPath}
+                targetLabel={officialName ? `${officialName}: ${flag.title}` : flag.title}
+                jurisdiction={effectiveJurisdiction}
+              />
+            </div>
           </div>
         </div>
       </div>

@@ -1,29 +1,17 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import AuthorMissionBuilder from "@/components/authors/AuthorMissionBuilder";
+import { buildOgImageUrl, buildRepWatchrMetadata } from "@/lib/repwatchr-seo";
+import { jsonLd } from "@/lib/structured-data";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = buildRepWatchrMetadata({
   title: "Citizen Author Desk | RepWatchr",
   description:
     "Become a RepWatchr citizen author. Build source-backed political stories, profile updates, meeting records, source drops, and shareable accountability packets.",
-  alternates: {
-    canonical: "https://www.repwatchr.com/authors",
-  },
-  openGraph: {
-    title: "Citizen Author Desk | RepWatchr",
-    description:
-      "Pick a target, attach the receipt, build the story packet, and help voters inspect the public record.",
-    url: "https://www.repwatchr.com/authors",
-    siteName: "RepWatchr",
-    type: "website",
-  },
-  twitter: {
-    card: "summary_large_image",
-    title: "Citizen Author Desk | RepWatchr",
-    description:
-      "A source-backed workspace for citizen authors, profile builders, meeting reporters, and record watchers.",
-  },
-};
+  path: "/authors",
+  imagePath: buildOgImageUrl("source-packet"),
+  imageAlt: "RepWatchr citizen author desk preview",
+});
 
 const authorRoles = [
   {
@@ -107,7 +95,7 @@ export default function AuthorsPage() {
     <div className="bg-white pb-16">
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
+        dangerouslySetInnerHTML={{ __html: jsonLd(structuredData) }}
       />
 
       <section className="border-b border-blue-100 bg-[linear-gradient(135deg,#ffffff_0%,#eef4ff_48%,#fff7ed_100%)]">
