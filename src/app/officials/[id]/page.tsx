@@ -247,14 +247,6 @@ export default async function OfficialProfilePage({
       </section>
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
-        {overlayPublicRecords.length > 0 && (
-          <ProfileOverlayEvidencePanel items={overlayPublicRecords} />
-        )}
-
-        {congressTrading && (
-          <CongressTradingDisclosurePanel snapshot={congressTrading} />
-        )}
-
         <div className="mb-8 space-y-4">
           <IdeologyChart profile={ideologyProfile} />
           {constitutionalAlignment ? (
@@ -345,6 +337,18 @@ export default async function OfficialProfilePage({
             />
           </div>
         </section>
+
+        {(overlayPublicRecords.length > 0 || congressTrading) && (
+          <div className="mt-8 space-y-6">
+            {overlayPublicRecords.length > 0 && (
+              <ProfileOverlayEvidencePanel items={overlayPublicRecords} />
+            )}
+
+            {congressTrading && (
+              <CongressTradingDisclosurePanel snapshot={congressTrading} />
+            )}
+          </div>
+        )}
 
         {redFlags.length > 0 && (
           <section className="mt-8">
