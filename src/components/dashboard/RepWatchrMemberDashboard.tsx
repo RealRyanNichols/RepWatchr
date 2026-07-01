@@ -1337,6 +1337,12 @@ export default function RepWatchrMemberDashboard({ initialEmail }: { initialEmai
           </div>
         </section>
 
+        <LeadRepVerificationCard
+          sourceSubmissions={sourceSubmissions.length}
+          reviewItems={sourceSubmissions.filter((submission) => ["new", "needs_review", "needs_more_info"].includes(submission.status)).length}
+          proofDrafts={sourceDrafts.length}
+        />
+
         <section className="mt-4 grid gap-4 lg:grid-cols-[0.85fr_1.15fr]">
           <ToolPanel eyebrow="What changed since last visit" title="Current saved work">
             <p className="text-sm font-semibold leading-6 text-slate-700">{lastVisitSummary}</p>
@@ -1958,6 +1964,48 @@ export default function RepWatchrMemberDashboard({ initialEmail }: { initialEmai
         </section>
       </div>
     </main>
+  );
+}
+
+function LeadRepVerificationCard({
+  sourceSubmissions,
+  reviewItems,
+  proofDrafts,
+}: {
+  sourceSubmissions: number;
+  reviewItems: number;
+  proofDrafts: number;
+}) {
+  return (
+    <section className="mt-4 rounded-lg border border-blue-200 bg-blue-950 p-5 text-white shadow-sm">
+      <div className="flex flex-col gap-4 lg:flex-row lg:items-start lg:justify-between">
+        <div>
+          <p className="text-xs font-black uppercase tracking-[0.18em] text-red-200">LeadRep agent bus</p>
+          <h2 className="mt-2 text-2xl font-black leading-tight">Proof and verification results</h2>
+          <p className="mt-2 max-w-3xl text-sm font-semibold leading-6 text-blue-100">
+            GitHub Actions writes dry-run handoffs to Supabase and GitHub before any Grok API call, public update,
+            outreach, or package promotion. Weak signals stay marked as candidates until reviewed.
+          </p>
+        </div>
+        <div className="grid grid-cols-3 gap-2 text-sm lg:w-[440px]">
+          <Metric label="Submissions" value={sourceSubmissions} />
+          <Metric label="Review queue" value={reviewItems} />
+          <Metric label="Proof drafts" value={proofDrafts} />
+        </div>
+      </div>
+      <div className="mt-4 grid gap-3 md:grid-cols-3">
+        {[
+          ["Agent runs", "Stored server-side in Supabase with RLS enabled and no public policies."],
+          ["Package ideas", "Candidate revenue packages only; no buyer-facing offer until approved."],
+          ["Verification signals", "Source, confidence, and next verification step required before use."],
+        ].map(([title, body]) => (
+          <div key={title} className="rounded-lg border border-white/15 bg-white/10 p-3">
+            <p className="text-sm font-black">{title}</p>
+            <p className="mt-1 text-xs font-semibold leading-5 text-blue-100">{body}</p>
+          </div>
+        ))}
+      </div>
+    </section>
   );
 }
 
