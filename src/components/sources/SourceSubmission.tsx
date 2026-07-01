@@ -3,6 +3,7 @@
 import { useEffect, useMemo, useState } from "react";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
+import { AiSourceReviewAssistant, type AiReviewDraft } from "@/components/admin/AiSourceReviewAssistant";
 import { useAuth } from "@/components/auth/AuthProvider";
 import { trackEvent } from "@/lib/analytics-client";
 import { submitSource } from "@/lib/source-submissions-client";
@@ -538,7 +539,7 @@ export function AdminSourceQueue() {
   const [selectedDetail, setSelectedDetail] = useState<AdminSourceDetail | null>(null);
   const [filters, setFilters] = useState({ status: "", sourceType: "", targetType: "", priority: "", q: "" });
   const [error, setError] = useState("");
-  const isAdmin = roles.includes("admin");
+  const isAdmin = roles.includes("admin") || roles.includes("super_admin");
 
   useEffect(() => {
     void trackEvent("admin_source_review_started", { route: "/admin/sources" });
@@ -702,6 +703,7 @@ type AdminSourceDetail = {
   events: Array<Record<string, unknown>>;
   notes: Array<Record<string, unknown>>;
   links: Array<Record<string, unknown>>;
+  aiReviewRuns?: Array<Record<string, unknown>>;
 };
 
 function AdminSourceTable({ submissions, selectedId, onSelect }: { submissions: AdminSourceSubmission[]; selectedId: string; onSelect: (id: string) => void }) {
@@ -750,6 +752,8 @@ export function AdminSourceReviewPanel({ detail, onAction }: { detail: AdminSour
     setConfidence(String(submission.confidence || "needs_review"));
     setPriority(String(submission.priority || "normal"));
     setSummary(String(submission.claim_summary || ""));
+    setNote("");
+    setDuplicateOf("");
   }, [detail]);
 
   if (!detail?.submission) {
@@ -780,6 +784,17 @@ export function AdminSourceReviewPanel({ detail, onAction }: { detail: AdminSour
         <p className="mt-2 text-sm font-semibold leading-6 text-slate-800">{String(submission.claim_summary || "No summary supplied.")}</p>
         {submission.why_it_matters ? <p className="mt-3 text-sm font-semibold leading-6 text-slate-600">{String(submission.why_it_matters)}</p> : null}
       </div>
+
+      <AiSourceReviewAssistant
+        submission={submission}
+        initialRuns={detail.aiReviewRuns ?? []}
+        onUseSuggestion={(draft: AiReviewDraft) => {
+          if (draft.note) setNote(draft.note);
+          if (draft.summary) setSummary(draft.summary);
+          if (draft.status) setStatus(draft.status);
+          if (draft.confidence) setConfidence(draft.confidence);
+        }}
+      />
 
       <div className="mt-5 grid gap-3 sm:grid-cols-3">
         <FilterSelect label="Status" value={status} onChange={setStatus} options={[...SOURCE_STATUSES]} />

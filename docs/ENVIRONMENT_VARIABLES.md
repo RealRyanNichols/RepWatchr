@@ -46,6 +46,7 @@ Feature flags default false unless enabled by env or database table.
 | `ENABLE_ADVANCED_ANALYTICS` or `REPWATCHR_ENABLE_ADVANCED_ANALYTICS` | optional | no | Advanced analytics views. | Admin-only. |
 | `ENABLE_EXPORTS` or `REPWATCHR_ENABLE_EXPORTS` | no | no | Future export features. | Keep false until privacy review. |
 | `ENABLE_PWA_INSTALL_PROMPT` or `REPWATCHR_ENABLE_PWA_INSTALL_PROMPT` | optional | no | PWA install prompt. | Enable only after mobile QA. |
+| `ENABLE_DATA_IMPORTS` or `REPWATCHR_ENABLE_DATA_IMPORTS` | no | no | Enables protected admin import execution. | Keep false until source-specific dry runs and review. |
 
 ## Stripe
 
@@ -83,8 +84,20 @@ Keep autopost disabled until source policy, editorial review, and duplicate prot
 | `GIDEON_CHAT_URL` | optional | no | Server-side Gideon chat bridge target. | Use only for safe source-gap/next-record helper behavior. |
 | `GIDEON_CHAT_BEARER` | optional | no | Bearer token for Gideon edge function. | Secret. |
 | `NEXT_PUBLIC_GIDEON_CHAT_URL` | avoid unless intentional | yes | Browser-side Gideon chat URL. | Only expose if intentionally safe. |
-| `OPENAI_API_KEY` | optional | no | Future/admin AI source review if using OpenAI. | Never expose client-side. |
-| `AI_PROVIDER` | optional | no | AI provider selection. | Keep disabled unless reviewed. |
+| `OPENAI_API_KEY` | optional | no | Admin AI source review if `ENABLE_AI_SOURCE_REVIEW=true` and `AI_PROVIDER=openai`. | Never expose client-side. Never create `NEXT_PUBLIC_OPENAI_API_KEY`. |
+| `AI_PROVIDER` | optional | no | AI provider selection for admin source review. | Current implementation supports `openai`; keep disabled unless reviewed. |
+| `AI_SOURCE_REVIEW_MODEL` | optional | no | Model used by the admin AI source review assistant. | Defaults to `gpt-5.5` unless overridden. |
+
+## Public Data Import Providers
+
+Imports are admin-only and disabled by default. Provider keys must stay server-side and should only be configured after adapter mapping, source URL handling, and review status rules are verified.
+
+| Variable | Required | Public/client-safe | Purpose | Notes |
+|---|---:|---:|---|---|
+| `FEC_API_KEY` | if FEC imports enabled | no | Federal Election Commission API access. | Missing key shows as adapter health warning. |
+| `CONGRESS_API_KEY` | if Congress.gov imports enabled | no | Congress.gov API access. | Missing key does not break admin pages. |
+| `OPENSTATES_API_KEY` | if Open States imports enabled | no | Open States API access. | Use only after state import scope is approved. |
+| `TEC_IMPORT_MODE` | optional | no | Texas Ethics Commission import mode. | Default `manual`; use `disabled` to hide manual import readiness. |
 
 ## Launch Environment Rules
 

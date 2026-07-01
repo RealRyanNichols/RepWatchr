@@ -16,7 +16,7 @@ function metadataHasAdminRole(appMetadata: Record<string, unknown> | null | unde
     ? appMetadata.roles.filter((value): value is string => typeof value === "string")
     : [];
 
-  return role === "admin" || roles.includes("admin");
+  return role === "admin" || role === "super_admin" || roles.includes("admin") || roles.includes("super_admin");
 }
 
 export async function requireAdminPageAccess() {
@@ -46,7 +46,7 @@ export async function requireAdminPageAccess() {
         .filter(Boolean);
   const emailAllowed = user.email ? configuredAdminEmails().has(user.email.toLowerCase()) : false;
   const appMetadataAllowed = metadataHasAdminRole(user.app_metadata as Record<string, unknown>);
-  const roleAllowed = roleNames.includes("admin");
+  const roleAllowed = roleNames.includes("admin") || roleNames.includes("super_admin");
 
   if (!roleAllowed && !emailAllowed && !appMetadataAllowed) {
     return { ok: false as const, status: 403, error: "Admin role required." };

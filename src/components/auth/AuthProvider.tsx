@@ -18,7 +18,11 @@ interface UserProfile {
 }
 
 type UserRole =
+  | "authenticated_user"
+  | "contributor"
+  | "verified_contributor"
   | "admin"
+  | "super_admin"
   | "reviewer"
   | "researcher"
   | "claimed_official"
@@ -72,7 +76,11 @@ function appMetadataRoles(user: User): UserRole[] {
   if (Array.isArray(appMetadata.roles)) {
     for (const role of appMetadata.roles) {
       if (
+        role === "authenticated_user" ||
+        role === "contributor" ||
+        role === "verified_contributor" ||
         role === "admin" ||
+        role === "super_admin" ||
         role === "reviewer" ||
         role === "researcher" ||
         role === "claimed_official" ||

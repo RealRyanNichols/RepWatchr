@@ -26,7 +26,7 @@ export async function GET(
   if (!auth.ok) return NextResponse.json({ error: auth.error }, { status: auth.status });
 
   const { id } = await params;
-  const [{ data, error }, { data: events }, { data: notes }, { data: links }] = await Promise.all([
+  const [{ data, error }, { data: events }, { data: notes }, { data: links }, { data: aiReviewRuns, error: aiReviewRunsError }] = await Promise.all([
     auth.admin.from("source_submissions").select("*").eq("id", id).maybeSingle(),
     auth.admin
       .from("source_submission_events")
@@ -43,6 +43,12 @@ export async function GET(
       .select("id, entity_type, entity_id, source_url, source_title, source_type, confidence, status, created_at")
       .eq("submission_id", id)
       .order("created_at", { ascending: false }),
+    auth.admin
+      .from("ai_review_runs")
+      .select("id, provider, model, output_summary, safety_flags, recommendation, status, created_at")
+      .eq("source_submission_id", id)
+      .order("created_at", { ascending: false })
+      .limit(5),
   ]);
 
   if (error) return NextResponse.json({ error: error.message }, { status: 500 });
@@ -53,6 +59,7 @@ export async function GET(
     events: events ?? [],
     notes: notes ?? [],
     links: links ?? [],
+    aiReviewRuns: aiReviewRunsError ? [] : (aiReviewRuns ?? []),
   });
 }
 

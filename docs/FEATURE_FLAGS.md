@@ -15,6 +15,7 @@ RepWatchr defaults risky or revenue-related features to off. A feature is public
 | `ENABLE_ADVANCED_ANALYTICS` | off | Allows advanced analytics/reporting surfaces. |
 | `ENABLE_EXPORTS` | off | Allows CSV/PDF/export tools. |
 | `ENABLE_PWA_INSTALL_PROMPT` | off | Allows install-prompt UI after engagement thresholds. |
+| `ENABLE_DATA_IMPORTS` | off | Allows protected admin import execution. Missing provider keys still block provider-specific imports. |
 
 ## Resolution Order
 
@@ -50,9 +51,12 @@ If payments are off, paid package CTAs route to `/beta-access`.
 
 Run `supabase-pricing-experiments.sql` before relying on DB-backed flags. Supabase changed default API exposure behavior for new tables in 2026; confirm these tables are exposed only where intended.
 
+Run `supabase-data-import-adapters.sql` before using the import registry. Keep `ENABLE_DATA_IMPORTS=false` until dry runs, source URL mapping, and admin review statuses are verified.
+
 ## Guardrails
 
 - Do not expose server secrets to client components.
 - Do not use client-side flags for security decisions.
 - Do not enable payment, API, exports, or email sending from UI copy alone.
+- Do not enable data imports until provider keys, source-specific mappings, and import review workflows are tested.
 - Keep beta and demand capture separate from actual checkout.

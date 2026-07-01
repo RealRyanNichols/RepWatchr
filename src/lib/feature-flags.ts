@@ -12,6 +12,7 @@ export const CORE_FEATURE_FLAGS = [
   "ENABLE_ADVANCED_ANALYTICS",
   "ENABLE_EXPORTS",
   "ENABLE_PWA_INSTALL_PROMPT",
+  "ENABLE_DATA_IMPORTS",
 ] as const;
 
 export type CoreFeatureFlag = (typeof CORE_FEATURE_FLAGS)[number];

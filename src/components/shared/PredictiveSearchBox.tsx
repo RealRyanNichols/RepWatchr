@@ -6,6 +6,7 @@ import { useEffect, useId, useMemo, useState } from "react";
 import type { ReactNode } from "react";
 import { ArrowRight, BookmarkCheck, BookmarkPlus, Clock, Copy, Mic, Search, Share2, Sparkles, TrendingUp } from "lucide-react";
 import { track } from "@vercel/analytics";
+import { trackEvent } from "@/lib/analytics-client";
 import { trackVisitorIntelligenceEvent } from "@/lib/visitor-intelligence-client";
 import type { PredictiveSearchGroup, PredictiveSearchKind, PredictiveSearchResult } from "@/lib/predictive-search";
 
@@ -16,6 +17,9 @@ type PredictiveSearchBoxProps = {
   showVoice?: boolean;
   sourceSurface?: string;
   autoFocus?: boolean;
+  focusEventName?: string;
+  submitEventName?: string;
+  eventMetadata?: Record<string, string | number | boolean | null>;
 };
 
 type SearchChip = {
@@ -133,6 +137,9 @@ export default function PredictiveSearchBox({
   showVoice = true,
   sourceSurface = "predictive_search",
   autoFocus = false,
+  focusEventName,
+  submitEventName,
+  eventMetadata = {},
 }: PredictiveSearchBoxProps) {
   const [query, setQuery] = useState(defaultQuery);
   const [open, setOpen] = useState(false);
@@ -246,6 +253,13 @@ export default function PredictiveSearchBox({
     const clean = nextQuery.trim();
     if (!clean) return;
     rememberSearch(clean);
+    if (submitEventName) {
+      void trackEvent(submitEventName, {
+        query: clean,
+        source_surface: sourceSurface,
+        ...eventMetadata,
+      });
+    }
     recordSearch({ action: "submit" });
     router.push(`/search?q=${encodeURIComponent(clean)}`);
   }
@@ -358,7 +372,16 @@ export default function PredictiveSearchBox({
               type="search"
               value={query}
               autoFocus={autoFocus}
-              onFocus={() => setOpen(true)}
+              onFocus={() => {
+                setOpen(true);
+                if (focusEventName) {
+                  void trackEvent(focusEventName, {
+                    query: trimmedQuery || null,
+                    source_surface: sourceSurface,
+                    ...eventMetadata,
+                  });
+                }
+              }}
               onBlur={() => window.setTimeout(() => setOpen(false), 180)}
               onChange={(event) => {
                 setQuery(event.target.value);
