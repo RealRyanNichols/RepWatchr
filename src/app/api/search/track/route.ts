@@ -1,4 +1,5 @@
 import { NextRequest, NextResponse } from "next/server";
+import { serverTrackEvent, updateInterestScore, updateVisitorProfile } from "@/lib/analytics-server";
 import { getSupabaseAdminClient } from "@/lib/supabase-admin";
 import { createServerSupabaseClient } from "@/lib/supabase-server";
 import { normalizeSearchKey, normalizeSearchQuery } from "@/lib/search-utils";
@@ -93,6 +94,48 @@ export async function POST(request: NextRequest) {
   if (error) {
     return NextResponse.json({ ok: true, stored: false });
   }
+
+  await Promise.allSettled([
+    serverTrackEvent({
+      eventName: insertPayload.selected_result_href ? "search_result_clicked" : "search_query_submitted",
+      anonymousId: insertPayload.anonymous_id,
+      userId,
+      sessionId: insertPayload.session_id,
+      route: insertPayload.route,
+      referrer: insertPayload.referrer,
+      metadata: {
+        query,
+        source_surface: insertPayload.source_surface,
+        result_count: insertPayload.result_count,
+        selected_result_kind: insertPayload.selected_result_kind,
+        selected_result_id: insertPayload.selected_result_id,
+      },
+    }),
+    updateInterestScore({
+      eventType: insertPayload.selected_result_href ? "search_result_clicked" : "search_query_submitted",
+      anonymousId: insertPayload.anonymous_id,
+      userId,
+      sessionId: insertPayload.session_id,
+      path: insertPayload.route,
+      searchTerm: query,
+      metadata: {
+        source_surface: insertPayload.source_surface,
+        selected_result_kind: insertPayload.selected_result_kind,
+        result_types: insertPayload.result_types,
+      },
+    }),
+    insertPayload.anonymous_id
+      ? updateVisitorProfile({
+          eventName: "search_query_submitted",
+          anonymousId: insertPayload.anonymous_id,
+          userId,
+          sessionId: insertPayload.session_id,
+          route: insertPayload.route,
+          referrer: insertPayload.referrer,
+          metadata: { query, result_count: insertPayload.result_count },
+        })
+      : Promise.resolve({ ok: false }),
+  ]);
 
   return NextResponse.json({ ok: true, stored: true });
 }

@@ -29,6 +29,13 @@ function trackAction(action: NextAction, route: string) {
   }, { route });
 }
 
+function openCommandPalette(action: NextAction, route: string) {
+  trackAction(action, route);
+  if (typeof window !== "undefined") {
+    window.dispatchEvent(new Event("repwatchr:open-command-palette"));
+  }
+}
+
 export function NextActionCards({
   actions,
   route,
@@ -70,14 +77,25 @@ export function MobileNextActionBar({
     >
       <div className="mx-auto grid max-w-md grid-cols-3 gap-2">
         {actions.slice(0, 3).map((action) => (
-          <Link
-            key={`mobile-${action.type}-${action.href}`}
-            href={action.href}
-            onClick={() => trackAction(action, route)}
-            className={`rounded-lg px-2 py-2 text-center text-[11px] font-black uppercase tracking-wide ${toneClasses(action.tone)}`}
-          >
-            {action.label}
-          </Link>
+          action.type === "search_related" ? (
+            <button
+              key={`mobile-${action.type}-${action.href}`}
+              type="button"
+              onClick={() => openCommandPalette(action, route)}
+              className={`rounded-lg px-2 py-2 text-center text-[11px] font-black uppercase tracking-wide ${toneClasses(action.tone)}`}
+            >
+              {action.label}
+            </button>
+          ) : (
+            <Link
+              key={`mobile-${action.type}-${action.href}`}
+              href={action.href}
+              onClick={() => trackAction(action, route)}
+              className={`rounded-lg px-2 py-2 text-center text-[11px] font-black uppercase tracking-wide ${toneClasses(action.tone)}`}
+            >
+              {action.label}
+            </Link>
+          )
         ))}
       </div>
     </nav>

@@ -8,6 +8,7 @@ import PageViewTracker from "@/components/shared/PageViewTracker";
 import NextActionRail from "@/components/civic/NextActions";
 import { AnonymousWatchIntentConverter } from "@/components/civic/WatchButton";
 import VisitorIntelligenceTracker from "@/components/shared/VisitorIntelligenceTracker";
+import CommandPalette from "@/components/search/CommandPalette";
 import { Analytics } from "@vercel/analytics/next";
 
 export const metadata: Metadata = {
@@ -96,6 +97,7 @@ export default function RootLayout({
         <VisitorIntelligenceTracker />
         <AuthProvider>
           <AnonymousWatchIntentConverter />
+          <CommandPalette />
           <Header />
           <main className="rw-patriot-shell flex-1">{children}</main>
           <NextActionRail />
