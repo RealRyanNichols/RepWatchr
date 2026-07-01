@@ -169,8 +169,8 @@ export async function getPublicContributorByHandle(handle: string): Promise<Publ
 
   return {
     profile,
-    records: (recordsResult.data ?? []) as ContributorRecord[],
-    badgeAwards: (badgesResult.data ?? []) as ContributorBadgeAward[],
+    records: (recordsResult.data ?? []) as unknown as ContributorRecord[],
+    badgeAwards: (badgesResult.data ?? []) as unknown as ContributorBadgeAward[],
   };
 }
 

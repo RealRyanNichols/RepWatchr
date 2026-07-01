@@ -303,7 +303,7 @@ export async function loadMemberDashboardSnapshot(
     digestResult,
   ]
     .map((result) => result.error)
-    .filter((error): error is string => Boolean(error) && isMissingTableError(error));
+    .filter((error): error is string => typeof error === "string" && Boolean(error) && isMissingTableError(error));
 
   const items = itemsResult.data.map((item) => ({
     id: textValue(item.id),

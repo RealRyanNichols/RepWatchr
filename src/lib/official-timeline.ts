@@ -707,7 +707,15 @@ export function buildOfficialTimelineFromSources({
 
 function mapDatabaseEvent(row: Record<string, unknown>): OfficialTimelineEvent {
   const sourceUrl = String(row.source_url ?? "");
-  const sourceHash = String(row.source_hash ?? stableSourceHash(row.official_id, row.event_type, sourceUrl, row.title));
+  const sourceHash = String(
+    row.source_hash ??
+      stableSourceHash(
+        String(row.official_id ?? ""),
+        String(row.event_type ?? ""),
+        sourceUrl,
+        String(row.title ?? ""),
+      ),
+  );
   return {
     id: String(row.id ?? `db-${sourceHash.slice(0, 20)}`),
     officialId: String(row.official_id ?? ""),

@@ -37,6 +37,7 @@ const countTables = [
   "analytics_events",
   "search_events",
   "saved_searches",
+  "member_profiles",
   "member_watchlists",
   "member_watchlist_items",
   "source_submissions",
@@ -77,11 +78,13 @@ const adminModuleLinks = [
   ["/admin/intake", "Correction / Form Queue", "admin_form_opened"],
   ["/admin/control-center", "Profile Manager", "admin_profile_updated"],
   ["/admin/content-review", "Content Desk", "admin_module_open"],
+  ["/admin/data-health", "Data Health", "admin_data_health_opened"],
   ["/admin/analytics", "Analytics", "admin_module_open"],
   ["/admin/behavioral-analytics", "Behavioral Analytics", "admin_module_open"],
   ["/admin/pricing", "Pricing Experiments", "admin_monetization_opened"],
   ["/admin/monetization-readiness", "Monetization Readiness", "admin_monetization_opened"],
   ["/admin/future-revenue", "Hidden Revenue Flags", "admin_monetization_opened"],
+  ["/admin/audit-log", "Audit Log", "admin_audit_log_opened"],
 ] as const;
 
 async function countTable(admin: AdminClient, table: string): Promise<CountResult> {
@@ -102,7 +105,7 @@ async function selectRows(admin: AdminClient, table: string, columns: string, or
     .limit(limit);
 
   return {
-    rows: error ? [] : ((data ?? []) as Array<Record<string, unknown>>),
+    rows: error ? [] : ((data ?? []) as unknown as Array<Record<string, unknown>>),
     error: error?.message ?? null,
   };
 }
@@ -208,6 +211,7 @@ export default async function AdminPage() {
     { label: "Profile opens", value: countEvents(eventRows, (event) => event === "profile_open"), detail: "Recent sampled events" },
     { label: "Source clicks", value: countEvents(eventRows, (event) => event.includes("source") || event === "external_source_click"), detail: "Recent sampled events" },
     { label: "Watchlist adds", value: countEvents(eventRows, (event) => event === "watchlist_add"), detail: "Recent sampled events" },
+    { label: "Signups", value: tableCount(tableCounts, "member_profiles") || countEvents(eventRows, (event) => event.includes("signup")), detail: "Member profiles or signup events" },
     { label: "Source queue", value: tableCount(tableCounts, "source_submissions"), detail: "Submitted public records" },
     { label: "Corrections", value: countForms(formRows, (formKey) => formKey === "correction_request"), detail: "Correction intake rows" },
     { label: "Packet builds", value: countForms(formRows, (formKey) => formKey === "free_packet" || formKey === "public_records_request"), detail: "Packet/request intent" },
@@ -429,7 +433,7 @@ function DataHealthPanel({
   importRuns: Array<Record<string, unknown>>;
 }) {
   return (
-    <Panel title="Data Health" eyebrow="Maintenance" actionHref="/admin/control-center" actionLabel="Open data control center" moduleName="Data Health" eventName="admin_data_health_opened">
+    <Panel title="Data Health" eyebrow="Maintenance" actionHref="/admin/data-health" actionLabel="Open data health" moduleName="Data Health" eventName="admin_data_health_opened">
       <div className="grid gap-3 sm:grid-cols-2">
         <AdminMetricCard label="Import runs" value={tableCount(tableCounts, "import_runs")} detail={`${importRuns.length} recent rows loaded`} />
         <AdminMetricCard label="Import errors" value={tableCount(tableCounts, "import_errors")} detail="Needs operator review" />
@@ -488,7 +492,7 @@ function UsersAndContributorsPanel({ tableCounts }: { tableCounts: CountResult[]
 
 function AuditLogTable({ rows, error }: { rows: Array<Record<string, unknown>>; error: string | null }) {
   return (
-    <Panel title="Audit Log" eyebrow="Before / after trail" actionHref="/admin/sources" actionLabel="Review source actions" moduleName="Audit Log" eventName="admin_audit_log_opened">
+    <Panel title="Audit Log" eyebrow="Before / after trail" actionHref="/admin/audit-log" actionLabel="Open audit log" moduleName="Audit Log" eventName="admin_audit_log_opened">
       {error ? (
         <p className="rounded-xl border border-amber-200 bg-amber-50 p-4 text-sm font-bold text-amber-900">
           Audit log table is not available yet. Run the admin dashboard migration before production review work.

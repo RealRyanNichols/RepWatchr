@@ -59,23 +59,26 @@ export async function GET() {
     .order("updated_at", { ascending: false })
     .limit(50);
 
-  let { data, error } = await savedSearchQuery;
-  if (error) {
+  const initialResult = await savedSearchQuery;
+  let savedSearches = initialResult.data as unknown as Array<Record<string, unknown>> | null;
+  let loadError = initialResult.error;
+
+  if (loadError) {
     const fallback = await auth.supabase
       .from("saved_searches")
       .select("id, query, title, scope, alert_frequency, public_share_enabled, share_id, last_opened_at, created_at, updated_at")
       .eq("user_id", auth.userId)
       .order("updated_at", { ascending: false })
       .limit(50);
-    data = fallback.data;
-    error = fallback.error;
+    savedSearches = fallback.data as unknown as Array<Record<string, unknown>> | null;
+    loadError = fallback.error;
   }
 
-  if (error) {
+  if (loadError) {
     return NextResponse.json({ ok: false, error: "Saved searches could not be loaded." }, { status: 500 });
   }
 
-  return NextResponse.json({ ok: true, savedSearches: data ?? [] });
+  return NextResponse.json({ ok: true, savedSearches: savedSearches ?? [] });
 }
 
 export async function POST(request: NextRequest) {
@@ -104,7 +107,7 @@ export async function POST(request: NextRequest) {
     return NextResponse.json({ ok: false, error: "Search query is required." }, { status: 400 });
   }
 
-  let { data, error } = await auth.supabase
+  const initialSave = await auth.supabase
     .from("saved_searches")
     .upsert(
       {
@@ -125,7 +128,10 @@ export async function POST(request: NextRequest) {
     .select("id, query, name, filters, alert_enabled, title, scope, alert_frequency, public_share_enabled, share_id, updated_at")
     .single();
 
-  if (error) {
+  let savedSearch = initialSave.data as unknown as Record<string, unknown> | null;
+  let saveError = initialSave.error;
+
+  if (saveError) {
     const fallback = await auth.supabase
       .from("saved_searches")
       .upsert(
@@ -143,11 +149,11 @@ export async function POST(request: NextRequest) {
       )
       .select("id, query, title, scope, alert_frequency, public_share_enabled, share_id, updated_at")
       .single();
-    data = fallback.data;
-    error = fallback.error;
+    savedSearch = fallback.data as unknown as Record<string, unknown> | null;
+    saveError = fallback.error;
   }
 
-  if (error) {
+  if (saveError) {
     return NextResponse.json({ ok: false, error: "Search could not be saved." }, { status: 500 });
   }
 
@@ -176,7 +182,7 @@ export async function POST(request: NextRequest) {
     }),
   ]);
 
-  return NextResponse.json({ ok: true, savedSearch: data });
+  return NextResponse.json({ ok: true, savedSearch });
 }
 
 export async function DELETE(request: NextRequest) {

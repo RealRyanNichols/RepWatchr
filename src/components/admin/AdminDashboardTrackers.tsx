@@ -12,6 +12,22 @@ export function AdminOpenTracker({ moduleName = "root" }: { moduleName?: string 
   return null;
 }
 
+export function AdminModuleOpenTracker({
+  moduleName,
+  eventName = "admin_module_open",
+  route = "/admin",
+}: {
+  moduleName: string;
+  eventName?: string;
+  route?: string;
+}) {
+  useEffect(() => {
+    void trackEvent(eventName, { module: moduleName }, { route });
+  }, [eventName, moduleName, route]);
+
+  return null;
+}
+
 export function AdminTrackedLink({
   href,
   moduleName,
