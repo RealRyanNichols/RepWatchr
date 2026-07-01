@@ -2,10 +2,13 @@ import Link from "next/link";
 import Image from "next/image";
 
 const quickLinks = [
+  { href: "/", label: "Home" },
   { href: "/elections/texas", label: "Texas Races" },
   { href: "/officials", label: "Officials" },
   { href: "/school-boards", label: "School Boards" },
   { href: "/votes", label: "Votes" },
+  { href: "/data-reports", label: "Data Reports" },
+  { href: "/growth-engine", label: "Growth Engine" },
   { href: "/blog", label: "Blog" },
   { href: "/services", label: "Services" },
   { href: "/elections/texas/contribute", label: "Free Packet" },
@@ -77,6 +80,10 @@ export default function Footer() {
               election sources, FEC, Texas Ethics Commission, Open States, and
               reviewed citizen submissions where labeled. Private details and
               unsourced allegations do not belong on public pages.
+            </p>
+            <p className="mt-3 text-xs font-semibold leading-relaxed text-slate-400">
+              RepWatchr uses analytics to improve public-record tools and source review.
+              RepWatchr does not sell personal political-interest profiles or private watchlists.
             </p>
           </div>
         </div>

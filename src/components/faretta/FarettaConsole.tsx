@@ -259,7 +259,7 @@ export default function FarettaConsole({ initialQuery = "" }: FarettaConsoleProp
       const reply = body.reply?.trim() || buildAnswer(apiMessage);
       setMessages((current) => [...current, { role: "faretta", content: reply }]);
       if (body.fallback) {
-        setLiveError("Live Faretta AI endpoint is not configured yet. Showing RepWatchr fallback guidance.");
+        setLiveError("Live Faretta AI is temporarily unavailable. Showing RepWatchr fallback guidance.");
       }
     } catch (error) {
       setLiveError(error instanceof Error ? error.message : "Faretta AI is not reachable.");

@@ -5,6 +5,9 @@ import Footer from "@/components/layout/Footer";
 import AuthProvider from "@/components/auth/AuthProvider";
 import GoogleAnalytics from "@/components/shared/GoogleAnalytics";
 import PageViewTracker from "@/components/shared/PageViewTracker";
+import NextActionRail from "@/components/civic/NextActions";
+import { AnonymousWatchIntentConverter } from "@/components/civic/WatchButton";
+import VisitorIntelligenceTracker from "@/components/shared/VisitorIntelligenceTracker";
 import { Analytics } from "@vercel/analytics/next";
 
 export const metadata: Metadata = {
@@ -90,9 +93,12 @@ export default function RootLayout({
       <body className="min-h-full flex flex-col bg-[#f6f9fc] text-slate-950">
         <GoogleAnalytics />
         <PageViewTracker />
+        <VisitorIntelligenceTracker />
         <AuthProvider>
+          <AnonymousWatchIntentConverter />
           <Header />
           <main className="rw-patriot-shell flex-1">{children}</main>
+          <NextActionRail />
           <Footer />
         </AuthProvider>
         <Analytics />

@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import {
+  getAllOfficials,
   getOfficialWithScores,
   getScoreCard,
   getFundingSummary,
@@ -10,8 +11,7 @@ import {
   getPublicVoteRecord,
 } from "@/lib/data";
 import { buildFallbackIdeologyProfile, getOfficialIdeologyProfile } from "@/lib/ideology";
-import { formatLevelName, getPartyColor } from "@/lib/formatting";
-import ScoreGauge from "@/components/scores/ScoreGauge";
+import { getPartyColor } from "@/lib/formatting";
 import CategoryBreakdown from "@/components/scores/CategoryBreakdown";
 import FundingOverview from "@/components/funding/FundingOverview";
 import TopDonorsList from "@/components/funding/TopDonorsList";
@@ -19,20 +19,28 @@ import DonorBreakdownChart from "@/components/funding/DonorBreakdownChart";
 import GeographicBreakdown from "@/components/funding/GeographicBreakdown";
 import VoteTimeline from "@/components/votes/VoteTimeline";
 import RedFlagCard from "@/components/shared/RedFlagCard";
-import PartyBadge from "@/components/officials/PartyBadge";
 import IdeologyChart from "@/components/officials/IdeologyChart";
+import OfficialTimeline from "@/components/officials/OfficialTimeline";
 import OfficialVotingSection from "@/components/voting/OfficialVotingSection";
 import GradeOfficialSection from "@/components/voting/GradeOfficialSection";
 import CommentSection from "@/components/comments/CommentSection";
-import ShareButtons from "@/components/shared/ShareButtons";
 import ReportButton from "@/components/shared/ReportButton";
 import ProfileOpenTracker from "@/components/shared/ProfileOpenTracker";
 import ProfileScorecardVote from "@/components/scorecards/ProfileScorecardVote";
 import OfficialSocialPanel from "@/components/officials/OfficialSocialPanel";
-import OfficialPhotoImage, { FEATURED_OFFICIAL_PHOTO_QUALITY } from "@/components/shared/OfficialPhotoImage";
+import VerifiedPoliticalFeedbackPanel from "@/components/profile/VerifiedPoliticalFeedbackPanel";
 import { getPublicProfileOverlay, type PublicProfileEnrichmentItem, type PublicProfileOverlay, type PublicProfileVoteSnapshot } from "@/lib/profile-overlays";
 import { buildOfficialCompletionSnapshot } from "@/lib/profile-completion";
 import { getCongressTradingSnapshot } from "@/lib/congress-trading";
+import { buildOfficialTimelineFromSources, dedupeTimelineEvents, getDatabaseTimelineEvents, sortTimelineEvents } from "@/lib/official-timeline";
+import OfficialHero from "@/components/officials/OfficialHero";
+import SourceTrail, { type ProfileSourceTrailEntry } from "@/components/officials/SourceTrail";
+import PublicQuestionCard from "@/components/officials/PublicQuestionCard";
+import RelatedProfileCard, { type RelatedProfileCardRecord } from "@/components/officials/RelatedProfileCard";
+import ProfileSectionTracker from "@/components/officials/ProfileSectionTracker";
+import FeedbackCluster from "@/components/civic/FeedbackCluster";
+import { profileFeedbackOptions } from "@/lib/civic-actions";
+import type { FundingSummary, NewsArticle, Official, PublicVoteRecord, RedFlag, ScoreCard } from "@/types";
 
 export const revalidate = 86400;
 export const dynamic = "force-dynamic";
@@ -53,11 +61,21 @@ export async function generateMetadata({
   const title = `${official.name} - ${official.position}`;
   const description = `Source-backed RepWatchr profile for ${official.name}, ${official.position} serving ${official.jurisdiction}.`;
   const canonicalUrl = `https://www.repwatchr.com/officials/${official.id}`;
-  const ogImage = `/api/og/official?id=${encodeURIComponent(official.id)}`;
+  const ogImage = `https://www.repwatchr.com/api/og/official?id=${encodeURIComponent(official.id)}`;
+  const completion = buildOfficialCompletionSnapshot(official);
+  const sourceCount = official.sourceLinks?.length ?? 0;
+  const shouldIndex =
+    completion.completionPercent >= 35 &&
+    sourceCount > 0 &&
+    official.reviewStatus !== "needs_source_review";
 
   return {
     title,
     description,
+    robots: {
+      index: shouldIndex,
+      follow: true,
+    },
     alternates: {
       canonical: canonicalUrl,
     },
@@ -117,158 +135,138 @@ export default async function OfficialProfilePage({
   const ideologyProfile = getOfficialIdeologyProfile(id) ?? buildFallbackIdeologyProfile(official);
   const profileOverlay = await getPublicProfileOverlay("official", id);
   const staticCompletion = buildOfficialCompletionSnapshot(official);
-  const sourceLinks = official.sourceLinks ?? [];
-  const contactEmail = official.contactInfo.email;
-  const contactIsUrl = contactEmail?.startsWith("http://") || contactEmail?.startsWith("https://");
   const overlayPublicRecords = profileOverlay.enrichmentItems.filter((item) => item.category !== "news");
   const overlayNews = profileOverlay.enrichmentItems.filter((item) => item.category === "news");
   const buildoutPercent = profileOverlay.completion?.completionPercent ?? staticCompletion.completionPercent;
   const buildoutComplete = profileOverlay.completion?.isComplete ?? staticCompletion.isComplete;
   const buildoutMissingItems = profileOverlay.completion?.missingItems ?? staticCompletion.missingItems;
+  const staticTimelineEvents = buildOfficialTimelineFromSources({
+    official,
+    scoreCard,
+    funding,
+    redFlags,
+    relatedNews,
+    publicVoteRecord,
+    profileOverlay,
+    congressTrading,
+  });
+  const databaseTimeline = await getDatabaseTimelineEvents(id);
+  const timelineEvents = sortTimelineEvents(dedupeTimelineEvents([...databaseTimeline.events, ...staticTimelineEvents]));
 
   const allScoredVotes = scoreCard
     ? Object.values(scoreCard.categories).flatMap((c) => c.votes)
     : [];
 
   const partyColor = getPartyColor(official.party);
+  const profilePath = `/officials/${official.id}`;
+  const sourceTrailEntries = buildProfileSourceTrail({
+    official,
+    funding,
+    redFlags,
+    relatedNews,
+    publicVoteRecord,
+    profileOverlay,
+    congressTrading,
+  });
+  const sourceCount = sourceTrailEntries.length;
+  const latestProfileUpdate = latestDate(
+    official.lastVerifiedAt,
+    scoreCard?.lastUpdated,
+    funding?.lastUpdated,
+    publicVoteRecord?.lastUpdated,
+    profileOverlay.completion?.lastCheckedAt,
+    ...redFlags.map((flag) => flag.date),
+    ...relatedNews.map((article) => article.publishedAt),
+  );
+  const confidenceLabel = profileConfidenceLabel(
+    sourceCount,
+    buildoutPercent,
+    publicVoteRecord?.summary.totalVotesLoaded ?? 0,
+  );
+  const recordSummary = buildRecordSummary({
+    official,
+    sourceCount,
+    completionPercent: buildoutPercent,
+    missingItems: buildoutMissingItems,
+    scoreCard,
+    funding,
+    redFlags,
+    publicVoteRecord,
+    timelineEventCount: timelineEvents.length,
+    latestUpdate: latestProfileUpdate,
+  });
+  const publicQuestions = buildPublicQuestions({
+    official,
+    missingItems: buildoutMissingItems,
+    funding,
+    publicVoteRecord,
+    sourceCount,
+  });
+  const relatedProfiles = buildRelatedProfiles(official, getAllOfficials());
+  const canonicalUrl = `https://www.repwatchr.com${profilePath}`;
+  const pageDescription = `Source-backed RepWatchr profile for ${official.name}, ${official.position} serving ${official.jurisdiction}.`;
+  const jsonLd = profileJsonLd({
+    official,
+    canonicalUrl,
+    description: pageDescription,
+    sourceCount,
+    completionPercent: buildoutPercent,
+  });
 
   return (
     <div className="min-h-screen bg-[#f8fbff] text-slate-950">
+      {jsonLd.map((item, index) => (
+        <script
+          key={index}
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(item) }}
+        />
+      ))}
       <ProfileOpenTracker
         profileId={official.id}
         profileType="official"
-        path={`/officials/${official.id}`}
+        path={profilePath}
         level={official.level}
       />
-      {/* Hero */}
-      <section
-        className="border-b-4 bg-white text-slate-950"
-        style={{ borderBottomColor: partyColor }}
-      >
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6 sm:py-8">
-          {/* Mobile: stacked layout, Desktop: side by side */}
-          <div className="flex flex-col items-start gap-4 sm:flex-row sm:gap-7">
-            <figure className="shrink-0">
-              <div className="relative flex h-28 w-28 items-center justify-center overflow-hidden rounded-2xl border border-gray-200 bg-gray-200 text-3xl font-bold text-gray-500 shadow-md shadow-slate-950/10 sm:h-44 sm:w-44 sm:rounded-3xl sm:text-5xl">
-                <OfficialPhotoImage
-                  official={official}
-                  sizes="(min-width: 640px) 352px, 224px"
-                  quality={FEATURED_OFFICIAL_PHOTO_QUALITY}
-                  preload
-                  className="object-cover"
-                  fallbackClassName="grid h-full w-full place-items-center text-center font-black uppercase tracking-wide text-gray-500"
-                />
-              </div>
-              {official.photoCredit ? (
-                <figcaption className="mt-1 max-w-44 text-[10px] font-semibold leading-4 text-gray-500">
-                  {official.photoCredit}
-                </figcaption>
-              ) : null}
-            </figure>
-            <div className="flex-1 min-w-0">
-              <div className="flex items-center gap-2 sm:gap-3 flex-wrap">
-                <h1 className="text-xl sm:text-3xl font-extrabold text-gray-900">
-                  {official.name}
-                </h1>
-                <PartyBadge party={official.party} />
-              </div>
-              <p className="text-base sm:text-lg text-gray-600 mt-1">{official.position}</p>
-              <div className="flex flex-wrap gap-2 sm:gap-4 mt-1.5 text-xs sm:text-sm text-gray-500">
-                {official.district && <span>District: {official.district}</span>}
-                <span>{official.jurisdiction}</span>
-                <span>{formatLevelName(official.level)}</span>
-              </div>
-              <div className="mt-3 flex flex-wrap items-center gap-3">
-                <ShareButtons
-                  title={`${official.name} - ${official.position} | RepWatchr`}
-                  description={`See the scorecard, voting record, and funding data for ${official.name}.`}
-                  path={`/officials/${official.id}`}
-                />
-                <ReportButton
-                  officialId={official.id}
-                  pageUrl={`/officials/${official.id}`}
-                />
-              </div>
-              {official.bio && (
-                <p className="mt-3 text-sm sm:text-base text-gray-700 leading-relaxed max-w-2xl">{official.bio}</p>
-              )}
-              {official.contactInfo && (
-                <div className="flex flex-wrap gap-3 sm:gap-4 mt-3 text-xs sm:text-sm">
-                  {official.contactInfo.office && (
-                    <span className="text-gray-600">
-                      Office: {official.contactInfo.office}
-                    </span>
-                  )}
-                  {official.contactInfo.phone && (
-                    <span className="text-gray-600">
-                      Phone: {official.contactInfo.phone}
-                    </span>
-                  )}
-                  {contactEmail && (
-                    <a
-                      href={contactIsUrl ? contactEmail : `mailto:${contactEmail}`}
-                      className="text-blue-600 hover:underline"
-                      target={contactIsUrl ? "_blank" : undefined}
-                      rel={contactIsUrl ? "noopener noreferrer" : undefined}
-                    >
-                      {contactIsUrl ? "Contact Form" : contactEmail}
-                    </a>
-                  )}
-                  {official.contactInfo.website && (
-                    <a
-                      href={official.contactInfo.website}
-                      className="text-blue-600 hover:underline"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      Official Website
-                    </a>
-                  )}
-                </div>
-              )}
-            </div>
-            {/* Score Gauge - shown inline on desktop, below name on mobile */}
-            {scoreCard && (
-              <div className="shrink-0 mt-4 sm:mt-0">
-                <ScoreGauge
-                  score={scoreCard.overall}
-                  letterGrade={scoreCard.letterGrade}
-                  size="lg"
-                />
-                <p className="text-center text-xs text-gray-500 mt-1">
-                  Overall Score
-                </p>
-              </div>
-            )}
-          </div>
-        </div>
-      </section>
+      <OfficialHero
+        official={{ ...official, scoreCard, fundingSummary: funding, redFlags }}
+        sourceCount={sourceCount}
+        completionPercent={buildoutPercent}
+        confidenceLabel={confidenceLabel}
+        lastUpdatedLabel={dateLabel(latestProfileUpdate)}
+        partyColor={partyColor}
+      />
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
-        {/* Red Flags */}
-        {redFlags.length > 0 && (
-          <section className="mb-8">
-            <h2 className="text-xl font-bold text-red-700 mb-4">
-              Red Flags ({redFlags.length})
-            </h2>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-              {redFlags.map((flag) => (
-                <RedFlagCard key={flag.id} flag={flag} />
-              ))}
-            </div>
-          </section>
-        )}
+        <RecordSummaryPanel summary={recordSummary} officialName={official.name} />
 
-        {overlayPublicRecords.length > 0 && (
-          <ProfileOverlayEvidencePanel items={overlayPublicRecords} />
-        )}
+        <div className="mt-6">
+          <FeedbackCluster
+            entityType="official"
+            entityId={official.id}
+            route={profilePath}
+            title="Profile feedback"
+            description="This is civic/product feedback, not election voting. Use it to tell RepWatchr what needs more records."
+            options={profileFeedbackOptions}
+          />
+        </div>
 
-        {congressTrading && (
-          <CongressTradingDisclosurePanel snapshot={congressTrading} />
-        )}
+        <div className="mt-8">
+          <SourceTrail
+            officialId={official.id}
+            officialName={official.name}
+            profilePath={profilePath}
+            sources={sourceTrailEntries}
+          />
+        </div>
 
         <div className="mb-8">
-          <IdeologyChart profile={ideologyProfile} />
+          <IdeologyChart
+            profile={ideologyProfile}
+            publicVoteCount={publicVoteRecord?.summary.totalVotesLoaded ?? 0}
+            publicVoteSession={publicVoteRecord?.session}
+            completionPercent={buildoutPercent}
+          />
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
@@ -277,6 +275,12 @@ export default async function OfficialProfilePage({
             {/* Scorecard */}
             {scoreCard && (
               <section>
+                <ProfileSectionTracker
+                  officialId={official.id}
+                  officialName={official.name}
+                  profilePath={profilePath}
+                  section="issue_scorecard"
+                />
                 <h2 className="text-xl font-bold text-gray-900 mb-4">
                   Issue Scorecard
                 </h2>
@@ -290,6 +294,14 @@ export default async function OfficialProfilePage({
             {/* Voting Record */}
             {allScoredVotes.length > 0 && (
               <section>
+                <ProfileSectionTracker
+                  officialId={official.id}
+                  officialName={official.name}
+                  profilePath={profilePath}
+                  section="voting_record"
+                  eventName="vote_table_opened"
+                  metadata={{ scored_vote_count: allScoredVotes.length }}
+                />
                 <h2 className="text-xl font-bold text-gray-900 mb-4">
                   Voting Record
                 </h2>
@@ -304,6 +316,19 @@ export default async function OfficialProfilePage({
             {profileOverlay.voteSnapshots.length > 0 && (
               <ProfileOverlayVotesPanel votes={profileOverlay.voteSnapshots} />
             )}
+
+            {allScoredVotes.length === 0 &&
+              (!publicVoteRecord || publicVoteRecord.votes.length === 0) &&
+              profileOverlay.voteSnapshots.length === 0 && (
+                <ProfileDataEmptyState
+                  title="No vote records attached yet"
+                  body="RepWatchr is not assigning vote meaning without a public vote source. Submit a roll call, meeting vote, agenda, minutes, or official vote page."
+                  primaryHref={`/sources/submit?form=submit_source&sourceType=vote&targetType=official&targetId=${encodeURIComponent(official.id)}&targetName=${encodeURIComponent(official.name)}`}
+                  primaryLabel="Submit vote source"
+                  secondaryHref={`/dashboard/watchlists?entityType=official&entityId=${encodeURIComponent(official.id)}&label=${encodeURIComponent(official.name)}`}
+                  secondaryLabel="Watch for vote updates"
+                />
+              )}
 
             {/* Campaign Promises */}
             {official.campaignPromises &&
@@ -329,6 +354,13 @@ export default async function OfficialProfilePage({
 
           {/* Right Column: Citizen Vote + Funding */}
           <div className="space-y-6">
+            <VerifiedPoliticalFeedbackPanel
+              officialId={official.id}
+              officialName={official.name}
+              state={official.state}
+              counties={official.county}
+            />
+
             <ProfileScorecardVote
               targetType="official"
               targetId={official.id}
@@ -336,34 +368,16 @@ export default async function OfficialProfilePage({
               targetPath={`/officials/${official.id}`}
             />
 
-            <OfficialSocialPanel
-              officialName={official.name}
-              contactInfo={official.contactInfo}
-            />
-
-            <ProfileBuildoutPanel
-              percent={buildoutPercent}
-              isComplete={buildoutComplete}
-              missingItems={buildoutMissingItems}
-            />
-
-            <ProfileOverlayStatusPanel overlay={profileOverlay} />
-
-            {/* Citizen Approval Rating & Vote Button */}
-            <OfficialVotingSection
-              officialId={official.id}
-              officialCounties={official.county}
-            />
-            <GradeOfficialSection
-              officialId={official.id}
-              officialCounties={official.county.map((c) =>
-                c.toLowerCase().endsWith("county") ? c : `${c} County`
-              )}
-              officialName={official.name}
-            />
-
             {funding && (
               <>
+                <ProfileSectionTracker
+                  officialId={official.id}
+                  officialName={official.name}
+                  profilePath={profilePath}
+                  section="campaign_funding"
+                  eventName="funding_table_opened"
+                  metadata={{ cycle: funding.cycle }}
+                />
                 <h2 className="text-xl font-bold text-gray-900">
                   Campaign Funding
                 </h2>
@@ -399,6 +413,43 @@ export default async function OfficialProfilePage({
               </>
             )}
 
+            {!funding && (
+              <ProfileDataEmptyState
+                title="No campaign finance sources attached yet"
+                body="Funding records need a public filing source before RepWatchr summarizes donors, PACs, vendors, or campaign finance movement."
+                primaryHref={`/sources/submit?form=submit_source&sourceType=funding&targetType=official&targetId=${encodeURIComponent(official.id)}&targetName=${encodeURIComponent(official.name)}`}
+                primaryLabel="Submit funding source"
+                secondaryHref={`/services/local-race-source-pack?targetType=official&targetId=${encodeURIComponent(official.id)}&targetName=${encodeURIComponent(official.name)}`}
+                secondaryLabel="Request finance source pack"
+              />
+            )}
+
+            <OfficialSocialPanel
+              officialName={official.name}
+              contactInfo={official.contactInfo}
+            />
+
+            <ProfileBuildoutPanel
+              percent={buildoutPercent}
+              isComplete={buildoutComplete}
+              missingItems={buildoutMissingItems}
+            />
+
+            <ProfileOverlayStatusPanel overlay={profileOverlay} />
+
+            {/* Citizen Approval Rating & Vote Button */}
+            <OfficialVotingSection
+              officialId={official.id}
+              officialCounties={official.county}
+            />
+            <GradeOfficialSection
+              officialId={official.id}
+              officialCounties={official.county.map((c) =>
+                c.toLowerCase().endsWith("county") ? c : `${c} County`
+              )}
+              officialName={official.name}
+            />
+
             {!funding && !scoreCard && (
               <div className="bg-gray-50 rounded-lg p-6 text-center">
                 <p className="text-gray-500 text-sm">
@@ -408,30 +459,99 @@ export default async function OfficialProfilePage({
               </div>
             )}
 
-            {sourceLinks.length > 0 && (
-              <section className="rounded-xl border border-gray-200 bg-white p-5 shadow-sm">
-                <h2 className="text-lg font-bold text-gray-900">Public Sources</h2>
-                <p className="mt-1 text-xs font-semibold text-gray-500">
-                  Last verified: {official.lastVerifiedAt ?? "source review pending"}
-                </p>
-                <div className="mt-4 space-y-2">
-                  {sourceLinks.map((source) => (
-                    <a
-                      key={`${source.title}-${source.url}`}
-                      href={source.url}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="flex items-center justify-between gap-3 rounded-lg border border-gray-200 bg-gray-50 px-3 py-2 text-sm font-semibold text-blue-700 transition hover:border-blue-200 hover:bg-blue-50"
-                    >
-                      <span>{source.title}</span>
-                      <span className="shrink-0 text-xs uppercase tracking-wide">Open</span>
-                    </a>
-                  ))}
-                </div>
-              </section>
-            )}
           </div>
         </div>
+
+        <div className="mt-10">
+          <ProfileSectionTracker
+            officialId={official.id}
+            officialName={official.name}
+            profilePath={profilePath}
+            section="timeline"
+            eventName="timeline_opened"
+            metadata={{ event_count: timelineEvents.length }}
+          />
+          <OfficialTimeline
+            officialId={official.id}
+            officialName={official.name}
+            events={timelineEvents}
+            compact
+          />
+        </div>
+
+        <section className="mt-10">
+          <ProfileSectionTracker
+            officialId={official.id}
+            officialName={official.name}
+            profilePath={profilePath}
+            section="public_questions"
+          />
+          <div className="mb-4 flex flex-col gap-2 sm:flex-row sm:items-end sm:justify-between">
+            <div>
+              <p className="text-xs font-black uppercase tracking-[0.2em] text-red-700">
+                Public questions
+              </p>
+              <h2 className="mt-1 text-2xl font-black text-slate-950">
+                Ask for the record, not the rumor.
+              </h2>
+            </div>
+            <Link
+              href={`/sources/submit?targetType=official&targetId=${encodeURIComponent(official.id)}&targetName=${encodeURIComponent(official.name)}`}
+              className="w-fit rounded-xl bg-slate-950 px-4 py-3 text-sm font-black uppercase tracking-wide text-white transition hover:-translate-y-0.5 hover:bg-blue-700"
+            >
+              Submit a better source
+            </Link>
+          </div>
+          <div className="grid gap-3 lg:grid-cols-2">
+            {publicQuestions.map((item) => (
+              <PublicQuestionCard
+                key={item.question}
+                officialId={official.id}
+                officialName={official.name}
+                profilePath={profilePath}
+                question={item.question}
+                context={item.context}
+              />
+            ))}
+          </div>
+        </section>
+
+        {(redFlags.length > 0 || overlayPublicRecords.length > 0 || congressTrading) && (
+          <section className="mt-10 space-y-8" aria-label="Public records, red flags, and disclosure watch">
+            <ProfileSectionTracker
+              officialId={official.id}
+              officialName={official.name}
+              profilePath={profilePath}
+              section="red_flags_and_disclosures"
+              eventName="red_flag_opened"
+              metadata={{
+                red_flag_count: redFlags.length,
+                overlay_count: overlayPublicRecords.length,
+                has_congress_trading: Boolean(congressTrading),
+              }}
+            />
+            {redFlags.length > 0 && (
+              <div>
+                <h2 className="mb-4 text-xl font-bold text-red-700">
+                  Red Flags ({redFlags.length})
+                </h2>
+                <div className="grid grid-cols-1 gap-4 md:grid-cols-2">
+                  {redFlags.map((flag) => (
+                    <RedFlagCard key={flag.id} flag={flag} />
+                  ))}
+                </div>
+              </div>
+            )}
+
+            {overlayPublicRecords.length > 0 && (
+              <ProfileOverlayEvidencePanel items={overlayPublicRecords} />
+            )}
+
+            {congressTrading && (
+              <CongressTradingDisclosurePanel snapshot={congressTrading} />
+            )}
+          </section>
+        )}
 
         {/* Related News */}
         {relatedNews.length > 0 && (
@@ -491,6 +611,51 @@ export default async function OfficialProfilePage({
           <ProfileOverlayStatementsPanel overlay={profileOverlay} />
         )}
 
+        {relatedProfiles.length > 0 && (
+          <section className="mt-10">
+            <ProfileSectionTracker
+              officialId={official.id}
+              officialName={official.name}
+              profilePath={profilePath}
+              section="related_profiles"
+              metadata={{ related_count: relatedProfiles.length }}
+            />
+            <div className="mb-4 flex flex-col gap-2 sm:flex-row sm:items-end sm:justify-between">
+              <div>
+                <p className="text-xs font-black uppercase tracking-[0.2em] text-blue-700">
+                  Keep checking
+                </p>
+                <h2 className="mt-1 text-2xl font-black text-slate-950">
+                  Related profiles to compare next
+                </h2>
+              </div>
+              <Link
+                href="/officials"
+                className="w-fit rounded-xl border border-slate-300 bg-white px-4 py-3 text-sm font-black uppercase tracking-wide text-slate-950 transition hover:-translate-y-0.5 hover:border-blue-300 hover:text-blue-700"
+              >
+                Open official search
+              </Link>
+            </div>
+            <div className="grid gap-3 lg:grid-cols-2 xl:grid-cols-3">
+              {relatedProfiles.map((profile) => (
+                <RelatedProfileCard key={profile.id} profile={profile} />
+              ))}
+            </div>
+          </section>
+        )}
+
+        <NextProfileActions
+          officialId={official.id}
+          officialName={official.name}
+          profilePath={profilePath}
+        />
+
+        <TrustCorrectionBox
+          officialId={official.id}
+          officialName={official.name}
+          profilePath={profilePath}
+        />
+
         {/* Public Discussion */}
         <CommentSection
           officialId={official.id}
@@ -498,6 +663,244 @@ export default async function OfficialProfilePage({
         />
       </div>
     </div>
+  );
+}
+
+function RecordSummaryPanel({
+  summary,
+  officialName,
+}: {
+  summary: RecordSummary;
+  officialName: string;
+}) {
+  const columns = [
+    {
+      title: "Confirmed",
+      eyebrow: "Record summary",
+      items: summary.confirmed,
+      tone: "border-emerald-200 bg-emerald-50 text-emerald-950",
+      dot: "bg-emerald-500",
+    },
+    {
+      title: "Needs source review",
+      eyebrow: "Still open",
+      items: summary.needsSource,
+      tone: "border-amber-200 bg-amber-50 text-amber-950",
+      dot: "bg-amber-500",
+    },
+    {
+      title: "Changed recently",
+      eyebrow: "Watch signals",
+      items: summary.changedRecently,
+      tone: "border-blue-200 bg-blue-50 text-blue-950",
+      dot: "bg-blue-500",
+    },
+    {
+      title: "What is not known",
+      eyebrow: "Trust guardrail",
+      items: summary.notKnown,
+      tone: "border-slate-200 bg-white text-slate-950",
+      dot: "bg-slate-400",
+    },
+  ];
+
+  return (
+    <section className="rounded-3xl border border-slate-200 bg-white p-5 shadow-[0_22px_70px_rgba(15,23,42,0.08)] sm:p-6">
+      <div className="flex flex-col gap-2 sm:flex-row sm:items-end sm:justify-between">
+        <div>
+          <p className="text-xs font-black uppercase tracking-[0.2em] text-red-700">
+            Record summary
+          </p>
+          <h2 className="mt-1 text-2xl font-black tracking-tight text-slate-950 sm:text-3xl">
+            What RepWatchr can say about {officialName}
+          </h2>
+        </div>
+        <Link
+          href="/methodology"
+          className="w-fit rounded-xl border border-slate-300 bg-slate-50 px-4 py-3 text-sm font-black uppercase tracking-wide text-slate-950 transition hover:-translate-y-0.5 hover:border-blue-300 hover:text-blue-700"
+        >
+          Read methodology
+        </Link>
+      </div>
+      <div className="mt-5 grid gap-3 lg:grid-cols-4">
+        {columns.map((column) => (
+          <div key={column.title} className={`rounded-2xl border p-4 ${column.tone}`}>
+            <p className="text-[11px] font-black uppercase tracking-[0.18em] opacity-70">
+              {column.eyebrow}
+            </p>
+            <h3 className="mt-2 text-lg font-black leading-tight">{column.title}</h3>
+            <ul className="mt-3 space-y-3 text-sm font-semibold leading-6">
+              {column.items.map((item) => (
+                <li key={item} className="flex gap-2">
+                  <span className={`mt-2 h-2 w-2 shrink-0 rounded-full ${column.dot}`} />
+                  <span>{item}</span>
+                </li>
+              ))}
+            </ul>
+          </div>
+        ))}
+      </div>
+    </section>
+  );
+}
+
+function NextProfileActions({
+  officialId,
+  officialName,
+  profilePath,
+}: {
+  officialId: string;
+  officialName: string;
+  profilePath: string;
+}) {
+  const params = `targetType=official&targetId=${encodeURIComponent(officialId)}&targetName=${encodeURIComponent(officialName)}`;
+  const actions = [
+    {
+      label: "Watch this official",
+      href: `/dashboard/watchlists?entityType=official&entityId=${encodeURIComponent(officialId)}&label=${encodeURIComponent(officialName)}`,
+      description: "Save the profile and come back when sources, votes, or funding change.",
+    },
+    {
+      label: "Submit one missing source",
+      href: `/sources/submit?${params}`,
+      description: "Send a public URL into the review queue without overclaiming it.",
+    },
+    {
+      label: "Build a source packet",
+      href: `/services/free-source-packet?${params}`,
+      description: "Turn one public link into a copyable source-backed packet.",
+    },
+    {
+      label: "Request official brief",
+      href: `/services/official-record-brief?${params}`,
+      description: "Paid research lane for a fuller public-record brief.",
+    },
+  ];
+
+  return (
+    <section className="mt-10 rounded-3xl border border-blue-100 bg-[radial-gradient(circle_at_top_left,rgba(37,99,235,0.12),transparent_34%),linear-gradient(135deg,#ffffff_0%,#f8fbff_100%)] p-5 shadow-[0_22px_70px_rgba(15,23,42,0.08)] sm:p-6">
+      <ProfileSectionTracker
+        officialId={officialId}
+        officialName={officialName}
+        profilePath={profilePath}
+        section="next_profile_actions"
+      />
+      <p className="text-xs font-black uppercase tracking-[0.2em] text-blue-700">
+        Your next useful move
+      </p>
+      <h2 className="mt-2 text-2xl font-black text-slate-950">
+        Do not stop at this page.
+      </h2>
+      <p className="mt-2 max-w-3xl text-sm font-semibold leading-6 text-slate-600">
+        Watch the record, improve the source trail, build a packet, or request a deeper public-record brief. Every action should make the record easier to inspect.
+      </p>
+      <div className="mt-5 grid gap-3 md:grid-cols-2 xl:grid-cols-4">
+        {actions.map((action) => (
+          <Link
+            key={action.label}
+            href={action.href}
+            className="group rounded-2xl border border-slate-200 bg-white p-4 shadow-sm transition hover:-translate-y-1 hover:border-blue-300 hover:shadow-xl hover:shadow-blue-950/10"
+          >
+            <h3 className="text-base font-black text-slate-950 group-hover:text-blue-700">
+              {action.label}
+            </h3>
+            <p className="mt-2 text-sm font-semibold leading-6 text-slate-600">
+              {action.description}
+            </p>
+          </Link>
+        ))}
+      </div>
+    </section>
+  );
+}
+
+function TrustCorrectionBox({
+  officialId,
+  officialName,
+  profilePath,
+}: {
+  officialId: string;
+  officialName: string;
+  profilePath: string;
+}) {
+  return (
+    <section className="mt-8 rounded-3xl border border-red-100 bg-white p-5 shadow-sm sm:p-6">
+      <ProfileSectionTracker
+        officialId={officialId}
+        officialName={officialName}
+        profilePath={profilePath}
+        section="trust_and_correction"
+      />
+      <div className="grid gap-5 lg:grid-cols-[1fr_auto] lg:items-start">
+        <div>
+          <p className="text-xs font-black uppercase tracking-[0.2em] text-red-700">
+            Trust and correction
+          </p>
+          <h2 className="mt-2 text-2xl font-black text-slate-950">
+            Source-backed, correction-ready, hostile-read safe.
+          </h2>
+          <p className="mt-2 max-w-4xl text-sm font-semibold leading-6 text-slate-600">
+            RepWatchr does not publish private addresses, minor-child details, threats, doxxing instructions, or unsourced criminal accusations. If a record is wrong, stale, incomplete, or missing context, submit a correction and attach the public source path.
+          </p>
+          <div className="mt-4 flex flex-wrap gap-2 text-xs font-black uppercase tracking-wide">
+            {["Confirmed public record", "Source-backed claim", "Needs source", "Correction requested", "Under review"].map((label) => (
+              <span key={label} className="rounded-full border border-slate-200 bg-slate-50 px-3 py-1 text-slate-700">
+                {label}
+              </span>
+            ))}
+          </div>
+        </div>
+        <div className="rounded-2xl border border-slate-200 bg-slate-50 p-4">
+          <ReportButton officialId={officialId} pageUrl={profilePath} />
+          <Link
+            href={`/sources/submit?form=correction_request&targetType=official&targetId=${encodeURIComponent(officialId)}&targetName=${encodeURIComponent(officialName)}`}
+            className="mt-3 inline-flex w-full justify-center rounded-xl bg-slate-950 px-4 py-3 text-sm font-black uppercase tracking-wide text-white transition hover:bg-red-700"
+          >
+            Submit correction source
+          </Link>
+        </div>
+      </div>
+    </section>
+  );
+}
+
+function ProfileDataEmptyState({
+  title,
+  body,
+  primaryHref,
+  primaryLabel,
+  secondaryHref,
+  secondaryLabel,
+}: {
+  title: string;
+  body: string;
+  primaryHref: string;
+  primaryLabel: string;
+  secondaryHref: string;
+  secondaryLabel: string;
+}) {
+  return (
+    <section className="rounded-2xl border border-dashed border-slate-300 bg-white p-5 shadow-sm">
+      <p className="text-xs font-black uppercase tracking-[0.18em] text-amber-700">
+        Needs source
+      </p>
+      <h2 className="mt-2 text-xl font-black text-slate-950">{title}</h2>
+      <p className="mt-2 text-sm font-semibold leading-6 text-slate-600">{body}</p>
+      <div className="mt-4 flex flex-wrap gap-2">
+        <Link
+          href={primaryHref}
+          className="rounded-xl bg-slate-950 px-4 py-3 text-sm font-black uppercase tracking-wide text-white transition hover:-translate-y-0.5 hover:bg-blue-700"
+        >
+          {primaryLabel}
+        </Link>
+        <Link
+          href={secondaryHref}
+          className="rounded-xl border border-slate-300 bg-slate-50 px-4 py-3 text-sm font-black uppercase tracking-wide text-slate-950 transition hover:-translate-y-0.5 hover:border-blue-300 hover:text-blue-700"
+        >
+          {secondaryLabel}
+        </Link>
+      </div>
+    </section>
   );
 }
 
@@ -565,6 +968,12 @@ function FederalVoteRecordPanel({
 }: {
   record: NonNullable<ReturnType<typeof getPublicVoteRecord>>;
 }) {
+  const isTexasStateRecord = record.level === "state" && "state" in record && record.state === "TX";
+  const title = isTexasStateRecord ? "Texas Legislature roll calls" : "Current Congress roll calls";
+  const sourceNote = isTexasStateRecord
+    ? "Source-backed Texas Legislature record votes loaded from Texas Legislature Online. These are not automatically scored left or right until issue mapping is reviewed."
+    : "Source-backed roll-call votes loaded from official House and Senate records. These are not automatically scored left or right until issue mapping is reviewed.";
+
   return (
     <section className="rounded-2xl border border-blue-100 bg-white p-5 shadow-sm">
       <div className="flex flex-col gap-3 sm:flex-row sm:items-start sm:justify-between">
@@ -573,10 +982,13 @@ function FederalVoteRecordPanel({
             Public vote record snapshot
           </p>
           <h2 className="mt-1 text-xl font-black text-gray-950">
-            Recent federal roll calls
+            {title}
           </h2>
           <p className="mt-1 text-sm font-semibold leading-6 text-gray-600">
-            Source-backed roll-call votes loaded from official House and Senate records. These are not automatically scored left or right until issue mapping is reviewed.
+            {sourceNote}
+          </p>
+          <p className="mt-2 text-xs font-black uppercase tracking-wide text-gray-500">
+            {record.session}
           </p>
         </div>
         <div className="rounded-xl border border-blue-100 bg-blue-50 px-4 py-3 text-right">
@@ -927,4 +1339,541 @@ function ProfileOverlayStatementsPanel({ overlay }: { overlay: PublicProfileOver
       </div>
     </section>
   );
+}
+
+type CongressTradingSnapshot = NonNullable<ReturnType<typeof getCongressTradingSnapshot>>;
+
+type RecordSummary = {
+  confirmed: string[];
+  needsSource: string[];
+  changedRecently: string[];
+  notKnown: string[];
+};
+
+function sourceDomain(url: string) {
+  try {
+    return new URL(url).hostname.replace(/^www\./, "");
+  } catch {
+    return null;
+  }
+}
+
+function dateLabel(value: string | null | undefined) {
+  if (!value) return "Pending";
+  const date = new Date(value);
+  if (Number.isNaN(date.getTime())) return value;
+  return date.toLocaleDateString("en-US", {
+    month: "short",
+    day: "numeric",
+    year: "numeric",
+  });
+}
+
+function latestDate(...values: Array<string | null | undefined>) {
+  const dates = values
+    .map((value) => (value ? new Date(value) : null))
+    .filter((value): value is Date => Boolean(value && !Number.isNaN(value.getTime())))
+    .sort((a, b) => b.getTime() - a.getTime());
+
+  return dates[0]?.toISOString() ?? null;
+}
+
+function sourceConfidence(url: string, sourceName?: string | null) {
+  const domain = sourceDomain(url)?.toLowerCase() ?? "";
+  const name = sourceName?.toLowerCase() ?? "";
+
+  if (domain.endsWith(".gov") || domain.includes("congress.gov") || domain.includes("senate.gov") || domain.includes("house.gov") || domain.includes("fec.gov") || domain.includes("capitol.texas.gov")) {
+    return "Official record";
+  }
+
+  if (/(tribune|times|post|news|journal|chronicle|herald|gazette|reporter|press|radio|tv|apnews|reuters|politico|npr|pbs)/i.test(domain) || /(news|journal|tribune|times|post|press|radio|tv)/i.test(name)) {
+    return "Named source";
+  }
+
+  return "Source linked";
+}
+
+function profileConfidenceLabel(sourceCount: number, completionPercent: number, publicVoteCount: number) {
+  if (completionPercent >= 85 && sourceCount >= 5 && publicVoteCount >= 25) return "High confidence";
+  if (completionPercent >= 65 && sourceCount >= 3) return "Source-backed";
+  if (sourceCount > 0) return "Source-seeded";
+  return "Needs source";
+}
+
+function overlayCategoryToSourceCategory(category: PublicProfileEnrichmentItem["category"]): ProfileSourceTrailEntry["category"] {
+  if (category === "funding") return "funding";
+  if (category === "statement") return "public_statement";
+  if (category === "news") return "article";
+  if (category === "public_record" || category === "lawsuit" || category === "ethics") return "court_agency_record";
+  return "under_review";
+}
+
+function buildProfileSourceTrail({
+  official,
+  funding,
+  redFlags,
+  relatedNews,
+  publicVoteRecord,
+  profileOverlay,
+  congressTrading,
+}: {
+  official: Official;
+  funding?: FundingSummary;
+  redFlags: RedFlag[];
+  relatedNews: NewsArticle[];
+  publicVoteRecord?: PublicVoteRecord;
+  profileOverlay: PublicProfileOverlay;
+  congressTrading?: CongressTradingSnapshot;
+}): ProfileSourceTrailEntry[] {
+  const byUrl = new Map<string, ProfileSourceTrailEntry>();
+
+  function add(entry: Omit<ProfileSourceTrailEntry, "id" | "domain"> & { id?: string }) {
+    if (!entry.url || byUrl.has(entry.url)) return;
+    byUrl.set(entry.url, {
+      ...entry,
+      id: entry.id ?? `${entry.category}-${byUrl.size + 1}`,
+      domain: sourceDomain(entry.url),
+    });
+  }
+
+  for (const source of official.sourceLinks ?? []) {
+    add({
+      title: source.title,
+      url: source.url,
+      category: "official_source",
+      date: official.lastVerifiedAt,
+      sourceName: source.title,
+      confidenceLabel: sourceConfidence(source.url, source.title),
+      statusLabel: "Attached to profile",
+      summary: `Official source link attached to ${official.name}'s profile.`,
+    });
+  }
+
+  if (official.photoSourceUrl) {
+    add({
+      title: "Profile photo source",
+      url: official.photoSourceUrl,
+      category: "official_source",
+      date: official.lastVerifiedAt,
+      sourceName: official.photoCredit ?? "Photo source",
+      confidenceLabel: sourceConfidence(official.photoSourceUrl, official.photoCredit),
+      statusLabel: "Photo source",
+      summary: "Public source attached for the profile image.",
+    });
+  }
+
+  if (official.contactInfo.website) {
+    add({
+      title: "Official website",
+      url: official.contactInfo.website,
+      category: "official_source",
+      date: official.lastVerifiedAt,
+      sourceName: "Official website",
+      confidenceLabel: sourceConfidence(official.contactInfo.website, "Official website"),
+      statusLabel: "Public contact",
+      summary: "Primary public website or official office page.",
+    });
+  }
+
+  for (const source of publicVoteRecord?.sourceLinks ?? []) {
+    add({
+      title: source.title,
+      url: source.url,
+      category: "vote",
+      date: publicVoteRecord?.lastUpdated,
+      sourceName: source.title,
+      confidenceLabel: sourceConfidence(source.url, source.title),
+      statusLabel: "Vote source",
+      summary: `${publicVoteRecord?.summary.totalVotesLoaded ?? 0} public roll-call votes loaded from this source lane.`,
+    });
+  }
+
+  for (const vote of publicVoteRecord?.votes.slice(0, 12) ?? []) {
+    add({
+      title: vote.title || vote.question || `${vote.chamber} roll call ${vote.rollCall}`,
+      url: vote.sourceUrl,
+      category: "vote",
+      date: vote.date,
+      sourceName: vote.sourceName,
+      confidenceLabel: sourceConfidence(vote.sourceUrl, vote.sourceName),
+      statusLabel: "Roll call",
+      summary: `${vote.question} Result: ${vote.result}. Vote cast: ${vote.voteCast}.`,
+    });
+  }
+
+  for (const source of funding?.sources ?? []) {
+    add({
+      title: source.name,
+      url: source.url,
+      category: "funding",
+      date: source.retrievedDate || funding?.lastUpdated,
+      sourceName: source.name,
+      confidenceLabel: sourceConfidence(source.url, source.name),
+      statusLabel: "Funding source",
+      summary: `Campaign finance summary for cycle ${funding?.cycle}. Donations are public records and do not, by themselves, prove wrongdoing.`,
+    });
+  }
+
+  for (const flag of redFlags) {
+    add({
+      title: flag.title,
+      url: flag.sourceUrl,
+      category: flag.category === "funding" ? "funding" : "court_agency_record",
+      date: flag.date,
+      sourceName: "Red flag source",
+      confidenceLabel: sourceConfidence(flag.sourceUrl, flag.title),
+      statusLabel: "Source-backed review",
+      summary: flag.description,
+    });
+  }
+
+  for (const article of relatedNews) {
+    if (article.sourceUrl) {
+      add({
+        title: article.title,
+        url: article.sourceUrl,
+        category: "article",
+        date: article.publishedAt,
+        sourceName: article.sourceName ?? "Article source",
+        confidenceLabel: sourceConfidence(article.sourceUrl, article.sourceName),
+        statusLabel: article.sourceStatus === "needs_source_review" ? "Needs review" : "Source-linked",
+        summary: article.summary,
+      });
+    }
+
+    for (const source of article.sourceLinks ?? []) {
+      add({
+        title: source.title,
+        url: source.url,
+        category: "article",
+        date: article.publishedAt,
+        sourceName: article.sourceName ?? source.title,
+        confidenceLabel: sourceConfidence(source.url, source.title),
+        statusLabel: article.sourceStatus === "needs_source_review" ? "Needs review" : "Source-linked",
+        summary: article.summary,
+      });
+    }
+  }
+
+  for (const item of profileOverlay.enrichmentItems) {
+    add({
+      id: item.id,
+      title: item.title,
+      url: item.sourceUrl,
+      category: overlayCategoryToSourceCategory(item.category),
+      date: item.eventDate,
+      sourceName: item.sourceName,
+      confidenceLabel: item.sourceTier.replace(/_/g, " "),
+      statusLabel: item.status.replace(/_/g, " "),
+      summary: item.summary,
+    });
+  }
+
+  for (const vote of profileOverlay.voteSnapshots) {
+    add({
+      id: vote.id,
+      title: vote.issue ?? vote.question ?? vote.sourceVoteId,
+      url: vote.sourceUrl,
+      category: "vote",
+      date: vote.voteDate,
+      sourceName: "Daily vote source",
+      confidenceLabel: "Source linked",
+      statusLabel: vote.ruleReviewStatus.replace(/_/g, " "),
+      summary: vote.voteCast ? `Vote cast: ${vote.voteCast}.` : "Daily roll-call source awaiting issue mapping.",
+    });
+  }
+
+  for (const statement of profileOverlay.publicStatements) {
+    add({
+      id: statement.id,
+      title: `${statement.platform} public statement`,
+      url: statement.statementUrl,
+      category: "public_statement",
+      date: statement.statementDate,
+      sourceName: statement.platform,
+      confidenceLabel: sourceConfidence(statement.statementUrl, statement.platform),
+      statusLabel: "Approved statement",
+      summary: statement.excerpt ?? statement.contextNote ?? "Public statement source attached to profile.",
+    });
+  }
+
+  if (congressTrading) {
+    add({
+      title: `${official.name} trading tracker profile`,
+      url: congressTrading.primaryRow.trackerUrl,
+      category: "under_review",
+      date: congressTrading.primaryRow.lastFilingDate,
+      sourceName: congressTrading.source.name,
+      confidenceLabel: "Secondary tracker",
+      statusLabel: "Disclosure watch",
+      summary: "Secondary tracker link attached for public review. This is not a finding of wrongdoing.",
+    });
+    add({
+      title: congressTrading.primaryRow.officialDisclosureName,
+      url: congressTrading.primaryRow.officialDisclosureUrl,
+      category: "court_agency_record",
+      date: congressTrading.primaryRow.lastFilingDate,
+      sourceName: congressTrading.primaryRow.officialDisclosureName,
+      confidenceLabel: "Official record",
+      statusLabel: "Disclosure source",
+      summary: "Official disclosure portal attached so readers can verify the public filing path.",
+    });
+    add({
+      title: congressTrading.source.name,
+      url: congressTrading.source.url,
+      category: "under_review",
+      date: congressTrading.source.retrievedDate,
+      sourceName: congressTrading.source.name,
+      confidenceLabel: congressTrading.source.tier.replace(/_/g, " "),
+      statusLabel: "Snapshot source",
+      summary: "Dataset source used for the disclosure-watch snapshot.",
+    });
+  }
+
+  return [...byUrl.values()].sort((a, b) => {
+    const aTime = a.date ? new Date(a.date).getTime() : 0;
+    const bTime = b.date ? new Date(b.date).getTime() : 0;
+    return (Number.isNaN(bTime) ? 0 : bTime) - (Number.isNaN(aTime) ? 0 : aTime);
+  });
+}
+
+function buildRecordSummary({
+  official,
+  sourceCount,
+  completionPercent,
+  missingItems,
+  scoreCard,
+  funding,
+  redFlags,
+  publicVoteRecord,
+  timelineEventCount,
+  latestUpdate,
+}: {
+  official: Official;
+  sourceCount: number;
+  completionPercent: number;
+  missingItems: string[];
+  scoreCard?: ScoreCard;
+  funding?: FundingSummary;
+  redFlags: RedFlag[];
+  publicVoteRecord?: PublicVoteRecord;
+  timelineEventCount: number;
+  latestUpdate: string | null;
+}): RecordSummary {
+  const confirmed = [
+    `${official.name} is listed as ${official.position} for ${official.jurisdiction}${official.district ? `, ${official.district}` : ""}.`,
+    `${sourceCount} public source ${sourceCount === 1 ? "link is" : "links are"} attached to this profile.`,
+  ];
+
+  if (publicVoteRecord?.summary.totalVotesLoaded) {
+    confirmed.push(`${publicVoteRecord.summary.totalVotesLoaded.toLocaleString()} public vote rows are loaded for review.`);
+  }
+
+  if (scoreCard) {
+    confirmed.push(`A RepWatchr issue scorecard is loaded with an overall ${scoreCard.letterGrade} grade and ${Object.values(scoreCard.categories).flatMap((category) => category.votes).length} scored vote entries.`);
+  }
+
+  if (funding) {
+    confirmed.push(`A campaign funding snapshot is loaded for the ${funding.cycle} cycle. Funding records show public money trails; they do not prove misconduct by themselves.`);
+  }
+
+  if (redFlags.length > 0) {
+    confirmed.push(`${redFlags.length} source-backed review ${redFlags.length === 1 ? "item is" : "items are"} attached below the score, vote, and funding sections.`);
+  }
+
+  const needsSource = missingItems.length > 0
+    ? missingItems.slice(0, 6)
+    : ["No required buildout item is currently marked missing, but readers can still submit better sources or corrections."];
+
+  return {
+    confirmed,
+    needsSource,
+    changedRecently: [
+      latestUpdate ? `Latest profile update signal: ${dateLabel(latestUpdate)}.` : "No recent update timestamp is loaded yet.",
+      `${timelineEventCount} timeline ${timelineEventCount === 1 ? "event is" : "events are"} available for filtering, copying, or sharing.`,
+      `Profile buildout currently shows ${completionPercent}% completeness.`,
+    ],
+    notKnown: [
+      "RepWatchr is not claiming this is every public record ever created about the official.",
+      "Unreviewed public submissions do not become verified facts until the source path is checked.",
+      "Scores are methodology signals, not legal findings or proof of misconduct.",
+    ],
+  };
+}
+
+function buildRelatedProfiles(official: Official, officials: Official[]): RelatedProfileCardRecord[] {
+  const officialCountySet = new Set(official.county.map((county) => county.toLowerCase()));
+
+  return officials
+    .filter((candidate) => candidate.id !== official.id)
+    .map((candidate) => {
+      let score = 0;
+      let reason = "";
+
+      if (candidate.jurisdiction === official.jurisdiction) {
+        score += 6;
+        reason = "Same jurisdiction";
+      }
+
+      if (candidate.level === official.level) {
+        score += 4;
+        reason ||= "Same office level";
+      }
+
+      if (candidate.position === official.position) {
+        score += 3;
+        reason ||= "Same office";
+      }
+
+      if (candidate.district && official.district && candidate.district === official.district) {
+        score += 5;
+        reason = "Same district";
+      }
+
+      if (candidate.county.some((county) => officialCountySet.has(county.toLowerCase()))) {
+        score += 4;
+        reason ||= "Same county";
+      }
+
+      if (candidate.party === official.party) {
+        score += 1;
+        reason ||= "Same party";
+      }
+
+      return { candidate, score, reason: reason || "Related profile" };
+    })
+    .filter((item) => item.score > 0)
+    .sort((a, b) => b.score - a.score || a.candidate.name.localeCompare(b.candidate.name))
+    .slice(0, 6)
+    .map(({ candidate, reason }) => ({
+      id: candidate.id,
+      name: candidate.name,
+      firstName: candidate.firstName,
+      lastName: candidate.lastName,
+      photo: candidate.photo,
+      party: candidate.party,
+      level: candidate.level,
+      position: candidate.position,
+      jurisdiction: candidate.jurisdiction,
+      district: candidate.district,
+      reason,
+    }));
+}
+
+function buildPublicQuestions({
+  official,
+  missingItems,
+  funding,
+  publicVoteRecord,
+  sourceCount,
+}: {
+  official: Official;
+  missingItems: string[];
+  funding?: FundingSummary;
+  publicVoteRecord?: PublicVoteRecord;
+  sourceCount: number;
+}) {
+  const questions: Array<{ question: string; context: string }> = [
+    {
+      question: `Which public source should voters use to verify ${official.name}'s current record for ${official.position}?`,
+      context: "A safe starting point when a profile has source gaps or stale links.",
+    },
+  ];
+
+  if (!publicVoteRecord?.summary.totalVotesLoaded) {
+    questions.push({
+      question: `Can you point voters to the official vote record or meeting record for ${official.name}'s current term?`,
+      context: "Use this when the vote table is empty or the left/right model needs more reviewed vote rows.",
+    });
+  }
+
+  if (!funding) {
+    questions.push({
+      question: `Where is the current campaign finance source for ${official.name}, and which filing covers this cycle?`,
+      context: "Funding questions should ask for public filings, not jump to conclusions about donors.",
+    });
+  }
+
+  if (missingItems.length > 0) {
+    questions.push({
+      question: `RepWatchr shows a missing source area for ${missingItems[0]}. What official record should be attached?`,
+      context: "This turns a profile gap into a concrete public-record request.",
+    });
+  }
+
+  if (sourceCount > 0) {
+    questions.push({
+      question: `Is this source path complete, or is there a better official record RepWatchr should attach?`,
+      context: "Use this before sharing a hard claim when a better source may exist.",
+    });
+  }
+
+  return questions.slice(0, 4);
+}
+
+function profileJsonLd({
+  official,
+  canonicalUrl,
+  description,
+  sourceCount,
+  completionPercent,
+}: {
+  official: Official;
+  canonicalUrl: string;
+  description: string;
+  sourceCount: number;
+  completionPercent: number;
+}) {
+  return [
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      itemListElement: [
+        {
+          "@type": "ListItem",
+          position: 1,
+          name: "RepWatchr",
+          item: "https://www.repwatchr.com",
+        },
+        {
+          "@type": "ListItem",
+          position: 2,
+          name: "Officials",
+          item: "https://www.repwatchr.com/officials",
+        },
+        {
+          "@type": "ListItem",
+          position: 3,
+          name: official.name,
+          item: canonicalUrl,
+        },
+      ],
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "ProfilePage",
+      name: `${official.name} RepWatchr profile`,
+      description,
+      url: canonicalUrl,
+      dateModified: official.lastVerifiedAt,
+      mainEntity: {
+        "@type": "Person",
+        name: official.name,
+        jobTitle: official.position,
+        affiliation: official.jurisdiction,
+        url: official.contactInfo.website,
+        image: official.photo,
+      },
+      about: {
+        "@type": "Dataset",
+        name: `${official.name} public-record profile data`,
+        description: `RepWatchr source trail with ${sourceCount} source links and ${completionPercent}% profile buildout.`,
+        creator: {
+          "@type": "Organization",
+          name: "RepWatchr",
+          url: "https://www.repwatchr.com",
+        },
+      },
+    },
+  ];
 }

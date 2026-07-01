@@ -33,6 +33,10 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     "/submit-source",
     "/blog",
     "/services",
+    "/beta-access",
+    "/data-reports",
+    "/contributors",
+    "/growth-engine",
     "/funding",
     "/red-flags",
     "/votes",
@@ -68,6 +72,13 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     lastModified: now,
     changeFrequency: "weekly" as const,
     priority: 0.72,
+  }));
+
+  const officialTimelineRoutes = getAllOfficials().map((official) => ({
+    url: `${siteUrl}/officials/${official.id}/timeline`,
+    lastModified: now,
+    changeFrequency: "weekly" as const,
+    priority: 0.7,
   }));
 
   const fundingRoutes = getAllOfficials()
@@ -126,6 +137,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     ...serviceRoutes,
     ...texasRaceRoutes,
     ...officialRoutes,
+    ...officialTimelineRoutes,
     ...fundingRoutes,
     ...voteRoutes,
     ...newsRoutes,

@@ -93,7 +93,7 @@ function getSubscriptionPriceId(subscription: StripeObject) {
 async function upsertSubscription(subscription: StripeObject) {
   const supabase = getSupabaseAdminClient();
   if (!supabase) {
-    return { error: "Supabase service role is not configured." };
+    return { error: "Subscription storage is temporarily unavailable." };
   }
 
   const metadata = asRecord(subscription.metadata);
@@ -127,7 +127,7 @@ async function upsertSubscription(subscription: StripeObject) {
 async function recordCheckoutSession(session: StripeObject) {
   const supabase = getSupabaseAdminClient();
   if (!supabase) {
-    return { error: "Supabase service role is not configured." };
+    return { error: "Subscription storage is temporarily unavailable." };
   }
 
   const metadata = asRecord(session.metadata);
@@ -182,7 +182,7 @@ async function recordCheckoutSession(session: StripeObject) {
 export async function POST(request: NextRequest) {
   const webhookSecret = process.env.STRIPE_WEBHOOK_SECRET;
   if (!webhookSecret) {
-    return NextResponse.json({ error: "Stripe webhook secret is not configured." }, { status: 503 });
+    return NextResponse.json({ error: "Payment event intake is temporarily unavailable." }, { status: 503 });
   }
 
   const rawBody = await request.text();

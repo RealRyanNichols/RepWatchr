@@ -65,6 +65,27 @@ async function withTimeout<T>(task: Promise<T>, fallback: T, timeoutMs = 3500) {
   }
 }
 
+function appMetadataRoles(user: User): UserRole[] {
+  const appMetadata = user.app_metadata as Record<string, unknown>;
+  const roles = new Set<UserRole>();
+  if (appMetadata.role === "admin") roles.add("admin");
+  if (Array.isArray(appMetadata.roles)) {
+    for (const role of appMetadata.roles) {
+      if (
+        role === "admin" ||
+        role === "reviewer" ||
+        role === "researcher" ||
+        role === "claimed_official" ||
+        role === "journalist" ||
+        role === "voter"
+      ) {
+        roles.add(role);
+      }
+    }
+  }
+  return [...roles];
+}
+
 export default function AuthProvider({ children }: { children: ReactNode }) {
   const [user, setUser] = useState<User | null>(null);
   const [profile, setProfile] = useState<UserProfile | null>(null);
@@ -118,7 +139,7 @@ export default function AuthProvider({ children }: { children: ReactNode }) {
 
       if (!mounted) return;
       setProfile(profileResult.data);
-      setRoles((rolesResult.data ?? []).map((item) => item.role));
+      setRoles([...new Set([...(rolesResult.data ?? []).map((item) => item.role), ...appMetadataRoles(currentUser)])]);
     }
 
     const getSession = async () => {

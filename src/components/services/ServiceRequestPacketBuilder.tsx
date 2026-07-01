@@ -1,7 +1,9 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import { useRouter } from "next/navigation";
 import type { RepWatchrService } from "@/data/repwatchr-services";
+import { submitForm } from "@/lib/data-intake-client";
 
 type SavedServicePacket = {
   id: string;
@@ -36,6 +38,7 @@ function downloadTextFile(fileName: string, text: string) {
 }
 
 export default function ServiceRequestPacketBuilder({ service }: { service: RepWatchrService }) {
+  const router = useRouter();
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [jurisdiction, setJurisdiction] = useState("");
@@ -47,6 +50,8 @@ export default function ServiceRequestPacketBuilder({ service }: { service: RepW
   const [packet, setPacket] = useState("");
   const [copied, setCopied] = useState(false);
   const [savedPackets, setSavedPackets] = useState<SavedServicePacket[]>([]);
+  const [submitState, setSubmitState] = useState<"idle" | "submitting" | "error">("idle");
+  const [error, setError] = useState("");
 
   useEffect(() => {
     let mounted = true;
@@ -123,11 +128,38 @@ export default function ServiceRequestPacketBuilder({ service }: { service: RepW
   async function handleBuild(event: React.FormEvent<HTMLFormElement>) {
     event.preventDefault();
     if (!canBuild) return;
+    setSubmitState("submitting");
+    setError("");
     const nextPacket = buildPacket();
     setPacket(nextPacket);
     setCopied(false);
     persistPacket(nextPacket);
     await copyText(nextPacket);
+
+    try {
+      const result = await submitForm("package_interest", {
+        name,
+        email,
+        serviceSlug: service.slug,
+        serviceName: service.name,
+        jurisdiction,
+        target,
+        sourceUrl,
+        deadline,
+        summary,
+        consent: acknowledged,
+      });
+      try {
+        window.sessionStorage.setItem(`repwatchr.intakeSummary.${result.submissionId}`, result.summary || nextPacket);
+        window.sessionStorage.setItem(`repwatchr.intakeNextAction.${result.submissionId}`, result.nextAction || "");
+      } catch {
+        // The packet remains visible and copied when storage is blocked.
+      }
+      router.push(result.thankYouPath || `/intake/thank-you?form=package_interest`);
+    } catch (submitError) {
+      setSubmitState("error");
+      setError(submitError instanceof Error ? submitError.message : "The request packet could not be submitted.");
+    }
   }
 
   return (
@@ -138,8 +170,8 @@ export default function ServiceRequestPacketBuilder({ service }: { service: RepW
           Start with the facts. Payment can come after scope is clear.
         </h2>
         <p className="mt-2 text-sm font-semibold leading-6 text-slate-700">
-          This builds a clean service request without Supabase. If a Stripe payment link is added later,
-          the same service page can point straight to checkout.
+          This builds a clean service request, saves it to the intake queue when Supabase is configured,
+          and keeps a copyable packet as backup.
         </p>
       </div>
 
@@ -176,6 +208,12 @@ export default function ServiceRequestPacketBuilder({ service }: { service: RepW
               Email
             </a>
           </div>
+        </div>
+      ) : null}
+
+      {error ? (
+        <div className="mt-4 rounded-lg border border-red-200 bg-red-50 p-3 text-sm font-bold text-red-800">
+          {error} The packet was still copied locally so the work is not lost.
         </div>
       ) : null}
 
@@ -267,10 +305,10 @@ export default function ServiceRequestPacketBuilder({ service }: { service: RepW
         </label>
         <button
           type="submit"
-          disabled={!canBuild}
+          disabled={!canBuild || submitState === "submitting"}
           className="rounded-xl bg-red-700 px-5 py-3 text-sm font-black uppercase tracking-wide text-white transition hover:-translate-y-0.5 hover:bg-blue-950 disabled:cursor-not-allowed disabled:bg-slate-300 disabled:text-slate-500"
         >
-          Build Request Packet
+          {submitState === "submitting" ? "Submitting..." : "Build and Submit Request"}
         </button>
       </form>
 

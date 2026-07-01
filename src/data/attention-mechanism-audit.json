@@ -1,0 +1,755 @@
+{
+  "generatedAt": "2026-07-01T04:40:19.512365+00:00",
+  "targetAveragePagesPerSession": 8,
+  "measurement": {
+    "clientEvent": "pages_per_session_progress",
+    "clickEvent": "attention_mechanism_click",
+    "note": "PageViewTracker stores unique public routes visited in browser sessionStorage and emits session_page_depth through Vercel Analytics."
+  },
+  "summary": {
+    "totalPages": 65,
+    "publicPages": 51,
+    "privateOrAuthPages": 14,
+    "publicCovered": 51,
+    "publicUncovered": 0
+  },
+  "rows": [
+    {
+      "route": "/about",
+      "file": "src/app/about/page.tsx",
+      "privateOrAuth": false,
+      "localMechanisms": [
+        "Route links"
+      ],
+      "inheritedMechanisms": [
+        "CivicLoopPanel"
+      ],
+      "covered": true
+    },
+    {
+      "route": "/admin/claims",
+      "file": "src/app/admin/claims/page.tsx",
+      "privateOrAuth": true,
+      "localMechanisms": [],
+      "inheritedMechanisms": [],
+      "covered": true
+    },
+    {
+      "route": "/admin/content-review",
+      "file": "src/app/admin/content-review/page.tsx",
+      "privateOrAuth": true,
+      "localMechanisms": [],
+      "inheritedMechanisms": [],
+      "covered": true
+    },
+    {
+      "route": "/admin/control-center",
+      "file": "src/app/admin/control-center/page.tsx",
+      "privateOrAuth": true,
+      "localMechanisms": [],
+      "inheritedMechanisms": [],
+      "covered": true
+    },
+    {
+      "route": "/admin/superadmin",
+      "file": "src/app/admin/superadmin/page.tsx",
+      "privateOrAuth": true,
+      "localMechanisms": [],
+      "inheritedMechanisms": [],
+      "covered": true
+    },
+    {
+      "route": "/admin/superadmin/preview",
+      "file": "src/app/admin/superadmin/preview/page.tsx",
+      "privateOrAuth": true,
+      "localMechanisms": [],
+      "inheritedMechanisms": [],
+      "covered": true
+    },
+    {
+      "route": "/attorneys/:slug",
+      "file": "src/app/attorneys/[slug]/page.tsx",
+      "privateOrAuth": false,
+      "localMechanisms": [
+        "Route links"
+      ],
+      "inheritedMechanisms": [
+        "CivicLoopPanel"
+      ],
+      "covered": true
+    },
+    {
+      "route": "/attorneys",
+      "file": "src/app/attorneys/page.tsx",
+      "privateOrAuth": false,
+      "localMechanisms": [
+        "Route links"
+      ],
+      "inheritedMechanisms": [
+        "CivicLoopPanel"
+      ],
+      "covered": true
+    },
+    {
+      "route": "/auth/login",
+      "file": "src/app/auth/login/page.tsx",
+      "privateOrAuth": true,
+      "localMechanisms": [
+        "Route links"
+      ],
+      "inheritedMechanisms": [],
+      "covered": true
+    },
+    {
+      "route": "/auth/signup",
+      "file": "src/app/auth/signup/page.tsx",
+      "privateOrAuth": true,
+      "localMechanisms": [
+        "Route links"
+      ],
+      "inheritedMechanisms": [],
+      "covered": true
+    },
+    {
+      "route": "/auth/verify",
+      "file": "src/app/auth/verify/page.tsx",
+      "privateOrAuth": true,
+      "localMechanisms": [
+        "Route links"
+      ],
+      "inheritedMechanisms": [],
+      "covered": true
+    },
+    {
+      "route": "/authority-watch",
+      "file": "src/app/authority-watch/page.tsx",
+      "privateOrAuth": false,
+      "localMechanisms": [
+        "Route links"
+      ],
+      "inheritedMechanisms": [
+        "CivicLoopPanel"
+      ],
+      "covered": true
+    },
+    {
+      "route": "/authors",
+      "file": "src/app/authors/page.tsx",
+      "privateOrAuth": false,
+      "localMechanisms": [
+        "Route links"
+      ],
+      "inheritedMechanisms": [
+        "CivicLoopPanel"
+      ],
+      "covered": true
+    },
+    {
+      "route": "/blog",
+      "file": "src/app/blog/page.tsx",
+      "privateOrAuth": false,
+      "localMechanisms": [
+        "Route links"
+      ],
+      "inheritedMechanisms": [
+        "CivicLoopPanel"
+      ],
+      "covered": true
+    },
+    {
+      "route": "/buildout",
+      "file": "src/app/buildout/page.tsx",
+      "privateOrAuth": false,
+      "localMechanisms": [
+        "Missing Source",
+        "Route links"
+      ],
+      "inheritedMechanisms": [
+        "CivicLoopPanel"
+      ],
+      "covered": true
+    },
+    {
+      "route": "/create-account",
+      "file": "src/app/create-account/page.tsx",
+      "privateOrAuth": true,
+      "localMechanisms": [],
+      "inheritedMechanisms": [],
+      "covered": true
+    },
+    {
+      "route": "/daily-wire",
+      "file": "src/app/daily-wire/page.tsx",
+      "privateOrAuth": false,
+      "localMechanisms": [
+        "Missing Source",
+        "Route links",
+        "Submit Missing Source"
+      ],
+      "inheritedMechanisms": [
+        "CivicLoopPanel"
+      ],
+      "covered": true
+    },
+    {
+      "route": "/dashboard/claims",
+      "file": "src/app/dashboard/claims/page.tsx",
+      "privateOrAuth": true,
+      "localMechanisms": [
+        "Route links"
+      ],
+      "inheritedMechanisms": [],
+      "covered": true
+    },
+    {
+      "route": "/dashboard/official-profile/:claimId",
+      "file": "src/app/dashboard/official-profile/[claimId]/page.tsx",
+      "privateOrAuth": true,
+      "localMechanisms": [],
+      "inheritedMechanisms": [],
+      "covered": true
+    },
+    {
+      "route": "/dashboard",
+      "file": "src/app/dashboard/page.tsx",
+      "privateOrAuth": true,
+      "localMechanisms": [
+        "Route links"
+      ],
+      "inheritedMechanisms": [],
+      "covered": true
+    },
+    {
+      "route": "/dashboard/settings",
+      "file": "src/app/dashboard/settings/page.tsx",
+      "privateOrAuth": true,
+      "localMechanisms": [
+        "Route links"
+      ],
+      "inheritedMechanisms": [],
+      "covered": true
+    },
+    {
+      "route": "/data-reports",
+      "file": "src/app/data-reports/page.tsx",
+      "privateOrAuth": false,
+      "localMechanisms": [
+        "Route links"
+      ],
+      "inheritedMechanisms": [
+        "CivicLoopPanel"
+      ],
+      "covered": true
+    },
+    {
+      "route": "/east-texas-predator-watch/:slug",
+      "file": "src/app/east-texas-predator-watch/[slug]/page.tsx",
+      "privateOrAuth": false,
+      "localMechanisms": [
+        "Route links"
+      ],
+      "inheritedMechanisms": [
+        "CivicLoopPanel"
+      ],
+      "covered": true
+    },
+    {
+      "route": "/east-texas-predator-watch",
+      "file": "src/app/east-texas-predator-watch/page.tsx",
+      "privateOrAuth": false,
+      "localMechanisms": [
+        "Route links"
+      ],
+      "inheritedMechanisms": [
+        "CivicLoopPanel"
+      ],
+      "covered": true
+    },
+    {
+      "route": "/elections",
+      "file": "src/app/elections/page.tsx",
+      "privateOrAuth": false,
+      "localMechanisms": [
+        "Missing Source",
+        "Route links",
+        "Share buttons",
+        "Submit Missing Source"
+      ],
+      "inheritedMechanisms": [
+        "CivicLoopPanel"
+      ],
+      "covered": true
+    },
+    {
+      "route": "/elections/texas/:raceSlug",
+      "file": "src/app/elections/texas/[raceSlug]/page.tsx",
+      "privateOrAuth": false,
+      "localMechanisms": [
+        "Route links",
+        "Share buttons"
+      ],
+      "inheritedMechanisms": [
+        "CivicLoopPanel"
+      ],
+      "covered": true
+    },
+    {
+      "route": "/elections/texas/contribute",
+      "file": "src/app/elections/texas/contribute/page.tsx",
+      "privateOrAuth": false,
+      "localMechanisms": [
+        "Route links"
+      ],
+      "inheritedMechanisms": [
+        "CivicLoopPanel"
+      ],
+      "covered": true
+    },
+    {
+      "route": "/elections/texas",
+      "file": "src/app/elections/texas/page.tsx",
+      "privateOrAuth": false,
+      "localMechanisms": [
+        "Route links"
+      ],
+      "inheritedMechanisms": [
+        "CivicLoopPanel"
+      ],
+      "covered": true
+    },
+    {
+      "route": "/faretta-ai",
+      "file": "src/app/faretta-ai/page.tsx",
+      "privateOrAuth": false,
+      "localMechanisms": [],
+      "inheritedMechanisms": [
+        "CivicLoopPanel"
+      ],
+      "covered": true
+    },
+    {
+      "route": "/feed",
+      "file": "src/app/feed/page.tsx",
+      "privateOrAuth": false,
+      "localMechanisms": [
+        "Route links",
+        "Share buttons"
+      ],
+      "inheritedMechanisms": [
+        "CivicLoopPanel"
+      ],
+      "covered": true
+    },
+    {
+      "route": "/feedback",
+      "file": "src/app/feedback/page.tsx",
+      "privateOrAuth": false,
+      "localMechanisms": [],
+      "inheritedMechanisms": [
+        "CivicLoopPanel"
+      ],
+      "covered": true
+    },
+    {
+      "route": "/funding/:officialId",
+      "file": "src/app/funding/[officialId]/page.tsx",
+      "privateOrAuth": false,
+      "localMechanisms": [
+        "Route links"
+      ],
+      "inheritedMechanisms": [
+        "CivicLoopPanel"
+      ],
+      "covered": true
+    },
+    {
+      "route": "/funding",
+      "file": "src/app/funding/page.tsx",
+      "privateOrAuth": false,
+      "localMechanisms": [
+        "Route links"
+      ],
+      "inheritedMechanisms": [
+        "CivicLoopPanel"
+      ],
+      "covered": true
+    },
+    {
+      "route": "/gideon",
+      "file": "src/app/gideon/page.tsx",
+      "privateOrAuth": false,
+      "localMechanisms": [],
+      "inheritedMechanisms": [
+        "CivicLoopPanel"
+      ],
+      "covered": true
+    },
+    {
+      "route": "/growth-engine",
+      "file": "src/app/growth-engine/page.tsx",
+      "privateOrAuth": false,
+      "localMechanisms": [
+        "Route links"
+      ],
+      "inheritedMechanisms": [
+        "CivicLoopPanel"
+      ],
+      "covered": true
+    },
+    {
+      "route": "/issues/:id",
+      "file": "src/app/issues/[id]/page.tsx",
+      "privateOrAuth": false,
+      "localMechanisms": [
+        "Route links"
+      ],
+      "inheritedMechanisms": [
+        "CivicLoopPanel"
+      ],
+      "covered": true
+    },
+    {
+      "route": "/issues",
+      "file": "src/app/issues/page.tsx",
+      "privateOrAuth": false,
+      "localMechanisms": [
+        "Route links"
+      ],
+      "inheritedMechanisms": [
+        "CivicLoopPanel"
+      ],
+      "covered": true
+    },
+    {
+      "route": "/login",
+      "file": "src/app/login/page.tsx",
+      "privateOrAuth": true,
+      "localMechanisms": [],
+      "inheritedMechanisms": [],
+      "covered": true
+    },
+    {
+      "route": "/media/:slug",
+      "file": "src/app/media/[slug]/page.tsx",
+      "privateOrAuth": false,
+      "localMechanisms": [
+        "Route links"
+      ],
+      "inheritedMechanisms": [
+        "CivicLoopPanel"
+      ],
+      "covered": true
+    },
+    {
+      "route": "/media",
+      "file": "src/app/media/page.tsx",
+      "privateOrAuth": false,
+      "localMechanisms": [
+        "Route links"
+      ],
+      "inheritedMechanisms": [
+        "CivicLoopPanel"
+      ],
+      "covered": true
+    },
+    {
+      "route": "/methodology",
+      "file": "src/app/methodology/page.tsx",
+      "privateOrAuth": false,
+      "localMechanisms": [
+        "Route links"
+      ],
+      "inheritedMechanisms": [
+        "CivicLoopPanel"
+      ],
+      "covered": true
+    },
+    {
+      "route": "/news/:id",
+      "file": "src/app/news/[id]/page.tsx",
+      "privateOrAuth": false,
+      "localMechanisms": [
+        "Route links",
+        "Share buttons"
+      ],
+      "inheritedMechanisms": [
+        "CivicLoopPanel"
+      ],
+      "covered": true
+    },
+    {
+      "route": "/news",
+      "file": "src/app/news/page.tsx",
+      "privateOrAuth": false,
+      "localMechanisms": [
+        "Route links"
+      ],
+      "inheritedMechanisms": [
+        "CivicLoopPanel"
+      ],
+      "covered": true
+    },
+    {
+      "route": "/officials/:id",
+      "file": "src/app/officials/[id]/page.tsx",
+      "privateOrAuth": false,
+      "localMechanisms": [
+        "Route links",
+        "Share buttons"
+      ],
+      "inheritedMechanisms": [
+        "CivicLoopPanel"
+      ],
+      "covered": true
+    },
+    {
+      "route": "/officials",
+      "file": "src/app/officials/page.tsx",
+      "privateOrAuth": false,
+      "localMechanisms": [
+        "Route links"
+      ],
+      "inheritedMechanisms": [
+        "CivicLoopPanel"
+      ],
+      "covered": true
+    },
+    {
+      "route": "/",
+      "file": "src/app/page.tsx",
+      "privateOrAuth": false,
+      "localMechanisms": [
+        "Missing Source",
+        "Route links"
+      ],
+      "inheritedMechanisms": [
+        "CivicLoopPanel"
+      ],
+      "covered": true
+    },
+    {
+      "route": "/privacy",
+      "file": "src/app/privacy/page.tsx",
+      "privateOrAuth": false,
+      "localMechanisms": [
+        "Route links"
+      ],
+      "inheritedMechanisms": [
+        "CivicLoopPanel"
+      ],
+      "covered": true
+    },
+    {
+      "route": "/profiles/claim",
+      "file": "src/app/profiles/claim/page.tsx",
+      "privateOrAuth": false,
+      "localMechanisms": [],
+      "inheritedMechanisms": [
+        "CivicLoopPanel"
+      ],
+      "covered": true
+    },
+    {
+      "route": "/public-safety/:slug",
+      "file": "src/app/public-safety/[slug]/page.tsx",
+      "privateOrAuth": false,
+      "localMechanisms": [
+        "Route links"
+      ],
+      "inheritedMechanisms": [
+        "CivicLoopPanel"
+      ],
+      "covered": true
+    },
+    {
+      "route": "/public-safety",
+      "file": "src/app/public-safety/page.tsx",
+      "privateOrAuth": false,
+      "localMechanisms": [
+        "Route links"
+      ],
+      "inheritedMechanisms": [
+        "CivicLoopPanel"
+      ],
+      "covered": true
+    },
+    {
+      "route": "/red-flags",
+      "file": "src/app/red-flags/page.tsx",
+      "privateOrAuth": false,
+      "localMechanisms": [
+        "Route links"
+      ],
+      "inheritedMechanisms": [
+        "CivicLoopPanel"
+      ],
+      "covered": true
+    },
+    {
+      "route": "/school-boards/:districtSlug/:candidateId",
+      "file": "src/app/school-boards/[districtSlug]/[candidateId]/page.tsx",
+      "privateOrAuth": false,
+      "localMechanisms": [
+        "Route links",
+        "Share buttons"
+      ],
+      "inheritedMechanisms": [
+        "CivicLoopPanel"
+      ],
+      "covered": true
+    },
+    {
+      "route": "/school-boards/:districtSlug",
+      "file": "src/app/school-boards/[districtSlug]/page.tsx",
+      "privateOrAuth": false,
+      "localMechanisms": [
+        "Route links"
+      ],
+      "inheritedMechanisms": [
+        "CivicLoopPanel"
+      ],
+      "covered": true
+    },
+    {
+      "route": "/school-boards",
+      "file": "src/app/school-boards/page.tsx",
+      "privateOrAuth": false,
+      "localMechanisms": [
+        "Route links",
+        "Share buttons"
+      ],
+      "inheritedMechanisms": [
+        "CivicLoopPanel"
+      ],
+      "covered": true
+    },
+    {
+      "route": "/scorecards/:category",
+      "file": "src/app/scorecards/[category]/page.tsx",
+      "privateOrAuth": false,
+      "localMechanisms": [
+        "Route links"
+      ],
+      "inheritedMechanisms": [
+        "CivicLoopPanel"
+      ],
+      "covered": true
+    },
+    {
+      "route": "/scorecards",
+      "file": "src/app/scorecards/page.tsx",
+      "privateOrAuth": false,
+      "localMechanisms": [
+        "Route links"
+      ],
+      "inheritedMechanisms": [
+        "CivicLoopPanel"
+      ],
+      "covered": true
+    },
+    {
+      "route": "/search",
+      "file": "src/app/search/page.tsx",
+      "privateOrAuth": false,
+      "localMechanisms": [],
+      "inheritedMechanisms": [
+        "CivicLoopPanel"
+      ],
+      "covered": true
+    },
+    {
+      "route": "/services/:slug",
+      "file": "src/app/services/[slug]/page.tsx",
+      "privateOrAuth": false,
+      "localMechanisms": [
+        "Route links"
+      ],
+      "inheritedMechanisms": [
+        "CivicLoopPanel"
+      ],
+      "covered": true
+    },
+    {
+      "route": "/services",
+      "file": "src/app/services/page.tsx",
+      "privateOrAuth": false,
+      "localMechanisms": [
+        "Route links"
+      ],
+      "inheritedMechanisms": [
+        "CivicLoopPanel"
+      ],
+      "covered": true
+    },
+    {
+      "route": "/state-reps",
+      "file": "src/app/state-reps/page.tsx",
+      "privateOrAuth": false,
+      "localMechanisms": [
+        "Route links"
+      ],
+      "inheritedMechanisms": [
+        "CivicLoopPanel"
+      ],
+      "covered": true
+    },
+    {
+      "route": "/submit-source",
+      "file": "src/app/submit-source/page.tsx",
+      "privateOrAuth": false,
+      "localMechanisms": [],
+      "inheritedMechanisms": [
+        "CivicLoopPanel"
+      ],
+      "covered": true
+    },
+    {
+      "route": "/terms",
+      "file": "src/app/terms/page.tsx",
+      "privateOrAuth": false,
+      "localMechanisms": [
+        "Route links"
+      ],
+      "inheritedMechanisms": [
+        "CivicLoopPanel"
+      ],
+      "covered": true
+    },
+    {
+      "route": "/uap",
+      "file": "src/app/uap/page.tsx",
+      "privateOrAuth": false,
+      "localMechanisms": [
+        "Route links"
+      ],
+      "inheritedMechanisms": [
+        "CivicLoopPanel"
+      ],
+      "covered": true
+    },
+    {
+      "route": "/votes/:billId",
+      "file": "src/app/votes/[billId]/page.tsx",
+      "privateOrAuth": false,
+      "localMechanisms": [
+        "Route links"
+      ],
+      "inheritedMechanisms": [
+        "CivicLoopPanel"
+      ],
+      "covered": true
+    },
+    {
+      "route": "/votes",
+      "file": "src/app/votes/page.tsx",
+      "privateOrAuth": false,
+      "localMechanisms": [
+        "Route links"
+      ],
+      "inheritedMechanisms": [
+        "CivicLoopPanel"
+      ],
+      "covered": true
+    }
+  ]
+}

@@ -1,9 +1,13 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import {
+  getRepWatchrServiceCtaLabel,
   getRepWatchrServicePaymentHref,
+  getRepWatchrServicePriceLabel,
   getRepWatchrServices,
 } from "@/data/repwatchr-services";
+import { getPricingPackageCandidate } from "@/data/pricing-experiments";
+import { isFeatureEnabled } from "@/lib/feature-flags";
 
 export const metadata: Metadata = {
   title: "RepWatchr Services | Free Source Packets and Paid Research",
@@ -37,7 +41,7 @@ export const metadata: Metadata = {
   },
 };
 
-function serviceJsonLd() {
+function serviceJsonLd(paymentsEnabled: boolean) {
   const services = getRepWatchrServices().map((service) => ({
     "@type": "Service",
     name: service.name,
@@ -50,13 +54,17 @@ function serviceJsonLd() {
     areaServed: service.slug.includes("local") || service.slug.includes("election")
       ? "Texas and East Texas"
       : "United States",
-    offers: {
-      "@type": "Offer",
-      price: (service.priceCents / 100).toFixed(2),
-      priceCurrency: "USD",
-      availability: "https://schema.org/InStock",
-      url: `https://www.repwatchr.com/services/${service.slug}`,
-    },
+    ...(paymentsEnabled || service.priceCents === 0
+      ? {
+          offers: {
+            "@type": "Offer",
+            price: (service.priceCents / 100).toFixed(2),
+            priceCurrency: "USD",
+            availability: "https://schema.org/InStock",
+            url: `https://www.repwatchr.com/services/${service.slug}`,
+          },
+        }
+      : {}),
   }));
 
   return {
@@ -71,7 +79,9 @@ function serviceJsonLd() {
   };
 }
 
-export default function ServicesPage() {
+export default async function ServicesPage() {
+  const paymentsEnabled = await isFeatureEnabled("ENABLE_PAYMENTS");
+  const showExpectedRange = await isFeatureEnabled("ENABLE_BETA_PACKAGES");
   const services = getRepWatchrServices();
   const featured = services.filter((service) => service.featured);
 
@@ -79,7 +89,7 @@ export default function ServicesPage() {
     <div className="min-h-screen bg-[#f6f9fc]">
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceJsonLd()) }}
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceJsonLd(paymentsEnabled)) }}
       />
       <main className="mx-auto max-w-7xl px-4 py-8 sm:px-6 lg:px-8">
         <section className="rounded-lg border border-slate-200 bg-white p-6 shadow-[0_16px_40px_rgba(15,23,42,0.08)]">
@@ -109,6 +119,12 @@ export default function ServicesPage() {
                 >
                   Read Blog
                 </Link>
+                <Link
+                  href="/data-reports"
+                  className="rounded-xl border border-blue-200 bg-blue-50 px-5 py-3 text-sm font-black uppercase tracking-wide text-blue-950 transition hover:-translate-y-0.5 hover:border-red-300 hover:bg-white"
+                >
+                  Data Reports
+                </Link>
               </div>
             </div>
             <div className="grid gap-3">
@@ -122,7 +138,13 @@ export default function ServicesPage() {
                     <span className="rounded-full bg-blue-950 px-2.5 py-1 text-[11px] font-black uppercase tracking-wide text-white">
                       {service.eyebrow}
                     </span>
-                    <span className="text-lg font-black text-red-700">{service.priceLabel}</span>
+                    <span className="text-lg font-black text-red-700">
+                      {getRepWatchrServicePriceLabel(service, {
+                        paymentsEnabled,
+                        showExpectedRange,
+                        expectedRange: getPricingPackageCandidate(service.slug)?.expectedRange,
+                      })}
+                    </span>
                   </div>
                   <h2 className="mt-3 text-xl font-black text-blue-950">{service.name}</h2>
                   <p className="mt-2 text-sm font-semibold leading-6 text-slate-700">{service.summary}</p>
@@ -134,8 +156,15 @@ export default function ServicesPage() {
 
         <section className="mt-7 grid gap-4 md:grid-cols-2 xl:grid-cols-3">
           {services.map((service) => {
-            const href = getRepWatchrServicePaymentHref(service);
+            const pricingCandidate = getPricingPackageCandidate(service.slug);
+            const href = getRepWatchrServicePaymentHref(service, { paymentsEnabled });
             const external = href.startsWith("http");
+            const priceLabel = getRepWatchrServicePriceLabel(service, {
+              paymentsEnabled,
+              showExpectedRange,
+              expectedRange: pricingCandidate?.expectedRange,
+            });
+            const ctaLabel = getRepWatchrServiceCtaLabel(service, { paymentsEnabled });
             return (
               <article key={service.slug} className="flex h-full flex-col rounded-lg border border-slate-200 bg-white p-5 shadow-sm">
                 <div className="flex items-center justify-between gap-3">
@@ -143,7 +172,7 @@ export default function ServicesPage() {
                     {service.eyebrow}
                   </span>
                   <div className="text-right">
-                    <p className="text-2xl font-black text-blue-950">{service.priceLabel}</p>
+                    <p className="text-2xl font-black text-blue-950">{priceLabel}</p>
                     <p className="text-[11px] font-black uppercase tracking-wide text-slate-500">{service.billingLabel}</p>
                   </div>
                 </div>
@@ -167,11 +196,11 @@ export default function ServicesPage() {
                     rel={external ? "noopener noreferrer" : undefined}
                     className="inline-flex w-full justify-center rounded-xl bg-blue-950 px-4 py-3 text-sm font-black uppercase tracking-wide text-white transition hover:-translate-y-0.5 hover:bg-red-700"
                   >
-                    {service.ctaLabel}
+                    {ctaLabel}
                   </Link>
-                  {service.priceCents > 0 && !external ? (
+                  {service.priceCents > 0 && !paymentsEnabled ? (
                     <p className="mt-2 text-center text-xs font-bold text-slate-500">
-                      Stripe link not configured yet. This opens the request packet page.
+                      RepWatchr is collecting beta demand before paid checkout opens.
                     </p>
                   ) : null}
                 </div>

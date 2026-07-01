@@ -325,12 +325,12 @@ export default function ClaimedProfileEditor({
         ) : !subscriptionActive ? (
           <div className="mt-6 rounded-2xl border border-blue-200 bg-blue-50 p-6">
             <h2 className="text-xl font-black text-blue-950">
-              Profile submissions are paused
+              Claim approved. Submission access is pending.
             </h2>
             <p className="mt-2 text-sm font-semibold leading-6 text-blue-950/75">
-              Your claim is approved. Public submission tools are paused while
-              RepWatchr moves this workflow out of the public app. This never
-              unlocks edits to RepWatchr facts or evidence.
+              Your claim is approved. Public profile submissions require an active
+              profile workspace before new media, statements, or links can be sent
+              for review. This never unlocks edits to RepWatchr facts or evidence.
             </p>
             {error ? (
               <p className="mt-4 rounded-xl border border-red-200 bg-red-50 p-3 text-sm font-bold text-red-700">

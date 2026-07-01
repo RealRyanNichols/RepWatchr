@@ -92,7 +92,7 @@ function articlePostSnippet(article: NonNullable<ReturnType<typeof getNewsById>>
     "",
     `Receipt: ${receipt}`,
     "",
-    `Open the record: https://www.repwatchr.com/news/${article.id}`,
+    `Source file: https://www.repwatchr.com/news/${article.id}`,
   ].join("\n");
 }
 
@@ -293,14 +293,14 @@ export default async function NewsArticlePage({
 
       <section className="mt-6 rounded-2xl border border-slate-300 bg-slate-50 p-5">
         <p className="text-xs font-black uppercase tracking-[0.18em] text-red-700">
-          Story packet
+          Source file
         </p>
         <h2 className="mt-2 text-2xl font-black leading-tight text-slate-950">
-          Read it here. Share the hook. Bring people back to the record.
+          This page is for the story, the receipt, and the next record to check.
         </h2>
         <div className="mt-4 grid gap-4 sm:grid-cols-3">
           <div>
-            <p className="text-xs font-black uppercase tracking-wide text-blue-800">Hook</p>
+            <p className="text-xs font-black uppercase tracking-wide text-blue-800">Story</p>
             <p className="mt-1 text-sm font-semibold leading-6 text-slate-700">
               {article.title}
             </p>
@@ -312,9 +312,9 @@ export default async function NewsArticlePage({
             </p>
           </div>
           <div>
-            <p className="text-xs font-black uppercase tracking-wide text-blue-800">Next click</p>
+            <p className="text-xs font-black uppercase tracking-wide text-blue-800">Follow-up</p>
             <p className="mt-1 text-sm font-semibold leading-6 text-slate-700">
-              Open profiles, submit missing sources, or share this article.
+              Review linked profiles, source links, or missing public records.
             </p>
           </div>
         </div>

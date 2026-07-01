@@ -11,6 +11,9 @@ import DashboardCoveragePanel from "@/components/dashboard/DashboardCoveragePane
 import MemberTheoryLab from "@/components/dashboard/MemberTheoryLab";
 import MemberFreeToolsOffice from "@/components/dashboard/MemberFreeToolsOffice";
 import MemberSignalMap from "@/components/dashboard/MemberSignalMap";
+import MemberWatchlistOffice from "@/components/dashboard/MemberWatchlistOffice";
+import MemberContributorOffice from "@/components/dashboard/MemberContributorOffice";
+import InterestProfilePanel from "@/components/personalization/InterestProfilePanel";
 import {
   displayNameFromId,
   urlForOfficialOrCandidate,
@@ -134,6 +137,12 @@ export default function DashboardPage() {
 
       <DashboardCoveragePanel />
 
+      <InterestProfilePanel variant="dashboard" />
+
+      <MemberWatchlistOffice />
+
+      <MemberContributorOffice />
+
       <MemberFreeToolsOffice />
 
       <MemberSignalMap />
@@ -234,6 +243,20 @@ export default function DashboardPage() {
           <p className="mt-2 text-sm font-semibold leading-6 text-gray-600">
             Set the state you want to watch first. Public pages still open on
             the national selector before a state is chosen.
+          </p>
+        </Link>
+        <Link
+          href="/sources/submit"
+          className="rounded-2xl border border-red-200 bg-red-50 p-5 shadow-sm transition hover:-translate-y-0.5 hover:border-blue-300"
+        >
+          <p className="text-xs font-black uppercase tracking-wide text-red-700">
+            Source runner
+          </p>
+          <h2 className="mt-2 text-xl font-black text-blue-950">
+            Submit a public source
+          </h2>
+          <p className="mt-2 text-sm font-semibold leading-6 text-blue-950/75">
+            Drop a URL, target, jurisdiction, and what it appears to show. RepWatchr keeps it under review until a source trail is attached.
           </p>
         </Link>
       </div>

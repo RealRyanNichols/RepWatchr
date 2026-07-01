@@ -1,1 +1,1 @@
-export { metadata, default } from "../feedback/page";
+export { metadata, default } from "../sources/submit/page";

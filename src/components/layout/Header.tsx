@@ -6,17 +6,20 @@ import Link from "next/link";
 import UserMenu from "@/components/auth/UserMenu";
 
 const primaryLinks = [
+  { href: "/", label: "Home" },
   { href: "/elections/texas", label: "Texas Races" },
   { href: "/officials", label: "Officials" },
   { href: "/school-boards", label: "School Boards" },
   { href: "/votes", label: "Votes" },
+  { href: "/data-reports", label: "Data" },
+  { href: "/contributors", label: "Contributors" },
+  { href: "/growth-engine", label: "Growth" },
   { href: "/blog", label: "Blog" },
   { href: "/services", label: "Services" },
   { href: "/elections/texas/contribute", label: "Free Packet" },
 ];
 
 const moreLinks = [
-  { href: "/", label: "Home" },
   { href: "/elections", label: "All Elections" },
   { href: "/submit-source", label: "Submit Source" },
   { href: "/authority-watch", label: "Authority Watch" },
@@ -173,7 +176,7 @@ export default function Header() {
               </Link>
             ))}
             <p className="mt-2 border-t border-white/10 px-3 pt-3 text-[11px] font-black uppercase tracking-[0.18em] text-[#d6b35a]">
-              More lanes
+              More
             </p>
             {moreLinks.map((link) => (
               <Link

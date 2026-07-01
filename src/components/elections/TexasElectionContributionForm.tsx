@@ -285,7 +285,7 @@ export default function TexasElectionContributionForm({
     if (insertError) {
       setError(
         insertError.message.includes("texas_election_contributions")
-          ? "The Texas election contribution table is not reachable yet. Check Supabase env vars, Data API grants, and RLS policies."
+          ? "The Texas election contribution queue is temporarily unavailable. Keep the source packet and try again when review intake reopens."
           : insertError.message
       );
       setSubmitting(false);
@@ -376,8 +376,8 @@ export default function TexasElectionContributionForm({
         <div className="mt-5 rounded-lg border border-amber-200 bg-amber-50 p-4">
           <p className="text-sm font-black text-amber-950">Current mode: source-packet builder.</p>
           <p className="mt-1 text-sm font-semibold leading-6 text-amber-900">
-            Supabase submissions are off only when the public env vars are missing or the kill switch is set to false.
-            This form still builds a clean review packet, copies it, and saves the latest packet in this browser.
+            Live queue submission is paused for this session. This form still builds a clean review packet,
+            copies it, and saves the latest packet in this browser.
           </p>
         </div>
       ) : null}
@@ -404,7 +404,7 @@ export default function TexasElectionContributionForm({
             Source packet ready{copied ? " and copied." : "."}
           </p>
           <p className="mt-1 text-sm font-semibold leading-6 text-blue-900">
-            Keep this packet for the review queue. When Supabase env vars are present, this same form submits directly.
+            Keep this packet for the review queue. When live queue submission is available, this same form submits directly.
           </p>
           <textarea
             readOnly

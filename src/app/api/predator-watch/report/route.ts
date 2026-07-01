@@ -105,7 +105,7 @@ export async function POST(request: Request) {
 
   const admin = getSupabaseAdminClient();
   if (!admin) {
-    return NextResponse.json({ error: "Predator Watch report database is not configured." }, { status: 503 });
+    return NextResponse.json({ error: "Report queue is temporarily unavailable." }, { status: 503 });
   }
 
   const formData = await request.formData().catch(() => null);

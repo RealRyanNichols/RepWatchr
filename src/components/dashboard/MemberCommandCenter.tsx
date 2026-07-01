@@ -92,7 +92,7 @@ export default function MemberCommandCenter() {
       "Choose the state on the national selector before opening loaded records.",
       "Open the public profile and check sources, praise, flags, and gaps.",
       "Save the profile here so it stays in your watch list.",
-      "Ask Faretta AI what record, meeting, filing, or source should be pulled next.",
+      "Use predictive search to find the next record, meeting, filing, or source to pull.",
     ],
     []
   );
@@ -100,7 +100,7 @@ export default function MemberCommandCenter() {
   async function addTrackedItem(event: React.FormEvent) {
     event.preventDefault();
     const trimmedLabel = label.trim();
-    const trimmedHref = href.trim() || `/faretta-ai?q=${encodeURIComponent(trimmedLabel)}`;
+    const trimmedHref = href.trim() || `/search?q=${encodeURIComponent(trimmedLabel)}`;
     if (!trimmedLabel) return;
 
     const nextItem = { label: trimmedLabel, href: trimmedHref, type };

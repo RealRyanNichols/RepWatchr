@@ -1,11 +1,65 @@
 import type { Metadata } from "next";
-import ReportButton from "@/components/shared/ReportButton";
+import { UniversalIntakeForm, type IntakeField } from "@/components/intake/FormComponents";
 
 export const metadata: Metadata = {
   title: "Submit Source",
   description:
     "Send RepWatchr a public source, correction, roster, vote, filing, meeting record, or missing official for review.",
 };
+
+const sourceFields: IntakeField[] = [
+  { name: "name", label: "Your name", placeholder: "Optional" },
+  { name: "email", label: "Email for follow-up", type: "email", placeholder: "you@example.com" },
+  { name: "target", label: "Target", required: true },
+  { name: "jurisdiction", label: "Jurisdiction", required: true },
+  {
+    name: "sourceUrl",
+    label: "Public source URL",
+    type: "url",
+    required: true,
+  },
+  {
+    name: "sourceType",
+    label: "Source type",
+    type: "select",
+    required: true,
+    options: [
+      { label: "Official record", value: "official_record" },
+      { label: "Meeting agenda/minutes", value: "meeting_record" },
+      { label: "Vote or bill record", value: "vote_record" },
+      { label: "Campaign finance filing", value: "funding_record" },
+      { label: "Roster or appointment record", value: "roster_record" },
+      { label: "Article or named publication", value: "article" },
+      { label: "Video or meeting clip", value: "video" },
+      { label: "Other public source", value: "other_public_source" },
+    ],
+  },
+  { name: "sourceDate", label: "Date of source", placeholder: "YYYY-MM-DD or meeting date" },
+  {
+    name: "publicPrivate",
+    label: "Visibility",
+    type: "select",
+    required: true,
+    options: [
+      { label: "Public source", value: "public" },
+      { label: "Private review only", value: "private_review" },
+    ],
+  },
+  {
+    name: "summary",
+    label: "Claim or question summary",
+    type: "textarea",
+    required: true,
+    placeholder: "What does this source show, or what public claim should it help check?",
+  },
+  {
+    name: "whatNeedsReview",
+    label: "What RepWatchr should check",
+    type: "textarea",
+    required: true,
+    placeholder: "Tell us what should be attached, corrected, sourced, or reviewed.",
+  },
+];
 
 export default function FeedbackPage() {
   return (
@@ -57,7 +111,15 @@ export default function FeedbackPage() {
         </div>
       </div>
 
-      <ReportButton pageUrl="/submit-source" />
+      <UniversalIntakeForm
+        formKey="submit_source"
+        eyebrow="Source queue"
+        title="Submit one public source."
+        description="Every source now becomes a structured review item with attribution, status, admin review, analytics, and a copyable packet."
+        fields={sourceFields}
+        submitLabel="Submit source"
+        initialValues={{ publicPrivate: "public" }}
+      />
 
       <div className="mt-10 rounded-xl bg-blue-50/70 border border-blue-100 p-6">
         <h2 className="text-lg font-bold text-blue-950 mb-3">
@@ -89,7 +151,7 @@ export default function FeedbackPage() {
               1
             </span>
             <span>
-              While Supabase is paused, the form creates a copyable source packet instead of writing to a database.
+              RepWatchr packages the public source, target, jurisdiction, date, and question into a review-ready packet.
             </span>
           </li>
           <li className="flex gap-3">
@@ -97,7 +159,7 @@ export default function FeedbackPage() {
               2
             </span>
             <span>
-              Keep the packet with the public source URL, date, jurisdiction, and what needs to be checked.
+              Copy/export stays available as a backup so the receipt does not disappear if a browser or network request fails.
             </span>
           </li>
           <li className="flex gap-3">
@@ -105,7 +167,7 @@ export default function FeedbackPage() {
               3
             </span>
             <span>
-              When the review queue is active again, packets can be imported into the database-backed workflow.
+              Reviewed sources can become profile links, vote evidence, funding trails, red flags, correction notes, or story leads.
             </span>
           </li>
         </ol>

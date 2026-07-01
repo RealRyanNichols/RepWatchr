@@ -263,6 +263,11 @@ export default function AdminControlCenterClient() {
                 <div className="mt-3 grid gap-2 sm:grid-cols-2">
                   <ActionLink href="/admin/claims" label="Claim queue" detail="Review profile access requests" />
                   <ActionLink href="/admin/content-review" label="Content review" detail="Review claimed-profile submissions" />
+                  <ActionLink href="/admin/behavioral-analytics" label="Behavior analytics" detail="CTR, heatmaps, funnels, cohorts, top pages" />
+                  <ActionLink href="/admin/sources" label="Source review" detail="Verify, reject, duplicate, and attach submitted sources" />
+                  <ActionLink href="/admin/intake" label="Form intake" detail="Sources, corrections, package interest, missing records" />
+                  <ActionLink href="/admin/monetization-readiness" label="Readiness report" detail="Pre-sale blockers, trust systems, data rails" />
+                  <ActionLink href="/admin/future-revenue" label="Future revenue" detail="Hidden flags, packages, APIs, accounts, credits" />
                   <ActionLink href="/buildout" label="Public buildout" detail="See public coverage and missing data" />
                   <ActionLink href="/scorecards" label="Scorecards" detail="Open universal scorecard surface" />
                   <ActionLink href="https://vercel.com/theflashflash24-9833s-projects/repwatchr" label="Vercel project" detail="Open deployments, analytics, logs" external />

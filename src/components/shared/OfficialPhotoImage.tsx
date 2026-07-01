@@ -1,3 +1,6 @@
+"use client";
+
+import { useState } from "react";
 import Image from "next/image";
 import type { Official } from "@/types";
 
@@ -37,7 +40,9 @@ export default function OfficialPhotoImage({
   quality = OFFICIAL_PHOTO_QUALITY,
   preload = false,
 }: OfficialPhotoImageProps) {
-  if (official.photo) {
+  const [imageFailed, setImageFailed] = useState(false);
+
+  if (official.photo && !imageFailed) {
     return (
       <Image
         src={official.photo}
@@ -47,6 +52,7 @@ export default function OfficialPhotoImage({
         quality={quality}
         preload={preload}
         className={className}
+        onError={() => setImageFailed(true)}
       />
     );
   }

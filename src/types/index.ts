@@ -246,6 +246,7 @@ export interface PublicVoteRecord {
   officialId: string;
   name: string;
   level: "federal" | "state" | "county" | "city" | "school-board";
+  state?: string;
   chamber: "house" | "senate";
   session: string;
   lastUpdated: string;

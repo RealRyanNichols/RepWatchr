@@ -43,7 +43,7 @@ export async function GET(request: NextRequest) {
   }
 
   if (!clientId) {
-    return NextResponse.json({ ok: false, error: "X_CLIENT_ID is not configured." }, { status: 503 });
+    return NextResponse.json({ ok: false, error: "X connection is temporarily unavailable." }, { status: 503 });
   }
 
   const state = base64Url(randomBytes(24));

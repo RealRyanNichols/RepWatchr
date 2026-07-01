@@ -16,6 +16,12 @@ export type RepWatchrService = {
   featured?: boolean;
 };
 
+export type RepWatchrServiceActionOptions = {
+  paymentsEnabled?: boolean;
+  showExpectedRange?: boolean;
+  expectedRange?: string | null;
+};
+
 export const REPWATCHR_SERVICES: RepWatchrService[] = [
   {
     slug: "free-source-packet",
@@ -141,8 +147,33 @@ export function getRepWatchrService(slug: string) {
   return REPWATCHR_SERVICES.find((service) => service.slug === slug);
 }
 
-export function getRepWatchrServicePaymentHref(service: RepWatchrService) {
+export function getRepWatchrServiceBetaHref(service: RepWatchrService) {
+  return `/beta-access?package=${encodeURIComponent(service.slug)}`;
+}
+
+export function getRepWatchrServicePaymentHref(
+  service: RepWatchrService,
+  options: RepWatchrServiceActionOptions = {},
+) {
   if (service.priceCents === 0) return service.fallbackHref;
+  if (!options.paymentsEnabled) return getRepWatchrServiceBetaHref(service);
   const paymentLink = service.paymentEnvVar ? process.env[service.paymentEnvVar] : undefined;
-  return paymentLink || service.fallbackHref;
+  return paymentLink || getRepWatchrServiceBetaHref(service);
+}
+
+export function getRepWatchrServiceCtaLabel(
+  service: RepWatchrService,
+  options: RepWatchrServiceActionOptions = {},
+) {
+  if (service.priceCents === 0) return service.ctaLabel;
+  return options.paymentsEnabled ? service.ctaLabel : "Request Beta Access";
+}
+
+export function getRepWatchrServicePriceLabel(
+  service: RepWatchrService,
+  options: RepWatchrServiceActionOptions = {},
+) {
+  if (service.priceCents === 0 || options.paymentsEnabled) return service.priceLabel;
+  if (options.showExpectedRange && options.expectedRange) return options.expectedRange;
+  return "Beta access";
 }

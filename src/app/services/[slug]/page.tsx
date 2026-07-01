@@ -2,11 +2,15 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import ServiceRequestPacketBuilder from "@/components/services/ServiceRequestPacketBuilder";
+import { getPricingPackageCandidate } from "@/data/pricing-experiments";
 import {
   getRepWatchrService,
+  getRepWatchrServiceCtaLabel,
   getRepWatchrServicePaymentHref,
+  getRepWatchrServicePriceLabel,
   getRepWatchrServices,
 } from "@/data/repwatchr-services";
+import { isFeatureEnabled } from "@/lib/feature-flags";
 
 export function generateStaticParams() {
   return getRepWatchrServices().map((service) => ({ slug: service.slug }));
@@ -52,7 +56,10 @@ export async function generateMetadata({
   };
 }
 
-function serviceStructuredData(service: NonNullable<ReturnType<typeof getRepWatchrService>>) {
+function serviceStructuredData(
+  service: NonNullable<ReturnType<typeof getRepWatchrService>>,
+  paymentsEnabled: boolean,
+) {
   return {
     "@context": "https://schema.org",
     "@type": "Service",
@@ -68,13 +75,17 @@ function serviceStructuredData(service: NonNullable<ReturnType<typeof getRepWatc
     areaServed: service.slug.includes("local") || service.slug.includes("election")
       ? "Texas and East Texas"
       : "United States",
-    offers: {
-      "@type": "Offer",
-      price: (service.priceCents / 100).toFixed(2),
-      priceCurrency: "USD",
-      url: `https://www.repwatchr.com/services/${service.slug}`,
-      availability: "https://schema.org/InStock",
-    },
+    ...(paymentsEnabled || service.priceCents === 0
+      ? {
+          offers: {
+            "@type": "Offer",
+            price: (service.priceCents / 100).toFixed(2),
+            priceCurrency: "USD",
+            url: `https://www.repwatchr.com/services/${service.slug}`,
+            availability: "https://schema.org/InStock",
+          },
+        }
+      : {}),
   };
 }
 
@@ -87,14 +98,23 @@ export default async function ServiceDetailPage({
   const service = getRepWatchrService(slug);
   if (!service) notFound();
 
-  const paymentHref = getRepWatchrServicePaymentHref(service);
+  const paymentsEnabled = await isFeatureEnabled("ENABLE_PAYMENTS");
+  const showExpectedRange = await isFeatureEnabled("ENABLE_BETA_PACKAGES");
+  const pricingCandidate = getPricingPackageCandidate(service.slug);
+  const paymentHref = getRepWatchrServicePaymentHref(service, { paymentsEnabled });
   const paymentExternal = paymentHref.startsWith("http");
+  const ctaLabel = getRepWatchrServiceCtaLabel(service, { paymentsEnabled });
+  const priceLabel = getRepWatchrServicePriceLabel(service, {
+    paymentsEnabled,
+    showExpectedRange,
+    expectedRange: pricingCandidate?.expectedRange,
+  });
 
   return (
     <div className="min-h-screen bg-[#f6f9fc]">
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceStructuredData(service)) }}
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceStructuredData(service, paymentsEnabled)) }}
       />
       <main className="mx-auto max-w-7xl px-4 py-8 sm:px-6 lg:px-8">
         <Link href="/services" className="text-sm font-black text-blue-800 hover:text-red-700">
@@ -125,21 +145,35 @@ export default async function ServiceDetailPage({
                   rel={paymentExternal ? "noopener noreferrer" : undefined}
                   className="rounded-xl bg-red-700 px-5 py-3 text-sm font-black uppercase tracking-wide text-white transition hover:-translate-y-0.5 hover:bg-blue-950"
                 >
-                  {service.ctaLabel}
+                  {ctaLabel}
                 </Link>
-                <a
-                  href={`mailto:Ryan@RealRyanNichols.com?subject=${encodeURIComponent(`RepWatchr Service: ${service.name}`)}`}
-                  className="rounded-xl border border-slate-300 bg-white px-5 py-3 text-sm font-black uppercase tracking-wide text-blue-950 transition hover:-translate-y-0.5 hover:border-red-300 hover:text-red-700"
-                >
-                  Request invoice
-                </a>
+                {paymentsEnabled ? (
+                  <a
+                    href={`mailto:Ryan@RealRyanNichols.com?subject=${encodeURIComponent(`RepWatchr Service: ${service.name}`)}`}
+                    className="rounded-xl border border-slate-300 bg-white px-5 py-3 text-sm font-black uppercase tracking-wide text-blue-950 transition hover:-translate-y-0.5 hover:border-red-300 hover:text-red-700"
+                  >
+                    Request invoice
+                  </a>
+                ) : (
+                  <Link
+                    href={`/beta-access?package=${encodeURIComponent(service.slug)}`}
+                    className="rounded-xl border border-slate-300 bg-white px-5 py-3 text-sm font-black uppercase tracking-wide text-blue-950 transition hover:-translate-y-0.5 hover:border-red-300 hover:text-red-700"
+                  >
+                    Tell us what you need monitored
+                  </Link>
+                )}
               </div>
             </div>
             <div className="grid content-start gap-3">
               <div className="rounded-lg border border-blue-100 bg-blue-50 p-5">
                 <p className="text-xs font-black uppercase tracking-wide text-blue-900">Price</p>
-                <p className="mt-1 text-4xl font-black text-blue-950">{service.priceLabel}</p>
+                <p className="mt-1 text-4xl font-black text-blue-950">{priceLabel}</p>
                 <p className="mt-1 text-sm font-black uppercase tracking-wide text-slate-600">{service.billingLabel}</p>
+                {!paymentsEnabled && service.priceCents > 0 ? (
+                  <p className="mt-3 text-sm font-bold leading-6 text-slate-700">
+                    RepWatchr is collecting demand before launching paid packages. No checkout is active on this page.
+                  </p>
+                ) : null}
               </div>
               <div className="rounded-lg border border-slate-200 bg-slate-50 p-5">
                 <p className="text-xs font-black uppercase tracking-wide text-red-700">Best for</p>

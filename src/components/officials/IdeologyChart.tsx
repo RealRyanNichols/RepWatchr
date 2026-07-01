@@ -21,9 +21,27 @@ function statusClass(value: boolean): string {
     : "border-amber-200 bg-amber-50 text-amber-800";
 }
 
-export default function IdeologyChart({ profile }: { profile: OfficialIdeologyProfile }) {
+export default function IdeologyChart({
+  profile,
+  publicVoteCount = 0,
+  publicVoteSession,
+  completionPercent,
+}: {
+  profile: OfficialIdeologyProfile;
+  publicVoteCount?: number;
+  publicVoteSession?: string;
+  completionPercent?: number;
+}) {
   const markerPercent = clampPercent(profile.ideologyScore);
   const hasVotePosition = profile.ideologyScore !== null;
+  const hasPublicVoteGap = publicVoteCount > profile.mappedVoteCount;
+  const displayedCompletionPercent = completionPercent ?? profile.buildout.completionPercent;
+  const headline = hasPublicVoteGap ? "Reviewed vote subset - full mapping needed" : profile.ideologyLabel;
+  const scoreLabel = hasPublicVoteGap ? `Subset ${formatScore(profile.ideologyScore)}` : formatScore(profile.ideologyScore);
+  const confidenceLabel = hasPublicVoteGap ? "mapping incomplete" : `${profile.confidence} confidence`;
+  const mappedCoverageLabel = publicVoteCount > 0
+    ? `${profile.mappedVoteCount}/${publicVoteCount} public roll-call rows mapped to the left/right axis`
+    : `${profile.mappedVoteCount}/${profile.totalScorecardVotes} scorecard votes mapped to the left/right axis`;
   const buildoutItems = [
     ["Photo", profile.buildout.hasPhoto],
     ["Bio", profile.buildout.hasBio],
@@ -40,14 +58,19 @@ export default function IdeologyChart({ profile }: { profile: OfficialIdeologyPr
       <div className="flex flex-col gap-2 sm:flex-row sm:items-start sm:justify-between">
         <div>
           <p className="text-xs font-black uppercase tracking-wide text-red-700">Vote-weighted left/right chart</p>
-          <h2 className="mt-1 text-xl font-black text-slate-950">{profile.ideologyLabel}</h2>
+          <h2 className="mt-1 text-xl font-black text-slate-950">{headline}</h2>
           <p className="mt-1 text-sm font-semibold leading-6 text-slate-600">
             {profile.basis}
           </p>
+          {publicVoteSession ? (
+            <p className="mt-2 text-xs font-black uppercase tracking-wide text-slate-500">
+              Vote file: {publicVoteSession}
+            </p>
+          ) : null}
         </div>
         <div className="shrink-0 rounded-xl border border-slate-200 bg-slate-50 px-4 py-3 text-right">
-          <p className="text-2xl font-black text-slate-950">{formatScore(profile.ideologyScore)}</p>
-          <p className="text-xs font-black uppercase tracking-wide text-slate-500">{profile.confidence} confidence</p>
+          <p className="text-2xl font-black text-slate-950">{scoreLabel}</p>
+          <p className="text-xs font-black uppercase tracking-wide text-slate-500">{confidenceLabel}</p>
         </div>
       </div>
 
@@ -59,9 +82,9 @@ export default function IdeologyChart({ profile }: { profile: OfficialIdeologyPr
         </div>
         <div className="relative mt-3 h-4 rounded-full bg-[linear-gradient(90deg,#2563eb_0%,#e5e7eb_50%,#dc2626_100%)]">
           <span
-            className={`absolute top-1/2 h-7 w-7 -translate-x-1/2 -translate-y-1/2 rotate-45 border-2 border-white shadow ${hasVotePosition ? "bg-slate-950" : "bg-amber-500"}`}
+            className={`absolute top-1/2 h-7 w-7 -translate-x-1/2 -translate-y-1/2 rotate-45 border-2 border-white shadow ${hasVotePosition && !hasPublicVoteGap ? "bg-slate-950" : "bg-amber-500"}`}
             style={{ left: `${markerPercent}%` }}
-            aria-label={`Ideology marker: ${formatScore(profile.ideologyScore)}`}
+            aria-label={`Ideology marker: ${scoreLabel}`}
           />
         </div>
         <div className="mt-3 grid gap-2 text-xs font-bold text-slate-600 sm:grid-cols-3">
@@ -76,17 +99,17 @@ export default function IdeologyChart({ profile }: { profile: OfficialIdeologyPr
           <div>
             <p className="text-xs font-black uppercase tracking-wide text-slate-500">Master profile buildout</p>
             <p className="mt-1 text-sm font-semibold text-slate-700">
-              {profile.buildout.completionPercent}% complete from the current public data files.
+              {displayedCompletionPercent}% complete from the current public data files.
             </p>
           </div>
           <p className="text-xs font-black uppercase tracking-wide text-slate-500">
-            {profile.mappedVoteCount}/{profile.totalScorecardVotes} scorecard votes mapped to the left/right axis
+            {mappedCoverageLabel}
           </p>
         </div>
         <div className="mt-3 h-2 overflow-hidden rounded-full bg-white">
           <div
             className="h-full rounded-full bg-slate-950"
-            style={{ width: `${Math.max(0, Math.min(100, profile.buildout.completionPercent))}%` }}
+            style={{ width: `${Math.max(0, Math.min(100, displayedCompletionPercent))}%` }}
           />
         </div>
         <div className="mt-4 grid gap-2 sm:grid-cols-2">
@@ -101,6 +124,12 @@ export default function IdeologyChart({ profile }: { profile: OfficialIdeologyPr
             Missing next: {profile.buildout.missingItems.slice(0, 6).join(", ")}
             {profile.buildout.missingItems.length > 6 ? "." : ""}
           </p>
+        ) : null}
+        {hasPublicVoteGap ? (
+          <div className="mt-4 rounded-lg border border-amber-200 bg-amber-50 px-3 py-2 text-xs font-bold leading-5 text-amber-900">
+            Vote rows are loaded, but the chart only moves after a reviewed issue rule maps that roll call left,
+            right, or center. This keeps RepWatchr from turning raw votes into fake certainty.
+          </div>
         ) : null}
       </div>
 

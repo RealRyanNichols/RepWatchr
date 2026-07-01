@@ -36,7 +36,7 @@ export async function POST(request: NextRequest) {
 
   if (!stripeSecretKey || !priceId) {
     return NextResponse.json(
-      { error: "Stripe profile subscription environment variables are not configured." },
+      { error: "Profile checkout is temporarily unavailable." },
       { status: 503 }
     );
   }
@@ -66,7 +66,7 @@ export async function POST(request: NextRequest) {
   const adminSupabase = getSupabaseAdminClient();
   if (!adminSupabase) {
     return NextResponse.json(
-      { error: "Supabase service role is not configured." },
+      { error: "Profile checkout is temporarily unavailable." },
       { status: 503 }
     );
   }

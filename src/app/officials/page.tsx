@@ -5,6 +5,7 @@ import { getAllOfficials, getAllScoreCards, getRepWatchrDataStats } from "@/lib/
 import { getSchoolBoardStats } from "@/lib/school-board-research";
 import OfficialGrid from "@/components/officials/OfficialGrid";
 import OfficialsCommandSearchForm from "@/components/officials/OfficialsCommandSearchForm";
+import TexasRepresentativeCommandPanel from "@/components/officials/TexasRepresentativeCommandPanel";
 import NationalSpotlightSelector from "@/components/shared/NationalSpotlightSelector";
 import OfficialPhotoImage, { FEATURED_OFFICIAL_PHOTO_QUALITY } from "@/components/shared/OfficialPhotoImage";
 import type { GovernmentLevel, Official } from "@/types";
@@ -12,6 +13,7 @@ import { getAllNationalJurisdictions, getNationalBuildoutSummary, nationalGovern
 import { countByState, getSelectedStateCode } from "@/lib/state-scope";
 import { getOfficialCompletionDashboard } from "@/lib/profile-completion";
 import { getStateLegislatureBuildoutStats } from "@/lib/state-legislature";
+import { getTexasRepresentativeBuildout } from "@/lib/texas-representatives";
 
 export const metadata: Metadata = {
   title: "National Elected Officials Directory",
@@ -81,6 +83,7 @@ export default async function OfficialsPage({
   const jurisdictions = getAllNationalJurisdictions();
   const nationalSummary = getNationalBuildoutSummary();
   const stateLegislatureStats = getStateLegislatureBuildoutStats();
+  const texasRepresentativeBuildout = getTexasRepresentativeBuildout(officials, scoreCards);
   const profileCountsByState = countByState(officials, (official) => official.state, "TX");
   const selectedState = jurisdictions.find((state) => state.code === selectedStateCode);
   const selectedOfficials = selectedStateCode
@@ -167,6 +170,10 @@ export default async function OfficialsPage({
           congressTradingHighRows={dataStats.congressTradingHighRows}
         />
 
+        {(!selectedStateCode || selectedStateCode === "TX") && (
+          <TexasRepresentativeCommandPanel buildout={texasRepresentativeBuildout} />
+        )}
+
         {directoryOfficials.length > 0 ? (
           <div id="official-directory" className="mt-5 scroll-mt-24">
             <h1 className="sr-only">
@@ -189,7 +196,17 @@ export default async function OfficialsPage({
                 </div>
               }
             >
-              <OfficialGrid officials={directoryOfficials} scoreCards={scoreCards} />
+              <OfficialGrid
+                officials={directoryOfficials}
+                scoreCards={scoreCards}
+                defaultLevel={selectedStateCode === "TX" ? "all" : "federal"}
+                resetLabel={selectedStateCode === "TX" ? "Reset Texas reps" : undefined}
+                introText={
+                  selectedStateCode === "TX"
+                    ? "Texas federal and state representatives are loaded together first so voters can scan party, source count, score state, and profile photos without digging."
+                    : undefined
+                }
+              />
             </Suspense>
           </div>
         ) : selectedStateCode ? (

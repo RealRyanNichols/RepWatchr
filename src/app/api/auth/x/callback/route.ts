@@ -58,7 +58,7 @@ export async function GET(request: NextRequest) {
   }
 
   if (!clientId) {
-    return NextResponse.redirect(doneUrl(request, "error", "X_CLIENT_ID is not configured."));
+    return NextResponse.redirect(doneUrl(request, "error", "X connection is temporarily unavailable."));
   }
 
   const headers: Record<string, string> = {
@@ -94,7 +94,7 @@ export async function GET(request: NextRequest) {
 
   const supabase = getSupabaseAdminClient();
   if (!supabase) {
-    return NextResponse.redirect(doneUrl(request, "error", "Supabase service role is not configured."));
+    return NextResponse.redirect(doneUrl(request, "error", "Social account storage is temporarily unavailable."));
   }
 
   const now = new Date();

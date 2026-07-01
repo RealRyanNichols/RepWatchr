@@ -1,0 +1,47 @@
+{
+  "id": "brett-ligon",
+  "name": "Brett Ligon",
+  "firstName": "Brett",
+  "lastName": "Ligon",
+  "photo": "/images/officials/state-senate/brett-ligon.jpg",
+  "photoSourceUrl": "https://senate.texas.gov/members/d04/img/Ligon_Brett_Headshot_web.jpg",
+  "photoCredit": "Official Texas Senate photo",
+  "party": "R",
+  "level": "state",
+  "position": "State Senator",
+  "district": "SD-4",
+  "jurisdiction": "Texas Senate",
+  "county": [
+    "Montgomery",
+    "Harris",
+    "Chambers",
+    "Jefferson",
+    "Galveston"
+  ],
+  "termStart": "2026-05-02",
+  "termEnd": "Current legislative term pending source review",
+  "contactInfo": {
+    "office": "P.O. Box 12068 Capitol Station, Austin, TX 78711",
+    "phone": "512-463-0104",
+    "website": "https://senate.texas.gov/member.php?d=4"
+  },
+  "bio": "Brett Ligon serves as State Senator for Texas Senate District 4. The official Texas Senate profile says Ligon was elected on May 2, 2026, to serve District 4, which includes Montgomery, Harris, Chambers, Jefferson, and Galveston counties. This RepWatchr starter profile is sourced from the official Texas Senate profile and OpenStates public records.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "TX",
+  "sourceLinks": [
+    {
+      "title": "Official Texas Senate profile",
+      "url": "https://senate.texas.gov/member.php?d=4"
+    },
+    {
+      "title": "OpenStates public people record",
+      "url": "https://raw.githubusercontent.com/openstates/people/main/data/tx/legislature/Brett-Ligon-6fde08be-f7c0-464a-83a7-430c60617beb.yml"
+    },
+    {
+      "title": "Official profile photo source",
+      "url": "https://senate.texas.gov/members/d04/img/Ligon_Brett_Headshot_web.jpg"
+    }
+  ],
+  "lastVerifiedAt": "2026-06-30"
+}

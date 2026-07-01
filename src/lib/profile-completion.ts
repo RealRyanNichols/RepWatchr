@@ -153,10 +153,15 @@ function hasSocialLinks(official: Official) {
 
 function hasRuleReviewedIdeology(officialId: string) {
   const ideologyProfile = getOfficialIdeologyProfile(officialId);
+  const voteRecord = getPublicVoteRecord(officialId);
+  const loadedPublicVoteCount = voteRecord?.summary.totalVotesLoaded ?? 0;
+  const mappedVoteCount = ideologyProfile?.mappedVoteCount ?? 0;
+
   return Boolean(
     ideologyProfile &&
       ideologyProfile.ideologyScore !== null &&
-      ideologyProfile.mappedVoteCount > 0,
+      mappedVoteCount > 0 &&
+      (loadedPublicVoteCount === 0 || mappedVoteCount >= loadedPublicVoteCount),
   );
 }
 

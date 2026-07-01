@@ -2,6 +2,7 @@
 
 import { useEffect } from "react";
 import { usePathname } from "next/navigation";
+import { track } from "@vercel/analytics";
 
 const excludedPrefixes = ["/admin", "/api", "/auth", "/dashboard", "/login", "/create-account"];
 
@@ -16,6 +17,18 @@ function getReferrerHost() {
     return new URL(document.referrer).hostname.slice(0, 120);
   } catch {
     return "";
+  }
+}
+
+function getSessionDepth(pathname: string) {
+  try {
+    const seenRaw = sessionStorage.getItem("repwatchr-session-pages");
+    const seen = new Set<string>(seenRaw ? JSON.parse(seenRaw) : []);
+    seen.add(pathname);
+    sessionStorage.setItem("repwatchr-session-pages", JSON.stringify(Array.from(seen).slice(-100)));
+    return seen.size;
+  } catch {
+    return 1;
   }
 }
 
@@ -35,9 +48,18 @@ export default function PageViewTracker() {
       // Analytics must never break navigation when browser storage is blocked.
     }
 
+    const sessionPageDepth = getSessionDepth(pathname);
+    track("pages_per_session_progress", {
+      path: pathname,
+      session_page_depth: sessionPageDepth,
+      target_pages_per_session: 8,
+      target_met: sessionPageDepth >= 8,
+    });
+
     const body = JSON.stringify({
       path: pathname,
       referrerHost: getReferrerHost(),
+      sessionPageDepth,
     });
 
     window.setTimeout(() => {

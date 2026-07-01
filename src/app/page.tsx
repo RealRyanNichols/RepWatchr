@@ -1,10 +1,15 @@
+import fs from "fs";
+import path from "path";
 import Link from "next/link";
 import { getAllOfficials, getScoreCard, getIssueCategories, getAllNews, getRedFlags, getRepWatchrDataStats, getOfficialById } from "@/lib/data";
 import { getSchoolBoardStats } from "@/lib/school-board-research";
 import OfficialCard from "@/components/officials/OfficialCard";
 import FarettaSearchBox from "@/components/shared/FarettaSearchBox";
 import OfficialPhotoImage, { FEATURED_OFFICIAL_PHOTO_QUALITY } from "@/components/shared/OfficialPhotoImage";
+import NextUsefulMovePanel from "@/components/shared/NextUsefulMovePanel";
+import InterestProfilePanel from "@/components/personalization/InterestProfilePanel";
 import { getRepWatchrServices } from "@/data/repwatchr-services";
+import { getRepWatchrDataProducts, getRepWatchrFeedbackMechanisms } from "@/data/repwatchr-data-products";
 import type { NewsArticle, Official } from "@/types";
 
 const levelCards = [
@@ -63,73 +68,6 @@ const recordLoop = [
   },
 ];
 
-const memberFunnelTools = [
-  {
-    label: "Watchlist",
-    detail: "Keep officials, boards, agencies, and public authority roles in one return path.",
-  },
-  {
-    label: "Records request",
-    detail: "Turn a concern into a clean request for agendas, minutes, filings, videos, contracts, or vote records.",
-  },
-  {
-    label: "Timeline starter",
-    detail: "Separate dates, claims, source links, missing proof, and next records to pull.",
-  },
-  {
-    label: "Safer share copy",
-    detail: "Post what the record shows without overstating what still needs verification.",
-  },
-];
-
-const twoMinuteChallenge = [
-  {
-    label: "Find one name",
-    href: "/officials",
-    detail: "Search the official, board member, district, or office people are arguing about.",
-  },
-  {
-    label: "Open one record",
-    href: "/red-flags",
-    detail: "Look for the vote, funder, source gap, or red flag that needs a closer look.",
-  },
-  {
-    label: "Submit one source",
-    href: "/submit-source",
-    detail: "Send the agenda, clip, article, filing, meeting video, contract, or missing link.",
-  },
-  {
-    label: "Build one packet",
-    href: "/elections/texas/contribute",
-    detail: "Turn the source into a copyable packet that can become a story, correction, or profile update.",
-  },
-];
-
-const returnHooks = [
-  {
-    trigger: "Before a meeting",
-    promise: "Open the profile, copy the clean talking point, and walk in with the record already organized.",
-  },
-  {
-    trigger: "When a post goes viral",
-    promise: "Drop the source-backed profile instead of sending people into another comment fight.",
-  },
-  {
-    trigger: "When a new record appears",
-    promise: "Submit the receipt, flag the gap, and turn scattered claims into a reusable public record trail.",
-  },
-  {
-    trigger: "When election season starts",
-    promise: "Compare faces, votes, red flags, money, citizen grades, and source links in one place.",
-  },
-];
-
-const sharePrompts = [
-  "Who voted for this, who funded it, and where is the source?",
-  "Open the record before the next meeting.",
-  "Do not argue from memory. Share the receipt.",
-];
-
 const sourceDeskActions = [
   {
     label: "Submit the receipt",
@@ -154,6 +92,15 @@ function formatNumber(value: number) {
 
 function isOfficial(value: Official | undefined): value is Official {
   return Boolean(value);
+}
+
+function publicAssetExists(assetPath?: string) {
+  if (!assetPath?.startsWith("/")) return false;
+  return fs.existsSync(path.join(process.cwd(), "public", assetPath));
+}
+
+function officialWithSafePhoto(official: Official): Official {
+  return publicAssetExists(official.photo) ? official : { ...official, photo: undefined };
 }
 
 function ProfileTicker({ officials }: { officials: Official[] }) {
@@ -244,7 +191,8 @@ function HomeStoryVisual({ article }: { article: NewsArticle }) {
   const officialsWithPhotos = article.officialIds
     .map((id) => getOfficialById(id))
     .filter(isOfficial)
-    .filter((official) => official.photo)
+    .filter((official) => publicAssetExists(official.photo))
+    .map(officialWithSafePhoto)
     .slice(0, 3);
 
   if (!officialsWithPhotos.length) {
@@ -310,16 +258,17 @@ export default function HomePage() {
   ];
 
   const photoOfficials = officials
-    .filter((official) => official.photo && (official.level === "federal" || official.level === "state"))
-    .slice(0, 28);
+    .filter((official) => official.level === "federal" || official.level === "state")
+    .slice(0, 28)
+    .map(officialWithSafePhoto);
 
   const watchBoardSignals = officials
-    .filter((official) => official.photo && (official.level === "federal" || official.level === "state"))
+    .filter((official) => official.level === "federal" || official.level === "state")
     .map((official) => {
       const scoreCard = getScoreCard(official.id);
       const redFlagCount = getRedFlags(official.id).length;
       return {
-        official,
+        official: officialWithSafePhoto(official),
         score: scoreCard?.overall,
         redFlagCount,
         heat: redFlagCount * 18 + (scoreCard ? 100 - scoreCard.overall : 0),
@@ -332,33 +281,13 @@ export default function HomePage() {
 
   const latestNews = getAllNews().slice(0, 3);
   const serviceHighlights = getRepWatchrServices().slice(0, 3);
+  const dataReports = getRepWatchrDataProducts().slice(0, 3);
+  const feedbackMechanisms = getRepWatchrFeedbackMechanisms().slice(0, 4);
 
   const featuredOfficials = officials
     .filter((o) => o.level === "federal" || o.level === "state")
-    .slice(0, 6);
-
-  const returnStats = [
-    {
-      label: "First move",
-      value: "2 min",
-      detail: "Search, open, source, share",
-    },
-    {
-      label: "Hot records",
-      value: formatNumber(watchBoardSignals.length),
-      detail: "profiles with scores or flags",
-    },
-    {
-      label: "Fresh signals",
-      value: formatNumber(latestNews.length),
-      detail: "updates that point back to records",
-    },
-    {
-      label: "Receipts",
-      value: formatNumber(allPublicSourceUrls),
-      detail: "source links voters can check",
-    },
-  ];
+    .slice(0, 6)
+    .map(officialWithSafePhoto);
 
   const homeStructuredData = [
     {
@@ -370,7 +299,7 @@ export default function HomePage() {
         "Search public officials, school boards, votes, funding, red flags, source links, and citizen grades.",
       potentialAction: {
         "@type": "SearchAction",
-        target: "https://www.repwatchr.com/faretta-ai?q={search_term_string}",
+        target: "https://www.repwatchr.com/search?q={search_term_string}",
         "query-input": "required name=search_term_string",
       },
     },
@@ -440,11 +369,11 @@ export default function HomePage() {
           <div className="bg-white" />
           <div className="bg-blue-900" />
         </div>
-        <div className="relative mx-auto grid max-w-7xl gap-5 px-4 py-6 sm:px-6 sm:py-8 lg:grid-cols-[minmax(0,1fr)_minmax(380px,0.82fr)] lg:px-8">
-          <div className="flex min-h-[520px] flex-col justify-center">
+        <div className="relative mx-auto grid max-w-7xl items-start gap-5 px-4 py-7 sm:px-6 sm:py-10 lg:grid-cols-[minmax(0,1fr)_minmax(380px,0.82fr)] lg:px-8">
+          <div className="flex flex-col">
             <div className="flex flex-wrap items-center gap-2">
               <span className="rounded-full bg-red-700 px-3 py-1 text-xs font-black uppercase tracking-wide text-white shadow-sm">
-              Accountability loop live
+                Accountability loop live
               </span>
               <span className="rounded-full border border-blue-200 bg-white px-3 py-1 text-xs font-black uppercase tracking-wide text-blue-950 shadow-sm">
                 {formatNumber(dataStats.officialsWithPhotos)} faces loaded
@@ -453,60 +382,108 @@ export default function HomePage() {
                 Source-backed
               </span>
             </div>
-            <h1 className="mt-5 max-w-4xl text-5xl font-black leading-[0.92] tracking-tight text-blue-950 sm:text-6xl lg:text-8xl">
-              Put your officials
+            <h1 className="mt-5 max-w-4xl text-4xl font-black leading-[0.96] tracking-tight text-blue-950 sm:text-6xl lg:text-8xl">
+              Put your officials{" "}
               <span className="block text-red-700">on the record.</span>
             </h1>
             <p className="mt-4 max-w-3xl text-base font-semibold leading-7 text-blue-950/75 sm:text-lg">
-              Search a name. Open the profile. Grade the record. Add the missing source.
-              Share the page before the meeting, election, hearing, or news cycle. Public pressure
-              only works when it turns into receipts, return visits, and records people can repeat.
+              Start here: search a name, pick the public lane, check the strongest
+              record, or send the missing source. Every section below has one job:
+              facts, stories, lanes, issues, faces, services, or source intake.
             </p>
             <div className="mt-5 max-w-2xl">
               <FarettaSearchBox compact placeholder="Search an official, school board, vote, funder, red flag, or record..." />
             </div>
-            <div className="mt-5 grid gap-2 sm:grid-cols-2 lg:grid-cols-4">
+            <div className="mt-5 grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
               <Link
                 href="/officials"
-                className="rounded-xl bg-red-700 px-5 py-4 text-center text-sm font-black uppercase tracking-wide text-white shadow-lg shadow-red-900/20 transition hover:-translate-y-0.5 hover:bg-blue-900"
+                className="rw-click-card group min-h-[104px] rounded-2xl border border-red-300 bg-[linear-gradient(135deg,#b42318_0%,#7f1d1d_100%)] p-4 text-white shadow-xl shadow-red-900/25 transition focus-visible:outline focus-visible:outline-4 focus-visible:outline-offset-2 focus-visible:outline-red-300"
+                aria-label="Open officials directory"
               >
-                Find an official
+                <span className="flex items-center justify-between gap-3">
+                  <span className="grid h-11 w-11 place-items-center rounded-xl bg-white/15 text-xs font-black ring-1 ring-white/25">
+                    ID
+                  </span>
+                  <span className="rounded-full bg-white px-2.5 py-1 text-[10px] font-black uppercase tracking-wide text-red-800 shadow-sm">
+                    Open -&gt;
+                  </span>
+                </span>
+                <span className="mt-3 block text-left text-base font-black uppercase leading-tight tracking-wide">
+                  Find an official
+                </span>
+                <span className="mt-1 block text-left text-xs font-bold leading-4 text-red-50/90">
+                  Faces, scores, sources, and receipts.
+                </span>
               </Link>
               <Link
                 href="/school-boards"
-                className="rounded-xl border border-blue-200 bg-white px-5 py-4 text-center text-sm font-black uppercase tracking-wide text-blue-950 shadow-sm transition hover:-translate-y-0.5 hover:border-blue-400 hover:bg-blue-50"
+                className="rw-click-card group min-h-[104px] rounded-2xl border border-blue-300 bg-[linear-gradient(135deg,#ffffff_0%,#eef6ff_100%)] p-4 text-blue-950 shadow-xl shadow-blue-900/10 transition focus-visible:outline focus-visible:outline-4 focus-visible:outline-offset-2 focus-visible:outline-blue-300"
+                aria-label="Open school boards directory"
               >
-                Open school boards
+                <span className="flex items-center justify-between gap-3">
+                  <span className="grid h-11 w-11 place-items-center rounded-xl bg-blue-950 text-xs font-black text-white shadow-sm">
+                    BD
+                  </span>
+                  <span className="rounded-full bg-blue-950 px-2.5 py-1 text-[10px] font-black uppercase tracking-wide text-white shadow-sm">
+                    Open -&gt;
+                  </span>
+                </span>
+                <span className="mt-3 block text-left text-base font-black uppercase leading-tight tracking-wide">
+                  School boards
+                </span>
+                <span className="mt-1 block text-left text-xs font-bold leading-4 text-slate-600">
+                  Trustees, meetings, votes, and gaps.
+                </span>
               </Link>
               <Link
                 href="/submit-source"
-                className="rounded-xl border border-amber-200 bg-amber-50 px-5 py-4 text-center text-sm font-black uppercase tracking-wide text-amber-950 shadow-sm transition hover:-translate-y-0.5 hover:border-amber-400 hover:bg-amber-100"
+                className="rw-click-card group min-h-[104px] rounded-2xl border border-amber-300 bg-[linear-gradient(135deg,#fff7ed_0%,#ffffff_100%)] p-4 text-amber-950 shadow-xl shadow-amber-900/10 transition focus-visible:outline focus-visible:outline-4 focus-visible:outline-offset-2 focus-visible:outline-amber-300"
+                aria-label="Submit a public source"
               >
-                Submit source
+                <span className="flex items-center justify-between gap-3">
+                  <span className="grid h-11 w-11 place-items-center rounded-xl bg-amber-400 text-xs font-black text-blue-950 shadow-sm">
+                    SRC
+                  </span>
+                  <span className="rounded-full bg-amber-400 px-2.5 py-1 text-[10px] font-black uppercase tracking-wide text-blue-950 shadow-sm">
+                    Send -&gt;
+                  </span>
+                </span>
+                <span className="mt-3 block text-left text-base font-black uppercase leading-tight tracking-wide">
+                  Submit source
+                </span>
+                <span className="mt-1 block text-left text-xs font-bold leading-4 text-amber-900/80">
+                  Drop the link, claim, date, and target.
+                </span>
               </Link>
               <Link
                 href="/elections"
-                className="rounded-xl border border-slate-300 bg-slate-950 px-5 py-4 text-center text-sm font-black uppercase tracking-wide text-white shadow-sm transition hover:-translate-y-0.5 hover:border-red-300 hover:bg-red-700"
+                className="rw-click-card group min-h-[104px] rounded-2xl border border-slate-700 bg-[linear-gradient(135deg,#020617_0%,#0b2a55_100%)] p-4 text-white shadow-xl shadow-slate-950/25 transition focus-visible:outline focus-visible:outline-4 focus-visible:outline-offset-2 focus-visible:outline-blue-300"
+                aria-label="Open election hub"
               >
-                Election hub
+                <span className="flex items-center justify-between gap-3">
+                  <span className="grid h-11 w-11 place-items-center rounded-xl bg-white/10 text-xs font-black ring-1 ring-white/20">
+                    VOTE
+                  </span>
+                  <span className="rounded-full bg-white px-2.5 py-1 text-[10px] font-black uppercase tracking-wide text-blue-950 shadow-sm">
+                    Open -&gt;
+                  </span>
+                </span>
+                <span className="mt-3 block text-left text-base font-black uppercase leading-tight tracking-wide">
+                  Election hub
+                </span>
+                <span className="mt-1 block text-left text-xs font-bold leading-4 text-slate-200">
+                  Races, candidates, packets, and questions.
+                </span>
               </Link>
-            </div>
-            <div className="mt-5 grid gap-2 sm:grid-cols-4">
-              {recordLoop.map((item) => (
-                <div key={item.step} className="rounded-xl border border-slate-200 bg-white/90 p-3 shadow-sm">
-                  <p className="text-[10px] font-black uppercase tracking-[0.18em] text-red-700">{item.step}</p>
-                  <p className="mt-1 text-sm font-black leading-5 text-blue-950">{item.title}</p>
-                </div>
-              ))}
             </div>
           </div>
 
-          <div className="grid content-center gap-3">
+          <div className="grid gap-3">
             <div className="rounded-2xl border border-slate-300 bg-slate-950 p-4 text-white shadow-xl shadow-blue-950/20">
               <div className="flex items-center justify-between gap-3">
                 <div>
-                  <p className="text-xs font-black uppercase tracking-[0.18em] text-amber-300">Open first</p>
-                  <h2 className="mt-1 text-2xl font-black">Records built to share.</h2>
+                  <p className="text-xs font-black uppercase tracking-[0.18em] text-amber-300">Record board</p>
+                  <h2 className="mt-1 text-2xl font-black">Profiles with a reason to open.</h2>
                 </div>
                 <Link href="/red-flags" className="shrink-0 rounded-full bg-red-700 px-3 py-1.5 text-xs font-black text-white transition hover:bg-red-600">
                   Red flags
@@ -524,8 +501,8 @@ export default function HomePage() {
                 ))}
               </div>
               <p className="mt-3 text-xs font-semibold leading-5 text-slate-300">
-                The strongest RepWatchr pages are not opinion pages. They are names, votes,
-                scores, source links, and a next action voters can repeat.
+                This board is for records with visible friction: a score, red flag,
+                vote trail, funding lead, or source gap worth inspecting now.
               </p>
             </div>
 
@@ -542,33 +519,14 @@ export default function HomePage() {
               </Link>
             </div>
 
-            <div className="rounded-2xl border border-amber-200 bg-amber-50 p-4 shadow-sm">
-              <p className="text-xs font-black uppercase tracking-[0.18em] text-red-700">2-minute challenge</p>
-              <h3 className="mt-2 text-2xl font-black leading-tight text-blue-950">
-                Check one public record in the next two minutes.
-              </h3>
-              <div className="mt-4 grid gap-2">
-                {twoMinuteChallenge.map((action, index) => (
-                  <Link
-                    key={action.label}
-                    href={action.href}
-                    className="group grid grid-cols-[32px_1fr] gap-3 rounded-xl border border-amber-200 bg-white p-3 transition hover:-translate-y-0.5 hover:border-red-300 hover:shadow-sm"
-                  >
-                    <span className="grid h-8 w-8 place-items-center rounded-full bg-red-700 text-xs font-black text-white">
-                      {index + 1}
-                    </span>
-                    <span>
-                      <span className="block text-sm font-black text-blue-950 group-hover:text-red-700">{action.label}</span>
-                      <span className="mt-1 block text-xs font-semibold leading-5 text-slate-600">{action.detail}</span>
-                    </span>
-                  </Link>
-                ))}
-              </div>
-            </div>
           </div>
         </div>
         <ProfileTicker officials={photoOfficials} />
       </section>
+
+      <NextUsefulMovePanel />
+
+      <InterestProfilePanel />
 
       {/* Proof Bar */}
       <section className="border-b border-gray-100 bg-white">
@@ -576,7 +534,7 @@ export default function HomePage() {
           <div className="mb-6 max-w-2xl">
             <p className="text-xs font-black uppercase tracking-[0.18em] text-red-700">Proof people can check</p>
             <h2 className="mt-2 text-3xl font-black leading-tight text-blue-950">
-              The record is already loaded. Now make it easy to open, grade, and share.
+              The database has depth. The first page should make that depth easy to enter.
             </h2>
           </div>
           <div className="grid grid-cols-2 overflow-hidden rounded-2xl border border-gray-100 sm:grid-cols-4">
@@ -594,13 +552,77 @@ export default function HomePage() {
               </div>
             ))}
           </div>
-          <div className="mt-4 grid gap-3 sm:grid-cols-4">
-            {returnStats.map((stat) => (
-              <div key={stat.label} className="rounded-2xl border border-blue-100 bg-[#f8fbff] p-4">
-                <p className="text-[10px] font-black uppercase tracking-[0.18em] text-blue-800">{stat.label}</p>
-                <p className="mt-2 text-3xl font-black text-red-700">{stat.value}</p>
-                <p className="mt-1 text-xs font-semibold leading-5 text-blue-950/70">{stat.detail}</p>
-              </div>
+        </div>
+      </section>
+
+      {/* Data Engine */}
+      <section className="border-b border-blue-100 bg-[#f8fbff]">
+        <div className="mx-auto grid max-w-7xl gap-8 px-4 py-14 sm:px-6 lg:grid-cols-[0.88fr_1.12fr] lg:px-8">
+          <div>
+            <p className="text-xs font-black uppercase tracking-[0.18em] text-red-700">Political data engine</p>
+            <h2 className="mt-2 text-3xl font-black leading-tight text-blue-950 sm:text-5xl">
+              RepWatchr can sell useful data without selling out the record.
+            </h2>
+            <p className="mt-4 text-sm font-semibold leading-6 text-blue-950/70">
+              The long-term business is verified civic feedback, source-backed political intelligence,
+              claimed profile workflows, custom race reports, and licensed aggregate datasets. Public
+              records stay visible. Private identity data stays protected.
+            </p>
+            <div className="mt-5 flex flex-wrap gap-3">
+              <Link
+                href="/data-reports"
+                className="rounded-xl bg-red-700 px-5 py-3 text-sm font-black uppercase tracking-wide text-white shadow-sm transition hover:-translate-y-0.5 hover:bg-blue-950"
+              >
+                Data Reports
+              </Link>
+              <Link
+                href="/growth-engine"
+                className="rounded-xl border border-blue-200 bg-blue-50 px-5 py-3 text-sm font-black uppercase tracking-wide text-blue-950 transition hover:-translate-y-0.5 hover:border-red-300 hover:bg-white"
+              >
+                Growth Engine
+              </Link>
+              <Link
+                href="/profiles/claim"
+                className="rounded-xl border border-blue-200 bg-white px-5 py-3 text-sm font-black uppercase tracking-wide text-blue-950 transition hover:-translate-y-0.5 hover:border-red-300 hover:bg-blue-50"
+              >
+                Claim Profile
+              </Link>
+            </div>
+            <div className="mt-5 grid gap-2">
+              {feedbackMechanisms.map((mechanism) => (
+                <div key={mechanism.name} className="rounded-xl border border-blue-100 bg-white p-4 shadow-sm">
+                  <p className="text-xs font-black uppercase tracking-wide text-red-700">{mechanism.name}</p>
+                  <p className="mt-1 text-sm font-black leading-5 text-blue-950">{mechanism.question}</p>
+                  <p className="mt-1 text-xs font-semibold leading-5 text-slate-600">{mechanism.signal}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+          <div className="grid gap-3">
+            {dataReports.map((product) => (
+              <Link
+                key={product.slug}
+                href="/data-reports"
+                className="group rounded-2xl border border-slate-200 bg-white p-5 shadow-sm transition hover:-translate-y-0.5 hover:border-red-300 hover:shadow-md"
+              >
+                <div className="flex flex-wrap items-center justify-between gap-3">
+                  <span className="rounded-full bg-blue-950 px-2.5 py-1 text-[11px] font-black uppercase tracking-wide text-white">
+                    {product.eyebrow}
+                  </span>
+                  <span className="text-xs font-black uppercase tracking-wide text-red-700">
+                    Aggregate first
+                  </span>
+                </div>
+                <h3 className="mt-4 text-2xl font-black leading-tight text-blue-950 group-hover:text-red-700">
+                  {product.name}
+                </h3>
+                <p className="mt-2 text-sm font-semibold leading-6 text-slate-600">
+                  {product.summary}
+                </p>
+                <p className="mt-3 rounded-xl bg-blue-50 p-3 text-xs font-bold leading-5 text-blue-950">
+                  {product.guardrail}
+                </p>
+              </Link>
             ))}
           </div>
         </div>
@@ -624,7 +646,7 @@ export default function HomePage() {
                 href="/blog"
                 className="rounded-xl bg-red-700 px-5 py-3 text-sm font-black uppercase tracking-wide text-white shadow-sm transition hover:-translate-y-0.5 hover:bg-blue-950"
               >
-                Open Blog
+                Read Blog
               </Link>
               <Link
                 href="/elections"
@@ -711,96 +733,19 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Attention Multiplier */}
-      <section className="border-b border-blue-100 bg-[#f8fbff]">
-        <div className="mx-auto max-w-7xl px-4 py-14 sm:px-6 lg:px-8">
-          <div className="grid gap-8 lg:grid-cols-[0.78fr_1.22fr]">
-            <div>
-              <p className="text-xs font-black uppercase tracking-[0.18em] text-red-700">Record-to-action loop</p>
-              <h2 className="mt-2 text-3xl font-black leading-tight text-blue-950 sm:text-5xl">
-                Every page should make the next click obvious.
-              </h2>
-              <p className="mt-4 text-sm font-semibold leading-6 text-blue-950/70">
-                The site should not ask voters to admire a database. It should give
-                them a clear path from search, to source, to share, to the next record.
-              </p>
-            </div>
-            <div className="grid gap-3 sm:grid-cols-2">
-              {recordLoop.map((item, index) => (
-                <div key={item.step} className="rounded-2xl border border-slate-200 bg-white p-5 shadow-sm">
-                  <div className="flex items-center gap-3">
-                    <span className="grid h-9 w-9 place-items-center rounded-full bg-red-700 text-sm font-black text-white">
-                      {index + 1}
-                    </span>
-                    <p className="text-xs font-black uppercase tracking-[0.18em] text-blue-800">{item.step}</p>
-                  </div>
-                  <h3 className="mt-4 text-xl font-black leading-tight text-blue-950">{item.title}</h3>
-                  <p className="mt-2 text-sm font-semibold leading-6 text-slate-600">{item.detail}</p>
-                </div>
-              ))}
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Return Hooks */}
-      <section className="border-b border-slate-200 bg-white">
-        <div className="mx-auto max-w-7xl px-4 py-14 sm:px-6 lg:px-8">
-          <div className="grid gap-8 lg:grid-cols-[1.05fr_0.95fr]">
-            <div>
-              <p className="text-xs font-black uppercase tracking-[0.18em] text-red-700">Reasons to come back</p>
-              <h2 className="mt-2 text-3xl font-black leading-tight text-blue-950 sm:text-5xl">
-                Make RepWatchr the place people return when pressure rises.
-              </h2>
-              <p className="mt-4 max-w-3xl text-sm font-semibold leading-6 text-blue-950/70">
-                A useful accountability page should answer the first question and point
-                to the next record: meetings, viral posts, new filings, and elections.
-              </p>
-              <div className="mt-6 grid gap-3 sm:grid-cols-2">
-                {returnHooks.map((hook) => (
-                  <div key={hook.trigger} className="rounded-2xl border border-slate-200 bg-slate-50 p-5">
-                    <p className="text-xs font-black uppercase tracking-wide text-red-700">{hook.trigger}</p>
-                    <p className="mt-2 text-sm font-semibold leading-6 text-slate-700">{hook.promise}</p>
-                  </div>
-                ))}
-              </div>
-            </div>
-            <div className="rounded-3xl border border-slate-200 bg-slate-950 p-5 text-white shadow-xl shadow-blue-950/15">
-              <p className="text-xs font-black uppercase tracking-[0.18em] text-amber-300">Share lines people can use</p>
-              <h3 className="mt-2 text-3xl font-black leading-tight">
-                Give people words they can use without making claims they cannot prove.
-              </h3>
-              <div className="mt-5 grid gap-3">
-                {sharePrompts.map((prompt) => (
-                  <div key={prompt} className="rounded-2xl border border-white/10 bg-white/10 p-4">
-                    <p className="text-sm font-black leading-6 text-white">&quot;{prompt}&quot;</p>
-                  </div>
-                ))}
-              </div>
-              <Link
-                href="/methodology"
-                className="mt-5 inline-flex rounded-xl bg-white px-5 py-3 text-sm font-black uppercase tracking-wide text-blue-950 transition hover:-translate-y-0.5 hover:bg-blue-50"
-              >
-                Check the rules
-              </Link>
-            </div>
-          </div>
-        </div>
-      </section>
-
       {/* Services Funnel */}
       <section className="border-b border-slate-200 bg-white">
         <div className="mx-auto max-w-7xl px-4 py-14 sm:px-6 lg:px-8">
           <div className="grid gap-8 lg:grid-cols-[0.86fr_1.14fr] lg:items-start">
             <div>
-              <p className="text-xs font-black uppercase tracking-[0.18em] text-red-700">Free first. Paid when useful.</p>
+              <p className="text-xs font-black uppercase tracking-[0.18em] text-red-700">Research services</p>
               <h2 className="mt-2 text-3xl font-black leading-tight text-blue-950 sm:text-5xl">
-                Turn attention into source work, research packets, and race pages.
+                When a public record needs more work, request a packet.
               </h2>
               <p className="mt-4 max-w-3xl text-sm font-semibold leading-6 text-blue-950/70">
-                The free path captures sources while Supabase is paused. Paid services give voters,
-                campaigns, and local groups a way to request deeper public-record research without
-                turning RepWatchr into a rumor board.
+                Free tools cover search, source intake, and public lanes. Paid services
+                are for deeper research, race pages, clean writeups, and source-backed
+                public-record packets.
               </p>
               <div className="mt-5 flex flex-wrap gap-3">
                 <Link
@@ -843,54 +788,6 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Attention Loop */}
-      <section className="border-b border-blue-100 bg-slate-950 text-white">
-        <div className="mx-auto grid max-w-7xl gap-6 px-4 py-12 sm:px-6 lg:grid-cols-[0.88fr_1.12fr] lg:px-8">
-          <div>
-            <p className="text-xs font-black uppercase tracking-wide text-red-300">Return engine</p>
-            <h2 className="mt-2 text-3xl font-black leading-tight sm:text-5xl">
-              Accountability compounds when people have a reason to come back.
-            </h2>
-            <p className="mt-4 max-w-2xl text-sm font-semibold leading-6 text-slate-300">
-              The homepage gets the click. The source packet keeps the work moving.
-              Give citizens public-records drafts, timeline starters, source tracking,
-              and safer share copy so RepWatchr becomes their repeat accountability habit.
-            </p>
-            <div className="mt-5 flex flex-wrap gap-3">
-              <Link
-                href="/elections/texas/contribute"
-                className="rounded-xl bg-white px-5 py-3 text-sm font-black uppercase tracking-wide text-blue-950 shadow-sm transition hover:-translate-y-0.5 hover:bg-blue-50"
-              >
-                Build free packet
-              </Link>
-              <Link
-                href="/officials"
-                className="rounded-xl border border-white/20 px-5 py-3 text-sm font-black uppercase tracking-wide text-white transition hover:-translate-y-0.5 hover:bg-white/10"
-              >
-                Search first
-              </Link>
-            </div>
-          </div>
-
-          <div className="grid gap-3 sm:grid-cols-2">
-            <div className="rounded-2xl border border-amber-300/30 bg-amber-300 p-5 text-slate-950">
-              <p className="text-xs font-black uppercase tracking-wide">The record formula</p>
-              <p className="mt-2 text-4xl font-black">4 moves</p>
-              <p className="mt-2 text-sm font-bold leading-6">
-                Search the name. Grade the record. Add the source. Share the profile.
-                That is the loop every page should push.
-              </p>
-            </div>
-            {memberFunnelTools.map((tool) => (
-              <div key={tool.label} className="rounded-2xl border border-white/10 bg-white/10 p-5">
-                <p className="text-sm font-black text-white">{tool.label}</p>
-                <p className="mt-2 text-xs font-semibold leading-5 text-slate-300">{tool.detail}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
       {/* Browse by Level */}
       <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
         <div className="text-center mb-10">
@@ -913,7 +810,7 @@ export default function HomePage() {
               </h3>
               <p className="text-sm text-gray-500 mt-2">{card.description}</p>
               <span className="inline-block mt-4 text-xs font-semibold text-blue-600 group-hover:translate-x-1 transition-transform">
-                Open records &rarr;
+                View lane &rarr;
               </span>
             </Link>
           ))}
@@ -968,7 +865,7 @@ export default function HomePage() {
               Faces move faster than folders
             </h2>
             <p className="text-gray-500 mt-1">
-              Open a name, inspect the record, then share the profile.
+              Inspect a name, read the record, then share the profile.
             </p>
           </div>
           <Link
@@ -986,125 +883,6 @@ export default function HomePage() {
               scoreCard={getScoreCard(official.id)}
             />
           ))}
-        </div>
-      </section>
-
-      {/* Latest News */}
-      {latestNews.length > 0 && (
-        <section className="bg-slate-50">
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
-            <div className="flex items-end justify-between mb-8">
-              <div>
-                <h2 className="text-3xl font-extrabold text-gray-900">
-                  New records and accountability signals
-                </h2>
-                <p className="text-gray-500 mt-1">
-                  Updates should point people back into profiles, source trails, and action.
-                </p>
-              </div>
-              <Link
-                href="/blog"
-                className="text-blue-600 hover:text-blue-800 text-sm font-bold"
-              >
-                Open Blog &rarr;
-              </Link>
-            </div>
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
-              {latestNews.map((article) => (
-                <Link
-                  key={article.id}
-                  href={`/news/${article.id}`}
-                  className="group block rounded-2xl border border-gray-200 bg-white p-6 transition-all hover:shadow-lg hover:-translate-y-1"
-                >
-                  <div className="flex flex-wrap gap-1.5 mb-3">
-                    {article.tags.slice(0, 2).map((tag) => (
-                      <span
-                        key={tag}
-                        className="rounded-full bg-blue-100 px-2.5 py-0.5 text-xs font-semibold text-blue-700"
-                      >
-                        {tag}
-                      </span>
-                    ))}
-                  </div>
-                  <h3 className="font-bold text-gray-900 group-hover:text-blue-600 transition-colors leading-tight">
-                    {article.title}
-                  </h3>
-                  <p className="mt-2 text-sm text-gray-500 line-clamp-2">
-                    {article.summary}
-                  </p>
-                  <span className="inline-block mt-4 text-xs text-gray-400">
-                    {new Date(article.publishedAt).toLocaleDateString("en-US", {
-                      month: "short",
-                      day: "numeric",
-                      year: "numeric",
-                    })}
-                  </span>
-                </Link>
-              ))}
-            </div>
-          </div>
-        </section>
-      )}
-
-      {/* CTA Cards */}
-      <section className="border-y border-blue-100 bg-[#f4f8ff]">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
-          <div className="mb-8 max-w-3xl">
-            <p className="text-xs font-black uppercase tracking-[0.18em] text-red-700">Attention that survives scrutiny</p>
-            <h2 className="mt-2 text-3xl font-black leading-tight text-blue-950">
-              The loudest page should still be the safest page.
-            </h2>
-            <p className="mt-2 text-sm font-semibold leading-6 text-blue-950/70">
-              RepWatchr can hit hard without getting sloppy: funding, red flags, and scoring all need a visible receipt trail.
-            </p>
-          </div>
-          <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">
-            <Link
-              href="/funding"
-              className="group rounded-2xl border border-blue-100 bg-white p-8 shadow-sm transition-all hover:-translate-y-1 hover:border-blue-300 hover:shadow-lg"
-            >
-              <h3 className="font-extrabold text-xl text-blue-950 mb-3">
-                Who Funds Them?
-              </h3>
-              <p className="text-blue-950/70 text-sm leading-relaxed mb-4">
-                Follow the money and give people a shareable reason to ask who
-                benefits from the decision.
-              </p>
-              <span className="text-blue-700 text-sm font-bold group-hover:translate-x-1 inline-block transition-transform">
-                View Funding Data &rarr;
-              </span>
-            </Link>
-            <Link
-              href="/red-flags"
-              className="group rounded-2xl border border-red-100 bg-white p-8 shadow-sm transition-all hover:-translate-y-1 hover:border-red-300 hover:shadow-lg"
-            >
-              <h3 className="font-extrabold text-xl text-red-700 mb-3">
-                Red Flags
-              </h3>
-              <p className="text-blue-950/70 text-sm leading-relaxed mb-4">
-                Conflicts, promises, and source-backed issues voters can open
-                before they walk into a meeting.
-              </p>
-              <span className="text-red-700 text-sm font-bold group-hover:translate-x-1 inline-block transition-transform">
-                View Red Flags &rarr;
-              </span>
-            </Link>
-            <Link
-              href="/methodology"
-              className="group rounded-2xl border border-emerald-100 bg-white p-8 shadow-sm transition-all hover:-translate-y-1 hover:border-emerald-300 hover:shadow-lg"
-            >
-              <h3 className="font-extrabold text-xl text-emerald-800 mb-3">
-                How We Score
-              </h3>
-              <p className="text-blue-950/70 text-sm leading-relaxed mb-4">
-                Every public score needs to survive a hostile read. Show how the
-                record was weighed.
-              </p>
-              <span className="text-emerald-700 text-sm font-bold group-hover:translate-x-1 inline-block transition-transform">
-                View Methodology &rarr;
-              </span>
-            </Link>
-          </div>
         </div>
       </section>
 
@@ -1151,7 +929,7 @@ export default function HomePage() {
             Find
           </Link>
           <Link
-              href="/submit-source"
+            href="/submit-source"
             className="rounded-xl border border-amber-200 bg-amber-50 px-3 py-3 text-center text-[11px] font-black uppercase tracking-wide text-amber-950"
           >
             Source

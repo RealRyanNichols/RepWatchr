@@ -44,7 +44,7 @@ export async function POST(request: Request) {
 
   if (!expectedSecret) {
     return NextResponse.json(
-      { error: "Faretta intake is not configured. Set FARETTA_INTAKE_SECRET." },
+      { error: "Faretta intake is temporarily unavailable." },
       { status: 503 },
     );
   }
@@ -55,7 +55,7 @@ export async function POST(request: Request) {
 
   const supabase = getSupabaseAdminClient();
   if (!supabase) {
-    return NextResponse.json({ error: "Supabase admin client is not configured." }, { status: 503 });
+    return NextResponse.json({ error: "Intake storage is temporarily unavailable." }, { status: 503 });
   }
 
   let body: FarettaIntakeBody;

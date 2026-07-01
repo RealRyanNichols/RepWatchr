@@ -39,7 +39,7 @@ const contributorSteps = [
   "Build a source packet even if the live queue is temporarily unavailable.",
   "Pick the Texas race lane that matches the source.",
   "Add a public URL and plain-English summary of what the source shows.",
-  "When Supabase env vars are configured, the same workflow submits into the live private review queue.",
+  "When live queue submission is available, the same workflow submits into the private review queue.",
 ];
 
 const priorityTargets = [

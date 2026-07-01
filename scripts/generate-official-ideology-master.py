@@ -260,17 +260,37 @@ def ideology_label(score: int) -> str:
     return "Hard left voting record"
 
 
-def buildout(official: dict[str, Any], scorecard: dict[str, Any] | None, news_count: int) -> dict[str, Any]:
+def buildout(
+    official: dict[str, Any],
+    scorecard: dict[str, Any] | None,
+    ideology: dict[str, Any],
+    news_count: int,
+) -> dict[str, Any]:
     official_id = official["id"]
     has_photo = bool(official.get("photo"))
     has_bio = bool(official.get("bio"))
-    has_public_sources = bool(official.get("sourceLinks"))
+    has_public_sources = bool(
+        official.get("sourceLinks")
+        or official.get("photoSourceUrl")
+        or official.get("contactInfo", {}).get("website")
+    )
     has_contact_website = bool(official.get("contactInfo", {}).get("website"))
     has_scorecard = bool(scorecard)
-    has_vote_record = bool(scorecard and flatten_scorecard_votes(scorecard)) or (VOTE_RECORDS / f"{official_id}.json").exists()
+    vote_record = read_json(VOTE_RECORDS / f"{official_id}.json", {})
+    loaded_public_vote_count = len(vote_record.get("votes", [])) if isinstance(vote_record.get("votes"), list) else 0
+    mapped_vote_count = int(ideology.get("mappedVoteCount") or 0)
+    has_vote_record = bool(
+        (scorecard and flatten_scorecard_votes(scorecard))
+        or vote_record.get("votes")
+    )
     has_funding = (FUNDING / f"{official_id}.json").exists()
     has_red_flag_review = (RED_FLAGS / f"{official_id}.json").exists()
     has_news = news_count > 0
+    has_left_right_chart = bool(
+        ideology.get("ideologyScore") is not None
+        and mapped_vote_count > 0
+        and (loaded_public_vote_count == 0 or mapped_vote_count >= loaded_public_vote_count)
+    )
 
     checks = [
         ("profile photo", has_photo),
@@ -282,7 +302,7 @@ def buildout(official: dict[str, Any], scorecard: dict[str, Any] | None, news_co
         ("campaign funding summary", has_funding),
         ("red-flag review file", has_red_flag_review),
         ("related news links", has_news),
-        ("left/right ideology chart", True),
+        ("left/right ideology chart", has_left_right_chart),
     ]
     loaded_count = sum(1 for _, value in checks if value)
     missing = [label for label, value in checks if not value]
@@ -298,7 +318,7 @@ def buildout(official: dict[str, Any], scorecard: dict[str, Any] | None, news_co
         "hasFundingSummary": has_funding,
         "hasRedFlagReview": has_red_flag_review,
         "hasNewsLinks": has_news,
-        "hasIdeologyChart": True,
+        "hasIdeologyChart": has_left_right_chart,
         "isComplete": len(missing) == 0,
         "missingItems": missing,
     }
@@ -325,7 +345,7 @@ def main() -> int:
                 "district": official.get("district"),
                 **ideology,
                 "lastUpdated": GENERATED_DATE,
-                "buildout": buildout(official, scorecard, news_map.get(official_id, 0)),
+                "buildout": buildout(official, scorecard, ideology, news_map.get(official_id, 0)),
             }
         )
 
