@@ -47,6 +47,20 @@ function shouldTrack(pathname: string) {
   return !excludedPrefixes.some((prefix) => pathname === prefix || pathname.startsWith(`${prefix}/`));
 }
 
+function shouldTrackExplicitPrivateEvent(eventType: string) {
+  return (
+    eventType === "admin_dashboard_opened" ||
+    eventType === "admin_open" ||
+    eventType.startsWith("dashboard_") ||
+    eventType === "watchlist_open" ||
+    eventType === "packet_open" ||
+    eventType === "saved_search_open" ||
+    eventType === "digest_settings_changed" ||
+    eventType === "interest_profile_reset" ||
+    eventType === "package_interest_clicked_from_dashboard"
+  );
+}
+
 function createTrackingId(prefix: "rwv" | "rws") {
   const random =
     typeof crypto !== "undefined" && "randomUUID" in crypto
@@ -480,11 +494,7 @@ export default function VisitorIntelligenceTracker() {
     function handleVisitorEvent(event: Event) {
       const customEvent = event as CustomEvent<VisitorIntelligenceEventDetail>;
       const pathnameNow = customEvent.detail.path || pathRef.current;
-      if (
-        !shouldTrack(pathnameNow) &&
-        customEvent.detail.eventType !== "admin_dashboard_opened" &&
-        customEvent.detail.eventType !== "admin_open"
-      ) {
+      if (!shouldTrack(pathnameNow) && !shouldTrackExplicitPrivateEvent(customEvent.detail.eventType)) {
         return;
       }
       sendPayload({
