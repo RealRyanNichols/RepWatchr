@@ -25,6 +25,7 @@ import OfficialVotingSection from "@/components/voting/OfficialVotingSection";
 import GradeOfficialSection from "@/components/voting/GradeOfficialSection";
 import CommentSection from "@/components/comments/CommentSection";
 import ReportButton from "@/components/shared/ReportButton";
+import ShareDrawer from "@/components/shared/ShareDrawer";
 import ProfileOpenTracker from "@/components/shared/ProfileOpenTracker";
 import ProfileScorecardVote from "@/components/scorecards/ProfileScorecardVote";
 import OfficialSocialPanel from "@/components/officials/OfficialSocialPanel";
@@ -202,6 +203,17 @@ export default async function OfficialProfilePage({
     publicVoteRecord,
     sourceCount,
   });
+  const primarySourceUrl = sourceTrailEntries[0]?.url;
+  const primaryPublicQuestion = publicQuestions[0]?.question ?? `Which public source best confirms the current record for ${official.name}?`;
+  const profileSourcePacket = buildProfileSharePacket({
+    official,
+    profilePath,
+    sourceCount,
+    completionPercent: buildoutPercent,
+    confidenceLabel,
+    sources: sourceTrailEntries,
+    publicQuestion: primaryPublicQuestion,
+  });
   const relatedProfiles = buildRelatedProfiles(official, getAllOfficials());
   const canonicalUrl = `https://www.repwatchr.com${profilePath}`;
   const pageDescription = `Source-backed RepWatchr profile for ${official.name}, ${official.position} serving ${official.jurisdiction}.`;
@@ -248,6 +260,22 @@ export default async function OfficialProfilePage({
             title="Profile feedback"
             description="This is civic/product feedback, not election voting. Use it to tell RepWatchr what needs more records."
             options={profileFeedbackOptions}
+          />
+        </div>
+
+        <div className="mt-6">
+          <ShareDrawer
+            title={`${official.name} RepWatchr profile`}
+            entityName={official.name}
+            path={profilePath}
+            description={recordSummary.confirmed[0] ?? pageDescription}
+            sourceUrl={primarySourceUrl}
+            sourcePacket={profileSourcePacket}
+            publicQuestion={primaryPublicQuestion}
+            meetingQuestion={`Before the next public meeting, ask: ${primaryPublicQuestion}`}
+            snippetKind={sourceCount > 0 ? "confirmed_public_record" : "needs_source"}
+            submitSourcePath={`/sources/submit?form=submit_source&targetType=official&targetId=${encodeURIComponent(official.id)}&targetName=${encodeURIComponent(official.name)}`}
+            correctionPath={`/sources/submit?form=correction_request&targetType=official&targetId=${encodeURIComponent(official.id)}&targetName=${encodeURIComponent(official.name)}`}
           />
         </div>
 
@@ -742,6 +770,47 @@ function RecordSummaryPanel({
       </div>
     </section>
   );
+}
+
+function buildProfileSharePacket({
+  official,
+  profilePath,
+  sourceCount,
+  completionPercent,
+  confidenceLabel,
+  sources,
+  publicQuestion,
+}: {
+  official: Official;
+  profilePath: string;
+  sourceCount: number;
+  completionPercent: number;
+  confidenceLabel: string;
+  sources: ProfileSourceTrailEntry[];
+  publicQuestion: string;
+}) {
+  const sourceLines = sources.slice(0, 6).map((source, index) => {
+    const label = [source.category.replace(/_/g, " "), source.confidenceLabel, source.statusLabel]
+      .filter(Boolean)
+      .join(" | ");
+    return `${index + 1}. ${source.title} (${label})\n   ${source.url}`;
+  });
+
+  return [
+    `RepWatchr profile: ${official.name}`,
+    `${official.position} | ${official.jurisdiction} | ${official.party}`,
+    `Profile URL: https://www.repwatchr.com${profilePath}`,
+    `Sources loaded: ${sourceCount}`,
+    `Profile completeness: ${completionPercent}%`,
+    `Confidence label: ${confidenceLabel}`,
+    "",
+    `Public question: ${publicQuestion}`,
+    "",
+    sourceLines.length ? "Source trail:" : "Source trail: needs public source submissions.",
+    ...sourceLines,
+    "",
+    "RepWatchr rule: share the receipt, not unsupported claims.",
+  ].join("\n");
 }
 
 function NextProfileActions({

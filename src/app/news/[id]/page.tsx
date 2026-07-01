@@ -3,6 +3,7 @@ import Link from "next/link";
 import { getAllNews, getNewsById, getOfficialById } from "@/lib/data";
 import CopySnippetButton from "@/components/shared/CopySnippetButton";
 import ShareButtons from "@/components/shared/ShareButtons";
+import ShareDrawer from "@/components/shared/ShareDrawer";
 
 export async function generateStaticParams() {
   const articles = getAllNews();
@@ -127,6 +128,8 @@ export default async function NewsArticlePage({
     .map((officialId) => getOfficialById(officialId))
     .filter(Boolean);
   const postSnippet = articlePostSnippet(article);
+  const firstSourceUrl = article.sourceUrl ?? article.sourceLinks?.[0]?.url;
+  const publicQuestion = `Which public source confirms the record behind "${article.title}"?`;
   const articleStructuredData = {
     "@context": "https://schema.org",
     "@type": "Article",
@@ -288,6 +291,22 @@ export default async function NewsArticlePage({
           title={article.title}
           description={article.summary}
           path={`/news/${article.id}`}
+        />
+      </div>
+
+      <div className="mt-4">
+        <ShareDrawer
+          title={article.title}
+          entityName={article.title}
+          path={`/news/${article.id}`}
+          description={article.summary}
+          sourceUrl={firstSourceUrl}
+          sourcePacket={postSnippet}
+          publicQuestion={publicQuestion}
+          meetingQuestion={`Before the next public meeting, ask: ${publicQuestion}`}
+          snippetKind={firstSourceUrl ? "confirmed_public_record" : "needs_source"}
+          submitSourcePath={`/sources/submit?form=submit_source&targetType=story&targetId=${encodeURIComponent(article.id)}&targetName=${encodeURIComponent(article.title)}`}
+          correctionPath={`/sources/submit?form=correction_request&targetType=story&targetId=${encodeURIComponent(article.id)}&targetName=${encodeURIComponent(article.title)}`}
         />
       </div>
 

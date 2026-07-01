@@ -151,6 +151,31 @@ body::before {
   background: linear-gradient(135deg, #b42318, #1d4ed8);
 }
 
+.share-action {
+  display: inline-flex;
+  min-height: 44px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0.75rem;
+  border: 1px solid rgba(148, 163, 184, 0.45);
+  background: rgba(248, 251, 255, 0.96);
+  padding: 0.75rem 0.9rem;
+  text-align: center;
+  font-size: 0.75rem;
+  font-weight: 900;
+  letter-spacing: 0.04em;
+  color: #0f172a;
+  text-transform: uppercase;
+  transition: border-color 0.2s ease, background-color 0.2s ease, color 0.2s ease, transform 0.2s ease;
+}
+
+.share-action:hover {
+  border-color: rgba(180, 35, 24, 0.52);
+  background: #fff7ed;
+  color: #b42318;
+  transform: translateY(-1px);
+}
+
 .rw-secondary-button {
   border: 1px solid rgba(148,163,184,0.55);
   background: linear-gradient(135deg, rgba(248,251,255,0.96), rgba(226,239,255,0.92));

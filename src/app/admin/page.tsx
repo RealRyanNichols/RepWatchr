@@ -81,6 +81,7 @@ const adminModuleLinks = [
   ["/admin/data-health", "Data Health", "admin_data_health_opened"],
   ["/admin/analytics", "Analytics", "admin_module_open"],
   ["/admin/behavioral-analytics", "Behavioral Analytics", "admin_module_open"],
+  ["/admin/seo", "SEO Audit", "seo_audit_opened"],
   ["/admin/pricing", "Pricing Experiments", "admin_monetization_opened"],
   ["/admin/monetization-readiness", "Monetization Readiness", "admin_monetization_opened"],
   ["/admin/future-revenue", "Hidden Revenue Flags", "admin_monetization_opened"],

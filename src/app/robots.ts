@@ -1,4 +1,5 @@
 import type { MetadataRoute } from "next";
+import { getSitemapIndexEntries } from "@/lib/sitemap-builder";
 
 const siteUrl = "https://www.repwatchr.com";
 
@@ -11,7 +12,7 @@ export default function robots(): MetadataRoute.Robots {
         disallow: ["/admin", "/admin/", "/auth/", "/dashboard/", "/login", "/buildout", "/uap"],
       },
     ],
-    sitemap: `${siteUrl}/sitemap.xml`,
+    sitemap: getSitemapIndexEntries().map((item) => item.loc),
     host: siteUrl,
   };
 }

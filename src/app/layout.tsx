@@ -10,14 +10,22 @@ import { AnonymousWatchIntentConverter } from "@/components/civic/WatchButton";
 import VisitorIntelligenceTracker from "@/components/shared/VisitorIntelligenceTracker";
 import CommandPalette from "@/components/search/CommandPalette";
 import { Analytics } from "@vercel/analytics/next";
+import { getPageMetadata, organizationJsonLd, websiteJsonLd } from "@/lib/seo";
+
+const baseMetadata = getPageMetadata({
+  title: "RepWatchr - Public Officials on the Record",
+  description:
+    "Find public officials, school boards, votes, funding, red flags, and source-backed accountability records voters can inspect and share.",
+  path: "/",
+  imagePath: "/api/og?type=home",
+});
 
 export const metadata: Metadata = {
+  ...baseMetadata,
   title: {
     default: "RepWatchr - Public Officials on the Record",
     template: "%s | RepWatchr",
   },
-  description:
-    "Find public officials, school boards, votes, funding, red flags, and source-backed accountability records voters can inspect and share.",
   keywords: [
     "RepWatchr",
     "elected officials",
@@ -54,34 +62,6 @@ export const metadata: Metadata = {
     ],
     apple: [{ url: "/images/repwatchr-logo-america-first.png", type: "image/png", sizes: "1254x1254" }],
   },
-  openGraph: {
-    title: "RepWatchr - Public Officials on the Record",
-    description:
-      "Find the official, inspect the record, submit a missing source, and share what voters need before the next meeting, vote, hearing, or election.",
-    url: "https://www.repwatchr.com",
-    siteName: "RepWatchr",
-    locale: "en_US",
-    type: "website",
-    images: [
-      {
-        url: "/images/repwatchr-cover-america-first.png",
-        width: 2172,
-        height: 724,
-        alt: "RepWatchr America First cover photo",
-      },
-    ],
-  },
-  twitter: {
-    card: "summary_large_image",
-    title: "RepWatchr - Public Officials on the Record",
-    description:
-      "Find officials, inspect votes, submit missing sources, and share source-backed accountability records.",
-    images: ["/images/repwatchr-cover-america-first.png"],
-  },
-  robots: {
-    index: true,
-    follow: true,
-  },
 };
 
 export default function RootLayout({
@@ -92,6 +72,14 @@ export default function RootLayout({
   return (
     <html lang="en" className="h-full antialiased">
       <body className="min-h-full flex flex-col bg-[#f6f9fc] text-slate-950">
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationJsonLd()) }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteJsonLd()) }}
+        />
         <GoogleAnalytics />
         <PageViewTracker />
         <VisitorIntelligenceTracker />
