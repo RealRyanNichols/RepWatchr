@@ -4,6 +4,8 @@ import { getAllNews, getNewsById, getOfficialById } from "@/lib/data";
 import CopySnippetButton from "@/components/shared/CopySnippetButton";
 import ShareButtons from "@/components/shared/ShareButtons";
 import ShareDrawer from "@/components/shared/ShareDrawer";
+import CorrectionRequestButton from "@/components/trust/CorrectionRequestButton";
+import SafetyLabel from "@/components/trust/SafetyLabel";
 
 export async function generateStaticParams() {
   const articles = getAllNews();
@@ -307,6 +309,18 @@ export default async function NewsArticlePage({
           snippetKind={firstSourceUrl ? "confirmed_public_record" : "needs_source"}
           submitSourcePath={`/sources/submit?form=submit_source&targetType=story&targetId=${encodeURIComponent(article.id)}&targetName=${encodeURIComponent(article.title)}`}
           correctionPath={`/sources/submit?form=correction_request&targetType=story&targetId=${encodeURIComponent(article.id)}&targetName=${encodeURIComponent(article.title)}`}
+        />
+      </div>
+
+      <div className="mt-4 flex flex-wrap items-center gap-3 rounded-2xl border border-red-100 bg-white p-4 shadow-sm">
+        <SafetyLabel label={article.sourceUrl ? "Source-backed claim" : "Needs source"} />
+        <CorrectionRequestButton
+          entityType="story"
+          entityId={article.id}
+          entityName={article.title}
+          url={`/news/${article.id}`}
+          currentText={article.summary}
+          buttonClassName="inline-flex min-h-11 items-center justify-center rounded-xl border border-red-200 bg-red-50 px-4 py-2 text-xs font-black uppercase tracking-wide text-red-700 transition hover:bg-red-100"
         />
       </div>
 

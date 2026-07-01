@@ -94,7 +94,7 @@ export async function submitForm(input: SubmitFormInput) {
       submissionId: `packet_${crypto.randomUUID().slice(0, 12)}`,
       submissionStatus: "new" as FormStatus,
       summary: summaryWithoutId,
-      message: "Packet created. Database storage needs Supabase service-role configuration.",
+      message: "Packet created. Save the summary below or create an account to track it when review storage is available.",
       nextAction: nextActionFor(input.formKey),
       thankYouPath: `/intake/thank-you?form=${input.formKey}`,
     };

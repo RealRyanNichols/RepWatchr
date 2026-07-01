@@ -1,4 +1,5 @@
 import { getRepWatchrServices } from "@/data/repwatchr-services";
+import { getRepWatchrPackages, packageRoute } from "@/data/repwatchr-packages";
 import { getTexasElectionRaces } from "@/data/texas-election-races";
 import {
   getAllBills,
@@ -84,10 +85,14 @@ export function getStaticSitemapEntries(): SitemapEntry[] {
     "/officials",
     "/authority-watch",
     "/school-boards",
+    "/free-packet",
+    "/tools/source-packet-builder",
+    "/tools/public-records-request",
     "/submit-source",
     "/sources/submit",
     "/blog",
     "/services",
+    "/packages",
     "/beta-access",
     "/data-reports",
     "/contributors",
@@ -104,6 +109,10 @@ export function getStaticSitemapEntries(): SitemapEntry[] {
     "/elections",
     "/elections/texas",
     "/elections/texas/contribute",
+    ...getRepWatchrServices()
+      .filter((service) => service.slug !== "free-source-packet")
+      .map((service) => `/services/${service.slug}`),
+    ...getRepWatchrPackages().map((packageItem) => packageRoute(packageItem)),
   ].map((path) =>
     entry(path, {
       lastmod: now,

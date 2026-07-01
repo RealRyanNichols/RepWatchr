@@ -24,7 +24,6 @@ import OfficialTimeline from "@/components/officials/OfficialTimeline";
 import OfficialVotingSection from "@/components/voting/OfficialVotingSection";
 import GradeOfficialSection from "@/components/voting/GradeOfficialSection";
 import CommentSection from "@/components/comments/CommentSection";
-import ReportButton from "@/components/shared/ReportButton";
 import ShareDrawer from "@/components/shared/ShareDrawer";
 import ProfileOpenTracker from "@/components/shared/ProfileOpenTracker";
 import ProfileScorecardVote from "@/components/scorecards/ProfileScorecardVote";
@@ -40,6 +39,7 @@ import PublicQuestionCard from "@/components/officials/PublicQuestionCard";
 import RelatedProfileCard, { type RelatedProfileCardRecord } from "@/components/officials/RelatedProfileCard";
 import ProfileSectionTracker from "@/components/officials/ProfileSectionTracker";
 import FeedbackCluster from "@/components/civic/FeedbackCluster";
+import TrustExplainerBox from "@/components/trust/TrustExplainerBox";
 import { profileFeedbackOptions } from "@/lib/civic-actions";
 import type { FundingSummary, NewsArticle, Official, PublicVoteRecord, RedFlag, ScoreCard } from "@/types";
 
@@ -893,42 +893,19 @@ function TrustCorrectionBox({
   profilePath: string;
 }) {
   return (
-    <section className="mt-8 rounded-3xl border border-red-100 bg-white p-5 shadow-sm sm:p-6">
+    <section className="mt-8">
       <ProfileSectionTracker
         officialId={officialId}
         officialName={officialName}
         profilePath={profilePath}
         section="trust_and_correction"
       />
-      <div className="grid gap-5 lg:grid-cols-[1fr_auto] lg:items-start">
-        <div>
-          <p className="text-xs font-black uppercase tracking-[0.2em] text-red-700">
-            Trust and correction
-          </p>
-          <h2 className="mt-2 text-2xl font-black text-slate-950">
-            Source-backed, correction-ready, hostile-read safe.
-          </h2>
-          <p className="mt-2 max-w-4xl text-sm font-semibold leading-6 text-slate-600">
-            RepWatchr does not publish private addresses, minor-child details, threats, doxxing instructions, or unsourced criminal accusations. If a record is wrong, stale, incomplete, or missing context, submit a correction and attach the public source path.
-          </p>
-          <div className="mt-4 flex flex-wrap gap-2 text-xs font-black uppercase tracking-wide">
-            {["Confirmed public record", "Source-backed claim", "Needs source", "Correction requested", "Under review"].map((label) => (
-              <span key={label} className="rounded-full border border-slate-200 bg-slate-50 px-3 py-1 text-slate-700">
-                {label}
-              </span>
-            ))}
-          </div>
-        </div>
-        <div className="rounded-2xl border border-slate-200 bg-slate-50 p-4">
-          <ReportButton officialId={officialId} pageUrl={profilePath} />
-          <Link
-            href={`/sources/submit?form=correction_request&targetType=official&targetId=${encodeURIComponent(officialId)}&targetName=${encodeURIComponent(officialName)}`}
-            className="mt-3 inline-flex w-full justify-center rounded-xl bg-slate-950 px-4 py-3 text-sm font-black uppercase tracking-wide text-white transition hover:bg-red-700"
-          >
-            Submit correction source
-          </Link>
-        </div>
-      </div>
+      <TrustExplainerBox
+        entityType="official"
+        entityId={officialId}
+        entityName={officialName}
+        url={profilePath}
+      />
     </section>
   );
 }

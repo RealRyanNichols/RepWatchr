@@ -190,7 +190,7 @@ export async function POST(request: Request) {
   const input = parsed.data;
   const reason = isWatchReason(input.reason) ? input.reason : input.reason || "Other";
   const admin = getSupabaseAdminClient();
-  if (!admin) return NextResponse.json({ ok: false, error: "Watch queue is not configured." }, { status: 503 });
+  if (!admin) return NextResponse.json({ ok: false, error: "Watch queue is temporarily unavailable." }, { status: 503 });
 
   const userId = await getUserId();
   const anonymousId = cleanText(input.anonymousId, 120);
@@ -286,7 +286,7 @@ export async function PATCH(request: Request) {
   }
 
   const admin = getSupabaseAdminClient();
-  if (!admin) return NextResponse.json({ ok: false, error: "Watch queue is not configured." }, { status: 503 });
+  if (!admin) return NextResponse.json({ ok: false, error: "Watch queue is temporarily unavailable." }, { status: 503 });
 
   const userId = await getUserId();
   if (!userId) return NextResponse.json({ ok: false, error: "Login required." }, { status: 401 });

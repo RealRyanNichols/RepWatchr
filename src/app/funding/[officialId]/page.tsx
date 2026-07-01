@@ -11,6 +11,7 @@ import FundingOverview from "@/components/funding/FundingOverview";
 import TopDonorsList from "@/components/funding/TopDonorsList";
 import DonorBreakdownChart from "@/components/funding/DonorBreakdownChart";
 import GeographicBreakdown from "@/components/funding/GeographicBreakdown";
+import TrustExplainerBox from "@/components/trust/TrustExplainerBox";
 
 export const revalidate = 86400;
 export const dynamicParams = true;
@@ -169,6 +170,17 @@ export default async function OfficialFundingPage({
             View Full Profile →
           </Link>
         </div>
+      </div>
+
+      <div className="mt-8">
+        <TrustExplainerBox
+          entityType="funding"
+          entityId={official.id}
+          entityName={`${official.name} funding`}
+          url={`/funding/${official.id}`}
+          title="Money records are public filings, not guilt-by-association."
+          body="Campaign finance records should be sourced, dated, and neutral. If a donor, amount, cycle, source URL, or context is wrong, request a correction and include the public filing link."
+        />
       </div>
     </div>
   );

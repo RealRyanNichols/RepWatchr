@@ -13,7 +13,7 @@ export async function GET(
   const admin = getSupabaseAdminClient();
 
   if (!admin) {
-    return NextResponse.json({ ok: false, message: "Source status needs Supabase service-role configuration." }, { status: 503 });
+    return NextResponse.json({ ok: false, message: "Source review status tracking is temporarily unavailable." }, { status: 503 });
   }
 
   const { data, error } = await admin

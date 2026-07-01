@@ -1,4 +1,6 @@
 import type { RedFlag } from "@/types";
+import CorrectionRequestButton from "@/components/trust/CorrectionRequestButton";
+import SafetyLabel from "@/components/trust/SafetyLabel";
 
 interface RedFlagCardProps {
   flag: RedFlag;
@@ -60,6 +62,7 @@ export default function RedFlagCard({ flag }: RedFlagCardProps) {
           </div>
 
           <div className="mt-3 flex flex-wrap items-center gap-3 text-xs text-gray-400">
+            <SafetyLabel label={flag.sourceUrl ? "Source-backed claim" : "Needs source"} />
             <span>
               {new Date(flag.date).toLocaleDateString("en-US", {
                 year: "numeric",
@@ -77,6 +80,14 @@ export default function RedFlagCard({ flag }: RedFlagCardProps) {
                 View Source
               </a>
             )}
+            <CorrectionRequestButton
+              entityType="red_flag"
+              entityId={flag.id}
+              entityName={flag.title}
+              url={`/officials/${flag.officialId}`}
+              currentText={`${flag.title}\n\n${flag.description}\n\n${flag.whyItMatters}`}
+              buttonClassName="rounded-full border border-red-200 bg-red-50 px-3 py-1 text-xs font-black uppercase tracking-wide text-red-700 hover:bg-red-100"
+            />
           </div>
         </div>
       </div>

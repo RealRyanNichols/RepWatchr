@@ -87,7 +87,7 @@ export async function POST(request: Request) {
   }
 
   const admin = getSupabaseAdminClient();
-  if (!admin) return NextResponse.json({ ok: false, error: "Feedback queue is not configured." }, { status: 503 });
+  if (!admin) return NextResponse.json({ ok: false, error: "Feedback queue is temporarily unavailable." }, { status: 503 });
 
   const selector = admin
     .from("feedback_votes")

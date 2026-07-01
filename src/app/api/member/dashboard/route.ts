@@ -12,7 +12,7 @@ function envReady() {
 export async function GET() {
   if (!envReady()) {
     return NextResponse.json(
-      { ok: false, error: "Member dashboard storage is not configured yet." },
+      { ok: false, error: "Member dashboard storage is temporarily unavailable." },
       { status: 503 },
     );
   }

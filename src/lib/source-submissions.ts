@@ -287,7 +287,7 @@ export async function submitSourceSubmission({
       submissionStatus: "new",
       label: "Submitted Source - Under Review",
       summary: packetWithoutId,
-      message: "Source packet created. Database storage needs Supabase service-role configuration.",
+      message: "Source packet created. Save the summary below or create an account to track it when review storage is available.",
       thankYouPath: "/sources/submitted",
     };
   }

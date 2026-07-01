@@ -2,6 +2,7 @@ import { ImageResponse } from "next/og";
 import { getOfficialById, getNewsById } from "@/lib/data";
 import { getTexasElectionRace } from "@/data/texas-election-races";
 import { getRepWatchrService } from "@/data/repwatchr-services";
+import { getRepWatchrPackageBySlug, packageRoute } from "@/data/repwatchr-packages";
 
 export const runtime = "nodejs";
 
@@ -86,15 +87,19 @@ function contextFromRequest(request: Request): OgContext {
   }
 
   if (type === "package" || type === "package-interest") {
+    const packageItem = getRepWatchrPackageBySlug(clean(url.searchParams.get("slug"), ""));
     const service = getRepWatchrService(clean(url.searchParams.get("slug"), ""));
     return {
       type,
       label: "RepWatchr package",
-      title: clean(titleParam, service?.name ?? "RepWatchr public-record package"),
-      subtitle: clean(subtitleParam, service?.summary ?? "Source-first research, packets, monitoring, and public questions"),
-      jurisdiction: clean(jurisdictionParam, service?.bestFor ?? ""),
-      confidence: clean(confidenceParam, service?.turnaround ?? "beta interest"),
-      path: service ? `/services/${service.slug}` : "/services",
+      title: clean(titleParam, packageItem?.name ?? service?.name ?? "RepWatchr public-record package"),
+      subtitle: clean(
+        subtitleParam,
+        packageItem?.summary ?? service?.summary ?? "Source-first research, packets, monitoring, and public questions",
+      ),
+      jurisdiction: clean(jurisdictionParam, packageItem?.eyebrow ?? service?.bestFor ?? ""),
+      confidence: clean(confidenceParam, packageItem?.expectedTiming ?? service?.turnaround ?? "beta interest"),
+      path: packageItem ? packageRoute(packageItem) : service ? `/services/${service.slug}` : "/packages",
       accent: "#2563eb",
     };
   }

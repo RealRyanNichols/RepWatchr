@@ -8,6 +8,7 @@ import {
 } from "@/lib/data";
 import { formatDate } from "@/lib/formatting";
 import PartyBadge from "@/components/officials/PartyBadge";
+import TrustExplainerBox from "@/components/trust/TrustExplainerBox";
 
 export async function generateStaticParams() {
   const bills = getAllBills();
@@ -195,6 +196,17 @@ export default async function BillDetailPage({
           </a>
         </p>
       )}
+
+      <div className="mt-8">
+        <TrustExplainerBox
+          entityType="vote"
+          entityId={bill.id}
+          entityName={bill.title}
+          url={`/votes/${bill.id}`}
+          title="Vote records need public sources and correction paths."
+          body="If a vote, alignment label, source URL, date, or summary is wrong, request a correction. RepWatchr reviewers must verify the public record before public changes are made."
+        />
+      </div>
     </div>
   );
 }

@@ -41,6 +41,8 @@ const countTables = [
   "member_watchlists",
   "member_watchlist_items",
   "source_submissions",
+  "correction_requests",
+  "privacy_requests",
   "form_submissions",
   "profile_claims",
   "contributor_profiles",
@@ -75,6 +77,7 @@ const highIntentRoutes = [
 
 const adminModuleLinks = [
   ["/admin/sources", "Source Review Queue", "admin_source_review_started"],
+  ["/admin/corrections", "Correction Review Queue", "correction_admin_resolved"],
   ["/admin/intake", "Correction / Form Queue", "admin_form_opened"],
   ["/admin/control-center", "Profile Manager", "admin_profile_updated"],
   ["/admin/content-review", "Content Desk", "admin_module_open"],
@@ -214,7 +217,7 @@ export default async function AdminPage() {
     { label: "Watchlist adds", value: countEvents(eventRows, (event) => event === "watchlist_add"), detail: "Recent sampled events" },
     { label: "Signups", value: tableCount(tableCounts, "member_profiles") || countEvents(eventRows, (event) => event.includes("signup")), detail: "Member profiles or signup events" },
     { label: "Source queue", value: tableCount(tableCounts, "source_submissions"), detail: "Submitted public records" },
-    { label: "Corrections", value: countForms(formRows, (formKey) => formKey === "correction_request"), detail: "Correction intake rows" },
+    { label: "Corrections", value: tableCount(tableCounts, "correction_requests") || countForms(formRows, (formKey) => formKey === "correction_request"), detail: "Correction review rows" },
     { label: "Packet builds", value: countForms(formRows, (formKey) => formKey === "free_packet" || formKey === "public_records_request"), detail: "Packet/request intent" },
     { label: "Package interest", value: countForms(formRows, (formKey) => formKey === "package_interest" || formKey === "research_request"), detail: "Buyer intent forms" },
     { label: "Source gaps", value: sourceGapCount, detail: "Static profile missing items" },

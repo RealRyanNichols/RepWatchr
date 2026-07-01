@@ -1,8 +1,10 @@
 import type { Metadata } from "next";
+import Link from "next/link";
+import PrivacyControlsPanel from "@/components/trust/PrivacyControlsPanel";
 
 export const metadata: Metadata = {
   title: "Privacy Policy",
-  description: "RepWatchr privacy policy - how we collect, use, and protect your data.",
+  description: "RepWatchr privacy center - how we collect, use, protect, reset, and correct data.",
 };
 
 export default function PrivacyPage() {
@@ -14,6 +16,24 @@ export default function PrivacyPage() {
       <p className="text-sm text-gray-500 mb-8">
         Last updated: July 1, 2026
       </p>
+
+      <div className="mb-8 rounded-2xl border border-blue-100 bg-blue-50 p-5">
+        <p className="text-xs font-black uppercase tracking-[0.18em] text-blue-800">
+          Privacy controls
+        </p>
+        <h2 className="mt-2 text-xl font-black text-slate-950">
+          Read the policy, then control the data.
+        </h2>
+        <p className="mt-2 text-sm font-semibold leading-6 text-slate-700">
+          You can reset your RepWatchr interest profile, submit access/deletion/correction requests, ask privacy questions, and manage account-level privacy requests through the controls page.
+        </p>
+        <Link
+          href="/privacy/controls"
+          className="mt-4 inline-flex rounded-xl bg-blue-950 px-4 py-3 text-sm font-black uppercase tracking-wide text-white hover:bg-red-700"
+        >
+          Open privacy controls
+        </Link>
+      </div>
 
       <div className="prose prose-gray max-w-none space-y-6 text-sm text-gray-700">
         <section>
@@ -200,6 +220,10 @@ export default function PrivacyPage() {
             .
           </p>
         </section>
+      </div>
+
+      <div className="mt-10">
+        <PrivacyControlsPanel compact />
       </div>
     </div>
   );
