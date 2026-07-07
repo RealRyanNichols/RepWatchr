@@ -17,6 +17,7 @@ import type {
   AdminSourceSubmissionRow,
 } from "@/lib/admin-dashboard";
 import { trackRepWatchrEvent } from "@/lib/client-analytics";
+import { PUBLIC_ROLE_REVIEW_LABELS } from "@/lib/public-role-safety";
 import AdminRiskWarnings from "@/components/shared/AdminRiskWarnings";
 import { scanPublicContentForWarnings } from "@/lib/trust-safety";
 
@@ -41,6 +42,7 @@ type AdminActionPayload =
       missingDataText: string;
       redFlagText: string;
       scoreStatus: string;
+      publicRoleLabel: string;
     }
   | {
       action: "revenue_update";
@@ -166,6 +168,7 @@ export default function AdminDashboardClient({
     missingDataText: "",
     redFlagText: "",
     scoreStatus: "",
+    publicRoleLabel: "under_review",
   });
   const [revenueForms, setRevenueForms] = useState<Record<string, { status: string; note: string }>>({});
   const [contentForm, setContentForm] = useState({
@@ -344,6 +347,8 @@ export default function AdminDashboardClient({
               </div>
               <div className="flex flex-wrap gap-2">
                 <Link href="/admin/races" className="secondary-button">Race Desk</Link>
+                <Link href="/admin/money" className="secondary-button">Money Desk</Link>
+                <Link href="/admin/records-responses" className="secondary-button">Response Desk</Link>
                 <Link href="/admin/content-review" className="secondary-button">Old Review</Link>
                 <Link href="/admin/control-center" className="secondary-button">Control Center</Link>
               </div>
@@ -368,6 +373,8 @@ export default function AdminDashboardClient({
             ["Profiles", "#profile-manager"],
             ["Records", "#records-requests"],
             ["Revenue", "#revenue-desk"],
+            ["Money", "/admin/money"],
+            ["Responses", "/admin/records-responses"],
             ["Content", "#content-desk"],
             ["Health", "#data-health"],
             ["Audit", "#audit-log"],
@@ -618,10 +625,18 @@ export default function AdminDashboardClient({
                       <option value="reviewed">Reviewed</option>
                       <option value="public_ready">Public ready</option>
                     </select>
+                    <select value={profileForm.publicRoleLabel} onChange={(event) => setProfileForm((current) => ({ ...current, publicRoleLabel: event.target.value }))} className="field font-black sm:col-span-2">
+                      {PUBLIC_ROLE_REVIEW_LABELS.map((label) => (
+                        <option key={label.value} value={label.value}>{label.label}</option>
+                      ))}
+                    </select>
                   </div>
                   <textarea value={profileForm.publicFieldsText} onChange={(event) => setProfileForm((current) => ({ ...current, publicFieldsText: event.target.value }))} rows={4} placeholder="Public field edits, one per line: field = value" className="field mt-2 resize-none" />
                   <textarea value={profileForm.missingDataText} onChange={(event) => setProfileForm((current) => ({ ...current, missingDataText: event.target.value }))} rows={3} placeholder={`Missing data already flagged: ${selectedProfile.missingData.join(", ")}`} className="field mt-2 resize-none" />
                   <textarea value={profileForm.redFlagText} onChange={(event) => setProfileForm((current) => ({ ...current, redFlagText: event.target.value }))} rows={3} placeholder="Red flag/source-backed note to stage for review" className="field mt-2 resize-none" />
+                  <p className="mt-2 rounded-lg border border-amber-200 bg-amber-50 px-3 py-2 text-xs font-bold leading-5 text-amber-950">
+                    Badge, court, prosecutor, and public-safety edits must keep a public label. Do not imply criminal guilt, private targeting, or misconduct beyond the attached public source.
+                  </p>
                   <div className="mt-2">
                     <AdminRiskWarnings warnings={profileRiskWarnings} />
                   </div>

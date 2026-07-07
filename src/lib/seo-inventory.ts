@@ -150,6 +150,12 @@ const staticSeoPages: StaticSeoPage[] = [
     imageKind: "funding",
   },
   {
+    path: "/money",
+    title: "Money Trail",
+    description: "Search campaign finance source paths, public filing summaries, donor aggregates, committees, and source gaps.",
+    imageKind: "funding",
+  },
+  {
     path: "/data-reports",
     title: "Data Reports",
     description: "RepWatchr data coverage, source inventory, and public-record buildout status.",
@@ -252,7 +258,7 @@ function staticRecords(): SeoUrlRecord[] {
   const date = now();
   return staticSeoPages.map((page) =>
     urlRecord({
-      type: page.path === "/funding" || page.path === "/red-flags" ? "red-flags-funding" : "static",
+      type: page.path === "/funding" || page.path === "/money" || page.path === "/red-flags" ? "red-flags-funding" : "static",
       path: page.path,
       title: page.title,
       description: page.description,
@@ -360,8 +366,23 @@ function raceRecords(): SeoUrlRecord[] {
       imageTitle: `${district.name} preview`,
     }),
   );
+  const comparisons = getTexasRaceHubRaces()
+    .filter((race) => race.candidates.length > 0 || race.sourceCount > 0)
+    .map((race) =>
+      urlRecord({
+        type: "races" as const,
+        path: `/compare/race/${race.slug}`,
+        title: `Compare Candidates: ${race.title}`,
+        description: `Source-backed comparison for ${race.title}: candidate record lanes, filings, funding links, source gaps, and public questions.`,
+        lastModified: date,
+        changeFrequency: "weekly",
+        priority: race.lane === "big-race" ? 0.8 : 0.72,
+        imageUrl: buildOgImageUrl("race", { slug: race.slug, view: "compare" }),
+        imageTitle: `${race.title} candidate comparison preview`,
+      }),
+    );
 
-  return [...races, ...counties, ...districts];
+  return [...races, ...counties, ...districts, ...comparisons];
 }
 
 function storyRecords(): SeoUrlRecord[] {

@@ -19,9 +19,11 @@ const primaryLinks = [
 const moreLinks = [
   { href: "/elections", label: "All Elections" },
   { href: "/submit-source", label: "Submit Source" },
+  { href: "/tools/public-records-response", label: "Records Response" },
   { href: "/authority-watch", label: "Authority Watch" },
   { href: "/public-safety", label: "Public Safety" },
   { href: "/funding", label: "Funding" },
+  { href: "/money", label: "Money Trail" },
   { href: "/red-flags", label: "Red Flags" },
   { href: "/scorecards", label: "Scorecards" },
   { href: "/issues", label: "Issues" },

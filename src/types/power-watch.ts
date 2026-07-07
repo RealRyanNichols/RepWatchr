@@ -8,8 +8,14 @@ export type PublicPowerKind =
   | "newsroom-leadership"
   | "law-enforcement-agency"
   | "sheriff"
+  | "constable"
   | "police-chief"
   | "public-safety-official"
+  | "agency-official"
+  | "judge"
+  | "prosecutor"
+  | "district-attorney"
+  | "court-official"
   | "oversight-agency";
 
 export type PublicPowerStatus =
@@ -32,7 +38,21 @@ export interface PublicPowerSource {
     | "review-directory"
     | "article"
     | "agency-directory"
+    | "official-agency-bio"
+    | "official-court-page"
     | "policy-record"
+    | "policy-manual"
+    | "public-information-page"
+    | "public-budget"
+    | "public-disciplinary-record"
+    | "public-court-filing"
+    | "public-docket"
+    | "public-statement"
+    | "public-meeting-minutes"
+    | "public-vote-appointment-record"
+    | "public-contract-procurement-record"
+    | "official-press-release"
+    | "public-records-response"
     | "complaint-process"
     | "oversight-record";
   lastCheckedAt: string;

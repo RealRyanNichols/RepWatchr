@@ -109,11 +109,25 @@ const riskyLanguagePatterns: Array<{
     pattern: /\b(child|children|minor|kids|son|daughter)\b/i,
   },
   {
+    id: "family-private-info",
+    label: "Possible private family reference",
+    detail: "Badge, court, and public-role profiles should not publish family details or private personal context.",
+    severity: "block",
+    pattern: /\b(wife|husband|spouse|family|mother|father|relative|home life|personal phone|personal email)\b/i,
+  },
+  {
     id: "threat-harass",
     label: "Possible threat or harassment language",
     detail: "RepWatchr cannot publish threats, harassment instructions, or calls to target a person privately.",
     severity: "block",
-    pattern: /\b(threaten|harass|go after|show up at|confront at home|make them pay|hunt down)\b/i,
+    pattern: /\b(threaten|harass|go after|show up at|confront at home|make them pay|hunt down|target them|follow them|call their house)\b/i,
+  },
+  {
+    id: "wanted-vigilante-framing",
+    label: "Possible wanted-style or vigilante framing",
+    detail: "Badge and court profiles must avoid wanted-poster, bounty, target-list, mugshot, or vigilante styling.",
+    severity: "block",
+    pattern: /\b(wanted poster|wanted list|bounty|target list|enemy list|mugshot|red siren|vigilante|take justice into your own hands)\b/i,
   },
   {
     id: "criminal-accusation",
@@ -123,11 +137,18 @@ const riskyLanguagePatterns: Array<{
     pattern: /\b(criminal|crime|felony|bribe|bribery|kickback|stole|stealing|fraud|fraudulent|corrupt|treason|traitor|illegal payoff)\b/i,
   },
   {
+    id: "guilt-language",
+    label: "Possible guilt language",
+    detail: "Do not state guilt or criminal status unless an official public finding supports it and the copy is source-limited.",
+    severity: "warn",
+    pattern: /\b(guilty|convicted|conviction|belongs in jail|locked up|jail them|prosecute them|known criminal|alleged criminal)\b/i,
+  },
+  {
     id: "overclaim",
     label: "Possible overclaim",
     detail: "Avoid certainty beyond the source. Prefer public-question or source-backed wording.",
     severity: "warn",
-    pattern: /\b(proves|confirmed that .* guilty|without a doubt|obviously guilty|caught red-handed|sold out|cover[- ]?up)\b/i,
+    pattern: /\b(proves|confirmed that .* guilty|without a doubt|obviously guilty|caught red-handed|sold out|cover[- ]?up|everyone knows|no question that)\b/i,
   },
 ];
 
@@ -176,4 +197,3 @@ export function validateRedFlagForPublicUse(flag: {
   if (!flag.reviewerStatus) missing.push("reviewer status");
   return missing;
 }
-

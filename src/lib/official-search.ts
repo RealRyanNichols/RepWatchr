@@ -8,6 +8,7 @@ import {
   getScoreCard,
 } from "@/lib/data";
 import { buildOfficialCompletionSnapshot, type ProfileCompletionKey } from "@/lib/profile-completion";
+import { getMoneyTrailForOfficial } from "@/lib/money-trail";
 import { getSupabaseAdminClient } from "@/lib/supabase-admin";
 
 export const officialSearchSortOptions = [
@@ -457,6 +458,7 @@ const getStaticOfficialRows = cache(() => {
   return getAllOfficials().map((official) => {
     const scoreCard = getScoreCard(official.id);
     const funding = getFundingSummary(official.id);
+    const moneyTrail = getMoneyTrailForOfficial(official.id);
     const voteRecord = getPublicVoteRecord(official.id);
     const redFlags = getRedFlags(official.id);
     const completion = buildOfficialCompletionSnapshot(official);
@@ -470,7 +472,7 @@ const getStaticOfficialRows = cache(() => {
       voteRecord?.lastUpdated,
       redFlagLatestDate(redFlags),
     );
-    const sourceCount = sourceCountForOfficial(official, redFlags);
+    const sourceCount = Math.max(sourceCountForOfficial(official, redFlags), moneyTrail?.sourceCount ?? 0);
     const rowBase = {
       official,
       score: scoreCard?.overall ?? null,
@@ -500,6 +502,10 @@ const getStaticOfficialRows = cache(() => {
           city,
           officeType.label,
           official.county.join(" "),
+          moneyTrail?.cycles.join(" ") ?? "",
+          moneyTrail?.committees.map((committee) => committee.name).join(" ") ?? "",
+          moneyTrail?.donorEntities.map((donor) => `${donor.name} ${donor.donorType}`).join(" ") ?? "",
+          moneyTrail?.records.map((record) => `${record.recordType} ${record.counterpartyName ?? ""}`).join(" ") ?? "",
         ].join(" "),
       ),
     };

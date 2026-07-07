@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import { redirect } from "next/navigation";
 import ShareButtons from "@/components/shared/ShareButtons";
 import ReportButton from "@/components/shared/ReportButton";
 import ProfileOpenTracker from "@/components/shared/ProfileOpenTracker";
@@ -15,8 +16,15 @@ import QuickFacts from "@/components/school-board/QuickFacts";
 import CappedList from "@/components/school-board/CappedList";
 import WhyThisScore from "@/components/school-board/WhyThisScore";
 import { getDistrictBranding } from "@/data/school-board-branding";
-import { getCandidateFlags, getCandidateGaps, getCandidateGoodRecords, getSchoolBoardCandidate, getShareLine } from "@/lib/school-board-research";
-import { getCandidateDataId, getCandidateUrlSlug, getDistrictUrlSlug, getSchoolBoardCandidateUrl, getSchoolBoardDistrictUrl } from "@/lib/school-board-urls";
+import { getCandidateFlags, getCandidateGaps, getCandidateGoodRecords, getSchoolBoardCandidate, getSchoolBoardDistrict, getShareLine } from "@/lib/school-board-research";
+import {
+  getCandidateDataId,
+  getCandidateUrlSlug,
+  getDistrictDataSlug,
+  getDistrictUrlSlug,
+  getSchoolBoardCandidateUrl,
+  getSchoolBoardDistrictUrl,
+} from "@/lib/school-board-urls";
 import { buildEvidenceFromDossier, calculateSchoolBoardScore, schoolBoardScoringModel } from "@/lib/school-board-scoring";
 import { buildOgImageUrl, buildRepWatchrMetadata } from "@/lib/repwatchr-seo";
 import { breadcrumbJsonLd, jsonLd, profilePageJsonLd } from "@/lib/structured-data";
@@ -26,7 +34,22 @@ import { breadcrumbJsonLd, jsonLd, profilePageJsonLd } from "@/lib/structured-da
 export const dynamicParams = true;
 
 export async function generateMetadata({ params }: { params: Promise<{ districtSlug: string; candidateId: string }> }): Promise<Metadata> {
-  const { candidateId } = await params;
+  const { districtSlug, candidateId } = await params;
+  if (isStateRoute(districtSlug)) {
+    const district = getSchoolBoardDistrict(getDistrictDataSlug(candidateId));
+    if (district) {
+      return buildRepWatchrMetadata({
+        title: `${district.district} School Board`,
+        description: `${district.district} candidate dossiers, trustee records, meeting sources, agendas, minutes, and source gaps.`,
+        path: getSchoolBoardDistrictUrl(district),
+        imagePath: buildOgImageUrl("school-board", {
+          type: "district",
+          district: getDistrictUrlSlug(district.district_slug),
+        }),
+        imageAlt: `${district.district} school board profile`,
+      });
+    }
+  }
   const candidate = getSchoolBoardCandidate(getCandidateDataId(candidateId));
   if (!candidate) return { title: "Candidate Not Found" };
   const canonical = getSchoolBoardCandidateUrl(candidate);
@@ -54,6 +77,10 @@ function isMeaningful(value: string | undefined | null): boolean {
 
 export default async function CandidatePage({ params }: { params: Promise<{ districtSlug: string; candidateId: string }> }) {
   const { districtSlug, candidateId } = await params;
+  if (isStateRoute(districtSlug)) {
+    const district = getSchoolBoardDistrict(getDistrictDataSlug(candidateId));
+    if (district) redirect(getSchoolBoardDistrictUrl(district));
+  }
   const candidate = getSchoolBoardCandidate(getCandidateDataId(candidateId));
   if (!candidate || ![candidate.district_slug, getDistrictUrlSlug(candidate.district_slug)].includes(districtSlug)) {
     return (
@@ -434,6 +461,11 @@ export default async function CandidatePage({ params }: { params: Promise<{ dist
       ) : null}
     </div>
   );
+}
+
+function isStateRoute(value: string) {
+  const normalized = value.toLowerCase();
+  return normalized === "texas" || normalized === "tx";
 }
 
 function RecordColumn({

@@ -1386,9 +1386,14 @@ export default function RepWatchrMemberDashboard({ initialEmail }: { initialEmai
                 );
               })}
             </div>
-            <button type="button" onClick={saveDigestPreference} className="secondary-button mt-3">
-              Save Digest
-            </button>
+            <div className="mt-3 flex flex-wrap gap-2">
+              <button type="button" onClick={saveDigestPreference} className="secondary-button">
+                Save Digest
+              </button>
+              <Link href="/dashboard/notifications" className="secondary-button">
+                Open notification center
+              </Link>
+            </div>
           </ToolPanel>
         </section>
 

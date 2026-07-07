@@ -14,8 +14,8 @@ import { buildFallbackIdeologyProfile, getOfficialIdeologyProfile } from "@/lib/
 import { formatLevelName, getPartyColor } from "@/lib/formatting";
 import ScoreGauge from "@/components/scores/ScoreGauge";
 import CategoryBreakdown from "@/components/scores/CategoryBreakdown";
-import CampaignFundingSection from "@/components/funding/CampaignFundingSection";
 import CampaignFinanceSourcePanel from "@/components/funding/CampaignFinanceSourcePanel";
+import MoneyTrailSection from "@/components/money/MoneyTrailSection";
 import VoteTimeline from "@/components/votes/VoteTimeline";
 import RedFlagCard from "@/components/shared/RedFlagCard";
 import PartyBadge from "@/components/officials/PartyBadge";
@@ -37,6 +37,7 @@ import { getCongressTradingSnapshot } from "@/lib/congress-trading";
 import { buildOgImageUrl, buildRepWatchrMetadata } from "@/lib/repwatchr-seo";
 import { breadcrumbJsonLd, jsonLd, profilePageJsonLd } from "@/lib/structured-data";
 import { buildOfficialDossier, type DossierSourceGroup, type DossierTimelineItem } from "@/lib/official-dossier";
+import { getMoneyTrailForOfficial } from "@/lib/money-trail";
 import type { Official, PublicVoteRecord, RedFlag, ScoredVote } from "@/types";
 
 export const revalidate = 86400;
@@ -91,6 +92,7 @@ export default async function OfficialProfilePage({
 
   const scoreCard = getScoreCard(id);
   const funding = getFundingSummary(id);
+  const moneyTrail = getMoneyTrailForOfficial(id);
   const redFlags = getRedFlags(id);
   const sourceBackedRedFlags = redFlags.filter((flag) => Boolean(flag.sourceUrl));
   const issueCategories = getIssueCategories();
@@ -379,11 +381,7 @@ export default async function OfficialProfilePage({
             )}
         </div>
 
-        {funding ? (
-          <CampaignFundingSection funding={funding} />
-        ) : (
-          <CampaignFinanceSourcePanel official={official} />
-        )}
+        {moneyTrail ? <MoneyTrailSection trail={moneyTrail} /> : <CampaignFinanceSourcePanel official={official} />}
 
         <ProfileTimelinePanel items={dossier.timeline} />
 

@@ -2,7 +2,9 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import type { ReactNode } from "react";
+import RaceHubAnalytics from "@/components/elections/RaceHubAnalytics";
 import TexasRacePublicContributions from "@/components/elections/TexasRacePublicContributions";
+import RaceMoneyTrailSection from "@/components/money/RaceMoneyTrailSection";
 import CopySnippetButton from "@/components/shared/CopySnippetButton";
 import RecordVisual from "@/components/shared/RecordVisual";
 import ShareButtons from "@/components/shared/ShareButtons";
@@ -155,17 +157,17 @@ function CandidateCard({ candidate }: { candidate: RaceHubCandidate }) {
       </div>
       <div className="mt-4 flex flex-wrap gap-2">
         {candidate.profileHref ? (
-          <Link href={candidate.profileHref} className="mini-button">
+          <Link href={candidate.profileHref} className="mini-button" data-race-candidate={candidate.name}>
             Open profile
           </Link>
         ) : null}
         {candidate.financeHref ? (
-          <Link href={candidate.financeHref} className="mini-button">
+          <Link href={candidate.financeHref} className="mini-button" data-race-candidate={candidate.name}>
             Funding
           </Link>
         ) : null}
         {candidate.campaignHref ? (
-          <a href={candidate.campaignHref} target="_blank" rel="noopener noreferrer" className="mini-button">
+          <a href={candidate.campaignHref} target="_blank" rel="noopener noreferrer" className="mini-button" data-race-candidate={candidate.name}>
             Campaign
           </a>
         ) : null}
@@ -238,6 +240,7 @@ function SourceGroups({ groups }: { groups: RaceHubSourceGroup[] }) {
                   href={source.url}
                   target="_blank"
                   rel="noopener noreferrer"
+                  data-race-source={source.title}
                   className="rounded-lg border border-slate-200 bg-white px-3 py-2 text-sm font-black leading-6 text-blue-800 transition hover:border-red-300 hover:text-red-700"
                 >
                   {source.title}
@@ -273,6 +276,7 @@ function MissingRecords({ records }: { records: RaceHubMissingRecord[] }) {
         <Link
           key={record.label}
           href={record.actionHref}
+          data-race-submit-source={record.label}
           className={`rounded-lg border p-4 transition hover:-translate-y-0.5 hover:border-red-300 ${priorityTone(record.priority)}`}
         >
           <span className="rounded-full bg-white/80 px-2 py-0.5 text-[11px] font-black uppercase tracking-wide">
@@ -286,7 +290,15 @@ function MissingRecords({ records }: { records: RaceHubMissingRecord[] }) {
   );
 }
 
-function VoterQuestions({ questions }: { questions: RaceHubVoterQuestion[] }) {
+function VoterQuestions({
+  questions,
+  raceSlug,
+  raceTitle,
+}: {
+  questions: RaceHubVoterQuestion[];
+  raceSlug: string;
+  raceTitle: string;
+}) {
   return (
     <div className="grid gap-3 md:grid-cols-2">
       {questions.map((item) => (
@@ -294,7 +306,13 @@ function VoterQuestions({ questions }: { questions: RaceHubVoterQuestion[] }) {
           <p className="text-[11px] font-black uppercase tracking-wide text-red-700">{item.label}</p>
           <p className="mt-2 text-sm font-bold leading-6 text-blue-950">{item.question}</p>
           <div className="mt-3">
-            <CopySnippetButton text={item.question} label="Copy question" copiedLabel="Question copied" />
+            <CopySnippetButton
+              text={item.question}
+              label="Copy question"
+              copiedLabel="Question copied"
+              trackingEventName="race_public_question_copied"
+              trackingMetadata={{ raceSlug, raceTitle, questionLabel: item.label }}
+            />
           </div>
         </div>
       ))}
@@ -313,6 +331,42 @@ function ShareSnippets({ snippets }: { snippets: RaceHubShareSnippet[] }) {
             <CopySnippetButton text={snippet.text} label="Copy snippet" copiedLabel="Snippet copied" />
           </div>
         </div>
+      ))}
+    </div>
+  );
+}
+
+function RacePackageInterestGrid({ raceSlug, raceTitle }: { raceSlug: string; raceTitle: string }) {
+  const packages = [
+    {
+      label: "Local Race Source Pack",
+      href: `/services/local-race-source-pack?race=${encodeURIComponent(raceSlug)}`,
+      note: "One source-backed packet for candidate links, filings, finance, missing records, and public questions.",
+    },
+    {
+      label: "Election Watch Desk",
+      href: `/services/election-watch-desk?race=${encodeURIComponent(raceSlug)}`,
+      note: "Recurring race monitoring for filings, source updates, story briefs, and share-ready questions.",
+    },
+    {
+      label: "Official Record Brief",
+      href: `/services/official-record-brief?race=${encodeURIComponent(raceSlug)}`,
+      note: "A deeper public-record brief for one candidate or current officeholder in the race.",
+    },
+  ];
+
+  return (
+    <div className="grid gap-3 lg:grid-cols-3">
+      {packages.map((item) => (
+        <Link
+          key={item.label}
+          href={item.href}
+          data-race-package={`${raceTitle}: ${item.label}`}
+          className="rounded-lg border border-blue-200 bg-white p-4 text-blue-950 transition hover:-translate-y-0.5 hover:border-red-300 hover:shadow-md"
+        >
+          <p className="text-sm font-black uppercase tracking-wide text-blue-800">{item.label}</p>
+          <p className="mt-2 text-sm font-semibold leading-6 text-slate-600">{item.note}</p>
+        </Link>
       ))}
     </div>
   );
@@ -374,6 +428,14 @@ function RacePage({ race }: { race: RaceHubRace }) {
 
   return (
     <div className="min-h-screen bg-[#f6f9fc]">
+      <RaceHubAnalytics
+        raceSlug={race.slug}
+        raceTitle={race.title}
+        routeKind="race"
+        sourceCount={race.sourceCount}
+        candidateCount={race.candidates.length}
+        missingRecordCount={race.missingRecords.length}
+      />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: jsonLd(breadcrumbStructuredData) }} />
       <RaceJsonLd race={race} />
       <main className="mx-auto max-w-7xl px-4 py-8 sm:px-6 lg:px-8">
@@ -411,6 +473,20 @@ function RacePage({ race }: { race: RaceHubRace }) {
                   sourceLabel={race.sourceGroups.find((group) => group.links.length)?.label || "race source packet"}
                 />
                 <CopySnippetButton text={shareSnippet} label="Copy race post" copiedLabel="Race post copied" />
+                <Link
+                  href={`/compare/race/${race.slug}`}
+                  data-race-compare="Open candidate comparison"
+                  className="rounded-xl border border-blue-200 bg-white px-4 py-3 text-sm font-black uppercase tracking-wide text-blue-800 transition hover:border-red-300 hover:text-red-700"
+                >
+                  Compare candidates
+                </Link>
+                <Link
+                  href={`/dashboard/watchlists?entityType=race&entityId=${encodeURIComponent(race.slug)}`}
+                  data-race-watch="Watch race"
+                  className="rounded-xl border border-blue-200 bg-white px-4 py-3 text-sm font-black uppercase tracking-wide text-blue-800 transition hover:border-red-300 hover:text-red-700"
+                >
+                  Watch race
+                </Link>
               </div>
             </div>
 
@@ -484,6 +560,8 @@ function RacePage({ race }: { race: RaceHubRace }) {
           </div>
         </SectionShell>
 
+        <RaceMoneyTrailSection race={race} />
+
         <SectionShell eyebrow="Source trail" title="Official links, filings, finance, campaign pages, school-board records, and stories">
           <SourceGroups groups={race.sourceGroups} />
         </SectionShell>
@@ -493,7 +571,7 @@ function RacePage({ race }: { race: RaceHubRace }) {
         </SectionShell>
 
         <SectionShell eyebrow="Voter question builder" title="Questions voters, reporters, and meeting speakers can copy">
-          <VoterQuestions questions={race.voterQuestions} />
+          <VoterQuestions questions={race.voterQuestions} raceSlug={race.slug} raceTitle={race.title} />
         </SectionShell>
 
         <SectionShell eyebrow="Share snippets" title="Short source-safe posts for this race">
@@ -519,10 +597,14 @@ function RacePage({ race }: { race: RaceHubRace }) {
             Add a better source or request the paid Race Source Pack.
           </h2>
           <div className="mt-4 grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
-            <Link href={`/elections/texas/contribute?race=${encodeURIComponent(race.slug)}`} className="rounded-lg border border-blue-200 bg-white px-4 py-3 text-sm font-black text-blue-800 transition hover:border-red-300 hover:text-red-700">
+            <Link
+              href={`/elections/texas/contribute?race=${encodeURIComponent(race.slug)}`}
+              data-race-submit-source="Submit race source"
+              className="rounded-lg border border-blue-200 bg-white px-4 py-3 text-sm font-black text-blue-800 transition hover:border-red-300 hover:text-red-700"
+            >
               Submit race source
             </Link>
-            <Link href="/services/local-race-source-pack" className="rounded-lg border border-blue-200 bg-white px-4 py-3 text-sm font-black text-blue-800 transition hover:border-red-300 hover:text-red-700">
+            <Link href="/services/local-race-source-pack" data-race-package="Local Race Source Pack" className="rounded-lg border border-blue-200 bg-white px-4 py-3 text-sm font-black text-blue-800 transition hover:border-red-300 hover:text-red-700">
               Request Race Source Pack
             </Link>
             <Link href="/funding" className="rounded-lg border border-blue-200 bg-white px-4 py-3 text-sm font-black text-blue-800 transition hover:border-red-300 hover:text-red-700">
@@ -531,6 +613,9 @@ function RacePage({ race }: { race: RaceHubRace }) {
             <Link href="/officials?state=TX" className="rounded-lg border border-blue-200 bg-white px-4 py-3 text-sm font-black text-blue-800 transition hover:border-red-300 hover:text-red-700">
               Texas officials
             </Link>
+          </div>
+          <div className="mt-4">
+            <RacePackageInterestGrid raceSlug={race.slug} raceTitle={race.title} />
           </div>
         </section>
 
@@ -557,6 +642,14 @@ function CountyPage({ county }: { county: TexasCountyHub }) {
 
   return (
     <div className="min-h-screen bg-[#f6f9fc]">
+      <RaceHubAnalytics
+        raceSlug={county.slug}
+        raceTitle={county.name}
+        routeKind="county"
+        sourceCount={county.races.reduce((total, race) => total + race.sourceCount, 0)}
+        candidateCount={county.races.reduce((total, race) => total + race.candidates.length, 0)}
+        missingRecordCount={county.missingRecords.length}
+      />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: jsonLd(breadcrumbStructuredData) }} />
       <main className="mx-auto max-w-7xl px-4 py-8 sm:px-6 lg:px-8">
         <Link href="/elections/texas" className="text-sm font-black text-blue-800 hover:text-red-700">
@@ -632,7 +725,7 @@ function CountyPage({ county }: { county: TexasCountyHub }) {
         </SectionShell>
 
         <SectionShell eyebrow="Voter question builder" title="County questions people can ask before meetings or debates">
-          <VoterQuestions questions={county.voterQuestions} />
+          <VoterQuestions questions={county.voterQuestions} raceSlug={county.slug} raceTitle={county.name} />
         </SectionShell>
 
         <section className="mt-6 rounded-lg border border-blue-100 bg-blue-50 p-5 shadow-sm">
@@ -642,11 +735,22 @@ function CountyPage({ county }: { county: TexasCountyHub }) {
             Use the public form for one record. Use the paid Race Source Pack when you need filings, source links, candidate pages, and voter questions organized in one packet.
           </p>
           <div className="mt-4 flex flex-wrap gap-3">
-            <Link href={`/elections/texas/contribute?county=${encodeURIComponent(county.county)}`} className="primary-button">
+            <Link
+              href={`/elections/texas/contribute?county=${encodeURIComponent(county.county)}`}
+              data-race-submit-source="Submit county source"
+              className="primary-button"
+            >
               Submit county source
             </Link>
-            <Link href="/services/local-race-source-pack" className="secondary-button">
+            <Link href="/services/local-race-source-pack" data-race-package="Local Race Source Pack" className="secondary-button">
               Request Race Source Pack
+            </Link>
+            <Link
+              href={`/dashboard/watchlists?entityType=county&entityId=${encodeURIComponent(county.slug)}`}
+              data-race-watch="Watch county hub"
+              className="secondary-button"
+            >
+              Watch county
             </Link>
             <CopySnippetButton text={snippet} label="Copy county post" copiedLabel="County post copied" />
           </div>
@@ -673,6 +777,14 @@ function DistrictPage({ district }: { district: TexasDistrictHub }) {
 
   return (
     <div className="min-h-screen bg-[#f6f9fc]">
+      <RaceHubAnalytics
+        raceSlug={district.slug}
+        raceTitle={district.name}
+        routeKind="district"
+        sourceCount={district.races.reduce((total, race) => total + race.sourceCount, 0)}
+        candidateCount={district.races.reduce((total, race) => total + race.candidates.length, 0)}
+        missingRecordCount={district.missingRecords.length}
+      />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: jsonLd(breadcrumbStructuredData) }} />
       <main className="mx-auto max-w-7xl px-4 py-8 sm:px-6 lg:px-8">
         <Link href="/elections/texas" className="text-sm font-black text-blue-800 hover:text-red-700">
@@ -730,18 +842,29 @@ function DistrictPage({ district }: { district: TexasDistrictHub }) {
         </SectionShell>
 
         <SectionShell eyebrow="Voter question builder" title="District questions voters can copy">
-          <VoterQuestions questions={district.voterQuestions} />
+          <VoterQuestions questions={district.voterQuestions} raceSlug={district.slug} raceTitle={district.name} />
         </SectionShell>
 
         <section className="mt-6 rounded-lg border border-blue-100 bg-blue-50 p-5 shadow-sm">
           <p className="text-xs font-black uppercase tracking-[0.18em] text-blue-800">District source packet</p>
           <h2 className="mt-2 text-2xl font-black leading-tight text-blue-950">Add a source or request the paid Race Source Pack.</h2>
           <div className="mt-4 flex flex-wrap gap-3">
-            <Link href={`/elections/texas/contribute?district=${encodeURIComponent(district.slug)}`} className="primary-button">
+            <Link
+              href={`/elections/texas/contribute?district=${encodeURIComponent(district.slug)}`}
+              data-race-submit-source="Submit district source"
+              className="primary-button"
+            >
               Submit district source
             </Link>
-            <Link href="/services/local-race-source-pack" className="secondary-button">
+            <Link href="/services/local-race-source-pack" data-race-package="Local Race Source Pack" className="secondary-button">
               Request Race Source Pack
+            </Link>
+            <Link
+              href={`/dashboard/watchlists?entityType=district&entityId=${encodeURIComponent(district.slug)}`}
+              data-race-watch="Watch district hub"
+              className="secondary-button"
+            >
+              Watch district
             </Link>
             <CopySnippetButton text={snippet} label="Copy district post" copiedLabel="District post copied" />
           </div>

@@ -1,8 +1,11 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import LocalBodyTracker from "@/components/meetings/LocalBodyTracker";
+import MeetingsAnalytics from "@/components/meetings/MeetingsAnalytics";
 import ProfilePhoto from "@/components/profile/ProfilePhoto";
 import ShareButtons from "@/components/shared/ShareButtons";
 import { getDistrictBranding } from "@/data/school-board-branding";
+import { getMeetingsForPublicBody, getPublicBodyForDistrict } from "@/lib/local-meetings";
 import {
   getCandidateFlags,
   getCandidateGaps,
@@ -38,9 +41,13 @@ type DashboardFact = {
 };
 
 export function generateStaticParams() {
-  return getSchoolBoardDistricts().map((district) => ({
-    districtSlug: getDistrictUrlSlug(district.district_slug),
-  }));
+  return [
+    { districtSlug: "texas" },
+    { districtSlug: "tx" },
+    ...getSchoolBoardDistricts().map((district) => ({
+      districtSlug: getDistrictUrlSlug(district.district_slug),
+    })),
+  ];
 }
 
 export async function generateMetadata({
@@ -49,6 +56,16 @@ export async function generateMetadata({
   params: Promise<{ districtSlug: string }>;
 }): Promise<Metadata> {
   const { districtSlug } = await params;
+  if (isStateSchoolBoardRoute(districtSlug)) {
+    const stateLabel = stateLabelForRoute(districtSlug);
+    return buildRepWatchrMetadata({
+      title: `${stateLabel} School Boards | RepWatchr`,
+      description: `${stateLabel} school-board districts, trustees, meeting sources, agendas, minutes, and public source gaps.`,
+      path: `/school-boards/${districtSlug}`,
+      imagePath: buildOgImageUrl("school-board", { state: districtSlug }),
+      imageAlt: `${stateLabel} school board tracker preview`,
+    });
+  }
   const district = getSchoolBoardDistrict(getDistrictDataSlug(districtSlug));
   if (!district) return { title: "District Not Found" };
   const canonical = getSchoolBoardDistrictUrl(district);
@@ -72,6 +89,10 @@ export default async function DistrictPage({
 }) {
   const { districtSlug } = await params;
   const district = getSchoolBoardDistrict(getDistrictDataSlug(districtSlug));
+
+  if (!district && isStateSchoolBoardRoute(districtSlug)) {
+    return <StateSchoolBoardsView stateSlug={districtSlug} stateLabel={stateLabelForRoute(districtSlug)} />;
+  }
 
   if (!district) {
     return (
@@ -115,6 +136,8 @@ export default async function DistrictPage({
   const intelligenceNotes = buildIntelligenceNotes(district.district, sourceLinks.length, feed.length);
   const branding = getDistrictBranding(district.district_slug);
   const districtPath = getSchoolBoardDistrictUrl(district);
+  const publicBody = getPublicBodyForDistrict(district.district_slug);
+  const localMeetings = publicBody ? getMeetingsForPublicBody(publicBody.slug) : [];
   const breadcrumbStructuredData = breadcrumbJsonLd([
     { name: "RepWatchr", path: "/" },
     { name: "School Boards", path: "/school-boards" },
@@ -129,6 +152,14 @@ export default async function DistrictPage({
 
   return (
     <div className="rw-page-shell text-gray-950">
+      {publicBody ? (
+        <MeetingsAnalytics
+          pageType="school_board"
+          entitySlug={publicBody.slug}
+          entityName={publicBody.name}
+          sourceCount={publicBody.sourceCount}
+        />
+      ) : null}
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: jsonLd(breadcrumbStructuredData) }}
@@ -285,6 +316,14 @@ export default async function DistrictPage({
         </div>
       </section>
 
+      {publicBody ? (
+        <section className="border-b border-slate-200 bg-[#f8fafc]">
+          <div className="mx-auto max-w-7xl px-4 py-10 sm:px-6 lg:px-8">
+            <LocalBodyTracker body={publicBody} meetings={localMeetings} />
+          </div>
+        </section>
+      ) : null}
+
       <section id="profiles" className="mx-auto max-w-7xl px-4 py-12 sm:px-6 lg:px-8">
         <div className="mb-7 flex flex-col gap-3 sm:flex-row sm:items-end sm:justify-between">
           <div>
@@ -405,6 +444,53 @@ export default async function DistrictPage({
         </div>
       </section>
     </div>
+  );
+}
+
+function isStateSchoolBoardRoute(value: string) {
+  const normalized = value.toLowerCase();
+  return normalized === "texas" || normalized === "tx";
+}
+
+function stateLabelForRoute(value: string) {
+  return isStateSchoolBoardRoute(value) ? "Texas" : value.toUpperCase();
+}
+
+function StateSchoolBoardsView({ stateSlug, stateLabel }: { stateSlug: string; stateLabel: string }) {
+  const districts = getSchoolBoardDistricts();
+
+  return (
+    <main className="rw-page-shell">
+      <section className="border-b border-slate-200 bg-white">
+        <div className="mx-auto max-w-7xl px-4 py-10 sm:px-6 lg:px-8">
+          <Link href="/school-boards" className="text-sm font-black text-blue-700 hover:text-red-700">&larr; National school boards</Link>
+          <p className="mt-6 text-xs font-black uppercase tracking-[0.18em] text-red-700">State school boards</p>
+          <h1 className="mt-2 text-4xl font-black text-slate-950 sm:text-5xl">{stateLabel} school-board tracker</h1>
+          <p className="mt-3 max-w-3xl text-base font-semibold leading-7 text-slate-700">
+            Statewide district profiles with board members, meeting-source gaps, agendas, minutes, videos, and local accountability questions.
+          </p>
+        </div>
+      </section>
+
+      <section className="mx-auto max-w-7xl px-4 py-10 sm:px-6 lg:px-8">
+        <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
+          {districts.slice(0, 120).map((district) => (
+            <Link
+              key={district.district_slug}
+              href={`/school-boards/${stateSlug}/${getDistrictUrlSlug(district.district_slug)}`}
+              className="rounded-2xl border border-slate-200 bg-white p-5 shadow-sm transition hover:-translate-y-0.5 hover:border-blue-300 hover:shadow-xl"
+            >
+              <p className="text-xs font-black uppercase tracking-wide text-red-700">{district.county} County</p>
+              <h2 className="mt-2 text-xl font-black text-slate-950">{district.district}</h2>
+              <p className="mt-2 text-sm font-semibold leading-6 text-slate-600">
+                {district.candidates.length} member profile{district.candidates.length === 1 ? "" : "s"} / {district.sourceLinks?.length ?? 0} source link{(district.sourceLinks?.length ?? 0) === 1 ? "" : "s"}
+              </p>
+              <p className="mt-3 text-xs font-black text-blue-700">Canonical: {getSchoolBoardDistrictUrl(district)}</p>
+            </Link>
+          ))}
+        </div>
+      </section>
+    </main>
   );
 }
 

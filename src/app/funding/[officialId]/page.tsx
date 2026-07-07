@@ -12,7 +12,9 @@ import TopDonorsList from "@/components/funding/TopDonorsList";
 import DonorBreakdownChart from "@/components/funding/DonorBreakdownChart";
 import GeographicBreakdown from "@/components/funding/GeographicBreakdown";
 import CampaignFinanceSourcePanel from "@/components/funding/CampaignFinanceSourcePanel";
+import MoneyTrailSection from "@/components/money/MoneyTrailSection";
 import ShareButtons from "@/components/shared/ShareButtons";
+import { getMoneyTrailForOfficial } from "@/lib/money-trail";
 import { buildOgImageUrl, buildRepWatchrMetadata } from "@/lib/repwatchr-seo";
 import { breadcrumbJsonLd, datasetJsonLd, jsonLd } from "@/lib/structured-data";
 
@@ -51,6 +53,7 @@ export default async function OfficialFundingPage({
   const { officialId } = await params;
   const official = getOfficialById(officialId);
   const funding = getFundingSummary(officialId);
+  const moneyTrail = getMoneyTrailForOfficial(officialId);
 
   if (!official) {
     return (
@@ -114,7 +117,7 @@ export default async function OfficialFundingPage({
             />
           </div>
         </div>
-        <CampaignFinanceSourcePanel official={official} />
+        {moneyTrail ? <MoneyTrailSection trail={moneyTrail} compact /> : <CampaignFinanceSourcePanel official={official} />}
       </div>
     );
   }
@@ -174,6 +177,8 @@ export default async function OfficialFundingPage({
 
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
         <div className="lg:col-span-2 space-y-8">
+          {moneyTrail ? <MoneyTrailSection trail={moneyTrail} compact /> : null}
+
           <FundingOverview funding={funding} />
 
           <section>

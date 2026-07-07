@@ -16,8 +16,14 @@ type ProfileType =
   | "newsroom_leadership"
   | "law_enforcement_agency"
   | "sheriff"
+  | "constable"
   | "police_chief"
   | "public_safety_official"
+  | "agency_official"
+  | "judge"
+  | "prosecutor"
+  | "district_attorney"
+  | "court_official"
   | "oversight_agency";
 
 type ProfileClaimFormProps = {
@@ -38,8 +44,14 @@ function normalizeProfileType(value?: string): ProfileType {
     value === "newsroom_leadership" ||
     value === "law_enforcement_agency" ||
     value === "sheriff" ||
+    value === "constable" ||
     value === "police_chief" ||
     value === "public_safety_official" ||
+    value === "agency_official" ||
+    value === "judge" ||
+    value === "prosecutor" ||
+    value === "district_attorney" ||
+    value === "court_official" ||
     value === "oversight_agency" ||
     value === "school_board"
   ) {
@@ -257,8 +269,14 @@ export default function ProfileClaimForm({
                 <option value="newsroom_leadership">Newsroom leadership</option>
                 <option value="law_enforcement_agency">Law-enforcement agency</option>
                 <option value="sheriff">Sheriff</option>
+                <option value="constable">Constable</option>
                 <option value="police_chief">Police chief</option>
                 <option value="public_safety_official">Public-safety official</option>
+                <option value="agency_official">Agency official</option>
+                <option value="judge">Judge</option>
+                <option value="prosecutor">Prosecutor</option>
+                <option value="district_attorney">District attorney</option>
+                <option value="court_official">Court official</option>
                 <option value="oversight_agency">Oversight agency</option>
               </select>
             </label>

@@ -4,6 +4,7 @@ import { getSupabaseAdminClient } from "@/lib/supabase-admin";
 import { cleanLongText, cleanText, cleanUrl } from "@/lib/source-submissions";
 import { getOfficialById } from "@/lib/data";
 import { updateDailyWireItemStatus } from "@/lib/daily-wire";
+import { PUBLIC_ROLE_REVIEW_LABELS } from "@/lib/public-role-safety";
 import type { DailyWireStatus } from "@/lib/daily-wire-quality";
 
 export const runtime = "nodejs";
@@ -19,6 +20,7 @@ const revenueTables = {
 const contentStatuses = new Set(["draft", "published", "unpublished", "archived"]);
 const contentTypes = new Set(["story_draft", "daily_watch"]);
 const brokenLinkStatuses = new Set(["new", "confirmed", "fixed", "ignored"]);
+const publicRoleLabels = new Set<string>(PUBLIC_ROLE_REVIEW_LABELS.map((label) => label.value));
 const dataHealthTables = {
   data_quality_issue: "data_quality_issues",
   broken_link: "broken_links",
@@ -271,13 +273,15 @@ async function handleProfileEdit(supabase: AdminSupabase, adminUser: { id: strin
   const profileName = cleanText(body.profileName, 255);
   const sourceUrl = cleanUrl(body.sourceUrl);
   const note = cleanLongText(body.redFlagText, 5000);
+  const publicRoleLabel = cleanText(body.publicRoleLabel, 80) || "under_review";
 
   if (!profileId) return jsonError("Profile ID is required.", 400);
+  if (!publicRoleLabels.has(publicRoleLabel)) return jsonError("A valid public-role review label is required.", 400);
 
   const publicFields = parsePublicFields(body.publicFieldsText);
   const sourceLinks = sourceUrl ? [{ title: "Admin-added source", url: sourceUrl }] : [];
   const missingData = splitList(body.missingDataText);
-  const redFlags = note ? [{ note, status: "needs_review", sourceUrl }] : [];
+  const redFlags = note ? [{ note, status: publicRoleLabel, sourceUrl }] : [];
   const scoreStatus = cleanText(body.scoreStatus, 120);
   const beforeOfficial = getOfficialById(profileId) ?? null;
 
@@ -294,7 +298,7 @@ async function handleProfileEdit(supabase: AdminSupabase, adminUser: { id: strin
       score_status: scoreStatus || null,
       status: "staged",
       created_by: adminUser.id,
-      metadata: { source: "admin_dashboard" },
+      metadata: { source: "admin_dashboard", public_role_label: publicRoleLabel },
     })
     .select("*")
     .maybeSingle();
@@ -309,7 +313,7 @@ async function handleProfileEdit(supabase: AdminSupabase, adminUser: { id: strin
     targetId: profileId,
     beforeValues: beforeOfficial as unknown as Record<string, unknown> | null,
     afterValues: after,
-    note: note || scoreStatus || "Profile update staged.",
+    note: note || scoreStatus || publicRoleLabel || "Profile update staged.",
   });
 
   return NextResponse.json({ ok: true, audit });

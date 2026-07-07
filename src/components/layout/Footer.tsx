@@ -11,10 +11,12 @@ const quickLinks = [
   { href: "/elections/texas/contribute", label: "Free Packet" },
   { href: "/authority-watch", label: "Authority Watch" },
   { href: "/funding", label: "Funding" },
+  { href: "/money", label: "Money Trail" },
   { href: "/red-flags", label: "Red Flags" },
   { href: "/news", label: "Story Archive" },
   { href: "/methodology", label: "Methodology" },
   { href: "/submit-source", label: "Submit Source" },
+  { href: "/tools/public-records-response", label: "Records Response" },
 ];
 
 export default function Footer() {

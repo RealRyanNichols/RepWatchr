@@ -2,10 +2,13 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import PowerProfileAvatar from "@/components/power-watch/PowerProfileAvatar";
+import PublicRoleSafetyModule from "@/components/public-safety/PublicRoleSafetyModule";
+import PublicSafetyProfileAnalytics from "@/components/public-safety/PublicSafetyProfileAnalytics";
 import ClaimProfileCta from "@/components/profile/ClaimProfileCta";
 import ProfileScorecardVote from "@/components/scorecards/ProfileScorecardVote";
 import ShareButtons from "@/components/shared/ShareButtons";
 import { getPublicSafetyWatchProfileBySlug, getPublicSafetyWatchProfiles } from "@/lib/power-watch";
+import { getPublicRoleGroup } from "@/lib/public-role-safety";
 import { getProfileScorecardTargetType } from "@/lib/universal-scorecards";
 import { buildOgImageUrl, buildRepWatchrMetadata } from "@/lib/repwatchr-seo";
 import { breadcrumbJsonLd, jsonLd, profilePageJsonLd } from "@/lib/structured-data";
@@ -44,8 +47,14 @@ function statusLabel(status: string) {
 function claimTypeForKind(kind: PublicPowerKind) {
   if (kind === "law-enforcement-agency") return "law_enforcement_agency";
   if (kind === "sheriff") return "sheriff";
+  if (kind === "constable") return "constable";
   if (kind === "police-chief") return "police_chief";
   if (kind === "public-safety-official") return "public_safety_official";
+  if (kind === "agency-official") return "agency_official";
+  if (kind === "judge") return "judge";
+  if (kind === "prosecutor") return "prosecutor";
+  if (kind === "district-attorney") return "district_attorney";
+  if (kind === "court-official") return "court_official";
   return "oversight_agency";
 }
 
@@ -54,6 +63,7 @@ export default async function PublicSafetyProfilePage({ params }: PublicSafetyPr
   const profile = getPublicSafetyWatchProfileBySlug(slug);
 
   if (!profile) notFound();
+  const publicRoleGroup = getPublicRoleGroup(profile);
   const profileStructuredData = profilePageJsonLd({
     name: profile.name,
     path: `/public-safety/${profile.slug}`,
@@ -69,6 +79,12 @@ export default async function PublicSafetyProfilePage({ params }: PublicSafetyPr
 
   return (
     <div className="rw-page-shell">
+      <PublicSafetyProfileAnalytics
+        profileSlug={profile.slug}
+        profileName={profile.name}
+        group={publicRoleGroup}
+        sourceCount={profile.sourceLinks.length}
+      />
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: jsonLd(profileStructuredData) }}
@@ -138,6 +154,8 @@ export default async function PublicSafetyProfilePage({ params }: PublicSafetyPr
             sourceLabel={profile.sourceLinks[0]?.title || "public safety source links"}
           />
         </section>
+
+        <PublicRoleSafetyModule profile={profile} />
 
         <section className="mt-6">
           <ClaimProfileCta

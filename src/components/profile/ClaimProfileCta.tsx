@@ -15,8 +15,14 @@ type ClaimProfileCtaProps = {
     | "newsroom_leadership"
     | "law_enforcement_agency"
     | "sheriff"
+    | "constable"
     | "police_chief"
     | "public_safety_official"
+    | "agency_official"
+    | "judge"
+    | "prosecutor"
+    | "district_attorney"
+    | "court_official"
     | "oversight_agency";
 };
 
