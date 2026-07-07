@@ -10,6 +10,8 @@ import {
   type StoredSourceSubmission,
 } from "@/components/source-submissions/sourceSubmissionClient";
 import ShareButtons from "@/components/shared/ShareButtons";
+import SharePromptModal from "@/components/referrals/SharePromptModal";
+import { recordReferralConversion } from "@/lib/referral-client";
 
 export default function SourceSubmissionThanksClient({ submissionId }: { submissionId: string }) {
   const [stored, setStored] = useState<StoredSourceSubmission | null>(null);
@@ -25,11 +27,18 @@ export default function SourceSubmissionThanksClient({ submissionId }: { submiss
     window.setTimeout(() => {
       if (mounted) setStored(readLatestSourceSubmission());
     }, 0);
+    recordReferralConversion({
+      eventType: "referral_source_submission",
+      analyticsEvent: "referral_source_submission",
+      route: "/submit-source/thanks",
+      entityType: "source_submission",
+      entityId: submissionId,
+    });
 
     return () => {
       mounted = false;
     };
-  }, []);
+  }, [submissionId]);
 
   return (
     <div className="min-h-screen bg-[#f6f9fc]">
@@ -78,6 +87,17 @@ export default function SourceSubmissionThanksClient({ submissionId }: { submiss
               sourceLabel={stored?.sourceUrl || "submitted public source"}
             />
           </div>
+
+          <SharePromptModal
+            moment="source_submitted"
+            path="/submit-source"
+            subject={stored?.targetName || "RepWatchr source submission"}
+            topic="the missing public source"
+            kind="source_gap"
+            entityType="source_submission"
+            entityId={submissionId}
+            className="mt-5"
+          />
 
           {stored?.packet ? (
             <div className="mt-5 rounded-lg border border-blue-200 bg-blue-50 p-4">

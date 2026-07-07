@@ -1,10 +1,12 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import "./globals.css";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 import AuthProvider from "@/components/auth/AuthProvider";
 import GoogleAnalytics from "@/components/shared/GoogleAnalytics";
 import PageViewTracker from "@/components/shared/PageViewTracker";
+import MobileAppShell from "@/components/mobile/MobileAppShell";
+import ReferralAttributionTracker from "@/components/referrals/ReferralAttributionTracker";
 import { Analytics } from "@vercel/analytics/next";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import { jsonLd, organizationJsonLd } from "@/lib/structured-data";
@@ -38,6 +40,14 @@ export const metadata: Metadata = {
   ],
   metadataBase: new URL("https://www.repwatchr.com"),
   applicationName: "RepWatchr",
+  appleWebApp: {
+    capable: true,
+    title: "RepWatchr",
+    statusBarStyle: "black-translucent",
+  },
+  formatDetection: {
+    telephone: false,
+  },
   alternates: {
     canonical: "https://www.repwatchr.com",
     types: {
@@ -82,6 +92,17 @@ export const metadata: Metadata = {
   },
 };
 
+export const viewport: Viewport = {
+  width: "device-width",
+  initialScale: 1,
+  maximumScale: 5,
+  viewportFit: "cover",
+  themeColor: [
+    { media: "(prefers-color-scheme: light)", color: "#06172f" },
+    { media: "(prefers-color-scheme: dark)", color: "#06172f" },
+  ],
+};
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -96,10 +117,12 @@ export default function RootLayout({
         />
         <GoogleAnalytics />
         <PageViewTracker />
+        <ReferralAttributionTracker />
         <AuthProvider>
           <Header />
           <main className="rw-patriot-shell flex-1">{children}</main>
           <Footer />
+          <MobileAppShell />
         </AuthProvider>
         <Analytics />
         <SpeedInsights />

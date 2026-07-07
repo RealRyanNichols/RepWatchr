@@ -30,11 +30,12 @@ export default function ServiceCheckoutButton({
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState("");
   const requestHref = `${fallbackHref}?request=1#request-package`;
+  const betaAccessHref = `${fallbackHref}#beta-access`;
 
   if (!paymentsEnabled) {
     return (
-      <Link href={requestHref} className={className}>
-        Request this package
+      <Link href={betaAccessHref} className={className}>
+        Request beta access
       </Link>
     );
   }

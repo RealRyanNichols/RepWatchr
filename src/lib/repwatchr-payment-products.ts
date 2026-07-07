@@ -65,5 +65,5 @@ export function getRepWatchrPaymentProducts() {
 }
 
 export function isRepWatchrServiceCheckoutConfigured() {
-  return Boolean(process.env.STRIPE_SECRET_KEY);
+  return process.env.ENABLE_PAYMENTS === "true" && Boolean(process.env.STRIPE_SECRET_KEY);
 }

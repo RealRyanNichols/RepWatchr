@@ -9,6 +9,7 @@ import {
   type ShareTemplateKind,
 } from "@/lib/share-snippets";
 import { trackRepWatchrEvent } from "@/lib/client-analytics";
+import ReferralLinkButton from "@/components/referrals/ReferralLinkButton";
 
 interface ShareButtonsProps {
   title: string;
@@ -143,6 +144,13 @@ export default function ShareButtons({
               Native share
             </button>
           ) : null}
+          <ReferralLinkButton
+            path={path}
+            sourceContext={`share_buttons_${kit.template}`}
+            entityType={kit.template}
+            label="Referral link"
+            copiedLabel="Referral copied"
+          />
         </div>
       </div>
 

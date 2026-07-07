@@ -12,6 +12,8 @@ import {
   type SourceSubmissionResponse,
 } from "@/components/source-submissions/sourceSubmissionClient";
 import { trackRepWatchrEvent } from "@/lib/client-analytics";
+import SharePromptModal from "@/components/referrals/SharePromptModal";
+import { recordReferralConversion } from "@/lib/referral-client";
 
 type TargetType =
   | "official"
@@ -180,6 +182,17 @@ export default function FreePacketFunnel() {
       if (data.emailCaptured) {
         trackRepWatchrEvent("email_captured", { source: "free_packet", target_type: targetType });
       }
+      recordReferralConversion({
+        eventType: "referral_packet_created",
+        analyticsEvent: "referral_packet_created",
+        route: "/free-packet",
+        entityType: `free_packet_${targetType}`,
+        entityId: data.submissionId,
+        metadata: {
+          target_type: targetType,
+          email_captured: Boolean(data.emailCaptured),
+        },
+      });
     } catch {
       setPacket(packetPreview);
       setError("The source queue is temporarily unavailable. Copy or download the packet and try again.");
@@ -372,6 +385,18 @@ export default function FreePacketFunnel() {
             Upgrade to Quick Record Check for one focused source review.
           </Link>
         </div>
+
+        {submissionId ? (
+          <SharePromptModal
+            moment="source_packet_created"
+            path="/free-packet"
+            subject={targetName || `${targetTypeLabel(targetType)} source packet`}
+            topic="the public source packet"
+            kind="packet"
+            entityType={`free_packet_${targetType}`}
+            entityId={submissionId}
+          />
+        ) : null}
       </div>
     </section>
   );

@@ -2,11 +2,14 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import type { ReactNode } from "react";
+import BetaAccessRequestPanel from "@/components/services/BetaAccessRequestPanel";
 import ServiceCheckoutButton from "@/components/services/ServiceCheckoutButton";
 import ServiceRequestPacketBuilder from "@/components/services/ServiceRequestPacketBuilder";
 import RecordVisual from "@/components/shared/RecordVisual";
 import SourceSubmissionForm from "@/components/source-submissions/SourceSubmissionForm";
 import { getRepWatchrService, getRepWatchrServiceLanding, getRepWatchrServices } from "@/data/repwatchr-services";
+import { isFeatureEnabled } from "@/lib/feature-flags";
+import { getExpectedPriceRange } from "@/lib/pricing-beta";
 import { isRepWatchrServiceCheckoutConfigured } from "@/lib/repwatchr-payment-products";
 import { buildOgImageUrl, buildRepWatchrMetadata } from "@/lib/repwatchr-seo";
 
@@ -32,8 +35,11 @@ export async function generateMetadata({
   });
 }
 
-function serviceStructuredData(service: NonNullable<ReturnType<typeof getRepWatchrService>>) {
-  return {
+function serviceStructuredData(
+  service: NonNullable<ReturnType<typeof getRepWatchrService>>,
+  paymentsEnabled: boolean,
+) {
+  const base = {
     "@context": "https://schema.org",
     "@type": "Service",
     name: service.name,
@@ -48,6 +54,12 @@ function serviceStructuredData(service: NonNullable<ReturnType<typeof getRepWatc
     areaServed: service.slug.includes("local") || service.slug.includes("election")
       ? "Texas and East Texas"
       : "United States",
+  };
+
+  if (!paymentsEnabled || service.priceCents <= 0) return base;
+
+  return {
+    ...base,
     offers: {
       "@type": "Offer",
       price: (service.priceCents / 100).toFixed(2),
@@ -69,12 +81,26 @@ export default async function ServiceDetailPage({
   const landing = getRepWatchrServiceLanding(service.slug);
 
   const paymentsEnabled = isRepWatchrServiceCheckoutConfigured();
+  const showExpectedPricing = !paymentsEnabled && (await isFeatureEnabled("ENABLE_BETA_PACKAGES"));
+  const expectedRangeLabel = getExpectedPriceRange(service.slug);
+  const displayPriceLabel = paymentsEnabled
+    ? service.priceLabel
+    : showExpectedPricing && expectedRangeLabel
+      ? `${expectedRangeLabel} expected`
+      : service.priceCents > 0
+        ? "Beta request"
+        : service.priceLabel;
+  const displayBillingLabel = paymentsEnabled
+    ? service.billingLabel
+    : service.priceCents > 0
+      ? "checkout disabled until beta is approved"
+      : service.billingLabel;
 
   return (
     <div className="min-h-screen bg-[#f6f9fc]">
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceStructuredData(service)) }}
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceStructuredData(service, paymentsEnabled)) }}
       />
       <main className="mx-auto max-w-7xl px-4 py-8 sm:px-6 lg:px-8">
         <Link href="/services" className="text-sm font-black text-blue-800 hover:text-red-700">
@@ -123,18 +149,20 @@ export default async function ServiceDetailPage({
                 </a>
               </div>
             </div>
-            <div className="grid content-start gap-3">
+              <div className="grid content-start gap-3">
               <RecordVisual
                 eyebrow={service.eyebrow}
                 title={service.name}
                 variant="service"
-                metric={{ label: "Price", value: service.priceLabel }}
+                metric={{ label: paymentsEnabled ? "Price" : "Access", value: displayPriceLabel }}
                 secondaryMetric={{ label: "Turnaround", value: service.turnaround }}
               />
               <div className="rounded-lg border border-blue-100 bg-blue-50 p-5">
-                <p className="text-xs font-black uppercase tracking-wide text-blue-900">Price</p>
-                <p className="mt-1 text-4xl font-black text-blue-950">{service.priceLabel}</p>
-                <p className="mt-1 text-sm font-black uppercase tracking-wide text-slate-600">{service.billingLabel}</p>
+                <p className="text-xs font-black uppercase tracking-wide text-blue-900">
+                  {paymentsEnabled || service.priceCents === 0 ? "Price" : "Beta access"}
+                </p>
+                <p className="mt-1 text-4xl font-black text-blue-950">{displayPriceLabel}</p>
+                <p className="mt-1 text-sm font-black uppercase tracking-wide text-slate-600">{displayBillingLabel}</p>
               </div>
               <div className="rounded-lg border border-slate-200 bg-slate-50 p-5">
                 <p className="text-xs font-black uppercase tracking-wide text-red-700">Best for</p>
@@ -240,7 +268,14 @@ export default async function ServiceDetailPage({
                 defaultTargetPageUrl={`/services/${service.slug}`}
               />
             ) : (
-              <ServiceRequestPacketBuilder service={service} />
+              <div className="grid gap-5">
+                <BetaAccessRequestPanel
+                  service={service}
+                  showExpectedPricing={showExpectedPricing}
+                  expectedRangeLabel={expectedRangeLabel}
+                />
+                <ServiceRequestPacketBuilder service={service} />
+              </div>
             )}
           </div>
         </section>
