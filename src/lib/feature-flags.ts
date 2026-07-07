@@ -3,6 +3,7 @@ import { getSupabaseAdminClient } from "@/lib/supabase-admin";
 export const CORE_FEATURE_FLAGS = [
   "ENABLE_PAYMENTS",
   "ENABLE_AI_SOURCE_REVIEW",
+  "ENABLE_AI_WRITING_ASSISTANT",
   "ENABLE_EMAIL_SENDING",
   "ENABLE_PUBLIC_API",
   "ENABLE_BETA_PACKAGES",

@@ -14,6 +14,7 @@ import {
 import { trackRepWatchrEvent } from "@/lib/client-analytics";
 import SharePromptModal from "@/components/referrals/SharePromptModal";
 import { recordReferralConversion } from "@/lib/referral-client";
+import SafeAIWriterButton from "@/components/ai-writing/SafeAIWriter";
 
 type TargetType =
   | "official"
@@ -305,6 +306,33 @@ export default function FreePacketFunnel() {
               placeholder="What does the public source appear to show? Stick to names, dates, offices, and what the record says."
             />
           </label>
+
+          <div className="rounded-lg border border-blue-100 bg-blue-50 p-3">
+            <p className="text-xs font-black uppercase tracking-wide text-blue-900">Safe writing helper</p>
+            <p className="mt-1 text-sm font-bold leading-6 text-blue-950">
+              Draft a cautious packet summary. It will not publish or verify the source.
+            </p>
+            <div className="mt-3">
+              <SafeAIWriterButton
+                useCase="source_packet_summary"
+                target={targetName || `${targetTypeLabel(targetType)} source packet`}
+                topic={summary || selectedTargetType.checkRequest}
+                sourceUrl={sourceUrl}
+                existingText={summary}
+                contextPayload={{
+                  target_type: targetType,
+                  target_name: targetName,
+                  jurisdiction,
+                  source_url_present: Boolean(sourceUrl),
+                  check_request: selectedTargetType.checkRequest,
+                }}
+                buttonLabel="Draft safe summary"
+                title="Draft a safe source packet summary"
+                onInsert={setSummary}
+                className="rounded-xl border border-blue-200 bg-white px-4 py-2 text-sm font-black uppercase tracking-wide text-blue-950 hover:border-red-300 hover:text-red-700"
+              />
+            </div>
+          </div>
 
           <label className="flex items-start gap-3 rounded-lg border border-blue-100 bg-blue-50 p-3">
             <input

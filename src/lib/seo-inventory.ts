@@ -144,6 +144,12 @@ const staticSeoPages: StaticSeoPage[] = [
     imageKind: "services",
   },
   {
+    path: "/packages/public-data-api",
+    title: "RepWatchr Public Data API Access",
+    description: "Request future access to source-backed RepWatchr public profiles, sources, jurisdictions, races, and aggregate trend data.",
+    imageKind: "services",
+  },
+  {
     path: "/funding",
     title: "Campaign Funding",
     description: "Follow reported campaign money, donor categories, geography, source paths, and missing finance records.",

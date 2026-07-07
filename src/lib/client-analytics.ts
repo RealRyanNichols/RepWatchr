@@ -104,7 +104,28 @@ export type RepWatchrEventName =
   | "pricing_cta_clicked"
   | "beta_access_requested"
   | "package_interest_submitted"
-  | "beta_invite_sent";
+  | "beta_invite_sent"
+  | "api_access_page_open"
+  | "api_access_requested"
+  | "api_key_created"
+  | "api_key_revoked"
+  | "api_request_received"
+  | "export_started"
+  | "export_completed"
+  | "export_failed"
+  | "ai_writer_opened"
+  | "ai_writer_generated"
+  | "ai_writer_failed"
+  | "ai_writer_safety_flagged"
+  | "ai_writer_text_copied"
+  | "ai_writer_text_inserted"
+  | "ai_writer_disabled_fallback_used"
+  | "quality_dashboard_open"
+  | "smoke_tests_run"
+  | "smoke_test_failed"
+  | "app_error_logged"
+  | "env_validation_failed"
+  | "deploy_checklist_open";
 
 type EventMetadata = Record<string, string | number | boolean | null | undefined>;
 

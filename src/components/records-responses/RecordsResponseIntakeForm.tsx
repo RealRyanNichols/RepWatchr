@@ -14,6 +14,7 @@ import RecordsResponsePreview from "@/components/records-responses/RecordsRespon
 import RecordsResponseUpload from "@/components/records-responses/RecordsResponseUpload";
 import RecordsResponseStatusBadge from "@/components/records-responses/RecordsResponseStatusBadge";
 import SensitiveInfoWarning from "@/components/records-responses/SensitiveInfoWarning";
+import SafeAIWriterButton from "@/components/ai-writing/SafeAIWriter";
 
 type RecordsResponseApiResult = {
   ok?: boolean;
@@ -343,6 +344,37 @@ export default function RecordsResponseIntakeForm({
             className="field min-h-32"
           />
         </label>
+
+        <div className="rounded-2xl border border-blue-100 bg-blue-50 p-4">
+          <p className="text-xs font-black uppercase tracking-wide text-blue-900">Safe writing helper</p>
+          <p className="mt-1 text-sm font-bold leading-6 text-blue-950">
+            Draft a private review summary for this records response. Nothing becomes public until review.
+          </p>
+          <div className="mt-3">
+            <SafeAIWriterButton
+              useCase="records_request_summary"
+              target={agencyName || responseTitle || "records response"}
+              topic={explanation || responseTitle || responseTypeLabel(responseType)}
+              sourceUrl={responseUrl}
+              existingText={explanation}
+              contextPayload={{
+                records_request_id: recordsRequestId,
+                response_title: responseTitle,
+                agency_name: agencyName,
+                jurisdiction,
+                response_type: responseType,
+                response_url_present: Boolean(responseUrl),
+                response_text_excerpt: responseText.slice(0, 1200),
+                sensitivity_flags: sensitivityFlags.join(", "),
+                submit_mode: submitMode,
+              }}
+              buttonLabel="Draft safe review summary"
+              title="Draft a safe records-response summary"
+              onInsert={setExplanation}
+              className="rounded-xl border border-blue-200 bg-white px-4 py-2 text-sm font-black uppercase tracking-wide text-blue-950 hover:border-red-300 hover:text-red-700"
+            />
+          </div>
+        </div>
 
         <SensitiveInfoWarning text={sensitivityText} />
 

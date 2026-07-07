@@ -350,6 +350,8 @@ export default function AdminDashboardClient({
                 <Link href="/admin/money" className="secondary-button">Money Desk</Link>
                 <Link href="/admin/records-responses" className="secondary-button">Response Desk</Link>
                 <Link href="/admin/pricing" className="secondary-button">Pricing</Link>
+                <Link href="/admin/api" className="secondary-button">API</Link>
+                <Link href="/admin/quality" className="secondary-button">Quality</Link>
                 <Link href="/admin/partners" className="secondary-button">Partners</Link>
                 <Link href="/admin/share-campaigns" className="secondary-button">Share Campaigns</Link>
                 <Link href="/admin/content-review" className="secondary-button">Old Review</Link>
@@ -379,6 +381,8 @@ export default function AdminDashboardClient({
             ["Money", "/admin/money"],
             ["Responses", "/admin/records-responses"],
             ["Pricing", "/admin/pricing"],
+            ["API", "/admin/api"],
+            ["Quality", "/admin/quality"],
             ["Partners", "/admin/partners"],
             ["Share campaigns", "/admin/share-campaigns"],
             ["Content", "#content-desk"],
