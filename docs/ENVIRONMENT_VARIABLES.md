@@ -10,6 +10,10 @@ These may be visible to the browser:
 - `NEXT_PUBLIC_SUPABASE_URL`
 - `NEXT_PUBLIC_SUPABASE_ANON_KEY`
 - `NEXT_PUBLIC_GA_MEASUREMENT_ID` if Google Analytics is used
+- `NEXT_PUBLIC_ENABLE_CANDIDATE_CATALOG_V2`
+- `NEXT_PUBLIC_ENABLE_COMMUNITY_VOTING_V2`
+- `NEXT_PUBLIC_ENABLE_REPWATCHR_BRAIN_V2`
+- `NEXT_PUBLIC_ENABLE_MEMBER_DASHBOARD_V2`
 
 Never prefix a server secret with `NEXT_PUBLIC_`.
 
@@ -40,8 +44,13 @@ Default false unless intentionally enabled:
 - `ENABLE_ADVANCED_ANALYTICS`
 - `ENABLE_EXPORTS`
 - `ENABLE_PWA_INSTALL_PROMPT`
+- `NEXT_PUBLIC_ENABLE_CANDIDATE_CATALOG_V2`
+- `NEXT_PUBLIC_ENABLE_COMMUNITY_VOTING_V2`
+- `NEXT_PUBLIC_ENABLE_REPWATCHR_BRAIN_V2`
+- `NEXT_PUBLIC_ENABLE_MEMBER_DASHBOARD_V2`
 
 Disabled features should show clean interest-capture or disabled states, not broken provider errors.
+Integrity-sensitive V2 flags remain false until their documented acceptance checks, schema migration, and approval-gated deployment are complete.
 
 ## Route Smoke
 

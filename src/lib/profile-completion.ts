@@ -16,7 +16,6 @@ import {
   getScoreCard,
 } from "@/lib/data";
 import { getOfficialIdeologyProfile } from "@/lib/ideology";
-import { hasCampaignFinanceSourcePath } from "@/lib/campaign-finance-sources";
 
 export type ProfileCompletionKey =
   | "identity"
@@ -158,41 +157,28 @@ function hasSocialLinks(official: Official) {
 
 function hasRuleReviewedIdeology(officialId: string) {
   const ideologyProfile = getOfficialIdeologyProfile(officialId);
-  return Boolean(
-    ideologyProfile &&
-      (ideologyProfile.reviewedVoteCount > 0 ||
-        ideologyProfile.publicVoteRowsLoaded > 0 ||
-        ideologyProfile.totalScorecardVotes > 0),
-  );
-}
-
-function hasVoteSourcePath(official: Official) {
-  if (official.level === "federal") return true;
-  if (official.state === "TX" || official.jurisdiction.startsWith("Texas ")) return true;
-  return hasPublicSources(official);
+  return Boolean(ideologyProfile && ideologyProfile.reviewedVoteCount > 0);
 }
 
 function hasVoteRecordReview(
-  official: Official,
   scoreCard: ScoreCard | undefined,
   voteRecord: PublicVoteRecord | undefined,
 ) {
-  return Boolean(voteRecord || scoreCard || hasVoteSourcePath(official));
+  return Boolean(scoreCard || (voteRecord?.votes.length && voteRecord.sourceLinks.length));
 }
 
 function hasIssueScorecardReview(
   scoreCard: ScoreCard | undefined,
-  voteRecord: PublicVoteRecord | undefined,
 ) {
-  return Boolean(scoreCard || voteRecord?.votes.length);
+  return Boolean(scoreCard);
 }
 
-function hasCampaignFinanceReview(official: Official, funding: FundingSummary | undefined) {
-  return Boolean(funding || hasCampaignFinanceSourcePath(official));
+function hasCampaignFinanceReview(funding: FundingSummary | undefined) {
+  return Boolean(funding);
 }
 
-function hasPublicRecordReview(official: Official, redFlags: RedFlag[]) {
-  return Boolean(redFlags.length > 0 || hasPublicSources(official));
+function hasPublicRecordReview(redFlags: RedFlag[]) {
+  return redFlags.length > 0;
 }
 
 function priorityFromPercent(completionPercent: number): ProfileCompletionPriority {
@@ -216,11 +202,11 @@ function buildStaticBuildout(
     ["public_sources", hasPublicSources(official)],
     ["photo", Boolean(official.photo)],
     ["contact", hasContact(official)],
-    ["vote_record", hasVoteRecordReview(official, scoreCard, voteRecord)],
+    ["vote_record", hasVoteRecordReview(scoreCard, voteRecord)],
     ["left_right_chart", hasRuleReviewedChart],
-    ["scorecard", hasIssueScorecardReview(scoreCard, voteRecord)],
-    ["funding", hasCampaignFinanceReview(official, funding)],
-    ["public_records", hasPublicRecordReview(official, redFlags)],
+    ["scorecard", hasIssueScorecardReview(scoreCard)],
+    ["funding", hasCampaignFinanceReview(funding)],
+    ["public_records", hasPublicRecordReview(redFlags)],
   ];
 
   const loadedCount = checks.filter(([, loaded]) => loaded).length;
@@ -235,7 +221,7 @@ function buildStaticBuildout(
     hasPublicSources: hasPublicSources(official),
     hasContactWebsite: Boolean(official.contactInfo.website),
     hasScorecard: Boolean(scoreCard),
-    hasVoteRecord: hasVoteRecordReview(official, scoreCard, voteRecord),
+    hasVoteRecord: hasVoteRecordReview(scoreCard, voteRecord),
     hasFundingSummary: Boolean(funding),
     hasRedFlagReview: redFlags.length > 0,
     hasNewsLinks: newsRows > 0,
@@ -272,15 +258,15 @@ export function buildOfficialCompletionSnapshot(official: Official): ProfileComp
       case "contact":
         return hasContact(official);
       case "vote_record":
-        return hasVoteRecordReview(official, scoreCard, voteRecord);
+        return hasVoteRecordReview(scoreCard, voteRecord);
       case "left_right_chart":
         return hasRuleReviewedIdeology(official.id);
       case "scorecard":
-        return hasIssueScorecardReview(scoreCard, voteRecord);
+        return hasIssueScorecardReview(scoreCard);
       case "funding":
-        return hasCampaignFinanceReview(official, funding);
+        return hasCampaignFinanceReview(funding);
       case "public_records":
-        return hasPublicRecordReview(official, redFlags);
+        return hasPublicRecordReview(redFlags);
       case "news":
         return newsRows > 0;
       case "social_links":
@@ -310,10 +296,10 @@ export function buildOfficialCompletionSnapshot(official: Official): ProfileComp
     lastStaticReviewAt: official.lastVerifiedAt ?? null,
     summary: {
       hasPhoto: Boolean(official.photo),
-      hasVoteRecord: hasVoteRecordReview(official, scoreCard, voteRecord),
+      hasVoteRecord: hasVoteRecordReview(scoreCard, voteRecord),
       voteRows: voteRecord?.votes.length ?? 0,
-      hasFunding: hasCampaignFinanceReview(official, funding),
-      hasPublicRecords: hasPublicRecordReview(official, redFlags),
+      hasFunding: hasCampaignFinanceReview(funding),
+      hasPublicRecords: hasPublicRecordReview(redFlags),
       publicRecordRows: redFlags.length,
       hasNews: newsRows > 0,
       newsRows,

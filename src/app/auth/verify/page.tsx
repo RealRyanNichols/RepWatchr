@@ -1,94 +1,31 @@
 "use client";
 
-import { useState } from "react";
-import { useRouter } from "next/navigation";
-import { createClient } from "@/lib/supabase";
-import { useAuth } from "@/components/auth/AuthProvider";
 import Link from "next/link";
-
-const EAST_TEXAS_COUNTIES = [
-  "Anderson County",
-  "Angelina County",
-  "Bowie County",
-  "Camp County",
-  "Cass County",
-  "Cherokee County",
-  "Franklin County",
-  "Gregg County",
-  "Harrison County",
-  "Henderson County",
-  "Hopkins County",
-  "Houston County",
-  "Jasper County",
-  "Lamar County",
-  "Marion County",
-  "Morris County",
-  "Nacogdoches County",
-  "Panola County",
-  "Polk County",
-  "Rains County",
-  "Red River County",
-  "Rusk County",
-  "Sabine County",
-  "San Augustine County",
-  "Shelby County",
-  "Smith County",
-  "Titus County",
-  "Trinity County",
-  "Tyler County",
-  "Upshur County",
-  "Van Zandt County",
-  "Wood County",
-];
-
-// Other Texas counties
-const OTHER_TX_OPTION = "Other Texas County";
-
-/**
- * Validate TX Driver's License format.
- * Texas DL numbers are 8 digits.
- */
-function isValidTXDL(dl: string): boolean {
-  return /^\d{8}$/.test(dl.replace(/\s/g, ""));
-}
-
-/**
- * Hash a string using SHA-256 (Web Crypto API).
- */
-async function hashDL(dl: string): Promise<string> {
-  const normalized = dl.replace(/\s/g, "");
-  const encoder = new TextEncoder();
-  const data = encoder.encode(normalized);
-  const hashBuffer = await crypto.subtle.digest("SHA-256", data);
-  const hashArray = Array.from(new Uint8Array(hashBuffer));
-  return hashArray.map((b) => b.toString(16).padStart(2, "0")).join("");
-}
+import { useAuth } from "@/components/auth/AuthProvider";
 
 export default function VerifyPage() {
-  const { user, profile } = useAuth();
-  const [dlNumber, setDlNumber] = useState("");
-  const [county, setCounty] = useState("");
-  const [otherCounty, setOtherCounty] = useState("");
-  const [error, setError] = useState("");
-  const [loading, setLoading] = useState(false);
-  const [success, setSuccess] = useState(false);
-  const router = useRouter();
-  const supabase = createClient();
+  const { user, profile, loading } = useAuth();
+
+  if (loading) {
+    return (
+      <div className="mx-auto max-w-lg px-4 py-16">
+        <div className="h-64 animate-pulse rounded-2xl bg-slate-100" />
+      </div>
+    );
+  }
 
   if (!user) {
     return (
-      <div className="mx-auto max-w-md px-4 py-16 text-center">
-        <h1 className="text-2xl font-bold text-gray-900">
-          Verify Your Identity
-        </h1>
-        <p className="mt-2 text-gray-600">
-          You need to be logged in to verify your identity.
+      <div className="mx-auto max-w-lg px-4 py-16 text-center">
+        <h1 className="text-2xl font-black text-slate-950">Sign in to verify your profile</h1>
+        <p className="mt-3 text-sm font-semibold leading-6 text-slate-600">
+          RepWatchr ties verification to an account so one person cannot create multiple community votes.
         </p>
         <Link
           href="/auth/login"
-          className="mt-4 inline-block rounded-md bg-blue-600 px-4 py-2 text-sm font-medium text-white hover:bg-blue-700"
+          className="mt-5 inline-flex rounded-lg bg-blue-700 px-4 py-2.5 text-sm font-black text-white hover:bg-blue-800"
         >
-          Log In
+          Log in
         </Link>
       </div>
     );
@@ -96,207 +33,60 @@ export default function VerifyPage() {
 
   if (profile?.verified) {
     return (
-      <div className="mx-auto max-w-md px-4 py-16 text-center">
-        <div className="rounded-lg border border-green-200 bg-green-50 p-8">
-          <h1 className="text-2xl font-bold text-green-800">
-            Already Verified
-          </h1>
-          <p className="mt-2 text-green-700">
-            Your Texas identity has been verified. You can vote on elected
-            officials.
-          </p>
-          <p className="mt-1 text-sm text-green-600">
-            County: {profile.county}
+      <div className="mx-auto max-w-lg px-4 py-16 text-center">
+        <div className="rounded-2xl border border-emerald-200 bg-emerald-50 p-8">
+          <p className="text-xs font-black uppercase tracking-widest text-emerald-700">Verified profile</p>
+          <h1 className="mt-2 text-2xl font-black text-emerald-950">Your community vote is enabled</h1>
+          <p className="mt-3 text-sm font-semibold leading-6 text-emerald-900">
+            Your verified residence area is held by the server and is used only to label community responses by constituency.
           </p>
           <Link
             href="/officials"
-            className="mt-4 inline-block rounded-md bg-blue-600 px-4 py-2 text-sm font-medium text-white hover:bg-blue-700"
+            className="mt-5 inline-flex rounded-lg bg-blue-700 px-4 py-2.5 text-sm font-black text-white hover:bg-blue-800"
           >
-            Browse Officials & Vote
+            Browse officials
           </Link>
         </div>
       </div>
     );
   }
 
-  async function handleSubmit(e: React.FormEvent) {
-    e.preventDefault();
-    setError("");
-
-    if (!isValidTXDL(dlNumber)) {
-      setError(
-        "Invalid Texas Driver's License number. It should be 8 digits."
-      );
-      return;
-    }
-
-    const selectedCounty = county === OTHER_TX_OPTION ? otherCounty : county;
-
-    if (!selectedCounty) {
-      setError("Please select your county.");
-      return;
-    }
-
-    setLoading(true);
-
-    const dlHash = await hashDL(dlNumber);
-
-    const { error: upsertError } = await supabase.from("profiles").upsert(
-      {
-        user_id: user!.id,
-        county: selectedCounty,
-        verified: true,
-        dl_hash: dlHash,
-      },
-      { onConflict: "user_id" }
-    );
-
-    if (upsertError) {
-      if (upsertError.message.includes("duplicate") || upsertError.message.includes("unique")) {
-        setError(
-          "This Driver's License number is already associated with another account. Each person can only have one account."
-        );
-      } else {
-        setError(upsertError.message);
-      }
-      setLoading(false);
-      return;
-    }
-
-    setSuccess(true);
-    setLoading(false);
-    setTimeout(() => router.push("/dashboard"), 2000);
-  }
-
-  if (success) {
-    return (
-      <div className="mx-auto max-w-md px-4 py-16 text-center">
-        <div className="rounded-lg border border-green-200 bg-green-50 p-8">
-          <h1 className="text-2xl font-bold text-green-800">
-            Identity Verified
-          </h1>
-          <p className="mt-2 text-green-700">
-            You are now a verified Texas voter on this platform. You can approve
-            or disapprove elected officials.
-          </p>
-        </div>
-      </div>
-    );
-  }
-
   return (
-    <div className="mx-auto max-w-lg px-4 py-16">
-      <div className="rounded-lg border border-gray-200 bg-white p-8 shadow-sm">
-        <h1 className="text-2xl font-bold text-gray-900">
-          Verify Your Texas Identity
-        </h1>
-        <p className="mt-1 text-sm text-gray-600">
-          To ensure one vote per person and that only Texas residents can
-          participate, we need to verify your identity using your Texas
-          Driver&apos;s License or State ID number.
+    <div className="mx-auto max-w-2xl px-4 py-16">
+      <div className="rounded-2xl border border-amber-200 bg-white p-8 shadow-sm">
+        <p className="text-xs font-black uppercase tracking-widest text-amber-700">Integrity upgrade in progress</p>
+        <h1 className="mt-2 text-3xl font-black text-slate-950">Secure voter-area verification is being rebuilt</h1>
+        <p className="mt-4 text-sm font-semibold leading-6 text-slate-700">
+          RepWatchr has paused new community-vote verification while we replace the old self-certification flow with a server-verified process. We will not ask you to type a driver-license or state-ID number into this page.
         </p>
 
-        <div className="mt-4 rounded-md bg-blue-50 p-3 text-sm text-blue-800">
-          <strong>Privacy:</strong> Your DL number is hashed (encrypted
-          one-way) before storage. We never store or display your actual DL
-          number. It is only used to prevent duplicate accounts.
+        <div className="mt-6 rounded-xl border border-blue-200 bg-blue-50 p-4">
+          <h2 className="text-sm font-black text-blue-950">What the replacement must guarantee</h2>
+          <ul className="mt-2 space-y-2 text-sm font-semibold leading-6 text-blue-900">
+            <li>One verified person gets one response per profile or race.</li>
+            <li>County, district, and state labels come from server-owned verification—not browser input.</li>
+            <li>Identity evidence is minimized, access-controlled, auditable, and never shown publicly.</li>
+            <li>Outside-area responses remain separate from constituent results.</li>
+          </ul>
         </div>
 
-        {error && (
-          <div className="mt-4 rounded-md bg-red-50 p-3 text-sm text-red-700">
-            {error}
-          </div>
-        )}
-
-        <form onSubmit={handleSubmit} className="mt-6 space-y-4">
-          <div>
-            <label
-              htmlFor="dlNumber"
-              className="block text-sm font-medium text-gray-700"
-            >
-              Texas Driver&apos;s License / State ID Number
-            </label>
-            <input
-              id="dlNumber"
-              type="text"
-              required
-              value={dlNumber}
-              onChange={(e) => setDlNumber(e.target.value)}
-              className="mt-1 block w-full rounded-md border border-gray-300 px-3 py-2 text-gray-900 shadow-sm focus:border-blue-500 focus:outline-none focus:ring-1 focus:ring-blue-500"
-              placeholder="12345678"
-              maxLength={8}
-              pattern="\d{8}"
-              inputMode="numeric"
-            />
-            <p className="mt-1 text-xs text-gray-500">
-              8-digit number found on your Texas DL or State ID
-            </p>
-          </div>
-
-          <div>
-            <label
-              htmlFor="county"
-              className="block text-sm font-medium text-gray-700"
-            >
-              County of Residence
-            </label>
-            <select
-              id="county"
-              required
-              value={county}
-              onChange={(e) => setCounty(e.target.value)}
-              className="mt-1 block w-full rounded-md border border-gray-300 px-3 py-2 text-gray-900 shadow-sm focus:border-blue-500 focus:outline-none focus:ring-1 focus:ring-blue-500"
-            >
-              <option value="">Select your county...</option>
-              <optgroup label="East Texas Counties">
-                {EAST_TEXAS_COUNTIES.map((c) => (
-                  <option key={c} value={c}>
-                    {c}
-                  </option>
-                ))}
-              </optgroup>
-              <optgroup label="Other">
-                <option value={OTHER_TX_OPTION}>{OTHER_TX_OPTION}</option>
-              </optgroup>
-            </select>
-          </div>
-
-          {county === OTHER_TX_OPTION && (
-            <div>
-              <label
-                htmlFor="otherCounty"
-                className="block text-sm font-medium text-gray-700"
-              >
-                Enter Your Texas County
-              </label>
-              <input
-                id="otherCounty"
-                type="text"
-                required
-                value={otherCounty}
-                onChange={(e) => setOtherCounty(e.target.value)}
-                className="mt-1 block w-full rounded-md border border-gray-300 px-3 py-2 text-gray-900 shadow-sm focus:border-blue-500 focus:outline-none focus:ring-1 focus:ring-blue-500"
-                placeholder="e.g., Dallas County"
-              />
-            </div>
-          )}
-
-          <div className="rounded-md bg-amber-50 p-3 text-xs text-amber-800">
-            <strong>Important:</strong> Your county determines your
-            &quot;in-district&quot; status when voting on officials. Votes from
-            within an official&apos;s district are displayed separately from
-            out-of-district votes, so campaigns and residents can see how
-            constituents actually feel.
-          </div>
-
-          <button
-            type="submit"
-            disabled={loading}
-            className="w-full rounded-md bg-blue-600 px-4 py-2 text-sm font-medium text-white transition-colors hover:bg-blue-700 disabled:bg-blue-400"
+        <p className="mt-5 text-sm font-semibold leading-6 text-slate-600">
+          You can still use the dashboard, watch profiles, submit primary sources, and report corrections while verification is paused.
+        </p>
+        <div className="mt-5 flex flex-wrap gap-3">
+          <Link
+            href="/dashboard"
+            className="inline-flex rounded-lg bg-blue-700 px-4 py-2.5 text-sm font-black text-white hover:bg-blue-800"
           >
-            {loading ? "Verifying..." : "Verify My Identity"}
-          </button>
-        </form>
+            Open dashboard
+          </Link>
+          <Link
+            href="/submit-source"
+            className="inline-flex rounded-lg border border-slate-300 bg-white px-4 py-2.5 text-sm font-black text-slate-800 hover:bg-slate-50"
+          >
+            Submit a source
+          </Link>
+        </div>
       </div>
     </div>
   );

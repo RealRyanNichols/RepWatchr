@@ -574,11 +574,9 @@ export async function runHourlySocialAutopost({ dryRun = false }: { dryRun?: boo
 
   if (enabled && !editorialApproved && !dryRun) {
     return {
-      ok: false,
+      ok: true,
       ...skippedResult,
       skippedReason: "Editorial approval gate not confirmed",
-      error:
-        "Set SOCIAL_AUTOPOST_EDITORIAL_APPROVED=true only after credentials, source rules, and posting policy are approved.",
     };
   }
 

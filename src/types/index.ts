@@ -9,6 +9,11 @@ export type GovernmentLevel = "federal" | "state" | "county" | "city" | "school-
 export type VoteChoice = "yea" | "nay" | "absent" | "abstain" | "not-applicable";
 export type RedFlagSeverity = "warning" | "critical";
 export type RedFlagCategory = "broken-promise" | "conflict-of-interest" | "ethics" | "funding" | "voting-record" | "other";
+export type SourceReviewStatus =
+  | "needs_source_review"
+  | "source_seeded"
+  | "verified"
+  | "complete";
 
 export interface ContactInfo {
   office?: string;
@@ -56,7 +61,7 @@ export interface Official {
   contactInfo: ContactInfo;
   bio?: string;
   campaignPromises?: string[];
-  reviewStatus?: "needs_source_review" | "source_seeded" | "verified" | "complete";
+  reviewStatus?: SourceReviewStatus;
   state?: string;
   bioguideId?: string;
   sourceLinks?: SourceLink[];
@@ -85,6 +90,9 @@ export interface CategoryScore {
 
 export interface ScoreCard {
   officialId: string;
+  reviewStatus?: SourceReviewStatus;
+  reviewedAt?: string;
+  reviewedBy?: string;
   overall: number;
   letterGrade: string;
   categories: {
@@ -121,6 +129,9 @@ export interface DataSource {
 
 export interface FundingSummary {
   officialId: string;
+  reviewStatus?: SourceReviewStatus;
+  reviewedAt?: string;
+  reviewedBy?: string;
   cycle: string;
   totalRaised: number;
   totalSpent: number;
@@ -209,6 +220,9 @@ export interface BillVote {
 
 export interface Bill {
   id: string;
+  reviewStatus?: SourceReviewStatus;
+  reviewedAt?: string;
+  reviewedBy?: string;
   title: string;
   summary: string;
   session: string;
