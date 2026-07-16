@@ -9,6 +9,7 @@ import {
   getScoreCard,
 } from "@/lib/data";
 import { OfficialProfileHero } from "@/components/officials/OfficialProfileExperience";
+import OfficialAccountabilitySnapshot from "@/components/officials/OfficialAccountabilitySnapshot";
 import OfficialStoryProfile from "@/components/officials/OfficialStoryProfile";
 import ProfileQuickNav from "@/components/officials/ProfileQuickNav";
 import UniversalOfficialDashboard from "@/components/officials/UniversalOfficialDashboard";
@@ -21,6 +22,7 @@ import { breadcrumbJsonLd, jsonLd, profilePageJsonLd } from "@/lib/structured-da
 import { buildOfficialDossier } from "@/lib/official-dossier";
 import { getOfficialVerifiedBrief } from "@/data/official-verified-briefs";
 import { getOfficialPerformanceGrade } from "@/data/official-performance-grades";
+import { getOfficeAccountabilityProfile } from "@/lib/official-accountability";
 
 export const revalidate = 86400;
 export const dynamic = "force-dynamic";
@@ -71,22 +73,38 @@ export default async function OfficialProfilePage({
     );
   }
 
-  const scoreCard = getScoreCard(id);
-  const funding = getFundingSummary(id);
-  const sourceBackedRedFlags = getRedFlags(id).filter((flag) => Boolean(flag.sourceUrl));
+  const scoreCardCandidate = getScoreCard(id);
+  const scoreCard =
+    scoreCardCandidate?.reviewStatus === "verified" || scoreCardCandidate?.reviewStatus === "complete"
+      ? scoreCardCandidate
+      : undefined;
+  const fundingCandidate = getFundingSummary(id);
+  const funding =
+    fundingCandidate?.reviewStatus === "verified" || fundingCandidate?.reviewStatus === "complete"
+      ? fundingCandidate
+      : undefined;
+  const sourceBackedRedFlags = getRedFlags(id).filter(
+    (flag) =>
+      Boolean(flag.sourceUrl) &&
+      (flag.reviewerStatus === "verified" || flag.reviewerStatus === "complete"),
+  );
   const relatedNews = getNewsByOfficialId(id);
   const publicVoteRecord = getPublicVoteRecord(id);
   const congressTrading = getCongressTradingSnapshot(id);
   const profileOverlay = await getPublicProfileOverlay("official", id);
   const verifiedBrief = getOfficialVerifiedBrief(id);
   const performanceGrade = getOfficialPerformanceGrade(id);
+  const officeAccountability = getOfficeAccountabilityProfile(official);
+  const applicablePerformanceGrade = officeAccountability.supportsLegislatorGrade
+    ? performanceGrade
+    : undefined;
   const staticCompletion = buildOfficialCompletionSnapshot(official);
-  const overlayCompletionPercent = profileOverlay.completion?.completionPercent ?? 0;
-  const buildoutPercent = Math.max(overlayCompletionPercent, staticCompletion.completionPercent);
-  const buildoutComplete = Boolean(profileOverlay.completion?.isComplete || staticCompletion.isComplete);
-  const buildoutMissingItems = buildoutComplete
-    ? []
-    : profileOverlay.completion?.missingItems ?? staticCompletion.missingItems;
+  // Overlay completion snapshots predate the current role-aware evidence model.
+  // Until they carry a compatible method version, the current static review is
+  // the only safe publication source for completion language.
+  const buildoutPercent = staticCompletion.completionPercent;
+  const buildoutComplete = staticCompletion.isComplete;
+  const buildoutMissingItems = buildoutComplete ? [] : staticCompletion.missingItems;
   const dossier = buildOfficialDossier({
     official,
     scoreCard,
@@ -137,8 +155,7 @@ export default async function OfficialProfilePage({
         buildoutPercent={buildoutPercent}
         buildoutComplete={buildoutComplete}
         voteRecord={publicVoteRecord}
-        funding={funding}
-        performanceGrade={performanceGrade}
+        performanceGrade={applicablePerformanceGrade}
         heroSummary={
           verifiedBrief?.storyLead ??
           official.bio ??
@@ -148,26 +165,16 @@ export default async function OfficialProfilePage({
     </>
   );
 
-  if (verifiedBrief) {
-    return (
-      <div className="min-h-screen bg-[#f8fbff] text-slate-950">
-        {sharedProfileShell}
-        <ProfileQuickNav storyMode />
-        <OfficialStoryProfile
-          official={official}
-          brief={verifiedBrief}
-          voteRecord={publicVoteRecord}
-          performanceGrade={performanceGrade}
-          sourceCount={dossier.sourceCount}
-        />
-      </div>
-    );
-  }
-
-  return (
-    <div className="min-h-screen bg-[#f4f1e8] text-[#15212b]">
-      {sharedProfileShell}
-      <ProfileQuickNav dashboardMode />
+  const universalDashboard = (
+    <>
+      <OfficialAccountabilitySnapshot
+        official={official}
+        performanceGrade={applicablePerformanceGrade}
+        voteRecord={publicVoteRecord}
+        relatedNews={relatedNews}
+        redFlags={sourceBackedRedFlags}
+        verifiedBrief={verifiedBrief}
+      />
       <UniversalOfficialDashboard
         official={official}
         voteRecord={publicVoteRecord}
@@ -179,7 +186,31 @@ export default async function OfficialProfilePage({
         buildoutPercent={buildoutPercent}
         buildoutComplete={buildoutComplete}
         missingItems={buildoutMissingItems}
+        verifiedBrief={verifiedBrief}
       />
+    </>
+  );
+
+  if (verifiedBrief) {
+    return (
+      <div className="min-h-screen bg-[#f4f1e8] text-[#15212b]">
+        {sharedProfileShell}
+        <ProfileQuickNav dashboardMode />
+        <OfficialStoryProfile
+          official={official}
+          brief={verifiedBrief}
+          sourceCount={dossier.sourceCount}
+        />
+        {universalDashboard}
+      </div>
+    );
+  }
+
+  return (
+    <div className="min-h-screen bg-[#f4f1e8] text-[#15212b]">
+      {sharedProfileShell}
+      <ProfileQuickNav dashboardMode />
+      {universalDashboard}
     </div>
   );
 }

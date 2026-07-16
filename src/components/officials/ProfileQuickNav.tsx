@@ -70,24 +70,25 @@ export default function ProfileQuickNav({
       aria-label="Profile sections"
       className="relative z-30 border-b border-[#cbc4b5] bg-[#f4f1e8]/95 backdrop-blur-sm lg:sticky lg:top-[142px]"
     >
-      <div className="mx-auto flex max-w-7xl items-stretch overflow-x-auto px-4 sm:px-6 lg:px-8 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
-        <span className="mr-5 hidden shrink-0 items-center border-b-2 border-transparent py-3 text-sm font-semibold text-[#615f59] md:flex">
+      <div className="mx-auto grid max-w-7xl grid-cols-3 items-stretch px-2 sm:flex sm:overflow-x-auto sm:px-6 lg:px-8 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
+        <span className="mr-5 hidden shrink-0 items-center border-b-2 border-transparent py-3 text-sm font-semibold text-[#615f59] lg:flex">
           Chapters
         </span>
         {sections.map((section, index) => {
           const active = section.id === activeId;
+          const hiddenOnSmallDashboard = dashboardMode && index > 2;
           return (
             <a
               key={section.id}
               href={`#${section.id}`}
               aria-current={active ? "location" : undefined}
-              className={`-mb-px inline-flex min-h-12 shrink-0 items-center gap-2 border-b-2 px-3 py-3 text-sm font-semibold transition-colors focus-visible:z-10 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#a23a2b] focus-visible:ring-offset-2 focus-visible:ring-offset-[#f4f1e8] sm:px-4 ${
+              className={`-mb-px min-h-10 min-w-0 items-center justify-center gap-1 border-b-2 px-1.5 py-2 text-xs font-semibold transition-colors focus-visible:z-10 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#a23a2b] focus-visible:ring-offset-2 focus-visible:ring-offset-[#f4f1e8] sm:min-h-12 sm:shrink-0 sm:justify-start sm:gap-2 sm:px-4 sm:py-3 sm:text-sm ${hiddenOnSmallDashboard ? "hidden sm:inline-flex" : "inline-flex"} ${
                 active
                   ? "border-[#a23a2b] text-[#111b24]"
                   : "border-transparent text-[#615f59] hover:border-[#a23a2b]/40 hover:text-[#111b24]"
               }`}
             >
-              <span className={`text-xs tabular-nums ${active ? "text-[#a23a2b]" : "text-[#8b867c]"}`}>
+              <span className={`text-[10px] tabular-nums sm:text-xs ${active ? "text-[#a23a2b]" : "text-[#8b867c]"}`}>
                 {String(index + 1).padStart(2, "0")}
               </span>
               <span>{section.label}</span>

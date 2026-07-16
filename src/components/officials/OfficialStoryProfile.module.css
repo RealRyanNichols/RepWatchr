@@ -1,5 +1,6 @@
 .story {
   --paper: #f4f1e8;
+  --paper-light: #fcfaf6;
   --ink: #111b24;
   --navy: #163b5c;
   --rust: #a23a2b;
@@ -8,14 +9,444 @@
   color: var(--ink);
 }
 
-.display {
-  font-family: Georgia, "Times New Roman", serif;
+.shell {
+  width: min(100%, 90rem);
+  margin-inline: auto;
+  padding-inline: 1rem;
+}
+
+.recordColumn {
+  max-width: 67.5rem;
+}
+
+.opening {
+  padding-block: clamp(4rem, 8vw, 7rem);
+  background: var(--paper);
+}
+
+.chapterHeading {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.chapterNumber,
+.chapterHeading h2,
+.shortAnswer strong,
+.factRail dt,
+.recordIntro h2,
+.recordGroupHeader h3,
+.recordMarker strong,
+.recordRow h4,
+.mediaGrid h2 {
+  font-family: "Fraunces Variable", Fraunces, Georgia, "Times New Roman", serif;
+  font-variation-settings: "SOFT" 0, "WONK" 1;
+}
+
+.chapterNumber {
+  margin: 0;
+  color: var(--rust);
+  font-size: clamp(4rem, 8vw, 6rem);
+  font-weight: 700;
+  letter-spacing: -0.06em;
+  line-height: 0.9;
+}
+
+.eyebrow,
+.recordIntro > p,
+.mediaKicker {
+  margin: 0;
+  color: var(--rust);
+  font-size: 0.875rem;
+  font-weight: 750;
+}
+
+.chapterHeading h2 {
+  max-width: 18ch;
+  margin: 0.8rem 0 0;
+  font-size: clamp(2.65rem, 5.2vw, 4.1rem);
+  font-weight: 700;
+  letter-spacing: -0.04em;
+  line-height: 1.04;
+}
+
+.chapterDeck {
+  max-width: 49rem;
+  margin: 1.2rem 0 0;
+  color: #555d60;
+  font-size: 1.0625rem;
+  line-height: 1.75;
+}
+
+.shortAnswer {
+  margin: clamp(2.5rem, 6vw, 5rem) 0 0;
+  padding: clamp(1.75rem, 4vw, 3.25rem);
+  border-left: 0.35rem solid var(--rust);
+  background: #eadfd5;
+}
+
+.shortAnswer p {
+  margin: 0;
+  color: var(--rust);
+  font-size: 0.8125rem;
+  font-weight: 750;
+}
+
+.shortAnswer strong {
+  display: block;
+  margin-top: 0.9rem;
+  font-size: clamp(1.45rem, 3vw, 2.15rem);
+  font-weight: 520;
+  line-height: 1.35;
+}
+
+.factRail {
+  display: grid;
+  margin: 3rem 0 0;
+  border-block: 1px solid var(--rule);
+}
+
+.factRail > div {
+  padding-block: 1.4rem;
+  border-bottom: 1px solid var(--rule);
+}
+
+.factRail > div:last-child {
+  border-bottom: 0;
+}
+
+.factRail dt {
+  font-size: 1.65rem;
+  font-weight: 700;
   letter-spacing: -0.025em;
 }
 
-@media (max-width: 639px) {
-  .display {
-    letter-spacing: -0.018em;
+.factRail dd {
+  margin: 0.35rem 0 0;
+  color: #5d6264;
+  font-size: 0.75rem;
+  line-height: 1.55;
+}
+
+.factRail dd:nth-of-type(1) {
+  color: var(--ink);
+  font-size: 0.875rem;
+  font-weight: 750;
+}
+
+.factRail a,
+.evidenceLinks a,
+.mediaGrid a {
+  color: var(--navy);
+  font-weight: 700;
+  text-decoration: underline;
+  text-decoration-color: color-mix(in srgb, var(--navy) 35%, transparent);
+  text-underline-offset: 0.25rem;
+}
+
+.factRail a:hover,
+.evidenceLinks a:hover {
+  color: var(--rust);
+  text-decoration-color: currentColor;
+}
+
+.documentedRecord {
+  padding-block: clamp(4rem, 8vw, 7rem);
+  background: var(--paper-light);
+}
+
+.recordIntro {
+  max-width: 50rem;
+}
+
+.recordIntro h2 {
+  margin: 0.8rem 0 0;
+  font-size: clamp(2.4rem, 4.5vw, 3.65rem);
+  letter-spacing: -0.035em;
+  line-height: 1.05;
+}
+
+.recordIntro span {
+  display: block;
+  max-width: 46rem;
+  margin-top: 1.2rem;
+  color: #5d6264;
+  font-size: 1rem;
+  line-height: 1.7;
+}
+
+.recordGroup {
+  margin-top: clamp(3.5rem, 7vw, 6rem);
+}
+
+.recordGroupHeader {
+  display: grid;
+  gap: 0.8rem;
+  padding-bottom: 1.25rem;
+  border-bottom: 0.15rem solid var(--ink);
+}
+
+.recordGroupHeader h3 {
+  margin: 0;
+  font-size: clamp(2rem, 3.5vw, 2.75rem);
+  letter-spacing: -0.03em;
+  line-height: 1.05;
+}
+
+.strength .recordGroupHeader h3 {
+  color: var(--navy);
+}
+
+.concern .recordGroupHeader h3 {
+  color: var(--rust);
+}
+
+.recordGroupHeader p {
+  margin: 0;
+  color: #666b69;
+  font-size: 0.8125rem;
+  line-height: 1.6;
+}
+
+.recordGroup ol,
+.evidenceLinks {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.recordRow {
+  display: grid;
+  gap: 1.5rem;
+  padding-block: 2rem;
+  border-bottom: 1px solid var(--rule);
+}
+
+.recordMarker span,
+.recordMarker strong {
+  display: block;
+}
+
+.recordMarker span {
+  color: #73736d;
+  font-size: 0.6875rem;
+  font-weight: 750;
+}
+
+.recordMarker strong {
+  margin-top: 0.35rem;
+  color: var(--ink);
+  font-size: clamp(1.7rem, 3.5vw, 2.55rem);
+  font-weight: 700;
+  letter-spacing: -0.04em;
+  line-height: 1;
+}
+
+.recordRow article {
+  min-width: 0;
+}
+
+.recordRow h4 {
+  margin: 0;
+  font-size: clamp(1.45rem, 2.5vw, 2rem);
+  letter-spacing: -0.02em;
+  line-height: 1.2;
+}
+
+.recordSummary {
+  margin: 0.65rem 0 0;
+  color: var(--navy);
+  font-size: 0.95rem;
+  font-weight: 750;
+  line-height: 1.6;
+}
+
+.recordDetail {
+  max-width: 48rem;
+  margin: 0.8rem 0 0;
+  color: #4f5658;
+  font-size: 0.9rem;
+  line-height: 1.75;
+}
+
+.contextNote,
+.cautionNote {
+  max-width: 47rem;
+  margin: 1rem 0 0;
+  padding-left: 0.9rem;
+  border-left: 0.2rem solid;
+  color: #515758;
+  font-size: 0.78rem;
+  line-height: 1.65;
+}
+
+.contextNote {
+  border-color: var(--navy);
+}
+
+.cautionNote {
+  border-color: var(--rust);
+}
+
+.contextNote strong {
+  color: var(--navy);
+}
+
+.cautionNote strong {
+  color: var(--rust);
+}
+
+.evidenceLinks {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.55rem 1.2rem;
+  margin-top: 1rem;
+}
+
+.evidenceLinks a {
+  font-size: 0.75rem;
+}
+
+.reviewNote {
+  margin: 3rem 0 0;
+  padding-top: 1rem;
+  border-top: 1px solid var(--rule);
+  color: #6a6d69;
+  font-size: 0.75rem;
+  font-weight: 620;
+  line-height: 1.65;
+}
+
+.mediaSection {
+  padding-block: clamp(4rem, 8vw, 6.5rem);
+  color: #fff;
+  background: var(--ink);
+}
+
+.mediaGrid {
+  display: grid;
+  gap: 2.5rem;
+  align-items: center;
+}
+
+.mediaKicker {
+  color: #e0a49a;
+}
+
+.mediaGrid h2 {
+  max-width: 14ch;
+  margin: 0.8rem 0 0;
+  font-size: clamp(2.2rem, 4vw, 3.5rem);
+  letter-spacing: -0.035em;
+  line-height: 1.05;
+}
+
+.mediaGrid p:not(.mediaKicker) {
+  max-width: 35rem;
+  margin: 1rem 0 0;
+  color: #cbd5e1;
+  line-height: 1.7;
+}
+
+.mediaGrid a {
+  display: inline-flex;
+  margin-top: 1.2rem;
+  color: #f2dc99;
+}
+
+.videoFrame {
+  overflow: hidden;
+  aspect-ratio: 16 / 9;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  background: #000;
+}
+
+.videoFrame iframe {
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+@media (min-width: 40rem) {
+  .shell {
+    padding-inline: 1.5rem;
+  }
+
+  .factRail {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .factRail > div {
+    padding-inline: 1.25rem;
+  }
+
+  .factRail > div:nth-child(odd) {
+    padding-left: 0;
+    border-right: 1px solid var(--rule);
+  }
+
+  .factRail > div:nth-last-child(-n + 2) {
+    border-bottom: 0;
+  }
+}
+
+@media (min-width: 64rem) {
+  .shell {
+    padding-inline: clamp(2rem, 5.55vw, 5rem);
+  }
+
+  .chapterHeading {
+    grid-template-columns: 8.5rem minmax(0, 1fr);
+    gap: 2.75rem;
+  }
+
+  .chapterNumber {
+    font-size: 6rem;
+  }
+
+  .factRail {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+
+  .factRail > div,
+  .factRail > div:nth-child(odd) {
+    padding: 1.5rem;
+    border-right: 1px solid var(--rule);
+    border-bottom: 0;
+  }
+
+  .factRail > div:first-child {
+    padding-left: 0;
+  }
+
+  .factRail > div:last-child {
+    padding-right: 0;
+    border-right: 0;
+  }
+
+  .recordGroupHeader {
+    grid-template-columns: minmax(0, 1fr) minmax(18rem, 0.7fr);
+    align-items: end;
+    gap: 2rem;
+  }
+
+  .recordGroupHeader p {
+    text-align: right;
+  }
+
+  .recordRow {
+    grid-template-columns: 14.375rem minmax(0, 1fr);
+    gap: 2.5rem;
+    padding-block: 2.5rem;
+  }
+
+  .recordMarker {
+    padding-right: 1.5rem;
+    border-right: 1px solid var(--rule);
+  }
+
+  .mediaGrid {
+    grid-template-columns: minmax(0, 0.72fr) minmax(30rem, 1.28fr);
+    gap: 4rem;
   }
 }
 
@@ -24,8 +455,6 @@
   .story *::before,
   .story *::after {
     scroll-behavior: auto !important;
-    transition-duration: 0.01ms !important;
-    animation-duration: 0.01ms !important;
-    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
   }
 }

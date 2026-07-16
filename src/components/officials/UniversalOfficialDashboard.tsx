@@ -3,6 +3,10 @@ import CommentSection from "@/components/comments/CommentSection";
 import ProfileScorecardVote from "@/components/scorecards/ProfileScorecardVote";
 import ShareButtons from "@/components/shared/ShareButtons";
 import { formatCurrency, formatLevelName } from "@/lib/formatting";
+import {
+  getOfficeAccountabilityProfile,
+  type OfficeAccountabilityProfile,
+} from "@/lib/official-accountability";
 import type { PublicProfileOverlay } from "@/lib/profile-overlays";
 import type {
   FundingSummary,
@@ -11,6 +15,7 @@ import type {
   PublicVoteRecord,
   RedFlag,
 } from "@/types";
+import type { OfficialVerifiedBriefData } from "@/data/official-verified-briefs";
 
 type UniversalOfficialDashboardProps = {
   official: Official;
@@ -23,6 +28,7 @@ type UniversalOfficialDashboardProps = {
   buildoutPercent: number;
   buildoutComplete: boolean;
   missingItems: readonly string[];
+  verifiedBrief?: Pick<OfficialVerifiedBriefData, "officialId" | "strengths" | "concerns">;
 };
 
 type DashboardSource = {
@@ -50,7 +56,7 @@ const socialLabels: Record<string, string> = {
   tiktok: "TikTok",
 };
 
-const criticalOverlayCategories = new Set(["controversy", "lawsuit", "ethics", "scandal"]);
+const publicRedFlagStatuses = new Set(["verified", "complete"]);
 
 export default function UniversalOfficialDashboard({
   official,
@@ -63,10 +69,12 @@ export default function UniversalOfficialDashboard({
   buildoutPercent,
   buildoutComplete,
   missingItems,
+  verifiedBrief,
 }: UniversalOfficialDashboardProps) {
   const socialLinks = buildSocialLinks(official, overlay);
+  const officeAccountability = getOfficeAccountabilityProfile(official);
   const sources = buildSources({ official, voteRecord, funding, relatedNews, redFlags, overlay });
-  const coverage = buildCoverage(official.id, relatedNews, redFlags, overlay);
+  const coverage = buildCoverage(official.id, relatedNews, redFlags, verifiedBrief);
   const refreshedAt = voteRecord?.lastUpdated ?? overlay.completion?.lastCheckedAt ?? official.lastVerifiedAt;
   const voteTotal = voteRecord?.summary.totalVotesLoaded ?? 0;
 
@@ -81,9 +89,16 @@ export default function UniversalOfficialDashboard({
             detail={official.district || official.state || "District source pending"}
           />
           <LedgerFact
-            label="Votes indexed"
-            value={voteRecord ? voteTotal.toLocaleString() : "Pending"}
-            detail={voteRecord ? `Official roll calls through ${formatDashboardDate(voteRecord.lastUpdated)}` : "No roll-call snapshot loaded"}
+            label={officeAccountability.decisionLabel}
+            value={
+              voteRecord
+                ? voteTotal.toLocaleString()
+                : officeAccountability.family === "legislative_roll_call" ||
+                    officeAccountability.family === "deliberative_board"
+                  ? "Pending"
+                  : "Role-specific"
+            }
+            detail={voteRecord ? `Official record through ${formatDashboardDate(voteRecord.lastUpdated)}` : officeAccountability.pendingHeading}
           />
           <LedgerFact
             label="Public receipts"
@@ -95,12 +110,16 @@ export default function UniversalOfficialDashboard({
         <section id="record" className="scroll-mt-28 border-b border-[#c9c2b4] py-12 sm:py-16 lg:scroll-mt-52">
           <SectionHeading
             number="01"
-            title="What the voting record shows"
-            description="This chart counts recorded vote positions. It does not decide whether a yea or nay was good, bad, conservative, or liberal."
+            title={voteRecord ? "What the recorded decisions show" : officeAccountability.pendingHeading}
+            description={
+              voteRecord
+                ? "This chart counts recorded positions. It does not decide whether a yea or nay was good, bad, conservative, or liberal."
+                : officeAccountability.pendingExplanation
+            }
           />
           <div className="mt-8 grid gap-10 lg:grid-cols-[minmax(0,0.82fr)_minmax(28rem,1.18fr)] lg:gap-14">
-            <VoteActivityChart record={voteRecord} />
-            <LatestVoteRows record={voteRecord} />
+            <VoteActivityChart record={voteRecord} officeAccountability={officeAccountability} />
+            <LatestVoteRows record={voteRecord} officeAccountability={officeAccountability} />
           </div>
         </section>
 
@@ -108,8 +127,8 @@ export default function UniversalOfficialDashboard({
           <div className="grid gap-8 lg:grid-cols-[minmax(15rem,0.6fr)_minmax(0,1.4fr)] lg:gap-14">
             <SectionHeading
               number="02"
-              title="What verified people think"
-              description="Community sentiment is opinion, not the performance grade. Sample size and voter geography stay visible so a small or outside group cannot masquerade as the district."
+              title="Verified public sentiment"
+              description="Results publish only after identity, geography, duplicate-account, anomaly-review, and minimum-sample checks. Community opinion never changes the performance grade."
             />
             <div className="border-l-4 border-[#204f77] bg-white p-5 sm:p-7 [&>div]:!rounded-none [&>div]:!border-0 [&>div]:!bg-transparent [&>div]:!p-0 [&>div]:!shadow-none">
               <ProfileScorecardVote
@@ -334,13 +353,19 @@ function SectionHeading({ number, title, description }: { number: string; title:
   );
 }
 
-function VoteActivityChart({ record }: { record?: PublicVoteRecord }) {
+function VoteActivityChart({
+  record,
+  officeAccountability,
+}: {
+  record?: PublicVoteRecord;
+  officeAccountability: OfficeAccountabilityProfile;
+}) {
   if (!record || record.summary.totalVotesLoaded === 0) {
     return (
       <div className="border-l-4 border-[#bd8a2f] bg-[#eee7d7] p-6">
-        <p className="font-serif text-2xl font-bold">Roll-call data pending</p>
+        <p className="font-serif text-2xl font-bold">{officeAccountability.pendingHeading}</p>
         <p className="mt-3 text-sm font-semibold leading-6 text-[#5d5951]">
-          No public vote snapshot is attached. Missing rows are not counted as absences or converted into a score.
+          {officeAccountability.pendingExplanation}
         </p>
       </div>
     );
@@ -400,14 +425,24 @@ function VoteActivityChart({ record }: { record?: PublicVoteRecord }) {
   );
 }
 
-function LatestVoteRows({ record }: { record?: PublicVoteRecord }) {
+function LatestVoteRows({
+  record,
+  officeAccountability,
+}: {
+  record?: PublicVoteRecord;
+  officeAccountability: OfficeAccountabilityProfile;
+}) {
   return (
     <div>
       <div className="flex items-end justify-between border-b-2 border-[#15212b] pb-4">
-        <h3 className="font-serif text-2xl font-bold">Latest recorded decisions</h3>
-        <Link href="/votes" className="text-sm font-bold text-[#204f77] underline underline-offset-4 hover:text-[#a23a2b]">
-          Browse votes →
-        </Link>
+        <h3 className="font-serif text-2xl font-bold">
+          {record ? "Latest recorded decisions" : `How ${officeAccountability.decisionLabelLower} will appear`}
+        </h3>
+        {record ? (
+          <Link href="/votes" className="text-sm font-bold text-[#204f77] underline underline-offset-4 hover:text-[#a23a2b]">
+            Browse votes →
+          </Link>
+        ) : null}
       </div>
       {record?.votes.length ? (
         <ol>
@@ -426,7 +461,8 @@ function LatestVoteRows({ record }: { record?: PublicVoteRecord }) {
         </ol>
       ) : (
         <p className="border-b border-[#d7d0c4] py-6 text-sm font-semibold leading-6 text-[#6f6a60]">
-          Latest decisions will appear here after official roll-call rows are loaded.
+          New entries will appear only after a role-compatible source is loaded and reviewed. A blank ledger is not a
+          clean-record finding and does not lower the grade.
         </p>
       )}
     </div>
@@ -478,13 +514,50 @@ function buildCoverage(
   officialId: string,
   articles: NewsArticle[],
   redFlags: RedFlag[],
-  overlay: PublicProfileOverlay,
+  verifiedBrief?: Pick<OfficialVerifiedBriefData, "officialId" | "strengths" | "concerns">,
 ) {
   const positive: CoverageItem[] = [];
   const critical: CoverageItem[] = [];
   const neutral: NewsArticle[] = [];
 
+  if (verifiedBrief?.officialId === officialId) {
+    for (const item of verifiedBrief.strengths) {
+      const source = item.sources[0];
+      if (!source?.url) continue;
+      positive.push({
+        id: `brief-strength-${item.id}`,
+        title: item.title,
+        summary: item.summary,
+        sourceUrl: source.url,
+        sourceName: source.publisher,
+        date: source.publishedAt,
+        kind: "review item",
+      });
+    }
+    for (const item of verifiedBrief.concerns) {
+      const source = item.sources[0];
+      if (!source?.url) continue;
+      critical.push({
+        id: `brief-concern-${item.id}`,
+        title: item.title,
+        summary: item.summary,
+        sourceUrl: source.url,
+        sourceName: source.publisher,
+        date: source.publishedAt,
+        kind: "review item",
+      });
+    }
+  }
+
   for (const article of articles) {
+    const sourceUrl = article.sourceUrl ?? article.sourceLinks?.[0]?.url;
+    const publishable =
+      article.editorialStatus === "approved" &&
+      article.sourceStatus === "source_linked" &&
+      Boolean(sourceUrl) &&
+      hasSpecificSourceUrl(sourceUrl);
+    if (!publishable) continue;
+
     const classification = article.officialCoverage?.[officialId];
     if (classification?.tone === "positive") {
       positive.push(articleToCoverage(article));
@@ -495,20 +568,15 @@ function buildCoverage(
     }
   }
 
-  for (const item of overlay.enrichmentItems) {
-    if (!criticalOverlayCategories.has(item.category)) continue;
-    critical.push({
-      id: `overlay-${item.id}`,
-      title: item.title,
-      summary: item.summary,
-      sourceUrl: item.sourceUrl,
-      sourceName: item.sourceName,
-      date: item.eventDate,
-      kind: "review item",
-    });
-  }
-
   for (const flag of redFlags) {
+    if (
+      !publicRedFlagStatuses.has(flag.reviewerStatus ?? "") ||
+      !flag.whyItMatters ||
+      !flag.date ||
+      !hasSpecificSourceUrl(flag.sourceUrl)
+    ) {
+      continue;
+    }
     critical.push({
       id: `flag-${flag.id}`,
       title: flag.title,
@@ -532,11 +600,21 @@ function articleToCoverage(article: NewsArticle): CoverageItem {
     id: `article-${article.id}`,
     title: article.title,
     summary: article.summary,
-    sourceUrl: article.sourceUrl ?? `/news/${article.id}`,
+    sourceUrl: article.sourceUrl ?? article.sourceLinks?.[0]?.url ?? `/news/${article.id}`,
     sourceName: article.sourceName ?? "RepWatchr",
     date: article.publishedAt,
     kind: "article",
   };
+}
+
+function hasSpecificSourceUrl(value?: string | null) {
+  if (!value) return false;
+  try {
+    const url = new URL(value);
+    return url.pathname.replace(/\/+$/, "").length > 0 || url.search.length > 1 || url.hash.length > 1;
+  } catch {
+    return false;
+  }
 }
 
 function uniqueCoverageItems(items: CoverageItem[]) {
@@ -577,11 +655,18 @@ function buildSources({
   voteRecord?.sourceLinks.forEach((source) => add({ ...source, kind: "Voting record" }));
   funding?.sources.forEach((source) => add({ title: source.name, url: source.url, kind: "Campaign finance" }));
   relatedNews.forEach((article) => {
+    if (article.editorialStatus !== "approved" || article.sourceStatus !== "source_linked") return;
     if (article.sourceUrl) add({ title: article.sourceName ?? article.title, url: article.sourceUrl, kind: "Reporting" });
     article.sourceLinks?.forEach((source) => add({ ...source, kind: "Reporting" }));
   });
-  overlay.enrichmentItems.forEach((item) => add({ title: item.title, url: item.sourceUrl, kind: "Public record" }));
-  redFlags.forEach((flag) => add({ title: flag.title, url: flag.sourceUrl, kind: "Review file" }));
+  overlay.enrichmentItems.forEach((item) => {
+    if (item.status !== "approved" || !hasSpecificSourceUrl(item.sourceUrl)) return;
+    add({ title: item.title, url: item.sourceUrl, kind: "Public record" });
+  });
+  redFlags.forEach((flag) => {
+    if (!publicRedFlagStatuses.has(flag.reviewerStatus ?? "") || !hasSpecificSourceUrl(flag.sourceUrl)) return;
+    add({ title: flag.title, url: flag.sourceUrl, kind: "Review file" });
+  });
 
   return entries;
 }

@@ -1,0 +1,592 @@
+.snapshot {
+  --paper: #f4f1e8;
+  --paper-light: #fbfaf6;
+  --ink: #101820;
+  --muted: #5f625f;
+  --rule: #c9c2b4;
+  --rust: #a23a2b;
+  --navy: #204f77;
+  --green: #3f715a;
+  background: var(--paper);
+  border-block: 1px solid var(--rule);
+  color: var(--ink);
+  container-type: inline-size;
+  scroll-margin-top: 7rem;
+}
+
+.header,
+.scoreBand,
+.signalBand,
+.coverageHeader,
+.coverageBand,
+.footer {
+  margin-inline: auto;
+  max-width: 80rem;
+  padding-inline: clamp(1rem, 3vw, 2rem);
+}
+
+.header {
+  display: grid;
+  gap: 1.5rem;
+  padding-block: clamp(2.5rem, 6vw, 5rem) clamp(2rem, 4vw, 3.5rem);
+}
+
+.kicker,
+.sectionLabel {
+  color: var(--rust);
+  font-size: 0.875rem;
+  font-weight: 750;
+  letter-spacing: 0;
+  margin: 0;
+}
+
+.title {
+  font-family: "Fraunces Variable", Fraunces, Georgia, "Times New Roman", serif;
+  font-variation-settings: "SOFT" 0, "WONK" 1;
+  font-size: clamp(2.25rem, 5.5vw, 4.75rem);
+  font-weight: 700;
+  letter-spacing: -0.045em;
+  line-height: 0.98;
+  margin: 0.75rem 0 0;
+  max-width: 14ch;
+}
+
+.intro {
+  align-self: end;
+  color: var(--muted);
+  font-size: clamp(1rem, 1.5vw, 1.125rem);
+  font-weight: 550;
+  line-height: 1.75;
+  margin: 0;
+  max-width: 39rem;
+}
+
+.scoreBand,
+.signalBand {
+  border-top: 1px solid var(--rule);
+  display: grid;
+  padding-block: 0;
+}
+
+.gradeColumn,
+.evidenceColumn,
+.signalColumn {
+  min-width: 0;
+  padding-block: clamp(2rem, 5vw, 3.5rem);
+}
+
+.gradeLockup {
+  align-items: flex-end;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem 1.5rem;
+  margin-top: 1.25rem;
+}
+
+.gradeValue {
+  font-family: "Fraunces Variable", Fraunces, Georgia, "Times New Roman", serif;
+  font-variation-settings: "SOFT" 0, "WONK" 1;
+  font-size: clamp(3.25rem, 8vw, 6.5rem);
+  font-weight: 700;
+  letter-spacing: -0.065em;
+  line-height: 0.82;
+  margin: 0;
+}
+
+.gradeState,
+.gradeScale,
+.explanation,
+.quietNote,
+.provenance,
+.coverageNote,
+.footer p {
+  margin: 0;
+}
+
+.gradeState {
+  color: var(--ink);
+  font-size: 1rem;
+  font-weight: 800;
+}
+
+.gradeScale {
+  color: var(--muted);
+  font-size: 0.8125rem;
+  font-weight: 650;
+  margin-top: 0.3rem;
+}
+
+.explanation {
+  color: var(--muted);
+  font-size: 0.9375rem;
+  font-weight: 540;
+  line-height: 1.7;
+  margin-top: 1.35rem;
+  max-width: 42rem;
+}
+
+.textLink,
+.inlineLink {
+  color: var(--navy);
+  font-size: 0.875rem;
+  font-weight: 750;
+  text-decoration-color: color-mix(in srgb, var(--navy) 40%, transparent);
+  text-decoration-line: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.28rem;
+}
+
+.textLink {
+  display: inline-flex;
+  gap: 0.35rem;
+  margin-top: 1.25rem;
+}
+
+.textLink:hover,
+.inlineLink:hover {
+  color: var(--rust);
+  text-decoration-color: currentColor;
+}
+
+.textLink:focus-visible,
+.inlineLink:focus-visible,
+.coverageList a:focus-visible {
+  outline: 2px solid var(--rust);
+  outline-offset: 4px;
+}
+
+.sectionHeadingRow {
+  align-items: end;
+  display: flex;
+  gap: 1rem;
+  justify-content: space-between;
+}
+
+.sectionTitle {
+  font-family: "Fraunces Variable", Fraunces, Georgia, "Times New Roman", serif;
+  font-variation-settings: "SOFT" 0, "WONK" 1;
+  font-size: clamp(1.4rem, 2.5vw, 2rem);
+  letter-spacing: -0.025em;
+  line-height: 1.1;
+  margin: 0.55rem 0 0;
+}
+
+.quietNote,
+.provenance {
+  color: #777166;
+  font-size: 0.75rem;
+  font-weight: 650;
+  line-height: 1.55;
+}
+
+.quietNote {
+  max-width: 11rem;
+  text-align: right;
+}
+
+.evidenceLedger {
+  border-bottom: 1px solid var(--rule);
+  margin: 1.5rem 0 0;
+}
+
+.evidenceRow {
+  align-items: center;
+  border-top: 1px solid var(--rule);
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: minmax(0, 1fr) minmax(8.5rem, 0.55fr);
+  padding-block: 1rem;
+}
+
+.evidenceRow dt,
+.evidenceRow dd {
+  margin: 0;
+}
+
+.measureLabel,
+.measureDetail,
+.measureValue,
+.measureTrack {
+  display: block;
+}
+
+.measureLabel,
+.measureValue {
+  font-size: 0.875rem;
+  font-weight: 800;
+}
+
+.measureDetail {
+  color: var(--muted);
+  font-size: 0.75rem;
+  line-height: 1.5;
+  margin-top: 0.25rem;
+  max-width: 39rem;
+}
+
+.measureValue {
+  text-align: right;
+}
+
+.measureTrack {
+  background: #dcd6ca;
+  height: 0.35rem;
+  margin-top: 0.55rem;
+  overflow: hidden;
+  width: 100%;
+}
+
+.measureFill {
+  background: var(--navy);
+  display: block;
+  height: 100%;
+}
+
+.bigNumber {
+  font-family: "Fraunces Variable", Fraunces, Georgia, "Times New Roman", serif;
+  font-variation-settings: "SOFT" 0, "WONK" 1;
+  font-size: clamp(2.25rem, 5vw, 4.25rem);
+  font-weight: 700;
+  letter-spacing: -0.06em;
+  line-height: 0.85;
+  margin: 0;
+  text-align: right;
+}
+
+.miniLedger,
+.sentimentLegend {
+  display: grid;
+  margin: 1.5rem 0 0;
+}
+
+.miniLedger {
+  border-block: 1px solid var(--rule);
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.miniLedger div {
+  align-items: baseline;
+  border-bottom: 1px solid #d8d1c5;
+  display: flex;
+  gap: 1rem;
+  justify-content: space-between;
+  min-width: 0;
+  padding: 0.8rem 0;
+}
+
+.miniLedger div:nth-last-child(-n + 2) {
+  border-bottom: 0;
+}
+
+.miniLedger div:nth-child(odd) {
+  padding-right: 1rem;
+}
+
+.miniLedger div:nth-child(even) {
+  border-left: 1px solid #d8d1c5;
+  padding-left: 1rem;
+}
+
+.miniLedger dt {
+  color: var(--muted);
+  font-size: 0.75rem;
+  font-weight: 650;
+}
+
+.miniLedger dd {
+  font-size: 0.875rem;
+  font-variant-numeric: tabular-nums;
+  font-weight: 850;
+  margin: 0;
+}
+
+.provenance {
+  border-top: 1px solid var(--rule);
+  margin-top: 1.5rem;
+  padding-top: 0.9rem;
+}
+
+.sentimentFigure {
+  margin: 1.5rem 0 0;
+}
+
+.sentimentTrack {
+  background: #dcd6ca;
+  display: flex;
+  height: 0.85rem;
+  overflow: hidden;
+}
+
+.sentimentTrack span {
+  display: block;
+  height: 100%;
+}
+
+.sentimentApprove {
+  background: var(--green);
+}
+
+.sentimentMixed {
+  background: #9a9386;
+}
+
+.sentimentDisapprove {
+  background: var(--rust);
+}
+
+.sentimentLegend {
+  border-bottom: 1px solid var(--rule);
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.sentimentLegend div {
+  border-top: 1px solid var(--rule);
+  padding-block: 0.75rem;
+}
+
+.sentimentLegend dt {
+  color: var(--muted);
+  font-size: 0.75rem;
+  font-weight: 650;
+}
+
+.sentimentLegend dd {
+  font-size: 0.8125rem;
+  font-variant-numeric: tabular-nums;
+  font-weight: 800;
+  margin: 0.25rem 0 0;
+}
+
+.coverageHeader {
+  border-top: 1px solid var(--rule);
+  display: grid;
+  gap: 1.5rem;
+  padding-block: clamp(2.5rem, 5vw, 4rem) 2rem;
+}
+
+.coverageTitle {
+  font-family: "Fraunces Variable", Fraunces, Georgia, "Times New Roman", serif;
+  font-variation-settings: "SOFT" 0, "WONK" 1;
+  font-size: clamp(1.75rem, 3.5vw, 3rem);
+  letter-spacing: -0.035em;
+  line-height: 1.05;
+  margin: 0.6rem 0 0;
+  max-width: 20ch;
+}
+
+.coverageNote {
+  align-self: end;
+  color: var(--muted);
+  font-size: 0.875rem;
+  font-weight: 550;
+  line-height: 1.65;
+  max-width: 38rem;
+}
+
+.coverageBand {
+  display: grid;
+  padding-bottom: clamp(2.5rem, 6vw, 5rem);
+}
+
+.coverageColumn {
+  border-top: 0.3rem solid;
+  min-width: 0;
+}
+
+.coverageColumn.critical {
+  border-top-color: var(--rust);
+}
+
+.coverageColumn.favorable {
+  border-top-color: var(--green);
+}
+
+.coverageColumnHeader {
+  align-items: baseline;
+  border-bottom: 1px solid var(--rule);
+  display: flex;
+  gap: 1rem;
+  justify-content: space-between;
+  padding-block: 1rem;
+}
+
+.coverageColumnHeader h4 {
+  font-family: "Fraunces Variable", Fraunces, Georgia, "Times New Roman", serif;
+  font-variation-settings: "SOFT" 0, "WONK" 1;
+  font-size: 1.25rem;
+  line-height: 1.25;
+  margin: 0;
+}
+
+.coverageColumnHeader span {
+  color: var(--muted);
+  font-size: 0.875rem;
+  font-variant-numeric: tabular-nums;
+  font-weight: 800;
+}
+
+.coverageList {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.coverageList li {
+  border-bottom: 1px solid #d8d1c5;
+  padding-block: 1.25rem;
+}
+
+.itemMeta {
+  color: #777166;
+  display: flex;
+  font-size: 0.6875rem;
+  font-weight: 700;
+  gap: 1rem;
+  justify-content: space-between;
+}
+
+.coverageList h5 {
+  font-size: 1rem;
+  line-height: 1.4;
+  margin: 0.5rem 0 0;
+}
+
+.coverageList li > p {
+  color: var(--muted);
+  font-size: 0.8125rem;
+  line-height: 1.6;
+  margin: 0.5rem 0 0;
+}
+
+.coverageList .reviewNote {
+  border-left: 2px solid var(--rule);
+  color: #555953;
+  font-size: 0.75rem;
+  padding-left: 0.75rem;
+}
+
+.coverageList .textLink {
+  margin-top: 0.8rem;
+}
+
+.emptyState {
+  color: var(--muted);
+  font-size: 0.875rem;
+  font-weight: 600;
+  line-height: 1.7;
+  margin: 0;
+  padding-block: 1.5rem;
+}
+
+.footer {
+  border-top: 1px solid var(--rule);
+  color: #6f6a60;
+  display: flex;
+  flex-direction: column;
+  font-size: 0.75rem;
+  font-weight: 650;
+  gap: 0.5rem;
+  justify-content: space-between;
+  line-height: 1.55;
+  padding-block: 1rem;
+}
+
+@container (min-width: 48rem) {
+  .header,
+  .coverageHeader {
+    grid-template-columns: minmax(0, 1.1fr) minmax(20rem, 0.9fr);
+  }
+
+  .scoreBand {
+    grid-template-columns: minmax(18rem, 0.72fr) minmax(0, 1.28fr);
+  }
+
+  .signalBand,
+  .coverageBand {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .gradeColumn,
+  .signalColumn:first-child,
+  .coverageColumn:first-child {
+    padding-right: clamp(1.5rem, 4vw, 3.5rem);
+  }
+
+  .evidenceColumn,
+  .signalColumn:last-child,
+  .coverageColumn:last-child {
+    border-left: 1px solid var(--rule);
+    padding-left: clamp(1.5rem, 4vw, 3.5rem);
+  }
+
+  .footer {
+    align-items: center;
+    flex-direction: row;
+  }
+
+  .footer p:last-child {
+    max-width: 30rem;
+    text-align: right;
+  }
+}
+
+@container (max-width: 47.999rem) {
+  .evidenceColumn,
+  .signalColumn + .signalColumn,
+  .coverageColumn + .coverageColumn {
+    border-top: 1px solid var(--rule);
+  }
+
+  .sectionHeadingRow {
+    align-items: flex-start;
+  }
+
+  .quietNote {
+    display: none;
+  }
+}
+
+@container (max-width: 31rem) {
+  .sectionHeadingRow {
+    display: grid;
+  }
+
+  .bigNumber {
+    margin-top: 0.5rem;
+    text-align: left;
+  }
+
+  .evidenceRow {
+    grid-template-columns: 1fr;
+  }
+
+  .measureValue {
+    text-align: left;
+  }
+
+  .miniLedger,
+  .sentimentLegend {
+    grid-template-columns: 1fr;
+  }
+
+  .miniLedger div,
+  .miniLedger div:nth-child(odd),
+  .miniLedger div:nth-child(even) {
+    border-bottom: 1px solid #d8d1c5;
+    border-left: 0;
+    padding-inline: 0;
+  }
+
+  .miniLedger div:last-child {
+    border-bottom: 0;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .snapshot *,
+  .snapshot *::before,
+  .snapshot *::after {
+    scroll-behavior: auto !important;
+    transition-duration: 0.001ms !important;
+  }
+}
