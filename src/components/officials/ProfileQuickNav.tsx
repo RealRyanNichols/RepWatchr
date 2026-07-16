@@ -10,9 +10,24 @@ const coreSections = [
   { id: "participate", label: "Have your say" },
 ];
 const verifiedSections = [{ id: "verified-brief", label: "2026 verified brief" }, ...coreSections];
+const storySections = [
+  { id: "snapshot", label: "Start here" },
+  { id: "identity", label: "Who he is" },
+  { id: "balanced-record", label: "Good + concerns" },
+  { id: "record", label: "Turning points" },
+  { id: "score", label: "Grade" },
+  { id: "participate", label: "Community" },
+  { id: "sources", label: "Sources" },
+];
 
-export default function ProfileQuickNav({ hasVerifiedBrief = false }: { hasVerifiedBrief?: boolean }) {
-  const sections = hasVerifiedBrief ? verifiedSections : coreSections;
+export default function ProfileQuickNav({
+  hasVerifiedBrief = false,
+  storyMode = false,
+}: {
+  hasVerifiedBrief?: boolean;
+  storyMode?: boolean;
+}) {
+  const sections = storyMode ? storySections : hasVerifiedBrief ? verifiedSections : coreSections;
   const [activeId, setActiveId] = useState(sections[0].id);
 
   useEffect(() => {

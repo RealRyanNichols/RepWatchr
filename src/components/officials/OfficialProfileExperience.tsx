@@ -3,6 +3,7 @@ import OfficialPhotoImage, { FEATURED_OFFICIAL_PHOTO_QUALITY } from "@/component
 import PartyBadge from "@/components/officials/PartyBadge";
 import ProfileActionDock from "@/components/officials/ProfileActionDock";
 import { formatLevelName } from "@/lib/formatting";
+import type { PerformanceGradeResult } from "@/lib/performance-grade";
 import type { FundingSummary, Official, PublicVoteRecord } from "@/types";
 import styles from "./OfficialProfileExperience.module.css";
 
@@ -13,6 +14,8 @@ type OfficialProfileHeroProps = {
   buildoutComplete: boolean;
   voteRecord?: PublicVoteRecord;
   funding?: FundingSummary;
+  performanceGrade?: PerformanceGradeResult;
+  heroSummary?: string;
 };
 
 type ProfileSnapshotProps = OfficialProfileHeroProps & {
@@ -25,7 +28,8 @@ export function OfficialProfileHero({
   buildoutPercent,
   buildoutComplete,
   voteRecord,
-  funding,
+  performanceGrade,
+  heroSummary,
 }: OfficialProfileHeroProps) {
   const latestVote = voteRecord?.votes[0];
   const contactHref = official.contactInfo.email
@@ -81,8 +85,8 @@ export function OfficialProfileHero({
               <span>{official.jurisdiction}</span>
             </div>
             <p className="mt-5 max-w-2xl text-base font-medium leading-7 text-slate-300 sm:text-lg sm:leading-8">
-              A visual, source-linked view of the office, roll calls, money trail, and public record. Missing evidence
-              stays labeled as missing—not turned into a conclusion.
+              {heroSummary ??
+                "A visual, source-linked view of the office, roll calls, money trail, and public record. Missing evidence stays labeled as missing—not turned into a conclusion."}
             </p>
 
             <div className="mt-7">
@@ -95,6 +99,21 @@ export function OfficialProfileHero({
             </div>
 
             <dl className="mt-8 grid grid-cols-2 gap-px overflow-hidden rounded-2xl border border-white/12 bg-white/10 sm:grid-cols-4">
+              <HeroMetric
+                label="Overall grade"
+                value={
+                  performanceGrade?.status === "published" && performanceGrade.score !== null
+                    ? `${performanceGrade.score} / ${performanceGrade.letterGrade}`
+                    : performanceGrade?.status === "provisional" && performanceGrade.score !== null
+                      ? `${performanceGrade.score} / provisional`
+                      : "NR"
+                }
+                detail={
+                  performanceGrade
+                    ? `${performanceGrade.scoreableWeight}% of grade weight cleared`
+                    : "Evidence gate not reviewed"
+                }
+              />
               <HeroMetric
                 label="Votes indexed"
                 value={voteRecord ? compactNumber(voteRecord.summary.totalVotesLoaded) : "Pending"}
@@ -109,11 +128,6 @@ export function OfficialProfileHero({
                 label="Profile depth"
                 value={`${buildoutPercent}%`}
                 detail={buildoutComplete ? "Core record loaded" : "Buildout continues"}
-              />
-              <HeroMetric
-                label="Money record"
-                value={funding ? funding.cycle : "Review"}
-                detail={funding ? "Finance cycle loaded" : "Source review pending"}
               />
             </dl>
           </div>

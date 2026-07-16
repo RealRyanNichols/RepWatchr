@@ -11,6 +11,7 @@ type OfficialVerifiedBriefProps = {
 const evidenceLabels: Record<VerifiedBriefEvidenceKind, string> = {
   official_record: "Official record",
   reported: "Reported",
+  external_data: "External data",
   interview_statement: "Interview statement",
 };
 

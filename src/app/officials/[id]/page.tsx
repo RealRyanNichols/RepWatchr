@@ -15,7 +15,7 @@ import MoneyTrailSection from "@/components/money/MoneyTrailSection";
 import VoteTimeline from "@/components/votes/VoteTimeline";
 import RedFlagCard from "@/components/shared/RedFlagCard";
 import { OfficialProfileHero, ProfileSnapshot } from "@/components/officials/OfficialProfileExperience";
-import { OfficialVerifiedBrief } from "@/components/officials/OfficialVerifiedBrief";
+import OfficialStoryProfile from "@/components/officials/OfficialStoryProfile";
 import ProfileQuickNav from "@/components/officials/ProfileQuickNav";
 import OfficialVotingSection from "@/components/voting/OfficialVotingSection";
 import CommentSection from "@/components/comments/CommentSection";
@@ -33,6 +33,7 @@ import { breadcrumbJsonLd, jsonLd, profilePageJsonLd } from "@/lib/structured-da
 import { buildOfficialDossier, type DossierSourceGroup, type DossierTimelineItem } from "@/lib/official-dossier";
 import { getMoneyTrailForOfficial } from "@/lib/money-trail";
 import { getOfficialVerifiedBrief } from "@/data/official-verified-briefs";
+import { getOfficialPerformanceGrade } from "@/data/official-performance-grades";
 import type { Official, PublicVoteRecord, RedFlag, ScoredVote } from "@/types";
 
 export const revalidate = 86400;
@@ -96,6 +97,7 @@ export default async function OfficialProfilePage({
   const congressTrading = getCongressTradingSnapshot(id);
   const profileOverlay = await getPublicProfileOverlay("official", id);
   const verifiedBrief = getOfficialVerifiedBrief(id);
+  const performanceGrade = getOfficialPerformanceGrade(id);
   const staticCompletion = buildOfficialCompletionSnapshot(official);
   const sourceLinks = official.sourceLinks ?? [];
   const overlayPublicRecords = profileOverlay.enrichmentItems.filter((item) => item.category !== "news");
@@ -133,6 +135,45 @@ export default async function OfficialProfilePage({
     { name: official.name, path: `/officials/${official.id}` },
   ]);
 
+  if (verifiedBrief) {
+    return (
+      <div className="min-h-screen bg-[#f8fbff] text-slate-950">
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: jsonLd(profileStructuredData) }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: jsonLd(breadcrumbStructuredData) }}
+        />
+        <ProfileOpenTracker
+          profileId={official.id}
+          profileType="official"
+          path={`/officials/${official.id}`}
+          level={official.level}
+        />
+        <OfficialProfileHero
+          official={official}
+          sourceCount={dossier.sourceCount}
+          buildoutPercent={buildoutPercent}
+          buildoutComplete={buildoutComplete}
+          voteRecord={publicVoteRecord}
+          funding={funding}
+          performanceGrade={performanceGrade}
+          heroSummary={verifiedBrief.storyLead}
+        />
+        <ProfileQuickNav storyMode />
+        <OfficialStoryProfile
+          official={official}
+          brief={verifiedBrief}
+          voteRecord={publicVoteRecord}
+          performanceGrade={performanceGrade}
+          sourceCount={dossier.sourceCount}
+        />
+      </div>
+    );
+  }
+
   const allScoredVotes = scoreCard
     ? Object.values(scoreCard.categories).flatMap((c) => c.votes)
     : [];
@@ -160,9 +201,9 @@ export default async function OfficialProfilePage({
         buildoutComplete={buildoutComplete}
         voteRecord={publicVoteRecord}
         funding={funding}
+        performanceGrade={performanceGrade}
       />
-      <ProfileQuickNav hasVerifiedBrief={Boolean(verifiedBrief)} />
-      {verifiedBrief ? <OfficialVerifiedBrief brief={verifiedBrief} /> : null}
+      <ProfileQuickNav />
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
         <ProfileSnapshot

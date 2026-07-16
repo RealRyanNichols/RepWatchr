@@ -6,6 +6,7 @@ import { useRouter } from "next/navigation";
 import { createClient } from "@/lib/supabase";
 import { trackRepWatchrEvent } from "@/lib/client-analytics";
 import TurnstileChallenge from "@/components/auth/TurnstileChallenge";
+import SocialAuthButtons from "@/components/auth/SocialAuthButtons";
 
 const signupTools = [
   "Watch list for officials, boards, races, attorneys, media, and issues",
@@ -152,6 +153,20 @@ export default function SignUpPage() {
           <p className="mt-1 text-sm font-semibold text-gray-600">
             Join free. The member tools open immediately after signup.
           </p>
+
+          <div className="mt-5">
+            <SocialAuthButtons />
+            <p className="mt-2 text-xs font-semibold leading-5 text-gray-500">
+              Facebook or X can create your member account. Human and district verification are still completed inside
+              RepWatchr before civic votes receive verified weight.
+            </p>
+          </div>
+
+          <div className="my-5 flex items-center gap-3">
+            <div className="h-px flex-1 bg-gray-200" />
+            <span className="text-xs font-black uppercase tracking-wide text-gray-500">or use email</span>
+            <div className="h-px flex-1 bg-gray-200" />
+          </div>
 
           {error && (
             <div className="mb-4 rounded-md bg-red-50 p-3 text-sm text-red-700">
