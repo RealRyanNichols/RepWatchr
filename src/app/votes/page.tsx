@@ -62,6 +62,17 @@ export default function VotesPage() {
       </div>
 
       <div className="space-y-4">
+        {bills.length === 0 ? (
+          <div className="rounded-xl border border-amber-200 bg-amber-50 p-6">
+            <h2 className="font-black text-amber-950">Tracked vote records are under source review</h2>
+            <p className="mt-2 max-w-3xl text-sm font-semibold leading-6 text-amber-900">
+              RepWatchr is rechecking each bill identity, roll call, chamber, member vote, and scoring rule against primary government records. A record will appear here only after that review is complete.
+            </p>
+            <Link href="/methodology" className="mt-3 inline-flex text-sm font-black text-blue-800 hover:underline">
+              Read the methodology
+            </Link>
+          </div>
+        ) : null}
         {bills.map((bill) => (
           <Link
             key={bill.id}

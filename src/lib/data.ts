@@ -17,6 +17,7 @@ import type {
   OfficialWithScores,
   NewsArticle,
   PublicVoteRecord,
+  SourceReviewStatus,
 } from "@/types";
 import {
   getAttorneyWatchProfiles,
@@ -24,6 +25,7 @@ import {
   getPublicSafetyWatchProfiles,
 } from "@/lib/power-watch";
 import { getCongressTradingDataset, getCongressTradingStats } from "@/lib/congress-trading";
+import { selectEditorialStories } from "@/lib/editorial-ranking";
 
 // Base path to the data directory
 const DATA_DIR = path.join(process.cwd(), "src", "data");
@@ -40,6 +42,45 @@ const scoreCardCache = new Map<string, ScoreCard>();
 const fundingCache = new Map<string, FundingSummary>();
 const redFlagCache = new Map<string, RedFlag[]>();
 const voteRecordCache = new Map<string, PublicVoteRecord | undefined>();
+
+const PUBLIC_EVIDENCE_STATUSES = new Set<SourceReviewStatus>(["verified", "complete"]);
+
+/**
+ * Draft, seeded, and unreviewed records stay available in source control for
+ * research, but they must not reach public pages or derived scores.
+ */
+export function isPublishedEvidenceStatus(status?: SourceReviewStatus | string | null) {
+  return Boolean(status && PUBLIC_EVIDENCE_STATUSES.has(status as SourceReviewStatus));
+}
+
+function isPublishableRedFlag(flag: RedFlag) {
+  return Boolean(
+    isPublishedEvidenceStatus(flag.reviewerStatus) &&
+      flag.sourceUrl?.startsWith("http") &&
+      flag.date &&
+      flag.jurisdiction &&
+      flag.statusLabel &&
+      flag.whyItMatters,
+  );
+}
+
+function scoreCardVotes(scoreCard: ScoreCard) {
+  return Object.values(scoreCard.categories).flatMap((category) => category.votes);
+}
+
+function isPublishableScoreCard(scoreCard: ScoreCard) {
+  if (!isPublishedEvidenceStatus(scoreCard.reviewStatus)) return false;
+
+  const publishedBills = new Map(getAllBills().map((bill) => [bill.id, bill]));
+  const votes = scoreCardVotes(scoreCard);
+  if (votes.length === 0) return false;
+
+  return votes.every((vote) => {
+    const bill = publishedBills.get(vote.billId);
+    const sourceVote = bill?.votes.find((row) => row.officialId === scoreCard.officialId);
+    return Boolean(sourceVote && sourceVote.vote === vote.officialVote);
+  });
+}
 
 // ---------------------------------------------------------------------------
 // Helpers
@@ -190,11 +231,12 @@ export function getScoreCard(officialId: string): ScoreCard | undefined {
   const filePath = path.join(DATA_DIR, "scores", `${officialId}.json`);
   const scoreCard = readJsonFile<ScoreCard>(filePath);
 
-  if (scoreCard) {
+  if (scoreCard && isPublishableScoreCard(scoreCard)) {
     scoreCardCache.set(officialId, scoreCard);
+    return scoreCard;
   }
 
-  return scoreCard;
+  return undefined;
 }
 
 /**
@@ -225,11 +267,12 @@ export function getFundingSummary(
   const filePath = path.join(DATA_DIR, "funding", `${officialId}.json`);
   const funding = readJsonFile<FundingSummary>(filePath);
 
-  if (funding) {
+  if (funding && isPublishedEvidenceStatus(funding.reviewStatus)) {
     fundingCache.set(officialId, funding);
+    return funding;
   }
 
-  return funding;
+  return undefined;
 }
 
 // ---------------------------------------------------------------------------
@@ -243,7 +286,7 @@ export function getRedFlags(officialId: string): RedFlag[] {
   if (redFlagCache.has(officialId)) return redFlagCache.get(officialId)!;
 
   const filePath = path.join(DATA_DIR, "red-flags", `${officialId}.json`);
-  const flags = readJsonFile<RedFlag[]>(filePath) ?? [];
+  const flags = (readJsonFile<RedFlag[]>(filePath) ?? []).filter(isPublishableRedFlag);
 
   redFlagCache.set(officialId, flags);
   return flags;
@@ -275,7 +318,11 @@ export function getAllBills(): Bill[] {
 
   for (const file of files) {
     const bill = readJsonFile<Bill>(file);
-    if (bill) {
+    if (
+      bill &&
+      isPublishedEvidenceStatus(bill.reviewStatus) &&
+      bill.sourceUrl?.startsWith("http")
+    ) {
       bills.push(bill);
     }
   }
@@ -671,7 +718,11 @@ export function hasPublicNewsSource(article: NewsArticle): boolean {
 }
 
 export function isPublishableNewsArticle(article: NewsArticle): boolean {
-  return article.sourceStatus !== "needs_source_review" && hasPublicNewsSource(article);
+  return (
+    article.editorialStatus === "approved" &&
+    article.sourceStatus === "source_linked" &&
+    hasPublicNewsSource(article)
+  );
 }
 
 /**
@@ -708,7 +759,10 @@ function getAllNewsRecords(): NewsArticle[] {
 export function getAllNews(): NewsArticle[] {
   if (newsCache) return newsCache;
 
-  newsCache = getAllNewsRecords().filter(isPublishableNewsArticle);
+  newsCache = selectEditorialStories(
+    "news",
+    getAllNewsRecords().filter(isPublishableNewsArticle),
+  );
   return newsCache;
 }
 
@@ -737,5 +791,5 @@ export function getNewsByOfficialId(officialId: string): NewsArticle[] {
  * Get featured/breaking news articles.
  */
 export function getFeaturedNews(): NewsArticle[] {
-  return getAllNews().filter((n) => n.featured);
+  return selectEditorialStories("home", getAllNews(), { limit: 6 });
 }

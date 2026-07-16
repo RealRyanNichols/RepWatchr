@@ -10,6 +10,11 @@ These may be visible to the browser:
 - `NEXT_PUBLIC_SUPABASE_URL`
 - `NEXT_PUBLIC_SUPABASE_ANON_KEY`
 - `NEXT_PUBLIC_GA_MEASUREMENT_ID` if Google Analytics is used
+- `NEXT_PUBLIC_ENABLE_CANDIDATE_CATALOG_V2`
+- `NEXT_PUBLIC_ENABLE_COMMUNITY_VOTING_V2`
+- `NEXT_PUBLIC_ENABLE_REPWATCHR_BRAIN_V2`
+- `NEXT_PUBLIC_ENABLE_MEMBER_DASHBOARD_V2`
+- `NEXT_PUBLIC_TURNSTILE_SITE_KEY` (public site key; the matching secret stays server-side or in Supabase Auth settings)
 
 Never prefix a server secret with `NEXT_PUBLIC_`.
 
@@ -20,6 +25,9 @@ These must stay server-side:
 - `SUPABASE_SERVICE_ROLE_KEY`
 - `STRIPE_SECRET_KEY`
 - `STRIPE_WEBHOOK_SECRET`
+- `STRIPE_IDENTITY_WEBHOOK_SECRET`
+- `IDENTITY_HMAC_SECRET`
+- `TURNSTILE_SECRET_KEY`
 - `OPENAI_API_KEY`
 - `RESEND_API_KEY`
 - `SENDGRID_API_KEY`
@@ -40,8 +48,14 @@ Default false unless intentionally enabled:
 - `ENABLE_ADVANCED_ANALYTICS`
 - `ENABLE_EXPORTS`
 - `ENABLE_PWA_INSTALL_PROMPT`
+- `NEXT_PUBLIC_ENABLE_CANDIDATE_CATALOG_V2`
+- `NEXT_PUBLIC_ENABLE_COMMUNITY_VOTING_V2`
+- `NEXT_PUBLIC_ENABLE_REPWATCHR_BRAIN_V2`
+- `NEXT_PUBLIC_ENABLE_MEMBER_DASHBOARD_V2`
+- `IDENTITY_VERIFICATION_ENABLED`
 
 Disabled features should show clean interest-capture or disabled states, not broken provider errors.
+Integrity-sensitive V2 flags remain false until their documented acceptance checks, schema migration, and approval-gated deployment are complete.
 
 ## Route Smoke
 

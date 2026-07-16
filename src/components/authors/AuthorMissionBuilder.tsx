@@ -68,7 +68,7 @@ const authorLanes = [
 ] as const;
 
 const targetTypes = [
-  { id: "official", label: "Official", placeholder: "Rep. Tim Burchett, state rep, mayor, board member" },
+  { id: "official", label: "Official", placeholder: "U.S. representative, state legislator, mayor, or board member" },
   { id: "board", label: "Board", placeholder: "School board, city council, county commission" },
   { id: "vote", label: "Vote", placeholder: "Bill, agenda item, amendment, funding vote" },
   { id: "money", label: "Money", placeholder: "Donor, vendor, PAC, contract, campaign filing" },

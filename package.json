@@ -30,6 +30,8 @@
     "smoke:pricing": "node scripts/smoke-pricing-beta-access.mjs",
     "smoke:public-api": "node scripts/smoke-public-data-api.mjs",
     "smoke:ai-writing": "node scripts/smoke-safe-ai-writing-assistant.mjs",
+    "smoke:integrity": "node scripts/smoke-integrity-foundation.mjs",
+    "smoke:neutrality": "node scripts/smoke-editorial-neutrality.mjs",
     "qa:static": "node scripts/qa-static-checks.mjs",
     "qa:routes": "node scripts/qa-route-smoke.mjs",
     "smoke:records": "node scripts/smoke-public-records-generator.mjs",
@@ -38,6 +40,8 @@
     "seo:report": "node scripts/seo-report.mjs"
   },
   "dependencies": {
+    "@fontsource-variable/fraunces": "^5.2.9",
+    "@fontsource-variable/inter": "^5.2.8",
     "@supabase/ssr": "^0.10.2",
     "@supabase/supabase-js": "^2.103.0",
     "@vercel/analytics": "^2.0.1",

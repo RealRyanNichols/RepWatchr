@@ -41,6 +41,7 @@ export interface SocialStoryCandidate {
   storyUrl: string;
   publishedAt: string | null;
   score: number;
+  rankFactors: string[];
 }
 
 export interface SocialPostResult {
@@ -73,28 +74,12 @@ export interface HourlySocialAutopostResult {
 const SOCIAL_POST_TABLE = "repwatchr_social_posts";
 const DEFAULT_HOURLY_SOURCE_LIMIT = 24;
 const DEFAULT_MAX_CANDIDATE_AGE_HOURS = 72;
-const HIGH_ATTENTION_TERMS = [
-  "accountability",
-  "campaign finance",
-  "charged",
-  "corruption",
-  "doge",
-  "ethics",
-  "fraud",
-  "hearing",
-  "indicted",
-  "investigation",
-  "lawsuit",
-  "oversight",
-  "public records",
-  "resigned",
-  "subpoena",
-  "tim burchett",
-  "transparency",
-  "uap",
-  "ufo",
-  "waste",
-  "whistleblower",
+const CIVIC_SIGNAL_GROUPS = [
+  ["election", "primary", "runoff", "ballot", "candidate", "campaign"],
+  ["vote", "roll call", "bill", "hearing", "budget", "contract", "appointment"],
+  ["audit", "ethics", "investigation", "court", "lawsuit", "public records", "oversight"],
+  ["healthcare", "housing", "insurance", "groceries", "gasoline", "electricity", "taxes"],
+  ["campaign finance", "donor", "spending", "procurement", "appropriation"],
 ];
 
 function parsePositiveInteger(value: string | undefined, fallback: number) {
@@ -136,25 +121,52 @@ function isFreshEnough(clip: DailyWireClip, now: Date) {
   return now.getTime() - time <= maxAgeHours * 60 * 60 * 1000;
 }
 
-function attentionScore(clip: DailyWireClip, now: Date) {
-  const text = `${clip.title} ${clip.summary} ${clip.sourceName} ${clip.sourceCredit?.name ?? ""} ${clip.sourceCredit?.handle ?? ""} ${clip.matchedTerms.join(" ")}`.toLowerCase();
+function attentionRank(clip: DailyWireClip, now: Date) {
+  const text = `${clip.title} ${clip.summary} ${clip.matchedTerms.join(" ")} ${clip.topicTags.join(" ")}`.toLowerCase();
   const ageHours = Math.max(0, (now.getTime() - clipTime(clip)) / (60 * 60 * 1000));
-  let score = 40;
+  const quality = Math.round(Math.max(0, Math.min(100, clip.qualityScore)) * 0.45);
+  const source = clip.sourceTier === "official_record" ? 24 : clip.sourceTier === "named_news" ? 18 : 8;
+  const jurisdiction =
+    clip.jurisdictionMatch === "local"
+      ? 10
+      : clip.jurisdictionMatch === "texas" || clip.jurisdictionMatch === "state"
+        ? 8
+        : clip.jurisdictionMatch === "national"
+          ? 6
+          : 0;
+  const geography =
+    clip.geographicRelevance === "local"
+      ? 6
+      : clip.geographicRelevance === "state"
+        ? 5
+        : clip.geographicRelevance === "national"
+          ? 4
+          : 0;
+  const civicSignals = CIVIC_SIGNAL_GROUPS.filter((group) => group.some((term) => text.includes(term))).length * 5;
+  const freshness = Math.max(0, 24 - Math.floor(ageHours));
+  const duplicatePenalty = clip.duplicateScore >= 80 ? 20 : 0;
+  const score = quality + source + jurisdiction + geography + civicSignals + freshness - duplicatePenalty;
 
-  if (clip.sourceCredit) score += 28;
-  if (clip.sourceTier === "official_record") score += 18;
-  if (clip.sourceTier === "named_news") score += 14;
-  if (clip.powerChannels.includes("officials")) score += 10;
-  if (clip.powerChannels.includes("courts")) score += 8;
-  if (clip.powerChannels.includes("money")) score += 8;
-  if (clip.powerChannels.includes("media")) score += 6;
-  score += HIGH_ATTENTION_TERMS.filter((term) => text.includes(term)).length * 7;
-  score += Math.max(0, 24 - Math.floor(ageHours));
+  return {
+    score,
+    factors: [
+      `quality:${quality}`,
+      `source_strength:${source}`,
+      `jurisdiction:${jurisdiction}`,
+      `geography:${geography}`,
+      `civic_signals:${civicSignals}`,
+      `freshness:${freshness}`,
+      `duplicate_penalty:-${duplicatePenalty}`,
+    ],
+  };
+}
 
-  return score;
+function attentionScore(clip: DailyWireClip, now: Date) {
+  return attentionRank(clip, now).score;
 }
 
 function toCandidate(clip: DailyWireClip, now: Date): SocialStoryCandidate {
+  const rank = attentionRank(clip, now);
   return {
     clipId: clip.id,
     title: clip.title,
@@ -163,7 +175,8 @@ function toCandidate(clip: DailyWireClip, now: Date): SocialStoryCandidate {
     sourceUrl: clip.sourceUrl,
     storyUrl: storyUrlFor(clip),
     publishedAt: clip.publishedAt,
-    score: attentionScore(clip, now),
+    score: rank.score,
+    rankFactors: rank.factors,
   };
 }
 
@@ -574,11 +587,9 @@ export async function runHourlySocialAutopost({ dryRun = false }: { dryRun?: boo
 
   if (enabled && !editorialApproved && !dryRun) {
     return {
-      ok: false,
+      ok: true,
       ...skippedResult,
       skippedReason: "Editorial approval gate not confirmed",
-      error:
-        "Set SOCIAL_AUTOPOST_EDITORIAL_APPROVED=true only after credentials, source rules, and posting policy are approved.",
     };
   }
 

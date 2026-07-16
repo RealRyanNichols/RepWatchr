@@ -17,6 +17,7 @@ export type RepWatchrEventName =
   | "watchlist_add"
   | "signup_started"
   | "signup_completed"
+  | "social_login_started"
   | "login"
   | "checkout_started"
   | "checkout_completed"

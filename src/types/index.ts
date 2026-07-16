@@ -9,6 +9,11 @@ export type GovernmentLevel = "federal" | "state" | "county" | "city" | "school-
 export type VoteChoice = "yea" | "nay" | "absent" | "abstain" | "not-applicable";
 export type RedFlagSeverity = "warning" | "critical";
 export type RedFlagCategory = "broken-promise" | "conflict-of-interest" | "ethics" | "funding" | "voting-record" | "other";
+export type SourceReviewStatus =
+  | "needs_source_review"
+  | "source_seeded"
+  | "verified"
+  | "complete";
 
 export interface ContactInfo {
   office?: string;
@@ -45,6 +50,9 @@ export interface Official {
   photo?: string;
   photoSourceUrl?: string;
   photoCredit?: string;
+  featuredPhoto?: string;
+  featuredPhotoSourceUrl?: string;
+  featuredPhotoCredit?: string;
   party: Party;
   level: GovernmentLevel;
   position: string;
@@ -56,7 +64,7 @@ export interface Official {
   contactInfo: ContactInfo;
   bio?: string;
   campaignPromises?: string[];
-  reviewStatus?: "needs_source_review" | "source_seeded" | "verified" | "complete";
+  reviewStatus?: SourceReviewStatus;
   state?: string;
   bioguideId?: string;
   sourceLinks?: SourceLink[];
@@ -85,6 +93,9 @@ export interface CategoryScore {
 
 export interface ScoreCard {
   officialId: string;
+  reviewStatus?: SourceReviewStatus;
+  reviewedAt?: string;
+  reviewedBy?: string;
   overall: number;
   letterGrade: string;
   categories: {
@@ -121,6 +132,9 @@ export interface DataSource {
 
 export interface FundingSummary {
   officialId: string;
+  reviewStatus?: SourceReviewStatus;
+  reviewedAt?: string;
+  reviewedBy?: string;
   cycle: string;
   totalRaised: number;
   totalSpent: number;
@@ -209,6 +223,9 @@ export interface BillVote {
 
 export interface Bill {
   id: string;
+  reviewStatus?: SourceReviewStatus;
+  reviewedAt?: string;
+  reviewedBy?: string;
   title: string;
   summary: string;
   session: string;
@@ -435,6 +452,29 @@ export type NewsPowerChannel =
   | "courts"
   | "money";
 
+export type EditorialStatus = "draft" | "in_review" | "approved" | "archived";
+
+export type PublicPostPlatform = "x" | "youtube" | "facebook" | "instagram" | "tiktok" | "other";
+
+export interface PublicPostEmbed {
+  platform: PublicPostPlatform;
+  url: string;
+  author: string;
+  label?: string;
+  context?: string;
+  publishedAt?: string;
+}
+
+export type OfficialCoverageTone = "positive" | "critical" | "neutral";
+
+export interface OfficialCoverageClassification {
+  /** Person-specific editorial classification. Never inferred from party or headline tone. */
+  tone: OfficialCoverageTone;
+  rationale: string;
+  reviewedAt?: string;
+  reviewedBy?: string;
+}
+
 export interface NewsArticle {
   id: string;
   title: string;
@@ -456,6 +496,18 @@ export interface NewsArticle {
   locationLabel?: string;
   powerChannels?: NewsPowerChannel[];
   sourceStatus?: "source_linked" | "needs_source_review";
+  /** Public surfaces require an explicit editorial approval. */
+  editorialStatus?: EditorialStatus;
+  reviewedAt?: string;
+  reviewedBy?: string;
+  correctionStatus?: "none" | "under_review" | "corrected";
+  topicKey?: string;
+  primarySourceCount?: number;
+  independentPublisherCount?: number;
+  midtermRelevance?: 0 | 1 | 2 | 3;
+  publicPostEmbeds?: PublicPostEmbed[];
+  /** An article can treat different named officials differently, so tone is keyed by official id. */
+  officialCoverage?: Record<string, OfficialCoverageClassification>;
 }
 
 // ============================================================

@@ -1,0 +1,44 @@
+{
+  "id": "health-care-costs-midterms-2026",
+  "title": "Health-care costs are shaping the 2026 midterms. Here is what the evidence says",
+  "summary": "New survey and Marketplace data show why premiums, deductibles, prescriptions, and rural access deserve the same sourced questions for every candidate.",
+  "content": "Health-care affordability is emerging as a concrete 2026 midterm issue, but the useful question is not which campaign has the sharpest slogan. It is what a proposal would change for a household, who would qualify, what it would cost, and which public action could make it happen.\n\nKFF's July tracking poll found that 64% of voters were worried about affording health care. About nine in ten said health-care costs would influence whether they vote and which candidate they support. That makes health costs an election signal, not proof that any one policy has won public agreement.\n\nCMS separately reported that the average lowest-cost 2026 Marketplace plan after tax credits was projected at $50 per month, $13 more than in 2025. A premium is only one part of affordability, so candidate comparisons also need deductibles, out-of-pocket limits, prescription costs, provider networks, rural-hospital access, Medicaid, and Medicare.\n\nRepWatchr will apply one comparison card to every candidate covered: the proposal, estimated household effect, government cost, funding source, eligibility, implementation authority, tradeoffs, and primary documents. Campaign posts will be embedded as attributable statements, not treated as independent proof. Candidates will receive the same questions and the same response window.\n\nThe public post below is included because it points readers to the survey result and shows how the research organization framed its findings. The linked KFF report and CMS fact sheet are the receipts readers should use to verify the numbers.",
+  "officialIds": [],
+  "tags": ["election", "update", "transparency"],
+  "sourceUrl": "https://www.kff.org/public-opinion/kff-health-tracking-poll-health-care-costs-and-the-midterms/",
+  "sourceName": "KFF",
+  "sourceLinks": [
+    {
+      "title": "KFF Health Tracking Poll: Health Care Costs and the Midterms",
+      "url": "https://www.kff.org/public-opinion/kff-health-tracking-poll-health-care-costs-and-the-midterms/"
+    },
+    {
+      "title": "CMS Plan Year 2026 Marketplace Plans and Prices Fact Sheet",
+      "url": "https://www.cms.gov/newsroom/fact-sheets/plan-year-2026-marketplace-plans-prices-fact-sheet"
+    }
+  ],
+  "publicPostEmbeds": [
+    {
+      "platform": "x",
+      "url": "https://x.com/KFF/status/2075617804162576643",
+      "author": "KFF",
+      "label": "KFF survey explainer",
+      "context": "This post documents KFF's summary of its polling. The linked report, methodology, and CMS data are the evidence for the article's factual claims."
+    }
+  ],
+  "author": "RepWatchr Story Desk",
+  "publishedAt": "2026-07-15T23:30:00Z",
+  "featured": true,
+  "scope": "national",
+  "locationLabel": "United States / 2026 Midterms / Health Costs",
+  "powerChannels": ["elections", "money", "officials"],
+  "sourceStatus": "source_linked",
+  "editorialStatus": "approved",
+  "reviewedAt": "2026-07-15T23:30:00Z",
+  "reviewedBy": "RepWatchr source desk",
+  "correctionStatus": "none",
+  "topicKey": "health-care-affordability",
+  "primarySourceCount": 1,
+  "independentPublisherCount": 2,
+  "midtermRelevance": 3
+}

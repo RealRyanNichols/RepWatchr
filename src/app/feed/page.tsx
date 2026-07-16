@@ -647,7 +647,7 @@ export default async function FeedPage({
                 New source-linked political wire every hour.
               </h2>
               <p className="mt-2 text-sm font-semibold leading-6 text-slate-600">
-                Cron watches officials, oversight, UAP transparency, whistleblowers, ethics, money, courts, school boards, and public-safety signals, then queues one source-linked story for RepWatchr social distribution.
+                Cron watches elections, household costs, official votes, ethics, money, courts, school boards, and public-safety signals, then queues one source-linked story for editorial review.
               </p>
               <Link
                 href="/daily-wire"

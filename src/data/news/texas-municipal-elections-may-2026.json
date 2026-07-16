@@ -16,5 +16,13 @@
   "cities": ["Dallas", "Fort Worth"],
   "locationLabel": "Texas",
   "powerChannels": ["officials", "school-boards", "public-safety", "elections", "money"],
-  "sourceStatus": "source_linked"
+  "sourceStatus": "source_linked",
+  "editorialStatus": "approved",
+  "reviewedAt": "2026-07-15T23:30:00Z",
+  "reviewedBy": "RepWatchr editorial migration",
+  "correctionStatus": "none",
+  "topicKey": "local-elections",
+  "primarySourceCount": 0,
+  "independentPublisherCount": 1,
+  "midtermRelevance": 3
 }

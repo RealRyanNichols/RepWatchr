@@ -8,6 +8,7 @@ import ShareButtons from "@/components/shared/ShareButtons";
 import ReportButton from "@/components/shared/ReportButton";
 import NextUsefulMove from "@/components/shared/NextUsefulMove";
 import TrustLabel from "@/components/shared/TrustLabel";
+import PublicPostEmbed from "@/components/news/PublicPostEmbed";
 import { buildOgImageUrl, buildRepWatchrMetadata } from "@/lib/repwatchr-seo";
 import { breadcrumbJsonLd, jsonLd, newsArticleJsonLd } from "@/lib/structured-data";
 
@@ -276,6 +277,18 @@ export default async function NewsArticlePage({
         secondaryMetric={{ label: "Officials", value: linkedOfficials.length }}
         className="mt-6"
       />
+
+      {article.publicPostEmbeds?.length ? (
+        <section className="mt-6 space-y-4">
+          <div>
+            <p className="text-xs font-black uppercase tracking-[0.18em] text-red-700">Public conversation</p>
+            <h2 className="mt-1 text-2xl font-black text-slate-950">See the original post, then check the receipts.</h2>
+          </div>
+          {article.publicPostEmbeds.map((post) => (
+            <PublicPostEmbed key={post.platform + "-" + post.url} post={post} />
+          ))}
+        </section>
+      ) : null}
 
       <div className="mt-4 grid gap-3 lg:grid-cols-[1fr_auto] lg:items-start">
         <NextUsefulMove

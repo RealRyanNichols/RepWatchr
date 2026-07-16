@@ -65,7 +65,7 @@ for (const cssClass of ["share-action-button", "share-mini-button", "share-socia
 }
 
 const coverageFiles = [
-  "src/app/officials/[id]/page.tsx",
+  "src/components/officials/UniversalOfficialDashboard.tsx",
   "src/components/shared/RedFlagCard.tsx",
   "src/app/news/[id]/page.tsx",
   "src/app/news/page.tsx",

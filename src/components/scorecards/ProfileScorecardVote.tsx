@@ -8,6 +8,7 @@ import {
   getProfileScorecardLabel,
   type ProfileScorecardTargetType,
 } from "@/lib/universal-scorecards";
+import { repwatchrFeatureFlags } from "@/lib/repwatchr-feature-flags";
 
 type Grade = "A" | "B" | "C" | "D" | "F";
 type VoterScope = "in_district" | "in_state" | "out_of_district" | "out_of_state" | "verified_unknown";
@@ -83,7 +84,7 @@ const scopeLabels: Record<VoterScope, string> = {
   in_state: "In-state constituent",
   out_of_district: "Out-of-district voter",
   out_of_state: "Out-of-state voter",
-  verified_unknown: "Verified voter",
+  verified_unknown: "Verified resident",
 };
 
 const voteAgainLabels: Record<VoteAgain, string> = {
@@ -115,61 +116,6 @@ function averageToGrade(score: number | null | undefined): string {
   if (score >= 50) return "C";
   if (score >= 30) return "D";
   return "F";
-}
-
-function normalizeText(value: string | null | undefined): string {
-  return (value ?? "").trim().toLowerCase();
-}
-
-function normalizeCounty(value: string | null | undefined): string {
-  return normalizeText(value).replace(/\s+county$/, "");
-}
-
-function getProfileState(
-  profile: { county?: string; state?: string } | null,
-  officialState?: string,
-) {
-  const directState = profile?.state?.trim().toUpperCase();
-  if (directState) return directState;
-  return profile?.county && officialState ? officialState.toUpperCase() : "";
-}
-
-function resolveVoterScope({
-  profile,
-  officialState,
-  officialDistrict,
-  officialCounties = [],
-}: {
-  profile: { county?: string; district?: string; state?: string; verified?: boolean } | null;
-  officialState?: string;
-  officialDistrict?: string;
-  officialCounties?: string[];
-}): VoterScope {
-  if (!profile?.verified) return "verified_unknown";
-
-  const profileState = getProfileState(profile, officialState);
-  const normalizedOfficialState = officialState?.trim().toUpperCase() ?? "";
-  if (normalizedOfficialState && profileState && profileState !== normalizedOfficialState) {
-    return "out_of_state";
-  }
-
-  const profileDistrict = normalizeText(profile.district);
-  const targetDistrict = normalizeText(officialDistrict);
-  if (profileDistrict && targetDistrict && profileDistrict === targetDistrict) {
-    return "in_district";
-  }
-
-  const profileCounty = normalizeCounty(profile.county);
-  const countySet = new Set(officialCounties.map(normalizeCounty).filter(Boolean));
-  if (profileCounty && countySet.size > 0) {
-    return countySet.has(profileCounty) ? "in_district" : "out_of_district";
-  }
-
-  if (normalizedOfficialState && profileState === normalizedOfficialState) {
-    return "in_state";
-  }
-
-  return "verified_unknown";
 }
 
 function applySummaryChange(
@@ -342,9 +288,6 @@ export default function ProfileScorecardVote({
   targetId,
   targetName,
   targetPath,
-  officialState,
-  officialDistrict,
-  officialCounties = [],
   compact = false,
 }: ProfileScorecardVoteProps) {
   const { user, profile, loading: authLoading } = useAuth();
@@ -362,24 +305,22 @@ export default function ProfileScorecardVote({
   const [message, setMessage] = useState("");
   const [unavailable, setUnavailable] = useState(false);
   const targetLabel = getProfileScorecardLabel(targetType);
-  const voterScope = resolveVoterScope({
-    profile: profile as ({ county?: string; district?: string; state?: string; verified?: boolean } | null),
-    officialState,
-    officialDistrict,
-    officialCounties,
-  });
+  // Geography is trusted only after the database/server stamps it from a
+  // verified profile. The browser deliberately does not classify itself.
+  const voterScope: VoterScope = "verified_unknown";
   const constituentSummary = useMemo(
-    () => {
-      const localRows = combineScopeRows(scopeRows, ["in_district", "in_state"]);
-      return scopeRows.length > 0 ? localRows : summary;
-    },
-    [scopeRows, summary],
+    () => combineScopeRows(scopeRows, ["in_district", "in_state"]),
+    [scopeRows],
   );
 
   useEffect(() => {
     let cancelled = false;
 
     async function loadScorecard() {
+      if (!repwatchrFeatureFlags.communityVotingV2) {
+        setLoading(false);
+        return;
+      }
       setLoading(true);
       setUnavailable(false);
       setMessage("");
@@ -434,7 +375,7 @@ export default function ProfileScorecardVote({
   }, [supabase, targetId, targetType, user]);
 
   async function saveGrade(grade: Grade) {
-    if (!user || !profile?.verified || saving) return;
+    if (!repwatchrFeatureFlags.communityVotingV2 || !user || !profile?.verified || saving) return;
 
     setSaving(true);
     setMessage("");
@@ -468,16 +409,11 @@ export default function ProfileScorecardVote({
       target_path: targetPath,
       grade,
       score: gradeScores[grade],
-      county: profile.county,
       rationale: trimmedRationale || null,
     };
 
     const richPayload = {
       ...basePayload,
-      voter_scope: voterScope,
-      voter_state: officialState ?? null,
-      voter_county: profile.county,
-      voter_district: profile.district ?? null,
       would_vote_again: compact ? null : wouldVoteAgain,
       voted_for_last_time: compact ? null : votedForLastTime,
       approval_after_vote: compact ? null : approvalAfterVote,
@@ -542,11 +478,22 @@ export default function ProfileScorecardVote({
     void saveGrade(currentGrade);
   }
 
+  if (!repwatchrFeatureFlags.communityVotingV2) {
+    return (
+      <div className={compact ? "rounded-xl border border-amber-200 bg-amber-50 p-3" : "rounded-2xl border border-amber-200 bg-amber-50 p-5 shadow-sm"}>
+        <p className="text-xs font-black uppercase tracking-wide text-amber-800">Community scorecard paused</p>
+        <p className="mt-1 text-sm font-semibold leading-6 text-amber-900">
+          This beta will reopen after secure verification and reproducible aggregate checks are in place.
+        </p>
+      </div>
+    );
+  }
+
   if (loading || authLoading) {
     return (
       <div className={compact ? "rounded-xl border border-slate-200 bg-white p-3" : "rounded-2xl border border-slate-200 bg-white p-5 shadow-sm"}>
-        <div className="h-4 w-40 animate-pulse rounded bg-slate-200" />
-        <div className="mt-3 h-3 w-full animate-pulse rounded bg-slate-100" />
+        <div className="h-4 w-40 animate-pulse rounded bg-slate-200 motion-reduce:animate-none" />
+        <div className="mt-3 h-3 w-full animate-pulse rounded bg-slate-100 motion-reduce:animate-none" />
       </div>
     );
   }
@@ -572,7 +519,7 @@ export default function ProfileScorecardVote({
           </h3>
           {!compact ? (
             <p className="mt-1 text-sm font-semibold leading-6 text-slate-600">
-              Verified profiles can answer once on this {targetLabel.toLowerCase()}. Constituent, in-state, out-of-district, and out-of-state responses are tracked separately so outside votes do not control the local signal.
+              Verified residents can answer once on this {targetLabel.toLowerCase()}. Constituent, in-state, out-of-district, and out-of-state responses are tracked separately so outside responses do not control the local signal.
             </p>
           ) : null}
         </div>
@@ -604,6 +551,12 @@ export default function ProfileScorecardVote({
       ) : (
         <div className="mt-3">
           <GradeBars row={summary} compact />
+          <p className="mt-2 text-[11px] font-semibold leading-5 text-slate-500">
+            Based on {summary?.total_votes ?? 0} verified response{summary?.total_votes === 1 ? "" : "s"}.
+            {constituentSummary?.total_votes
+              ? ` Local average uses ${constituentSummary.total_votes} in-district or in-state response${constituentSummary.total_votes === 1 ? "" : "s"}.`
+              : " A local sample has not been established yet."}
+          </p>
         </div>
       )}
 

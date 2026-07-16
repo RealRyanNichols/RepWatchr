@@ -14,7 +14,6 @@ import GradeOfficialSection from "@/components/voting/GradeOfficialSection";
 import ProfileScorecardVote from "@/components/scorecards/ProfileScorecardVote";
 import QuickFacts from "@/components/school-board/QuickFacts";
 import CappedList from "@/components/school-board/CappedList";
-import WhyThisScore from "@/components/school-board/WhyThisScore";
 import { getDistrictBranding } from "@/data/school-board-branding";
 import { getCandidateFlags, getCandidateGaps, getCandidateGoodRecords, getSchoolBoardCandidate, getSchoolBoardDistrict, getShareLine } from "@/lib/school-board-research";
 import {
@@ -25,7 +24,6 @@ import {
   getSchoolBoardCandidateUrl,
   getSchoolBoardDistrictUrl,
 } from "@/lib/school-board-urls";
-import { buildEvidenceFromDossier, calculateSchoolBoardScore, schoolBoardScoringModel } from "@/lib/school-board-scoring";
 import { buildOgImageUrl, buildRepWatchrMetadata } from "@/lib/repwatchr-seo";
 import { breadcrumbJsonLd, jsonLd, profilePageJsonLd } from "@/lib/structured-data";
 
@@ -97,7 +95,9 @@ export default async function CandidatePage({ params }: { params: Promise<{ dist
   const votes = candidate.about_public_record?.board_performance_incumbents_only?.notable_votes ?? [];
   const narrative = candidate.about_public_record?.about_summary_narrative ?? candidate.summary;
   const positions = Object.entries(candidate.education_policy_positions ?? {}).filter(([, value]) => isMeaningful(value));
-  const score = calculateSchoolBoardScore(candidate, buildEvidenceFromDossier(candidate));
+  const publicSourceCount =
+    (candidate.sources ?? []).filter((source) => Boolean(source.url)).length +
+    (candidate.source_snapshot?.url ? 1 : 0);
   const branding = getDistrictBranding(candidate.district_slug);
   const candidateCountyNames = (candidate.county ?? "")
     .split(/[\/,]/)
@@ -223,29 +223,27 @@ export default async function CandidatePage({ params }: { params: Promise<{ dist
               </div>
             </div>
 
-            {/* Score sidebar */}
+            {/* Neutral record-status sidebar */}
             <aside className="rounded-2xl border border-gray-200 bg-gray-50 p-5 lg:w-96">
               <p className="text-xs font-black uppercase tracking-wide text-red-700">Sixty-second read</p>
               <p className="mt-2 text-sm leading-6 text-gray-700">{getShareLine(candidate)}</p>
               <div className="mt-5 grid grid-cols-2 gap-3">
                 <div className="rounded-xl border border-gray-200 bg-white p-4">
-                  <p className="text-xs font-black uppercase tracking-wide text-gray-500">Model score</p>
-                  <p className="mt-1 text-3xl font-black text-gray-950">{score.grade === "Pending" ? "Review" : score.score}</p>
-                  <p className="text-sm font-bold text-gray-600">{score.grade === "Pending" ? "Evidence pending" : `Grade ${score.grade}`}</p>
+                  <p className="text-xs font-black uppercase tracking-wide text-gray-500">Record status</p>
+                  <p className="mt-1 text-lg font-black text-gray-950">
+                    {candidate.status === "complete" ? "Reviewed" : "In review"}
+                  </p>
+                  <p className="text-xs font-bold text-gray-600">Facts stay separate from opinion</p>
                 </div>
                 <div className="rounded-xl border border-gray-200 bg-white p-4">
-                  <p className="text-xs font-black uppercase tracking-wide text-gray-500">Political lean</p>
-                  <p className="mt-1 text-sm font-black text-gray-950">{score.politicalLean.label}</p>
-                  <p className="text-xs font-bold text-gray-500">{score.politicalLean.confidence} confidence</p>
+                  <p className="text-xs font-black uppercase tracking-wide text-gray-500">Sources</p>
+                  <p className="mt-1 text-3xl font-black text-gray-950">{publicSourceCount}</p>
+                  <p className="text-xs font-bold text-gray-500">{gaps.length} open research gaps</p>
                 </div>
               </div>
-              <PoliticalLeanArrow label={score.politicalLean.label} confidence={score.politicalLean.confidence} />
-              {score.praiseWiped ? (
-                <div className="mt-4 rounded-xl border border-red-200 bg-red-50 p-4">
-                  <p className="text-sm font-black text-red-900">Praise override active</p>
-                  <p className="mt-1 text-sm leading-6 text-red-800">{score.overrideReason}</p>
-                </div>
-              ) : null}
+              <p className="mt-4 rounded-xl border border-blue-200 bg-blue-50 p-4 text-xs font-bold leading-5 text-blue-950">
+                RepWatchr does not infer a party label from primary participation or donations and does not publish a universal moral or ideological grade.
+              </p>
             </aside>
           </div>
         </div>
@@ -253,18 +251,13 @@ export default async function CandidatePage({ params }: { params: Promise<{ dist
 
       <ClaimedProfilePanel profileId={candidate.candidate_id} />
 
-      {/* Algorithm transparency: collapsible */}
-      <section className="mx-auto max-w-7xl px-4 pt-6 sm:px-6 lg:px-8">
-        <WhyThisScore score={score} />
-      </section>
-
       {/* Record at-a-glance */}
       <section className="mx-auto max-w-7xl px-4 py-8 sm:px-6 lg:px-8">
         <div className="grid gap-4 lg:grid-cols-3">
           <RecordColumn
             title="Good record"
             tone="good"
-            items={score.praiseWiped ? ["Praise hidden because a documented child/parent-rights override is active."] : good}
+            items={good}
             emptyText="No positive record item has been loaded yet."
           />
           <RecordColumn
@@ -303,12 +296,12 @@ export default async function CandidatePage({ params }: { params: Promise<{ dist
         <div className="rounded-2xl border border-blue-100 bg-[linear-gradient(135deg,#ffffff_0%,#eff6ff_55%,#fff7ed_100%)] p-6 shadow-sm">
           <div className="flex flex-col gap-2 sm:flex-row sm:items-end sm:justify-between">
             <div>
-              <p className="text-xs font-black uppercase tracking-wide text-red-700">Verified Texas sentiment</p>
+              <p className="text-xs font-black uppercase tracking-wide text-red-700">Community sentiment pilot</p>
               <h2 className="mt-1 text-2xl font-black text-blue-950 sm:text-3xl">
                 How Texans rate {candidate.preferred_name ?? candidate.full_name}
               </h2>
               <p className="mt-2 max-w-3xl text-sm font-semibold leading-6 text-blue-950/75">
-                Verified Texans can approve, disapprove, and assign a letter grade. Statewide totals are shown alongside the in-district {candidate.county || "constituent"} count.
+                When the integrity pilot opens, verified residents can approve, disapprove, and assign a letter grade. Statewide totals stay separate from the in-district {candidate.county || "constituent"} count.
               </p>
             </div>
           </div>
@@ -372,7 +365,7 @@ export default async function CandidatePage({ params }: { params: Promise<{ dist
             <summary className="flex cursor-pointer list-none items-center justify-between text-left">
               <div>
                 <p className="text-xs font-black uppercase tracking-wide text-red-700">Full RepWatchr file</p>
-                <h2 className="mt-1 text-xl font-black text-gray-950">Votes, positions, social, scoring detail, and sources</h2>
+                <h2 className="mt-1 text-xl font-black text-gray-950">Votes, positions, public links, and sources</h2>
                 <p className="mt-1 text-xs font-semibold text-gray-500">Background research is collapsed so the profile reads cleanly.</p>
               </div>
               <span className="text-sm font-bold text-blue-700 group-open:hidden">Open file &rarr;</span>
@@ -420,22 +413,6 @@ export default async function CandidatePage({ params }: { params: Promise<{ dist
                   <SocialLinks links={candidate.social_media ?? {}} />
                 </div>
               )}
-            </div>
-
-            <div className="mt-6 rounded-2xl border border-slate-800 bg-slate-950 p-6 text-white shadow-sm">
-              <p className="text-xs font-black uppercase tracking-wide text-red-300">RepWatchr scoring detail</p>
-              <h3 className="mt-1 text-lg font-black">How this score is weighted</h3>
-              <div className="mt-4 grid gap-3 md:grid-cols-4">
-                {Object.entries(score.categoryScores).map(([category, value]) => (
-                  <div key={category} className="rounded-xl border border-white/10 bg-white/10 p-4">
-                    <p className="text-xs font-black uppercase tracking-wide text-slate-300">{category.replaceAll("_", " ")}</p>
-                    <p className="mt-1 text-2xl font-black">{value}</p>
-                  </div>
-                ))}
-              </div>
-              <p className="mt-4 text-xs leading-6 text-slate-300">
-                {score.requiredEvidenceNote} Model version: {schoolBoardScoringModel.version}.
-              </p>
             </div>
 
             {(candidate.sources?.length ?? 0) > 0 ? (
@@ -504,30 +481,6 @@ function SourceItem({ title, body, url }: { title: string; body: string; url?: s
           Source &rarr;
         </a>
       ) : null}
-    </div>
-  );
-}
-
-function PoliticalLeanArrow({ label, confidence }: { label: string; confidence: string }) {
-  const position =
-    label === "Votes Republican"
-      ? "left-[78%]"
-      : label === "Votes Democrat"
-        ? "left-[18%]"
-        : "left-1/2";
-  return (
-    <div className="mt-4 rounded-xl border border-gray-200 bg-white p-4">
-      <div className="flex items-center justify-between text-xs font-black uppercase tracking-wide text-gray-500">
-        <span>Left</span>
-        <span>Evidence-based lean</span>
-        <span>Right</span>
-      </div>
-      <div className="relative mt-3 h-3 rounded-full bg-[linear-gradient(90deg,#2563eb_0%,#e5e7eb_50%,#dc2626_100%)]">
-        <span className={`absolute top-1/2 h-6 w-6 -translate-x-1/2 -translate-y-1/2 rotate-45 border-2 border-white bg-gray-950 shadow ${position}`} />
-      </div>
-      <p className="mt-3 text-xs font-bold leading-5 text-gray-700">
-        {label}. Confidence: {confidence}. Moves only when public voting history, donations, endorsements, self-description, or source-backed silent signals are loaded.
-      </p>
     </div>
   );
 }

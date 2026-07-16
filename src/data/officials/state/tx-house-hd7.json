@@ -6,13 +6,18 @@
   "photo": "/images/officials/state-house/jay-dean.jpg",
   "photoSourceUrl": "https://house.texas.gov/images/members/3515.jpg?v=1",
   "photoCredit": "Official Texas House of Representatives photo",
+  "featuredPhoto": "https://static.wixstatic.com/media/d13346_22d2aa8d5bdc43eab7841c4c5c0d0880~mv2_d_4320_2880_s_4_2.jpg/v1/fill/w_975,h_650,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/d13346_22d2aa8d5bdc43eab7841c4c5c0d0880~mv2_d_4320_2880_s_4_2.jpg",
+  "featuredPhotoSourceUrl": "https://www.jaydeanfortexas.com/",
+  "featuredPhotoCredit": "Campaign-supplied portrait via Jay Dean for Texas",
   "party": "R",
   "level": "state",
   "position": "State Representative",
   "district": "HD-7",
   "jurisdiction": "Texas House of Representatives",
   "county": [
-    "Texas"
+    "Gregg County",
+    "Harrison County",
+    "Marion County"
   ],
   "termStart": "2017-01-10",
   "termEnd": "Current legislative term pending source review",
@@ -22,7 +27,7 @@
     "email": "jay.dean@house.texas.gov",
     "website": "https://house.texas.gov/members/3515"
   },
-  "bio": "Jay Dean serves as State Representative for Texas House of Representatives District 7. This RepWatchr starter profile is sourced from official Texas Legislature profile data and OpenStates public records.",
+  "bio": "Jay Dean represents Texas House District 7, covering Gregg, Harrison, and Marion counties. He has served in the Texas House since 2017 after ten years as mayor of Longview and five years on the Longview City Council. The biographical details on this profile come from his official Texas House biography.",
   "campaignPromises": [],
   "reviewStatus": "source_seeded",
   "state": "TX",
@@ -32,13 +37,33 @@
       "url": "https://house.texas.gov/members/3515"
     },
     {
+      "title": "Official Texas House biography",
+      "url": "https://house.texas.gov/members/3515/biography"
+    },
+    {
+      "title": "Texas Legislature committee assignments",
+      "url": "https://capitol.texas.gov/committees/MembershipMbr.aspx?LegCode=A3515&LegSess=89R"
+    },
+    {
+      "title": "Texas Legislative Council House District 7 profile",
+      "url": "https://fyi.capitol.texas.gov/fyiwebdocs/PDF/house/dist7/profile.pdf"
+    },
+    {
+      "title": "89th Legislature author report",
+      "url": "https://capitol.texas.gov/reports/report.aspx?Code=A3515&ID=author&LegSess=89R"
+    },
+    {
       "title": "OpenStates public people record",
       "url": "https://raw.githubusercontent.com/openstates/people/main/data/tx/legislature/Jay-Dean-37886d81-901f-43b4-841b-f3ffbfeeb257.yml"
     },
     {
       "title": "Official profile photo source",
       "url": "https://house.texas.gov/images/members/3515.jpg?v=1"
+    },
+    {
+      "title": "Campaign portrait source",
+      "url": "https://www.jaydeanfortexas.com/"
     }
   ],
-  "lastVerifiedAt": "2026-04-27"
+  "lastVerifiedAt": "2026-07-15"
 }

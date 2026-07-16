@@ -1,354 +1,320 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { getIssueCategories } from "@/lib/data";
 import { buildOgImageUrl, buildRepWatchrMetadata } from "@/lib/repwatchr-seo";
 
 export const metadata: Metadata = {
   ...buildRepWatchrMetadata({
-    title: "Methodology | RepWatchr",
+    title: "Performance Grade Method | RepWatchr",
     description:
-      "How RepWatchr separates facts, public records, scored votes, source gaps, and review status before a claim becomes shareable.",
+      "How RepWatchr grades documented job performance while keeping ideology, popularity, and participant sentiment separate.",
     path: "/methodology",
     imagePath: buildOgImageUrl("methodology"),
-    imageAlt: "RepWatchr methodology social preview",
+    imageAlt: "RepWatchr performance grade methodology",
   }),
 };
 
+const dimensions = [
+  {
+    name: "Voting accountability",
+    weight: 20,
+    question: "Did the official take a documented position when eligible, regardless of whether the vote was yea or nay?",
+  },
+  {
+    name: "Legislative effectiveness",
+    weight: 25,
+    question: "Did the official turn comparable opportunities into substantive, documented outcomes?",
+  },
+  {
+    name: "Ethics and integrity",
+    weight: 25,
+    question: "What do final authoritative findings and required filings establish?",
+  },
+  {
+    name: "Constituent service and transparency",
+    weight: 20,
+    question: "Is the office objectively accessible, responsive, and compliant with transparency duties?",
+  },
+  {
+    name: "Attendance and duty fulfillment",
+    weight: 10,
+    question: "Did the official attend eligible duties after approved leave and official conflicts are excluded?",
+  },
+] as const;
+
+const sourceTiers = [
+  ["Tier 1", "1.0", "Official roll calls, journals, filings, audits, final ethics orders, and court records."],
+  ["Tier 2", "0.9", "Official transcripts, meeting video, agency datasets, and direct official statements."],
+  ["Tier 3", "0.7", "Named independent reporting tied to primary records or independently corroborated."],
+  ["Tier 4", "0.4", "Campaign, advocacy, and social material—proof of the speaker's statement, not proof that an accusation is true."],
+  ["Unverified", "0", "A research lead only. It cannot move a score."],
+] as const;
+
 export default function MethodologyPage() {
-  const categories = getIssueCategories();
-
   return (
-    <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
-      <h1 className="text-3xl font-bold text-gray-900 mb-6">
-        How We Score Officials
-      </h1>
-
-      <div className="prose prose-gray max-w-none">
-        <section className="mb-8">
-          <h2 className="text-xl font-bold text-gray-900 mb-3">
-            Our Principles
-          </h2>
-          <div className="bg-blue-50 border border-blue-200 rounded-lg p-5 not-prose">
-            <ul className="space-y-3 text-sm text-blue-900">
-              <li className="flex items-start gap-2">
-                <span className="font-bold text-blue-600 mt-0.5">1.</span>
-                <span>
-                  <strong>Transparent:</strong> Every score is traceable to
-                  specific votes. No black boxes. You can see exactly which
-                  votes contributed to every grade.
-                </span>
-              </li>
-              <li className="flex items-start gap-2">
-                <span className="font-bold text-blue-600 mt-0.5">2.</span>
-                <span>
-                  <strong>Texas-focused:</strong> Scores reflect what
-                  matters to Texas residents specifically, not national
-                  partisan scorecards.
-                </span>
-              </li>
-              <li className="flex items-start gap-2">
-                <span className="font-bold text-blue-600 mt-0.5">3.</span>
-                <span>
-                  <strong>Issue-based:</strong> We score on the issues, not on
-                  party. Any official who votes to protect Texas interests
-                  gets credit regardless of party affiliation.
-                </span>
-              </li>
-            </ul>
-          </div>
-        </section>
-
-        <section className="mb-8">
-          <h2 className="text-xl font-bold text-gray-900 mb-3">
-            Issue Categories
-          </h2>
-          <p className="text-gray-600 mb-4">
-            Officials are scored across five issue categories, each weighted
-            equally at 20% of the overall score:
+    <main className="min-h-screen bg-[#f8fbff] text-slate-950">
+      <section className="overflow-hidden bg-[#061735] text-white">
+        <div className="mx-auto max-w-6xl px-4 py-16 sm:px-6 sm:py-24 lg:px-8">
+          <p className="text-xs font-black uppercase tracking-[0.22em] text-red-300">Performance grade • method v1.0</p>
+          <h1 className="mt-4 max-w-5xl text-4xl font-black leading-[0.95] tracking-[-0.05em] sm:text-7xl">
+            Grade the job. Never grade the party.
+          </h1>
+          <p className="mt-6 max-w-3xl text-lg font-semibold leading-8 text-slate-300">
+            RepWatchr&apos;s overall grade measures documented execution of public duties. Ideology, party loyalty,
+            fundraising, follower counts, press volume, and community popularity do not change it.
           </p>
-          <div className="not-prose grid grid-cols-1 sm:grid-cols-2 gap-4">
-            {categories.map((cat) => (
-              <div
-                key={cat.id}
-                className="border border-gray-200 rounded-lg p-4"
+          <div className="mt-8 flex flex-wrap gap-3">
+            <Link href="/officials" className="rounded-xl bg-amber-300 px-5 py-3 text-sm font-black text-slate-950 hover:bg-amber-200">
+              Browse profiles
+            </Link>
+            <a href="#publication-gates" className="rounded-xl border border-white/20 px-5 py-3 text-sm font-black text-white hover:bg-white/10">
+              See publication gates
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section className="mx-auto max-w-6xl px-4 py-14 sm:px-6 sm:py-20 lg:px-8">
+        <MethodHeading
+          eyebrow="First principle"
+          title="One profile. Three outputs that never contaminate one another."
+          description="This separation prevents popularity or editorial preference from masquerading as job performance."
+        />
+        <div className="mt-8 grid gap-4 lg:grid-cols-3">
+          <MethodCard
+            number="01"
+            title="Verified performance grade"
+            body="A 0–100 job-performance score. A letter appears only after the same evidence gates clear for comparable officials."
+            tone="blue"
+          />
+          <MethodCard
+            number="02"
+            title="Vote and issue alignment"
+            body="The sourced vote plus an optional comparison to a member's own priorities. Policy direction never changes the performance grade."
+            tone="amber"
+          />
+          <MethodCard
+            number="03"
+            title="Participant sentiment"
+            body="A separate, self-selected community signal. It is not a scientific poll, endorsement, or performance input."
+            tone="green"
+          />
+        </div>
+      </section>
+
+      <section className="border-y border-slate-200 bg-white">
+        <div className="mx-auto max-w-6xl px-4 py-14 sm:px-6 sm:py-20 lg:px-8">
+          <MethodHeading
+            eyebrow="The five dimensions"
+            title="Every point answers a neutral job-performance question."
+            description="A yea and a nay are not scored as morally correct or incorrect. Missing evidence is never converted into a zero, a 50, or a guess."
+          />
+          <div className="mt-8 overflow-hidden rounded-3xl border border-slate-200">
+            {dimensions.map((dimension, index) => (
+              <article
+                key={dimension.name}
+                className={`grid gap-4 p-5 sm:grid-cols-[4rem_15rem_minmax(0,1fr)] sm:items-center sm:p-6 ${
+                  index ? "border-t border-slate-200" : ""
+                }`}
               >
-                <div className="flex items-center gap-2 mb-2">
-                  <span
-                    className="w-3 h-3 rounded-full"
-                    style={{ backgroundColor: cat.color }}
-                  />
-                  <h3 className="font-semibold text-gray-900">{cat.name}</h3>
-                </div>
-                <p className="text-sm text-gray-600">{cat.description}</p>
-                <p
-                  className="text-xs font-medium mt-2"
-                  style={{ color: cat.color }}
-                >
-                  {cat.weight}% of overall score
-                </p>
-              </div>
+                <p className="text-3xl font-black tracking-[-0.05em] text-blue-800">{dimension.weight}%</p>
+                <h2 className="text-base font-black text-slate-950">{dimension.name}</h2>
+                <p className="text-sm font-semibold leading-6 text-slate-600">{dimension.question}</p>
+              </article>
             ))}
           </div>
-        </section>
+        </div>
+      </section>
 
-        <section className="mb-8">
-          <h2 className="text-xl font-bold text-gray-900 mb-3">
-            How Scores Are Calculated
-          </h2>
-          <div className="space-y-4 text-gray-700 text-sm">
-            <div className="bg-gray-50 rounded-lg p-4">
-              <h3 className="font-semibold text-gray-900 mb-2">
-                Step 1: Identify Relevant Bills
-              </h3>
-              <p>
-                We identify bills at the federal and state level that directly
-                impact Texas on each issue category. Each bill is tagged
-                with the &quot;pro-Texas&quot; position -- the vote that
-                best serves Texas residents&apos; interests.
-              </p>
-            </div>
-            <div className="bg-gray-50 rounded-lg p-4">
-              <h3 className="font-semibold text-gray-900 mb-2">
-                Step 2: Score Each Vote
-              </h3>
-              <p>
-                Each vote is scored: <strong>Aligned</strong> (voted in East
-                Texas interest) = 100 points. <strong>Not Aligned</strong> =
-                0 points. <strong>Absent/Abstain</strong> = 50 points (neutral).
-              </p>
-            </div>
-            <div className="bg-gray-50 rounded-lg p-4">
-              <h3 className="font-semibold text-gray-900 mb-2">
-                Step 3: Category Score
-              </h3>
-              <p>
-                The category score is the weighted average of all scored votes
-                in that category. Major legislation is weighted more heavily
-                than procedural votes.
-              </p>
-            </div>
-            <div className="bg-gray-50 rounded-lg p-4">
-              <h3 className="font-semibold text-gray-900 mb-2">
-                Step 4: Overall Score
-              </h3>
-              <p>
-                The overall score is the weighted average of all category
-                scores. Each category contributes its designated weight
-                (currently 20% each).
-              </p>
-            </div>
+      <section id="publication-gates" className="scroll-mt-24 bg-[linear-gradient(180deg,#eef5ff,#f8fbff)]">
+        <div className="mx-auto max-w-6xl px-4 py-14 sm:px-6 sm:py-20 lg:px-8">
+          <MethodHeading
+            eyebrow="Publication gates"
+            title="A grade is withheld until the evidence can defend it."
+            description="NR is not a favor or a punishment. It means the record has not cleared the same published gate required for everyone else."
+          />
+          <div className="mt-8 grid gap-5 lg:grid-cols-3">
+            <GateCard
+              label="Full number + letter"
+              value="80%+"
+              body="At least 80% of planned weight scoreable, 70% weighted coverage, 65% confidence, four categories, and ethics scoreable."
+            />
+            <GateCard
+              label="Provisional number"
+              value="60%+"
+              body="At least 60% of planned weight scoreable and 45% confidence. The number is labeled provisional and receives no letter."
+            />
+            <GateCard
+              label="Not rated"
+              value="NR"
+              body="Below the provisional gate: no numeric score, no letter, and a visible checklist of the evidence that is still missing."
+            />
           </div>
-        </section>
-
-        <section className="mb-8">
-          <h2 className="text-xl font-bold text-gray-900 mb-3">
-            Left / Right Ideology Chart
-          </h2>
-          <div className="space-y-4 text-gray-700 text-sm">
-            <div className="bg-slate-50 rounded-lg p-4">
-              <h3 className="font-semibold text-gray-900 mb-2">
-                Federal Officials: Official Roll Calls First
-              </h3>
-              <p>
-                For U.S. House and U.S. Senate profiles, RepWatchr loads
-                source snapshots from the official House Clerk and Senate
-                roll-call feeds. Those rows are evidence records first. They do
-                not automatically move the left/right meter until a reviewed
-                issue rule maps that vote to a direction.
-              </p>
-              <p className="mt-2">
-                Sources:{" "}
-                <a
-                  href="https://clerk.house.gov/evs/2026/index.asp"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="font-semibold text-blue-700 hover:underline"
-                >
-                  House Clerk roll calls
-                </a>{" "}
-                and{" "}
-                <a
-                  href="https://www.senate.gov/legislative/LIS/roll_call_lists/vote_menu_119_2.xml"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="font-semibold text-blue-700 hover:underline"
-                >
-                  Senate roll-call XML
-                </a>
-                .
-              </p>
-            </div>
-            <div className="bg-slate-50 rounded-lg p-4">
-              <h3 className="font-semibold text-gray-900 mb-2">
-                Texas State and Local Officials
-              </h3>
-              <p>
-                State representatives, senators, school board members, county
-                officials, and city officials do not receive an automatic
-                left/right score until RepWatchr has enough source-backed
-                votes, minutes, agendas, or public records to avoid guessing.
-                Texas Legislature Online roll calls and local meeting minutes
-                are the next source lanes.
-              </p>
-            </div>
-          </div>
-        </section>
-
-        <section id="constitutional-alignment" className="mb-8 scroll-mt-24">
-          <h2 className="text-xl font-bold text-gray-900 mb-3">
-            Constitutional Alignment Meter
-          </h2>
-          <div className="space-y-4 text-gray-700 text-sm">
-            <div className="bg-emerald-50 border border-emerald-200 rounded-lg p-4">
-              <h3 className="font-semibold text-gray-900 mb-2">
-                What It Measures
-              </h3>
-              <p>
-                The constitutional meter is separate from party ideology. It
-                asks whether reviewed public votes line up with limited
-                government, individual liberty, fiscal restraint, federalism,
-                transparency, and due process. It is a civic accountability
-                signal, not a legal finding.
-              </p>
-            </div>
-            <div className="bg-gray-50 rounded-lg p-4">
-              <h3 className="font-semibold text-gray-900 mb-2">
-                What Moves the Meter
-              </h3>
-              <p>
-                Only reviewed issue rules move the score. For example, a vote
-                to extend surveillance authority can be scored against
-                individual liberty when the vote text does not show a limiting
-                civil-liberties reform. A vote against waiving budgetary
-                discipline can receive fiscal-restraint credit. Vague
-                amendments, nominations, cloture votes, and broad omnibus bills
-                stay visible but marked &quot;needs policy review&quot; until a
-                human-reviewed rule is added.
-              </p>
-            </div>
-            <div className="bg-gray-50 rounded-lg p-4">
-              <h3 className="font-semibold text-gray-900 mb-2">
-                Source Path
-              </h3>
-              <p>
-                Federal roll calls are linked to the House Clerk, Senate roll
-                call tables, and Congress.gov where available. Texas state
-                roll-call review will use Texas Legislature Online vote pages
-                and journals. Local official scoring will require meeting
-                minutes, agendas, video, or records requests before the meter
-                moves.
-              </p>
-              <div className="mt-3 flex flex-wrap gap-2 not-prose">
-                {[
-                  ["House Clerk Votes", "https://clerk.house.gov/Votes"],
-                  ["Senate Votes", "https://www.senate.gov/legislative/HowTo/how_to_votes.htm"],
-                  ["Congress.gov API", "https://api.congress.gov/"],
-                  ["Texas Vote Info", "https://capitol.texas.gov/help/findvoteinfo.aspx"],
-                  ["U.S. Constitution", "https://www.archives.gov/founding-docs/constitution-transcript"],
-                  ["Bill of Rights", "https://www.archives.gov/founding-docs/bill-of-rights/what-does-it-say"],
-                ].map(([label, href]) => (
-                  <a
-                    key={href}
-                    href={href}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="rounded-full border border-gray-200 bg-white px-3 py-1 text-xs font-bold text-blue-700 hover:bg-blue-50"
-                  >
-                    {label}
-                  </a>
-                ))}
+          <div className="mt-6 rounded-3xl bg-slate-950 p-6 text-white sm:p-8">
+            <div className="grid gap-6 lg:grid-cols-[minmax(0,1fr)_20rem] lg:items-center">
+              <div>
+                <p className="text-xs font-black uppercase tracking-[0.18em] text-red-300">Missing data rule</p>
+                <h2 className="mt-2 text-2xl font-black">Confidence explains uncertainty. It does not punish the official.</h2>
+                <p className="mt-3 text-sm font-semibold leading-6 text-slate-300">
+                  Category confidence combines coverage, source quality, freshness, and reliability. It is displayed
+                  beside the score and never multiplied into the official&apos;s performance.
+                </p>
+              </div>
+              <div className="rounded-2xl border border-white/10 bg-white/5 p-5 font-mono text-xs leading-6 text-blue-100">
+                confidence = coverage ×<br />
+                (0.50 source quality +<br />
+                0.25 freshness +<br />
+                0.25 reliability)
               </div>
             </div>
           </div>
-        </section>
+        </div>
+      </section>
 
-        <section className="mb-8">
-          <h2 className="text-xl font-bold text-gray-900 mb-3">
-            Letter Grade Scale
-          </h2>
-          <div className="not-prose overflow-x-auto">
-            <table className="min-w-full text-sm border border-gray-200 rounded-lg overflow-hidden">
-              <thead className="bg-gray-50">
-                <tr>
-                  <th className="px-4 py-2 text-left text-xs font-medium text-gray-500 uppercase">
-                    Grade
-                  </th>
-                  <th className="px-4 py-2 text-left text-xs font-medium text-gray-500 uppercase">
-                    Score Range
-                  </th>
-                  <th className="px-4 py-2 text-left text-xs font-medium text-gray-500 uppercase">
-                    Meaning
-                  </th>
-                </tr>
-              </thead>
-              <tbody className="divide-y divide-gray-200">
-                {[
-                  { grade: "A+ / A / A-", range: "90 - 100", meaning: "Excellent - Strongly aligned with Texas interests" },
-                  { grade: "B+ / B / B-", range: "80 - 89", meaning: "Good - Generally supportive of Texas interests" },
-                  { grade: "C+ / C / C-", range: "70 - 79", meaning: "Average - Mixed record on Texas issues" },
-                  { grade: "D+ / D / D-", range: "60 - 69", meaning: "Below Average - Often votes against Texas interests" },
-                  { grade: "F", range: "0 - 59", meaning: "Poor - Consistently votes against Texas interests" },
-                ].map((row) => (
-                  <tr key={row.grade}>
-                    <td className="px-4 py-2 font-medium">{row.grade}</td>
-                    <td className="px-4 py-2 text-gray-600">{row.range}</td>
-                    <td className="px-4 py-2 text-gray-600">{row.meaning}</td>
-                  </tr>
-                ))}
-              </tbody>
-            </table>
+      <section className="bg-white">
+        <div className="mx-auto max-w-6xl px-4 py-14 sm:px-6 sm:py-20 lg:px-8">
+          <MethodHeading
+            eyebrow="Evidence and due process"
+            title="Allegations may be reported. They never become deductions by repetition."
+            description="Only final court orders, authorized ethics findings, audits, or equivalent authoritative dispositions can reduce the ethics score."
+          />
+          <div className="mt-8 grid gap-5 lg:grid-cols-[minmax(0,1.15fr)_minmax(20rem,0.85fr)]">
+            <div className="overflow-hidden rounded-3xl border border-slate-200">
+              {sourceTiers.map(([tier, quality, use], index) => (
+                <div key={tier} className={`grid gap-2 p-5 sm:grid-cols-[7rem_4rem_minmax(0,1fr)] ${index ? "border-t border-slate-200" : ""}`}>
+                  <p className="font-black text-slate-950">{tier}</p>
+                  <p className="font-mono text-sm font-black text-blue-800">{quality}</p>
+                  <p className="text-sm font-semibold leading-6 text-slate-600">{use}</p>
+                </div>
+              ))}
+            </div>
+            <aside className="rounded-3xl border border-amber-200 bg-amber-50 p-6">
+              <p className="text-xs font-black uppercase tracking-[0.18em] text-amber-900">Response and appeal</p>
+              <ol className="mt-4 space-y-3 text-sm font-semibold leading-6 text-amber-950">
+                <li>1. Verify and classify the evidence.</li>
+                <li>2. Notify the official of a score-moving integrity event or major score change.</li>
+                <li>3. Allow ten business days for a response.</li>
+                <li>4. Require a second reviewer for high-impact records.</li>
+                <li>5. Publish the source, calculation, and response.</li>
+                <li>6. Route appeals to a reviewer who did not make the first decision.</li>
+              </ol>
+              <p className="mt-4 rounded-xl bg-white/70 p-3 text-xs font-black leading-5 text-amber-950">
+                Pending, contested, or anonymous allegations have zero score effect.
+              </p>
+            </aside>
           </div>
-        </section>
+        </div>
+      </section>
 
-        <section className="mb-8">
-          <h2 className="text-xl font-bold text-gray-900 mb-3">
-            Officials Without Voting Records
-          </h2>
-          <p className="text-gray-700 text-sm">
-            County judges, commissioners, mayors, city council members, and
-            school board members often do not have easily accessible roll-call
-            voting records. For these officials, we display
-            &quot;Insufficient Data&quot; rather than a misleading score. As
-            we gather more data from commissioner court votes, city council
-            meetings, and school board minutes, scores will be added.
-          </p>
-        </section>
+      <section className="border-y border-slate-200 bg-slate-50">
+        <div className="mx-auto max-w-6xl px-4 py-14 sm:px-6 sm:py-20 lg:px-8">
+          <MethodHeading
+            eyebrow="Community signal"
+            title="Verified participant sentiment stays visible—and separate."
+            description="One current response per verified member. In-district results are primary; other locations are labeled separately. Public results unlock at 25 eligible responses."
+          />
+          <div className="mt-8 grid gap-5 lg:grid-cols-[minmax(0,1fr)_22rem]">
+            <div className="rounded-3xl border border-slate-200 bg-white p-6 sm:p-8">
+              <p className="text-2xl font-black text-slate-950">Uncertainty shrinks toward neutral—not toward disapproval.</p>
+              <p className="mt-3 text-sm font-semibold leading-6 text-slate-600">
+                RepWatchr uses a neutral prior of 50 with a starting weight of 50 responses. Small coordinated samples
+                therefore remain visibly uncertain instead of looking like a zero.
+              </p>
+              <div className="mt-5 rounded-2xl bg-blue-50 p-4 font-mono text-xs font-bold leading-6 text-blue-950 sm:text-sm">
+                sentiment = (n × raw average + 50 × 50) ÷ (n + 50)
+              </div>
+            </div>
+            <div className="rounded-3xl bg-[#061735] p-6 text-white">
+              <p className="text-xs font-black uppercase tracking-[0.18em] text-blue-200">Public label</p>
+              <p className="mt-4 text-2xl font-black leading-8">Verified participant sentiment</p>
+              <p className="mt-3 text-sm font-semibold leading-6 text-slate-300">Not an election. Not a scientific poll. Never part of the performance grade.</p>
+            </div>
+          </div>
+        </div>
+      </section>
 
-        <section className="mb-8">
-          <h2 className="text-xl font-bold text-gray-900 mb-3">
-            Campaign Finance Data
-          </h2>
-          <p className="text-gray-700 text-sm mb-3">
-            Campaign funding data is sourced from:
+      <section className="mx-auto max-w-6xl px-4 py-14 sm:px-6 sm:py-20 lg:px-8">
+        <MethodHeading
+          eyebrow="Letter scale"
+          title="One scale everywhere. No invented precision."
+          description="Version 1 uses whole-letter grades only. The evidence does not justify plus/minus theater."
+        />
+        <div className="mt-8 grid grid-cols-2 gap-3 sm:grid-cols-5">
+          {[
+            ["A", "90–100", "bg-emerald-600"],
+            ["B", "80–89", "bg-lime-600"],
+            ["C", "70–79", "bg-amber-500"],
+            ["D", "60–69", "bg-orange-600"],
+            ["F", "0–59", "bg-red-600"],
+          ].map(([grade, range, color]) => (
+            <div key={grade} className="overflow-hidden rounded-2xl border border-slate-200 bg-white text-center">
+              <p className={`${color} py-4 text-4xl font-black text-white`}>{grade}</p>
+              <p className="px-3 py-3 text-sm font-black text-slate-700">{range}</p>
+            </div>
+          ))}
+        </div>
+        <div className="mt-10 rounded-3xl border border-blue-200 bg-blue-50 p-6 text-center">
+          <p className="text-sm font-bold leading-6 text-blue-950">
+            See a factual error or a missing source? Corrections create a new version instead of silently erasing the old calculation.
           </p>
-          <ul className="list-disc list-inside text-sm text-gray-700 space-y-1">
-            <li>
-              <strong>Federal officials:</strong> Federal Election Commission
-              (FEC) via OpenFEC API
-            </li>
-            <li>
-              <strong>State officials:</strong> Texas Ethics Commission (TEC)
-              electronic filing data
-            </li>
-            <li>
-              <strong>Local officials:</strong> TEC local filer database
-              (where available)
-            </li>
-          </ul>
-        </section>
-
-        <div className="bg-gray-100 rounded-lg p-6 text-center">
-          <p className="text-gray-600 text-sm mb-3">
-            Have questions about our methodology or see an error?
-          </p>
-          <Link
-            href="/about"
-            className="text-blue-600 hover:underline text-sm font-medium"
-          >
-            Contact us →
+          <Link href="/submit-source" className="mt-4 inline-flex rounded-xl bg-blue-800 px-5 py-3 text-sm font-black text-white hover:bg-blue-900">
+            Submit a source or correction
           </Link>
         </div>
-      </div>
-    </div>
+      </section>
+    </main>
+  );
+}
+
+function MethodHeading({
+  eyebrow,
+  title,
+  description,
+}: {
+  eyebrow: string;
+  title: string;
+  description: string;
+}) {
+  return (
+    <header>
+      <p className="text-xs font-black uppercase tracking-[0.2em] text-red-700">{eyebrow}</p>
+      <h2 className="mt-3 max-w-5xl text-3xl font-black leading-[1.02] tracking-[-0.04em] text-slate-950 sm:text-5xl">{title}</h2>
+      <p className="mt-4 max-w-3xl text-base font-semibold leading-7 text-slate-600">{description}</p>
+    </header>
+  );
+}
+
+function MethodCard({
+  number,
+  title,
+  body,
+  tone,
+}: {
+  number: string;
+  title: string;
+  body: string;
+  tone: "blue" | "amber" | "green";
+}) {
+  const tones = {
+    blue: "border-blue-200 bg-blue-50 text-blue-950",
+    amber: "border-amber-200 bg-amber-50 text-amber-950",
+    green: "border-emerald-200 bg-emerald-50 text-emerald-950",
+  };
+
+  return (
+    <article className={`rounded-3xl border p-6 ${tones[tone]}`}>
+      <p className="text-xs font-black uppercase tracking-[0.18em] opacity-65">{number}</p>
+      <h2 className="mt-3 text-2xl font-black tracking-tight">{title}</h2>
+      <p className="mt-3 text-sm font-semibold leading-6 opacity-80">{body}</p>
+    </article>
+  );
+}
+
+function GateCard({ label, value, body }: { label: string; value: string; body: string }) {
+  return (
+    <article className="rounded-3xl border border-slate-200 bg-white p-6 shadow-sm">
+      <p className="text-xs font-black uppercase tracking-[0.16em] text-blue-800">{label}</p>
+      <p className="mt-3 text-5xl font-black tracking-[-0.06em] text-slate-950">{value}</p>
+      <p className="mt-4 text-sm font-semibold leading-6 text-slate-600">{body}</p>
+    </article>
   );
 }

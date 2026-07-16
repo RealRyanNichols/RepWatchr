@@ -16,5 +16,13 @@
   "cities": ["Gladewater", "Tyler", "Longview"],
   "locationLabel": "East Texas",
   "powerChannels": ["officials", "money"],
-  "sourceStatus": "source_linked"
+  "sourceStatus": "source_linked",
+  "editorialStatus": "approved",
+  "reviewedAt": "2026-07-15T23:30:00Z",
+  "reviewedBy": "RepWatchr editorial migration",
+  "correctionStatus": "none",
+  "topicKey": "public-infrastructure",
+  "primarySourceCount": 0,
+  "independentPublisherCount": 1,
+  "midtermRelevance": 1
 }
