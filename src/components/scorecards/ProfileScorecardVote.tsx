@@ -492,8 +492,8 @@ export default function ProfileScorecardVote({
   if (loading || authLoading) {
     return (
       <div className={compact ? "rounded-xl border border-slate-200 bg-white p-3" : "rounded-2xl border border-slate-200 bg-white p-5 shadow-sm"}>
-        <div className="h-4 w-40 animate-pulse rounded bg-slate-200" />
-        <div className="mt-3 h-3 w-full animate-pulse rounded bg-slate-100" />
+        <div className="h-4 w-40 animate-pulse rounded bg-slate-200 motion-reduce:animate-none" />
+        <div className="mt-3 h-3 w-full animate-pulse rounded bg-slate-100 motion-reduce:animate-none" />
       </div>
     );
   }
@@ -551,6 +551,12 @@ export default function ProfileScorecardVote({
       ) : (
         <div className="mt-3">
           <GradeBars row={summary} compact />
+          <p className="mt-2 text-[11px] font-semibold leading-5 text-slate-500">
+            Based on {summary?.total_votes ?? 0} verified response{summary?.total_votes === 1 ? "" : "s"}.
+            {constituentSummary?.total_votes
+              ? ` Local average uses ${constituentSummary.total_votes} in-district or in-state response${constituentSummary.total_votes === 1 ? "" : "s"}.`
+              : " A local sample has not been established yet."}
+          </p>
         </div>
       )}
 

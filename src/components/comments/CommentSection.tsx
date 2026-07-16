@@ -414,7 +414,7 @@ export default function CommentSection({
       {loading ? (
         <div className="space-y-4">
           {[1, 2, 3].map((i) => (
-            <div key={i} className="animate-pulse rounded-xl bg-gray-100 p-5 h-24" />
+            <div key={i} className="h-24 animate-pulse rounded-xl bg-gray-100 p-5 motion-reduce:animate-none" />
           ))}
         </div>
       ) : comments.length === 0 ? (

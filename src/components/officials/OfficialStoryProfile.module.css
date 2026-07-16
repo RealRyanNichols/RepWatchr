@@ -1,0 +1,31 @@
+.story {
+  --paper: #f4f1e8;
+  --ink: #111b24;
+  --navy: #163b5c;
+  --rust: #a23a2b;
+  --ochre: #b58b32;
+  --rule: #cbc4b5;
+  color: var(--ink);
+}
+
+.display {
+  font-family: Georgia, "Times New Roman", serif;
+  letter-spacing: -0.025em;
+}
+
+@media (max-width: 639px) {
+  .display {
+    letter-spacing: -0.018em;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .story *,
+  .story *::before,
+  .story *::after {
+    scroll-behavior: auto !important;
+    transition-duration: 0.01ms !important;
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+  }
+}

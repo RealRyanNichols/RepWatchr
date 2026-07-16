@@ -1,6 +1,5 @@
 import Link from "next/link";
 import OfficialPhotoImage, { FEATURED_OFFICIAL_PHOTO_QUALITY } from "@/components/shared/OfficialPhotoImage";
-import PartyBadge from "@/components/officials/PartyBadge";
 import ProfileActionDock from "@/components/officials/ProfileActionDock";
 import { formatLevelName } from "@/lib/formatting";
 import type { PerformanceGradeResult } from "@/lib/performance-grade";
@@ -32,6 +31,16 @@ export function OfficialProfileHero({
   heroSummary,
 }: OfficialProfileHeroProps) {
   const latestVote = voteRecord?.votes[0];
+  const reviewedAt = voteRecord?.lastUpdated ?? official.lastVerifiedAt;
+  const gradeValue =
+    performanceGrade?.status === "published" && performanceGrade.score !== null
+      ? `${performanceGrade.score} / ${performanceGrade.letterGrade}`
+      : performanceGrade?.status === "provisional" && performanceGrade.score !== null
+        ? `${performanceGrade.score} / provisional`
+        : "Not rated";
+  const gradeDetail = performanceGrade
+    ? `${performanceGrade.scoreableWeight}% of grade weight cleared`
+    : "Evidence gate not reviewed";
   const contactHref = official.contactInfo.email
     ? official.contactInfo.email.startsWith("http")
       ? official.contactInfo.email
@@ -41,13 +50,9 @@ export function OfficialProfileHero({
 
   return (
     <section className={styles.hero}>
-      <div className={styles.grid} />
-      <div className={`${styles.aurora} ${styles.auroraBlue}`} />
-      <div className={`${styles.aurora} ${styles.auroraRed}`} />
-
-      <div className="mx-auto max-w-7xl px-4 pb-8 pt-5 sm:px-6 sm:pb-10 lg:px-8 lg:pb-12">
-        <div className="mb-8 flex flex-wrap items-center justify-between gap-3 border-b border-white/10 pb-4">
-          <div className="flex items-center gap-2 text-xs font-bold text-slate-300">
+      <div className="mx-auto max-w-7xl px-4 pb-10 pt-5 sm:px-6 sm:pb-12 lg:px-8 lg:pb-16">
+        <div className="mb-10 border-b border-white/15 pb-4">
+          <div className="flex items-center gap-2 text-sm font-semibold text-slate-300">
             <Link href="/officials" className="transition hover:text-white">
               Officials
             </Link>
@@ -56,40 +61,30 @@ export function OfficialProfileHero({
             </span>
             <span className="text-white">{official.name}</span>
           </div>
-          <div className="flex items-center gap-2 rounded-full border border-emerald-300/25 bg-emerald-300/10 px-3 py-1.5 text-[10px] font-black uppercase tracking-[0.16em] text-emerald-200">
-            <span className={styles.sourcePulse} aria-hidden="true" />
-            Source-linked public record
-          </div>
         </div>
 
-        <div className="grid items-center gap-8 lg:grid-cols-[minmax(0,1.08fr)_minmax(24rem,0.72fr)] lg:gap-12">
-          <div className="relative z-10">
-            <div className="flex flex-wrap items-center gap-2.5">
-              <span className="rounded-full border border-white/15 bg-white/10 px-3 py-1.5 text-[10px] font-black uppercase tracking-[0.2em] text-slate-200 backdrop-blur">
-                2026 civic record
-              </span>
-              <PartyBadge party={official.party} />
-              {official.district ? (
-                <span className="rounded-full border border-blue-300/25 bg-blue-400/10 px-3 py-1.5 text-[10px] font-black uppercase tracking-[0.18em] text-blue-100">
-                  {official.district}
-                </span>
-              ) : null}
-            </div>
+        <div className={styles.heroGrid}>
+          <div className={styles.heroIntro}>
+            <p className={styles.dateline}>
+              {official.position}
+              {official.district ? ` · ${official.district}` : ""} · {formatPartyName(official.party)} · {sourceCount > 0 ? "Source-linked record" : "Source review open"}
+              {reviewedAt ? ` · reviewed ${formatShortDate(reviewedAt)}` : ""}
+            </p>
 
-            <h1 className="mt-5 max-w-4xl text-[clamp(3.35rem,9vw,7.5rem)] font-black leading-[0.82] tracking-[-0.065em] text-white">
+            <h1 className={`${styles.heroName} mt-5 max-w-4xl text-[clamp(3.35rem,9vw,7.25rem)] font-bold leading-[0.9] text-white`}>
               {official.name}
             </h1>
-            <div className="mt-6 flex flex-wrap items-center gap-x-4 gap-y-2 text-base font-bold text-slate-200 sm:text-lg">
-              <span>{official.position}</span>
-              <span className="h-1 w-1 rounded-full bg-amber-300" aria-hidden="true" />
-              <span>{official.jurisdiction}</span>
-            </div>
+            <p className="mt-5 border-l-2 border-amber-300 pl-4 text-base font-bold text-slate-200 sm:text-lg">
+              {official.jurisdiction}
+            </p>
             <p className="mt-5 max-w-2xl text-base font-medium leading-7 text-slate-300 sm:text-lg sm:leading-8">
               {heroSummary ??
                 "A visual, source-linked view of the office, roll calls, money trail, and public record. Missing evidence stays labeled as missing—not turned into a conclusion."}
             </p>
+          </div>
 
-            <div className="mt-7">
+          <div className={styles.heroLower}>
+            <div className={styles.actionDock}>
               <ProfileActionDock
                 officialName={official.name}
                 path={`/officials/${official.id}`}
@@ -98,81 +93,66 @@ export function OfficialProfileHero({
               />
             </div>
 
-            <dl className="mt-8 grid grid-cols-2 gap-px overflow-hidden rounded-2xl border border-white/12 bg-white/10 sm:grid-cols-4">
-              <HeroMetric
-                label="Overall grade"
-                value={
-                  performanceGrade?.status === "published" && performanceGrade.score !== null
-                    ? `${performanceGrade.score} / ${performanceGrade.letterGrade}`
-                    : performanceGrade?.status === "provisional" && performanceGrade.score !== null
-                      ? `${performanceGrade.score} / provisional`
-                      : "NR"
-                }
-                detail={
-                  performanceGrade
-                    ? `${performanceGrade.scoreableWeight}% of grade weight cleared`
-                    : "Evidence gate not reviewed"
-                }
-              />
-              <HeroMetric
-                label="Votes indexed"
-                value={voteRecord ? compactNumber(voteRecord.summary.totalVotesLoaded) : "Pending"}
-                detail={voteRecord ? `Through ${formatShortDate(voteRecord.lastUpdated)}` : "Source path only"}
-              />
-              <HeroMetric
-                label="Public receipts"
-                value={sourceCount.toLocaleString()}
-                detail="Unique linked sources"
-              />
-              <HeroMetric
-                label="Profile depth"
-                value={`${buildoutPercent}%`}
-                detail={buildoutComplete ? "Core record loaded" : "Buildout continues"}
-              />
-            </dl>
+            <div className={styles.recordLedger}>
+              <div className={styles.gradeBlock}>
+                <p className={styles.recordLabel}>Overall grade</p>
+                <p className={styles.gradeValue}>{gradeValue}</p>
+                <p className={styles.gradeDetail}>{gradeDetail}</p>
+              </div>
+              <dl className={styles.statRail}>
+                <HeroMetric
+                  label="Votes indexed"
+                  value={voteRecord ? compactNumber(voteRecord.summary.totalVotesLoaded) : "Pending"}
+                  detail={voteRecord ? `Through ${formatShortDate(voteRecord.lastUpdated)}` : "Source path only"}
+                />
+                <HeroMetric
+                  label="Public receipts"
+                  value={sourceCount.toLocaleString()}
+                  detail="Unique linked sources"
+                />
+                <HeroMetric
+                  label="Profile depth"
+                  value={`${buildoutPercent}%`}
+                  detail={buildoutComplete ? "Core record loaded" : "Buildout continues"}
+                />
+              </dl>
+            </div>
           </div>
 
-          <figure className={styles.portraitStage}>
-            <div className={styles.orbit} />
-            <div className={styles.orbitInner} />
-            <div className={styles.portraitFrame}>
-              <OfficialPhotoImage
-                official={official}
-                sizes="(min-width: 1024px) 520px, (min-width: 640px) 62vw, 88vw"
-                quality={FEATURED_OFFICIAL_PHOTO_QUALITY}
-                preload
-                className={styles.portraitImage}
-                fallbackClassName="grid h-full w-full place-items-center text-7xl font-black text-white/55"
-              />
-              <div className="absolute bottom-5 left-5 z-[3] max-w-[58%]">
-                <p className="text-[10px] font-black uppercase tracking-[0.2em] text-amber-200">Serving since</p>
-                <p className="mt-1 text-2xl font-black text-white">{formatYear(official.termStart)}</p>
+          <div className={styles.portraitStage}>
+            <figure className={styles.portraitFigure}>
+              <div className={styles.portraitFrame}>
+                <OfficialPhotoImage
+                  official={official}
+                  sizes="(min-width: 1024px) 520px, (min-width: 640px) 62vw, 88vw"
+                  quality={FEATURED_OFFICIAL_PHOTO_QUALITY}
+                  preload
+                  adaptivePortrait
+                  featuredClassName={styles.portraitImage}
+                  portraitClassName={styles.portraitImageAdaptive}
+                  fallbackClassName="grid h-full w-full place-items-center text-7xl font-black text-white/55"
+                />
               </div>
-            </div>
-            <div className={`${styles.glassCard} ${styles.portraitCard} rounded-2xl p-4`}>
-              <div className="flex items-center justify-between gap-3">
-                <p className="text-[10px] font-black uppercase tracking-[0.18em] text-blue-200">
-                  {latestVote ? "Latest indexed roll call" : "Profile status"}
-                </p>
-                <span className="rounded-full bg-white/10 px-2 py-1 text-[10px] font-black uppercase text-white">
-                  {latestVote?.voteCast ?? `${buildoutPercent}% loaded`}
-                </span>
-              </div>
-              <p className="mt-2 line-clamp-2 text-sm font-black leading-5 text-white">
+              <figcaption className={styles.portraitCaption}>
+                <span>Serving since {formatYear(official.termStart)}</span>
+                {official.featuredPhotoCredit || official.photoCredit ? (
+                  <span className={styles.photoCredit}>{official.featuredPhotoCredit ?? official.photoCredit}</span>
+                ) : null}
+              </figcaption>
+            </figure>
+
+            <aside className={styles.portraitRecord} aria-label={latestVote ? "Latest indexed roll call" : "Profile status"}>
+              <p className={styles.recordLabel}>{latestVote ? "Latest indexed roll call" : "Profile status"}</p>
+              <p className={styles.portraitRecordTitle}>
                 {latestVote?.title || latestVote?.question || "Public record buildout is in progress."}
               </p>
-              <p className="mt-2 text-xs font-semibold text-slate-300">
+              <p className={styles.portraitRecordMeta}>
                 {latestVote
-                  ? `${formatShortDate(latestVote.date)} • House roll ${latestVote.rollCall}`
-                  : "Only source-backed items are published."}
+                  ? `${formatShortDate(latestVote.date)} · House roll ${latestVote.rollCall} · ${latestVote.voteCast}`
+                  : `${buildoutPercent}% loaded · Only source-backed items are published.`}
               </p>
-            </div>
-            {official.featuredPhotoCredit || official.photoCredit ? (
-              <figcaption className="absolute bottom-1 left-3 z-[5] max-w-[45%] text-[9px] font-semibold leading-4 text-white/55">
-                {official.featuredPhotoCredit ?? official.photoCredit}
-              </figcaption>
-            ) : null}
-          </figure>
+            </aside>
+          </div>
         </div>
       </div>
     </section>
@@ -314,10 +294,10 @@ export function ProfileSnapshot({
 
 function HeroMetric({ label, value, detail }: { label: string; value: string; detail: string }) {
   return (
-    <div className="min-w-0 bg-slate-950/40 px-4 py-4 backdrop-blur-md sm:px-5">
-      <dt className="text-[9px] font-black uppercase tracking-[0.18em] text-slate-400">{label}</dt>
-      <dd className="mt-1 text-xl font-black tracking-[-0.03em] text-white">{value}</dd>
-      <p className="mt-1 truncate text-[10px] font-semibold text-slate-400">{detail}</p>
+    <div className={styles.railStat}>
+      <dt className={styles.recordLabel}>{label}</dt>
+      <dd className={styles.railValue}>{value}</dd>
+      <dd className={styles.railDetail}>{detail}</dd>
     </div>
   );
 }
@@ -476,6 +456,23 @@ function formatYear(value?: string) {
   if (!value) return "Review pending";
   const date = new Date(value);
   return Number.isNaN(date.getTime()) ? value : date.getUTCFullYear().toString();
+}
+
+function formatPartyName(party: Official["party"]) {
+  switch (party) {
+    case "R":
+      return "Republican";
+    case "D":
+      return "Democrat";
+    case "I":
+      return "Independent";
+    case "VR":
+      return "Votes Republican";
+    case "VD":
+      return "Votes Democrat";
+    default:
+      return "Non-partisan";
+  }
 }
 
 function formatShortDate(value?: string) {

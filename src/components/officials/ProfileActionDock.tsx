@@ -47,14 +47,14 @@ export default function ProfileActionDock({
     <div className="flex flex-wrap gap-2.5">
       <Link
         href={watchHref}
-        className="inline-flex min-h-11 items-center rounded-full bg-white px-5 py-2.5 text-sm font-black text-slate-950 shadow-[0_14px_36px_rgba(2,6,23,0.28)] transition hover:-translate-y-0.5 hover:bg-amber-100 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
+        className="inline-flex min-h-11 items-center rounded-full bg-white px-5 py-2.5 text-sm font-black text-slate-950 shadow-[0_14px_36px_rgba(2,6,23,0.28)] transition-colors hover:bg-amber-100 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white motion-reduce:transition-none"
       >
         Watch profile
       </Link>
       <button
         type="button"
         onClick={shareProfile}
-        className="inline-flex min-h-11 items-center gap-2 rounded-full border border-white/25 bg-white/10 px-5 py-2.5 text-sm font-black text-white backdrop-blur-md transition hover:-translate-y-0.5 hover:border-white/50 hover:bg-white/20 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
+        className="inline-flex min-h-11 items-center gap-2 rounded-full border border-white/25 bg-white/10 px-5 py-2.5 text-sm font-black text-white backdrop-blur-md transition-colors hover:border-white/50 hover:bg-white/20 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white motion-reduce:transition-none"
         aria-live="polite"
       >
         {copied ? "Link copied" : shareSupported ? "Share profile" : "Copy profile link"}

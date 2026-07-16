@@ -1,6 +1,5 @@
 import Link from "next/link";
 import type { GovernmentLevel, Party } from "@/types";
-import PartyBadge from "@/components/officials/PartyBadge";
 import OfficialPhotoImage from "@/components/shared/OfficialPhotoImage";
 import {
   officialSearchQuery,
@@ -180,7 +179,7 @@ export default function OfficialSearchPanel({ result }: { result: OfficialSearch
             <span className="flex items-center gap-2">
               More ways to narrow the record
             </span>
-            <span className="grid h-7 w-7 place-items-center rounded-full border border-slate-300 bg-white text-lg transition group-open:rotate-45">+</span>
+            <span className="grid h-7 w-7 place-items-center rounded-full border border-slate-300 bg-white text-lg transition group-open:rotate-45 motion-reduce:transform-none motion-reduce:transition-none">+</span>
           </summary>
           <div className="grid gap-3 border-t border-slate-200 p-4 md:grid-cols-2 xl:grid-cols-4">
           <SearchSelect
@@ -375,54 +374,62 @@ function CheckboxFilter({ name, label, checked }: { name: string; label: string;
 function OfficialSearchCard({ row }: { row: OfficialSearchRow }) {
   const officialPath = `/officials/${row.official.id}`;
   const profileStatus = row.profileCompleteness >= 100 ? "Profile built" : `${row.profileCompleteness}% built`;
-  const sourceStatus = row.missingSources ? "Sources needed" : `${formatNumber(row.sourceCount)} public sources`;
+  const sourceStatus = row.missingSources ? "Needed" : formatNumber(row.sourceCount);
+  const cardPartyLabel = row.official.party === "NP" ? "Nonpartisan" : partyLabels[row.official.party];
+  const officeLine = [
+    row.officeTypeLabel,
+    row.official.district ? `District ${row.official.district}` : undefined,
+    row.countyValues[0],
+  ]
+    .filter(Boolean)
+    .join(" · ");
 
   return (
-    <article className="group overflow-hidden rounded-[1.6rem] border border-slate-200 bg-white shadow-[0_12px_35px_rgba(15,23,42,0.09)] transition duration-500 hover:-translate-y-1.5 hover:border-blue-300 hover:shadow-[0_22px_55px_rgba(15,23,42,0.16)] motion-reduce:transform-none motion-reduce:transition-none">
+    <article className="group flex h-full flex-col overflow-hidden rounded-md border border-slate-300 bg-white transition-colors duration-200 hover:border-[#163b5c]">
       <Link href={officialPath} className="relative block aspect-[16/11] overflow-hidden bg-gradient-to-br from-slate-200 to-slate-400">
         <OfficialPhotoImage
           official={row.official}
           sizes="(min-width: 1280px) 30vw, (min-width: 768px) 48vw, 100vw"
-          className="object-cover object-top transition duration-700 ease-out group-hover:scale-[1.055] motion-reduce:transition-none"
+          adaptivePortrait
+          blurredBackdrop={false}
+          featuredClassName="object-cover object-top"
+          portraitClassName="object-contain object-center"
           fallbackClassName="grid h-full w-full place-items-center bg-gradient-to-br from-slate-200 via-slate-100 to-blue-100 text-6xl font-black text-slate-400"
         />
         <div className="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-900/5 to-transparent" />
-        <div className="absolute left-4 top-4">
-          <PartyBadge party={row.official.party} />
-        </div>
-        <div className="absolute right-4 top-4">
-          <span className={`inline-flex items-center gap-1.5 rounded-full border px-2.5 py-1.5 text-[10px] font-black uppercase tracking-wide shadow-lg backdrop-blur-md ${
+        <div className="absolute inset-x-4 top-4 flex items-start justify-between gap-2">
+          <p className="max-w-[48%] border-b border-white/70 bg-slate-950/80 px-2 py-1 text-xs font-semibold leading-4 text-white">
+            {cardPartyLabel}
+          </p>
+          <span className={`max-w-[48%] border-b px-2 py-1 text-right text-xs font-semibold leading-4 ${
             row.missingSources
-              ? "border-amber-200/70 bg-amber-50/90 text-amber-900"
-              : "border-emerald-200/70 bg-emerald-50/90 text-emerald-800"
+              ? "border-amber-300 bg-slate-950/80 text-amber-200"
+              : "border-emerald-300 bg-slate-950/80 text-emerald-200"
           }`}>
-            <span className={`h-1.5 w-1.5 rounded-full ${row.missingSources ? "bg-amber-500" : "bg-emerald-500"}`} />
             {row.missingSources ? "Research open" : "Source linked"}
           </span>
         </div>
         <div className="absolute inset-x-0 bottom-0 p-5">
-          <p className="text-[10px] font-black uppercase tracking-[0.18em] text-amber-200">
+          <p className="text-xs font-semibold text-amber-200">
             {row.state || row.official.jurisdiction} · {levelLabels[row.official.level]}
           </p>
-          <h3 className="mt-1 text-2xl font-black leading-tight tracking-tight text-white sm:text-3xl">{row.official.name}</h3>
+          <h3 className="mt-1 font-serif text-2xl font-bold leading-tight tracking-tight text-white sm:text-3xl">{row.official.name}</h3>
           <p className="mt-1 line-clamp-1 text-sm font-bold text-slate-200">{row.official.position}</p>
         </div>
       </Link>
 
-      <div className="p-5">
-        <div className="flex flex-wrap items-center gap-2 text-xs font-bold text-slate-600">
-          <span className="rounded-full bg-slate-100 px-2.5 py-1">{row.officeTypeLabel}</span>
-          {row.official.district ? <span className="rounded-full bg-blue-50 px-2.5 py-1 text-blue-800">District {row.official.district}</span> : null}
-          {row.countyValues[0] ? <span className="truncate rounded-full bg-amber-50 px-2.5 py-1 text-amber-900">{row.countyValues[0]}</span> : null}
-        </div>
+      <div className="flex flex-1 flex-col p-5">
+        <p className="line-clamp-2 min-h-10 text-sm font-medium leading-5 text-slate-600" title={officeLine}>
+          {officeLine}
+        </p>
 
         <div className="mt-5">
-          <div className="flex items-center justify-between gap-3 text-[11px] font-black uppercase tracking-[0.12em]">
+          <div className="flex items-center justify-between gap-3 text-xs font-semibold">
             <span className="text-slate-500">Profile buildout</span>
             <span className="text-slate-800">{profileStatus}</span>
           </div>
           <div
-            className="mt-2 h-2 overflow-hidden rounded-full bg-slate-100"
+            className="mt-2 h-2 overflow-hidden bg-slate-100"
             role="progressbar"
             aria-label={`${row.official.name} profile buildout`}
             aria-valuemin={0}
@@ -430,7 +437,7 @@ function OfficialSearchCard({ row }: { row: OfficialSearchRow }) {
             aria-valuenow={Math.min(100, row.profileCompleteness)}
           >
             <div
-              className="h-full rounded-full bg-gradient-to-r from-red-600 via-amber-400 to-blue-600 transition-[width] duration-700 motion-reduce:transition-none"
+              className="h-full bg-[#163b5c] transition-[width] duration-500 motion-reduce:transition-none"
               style={{ width: `${Math.min(100, row.profileCompleteness)}%` }}
             />
           </div>
@@ -451,16 +458,16 @@ function OfficialSearchCard({ row }: { row: OfficialSearchRow }) {
           {row.lastUpdated ? <span>Updated {row.lastUpdated}</span> : <span>Update date pending</span>}
         </div>
 
-        <div className="mt-5 grid grid-cols-[1fr_auto] gap-2">
+        <div className="mt-auto grid grid-cols-[1fr_auto] gap-2 pt-5">
           <Link
             href={officialPath}
-            className="inline-flex items-center justify-between rounded-xl border border-blue-700 bg-blue-700 px-4 py-3 text-sm font-black text-white transition hover:border-blue-800 hover:bg-blue-800"
+            className="inline-flex items-center justify-between rounded-sm border border-[#163b5c] bg-[#163b5c] px-4 py-3 text-sm font-semibold text-white transition-colors hover:border-[#0d2a44] hover:bg-[#0d2a44]"
           >
             Explore the record <span aria-hidden="true" className="text-lg">→</span>
           </Link>
           <Link
             href={`/dashboard?watch=${encodeURIComponent(officialPath)}`}
-            className="inline-flex items-center gap-2 rounded-xl border border-slate-300 bg-white px-3 py-3 text-xs font-black text-slate-700 transition hover:border-blue-300 hover:bg-blue-50 hover:text-blue-800"
+            className="inline-flex items-center gap-2 rounded-sm border border-slate-300 bg-white px-3 py-3 text-xs font-semibold text-slate-700 transition-colors hover:border-[#163b5c] hover:text-[#163b5c]"
             aria-label={`Watch ${row.official.name}`}
           >
             <svg aria-hidden="true" viewBox="0 0 24 24" className="h-4 w-4 fill-none stroke-current" strokeWidth="2">

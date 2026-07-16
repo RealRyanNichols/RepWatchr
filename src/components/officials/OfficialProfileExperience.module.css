@@ -3,97 +3,149 @@
   isolation: isolate;
   overflow: hidden;
   color: #f8fafc;
-  background:
-    radial-gradient(circle at 82% 22%, rgba(59, 130, 246, 0.34), transparent 30rem),
-    radial-gradient(circle at 12% 86%, rgba(225, 29, 72, 0.25), transparent 28rem),
-    linear-gradient(125deg, #020617 0%, #071a39 47%, #12295a 72%, #470d25 130%);
+  background: #07182f;
 }
 
 .hero::after {
   position: absolute;
   inset: auto 0 0;
   z-index: -1;
-  height: 0.35rem;
+  height: 0.25rem;
   content: "";
-  background: linear-gradient(90deg, #e11d48 0 32%, #f3c969 32% 55%, #2563eb 55% 100%);
+  background: #d6b35d;
 }
 
-.grid {
-  position: absolute;
-  inset: 0;
-  z-index: -2;
-  opacity: 0.2;
-  background-image:
-    linear-gradient(rgba(255, 255, 255, 0.12) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(255, 255, 255, 0.12) 1px, transparent 1px);
-  background-size: 54px 54px;
-  mask-image: linear-gradient(to bottom, black, transparent 82%);
-  animation: grid-drift 28s linear infinite;
+.dateline {
+  max-width: 46rem;
+  margin: 0;
+  color: #cbd5e1;
+  font-size: 0.85rem;
+  font-weight: 650;
+  line-height: 1.7;
+  letter-spacing: 0.01em;
 }
 
-.aurora {
-  position: absolute;
-  z-index: -1;
-  width: 36rem;
-  height: 36rem;
-  border-radius: 999px;
-  filter: blur(80px);
-  opacity: 0.18;
-  animation: aurora-breathe 9s ease-in-out infinite alternate;
+.heroName {
+  font-family: Georgia, "Times New Roman", serif;
+  letter-spacing: -0.045em;
 }
 
-.auroraBlue {
-  top: -17rem;
-  right: -8rem;
-  background: #38bdf8;
+.heroGrid {
+  display: grid;
+  grid-template-areas:
+    "intro"
+    "portrait"
+    "lower";
+  gap: 2.5rem;
+  align-items: start;
 }
 
-.auroraRed {
-  bottom: -24rem;
-  left: -8rem;
-  background: #fb7185;
-  animation-delay: -3s;
+.heroIntro {
+  position: relative;
+  z-index: 1;
+  grid-area: intro;
+}
+
+.heroLower {
+  position: relative;
+  z-index: 1;
+  grid-area: lower;
+}
+
+.actionDock a,
+.actionDock button {
+  border-radius: 0.25rem;
+}
+
+.recordLedger {
+  display: grid;
+  grid-template-columns: minmax(10.5rem, 0.72fr) minmax(0, 1.75fr);
+  margin-top: 2.25rem;
+  border-block: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.gradeBlock {
+  padding: 1.25rem 1.35rem 1.25rem 0;
+  border-right: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.recordLabel {
+  margin: 0;
+  color: #aebed4;
+  font-size: 0.73rem;
+  font-weight: 750;
+  line-height: 1.35;
+  letter-spacing: 0.01em;
+}
+
+.gradeValue {
+  margin: 0.25rem 0 0;
+  color: #ffffff;
+  font-size: clamp(2.45rem, 5vw, 4.3rem);
+  font-weight: 950;
+  line-height: 0.95;
+  letter-spacing: -0.055em;
+}
+
+.gradeDetail {
+  max-width: 13rem;
+  margin: 0.55rem 0 0;
+  color: #d9bd72;
+  font-size: 0.74rem;
+  font-weight: 700;
+  line-height: 1.45;
+}
+
+.statRail {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  margin: 0;
+}
+
+.railStat {
+  min-width: 0;
+  padding: 1.25rem;
+  border-right: 1px solid rgba(255, 255, 255, 0.14);
+}
+
+.railStat:last-child {
+  border-right: 0;
+}
+
+.railValue {
+  margin: 0.45rem 0 0;
+  color: #ffffff;
+  font-size: 1.45rem;
+  font-weight: 900;
+  line-height: 1.1;
+  letter-spacing: -0.03em;
+}
+
+.railDetail {
+  margin: 0.45rem 0 0;
+  color: #94a3b8;
+  font-size: 0.72rem;
+  font-weight: 650;
+  line-height: 1.45;
 }
 
 .portraitStage {
-  position: relative;
-  min-height: 27rem;
+  grid-area: portrait;
+  align-self: end;
+  padding-top: 0.25rem;
 }
 
-.orbit,
-.orbitInner {
-  position: absolute;
-  inset: 50% auto auto 50%;
-  border: 1px solid rgba(255, 255, 255, 0.17);
-  border-radius: 999px;
-  transform: translate(-50%, -50%);
-  pointer-events: none;
-}
-
-.orbit {
-  width: 27rem;
-  height: 27rem;
-  border-style: dashed;
-  animation: orbit-spin 34s linear infinite;
-}
-
-.orbitInner {
-  width: 20rem;
-  height: 20rem;
-  border-color: rgba(243, 201, 105, 0.28);
-  animation: orbit-spin 24s linear infinite reverse;
+.portraitFigure {
+  margin: 0;
 }
 
 .portraitFrame {
-  position: absolute;
-  inset: 1.25rem 2.5rem 0;
+  position: relative;
   overflow: hidden;
-  border: 1px solid rgba(255, 255, 255, 0.26);
-  border-radius: 9rem 9rem 2rem 2rem;
-  background:
-    radial-gradient(circle at 50% 18%, rgba(255, 255, 255, 0.24), transparent 34%),
-    linear-gradient(160deg, rgba(37, 99, 235, 0.42), rgba(15, 23, 42, 0.8) 54%, rgba(225, 29, 72, 0.34));
-  box-shadow: 0 38px 90px rgba(2, 6, 23, 0.48);
+  aspect-ratio: 4 / 4.55;
+  border: 1px solid rgba(255, 255, 255, 0.24);
+  background: #12233c;
+  box-shadow: 1.25rem 1.25rem 0 rgba(255, 255, 255, 0.055);
 }
 
 .portraitFrame::before {
@@ -102,48 +154,60 @@
   z-index: 2;
   content: "";
   pointer-events: none;
-  background:
-    linear-gradient(to top, rgba(2, 6, 23, 0.78), transparent 44%),
-    linear-gradient(120deg, rgba(255, 255, 255, 0.16), transparent 30%);
+  background: linear-gradient(to top, rgba(2, 6, 23, 0.34), transparent 30%);
 }
 
 .portraitImage {
   object-fit: cover;
   object-position: center top;
-  transform: scale(1.03);
-  filter: saturate(1.06) contrast(1.02);
-  transition: transform 900ms cubic-bezier(0.2, 0.8, 0.2, 1), filter 500ms ease;
+  filter: saturate(0.96) contrast(1.03);
 }
 
-.portraitFrame:hover .portraitImage {
-  transform: scale(1.09);
-  filter: saturate(1.16) contrast(1.04);
+.portraitImageAdaptive {
+  object-fit: contain;
+  object-position: center;
+  filter: saturate(0.96) contrast(1.03);
 }
 
-.glassCard {
-  border: 1px solid rgba(255, 255, 255, 0.16);
-  background: rgba(7, 24, 52, 0.7);
-  box-shadow: 0 18px 48px rgba(2, 6, 23, 0.28);
-  backdrop-filter: blur(18px);
+.portraitCaption {
+  display: flex;
+  gap: 1.25rem;
+  align-items: start;
+  justify-content: space-between;
+  padding: 0.85rem 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  color: #f8fafc;
+  font-size: 0.78rem;
+  font-weight: 750;
+  line-height: 1.45;
 }
 
-.portraitCard {
-  position: absolute;
-  right: 0;
-  bottom: 1.5rem;
-  z-index: 4;
-  width: min(19rem, 78%);
-  animation: float-card 6s ease-in-out infinite;
+.photoCredit {
+  max-width: 65%;
+  color: #94a3b8;
+  font-size: 0.69rem;
+  font-weight: 600;
+  text-align: right;
 }
 
-.sourcePulse {
-  position: relative;
-  width: 0.65rem;
-  height: 0.65rem;
-  border-radius: 999px;
-  background: #34d399;
-  box-shadow: 0 0 0 0 rgba(52, 211, 153, 0.4);
-  animation: source-pulse 2.4s ease-out infinite;
+.portraitRecord {
+  padding: 1rem 0 0.15rem;
+}
+
+.portraitRecordTitle {
+  margin: 0.45rem 0 0;
+  color: #ffffff;
+  font-size: 1rem;
+  font-weight: 800;
+  line-height: 1.45;
+}
+
+.portraitRecordMeta {
+  margin: 0.45rem 0 0;
+  color: #94a3b8;
+  font-size: 0.74rem;
+  font-weight: 650;
+  line-height: 1.5;
 }
 
 .donut {
@@ -194,49 +258,6 @@
   opacity: 0.8;
 }
 
-@keyframes grid-drift {
-  to {
-    background-position: 54px 54px;
-  }
-}
-
-@keyframes orbit-spin {
-  from {
-    transform: translate(-50%, -50%) rotate(0deg);
-  }
-  to {
-    transform: translate(-50%, -50%) rotate(360deg);
-  }
-}
-
-@keyframes aurora-breathe {
-  from {
-    transform: translate3d(-1.5rem, -0.5rem, 0) scale(0.92);
-  }
-  to {
-    transform: translate3d(1.5rem, 1rem, 0) scale(1.08);
-  }
-}
-
-@keyframes float-card {
-  0%,
-  100% {
-    transform: translateY(0);
-  }
-  50% {
-    transform: translateY(-0.6rem);
-  }
-}
-
-@keyframes source-pulse {
-  70% {
-    box-shadow: 0 0 0 0.6rem rgba(52, 211, 153, 0);
-  }
-  100% {
-    box-shadow: 0 0 0 0 rgba(52, 211, 153, 0);
-  }
-}
-
 @keyframes chart-reveal {
   from {
     opacity: 0;
@@ -259,37 +280,77 @@
 
 @media (max-width: 1023px) {
   .portraitStage {
-    min-height: 24rem;
+    width: min(100%, 34rem);
+    margin-inline: auto;
   }
 
-  .portraitFrame {
-    inset-inline: 8%;
+  .recordLedger {
+    max-width: 48rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .heroGrid {
+    grid-template-areas:
+      "intro portrait"
+      "lower portrait";
+    grid-template-columns: minmax(0, 1.08fr) minmax(24rem, 0.72fr);
+    column-gap: 3.5rem;
+    row-gap: 0;
+  }
+
+  .heroLower {
+    align-self: end;
+    padding-top: 1.75rem;
   }
 }
 
 @media (max-width: 639px) {
-  .portraitStage {
-    min-height: 21.5rem;
-  }
-
   .portraitFrame {
-    inset: 0.5rem 1.5rem 0;
-    border-radius: 7rem 7rem 1.5rem 1.5rem;
+    box-shadow: none;
   }
 
-  .orbit {
-    width: 21rem;
-    height: 21rem;
+  .recordLedger {
+    grid-template-columns: 1fr;
   }
 
-  .orbitInner {
-    width: 16rem;
-    height: 16rem;
+  .gradeBlock {
+    padding-right: 0;
+    border-right: 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
   }
 
-  .portraitCard {
-    right: 0.25rem;
-    bottom: 0.75rem;
+  .statRail {
+    grid-template-columns: 1fr;
+  }
+
+  .railStat {
+    display: grid;
+    grid-template-columns: minmax(7.5rem, 0.8fr) minmax(5rem, 0.55fr) minmax(0, 1fr);
+    gap: 0.75rem;
+    align-items: baseline;
+    padding-inline: 0;
+    border-right: 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.14);
+  }
+
+  .railStat:last-child {
+    border-bottom: 0;
+  }
+
+  .railValue,
+  .railDetail {
+    margin-top: 0;
+  }
+
+  .portraitCaption {
+    flex-direction: column;
+    gap: 0.35rem;
+  }
+
+  .photoCredit {
+    max-width: none;
+    text-align: left;
   }
 
   .donut {
@@ -304,18 +365,8 @@
 }
 
 @media (prefers-reduced-motion: reduce) {
-  .grid,
-  .aurora,
-  .orbit,
-  .orbitInner,
-  .portraitCard,
-  .sourcePulse,
   .donut,
   .activityBar {
     animation: none;
-  }
-
-  .portraitImage {
-    transition: none;
   }
 }

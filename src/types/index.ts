@@ -465,6 +465,16 @@ export interface PublicPostEmbed {
   publishedAt?: string;
 }
 
+export type OfficialCoverageTone = "positive" | "critical" | "neutral";
+
+export interface OfficialCoverageClassification {
+  /** Person-specific editorial classification. Never inferred from party or headline tone. */
+  tone: OfficialCoverageTone;
+  rationale: string;
+  reviewedAt?: string;
+  reviewedBy?: string;
+}
+
 export interface NewsArticle {
   id: string;
   title: string;
@@ -496,6 +506,8 @@ export interface NewsArticle {
   independentPublisherCount?: number;
   midtermRelevance?: 0 | 1 | 2 | 3;
   publicPostEmbeds?: PublicPostEmbed[];
+  /** An article can treat different named officials differently, so tone is keyed by official id. */
+  officialCoverage?: Record<string, OfficialCoverageClassification>;
 }
 
 // ============================================================

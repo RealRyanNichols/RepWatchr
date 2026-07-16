@@ -19,15 +19,30 @@ const storySections = [
   { id: "participate", label: "Community" },
   { id: "sources", label: "Sources" },
 ];
+const dashboardSections = [
+  { id: "record", label: "Voting record" },
+  { id: "sentiment", label: "Public sentiment" },
+  { id: "coverage", label: "Coverage" },
+  { id: "sources", label: "Sources" },
+  { id: "discussion", label: "Discussion" },
+];
 
 export default function ProfileQuickNav({
   hasVerifiedBrief = false,
   storyMode = false,
+  dashboardMode = false,
 }: {
   hasVerifiedBrief?: boolean;
   storyMode?: boolean;
+  dashboardMode?: boolean;
 }) {
-  const sections = storyMode ? storySections : hasVerifiedBrief ? verifiedSections : coreSections;
+  const sections = dashboardMode
+    ? dashboardSections
+    : storyMode
+      ? storySections
+      : hasVerifiedBrief
+        ? verifiedSections
+        : coreSections;
   const [activeId, setActiveId] = useState(sections[0].id);
 
   useEffect(() => {
@@ -53,26 +68,29 @@ export default function ProfileQuickNav({
   return (
     <nav
       aria-label="Profile sections"
-      className="sticky top-0 z-30 border-b border-slate-200/80 bg-white/92 shadow-[0_12px_30px_rgba(15,23,42,0.06)] backdrop-blur-xl"
+      className="relative z-30 border-b border-[#cbc4b5] bg-[#f4f1e8]/95 backdrop-blur-sm lg:sticky lg:top-[142px]"
     >
-      <div className="mx-auto flex max-w-7xl items-center gap-1 overflow-x-auto px-4 py-2 sm:px-6 lg:px-8 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
-        <span className="mr-2 hidden shrink-0 text-[10px] font-black uppercase tracking-[0.2em] text-slate-400 md:inline">
-          Jump to
+      <div className="mx-auto flex max-w-7xl items-stretch overflow-x-auto px-4 sm:px-6 lg:px-8 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
+        <span className="mr-5 hidden shrink-0 items-center border-b-2 border-transparent py-3 text-sm font-semibold text-[#615f59] md:flex">
+          Chapters
         </span>
-        {sections.map((section) => {
+        {sections.map((section, index) => {
           const active = section.id === activeId;
           return (
             <a
               key={section.id}
               href={`#${section.id}`}
               aria-current={active ? "location" : undefined}
-              className={`shrink-0 rounded-full px-3.5 py-2 text-xs font-black transition sm:text-sm ${
+              className={`-mb-px inline-flex min-h-12 shrink-0 items-center gap-2 border-b-2 px-3 py-3 text-sm font-semibold transition-colors focus-visible:z-10 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#a23a2b] focus-visible:ring-offset-2 focus-visible:ring-offset-[#f4f1e8] sm:px-4 ${
                 active
-                  ? "bg-slate-950 text-white shadow-sm"
-                  : "text-slate-600 hover:bg-blue-50 hover:text-blue-800"
+                  ? "border-[#a23a2b] text-[#111b24]"
+                  : "border-transparent text-[#615f59] hover:border-[#a23a2b]/40 hover:text-[#111b24]"
               }`}
             >
-              {section.label}
+              <span className={`text-xs tabular-nums ${active ? "text-[#a23a2b]" : "text-[#8b867c]"}`}>
+                {String(index + 1).padStart(2, "0")}
+              </span>
+              <span>{section.label}</span>
             </a>
           );
         })}

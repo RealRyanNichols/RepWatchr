@@ -257,7 +257,7 @@ export default async function OfficialsPage({
                 </Link>
               </div>
             </div>
-            <div className="grid grid-cols-2 gap-3">
+            <div className="grid grid-cols-1 gap-3 sm:grid-cols-2">
               {statCards.map((card) => (
                 <div key={card.label} className="rounded-xl border border-slate-300 bg-slate-50 p-4 shadow-sm">
                   <p className="text-2xl font-black text-slate-950">{card.value}</p>
@@ -335,26 +335,17 @@ function OfficialsCommandDeck({
   const coveragePercent = totalOfficials > 0 ? Math.round((sourceLinkedCount / totalOfficials) * 100) : 0;
 
   return (
-    <section className="relative isolate overflow-hidden rounded-[2rem] border border-white/10 bg-[#06172f] text-white shadow-[0_28px_90px_rgba(2,8,23,0.38)]">
-      <div className="pointer-events-none absolute -left-36 top-16 h-80 w-80 rounded-full bg-red-600/25 blur-3xl motion-safe:animate-pulse" />
-      <div className="pointer-events-none absolute -right-32 -top-20 h-96 w-96 rounded-full bg-blue-500/30 blur-3xl motion-safe:animate-pulse" />
-      <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_50%_0%,rgba(255,255,255,0.12),transparent_34%),linear-gradient(135deg,transparent_0%,rgba(255,255,255,0.025)_48%,transparent_49%)]" />
-      <div className="relative grid min-h-[640px] gap-8 p-5 sm:p-8 lg:grid-cols-[minmax(0,1.08fr)_minmax(380px,0.92fr)] lg:items-center lg:p-10 xl:p-12">
+    <section className="relative isolate overflow-hidden border-y border-white/20 bg-[#06172f] text-white">
+      <div className="relative grid gap-10 p-5 sm:p-8 lg:p-10 xl:min-h-[680px] xl:grid-cols-[minmax(0,1.05fr)_minmax(34rem,0.95fr)] xl:items-center xl:p-12">
         <div className="min-w-0">
-          <div className="inline-flex items-center gap-2 rounded-full border border-amber-200/30 bg-amber-300/10 px-3 py-1.5 text-[11px] font-black uppercase tracking-[0.2em] text-amber-100">
-            <span className="relative flex h-2 w-2">
-              <span className="absolute inline-flex h-full w-full rounded-full bg-amber-300 opacity-70 motion-safe:animate-ping" />
-              <span className="relative inline-flex h-2 w-2 rounded-full bg-amber-300" />
-            </span>
-            The 2026 public record
+          <div className="flex flex-wrap items-center justify-between gap-x-6 gap-y-1 border-y border-white/20 py-3 text-sm text-slate-300">
+            <p className="font-serif italic text-white">RepWatchr public record desk</p>
+            <p>2026 midterm edition · {activeScope}</p>
           </div>
-          <h1 className="mt-5 max-w-3xl text-4xl font-black leading-[0.96] tracking-[-0.045em] sm:text-6xl lg:text-7xl">
-            Know who represents you.
-            <span className="mt-2 block bg-gradient-to-r from-amber-200 via-white to-blue-200 bg-clip-text text-transparent">
-              See the record, not the spin.
-            </span>
+          <h1 className="mt-8 max-w-3xl font-serif text-4xl font-semibold leading-[0.98] tracking-[-0.035em] text-white sm:text-6xl lg:text-7xl">
+            Know who represents you—and what their record shows.
           </h1>
-          <p className="mt-6 max-w-2xl text-base font-semibold leading-7 text-slate-200 sm:text-lg">
+          <p className="mt-6 max-w-2xl border-l border-amber-300/70 pl-5 text-base leading-7 text-slate-200 sm:text-lg">
             Move from Congress to your statehouse and local offices. Every profile is designed to show the public
             sources, recorded votes, funding trail, and research gaps behind the headline.
           </p>
@@ -370,16 +361,16 @@ function OfficialsCommandDeck({
             />
           </div>
 
-          <div className="mt-5 flex gap-2 overflow-x-auto pb-2 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
+          <div className="mt-5 flex gap-2 overflow-x-auto border-b border-white/10 pb-3 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
             <Link
               href="/officials?level=federal"
-              className="shrink-0 rounded-full border border-blue-300/30 bg-blue-400/10 px-3 py-2 text-xs font-black text-blue-100 transition duration-300 hover:-translate-y-0.5 hover:bg-blue-400/20 motion-reduce:transform-none motion-reduce:transition-none"
+              className="shrink-0 rounded-sm border border-blue-300/30 bg-blue-400/10 px-3 py-2 text-xs font-semibold text-blue-100 hover:bg-blue-400/20"
             >
               Federal races
             </Link>
             <Link
               href="/state-reps"
-              className="shrink-0 rounded-full border border-amber-300 bg-amber-300 px-3 py-2 text-xs font-black text-slate-950 transition duration-300 hover:-translate-y-0.5 hover:bg-amber-200 motion-reduce:transform-none motion-reduce:transition-none"
+              className="shrink-0 rounded-sm border border-amber-300 bg-amber-300 px-3 py-2 text-xs font-semibold text-slate-950 hover:bg-amber-200"
             >
               Statehouse desk
             </Link>
@@ -387,7 +378,7 @@ function OfficialsCommandDeck({
               <Link
                 key={state.code}
                 href={`/officials?state=${state.code}`}
-                className={`shrink-0 rounded-full border px-3 py-2 text-xs font-black transition duration-300 hover:-translate-y-0.5 motion-reduce:transform-none motion-reduce:transition-none ${
+                className={`shrink-0 rounded-sm border px-3 py-2 text-xs font-semibold ${
                   selectedStateCode === state.code
                     ? "border-amber-300 bg-amber-300 text-slate-950"
                     : "border-white/15 bg-white/[0.07] text-slate-100 hover:bg-white/[0.14]"
@@ -410,24 +401,23 @@ function OfficialsCommandDeck({
           </p>
         </div>
 
-        <div className="relative mx-auto w-full max-w-2xl lg:max-w-none">
-          <div className="absolute -inset-5 rounded-[2.5rem] border border-white/10 bg-white/[0.04] backdrop-blur-sm" />
-          <div className="relative grid h-[500px] grid-cols-2 grid-rows-2 gap-3 sm:h-[560px] sm:grid-cols-3">
+        <div className="relative mx-auto w-full max-w-5xl xl:max-w-none">
+          <div className="relative grid min-h-[28rem] grid-cols-1 gap-3 sm:aspect-[16/8] sm:min-h-0 sm:grid-cols-3 sm:grid-rows-2 xl:aspect-auto xl:h-[590px]">
             {leadOfficial ? (
-              <FeaturedPortrait official={leadOfficial} className="col-span-2 row-span-1 sm:row-span-2" priority />
+              <FeaturedPortrait official={leadOfficial} className="sm:col-span-2 sm:row-span-2" priority />
             ) : null}
             {supportingOfficials.slice(0, 2).map((official) => (
-              <FeaturedPortrait key={official.id} official={official} />
+              <FeaturedPortrait key={official.id} official={official} className="hidden sm:block" />
             ))}
           </div>
-          <div className="relative mt-4 flex items-center justify-between gap-4 rounded-2xl border border-white/10 bg-slate-950/70 px-4 py-3 backdrop-blur-xl">
+          <div className="relative mt-4 flex flex-col gap-3 border-y border-white/15 bg-slate-950/45 px-1 py-3 sm:flex-row sm:items-center sm:justify-between sm:px-4">
             <div>
-              <p className="text-[10px] font-black uppercase tracking-[0.18em] text-amber-200">Profiles in this view</p>
-              <p className="mt-1 text-sm font-bold text-slate-200">Open a portrait, then follow every claim to its source.</p>
+              <p className="text-xs font-semibold text-amber-200">Profiles in this view</p>
+              <p className="mt-1 text-sm font-semibold text-slate-200">Open a portrait, then follow every claim to its source.</p>
             </div>
             <Link
               href="#official-directory"
-              className="shrink-0 rounded-full bg-white px-4 py-2 text-xs font-black text-slate-950 transition hover:-translate-y-0.5 hover:bg-amber-200 motion-reduce:transform-none motion-reduce:transition-none"
+              className="shrink-0 self-start rounded-sm bg-white px-4 py-2 text-xs font-bold text-slate-950 hover:bg-amber-200 sm:self-auto"
             >
               Explore all ↓
             </Link>
@@ -448,7 +438,7 @@ function HeroMetric({ value, label }: { value: string; label: string }) {
   return (
     <div className="border-r border-white/10 px-3 first:pl-0 last:border-r-0 sm:px-5">
       <p className="text-2xl font-black tracking-tight text-white sm:text-3xl">{value}</p>
-      <p className="mt-1 text-[10px] font-black uppercase tracking-[0.15em] text-slate-400">{label}</p>
+      <p className="mt-1 text-xs font-semibold text-slate-400">{label}</p>
     </div>
   );
 }
@@ -465,21 +455,27 @@ function FeaturedPortrait({
   return (
     <Link
       href={`/officials/${official.id}`}
-      className={`group relative isolate min-h-0 overflow-hidden rounded-[1.4rem] border border-white/15 bg-slate-800 shadow-2xl transition duration-500 hover:-translate-y-1 hover:border-amber-200/60 hover:shadow-amber-300/10 motion-reduce:transform-none motion-reduce:transition-none ${className}`}
+      className={`group relative isolate min-h-0 overflow-hidden rounded-md border border-white/20 bg-slate-800 hover:border-amber-200/60 ${className}`}
     >
       <OfficialPhotoImage
         official={official}
-        sizes={priority ? "(min-width: 1024px) 34vw, 66vw" : "(min-width: 640px) 24vw, 48vw"}
+        sizes={
+          priority
+            ? "(min-width: 1280px) 360px, (min-width: 640px) 66vw, calc(100vw - 40px)"
+            : "(min-width: 1280px) 180px, (min-width: 640px) 33vw, 0px"
+        }
         quality={FEATURED_OFFICIAL_PHOTO_QUALITY}
         preload={priority}
-        className="object-cover object-top transition duration-700 ease-out group-hover:scale-[1.06] motion-reduce:transform-none motion-reduce:transition-none"
+        adaptivePortrait
+        featuredClassName="object-cover object-top transition duration-500 ease-out group-hover:scale-[1.025] motion-reduce:transform-none motion-reduce:transition-none"
+        portraitClassName="object-contain object-center transition duration-500 ease-out group-hover:scale-[1.015] motion-reduce:transform-none motion-reduce:transition-none"
         fallbackClassName="grid h-full w-full place-items-center bg-gradient-to-br from-slate-700 to-slate-950 text-5xl font-black text-white/50"
       />
       <div className="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/10 to-transparent" />
       <div className="absolute inset-x-0 bottom-0 p-4 sm:p-5">
         <p className="text-lg font-black leading-tight text-white sm:text-xl">{official.name}</p>
         <p className="mt-1 line-clamp-1 text-xs font-bold text-slate-200 sm:text-sm">{official.position}</p>
-        <p className="mt-2 text-[10px] font-black uppercase tracking-[0.16em] text-amber-200">
+        <p className="mt-2 text-xs font-semibold text-amber-200">
           {official.state ?? official.jurisdiction} · Open record ↗
         </p>
       </div>
