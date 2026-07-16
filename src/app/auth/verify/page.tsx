@@ -35,10 +35,10 @@ export default function VerifyPage() {
     return (
       <div className="mx-auto max-w-lg px-4 py-16 text-center">
         <div className="rounded-2xl border border-emerald-200 bg-emerald-50 p-8">
-          <p className="text-xs font-black uppercase tracking-widest text-emerald-700">Verified profile</p>
-          <h1 className="mt-2 text-2xl font-black text-emerald-950">Your community vote is enabled</h1>
+          <p className="text-xs font-black uppercase tracking-widest text-emerald-700">Verified resident</p>
+          <h1 className="mt-2 text-2xl font-black text-emerald-950">Your community participation is eligible</h1>
           <p className="mt-3 text-sm font-semibold leading-6 text-emerald-900">
-            Your verified residence area is held by the server and is used only to label community responses by constituency.
+            Your person and current residence checks are complete. This status does not claim that you are registered to vote; voter-registration matching is a separate assurance level.
           </p>
           <Link
             href="/officials"
@@ -54,24 +54,24 @@ export default function VerifyPage() {
   return (
     <div className="mx-auto max-w-2xl px-4 py-16">
       <div className="rounded-2xl border border-amber-200 bg-white p-8 shadow-sm">
-        <p className="text-xs font-black uppercase tracking-widest text-amber-700">Integrity upgrade in progress</p>
-        <h1 className="mt-2 text-3xl font-black text-slate-950">Secure voter-area verification is being rebuilt</h1>
+        <p className="text-xs font-black uppercase tracking-widest text-amber-700">Integrity pilot in progress</p>
+        <h1 className="mt-2 text-3xl font-black text-slate-950">Human and residence verification are being built as separate checks</h1>
         <p className="mt-4 text-sm font-semibold leading-6 text-slate-700">
-          RepWatchr has paused new community-vote verification while we replace the old self-certification flow with a server-verified process. We will not ask you to type a driver-license or state-ID number into this page.
+          RepWatchr has paused new community voting while the old self-certification flow is replaced. The pilot uses a specialist identity provider, a separate mailed residence check, and an accessible manual fallback. RepWatchr will not ask you to type a driver-license or state-ID number into this page.
         </p>
 
         <div className="mt-6 rounded-xl border border-blue-200 bg-blue-50 p-4">
-          <h2 className="text-sm font-black text-blue-950">What the replacement must guarantee</h2>
+          <h2 className="text-sm font-black text-blue-950">Four honest assurance levels</h2>
           <ul className="mt-2 space-y-2 text-sm font-semibold leading-6 text-blue-900">
-            <li>One verified person gets one response per profile or race.</li>
-            <li>County, district, and state labels come from server-owned verification—not browser input.</li>
-            <li>Identity evidence is minimized, access-controlled, auditable, and never shown publicly.</li>
-            <li>Outside-area responses remain separate from constituent results.</li>
+            <li><strong>Confirmed account:</strong> control of an email account.</li>
+            <li><strong>Verified person:</strong> identity and liveness or an equivalent manual review.</li>
+            <li><strong>Verified resident:</strong> current address mapped to a jurisdiction and confirmed separately.</li>
+            <li><strong>Registered voter:</strong> a separate, state-specific voter-file match that the pilot will not imply.</li>
           </ul>
         </div>
 
         <p className="mt-5 text-sm font-semibold leading-6 text-slate-600">
-          You can still use the dashboard, watch profiles, submit primary sources, and report corrections while verification is paused.
+          No ID image, selfie, raw document number, birth date, or plaintext street address belongs in the RepWatchr database. Camera-free and manual-review paths will receive the same participation privileges. You can still use the dashboard, watch profiles, submit primary sources, and report corrections while voting is paused.
         </p>
         <div className="mt-5 flex flex-wrap gap-3">
           <Link

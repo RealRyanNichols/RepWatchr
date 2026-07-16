@@ -82,9 +82,7 @@ function normalizeDate(value: string) {
 
 function findTerms(source: DailyNewsWatchSource, text: string) {
   const haystack = text.toLowerCase();
-  const matchedTerms = source.terms.filter((term) => haystack.includes(term.toLowerCase()));
-  if (matchedTerms.length || !source.sourceCredit) return matchedTerms;
-  return [source.sourceCredit.name];
+  return source.terms.filter((term) => haystack.includes(term.toLowerCase()));
 }
 
 function parseRssClips(xml: string, source: DailyNewsWatchSource): DailyNewsClip[] {

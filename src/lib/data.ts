@@ -25,6 +25,7 @@ import {
   getPublicSafetyWatchProfiles,
 } from "@/lib/power-watch";
 import { getCongressTradingDataset, getCongressTradingStats } from "@/lib/congress-trading";
+import { selectEditorialStories } from "@/lib/editorial-ranking";
 
 // Base path to the data directory
 const DATA_DIR = path.join(process.cwd(), "src", "data");
@@ -717,7 +718,11 @@ export function hasPublicNewsSource(article: NewsArticle): boolean {
 }
 
 export function isPublishableNewsArticle(article: NewsArticle): boolean {
-  return article.sourceStatus !== "needs_source_review" && hasPublicNewsSource(article);
+  return (
+    article.editorialStatus === "approved" &&
+    article.sourceStatus === "source_linked" &&
+    hasPublicNewsSource(article)
+  );
 }
 
 /**
@@ -754,7 +759,10 @@ function getAllNewsRecords(): NewsArticle[] {
 export function getAllNews(): NewsArticle[] {
   if (newsCache) return newsCache;
 
-  newsCache = getAllNewsRecords().filter(isPublishableNewsArticle);
+  newsCache = selectEditorialStories(
+    "news",
+    getAllNewsRecords().filter(isPublishableNewsArticle),
+  );
   return newsCache;
 }
 
@@ -783,5 +791,5 @@ export function getNewsByOfficialId(officialId: string): NewsArticle[] {
  * Get featured/breaking news articles.
  */
 export function getFeaturedNews(): NewsArticle[] {
-  return getAllNews().filter((n) => n.featured);
+  return selectEditorialStories("home", getAllNews(), { limit: 6 });
 }

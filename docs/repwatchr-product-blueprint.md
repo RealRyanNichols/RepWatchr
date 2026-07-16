@@ -24,7 +24,7 @@ The existing Next.js application, Supabase project, and Vercel deployment provid
 
 - Candidate and race content is primarily assembled from static application data; production does not have a complete canonical candidate catalog.
 - Supabase contains official-profile snapshots, but they do not constitute a normalized candidate, candidacy, office-term, and election model.
-- The current verification page accepts any eight digits and allows the browser to mark a user verified. It is not identity verification and must remain disabled until replaced.
+- The unsafe eight-digit browser verification path has been removed and voting is default-off. The preview now separates confirmed account, verified person, verified resident, and registered-voter states; provider/postal/manual workflows still require non-production integration testing before launch.
 - Voting tables and interfaces exist, but there is no meaningful vote activity and the current trust boundary does not adequately prevent self-asserted verification or location.
 - The dashboard is largely a client-side experience with local-storage fallbacks rather than a complete server-backed member product.
 - The Faretta integration is an external chat proxy, not a RepWatchr retrieval system with a reviewed knowledge base and per-claim citations.

@@ -110,7 +110,7 @@ export default async function CategoryScorecardPage({
         </div>
         <p className="mt-2 text-gray-600 max-w-2xl">{issueCat.description}</p>
         <p className="mt-1 text-sm text-gray-500">
-          Weight: {issueCat.weight}% of source-backed official vote-record score. Universal verified profile votes live on
+          Weight: {issueCat.weight}% of the legacy source-backed vote-record model. Community responses live on
           the main scorecards page and public profile pages.
         </p>
       </div>

@@ -97,14 +97,6 @@ export const DAILY_WIRE_QUERY_LANE_CONTROLS: Record<string, Partial<DailyNewsWat
     ...nationalControls,
     requiredTerms: ["u.s.", "united states", "congress", "senate", "house", "federal", "governor", "mayor", "school board"],
   },
-  "uap-official-watch": {
-    ...nationalControls,
-    requiredTerms: ["tim burchett", "burchett", "uap", "ufo", "congress", "oversight"],
-  },
-  "uap-congress-transparency": {
-    ...nationalControls,
-    requiredTerms: ["uap", "ufo", "unidentified anomalous phenomena", "congress", "pentagon"],
-  },
 };
 
 const texasPoliticsTerms = [
@@ -151,8 +143,6 @@ const federalAttentionTerms = [
   "waste",
   "transparency",
   "declassified",
-  "uap",
-  "ufo",
   "files",
   "release",
 ];
@@ -176,13 +166,6 @@ const exposureTerms = [
   "fraud",
   "abuse",
 ];
-
-const jonGrossCredit: SourceCredit = {
-  name: "Jonathan Gross",
-  handle: "@Jon_Gross",
-  url: "https://x.com/Jon_Gross",
-  note: "Share the original, credit Jonathan Gross, then add RepWatchr source-backed context.",
-};
 
 const stateNewsTargets = [
   ["AL", "Alabama"],
@@ -272,33 +255,16 @@ const BASE_DAILY_NEWS_WATCH_SOURCES: DailyNewsWatchSource[] = [
     allowDomains: ["texastribune.org"],
   },
   {
-    id: "google-news-jon-gross-source-watch",
-    label: "Jonathan Gross source watch",
-    url: `https://news.google.com/rss/search?q=${encodeURIComponent('("Jon Gross" OR "Jon_Gross" OR "Jonathan Gross" OR "Rabbi Jonathan Gross") (article OR report OR wrote OR writes OR published OR byline OR DOJ OR "civil rights" OR "Weaponization Working Group" OR "public records" OR accountability OR corruption OR Congress OR representative OR "January 6" OR J6) when:14d')}&hl=en-US&gl=US&ceid=US%3Aen`,
-    queryLane: "credited-source-watch",
+    id: "google-news-midterm-household-costs",
+    label: "Public news search: midterm household costs",
+    url: `https://news.google.com/rss/search?q=${encodeURIComponent('("2026 midterms" OR election OR candidate OR Congress) ("cost of living" OR healthcare OR housing OR insurance OR groceries OR gasoline OR electricity) when:1d')}&hl=en-US&gl=US&ceid=US%3Aen`,
+    queryLane: "national-officials",
     scope: "national",
     powerChannels: ["media", "officials", "courts", "money"],
     sourceType: "public_news_search",
-    terms: [
-      "jon gross",
-      "jon_gross",
-      "jonathan gross",
-      "j6",
-      "january 6",
-      "doj",
-      "weaponization",
-      "representative",
-      "congress",
-      "oversight",
-      "corruption",
-      "accountability",
-      "public records",
-      "election",
-      "official",
-    ],
+    terms: ["midterm", "election", "candidate", "congress", "cost of living", "healthcare", "housing", "insurance", "groceries", "gasoline", "electricity"],
     ...nationalControls,
-    requiredTerms: ["jon gross", "jon_gross", "jonathan gross", "january 6", "j6"],
-    sourceCredit: jonGrossCredit,
+    requiredTerms: ["midterm", "election", "candidate", "congress", "senate", "house"],
   },
   {
     id: "google-news-texas-school-boards",
@@ -376,29 +342,28 @@ const BASE_DAILY_NEWS_WATCH_SOURCES: DailyNewsWatchSource[] = [
     requiredTerms: ["u.s.", "united states", "congress", "senate", "house", "federal", "governor", "mayor", "school board"],
   },
   {
-    id: "google-news-tim-burchett-uap-transparency",
-    label: "Public news search: Tim Burchett UAP transparency",
-    url: `https://news.google.com/rss/search?q=${encodeURIComponent('("Tim Burchett" OR Burchett) (UAP OR UFO OR oversight OR transparency OR declassified OR whistleblower OR corruption OR "DOGE" OR "waste fraud abuse") when:7d')}&hl=en-US&gl=US&ceid=US%3Aen`,
-    queryLane: "uap-official-watch",
+    id: "google-news-midterm-election-administration",
+    label: "Public news search: midterm election administration",
+    url: `https://news.google.com/rss/search?q=${encodeURIComponent('("2026 midterms" OR election) ("voter registration" OR ballot OR redistricting OR "election administration" OR "poll workers") when:1d')}&hl=en-US&gl=US&ceid=US%3Aen`,
+    queryLane: "national-officials",
     scope: "national",
-    state: "TN",
-    powerChannels: ["officials", "media"],
+    powerChannels: ["elections", "officials"],
     sourceType: "public_news_search",
-    terms: ["tim burchett", "burchett", "uap", "ufo", "oversight", "transparency", "declassified", "whistleblower", "corruption", "doge", "waste", "fraud", "abuse"],
+    terms: ["midterm", "election", "voter registration", "ballot", "redistricting", "election administration", "poll workers"],
     ...nationalControls,
-    requiredTerms: ["tim burchett", "burchett", "uap", "ufo", "congress", "oversight"],
+    requiredTerms: ["midterm", "election", "ballot", "redistricting", "voter registration"],
   },
   {
-    id: "google-news-uap-congress-transparency",
-    label: "Public news search: UAP Congress transparency",
-    url: `https://news.google.com/rss/search?q=${encodeURIComponent('(UAP OR UFO OR "unidentified anomalous phenomena") (Congress OR representative OR oversight OR Pentagon OR declassified OR transparency OR files) when:1d')}&hl=en-US&gl=US&ceid=US%3Aen`,
-    queryLane: "uap-congress-transparency",
+    id: "google-news-midterm-ai-energy",
+    label: "Public news search: midterm AI, data centers, and energy",
+    url: `https://news.google.com/rss/search?q=${encodeURIComponent('("2026 midterms" OR election OR candidate) ("data center" OR "artificial intelligence" OR deepfake OR electricity OR grid OR water) when:1d')}&hl=en-US&gl=US&ceid=US%3Aen`,
+    queryLane: "national-officials",
     scope: "national",
     powerChannels: ["officials", "media"],
     sourceType: "public_news_search",
-    terms: ["uap", "ufo", "unidentified anomalous phenomena", "congress", "representative", "oversight", "pentagon", "declassified", "transparency", "files"],
+    terms: ["midterm", "election", "candidate", "data center", "artificial intelligence", "deepfake", "electricity", "grid", "water"],
     ...nationalControls,
-    requiredTerms: ["uap", "ufo", "unidentified anomalous phenomena", "congress", "pentagon"],
+    requiredTerms: ["midterm", "election", "candidate", "congress", "data center", "artificial intelligence"],
   },
 ];
 

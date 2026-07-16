@@ -1,0 +1,321 @@
+.hero {
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+  color: #f8fafc;
+  background:
+    radial-gradient(circle at 82% 22%, rgba(59, 130, 246, 0.34), transparent 30rem),
+    radial-gradient(circle at 12% 86%, rgba(225, 29, 72, 0.25), transparent 28rem),
+    linear-gradient(125deg, #020617 0%, #071a39 47%, #12295a 72%, #470d25 130%);
+}
+
+.hero::after {
+  position: absolute;
+  inset: auto 0 0;
+  z-index: -1;
+  height: 0.35rem;
+  content: "";
+  background: linear-gradient(90deg, #e11d48 0 32%, #f3c969 32% 55%, #2563eb 55% 100%);
+}
+
+.grid {
+  position: absolute;
+  inset: 0;
+  z-index: -2;
+  opacity: 0.2;
+  background-image:
+    linear-gradient(rgba(255, 255, 255, 0.12) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.12) 1px, transparent 1px);
+  background-size: 54px 54px;
+  mask-image: linear-gradient(to bottom, black, transparent 82%);
+  animation: grid-drift 28s linear infinite;
+}
+
+.aurora {
+  position: absolute;
+  z-index: -1;
+  width: 36rem;
+  height: 36rem;
+  border-radius: 999px;
+  filter: blur(80px);
+  opacity: 0.18;
+  animation: aurora-breathe 9s ease-in-out infinite alternate;
+}
+
+.auroraBlue {
+  top: -17rem;
+  right: -8rem;
+  background: #38bdf8;
+}
+
+.auroraRed {
+  bottom: -24rem;
+  left: -8rem;
+  background: #fb7185;
+  animation-delay: -3s;
+}
+
+.portraitStage {
+  position: relative;
+  min-height: 27rem;
+}
+
+.orbit,
+.orbitInner {
+  position: absolute;
+  inset: 50% auto auto 50%;
+  border: 1px solid rgba(255, 255, 255, 0.17);
+  border-radius: 999px;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+}
+
+.orbit {
+  width: 27rem;
+  height: 27rem;
+  border-style: dashed;
+  animation: orbit-spin 34s linear infinite;
+}
+
+.orbitInner {
+  width: 20rem;
+  height: 20rem;
+  border-color: rgba(243, 201, 105, 0.28);
+  animation: orbit-spin 24s linear infinite reverse;
+}
+
+.portraitFrame {
+  position: absolute;
+  inset: 1.25rem 2.5rem 0;
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.26);
+  border-radius: 9rem 9rem 2rem 2rem;
+  background:
+    radial-gradient(circle at 50% 18%, rgba(255, 255, 255, 0.24), transparent 34%),
+    linear-gradient(160deg, rgba(37, 99, 235, 0.42), rgba(15, 23, 42, 0.8) 54%, rgba(225, 29, 72, 0.34));
+  box-shadow: 0 38px 90px rgba(2, 6, 23, 0.48);
+}
+
+.portraitFrame::before {
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+  content: "";
+  pointer-events: none;
+  background:
+    linear-gradient(to top, rgba(2, 6, 23, 0.78), transparent 44%),
+    linear-gradient(120deg, rgba(255, 255, 255, 0.16), transparent 30%);
+}
+
+.portraitImage {
+  object-fit: cover;
+  object-position: center top;
+  transform: scale(1.03);
+  filter: saturate(1.06) contrast(1.02);
+  transition: transform 900ms cubic-bezier(0.2, 0.8, 0.2, 1), filter 500ms ease;
+}
+
+.portraitFrame:hover .portraitImage {
+  transform: scale(1.09);
+  filter: saturate(1.16) contrast(1.04);
+}
+
+.glassCard {
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  background: rgba(7, 24, 52, 0.7);
+  box-shadow: 0 18px 48px rgba(2, 6, 23, 0.28);
+  backdrop-filter: blur(18px);
+}
+
+.portraitCard {
+  position: absolute;
+  right: 0;
+  bottom: 1.5rem;
+  z-index: 4;
+  width: min(19rem, 78%);
+  animation: float-card 6s ease-in-out infinite;
+}
+
+.sourcePulse {
+  position: relative;
+  width: 0.65rem;
+  height: 0.65rem;
+  border-radius: 999px;
+  background: #34d399;
+  box-shadow: 0 0 0 0 rgba(52, 211, 153, 0.4);
+  animation: source-pulse 2.4s ease-out infinite;
+}
+
+.donut {
+  position: relative;
+  display: grid;
+  width: 12rem;
+  height: 12rem;
+  flex: 0 0 auto;
+  place-items: center;
+  border-radius: 999px;
+  box-shadow: inset 0 0 0 1px rgba(148, 163, 184, 0.18), 0 24px 55px rgba(15, 23, 42, 0.13);
+  animation: chart-reveal 900ms cubic-bezier(0.2, 0.8, 0.2, 1) both;
+}
+
+.donut::after {
+  position: absolute;
+  width: 7.4rem;
+  height: 7.4rem;
+  border: 1px solid rgba(226, 232, 240, 0.9);
+  border-radius: 999px;
+  content: "";
+  background: rgba(255, 255, 255, 0.96);
+  box-shadow: inset 0 8px 18px rgba(148, 163, 184, 0.08);
+}
+
+.donutLabel {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+}
+
+.activityBar {
+  transform-origin: left;
+  animation: bar-grow 800ms cubic-bezier(0.2, 0.8, 0.2, 1) both;
+}
+
+.recordCard {
+  position: relative;
+  overflow: hidden;
+}
+
+.recordCard::before {
+  position: absolute;
+  inset: 0 auto 0 0;
+  width: 0.25rem;
+  content: "";
+  background: linear-gradient(#2563eb, #e11d48);
+  opacity: 0.8;
+}
+
+@keyframes grid-drift {
+  to {
+    background-position: 54px 54px;
+  }
+}
+
+@keyframes orbit-spin {
+  from {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  to {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
+
+@keyframes aurora-breathe {
+  from {
+    transform: translate3d(-1.5rem, -0.5rem, 0) scale(0.92);
+  }
+  to {
+    transform: translate3d(1.5rem, 1rem, 0) scale(1.08);
+  }
+}
+
+@keyframes float-card {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-0.6rem);
+  }
+}
+
+@keyframes source-pulse {
+  70% {
+    box-shadow: 0 0 0 0.6rem rgba(52, 211, 153, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(52, 211, 153, 0);
+  }
+}
+
+@keyframes chart-reveal {
+  from {
+    opacity: 0;
+    transform: scale(0.82) rotate(-18deg);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1) rotate(0deg);
+  }
+}
+
+@keyframes bar-grow {
+  from {
+    transform: scaleX(0);
+  }
+  to {
+    transform: scaleX(1);
+  }
+}
+
+@media (max-width: 1023px) {
+  .portraitStage {
+    min-height: 24rem;
+  }
+
+  .portraitFrame {
+    inset-inline: 8%;
+  }
+}
+
+@media (max-width: 639px) {
+  .portraitStage {
+    min-height: 21.5rem;
+  }
+
+  .portraitFrame {
+    inset: 0.5rem 1.5rem 0;
+    border-radius: 7rem 7rem 1.5rem 1.5rem;
+  }
+
+  .orbit {
+    width: 21rem;
+    height: 21rem;
+  }
+
+  .orbitInner {
+    width: 16rem;
+    height: 16rem;
+  }
+
+  .portraitCard {
+    right: 0.25rem;
+    bottom: 0.75rem;
+  }
+
+  .donut {
+    width: 10rem;
+    height: 10rem;
+  }
+
+  .donut::after {
+    width: 6.25rem;
+    height: 6.25rem;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .grid,
+  .aurora,
+  .orbit,
+  .orbitInner,
+  .portraitCard,
+  .sourcePulse,
+  .donut,
+  .activityBar {
+    animation: none;
+  }
+
+  .portraitImage {
+    transition: none;
+  }
+}

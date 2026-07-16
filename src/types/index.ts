@@ -50,6 +50,9 @@ export interface Official {
   photo?: string;
   photoSourceUrl?: string;
   photoCredit?: string;
+  featuredPhoto?: string;
+  featuredPhotoSourceUrl?: string;
+  featuredPhotoCredit?: string;
   party: Party;
   level: GovernmentLevel;
   position: string;
@@ -449,6 +452,19 @@ export type NewsPowerChannel =
   | "courts"
   | "money";
 
+export type EditorialStatus = "draft" | "in_review" | "approved" | "archived";
+
+export type PublicPostPlatform = "x" | "youtube" | "facebook" | "instagram" | "tiktok" | "other";
+
+export interface PublicPostEmbed {
+  platform: PublicPostPlatform;
+  url: string;
+  author: string;
+  label?: string;
+  context?: string;
+  publishedAt?: string;
+}
+
 export interface NewsArticle {
   id: string;
   title: string;
@@ -470,6 +486,16 @@ export interface NewsArticle {
   locationLabel?: string;
   powerChannels?: NewsPowerChannel[];
   sourceStatus?: "source_linked" | "needs_source_review";
+  /** Public surfaces require an explicit editorial approval. */
+  editorialStatus?: EditorialStatus;
+  reviewedAt?: string;
+  reviewedBy?: string;
+  correctionStatus?: "none" | "under_review" | "corrected";
+  topicKey?: string;
+  primarySourceCount?: number;
+  independentPublisherCount?: number;
+  midtermRelevance?: 0 | 1 | 2 | 3;
+  publicPostEmbeds?: PublicPostEmbed[];
 }
 
 // ============================================================

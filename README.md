@@ -51,6 +51,7 @@ npm run lint                # ESLint
 npm run build               # production build and type checking
 npm run qa:static           # repository-wide static QA
 npm run smoke:integrity     # civic-data and evidence integrity checks
+npm run smoke:neutrality    # named-person boosts and ideological-score regression checks
 npm run qa:routes           # smoke a running local/preview deployment
 ```
 
@@ -103,6 +104,8 @@ Do not run ad hoc SQL against production, enable publishing or automation as a s
 ## Key documentation
 
 - [`docs/repwatchr-product-blueprint.md`](docs/repwatchr-product-blueprint.md) — product direction, audited baseline, risks, and phased build plan
+- [`docs/2026_MIDTERM_LAUNCH_PLAN.md`](docs/2026_MIDTERM_LAUNCH_PLAN.md) — recommended profile cohort, trend desk, article queue, and neutral ranking
+- [`docs/MEMBER_ASSURANCE_AND_ANTI_BOT.md`](docs/MEMBER_ASSURANCE_AND_ANTI_BOT.md) — separate trust levels, anti-bot controls, privacy, and retention
 - [`docs/REPWatchr_Build_Map.md`](docs/REPWatchr_Build_Map.md) — route, data, and system inventory; validate dated findings against current code
 - [`docs/DEPLOYMENT_CHECKLIST.md`](docs/DEPLOYMENT_CHECKLIST.md) — release checks and production gates
 - [`docs/ENVIRONMENT_VARIABLES.md`](docs/ENVIRONMENT_VARIABLES.md) — environment-variable classification and feature flags

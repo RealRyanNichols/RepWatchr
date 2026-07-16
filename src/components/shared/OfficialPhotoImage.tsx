@@ -5,7 +5,7 @@ export const OFFICIAL_PHOTO_QUALITY = 96;
 export const FEATURED_OFFICIAL_PHOTO_QUALITY = 100;
 
 type OfficialPhotoImageProps = {
-  official: Pick<Official, "firstName" | "lastName" | "name" | "photo">;
+  official: Pick<Official, "firstName" | "lastName" | "name" | "photo" | "featuredPhoto">;
   sizes: string;
   alt?: string;
   className?: string;
@@ -37,10 +37,12 @@ export default function OfficialPhotoImage({
   quality = OFFICIAL_PHOTO_QUALITY,
   preload = false,
 }: OfficialPhotoImageProps) {
-  if (official.photo) {
+  const photo = official.featuredPhoto ?? official.photo;
+
+  if (photo) {
     return (
       <Image
-        src={official.photo}
+        src={photo}
         alt={alt ?? `${official.name} profile photo`}
         fill
         sizes={sizes}

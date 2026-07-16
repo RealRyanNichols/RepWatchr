@@ -9,28 +9,22 @@ import {
   getNewsByOfficialId,
   getPublicVoteRecord,
 } from "@/lib/data";
-import { buildConstitutionalAlignmentProfile } from "@/lib/constitutional-alignment";
-import { buildFallbackIdeologyProfile, getOfficialIdeologyProfile } from "@/lib/ideology";
-import { formatLevelName, getPartyColor } from "@/lib/formatting";
-import ScoreGauge from "@/components/scores/ScoreGauge";
 import CategoryBreakdown from "@/components/scores/CategoryBreakdown";
 import CampaignFinanceSourcePanel from "@/components/funding/CampaignFinanceSourcePanel";
 import MoneyTrailSection from "@/components/money/MoneyTrailSection";
 import VoteTimeline from "@/components/votes/VoteTimeline";
 import RedFlagCard from "@/components/shared/RedFlagCard";
-import PartyBadge from "@/components/officials/PartyBadge";
-import IdeologyChart from "@/components/officials/IdeologyChart";
-import ConstitutionalAlignmentMeter from "@/components/officials/ConstitutionalAlignmentMeter";
+import { OfficialProfileHero, ProfileSnapshot } from "@/components/officials/OfficialProfileExperience";
+import { OfficialVerifiedBrief } from "@/components/officials/OfficialVerifiedBrief";
+import ProfileQuickNav from "@/components/officials/ProfileQuickNav";
 import OfficialVotingSection from "@/components/voting/OfficialVotingSection";
 import CommentSection from "@/components/comments/CommentSection";
 import ShareButtons from "@/components/shared/ShareButtons";
-import ReportButton from "@/components/shared/ReportButton";
 import ProfileOpenTracker from "@/components/shared/ProfileOpenTracker";
 import NextUsefulMove from "@/components/shared/NextUsefulMove";
 import PublicContentRulesPanel from "@/components/shared/PublicContentRulesPanel";
 import ProfileScorecardVote from "@/components/scorecards/ProfileScorecardVote";
 import OfficialSocialPanel from "@/components/officials/OfficialSocialPanel";
-import OfficialPhotoImage, { FEATURED_OFFICIAL_PHOTO_QUALITY } from "@/components/shared/OfficialPhotoImage";
 import { getPublicProfileOverlay, type PublicProfileEnrichmentItem, type PublicProfileOverlay, type PublicProfileVoteSnapshot } from "@/lib/profile-overlays";
 import { buildOfficialCompletionSnapshot } from "@/lib/profile-completion";
 import { getCongressTradingSnapshot } from "@/lib/congress-trading";
@@ -38,6 +32,7 @@ import { buildOgImageUrl, buildRepWatchrMetadata } from "@/lib/repwatchr-seo";
 import { breadcrumbJsonLd, jsonLd, profilePageJsonLd } from "@/lib/structured-data";
 import { buildOfficialDossier, type DossierSourceGroup, type DossierTimelineItem } from "@/lib/official-dossier";
 import { getMoneyTrailForOfficial } from "@/lib/money-trail";
+import { getOfficialVerifiedBrief } from "@/data/official-verified-briefs";
 import type { Official, PublicVoteRecord, RedFlag, ScoredVote } from "@/types";
 
 export const revalidate = 86400;
@@ -99,13 +94,10 @@ export default async function OfficialProfilePage({
   const relatedNews = getNewsByOfficialId(id);
   const publicVoteRecord = getPublicVoteRecord(id);
   const congressTrading = getCongressTradingSnapshot(id);
-  const ideologyProfile = getOfficialIdeologyProfile(id) ?? buildFallbackIdeologyProfile(official);
-  const constitutionalAlignment = publicVoteRecord ? buildConstitutionalAlignmentProfile(publicVoteRecord) : null;
   const profileOverlay = await getPublicProfileOverlay("official", id);
+  const verifiedBrief = getOfficialVerifiedBrief(id);
   const staticCompletion = buildOfficialCompletionSnapshot(official);
   const sourceLinks = official.sourceLinks ?? [];
-  const contactEmail = official.contactInfo.email;
-  const contactIsUrl = contactEmail?.startsWith("http://") || contactEmail?.startsWith("https://");
   const overlayPublicRecords = profileOverlay.enrichmentItems.filter((item) => item.category !== "news");
   const overlayNews = profileOverlay.enrichmentItems.filter((item) => item.category === "news");
   const overlayCompletionPercent = profileOverlay.completion?.completionPercent ?? 0;
@@ -145,8 +137,6 @@ export default async function OfficialProfilePage({
     ? Object.values(scoreCard.categories).flatMap((c) => c.votes)
     : [];
 
-  const partyColor = getPartyColor(official.party);
-
   return (
     <div className="min-h-screen bg-[#f8fbff] text-slate-950">
       <script
@@ -163,146 +153,28 @@ export default async function OfficialProfilePage({
         path={`/officials/${official.id}`}
         level={official.level}
       />
-      {/* Hero */}
-      <section
-        className="border-b-4 bg-white text-slate-950"
-        style={{ borderBottomColor: partyColor }}
-      >
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6 sm:py-8">
-          {/* Mobile: stacked layout, Desktop: side by side */}
-          <div className="flex flex-col items-start gap-4 sm:flex-row sm:gap-7">
-            <figure className="shrink-0">
-              <div className="relative flex h-28 w-28 items-center justify-center overflow-hidden rounded-2xl border border-gray-200 bg-gray-200 text-3xl font-bold text-gray-500 shadow-md shadow-slate-950/10 sm:h-44 sm:w-44 sm:rounded-3xl sm:text-5xl">
-                <OfficialPhotoImage
-                  official={official}
-                  sizes="(min-width: 640px) 352px, 224px"
-                  quality={FEATURED_OFFICIAL_PHOTO_QUALITY}
-                  preload
-                  className="object-cover"
-                  fallbackClassName="grid h-full w-full place-items-center text-center font-black uppercase tracking-wide text-gray-500"
-                />
-              </div>
-              {official.photoCredit ? (
-                <figcaption className="mt-1 max-w-44 text-[10px] font-semibold leading-4 text-gray-500">
-                  {official.photoCredit}
-                </figcaption>
-              ) : null}
-            </figure>
-            <div className="flex-1 min-w-0">
-              <div className="flex items-center gap-2 sm:gap-3 flex-wrap">
-                <h1 className="text-xl sm:text-3xl font-extrabold text-gray-900">
-                  {official.name}
-                </h1>
-                <PartyBadge party={official.party} />
-              </div>
-              <p className="text-base sm:text-lg text-gray-600 mt-1">{official.position}</p>
-              <div className="flex flex-wrap gap-2 sm:gap-4 mt-1.5 text-xs sm:text-sm text-gray-500">
-                {official.district && <span>District: {official.district}</span>}
-                <span>{official.jurisdiction}</span>
-                <span>{formatLevelName(official.level)}</span>
-              </div>
-              <div className="mt-3 grid gap-2 sm:grid-cols-3">
-                <HeroDossierMetric
-                  label="Score/status"
-                  value={scoreCard ? `${scoreCard.letterGrade} / ${scoreCard.overall}` : "Needs review"}
-                  detail={scoreCard ? `Updated ${scoreCard.lastUpdated}` : "Insufficient scored data"}
-                />
-                <HeroDossierMetric
-                  label="Sources"
-                  value={dossier.sourceCount.toLocaleString()}
-                  detail="Public receipt links"
-                />
-                <HeroDossierMetric
-                  label="Profile"
-                  value={`${buildoutPercent}%`}
-                  detail={buildoutComplete ? "Core loaded" : "Buildout in progress"}
-                />
-              </div>
-              <div className="mt-3 flex flex-wrap items-center gap-3">
-                <Link
-                  href={`/dashboard?watch=${encodeURIComponent(`/officials/${official.id}`)}&target=${encodeURIComponent(official.name)}`}
-                  className="rounded-lg border border-blue-700 bg-blue-700 px-3 py-2 text-xs font-black uppercase tracking-wide text-white shadow-sm transition hover:bg-blue-800"
-                >
-                  Watch profile
-                </Link>
-                <Link
-                  href="#dossier-actions"
-                  className="rounded-lg border border-slate-300 bg-white px-3 py-2 text-xs font-black uppercase tracking-wide text-slate-700 shadow-sm transition hover:border-blue-300 hover:bg-blue-50"
-                >
-                  Actions
-                </Link>
-                <ShareButtons
-                  title={`${official.name} - ${official.position} | RepWatchr`}
-                  description={`See the scorecard, voting record, and funding data for ${official.name}.`}
-                  path={`/officials/${official.id}`}
-                  template="confirmed_record"
-                  subject={`${official.name} public profile`}
-                  sourceLabel="scorecard, voting record, funding data, public sources, and review notes"
-                />
-                <ReportButton
-                  officialId={official.id}
-                  pageUrl={`/officials/${official.id}`}
-                  targetLabel={official.name}
-                  jurisdiction={official.jurisdiction}
-                />
-              </div>
-              {official.bio && (
-                <p className="mt-3 text-sm sm:text-base text-gray-700 leading-relaxed max-w-2xl">{official.bio}</p>
-              )}
-              {official.contactInfo && (
-                <div className="flex flex-wrap gap-3 sm:gap-4 mt-3 text-xs sm:text-sm">
-                  {official.contactInfo.office && (
-                    <span className="text-gray-600">
-                      Office: {official.contactInfo.office}
-                    </span>
-                  )}
-                  {official.contactInfo.phone && (
-                    <span className="text-gray-600">
-                      Phone: {official.contactInfo.phone}
-                    </span>
-                  )}
-                  {contactEmail && (
-                    <a
-                      href={contactIsUrl ? contactEmail : `mailto:${contactEmail}`}
-                      className="text-blue-600 hover:underline"
-                      target={contactIsUrl ? "_blank" : undefined}
-                      rel={contactIsUrl ? "noopener noreferrer" : undefined}
-                    >
-                      {contactIsUrl ? "Contact Form" : contactEmail}
-                    </a>
-                  )}
-                  {official.contactInfo.website && (
-                    <a
-                      href={official.contactInfo.website}
-                      className="text-blue-600 hover:underline"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      Official Website
-                    </a>
-                  )}
-                </div>
-              )}
-            </div>
-            {/* Score Gauge - shown inline on desktop, below name on mobile */}
-            {scoreCard && (
-              <div className="shrink-0 mt-4 sm:mt-0">
-                <ScoreGauge
-                  score={scoreCard.overall}
-                  letterGrade={scoreCard.letterGrade}
-                  size="lg"
-                />
-                <p className="text-center text-xs text-gray-500 mt-1">
-                  Overall Score
-                </p>
-              </div>
-            )}
-          </div>
-        </div>
-      </section>
+      <OfficialProfileHero
+        official={official}
+        sourceCount={dossier.sourceCount}
+        buildoutPercent={buildoutPercent}
+        buildoutComplete={buildoutComplete}
+        voteRecord={publicVoteRecord}
+        funding={funding}
+      />
+      <ProfileQuickNav hasVerifiedBrief={Boolean(verifiedBrief)} />
+      {verifiedBrief ? <OfficialVerifiedBrief brief={verifiedBrief} /> : null}
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
-        <div className="mb-8 space-y-4">
+        <ProfileSnapshot
+          official={official}
+          sourceCount={dossier.sourceCount}
+          buildoutPercent={buildoutPercent}
+          buildoutComplete={buildoutComplete}
+          voteRecord={publicVoteRecord}
+          funding={funding}
+          missingItems={buildoutMissingItems}
+        />
+        <div id="record" className="mb-8 scroll-mt-24 space-y-4">
           <RecordSummaryPanel
             official={official}
             summary={dossier.plainEnglishSummary}
@@ -315,10 +187,6 @@ export default async function OfficialProfilePage({
             hasScoreCard={Boolean(scoreCard)}
             voteRows={publicVoteRecord?.summary.totalVotesLoaded ?? 0}
           />
-          <IdeologyChart profile={ideologyProfile} />
-          {constitutionalAlignment ? (
-            <ConstitutionalAlignmentMeter profile={constitutionalAlignment} />
-          ) : null}
         </div>
 
         <div className="space-y-8">
@@ -381,7 +249,9 @@ export default async function OfficialProfilePage({
             )}
         </div>
 
-        {moneyTrail ? <MoneyTrailSection trail={moneyTrail} /> : <CampaignFinanceSourcePanel official={official} />}
+        <section id="money" className="scroll-mt-24">
+          {moneyTrail ? <MoneyTrailSection trail={moneyTrail} /> : <CampaignFinanceSourcePanel official={official} />}
+        </section>
 
         <ProfileTimelinePanel items={dossier.timeline} />
 
@@ -437,13 +307,13 @@ export default async function OfficialProfilePage({
           <PublicContentRulesPanel compact />
         </section>
 
-        <section className="mt-8">
+        <section id="participate" className="mt-8 scroll-mt-24">
           <div className="mb-4">
             <p className="text-xs font-black uppercase tracking-wide text-red-700">
               Citizen layer grade
             </p>
             <h2 className="mt-1 text-xl font-black text-gray-950">
-              Verified voter questionnaire
+              Verified-resident questionnaire pilot
             </h2>
             <p className="mt-1 max-w-4xl text-sm font-semibold leading-6 text-gray-600">
               This is where verified users answer whether they would vote for the official again, how they voted last time, what changed, and what issue should drive the public grade.
@@ -648,24 +518,6 @@ function RelatedRecordLink({
   );
 }
 
-function HeroDossierMetric({
-  label,
-  value,
-  detail,
-}: {
-  label: string;
-  value: string;
-  detail: string;
-}) {
-  return (
-    <div className="rounded-xl border border-gray-200 bg-gray-50 px-3 py-2 shadow-sm">
-      <p className="text-[10px] font-black uppercase tracking-wide text-gray-500">{label}</p>
-      <p className="mt-1 text-lg font-black text-gray-950">{value}</p>
-      <p className="mt-0.5 text-[11px] font-bold text-gray-500">{detail}</p>
-    </div>
-  );
-}
-
 function RecordSummaryPanel({
   official,
   summary,
@@ -736,7 +588,7 @@ function SummaryList({
 
 function SourceTrailPanel({ groups }: { groups: DossierSourceGroup[] }) {
   return (
-    <section className="rounded-2xl border border-slate-200 bg-white p-5 shadow-sm">
+    <section id="sources" className="scroll-mt-24 rounded-2xl border border-slate-200 bg-white p-5 shadow-sm">
       <div>
         <p className="text-xs font-black uppercase tracking-[0.18em] text-blue-700">Source trail</p>
         <h2 className="mt-1 text-2xl font-black text-slate-950">Every claim should point back to a public receipt.</h2>

@@ -16,5 +16,13 @@
   "cities": ["Tyler", "Longview", "Lufkin", "Waskom", "Gladewater"],
   "locationLabel": "East Texas",
   "powerChannels": ["school-boards", "elections", "money"],
-  "sourceStatus": "source_linked"
+  "sourceStatus": "source_linked",
+  "editorialStatus": "approved",
+  "reviewedAt": "2026-07-15T23:30:00Z",
+  "reviewedBy": "RepWatchr editorial migration",
+  "correctionStatus": "none",
+  "topicKey": "school-bonds",
+  "primarySourceCount": 0,
+  "independentPublisherCount": 1,
+  "midtermRelevance": 3
 }

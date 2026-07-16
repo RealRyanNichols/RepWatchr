@@ -15,6 +15,7 @@ const socialAutopost = read("src/lib/social-autopost.ts");
 const featureFlags = read("src/lib/repwatchr-feature-flags.ts");
 const voterMigration = read("supabase/migrations/20260715222729_repwatchr_foundation_v2.sql");
 const civicMigration = read("supabase/migrations/20260715230000_canonical_civic_model.sql");
+const assuranceMigration = read("supabase/migrations/20260715234500_member_identity_assurance.sql");
 
 for (const token of [
   "PUBLIC_EVIDENCE_STATUSES",
@@ -24,6 +25,33 @@ for (const token of [
 ]) {
   if (!dataLibrary.includes(token)) {
     throw new Error(`Evidence publication gate is missing: ${token}`);
+  }
+}
+
+for (const token of [
+  "private.member_assurance",
+  "private.identity_verification_attempts",
+  "private.identity_duplicate_keys",
+  "private.residence_claims",
+  "private.identity_review_requests",
+  "get_my_assurance_status",
+  "repw_sync_profile_assurance",
+  "force row level security",
+  "grant execute on function private.repw_sync_profile_assurance(uuid) to service_role",
+]) {
+  if (!assuranceMigration.includes(token)) {
+    throw new Error(`Identity-assurance migration is missing: ${token}`);
+  }
+}
+
+for (const forbiddenColumn of [
+  /document_number\s+(text|varchar)/i,
+  /date_of_birth\s+(date|text|varchar)/i,
+  /street_address\s+(text|varchar)/i,
+  /selfie\s+(bytea|text)/i,
+]) {
+  if (forbiddenColumn.test(assuranceMigration)) {
+    throw new Error(`Identity-assurance migration stores prohibited raw evidence: ${forbiddenColumn}`);
   }
 }
 
@@ -42,7 +70,7 @@ for (const forbidden of ["dl_hash", "hashDL", "isValidTXDL", ".from(\"profiles\"
     throw new Error(`Unsafe browser verification behavior remains: ${forbidden}`);
   }
 }
-if (!verificationPage.includes("Secure voter-area verification is being rebuilt")) {
+if (!verificationPage.includes("Human and residence verification are being built as separate checks")) {
   throw new Error("Verification pause must be explained to members.");
 }
 if (!featureFlags.includes("NEXT_PUBLIC_ENABLE_COMMUNITY_VOTING_V2")) {

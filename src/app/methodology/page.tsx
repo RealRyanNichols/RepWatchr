@@ -194,9 +194,9 @@ export default function MethodologyPage() {
           </div>
         </section>
 
-        <section id="constitutional-alignment" className="mb-8 scroll-mt-24">
+        <section id="record-lenses" className="mb-8 scroll-mt-24">
           <h2 className="text-xl font-bold text-gray-900 mb-3">
-            Constitutional Alignment Meter
+            Record Lenses and Editorial Neutrality
           </h2>
           <div className="space-y-4 text-gray-700 text-sm">
             <div className="bg-emerald-50 border border-emerald-200 rounded-lg p-4">
@@ -204,11 +204,10 @@ export default function MethodologyPage() {
                 What It Measures
               </h3>
               <p>
-                The constitutional meter is separate from party ideology. It
-                asks whether reviewed public votes line up with limited
-                government, individual liberty, fiscal restraint, federalism,
-                transparency, and due process. It is a civic accountability
-                signal, not a legal finding.
+                RepWatchr publishes the underlying roll call, bill text,
+                campaign statement, source date, and review status. The public
+                site does not assign every official a universal moral,
+                constitutional, left/right, or partisan grade.
               </p>
             </div>
             <div className="bg-gray-50 rounded-lg p-4">
@@ -216,14 +215,11 @@ export default function MethodologyPage() {
                 What Moves the Meter
               </h3>
               <p>
-                Only reviewed issue rules move the score. For example, a vote
-                to extend surveillance authority can be scored against
-                individual liberty when the vote text does not show a limiting
-                civil-liberties reform. A vote against waiving budgetary
-                discipline can receive fiscal-restraint credit. Vague
-                amendments, nominations, cloture votes, and broad omnibus bills
-                stay visible but marked &quot;needs policy review&quot; until a
-                human-reviewed rule is added.
+                Descriptive comparisons may group votes by a plainly named
+                issue, but the same source hierarchy, question set, response
+                window, and completeness standard apply to every candidate.
+                Opinion lenses, if introduced later, must be optional, fully
+                disclosed, and never presented as neutral fact.
               </p>
             </div>
             <div className="bg-gray-50 rounded-lg p-4">
@@ -231,12 +227,11 @@ export default function MethodologyPage() {
                 Source Path
               </h3>
               <p>
-                Federal roll calls are linked to the House Clerk, Senate roll
-                call tables, and Congress.gov where available. Texas state
-                roll-call review will use Texas Legislature Online vote pages
-                and journals. Local official scoring will require meeting
-                minutes, agendas, video, or records requests before the meter
-                moves.
+                Federal roll calls link to the House Clerk, Senate roll-call
+                tables, and Congress.gov where available. Texas state records
+                use Texas Legislature Online. Local records require meeting
+                minutes, agendas, video, or a public-record response before a
+                factual claim is marked confirmed.
               </p>
               <div className="mt-3 flex flex-wrap gap-2 not-prose">
                 {[

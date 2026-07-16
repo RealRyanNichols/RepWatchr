@@ -2,8 +2,9 @@ import fs from "node:fs";
 
 const pagePath = "src/app/officials/[id]/page.tsx";
 const dossierPath = "src/lib/official-dossier.ts";
+const experiencePath = "src/components/officials/OfficialProfileExperience.tsx";
 
-for (const file of [pagePath, dossierPath]) {
+for (const file of [pagePath, dossierPath, experiencePath]) {
   if (!fs.existsSync(file)) {
     throw new Error(`Missing required dossier file: ${file}`);
   }
@@ -11,9 +12,14 @@ for (const file of [pagePath, dossierPath]) {
 
 const page = fs.readFileSync(pagePath, "utf8");
 const dossier = fs.readFileSync(dossierPath, "utf8");
+const experience = fs.readFileSync(experiencePath, "utf8");
+const profileSurface = `${page}\n${experience}`;
 
 const requiredPageTokens = [
-  "HeroDossierMetric",
+  "OfficialProfileHero",
+  "ProfileSnapshot",
+  "The 60-second brief",
+  "Latest indexed roll calls",
   "RecordSummaryPanel",
   "SourceTrailPanel",
   "ScoreMethodologyPanel",
@@ -43,7 +49,7 @@ const requiredDossierTokens = [
 ];
 
 for (const token of requiredPageTokens) {
-  if (!page.includes(token)) {
+  if (!profileSurface.includes(token)) {
     throw new Error(`Official profile page is missing dossier token: ${token}`);
   }
 }

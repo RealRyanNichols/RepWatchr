@@ -84,7 +84,7 @@ const scopeLabels: Record<VoterScope, string> = {
   in_state: "In-state constituent",
   out_of_district: "Out-of-district voter",
   out_of_state: "Out-of-state voter",
-  verified_unknown: "Verified voter",
+  verified_unknown: "Verified resident",
 };
 
 const voteAgainLabels: Record<VoteAgain, string> = {
@@ -519,7 +519,7 @@ export default function ProfileScorecardVote({
           </h3>
           {!compact ? (
             <p className="mt-1 text-sm font-semibold leading-6 text-slate-600">
-              Verified profiles can answer once on this {targetLabel.toLowerCase()}. Constituent, in-state, out-of-district, and out-of-state responses are tracked separately so outside votes do not control the local signal.
+              Verified residents can answer once on this {targetLabel.toLowerCase()}. Constituent, in-state, out-of-district, and out-of-state responses are tracked separately so outside responses do not control the local signal.
             </p>
           ) : null}
         </div>

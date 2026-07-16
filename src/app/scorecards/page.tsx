@@ -98,7 +98,7 @@ export default function ScorecardsPage() {
               </h1>
               <p className="mt-3 max-w-3xl text-sm font-semibold leading-6 text-slate-700 sm:text-base">
                 Elected officials, school-board members, attorneys, law firms, media companies, journalists, editors,
-                public-safety agencies, sheriffs, and police chiefs all use the same verified scorecard vote rule: one verified profile,
+                public-safety agencies, sheriffs, and police chiefs all use the same scorecard rule: one verified resident,
                 one vote per target.
               </p>
             </div>
@@ -114,7 +114,7 @@ export default function ScorecardsPage() {
               <div className="rounded-xl border border-slate-200 bg-slate-50 p-4">
                 <p className="text-xs font-black uppercase tracking-wide text-slate-500">New rule</p>
                 <p className="mt-1 text-2xl font-black text-red-700">1x</p>
-                <p className="text-xs font-bold text-slate-500">per verified profile</p>
+                <p className="text-xs font-bold text-slate-500">per verified resident</p>
               </div>
               <div className="rounded-xl border border-slate-200 bg-slate-50 p-4">
                 <p className="text-xs font-black uppercase tracking-wide text-slate-500">Algorithm</p>

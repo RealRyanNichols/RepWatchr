@@ -8,7 +8,6 @@ import {
   getSchoolBoardCandidate,
   getSchoolBoardDistrict,
 } from "@/lib/school-board-research";
-import { buildEvidenceFromDossier, calculateSchoolBoardScore } from "@/lib/school-board-scoring";
 import { renderRepWatchrOgImage } from "@/lib/repwatchr-og";
 
 export const runtime = "nodejs";
@@ -37,7 +36,6 @@ export async function GET(request: Request) {
     ? getCandidateGaps(candidate).length
     : (district?.candidates.reduce((total, item) => total + getCandidateGaps(item).length, 0) ?? 0);
   const sourceCount = candidate ? (candidate.sources?.length ?? 0) : district ? getDistrictSourceLinks(district.district_slug).length : stats.sourceCount;
-  const score = candidate ? calculateSchoolBoardScore(candidate, buildEvidenceFromDossier(candidate)) : undefined;
   const publicPath =
     type === "member" && candidate
       ? `/school-boards/${getDistrictUrlSlug(candidate.district_slug)}/${getCandidateUrlSlug(candidate)}`
@@ -51,8 +49,8 @@ export async function GET(request: Request) {
     title: title ?? "National School Board Watch",
     subtitle,
     jurisdiction: type === "member" && candidate ? candidate.district : district?.county ? `${district.county} County` : "Texas-first school board watch",
-    metricValue: score ? (score.grade === "Pending" ? "Review" : score.score) : district ? sourceCount : stats.candidates.toLocaleString("en-US"),
-    metricLabel: score ? (score.grade === "Pending" ? "evidence pending" : `grade ${score.grade}`) : district ? "sources" : "profiles",
+    metricValue: candidate || district ? sourceCount : stats.candidates.toLocaleString("en-US"),
+    metricLabel: candidate || district ? "public sources" : "profiles",
     path: publicPath,
     badges: [
       { label: "Good records", value: goodCount, tone: "green" },

@@ -161,7 +161,6 @@ const TOPIC_RULES: Array<{ tag: string; terms: string[] }> = [
   { tag: "school board", terms: ["school board", "trustee", "isd", "superintendent"] },
   { tag: "courts", terms: ["court", "judge", "lawsuit", "grand jury", "district attorney"] },
   { tag: "public safety", terms: ["sheriff", "police chief", "constable", "law enforcement"] },
-  { tag: "uap transparency", terms: ["uap", "ufo", "unidentified anomalous phenomena", "declassified", "pentagon"] },
 ];
 
 let knownPeopleCache: KnownPerson[] | null = null;

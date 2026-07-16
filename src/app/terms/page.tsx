@@ -116,9 +116,10 @@ export default function TermsPage() {
           </h2>
           <p>
             RepWatchr is not affiliated with any political party, candidate, or
-            campaign. Our scoring methodology is based on issue alignment, not
-            party affiliation. Officials of any party receive credit for voting
-            in the interest of their constituents.
+            campaign. We publish source-backed records under the same evidence
+            and correction rules for every official and candidate. RepWatchr
+            does not infer party identity for nonpartisan offices or present an
+            owner-selected moral or ideological lens as neutral fact.
           </p>
         </section>
 

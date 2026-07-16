@@ -31,7 +31,7 @@ const requiredSnippets = [
   ["src/lib/qa-monitoring.ts", "/packages/quick-record-check"],
   ["src/lib/qa-monitoring.ts", "/packages/election-watch-desk"],
   ["src/lib/qa-monitoring.ts", "/elections/texas/texas-us-senate-2026"],
-  ["src/lib/qa-monitoring.ts", "/news/uap-file-dump-congress-attention-2026"],
+  ["src/lib/qa-monitoring.ts", "/news/health-care-costs-midterms-2026"],
   ["src/lib/qa-monitoring.ts", "/jurisdictions/texas"],
   ["src/app/api/quality/error/route.ts", "logAppError"],
   ["src/app/admin/quality/page.tsx", "requireAdminPageAccess"],
