@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { getAllNews, getNewsById, getOfficialById } from "@/lib/data";
+import { getPublishedArticle } from "@/lib/published-articles";
 import CopySnippetButton from "@/components/shared/CopySnippetButton";
 import RecordVisual from "@/components/shared/RecordVisual";
 import RouteEventTracker from "@/components/shared/RouteEventTracker";
@@ -23,7 +24,7 @@ export async function generateMetadata({
   params: Promise<{ id: string }>;
 }): Promise<Metadata> {
   const { id } = await params;
-  const article = getNewsById(id);
+  const article = getNewsById(id) ?? await getPublishedArticle(id);
   if (!article) return { title: "Article Not Found" };
   return buildRepWatchrMetadata({
     title: article.title,
@@ -93,7 +94,7 @@ export default async function NewsArticlePage({
   params: Promise<{ id: string }>;
 }) {
   const { id } = await params;
-  const article = getNewsById(id);
+  const article = getNewsById(id) ?? await getPublishedArticle(id);
 
   if (!article) {
     return (

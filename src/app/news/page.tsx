@@ -4,6 +4,7 @@ import ShareButtons from "@/components/shared/ShareButtons";
 import RecordVisual from "@/components/shared/RecordVisual";
 import { DAILY_NEWS_WATCH_SOURCES } from "@/data/daily-news-watch-sources";
 import { getAllNews, getOfficialById } from "@/lib/data";
+import { getPublishedArticles } from "@/lib/published-articles";
 import { buildOgImageUrl, buildRepWatchrMetadata } from "@/lib/repwatchr-seo";
 import type { NewsArticle, NewsPowerChannel, NewsScope } from "@/types";
 
@@ -245,7 +246,10 @@ export default async function NewsPage({
   const selectedState = firstParam(params.state);
   const selectedCounty = firstParam(params.county);
   const selectedCity = firstParam(params.city);
-  const articles = getAllNews();
+  const databaseArticles = await getPublishedArticles();
+  const articles = [...databaseArticles, ...getAllNews().filter(
+    (article) => !databaseArticles.some((databaseArticle) => databaseArticle.id === article.id),
+  )].sort((a, b) => new Date(b.publishedAt).getTime() - new Date(a.publishedAt).getTime());
   const filtered = articles.filter((article) =>
     matchesGeo(article, selectedScope, selectedState, selectedCounty, selectedCity),
   );

@@ -32,6 +32,7 @@
     "smoke:ai-writing": "node scripts/smoke-safe-ai-writing-assistant.mjs",
     "smoke:integrity": "node scripts/smoke-integrity-foundation.mjs",
     "smoke:neutrality": "node scripts/smoke-editorial-neutrality.mjs",
+    "smoke:east-texas": "node scripts/smoke-east-texas-editorial.mjs",
     "qa:static": "node scripts/qa-static-checks.mjs",
     "qa:routes": "node scripts/qa-route-smoke.mjs",
     "smoke:records": "node scripts/smoke-public-records-generator.mjs",

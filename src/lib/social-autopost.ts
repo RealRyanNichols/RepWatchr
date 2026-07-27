@@ -92,7 +92,10 @@ function siteUrl() {
   return (process.env.NEXT_PUBLIC_SITE_URL ?? process.env.SITE_URL ?? "https://www.repwatchr.com").replace(/\/+$/, "");
 }
 
-function storyUrlFor(clip: DailyWireClip) {
+type RepWatchrSocialClip = DailyWireClip & { repwatchrStoryUrl?: string };
+
+function storyUrlFor(clip: RepWatchrSocialClip) {
+  if (clip.repwatchrStoryUrl) return clip.repwatchrStoryUrl;
   return `${siteUrl()}/daily-wire#clip-${encodeURIComponent(clip.id)}`;
 }
 
@@ -465,6 +468,73 @@ async function assertSocialLogReady() {
   return error?.message;
 }
 
+async function loadPublishedArticleClips(): Promise<RepWatchrSocialClip[]> {
+  const supabase = getSupabaseAdminClient();
+  if (!supabase) return [];
+  const { data, error } = await supabase
+    .from("repwatchr_articles")
+    .select("id,slug,title,dek,scope,tags,source_links,published_at")
+    .eq("editorial_status", "approved")
+    .eq("publish_status", "published")
+    .in("social_status", ["pending", "partial"])
+    .lte("published_at", new Date().toISOString())
+    .order("published_at", { ascending: true })
+    .limit(12);
+  if (error) return [];
+
+  return (data ?? []).flatMap((row) => {
+    const sources = Array.isArray(row.source_links) ? row.source_links : [];
+    const firstSource = sources.find((source) => source && typeof source === "object" && typeof source.url === "string");
+    if (!firstSource) return [];
+    return [{
+      id: `article:${row.id}`,
+      title: row.title,
+      summary: row.dek,
+      sourceUrl: firstSource.url,
+      sourceName: firstSource.title || "RepWatchr source ledger",
+      publishedAt: row.published_at,
+      scope: row.scope || "national",
+      state: row.scope === "texas" || row.scope === "east-texas" ? "TX" : null,
+      counties: [],
+      cities: [],
+      powerChannels: ["officials", "elections"],
+      matchedTerms: row.tags ?? [],
+      storedStatus: "published",
+      status: "promoted_to_story",
+      sourceTier: "official_record",
+      publicStatus: "source_linked",
+      jurisdictionMatch: row.scope === "east-texas" ? "local" : row.scope === "texas" ? "texas" : "national",
+      geographicRelevance: row.scope === "east-texas" ? "local" : row.scope === "texas" ? "state" : "national",
+      sourceDomain: "repwatchr.com",
+      topicTags: row.tags ?? [],
+      officialPersonMatches: [],
+      stateMatches: [],
+      countyMatches: [],
+      cityMatches: [],
+      duplicateScore: 0,
+      qualityScore: 100,
+      publishDate: row.published_at,
+      quarantineStatus: "clear",
+      publicLabels: ["RepWatchr original reporting", "Source linked", "Editorially approved"],
+      reviewReasons: [],
+      sourceWatchId: "repwatchr-original",
+      queryLane: "repwatchr-original",
+      updatedAt: row.published_at,
+      repwatchrStoryUrl: `${siteUrl()}/news/${row.slug}`,
+    } as RepWatchrSocialClip];
+  });
+}
+
+async function markArticleSocialStatus(clip: RepWatchrSocialClip, status: "partial" | "posted") {
+  if (!clip.id.startsWith("article:")) return;
+  const supabase = getSupabaseAdminClient();
+  if (!supabase) return;
+  await supabase.from("repwatchr_articles").update({
+    social_status: status,
+    updated_at: new Date().toISOString(),
+  }).eq("id", clip.id.slice("article:".length));
+}
+
 async function claimPlatformPost(clip: DailyWireClip, platform: SocialPlatform, message: string) {
   const supabase = getSupabaseAdminClient();
   if (!supabase) throw new Error("Missing Supabase admin client");
@@ -637,6 +707,39 @@ export async function runHourlySocialAutopost({ dryRun = false }: { dryRun?: boo
       ...emptyResult,
       error: `Social post log is not ready: ${logError}`,
     };
+  }
+
+  const publishedArticleClips = await loadPublishedArticleClips();
+  if (publishedArticleClips.length) {
+    const articleLogs = await loadSocialLogRows(publishedArticleClips.map((clip) => clip.id), targetPlatforms);
+    if (articleLogs.error) return { ok: false, ...emptyResult, error: articleLogs.error.message };
+    const articleRows = new Map<string, SocialPostLogRow[]>();
+    articleLogs.rows.forEach((row) => articleRows.set(row.clip_id, [...(articleRows.get(row.clip_id) ?? []), row]));
+    const selectedArticle = publishedArticleClips.find((clip) =>
+      targetPlatforms.some((platform) => !rowForPlatform(articleRows.get(clip.id) ?? [], platform)),
+    );
+    if (selectedArticle) {
+      const candidate = toCandidate(selectedArticle, now);
+      if (dryRun) {
+        return {
+          ok: true, ...emptyResult, candidate,
+          results: targetPlatforms.map((platform) => ({ platform, status: "skipped", error: "Dry run only", storyUrl: candidate.storyUrl })),
+        };
+      }
+      const existingRows = articleRows.get(selectedArticle.id) ?? [];
+      const missingPlatforms = targetPlatforms.filter((platform) => !rowForPlatform(existingRows, platform));
+      const results = await Promise.all(missingPlatforms.map((platform) => postToPlatform(selectedArticle, platform)));
+      const posted = results.filter((result) => result.status === "posted").length;
+      const failed = results.filter((result) => result.status === "error").length;
+      await markArticleSocialStatus(selectedArticle, failed ? "partial" : "posted");
+      return {
+        ok: posted > 0 && failed === 0,
+        ...emptyResult,
+        candidate,
+        results,
+        error: failed ? "One or more social platforms rejected the RepWatchr article post." : undefined,
+      };
+    }
   }
 
   const wireResult = await getDailyWireClips(160);
