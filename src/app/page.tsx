@@ -750,4 +750,242 @@ export default async function HomePage() {
                 href="/officials"
                 className="rounded-xl border border-blue-200 bg-white px-5 py-3 text-sm font-black uppercase tracking-wide text-blue-950 transition hover:-translate-y-0.5 hover:border-red-300 hover:bg-blue-50"
               >
-        m«ëŒ+Š×ž®º+º$zzb¥
+                Find a profile
+              </Link>
+            </div>
+          </div>
+          <div className="grid gap-3">
+            {sourceDeskActions.map((action, index) => (
+              <Link
+                key={action.label}
+                href={action.href}
+                className="group grid gap-3 rounded-2xl border border-slate-200 bg-white p-5 shadow-sm transition hover:-translate-y-0.5 hover:border-red-300 hover:shadow-md sm:grid-cols-[48px_1fr]"
+              >
+                <span className="grid h-12 w-12 place-items-center rounded-full bg-blue-950 text-sm font-black text-white group-hover:bg-red-700">
+                  {index + 1}
+                </span>
+                <span>
+                  <span className="block text-lg font-black leading-tight text-blue-950 group-hover:text-red-700">
+                    {action.label}
+                  </span>
+                  <span className="mt-1 block text-sm font-semibold leading-6 text-slate-600">
+                    {action.detail}
+                  </span>
+                </span>
+              </Link>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Services Funnel */}
+      <section className="border-b border-slate-200 bg-white">
+        <div className="mx-auto max-w-7xl px-4 py-14 sm:px-6 lg:px-8">
+          <div className="grid gap-8 lg:grid-cols-[0.86fr_1.14fr] lg:items-start">
+            <div>
+              <p className="text-xs font-black uppercase tracking-[0.18em] text-red-700">Research services</p>
+              <h2 className="mt-2 text-3xl font-black leading-tight text-blue-950 sm:text-5xl">
+                When a public record needs more work, request a packet.
+              </h2>
+              <p className="mt-4 max-w-3xl text-sm font-semibold leading-6 text-blue-950/70">
+                Free tools cover search, source intake, and public lanes. Paid services are for
+                deeper research, race pages, clean writeups, and source-backed public-record packets.
+              </p>
+              <div className="mt-5 flex flex-wrap gap-3">
+                <Link
+                  href="/services"
+                  className="rounded-xl bg-red-700 px-5 py-3 text-sm font-black uppercase tracking-wide text-white shadow-sm transition hover:-translate-y-0.5 hover:bg-blue-950"
+                >
+                  View Services
+                </Link>
+                <Link
+                  href="/elections/texas/contribute"
+                  className="rounded-xl border border-amber-200 bg-amber-50 px-5 py-3 text-sm font-black uppercase tracking-wide text-amber-950 transition hover:-translate-y-0.5 hover:border-red-300 hover:bg-white"
+                >
+                  Build Free Packet
+                </Link>
+              </div>
+            </div>
+            <div className="grid gap-4 md:grid-cols-3">
+              {serviceHighlights.map((service) => (
+                <Link
+                  key={service.slug}
+                  href={`/services/${service.slug}`}
+                  className="group rounded-2xl border border-slate-200 bg-slate-50 p-5 shadow-sm transition hover:-translate-y-0.5 hover:border-red-300 hover:bg-white hover:shadow-md"
+                >
+                  <div className="flex items-center justify-between gap-3">
+                    <span className="rounded-full bg-blue-950 px-2.5 py-1 text-[11px] font-black uppercase tracking-wide text-white">
+                      {service.eyebrow}
+                    </span>
+                    <span className="text-lg font-black text-red-700">{service.priceLabel}</span>
+                  </div>
+                  <h3 className="mt-4 text-xl font-black leading-tight text-blue-950 group-hover:text-red-700">
+                    {service.name}
+                  </h3>
+                  <p className="mt-2 text-sm font-semibold leading-6 text-slate-600">
+                    {service.summary}
+                  </p>
+                </Link>
+              ))}
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Browse by Level */}
+      <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+        <div className="text-center mb-10">
+          <h2 className="text-3xl font-extrabold text-gray-900">
+            Choose the record lane
+          </h2>
+          <p className="text-gray-500 mt-2">
+            People do not share categories. They share names, boards, votes, red flags, and receipts.
+          </p>
+        </div>
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-4">
+          {levelCards.map((card) => (
+            <Link
+              key={card.level}
+              href={card.href}
+              className="group block rounded-2xl border border-gray-200 bg-white p-6 transition-all hover:shadow-lg hover:border-blue-200 hover:-translate-y-1"
+            >
+              <h3 className="font-bold text-gray-900 text-lg group-hover:text-blue-600 transition-colors">
+                {card.title}
+              </h3>
+              <p className="text-sm text-gray-500 mt-2">{card.description}</p>
+              <span className="inline-block mt-4 text-xs font-semibold text-blue-600 group-hover:translate-x-1 transition-transform">
+                View lane &rarr;
+              </span>
+            </Link>
+          ))}
+        </div>
+      </section>
+
+      {/* Issue Categories */}
+      <section className="bg-slate-50">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+          <div className="text-center mb-10">
+            <h2 className="text-3xl font-extrabold text-gray-900">
+              Score what people already argue about
+            </h2>
+            <p className="text-gray-500 mt-2">
+              Turn hot-button issues into traceable votes, source links, and scorecards people can inspect.
+            </p>
+          </div>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-4">
+            {issueCategories.map((issue) => (
+              <Link
+                key={issue.id}
+                href={`/scorecards/${issue.id}`}
+                className="group block rounded-2xl border border-gray-200 bg-white p-5 transition-all hover:shadow-lg hover:-translate-y-1"
+              >
+                <div
+                  className="w-10 h-1 rounded-full mb-4"
+                  style={{ backgroundColor: issue.color }}
+                />
+                <h3 className="font-bold text-gray-900 text-sm group-hover:text-blue-600 transition-colors">
+                  {issue.name}
+                </h3>
+                <p className="text-xs text-gray-500 mt-2 leading-relaxed line-clamp-2">
+                  {issue.description}
+                </p>
+                <p
+                  className="text-xs font-bold mt-3"
+                  style={{ color: issue.color }}
+                >
+                  {issue.weight}% of overall score
+                </p>
+              </Link>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Featured Officials */}
+      <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+        <div className="flex items-end justify-between mb-8">
+          <div>
+            <h2 className="text-3xl font-extrabold text-gray-900">
+              Faces move faster than folders
+            </h2>
+            <p className="text-gray-500 mt-1">
+              Inspect a name, read the record, then share the profile.
+            </p>
+          </div>
+          <Link
+            href="/officials"
+            className="text-blue-600 hover:text-blue-800 text-sm font-bold"
+          >
+            Find a rep &rarr;
+          </Link>
+        </div>
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
+          {featuredOfficials.map((official) => (
+            <OfficialCard
+              key={official.id}
+              official={official}
+              scoreCard={getScoreCard(official.id)}
+            />
+          ))}
+        </div>
+      </section>
+
+      {/* Join CTA */}
+      <section className="bg-white">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-16 text-center">
+          <div className="mx-auto mb-6 h-1.5 max-w-xs rounded-full bg-[linear-gradient(90deg,#bf0d3e_0%,#bf0d3e_35%,#ffffff_35%,#ffffff_65%,#002868_65%,#002868_100%)] shadow-sm" />
+          <h2 className="text-3xl font-extrabold text-blue-950 mb-4">
+            Do not just watch the record. Move it.
+          </h2>
+          <p className="text-blue-950/70 text-lg mb-8 max-w-2xl mx-auto">
+            Search a profile, package the missing source, request deeper research, and
+            share the page with people who need to open it before the next vote.
+          </p>
+          <div className="flex flex-wrap gap-4 justify-center">
+            <Link
+              href="/elections/texas/contribute"
+              className="rounded-xl bg-blue-900 px-8 py-3.5 text-sm font-bold text-white shadow-lg hover:shadow-xl transition-all hover:-translate-y-0.5 hover:bg-red-700"
+            >
+              Build Free Packet
+            </Link>
+            <Link
+              href="/services"
+              className="rounded-xl border-2 border-blue-200 px-8 py-3.5 text-sm font-bold text-blue-900 hover:bg-blue-50 transition-all"
+            >
+              View Services
+            </Link>
+            <Link
+              href="/officials"
+              className="rounded-xl border-2 border-red-200 px-8 py-3.5 text-sm font-bold text-red-700 hover:bg-red-50 transition-all"
+            >
+              Find Officials
+            </Link>
+          </div>
+        </div>
+      </section>
+
+      <div className="fixed inset-x-0 bottom-0 z-40 border-t border-slate-200 bg-white/95 px-3 py-2 shadow-2xl shadow-blue-950/20 backdrop-blur md:hidden">
+        <div className="mx-auto grid max-w-md grid-cols-3 gap-2">
+          <Link
+            href="/officials"
+            className="rounded-xl bg-red-700 px-3 py-3 text-center text-[11px] font-black uppercase tracking-wide text-white"
+          >
+            Find
+          </Link>
+          <Link
+            href="/submit-source"
+            className="rounded-xl border border-amber-200 bg-amber-50 px-3 py-3 text-center text-[11px] font-black uppercase tracking-wide text-amber-950"
+          >
+            Source
+          </Link>
+          <Link
+            href="/blog"
+            className="rounded-xl bg-blue-950 px-3 py-3 text-center text-[11px] font-black uppercase tracking-wide text-white"
+          >
+            Blog
+          </Link>
+        </div>
+      </div>
+    </div>
+  );
+}

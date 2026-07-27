@@ -103,4 +103,76 @@ for (const route of ogRoutes) {
   );
   assert(
     !/renderRepWatchrOgImage\s*\(\s*\{[\s\S]*?\bsupportLine\s*:\s*(?:undefined|null|["'`]\s*["'`])/.test(source),
-    `OG route passes an empty support line: ${rm«ëŒ+Š×ž®º+º$zzb¥
+    `OG route passes an empty support line: ${route}`,
+  );
+  assert(
+    /renderRepWatchrOgImage\s*\(\s*\{[\s\S]*?\bpageType\s*(?::|,)/.test(source),
+    `OG route does not identify its page type: ${route}`,
+  );
+}
+
+const renderer = read("src/lib/repwatchr-og.tsx");
+for (const requiredRendererText of [
+  "repwatchr-logo-america-first.png",
+  "REPWATCHR_TAGLINE",
+  "pageType",
+  "metricLabel",
+  "metricValue",
+  "jurisdiction",
+  "headline: string",
+  "supportLine: string",
+  "input.headline",
+  "input.supportLine",
+  "{headline}",
+  "{supportLine}",
+  "ImageResponse",
+  "REPWATCHR_OG_SIZE",
+]) {
+  assert(renderer.includes(requiredRendererText), `Shared OG renderer missing ${requiredRendererText}`);
+}
+assert(
+  !/\bheadline\s*\?\s*:/.test(renderer),
+  "Shared OG renderer headline must remain required.",
+);
+assert(
+  !/\bsupportLine\s*\?\s*:/.test(renderer),
+  "Shared OG renderer support line must remain required.",
+);
+
+const seo = read("src/lib/repwatchr-seo.ts");
+for (const requiredMetadataField of ["openGraph", "twitter", "summary_large_image", "images", "canonical"]) {
+  assert(seo.includes(requiredMetadataField), `SEO helper missing ${requiredMetadataField}`);
+}
+
+const publicPages = walk("src/app")
+  .filter((file) => file.endsWith("/page.tsx") || file === "src/app/page.tsx")
+  .map((file) => ({ file, source: read(file) }))
+  .filter(({ file, source }) => isPublicPage(file, source));
+const pagesWithoutSpecificOg = publicPages
+  .filter(({ source }) => !hasPageSpecificOgMetadata(source))
+  .map(({ file }) => `${routeFromPage(file)} (${file})`);
+
+assert(
+  pagesWithoutSpecificOg.length === 0,
+  `Public pages missing page-specific OG metadata:\n${pagesWithoutSpecificOg.join("\n")}`,
+);
+
+for (const { file, source } of publicPages) {
+  if (!source.includes("buildRepWatchrMetadata")) continue;
+  assert(
+    source.includes("buildOgImageUrl"),
+    `Public page uses metadata helper without a generated OG image URL: ${file}`,
+  );
+}
+
+assert(read("src/components/shared/RedFlagCard.tsx").includes("?flag="), "Red flag share card must use query URLs for distinct previews.");
+assert(read("src/app/layout.tsx").includes("/api/og"), "Root metadata fallback must use generated OG image.");
+const robots = read("src/app/robots.ts");
+assert(
+  /allow\s*:\s*(?:["']\/api\/og\/["']|\[[\s\S]*?["']\/api\/og\/["'][\s\S]*?\])/.test(robots),
+  "robots.ts must explicitly allow generated /api/og/ social images.",
+);
+
+console.log(
+  `og preview smoke checks passed (${ogRoutes.length} routes, ${publicPages.length} public pages)`,
+);

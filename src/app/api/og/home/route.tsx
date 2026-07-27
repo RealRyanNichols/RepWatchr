@@ -74,4 +74,48 @@ const pageCopy = {
   "east-texas": {
     pageType: "East Texas desk",
     headline: "Every local office. No free passes.",
-    supportLine: "A Harleton-centered accountability desk for officials, records, votes, budgets, meetm«ëŒ+Š×ž®º+º$zzb¥
+    supportLine: "A Harleton-centered accountability desk for officials, records, votes, budgets, meetings, and sources.",
+    jurisdiction: "Within 75 road miles of Harleton, Texas",
+    path: "/east-texas",
+  },
+  "sales-rep-signal": {
+    pageType: "Consent-first pilot",
+    headline: "Sales signals, submitted by you.",
+    supportLine: "An opt-in profile review pilot. Not a background check or employment decision tool.",
+    jurisdiction: "RepWatchr tools",
+    path: "/tools/sales-rep-signal",
+  },
+  vendortrust: {
+    pageType: "VendorTrust",
+    headline: "Check the public signals first.",
+    supportLine: "Review license, registry, complaint, and proof status before a local purchase or appointment.",
+    jurisdiction: "RepWatchr tools",
+    path: "/tools/vendortrust",
+  },
+} as const;
+
+export async function GET(request: Request) {
+  const url = new URL(request.url);
+  const stats = getRepWatchrDataStats();
+  const schoolBoards = getSchoolBoardStats();
+  const page = url.searchParams.get("page") as keyof typeof pageCopy | null;
+  const copy = page && page in pageCopy ? pageCopy[page] : pageCopy.home;
+
+  return renderRepWatchrOgImage({
+    requestUrl: request.url,
+    pageType: copy.pageType,
+    headline: copy.headline,
+    supportLine: copy.supportLine,
+    backgroundImage: REPWATCHR_EDITORIAL_OG_BACKGROUND,
+    backgroundPosition: "center 45%",
+    jurisdiction: copy.jurisdiction,
+    metricValue: stats.officialFiles.toLocaleString("en-US"),
+    metricLabel: "official files",
+    path: copy.path,
+    badges: [
+      { label: "School profiles", value: schoolBoards.candidates.toLocaleString("en-US"), tone: "blue" },
+      { label: "Vote rows", value: stats.publicVoteRecordRows.toLocaleString("en-US"), tone: "green" },
+      { label: "Red flags", value: stats.redFlagItems.toLocaleString("en-US"), tone: "red" },
+    ],
+  });
+}
