@@ -257,12 +257,19 @@ function xMessage(clip: DailyWireClip) {
 
 function configuredPlatforms(): SocialPlatform[] {
   const platforms: SocialPlatform[] = [];
-  if (process.env.FACEBOOK_PAGE_ID && process.env.FACEBOOK_PAGE_ACCESS_TOKEN) platforms.push("facebook");
+  if (
+    process.env.FACEBOOK_AUTOPOST_ENABLED === "true" &&
+    process.env.FACEBOOK_PAGE_ID &&
+    process.env.FACEBOOK_PAGE_ACCESS_TOKEN
+  ) {
+    platforms.push("facebook");
+  }
   const hasStoredXTokenPath = Boolean(process.env.X_CLIENT_ID && process.env.NEXT_PUBLIC_SUPABASE_URL && process.env.SUPABASE_SERVICE_ROLE_KEY);
   if (
-    process.env.X_USER_ACCESS_TOKEN ||
-    process.env.X_REFRESH_TOKEN ||
-    hasStoredXTokenPath
+    process.env.X_AUTOPOST_ENABLED === "true" &&
+    (process.env.X_USER_ACCESS_TOKEN ||
+      process.env.X_REFRESH_TOKEN ||
+      hasStoredXTokenPath)
   ) {
     platforms.push("x");
   }

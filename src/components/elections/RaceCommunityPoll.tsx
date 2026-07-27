@@ -80,7 +80,11 @@ export default function RaceCommunityPoll({
   }, [enabled]);
 
   useEffect(() => {
-    void loadPoll();
+    const timeout = window.setTimeout(() => {
+      void loadPoll();
+    }, 0);
+
+    return () => window.clearTimeout(timeout);
   }, [loadPoll]);
 
   async function submitVote() {

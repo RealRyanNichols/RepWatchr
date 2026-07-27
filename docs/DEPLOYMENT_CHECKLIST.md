@@ -53,6 +53,15 @@ If using the bundled Codex runtime locally, prepend its Node path before running
 | Email disabled unless approved | pass by default | `ENABLE_EMAIL_SENDING` should remain false until consent/provider setup. |
 | AI disabled unless approved | pass by default | AI features default off. |
 | Public API disabled unless approved | pass by default | `ENABLE_PUBLIC_API` should remain false until launch. |
+| Race polls disabled unless approved | pass by default | `NEXT_PUBLIC_ENABLE_RACE_POLLS_V1` remains false until a replacement migration and privacy tests pass. |
+| Editorial publishing disabled unless approved | pass by default | `EDITORIAL_PIPELINE_ENABLED` remains false and no editorial cron is scheduled. |
+| Social distribution disabled unless approved | pass by default | `SOCIAL_PIPELINE_V2_ENABLED`, `FACEBOOK_AUTOPOST_ENABLED`, and `X_AUTOPOST_ENABLED` remain false. |
+
+## Backend staging hold
+
+Do not apply migration drafts from `agent/repwatchr-backend-staging-hold` to
+production. Follow `docs/BACKEND_STAGING_HOLD.md` and replace those drafts with
+additive, reversible migrations tested against a non-production snapshot.
 
 ## Credential Blockers
 

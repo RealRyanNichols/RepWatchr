@@ -27,7 +27,8 @@ Stripe is the first pilot choice because it is pay-as-you-go and fits the existi
 
 The browser can never write trusted person status, residence status, county, district, provider outcome, duplicate decision, or reviewer outcome.
 
-The private migration `20260715234500_member_identity_assurance.sql` stores:
+The unreleased migration draft preserved on
+`agent/repwatchr-backend-staging-hold` was designed to store:
 
 - provider/session references and status;
 - separate assurance levels and dates;
@@ -62,5 +63,8 @@ It must never store raw document numbers, dates of birth, names from the identit
 | Duplicate HMAC | Active account plus 30 days; longer only for confirmed abuse |
 | Pseudonymized security logs | No more than 30 days |
 | Evidence-free verification audit events | 24 months |
+
+That draft is not approved for production. Replace it with an additive,
+reversible migration before continuing.
 
 Before production, publish the biometric notice, consent, retention/destruction policy, accessibility route, and appeal process; complete legal review; configure provider redaction; and pass webhook replay, shared-household, duplicate, accessibility, RLS, and deletion tests.
