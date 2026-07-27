@@ -15,7 +15,7 @@ export const metadata: Metadata = buildRepWatchrMetadata({
   description:
     "Track public-safety agencies, elected sheriffs, police chiefs, complaint paths, policy records, jail records, and source-backed badge-power profiles.",
   path: "/public-safety",
-  imagePath: buildOgImageUrl("home"),
+  imagePath: buildOgImageUrl("home", { page: "public-safety" }),
   imageAlt: "RepWatchr public safety watch preview",
 });
 

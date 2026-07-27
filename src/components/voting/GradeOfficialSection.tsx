@@ -4,6 +4,7 @@ import { useEffect, useState } from "react";
 import Link from "next/link";
 import { useAuth } from "@/components/auth/AuthProvider";
 import { createClient } from "@/lib/supabase";
+import { repwatchrFeatureFlags } from "@/lib/repwatchr-feature-flags";
 
 type Grade = "A" | "B" | "C" | "D" | "F";
 
@@ -105,6 +106,10 @@ export default function GradeOfficialSection({
   useEffect(() => {
     let cancelled = false;
     async function load() {
+      if (!repwatchrFeatureFlags.communityVotingV2) {
+        setLoading(false);
+        return;
+      }
       const [stateResult, districtResult, mineResult] = await Promise.all([
         supabase
           .from("citizen_grade_summary")
@@ -193,7 +198,7 @@ export default function GradeOfficialSection({
   }, [officialId, officialCounties, supabase, user]);
 
   async function handleGrade(grade: Grade) {
-    if (!user || !profile?.verified) return;
+    if (!repwatchrFeatureFlags.communityVotingV2 || !user || !profile?.verified) return;
     setSaving(true);
     setError("");
 
@@ -220,7 +225,6 @@ export default function GradeOfficialSection({
           user_id: user.id,
           official_id: officialId,
           grade,
-          county: profile.county,
           rationale: trimmedRationale || null,
         },
         { onConflict: "user_id,official_id" }
@@ -230,6 +234,17 @@ export default function GradeOfficialSection({
     }
 
     setSaving(false);
+  }
+
+  if (!repwatchrFeatureFlags.communityVotingV2) {
+    return (
+      <div className="rounded-xl border border-amber-200 bg-amber-50 p-5">
+        <p className="text-xs font-black uppercase tracking-wide text-amber-800">Citizen grading paused</p>
+        <p className="mt-1 text-sm font-semibold leading-6 text-amber-900">
+          Verified community grades will return after identity, geography, abuse controls, and aggregate reconciliation pass review.
+        </p>
+      </div>
+    );
   }
 
   if (loading) {

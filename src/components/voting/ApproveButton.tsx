@@ -5,6 +5,7 @@ import { useAuth } from "@/components/auth/AuthProvider";
 import { createClient } from "@/lib/supabase";
 import Link from "next/link";
 import type { CitizenVote } from "@/types";
+import { repwatchrFeatureFlags } from "@/lib/repwatchr-feature-flags";
 
 interface ApproveButtonProps {
   officialId: string;
@@ -14,11 +15,16 @@ export default function ApproveButton({ officialId }: ApproveButtonProps) {
   const { user, profile } = useAuth();
   const [currentVote, setCurrentVote] = useState<CitizenVote | null>(null);
   const [loading, setLoading] = useState(false);
-  const [initialLoading, setInitialLoading] = useState(true);
+  const [initialLoading, setInitialLoading] = useState(
+    repwatchrFeatureFlags.communityVotingV2,
+  );
   const supabase = createClient();
 
   // Load user's existing vote for this official
   useEffect(() => {
+    if (!repwatchrFeatureFlags.communityVotingV2) {
+      return;
+    }
     if (!user) return;
 
     async function loadVote() {
@@ -39,7 +45,7 @@ export default function ApproveButton({ officialId }: ApproveButtonProps) {
   }, [user, officialId, supabase]);
 
   async function handleVote(vote: CitizenVote) {
-    if (!user || !profile?.verified) return;
+    if (!repwatchrFeatureFlags.communityVotingV2 || !user || !profile?.verified) return;
 
     setLoading(true);
 
@@ -61,7 +67,6 @@ export default function ApproveButton({ officialId }: ApproveButtonProps) {
           user_id: user.id,
           official_id: officialId,
           vote,
-          county: profile.county,
         },
         { onConflict: "user_id,official_id" }
       );
@@ -72,6 +77,16 @@ export default function ApproveButton({ officialId }: ApproveButtonProps) {
     }
 
     setLoading(false);
+  }
+
+  if (!repwatchrFeatureFlags.communityVotingV2) {
+    return (
+      <div className="rounded-lg border border-amber-200 bg-amber-50 p-4 text-center">
+        <p className="text-sm font-semibold text-amber-900">
+          Community voting is paused while secure verification and audited vote counting are completed.
+        </p>
+      </div>
+    );
   }
 
   // Not logged in

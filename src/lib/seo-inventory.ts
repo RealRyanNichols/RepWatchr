@@ -62,6 +62,7 @@ type StaticSeoPage = {
   priority?: number;
   changeFrequency?: SeoUrlRecord["changeFrequency"];
   imageKind?: string;
+  imageParams?: Record<string, string | number>;
 };
 
 const now = () => new Date();
@@ -78,16 +79,22 @@ const staticSeoPages: StaticSeoPage[] = [
     path: "/about",
     title: "About RepWatchr",
     description: "RepWatchr is a public-record accountability system for officials, boards, votes, funding, and source links.",
+    imageKind: "home",
+    imageParams: { page: "about" },
   },
   {
     path: "/officials",
     title: "National Elected Officials Directory",
     description: "Choose a state to browse sourced elected-official profiles and public records.",
+    imageKind: "home",
+    imageParams: { page: "officials" },
   },
   {
     path: "/authority-watch",
     title: "Authority Watch",
     description: "Public authority profiles and source-backed accountability lanes.",
+    imageKind: "home",
+    imageParams: { page: "authority" },
   },
   {
     path: "/school-boards",
@@ -148,6 +155,7 @@ const staticSeoPages: StaticSeoPage[] = [
     title: "RepWatchr Public Data API Access",
     description: "Request future access to source-backed RepWatchr public profiles, sources, jurisdictions, races, and aggregate trend data.",
     imageKind: "services",
+    imageParams: { slug: "public-data-api" },
   },
   {
     path: "/funding",
@@ -160,11 +168,14 @@ const staticSeoPages: StaticSeoPage[] = [
     title: "Money Trail",
     description: "Search campaign finance source paths, public filing summaries, donor aggregates, committees, and source gaps.",
     imageKind: "funding",
+    imageParams: { view: "money" },
   },
   {
     path: "/data-reports",
     title: "Data Reports",
     description: "RepWatchr data coverage, source inventory, and public-record buildout status.",
+    imageKind: "methodology",
+    imageParams: { view: "data-reports" },
   },
   {
     path: "/red-flags",
@@ -176,6 +187,8 @@ const staticSeoPages: StaticSeoPage[] = [
     path: "/votes",
     title: "Tracked Votes",
     description: "Bills and roll-call vote records that factor into public official scorecards.",
+    imageKind: "methodology",
+    imageParams: { view: "votes" },
   },
   {
     path: "/news",
@@ -187,11 +200,15 @@ const staticSeoPages: StaticSeoPage[] = [
     path: "/issues",
     title: "Texas Issues",
     description: "The issues RepWatchr tracks: water rights, property rights, taxes, transparency, and voting records.",
+    imageKind: "methodology",
+    imageParams: { view: "issues" },
   },
   {
     path: "/scorecards",
     title: "Universal Scorecards",
     description: "Source-backed scorecards for RepWatchr public profiles and verified profile votes.",
+    imageKind: "methodology",
+    imageParams: { view: "scorecards" },
   },
   {
     path: "/methodology",
@@ -205,6 +222,8 @@ const staticSeoPages: StaticSeoPage[] = [
     description: "RepWatchr privacy policy and data-use terms.",
     changeFrequency: "yearly",
     priority: 0.3,
+    imageKind: "methodology",
+    imageParams: { view: "privacy" },
   },
   {
     path: "/terms",
@@ -212,36 +231,71 @@ const staticSeoPages: StaticSeoPage[] = [
     description: "RepWatchr terms of service.",
     changeFrequency: "yearly",
     priority: 0.3,
+    imageKind: "methodology",
+    imageParams: { view: "terms" },
   },
   {
     path: "/attorneys",
     title: "Attorney Watch",
     description: "Source-backed attorney, law-firm, and public legal-system profile lanes.",
+    imageKind: "home",
+    imageParams: { page: "attorneys" },
   },
   {
     path: "/media",
     title: "National Media Watch",
     description: "Source-backed newsroom, editor, reporter, ownership, correction, and public-coverage records.",
+    imageKind: "home",
+    imageParams: { page: "media" },
   },
   {
     path: "/public-safety",
     title: "Public Safety Watch",
     description: "Source-backed public safety agencies, sheriffs, police chiefs, and oversight records.",
+    imageKind: "home",
+    imageParams: { page: "public-safety" },
   },
   {
     path: "/east-texas-predator-watch",
     title: "East Texas Predator Watch",
     description: "Public registry source paths and public-safety record review for East Texas.",
+    imageKind: "home",
+    imageParams: { page: "predator-watch" },
   },
   {
     path: "/authors",
     title: "RepWatchr Authors",
     description: "RepWatchr publishing and source review credits.",
+    imageKind: "source-packet",
+    imageParams: { view: "authors" },
   },
   {
     path: "/state-reps",
     title: "State Representatives",
     description: "Source-seeded state representative and state senator profiles across the United States.",
+    imageKind: "home",
+    imageParams: { page: "state-reps" },
+  },
+  {
+    path: "/east-texas",
+    title: "East Texas Accountability Desk",
+    description: "Source-led profiles and reporting for elected officials serving communities within 75 road miles of Harleton, Texas.",
+    imageKind: "home",
+    imageParams: { page: "east-texas" },
+  },
+  {
+    path: "/tools/sales-rep-signal",
+    title: "Sales Rep Signal Profile Pilot",
+    description: "An opt-in profile review pilot that is not a background check or employment decision tool.",
+    imageKind: "home",
+    imageParams: { page: "sales-rep-signal" },
+  },
+  {
+    path: "/tools/vendortrust",
+    title: "VendorTrust Badge",
+    description: "Review public-source vendor signals before a local purchase or appointment.",
+    imageKind: "home",
+    imageParams: { page: "vendortrust" },
   },
 ];
 
@@ -271,7 +325,7 @@ function staticRecords(): SeoUrlRecord[] {
       lastModified: date,
       changeFrequency: page.changeFrequency ?? "weekly",
       priority: page.priority ?? 0.72,
-      imageUrl: buildOgImageUrl(page.imageKind ?? "home"),
+      imageUrl: buildOgImageUrl(page.imageKind ?? "home", page.imageParams),
       imageTitle: `${page.title} social preview`,
     }),
   );
@@ -438,7 +492,7 @@ function publicDataRecords(): SeoUrlRecord[] {
       lastModified: parsedDate(bill.dateVoted, date),
       changeFrequency: "monthly",
       priority: 0.62,
-      imageUrl: buildOgImageUrl("methodology"),
+      imageUrl: buildOgImageUrl("methodology", { view: "bill", id: bill.id }),
       imageTitle: `${bill.title} vote record preview`,
     }),
   );
@@ -452,7 +506,7 @@ function publicDataRecords(): SeoUrlRecord[] {
       lastModified: date,
       changeFrequency: "monthly",
       priority: 0.58,
-      imageUrl: buildOgImageUrl("methodology"),
+      imageUrl: buildOgImageUrl("methodology", { view: "issue", id: issue.id }),
       imageTitle: `${issue.name} issue preview`,
     }),
     urlRecord({
@@ -463,7 +517,7 @@ function publicDataRecords(): SeoUrlRecord[] {
       lastModified: date,
       changeFrequency: "monthly",
       priority: 0.58,
-      imageUrl: buildOgImageUrl("methodology"),
+      imageUrl: buildOgImageUrl("methodology", { view: "scorecard", id: issue.id }),
       imageTitle: `${issue.name} scorecard preview`,
     }),
   ]);
@@ -483,10 +537,10 @@ function publicDataRecords(): SeoUrlRecord[] {
   );
 
   const powerProfileRecords = [
-    ...getAttorneyWatchProfiles().map((profile) => ({ base: "/attorneys", profile })),
-    ...getMediaWatchProfiles().map((profile) => ({ base: "/media", profile })),
-    ...getPublicSafetyWatchProfiles().map((profile) => ({ base: "/public-safety", profile })),
-  ].map(({ base, profile }) =>
+    ...getAttorneyWatchProfiles().map((profile) => ({ base: "/attorneys", kind: "attorney", profile })),
+    ...getMediaWatchProfiles().map((profile) => ({ base: "/media", kind: "media", profile })),
+    ...getPublicSafetyWatchProfiles().map((profile) => ({ base: "/public-safety", kind: "public-safety", profile })),
+  ].map(({ base, kind, profile }) =>
     urlRecord({
       type: "static" as const,
       path: `${base}/${profile.slug}`,
@@ -495,7 +549,7 @@ function publicDataRecords(): SeoUrlRecord[] {
       lastModified: date,
       changeFrequency: "monthly",
       priority: 0.54,
-      imageUrl: buildOgImageUrl("home"),
+      imageUrl: buildOgImageUrl("profile", { kind, slug: profile.slug }),
       imageTitle: `${profile.name} profile preview`,
     }),
   );

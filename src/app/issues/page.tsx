@@ -9,7 +9,7 @@ export const metadata: Metadata = buildRepWatchrMetadata({
   description:
     "The issues we track: water rights, land rights, taxes, government transparency, and voting records.",
   path: "/issues",
-  imagePath: buildOgImageUrl("methodology"),
+  imagePath: buildOgImageUrl("methodology", { view: "issues" }),
   imageAlt: "RepWatchr issue tracker preview",
 });
 

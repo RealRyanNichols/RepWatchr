@@ -41,6 +41,7 @@ export interface SocialStoryCandidate {
   storyUrl: string;
   publishedAt: string | null;
   score: number;
+  rankFactors: string[];
 }
 
 export interface SocialPostResult {
@@ -73,28 +74,12 @@ export interface HourlySocialAutopostResult {
 const SOCIAL_POST_TABLE = "repwatchr_social_posts";
 const DEFAULT_HOURLY_SOURCE_LIMIT = 24;
 const DEFAULT_MAX_CANDIDATE_AGE_HOURS = 72;
-const HIGH_ATTENTION_TERMS = [
-  "accountability",
-  "campaign finance",
-  "charged",
-  "corruption",
-  "doge",
-  "ethics",
-  "fraud",
-  "hearing",
-  "indicted",
-  "investigation",
-  "lawsuit",
-  "oversight",
-  "public records",
-  "resigned",
-  "subpoena",
-  "tim burchett",
-  "transparency",
-  "uap",
-  "ufo",
-  "waste",
-  "whistleblower",
+const CIVIC_SIGNAL_GROUPS = [
+  ["election", "primary", "runoff", "ballot", "candidate", "campaign"],
+  ["vote", "roll call", "bill", "hearing", "budget", "contract", "appointment"],
+  ["audit", "ethics", "investigation", "court", "lawsuit", "public records", "oversight"],
+  ["healthcare", "housing", "insurance", "groceries", "gasoline", "electricity", "taxes"],
+  ["campaign finance", "donor", "spending", "procurement", "appropriation"],
 ];
 
 function parsePositiveInteger(value: string | undefined, fallback: number) {
@@ -107,7 +92,10 @@ function siteUrl() {
   return (process.env.NEXT_PUBLIC_SITE_URL ?? process.env.SITE_URL ?? "https://www.repwatchr.com").replace(/\/+$/, "");
 }
 
-function storyUrlFor(clip: DailyWireClip) {
+type RepWatchrSocialClip = DailyWireClip & { repwatchrStoryUrl?: string };
+
+function storyUrlFor(clip: RepWatchrSocialClip) {
+  if (clip.repwatchrStoryUrl) return clip.repwatchrStoryUrl;
   return `${siteUrl()}/daily-wire#clip-${encodeURIComponent(clip.id)}`;
 }
 
@@ -136,25 +124,52 @@ function isFreshEnough(clip: DailyWireClip, now: Date) {
   return now.getTime() - time <= maxAgeHours * 60 * 60 * 1000;
 }
 
-function attentionScore(clip: DailyWireClip, now: Date) {
-  const text = `${clip.title} ${clip.summary} ${clip.sourceName} ${clip.sourceCredit?.name ?? ""} ${clip.sourceCredit?.handle ?? ""} ${clip.matchedTerms.join(" ")}`.toLowerCase();
+function attentionRank(clip: DailyWireClip, now: Date) {
+  const text = `${clip.title} ${clip.summary} ${clip.matchedTerms.join(" ")} ${clip.topicTags.join(" ")}`.toLowerCase();
   const ageHours = Math.max(0, (now.getTime() - clipTime(clip)) / (60 * 60 * 1000));
-  let score = 40;
+  const quality = Math.round(Math.max(0, Math.min(100, clip.qualityScore)) * 0.45);
+  const source = clip.sourceTier === "official_record" ? 24 : clip.sourceTier === "named_news" ? 18 : 8;
+  const jurisdiction =
+    clip.jurisdictionMatch === "local"
+      ? 10
+      : clip.jurisdictionMatch === "texas" || clip.jurisdictionMatch === "state"
+        ? 8
+        : clip.jurisdictionMatch === "national"
+          ? 6
+          : 0;
+  const geography =
+    clip.geographicRelevance === "local"
+      ? 6
+      : clip.geographicRelevance === "state"
+        ? 5
+        : clip.geographicRelevance === "national"
+          ? 4
+          : 0;
+  const civicSignals = CIVIC_SIGNAL_GROUPS.filter((group) => group.some((term) => text.includes(term))).length * 5;
+  const freshness = Math.max(0, 24 - Math.floor(ageHours));
+  const duplicatePenalty = clip.duplicateScore >= 80 ? 20 : 0;
+  const score = quality + source + jurisdiction + geography + civicSignals + freshness - duplicatePenalty;
 
-  if (clip.sourceCredit) score += 28;
-  if (clip.sourceTier === "official_record") score += 18;
-  if (clip.sourceTier === "named_news") score += 14;
-  if (clip.powerChannels.includes("officials")) score += 10;
-  if (clip.powerChannels.includes("courts")) score += 8;
-  if (clip.powerChannels.includes("money")) score += 8;
-  if (clip.powerChannels.includes("media")) score += 6;
-  score += HIGH_ATTENTION_TERMS.filter((term) => text.includes(term)).length * 7;
-  score += Math.max(0, 24 - Math.floor(ageHours));
+  return {
+    score,
+    factors: [
+      `quality:${quality}`,
+      `source_strength:${source}`,
+      `jurisdiction:${jurisdiction}`,
+      `geography:${geography}`,
+      `civic_signals:${civicSignals}`,
+      `freshness:${freshness}`,
+      `duplicate_penalty:-${duplicatePenalty}`,
+    ],
+  };
+}
 
-  return score;
+function attentionScore(clip: DailyWireClip, now: Date) {
+  return attentionRank(clip, now).score;
 }
 
 function toCandidate(clip: DailyWireClip, now: Date): SocialStoryCandidate {
+  const rank = attentionRank(clip, now);
   return {
     clipId: clip.id,
     title: clip.title,
@@ -163,7 +178,8 @@ function toCandidate(clip: DailyWireClip, now: Date): SocialStoryCandidate {
     sourceUrl: clip.sourceUrl,
     storyUrl: storyUrlFor(clip),
     publishedAt: clip.publishedAt,
-    score: attentionScore(clip, now),
+    score: rank.score,
+    rankFactors: rank.factors,
   };
 }
 
@@ -241,12 +257,19 @@ function xMessage(clip: DailyWireClip) {
 
 function configuredPlatforms(): SocialPlatform[] {
   const platforms: SocialPlatform[] = [];
-  if (process.env.FACEBOOK_PAGE_ID && process.env.FACEBOOK_PAGE_ACCESS_TOKEN) platforms.push("facebook");
+  if (
+    process.env.FACEBOOK_AUTOPOST_ENABLED === "true" &&
+    process.env.FACEBOOK_PAGE_ID &&
+    process.env.FACEBOOK_PAGE_ACCESS_TOKEN
+  ) {
+    platforms.push("facebook");
+  }
   const hasStoredXTokenPath = Boolean(process.env.X_CLIENT_ID && process.env.NEXT_PUBLIC_SUPABASE_URL && process.env.SUPABASE_SERVICE_ROLE_KEY);
   if (
-    process.env.X_USER_ACCESS_TOKEN ||
-    process.env.X_REFRESH_TOKEN ||
-    hasStoredXTokenPath
+    process.env.X_AUTOPOST_ENABLED === "true" &&
+    (process.env.X_USER_ACCESS_TOKEN ||
+      process.env.X_REFRESH_TOKEN ||
+      hasStoredXTokenPath)
   ) {
     platforms.push("x");
   }
@@ -452,6 +475,73 @@ async function assertSocialLogReady() {
   return error?.message;
 }
 
+async function loadPublishedArticleClips(): Promise<RepWatchrSocialClip[]> {
+  const supabase = getSupabaseAdminClient();
+  if (!supabase) return [];
+  const { data, error } = await supabase
+    .from("repwatchr_articles")
+    .select("id,slug,title,dek,scope,tags,source_links,published_at")
+    .eq("editorial_status", "approved")
+    .eq("publish_status", "published")
+    .in("social_status", ["pending", "partial"])
+    .lte("published_at", new Date().toISOString())
+    .order("published_at", { ascending: true })
+    .limit(12);
+  if (error) return [];
+
+  return (data ?? []).flatMap((row) => {
+    const sources = Array.isArray(row.source_links) ? row.source_links : [];
+    const firstSource = sources.find((source) => source && typeof source === "object" && typeof source.url === "string");
+    if (!firstSource) return [];
+    return [{
+      id: `article:${row.id}`,
+      title: row.title,
+      summary: row.dek,
+      sourceUrl: firstSource.url,
+      sourceName: firstSource.title || "RepWatchr source ledger",
+      publishedAt: row.published_at,
+      scope: row.scope || "national",
+      state: row.scope === "texas" || row.scope === "east-texas" ? "TX" : null,
+      counties: [],
+      cities: [],
+      powerChannels: ["officials", "elections"],
+      matchedTerms: row.tags ?? [],
+      storedStatus: "published",
+      status: "promoted_to_story",
+      sourceTier: "official_record",
+      publicStatus: "source_linked",
+      jurisdictionMatch: row.scope === "east-texas" ? "local" : row.scope === "texas" ? "texas" : "national",
+      geographicRelevance: row.scope === "east-texas" ? "local" : row.scope === "texas" ? "state" : "national",
+      sourceDomain: "repwatchr.com",
+      topicTags: row.tags ?? [],
+      officialPersonMatches: [],
+      stateMatches: [],
+      countyMatches: [],
+      cityMatches: [],
+      duplicateScore: 0,
+      qualityScore: 100,
+      publishDate: row.published_at,
+      quarantineStatus: "clear",
+      publicLabels: ["RepWatchr original reporting", "Source linked", "Editorially approved"],
+      reviewReasons: [],
+      sourceWatchId: "repwatchr-original",
+      queryLane: "repwatchr-original",
+      updatedAt: row.published_at,
+      repwatchrStoryUrl: `${siteUrl()}/news/${row.slug}`,
+    } as RepWatchrSocialClip];
+  });
+}
+
+async function markArticleSocialStatus(clip: RepWatchrSocialClip, status: "partial" | "posted") {
+  if (!clip.id.startsWith("article:")) return;
+  const supabase = getSupabaseAdminClient();
+  if (!supabase) return;
+  await supabase.from("repwatchr_articles").update({
+    social_status: status,
+    updated_at: new Date().toISOString(),
+  }).eq("id", clip.id.slice("article:".length));
+}
+
 async function claimPlatformPost(clip: DailyWireClip, platform: SocialPlatform, message: string) {
   const supabase = getSupabaseAdminClient();
   if (!supabase) throw new Error("Missing Supabase admin client");
@@ -574,11 +664,9 @@ export async function runHourlySocialAutopost({ dryRun = false }: { dryRun?: boo
 
   if (enabled && !editorialApproved && !dryRun) {
     return {
-      ok: false,
+      ok: true,
       ...skippedResult,
       skippedReason: "Editorial approval gate not confirmed",
-      error:
-        "Set SOCIAL_AUTOPOST_EDITORIAL_APPROVED=true only after credentials, source rules, and posting policy are approved.",
     };
   }
 
@@ -626,6 +714,39 @@ export async function runHourlySocialAutopost({ dryRun = false }: { dryRun?: boo
       ...emptyResult,
       error: `Social post log is not ready: ${logError}`,
     };
+  }
+
+  const publishedArticleClips = await loadPublishedArticleClips();
+  if (publishedArticleClips.length) {
+    const articleLogs = await loadSocialLogRows(publishedArticleClips.map((clip) => clip.id), targetPlatforms);
+    if (articleLogs.error) return { ok: false, ...emptyResult, error: articleLogs.error.message };
+    const articleRows = new Map<string, SocialPostLogRow[]>();
+    articleLogs.rows.forEach((row) => articleRows.set(row.clip_id, [...(articleRows.get(row.clip_id) ?? []), row]));
+    const selectedArticle = publishedArticleClips.find((clip) =>
+      targetPlatforms.some((platform) => !rowForPlatform(articleRows.get(clip.id) ?? [], platform)),
+    );
+    if (selectedArticle) {
+      const candidate = toCandidate(selectedArticle, now);
+      if (dryRun) {
+        return {
+          ok: true, ...emptyResult, candidate,
+          results: targetPlatforms.map((platform) => ({ platform, status: "skipped", error: "Dry run only", storyUrl: candidate.storyUrl })),
+        };
+      }
+      const existingRows = articleRows.get(selectedArticle.id) ?? [];
+      const missingPlatforms = targetPlatforms.filter((platform) => !rowForPlatform(existingRows, platform));
+      const results = await Promise.all(missingPlatforms.map((platform) => postToPlatform(selectedArticle, platform)));
+      const posted = results.filter((result) => result.status === "posted").length;
+      const failed = results.filter((result) => result.status === "error").length;
+      await markArticleSocialStatus(selectedArticle, failed ? "partial" : "posted");
+      return {
+        ok: posted > 0 && failed === 0,
+        ...emptyResult,
+        candidate,
+        results,
+        error: failed ? "One or more social platforms rejected the RepWatchr article post." : undefined,
+      };
+    }
   }
 
   const wireResult = await getDailyWireClips(160);

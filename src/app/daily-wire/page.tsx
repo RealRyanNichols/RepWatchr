@@ -316,7 +316,7 @@ export default async function DailyWirePage({
                 Review-gated leads. Receipts stay attached.
               </h1>
               <p className="mt-4 max-w-3xl text-base font-semibold leading-7 text-slate-700">
-                Every hour RepWatchr can search public RSS and news indexes for representatives, school boards, public safety, courts, money, elections, oversight, UAP transparency, ethics, whistleblowers, and corruption-risk signals. Items are scored for jurisdiction, geography, source quality, duplicates, and topic fit before they appear here. A wire item is a lead with a receipt, not a RepWatchr finding.
+                Every hour RepWatchr can search public RSS and news indexes for representatives, school boards, public safety, courts, money, elections, household costs, oversight, ethics, and corruption-risk signals. Items are scored for jurisdiction, geography, source quality, duplicates, and topic fit before they appear here. A wire item is a lead with a receipt, not a RepWatchr finding.
               </p>
               <div className="mt-5 flex flex-wrap gap-2">
                 <Link

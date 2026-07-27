@@ -2,10 +2,12 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import CopySnippetButton from "@/components/shared/CopySnippetButton";
+import EditorialThumbnail from "@/components/shared/EditorialThumbnail";
 import ShareButtons from "@/components/shared/ShareButtons";
 import OfficialPhotoImage, { FEATURED_OFFICIAL_PHOTO_QUALITY } from "@/components/shared/OfficialPhotoImage";
 import { getAllNews, getOfficialById, getRepWatchrDataStats } from "@/lib/data";
 import { getDailyWireClips, type DailyWireClip } from "@/lib/daily-wire";
+import { articleThumbnailMessage } from "@/lib/editorial-visuals";
 import { buildOgImageUrl, buildRepWatchrMetadata } from "@/lib/repwatchr-seo";
 import type { NewsArticle, NewsPowerChannel, NewsScope, Official, SourceCredit } from "@/types";
 
@@ -182,66 +184,63 @@ function FeedMedia({
 }) {
   const articleImage = localImageUrl(article.imageUrl);
   const officialsWithPhotos = linkedOfficials.filter((official) => localImageUrl(official.photo)).slice(0, 3);
+  const message = articleThumbnailMessage(article);
+  const variant = articleScope(article) === "national" ? "federal" : "local";
 
   if (articleImage) {
     return (
-      <div className="relative aspect-[16/9] overflow-hidden bg-slate-100">
+      <EditorialThumbnail
+        message={message}
+        eyebrow={article.locationLabel ?? scopeLabels[articleScope(article)]}
+        support={sourceLine(article)}
+        variant={variant}
+        className="aspect-[16/9]"
+      >
         <Image
           src={articleImage}
-          alt={`${article.title} visual`}
+          alt={article.imageAlt ?? `${article.title} visual`}
           fill
           sizes="(min-width: 1024px) 720px, 100vw"
           quality={FEATURED_OFFICIAL_PHOTO_QUALITY}
           className="object-cover"
         />
-      </div>
+      </EditorialThumbnail>
     );
   }
 
   if (officialsWithPhotos.length) {
     return (
-      <div className="grid aspect-[16/9] grid-cols-3 overflow-hidden bg-slate-900">
-        {officialsWithPhotos.map((official) => (
-          <div key={official.id} className="relative border-r border-white/10 last:border-r-0">
-            <OfficialPhotoImage
-              official={official}
-              sizes="480px"
-              quality={FEATURED_OFFICIAL_PHOTO_QUALITY}
-              className="object-cover opacity-95"
-            />
-            <div className="absolute inset-x-0 bottom-0 bg-slate-950/78 p-2">
-              <p className="truncate text-[11px] font-black text-white">{official.name}</p>
+      <EditorialThumbnail
+        message={message}
+        eyebrow={article.locationLabel ?? scopeLabels[articleScope(article)]}
+        support={sourceLine(article)}
+        variant={variant}
+        className="aspect-[16/9]"
+      >
+        <div className="grid h-full grid-cols-3 bg-slate-900">
+          {officialsWithPhotos.map((official) => (
+            <div key={official.id} className="relative border-r border-white/10 last:border-r-0">
+              <OfficialPhotoImage
+                official={official}
+                sizes="480px"
+                quality={FEATURED_OFFICIAL_PHOTO_QUALITY}
+                className="object-cover opacity-95"
+              />
             </div>
-          </div>
-        ))}
-      </div>
+          ))}
+        </div>
+      </EditorialThumbnail>
     );
   }
 
   return (
-    <div className="grid aspect-[16/9] grid-cols-[0.72fr_1fr] overflow-hidden bg-slate-950">
-      <div className="grid place-items-center border-r border-white/10 bg-white">
-        <Image
-          src="/images/repwatchr-logo-america-first.png"
-          alt="RepWatchr"
-          width={180}
-          height={180}
-          quality={96}
-          className="h-28 w-28 object-contain"
-        />
-      </div>
-      <div className="flex flex-col justify-between p-5">
-        <p className="text-xs font-black uppercase tracking-[0.18em] text-amber-300">
-          Source-backed story
-        </p>
-        <p className="text-2xl font-black leading-tight text-white">
-          {article.locationLabel ?? scopeLabels[articleScope(article)]}
-        </p>
-        <p className="text-sm font-bold text-slate-300">
-          {sourceLine(article)}
-        </p>
-      </div>
-    </div>
+    <EditorialThumbnail
+      message={message}
+      eyebrow={article.locationLabel ?? scopeLabels[articleScope(article)]}
+      support={sourceLine(article)}
+      variant={variant}
+      className="aspect-[16/9]"
+    />
   );
 }
 
@@ -647,7 +646,7 @@ export default async function FeedPage({
                 New source-linked political wire every hour.
               </h2>
               <p className="mt-2 text-sm font-semibold leading-6 text-slate-600">
-                Cron watches officials, oversight, UAP transparency, whistleblowers, ethics, money, courts, school boards, and public-safety signals, then queues one source-linked story for RepWatchr social distribution.
+                Cron watches elections, household costs, official votes, ethics, money, courts, school boards, and public-safety signals, then queues one source-linked story for editorial review.
               </p>
               <Link
                 href="/daily-wire"

@@ -9,7 +9,7 @@ export const metadata: Metadata = buildRepWatchrMetadata({
   description:
     "RepWatchr data coverage, source inventory, and public-record buildout status for officials, votes, funding, news, and review overlays.",
   path: "/data-reports",
-  imagePath: buildOgImageUrl("methodology"),
+  imagePath: buildOgImageUrl("methodology", { view: "data-reports" }),
   imageAlt: "RepWatchr data reports preview",
 });
 

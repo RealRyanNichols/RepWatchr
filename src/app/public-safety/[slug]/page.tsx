@@ -34,7 +34,7 @@ export async function generateMetadata({ params }: PublicSafetyProfilePageProps)
     title: `${profile.name} | Public Safety Watch | RepWatchr`,
     description: `${profile.name} public-safety profile: ${profile.summary}`,
     path: `/public-safety/${profile.slug}`,
-    imagePath: buildOgImageUrl("home"),
+    imagePath: buildOgImageUrl("profile", { kind: "public-safety", slug: profile.slug }),
     imageAlt: `${profile.name} RepWatchr public safety preview`,
     type: "profile",
   });

@@ -10,6 +10,7 @@ npm run smoke:sources
 npm run smoke:pricing
 npm run smoke:seo
 npm run smoke:og
+npm run smoke:thumbnails
 npm run smoke:mobile-pwa
 npm run lint
 npm run build
@@ -23,6 +24,14 @@ REPWATCHR_SMOKE_BASE_URL=https://www.repwatchr.com npm run qa:routes
 
 If using the bundled Codex runtime locally, prepend its Node path before running direct binaries.
 
+## Editorial Visual Contract
+
+- Every public page must declare a generated, page-specific Open Graph image.
+- Every OG image route must use the shared renderer and pass a non-empty reader-facing headline and support line.
+- Photo-based story and editorial preview media must use `EditorialThumbnail` with a required `message`.
+- Graphic-only previews may use `RecordVisual`, which must keep its required visible `title`.
+- Brand marks, micro-avatars, and detail-page portraits are not editorial thumbnails; explicit exemptions use `data-thumbnail-exempt="brand|micro-avatar|detail-portrait"`.
+
 ## Checks
 
 | Item | Status | Notes |
@@ -31,6 +40,8 @@ If using the bundled Codex runtime locally, prepend its Node path before running
 | TypeScript passes | not verified | Use `tsc --noEmit` if available. |
 | Lint passes | not verified | Existing image warnings may remain unless separately fixed. |
 | Static QA passes | not verified | `npm run qa:static`. |
+| OG headlines pass | not verified | `npm run smoke:og`. |
+| Editorial thumbnail headlines pass | not verified | `npm run smoke:thumbnails`. |
 | Route smoke passes | not verified | Requires running server or deployed URL. |
 | Admin quality dashboard opens | not verified | Requires admin auth. |
 | Supabase error table applied | not verified | Apply `supabase-qa-monitoring.sql`. |
@@ -42,6 +53,15 @@ If using the bundled Codex runtime locally, prepend its Node path before running
 | Email disabled unless approved | pass by default | `ENABLE_EMAIL_SENDING` should remain false until consent/provider setup. |
 | AI disabled unless approved | pass by default | AI features default off. |
 | Public API disabled unless approved | pass by default | `ENABLE_PUBLIC_API` should remain false until launch. |
+| Race polls disabled unless approved | pass by default | `NEXT_PUBLIC_ENABLE_RACE_POLLS_V1` remains false until a replacement migration and privacy tests pass. |
+| Editorial publishing disabled unless approved | pass by default | `EDITORIAL_PIPELINE_ENABLED` remains false and no editorial cron is scheduled. |
+| Social distribution disabled unless approved | pass by default | `SOCIAL_PIPELINE_V2_ENABLED`, `FACEBOOK_AUTOPOST_ENABLED`, and `X_AUTOPOST_ENABLED` remain false. |
+
+## Backend staging hold
+
+Do not apply migration drafts from `agent/repwatchr-backend-staging-hold` to
+production. Follow `docs/BACKEND_STAGING_HOLD.md` and replace those drafts with
+additive, reversible migrations tested against a non-production snapshot.
 
 ## Credential Blockers
 

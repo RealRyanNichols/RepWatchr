@@ -1,7 +1,5 @@
 import Link from "next/link";
 import type { GovernmentLevel, Party } from "@/types";
-import PartyBadge from "@/components/officials/PartyBadge";
-import LetterGradeBadge from "@/components/scores/LetterGradeBadge";
 import OfficialPhotoImage from "@/components/shared/OfficialPhotoImage";
 import {
   officialSearchQuery,
@@ -75,12 +73,6 @@ function formSelectValue(value: string, fallback = "") {
   return value || fallback;
 }
 
-function gradeLabel(row: OfficialSearchRow) {
-  if (row.letterGrade && typeof row.score === "number") return `${row.letterGrade} / ${row.score}`;
-  if (typeof row.score === "number") return String(row.score);
-  return "Unscored";
-}
-
 function resultRange(result: OfficialSearchResult) {
   if (result.total === 0) return "0 results";
   const first = (result.page - 1) * result.perPage + 1;
@@ -102,7 +94,7 @@ function activeFilterSummary(params: OfficialSearchParams) {
   if (params.officeType) items.push("office type");
   if (params.party !== "all") items.push(`party: ${partyLabels[params.party]}`);
   if (params.scoreRange !== "all") items.push(`score: ${scoreRangeLabels[params.scoreRange]}`);
-  if (params.hasRedFlags) items.push("has red flags");
+  if (params.hasRedFlags) items.push("has review notes");
   if (params.hasFundingData) items.push("has funding");
   if (params.hasVotingData) items.push("has votes");
   if (params.missingSources) items.push("missing sources");
@@ -118,39 +110,43 @@ export default function OfficialSearchPanel({ result }: { result: OfficialSearch
   const activeFilters = activeFilterSummary(params);
 
   return (
-    <section className="overflow-hidden rounded-2xl border border-slate-300 bg-white shadow-sm">
-      <div className="border-b border-slate-200 bg-slate-950 p-4 text-white sm:p-5">
-        <div className="flex flex-col gap-3 xl:flex-row xl:items-end xl:justify-between">
+    <section className="overflow-hidden rounded-[2rem] border border-slate-200 bg-[#f8fafc] shadow-[0_20px_70px_rgba(15,23,42,0.10)]">
+      <div className="relative overflow-hidden border-b border-slate-200 bg-[linear-gradient(125deg,#fff7ed_0%,#ffffff_46%,#eff6ff_100%)] p-5 sm:p-7">
+        <div className="pointer-events-none absolute -right-16 -top-20 h-56 w-56 rounded-full bg-blue-400/10 blur-3xl" />
+        <div className="relative flex flex-col gap-5 xl:flex-row xl:items-end xl:justify-between">
           <div>
-            <p className="text-xs font-black uppercase tracking-[0.18em] text-red-300">
-              Official discovery
+            <p className="text-xs font-black uppercase tracking-[0.2em] text-red-700">
+              Explore the public record
             </p>
-            <h2 className="mt-1 text-2xl font-black tracking-tight sm:text-3xl">
-              Search, filter, and sort the loaded public profiles.
+            <h2 className="mt-2 max-w-3xl text-3xl font-black tracking-[-0.035em] text-slate-950 sm:text-4xl">
+              Find a name. Follow the receipts.
             </h2>
-            <p className="mt-1 max-w-4xl text-sm font-semibold leading-6 text-slate-200">
-              Search runs on the server and returns one page at a time. Use it to find score gaps, missing source lanes,
-              funding records, voting records, watched officials, and profiles that need citizen receipts.
+            <p className="mt-2 max-w-3xl text-sm font-semibold leading-6 text-slate-600 sm:text-base">
+              Start broad or narrow by state and office. Each result makes loaded evidence and unfinished research easy
+              to spot before you open the full profile.
             </p>
           </div>
-          <div className="grid grid-cols-2 gap-2 sm:grid-cols-3">
+          <div className="flex flex-wrap gap-x-6 gap-y-3 border-l-2 border-amber-400 pl-4 sm:pl-5">
             <MetricPill label="Profiles" value={result.stats.totalProfiles} />
+            <MetricPill label="Source linked" value={result.stats.sourceLinkedProfiles} />
             <MetricPill label="Votes loaded" value={result.stats.voteLoadedProfiles} />
-            <MetricPill label="Missing source" value={result.stats.missingSourceProfiles} />
+            <MetricPill label="Funding loaded" value={result.stats.fundingLoadedProfiles} />
           </div>
         </div>
       </div>
 
-      <form action="/officials" method="get" className="border-b border-slate-200 bg-slate-50 p-3 sm:p-5">
-        <div className="grid gap-3 lg:grid-cols-[minmax(240px,1.2fr)_repeat(3,minmax(160px,0.6fr))]">
+      <form action="/officials" method="get" className="border-b border-slate-200 bg-white p-4 sm:p-6">
+        <div className="grid gap-3 lg:grid-cols-[minmax(260px,1.35fr)_repeat(3,minmax(150px,0.55fr))]">
           <label className="block min-w-0">
             <span className="text-[11px] font-black uppercase tracking-wide text-slate-600">Search</span>
-            <input
-              name="search"
-              defaultValue={params.search}
-              placeholder="Name, office, district, county, source lane..."
-              className="mt-1 w-full rounded-xl border border-slate-300 bg-white px-4 py-3 text-sm font-bold text-slate-950 shadow-sm outline-none transition placeholder:text-slate-500 focus:border-blue-500 focus:ring-2 focus:ring-blue-100"
-            />
+            <span className="relative mt-1 block">
+              <input
+                name="search"
+                defaultValue={params.search}
+                placeholder="Search a name, district, city, or office..."
+                className="w-full rounded-2xl border border-slate-300 bg-slate-50 px-4 py-3.5 text-sm font-bold text-slate-950 outline-none transition placeholder:text-slate-500 focus:border-blue-500 focus:bg-white focus:ring-4 focus:ring-blue-100"
+              />
+            </span>
           </label>
           <SearchSelect
             label="State"
@@ -172,13 +168,20 @@ export default function OfficialSearchPanel({ result }: { result: OfficialSearch
             value={params.sort === "relevance" ? "" : params.sort}
             emptyLabel="Relevance"
             options={Object.entries(sortLabels)
-              .filter(([value]) => value !== "relevance")
+              .filter(([value]) => !["relevance", "highest-score", "lowest-score"].includes(value))
               .map(([value, label]) => ({ value, label, count: 0 }))}
             showCounts={false}
           />
         </div>
 
-        <div className="mt-3 grid gap-3 md:grid-cols-2 xl:grid-cols-4">
+        <details className="group mt-4 rounded-2xl border border-slate-200 bg-slate-50 open:bg-white">
+          <summary className="flex cursor-pointer list-none items-center justify-between gap-4 px-4 py-3 text-sm font-black text-slate-800 [&::-webkit-details-marker]:hidden">
+            <span className="flex items-center gap-2">
+              More ways to narrow the record
+            </span>
+            <span className="grid h-7 w-7 place-items-center rounded-full border border-slate-300 bg-white text-lg transition group-open:rotate-45 motion-reduce:transform-none motion-reduce:transition-none">+</span>
+          </summary>
+          <div className="grid gap-3 border-t border-slate-200 p-4 md:grid-cols-2 xl:grid-cols-4">
           <SearchSelect
             label="County"
             name="county"
@@ -208,16 +211,6 @@ export default function OfficialSearchPanel({ result }: { result: OfficialSearch
             options={result.facets.parties}
           />
           <SearchSelect
-            label="Score range"
-            name="scoreRange"
-            value={params.scoreRange === "all" ? "" : params.scoreRange}
-            emptyLabel="Any score"
-            options={Object.entries(scoreRangeLabels)
-              .filter(([value]) => value !== "all")
-              .map(([value, label]) => ({ value, label, count: 0 }))}
-            showCounts={false}
-          />
-          <SearchSelect
             label="Source count"
             name="sourceCount"
             value={params.sourceCount > 0 ? String(params.sourceCount) : ""}
@@ -230,10 +223,10 @@ export default function OfficialSearchPanel({ result }: { result: OfficialSearch
             showCounts={false}
           />
           <SearchSelect
-            label="Completeness"
+            label="Profile buildout"
             name="completeness"
             value={params.completeness === "all" ? "" : params.completeness}
-            emptyLabel="Any completeness"
+            emptyLabel="Any buildout stage"
             options={Object.entries(completenessLabels)
               .filter(([value]) => value !== "all")
               .map(([value, label]) => ({ value, label, count: 0 }))}
@@ -251,27 +244,28 @@ export default function OfficialSearchPanel({ result }: { result: OfficialSearch
             ]}
             showCounts={false}
           />
-        </div>
+          </div>
+        </details>
 
         <div className="mt-4 flex flex-col gap-3 xl:flex-row xl:items-center xl:justify-between">
           <div className="flex flex-wrap gap-2">
-            <CheckboxFilter name="redFlags" label="Has red flags" checked={params.hasRedFlags} />
-            <CheckboxFilter name="funding" label="Has funding data" checked={params.hasFundingData} />
-            <CheckboxFilter name="voting" label="Has voting data" checked={params.hasVotingData} />
-            <CheckboxFilter name="missingSources" label="Missing sources" checked={params.missingSources} />
+            <CheckboxFilter name="voting" label="Votes available" checked={params.hasVotingData} />
+            <CheckboxFilter name="funding" label="Funding available" checked={params.hasFundingData} />
+            <CheckboxFilter name="redFlags" label="Review notes" checked={params.hasRedFlags} />
+            <CheckboxFilter name="missingSources" label="Needs sources" checked={params.missingSources} />
             <CheckboxFilter name="recent" label="Recently updated" checked={params.recentlyUpdated} />
             <CheckboxFilter name="watched" label="Watched by members" checked={params.watchedByMembers} />
           </div>
           <div className="flex flex-wrap gap-2">
             <Link
               href="/officials"
-              className="rounded-xl border border-red-200 bg-red-50 px-4 py-3 text-sm font-black text-red-800 shadow-sm transition hover:border-red-300 hover:bg-white"
+              className="rounded-xl border border-slate-300 bg-white px-4 py-3 text-sm font-black text-slate-700 transition hover:border-red-300 hover:text-red-800"
             >
               Clear filters
             </Link>
             <button
               type="submit"
-              className="rounded-xl border border-blue-700 bg-blue-700 px-5 py-3 text-sm font-black text-white shadow-sm transition hover:border-blue-800 hover:bg-blue-800"
+              className="rounded-xl border border-blue-700 bg-blue-700 px-6 py-3 text-sm font-black text-white shadow-[0_8px_22px_rgba(29,78,216,0.24)] transition hover:-translate-y-0.5 hover:border-blue-800 hover:bg-blue-800 motion-reduce:transform-none motion-reduce:transition-none"
             >
               Search officials
             </button>
@@ -279,30 +273,32 @@ export default function OfficialSearchPanel({ result }: { result: OfficialSearch
         </div>
       </form>
 
-      <div className="p-3 sm:p-5">
-        <div className="mb-4 flex flex-col gap-3 border-b border-slate-200 pb-4 lg:flex-row lg:items-center lg:justify-between">
+      <div className="p-4 sm:p-6">
+        <div className="mb-6 flex flex-col gap-4 rounded-2xl border border-slate-200 bg-white px-5 py-4 shadow-sm lg:flex-row lg:items-center lg:justify-between">
           <div>
-            <p className="text-xs font-black uppercase tracking-[0.16em] text-red-700">Results</p>
-            <p className="mt-1 text-2xl font-black text-slate-950">{resultRange(result)}</p>
+            <p className="text-xs font-black uppercase tracking-[0.18em] text-red-700">People in this view</p>
+            <p className="mt-1 text-3xl font-black tracking-tight text-slate-950">{resultRange(result)}</p>
             {activeFilters.length > 0 ? (
               <p className="mt-1 max-w-4xl text-xs font-bold leading-5 text-slate-600">
                 Active filters: {activeFilters.join(", ")}
               </p>
             ) : (
-              <p className="mt-1 text-xs font-bold text-slate-600">
-                No filters active. Federal, state, county, city, and school-board profiles are all included.
+              <p className="mt-1 text-sm font-semibold text-slate-600">
+                Federal, state, county, city, and school-board profiles are included.
               </p>
             )}
           </div>
-          <div className="rounded-xl border border-slate-200 bg-slate-50 px-4 py-3">
-            <p className="text-xs font-black uppercase tracking-wide text-slate-500">Filter count</p>
-            <p className="text-xl font-black text-slate-950">{result.activeFilterCount}</p>
+          <div className="flex items-center gap-3 rounded-full border border-slate-200 bg-slate-50 px-4 py-2">
+            <span className={`h-2.5 w-2.5 rounded-full ${result.activeFilterCount > 0 ? "bg-blue-600" : "bg-emerald-500"}`} />
+            <p className="text-xs font-black uppercase tracking-wide text-slate-600">
+              {result.activeFilterCount > 0 ? `${result.activeFilterCount} active filter${result.activeFilterCount === 1 ? "" : "s"}` : "All profiles"}
+            </p>
           </div>
         </div>
 
         {result.rows.length > 0 ? (
           <>
-            <div className="grid grid-cols-1 gap-4 lg:grid-cols-2 xl:grid-cols-3">
+            <div className="grid grid-cols-1 gap-5 md:grid-cols-2 xl:grid-cols-3">
               {result.rows.map((row) => (
                 <OfficialSearchCard key={row.official.id} row={row} />
               ))}
@@ -319,9 +315,9 @@ export default function OfficialSearchPanel({ result }: { result: OfficialSearch
 
 function MetricPill({ label, value }: { label: string; value: number }) {
   return (
-    <div className="rounded-lg border border-white/10 bg-white/10 px-3 py-2">
-      <p className="text-xl font-black">{formatNumber(value)}</p>
-      <p className="text-[10px] font-black uppercase tracking-wide text-slate-300">{label}</p>
+    <div>
+      <p className="text-2xl font-black tracking-tight text-slate-950">{formatNumber(value)}</p>
+      <p className="text-[10px] font-black uppercase tracking-[0.14em] text-slate-500">{label}</p>
     </div>
   );
 }
@@ -347,7 +343,7 @@ function SearchSelect({
       <select
         name={name}
         defaultValue={formSelectValue(value)}
-        className="mt-1 w-full rounded-xl border border-slate-300 bg-white px-3 py-3 text-sm font-black text-slate-950 shadow-sm outline-none transition focus:border-blue-500 focus:ring-2 focus:ring-blue-100"
+        className="mt-1 w-full rounded-2xl border border-slate-300 bg-slate-50 px-3 py-3.5 text-sm font-black text-slate-950 outline-none transition focus:border-blue-500 focus:bg-white focus:ring-4 focus:ring-blue-100"
       >
         <option value="">{emptyLabel}</option>
         {options.map((option) => (
@@ -362,13 +358,13 @@ function SearchSelect({
 
 function CheckboxFilter({ name, label, checked }: { name: string; label: string; checked: boolean }) {
   return (
-    <label className="inline-flex items-center gap-2 rounded-full border border-slate-300 bg-white px-3 py-2 text-xs font-black text-slate-800 shadow-sm">
+    <label className="inline-flex cursor-pointer items-center gap-2 rounded-full border border-slate-300 bg-white px-3 py-2 text-xs font-black text-slate-700 transition hover:border-blue-300 hover:bg-blue-50">
       <input
         type="checkbox"
         name={name}
         value="1"
         defaultChecked={checked}
-        className="h-4 w-4 rounded border-slate-300 text-blue-700"
+        className="h-4 w-4 rounded border-slate-300 text-blue-700 accent-blue-700"
       />
       {label}
     </label>
@@ -377,101 +373,137 @@ function CheckboxFilter({ name, label, checked }: { name: string; label: string;
 
 function OfficialSearchCard({ row }: { row: OfficialSearchRow }) {
   const officialPath = `/officials/${row.official.id}`;
-  const profileStatus = row.profileCompleteness >= 100 ? "Complete" : `${row.profileCompleteness}% complete`;
-  const needsSourceTone = row.missingSources ? "border-amber-300 bg-amber-50 text-amber-900" : "border-emerald-200 bg-emerald-50 text-emerald-800";
+  const profileStatus = row.profileCompleteness >= 100 ? "Profile built" : `${row.profileCompleteness}% built`;
+  const sourceStatus = row.missingSources ? "Needed" : formatNumber(row.sourceCount);
+  const cardPartyLabel = row.official.party === "NP" ? "Nonpartisan" : partyLabels[row.official.party];
+  const officeLine = [
+    row.officeTypeLabel,
+    row.official.district ? `District ${row.official.district}` : undefined,
+    row.countyValues[0],
+  ]
+    .filter(Boolean)
+    .join(" · ");
 
   return (
-    <article className="overflow-hidden rounded-xl border border-slate-300 bg-white shadow-sm">
-      <div className="h-1 bg-[linear-gradient(90deg,#c1121f_0%,#c1121f_34%,#f8fafc_34%,#f8fafc_66%,#1d4ed8_66%,#1d4ed8_100%)]" />
-      <div className="p-4">
-        <div className="flex items-start justify-between gap-3">
-          <Link href={officialPath} className="flex min-w-0 items-center gap-3">
-            <div className="relative h-16 w-16 shrink-0 overflow-hidden rounded-xl border border-slate-300 bg-slate-100">
-              <OfficialPhotoImage official={row.official} sizes="128px" className="object-cover" />
-            </div>
-            <div className="min-w-0">
-              <h3 className="truncate text-lg font-black text-slate-950 hover:text-blue-800">{row.official.name}</h3>
-              <p className="line-clamp-2 text-sm font-semibold leading-5 text-slate-600">{row.official.position}</p>
-            </div>
-          </Link>
-          {row.letterGrade ? (
-            <LetterGradeBadge grade={row.letterGrade} score={row.score ?? undefined} size="md" />
+    <article className="group flex h-full flex-col overflow-hidden rounded-md border border-slate-300 bg-white transition-colors duration-200 hover:border-[#163b5c]">
+      <Link href={officialPath} className="relative block aspect-[16/11] overflow-hidden bg-gradient-to-br from-slate-200 to-slate-400">
+        <OfficialPhotoImage
+          official={row.official}
+          sizes="(min-width: 1280px) 30vw, (min-width: 768px) 48vw, 100vw"
+          adaptivePortrait
+          blurredBackdrop={false}
+          featuredClassName="object-cover object-top"
+          portraitClassName="object-contain object-center"
+          fallbackClassName="grid h-full w-full place-items-center bg-gradient-to-br from-slate-200 via-slate-100 to-blue-100 text-6xl font-black text-slate-400"
+        />
+        <div className="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-900/5 to-transparent" />
+        <div className="absolute inset-x-4 top-4 flex items-start justify-between gap-2">
+          <p className="max-w-[48%] border-b border-white/70 bg-slate-950/80 px-2 py-1 text-xs font-semibold leading-4 text-white">
+            {cardPartyLabel}
+          </p>
+          <span className={`max-w-[48%] border-b px-2 py-1 text-right text-xs font-semibold leading-4 ${
+            row.missingSources
+              ? "border-amber-300 bg-slate-950/80 text-amber-200"
+              : "border-emerald-300 bg-slate-950/80 text-emerald-200"
+          }`}>
+            {row.missingSources ? "Research open" : "Source linked"}
+          </span>
+        </div>
+        <div className="absolute inset-x-0 bottom-0 p-5">
+          <p className="text-xs font-semibold text-amber-200">
+            {row.state || row.official.jurisdiction} · {levelLabels[row.official.level]}
+          </p>
+          <h3 className="mt-1 font-serif text-2xl font-bold leading-tight tracking-tight text-white sm:text-3xl">{row.official.name}</h3>
+          <p className="mt-1 line-clamp-1 text-sm font-bold text-slate-200">{row.official.position}</p>
+        </div>
+      </Link>
+
+      <div className="flex flex-1 flex-col p-5">
+        <p className="line-clamp-2 min-h-10 text-sm font-medium leading-5 text-slate-600" title={officeLine}>
+          {officeLine}
+        </p>
+
+        <div className="mt-5">
+          <div className="flex items-center justify-between gap-3 text-xs font-semibold">
+            <span className="text-slate-500">Profile buildout</span>
+            <span className="text-slate-800">{profileStatus}</span>
+          </div>
+          <div
+            className="mt-2 h-2 overflow-hidden bg-slate-100"
+            role="progressbar"
+            aria-label={`${row.official.name} profile buildout`}
+            aria-valuemin={0}
+            aria-valuemax={100}
+            aria-valuenow={Math.min(100, row.profileCompleteness)}
+          >
+            <div
+              className="h-full bg-[#163b5c] transition-[width] duration-500 motion-reduce:transition-none"
+              style={{ width: `${Math.min(100, row.profileCompleteness)}%` }}
+            />
+          </div>
+        </div>
+
+        <div className="mt-5 grid grid-cols-3 divide-x divide-slate-200 border-y border-slate-200 py-3">
+          <RecordSignal icon="source" value={sourceStatus} label="Sources" />
+          <RecordSignal icon="vote" value={row.hasVotingData ? formatNumber(row.voteCount) : "Open"} label="Votes" />
+          <RecordSignal icon="funding" value={row.hasFundingData ? row.fundingCycle ?? "Loaded" : "Open"} label="Funding" />
+        </div>
+
+        <div className="mt-4 flex min-h-5 flex-wrap items-center gap-x-3 gap-y-1 text-[11px] font-bold text-slate-500">
+          {row.redFlagCount > 0 ? (
+            <span className="text-red-700">{row.redFlagCount} review note{row.redFlagCount === 1 ? "" : "s"}</span>
           ) : (
-            <span className="rounded-full border border-slate-300 bg-slate-100 px-3 py-1 text-xs font-black text-slate-600">
-              No grade
-            </span>
+            <span>No open review note</span>
           )}
+          {row.lastUpdated ? <span>Updated {row.lastUpdated}</span> : <span>Update date pending</span>}
         </div>
 
-        <div className="mt-4 flex flex-wrap items-center gap-2">
-          <PartyBadge party={row.official.party} />
-          <span className="rounded-full border border-slate-200 bg-slate-50 px-2.5 py-1 text-xs font-bold text-slate-700">
-            {row.state || "State needed"}
-          </span>
-          <span className="rounded-full border border-slate-200 bg-slate-50 px-2.5 py-1 text-xs font-bold text-slate-700">
-            {levelLabels[row.official.level]}
-          </span>
-          <span className="rounded-full border border-slate-200 bg-slate-50 px-2.5 py-1 text-xs font-bold text-slate-700">
-            {row.officeTypeLabel}
-          </span>
-        </div>
-
-        <dl className="mt-4 grid grid-cols-2 gap-2">
-          <DataCell label="Score" value={gradeLabel(row)} />
-          <DataCell label="Sources" value={formatNumber(row.sourceCount)} />
-          <DataCell label="Votes" value={row.hasVotingData ? formatNumber(row.voteCount) : "Needed"} />
-          <DataCell label="Funding" value={row.hasFundingData ? row.fundingCycle ?? "Loaded" : "Needed"} />
-          <DataCell label="Views" value={formatNumber(row.viewCount)} />
-          <DataCell label="Watches" value={formatNumber(row.watchCount)} />
-        </dl>
-
-        <div className="mt-3 grid gap-2">
-          <div className={`rounded-lg border px-3 py-2 text-xs font-black ${needsSourceTone}`}>
-            {row.missingSources ? "Missing source work" : "Source-linked"}
-          </div>
-          <div className="rounded-lg border border-slate-200 bg-slate-50 px-3 py-2 text-xs font-black text-slate-700">
-            {profileStatus}
-            {row.redFlagCount > 0 ? ` | ${row.redFlagCount} red flag${row.redFlagCount === 1 ? "" : "s"}` : ""}
-            {row.lastUpdated ? ` | updated ${row.lastUpdated}` : ""}
-          </div>
-        </div>
-
-        <div className="mt-4 grid gap-2 sm:grid-cols-2">
+        <div className="mt-auto grid grid-cols-[1fr_auto] gap-2 pt-5">
           <Link
             href={officialPath}
-            className="rounded-lg border border-blue-700 bg-blue-700 px-3 py-2 text-center text-xs font-black text-white transition hover:bg-blue-800"
+            className="inline-flex items-center justify-between rounded-sm border border-[#163b5c] bg-[#163b5c] px-4 py-3 text-sm font-semibold text-white transition-colors hover:border-[#0d2a44] hover:bg-[#0d2a44]"
           >
-            View profile
+            Explore the record <span aria-hidden="true" className="text-lg">→</span>
           </Link>
           <Link
             href={`/dashboard?watch=${encodeURIComponent(officialPath)}`}
-            className="rounded-lg border border-slate-300 bg-white px-3 py-2 text-center text-xs font-black text-slate-800 transition hover:border-blue-300 hover:bg-blue-50"
+            className="inline-flex items-center gap-2 rounded-sm border border-slate-300 bg-white px-3 py-3 text-xs font-semibold text-slate-700 transition-colors hover:border-[#163b5c] hover:text-[#163b5c]"
+            aria-label={`Watch ${row.official.name}`}
           >
-            Watch this official
-          </Link>
-          <Link
-            href={`/submit-source?target=${encodeURIComponent(row.official.id)}`}
-            className="rounded-lg border border-amber-300 bg-amber-50 px-3 py-2 text-center text-xs font-black text-amber-900 transition hover:bg-white"
-          >
-            Submit source
-          </Link>
-          <Link
-            href={`/services/official-record-brief?official=${encodeURIComponent(row.official.id)}`}
-            className="rounded-lg border border-red-200 bg-red-50 px-3 py-2 text-center text-xs font-black text-red-800 transition hover:bg-white"
-          >
-            Request brief
+            <svg aria-hidden="true" viewBox="0 0 24 24" className="h-4 w-4 fill-none stroke-current" strokeWidth="2">
+              <path d="M12 21s-7-4.4-7-11a4 4 0 0 1 7-2.6A4 4 0 0 1 19 10c0 6.6-7 11-7 11Z" />
+            </svg>
+            Watch
           </Link>
         </div>
+
+        <p className="mt-3 text-center text-[11px] font-bold text-slate-500">
+          See something missing?{" "}
+          <Link href={`/submit-source?target=${encodeURIComponent(row.official.id)}`} className="text-blue-700 underline decoration-blue-200 underline-offset-2 hover:text-red-700">
+            Add a public source
+          </Link>
+        </p>
       </div>
     </article>
   );
 }
 
-function DataCell({ label, value }: { label: string; value: string }) {
+function RecordSignal({ icon, value, label }: { icon: "source" | "vote" | "funding"; value: string; label: string }) {
+  const paths = {
+    source: <path d="M8 12h8M8 8h8M8 16h5M6 3h9l3 3v15H6z" />,
+    vote: <path d="M7 3h10v5l3 3v10H4V11l3-3V3Zm-3 10h16M9 7h6" />,
+    funding: <path d="M12 3v18m4-14.5c-.8-1-2.1-1.5-4-1.5-2.2 0-4 1.2-4 3s1.5 2.7 4 3c2.6.3 4 1.3 4 3s-1.8 3-4 3c-1.9 0-3.4-.6-4.3-1.8" />,
+  };
+
   return (
-    <div className="rounded-lg border border-slate-200 bg-slate-50 px-3 py-2">
-      <dt className="text-[10px] font-black uppercase tracking-wide text-slate-500">{label}</dt>
-      <dd className="mt-1 truncate text-sm font-black text-slate-950">{value}</dd>
+    <div className="min-w-0 px-2 first:pl-0 last:pr-0 sm:px-3">
+      <div className="flex items-center gap-1.5 text-slate-500">
+        <svg aria-hidden="true" viewBox="0 0 24 24" className="h-3.5 w-3.5 shrink-0 fill-none stroke-current" strokeWidth="1.8">
+          {paths[icon]}
+        </svg>
+        <span className="truncate text-[9px] font-black uppercase tracking-[0.12em]">{label}</span>
+      </div>
+      <p className="mt-1 truncate text-xs font-black text-slate-950" title={value}>{value}</p>
     </div>
   );
 }

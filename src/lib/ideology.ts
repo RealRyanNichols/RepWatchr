@@ -1,6 +1,7 @@
 import fs from "fs";
 import path from "path";
 import type { Official, OfficialIdeologyProfile } from "@/types";
+import { getAllBills } from "@/lib/data";
 
 const IDEOLOGY_MASTER_PATH = path.join(process.cwd(), "src", "data", "official-ideology-master.json");
 
@@ -29,7 +30,60 @@ function readIdeologyProfiles(): OfficialIdeologyProfile[] {
 
   try {
     const raw = fs.readFileSync(IDEOLOGY_MASTER_PATH, "utf-8");
-    ideologyProfilesCache = JSON.parse(raw) as OfficialIdeologyProfile[];
+    const publishedBillIds = new Set(getAllBills().map((bill) => bill.id));
+    ideologyProfilesCache = (JSON.parse(raw) as OfficialIdeologyProfile[]).map((profile) => {
+      const publishedEvidence = profile.evidence.filter((item) => publishedBillIds.has(item.billId));
+      if (publishedEvidence.length === profile.evidence.length) return profile;
+
+      const buildoutChecks = {
+        ...profile.buildout,
+        hasScorecard: false,
+        hasFundingSummary: false,
+        hasRedFlagReview: false,
+        hasIdeologyChart: false,
+        isComplete: false,
+      };
+      const completionFields = [
+        buildoutChecks.hasPhoto,
+        buildoutChecks.hasBio,
+        buildoutChecks.hasPublicSources,
+        buildoutChecks.hasContactWebsite,
+        buildoutChecks.hasScorecard,
+        buildoutChecks.hasVoteRecord,
+        buildoutChecks.hasFundingSummary,
+        buildoutChecks.hasRedFlagReview,
+        buildoutChecks.hasNewsLinks,
+        buildoutChecks.hasIdeologyChart,
+      ];
+
+      return {
+        ...profile,
+        ideologyScore: null,
+        ideologyLabel: "Vote record pending review",
+        confidence: "none",
+        method: "No direction score is published until every supporting vote is source-reviewed.",
+        basis: "Previously generated evidence is quarantined until its bill identity, roll call, and vote are verified against primary records.",
+        mappedVoteCount: 0,
+        directionalMappedVoteCount: 0,
+        reviewedVoteCount: 0,
+        totalScorecardVotes: 0,
+        rightVoteCount: 0,
+        leftVoteCount: 0,
+        centerVoteCount: 0,
+        unreviewedScorecardVoteCount: 0,
+        mappedVoteCoveragePercent: 0,
+        evidence: [],
+        buildout: {
+          ...buildoutChecks,
+          completionPercent: Math.round(
+            (completionFields.filter(Boolean).length / completionFields.length) * 100,
+          ),
+          missingItems: Array.from(
+            new Set([...buildoutChecks.missingItems, "reviewed scorecard", "vote-direction review"]),
+          ),
+        },
+      };
+    });
   } catch {
     ideologyProfilesCache = [];
   }

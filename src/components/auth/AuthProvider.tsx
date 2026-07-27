@@ -12,8 +12,8 @@ import { createClient, isSupabaseAuthEnabled } from "@/lib/supabase";
 import type { User } from "@supabase/supabase-js";
 
 interface UserProfile {
-  county: string;
-  district?: string;
+  county: string | null;
+  district: string | null;
   verified: boolean;
 }
 

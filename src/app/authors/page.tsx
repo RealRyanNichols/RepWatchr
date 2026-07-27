@@ -9,7 +9,7 @@ export const metadata: Metadata = buildRepWatchrMetadata({
   description:
     "Become a RepWatchr citizen author. Build source-backed political stories, profile updates, meeting records, source drops, and shareable accountability packets.",
   path: "/authors",
-  imagePath: buildOgImageUrl("source-packet"),
+  imagePath: buildOgImageUrl("source-packet", { view: "authors" }),
   imageAlt: "RepWatchr citizen author desk preview",
 });
 

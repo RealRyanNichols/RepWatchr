@@ -9,7 +9,7 @@ const routes = [
   { label: "signup", path: "/auth/signup" },
   { label: "dashboard", path: "/dashboard", allowRedirect: true },
   { label: "admin", path: "/admin", allowRedirect: true },
-  { label: "article/story", path: "/news/uap-file-dump-congress-attention-2026" },
+  { label: "article/story", path: "/news/health-care-costs-midterms-2026" },
   { label: "official profile", path: "/officials/ted-cruz" },
 ];
 
@@ -74,4 +74,3 @@ main().catch((error) => {
   console.error(error instanceof Error ? error.message : error);
   process.exit(1);
 });
-

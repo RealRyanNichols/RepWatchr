@@ -3,6 +3,7 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import type { ReactNode } from "react";
 import RaceHubAnalytics from "@/components/elections/RaceHubAnalytics";
+import FlagshipRaceExperience from "@/components/elections/FlagshipRaceExperience";
 import TexasRacePublicContributions from "@/components/elections/TexasRacePublicContributions";
 import RaceMoneyTrailSection from "@/components/money/RaceMoneyTrailSection";
 import CopySnippetButton from "@/components/shared/CopySnippetButton";
@@ -883,6 +884,7 @@ export default async function TexasElectionRacePage({
   const resolution = resolveTexasElectionSlug(raceSlug);
   if (!resolution) notFound();
 
+  if (raceSlug === "marion-county-judge-2026") return <FlagshipRaceExperience />;
   if (resolution.kind === "county") return <CountyPage county={resolution.county} />;
   if (resolution.kind === "district") return <DistrictPage district={resolution.district} />;
   return <RacePage race={resolution.race} />;

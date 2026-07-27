@@ -10,6 +10,14 @@ export async function GET(request: Request) {
     return Response.json({ ok: false, error: "Unauthorized" }, { status: 401 });
   }
 
+  if (process.env.SOCIAL_PIPELINE_V2_ENABLED !== "true") {
+    return Response.json({
+      ok: true,
+      enabled: false,
+      skippedReason: "Social distribution is disabled on this deployment",
+    });
+  }
+
   const url = new URL(request.url);
   const dryRun = url.searchParams.get("dryRun") === "1" || url.searchParams.get("dry_run") === "true";
   const result = await runHourlySocialAutopost({ dryRun });

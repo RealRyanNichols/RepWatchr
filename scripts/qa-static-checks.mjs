@@ -20,6 +20,7 @@ const requiredFiles = [
   "scripts/smoke-pricing-beta-access.mjs",
   "scripts/smoke-seo-indexing.mjs",
   "scripts/smoke-og-previews.mjs",
+  "scripts/smoke-editorial-thumbnails.mjs",
   "scripts/smoke-mobile-pwa.mjs",
 ];
 
@@ -31,7 +32,7 @@ const requiredSnippets = [
   ["src/lib/qa-monitoring.ts", "/packages/quick-record-check"],
   ["src/lib/qa-monitoring.ts", "/packages/election-watch-desk"],
   ["src/lib/qa-monitoring.ts", "/elections/texas/texas-us-senate-2026"],
-  ["src/lib/qa-monitoring.ts", "/news/uap-file-dump-congress-attention-2026"],
+  ["src/lib/qa-monitoring.ts", "/news/health-care-costs-midterms-2026"],
   ["src/lib/qa-monitoring.ts", "/jurisdictions/texas"],
   ["src/app/api/quality/error/route.ts", "logAppError"],
   ["src/app/admin/quality/page.tsx", "requireAdminPageAccess"],
@@ -48,6 +49,7 @@ const requiredSnippets = [
   ["scripts/smoke-pricing-beta-access.mjs", "package_interest_submitted"],
   ["scripts/smoke-seo-indexing.mjs", "robots.ts does not disallow"],
   ["scripts/smoke-og-previews.mjs", "src/app/api/og"],
+  ["scripts/smoke-editorial-thumbnails.mjs", "EditorialThumbnail"],
   ["scripts/smoke-mobile-pwa.mjs", "mobile_action_dock_clicked"],
   ["src/lib/client-analytics.ts", "quality_dashboard_open"],
   ["src/lib/client-analytics.ts", "deploy_checklist_open"],
@@ -59,6 +61,7 @@ const requiredSnippets = [
   ["docs/ENVIRONMENT_VARIABLES.md", "NEXT_PUBLIC_"],
   ["package.json", "\"qa:static\""],
   ["package.json", "\"qa:routes\""],
+  ["package.json", "\"smoke:thumbnails\""],
 ];
 
 const forbiddenPublicText = [

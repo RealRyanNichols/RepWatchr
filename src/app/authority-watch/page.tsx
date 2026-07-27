@@ -7,7 +7,7 @@ export const metadata: Metadata = buildRepWatchrMetadata({
   description:
     "RepWatchr tracks public officials and public-facing authority roles through source-backed records, review labels, and safer citizen submissions.",
   path: "/authority-watch",
-  imagePath: buildOgImageUrl("home"),
+  imagePath: buildOgImageUrl("home", { page: "authority" }),
   imageAlt: "RepWatchr Authority Watch preview",
 });
 

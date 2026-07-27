@@ -1,4 +1,6 @@
 /* eslint-disable @next/next/no-img-element */
+import { readFileSync } from "node:fs";
+import { join } from "node:path";
 import { ImageResponse } from "next/og";
 import {
   REPWATCHR_OG_SIZE,
@@ -16,8 +18,12 @@ export type RepWatchrOgBadge = {
 export type RepWatchrOgInput = {
   requestUrl?: string;
   pageType: string;
-  title: string;
-  subtitle?: string;
+  headline: string;
+  supportLine: string;
+  backgroundImage?: string;
+  backgroundPosition?: string;
+  portraitImage?: string;
+  visualCredit?: string;
   jurisdiction?: string;
   metricLabel?: string;
   metricValue?: string | number;
@@ -25,15 +31,19 @@ export type RepWatchrOgInput = {
   path?: string;
 };
 
+export const REPWATCHR_EDITORIAL_OG_BACKGROUND =
+  "/images/editorial/washington-accountability-blue-hour.webp";
+
 const toneColors: Record<NonNullable<RepWatchrOgBadge["tone"]>, string> = {
-  red: "#dc2626",
-  blue: "#2563eb",
-  gold: "#d4a855",
-  green: "#059669",
-  slate: "#64748b",
+  red: "#ff6b6b",
+  blue: "#86b7ff",
+  gold: "#f3d179",
+  green: "#68d9ad",
+  slate: "#d6dee8",
 };
 
 const defaultBadges: RepWatchrOgBadge[] = [{ label: "Sources", value: "Review", tone: "blue" }];
+const embeddedAssetCache = new Map<string, ArrayBuffer>();
 
 function clean(value: string | undefined, fallback: string) {
   return (value || fallback).replace(/\s+/g, " ").trim();
@@ -45,85 +55,180 @@ function truncate(value: string, limit: number) {
   return `${cleaned.slice(0, limit - 3).trim()}...`;
 }
 
-function fitTitleSize(title: string) {
-  if (title.length > 104) return 42;
-  if (title.length > 78) return 50;
-  if (title.length > 52) return 60;
-  return 74;
+function fitHeadlineSize(headline: string, hasPortrait: boolean) {
+  if (headline.length > 66) return hasPortrait ? 48 : 56;
+  if (headline.length > 50) return hasPortrait ? 54 : 64;
+  if (headline.length > 34) return hasPortrait ? 62 : 72;
+  return hasPortrait ? 70 : 82;
 }
 
-function logoUrl(requestUrl?: string) {
-  if (!requestUrl) return absoluteRepWatchrUrl("/images/repwatchr-logo-america-first.png");
-  return new URL("/images/repwatchr-logo-america-first.png", requestUrl).toString();
+function embeddedAssetData(pathOrUrl: string) {
+  const cached = embeddedAssetCache.get(pathOrUrl);
+  if (cached) return cached;
+
+  try {
+    let bytes: Buffer;
+    if (pathOrUrl === "/images/og/repwatchr-logo.png") {
+      bytes = readFileSync(
+        join(process.cwd(), "public/images/og/repwatchr-logo.png"),
+      );
+    } else if (
+      pathOrUrl === "/images/editorial/washington-accountability-blue-hour.webp"
+    ) {
+      bytes = readFileSync(
+        join(
+          process.cwd(),
+          "public/images/og/washington-accountability-blue-hour.jpg",
+        ),
+      );
+    } else if (
+      pathOrUrl === "/images/races/marion-county-judge-2026-hero.webp"
+    ) {
+      bytes = readFileSync(
+        join(
+          process.cwd(),
+          "public/images/og/marion-county-judge-2026-hero.jpg",
+        ),
+      );
+    } else {
+      return undefined;
+    }
+
+    const data = Uint8Array.from(bytes).buffer;
+    embeddedAssetCache.set(pathOrUrl, data);
+    return data;
+  } catch {
+    return undefined;
+  }
+}
+
+function assetUrl(pathOrUrl: string, requestUrl?: string) {
+  if (pathOrUrl.startsWith("http://") || pathOrUrl.startsWith("https://")) return pathOrUrl;
+  const embedded = embeddedAssetData(pathOrUrl);
+  if (embedded) return embedded;
+  if (!requestUrl) return absoluteRepWatchrUrl(pathOrUrl);
+
+  const request = new URL(requestUrl);
+  const asset = new URL(pathOrUrl, request);
+  const previewShareToken = request.searchParams.get("_vercel_share");
+
+  if (previewShareToken && asset.hostname.endsWith(".vercel.app")) {
+    asset.searchParams.set("_vercel_share", previewShareToken);
+  }
+
+  return asset.toString();
 }
 
 export function renderRepWatchrOgImage(input: RepWatchrOgInput) {
-  const title = truncate(clean(input.title, "RepWatchr public record"), 132);
-  const subtitle = truncate(clean(input.subtitle, "Public records first. Source links attached."), 158);
+  const headline = truncate(clean(input.headline, "Open the public record"), 72);
+  const supportLine = truncate(
+    clean(input.supportLine, "Public records first. Source links attached."),
+    126,
+  );
   const jurisdiction = truncate(clean(input.jurisdiction, "United States public accountability"), 86);
-  const pageType = truncate(clean(input.pageType, "RepWatchr record"), 42).toUpperCase();
+  const pageType = truncate(clean(input.pageType, "RepWatchr record"), 42);
   const metricLabel = truncate(clean(input.metricLabel, "Source status"), 28);
   const metricValue = truncate(String(input.metricValue ?? "Review"), 18);
   const path = truncate(clean(input.path, REPWATCHR_ORIGIN), 78);
-  const badges: RepWatchrOgBadge[] = (input.badges?.length ? input.badges : defaultBadges).slice(0, 3);
+  const badges: RepWatchrOgBadge[] = (input.badges?.length ? input.badges : defaultBadges).slice(0, 2);
+  const backgroundImage = input.backgroundImage
+    ? assetUrl(input.backgroundImage, input.requestUrl)
+    : undefined;
+  const portraitImage = input.portraitImage
+    ? assetUrl(input.portraitImage, input.requestUrl)
+    : undefined;
+  const hasPortrait = Boolean(portraitImage);
 
   return new ImageResponse(
     (
       <div
         style={{
-          width: "100%",
-          height: "100%",
+          width: REPWATCHR_OG_SIZE.width,
+          height: REPWATCHR_OG_SIZE.height,
+          boxSizing: "border-box",
           display: "flex",
           flexDirection: "column",
           justifyContent: "space-between",
-          background: "linear-gradient(135deg, #071427 0%, #0f1f3d 56%, #190c13 100%)",
+          background: "#071427",
           color: "#ffffff",
-          padding: 54,
+          padding: "42px 50px 38px",
           position: "relative",
           overflow: "hidden",
         }}
       >
+        {backgroundImage ? (
+          <img
+            src={backgroundImage as unknown as string}
+            width={1200}
+            height={630}
+            alt=""
+            style={{
+              position: "absolute",
+              inset: 0,
+              width: "100%",
+              height: "100%",
+              objectFit: "cover",
+              objectPosition: input.backgroundPosition ?? "center",
+              zIndex: 0,
+            }}
+          />
+        ) : null}
         <div
           style={{
             position: "absolute",
-            right: -95,
-            top: -115,
-            width: 430,
-            height: 430,
-            borderRadius: 430,
-            background: "rgba(191, 13, 62, 0.28)",
+            top: 0,
+            left: 0,
+            width: "100%",
+            height: "100%",
             display: "flex",
+            background:
+              "linear-gradient(90deg, rgba(3,12,25,0.97) 0%, rgba(5,18,36,0.94) 46%, rgba(5,18,36,0.66) 72%, rgba(3,12,25,0.82) 100%)",
+            zIndex: 1,
           }}
         />
         <div
           style={{
             position: "absolute",
-            right: 116,
-            bottom: -160,
-            width: 520,
-            height: 520,
-            borderRadius: 520,
-            background: "rgba(212, 168, 85, 0.16)",
+            top: 0,
+            left: 0,
+            width: "100%",
+            height: 10,
             display: "flex",
+            background: "linear-gradient(90deg, #bf0d3e 0%, #bf0d3e 34%, #f4efe3 34%, #f4efe3 66%, #204f77 66%)",
+            zIndex: 3,
           }}
         />
 
-        <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between", gap: 30 }}>
+        <div
+          style={{
+            display: "flex",
+            alignItems: "center",
+            justifyContent: "space-between",
+            gap: 30,
+            position: "relative",
+            zIndex: 2,
+          }}
+        >
           <div style={{ display: "flex", alignItems: "center", gap: 18 }}>
             <img
-              src={logoUrl(input.requestUrl)}
-              width={98}
-              height={98}
+              src={
+                assetUrl(
+                  "/images/og/repwatchr-logo.png",
+                  input.requestUrl,
+                ) as unknown as string
+              }
+              width={68}
+              height={68}
               alt="RepWatchr logo"
               style={{
-                borderRadius: 98,
-                border: "4px solid #d4a855",
+                borderRadius: 68,
+                border: "3px solid #d4a855",
                 background: "#ffffff",
               }}
             />
-            <div style={{ display: "flex", flexDirection: "column", gap: 4 }}>
-              <div style={{ fontSize: 38, fontWeight: 900, letterSpacing: 0 }}>RepWatchr</div>
-              <div style={{ fontSize: 24, fontWeight: 900, color: "#f3d179", letterSpacing: 2 }}>
+            <div style={{ display: "flex", flexDirection: "column", gap: 2 }}>
+              <div style={{ fontSize: 34, fontWeight: 900 }}>RepWatchr</div>
+              <div style={{ fontSize: 16, fontWeight: 800, color: "#f3d179" }}>
                 {REPWATCHR_TAGLINE}
               </div>
             </div>
@@ -132,31 +237,44 @@ export function renderRepWatchrOgImage(input: RepWatchrOgInput) {
             style={{
               display: "flex",
               alignItems: "center",
-              border: "2px solid rgba(255,255,255,0.22)",
-              background: "rgba(255,255,255,0.10)",
-              borderRadius: 999,
-              padding: "13px 22px",
-              color: "#fee2e2",
-              fontSize: 20,
+              borderBottom: "3px solid #bf0d3e",
+              padding: "8px 0",
+              color: "#ffffff",
+              fontSize: 19,
               fontWeight: 900,
-              letterSpacing: 2,
             }}
           >
             {pageType}
           </div>
         </div>
 
-        <div style={{ display: "flex", alignItems: "stretch", justifyContent: "space-between", gap: 34 }}>
-          <div style={{ display: "flex", flexDirection: "column", gap: 20, width: 760 }}>
+        <div
+          style={{
+            display: "flex",
+            alignItems: "center",
+            justifyContent: "space-between",
+            gap: 42,
+            flex: 1,
+            position: "relative",
+            zIndex: 2,
+          }}
+        >
+          <div
+            style={{
+              display: "flex",
+              flexDirection: "column",
+              justifyContent: "center",
+              gap: 18,
+              width: hasPortrait ? 720 : 980,
+            }}
+          >
             <div
               style={{
                 display: "flex",
-                borderLeft: "8px solid #bf0d3e",
-                paddingLeft: 16,
-                color: "#cbd5e1",
-                fontSize: 27,
-                fontWeight: 900,
-                lineHeight: 1.22,
+                color: "#f3d179",
+                fontSize: 23,
+                fontWeight: 800,
+                lineHeight: 1.2,
               }}
             >
               {jurisdiction}
@@ -165,62 +283,77 @@ export function renderRepWatchrOgImage(input: RepWatchrOgInput) {
               style={{
                 display: "flex",
                 color: "#ffffff",
-                fontSize: fitTitleSize(title),
+                fontSize: fitHeadlineSize(headline, hasPortrait),
                 fontWeight: 900,
-                lineHeight: 0.98,
-                letterSpacing: 0,
+                lineHeight: 0.96,
+                letterSpacing: -1.6,
+                borderLeft: "9px solid #bf0d3e",
+                paddingLeft: 20,
               }}
             >
-              {title}
+              {headline}
             </div>
             <div
               style={{
                 display: "flex",
-                color: "#dbeafe",
-                fontSize: 29,
-                fontWeight: 800,
-                lineHeight: 1.28,
+                color: "#edf4ff",
+                fontSize: 28,
+                fontWeight: 700,
+                lineHeight: 1.24,
+                maxWidth: hasPortrait ? 700 : 900,
               }}
             >
-              {subtitle}
+              {supportLine}
             </div>
           </div>
 
-          <div
-            style={{
-              width: 286,
-              minHeight: 286,
-              borderRadius: 34,
-              border: "3px solid rgba(255,255,255,0.24)",
-              background: "rgba(255,255,255,0.96)",
-              color: "#0f172a",
-              display: "flex",
-              flexDirection: "column",
-              justifyContent: "center",
-              alignItems: "center",
-              padding: 24,
-              boxShadow: "0 30px 80px rgba(0,0,0,0.32)",
-            }}
-          >
-            <div style={{ color: "#bf0d3e", fontSize: 76, fontWeight: 900, lineHeight: 0.95 }}>{metricValue}</div>
+          {portraitImage ? (
             <div
               style={{
-                marginTop: 12,
-                color: "#334155",
-                fontSize: 24,
-                fontWeight: 900,
-                lineHeight: 1.12,
-                textAlign: "center",
-                textTransform: "uppercase",
+                width: 300,
+                height: 352,
+                border: "3px solid rgba(255,255,255,0.88)",
+                background: "rgba(5,18,36,0.84)",
+                display: "flex",
+                alignItems: "center",
+                justifyContent: "center",
+                padding: 10,
+                boxShadow: "0 26px 64px rgba(0,0,0,0.42)",
               }}
             >
-              {metricLabel}
+              <img
+                src={portraitImage as unknown as string}
+                width={280}
+                height={332}
+                alt=""
+                style={{
+                  width: "100%",
+                  height: "100%",
+                  objectFit: "contain",
+                  objectPosition: "center",
+                }}
+              />
             </div>
-          </div>
+          ) : null}
         </div>
 
-        <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between", gap: 26 }}>
-          <div style={{ display: "flex", gap: 14 }}>
+        <div
+          style={{
+            display: "flex",
+            alignItems: "flex-end",
+            justifyContent: "space-between",
+            gap: 24,
+            borderTop: "1px solid rgba(255,255,255,0.34)",
+            paddingTop: 16,
+            position: "relative",
+            zIndex: 2,
+          }}
+        >
+          <div style={{ display: "flex", alignItems: "center", gap: 26 }}>
+            <div style={{ display: "flex", alignItems: "baseline", gap: 10 }}>
+              <div style={{ color: "#ffffff", fontSize: 32, fontWeight: 900 }}>{metricValue}</div>
+              <div style={{ color: "#d6dee8", fontSize: 17, fontWeight: 800 }}>{metricLabel}</div>
+            </div>
             {badges.map((badge) => {
               const tone: NonNullable<RepWatchrOgBadge["tone"]> = badge.tone ?? "blue";
               return (
@@ -228,25 +361,28 @@ export function renderRepWatchrOgImage(input: RepWatchrOgInput) {
                   key={`${badge.label}-${badge.value}`}
                   style={{
                     display: "flex",
-                    flexDirection: "column",
-                    minWidth: 176,
-                    borderRadius: 18,
-                    border: "2px solid rgba(255,255,255,0.18)",
-                    background: "rgba(255,255,255,0.10)",
-                    padding: "14px 18px",
+                    alignItems: "baseline",
+                    gap: 8,
                   }}
                 >
-                  <div style={{ color: toneColors[tone], fontSize: 30, fontWeight: 900 }}>
+                  <div style={{ color: toneColors[tone], fontSize: 24, fontWeight: 900 }}>
                     {truncate(String(badge.value), 18)}
                   </div>
-                  <div style={{ color: "#cbd5e1", fontSize: 17, fontWeight: 900, textTransform: "uppercase" }}>
+                  <div style={{ color: "#d6dee8", fontSize: 15, fontWeight: 800 }}>
                     {truncate(badge.label, 24)}
                   </div>
                 </div>
               );
             })}
           </div>
-          <div style={{ color: "#cbd5e1", fontSize: 22, fontWeight: 800, textAlign: "right" }}>{path}</div>
+          <div style={{ display: "flex", flexDirection: "column", alignItems: "flex-end", gap: 3 }}>
+            {input.visualCredit ? (
+              <div style={{ color: "#b8c4d2", fontSize: 12, fontWeight: 700 }}>
+                {truncate(input.visualCredit, 60)}
+              </div>
+            ) : null}
+            <div style={{ color: "#ffffff", fontSize: 18, fontWeight: 800, textAlign: "right" }}>{path}</div>
+          </div>
         </div>
       </div>
     ),

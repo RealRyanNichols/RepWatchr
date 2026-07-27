@@ -1,5 +1,8 @@
 import { getAllRedFlagRecords, getRedFlagRecordById } from "@/lib/data";
-import { renderRepWatchrOgImage } from "@/lib/repwatchr-og";
+import {
+  REPWATCHR_EDITORIAL_OG_BACKGROUND,
+  renderRepWatchrOgImage,
+} from "@/lib/repwatchr-og";
 
 export const runtime = "nodejs";
 
@@ -13,9 +16,17 @@ export async function GET(request: Request) {
 
   return renderRepWatchrOgImage({
     requestUrl: request.url,
-    pageType: "Red flag",
-    title: record?.flag.title ?? "Red flags with source links",
-    subtitle: record?.flag.whyItMatters ?? "Public-record questions, source links, and review flags voters should inspect before repeating.",
+    pageType: record ? "Documented concern" : "Red-flag review",
+    headline: record?.flag.title ?? "Open the concern. Check the source.",
+    supportLine:
+      record?.flag.whyItMatters ??
+      "Public-record questions, source links, status, and review context voters should inspect before repeating.",
+    backgroundImage: REPWATCHR_EDITORIAL_OG_BACKGROUND,
+    backgroundPosition: "center 45%",
+    portraitImage: record?.official.photo,
+    visualCredit: record?.official.photo
+      ? record.official.photoCredit
+      : "Original RepWatchr editorial artwork",
     jurisdiction: record ? `${record.official.name} / ${record.official.position}` : "RepWatchr red-flag review",
     metricValue: record ? record.flag.severity : allFlags.length,
     metricLabel: record ? "severity" : "flags loaded",

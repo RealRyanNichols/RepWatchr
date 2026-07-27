@@ -1293,7 +1293,7 @@ export default function RepWatchrMemberDashboard({ initialEmail }: { initialEmai
                 Build the record before you share the claim.
               </h1>
               <p className="mt-3 max-w-3xl text-sm font-semibold leading-6 text-slate-700">
-                {currentEmail} / {profile?.verified ? "verified profile" : "verification pending"}
+                {currentEmail} / {profile?.verified ? "verified resident" : "verification pending"}
               </p>
             </div>
             <div className="grid grid-cols-2 gap-2 text-sm sm:grid-cols-4">

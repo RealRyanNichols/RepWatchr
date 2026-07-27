@@ -128,21 +128,29 @@ const STATE_NAMES: Record<string, string> = {
   DC: "District of Columbia",
 };
 
-const US_MARKERS = [
+// Generic words such as "Congress", "Senate", "representative", and "federal"
+// occur in many countries. A Washington/federal classification needs an
+// explicit U.S. marker, a known U.S. federal official, or a U.S. state match.
+const EXPLICIT_US_MARKERS = [
   "u.s.",
   "u.s",
+  "u.s. congress",
+  "u.s. senate",
+  "u.s. house",
+  "u.s. representative",
+  "u.s. senator",
   "us congress",
+  "us senate",
+  "us house",
+  "us representative",
+  "us senator",
   "united states",
-  "congress",
-  "congressional",
-  "senate",
-  "senator",
-  "house committee",
-  "house oversight",
-  "representative",
-  "federal",
+  "washington d.c.",
+  "washington dc",
+  "capitol hill",
   "white house",
-  "supreme court",
+  "u.s. supreme court",
+  "us supreme court",
   "department of justice",
   "doj",
   "fbi",
@@ -161,7 +169,6 @@ const TOPIC_RULES: Array<{ tag: string; terms: string[] }> = [
   { tag: "school board", terms: ["school board", "trustee", "isd", "superintendent"] },
   { tag: "courts", terms: ["court", "judge", "lawsuit", "grand jury", "district attorney"] },
   { tag: "public safety", terms: ["sheriff", "police chief", "constable", "law enforcement"] },
-  { tag: "uap transparency", terms: ["uap", "ufo", "unidentified anomalous phenomena", "declassified", "pentagon"] },
 ];
 
 let knownPeopleCache: KnownPerson[] | null = null;
@@ -316,6 +323,15 @@ function stateMatchesFor(input: DailyWireQualityInput, normalizedText: string, p
     ...people.map((person) => person.state ?? "").filter(Boolean),
   ]);
   const matches: string[] = [];
+
+  for (const [code, name] of Object.entries(STATE_NAMES)) {
+    const fullNameMatched =
+      code === "WA"
+        ? textIncludesTerm(normalizedText, "washington state")
+        : textIncludesTerm(normalizedText, name);
+    if (fullNameMatched) matches.push(code);
+  }
+
   for (const stateCode of expectedStates) {
     const code = stateCode.toUpperCase();
     const name = STATE_NAMES[code] ?? stateCode;
@@ -323,7 +339,12 @@ function stateMatchesFor(input: DailyWireQualityInput, normalizedText: string, p
       matches.push(code);
     }
   }
-  return uniqueList(matches);
+
+  for (const person of people) {
+    if (person.state) matches.push(person.state.toUpperCase());
+  }
+
+  return uniqueList(matches, 16);
 }
 
 function localMatchesFor(values: string[], normalizedText: string) {
@@ -417,15 +438,19 @@ export function evaluateDailyWireQuality(input: DailyWireQualityInput, duplicate
   const sourceWatchId = getSourceWatchId(input, source);
   const queryLane = getQueryLane(input, source);
   const laneControl = queryLane ? DAILY_WIRE_QUERY_LANE_CONTROLS[queryLane] : undefined;
-  const text = `${input.title} ${input.summary} ${input.sourceName} ${input.matchedTerms.join(" ")}`;
-  const normalizedText = normalize(text);
+  // Search-lane terms describe how an item was found. They are never proof that
+  // the article itself names the jurisdiction, person, or place.
+  const articleText = `${input.title} ${input.summary}`;
+  const normalizedText = normalize(articleText);
   const officialPeople = matchKnownPeople(normalizedText);
   const officialPersonMatches = officialPeople.map((person) => `${person.name} (${person.id})`);
   const topicTags = topicTagsFor(input, normalizedText);
   const stateMatches = stateMatchesFor(input, normalizedText, officialPeople);
   const countyMatches = localMatchesFor(input.counties, normalizedText);
   const cityMatches = localMatchesFor(input.cities, normalizedText);
-  const hasUsMarker = containsAny(normalizedText, US_MARKERS);
+  const hasExplicitUsMarker = containsAny(normalizedText, EXPLICIT_US_MARKERS);
+  const hasKnownFederalOfficial = officialPeople.some((person) => person.level === "federal");
+  const hasUsEvidence = hasExplicitUsMarker || hasKnownFederalOfficial || stateMatches.length > 0;
   const hasElectionTerm = containsAny(normalizedText, ELECTION_TERMS);
   const deniedDomains = uniqueList([...(source?.denyDomains ?? []), ...(laneControl?.denyDomains ?? []), ...DAILY_WIRE_DEFAULT_DENY_DOMAINS], 80);
   const deniedTerms = uniqueList([...(source?.deniedTerms ?? []), ...(laneControl?.deniedTerms ?? []), ...DAILY_WIRE_INTERNATIONAL_NOISE_TERMS], 80);
@@ -437,36 +462,56 @@ export function evaluateDailyWireQuality(input: DailyWireQualityInput, duplicate
     sourceDomain === "news.google.com";
   const matchedRequiredTerms = requiredTerms.filter((term) => textIncludesTerm(normalizedText, term));
   const missingRequiredTerms = requiredTerms.length > 0 && matchedRequiredTerms.length === 0;
+  const texasPublisherEvidence = Boolean(
+    source?.scope === "texas" &&
+      sourceDomain !== "news.google.com" &&
+      domainMatches(sourceDomain, source.allowDomains),
+  );
+  const texasEvidence =
+    stateMatches.includes("TX") ||
+    officialPeople.some((person) => person.state?.toUpperCase() === "TX") ||
+    countyMatches.length > 0 ||
+    cityMatches.length > 0 ||
+    texasPublisherEvidence;
+  const otherStateMatches = stateMatches.filter((stateCode) => stateCode !== "TX");
+  const conflictingStateEvidence =
+    input.scope === "texas" && otherStateMatches.length > 0 && !texasEvidence;
   const internationalTerms = deniedTerms.filter((term) => textIncludesTerm(normalizedText, term));
-  const internationalOnly = internationalTerms.length > 0 && !hasUsMarker && !officialPeople.length && !stateMatches.length && !countyMatches.length && !cityMatches.length;
+  const internationalOnly = internationalTerms.length > 0 && !hasUsEvidence && !countyMatches.length && !cityMatches.length;
   const noisyElection =
     input.powerChannels.includes("elections") &&
     hasElectionTerm &&
-    !hasUsMarker &&
-    !officialPeople.length &&
-    !stateMatches.length &&
+    !hasUsEvidence &&
     !countyMatches.length &&
     !cityMatches.length;
 
   let geographicRelevance: DailyWireGeographicRelevance = "none";
   if (countyMatches.length || cityMatches.length) geographicRelevance = "local";
-  else if (stateMatches.length || (input.scope === "texas" && !missingRequiredTerms)) geographicRelevance = "state";
-  else if (hasUsMarker || officialPeople.some((person) => person.level === "federal")) geographicRelevance = "national";
+  else if (texasEvidence || stateMatches.length) geographicRelevance = "state";
+  else if (hasExplicitUsMarker || hasKnownFederalOfficial) geographicRelevance = "national";
   else if (input.scope === "national" && !missingRequiredTerms) geographicRelevance = "weak";
 
   let jurisdictionMatch: DailyWireJurisdictionMatch = "none";
   if (geographicRelevance === "local") jurisdictionMatch = "local";
-  else if (stateMatches.includes("TX") || input.scope === "texas") jurisdictionMatch = "texas";
+  else if (texasEvidence) jurisdictionMatch = "texas";
   else if (stateMatches.length) jurisdictionMatch = "state";
-  else if (geographicRelevance === "national" || (input.scope === "national" && (hasUsMarker || officialPeople.length))) {
+  else if (geographicRelevance === "national") {
     jurisdictionMatch = "national";
   }
 
   const reviewReasons: string[] = [];
   if (sourceDenied) reviewReasons.push(`Denied source domain: ${sourceDomain}`);
   if (missingRequiredTerms) reviewReasons.push(`Query lane missing required jurisdiction terms: ${requiredTerms.slice(0, 4).join(", ")}`);
+  if (conflictingStateEvidence) {
+    reviewReasons.push(
+      `Texas lane contains another state without Texas evidence: ${otherStateMatches.slice(0, 4).join(", ")}`,
+    );
+  }
   if (internationalOnly) reviewReasons.push(`International-only terms without U.S., state, or official match: ${internationalTerms.slice(0, 4).join(", ")}`);
   if (noisyElection) reviewReasons.push("Election-language result has no U.S., state, local, or official match.");
+  if (input.scope === "national" && !hasUsEvidence) {
+    reviewReasons.push("National result has no explicit U.S. federal, state, or known-official match.");
+  }
   if (duplicateScore >= 90) reviewReasons.push("Likely duplicate wire item.");
   if (jurisdictionMatch === "none") reviewReasons.push("No jurisdiction match found.");
   if (geographicRelevance === "none") reviewReasons.push("No geographic relevance found.");
@@ -498,19 +543,30 @@ export function evaluateDailyWireQuality(input: DailyWireQualityInput, duplicate
   if (publishedDate(input.publishedAt) && Date.now() - new Date(input.publishedAt as string).getTime() <= 72 * 60 * 60 * 1000) score += 4;
   if (sourceDenied) score -= 55;
   if (missingRequiredTerms) score -= 22;
+  if (conflictingStateEvidence) score -= 60;
   if (internationalOnly) score -= 45;
   else if (internationalTerms.length) score -= 6;
   if (noisyElection) score -= 40;
 
   const qualityScore = clampScore(score);
   const storedOverride = statusFromStored(input.storedStatus);
+  const moderation = readRawRecord(raw.moderation);
+  const hasManualModeration = typeof moderation.updatedBy === "string" && moderation.updatedBy.trim().length > 0;
+  const storedOverrideIsSafe =
+    storedOverride &&
+    (hasManualModeration ||
+      storedOverride === "attached_to_profile" ||
+      storedOverride === "promoted_to_story" ||
+      storedOverride === "quarantined" ||
+      storedOverride === "duplicate" ||
+      storedOverride === "irrelevant");
   let status: DailyWireStatus;
 
-  if (storedOverride) {
+  if (storedOverrideIsSafe && storedOverride) {
     status = storedOverride;
   } else if (duplicateScore >= 90) {
     status = "duplicate";
-  } else if (sourceDenied || internationalOnly || noisyElection) {
+  } else if (sourceDenied || internationalOnly || noisyElection || conflictingStateEvidence) {
     status = "irrelevant";
   } else if (jurisdictionMatch === "none" || geographicRelevance === "none") {
     status = "quarantined";
@@ -526,9 +582,10 @@ export function evaluateDailyWireQuality(input: DailyWireQualityInput, duplicate
   const publicLabels = [
     ...(publicStatus === "source_linked" ? ["Source-linked"] : []),
     ...(publicStatus === "needs_review" ? ["Needs review"] : []),
-    ...(geographicRelevance === "local" || jurisdictionMatch === "texas" || jurisdictionMatch === "state"
-      ? ["Local relevance confirmed"]
+    ...(geographicRelevance === "local" || jurisdictionMatch === "texas"
+      ? ["Texas / Local relevance confirmed"]
       : []),
+    ...(jurisdictionMatch === "state" ? ["State relevance confirmed"] : []),
     ...(geographicRelevance === "national" || jurisdictionMatch === "national" ? ["National relevance confirmed"] : []),
     ...(status !== "attached_to_profile" ? ["Not yet attached to profile"] : []),
   ];

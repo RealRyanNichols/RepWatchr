@@ -1,5 +1,8 @@
 import { getRepWatchrDataStats } from "@/lib/data";
-import { renderRepWatchrOgImage } from "@/lib/repwatchr-og";
+import {
+  REPWATCHR_EDITORIAL_OG_BACKGROUND,
+  renderRepWatchrOgImage,
+} from "@/lib/repwatchr-og";
 
 export const runtime = "nodejs";
 
@@ -9,8 +12,10 @@ export async function GET(request: Request) {
   return renderRepWatchrOgImage({
     requestUrl: request.url,
     pageType: "RepWatchr",
-    title: "Search. Grade. Source. Share.",
-    subtitle: "Public records first. Share the receipt, not just the outrage.",
+    headline: "Receipts before outrage.",
+    supportLine: "Search officials, inspect the record, and share what the public source actually shows.",
+    backgroundImage: REPWATCHR_EDITORIAL_OG_BACKGROUND,
+    backgroundPosition: "center 45%",
     jurisdiction: "Fallback social preview",
     metricValue: stats.officialFiles.toLocaleString("en-US"),
     metricLabel: "records loaded",

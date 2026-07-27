@@ -1,0 +1,446 @@
+.hero {
+  --paper: #f4f1e8;
+  --ink: #111b24;
+  --navy: #163b5c;
+  --rust: #a23a2b;
+  --ochre: #d7b85f;
+  --rule-dark: rgba(255, 255, 255, 0.2);
+  --muted-dark: #aebed4;
+  position: relative;
+  overflow: hidden;
+  color: #f8fafc;
+  background: #07182f;
+}
+
+.heroShell {
+  width: min(100%, 90rem);
+  margin-inline: auto;
+  padding: 1.1rem 1rem 2.5rem;
+}
+
+.breadcrumb {
+  padding-bottom: 1rem;
+  border-bottom: 1px solid var(--rule-dark);
+}
+
+.breadcrumbItems {
+  display: flex;
+  gap: 0.55rem;
+  align-items: center;
+  min-width: 0;
+  color: #cbd5e1;
+  font-size: 0.8125rem;
+  font-weight: 650;
+}
+
+.breadcrumbItems a:hover {
+  color: #fff;
+}
+
+.breadcrumbItems span:last-child {
+  overflow: hidden;
+  color: #fff;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.heroGrid {
+  display: grid;
+  grid-template-areas:
+    "intro"
+    "portrait"
+    "lower";
+  gap: 2rem;
+  align-items: start;
+  padding-top: 1.5rem;
+}
+
+.heroIntro {
+  grid-area: intro;
+  min-width: 0;
+}
+
+.datelineRow {
+  display: grid;
+  gap: 0.35rem;
+}
+
+.dateline,
+.datelineMeta {
+  margin: 0;
+  color: #cbd5e1;
+  font-size: 0.75rem;
+  font-weight: 700;
+  line-height: 1.55;
+}
+
+.datelineMeta {
+  color: #8fa1ba;
+}
+
+.sectionMark {
+  display: flex;
+  gap: 0.65rem;
+  align-items: center;
+  margin: 1.4rem 0 0;
+  color: #f2dc99;
+  font-size: 0.75rem;
+  font-weight: 800;
+}
+
+.sectionMark span {
+  width: 2.5rem;
+  height: 0.125rem;
+  background: #d7b85f;
+}
+
+.heroName {
+  max-width: 10ch;
+  margin: 1rem 0 0;
+  color: #fff;
+  font-family: "Fraunces Variable", Fraunces, Georgia, "Times New Roman", serif;
+  font-size: clamp(3.5rem, 15vw, 4.5rem);
+  font-variation-settings: "SOFT" 0, "WONK" 1;
+  font-weight: 700;
+  letter-spacing: -0.045em;
+  line-height: 0.98;
+}
+
+.jurisdiction {
+  margin: 1.2rem 0 0;
+  color: #f2dc99;
+  font-size: 1.05rem;
+  font-weight: 750;
+  line-height: 1.45;
+}
+
+.heroSummary {
+  max-width: 42rem;
+  margin: 1rem 0 0;
+  color: #d6dee8;
+  font-size: 1.0625rem;
+  font-weight: 520;
+  line-height: 1.65;
+}
+
+.portraitStage {
+  grid-area: portrait;
+  width: min(100%, 35rem);
+  margin-inline: auto;
+}
+
+.portraitFigure {
+  margin: 0;
+}
+
+.portraitFrame {
+  position: relative;
+  overflow: hidden;
+  aspect-ratio: 358 / 410;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  background: #12233c;
+}
+
+.portraitImage {
+  object-fit: cover;
+  object-position: center top;
+  filter: saturate(0.96) contrast(1.03);
+}
+
+.portraitImageAdaptive {
+  object-fit: contain;
+  object-position: center;
+  filter: saturate(0.96) contrast(1.03);
+}
+
+.portraitCaption {
+  display: flex;
+  justify-content: flex-end;
+  min-height: 2.35rem;
+  padding-top: 0.65rem;
+  border-bottom: 1px solid var(--rule-dark);
+}
+
+.photoCredit {
+  max-width: 100%;
+  color: #8fa1ba;
+  font-size: 0.6875rem;
+  font-weight: 600;
+  line-height: 1.4;
+  text-align: right;
+}
+
+.heroLower {
+  grid-area: lower;
+  min-width: 0;
+}
+
+.actionDock {
+  width: 100%;
+}
+
+.recordLedger {
+  display: grid;
+  margin-top: 1.5rem;
+  border-block: 1px solid var(--rule-dark);
+}
+
+.gradeBlock {
+  padding: 1.25rem 0;
+  border-bottom: 1px solid var(--rule-dark);
+}
+
+.recordLabel {
+  margin: 0;
+  color: var(--muted-dark);
+  font-size: 0.6875rem;
+  font-weight: 750;
+  line-height: 1.35;
+}
+
+.gradeValue,
+.railValue {
+  color: #fff;
+  font-family: "Fraunces Variable", Fraunces, Georgia, "Times New Roman", serif;
+  font-variation-settings: "SOFT" 0, "WONK" 1;
+}
+
+.gradeValue {
+  margin: 0.45rem 0 0;
+  font-size: clamp(3rem, 13vw, 4rem);
+  font-weight: 700;
+  letter-spacing: -0.055em;
+  line-height: 0.95;
+}
+
+.gradeDetail {
+  margin: 0.55rem 0 0;
+  color: #d9bd72;
+  font-size: 0.75rem;
+  font-weight: 700;
+  line-height: 1.45;
+}
+
+.statRail {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  margin: 0;
+}
+
+.railStat {
+  min-width: 0;
+  padding: 1rem 0.7rem;
+  border-right: 1px solid rgba(255, 255, 255, 0.14);
+}
+
+.railStat:first-child {
+  padding-left: 0;
+}
+
+.railStat:last-child {
+  padding-right: 0;
+  border-right: 0;
+}
+
+.railValue {
+  margin: 0.45rem 0 0;
+  font-size: clamp(1.25rem, 5vw, 1.75rem);
+  font-weight: 700;
+  letter-spacing: -0.035em;
+  line-height: 1.05;
+}
+
+.railDetail {
+  display: none;
+  margin: 0.45rem 0 0;
+  color: #8fa1ba;
+  font-size: 0.6875rem;
+  font-weight: 620;
+  line-height: 1.45;
+}
+
+@media (min-width: 40rem) {
+  .heroShell {
+    padding-inline: 1.5rem;
+    padding-bottom: 3rem;
+  }
+
+  .railStat {
+    padding-inline: 1rem;
+  }
+
+  .railDetail {
+    display: block;
+  }
+}
+
+@media (min-width: 64rem) {
+  .hero {
+    color: var(--ink);
+    background: var(--paper);
+  }
+
+  .heroShell {
+    padding: 3rem clamp(2rem, 5.55vw, 5rem) 4.5rem;
+  }
+
+  .breadcrumb {
+    display: none;
+  }
+
+  .heroGrid {
+    grid-template-areas:
+      "intro portrait"
+      "lower portrait";
+    grid-template-columns: minmax(0, 1fr) minmax(25rem, 30rem);
+    column-gap: clamp(3rem, 5vw, 5rem);
+    row-gap: 2.5rem;
+    padding-top: 0;
+  }
+
+  .datelineRow {
+    grid-template-columns: minmax(0, 1fr) auto;
+    gap: 2rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid #cbc4b5;
+  }
+
+  .dateline,
+  .datelineMeta {
+    color: #666b6b;
+    font-size: 0.8125rem;
+  }
+
+  .datelineMeta {
+    text-align: right;
+  }
+
+  .sectionMark {
+    margin-top: 1.8rem;
+    color: var(--rust);
+  }
+
+  .sectionMark span {
+    background: var(--rust);
+  }
+
+  .heroName {
+    max-width: 8ch;
+    margin-top: 1.2rem;
+    color: var(--ink);
+    font-size: clamp(4.25rem, 6.67vw, 6rem);
+    line-height: 1;
+  }
+
+  .jurisdiction {
+    max-width: 32rem;
+    margin-top: 1.35rem;
+    color: var(--navy);
+    font-family: "Fraunces Variable", Fraunces, Georgia, serif;
+    font-size: clamp(1.45rem, 2.15vw, 1.9375rem);
+    font-weight: 650;
+    letter-spacing: -0.02em;
+    line-height: 1.25;
+  }
+
+  .heroSummary {
+    margin-top: 1.25rem;
+    color: #4f5659;
+    font-size: 1.0625rem;
+    line-height: 1.7;
+  }
+
+  .portraitStage {
+    width: 100%;
+    max-width: 30rem;
+    margin-inline: 0;
+  }
+
+  .portraitFrame {
+    aspect-ratio: 480 / 510;
+    border-color: #aeb4b2;
+    background: #152a43;
+  }
+
+  .portraitCaption {
+    min-height: 2.5rem;
+    border-bottom-color: #cbc4b5;
+  }
+
+  .photoCredit {
+    color: #727674;
+  }
+
+  .heroLower {
+    align-self: end;
+  }
+
+  .actionDock {
+    display: none;
+  }
+
+  .recordLedger {
+    grid-template-columns: minmax(11rem, 0.75fr) minmax(0, 1.75fr);
+    margin-top: 0;
+    border-color: #8f918c;
+  }
+
+  .gradeBlock {
+    padding: 1.35rem 1.5rem 1.35rem 0;
+    border-right: 1px solid #cbc4b5;
+    border-bottom: 0;
+  }
+
+  .recordLabel {
+    color: #676b69;
+  }
+
+  .gradeValue,
+  .railValue {
+    color: var(--ink);
+  }
+
+  .gradeValue {
+    font-size: clamp(3rem, 4.2vw, 3.75rem);
+  }
+
+  .gradeDetail {
+    color: var(--rust);
+  }
+
+  .railStat {
+    padding: 1.35rem 1.2rem;
+    border-right-color: #cbc4b5;
+  }
+
+  .railStat:first-child {
+    padding-left: 1.2rem;
+  }
+
+  .railStat:last-child {
+    padding-right: 0;
+  }
+
+  .railValue {
+    font-size: clamp(1.55rem, 2.2vw, 2rem);
+  }
+
+  .railDetail {
+    color: #737774;
+  }
+}
+
+@media (min-width: 90rem) {
+  .heroGrid {
+    grid-template-columns: minmax(0, 1fr) 30rem;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hero *,
+  .hero *::before,
+  .hero *::after {
+    scroll-behavior: auto !important;
+    transition-duration: 0.001ms !important;
+  }
+}

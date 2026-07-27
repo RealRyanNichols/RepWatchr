@@ -17,7 +17,7 @@ export const metadata: Metadata = {
     title: "Money Trail | RepWatchr",
     description: "Source-backed campaign finance, committee, donor, and public vendor records without unsupported claims.",
     path: "/money",
-    imagePath: buildOgImageUrl("funding"),
+    imagePath: buildOgImageUrl("funding", { view: "money" }),
     imageAlt: "RepWatchr money trail social preview",
   }),
 };

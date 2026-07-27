@@ -216,11 +216,11 @@ const routeSmokeTargets: RouteSmokeTarget[] = [
   },
   {
     label: "Sample story route",
-    path: "/news/uap-file-dump-congress-attention-2026",
+    path: "/news/health-care-costs-midterms-2026",
     type: "public",
     expected: "dynamic",
     shouldIndex: true,
-    checkText: "UAP",
+    checkText: "Health",
     sourceFile: "src/app/news/[id]/page.tsx",
     note: "Representative story page smoke target from source-backed news data.",
   },

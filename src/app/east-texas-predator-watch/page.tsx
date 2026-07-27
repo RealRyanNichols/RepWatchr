@@ -18,7 +18,7 @@ export const metadata: Metadata = buildRepWatchrMetadata({
   description:
     "Source-backed East Texas Predator Watch profiles, registry records, watch-priority alerts, and private community report intake.",
   path: "/east-texas-predator-watch",
-  imagePath: buildOgImageUrl("home"),
+    imagePath: buildOgImageUrl("home", { page: "predator-watch" }),
   imageAlt: "RepWatchr East Texas Predator Watch preview",
 });
 

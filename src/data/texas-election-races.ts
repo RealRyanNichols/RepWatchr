@@ -72,6 +72,59 @@ const texasRedistrictingDistricts = {
 
 export const TEXAS_ELECTION_RACES: TexasElectionRace[] = [
   {
+    slug: "marion-county-judge-2026",
+    title: "Marion County Judge Race 2026",
+    shortTitle: "Marion County Judge",
+    office: "Marion County Judge",
+    lane: "local-watch",
+    region: "Marion County",
+    electionDate: "November 3, 2026",
+    stage: "Declared write-in challenge; qualification pending official confirmation",
+    priority: 99,
+    summary:
+      "Leward J. LaFleur II, the Republican incumbent, faces a publicly announced write-in challenge from Dina K. Carroll for Marion County's countywide executive and constitutional-court office.",
+    whyItMatters:
+      "The county judge presides over Commissioners Court and holds real power over the budget, emergency management, public administration and the constitutional county court. The race also places unresolved, disputed misconduct reporting before voters.",
+    geography: "Marion County, Texas",
+    officialIds: ["leward-j-lafleur-ii"],
+    recordFocus: [
+      "Commissioners Court decisions",
+      "budgets and audits",
+      "emergency management",
+      "records compliance",
+      "campaign finance",
+      "reported allegations and procedural disposition"
+    ],
+    watchActions: [
+      "Verify Carroll's accepted write-in declaration",
+      "Obtain the complaint, docket, transfer records and current disposition",
+      "Load Commissioners Court attendance, votes, budgets and audits",
+      "Offer both candidates equal sourced-response space"
+    ],
+    sourceLinks: [
+      {
+        title: "Marion County elections and campaign filings",
+        url: "https://marioncountytaxoffice.com/elections/"
+      },
+      {
+        title: "Official 2026 Republican primary results",
+        url: "https://marioncountytaxoffice.com/wp-content/uploads/2026/03/OFFICIAL-RESULTS-REPUBLICAN-PARTY.pdf"
+      },
+      {
+        title: "Texas Secretary of State: 2026 write-in procedures",
+        url: "https://www.sos.state.tx.us/elections/candidates/guide/2026/writein2026.shtml"
+      },
+      {
+        title: "KLTV: allegations and LaFleur response",
+        url: "https://www.kltv.com/2026/04/21/marion-county-judge-denies-allegations-unwanted-touching-halloween-party/"
+      },
+      {
+        title: "Marshall News Messenger: Carroll announcement",
+        url: "https://marshallnewsmessenger.com/2026/07/09/jefferson-community-advocate-announces-write-in-candidacy-for-marion-county-judge/"
+      }
+    ]
+  },
+  {
     slug: "texas-us-senate-2026",
     title: "Texas U.S. Senate Race 2026",
     shortTitle: "U.S. Senate",

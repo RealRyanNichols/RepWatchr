@@ -19,7 +19,7 @@ export const metadata: Metadata = buildRepWatchrMetadata({
   description:
     "Track attorney, public-defender, and law-firm profiles state by state with bar-license sources, completion stages, cross-links, intake questions, and correction review.",
   path: "/attorneys",
-  imagePath: buildOgImageUrl("home"),
+  imagePath: buildOgImageUrl("home", { page: "attorneys" }),
   imageAlt: "RepWatchr attorney watch preview",
 });
 

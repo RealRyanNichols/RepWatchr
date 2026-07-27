@@ -5,7 +5,7 @@ export const metadata: Metadata = buildRepWatchrMetadata({
   title: "Privacy Policy",
   description: "RepWatchr privacy policy - how we collect, use, and protect your data.",
   path: "/privacy",
-  imagePath: buildOgImageUrl("methodology"),
+  imagePath: buildOgImageUrl("methodology", { view: "privacy" }),
   imageAlt: "RepWatchr privacy policy preview",
 });
 

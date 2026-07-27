@@ -13,7 +13,7 @@ const routes = [
   { label: "services", path: "/services", type: "public", checkText: "services" },
   { label: "quick record check service", path: "/services/quick-record-check", type: "public", checkText: "Quick" },
   { label: "sample race", path: "/elections/texas/texas-us-senate-2026", type: "public", checkText: "Senate" },
-  { label: "sample story", path: "/news/uap-file-dump-congress-attention-2026", type: "public", checkText: "UAP" },
+  { label: "sample story", path: "/news/health-care-costs-midterms-2026", type: "public", checkText: "Health" },
   { label: "privacy", path: "/privacy", type: "public", checkText: "Privacy" },
   { label: "methodology", path: "/methodology", type: "public", checkText: "methodology" },
   { label: "sitemap", path: "/sitemap.xml", type: "seo", contentType: "xml" },

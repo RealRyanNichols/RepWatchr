@@ -5,6 +5,8 @@ import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { createClient } from "@/lib/supabase";
 import { trackRepWatchrEvent } from "@/lib/client-analytics";
+import TurnstileChallenge from "@/components/auth/TurnstileChallenge";
+import SocialAuthButtons from "@/components/auth/SocialAuthButtons";
 
 const signupTools = [
   "Watch list for officials, boards, races, attorneys, media, and issues",
@@ -20,8 +22,11 @@ export default function SignUpPage() {
   const [error, setError] = useState("");
   const [loading, setLoading] = useState(false);
   const [success, setSuccess] = useState(false);
+  const [captchaToken, setCaptchaToken] = useState("");
+  const [captchaResetNonce, setCaptchaResetNonce] = useState(0);
   const router = useRouter();
   const supabase = useMemo(() => createClient(), []);
+  const turnstileSiteKey = process.env.NEXT_PUBLIC_TURNSTILE_SITE_KEY ?? "";
 
   async function handleSubmit(e: React.FormEvent) {
     e.preventDefault();
@@ -37,6 +42,11 @@ export default function SignUpPage() {
       return;
     }
 
+    if (turnstileSiteKey && !captchaToken) {
+      setError("Complete the human verification challenge.");
+      return;
+    }
+
     setLoading(true);
     trackRepWatchrEvent("signup_started", { source: "auth_signup" });
 
@@ -47,11 +57,13 @@ export default function SignUpPage() {
         password,
         options: {
           emailRedirectTo: `${window.location.origin}/auth/callback?next=/dashboard`,
+          ...(captchaToken ? { captchaToken } : {}),
         },
       });
 
       if (signUpError) {
         setError(signUpError.message);
+        setCaptchaResetNonce((value) => value + 1);
         setLoading(false);
         return;
       }
@@ -142,6 +154,20 @@ export default function SignUpPage() {
             Join free. The member tools open immediately after signup.
           </p>
 
+          <div className="mt-5">
+            <SocialAuthButtons />
+            <p className="mt-2 text-xs font-semibold leading-5 text-gray-500">
+              Facebook or X can create your member account. Human and district verification are still completed inside
+              RepWatchr before civic votes receive verified weight.
+            </p>
+          </div>
+
+          <div className="my-5 flex items-center gap-3">
+            <div className="h-px flex-1 bg-gray-200" />
+            <span className="text-xs font-black uppercase tracking-wide text-gray-500">or use email</span>
+            <div className="h-px flex-1 bg-gray-200" />
+          </div>
+
           {error && (
             <div className="mb-4 rounded-md bg-red-50 p-3 text-sm text-red-700">
               {error}
@@ -206,9 +232,18 @@ export default function SignUpPage() {
               />
             </div>
 
+            {turnstileSiteKey ? (
+              <TurnstileChallenge
+                siteKey={turnstileSiteKey}
+                action="member_signup"
+                resetNonce={captchaResetNonce}
+                onToken={setCaptchaToken}
+              />
+            ) : null}
+
             <button
               type="submit"
-              disabled={loading}
+              disabled={loading || Boolean(turnstileSiteKey && !captchaToken)}
               className="w-full rounded-lg bg-blue-900 px-4 py-2.5 text-sm font-black text-white transition-colors hover:bg-red-700 disabled:bg-blue-400"
             >
               {loading ? "Creating Account..." : "Create Account"}

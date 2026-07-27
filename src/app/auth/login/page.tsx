@@ -5,6 +5,7 @@ import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { createClient } from "@/lib/supabase";
 import { trackRepWatchrEvent } from "@/lib/client-analytics";
+import SocialAuthButtons from "@/components/auth/SocialAuthButtons";
 
 export default function LoginPage() {
   const [email, setEmail] = useState("");
@@ -104,6 +105,20 @@ export default function LoginPage() {
           <p className="mt-1 text-sm font-semibold text-gray-600">
             Sign in to vote, comment, save tracked profiles, and use member tools.
           </p>
+
+          <div className="mt-5">
+            <SocialAuthButtons />
+            <p className="mt-2 text-xs font-semibold leading-5 text-gray-500">
+              Social sign-in creates a RepWatchr account. District-resident verification remains a separate step before
+              a vote receives in-district status.
+            </p>
+          </div>
+
+          <div className="my-5 flex items-center gap-3">
+            <div className="h-px flex-1 bg-gray-200" />
+            <span className="text-xs font-black uppercase tracking-wide text-gray-500">or use email</span>
+            <div className="h-px flex-1 bg-gray-200" />
+          </div>
 
           {error && (
             <div className="mb-4 rounded-md bg-red-50 p-3 text-sm text-red-700">
