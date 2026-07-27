@@ -22,7 +22,42 @@ Run route smoke checks against a live server:
 REPWATCHR_SMOKE_BASE_URL=https://www.repwatchr.com npm run qa:routes
 ```
 
+Verify the Marion County race and both public portrait assets against the exact
+preview or production host:
+
+```bash
+npm run verify:marion-deploy -- https://preview-or-production.example
+```
+
 If using the bundled Codex runtime locally, prepend its Node path before running direct binaries.
+
+## Release State Vocabulary
+
+These states are sequential. Report the highest state actually proven; never use
+`live`, `published`, or `deployed to production` for an earlier state.
+
+| State | Required proof | What may be reported |
+| --- | --- | --- |
+| **BUILT** | The production build passed for the current source tree. | “Built locally.” |
+| **COMMITTED** | The exact source tree is recorded in a local commit SHA. | “Committed as `<sha>`.” |
+| **PUSHED** | The exact commit SHA is reachable on the intended remote branch. | “Pushed to `<remote>/<branch>`.” |
+| **PREVIEW VERIFIED** | A preview for that exact SHA exists and the relevant live-URL verifiers pass against its public URL. | “Preview verified at `<url>`.” |
+| **PRODUCTION VERIFIED** | The exact SHA is serving on the canonical production host and the relevant live-URL verifiers pass against that host after deployment. | “Live in production and verified at `<url>`.” |
+
+A successful build, commit, push, Vercel build record, or preview check is not
+proof that production changed. Until **PRODUCTION VERIFIED**, report production
+as unchanged, pending, or unverified.
+
+For every preview or production verification, record:
+
+- commit SHA
+- public URL checked
+- UTC verification time
+- verifier command and pass/fail output
+
+The Marion County source smoke runs in CI. Its post-deploy verifier is
+intentionally not wired into source CI because it requires the public URL of the
+specific deployment being verified.
 
 ## Editorial Visual Contract
 
@@ -56,6 +91,8 @@ If using the bundled Codex runtime locally, prepend its Node path before running
 | Race polls disabled unless approved | pass by default | `NEXT_PUBLIC_ENABLE_RACE_POLLS_V1` remains false until a replacement migration and privacy tests pass. |
 | Editorial publishing disabled unless approved | pass by default | `EDITORIAL_PIPELINE_ENABLED` remains false and no editorial cron is scheduled. |
 | Social distribution disabled unless approved | pass by default | `SOCIAL_PIPELINE_V2_ENABLED`, `FACEBOOK_AUTOPOST_ENABLED`, and `X_AUTOPOST_ENABLED` remain false. |
+| Marion County source release smoke passes | not verified | `npm run smoke:marion-release`; asserts both portrait files and rejects the legacy placeholder markup. |
+| Marion County deployed page passes | not verified | Run `npm run verify:marion-deploy -- <public-url>` after each preview or production deployment. |
 
 ## Backend staging hold
 
@@ -90,3 +127,5 @@ These require production credentials or account access:
 5. Open `/admin/quality`.
 6. Confirm no fresh critical errors.
 7. Run route smoke against the deployed URL.
+8. Run feature-specific post-deploy verifiers against the same public URL.
+9. Mark a release **PRODUCTION VERIFIED** only after the exact production commit and required verifiers are confirmed.

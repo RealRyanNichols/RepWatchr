@@ -20,6 +20,8 @@
     "smoke:officials": "node scripts/smoke-officials-search.mjs",
     "smoke:profile-dossier": "node scripts/smoke-official-dossier.mjs",
     "smoke:race-hub": "node scripts/smoke-race-hub.mjs",
+    "smoke:marion-release": "node scripts/smoke-marion-county-race-release.mjs",
+    "verify:marion-deploy": "node scripts/verify-marion-county-deploy.mjs",
     "smoke:public-role-safety": "node scripts/smoke-public-role-safety.mjs",
     "smoke:local-meetings": "node scripts/smoke-local-meeting-tracker.mjs",
     "smoke:money-trail": "node scripts/smoke-money-trail.mjs",
