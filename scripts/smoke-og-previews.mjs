@@ -129,6 +129,7 @@ for (const requiredRendererText of [
   "REPWATCHR_OG_SIZE",
   "_vercel_share",
   "embeddedAssetData",
+  'boxSizing: "border-box"',
 ]) {
   assert(renderer.includes(requiredRendererText), `Shared OG renderer missing ${requiredRendererText}`);
 }

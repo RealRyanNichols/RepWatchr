@@ -143,8 +143,9 @@ export function renderRepWatchrOgImage(input: RepWatchrOgInput) {
     (
       <div
         style={{
-          width: "100%",
-          height: "100%",
+          width: REPWATCHR_OG_SIZE.width,
+          height: REPWATCHR_OG_SIZE.height,
+          boxSizing: "border-box",
           display: "flex",
           flexDirection: "column",
           justifyContent: "space-between",

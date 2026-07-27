@@ -3,7 +3,7 @@ import type { Metadata } from "next";
 export const REPWATCHR_ORIGIN = "https://www.repwatchr.com";
 export const REPWATCHR_TAGLINE = "Search. Grade. Source. Share.";
 export const REPWATCHR_OG_SIZE = { width: 1200, height: 630 } as const;
-export const REPWATCHR_OG_VERSION = "3";
+export const REPWATCHR_OG_VERSION = "4";
 
 type RepWatchrMetadataInput = {
   title: string;
