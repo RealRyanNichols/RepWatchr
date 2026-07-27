@@ -113,7 +113,7 @@ for (const route of ogRoutes) {
 
 const renderer = read("src/lib/repwatchr-og.tsx");
 for (const requiredRendererText of [
-  "repwatchr-logo-america-first.png",
+  "repwatchr-logo.png",
   "REPWATCHR_TAGLINE",
   "pageType",
   "metricLabel",
@@ -128,8 +128,20 @@ for (const requiredRendererText of [
   "ImageResponse",
   "REPWATCHR_OG_SIZE",
   "_vercel_share",
+  "embeddedAssetData",
 ]) {
   assert(renderer.includes(requiredRendererText), `Shared OG renderer missing ${requiredRendererText}`);
+}
+const nextConfig = read("next.config.ts");
+for (const embeddedAsset of [
+  "repwatchr-logo.png",
+  "washington-accountability-blue-hour.jpg",
+  "marion-county-judge-2026-hero.jpg",
+]) {
+  assert(
+    nextConfig.includes(embeddedAsset),
+    `Next output tracing does not include embedded OG asset ${embeddedAsset}`,
+  );
 }
 assert(
   !/\bheadline\s*\?\s*:/.test(renderer),

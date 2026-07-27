@@ -1,4 +1,6 @@
 /* eslint-disable @next/next/no-img-element */
+import { readFileSync } from "node:fs";
+import { join } from "node:path";
 import { ImageResponse } from "next/og";
 import {
   REPWATCHR_OG_SIZE,
@@ -41,6 +43,7 @@ const toneColors: Record<NonNullable<RepWatchrOgBadge["tone"]>, string> = {
 };
 
 const defaultBadges: RepWatchrOgBadge[] = [{ label: "Sources", value: "Review", tone: "blue" }];
+const embeddedAssetCache = new Map<string, ArrayBuffer>();
 
 function clean(value: string | undefined, fallback: string) {
   return (value || fallback).replace(/\s+/g, " ").trim();
@@ -59,8 +62,50 @@ function fitHeadlineSize(headline: string, hasPortrait: boolean) {
   return hasPortrait ? 70 : 82;
 }
 
+function embeddedAssetData(pathOrUrl: string) {
+  const cached = embeddedAssetCache.get(pathOrUrl);
+  if (cached) return cached;
+
+  try {
+    let bytes: Buffer;
+    if (pathOrUrl === "/images/og/repwatchr-logo.png") {
+      bytes = readFileSync(
+        join(process.cwd(), "public/images/og/repwatchr-logo.png"),
+      );
+    } else if (
+      pathOrUrl === "/images/editorial/washington-accountability-blue-hour.webp"
+    ) {
+      bytes = readFileSync(
+        join(
+          process.cwd(),
+          "public/images/og/washington-accountability-blue-hour.jpg",
+        ),
+      );
+    } else if (
+      pathOrUrl === "/images/races/marion-county-judge-2026-hero.webp"
+    ) {
+      bytes = readFileSync(
+        join(
+          process.cwd(),
+          "public/images/og/marion-county-judge-2026-hero.jpg",
+        ),
+      );
+    } else {
+      return undefined;
+    }
+
+    const data = Uint8Array.from(bytes).buffer;
+    embeddedAssetCache.set(pathOrUrl, data);
+    return data;
+  } catch {
+    return undefined;
+  }
+}
+
 function assetUrl(pathOrUrl: string, requestUrl?: string) {
   if (pathOrUrl.startsWith("http://") || pathOrUrl.startsWith("https://")) return pathOrUrl;
+  const embedded = embeddedAssetData(pathOrUrl);
+  if (embedded) return embedded;
   if (!requestUrl) return absoluteRepWatchrUrl(pathOrUrl);
 
   const request = new URL(requestUrl);
@@ -112,7 +157,7 @@ export function renderRepWatchrOgImage(input: RepWatchrOgInput) {
       >
         {backgroundImage ? (
           <img
-            src={backgroundImage}
+            src={backgroundImage as unknown as string}
             width={1200}
             height={630}
             alt=""
@@ -123,32 +168,54 @@ export function renderRepWatchrOgImage(input: RepWatchrOgInput) {
               height: "100%",
               objectFit: "cover",
               objectPosition: input.backgroundPosition ?? "center",
+              zIndex: 0,
             }}
           />
         ) : null}
         <div
           style={{
             position: "absolute",
-            inset: 0,
+            top: 0,
+            left: 0,
+            width: "100%",
+            height: "100%",
             display: "flex",
             background:
               "linear-gradient(90deg, rgba(3,12,25,0.97) 0%, rgba(5,18,36,0.94) 46%, rgba(5,18,36,0.66) 72%, rgba(3,12,25,0.82) 100%)",
+            zIndex: 1,
           }}
         />
         <div
           style={{
             position: "absolute",
-            inset: "0 0 auto 0",
+            top: 0,
+            left: 0,
+            width: "100%",
             height: 10,
             display: "flex",
             background: "linear-gradient(90deg, #bf0d3e 0%, #bf0d3e 34%, #f4efe3 34%, #f4efe3 66%, #204f77 66%)",
+            zIndex: 3,
           }}
         />
 
-        <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between", gap: 30 }}>
+        <div
+          style={{
+            display: "flex",
+            alignItems: "center",
+            justifyContent: "space-between",
+            gap: 30,
+            position: "relative",
+            zIndex: 2,
+          }}
+        >
           <div style={{ display: "flex", alignItems: "center", gap: 18 }}>
             <img
-              src={assetUrl("/images/repwatchr-logo-america-first.png", input.requestUrl)}
+              src={
+                assetUrl(
+                  "/images/og/repwatchr-logo.png",
+                  input.requestUrl,
+                ) as unknown as string
+              }
               width={68}
               height={68}
               alt="RepWatchr logo"
@@ -180,7 +247,17 @@ export function renderRepWatchrOgImage(input: RepWatchrOgInput) {
           </div>
         </div>
 
-        <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between", gap: 42, flex: 1 }}>
+        <div
+          style={{
+            display: "flex",
+            alignItems: "center",
+            justifyContent: "space-between",
+            gap: 42,
+            flex: 1,
+            position: "relative",
+            zIndex: 2,
+          }}
+        >
           <div
             style={{
               display: "flex",
@@ -244,7 +321,7 @@ export function renderRepWatchrOgImage(input: RepWatchrOgInput) {
               }}
             >
               <img
-                src={portraitImage}
+                src={portraitImage as unknown as string}
                 width={280}
                 height={332}
                 alt=""
@@ -267,6 +344,8 @@ export function renderRepWatchrOgImage(input: RepWatchrOgInput) {
             gap: 24,
             borderTop: "1px solid rgba(255,255,255,0.34)",
             paddingTop: 16,
+            position: "relative",
+            zIndex: 2,
           }}
         >
           <div style={{ display: "flex", alignItems: "center", gap: 26 }}>
