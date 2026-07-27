@@ -84,6 +84,18 @@ assert(
   "Texas-lane items do not quarantine conflicting out-of-state evidence",
 );
 assert(
+  quality.includes("EXPLICIT_US_MARKERS") &&
+    quality.includes("hasKnownFederalOfficial") &&
+    quality.includes("hasUsEvidence"),
+  "Washington classification does not require explicit U.S. or known-official evidence",
+);
+assert(
+  sources.includes('"nigeria"') &&
+    sources.includes('"bharatiya janata party"') &&
+    sources.includes('"amit shah"'),
+  "international political noise controls are incomplete",
+);
+assert(
   quality.includes("hasManualModeration"),
   "stored acceptance can bypass current quality checks without a manual moderation record",
 );

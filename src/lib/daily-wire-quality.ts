@@ -128,21 +128,29 @@ const STATE_NAMES: Record<string, string> = {
   DC: "District of Columbia",
 };
 
-const US_MARKERS = [
+// Generic words such as "Congress", "Senate", "representative", and "federal"
+// occur in many countries. A Washington/federal classification needs an
+// explicit U.S. marker, a known U.S. federal official, or a U.S. state match.
+const EXPLICIT_US_MARKERS = [
   "u.s.",
   "u.s",
+  "u.s. congress",
+  "u.s. senate",
+  "u.s. house",
+  "u.s. representative",
+  "u.s. senator",
   "us congress",
+  "us senate",
+  "us house",
+  "us representative",
+  "us senator",
   "united states",
-  "congress",
-  "congressional",
-  "senate",
-  "senator",
-  "house committee",
-  "house oversight",
-  "representative",
-  "federal",
+  "washington d.c.",
+  "washington dc",
+  "capitol hill",
   "white house",
-  "supreme court",
+  "u.s. supreme court",
+  "us supreme court",
   "department of justice",
   "doj",
   "fbi",
@@ -440,7 +448,9 @@ export function evaluateDailyWireQuality(input: DailyWireQualityInput, duplicate
   const stateMatches = stateMatchesFor(input, normalizedText, officialPeople);
   const countyMatches = localMatchesFor(input.counties, normalizedText);
   const cityMatches = localMatchesFor(input.cities, normalizedText);
-  const hasUsMarker = containsAny(normalizedText, US_MARKERS);
+  const hasExplicitUsMarker = containsAny(normalizedText, EXPLICIT_US_MARKERS);
+  const hasKnownFederalOfficial = officialPeople.some((person) => person.level === "federal");
+  const hasUsEvidence = hasExplicitUsMarker || hasKnownFederalOfficial || stateMatches.length > 0;
   const hasElectionTerm = containsAny(normalizedText, ELECTION_TERMS);
   const deniedDomains = uniqueList([...(source?.denyDomains ?? []), ...(laneControl?.denyDomains ?? []), ...DAILY_WIRE_DEFAULT_DENY_DOMAINS], 80);
   const deniedTerms = uniqueList([...(source?.deniedTerms ?? []), ...(laneControl?.deniedTerms ?? []), ...DAILY_WIRE_INTERNATIONAL_NOISE_TERMS], 80);
@@ -467,27 +477,25 @@ export function evaluateDailyWireQuality(input: DailyWireQualityInput, duplicate
   const conflictingStateEvidence =
     input.scope === "texas" && otherStateMatches.length > 0 && !texasEvidence;
   const internationalTerms = deniedTerms.filter((term) => textIncludesTerm(normalizedText, term));
-  const internationalOnly = internationalTerms.length > 0 && !hasUsMarker && !officialPeople.length && !stateMatches.length && !countyMatches.length && !cityMatches.length;
+  const internationalOnly = internationalTerms.length > 0 && !hasUsEvidence && !countyMatches.length && !cityMatches.length;
   const noisyElection =
     input.powerChannels.includes("elections") &&
     hasElectionTerm &&
-    !hasUsMarker &&
-    !officialPeople.length &&
-    !stateMatches.length &&
+    !hasUsEvidence &&
     !countyMatches.length &&
     !cityMatches.length;
 
   let geographicRelevance: DailyWireGeographicRelevance = "none";
   if (countyMatches.length || cityMatches.length) geographicRelevance = "local";
   else if (texasEvidence || stateMatches.length) geographicRelevance = "state";
-  else if (hasUsMarker || officialPeople.some((person) => person.level === "federal")) geographicRelevance = "national";
+  else if (hasExplicitUsMarker || hasKnownFederalOfficial) geographicRelevance = "national";
   else if (input.scope === "national" && !missingRequiredTerms) geographicRelevance = "weak";
 
   let jurisdictionMatch: DailyWireJurisdictionMatch = "none";
   if (geographicRelevance === "local") jurisdictionMatch = "local";
   else if (texasEvidence) jurisdictionMatch = "texas";
   else if (stateMatches.length) jurisdictionMatch = "state";
-  else if (geographicRelevance === "national" || (input.scope === "national" && (hasUsMarker || officialPeople.length))) {
+  else if (geographicRelevance === "national") {
     jurisdictionMatch = "national";
   }
 
@@ -501,6 +509,9 @@ export function evaluateDailyWireQuality(input: DailyWireQualityInput, duplicate
   }
   if (internationalOnly) reviewReasons.push(`International-only terms without U.S., state, or official match: ${internationalTerms.slice(0, 4).join(", ")}`);
   if (noisyElection) reviewReasons.push("Election-language result has no U.S., state, local, or official match.");
+  if (input.scope === "national" && !hasUsEvidence) {
+    reviewReasons.push("National result has no explicit U.S. federal, state, or known-official match.");
+  }
   if (duplicateScore >= 90) reviewReasons.push("Likely duplicate wire item.");
   if (jurisdictionMatch === "none") reviewReasons.push("No jurisdiction match found.");
   if (geographicRelevance === "none") reviewReasons.push("No geographic relevance found.");
