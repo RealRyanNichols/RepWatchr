@@ -33,6 +33,7 @@ interface CommentSectionProps {
   officialId: string;
   officialName: string;
   storyMode?: boolean;
+  targetPath?: string;
 }
 
 const CORE_COMMENT_FIELDS = "id, content, display_name, county, created_at, user_id";
@@ -91,6 +92,7 @@ export default function CommentSection({
   officialId,
   officialName,
   storyMode = false,
+  targetPath,
 }: CommentSectionProps) {
   const { user, profile, roles } = useAuth();
   const [comments, setComments] = useState<Comment[]>([]);
@@ -310,7 +312,7 @@ export default function CommentSection({
             Sign in with a social profile or email. Verification and moderation rules still apply.
           </p>
           <div className="mx-auto max-w-md">
-            <SocialAuthButtons compact nextPath={`/officials/${officialId}#participate`} />
+            <SocialAuthButtons compact nextPath={targetPath ?? `/officials/${officialId}#participate`} />
           </div>
           <div className="my-4 flex items-center gap-3 text-[11px] font-black uppercase tracking-[0.16em] text-gray-400">
             <span className="h-px flex-1 bg-gray-200" />

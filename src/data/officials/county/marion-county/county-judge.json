@@ -1,8 +1,8 @@
 {
-  "id": "marion-county-judge",
-  "name": "Larry Thompson",
-  "firstName": "Larry",
-  "lastName": "Thompson",
+  "id": "leward-j-lafleur-ii",
+  "name": "Leward J. LaFleur II",
+  "firstName": "Leward",
+  "lastName": "LaFleur",
   "party": "R",
   "level": "county",
   "position": "County Judge",
@@ -10,28 +10,41 @@
   "county": [
     "Marion"
   ],
+  "state": "TX",
   "termStart": "2023-01-01",
   "termEnd": "2027-01-01",
   "contactInfo": {
     "office": "102 W. Austin St., Room 205, Jefferson, TX 75657",
-    "phone": "(903) 665-3971",
-    "email": "county.judge@marion-county.com",
-    "website": "https://www.co.marion.tx.us/county-judge"
+    "phone": "(903) 665-3261",
+    "email": "leward.lafleur@co.marion.tx.us",
+    "website": "https://www.co.marion.tx.us/page/marion.County.Judge",
+    "socialMedia": {
+      "facebook": "https://www.facebook.com/lewardformarioncounty/"
+    }
   },
-  "bio": "Larry Thompson serves as the Marion County Judge, the chief executive and administrative officer of Marion County. The county judge presides over the Commissioners Court and oversees county government operations including budgeting, emergency management, and infrastructure in the Jefferson area.",
-  "campaignPromises": [
-    "Keep Marion County taxes low while maintaining services",
-    "Improve county roads and infrastructure",
-    "Support law enforcement and public safety",
-    "Maintain transparent county government operations",
-    "Plan responsibly for county growth"
-  ],
+  "bio": "Leward J. LaFleur II serves as Marion County Judge, presiding over the Commissioners Court and carrying countywide administrative, budget, emergency-management, criminal-court, and probate responsibilities. Public records also document regional workforce and transportation leadership. RepWatchr is still collecting the role-specific records required for a performance grade.",
   "sourceLinks": [
     {
-      "title": "Public office website",
-      "url": "https://www.co.marion.tx.us/county-judge"
+      "title": "Marion County: County Judge",
+      "url": "https://www.co.marion.tx.us/page/marion.County.Judge"
+    },
+    {
+      "title": "Marion County: 2026 elections and campaign filings",
+      "url": "https://marioncountytaxoffice.com/elections/"
+    },
+    {
+      "title": "Official 2026 Republican primary results",
+      "url": "https://marioncountytaxoffice.com/wp-content/uploads/2026/03/OFFICIAL-RESULTS-REPUBLICAN-PARTY.pdf"
+    },
+    {
+      "title": "Texas OCA: Constitutional county courts",
+      "url": "https://www.txcourts.gov/media/1460595/constitutional-county-courts.pdf"
+    },
+    {
+      "title": "KLTV: Allegations and LaFleur response",
+      "url": "https://www.kltv.com/2026/04/21/marion-county-judge-denies-allegations-unwanted-touching-halloween-party/"
     }
   ],
   "reviewStatus": "needs_source_review",
-  "lastVerifiedAt": "2026-05-01"
+  "lastVerifiedAt": "2026-07-27"
 }

@@ -19,6 +19,7 @@ export type OfficeAccountabilityProfile = {
 const legislativePattern = /\b(?:u\.?s\.?\s+)?(?:state\s+)?(?:representative|senator|delegate|assemblymember|assemblyman|assemblywoman|legislator)\b/i;
 const deliberativePattern = /\b(?:council(?:member|or|man|woman)?|alder(?:man|woman|person)|trustee|school\s+board|board\s+(?:member|president|vice[- ]president))\b/i;
 const localCommissionerPattern = /\bcommissioner\b/i;
+const constitutionalCountyJudgePattern = /\bcounty\s+judge\b/i;
 const judicialPattern = /\b(?:judge|justice|magistrate|judicial)\b/i;
 const prosecutorialPattern = /\b(?:district\s+attorney|prosecutor|prosecuting\s+attorney|state'?s\s+attorney|commonwealth'?s\s+attorney)\b/i;
 
@@ -31,6 +32,18 @@ export function getOfficeAccountabilityProfile(
   official: Pick<Official, "level" | "position">,
 ): OfficeAccountabilityProfile {
   const position = official.position.trim();
+
+  if (official.level === "county" && constitutionalCountyJudgePattern.test(position)) {
+    return {
+      family: "executive_actions",
+      decisionLabel: "County governance record",
+      decisionLabelLower: "Commissioners Court decisions and county administration",
+      pendingHeading: "Applicable county-governance record is not loaded",
+      pendingExplanation:
+        "A Texas constitutional county judge is not measured like a state trial judge. Budgets, Commissioners Court decisions, emergency management, contracts, public access, and the office's limited court record require a role-specific review.",
+      supportsLegislatorGrade: false,
+    };
+  }
 
   if (judicialPattern.test(position)) {
     return {
