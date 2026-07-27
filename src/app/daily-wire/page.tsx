@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import EditorialOpening from "@/components/editorial/EditorialOpening";
 import CopySnippetButton from "@/components/shared/CopySnippetButton";
 import RouteEventTracker from "@/components/shared/RouteEventTracker";
 import ShareButtons from "@/components/shared/ShareButtons";
@@ -268,6 +269,11 @@ export default async function DailyWirePage({
     count: wireClips.filter((clip) => clip.powerChannels.includes(channel)).length,
   }));
   const activeItems = visibleClips.length;
+  const leadClip = visibleClips[0];
+  const leadArticle = fallbackArticles[0];
+  const leadHeadline = leadClip?.title ?? leadArticle?.title ?? "The latest public record signal";
+  const leadScope = leadClip ? scopeLabels[leadClip.scope] : "RepWatchr source desk";
+  const leadTarget = leadClip ? `#clip-${leadClip.id}` : "#wire-records";
 
   const structuredData = {
     "@context": "https://schema.org",
@@ -305,68 +311,74 @@ export default async function DailyWirePage({
         dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
       />
       <main className="mx-auto max-w-7xl px-4 py-8 sm:px-6 lg:px-8">
-        <section className="overflow-hidden rounded-2xl border border-slate-300 bg-white shadow-sm">
-          <div className="h-1.5 w-full bg-[linear-gradient(90deg,#bf0d3e_0%,#bf0d3e_32%,#d6b35a_32%,#d6b35a_44%,#ffffff_44%,#ffffff_58%,#002868_58%,#002868_100%)]" />
-          <div className="grid gap-6 p-5 lg:grid-cols-[1fr_0.82fr] lg:p-7">
-            <div>
-              <p className="text-xs font-black uppercase tracking-[0.18em] text-red-700">
-                Daily Watch Wire
-              </p>
-              <h1 className="mt-3 text-4xl font-black leading-[0.95] tracking-tight text-slate-950 sm:text-6xl">
-                Review-gated leads. Receipts stay attached.
-              </h1>
-              <p className="mt-4 max-w-3xl text-base font-semibold leading-7 text-slate-700">
-                Every hour RepWatchr can search public RSS and news indexes for representatives, school boards, public safety, courts, money, elections, household costs, oversight, ethics, and corruption-risk signals. Items are scored for jurisdiction, geography, source quality, duplicates, and topic fit before they appear here. A wire item is a lead with a receipt, not a RepWatchr finding.
-              </p>
-              <div className="mt-5 flex flex-wrap gap-2">
-                <Link
-                  href="/daily-wire"
-                  className={`rounded-full px-3 py-2 text-xs font-black uppercase tracking-wide transition ${
-                    selectedLane
-                      ? "border border-slate-300 bg-slate-50 text-slate-800 hover:border-red-300 hover:bg-red-50"
-                      : "bg-slate-950 text-white"
-                  }`}
-                >
-                  All wire
-                </Link>
-                {channelOrder.map((channel) => (
-                  <Link
-                    key={channel}
-                    href={`/daily-wire?lane=${channel}`}
-                    className={`rounded-full px-3 py-2 text-xs font-black uppercase tracking-wide transition ${
-                      selectedLane === channel
-                        ? "bg-red-700 text-white"
-                        : "border border-slate-300 bg-slate-50 text-slate-800 hover:border-red-300 hover:bg-red-50"
-                    }`}
-                  >
-                    {channelLabels[channel]}
-                  </Link>
-                ))}
-              </div>
-              <div className="mt-5 flex flex-wrap gap-3">
-                <Link
-                  href="/feed"
-                  className="rounded-xl bg-red-700 px-5 py-3 text-sm font-black uppercase tracking-wide text-white shadow-sm transition hover:-translate-y-0.5 hover:bg-blue-950"
-                >
-                  Open feed
-                </Link>
-                <Link
-                  href="/feedback"
-                  className="rounded-xl border border-amber-200 bg-amber-50 px-5 py-3 text-sm font-black uppercase tracking-wide text-amber-950 transition hover:-translate-y-0.5 hover:border-red-300 hover:bg-white"
-                >
-                  Submit missing source
-                </Link>
-              </div>
-            </div>
+        <EditorialOpening
+          eyebrow="Daily Watch Wire"
+          title="The public record, before the talking points."
+          question="What changed in public power—and what record proves it?"
+          summary="RepWatchr scans public news and record sources for consequential activity, then checks jurisdiction, geography, source quality, duplicates, and topic fit. Each wire item is a lead with a receipt, not a RepWatchr finding."
+          visual={{
+            src: "/images/editorial/washington-accountability-blue-hour.webp",
+            alt: "Press cameras facing the United States Capitol at blue hour",
+            eyebrow: leadScope,
+            headline: leadHeadline,
+            caption:
+              "Original RepWatchr civic artwork. The headline is drawn from the newest source-led wire item or staff story.",
+          }}
+          facts={[
+            { label: selectedLane ? `${channelLabels[selectedLane]} leads` : "Active wire leads", value: activeItems },
+            { label: "Source-linked", value: sourceLinkedCount },
+            { label: "Awaiting review", value: needsReviewCount },
+          ]}
+          primaryAction={{
+            href: leadTarget,
+            label: leadClip ? "Open newest receipt" : "Open latest stories",
+          }}
+          imagePriority
+        />
 
-            <div className="grid grid-cols-2 gap-3">
-              <Metric label="Wire items" value={activeItems} />
-              <Metric label="Sources watched" value={result.sourceCount} />
-              <Metric label="Source-linked" value={sourceLinkedCount} />
-              <Metric label="Needs review" value={needsReviewCount} />
+        <nav
+          aria-label="Daily Watch Wire lanes"
+          className="border-x border-b border-slate-300 bg-white px-5 py-4 shadow-sm sm:px-7"
+        >
+          <div className="flex items-center justify-between gap-4 border-b border-slate-200 pb-3">
+            <p className="text-sm font-bold text-slate-700">
+              Watching {result.sourceCount.toLocaleString()} public sources
+            </p>
+            <div className="flex flex-wrap justify-end gap-x-4 gap-y-2 text-sm font-black">
+              <Link href="/feed" className="text-blue-900 hover:text-red-700">
+                Open feed
+              </Link>
+              <Link href="/feedback" className="text-blue-900 hover:text-red-700">
+                Submit missing source
+              </Link>
             </div>
           </div>
-        </section>
+          <div className="mt-3 flex gap-2 overflow-x-auto pb-1">
+            <Link
+              href="/daily-wire"
+              className={`shrink-0 rounded-full px-3 py-2 text-xs font-black uppercase tracking-wide transition ${
+                selectedLane
+                  ? "border border-slate-300 bg-slate-50 text-slate-800 hover:border-red-300 hover:bg-red-50"
+                  : "bg-slate-950 text-white"
+              }`}
+            >
+              All wire
+            </Link>
+            {channelOrder.map((channel) => (
+              <Link
+                key={channel}
+                href={`/daily-wire?lane=${channel}`}
+                className={`shrink-0 rounded-full px-3 py-2 text-xs font-black uppercase tracking-wide transition ${
+                  selectedLane === channel
+                    ? "bg-red-700 text-white"
+                    : "border border-slate-300 bg-slate-50 text-slate-800 hover:border-red-300 hover:bg-red-50"
+                }`}
+              >
+                {channelLabels[channel]}
+              </Link>
+            ))}
+          </div>
+        </nav>
 
         {!result.configured || result.error ? (
           <section className="mt-6 rounded-2xl border border-amber-300 bg-amber-50 p-5 shadow-sm">
@@ -382,7 +394,7 @@ export default async function DailyWirePage({
           </section>
         ) : null}
 
-        <section className="mt-6 grid gap-5 lg:grid-cols-[minmax(0,1fr)_340px]">
+        <section id="wire-records" className="mt-6 grid scroll-mt-28 gap-5 lg:grid-cols-[minmax(0,1fr)_340px]">
           <div className="space-y-4">
             {visibleClips.length ? (
               visibleClips.map((clip) => <WireCard key={clip.id} clip={clip} />)
@@ -444,16 +456,6 @@ export default async function DailyWirePage({
           </aside>
         </section>
       </main>
-    </div>
-  );
-}
-
-function Metric({ label, value }: { label: string; value: number | string }) {
-  const displayValue = typeof value === "number" ? value.toLocaleString() : value;
-  return (
-    <div className="rounded-xl border border-slate-300 bg-slate-50 p-4">
-      <p className="text-3xl font-black text-slate-950">{displayValue}</p>
-      <p className="mt-1 text-xs font-black uppercase tracking-wide text-red-700">{label}</p>
     </div>
   );
 }
