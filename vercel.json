@@ -2,10 +2,6 @@
   "$schema": "https://openapi.vercel.sh/vercel.json",
   "crons": [
     {
-      "path": "/api/cron/editorial-publishing",
-      "schedule": "15 13 * * *"
-    },
-    {
       "path": "/api/cron/hourly-social-posts",
       "schedule": "0 * * * *"
     },
