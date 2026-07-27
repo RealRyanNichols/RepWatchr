@@ -44,7 +44,7 @@
 
 .heroImage {
   z-index: -3;
-  background-image: url("/images/races/marion-county-judge-2026-hero.webp");
+  background-image: url("/images/races/marion-county-judge-2026-blue-hour.webp");
   background-position: 58% center;
   background-size: cover;
   transform: scale(1.012);
@@ -60,7 +60,10 @@
 .heroInner,
 .opening,
 .candidateSection,
+.profileSection,
+.issueSection,
 .recordSection,
+.ballotSection,
 .pollSection,
 .methodSection,
 .timelineSection,
@@ -102,6 +105,20 @@
   gap: clamp(48px, 8vw, 120px);
   align-items: end;
   margin-top: auto;
+}
+
+.heroImageDisclosure {
+  align-self: flex-end;
+  margin: 20px 0 0;
+  padding: 7px 10px;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  font-size: 9px;
+  font-weight: 760;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.76);
+  background: rgba(6, 16, 30, 0.5);
+  backdrop-filter: blur(10px);
 }
 
 .heroCopy {
@@ -338,6 +355,20 @@
   text-wrap: pretty;
 }
 
+.opening .verificationStamp {
+  width: fit-content;
+  margin-top: 18px;
+  padding: 7px 10px;
+  border: 1px solid rgba(163, 63, 43, 0.24);
+  font-size: 9px;
+  font-weight: 820;
+  letter-spacing: 0.08em;
+  line-height: 1.2;
+  text-transform: uppercase;
+  color: var(--rust);
+  background: #f3e9d8;
+}
+
 .truthBox {
   align-self: start;
   padding: 24px 0 0 28px;
@@ -370,7 +401,10 @@
 }
 
 .candidateSection,
+.profileSection,
+.issueSection,
 .recordSection,
+.ballotSection,
 .pollSection,
 .methodSection,
 .timelineSection,
@@ -395,8 +429,8 @@
 
 .candidate {
   display: grid;
-  grid-template-columns: 150px minmax(0, 1fr);
-  gap: 28px;
+  grid-template-rows: auto 1fr;
+  gap: 26px;
   padding: 40px 0;
 }
 
@@ -410,54 +444,63 @@
 
 .portrait {
   position: relative;
-  display: flex;
-  min-height: 190px;
-  flex-direction: column;
-  justify-content: space-between;
-  padding: 18px;
+  aspect-ratio: 4 / 3;
+  margin: 0;
   overflow: hidden;
   color: white;
-  background:
-    radial-gradient(circle at 50% 20%, rgba(255, 255, 255, 0.2), transparent 36%),
-    linear-gradient(145deg, #3e5d51, #11293f);
+  background: #152b42;
+  box-shadow: 0 18px 42px rgba(25, 33, 41, 0.14);
+}
+
+.portraitImage {
+  object-fit: cover;
 }
 
 .portrait::after {
   position: absolute;
-  inset: auto -20% -50% 10%;
-  height: 150px;
+  z-index: 1;
+  inset: 0;
   content: "";
-  border: 1px solid rgba(255, 255, 255, 0.18);
-  border-radius: 50%;
+  pointer-events: none;
+  background: linear-gradient(180deg, transparent 55%, rgba(7, 16, 29, 0.86) 100%);
 }
 
-.portrait.incumbent {
-  background:
-    radial-gradient(circle at 50% 20%, rgba(255, 255, 255, 0.18), transparent 36%),
-    linear-gradient(145deg, #35475d, #8c3e2e);
-}
-
-.portrait > span {
-  position: relative;
-  z-index: 1;
-  font-family: Fraunces, Georgia, serif;
-  font-size: 52px;
-  font-weight: 650;
-}
-
-.portrait small {
-  position: relative;
-  z-index: 1;
-  max-width: 110px;
+.portrait figcaption {
+  position: absolute;
+  z-index: 2;
+  right: 18px;
+  bottom: 15px;
+  left: 18px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 5px 14px;
+  align-items: center;
   font-size: 9px;
-  font-weight: 700;
   line-height: 1.4;
+}
+
+.portrait figcaption > span {
+  font-weight: 820;
+  letter-spacing: 0.08em;
   text-transform: uppercase;
-  color: rgba(255, 255, 255, 0.68);
+  color: #f1c973;
+}
+
+.portrait figcaption a {
+  color: rgba(255, 255, 255, 0.86);
+  font-weight: 700;
+  text-underline-offset: 3px;
+}
+
+.candidateBody {
+  display: flex;
+  min-height: 100%;
+  flex-direction: column;
 }
 
 .candidateIdentity {
-  align-self: center;
+  min-height: 118px;
 }
 
 .candidateIdentity p {
@@ -481,16 +524,20 @@
   margin-top: 8px;
   color: #5e625f;
   font-size: 14px;
+  line-height: 1.5;
 }
 
-.candidateFacts,
-.candidateLinks {
-  grid-column: 1 / -1;
+.candidateLede {
+  min-height: 104px;
+  margin: 18px 0 0;
+  font-size: 14px;
+  line-height: 1.7;
+  color: #4f5660;
 }
 
 .candidateFacts {
   display: grid;
-  margin: 8px 0 0;
+  margin: 18px 0 0;
 }
 
 .candidateFacts div {
@@ -520,7 +567,9 @@
   display: flex;
   flex-wrap: wrap;
   gap: 8px 18px;
-  align-self: end;
+  margin-top: auto;
+  padding-top: 24px;
+  border-top: 1px solid var(--rule);
 }
 
 .candidateLinks a,
@@ -567,6 +616,280 @@
   font-size: 11px;
   font-weight: 900;
   background: var(--paper);
+}
+
+.profileSection {
+  width: 100%;
+  max-width: none;
+  padding-inline: max(20px, calc((100vw - 1240px) / 2));
+  background: #e6ddcd;
+}
+
+.profileGrid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 24px;
+  margin-top: clamp(44px, 6vw, 72px);
+}
+
+.profileCard {
+  display: flex;
+  min-width: 0;
+  flex-direction: column;
+  border: 1px solid rgba(17, 28, 46, 0.18);
+  border-top: 5px solid var(--navy);
+  background: var(--cream);
+  box-shadow: 0 26px 70px rgba(37, 31, 24, 0.09);
+  scroll-margin-top: 84px;
+}
+
+.profileCard:last-child {
+  border-top-color: var(--rust);
+}
+
+.profileHeader,
+.profileNarrative,
+.profileColumns,
+.profileFooter {
+  padding-inline: clamp(24px, 4vw, 44px);
+}
+
+.profileHeader {
+  padding-top: 38px;
+  padding-bottom: 30px;
+  border-bottom: 1px solid var(--rule);
+}
+
+.profileHeader > p,
+.sourceLabel {
+  margin: 0;
+  font-size: 9px;
+  font-weight: 850;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--rust);
+}
+
+.profileHeader h3 {
+  margin: 10px 0 0;
+  font-size: clamp(34px, 4vw, 50px);
+  font-weight: 630;
+  line-height: 1;
+}
+
+.profileHeader > span {
+  display: block;
+  margin-top: 10px;
+  font-size: 12px;
+  line-height: 1.55;
+  color: #676157;
+}
+
+.profileNarrative {
+  padding-top: 32px;
+  padding-bottom: 30px;
+}
+
+.profileNarrative > p:not(.sourceLabel):not(.attribution) {
+  margin: 14px 0 0;
+  font-family: Fraunces, Georgia, serif;
+  font-size: 21px;
+  line-height: 1.52;
+  color: #263243;
+}
+
+.profileNarrative .attribution {
+  margin: 16px 0 0;
+  padding-left: 14px;
+  border-left: 3px solid var(--gold);
+  font-size: 11px;
+  line-height: 1.6;
+  color: #6e675d;
+}
+
+.profileColumns {
+  display: grid;
+  gap: 0;
+  padding-bottom: 28px;
+}
+
+.profileColumns section {
+  padding: 26px 0;
+  border-top: 1px solid var(--rule);
+}
+
+.profileColumns ul,
+.moneyCard ul {
+  display: grid;
+  gap: 12px;
+  margin: 18px 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.profileColumns li,
+.moneyCard li {
+  position: relative;
+  padding-left: 17px;
+  font-size: 12px;
+  line-height: 1.62;
+  color: #434a52;
+}
+
+.profileColumns li::before,
+.moneyCard li::before {
+  position: absolute;
+  top: 0.65em;
+  left: 0;
+  width: 6px;
+  height: 6px;
+  content: "";
+  border-radius: 50%;
+  background: var(--copper);
+}
+
+.gapBox {
+  margin: auto clamp(24px, 4vw, 44px) 0;
+  padding: 22px;
+  border: 1px solid rgba(163, 63, 43, 0.2);
+  background: #f3e9d7;
+}
+
+.gapBox strong {
+  font-size: 10px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--rust);
+}
+
+.gapBox p {
+  margin: 9px 0 0;
+  font-size: 12px;
+  line-height: 1.62;
+  color: #5f584f;
+}
+
+.profileFooter {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: 24px;
+  align-items: end;
+  margin-top: 28px;
+  padding-top: 25px;
+  padding-bottom: 34px;
+  color: white;
+  background: var(--navy);
+}
+
+.profileCard:last-child .profileFooter {
+  background: #6f3028;
+}
+
+.profileFooter address,
+.profileFooter > div {
+  display: grid;
+  gap: 6px;
+  min-width: 0;
+  font-style: normal;
+}
+
+.profileFooter address > span:first-child {
+  margin-bottom: 3px;
+  font-size: 9px;
+  font-weight: 850;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #f1c973;
+}
+
+.profileFooter address > span:last-child,
+.profileFooter a {
+  overflow-wrap: anywhere;
+  color: rgba(255, 255, 255, 0.83);
+  font-size: 10px;
+  line-height: 1.45;
+  text-underline-offset: 3px;
+}
+
+.profileFooter > div {
+  justify-items: end;
+}
+
+.issueSection {
+  border-top: 1px solid var(--rule);
+}
+
+.issueMatrix {
+  margin-top: 52px;
+  border: 1px solid var(--rule);
+  background: var(--cream);
+  box-shadow: 0 24px 60px rgba(56, 44, 29, 0.07);
+}
+
+.issueHead,
+.issueRow {
+  display: grid;
+  grid-template-columns: minmax(150px, 0.48fr) minmax(0, 1fr) minmax(0, 1fr);
+}
+
+.issueHead {
+  color: white;
+  background: var(--navy);
+}
+
+.issueHead > * {
+  padding: 19px 22px;
+  border-right: 1px solid rgba(255, 255, 255, 0.16);
+  font-size: 10px;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+}
+
+.issueHead > *:last-child {
+  border-right: 0;
+}
+
+.issueRow {
+  border-top: 1px solid var(--rule);
+}
+
+.issueRow > * {
+  margin: 0;
+  padding: 22px;
+  border-right: 1px solid var(--rule);
+  font-size: 12px;
+  line-height: 1.65;
+  color: #4b5158;
+}
+
+.issueRow > *:last-child {
+  border-right: 0;
+}
+
+.issueRow > span {
+  font-family: Fraunces, Georgia, serif;
+  font-size: 18px;
+  font-weight: 650;
+  color: var(--ink);
+  background: #f0e9dc;
+}
+
+.issueRow b {
+  color: var(--rust);
+}
+
+.matrixNote {
+  max-width: 860px;
+  margin: 24px 0 0;
+  font-size: 11px;
+  line-height: 1.7;
+  color: #70685e;
+}
+
+.matrixNote a {
+  color: var(--navy);
+  font-weight: 800;
+  text-underline-offset: 3px;
 }
 
 .recordSection {
@@ -722,6 +1045,169 @@
   font-size: 12px;
   line-height: 1.55;
   color: rgba(255, 255, 255, 0.62);
+}
+
+.ballotSection {
+  border-bottom: 1px solid var(--rule);
+}
+
+.ballotGrid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr)) minmax(270px, 0.8fr);
+  gap: 20px;
+  align-items: stretch;
+  margin-top: 54px;
+}
+
+.ballotCard,
+.moneyCard {
+  padding: clamp(25px, 3.5vw, 38px);
+  border: 1px solid var(--rule);
+  background: var(--cream);
+}
+
+.ballotCard {
+  display: flex;
+  flex-direction: column;
+  border-top: 4px solid var(--pine);
+}
+
+.ballotCard:nth-child(2) {
+  border-top-color: var(--gold);
+}
+
+.statusBadge {
+  width: fit-content;
+  margin: 0;
+  padding: 6px 8px;
+  border-radius: 999px;
+  color: white;
+  background: var(--pine);
+  font-size: 8px;
+  font-weight: 880;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.pendingBadge {
+  color: #3b2a0d;
+  background: #e9c66f;
+}
+
+.ballotCandidate {
+  display: block;
+  margin-top: 22px;
+  font-size: 10px;
+  font-weight: 850;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--rust);
+}
+
+.ballotCard h3,
+.moneyCard h3 {
+  margin: 8px 0 0;
+  font-size: clamp(27px, 3vw, 38px);
+  font-weight: 630;
+  line-height: 1.1;
+}
+
+.ballotCard dl {
+  display: grid;
+  margin: 26px 0 28px;
+  border-top: 1px solid var(--rule);
+}
+
+.ballotCard dl div {
+  display: grid;
+  grid-template-columns: minmax(92px, 0.7fr) minmax(0, 1fr);
+  gap: 16px;
+  padding: 13px 0;
+  border-bottom: 1px solid var(--rule);
+}
+
+.ballotCard dt {
+  font-size: 9px;
+  font-weight: 820;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+  color: #776d61;
+}
+
+.ballotCard dd {
+  margin: 0;
+  font-size: 11px;
+  font-weight: 680;
+  line-height: 1.45;
+  color: #39414b;
+}
+
+.ballotCard > a,
+.moneyCard > a {
+  margin-top: auto;
+  color: var(--navy);
+  font-size: 11px;
+  font-weight: 820;
+  text-underline-offset: 4px;
+}
+
+.moneyCard {
+  color: white;
+  background:
+    linear-gradient(145deg, rgba(16, 40, 68, 0.98), rgba(32, 71, 57, 0.98));
+}
+
+.moneyCard .sourceLabel {
+  color: #edc66f;
+}
+
+.moneyCard > p:not(.sourceLabel) {
+  margin: 20px 0 0;
+  font-size: 12px;
+  line-height: 1.68;
+  color: rgba(255, 255, 255, 0.72);
+}
+
+.moneyCard li {
+  color: rgba(255, 255, 255, 0.83);
+}
+
+.moneyCard > a {
+  display: inline-block;
+  margin-top: 25px;
+  color: white;
+}
+
+.ballotNotice {
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr) auto;
+  gap: 22px;
+  align-items: center;
+  margin-top: 20px;
+  padding: 20px 24px;
+  border: 1px solid rgba(163, 63, 43, 0.22);
+  background: #efe3cf;
+}
+
+.ballotNotice strong {
+  font-size: 10px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--rust);
+}
+
+.ballotNotice p {
+  margin: 0;
+  font-size: 11px;
+  line-height: 1.6;
+  color: #5d574e;
+}
+
+.ballotNotice a {
+  color: var(--navy);
+  font-size: 10px;
+  font-weight: 820;
+  text-underline-offset: 3px;
 }
 
 .pollSection {
@@ -1078,7 +1564,7 @@
 
 .timeline {
   display: grid;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
+  grid-template-columns: repeat(6, minmax(0, 1fr));
   margin: 52px 0 0;
   padding: 0;
   border-top: 3px solid var(--ink);
@@ -1254,8 +1740,24 @@
   .ledger,
   .authorityBand,
   .pollCard,
-  .scoreGrid {
+  .scoreGrid,
+  .profileGrid,
+  .ballotGrid {
     grid-template-columns: 1fr;
+  }
+
+  .profileFooter,
+  .ballotNotice {
+    grid-template-columns: 1fr;
+  }
+
+  .profileFooter > div {
+    justify-items: start;
+  }
+
+  .issueHead,
+  .issueRow {
+    grid-template-columns: 140px minmax(0, 1fr) minmax(0, 1fr);
   }
 
   .pollControls {
@@ -1289,6 +1791,8 @@
   .heroInner,
   .opening,
   .candidateSection,
+  .issueSection,
+  .ballotSection,
   .pollSection,
   .methodSection,
   .discussionSection,
@@ -1297,7 +1801,8 @@
   }
 
   .recordSection,
-  .timelineSection {
+  .timelineSection,
+  .profileSection {
     padding-inline: 14px;
   }
 
@@ -1379,30 +1884,101 @@
   }
 
   .candidate {
-    grid-template-columns: 104px minmax(0, 1fr);
+    grid-template-columns: 1fr;
     gap: 18px;
   }
 
   .portrait {
-    min-height: 150px;
-    padding: 13px;
+    aspect-ratio: 4 / 3;
   }
 
-  .portrait > span {
-    font-size: 38px;
+  .portrait figcaption {
+    right: 12px;
+    bottom: 11px;
+    left: 12px;
   }
 
-  .portrait small {
-    font-size: 7px;
+  .portrait figcaption > span {
+    display: none;
   }
 
   .candidateIdentity h3 {
     font-size: 30px;
   }
 
+  .candidateIdentity,
+  .candidateLede {
+    min-height: 0;
+  }
+
   .candidateFacts div {
     grid-template-columns: 1fr;
     gap: 7px;
+  }
+
+  .profileHeader,
+  .profileNarrative,
+  .profileColumns,
+  .profileFooter {
+    padding-inline: 20px;
+  }
+
+  .gapBox {
+    margin-inline: 20px;
+  }
+
+  .issueMatrix {
+    border: 0;
+    background: transparent;
+    box-shadow: none;
+  }
+
+  .issueHead {
+    display: none;
+  }
+
+  .issueRow {
+    grid-template-columns: 1fr;
+    margin-bottom: 16px;
+    border: 1px solid var(--rule);
+    background: var(--cream);
+  }
+
+  .issueRow > * {
+    border-right: 0;
+    border-bottom: 1px solid var(--rule);
+  }
+
+  .issueRow > *:last-child {
+    border-bottom: 0;
+  }
+
+  .issueRow > p:nth-of-type(1)::before,
+  .issueRow > p:nth-of-type(2)::before {
+    display: block;
+    margin-bottom: 7px;
+    font-size: 8px;
+    font-weight: 850;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #7b7063;
+  }
+
+  .issueRow > p:nth-of-type(1)::before {
+    content: "Dina K. Carroll";
+  }
+
+  .issueRow > p:nth-of-type(2)::before {
+    content: "Leward J. LaFleur II";
+  }
+
+  .ballotCard,
+  .moneyCard {
+    padding: 24px 20px;
+  }
+
+  .ballotNotice {
+    padding: 18px;
   }
 
   .serviceLedger,

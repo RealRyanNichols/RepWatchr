@@ -8,6 +8,7 @@ export type TexasElectionRace = {
   lane: TexasElectionRaceLane;
   region: string;
   electionDate: string;
+  lastUpdatedAt?: string;
   stage: string;
   priority: number;
   summary: string;
@@ -79,6 +80,7 @@ export const TEXAS_ELECTION_RACES: TexasElectionRace[] = [
     lane: "local-watch",
     region: "Marion County",
     electionDate: "November 3, 2026",
+    lastUpdatedAt: "2026-07-27",
     stage: "Declared write-in challenge; qualification pending official confirmation",
     priority: 99,
     summary:

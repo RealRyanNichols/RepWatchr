@@ -413,7 +413,7 @@ function RaceJsonLd({ race }: { race: RaceHubRace }) {
     path: race.href,
     description: race.summary,
     keywords: ["Texas elections", race.shortTitle, race.office, race.region, "public records", "campaign finance"],
-    dateModified: "2026-06-21",
+    dateModified: race.lastUpdatedAt,
   });
   return <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: jsonLd(value) }} />;
 }
@@ -884,7 +884,22 @@ export default async function TexasElectionRacePage({
   const resolution = resolveTexasElectionSlug(raceSlug);
   if (!resolution) notFound();
 
-  if (raceSlug === "marion-county-judge-2026") return <FlagshipRaceExperience />;
+  if (raceSlug === "marion-county-judge-2026" && resolution.kind === "race") {
+    const breadcrumbStructuredData = breadcrumbJsonLd([
+      { name: "RepWatchr", path: "/" },
+      { name: "Elections", path: "/elections" },
+      { name: "Texas", path: "/elections/texas" },
+      { name: resolution.race.shortTitle, path: resolution.race.href },
+    ]);
+
+    return (
+      <>
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: jsonLd(breadcrumbStructuredData) }} />
+        <RaceJsonLd race={resolution.race} />
+        <FlagshipRaceExperience />
+      </>
+    );
+  }
   if (resolution.kind === "county") return <CountyPage county={resolution.county} />;
   if (resolution.kind === "district") return <DistrictPage district={resolution.district} />;
   return <RacePage race={resolution.race} />;
