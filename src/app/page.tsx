@@ -536,7 +536,7 @@ export default async function HomePage() {
                     className="group block min-h-[200px]"
                   >
                     <EditorialThumbnail
-                      message="Jay Dean answers on camera"
+                      message="Jay Dean on camera"
                       eyebrow="Video"
                       support="KETK 2026 profile interview"
                       variant="video"
@@ -544,7 +544,7 @@ export default async function HomePage() {
                       contentClassName="px-3 pb-3"
                       messageClassName="text-lg sm:text-xl"
                     >
-                      {jayDeanWithPhoto?.photo ? (
+                      {jayDeanWithPhoto?.featuredPhoto || jayDeanWithPhoto?.photo ? (
                         <OfficialPhotoImage
                           official={jayDeanWithPhoto}
                           sizes="(min-width: 1024px) 18vw, 50vw"
