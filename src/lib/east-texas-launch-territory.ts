@@ -52,16 +52,19 @@ export function isInEastTexasLaunchTerritory(official: Official) {
     ...EAST_TEXAS_LAUNCH_JURISDICTIONS.schoolDistricts,
   ].map(normalized));
   const counties = official.county.map(normalized);
-  const text = [
+  const structuredTerritoryText = [
     official.jurisdiction,
     official.district,
     official.contactInfo.office,
-    official.bio,
   ].filter(Boolean).join(" ").toLowerCase();
+  const isTexasRecord =
+    official.state?.toUpperCase() === "TX" ||
+    structuredTerritoryText.includes("texas") ||
+    structuredTerritoryText.includes(", tx ");
 
   return (
     counties.some((county) => countyTargets.has(county)) ||
-    [...placeTargets].some((place) => text.includes(place))
+    (isTexasRecord && [...placeTargets].some((place) => structuredTerritoryText.includes(place)))
   );
 }
 
