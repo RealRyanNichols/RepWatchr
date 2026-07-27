@@ -127,6 +127,7 @@ for (const requiredRendererText of [
   "{supportLine}",
   "ImageResponse",
   "REPWATCHR_OG_SIZE",
+  "_vercel_share",
 ]) {
   assert(renderer.includes(requiredRendererText), `Shared OG renderer missing ${requiredRendererText}`);
 }

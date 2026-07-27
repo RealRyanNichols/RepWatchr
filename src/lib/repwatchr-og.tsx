@@ -62,7 +62,16 @@ function fitHeadlineSize(headline: string, hasPortrait: boolean) {
 function assetUrl(pathOrUrl: string, requestUrl?: string) {
   if (pathOrUrl.startsWith("http://") || pathOrUrl.startsWith("https://")) return pathOrUrl;
   if (!requestUrl) return absoluteRepWatchrUrl(pathOrUrl);
-  return new URL(pathOrUrl, requestUrl).toString();
+
+  const request = new URL(requestUrl);
+  const asset = new URL(pathOrUrl, request);
+  const previewShareToken = request.searchParams.get("_vercel_share");
+
+  if (previewShareToken && asset.hostname.endsWith(".vercel.app")) {
+    asset.searchParams.set("_vercel_share", previewShareToken);
+  }
+
+  return asset.toString();
 }
 
 export function renderRepWatchrOgImage(input: RepWatchrOgInput) {
