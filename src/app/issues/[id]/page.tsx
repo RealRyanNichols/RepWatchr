@@ -106,7 +106,7 @@ export async function generateMetadata({
     title: `${category.name} - Texas Issues`,
     description: `How Texas elected officials score on ${category.name.toLowerCase()}. Scorecards, voting records, and accountability.`,
     path: `/issues/${category.id}`,
-    imagePath: buildOgImageUrl("methodology"),
+    imagePath: buildOgImageUrl("methodology", { view: "issue", id: category.id }),
     imageAlt: `${category.name} RepWatchr issue preview`,
   });
 }

@@ -14,7 +14,7 @@ export const metadata: Metadata = buildRepWatchrMetadata({
   description:
     "Choose a state to track media companies, editors, reporters, newsroom leadership, bylines, corrections, and official coverage with source-backed public profiles.",
   path: "/media",
-  imagePath: buildOgImageUrl("home"),
+  imagePath: buildOgImageUrl("home", { page: "media" }),
   imageAlt: "RepWatchr media watch preview",
 });
 

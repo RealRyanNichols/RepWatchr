@@ -1,4 +1,5 @@
 import { createClient } from "@supabase/supabase-js";
+import { toEditorialThumbnailMessage } from "@/lib/editorial-visuals";
 import type { NewsArticle, NewsPowerChannel, NewsScope, NewsTag, SourceLink } from "@/types";
 
 type ArticleRow = {
@@ -28,6 +29,7 @@ function toNewsArticle(row: ArticleRow): NewsArticle {
   return {
     id: row.slug,
     title: row.title,
+    thumbnailMessage: toEditorialThumbnailMessage(row.title),
     summary: row.dek,
     content: row.content,
     author: row.author,
@@ -70,4 +72,3 @@ export async function getPublishedArticles(limit = 100): Promise<NewsArticle[]> 
 export async function getPublishedArticle(slug: string): Promise<NewsArticle | undefined> {
   return (await getPublishedArticles(100)).find((article) => article.id === slug);
 }
-

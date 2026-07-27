@@ -7,7 +7,7 @@ export const metadata: Metadata = buildRepWatchrMetadata({
   description:
     "About RepWatchr, the Texas public-record map for officials, school boards, votes, sources, and citizen accountability.",
   path: "/about",
-  imagePath: buildOgImageUrl("home"),
+  imagePath: buildOgImageUrl("home", { page: "about" }),
   imageAlt: "About RepWatchr preview",
 });
 

@@ -8,7 +8,7 @@ export const metadata: Metadata = buildRepWatchrMetadata({
   description:
     "Build a clean source packet from one public URL, save it to the RepWatchr review queue, and copy or download the receipt.",
   path: "/free-packet",
-  imagePath: buildOgImageUrl("source-packet", { target: "Free Source Packet Builder" }),
+  imagePath: buildOgImageUrl("source-packet", { view: "free-packet" }),
   imageAlt: "RepWatchr free source packet builder preview",
 });
 

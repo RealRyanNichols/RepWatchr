@@ -399,6 +399,15 @@ main {
   animation-play-state: paused;
 }
 
+.repwatchr-live-wire-marquee {
+  animation: repwatchr-marquee 58s linear infinite;
+}
+
+.repwatchr-live-wire-marquee:hover,
+.repwatchr-live-wire-marquee:focus-within {
+  animation-play-state: paused;
+}
+
 .repwatchr-filter-scroll {
   scrollbar-width: none;
 }
@@ -417,7 +426,8 @@ main {
 }
 
 @media (prefers-reduced-motion: reduce) {
-  .repwatchr-profile-marquee {
+  .repwatchr-profile-marquee,
+  .repwatchr-live-wire-marquee {
     animation: none;
   }
 

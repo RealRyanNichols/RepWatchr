@@ -59,7 +59,7 @@ export async function generateMetadata({
       ? `Browse source-backed ${levelLabel.toLowerCase()} official profiles for ${scope}. Compare voting records, public sources, funding data, and records still being researched.`
       : "Search and filter RepWatchr elected-official profiles by state, county, city, office level, party, public sources, funding data, and voting records.",
     path: officialSearchCanonicalPath(params),
-    imagePath: buildOgImageUrl("home"),
+    imagePath: buildOgImageUrl("home", { page: "officials" }),
     imageAlt: "RepWatchr officials directory preview",
     robots: isIndexable ? undefined : { index: false, follow: true },
   });

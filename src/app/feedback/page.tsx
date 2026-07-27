@@ -11,7 +11,7 @@ export const metadata: Metadata = {
     description:
       "Send RepWatchr a public source, correction, roster, vote, filing, meeting record, or missing official for review.",
     path: "/submit-source",
-    imagePath: buildOgImageUrl("source-packet"),
+    imagePath: buildOgImageUrl("source-packet", { view: "feedback" }),
     imageAlt: "RepWatchr source packet preview",
   }),
 };

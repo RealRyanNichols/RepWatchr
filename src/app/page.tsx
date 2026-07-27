@@ -1,12 +1,18 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import Link from "next/link";
-import { getAllOfficials, getScoreCard, getIssueCategories, getAllNews, getRedFlags, getRepWatchrDataStats, getOfficialById } from "@/lib/data";
+import { getAllOfficials, getScoreCard, getIssueCategories, getAllNews, getRepWatchrDataStats, getOfficialById } from "@/lib/data";
 import { getSchoolBoardStats } from "@/lib/school-board-research";
 import OfficialCard from "@/components/officials/OfficialCard";
+import EditorialThumbnail from "@/components/shared/EditorialThumbnail";
 import FarettaSearchBox from "@/components/shared/FarettaSearchBox";
 import OfficialPhotoImage, { FEATURED_OFFICIAL_PHOTO_QUALITY } from "@/components/shared/OfficialPhotoImage";
 import NextUsefulMove from "@/components/shared/NextUsefulMove";
+import { getOfficialVerifiedBrief } from "@/data/official-verified-briefs";
 import { getRepWatchrServices } from "@/data/repwatchr-services";
+import { getDailyWireClips, type DailyWireClip } from "@/lib/daily-wire";
+import { articleThumbnailMessage, toEditorialThumbnailMessage } from "@/lib/editorial-visuals";
+import { getPublishedArticles } from "@/lib/published-articles";
 import { buildOgImageUrl, buildRepWatchrMetadata } from "@/lib/repwatchr-seo";
 import type { NewsArticle, Official } from "@/types";
 
@@ -129,133 +135,215 @@ function officialWithSafePhoto(official: Official): Official {
   return { ...official, photo: undefined };
 }
 
-function ProfileTicker({ officials }: { officials: Official[] }) {
-  const rows = [...officials, ...officials];
+type HomeDeskItem = {
+  id: string;
+  title: string;
+  summary: string;
+  href: string;
+  sourceName: string;
+  publishedAt: string | null;
+  lane: string;
+};
+
+function articleScope(article: NewsArticle) {
+  if (article.scope) return article.scope;
+  return article.state?.toUpperCase() === "TX" ? "texas" : "national";
+}
+
+function storyDateLabel(value: string | null) {
+  if (!value) return "Date pending";
+  const date = new Date(value);
+  if (Number.isNaN(date.getTime())) return "Date pending";
+  return date.toLocaleDateString("en-US", { month: "short", day: "numeric" });
+}
+
+function wireLaneLabel(clip: DailyWireClip) {
+  if (clip.jurisdictionMatch === "local") return "East Texas";
+  if (clip.jurisdictionMatch === "texas") return "Texas";
+  if (clip.jurisdictionMatch === "national") return "Washington";
+  return "State watch";
+}
+
+function homeDeskItemFromWire(clip: DailyWireClip): HomeDeskItem {
+  return {
+    id: `wire-${clip.id}`,
+    title: clip.title,
+    summary: clip.summary,
+    href: `/daily-wire#clip-${clip.id}`,
+    sourceName: clip.sourceName,
+    publishedAt: clip.publishedAt,
+    lane: wireLaneLabel(clip),
+  };
+}
+
+function homeDeskItemFromArticle(article: NewsArticle): HomeDeskItem {
+  const scope = articleScope(article);
+  return {
+    id: `article-${article.id}`,
+    title: article.title,
+    summary: article.summary,
+    href: `/news/${article.id}`,
+    sourceName: article.sourceName ?? "RepWatchr source desk",
+    publishedAt: article.publishedAt,
+    lane: scope === "national" ? "Washington" : scope === "east-texas" ? "East Texas" : "Texas",
+  };
+}
+
+function LiveDeskTicker({ items }: { items: HomeDeskItem[] }) {
+  if (!items.length) return null;
+  const rows = [...items, ...items];
 
   return (
-    <div className="overflow-hidden border-y border-slate-200 bg-white">
-      <div className="repwatchr-profile-marquee flex w-max gap-3 py-3">
-        {rows.map((official, index) => (
+    <div className="grid grid-cols-[auto_minmax(0,1fr)] border-y border-red-500/35 bg-[#07101f] text-white">
+      <div className="relative z-10 grid place-items-center bg-red-700 px-4 text-[11px] font-black uppercase tracking-[0.16em] sm:px-6">
+        Live wire
+      </div>
+      <div className="overflow-hidden">
+        <div className="repwatchr-live-wire-marquee flex w-max items-center py-2.5">
+          {rows.map((item, index) => (
           <Link
-            key={`${official.id}-${index}`}
-            href={`/officials/${official.id}`}
-            className="group flex min-w-[210px] items-center gap-3 rounded-full border border-slate-200 bg-slate-50 py-2 pl-2 pr-4 shadow-sm transition hover:border-blue-300 hover:bg-blue-50"
+            key={`${item.id}-${index}`}
+            href={item.href}
+            className="group flex min-w-[360px] max-w-[540px] items-center gap-3 border-r border-white/15 px-5 text-sm font-bold text-slate-100 transition hover:bg-white/5 hover:text-white"
           >
-            <div className="relative h-12 w-12 shrink-0 overflow-hidden rounded-full border border-white bg-slate-200 shadow-sm">
-              <OfficialPhotoImage
-                official={official}
-                sizes="96px"
-                className="object-cover transition duration-300 group-hover:scale-110"
-                fallbackClassName="grid h-full w-full place-items-center text-xs font-black text-slate-700"
-              />
-            </div>
-            <div className="min-w-0">
-              <p className="truncate text-sm font-black text-slate-950 group-hover:text-blue-800">
-                {official.name}
-              </p>
-              <p className="truncate text-[11px] font-bold text-slate-500">
-                {official.position} / {official.district ?? official.jurisdiction}
-              </p>
-            </div>
+            <span className="shrink-0 text-[10px] font-black uppercase tracking-[0.14em] text-[#e1be64]">
+              {item.lane}
+            </span>
+            <span className="line-clamp-1">{item.title}</span>
           </Link>
         ))}
+        </div>
       </div>
     </div>
   );
 }
 
-function WatchBoardCard({
-  official,
-  score,
-  redFlags,
-  preload = false,
-}: {
-  official: Official;
-  score?: number;
-  redFlags: number;
-  preload?: boolean;
-}) {
-  return (
-    <Link
-      href={`/officials/${official.id}`}
-      className="group grid grid-cols-[56px_1fr_auto] items-center gap-3 rounded-xl border border-slate-300 bg-white p-2.5 shadow-sm transition hover:-translate-y-0.5 hover:border-red-300 hover:shadow-md"
-    >
-      <div className="relative h-14 w-14 overflow-hidden rounded-xl border border-slate-200 bg-slate-100">
-        <OfficialPhotoImage
-          official={official}
-          sizes="112px"
-          preload={preload}
-          quality={FEATURED_OFFICIAL_PHOTO_QUALITY}
-          className="object-cover transition duration-300 group-hover:scale-105"
-          fallbackClassName="grid h-full w-full place-items-center text-sm font-black text-slate-700"
-        />
-      </div>
-      <div className="min-w-0">
-        <p className="truncate text-sm font-black text-slate-950 group-hover:text-red-700">
-          {official.name}
-        </p>
-        <p className="truncate text-[11px] font-bold text-slate-500">
-          {official.position} / {official.district ?? official.jurisdiction}
-        </p>
-        <p className="mt-1 text-[11px] font-black uppercase tracking-wide text-blue-800">
-          {redFlags} flag{redFlags === 1 ? "" : "s"} loaded
-        </p>
-      </div>
-      <div className="text-right">
-        <p className="text-[10px] font-black uppercase tracking-wide text-slate-500">
-          Score
-        </p>
-        <p className="text-xl font-black text-red-700">
-          {typeof score === "number" ? score : "Open"}
-        </p>
-      </div>
-    </Link>
-  );
-}
-
 function HomeStoryVisual({ article }: { article: NewsArticle }) {
+  const articleImage = article.imageUrl?.startsWith("/") ? article.imageUrl : undefined;
   const officialsWithPhotos = article.officialIds
     .map((id) => getOfficialById(id))
     .filter(isOfficial)
     .map(officialWithSafePhoto)
     .filter((official) => official.photo)
     .slice(0, 3);
+  const message = articleThumbnailMessage(article);
+  const variant = articleScope(article) === "national" ? "federal" : "local";
+
+  if (articleImage) {
+    return (
+      <EditorialThumbnail
+        message={message}
+        eyebrow={article.locationLabel ?? "RepWatchr story"}
+        support={article.sourceName ? `Source: ${article.sourceName}` : "Open the sourced record"}
+        variant={variant}
+        className="aspect-video rounded-sm border border-slate-300 sm:aspect-square"
+        contentClassName="px-3 pb-3"
+        messageClassName="text-base sm:text-lg"
+      >
+        <Image
+          src={articleImage}
+          alt={article.imageAlt ?? `${article.title} visual`}
+          fill
+          sizes="(min-width: 640px) 132px, 100vw"
+          quality={FEATURED_OFFICIAL_PHOTO_QUALITY}
+          className="object-cover"
+        />
+      </EditorialThumbnail>
+    );
+  }
 
   if (!officialsWithPhotos.length) {
     return (
-      <div className="grid aspect-video place-items-center rounded-xl bg-slate-950 p-3 text-center sm:aspect-square">
-        <p className="text-[10px] font-black uppercase tracking-[0.18em] text-amber-300">Story</p>
-        <p className="mt-2 text-2xl font-black text-white">RW</p>
-      </div>
+      <EditorialThumbnail
+        message={message}
+        eyebrow={article.locationLabel ?? "RepWatchr story"}
+        support={article.sourceName ? `Source: ${article.sourceName}` : "Open the sourced record"}
+        variant={variant}
+        className="aspect-video rounded-sm sm:aspect-square"
+        contentClassName="px-3 pb-3"
+        messageClassName="text-base sm:text-lg"
+      />
     );
   }
 
   return (
-    <div className="grid aspect-video overflow-hidden rounded-xl border border-slate-300 bg-slate-950 sm:aspect-square">
+    <EditorialThumbnail
+      message={message}
+      eyebrow={article.locationLabel ?? "RepWatchr story"}
+      support={article.sourceName ? `Source: ${article.sourceName}` : "Open the sourced record"}
+      variant={variant}
+      className="aspect-video rounded-sm border border-slate-300 sm:aspect-square"
+      contentClassName="px-3 pb-3"
+      messageClassName="text-base sm:text-lg"
+    >
       <div className="grid h-full grid-cols-3">
-        {officialsWithPhotos.map((official) => (
-          <div key={official.id} className="relative min-h-0 border-r border-white/10 last:border-r-0">
-            <OfficialPhotoImage
-              official={official}
-              sizes="(min-width: 640px) 96px, 33vw"
-              quality={FEATURED_OFFICIAL_PHOTO_QUALITY}
-              className="object-cover opacity-95"
-            />
-            <div className="absolute inset-x-0 bottom-0 bg-slate-950/80 px-1.5 py-1">
-              <p className="truncate text-[9px] font-black text-white">{official.lastName}</p>
+          {officialsWithPhotos.map((official) => (
+            <div key={official.id} className="relative min-h-0 border-r border-white/10 last:border-r-0">
+              <OfficialPhotoImage
+                official={official}
+                sizes="(min-width: 640px) 96px, 33vw"
+                quality={FEATURED_OFFICIAL_PHOTO_QUALITY}
+                className="object-cover opacity-95"
+              />
             </div>
-          </div>
-        ))}
+          ))}
       </div>
-    </div>
+    </EditorialThumbnail>
   );
 }
 
-export default function HomePage() {
+export default async function HomePage() {
   const officials = getAllOfficials();
   const issueCategories = getIssueCategories();
   const schoolBoardStats = getSchoolBoardStats();
   const dataStats = getRepWatchrDataStats();
+  const staticArticles = getAllNews();
+  const [databaseArticles, wireResult] = await Promise.all([
+    getPublishedArticles(20),
+    getDailyWireClips(24),
+  ]);
+  const articleMap = new Map<string, NewsArticle>();
+  for (const article of [...staticArticles, ...databaseArticles]) articleMap.set(article.id, article);
+  const allNews = [...articleMap.values()].sort(
+    (a, b) => new Date(b.publishedAt).getTime() - new Date(a.publishedAt).getTime(),
+  );
+  const latestNews = allNews.slice(0, 3);
+  const trustedWireClips = wireResult.clips
+    .filter((clip) => clip.publicStatus === "source_linked")
+    .filter((clip) => ["local", "texas", "national"].includes(clip.jurisdictionMatch))
+    .filter((clip) => clip.geographicRelevance !== "weak" && clip.qualityScore >= 60);
+  const nationalLeadWire = trustedWireClips.find((clip) => clip.jurisdictionMatch === "national");
+  const nationalLeadArticle =
+    allNews.find((article) => articleScope(article) === "national") ?? allNews[0];
+  const leadItem = nationalLeadWire
+    ? homeDeskItemFromWire(nationalLeadWire)
+    : nationalLeadArticle
+      ? homeDeskItemFromArticle(nationalLeadArticle)
+      : {
+          id: "washington-watch",
+          title: "Washington decisions, votes, and public records",
+          summary: "Open the latest federal accountability record.",
+          href: "/daily-wire",
+          sourceName: "RepWatchr source desk",
+          publishedAt: null,
+          lane: "Washington",
+        };
+  const tickerMap = new Map<string, HomeDeskItem>();
+  for (const item of [
+    ...trustedWireClips.slice(0, 8).map(homeDeskItemFromWire),
+    ...allNews.slice(0, 6).map(homeDeskItemFromArticle),
+  ]) {
+    tickerMap.set(item.title.toLowerCase(), item);
+  }
+  const tickerItems = [...tickerMap.values()].slice(0, 10);
+  const jayDean = getOfficialById("jay-dean");
+  const jayDeanWithPhoto = jayDean ? officialWithSafePhoto(jayDean) : undefined;
+  const jayDeanMedia = getOfficialVerifiedBrief("jay-dean")?.media;
+  const socialPulse = allNews
+    .flatMap((article) =>
+      (article.publicPostEmbeds ?? []).map((post) => ({ article, post })),
+    )
+    .find(({ post }) => post.platform === "x");
   const electedProfileCount = dataStats.nonSchoolOfficialFiles + schoolBoardStats.candidates;
   const allPublicProfileCount = electedProfileCount + dataStats.publicPowerProfiles;
   const allPublicSourceUrls = dataStats.publicSourceUrls + schoolBoardStats.sourceCount;
@@ -283,31 +371,6 @@ export default function HomePage() {
     },
   ];
 
-  const photoOfficials = officials
-    .filter((official) => official.photo && (official.level === "federal" || official.level === "state"))
-    .map(officialWithSafePhoto)
-    .filter((official) => official.photo)
-    .slice(0, 28);
-
-  const watchBoardSignals = officials
-    .filter((official) => official.photo && (official.level === "federal" || official.level === "state"))
-    .map(officialWithSafePhoto)
-    .filter((official) => official.photo)
-    .map((official) => {
-      const scoreCard = getScoreCard(official.id);
-      const redFlagCount = getRedFlags(official.id).length;
-      return {
-        official,
-        score: scoreCard?.overall,
-        redFlagCount,
-        heat: redFlagCount * 18 + (scoreCard ? 100 - scoreCard.overall : 0),
-      };
-    })
-    .filter(({ score, redFlagCount }) => typeof score === "number" || redFlagCount > 0)
-    .sort((a, b) => b.heat - a.heat);
-
-  const watchBoardOfficials = watchBoardSignals.slice(0, 4);
-  const latestNews = getAllNews().slice(0, 3);
   const serviceHighlights = getRepWatchrServices().slice(0, 3);
 
   const featuredOfficials = officials
@@ -388,109 +451,187 @@ export default function HomePage() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(homeStructuredData) }}
       />
-      {/* Hero Section */}
-      <section className="relative overflow-hidden border-b border-blue-100 bg-[linear-gradient(135deg,#ffffff_0%,#eef4ff_50%,#fff7ed_100%)]">
-        <div className="grid h-2 grid-cols-3">
-          <div className="bg-red-700" />
-          <div className="bg-white" />
-          <div className="bg-blue-900" />
-        </div>
-        <div className="relative mx-auto grid max-w-7xl items-start gap-5 px-4 py-6 sm:px-6 sm:py-8 lg:grid-cols-[minmax(0,1fr)_minmax(380px,0.82fr)] lg:px-8 lg:py-5">
-          <div className="flex flex-col justify-start">
-            <div className="flex flex-wrap items-center gap-2">
-              <span className="rounded-full bg-red-700 px-3 py-1 text-xs font-black uppercase tracking-wide text-white shadow-sm">
-                Accountability loop live
-              </span>
-              <span className="rounded-full border border-blue-200 bg-white px-3 py-1 text-xs font-black uppercase tracking-wide text-blue-950 shadow-sm">
-                {formatNumber(dataStats.officialsWithPhotos)} faces loaded
-              </span>
-              <span className="rounded-full border border-amber-200 bg-amber-50 px-3 py-1 text-xs font-black uppercase tracking-wide text-amber-900 shadow-sm">
-                Source-backed
-              </span>
+      {/* Live accountability desk */}
+      <section className="overflow-hidden border-b border-slate-800 bg-[#050c17] text-white">
+        <div className="h-1.5 bg-[linear-gradient(90deg,#b91c1c_0%,#b91c1c_33%,#d6b35a_33%,#d6b35a_50%,#0f3a73_50%,#0f3a73_100%)]" />
+        <LiveDeskTicker items={tickerItems} />
+
+        <div className="mx-auto max-w-[1440px] px-3 py-4 sm:px-5 lg:px-7">
+          <div className="mb-4 flex flex-col gap-3 border-b border-white/15 pb-4 sm:flex-row sm:items-end sm:justify-between">
+            <div>
+              <p className="text-[11px] font-black uppercase tracking-[0.2em] text-[#e1be64]">
+                RepWatchr live desk
+              </p>
+              <h1 className="mt-1 font-serif text-3xl font-black leading-none tracking-[-0.035em] text-white sm:text-4xl">
+                East Texas. Texas. Washington.
+              </h1>
             </div>
-            <h1 className="mt-5 max-w-4xl text-5xl font-black leading-[0.92] tracking-tight text-blue-950 sm:text-6xl lg:text-8xl">
-              Put your officials{" "}
-              <span className="block text-red-700">on the record.</span>
-            </h1>
-            <p className="mt-4 max-w-3xl text-base font-semibold leading-7 text-blue-950/75 sm:text-lg">
-              Start here: search a name, pick the public lane, check the strongest record,
-              or send the missing source. Every section below has one job: facts, stories,
-              lanes, issues, faces, services, or source intake.
-            </p>
-            <div className="mt-5 max-w-2xl">
-              <FarettaSearchBox compact placeholder="Search an official, school board, vote, funder, red flag, or record..." />
-            </div>
-            <div className="mt-5 grid gap-2 sm:grid-cols-2 lg:grid-cols-4">
+            <div className="flex flex-wrap gap-2 text-xs font-black">
               <Link
-                href="/officials"
-                className="rounded-xl bg-red-700 px-5 py-4 text-center text-sm font-black uppercase tracking-wide text-white shadow-lg shadow-red-900/20 transition hover:-translate-y-0.5 hover:bg-blue-900"
+                href="/daily-wire"
+                className="border border-red-500/60 bg-red-700 px-4 py-2.5 text-white transition hover:bg-red-600"
               >
-                Find an official
+                Open live wire
               </Link>
               <Link
-                href="/school-boards"
-                className="rounded-xl border border-blue-200 bg-white px-5 py-4 text-center text-sm font-black uppercase tracking-wide text-blue-950 shadow-sm transition hover:-translate-y-0.5 hover:border-blue-400 hover:bg-blue-50"
+                href="/east-texas"
+                className="border border-white/20 bg-white/5 px-4 py-2.5 text-white transition hover:bg-white/10"
               >
-                School boards
-              </Link>
-              <Link
-                href="/submit-source"
-                className="rounded-xl border border-amber-200 bg-amber-50 px-5 py-4 text-center text-sm font-black uppercase tracking-wide text-amber-950 shadow-sm transition hover:-translate-y-0.5 hover:border-amber-400 hover:bg-amber-100"
-              >
-                Submit source
-              </Link>
-              <Link
-                href="/elections"
-                className="rounded-xl border border-slate-300 bg-slate-950 px-5 py-4 text-center text-sm font-black uppercase tracking-wide text-white shadow-sm transition hover:-translate-y-0.5 hover:border-red-300 hover:bg-red-700"
-              >
-                Election hub
+                East Texas desk
               </Link>
             </div>
           </div>
 
-          <div className="grid gap-3">
-            <div className="rounded-2xl border border-slate-300 bg-slate-950 p-4 text-white shadow-xl shadow-blue-950/20">
-              <div className="flex items-center justify-between gap-3">
-                <div>
-                  <p className="text-xs font-black uppercase tracking-[0.18em] text-amber-300">Record board</p>
-                  <h2 className="mt-1 text-2xl font-black">Profiles with a reason to open.</h2>
-                </div>
-                <Link href="/red-flags" className="shrink-0 rounded-full bg-red-700 px-3 py-1.5 text-xs font-black text-white transition hover:bg-red-600">
-                  Red flags
-                </Link>
-              </div>
-              <div className="mt-4 grid gap-2">
-                {watchBoardOfficials.map(({ official, score, redFlagCount }, index) => (
-                  <WatchBoardCard
-                    key={official.id}
-                    official={official}
-                    score={score}
-                    redFlags={redFlagCount}
-                    preload={index < 2}
+          <div className="grid gap-3 lg:grid-cols-[minmax(0,1.35fr)_minmax(360px,0.65fr)]">
+            <Link href={leadItem.href} className="group block min-h-[360px] lg:min-h-[510px]">
+              <EditorialThumbnail
+                message={toEditorialThumbnailMessage(leadItem.title, { maxWords: 11, maxCharacters: 78 })}
+                eyebrow="Washington watch"
+                support={`${leadItem.sourceName} â€¢ ${storyDateLabel(leadItem.publishedAt)}`}
+                variant="federal"
+                className="h-full border border-white/15"
+                contentClassName="px-5 pb-6 sm:px-7 sm:pb-7"
+                messageClassName="max-w-[21ch] text-3xl sm:text-5xl lg:text-6xl"
+              >
+                <Image
+                  src="/images/editorial/washington-accountability-blue-hour.webp"
+                  alt="The United States Capitol and press cameras at blue hour"
+                  fill
+                  priority
+                  sizes="(min-width: 1024px) 66vw, 100vw"
+                  className="object-cover transition duration-500 group-hover:scale-[1.02]"
+                />
+              </EditorialThumbnail>
+            </Link>
+
+            <div className="grid gap-3">
+              <Link
+                href="/elections/texas/marion-county-judge-2026"
+                className="group block min-h-[245px]"
+              >
+                <EditorialThumbnail
+                  message="Who should lead Marion County?"
+                  eyebrow="East Texas race"
+                  support="Dina Carroll vs. Leward LaFleur â€¢ Community poll"
+                  variant="local"
+                  className="h-full border border-[#c87443]/60"
+                  messageClassName="text-2xl sm:text-3xl"
+                >
+                  <Image
+                    src="/images/races/marion-county-judge-2026-hero.webp"
+                    alt="Illustrated Marion County courthouse, pine country, and a judge's gavel"
+                    fill
+                    sizes="(min-width: 1024px) 34vw, 100vw"
+                    className="object-cover transition duration-500 group-hover:scale-[1.02]"
                   />
-                ))}
+                </EditorialThumbnail>
+              </Link>
+
+              <div className="grid gap-3 sm:grid-cols-2">
+                {jayDeanMedia ? (
+                  <a
+                    href={jayDeanMedia.originalUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="group block min-h-[200px]"
+                  >
+                    <EditorialThumbnail
+                      message="Jay Dean answers on camera"
+                      eyebrow="Video"
+                      support="KETK 2026 profile interview"
+                      variant="video"
+                      className="h-full border border-white/15"
+                      contentClassName="px-3 pb-3"
+                      messageClassName="text-lg sm:text-xl"
+                    >
+                      {jayDeanWithPhoto?.photo ? (
+                        <OfficialPhotoImage
+                          official={jayDeanWithPhoto}
+                          sizes="(min-width: 1024px) 18vw, 50vw"
+                          quality={FEATURED_OFFICIAL_PHOTO_QUALITY}
+                          className="object-cover object-top opacity-90 transition duration-500 group-hover:scale-[1.03]"
+                        />
+                      ) : null}
+                    </EditorialThumbnail>
+                  </a>
+                ) : (
+                  <Link href="/officials/jay-dean" className="block min-h-[200px]">
+                    <EditorialThumbnail
+                      message="Open Jay Dean's public record"
+                      eyebrow="East Texas profile"
+                      variant="video"
+                      className="h-full border border-white/15"
+                      contentClassName="px-3 pb-3"
+                      messageClassName="text-lg sm:text-xl"
+                    />
+                  </Link>
+                )}
+
+                {socialPulse ? (
+                  <a
+                    href={socialPulse.post.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="block min-h-[200px]"
+                  >
+                    <EditorialThumbnail
+                      message={toEditorialThumbnailMessage(
+                        socialPulse.article.thumbnailMessage || socialPulse.article.title,
+                      )}
+                      eyebrow="Social pulse"
+                      support={`${socialPulse.post.author} on X â€¢ Open the public post`}
+                      variant="social"
+                      className="h-full border border-sky-400/35"
+                      contentClassName="px-3 pb-3"
+                      messageClassName="text-lg sm:text-xl"
+                    />
+                  </a>
+                ) : (
+                  <Link href="/feed" className="block min-h-[200px]">
+                    <EditorialThumbnail
+                      message="Follow the sourced political conversation"
+                      eyebrow="Social pulse"
+                      support="Public posts stay separate from verified facts"
+                      variant="social"
+                      className="h-full border border-sky-400/35"
+                      contentClassName="px-3 pb-3"
+                      messageClassName="text-lg sm:text-xl"
+                    />
+                  </Link>
+                )}
               </div>
-              <p className="mt-3 text-xs font-semibold leading-5 text-slate-300">
-                This board is for records with visible friction: a score, red flag, vote trail,
-                funding lead, or source gap worth inspecting now.
+            </div>
+          </div>
+
+          <div className="mt-3 grid gap-3 border-y border-white/15 bg-white/[0.04] p-3 lg:grid-cols-[220px_minmax(0,1fr)_auto] lg:items-center">
+            <div>
+              <p className="text-[10px] font-black uppercase tracking-[0.18em] text-red-300">
+                Search the record
+              </p>
+              <p className="mt-1 text-sm font-bold text-slate-300">
+                Names, offices, votes, money, and sources
               </p>
             </div>
-
-            <div className="grid gap-3 sm:grid-cols-2">
-              <Link href="/elections/texas/contribute" className="rounded-xl border border-red-200 bg-white p-4 shadow-sm transition hover:-translate-y-0.5 hover:border-red-400 hover:bg-red-50 hover:shadow-md">
-                <p className="text-xs font-black uppercase tracking-wide text-red-700">Citizen pressure</p>
-                <h3 className="mt-1 text-lg font-black text-blue-950">Build a source packet</h3>
-                <p className="mt-1 text-sm font-semibold leading-5 text-slate-600">Package the public source, target, dates, and missing record without waiting on accounts.</p>
+            <FarettaSearchBox
+              compact
+              placeholder="Search an official, judge, county office, vote, funder, or public record..."
+            />
+            <div className="grid grid-cols-2 gap-2 text-center text-[11px] font-black sm:flex">
+              <Link href="/officials" className="border border-white/15 px-3 py-2.5 text-white hover:bg-white/10">
+                Officials
               </Link>
-              <Link href="/methodology" className="rounded-xl border border-blue-200 bg-white p-4 shadow-sm transition hover:-translate-y-0.5 hover:border-blue-400 hover:bg-blue-50 hover:shadow-md">
-                <p className="text-xs font-black uppercase tracking-wide text-blue-800">Trust shield</p>
-                <h3 className="mt-1 text-lg font-black text-blue-950">Show the receipts</h3>
-                <p className="mt-1 text-sm font-semibold leading-5 text-slate-600">Every claim should point back to a source voters can inspect.</p>
+              <Link href="/elections" className="border border-white/15 px-3 py-2.5 text-white hover:bg-white/10">
+                Elections
+              </Link>
+              <Link href="/news" className="border border-white/15 px-3 py-2.5 text-white hover:bg-white/10">
+                Top stories
+              </Link>
+              <Link href="/submit-source" className="border border-[#d6b35a]/50 px-3 py-2.5 text-[#f3d47c] hover:bg-white/10">
+                Send a tip
               </Link>
             </div>
           </div>
         </div>
-        <ProfileTicker officials={photoOfficials} />
       </section>
 
       <section className="border-b border-blue-100 bg-white">
@@ -609,242 +750,4 @@ export default function HomePage() {
                 href="/officials"
                 className="rounded-xl border border-blue-200 bg-white px-5 py-3 text-sm font-black uppercase tracking-wide text-blue-950 transition hover:-translate-y-0.5 hover:border-red-300 hover:bg-blue-50"
               >
-                Find a profile
-              </Link>
-            </div>
-          </div>
-          <div className="grid gap-3">
-            {sourceDeskActions.map((action, index) => (
-              <Link
-                key={action.label}
-                href={action.href}
-                className="group grid gap-3 rounded-2xl border border-slate-200 bg-white p-5 shadow-sm transition hover:-translate-y-0.5 hover:border-red-300 hover:shadow-md sm:grid-cols-[48px_1fr]"
-              >
-                <span className="grid h-12 w-12 place-items-center rounded-full bg-blue-950 text-sm font-black text-white group-hover:bg-red-700">
-                  {index + 1}
-                </span>
-                <span>
-                  <span className="block text-lg font-black leading-tight text-blue-950 group-hover:text-red-700">
-                    {action.label}
-                  </span>
-                  <span className="mt-1 block text-sm font-semibold leading-6 text-slate-600">
-                    {action.detail}
-                  </span>
-                </span>
-              </Link>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Services Funnel */}
-      <section className="border-b border-slate-200 bg-white">
-        <div className="mx-auto max-w-7xl px-4 py-14 sm:px-6 lg:px-8">
-          <div className="grid gap-8 lg:grid-cols-[0.86fr_1.14fr] lg:items-start">
-            <div>
-              <p className="text-xs font-black uppercase tracking-[0.18em] text-red-700">Research services</p>
-              <h2 className="mt-2 text-3xl font-black leading-tight text-blue-950 sm:text-5xl">
-                When a public record needs more work, request a packet.
-              </h2>
-              <p className="mt-4 max-w-3xl text-sm font-semibold leading-6 text-blue-950/70">
-                Free tools cover search, source intake, and public lanes. Paid services are for
-                deeper research, race pages, clean writeups, and source-backed public-record packets.
-              </p>
-              <div className="mt-5 flex flex-wrap gap-3">
-                <Link
-                  href="/services"
-                  className="rounded-xl bg-red-700 px-5 py-3 text-sm font-black uppercase tracking-wide text-white shadow-sm transition hover:-translate-y-0.5 hover:bg-blue-950"
-                >
-                  View Services
-                </Link>
-                <Link
-                  href="/elections/texas/contribute"
-                  className="rounded-xl border border-amber-200 bg-amber-50 px-5 py-3 text-sm font-black uppercase tracking-wide text-amber-950 transition hover:-translate-y-0.5 hover:border-red-300 hover:bg-white"
-                >
-                  Build Free Packet
-                </Link>
-              </div>
-            </div>
-            <div className="grid gap-4 md:grid-cols-3">
-              {serviceHighlights.map((service) => (
-                <Link
-                  key={service.slug}
-                  href={`/services/${service.slug}`}
-                  className="group rounded-2xl border border-slate-200 bg-slate-50 p-5 shadow-sm transition hover:-translate-y-0.5 hover:border-red-300 hover:bg-white hover:shadow-md"
-                >
-                  <div className="flex items-center justify-between gap-3">
-                    <span className="rounded-full bg-blue-950 px-2.5 py-1 text-[11px] font-black uppercase tracking-wide text-white">
-                      {service.eyebrow}
-                    </span>
-                    <span className="text-lg font-black text-red-700">{service.priceLabel}</span>
-                  </div>
-                  <h3 className="mt-4 text-xl font-black leading-tight text-blue-950 group-hover:text-red-700">
-                    {service.name}
-                  </h3>
-                  <p className="mt-2 text-sm font-semibold leading-6 text-slate-600">
-                    {service.summary}
-                  </p>
-                </Link>
-              ))}
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Browse by Level */}
-      <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
-        <div className="text-center mb-10">
-          <h2 className="text-3xl font-extrabold text-gray-900">
-            Choose the record lane
-          </h2>
-          <p className="text-gray-500 mt-2">
-            People do not share categories. They share names, boards, votes, red flags, and receipts.
-          </p>
-        </div>
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-4">
-          {levelCards.map((card) => (
-            <Link
-              key={card.level}
-              href={card.href}
-              className="group block rounded-2xl border border-gray-200 bg-white p-6 transition-all hover:shadow-lg hover:border-blue-200 hover:-translate-y-1"
-            >
-              <h3 className="font-bold text-gray-900 text-lg group-hover:text-blue-600 transition-colors">
-                {card.title}
-              </h3>
-              <p className="text-sm text-gray-500 mt-2">{card.description}</p>
-              <span className="inline-block mt-4 text-xs font-semibold text-blue-600 group-hover:translate-x-1 transition-transform">
-                View lane &rarr;
-              </span>
-            </Link>
-          ))}
-        </div>
-      </section>
-
-      {/* Issue Categories */}
-      <section className="bg-slate-50">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
-          <div className="text-center mb-10">
-            <h2 className="text-3xl font-extrabold text-gray-900">
-              Score what people already argue about
-            </h2>
-            <p className="text-gray-500 mt-2">
-              Turn hot-button issues into traceable votes, source links, and scorecards people can inspect.
-            </p>
-          </div>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-4">
-            {issueCategories.map((issue) => (
-              <Link
-                key={issue.id}
-                href={`/scorecards/${issue.id}`}
-                className="group block rounded-2xl border border-gray-200 bg-white p-5 transition-all hover:shadow-lg hover:-translate-y-1"
-              >
-                <div
-                  className="w-10 h-1 rounded-full mb-4"
-                  style={{ backgroundColor: issue.color }}
-                />
-                <h3 className="font-bold text-gray-900 text-sm group-hover:text-blue-600 transition-colors">
-                  {issue.name}
-                </h3>
-                <p className="text-xs text-gray-500 mt-2 leading-relaxed line-clamp-2">
-                  {issue.description}
-                </p>
-                <p
-                  className="text-xs font-bold mt-3"
-                  style={{ color: issue.color }}
-                >
-                  {issue.weight}% of overall score
-                </p>
-              </Link>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Featured Officials */}
-      <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
-        <div className="flex items-end justify-between mb-8">
-          <div>
-            <h2 className="text-3xl font-extrabold text-gray-900">
-              Faces move faster than folders
-            </h2>
-            <p className="text-gray-500 mt-1">
-              Inspect a name, read the record, then share the profile.
-            </p>
-          </div>
-          <Link
-            href="/officials"
-            className="text-blue-600 hover:text-blue-800 text-sm font-bold"
-          >
-            Find a rep &rarr;
-          </Link>
-        </div>
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
-          {featuredOfficials.map((official) => (
-            <OfficialCard
-              key={official.id}
-              official={official}
-              scoreCard={getScoreCard(official.id)}
-            />
-          ))}
-        </div>
-      </section>
-
-      {/* Join CTA */}
-      <section className="bg-white">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-16 text-center">
-          <div className="mx-auto mb-6 h-1.5 max-w-xs rounded-full bg-[linear-gradient(90deg,#bf0d3e_0%,#bf0d3e_35%,#ffffff_35%,#ffffff_65%,#002868_65%,#002868_100%)] shadow-sm" />
-          <h2 className="text-3xl font-extrabold text-blue-950 mb-4">
-            Do not just watch the record. Move it.
-          </h2>
-          <p className="text-blue-950/70 text-lg mb-8 max-w-2xl mx-auto">
-            Search a profile, package the missing source, request deeper research, and
-            share the page with people who need to open it before the next vote.
-          </p>
-          <div className="flex flex-wrap gap-4 justify-center">
-            <Link
-              href="/elections/texas/contribute"
-              className="rounded-xl bg-blue-900 px-8 py-3.5 text-sm font-bold text-white shadow-lg hover:shadow-xl transition-all hover:-translate-y-0.5 hover:bg-red-700"
-            >
-              Build Free Packet
-            </Link>
-            <Link
-              href="/services"
-              className="rounded-xl border-2 border-blue-200 px-8 py-3.5 text-sm font-bold text-blue-900 hover:bg-blue-50 transition-all"
-            >
-              View Services
-            </Link>
-            <Link
-              href="/officials"
-              className="rounded-xl border-2 border-red-200 px-8 py-3.5 text-sm font-bold text-red-700 hover:bg-red-50 transition-all"
-            >
-              Find Officials
-            </Link>
-          </div>
-        </div>
-      </section>
-
-      <div className="fixed inset-x-0 bottom-0 z-40 border-t border-slate-200 bg-white/95 px-3 py-2 shadow-2xl shadow-blue-950/20 backdrop-blur md:hidden">
-        <div className="mx-auto grid max-w-md grid-cols-3 gap-2">
-          <Link
-            href="/officials"
-            className="rounded-xl bg-red-700 px-3 py-3 text-center text-[11px] font-black uppercase tracking-wide text-white"
-          >
-            Find
-          </Link>
-          <Link
-            href="/submit-source"
-            className="rounded-xl border border-amber-200 bg-amber-50 px-3 py-3 text-center text-[11px] font-black uppercase tracking-wide text-amber-950"
-          >
-            Source
-          </Link>
-          <Link
-            href="/blog"
-            className="rounded-xl bg-blue-950 px-3 py-3 text-center text-[11px] font-black uppercase tracking-wide text-white"
-          >
-            Blog
-          </Link>
-        </div>
-      </div>
-    </div>
-  );
-}
+        m«ëŒ+Š×ž®º+º$zzb¥

@@ -31,7 +31,7 @@ export async function generateMetadata({ params }: MediaProfilePageProps): Promi
     title: `${profile.name} | Media Watch | RepWatchr`,
     description: `${profile.name} public media profile: ${profile.summary}`,
     path: `/media/${profile.slug}`,
-    imagePath: buildOgImageUrl("home"),
+    imagePath: buildOgImageUrl("profile", { kind: "media", slug: profile.slug }),
     imageAlt: `${profile.name} RepWatchr media watch preview`,
     type: "profile",
   });

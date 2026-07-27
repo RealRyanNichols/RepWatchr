@@ -29,7 +29,7 @@ export async function generateMetadata({
     title: bill.title,
     description: bill.summary,
     path: `/votes/${bill.id}`,
-    imagePath: buildOgImageUrl("methodology"),
+    imagePath: buildOgImageUrl("methodology", { view: "bill", id: bill.id }),
     imageAlt: `${bill.title} RepWatchr vote record preview`,
   });
 }

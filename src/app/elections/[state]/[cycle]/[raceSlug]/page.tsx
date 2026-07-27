@@ -4,6 +4,7 @@ import TexasElectionRacePage, {
   generateMetadata as generateTexasRaceMetadata,
   generateStaticParams as generateTexasRaceStaticParams,
 } from "@/app/elections/texas/[raceSlug]/page";
+import { buildOgImageUrl, buildRepWatchrMetadata } from "@/lib/repwatchr-seo";
 
 const texasStateSlugs = new Set(["texas", "tx"]);
 const supportedCycles = new Set(["2026"]);
@@ -23,7 +24,14 @@ export async function generateMetadata({
 }): Promise<Metadata> {
   const { state, cycle, raceSlug } = await params;
   if (!texasStateSlugs.has(state.toLowerCase()) || !supportedCycles.has(cycle)) {
-    return { title: "Race Not Found" };
+    return buildRepWatchrMetadata({
+      title: "Race Not Found | RepWatchr",
+      description: "This election race route is not published.",
+      path: `/elections/${state}/${cycle}/${raceSlug}`,
+      imagePath: buildOgImageUrl("race"),
+      imageAlt: "RepWatchr election race preview",
+      robots: { index: false, follow: false },
+    });
   }
 
   return generateTexasRaceMetadata({ params: Promise.resolve({ raceSlug }) });

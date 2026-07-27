@@ -20,6 +20,7 @@ const requiredFiles = [
   "scripts/smoke-pricing-beta-access.mjs",
   "scripts/smoke-seo-indexing.mjs",
   "scripts/smoke-og-previews.mjs",
+  "scripts/smoke-editorial-thumbnails.mjs",
   "scripts/smoke-mobile-pwa.mjs",
 ];
 
@@ -48,6 +49,7 @@ const requiredSnippets = [
   ["scripts/smoke-pricing-beta-access.mjs", "package_interest_submitted"],
   ["scripts/smoke-seo-indexing.mjs", "robots.ts does not disallow"],
   ["scripts/smoke-og-previews.mjs", "src/app/api/og"],
+  ["scripts/smoke-editorial-thumbnails.mjs", "EditorialThumbnail"],
   ["scripts/smoke-mobile-pwa.mjs", "mobile_action_dock_clicked"],
   ["src/lib/client-analytics.ts", "quality_dashboard_open"],
   ["src/lib/client-analytics.ts", "deploy_checklist_open"],
@@ -59,6 +61,7 @@ const requiredSnippets = [
   ["docs/ENVIRONMENT_VARIABLES.md", "NEXT_PUBLIC_"],
   ["package.json", "\"qa:static\""],
   ["package.json", "\"qa:routes\""],
+  ["package.json", "\"smoke:thumbnails\""],
 ];
 
 const forbiddenPublicText = [

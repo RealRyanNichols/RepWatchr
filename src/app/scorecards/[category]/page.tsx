@@ -31,7 +31,7 @@ export async function generateMetadata({
     title: cat ? `${cat.name} Scorecard` : "Category Scorecard",
     description: cat?.description ?? "RepWatchr source-backed scorecard category.",
     path: `/scorecards/${category}`,
-    imagePath: buildOgImageUrl("methodology"),
+    imagePath: buildOgImageUrl("methodology", { view: "scorecard", id: category }),
     imageAlt: `${cat?.name ?? "Category"} RepWatchr scorecard preview`,
   });
 }

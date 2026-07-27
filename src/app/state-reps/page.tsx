@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { Suspense } from "react";
 import OfficialGrid from "@/components/officials/OfficialGrid";
+import EditorialThumbnail from "@/components/shared/EditorialThumbnail";
 import OfficialPhotoImage from "@/components/shared/OfficialPhotoImage";
 import { stateCivicOutreachPriorities } from "@/data/state-civic-outreach-priorities";
 import { getAllScoreCards } from "@/lib/data";
@@ -14,7 +15,7 @@ export const metadata: Metadata = buildRepWatchrMetadata({
   description:
     "Browse RepWatchr's source-seeded state representative and state senator profiles across the United States, with photos, sources, vote-record gaps, and buildout status.",
   path: "/state-reps",
-  imagePath: buildOgImageUrl("home"),
+  imagePath: buildOgImageUrl("home", { page: "state-reps" }),
   imageAlt: "RepWatchr state representatives directory preview",
 });
 
@@ -101,15 +102,23 @@ export default function StateRepsPage() {
                 <Link
                   key={official.id}
                   href={`/officials/${official.id}`}
-                  className="group w-36 shrink-0 overflow-hidden rounded-lg border border-white/10 bg-white text-slate-950 transition hover:-translate-y-0.5 hover:border-[#d5aa3f]"
+                  className="group w-44 shrink-0 overflow-hidden rounded-lg border border-white/10 bg-white text-slate-950 transition hover:-translate-y-0.5 hover:border-[#d5aa3f]"
                 >
-                  <div className="relative h-36 bg-slate-200">
+                  <EditorialThumbnail
+                    message={`${official.name}: open the record`}
+                    eyebrow={official.state}
+                    support={official.district ?? official.position}
+                    variant="record"
+                    className="h-44"
+                    contentClassName="px-3 pb-3"
+                    messageClassName="text-base sm:text-base"
+                  >
                     <OfficialPhotoImage
                       official={official}
-                      sizes="288px"
+                      sizes="352px"
                       className="object-cover transition duration-300 group-hover:scale-105"
                     />
-                  </div>
+                  </EditorialThumbnail>
                   <div className="p-2">
                     <p className="truncate text-sm font-black group-hover:text-blue-800">{official.name}</p>
                     <p className="mt-0.5 truncate text-[11px] font-bold text-slate-600">{official.district ?? official.position}</p>

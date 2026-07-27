@@ -9,7 +9,7 @@ export const metadata: Metadata = buildRepWatchrMetadata({
   description:
     "RepWatchr data coverage, source inventory, and public-record buildout status for officials, votes, funding, news, and review overlays.",
   path: "/data-reports",
-  imagePath: buildOgImageUrl("methodology"),
+  imagePath: buildOgImageUrl("methodology", { view: "data-reports" }),
   imageAlt: "RepWatchr data reports preview",
 });
 
@@ -132,55 +132,4 @@ export default function DataReportsPage() {
             </div>
           </div>
 
-          <div className="rounded-lg border border-slate-200 bg-white p-5 shadow-sm">
-            <p className="text-xs font-black uppercase tracking-wide text-red-700">
-              Texas launch checklist
-            </p>
-            <div className="mt-4 space-y-3 text-sm font-semibold leading-6 text-slate-700">
-              <p>
-                Texas federal profiles loaded:{" "}
-                <span className="font-black text-slate-950">
-                  {formatNumber(
-                    stats.federalHouseProfilesLoaded + stats.federalSenateProfilesLoaded,
-                  )}
-                </span>
-              </p>
-              <p>
-                Texas House coverage:{" "}
-                <span className="font-black text-slate-950">
-                  {formatNumber(stats.texasHouseProfilesLoaded)} / {formatNumber(stats.texasHouseExpectedSeats)}
-                </span>
-              </p>
-              <p>
-                Texas Senate coverage:{" "}
-                <span className="font-black text-slate-950">
-                  {formatNumber(stats.texasSenateProfilesLoaded)} / {formatNumber(stats.texasSenateExpectedSeats)}
-                </span>
-              </p>
-              <p>
-                State legislative vote snapshots:{" "}
-                <span className="font-black text-slate-950">
-                  {formatNumber(stats.stateLegislatorProfilesWithVoteRecords)}
-                </span>
-              </p>
-            </div>
-            <div className="mt-5 flex flex-wrap gap-2">
-              <Link
-                href="/officials?state=TX"
-                className="rounded-full border border-blue-200 bg-blue-50 px-3 py-1.5 text-xs font-black text-blue-900 transition hover:bg-white"
-              >
-                Open Texas officials
-              </Link>
-              <Link
-                href="/state-reps"
-                className="rounded-full border border-red-200 bg-red-50 px-3 py-1.5 text-xs font-black text-red-900 transition hover:bg-white"
-              >
-                Open state reps
-              </Link>
-            </div>
-          </div>
-        </section>
-      </div>
-    </main>
-  );
-}
+          <div className="rounded-lg border border-slate-200 bg-

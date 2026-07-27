@@ -11,7 +11,7 @@ export const metadata: Metadata = buildRepWatchrMetadata({
   description:
     "Bills and roll-call vote records that factor into public official scorecards.",
   path: "/votes",
-  imagePath: buildOgImageUrl("methodology"),
+  imagePath: buildOgImageUrl("methodology", { view: "votes" }),
   imageAlt: "RepWatchr tracked votes preview",
 });
 

@@ -478,6 +478,8 @@ export interface OfficialCoverageClassification {
 export interface NewsArticle {
   id: string;
   title: string;
+  /** Short, editor-approved message used on cards and social preview artwork. */
+  thumbnailMessage?: string;
   summary: string;
   content: string;
   officialIds: string[];
@@ -486,6 +488,11 @@ export interface NewsArticle {
   sourceName?: string;
   sourceLinks?: SourceLink[];
   imageUrl?: string;
+  imageAlt?: string;
+  imageCredit?: string;
+  imageFocalPoint?: string;
+  imageRightsState?: "owned" | "licensed" | "official_public_source" | "permission_pending";
+  visualTheme?: "breaking" | "federal" | "local" | "record" | "social" | "video";
   author: string;
   publishedAt: string;
   featured: boolean;

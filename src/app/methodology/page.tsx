@@ -8,7 +8,7 @@ export const metadata: Metadata = {
     description:
       "How RepWatchr grades documented job performance while keeping ideology, popularity, and participant sentiment separate.",
     path: "/methodology",
-    imagePath: buildOgImageUrl("methodology"),
+    imagePath: buildOgImageUrl("methodology", { view: "methodology" }),
     imageAlt: "RepWatchr performance grade methodology",
   }),
 };

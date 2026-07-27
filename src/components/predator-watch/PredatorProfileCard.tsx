@@ -1,4 +1,5 @@
 import Link from "next/link";
+import EditorialThumbnail from "@/components/shared/EditorialThumbnail";
 import type { PredatorProfile } from "@/types/predator-watch";
 
 function riskLabel(riskLevel: PredatorProfile["riskLevel"]) {
@@ -28,7 +29,18 @@ export default function PredatorProfileCard({ profile, rank }: { profile: Predat
       href={`/east-texas-predator-watch/${profile.slug}`}
       className="group flex h-full min-w-0 flex-col overflow-hidden rounded-xl border border-slate-300 bg-white shadow-sm transition hover:-translate-y-1 hover:border-red-300 hover:shadow-2xl"
     >
-      <div className="relative aspect-[4/3] bg-slate-950">
+      <EditorialThumbnail
+        message={`${profile.fullName}: official registry record`}
+        eyebrow={rank ? `Priority ${rank}` : "Registry source"}
+        support={
+          alertTone
+            ? "Open the verified record and current status"
+            : `${profile.city}, ${profile.county} County`
+        }
+        variant={alertTone ? "breaking" : "record"}
+        className="aspect-[4/3]"
+        messageClassName="text-lg sm:text-xl"
+      >
         {profile.photoUrl ? (
           <span
             aria-label={`Official registry photo for ${profile.fullName}`}
@@ -37,22 +49,9 @@ export default function PredatorProfileCard({ profile, rank }: { profile: Predat
             style={{ backgroundImage: `url(${JSON.stringify(profile.photoUrl)})` }}
           />
         ) : (
-          <div className="grid h-full w-full place-items-center bg-[radial-gradient(circle_at_30%_10%,#334155,#0f172a_48%,#450a0a)]">
-            <span aria-hidden="true" className="text-5xl font-black text-red-200">!</span>
-          </div>
+          <div className="h-full w-full bg-slate-950" />
         )}
-        {rank ? (
-          <span className="absolute left-3 top-3 rounded-full bg-red-700 px-3 py-1 text-xs font-black text-white shadow">
-            TOP {rank}
-          </span>
-        ) : null}
-        {alertTone ? (
-          <span className="absolute bottom-3 left-3 inline-flex items-center gap-1 rounded-full bg-slate-950/90 px-3 py-1 text-[11px] font-black uppercase tracking-wide text-red-100">
-            <span aria-hidden="true" className="text-xs leading-none">!</span>
-            Watch priority
-          </span>
-        ) : null}
-      </div>
+      </EditorialThumbnail>
 
       <div className="flex flex-1 flex-col p-4">
         <div className="flex flex-wrap items-center gap-2">

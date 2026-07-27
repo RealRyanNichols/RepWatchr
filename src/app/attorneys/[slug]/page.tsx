@@ -31,7 +31,7 @@ export async function generateMetadata({ params }: AttorneyProfilePageProps): Pr
     title: `${profile.name} | Attorney Watch | RepWatchr`,
     description: `${profile.name} public profile: ${profile.summary}`,
     path: `/attorneys/${profile.slug}`,
-    imagePath: buildOgImageUrl("home"),
+    imagePath: buildOgImageUrl("profile", { kind: "attorney", slug: profile.slug }),
     imageAlt: `${profile.name} RepWatchr attorney watch preview`,
     type: "profile",
   });

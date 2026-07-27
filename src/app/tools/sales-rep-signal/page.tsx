@@ -2,12 +2,16 @@ import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 import { LeadRepPackageCard } from "@/components/leadrep/LeadRepPackageCard";
 import { SalesRepSignalWaitlist } from "@/components/leadrep/SalesRepSignalWaitlist";
+import { buildOgImageUrl, buildRepWatchrMetadata } from "@/lib/repwatchr-seo";
 
-export const metadata = {
+export const metadata = buildRepWatchrMetadata({
   title: "Sales Rep Signal Profile Pilot | RepWatchr",
   description:
     "Join the opt-in Sales Rep Signal Profile pilot. Self-submitted profile review only; not a background check or employment decision tool.",
-};
+  path: "/tools/sales-rep-signal",
+  imagePath: buildOgImageUrl("home", { page: "sales-rep-signal" }),
+  imageAlt: "RepWatchr Sales Rep Signal consent-first pilot preview",
+});
 
 export default function SalesRepSignalPage() {
   return (

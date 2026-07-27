@@ -7,7 +7,7 @@ export const metadata: Metadata = buildRepWatchrMetadata({
   title: "Public Records Response Intake | RepWatchr",
   description: "Submit a public records response for private RepWatchr review, source-packet drafting, and safe public-summary handling.",
   path: "/tools/public-records-response",
-  imagePath: buildOgImageUrl("methodology", { title: "Public Records Response Intake" }),
+  imagePath: buildOgImageUrl("methodology", { view: "records-response" }),
   imageAlt: "RepWatchr public records response intake preview",
 });
 

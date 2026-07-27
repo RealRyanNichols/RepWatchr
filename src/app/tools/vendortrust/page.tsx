@@ -2,12 +2,16 @@ import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 import { LeadRepPackageCard } from "@/components/leadrep/LeadRepPackageCard";
 import { VendorTrustWidget } from "@/components/leadrep/VendorTrustWidget";
+import { buildOgImageUrl, buildRepWatchrMetadata } from "@/lib/repwatchr-seo";
 
-export const metadata = {
+export const metadata = buildRepWatchrMetadata({
   title: "VendorTrust Badge | RepWatchr",
   description:
     "Run a public-source vendor confidence preview with license, registry, review, and complaint-source placeholders before trusting a local vendor.",
-};
+  path: "/tools/vendortrust",
+  imagePath: buildOgImageUrl("home", { page: "vendortrust" }),
+  imageAlt: "RepWatchr VendorTrust public-source signal preview",
+});
 
 export default function VendorTrustPage() {
   return (

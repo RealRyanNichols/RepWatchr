@@ -30,7 +30,7 @@ export async function generateMetadata({ params }: PredatorProfilePageProps): Pr
     title: `${profile.fullName} | East Texas Predator Watch | RepWatchr`,
     description: `${profile.fullName} official registry profile: ${profile.offense}`,
     path: `/east-texas-predator-watch/${profile.slug}`,
-    imagePath: buildOgImageUrl("home"),
+    imagePath: buildOgImageUrl("profile", { kind: "predator", slug: profile.slug }),
     imageAlt: `${profile.fullName} RepWatchr registry profile preview`,
     type: "profile",
   });

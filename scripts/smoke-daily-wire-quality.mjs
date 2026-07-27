@@ -71,6 +71,22 @@ assert(sources.includes("DAILY_WIRE_DEFAULT_DENY_DOMAINS"), "source controls mis
 assert(sources.includes("DAILY_WIRE_QUERY_LANE_CONTROLS"), "query lane controls are missing");
 assert(sources.includes("requiredTerms"), "source controls missing required terms");
 assert(sources.includes("deniedTerms"), "source controls missing denied terms");
+assert(
+  quality.includes("const articleText = `${input.title} ${input.summary}`"),
+  "jurisdiction matching must use title and summary, not source or query-lane labels",
+);
+assert(
+  !quality.includes('const text = `${input.title} ${input.summary} ${input.sourceName} ${input.matchedTerms.join(" ")}`'),
+  "query-lane terms can still contaminate jurisdiction matching",
+);
+assert(
+  quality.includes("conflictingStateEvidence"),
+  "Texas-lane items do not quarantine conflicting out-of-state evidence",
+);
+assert(
+  quality.includes("hasManualModeration"),
+  "stored acceptance can bypass current quality checks without a manual moderation record",
+);
 assert(ingestion.includes("extractSourceMeta"), "RSS parser does not capture publisher source metadata");
 assert(wire.includes("getDailyWireReviewQueue"), "admin review queue accessor missing");
 assert(wire.includes("isPublicWireStatus"), "public wire status filter missing");

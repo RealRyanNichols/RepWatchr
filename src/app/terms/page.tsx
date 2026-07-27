@@ -5,7 +5,7 @@ export const metadata: Metadata = buildRepWatchrMetadata({
   title: "Terms of Service",
   description: "RepWatchr terms of service - rules for using the platform.",
   path: "/terms",
-  imagePath: buildOgImageUrl("methodology"),
+  imagePath: buildOgImageUrl("methodology", { view: "terms" }),
   imageAlt: "RepWatchr terms of service preview",
 });
 

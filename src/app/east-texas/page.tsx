@@ -8,11 +8,15 @@ import {
   eastTexasProfileReadiness,
   isInEastTexasLaunchTerritory,
 } from "@/lib/east-texas-launch-territory";
+import { buildOgImageUrl, buildRepWatchrMetadata } from "@/lib/repwatchr-seo";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = buildRepWatchrMetadata({
   title: "East Texas Accountability Desk | RepWatchr",
   description: "RepWatchr's source-led profile and reporting desk for elected officials serving communities within 75 road miles of Harleton, Texas.",
-};
+  path: "/east-texas",
+  imagePath: buildOgImageUrl("home", { page: "east-texas" }),
+  imageAlt: "East Texas Accountability Desk RepWatchr preview",
+});
 
 export default function EastTexasAccountabilityDesk() {
   const officials = getAllOfficials().filter(isInEastTexasLaunchTerritory);
@@ -111,4 +115,3 @@ export default function EastTexasAccountabilityDesk() {
     </main>
   );
 }
-

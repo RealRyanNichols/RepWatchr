@@ -58,6 +58,21 @@ jobs:
       - name: Install
         run: npm install
 
+      - name: Static QA
+        id: static_qa
+        continue-on-error: true
+        run: npm run qa:static
+
+      - name: OG preview headline QA
+        id: og_qa
+        continue-on-error: true
+        run: npm run smoke:og
+
+      - name: Editorial thumbnail headline QA
+        id: thumbnail_qa
+        continue-on-error: true
+        run: npm run smoke:thumbnails
+
       - name: Build
         id: build
         continue-on-error: true
@@ -69,6 +84,6 @@ jobs:
           LEADREP_BUILD_STATUS: ${{ steps.build.outcome }}
         run: node scripts/leadrep-orchestrator.mjs
 
-      - name: Fail when build fails
-        if: steps.build.outcome != 'success'
+      - name: Fail when verification or build fails
+        if: steps.static_qa.outcome != 'success' || steps.og_qa.outcome != 'success' || steps.thumbnail_qa.outcome != 'success' || steps.build.outcome != 'success'
         run: exit 1

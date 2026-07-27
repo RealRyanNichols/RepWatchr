@@ -17,7 +17,7 @@ export const metadata: Metadata = buildRepWatchrMetadata({
   description:
     "Scorecards for every RepWatchr public profile: officials, school-board members, attorneys, law firms, media companies, journalists, editors, and public-safety profiles.",
   path: "/scorecards",
-  imagePath: buildOgImageUrl("methodology"),
+  imagePath: buildOgImageUrl("methodology", { view: "scorecards" }),
   imageAlt: "RepWatchr universal scorecards preview",
 });
 
