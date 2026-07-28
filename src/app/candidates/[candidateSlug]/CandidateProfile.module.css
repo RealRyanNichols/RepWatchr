@@ -345,7 +345,7 @@
 
 .chapterNav {
   position: sticky;
-  top: 0;
+  top: 76px;
   z-index: 20;
   overflow-x: auto;
   border-bottom: 1px solid #d8cfbf;
@@ -384,7 +384,7 @@
 .contentShell {
   width: min(100% - 40px, 1180px);
   margin-inline: auto;
-  padding: 72px 0 110px;
+  padding: 52px 0 80px;
 }
 
 .editorialOpening {
@@ -392,7 +392,7 @@
   grid-template-columns: 74px minmax(0, 1fr) minmax(230px, 0.36fr);
   gap: 28px;
   align-items: start;
-  padding: 0 0 72px;
+  padding: 0 0 48px;
   border-bottom: 1px solid #d7cdbc;
 }
 
@@ -467,7 +467,7 @@
 }
 
 .section {
-  padding: 80px 0 12px;
+  padding: 56px 0 12px;
   scroll-margin-top: 68px;
 }
 
@@ -587,8 +587,8 @@
 }
 
 .campaignSection {
-  margin-top: 75px;
-  padding: 72px 48px 48px;
+  margin-top: 48px;
+  padding: 48px 36px 36px;
   border: 1px solid #dfc7b5;
   background:
     linear-gradient(145deg, rgba(246, 240, 228, 0.92), rgba(255, 253, 247, 0.95));
@@ -617,8 +617,8 @@
   grid-template-columns: minmax(0, 0.9fr) minmax(340px, 0.65fr);
   gap: 54px;
   align-items: start;
-  margin-top: 88px;
-  padding: 56px;
+  margin-top: 56px;
+  padding: 44px;
   color: #fff;
   background:
     radial-gradient(circle at 18% 22%, rgba(224, 154, 114, 0.14), transparent 24rem),
@@ -1153,6 +1153,12 @@
 
   .contactSection {
     margin-top: 68px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .chapterNav {
+    top: 142px;
   }
 }
 
