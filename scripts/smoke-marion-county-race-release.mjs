@@ -7,6 +7,7 @@ const routePath = "src/app/elections/texas/[raceSlug]/page.tsx";
 const candidateDataPath = "src/data/election-candidates.ts";
 const candidateRoutePath = "src/app/candidates/[candidateSlug]/page.tsx";
 const candidateOgPath = "src/app/api/og/candidate/route.tsx";
+const ogRendererPath = "src/lib/repwatchr-og.tsx";
 const verifiedBriefPath = "src/data/official-verified-briefs.ts";
 const officialRoutePath = "src/app/officials/[id]/page.tsx";
 const seoInventoryPath = "src/lib/seo-inventory.ts";
@@ -69,6 +70,7 @@ const route = readSource(routePath);
 const candidateData = readSource(candidateDataPath);
 const candidateRoute = readSource(candidateRoutePath);
 const candidateOg = readSource(candidateOgPath);
+const ogRenderer = readSource(ogRendererPath);
 const verifiedBrief = readSource(verifiedBriefPath);
 const officialRoute = readSource(officialRoutePath);
 const seoInventory = readSource(seoInventoryPath);
@@ -130,9 +132,16 @@ for (const marker of [
   "Not rated",
   "Evidence voters still need",
   "Correction & response",
+  "August 17, 2026",
 ]) {
   if (!candidateRoute.includes(marker)) {
     fail(`standalone candidate route is missing: ${marker}`);
+  }
+}
+
+for (const portrait of portraits) {
+  if (!ogRenderer.includes(portrait.publicPath)) {
+    fail(`${portrait.label} portrait is not embedded for protected OG rendering`);
   }
 }
 
