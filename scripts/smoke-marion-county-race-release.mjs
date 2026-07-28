@@ -91,9 +91,20 @@ for (const marker of [
   'href="/candidates/dina-k-carroll"',
   'href="/officials/leward-j-lafleur-ii"',
   "Announced write-in · qualification pending",
+  "selected as chair in 2023",
+  "current official roster for a reported East Texas water-advisory role was not located",
 ]) {
   if (!component.includes(marker)) {
     fail(`required dossier marker is missing: ${marker}`);
+  }
+}
+
+for (const unsupportedCurrentRole of [
+  "chair since 2023",
+  "Chairs the East Texas Water Advisory Board",
+]) {
+  if (component.toLowerCase().includes(unsupportedCurrentRole.toLowerCase())) {
+    fail(`unsupported present-tense role remains: ${unsupportedCurrentRole}`);
   }
 }
 

@@ -5,6 +5,7 @@ import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { createClient } from "@/lib/supabase";
 import { trackRepWatchrEvent } from "@/lib/client-analytics";
+import { safeNextPath } from "@/lib/safe-next-path";
 import TurnstileChallenge from "@/components/auth/TurnstileChallenge";
 import SocialAuthButtons from "@/components/auth/SocialAuthButtons";
 
@@ -32,9 +33,7 @@ export default function SignUpPage() {
   useEffect(() => {
     const timer = window.setTimeout(() => {
       const requestedNext = new URLSearchParams(window.location.search).get("next");
-      if (requestedNext?.startsWith("/") && !requestedNext.startsWith("//")) {
-        setNextPath(requestedNext);
-      }
+      setNextPath(safeNextPath(requestedNext));
     }, 0);
     return () => window.clearTimeout(timer);
   }, []);

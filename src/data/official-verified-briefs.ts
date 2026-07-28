@@ -580,7 +580,7 @@ export const OFFICIAL_VERIFIED_BRIEFS = {
       },
       {
         id: "regional-board",
-        metric: "Chair since 2023",
+        metric: "Selected chair · 2023",
         label: "CEO–RTPO regional role",
         detail:
           "ETCOG says LaFleur joined the board in 2018, its executive committee in 2021, and was selected as chair in 2023.",
@@ -636,7 +636,7 @@ export const OFFICIAL_VERIFIED_BRIEFS = {
         id: "regional-transportation",
         title: "Regional transportation and workforce leadership",
         summary:
-          "Documented service on the 14-county CEO–RTPO board, its executive committee, and as chair.",
+          "Documented service on the 14-county CEO–RTPO board and executive committee, including selection as chair in 2023.",
         detail:
           "ETCOG records show LaFleur joined the CEO–RTPO board in 2018, moved to its executive committee in 2021, and was selected as chair in 2023. The board coordinates rural transportation priorities and local workforce-policy responsibilities across East Texas.",
         sources: [

@@ -209,7 +209,6 @@ function HeroCandidate({
     <Link
       href={href}
       className={styles.heroCandidate}
-      aria-label={`Open the full profile for ${name}`}
     >
       <Image
         src={src}
@@ -564,7 +563,7 @@ export default function FlagshipRaceExperience() {
                 <p className={styles.sourceLabel}>Documented experience</p>
                 <ul>
                   <li>Marion County Judge since 2018; current Republican nominee.</li>
-                  <li>CEO–RTPO board member since 2018, executive committee since 2021 and chair since 2023.</li>
+                  <li>CEO–RTPO board member since 2018, executive committee member since 2021 and selected as chair in 2023.</li>
                   <li>Texas Judicial Academy fellow for education beyond statutory requirements.</li>
                   <li>Signed county disaster and burn-ban orders under emergency authority.</li>
                 </ul>
@@ -574,7 +573,7 @@ export default function FlagshipRaceExperience() {
                 <ul>
                   <li>Opposed a proposed transfer of Lake O’ the Pines water rights.</li>
                   <li>Participated in regional passenger-rail planning through the CEO–RTPO coalition.</li>
-                  <li>Chairs the East Texas Water Advisory Board, according to 2026 reporting.</li>
+                  <li>A current official roster for a reported East Texas water-advisory role was not located.</li>
                   <li>No stand-alone 2026 campaign platform was located.</li>
                 </ul>
               </section>
@@ -672,7 +671,7 @@ export default function FlagshipRaceExperience() {
             <ul>
               <li>
                 <strong>Regional leadership</strong>
-                <span>Service on the East Texas CEO–RTPO board, executive committee and chair role is documented.</span>
+                <span>ETCOG documents board and executive-committee service, plus his selection as chair in 2023.</span>
               </li>
               <li>
                 <strong>Water advocacy</strong>
