@@ -1,10 +1,11 @@
 "use client";
 
-import { useMemo, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { createClient } from "@/lib/supabase";
 import { trackRepWatchrEvent } from "@/lib/client-analytics";
+import { safeNextPath } from "@/lib/safe-next-path";
 import SocialAuthButtons from "@/components/auth/SocialAuthButtons";
 
 export default function LoginPage() {
@@ -14,8 +15,17 @@ export default function LoginPage() {
   const [notice, setNotice] = useState("");
   const [loading, setLoading] = useState(false);
   const [magicLoading, setMagicLoading] = useState(false);
+  const [nextPath, setNextPath] = useState("/dashboard");
   const router = useRouter();
   const supabase = useMemo(() => createClient(), []);
+
+  useEffect(() => {
+    const timer = window.setTimeout(() => {
+      const requestedNext = new URLSearchParams(window.location.search).get("next");
+      setNextPath(safeNextPath(requestedNext));
+    }, 0);
+    return () => window.clearTimeout(timer);
+  }, []);
 
   async function handleSubmit(e: React.FormEvent) {
     e.preventDefault();
@@ -36,7 +46,7 @@ export default function LoginPage() {
       }
 
       trackRepWatchrEvent("login", { method: "password" });
-      router.replace("/dashboard");
+      router.replace(nextPath);
       router.refresh();
     } catch (loginError) {
       setError(loginError instanceof Error ? loginError.message : "Login failed. Check the member database configuration.");
@@ -62,7 +72,7 @@ export default function LoginPage() {
         email: normalizedEmail,
         options: {
           shouldCreateUser: true,
-          emailRedirectTo: `${window.location.origin}/auth/callback?next=/dashboard`,
+          emailRedirectTo: `${window.location.origin}/auth/callback?next=${encodeURIComponent(nextPath)}`,
         },
       });
 
@@ -72,7 +82,7 @@ export default function LoginPage() {
         return;
       }
 
-      setNotice("Check your email for the RepWatchr sign-in link. It opens your dashboard after confirmation.");
+      setNotice("Check your email for the RepWatchr sign-in link. It returns you to the record you were following.");
       setMagicLoading(false);
     } catch (magicError) {
       setError(magicError instanceof Error ? magicError.message : "Magic link failed. Check the member database configuration.");
@@ -107,7 +117,7 @@ export default function LoginPage() {
           </p>
 
           <div className="mt-5">
-            <SocialAuthButtons />
+            <SocialAuthButtons nextPath={nextPath} />
             <p className="mt-2 text-xs font-semibold leading-5 text-gray-500">
               Social sign-in creates a RepWatchr account. District-resident verification remains a separate step before
               a vote receives in-district status.
@@ -200,7 +210,10 @@ export default function LoginPage() {
 
           <p className="mt-6 text-center text-sm text-gray-600">
             Don&apos;t have an account?{" "}
-            <Link href="/create-account" className="font-medium text-blue-600 hover:underline">
+            <Link
+              href={`/auth/signup?next=${encodeURIComponent(nextPath)}`}
+              className="font-medium text-blue-600 hover:underline"
+            >
               Sign up
             </Link>
           </p>

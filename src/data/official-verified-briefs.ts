@@ -536,10 +536,467 @@ export const OFFICIAL_VERIFIED_BRIEFS = {
     evidenceNote:
       "Official records document offices, committee assignments, bill histories, and published district figures. Reported items describe what a newsroom observed or was told. Interview statements are attributed to the speaker and are not converted into RepWatchr conclusions.",
   },
+  "leward-j-lafleur-ii": {
+    officialId: "leward-j-lafleur-ii",
+    eyebrow: "Marion County verified brief",
+    title: "County power, public service, and an unresolved record.",
+    summary:
+      "A role-aware review of the Marion County Judge's executive, budget, emergency-management, regional-planning, and constitutional-court record. Official actions, reported allegations, responses, and research gaps remain visibly separate.",
+    storyLead:
+      "Leward J. LaFleur II is a U.S. Navy veteran who was appointed Marion County Judge in August 2018 and began his first elected term in 2019. His public record includes regional transportation leadership, rural-broadband work, emergency declarations, and water advocacy. It also includes reported unwanted-touching allegations that he denies and that had not produced a publicly located charge, conviction, or final adjudication as of this review.",
+    bottomLine:
+      "LaFleur is the incumbent Republican nominee after receiving 1,079 votes in an unopposed 2026 primary. The available record documents county and regional service, but it does not yet support a complete performance grade: RepWatchr still needs multi-year budget and audit trends, Commissioners Court attendance and decisions, contract records, court-administration metrics, and a later authoritative disposition of the reported allegations.",
+    headlineSignal: {
+      value: "1,079",
+      label: "2026 GOP primary votes",
+      detail: "Unopposed primary; not a countywide approval rating",
+    },
+    reviewedThrough: "July 27, 2026",
+    facts: [
+      {
+        id: "county-office",
+        metric: "Since 2019",
+        label: "First elected term",
+        detail:
+          "Commissioners appointed LaFleur in August 2018 after he won the Republican primary; his first elected term began in 2019.",
+        source: reported(
+          "Marion County Judge Lex Jones retires; LaFleur appointed",
+          "https://news-journal.com/2018/08/30/marion-county-judge-lex-jones-retires-lafleur-appointed/",
+          "Longview News-Journal",
+          "2018-08-30",
+        ),
+      },
+      {
+        id: "county-authority",
+        metric: "Countywide",
+        label: "Executive and court authority",
+        detail:
+          "The county judge presides over Commissioners Court and also leads a constitutional county court with criminal, probate, and other jurisdiction defined by Texas law.",
+        source: officialRecord(
+          "Constitutional county courts",
+          "https://www.txcourts.gov/media/1460595/constitutional-county-courts.pdf",
+          "Texas Office of Court Administration",
+        ),
+      },
+      {
+        id: "regional-board",
+        metric: "Selected chair · 2023",
+        label: "CEO–RTPO regional role",
+        detail:
+          "ETCOG says LaFleur joined the board in 2018, its executive committee in 2021, and was selected as chair in 2023.",
+        source: officialRecord(
+          "ETCOG announces new CEO–RTPO leadership",
+          "https://www.etcog.org/etcog-announces-new-leadership-for-ceo-rtpo-board",
+          "East Texas Council of Governments",
+          "2023-05-25",
+        ),
+      },
+      {
+        id: "navy-service",
+        metric: "U.S. Navy",
+        label: "Military service",
+        detail:
+          "LaFleur described returning to East Texas after serving in the U.S. Navy in an ETCOG leadership announcement.",
+        source: officialRecord(
+          "ETCOG announces new CEO–RTPO leadership",
+          "https://www.etcog.org/etcog-announces-new-leadership-for-ceo-rtpo-board",
+          "East Texas Council of Governments",
+          "2023-05-25",
+        ),
+      },
+      {
+        id: "primary-2026",
+        metric: "1,079 votes",
+        label: "2026 Republican primary",
+        detail:
+          "The official Marion County report lists LaFleur as the unopposed Republican nominee, with 594 undervotes.",
+        source: officialRecord(
+          "Official 2026 Republican primary results",
+          "https://marioncountytaxoffice.com/wp-content/uploads/2026/03/OFFICIAL-RESULTS-REPUBLICAN-PARTY.pdf",
+          "Marion County Elections",
+          "2026-03-03",
+        ),
+      },
+      {
+        id: "judicial-education",
+        metric: "Academy fellow",
+        label: "Continuing judicial education",
+        detail:
+          "Marion County announced LaFleur's induction as a Texas Judicial Academy fellow for education beyond statutory requirements.",
+        source: officialRecord(
+          "Judge LaFleur inducted as a Texas Judicial Academy fellow",
+          "https://www.co.marion.tx.us/upload/page/1263/2021/Judge%20LaFleur%20Inducted%20as%20Fellow%20Press%20Release%208-21.pdf",
+          "Marion County",
+          "2021-08-01",
+        ),
+      },
+    ],
+    strengths: [
+      {
+        id: "regional-transportation",
+        title: "Regional transportation and workforce leadership",
+        summary:
+          "Documented service on the 14-county CEO–RTPO board and executive committee, including selection as chair in 2023.",
+        detail:
+          "ETCOG records show LaFleur joined the CEO–RTPO board in 2018, moved to its executive committee in 2021, and was selected as chair in 2023. The board coordinates rural transportation priorities and local workforce-policy responsibilities across East Texas.",
+        sources: [
+          officialRecord(
+            "LaFleur appointed to CEO–RTPO executive committee",
+            "https://www.etcog.org/etcog-ceo-rtpo-board-member-judge-leward-lafleur-appointed-to-executive-committee",
+            "East Texas Council of Governments",
+            "2021-12-15",
+          ),
+          officialRecord(
+            "ETCOG announces new CEO–RTPO leadership",
+            "https://www.etcog.org/etcog-announces-new-leadership-for-ceo-rtpo-board",
+            "East Texas Council of Governments",
+            "2023-05-25",
+          ),
+        ],
+        caution:
+          "Board titles document responsibility and participation; they do not by themselves establish project outcomes for Marion County.",
+      },
+      {
+        id: "rural-broadband",
+        title: "A documented push for rural broadband",
+        summary:
+          "LaFleur described a multi-county broadband project in 2022; later reporting documented fiber construction in parts of Marion County.",
+        detail:
+          "KLTV reported LaFleur working with Harrison and Gregg counties on a broadband project extending toward the Louisiana line. By 2026, local reporting said fiber construction was underway in parts of Marion County while funding and coverage gaps remained.",
+        sources: [
+          reported(
+            "Marion County judge has plan to bring broadband to rural residents",
+            "https://www.kltv.com/2022/05/12/webxtra-marion-county-judge-has-plan-bring-broadband-rural-residents/",
+            "KLTV",
+            "2022-05-12",
+          ),
+          reported(
+            "East Texas broadband expansion advances, but funding and timing hamper projects",
+            "https://marshallnewsmessenger.com/2026/02/02/east-texas-broadband-internet-expansion-advances-but-funding-timing-hamper-some-projects/",
+            "Marshall News Messenger",
+            "2026-02-02",
+          ),
+        ],
+        caution:
+          "Construction in parts of the county is not the same as universal, affordable service. Coverage, adoption, cost, and completion data still need to be tracked.",
+      },
+      {
+        id: "emergency-response",
+        title: "Emergency action during severe weather",
+        summary:
+          "The record includes a 2021 winter-storm disaster response and a signed March 2026 disaster declaration.",
+        detail:
+          "During the February 2021 winter storm, KLTV reported that LaFleur issued a second disaster declaration while the county faced widespread water and power disruption. Marion County also publishes a March 2026 disaster declaration signed under the county judge's emergency authority.",
+        sources: [
+          reported(
+            "Marion County declares disaster again after winter storm",
+            "https://www.kltv.com/2021/02/24/we-need-help-over-here-marion-county-declares-disaster-second-time-following-winter-storm/",
+            "KLTV",
+            "2021-02-24",
+          ),
+          officialRecord(
+            "March 2026 Marion County disaster declaration",
+            "https://www.co.marion.tx.us/upload/page/1263/2026/03-2026%20MC%20Disaster%20Declaration.pdf",
+            "Marion County",
+            "2026-03-01",
+          ),
+        ],
+        caution:
+          "Declarations document the use of emergency authority. A full assessment still requires response times, procurement, recovery spending, and after-action outcomes.",
+      },
+      {
+        id: "water-advocacy",
+        title: "Public opposition to a Lake O' the Pines water transfer",
+        summary:
+          "LaFleur joined local officials and residents opposing a proposed sale of lake water rights to North Texas.",
+        detail:
+          "Reporting documented Marion County's special public meeting and LaFleur's opposition during the regional fight over a proposed Lake O' the Pines water transfer. The broader dispute later produced state-law procedural safeguards.",
+        sources: [
+          reported(
+            "Marion County commissioners fight Lake O' the Pines water sale",
+            "https://www.kltv.com/2025/02/14/marion-county-commissioners-fight-lake-o-pines-water-sale-dfw-area/",
+            "KLTV",
+            "2025-02-14",
+          ),
+          reported(
+            "East Texans unite to stop water sale to Dallas suburbs",
+            "https://www.texastribune.org/2025/04/17/east-texas-defends-water-lake-the-pines/",
+            "The Texas Tribune",
+            "2025-04-17",
+          ),
+        ],
+        caution:
+          "The documented record supports public opposition and advocacy, not sole credit for stopping or permanently preventing a transfer.",
+      },
+      {
+        id: "judicial-education",
+        title: "Judicial education beyond the statutory minimum",
+        summary:
+          "An official county announcement documents his induction as a Texas Judicial Academy fellow.",
+        detail:
+          "Marion County's 2021 announcement says LaFleur completed education beyond the statutory requirement for county judges and was inducted as a Texas Judicial Academy fellow.",
+        sources: [
+          officialRecord(
+            "Judge LaFleur inducted as a Texas Judicial Academy fellow",
+            "https://www.co.marion.tx.us/upload/page/1263/2021/Judge%20LaFleur%20Inducted%20as%20Fellow%20Press%20Release%208-21.pdf",
+            "Marion County",
+            "2021-08-01",
+          ),
+        ],
+        caution:
+          "Training is relevant preparation, but it is not a substitute for docket, disposition, recusal, access, or court-administration performance data.",
+      },
+    ],
+    concerns: [
+      {
+        id: "reported-allegations",
+        title: "Reported allegations, explicit denials, and no located final disposition",
+        summary:
+          "Two people reportedly alleged unwanted sexual touching connected to a 2025 Halloween gathering. LaFleur denies both allegations.",
+        detail:
+          "CBS19, KLTV, and the News-Journal reported separate allegations and a changing referral history. On April 21, 2026, the district attorney said LaFleur had not been charged; LaFleur's attorney denied both allegations. RepWatchr located no later authoritative arrest, charge, conviction, acquittal, dismissal, or final adjudication through July 27, 2026.",
+        sources: [
+          reported(
+            "Marion County judge denies groping allegation",
+            "https://www.cbs19.tv/article/news/local/marion-county-judge-leward-lafleur-denies-groping-teen-party/501-525ec554-78d1-440a-9fd7-eb2730adbb4e",
+            "CBS19",
+            "2026-02-23",
+          ),
+          reported(
+            "Marion County judge denies allegations of unwanted touching",
+            "https://www.kltv.com/2026/04/21/marion-county-judge-denies-allegations-unwanted-touching-halloween-party/",
+            "KLTV",
+            "2026-04-21",
+          ),
+          reported(
+            "District attorney to review additional complaint",
+            "https://news-journal.com/2026/04/21/da-to-review-additional-complaint-possible-felony-charges-against-marion-county-judge/",
+            "Longview News-Journal",
+            "2026-04-21",
+          ),
+        ],
+        response:
+          "LaFleur and his attorney denied the allegations. The April 21 reporting said he had not been charged.",
+        caution:
+          "Allegations are not findings of guilt. RepWatchr does not treat them as proven misconduct or use them to calculate a performance grade.",
+      },
+    ],
+    turningPoints: [
+      {
+        id: "appointment-2018",
+        dateLabel: "Aug. 2018",
+        label: "County leadership",
+        title: "Commissioners appoint LaFleur to the county judge's office",
+        detail:
+          "Commissioners selected him to complete the retiring county judge's term after LaFleur won the Republican primary.",
+        sources: [
+          reported(
+            "Marion County Judge Lex Jones retires; LaFleur appointed",
+            "https://news-journal.com/2018/08/30/marion-county-judge-lex-jones-retires-lafleur-appointed/",
+            "Longview News-Journal",
+            "2018-08-30",
+          ),
+        ],
+      },
+      {
+        id: "winter-storm-2021",
+        dateLabel: "Feb. 2021",
+        label: "Emergency management",
+        title: "A second disaster declaration follows the winter storm",
+        detail:
+          "KLTV reported severe water and power disruption as LaFleur sought additional county relief.",
+        sources: [
+          reported(
+            "Marion County declares disaster again after winter storm",
+            "https://www.kltv.com/2021/02/24/we-need-help-over-here-marion-county-declares-disaster-second-time-following-winter-storm/",
+            "KLTV",
+            "2021-02-24",
+          ),
+        ],
+      },
+      {
+        id: "rtpo-chair-2023",
+        dateLabel: "May 2023",
+        label: "Regional leadership",
+        title: "CEO–RTPO board selects LaFleur as chair",
+        detail:
+          "The role followed board service beginning in 2018 and executive-committee service beginning in 2021.",
+        sources: [
+          officialRecord(
+            "ETCOG announces new CEO–RTPO leadership",
+            "https://www.etcog.org/etcog-announces-new-leadership-for-ceo-rtpo-board",
+            "East Texas Council of Governments",
+            "2023-05-25",
+          ),
+        ],
+      },
+      {
+        id: "water-dispute-2025",
+        dateLabel: "Feb.–Apr. 2025",
+        label: "Water policy",
+        title: "LaFleur joins opposition to a proposed lake-water transfer",
+        detail:
+          "Marion County's public meeting became part of a broader East Texas campaign against the proposal.",
+        sources: [
+          reported(
+            "Marion County commissioners fight Lake O' the Pines water sale",
+            "https://www.kltv.com/2025/02/14/marion-county-commissioners-fight-lake-o-pines-water-sale-dfw-area/",
+            "KLTV",
+            "2025-02-14",
+          ),
+          reported(
+            "East Texans unite to stop water sale to Dallas suburbs",
+            "https://www.texastribune.org/2025/04/17/east-texas-defends-water-lake-the-pines/",
+            "The Texas Tribune",
+            "2025-04-17",
+          ),
+        ],
+      },
+      {
+        id: "primary-and-allegations-2026",
+        dateLabel: "Mar.–Apr. 2026",
+        label: "Election and public scrutiny",
+        title: "An unopposed primary win is followed by renewed allegation reporting",
+        detail:
+          "The official primary report lists 1,079 votes for LaFleur. April reporting described an additional allegation, his denial, and further prosecutorial review without a charge at that time.",
+        sources: [
+          officialRecord(
+            "Official 2026 Republican primary results",
+            "https://marioncountytaxoffice.com/wp-content/uploads/2026/03/OFFICIAL-RESULTS-REPUBLICAN-PARTY.pdf",
+            "Marion County Elections",
+            "2026-03-03",
+          ),
+          reported(
+            "Marion County judge denies allegations of unwanted touching",
+            "https://www.kltv.com/2026/04/21/marion-county-judge-denies-allegations-unwanted-touching-halloween-party/",
+            "KLTV",
+            "2026-04-21",
+          ),
+        ],
+      },
+    ],
+    timeline: [
+      {
+        id: "appointed-county-judge",
+        dateLabel: "Aug. 30, 2018",
+        title: "Appointed Marion County Judge",
+        detail:
+          "Commissioners appointed LaFleur to complete the retiring county judge's term.",
+        source: reported(
+          "Marion County Judge Lex Jones retires; LaFleur appointed",
+          "https://news-journal.com/2018/08/30/marion-county-judge-lex-jones-retires-lafleur-appointed/",
+          "Longview News-Journal",
+          "2018-08-30",
+        ),
+      },
+      {
+        id: "winter-storm-disaster",
+        dateLabel: "Feb. 24, 2021",
+        title: "Winter-storm disaster response",
+        detail:
+          "KLTV reported a second county disaster declaration amid continued water and power disruption.",
+        source: reported(
+          "Marion County declares disaster again after winter storm",
+          "https://www.kltv.com/2021/02/24/we-need-help-over-here-marion-county-declares-disaster-second-time-following-winter-storm/",
+          "KLTV",
+          "2021-02-24",
+        ),
+      },
+      {
+        id: "judicial-academy-fellow",
+        dateLabel: "Aug. 2021",
+        title: "Inducted as a Texas Judicial Academy fellow",
+        detail:
+          "The county announcement cites judicial education beyond statutory requirements.",
+        source: officialRecord(
+          "Judge LaFleur inducted as a Texas Judicial Academy fellow",
+          "https://www.co.marion.tx.us/upload/page/1263/2021/Judge%20LaFleur%20Inducted%20as%20Fellow%20Press%20Release%208-21.pdf",
+          "Marion County",
+          "2021-08-01",
+        ),
+      },
+      {
+        id: "broadband-plan",
+        dateLabel: "May 12, 2022",
+        title: "Multi-county broadband plan described publicly",
+        detail:
+          "LaFleur told KLTV Marion County was working with Harrison and Gregg counties on expansion toward the Louisiana line.",
+        source: reported(
+          "Marion County judge has plan to bring broadband to rural residents",
+          "https://www.kltv.com/2022/05/12/webxtra-marion-county-judge-has-plan-bring-broadband-rural-residents/",
+          "KLTV",
+          "2022-05-12",
+        ),
+      },
+      {
+        id: "disaster-declaration-2026",
+        dateLabel: "Mar. 2026",
+        title: "County disaster declaration signed",
+        detail:
+          "The official county document records LaFleur's use of emergency authority.",
+        source: officialRecord(
+          "March 2026 Marion County disaster declaration",
+          "https://www.co.marion.tx.us/upload/page/1263/2026/03-2026%20MC%20Disaster%20Declaration.pdf",
+          "Marion County",
+          "2026-03-01",
+        ),
+      },
+      {
+        id: "allegation-review-2026",
+        dateLabel: "Apr. 21, 2026",
+        title: "Additional allegation and denial reported",
+        detail:
+          "KLTV reported further review, LaFleur's denial, and that he had not been charged.",
+        source: reported(
+          "Marion County judge denies allegations of unwanted touching",
+          "https://www.kltv.com/2026/04/21/marion-county-judge-denies-allegations-unwanted-touching-halloween-party/",
+          "KLTV",
+          "2026-04-21",
+        ),
+      },
+    ],
+    media: {
+      title: "LaFleur on the Lake O' the Pines water-rights dispute",
+      description:
+        "This public video records LaFleur's own account of the water issue. It verifies what he said, not every underlying factual claim or the eventual policy outcome.",
+      embedUrl: "https://www.youtube-nocookie.com/embed/3oZgRLoGWDs",
+      originalUrl: "https://www.youtube.com/watch?v=3oZgRLoGWDs",
+      source: {
+        title: "Marion County Judge LaFleur on water rights",
+        url: "https://www.youtube.com/watch?v=3oZgRLoGWDs",
+        publisher: "Judge Leward J. LaFleur public video",
+        kind: "interview_statement",
+      },
+    },
+    evidenceNote:
+      "Official records document the office, jurisdiction, election total, declarations, training, and regional-board roles. Reporting documents observed projects, attributed statements, allegations, denials, and the procedural status known at publication. Missing budget, attendance, contracting, access, and court-administration analysis is labeled as a RepWatchr research gap—not an adverse finding. Reported allegations are not treated as proven misconduct or used to calculate a grade.",
+  },
 } as const satisfies Record<string, OfficialVerifiedBriefData>;
 
 export type OfficialVerifiedBriefId = keyof typeof OFFICIAL_VERIFIED_BRIEFS;
 
 export function getOfficialVerifiedBrief(officialId: string): OfficialVerifiedBriefData | undefined {
   return OFFICIAL_VERIFIED_BRIEFS[officialId as OfficialVerifiedBriefId];
+}
+
+export function getOfficialVerifiedBriefSources(
+  brief: OfficialVerifiedBriefData | undefined,
+): VerifiedBriefSource[] {
+  if (!brief) return [];
+
+  const sources = [
+    ...brief.facts.map((fact) => fact.source),
+    ...brief.strengths.flatMap((item) => item.sources),
+    ...brief.concerns.flatMap((item) => item.sources),
+    ...brief.turningPoints.flatMap((item) => item.sources),
+    ...brief.timeline.map((item) => item.source),
+    brief.media.source,
+  ];
+  const seen = new Set<string>();
+
+  return sources.filter((source) => {
+    if (!source.url || seen.has(source.url)) return false;
+    seen.add(source.url);
+    return true;
+  });
 }

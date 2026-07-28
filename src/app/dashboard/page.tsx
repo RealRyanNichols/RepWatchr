@@ -5,7 +5,13 @@ import { createServerSupabaseClient } from "@/lib/supabase-server";
 
 export const dynamic = "force-dynamic";
 
-export default async function DashboardPage() {
+type DashboardSearchParams = Promise<Record<string, string | string[] | undefined>>;
+
+export default async function DashboardPage({
+  searchParams,
+}: {
+  searchParams: DashboardSearchParams;
+}) {
   if (!process.env.NEXT_PUBLIC_SUPABASE_URL || !process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY) {
     return (
       <div className="mx-auto max-w-xl px-4 py-16 text-center sm:px-6 lg:px-8">
@@ -30,7 +36,18 @@ export default async function DashboardPage() {
   } = await supabase.auth.getUser();
 
   if (!user) {
-    redirect("/auth/login?next=/dashboard");
+    const requested = await searchParams;
+    const returnParams = new URLSearchParams();
+    for (const key of ["watch", "target"] as const) {
+      const value = requested[key];
+      if (typeof value === "string") {
+        returnParams.set(key, value);
+      }
+    }
+    const nextPath = returnParams.size > 0
+      ? `/dashboard?${returnParams.toString()}`
+      : "/dashboard";
+    redirect(`/auth/login?next=${encodeURIComponent(nextPath)}`);
   }
 
   return <RepWatchrMemberDashboard initialEmail={user.email ?? ""} />;

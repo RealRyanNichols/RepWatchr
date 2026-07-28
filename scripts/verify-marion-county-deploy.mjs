@@ -1,15 +1,41 @@
 const racePath = "/elections/texas/marion-county-judge-2026";
+const dinaProfilePath = "/candidates/dina-k-carroll";
+const lafleurProfilePath = "/officials/leward-j-lafleur-ii";
 const portraitPaths = [
   "/images/races/marion-county-judge-2026/dina-carroll-portrait.jpg",
   "/images/races/marion-county-judge-2026/leward-lafleur-portrait.jpg",
 ];
 
-const requiredHtmlMarkers = [
-  "Dina K. Carroll",
-  "Leward J. LaFleur II",
-  "Highest verified public image",
-  "Full profiles",
-  "Accountability",
+const routeChecks = [
+  {
+    path: racePath,
+    label: "Marion County race route",
+    markers: [
+      "Dina K. Carroll",
+      "Leward J. LaFleur II",
+      "See the people—not campaign placeholders",
+      "dina-carroll-portrait.jpg",
+      "leward-lafleur-portrait.jpg",
+    ],
+  },
+  {
+    path: dinaProfilePath,
+    label: "Dina Carroll profile route",
+    markers: [
+      "Dina K. Carroll",
+      "Current ballot status",
+      "dina-carroll-portrait.jpg",
+    ],
+  },
+  {
+    path: lafleurProfilePath,
+    label: "Leward LaFleur profile route",
+    markers: [
+      "Leward J. LaFleur II",
+      "Marion County Judge",
+      "leward-lafleur-portrait.jpg",
+    ],
+  },
 ];
 
 const forbiddenPlaceholderMarkers = [
@@ -68,38 +94,73 @@ async function fetchExact(url, label) {
   return response;
 }
 
+function readJpegDimensions(bytes) {
+  let offset = 2;
+  while (offset + 8 < bytes.length) {
+    if (bytes[offset] !== 0xff) {
+      offset += 1;
+      continue;
+    }
+
+    const marker = bytes[offset + 1];
+    const length = (bytes[offset + 2] << 8) + bytes[offset + 3];
+    const isStartOfFrame =
+      marker >= 0xc0 &&
+      marker <= 0xcf &&
+      ![0xc4, 0xc8, 0xcc].includes(marker);
+
+    if (isStartOfFrame) {
+      return {
+        height: (bytes[offset + 5] << 8) + bytes[offset + 6],
+        width: (bytes[offset + 7] << 8) + bytes[offset + 8],
+      };
+    }
+
+    if (length < 2) break;
+    offset += 2 + length;
+  }
+
+  return null;
+}
+
 const baseUrl = resolveBaseUrl(
   process.argv[2] || process.env.REPWATCHR_DEPLOY_BASE_URL,
 );
 const failures = [];
 
-try {
-  const routeUrl = new URL(racePath, baseUrl);
-  const response = await fetchExact(routeUrl, "Marion County race route");
-  const contentType = response.headers.get("content-type") || "";
+for (const routeCheck of routeChecks) {
+  try {
+    const routeUrl = new URL(routeCheck.path, baseUrl);
+    const response = await fetchExact(routeUrl, routeCheck.label);
+    const contentType = response.headers.get("content-type") || "";
 
-  if (!contentType.toLowerCase().includes("text/html")) {
-    throw new Error(
-      `Marion County race route returned non-HTML content-type: ${contentType || "missing"}`,
-    );
-  }
-
-  const html = await response.text();
-  const normalizedHtml = html.toLowerCase();
-
-  for (const marker of requiredHtmlMarkers) {
-    if (!normalizedHtml.includes(marker.toLowerCase())) {
-      failures.push(`race HTML is missing required marker: ${marker}`);
+    if (!contentType.toLowerCase().includes("text/html")) {
+      throw new Error(
+        `${routeCheck.label} returned non-HTML content-type: ${contentType || "missing"}`,
+      );
     }
-  }
 
-  for (const marker of forbiddenPlaceholderMarkers) {
-    if (normalizedHtml.includes(marker.toLowerCase())) {
-      failures.push(`race HTML still contains placeholder marker: ${marker}`);
+    const html = await response.text();
+    const normalizedHtml = html.toLowerCase();
+
+    for (const marker of routeCheck.markers) {
+      if (!normalizedHtml.includes(marker.toLowerCase())) {
+        failures.push(`${routeCheck.label} is missing required marker: ${marker}`);
+      }
     }
+
+    for (const marker of forbiddenPlaceholderMarkers) {
+      if (normalizedHtml.includes(marker.toLowerCase())) {
+        failures.push(`${routeCheck.label} still contains placeholder marker: ${marker}`);
+      }
+    }
+
+    if (!normalizedHtml.includes('property="og:image"')) {
+      failures.push(`${routeCheck.label} is missing an Open Graph image`);
+    }
+  } catch (error) {
+    failures.push(error.message);
   }
-} catch (error) {
-  failures.push(error.message);
 }
 
 for (const portraitPath of portraitPaths) {
@@ -123,6 +184,13 @@ for (const portraitPath of portraitPaths) {
     ) {
       throw new Error(`portrait ${portraitPath} did not return a valid JPEG body`);
     }
+
+    const dimensions = readJpegDimensions(bytes);
+    if (!dimensions || dimensions.width < 800 || dimensions.height < 800) {
+      throw new Error(
+        `portrait ${portraitPath} is below the 800 × 800 release threshold`,
+      );
+    }
   } catch (error) {
     failures.push(error.message);
   }
@@ -137,5 +205,5 @@ if (failures.length > 0) {
 }
 
 console.log(`Marion County post-deploy verification passed for ${baseUrl.origin}.`);
-console.log(`Verified route: ${new URL(racePath, baseUrl)}`);
+console.log(`Verified routes: ${routeChecks.length}`);
 console.log(`Verified portraits: ${portraitPaths.length}`);

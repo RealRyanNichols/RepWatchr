@@ -20,7 +20,10 @@ import { getCongressTradingSnapshot } from "@/lib/congress-trading";
 import { buildOgImageUrl, buildRepWatchrMetadata } from "@/lib/repwatchr-seo";
 import { breadcrumbJsonLd, jsonLd, profilePageJsonLd } from "@/lib/structured-data";
 import { buildOfficialDossier } from "@/lib/official-dossier";
-import { getOfficialVerifiedBrief } from "@/data/official-verified-briefs";
+import {
+  getOfficialVerifiedBrief,
+  getOfficialVerifiedBriefSources,
+} from "@/data/official-verified-briefs";
 import { getOfficialPerformanceGrade } from "@/data/official-performance-grades";
 import { getOfficeAccountabilityProfile } from "@/lib/official-accountability";
 
@@ -117,6 +120,12 @@ export default async function OfficialProfilePage({
     buildoutPercent,
     missingItems: buildoutMissingItems,
   });
+  const verifiedBriefSources = getOfficialVerifiedBriefSources(verifiedBrief);
+  const sourceUrls = new Set(
+    dossier.sourceGroups.flatMap((group) => group.links.map((link) => link.url)),
+  );
+  verifiedBriefSources.forEach((source) => sourceUrls.add(source.url));
+  const completeSourceCount = sourceUrls.size;
 
   const profileDescription = `Source-backed RepWatchr profile for ${official.name}, ${official.position} serving ${official.jurisdiction}.`;
   const profileStructuredData = profilePageJsonLd({
@@ -151,7 +160,7 @@ export default async function OfficialProfilePage({
       />
       <OfficialProfileHero
         official={official}
-        sourceCount={dossier.sourceCount}
+        sourceCount={completeSourceCount}
         buildoutPercent={buildoutPercent}
         buildoutComplete={buildoutComplete}
         voteRecord={publicVoteRecord}
@@ -182,7 +191,7 @@ export default async function OfficialProfilePage({
         relatedNews={relatedNews}
         redFlags={sourceBackedRedFlags}
         overlay={profileOverlay}
-        sourceCount={dossier.sourceCount}
+        sourceCount={completeSourceCount}
         buildoutPercent={buildoutPercent}
         buildoutComplete={buildoutComplete}
         missingItems={buildoutMissingItems}
@@ -195,11 +204,15 @@ export default async function OfficialProfilePage({
     return (
       <div className="min-h-screen bg-[#f4f1e8] text-[#15212b]">
         {sharedProfileShell}
-        <ProfileQuickNav dashboardMode />
+        <ProfileQuickNav
+          dashboardMode
+          hasVerifiedBrief
+          dashboardRecordLabel={officeAccountability.decisionLabel}
+        />
         <OfficialStoryProfile
           official={official}
           brief={verifiedBrief}
-          sourceCount={dossier.sourceCount}
+          sourceCount={completeSourceCount}
         />
         {universalDashboard}
       </div>
@@ -209,7 +222,10 @@ export default async function OfficialProfilePage({
   return (
     <div className="min-h-screen bg-[#f4f1e8] text-[#15212b]">
       {sharedProfileShell}
-      <ProfileQuickNav dashboardMode />
+      <ProfileQuickNav
+        dashboardMode
+        dashboardRecordLabel={officeAccountability.decisionLabel}
+      />
       {universalDashboard}
     </div>
   );

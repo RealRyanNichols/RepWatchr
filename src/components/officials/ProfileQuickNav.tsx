@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 
 const coreSections = [
   { id: "snapshot", label: "60-second brief" },
@@ -19,30 +19,36 @@ const storySections = [
   { id: "participate", label: "Community" },
   { id: "sources", label: "Sources" },
 ];
-const dashboardSections = [
-  { id: "record", label: "Voting record" },
-  { id: "sentiment", label: "Public sentiment" },
-  { id: "coverage", label: "Coverage" },
-  { id: "sources", label: "Sources" },
-  { id: "discussion", label: "Discussion" },
-];
-
 export default function ProfileQuickNav({
   hasVerifiedBrief = false,
   storyMode = false,
   dashboardMode = false,
+  dashboardRecordLabel = "Office record",
 }: {
   hasVerifiedBrief?: boolean;
   storyMode?: boolean;
   dashboardMode?: boolean;
+  dashboardRecordLabel?: string;
 }) {
-  const sections = dashboardMode
-    ? dashboardSections
-    : storyMode
-      ? storySections
-      : hasVerifiedBrief
-        ? verifiedSections
-        : coreSections;
+  const sections = useMemo(() => {
+    if (dashboardMode) {
+      return [
+        ...(hasVerifiedBrief
+          ? [
+              { id: "verified-brief", label: "Verified brief" },
+              { id: "documented-record", label: "Good + scrutiny" },
+            ]
+          : []),
+        { id: "record", label: dashboardRecordLabel },
+        { id: "sentiment", label: "Public sentiment" },
+        { id: "coverage", label: "Coverage" },
+        { id: "sources", label: "Sources" },
+        { id: "discussion", label: "Discussion" },
+      ];
+    }
+    if (storyMode) return storySections;
+    return hasVerifiedBrief ? verifiedSections : coreSections;
+  }, [dashboardMode, dashboardRecordLabel, hasVerifiedBrief, storyMode]);
   const [activeId, setActiveId] = useState(sections[0].id);
 
   useEffect(() => {

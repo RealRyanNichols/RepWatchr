@@ -3,6 +3,7 @@
 import { useMemo, useState } from "react";
 import { createClient } from "@/lib/supabase";
 import { trackRepWatchrEvent } from "@/lib/client-analytics";
+import { safeNextPath } from "@/lib/safe-next-path";
 
 type SocialProvider = "facebook" | "twitter";
 
@@ -29,7 +30,8 @@ export default function SocialAuthButtons({
     setLoadingProvider(provider);
 
     try {
-      const redirectTo = `${window.location.origin}/auth/callback?next=${encodeURIComponent(nextPath)}`;
+      const safeReturnPath = safeNextPath(nextPath);
+      const redirectTo = `${window.location.origin}/auth/callback?next=${encodeURIComponent(safeReturnPath)}`;
       const { error: oauthError } = await supabase.auth.signInWithOAuth({
         provider,
         options: { redirectTo },
@@ -43,7 +45,7 @@ export default function SocialAuthButtons({
 
       trackRepWatchrEvent("social_login_started", {
         provider: provider === "twitter" ? "x" : provider,
-        next_path: nextPath,
+        next_path: safeReturnPath,
       });
     } catch (oauthError) {
       setError(oauthError instanceof Error ? oauthError.message : "Social sign-in could not start.");

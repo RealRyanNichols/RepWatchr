@@ -188,6 +188,48 @@ function SourceLink({
   );
 }
 
+function HeroCandidate({
+  href,
+  src,
+  alt,
+  status,
+  name,
+  role,
+  position,
+}: {
+  href: string;
+  src: string;
+  alt: string;
+  status: string;
+  name: string;
+  role: string;
+  position: string;
+}) {
+  return (
+    <Link
+      href={href}
+      className={styles.heroCandidate}
+    >
+      <Image
+        src={src}
+        alt={alt}
+        fill
+        priority
+        quality={90}
+        sizes="(max-width: 640px) 44vw, (max-width: 960px) 300px, 240px"
+        className={styles.heroCandidateImage}
+        style={{ objectPosition: position }}
+      />
+      <span className={styles.heroCandidateShade} aria-hidden="true" />
+      <span className={styles.heroCandidateStatus}>{status}</span>
+      <span className={styles.heroCandidateCopy}>
+        <strong>{name}</strong>
+        <small>{role}</small>
+      </span>
+    </Link>
+  );
+}
+
 export default function FlagshipRaceExperience() {
   const pollEnabled =
     repwatchrFeatureFlags.racePollsV1 &&
@@ -214,34 +256,57 @@ export default function FlagshipRaceExperience() {
                 Leward LaFleur
               </h1>
               <p className={styles.dek}>
-                One incumbent. One declared write-in challenger. A countywide office with
-                real power over budgets, emergencies, public meetings and the constitutional
-                county court.
+                County budgets, emergencies, open meetings and the constitutional county
+                court are on the ballot.
               </p>
               <div className={styles.heroActions}>
-                <a href="#community-poll" className={styles.primaryAction}>Weigh in</a>
-                <a href="#record" className={styles.secondaryAction}>See the record</a>
+                <a href="#candidates" className={styles.primaryAction}>Compare profiles</a>
+                <a href="#record" className={styles.secondaryAction}>See the evidence</a>
               </div>
             </div>
 
-            <aside className={styles.electionPlate} aria-label="Election status">
-              <p>General election</p>
-              <strong>Nov. 3</strong>
-              <span>2026</span>
-              <dl>
-                <div>
-                  <dt>Office</dt>
-                  <dd>County Judge</dd>
+            <aside className={styles.heroMatchup} aria-label="Candidates and election status">
+              <div className={styles.heroCandidates}>
+                <HeroCandidate
+                  href="/candidates/dina-k-carroll"
+                  src="/images/races/marion-county-judge-2026/dina-carroll-portrait.jpg"
+                  alt="Dina K. Carroll holding a kitten"
+                  status="Announced write-in · qualification pending"
+                  name="Dina Carroll"
+                  role="Challenger"
+                  position="50% 38%"
+                />
+                <span className={styles.heroVersus} aria-hidden="true">VS</span>
+                <HeroCandidate
+                  href="/officials/leward-j-lafleur-ii"
+                  src="/images/races/marion-county-judge-2026/leward-lafleur-portrait.jpg"
+                  alt="Leward J. LaFleur II wearing a suit outside a stone-columned public building"
+                  status="Republican nominee · incumbent"
+                  name="Leward LaFleur"
+                  role="County judge"
+                  position="50% 30%"
+                />
+              </div>
+              <div className={styles.electionStrip}>
+                <div className={styles.electionDate}>
+                  <span>General election</span>
+                  <strong>Nov. 3, 2026</strong>
                 </div>
-                <div>
-                  <dt>Electorate</dt>
-                  <dd>Marion County</dd>
-                </div>
-                <div>
-                  <dt>Race status</dt>
-                  <dd>Write-in challenge</dd>
-                </div>
-              </dl>
+                <dl className={styles.electionFacts}>
+                  <div>
+                    <dt>Office</dt>
+                    <dd>County Judge</dd>
+                  </div>
+                  <div>
+                    <dt>Electorate</dt>
+                    <dd>Marion County</dd>
+                  </div>
+                  <div>
+                    <dt>Race status</dt>
+                    <dd>Write-in challenge</dd>
+                  </div>
+                </dl>
+              </div>
             </aside>
           </div>
           <p className={styles.heroImageDisclosure}>
@@ -306,7 +371,7 @@ export default function FlagshipRaceExperience() {
             />
             <div className={styles.candidateBody}>
               <div className={styles.candidateIdentity}>
-                <p>Declared write-in · qualification pending</p>
+                <p>Announced write-in · qualification pending</p>
                 <h3>Dina K. Carroll</h3>
                 <span>Jefferson small-business owner, educator and community advocate</span>
               </div>
@@ -334,7 +399,8 @@ export default function FlagshipRaceExperience() {
                 </div>
               </dl>
               <div className={styles.candidateLinks}>
-                <a href="#dina-profile">Read full dossier</a>
+                <Link href="/candidates/dina-k-carroll">Open full candidate profile</Link>
+                <a href="#dina-profile">Read on-page dossier</a>
                 <SourceLink href="https://writeindina.com/">Campaign website</SourceLink>
                 <SourceLink href="https://www.facebook.com/writeindina/">Facebook</SourceLink>
                 <SourceLink href="https://www.instagram.com/dcjcarroll2/">Instagram</SourceLink>
@@ -385,8 +451,8 @@ export default function FlagshipRaceExperience() {
                 </div>
               </dl>
               <div className={styles.candidateLinks}>
-                <a href="#lafleur-profile">Read full dossier</a>
-                <Link href="/officials/leward-j-lafleur-ii">Open official profile</Link>
+                <Link href="/officials/leward-j-lafleur-ii">Open full official profile</Link>
+                <a href="#lafleur-profile">Read on-page dossier</a>
                 <SourceLink href="https://www.co.marion.tx.us/page/marion.County.Judge">Official office</SourceLink>
                 <SourceLink href="https://www.facebook.com/lewardformarioncounty/">Facebook</SourceLink>
               </div>
@@ -497,7 +563,7 @@ export default function FlagshipRaceExperience() {
                 <p className={styles.sourceLabel}>Documented experience</p>
                 <ul>
                   <li>Marion County Judge since 2018; current Republican nominee.</li>
-                  <li>CEO–RTPO board member since 2018, executive committee since 2021 and chair since 2023.</li>
+                  <li>CEO–RTPO board member since 2018, executive committee member since 2021 and selected as chair in 2023.</li>
                   <li>Texas Judicial Academy fellow for education beyond statutory requirements.</li>
                   <li>Signed county disaster and burn-ban orders under emergency authority.</li>
                 </ul>
@@ -507,7 +573,7 @@ export default function FlagshipRaceExperience() {
                 <ul>
                   <li>Opposed a proposed transfer of Lake O’ the Pines water rights.</li>
                   <li>Participated in regional passenger-rail planning through the CEO–RTPO coalition.</li>
-                  <li>Chairs the East Texas Water Advisory Board, according to 2026 reporting.</li>
+                  <li>A current official roster for a reported East Texas water-advisory role was not located.</li>
                   <li>No stand-alone 2026 campaign platform was located.</li>
                 </ul>
               </section>
@@ -605,7 +671,7 @@ export default function FlagshipRaceExperience() {
             <ul>
               <li>
                 <strong>Regional leadership</strong>
-                <span>Service on the East Texas CEO–RTPO board, executive committee and chair role is documented.</span>
+                <span>ETCOG documents board and executive-committee service, plus his selection as chair in 2023.</span>
               </li>
               <li>
                 <strong>Water advocacy</strong>
@@ -692,7 +758,7 @@ export default function FlagshipRaceExperience() {
           <article className={styles.ballotCard}>
             <p className={`${styles.statusBadge} ${styles.pendingBadge}`}>Verification pending</p>
             <span className={styles.ballotCandidate}>Dina K. Carroll</span>
-            <h3>Declared write-in challenger</h3>
+            <h3>Announced write-in challenger</h3>
             <dl>
               <div><dt>Treasurer form</dt><dd>Posted by county</dd></div>
               <div><dt>Declaration</dt><dd>Campaign says filed</dd></div>

@@ -1,3 +1,7 @@
+import {
+  getOfficialVerifiedBrief,
+  getOfficialVerifiedBriefSources,
+} from "@/data/official-verified-briefs";
 import { getFundingSummary, getOfficialById, getPublicVoteRecord, getRedFlags, getScoreCard } from "@/lib/data";
 import { formatLevelName } from "@/lib/formatting";
 import {
@@ -15,7 +19,15 @@ export async function GET(request: Request) {
   const redFlags = official ? getRedFlags(official.id) : [];
   const funding = official ? getFundingSummary(official.id) : undefined;
   const voteRecord = official ? getPublicVoteRecord(official.id) : undefined;
-  const sourceCount = (official?.sourceLinks?.length ?? 0) + (funding?.sources.length ?? 0) + (voteRecord?.sourceLinks.length ?? 0);
+  const verifiedBrief = official ? getOfficialVerifiedBrief(official.id) : undefined;
+  const sourceCount = new Set([
+    ...(official?.sourceLinks ?? []).map((source) => source.url),
+    ...(official?.contactInfo.website ? [official.contactInfo.website] : []),
+    ...(official?.photoSourceUrl ? [official.photoSourceUrl] : []),
+    ...(funding?.sources ?? []),
+    ...(voteRecord?.sourceLinks ?? []),
+    ...getOfficialVerifiedBriefSources(verifiedBrief).map((source) => source.url),
+  ]).size;
   const path = official ? `/officials/${official.id}` : "/officials";
   const hasFeaturedPhoto = Boolean(official?.featuredPhoto);
 

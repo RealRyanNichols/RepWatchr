@@ -28,7 +28,7 @@ export async function GET(request: Request) {
         ? `${race.shortTitle}: compare the field`
         : `${race.shortTitle}: open the record`;
     const supportLine = isMarionCountyJudge
-      ? "A declared write-in challenge. Compare the sourced record, unresolved questions, and current qualification status."
+      ? "An announced write-in challenge. Compare the sourced record, unresolved questions, and current qualification status."
       : isComparison
         ? "Compare candidate profiles, public sources, funding paths, and missing records side by side."
         : race.summary;
