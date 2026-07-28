@@ -90,6 +90,26 @@ function embeddedAssetData(pathOrUrl: string) {
           "public/images/og/marion-county-judge-2026-hero.jpg",
         ),
       );
+    } else if (
+      pathOrUrl ===
+      "/images/races/marion-county-judge-2026/dina-carroll-portrait.jpg"
+    ) {
+      bytes = readFileSync(
+        join(
+          process.cwd(),
+          "public/images/races/marion-county-judge-2026/dina-carroll-portrait.jpg",
+        ),
+      );
+    } else if (
+      pathOrUrl ===
+      "/images/races/marion-county-judge-2026/leward-lafleur-portrait.jpg"
+    ) {
+      bytes = readFileSync(
+        join(
+          process.cwd(),
+          "public/images/races/marion-county-judge-2026/leward-lafleur-portrait.jpg",
+        ),
+      );
     } else {
       return undefined;
     }

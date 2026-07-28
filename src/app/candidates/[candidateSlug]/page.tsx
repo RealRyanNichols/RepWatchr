@@ -187,6 +187,9 @@ export default async function CandidateProfilePage({
   if (!candidate) notFound();
 
   const reviewedOn = formatReviewDate(candidate.lastVerifiedAt);
+  const writeInRulesSource = candidate.sources.find(
+    (source) => source.id === "texas-write-in-rules",
+  );
   const profileJsonLd = {
     "@context": "https://schema.org",
     "@type": "ProfilePage",
@@ -352,6 +355,22 @@ export default async function CandidateProfilePage({
               campaign-treasurer appointment. RepWatchr has not located an accepted write-in
               declaration or county-published qualified-write-in roster naming her. Those are
               different records, so this page does not collapse them into one claim.
+            </p>
+            <p>
+              Texas sets 5 p.m. August 17, 2026 as the write-in filing deadline for this
+              general election.
+              {writeInRulesSource ? (
+                <>
+                  {" "}
+                  <a
+                    href={writeInRulesSource.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Read the official write-in procedures ↗
+                  </a>
+                </>
+              ) : null}
             </p>
           </div>
           <aside>
