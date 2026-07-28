@@ -276,8 +276,10 @@
 
 @media (min-width: 64rem) {
   .hero {
-    color: var(--ink);
-    background: var(--paper);
+    color: #f8fafc;
+    background:
+      radial-gradient(circle at 78% 18%, rgba(35, 71, 106, 0.38), transparent 34%),
+      #07182f;
   }
 
   .heroShell {
@@ -302,32 +304,33 @@
     grid-template-columns: minmax(0, 1fr) auto;
     gap: 2rem;
     padding-bottom: 1rem;
-    border-bottom: 1px solid #cbc4b5;
+    border-bottom: 1px solid var(--rule-dark);
   }
 
   .dateline,
   .datelineMeta {
-    color: #666b6b;
+    color: #cbd5e1;
     font-size: 0.8125rem;
   }
 
   .datelineMeta {
+    color: #8fa1ba;
     text-align: right;
   }
 
   .sectionMark {
     margin-top: 1.8rem;
-    color: var(--rust);
+    color: #f2dc99;
   }
 
   .sectionMark span {
-    background: var(--rust);
+    background: #d7b85f;
   }
 
   .heroName {
     max-width: 8ch;
     margin-top: 1.2rem;
-    color: var(--ink);
+    color: #fff;
     font-size: clamp(4.25rem, 6.67vw, 6rem);
     line-height: 1;
   }
@@ -335,7 +338,7 @@
   .jurisdiction {
     max-width: 32rem;
     margin-top: 1.35rem;
-    color: var(--navy);
+    color: #f2dc99;
     font-family: "Fraunces Variable", Fraunces, Georgia, serif;
     font-size: clamp(1.45rem, 2.15vw, 1.9375rem);
     font-weight: 650;
@@ -345,7 +348,7 @@
 
   .heroSummary {
     margin-top: 1.25rem;
-    color: #4f5659;
+    color: #d6dee8;
     font-size: 1.0625rem;
     line-height: 1.7;
   }
@@ -358,17 +361,17 @@
 
   .portraitFrame {
     aspect-ratio: 480 / 510;
-    border-color: #aeb4b2;
+    border-color: rgba(255, 255, 255, 0.25);
     background: #152a43;
   }
 
   .portraitCaption {
     min-height: 2.5rem;
-    border-bottom-color: #cbc4b5;
+    border-bottom-color: var(--rule-dark);
   }
 
   .photoCredit {
-    color: #727674;
+    color: #8fa1ba;
   }
 
   .heroLower {
@@ -382,22 +385,22 @@
   .recordLedger {
     grid-template-columns: minmax(11rem, 0.75fr) minmax(0, 1.75fr);
     margin-top: 0;
-    border-color: #8f918c;
+    border-color: var(--rule-dark);
   }
 
   .gradeBlock {
     padding: 1.35rem 1.5rem 1.35rem 0;
-    border-right: 1px solid #cbc4b5;
+    border-right: 1px solid var(--rule-dark);
     border-bottom: 0;
   }
 
   .recordLabel {
-    color: #676b69;
+    color: var(--muted-dark);
   }
 
   .gradeValue,
   .railValue {
-    color: var(--ink);
+    color: #fff;
   }
 
   .gradeValue {
@@ -405,12 +408,12 @@
   }
 
   .gradeDetail {
-    color: var(--rust);
+    color: #d9bd72;
   }
 
   .railStat {
     padding: 1.35rem 1.2rem;
-    border-right-color: #cbc4b5;
+    border-right-color: rgba(255, 255, 255, 0.14);
   }
 
   .railStat:first-child {
@@ -426,7 +429,7 @@
   }
 
   .railDetail {
-    color: #737774;
+    color: #8fa1ba;
   }
 }
 
