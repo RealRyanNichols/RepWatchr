@@ -15,7 +15,10 @@ import type {
   PublicVoteRecord,
   RedFlag,
 } from "@/types";
-import type { OfficialVerifiedBriefData } from "@/data/official-verified-briefs";
+import {
+  getOfficialVerifiedBriefSources,
+  type OfficialVerifiedBriefData,
+} from "@/data/official-verified-briefs";
 
 type UniversalOfficialDashboardProps = {
   official: Official;
@@ -28,7 +31,7 @@ type UniversalOfficialDashboardProps = {
   buildoutPercent: number;
   buildoutComplete: boolean;
   missingItems: readonly string[];
-  verifiedBrief?: Pick<OfficialVerifiedBriefData, "officialId" | "strengths" | "concerns">;
+  verifiedBrief?: OfficialVerifiedBriefData;
 };
 
 type DashboardSource = {
@@ -73,7 +76,15 @@ export default function UniversalOfficialDashboard({
 }: UniversalOfficialDashboardProps) {
   const socialLinks = buildSocialLinks(official, overlay);
   const officeAccountability = getOfficeAccountabilityProfile(official);
-  const sources = buildSources({ official, voteRecord, funding, relatedNews, redFlags, overlay });
+  const sources = buildSources({
+    official,
+    voteRecord,
+    funding,
+    relatedNews,
+    redFlags,
+    overlay,
+    verifiedBrief,
+  });
   const coverage = buildCoverage(official.id, relatedNews, redFlags, verifiedBrief);
   const refreshedAt = voteRecord?.lastUpdated ?? overlay.completion?.lastCheckedAt ?? official.lastVerifiedAt;
   const voteTotal = voteRecord?.summary.totalVotesLoaded ?? 0;
@@ -634,6 +645,7 @@ function buildSources({
   relatedNews,
   redFlags,
   overlay,
+  verifiedBrief,
 }: {
   official: Official;
   voteRecord?: PublicVoteRecord;
@@ -641,6 +653,7 @@ function buildSources({
   relatedNews: NewsArticle[];
   redFlags: RedFlag[];
   overlay: PublicProfileOverlay;
+  verifiedBrief?: OfficialVerifiedBriefData;
 }) {
   const entries: DashboardSource[] = [];
   const add = (source: DashboardSource) => {
@@ -666,6 +679,20 @@ function buildSources({
   redFlags.forEach((flag) => {
     if (!publicRedFlagStatuses.has(flag.reviewerStatus ?? "") || !hasSpecificSourceUrl(flag.sourceUrl)) return;
     add({ title: flag.title, url: flag.sourceUrl, kind: "Review file" });
+  });
+  getOfficialVerifiedBriefSources(verifiedBrief).forEach((source) => {
+    add({
+      title: source.title,
+      url: source.url,
+      kind:
+        source.kind === "official_record"
+          ? "Official record"
+          : source.kind === "reported"
+            ? "Independent reporting"
+            : source.kind === "external_data"
+              ? "External data"
+              : "Official statement",
+    });
   });
 
   return entries;

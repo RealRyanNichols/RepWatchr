@@ -81,7 +81,7 @@ export const TEXAS_ELECTION_RACES: TexasElectionRace[] = [
     region: "Marion County",
     electionDate: "November 3, 2026",
     lastUpdatedAt: "2026-07-27",
-    stage: "Declared write-in challenge; qualification pending official confirmation",
+    stage: "Announced write-in challenge; qualification pending official confirmation",
     priority: 99,
     summary:
       "Leward J. LaFleur II, the Republican incumbent, faces a publicly announced write-in challenge from Dina K. Carroll for Marion County's countywide executive and constitutional-court office.",

@@ -40,7 +40,7 @@ const segmentLabels: Record<SegmentKey, string> = {
 };
 
 const options: Array<{ id: OptionId; label: string; detail: string }> = [
-  { id: "dina-k-carroll", label: "Dina K. Carroll", detail: "Declared write-in" },
+  { id: "dina-k-carroll", label: "Dina K. Carroll", detail: "Announced write-in" },
   { id: "leward-j-lafleur-ii", label: "Leward J. LaFleur II", detail: "Republican incumbent" },
 ];
 

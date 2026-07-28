@@ -1,6 +1,6 @@
 "use client";
 
-import { useMemo, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { createClient } from "@/lib/supabase";
@@ -24,9 +24,20 @@ export default function SignUpPage() {
   const [success, setSuccess] = useState(false);
   const [captchaToken, setCaptchaToken] = useState("");
   const [captchaResetNonce, setCaptchaResetNonce] = useState(0);
+  const [nextPath, setNextPath] = useState("/dashboard");
   const router = useRouter();
   const supabase = useMemo(() => createClient(), []);
   const turnstileSiteKey = process.env.NEXT_PUBLIC_TURNSTILE_SITE_KEY ?? "";
+
+  useEffect(() => {
+    const timer = window.setTimeout(() => {
+      const requestedNext = new URLSearchParams(window.location.search).get("next");
+      if (requestedNext?.startsWith("/") && !requestedNext.startsWith("//")) {
+        setNextPath(requestedNext);
+      }
+    }, 0);
+    return () => window.clearTimeout(timer);
+  }, []);
 
   async function handleSubmit(e: React.FormEvent) {
     e.preventDefault();
@@ -56,7 +67,7 @@ export default function SignUpPage() {
         email: normalizedEmail,
         password,
         options: {
-          emailRedirectTo: `${window.location.origin}/auth/callback?next=/dashboard`,
+          emailRedirectTo: `${window.location.origin}/auth/callback?next=${encodeURIComponent(nextPath)}`,
           ...(captchaToken ? { captchaToken } : {}),
         },
       });
@@ -79,7 +90,7 @@ export default function SignUpPage() {
           { onConflict: "user_id" }
         );
         trackRepWatchrEvent("signup_completed", { confirmation_required: false });
-        router.replace("/dashboard");
+        router.replace(nextPath);
         router.refresh();
         return;
       }
@@ -104,13 +115,13 @@ export default function SignUpPage() {
             Check your email if confirmation is required. Then sign in and you will land in the member dashboard.
           </p>
           <Link
-            href="/login"
+            href={`/auth/login?next=${encodeURIComponent(nextPath)}`}
             className="mt-4 inline-block rounded-lg bg-blue-600 px-5 py-2.5 text-sm font-semibold text-white hover:bg-blue-700"
           >
             Go to Login
           </Link>
           <Link
-            href="/dashboard"
+            href={nextPath}
             className="ml-3 mt-4 inline-block rounded-lg border border-green-300 bg-white px-5 py-2.5 text-sm font-semibold text-green-800 hover:bg-green-100"
           >
             Open Dashboard
@@ -155,7 +166,7 @@ export default function SignUpPage() {
           </p>
 
           <div className="mt-5">
-            <SocialAuthButtons />
+            <SocialAuthButtons nextPath={nextPath} />
             <p className="mt-2 text-xs font-semibold leading-5 text-gray-500">
               Facebook or X can create your member account. Human and district verification are still completed inside
               RepWatchr before civic votes receive verified weight.
