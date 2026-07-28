@@ -15,6 +15,7 @@
     "smoke:sharing": "node scripts/smoke-sharing-system.mjs",
     "smoke:og": "node scripts/smoke-og-previews.mjs",
     "smoke:thumbnails": "node scripts/smoke-editorial-thumbnails.mjs",
+    "smoke:editorial-opening": "node scripts/smoke-editorial-opening.mjs",
     "smoke:seo": "node scripts/smoke-seo-indexing.mjs",
     "smoke:wire-quality": "node scripts/smoke-daily-wire-quality.mjs",
     "smoke:officials": "node scripts/smoke-officials-search.mjs",
