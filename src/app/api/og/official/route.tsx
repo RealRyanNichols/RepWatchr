@@ -22,6 +22,8 @@ export async function GET(request: Request) {
   const verifiedBrief = official ? getOfficialVerifiedBrief(official.id) : undefined;
   const sourceCount = new Set([
     ...(official?.sourceLinks ?? []).map((source) => source.url),
+    ...(official?.contactInfo.website ? [official.contactInfo.website] : []),
+    ...(official?.photoSourceUrl ? [official.photoSourceUrl] : []),
     ...(funding?.sources ?? []),
     ...(voteRecord?.sourceLinks ?? []),
     ...getOfficialVerifiedBriefSources(verifiedBrief).map((source) => source.url),
