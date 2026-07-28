@@ -23,7 +23,7 @@ const routeChecks = [
     label: "Dina Carroll profile route",
     markers: [
       "Dina K. Carroll",
-      "Full candidate dossier",
+      "Current ballot status",
       "dina-carroll-portrait.jpg",
     ],
   },
