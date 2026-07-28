@@ -30,7 +30,7 @@
 
 .hero {
   position: relative;
-  min-height: clamp(640px, 78vh, 900px);
+  min-height: auto;
   isolation: isolate;
   color: white;
   background: #101b2b;
@@ -75,9 +75,9 @@
 
 .heroInner {
   display: flex;
-  min-height: inherit;
+  min-height: auto;
   flex-direction: column;
-  padding: 30px 0 72px;
+  padding: 24px 0 40px;
 }
 
 .breadcrumbs {
@@ -104,7 +104,7 @@
   grid-template-columns: minmax(0, 0.95fr) minmax(430px, 0.72fr);
   gap: clamp(34px, 5vw, 68px);
   align-items: end;
-  margin-top: auto;
+  margin-top: clamp(32px, 4vw, 56px);
 }
 
 .heroImageDisclosure {
@@ -411,7 +411,7 @@
 .chapterNav {
   position: sticky;
   z-index: 20;
-  top: 0;
+  top: 76px;
   border-bottom: 1px solid var(--rule);
   background: rgba(251, 248, 240, 0.93);
   backdrop-filter: blur(16px);
@@ -448,7 +448,7 @@
   display: grid;
   grid-template-columns: 68px minmax(0, 1fr) minmax(250px, 320px);
   gap: clamp(24px, 5vw, 68px);
-  padding-block: clamp(70px, 9vw, 128px);
+  padding-block: clamp(48px, 5vw, 72px);
   border-bottom: 1px solid var(--rule);
 }
 
@@ -540,7 +540,7 @@
 .timelineSection,
 .discussionSection,
 .sourcesSection {
-  padding-block: clamp(72px, 9vw, 126px);
+  padding-block: clamp(52px, 5vw, 76px);
   scroll-margin-top: 76px;
 }
 
@@ -553,7 +553,7 @@
   display: grid;
   grid-template-columns: minmax(0, 1fr) 74px minmax(0, 1fr);
   align-items: stretch;
-  margin-top: clamp(42px, 6vw, 78px);
+  margin-top: clamp(30px, 3vw, 44px);
   border-block: 1px solid var(--rule);
 }
 
@@ -759,7 +759,7 @@
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 24px;
-  margin-top: clamp(44px, 6vw, 72px);
+  margin-top: clamp(32px, 3.5vw, 48px);
 }
 
 .profileCard {
@@ -950,7 +950,7 @@
 }
 
 .issueMatrix {
-  margin-top: 52px;
+  margin-top: 36px;
   border: 1px solid var(--rule);
   background: var(--cream);
   box-shadow: 0 24px 60px rgba(56, 44, 29, 0.07);
@@ -1042,7 +1042,7 @@
   display: grid;
   grid-template-columns: minmax(0, 0.82fr) minmax(0, 1.18fr);
   gap: 1px;
-  margin-top: 58px;
+  margin-top: 40px;
   background: rgba(255, 255, 255, 0.17);
 }
 
@@ -1147,7 +1147,7 @@
   grid-template-columns: minmax(260px, 0.72fr) minmax(0, 1.28fr);
   gap: 60px;
   align-items: end;
-  padding-top: 68px;
+  padding-top: 44px;
 }
 
 .authorityBand dl {
@@ -1186,7 +1186,7 @@
   grid-template-columns: repeat(2, minmax(0, 1fr)) minmax(270px, 0.8fr);
   gap: 20px;
   align-items: stretch;
-  margin-top: 54px;
+  margin-top: 36px;
 }
 
 .ballotCard,
@@ -1342,7 +1342,7 @@
 
 .pollSection {
   display: grid;
-  gap: 50px;
+  gap: 32px;
 }
 
 .pollIntro {
@@ -1610,7 +1610,7 @@
   grid-template-columns: 290px minmax(0, 1fr);
   gap: clamp(40px, 7vw, 90px);
   align-items: start;
-  margin-top: 58px;
+  margin-top: 40px;
 }
 
 .gradeDial {
@@ -1695,7 +1695,7 @@
 .timeline {
   display: grid;
   grid-template-columns: repeat(6, minmax(0, 1fr));
-  margin: 52px 0 0;
+  margin: 36px 0 0;
   padding: 0;
   border-top: 3px solid var(--ink);
   list-style: none;
@@ -1754,11 +1754,11 @@
 }
 
 .sourcesSection {
-  padding-bottom: 150px;
+  padding-bottom: 80px;
 }
 
 .sources {
-  margin: 54px 0 0;
+  margin: 36px 0 0;
   padding: 0;
   border-top: 1px solid var(--rule);
   list-style: none;
@@ -1805,7 +1805,7 @@
 
 @media (max-width: 960px) {
   .hero {
-    min-height: 860px;
+    min-height: auto;
   }
 
   .heroGrid {
@@ -1913,6 +1913,12 @@
   }
 }
 
+@media (min-width: 1024px) {
+  .chapterNav {
+    top: 142px;
+  }
+}
+
 @media (max-width: 640px) {
   .heroInner,
   .opening,
@@ -1939,6 +1945,20 @@
   .heroInner {
     padding-top: 20px;
     padding-bottom: 28px;
+  }
+
+  .opening,
+  .candidateSection,
+  .profileSection,
+  .issueSection,
+  .recordSection,
+  .ballotSection,
+  .pollSection,
+  .methodSection,
+  .timelineSection,
+  .discussionSection,
+  .sourcesSection {
+    padding-block: 40px;
   }
 
   .heroShade {
@@ -2070,6 +2090,23 @@
   .opening {
     grid-template-columns: 1fr;
     gap: 18px;
+  }
+
+  .candidateGrid,
+  .profileGrid {
+    margin-top: 28px;
+  }
+
+  .issueMatrix,
+  .ballotGrid,
+  .scoreGrid,
+  .timeline,
+  .sources {
+    margin-top: 32px;
+  }
+
+  .ledger {
+    margin-top: 32px;
   }
 
   .sectionNumber {
