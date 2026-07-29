@@ -112,7 +112,7 @@ async function buildPayload(
   options: OptionRow[],
   userId: string | null,
 ) {
-  const [{ data: totalData, error: totalError }, myVoteResult] = await Promise.all([
+  const [{ data: totalData, error: totalError }, myVoteResult, profileResult] = await Promise.all([
     admin
       .from("race_community_poll_totals")
       .select("option_id, votes, as_of")
@@ -125,9 +125,16 @@ async function buildPayload(
           .eq("user_id", userId)
           .maybeSingle()
       : Promise.resolve({ data: null, error: null }),
+    userId
+      ? admin
+          .from("member_profiles")
+          .select("display_name, home_location")
+          .eq("user_id", userId)
+          .maybeSingle()
+      : Promise.resolve({ data: null, error: null }),
   ]);
 
-  if (totalError || myVoteResult.error) return null;
+  if (totalError || myVoteResult.error || profileResult.error) return null;
 
   const totals = (totalData ?? []) as TotalRow[];
   const voteByOption = new Map(
@@ -137,7 +144,7 @@ async function buildPayload(
     (sum, row) => sum + Number(row.votes),
     0,
   );
-  const resultsVisible = responseCount >= poll.minimum_sample;
+  const resultsVisible = true;
   const asOf = totals.reduce<string | null>(
     (latest, row) =>
       row.as_of && (!latest || row.as_of > latest) ? row.as_of : latest,
@@ -148,13 +155,20 @@ async function buildPayload(
     return {
       optionId: option.option_id,
       label: option.label,
-      votes: resultsVisible ? votes : null,
+      votes,
       percent:
-        resultsVisible && responseCount > 0
+        responseCount > 0
           ? Math.round((votes / responseCount) * 100)
-          : null,
+          : 0,
     };
   });
+  const memberProfile = profileResult.data as {
+    display_name?: string | null;
+    home_location?: string | null;
+  } | null;
+  const profileComplete = Boolean(
+    memberProfile?.display_name?.trim() && memberProfile?.home_location?.trim(),
+  );
 
   return {
     enabled: true,
@@ -166,6 +180,7 @@ async function buildPayload(
     minimumSample: poll.minimum_sample,
     responseCount,
     resultsVisible,
+    profileComplete,
     myVote:
       (myVoteResult.data as { option_id?: string } | null)?.option_id ?? null,
     options: payloadOptions,
@@ -251,6 +266,26 @@ export async function POST(
 
   const admin = getSupabaseAdminClient();
   if (!admin) return unavailable();
+
+  const { data: memberProfile, error: profileError } = await admin
+    .from("member_profiles")
+    .select("display_name, home_location")
+    .eq("user_id", userId)
+    .maybeSingle();
+  if (profileError) return unavailable("Your member profile could not be verified right now.");
+  if (
+    !memberProfile?.display_name?.trim() ||
+    !memberProfile?.home_location?.trim()
+  ) {
+    return json(
+      {
+        message:
+          "Complete your RepWatchr profile with a display name and home location before your response can count.",
+        profileComplete: false,
+      },
+      { status: 428 },
+    );
+  }
 
   const pollData = await getPoll(admin);
   if (!pollData) return unavailable();

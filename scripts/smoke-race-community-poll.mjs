@@ -66,11 +66,12 @@ requires(poll, files.poll, [
   'type="radio"',
   "Record my response",
   "Update my response",
-  "resultsVisible",
-  "The candidate split appears after",
-  "Self-selected RepWatchr community pulse",
-  "not a scientific poll or official",
-  "One current response per signed-in account",
+  "Cast your vote",
+  "profile-backed",
+  "Complete my profile",
+  "self-selected community poll",
+  "not a scientific survey or official",
+  "One current vote per completed profile",
   "setInterval",
   "60_000",
 ]);
@@ -94,6 +95,8 @@ requires(route, files.route, [
   "race_community_poll_totals",
   "isPollOpen",
   'onConflict: "poll_id,user_id"',
+  '.from("member_profiles")',
+  "profileComplete",
   '"Cache-Control", "private, no-store, max-age=0"',
 ]);
 for (const forbidden of [
