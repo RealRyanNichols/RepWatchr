@@ -21,8 +21,11 @@ export default function LoginPage() {
 
   useEffect(() => {
     const timer = window.setTimeout(() => {
-      const requestedNext = new URLSearchParams(window.location.search).get("next");
+      const search = new URLSearchParams(window.location.search);
+      const requestedNext = search.get("next");
       setNextPath(safeNextPath(requestedNext));
+      const callbackError = search.get("error");
+      if (callbackError) setError(callbackError);
     }, 0);
     return () => window.clearTimeout(timer);
   }, []);
