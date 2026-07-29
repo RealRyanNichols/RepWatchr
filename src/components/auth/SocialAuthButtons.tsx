@@ -1,6 +1,7 @@
 "use client";
 
 import { useMemo, useState } from "react";
+import Link from "next/link";
 import { createClient } from "@/lib/supabase";
 import { trackRepWatchrEvent } from "@/lib/client-analytics";
 import { safeNextPath } from "@/lib/safe-next-path";
@@ -38,7 +39,11 @@ export default function SocialAuthButtons({
       });
 
       if (oauthError) {
-        setError(oauthError.message);
+        setError(
+          /provider is not enabled/i.test(oauthError.message)
+            ? `${provider === "facebook" ? "Facebook" : "X"} sign-in is temporarily unavailable. Use email signup below while the connection is restored.`
+            : oauthError.message,
+        );
         setLoadingProvider(null);
         return;
       }
@@ -77,9 +82,15 @@ export default function SocialAuthButtons({
         ))}
       </div>
       {error ? (
-        <p className="mt-2 rounded-lg border border-red-200 bg-red-50 px-3 py-2 text-xs font-bold leading-5 text-red-800">
-          {error}
-        </p>
+        <div className="mt-2 rounded-lg border border-red-200 bg-red-50 px-3 py-2 text-xs font-bold leading-5 text-red-800">
+          <p>{error}</p>
+          <Link
+            href={`/auth/signup?next=${encodeURIComponent(safeNextPath(nextPath))}`}
+            className="mt-1 inline-flex underline underline-offset-2"
+          >
+            Create a profile with email
+          </Link>
+        </div>
       ) : null}
     </div>
   );
