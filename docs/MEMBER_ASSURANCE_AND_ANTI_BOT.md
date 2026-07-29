@@ -1,6 +1,25 @@
 # Member Assurance and Anti-Bot Plan
 
-Status: preview foundation; community voting remains disabled
+Status: assurance program remains a preview; the unsegmented race community pulse
+is a separate live capability
+
+## Live Marion County community pulse boundary
+
+The Marion County Judge page may accept one current response per signed-in account
+without calling that account a verified person, resident, or voter.
+
+- Vercel BotID screens the response endpoint without a visible challenge.
+- Only the server service role can read or write poll tables.
+- Candidate splits remain hidden until 25 signed-in responses exist.
+- The pulse stores only poll ID, account ID, option ID, and timestamps.
+- It does not store email, social provider, IP address, geography, bot token, or
+  identity evidence.
+- It is labeled self-selected, non-scientific, and not an official election result.
+- It never contributes to an official's RepWatchr grade.
+- Poll status and close time are enforced by the server; `ENABLE_RACE_POLLS_V1=false`
+  is an independent emergency kill switch.
+
+This launch does not activate or approve the identity/residence system described below.
 
 ## Trust labels
 
