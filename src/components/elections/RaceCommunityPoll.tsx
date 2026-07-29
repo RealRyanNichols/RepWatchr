@@ -2,236 +2,347 @@
 
 import { useCallback, useEffect, useState } from "react";
 import SocialAuthButtons from "@/components/auth/SocialAuthButtons";
-import TurnstileChallenge from "@/components/auth/TurnstileChallenge";
 import { useAuth } from "@/components/auth/AuthProvider";
 import styles from "./FlagshipRaceExperience.module.css";
 
 type OptionId = "dina-k-carroll" | "leward-j-lafleur-ii";
-type SegmentKey = "all" | "verified_marion" | "verified_outside" | "residence_unverified";
 
-type PollResult = {
+type PollOption = {
   optionId: OptionId;
   label: string;
-  votes: number;
-  percent: number;
-};
-
-type PollSegment = {
-  key: SegmentKey;
-  label: string;
-  total: number;
-  suppressed: boolean;
-  results: PollResult[];
+  votes: number | null;
+  percent: number | null;
 };
 
 type PollPayload = {
   enabled: boolean;
+  status: "draft" | "open" | "closed" | "unavailable";
+  canVote: boolean;
+  question?: string;
   asOf: string | null;
+  closesAt: string | null;
   minimumSample: number;
-  segments: PollSegment[];
+  responseCount: number;
+  resultsVisible?: boolean;
+  myVote: OptionId | null;
+  options: PollOption[];
   message?: string;
 };
 
-const segmentLabels: Record<SegmentKey, string> = {
-  all: "All participants",
-  verified_marion: "Verified Marion residents",
-  verified_outside: "Verified outside Marion",
-  residence_unverified: "Residence unverified",
+const pollEndpoint = "/api/races/marion-county-judge-2026/poll";
+const returnPath =
+  "/elections/texas/marion-county-judge-2026#community-poll";
+const savedChoiceKey = "repwatchr:marion-county-judge-2026:choice";
+
+const optionDetails: Record<OptionId, string> = {
+  "dina-k-carroll": "Announced write-in challenger",
+  "leward-j-lafleur-ii": "Republican nominee · incumbent",
 };
 
-const options: Array<{ id: OptionId; label: string; detail: string }> = [
-  { id: "dina-k-carroll", label: "Dina K. Carroll", detail: "Announced write-in" },
-  { id: "leward-j-lafleur-ii", label: "Leward J. LaFleur II", detail: "Republican incumbent" },
+const fallbackOptions: PollOption[] = [
+  {
+    optionId: "dina-k-carroll",
+    label: "Dina K. Carroll",
+    votes: null,
+    percent: null,
+  },
+  {
+    optionId: "leward-j-lafleur-ii",
+    label: "Leward J. LaFleur II",
+    votes: null,
+    percent: null,
+  },
 ];
 
-export default function RaceCommunityPoll({
-  enabled,
-  siteKey,
-}: {
-  enabled: boolean;
-  siteKey: string;
-}) {
-  const { user } = useAuth();
+function leaderLine(options: PollOption[]) {
+  const [first, second] = options;
+  if (
+    !first ||
+    !second ||
+    first.percent === null ||
+    second.percent === null
+  ) {
+    return "";
+  }
+  if (first.percent === second.percent) {
+    return "This community pulse is currently tied.";
+  }
+
+  const firstPercent = first.percent;
+  const secondPercent = second.percent;
+  const leader = firstPercent > secondPercent ? first : second;
+  const points = Math.abs(firstPercent - secondPercent);
+  const shortName =
+    leader.optionId === "dina-k-carroll" ? "Dina Carroll" : "Leward LaFleur";
+  return `${shortName} leads this community pulse by ${points} ${
+    points === 1 ? "point" : "points"
+  }.`;
+}
+
+function formatUpdated(value: string | null) {
+  if (!value) return "Updates after each recorded response";
+  return `Updated ${new Intl.DateTimeFormat(undefined, {
+    month: "short",
+    day: "numeric",
+    hour: "numeric",
+    minute: "2-digit",
+  }).format(new Date(value))}`;
+}
+
+export default function RaceCommunityPoll() {
+  const { user, loading: authLoading } = useAuth();
   const [payload, setPayload] = useState<PollPayload | null>(null);
-  const [segment, setSegment] = useState<SegmentKey>("verified_marion");
   const [choice, setChoice] = useState<OptionId | null>(null);
-  const [token, setToken] = useState("");
-  const [resetNonce, setResetNonce] = useState(0);
-  const [loading, setLoading] = useState(enabled);
+  const [loading, setLoading] = useState(true);
   const [submitting, setSubmitting] = useState(false);
   const [message, setMessage] = useState("");
-  const onToken = useCallback((value: string) => setToken(value), []);
 
-  const loadPoll = useCallback(async () => {
-    if (!enabled) return;
-    setLoading(true);
+  const loadPoll = useCallback(async (silent = false) => {
+    if (!silent) setLoading(true);
     try {
-      const response = await fetch("/api/races/marion-county-judge-2026/poll", {
-        cache: "no-store",
-      });
+      const response = await fetch(pollEndpoint, { cache: "no-store" });
       const data = (await response.json()) as PollPayload;
       setPayload(data);
-      if (!response.ok) setMessage(data.message ?? "The community pulse is not available yet.");
+      if (!response.ok) {
+        setMessage(data.message ?? "The community pulse is temporarily unavailable.");
+      }
+      if (data.myVote) {
+        setChoice((current) => current ?? data.myVote);
+      }
     } catch {
       setMessage("The community pulse could not be loaded.");
     } finally {
-      setLoading(false);
+      if (!silent) setLoading(false);
     }
-  }, [enabled]);
+  }, []);
 
   useEffect(() => {
-    const timeout = window.setTimeout(() => {
-      void loadPoll();
-    }, 0);
+    const savedChoice = window.sessionStorage.getItem(savedChoiceKey);
+    if (
+      savedChoice === "dina-k-carroll" ||
+      savedChoice === "leward-j-lafleur-ii"
+    ) {
+      setChoice(savedChoice);
+    }
+    void loadPoll();
 
-    return () => window.clearTimeout(timeout);
+    const refresh = window.setInterval(() => {
+      if (document.visibilityState === "visible") void loadPoll(true);
+    }, 60_000);
+    const onVisibilityChange = () => {
+      if (document.visibilityState === "visible") void loadPoll(true);
+    };
+    document.addEventListener("visibilitychange", onVisibilityChange);
+
+    return () => {
+      window.clearInterval(refresh);
+      document.removeEventListener("visibilitychange", onVisibilityChange);
+    };
   }, [loadPoll]);
 
+  useEffect(() => {
+    if (choice) window.sessionStorage.setItem(savedChoiceKey, choice);
+  }, [choice]);
+
+  const options = payload?.options ?? fallbackOptions;
+  const recordedChoice = payload?.myVote ?? null;
+  const progress = payload
+    ? Math.min(100, (payload.responseCount / payload.minimumSample) * 100)
+    : 0;
+  const resultSummary = leaderLine(options);
+  const canSubmit =
+    Boolean(user) &&
+    Boolean(choice) &&
+    choice !== recordedChoice &&
+    payload?.canVote === true &&
+    !submitting;
+
   async function submitVote() {
-    if (!choice || !token || submitting) return;
+    if (!choice || !canSubmit) return;
     setSubmitting(true);
     setMessage("");
 
     try {
-      const response = await fetch("/api/races/marion-county-judge-2026/poll", {
+      const response = await fetch(pollEndpoint, {
         method: "POST",
         headers: { "content-type": "application/json" },
-        body: JSON.stringify({ optionId: choice, turnstileToken: token }),
+        body: JSON.stringify({ optionId: choice }),
       });
-      const result = (await response.json()) as { message?: string };
-      setMessage(
-        response.ok
-          ? result.message ?? "Your response is recorded. You can change it later."
-          : result.message ?? "Your response could not be recorded.",
-      );
+      const data = (await response.json()) as PollPayload;
       if (response.ok) {
-        setChoice(null);
-        await loadPoll();
+        setPayload(data);
+        setMessage(data.message ?? "Your response is recorded.");
+        window.sessionStorage.removeItem(savedChoiceKey);
+      } else {
+        setMessage(data.message ?? "Your response could not be recorded.");
       }
     } catch {
       setMessage("Your response could not be recorded.");
     } finally {
       setSubmitting(false);
-      setToken("");
-      setResetNonce((value) => value + 1);
     }
   }
 
-  if (!enabled) {
-    return (
-      <div className={styles.pollUnavailable}>
-        <div>
-          <span>Integrity gate</span>
-          <strong>The poll interface is built; verified voting is not switched on in this preview.</strong>
-        </div>
-        <p>
-          Launch requires the staged database migration, Turnstile keys and server-owned
-          residence verification. RepWatchr will not collect a misleading “local” result from
-          self-reported geography.
-        </p>
-        <ul>
-          <li>One signed-in account, one current response</li>
-          <li>Facebook, X or email login plus bot challenge</li>
-          <li>County segment determined on the server</li>
-          <li>Small segments hidden below the privacy threshold</li>
-        </ul>
-      </div>
-    );
-  }
-
-  const selectedSegment = payload?.segments.find((item) => item.key === segment);
-
   return (
-    <div className={styles.pollCard}>
-      <div className={styles.pollControls}>
-        <div className={styles.pollChoices} role="radiogroup" aria-label="Candidate choice">
-          {options.map((option) => (
-            <button
-              key={option.id}
-              type="button"
-              role="radio"
-              aria-checked={choice === option.id}
-              className={choice === option.id ? styles.choiceSelected : ""}
-              onClick={() => setChoice(option.id)}
-            >
-              <span>{option.label}</span>
-              <small>{option.detail}</small>
-            </button>
-          ))}
+    <section
+      id="community-poll"
+      className={styles.heroPoll}
+      aria-labelledby="poll-heading"
+    >
+      <header className={styles.heroPollHeader}>
+        <div>
+          <p>
+            <span aria-hidden="true" />
+            Live community pulse
+          </p>
+          <h2 id="poll-heading">
+            {payload?.question ??
+              "If the election were today, who would you support?"}
+          </h2>
         </div>
+        <span className={styles.pollResponseCount}>
+          {payload?.responseCount ?? 0}
+          <small>signed-in responses</small>
+        </span>
+      </header>
 
-        {!user ? (
-          <div className={styles.pollSignIn}>
-            <strong>Sign in to participate</strong>
-            <p>Your public social profile does not determine your county verification.</p>
-            <SocialAuthButtons compact nextPath="/elections/texas/marion-county-judge-2026#community-poll" />
-          </div>
-        ) : (
-          <div className={styles.pollVerify}>
-            <TurnstileChallenge
-              siteKey={siteKey}
-              action="marion_county_race_poll"
-              resetNonce={resetNonce}
-              onToken={onToken}
+      <fieldset
+        className={styles.heroPollChoices}
+        disabled={!payload?.canVote && !loading}
+      >
+        <legend className={styles.srOnly}>Choose one candidate</legend>
+        {options.map((option) => {
+          const selected = choice === option.optionId;
+          const recorded = recordedChoice === option.optionId;
+          return (
+            <label
+              key={option.optionId}
+              className={selected ? styles.pollChoiceSelected : undefined}
+            >
+              <input
+                type="radio"
+                name="marion-county-judge-choice"
+                value={option.optionId}
+                checked={selected}
+                onChange={() => setChoice(option.optionId)}
+              />
+              <span className={styles.pollChoiceCopy}>
+                <strong>{option.label}</strong>
+                <small>{optionDetails[option.optionId]}</small>
+              </span>
+              <span className={styles.pollChoiceState}>
+                {recorded ? "Recorded" : selected ? "Selected" : "Choose"}
+              </span>
+            </label>
+          );
+        })}
+      </fieldset>
+
+      {payload?.resultsVisible ? (
+        <div className={styles.heroPollResults} aria-live="polite">
+          <p className={styles.pollLeader}>{resultSummary}</p>
+          <div
+            className={styles.pollSplit}
+            role="img"
+            aria-label={options
+              .map((option) => `${option.label}: ${option.percent ?? 0}%`)
+              .join("; ")}
+          >
+            <span
+              className={styles.pollSplitDina}
+              style={{ width: `${options[0]?.percent ?? 0}%` }}
             />
-            <button
-              type="button"
-              onClick={submitVote}
-              disabled={!choice || !token || submitting}
-            >
-              {submitting ? "Recording…" : "Record my response"}
-            </button>
+            <span
+              className={styles.pollSplitLafleur}
+              style={{ width: `${options[1]?.percent ?? 0}%` }}
+            />
           </div>
-        )}
-        {message ? <p className={styles.pollMessage}>{message}</p> : null}
-      </div>
-
-      <div className={styles.pollResults} aria-live="polite">
-        <div className={styles.segmentTabs} role="tablist" aria-label="Poll result segment">
-          {(Object.keys(segmentLabels) as SegmentKey[]).map((key) => (
-            <button
-              key={key}
-              type="button"
-              role="tab"
-              aria-selected={segment === key}
-              onClick={() => setSegment(key)}
-            >
-              {segmentLabels[key]}
-            </button>
-          ))}
-        </div>
-
-        {loading ? (
-          <p className={styles.pollEmpty}>Loading the reviewed aggregate…</p>
-        ) : selectedSegment?.suppressed ? (
-          <div className={styles.pollEmpty}>
-            <strong>Results hidden until at least {payload?.minimumSample ?? 25} responses</strong>
-            <p>
-              Current sample: {selectedSegment.total}. This reduces the risk of identifying
-              individual participants or overstating a tiny sample.
-            </p>
-          </div>
-        ) : selectedSegment && selectedSegment.total > 0 ? (
-          <div className={styles.resultBars}>
-            {selectedSegment.results.map((result) => (
-              <div key={result.optionId}>
-                <p><strong>{result.label}</strong><span>{result.percent}%</span></p>
-                <div><span style={{ width: `${result.percent}%` }} /></div>
-                <small>{result.votes} responses</small>
-              </div>
+          <div className={styles.pollResultLabels}>
+            {options.map((option) => (
+              <span key={option.optionId}>
+                <strong>{option.percent}%</strong>
+                <small>
+                  {option.optionId === "dina-k-carroll"
+                    ? "Dina Carroll"
+                    : "Leward LaFleur"}
+                  {" · "}
+                  {option.votes} {option.votes === 1 ? "response" : "responses"}
+                </small>
+              </span>
             ))}
           </div>
-        ) : (
-          <p className={styles.pollEmpty}>No reviewed responses in this segment yet.</p>
-        )}
+        </div>
+      ) : (
+        <div className={styles.pollThreshold} aria-live="polite">
+          <div>
+            <strong>
+              {loading
+                ? "Loading the live response count…"
+                : payload?.responseCount === 0
+                  ? "Be the first to weigh in."
+                  : `${payload?.responseCount ?? 0} of ${
+                      payload?.minimumSample ?? 25
+                    } responses received.`}
+            </strong>
+            <span>
+              The candidate split appears after {payload?.minimumSample ?? 25} responses.
+            </span>
+          </div>
+          <div
+            className={styles.pollProgress}
+            role="progressbar"
+            aria-label="Responses needed before the split is shown"
+            aria-valuemin={0}
+            aria-valuemax={payload?.minimumSample ?? 25}
+            aria-valuenow={payload?.responseCount ?? 0}
+          >
+            <span style={{ width: `${progress}%` }} />
+          </div>
+        </div>
+      )}
 
-        <footer>
-          RepWatchr community pulse—not an official election or scientific poll.
-          Results show signed-in, Turnstile-confirmed responses; residence labels require
-          separate verification. One current response per account. Updated{" "}
-          {payload?.asOf ? new Date(payload.asOf).toLocaleString() : "when responses arrive"}.
-        </footer>
-      </div>
-    </div>
+      {!authLoading && !user && choice ? (
+        <div className={styles.heroPollSignIn}>
+          <strong>Sign in to record your choice</strong>
+          <SocialAuthButtons compact nextPath={returnPath} />
+        </div>
+      ) : user ? (
+        <button
+          type="button"
+          className={styles.heroPollSubmit}
+          onClick={submitVote}
+          disabled={!canSubmit}
+        >
+          {submitting
+            ? "Recording…"
+            : choice === recordedChoice
+              ? "Response recorded"
+              : recordedChoice
+                ? "Update my response"
+                : "Record my response"}
+        </button>
+      ) : (
+        <p className={styles.pollChoicePrompt}>
+          Choose a candidate to reveal secure sign-in.
+        </p>
+      )}
+
+      {message ? (
+        <p className={styles.heroPollMessage} role="status">
+          {message}
+        </p>
+      ) : null}
+
+      <footer className={styles.heroPollFooter}>
+        <span>
+          One current response per signed-in account · invisible bot screening
+        </span>
+        <span>{formatUpdated(payload?.asOf ?? null)}</span>
+        <small>
+          Self-selected RepWatchr community pulse—not a scientific poll or official
+          election result. Community sentiment never changes a RepWatchr grade.
+        </small>
+      </footer>
+    </section>
   );
 }
