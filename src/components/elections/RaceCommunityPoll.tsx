@@ -1,6 +1,7 @@
 "use client";
 
 import { useCallback, useEffect, useState } from "react";
+import Link from "next/link";
 import SocialAuthButtons from "@/components/auth/SocialAuthButtons";
 import { useAuth } from "@/components/auth/AuthProvider";
 import styles from "./FlagshipRaceExperience.module.css";
@@ -24,6 +25,7 @@ type PollPayload = {
   minimumSample: number;
   responseCount: number;
   resultsVisible?: boolean;
+  profileComplete?: boolean;
   myVote: OptionId | null;
   options: PollOption[];
   message?: string;
@@ -146,14 +148,13 @@ export default function RaceCommunityPoll() {
 
   const options = payload?.options ?? fallbackOptions;
   const recordedChoice = payload?.myVote ?? null;
-  const progress = payload
-    ? Math.min(100, (payload.responseCount / payload.minimumSample) * 100)
-    : 0;
   const resultSummary = leaderLine(options);
+  const responseCount = payload?.responseCount ?? 0;
   const canSubmit =
     Boolean(user) &&
     Boolean(choice) &&
     choice !== recordedChoice &&
+    payload?.profileComplete === true &&
     payload?.canVote === true &&
     !submitting;
 
@@ -191,18 +192,19 @@ export default function RaceCommunityPoll() {
     >
       <header className={styles.heroPollHeader}>
         <div>
-          <p>
+          <p className={styles.pollLiveLabel}>
             <span aria-hidden="true" />
-            Live community pulse
+            Live Marion County poll
           </p>
+          <strong className={styles.pollCallout}>Cast your vote</strong>
           <h2 id="poll-heading">
             {payload?.question ??
               "If the election were today, who would you support?"}
           </h2>
         </div>
         <span className={styles.pollResponseCount}>
-          {payload?.responseCount ?? 0}
-          <small>signed-in responses</small>
+          {responseCount}
+          <small>profile-backed {responseCount === 1 ? "vote" : "votes"}</small>
         </span>
       </header>
 
@@ -238,73 +240,79 @@ export default function RaceCommunityPoll() {
         })}
       </fieldset>
 
-      {payload?.resultsVisible ? (
-        <div className={styles.heroPollResults} aria-live="polite">
-          <p className={styles.pollLeader}>{resultSummary}</p>
-          <div
-            className={styles.pollSplit}
-            role="img"
-            aria-label={options
-              .map((option) => `${option.label}: ${option.percent ?? 0}%`)
-              .join("; ")}
-          >
-            <span
-              className={styles.pollSplitDina}
-              style={{ width: `${options[0]?.percent ?? 0}%` }}
-            />
-            <span
-              className={styles.pollSplitLafleur}
-              style={{ width: `${options[1]?.percent ?? 0}%` }}
-            />
-          </div>
-          <div className={styles.pollResultLabels}>
-            {options.map((option) => (
-              <span key={option.optionId}>
-                <strong>{option.percent}%</strong>
-                <small>
-                  {option.optionId === "dina-k-carroll"
-                    ? "Dina Carroll"
-                    : "Leward LaFleur"}
-                  {" · "}
-                  {option.votes} {option.votes === 1 ? "response" : "responses"}
-                </small>
-              </span>
-            ))}
-          </div>
+      <div className={styles.heroPollResults} aria-live="polite">
+        <div className={styles.pollLeaderRow}>
+          <span>Live result</span>
+          <strong>
+            {responseCount === 0
+              ? "Waiting for the first verified vote"
+              : resultSummary}
+          </strong>
         </div>
-      ) : (
-        <div className={styles.pollThreshold} aria-live="polite">
-          <div>
-            <strong>
-              {loading
-                ? "Loading the live response count…"
-                : payload?.responseCount === 0
-                  ? "Be the first to weigh in."
-                  : `${payload?.responseCount ?? 0} of ${
-                      payload?.minimumSample ?? 25
-                    } responses received.`}
-            </strong>
-            <span>
-              The candidate split appears after {payload?.minimumSample ?? 25} responses.
+        <div
+          className={styles.pollSplit}
+          role="img"
+          aria-label={
+            responseCount === 0
+              ? "No recorded votes yet"
+              : options
+                  .map((option) => `${option.label}: ${option.percent ?? 0}%`)
+                  .join("; ")
+          }
+        >
+          <span
+            className={styles.pollSplitDina}
+            style={{ width: `${options[0]?.percent ?? 0}%` }}
+          />
+          <span
+            className={styles.pollSplitLafleur}
+            style={{ width: `${options[1]?.percent ?? 0}%` }}
+          />
+        </div>
+        <div className={styles.pollResultLabels}>
+          {options.map((option) => (
+            <span key={option.optionId}>
+              <strong>{option.percent ?? 0}%</strong>
+              <small>
+                {option.optionId === "dina-k-carroll"
+                  ? "Dina Carroll"
+                  : "Leward LaFleur"}
+                {" · "}
+                {option.votes ?? 0} {option.votes === 1 ? "vote" : "votes"}
+              </small>
             </span>
-          </div>
-          <div
-            className={styles.pollProgress}
-            role="progressbar"
-            aria-label="Responses needed before the split is shown"
-            aria-valuemin={0}
-            aria-valuemax={payload?.minimumSample ?? 25}
-            aria-valuenow={payload?.responseCount ?? 0}
-          >
-            <span style={{ width: `${progress}%` }} />
-          </div>
+          ))}
         </div>
-      )}
+      </div>
 
       {!authLoading && !user && choice ? (
         <div className={styles.heroPollSignIn}>
-          <strong>Sign in to record your choice</strong>
+          <strong>Create a free profile for your vote to count</strong>
+          <p>
+            Your selection is saved in this browser. Sign in or create a profile,
+            then return here to record one real vote.
+          </p>
           <SocialAuthButtons compact nextPath={returnPath} />
+          <Link
+            className={styles.heroPollCreateProfile}
+            href={`/auth/signup?next=${encodeURIComponent(returnPath)}`}
+          >
+            Create my RepWatchr profile
+          </Link>
+        </div>
+      ) : user && payload?.profileComplete === false ? (
+        <div className={styles.heroPollSignIn}>
+          <strong>Finish your profile to make this vote count</strong>
+          <p>
+            Add your display name and home location. RepWatchr will not count
+            account-only or automated responses.
+          </p>
+          <Link
+            className={styles.heroPollCreateProfile}
+            href="/dashboard#member-profile"
+          >
+            Complete my profile
+          </Link>
         </div>
       ) : user ? (
         <button
@@ -323,7 +331,7 @@ export default function RaceCommunityPoll() {
         </button>
       ) : (
         <p className={styles.pollChoicePrompt}>
-          Choose a candidate to reveal secure sign-in.
+          Tap a candidate. A free RepWatchr profile is required before it counts.
         </p>
       )}
 
@@ -335,12 +343,12 @@ export default function RaceCommunityPoll() {
 
       <footer className={styles.heroPollFooter}>
         <span>
-          One current response per signed-in account · invisible bot screening
+          One current vote per completed profile · invisible bot screening
         </span>
         <span>{formatUpdated(payload?.asOf ?? null)}</span>
         <small>
-          Self-selected RepWatchr community pulse—not a scientific poll or official
-          election result. Community sentiment never changes a RepWatchr grade.
+          Real profile-backed votes only. This is a self-selected community poll,
+          not a scientific survey or official election result.
         </small>
       </footer>
     </section>
