@@ -3,7 +3,6 @@ import Link from "next/link";
 import type { ReactNode } from "react";
 import CommentSection from "@/components/comments/CommentSection";
 import ShareButtons from "@/components/shared/ShareButtons";
-import { repwatchrFeatureFlags } from "@/lib/repwatchr-feature-flags";
 import RaceCommunityPoll from "./RaceCommunityPoll";
 import styles from "./FlagshipRaceExperience.module.css";
 
@@ -231,10 +230,6 @@ function HeroCandidate({
 }
 
 export default function FlagshipRaceExperience() {
-  const pollEnabled =
-    repwatchrFeatureFlags.racePollsV1 &&
-    Boolean(process.env.NEXT_PUBLIC_TURNSTILE_SITE_KEY);
-
   return (
     <main className={styles.page}>
       <section className={styles.hero} aria-labelledby="race-title">
@@ -307,6 +302,7 @@ export default function FlagshipRaceExperience() {
                   </div>
                 </dl>
               </div>
+              <RaceCommunityPoll />
             </aside>
           </div>
           <p className={styles.heroImageDisclosure}>
@@ -800,24 +796,6 @@ export default function FlagshipRaceExperience() {
             Read the Texas write-in rules
           </SourceLink>
         </div>
-      </section>
-
-      <section id="community-poll" className={styles.pollSection} aria-labelledby="poll-heading">
-        <div className={styles.pollIntro}>
-          <p className={styles.sectionNumber}>02</p>
-          <div>
-            <p className={styles.eyebrow}>Marion County community pulse</p>
-            <h2 id="poll-heading">If the election were today, who would you support?</h2>
-            <p>
-              Everyone may participate. Results are segmented by server-verified residence so
-              Marion County voices can be viewed separately from outside and unverified responses.
-            </p>
-          </div>
-        </div>
-        <RaceCommunityPoll
-          enabled={pollEnabled}
-          siteKey={process.env.NEXT_PUBLIC_TURNSTILE_SITE_KEY ?? ""}
-        />
       </section>
 
       <section id="method" className={styles.methodSection} aria-labelledby="method-heading">

@@ -1,117 +1,181 @@
+import { checkBotId } from "botid/server";
 import { NextResponse } from "next/server";
-import { getSupabaseAdminClient } from "@/lib/supabase-admin";
+import type { SupabaseClient } from "@supabase/supabase-js";
+import { getSupabaseAdminClient } from "@/lib/race-poll-admin";
 import { createServerSupabaseClient } from "@/lib/supabase-server";
 import { repwatchrFeatureFlags } from "@/lib/repwatchr-feature-flags";
 
 const POLL_SLUG = "marion-county-judge-2026";
-const MINIMUM_SAMPLE = 25;
-const OPTION_LABELS = {
-  "dina-k-carroll": "Dina K. Carroll",
-  "leward-j-lafleur-ii": "Leward J. LaFleur II",
-} as const;
+const MAX_BODY_BYTES = 2_048;
 
-type OptionId = keyof typeof OPTION_LABELS;
-type Segment = "verified_marion" | "verified_outside" | "residence_unverified";
+type PollRow = {
+  id: number;
+  slug: string;
+  question: string;
+  status: "draft" | "open" | "closed";
+  opens_at: string | null;
+  closes_at: string | null;
+  minimum_sample: number;
+};
 
-function unavailable(message = "The verified community pulse is not enabled on this deployment.") {
-  return NextResponse.json(
+type OptionRow = {
+  option_id: string;
+  label: string;
+  display_order: number;
+};
+
+type TotalRow = {
+  option_id: string;
+  votes: number;
+  as_of: string | null;
+};
+
+type PollOption = {
+  optionId: string;
+  label: string;
+  votes: number | null;
+  percent: number | null;
+};
+
+function json(
+  body: Record<string, unknown>,
+  init: ResponseInit = {},
+) {
+  const response = NextResponse.json(body, init);
+  response.headers.set("Cache-Control", "private, no-store, max-age=0");
+  response.headers.set("Pragma", "no-cache");
+  return response;
+}
+
+function unavailable(message = "The community pulse is temporarily unavailable.") {
+  return json(
     {
       enabled: false,
+      status: "unavailable",
+      canVote: false,
       asOf: null,
-      minimumSample: MINIMUM_SAMPLE,
-      segments: [],
+      closesAt: null,
+      minimumSample: 25,
+      responseCount: 0,
+      myVote: null,
+      options: [],
       message,
     },
     { status: 503 },
   );
 }
 
-function normalizeCounty(value: unknown) {
-  if (typeof value !== "string") return "";
-  return value.trim().toLowerCase().replace(/\s+county$/, "");
+function isPollOpen(poll: PollRow, now = Date.now()) {
+  if (poll.status !== "open") return false;
+  if (poll.opens_at && Date.parse(poll.opens_at) > now) return false;
+  if (poll.closes_at && Date.parse(poll.closes_at) <= now) return false;
+  return true;
 }
 
-function segmentForProfile(profile: {
-  state?: string | null;
-  county?: string | null;
-  verification_status?: string | null;
-  geography_verified_at?: string | null;
-} | null): Segment {
-  const verified =
-    profile?.verification_status === "verified" &&
-    Boolean(profile.geography_verified_at);
+function isSameOrigin(request: Request) {
+  const origin = request.headers.get("origin");
+  if (!origin) return false;
 
-  if (!verified) return "residence_unverified";
-  const isTexas = (profile?.state ?? "").trim().toUpperCase() === "TX";
-  const isMarion = normalizeCounty(profile?.county) === "marion";
-  return isTexas && isMarion ? "verified_marion" : "verified_outside";
+  try {
+    return new URL(origin).origin === new URL(request.url).origin;
+  } catch {
+    return false;
+  }
 }
 
-async function verifyTurnstile(token: string, remoteIp: string | null) {
-  const secret = process.env.TURNSTILE_SECRET_KEY;
-  if (!secret) return false;
+async function getPoll(
+  admin: SupabaseClient,
+): Promise<{ poll: PollRow; options: OptionRow[] } | null> {
+  const { data: pollData, error: pollError } = await admin
+    .from("race_community_polls")
+    .select("id, slug, question, status, opens_at, closes_at, minimum_sample")
+    .eq("slug", POLL_SLUG)
+    .maybeSingle();
 
-  const form = new URLSearchParams({
-    secret,
-    response: token,
-  });
-  if (remoteIp) form.set("remoteip", remoteIp);
+  if (pollError || !pollData) return null;
+  const poll = pollData as PollRow;
 
-  const response = await fetch(
-    "https://challenges.cloudflare.com/turnstile/v0/siteverify",
-    {
-      method: "POST",
-      body: form,
-      cache: "no-store",
-    },
-  );
+  const { data: optionData, error: optionError } = await admin
+    .from("race_community_poll_options")
+    .select("option_id, label, display_order")
+    .eq("poll_id", poll.id)
+    .eq("active", true)
+    .order("display_order", { ascending: true });
 
-  if (!response.ok) return false;
-  const result = (await response.json()) as {
-    success?: boolean;
-    action?: string;
-  };
-  return result.success === true && result.action === "marion_county_race_poll";
+  if (optionError || !optionData || optionData.length !== 2) return null;
+  return { poll, options: optionData as OptionRow[] };
 }
 
-function aggregate(
-  rows: Array<{ option_id: string; segment: Segment; updated_at: string }>,
+async function buildPayload(
+  admin: SupabaseClient,
+  poll: PollRow,
+  options: OptionRow[],
+  userId: string | null,
 ) {
-  const segmentKeys = [
-    "all",
-    "verified_marion",
-    "verified_outside",
-    "residence_unverified",
-  ] as const;
-  const segmentLabels = {
-    all: "All participants",
-    verified_marion: "Verified Marion residents",
-    verified_outside: "Verified outside Marion",
-    residence_unverified: "Residence unverified",
-  };
+  const [{ data: totalData, error: totalError }, myVoteResult] = await Promise.all([
+    admin
+      .from("race_community_poll_totals")
+      .select("option_id, votes, as_of")
+      .eq("poll_id", poll.id),
+    userId
+      ? admin
+          .from("race_community_poll_responses")
+          .select("option_id")
+          .eq("poll_id", poll.id)
+          .eq("user_id", userId)
+          .maybeSingle()
+      : Promise.resolve({ data: null, error: null }),
+  ]);
 
-  return segmentKeys.map((key) => {
-    const selected = key === "all" ? rows : rows.filter((row) => row.segment === key);
-    const total = selected.length;
-    const suppressed = total < MINIMUM_SAMPLE;
-    const results = (Object.keys(OPTION_LABELS) as OptionId[]).map((optionId) => {
-      const votes = selected.filter((row) => row.option_id === optionId).length;
-      return {
-        optionId,
-        label: OPTION_LABELS[optionId],
-        votes: suppressed ? 0 : votes,
-        percent: suppressed || total === 0 ? 0 : Math.round((votes / total) * 100),
-      };
-    });
+  if (totalError || myVoteResult.error) return null;
 
+  const totals = (totalData ?? []) as TotalRow[];
+  const voteByOption = new Map(
+    totals.map((row) => [row.option_id, Number(row.votes)]),
+  );
+  const responseCount = totals.reduce(
+    (sum, row) => sum + Number(row.votes),
+    0,
+  );
+  const resultsVisible = responseCount >= poll.minimum_sample;
+  const asOf = totals.reduce<string | null>(
+    (latest, row) =>
+      row.as_of && (!latest || row.as_of > latest) ? row.as_of : latest,
+    null,
+  );
+  const payloadOptions: PollOption[] = options.map((option) => {
+    const votes = voteByOption.get(option.option_id) ?? 0;
     return {
-      key,
-      label: segmentLabels[key],
-      total,
-      suppressed,
-      results,
+      optionId: option.option_id,
+      label: option.label,
+      votes: resultsVisible ? votes : null,
+      percent:
+        resultsVisible && responseCount > 0
+          ? Math.round((votes / responseCount) * 100)
+          : null,
     };
   });
+
+  return {
+    enabled: true,
+    status: poll.status,
+    canVote: isPollOpen(poll),
+    question: poll.question,
+    asOf,
+    closesAt: poll.closes_at,
+    minimumSample: poll.minimum_sample,
+    responseCount,
+    resultsVisible,
+    myVote:
+      (myVoteResult.data as { option_id?: string } | null)?.option_id ?? null,
+    options: payloadOptions,
+  };
+}
+
+async function getCurrentUserId() {
+  const supabase = await createServerSupabaseClient();
+  const { data } = await supabase.auth.getUser();
+  return data.user?.id ?? null;
 }
 
 export async function GET(
@@ -120,35 +184,25 @@ export async function GET(
 ) {
   const { slug } = await params;
   if (slug !== POLL_SLUG) {
-    return NextResponse.json({ message: "Poll not found." }, { status: 404 });
+    return json({ message: "Poll not found." }, { status: 404 });
   }
   if (!repwatchrFeatureFlags.racePollsV1) return unavailable();
 
   const admin = getSupabaseAdminClient();
-  if (!admin) return unavailable("The poll database connection is not configured.");
+  if (!admin) return unavailable();
 
-  const { data, error } = await admin
-    .from("race_poll_responses")
-    .select("option_id, segment, updated_at")
-    .eq("poll_slug", POLL_SLUG);
+  const pollData = await getPoll(admin);
+  if (!pollData) return unavailable();
 
-  if (error) return unavailable("The verified poll tables are not deployed yet.");
-  const rows = (data ?? []) as Array<{
-    option_id: string;
-    segment: Segment;
-    updated_at: string;
-  }>;
-  const latest = rows.reduce<string | null>(
-    (value, row) => (!value || row.updated_at > value ? row.updated_at : value),
-    null,
+  const payload = await buildPayload(
+    admin,
+    pollData.poll,
+    pollData.options,
+    await getCurrentUserId(),
   );
+  if (!payload) return unavailable();
 
-  return NextResponse.json({
-    enabled: true,
-    asOf: latest,
-    minimumSample: MINIMUM_SAMPLE,
-    segments: aggregate(rows),
-  });
+  return json(payload);
 }
 
 export async function POST(
@@ -157,77 +211,87 @@ export async function POST(
 ) {
   const { slug } = await params;
   if (slug !== POLL_SLUG) {
-    return NextResponse.json({ message: "Poll not found." }, { status: 404 });
+    return json({ message: "Poll not found." }, { status: 404 });
   }
   if (!repwatchrFeatureFlags.racePollsV1) return unavailable();
+  if (!isSameOrigin(request)) {
+    return json({ message: "This request could not be verified." }, { status: 403 });
+  }
 
-  let body: { optionId?: unknown; turnstileToken?: unknown };
+  const contentLength = Number(request.headers.get("content-length") ?? 0);
+  if (contentLength > MAX_BODY_BYTES) {
+    return json({ message: "Invalid request." }, { status: 413 });
+  }
+
+  let body: { optionId?: unknown };
   try {
     body = (await request.json()) as typeof body;
   } catch {
-    return NextResponse.json({ message: "Invalid request." }, { status: 400 });
+    return json({ message: "Invalid request." }, { status: 400 });
   }
 
-  if (
-    typeof body.optionId !== "string" ||
-    !(body.optionId in OPTION_LABELS) ||
-    typeof body.turnstileToken !== "string" ||
-    body.turnstileToken.length < 20
-  ) {
-    return NextResponse.json(
-      { message: "Choose a candidate and complete the human verification challenge." },
-      { status: 400 },
-    );
+  if (typeof body.optionId !== "string") {
+    return json({ message: "Choose a candidate first." }, { status: 400 });
   }
 
-  const supabase = await createServerSupabaseClient();
-  const { data: authData } = await supabase.auth.getUser();
-  const user = authData.user;
-  if (!user) {
-    return NextResponse.json({ message: "Sign in before participating." }, { status: 401 });
+  let botCheck: Awaited<ReturnType<typeof checkBotId>>;
+  try {
+    botCheck = await checkBotId();
+  } catch {
+    return unavailable("Human verification is temporarily unavailable.");
+  }
+  if (botCheck.isBot || !botCheck.isHuman) {
+    return json({ message: "Automated responses are not accepted." }, { status: 403 });
   }
 
-  const forwardedFor = request.headers.get("x-forwarded-for")?.split(",")[0]?.trim() ?? null;
-  const isHuman = await verifyTurnstile(body.turnstileToken, forwardedFor);
-  if (!isHuman) {
-    return NextResponse.json(
-      { message: "Human verification expired or could not be confirmed." },
-      { status: 400 },
-    );
+  const userId = await getCurrentUserId();
+  if (!userId) {
+    return json({ message: "Sign in before participating." }, { status: 401 });
   }
 
   const admin = getSupabaseAdminClient();
-  if (!admin) return unavailable("The poll database connection is not configured.");
+  if (!admin) return unavailable();
 
-  const { data: profile } = await admin
-    .from("profiles")
-    .select("state, county, verification_status, geography_verified_at")
-    .eq("id", user.id)
-    .maybeSingle();
-  const segment = segmentForProfile(profile);
+  const pollData = await getPoll(admin);
+  if (!pollData) return unavailable();
+  if (!isPollOpen(pollData.poll)) {
+    return json(
+      { message: "This community pulse is not accepting responses." },
+      { status: 409 },
+    );
+  }
 
-  const { error } = await admin.from("race_poll_responses").upsert(
-    {
-      poll_slug: POLL_SLUG,
-      user_id: user.id,
-      option_id: body.optionId,
-      segment,
-      verification_status_at_vote: profile?.verification_status ?? "needs_review",
-      geography_verified_at: profile?.geography_verified_at ?? null,
-      human_check: "turnstile",
-      updated_at: new Date().toISOString(),
-    },
-    { onConflict: "poll_slug,user_id" },
+  const validOption = pollData.options.some(
+    (option) => option.option_id === body.optionId,
   );
+  if (!validOption) {
+    return json({ message: "Choose a listed candidate." }, { status: 400 });
+  }
 
-  if (error) return unavailable("The verified poll tables are not deployed yet.");
+  const { error } = await admin
+    .from("race_community_poll_responses")
+    .upsert(
+      {
+        poll_id: pollData.poll.id,
+        user_id: userId,
+        option_id: body.optionId,
+        updated_at: new Date().toISOString(),
+      },
+      { onConflict: "poll_id,user_id" },
+    );
 
-  return NextResponse.json({
-    message:
-      segment === "verified_marion"
-        ? "Response recorded in the verified Marion County segment."
-        : segment === "verified_outside"
-          ? "Response recorded in the verified outside-Marion segment."
-          : "Response recorded. It remains in the residence-unverified segment until verification is complete.",
+  if (error) return unavailable("Your response could not be recorded right now.");
+
+  const payload = await buildPayload(
+    admin,
+    pollData.poll,
+    pollData.options,
+    userId,
+  );
+  if (!payload) return unavailable();
+
+  return json({
+    ...payload,
+    message: "Your response is recorded. You can change it before the poll closes.",
   });
 }
