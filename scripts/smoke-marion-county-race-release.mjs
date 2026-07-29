@@ -93,10 +93,22 @@ for (const marker of [
   "Announced write-in · qualification pending",
   "selected as chair in 2023",
   "current official roster for a reported East Texas water-advisory role was not located",
+  "<RaceCommunityPoll />",
 ]) {
   if (!component.includes(marker)) {
     fail(`required dossier marker is missing: ${marker}`);
   }
+}
+
+const heroMatchupStart = component.indexOf('className={styles.heroMatchup}');
+const pollPosition = component.indexOf("<RaceCommunityPoll />");
+const heroMatchupEnd = component.indexOf("</aside>", heroMatchupStart);
+if (
+  heroMatchupStart < 0 ||
+  pollPosition < heroMatchupStart ||
+  pollPosition > heroMatchupEnd
+) {
+  fail("the community pulse is not rendered inside the portrait-led hero matchup");
 }
 
 for (const unsupportedCurrentRole of [
