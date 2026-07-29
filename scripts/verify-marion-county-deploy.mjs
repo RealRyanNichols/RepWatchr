@@ -13,6 +13,8 @@ const routeChecks = [
     markers: [
       "Dina K. Carroll",
       "Leward J. LaFleur II",
+      "Live community pulse",
+      "If the election were today, who would you support?",
       "See the people—not campaign placeholders",
       "dina-carroll-portrait.jpg",
       "leward-lafleur-portrait.jpg",
@@ -37,6 +39,8 @@ const routeChecks = [
     ],
   },
 ];
+
+const pollApiPath = "/api/races/marion-county-judge-2026/poll";
 
 const forbiddenPlaceholderMarkers = [
   "High-resolution photo release requested",
@@ -196,6 +200,41 @@ for (const portraitPath of portraitPaths) {
   }
 }
 
+try {
+  const pollUrl = new URL(pollApiPath, baseUrl);
+  const response = await fetchExact(pollUrl, "Marion County community pulse API");
+  const payload = await response.json();
+
+  if (
+    payload.enabled !== true ||
+    typeof payload.canVote !== "boolean" ||
+    payload.question !== "If the election were today, who would you support?" ||
+    payload.minimumSample !== 25 ||
+    !Array.isArray(payload.options) ||
+    payload.options.length !== 2
+  ) {
+    failures.push("the community pulse API returned an invalid public contract");
+  }
+
+  const optionIds = payload.options.map((option) => option.optionId);
+  for (const expected of ["dina-k-carroll", "leward-j-lafleur-ii"]) {
+    if (!optionIds.includes(expected)) {
+      failures.push(`the community pulse API is missing option ${expected}`);
+    }
+  }
+
+  if (
+    payload.responseCount < payload.minimumSample &&
+    payload.options.some(
+      (option) => option.votes !== null || option.percent !== null,
+    )
+  ) {
+    failures.push("the community pulse API exposed a candidate split below threshold");
+  }
+} catch (error) {
+  failures.push(error.message);
+}
+
 if (failures.length > 0) {
   console.error("Marion County post-deploy verification failed:");
   for (const failure of failures) {
@@ -207,3 +246,4 @@ if (failures.length > 0) {
 console.log(`Marion County post-deploy verification passed for ${baseUrl.origin}.`);
 console.log(`Verified routes: ${routeChecks.length}`);
 console.log(`Verified portraits: ${portraitPaths.length}`);
+console.log("Verified community pulse: live aggregate contract and threshold");
