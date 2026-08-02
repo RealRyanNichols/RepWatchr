@@ -5,10 +5,23 @@
 export type ScoreBand = "elite" | "strong" | "mixed" | "weak" | "bad" | "terrible";
 
 /**
- * Convert a numeric score (0-100) to a letter grade.
+ * SCALE 1 OF 3 - EDITORIAL SOURCE-BACKED SCORECARD GRADE.
  *
- * RepWatchr uses a strict accountability scale. A public official should not
- * get "good" visual treatment for a barely passing record.
+ * Converts a 0-100 source-backed vote-record score into a letter grade. This is
+ * the scale used by /scorecards, /scorecards/[category], and official profile
+ * vote-record badges. It is deliberately the strictest of the three: a public
+ * official should not get "good" visual treatment for a barely passing record,
+ * so 80 reads as a C, not a B.
+ *
+ * Do NOT assume this matches the other two letter-grade scales in the codebase.
+ * They measure different things and intentionally disagree:
+ *   - `scoreToLetterGrade` in src/lib/performance-grade.ts - performance
+ *     methodology grade (A>=90, B>=80, C>=70, D>=60), the conventional academic
+ *     scale used by the documented Performance Grade Method v1.
+ *   - `averageToGrade` in src/components/scorecards/ProfileScorecardVote.tsx -
+ *     community vote average (A>=90, B>=70, C>=50, D>=30), which inverts the
+ *     discrete A=100/B=80/C=60/D=40/F=0 anchors members actually vote with.
+ * See docs/GRADE_SCALE_RECONCILIATION.md before unifying any of them.
  */
 export function calculateLetterGrade(score: number): string {
   if (score >= 98) return "A+";

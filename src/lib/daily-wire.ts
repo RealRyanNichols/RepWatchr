@@ -143,7 +143,7 @@ async function loadDailyWireRows(limit: number) {
     .select(
       "id,title,summary,source_url,source_name,published_at,scope,state,counties,cities,power_channels,matched_terms,status,updated_at,raw",
     )
-    .order("published_at", { ascending: false })
+    .order("published_at", { ascending: false, nullsFirst: false })
     .order("updated_at", { ascending: false })
     .limit(limit);
 

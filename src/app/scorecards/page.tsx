@@ -190,50 +190,76 @@ export default function ScorecardsPage() {
                   </tr>
                 </thead>
                 <tbody className="divide-y divide-slate-200 bg-white">
-                  {scoredOfficials.map(({ official, scoreCard }, index) => {
-                    const categoryKeys = Object.keys(scoreCard.categories) as Array<keyof typeof scoreCard.categories>;
-                    return (
-                      <tr key={official.id} className="align-top hover:bg-slate-50">
-                        <td className="px-4 py-4 text-sm font-bold text-slate-500">#{index + 1}</td>
-                        <td className="px-4 py-4">
-                          <Link href={`/officials/${official.id}`} className="text-sm font-black text-blue-700 hover:underline">
-                            {official.name}
+                  {scoredOfficials.length === 0 ? (
+                    <tr>
+                      <td colSpan={5 + issueCategories.length} className="px-4 py-10">
+                        <div className="mx-auto max-w-2xl text-center">
+                          <p className="text-xs font-black uppercase tracking-[0.18em] text-red-700">
+                            No vote files published yet
+                          </p>
+                          <h3 className="mt-2 text-xl font-black text-slate-950">
+                            No source-backed vote scorecards are loaded right now
+                          </h3>
+                          <p className="mt-2 text-sm font-semibold leading-6 text-slate-600">
+                            RepWatchr only publishes a vote-record scorecard after every vote on it is matched to a
+                            reviewed bill file that carries a public source link. An official missing from this table has
+                            not cleared that review yet. Do not read that as a clean record.
+                          </p>
+                          <Link
+                            href="/submit-source"
+                            className="mt-4 inline-flex items-center gap-2 rounded-full border border-slate-200 bg-white px-4 py-2 text-sm font-black text-slate-700 transition-all hover:border-blue-300 hover:shadow-sm"
+                          >
+                            Submit a source to help fill this in &rarr;
                           </Link>
-                          <div className="mt-1">
-                            <PartyBadge party={official.party} />
-                          </div>
-                        </td>
-                        <td className="px-4 py-4 text-sm font-semibold text-slate-600">
-                          {official.position}
-                          {official.district ? <span className="text-slate-400"> ({official.district})</span> : null}
-                        </td>
-                        <td className="px-4 py-4 text-center">
-                          <LetterGradeBadge grade={calculateLetterGrade(scoreCard.overall)} score={scoreCard.overall} />
-                          <div className="mt-1 text-xs font-semibold text-slate-500">
-                            {scoreCard.overall} - {getScoreDescription(scoreCard.overall)}
-                          </div>
-                        </td>
-                        <td className="min-w-[260px] px-4 py-4">
-                          <ProfileScorecardVote
-                            targetType="official"
-                            targetId={official.id}
-                            targetName={official.name}
-                            targetPath={`/officials/${official.id}`}
-                            compact
-                          />
-                        </td>
-                        {categoryKeys.map((key) => (
-                          <td key={key} className="hidden px-4 py-4 text-center lg:table-cell">
-                            <LetterGradeBadge
-                              grade={calculateLetterGrade(scoreCard.categories[key].score)}
-                              score={scoreCard.categories[key].score}
-                              size="sm"
+                        </div>
+                      </td>
+                    </tr>
+                  ) : (
+                    scoredOfficials.map(({ official, scoreCard }, index) => {
+                      const categoryKeys = Object.keys(scoreCard.categories) as Array<keyof typeof scoreCard.categories>;
+                      return (
+                        <tr key={official.id} className="align-top hover:bg-slate-50">
+                          <td className="px-4 py-4 text-sm font-bold text-slate-500">#{index + 1}</td>
+                          <td className="px-4 py-4">
+                            <Link href={`/officials/${official.id}`} className="text-sm font-black text-blue-700 hover:underline">
+                              {official.name}
+                            </Link>
+                            <div className="mt-1">
+                              <PartyBadge party={official.party} />
+                            </div>
+                          </td>
+                          <td className="px-4 py-4 text-sm font-semibold text-slate-600">
+                            {official.position}
+                            {official.district ? <span className="text-slate-400"> ({official.district})</span> : null}
+                          </td>
+                          <td className="px-4 py-4 text-center">
+                            <LetterGradeBadge grade={calculateLetterGrade(scoreCard.overall)} score={scoreCard.overall} />
+                            <div className="mt-1 text-xs font-semibold text-slate-500">
+                              {scoreCard.overall} - {getScoreDescription(scoreCard.overall)}
+                            </div>
+                          </td>
+                          <td className="min-w-[260px] px-4 py-4">
+                            <ProfileScorecardVote
+                              targetType="official"
+                              targetId={official.id}
+                              targetName={official.name}
+                              targetPath={`/officials/${official.id}`}
+                              compact
                             />
                           </td>
-                        ))}
-                      </tr>
-                    );
-                  })}
+                          {categoryKeys.map((key) => (
+                            <td key={key} className="hidden px-4 py-4 text-center lg:table-cell">
+                              <LetterGradeBadge
+                                grade={calculateLetterGrade(scoreCard.categories[key].score)}
+                                score={scoreCard.categories[key].score}
+                                size="sm"
+                              />
+                            </td>
+                          ))}
+                        </tr>
+                      );
+                    })
+                  )}
                 </tbody>
               </table>
             </div>

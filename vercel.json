@@ -3,7 +3,7 @@
   "crons": [
     {
       "path": "/api/cron/hourly-social-posts",
-      "schedule": "0 * * * *"
+      "schedule": "0 13,18,23 * * *"
     },
     {
       "path": "/api/cron/daily-updates",

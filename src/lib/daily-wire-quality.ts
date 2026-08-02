@@ -158,6 +158,10 @@ const EXPLICIT_US_MARKERS = [
   "pentagon",
 ];
 
+// Google News rewrites every item link to its own redirect host, so the host is
+// evidence about the aggregator and never about the publisher behind the story.
+const NEWS_AGGREGATOR_DOMAIN = "news.google.com";
+
 const ELECTION_TERMS = ["election", "runoff", "candidate", "campaign", "ballot", "primary", "canvass"];
 
 const TOPIC_RULES: Array<{ tag: string; terms: string[] }> = [
@@ -432,8 +436,13 @@ function clampScore(value: number) {
 export function evaluateDailyWireQuality(input: DailyWireQualityInput, duplicateScore = 0): DailyWireQualityResult {
   const raw = readRawRecord(input.raw);
   const publisherUrl = typeof raw.publisherUrl === "string" ? raw.publisherUrl : "";
-  const sourceDomain = getSourceDomain(publisherUrl || input.sourceUrl);
-  const sourceTier = classifyProfileSource(input.sourceUrl, input.sourceName);
+  const publisherSourceUrl = publisherUrl || input.sourceUrl;
+  const sourceDomain = getSourceDomain(publisherSourceUrl);
+  // A Google News link is an aggregator redirect, not a publisher. Trust has to
+  // be graded against the resolved publisher, otherwise every content farm in
+  // the feed inherits the aggregator's named-news standing.
+  const isAggregatorDomain = sourceDomain === NEWS_AGGREGATOR_DOMAIN;
+  const sourceTier = classifyProfileSource(isAggregatorDomain ? "" : publisherSourceUrl, input.sourceName);
   const source = resolveSource(input);
   const sourceWatchId = getSourceWatchId(input, source);
   const queryLane = getQueryLane(input, source);
@@ -457,15 +466,11 @@ export function evaluateDailyWireQuality(input: DailyWireQualityInput, duplicate
   const requiredTerms = source?.requiredTerms ?? laneControl?.requiredTerms ?? [];
   const sourceDenied = domainMatches(sourceDomain, deniedDomains);
   const sourceAllowed =
-    domainMatches(sourceDomain, source?.allowDomains) ||
-    domainMatches(sourceDomain, laneControl?.allowDomains) ||
-    sourceDomain === "news.google.com";
+    domainMatches(sourceDomain, source?.allowDomains) || domainMatches(sourceDomain, laneControl?.allowDomains);
   const matchedRequiredTerms = requiredTerms.filter((term) => textIncludesTerm(normalizedText, term));
   const missingRequiredTerms = requiredTerms.length > 0 && matchedRequiredTerms.length === 0;
   const texasPublisherEvidence = Boolean(
-    source?.scope === "texas" &&
-      sourceDomain !== "news.google.com" &&
-      domainMatches(sourceDomain, source.allowDomains),
+    source?.scope === "texas" && !isAggregatorDomain && domainMatches(sourceDomain, source.allowDomains),
   );
   const texasEvidence =
     stateMatches.includes("TX") ||

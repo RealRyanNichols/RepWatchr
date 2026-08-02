@@ -140,39 +140,62 @@ export default async function CategoryScorecardPage({
             </tr>
           </thead>
           <tbody className="divide-y divide-gray-200">
-            {ranked.map((item, index) => {
-              const { official, catScore } = item!;
-              return (
-                <tr key={official.id} className="hover:bg-gray-50">
-                  <td className="px-4 py-4 text-sm text-gray-500">
-                    #{index + 1}
-                  </td>
-                  <td className="px-4 py-4">
+            {ranked.length === 0 ? (
+              <tr>
+                <td colSpan={6} className="px-4 py-12">
+                  <div className="mx-auto max-w-2xl text-center">
+                    <p className="text-base font-semibold text-gray-900">
+                      No source-backed {issueCat.name.toLowerCase()} scorecards are loaded yet
+                    </p>
+                    <p className="mt-2 text-sm text-gray-600">
+                      RepWatchr only shows a vote-record scorecard after every vote on it is matched to a reviewed bill
+                      file that carries a public source link. An official missing from this table has not cleared that
+                      review yet. Do not read that as a clean record.
+                    </p>
                     <Link
-                      href={`/officials/${official.id}`}
-                      className="text-sm font-semibold text-blue-600 hover:underline"
+                      href="/submit-source"
+                      className="mt-4 inline-block text-sm font-semibold text-blue-600 hover:underline"
                     >
-                      {official.name}
+                      Submit a source to help fill this in &rarr;
                     </Link>
-                    <div className="mt-0.5">
-                      <PartyBadge party={official.party} />
-                    </div>
-                  </td>
-                  <td className="px-4 py-4 text-sm text-gray-600">
-                    {official.position}
-                  </td>
-                  <td className="px-4 py-4 text-center">
-                    <LetterGradeBadge grade={calculateLetterGrade(catScore.score)} score={catScore.score} />
-                  </td>
-                  <td className="px-4 py-4 text-center text-sm text-gray-700">
-                    {catScore.score}/100
-                  </td>
-                  <td className="px-4 py-4 text-center text-sm text-gray-500">
-                    {catScore.votes.length}
-                  </td>
-                </tr>
-              );
-            })}
+                  </div>
+                </td>
+              </tr>
+            ) : (
+              ranked.map((item, index) => {
+                const { official, catScore } = item!;
+                return (
+                  <tr key={official.id} className="hover:bg-gray-50">
+                    <td className="px-4 py-4 text-sm text-gray-500">
+                      #{index + 1}
+                    </td>
+                    <td className="px-4 py-4">
+                      <Link
+                        href={`/officials/${official.id}`}
+                        className="text-sm font-semibold text-blue-600 hover:underline"
+                      >
+                        {official.name}
+                      </Link>
+                      <div className="mt-0.5">
+                        <PartyBadge party={official.party} />
+                      </div>
+                    </td>
+                    <td className="px-4 py-4 text-sm text-gray-600">
+                      {official.position}
+                    </td>
+                    <td className="px-4 py-4 text-center">
+                      <LetterGradeBadge grade={calculateLetterGrade(catScore.score)} score={catScore.score} />
+                    </td>
+                    <td className="px-4 py-4 text-center text-sm text-gray-700">
+                      {catScore.score}/100
+                    </td>
+                    <td className="px-4 py-4 text-center text-sm text-gray-500">
+                      {catScore.votes.length}
+                    </td>
+                  </tr>
+                );
+              })
+            )}
           </tbody>
         </table>
       </div>

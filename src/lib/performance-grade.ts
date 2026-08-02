@@ -84,6 +84,25 @@ function clampPercent(value: number) {
   if (!Number.isFinite(value)) return 0;
   return Math.min(100, Math.max(0, value));
 }
+/**
+ * SCALE 2 OF 3 - PERFORMANCE METHODOLOGY GRADE.
+ *
+ * Converts the weighted 0-100 performance-grade score into a letter grade for
+ * the documented Performance Grade Method v1 (see docs/PERFORMANCE_GRADE_METHOD_V1.md).
+ * This measures documented execution of public duties, not policy alignment, and
+ * only runs once `calculatePerformanceGrade` has cleared its publication gate.
+ * It uses the conventional academic scale on purpose, because the method doc
+ * publishes these cutoffs to the reader.
+ *
+ * Do NOT assume this matches the other two letter-grade scales in the codebase.
+ * They measure different things and intentionally disagree:
+ *   - `calculateLetterGrade` in src/lib/scoring.ts - editorial source-backed
+ *     scorecard grade (A+>=98, A>=95, A->=90, B>=85, C>=80, D>=70), a stricter
+ *     accountability curve where 80 is a C.
+ *   - `averageToGrade` in src/components/scorecards/ProfileScorecardVote.tsx -
+ *     community vote average (A>=90, B>=70, C>=50, D>=30).
+ * See docs/GRADE_SCALE_RECONCILIATION.md before unifying any of them.
+ */
 export function scoreToLetterGrade(score: number): "A" | "B" | "C" | "D" | "F" {
   if (score >= 90) return "A";
   if (score >= 80) return "B";

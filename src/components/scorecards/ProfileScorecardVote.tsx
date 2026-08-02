@@ -109,6 +109,24 @@ const approvalAfterVoteLabels: Record<ApprovalAfterVote, string> = {
   not_applicable: "Not applicable",
 };
 
+/**
+ * SCALE 3 OF 3 - COMMUNITY VOTE AVERAGE.
+ *
+ * Converts the mean of verified members' A-F scorecard votes back into a single
+ * displayed letter. Members vote on the discrete `gradeScores` anchors above
+ * (A=100, B=80, C=60, D=40, F=0), so these cutoffs are the midpoints between
+ * those anchors - an average of 80 is literally "the average member said B" and
+ * must render as B. This is a round-trip of a survey result, NOT an
+ * accountability curve, which is why it is the most generous of the three.
+ *
+ * Do NOT assume this matches the other two letter-grade scales in the codebase.
+ * They measure different things and intentionally disagree:
+ *   - `calculateLetterGrade` in src/lib/scoring.ts - editorial source-backed
+ *     scorecard grade (A+>=98, A>=95, A->=90, B>=85, C>=80, D>=70).
+ *   - `scoreToLetterGrade` in src/lib/performance-grade.ts - performance
+ *     methodology grade (A>=90, B>=80, C>=70, D>=60).
+ * See docs/GRADE_SCALE_RECONCILIATION.md before unifying any of them.
+ */
 function averageToGrade(score: number | null | undefined): string {
   if (score === null || score === undefined) return "-";
   if (score >= 90) return "A";

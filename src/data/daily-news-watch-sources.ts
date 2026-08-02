@@ -1,3 +1,4 @@
+import { EAST_TEXAS_LAUNCH_JURISDICTIONS } from "@/lib/east-texas-launch-territory";
 import type { NewsPowerChannel, NewsScope, SourceCredit } from "@/types";
 
 export interface DailyNewsWatchSource {
@@ -33,6 +34,18 @@ export const DAILY_WIRE_DEFAULT_DENY_DOMAINS = [
   "reddit.com",
   "x.com",
   "twitter.com",
+  "fool.com",
+  "benzinga.com",
+  "investing.com",
+  "marketwatch.com",
+  "seekingalpha.com",
+  "zacks.com",
+  "simplywall.st",
+  "msn.com",
+  "yahoo.com",
+  "finance.yahoo.com",
+  "newsbreak.com",
+  "aol.com",
 ];
 
 export const DAILY_WIRE_INTERNATIONAL_NOISE_TERMS = [
@@ -62,6 +75,36 @@ export const DAILY_WIRE_INTERNATIONAL_NOISE_TERMS = [
   "united kingdom",
 ];
 
+// The launch territory is the single source of truth for East Texas coverage.
+// Every east-texas lane derives its counties, cities, and required terms here so
+// the wire can never go blind to a county it is supposed to be watching.
+const eastTexasCounties: string[] = [...EAST_TEXAS_LAUNCH_JURISDICTIONS.counties];
+const eastTexasCities: string[] = [...EAST_TEXAS_LAUNCH_JURISDICTIONS.communities];
+const eastTexasSchoolDistricts: string[] = [...EAST_TEXAS_LAUNCH_JURISDICTIONS.schoolDistricts];
+
+const eastTexasRequiredTerms = [
+  "east texas",
+  ...eastTexasCounties.map((county) => county.toLowerCase()),
+  ...eastTexasCities.map((city) => city.toLowerCase()),
+];
+
+const eastTexasSchoolRequiredTerms = [
+  "east texas",
+  "isd",
+  "school board",
+  "trustee",
+  ...eastTexasSchoolDistricts.map((district) => district.toLowerCase()),
+  ...eastTexasCities.map((city) => city.toLowerCase()),
+];
+
+const eastTexasCountyQuery = eastTexasCounties.map((county) => `"${county} County"`).join(" OR ");
+const eastTexasCityQuery = eastTexasCities.map((city) => `"${city}"`).join(" OR ");
+const eastTexasSchoolDistrictQuery = eastTexasSchoolDistricts.map((district) => `"${district}"`).join(" OR ");
+
+function googleNewsSearchUrl(query: string) {
+  return `https://news.google.com/rss/search?q=${encodeURIComponent(query)}&hl=en-US&gl=US&ceid=US%3Aen`;
+}
+
 const defaultSearchControls = {
   denyDomains: DAILY_WIRE_DEFAULT_DENY_DOMAINS,
   deniedTerms: DAILY_WIRE_INTERNATIONAL_NOISE_TERMS,
@@ -90,7 +133,19 @@ export const DAILY_WIRE_QUERY_LANE_CONTROLS: Record<string, Partial<DailyNewsWat
   },
   "east-texas-officials": {
     ...texasControls,
-    requiredTerms: ["east texas", "longview", "tyler", "marshall", "gregg", "harrison", "smith", "upshur", "panola"],
+    requiredTerms: eastTexasRequiredTerms,
+  },
+  "east-texas-county-government": {
+    ...texasControls,
+    requiredTerms: eastTexasRequiredTerms,
+  },
+  "east-texas-school-boards": {
+    ...texasControls,
+    requiredTerms: eastTexasSchoolRequiredTerms,
+  },
+  "east-texas-city-councils": {
+    ...texasControls,
+    requiredTerms: eastTexasRequiredTerms,
   },
   "texas-public-safety": {
     ...texasControls,
@@ -117,6 +172,52 @@ const texasPoliticsTerms = [
   "runoff",
   "canvass",
   "ethics",
+];
+
+const eastTexasCountyTerms = [
+  "commissioners court",
+  "county judge",
+  "county commissioner",
+  "county clerk",
+  "district clerk",
+  "tax assessor",
+  "tax office",
+  "appraisal district",
+  "budget",
+  "tax rate",
+  "bond",
+  "district attorney",
+  "county attorney",
+];
+
+const eastTexasSchoolBoardTerms = [
+  "isd",
+  "school board",
+  "trustee",
+  "superintendent",
+  "bond",
+  "budget",
+  "election",
+  "runoff",
+  "canvass",
+  "campus",
+  "student outcomes",
+];
+
+const eastTexasCityTerms = [
+  "city council",
+  "council member",
+  "councilman",
+  "councilwoman",
+  "mayor",
+  "city manager",
+  "city secretary",
+  "ordinance",
+  "budget",
+  "tax rate",
+  "utility rate",
+  "contract",
+  "open meetings",
 ];
 
 const stateNewsTerms = [
@@ -291,13 +392,64 @@ const BASE_DAILY_NEWS_WATCH_SOURCES: DailyNewsWatchSource[] = [
     queryLane: "east-texas-officials",
     scope: "east-texas",
     state: "TX",
-    counties: ["Gregg", "Harrison", "Smith", "Upshur", "Panola"],
-    cities: ["Longview", "Tyler", "Marshall"],
+    counties: eastTexasCounties,
+    cities: eastTexasCities,
     powerChannels: ["officials", "school-boards", "public-safety", "elections"],
     sourceType: "public_news_search",
     terms: ["official", "mayor", "sheriff", "county judge", "school board", "trustee", "election"],
     ...texasControls,
-    requiredTerms: ["east texas", "longview", "tyler", "marshall", "gregg", "harrison", "smith", "upshur", "panola"],
+    requiredTerms: eastTexasRequiredTerms,
+  },
+  {
+    id: "google-news-east-texas-county-government",
+    label: "Public news search: East Texas county government",
+    url: googleNewsSearchUrl(
+      `(${eastTexasCountyQuery}) ("commissioners court" OR "county judge" OR "county commissioner" OR "county clerk" OR "tax assessor" OR "appraisal district" OR "district attorney" OR budget OR "tax rate") when:1d`,
+    ),
+    queryLane: "east-texas-county-government",
+    scope: "east-texas",
+    state: "TX",
+    counties: eastTexasCounties,
+    cities: eastTexasCities,
+    powerChannels: ["officials", "courts", "money", "elections"],
+    sourceType: "public_news_search",
+    terms: eastTexasCountyTerms,
+    ...texasControls,
+    requiredTerms: eastTexasRequiredTerms,
+  },
+  {
+    id: "google-news-east-texas-school-boards",
+    label: "Public news search: East Texas school boards",
+    url: googleNewsSearchUrl(
+      `(${eastTexasSchoolDistrictQuery}) ("school board" OR trustee OR superintendent OR bond OR budget OR election) when:1d`,
+    ),
+    queryLane: "east-texas-school-boards",
+    scope: "east-texas",
+    state: "TX",
+    counties: eastTexasCounties,
+    cities: eastTexasCities,
+    powerChannels: ["school-boards", "elections", "money"],
+    sourceType: "public_news_search",
+    terms: eastTexasSchoolBoardTerms,
+    ...texasControls,
+    requiredTerms: eastTexasSchoolRequiredTerms,
+  },
+  {
+    id: "google-news-east-texas-city-councils",
+    label: "Public news search: East Texas city councils",
+    url: googleNewsSearchUrl(
+      `(${eastTexasCityQuery}) Texas ("city council" OR mayor OR "city manager" OR ordinance OR budget OR "tax rate" OR "utility rate") when:1d`,
+    ),
+    queryLane: "east-texas-city-councils",
+    scope: "east-texas",
+    state: "TX",
+    counties: eastTexasCounties,
+    cities: eastTexasCities,
+    powerChannels: ["officials", "money", "elections"],
+    sourceType: "public_news_search",
+    terms: eastTexasCityTerms,
+    ...texasControls,
+    requiredTerms: eastTexasRequiredTerms,
   },
   {
     id: "google-news-texas-public-safety",
@@ -337,7 +489,7 @@ const BASE_DAILY_NEWS_WATCH_SOURCES: DailyNewsWatchSource[] = [
   {
     id: "google-news-congress-exposure-wire",
     label: "Public news search: representatives exposure wire",
-    url: `https://news.google.com/rss/search?q=${encodeURIComponent('(representative OR senator OR governor OR mayor OR "school board") (investigation OR ethics OR subpoena OR whistleblower OR lawsuit OR indicted OR charged OR resigned OR censure OR "campaign finance" OR "stock trading" OR "public records") when:1d')}&hl=en-US&gl=US&ceid=US%3Aen`,
+    url: `https://news.google.com/rss/search?q=${encodeURIComponent('(representative OR senator OR governor OR mayor OR "school board") (investigation OR ethics OR subpoena OR whistleblower OR lawsuit OR indicted OR charged OR resigned OR censure OR "campaign finance" OR "public records") when:1d')}&hl=en-US&gl=US&ceid=US%3Aen`,
     queryLane: "exposure-wire",
     scope: "national",
     powerChannels: ["officials", "elections", "courts", "money"],

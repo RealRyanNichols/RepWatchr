@@ -11,6 +11,7 @@ import NextUsefulMove from "@/components/shared/NextUsefulMove";
 import { getOfficialVerifiedBrief } from "@/data/official-verified-briefs";
 import { getRepWatchrServices } from "@/data/repwatchr-services";
 import { getDailyWireClips, type DailyWireClip } from "@/lib/daily-wire";
+import { isInEastTexasLaunchTerritory } from "@/lib/east-texas-launch-territory";
 import { articleThumbnailMessage, toEditorialThumbnailMessage } from "@/lib/editorial-visuals";
 import { getPublishedArticles } from "@/lib/published-articles";
 import { buildOgImageUrl, buildRepWatchrMetadata } from "@/lib/repwatchr-seo";
@@ -156,6 +157,14 @@ function storyDateLabel(value: string | null) {
   if (Number.isNaN(date.getTime())) return "Date pending";
   return date.toLocaleDateString("en-US", { month: "short", day: "numeric" });
 }
+
+// Reserved live-wire slots by lane. RepWatchr is an East Texas desk first, so the
+// ticker guarantees East Texas and Texas coverage instead of letting the national
+// query lanes win on recency alone.
+const HOME_WIRE_EAST_TEXAS_SLOTS = 4;
+const HOME_WIRE_TEXAS_SLOTS = 3;
+const HOME_WIRE_NATIONAL_SLOTS = 3;
+const HOME_WIRE_TICKER_SLOTS = 10;
 
 function wireLaneLabel(clip: DailyWireClip) {
   if (clip.jurisdictionMatch === "local") return "East Texas";
@@ -328,9 +337,23 @@ export default async function HomePage() {
           publishedAt: null,
           lane: "Washington",
         };
+  // RepWatchr leads with East Texas, then Texas, then Washington. Sorting the wire
+  // purely by recency makes the ticker national by arithmetic, because national query
+  // lanes outnumber East Texas lanes. Reserve slots by lane instead of hoping.
+  const wireByJurisdiction = (match: string) =>
+    trustedWireClips.filter((clip) => clip.jurisdictionMatch === match);
+  const laneOrderedWireClips = [
+    ...wireByJurisdiction("local").slice(0, HOME_WIRE_EAST_TEXAS_SLOTS),
+    ...wireByJurisdiction("texas").slice(0, HOME_WIRE_TEXAS_SLOTS),
+    ...wireByJurisdiction("national").slice(0, HOME_WIRE_NATIONAL_SLOTS),
+  ];
+  // Backfill from whatever is left so a quiet East Texas news day never empties the wire.
+  const laneOrderedIds = new Set(laneOrderedWireClips.map((clip) => clip.id));
+  const backfillWireClips = trustedWireClips.filter((clip) => !laneOrderedIds.has(clip.id));
   const tickerMap = new Map<string, HomeDeskItem>();
   for (const item of [
-    ...trustedWireClips.slice(0, 8).map(homeDeskItemFromWire),
+    ...laneOrderedWireClips.map(homeDeskItemFromWire),
+    ...backfillWireClips.slice(0, HOME_WIRE_TICKER_SLOTS).map(homeDeskItemFromWire),
     ...allNews.slice(0, 6).map(homeDeskItemFromArticle),
   ]) {
     tickerMap.set(item.title.toLowerCase(), item);
@@ -373,8 +396,28 @@ export default async function HomePage() {
 
   const serviceHighlights = getRepWatchrServices().slice(0, 3);
 
-  const featuredOfficials = officials
-    .filter((o) => o.level === "federal" || o.level === "state")
+  // The previous selection was an accident of the global sort: at-large districts encode
+  // as district 0, so six unrelated at-large House members permanently held the homepage.
+  // RepWatchr is an East Texas and Texas desk, so lead with Texas and fall back outward.
+  const featuredCandidates = officials.filter(
+    (o) => o.level === "federal" || o.level === "state",
+  );
+  const eastTexasFeatured = featuredCandidates.filter(isInEastTexasLaunchTerritory);
+  const texasFeatured = featuredCandidates.filter(
+    (o) => o.state === "TX" && !eastTexasFeatured.includes(o),
+  );
+  const featuredPool = [
+    ...eastTexasFeatured,
+    ...texasFeatured,
+    ...featuredCandidates.filter(
+      (o) => !eastTexasFeatured.includes(o) && !texasFeatured.includes(o),
+    ),
+  ];
+  // A face people recognize beats a placeholder, so prefer profiles that have a portrait.
+  const featuredOfficials = [
+    ...featuredPool.filter((o) => o.photo),
+    ...featuredPool.filter((o) => !o.photo),
+  ]
     .map(officialWithSafePhoto)
     .slice(0, 6);
 
