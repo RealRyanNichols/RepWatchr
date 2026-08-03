@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import Link from "next/link";
 import { getAllNews, getNewsById, getOfficialById } from "@/lib/data";
 import { getPublishedArticle } from "@/lib/published-articles";
@@ -10,7 +11,7 @@ import ReportButton from "@/components/shared/ReportButton";
 import NextUsefulMove from "@/components/shared/NextUsefulMove";
 import TrustLabel from "@/components/shared/TrustLabel";
 import PublicPostEmbed from "@/components/news/PublicPostEmbed";
-import { buildOgImageUrl, buildRepWatchrMetadata } from "@/lib/repwatchr-seo";
+import { absoluteRepWatchrUrl, buildOgImageUrl, buildRepWatchrMetadata } from "@/lib/repwatchr-seo";
 import { breadcrumbJsonLd, jsonLd, newsArticleJsonLd } from "@/lib/structured-data";
 
 export async function generateStaticParams() {
@@ -27,11 +28,11 @@ export async function generateMetadata({
   const article = getNewsById(id) ?? await getPublishedArticle(id);
   if (!article) return { title: "Article Not Found" };
   return buildRepWatchrMetadata({
-    title: article.title,
-    description: article.summary,
+    title: article.seoTitle ?? article.title,
+    description: article.seoDescription ?? article.summary,
     path: `/news/${article.id}`,
-    imagePath: buildOgImageUrl("news", { id: article.id }),
-    imageAlt: `${article.title} RepWatchr story preview`,
+    imagePath: article.imageUrl ?? buildOgImageUrl("news", { id: article.id }),
+    imageAlt: article.imageAlt ?? `${article.title} RepWatchr story preview`,
     type: "article",
     publishedTime: article.publishedAt,
     authors: [article.author],
@@ -124,7 +125,9 @@ export default async function NewsArticlePage({
     path: `/news/${article.id}`,
     datePublished: article.publishedAt,
     authorName: article.author,
-    image: buildOgImageUrl("news", { id: article.id }),
+    image: article.imageUrl
+      ? absoluteRepWatchrUrl(article.imageUrl)
+      : buildOgImageUrl("news", { id: article.id }),
     sourceLinks: sourceStructuredLinks,
     about: linkedOfficials.map((official) => ({
       name: official!.name,
@@ -158,6 +161,11 @@ export default async function NewsArticlePage({
 
       {/* Tags */}
       <div className="flex flex-wrap gap-2 mb-4">
+        {article.category ? (
+          <span className="rounded-full bg-red-700 px-3 py-1 text-xs font-bold uppercase tracking-wide text-white">
+            {article.category}
+          </span>
+        ) : null}
         {article.scope ? (
           <span className="rounded-full bg-blue-950 px-3 py-1 text-xs font-bold uppercase tracking-wide text-white">
             {scopeLabels[article.scope] ?? article.scope}
@@ -202,6 +210,7 @@ export default async function NewsArticlePage({
         <span>&middot;</span>
         <span>
           {new Date(article.publishedAt).toLocaleDateString("en-US", {
+            timeZone: "America/Chicago",
             weekday: "long",
             month: "long",
             day: "numeric",
@@ -269,6 +278,25 @@ export default async function NewsArticlePage({
           sourceLabel={article.sourceName || article.sourceLinks?.[0]?.title || "linked public sources"}
         />
       </div>
+
+      {article.imageUrl ? (
+        <figure className="mt-6 overflow-hidden rounded-xl border border-slate-200 bg-slate-100 shadow-sm">
+          <Image
+            src={article.imageUrl}
+            alt={article.imageAlt ?? `${article.title} editorial image`}
+            width={1200}
+            height={630}
+            sizes="(min-width: 1024px) 768px, 100vw"
+            priority
+            className="aspect-[1200/630] h-auto w-full object-cover"
+          />
+          {article.imageCredit ? (
+            <figcaption className="border-t border-slate-200 bg-white px-4 py-2 text-xs font-semibold text-slate-600">
+              {article.imageCredit}
+            </figcaption>
+          ) : null}
+        </figure>
+      ) : null}
 
       <RecordVisual
         eyebrow={article.scope ? (scopeLabels[article.scope] ?? article.scope) : "Story file"}
@@ -359,6 +387,25 @@ export default async function NewsArticlePage({
           </p>
         ))}
       </div>
+
+      {article.internalLinks?.length ? (
+        <section className="mt-10 rounded-xl border border-blue-100 bg-blue-50 p-6">
+          <h2 className="text-sm font-bold uppercase tracking-wider text-blue-900">
+            Related RepWatchr records
+          </h2>
+          <div className="mt-4 grid gap-3 sm:grid-cols-2">
+            {article.internalLinks.map((item) => (
+              <Link
+                key={item.url}
+                href={item.url}
+                className="rounded-lg border border-blue-200 bg-white px-4 py-3 text-sm font-black text-blue-800 transition hover:border-red-300 hover:text-red-700"
+              >
+                {item.title}
+              </Link>
+            ))}
+          </div>
+        </section>
+      ) : null}
 
       {article.sourceLinks?.length ? (
         <section className="mt-10 rounded-xl border border-slate-200 bg-slate-50 p-6">

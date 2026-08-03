@@ -478,6 +478,12 @@ export interface OfficialCoverageClassification {
 export interface NewsArticle {
   id: string;
   title: string;
+  /** Search-result title, when the editorial headline is intentionally more conversational. */
+  seoTitle?: string;
+  /** Search and social description, kept separate from the on-page summary when useful. */
+  seoDescription?: string;
+  /** Human-readable editorial lane shown on the article page. */
+  category?: string;
   /** Short, editor-approved message used on cards and social preview artwork. */
   thumbnailMessage?: string;
   summary: string;
@@ -513,6 +519,8 @@ export interface NewsArticle {
   independentPublisherCount?: number;
   midtermRelevance?: 0 | 1 | 2 | 3;
   publicPostEmbeds?: PublicPostEmbed[];
+  /** Curated links to relevant RepWatchr records and explainers. */
+  internalLinks?: SourceLink[];
   /** An article can treat different named officials differently, so tone is keyed by official id. */
   officialCoverage?: Record<string, OfficialCoverageClassification>;
 }

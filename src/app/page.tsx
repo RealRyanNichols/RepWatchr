@@ -155,7 +155,11 @@ function storyDateLabel(value: string | null) {
   if (!value) return "Date pending";
   const date = new Date(value);
   if (Number.isNaN(date.getTime())) return "Date pending";
-  return date.toLocaleDateString("en-US", { month: "short", day: "numeric" });
+  return date.toLocaleDateString("en-US", {
+    timeZone: "America/Chicago",
+    month: "short",
+    day: "numeric",
+  });
 }
 
 // Reserved live-wire slots by lane. RepWatchr is an East Texas desk first, so the

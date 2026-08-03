@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import Link from "next/link";
 import RecordVisual from "@/components/shared/RecordVisual";
 import {
@@ -52,6 +53,7 @@ function dateLabel(value: string) {
   const date = new Date(value);
   if (Number.isNaN(date.getTime())) return "Date pending";
   return date.toLocaleDateString("en-US", {
+    timeZone: "America/Chicago",
     month: "short",
     day: "numeric",
     year: "numeric",
@@ -102,6 +104,9 @@ function BlogJsonLd({ articles, clusters }: { articles: NewsArticle[]; clusters:
       },
       url: `https://www.repwatchr.com/news/${article.id}`,
       mainEntityOfPage: `https://www.repwatchr.com/news/${article.id}`,
+      image: article.imageUrl
+        ? `https://www.repwatchr.com${article.imageUrl}`
+        : buildOgImageUrl("news", { id: article.id }),
     })),
   };
 
@@ -121,14 +126,26 @@ function ArticleCard({ article, prominent = false }: { article: NewsArticle; pro
         prominent ? "md:grid md:grid-cols-[0.74fr_1fr] md:gap-5 md:p-5" : ""
       }`}
     >
-      <RecordVisual
-        eyebrow={scopeLabels[articleScope(article)]}
-        title={article.title}
-        variant="story"
-        metric={{ label: "Date", value: dateLabel(article.publishedAt).split(",")[0] }}
-        secondaryMetric={{ label: "Sources", value: article.sourceLinks?.length || (article.sourceUrl ? 1 : 0) }}
-        compact={!prominent}
-      />
+      {article.imageUrl ? (
+        <div className="relative aspect-[1200/630] min-h-0 overflow-hidden rounded-md border border-slate-200 bg-slate-100">
+          <Image
+            src={article.imageUrl}
+            alt={article.imageAlt ?? `${article.title} editorial image`}
+            fill
+            sizes={prominent ? "(min-width: 768px) 42vw, 100vw" : "(min-width: 1280px) 28vw, (min-width: 640px) 45vw, 100vw"}
+            className="object-cover"
+          />
+        </div>
+      ) : (
+        <RecordVisual
+          eyebrow={scopeLabels[articleScope(article)]}
+          title={article.title}
+          variant="story"
+          metric={{ label: "Date", value: dateLabel(article.publishedAt).split(",")[0] }}
+          secondaryMetric={{ label: "Sources", value: article.sourceLinks?.length || (article.sourceUrl ? 1 : 0) }}
+          compact={!prominent}
+        />
+      )}
       <div className="mt-4 flex min-w-0 flex-col md:mt-0">
         <div className="flex flex-wrap gap-2">
           {articleChannels(article).slice(0, 3).map((channel) => (
