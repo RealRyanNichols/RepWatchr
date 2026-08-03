@@ -144,6 +144,8 @@ type HomeDeskItem = {
   sourceName: string;
   publishedAt: string | null;
   lane: string;
+  imageUrl?: string;
+  imageAlt?: string;
 };
 
 function articleScope(article: NewsArticle) {
@@ -199,6 +201,8 @@ function homeDeskItemFromArticle(article: NewsArticle): HomeDeskItem {
     sourceName: article.sourceName ?? "RepWatchr source desk",
     publishedAt: article.publishedAt,
     lane: scope === "national" ? "Washington" : scope === "east-texas" ? "East Texas" : "Texas",
+    imageUrl: article.imageUrl,
+    imageAlt: article.imageAlt,
   };
 }
 
@@ -541,8 +545,8 @@ export default async function HomePage() {
                 messageClassName="max-w-[21ch] text-3xl sm:text-5xl lg:text-6xl"
               >
                 <Image
-                  src="/images/editorial/washington-accountability-blue-hour.webp"
-                  alt="The United States Capitol and press cameras at blue hour"
+                  src={leadItem.imageUrl ?? "/images/editorial/washington-accountability-blue-hour.webp"}
+                  alt={leadItem.imageAlt ?? "The United States Capitol and press cameras at blue hour"}
                   fill
                   priority
                   sizes="(min-width: 1024px) 66vw, 100vw"
