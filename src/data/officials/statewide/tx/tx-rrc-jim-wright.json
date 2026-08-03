@@ -1,0 +1,53 @@
+{
+  "id": "tx-rrc-jim-wright",
+  "name": "Jim Wright",
+  "firstName": "Jim",
+  "lastName": "Wright",
+  "photo": "https://directory.texastribune.org/static/images/headshots/Jim%20Wright.jpg",
+  "photoSourceUrl": "https://directory.texastribune.org/jim-wright/",
+  "photoCredit": "Texas Tribune elected-officials directory portrait; identity cross-checked against the official Railroad Commission roster.",
+  "party": "R",
+  "level": "state",
+  "position": "Chairman, Railroad Commission of Texas",
+  "district": "Texas statewide",
+  "jurisdiction": "Railroad Commission of Texas",
+  "county": [
+    "Texas"
+  ],
+  "termStart": "2021-01-01",
+  "termEnd": "2026-12-31",
+  "contactInfo": {
+    "website": "https://www.rrc.texas.gov/about-us/commissioners/jim-wright/"
+  },
+  "bio": "Jim Wright is a current statewide elected member of the Railroad Commission of Texas. RepWatchr keeps regulatory actions, campaign finance, and public sentiment visibly separate and unrated until source records are reviewed.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "TX",
+  "sourceLinks": [
+    {
+      "title": "Official commissioner biography",
+      "url": "https://www.rrc.texas.gov/about-us/commissioners/jim-wright/"
+    },
+    {
+      "title": "Official current-commissioner roster",
+      "url": "https://www.rrc.texas.gov/about-us/commissioners/"
+    },
+    {
+      "title": "Texas Tribune elected-official directory and portrait",
+      "url": "https://directory.texastribune.org/jim-wright/"
+    },
+    {
+      "title": "Official Railroad Commission open meetings",
+      "url": "https://www.rrc.texas.gov/general-counsel/open-meetings/"
+    },
+    {
+      "title": "Texas campaign-finance disclosure search",
+      "url": "https://www.ethics.state.tx.us/search/cf/"
+    },
+    {
+      "title": "Texas election-results archive",
+      "url": "https://www.sos.state.tx.us/elections/historical/index.shtml"
+    }
+  ],
+  "lastVerifiedAt": "2026-08-02"
+}

@@ -333,7 +333,24 @@ async function persistSocialAccounts(admin: SupabaseAdmin) {
       }));
   });
 
-  return upsertRows(admin, "profile_social_accounts", rows, "profile_type,profile_id,platform,public_url");
+  // Some legacy profiles carry both `twitter` and `x` keys for the same
+  // account. Both normalize to platform `x`, which previously sent duplicate
+  // conflict keys in one Postgres upsert and failed the entire daily module.
+  const uniqueRows = Array.from(
+    new Map(
+      rows.map((row) => [
+        `${row.profile_type}|${row.profile_id}|${row.platform}|${row.public_url}`,
+        row,
+      ]),
+    ).values(),
+  );
+
+  return upsertRows(
+    admin,
+    "profile_social_accounts",
+    uniqueRows,
+    "profile_type,profile_id,platform,public_url",
+  );
 }
 
 async function runModule(

@@ -26,6 +26,26 @@ const nextConfig: NextConfig = {
         hostname: "static.wixstatic.com",
         pathname: "/media/**",
       },
+      {
+        protocol: "https",
+        hostname: "directory.texastribune.org",
+        pathname: "/static/images/headshots/**",
+      },
+      {
+        protocol: "https",
+        hostname: "www.txcourts.gov",
+        pathname: "/media/**",
+      },
+      {
+        protocol: "https",
+        hostname: "www.glo.texas.gov",
+        pathname: "/sites/default/files/**",
+      },
+      {
+        protocol: "https",
+        hostname: "www.texasagriculture.gov",
+        pathname: "/Portals/0/forms/COMM/**",
+      },
     ],
   },
 };

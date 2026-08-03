@@ -1,0 +1,53 @@
+{
+  "id": "tx-sboe-d10-tom-maynard",
+  "name": "Tom Maynard",
+  "firstName": "Tom",
+  "lastName": "Maynard",
+  "photo": "https://directory.texastribune.org/static/images/headshots/tom-maynard.jpg",
+  "photoSourceUrl": "https://directory.texastribune.org/tom-maynard/",
+  "photoCredit": "Texas Tribune elected-officials directory portrait; identity cross-checked against the official SBOE roster.",
+  "party": "R",
+  "level": "state",
+  "position": "Board Member, Texas State Board of Education",
+  "district": "SBOE District 10",
+  "jurisdiction": "Texas State Board of Education District 10",
+  "county": [
+    "Texas"
+  ],
+  "termStart": "2025-01-01",
+  "termEnd": "2028-12-31",
+  "contactInfo": {
+    "website": "https://sboe.texas.gov/state-board-of-education/sboe-board-members/sboe-member-district-10"
+  },
+  "bio": "Tom Maynard is the current elected State Board of Education member for District 10 and is listed by the official board roster as based in Florence. RepWatchr keeps decision, campaign-finance, and constituent-sentiment modules unrated until their underlying records are loaded and reviewed.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "TX",
+  "sourceLinks": [
+    {
+      "title": "Official SBOE member biography",
+      "url": "https://sboe.texas.gov/state-board-of-education/sboe-board-members/sboe-member-district-10"
+    },
+    {
+      "title": "Official SBOE current-member roster",
+      "url": "https://sboe.texas.gov/state-board-of-education/sboe-board-members/sboe-members"
+    },
+    {
+      "title": "Texas Tribune elected-official directory and portrait",
+      "url": "https://directory.texastribune.org/tom-maynard/"
+    },
+    {
+      "title": "Official SBOE meeting agendas",
+      "url": "https://sboe.texas.gov/state-board-of-education/meetings/meeting-agenda-current"
+    },
+    {
+      "title": "Texas campaign-finance disclosure search",
+      "url": "https://www.ethics.state.tx.us/search/cf/"
+    },
+    {
+      "title": "Texas election-results archive",
+      "url": "https://www.sos.state.tx.us/elections/historical/index.shtml"
+    }
+  ],
+  "lastVerifiedAt": "2026-08-02"
+}

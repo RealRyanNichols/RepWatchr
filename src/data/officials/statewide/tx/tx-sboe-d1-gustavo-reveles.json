@@ -1,0 +1,53 @@
+{
+  "id": "tx-sboe-d1-gustavo-reveles",
+  "name": "Gustavo Reveles",
+  "firstName": "Gustavo",
+  "lastName": "Reveles",
+  "photo": "https://directory.texastribune.org/static/images/headshots/Gustavo%20Reveles%20TT%2001.jpg",
+  "photoSourceUrl": "https://directory.texastribune.org/gustavo-reveles/",
+  "photoCredit": "Texas Tribune elected-officials directory portrait; identity cross-checked against the official SBOE roster.",
+  "party": "D",
+  "level": "state",
+  "position": "Board Member, Texas State Board of Education",
+  "district": "SBOE District 1",
+  "jurisdiction": "Texas State Board of Education District 1",
+  "county": [
+    "Texas"
+  ],
+  "termStart": "2025-01-01",
+  "termEnd": "2028-12-31",
+  "contactInfo": {
+    "website": "https://sboe.texas.gov/state-board-of-education/sboe-board-members/sboe-member-district-1"
+  },
+  "bio": "Gustavo Reveles is the current elected State Board of Education member for District 1 and is listed by the official board roster as based in El Paso. RepWatchr keeps decision, campaign-finance, and constituent-sentiment modules unrated until their underlying records are loaded and reviewed.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "TX",
+  "sourceLinks": [
+    {
+      "title": "Official SBOE member biography",
+      "url": "https://sboe.texas.gov/state-board-of-education/sboe-board-members/sboe-member-district-1"
+    },
+    {
+      "title": "Official SBOE current-member roster",
+      "url": "https://sboe.texas.gov/state-board-of-education/sboe-board-members/sboe-members"
+    },
+    {
+      "title": "Texas Tribune elected-official directory and portrait",
+      "url": "https://directory.texastribune.org/gustavo-reveles/"
+    },
+    {
+      "title": "Official SBOE meeting agendas",
+      "url": "https://sboe.texas.gov/state-board-of-education/meetings/meeting-agenda-current"
+    },
+    {
+      "title": "Texas campaign-finance disclosure search",
+      "url": "https://www.ethics.state.tx.us/search/cf/"
+    },
+    {
+      "title": "Texas election-results archive",
+      "url": "https://www.sos.state.tx.us/elections/historical/index.shtml"
+    }
+  ],
+  "lastVerifiedAt": "2026-08-02"
+}

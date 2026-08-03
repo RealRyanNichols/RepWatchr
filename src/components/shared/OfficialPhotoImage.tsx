@@ -46,6 +46,7 @@ export default function OfficialPhotoImage({
   portraitClassName,
 }: OfficialPhotoImageProps) {
   const photo = official.featuredPhoto ?? official.photo;
+  const bypassOptimizer = photo?.startsWith("https://www.txcourts.gov/") ?? false;
 
   if (photo) {
     if (adaptivePortrait && !official.featuredPhoto) {
@@ -58,6 +59,7 @@ export default function OfficialPhotoImage({
             sizes={sizes}
             quality={quality}
             preload={preload}
+            unoptimized={bypassOptimizer}
             className={portraitClassName ?? "object-contain object-center"}
           />
         );
@@ -72,6 +74,7 @@ export default function OfficialPhotoImage({
             fill
             sizes={sizes}
             quality={quality}
+            unoptimized={bypassOptimizer}
             className="scale-110 object-cover object-center opacity-55 blur-2xl saturate-75"
           />
           <div aria-hidden="true" className="absolute inset-0 bg-slate-950/20" />
@@ -82,6 +85,7 @@ export default function OfficialPhotoImage({
             sizes={sizes}
             quality={quality}
             preload={preload}
+            unoptimized={bypassOptimizer}
             className={portraitClassName ?? "object-contain object-center"}
           />
         </>
@@ -96,6 +100,7 @@ export default function OfficialPhotoImage({
         sizes={sizes}
         quality={quality}
         preload={preload}
+        unoptimized={bypassOptimizer}
         className={featuredClassName ?? className}
       />
     );

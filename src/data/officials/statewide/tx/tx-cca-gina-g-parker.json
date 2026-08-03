@@ -1,0 +1,49 @@
+{
+  "id": "tx-cca-gina-g-parker",
+  "name": "Gina G. Parker",
+  "firstName": "Gina",
+  "lastName": "Parker",
+  "photo": "https://www.txcourts.gov/media/1462534/parker.jpg",
+  "photoSourceUrl": "https://www.txcourts.gov/media/1462534/parker.jpg",
+  "photoCredit": "Official Texas Judicial Branch portrait.",
+  "party": "R",
+  "level": "state",
+  "position": "Judge, Texas Court of Criminal Appeals",
+  "district": "Place 7",
+  "jurisdiction": "Texas statewide criminal appellate court",
+  "county": [
+    "Texas"
+  ],
+  "termStart": "2025-01-01",
+  "termEnd": "2030-12-31",
+  "contactInfo": {
+    "website": "https://www.txcourts.gov/cca/about-the-court/judges/judge-gina-g-parker/"
+  },
+  "bio": "Gina G. Parker currently serves in Place 7 on the Texas Court of Criminal Appeals. RepWatchr treats judicial opinions and case records as the role-compatible accountability record and does not substitute legislative roll calls for judicial work.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "TX",
+  "sourceLinks": [
+    {
+      "title": "Official Court of Criminal Appeals biography",
+      "url": "https://www.txcourts.gov/cca/about-the-court/judges/judge-gina-g-parker/"
+    },
+    {
+      "title": "Official current-judge roster",
+      "url": "https://www.txcourts.gov/cca/about-the-court/judges/"
+    },
+    {
+      "title": "Official appellate case and opinion search",
+      "url": "https://search.txcourts.gov/CaseSearch.aspx?coa=coscca&s=c"
+    },
+    {
+      "title": "Texas campaign-finance disclosure search",
+      "url": "https://www.ethics.state.tx.us/search/cf/"
+    },
+    {
+      "title": "Texas election-results archive",
+      "url": "https://www.sos.state.tx.us/elections/historical/index.shtml"
+    }
+  ],
+  "lastVerifiedAt": "2026-08-02"
+}

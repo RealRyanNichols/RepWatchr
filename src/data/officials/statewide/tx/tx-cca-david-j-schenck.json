@@ -1,0 +1,49 @@
+{
+  "id": "tx-cca-david-j-schenck",
+  "name": "David J. Schenck",
+  "firstName": "David",
+  "lastName": "Schenck",
+  "photo": "https://www.txcourts.gov/media/1462536/schenck.jpg",
+  "photoSourceUrl": "https://www.txcourts.gov/media/1462536/schenck.jpg",
+  "photoCredit": "Official Texas Judicial Branch portrait.",
+  "party": "R",
+  "level": "state",
+  "position": "Presiding Judge, Texas Court of Criminal Appeals",
+  "district": "Place 1",
+  "jurisdiction": "Texas statewide criminal appellate court",
+  "county": [
+    "Texas"
+  ],
+  "termStart": "2025-01-01",
+  "termEnd": "2030-12-31",
+  "contactInfo": {
+    "website": "https://www.txcourts.gov/cca/about-the-court/judges/presiding-judge-david-j-schenck/"
+  },
+  "bio": "David J. Schenck currently serves in Place 1 on the Texas Court of Criminal Appeals. RepWatchr treats judicial opinions and case records as the role-compatible accountability record and does not substitute legislative roll calls for judicial work.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "TX",
+  "sourceLinks": [
+    {
+      "title": "Official Court of Criminal Appeals biography",
+      "url": "https://www.txcourts.gov/cca/about-the-court/judges/presiding-judge-david-j-schenck/"
+    },
+    {
+      "title": "Official current-judge roster",
+      "url": "https://www.txcourts.gov/cca/about-the-court/judges/"
+    },
+    {
+      "title": "Official appellate case and opinion search",
+      "url": "https://search.txcourts.gov/CaseSearch.aspx?coa=coscca&s=c"
+    },
+    {
+      "title": "Texas campaign-finance disclosure search",
+      "url": "https://www.ethics.state.tx.us/search/cf/"
+    },
+    {
+      "title": "Texas election-results archive",
+      "url": "https://www.sos.state.tx.us/elections/historical/index.shtml"
+    }
+  ],
+  "lastVerifiedAt": "2026-08-02"
+}

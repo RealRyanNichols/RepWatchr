@@ -1,0 +1,41 @@
+{
+  "id": "tx-agriculture-commissioner-sid-miller",
+  "name": "Sid Miller",
+  "firstName": "Sid",
+  "lastName": "Miller",
+  "photo": "https://www.texasagriculture.gov/Portals/0/forms/COMM/Sid%20Miller.jpg",
+  "photoSourceUrl": "https://texasagriculture.gov/About/Commissioner-Miller",
+  "photoCredit": "Official Texas Department of Agriculture portrait.",
+  "party": "R",
+  "level": "state",
+  "position": "Texas Agriculture Commissioner",
+  "district": "Texas statewide",
+  "jurisdiction": "Texas Department of Agriculture",
+  "county": [
+    "Texas"
+  ],
+  "termStart": "2023-01-01",
+  "termEnd": "2026-12-31",
+  "contactInfo": {
+    "website": "https://texasagriculture.gov/About/Commissioner-Miller"
+  },
+  "bio": "Sid Miller is the current elected Texas Agriculture Commissioner. RepWatchr treats executive actions, agency records, campaign finance, and constituent sentiment as separate evidence lanes.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "TX",
+  "sourceLinks": [
+    {
+      "title": "Official Department of Agriculture commissioner biography",
+      "url": "https://texasagriculture.gov/About/Commissioner-Miller"
+    },
+    {
+      "title": "Texas campaign-finance disclosure search",
+      "url": "https://www.ethics.state.tx.us/search/cf/"
+    },
+    {
+      "title": "Texas election-results archive",
+      "url": "https://www.sos.state.tx.us/elections/historical/index.shtml"
+    }
+  ],
+  "lastVerifiedAt": "2026-08-02"
+}

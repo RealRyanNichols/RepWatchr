@@ -1,0 +1,41 @@
+{
+  "id": "tx-land-commissioner-dawn-buckingham",
+  "name": "Dawn Buckingham",
+  "firstName": "Dawn",
+  "lastName": "Buckingham",
+  "photo": "https://www.glo.texas.gov/sites/default/files/2024-08/L_Commissioner_Buckingham_sitting_at_Piano.jpg",
+  "photoSourceUrl": "https://www.glo.texas.gov/about-glo/about-the-commissioner",
+  "photoCredit": "Official Texas General Land Office portrait.",
+  "party": "R",
+  "level": "state",
+  "position": "Commissioner, Texas General Land Office",
+  "district": "Texas statewide",
+  "jurisdiction": "Texas General Land Office",
+  "county": [
+    "Texas"
+  ],
+  "termStart": "2023-01-01",
+  "termEnd": "2026-12-31",
+  "contactInfo": {
+    "website": "https://www.glo.texas.gov/about-glo/about-the-commissioner"
+  },
+  "bio": "Dawn Buckingham is the current elected Commissioner of the Texas General Land Office. RepWatchr treats executive actions, agency records, campaign finance, and constituent sentiment as separate evidence lanes.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "TX",
+  "sourceLinks": [
+    {
+      "title": "Official General Land Office commissioner biography",
+      "url": "https://www.glo.texas.gov/about-glo/about-the-commissioner"
+    },
+    {
+      "title": "Texas campaign-finance disclosure search",
+      "url": "https://www.ethics.state.tx.us/search/cf/"
+    },
+    {
+      "title": "Texas election-results archive",
+      "url": "https://www.sos.state.tx.us/elections/historical/index.shtml"
+    }
+  ],
+  "lastVerifiedAt": "2026-08-02"
+}
