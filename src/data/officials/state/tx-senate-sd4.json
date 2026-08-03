@@ -1,35 +1,42 @@
 {
-  "id": "tan-parker",
-  "name": "Tan Parker",
-  "firstName": "Tan",
-  "lastName": "Parker",
-  "photo": "/images/officials/texas-accountability/tan-parker.jpg",
-  "photoSourceUrl": "https://directory.texastribune.org/static/images/headshots/Tan_Parker_.jpg",
+  "id": "brett-ligon",
+  "name": "Brett Ligon",
+  "firstName": "Brett",
+  "lastName": "Ligon",
+  "photo": "/images/officials/texas-accountability/brett-ligon.jpg",
+  "photoSourceUrl": "https://directory.texastribune.org/static/images/headshots/Brett-Ligon.jpg",
   "photoCredit": "Texas Tribune elected-officials directory portrait; identity cross-checked against the official Texas Senate roster.",
   "party": "R",
   "level": "state",
   "position": "State Senator",
-  "district": "SD-12",
+  "district": "SD-4",
   "jurisdiction": "Texas Senate",
   "county": [
     "Texas"
   ],
-  "termStart": "2023-01-10",
-  "termEnd": "2028-12-31",
+  "termStart": "2026-05-02",
+  "termEnd": "2026-12-31",
+  "nextElection": "2026 general election",
   "contactInfo": {
-    "office": "Room E1.608, P.O. Box 12068 Capitol Station, Austin, TX 78711",
-    "phone": "512-463-0112",
-    "email": "tan.parker@senate.texas.gov",
-    "website": "https://senate.texas.gov/member.php?d=12"
+    "office": "P.O. Box 12068, Capitol Station, Austin, TX 78711",
+    "phone": "512-463-0104",
+    "email": "brett.ligon@senate.texas.gov",
+    "website": "https://senate.texas.gov/member.php?d=4"
   },
-  "bio": "Tan Parker currently represents Texas Senate District 12. The official Senate profile lists Transportation — Chair, Criminal Justice — Vice-Chair, Veteran Affairs — Vice-Chair, and additional assignments. RepWatchr links the official bill and vote paths below and leaves campaign-finance totals and constituent sentiment unrated until their underlying records pass identity, geography, and filing-period review.",
+  "bio": "Brett Ligon currently represents Texas Senate District 4. The official Senate profile displayed no active committee assignments when this record was reviewed. RepWatchr links the official bill and vote paths below and leaves campaign-finance totals and constituent sentiment unrated until their underlying records pass identity, geography, and filing-period review.",
+  "committeeAssignments": [],
   "campaignPromises": [],
+  "accountabilityNotes": [
+    "Campaign-finance totals, donors, industries, and expenditures remain unpublished until the correct candidate or officeholder filing is matched and reviewed.",
+    "Constituent sentiment remains unpublished until the sample discloses its collection window, source mix, geography confidence, duplicate/bot filtering, and uncertainty.",
+    "A constitutional-alignment score is not published without cited votes, a public rubric, applicable constitutional provisions, and uncertainty disclosure."
+  ],
   "reviewStatus": "source_seeded",
   "state": "TX",
   "sourceLinks": [
     {
       "title": "Official Texas Senate member profile, biography, and committee assignments",
-      "url": "https://senate.texas.gov/member.php?d=12",
+      "url": "https://senate.texas.gov/member.php?d=4",
       "accessedAt": "2026-08-03",
       "supports": [
         "identity",
@@ -60,7 +67,7 @@
     },
     {
       "title": "Texas Legislature Online bills by author",
-      "url": "https://capitol.texas.gov/Reports/Report.aspx?LegSess=892&ID=author&code=A1355",
+      "url": "https://capitol.texas.gov/Reports/Report.aspx?LegSess=892&ID=author&code=A1395",
       "accessedAt": "2026-08-03",
       "supports": [
         "sponsored_legislation"
@@ -93,7 +100,7 @@
     },
     {
       "title": "Texas Tribune elected-official directory and portrait",
-      "url": "https://directory.texastribune.org/tan-parker/",
+      "url": "https://directory.texastribune.org/brett-ligon/",
       "accessedAt": "2026-08-03",
       "supports": [
         "portrait",
@@ -104,32 +111,12 @@
     },
     {
       "title": "Published portrait image",
-      "url": "https://directory.texastribune.org/static/images/headshots/Tan_Parker_.jpg",
+      "url": "https://directory.texastribune.org/static/images/headshots/Brett-Ligon.jpg",
       "accessedAt": "2026-08-03",
       "supports": [
         "portrait"
       ]
     }
-  ],
-  "lastVerifiedAt": "2026-08-03",
-  "nextElection": "2028 general election",
-  "committeeAssignments": [
-    "Transportation — Chair",
-    "Criminal Justice — Vice-Chair",
-    "Veteran Affairs — Vice-Chair",
-    "Education K-16",
-    "Education",
-    "Higher Education",
-    "Natural Resources",
-    "State Affairs",
-    "Congressional Redistricting, Special",
-    "Homeland and Border Security, Select",
-    "Veteran Affairs, Select"
-  ],
-  "accountabilityNotes": [
-    "Campaign-finance totals, donors, industries, and expenditures remain unpublished until the correct candidate or officeholder filing is matched and reviewed.",
-    "Constituent sentiment remains unpublished until the sample discloses its collection window, source mix, geography confidence, duplicate/bot filtering, and uncertainty.",
-    "A constitutional-alignment score is not published without cited votes, a public rubric, applicable constitutional provisions, and uncertainty disclosure."
   ],
   "fieldFreshness": {
     "identity": {
@@ -140,8 +127,8 @@
     "portrait": {
       "status": "current",
       "reviewedAt": "2026-08-03",
-      "sourceUrl": "https://directory.texastribune.org/static/images/headshots/Tan_Parker_.jpg",
-      "note": "1000x1000; 86233 bytes"
+      "sourceUrl": "https://directory.texastribune.org/static/images/headshots/Brett-Ligon.jpg",
+      "note": "1000x1000; 72907 bytes"
     },
     "contact": {
       "status": "current",
@@ -151,17 +138,17 @@
     "term": {
       "status": "current",
       "reviewedAt": "2026-08-03",
-      "sourceUrl": "https://directory.texastribune.org/tan-parker/"
+      "sourceUrl": "https://directory.texastribune.org/brett-ligon/"
     },
     "assignments": {
       "status": "current",
       "reviewedAt": "2026-08-03",
-      "sourceUrl": "https://senate.texas.gov/member.php?d=12"
+      "sourceUrl": "https://senate.texas.gov/member.php?d=4"
     },
     "legislation": {
       "status": "source_path_only",
       "reviewedAt": "2026-08-03",
-      "sourceUrl": "https://capitol.texas.gov/Reports/Report.aspx?LegSess=892&ID=author&code=A1355",
+      "sourceUrl": "https://capitol.texas.gov/Reports/Report.aspx?LegSess=892&ID=author&code=A1395",
       "note": "Individual bills require record-level editorial review."
     },
     "votingRecord": {
@@ -178,7 +165,8 @@
     "sentiment": {
       "status": "pending_review",
       "reviewedAt": "2026-08-03",
-      "sourceUrl": "https://senate.texas.gov/member.php?d=12"
+      "sourceUrl": "https://senate.texas.gov/member.php?d=4"
     }
-  }
+  },
+  "lastVerifiedAt": "2026-08-03"
 }

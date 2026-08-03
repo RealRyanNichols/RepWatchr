@@ -3,9 +3,9 @@
   "name": "Robert Nichols",
   "firstName": "Robert",
   "lastName": "Nichols",
-  "photo": "/images/officials/state-senate/robert-nichols.jpg",
-  "photoSourceUrl": "https://senate.texas.gov/members/d03/img/headshot.jpg",
-  "photoCredit": "Official Texas Senate photo",
+  "photo": "/images/officials/texas-accountability/robert-nichols.jpg",
+  "photoSourceUrl": "https://directory.texastribune.org/static/images/headshots/Robert_Nichols_.jpg",
+  "photoCredit": "Texas Tribune elected-officials directory portrait; identity cross-checked against the official Texas Senate roster.",
   "party": "R",
   "level": "state",
   "position": "State Senator",
@@ -15,30 +15,158 @@
     "Texas"
   ],
   "termStart": "2007-01-09",
-  "termEnd": "Current legislative term pending source review",
+  "termEnd": "2026-12-31",
   "contactInfo": {
     "office": "Room E1.704, P.O. Box 12068 Capitol Station, Austin, TX 78711",
     "phone": "512-463-0103",
     "email": "robert.nichols@senate.texas.gov",
     "website": "https://senate.texas.gov/member.php?d=3"
   },
-  "bio": "Robert Nichols serves as State Senator for Texas Senate District 3. This RepWatchr starter profile is sourced from official Texas Legislature profile data and OpenStates public records.",
+  "bio": "Robert Nichols currently represents Texas Senate District 3. The official Senate profile displayed no active committee assignments when this record was reviewed. RepWatchr links the official bill and vote paths below and leaves campaign-finance totals and constituent sentiment unrated until their underlying records pass identity, geography, and filing-period review.",
   "campaignPromises": [],
   "reviewStatus": "source_seeded",
   "state": "TX",
   "sourceLinks": [
     {
-      "title": "Official Texas Senate profile",
-      "url": "https://senate.texas.gov/member.php?d=3"
+      "title": "Official Texas Senate member profile, biography, and committee assignments",
+      "url": "https://senate.texas.gov/member.php?d=3",
+      "accessedAt": "2026-08-03",
+      "supports": [
+        "identity",
+        "office",
+        "biography",
+        "committees",
+        "contact"
+      ]
     },
     {
-      "title": "OpenStates public people record",
-      "url": "https://raw.githubusercontent.com/openstates/people/main/data/tx/legislature/Robert-Nichols-26b83cfe-10c0-4ac6-ae02-dac30e2856b1.yml"
+      "title": "Official current Texas Senate roster",
+      "url": "https://www.senate.texas.gov/members.php",
+      "accessedAt": "2026-08-03",
+      "supports": [
+        "current_office",
+        "district",
+        "party"
+      ]
     },
     {
-      "title": "Official profile photo source",
-      "url": "https://senate.texas.gov/members/d03/img/headshot.jpg"
+      "title": "Official Texas Senate membership directory",
+      "url": "https://www.senate.texas.gov/directory.php",
+      "accessedAt": "2026-08-03",
+      "supports": [
+        "contact",
+        "counties"
+      ]
+    },
+    {
+      "title": "Texas Legislature Online bills by author",
+      "url": "https://capitol.texas.gov/Reports/Report.aspx?LegSess=892&ID=author&code=A1400",
+      "accessedAt": "2026-08-03",
+      "supports": [
+        "sponsored_legislation"
+      ]
+    },
+    {
+      "title": "Texas Legislature Online vote information guide",
+      "url": "https://capitol.texas.gov/help/findvoteinfo.aspx",
+      "accessedAt": "2026-08-03",
+      "supports": [
+        "voting_record_method"
+      ]
+    },
+    {
+      "title": "Texas Ethics Commission campaign-finance search",
+      "url": "https://www.ethics.state.tx.us/search/cf/",
+      "accessedAt": "2026-08-03",
+      "supports": [
+        "campaign_finance_source_path"
+      ]
+    },
+    {
+      "title": "Texas Secretary of State election-results archive",
+      "url": "https://www.sos.state.tx.us/elections/historical/index.shtml",
+      "accessedAt": "2026-08-03",
+      "supports": [
+        "term",
+        "election_history"
+      ]
+    },
+    {
+      "title": "Texas Tribune elected-official directory and portrait",
+      "url": "https://directory.texastribune.org/robert-nichols/",
+      "accessedAt": "2026-08-03",
+      "supports": [
+        "portrait",
+        "party",
+        "next_election",
+        "contact"
+      ]
+    },
+    {
+      "title": "Published portrait image",
+      "url": "https://directory.texastribune.org/static/images/headshots/Robert_Nichols_.jpg",
+      "accessedAt": "2026-08-03",
+      "supports": [
+        "portrait"
+      ]
     }
   ],
-  "lastVerifiedAt": "2026-04-27"
+  "lastVerifiedAt": "2026-08-03",
+  "nextElection": "2026 general election",
+  "committeeAssignments": [],
+  "accountabilityNotes": [
+    "Campaign-finance totals, donors, industries, and expenditures remain unpublished until the correct candidate or officeholder filing is matched and reviewed.",
+    "Constituent sentiment remains unpublished until the sample discloses its collection window, source mix, geography confidence, duplicate/bot filtering, and uncertainty.",
+    "A constitutional-alignment score is not published without cited votes, a public rubric, applicable constitutional provisions, and uncertainty disclosure."
+  ],
+  "fieldFreshness": {
+    "identity": {
+      "status": "current",
+      "reviewedAt": "2026-08-03",
+      "sourceUrl": "https://www.senate.texas.gov/members.php"
+    },
+    "portrait": {
+      "status": "current",
+      "reviewedAt": "2026-08-03",
+      "sourceUrl": "https://directory.texastribune.org/static/images/headshots/Robert_Nichols_.jpg",
+      "note": "1000x1000; 109674 bytes"
+    },
+    "contact": {
+      "status": "current",
+      "reviewedAt": "2026-08-03",
+      "sourceUrl": "https://www.senate.texas.gov/directory.php"
+    },
+    "term": {
+      "status": "current",
+      "reviewedAt": "2026-08-03",
+      "sourceUrl": "https://directory.texastribune.org/robert-nichols/"
+    },
+    "assignments": {
+      "status": "current",
+      "reviewedAt": "2026-08-03",
+      "sourceUrl": "https://senate.texas.gov/member.php?d=3"
+    },
+    "legislation": {
+      "status": "source_path_only",
+      "reviewedAt": "2026-08-03",
+      "sourceUrl": "https://capitol.texas.gov/Reports/Report.aspx?LegSess=892&ID=author&code=A1400",
+      "note": "Individual bills require record-level editorial review."
+    },
+    "votingRecord": {
+      "status": "source_path_only",
+      "reviewedAt": "2026-08-03",
+      "sourceUrl": "https://capitol.texas.gov/help/findvoteinfo.aspx",
+      "note": "Vote rows publish separately only when linked to official journals or reports."
+    },
+    "campaignFinance": {
+      "status": "pending_review",
+      "reviewedAt": "2026-08-03",
+      "sourceUrl": "https://www.ethics.state.tx.us/search/cf/"
+    },
+    "sentiment": {
+      "status": "pending_review",
+      "reviewedAt": "2026-08-03",
+      "sourceUrl": "https://senate.texas.gov/member.php?d=3"
+    }
+  }
 }

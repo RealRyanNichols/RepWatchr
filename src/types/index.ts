@@ -33,6 +33,15 @@ export interface ContactInfo {
 export interface SourceLink {
   title: string;
   url: string;
+  accessedAt?: string;
+  supports?: string[];
+}
+
+export interface FieldFreshness {
+  status: "current" | "source_path_only" | "pending_review";
+  reviewedAt: string;
+  sourceUrl?: string;
+  note?: string;
 }
 
 export interface SourceCredit {
@@ -69,6 +78,10 @@ export interface Official {
   bioguideId?: string;
   sourceLinks?: SourceLink[];
   lastVerifiedAt?: string;
+  nextElection?: string;
+  committeeAssignments?: string[];
+  accountabilityNotes?: string[];
+  fieldFreshness?: Record<string, FieldFreshness>;
 }
 
 export interface ScoredVote {

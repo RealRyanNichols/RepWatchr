@@ -3,9 +3,9 @@
   "name": "Sarah Eckhardt",
   "firstName": "Sarah",
   "lastName": "Eckhardt",
-  "photo": "/images/officials/state-senate/sarah-eckhardt.jpg",
-  "photoSourceUrl": "https://senate.texas.gov/members/d14/img/SE_headshot_2020.jpg",
-  "photoCredit": "Official Texas Senate photo",
+  "photo": "/images/officials/texas-accountability/sarah-eckhardt.jpg",
+  "photoSourceUrl": "https://directory.texastribune.org/static/images/headshots/Sarah%20Eckhardt%20TT.jpg",
+  "photoCredit": "Texas Tribune elected-officials directory portrait; identity cross-checked against the official Texas Senate roster.",
   "party": "D",
   "level": "state",
   "position": "State Senator",
@@ -15,30 +15,163 @@
     "Texas"
   ],
   "termStart": "2020-07-31",
-  "termEnd": "Current legislative term pending source review",
+  "termEnd": "2028-12-31",
   "contactInfo": {
     "office": "Room E1.804, 1100 Congress Ave., Austin, TX 78701",
     "phone": "512-463-0114",
     "email": "sarah.eckhardt@senate.texas.gov",
     "website": "https://senate.texas.gov/member.php?d=14"
   },
-  "bio": "Sarah Eckhardt serves as State Senator for Texas Senate District 14. This RepWatchr starter profile is sourced from official Texas Legislature profile data and OpenStates public records.",
+  "bio": "Sarah Eckhardt currently represents Texas Senate District 14. The official Senate profile lists Administration, Border Security, Nominations, and additional assignments. RepWatchr links the official bill and vote paths below and leaves campaign-finance totals and constituent sentiment unrated until their underlying records pass identity, geography, and filing-period review.",
   "campaignPromises": [],
   "reviewStatus": "source_seeded",
   "state": "TX",
   "sourceLinks": [
     {
-      "title": "Official Texas Senate profile",
-      "url": "https://senate.texas.gov/member.php?d=14"
+      "title": "Official Texas Senate member profile, biography, and committee assignments",
+      "url": "https://senate.texas.gov/member.php?d=14",
+      "accessedAt": "2026-08-03",
+      "supports": [
+        "identity",
+        "office",
+        "biography",
+        "committees",
+        "contact"
+      ]
     },
     {
-      "title": "OpenStates public people record",
-      "url": "https://raw.githubusercontent.com/openstates/people/main/data/tx/legislature/Sarah-Eckhardt-20cda9bf-a1e6-4427-8115-e5655ddd8eb0.yml"
+      "title": "Official current Texas Senate roster",
+      "url": "https://www.senate.texas.gov/members.php",
+      "accessedAt": "2026-08-03",
+      "supports": [
+        "current_office",
+        "district",
+        "party"
+      ]
     },
     {
-      "title": "Official profile photo source",
-      "url": "https://senate.texas.gov/members/d14/img/SE_headshot_2020.jpg"
+      "title": "Official Texas Senate membership directory",
+      "url": "https://www.senate.texas.gov/directory.php",
+      "accessedAt": "2026-08-03",
+      "supports": [
+        "contact",
+        "counties"
+      ]
+    },
+    {
+      "title": "Texas Legislature Online bills by author",
+      "url": "https://capitol.texas.gov/Reports/Report.aspx?LegSess=892&ID=author&code=A1325",
+      "accessedAt": "2026-08-03",
+      "supports": [
+        "sponsored_legislation"
+      ]
+    },
+    {
+      "title": "Texas Legislature Online vote information guide",
+      "url": "https://capitol.texas.gov/help/findvoteinfo.aspx",
+      "accessedAt": "2026-08-03",
+      "supports": [
+        "voting_record_method"
+      ]
+    },
+    {
+      "title": "Texas Ethics Commission campaign-finance search",
+      "url": "https://www.ethics.state.tx.us/search/cf/",
+      "accessedAt": "2026-08-03",
+      "supports": [
+        "campaign_finance_source_path"
+      ]
+    },
+    {
+      "title": "Texas Secretary of State election-results archive",
+      "url": "https://www.sos.state.tx.us/elections/historical/index.shtml",
+      "accessedAt": "2026-08-03",
+      "supports": [
+        "term",
+        "election_history"
+      ]
+    },
+    {
+      "title": "Texas Tribune elected-official directory and portrait",
+      "url": "https://directory.texastribune.org/sarah-eckhardt/",
+      "accessedAt": "2026-08-03",
+      "supports": [
+        "portrait",
+        "party",
+        "next_election",
+        "contact"
+      ]
+    },
+    {
+      "title": "Published portrait image",
+      "url": "https://directory.texastribune.org/static/images/headshots/Sarah%20Eckhardt%20TT.jpg",
+      "accessedAt": "2026-08-03",
+      "supports": [
+        "portrait"
+      ]
     }
   ],
-  "lastVerifiedAt": "2026-04-27"
+  "lastVerifiedAt": "2026-08-03",
+  "nextElection": "2028 general election",
+  "committeeAssignments": [
+    "Administration",
+    "Border Security",
+    "Nominations",
+    "Veteran Affairs"
+  ],
+  "accountabilityNotes": [
+    "Campaign-finance totals, donors, industries, and expenditures remain unpublished until the correct candidate or officeholder filing is matched and reviewed.",
+    "Constituent sentiment remains unpublished until the sample discloses its collection window, source mix, geography confidence, duplicate/bot filtering, and uncertainty.",
+    "A constitutional-alignment score is not published without cited votes, a public rubric, applicable constitutional provisions, and uncertainty disclosure."
+  ],
+  "fieldFreshness": {
+    "identity": {
+      "status": "current",
+      "reviewedAt": "2026-08-03",
+      "sourceUrl": "https://www.senate.texas.gov/members.php"
+    },
+    "portrait": {
+      "status": "current",
+      "reviewedAt": "2026-08-03",
+      "sourceUrl": "https://directory.texastribune.org/static/images/headshots/Sarah%20Eckhardt%20TT.jpg",
+      "note": "1200x1500; 239532 bytes"
+    },
+    "contact": {
+      "status": "current",
+      "reviewedAt": "2026-08-03",
+      "sourceUrl": "https://www.senate.texas.gov/directory.php"
+    },
+    "term": {
+      "status": "current",
+      "reviewedAt": "2026-08-03",
+      "sourceUrl": "https://directory.texastribune.org/sarah-eckhardt/"
+    },
+    "assignments": {
+      "status": "current",
+      "reviewedAt": "2026-08-03",
+      "sourceUrl": "https://senate.texas.gov/member.php?d=14"
+    },
+    "legislation": {
+      "status": "source_path_only",
+      "reviewedAt": "2026-08-03",
+      "sourceUrl": "https://capitol.texas.gov/Reports/Report.aspx?LegSess=892&ID=author&code=A1325",
+      "note": "Individual bills require record-level editorial review."
+    },
+    "votingRecord": {
+      "status": "source_path_only",
+      "reviewedAt": "2026-08-03",
+      "sourceUrl": "https://capitol.texas.gov/help/findvoteinfo.aspx",
+      "note": "Vote rows publish separately only when linked to official journals or reports."
+    },
+    "campaignFinance": {
+      "status": "pending_review",
+      "reviewedAt": "2026-08-03",
+      "sourceUrl": "https://www.ethics.state.tx.us/search/cf/"
+    },
+    "sentiment": {
+      "status": "pending_review",
+      "reviewedAt": "2026-08-03",
+      "sourceUrl": "https://senate.texas.gov/member.php?d=14"
+    }
+  }
 }

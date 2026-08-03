@@ -46,6 +46,7 @@ FEDERAL_SOURCE_URL = (
 OPENSTATES_CONTENTS_URL = (
     "https://api.github.com/repos/openstates/people/contents/data/tx/legislature"
 )
+TEXAS_SENATE_ROSTER_URL = "https://www.senate.texas.gov/members.php"
 
 FEDERAL_PHOTO_OVERRIDES = {
     "G000601": "https://craiggoldman.house.gov/sites/evo-subsites/craiggoldman.house.gov/files/evo-media-image/craiggoldman.png",
@@ -318,6 +319,29 @@ def current_texas_role(person: dict[str, Any]) -> dict[str, Any] | None:
     return current[-1] if current else None
 
 
+def current_texas_senate_roster() -> dict[str, str]:
+    """Return filled Senate districts from the current official Senate roster.
+
+    OpenStates can briefly retain a former senator after a resignation. The
+    official roster labels vacant districts as Constituent Services, so it is
+    the publication gate for whether a Senate profile remains active.
+    """
+    roster_html = fetch_text(TEXAS_SENATE_ROSTER_URL)
+    roster: dict[str, str] = {}
+    pattern = re.compile(
+        r'<a\s+href="member\.php\?d=(\d+)">(?!<img)(.*?)</a>',
+        flags=re.IGNORECASE | re.DOTALL,
+    )
+    for district, raw_name in pattern.findall(roster_html):
+        name = html_to_text(re.sub(r"<[^>]+>", " ", raw_name))
+        if not name or "constituent services" in name.lower():
+            continue
+        roster[str(int(district))] = name
+    if len(roster) < 25:
+        raise RuntimeError(f"Official Texas Senate roster parse returned only {len(roster)} filled seats")
+    return roster
+
+
 def office_payload(offices: list[dict[str, Any]]) -> tuple[str | None, str | None]:
     for classification in ["capitol", "capitol-mail", "district"]:
         for office in offices:
@@ -330,6 +354,7 @@ def office_payload(offices: list[dict[str, Any]]) -> tuple[str | None, str | Non
 
 def import_state(used_ids: set[str]) -> tuple[int, int, list[str]]:
     contents = fetch_json(OPENSTATES_CONTENTS_URL)
+    senate_roster = current_texas_senate_roster()
     warnings: list[str] = []
     house_count = 0
     senate_count = 0
@@ -350,6 +375,15 @@ def import_state(used_ids: set[str]) -> tuple[int, int, list[str]]:
         used_ids.add(official_id)
 
         is_senate = chamber == "upper"
+        if is_senate:
+            official_roster_name = senate_roster.get(district)
+            source_name = html_to_text(person.get("name", ""))
+            if not official_roster_name or slugify(official_roster_name) != slugify(source_name):
+                warnings.append(
+                    f"Skipped stale or mismatched Senate District {district}: "
+                    f"OpenStates={source_name!r}, official roster={official_roster_name!r}"
+                )
+                continue
         position = "State Senator" if is_senate else "State Representative"
         jurisdiction = "Texas Senate" if is_senate else "Texas House of Representatives"
         district_label = f"SD-{district}" if is_senate else f"HD-{district}"
@@ -370,6 +404,11 @@ def import_state(used_ids: set[str]) -> tuple[int, int, list[str]]:
         last_name = person.get("family_name") or html_to_text(person.get("name", "")).split(" ")[-1]
         source_links = [
             {"title": f"Official {jurisdiction} profile", "url": official_url},
+            *(
+                [{"title": "Official current Texas Senate roster", "url": TEXAS_SENATE_ROSTER_URL}]
+                if is_senate
+                else []
+            ),
             {"title": "OpenStates public people record", "url": item["download_url"]},
             *(
                 [{"title": "Official profile photo source", "url": photo_source_url}]
@@ -453,8 +492,11 @@ def main() -> int:
     if house_count != expected["house"]:
         print(f"Expected 150 Texas House members, found {house_count}.", file=sys.stderr)
         return 1
-    if senate_count < 30:
-        print(f"Expected at least 30 Texas Senate members, found {senate_count}.", file=sys.stderr)
+    if senate_count != len(current_texas_senate_roster()):
+        print(
+            f"Expected {len(current_texas_senate_roster())} filled Texas Senate seats, found {senate_count}.",
+            file=sys.stderr,
+        )
         return 1
     return 0
 

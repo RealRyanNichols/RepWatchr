@@ -97,7 +97,10 @@ export default function UniversalOfficialDashboard({
           <LedgerFact
             label="Current term"
             value={`${formatDashboardDate(official.termStart)} – ${formatDashboardDate(official.termEnd)}`}
-            detail={official.district || official.state || "District source pending"}
+            detail={[
+              official.district || official.state || "District source pending",
+              official.nextElection ? `Next: ${official.nextElection}` : null,
+            ].filter(Boolean).join(" · ")}
           />
           <LedgerFact
             label={officeAccountability.decisionLabel}

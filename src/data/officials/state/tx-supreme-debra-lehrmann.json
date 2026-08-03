@@ -3,7 +3,7 @@
   "name": "Debra Lehrmann",
   "firstName": "Debra",
   "lastName": "Lehrmann",
-  "party": "NP",
+  "party": "R",
   "level": "state",
   "position": "Justice, Supreme Court of Texas",
   "district": "Place 3",
@@ -11,38 +11,138 @@
   "county": [
     "Texas"
   ],
-  "termStart": "Source review pending",
-  "termEnd": "Current court term pending election-record review",
+  "termStart": "2010-06-21",
+  "termEnd": "2028-12-31",
   "contactInfo": {
     "office": "Supreme Court Building, 201 W. 14th Street, Room 104, Austin, Texas 78701",
-    "phone": "(512) 463-1312",
-    "website": "https://www.txcourts.gov/supreme/about-the-court/justices/justice-debra-lehrmann/"
+    "phone": "512-463-1320",
+    "website": "https://www.txcourts.gov/supreme/about-the-court/justices/justice-debra-lehrmann/",
+    "email": "debra.lehrmann@txcourts.gov"
   },
-  "bio": "Debra Lehrmann serves as Place 3 Justice on the Supreme Court of Texas. The Texas Judicial Branch describes her as the Court's senior justice and longest-serving woman justice in Texas history.",
+  "bio": "Debra Lehrmann serves as Place 3 Justice on the Supreme Court of Texas. The Texas Judicial Branch describes her as the Court's senior justice and longest-serving woman justice in Texas history. RepWatchr treats opinions, orders, rules, and case records as the role-compatible accountability record; it does not substitute legislative roll calls for judicial work. Campaign-finance totals and constituent sentiment remain unrated until their source records pass review.",
   "campaignPromises": [],
   "reviewStatus": "source_seeded",
   "state": "TX",
   "sourceLinks": [
     {
-      "title": "Official Texas Judicial Branch justice profile",
-      "url": "https://www.txcourts.gov/supreme/about-the-court/justices/justice-debra-lehrmann/"
+      "title": "Official Texas Judicial Branch justice biography",
+      "url": "https://www.txcourts.gov/supreme/about-the-court/justices/justice-debra-lehrmann/",
+      "accessedAt": "2026-08-03",
+      "supports": [
+        "identity",
+        "office",
+        "biography"
+      ]
     },
     {
-      "title": "Texas Supreme Court justices roster",
-      "url": "https://www.txcourts.gov/supreme/about-the-court/justices/"
+      "title": "Official Supreme Court of Texas justice roster",
+      "url": "https://www.txcourts.gov/supreme/about-the-court/justices/",
+      "accessedAt": "2026-08-03",
+      "supports": [
+        "current_office",
+        "place"
+      ]
     },
     {
-      "title": "Texas Supreme Court orders and opinions",
-      "url": "https://www.txcourts.gov/supreme/orders-opinions/"
+      "title": "Official Supreme Court orders and opinions",
+      "url": "https://www.txcourts.gov/supreme/orders-opinions/",
+      "accessedAt": "2026-08-03",
+      "supports": [
+        "judicial_record"
+      ]
     },
     {
-      "title": "Texas Supreme Court case search",
-      "url": "https://search.txcourts.gov/CaseSearch.aspx?coa=cossup"
+      "title": "Official appellate case search",
+      "url": "https://search.txcourts.gov/CaseSearch.aspx?coa=cossup",
+      "accessedAt": "2026-08-03",
+      "supports": [
+        "case_record"
+      ]
     },
     {
-      "title": "Texas Supreme Court home",
-      "url": "https://www.txcourts.gov/supreme/"
+      "title": "Texas Ethics Commission campaign-finance search",
+      "url": "https://www.ethics.state.tx.us/search/cf/",
+      "accessedAt": "2026-08-03",
+      "supports": [
+        "campaign_finance_source_path"
+      ]
+    },
+    {
+      "title": "Texas Secretary of State election-results archive",
+      "url": "https://www.sos.state.tx.us/elections/historical/index.shtml",
+      "accessedAt": "2026-08-03",
+      "supports": [
+        "term",
+        "election_history"
+      ]
+    },
+    {
+      "title": "Texas Tribune elected-official directory",
+      "url": "https://directory.texastribune.org/debra-lehrmann/",
+      "accessedAt": "2026-08-03",
+      "supports": [
+        "party",
+        "next_election",
+        "contact"
+      ]
+    },
+    {
+      "title": "Published portrait image",
+      "url": "https://www.txcourts.gov/media/1452363/justice-debra-lehrmann-web.jpg",
+      "accessedAt": "2026-08-03",
+      "supports": [
+        "portrait"
+      ]
     }
   ],
-  "lastVerifiedAt": "2026-06-21"
+  "lastVerifiedAt": "2026-08-03",
+  "photo": "/images/officials/texas-accountability/tx-supreme-debra-lehrmann.jpg",
+  "photoSourceUrl": "https://www.txcourts.gov/media/1452363/justice-debra-lehrmann-web.jpg",
+  "photoCredit": "Official Texas Judicial Branch portrait.",
+  "nextElection": "2028 general election",
+  "accountabilityNotes": [
+    "Judicial accountability is sourced from opinions, orders, rules, administration, and case records rather than legislative roll calls.",
+    "Campaign-finance totals and donor groupings remain unpublished until the correct filing committee and reporting period are matched.",
+    "Constituent sentiment remains unpublished until geography confidence, sample composition, duplicate/bot filtering, and uncertainty are disclosed.",
+    "No constitutional-alignment score is published without cited judicial actions, a transparent rubric, applicable provisions, and a clear non-legal-judgment disclaimer."
+  ],
+  "fieldFreshness": {
+    "identity": {
+      "status": "current",
+      "reviewedAt": "2026-08-03",
+      "sourceUrl": "https://www.txcourts.gov/supreme/about-the-court/justices/"
+    },
+    "portrait": {
+      "status": "current",
+      "reviewedAt": "2026-08-03",
+      "sourceUrl": "https://www.txcourts.gov/media/1452363/justice-debra-lehrmann-web.jpg",
+      "note": "1899x2981; 901651 bytes"
+    },
+    "contact": {
+      "status": "current",
+      "reviewedAt": "2026-08-03",
+      "sourceUrl": "https://directory.texastribune.org/debra-lehrmann/"
+    },
+    "term": {
+      "status": "current",
+      "reviewedAt": "2026-08-03",
+      "sourceUrl": "https://directory.texastribune.org/debra-lehrmann/"
+    },
+    "judicialRecord": {
+      "status": "source_path_only",
+      "reviewedAt": "2026-08-03",
+      "sourceUrl": "https://www.txcourts.gov/supreme/orders-opinions/",
+      "note": "Opinion-level indexing remains a separate evidence pass."
+    },
+    "campaignFinance": {
+      "status": "pending_review",
+      "reviewedAt": "2026-08-03",
+      "sourceUrl": "https://www.ethics.state.tx.us/search/cf/"
+    },
+    "sentiment": {
+      "status": "pending_review",
+      "reviewedAt": "2026-08-03",
+      "sourceUrl": "https://www.txcourts.gov/supreme/about-the-court/justices/justice-debra-lehrmann/"
+    }
+  }
 }
