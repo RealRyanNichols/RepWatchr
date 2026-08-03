@@ -10,12 +10,20 @@ bill their own `sourceUrl` points to. Two were checked directly against the publ
 
 | File | Claimed title | What the cited source actually is |
 |---|---|---|
-| `hb-1750-property-tax.json` | "Texas Property Tax Relief and Reform Act" | TX HB 1750 (89R) is a hemp product regulation bill, sponsored by Rep. Jon Rosenthal, left in House Agriculture & Livestock committee |
+| `hb-1750-property-tax.json` | "Texas Property Tax Relief and Reform Act" | TX HB 1750 (89R) regulates the processing, manufacture and sale of hemp products for smoking. Sponsored by Rep. Jon Rosenthal (D). Referred to House Agriculture & Livestock |
 | `sb-312-groundwater.json` | "Groundwater Conservation District Reform Act" | TX SB 312 (89R) concerns fiduciary responsibility of public retirement system governing bodies, investment managers and proxy advisors. Died in committee 2025-04-24 |
+| `sb-1045-transparency.json` | "Government Transparency and Open Meetings Reform Act" | TX SB 1045 (89R) requires a state agency to grant an opportunity for a public hearing before adopting certain rules. **Died in committee 2025-03-11** — there was no floor roll call, so the recorded member votes cannot exist |
+| `hr-2847-water-resources.json` | "Water Resources Development Act of 2025" | H.R. 2847 (119th) is the **Vote at Home Act of 2025** |
+| `s-890-tax-reform.json` | "State and Local Tax Fairness Act of 2025" | S. 890 (119th) is the **Choice in Affordable Housing Act of 2025** |
+| `hr-1192-property-rights.json` | "Private Property Rights Protection Act of 2025" | H.R. 1192 (119th) ensures Big Cypress National Preserve may not be designated as wilderness |
 
-The remaining four (`hr-1192`, `hr-2847`, `s-890`, `sb-1045`) follow the same pattern: a
-generic policy-sounding title, an `eastTexasImpact` narrative, and a real, well-formed
-source URL that lends the record credibility without supporting it.
+All six were checked. Not one matches its cited source.
+
+Every record follows the same pattern: a generic policy-sounding title, an
+`eastTexasImpact` narrative, and a real, well-formed source URL that lends the record
+credibility without supporting it. `sb-1045` is the closest to plausible — its subject is
+at least transparency-adjacent — and it is still disqualifying, because the bill died in
+committee and never received the floor vote its `votes` array records.
 
 ## Why this is the highest-severity issue in the repo
 
