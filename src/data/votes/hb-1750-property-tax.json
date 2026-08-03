@@ -1,7 +1,7 @@
 {
   "id": "hb-1750",
-  "reviewStatus": "verified",
-  "reviewedAt": "2026-08-02",
+  "reviewStatus": "needs_source_review",
+  "reviewedAt": "2026-08-03",
   "reviewedBy": "RepWatchr source desk",
   "title": "Texas Property Tax Relief and Reform Act",
   "summary": "Comprehensive property tax reform bill that increases the homestead exemption, compresses school district tax rates, and strengthens appraisal caps for residential and agricultural property.",
@@ -9,14 +9,27 @@
   "level": "state",
   "chamber": "house",
   "status": "Signed into Law",
-  "categories": ["taxes", "land-and-property-rights"],
+  "categories": [
+    "taxes",
+    "land-and-property-rights"
+  ],
   "eastTexasImpact": "Directly reduces property tax bills for East Texas homeowners, ranchers, and farmers. The increased homestead exemption and agricultural appraisal protections are especially impactful in rural East Texas counties.",
   "proEastTexasPosition": "yea",
   "votes": [
-    { "officialId": "jay-dean", "vote": "yea" },
-    { "officialId": "bryan-hughes", "vote": "yea" },
-    { "officialId": "robert-nichols", "vote": "yea" }
+    {
+      "officialId": "jay-dean",
+      "vote": "yea"
+    },
+    {
+      "officialId": "bryan-hughes",
+      "vote": "yea"
+    },
+    {
+      "officialId": "robert-nichols",
+      "vote": "yea"
+    }
   ],
   "dateVoted": "2025-05-18",
-  "sourceUrl": "https://capitol.texas.gov/BillLookup/History.aspx?LegSess=89R&Bill=HB1750"
+  "sourceUrl": "https://capitol.texas.gov/BillLookup/History.aspx?LegSess=89R&Bill=HB1750",
+  "reviewNote": "QUARANTINED 2026-08-03: content could not be corroborated against the cited source. Spot checks found the cited source URL resolves to a real bill with a different subject (TX HB 1750 89R is a hemp bill; TX SB 312 89R concerns public retirement system fiduciary duty). Do not publish. Votes attributed to named officials in this file are unverified."
 }

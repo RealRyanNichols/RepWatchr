@@ -1,7 +1,7 @@
 {
   "id": "sb-1045",
-  "reviewStatus": "verified",
-  "reviewedAt": "2026-08-02",
+  "reviewStatus": "needs_source_review",
+  "reviewedAt": "2026-08-03",
   "reviewedBy": "RepWatchr source desk",
   "title": "Government Transparency and Open Meetings Reform Act",
   "summary": "Strengthens the Texas Open Meetings Act and Public Information Act by closing loopholes, increasing penalties for violations, requiring online posting of government spending data, and expanding public access to records.",
@@ -9,14 +9,26 @@
   "level": "state",
   "chamber": "senate",
   "status": "In Committee",
-  "categories": ["government-transparency"],
+  "categories": [
+    "government-transparency"
+  ],
   "eastTexasImpact": "Would make it easier for East Texas residents to access county and city spending records, monitor local government meetings, and hold officials accountable. Addresses complaints about closed-door decision making in several East Texas jurisdictions.",
   "proEastTexasPosition": "yea",
   "votes": [
-    { "officialId": "bryan-hughes", "vote": "yea" },
-    { "officialId": "robert-nichols", "vote": "nay" },
-    { "officialId": "jay-dean", "vote": "absent" }
+    {
+      "officialId": "bryan-hughes",
+      "vote": "yea"
+    },
+    {
+      "officialId": "robert-nichols",
+      "vote": "nay"
+    },
+    {
+      "officialId": "jay-dean",
+      "vote": "absent"
+    }
   ],
   "dateVoted": "2025-04-30",
-  "sourceUrl": "https://capitol.texas.gov/BillLookup/History.aspx?LegSess=89R&Bill=SB1045"
+  "sourceUrl": "https://capitol.texas.gov/BillLookup/History.aspx?LegSess=89R&Bill=SB1045",
+  "reviewNote": "QUARANTINED 2026-08-03: content could not be corroborated against the cited source. Spot checks found the cited source URL resolves to a real bill with a different subject (TX HB 1750 89R is a hemp bill; TX SB 312 89R concerns public retirement system fiduciary duty). Do not publish. Votes attributed to named officials in this file are unverified."
 }
