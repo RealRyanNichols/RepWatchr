@@ -3,9 +3,9 @@
   "name": "Charles Perry",
   "firstName": "Charles",
   "lastName": "Perry",
-  "photo": "/images/officials/state-senate/charles-perry.jpg",
-  "photoSourceUrl": "https://senate.texas.gov/members/d28/img/Perry-Headshot-2019.jpg",
-  "photoCredit": "Official Texas Senate photo",
+  "photo": "/images/officials/texas-accountability/charles-perry.jpg",
+  "photoSourceUrl": "https://directory.texastribune.org/static/images/headshots/Charles_Perry_.jpg",
+  "photoCredit": "Texas Tribune elected-officials directory portrait; identity cross-checked against the official Texas Senate roster.",
   "party": "R",
   "level": "state",
   "position": "State Senator",
@@ -15,30 +15,195 @@
     "Texas"
   ],
   "termStart": "2014-09-30",
-  "termEnd": "Current legislative term pending source review",
+  "termEnd": "2026-12-31",
   "contactInfo": {
     "office": "Room E1.806, P.O. Box 12068 Capitol Station, Austin, TX 78711",
     "phone": "512-463-0128",
     "email": "charles.perry@senate.texas.gov",
-    "website": "https://senate.texas.gov/member.php?d=28"
+    "website": "https://www.senate.texas.gov/member.php?d=28"
   },
-  "bio": "Charles Perry serves as State Senator for Texas Senate District 28. This RepWatchr starter profile is sourced from official Texas Legislature profile data and OpenStates public records.",
+  "bio": "Charles Perry currently represents Texas Senate District 28. The official Senate profile lists Water, Agriculture, and Rural Affairs — Chair, Disaster Preparedness and Flooding, Select — Chair, Health and Human Services — Vice-Chair, and additional assignments. Individual bills, roll calls, finance figures, public-record findings, and sentiment publish only after their evidence gates pass.",
   "campaignPromises": [],
   "reviewStatus": "source_seeded",
   "state": "TX",
   "sourceLinks": [
     {
-      "title": "Official Texas Senate profile",
-      "url": "https://senate.texas.gov/member.php?d=28"
+      "title": "Official Texas Senate member profile",
+      "url": "https://www.senate.texas.gov/member.php?d=28",
+      "accessedAt": "2026-08-07",
+      "supports": [
+        "identity",
+        "office",
+        "biography",
+        "committees",
+        "contact"
+      ]
     },
     {
-      "title": "OpenStates public people record",
-      "url": "https://raw.githubusercontent.com/openstates/people/main/data/tx/legislature/Charles-Perry-6522ba2d-f263-455a-9470-cec0aa03033b.yml"
+      "title": "Official current Texas Senate roster",
+      "url": "https://www.senate.texas.gov/members.php",
+      "accessedAt": "2026-08-07",
+      "supports": [
+        "current_office",
+        "district",
+        "party"
+      ]
     },
     {
-      "title": "Official profile photo source",
-      "url": "https://senate.texas.gov/members/d28/img/Perry-Headshot-2019.jpg"
+      "title": "Official Texas Senate directory",
+      "url": "https://www.senate.texas.gov/directory.php",
+      "accessedAt": "2026-08-07",
+      "supports": [
+        "contact",
+        "district"
+      ]
+    },
+    {
+      "title": "Texas Legislature Online bills by author",
+      "url": "https://capitol.texas.gov/Reports/Report.aspx?LegSess=892&ID=author&code=A1045",
+      "accessedAt": "2026-08-07",
+      "supports": [
+        "sponsored_legislation"
+      ]
+    },
+    {
+      "title": "Texas Legislature Online vote-information guide",
+      "url": "https://capitol.texas.gov/help/findvoteinfo.aspx",
+      "accessedAt": "2026-08-07",
+      "supports": [
+        "voting_record_method"
+      ]
+    },
+    {
+      "title": "Texas Ethics Commission campaign-finance search",
+      "url": "https://www.ethics.state.tx.us/search/cf/",
+      "accessedAt": "2026-08-07",
+      "supports": [
+        "campaign_finance_source_path"
+      ]
+    },
+    {
+      "title": "Texas Secretary of State election archive",
+      "url": "https://www.sos.state.tx.us/elections/historical/index.shtml",
+      "accessedAt": "2026-08-07",
+      "supports": [
+        "term",
+        "election_history"
+      ]
+    },
+    {
+      "title": "Texas Tribune elected-official directory",
+      "url": "https://directory.texastribune.org/charles-perry/",
+      "accessedAt": "2026-08-07",
+      "supports": [
+        "portrait",
+        "party",
+        "next_election",
+        "contact"
+      ]
+    },
+    {
+      "title": "Stored portrait source and rights provenance",
+      "url": "https://directory.texastribune.org/static/images/headshots/Charles_Perry_.jpg",
+      "accessedAt": "2026-08-07",
+      "supports": [
+        "portrait",
+        "portrait_provenance"
+      ]
+    },
+    {
+      "title": "Texas Tribune site terms",
+      "url": "https://www.texastribune.org/about/terms-of-service/",
+      "accessedAt": "2026-08-07",
+      "supports": [
+        "portrait_provenance"
+      ]
     }
   ],
-  "lastVerifiedAt": "2026-04-27"
+  "lastVerifiedAt": "2026-08-07",
+  "photoRights": "Stored with source attribution and site-terms provenance; reuse rights should be rechecked before redistribution outside RepWatchr.",
+  "nextElection": "2026 general election",
+  "committeeAssignments": [
+    "Water, Agriculture, and Rural Affairs — Chair",
+    "Disaster Preparedness and Flooding, Select — Chair",
+    "Health and Human Services — Vice-Chair",
+    "Committee on the July 2025 Flooding Events, General Investigating — Vice-Chair",
+    "Finance",
+    "State Affairs",
+    "Transportation",
+    "Religious Liberty, Select"
+  ],
+  "accountabilityNotes": [
+    "Positive work and constituent benefit claims remain pending editorial review until a primary record and a response or independent context are attached.",
+    "Criticism and controversies remain pending editorial review until each claim is substantiated, attributed, dated, and paired with the official's response when available.",
+    "Campaign-finance totals, donors, industries/PACs, and expenditures remain unpublished until the correct filer and reporting period are matched to Texas Ethics Commission records.",
+    "Constituent sentiment remains unpublished until the sample discloses its collection window, source mix, jurisdiction-confidence method, duplicate/bot filtering, sample size, and uncertainty.",
+    "A constitutional-alignment score is not published without cited votes, a public rubric, applicable constitutional provisions, uncertainty, and a RepWatchr-analysis disclaimer."
+  ],
+  "fieldFreshness": {
+    "identity": {
+      "status": "current",
+      "reviewedAt": "2026-08-07",
+      "sourceUrl": "https://www.senate.texas.gov/members.php"
+    },
+    "portrait": {
+      "status": "current",
+      "reviewedAt": "2026-08-07",
+      "sourceUrl": "https://directory.texastribune.org/static/images/headshots/Charles_Perry_.jpg",
+      "note": "1000x1000; 102364 bytes"
+    },
+    "contact": {
+      "status": "current",
+      "reviewedAt": "2026-08-07",
+      "sourceUrl": "https://www.senate.texas.gov/member.php?d=28"
+    },
+    "term": {
+      "status": "current",
+      "reviewedAt": "2026-08-07",
+      "sourceUrl": "https://directory.texastribune.org/charles-perry/"
+    },
+    "assignments": {
+      "status": "current",
+      "reviewedAt": "2026-08-07",
+      "sourceUrl": "https://www.senate.texas.gov/member.php?d=28"
+    },
+    "legislation": {
+      "status": "source_path_only",
+      "reviewedAt": "2026-08-07",
+      "sourceUrl": "https://capitol.texas.gov/Reports/Report.aspx?LegSess=892&ID=author&code=A1045",
+      "note": "Individual bills require record-level editorial review."
+    },
+    "votingRecord": {
+      "status": "source_path_only",
+      "reviewedAt": "2026-08-07",
+      "sourceUrl": "https://capitol.texas.gov/help/findvoteinfo.aspx",
+      "note": "Vote rows require official journals or reports."
+    },
+    "campaignFinance": {
+      "status": "pending_review",
+      "reviewedAt": "2026-08-07",
+      "sourceUrl": "https://www.ethics.state.tx.us/search/cf/",
+      "note": "Filer and reporting period are not yet matched."
+    },
+    "positiveWork": {
+      "status": "pending_review",
+      "reviewedAt": "2026-08-07",
+      "sourceUrl": "https://www.senate.texas.gov/member.php?d=28"
+    },
+    "criticism": {
+      "status": "pending_review",
+      "reviewedAt": "2026-08-07",
+      "sourceUrl": "https://www.senate.texas.gov/member.php?d=28"
+    },
+    "sentiment": {
+      "status": "pending_review",
+      "reviewedAt": "2026-08-07",
+      "sourceUrl": "https://www.senate.texas.gov/member.php?d=28"
+    },
+    "constitutionalAlignment": {
+      "status": "pending_review",
+      "reviewedAt": "2026-08-07",
+      "sourceUrl": "https://capitol.texas.gov/help/findvoteinfo.aspx"
+    }
+  }
 }

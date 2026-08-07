@@ -1,11 +1,11 @@
 {
   "id": "a-j-louderback",
-  "name": "A.J. Louderback",
+  "name": "AJ Louderback",
   "firstName": "A.J.",
   "lastName": "Louderback",
-  "photo": "/images/officials/state-house/a-j-louderback.jpg",
-  "photoSourceUrl": "https://house.texas.gov/images/members/4620.jpg?v=1",
-  "photoCredit": "Official Texas House of Representatives photo",
+  "photo": "/images/officials/texas-accountability/a-j-louderback.jpg",
+  "photoSourceUrl": "https://directory.texastribune.org/static/images/headshots/A.J.%20Louderback%20TT%2001.jpg",
+  "photoCredit": "Texas Tribune elected-officials directory portrait; identity cross-checked against the official Texas House roster.",
   "party": "R",
   "level": "state",
   "position": "State Representative",
@@ -15,30 +15,206 @@
     "Texas"
   ],
   "termStart": "2025-01-14",
-  "termEnd": "Current legislative term pending source review",
+  "termEnd": "2026-12-31",
   "contactInfo": {
-    "office": "Room E1.418, P.O. Box 12910, Austin, TX 78711",
+    "office": "Room E1.418 P.O. Box 12910 Austin, Texas 78",
     "phone": "512-463-0456",
     "email": "aj.louderback@house.texas.gov",
     "website": "https://house.texas.gov/members/4620"
   },
-  "bio": "A.J. Louderback serves as State Representative for Texas House of Representatives District 30. This RepWatchr starter profile is sourced from official Texas Legislature profile data and OpenStates public records.",
+  "bio": "AJ Louderback currently represents Texas House District 30.",
   "campaignPromises": [],
   "reviewStatus": "source_seeded",
   "state": "TX",
   "sourceLinks": [
     {
-      "title": "Official Texas House of Representatives profile",
-      "url": "https://house.texas.gov/members/4620"
+      "title": "Official Texas House member page",
+      "url": "https://house.texas.gov/members/4620",
+      "accessedAt": "2026-08-07",
+      "supports": [
+        "identity",
+        "office",
+        "contact",
+        "legislation_paths"
+      ]
     },
     {
-      "title": "OpenStates public people record",
-      "url": "https://raw.githubusercontent.com/openstates/people/main/data/tx/legislature/AJ-Louderback-dd3e49ca-2b2b-4a83-ae63-0ade6ccef73f.yml"
+      "title": "Official current Texas House roster API",
+      "url": "https://house.texas.gov/api/getMembers",
+      "accessedAt": "2026-08-07",
+      "supports": [
+        "current_office",
+        "district",
+        "identity"
+      ]
     },
     {
-      "title": "Official profile photo source",
-      "url": "https://house.texas.gov/images/members/4620.jpg?v=1"
+      "title": "Official Texas House member directory",
+      "url": "https://house.texas.gov/members",
+      "accessedAt": "2026-08-07",
+      "supports": [
+        "current_office",
+        "district"
+      ]
+    },
+    {
+      "title": "Official Texas House biography",
+      "url": "https://house.texas.gov/members/4620/biography",
+      "accessedAt": "2026-08-07",
+      "supports": [
+        "biography"
+      ]
+    },
+    {
+      "title": "Official Texas House committee assignments",
+      "url": "https://house.texas.gov/members/4620/committees",
+      "accessedAt": "2026-08-07",
+      "supports": [
+        "committees",
+        "leadership"
+      ]
+    },
+    {
+      "title": "Texas Legislature Online authored bills",
+      "url": "https://capitol.texas.gov/reports/report.aspx?ID=author&LegSess=89R&Code=A4620",
+      "accessedAt": "2026-08-07",
+      "supports": [
+        "sponsored_legislation"
+      ]
+    },
+    {
+      "title": "Texas Legislature Online sponsored bills",
+      "url": "https://capitol.texas.gov/reports/report.aspx?ID=sponsor&LegSess=89R&Code=A4620",
+      "accessedAt": "2026-08-07",
+      "supports": [
+        "sponsored_legislation"
+      ]
+    },
+    {
+      "title": "Texas Legislature Online vote-information guide",
+      "url": "https://capitol.texas.gov/help/findvoteinfo.aspx",
+      "accessedAt": "2026-08-07",
+      "supports": [
+        "voting_record_method"
+      ]
+    },
+    {
+      "title": "Texas Ethics Commission campaign-finance search",
+      "url": "https://www.ethics.state.tx.us/search/cf/",
+      "accessedAt": "2026-08-07",
+      "supports": [
+        "campaign_finance_source_path"
+      ]
+    },
+    {
+      "title": "Texas Secretary of State election archive",
+      "url": "https://www.sos.state.tx.us/elections/historical/index.shtml",
+      "accessedAt": "2026-08-07",
+      "supports": [
+        "term",
+        "election_history"
+      ]
+    },
+    {
+      "title": "Texas Tribune elected-official directory",
+      "url": "https://directory.texastribune.org/a-j-louderback/",
+      "accessedAt": "2026-08-07",
+      "supports": [
+        "portrait",
+        "party",
+        "next_election"
+      ]
+    },
+    {
+      "title": "Texas Tribune site terms",
+      "url": "https://www.texastribune.org/about/terms-of-service/",
+      "accessedAt": "2026-08-07",
+      "supports": [
+        "portrait_provenance"
+      ]
     }
   ],
-  "lastVerifiedAt": "2026-04-27"
+  "lastVerifiedAt": "2026-08-07",
+  "photoRights": "Stored with source attribution and site-terms provenance; reuse rights should be rechecked before redistribution outside RepWatchr.",
+  "nextElection": "2026 general election",
+  "committeeAssignments": [
+    "Criminal Jurisprudence",
+    "S/C on Juvenile Justice",
+    "Disaster Preparedness & Flooding, Select",
+    "Governmental Oversight, Select",
+    "Homeland Security, Public Safety & Veterans' Affairs"
+  ],
+  "accountabilityNotes": [
+    "Positive work and constituent benefit claims remain pending editorial review until a primary record and a response or independent context are attached.",
+    "Criticism and controversies remain pending editorial review until each claim is substantiated, attributed, dated, and paired with the official's response when available.",
+    "Campaign-finance totals, donors, industries/PACs, and expenditures remain unpublished until the correct filer and reporting period are matched to Texas Ethics Commission records.",
+    "Constituent sentiment remains unpublished until the sample discloses its collection window, source mix, jurisdiction-confidence method, duplicate/bot filtering, sample size, and uncertainty.",
+    "A constitutional-alignment score is not published without cited votes, a public rubric, applicable constitutional provisions, uncertainty, and a RepWatchr-analysis disclaimer."
+  ],
+  "fieldFreshness": {
+    "identity": {
+      "status": "current",
+      "reviewedAt": "2026-08-07",
+      "sourceUrl": "https://house.texas.gov/api/getMembers"
+    },
+    "portrait": {
+      "status": "current",
+      "reviewedAt": "2026-08-07",
+      "sourceUrl": "https://directory.texastribune.org/static/images/headshots/A.J.%20Louderback%20TT%2001.jpg",
+      "note": "1000x1000; 69222 bytes"
+    },
+    "contact": {
+      "status": "current",
+      "reviewedAt": "2026-08-07",
+      "sourceUrl": "https://house.texas.gov/members/4620"
+    },
+    "term": {
+      "status": "current",
+      "reviewedAt": "2026-08-07",
+      "sourceUrl": "https://directory.texastribune.org/a-j-louderback/"
+    },
+    "assignments": {
+      "status": "current",
+      "reviewedAt": "2026-08-07",
+      "sourceUrl": "https://house.texas.gov/members/4620/committees"
+    },
+    "legislation": {
+      "status": "source_path_only",
+      "reviewedAt": "2026-08-07",
+      "sourceUrl": "https://capitol.texas.gov/reports/report.aspx?ID=author&LegSess=89R&Code=A4620",
+      "note": "Individual bills require record-level editorial review."
+    },
+    "votingRecord": {
+      "status": "source_path_only",
+      "reviewedAt": "2026-08-07",
+      "sourceUrl": "https://capitol.texas.gov/help/findvoteinfo.aspx",
+      "note": "Vote rows require official journals or reports."
+    },
+    "campaignFinance": {
+      "status": "pending_review",
+      "reviewedAt": "2026-08-07",
+      "sourceUrl": "https://www.ethics.state.tx.us/search/cf/",
+      "note": "Filer and reporting period are not yet matched."
+    },
+    "positiveWork": {
+      "status": "pending_review",
+      "reviewedAt": "2026-08-07",
+      "sourceUrl": "https://house.texas.gov/members/4620/biography"
+    },
+    "criticism": {
+      "status": "pending_review",
+      "reviewedAt": "2026-08-07",
+      "sourceUrl": "https://house.texas.gov/members/4620"
+    },
+    "sentiment": {
+      "status": "pending_review",
+      "reviewedAt": "2026-08-07",
+      "sourceUrl": "https://house.texas.gov/members/4620"
+    },
+    "constitutionalAlignment": {
+      "status": "pending_review",
+      "reviewedAt": "2026-08-07",
+      "sourceUrl": "https://capitol.texas.gov/help/findvoteinfo.aspx"
+    }
+  }
 }
