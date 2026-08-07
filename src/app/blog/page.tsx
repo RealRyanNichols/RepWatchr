@@ -175,7 +175,12 @@ export default function BlogPage() {
   const articles = getAllNews();
   const clusters = getSeoTopicClusters();
   const editorialLoop = getEditorialLoopSteps();
-  const latestArticles = articles.slice(0, 8);
+  const latestArticles = [...articles]
+    .sort(
+      (a, b) =>
+        new Date(b.publishedAt).getTime() - new Date(a.publishedAt).getTime(),
+    )
+    .slice(0, 8);
   const featuredArticle = latestArticles[0];
   const texasArticles = articles
     .filter((article) => articleScope(article) === "texas" || articleScope(article) === "east-texas")
