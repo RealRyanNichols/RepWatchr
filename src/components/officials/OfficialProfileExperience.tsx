@@ -25,7 +25,7 @@ export function OfficialProfileHero({
   performanceGrade,
   heroSummary,
 }: OfficialProfileHeroProps) {
-  const reviewedAt = voteRecord?.lastUpdated ?? official.lastVerifiedAt;
+  const reviewedAt = official.lastVerifiedAt ?? voteRecord?.lastUpdated;
   const officeAccountability = getOfficeAccountabilityProfile(official);
   const gradeValue =
     performanceGrade?.status === "published" && performanceGrade.score !== null

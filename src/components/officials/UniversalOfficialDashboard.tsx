@@ -86,7 +86,7 @@ export default function UniversalOfficialDashboard({
     verifiedBrief,
   });
   const coverage = buildCoverage(official.id, relatedNews, redFlags, verifiedBrief);
-  const refreshedAt = voteRecord?.lastUpdated ?? overlay.completion?.lastCheckedAt ?? official.lastVerifiedAt;
+  const refreshedAt = official.lastVerifiedAt ?? overlay.completion?.lastCheckedAt ?? voteRecord?.lastUpdated;
   const voteTotal = voteRecord?.summary.totalVotesLoaded ?? 0;
 
   return (

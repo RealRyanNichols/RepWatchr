@@ -63,4 +63,23 @@ for (const path of paths) {
 }
 
 assert(!existsSync(join(root, "src", "data", "officials", "state", "tx-senate-sd22.json")), "Vacant SD-22 must remain absent");
+
+const profileExperience = readFileSync(
+  join(root, "src", "components", "officials", "OfficialProfileExperience.tsx"),
+  "utf8",
+);
+assert(
+  profileExperience.includes("const reviewedAt = official.lastVerifiedAt ?? voteRecord?.lastUpdated;"),
+  "Profile hero must prefer the profile verification date over an older vote-record date",
+);
+
+const universalDashboard = readFileSync(
+  join(root, "src", "components", "officials", "UniversalOfficialDashboard.tsx"),
+  "utf8",
+);
+assert(
+  universalDashboard.includes("const refreshedAt = official.lastVerifiedAt ?? overlay.completion?.lastCheckedAt ?? voteRecord?.lastUpdated;"),
+  "Universal dashboard must prefer the profile verification date over older metric dates",
+);
+
 console.log(`Texas profile batch smoke passed: ${paths.length} source-reviewed active-office profiles.`);
