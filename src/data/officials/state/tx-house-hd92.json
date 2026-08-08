@@ -3,9 +3,9 @@
   "name": "Salman Bhojani",
   "firstName": "Salman",
   "lastName": "Bhojani",
-  "photo": "/images/officials/state-house/salman-bhojani.jpg",
-  "photoSourceUrl": "https://house.texas.gov/images/members/4115.jpg?v=1",
-  "photoCredit": "Official Texas House of Representatives photo",
+  "photo": "/images/officials/texas-accountability/salman-bhojani.jpg",
+  "photoSourceUrl": "https://directory.texastribune.org/static/images/headshots/Salman%20Bhojani%20TT%2001.jpg",
+  "photoCredit": "Texas Tribune elected-officials directory portrait; identity cross-checked against the official Texas House roster.",
   "party": "D",
   "level": "state",
   "position": "State Representative",
@@ -15,30 +15,204 @@
     "Texas"
   ],
   "termStart": "2023-01-10",
-  "termEnd": "Current legislative term pending source review",
+  "termEnd": "2026-12-31",
   "contactInfo": {
-    "office": "Room E2.906, P.O. Box 12910, Austin, TX 78711",
+    "office": "Room E2.906 P.O. Box 12910 Austin, Texas 78",
     "phone": "512-463-0522",
     "email": "salman.bhojani@house.texas.gov",
-    "website": "https://house.texas.gov/members/92"
+    "website": "https://house.texas.gov/members/4115"
   },
-  "bio": "Salman Bhojani serves as State Representative for Texas House of Representatives District 92. This RepWatchr starter profile is sourced from official Texas Legislature profile data and OpenStates public records.",
+  "bio": "Born in Pakistan to a large family, Representative Salman Bhojani immigrated to Texas as a teenager. He worked three minimum wage jobs to help support his family–climbing the ladder from convenience store cashier to successful business owner, attorney, Euless City Councilman, and Mayor Pro Tem. After becoming a naturalized citizen, Rep. Bhojani earned degrees from the University of Texas at Dallas, Southern Methodist University, and Oxford University. After finding a home in Euless with his family, Rep. Bhojani made national headlines when he was elected to the Euless City Council, becoming the first person of color to hold elected office in Euless. In 2023, Rep. Bhojani was sworn in as one of the first Muslims and the first South Asians to serve in.",
   "campaignPromises": [],
   "reviewStatus": "source_seeded",
   "state": "TX",
   "sourceLinks": [
     {
-      "title": "Official Texas House of Representatives profile",
-      "url": "https://house.texas.gov/members/92"
+      "title": "Official Texas House member page",
+      "url": "https://house.texas.gov/members/4115",
+      "accessedAt": "2026-08-08",
+      "supports": [
+        "identity",
+        "office",
+        "contact",
+        "legislation_paths"
+      ]
     },
     {
-      "title": "OpenStates public people record",
-      "url": "https://raw.githubusercontent.com/openstates/people/main/data/tx/legislature/Salman-Bhojani-4fb2e1fd-fbb3-4a55-8417-761da2f6048e.yml"
+      "title": "Official current Texas House roster API",
+      "url": "https://house.texas.gov/api/getMembers",
+      "accessedAt": "2026-08-08",
+      "supports": [
+        "current_office",
+        "district",
+        "identity"
+      ]
     },
     {
-      "title": "Official profile photo source",
-      "url": "https://house.texas.gov/images/members/4115.jpg?v=1"
+      "title": "Official Texas House member directory",
+      "url": "https://house.texas.gov/members",
+      "accessedAt": "2026-08-08",
+      "supports": [
+        "current_office",
+        "district"
+      ]
+    },
+    {
+      "title": "Official Texas House biography",
+      "url": "https://house.texas.gov/members/4115/biography",
+      "accessedAt": "2026-08-08",
+      "supports": [
+        "biography"
+      ]
+    },
+    {
+      "title": "Official Texas House committee assignments",
+      "url": "https://house.texas.gov/members/4115/committees",
+      "accessedAt": "2026-08-08",
+      "supports": [
+        "committees",
+        "leadership"
+      ]
+    },
+    {
+      "title": "Texas Legislature Online authored bills",
+      "url": "https://capitol.texas.gov/reports/report.aspx?ID=author&LegSess=89R&Code=A4115",
+      "accessedAt": "2026-08-08",
+      "supports": [
+        "sponsored_legislation"
+      ]
+    },
+    {
+      "title": "Texas Legislature Online sponsored bills",
+      "url": "https://capitol.texas.gov/reports/report.aspx?ID=sponsor&LegSess=89R&Code=A4115",
+      "accessedAt": "2026-08-08",
+      "supports": [
+        "sponsored_legislation"
+      ]
+    },
+    {
+      "title": "Texas Legislature Online vote-information guide",
+      "url": "https://capitol.texas.gov/help/findvoteinfo.aspx",
+      "accessedAt": "2026-08-08",
+      "supports": [
+        "voting_record_method"
+      ]
+    },
+    {
+      "title": "Texas Ethics Commission campaign-finance search",
+      "url": "https://www.ethics.state.tx.us/search/cf/",
+      "accessedAt": "2026-08-08",
+      "supports": [
+        "campaign_finance_source_path"
+      ]
+    },
+    {
+      "title": "Texas Secretary of State election archive",
+      "url": "https://www.sos.state.tx.us/elections/historical/index.shtml",
+      "accessedAt": "2026-08-08",
+      "supports": [
+        "term",
+        "election_history"
+      ]
+    },
+    {
+      "title": "Texas Tribune elected-official directory",
+      "url": "https://directory.texastribune.org/salman-bhojani/",
+      "accessedAt": "2026-08-08",
+      "supports": [
+        "portrait",
+        "party",
+        "next_election"
+      ]
+    },
+    {
+      "title": "Texas Tribune site terms",
+      "url": "https://www.texastribune.org/about/terms-of-service/",
+      "accessedAt": "2026-08-08",
+      "supports": [
+        "portrait_provenance"
+      ]
     }
   ],
-  "lastVerifiedAt": "2026-04-27"
+  "lastVerifiedAt": "2026-08-08",
+  "photoRights": "Stored with source attribution and site-terms provenance; reuse rights should be rechecked before redistribution outside RepWatchr.",
+  "nextElection": "2026 general election",
+  "committeeAssignments": [
+    "Delivery of Government Efficiency — Vice Chair",
+    "Trade, Workforce & Economic Development",
+    "S/C on Workforce"
+  ],
+  "accountabilityNotes": [
+    "Positive work and constituent benefit claims remain pending editorial review until a primary record and a response or independent context are attached.",
+    "Criticism and controversies remain pending editorial review until each claim is substantiated, attributed, dated, and paired with the official's response when available.",
+    "Campaign-finance totals, donors, industries/PACs, and expenditures remain unpublished until the correct filer and reporting period are matched to Texas Ethics Commission records.",
+    "Constituent sentiment remains unpublished until the sample discloses its collection window, source mix, jurisdiction-confidence method, duplicate/bot filtering, sample size, and uncertainty.",
+    "A constitutional-alignment score is not published without cited votes, a public rubric, applicable constitutional provisions, uncertainty, and a RepWatchr-analysis disclaimer."
+  ],
+  "fieldFreshness": {
+    "identity": {
+      "status": "current",
+      "reviewedAt": "2026-08-08",
+      "sourceUrl": "https://house.texas.gov/api/getMembers"
+    },
+    "portrait": {
+      "status": "current",
+      "reviewedAt": "2026-08-08",
+      "sourceUrl": "https://directory.texastribune.org/static/images/headshots/Salman%20Bhojani%20TT%2001.jpg",
+      "note": "1270x1779; 344607 bytes"
+    },
+    "contact": {
+      "status": "current",
+      "reviewedAt": "2026-08-08",
+      "sourceUrl": "https://house.texas.gov/members/4115"
+    },
+    "term": {
+      "status": "current",
+      "reviewedAt": "2026-08-08",
+      "sourceUrl": "https://directory.texastribune.org/salman-bhojani/"
+    },
+    "assignments": {
+      "status": "current",
+      "reviewedAt": "2026-08-08",
+      "sourceUrl": "https://house.texas.gov/members/4115/committees"
+    },
+    "legislation": {
+      "status": "source_path_only",
+      "reviewedAt": "2026-08-08",
+      "sourceUrl": "https://capitol.texas.gov/reports/report.aspx?ID=author&LegSess=89R&Code=A4115",
+      "note": "Individual bills require record-level editorial review."
+    },
+    "votingRecord": {
+      "status": "source_path_only",
+      "reviewedAt": "2026-08-08",
+      "sourceUrl": "https://capitol.texas.gov/help/findvoteinfo.aspx",
+      "note": "Vote rows require official journals or reports."
+    },
+    "campaignFinance": {
+      "status": "pending_review",
+      "reviewedAt": "2026-08-08",
+      "sourceUrl": "https://www.ethics.state.tx.us/search/cf/",
+      "note": "Filer and reporting period are not yet matched."
+    },
+    "positiveWork": {
+      "status": "pending_review",
+      "reviewedAt": "2026-08-08",
+      "sourceUrl": "https://house.texas.gov/members/4115/biography"
+    },
+    "criticism": {
+      "status": "pending_review",
+      "reviewedAt": "2026-08-08",
+      "sourceUrl": "https://house.texas.gov/members/4115"
+    },
+    "sentiment": {
+      "status": "pending_review",
+      "reviewedAt": "2026-08-08",
+      "sourceUrl": "https://house.texas.gov/members/4115"
+    },
+    "constitutionalAlignment": {
+      "status": "pending_review",
+      "reviewedAt": "2026-08-08",
+      "sourceUrl": "https://capitol.texas.gov/help/findvoteinfo.aspx"
+    }
+  }
 }

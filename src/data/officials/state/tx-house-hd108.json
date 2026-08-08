@@ -3,9 +3,9 @@
   "name": "Morgan Meyer",
   "firstName": "Morgan",
   "lastName": "Meyer",
-  "photo": "/images/officials/state-house/morgan-meyer.jpg",
-  "photoSourceUrl": "https://house.texas.gov/images/members/3075.jpg?v=1",
-  "photoCredit": "Official Texas House of Representatives photo",
+  "photo": "/images/officials/texas-accountability/morgan-meyer.jpg",
+  "photoSourceUrl": "https://directory.texastribune.org/static/images/headshots/morgan-meyer.jpg",
+  "photoCredit": "Texas Tribune elected-officials directory portrait; identity cross-checked against the official Texas House roster.",
   "party": "R",
   "level": "state",
   "position": "State Representative",
@@ -15,30 +15,204 @@
     "Texas"
   ],
   "termStart": "2015-01-13",
-  "termEnd": "Current legislative term pending source review",
+  "termEnd": "2026-12-31",
   "contactInfo": {
-    "office": "Room GN.8, P.O. Box 12910, Austin, TX 78711",
+    "office": "Room GN.8 P.O. Box 12910 Austin, Texas 78",
     "phone": "512-463-0367",
     "email": "morgan.meyer@house.texas.gov",
     "website": "https://house.texas.gov/members/3075"
   },
-  "bio": "Morgan Meyer serves as State Representative for Texas House of Representatives District 108. This RepWatchr starter profile is sourced from official Texas Legislature profile data and OpenStates public records.",
+  "bio": "Chairman Morgan Meyer is a vocal leader when it comes to fiscal responsibility, education, and keeping our communities safe. First elected in 2014 and now in his sixth term as a State Representative, Morgan is currently serving as the Chair of the Ways & Means Committee. As Chair of Ways & Means during the 2023 legislative session, Chairman Meyer spearheaded the effort to pass the largest tax cut in Texas history. Chairman Meyer’s leadership was vital in passing SB 2, which returned $18 billion to taxpayers in the form of property tax relief. The bill compressed school district tax rates by 10.7 cents, supplying an additional $7.6 billion of property tax relief for ALL property owners and increased the state’s share of the cost of public education.",
   "campaignPromises": [],
   "reviewStatus": "source_seeded",
   "state": "TX",
   "sourceLinks": [
     {
-      "title": "Official Texas House of Representatives profile",
-      "url": "https://house.texas.gov/members/3075"
+      "title": "Official Texas House member page",
+      "url": "https://house.texas.gov/members/3075",
+      "accessedAt": "2026-08-08",
+      "supports": [
+        "identity",
+        "office",
+        "contact",
+        "legislation_paths"
+      ]
     },
     {
-      "title": "OpenStates public people record",
-      "url": "https://raw.githubusercontent.com/openstates/people/main/data/tx/legislature/Morgan-Meyer-2639e096-d327-4c4d-823f-759b1ce373e0.yml"
+      "title": "Official current Texas House roster API",
+      "url": "https://house.texas.gov/api/getMembers",
+      "accessedAt": "2026-08-08",
+      "supports": [
+        "current_office",
+        "district",
+        "identity"
+      ]
     },
     {
-      "title": "Official profile photo source",
-      "url": "https://house.texas.gov/images/members/3075.jpg?v=1"
+      "title": "Official Texas House member directory",
+      "url": "https://house.texas.gov/members",
+      "accessedAt": "2026-08-08",
+      "supports": [
+        "current_office",
+        "district"
+      ]
+    },
+    {
+      "title": "Official Texas House biography",
+      "url": "https://house.texas.gov/members/3075/biography",
+      "accessedAt": "2026-08-08",
+      "supports": [
+        "biography"
+      ]
+    },
+    {
+      "title": "Official Texas House committee assignments",
+      "url": "https://house.texas.gov/members/3075/committees",
+      "accessedAt": "2026-08-08",
+      "supports": [
+        "committees",
+        "leadership"
+      ]
+    },
+    {
+      "title": "Texas Legislature Online authored bills",
+      "url": "https://capitol.texas.gov/reports/report.aspx?ID=author&LegSess=89R&Code=A3075",
+      "accessedAt": "2026-08-08",
+      "supports": [
+        "sponsored_legislation"
+      ]
+    },
+    {
+      "title": "Texas Legislature Online sponsored bills",
+      "url": "https://capitol.texas.gov/reports/report.aspx?ID=sponsor&LegSess=89R&Code=A3075",
+      "accessedAt": "2026-08-08",
+      "supports": [
+        "sponsored_legislation"
+      ]
+    },
+    {
+      "title": "Texas Legislature Online vote-information guide",
+      "url": "https://capitol.texas.gov/help/findvoteinfo.aspx",
+      "accessedAt": "2026-08-08",
+      "supports": [
+        "voting_record_method"
+      ]
+    },
+    {
+      "title": "Texas Ethics Commission campaign-finance search",
+      "url": "https://www.ethics.state.tx.us/search/cf/",
+      "accessedAt": "2026-08-08",
+      "supports": [
+        "campaign_finance_source_path"
+      ]
+    },
+    {
+      "title": "Texas Secretary of State election archive",
+      "url": "https://www.sos.state.tx.us/elections/historical/index.shtml",
+      "accessedAt": "2026-08-08",
+      "supports": [
+        "term",
+        "election_history"
+      ]
+    },
+    {
+      "title": "Texas Tribune elected-official directory",
+      "url": "https://directory.texastribune.org/morgan-meyer/",
+      "accessedAt": "2026-08-08",
+      "supports": [
+        "portrait",
+        "party",
+        "next_election"
+      ]
+    },
+    {
+      "title": "Texas Tribune site terms",
+      "url": "https://www.texastribune.org/about/terms-of-service/",
+      "accessedAt": "2026-08-08",
+      "supports": [
+        "portrait_provenance"
+      ]
     }
   ],
-  "lastVerifiedAt": "2026-04-27"
+  "lastVerifiedAt": "2026-08-08",
+  "photoRights": "Stored with source attribution and site-terms provenance; reuse rights should be rechecked before redistribution outside RepWatchr.",
+  "nextElection": "2026 general election",
+  "committeeAssignments": [
+    "House Administration",
+    "The July 2025 Flooding Events, General Investigating — Chair",
+    "Ways & Means — Chair"
+  ],
+  "accountabilityNotes": [
+    "Positive work and constituent benefit claims remain pending editorial review until a primary record and a response or independent context are attached.",
+    "Criticism and controversies remain pending editorial review until each claim is substantiated, attributed, dated, and paired with the official's response when available.",
+    "Campaign-finance totals, donors, industries/PACs, and expenditures remain unpublished until the correct filer and reporting period are matched to Texas Ethics Commission records.",
+    "Constituent sentiment remains unpublished until the sample discloses its collection window, source mix, jurisdiction-confidence method, duplicate/bot filtering, sample size, and uncertainty.",
+    "A constitutional-alignment score is not published without cited votes, a public rubric, applicable constitutional provisions, uncertainty, and a RepWatchr-analysis disclaimer."
+  ],
+  "fieldFreshness": {
+    "identity": {
+      "status": "current",
+      "reviewedAt": "2026-08-08",
+      "sourceUrl": "https://house.texas.gov/api/getMembers"
+    },
+    "portrait": {
+      "status": "current",
+      "reviewedAt": "2026-08-08",
+      "sourceUrl": "https://directory.texastribune.org/static/images/headshots/morgan-meyer.jpg",
+      "note": "1000x1000; 100653 bytes"
+    },
+    "contact": {
+      "status": "current",
+      "reviewedAt": "2026-08-08",
+      "sourceUrl": "https://house.texas.gov/members/3075"
+    },
+    "term": {
+      "status": "current",
+      "reviewedAt": "2026-08-08",
+      "sourceUrl": "https://directory.texastribune.org/morgan-meyer/"
+    },
+    "assignments": {
+      "status": "current",
+      "reviewedAt": "2026-08-08",
+      "sourceUrl": "https://house.texas.gov/members/3075/committees"
+    },
+    "legislation": {
+      "status": "source_path_only",
+      "reviewedAt": "2026-08-08",
+      "sourceUrl": "https://capitol.texas.gov/reports/report.aspx?ID=author&LegSess=89R&Code=A3075",
+      "note": "Individual bills require record-level editorial review."
+    },
+    "votingRecord": {
+      "status": "source_path_only",
+      "reviewedAt": "2026-08-08",
+      "sourceUrl": "https://capitol.texas.gov/help/findvoteinfo.aspx",
+      "note": "Vote rows require official journals or reports."
+    },
+    "campaignFinance": {
+      "status": "pending_review",
+      "reviewedAt": "2026-08-08",
+      "sourceUrl": "https://www.ethics.state.tx.us/search/cf/",
+      "note": "Filer and reporting period are not yet matched."
+    },
+    "positiveWork": {
+      "status": "pending_review",
+      "reviewedAt": "2026-08-08",
+      "sourceUrl": "https://house.texas.gov/members/3075/biography"
+    },
+    "criticism": {
+      "status": "pending_review",
+      "reviewedAt": "2026-08-08",
+      "sourceUrl": "https://house.texas.gov/members/3075"
+    },
+    "sentiment": {
+      "status": "pending_review",
+      "reviewedAt": "2026-08-08",
+      "sourceUrl": "https://house.texas.gov/members/3075"
+    },
+    "constitutionalAlignment": {
+      "status": "pending_review",
+      "reviewedAt": "2026-08-08",
+      "sourceUrl": "https://capitol.texas.gov/help/findvoteinfo.aspx"
+    }
+  }
 }

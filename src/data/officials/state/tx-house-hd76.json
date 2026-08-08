@@ -3,9 +3,9 @@
   "name": "Suleman Lalani",
   "firstName": "Suleman",
   "lastName": "Lalani",
-  "photo": "/images/officials/state-house/suleman-lalani.jpg",
-  "photoSourceUrl": "https://house.texas.gov/images/members/4285.jpg?v=1",
-  "photoCredit": "Official Texas House of Representatives photo",
+  "photo": "/images/officials/texas-accountability/suleman-lalani.jpg",
+  "photoSourceUrl": "https://directory.texastribune.org/static/images/headshots/Suleman%20Lalani%20TT.jpg",
+  "photoCredit": "Texas Tribune elected-officials directory portrait; identity cross-checked against the official Texas House roster.",
   "party": "D",
   "level": "state",
   "position": "State Representative",
@@ -15,30 +15,204 @@
     "Texas"
   ],
   "termStart": "2023-01-10",
-  "termEnd": "Current legislative term pending source review",
+  "termEnd": "2026-12-31",
   "contactInfo": {
-    "office": "Room E1.212, P.O. Box 12910, Austin, TX 78711",
+    "office": "Room E1.212 P.O. Box 12910 Austin, Texas 78",
     "phone": "512-463-0596",
     "email": "suleman.lalani@house.texas.gov",
     "website": "https://house.texas.gov/members/4285"
   },
-  "bio": "Suleman Lalani serves as State Representative for Texas House of Representatives District 76. This RepWatchr starter profile is sourced from official Texas Legislature profile data and OpenStates public records.",
+  "bio": "Representative Suleman Lalani, M.D., is serving his second term representing House District 76, which includes Sugar Land, Stafford, Richmond, and Meadows Place. Elected in 2022, he is the first South Asian and first Muslim member of the Texas Legislature, a founding member and co-chair of the AAPI Caucus, and the founder and chair of the Texas Interfaith Legislators Caucus. A physician in the Sugar Land and greater Houston area for nearly 30 years, Dr. Lalani came to the United States in the early 1990s and has focused on closing gaps in healthcare access through policy, clinical practice, and charitable work. He is currently the only general practitioner in the Texas Legislature. In his first session, he was the only freshman to secure two.",
   "campaignPromises": [],
   "reviewStatus": "source_seeded",
   "state": "TX",
   "sourceLinks": [
     {
-      "title": "Official Texas House of Representatives profile",
-      "url": "https://house.texas.gov/members/4285"
+      "title": "Official Texas House member page",
+      "url": "https://house.texas.gov/members/4285",
+      "accessedAt": "2026-08-08",
+      "supports": [
+        "identity",
+        "office",
+        "contact",
+        "legislation_paths"
+      ]
     },
     {
-      "title": "OpenStates public people record",
-      "url": "https://raw.githubusercontent.com/openstates/people/main/data/tx/legislature/Suleman-Lalani-51927936-c6fc-453b-8afd-5f0b53de7d46.yml"
+      "title": "Official current Texas House roster API",
+      "url": "https://house.texas.gov/api/getMembers",
+      "accessedAt": "2026-08-08",
+      "supports": [
+        "current_office",
+        "district",
+        "identity"
+      ]
     },
     {
-      "title": "Official profile photo source",
-      "url": "https://house.texas.gov/images/members/4285.jpg?v=1"
+      "title": "Official Texas House member directory",
+      "url": "https://house.texas.gov/members",
+      "accessedAt": "2026-08-08",
+      "supports": [
+        "current_office",
+        "district"
+      ]
+    },
+    {
+      "title": "Official Texas House biography",
+      "url": "https://house.texas.gov/members/4285/biography",
+      "accessedAt": "2026-08-08",
+      "supports": [
+        "biography"
+      ]
+    },
+    {
+      "title": "Official Texas House committee assignments",
+      "url": "https://house.texas.gov/members/4285/committees",
+      "accessedAt": "2026-08-08",
+      "supports": [
+        "committees",
+        "leadership"
+      ]
+    },
+    {
+      "title": "Texas Legislature Online authored bills",
+      "url": "https://capitol.texas.gov/reports/report.aspx?ID=author&LegSess=89R&Code=A4285",
+      "accessedAt": "2026-08-08",
+      "supports": [
+        "sponsored_legislation"
+      ]
+    },
+    {
+      "title": "Texas Legislature Online sponsored bills",
+      "url": "https://capitol.texas.gov/reports/report.aspx?ID=sponsor&LegSess=89R&Code=A4285",
+      "accessedAt": "2026-08-08",
+      "supports": [
+        "sponsored_legislation"
+      ]
+    },
+    {
+      "title": "Texas Legislature Online vote-information guide",
+      "url": "https://capitol.texas.gov/help/findvoteinfo.aspx",
+      "accessedAt": "2026-08-08",
+      "supports": [
+        "voting_record_method"
+      ]
+    },
+    {
+      "title": "Texas Ethics Commission campaign-finance search",
+      "url": "https://www.ethics.state.tx.us/search/cf/",
+      "accessedAt": "2026-08-08",
+      "supports": [
+        "campaign_finance_source_path"
+      ]
+    },
+    {
+      "title": "Texas Secretary of State election archive",
+      "url": "https://www.sos.state.tx.us/elections/historical/index.shtml",
+      "accessedAt": "2026-08-08",
+      "supports": [
+        "term",
+        "election_history"
+      ]
+    },
+    {
+      "title": "Texas Tribune elected-official directory",
+      "url": "https://directory.texastribune.org/suleman-lalani/",
+      "accessedAt": "2026-08-08",
+      "supports": [
+        "portrait",
+        "party",
+        "next_election"
+      ]
+    },
+    {
+      "title": "Texas Tribune site terms",
+      "url": "https://www.texastribune.org/about/terms-of-service/",
+      "accessedAt": "2026-08-08",
+      "supports": [
+        "portrait_provenance"
+      ]
     }
   ],
-  "lastVerifiedAt": "2026-04-27"
+  "lastVerifiedAt": "2026-08-08",
+  "photoRights": "Stored with source attribution and site-terms provenance; reuse rights should be rechecked before redistribution outside RepWatchr.",
+  "nextElection": "2026 general election",
+  "committeeAssignments": [
+    "Health Care Affordability, Select",
+    "Higher Education",
+    "Land & Resource Management — Vice Chair"
+  ],
+  "accountabilityNotes": [
+    "Positive work and constituent benefit claims remain pending editorial review until a primary record and a response or independent context are attached.",
+    "Criticism and controversies remain pending editorial review until each claim is substantiated, attributed, dated, and paired with the official's response when available.",
+    "Campaign-finance totals, donors, industries/PACs, and expenditures remain unpublished until the correct filer and reporting period are matched to Texas Ethics Commission records.",
+    "Constituent sentiment remains unpublished until the sample discloses its collection window, source mix, jurisdiction-confidence method, duplicate/bot filtering, sample size, and uncertainty.",
+    "A constitutional-alignment score is not published without cited votes, a public rubric, applicable constitutional provisions, uncertainty, and a RepWatchr-analysis disclaimer."
+  ],
+  "fieldFreshness": {
+    "identity": {
+      "status": "current",
+      "reviewedAt": "2026-08-08",
+      "sourceUrl": "https://house.texas.gov/api/getMembers"
+    },
+    "portrait": {
+      "status": "current",
+      "reviewedAt": "2026-08-08",
+      "sourceUrl": "https://directory.texastribune.org/static/images/headshots/Suleman%20Lalani%20TT.jpg",
+      "note": "686x960; 55752 bytes"
+    },
+    "contact": {
+      "status": "current",
+      "reviewedAt": "2026-08-08",
+      "sourceUrl": "https://house.texas.gov/members/4285"
+    },
+    "term": {
+      "status": "current",
+      "reviewedAt": "2026-08-08",
+      "sourceUrl": "https://directory.texastribune.org/suleman-lalani/"
+    },
+    "assignments": {
+      "status": "current",
+      "reviewedAt": "2026-08-08",
+      "sourceUrl": "https://house.texas.gov/members/4285/committees"
+    },
+    "legislation": {
+      "status": "source_path_only",
+      "reviewedAt": "2026-08-08",
+      "sourceUrl": "https://capitol.texas.gov/reports/report.aspx?ID=author&LegSess=89R&Code=A4285",
+      "note": "Individual bills require record-level editorial review."
+    },
+    "votingRecord": {
+      "status": "source_path_only",
+      "reviewedAt": "2026-08-08",
+      "sourceUrl": "https://capitol.texas.gov/help/findvoteinfo.aspx",
+      "note": "Vote rows require official journals or reports."
+    },
+    "campaignFinance": {
+      "status": "pending_review",
+      "reviewedAt": "2026-08-08",
+      "sourceUrl": "https://www.ethics.state.tx.us/search/cf/",
+      "note": "Filer and reporting period are not yet matched."
+    },
+    "positiveWork": {
+      "status": "pending_review",
+      "reviewedAt": "2026-08-08",
+      "sourceUrl": "https://house.texas.gov/members/4285/biography"
+    },
+    "criticism": {
+      "status": "pending_review",
+      "reviewedAt": "2026-08-08",
+      "sourceUrl": "https://house.texas.gov/members/4285"
+    },
+    "sentiment": {
+      "status": "pending_review",
+      "reviewedAt": "2026-08-08",
+      "sourceUrl": "https://house.texas.gov/members/4285"
+    },
+    "constitutionalAlignment": {
+      "status": "pending_review",
+      "reviewedAt": "2026-08-08",
+      "sourceUrl": "https://capitol.texas.gov/help/findvoteinfo.aspx"
+    }
+  }
 }
