@@ -3,9 +3,9 @@
   "name": "Hubert Vo",
   "firstName": "Hubert",
   "lastName": "Vo",
-  "photo": "/images/officials/state-house/hubert-vo.jpg",
-  "photoSourceUrl": "https://house.texas.gov/images/members/4900.jpg?v=1",
-  "photoCredit": "Official Texas House of Representatives photo",
+  "photo": "/images/officials/texas-accountability/hubert-vo.jpg",
+  "photoSourceUrl": "https://directory.texastribune.org/static/images/headshots/Hubert-Vo.jpg",
+  "photoCredit": "Texas Tribune elected-officials directory portrait; identity cross-checked against the official Texas House roster.",
   "party": "D",
   "level": "state",
   "position": "State Representative",
@@ -15,30 +15,211 @@
     "Texas"
   ],
   "termStart": "2005-01-11",
-  "termEnd": "Current legislative term pending source review",
+  "termEnd": "2026-12-31",
   "contactInfo": {
-    "office": "Room 4N.8, P.O. Box 12910, Austin, TX 78711",
+    "office": "Room 4N.8 P.O. Box 12910 Austin, Texas 78",
     "phone": "512-463-0568",
     "email": "hubert.vo@house.texas.gov",
     "website": "https://house.texas.gov/members/4900"
   },
-  "bio": "Hubert Vo serves as State Representative for Texas House of Representatives District 149. This RepWatchr starter profile is sourced from official Texas Legislature profile data and OpenStates public records.",
+  "bio": "State Representative Hubert Vo proudly represents District 149 in Harris County. District 149 is located in southwest Houston encompassing most of Alief, and parts of West Houston and Katy. He has been part of the Alief community for over 30 years, Hubert Vo currently serves on the Alief Super Neighborhood Council. In the private sector, Hubert Vo is a successful businessman, real estate developer and entrepreneur in the Houston area. After attending the University of Houston during the daytime and as a machinist in the evenings, Hubert received his Bachelor of Science degree in Mechanical Engineering. Hubert has devoted his time, inside and outside of the Legislature, as an advocate for education, health care, public safety and economic.",
   "campaignPromises": [],
   "reviewStatus": "source_seeded",
   "state": "TX",
   "sourceLinks": [
     {
-      "title": "Official Texas House of Representatives profile",
-      "url": "https://house.texas.gov/members/4900"
+      "title": "Official Texas House member page",
+      "url": "https://house.texas.gov/members/4900",
+      "accessedAt": "2026-08-09",
+      "supports": [
+        "identity",
+        "office",
+        "contact",
+        "legislation_paths"
+      ]
     },
     {
-      "title": "OpenStates public people record",
-      "url": "https://raw.githubusercontent.com/openstates/people/main/data/tx/legislature/Hubert-Vo-5c2743d2-fe0e-41d6-969d-de830d5787f8.yml"
+      "title": "Official current Texas House roster API",
+      "url": "https://house.texas.gov/api/getMembers",
+      "accessedAt": "2026-08-09",
+      "supports": [
+        "current_office",
+        "district",
+        "identity"
+      ]
     },
     {
-      "title": "Official profile photo source",
-      "url": "https://house.texas.gov/images/members/4900.jpg?v=1"
+      "title": "Official Texas House member directory",
+      "url": "https://house.texas.gov/members",
+      "accessedAt": "2026-08-09",
+      "supports": [
+        "current_office",
+        "district"
+      ]
+    },
+    {
+      "title": "Official Texas House biography",
+      "url": "https://house.texas.gov/members/4900/biography",
+      "accessedAt": "2026-08-09",
+      "supports": [
+        "biography"
+      ]
+    },
+    {
+      "title": "Official Texas House committee assignments",
+      "url": "https://house.texas.gov/members/4900/committees",
+      "accessedAt": "2026-08-09",
+      "supports": [
+        "committees",
+        "leadership"
+      ]
+    },
+    {
+      "title": "Texas Legislature Online authored bills",
+      "url": "https://capitol.texas.gov/reports/report.aspx?ID=author&LegSess=89R&Code=A4900",
+      "accessedAt": "2026-08-09",
+      "supports": [
+        "sponsored_legislation"
+      ]
+    },
+    {
+      "title": "Texas Legislature Online sponsored bills",
+      "url": "https://capitol.texas.gov/reports/report.aspx?ID=sponsor&LegSess=89R&Code=A4900",
+      "accessedAt": "2026-08-09",
+      "supports": [
+        "sponsored_legislation"
+      ]
+    },
+    {
+      "title": "Texas Legislature Online vote-information guide",
+      "url": "https://capitol.texas.gov/help/findvoteinfo.aspx",
+      "accessedAt": "2026-08-09",
+      "supports": [
+        "voting_record_method"
+      ]
+    },
+    {
+      "title": "Texas Ethics Commission campaign-finance search",
+      "url": "https://www.ethics.state.tx.us/search/cf/",
+      "accessedAt": "2026-08-09",
+      "supports": [
+        "campaign_finance_source_path"
+      ]
+    },
+    {
+      "title": "Texas Secretary of State election archive",
+      "url": "https://www.sos.state.tx.us/elections/historical/index.shtml",
+      "accessedAt": "2026-08-09",
+      "supports": [
+        "term",
+        "election_history"
+      ]
+    },
+    {
+      "title": "Texas Tribune elected-official directory",
+      "url": "https://directory.texastribune.org/hubert-vo/",
+      "accessedAt": "2026-08-09",
+      "supports": [
+        "party",
+        "next_election"
+      ]
+    },
+    {
+      "title": "Texas Tribune site terms",
+      "url": "https://www.texastribune.org/about/terms-of-service/",
+      "accessedAt": "2026-08-09",
+      "supports": [
+        "portrait_provenance"
+      ]
+    },
+    {
+      "title": "Stored portrait file",
+      "url": "https://directory.texastribune.org/static/images/headshots/Hubert-Vo.jpg",
+      "accessedAt": "2026-08-09",
+      "supports": [
+        "portrait",
+        "portrait_provenance"
+      ]
     }
   ],
-  "lastVerifiedAt": "2026-04-27"
+  "lastVerifiedAt": "2026-08-09",
+  "photoRights": "Stored with source attribution and site-terms provenance; reuse rights should be rechecked before redistribution outside RepWatchr.",
+  "nextElection": "2026 general election",
+  "committeeAssignments": [
+    "Insurance — Vice Chair",
+    "Pensions, Investments & Financial Services"
+  ],
+  "accountabilityNotes": [
+    "Positive work and constituent benefit claims remain pending editorial review until a primary record and a response or independent context are attached.",
+    "Criticism and controversies remain pending editorial review until each claim is substantiated, attributed, dated, and paired with the official's response when available.",
+    "Campaign-finance totals, donors, industries/PACs, and expenditures remain unpublished until the correct filer and reporting period are matched to Texas Ethics Commission records.",
+    "Constituent sentiment remains unpublished until the sample discloses its collection window, source mix, jurisdiction-confidence method, duplicate/bot filtering, sample size, and uncertainty.",
+    "A constitutional-alignment score is not published without cited votes, a public rubric, applicable constitutional provisions, uncertainty, and a RepWatchr-analysis disclaimer."
+  ],
+  "fieldFreshness": {
+    "identity": {
+      "status": "current",
+      "reviewedAt": "2026-08-09",
+      "sourceUrl": "https://house.texas.gov/api/getMembers"
+    },
+    "portrait": {
+      "status": "current",
+      "reviewedAt": "2026-08-09",
+      "sourceUrl": "https://directory.texastribune.org/static/images/headshots/Hubert-Vo.jpg",
+      "note": "1000x1000; stored portrait"
+    },
+    "contact": {
+      "status": "current",
+      "reviewedAt": "2026-08-09",
+      "sourceUrl": "https://house.texas.gov/members/4900"
+    },
+    "term": {
+      "status": "current",
+      "reviewedAt": "2026-08-09",
+      "sourceUrl": "https://directory.texastribune.org/hubert-vo/"
+    },
+    "assignments": {
+      "status": "current",
+      "reviewedAt": "2026-08-09",
+      "sourceUrl": "https://house.texas.gov/members/4900/committees"
+    },
+    "legislation": {
+      "status": "source_path_only",
+      "reviewedAt": "2026-08-09",
+      "sourceUrl": "https://capitol.texas.gov/reports/report.aspx?ID=author&LegSess=89R&Code=A4900",
+      "note": "Individual bills require record-level editorial review."
+    },
+    "votingRecord": {
+      "status": "source_path_only",
+      "reviewedAt": "2026-08-09",
+      "sourceUrl": "https://capitol.texas.gov/help/findvoteinfo.aspx",
+      "note": "Vote rows require official journals or reports."
+    },
+    "campaignFinance": {
+      "status": "pending_review",
+      "reviewedAt": "2026-08-09",
+      "sourceUrl": "https://www.ethics.state.tx.us/search/cf/",
+      "note": "Filer and reporting period are not yet matched."
+    },
+    "positiveWork": {
+      "status": "pending_review",
+      "reviewedAt": "2026-08-09",
+      "sourceUrl": "https://house.texas.gov/members/4900/biography"
+    },
+    "criticism": {
+      "status": "pending_review",
+      "reviewedAt": "2026-08-09",
+      "sourceUrl": "https://house.texas.gov/members/4900"
+    },
+    "sentiment": {
+      "status": "pending_review",
+      "reviewedAt": "2026-08-09",
+      "sourceUrl": "https://house.texas.gov/members/4900"
+    },
+    "constitutionalAlignment": {
+      "status": "pending_review",
+      "reviewedAt": "2026-08-09",
+      "sourceUrl": "https://capitol.texas.gov/help/findvoteinfo.aspx"
+    }
+  }
 }

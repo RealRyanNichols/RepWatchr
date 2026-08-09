@@ -3,9 +3,9 @@
   "name": "Mark Dorazio",
   "firstName": "Mark",
   "lastName": "Dorazio",
-  "photo": "/images/officials/state-house/mark-dorazio.jpg",
-  "photoSourceUrl": "https://house.texas.gov/images/members/4145.jpg?v=2",
-  "photoCredit": "Official Texas House of Representatives photo",
+  "photo": "/images/officials/texas-accountability/mark-dorazio.jpg",
+  "photoSourceUrl": "https://upload.wikimedia.org/wikipedia/commons/7/79/Mark_Dorazio_by_Gage_Skidmore.jpg",
+  "photoCredit": "Gage Skidmore, CC BY-SA 3.0, via Wikimedia Commons; unmodified.",
   "party": "R",
   "level": "state",
   "position": "State Representative",
@@ -15,30 +15,212 @@
     "Texas"
   ],
   "termStart": "2023-01-10",
-  "termEnd": "Current legislative term pending source review",
+  "termEnd": "2026-12-31",
   "contactInfo": {
-    "office": "Room E1.406, P.O. Box 12910, Austin, TX 78711",
+    "office": "Room E1.406 P.O. Box 12910 Austin, Texas 78",
     "phone": "512-463-0646",
     "email": "mark.dorazio@house.texas.gov",
-    "website": "https://house.texas.gov/members/122"
+    "website": "https://house.texas.gov/members/4145"
   },
-  "bio": "Mark Dorazio serves as State Representative for Texas House of Representatives District 122. This RepWatchr starter profile is sourced from official Texas Legislature profile data and OpenStates public records.",
+  "bio": "Mark Dorazio has lived a principled life of service dedicated to God, family, community, and conservative values. Mark was the 4th boy, born to a large Italian family of 10 children in Derry, PA. He started working and paying rent at age 12 delivering the local newspaper. He followed his oldest brother to Lubbock, TX out of high school, and apprenticed in construction under three engineers that taught at Texas Tech University. He met his wife, Monica in El Paso, and they have been married for 40 adventurous years. They raised four children, and now enjoy their eleven grandchildren. Together they opened their own construction company, Dorazio Enterprises, Inc., after moving to San Antonio. Over the last 38 years Mark and Monica have grown their.",
   "campaignPromises": [],
   "reviewStatus": "source_seeded",
   "state": "TX",
   "sourceLinks": [
     {
-      "title": "Official Texas House of Representatives profile",
-      "url": "https://house.texas.gov/members/122"
+      "title": "Official Texas House member page",
+      "url": "https://house.texas.gov/members/4145",
+      "accessedAt": "2026-08-09",
+      "supports": [
+        "identity",
+        "office",
+        "contact",
+        "legislation_paths"
+      ]
     },
     {
-      "title": "OpenStates public people record",
-      "url": "https://raw.githubusercontent.com/openstates/people/main/data/tx/legislature/Mark-Dorazio-2c0a4352-9871-4122-97fd-832ec998e907.yml"
+      "title": "Official current Texas House roster API",
+      "url": "https://house.texas.gov/api/getMembers",
+      "accessedAt": "2026-08-09",
+      "supports": [
+        "current_office",
+        "district",
+        "identity"
+      ]
     },
     {
-      "title": "Official profile photo source",
-      "url": "https://house.texas.gov/images/members/4145.jpg?v=2"
+      "title": "Official Texas House member directory",
+      "url": "https://house.texas.gov/members",
+      "accessedAt": "2026-08-09",
+      "supports": [
+        "current_office",
+        "district"
+      ]
+    },
+    {
+      "title": "Official Texas House biography",
+      "url": "https://house.texas.gov/members/4145/biography",
+      "accessedAt": "2026-08-09",
+      "supports": [
+        "biography"
+      ]
+    },
+    {
+      "title": "Official Texas House committee assignments",
+      "url": "https://house.texas.gov/members/4145/committees",
+      "accessedAt": "2026-08-09",
+      "supports": [
+        "committees",
+        "leadership"
+      ]
+    },
+    {
+      "title": "Texas Legislature Online authored bills",
+      "url": "https://capitol.texas.gov/reports/report.aspx?ID=author&LegSess=89R&Code=A4145",
+      "accessedAt": "2026-08-09",
+      "supports": [
+        "sponsored_legislation"
+      ]
+    },
+    {
+      "title": "Texas Legislature Online sponsored bills",
+      "url": "https://capitol.texas.gov/reports/report.aspx?ID=sponsor&LegSess=89R&Code=A4145",
+      "accessedAt": "2026-08-09",
+      "supports": [
+        "sponsored_legislation"
+      ]
+    },
+    {
+      "title": "Texas Legislature Online vote-information guide",
+      "url": "https://capitol.texas.gov/help/findvoteinfo.aspx",
+      "accessedAt": "2026-08-09",
+      "supports": [
+        "voting_record_method"
+      ]
+    },
+    {
+      "title": "Texas Ethics Commission campaign-finance search",
+      "url": "https://www.ethics.state.tx.us/search/cf/",
+      "accessedAt": "2026-08-09",
+      "supports": [
+        "campaign_finance_source_path"
+      ]
+    },
+    {
+      "title": "Texas Secretary of State election archive",
+      "url": "https://www.sos.state.tx.us/elections/historical/index.shtml",
+      "accessedAt": "2026-08-09",
+      "supports": [
+        "term",
+        "election_history"
+      ]
+    },
+    {
+      "title": "Texas Tribune elected-official directory",
+      "url": "https://directory.texastribune.org/mark-dorazio/",
+      "accessedAt": "2026-08-09",
+      "supports": [
+        "party",
+        "next_election"
+      ]
+    },
+    {
+      "title": "Stored portrait source and rights provenance",
+      "url": "https://commons.wikimedia.org/wiki/File:Mark_Dorazio_by_Gage_Skidmore.jpg",
+      "accessedAt": "2026-08-09",
+      "supports": [
+        "portrait",
+        "portrait_provenance"
+      ]
+    },
+    {
+      "title": "Creative Commons license",
+      "url": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "accessedAt": "2026-08-09",
+      "supports": [
+        "portrait_provenance"
+      ]
     }
   ],
-  "lastVerifiedAt": "2026-04-27"
+  "lastVerifiedAt": "2026-08-09",
+  "photoRights": "Creative Commons Attribution-ShareAlike 3.0 Unported (CC BY-SA 3.0); attribution, license, and source retained.",
+  "nextElection": "2026 general election",
+  "committeeAssignments": [
+    "Homeland Security, Public Safety & Veterans' Affairs",
+    "S/C on Defense & Veterans' Affairs — Vice Chair",
+    "Human Services"
+  ],
+  "accountabilityNotes": [
+    "Positive work and constituent benefit claims remain pending editorial review until a primary record and a response or independent context are attached.",
+    "Criticism and controversies remain pending editorial review until each claim is substantiated, attributed, dated, and paired with the official's response when available.",
+    "Campaign-finance totals, donors, industries/PACs, and expenditures remain unpublished until the correct filer and reporting period are matched to Texas Ethics Commission records.",
+    "Constituent sentiment remains unpublished until the sample discloses its collection window, source mix, jurisdiction-confidence method, duplicate/bot filtering, sample size, and uncertainty.",
+    "A constitutional-alignment score is not published without cited votes, a public rubric, applicable constitutional provisions, uncertainty, and a RepWatchr-analysis disclaimer."
+  ],
+  "fieldFreshness": {
+    "identity": {
+      "status": "current",
+      "reviewedAt": "2026-08-09",
+      "sourceUrl": "https://house.texas.gov/api/getMembers"
+    },
+    "portrait": {
+      "status": "current",
+      "reviewedAt": "2026-08-09",
+      "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/7/79/Mark_Dorazio_by_Gage_Skidmore.jpg",
+      "note": "3000x3882; stored portrait"
+    },
+    "contact": {
+      "status": "current",
+      "reviewedAt": "2026-08-09",
+      "sourceUrl": "https://house.texas.gov/members/4145"
+    },
+    "term": {
+      "status": "current",
+      "reviewedAt": "2026-08-09",
+      "sourceUrl": "https://directory.texastribune.org/mark-dorazio/"
+    },
+    "assignments": {
+      "status": "current",
+      "reviewedAt": "2026-08-09",
+      "sourceUrl": "https://house.texas.gov/members/4145/committees"
+    },
+    "legislation": {
+      "status": "source_path_only",
+      "reviewedAt": "2026-08-09",
+      "sourceUrl": "https://capitol.texas.gov/reports/report.aspx?ID=author&LegSess=89R&Code=A4145",
+      "note": "Individual bills require record-level editorial review."
+    },
+    "votingRecord": {
+      "status": "source_path_only",
+      "reviewedAt": "2026-08-09",
+      "sourceUrl": "https://capitol.texas.gov/help/findvoteinfo.aspx",
+      "note": "Vote rows require official journals or reports."
+    },
+    "campaignFinance": {
+      "status": "pending_review",
+      "reviewedAt": "2026-08-09",
+      "sourceUrl": "https://www.ethics.state.tx.us/search/cf/",
+      "note": "Filer and reporting period are not yet matched."
+    },
+    "positiveWork": {
+      "status": "pending_review",
+      "reviewedAt": "2026-08-09",
+      "sourceUrl": "https://house.texas.gov/members/4145/biography"
+    },
+    "criticism": {
+      "status": "pending_review",
+      "reviewedAt": "2026-08-09",
+      "sourceUrl": "https://house.texas.gov/members/4145"
+    },
+    "sentiment": {
+      "status": "pending_review",
+      "reviewedAt": "2026-08-09",
+      "sourceUrl": "https://house.texas.gov/members/4145"
+    },
+    "constitutionalAlignment": {
+      "status": "pending_review",
+      "reviewedAt": "2026-08-09",
+      "sourceUrl": "https://capitol.texas.gov/help/findvoteinfo.aspx"
+    }
+  }
 }
