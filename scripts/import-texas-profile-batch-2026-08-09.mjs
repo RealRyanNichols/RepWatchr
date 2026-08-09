@@ -79,7 +79,7 @@ const senateMembers = [
   { district: 31, slug: "kevin-sparks" },
 ];
 
-// The August 8 checkpoint continues the House sequence. Senate profiles were
+// The August 9 checkpoint continues the House sequence. Senate profiles were
 // completed and published in the August 7 batch, so keep them out of this run.
 senateMembers.length = 0;
 
@@ -219,9 +219,10 @@ function parseHouseContact(html, fallback = {}) {
   const text = textFromHtml(block);
   const phone = text.match(/\(?(\d{3})\)?[ -](\d{3})[ -](\d{4})/)?.slice(1).join("-");
   const office = text.match(/Capitol Address:\s*(.*?)\s*(?:\(\d{3}\)|\d{3}-\d{3})/i)?.[1];
+  const completeOffice = office && /\b\d{5}(?:-\d{4})?$/.test(office) ? office : null;
   return {
     ...fallback,
-    ...(office ? { office } : {}),
+    ...(completeOffice ? { office: completeOffice } : {}),
     ...(phone ? { phone } : {}),
   };
 }

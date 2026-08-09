@@ -38,6 +38,7 @@ assert(paths.length === 25, `Expected 25 profile paths, found ${paths.length}`);
 for (const path of paths) {
   const profile = JSON.parse(readFileSync(path, "utf8"));
   assert(profile.name && profile.position && profile.jurisdiction, `${path}: identity incomplete`);
+  assert(/\b\d{5}(?:-\d{4})?$/.test(profile.contactInfo?.office ?? ""), `${profile.id}: office address ZIP is incomplete`);
   assert(/^\d{4}-12-31$/.test(profile.termEnd), `${profile.id}: term end is not source resolved`);
   assert(/^\d{4} general election$/.test(profile.nextElection), `${profile.id}: next election missing`);
   assert(profile.reviewStatus === "source_seeded", `${profile.id}: must remain source_seeded`);
