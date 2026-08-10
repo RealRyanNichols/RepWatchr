@@ -3,9 +3,9 @@
   "name": "Christi Craddick",
   "firstName": "Christi",
   "lastName": "Craddick",
-  "photo": "https://directory.texastribune.org/static/images/headshots/christi-craddick.jpg",
-  "photoSourceUrl": "https://directory.texastribune.org/christi-craddick/",
-  "photoCredit": "Texas Tribune elected-officials directory portrait; identity cross-checked against the official Railroad Commission roster.",
+  "photo": "/images/officials/texas-accountability/tx-rrc-christi-craddick.jpg",
+  "photoSourceUrl": "https://directory.texastribune.org/static/images/headshots/christi-craddick.jpg",
+  "photoCredit": "Published Texas Tribune elected-official directory portrait.",
   "party": "R",
   "level": "state",
   "position": "Railroad Commissioner",
@@ -17,37 +17,199 @@
   "termStart": "2025-01-01",
   "termEnd": "2030-12-31",
   "contactInfo": {
+    "office": "Railroad Commission of Texas, P.O. Box 12967, Austin, TX 78711-2967",
+    "phone": "512-463-7140",
+    "email": "Christi.Craddick@rrc.texas.gov",
     "website": "https://www.rrc.texas.gov/about-us/commissioners/christi-craddick/"
   },
-  "bio": "Christi Craddick is a current statewide elected member of the Railroad Commission of Texas. RepWatchr keeps regulatory actions, campaign finance, and public sentiment visibly separate and unrated until source records are reviewed.",
+  "bio": "Christi Craddick is a current statewide elected member of the Railroad Commission of Texas. RepWatchr evaluates regulatory actions and public meeting records separately from campaign finance and public opinion.",
   "campaignPromises": [],
   "reviewStatus": "source_seeded",
   "state": "TX",
   "sourceLinks": [
     {
-      "title": "Official commissioner biography",
-      "url": "https://www.rrc.texas.gov/about-us/commissioners/christi-craddick/"
+      "title": "Official Railroad Commission commissioner biography",
+      "url": "https://www.rrc.texas.gov/about-us/commissioners/christi-craddick/",
+      "accessedAt": "2026-08-10",
+      "supports": [
+        "identity",
+        "office",
+        "biography"
+      ]
     },
     {
-      "title": "Official current-commissioner roster",
-      "url": "https://www.rrc.texas.gov/about-us/commissioners/"
+      "title": "Official Railroad Commission commissioner roster",
+      "url": "https://www.rrc.texas.gov/about-us/commissioners/",
+      "accessedAt": "2026-08-10",
+      "supports": [
+        "current_office",
+        "leadership"
+      ]
     },
     {
-      "title": "Texas Tribune elected-official directory and portrait",
-      "url": "https://directory.texastribune.org/christi-craddick/"
+      "title": "Official commissioner staff and contact page",
+      "url": "https://www.rrc.texas.gov/about-us/commissioners/christi-craddick/staff/",
+      "accessedAt": "2026-08-10",
+      "supports": [
+        "contact",
+        "office"
+      ]
     },
     {
-      "title": "Official Railroad Commission open meetings",
-      "url": "https://www.rrc.texas.gov/general-counsel/open-meetings/"
+      "title": "Railroad Commission open meetings",
+      "url": "https://www.rrc.texas.gov/general-counsel/open-meetings/",
+      "accessedAt": "2026-08-10",
+      "supports": [
+        "official_record",
+        "meetings",
+        "votes"
+      ]
     },
     {
-      "title": "Texas campaign-finance disclosure search",
-      "url": "https://www.ethics.state.tx.us/search/cf/"
+      "title": "Railroad Commission online research queries",
+      "url": "https://www.rrc.texas.gov/resource-center/research/research-queries/",
+      "accessedAt": "2026-08-10",
+      "supports": [
+        "regulatory_record",
+        "dockets"
+      ]
     },
     {
-      "title": "Texas election-results archive",
-      "url": "https://www.sos.state.tx.us/elections/historical/index.shtml"
+      "title": "Railroad Commission rules",
+      "url": "https://www.rrc.texas.gov/general-counsel/rules/",
+      "accessedAt": "2026-08-10",
+      "supports": [
+        "rulemaking_record"
+      ]
+    },
+    {
+      "title": "Texas Secretary of State statewide elected-official roster",
+      "url": "https://www.sos.texas.gov/elections/voter/elected.shtml",
+      "accessedAt": "2026-08-10",
+      "supports": [
+        "elected_status",
+        "party",
+        "term"
+      ]
+    },
+    {
+      "title": "Texas Secretary of State election-results archive",
+      "url": "https://www.sos.state.tx.us/elections/historical/index.shtml",
+      "accessedAt": "2026-08-10",
+      "supports": [
+        "election_history",
+        "term"
+      ]
+    },
+    {
+      "title": "Texas Ethics Commission campaign-finance search",
+      "url": "https://www.ethics.state.tx.us/search/cf/",
+      "accessedAt": "2026-08-10",
+      "supports": [
+        "campaign_finance_source_path"
+      ]
+    },
+    {
+      "title": "Texas Constitution, Article XVI",
+      "url": "https://statutes.capitol.texas.gov/Docs/CN/htm/CN.16.htm",
+      "accessedAt": "2026-08-10",
+      "supports": [
+        "office_structure"
+      ]
+    },
+    {
+      "title": "Published portrait image",
+      "url": "https://directory.texastribune.org/static/images/headshots/christi-craddick.jpg",
+      "accessedAt": "2026-08-10",
+      "supports": [
+        "portrait",
+        "portrait_provenance"
+      ]
     }
   ],
-  "lastVerifiedAt": "2026-08-02"
+  "lastVerifiedAt": "2026-08-10",
+  "photoRights": "Editorial-use published portrait; source provenance is retained and reuse remains governed by the publisher's terms.",
+  "nextElection": "2030 general election",
+  "committeeAssignments": [],
+  "accountabilityNotes": [
+    "Role-compatible accountability is based on official actions, orders, meetings, and agency records; legislative roll calls are not substituted where they do not apply.",
+    "Positive-work claims remain pending until a primary record, date, measurable result, and independent context are attached.",
+    "Criticism and controversies remain pending until each claim is substantiated, attributed, dated, and paired with the official's response when available.",
+    "Campaign-finance totals, donors, industries/PACs, and expenditures remain unpublished until the correct filer and reporting period are matched.",
+    "Constituent sentiment remains unpublished until the collection window, source mix, jurisdiction-confidence method, duplicate/bot filtering, sample size, and uncertainty are disclosed.",
+    "No constitutional-alignment score is published without cited official actions, a transparent rubric, applicable provisions, uncertainty, and a RepWatchr-analysis/non-legal-judgment disclaimer."
+  ],
+  "fieldFreshness": {
+    "identity": {
+      "status": "current",
+      "reviewedAt": "2026-08-10",
+      "sourceUrl": "https://www.rrc.texas.gov/about-us/commissioners/christi-craddick/"
+    },
+    "portrait": {
+      "status": "current",
+      "reviewedAt": "2026-08-10",
+      "sourceUrl": "https://directory.texastribune.org/static/images/headshots/christi-craddick.jpg",
+      "note": "Stored portrait; minimum dimension verified at 500 pixels."
+    },
+    "contact": {
+      "status": "current",
+      "reviewedAt": "2026-08-10",
+      "sourceUrl": "https://www.rrc.texas.gov/about-us/commissioners/christi-craddick/staff/"
+    },
+    "term": {
+      "status": "current",
+      "reviewedAt": "2026-08-10",
+      "sourceUrl": "https://www.sos.texas.gov/elections/voter/elected.shtml"
+    },
+    "assignments": {
+      "status": "not_applicable",
+      "reviewedAt": "2026-08-10",
+      "sourceUrl": "https://www.rrc.texas.gov/about-us/commissioners/christi-craddick/",
+      "note": "No standing legislative committee assignment applies to this statewide regulatory office."
+    },
+    "legislation": {
+      "status": "not_applicable",
+      "reviewedAt": "2026-08-10",
+      "sourceUrl": "https://www.rrc.texas.gov/general-counsel/open-meetings/",
+      "note": "Sponsored legislation is not a function of this statewide regulatory office."
+    },
+    "votingRecord": {
+      "status": "not_applicable",
+      "reviewedAt": "2026-08-10",
+      "sourceUrl": "https://www.rrc.texas.gov/general-counsel/open-meetings/",
+      "note": "Legislative roll calls do not apply; the role-compatible official record is linked separately."
+    },
+    "officialRecord": {
+      "status": "source_path_only",
+      "reviewedAt": "2026-08-10",
+      "sourceUrl": "https://www.rrc.texas.gov/general-counsel/open-meetings/",
+      "note": "Individual actions require record-level editorial review before evaluation."
+    },
+    "campaignFinance": {
+      "status": "pending_review",
+      "reviewedAt": "2026-08-10",
+      "sourceUrl": "https://www.ethics.state.tx.us/search/cf/",
+      "note": "Filer identity and reporting period are not yet matched."
+    },
+    "positiveWork": {
+      "status": "pending_review",
+      "reviewedAt": "2026-08-10",
+      "sourceUrl": "https://www.rrc.texas.gov/about-us/commissioners/christi-craddick/"
+    },
+    "criticism": {
+      "status": "pending_review",
+      "reviewedAt": "2026-08-10",
+      "sourceUrl": "https://www.rrc.texas.gov/about-us/commissioners/christi-craddick/"
+    },
+    "sentiment": {
+      "status": "pending_review",
+      "reviewedAt": "2026-08-10",
+      "sourceUrl": "https://www.rrc.texas.gov/about-us/commissioners/christi-craddick/"
+    },
+    "constitutionalAlignment": {
+      "status": "pending_review",
+      "reviewedAt": "2026-08-10",
+      "sourceUrl": "https://statutes.capitol.texas.gov/Docs/CN/htm/CN.5.htm"
+    }
+  }
 }

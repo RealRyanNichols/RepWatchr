@@ -14,8 +14,8 @@
   "termStart": "2018-01",
   "termEnd": "2030-12-31",
   "contactInfo": {
-    "office": "Supreme Court Building, 201 W. 14th Street, Room 104, Austin, Texas 78701",
-    "phone": "512-463-1344",
+    "office": "Supreme Court Building, 201 W. 14th Street, Room 104, Austin, TX 78701",
+    "phone": "512-463-1312",
     "website": "https://www.txcourts.gov/supreme/about-the-court/justices/chief-justice-jimmy-blacklock/",
     "email": "james.blacklock@txcourts.gov"
   },
@@ -25,9 +25,9 @@
   "state": "TX",
   "sourceLinks": [
     {
-      "title": "Official Texas Judicial Branch justice biography",
+      "title": "Official Supreme Court of Texas biography",
       "url": "https://www.txcourts.gov/supreme/about-the-court/justices/chief-justice-jimmy-blacklock/",
-      "accessedAt": "2026-08-03",
+      "accessedAt": "2026-08-10",
       "supports": [
         "identity",
         "office",
@@ -35,114 +35,193 @@
       ]
     },
     {
-      "title": "Official Supreme Court of Texas justice roster",
-      "url": "https://www.txcourts.gov/supreme/about-the-court/justices/",
-      "accessedAt": "2026-08-03",
+      "title": "Official current Supreme Court of Texas roster",
+      "url": "https://www.txcourts.gov/supreme/about-the-court/",
+      "accessedAt": "2026-08-10",
       "supports": [
         "current_office",
-        "place"
+        "place",
+        "leadership"
       ]
     },
     {
-      "title": "Official Supreme Court orders and opinions",
-      "url": "https://www.txcourts.gov/supreme/orders-opinions/",
-      "accessedAt": "2026-08-03",
+      "title": "Official Supreme Court of Texas contact page",
+      "url": "https://www.txcourts.gov/supreme/contact-us/",
+      "accessedAt": "2026-08-10",
       "supports": [
-        "judicial_record"
+        "contact",
+        "office"
       ]
     },
     {
-      "title": "Official appellate case search",
-      "url": "https://search.txcourts.gov/CaseSearch.aspx?coa=cossup",
-      "accessedAt": "2026-08-03",
+      "title": "Official Texas appellate case and opinion search",
+      "url": "https://search.txcourts.gov/",
+      "accessedAt": "2026-08-10",
       "supports": [
+        "judicial_record",
+        "opinions",
         "case_record"
       ]
     },
     {
-      "title": "Texas Ethics Commission campaign-finance search",
-      "url": "https://www.ethics.state.tx.us/search/cf/",
-      "accessedAt": "2026-08-03",
+      "title": "Supreme Court orders and opinions",
+      "url": "https://www.txcourts.gov/supreme/orders-opinions/",
+      "accessedAt": "2026-08-10",
       "supports": [
-        "campaign_finance_source_path"
+        "judicial_record",
+        "opinions",
+        "orders"
+      ]
+    },
+    {
+      "title": "Supreme Court oral arguments",
+      "url": "https://www.txcourts.gov/supreme/oral-arguments/",
+      "accessedAt": "2026-08-10",
+      "supports": [
+        "oral_arguments",
+        "judicial_record"
+      ]
+    },
+    {
+      "title": "Texas Secretary of State statewide elected-official roster",
+      "url": "https://www.sos.texas.gov/elections/voter/elected.shtml",
+      "accessedAt": "2026-08-10",
+      "supports": [
+        "elected_status",
+        "party",
+        "term"
       ]
     },
     {
       "title": "Texas Secretary of State election-results archive",
       "url": "https://www.sos.state.tx.us/elections/historical/index.shtml",
-      "accessedAt": "2026-08-03",
+      "accessedAt": "2026-08-10",
       "supports": [
-        "term",
-        "election_history"
+        "election_history",
+        "term"
       ]
     },
     {
-      "title": "Texas Tribune elected-official directory",
-      "url": "https://directory.texastribune.org/jimmy-blacklock/",
-      "accessedAt": "2026-08-03",
+      "title": "Texas Ethics Commission campaign-finance search",
+      "url": "https://www.ethics.state.tx.us/search/cf/",
+      "accessedAt": "2026-08-10",
       "supports": [
-        "party",
-        "next_election",
-        "contact"
+        "campaign_finance_source_path"
+      ]
+    },
+    {
+      "title": "State Commission on Judicial Conduct",
+      "url": "https://www.scjc.texas.gov/",
+      "accessedAt": "2026-08-10",
+      "supports": [
+        "judicial_conduct_source_path"
+      ]
+    },
+    {
+      "title": "Texas Constitution, Article V",
+      "url": "https://statutes.capitol.texas.gov/Docs/CN/htm/CN.5.htm",
+      "accessedAt": "2026-08-10",
+      "supports": [
+        "constitutional_authority",
+        "office_structure"
       ]
     },
     {
       "title": "Published portrait image",
       "url": "https://www.txcourts.gov/media/1460030/chief-justice-jimmy-blacklock-web.jpg",
-      "accessedAt": "2026-08-03",
+      "accessedAt": "2026-08-10",
       "supports": [
-        "portrait"
+        "portrait",
+        "portrait_provenance"
       ]
     }
   ],
-  "lastVerifiedAt": "2026-08-03",
+  "lastVerifiedAt": "2026-08-10",
   "photo": "/images/officials/texas-accountability/tx-supreme-jimmy-blacklock.jpg",
   "photoSourceUrl": "https://www.txcourts.gov/media/1460030/chief-justice-jimmy-blacklock-web.jpg",
   "photoCredit": "Official Texas Judicial Branch portrait.",
   "nextElection": "2030 general election",
   "accountabilityNotes": [
-    "Judicial accountability is sourced from opinions, orders, rules, administration, and case records rather than legislative roll calls.",
-    "Campaign-finance totals and donor groupings remain unpublished until the correct filing committee and reporting period are matched.",
-    "Constituent sentiment remains unpublished until geography confidence, sample composition, duplicate/bot filtering, and uncertainty are disclosed.",
-    "No constitutional-alignment score is published without cited judicial actions, a transparent rubric, applicable provisions, and a clear non-legal-judgment disclaimer."
+    "Role-compatible accountability is based on opinions, orders, and case records; legislative roll calls are not substituted where they do not apply.",
+    "Positive-work claims remain pending until a primary record, date, measurable result, and independent context are attached.",
+    "Criticism and controversies remain pending until each claim is substantiated, attributed, dated, and paired with the official's response when available.",
+    "Campaign-finance totals, donors, industries/PACs, and expenditures remain unpublished until the correct filer and reporting period are matched.",
+    "Constituent sentiment remains unpublished until the collection window, source mix, jurisdiction-confidence method, duplicate/bot filtering, sample size, and uncertainty are disclosed.",
+    "No constitutional-alignment score is published without cited official actions, a transparent rubric, applicable provisions, uncertainty, and a RepWatchr-analysis/non-legal-judgment disclaimer."
   ],
   "fieldFreshness": {
     "identity": {
       "status": "current",
-      "reviewedAt": "2026-08-03",
-      "sourceUrl": "https://www.txcourts.gov/supreme/about-the-court/justices/"
+      "reviewedAt": "2026-08-10",
+      "sourceUrl": "https://www.txcourts.gov/supreme/about-the-court/"
     },
     "portrait": {
       "status": "current",
-      "reviewedAt": "2026-08-03",
+      "reviewedAt": "2026-08-10",
       "sourceUrl": "https://www.txcourts.gov/media/1460030/chief-justice-jimmy-blacklock-web.jpg",
-      "note": "1149x1724; 274416 bytes"
+      "note": "Stored portrait; minimum dimension verified at 500 pixels."
     },
     "contact": {
       "status": "current",
-      "reviewedAt": "2026-08-03",
-      "sourceUrl": "https://directory.texastribune.org/jimmy-blacklock/"
+      "reviewedAt": "2026-08-10",
+      "sourceUrl": "https://www.txcourts.gov/supreme/contact-us/"
     },
     "term": {
       "status": "current",
-      "reviewedAt": "2026-08-03",
-      "sourceUrl": "https://directory.texastribune.org/jimmy-blacklock/"
+      "reviewedAt": "2026-08-10",
+      "sourceUrl": "https://www.sos.texas.gov/elections/voter/elected.shtml"
     },
-    "judicialRecord": {
-      "status": "source_path_only",
-      "reviewedAt": "2026-08-03",
+    "assignments": {
+      "status": "not_applicable",
+      "reviewedAt": "2026-08-10",
+      "sourceUrl": "https://www.txcourts.gov/supreme/about-the-court/",
+      "note": "No standing legislative committee assignment applies to this statewide judicial office."
+    },
+    "legislation": {
+      "status": "not_applicable",
+      "reviewedAt": "2026-08-10",
       "sourceUrl": "https://www.txcourts.gov/supreme/orders-opinions/",
-      "note": "Opinion-level indexing remains a separate evidence pass."
+      "note": "Sponsored legislation is not a function of this statewide judicial office."
+    },
+    "votingRecord": {
+      "status": "not_applicable",
+      "reviewedAt": "2026-08-10",
+      "sourceUrl": "https://www.txcourts.gov/supreme/orders-opinions/",
+      "note": "Legislative roll calls do not apply; the role-compatible official record is linked separately."
+    },
+    "officialRecord": {
+      "status": "source_path_only",
+      "reviewedAt": "2026-08-10",
+      "sourceUrl": "https://www.txcourts.gov/supreme/orders-opinions/",
+      "note": "Individual actions require record-level editorial review before evaluation."
     },
     "campaignFinance": {
       "status": "pending_review",
-      "reviewedAt": "2026-08-03",
-      "sourceUrl": "https://www.ethics.state.tx.us/search/cf/"
+      "reviewedAt": "2026-08-10",
+      "sourceUrl": "https://www.ethics.state.tx.us/search/cf/",
+      "note": "Filer identity and reporting period are not yet matched."
+    },
+    "positiveWork": {
+      "status": "pending_review",
+      "reviewedAt": "2026-08-10",
+      "sourceUrl": "https://www.txcourts.gov/supreme/about-the-court/"
+    },
+    "criticism": {
+      "status": "pending_review",
+      "reviewedAt": "2026-08-10",
+      "sourceUrl": "https://www.txcourts.gov/supreme/about-the-court/"
     },
     "sentiment": {
       "status": "pending_review",
-      "reviewedAt": "2026-08-03",
-      "sourceUrl": "https://www.txcourts.gov/supreme/about-the-court/justices/chief-justice-jimmy-blacklock/"
+      "reviewedAt": "2026-08-10",
+      "sourceUrl": "https://www.txcourts.gov/supreme/about-the-court/"
+    },
+    "constitutionalAlignment": {
+      "status": "pending_review",
+      "reviewedAt": "2026-08-10",
+      "sourceUrl": "https://statutes.capitol.texas.gov/Docs/CN/htm/CN.5.htm"
     }
-  }
+  },
+  "photoRights": "Official or published public-profile portrait; source provenance is retained and reuse rights should be rechecked before redistribution outside RepWatchr.",
+  "committeeAssignments": []
 }

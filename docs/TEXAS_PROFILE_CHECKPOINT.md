@@ -1,38 +1,38 @@
 # Texas elected-official profile checkpoint
 
-Last updated: 2026-08-09
+Last updated: 2026-08-10
 
 ## Completed in this batch
 
-Twenty-five active Texas House profiles were materially updated and prepared for production:
+Twenty-five active statewide Texas profiles were materially updated for production:
 
-- HD-115 Cassandra Garcia Hernandez; HD-116 Trey Martinez Fischer; HD-117 Philip Cortez; HD-118 John Lujan; HD-120 Barbara Gervin-Hawkins.
-- HD-121 Marc LaHood; HD-122 Mark Dorazio; HD-123 Diego M. Bernal; HD-124 Josey Garcia; HD-127 Charles Cunningham.
-- HD-128 Briscoe Cain; HD-129 Dennis Paul; HD-130 Tom Oliverson; HD-132 Mike Schofield; HD-134 Ann Johnson.
-- HD-137 Gene Wu; HD-138 Lacey Hull; HD-139 Charlene Ward Johnson; HD-141 Senfronia Thompson; HD-143 Ana Hernandez.
-- HD-144 Mary Ann Perez; HD-145 Christina Morales; HD-148 Penny Morales Shaw; HD-149 Hubert Vo; HD-150 Valoree Swanson.
+- Court of Criminal Appeals: Presiding Judge David J. Schenck and Judges Mary Lou Keel, Bert Richardson, Kevin Yeary, Scott Walker, Jesse F. McClure III, Gina G. Parker, Lee Finley, and David Newell.
+- Supreme Court of Texas: Chief Justice Jimmy Blacklock and Justices James P. Sullivan, Debra Lehrmann, John Phillip Devine, Rebeca Aizpuru Huddle, Jane Bland, Kyle D. Hawkins, Brett Busby, and Evan A. Young.
+- Railroad Commission of Texas: Chairman Jim Wright and Commissioner Christi Craddick.
+- Statewide executive offices: Governor Greg Abbott, Lieutenant Governor Dan Patrick, Attorney General Ken Paxton, Agriculture Commissioner Sid Miller, and Land Commissioner Dawn Buckingham.
 
-Every profile has a current-roster identity check, current office and district, party, source-resolved next-election year, official website and contact path, concise official biography, committee and leadership assignments, official authored/sponsored legislation paths, the official roll-call method, a stored portrait that passed the 500-by-500 gate, portrait source and rights/provenance metadata, at least 12 source-ledger entries, and field-level freshness dated 2026-08-09.
+Every profile now has a current-roster identity check, elected statewide office, party, term and next-election path, official website and public contact route, concise role-compatible biography, explicit committee and legislation applicability, official action/opinion/case/meeting sources, campaign-finance and election source paths, a 10-12 item field-level source ledger, and evidence freshness dated 2026-08-10.
 
-Three profiles use documented alternatives to a missing or undersized directory image: Cassandra Garcia Hernandez uses the official Mexican American Legislative Caucus portrait; John Lujan uses Jonathan Mallard's public-domain U.S. Air Force image via Wikimedia Commons; and Mark Dorazio uses Gage Skidmore's CC BY-SA 3.0 image via Wikimedia Commons. Credits, license or rights status, and source pages are retained in each profile.
+All 25 portraits are stored locally and passed a 500-pixel minimum-dimension gate. The nine Court of Criminal Appeals portraits and the Sid Miller and Dawn Buckingham portraits come from official state sources. The Supreme Court files were re-downloaded from their recorded published sources after the validation pass identified two corrupt local JPEGs. Greg Abbott uses Gage Skidmore's CC BY-SA 3.0 portrait; Ken Paxton uses Gage Skidmore's CC BY-SA 4.0 portrait; credits and license terms are retained. Dan Patrick uses the official Lieutenant Governor portrait. Jim Wright and Christi Craddick use published 1000-by-1000 Texas Tribune directory portraits with explicit editorial-use provenance because the official RRC pages expose only 200-by-275 thumbnails.
 
-The shared responsive RepWatchr dashboard/report-card system was reused without a design mutation. The evidence-gated layout suppresses unsupported charts and grades, uses `NR`/pending states, keeps source access visible, and avoids publishing empty finance, sentiment, controversy, or constitutional-score decorations.
+The shared responsive RepWatchr dashboard/report-card system was reused without a design mutation. Judicial profiles use opinions, orders, case records, and oral arguments as the role-compatible accountability record. Executive and regulatory profiles use orders, opinions, official actions, meetings, rules, and agency records. Legislative roll calls and sponsored-bill fields are explicitly marked not applicable rather than replaced with misleading data.
 
 ## Evidence deliberately not published
 
-- The Texas Ethics Commission campaign-finance CSV database was current through 2026-08-08, but individual filer identities and reporting periods were not matched in this run. No totals, donors, industries/PACs, or expenditures were inferred.
-- No positive-work or controversy claim was published without a primary record, attribution, date, context, and an official response when available.
-- No constituent sentiment was synthesized without a disclosed collection window, platform/source mix, jurisdiction-confidence method, duplicate/bot filtering, sample size, and uncertainty.
-- No constitutional-alignment score was assigned without cited votes, a published rubric, applicable provisions, uncertainty, and a clear RepWatchr-analysis/non-legal-judgment disclaimer.
+- Individual Texas Ethics Commission filer identities and reporting periods were not matched in this run. No campaign totals, donors, industries/PACs, or expenditures were inferred.
+- No positive-work claim was published without a primary record, date, measurable result, and independent context.
+- No criticism or controversy was published without attribution, date, substantiation, context, and an official response when available.
+- No statewide constituent sentiment was synthesized without a disclosed collection window, platform/source mix, jurisdiction-confidence method, duplicate/bot filtering, sample size, and uncertainty.
+- No constitutional-alignment score was assigned without cited official actions, a published rubric, applicable provisions, uncertainty, and a clear RepWatchr-analysis/non-legal-judgment disclaimer.
 
-## Portrait/source deferrals
+## Remaining portrait/source deferrals
 
-The following current House profiles in the HD-115 through HD-150 sequence were not included because the directory portrait was absent or failed the 500-by-500 gate: HD-119 Liz Campos (directory page unavailable); HD-125 Ray Lopez (portrait file unavailable); HD-126 Sam Harless (directory page unavailable); HD-131 Alma Allen (directory page unavailable and available caucus image only 300x400); HD-133 Mano DeAyala (458x640); HD-135 Jon Rosenthal (directory page unavailable); HD-136 John Bucy (directory page unavailable); HD-140 Armando Walle (directory page unavailable); HD-142 Harold Dutton (directory page unavailable); HD-146 Lauren Simmons (directory page unavailable); and HD-147 Jo Jones (directory page unavailable).
-
-The HD-49 through HD-114 deferrals remain HD-51, HD-57, HD-58, HD-63, HD-68, HD-70, HD-74, HD-75, HD-80, HD-84, HD-90, HD-91, HD-103, HD-104, HD-112, and HD-113.
-
-Earlier House portrait/source deferrals remain HD-2, HD-3, HD-17, HD-20, HD-22, HD-27, HD-29, HD-36, HD-37, HD-38, HD-39, and HD-42. State Board of Education deferrals remain Districts 4, 11, 12, and 14.
+- Railroad Commission: Wayne Christian remains first in the next statewide sequence. His official page exposes a 200-by-275 portrait; the stored alternative must retain its publisher-rights provenance.
+- House HD-115 through HD-150: HD-119, HD-125, HD-126, HD-131, HD-133, HD-135, HD-136, HD-140, HD-142, HD-146, and HD-147.
+- House HD-49 through HD-114: HD-51, HD-57, HD-58, HD-63, HD-68, HD-70, HD-74, HD-75, HD-80, HD-84, HD-90, HD-91, HD-103, HD-104, HD-112, and HD-113.
+- Earlier House sequence: HD-2, HD-3, HD-17, HD-20, HD-22, HD-27, HD-29, HD-36, HD-37, HD-38, HD-39, and HD-42.
+- State Board of Education: Districts 4, 11, 12, and 14.
 
 ## Next batch
 
-After publishing and verifying this batch, retry the documented official/licensed House and State Board of Education portrait deferrals, then begin the current Texas Court of Criminal Appeals roster. Preserve the same identity, portrait, evidence, and freshness gates.
+Retry the documented official/licensed House and State Board of Education portrait deferrals, complete Wayne Christian's Railroad Commission profile, then continue through the current Texas Courts of Appeals roster in court-and-place order. Preserve the same identity, portrait, evidence, role-compatibility, and freshness gates.

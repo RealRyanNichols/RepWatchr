@@ -3,7 +3,7 @@
   "name": "David Newell",
   "firstName": "David",
   "lastName": "Newell",
-  "photo": "https://www.txcourts.gov/media/1462533/newell.jpg",
+  "photo": "/images/officials/texas-accountability/tx-cca-david-newell.jpg",
   "photoSourceUrl": "https://www.txcourts.gov/media/1462533/newell.jpg",
   "photoCredit": "Official Texas Judicial Branch portrait.",
   "party": "R",
@@ -17,6 +17,9 @@
   "termStart": "2021-01-01",
   "termEnd": "2026-12-31",
   "contactInfo": {
+    "office": "Supreme Court Building, 201 W. 14th Street, Room 106, Austin, TX 78701",
+    "phone": "512-463-1551",
+    "email": "ccarecordrequests@txcourts.gov",
     "website": "https://www.txcourts.gov/cca/about-the-court/judges/judge-david-newell/"
   },
   "bio": "David Newell currently serves in Place 9 on the Texas Court of Criminal Appeals. RepWatchr treats judicial opinions and case records as the role-compatible accountability record and does not substitute legislative roll calls for judicial work.",
@@ -25,25 +28,200 @@
   "state": "TX",
   "sourceLinks": [
     {
-      "title": "Official Court of Criminal Appeals biography",
-      "url": "https://www.txcourts.gov/cca/about-the-court/judges/judge-david-newell/"
+      "title": "Official Texas Court of Criminal Appeals biography",
+      "url": "https://www.txcourts.gov/cca/about-the-court/judges/judge-david-newell/",
+      "accessedAt": "2026-08-10",
+      "supports": [
+        "identity",
+        "office",
+        "biography"
+      ]
     },
     {
-      "title": "Official current-judge roster",
-      "url": "https://www.txcourts.gov/cca/about-the-court/judges/"
+      "title": "Official current Texas Court of Criminal Appeals roster",
+      "url": "https://www.txcourts.gov/cca/about-the-court/judges/",
+      "accessedAt": "2026-08-10",
+      "supports": [
+        "current_office",
+        "place",
+        "leadership"
+      ]
     },
     {
-      "title": "Official appellate case and opinion search",
-      "url": "https://search.txcourts.gov/CaseSearch.aspx?coa=coscca&s=c"
+      "title": "Official Texas Court of Criminal Appeals contact page",
+      "url": "https://www.txcourts.gov/cca/contact-us/",
+      "accessedAt": "2026-08-10",
+      "supports": [
+        "contact",
+        "office"
+      ]
     },
     {
-      "title": "Texas campaign-finance disclosure search",
-      "url": "https://www.ethics.state.tx.us/search/cf/"
+      "title": "Official Texas appellate case and opinion search",
+      "url": "https://search.txcourts.gov/",
+      "accessedAt": "2026-08-10",
+      "supports": [
+        "judicial_record",
+        "opinions",
+        "case_record"
+      ]
     },
     {
-      "title": "Texas election-results archive",
-      "url": "https://www.sos.state.tx.us/elections/historical/index.shtml"
+      "title": "Court of Criminal Appeals case and opinion search",
+      "url": "https://search.txcourts.gov/CaseSearch.aspx?coa=coscca&s=c",
+      "accessedAt": "2026-08-10",
+      "supports": [
+        "judicial_record",
+        "opinions",
+        "orders"
+      ]
+    },
+    {
+      "title": "Court of Criminal Appeals oral arguments",
+      "url": "https://www.txcourts.gov/cca/oral-arguments/",
+      "accessedAt": "2026-08-10",
+      "supports": [
+        "oral_arguments",
+        "judicial_record"
+      ]
+    },
+    {
+      "title": "Texas Secretary of State statewide elected-official roster",
+      "url": "https://www.sos.texas.gov/elections/voter/elected.shtml",
+      "accessedAt": "2026-08-10",
+      "supports": [
+        "elected_status",
+        "party",
+        "term"
+      ]
+    },
+    {
+      "title": "Texas Secretary of State election-results archive",
+      "url": "https://www.sos.state.tx.us/elections/historical/index.shtml",
+      "accessedAt": "2026-08-10",
+      "supports": [
+        "election_history",
+        "term"
+      ]
+    },
+    {
+      "title": "Texas Ethics Commission campaign-finance search",
+      "url": "https://www.ethics.state.tx.us/search/cf/",
+      "accessedAt": "2026-08-10",
+      "supports": [
+        "campaign_finance_source_path"
+      ]
+    },
+    {
+      "title": "State Commission on Judicial Conduct",
+      "url": "https://www.scjc.texas.gov/",
+      "accessedAt": "2026-08-10",
+      "supports": [
+        "judicial_conduct_source_path"
+      ]
+    },
+    {
+      "title": "Texas Constitution, Article V",
+      "url": "https://statutes.capitol.texas.gov/Docs/CN/htm/CN.5.htm",
+      "accessedAt": "2026-08-10",
+      "supports": [
+        "constitutional_authority",
+        "office_structure"
+      ]
+    },
+    {
+      "title": "Published portrait image",
+      "url": "https://www.txcourts.gov/media/1462533/newell.jpg",
+      "accessedAt": "2026-08-10",
+      "supports": [
+        "portrait",
+        "portrait_provenance"
+      ]
     }
   ],
-  "lastVerifiedAt": "2026-08-02"
+  "lastVerifiedAt": "2026-08-10",
+  "photoRights": "Official or published public-profile portrait; source provenance is retained and reuse rights should be rechecked before redistribution outside RepWatchr.",
+  "nextElection": "2026 general election",
+  "committeeAssignments": [],
+  "accountabilityNotes": [
+    "Role-compatible accountability is based on opinions, orders, and case records; legislative roll calls are not substituted where they do not apply.",
+    "Positive-work claims remain pending until a primary record, date, measurable result, and independent context are attached.",
+    "Criticism and controversies remain pending until each claim is substantiated, attributed, dated, and paired with the official's response when available.",
+    "Campaign-finance totals, donors, industries/PACs, and expenditures remain unpublished until the correct filer and reporting period are matched.",
+    "Constituent sentiment remains unpublished until the collection window, source mix, jurisdiction-confidence method, duplicate/bot filtering, sample size, and uncertainty are disclosed.",
+    "No constitutional-alignment score is published without cited official actions, a transparent rubric, applicable provisions, uncertainty, and a RepWatchr-analysis/non-legal-judgment disclaimer."
+  ],
+  "fieldFreshness": {
+    "identity": {
+      "status": "current",
+      "reviewedAt": "2026-08-10",
+      "sourceUrl": "https://www.txcourts.gov/cca/about-the-court/judges/"
+    },
+    "portrait": {
+      "status": "current",
+      "reviewedAt": "2026-08-10",
+      "sourceUrl": "https://www.txcourts.gov/media/1462533/newell.jpg",
+      "note": "Stored portrait; minimum dimension verified at 500 pixels."
+    },
+    "contact": {
+      "status": "current",
+      "reviewedAt": "2026-08-10",
+      "sourceUrl": "https://www.txcourts.gov/cca/contact-us/"
+    },
+    "term": {
+      "status": "current",
+      "reviewedAt": "2026-08-10",
+      "sourceUrl": "https://www.sos.texas.gov/elections/voter/elected.shtml"
+    },
+    "assignments": {
+      "status": "not_applicable",
+      "reviewedAt": "2026-08-10",
+      "sourceUrl": "https://www.txcourts.gov/cca/about-the-court/judges/",
+      "note": "No standing legislative committee assignment applies to this statewide judicial office."
+    },
+    "legislation": {
+      "status": "not_applicable",
+      "reviewedAt": "2026-08-10",
+      "sourceUrl": "https://search.txcourts.gov/CaseSearch.aspx?coa=coscca&s=c",
+      "note": "Sponsored legislation is not a function of this statewide judicial office."
+    },
+    "votingRecord": {
+      "status": "not_applicable",
+      "reviewedAt": "2026-08-10",
+      "sourceUrl": "https://search.txcourts.gov/CaseSearch.aspx?coa=coscca&s=c",
+      "note": "Legislative roll calls do not apply; the role-compatible official record is linked separately."
+    },
+    "officialRecord": {
+      "status": "source_path_only",
+      "reviewedAt": "2026-08-10",
+      "sourceUrl": "https://search.txcourts.gov/CaseSearch.aspx?coa=coscca&s=c",
+      "note": "Individual actions require record-level editorial review before evaluation."
+    },
+    "campaignFinance": {
+      "status": "pending_review",
+      "reviewedAt": "2026-08-10",
+      "sourceUrl": "https://www.ethics.state.tx.us/search/cf/",
+      "note": "Filer identity and reporting period are not yet matched."
+    },
+    "positiveWork": {
+      "status": "pending_review",
+      "reviewedAt": "2026-08-10",
+      "sourceUrl": "https://www.txcourts.gov/cca/about-the-court/judges/"
+    },
+    "criticism": {
+      "status": "pending_review",
+      "reviewedAt": "2026-08-10",
+      "sourceUrl": "https://www.txcourts.gov/cca/about-the-court/judges/"
+    },
+    "sentiment": {
+      "status": "pending_review",
+      "reviewedAt": "2026-08-10",
+      "sourceUrl": "https://www.txcourts.gov/cca/about-the-court/judges/"
+    },
+    "constitutionalAlignment": {
+      "status": "pending_review",
+      "reviewedAt": "2026-08-10",
+      "sourceUrl": "https://statutes.capitol.texas.gov/Docs/CN/htm/CN.5.htm"
+    }
+  }
 }

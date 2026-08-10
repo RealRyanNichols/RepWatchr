@@ -3,9 +3,9 @@
   "name": "Dawn Buckingham",
   "firstName": "Dawn",
   "lastName": "Buckingham",
-  "photo": "https://www.glo.texas.gov/sites/default/files/2024-08/L_Commissioner_Buckingham_sitting_at_Piano.jpg",
-  "photoSourceUrl": "https://www.glo.texas.gov/about-glo/about-the-commissioner",
-  "photoCredit": "Official Texas General Land Office portrait.",
+  "photo": "/images/officials/texas-accountability/tx-land-commissioner-dawn-buckingham.jpg",
+  "photoSourceUrl": "https://www.glo.texas.gov/sites/default/files/2024-08/L_Commissioner_Buckingham_sitting_at_Piano.jpg",
+  "photoCredit": "Official Texas General Land Office commissioner portrait.",
   "party": "R",
   "level": "state",
   "position": "Commissioner, Texas General Land Office",
@@ -17,25 +17,188 @@
   "termStart": "2023-01-01",
   "termEnd": "2026-12-31",
   "contactInfo": {
+    "office": "P.O. Box 12873, Austin, TX 78711",
     "website": "https://www.glo.texas.gov/about-glo/about-the-commissioner"
   },
-  "bio": "Dawn Buckingham is the current elected Commissioner of the Texas General Land Office. RepWatchr treats executive actions, agency records, campaign finance, and constituent sentiment as separate evidence lanes.",
+  "bio": "Dawn Buckingham currently serves as Commissioner, Texas General Land Office, a statewide elected office in Texas. RepWatchr separates official actions, campaign finance, documented outcomes, criticism, and public opinion into independently sourced evidence lanes.",
   "campaignPromises": [],
   "reviewStatus": "source_seeded",
   "state": "TX",
   "sourceLinks": [
     {
-      "title": "Official General Land Office commissioner biography",
-      "url": "https://www.glo.texas.gov/about-glo/about-the-commissioner"
+      "title": "Official Commissioner, Texas General Land Office website",
+      "url": "https://www.glo.texas.gov/about-glo/about-the-commissioner",
+      "accessedAt": "2026-08-10",
+      "supports": [
+        "identity",
+        "office",
+        "biography"
+      ]
     },
     {
-      "title": "Texas campaign-finance disclosure search",
-      "url": "https://www.ethics.state.tx.us/search/cf/"
+      "title": "Official Commissioner, Texas General Land Office contact page",
+      "url": "https://www.glo.texas.gov/",
+      "accessedAt": "2026-08-10",
+      "supports": [
+        "contact",
+        "office"
+      ]
     },
     {
-      "title": "Texas election-results archive",
-      "url": "https://www.sos.state.tx.us/elections/historical/index.shtml"
+      "title": "Official role-compatible action record",
+      "url": "https://www.glo.texas.gov/open-government/important-links-and-information/public-information-request",
+      "accessedAt": "2026-08-10",
+      "supports": [
+        "official_record",
+        "actions"
+      ]
+    },
+    {
+      "title": "Official agency news and public statements",
+      "url": "https://www.glo.texas.gov/about-glo/press-releases",
+      "accessedAt": "2026-08-10",
+      "supports": [
+        "public_statements",
+        "agency_actions"
+      ]
+    },
+    {
+      "title": "Texas Secretary of State statewide elected-official roster",
+      "url": "https://www.sos.texas.gov/elections/voter/elected.shtml",
+      "accessedAt": "2026-08-10",
+      "supports": [
+        "elected_status",
+        "party",
+        "term"
+      ]
+    },
+    {
+      "title": "Texas Secretary of State election-results archive",
+      "url": "https://www.sos.state.tx.us/elections/historical/index.shtml",
+      "accessedAt": "2026-08-10",
+      "supports": [
+        "election_history",
+        "term"
+      ]
+    },
+    {
+      "title": "Texas Ethics Commission campaign-finance search",
+      "url": "https://www.ethics.state.tx.us/search/cf/",
+      "accessedAt": "2026-08-10",
+      "supports": [
+        "campaign_finance_source_path"
+      ]
+    },
+    {
+      "title": "Texas Ethics Commission personal financial statements",
+      "url": "https://www.ethics.state.tx.us/search/pfs/",
+      "accessedAt": "2026-08-10",
+      "supports": [
+        "personal_financial_disclosure_source_path"
+      ]
+    },
+    {
+      "title": "Texas Constitution, Article IV",
+      "url": "https://statutes.capitol.texas.gov/Docs/CN/htm/CN.4.htm",
+      "accessedAt": "2026-08-10",
+      "supports": [
+        "constitutional_authority",
+        "office_structure"
+      ]
+    },
+    {
+      "title": "Published portrait image",
+      "url": "https://www.glo.texas.gov/sites/default/files/2024-08/L_Commissioner_Buckingham_sitting_at_Piano.jpg",
+      "accessedAt": "2026-08-10",
+      "supports": [
+        "portrait",
+        "portrait_provenance"
+      ]
     }
   ],
-  "lastVerifiedAt": "2026-08-02"
+  "lastVerifiedAt": "2026-08-10",
+  "photoRights": "Official public-profile portrait; provenance retained and reuse rights should be rechecked before redistribution outside RepWatchr.",
+  "nextElection": "2026 general election",
+  "committeeAssignments": [],
+  "accountabilityNotes": [
+    "Role-compatible accountability is based on official actions, orders, meetings, and agency records; legislative roll calls are not substituted where they do not apply.",
+    "Positive-work claims remain pending until a primary record, date, measurable result, and independent context are attached.",
+    "Criticism and controversies remain pending until each claim is substantiated, attributed, dated, and paired with the official's response when available.",
+    "Campaign-finance totals, donors, industries/PACs, and expenditures remain unpublished until the correct filer and reporting period are matched.",
+    "Constituent sentiment remains unpublished until the collection window, source mix, jurisdiction-confidence method, duplicate/bot filtering, sample size, and uncertainty are disclosed.",
+    "No constitutional-alignment score is published without cited official actions, a transparent rubric, applicable provisions, uncertainty, and a RepWatchr-analysis/non-legal-judgment disclaimer."
+  ],
+  "fieldFreshness": {
+    "identity": {
+      "status": "current",
+      "reviewedAt": "2026-08-10",
+      "sourceUrl": "https://www.glo.texas.gov/about-glo/about-the-commissioner"
+    },
+    "portrait": {
+      "status": "current",
+      "reviewedAt": "2026-08-10",
+      "sourceUrl": "https://www.glo.texas.gov/sites/default/files/2024-08/L_Commissioner_Buckingham_sitting_at_Piano.jpg",
+      "note": "Stored portrait; minimum dimension verified at 500 pixels."
+    },
+    "contact": {
+      "status": "current",
+      "reviewedAt": "2026-08-10",
+      "sourceUrl": "https://www.glo.texas.gov/"
+    },
+    "term": {
+      "status": "current",
+      "reviewedAt": "2026-08-10",
+      "sourceUrl": "https://www.sos.texas.gov/elections/voter/elected.shtml"
+    },
+    "assignments": {
+      "status": "not_applicable",
+      "reviewedAt": "2026-08-10",
+      "sourceUrl": "https://www.glo.texas.gov/about-glo/about-the-commissioner",
+      "note": "No standing legislative committee assignment applies to this statewide executive office."
+    },
+    "legislation": {
+      "status": "not_applicable",
+      "reviewedAt": "2026-08-10",
+      "sourceUrl": "https://www.glo.texas.gov/open-government/important-links-and-information/public-information-request",
+      "note": "Sponsored legislation is not a function of this statewide executive office."
+    },
+    "votingRecord": {
+      "status": "not_applicable",
+      "reviewedAt": "2026-08-10",
+      "sourceUrl": "https://www.glo.texas.gov/open-government/important-links-and-information/public-information-request",
+      "note": "Legislative roll calls do not apply; the role-compatible official record is linked separately."
+    },
+    "officialRecord": {
+      "status": "source_path_only",
+      "reviewedAt": "2026-08-10",
+      "sourceUrl": "https://www.glo.texas.gov/open-government/important-links-and-information/public-information-request",
+      "note": "Individual actions require record-level editorial review before evaluation."
+    },
+    "campaignFinance": {
+      "status": "pending_review",
+      "reviewedAt": "2026-08-10",
+      "sourceUrl": "https://www.ethics.state.tx.us/search/cf/",
+      "note": "Filer identity and reporting period are not yet matched."
+    },
+    "positiveWork": {
+      "status": "pending_review",
+      "reviewedAt": "2026-08-10",
+      "sourceUrl": "https://www.glo.texas.gov/about-glo/about-the-commissioner"
+    },
+    "criticism": {
+      "status": "pending_review",
+      "reviewedAt": "2026-08-10",
+      "sourceUrl": "https://www.glo.texas.gov/about-glo/about-the-commissioner"
+    },
+    "sentiment": {
+      "status": "pending_review",
+      "reviewedAt": "2026-08-10",
+      "sourceUrl": "https://www.glo.texas.gov/about-glo/about-the-commissioner"
+    },
+    "constitutionalAlignment": {
+      "status": "pending_review",
+      "reviewedAt": "2026-08-10",
+      "sourceUrl": "https://statutes.capitol.texas.gov/Docs/CN/htm/CN.5.htm"
+    }
+  }
 }

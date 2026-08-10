@@ -5,7 +5,7 @@
   "lastName": "Patrick",
   "photo": "/images/officials/state-executive/tx/dan-patrick.jpg",
   "photoSourceUrl": "https://www.ltgov.state.tx.us/wp-content/uploads/2021/01/dan_patrick_new_2021.jpg",
-  "photoCredit": "OpenStates public profile image source",
+  "photoCredit": "Official Office of the Texas Lieutenant Governor portrait.",
   "party": "R",
   "level": "state",
   "position": "Lieutenant Governor",
@@ -17,39 +17,189 @@
   "termStart": "2015-01-20",
   "termEnd": "2027-01-19",
   "contactInfo": {
-    "office": "P.O. Box 12068; Austin, TX 78711",
+    "office": "P.O. Box 12068, Austin, TX 78711",
     "phone": "512-463-0001",
-    "website": "http://www.legdir.legis.state.tx.us/MemberInfo.aspx?Chamber=S&Code=A1430"
+    "website": "https://www.ltgov.texas.gov/"
   },
-  "bio": "Dan Patrick is listed as Lieutenant Governor for Texas. This RepWatchr starter profile is source-seeded from OpenStates public people data, official public links, and public profile photo sources where available.",
+  "bio": "Dan Patrick currently serves as Lieutenant Governor, a statewide elected office in Texas. RepWatchr separates official actions, campaign finance, documented outcomes, criticism, and public opinion into independently sourced evidence lanes.",
   "campaignPromises": [],
   "reviewStatus": "source_seeded",
   "state": "TX",
   "sourceLinks": [
     {
-      "title": "Official public profile",
-      "url": "http://www.legdir.legis.state.tx.us/MemberInfo.aspx?Chamber=S&Code=A1430"
+      "title": "Official Lieutenant Governor website",
+      "url": "https://www.ltgov.texas.gov/",
+      "accessedAt": "2026-08-10",
+      "supports": [
+        "identity",
+        "office",
+        "biography"
+      ]
     },
     {
-      "title": "OpenStates public people record",
-      "url": "https://raw.githubusercontent.com/openstates/people/d13b1a42510bc019831d0b56f23186c2342acb11/data/tx/executive/Dan-Patrick-22c1bff3-e936-4398-8d7c-95233e85b5c5.yml"
+      "title": "Official Lieutenant Governor contact page",
+      "url": "https://www.ltgov.texas.gov/contact/",
+      "accessedAt": "2026-08-10",
+      "supports": [
+        "contact",
+        "office"
+      ]
     },
     {
-      "title": "Public profile photo source",
-      "url": "https://www.ltgov.state.tx.us/wp-content/uploads/2021/01/dan_patrick_new_2021.jpg"
+      "title": "Official role-compatible action record",
+      "url": "https://senate.texas.gov/ltgov.php",
+      "accessedAt": "2026-08-10",
+      "supports": [
+        "official_record",
+        "actions"
+      ]
     },
     {
-      "title": "Public source",
-      "url": "http://www.senate.state.tx.us/75r/LtGov/Ltgov.htm"
+      "title": "Official agency news and public statements",
+      "url": "https://www.ltgov.texas.gov/",
+      "accessedAt": "2026-08-10",
+      "supports": [
+        "public_statements",
+        "agency_actions"
+      ]
     },
     {
-      "title": "Public source",
-      "url": "https://www.ltgov.texas.gov/about/"
+      "title": "Texas Secretary of State statewide elected-official roster",
+      "url": "https://www.sos.texas.gov/elections/voter/elected.shtml",
+      "accessedAt": "2026-08-10",
+      "supports": [
+        "elected_status",
+        "party",
+        "term"
+      ]
     },
     {
-      "title": "Public source",
-      "url": "https://ballotpedia.org/Dan_Patrick"
+      "title": "Texas Secretary of State election-results archive",
+      "url": "https://www.sos.state.tx.us/elections/historical/index.shtml",
+      "accessedAt": "2026-08-10",
+      "supports": [
+        "election_history",
+        "term"
+      ]
+    },
+    {
+      "title": "Texas Ethics Commission campaign-finance search",
+      "url": "https://www.ethics.state.tx.us/search/cf/",
+      "accessedAt": "2026-08-10",
+      "supports": [
+        "campaign_finance_source_path"
+      ]
+    },
+    {
+      "title": "Texas Ethics Commission personal financial statements",
+      "url": "https://www.ethics.state.tx.us/search/pfs/",
+      "accessedAt": "2026-08-10",
+      "supports": [
+        "personal_financial_disclosure_source_path"
+      ]
+    },
+    {
+      "title": "Texas Constitution, Article IV",
+      "url": "https://statutes.capitol.texas.gov/Docs/CN/htm/CN.4.htm",
+      "accessedAt": "2026-08-10",
+      "supports": [
+        "constitutional_authority",
+        "office_structure"
+      ]
+    },
+    {
+      "title": "Published portrait image",
+      "url": "https://www.ltgov.state.tx.us/wp-content/uploads/2021/01/dan_patrick_new_2021.jpg",
+      "accessedAt": "2026-08-10",
+      "supports": [
+        "portrait",
+        "portrait_provenance"
+      ]
     }
   ],
-  "lastVerifiedAt": "2026-05-01"
+  "lastVerifiedAt": "2026-08-10",
+  "photoRights": "Official public-profile portrait; provenance retained and reuse rights should be rechecked before redistribution outside RepWatchr.",
+  "nextElection": "2026 general election",
+  "committeeAssignments": [],
+  "accountabilityNotes": [
+    "Role-compatible accountability is based on official actions, orders, meetings, and agency records; legislative roll calls are not substituted where they do not apply.",
+    "Positive-work claims remain pending until a primary record, date, measurable result, and independent context are attached.",
+    "Criticism and controversies remain pending until each claim is substantiated, attributed, dated, and paired with the official's response when available.",
+    "Campaign-finance totals, donors, industries/PACs, and expenditures remain unpublished until the correct filer and reporting period are matched.",
+    "Constituent sentiment remains unpublished until the collection window, source mix, jurisdiction-confidence method, duplicate/bot filtering, sample size, and uncertainty are disclosed.",
+    "No constitutional-alignment score is published without cited official actions, a transparent rubric, applicable provisions, uncertainty, and a RepWatchr-analysis/non-legal-judgment disclaimer."
+  ],
+  "fieldFreshness": {
+    "identity": {
+      "status": "current",
+      "reviewedAt": "2026-08-10",
+      "sourceUrl": "https://www.ltgov.texas.gov/"
+    },
+    "portrait": {
+      "status": "current",
+      "reviewedAt": "2026-08-10",
+      "sourceUrl": "https://www.ltgov.state.tx.us/wp-content/uploads/2021/01/dan_patrick_new_2021.jpg",
+      "note": "Stored portrait; minimum dimension verified at 500 pixels."
+    },
+    "contact": {
+      "status": "current",
+      "reviewedAt": "2026-08-10",
+      "sourceUrl": "https://www.ltgov.texas.gov/contact/"
+    },
+    "term": {
+      "status": "current",
+      "reviewedAt": "2026-08-10",
+      "sourceUrl": "https://www.sos.texas.gov/elections/voter/elected.shtml"
+    },
+    "assignments": {
+      "status": "not_applicable",
+      "reviewedAt": "2026-08-10",
+      "sourceUrl": "https://www.ltgov.texas.gov/",
+      "note": "No standing legislative committee assignment applies to this statewide executive office."
+    },
+    "legislation": {
+      "status": "not_applicable",
+      "reviewedAt": "2026-08-10",
+      "sourceUrl": "https://senate.texas.gov/ltgov.php",
+      "note": "Sponsored legislation is not a function of this statewide executive office."
+    },
+    "votingRecord": {
+      "status": "not_applicable",
+      "reviewedAt": "2026-08-10",
+      "sourceUrl": "https://senate.texas.gov/ltgov.php",
+      "note": "Legislative roll calls do not apply; the role-compatible official record is linked separately."
+    },
+    "officialRecord": {
+      "status": "source_path_only",
+      "reviewedAt": "2026-08-10",
+      "sourceUrl": "https://senate.texas.gov/ltgov.php",
+      "note": "Individual actions require record-level editorial review before evaluation."
+    },
+    "campaignFinance": {
+      "status": "pending_review",
+      "reviewedAt": "2026-08-10",
+      "sourceUrl": "https://www.ethics.state.tx.us/search/cf/",
+      "note": "Filer identity and reporting period are not yet matched."
+    },
+    "positiveWork": {
+      "status": "pending_review",
+      "reviewedAt": "2026-08-10",
+      "sourceUrl": "https://www.ltgov.texas.gov/"
+    },
+    "criticism": {
+      "status": "pending_review",
+      "reviewedAt": "2026-08-10",
+      "sourceUrl": "https://www.ltgov.texas.gov/"
+    },
+    "sentiment": {
+      "status": "pending_review",
+      "reviewedAt": "2026-08-10",
+      "sourceUrl": "https://www.ltgov.texas.gov/"
+    },
+    "constitutionalAlignment": {
+      "status": "pending_review",
+      "reviewedAt": "2026-08-10",
+      "sourceUrl": "https://statutes.capitol.texas.gov/Docs/CN/htm/CN.5.htm"
+    }
+  }
 }
