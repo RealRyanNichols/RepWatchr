@@ -19,6 +19,7 @@
     "smoke:wire-quality": "node scripts/smoke-daily-wire-quality.mjs",
     "smoke:officials": "node scripts/smoke-officials-search.mjs",
     "smoke:profile-dossier": "node scripts/smoke-official-dossier.mjs",
+    "smoke:texas-appellate-2026-08-11": "node scripts/smoke-texas-appellate-batch-2026-08-11.mjs",
     "smoke:race-hub": "node scripts/smoke-race-hub.mjs",
     "smoke:marion-release": "node scripts/smoke-marion-county-race-release.mjs",
     "smoke:race-poll": "node scripts/smoke-race-community-poll.mjs",
