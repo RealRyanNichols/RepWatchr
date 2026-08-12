@@ -4,23 +4,15 @@ Last updated: 2026-08-12
 
 ## Completed in this batch
 
-Twenty-five active Texas appellate profiles were created or materially updated for production:
+Twenty-five active Texas Senate profiles were materially upgraded to the current production evidence standard: Senate Districts 1–21 and 23–26. Senate District 22 remains officially vacant and was not converted into a person profile.
 
-- Fourth Court of Appeals: Lori Massey Brissette (Place 4), resolving a documented HD-portrait deferral.
-- Fifth Court of Appeals: Chief Justice J.J. Koch; Justices Cynthia M. Barbare, Nancy Kennedy, Dennise Garcia, Tina Clinton, Earl Jackson, Gino J. Rossini, and Emily Miskel.
-- Seventh Court of Appeals: Alex L. Yarbrough and Lawrence M. Doss.
-- Ninth Court of Appeals: Jay Wright and Kent Chambers.
-- Tenth Court of Appeals: Lee Harris.
-- Twelfth Court of Appeals: Brian T. Hoyle and C. Michael Davis.
-- Thirteenth Court of Appeals: Chief Justice Jaime E. Tijerina and Justice Jenny Cron.
-- Fourteenth Court of Appeals: Chad Bridges, Tonya McLaughlin, Katy Boatman, Ken Wise, Brad Hart, and Randy Wilson.
-- Fifteenth Court of Appeals: Chief Justice Scott Brister.
+The exact officials are Bryan Hughes, Bob Hall, Robert Nichols, Brett Ligon, Charles Schwertner, Carol Alvarado, Paul Bettencourt, Angela Paxton, Taylor Rehmet, Phil King, Mayes Middleton, Tan Parker, Borris Miles, Sarah Eckhardt, Molly Cook, Nathan Johnson, Joan Huffman, Lois Kolkhorst, Roland Gutierrez, Juan “Chuy” Hinojosa, Judith Zaffirini, Royce West, Pete Flores, Donna Campbell, and José Menéndez.
 
-Every profile has a current-roster identity and office check; district/place and party; term and next-election data when matched to an authoritative election year, otherwise an explicit pending status; official website, clerk office, and phone; a concise biography; role-compatible case, document, opinion/order, and oral-argument paths; campaign-finance and election source paths; a 13-item field-level source ledger; and evidence freshness dated 2026-08-12.
+Every profile now has a fresh current-roster and district check; a verified member/contact path; the current committee list or an explicit no-assignment state; official bills-by-author, vote-information, and Senate-journal paths; election, campaign-finance, constitutional-authority, and portrait-provenance sources; a 13–14 item field-level source ledger; and complete identity, portrait, contact, term, assignment, legislation, voting, finance, positive-work, criticism, sentiment, and constitutional-analysis freshness gates dated 2026-08-12.
 
-All 25 portraits are stored locally and passed a 500-pixel minimum-dimension gate. Images range from 500×500 to 800×800 after lossless-downscale/quality normalization. They come from official campaign publication or candidate/justice portrait publishers, with publisher, original asset URL, provenance, and a redistribution-rights recheck retained on every profile. The visual review rejected or replaced non-individual and low-resolution assets rather than upscaling them.
+All 25 stored portraits passed the 500-pixel minimum-dimension gate without upscaling. The smallest is 522×731 and the largest is 1600×2000. Publisher, original asset URL, attribution, and a redistribution-rights recheck remain attached to every portrait.
 
-The shared responsive RepWatchr dashboard/report-card system was reused without a design mutation. These appellate profiles treat opinions, orders, case records, and oral arguments as the official accountability record. Legislative committee, sponsored-bill, and roll-call fields are marked not applicable rather than populated with misleading substitutes.
+The shared responsive RepWatchr dashboard/report-card system was reused without a design mutation. A structured legislative-record disclosure now separates source availability from evaluated findings. Campaign-finance and sentiment disclosures are explicit data objects rather than implied empty sections, and no uncited score was created.
 
 ## Evidence deliberately not published
 
@@ -29,6 +21,12 @@ The shared responsive RepWatchr dashboard/report-card system was reused without 
 - No criticism or controversy was published without attribution, date, substantiation, context, and an official response when available.
 - No constituent sentiment was synthesized without a disclosed collection window, platform/source mix, jurisdiction-confidence method, duplicate/bot filtering, sample size, and uncertainty.
 - No constitutional-alignment score was assigned without cited official actions, a published rubric, applicable provisions, uncertainty, and a RepWatchr-analysis/non-legal-judgment disclaimer.
+
+## Coverage inventory
+
+- The repository currently contains 336 Texas-coded official profile records. This is a repository count, not a claim that every Texas elective office is covered.
+- Supabase is active and healthy. Its current public profile pipeline includes 8,210 completion snapshots, 626 enrichment items, 27,670 vote snapshots, and 1,151 social-account records; RLS is enabled on all of those tables.
+- The statewide denominator remains open because county, municipal, school-district, special-district, and trial-court rosters have not yet been consolidated into one authoritative deduplicated registry. RepWatchr must not publish a false “percent complete” until that registry exists.
 
 ## Remaining portrait/source deferrals
 
