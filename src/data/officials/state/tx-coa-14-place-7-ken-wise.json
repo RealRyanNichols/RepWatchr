@@ -1,0 +1,237 @@
+{
+  "id": "tx-coa-14-place-7-ken-wise",
+  "name": "Ken Wise",
+  "firstName": "Ken",
+  "lastName": "Wise",
+  "party": "R",
+  "level": "state",
+  "position": "Justice, Fourteenth Court of Appeals",
+  "district": "Fourteenth Court of Appeals, Place 7",
+  "jurisdiction": "Fourteenth Court of Appeals District, Texas",
+  "county": [
+    "Texas"
+  ],
+  "termStart": "2021-01-01",
+  "termEnd": "2026-12-31",
+  "nextElection": "2026 general election",
+  "contactInfo": {
+    "office": "1910 Courthouse, 301 Fannin Street, Room 245, Houston, TX 77002",
+    "phone": "713-274-2800",
+    "website": "https://www.txcourts.gov/14thcoa/about-the-court/justices/"
+  },
+  "bio": "Ken Wise currently serves as Justice, Fourteenth Court of Appeals, Place 7. The official court roster verifies the current assignment. RepWatchr treats published opinions, orders, case records, and oral arguments as the role-compatible accountability record; legislative roll calls are not substituted for judicial work.",
+  "campaignPromises": [],
+  "reviewStatus": "source_seeded",
+  "state": "TX",
+  "sourceLinks": [
+    {
+      "title": "Official Fourteenth Court roster",
+      "url": "https://www.txcourts.gov/14thcoa/about-the-court/justices/",
+      "accessedAt": "2026-08-12",
+      "supports": [
+        "identity",
+        "current_office",
+        "place",
+        "leadership"
+      ]
+    },
+    {
+      "title": "Official Fourteenth Court contact page",
+      "url": "https://www.txcourts.gov/14thcoa/contact-us/",
+      "accessedAt": "2026-08-12",
+      "supports": [
+        "contact",
+        "office"
+      ]
+    },
+    {
+      "title": "Official Fourteenth Court case search",
+      "url": "https://search.txcourts.gov/CaseSearch.aspx?coa=coa14&s=c",
+      "accessedAt": "2026-08-12",
+      "supports": [
+        "judicial_record",
+        "case_record"
+      ]
+    },
+    {
+      "title": "Official Fourteenth Court document search",
+      "url": "https://search.txcourts.gov/CaseSearch.aspx?coa=coa14&s=d&d=1",
+      "accessedAt": "2026-08-12",
+      "supports": [
+        "judicial_record",
+        "opinions",
+        "orders"
+      ]
+    },
+    {
+      "title": "Official Fourteenth Court orders and opinions",
+      "url": "https://search.txcourts.gov/DocketSrch.aspx?coa=coa14",
+      "accessedAt": "2026-08-12",
+      "supports": [
+        "judicial_record",
+        "opinions",
+        "orders"
+      ]
+    },
+    {
+      "title": "Texas Judicial Branch courts-of-appeals overview",
+      "url": "https://www.txcourts.gov/about-texas-courts/courts-of-appeals.aspx",
+      "accessedAt": "2026-08-12",
+      "supports": [
+        "jurisdiction",
+        "office_structure"
+      ]
+    },
+    {
+      "title": "Texas Judicial Directory",
+      "url": "https://www.txcourts.gov/judicial-directory/",
+      "accessedAt": "2026-08-12",
+      "supports": [
+        "identity",
+        "office_structure"
+      ]
+    },
+    {
+      "title": "Texas Secretary of State election-results archive",
+      "url": "https://www.sos.state.tx.us/elections/historical/index.shtml",
+      "accessedAt": "2026-08-12",
+      "supports": [
+        "election_history",
+        "party",
+        "term"
+      ]
+    },
+    {
+      "title": "Texas Ethics Commission campaign-finance search",
+      "url": "https://www.ethics.state.tx.us/search/cf/",
+      "accessedAt": "2026-08-12",
+      "supports": [
+        "campaign_finance_source_path"
+      ]
+    },
+    {
+      "title": "State Commission on Judicial Conduct",
+      "url": "https://www.scjc.texas.gov/",
+      "accessedAt": "2026-08-12",
+      "supports": [
+        "judicial_conduct_source_path"
+      ]
+    },
+    {
+      "title": "Texas Constitution, Article V",
+      "url": "https://statutes.capitol.texas.gov/Docs/CN/htm/CN.5.htm",
+      "accessedAt": "2026-08-12",
+      "supports": [
+        "constitutional_authority",
+        "office_structure",
+        "term_length"
+      ]
+    },
+    {
+      "title": "Texas Judges judicial comparisons",
+      "url": "https://texasjudges.org/judicial-comparisons/",
+      "accessedAt": "2026-08-12",
+      "supports": [
+        "party_context",
+        "portrait_publisher"
+      ]
+    },
+    {
+      "title": "Published portrait source",
+      "url": "https://texasjudges.org/wp-content/uploads/2025/04/texas-talk_ken-wise_webp.jpg",
+      "accessedAt": "2026-08-12",
+      "supports": [
+        "portrait",
+        "portrait_provenance"
+      ]
+    }
+  ],
+  "lastVerifiedAt": "2026-08-12",
+  "photo": "/images/officials/texas-accountability/tx-coa-14-place-7-ken-wise.jpg",
+  "photoSourceUrl": "https://texasjudges.org/wp-content/uploads/2025/04/texas-talk_ken-wise_webp.jpg",
+  "photoCredit": "Texas Judges justice portrait",
+  "photoRights": "Candidate/justice portrait published by Texas Judges; source provenance retained and reuse rights should be rechecked before redistribution outside RepWatchr.",
+  "accountabilityNotes": [
+    "Role-compatible accountability is based on opinions, orders, case records, and oral arguments; legislative roll calls are not substituted where they do not apply.",
+    "Positive-work claims remain pending until a primary record, date, measurable result, and independent context are attached.",
+    "Criticism and controversies remain pending until each claim is substantiated, attributed, dated, and paired with the official's response when available.",
+    "Campaign-finance totals, donors, industries/PACs, and expenditures remain unpublished until the correct filer and reporting period are matched.",
+    "Constituent sentiment remains unpublished until the collection window, source mix, jurisdiction-confidence method, duplicate/bot filtering, sample size, and uncertainty are disclosed.",
+    "No constitutional-alignment score is published without cited official actions, a transparent rubric, applicable provisions, uncertainty, and a RepWatchr-analysis/non-legal-judgment disclaimer."
+  ],
+  "fieldFreshness": {
+    "identity": {
+      "status": "current",
+      "reviewedAt": "2026-08-12",
+      "sourceUrl": "https://www.txcourts.gov/14thcoa/about-the-court/justices/"
+    },
+    "portrait": {
+      "status": "current",
+      "reviewedAt": "2026-08-12",
+      "sourceUrl": "https://texasjudges.org/wp-content/uploads/2025/04/texas-talk_ken-wise_webp.jpg",
+      "note": "Stored publisher portrait; verified at 800 by 800 pixels."
+    },
+    "contact": {
+      "status": "current",
+      "reviewedAt": "2026-08-12",
+      "sourceUrl": "https://www.txcourts.gov/14thcoa/contact-us/"
+    },
+    "term": {
+      "status": "current",
+      "reviewedAt": "2026-08-12",
+      "sourceUrl": "https://www.sos.state.tx.us/elections/historical/index.shtml",
+      "note": "Election year is matched to the public election cycle; the six-year end date is derived from Texas Constitution Article V."
+    },
+    "assignments": {
+      "status": "not_applicable",
+      "reviewedAt": "2026-08-12",
+      "sourceUrl": "https://www.txcourts.gov/14thcoa/about-the-court/justices/",
+      "note": "No standing legislative committee assignment applies to this judicial office."
+    },
+    "legislation": {
+      "status": "not_applicable",
+      "reviewedAt": "2026-08-12",
+      "sourceUrl": "https://search.txcourts.gov/DocketSrch.aspx?coa=coa14",
+      "note": "Sponsored legislation is not a function of this judicial office."
+    },
+    "votingRecord": {
+      "status": "not_applicable",
+      "reviewedAt": "2026-08-12",
+      "sourceUrl": "https://search.txcourts.gov/DocketSrch.aspx?coa=coa14",
+      "note": "Legislative roll calls do not apply; the role-compatible official record is linked separately."
+    },
+    "officialRecord": {
+      "status": "source_path_only",
+      "reviewedAt": "2026-08-12",
+      "sourceUrl": "https://search.txcourts.gov/DocketSrch.aspx?coa=coa14",
+      "note": "Individual opinions, orders, and case actions require record-level editorial review before evaluation."
+    },
+    "campaignFinance": {
+      "status": "pending_review",
+      "reviewedAt": "2026-08-12",
+      "sourceUrl": "https://www.ethics.state.tx.us/search/cf/",
+      "note": "Filer identity and reporting period are not yet matched."
+    },
+    "positiveWork": {
+      "status": "pending_review",
+      "reviewedAt": "2026-08-12",
+      "sourceUrl": "https://www.txcourts.gov/14thcoa/about-the-court/justices/"
+    },
+    "criticism": {
+      "status": "pending_review",
+      "reviewedAt": "2026-08-12",
+      "sourceUrl": "https://www.txcourts.gov/14thcoa/about-the-court/justices/"
+    },
+    "sentiment": {
+      "status": "pending_review",
+      "reviewedAt": "2026-08-12",
+      "sourceUrl": "https://www.txcourts.gov/14thcoa/about-the-court/justices/"
+    },
+    "constitutionalAlignment": {
+      "status": "pending_review",
+      "reviewedAt": "2026-08-12",
+      "sourceUrl": "https://statutes.capitol.texas.gov/Docs/CN/htm/CN.5.htm"
+    }
+  },
+  "committeeAssignments": []
+}
