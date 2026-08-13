@@ -22,9 +22,9 @@
     "email": "ellen.troxclair@house.texas.gov",
     "website": "https://house.texas.gov/members/4385"
   },
-  "bio": "Representative Ellen Troxclair is the proven conservative voice for Texas House District 19, the heart of Hill Country. Elected in a decisive victory in 2022, she served in the 88th Legislative session and subsequent special sessions on the Homeland Security & Public Safety Committee, Culture, Recreation, & Tourism Committee, House Select Committee on Community Safety, and Select Study Committee on Sustainable Property Tax Relief. She is devoted mom, non-profit leader, and small business owner who is grateful to represent Blanco, Burnet, Gillespie, Kendall and western Travis Counties. Representative Troxclair was a key advocate in passing the largest property tax cut in United States history, providing unprecedented funding to secure our border,.",
+  "bio": "Ellen Troxclair represents House District 19 in the Texas House of Representatives. The current official House profile lists service on Delivery of Government Efficiency, Governmental Oversight, Select, Ways & Means.",
   "campaignPromises": [],
-  "reviewStatus": "source_seeded",
+  "reviewStatus": "record_enriched",
   "state": "TX",
   "sourceLinks": [
     {
@@ -41,7 +41,7 @@
     {
       "title": "Official current Texas House roster API",
       "url": "https://house.texas.gov/api/getMembers",
-      "accessedAt": "2026-08-07",
+      "accessedAt": "2026-08-13",
       "supports": [
         "current_office",
         "district",
@@ -92,10 +92,11 @@
     },
     {
       "title": "Texas Legislature Online vote-information guide",
-      "url": "https://capitol.texas.gov/help/findvoteinfo.aspx",
-      "accessedAt": "2026-08-07",
+      "url": "https://capitol.texas.gov/billlookup/voteinfo.aspx",
+      "accessedAt": "2026-08-13",
       "supports": [
-        "voting_record_method"
+        "voting_record_method",
+        "record_vote_lookup"
       ]
     },
     {
@@ -132,9 +133,19 @@
       "supports": [
         "portrait_provenance"
       ]
+    },
+    {
+      "title": "Official Texas House votes-by-date ledger",
+      "url": "https://capitol.texas.gov/Reports/GeneralVotesByDateHouse.aspx",
+      "accessedAt": "2026-08-13",
+      "supports": [
+        "record_level_votes",
+        "voting_record_summary",
+        "roll_call_links"
+      ]
     }
   ],
-  "lastVerifiedAt": "2026-08-07",
+  "lastVerifiedAt": "2026-08-13",
   "photoRights": "Stored with source attribution and site-terms provenance; reuse rights should be rechecked before redistribution outside RepWatchr.",
   "nextElection": "2026 general election",
   "committeeAssignments": [
@@ -143,6 +154,7 @@
     "Ways & Means"
   ],
   "accountabilityNotes": [
+    "Voting-record summary now reflects source-linked Texas House record-vote rows. It reports indexed positions only and does not infer motive, ideology, constitutional alignment, or complete attendance.",
     "Positive work and constituent benefit claims remain pending editorial review until a primary record and a response or independent context are attached.",
     "Criticism and controversies remain pending editorial review until each claim is substantiated, attributed, dated, and paired with the official's response when available.",
     "Campaign-finance totals, donors, industries/PACs, and expenditures remain unpublished until the correct filer and reporting period are matched to Texas Ethics Commission records.",
@@ -152,8 +164,9 @@
   "fieldFreshness": {
     "identity": {
       "status": "current",
-      "reviewedAt": "2026-08-07",
-      "sourceUrl": "https://house.texas.gov/api/getMembers"
+      "reviewedAt": "2026-08-13",
+      "sourceUrl": "https://house.texas.gov/api/getMembers",
+      "note": "Matched to the current official Texas House roster by full name and district profile."
     },
     "portrait": {
       "status": "current",
@@ -183,10 +196,10 @@
       "note": "Individual bills require record-level editorial review."
     },
     "votingRecord": {
-      "status": "source_path_only",
-      "reviewedAt": "2026-08-07",
-      "sourceUrl": "https://capitol.texas.gov/help/findvoteinfo.aspx",
-      "note": "Vote rows require official journals or reports."
+      "status": "current",
+      "reviewedAt": "2026-08-13",
+      "sourceUrl": "https://capitol.texas.gov/Reports/GeneralVotesByDateHouse.aspx",
+      "note": "4,507 official House positions are indexed for the stated collection window; 60 recent source-linked rows are stored for profile display."
     },
     "campaignFinance": {
       "status": "pending_review",
@@ -213,6 +226,30 @@
       "status": "pending_review",
       "reviewedAt": "2026-08-07",
       "sourceUrl": "https://capitol.texas.gov/help/findvoteinfo.aspx"
+    },
+    "biography": {
+      "status": "current",
+      "reviewedAt": "2026-08-13",
+      "sourceUrl": "https://house.texas.gov/members/4385",
+      "note": "Concise neutral summary derived from the current official House member page and committee assignments."
     }
+  },
+  "votingRecordEvidence": {
+    "status": "record_level_evidence_loaded",
+    "chamber": "Texas House",
+    "coverageWindow": "Texas Legislature records from 2025-01-14 through 2026-06-21",
+    "indexedPositions": 4507,
+    "positionCounts": {
+      "yea": 3434,
+      "nay": 912,
+      "present": 3,
+      "notVoting": 158,
+      "other": 0
+    },
+    "storedRecordRows": 60,
+    "latestRecordedVoteDate": "2025-09-03",
+    "sourceUrl": "https://capitol.texas.gov/Reports/GeneralVotesByDateHouse.aspx",
+    "reviewedAt": "2026-08-13",
+    "methodology": "RepWatchr indexes the member position printed in official Texas House record-vote material. Totals describe loaded positions in the stated collection window; they are not an attendance, ideology, constitutional, or performance score."
   }
 }
