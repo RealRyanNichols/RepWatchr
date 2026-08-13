@@ -18,6 +18,8 @@ Voting-record coverage moved from `source_path_only` to `current`: every profile
 
 The shared responsive RepWatchr dashboard/report-card system was reused without a design mutation. Existing compliant stored portraits were retained; all 25 pass the 500-pixel minimum-dimension gate without upscaling. No chart, grade, sentiment result, finance total, or constitutional score was added without sufficient underlying data.
 
+Production visual QA also corrected the shared footer logo's responsive-image sizing hint. The 48-pixel logo now requests an appropriately sized optimized asset instead of a failing oversized variant.
+
 ## Evidence deliberately not published
 
 - Texas Ethics Commission, local campaign-filing, and FEC filer identities/reporting periods were not individually matched. No campaign totals, donors, industries/PACs, or expenditures were inferred.

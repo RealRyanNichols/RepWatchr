@@ -32,6 +32,7 @@ export default function Footer() {
               alt="RepWatchr"
               width={1254}
               height={1254}
+              sizes="48px"
               className="mb-2 h-12 w-12 rounded-xl bg-white object-contain"
             />
             <h3 className="text-lg font-black text-white">
