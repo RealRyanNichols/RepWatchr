@@ -22,18 +22,19 @@
     "email": "cesar.blanco@senate.texas.gov",
     "website": "https://www.senate.texas.gov/member.php?d=29"
   },
-  "bio": "César Blanco currently represents Texas Senate District 29. The official Senate profile lists Business and Commerce, Health and Human Services, Natural Resources, and additional assignments. Individual bills, roll calls, finance figures, public-record findings, and sentiment publish only after their evidence gates pass.",
+  "bio": "César Blanco currently represents Texas Senate District 29. The official Senate roster and member page verify the assignment and list Business and Commerce, Health and Human Services, Natural Resources, and additional committees. RepWatchr links the official bill-author report, vote guide, and Senate journal; findings publish only after record-level review.",
   "campaignPromises": [],
   "reviewStatus": "source_seeded",
   "state": "TX",
   "sourceLinks": [
     {
-      "title": "Official Texas Senate member profile",
+      "title": "Official Texas Senate member profile, biography, committees, and contact",
       "url": "https://www.senate.texas.gov/member.php?d=29",
-      "accessedAt": "2026-08-07",
+      "accessedAt": "2026-08-13",
       "supports": [
         "identity",
-        "office",
+        "current_office",
+        "district",
         "biography",
         "committees",
         "contact"
@@ -42,7 +43,7 @@
     {
       "title": "Official current Texas Senate roster",
       "url": "https://www.senate.texas.gov/members.php",
-      "accessedAt": "2026-08-07",
+      "accessedAt": "2026-08-13",
       "supports": [
         "current_office",
         "district",
@@ -52,49 +53,83 @@
     {
       "title": "Official Texas Senate directory",
       "url": "https://www.senate.texas.gov/directory.php",
-      "accessedAt": "2026-08-07",
+      "accessedAt": "2026-08-13",
       "supports": [
         "contact",
-        "district"
+        "district",
+        "constituent_service"
+      ]
+    },
+    {
+      "title": "Official 89th Legislature committee directory",
+      "url": "https://www.senate.texas.gov/committees.php",
+      "accessedAt": "2026-08-13",
+      "supports": [
+        "committees",
+        "committee_structure"
       ]
     },
     {
       "title": "Texas Legislature Online bills by author",
       "url": "https://capitol.texas.gov/Reports/Report.aspx?LegSess=892&ID=author&code=A1330",
-      "accessedAt": "2026-08-07",
+      "accessedAt": "2026-08-13",
       "supports": [
-        "sponsored_legislation"
+        "sponsored_legislation",
+        "bill_status",
+        "official_actions"
       ]
     },
     {
       "title": "Texas Legislature Online vote-information guide",
       "url": "https://capitol.texas.gov/help/findvoteinfo.aspx",
-      "accessedAt": "2026-08-07",
+      "accessedAt": "2026-08-13",
       "supports": [
-        "voting_record_method"
+        "voting_record_method",
+        "roll_call_source_path"
+      ]
+    },
+    {
+      "title": "Official Texas Senate journal",
+      "url": "https://journals.senate.texas.gov/",
+      "accessedAt": "2026-08-13",
+      "supports": [
+        "floor_actions",
+        "roll_calls",
+        "journal_record"
       ]
     },
     {
       "title": "Texas Ethics Commission campaign-finance search",
       "url": "https://www.ethics.state.tx.us/search/cf/",
-      "accessedAt": "2026-08-07",
+      "accessedAt": "2026-08-13",
       "supports": [
         "campaign_finance_source_path"
       ]
     },
     {
-      "title": "Texas Secretary of State election archive",
+      "title": "Texas Secretary of State election-results archive",
       "url": "https://www.sos.state.tx.us/elections/historical/index.shtml",
-      "accessedAt": "2026-08-07",
+      "accessedAt": "2026-08-13",
       "supports": [
         "term",
-        "election_history"
+        "election_history",
+        "party"
+      ]
+    },
+    {
+      "title": "Texas Constitution, Article III",
+      "url": "https://statutes.capitol.texas.gov/Docs/CN/htm/CN.3.htm",
+      "accessedAt": "2026-08-13",
+      "supports": [
+        "constitutional_authority",
+        "office_structure",
+        "term_length"
       ]
     },
     {
       "title": "Texas Tribune elected-official directory",
       "url": "https://directory.texastribune.org/cesar-j-blanco/",
-      "accessedAt": "2026-08-07",
+      "accessedAt": "2026-08-13",
       "supports": [
         "portrait",
         "party",
@@ -105,22 +140,23 @@
     {
       "title": "Stored portrait source and rights provenance",
       "url": "https://commons.wikimedia.org/wiki/File:Cesar_Blanco_Open_Congress_Austin_2023.jpg",
-      "accessedAt": "2026-08-07",
+      "accessedAt": "2026-08-13",
       "supports": [
         "portrait",
         "portrait_provenance"
       ]
     },
     {
-      "title": "Texas Tribune site terms",
+      "title": "Texas Tribune portrait-publisher terms",
       "url": "https://www.texastribune.org/about/terms-of-service/",
-      "accessedAt": "2026-08-07",
+      "accessedAt": "2026-08-13",
       "supports": [
-        "portrait_provenance"
+        "portrait_provenance",
+        "rights_recheck"
       ]
     }
   ],
-  "lastVerifiedAt": "2026-08-07",
+  "lastVerifiedAt": "2026-08-13",
   "photoRights": "Creative Commons Attribution 4.0 International (CC BY 4.0); attribution and source retained.",
   "nextElection": "2028 general election",
   "committeeAssignments": [
@@ -133,76 +169,98 @@
     "Religious Liberty, Select"
   ],
   "accountabilityNotes": [
-    "Positive work and constituent benefit claims remain pending editorial review until a primary record and a response or independent context are attached.",
-    "Criticism and controversies remain pending editorial review until each claim is substantiated, attributed, dated, and paired with the official's response when available.",
-    "Campaign-finance totals, donors, industries/PACs, and expenditures remain unpublished until the correct filer and reporting period are matched to Texas Ethics Commission records.",
-    "Constituent sentiment remains unpublished until the sample discloses its collection window, source mix, jurisdiction-confidence method, duplicate/bot filtering, sample size, and uncertainty.",
-    "A constitutional-alignment score is not published without cited votes, a public rubric, applicable constitutional provisions, uncertainty, and a RepWatchr-analysis disclaimer."
+    "Legislative source paths are linked; availability of a record is not treated as a favorable or unfavorable finding without record-level review.",
+    "Positive-work claims remain pending until a dated primary record, measurable result, and independent context are attached.",
+    "Criticism and controversies remain pending until each claim is substantiated, attributed, dated, and paired with the official's response when available.",
+    "Campaign-finance totals, donors, industries/PACs, expenditures, and reporting periods remain unpublished until the correct filer is matched.",
+    "Constituent sentiment remains unpublished until the collection window, source mix, jurisdiction-confidence method, duplicate/bot filtering, sample size, and uncertainty are disclosed.",
+    "No constitutional-alignment score is published without cited official actions, a transparent rubric, applicable provisions, uncertainty, and a RepWatchr-analysis/non-legal-judgment disclaimer."
   ],
   "fieldFreshness": {
     "identity": {
       "status": "current",
-      "reviewedAt": "2026-08-07",
+      "reviewedAt": "2026-08-13",
       "sourceUrl": "https://www.senate.texas.gov/members.php"
     },
     "portrait": {
       "status": "current",
-      "reviewedAt": "2026-08-07",
+      "reviewedAt": "2026-08-13",
       "sourceUrl": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Cesar_Blanco_Open_Congress_Austin_2023.jpg",
       "note": "941x1412; 834161 bytes"
     },
     "contact": {
       "status": "current",
-      "reviewedAt": "2026-08-07",
+      "reviewedAt": "2026-08-13",
       "sourceUrl": "https://www.senate.texas.gov/member.php?d=29"
     },
     "term": {
       "status": "current",
-      "reviewedAt": "2026-08-07",
-      "sourceUrl": "https://directory.texastribune.org/cesar-j-blanco/"
+      "reviewedAt": "2026-08-13",
+      "sourceUrl": "https://www.sos.state.tx.us/elections/historical/index.shtml"
     },
     "assignments": {
       "status": "current",
-      "reviewedAt": "2026-08-07",
+      "reviewedAt": "2026-08-13",
       "sourceUrl": "https://www.senate.texas.gov/member.php?d=29"
     },
     "legislation": {
       "status": "source_path_only",
-      "reviewedAt": "2026-08-07",
+      "reviewedAt": "2026-08-13",
       "sourceUrl": "https://capitol.texas.gov/Reports/Report.aspx?LegSess=892&ID=author&code=A1330",
-      "note": "Individual bills require record-level editorial review."
+      "note": "Individual bills require record-level review."
     },
     "votingRecord": {
       "status": "source_path_only",
-      "reviewedAt": "2026-08-07",
-      "sourceUrl": "https://capitol.texas.gov/help/findvoteinfo.aspx",
-      "note": "Vote rows require official journals or reports."
+      "reviewedAt": "2026-08-13",
+      "sourceUrl": "https://journals.senate.texas.gov/",
+      "note": "Journal-level roll-call review remains pending."
     },
     "campaignFinance": {
       "status": "pending_review",
-      "reviewedAt": "2026-08-07",
+      "reviewedAt": "2026-08-13",
       "sourceUrl": "https://www.ethics.state.tx.us/search/cf/",
-      "note": "Filer and reporting period are not yet matched."
+      "note": "Filer and reporting period are not matched."
     },
     "positiveWork": {
       "status": "pending_review",
-      "reviewedAt": "2026-08-07",
+      "reviewedAt": "2026-08-13",
       "sourceUrl": "https://www.senate.texas.gov/member.php?d=29"
     },
     "criticism": {
       "status": "pending_review",
-      "reviewedAt": "2026-08-07",
+      "reviewedAt": "2026-08-13",
       "sourceUrl": "https://www.senate.texas.gov/member.php?d=29"
     },
     "sentiment": {
       "status": "pending_review",
-      "reviewedAt": "2026-08-07",
+      "reviewedAt": "2026-08-13",
       "sourceUrl": "https://www.senate.texas.gov/member.php?d=29"
     },
     "constitutionalAlignment": {
       "status": "pending_review",
-      "reviewedAt": "2026-08-07",
-      "sourceUrl": "https://capitol.texas.gov/help/findvoteinfo.aspx"
+      "reviewedAt": "2026-08-13",
+      "sourceUrl": "https://statutes.capitol.texas.gov/Docs/CN/htm/CN.3.htm"
     }
+  },
+  "officialRecord": {
+    "type": "legislative",
+    "session": "89th Legislature",
+    "status": "source_path_only",
+    "billsByAuthorUrl": "https://capitol.texas.gov/Reports/Report.aspx?LegSess=892&ID=author&code=A1330",
+    "voteInformationUrl": "https://capitol.texas.gov/help/findvoteinfo.aspx",
+    "journalUrl": "https://journals.senate.texas.gov/",
+    "financeSourceUrl": "https://www.ethics.state.tx.us/search/cf/",
+    "note": "Official paths support review; RepWatchr has not converted source availability into an uncited score."
+  },
+  "campaignFinanceDisclosure": {
+    "status": "pending_review",
+    "sourceUrl": "https://www.ethics.state.tx.us/search/cf/",
+    "reviewedAt": "2026-08-13",
+    "note": "Totals, donors, industries/PACs, expenditures, and reporting period are withheld until the officeholder filer is matched without ambiguity."
+  },
+  "sentimentDisclosure": {
+    "status": "pending_review",
+    "reviewedAt": "2026-08-13",
+    "note": "No sentiment is published without jurisdiction-confidence, sampling, collection-window, platform-mix, duplication/bot, and uncertainty disclosures."
   }
 }

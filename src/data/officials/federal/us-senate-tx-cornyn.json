@@ -20,28 +20,220 @@
     "email": "https://www.cornyn.senate.gov/contact",
     "website": "https://www.cornyn.senate.gov"
   },
-  "bio": "John Cornyn serves as a U.S. Senator for Texas. This RepWatchr starter profile is source-seeded from current congressional roster data, official public links, and public congressional photo sources.",
+  "bio": "John Cornyn currently serves as U.S. Senator for Texas. The official congressional record verifies the assignment and lists Committee on Finance; Committee on the Judiciary; Select Committee on Intelligence; Committee on Foreign Relations; Committee on the Budget. RepWatchr links sponsored-legislation and roll-call paths below; findings remain unrated until cited actions are reviewed in context.",
   "campaignPromises": [],
   "reviewStatus": "source_seeded",
   "state": "TX",
   "bioguideId": "C001056",
   "sourceLinks": [
     {
-      "title": "Official congressional website",
-      "url": "https://www.cornyn.senate.gov"
+      "title": "Official U.S. Senate member website",
+      "url": "https://www.cornyn.senate.gov",
+      "accessedAt": "2026-08-13",
+      "supports": [
+        "identity",
+        "current_office",
+        "district",
+        "contact",
+        "committees"
+      ]
     },
     {
-      "title": "Congress legislators current roster",
-      "url": "https://raw.githubusercontent.com/unitedstates/congress-legislators/master/legislators-current.yaml"
+      "title": "Official committee assignments",
+      "url": "https://www.cornyn.senate.gov/about/committee-assignments/",
+      "accessedAt": "2026-08-13",
+      "supports": [
+        "committees",
+        "leadership"
+      ]
+    },
+    {
+      "title": "Congress.gov member profile",
+      "url": "https://www.congress.gov/member/john-cornyn/C001056",
+      "accessedAt": "2026-08-13",
+      "supports": [
+        "identity",
+        "legislative_activity"
+      ]
+    },
+    {
+      "title": "Congress.gov sponsored legislation",
+      "url": "https://www.congress.gov/member/john-cornyn/C001056?q=%7B%22sponsorship%22%3A%22sponsored%22%7D",
+      "accessedAt": "2026-08-13",
+      "supports": [
+        "sponsored_legislation",
+        "bill_status",
+        "official_actions"
+      ]
+    },
+    {
+      "title": "Official Senate roll-call votes",
+      "url": "https://www.senate.gov/legislative/votes_new.htm",
+      "accessedAt": "2026-08-13",
+      "supports": [
+        "roll_calls",
+        "voting_record"
+      ]
+    },
+    {
+      "title": "Official 119th Congress Senate vote menu",
+      "url": "https://www.senate.gov/legislative/LIS/roll_call_lists/vote_menu_119_2.htm",
+      "accessedAt": "2026-08-13",
+      "supports": [
+        "official_actions",
+        "voting_record_method"
+      ]
+    },
+    {
+      "title": "Federal Election Commission candidate data",
+      "url": "https://www.fec.gov/data/candidates/",
+      "accessedAt": "2026-08-13",
+      "supports": [
+        "campaign_finance_source_path",
+        "reporting_periods"
+      ]
+    },
+    {
+      "title": "Texas Secretary of State election-results archive",
+      "url": "https://www.sos.state.tx.us/elections/historical/index.shtml",
+      "accessedAt": "2026-08-13",
+      "supports": [
+        "election_history",
+        "term"
+      ]
+    },
+    {
+      "title": "Constitution Annotated, Article I",
+      "url": "https://constitution.congress.gov/constitution/article-1/",
+      "accessedAt": "2026-08-13",
+      "supports": [
+        "constitutional_authority",
+        "office_structure",
+        "term_length"
+      ]
     },
     {
       "title": "Biographical Directory of the United States Congress",
-      "url": "https://bioguide.congress.gov/search/bio/C001056"
+      "url": "https://bioguide.congress.gov/search/bio/C001056",
+      "accessedAt": "2026-08-13",
+      "supports": [
+        "identity",
+        "biography",
+        "service_history"
+      ]
     },
     {
-      "title": "Public-domain congressional portrait source",
-      "url": "https://commons.wikimedia.org/wiki/File:John_Cornyn_official_senate_portrait.jpg"
+      "title": "Published portrait source",
+      "url": "https://commons.wikimedia.org/wiki/Special:FilePath/John%20Cornyn%20official%20senate%20portrait.jpg",
+      "accessedAt": "2026-08-13",
+      "supports": [
+        "portrait",
+        "portrait_provenance"
+      ]
     }
   ],
-  "lastVerifiedAt": "2026-04-29"
+  "lastVerifiedAt": "2026-08-13",
+  "committeeAssignments": [
+    "Committee on Finance",
+    "Committee on the Judiciary",
+    "Select Committee on Intelligence",
+    "Committee on Foreign Relations",
+    "Committee on the Budget"
+  ],
+  "nextElection": "2026 general election",
+  "photoRights": "Official or public-domain congressional portrait; source provenance retained.",
+  "accountabilityNotes": [
+    "Congressional source paths are linked; availability of a record is not treated as a favorable or unfavorable finding without record-level review.",
+    "Positive-work claims remain pending until a dated primary record, measurable result, and independent context are attached.",
+    "Criticism and controversies remain pending until each claim is substantiated, attributed, dated, and paired with the official's response when available.",
+    "Campaign-finance totals, donors, industries/PACs, expenditures, and reporting periods remain unpublished until the correct filer is matched.",
+    "Constituent sentiment remains unpublished until the collection window, source mix, jurisdiction-confidence method, duplicate/bot filtering, sample size, and uncertainty are disclosed.",
+    "No constitutional-alignment score is published without cited official actions, a transparent rubric, applicable provisions, uncertainty, and a RepWatchr-analysis/non-legal-judgment disclaimer."
+  ],
+  "officialRecord": {
+    "type": "federal_legislative",
+    "congress": "119th Congress, 2nd Session",
+    "status": "source_path_only",
+    "sponsoredLegislationUrl": "https://www.congress.gov/member/john-cornyn/C001056?q=%7B%22sponsorship%22%3A%22sponsored%22%7D",
+    "rollCallUrl": "https://www.senate.gov/legislative/votes_new.htm",
+    "financeSourceUrl": "https://www.fec.gov/data/candidates/",
+    "note": "Official legislative and vote paths support record-level review; no uncited score is inferred."
+  },
+  "campaignFinanceDisclosure": {
+    "status": "pending_review",
+    "sourceUrl": "https://www.fec.gov/data/candidates/",
+    "reviewedAt": "2026-08-13",
+    "note": "Totals, donors, industries/PACs, expenditures, and reporting period are withheld until the officeholder filer is matched without ambiguity."
+  },
+  "sentimentDisclosure": {
+    "status": "pending_review",
+    "reviewedAt": "2026-08-13",
+    "note": "No sentiment is published without jurisdiction-confidence, sampling, collection-window, platform-mix, duplication/bot, and uncertainty disclosures."
+  },
+  "fieldFreshness": {
+    "identity": {
+      "status": "current",
+      "reviewedAt": "2026-08-13",
+      "sourceUrl": "https://www.cornyn.senate.gov"
+    },
+    "portrait": {
+      "status": "current",
+      "reviewedAt": "2026-08-13",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/John%20Cornyn%20official%20senate%20portrait.jpg",
+      "note": "Stored portrait passed the 500-pixel minimum-dimension gate."
+    },
+    "contact": {
+      "status": "current",
+      "reviewedAt": "2026-08-13",
+      "sourceUrl": "https://www.cornyn.senate.gov"
+    },
+    "term": {
+      "status": "current",
+      "reviewedAt": "2026-08-13",
+      "sourceUrl": "https://bioguide.congress.gov/search/bio/C001056"
+    },
+    "assignments": {
+      "status": "current",
+      "reviewedAt": "2026-08-13",
+      "sourceUrl": "https://www.cornyn.senate.gov/about/committee-assignments/"
+    },
+    "legislation": {
+      "status": "source_path_only",
+      "reviewedAt": "2026-08-13",
+      "sourceUrl": "https://www.congress.gov/member/john-cornyn/C001056?q=%7B%22sponsorship%22%3A%22sponsored%22%7D",
+      "note": "Individual measures require record-level review."
+    },
+    "votingRecord": {
+      "status": "source_path_only",
+      "reviewedAt": "2026-08-13",
+      "sourceUrl": "https://www.senate.gov/legislative/votes_new.htm",
+      "note": "Roll calls require vote-level context review."
+    },
+    "campaignFinance": {
+      "status": "pending_review",
+      "reviewedAt": "2026-08-13",
+      "sourceUrl": "https://www.fec.gov/data/candidates/",
+      "note": "Candidate identity and reporting period are not matched to published totals."
+    },
+    "positiveWork": {
+      "status": "pending_review",
+      "reviewedAt": "2026-08-13",
+      "sourceUrl": "https://www.cornyn.senate.gov"
+    },
+    "criticism": {
+      "status": "pending_review",
+      "reviewedAt": "2026-08-13",
+      "sourceUrl": "https://www.cornyn.senate.gov"
+    },
+    "sentiment": {
+      "status": "pending_review",
+      "reviewedAt": "2026-08-13",
+      "sourceUrl": "https://www.cornyn.senate.gov"
+    },
+    "constitutionalAlignment": {
+      "status": "pending_review",
+      "reviewedAt": "2026-08-13",
+      "sourceUrl": "https://constitution.congress.gov/constitution/article-1/"
+    }
+  }
 }

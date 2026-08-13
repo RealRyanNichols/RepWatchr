@@ -3,9 +3,9 @@
   "name": "Tom Maynard",
   "firstName": "Tom",
   "lastName": "Maynard",
-  "photo": "https://directory.texastribune.org/static/images/headshots/tom-maynard.jpg",
-  "photoSourceUrl": "https://directory.texastribune.org/tom-maynard/",
-  "photoCredit": "Texas Tribune elected-officials directory portrait; identity cross-checked against the official SBOE roster.",
+  "photo": "/images/officials/texas-accountability/tx-sboe-d10-tom-maynard.jpg",
+  "photoSourceUrl": "https://directory.texastribune.org/static/images/headshots/tom-maynard.jpg",
+  "photoCredit": "Texas Tribune elected-officials directory portrait; identity cross-checked against the official SBOE member page.",
   "party": "R",
   "level": "state",
   "position": "Board Member, Texas State Board of Education",
@@ -17,37 +17,248 @@
   "termStart": "2025-01-01",
   "termEnd": "2028-12-31",
   "contactInfo": {
-    "website": "https://sboe.texas.gov/state-board-of-education/sboe-board-members/sboe-member-district-10"
+    "website": "https://sboe.texas.gov/state-board-of-education/sboe-board-members/sboe-member-district-10",
+    "phone": "512-463-9007"
   },
-  "bio": "Tom Maynard is the current elected State Board of Education member for District 10 and is listed by the official board roster as based in Florence. RepWatchr keeps decision, campaign-finance, and constituent-sentiment modules unrated until their underlying records are loaded and reviewed.",
+  "bio": "Tom Maynard currently represents Texas State Board of Education District 10. The official member page verifies the term and lists Committee on School Finance/Permanent School Fund — Chair; Ad Hoc Committee on Mathematics — Member. RepWatchr treats agendas, minutes, committee records, and board votes as the role-compatible accountability record and does not substitute legislative roll calls for board work.",
   "campaignPromises": [],
   "reviewStatus": "source_seeded",
   "state": "TX",
   "sourceLinks": [
     {
-      "title": "Official SBOE member biography",
-      "url": "https://sboe.texas.gov/state-board-of-education/sboe-board-members/sboe-member-district-10"
+      "title": "Official SBOE member biography, term, committee, and contact",
+      "url": "https://sboe.texas.gov/state-board-of-education/sboe-board-members/sboe-member-district-10",
+      "accessedAt": "2026-08-13",
+      "supports": [
+        "identity",
+        "current_office",
+        "district",
+        "term",
+        "committees",
+        "contact",
+        "biography"
+      ]
     },
     {
-      "title": "Official SBOE current-member roster",
-      "url": "https://sboe.texas.gov/state-board-of-education/sboe-board-members/sboe-members"
+      "title": "Official current SBOE member roster",
+      "url": "https://sboe.texas.gov/state-board-of-education/sboe-board-members/sboe-members",
+      "accessedAt": "2026-08-13",
+      "supports": [
+        "current_office",
+        "district",
+        "party"
+      ]
     },
     {
-      "title": "Texas Tribune elected-official directory and portrait",
-      "url": "https://directory.texastribune.org/tom-maynard/"
+      "title": "Official current SBOE meeting agenda",
+      "url": "https://sboe.texas.gov/state-board-of-education/meetings/meeting-agenda-current",
+      "accessedAt": "2026-08-13",
+      "supports": [
+        "board_actions",
+        "agenda",
+        "public_record"
+      ]
     },
     {
-      "title": "Official SBOE meeting agendas",
-      "url": "https://sboe.texas.gov/state-board-of-education/meetings/meeting-agenda-current"
+      "title": "Official SBOE meeting calendar",
+      "url": "https://sboe.texas.gov/state-board-of-education/meetings/sboe-meetings",
+      "accessedAt": "2026-08-13",
+      "supports": [
+        "meeting_schedule",
+        "public_participation"
+      ]
     },
     {
-      "title": "Texas campaign-finance disclosure search",
-      "url": "https://www.ethics.state.tx.us/search/cf/"
+      "title": "Official 2026 SBOE meeting archive",
+      "url": "https://sboe.texas.gov/state-board-of-education/sboe-2026",
+      "accessedAt": "2026-08-13",
+      "supports": [
+        "minutes",
+        "votes",
+        "committee_actions",
+        "board_actions"
+      ]
     },
     {
-      "title": "Texas election-results archive",
-      "url": "https://www.sos.state.tx.us/elections/historical/index.shtml"
+      "title": "SBOE operating rules",
+      "url": "https://sboe.texas.gov/state-board-of-education/sboe-operating-rules",
+      "accessedAt": "2026-08-13",
+      "supports": [
+        "board_procedure",
+        "public_testimony",
+        "voting_method"
+      ]
+    },
+    {
+      "title": "Texas Education Code, Chapter 7",
+      "url": "https://statutes.capitol.texas.gov/Docs/ED/htm/ED.7.htm",
+      "accessedAt": "2026-08-13",
+      "supports": [
+        "statutory_authority",
+        "board_duties"
+      ]
+    },
+    {
+      "title": "Texas Constitution, Article VII",
+      "url": "https://statutes.capitol.texas.gov/Docs/CN/htm/CN.7.htm",
+      "accessedAt": "2026-08-13",
+      "supports": [
+        "constitutional_authority",
+        "education_structure"
+      ]
+    },
+    {
+      "title": "Texas Secretary of State election-results archive",
+      "url": "https://www.sos.state.tx.us/elections/historical/index.shtml",
+      "accessedAt": "2026-08-13",
+      "supports": [
+        "term",
+        "election_history",
+        "party"
+      ]
+    },
+    {
+      "title": "Texas Ethics Commission campaign-finance search",
+      "url": "https://www.ethics.state.tx.us/search/cf/",
+      "accessedAt": "2026-08-13",
+      "supports": [
+        "campaign_finance_source_path"
+      ]
+    },
+    {
+      "title": "Texas Tribune elected-official directory",
+      "url": "https://directory.texastribune.org/tom-maynard/",
+      "accessedAt": "2026-08-13",
+      "supports": [
+        "portrait",
+        "party",
+        "biography_context"
+      ]
+    },
+    {
+      "title": "Published portrait asset",
+      "url": "https://directory.texastribune.org/static/images/headshots/tom-maynard.jpg",
+      "accessedAt": "2026-08-13",
+      "supports": [
+        "portrait",
+        "portrait_provenance"
+      ]
+    },
+    {
+      "title": "Texas Tribune portrait-publisher terms",
+      "url": "https://www.texastribune.org/about/terms-of-service/",
+      "accessedAt": "2026-08-13",
+      "supports": [
+        "portrait_provenance",
+        "rights_recheck"
+      ]
     }
   ],
-  "lastVerifiedAt": "2026-08-02"
+  "lastVerifiedAt": "2026-08-13",
+  "photoRights": "Stored with Texas Tribune attribution and site-terms provenance; reuse rights should be rechecked before redistribution outside RepWatchr.",
+  "committeeAssignments": [
+    "Committee on School Finance/Permanent School Fund — Chair",
+    "Ad Hoc Committee on Mathematics — Member"
+  ],
+  "nextElection": "2028 general election",
+  "accountabilityNotes": [
+    "Board-decision source paths are linked; availability of a record is not treated as a favorable or unfavorable finding without record-level review.",
+    "Positive-work claims remain pending until a dated primary record, measurable result, and independent context are attached.",
+    "Criticism and controversies remain pending until each claim is substantiated, attributed, dated, and paired with the official's response when available.",
+    "Campaign-finance totals, donors, industries/PACs, expenditures, and reporting periods remain unpublished until the correct filer is matched.",
+    "Constituent sentiment remains unpublished until the collection window, source mix, jurisdiction-confidence method, duplicate/bot filtering, sample size, and uncertainty are disclosed.",
+    "No constitutional-alignment score is published without cited official actions, a transparent rubric, applicable provisions, uncertainty, and a RepWatchr-analysis/non-legal-judgment disclaimer."
+  ],
+  "officialRecord": {
+    "type": "education_board",
+    "status": "source_path_only",
+    "agendaUrl": "https://sboe.texas.gov/state-board-of-education/meetings/meeting-agenda-current",
+    "meetingArchiveUrl": "https://sboe.texas.gov/state-board-of-education/sboe-2026",
+    "operatingRulesUrl": "https://sboe.texas.gov/state-board-of-education/sboe-operating-rules",
+    "financeSourceUrl": "https://www.ethics.state.tx.us/search/cf/",
+    "note": "Board agendas, minutes, committee records, and votes are linked for item-level review; no uncited performance score is inferred."
+  },
+  "campaignFinanceDisclosure": {
+    "status": "pending_review",
+    "sourceUrl": "https://www.ethics.state.tx.us/search/cf/",
+    "reviewedAt": "2026-08-13",
+    "note": "Totals, donors, industries/PACs, expenditures, and reporting period are withheld until the officeholder filer is matched without ambiguity."
+  },
+  "sentimentDisclosure": {
+    "status": "pending_review",
+    "reviewedAt": "2026-08-13",
+    "note": "No sentiment is published without jurisdiction-confidence, sampling, collection-window, platform-mix, duplication/bot, and uncertainty disclosures."
+  },
+  "fieldFreshness": {
+    "identity": {
+      "status": "current",
+      "reviewedAt": "2026-08-13",
+      "sourceUrl": "https://sboe.texas.gov/state-board-of-education/sboe-board-members/sboe-member-district-10"
+    },
+    "portrait": {
+      "status": "current",
+      "reviewedAt": "2026-08-13",
+      "sourceUrl": "https://directory.texastribune.org/static/images/headshots/tom-maynard.jpg",
+      "note": "Stored publisher portrait; verified at 1000 by 1000 pixels."
+    },
+    "contact": {
+      "status": "current",
+      "reviewedAt": "2026-08-13",
+      "sourceUrl": "https://sboe.texas.gov/state-board-of-education/sboe-board-members/sboe-member-district-10"
+    },
+    "term": {
+      "status": "current",
+      "reviewedAt": "2026-08-13",
+      "sourceUrl": "https://sboe.texas.gov/state-board-of-education/sboe-board-members/sboe-member-district-10"
+    },
+    "assignments": {
+      "status": "current",
+      "reviewedAt": "2026-08-13",
+      "sourceUrl": "https://sboe.texas.gov/state-board-of-education/sboe-board-members/sboe-member-district-10"
+    },
+    "legislation": {
+      "status": "not_applicable",
+      "reviewedAt": "2026-08-13",
+      "sourceUrl": "https://statutes.capitol.texas.gov/Docs/ED/htm/ED.7.htm",
+      "note": "Sponsored legislation is not a function of this board office."
+    },
+    "votingRecord": {
+      "status": "source_path_only",
+      "reviewedAt": "2026-08-13",
+      "sourceUrl": "https://sboe.texas.gov/state-board-of-education/sboe-2026",
+      "note": "Board minutes and action records require item-level editorial review."
+    },
+    "officialRecord": {
+      "status": "source_path_only",
+      "reviewedAt": "2026-08-13",
+      "sourceUrl": "https://sboe.texas.gov/state-board-of-education/sboe-2026",
+      "note": "Agendas, minutes, and committee actions are linked."
+    },
+    "campaignFinance": {
+      "status": "pending_review",
+      "reviewedAt": "2026-08-13",
+      "sourceUrl": "https://www.ethics.state.tx.us/search/cf/",
+      "note": "Filer identity and reporting period are not matched."
+    },
+    "positiveWork": {
+      "status": "pending_review",
+      "reviewedAt": "2026-08-13",
+      "sourceUrl": "https://sboe.texas.gov/state-board-of-education/sboe-board-members/sboe-member-district-10"
+    },
+    "criticism": {
+      "status": "pending_review",
+      "reviewedAt": "2026-08-13",
+      "sourceUrl": "https://sboe.texas.gov/state-board-of-education/sboe-board-members/sboe-member-district-10"
+    },
+    "sentiment": {
+      "status": "pending_review",
+      "reviewedAt": "2026-08-13",
+      "sourceUrl": "https://sboe.texas.gov/state-board-of-education/sboe-board-members/sboe-member-district-10"
+    },
+    "constitutionalAlignment": {
+      "status": "pending_review",
+      "reviewedAt": "2026-08-13",
+      "sourceUrl": "https://statutes.capitol.texas.gov/Docs/CN/htm/CN.7.htm"
+    }
+  }
 }

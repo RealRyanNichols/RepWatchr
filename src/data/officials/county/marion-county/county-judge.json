@@ -6,6 +6,7 @@
   "photo": "/images/races/marion-county-judge-2026/leward-lafleur-portrait.jpg",
   "photoSourceUrl": "https://www.facebook.com/lewardformarioncounty/",
   "photoCredit": "Public candidate portrait from Judge Leward J. LaFleur's campaign Facebook page",
+  "photoRights": "Official campaign-published portrait; source provenance retained and reuse rights should be rechecked before redistribution outside RepWatchr.",
   "party": "R",
   "level": "county",
   "position": "County Judge",
@@ -28,38 +29,197 @@
   "bio": "Leward J. LaFleur II is a U.S. Navy veteran who has served as Marion County Judge since 2018, presiding over Commissioners Court and carrying countywide administrative, budget, emergency-management, criminal-court, and probate responsibilities. Public records document regional workforce, transportation and water-policy leadership. Reported misconduct allegations remain disputed and procedurally unresolved; RepWatchr has not located a later public disposition as of July 27, 2026. His performance grade remains Not Rated while role-specific records are collected.",
   "sourceLinks": [
     {
-      "title": "Marion County: County Judge",
-      "url": "https://www.co.marion.tx.us/page/marion.County.Judge"
+      "title": "Marion County official County Judge page",
+      "url": "https://www.co.marion.tx.us/page/marion.County.Judge",
+      "accessedAt": "2026-08-13",
+      "supports": [
+        "identity",
+        "current_office",
+        "contact",
+        "duties"
+      ]
     },
     {
-      "title": "Marion County: 2026 elections and campaign filings",
-      "url": "https://marioncountytaxoffice.com/elections/"
+      "title": "Marion County Commissioners Court records",
+      "url": "https://www.co.marion.tx.us/page/marion.Commissioners.Court",
+      "accessedAt": "2026-08-13",
+      "supports": [
+        "agendas",
+        "minutes",
+        "county_actions",
+        "budget_record"
+      ]
+    },
+    {
+      "title": "Marion County elections and campaign filings",
+      "url": "https://marioncountytaxoffice.com/elections/",
+      "accessedAt": "2026-08-13",
+      "supports": [
+        "election_history",
+        "campaign_finance_source_path"
+      ]
     },
     {
       "title": "Official 2026 Republican primary results",
-      "url": "https://marioncountytaxoffice.com/wp-content/uploads/2026/03/OFFICIAL-RESULTS-REPUBLICAN-PARTY.pdf"
+      "url": "https://marioncountytaxoffice.com/wp-content/uploads/2026/03/OFFICIAL-RESULTS-REPUBLICAN-PARTY.pdf",
+      "accessedAt": "2026-08-13",
+      "supports": [
+        "context"
+      ]
     },
     {
       "title": "ETCOG: CEO–RTPO leadership biography",
-      "url": "https://www.etcog.org/etcog-announces-new-leadership-for-ceo-rtpo-board"
+      "url": "https://www.etcog.org/etcog-announces-new-leadership-for-ceo-rtpo-board",
+      "accessedAt": "2026-08-13",
+      "supports": [
+        "context"
+      ]
     },
     {
       "title": "News-Journal: 2018 appointment as Marion County Judge",
-      "url": "https://news-journal.com/2018/08/30/marion-county-judge-lex-jones-retires-lafleur-appointed/"
+      "url": "https://news-journal.com/2018/08/30/marion-county-judge-lex-jones-retires-lafleur-appointed/",
+      "accessedAt": "2026-08-13",
+      "supports": [
+        "context"
+      ]
     },
     {
       "title": "Marion County: March 2026 disaster declaration",
-      "url": "https://www.co.marion.tx.us/upload/page/1263/2026/03-2026%20MC%20Disaster%20Declaration.pdf"
+      "url": "https://www.co.marion.tx.us/upload/page/1263/2026/03-2026%20MC%20Disaster%20Declaration.pdf",
+      "accessedAt": "2026-08-13",
+      "supports": [
+        "context"
+      ]
     },
     {
       "title": "Texas OCA: Constitutional county courts",
-      "url": "https://www.txcourts.gov/media/1460595/constitutional-county-courts.pdf"
+      "url": "https://www.txcourts.gov/media/1460595/constitutional-county-courts.pdf",
+      "accessedAt": "2026-08-13",
+      "supports": [
+        "context"
+      ]
     },
     {
       "title": "KLTV: Allegations and LaFleur response",
-      "url": "https://www.kltv.com/2026/04/21/marion-county-judge-denies-allegations-unwanted-touching-halloween-party/"
+      "url": "https://www.kltv.com/2026/04/21/marion-county-judge-denies-allegations-unwanted-touching-halloween-party/",
+      "accessedAt": "2026-08-13",
+      "supports": [
+        "context"
+      ]
+    },
+    {
+      "title": "Texas Constitution, Article V",
+      "url": "https://statutes.capitol.texas.gov/Docs/CN/htm/CN.5.htm",
+      "accessedAt": "2026-08-13",
+      "supports": [
+        "constitutional_authority",
+        "office_structure"
+      ]
     }
   ],
   "reviewStatus": "needs_source_review",
-  "lastVerifiedAt": "2026-07-27"
+  "lastVerifiedAt": "2026-08-13",
+  "nextElection": "2026 general election",
+  "committeeAssignments": [
+    "Marion County Commissioners Court — Presiding officer"
+  ],
+  "accountabilityNotes": [
+    "County-governance and constitutional-court source paths are linked; availability of a record is not treated as a favorable or unfavorable finding without record-level review.",
+    "Positive-work claims remain pending until a dated primary record, measurable result, and independent context are attached.",
+    "Criticism and controversies remain pending until each claim is substantiated, attributed, dated, and paired with the official's response when available.",
+    "Campaign-finance totals, donors, industries/PACs, expenditures, and reporting periods remain unpublished until the correct filer is matched.",
+    "Constituent sentiment remains unpublished until the collection window, source mix, jurisdiction-confidence method, duplicate/bot filtering, sample size, and uncertainty are disclosed.",
+    "No constitutional-alignment score is published without cited official actions, a transparent rubric, applicable provisions, uncertainty, and a RepWatchr-analysis/non-legal-judgment disclaimer."
+  ],
+  "officialRecord": {
+    "type": "county_governance_and_constitutional_court",
+    "status": "source_path_only",
+    "commissionersCourtUrl": "https://www.co.marion.tx.us/page/marion.Commissioners.Court",
+    "constitutionalCourtDirectoryUrl": "https://www.txcourts.gov/media/1460595/constitutional-county-courts.pdf",
+    "financeSourceUrl": "https://marioncountytaxoffice.com/elections/",
+    "note": "Commissioners Court agendas, minutes, budgets, emergency actions, and role-compatible court records require item-level review."
+  },
+  "campaignFinanceDisclosure": {
+    "status": "pending_review",
+    "sourceUrl": "https://marioncountytaxoffice.com/elections/",
+    "reviewedAt": "2026-08-13",
+    "note": "Totals, donors, industries/PACs, expenditures, and reporting period are withheld until the officeholder filer is matched without ambiguity."
+  },
+  "sentimentDisclosure": {
+    "status": "pending_review",
+    "reviewedAt": "2026-08-13",
+    "note": "No sentiment is published without jurisdiction-confidence, sampling, collection-window, platform-mix, duplication/bot, and uncertainty disclosures."
+  },
+  "fieldFreshness": {
+    "identity": {
+      "status": "current",
+      "reviewedAt": "2026-08-13",
+      "sourceUrl": "https://www.co.marion.tx.us/page/marion.County.Judge"
+    },
+    "portrait": {
+      "status": "current",
+      "reviewedAt": "2026-08-13",
+      "sourceUrl": "https://www.facebook.com/lewardformarioncounty/",
+      "note": "Stored 2700 by 3420 pixel publisher portrait."
+    },
+    "contact": {
+      "status": "current",
+      "reviewedAt": "2026-08-13",
+      "sourceUrl": "https://www.co.marion.tx.us/page/marion.County.Judge"
+    },
+    "term": {
+      "status": "current",
+      "reviewedAt": "2026-08-13",
+      "sourceUrl": "https://marioncountytaxoffice.com/elections/"
+    },
+    "assignments": {
+      "status": "current",
+      "reviewedAt": "2026-08-13",
+      "sourceUrl": "https://www.co.marion.tx.us/page/marion.Commissioners.Court"
+    },
+    "legislation": {
+      "status": "not_applicable",
+      "reviewedAt": "2026-08-13",
+      "sourceUrl": "https://www.co.marion.tx.us/page/marion.Commissioners.Court",
+      "note": "Sponsored legislation is not a function of this county office."
+    },
+    "votingRecord": {
+      "status": "source_path_only",
+      "reviewedAt": "2026-08-13",
+      "sourceUrl": "https://www.co.marion.tx.us/page/marion.Commissioners.Court",
+      "note": "Commissioners Court actions require item-level review."
+    },
+    "officialRecord": {
+      "status": "source_path_only",
+      "reviewedAt": "2026-08-13",
+      "sourceUrl": "https://www.co.marion.tx.us/page/marion.Commissioners.Court"
+    },
+    "campaignFinance": {
+      "status": "pending_review",
+      "reviewedAt": "2026-08-13",
+      "sourceUrl": "https://marioncountytaxoffice.com/elections/",
+      "note": "Local filer and reporting period are not matched."
+    },
+    "positiveWork": {
+      "status": "pending_review",
+      "reviewedAt": "2026-08-13",
+      "sourceUrl": "https://www.co.marion.tx.us/page/marion.County.Judge"
+    },
+    "criticism": {
+      "status": "reported_disputed",
+      "reviewedAt": "2026-08-13",
+      "sourceUrl": "https://www.kltv.com/2026/04/21/marion-county-judge-denies-allegations-unwanted-touching-halloween-party/",
+      "note": "Existing profile text labels the reported allegations disputed and procedurally unresolved."
+    },
+    "sentiment": {
+      "status": "pending_review",
+      "reviewedAt": "2026-08-13",
+      "sourceUrl": "https://www.co.marion.tx.us/page/marion.County.Judge"
+    },
+    "constitutionalAlignment": {
+      "status": "pending_review",
+      "reviewedAt": "2026-08-13",
+      "sourceUrl": "https://statutes.capitol.texas.gov/Docs/CN/htm/CN.5.htm"
+    }
+  }
 }

@@ -17,35 +17,221 @@
     "email": "https://menefee.house.gov",
     "website": "https://menefee.house.gov"
   },
-  "bio": "Christian D. Menefee serves as the U.S. Representative for Texas's 18th Congressional District. This RepWatchr starter profile is source-seeded from current congressional roster data, official public links, and public congressional photo sources.",
+  "bio": "Christian D. Menefee currently serves as U.S. Representative for TX-18. The official congressional record verifies the assignment and lists Committee on Oversight and Government Reform; Committee on Science, Space, and Technology. RepWatchr links sponsored-legislation and roll-call paths below; findings remain unrated until cited actions are reviewed in context.",
   "campaignPromises": [],
   "reviewStatus": "source_seeded",
   "state": "TX",
   "bioguideId": "M001245",
   "sourceLinks": [
     {
-      "title": "Official congressional website",
-      "url": "https://menefee.house.gov"
+      "title": "Official House Clerk member profile",
+      "url": "https://clerk.house.gov/members/M001245",
+      "accessedAt": "2026-08-13",
+      "supports": [
+        "identity",
+        "current_office",
+        "district",
+        "contact",
+        "committees"
+      ]
     },
     {
-      "title": "Congress legislators current roster",
-      "url": "https://raw.githubusercontent.com/unitedstates/congress-legislators/master/legislators-current.yaml"
+      "title": "Official member website",
+      "url": "https://menefee.house.gov",
+      "accessedAt": "2026-08-13",
+      "supports": [
+        "contact",
+        "biography",
+        "constituent_service"
+      ]
+    },
+    {
+      "title": "Congress.gov member profile",
+      "url": "https://www.congress.gov/member/christian-d-menefee/M001245",
+      "accessedAt": "2026-08-13",
+      "supports": [
+        "identity",
+        "legislative_activity"
+      ]
+    },
+    {
+      "title": "Congress.gov sponsored legislation",
+      "url": "https://www.congress.gov/member/christian-d-menefee/M001245?q=%7B%22sponsorship%22%3A%22sponsored%22%7D",
+      "accessedAt": "2026-08-13",
+      "supports": [
+        "sponsored_legislation",
+        "bill_status",
+        "official_actions"
+      ]
+    },
+    {
+      "title": "Official House roll-call votes",
+      "url": "https://clerk.house.gov/Votes",
+      "accessedAt": "2026-08-13",
+      "supports": [
+        "roll_calls",
+        "voting_record"
+      ]
+    },
+    {
+      "title": "House Clerk member and legislative records",
+      "url": "https://clerk.house.gov/MemberInfo",
+      "accessedAt": "2026-08-13",
+      "supports": [
+        "official_actions",
+        "voting_record_method"
+      ]
+    },
+    {
+      "title": "Federal Election Commission candidate data",
+      "url": "https://www.fec.gov/data/candidates/",
+      "accessedAt": "2026-08-13",
+      "supports": [
+        "campaign_finance_source_path",
+        "reporting_periods"
+      ]
+    },
+    {
+      "title": "Texas Secretary of State election-results archive",
+      "url": "https://www.sos.state.tx.us/elections/historical/index.shtml",
+      "accessedAt": "2026-08-13",
+      "supports": [
+        "election_history",
+        "term"
+      ]
+    },
+    {
+      "title": "Constitution Annotated, Article I",
+      "url": "https://constitution.congress.gov/constitution/article-1/",
+      "accessedAt": "2026-08-13",
+      "supports": [
+        "constitutional_authority",
+        "office_structure",
+        "term_length"
+      ]
     },
     {
       "title": "Biographical Directory of the United States Congress",
-      "url": "https://bioguide.congress.gov/search/bio/M001245"
+      "url": "https://bioguide.congress.gov/search/bio/M001245",
+      "accessedAt": "2026-08-13",
+      "supports": [
+        "identity",
+        "biography",
+        "service_history"
+      ]
     },
     {
-      "title": "Wikidata Bioguide image record",
-      "url": "https://www.wikidata.org/entity/Q114397549"
-    },
-    {
-      "title": "Wikimedia Commons profile image",
-      "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Christian%20Menefee%2C%20official%20portrait%20%28119th%20Congress%29.jpg"
+      "title": "Published portrait source",
+      "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Christian%20Menefee%2C%20official%20portrait%20%28119th%20Congress%29.jpg",
+      "accessedAt": "2026-08-13",
+      "supports": [
+        "portrait",
+        "portrait_provenance"
+      ]
     }
   ],
-  "lastVerifiedAt": "2026-05-01",
+  "lastVerifiedAt": "2026-08-13",
   "photo": "/images/officials/federal/christian-d-menefee.jpg",
   "photoSourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Christian%20Menefee%2C%20official%20portrait%20%28119th%20Congress%29.jpg",
-  "photoCredit": "Wikimedia Commons image referenced by Wikidata Bioguide match"
+  "photoCredit": "Wikimedia Commons image referenced by Wikidata Bioguide match",
+  "committeeAssignments": [
+    "Committee on Oversight and Government Reform",
+    "Committee on Science, Space, and Technology"
+  ],
+  "nextElection": "2026 general election",
+  "photoRights": "Official or public-domain congressional portrait; source provenance retained.",
+  "accountabilityNotes": [
+    "Congressional source paths are linked; availability of a record is not treated as a favorable or unfavorable finding without record-level review.",
+    "Positive-work claims remain pending until a dated primary record, measurable result, and independent context are attached.",
+    "Criticism and controversies remain pending until each claim is substantiated, attributed, dated, and paired with the official's response when available.",
+    "Campaign-finance totals, donors, industries/PACs, expenditures, and reporting periods remain unpublished until the correct filer is matched.",
+    "Constituent sentiment remains unpublished until the collection window, source mix, jurisdiction-confidence method, duplicate/bot filtering, sample size, and uncertainty are disclosed.",
+    "No constitutional-alignment score is published without cited official actions, a transparent rubric, applicable provisions, uncertainty, and a RepWatchr-analysis/non-legal-judgment disclaimer."
+  ],
+  "officialRecord": {
+    "type": "federal_legislative",
+    "congress": "119th Congress, 2nd Session",
+    "status": "source_path_only",
+    "sponsoredLegislationUrl": "https://www.congress.gov/member/christian-d-menefee/M001245?q=%7B%22sponsorship%22%3A%22sponsored%22%7D",
+    "rollCallUrl": "https://clerk.house.gov/Votes",
+    "financeSourceUrl": "https://www.fec.gov/data/candidates/",
+    "note": "Official legislative and vote paths support record-level review; no uncited score is inferred."
+  },
+  "campaignFinanceDisclosure": {
+    "status": "pending_review",
+    "sourceUrl": "https://www.fec.gov/data/candidates/",
+    "reviewedAt": "2026-08-13",
+    "note": "Totals, donors, industries/PACs, expenditures, and reporting period are withheld until the officeholder filer is matched without ambiguity."
+  },
+  "sentimentDisclosure": {
+    "status": "pending_review",
+    "reviewedAt": "2026-08-13",
+    "note": "No sentiment is published without jurisdiction-confidence, sampling, collection-window, platform-mix, duplication/bot, and uncertainty disclosures."
+  },
+  "fieldFreshness": {
+    "identity": {
+      "status": "current",
+      "reviewedAt": "2026-08-13",
+      "sourceUrl": "https://clerk.house.gov/members/M001245"
+    },
+    "portrait": {
+      "status": "current",
+      "reviewedAt": "2026-08-13",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Christian%20Menefee%2C%20official%20portrait%20%28119th%20Congress%29.jpg",
+      "note": "Stored portrait passed the 500-pixel minimum-dimension gate."
+    },
+    "contact": {
+      "status": "current",
+      "reviewedAt": "2026-08-13",
+      "sourceUrl": "https://menefee.house.gov"
+    },
+    "term": {
+      "status": "current",
+      "reviewedAt": "2026-08-13",
+      "sourceUrl": "https://clerk.house.gov/members/M001245"
+    },
+    "assignments": {
+      "status": "current",
+      "reviewedAt": "2026-08-13",
+      "sourceUrl": "https://clerk.house.gov/members/M001245"
+    },
+    "legislation": {
+      "status": "source_path_only",
+      "reviewedAt": "2026-08-13",
+      "sourceUrl": "https://www.congress.gov/member/christian-d-menefee/M001245?q=%7B%22sponsorship%22%3A%22sponsored%22%7D",
+      "note": "Individual measures require record-level review."
+    },
+    "votingRecord": {
+      "status": "source_path_only",
+      "reviewedAt": "2026-08-13",
+      "sourceUrl": "https://clerk.house.gov/Votes",
+      "note": "Roll calls require vote-level context review."
+    },
+    "campaignFinance": {
+      "status": "pending_review",
+      "reviewedAt": "2026-08-13",
+      "sourceUrl": "https://www.fec.gov/data/candidates/",
+      "note": "Candidate identity and reporting period are not matched to published totals."
+    },
+    "positiveWork": {
+      "status": "pending_review",
+      "reviewedAt": "2026-08-13",
+      "sourceUrl": "https://menefee.house.gov"
+    },
+    "criticism": {
+      "status": "pending_review",
+      "reviewedAt": "2026-08-13",
+      "sourceUrl": "https://menefee.house.gov"
+    },
+    "sentiment": {
+      "status": "pending_review",
+      "reviewedAt": "2026-08-13",
+      "sourceUrl": "https://menefee.house.gov"
+    },
+    "constitutionalAlignment": {
+      "status": "pending_review",
+      "reviewedAt": "2026-08-13",
+      "sourceUrl": "https://constitution.congress.gov/constitution/article-1/"
+    }
+  }
 }
