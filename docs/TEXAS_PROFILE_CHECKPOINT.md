@@ -6,11 +6,11 @@ Last updated: 2026-08-13
 
 Twenty-five active Texas House profiles were materially deepened without recreating their already-published identity and portrait work:
 
-- HD-6 Daniel Alders; HD-7 Jay Dean; HD-8 Cody Harris; HD-9 Trent Ashby; HD-10 Brian Harrison.
-- HD-11 Joanne Shofner; HD-12 Trey Wharton; HD-13 Angelia Orr; HD-14 Paul Dyson; HD-15 Steve Toth.
-- HD-16 Will Metcalf; HD-18 Janis Holt; HD-19 Ellen Troxclair; HD-21 Dade Phelan; HD-23 Terri Leo Wilson.
-- HD-24 Greg Bonnen; HD-25 Cody Vasut; HD-26 Matt Morgan; HD-28 Gary Gates; HD-30 AJ Louderback.
-- HD-31 Ryan Guillen; HD-32 Todd Hunter; HD-33 Katrina Pierson; HD-34 Denise Villalobos; HD-35 Oscar Longoria.
+- HD-40 Terry Canales; HD-41 R.D. "Bobby" Guerra; HD-43 J. M. Lozano; HD-44 Alan Schoolcraft; HD-45 Erin Zwiener.
+- HD-46 Sheryl Cole; HD-47 Vikki Goodwin; HD-48 Donna Howard; HD-49 Gina Hinojosa; HD-50 James Talarico.
+- HD-52 Caroline Harris Davila; HD-53 Wes Virdell; HD-54 Brad Buckley; HD-55 Hillary Hickland; HD-56 Pat Curry.
+- HD-59 Shelby Slawson; HD-60 Mike Olcott; HD-61 Keresa Richardson; HD-62 Shelley Luther; HD-64 Andy Hopper.
+- HD-65 Mitch Little; HD-66 Matt Shaheen; HD-67 Jeff Leach; HD-69 James Frank; HD-71 Stan Lambert.
 
 All 25 were re-matched to the current official Texas House roster on August 13. Their previously truncated biography excerpts were replaced with concise neutral summaries derived from official House member and committee pages.
 
@@ -44,4 +44,4 @@ The shared responsive RepWatchr dashboard/report-card system was reused without 
 
 ## Next batch
 
-Continue the Fifth-through-Thirteenth Court places in court-and-place order as compliant portraits are found. In parallel, prioritize the weakest county profiles whose current-office, contact, and portrait evidence can be verified from official county sources, then retry SBOE Districts 4, 11, 12, and 14. Preserve the identity, portrait, role-compatible record, source-ledger, freshness, finance, sentiment, and constitutional-analysis gates used in this release.
+Continue the House vote-depth sequence with the next 25 compliant profiles: HD-72, HD-73, HD-76 through HD-79, HD-81 through HD-83, HD-85 through HD-89, HD-92 through HD-102 (skipping the documented portrait/source deferrals). Continue the Fifth-through-Thirteenth Court places in court-and-place order as compliant portraits are found, then retry SBOE Districts 4, 11, 12, and 14. Preserve the identity, portrait, role-compatible record, source-ledger, freshness, finance, sentiment, and constitutional-analysis gates used in this release.
