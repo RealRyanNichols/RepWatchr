@@ -17,20 +17,20 @@
   "termStart": "2021-11-16",
   "termEnd": "2026-12-31",
   "contactInfo": {
-    "office": "Room E2.822, P.O. Box 12910, Austin, TX 78711",
+    "office": "Room E2.822, P.O. Box 12910 Austin, Texas 78711-2910",
     "phone": "512-463-0714",
     "email": "john.lujan@house.texas.gov",
     "website": "https://house.texas.gov/members/3145"
   },
-  "bio": "State Representative John Lujan proudly serves House District 118 in the Texas House of Representatives, representing the hardworking families of South, East, and Northeast Bexar County. First elected in 2016 and re-elected in 2021, Representative Lujan brings decades of public service, business experience, and community leadership to the Texas Legislature. Chairman Lujan currently serves as Chair of the House International Relations Subcommittee and Vice Chair of the Appropriations Subcommittee for Articles VI, VII, and VIII. He is also a member of the House Committees on Appropriations; Trade, Workforce & Economic Development; Local & Consent Calendars; and the Subcommittee on Workforce. In previous sessions, he has served on the Committees on.",
+  "bio": "John Lujan represents House District 118 in the Texas House of Representatives. The current official House profile lists service on Appropriations, Appropriations - S/C on Articles VI, VII, & VIII — Vice Chair, Local & Consent Calendars, Trade, Workforce & Economic Development, S/C on International Relations — Chair, S/C on Workforce.",
   "campaignPromises": [],
-  "reviewStatus": "source_seeded",
+  "reviewStatus": "record_enriched",
   "state": "TX",
   "sourceLinks": [
     {
       "title": "Official Texas House member page",
       "url": "https://house.texas.gov/members/3145",
-      "accessedAt": "2026-08-09",
+      "accessedAt": "2026-08-15",
       "supports": [
         "identity",
         "office",
@@ -41,7 +41,7 @@
     {
       "title": "Official current Texas House roster API",
       "url": "https://house.texas.gov/api/getMembers",
-      "accessedAt": "2026-08-09",
+      "accessedAt": "2026-08-15",
       "supports": [
         "current_office",
         "district",
@@ -51,7 +51,7 @@
     {
       "title": "Official Texas House member directory",
       "url": "https://house.texas.gov/members",
-      "accessedAt": "2026-08-09",
+      "accessedAt": "2026-08-15",
       "supports": [
         "current_office",
         "district"
@@ -60,7 +60,7 @@
     {
       "title": "Official Texas House biography",
       "url": "https://house.texas.gov/members/3145/biography",
-      "accessedAt": "2026-08-09",
+      "accessedAt": "2026-08-15",
       "supports": [
         "biography"
       ]
@@ -68,7 +68,7 @@
     {
       "title": "Official Texas House committee assignments",
       "url": "https://house.texas.gov/members/3145/committees",
-      "accessedAt": "2026-08-09",
+      "accessedAt": "2026-08-15",
       "supports": [
         "committees",
         "leadership"
@@ -92,10 +92,11 @@
     },
     {
       "title": "Texas Legislature Online vote-information guide",
-      "url": "https://capitol.texas.gov/help/findvoteinfo.aspx",
-      "accessedAt": "2026-08-09",
+      "url": "https://capitol.texas.gov/billlookup/voteinfo.aspx",
+      "accessedAt": "2026-08-15",
       "supports": [
-        "voting_record_method"
+        "voting_record_method",
+        "record_vote_lookup"
       ]
     },
     {
@@ -132,9 +133,19 @@
         "portrait",
         "portrait_provenance"
       ]
+    },
+    {
+      "title": "Official Texas House votes-by-date ledger",
+      "url": "https://capitol.texas.gov/Reports/GeneralVotesByDateHouse.aspx",
+      "accessedAt": "2026-08-15",
+      "supports": [
+        "record_level_votes",
+        "voting_record_summary",
+        "roll_call_links"
+      ]
     }
   ],
-  "lastVerifiedAt": "2026-08-09",
+  "lastVerifiedAt": "2026-08-15",
   "photoRights": "Public domain United States federal-government work; source and author attribution retained.",
   "nextElection": "2026 general election",
   "committeeAssignments": [
@@ -146,6 +157,7 @@
     "S/C on Workforce"
   ],
   "accountabilityNotes": [
+    "Voting-record summary now reflects source-linked Texas House record-vote rows. It reports indexed positions only and does not infer motive, ideology, constitutional alignment, or complete attendance.",
     "Positive work and constituent benefit claims remain pending editorial review until a primary record and a response or independent context are attached.",
     "Criticism and controversies remain pending editorial review until each claim is substantiated, attributed, dated, and paired with the official's response when available.",
     "Campaign-finance totals, donors, industries/PACs, and expenditures remain unpublished until the correct filer and reporting period are matched to Texas Ethics Commission records.",
@@ -155,8 +167,9 @@
   "fieldFreshness": {
     "identity": {
       "status": "current",
-      "reviewedAt": "2026-08-09",
-      "sourceUrl": "https://house.texas.gov/api/getMembers"
+      "reviewedAt": "2026-08-15",
+      "sourceUrl": "https://house.texas.gov/api/getMembers",
+      "note": "Matched to the current official Texas House roster by full name and district profile."
     },
     "portrait": {
       "status": "current",
@@ -166,8 +179,9 @@
     },
     "contact": {
       "status": "current",
-      "reviewedAt": "2026-08-09",
-      "sourceUrl": "https://house.texas.gov/members/3145"
+      "reviewedAt": "2026-08-15",
+      "sourceUrl": "https://house.texas.gov/members/3145",
+      "note": "Capitol room, complete mailing address, telephone, email, and official website reviewed against the member page."
     },
     "term": {
       "status": "current",
@@ -176,8 +190,9 @@
     },
     "assignments": {
       "status": "current",
-      "reviewedAt": "2026-08-09",
-      "sourceUrl": "https://house.texas.gov/members/3145/committees"
+      "reviewedAt": "2026-08-15",
+      "sourceUrl": "https://house.texas.gov/members/3145/committees",
+      "note": "Current committee and leadership assignments retained from the official member committee page."
     },
     "legislation": {
       "status": "source_path_only",
@@ -186,10 +201,10 @@
       "note": "Individual bills require record-level editorial review."
     },
     "votingRecord": {
-      "status": "source_path_only",
-      "reviewedAt": "2026-08-09",
-      "sourceUrl": "https://capitol.texas.gov/help/findvoteinfo.aspx",
-      "note": "Vote rows require official journals or reports."
+      "status": "current",
+      "reviewedAt": "2026-08-15",
+      "sourceUrl": "https://capitol.texas.gov/Reports/GeneralVotesByDateHouse.aspx",
+      "note": "4,507 official House positions are indexed for the stated collection window; 60 recent source-linked rows are stored for profile display."
     },
     "campaignFinance": {
       "status": "pending_review",
@@ -216,6 +231,30 @@
       "status": "pending_review",
       "reviewedAt": "2026-08-09",
       "sourceUrl": "https://capitol.texas.gov/help/findvoteinfo.aspx"
+    },
+    "biography": {
+      "status": "current",
+      "reviewedAt": "2026-08-15",
+      "sourceUrl": "https://house.texas.gov/members/3145",
+      "note": "Concise neutral summary derived from the current official House member page and committee assignments."
     }
+  },
+  "votingRecordEvidence": {
+    "status": "record_level_evidence_loaded",
+    "chamber": "Texas House",
+    "coverageWindow": "Texas Legislature records from 2025-01-14 through 2026-06-21",
+    "indexedPositions": 4507,
+    "positionCounts": {
+      "yea": 4285,
+      "nay": 145,
+      "present": 1,
+      "notVoting": 76,
+      "other": 0
+    },
+    "storedRecordRows": 60,
+    "latestRecordedVoteDate": "2025-09-03",
+    "sourceUrl": "https://capitol.texas.gov/Reports/GeneralVotesByDateHouse.aspx",
+    "reviewedAt": "2026-08-15",
+    "methodology": "RepWatchr indexes the member position printed in official Texas House record-vote material. Totals describe loaded positions in the stated collection window; they are not an attendance, ideology, constitutional, or performance score."
   }
 }

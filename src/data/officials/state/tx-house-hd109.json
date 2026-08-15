@@ -17,20 +17,20 @@
   "termStart": "2025-01-14",
   "termEnd": "2026-12-31",
   "contactInfo": {
-    "office": "Room E2.302 P.O. Box 12910 Austin, Texas 78",
+    "office": "Room E2.302 P.O. Box 12910 Austin, Texas 78711-2910",
     "phone": "512-463-0953",
     "email": "aicha.davis@house.texas.gov",
     "website": "https://house.texas.gov/members/4465"
   },
-  "bio": "Aicha Davis currently represents Texas House District 109.",
+  "bio": "Aicha Davis represents House District 109 in the Texas House of Representatives. The current official House profile lists service on Higher Education, Human Services.",
   "campaignPromises": [],
-  "reviewStatus": "source_seeded",
+  "reviewStatus": "record_enriched",
   "state": "TX",
   "sourceLinks": [
     {
       "title": "Official Texas House member page",
       "url": "https://house.texas.gov/members/4465",
-      "accessedAt": "2026-08-08",
+      "accessedAt": "2026-08-15",
       "supports": [
         "identity",
         "office",
@@ -41,7 +41,7 @@
     {
       "title": "Official current Texas House roster API",
       "url": "https://house.texas.gov/api/getMembers",
-      "accessedAt": "2026-08-08",
+      "accessedAt": "2026-08-15",
       "supports": [
         "current_office",
         "district",
@@ -51,7 +51,7 @@
     {
       "title": "Official Texas House member directory",
       "url": "https://house.texas.gov/members",
-      "accessedAt": "2026-08-08",
+      "accessedAt": "2026-08-15",
       "supports": [
         "current_office",
         "district"
@@ -60,7 +60,7 @@
     {
       "title": "Official Texas House biography",
       "url": "https://house.texas.gov/members/4465/biography",
-      "accessedAt": "2026-08-08",
+      "accessedAt": "2026-08-15",
       "supports": [
         "biography"
       ]
@@ -68,7 +68,7 @@
     {
       "title": "Official Texas House committee assignments",
       "url": "https://house.texas.gov/members/4465/committees",
-      "accessedAt": "2026-08-08",
+      "accessedAt": "2026-08-15",
       "supports": [
         "committees",
         "leadership"
@@ -92,10 +92,11 @@
     },
     {
       "title": "Texas Legislature Online vote-information guide",
-      "url": "https://capitol.texas.gov/help/findvoteinfo.aspx",
-      "accessedAt": "2026-08-08",
+      "url": "https://capitol.texas.gov/billlookup/voteinfo.aspx",
+      "accessedAt": "2026-08-15",
       "supports": [
-        "voting_record_method"
+        "voting_record_method",
+        "record_vote_lookup"
       ]
     },
     {
@@ -132,9 +133,19 @@
       "supports": [
         "portrait_provenance"
       ]
+    },
+    {
+      "title": "Official Texas House votes-by-date ledger",
+      "url": "https://capitol.texas.gov/Reports/GeneralVotesByDateHouse.aspx",
+      "accessedAt": "2026-08-15",
+      "supports": [
+        "record_level_votes",
+        "voting_record_summary",
+        "roll_call_links"
+      ]
     }
   ],
-  "lastVerifiedAt": "2026-08-08",
+  "lastVerifiedAt": "2026-08-15",
   "photoRights": "Stored with source attribution and site-terms provenance; reuse rights should be rechecked before redistribution outside RepWatchr.",
   "nextElection": "2026 general election",
   "committeeAssignments": [
@@ -142,6 +153,7 @@
     "Human Services"
   ],
   "accountabilityNotes": [
+    "Voting-record summary now reflects source-linked Texas House record-vote rows. It reports indexed positions only and does not infer motive, ideology, constitutional alignment, or complete attendance.",
     "Positive work and constituent benefit claims remain pending editorial review until a primary record and a response or independent context are attached.",
     "Criticism and controversies remain pending editorial review until each claim is substantiated, attributed, dated, and paired with the official's response when available.",
     "Campaign-finance totals, donors, industries/PACs, and expenditures remain unpublished until the correct filer and reporting period are matched to Texas Ethics Commission records.",
@@ -151,8 +163,9 @@
   "fieldFreshness": {
     "identity": {
       "status": "current",
-      "reviewedAt": "2026-08-08",
-      "sourceUrl": "https://house.texas.gov/api/getMembers"
+      "reviewedAt": "2026-08-15",
+      "sourceUrl": "https://house.texas.gov/api/getMembers",
+      "note": "Matched to the current official Texas House roster by full name and district profile."
     },
     "portrait": {
       "status": "current",
@@ -162,8 +175,9 @@
     },
     "contact": {
       "status": "current",
-      "reviewedAt": "2026-08-08",
-      "sourceUrl": "https://house.texas.gov/members/4465"
+      "reviewedAt": "2026-08-15",
+      "sourceUrl": "https://house.texas.gov/members/4465",
+      "note": "Capitol room, complete mailing address, telephone, email, and official website reviewed against the member page."
     },
     "term": {
       "status": "current",
@@ -172,8 +186,9 @@
     },
     "assignments": {
       "status": "current",
-      "reviewedAt": "2026-08-08",
-      "sourceUrl": "https://house.texas.gov/members/4465/committees"
+      "reviewedAt": "2026-08-15",
+      "sourceUrl": "https://house.texas.gov/members/4465/committees",
+      "note": "Current committee and leadership assignments retained from the official member committee page."
     },
     "legislation": {
       "status": "source_path_only",
@@ -182,10 +197,10 @@
       "note": "Individual bills require record-level editorial review."
     },
     "votingRecord": {
-      "status": "source_path_only",
-      "reviewedAt": "2026-08-08",
-      "sourceUrl": "https://capitol.texas.gov/help/findvoteinfo.aspx",
-      "note": "Vote rows require official journals or reports."
+      "status": "current",
+      "reviewedAt": "2026-08-15",
+      "sourceUrl": "https://capitol.texas.gov/Reports/GeneralVotesByDateHouse.aspx",
+      "note": "4,507 official House positions are indexed for the stated collection window; 60 recent source-linked rows are stored for profile display."
     },
     "campaignFinance": {
       "status": "pending_review",
@@ -212,6 +227,30 @@
       "status": "pending_review",
       "reviewedAt": "2026-08-08",
       "sourceUrl": "https://capitol.texas.gov/help/findvoteinfo.aspx"
+    },
+    "biography": {
+      "status": "current",
+      "reviewedAt": "2026-08-15",
+      "sourceUrl": "https://house.texas.gov/members/4465",
+      "note": "Concise neutral summary derived from the current official House member page and committee assignments."
     }
+  },
+  "votingRecordEvidence": {
+    "status": "record_level_evidence_loaded",
+    "chamber": "Texas House",
+    "coverageWindow": "Texas Legislature records from 2025-01-14 through 2026-06-21",
+    "indexedPositions": 4507,
+    "positionCounts": {
+      "yea": 3585,
+      "nay": 463,
+      "present": 16,
+      "notVoting": 443,
+      "other": 0
+    },
+    "storedRecordRows": 60,
+    "latestRecordedVoteDate": "2025-09-03",
+    "sourceUrl": "https://capitol.texas.gov/Reports/GeneralVotesByDateHouse.aspx",
+    "reviewedAt": "2026-08-15",
+    "methodology": "RepWatchr indexes the member position printed in official Texas House record-vote material. Totals describe loaded positions in the stated collection window; they are not an attendance, ideology, constitutional, or performance score."
   }
 }
