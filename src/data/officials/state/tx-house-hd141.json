@@ -15,22 +15,22 @@
     "Texas"
   ],
   "termStart": "1983-01-11",
-  "termEnd": "2026-12-31",
+  "termEnd": "Current two-year House term; exact end date pending source review",
   "contactInfo": {
-    "office": "Room 3S.6, P.O. Box 12910, Austin, TX 78711",
+    "office": "Room 3S.6 P.O. Box 12910 Austin, Texas 78711-2910",
     "phone": "512-463-0720",
     "email": "senfronia.thompson@house.texas.gov",
     "website": "https://house.texas.gov/members/4630"
   },
   "bio": "Rep. Senfronia Thompson's legacy is one built from a strong principle of faith, an unwavering defense of freedom, and a staunch belief in fairness. She exemplifies the American ideal that one person can make a difference. Texas native Senfronia Thompson was born in Booth, Texas and raised in Houston. She represents District 141, which includes Northeast Houston and Humble. Rep. Thompson has the distinct honor of being the longest-serving woman and African-American in Texas history. She is the Dean of the Texas House of Representatives and is often referred to as the conscious of the Texas House. She is currently serving her 52nd year in the Texas Legislature. She received her high school diploma from Booker T. Washington High School in Houston. She.",
   "campaignPromises": [],
-  "reviewStatus": "source_seeded",
+  "reviewStatus": "record_enriched",
   "state": "TX",
   "sourceLinks": [
     {
       "title": "Official Texas House member page",
       "url": "https://house.texas.gov/members/4630",
-      "accessedAt": "2026-08-09",
+      "accessedAt": "2026-08-16",
       "supports": [
         "identity",
         "office",
@@ -41,7 +41,7 @@
     {
       "title": "Official current Texas House roster API",
       "url": "https://house.texas.gov/api/getMembers",
-      "accessedAt": "2026-08-09",
+      "accessedAt": "2026-08-16",
       "supports": [
         "current_office",
         "district",
@@ -51,7 +51,7 @@
     {
       "title": "Official Texas House member directory",
       "url": "https://house.texas.gov/members",
-      "accessedAt": "2026-08-09",
+      "accessedAt": "2026-08-16",
       "supports": [
         "current_office",
         "district"
@@ -60,7 +60,7 @@
     {
       "title": "Official Texas House biography",
       "url": "https://house.texas.gov/members/4630/biography",
-      "accessedAt": "2026-08-09",
+      "accessedAt": "2026-08-16",
       "supports": [
         "biography"
       ]
@@ -68,7 +68,7 @@
     {
       "title": "Official Texas House committee assignments",
       "url": "https://house.texas.gov/members/4630/committees",
-      "accessedAt": "2026-08-09",
+      "accessedAt": "2026-08-16",
       "supports": [
         "committees",
         "leadership"
@@ -77,7 +77,7 @@
     {
       "title": "Texas Legislature Online authored bills",
       "url": "https://capitol.texas.gov/reports/report.aspx?ID=author&LegSess=89R&Code=A4630",
-      "accessedAt": "2026-08-09",
+      "accessedAt": "2026-08-16",
       "supports": [
         "sponsored_legislation"
       ]
@@ -85,7 +85,7 @@
     {
       "title": "Texas Legislature Online sponsored bills",
       "url": "https://capitol.texas.gov/reports/report.aspx?ID=sponsor&LegSess=89R&Code=A4630",
-      "accessedAt": "2026-08-09",
+      "accessedAt": "2026-08-16",
       "supports": [
         "sponsored_legislation"
       ]
@@ -101,7 +101,7 @@
     {
       "title": "Texas Ethics Commission campaign-finance search",
       "url": "https://www.ethics.state.tx.us/search/cf/",
-      "accessedAt": "2026-08-09",
+      "accessedAt": "2026-08-16",
       "supports": [
         "campaign_finance_source_path"
       ]
@@ -109,7 +109,7 @@
     {
       "title": "Texas Secretary of State election archive",
       "url": "https://www.sos.state.tx.us/elections/historical/index.shtml",
-      "accessedAt": "2026-08-09",
+      "accessedAt": "2026-08-16",
       "supports": [
         "term",
         "election_history"
@@ -140,9 +140,28 @@
         "portrait",
         "portrait_provenance"
       ]
+    },
+    {
+      "title": "Official Texas House votes-by-date ledger",
+      "url": "https://capitol.texas.gov/Reports/GeneralVotesByDateHouse.aspx",
+      "accessedAt": "2026-08-16",
+      "supports": [
+        "record_level_votes",
+        "voting_record_summary",
+        "roll_call_links"
+      ]
+    },
+    {
+      "title": "Texas Legislature Online vote-information guide",
+      "url": "https://capitol.texas.gov/billlookup/voteinfo.aspx",
+      "accessedAt": "2026-08-16",
+      "supports": [
+        "voting_record_method",
+        "record_vote_lookup"
+      ]
     }
   ],
-  "lastVerifiedAt": "2026-08-09",
+  "lastVerifiedAt": "2026-08-16",
   "photoRights": "Stored with source attribution and site-terms provenance; reuse rights should be rechecked before redistribution outside RepWatchr.",
   "nextElection": "2026 general election",
   "committeeAssignments": [
@@ -152,76 +171,136 @@
     "State Affairs"
   ],
   "accountabilityNotes": [
-    "Positive work and constituent benefit claims remain pending editorial review until a primary record and a response or independent context are attached.",
-    "Criticism and controversies remain pending editorial review until each claim is substantiated, attributed, dated, and paired with the official's response when available.",
-    "Campaign-finance totals, donors, industries/PACs, and expenditures remain unpublished until the correct filer and reporting period are matched to Texas Ethics Commission records.",
-    "Constituent sentiment remains unpublished until the sample discloses its collection window, source mix, jurisdiction-confidence method, duplicate/bot filtering, sample size, and uncertainty.",
-    "A constitutional-alignment score is not published without cited votes, a public rubric, applicable constitutional provisions, uncertainty, and a RepWatchr-analysis disclaimer."
+    "Voting-record summary reflects source-linked Texas House record-vote rows. It reports indexed positions only and does not infer motive, ideology, constitutional alignment, or complete attendance.",
+    "Positive-work claims remain pending until a dated primary record, measurable result, and independent context are attached.",
+    "Criticism and controversies remain pending until each claim is substantiated, attributed, dated, and paired with the official's response when available.",
+    "Campaign-finance totals, donors, industries/PACs, expenditures, and reporting periods remain unpublished until the correct filer is matched.",
+    "Constituent sentiment remains unpublished until the collection window, source mix, jurisdiction-confidence method, duplicate/bot filtering, sample size, and uncertainty are disclosed.",
+    "No constitutional-alignment score is published without cited official actions, a transparent rubric, applicable provisions, uncertainty, and a RepWatchr-analysis/non-legal-judgment disclaimer."
   ],
   "fieldFreshness": {
     "identity": {
       "status": "current",
-      "reviewedAt": "2026-08-09",
-      "sourceUrl": "https://house.texas.gov/api/getMembers"
+      "reviewedAt": "2026-08-16",
+      "sourceUrl": "https://house.texas.gov/api/getMembers",
+      "note": "Matched to the current official Texas House roster by district and full name."
     },
     "portrait": {
       "status": "current",
-      "reviewedAt": "2026-08-09",
+      "reviewedAt": "2026-08-16",
       "sourceUrl": "https://directory.texastribune.org/static/images/headshots/Senfronia_Thompson.jpg",
-      "note": "1000x1000; stored portrait"
+      "note": "1000x1000; 127051 stored bytes; downscaled only when the source exceeded 1600px and never upscaled."
     },
     "contact": {
       "status": "current",
-      "reviewedAt": "2026-08-09",
-      "sourceUrl": "https://house.texas.gov/members/4630"
+      "reviewedAt": "2026-08-16",
+      "sourceUrl": "https://house.texas.gov/members/4630",
+      "note": "Capitol room, complete mailing address, telephone, email channel, and official website reviewed against the member page."
     },
     "term": {
       "status": "current",
-      "reviewedAt": "2026-08-09",
-      "sourceUrl": "https://directory.texastribune.org/senfronia-thompson/"
+      "reviewedAt": "2026-08-16",
+      "sourceUrl": "https://www.sos.state.tx.us/elections/historical/index.shtml",
+      "note": "The current two-year House term and 2026 general-election cycle are disclosed. The exact term-end date remains labeled pending source review, and candidate filing status is not inferred."
     },
     "assignments": {
       "status": "current",
-      "reviewedAt": "2026-08-09",
-      "sourceUrl": "https://house.texas.gov/members/4630/committees"
+      "reviewedAt": "2026-08-16",
+      "sourceUrl": "https://house.texas.gov/members/4630/committees",
+      "note": "Current committee and leadership assignments loaded from the official House committee API and linked page."
+    },
+    "biography": {
+      "status": "current",
+      "reviewedAt": "2026-08-16",
+      "sourceUrl": "https://house.texas.gov/members/4630/biography",
+      "note": "Concise biography derived from the official House biography page."
     },
     "legislation": {
       "status": "source_path_only",
-      "reviewedAt": "2026-08-09",
+      "reviewedAt": "2026-08-16",
       "sourceUrl": "https://capitol.texas.gov/reports/report.aspx?ID=author&LegSess=89R&Code=A4630",
-      "note": "Individual bills require record-level editorial review."
+      "note": "Official authored and sponsored bill paths are linked; individual bill findings require record-level editorial review."
     },
     "votingRecord": {
-      "status": "source_path_only",
-      "reviewedAt": "2026-08-09",
-      "sourceUrl": "https://capitol.texas.gov/help/findvoteinfo.aspx",
-      "note": "Vote rows require official journals or reports."
+      "status": "current",
+      "reviewedAt": "2026-08-16",
+      "sourceUrl": "https://capitol.texas.gov/Reports/GeneralVotesByDateHouse.aspx",
+      "note": "4,507 official House positions are indexed; 60 recent source-linked rows are stored for display."
     },
     "campaignFinance": {
       "status": "pending_review",
-      "reviewedAt": "2026-08-09",
+      "reviewedAt": "2026-08-16",
       "sourceUrl": "https://www.ethics.state.tx.us/search/cf/",
-      "note": "Filer and reporting period are not yet matched."
+      "note": "Filer identity and reporting period are not yet matched."
     },
     "positiveWork": {
       "status": "pending_review",
-      "reviewedAt": "2026-08-09",
-      "sourceUrl": "https://house.texas.gov/members/4630/biography"
+      "reviewedAt": "2026-08-16",
+      "sourceUrl": "https://house.texas.gov/members/4630/biography",
+      "note": "No positive-work claim is published without a dated primary record, measurable result, and independent context."
     },
     "criticism": {
       "status": "pending_review",
-      "reviewedAt": "2026-08-09",
-      "sourceUrl": "https://house.texas.gov/members/4630"
+      "reviewedAt": "2026-08-16",
+      "sourceUrl": "https://house.texas.gov/members/4630",
+      "note": "No criticism or controversy is published without substantiation, attribution, date, context, and an official response when available."
     },
     "sentiment": {
       "status": "pending_review",
-      "reviewedAt": "2026-08-09",
-      "sourceUrl": "https://house.texas.gov/members/4630"
+      "reviewedAt": "2026-08-16",
+      "sourceUrl": "https://house.texas.gov/members/4630",
+      "note": "No constituent sentiment is published without jurisdiction-confidence and sampling disclosures."
     },
     "constitutionalAlignment": {
       "status": "pending_review",
-      "reviewedAt": "2026-08-09",
-      "sourceUrl": "https://capitol.texas.gov/help/findvoteinfo.aspx"
+      "reviewedAt": "2026-08-16",
+      "sourceUrl": "https://capitol.texas.gov/Reports/GeneralVotesByDateHouse.aspx",
+      "note": "No score is published without cited votes, a transparent rubric, applicable provisions, uncertainty, and a RepWatchr-analysis disclaimer."
+    },
+    "officialRecord": {
+      "status": "current",
+      "reviewedAt": "2026-08-16",
+      "sourceUrl": "https://capitol.texas.gov/Reports/GeneralVotesByDateHouse.aspx",
+      "note": "Record-level vote rows are loaded; legislation remains linked at source-path depth."
     }
+  },
+  "votingRecordEvidence": {
+    "status": "record_level_evidence_loaded",
+    "chamber": "Texas House",
+    "coverageWindow": "Texas Legislature records from 2025-01-14 through 2026-06-21",
+    "indexedPositions": 4507,
+    "positionCounts": {
+      "yea": 3790,
+      "nay": 526,
+      "present": 6,
+      "notVoting": 185,
+      "other": 0
+    },
+    "storedRecordRows": 60,
+    "latestRecordedVoteDate": "2025-09-03",
+    "sourceUrl": "https://capitol.texas.gov/Reports/GeneralVotesByDateHouse.aspx",
+    "reviewedAt": "2026-08-16",
+    "methodology": "RepWatchr indexes the member position printed in official Texas House record-vote material. Totals describe loaded positions in the stated collection window; they are not an attendance, ideology, constitutional, or performance score."
+  },
+  "officialRecord": {
+    "type": "legislative",
+    "session": "89th Legislature",
+    "status": "record_level_vote_evidence_loaded",
+    "billsByAuthorUrl": "https://capitol.texas.gov/reports/report.aspx?ID=author&LegSess=89R&Code=A4630",
+    "billsSponsoredUrl": "https://capitol.texas.gov/reports/report.aspx?ID=sponsor&LegSess=89R&Code=A4630",
+    "voteInformationUrl": "https://capitol.texas.gov/Reports/GeneralVotesByDateHouse.aspx",
+    "financeSourceUrl": "https://www.ethics.state.tx.us/search/cf/",
+    "note": "Official bill paths support legislation review. The voting summary is backed by source-linked official record-vote rows and is not a score."
+  },
+  "campaignFinanceDisclosure": {
+    "status": "pending_review",
+    "sourceUrl": "https://www.ethics.state.tx.us/search/cf/",
+    "reviewedAt": "2026-08-16",
+    "note": "Totals, donors, industries/PACs, expenditures, and reporting period are withheld until the officeholder filer is matched without ambiguity."
+  },
+  "sentimentDisclosure": {
+    "status": "pending_review",
+    "reviewedAt": "2026-08-16",
+    "note": "No sentiment is published without jurisdiction-confidence, sampling, collection-window, platform-mix, duplication/bot, and uncertainty disclosures."
   }
 }

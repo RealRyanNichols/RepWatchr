@@ -15,22 +15,22 @@
     "Texas"
   ],
   "termStart": "2019-01-08",
-  "termEnd": "2026-12-31",
+  "termEnd": "Current two-year House term; exact end date pending source review",
   "contactInfo": {
-    "office": "Room E2.508 P.O. Box 12910 Austin, Texas 78",
+    "office": "Room E2.508 P.O. Box 12910 Austin, Texas 78711-2910",
     "phone": "512-463-0458",
     "email": "keith.bell@house.texas.gov",
     "website": "https://house.texas.gov/members/3695"
   },
-  "bio": "Keith Bell currently represents Texas House District 4. The official House member page verifies the assignment and lists Environmental Regulation; General Aviation, Select — Chair; General Investigating — Chair; Trade, Workforce & Economic Development; S/C on Workforce. RepWatchr links the official authored-bill, sponsored-bill, and vote-information paths; findings publish only after the cited action and context pass editorial review.",
+  "bio": "A lifelong Texan, State Representative Keith Bell resides in Forney, Texas. Before being elected to represent House District 4 in November 2018, Keith served as a trustee on the Forney ISD School Board for 20 years, elected as president for fourteen times. Keith Bell has been in the electrical field since 1976. He founded Intex Electrical Contractors, Inc. in November, 1983 and serves as CEO/President. Keith holds a Master Electrician’s License in the State of Texas and served the Texas Department of Licensing and Regulation, as past chairman of the Texas Electrical Safety and Licensing Advisory Board. He is also active in numerous trade organizations, including the Independent Electrical Contractors Association (IEC), where he was elected to a.",
   "campaignPromises": [],
-  "reviewStatus": "source_seeded",
+  "reviewStatus": "record_enriched",
   "state": "TX",
   "sourceLinks": [
     {
       "title": "Official Texas House member page",
       "url": "https://house.texas.gov/members/3695",
-      "accessedAt": "2026-08-13",
+      "accessedAt": "2026-08-16",
       "supports": [
         "identity",
         "office",
@@ -41,7 +41,7 @@
     {
       "title": "Official current Texas House roster API",
       "url": "https://house.texas.gov/api/getMembers",
-      "accessedAt": "2026-08-13",
+      "accessedAt": "2026-08-16",
       "supports": [
         "current_office",
         "district",
@@ -51,7 +51,7 @@
     {
       "title": "Official Texas House member directory",
       "url": "https://house.texas.gov/members",
-      "accessedAt": "2026-08-13",
+      "accessedAt": "2026-08-16",
       "supports": [
         "current_office",
         "district"
@@ -60,7 +60,7 @@
     {
       "title": "Official Texas House biography",
       "url": "https://house.texas.gov/members/3695/biography",
-      "accessedAt": "2026-08-13",
+      "accessedAt": "2026-08-16",
       "supports": [
         "biography"
       ]
@@ -68,7 +68,7 @@
     {
       "title": "Official Texas House committee assignments",
       "url": "https://house.texas.gov/members/3695/committees",
-      "accessedAt": "2026-08-13",
+      "accessedAt": "2026-08-16",
       "supports": [
         "committees",
         "leadership"
@@ -77,7 +77,7 @@
     {
       "title": "Texas Legislature Online authored bills",
       "url": "https://capitol.texas.gov/reports/report.aspx?ID=author&LegSess=89R&Code=A3695",
-      "accessedAt": "2026-08-13",
+      "accessedAt": "2026-08-16",
       "supports": [
         "sponsored_legislation"
       ]
@@ -85,7 +85,7 @@
     {
       "title": "Texas Legislature Online sponsored bills",
       "url": "https://capitol.texas.gov/reports/report.aspx?ID=sponsor&LegSess=89R&Code=A3695",
-      "accessedAt": "2026-08-13",
+      "accessedAt": "2026-08-16",
       "supports": [
         "sponsored_legislation"
       ]
@@ -101,7 +101,7 @@
     {
       "title": "Texas Ethics Commission campaign-finance search",
       "url": "https://www.ethics.state.tx.us/search/cf/",
-      "accessedAt": "2026-08-13",
+      "accessedAt": "2026-08-16",
       "supports": [
         "campaign_finance_source_path"
       ]
@@ -109,7 +109,7 @@
     {
       "title": "Texas Secretary of State election archive",
       "url": "https://www.sos.state.tx.us/elections/historical/index.shtml",
-      "accessedAt": "2026-08-13",
+      "accessedAt": "2026-08-16",
       "supports": [
         "term",
         "election_history"
@@ -132,9 +132,28 @@
       "supports": [
         "portrait_provenance"
       ]
+    },
+    {
+      "title": "Official Texas House votes-by-date ledger",
+      "url": "https://capitol.texas.gov/Reports/GeneralVotesByDateHouse.aspx",
+      "accessedAt": "2026-08-16",
+      "supports": [
+        "record_level_votes",
+        "voting_record_summary",
+        "roll_call_links"
+      ]
+    },
+    {
+      "title": "Texas Legislature Online vote-information guide",
+      "url": "https://capitol.texas.gov/billlookup/voteinfo.aspx",
+      "accessedAt": "2026-08-16",
+      "supports": [
+        "voting_record_method",
+        "record_vote_lookup"
+      ]
     }
   ],
-  "lastVerifiedAt": "2026-08-13",
+  "lastVerifiedAt": "2026-08-16",
   "photoRights": "Stored with source attribution and site-terms provenance; reuse rights should be rechecked before redistribution outside RepWatchr.",
   "nextElection": "2026 general election",
   "committeeAssignments": [
@@ -145,7 +164,7 @@
     "S/C on Workforce"
   ],
   "accountabilityNotes": [
-    "Legislative source paths are linked; availability of a record is not treated as a favorable or unfavorable finding without record-level review.",
+    "Voting-record summary reflects source-linked Texas House record-vote rows. It reports indexed positions only and does not infer motive, ideology, constitutional alignment, or complete attendance.",
     "Positive-work claims remain pending until a dated primary record, measurable result, and independent context are attached.",
     "Criticism and controversies remain pending until each claim is substantiated, attributed, dated, and paired with the official's response when available.",
     "Campaign-finance totals, donors, industries/PACs, expenditures, and reporting periods remain unpublished until the correct filer is matched.",
@@ -155,93 +174,126 @@
   "fieldFreshness": {
     "identity": {
       "status": "current",
-      "reviewedAt": "2026-08-13",
-      "sourceUrl": "https://house.texas.gov/api/getMembers"
+      "reviewedAt": "2026-08-16",
+      "sourceUrl": "https://house.texas.gov/api/getMembers",
+      "note": "Matched to the current official Texas House roster by district and full name."
     },
     "portrait": {
       "status": "current",
-      "reviewedAt": "2026-08-13",
+      "reviewedAt": "2026-08-16",
       "sourceUrl": "https://directory.texastribune.org/static/images/headshots/Keith_Bell.jpg",
-      "note": "1000x1000; 131612 bytes"
+      "note": "1000x1000; 138364 stored bytes; downscaled only when the source exceeded 1600px and never upscaled."
     },
     "contact": {
       "status": "current",
-      "reviewedAt": "2026-08-13",
-      "sourceUrl": "https://house.texas.gov/members/3695"
+      "reviewedAt": "2026-08-16",
+      "sourceUrl": "https://house.texas.gov/members/3695",
+      "note": "Capitol room, complete mailing address, telephone, email channel, and official website reviewed against the member page."
     },
     "term": {
       "status": "current",
-      "reviewedAt": "2026-08-13",
-      "sourceUrl": "https://directory.texastribune.org/keith-bell/"
+      "reviewedAt": "2026-08-16",
+      "sourceUrl": "https://www.sos.state.tx.us/elections/historical/index.shtml",
+      "note": "The current two-year House term and 2026 general-election cycle are disclosed. The exact term-end date remains labeled pending source review, and candidate filing status is not inferred."
     },
     "assignments": {
       "status": "current",
-      "reviewedAt": "2026-08-13",
-      "sourceUrl": "https://house.texas.gov/members/3695/committees"
+      "reviewedAt": "2026-08-16",
+      "sourceUrl": "https://house.texas.gov/members/3695/committees",
+      "note": "Current committee and leadership assignments loaded from the official House committee API and linked page."
+    },
+    "biography": {
+      "status": "current",
+      "reviewedAt": "2026-08-16",
+      "sourceUrl": "https://house.texas.gov/members/3695/biography",
+      "note": "Concise biography derived from the official House biography page."
     },
     "legislation": {
       "status": "source_path_only",
-      "reviewedAt": "2026-08-13",
+      "reviewedAt": "2026-08-16",
       "sourceUrl": "https://capitol.texas.gov/reports/report.aspx?ID=author&LegSess=89R&Code=A3695",
-      "note": "Individual bills require record-level editorial review."
+      "note": "Official authored and sponsored bill paths are linked; individual bill findings require record-level editorial review."
     },
     "votingRecord": {
-      "status": "source_path_only",
-      "reviewedAt": "2026-08-13",
-      "sourceUrl": "https://capitol.texas.gov/help/findvoteinfo.aspx",
-      "note": "Vote rows require official journals or reports."
+      "status": "current",
+      "reviewedAt": "2026-08-16",
+      "sourceUrl": "https://capitol.texas.gov/Reports/GeneralVotesByDateHouse.aspx",
+      "note": "4,507 official House positions are indexed; 60 recent source-linked rows are stored for display."
     },
     "campaignFinance": {
       "status": "pending_review",
-      "reviewedAt": "2026-08-13",
+      "reviewedAt": "2026-08-16",
       "sourceUrl": "https://www.ethics.state.tx.us/search/cf/",
-      "note": "Filer and reporting period are not yet matched."
+      "note": "Filer identity and reporting period are not yet matched."
     },
     "positiveWork": {
       "status": "pending_review",
-      "reviewedAt": "2026-08-13",
-      "sourceUrl": "https://house.texas.gov/members/3695/biography"
+      "reviewedAt": "2026-08-16",
+      "sourceUrl": "https://house.texas.gov/members/3695/biography",
+      "note": "No positive-work claim is published without a dated primary record, measurable result, and independent context."
     },
     "criticism": {
       "status": "pending_review",
-      "reviewedAt": "2026-08-13",
-      "sourceUrl": "https://house.texas.gov/members/3695"
+      "reviewedAt": "2026-08-16",
+      "sourceUrl": "https://house.texas.gov/members/3695",
+      "note": "No criticism or controversy is published without substantiation, attribution, date, context, and an official response when available."
     },
     "sentiment": {
       "status": "pending_review",
-      "reviewedAt": "2026-08-13",
-      "sourceUrl": "https://house.texas.gov/members/3695"
+      "reviewedAt": "2026-08-16",
+      "sourceUrl": "https://house.texas.gov/members/3695",
+      "note": "No constituent sentiment is published without jurisdiction-confidence and sampling disclosures."
     },
     "constitutionalAlignment": {
       "status": "pending_review",
-      "reviewedAt": "2026-08-13",
-      "sourceUrl": "https://capitol.texas.gov/help/findvoteinfo.aspx"
+      "reviewedAt": "2026-08-16",
+      "sourceUrl": "https://capitol.texas.gov/Reports/GeneralVotesByDateHouse.aspx",
+      "note": "No score is published without cited votes, a transparent rubric, applicable provisions, uncertainty, and a RepWatchr-analysis disclaimer."
     },
     "officialRecord": {
-      "status": "source_path_only",
-      "reviewedAt": "2026-08-13",
-      "sourceUrl": "https://capitol.texas.gov/reports/report.aspx?ID=author&LegSess=89R&Code=A3695",
-      "note": "Individual bills and votes require record-level review."
+      "status": "current",
+      "reviewedAt": "2026-08-16",
+      "sourceUrl": "https://capitol.texas.gov/Reports/GeneralVotesByDateHouse.aspx",
+      "note": "Record-level vote rows are loaded; legislation remains linked at source-path depth."
     }
   },
   "officialRecord": {
     "type": "legislative",
     "session": "89th Legislature",
-    "status": "source_path_only",
+    "status": "record_level_vote_evidence_loaded",
     "billsByAuthorUrl": "https://capitol.texas.gov/reports/report.aspx?ID=author&LegSess=89R&Code=A3695",
-    "voteInformationUrl": "https://capitol.texas.gov/help/findvoteinfo.aspx",
+    "billsSponsoredUrl": "https://capitol.texas.gov/reports/report.aspx?ID=sponsor&LegSess=89R&Code=A3695",
+    "voteInformationUrl": "https://capitol.texas.gov/Reports/GeneralVotesByDateHouse.aspx",
     "financeSourceUrl": "https://www.ethics.state.tx.us/search/cf/",
-    "note": "Official bill and vote paths support record-level review; no uncited score is inferred."
+    "note": "Official bill paths support legislation review. The voting summary is backed by source-linked official record-vote rows and is not a score."
   },
   "campaignFinanceDisclosure": {
     "status": "pending_review",
     "sourceUrl": "https://www.ethics.state.tx.us/search/cf/",
-    "reviewedAt": "2026-08-13",
+    "reviewedAt": "2026-08-16",
     "note": "Totals, donors, industries/PACs, expenditures, and reporting period are withheld until the officeholder filer is matched without ambiguity."
   },
   "sentimentDisclosure": {
     "status": "pending_review",
-    "reviewedAt": "2026-08-13",
+    "reviewedAt": "2026-08-16",
     "note": "No sentiment is published without jurisdiction-confidence, sampling, collection-window, platform-mix, duplication/bot, and uncertainty disclosures."
+  },
+  "votingRecordEvidence": {
+    "status": "record_level_evidence_loaded",
+    "chamber": "Texas House",
+    "coverageWindow": "Texas Legislature records from 2025-01-14 through 2026-06-21",
+    "indexedPositions": 4507,
+    "positionCounts": {
+      "yea": 4216,
+      "nay": 193,
+      "present": 0,
+      "notVoting": 98,
+      "other": 0
+    },
+    "storedRecordRows": 60,
+    "latestRecordedVoteDate": "2025-09-03",
+    "sourceUrl": "https://capitol.texas.gov/Reports/GeneralVotesByDateHouse.aspx",
+    "reviewedAt": "2026-08-16",
+    "methodology": "RepWatchr indexes the member position printed in official Texas House record-vote material. Totals describe loaded positions in the stated collection window; they are not an attendance, ideology, constitutional, or performance score."
   }
 }

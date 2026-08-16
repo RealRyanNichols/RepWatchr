@@ -1,11 +1,11 @@
 {
   "id": "mihaela-ple-a",
-  "name": "Mihaela Pleșa",
+  "name": "Mihaela Plesa",
   "firstName": "Mihaela",
   "lastName": "Pleșa",
-  "photo": "/images/officials/state-house/mihaela-ple-a.jpg",
-  "photoSourceUrl": "https://house.texas.gov/images/members/4345.jpg?v=1",
-  "photoCredit": "Official Texas House of Representatives photo",
+  "photo": "/images/officials/texas-accountability/mihaela-ple-a.jpg",
+  "photoSourceUrl": "https://www.txdirectory.com/files/photo/per69360.png",
+  "photoCredit": "Texas State Directory Online elected-official profile portrait; identity cross-checked against the current official Texas House roster.",
   "party": "D",
   "level": "state",
   "position": "State Representative",
@@ -15,30 +15,283 @@
     "Texas"
   ],
   "termStart": "2023-01-10",
-  "termEnd": "Current legislative term pending source review",
+  "termEnd": "Current two-year House term; exact end date pending source review",
   "contactInfo": {
-    "office": "Room E2.210, P.O. Box 12910, Austin, TX 78711",
+    "office": "Room E2.210 P.O. Box 12910 Austin, Texas 78711-2910",
     "phone": "512-463-0356",
     "email": "mihaela.plesa@house.texas.gov",
-    "website": "https://house.texas.gov/members/70"
+    "website": "https://house.texas.gov/members/4345"
   },
-  "bio": "Mihaela Pleșa serves as State Representative for Texas House of Representatives District 70. This RepWatchr starter profile is sourced from official Texas Legislature profile data and OpenStates public records.",
+  "bio": "Representative Mihaela Plesa is a lifelong Texan who is proud to serve the residents of Texas House District 70, which covers parts of Dallas, Plano, Richardson, and Allen. She is the first-generation daughter of Romanian immigrants who fled Eastern Europe to pursue the American Dream. Representative Plesa is proud to be the first democratic woman elected to represent Collin County in the Texas Legislature and the first Romanian-American elected in the great state of Texas. Now in her second term as State Representative, Plesa was elected the Vice Chair of the Texas House Democratic Caucus and appointed Vice Chair of the House Committee on Pensions, Investments, and Financial Services. She also serves on the Elections Committee and was recently.",
   "campaignPromises": [],
-  "reviewStatus": "source_seeded",
+  "reviewStatus": "record_enriched",
   "state": "TX",
   "sourceLinks": [
     {
-      "title": "Official Texas House of Representatives profile",
-      "url": "https://house.texas.gov/members/70"
+      "title": "Official Texas House member page",
+      "url": "https://house.texas.gov/members/4345",
+      "accessedAt": "2026-08-16",
+      "supports": [
+        "identity",
+        "office",
+        "contact",
+        "legislation_paths"
+      ]
     },
     {
-      "title": "OpenStates public people record",
-      "url": "https://raw.githubusercontent.com/openstates/people/main/data/tx/legislature/Mihaela-Plesa-b69579f7-74de-4a71-86ba-033264cc5bc7.yml"
+      "title": "Official current Texas House roster API",
+      "url": "https://house.texas.gov/api/getMembers",
+      "accessedAt": "2026-08-16",
+      "supports": [
+        "current_office",
+        "district",
+        "identity"
+      ]
     },
     {
-      "title": "Official profile photo source",
-      "url": "https://house.texas.gov/images/members/4345.jpg?v=1"
+      "title": "Official Texas House member directory",
+      "url": "https://house.texas.gov/members",
+      "accessedAt": "2026-08-16",
+      "supports": [
+        "current_office",
+        "district"
+      ]
+    },
+    {
+      "title": "Official Texas House biography",
+      "url": "https://house.texas.gov/members/4345/biography",
+      "accessedAt": "2026-08-16",
+      "supports": [
+        "biography"
+      ]
+    },
+    {
+      "title": "Official Texas House committee assignments",
+      "url": "https://house.texas.gov/members/4345/committees",
+      "accessedAt": "2026-08-16",
+      "supports": [
+        "committees",
+        "leadership"
+      ]
+    },
+    {
+      "title": "Texas Legislature Online authored bills",
+      "url": "https://capitol.texas.gov/reports/report.aspx?ID=author&LegSess=89R&Code=A4345",
+      "accessedAt": "2026-08-16",
+      "supports": [
+        "sponsored_legislation"
+      ]
+    },
+    {
+      "title": "Texas Legislature Online sponsored bills",
+      "url": "https://capitol.texas.gov/reports/report.aspx?ID=sponsor&LegSess=89R&Code=A4345",
+      "accessedAt": "2026-08-16",
+      "supports": [
+        "sponsored_legislation"
+      ]
+    },
+    {
+      "title": "Official Texas House votes-by-date ledger",
+      "url": "https://capitol.texas.gov/Reports/GeneralVotesByDateHouse.aspx",
+      "accessedAt": "2026-08-16",
+      "supports": [
+        "record_level_votes",
+        "voting_record_summary",
+        "roll_call_links"
+      ]
+    },
+    {
+      "title": "Texas Legislature Online vote-information guide",
+      "url": "https://capitol.texas.gov/billlookup/voteinfo.aspx",
+      "accessedAt": "2026-08-16",
+      "supports": [
+        "voting_record_method",
+        "record_vote_lookup"
+      ]
+    },
+    {
+      "title": "Texas Ethics Commission campaign-finance search",
+      "url": "https://www.ethics.state.tx.us/search/cf/",
+      "accessedAt": "2026-08-16",
+      "supports": [
+        "campaign_finance_source_path"
+      ]
+    },
+    {
+      "title": "Texas Secretary of State election archive",
+      "url": "https://www.sos.state.tx.us/elections/historical/index.shtml",
+      "accessedAt": "2026-08-16",
+      "supports": [
+        "term",
+        "election_history"
+      ]
+    },
+    {
+      "title": "Portrait source profile and provenance",
+      "url": "https://www.txdirectory.com/online/person/?id=69360",
+      "accessedAt": "2026-08-16",
+      "supports": [
+        "portrait",
+        "portrait_provenance"
+      ]
+    },
+    {
+      "title": "Stored portrait source file",
+      "url": "https://www.txdirectory.com/files/photo/per69360.png",
+      "accessedAt": "2026-08-16",
+      "supports": [
+        "portrait",
+        "portrait_provenance"
+      ]
+    },
+    {
+      "title": "Texas State Directory House roster",
+      "url": "https://www.txdirectory.com/online/txhouse/",
+      "accessedAt": "2026-08-16",
+      "supports": [
+        "portrait_provenance",
+        "current_office_cross_check"
+      ]
     }
   ],
-  "lastVerifiedAt": "2026-04-27"
+  "lastVerifiedAt": "2026-08-16",
+  "photoRights": "Stored as an attributed delivery derivative of the Texas State Directory Online profile image; source provenance retained and reuse rights should be rechecked before redistribution outside RepWatchr.",
+  "committeeAssignments": [
+    "Elections",
+    "Pensions, Investments & Financial Services — Vice Chair"
+  ],
+  "nextElection": "2026 general election",
+  "accountabilityNotes": [
+    "Voting-record summary reflects source-linked Texas House record-vote rows. It reports indexed positions only and does not infer motive, ideology, constitutional alignment, or complete attendance.",
+    "Positive-work claims remain pending until a dated primary record, measurable result, and independent context are attached.",
+    "Criticism and controversies remain pending until each claim is substantiated, attributed, dated, and paired with the official's response when available.",
+    "Campaign-finance totals, donors, industries/PACs, expenditures, and reporting periods remain unpublished until the correct filer is matched.",
+    "Constituent sentiment remains unpublished until the collection window, source mix, jurisdiction-confidence method, duplicate/bot filtering, sample size, and uncertainty are disclosed.",
+    "No constitutional-alignment score is published without cited official actions, a transparent rubric, applicable provisions, uncertainty, and a RepWatchr-analysis/non-legal-judgment disclaimer."
+  ],
+  "votingRecordEvidence": {
+    "status": "record_level_evidence_loaded",
+    "chamber": "Texas House",
+    "coverageWindow": "Texas Legislature records from 2025-01-14 through 2026-06-21",
+    "indexedPositions": 4507,
+    "positionCounts": {
+      "yea": 3655,
+      "nay": 482,
+      "present": 11,
+      "notVoting": 359,
+      "other": 0
+    },
+    "storedRecordRows": 60,
+    "latestRecordedVoteDate": "2025-09-03",
+    "sourceUrl": "https://capitol.texas.gov/Reports/GeneralVotesByDateHouse.aspx",
+    "reviewedAt": "2026-08-16",
+    "methodology": "RepWatchr indexes the member position printed in official Texas House record-vote material. Totals describe loaded positions in the stated collection window; they are not an attendance, ideology, constitutional, or performance score."
+  },
+  "officialRecord": {
+    "type": "legislative",
+    "session": "89th Legislature",
+    "status": "record_level_vote_evidence_loaded",
+    "billsByAuthorUrl": "https://capitol.texas.gov/reports/report.aspx?ID=author&LegSess=89R&Code=A4345",
+    "billsSponsoredUrl": "https://capitol.texas.gov/reports/report.aspx?ID=sponsor&LegSess=89R&Code=A4345",
+    "voteInformationUrl": "https://capitol.texas.gov/Reports/GeneralVotesByDateHouse.aspx",
+    "financeSourceUrl": "https://www.ethics.state.tx.us/search/cf/",
+    "note": "Official bill paths support legislation review. The voting summary is backed by source-linked official record-vote rows and is not a score."
+  },
+  "campaignFinanceDisclosure": {
+    "status": "pending_review",
+    "sourceUrl": "https://www.ethics.state.tx.us/search/cf/",
+    "reviewedAt": "2026-08-16",
+    "note": "Totals, donors, industries/PACs, expenditures, and reporting period are withheld until the officeholder filer is matched without ambiguity."
+  },
+  "sentimentDisclosure": {
+    "status": "pending_review",
+    "reviewedAt": "2026-08-16",
+    "note": "No sentiment is published without jurisdiction-confidence, sampling, collection-window, platform-mix, duplication/bot, and uncertainty disclosures."
+  },
+  "fieldFreshness": {
+    "identity": {
+      "status": "current",
+      "reviewedAt": "2026-08-16",
+      "sourceUrl": "https://house.texas.gov/api/getMembers",
+      "note": "Matched to the current official Texas House roster by district and full name."
+    },
+    "portrait": {
+      "status": "current",
+      "reviewedAt": "2026-08-16",
+      "sourceUrl": "https://www.txdirectory.com/files/photo/per69360.png",
+      "note": "1000x1320; 276392 stored bytes; downscaled only when the source exceeded 1600px and never upscaled."
+    },
+    "contact": {
+      "status": "current",
+      "reviewedAt": "2026-08-16",
+      "sourceUrl": "https://house.texas.gov/members/4345",
+      "note": "Capitol room, complete mailing address, telephone, email channel, and official website reviewed against the member page."
+    },
+    "term": {
+      "status": "current",
+      "reviewedAt": "2026-08-16",
+      "sourceUrl": "https://www.sos.state.tx.us/elections/historical/index.shtml",
+      "note": "The current two-year House term and 2026 general-election cycle are disclosed. The exact term-end date remains labeled pending source review, and candidate filing status is not inferred."
+    },
+    "assignments": {
+      "status": "current",
+      "reviewedAt": "2026-08-16",
+      "sourceUrl": "https://house.texas.gov/members/4345/committees",
+      "note": "Current committee and leadership assignments loaded from the official House committee API and linked page."
+    },
+    "biography": {
+      "status": "current",
+      "reviewedAt": "2026-08-16",
+      "sourceUrl": "https://house.texas.gov/members/4345/biography",
+      "note": "Concise biography derived from the official House biography page."
+    },
+    "legislation": {
+      "status": "source_path_only",
+      "reviewedAt": "2026-08-16",
+      "sourceUrl": "https://capitol.texas.gov/reports/report.aspx?ID=author&LegSess=89R&Code=A4345",
+      "note": "Official authored and sponsored bill paths are linked; individual bill findings require record-level editorial review."
+    },
+    "votingRecord": {
+      "status": "current",
+      "reviewedAt": "2026-08-16",
+      "sourceUrl": "https://capitol.texas.gov/Reports/GeneralVotesByDateHouse.aspx",
+      "note": "4,507 official House positions are indexed; 60 recent source-linked rows are stored for display."
+    },
+    "campaignFinance": {
+      "status": "pending_review",
+      "reviewedAt": "2026-08-16",
+      "sourceUrl": "https://www.ethics.state.tx.us/search/cf/",
+      "note": "Filer identity and reporting period are not yet matched."
+    },
+    "positiveWork": {
+      "status": "pending_review",
+      "reviewedAt": "2026-08-16",
+      "sourceUrl": "https://house.texas.gov/members/4345/biography",
+      "note": "No positive-work claim is published without a dated primary record, measurable result, and independent context."
+    },
+    "criticism": {
+      "status": "pending_review",
+      "reviewedAt": "2026-08-16",
+      "sourceUrl": "https://house.texas.gov/members/4345",
+      "note": "No criticism or controversy is published without substantiation, attribution, date, context, and an official response when available."
+    },
+    "sentiment": {
+      "status": "pending_review",
+      "reviewedAt": "2026-08-16",
+      "sourceUrl": "https://house.texas.gov/members/4345",
+      "note": "No constituent sentiment is published without jurisdiction-confidence and sampling disclosures."
+    },
+    "constitutionalAlignment": {
+      "status": "pending_review",
+      "reviewedAt": "2026-08-16",
+      "sourceUrl": "https://capitol.texas.gov/Reports/GeneralVotesByDateHouse.aspx",
+      "note": "No score is published without cited votes, a transparent rubric, applicable provisions, uncertainty, and a RepWatchr-analysis disclaimer."
+    },
+    "officialRecord": {
+      "status": "current",
+      "reviewedAt": "2026-08-16",
+      "sourceUrl": "https://capitol.texas.gov/Reports/GeneralVotesByDateHouse.aspx",
+      "note": "Record-level vote rows are loaded; legislation remains linked at source-path depth."
+    }
+  }
 }
