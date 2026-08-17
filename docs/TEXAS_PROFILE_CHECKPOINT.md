@@ -23,6 +23,7 @@ The shared responsive RepWatchr dashboard/report-card system was reused without 
 ## Validation and production baseline
 
 - The pre-change production baseline is Vercel deployment `dpl_BmbEg3dVoPAEp1hxvS67YdMJLC4X`, READY on GitHub commit `01f27c46c7a3536d1e66d392235a41df20f88cb0`.
+- The tested 25-profile source batch is published through the protected main-branch workflow; the exact deployment and live-route results are recorded in the completion report.
 - Supabase project `rgxboswrinsuakxqstyc` is `ACTIVE_HEALTHY` on Postgres 17.6.1. The inspected public profile-pipeline tables retain RLS, including 84 update runs, 8,235 completion snapshots, 643 enrichment items, 27,670 vote snapshots, and 1,151 social-account records.
 - The latest inspected profile update run, `0ebd63f9-4047-4f92-9ba0-868efc6087aa`, completed on August 17 with 31,013 inserts and zero errors.
 - The Supabase overlay has 50 current source-linked vote snapshots for each state profile and 36 for each federal profile in this batch, with zero missing source URLs.
