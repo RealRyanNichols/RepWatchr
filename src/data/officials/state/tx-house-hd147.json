@@ -1,11 +1,11 @@
 {
   "id": "jo-jones",
-  "name": "Jo Jones",
+  "name": "Jolanda \"Jo\" Jones",
   "firstName": "Jo",
   "lastName": "Jones",
-  "photo": "/images/officials/state-house/jo-jones.jpg",
-  "photoSourceUrl": "https://house.texas.gov/images/members/4105.jpg?v=1",
-  "photoCredit": "Official Texas House of Representatives photo",
+  "photo": "/images/officials/texas-accountability/jo-jones.jpg",
+  "photoSourceUrl": "https://www.txdirectory.com/files/photo/per68455.png",
+  "photoCredit": "Texas State Directory Online elected-official portrait; identity cross-checked against the current official Texas House roster.",
   "party": "D",
   "level": "state",
   "position": "State Representative",
@@ -15,30 +15,286 @@
     "Texas"
   ],
   "termStart": "2022-05-18",
-  "termEnd": "Current legislative term pending source review",
+  "termEnd": "Current two-year House term; exact end date pending source review",
   "contactInfo": {
-    "office": "Room E2.908, P.O. Box 12910, Austin, TX 78711",
+    "office": "Room E2.908 P.O. Box 12910 Austin, Texas 78711-2910",
     "phone": "512-463-0524",
     "email": "jolanda.jones@house.texas.gov",
     "website": "https://house.texas.gov/members/4105"
   },
-  "bio": "Jo Jones serves as State Representative for Texas House of Representatives District 147. This RepWatchr starter profile is sourced from official Texas Legislature profile data and OpenStates public records.",
+  "bio": "JOLANDA \"JO\" JONES rose from a childhood of poverty and tragedy to membership in numerous Halls of Fame, a CNN Hero, a 4-time national track and field champion, a basketball All-American, a Rhodes Scholar nominee, a successful businesswoman, author, and an unapologetic human rights activist, a Houston City Council member and school board Trustee. This respected analyst has interviewed with Roland Martin, Tom Joyner, and Jacque Reid and is on the cover of Curve Magazine. Today, Jolanda serves as a Texas State Representative for House District 147. She has a proven track record of leadership, commitment, charitable work, and teamwork and is a highly sought-after public speaker. Jolanda was initiated into Alpha Kappa Alpha Sorority, Incorporated, at.",
   "campaignPromises": [],
-  "reviewStatus": "source_seeded",
+  "reviewStatus": "record_enriched",
   "state": "TX",
   "sourceLinks": [
     {
-      "title": "Official Texas House of Representatives profile",
-      "url": "https://house.texas.gov/members/4105"
+      "title": "Official Texas House member page",
+      "url": "https://house.texas.gov/members/4105",
+      "accessedAt": "2026-08-17",
+      "supports": [
+        "identity",
+        "office",
+        "contact",
+        "legislation_paths"
+      ]
     },
     {
-      "title": "OpenStates public people record",
-      "url": "https://raw.githubusercontent.com/openstates/people/main/data/tx/legislature/Jolanda-Jo-Jones-45cd43ff-77b3-467c-aa61-890ebee8ece5.yml"
+      "title": "Official current Texas House roster API",
+      "url": "https://house.texas.gov/api/getMembers",
+      "accessedAt": "2026-08-17",
+      "supports": [
+        "current_office",
+        "district",
+        "identity",
+        "party"
+      ]
     },
     {
-      "title": "Official profile photo source",
-      "url": "https://house.texas.gov/images/members/4105.jpg?v=1"
+      "title": "Official Texas House member directory",
+      "url": "https://house.texas.gov/members",
+      "accessedAt": "2026-08-17",
+      "supports": [
+        "current_office",
+        "district"
+      ]
+    },
+    {
+      "title": "Official Texas House biography",
+      "url": "https://house.texas.gov/members/4105/biography",
+      "accessedAt": "2026-08-17",
+      "supports": [
+        "biography"
+      ]
+    },
+    {
+      "title": "Official Texas House committee assignments",
+      "url": "https://house.texas.gov/members/4105/committees",
+      "accessedAt": "2026-08-17",
+      "supports": [
+        "committees",
+        "leadership"
+      ]
+    },
+    {
+      "title": "Texas Legislature Online authored bills",
+      "url": "https://capitol.texas.gov/reports/report.aspx?ID=author&LegSess=89R&Code=A4105",
+      "accessedAt": "2026-08-17",
+      "supports": [
+        "sponsored_legislation"
+      ]
+    },
+    {
+      "title": "Texas Legislature Online sponsored bills",
+      "url": "https://capitol.texas.gov/reports/report.aspx?ID=sponsor&LegSess=89R&Code=A4105",
+      "accessedAt": "2026-08-17",
+      "supports": [
+        "sponsored_legislation"
+      ]
+    },
+    {
+      "title": "Official Texas House votes-by-date ledger",
+      "url": "https://capitol.texas.gov/Reports/GeneralVotesByDateHouse.aspx",
+      "accessedAt": "2026-08-17",
+      "supports": [
+        "record_level_votes",
+        "voting_record_summary",
+        "roll_call_links"
+      ]
+    },
+    {
+      "title": "Texas Legislature Online vote-information guide",
+      "url": "https://capitol.texas.gov/billlookup/voteinfo.aspx",
+      "accessedAt": "2026-08-17",
+      "supports": [
+        "voting_record_method",
+        "record_vote_lookup"
+      ]
+    },
+    {
+      "title": "Texas Ethics Commission campaign-finance search",
+      "url": "https://www.ethics.state.tx.us/search/cf/",
+      "accessedAt": "2026-08-17",
+      "supports": [
+        "campaign_finance_source_path"
+      ]
+    },
+    {
+      "title": "Texas Secretary of State election archive",
+      "url": "https://www.sos.state.tx.us/elections/historical/index.shtml",
+      "accessedAt": "2026-08-17",
+      "supports": [
+        "term",
+        "election_history"
+      ]
+    },
+    {
+      "title": "Portrait source profile and provenance",
+      "url": "https://www.txdirectory.com/online/person/?id=68455",
+      "accessedAt": "2026-08-17",
+      "supports": [
+        "portrait",
+        "portrait_provenance"
+      ]
+    },
+    {
+      "title": "Stored portrait source file",
+      "url": "https://www.txdirectory.com/files/photo/per68455.png",
+      "accessedAt": "2026-08-17",
+      "supports": [
+        "portrait",
+        "portrait_provenance"
+      ]
+    },
+    {
+      "title": "Texas State Directory roster and publisher context",
+      "url": "https://www.txdirectory.com/online/txhouse/",
+      "accessedAt": "2026-08-17",
+      "supports": [
+        "portrait_provenance",
+        "rights_recheck"
+      ]
     }
   ],
-  "lastVerifiedAt": "2026-04-27"
+  "lastVerifiedAt": "2026-08-17",
+  "photoRights": "Stored as an attributed delivery derivative of the Texas State Directory Online profile image; source provenance retained and reuse rights should be rechecked before redistribution outside RepWatchr.",
+  "committeeAssignments": [
+    "Criminal Jurisprudence",
+    "S/C on Juvenile Justice — Vice Chair",
+    "Public Health",
+    "Redistricting"
+  ],
+  "nextElection": "2026 general election",
+  "accountabilityNotes": [
+    "Texas House record-vote rows report source-linked recorded positions only and do not infer motive, ideology, attendance, constitutional alignment, or performance.",
+    "Positive-work claims remain pending until a dated primary record, measurable result, and independent context are attached.",
+    "Criticism and controversies remain pending until each claim is substantiated, attributed, dated, contextualized, and paired with the official's response when available.",
+    "Campaign-finance totals, donors, industries/PACs, expenditures, and reporting periods remain unpublished until the correct filer is matched.",
+    "Constituent sentiment remains unpublished until the collection window, source mix, jurisdiction-confidence method, duplicate/bot filtering, sample size, and uncertainty are disclosed.",
+    "No constitutional-alignment score is published without cited official actions, a transparent rubric, applicable provisions, uncertainty, and a RepWatchr-analysis/non-legal-judgment disclaimer."
+  ],
+  "votingRecordEvidence": {
+    "status": "record_level_evidence_loaded",
+    "chamber": "Texas House",
+    "coverageWindow": "Texas Legislature records from 2025-01-14 through 2026-06-21",
+    "indexedPositions": 4507,
+    "positionCounts": {
+      "yea": 3494,
+      "nay": 697,
+      "present": 18,
+      "notVoting": 298,
+      "other": 0
+    },
+    "storedRecordRows": 60,
+    "latestRecordedVoteDate": "2025-09-03",
+    "sourceUrl": "https://capitol.texas.gov/Reports/GeneralVotesByDateHouse.aspx",
+    "reviewedAt": "2026-08-17",
+    "methodology": "RepWatchr indexes the member position printed in official Texas House record-vote material. Totals describe loaded positions in the stated collection window; they are not an attendance, ideology, constitutional, or performance score."
+  },
+  "officialRecord": {
+    "type": "legislative",
+    "session": "89th Legislature",
+    "status": "record_level_vote_evidence_loaded",
+    "billsByAuthorUrl": "https://capitol.texas.gov/reports/report.aspx?ID=author&LegSess=89R&Code=A4105",
+    "billsSponsoredUrl": "https://capitol.texas.gov/reports/report.aspx?ID=sponsor&LegSess=89R&Code=A4105",
+    "voteInformationUrl": "https://capitol.texas.gov/Reports/GeneralVotesByDateHouse.aspx",
+    "financeSourceUrl": "https://www.ethics.state.tx.us/search/cf/",
+    "note": "Official bill paths support legislation review. The voting summary is backed by source-linked official record-vote rows and is not a score."
+  },
+  "campaignFinanceDisclosure": {
+    "status": "pending_review",
+    "sourceUrl": "https://www.ethics.state.tx.us/search/cf/",
+    "reviewedAt": "2026-08-17",
+    "note": "Totals, donors, industries/PACs, expenditures, and reporting period are withheld until the officeholder filer is matched without ambiguity."
+  },
+  "sentimentDisclosure": {
+    "status": "pending_review",
+    "reviewedAt": "2026-08-17",
+    "note": "No sentiment is published without jurisdiction-confidence, sampling, collection-window, platform-mix, duplication/bot, and uncertainty disclosures."
+  },
+  "fieldFreshness": {
+    "identity": {
+      "status": "current",
+      "reviewedAt": "2026-08-17",
+      "sourceUrl": "https://house.texas.gov/api/getMembers",
+      "note": "Matched to the current official Texas House roster by district and full name."
+    },
+    "portrait": {
+      "status": "current",
+      "reviewedAt": "2026-08-17",
+      "sourceUrl": "https://www.txdirectory.com/files/photo/per68455.png",
+      "note": "900x1200; 138280 stored bytes; source was never upscaled."
+    },
+    "contact": {
+      "status": "current",
+      "reviewedAt": "2026-08-17",
+      "sourceUrl": "https://house.texas.gov/members/4105",
+      "note": "Capitol room, complete mailing address, telephone, email channel, and website were checked on the official member page."
+    },
+    "term": {
+      "status": "current",
+      "reviewedAt": "2026-08-17",
+      "sourceUrl": "https://www.sos.state.tx.us/elections/historical/index.shtml",
+      "note": "The current two-year House term and 2026 general-election cycle are disclosed; exact term-end remains labeled pending review."
+    },
+    "assignments": {
+      "status": "current",
+      "reviewedAt": "2026-08-17",
+      "sourceUrl": "https://house.texas.gov/members/4105/committees",
+      "note": "Current committee and leadership assignments were loaded from the official House committee API."
+    },
+    "biography": {
+      "status": "current",
+      "reviewedAt": "2026-08-17",
+      "sourceUrl": "https://house.texas.gov/members/4105/biography",
+      "note": "Concise biography derived from the official House biography page."
+    },
+    "legislation": {
+      "status": "source_path_only",
+      "reviewedAt": "2026-08-17",
+      "sourceUrl": "https://capitol.texas.gov/reports/report.aspx?ID=author&LegSess=89R&Code=A4105",
+      "note": "Official authored and sponsored bill paths are linked; individual bill findings require record-level review."
+    },
+    "votingRecord": {
+      "status": "current",
+      "reviewedAt": "2026-08-17",
+      "sourceUrl": "https://capitol.texas.gov/Reports/GeneralVotesByDateHouse.aspx",
+      "note": "4,507 positions are indexed; 60 source-linked rows are stored for display."
+    },
+    "campaignFinance": {
+      "status": "pending_review",
+      "reviewedAt": "2026-08-17",
+      "sourceUrl": "https://www.ethics.state.tx.us/search/cf/",
+      "note": "Filer identity and reporting period are not yet matched."
+    },
+    "positiveWork": {
+      "status": "pending_review",
+      "reviewedAt": "2026-08-17",
+      "sourceUrl": "https://house.texas.gov/members/4105/biography",
+      "note": "No positive-work claim is published without a dated primary record, measurable result, and independent context."
+    },
+    "criticism": {
+      "status": "pending_review",
+      "reviewedAt": "2026-08-17",
+      "sourceUrl": "https://house.texas.gov/members/4105",
+      "note": "No criticism or controversy is published without substantiation, attribution, date, context, and an official response when available."
+    },
+    "sentiment": {
+      "status": "pending_review",
+      "reviewedAt": "2026-08-17",
+      "sourceUrl": "https://house.texas.gov/members/4105",
+      "note": "No constituent sentiment is published without jurisdiction-confidence and sampling disclosures."
+    },
+    "constitutionalAlignment": {
+      "status": "pending_review",
+      "reviewedAt": "2026-08-17",
+      "sourceUrl": "https://capitol.texas.gov/Reports/GeneralVotesByDateHouse.aspx",
+      "note": "No score is published without cited votes, a transparent rubric, applicable provisions, uncertainty, and a RepWatchr-analysis disclaimer."
+    },
+    "officialRecord": {
+      "status": "current",
+      "reviewedAt": "2026-08-17",
+      "sourceUrl": "https://capitol.texas.gov/Reports/GeneralVotesByDateHouse.aspx",
+      "note": "Record-level vote rows are loaded; legislation remains linked at source-path depth."
+    }
+  }
 }

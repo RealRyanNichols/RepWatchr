@@ -3,9 +3,9 @@
   "name": "Pete Sessions",
   "firstName": "Pete",
   "lastName": "Sessions",
-  "photo": "/images/officials/federal/pete-sessions.jpg",
-  "photoSourceUrl": "https://unitedstates.github.io/images/congress/225x275/S000250.jpg",
-  "photoCredit": "UnitedStates project congressional image mirror",
+  "photo": "/images/officials/federal/pete-sessions/portrait.jpg",
+  "photoSourceUrl": "https://commons.wikimedia.org/wiki/File:Pete_Sessions_official_photo.jpg",
+  "photoCredit": "https://sessions.house.gov/media-center/official-photo; US House Office of Photography; Wikimedia Commons.",
   "party": "R",
   "level": "federal",
   "position": "U.S. Representative",
@@ -15,33 +15,292 @@
   "termStart": "2025-01-03",
   "termEnd": "2027-01-03",
   "contactInfo": {
-    "office": "2204 Rayburn House Office Building",
+    "office": "2204 Rayburn House Office Building, Washington, DC, 20515-4317",
     "phone": "202-225-6105",
     "email": "https://sessions.house.gov",
     "website": "https://sessions.house.gov"
   },
-  "bio": "Pete Sessions serves as the U.S. Representative for Texas's 17th Congressional District. This RepWatchr starter profile is source-seeded from current congressional roster data, official public links, and public congressional photo sources.",
+  "bio": "Pete Sessions represents Texas's 17th Congressional District in the U.S. House. The current Clerk profile verifies the office, contact details, party, and assignments to Committee on Financial Services and Committee on Oversight and Government Reform. RepWatchr links the official sponsorship and roll-call records and does not turn source availability into an uncited performance judgment.",
   "campaignPromises": [],
-  "reviewStatus": "source_seeded",
+  "reviewStatus": "record_enriched",
   "state": "TX",
   "bioguideId": "S000250",
   "sourceLinks": [
     {
-      "title": "Official congressional website",
-      "url": "https://sessions.house.gov"
+      "title": "Office of the Clerk current member profile",
+      "url": "https://clerk.house.gov/members/S000250",
+      "accessedAt": "2026-08-17",
+      "supports": [
+        "identity",
+        "current_office",
+        "district",
+        "party",
+        "contact",
+        "committees"
+      ]
     },
     {
-      "title": "Congress legislators current roster",
-      "url": "https://raw.githubusercontent.com/unitedstates/congress-legislators/master/legislators-current.yaml"
+      "title": "Official congressional website",
+      "url": "https://sessions.house.gov",
+      "accessedAt": "2026-08-17",
+      "supports": [
+        "contact",
+        "constituent_service",
+        "biography_context"
+      ]
+    },
+    {
+      "title": "Congress.gov current member directory",
+      "url": "https://www.congress.gov/members",
+      "accessedAt": "2026-08-17",
+      "supports": [
+        "current_office",
+        "identity"
+      ]
+    },
+    {
+      "title": "Congress.gov member and service profile",
+      "url": "https://www.congress.gov/member/pete-sessions/S000250",
+      "accessedAt": "2026-08-17",
+      "supports": [
+        "identity",
+        "service_history",
+        "legislation"
+      ]
+    },
+    {
+      "title": "Congress.gov sponsored legislation",
+      "url": "https://www.congress.gov/member/pete-sessions/S000250?q=%7B%22sponsorship%22%3A%22sponsored%22%7D",
+      "accessedAt": "2026-08-17",
+      "supports": [
+        "sponsored_legislation",
+        "bill_status",
+        "official_actions"
+      ]
     },
     {
       "title": "Biographical Directory of the United States Congress",
-      "url": "https://bioguide.congress.gov/search/bio/S000250"
+      "url": "https://bioguide.congress.gov/search/bio/S000250",
+      "accessedAt": "2026-08-17",
+      "supports": [
+        "identity",
+        "biography",
+        "service_history",
+        "term"
+      ]
     },
     {
-      "title": "Congressional photo source",
-      "url": "https://unitedstates.github.io/images/congress/225x275/S000250.jpg"
+      "title": "Office of the Clerk 2026 roll-call index",
+      "url": "https://clerk.house.gov/evs/2026/index.asp",
+      "accessedAt": "2026-08-17",
+      "supports": [
+        "record_level_votes",
+        "voting_record_summary",
+        "roll_call_links"
+      ]
+    },
+    {
+      "title": "Office of the Clerk member-vote search",
+      "url": "https://clerk.house.gov/Votes/MemberVotes",
+      "accessedAt": "2026-08-17",
+      "supports": [
+        "voting_record_method",
+        "member_vote_lookup"
+      ]
+    },
+    {
+      "title": "Federal Election Commission candidate search",
+      "url": "https://www.fec.gov/data/candidates/house/?election_year=2026&state=TX",
+      "accessedAt": "2026-08-17",
+      "supports": [
+        "campaign_finance_source_path"
+      ]
+    },
+    {
+      "title": "Federal Election Commission filing search",
+      "url": "https://www.fec.gov/data/filings/?data_type=processed&election_year=2026&state=TX",
+      "accessedAt": "2026-08-17",
+      "supports": [
+        "campaign_finance_reporting_periods",
+        "expenditures_source_path"
+      ]
+    },
+    {
+      "title": "U.S. Constitution, Article I",
+      "url": "https://constitution.congress.gov/constitution/article-1/",
+      "accessedAt": "2026-08-17",
+      "supports": [
+        "constitutional_authority",
+        "house_terms",
+        "federal_legislative_power"
+      ]
+    },
+    {
+      "title": "Wikidata Bioguide identity match",
+      "url": "https://www.wikidata.org/entity/Q437852",
+      "accessedAt": "2026-08-17",
+      "supports": [
+        "portrait_identity_match",
+        "bioguide_id"
+      ]
+    },
+    {
+      "title": "Wikimedia Commons portrait and license record",
+      "url": "https://commons.wikimedia.org/wiki/File:Pete_Sessions_official_photo.jpg",
+      "accessedAt": "2026-08-17",
+      "supports": [
+        "portrait",
+        "portrait_provenance",
+        "portrait_license"
+      ]
+    },
+    {
+      "title": "Wikimedia Commons license link",
+      "url": "https://commons.wikimedia.org/wiki/File:Pete_Sessions_official_photo.jpg",
+      "accessedAt": "2026-08-17",
+      "supports": [
+        "portrait_license",
+        "rights_recheck"
+      ]
     }
   ],
-  "lastVerifiedAt": "2026-04-29"
+  "lastVerifiedAt": "2026-08-17",
+  "photoRights": "Public domain; license and provenance recorded at https://commons.wikimedia.org/wiki/File:Pete_Sessions_official_photo.jpg.",
+  "committeeAssignments": [
+    "Committee on Financial Services",
+    "Committee on Oversight and Government Reform"
+  ],
+  "nextElection": "2026 general election",
+  "accountabilityNotes": [
+    "U.S. House roll-call rows report source-linked recorded positions only and do not infer motive, ideology, attendance, constitutional alignment, or performance.",
+    "Positive-work claims remain pending until a dated primary record, measurable result, and independent context are attached.",
+    "Criticism and controversies remain pending until each claim is substantiated, attributed, dated, contextualized, and paired with the official's response when available.",
+    "Campaign-finance totals, donors, industries/PACs, expenditures, and reporting periods remain unpublished until the correct filer is matched.",
+    "Constituent sentiment remains unpublished until the collection window, source mix, jurisdiction-confidence method, duplicate/bot filtering, sample size, and uncertainty are disclosed.",
+    "No constitutional-alignment score is published without cited official actions, a transparent rubric, applicable provisions, uncertainty, and a RepWatchr-analysis/non-legal-judgment disclaimer."
+  ],
+  "votingRecordEvidence": {
+    "status": "record_level_evidence_loaded",
+    "chamber": "U.S. House",
+    "coverageWindow": "119th Congress, 2nd Session (2026)",
+    "indexedPositions": 221,
+    "positionCounts": {
+      "yea": 163,
+      "nay": 58,
+      "present": 0,
+      "notVoting": 0,
+      "other": 0
+    },
+    "storedRecordRows": 24,
+    "latestRecordedVoteDate": "2026-06-11",
+    "sourceUrl": "https://clerk.house.gov/evs/2026/index.asp",
+    "reviewedAt": "2026-08-17",
+    "methodology": "RepWatchr indexes the member position printed in official Clerk roll-call material. Totals describe loaded positions in the stated collection window; they are not an attendance, ideology, constitutional, or performance score."
+  },
+  "officialRecord": {
+    "type": "legislative",
+    "session": "119th Congress, 2nd Session (2026)",
+    "status": "record_level_vote_evidence_loaded",
+    "billsSponsoredUrl": "https://www.congress.gov/member/pete-sessions/S000250?q=%7B%22sponsorship%22%3A%22sponsored%22%7D",
+    "voteInformationUrl": "https://clerk.house.gov/evs/2026/index.asp",
+    "financeSourceUrl": "https://www.fec.gov/data/candidates/house/?election_year=2026&state=TX",
+    "note": "Official sponsorship and roll-call paths support record review; no source path is treated as a favorable or unfavorable finding by itself."
+  },
+  "campaignFinanceDisclosure": {
+    "status": "pending_review",
+    "sourceUrl": "https://www.fec.gov/data/candidates/house/?election_year=2026&state=TX",
+    "reviewedAt": "2026-08-17",
+    "note": "Candidate/committee identity, reporting period, receipts, donors, industries/PACs, and expenditures remain withheld until filer-level reconciliation is complete."
+  },
+  "sentimentDisclosure": {
+    "status": "pending_review",
+    "reviewedAt": "2026-08-17",
+    "note": "No sentiment is published without district-confidence, sampling, collection-window, platform-mix, duplication/bot, and uncertainty disclosures."
+  },
+  "fieldFreshness": {
+    "identity": {
+      "status": "current",
+      "reviewedAt": "2026-08-17",
+      "sourceUrl": "https://clerk.house.gov/members/S000250",
+      "note": "Full name, current Texas district, party, and 119th Congress membership verified on the Clerk profile."
+    },
+    "portrait": {
+      "status": "current",
+      "reviewedAt": "2026-08-17",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Pete_Sessions_official_photo.jpg",
+      "note": "623x720; 52654 stored bytes; original 623x720; Public domain; never upscaled."
+    },
+    "contact": {
+      "status": "current",
+      "reviewedAt": "2026-08-17",
+      "sourceUrl": "https://clerk.house.gov/members/S000250",
+      "note": "Washington office, full mailing address, phone, and official website were parsed from the current Clerk profile."
+    },
+    "term": {
+      "status": "current",
+      "reviewedAt": "2026-08-17",
+      "sourceUrl": "https://clerk.house.gov/members/S000250",
+      "note": "Clerk oath date and 119th Congress service support the January 3, 2025 through January 3, 2027 House term and 2026 election cycle."
+    },
+    "assignments": {
+      "status": "current",
+      "reviewedAt": "2026-08-17",
+      "sourceUrl": "https://clerk.house.gov/members/S000250",
+      "note": "Current standing/select committee assignments were loaded from the Clerk profile."
+    },
+    "biography": {
+      "status": "current",
+      "reviewedAt": "2026-08-17",
+      "sourceUrl": "https://bioguide.congress.gov/search/bio/S000250",
+      "note": "Concise service biography combines the current Clerk assignment with the official Bioguide path."
+    },
+    "legislation": {
+      "status": "source_path_only",
+      "reviewedAt": "2026-08-17",
+      "sourceUrl": "https://www.congress.gov/member/pete-sessions/S000250?q=%7B%22sponsorship%22%3A%22sponsored%22%7D",
+      "note": "Official sponsored-legislation results are linked; individual bill findings require record-level review."
+    },
+    "votingRecord": {
+      "status": "current",
+      "reviewedAt": "2026-08-17",
+      "sourceUrl": "https://clerk.house.gov/evs/2026/index.asp",
+      "note": "221 positions are indexed; 24 recent source-linked rows are stored for display."
+    },
+    "officialRecord": {
+      "status": "current",
+      "reviewedAt": "2026-08-17",
+      "sourceUrl": "https://clerk.house.gov/evs/2026/index.asp",
+      "note": "Record-level roll-call evidence is loaded; sponsorship remains linked at source-path depth."
+    },
+    "campaignFinance": {
+      "status": "pending_review",
+      "reviewedAt": "2026-08-17",
+      "sourceUrl": "https://www.fec.gov/data/candidates/house/?election_year=2026&state=TX",
+      "note": "Candidate and committee filer identities and reporting periods are not yet reconciled."
+    },
+    "positiveWork": {
+      "status": "pending_review",
+      "reviewedAt": "2026-08-17",
+      "sourceUrl": "https://www.congress.gov/member/pete-sessions/S000250",
+      "note": "No positive-work claim is published without a dated primary record, measurable result, and independent context."
+    },
+    "criticism": {
+      "status": "pending_review",
+      "reviewedAt": "2026-08-17",
+      "sourceUrl": "https://clerk.house.gov/members/S000250",
+      "note": "No criticism or controversy is published without substantiation, attribution, date, context, and an official response when available."
+    },
+    "sentiment": {
+      "status": "pending_review",
+      "reviewedAt": "2026-08-17",
+      "sourceUrl": "https://clerk.house.gov/members/S000250",
+      "note": "No constituent sentiment is published without district-confidence and sampling disclosures."
+    },
+    "constitutionalAlignment": {
+      "status": "pending_review",
+      "reviewedAt": "2026-08-17",
+      "sourceUrl": "https://constitution.congress.gov/constitution/article-1/",
+      "note": "No score is published without cited votes, a transparent rubric, applicable provisions, uncertainty, and a RepWatchr-analysis disclaimer."
+    }
+  }
 }

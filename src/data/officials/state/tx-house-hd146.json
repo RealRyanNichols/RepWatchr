@@ -1,11 +1,11 @@
 {
   "id": "lauren-simmons",
-  "name": "Lauren Simmons",
+  "name": "Lauren Ashley Simmons",
   "firstName": "Lauren",
   "lastName": "Simmons",
-  "photo": "/images/officials/state-house/lauren-simmons.jpg",
-  "photoSourceUrl": "https://house.texas.gov/images/members/4765.jpg?v=1",
-  "photoCredit": "Official Texas House of Representatives photo",
+  "photo": "/images/officials/texas-accountability/lauren-simmons.jpg",
+  "photoSourceUrl": "https://www.txdirectory.com/files/photo/per71989.jpg",
+  "photoCredit": "Texas State Directory Online elected-official portrait; identity cross-checked against the current official Texas House roster.",
   "party": "D",
   "level": "state",
   "position": "State Representative",
@@ -15,30 +15,286 @@
     "Texas"
   ],
   "termStart": "2025-01-14",
-  "termEnd": "Current legislative term pending source review",
+  "termEnd": "Current two-year House term; exact end date pending source review",
   "contactInfo": {
-    "office": "Room E2.314, P.O. Box 12910, Austin, TX 78711",
+    "office": "Room E2.314 P.O. Box 12910 Austin, Texas 78711-2910",
     "phone": "512-463-0518",
     "email": "laurena.simmons@house.texas.gov",
     "website": "https://house.texas.gov/members/4765"
   },
-  "bio": "Lauren Simmons serves as State Representative for Texas House of Representatives District 146. This RepWatchr starter profile is sourced from official Texas Legislature profile data and OpenStates public records.",
+  "bio": "State Representative Lauren Ashley Simmons (Houston) is currently serving her first term in the Texas House of Representatives. District 146 serves parts of Southwest Houston which includes the historic Sunnyside neighborhood. Representative Simmons is a mom and a union organizer who has spent her entire professional career in the labor movement, starting at the Texas State Employees Union and spending almost five years with the American Federation of Teachers. She is currently a CWA 1180 shop steward. Representative Simmons is fighting to keep our public schools strong by supporting teachers, students, and parents. She’s fighting to get health care for people who have to choose between paying for medicine or paying the rent. Representative Simmons’.",
   "campaignPromises": [],
-  "reviewStatus": "source_seeded",
+  "reviewStatus": "record_enriched",
   "state": "TX",
   "sourceLinks": [
     {
-      "title": "Official Texas House of Representatives profile",
-      "url": "https://house.texas.gov/members/4765"
+      "title": "Official Texas House member page",
+      "url": "https://house.texas.gov/members/4765",
+      "accessedAt": "2026-08-17",
+      "supports": [
+        "identity",
+        "office",
+        "contact",
+        "legislation_paths"
+      ]
     },
     {
-      "title": "OpenStates public people record",
-      "url": "https://raw.githubusercontent.com/openstates/people/main/data/tx/legislature/Lauren-Simmons-9dc31ea5-fd89-4909-a9bf-d732ea02282a.yml"
+      "title": "Official current Texas House roster API",
+      "url": "https://house.texas.gov/api/getMembers",
+      "accessedAt": "2026-08-17",
+      "supports": [
+        "current_office",
+        "district",
+        "identity",
+        "party"
+      ]
     },
     {
-      "title": "Official profile photo source",
-      "url": "https://house.texas.gov/images/members/4765.jpg?v=1"
+      "title": "Official Texas House member directory",
+      "url": "https://house.texas.gov/members",
+      "accessedAt": "2026-08-17",
+      "supports": [
+        "current_office",
+        "district"
+      ]
+    },
+    {
+      "title": "Official Texas House biography",
+      "url": "https://house.texas.gov/members/4765/biography",
+      "accessedAt": "2026-08-17",
+      "supports": [
+        "biography"
+      ]
+    },
+    {
+      "title": "Official Texas House committee assignments",
+      "url": "https://house.texas.gov/members/4765/committees",
+      "accessedAt": "2026-08-17",
+      "supports": [
+        "committees",
+        "leadership"
+      ]
+    },
+    {
+      "title": "Texas Legislature Online authored bills",
+      "url": "https://capitol.texas.gov/reports/report.aspx?ID=author&LegSess=89R&Code=A4765",
+      "accessedAt": "2026-08-17",
+      "supports": [
+        "sponsored_legislation"
+      ]
+    },
+    {
+      "title": "Texas Legislature Online sponsored bills",
+      "url": "https://capitol.texas.gov/reports/report.aspx?ID=sponsor&LegSess=89R&Code=A4765",
+      "accessedAt": "2026-08-17",
+      "supports": [
+        "sponsored_legislation"
+      ]
+    },
+    {
+      "title": "Official Texas House votes-by-date ledger",
+      "url": "https://capitol.texas.gov/Reports/GeneralVotesByDateHouse.aspx",
+      "accessedAt": "2026-08-17",
+      "supports": [
+        "record_level_votes",
+        "voting_record_summary",
+        "roll_call_links"
+      ]
+    },
+    {
+      "title": "Texas Legislature Online vote-information guide",
+      "url": "https://capitol.texas.gov/billlookup/voteinfo.aspx",
+      "accessedAt": "2026-08-17",
+      "supports": [
+        "voting_record_method",
+        "record_vote_lookup"
+      ]
+    },
+    {
+      "title": "Texas Ethics Commission campaign-finance search",
+      "url": "https://www.ethics.state.tx.us/search/cf/",
+      "accessedAt": "2026-08-17",
+      "supports": [
+        "campaign_finance_source_path"
+      ]
+    },
+    {
+      "title": "Texas Secretary of State election archive",
+      "url": "https://www.sos.state.tx.us/elections/historical/index.shtml",
+      "accessedAt": "2026-08-17",
+      "supports": [
+        "term",
+        "election_history"
+      ]
+    },
+    {
+      "title": "Portrait source profile and provenance",
+      "url": "https://www.txdirectory.com/online/person/?id=71989",
+      "accessedAt": "2026-08-17",
+      "supports": [
+        "portrait",
+        "portrait_provenance"
+      ]
+    },
+    {
+      "title": "Stored portrait source file",
+      "url": "https://www.txdirectory.com/files/photo/per71989.jpg",
+      "accessedAt": "2026-08-17",
+      "supports": [
+        "portrait",
+        "portrait_provenance"
+      ]
+    },
+    {
+      "title": "Texas State Directory roster and publisher context",
+      "url": "https://www.txdirectory.com/online/txhouse/",
+      "accessedAt": "2026-08-17",
+      "supports": [
+        "portrait_provenance",
+        "rights_recheck"
+      ]
     }
   ],
-  "lastVerifiedAt": "2026-04-27"
+  "lastVerifiedAt": "2026-08-17",
+  "photoRights": "Stored as an attributed delivery derivative of the Texas State Directory Online profile image; source provenance retained and reuse rights should be rechecked before redistribution outside RepWatchr.",
+  "committeeAssignments": [
+    "Appropriations",
+    "Appropriations - S/C on Article III",
+    "Health Care Affordability, Select",
+    "Public Health"
+  ],
+  "nextElection": "2026 general election",
+  "accountabilityNotes": [
+    "Texas House record-vote rows report source-linked recorded positions only and do not infer motive, ideology, attendance, constitutional alignment, or performance.",
+    "Positive-work claims remain pending until a dated primary record, measurable result, and independent context are attached.",
+    "Criticism and controversies remain pending until each claim is substantiated, attributed, dated, contextualized, and paired with the official's response when available.",
+    "Campaign-finance totals, donors, industries/PACs, expenditures, and reporting periods remain unpublished until the correct filer is matched.",
+    "Constituent sentiment remains unpublished until the collection window, source mix, jurisdiction-confidence method, duplicate/bot filtering, sample size, and uncertainty are disclosed.",
+    "No constitutional-alignment score is published without cited official actions, a transparent rubric, applicable provisions, uncertainty, and a RepWatchr-analysis/non-legal-judgment disclaimer."
+  ],
+  "votingRecordEvidence": {
+    "status": "record_level_evidence_loaded",
+    "chamber": "Texas House",
+    "coverageWindow": "Texas Legislature records from 2025-01-14 through 2026-06-21",
+    "indexedPositions": 4507,
+    "positionCounts": {
+      "yea": 3345,
+      "nay": 435,
+      "present": 46,
+      "notVoting": 681,
+      "other": 0
+    },
+    "storedRecordRows": 60,
+    "latestRecordedVoteDate": "2025-09-03",
+    "sourceUrl": "https://capitol.texas.gov/Reports/GeneralVotesByDateHouse.aspx",
+    "reviewedAt": "2026-08-17",
+    "methodology": "RepWatchr indexes the member position printed in official Texas House record-vote material. Totals describe loaded positions in the stated collection window; they are not an attendance, ideology, constitutional, or performance score."
+  },
+  "officialRecord": {
+    "type": "legislative",
+    "session": "89th Legislature",
+    "status": "record_level_vote_evidence_loaded",
+    "billsByAuthorUrl": "https://capitol.texas.gov/reports/report.aspx?ID=author&LegSess=89R&Code=A4765",
+    "billsSponsoredUrl": "https://capitol.texas.gov/reports/report.aspx?ID=sponsor&LegSess=89R&Code=A4765",
+    "voteInformationUrl": "https://capitol.texas.gov/Reports/GeneralVotesByDateHouse.aspx",
+    "financeSourceUrl": "https://www.ethics.state.tx.us/search/cf/",
+    "note": "Official bill paths support legislation review. The voting summary is backed by source-linked official record-vote rows and is not a score."
+  },
+  "campaignFinanceDisclosure": {
+    "status": "pending_review",
+    "sourceUrl": "https://www.ethics.state.tx.us/search/cf/",
+    "reviewedAt": "2026-08-17",
+    "note": "Totals, donors, industries/PACs, expenditures, and reporting period are withheld until the officeholder filer is matched without ambiguity."
+  },
+  "sentimentDisclosure": {
+    "status": "pending_review",
+    "reviewedAt": "2026-08-17",
+    "note": "No sentiment is published without jurisdiction-confidence, sampling, collection-window, platform-mix, duplication/bot, and uncertainty disclosures."
+  },
+  "fieldFreshness": {
+    "identity": {
+      "status": "current",
+      "reviewedAt": "2026-08-17",
+      "sourceUrl": "https://house.texas.gov/api/getMembers",
+      "note": "Matched to the current official Texas House roster by district and full name."
+    },
+    "portrait": {
+      "status": "current",
+      "reviewedAt": "2026-08-17",
+      "sourceUrl": "https://www.txdirectory.com/files/photo/per71989.jpg",
+      "note": "580x592; 79621 stored bytes; source was never upscaled."
+    },
+    "contact": {
+      "status": "current",
+      "reviewedAt": "2026-08-17",
+      "sourceUrl": "https://house.texas.gov/members/4765",
+      "note": "Capitol room, complete mailing address, telephone, email channel, and website were checked on the official member page."
+    },
+    "term": {
+      "status": "current",
+      "reviewedAt": "2026-08-17",
+      "sourceUrl": "https://www.sos.state.tx.us/elections/historical/index.shtml",
+      "note": "The current two-year House term and 2026 general-election cycle are disclosed; exact term-end remains labeled pending review."
+    },
+    "assignments": {
+      "status": "current",
+      "reviewedAt": "2026-08-17",
+      "sourceUrl": "https://house.texas.gov/members/4765/committees",
+      "note": "Current committee and leadership assignments were loaded from the official House committee API."
+    },
+    "biography": {
+      "status": "current",
+      "reviewedAt": "2026-08-17",
+      "sourceUrl": "https://house.texas.gov/members/4765/biography",
+      "note": "Concise biography derived from the official House biography page."
+    },
+    "legislation": {
+      "status": "source_path_only",
+      "reviewedAt": "2026-08-17",
+      "sourceUrl": "https://capitol.texas.gov/reports/report.aspx?ID=author&LegSess=89R&Code=A4765",
+      "note": "Official authored and sponsored bill paths are linked; individual bill findings require record-level review."
+    },
+    "votingRecord": {
+      "status": "current",
+      "reviewedAt": "2026-08-17",
+      "sourceUrl": "https://capitol.texas.gov/Reports/GeneralVotesByDateHouse.aspx",
+      "note": "4,507 positions are indexed; 60 source-linked rows are stored for display."
+    },
+    "campaignFinance": {
+      "status": "pending_review",
+      "reviewedAt": "2026-08-17",
+      "sourceUrl": "https://www.ethics.state.tx.us/search/cf/",
+      "note": "Filer identity and reporting period are not yet matched."
+    },
+    "positiveWork": {
+      "status": "pending_review",
+      "reviewedAt": "2026-08-17",
+      "sourceUrl": "https://house.texas.gov/members/4765/biography",
+      "note": "No positive-work claim is published without a dated primary record, measurable result, and independent context."
+    },
+    "criticism": {
+      "status": "pending_review",
+      "reviewedAt": "2026-08-17",
+      "sourceUrl": "https://house.texas.gov/members/4765",
+      "note": "No criticism or controversy is published without substantiation, attribution, date, context, and an official response when available."
+    },
+    "sentiment": {
+      "status": "pending_review",
+      "reviewedAt": "2026-08-17",
+      "sourceUrl": "https://house.texas.gov/members/4765",
+      "note": "No constituent sentiment is published without jurisdiction-confidence and sampling disclosures."
+    },
+    "constitutionalAlignment": {
+      "status": "pending_review",
+      "reviewedAt": "2026-08-17",
+      "sourceUrl": "https://capitol.texas.gov/Reports/GeneralVotesByDateHouse.aspx",
+      "note": "No score is published without cited votes, a transparent rubric, applicable provisions, uncertainty, and a RepWatchr-analysis disclaimer."
+    },
+    "officialRecord": {
+      "status": "current",
+      "reviewedAt": "2026-08-17",
+      "sourceUrl": "https://capitol.texas.gov/Reports/GeneralVotesByDateHouse.aspx",
+      "note": "Record-level vote rows are loaded; legislation remains linked at source-path depth."
+    }
+  }
 }
