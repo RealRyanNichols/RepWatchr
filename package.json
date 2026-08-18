@@ -36,6 +36,8 @@
     "verify:texas-house-routes-2026-08-16": "node scripts/verify-texas-house-routes-batch-2026-08-16.mjs",
     "smoke:texas-profile-depth-2026-08-17": "node scripts/smoke-texas-profile-depth-batch-2026-08-17.mjs",
     "verify:texas-profile-routes-2026-08-17": "node scripts/verify-texas-profile-routes-batch-2026-08-17.mjs",
+    "smoke:texas-profile-depth-2026-08-18": "node scripts/smoke-texas-profile-depth-batch-2026-08-18.mjs",
+    "verify:texas-profile-routes-2026-08-18": "node scripts/verify-texas-profile-routes-batch-2026-08-18.mjs",
     "smoke:race-hub": "node scripts/smoke-race-hub.mjs",
     "smoke:marion-release": "node scripts/smoke-marion-county-race-release.mjs",
     "smoke:race-poll": "node scripts/smoke-race-community-poll.mjs",
