@@ -41,6 +41,9 @@ export const metadata: Metadata = {
     "source-backed stories",
   ],
   metadataBase: new URL("https://www.repwatchr.com"),
+  verification: {
+    google: "8zB5zUadB5_EzRXbBVHHWzZZJbua3kF2YjFfeWpU00E",
+  },
   applicationName: "RepWatchr",
   appleWebApp: {
     capable: true,
