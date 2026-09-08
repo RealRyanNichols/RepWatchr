@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import Image from "next/image";
+import ArticleThumbnail from "@/components/news/ArticleThumbnail";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { getAllNews, getNewsById, getOfficialById } from "@/lib/data";
@@ -11,7 +11,7 @@ import ReportButton from "@/components/shared/ReportButton";
 import NextUsefulMove from "@/components/shared/NextUsefulMove";
 import TrustLabel from "@/components/shared/TrustLabel";
 import PublicPostEmbed from "@/components/news/PublicPostEmbed";
-import { absoluteRepWatchrUrl, buildOgImageUrl, buildRepWatchrMetadata } from "@/lib/repwatchr-seo";
+import { buildOgImageUrl, buildRepWatchrMetadata } from "@/lib/repwatchr-seo";
 import { breadcrumbJsonLd, jsonLd, newsArticleJsonLd } from "@/lib/structured-data";
 
 // Reviewed database articles and later corrections should not remain stale.
@@ -34,7 +34,7 @@ export async function generateMetadata({
     title: article.seoTitle ?? article.title,
     description: article.seoDescription ?? article.summary,
     path: `/news/${article.id}`,
-    imagePath: article.imageUrl ?? buildOgImageUrl("news", { id: article.id }),
+    imagePath: buildOgImageUrl("news", { id: article.id }),
     imageAlt: article.imageAlt ?? `${article.title} RepWatchr story preview`,
     type: "article",
     publishedTime: article.publishedAt,
@@ -115,9 +115,7 @@ export default async function NewsArticlePage({
     path: `/news/${article.id}`,
     datePublished: article.publishedAt,
     authorName: article.author,
-    image: article.imageUrl
-      ? absoluteRepWatchrUrl(article.imageUrl)
-      : buildOgImageUrl("news", { id: article.id }),
+    image: buildOgImageUrl("news", { id: article.id }),
     sourceLinks: sourceStructuredLinks,
     about: linkedOfficials.map((official) => ({
       name: official!.name,
@@ -208,24 +206,14 @@ export default async function NewsArticlePage({
         ) : null}
       </div>
 
-      {article.imageUrl ? (
-        <figure className="mt-6 overflow-hidden rounded-xl border border-slate-200 bg-slate-100 shadow-sm">
-          <Image
-            src={article.imageUrl}
-            alt={article.imageAlt ?? `${article.title} editorial image`}
-            width={1200}
-            height={630}
-            sizes="(min-width: 1024px) 768px, 100vw"
-            priority
-            className="aspect-[1200/630] h-auto w-full object-cover"
-          />
-          {article.imageCredit ? (
-            <figcaption className="border-t border-slate-200 bg-white px-4 py-2 text-xs font-semibold text-slate-600">
-              {article.imageCredit}
-            </figcaption>
-          ) : null}
-        </figure>
-      ) : null}
+      <figure className="mt-6 overflow-hidden rounded-xl border border-slate-200 bg-slate-100 shadow-sm">
+        <ArticleThumbnail article={article} priority featured sizes="(min-width: 1024px) 768px, 100vw" />
+        {article.imageCredit ? (
+          <figcaption className="border-t border-slate-200 bg-white px-4 py-2 text-xs font-semibold text-slate-600">
+            {article.imageCredit}
+          </figcaption>
+        ) : null}
+      </figure>
 
       {/* Summary */}
       <p className="mt-8 text-lg text-gray-700 font-medium leading-relaxed border-l-4 border-blue-500 pl-4">

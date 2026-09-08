@@ -1,0 +1,78 @@
+.masthead {
+  display: grid;
+  gap: 1rem;
+  margin-bottom: 1.25rem;
+}
+
+.heading {
+  margin-top: 0.5rem;
+  font-family: "Fraunces Variable", Fraunces, Georgia, serif;
+  font-size: clamp(1.8rem, 4vw, 3rem);
+  font-weight: 900;
+  line-height: 1.08;
+  letter-spacing: -0.035em;
+}
+
+.heroGrid,
+.sideGrid,
+.mediaGrid {
+  display: grid;
+  gap: 1rem;
+  min-width: 0;
+}
+
+.raceThumbnail,
+.mediaThumbnail {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+}
+
+.mediaThumbnail p:first-of-type {
+  display: block;
+  -webkit-line-clamp: unset;
+  overflow: visible;
+}
+
+.leadThumbnail {
+  width: 100%;
+  aspect-ratio: 1200 / 630;
+  min-height: 190px;
+}
+
+@media (min-width: 640px) {
+  .mediaGrid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .mediaThumbnail {
+    aspect-ratio: 4 / 3;
+  }
+}
+
+@media (min-width: 1024px) {
+  .masthead {
+    grid-template-columns: minmax(0, 1fr) minmax(360px, 0.8fr);
+    align-items: end;
+  }
+
+  .heroGrid {
+    grid-template-columns: minmax(0, 1.35fr) minmax(360px, 0.65fr);
+  }
+
+  .sideGrid {
+    grid-template-rows: 1fr 1fr;
+  }
+
+  .raceThumbnail,
+  .mediaThumbnail {
+    height: 100%;
+    aspect-ratio: auto;
+    min-height: 240px;
+  }
+
+  .leadThumbnail {
+    height: 100%;
+    min-height: 520px;
+    aspect-ratio: auto;
+  }
+}

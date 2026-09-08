@@ -445,47 +445,46 @@ main {
 
 @media (max-width: 767px) {
   body {
-    padding-bottom: calc(82px + env(safe-area-inset-bottom));
+    padding-bottom: calc(64px + env(safe-area-inset-bottom));
   }
 
   .rw-mobile-action-dock {
     position: fixed;
-    right: 10px;
-    bottom: calc(10px + env(safe-area-inset-bottom));
-    left: 10px;
+    right: 0;
+    bottom: 0;
+    left: 0;
     z-index: 70;
     display: grid;
-    grid-template-columns: repeat(5, minmax(0, 1fr));
-    gap: 6px;
-    border: 1px solid rgba(214, 179, 90, 0.35);
-    border-radius: 18px;
-    background:
-      linear-gradient(135deg, rgba(6, 23, 47, 0.96), rgba(11, 42, 85, 0.94)),
-      radial-gradient(circle at 20% 0%, rgba(214, 179, 90, 0.18), transparent 34%);
-    box-shadow: 0 18px 50px rgba(2, 8, 23, 0.34);
-    padding: 7px;
+    gap: 4px;
+    border-top: 1px solid rgba(255, 255, 255, 0.16);
+    background: rgba(6, 23, 47, 0.97);
+    padding: 4px 8px calc(4px + env(safe-area-inset-bottom));
     backdrop-filter: blur(18px);
   }
 
   .rw-mobile-dock-button {
     min-width: 0;
-    min-height: 58px;
-    border-radius: 13px;
-    border: 1px solid rgba(255, 255, 255, 0.1);
-    background: rgba(255, 255, 255, 0.08);
+    min-height: 48px;
+    border-radius: 6px;
+    border: 1px solid transparent;
+    background: transparent;
     color: #ffffff;
     display: inline-flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 3px;
-    padding: 6px 4px;
+    gap: 4px;
+    padding: 4px 2px;
     font-size: 10px;
-    font-weight: 900;
-    line-height: 1.05;
+    font-weight: 650;
+    line-height: 1.15;
     text-align: center;
-    text-transform: uppercase;
-    transition: transform 0.16s ease, border-color 0.16s ease, background 0.16s ease;
+    transition: border-color 0.16s ease, background 0.16s ease;
+  }
+
+  .rw-mobile-dock-button svg {
+    width: 19px;
+    height: 19px;
   }
 
   .rw-mobile-dock-button:hover,
@@ -498,7 +497,7 @@ main {
   .rw-mobile-more-panel {
     position: fixed;
     right: 12px;
-    bottom: calc(92px + env(safe-area-inset-bottom));
+    bottom: calc(68px + env(safe-area-inset-bottom));
     left: 12px;
     z-index: 69;
     display: grid;
@@ -529,7 +528,7 @@ main {
   .rw-mobile-toast {
     position: fixed;
     right: 18px;
-    bottom: calc(98px + env(safe-area-inset-bottom));
+    bottom: calc(70px + env(safe-area-inset-bottom));
     left: 18px;
     z-index: 80;
     display: block;
@@ -546,7 +545,7 @@ main {
   .rw-pwa-install-card {
     position: fixed;
     right: 12px;
-    bottom: calc(92px + env(safe-area-inset-bottom));
+    bottom: calc(68px + env(safe-area-inset-bottom));
     left: 12px;
     z-index: 75;
     display: block;

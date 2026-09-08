@@ -149,6 +149,8 @@ export default function MobileAppShell() {
   const cleanUrl = currentUrl(pathname, search);
 
   useEffect(() => {
+    // Development CSS URLs are stable, so a cache-first worker can hide layout edits.
+    if (process.env.NODE_ENV !== "production") return;
     if (!("serviceWorker" in navigator)) return;
     if (window.location.protocol !== "https:" && window.location.hostname !== "localhost") return;
     const register = () => {
@@ -349,7 +351,7 @@ export default function MobileAppShell() {
         </aside>
       ) : null}
 
-      <nav className="rw-mobile-action-dock" aria-label="Mobile RepWatchr actions">
+      <nav className="rw-mobile-action-dock" style={{ gridTemplateColumns: `repeat(${actions.length}, minmax(0, 1fr))` }} aria-label="Mobile RepWatchr actions">
         {actions.map(renderAction)}
       </nav>
     </>

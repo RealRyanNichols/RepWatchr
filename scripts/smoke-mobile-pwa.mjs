@@ -48,6 +48,7 @@ assert(layout.includes("viewportFit"), "Root layout exports viewport fit metadat
 assert(layout.includes("appleWebApp"), "Root layout includes apple web app metadata.");
 
 const shell = read("src/components/mobile/MobileAppShell.tsx");
+assert(shell.includes('process.env.NODE_ENV !== "production"'), "Development must not register a cache-first service worker that hides CSS edits.");
 for (const phrase of [
   "serviceWorker.register",
   "beforeinstallprompt",

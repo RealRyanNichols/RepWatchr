@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
-import Image from "next/image";
 import Link from "next/link";
-import RecordVisual from "@/components/shared/RecordVisual";
+import ArticleThumbnail from "@/components/news/ArticleThumbnail";
 import { getPublicArticleCatalog } from "@/lib/article-catalog";
 import { absoluteRepWatchrUrl, buildOgImageUrl, buildRepWatchrMetadata } from "@/lib/repwatchr-seo";
 import { jsonLd } from "@/lib/structured-data";
@@ -24,9 +23,8 @@ function ArticleCard({ article, featured = false }: { article: NewsArticle; feat
   const sources = new Set([article.sourceUrl, ...(article.sourceLinks ?? []).map((source) => source.url)].filter(Boolean)).size;
   return (
     <article className={`overflow-hidden rounded-2xl border border-slate-200 bg-white ${featured ? "lg:grid lg:grid-cols-2" : "flex h-full flex-col"}`}>
-      <Link href={`/news/${article.id}`} aria-label={`Read ${article.title}`} className="relative block aspect-[1200/630] overflow-hidden bg-slate-100 focus-visible:outline-4 focus-visible:outline-offset-[-4px] focus-visible:outline-blue-700">
-        {article.imageUrl ? <Image src={article.imageUrl} alt={article.imageAlt ?? article.title} fill sizes={featured ? "(min-width: 1024px) 50vw, 100vw" : "(min-width: 1024px) 33vw, (min-width: 640px) 50vw, 100vw"} className="object-cover" /> :
-          <RecordVisual eyebrow={scopeLabel(article)} title={article.title} variant="story" metric={{ label: "Public sources", value: sources }} compact />}
+      <Link href={`/news/${article.id}`} aria-label={`Read ${article.title}`} className="relative block w-full self-start overflow-hidden bg-slate-100 focus-visible:outline-4 focus-visible:outline-offset-[-4px] focus-visible:outline-blue-700">
+        <ArticleThumbnail article={article} featured={featured} priority={featured} sizes={featured ? "(min-width: 1024px) 50vw, 100vw" : "(min-width: 1024px) 33vw, (min-width: 640px) 50vw, 100vw"} />
       </Link>
       <div className={`flex min-w-0 flex-1 flex-col ${featured ? "p-6 sm:p-8" : "p-5"}`}>
         <div className="flex flex-wrap items-center gap-x-3 gap-y-1 text-xs font-bold uppercase tracking-wide text-slate-600">
@@ -52,7 +50,7 @@ export default async function BlogPage() {
     publisher: { "@type": "Organization", name: "RepWatchr", url: absoluteRepWatchrUrl("/") },
     blogPost: articles.slice(0, 12).map((article) => ({
       "@type": "BlogPosting", headline: article.title, description: article.summary, datePublished: article.publishedAt,
-      url: absoluteRepWatchrUrl(`/news/${article.id}`), image: article.imageUrl ? absoluteRepWatchrUrl(article.imageUrl) : buildOgImageUrl("news", { id: article.id }),
+      url: absoluteRepWatchrUrl(`/news/${article.id}`), image: buildOgImageUrl("news", { id: article.id }),
       author: { "@type": article.author === "Ryan Nichols" ? "Person" : "Organization", name: article.author || "RepWatchr" },
     })),
   };

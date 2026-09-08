@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
-import Image from "next/image";
 import Link from "next/link";
 import CopySnippetButton from "@/components/shared/CopySnippetButton";
+import ArticleThumbnail from "@/components/news/ArticleThumbnail";
 import EditorialThumbnail from "@/components/shared/EditorialThumbnail";
 import ShareButtons from "@/components/shared/ShareButtons";
 import OfficialPhotoImage, { FEATURED_OFFICIAL_PHOTO_QUALITY } from "@/components/shared/OfficialPhotoImage";
@@ -189,22 +189,7 @@ function FeedMedia({
 
   if (articleImage) {
     return (
-      <EditorialThumbnail
-        message={message}
-        eyebrow={article.locationLabel ?? scopeLabels[articleScope(article)]}
-        support={sourceLine(article)}
-        variant={variant}
-        className="aspect-[16/9]"
-      >
-        <Image
-          src={articleImage}
-          alt={article.imageAlt ?? `${article.title} visual`}
-          fill
-          sizes="(min-width: 1024px) 720px, 100vw"
-          quality={FEATURED_OFFICIAL_PHOTO_QUALITY}
-          className="object-cover"
-        />
-      </EditorialThumbnail>
+      <ArticleThumbnail article={{ ...article, imageUrl: articleImage }} sizes="(min-width: 1024px) 720px, 100vw" />
     );
   }
 

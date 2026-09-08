@@ -28,7 +28,7 @@ function componentSection(source, anchor) {
 
   const remainder = source.slice(start + anchor.length);
   const nextComponent = remainder.search(
-    /\n(?:export\s+default\s+|export\s+)?function\s+[A-Z][A-Za-z0-9_]*\s*\(/,
+    /\n(?:export\s+default\s+|export\s+)?(?:async\s+)?function\s+[A-Z][A-Za-z0-9_]*\s*\(/,
   );
   return nextComponent < 0
     ? source.slice(start)
@@ -63,7 +63,7 @@ if (fs.existsSync(newsDirectory)) {
       : "";
     if (!message) {
       fail(`${entry} is public but has no thumbnailMessage.`);
-    } else if (message.length > 80 || message.split(" ").length > 12) {
+    } else if (message.length > 64 || message.split(" ").length > 9) {
       fail(`${entry} thumbnailMessage is not short enough for a thumbnail.`);
     }
   }
@@ -144,11 +144,6 @@ const editorialPhotoSurfaces = [
     label: "FeedMedia",
   },
   {
-    file: "src/app/page.tsx",
-    anchor: "function HomeStoryVisual(",
-    label: "HomeStoryVisual",
-  },
-  {
     file: "src/components/predator-watch/PredatorProfileCard.tsx",
     anchor: "export default function PredatorProfileCard(",
     label: "PredatorProfileCard",
@@ -198,6 +193,11 @@ for (const surface of editorialPhotoFiles) {
 
 const graphicPreviewSurfaces = [
   {
+    file: "src/app/page.tsx",
+    anchor: "function HomeStoryVisual(",
+    label: "Homepage article image",
+  },
+  {
     file: "src/app/news/page.tsx",
     anchor: "function ArticleCard(",
     label: "News ArticleCard",
@@ -221,14 +221,24 @@ for (const surface of graphicPreviewSurfaces) {
     continue;
   }
 
-  const usesEditorialThumbnail =
-    section.includes("<EditorialThumbnail") && /\bmessage\s*=/.test(section);
-  const usesRecordVisual =
-    section.includes("<RecordVisual") && /\btitle\s*=/.test(section);
-  if (!usesEditorialThumbnail && !usesRecordVisual) {
-    fail(`${surface.label} needs a visible message through EditorialThumbnail or RecordVisual.`);
+  if (!section.includes("<ArticleThumbnail") || !/\barticle\s*=/.test(section)) {
+    fail(`${surface.label} must use ArticleThumbnail for both photos and fallback artwork.`);
+  }
+  if (section.includes("<Image")) {
+    fail(`${surface.label} bypasses the shared article headline treatment with a raw image.`);
   }
 }
+
+
+const articleThumbnail = read("src/components/news/ArticleThumbnail.tsx");
+requireMatch(articleThumbnail, /articleThumbnailMessage\(article\)/, "ArticleThumbnail must render the curated hook.");
+requireMatch(articleThumbnail, /data-article-thumbnail/, "ArticleThumbnail must expose its runtime QA marker.");
+const articleCss = read("src/components/news/ArticleThumbnail.module.css");
+requireMatch(articleCss, /aspect-ratio:\s*1200\s*\/\s*630/, "Article cards need their own intrinsic aspect ratio to prevent mobile collapse.");
+if (/line-clamp/.test(articleCss)) fail("Article headlines must be readable in full, not line-clamped.");
+const articleDetail = read("src/app/news/[id]/page.tsx");
+requireMatch(articleDetail, /<ArticleThumbnail/, "Article detail must use the headline thumbnail.");
+if (/article\.imageUrl\s*\?\s*\(\s*<figure/.test(articleDetail)) fail("Article detail must retain the no-photo headline artwork fallback.");
 
 for (const file of walkTsx("src")) {
   const source = read(file);

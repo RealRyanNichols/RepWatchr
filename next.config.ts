@@ -19,6 +19,7 @@ const nextConfig: NextConfig = {
   },
   outputFileTracingIncludes: {
     "/api/og/*": [
+      "./public/fonts/anton/Anton-Regular.ttf",
       "./public/images/og/repwatchr-logo.png",
       "./public/images/og/washington-accountability-blue-hour.jpg",
       "./public/images/og/marion-county-judge-2026-hero.jpg",
